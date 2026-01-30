@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bibliofuse.com/sitemap.xml

@@ -1,0 +1,147 @@
+{
+    "nav": {
+        "home": "Home",
+        "reader": "Reader",
+        "webapp": "Web App",
+        "about": "About"
+    },
+    "home": {
+        "hero": {
+            "title": "BiblioFuse",
+            "subtitle": "The Ultimate E-Book Ecosystem. Tools for managing, Reader for enjoying.",
+            "btn": {
+                "ios": "iOS (In Review)",
+                "android": "Google Play",
+                "web": "Launch Web Tool",
+                "pc": "PC Tools"
+            }
+        },
+        "table": {
+            "title": "Editions Comparison",
+            "headers": {
+                "feature": "Feature",
+                "ios": "iOS Reader",
+                "android": "Android Reader",
+                "web": "Web Tool",
+                "pc": "PC Tools"
+            },
+            "rows": {
+                "primary": {
+                    "name": "Primary Function",
+                    "v_read": "Reading & Consumption",
+                    "v_create": "Creation & Editing",
+                    "v_heavy": "Heavy Duty Creation"
+                },
+                "platform": {
+                    "name": "Platform",
+                    "v_ios": "iPhone/iPad",
+                    "v_android": "Android Phone/Tablet",
+                    "v_web": "Browser (All Devices)",
+                    "v_pc": "Windows (Exe)"
+                },
+                "processing": {
+                    "name": "Processing",
+                    "v_native": "Native On-Device",
+                    "v_wasm": "Local WASM (Private)",
+                    "v_win": "Native Windows"
+                },
+                "convert": {
+                    "name": "Convert/Merge",
+                    "v_mobile": "(EPUB/CBZ)",
+                    "v_web": "(EPUB/CBZ/PDF)",
+                    "v_pc_1": "(Folder/CBZ/PDF)",
+                    "v_pc_2": "(EPUB)"
+                },
+                "reader_feat": {
+                    "name": "Reader Features",
+                    "v_advanced": "✔ (Advanced)",
+                    "v_basic": "Basic Preview"
+                },
+                "cloud": {
+                    "name": "Cloud DB Backup",
+                    "v_icloud": "✔ (iCloud)",
+                    "v_gdrive": "✔ (Google Drive)"
+                },
+                "bookshelf": {
+                    "name": "iCloud Bookshelf"
+                },
+                "lang": {
+                    "name": "Language Support",
+                    "v_12": "12 Languages",
+                    "v_12_list": "(English, Spanish, French, Dutch, Nederland's, Portuguese, Russian, simplified Chinese, Japanese, Korean, Indonesian, Malay)",
+                    "v_6": "6 Languages",
+                    "v_6_list": "(English, Spanish, French, Dutch, Nederland's, Portuguese, Simplified Chinese)",
+                    "v_pc": "English only"
+                },
+                "avail": {
+                    "name": "Availability",
+                    "v_review": "In Review",
+                    "v_cbz": "CBZ Ver.",
+                    "v_epub": "EPUB Ver."
+                }
+            }
+        }
+    },
+    "reader": {
+        "title": "Next-Gen Reading Experience",
+        "subtitle": "Built for speed, comfort, and flexibility. The BiblioFuse Reader app adapts to how you want to read.",
+        "features": {
+            "immersive": {
+                "title": "Immersive Reading",
+                "desc": "Distraction-free UI with customizable themes and reading modes."
+            },
+            "webtoon": {
+                "title": "Continuous Webtoon Mode",
+                "desc": "Experience comics and manga in a seamless vertical scroll, optimized for mobile screens. Use auto-scroll for hands-free reading."
+            },
+            "peek": {
+                "title": "Peek Zoom",
+                "desc": "Double-tap to instantly zoom into details without losing your place. Perfect for reading small text in dense panels."
+            },
+            "smart": {
+                "title": "Smart Tagging & Ratings",
+                "desc": "Organize your library with custom tags and star ratings. Keep track of what you've read and what you love."
+            },
+            "compress": {
+                "title": "Compression Tools",
+                "desc": "Merge series or reduce file size of CBZ/EPUB up to 50%."
+            },
+            "cloud": {
+                "title": "Cloud Sync",
+                "desc": "Seamlessly sync your reading progress and library across devices using iCloud (iOS) or Google Drive (Android)."
+            },
+            "lang": {
+                "title": "12 Languages Support",
+                "desc": "Fully localized interface available in 12 major languages, making reading accessible worldwide."
+            }
+        }
+    },
+    "about": {
+        "title": "About BiblioFuse",
+        "intro_1": "BiblioFuse is a suite of tools and readers designed to give e-book lovers complete control over their library. Unlike walled gardens that lock you into a specific ecosystem, BiblioFuse empowers you to manage, convert, and read your books on any device.",
+        "intro_2": "Our web tool uses cutting-edge WebAssembly (WASM) technology to process files entirely on your device. This means private, fast, and secure file management without ever uploading your personal library to a server.",
+        "work_title": "Work With Us",
+        "work_text": "We are a small, passionate team dedicated to building software that respects user privacy and ownership. We are currently open to freelance opportunities and collaborations.",
+        "connect_title": "Connect",
+        "connect_text": "Interested in contributing or hiring? Reach out to us."
+    },
+    "seo": {
+        "home": {
+            "title": "Manage & Read E-Books Anywhere",
+            "desc": "BiblioFuse is the ultimate e-book ecosystem. Merge CBZ/EPUB files, manage your library privately with WASM, and read on any device with our next-gen readers."
+        },
+        "reader": {
+            "title": "Next-Gen E-Book Reader",
+            "desc": "A fast, distraction-free e-book reader for iOS and Android. Features continuous webtoon mode, smart tagging, and Peek Zoom for comics."
+        },
+        "about": {
+            "title": "About Us",
+            "desc": "Learn about the team behind BiblioFuse. We are dedicated to building private, user-first software for e-book lovers."
+        }
+    },
+    "footer": {
+        "rights": "© 2025 Modern Logic Tech Solutions (Reg. No: 202503109774 (003722143-P)). All rights reserved.",
+        "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malaysia",
+        "privacy": "Privacy Policy"
+    }
+}

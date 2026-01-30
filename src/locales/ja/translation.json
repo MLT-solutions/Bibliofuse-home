@@ -1,0 +1,133 @@
+{
+    "nav": {
+        "home": "ホーム",
+        "reader": "リーダー",
+        "webapp": "Webアプリ",
+        "about": "概要"
+    },
+    "home": {
+        "hero": {
+            "title": "BiblioFuse",
+            "subtitle": "究極の電子書籍エコシステム。管理ツールと、楽しむためのリーダー。",
+            "btn": {
+                "ios": "iOS (審査中)",
+                "android": "Google Play",
+                "web": "Webツールを起動",
+                "pc": "PCツール"
+            }
+        },
+        "table": {
+            "title": "エディション比較",
+            "headers": {
+                "feature": "機能",
+                "ios": "iOSリーダー",
+                "android": "Androidリーダー",
+                "web": "Webツール",
+                "pc": "PCツール"
+            },
+            "rows": {
+                "primary": {
+                    "name": "主な機能",
+                    "v_read": "読書と利用",
+                    "v_create": "作成と編集",
+                    "v_heavy": "高度な作成"
+                },
+                "platform": {
+                    "name": "プラットフォーム",
+                    "v_ios": "iPhone/iPad",
+                    "v_android": "Androidスマホ/タブレット",
+                    "v_web": "ブラウザ (全デバイス)",
+                    "v_pc": "Windows (Exe)"
+                },
+                "processing": {
+                    "name": "処理",
+                    "v_native": "デバイスネイティブ",
+                    "v_wasm": "ローカルWASM (プライベート)",
+                    "v_win": "ネイティブWindows"
+                },
+                "convert": {
+                    "name": "変換/統合",
+                    "v_mobile": "(EPUB/CBZ)",
+                    "v_web": "(EPUB/CBZ/PDF)",
+                    "v_pc_1": "(フォルダ/CBZ/PDF)",
+                    "v_pc_2": "(EPUB)"
+                },
+                "reader_feat": {
+                    "name": "リーダー機能",
+                    "v_advanced": "✔ (高度)",
+                    "v_basic": "基本プレビュー"
+                },
+                "cloud": {
+                    "name": "クラウドDBバックアップ",
+                    "v_icloud": "✔ (iCloud)",
+                    "v_gdrive": "✔ (Google Drive)"
+                },
+                "bookshelf": {
+                    "name": "iCloud本棚"
+                },
+                "lang": {
+                    "name": "言語サポート",
+                    "v_12": "12言語",
+                    "v_12_list": "(英語, スペイン語, フランス語, オランダ語, ポルトガル語, ロシア語, 簡体字中国語, 日本語, 韓国語, インドネシア語, マレー語)",
+                    "v_6": "6言語",
+                    "v_6_list": "(英語, スペイン語, フランス語, オランダ語, ポルトガル語, 簡体字中国語)",
+                    "v_pc": "英語のみ"
+                },
+                "avail": {
+                    "name": "利用可能性",
+                    "v_review": "審査中",
+                    "v_cbz": "CBZ版",
+                    "v_epub": "EPUB版"
+                }
+            }
+        }
+    },
+    "reader": {
+        "title": "次世代の読書体験",
+        "subtitle": "スピード、快適さ、柔軟性を追求。BiblioFuseリーダーアプリは、あなたの読書スタイルに適応します。",
+        "features": {
+            "immersive": {
+                "title": "没入型読書",
+                "desc": "カスタマイズ可能なテーマと読書モードを備えた、気を散らさないUI。"
+            },
+            "webtoon": {
+                "title": "連続ウェブトゥーンモード",
+                "desc": "モバイル画面に最適化されたシームレスな縦スクロールで、コミックやマンガを体験。自動スクロールでハンズフリー読書。"
+            },
+            "peek": {
+                "title": "ピークズーム",
+                "desc": "ダブルタップで場所を失うことなく詳細を即座にズーム。密集したパネル内の小さな文字を読むのに最適です。"
+            },
+            "smart": {
+                "title": "スマートタグと評価",
+                "desc": "カスタムタグと星評価でライブラリを整理。読んだ本やお気に入りを追跡します。"
+            },
+            "compress": {
+                "title": "圧縮ツール",
+                "desc": "シリーズを結合したり、CBZ/EPUBファイルサイズを最大50%削減します。"
+            },
+            "cloud": {
+                "title": "クラウド同期",
+                "desc": "iCloud (iOS) または Google Drive (Android) を使用して、デバイス間で読書の進捗とライブラリをシームレスに同期します。"
+            },
+            "lang": {
+                "title": "12言語サポート",
+                "desc": "12の主要言語で利用可能な完全ローカライズインターフェースで、世界中で読書をアクセシブルにします。"
+            }
+        }
+    },
+    "about": {
+        "title": "BiblioFuseについて",
+        "intro_1": "BiblioFuseは、電子書籍愛好家にライブラリの完全な制御権を与えるために設計されたツールとリーダーのスイートです。特定のシステムに閉じ込める壁に囲まれた庭とは異なり、BiblioFuseはあらゆるデバイスで本を管理、変換、読むことができます。",
+        "intro_2": "当社のWebツールは最先端のWebAssembly (WASM) 技術を使用し、デバイス上でファイルを完全に処理します。これにより、個人のライブラリをサーバーにアップロードすることなく、プライベートで高速かつ安全なファイル管理が可能になります。",
+        "work_title": "私たちと一緒に働く",
+        "work_text": "私たちは、ユーザーのプライバシーと所有権を尊重するソフトウェアの構築に専念する、小規模で情熱的なチームです。現在、フリーランスの機会やコラボレーションを募集しています。",
+        "connect_title": "接続する",
+        "connect_text": "貢献や採用に興味がありますか？お問い合わせください。"
+    },
+    "footer": {
+        "rights": "© 2025 Modern Logic Tech Solutions (登録番号: 202503109774 (003722143-P))。全著作権所有。",
+        "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malaysia",
+        "privacy": "プライバシーポリシー"
+    }
+}

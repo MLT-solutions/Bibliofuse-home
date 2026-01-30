@@ -1,0 +1,133 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "reader": "Lector",
+        "webapp": "Aplicación Web",
+        "about": "Sobre"
+    },
+    "home": {
+        "hero": {
+            "title": "BiblioFuse",
+            "subtitle": "El ecosistema definitivo de libros electrónicos. Herramientas para gestionar, lector para disfrutar.",
+            "btn": {
+                "ios": "iOS (En revisión)",
+                "android": "Google Play",
+                "web": "Iniciar herramienta web",
+                "pc": "Herramientas PC"
+            }
+        },
+        "table": {
+            "title": "Comparación de ediciones",
+            "headers": {
+                "feature": "Característica",
+                "ios": "Lector iOS",
+                "android": "Lector Android",
+                "web": "Herramienta Web",
+                "pc": "Herramientas PC"
+            },
+            "rows": {
+                "primary": {
+                    "name": "Función principal",
+                    "v_read": "Lectura y Consumo",
+                    "v_create": "Creación y Edición",
+                    "v_heavy": "Creación intensiva"
+                },
+                "platform": {
+                    "name": "Plataforma",
+                    "v_ios": "iPhone/iPad",
+                    "v_android": "Teléfono/Tablet Android",
+                    "v_web": "Navegador (Todos)",
+                    "v_pc": "Windows (Exe)"
+                },
+                "processing": {
+                    "name": "Procesamiento",
+                    "v_native": "Nativo en dispositivo",
+                    "v_wasm": "WASM local (Privado)",
+                    "v_win": "Nativo Windows"
+                },
+                "convert": {
+                    "name": "Convertir/Unir",
+                    "v_mobile": "(EPUB/CBZ)",
+                    "v_web": "(EPUB/CBZ/PDF)",
+                    "v_pc_1": "(Carpeta/CBZ/PDF)",
+                    "v_pc_2": "(EPUB)"
+                },
+                "reader_feat": {
+                    "name": "Funciones de lector",
+                    "v_advanced": "✔ (Avanzado)",
+                    "v_basic": "Vista previa básica"
+                },
+                "cloud": {
+                    "name": "Respaldo en la nube",
+                    "v_icloud": "✔ (iCloud)",
+                    "v_gdrive": "✔ (Google Drive)"
+                },
+                "bookshelf": {
+                    "name": "Biblioteca iCloud"
+                },
+                "lang": {
+                    "name": "Soporte de idiomas",
+                    "v_12": "12 Idiomas",
+                    "v_12_list": "(Inglés, Español, Francés, Holandés, Portugués, Ruso, Chino simplificado, Japonés, Coreano, Indonesio, Malayo)",
+                    "v_6": "6 Idiomas",
+                    "v_6_list": "(Inglés, Español, Francés, Holandés, Portugués, Chino simplificado)",
+                    "v_pc": "Solo inglés"
+                },
+                "avail": {
+                    "name": "Disponibilidad",
+                    "v_review": "En revisión",
+                    "v_cbz": "Ver. CBZ",
+                    "v_epub": "Ver. EPUB"
+                }
+            }
+        }
+    },
+    "reader": {
+        "title": "Experiencia de lectura de próxima generación",
+        "subtitle": "Diseñado para velocidad, comodidad y flexibilidad. La aplicación BiblioFuse Reader se adapta a cómo quieres leer.",
+        "features": {
+            "immersive": {
+                "title": "Lectura inmersiva",
+                "desc": "Interfaz sin distracciones con temas personalizables y modos de lectura."
+            },
+            "webtoon": {
+                "title": "Modo Webtoon continuo",
+                "desc": "Experimenta cómics y manga en un desplazamiento vertical continuo, optimizado para móviles. Usa el desplazamiento automático para leer sin manos."
+            },
+            "peek": {
+                "title": "Zoom rápido (Peek)",
+                "desc": "Doble toque para hacer zoom instantáneo en detalles sin perder tu lugar. Perfecto para leer texto pequeño en paneles densos."
+            },
+            "smart": {
+                "title": "Etiquetado y calificación inteligente",
+                "desc": "Organiza tu biblioteca con etiquetas personalizadas y calificaciones con estrellas. Lleva un registro de lo que has leído y lo que amas."
+            },
+            "compress": {
+                "title": "Herramientas de compresión",
+                "desc": "Une series o reduce el tamaño de archivo de CBZ/EPUB hasta en un 50%."
+            },
+            "cloud": {
+                "title": "Sincronización en la nube",
+                "desc": "Sincroniza perfectamente tu progreso de lectura y biblioteca entre dispositivos usando iCloud (iOS) o Google Drive (Android)."
+            },
+            "lang": {
+                "title": "Soporte para 12 idiomas",
+                "desc": "Interfaz totalmente localizada disponible en 12 idiomas principales, haciendo la lectura accesible en todo el mundo."
+            }
+        }
+    },
+    "about": {
+        "title": "Sobre BiblioFuse",
+        "intro_1": "BiblioFuse es un conjunto de herramientas y lectores diseñados para dar a los amantes de los libros electrónicos control total sobre su biblioteca. A diferencia de los jardines vallados que te encierran en un ecosistema específico, BiblioFuse te permite gestionar, convertir y leer tus libros en cualquier dispositivo.",
+        "intro_2": "Nuestra herramienta web utiliza tecnología WebAssembly (WASM) de vanguardia para procesar archivos completamente en tu dispositivo. Esto significa una gestión de archivos privada, rápida y segura sin subir nunca tu biblioteca personal a un servidor.",
+        "work_title": "Trabaja con nosotros",
+        "work_text": "Somos un equipo pequeño y apasionado dedicado a construir software que respeta la privacidad y propiedad del usuario. Actualmente estamos abiertos a oportunidades freelance y colaboraciones.",
+        "connect_title": "Conectar",
+        "connect_text": "¿Interesado en contribuir o contratar? Contáctanos."
+    },
+    "footer": {
+        "rights": "© 2025 Modern Logic Tech Solutions (Reg. No: 202503109774 (003722143-P)). Todos los derechos reservados.",
+        "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malasia",
+        "privacy": "Política de Privacidad"
+    }
+}

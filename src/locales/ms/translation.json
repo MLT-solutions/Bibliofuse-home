@@ -1,0 +1,133 @@
+{
+    "nav": {
+        "home": "Laman Utama",
+        "reader": "Pembaca",
+        "webapp": "Aplikasi Web",
+        "about": "Tentang"
+    },
+    "home": {
+        "hero": {
+            "title": "BiblioFuse",
+            "subtitle": "Ekosistem E-Book Terunggul. Alat untuk mengurus, Pembaca untuk menikmati.",
+            "btn": {
+                "ios": "iOS (Dalam Semakan)",
+                "android": "Google Play",
+                "web": "Lancarkan Alat Web",
+                "pc": "Alat PC"
+            }
+        },
+        "table": {
+            "title": "Perbandingan Edisi",
+            "headers": {
+                "feature": "Ciri",
+                "ios": "Pembaca iOS",
+                "android": "Pembaca Android",
+                "web": "Alat Web",
+                "pc": "Alat PC"
+            },
+            "rows": {
+                "primary": {
+                    "name": "Fungsi Utama",
+                    "v_read": "Membaca & Penggunaan",
+                    "v_create": "Penciptaan & Suntingan",
+                    "v_heavy": "Penciptaan Berat"
+                },
+                "platform": {
+                    "name": "Platform",
+                    "v_ios": "iPhone/iPad",
+                    "v_android": "Telefon/Tablet Android",
+                    "v_web": "Pelayar (Semua Peranti)",
+                    "v_pc": "Windows (Exe)"
+                },
+                "processing": {
+                    "name": "Pemprosesan",
+                    "v_native": "Asli pada Peranti",
+                    "v_wasm": "WASM Tempatan (Peribadi)",
+                    "v_win": "Windows Asli"
+                },
+                "convert": {
+                    "name": "Tukar/Gabung",
+                    "v_mobile": "(EPUB/CBZ)",
+                    "v_web": "(EPUB/CBZ/PDF)",
+                    "v_pc_1": "(Folder/CBZ/PDF)",
+                    "v_pc_2": "(EPUB)"
+                },
+                "reader_feat": {
+                    "name": "Ciri Pembaca",
+                    "v_advanced": "✔ (Lanjutan)",
+                    "v_basic": "Pratonton Asas"
+                },
+                "cloud": {
+                    "name": "Sandaran Cloud DB",
+                    "v_icloud": "✔ (iCloud)",
+                    "v_gdrive": "✔ (Google Drive)"
+                },
+                "bookshelf": {
+                    "name": "Rak Buku iCloud"
+                },
+                "lang": {
+                    "name": "Sokongan Bahasa",
+                    "v_12": "12 Bahasa",
+                    "v_12_list": "(Inggeris, Sepanyol, Perancis, Belanda, Portugis, Rusia, Cina Ringkas, Jepun, Korea, Indonesia, Melayu)",
+                    "v_6": "6 Bahasa",
+                    "v_6_list": "(Inggeris, Sepanyol, Perancis, Belanda, Portugis, Cina Ringkas)",
+                    "v_pc": "Hanya Inggeris"
+                },
+                "avail": {
+                    "name": "Ketersediaan",
+                    "v_review": "Dalam Semakan",
+                    "v_cbz": "Ver. CBZ",
+                    "v_epub": "Ver. EPUB"
+                }
+            }
+        }
+    },
+    "reader": {
+        "title": "Pengalaman Membaca Generasi Seterusnya",
+        "subtitle": "Dibina untuk kelajuan, keselesaan, dan fleksibiliti. Aplikasi BiblioFuse Reader menyesuaikan diri dengan cara anda mahu membaca.",
+        "features": {
+            "immersive": {
+                "title": "Membaca Imersif",
+                "desc": "Antara muka bebas gangguan dengan tema dan mod membaca yang boleh disesuaikan."
+            },
+            "webtoon": {
+                "title": "Mod Webtoon Berterusan",
+                "desc": "Alami komik dan manga dalam tatalan menegak lancar, dioptimumkan untuk skrin mudah alih. Gunakan tatal auto untuk membaca tanpa tangan."
+            },
+            "peek": {
+                "title": "Zum Pintas (Peek)",
+                "desc": "Ketuk dua kali untuk zum serta-merta pada butiran tanpa kehilangan tempat anda. Sempurna untuk membaca teks kecil dalam panel padat."
+            },
+            "smart": {
+                "title": "Tag & Penilaian Pintar",
+                "desc": "Susun perpustakaan anda dengan tag tersuai dan penilaian bintang. Jejak apa yang anda telah baca dan apa yang anda suka."
+            },
+            "compress": {
+                "title": "Alat Mampatan",
+                "desc": "Gabungkan siri atau kurangkan saiz fail CBZ/EPUB sehingga 50%."
+            },
+            "cloud": {
+                "title": "Segerak Awan",
+                "desc": "Segerakkan kemajuan membaca dan perpustakaan anda dengan lancar merentas peranti menggunakan iCloud (iOS) atau Google Drive (Android)."
+            },
+            "lang": {
+                "title": "Sokongan 12 Bahasa",
+                "desc": "Antara muka yang diterjemahkan sepenuhnya tersedia dalam 12 bahasa utama, menjadikan pembacaan boleh diakses di seluruh dunia."
+            }
+        }
+    },
+    "about": {
+        "title": "Mengenai BiblioFuse",
+        "intro_1": "BiblioFuse adalah suite alat dan pembaca yang direka untuk memberi pencinta e-book kawalan penuh ke atas perpustakaan mereka. Tidak seperti taman bertembok yang mengunci anda ke dalam ekosistem tertentu, BiblioFuse memperkasakan anda untuk mengurus, menukar, dan membaca buku anda pada mana-mana peranti.",
+        "intro_2": "Alat web kami menggunakan teknologi WebAssembly (WASM) termaju untuk memproses fail sepenuhnya pada peranti anda. Ini bermakna pengurusan fail peribadi, pantas, dan selamat tanpa perlu memuat naik perpustakaan peribadi anda ke pelayan.",
+        "work_title": "Bekerja Dengan Kami",
+        "work_text": "Kami adalah pasukan kecil yang bersemangat yang berdedikasi untuk membina perisian yang menghormati privasi dan pemilikan pengguna. Kami kini terbuka kepada peluang bebas dan kerjasama.",
+        "connect_title": "Sambung",
+        "connect_text": "Berminat untuk menyumbang atau mengupah? Hubungi kami."
+    },
+    "footer": {
+        "rights": "© 2025 Modern Logic Tech Solutions (No. Pend: 202503109774 (003722143-P)). Hak cipta terpelihara.",
+        "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malaysia",
+        "privacy": "Dasar Privasi"
+    }
+}

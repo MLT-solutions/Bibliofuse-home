@@ -1,0 +1,133 @@
+{
+    "nav": {
+        "home": "首页",
+        "reader": "阅读器",
+        "webapp": "Web应用",
+        "about": "关于"
+    },
+    "home": {
+        "hero": {
+            "title": "BiblioFuse",
+            "subtitle": "终极电子书生态系统。管理工具，享受阅读。",
+            "btn": {
+                "ios": "iOS (审核中)",
+                "android": "Google Play",
+                "web": "启动Web工具",
+                "pc": "PC工具"
+            }
+        },
+        "table": {
+            "title": "版本比较",
+            "headers": {
+                "feature": "功能",
+                "ios": "iOS阅读器",
+                "android": "Android阅读器",
+                "web": "Web工具",
+                "pc": "PC工具"
+            },
+            "rows": {
+                "primary": {
+                    "name": "主要功能",
+                    "v_read": "阅读和消费",
+                    "v_create": "创作和编辑",
+                    "v_heavy": "重度创作"
+                },
+                "platform": {
+                    "name": "平台",
+                    "v_ios": "iPhone/iPad",
+                    "v_android": "Android手机/平板",
+                    "v_web": "浏览器 (所有设备)",
+                    "v_pc": "Windows (Exe)"
+                },
+                "processing": {
+                    "name": "处理",
+                    "v_native": "设备原生",
+                    "v_wasm": "本地WASM (私有)",
+                    "v_win": "原生Windows"
+                },
+                "convert": {
+                    "name": "转换/合并",
+                    "v_mobile": "(EPUB/CBZ)",
+                    "v_web": "(EPUB/CBZ/PDF)",
+                    "v_pc_1": "(文件夹/CBZ/PDF)",
+                    "v_pc_2": "(EPUB)"
+                },
+                "reader_feat": {
+                    "name": "阅读器功能",
+                    "v_advanced": "✔ (高级)",
+                    "v_basic": "基本预览"
+                },
+                "cloud": {
+                    "name": "云数据库备份",
+                    "v_icloud": "✔ (iCloud)",
+                    "v_gdrive": "✔ (Google Drive)"
+                },
+                "bookshelf": {
+                    "name": "iCloud书架"
+                },
+                "lang": {
+                    "name": "语言支持",
+                    "v_12": "12种语言",
+                    "v_12_list": "(英语, 西班牙语, 法语, 荷兰语, 葡萄牙语, 俄语, 简体中文, 日语, 韩语, 印尼语, 马来语)",
+                    "v_6": "6种语言",
+                    "v_6_list": "(英语, 西班牙语, 法语, 荷兰语, 葡萄牙语, 简体中文)",
+                    "v_pc": "仅英语"
+                },
+                "avail": {
+                    "name": "可用性",
+                    "v_review": "审核中",
+                    "v_cbz": "CBZ版",
+                    "v_epub": "EPUB版"
+                }
+            }
+        }
+    },
+    "reader": {
+        "title": "下一代阅读体验",
+        "subtitle": "专为速度、舒适和灵活性而打造。BiblioFuse阅读器应用适应您的阅读方式。",
+        "features": {
+            "immersive": {
+                "title": "沉浸式阅读",
+                "desc": "无干扰的用户界面，带有可自定义的主题和阅读模式。"
+            },
+            "webtoon": {
+                "title": "连续网络漫画模式",
+                "desc": "以无缝垂直滚动体验漫画，专为移动屏幕优化。使用自动滚动实现免提阅读。"
+            },
+            "peek": {
+                "title": "快速缩放 (Peek)",
+                "desc": "双击即可立即放大细节，而不会丢失位置。非常适合阅读密集面板中的小文字。"
+            },
+            "smart": {
+                "title": "智能标签和评分",
+                "desc": "使用自定义标签和星级评分整理您的图书馆。跟踪您已阅读的内容和您喜爱的内容。"
+            },
+            "compress": {
+                "title": "压缩工具",
+                "desc": "合并系列或减少高达50%的CBZ/EPUB文件大小。"
+            },
+            "cloud": {
+                "title": "云同步",
+                "desc": "使用iCloud (iOS) 或Google Drive (Android) 跨设备无缝同步您的阅读进度和图书馆。"
+            },
+            "lang": {
+                "title": "12种语言支持",
+                "desc": "完全本地化的界面，提供12种主要语言，让全世界都能轻松阅读。"
+            }
+        }
+    },
+    "about": {
+        "title": "关于BiblioFuse",
+        "intro_1": "BiblioFuse是一套工具和阅读器，旨在让电子书爱好者完全掌控他们的图书馆。与将您锁定在特定生态系统中的封闭花园不同，BiblioFuse让您能够在任何设备上管理、转换和阅读您的书籍。",
+        "intro_2": "我们的Web工具使用尖端的WebAssembly (WASM) 技术，完全在您的设备上处理文件。这意味着私密、快速和安全的文件管理，无需将您的个人图书馆上传到服务器。",
+        "work_title": "与我们合作",
+        "work_text": "我们是一个充满激情的小团队，致力于构建尊重用户隐私和所有权的软件。我们目前对自由职业机会和合作持开放态度。",
+        "connect_title": "联系",
+        "connect_text": "有兴趣贡献或招聘？请联系我们。"
+    },
+    "footer": {
+        "rights": "© 2025 Modern Logic Tech Solutions (注册号: 202503109774 (003722143-P)). 保留所有权利。",
+        "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, 雪兰莪, 马来西亚",
+        "privacy": "隐私政策"
+    }
+}

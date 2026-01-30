@@ -1,0 +1,133 @@
+{
+    "nav": {
+        "home": "홈",
+        "reader": "리더",
+        "webapp": "웹 앱",
+        "about": "소개"
+    },
+    "home": {
+        "hero": {
+            "title": "BiblioFuse",
+            "subtitle": "궁극의 전자책 생태계. 관리를 위한 도구, 즐거움을 위한 리더.",
+            "btn": {
+                "ios": "iOS (심사 중)",
+                "android": "Google Play",
+                "web": "웹 도구 실행",
+                "pc": "PC 도구"
+            }
+        },
+        "table": {
+            "title": "에디션 비교",
+            "headers": {
+                "feature": "기능",
+                "ios": "iOS 리더",
+                "android": "Android 리더",
+                "web": "웹 도구",
+                "pc": "PC 도구"
+            },
+            "rows": {
+                "primary": {
+                    "name": "주요 기능",
+                    "v_read": "독서 및 소비",
+                    "v_create": "제작 및 편집",
+                    "v_heavy": "전문 제작"
+                },
+                "platform": {
+                    "name": "플랫폼",
+                    "v_ios": "iPhone/iPad",
+                    "v_android": "Android 폰/태블릿",
+                    "v_web": "브라우저 (모든 기기)",
+                    "v_pc": "Windows (Exe)"
+                },
+                "processing": {
+                    "name": "처리",
+                    "v_native": "디바이스 네이티브",
+                    "v_wasm": "로컬 WASM (비공개)",
+                    "v_win": "네이티브 Windows"
+                },
+                "convert": {
+                    "name": "변환/병합",
+                    "v_mobile": "(EPUB/CBZ)",
+                    "v_web": "(EPUB/CBZ/PDF)",
+                    "v_pc_1": "(폴더/CBZ/PDF)",
+                    "v_pc_2": "(EPUB)"
+                },
+                "reader_feat": {
+                    "name": "리더 기능",
+                    "v_advanced": "✔ (고급)",
+                    "v_basic": "기본 미리보기"
+                },
+                "cloud": {
+                    "name": "클라우드 DB 백업",
+                    "v_icloud": "✔ (iCloud)",
+                    "v_gdrive": "✔ (Google Drive)"
+                },
+                "bookshelf": {
+                    "name": "iCloud 책장"
+                },
+                "lang": {
+                    "name": "언어 지원",
+                    "v_12": "12개 언어",
+                    "v_12_list": "(영어, 스페인어, 프랑스어, 네덜란드어, 포르투갈어, 러시아어, 중국어 간체, 일본어, 한국어, 인도네시아어, 말레이어)",
+                    "v_6": "6개 언어",
+                    "v_6_list": "(영어, 스페인어, 프랑스어, 네덜란드어, 포르투갈어, 중국어 간체)",
+                    "v_pc": "영어 전용"
+                },
+                "avail": {
+                    "name": "가용성",
+                    "v_review": "심사 중",
+                    "v_cbz": "CBZ 버전",
+                    "v_epub": "EPUB 버전"
+                }
+            }
+        }
+    },
+    "reader": {
+        "title": "차세대 독서 경험",
+        "subtitle": "속도, 편안함, 유연성을 위해 제작되었습니다. BiblioFuse 리더 앱은 당신이 원하는 독서 방식에 적응합니다.",
+        "features": {
+            "immersive": {
+                "title": "몰입형 독서",
+                "desc": "사용자 정의 테마와 독서 모드가 있는 방해 없는 UI."
+            },
+            "webtoon": {
+                "title": "연속 웹툰 모드",
+                "desc": "모바일 화면에 최적화된 매끄러운 세로 스크롤로 만화와 망가를 경험하세요. 자동 스크롤로 손대지 않고 읽으세요."
+            },
+            "peek": {
+                "title": "픽 줌 (Peek)",
+                "desc": "더블 탭하여 읽던 위치를 잃지 않고 세부 사항을 즉시 확대하세요. 밀집된 패널의 작은 텍스트를 읽기에 완벽합니다."
+            },
+            "smart": {
+                "title": "스마트 태그 및 평점",
+                "desc": "사용자 지정 태그와 별점으로 라이브러리를 정리하세요. 읽은 책과 좋아하는 책을 추적하세요."
+            },
+            "compress": {
+                "title": "압축 도구",
+                "desc": "시리즈를 병합하거나 CBZ/EPUB 파일 크기를 최대 50%까지 줄이세요."
+            },
+            "cloud": {
+                "title": "클라우드 동기화",
+                "desc": "iCloud(iOS) 또는 Google Drive(Android)를 사용하여 기기 간 독서 진행 상황과 라이브러리를 매끄럽게 동기화하세요."
+            },
+            "lang": {
+                "title": "12개 언어 지원",
+                "desc": "12개 주요 언어로 제공되는 완전히 현지화된 인터페이스로 전 세계에서 독서가 가능합니다."
+            }
+        }
+    },
+    "about": {
+        "title": "BiblioFuse 소개",
+        "intro_1": "BiblioFuse는 전자책 애호가들에게 라이브러리에 대한 완전한 제어권을 주기 위해 설계된 도구 및 리더 제품군입니다. 특정 생태계에 가두는 폐쇄적인 시스템과 달리, BiblioFuse는 모든 기기에서 책을 관리, 변환 및 읽을 수 있는 권한을 부여합니다.",
+        "intro_2": "저희 웹 도구는 최첨단 WebAssembly(WASM) 기술을 사용하여 기기에서 파일을 완전히 처리합니다. 이는 개인 라이브러리를 서버에 업로드하지 않고도 비공개적이고 빠르며 안전한 파일 관리를 의미합니다.",
+        "work_title": "채용 안내",
+        "work_text": "저희는 사용자 개인 정보 보호와 소유권을 존중하는 소프트웨어를 만드는 데 전념하는 작고 열정적인 팀입니다. 현재 프리랜서 기회와 협업에 열려 있습니다.",
+        "connect_title": "연결",
+        "connect_text": "기여하거나 채용에 관심이 있으신가요? 연락주세요."
+    },
+    "footer": {
+        "rights": "© 2025 Modern Logic Tech Solutions (등록 번호: 202503109774 (003722143-P)). 모든 권리 보유.",
+        "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malaysia",
+        "privacy": "개인정보 처리방침"
+    }
+}

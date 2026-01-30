@@ -1,0 +1,133 @@
+{
+    "nav": {
+        "home": "Home",
+        "reader": "Lezer",
+        "webapp": "Web App",
+        "about": "Over"
+    },
+    "home": {
+        "hero": {
+            "title": "BiblioFuse",
+            "subtitle": "Het ultieme e-book ecosysteem. Tools om te beheren, Reader om te genieten.",
+            "btn": {
+                "ios": "iOS (In beoordeling)",
+                "android": "Google Play",
+                "web": "Webtool starten",
+                "pc": "PC-tools"
+            }
+        },
+        "table": {
+            "title": "Vergelijking van edities",
+            "headers": {
+                "feature": "Functie",
+                "ios": "iOS-lezer",
+                "android": "Android-lezer",
+                "web": "Webtool",
+                "pc": "PC-tools"
+            },
+            "rows": {
+                "primary": {
+                    "name": "Hoofdfunctie",
+                    "v_read": "Lezen & Consumptie",
+                    "v_create": "Creatie & Bewerking",
+                    "v_heavy": "Zware creatie"
+                },
+                "platform": {
+                    "name": "Platform",
+                    "v_ios": "iPhone/iPad",
+                    "v_android": "Android Telefoon/Tablet",
+                    "v_web": "Browser (Alle apparaten)",
+                    "v_pc": "Windows (Exe)"
+                },
+                "processing": {
+                    "name": "Verwerking",
+                    "v_native": "Lokaal op apparaat",
+                    "v_wasm": "Lokale WASM (Privé)",
+                    "v_win": "Native Windows"
+                },
+                "convert": {
+                    "name": "Converteren/Samenvoegen",
+                    "v_mobile": "(EPUB/CBZ)",
+                    "v_web": "(EPUB/CBZ/PDF)",
+                    "v_pc_1": "(Map/CBZ/PDF)",
+                    "v_pc_2": "(EPUB)"
+                },
+                "reader_feat": {
+                    "name": "Lezerfuncties",
+                    "v_advanced": "✔ (Geavanceerd)",
+                    "v_basic": "Basisvoorbeeld"
+                },
+                "cloud": {
+                    "name": "Cloud DB Back-up",
+                    "v_icloud": "✔ (iCloud)",
+                    "v_gdrive": "✔ (Google Drive)"
+                },
+                "bookshelf": {
+                    "name": "iCloud Boekenplank"
+                },
+                "lang": {
+                    "name": "Taalondersteuning",
+                    "v_12": "12 Talen",
+                    "v_12_list": "(Engels, Spaans, Frans, Nederlands, Portugees, Russisch, Vereenvoudigd Chinees, Japans, Koreaans, Indonesisch, Maleis)",
+                    "v_6": "6 Talen",
+                    "v_6_list": "(Engels, Spaans, Frans, Nederlands, Portugees, Vereenvoudigd Chinees)",
+                    "v_pc": "Alleen Engels"
+                },
+                "avail": {
+                    "name": "Beschikbaarheid",
+                    "v_review": "In beoordeling",
+                    "v_cbz": "CBZ Ver.",
+                    "v_epub": "EPUB Ver."
+                }
+            }
+        }
+    },
+    "reader": {
+        "title": "Next-Gen Leeservaring",
+        "subtitle": "Gebouwd voor snelheid, comfort en flexibiliteit. De BiblioFuse Reader-app past zich aan hoe jij wilt lezen.",
+        "features": {
+            "immersive": {
+                "title": "Meeslepend Lezen",
+                "desc": "Afleidingsvrije interface met aanpasbare thema's en leesmodi."
+            },
+            "webtoon": {
+                "title": "Continue Webtoon-modus",
+                "desc": "Ervaar strips en manga in een naadloze verticale scroll, geoptimaliseerd voor mobiele schermen. Gebruik auto-scroll voor handsfree lezen."
+            },
+            "peek": {
+                "title": "Peek Zoom",
+                "desc": "Dubbeltik om direct in te zoomen op details zonder je plek te verliezen. Perfect voor het lezen van kleine tekst in dichte panelen."
+            },
+            "smart": {
+                "title": "Slim taggen & beoordelen",
+                "desc": "Organiseer je bibliotheek met aangepaste tags en sterbeoordelingen. Houd bij wat je hebt gelezen en waar je van houdt."
+            },
+            "compress": {
+                "title": "Compressietools",
+                "desc": "Voeg series samen of verklein de bestandsgrootte van CBZ/EPUB tot 50%."
+            },
+            "cloud": {
+                "title": "Cloud Sync",
+                "desc": "Synchroniseer naadloos je leesvoortgang en bibliotheek tussen apparaten via iCloud (iOS) of Google Drive (Android)."
+            },
+            "lang": {
+                "title": "Ondersteuning voor 12 Talen",
+                "desc": "Volledig gelokaliseerde interface beschikbaar in 12 hoofdtalen, waardoor lezen wereldwijd toegankelijk wordt."
+            }
+        }
+    },
+    "about": {
+        "title": "Over BiblioFuse",
+        "intro_1": "BiblioFuse is een suite van tools en readers ontworpen om e-bookliefhebbers volledige controle over hun bibliotheek te geven. In tegenstelling tot gesloten systemen die je opsluiten in een specifiek ecosysteem, stelt BiblioFuse je in staat om je boeken op elk apparaat te beheren, converteren en lezen.",
+        "intro_2": "Onze webtool gebruikt geavanceerde WebAssembly (WASM) technologie om bestanden volledig op je apparaat te verwerken. Dit betekent privé, snel en veilig bestandsbeheer zonder ooit je persoonlijke bibliotheek naar een server te uploaden.",
+        "work_title": "Werk met ons",
+        "work_text": "We zijn een klein, gepassioneerd team dat zich inzet voor het bouwen van software die de privacy en het eigendom van de gebruiker respecteert. We staan momenteel open voor freelance kansen en samenwerkingen.",
+        "connect_title": "Verbinden",
+        "connect_text": "Geïnteresseerd in bijdragen of inhuren? Neem contact met ons op."
+    },
+    "footer": {
+        "rights": "© 2025 Modern Logic Tech Solutions (Reg. Nr: 202503109774 (003722143-P)). Alle rechten voorbehouden.",
+        "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Maleisië",
+        "privacy": "Privacybeleid"
+    }
+}
