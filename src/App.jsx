@@ -54,6 +54,10 @@ function AppLayout() {
     }
   }, [lang, i18n, navigate, location]);
 
+  // Get current path without language prefix
+  const currentPath = location.pathname.replace(`/${lang}`, '') || '/';
+  const isWebApp = currentPath === '/webapp';
+
   return (
     <div className="min-h-screen bg-[#0f172a] text-white flex flex-col">
       <Navigation />
@@ -66,7 +70,7 @@ function AppLayout() {
           <Route path="*" element={<Navigate to={`/${lang}/`} replace />} />
         </Routes>
       </main>
-      <Footer />
+      {!isWebApp && <Footer />}
     </div>
   );
 }
