@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link, useParams, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const LANGUAGES = [
@@ -16,25 +17,32 @@ const LANGUAGES = [
     { code: 'ms', label: 'Bahasa Melayu' },
 ];
 
-const Navigation = ({ currentTab, setCurrentTab }) => {
+const Navigation = () => {
     const { t, i18n } = useTranslation();
+    const { lang } = useParams();
+    const location = useLocation();
+    const navigate = useNavigate();
     const [isLangOpen, setIsLangOpen] = useState(false);
     const langMenuRef = useRef(null);
 
     const tabs = [
-        { id: 'home', label: t('nav.home') },
-        { id: 'reader', label: t('nav.reader') },
-        { id: 'webapp', label: t('nav.webapp') },
-        { id: 'about', label: t('nav.about') },
+        { id: 'home', label: t('nav.home'), path: '/' },
+        { id: 'reader', label: t('nav.reader'), path: '/reader' },
+        { id: 'webapp', label: t('nav.webapp'), path: '/webapp' },
+        { id: 'about', label: t('nav.about'), path: '/about' },
     ];
 
     const toggleLangMenu = () => setIsLangOpen(!isLangOpen);
+
     const changeLanguage = (code) => {
-        i18n.changeLanguage(code);
+        // Get current path without language prefix
+        const currentPath = location.pathname.replace(`/${lang}`, '') || '/';
+        // Navigate to same path with new language
+        navigate(`/${code}${currentPath}`);
         setIsLangOpen(false);
     };
 
-    // Close click outside
+    // Close dropdown when clicking outside
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (langMenuRef.current && !langMenuRef.current.contains(event.target)) {
@@ -47,31 +55,35 @@ const Navigation = ({ currentTab, setCurrentTab }) => {
 
     const currentLang = LANGUAGES.find(l => l.code === i18n.language) || LANGUAGES[0];
 
+    // Get current active tab based on location
+    const currentPath = location.pathname.replace(`/${lang}`, '') || '/';
+    const activeTab = tabs.find(tab => tab.path === currentPath)?.id || 'home';
+
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/50 backdrop-blur-md border-b border-white/10 transition-all duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-                    <div className="flex-shrink-0 cursor-pointer flex items-center gap-2" onClick={() => setCurrentTab('home')}>
+                    <Link to={`/${lang}/`} className="flex-shrink-0 cursor-pointer flex items-center gap-2">
                         <img src={logo} alt="Logo" className="h-8 w-auto rounded-lg" />
                         <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
                             BiblioFuse
                         </span>
-                    </div>
+                    </Link>
 
                     <div className="flex items-center gap-4">
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-4">
                                 {tabs.map((tab) => (
-                                    <button
+                                    <Link
                                         key={tab.id}
-                                        onClick={() => setCurrentTab(tab.id)}
-                                        className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${currentTab === tab.id
+                                        to={`/${lang}${tab.path}`}
+                                        className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${activeTab === tab.id
                                             ? 'text-white bg-white/10 shadow-[0_0_15px_rgba(255,255,255,0.1)]'
                                             : 'text-gray-300 hover:text-white hover:bg-white/5'
                                             }`}
                                     >
                                         {tab.label}
-                                    </button>
+                                    </Link>
                                 ))}
                             </div>
                         </div>

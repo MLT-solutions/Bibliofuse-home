@@ -1,9 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link, useParams } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import SEO from '../components/SEO';
 
-const Home = ({ setCurrentTab }) => {
+const Home = () => {
+    const { lang } = useParams();
     const { t } = useTranslation();
 
     return (
@@ -49,13 +51,13 @@ const Home = ({ setCurrentTab }) => {
                     </a>
 
                     {/* Web Tool - Third */}
-                    <button
-                        onClick={() => setCurrentTab('webapp')}
+                    <Link
+                        to={`/${lang}/webapp`}
                         className="glass-button px-8 py-3 rounded-full font-semibold flex items-center gap-2 group cursor-pointer"
                     >
                         <svg className="w-6 h-6 stroke-current group-hover:text-blue-400 transition-colors" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
                         {t('home.hero.btn.web')}
-                    </button>
+                    </Link>
 
                     {/* PC Tools - Fourth */}
                     <a
@@ -170,9 +172,9 @@ const Home = ({ setCurrentTab }) => {
                                     </a>
                                 </td>
                                 <td className="py-4 px-6 text-center align-middle">
-                                    <button onClick={() => setCurrentTab('webapp')} className="inline-block hover:scale-110 transition-transform cursor-pointer">
+                                    <Link to={`/${lang}/webapp`} className="inline-block hover:scale-110 transition-transform cursor-pointer">
                                         <svg className="w-8 h-8 stroke-blue-400" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
-                                    </button>
+                                    </Link>
                                 </td>
                                 <td className="py-4 px-6 text-center align-middle">
                                     <div className="flex flex-row gap-4 items-center justify-center">

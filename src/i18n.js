@@ -14,6 +14,10 @@ import ko from './locales/ko/translation.json';
 import id from './locales/id/translation.json';
 import ms from './locales/ms/translation.json';
 
+// Export supported languages for use in routing and SEO
+export const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
+
+
 i18n
     .use(LanguageDetector)
     .use(initReactI18next)
