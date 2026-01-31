@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Reader from './pages/Reader';
 import WebApp from './pages/WebApp';
 import About from './pages/About';
+import Privacy from './pages/Privacy';
 import Footer from './components/Footer';
 
 // Language redirect component - detects and redirects to proper language
@@ -67,6 +68,7 @@ function AppLayout() {
           <Route path="/reader" element={<Reader />} />
           <Route path="/webapp" element={<WebApp />} />
           <Route path="/about" element={<About />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<Navigate to={`/${lang}/`} replace />} />
         </Routes>
       </main>
