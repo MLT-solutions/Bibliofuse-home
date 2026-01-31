@@ -28,9 +28,9 @@
             "rows": {
                 "primary": {
                     "name": "Fungsi Utama",
-                    "v_read": "Membaca & Konsumsi",
-                    "v_create": "Kreasi & Edit",
-                    "v_heavy": "Kreasi Berat"
+                    "v_read": "Membaca, Manajemen Perpustakaan (Tag/Peringkat), Kompresi/Penggabungan",
+                    "v_create": "Kompresi/Penggabungan di Mana Saja",
+                    "v_heavy": "Kompresi/Penggabungan Kelas Berat"
                 },
                 "platform": {
                     "name": "Platform",

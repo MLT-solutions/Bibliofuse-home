@@ -28,9 +28,9 @@
             "rows": {
                 "primary": {
                     "name": "Fungsi Utama",
-                    "v_read": "Membaca & Penggunaan",
-                    "v_create": "Penciptaan & Suntingan",
-                    "v_heavy": "Penciptaan Berat"
+                    "v_read": "Membaca, Pengurusan Perpustakaan (Tag/Nilai), Pemampatan/Penggabungan",
+                    "v_create": "Pemampatan/Penggabungan di Mana Jua",
+                    "v_heavy": "Pemampatan/Penggabungan Berat"
                 },
                 "platform": {
                     "name": "Platform",

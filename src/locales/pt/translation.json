@@ -28,9 +28,9 @@
             "rows": {
                 "primary": {
                     "name": "Função Principal",
-                    "v_read": "Leitura e Consumo",
-                    "v_create": "Criação e Edição",
-                    "v_heavy": "Criação Pesada"
+                    "v_read": "Leitura, Gestão de biblioteca (Etiqueta/Avaliar), Compressão/Fusão",
+                    "v_create": "Compressão/Fusão em qualquer lugar",
+                    "v_heavy": "Compressão/Fusão de alto desempenho"
                 },
                 "platform": {
                     "name": "Plataforma",

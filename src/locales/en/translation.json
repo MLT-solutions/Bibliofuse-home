@@ -28,9 +28,9 @@
             "rows": {
                 "primary": {
                     "name": "Primary Function",
-                    "v_read": "Reading & Consumption",
-                    "v_create": "Creation & Editing",
-                    "v_heavy": "Heavy Duty Creation"
+                    "v_read": "Reading, Library Management (Tag/Rate), Compression/ Merger",
+                    "v_create": "Compression/Merger Anywhere",
+                    "v_heavy": "Heavy Duty Compression/ Merger"
                 },
                 "platform": {
                     "name": "Platform",

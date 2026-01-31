@@ -28,9 +28,9 @@
             "rows": {
                 "primary": {
                     "name": "Hoofdfunctie",
-                    "v_read": "Lezen & Consumptie",
-                    "v_create": "Creatie & Bewerking",
-                    "v_heavy": "Zware creatie"
+                    "v_read": "Lezen, Bibliotheekbeheer (Tag/Beoordelen), Compressie/Samenvoegen",
+                    "v_create": "Compressie/Samenvoegen overal",
+                    "v_heavy": "Zware Compressie/Samenvoegen"
                 },
                 "platform": {
                     "name": "Platform",

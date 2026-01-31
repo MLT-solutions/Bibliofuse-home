@@ -28,9 +28,9 @@
             "rows": {
                 "primary": {
                     "name": "主要功能",
-                    "v_read": "阅读和消费",
-                    "v_create": "创作和编辑",
-                    "v_heavy": "重度创作"
+                    "v_read": "阅读, 图书馆管理 (标签/评分), 压缩/合并",
+                    "v_create": "随时随地压缩/合并",
+                    "v_heavy": "重负载压缩/合并"
                 },
                 "platform": {
                     "name": "平台",
