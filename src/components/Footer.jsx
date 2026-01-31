@@ -1,8 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 
 const Footer = () => {
     const { t } = useTranslation();
+    const { lang } = useParams();
 
     return (
         <footer className="py-12 text-center text-slate-400 text-sm border-t border-white/5 bg-slate-900/50 backdrop-blur-sm">
@@ -15,7 +17,7 @@ const Footer = () => {
                 </p>
                 <div className="pt-2">
                     <a
-                        href="https://mlt-solutions.github.io/app-legal-docs/bibliofuse/PRIVACY"
+                        href={`/Bibliofuse-home/privacy/${lang || 'en'}.md`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-400 hover:text-blue-300 transition-colors underline decoration-blue-400/30 underline-offset-4"
