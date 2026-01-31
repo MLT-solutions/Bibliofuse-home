@@ -1,23 +1,752 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bibliofuse.com/</loc>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/en/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
   </url>
   <url>
-    <loc>https://bibliofuse.com/reader</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/es/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
   </url>
   <url>
-    <loc>https://bibliofuse.com/features</loc>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/fr/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/nl/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/pt/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ru/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/zh/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ja/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ko/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/id/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ms/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/en/reader</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/reader" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/reader" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/reader" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/reader" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/reader" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/reader" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/reader" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/reader" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/reader" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/reader" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
   </url>
-   <url>
-    <loc>https://bibliofuse.com/about</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/es/reader</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/reader" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/reader" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/reader" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/reader" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/reader" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/reader" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/reader" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/reader" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/reader" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/reader" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/fr/reader</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/reader" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/reader" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/reader" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/reader" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/reader" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/reader" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/reader" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/reader" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/reader" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/reader" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/nl/reader</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/reader" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/reader" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/reader" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/reader" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/reader" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/reader" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/reader" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/reader" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/reader" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/reader" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/pt/reader</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/reader" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/reader" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/reader" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/reader" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/reader" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/reader" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/reader" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/reader" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/reader" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/reader" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ru/reader</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/reader" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/reader" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/reader" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/reader" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/reader" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/reader" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/reader" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/reader" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/reader" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/reader" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/zh/reader</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/reader" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/reader" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/reader" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/reader" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/reader" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/reader" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/reader" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/reader" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/reader" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/reader" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ja/reader</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/reader" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/reader" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/reader" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/reader" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/reader" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/reader" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/reader" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/reader" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/reader" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/reader" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ko/reader</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/reader" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/reader" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/reader" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/reader" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/reader" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/reader" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/reader" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/reader" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/reader" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/reader" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/id/reader</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/reader" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/reader" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/reader" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/reader" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/reader" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/reader" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/reader" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/reader" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/reader" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/reader" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ms/reader</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/reader" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/reader" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/reader" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/reader" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/reader" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/reader" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/reader" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/reader" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/reader" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/reader" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/reader" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/en/webapp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/webapp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/webapp" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/webapp" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/webapp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/webapp" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/webapp" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/webapp" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/webapp" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/webapp" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/webapp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/es/webapp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/webapp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/webapp" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/webapp" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/webapp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/webapp" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/webapp" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/webapp" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/webapp" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/webapp" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/webapp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/fr/webapp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/webapp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/webapp" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/webapp" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/webapp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/webapp" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/webapp" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/webapp" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/webapp" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/webapp" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/webapp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/nl/webapp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/webapp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/webapp" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/webapp" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/webapp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/webapp" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/webapp" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/webapp" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/webapp" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/webapp" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/webapp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/pt/webapp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/webapp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/webapp" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/webapp" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/webapp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/webapp" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/webapp" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/webapp" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/webapp" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/webapp" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/webapp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ru/webapp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/webapp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/webapp" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/webapp" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/webapp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/webapp" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/webapp" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/webapp" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/webapp" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/webapp" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/webapp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/zh/webapp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/webapp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/webapp" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/webapp" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/webapp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/webapp" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/webapp" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/webapp" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/webapp" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/webapp" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/webapp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ja/webapp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/webapp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/webapp" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/webapp" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/webapp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/webapp" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/webapp" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/webapp" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/webapp" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/webapp" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/webapp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ko/webapp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/webapp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/webapp" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/webapp" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/webapp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/webapp" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/webapp" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/webapp" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/webapp" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/webapp" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/webapp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/id/webapp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/webapp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/webapp" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/webapp" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/webapp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/webapp" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/webapp" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/webapp" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/webapp" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/webapp" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/webapp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ms/webapp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/webapp" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/webapp" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/webapp" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/webapp" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/webapp" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/webapp" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/webapp" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/webapp" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/webapp" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/webapp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/webapp" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/en/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/about" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/about" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/es/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/about" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/about" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/fr/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/about" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/about" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/nl/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/about" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/about" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/pt/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/about" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/about" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ru/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/about" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/about" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/zh/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/about" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/about" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ja/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/about" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/about" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ko/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/about" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/about" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/id/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/about" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/about" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.github.io/Bibliofuse-home/ms/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.github.io/Bibliofuse-home/es/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.github.io/Bibliofuse-home/fr/about" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.github.io/Bibliofuse-home/nl/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.github.io/Bibliofuse-home/pt/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.github.io/Bibliofuse-home/ru/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.github.io/Bibliofuse-home/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.github.io/Bibliofuse-home/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.github.io/Bibliofuse-home/ko/about" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.github.io/Bibliofuse-home/id/about" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.github.io/Bibliofuse-home/ms/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.github.io/Bibliofuse-home/en/about" />
   </url>
 </urlset>
