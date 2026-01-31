@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -16,14 +16,12 @@ const Footer = () => {
                     {t('footer.address')}
                 </p>
                 <div className="pt-2">
-                    <a
-                        href={`/Bibliofuse-home/privacy/${lang || 'en'}.md`}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <Link
+                        to={`/${lang || 'en'}/privacy`}
                         className="text-blue-400 hover:text-blue-300 transition-colors underline decoration-blue-400/30 underline-offset-4"
                     >
                         {t('footer.privacy')}
-                    </a>
+                    </Link>
                 </div>
             </div>
         </footer>
