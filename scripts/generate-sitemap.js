@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Configuration
-const BASE_URL = 'https://bibliofuse.github.io/Bibliofuse-home';
+const BASE_URL = 'https://bibliofuse.com';
 const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
 const ROUTES = [
     { path: '/', priority: '1.0', changefreq: 'weekly' },

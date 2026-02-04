@@ -80,7 +80,7 @@ function AppLayout() {
 function App() {
   return (
     <HelmetProvider>
-      <BrowserRouter basename="/Bibliofuse-home">
+      <BrowserRouter>
         <Routes>
           {/* Root redirect - detects language and redirects */}
           <Route path="/" element={<LanguageRedirect />} />

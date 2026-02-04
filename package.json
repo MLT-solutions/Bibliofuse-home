@@ -2,7 +2,7 @@
   "name": "bibliofuse-home",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://bibliofuse.github.io/Bibliofuse-home",
+  "homepage": "https://bibliofuse.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
