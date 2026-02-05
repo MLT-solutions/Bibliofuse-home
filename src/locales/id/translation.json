@@ -130,6 +130,39 @@
         "connect_title": "Terhubung",
         "connect_text": "Tertarik untuk berkontribusi atau merekrut? Hubungi kami."
     },
+    "seo": {
+        "home": {
+            "title": "Kelola dan Baca E-book Di Mana Saja",
+            "desc": "BiblioFuse: Pembaca ebook offline & pengelola perpustakaan. Tag, nilai, lacak kemajuan membaca. Perpustakaan pribadi dengan sinkronisasi iCloud. Tanpa iklan, tanpa pelacakan. CBZ, EPUB, ZIP. iOS, Android, Windows."
+        },
+        "reader": {
+            "title": "Pembaca E-book Generasi Baru",
+            "desc": "Pembaca ebook cepat tanpa gangguan untuk iOS dan Android. Mode webtoon berkelanjutan, tag cerdas, dan Zoom Cepat untuk komik."
+        },
+        "about": {
+            "title": "Tentang Kami",
+            "desc": "Pelajari tentang tim di balik BiblioFuse. Kami berdedikasi untuk membangun perangkat lunak pribadi dan berpusat pada pengguna untuk pecinta ebook."
+        }
+    },
+    "privacy": {
+        "title": "Mengapa BiblioFuse?",
+        "noAds": {
+            "title": "Tanpa Iklan",
+            "desc": "Nikmati membaca tanpa gangguan iklan yang mengganggu"
+        },
+        "noTracking": {
+            "title": "Tanpa Pelacakan",
+            "desc": "Privasi Anda dilindungi. Kami tidak mengumpulkan atau menjual data Anda"
+        },
+        "cloudSync": {
+            "title": "Sinkronisasi Cloud",
+            "desc": "Sinkronkan perpustakaan Anda dengan mulus di seluruh perangkat dengan iCloud"
+        },
+        "compression": {
+            "title": "Kompresi Cerdas",
+            "desc": "Kurangi ukuran file dan hemat ruang tanpa kehilangan kualitas"
+        }
+    },
     "footer": {
         "rights": "© 2025 Modern Logic Tech Solutions (No. Reg: 202503109774 (003722143-P)). Hak cipta dilindungi undang-undang.",
         "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malaysia",

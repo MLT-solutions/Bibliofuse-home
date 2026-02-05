@@ -130,6 +130,39 @@
         "connect_title": "联系",
         "connect_text": "有兴趣贡献或招聘？请联系我们。"
     },
+    "seo": {
+        "home": {
+            "title": "随时随地管理和阅读电子书",
+            "desc": "BiblioFuse：离线电子书阅读器和图书馆管理器。标签、评分、跟踪阅读进度。私密个人图书馆，支持iCloud同步。无广告、无跟踪。CBZ、EPUB、ZIP。iOS、Android、Windows。"
+        },
+        "reader": {
+            "title": "下一代电子书阅读器",
+            "desc": "适用于iOS和Android的快速、无干扰电子书阅读器。连续网络漫画模式、智能标签和漫画的Peek缩放。"
+        },
+        "about": {
+            "title": "关于我们",
+            "desc": "了解BiblioFuse背后的团队。我们致力于为电子书爱好者打造私密、以用户为中心的软件。"
+        }
+    },
+    "privacy": {
+        "title": "为什么选择BiblioFuse？",
+        "noAds": {
+            "title": "无广告",
+            "desc": "享受不间断的阅读，没有烦人的广告"
+        },
+        "noTracking": {
+            "title": "无跟踪",
+            "desc": "您的隐私受到保护。我们不收集或出售您的数据"
+        },
+        "cloudSync": {
+            "title": "云同步",
+            "desc": "使用iCloud在设备之间无缝同步您的图书馆"
+        },
+        "compression": {
+            "title": "智能压缩",
+            "desc": "减小文件大小并节省空间，无损质量"
+        }
+    },
     "footer": {
         "rights": "© 2025 Modern Logic Tech Solutions (注册号: 202503109774 (003722143-P)). 保留所有权利。",
         "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, 雪兰莪, 马来西亚",

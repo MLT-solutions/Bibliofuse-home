@@ -130,6 +130,39 @@
         "connect_title": "接続する",
         "connect_text": "貢献や採用に興味がありますか？お問い合わせください。"
     },
+    "seo": {
+        "home": {
+            "title": "どこでも電子書籍を管理・読書",
+            "desc": "BiblioFuse：オフライン電子書籍リーダ&ライブラリ管理。タグ、評価、読書進捗追跡。プライベートな個人ライブラリ、iCloud同期対応。広告なし、追跡なし。CBZ、EPUB、ZIP。iOS、Android、Windows。"
+        },
+        "reader": {
+            "title": "次世代電子書籍リーダー",
+            "desc": "iOSとAndroid向けの高速で気を散らさない電子書籍リーダー。連続ウェブトゥーンモード、スマートタグ、コミック用ピークズーム。"
+        },
+        "about": {
+            "title": "私たちについて",
+            "desc": "BiblioFuseチームについて。私たちは電子書籍愛好家のためにプライベートでユーザー中心のソフトウェアを構築することに専念しています。"
+        }
+    },
+    "privacy": {
+        "title": "なぜBiblioFuseなのか？",
+        "noAds": {
+            "title": "広告なし",
+            "desc": "迷惑な広告なしで中断のない読書をお楽しみください"
+        },
+        "noTracking": {
+            "title": "追跡なし",
+            "desc": "あなたのプライバシーは保護されています。データを収集または販売しません"
+        },
+        "cloudSync": {
+            "title": "クラウド同期",
+            "desc": "iCloudでデバイス間でライブラリをシームレスに同期"
+        },
+        "compression": {
+            "title": "スマート圧縮",
+            "desc": "品質を損なうことなくファイルサイズを縮小し、スペースを節約"
+        }
+    },
     "footer": {
         "rights": "© 2025 Modern Logic Tech Solutions (登録番号: 202503109774 (003722143-P))。全著作権所有。",
         "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malaysia",

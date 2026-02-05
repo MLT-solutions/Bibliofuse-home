@@ -130,6 +130,39 @@
         "connect_title": "Conectar",
         "connect_text": "¿Interesado en contribuir o contratar? Contáctanos."
     },
+    "seo": {
+        "home": {
+            "title": "Gestiona y lee libros electrónicos en cualquier lugar",
+            "desc": "BiblioFuse: Lector de ebooks sin conexión y gestor de biblioteca. Etiqueta, califica, rastrea el progreso de lectura. Biblioteca personal privada con sincronización iCloud. Sin anuncios, sin seguimiento. CBZ, EPUB, ZIP. iOS, Android, Windows."
+        },
+        "reader": {
+            "title": "Lector de libros electrónicos de última generación",
+            "desc": "Un lector de libros electrónicos rápido y sin distracciones para iOS y Android. Incluye modo webtoon continuo, etiquetado inteligente y Peek Zoom para cómics."
+        },
+        "about": {
+            "title": "Acerca de nosotros",
+            "desc": "Conoce al equipo detrás de BiblioFuse. Estamos dedicados a construir software privado y centrado en el usuario para los amantes de los libros electrónicos."
+        }
+    },
+    "privacy": {
+        "title": "¿Por qué elegir BiblioFuse?",
+        "noAds": {
+            "title": "Sin anuncios",
+            "desc": "Disfruta de una lectura sin interrupciones ni anuncios molestos"
+        },
+        "noTracking": {
+            "title": "Sin seguimiento",
+            "desc": "Tu privacidad está protegida. No recopilamos ni vendemos tus datos"
+        },
+        "cloudSync": {
+            "title": "Sincronización en la nube",
+            "desc": "Sincroniza tu biblioteca sin problemas entre dispositivos con iCloud"
+        },
+        "compression": {
+            "title": "Compresión inteligente",
+            "desc": "Reduce el tamaño del archivo y ahorra espacio sin pérdida de calidad"
+        }
+    },
     "footer": {
         "rights": "© 2025 Modern Logic Tech Solutions (Reg. No: 202503109774 (003722143-P)). Todos los derechos reservados.",
         "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malasia",

@@ -133,7 +133,7 @@
     "seo": {
         "home": {
             "title": "Manage & Read E-Books Anywhere",
-            "desc": "BiblioFuse is the ultimate e-book ecosystem. Merge CBZ/EPUB files, manage your library privately with WASM, and read on any device with our next-gen readers."
+            "desc": "BiblioFuse: Offline ebook reader & library manager. Tag, rate, track reading progress. Private personal library with iCloud sync. No ads, no tracking. CBZ, EPUB, ZIP. iOS, Android, Windows."
         },
         "reader": {
             "title": "Next-Gen E-Book Reader",
@@ -142,6 +142,25 @@
         "about": {
             "title": "About Us",
             "desc": "Learn about the team behind BiblioFuse. We are dedicated to building private, user-first software for e-book lovers."
+        }
+    },
+    "privacy": {
+        "title": "Why Choose BiblioFuse?",
+        "noAds": {
+            "title": "No Ads",
+            "desc": "Enjoy uninterrupted reading without annoying advertisements"
+        },
+        "noTracking": {
+            "title": "No Tracking",
+            "desc": "Your privacy is protected. We don't collect or sell your data"
+        },
+        "cloudSync": {
+            "title": "Cloud Sync",
+            "desc": "Seamlessly sync your library across devices with iCloud"
+        },
+        "compression": {
+            "title": "Smart Compression",
+            "desc": "Reduce file size and save storage space without quality loss"
         }
     },
     "footer": {

@@ -130,6 +130,39 @@
         "connect_title": "Connecter",
         "connect_text": "Intéressé pour contribuer ou embaucher ? Contactez-nous."
     },
+    "seo": {
+        "home": {
+            "title": "Gérez et lisez des livres électroniques partout",
+            "desc": "BiblioFuse: Lecteur d'ebooks hors ligne et gestionnaire de bibliothèque. Étiquetez, notez, suivez la progression de lecture. Bibliothèque personnelle privée avec synchronisation iCloud. Sans publicité, sans suivi. CBZ, EPUB, ZIP. iOS, Android, Windows."
+        },
+        "reader": {
+            "title": "Lecteur de livres électroniques nouvelle génération",
+            "desc": "Un lecteur de livres électroniques rapide et sans distraction pour iOS et Android. Dispose du mode webtoon continu, d'un étiquetage intelligent et de Peek Zoom pour les bandes dessinées."
+        },
+        "about": {
+            "title": "À propos de nous",
+            "desc": "Découvrez l'équipe derrière BiblioFuse. Nous nous consacrons à la création de logiciels privés et centrés sur l'utilisateur pour les amateurs de livres électroniques."
+        }
+    },
+    "privacy": {
+        "title": "Pourquoi choisir BiblioFuse?",
+        "noAds": {
+            "title": "Sans publicité",
+            "desc": "Profitez d'une lecture ininterrompue sans publicités ennuyeuses"
+        },
+        "noTracking": {
+            "title": "Aucun suivi",
+            "desc": "Votre vie privée est protégée. Nous ne collectons ni ne vendons vos données"
+        },
+        "cloudSync": {
+            "title": "Synchronisation cloud",
+            "desc": "Synchronisez votre bibliothèque de manière transparente entre les appareils avec iCloud"
+        },
+        "compression": {
+            "title": "Compression intelligente",
+            "desc": "Réduisez la taille des fichiers et économisez de l'espace sans perte de qualité"
+        }
+    },
     "footer": {
         "rights": "© 2025 Modern Logic Tech Solutions (Reg. No: 202503109774 (003722143-P)). Tous droits réservés.",
         "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malaisie",

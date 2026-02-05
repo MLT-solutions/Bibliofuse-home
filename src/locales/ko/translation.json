@@ -130,6 +130,39 @@
         "connect_title": "연결",
         "connect_text": "기여하거나 채용에 관심이 있으신가요? 연락주세요."
     },
+    "seo": {
+        "home": {
+            "title": "어디서나 전자책 관리 및 읽기",
+            "desc": "BiblioFuse: 오프라인 전자책 리더 및 라이브러리 관리자. 태그, 평점, 읽기 진행 추적. iCloud 동기화를 지원하는 비공개 개인 라이브러리. 광고 없음, 추적 없음. CBZ, EPUB, ZIP. iOS, Android, Windows."
+        },
+        "reader": {
+            "title": "차세대 전자책 리더",
+            "desc": "iOS 및 Android용 빠르고 집중력을 흐트러뜨리지 않는 전자책 리더. 연속 웹툰 모드, 스마트 태그, 만화용 픽 줌."
+        },
+        "about": {
+            "title": "회사 소개",
+            "desc": "BiblioFuse 팀에 대해 알아보세요. 우리는 전자책 애호가를 위한 비공개, 사용자 중심 소프트웨어를 구축하는 데 전념하고 있습니다."
+        }
+    },
+    "privacy": {
+        "title": "왜 BiblioFuse인가요?",
+        "noAds": {
+            "title": "광고 없음",
+            "desc": "성가신 광고 없이 끊김 없는 독서를 즐기세요"
+        },
+        "noTracking": {
+            "title": "추적 없음",
+            "desc": "귀하의 개인정보가 보호됩니다. 데이터를 수집하거나 판매하지 않습니다"
+        },
+        "cloudSync": {
+            "title": "클라우드 동기화",
+            "desc": "iCloud를 사용하여 기기 간에 라이브러리를 원활하게 동기화"
+        },
+        "compression": {
+            "title": "스마트 압축",
+            "desc": "품질 손실 없이 파일 크기를 줄이고 공간을 절약"
+        }
+    },
     "footer": {
         "rights": "© 2025 Modern Logic Tech Solutions (등록 번호: 202503109774 (003722143-P)). 모든 권리 보유.",
         "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malaysia",

@@ -130,6 +130,39 @@
         "connect_title": "Verbinden",
         "connect_text": "Geïnteresseerd in bijdragen of inhuren? Neem contact met ons op."
     },
+    "seo": {
+        "home": {
+            "title": "Beheer en lees e-books overal",
+            "desc": "BiblioFuse: Offline ebook-lezer en bibliotheekbeheerder. Tag, beoordeel, volg leesvoortgang. Privé persoonlijke bibliotheek met iCloud-synchronisatie. Geen advertenties, geen tracking. CBZ, EPUB, ZIP. iOS, Android, Windows."
+        },
+        "reader": {
+            "title": "Next-gen e-book lezer",
+            "desc": "Een snelle, afleidingsvrije e-book lezer voor iOS en Android. Bevat continue webtoon-modus, slim taggen en Peek Zoom voor strips."
+        },
+        "about": {
+            "title": "Over ons",
+            "desc": "Leer over het team achter BiblioFuse. We zijn toegewijd aan het bouwen van privé, gebruikersgerichte software voor e-book liefhebbers."
+        }
+    },
+    "privacy": {
+        "title": "Waarom BiblioFuse?",
+        "noAds": {
+            "title": "Geen advertenties",
+            "desc": "Geniet van ononderbroken lezen zonder vervelende advertenties"
+        },
+        "noTracking": {
+            "title": "Geen tracking",
+            "desc": "Uw privacy is beschermd. We verzamelen of verkopen uw gegevens niet"
+        },
+        "cloudSync": {
+            "title": "Cloud-synchronisatie",
+            "desc": "Synchroniseer uw bibliotheek naadloos tussen apparaten met iCloud"
+        },
+        "compression": {
+            "title": "Slimme compressie",
+            "desc": "Verklein de bestandsgrootte en bespaar ruimte zonder kwaliteitsverlies"
+        }
+    },
     "footer": {
         "rights": "© 2025 Modern Logic Tech Solutions (Reg. Nr: 202503109774 (003722143-P)). Alle rechten voorbehouden.",
         "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Maleisië",
