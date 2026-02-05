@@ -10,11 +10,15 @@
             "title": "BiblioFuse",
             "subtitle": "The Ultimate E-Book Ecosystem. Tools for managing, Reader for enjoying.",
             "btn": {
-                "ios": "iOS (In Review)",
+                "ios": "iOS App Store",
                 "android": "Google Play",
                 "web": "Launch Web Tool",
                 "pc": "PC Tools"
             }
+        },
+        "warning": {
+            "title": "Download from Official Sources Only",
+            "message": "BiblioFuse apps are exclusively distributed through Apple App Store, Google Play Store, and Microsoft Store. Never download from unofficial websites to protect your device from malware and security threats."
         },
         "table": {
             "title": "Editions Comparison",
@@ -58,12 +62,13 @@
                     "v_basic": "Basic Preview"
                 },
                 "cloud": {
-                    "name": "Cloud DB Backup",
+                    "name": "Auto DB Backup",
                     "v_icloud": "✔ (iCloud)",
-                    "v_gdrive": "✔ (Google Drive)"
+                    "v_gdrive": "✔ (local)"
                 },
                 "bookshelf": {
-                    "name": "iCloud Bookshelf"
+                    "name": "iCloud Bookshelf",
+                    "v_ios": "✔ (cross-devices)"
                 },
                 "lang": {
                     "name": "Language Support",

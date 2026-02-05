@@ -10,11 +10,15 @@
             "title": "BiblioFuse",
             "subtitle": "Het ultieme e-book ecosysteem. Tools om te beheren, Reader om te genieten.",
             "btn": {
-                "ios": "iOS (In beoordeling)",
+                "ios": "iOS App Store",
                 "android": "Google Play",
-                "web": "Webtool starten",
+                "web": "Start webgereedschap",
                 "pc": "PC-tools"
             }
+        },
+        "warning": {
+            "title": "Download alleen van officiële bronnen",
+            "message": "BiblioFuse-apps worden uitsluitend gedistribueerd via de Apple App Store, Google Play Store en Microsoft Store. Download nooit van onofficiële websites om uw apparaat te beschermen tegen malware en beveiligingsrisico's."
         },
         "table": {
             "title": "Vergelijking van edities",
@@ -58,12 +62,13 @@
                     "v_basic": "Basisvoorbeeld"
                 },
                 "cloud": {
-                    "name": "Cloud DB Back-up",
+                    "name": "Automatische back-up",
                     "v_icloud": "✔ (iCloud)",
-                    "v_gdrive": "✔ (Google Drive)"
+                    "v_gdrive": "✔ (lokaal)"
                 },
                 "bookshelf": {
-                    "name": "iCloud Boekenplank"
+                    "name": "iCloud Boekenkast",
+                    "v_ios": "✔ (meerdere apparaten)"
                 },
                 "lang": {
                     "name": "Taalondersteuning",

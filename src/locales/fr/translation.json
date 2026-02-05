@@ -10,11 +10,15 @@
             "title": "BiblioFuse",
             "subtitle": "L'écosystème ultime pour livres électroniques. Des outils pour gérer, un lecteur pour apprécier.",
             "btn": {
-                "ios": "iOS (En revue)",
+                "ios": "iOS App Store",
                 "android": "Google Play",
                 "web": "Lancer l'outil Web",
                 "pc": "Outils PC"
             }
+        },
+        "warning": {
+            "title": "Téléchargez uniquement depuis des sources officielles",
+            "message": "Les applications BiblioFuse sont exclusivement distribuées via l'Apple App Store, le Google Play Store et le Microsoft Store. Ne téléchargez jamais depuis des sites Web non officiels pour protéger votre appareil contre les logiciels malveillants et les menaces de sécurité."
         },
         "table": {
             "title": "Comparaison des éditions",
@@ -58,12 +62,13 @@
                     "v_basic": "Aperçu basique"
                 },
                 "cloud": {
-                    "name": "Sauvegarde Cloud",
+                    "name": "Sauvegarde automatique",
                     "v_icloud": "✔ (iCloud)",
-                    "v_gdrive": "✔ (Google Drive)"
+                    "v_gdrive": "✔ (local)"
                 },
                 "bookshelf": {
-                    "name": "Bibliothèque iCloud"
+                    "name": "Bibliothèque iCloud",
+                    "v_ios": "✔ (multi-appareils)"
                 },
                 "lang": {
                     "name": "Support langues",

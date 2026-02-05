@@ -10,11 +10,15 @@
             "title": "BiblioFuse",
             "subtitle": "终极电子书生态系统。管理工具，享受阅读。",
             "btn": {
-                "ios": "iOS (审核中)",
+                "ios": "iOS App Store",
                 "android": "Google Play",
                 "web": "启动Web工具",
                 "pc": "PC工具"
             }
+        },
+        "warning": {
+            "title": "仅从官方渠道下载",
+            "message": "BiblioFuse 应用程序仅通过 Apple App Store、Google Play Store 和 Microsoft Store 分发。请勿从非官方网站下载，以保护您的设备免受恶意软件和安全威胁。"
         },
         "table": {
             "title": "版本比较",
@@ -58,12 +62,13 @@
                     "v_basic": "基本预览"
                 },
                 "cloud": {
-                    "name": "云数据库备份",
+                    "name": "自动数据备份",
                     "v_icloud": "✔ (iCloud)",
-                    "v_gdrive": "✔ (Google Drive)"
+                    "v_gdrive": "✔ (本地)"
                 },
                 "bookshelf": {
-                    "name": "iCloud书架"
+                    "name": "iCloud 书架",
+                    "v_ios": "✔ (跨设备)"
                 },
                 "lang": {
                     "name": "语言支持",

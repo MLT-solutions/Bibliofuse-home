@@ -29,25 +29,25 @@ const Home = () => {
                 </p>
 
                 {/* Download / Action Buttons */}
-                <div className="flex flex-wrap gap-4 justify-center mt-8 cursor-default">
-                    {/* iOS (In Review) - First */}
-                    <button
-                        className="glass-button px-8 py-3 rounded-full font-semibold flex items-center gap-2 opacity-80 hover:opacity-100 cursor-not-allowed border-dashed"
-                        title={t('home.table.rows.avail.v_review')}
+                <div className="flex flex-wrap gap-4 justify-center mt-8 items-center">
+                    {/* iOS App Store - First */}
+                    <a
+                        href="https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block hover:scale-105 transition-transform"
                     >
-                        <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M18.71,19.5C17.88,20.79 17,20.25 16.5,19.5L15.4,18H16.5V17H12.5V16L13.5,15.5L12.5,15H17.5V14H13V13H18.5V12H12.5V11H19.5V10H14.5V9H20.5V8H13.5L13.7,7.8L12.5,6H21V5H10.5V4H22V2L19,1L14,5H6A2,2 0 0,0 4,7V17A2,2 0 0,0 6,19H7.11C7.83,21.35 9,22 10.5,22C12,22 13.17,21.35 13.89,19H18.71M9.5,20.5A1.5,1.5 0 0,1 8,19H11A1.5,1.5 0 0,1 9.5,20.5M6,7H12V17H6V7Z" /></svg>
-                        {t('home.hero.btn.ios')}
-                    </button>
+                        <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt="Download on the App Store" className="h-12" />
+                    </a>
 
                     {/* Google Play - Second */}
                     <a
                         href="https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="glass-button px-8 py-3 rounded-full font-semibold flex items-center gap-2 group"
+                        className="inline-block hover:scale-105 transition-transform"
                     >
-                        <svg className="w-6 h-6 fill-current group-hover:text-green-400 transition-colors" viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" /></svg>
-                        {t('home.hero.btn.android')}
+                        <img src="/image/Playstore.png" alt="Get it on Google Play" className="h-12" />
                     </a>
 
                     {/* Web Tool - Third */}
@@ -55,22 +55,34 @@ const Home = () => {
                         to={`/${lang}/webapp`}
                         className="glass-button px-8 py-3 rounded-full font-semibold flex items-center gap-2 group cursor-pointer"
                     >
-                        <svg className="w-6 h-6 stroke-current group-hover:text-blue-400 transition-colors" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+                        <img src="/image/WebAssembly_Logo.svg" alt="WebAssembly" className="h-6" />
                         {t('home.hero.btn.web')}
                     </Link>
 
-                    {/* PC Tools - Fourth */}
+                    {/* Microsoft Store - Fourth */}
                     <a
                         href="#comparison-table"
                         onClick={(e) => {
                             e.preventDefault();
                             document.getElementById('comparison-table').scrollIntoView({ behavior: 'smooth' });
                         }}
-                        className="glass-button px-8 py-3 rounded-full font-semibold flex items-center gap-2 group"
+                        className="inline-block hover:scale-105 transition-transform"
                     >
-                        <svg className="w-6 h-6 fill-current group-hover:text-purple-400 transition-colors" viewBox="0 0 24 24"><path d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4M4,6V18H20V6H4M6,15H18V17H6V15Z" /></svg>
-                        {t('home.hero.btn.pc')}
+                        <img src="/image/Microsoft_Store_badge.svg" alt="Get it from Microsoft" className="h-12" />
                     </a>
+                </div>
+
+                {/* Official Distribution Warning */}
+                <div className="mt-8 max-w-3xl mx-auto">
+                    <div className="glass-panel rounded-xl p-6 border-2 border-amber-500/30 bg-amber-500/5">
+                        <div className="flex items-start gap-4">
+                            <svg className="w-8 h-8 flex-shrink-0 fill-amber-400" viewBox="0 0 24 24"><path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z" /></svg>
+                            <div className="flex-1">
+                                <h3 className="text-lg font-bold text-amber-300 mb-2">{t('home.warning.title')}</h3>
+                                <p className="text-sm text-slate-300 leading-relaxed">{t('home.warning.message')}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -138,7 +150,7 @@ const Home = () => {
                             </tr>
                             <tr>
                                 <td className="py-4 px-6 font-medium text-slate-200">{t('home.table.rows.bookshelf.name')}</td>
-                                <td className="py-4 px-6 text-center font-bold text-green-400">✔</td>
+                                <td className="py-4 px-6 text-center font-bold text-green-400">{t('home.table.rows.bookshelf.v_ios')}</td>
                                 <td className="py-4 px-6 text-center text-slate-600">✘</td>
                                 <td className="py-4 px-6 text-center text-slate-600">✘</td>
                                 <td className="py-4 px-6 text-center text-slate-600">✘</td>
@@ -162,36 +174,30 @@ const Home = () => {
                             <tr>
                                 <td className="py-4 px-6 font-medium text-slate-200 align-middle">{t('home.table.rows.avail.name')}</td>
                                 <td className="py-4 px-6 text-center align-middle">
-                                    <div className="flex justify-center">
-                                        <span className="bg-white/10 px-3 py-1 rounded text-yellow-400 text-xs font-bold border border-yellow-400/30">{t('home.table.rows.avail.v_review')}</span>
-                                    </div>
+                                    <a href="https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093" target="_blank" rel="noopener noreferrer" className="inline-block hover:scale-110 transition-transform">
+                                        <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt="Download on the App Store" className="h-10 inline-block" />
+                                    </a>
                                 </td>
                                 <td className="py-4 px-6 text-center align-middle">
                                     <a href="https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ" target="_blank" rel="noopener noreferrer" className="inline-block hover:scale-110 transition-transform">
-                                        <svg className="w-8 h-8 fill-green-400" viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" /></svg>
+                                        <img src="/image/Playstore.png" alt="Get it on Google Play" className="h-10 inline-block" />
                                     </a>
                                 </td>
                                 <td className="py-4 px-6 text-center align-middle">
                                     <Link to={`/${lang}/webapp`} className="inline-block hover:scale-110 transition-transform cursor-pointer">
-                                        <svg className="w-8 h-8 stroke-blue-400" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+                                        <img src="/image/WebAssembly_Logo.svg" alt="WebAssembly" className="h-10 inline-block" />
                                     </Link>
                                 </td>
                                 <td className="py-4 px-6 text-center align-middle">
-                                    <div className="flex flex-row gap-4 items-center justify-center">
-                                        <div className="flex-shrink-0">
-                                            <svg className="w-8 h-8" viewBox="0 0 165 160" fill="none">
-                                                {/* Microsoft Store Badge Logo Section */}
-                                                <path d="M5.6 5.6H74.4V72.6H5.6V5.6ZM90.6 5.6H159.4V72.6H90.6V5.6ZM5.6 88.6H74.4V155.6H5.6V88.6ZM90.6 88.6H159.4V155.6H90.6V88.6Z" fill="#00A4EF" />
-                                            </svg>
-                                        </div>
-                                        <div className="flex flex-col gap-2 w-full max-w-[100px]">
-                                            <a href="https://apps.microsoft.com/detail/9p7b02538tfq?hl=en-US&gl=MY" target="_blank" rel="noopener noreferrer" className="text-xs bg-purple-500/20 hover:bg-purple-500/40 text-purple-300 border border-purple-500/30 px-3 py-1 rounded transition-colors text-center block">
-                                                {t('home.table.rows.avail.v_cbz')}
-                                            </a>
-                                            <a href="https://apps.microsoft.com/detail/9pdllhdz6kkl?hl=en-US&gl=MY" target="_blank" rel="noopener noreferrer" className="text-xs bg-cyan-500/20 hover:bg-cyan-500/40 text-cyan-300 border border-cyan-500/30 px-3 py-1 rounded transition-colors text-center block">
-                                                {t('home.table.rows.avail.v_epub')}
-                                            </a>
-                                        </div>
+                                    <div className="flex flex-col gap-2 items-center justify-center">
+                                        <a href="https://apps.microsoft.com/detail/9p7b02538tfq?hl=en-US&gl=MY" target="_blank" rel="noopener noreferrer" className="inline-block hover:scale-110 transition-transform">
+                                            <img src="/image/Microsoft_Store_badge.svg" alt="Get it from Microsoft" className="h-10 inline-block" />
+                                        </a>
+                                        <span className="text-xs text-slate-400">{t('home.table.rows.avail.v_cbz')}</span>
+                                        <a href="https://apps.microsoft.com/detail/9pdllhdz6kkl?hl=en-US&gl=MY" target="_blank" rel="noopener noreferrer" className="inline-block hover:scale-110 transition-transform">
+                                            <img src="/image/Microsoft_Store_badge.svg" alt="Get it from Microsoft" className="h-10 inline-block" />
+                                        </a>
+                                        <span className="text-xs text-slate-400">{t('home.table.rows.avail.v_epub')}</span>
                                     </div>
                                 </td>
                             </tr>

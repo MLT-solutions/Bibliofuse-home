@@ -10,11 +10,15 @@
             "title": "BiblioFuse",
             "subtitle": "Ekosistem E-Book Utama. Alat untuk mengelola, Pembaca untuk menikmati.",
             "btn": {
-                "ios": "iOS (Dalam Tinjauan)",
+                "ios": "iOS App Store",
                 "android": "Google Play",
-                "web": "Luncurkan Web Tool",
+                "web": "Luncurkan Alat Web",
                 "pc": "Alat PC"
             }
+        },
+        "warning": {
+            "title": "Unduh hanya dari sumber resmi",
+            "message": "Aplikasi BiblioFuse hanya didistribusikan melalui Apple App Store, Google Play Store, dan Microsoft Store. Jangan pernah mengunduh dari situs web tidak resmi untuk melindungi perangkat Anda dari malware dan ancaman keamanan."
         },
         "table": {
             "title": "Perbandingan Edisi",
@@ -58,12 +62,13 @@
                     "v_basic": "Pratinjau Dasar"
                 },
                 "cloud": {
-                    "name": "Cadangan Cloud DB",
+                    "name": "Backup DB Otomatis",
                     "v_icloud": "✔ (iCloud)",
-                    "v_gdrive": "✔ (Google Drive)"
+                    "v_gdrive": "✔ (lokal)"
                 },
                 "bookshelf": {
-                    "name": "Rak Buku iCloud"
+                    "name": "Rak Buku iCloud",
+                    "v_ios": "✔ (lintas perangkat)"
                 },
                 "lang": {
                     "name": "Dukungan Bahasa",

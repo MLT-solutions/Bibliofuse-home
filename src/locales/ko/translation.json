@@ -10,11 +10,15 @@
             "title": "BiblioFuse",
             "subtitle": "궁극의 전자책 생태계. 관리를 위한 도구, 즐거움을 위한 리더.",
             "btn": {
-                "ios": "iOS (심사 중)",
+                "ios": "iOS App Store",
                 "android": "Google Play",
                 "web": "웹 도구 실행",
                 "pc": "PC 도구"
             }
+        },
+        "warning": {
+            "title": "공식 출처에서만 다운로드하세요",
+            "message": "BiblioFuse 앱은 Apple App Store, Google Play Store, Microsoft Store를 통해서만 배포됩니다. 비공식 웹사이트에서 다운로드하지 마세요. 악성 코드 및 보안 위협으로부터 기기를 보호할 수 있습니다."
         },
         "table": {
             "title": "에디션 비교",
@@ -58,12 +62,13 @@
                     "v_basic": "기본 미리보기"
                 },
                 "cloud": {
-                    "name": "클라우드 DB 백업",
+                    "name": "자동 DB 백업",
                     "v_icloud": "✔ (iCloud)",
-                    "v_gdrive": "✔ (Google Drive)"
+                    "v_gdrive": "✔ (로컬)"
                 },
                 "bookshelf": {
-                    "name": "iCloud 책장"
+                    "name": "iCloud 책장",
+                    "v_ios": "✔ (다중 기기)"
                 },
                 "lang": {
                     "name": "언어 지원",
