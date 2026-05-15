@@ -364,6 +364,232 @@
           ]
         ]
       }
+    },
+    "productFamily": {
+      "eyebrow": "BiblioFuse 패밀리",
+      "titleA": "하나의 생태계.",
+      "titleB": "파일을 소유하기 위한 도구.",
+      "desc": "Modern Logic Tech Solutions가 자신의 기기에 라이브러리를 보관하는 독자와 수집가를 위해 제작했습니다. 타인의 로그인 뒤가 아닙니다.",
+      "alsoOn": "또한",
+      "products": {
+        "reader": {
+          "tag": "플래그십",
+          "desc": "개인 전자책과 만화 컬렉션을 위한 네이티브 리더 및 라이브러리 관리자.",
+          "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP, TXT",
+          "bullet2": "태그, 평점, 진행률, 북마크",
+          "bullet3": "iPhone, iPad, Mac에서 iCloud 라이브러리 (Mac 심사 중)",
+          "cta": "App Store에서 받기",
+          "secondary": "Google Play"
+        },
+        "webTool": {
+          "tag": "무료",
+          "desc": "브라우저에서 전자책 파일을 변환, 병합, 압축하세요. 설치 불필요, 완전히 기기에서 처리.",
+          "bullet1": "EPUB / PDF / CBZ / ZIP 병합 및 변환",
+          "bullet2": "WebAssembly 기반, 100% 비공개",
+          "bullet3": "브라우저만 있으면 모든 플랫폼에서 작동",
+          "cta": "웹 도구 실행"
+        },
+        "archive": {
+          "tag": "Mac · Windows",
+          "desc": "중복된 만화 아카이브, 사진, 파일을 찾아 삭제합니다. 이름 변경, 재압축, 다른 폴더 저장 후에도 가능.",
+          "bullet1": "CBZ/CBR/ZIP/RAR 지각 해싱",
+          "bullet2": "스마트 자동 선택 및 휴지통으로 안전 삭제",
+          "bullet3": "빠른 재스캔을 위한 해시 캐시",
+          "cta": "Mac App Store",
+          "secondary": "Microsoft Store"
+        },
+        "smartdecrypt": {
+          "tag": "iOS · Mac · Windows",
+          "desc": "저장된 파일명 패턴을 사용하여 비밀번호로 보호된 PDF와 아카이브를 잠금 해제합니다.",
+          "bullet1": "PDF, ZIP, 7z 지원",
+          "bullet2": "반복 파일에 대한 패턴 매칭",
+          "bullet3": "비밀번호는 시스템 키체인에 저장",
+          "cta": "iOS · Mac App Store",
+          "secondary": "Microsoft Store"
+        }
+      }
+    },
+    "readerSection": {
+      "eyebrow": "BiblioFuse Reader",
+      "title": "긴 독서 세션을 위해 제작.",
+      "desc": "실제로 사용하는 라이브러리 도구를 갖춘 집중형 리더: 형식, 폴더, 태그, 평점, 진행률, 북마크. iPhone, iPad, Mac에서 iCloud로 동기화되는 동일한 라이브러리.",
+      "features": {
+        "library": {
+          "eyebrow": "라이브러리",
+          "title": "모든 형식을 위한 하나의 책장.",
+          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP, TXT: 폴더, 검색, 최근 책이 있는 단일 라이브러리에서 읽기. 파일, 문서 선택기 또는 iCloud Drive에서 가져오기.",
+          "bullet1Title": "태그 및 평점",
+          "bullet1Body": "원하는 경우 폴더 없이 정리.",
+          "bullet2Title": "읽기 진행률",
+          "bullet2Body": "각 책이 중단 위치를 기억.",
+          "bullet3Title": "iCloud 크로스 디바이스",
+          "bullet3Body": "iPad에서 중단한 곳을 iPhone에서 이어서.",
+          "imageAlt": "태그, 평점, 읽기 진행률이 있는 BiblioFuse 라이브러리"
+        },
+        "reading": {
+          "eyebrow": "당신의 방식으로 읽기",
+          "title": "TTS, 자동 스크롤, 픽 줌.",
+          "desc": "긴 세션에 필요한 컨트롤을 갖춘 방해 없는 리더. EPUB 및 TXT용 텍스트 음성 변환. 만화와 웹툰용 자동 스크롤. 위치를 잃지 않고 패널을 확대하는 픽 줌.",
+          "bullet1Title": "텍스트 음성 변환",
+          "bullet1Body": "EPUB 및 TXT용 핸즈프리 내레이션.",
+          "bullet2Title": "자동 스크롤",
+          "bullet2Body": "페이지 또는 연속, 이미지 아카이브에 맞게 조정.",
+          "bullet3Title": "픽 줌",
+          "bullet3Body": "밀집된 패널과 작은 텍스트를 더블 탭으로 확대.",
+          "imageAlt": "TTS, 자동 스크롤, 픽 줌이 있는 BiblioFuse 읽기 화면"
+        },
+        "streaming": {
+          "eyebrow": "Mac에서 모바일로 스트리밍",
+          "title": "라이브러리 허브. iPhone으로 스트리밍.",
+          "badge": "타사 서버 불필요 · 구독 불필요",
+          "desc": "Mac에서 BiblioFuse는 데스크톱 라이브러리 허브가 됩니다: 분할 보기 라이브러리/리더 인터페이스에서 로컬 폴더, iCloud 폴더, SMB 네트워크 공유를 관리하세요. 그런 다음 집에서는 로컬 Wi-Fi로, 외출 시에는 5G로 원격으로 iPhone과 iPad의 BiblioFuse에 직접 책을 스트리밍하세요.",
+          "bullet1Title": "로컬 Wi-Fi 스트리밍",
+          "bullet1Body": "모든 Mac 소스에서 즉시 탐색.",
+          "bullet2Title": "원격 5G 스트리밍",
+          "bullet2Body": "Tailscale로 어디서나 홈 라이브러리 열기.",
+          "bullet3Title": "로컬, iCloud, SMB 소스",
+          "bullet3Body": "하나의 Mac 라이브러리, 이미 가지고 있는 모든 폴더.",
+          "bullet4Title": "옵션 PIN",
+          "bullet4Body": "공유 네트워크에서 스트리밍 접근 잠금.",
+          "imageAlt": "분할 보기 리더가 있는 BiblioFuse Mac 라이브러리",
+          "footnote": "원격 접근은 Mac과 iOS 모두에서 iCloud 로그인 및 Tailscale 연결이 필요합니다."
+        }
+      }
+    },
+    "toolsHighlight": {
+      "badge": "내장 도구",
+      "title": "앱을 떠나지 않고 압축 및 병합.",
+      "supports": "지원",
+      "onDevice": "모든 처리는 기기에서 실행됩니다. 업로드되는 것은 없습니다.",
+      "tools": {
+        "resize": {
+          "title": "짧은 쪽으로 크기 조정",
+          "body": "목표 최단 치수를 설정하고 아카이브의 모든 이미지를 다시 페이지 매김.",
+          "kpi": "1080 px",
+          "label": "일반 프리셋"
+        },
+        "convert": {
+          "title": "WebP 또는 JPG로 변환",
+          "body": "페이지를 WebP 또는 JPG로 다시 인코딩하여 더 작고 선명한 아카이브로.",
+          "kpi": "최대 50%",
+          "label": "더 작은 파일"
+        },
+        "merge": {
+          "title": "챕터 및 시리즈 병합",
+          "body": "챕터, 볼륨 또는 분할 다운로드를 하나의 깨끗한 CBZ, ZIP, PDF로 결합.",
+          "kpi": "여럿을 하나로",
+          "label": "원패스"
+        }
+      }
+    },
+    "archiveSection": {
+      "badge": "자매 앱 · Mac 및 Windows",
+      "titleA": "중복 아카이브 찾기.",
+      "titleB": "이름 변경 후에도.",
+      "desc": "Archive Duplicate Scanner는 이름 변경, 재압축, 다른 폴더 저장 후에도 중복된 만화 아카이브, 사진, 파일을 찾아 삭제합니다.",
+      "features": {
+        "scanning": {
+          "title": "만화 아카이브 스캔",
+          "body": "지각 해싱을 사용한 CBZ, CBR, ZIP, RAR."
+        },
+        "photo": {
+          "title": "중복 사진 감지",
+          "body": "JPG, PNG, HEIC, WEBP, BMP, GIF."
+        },
+        "select": {
+          "title": "스마트 자동 선택",
+          "body": "가장 큰 것, 작은 것, 최신, 가장 오래된 것 또는 가장 많은 페이지 유지."
+        },
+        "delete": {
+          "title": "안전한 삭제",
+          "body": "표시된 파일은 시스템 휴지통으로만 이동."
+        }
+      },
+      "altBadge": "Mac App Store에서 Archive Duplicate Scanner 다운로드",
+      "altImage": "Archive Duplicate Scanner 구성 및 스캔 시작",
+      "pricing": "1,000개 파일까지 스캔은 영구 무료. 7일 평가판으로 전체 접근이 해제되며, 일회성 구매로 구독 없이 무제한 사용 가능.",
+      "stats": {
+        "threshold": "기본 임계값",
+        "sampled": "샘플링된 페이지",
+        "local": "100% 로컬",
+        "noCloud": "클라우드 없음, 추적 없음"
+      }
+    },
+    "decryptSection": {
+      "badge": "자매 앱 · iOS · Mac · Windows",
+      "titleA": "파일을 드롭하세요.",
+      "titleB": "스스로 잠금 해제됩니다.",
+      "desc": "SmartDecrypt는 메모, 메시지, 오래된 이메일에서 올바른 비밀번호를 찾지 않고도 비밀번호로 보호된 PDF와 아카이브를 잠금 해제합니다.",
+      "features": {
+        "formats": {
+          "title": "PDF · ZIP · 7z",
+          "body": "보호된 PDF 잠금 해제 및 ZIP/7z 아카이브 추출."
+        },
+        "patterns": {
+          "title": "저장된 패턴",
+          "body": "반복되는 파일명 형식에 자동 일치."
+        },
+        "batch": {
+          "title": "배치 업그레이드",
+          "body": "일회성 Pro 구매로 배치 로드 및 비밀번호 순환 잠금 해제."
+        },
+        "keychain": {
+          "title": "키체인 안전",
+          "body": "비밀번호는 Apple 키체인에 보관."
+        }
+      },
+      "altBadge": "App Store에서 SmartDecrypt PDF ZIP 다운로드",
+      "pricing": "무료 사용자는 패턴 매칭으로 한 번에 하나의 파일을 잠금 해제할 수 있습니다. SmartDecrypt Pro는 iOS 및 macOS에서 배치 파일 로드와 자동 비밀번호 순환을 잠금 해제하는 일회성 유니버설 구매입니다.",
+      "steps": {
+        "drop": "파일 드롭",
+        "match": "패턴 일치",
+        "unlock": "잠금 해제됨"
+      },
+      "queueTitle": "대기열 (3)",
+      "queueStatus": "자동 매칭 활성",
+      "states": {
+        "unlocked": "잠금 해제됨",
+        "matching": "매칭 중",
+        "queued": "대기 중"
+      }
+    },
+    "privacyStrip": {
+      "eyebrow": "왜 BiblioFuse인가",
+      "title": "몇 가지 간단한 원칙을 기반으로 구축.",
+      "items": {
+        "noAds": {
+          "title": "광고 없음",
+          "body": "광고 없는 중단 없는 독서를 즐기세요."
+        },
+        "noTracking": {
+          "title": "추적 없음",
+          "body": "귀하의 독서 데이터를 수집하거나 판매하지 않습니다."
+        },
+        "cloudSync": {
+          "title": "클라우드 동기화",
+          "body": "iCloud로 Apple 기기 간 라이브러리 동기화."
+        },
+        "compression": {
+          "title": "스마트 압축",
+          "body": "앱을 떠나지 않고 파일 크기를 줄이고 공간을 절약."
+        }
+      }
+    },
+    "finalCta": {
+      "badge": "여기서 시작",
+      "title": "당신의 라이브러리. 당신의 기기. 당신의 규칙.",
+      "desc": "Reader로 시작하세요. 필요할 때 유틸리티를 추가하세요. 모든 것이 기기에 유지됩니다.",
+      "button": "웹 도구 사용해 보기"
+    },
+    "stickyBar": {
+      "text": "BiblioFuse 받기"
+    },
+    "altTexts": {
+      "heroImage": "iPhone의 BiblioFuse 라이브러리",
+      "logo": "BiblioFuse 로고",
+      "appStore": "App Store에서 다운로드",
+      "googlePlay": "Google Play에서 받기",
+      "microsoftStore": "Microsoft에서 받기"
     }
   }
 }

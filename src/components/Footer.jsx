@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="mb-12 grid grid-cols-1 gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
                     <div className="max-w-sm">
                         <Link to={`/${lang || 'en'}/`} className="flex items-center gap-2.5">
-                            <img src={logo} alt="BiblioFuse logo" className="h-9 w-auto rounded-[10px] shadow-sm" />
+                            <img src={logo} alt={t('redesign.altTexts.logo')} className="h-9 w-auto rounded-[10px] shadow-sm" />
                             <span className="font-display tighter text-xl font-bold text-ink">BiblioFuse</span>
                         </Link>
                         <p className="mt-4 leading-relaxed">
@@ -21,10 +21,10 @@ const Footer = () => {
                         </p>
                         <div className="mt-5 flex flex-wrap gap-2">
                             <a href="https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093" target="_blank" rel="noopener noreferrer" className="inline-flex">
-                                <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt="Download on the App Store" className="h-10 w-auto object-contain" />
+                                <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt={t('redesign.altTexts.appStore')} className="h-10 w-auto object-contain" />
                             </a>
                             <a href="https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader" target="_blank" rel="noopener noreferrer" className="inline-flex">
-                                <img src="/image/Playstore.png" alt="Get it on Google Play" className="h-10 w-auto object-contain" />
+                                <img src="/image/Playstore.png" alt={t('redesign.altTexts.googlePlay')} className="h-10 w-auto object-contain" />
                             </a>
                         </div>
                     </div>

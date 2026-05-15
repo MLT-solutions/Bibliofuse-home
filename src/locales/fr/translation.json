@@ -364,6 +364,232 @@
           ]
         ]
       }
+    },
+    "productFamily": {
+      "eyebrow": "La famille BiblioFuse",
+      "titleA": "Un écosystème.",
+      "titleB": "Des outils pour posséder vos fichiers.",
+      "desc": "Créé par Modern Logic Tech Solutions pour les lecteurs et collectionneurs qui gardent leur bibliothèque sur leurs propres appareils, pas derrière le login de quelqu'un d'autre.",
+      "alsoOn": "aussi sur",
+      "products": {
+        "reader": {
+          "tag": "Phare",
+          "desc": "Lecteur et gestionnaire de bibliothèque natif pour collections personnelles d'ebooks et de BD.",
+          "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP et TXT",
+          "bullet2": "Étiquettes, notes, progression et marque-pages",
+          "bullet3": "Bibliothèque iCloud sur iPhone, iPad et Mac (Mac en cours d'examen)",
+          "cta": "Télécharger sur l'App Store",
+          "secondary": "Google Play"
+        },
+        "webTool": {
+          "tag": "Gratuit",
+          "desc": "Convertissez, fusionnez et compressez vos e-books dans le navigateur, sans installation, entièrement sur l'appareil.",
+          "bullet1": "Fusion et conversion EPUB / PDF / CBZ / ZIP",
+          "bullet2": "Propulsé par WebAssembly, 100% privé",
+          "bullet3": "Fonctionne sur toute plateforme avec un navigateur",
+          "cta": "Lancer l'outil web"
+        },
+        "archive": {
+          "tag": "Mac · Windows",
+          "desc": "Trouve et supprime les archives de BD, photos et fichiers en double, même après renommage, recompression ou déplacement.",
+          "bullet1": "Hachage perceptuel pour CBZ/CBR/ZIP/RAR",
+          "bullet2": "Sélection automatique intelligente et suppression sécurisée vers la Corbeille",
+          "bullet3": "Cache de hachage pour analyses rapides répétées",
+          "cta": "Mac App Store",
+          "secondary": "Microsoft Store"
+        },
+        "smartdecrypt": {
+          "tag": "iOS · Mac · Windows",
+          "desc": "Déverrouille les PDF et archives protégés par mot de passe grâce à des motifs de noms de fichiers enregistrés.",
+          "bullet1": "Prise en charge PDF, ZIP et 7z",
+          "bullet2": "Correspondance de motifs pour fichiers récurrents",
+          "bullet3": "Mots de passe stockés dans le Trousseau système",
+          "cta": "iOS · Mac App Store",
+          "secondary": "Microsoft Store"
+        }
+      }
+    },
+    "readerSection": {
+      "eyebrow": "BiblioFuse Reader",
+      "title": "Conçu pour les longues sessions de lecture.",
+      "desc": "Un lecteur concentré avec les outils de bibliothèque que vous utilisez vraiment : formats, dossiers, étiquettes, notes, progression et marque-pages. La même bibliothèque sur iPhone, iPad et Mac, synchronisée via iCloud.",
+      "features": {
+        "library": {
+          "eyebrow": "Bibliothèque",
+          "title": "Une étagère pour chaque format.",
+          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP et TXT : lisez dans une seule bibliothèque avec dossiers, recherche et livres récents. Importez depuis Fichiers, le sélecteur de documents ou votre iCloud Drive.",
+          "bullet1Title": "Étiquettes et notes",
+          "bullet1Body": "organisez sans dossiers si vous préférez.",
+          "bullet2Title": "Progression de lecture",
+          "bullet2Body": "chaque livre se souvient où vous vous êtes arrêté.",
+          "bullet3Title": "iCloud multi-appareils",
+          "bullet3Body": "reprenez sur iPhone là où vous avez arrêté sur iPad.",
+          "imageAlt": "Bibliothèque BiblioFuse avec étiquettes, notes et progression"
+        },
+        "reading": {
+          "eyebrow": "Lisez à votre façon",
+          "title": "TTS, défilement auto et peek zoom.",
+          "desc": "Un lecteur sans distraction avec les commandes qui comptent pour les longues sessions. Synthèse vocale pour EPUB et TXT. Défilement automatique pour BD et webtoons. Peek zoom pour inspecter une case sans perdre votre place.",
+          "bullet1Title": "Synthèse vocale",
+          "bullet1Body": "narration mains libres pour EPUB et TXT.",
+          "bullet2Title": "Défilement automatique",
+          "bullet2Body": "paginé ou continu, optimisé pour les archives d'images.",
+          "bullet3Title": "Peek zoom",
+          "bullet3Body": "double-tap pour inspecter les cases denses et les petits textes.",
+          "imageAlt": "Vue de lecture BiblioFuse avec TTS, défilement auto et peek zoom"
+        },
+        "streaming": {
+          "eyebrow": "Le Mac diffuse vers le mobile",
+          "title": "Hub de bibliothèque. Diffusez vers votre iPhone.",
+          "badge": "Aucun serveur tiers · Aucun abonnement",
+          "desc": "Sur Mac, BiblioFuse devient un hub de bibliothèque de bureau : gérez les dossiers locaux, les dossiers iCloud et les partages réseau SMB dans une interface divisée bibliothèque/lecteur. Diffusez ensuite les livres directement vers BiblioFuse sur iPhone et iPad via le Wi-Fi local à la maison, ou à distance en 5G lorsque vous êtes dehors.",
+          "bullet1Title": "Diffusion Wi-Fi locale",
+          "bullet1Body": "navigation instantanée depuis n'importe quelle source Mac.",
+          "bullet2Title": "Diffusion 5G à distance",
+          "bullet2Body": "ouvrez votre bibliothèque depuis n'importe où avec Tailscale.",
+          "bullet3Title": "Sources locales, iCloud et SMB",
+          "bullet3Body": "une bibliothèque Mac, tous les dossiers que vous avez déjà.",
+          "bullet4Title": "PIN optionnel",
+          "bullet4Body": "verrouillez l'accès en streaming sur les réseaux partagés.",
+          "imageAlt": "Bibliothèque Mac BiblioFuse avec lecteur en vue divisée",
+          "footnote": "L'accès à distance nécessite iCloud connecté et Tailscale connecté sur Mac et iOS."
+        }
+      }
+    },
+    "toolsHighlight": {
+      "badge": "Outils intégrés",
+      "title": "Compressez et fusionnez sans quitter l'application.",
+      "supports": "Prend en charge",
+      "onDevice": "Tout le traitement s'exécute sur l'appareil. Rien n'est téléchargé.",
+      "tools": {
+        "resize": {
+          "title": "Redimensionner au côté le plus court",
+          "body": "Définissez une dimension cible et repaginez chaque image de votre archive.",
+          "kpi": "1080 px",
+          "label": "Préréglage typique"
+        },
+        "convert": {
+          "title": "Convertir en WebP ou JPG",
+          "body": "Réencodez les pages en WebP ou JPG pour des archives plus petites et nettes.",
+          "kpi": "Jusqu'à 50%",
+          "label": "Fichiers plus petits"
+        },
+        "merge": {
+          "title": "Fusionner chapitres et séries",
+          "body": "Combinez chapitres, volumes ou téléchargements fractionnés en un seul CBZ, ZIP ou PDF propre.",
+          "kpi": "Plusieurs en 1",
+          "label": "En une passe"
+        }
+      }
+    },
+    "archiveSection": {
+      "badge": "App sœur · Mac et Windows",
+      "titleA": "Trouvez les archives en double.",
+      "titleB": "Même après renommage.",
+      "desc": "Archive Duplicate Scanner trouve et supprime les archives de BD, photos et fichiers en double, même après renommage, recompression ou déplacement dans différents dossiers.",
+      "features": {
+        "scanning": {
+          "title": "Analyse d'archives de BD",
+          "body": "CBZ, CBR, ZIP et RAR par hachage perceptuel."
+        },
+        "photo": {
+          "title": "Détection de photos en double",
+          "body": "JPG, PNG, HEIC, WEBP, BMP et GIF."
+        },
+        "select": {
+          "title": "Sélection automatique intelligente",
+          "body": "Gardez le plus grand, le plus petit, le plus récent, le plus ancien ou le plus de pages."
+        },
+        "delete": {
+          "title": "Suppression sécurisée",
+          "body": "Les fichiers marqués ne sont déplacés que vers la Corbeille système."
+        }
+      },
+      "altBadge": "Télécharger Archive Duplicate Scanner sur le Mac App Store",
+      "altImage": "Archive Duplicate Scanner configurer et lancer l'analyse",
+      "pricing": "L'utilisation gratuite est disponible pour toujours pour les analyses jusqu'à 1 000 fichiers. Un essai de 7 jours débloque l'accès complet, et un achat unique débloque une utilisation illimitée sans abonnement.",
+      "stats": {
+        "threshold": "Seuil par défaut",
+        "sampled": "Pages échantillonnées",
+        "local": "100% local",
+        "noCloud": "Sans cloud, sans pistage"
+      }
+    },
+    "decryptSection": {
+      "badge": "App sœur · iOS · Mac · Windows",
+      "titleA": "Déposez le fichier.",
+      "titleB": "Il se déverrouille tout seul.",
+      "desc": "SmartDecrypt vous aide à déverrouiller les PDF et archives protégés par mot de passe sans chercher dans vos notes, messages ou anciens emails le bon mot de passe.",
+      "features": {
+        "formats": {
+          "title": "PDF · ZIP · 7z",
+          "body": "Déverrouillez les PDF protégés et extrayez les archives ZIP/7z."
+        },
+        "patterns": {
+          "title": "Motifs enregistrés",
+          "body": "Faites correspondre automatiquement les formats de noms de fichiers récurrents."
+        },
+        "batch": {
+          "title": "Mise à niveau par lots",
+          "body": "La version Pro en achat unique débloque le chargement par lots et le cycle des mots de passe."
+        },
+        "keychain": {
+          "title": "Sécurisé dans le Trousseau",
+          "body": "Les mots de passe restent dans le Trousseau Apple."
+        }
+      },
+      "altBadge": "Télécharger SmartDecrypt PDF ZIP sur l'App Store",
+      "pricing": "Les utilisateurs gratuits peuvent déverrouiller un fichier à la fois avec correspondance de motifs. SmartDecrypt Pro est un achat universel unique qui débloque le chargement de fichiers par lots et le cycle automatique des mots de passe sur iOS et macOS.",
+      "steps": {
+        "drop": "Déposer les fichiers",
+        "match": "Faire correspondre",
+        "unlock": "Déverrouillé"
+      },
+      "queueTitle": "File d'attente (3)",
+      "queueStatus": "Correspondance automatique active",
+      "states": {
+        "unlocked": "déverrouillé",
+        "matching": "en correspondance",
+        "queued": "en attente"
+      }
+    },
+    "privacyStrip": {
+      "eyebrow": "Pourquoi BiblioFuse",
+      "title": "Construit sur quelques principes simples.",
+      "items": {
+        "noAds": {
+          "title": "Sans publicité",
+          "body": "Profitez d'une lecture ininterrompue sans publicités."
+        },
+        "noTracking": {
+          "title": "Sans pistage",
+          "body": "Nous ne collectons ni ne vendons vos données de lecture."
+        },
+        "cloudSync": {
+          "title": "Synchro cloud",
+          "body": "Synchronisez votre bibliothèque entre appareils Apple avec iCloud."
+        },
+        "compression": {
+          "title": "Compression intelligente",
+          "body": "Réduisez la taille des fichiers et économisez de l'espace sans quitter l'application."
+        }
+      }
+    },
+    "finalCta": {
+      "badge": "Commencez ici",
+      "title": "Votre bibliothèque. Votre appareil. Vos règles.",
+      "desc": "Commencez avec le Reader. Ajoutez les utilitaires quand vous en avez besoin. Tout reste sur l'appareil.",
+      "button": "Essayer l'outil web"
+    },
+    "stickyBar": {
+      "text": "Obtenir BiblioFuse"
+    },
+    "altTexts": {
+      "heroImage": "Bibliothèque BiblioFuse sur iPhone",
+      "logo": "Logo BiblioFuse",
+      "appStore": "Télécharger sur l'App Store",
+      "googlePlay": "Télécharger sur Google Play",
+      "microsoftStore": "Télécharger depuis Microsoft"
     }
   }
 }

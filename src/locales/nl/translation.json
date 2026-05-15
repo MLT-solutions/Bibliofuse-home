@@ -364,6 +364,232 @@
           ]
         ]
       }
+    },
+    "productFamily": {
+      "eyebrow": "De BiblioFuse-familie",
+      "titleA": "Eén ecosysteem.",
+      "titleB": "Tools om je bestanden te bezitten.",
+      "desc": "Gebouwd door Modern Logic Tech Solutions voor lezers en verzamelaars die hun bibliotheek op hun eigen apparaten houden, niet achter andermans login.",
+      "alsoOn": "ook op",
+      "products": {
+        "reader": {
+          "tag": "Vlaggenschip",
+          "desc": "Native lezer en bibliotheekbeheerder voor persoonlijke e-book- en stripcollecties.",
+          "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP en TXT",
+          "bullet2": "Tags, beoordelingen, voortgang en bladwijzers",
+          "bullet3": "iCloud-bibliotheek op iPhone, iPad en Mac (Mac in beoordeling)",
+          "cta": "Download in App Store",
+          "secondary": "Google Play"
+        },
+        "webTool": {
+          "tag": "Gratis",
+          "desc": "Converteer, voeg samen en comprimeer e-bookbestanden in je browser, geen installatie, volledig op het apparaat.",
+          "bullet1": "EPUB / PDF / CBZ / ZIP samenvoegen en converteren",
+          "bullet2": "Aangedreven door WebAssembly, 100% privé",
+          "bullet3": "Werkt op elk platform met een browser",
+          "cta": "Start webtool"
+        },
+        "archive": {
+          "tag": "Mac · Windows",
+          "desc": "Vindt en verwijdert dubbele striparchieven, foto's en bestanden, zelfs na hernoemen, hercomprimeren of opslaan in andere mappen.",
+          "bullet1": "Perceptuele hashing voor CBZ/CBR/ZIP/RAR",
+          "bullet2": "Slimme autoselectie en veilig verwijderen naar prullenbak",
+          "bullet3": "Hash-cache voor snelle herhaalscans",
+          "cta": "Mac App Store",
+          "secondary": "Microsoft Store"
+        },
+        "smartdecrypt": {
+          "tag": "iOS · Mac · Windows",
+          "desc": "Ontgrendelt met wachtwoord beveiligde PDF's en archieven met opgeslagen bestandsnaampatronen.",
+          "bullet1": "Ondersteuning voor PDF, ZIP en 7z",
+          "bullet2": "Patroonherkenning voor terugkerende bestanden",
+          "bullet3": "Wachtwoorden opgeslagen in systeemsleutelhanger",
+          "cta": "iOS · Mac App Store",
+          "secondary": "Microsoft Store"
+        }
+      }
+    },
+    "readerSection": {
+      "eyebrow": "BiblioFuse Reader",
+      "title": "Gebouwd voor lange leessessies.",
+      "desc": "Een gefocuste lezer met de bibliotheektools die je echt gebruikt: formaten, mappen, tags, beoordelingen, voortgang en bladwijzers. Dezelfde bibliotheek op iPhone, iPad en Mac, gesynchroniseerd via iCloud.",
+      "features": {
+        "library": {
+          "eyebrow": "Bibliotheek",
+          "title": "Eén plank voor elk formaat.",
+          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP en TXT: lees in één bibliotheek met mappen, zoekopdracht en recente boeken. Importeer vanuit Bestanden, documentkiezer of je iCloud Drive.",
+          "bullet1Title": "Tags en beoordelingen",
+          "bullet1Body": "organiseer zonder mappen als je dat wilt.",
+          "bullet2Title": "Leesvoortgang",
+          "bullet2Body": "elk boek onthoudt waar je was gebleven.",
+          "bullet3Title": "iCloud cross-device",
+          "bullet3Body": "ga verder op iPhone waar je stopte op iPad.",
+          "imageAlt": "BiblioFuse-bibliotheek met tags, beoordelingen en leesvoortgang"
+        },
+        "reading": {
+          "eyebrow": "Lees op jouw manier",
+          "title": "TTS, auto-scroll en peek zoom.",
+          "desc": "Een afleidingsvrije lezer met de bediening die telt voor lange sessies. Tekst-naar-spraak voor EPUB en TXT. Auto-scroll voor strips en webtoons. Peek zoom om een paneel te inspecteren zonder je plaats te verliezen.",
+          "bullet1Title": "Tekst-naar-spraak",
+          "bullet1Body": "handsfree vertelling voor EPUB en TXT.",
+          "bullet2Title": "Auto-scroll",
+          "bullet2Body": "gepagineerd of doorlopend, afgestemd op beeldarchieven.",
+          "bullet3Title": "Peek zoom",
+          "bullet3Body": "dubbeltik om dichte panelen en kleine tekst te inspecteren.",
+          "imageAlt": "BiblioFuse leesweergave met TTS, auto-scroll en peek zoom"
+        },
+        "streaming": {
+          "eyebrow": "Mac streamt naar mobiel",
+          "title": "Bibliotheekhub. Stream naar je iPhone.",
+          "badge": "Geen server van derden · Geen abonnement",
+          "desc": "Op Mac wordt BiblioFuse een desktopbibliotheekhub: beheer lokale mappen, iCloud-mappen en SMB-netwerkshares in een split-view bibliotheek/lezer-interface. Stream boeken rechtstreeks naar BiblioFuse op iPhone en iPad via lokale Wi-Fi thuis, of op afstand via 5G als je onderweg bent.",
+          "bullet1Title": "Lokale Wi-Fi-streaming",
+          "bullet1Body": "direct bladeren vanaf elke Mac-bron.",
+          "bullet2Title": "Externe 5G-streaming",
+          "bullet2Body": "open je thuisbibliotheek overal met Tailscale.",
+          "bullet3Title": "Lokale, iCloud- en SMB-bronnen",
+          "bullet3Body": "één Mac-bibliotheek, elke map die je al hebt.",
+          "bullet4Title": "Optionele pincode",
+          "bullet4Body": "vergrendel streamingtoegang op gedeelde netwerken.",
+          "imageAlt": "BiblioFuse Mac-bibliotheek met split-view lezer",
+          "footnote": "Toegang op afstand vereist iCloud aangemeld en Tailscale verbonden op zowel Mac als iOS."
+        }
+      }
+    },
+    "toolsHighlight": {
+      "badge": "Ingebouwde tools",
+      "title": "Comprimeren en samenvoegen zonder de app te verlaten.",
+      "supports": "Ondersteunt",
+      "onDevice": "Alle verwerking vindt plaats op het apparaat. Niets wordt geüpload.",
+      "tools": {
+        "resize": {
+          "title": "Formaat wijzigen naar kortste zijde",
+          "body": "Stel een doeldimensie in en herpagineer elke afbeelding in je archief.",
+          "kpi": "1080 px",
+          "label": "Standaard voorinstelling"
+        },
+        "convert": {
+          "title": "Converteren naar WebP of JPG",
+          "body": "Hercodeer pagina's naar WebP of JPG voor kleinere archieven die er nog scherp uitzien.",
+          "kpi": "Tot 50%",
+          "label": "Kleinere bestanden"
+        },
+        "merge": {
+          "title": "Hoofdstukken en series samenvoegen",
+          "body": "Combineer hoofdstukken, volumes of gesplitste downloads tot één schoon CBZ-, ZIP- of PDF-bestand.",
+          "kpi": "Veel naar 1",
+          "label": "In één keer"
+        }
+      }
+    },
+    "archiveSection": {
+      "badge": "Zusterapp · Mac en Windows",
+      "titleA": "Vind dubbele archieven.",
+      "titleB": "Zelfs na hernoemen.",
+      "desc": "Archive Duplicate Scanner vindt en verwijdert dubbele striparchieven, foto's en bestanden, zelfs na hernoemen, hercomprimeren of opslaan in andere mappen.",
+      "features": {
+        "scanning": {
+          "title": "Striparchiefscanning",
+          "body": "CBZ, CBR, ZIP en RAR met perceptuele hashing."
+        },
+        "photo": {
+          "title": "Fotoduplicaatdetectie",
+          "body": "JPG, PNG, HEIC, WEBP, BMP en GIF."
+        },
+        "select": {
+          "title": "Slimme autoselectie",
+          "body": "Behoud grootste, kleinste, nieuwste, oudste of meeste pagina's."
+        },
+        "delete": {
+          "title": "Veilig verwijderen",
+          "body": "Gemarkeerde bestanden worden alleen naar de systeemprullenbak verplaatst."
+        }
+      },
+      "altBadge": "Download Archive Duplicate Scanner in de Mac App Store",
+      "altImage": "Archive Duplicate Scanner configureren en scan starten",
+      "pricing": "Gratis gebruik is voor altijd beschikbaar voor scans tot 1.000 bestanden. Een proefperiode van 7 dagen ontgrendelt volledige toegang, en een eenmalige aankoop ontgrendelt onbeperkt gebruik zonder abonnement.",
+      "stats": {
+        "threshold": "Standaarddrempel",
+        "sampled": "Bemonsterde pagina's",
+        "local": "100% lokaal",
+        "noCloud": "Geen cloud, geen tracking"
+      }
+    },
+    "decryptSection": {
+      "badge": "Zusterapp · iOS · Mac · Windows",
+      "titleA": "Laat het bestand vallen.",
+      "titleB": "Het ontgrendelt zichzelf.",
+      "desc": "SmartDecrypt helpt je met wachtwoord beveiligde PDF's en archieven te ontgrendelen zonder te zoeken in notities, berichten of oude e-mails naar het juiste wachtwoord.",
+      "features": {
+        "formats": {
+          "title": "PDF · ZIP · 7z",
+          "body": "Ontgrendel beveiligde PDF's en pak ZIP/7z-archieven uit."
+        },
+        "patterns": {
+          "title": "Opgeslagen patronen",
+          "body": "Kom automatisch overeen met terugkerende bestandsnaamformaten."
+        },
+        "batch": {
+          "title": "Batch-upgrade",
+          "body": "Eenmalige Pro-aankoop ontgrendelt batch-laden en wachtwoordcyclus."
+        },
+        "keychain": {
+          "title": "Sleutelhanger-veilig",
+          "body": "Wachtwoorden blijven in de Apple-sleutelhanger."
+        }
+      },
+      "altBadge": "Download SmartDecrypt PDF ZIP in de App Store",
+      "pricing": "Gratis gebruikers kunnen één bestand tegelijk ontgrendelen met patroonherkenning. SmartDecrypt Pro is een eenmalige universele aankoop die batchbestandslading en automatische wachtwoordcyclus op iOS en macOS ontgrendelt.",
+      "steps": {
+        "drop": "Bestanden neerzetten",
+        "match": "Patroon matchen",
+        "unlock": "Ontgrendeld"
+      },
+      "queueTitle": "Wachtrij (3)",
+      "queueStatus": "Automatisch matchen actief",
+      "states": {
+        "unlocked": "ontgrendeld",
+        "matching": "matchend",
+        "queued": "in wachtrij"
+      }
+    },
+    "privacyStrip": {
+      "eyebrow": "Waarom BiblioFuse",
+      "title": "Gebouwd op een paar eenvoudige principes.",
+      "items": {
+        "noAds": {
+          "title": "Geen advertenties",
+          "body": "Geniet van ononderbroken lezen zonder advertenties."
+        },
+        "noTracking": {
+          "title": "Geen tracking",
+          "body": "We verzamelen of verkopen je leesgegevens niet."
+        },
+        "cloudSync": {
+          "title": "Cloudsync",
+          "body": "Synchroniseer je bibliotheek tussen Apple-apparaten met iCloud."
+        },
+        "compression": {
+          "title": "Slimme compressie",
+          "body": "Verklein bestandsgrootte en bespaar ruimte zonder de app te verlaten."
+        }
+      }
+    },
+    "finalCta": {
+      "badge": "Begin hier",
+      "title": "Jouw bibliotheek. Jouw apparaat. Jouw regels.",
+      "desc": "Begin met de Reader. Voeg de hulpprogramma's toe wanneer je ze nodig hebt. Alles blijft op het apparaat.",
+      "button": "Probeer de webtool"
+    },
+    "stickyBar": {
+      "text": "Download BiblioFuse"
+    },
+    "altTexts": {
+      "heroImage": "BiblioFuse-bibliotheek op iPhone",
+      "logo": "BiblioFuse-logo",
+      "appStore": "Download in de App Store",
+      "googlePlay": "Download op Google Play",
+      "microsoftStore": "Download bij Microsoft"
     }
   }
 }

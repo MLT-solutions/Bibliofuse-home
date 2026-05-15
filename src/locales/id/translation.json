@@ -364,6 +364,232 @@
           ]
         ]
       }
+    },
+    "productFamily": {
+      "eyebrow": "Keluarga BiblioFuse",
+      "titleA": "Satu ekosistem.",
+      "titleB": "Alat untuk memiliki file Anda.",
+      "desc": "Dibangun oleh Modern Logic Tech Solutions untuk pembaca dan kolektor yang menyimpan perpustakaan mereka di perangkat sendiri, bukan di balik login orang lain.",
+      "alsoOn": "juga di",
+      "products": {
+        "reader": {
+          "tag": "Unggulan",
+          "desc": "Pembaca dan pengelola perpustakaan native untuk koleksi e-book dan komik pribadi.",
+          "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP & TXT",
+          "bullet2": "Tag, penilaian, progres & penanda buku",
+          "bullet3": "Perpustakaan iCloud di iPhone, iPad & Mac (Mac dalam peninjauan)",
+          "cta": "Dapatkan di App Store",
+          "secondary": "Google Play"
+        },
+        "webTool": {
+          "tag": "Gratis",
+          "desc": "Konversi, gabung, dan kompres file e-book di browser Anda, tanpa instalasi, sepenuhnya di perangkat.",
+          "bullet1": "Gabung & konversi EPUB / PDF / CBZ / ZIP",
+          "bullet2": "Didukung WebAssembly, 100% privat",
+          "bullet3": "Bekerja di platform apa pun dengan browser",
+          "cta": "Buka Web Tool"
+        },
+        "archive": {
+          "tag": "Mac · Windows",
+          "desc": "Menemukan dan menghapus arsip komik, foto, dan file duplikat, bahkan setelah diganti nama, dikompres ulang, atau disimpan di folder berbeda.",
+          "bullet1": "Hashing perseptual untuk CBZ/CBR/ZIP/RAR",
+          "bullet2": "Pilih otomatis cerdas & hapus aman ke Trash",
+          "bullet3": "Cache hash untuk pemindaian ulang cepat",
+          "cta": "Mac App Store",
+          "secondary": "Microsoft Store"
+        },
+        "smartdecrypt": {
+          "tag": "iOS · Mac · Windows",
+          "desc": "Membuka kunci PDF dan arsip yang dilindungi kata sandi menggunakan pola nama file yang tersimpan.",
+          "bullet1": "Dukungan PDF, ZIP & 7z",
+          "bullet2": "Cocokkan pola untuk file berulang",
+          "bullet3": "Kata sandi disimpan di Keychain sistem",
+          "cta": "iOS · Mac App Store",
+          "secondary": "Microsoft Store"
+        }
+      }
+    },
+    "readerSection": {
+      "eyebrow": "BiblioFuse Reader",
+      "title": "Dibangun untuk sesi membaca panjang.",
+      "desc": "Pembaca yang fokus dengan alat perpustakaan yang benar-benar Anda gunakan: format, folder, tag, penilaian, progres, dan penanda buku. Perpustakaan yang sama di iPhone, iPad, dan Mac, disinkronkan melalui iCloud.",
+      "features": {
+        "library": {
+          "eyebrow": "Perpustakaan",
+          "title": "Satu rak untuk setiap format.",
+          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP, dan TXT: baca dalam satu perpustakaan dengan folder, pencarian, dan buku terbaru. Impor dari File, pemilih dokumen, atau iCloud Drive Anda.",
+          "bullet1Title": "Tag & penilaian",
+          "bullet1Body": "atur tanpa folder jika Anda mau.",
+          "bullet2Title": "Progres membaca",
+          "bullet2Body": "setiap buku mengingat di mana Anda berhenti.",
+          "bullet3Title": "iCloud lintas perangkat",
+          "bullet3Body": "lanjutkan di iPhone dari tempat Anda berhenti di iPad.",
+          "imageAlt": "Perpustakaan BiblioFuse dengan tag, penilaian, dan progres membaca"
+        },
+        "reading": {
+          "eyebrow": "Baca dengan cara Anda",
+          "title": "TTS, gulir otomatis & peek zoom.",
+          "desc": "Pembaca bebas gangguan dengan kontrol yang penting untuk sesi panjang. Teks-ke-suara untuk EPUB dan TXT. Gulir otomatis untuk komik dan webtoon. Peek zoom untuk memeriksa panel tanpa kehilangan tempat.",
+          "bullet1Title": "Teks-ke-suara",
+          "bullet1Body": "narasi hands-free untuk EPUB dan TXT.",
+          "bullet2Title": "Gulir otomatis",
+          "bullet2Body": "berhalaman atau berkelanjutan, disesuaikan untuk arsip gambar.",
+          "bullet3Title": "Peek zoom",
+          "bullet3Body": "ketuk dua kali untuk memeriksa panel padat dan teks kecil.",
+          "imageAlt": "Tampilan baca BiblioFuse dengan TTS, gulir otomatis, dan peek zoom"
+        },
+        "streaming": {
+          "eyebrow": "Mac streaming ke seluler",
+          "title": "Hub perpustakaan. Streaming ke iPhone Anda.",
+          "badge": "Tanpa server pihak ketiga · Tanpa langganan",
+          "desc": "Di Mac, BiblioFuse menjadi hub perpustakaan desktop: kelola folder lokal, folder iCloud, dan berbagi jaringan SMB dalam antarmuka perpustakaan/pembaca tampilan terpisah. Lalu streaming buku langsung ke BiblioFuse di iPhone dan iPad melalui Wi-Fi lokal di rumah, atau jarak jauh melalui 5G saat Anda di luar.",
+          "bullet1Title": "Streaming Wi-Fi lokal",
+          "bullet1Body": "jelajah instan dari sumber Mac mana pun.",
+          "bullet2Title": "Streaming 5G jarak jauh",
+          "bullet2Body": "buka perpustakaan rumah Anda dari mana saja dengan Tailscale.",
+          "bullet3Title": "Sumber lokal, iCloud & SMB",
+          "bullet3Body": "satu perpustakaan Mac, semua folder yang sudah Anda miliki.",
+          "bullet4Title": "PIN opsional",
+          "bullet4Body": "kunci akses streaming di jaringan bersama.",
+          "imageAlt": "Perpustakaan Mac BiblioFuse dengan pembaca tampilan terpisah",
+          "footnote": "Akses jarak jauh memerlukan iCloud masuk dan Tailscale terhubung di Mac dan iOS."
+        }
+      }
+    },
+    "toolsHighlight": {
+      "badge": "Alat bawaan",
+      "title": "Kompres & gabung tanpa meninggalkan aplikasi.",
+      "supports": "Mendukung",
+      "onDevice": "Semua pemrosesan berjalan di perangkat. Tidak ada yang diunggah.",
+      "tools": {
+        "resize": {
+          "title": "Ubah ukuran ke sisi terpendek",
+          "body": "Tetapkan dimensi terpendek target dan halaman ulangi setiap gambar di arsip Anda.",
+          "kpi": "1080 px",
+          "label": "Preset umum"
+        },
+        "convert": {
+          "title": "Konversi ke WebP atau JPG",
+          "body": "Enkode ulang halaman ke WebP atau JPG untuk arsip lebih kecil yang tetap tajam.",
+          "kpi": "Hingga 50%",
+          "label": "File lebih kecil"
+        },
+        "merge": {
+          "title": "Gabung bab & seri",
+          "body": "Gabungkan bab, volume, atau unduhan terpisah menjadi satu CBZ, ZIP, atau PDF yang rapi.",
+          "kpi": "Banyak jadi 1",
+          "label": "Sekali proses"
+        }
+      }
+    },
+    "archiveSection": {
+      "badge": "App saudara · Mac & Windows",
+      "titleA": "Temukan arsip duplikat.",
+      "titleB": "Bahkan setelah diganti nama.",
+      "desc": "Archive Duplicate Scanner menemukan dan menghapus arsip komik, foto, dan file duplikat, bahkan setelah diganti nama, dikompres ulang, atau disimpan di folder berbeda.",
+      "features": {
+        "scanning": {
+          "title": "Pemindaian arsip komik",
+          "body": "CBZ, CBR, ZIP, dan RAR menggunakan hashing perseptual."
+        },
+        "photo": {
+          "title": "Deteksi foto duplikat",
+          "body": "JPG, PNG, HEIC, WEBP, BMP, dan GIF."
+        },
+        "select": {
+          "title": "Pilih otomatis cerdas",
+          "body": "Simpan terbesar, terkecil, terbaru, terlama, atau halaman terbanyak."
+        },
+        "delete": {
+          "title": "Penghapusan aman",
+          "body": "File yang ditandai hanya dipindahkan ke Trash sistem."
+        }
+      },
+      "altBadge": "Unduh Archive Duplicate Scanner di Mac App Store",
+      "altImage": "Archive Duplicate Scanner konfigurasi dan mulai pindai",
+      "pricing": "Penggunaan gratis tersedia selamanya untuk pemindaian hingga 1.000 file. Uji coba 7 hari membuka akses penuh, dan pembelian satu kali membuka penggunaan tak terbatas tanpa langganan.",
+      "stats": {
+        "threshold": "Ambang default",
+        "sampled": "Halaman sampel",
+        "local": "100% lokal",
+        "noCloud": "Tanpa cloud, tanpa pelacakan"
+      }
+    },
+    "decryptSection": {
+      "badge": "App saudara · iOS · Mac · Windows",
+      "titleA": "Jatuhkan file.",
+      "titleB": "Terbuka sendiri.",
+      "desc": "SmartDecrypt membantu Anda membuka kunci PDF dan arsip yang dilindungi kata sandi tanpa mencari di catatan, pesan, atau email lama untuk kata sandi yang tepat.",
+      "features": {
+        "formats": {
+          "title": "PDF · ZIP · 7z",
+          "body": "Buka kunci PDF yang dilindungi dan ekstrak arsip ZIP/7z."
+        },
+        "patterns": {
+          "title": "Pola tersimpan",
+          "body": "Cocokkan format nama file berulang secara otomatis."
+        },
+        "batch": {
+          "title": "Peningkatan batch",
+          "body": "Pro sekali beli membuka pemuatan batch dan siklus kata sandi."
+        },
+        "keychain": {
+          "title": "Aman Keychain",
+          "body": "Kata sandi tetap di Apple Keychain."
+        }
+      },
+      "altBadge": "Unduh SmartDecrypt PDF ZIP di App Store",
+      "pricing": "Pengguna gratis dapat membuka satu file sekaligus dengan pencocokan pola. SmartDecrypt Pro adalah pembelian universal satu kali yang membuka pemuatan file batch dan siklus kata sandi otomatis di iOS dan macOS.",
+      "steps": {
+        "drop": "Jatuhkan file",
+        "match": "Cocokkan pola",
+        "unlock": "Terbuka"
+      },
+      "queueTitle": "Antrian (3)",
+      "queueStatus": "Pencocokan otomatis aktif",
+      "states": {
+        "unlocked": "terbuka",
+        "matching": "mencocokkan",
+        "queued": "mengantri"
+      }
+    },
+    "privacyStrip": {
+      "eyebrow": "Mengapa BiblioFuse",
+      "title": "Dibangun di atas beberapa prinsip sederhana.",
+      "items": {
+        "noAds": {
+          "title": "Tanpa iklan",
+          "body": "Nikmati membaca tanpa gangguan iklan."
+        },
+        "noTracking": {
+          "title": "Tanpa pelacakan",
+          "body": "Kami tidak mengumpulkan atau menjual data membaca Anda."
+        },
+        "cloudSync": {
+          "title": "Sinkronisasi cloud",
+          "body": "Sinkronkan perpustakaan Anda di seluruh perangkat Apple dengan iCloud."
+        },
+        "compression": {
+          "title": "Kompresi cerdas",
+          "body": "Kurangi ukuran file dan hemat ruang tanpa meninggalkan aplikasi."
+        }
+      }
+    },
+    "finalCta": {
+      "badge": "Mulai di sini",
+      "title": "Perpustakaan Anda. Perangkat Anda. Aturan Anda.",
+      "desc": "Mulai dengan Reader. Tambahkan utilitas saat Anda membutuhkannya. Semuanya tetap di perangkat.",
+      "button": "Coba Web Tool"
+    },
+    "stickyBar": {
+      "text": "Dapatkan BiblioFuse"
+    },
+    "altTexts": {
+      "heroImage": "Perpustakaan BiblioFuse di iPhone",
+      "logo": "Logo BiblioFuse",
+      "appStore": "Unduh di App Store",
+      "googlePlay": "Dapatkan di Google Play",
+      "microsoftStore": "Dapatkan dari Microsoft"
     }
   }
 }

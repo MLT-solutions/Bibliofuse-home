@@ -47,7 +47,7 @@ function MicrosoftStoreImageBadge({ href, size = 'sm', className = '' }) {
   );
 }
 
-function WebToolButton({ lang, children = 'Try the Web Tool', compact = false }) {
+function WebToolButton({ lang, children, compact = false }) {
   return (
     <Link
       to={`/${lang}/webapp`}
@@ -150,7 +150,7 @@ function Hero({ lang }) {
 
         <div className="relative mx-auto w-full max-w-[min(380px,100%)] lg:justify-self-end">
           <div className="absolute -inset-10 -z-0 rounded-full bg-[radial-gradient(circle,rgba(45,124,246,0.18),transparent_68%)]" />
-          <img src={`${imageBase}/iphone/1.png`} alt="BiblioFuse library on iPhone" className="relative z-10 block w-full drop-shadow-2xl motion-safe:animate-[float_7s_ease-in-out_infinite]" />
+          <img src={`${imageBase}/iphone/1.png`} alt={t('redesign.altTexts.heroImage')} className="relative z-10 block w-full drop-shadow-2xl motion-safe:animate-[float_7s_ease-in-out_infinite]" />
           <div className="absolute -left-3 bottom-8 z-20 hidden items-center gap-2.5 rounded-2xl border border-slate-200 bg-white px-3 py-2.5 shadow-xl md:flex lg:-left-6">
             <span className="grid h-9 w-9 place-items-center rounded-lg bg-blue-50 text-blue-600">
               <ProductIcon kind="book" />
@@ -183,50 +183,51 @@ function Hero({ lang }) {
 }
 
 function ProductFamily() {
+  const { t } = useTranslation();
   const products = [
     {
-      tag: 'Flagship',
+      tag: t('redesign.productFamily.products.reader.tag'),
       icon: 'book',
       name: 'BiblioFuse Reader',
-      desc: 'Native reader & library manager for personal e-book and comic collections.',
-      bullets: ['EPUB, PDF, CBZ, CBR, RAR, ZIP & TXT', 'Tags, ratings, progress & bookmarks', 'iCloud library across iPhone, iPad & Mac (Mac in review)'],
-      cta: 'Get on App Store',
+      desc: t('redesign.productFamily.products.reader.desc'),
+      bullets: [t('redesign.productFamily.products.reader.bullet1'), t('redesign.productFamily.products.reader.bullet2'), t('redesign.productFamily.products.reader.bullet3')],
+      cta: t('redesign.productFamily.products.reader.cta'),
       href: appStoreUrl,
-      secondary: 'Google Play',
+      secondary: t('redesign.productFamily.products.reader.secondary'),
       secondaryHref: playStoreUrl,
       accent: 'blue',
     },
     {
-      tag: 'Free',
+      tag: t('redesign.productFamily.products.webTool.tag'),
       icon: 'globe',
       name: 'BiblioFuse Web Tool',
-      desc: 'Convert, merge and compress e-book files in your browser - no install, fully on-device.',
-      bullets: ['EPUB / PDF / CBZ / ZIP merge & convert', 'Powered by WebAssembly - 100% private', 'Works on any platform with a browser'],
-      cta: 'Launch Web Tool',
+      desc: t('redesign.productFamily.products.webTool.desc'),
+      bullets: [t('redesign.productFamily.products.webTool.bullet1'), t('redesign.productFamily.products.webTool.bullet2'), t('redesign.productFamily.products.webTool.bullet3')],
+      cta: t('redesign.productFamily.products.webTool.cta'),
       href: 'https://bibliofuse-web.netlify.app/',
       accent: 'teal',
     },
     {
-      tag: 'Mac · Windows',
+      tag: t('redesign.productFamily.products.archive.tag'),
       icon: 'folder',
       name: 'Archive Duplicate Scanner',
-      desc: 'Finds and removes duplicate comic book archives, photos, and files - even when renamed, recompressed, or saved in different folders.',
-      bullets: ['Perceptual hashing for CBZ/CBR/ZIP/RAR', 'Smart auto-select & safe-delete to Trash', 'Hash cache for fast repeat scans'],
-      cta: 'Mac App Store',
+      desc: t('redesign.productFamily.products.archive.desc'),
+      bullets: [t('redesign.productFamily.products.archive.bullet1'), t('redesign.productFamily.products.archive.bullet2'), t('redesign.productFamily.products.archive.bullet3')],
+      cta: t('redesign.productFamily.products.archive.cta'),
       href: archiveMacUrl,
-      secondary: 'Microsoft Store',
+      secondary: t('redesign.productFamily.products.archive.secondary'),
       secondaryHref: archiveMsUrl,
       accent: 'orange',
     },
     {
-      tag: 'iOS · Mac · Windows',
+      tag: t('redesign.productFamily.products.smartdecrypt.tag'),
       icon: 'lock',
       name: 'SmartDecrypt PDF ZIP',
-      desc: 'Unlocks password-protected PDFs and archives using saved filename patterns.',
-      bullets: ['PDF, ZIP & 7z support', 'Pattern match for recurring files', 'Passwords stored in system Keychain'],
-      cta: 'iOS · Mac App Store',
+      desc: t('redesign.productFamily.products.smartdecrypt.desc'),
+      bullets: [t('redesign.productFamily.products.smartdecrypt.bullet1'), t('redesign.productFamily.products.smartdecrypt.bullet2'), t('redesign.productFamily.products.smartdecrypt.bullet3')],
+      cta: t('redesign.productFamily.products.smartdecrypt.cta'),
       href: smartDecryptUrl,
-      secondary: 'Microsoft Store',
+      secondary: t('redesign.productFamily.products.smartdecrypt.secondary'),
       secondaryHref: smartDecryptMsUrl,
       accent: 'violet',
       dark: true,
@@ -238,15 +239,15 @@ function ProductFamily() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <div>
-            <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">The BiblioFuse family</div>
+            <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">{t('redesign.productFamily.eyebrow')}</div>
             <h2 className="max-w-2xl text-[clamp(1.8rem,3.4vw,2.75rem)] font-black leading-[1.05] tracking-tight text-slate-950">
-              One ecosystem.
+              {t('redesign.productFamily.titleA')}
               <br />
-              <span className="font-semibold text-slate-500">Tools for owning your files.</span>
+              <span className="font-semibold text-slate-500">{t('redesign.productFamily.titleB')}</span>
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-6 text-slate-600">
-            Built by Modern Logic Tech Solutions for readers and collectors who keep their library on their own devices - not behind someone else's login.
+            {t('redesign.productFamily.desc')}
           </p>
         </div>
 
@@ -261,6 +262,7 @@ function ProductFamily() {
 }
 
 function ProductCard({ tag, icon, name, desc, bullets, cta, href, to, secondary, secondaryHref, accent, dark }) {
+  const { t } = useTranslation();
   const accents = {
     blue: 'bg-blue-50 text-blue-600',
     teal: 'bg-teal-50 text-teal-600',
@@ -311,7 +313,7 @@ function ProductCard({ tag, icon, name, desc, bullets, cta, href, to, secondary,
         )}
         {secondary && (
           <a href={secondaryHref} target="_blank" rel="noopener noreferrer" className={`mt-2 block rounded-lg py-1.5 text-center text-xs font-semibold transition ${dark ? 'text-white/70 hover:text-white' : 'text-ink-muted hover:text-ink'}`}>
-            also on {secondary} →
+            {t('redesign.productFamily.alsoOn')} {secondary} →
           </a>
         )}
       </div>
@@ -384,61 +386,62 @@ function ReaderFeatureRow({ eyebrow, title, desc, bullets, image, alt, reverse, 
 }
 
 function ReaderSection() {
+  const { t } = useTranslation();
   return (
     <section id="reader" className="scroll-mt-16 bg-[#f5f8ff] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-20 max-w-2xl text-center">
-          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">BiblioFuse Reader</div>
-          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">Built for long reading sessions.</h2>
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">{t('redesign.readerSection.eyebrow')}</div>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">{t('redesign.readerSection.title')}</h2>
           <p className="mt-5 text-lg leading-relaxed text-slate-600">
-            A focused reader with the library tools you actually use: formats, folders, tags, ratings, progress, and bookmarks. The same library on iPhone, iPad and Mac, kept in sync through your iCloud.
+            {t('redesign.readerSection.desc')}
           </p>
         </div>
 
         <div className="space-y-24 lg:space-y-32">
           <ReaderFeatureRow
-            eyebrow="Library"
-            title="One shelf for every format."
-            desc="EPUB, PDF, CBZ, CBR, RAR, ZIP and TXT - read in a single library with folders, search and recent books. Import from Files, document picker, or your iCloud Drive."
+            eyebrow={t('redesign.readerSection.features.library.eyebrow')}
+            title={t('redesign.readerSection.features.library.title')}
+            desc={t('redesign.readerSection.features.library.desc')}
             bullets={[
-              { title: 'Tags & ratings', body: 'organize without folders if you want to.' },
-              { title: 'Reading progress', body: 'every book remembers where you left off.' },
-              { title: 'iCloud cross-device', body: 'pick up on iPhone where you stopped on iPad.' },
+              { title: t('redesign.readerSection.features.library.bullet1Title'), body: t('redesign.readerSection.features.library.bullet1Body') },
+              { title: t('redesign.readerSection.features.library.bullet2Title'), body: t('redesign.readerSection.features.library.bullet2Body') },
+              { title: t('redesign.readerSection.features.library.bullet3Title'), body: t('redesign.readerSection.features.library.bullet3Body') },
             ]}
             image={`${imageBase}/iphone/2.png`}
-            alt="BiblioFuse library with tags, ratings and reading progress"
+            alt={t('redesign.readerSection.features.library.imageAlt')}
           />
 
           <ReaderFeatureRow
             reverse
-            eyebrow="Read your way"
-            title="TTS, auto-scroll & peek zoom."
-            desc="A distraction-free reader with the controls that matter for long sessions. Text-to-speech for EPUB and TXT. Auto-scroll for comics and webtoons. Peek zoom to inspect a panel without losing your place."
+            eyebrow={t('redesign.readerSection.features.reading.eyebrow')}
+            title={t('redesign.readerSection.features.reading.title')}
+            desc={t('redesign.readerSection.features.reading.desc')}
             bullets={[
-              { title: 'Text-to-speech', body: 'hands-free narration for EPUB and TXT.' },
-              { title: 'Auto-scroll', body: 'paged or continuous, tuned for image archives.' },
-              { title: 'Peek zoom', body: 'double-tap to inspect dense panels and small text.' },
+              { title: t('redesign.readerSection.features.reading.bullet1Title'), body: t('redesign.readerSection.features.reading.bullet1Body') },
+              { title: t('redesign.readerSection.features.reading.bullet2Title'), body: t('redesign.readerSection.features.reading.bullet2Body') },
+              { title: t('redesign.readerSection.features.reading.bullet3Title'), body: t('redesign.readerSection.features.reading.bullet3Body') },
             ]}
             image={`${imageBase}/iphone/3.png`}
-            alt="BiblioFuse reading view with TTS, auto-scroll and peek zoom"
+            alt={t('redesign.readerSection.features.reading.imageAlt')}
             accent="teal"
           />
 
           <ReaderFeatureRow
-            eyebrow="Mac streams to mobile"
-            title="Library hub. Streams to your iPhone."
-            badge="No third-party server · No subscription"
-            desc="On Mac, BiblioFuse becomes a desktop library hub: manage local folders, iCloud folders and SMB network shares in a split-view library/reader interface. Then stream books straight to BiblioFuse on iPhone and iPad over local Wi-Fi at home, or remotely over 5G when you're out."
+            eyebrow={t('redesign.readerSection.features.streaming.eyebrow')}
+            title={t('redesign.readerSection.features.streaming.title')}
+            badge={t('redesign.readerSection.features.streaming.badge')}
+            desc={t('redesign.readerSection.features.streaming.desc')}
             bullets={[
-              { title: 'Local Wi-Fi streaming', body: 'instant browse from any Mac source.' },
-              { title: 'Remote 5G streaming', body: 'open your home library from anywhere with Tailscale.' },
-              { title: 'Local, iCloud & SMB sources', body: 'one Mac library, every folder you already have.' },
-              { title: 'Optional PIN', body: 'lock streaming access on shared networks.' },
+              { title: t('redesign.readerSection.features.streaming.bullet1Title'), body: t('redesign.readerSection.features.streaming.bullet1Body') },
+              { title: t('redesign.readerSection.features.streaming.bullet2Title'), body: t('redesign.readerSection.features.streaming.bullet2Body') },
+              { title: t('redesign.readerSection.features.streaming.bullet3Title'), body: t('redesign.readerSection.features.streaming.bullet3Body') },
+              { title: t('redesign.readerSection.features.streaming.bullet4Title'), body: t('redesign.readerSection.features.streaming.bullet4Body') },
             ]}
             image={`${imageBase}/mac/1.png`}
-            alt="BiblioFuse Mac library with split-view reader"
+            alt={t('redesign.readerSection.features.streaming.imageAlt')}
             kind="mac"
-            footnote="Remote access requires iCloud signed in and Tailscale connected on both Mac and iOS."
+            footnote={t('redesign.readerSection.features.streaming.footnote')}
           />
         </div>
 
@@ -449,26 +452,27 @@ function ReaderSection() {
 }
 
 function ToolsHighlight() {
+  const { t } = useTranslation();
   const tools = [
     {
-      title: 'Resize to shortest side',
-      body: 'Set a target shortest dimension and re-page every image in your archive.',
-      kpi: '1080 px',
-      label: 'Typical preset',
+      title: t('redesign.toolsHighlight.tools.resize.title'),
+      body: t('redesign.toolsHighlight.tools.resize.body'),
+      kpi: t('redesign.toolsHighlight.tools.resize.kpi'),
+      label: t('redesign.toolsHighlight.tools.resize.label'),
       icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 9V5a1 1 0 011-1h4" /><path d="M20 15v4a1 1 0 01-1 1h-4" /><path d="M9 9h6v6H9z" /></svg>,
     },
     {
-      title: 'Convert to WebP or JPG',
-      body: 'Re-encode pages to WebP or JPG for smaller archives that still look crisp.',
-      kpi: 'Up to 50%',
-      label: 'Smaller files',
+      title: t('redesign.toolsHighlight.tools.convert.title'),
+      body: t('redesign.toolsHighlight.tools.convert.body'),
+      kpi: t('redesign.toolsHighlight.tools.convert.kpi'),
+      label: t('redesign.toolsHighlight.tools.convert.label'),
       icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><circle cx="9" cy="11" r="1.5" /><path d="M21 17l-5-5-9 9" /></svg>,
     },
     {
-      title: 'Merge chapters & series',
-      body: 'Combine chapters, volumes or split downloads into one clean CBZ, ZIP or PDF.',
-      kpi: 'Many to 1',
-      label: 'One pass',
+      title: t('redesign.toolsHighlight.tools.merge.title'),
+      body: t('redesign.toolsHighlight.tools.merge.body'),
+      kpi: t('redesign.toolsHighlight.tools.merge.kpi'),
+      label: t('redesign.toolsHighlight.tools.merge.label'),
       icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3v6a4 4 0 004 4h4" /><path d="M16 21l3-3-3-3" /><path d="M5 13v8" /></svg>,
     },
   ];
@@ -476,8 +480,8 @@ function ToolsHighlight() {
   return (
     <div className="mt-24 rounded-3xl border border-slate-200 bg-white p-8 shadow-xl sm:p-10">
       <div className="mb-7 flex flex-col gap-3 sm:flex-row sm:items-center">
-        <span className="inline-flex self-start items-center gap-2 rounded-full bg-teal-50 px-3 py-1.5 text-xs font-black uppercase tracking-wider text-teal-700">Built-in tools</span>
-        <h4 className="text-2xl font-black tracking-tight text-slate-950">Compress & merge without leaving the app.</h4>
+        <span className="inline-flex self-start items-center gap-2 rounded-full bg-teal-50 px-3 py-1.5 text-xs font-black uppercase tracking-wider text-teal-700">{t('redesign.toolsHighlight.badge')}</span>
+        <h4 className="text-2xl font-black tracking-tight text-slate-950">{t('redesign.toolsHighlight.title')}</h4>
       </div>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
         {tools.map((tool) => (
@@ -495,11 +499,11 @@ function ToolsHighlight() {
         ))}
       </div>
       <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-slate-200 pt-6 text-xs text-slate-500">
-        <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">Supports</span>
+        <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">{t('redesign.toolsHighlight.supports')}</span>
         {['EPUB', 'PDF', 'CBZ', 'CBR', 'RAR', 'ZIP'].map((format) => (
           <span key={format} className="text-base font-black tracking-tight text-slate-800">{format}</span>
         ))}
-        <span className="ml-auto text-xs text-slate-400">All processing runs on-device. Nothing uploaded.</span>
+        <span className="ml-auto text-xs text-slate-400">{t('redesign.toolsHighlight.onDevice')}</span>
       </div>
     </div>
   );
@@ -644,6 +648,7 @@ function renderLocalizedTableCell(cell, strong) {
 }
 
 function ArchiveScannerSection() {
+  const { t } = useTranslation();
   return (
     <section id="archive" className="relative overflow-hidden py-24 sm:py-28">
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,#FFFFFF_0%,#FFF7EE_60%,#FFFFFF_100%)]" />
@@ -653,23 +658,23 @@ function ArchiveScannerSection() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full bg-warm/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-warm-deep">
               <span className="h-1.5 w-1.5 rounded-full bg-warm" />
-              Sister app · Mac & Windows
+              {t('redesign.archiveSection.badge')}
             </div>
             <h2 className="font-display tighter mt-5 text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.05] text-ink">
-              Find duplicate archives.
+              {t('redesign.archiveSection.titleA')}
               <br />
-              <span className="text-warm-deep">Even after renaming.</span>
+              <span className="text-warm-deep">{t('redesign.archiveSection.titleB')}</span>
             </h2>
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-ink-muted">
-              Archive Duplicate Scanner finds and removes duplicate comic book archives, photos, and files - even when they have been renamed, recompressed, or saved in different folders.
+              {t('redesign.archiveSection.desc')}
             </p>
 
             <div className="mt-8 grid max-w-lg gap-4 sm:grid-cols-2">
               {[
-                { title: 'Comic archive scanning', body: 'CBZ, CBR, ZIP and RAR using perceptual hashing.' },
-                { title: 'Photo duplicate detection', body: 'JPG, PNG, HEIC, WEBP, BMP and GIF.' },
-                { title: 'Smart auto-select', body: 'Keep largest, smallest, newest, oldest, or most pages.' },
-                { title: 'Safe deletion', body: 'Marked files move to system Trash only.' },
+                { title: t('redesign.archiveSection.features.scanning.title'), body: t('redesign.archiveSection.features.scanning.body') },
+                { title: t('redesign.archiveSection.features.photo.title'), body: t('redesign.archiveSection.features.photo.body') },
+                { title: t('redesign.archiveSection.features.select.title'), body: t('redesign.archiveSection.features.select.body') },
+                { title: t('redesign.archiveSection.features.delete.title'), body: t('redesign.archiveSection.features.delete.body') },
               ].map((feature) => (
                 <div key={feature.title} className="flex items-start gap-2.5">
                   <span className="mt-0.5 grid h-5 w-5 flex-shrink-0 place-items-center rounded-md bg-warm/15 text-warm-deep">
@@ -684,35 +689,35 @@ function ArchiveScannerSection() {
             </div>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <AppStoreImageBadge href={archiveMacUrl} alt="Download Archive Duplicate Scanner on the Mac App Store" size="lg" />
+              <AppStoreImageBadge href={archiveMacUrl} alt={t('redesign.archiveSection.altBadge')} size="lg" />
               <MicrosoftStoreImageBadge href={archiveMsUrl} size="lg" />
             </div>
 
             <p className="mt-5 text-xs text-ink-soft">
-              Free usage is available forever for scans up to 1,000 files. A 7-day trial unlocks full access, and a one-time purchase unlocks unlimited use with no subscription.
+              {t('redesign.archiveSection.pricing')}
             </p>
           </div>
 
           <div className="relative">
             <div className="absolute -inset-10 -z-10 rounded-3xl bg-[radial-gradient(closest-side,rgba(255,138,58,.25),transparent)] opacity-60" />
             <div className="overflow-hidden rounded-2xl border border-line bg-white shadow-deep">
-              <img src="/image/offline-apps/archivescan/v1.png" alt="Archive Duplicate Scanner configure and start scan" className="block w-full" />
+              <img src="/image/offline-apps/archivescan/v1.png" alt={t('redesign.archiveSection.altImage')} className="block w-full" />
             </div>
 
             <div className="absolute -bottom-6 left-1/2 hidden -translate-x-1/2 items-center gap-6 rounded-2xl border border-line bg-white px-5 py-3 shadow-float sm:flex">
               <div>
                 <div className="font-display tighter text-xl font-bold text-ink">90%</div>
-                <div className="text-[10px] uppercase tracking-wider text-ink-soft">Default threshold</div>
+                <div className="text-[10px] uppercase tracking-wider text-ink-soft">{t('redesign.archiveSection.stats.threshold')}</div>
               </div>
               <div className="h-8 w-px bg-line" />
               <div>
                 <div className="font-display tighter text-xl font-bold text-ink">x3</div>
-                <div className="text-[10px] uppercase tracking-wider text-ink-soft">Pages sampled</div>
+                <div className="text-[10px] uppercase tracking-wider text-ink-soft">{t('redesign.archiveSection.stats.sampled')}</div>
               </div>
               <div className="h-8 w-px bg-line" />
               <div>
-                <div className="font-display tighter text-xl font-bold text-emerald-600">100% local</div>
-                <div className="text-[10px] uppercase tracking-wider text-ink-soft">No cloud, no tracking</div>
+                <div className="font-display tighter text-xl font-bold text-emerald-600">{t('redesign.archiveSection.stats.local')}</div>
+                <div className="text-[10px] uppercase tracking-wider text-ink-soft">{t('redesign.archiveSection.stats.noCloud')}</div>
               </div>
             </div>
           </div>
@@ -723,6 +728,7 @@ function ArchiveScannerSection() {
 }
 
 function SmartDecryptSection() {
+  const { t } = useTranslation();
   return (
     <section
       id="smartdecrypt"
@@ -739,23 +745,23 @@ function SmartDecryptSection() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full bg-violet/15 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-[#C4B5FD]">
               <span className="h-1.5 w-1.5 rounded-full bg-[#A78BFA]" />
-              Sister app · iOS · Mac · Windows
+              {t('redesign.decryptSection.badge')}
             </div>
             <h2 className="font-display tighter mt-5 text-[clamp(2rem,4.5vw,3.25rem)] font-bold leading-[1.02] text-white">
-              Drop the file.
+              {t('redesign.decryptSection.titleA')}
               <br />
-              <span className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">It unlocks itself.</span>
+              <span className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">{t('redesign.decryptSection.titleB')}</span>
             </h2>
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-white/70">
-              SmartDecrypt helps you unlock password-protected PDFs and archives without hunting through notes, messages, or old emails for the right password.
+              {t('redesign.decryptSection.desc')}
             </p>
 
             <div className="mt-8 grid max-w-lg gap-4 sm:grid-cols-2">
               {[
-                { title: 'PDF · ZIP · 7z', body: 'Unlock protected PDFs and extract ZIP/7z archives.' },
-                { title: 'Saved patterns', body: 'Match recurring filename formats automatically.' },
-                { title: 'Batch upgrade', body: 'One-time Pro unlocks batch loading and password cycling.' },
-                { title: 'Keychain-safe', body: 'Passwords stay in the Apple Keychain.' },
+                { title: t('redesign.decryptSection.features.formats.title'), body: t('redesign.decryptSection.features.formats.body') },
+                { title: t('redesign.decryptSection.features.patterns.title'), body: t('redesign.decryptSection.features.patterns.body') },
+                { title: t('redesign.decryptSection.features.batch.title'), body: t('redesign.decryptSection.features.batch.body') },
+                { title: t('redesign.decryptSection.features.keychain.title'), body: t('redesign.decryptSection.features.keychain.body') },
               ].map((feature) => (
                 <div key={feature.title} className="flex items-start gap-2.5">
                   <span className="mt-0.5 grid h-5 w-5 flex-shrink-0 place-items-center rounded-md bg-violet-400/20 text-violet-200">
@@ -770,12 +776,12 @@ function SmartDecryptSection() {
             </div>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <AppStoreImageBadge href={smartDecryptUrl} alt="Download SmartDecrypt PDF ZIP on the App Store" size="lg" />
+              <AppStoreImageBadge href={smartDecryptUrl} alt={t('redesign.decryptSection.altBadge')} size="lg" />
               <MicrosoftStoreImageBadge href={smartDecryptMsUrl} size="lg" />
             </div>
 
             <p className="mt-5 text-xs text-white/50">
-              Free users can unlock one file at a time with pattern matching. SmartDecrypt Pro is a one-time universal purchase that unlocks batch file loading and automatic password cycling on iOS and macOS.
+              {t('redesign.decryptSection.pricing')}
             </p>
           </div>
 
@@ -784,9 +790,9 @@ function SmartDecryptSection() {
             <div className="hairline-dark rounded-3xl bg-[linear-gradient(160deg,rgba(255,255,255,.04),rgba(255,255,255,.01))] p-8">
               <div className="grid grid-cols-3 items-center gap-3">
                 {[
-                  { n: 1, label: 'Drop files', icon: 'file' },
-                  { n: 2, label: 'Match pattern', icon: 'wand' },
-                  { n: 3, label: 'Unlocked', icon: 'unlock' },
+                  { n: 1, label: t('redesign.decryptSection.steps.drop'), icon: 'file' },
+                  { n: 2, label: t('redesign.decryptSection.steps.match'), icon: 'wand' },
+                  { n: 3, label: t('redesign.decryptSection.steps.unlock'), icon: 'unlock' },
                 ].map((step, index) => (
                   <div key={step.n} className="flex flex-col items-center text-center">
                     <div className={`relative mb-2 grid h-14 w-14 place-items-center rounded-2xl ${index === 0 ? 'bg-blue-400/20' : index === 1 ? 'bg-violet-400/25' : 'bg-emerald-400/20'}`}>
@@ -800,8 +806,8 @@ function SmartDecryptSection() {
 
               <div className="hairline-dark mt-7 rounded-2xl bg-white/[.03] p-4">
                 <div className="mb-3 flex items-center justify-between">
-                  <div className="text-xs font-semibold uppercase tracking-wider text-white/50">Queue (3)</div>
-                  <div className="text-xs text-white/40">Auto-matching active</div>
+                  <div className="text-xs font-semibold uppercase tracking-wider text-white/50">{t('redesign.decryptSection.queueTitle')}</div>
+                  <div className="text-xs text-white/40">{t('redesign.decryptSection.queueStatus')}</div>
                 </div>
                 <div className="space-y-2">
                   {[
@@ -817,7 +823,7 @@ function SmartDecryptSection() {
                         <span className="truncate text-sm text-white">{file.name}</span>
                       </div>
                       <span className={`flex-shrink-0 rounded-full px-2 py-1 text-[10px] font-bold uppercase tracking-wider ${file.state === 'unlocked' ? 'bg-emerald-400/15 text-emerald-400' : file.state === 'matching' ? 'bg-violet-400/20 text-violet-200' : 'bg-white/[.06] text-white/50'}`}>
-                        {file.state}
+                        {t('redesign.decryptSection.states.' + file.state)}
                       </span>
                     </div>
                   ))}
@@ -840,19 +846,20 @@ function SmartStepIcon({ kind }) {
 }
 
 function PrivacyStrip() {
+  const { t } = useTranslation();
   const items = [
-    { title: 'No ads', body: 'Enjoy uninterrupted reading without advertisements.', tint: 'bg-rose-50 text-rose-600', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18.36 18.36A9 9 0 015.64 5.64m12.72 12.72L5.64 5.64" /></svg> },
-    { title: 'No tracking', body: 'We do not collect or sell your reading data.', tint: 'bg-emerald-50 text-emerald-600', icon: <ProductIcon kind="lock" /> },
-    { title: 'Cloud sync', body: 'Sync your library across Apple devices with iCloud.', tint: 'bg-blue-50 text-blue-600', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" /></svg> },
-    { title: 'Smart compression', body: 'Reduce file size and save storage without leaving the app.', tint: 'bg-violet-50 text-violet-600', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7" /><path d="M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4" /></svg> },
+    { title: t('redesign.privacyStrip.items.noAds.title'), body: t('redesign.privacyStrip.items.noAds.body'), tint: 'bg-rose-50 text-rose-600', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18.36 18.36A9 9 0 015.64 5.64m12.72 12.72L5.64 5.64" /></svg> },
+    { title: t('redesign.privacyStrip.items.noTracking.title'), body: t('redesign.privacyStrip.items.noTracking.body'), tint: 'bg-emerald-50 text-emerald-600', icon: <ProductIcon kind="lock" /> },
+    { title: t('redesign.privacyStrip.items.cloudSync.title'), body: t('redesign.privacyStrip.items.cloudSync.body'), tint: 'bg-blue-50 text-blue-600', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" /></svg> },
+    { title: t('redesign.privacyStrip.items.compression.title'), body: t('redesign.privacyStrip.items.compression.body'), tint: 'bg-violet-50 text-violet-600', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7" /><path d="M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4" /></svg> },
   ];
 
   return (
     <section id="about" className="bg-[#f5f8ff] py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">Why BiblioFuse</div>
-          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">Built on a few simple principles.</h2>
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">{t('redesign.privacyStrip.eyebrow')}</div>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">{t('redesign.privacyStrip.title')}</h2>
         </div>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item) => (
@@ -869,6 +876,7 @@ function PrivacyStrip() {
 }
 
 function FinalCTA({ lang }) {
+  const { t } = useTranslation();
   return (
     <section className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -878,16 +886,16 @@ function FinalCTA({ lang }) {
           <div className="relative max-w-2xl">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1.5 text-xs font-bold uppercase tracking-wider">
               <span className="h-1.5 w-1.5 rounded-full bg-white" />
-              Start here
+              {t('redesign.finalCta.badge')}
             </div>
-            <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-black leading-[1.02] tracking-tight">Your library. Your device. Your rules.</h2>
+            <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-black leading-[1.02] tracking-tight">{t('redesign.finalCta.title')}</h2>
             <p className="mt-4 text-lg leading-relaxed text-white/90">
-              Start with the Reader. Add the utilities when you need them. Everything stays on-device.
+              {t('redesign.finalCta.desc')}
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <StoreBadge type="apple" />
               <StoreBadge type="play" />
-              <WebToolButton lang={lang}>Try the Web Tool</WebToolButton>
+              <WebToolButton lang={lang}>{t('redesign.finalCta.button')}</WebToolButton>
             </div>
           </div>
         </div>
@@ -897,6 +905,7 @@ function FinalCTA({ lang }) {
 }
 
 function StickyDownloadBar() {
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -910,7 +919,7 @@ function StickyDownloadBar() {
     <div className={`fixed bottom-5 left-1/2 z-30 -translate-x-1/2 transition-all ${scrolled ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-6 opacity-0'}`}>
       <div className="flex max-w-[calc(100vw-2rem)] items-center gap-2 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-3 py-2.5 text-white shadow-2xl backdrop-blur-md sm:gap-3 sm:px-4">
         <img src={logo} alt="" className="h-7 w-7 rounded-lg" />
-        <span className="hidden text-sm font-bold sm:inline">Get BiblioFuse</span>
+        <span className="hidden text-sm font-bold sm:inline">{t('redesign.stickyBar.text')}</span>
         <StoreBadge type="apple" size="sm" />
         <StoreBadge type="play" size="sm" />
       </div>

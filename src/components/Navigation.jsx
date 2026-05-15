@@ -89,7 +89,7 @@ const Navigation = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <Link to={`/${lang}/`} onClick={goHomeTop} className="flex-shrink-0 cursor-pointer flex items-center gap-2">
-                        <img src={logo} alt="BiblioFuse logo" className="h-9 w-auto rounded-[10px] shadow-sm" />
+                        <img src={logo} alt={t('redesign.altTexts.logo')} className="h-9 w-auto rounded-[10px] shadow-sm" />
                         <span className="text-xl font-black tracking-tight text-slate-950">
                             BiblioFuse
                         </span>

@@ -364,6 +364,232 @@
           ]
         ]
       }
+    },
+    "productFamily": {
+      "eyebrow": "BiblioFuse 家族",
+      "titleA": "一个生态系统。",
+      "titleB": "掌控你文件的工具。",
+      "desc": "由 Modern Logic Tech Solutions 为将图书馆保存在自己设备上而非他人登录后的读者和收藏者打造。",
+      "alsoOn": "也可在",
+      "products": {
+        "reader": {
+          "tag": "旗舰",
+          "desc": "个人电子书和漫画收藏的原生阅读器与图书馆管理器。",
+          "bullet1": "EPUB、PDF、CBZ、CBR、RAR、ZIP 和 TXT",
+          "bullet2": "标签、评分、进度和书签",
+          "bullet3": "iPhone、iPad 和 Mac 上的 iCloud 图书馆（Mac 审核中）",
+          "cta": "在 App Store 获取",
+          "secondary": "Google Play"
+        },
+        "webTool": {
+          "tag": "免费",
+          "desc": "在浏览器中转换、合并和压缩电子书文件，无需安装，完全在设备端。",
+          "bullet1": "EPUB / PDF / CBZ / ZIP 合并与转换",
+          "bullet2": "由 WebAssembly 驱动，100% 私密",
+          "bullet3": "在任何有浏览器的平台上运行",
+          "cta": "启动网页工具"
+        },
+        "archive": {
+          "tag": "Mac · Windows",
+          "desc": "查找并删除重复的漫画存档、照片和文件，即使它们被重命名、重新压缩或保存在不同文件夹中。",
+          "bullet1": "CBZ/CBR/ZIP/RAR 感知哈希",
+          "bullet2": "智能自动选择和安全的废纸篓删除",
+          "bullet3": "哈希缓存实现快速重复扫描",
+          "cta": "Mac App Store",
+          "secondary": "Microsoft Store"
+        },
+        "smartdecrypt": {
+          "tag": "iOS · Mac · Windows",
+          "desc": "使用已保存的文件名模式解锁受密码保护的 PDF 和存档。",
+          "bullet1": "支持 PDF、ZIP 和 7z",
+          "bullet2": "自动匹配重复出现的文件名格式",
+          "bullet3": "密码存储在系统钥匙串中",
+          "cta": "iOS · Mac App Store",
+          "secondary": "Microsoft Store"
+        }
+      }
+    },
+    "readerSection": {
+      "eyebrow": "BiblioFuse Reader",
+      "title": "为长时间阅读打造。",
+      "desc": "一个专注的阅读器，配备你真正使用的图书馆工具：格式、文件夹、标签、评分、进度和书签。同一图书馆在 iPhone、iPad 和 Mac 上通过 iCloud 保持同步。",
+      "features": {
+        "library": {
+          "eyebrow": "图书馆",
+          "title": "每种格式一个书架。",
+          "desc": "EPUB、PDF、CBZ、CBR、RAR、ZIP 和 TXT：在一个图书馆中阅读，支持文件夹、搜索和最近书籍。从文件、文档选择器或 iCloud Drive 导入。",
+          "bullet1Title": "标签与评分",
+          "bullet1Body": "无需文件夹即可整理。",
+          "bullet2Title": "阅读进度",
+          "bullet2Body": "每本书都会记住你读到哪了。",
+          "bullet3Title": "iCloud 跨设备",
+          "bullet3Body": "在 iPhone 上从 iPad 停下的地方继续。",
+          "imageAlt": "BiblioFuse 图书馆，包含标签、评分和阅读进度"
+        },
+        "reading": {
+          "eyebrow": "随心阅读",
+          "title": "TTS、自动滚动和 Peek Zoom。",
+          "desc": "一个无干扰的阅读器，具备长时间阅读所需的控件。EPUB 和 TXT 的文字转语音。漫画和 Webtoons 的自动滚动。Peek Zoom 可在不丢失位置的情况下查看面板。",
+          "bullet1Title": "文字转语音",
+          "bullet1Body": "EPUB 和 TXT 的免提朗读。",
+          "bullet2Title": "自动滚动",
+          "bullet2Body": "分页或连续，针对图像存档进行了优化。",
+          "bullet3Title": "Peek Zoom",
+          "bullet3Body": "双击查看密集面板和小号文字。",
+          "imageAlt": "BiblioFuse 阅读视图，包含 TTS、自动滚动和 Peek Zoom"
+        },
+        "streaming": {
+          "eyebrow": "Mac 串流到移动端",
+          "title": "图书馆中枢。串流到你的 iPhone。",
+          "badge": "无第三方服务器 · 无订阅",
+          "desc": "在 Mac 上，BiblioFuse 变身为桌面图书馆中枢：以分屏图书馆/阅读器界面管理本地文件夹、iCloud 文件夹和 SMB 网络共享。然后通过家中本地 Wi-Fi 直接串流书籍到 iPhone 和 iPad 上的 BiblioFuse，或在外出时通过 5G 远程串流。",
+          "bullet1Title": "本地 Wi-Fi 串流",
+          "bullet1Body": "从任何 Mac 源即时浏览。",
+          "bullet2Title": "远程 5G 串流",
+          "bullet2Body": "通过 Tailscale 随时随地打开你的家庭图书馆。",
+          "bullet3Title": "本地、iCloud 和 SMB 源",
+          "bullet3Body": "一个 Mac 图书馆，所有你已有的文件夹。",
+          "bullet4Title": "可选 PIN",
+          "bullet4Body": "在共享网络上锁定串流访问。",
+          "imageAlt": "BiblioFuse Mac 图书馆，分屏阅读器",
+          "footnote": "远程访问需要在 Mac 和 iOS 上都登录 iCloud 并连接 Tailscale。"
+        }
+      }
+    },
+    "toolsHighlight": {
+      "badge": "内置工具",
+      "title": "在不离开应用的情况下压缩和合并。",
+      "supports": "支持",
+      "onDevice": "所有处理均在设备上运行。不会上传任何内容。",
+      "tools": {
+        "resize": {
+          "title": "按最短边调整大小",
+          "body": "设置目标最短尺寸并重新分页存档中的每张图片。",
+          "kpi": "1080 px",
+          "label": "典型预设"
+        },
+        "convert": {
+          "title": "转换为 WebP 或 JPG",
+          "body": "将页面重新编码为 WebP 或 JPG，以获得更小但仍清晰的存档。",
+          "kpi": "最高 50%",
+          "label": "更小的文件"
+        },
+        "merge": {
+          "title": "合并章节与系列",
+          "body": "将章节、卷或分割下载合并为一个干净的 CBZ、ZIP 或 PDF。",
+          "kpi": "多合一",
+          "label": "一键完成"
+        }
+      }
+    },
+    "archiveSection": {
+      "badge": "姊妹应用 · Mac 和 Windows",
+      "titleA": "找到重复存档。",
+      "titleB": "即使重命名后。",
+      "desc": "Archive Duplicate Scanner 查找并删除重复的漫画存档、照片和文件，即使它们被重命名、重新压缩或保存在不同文件夹中。",
+      "features": {
+        "scanning": {
+          "title": "漫画存档扫描",
+          "body": "CBZ、CBR、ZIP 和 RAR，使用感知哈希。"
+        },
+        "photo": {
+          "title": "重复照片检测",
+          "body": "JPG、PNG、HEIC、WEBP、BMP 和 GIF。"
+        },
+        "select": {
+          "title": "智能自动选择",
+          "body": "保留最大、最小、最新、最旧或最多页面的文件。"
+        },
+        "delete": {
+          "title": "安全删除",
+          "body": "标记的文件仅移至系统废纸篓。"
+        }
+      },
+      "altBadge": "在 Mac App Store 下载 Archive Duplicate Scanner",
+      "altImage": "Archive Duplicate Scanner 配置并开始扫描",
+      "pricing": "最多 1,000 个文件的扫描永久免费使用。7 天试用解锁完整访问权限，一次性购买解锁无限使用，无需订阅。",
+      "stats": {
+        "threshold": "默认阈值",
+        "sampled": "已采样页面",
+        "local": "100% 本地",
+        "noCloud": "无云，无追踪"
+      }
+    },
+    "decryptSection": {
+      "badge": "姊妹应用 · iOS · Mac · Windows",
+      "titleA": "拖入文件。",
+      "titleB": "它自己解锁。",
+      "desc": "SmartDecrypt 帮助你解锁受密码保护的 PDF 和存档，无需在笔记、消息或旧邮件中搜索正确密码。",
+      "features": {
+        "formats": {
+          "title": "PDF · ZIP · 7z",
+          "body": "解锁受保护的 PDF 并提取 ZIP/7z 存档。"
+        },
+        "patterns": {
+          "title": "已保存的模式",
+          "body": "自动匹配重复出现的文件名格式。"
+        },
+        "batch": {
+          "title": "批量升级",
+          "body": "一次性 Pro 购买解锁批量加载和密码循环。"
+        },
+        "keychain": {
+          "title": "钥匙串安全",
+          "body": "密码保留在 Apple 钥匙串中。"
+        }
+      },
+      "altBadge": "在 App Store 下载 SmartDecrypt PDF ZIP",
+      "pricing": "免费用户可以一次解锁一个文件，支持模式匹配。SmartDecrypt Pro 是一次性通用购买，解锁 iOS 和 macOS 上的批量文件加载和自动密码循环。",
+      "steps": {
+        "drop": "拖入文件",
+        "match": "匹配模式",
+        "unlock": "已解锁"
+      },
+      "queueTitle": "队列 (3)",
+      "queueStatus": "自动匹配已激活",
+      "states": {
+        "unlocked": "已解锁",
+        "matching": "匹配中",
+        "queued": "排队中"
+      }
+    },
+    "privacyStrip": {
+      "eyebrow": "为什么选择 BiblioFuse",
+      "title": "基于几个简单的原则构建。",
+      "items": {
+        "noAds": {
+          "title": "无广告",
+          "body": "享受无广告打扰的阅读体验。"
+        },
+        "noTracking": {
+          "title": "无追踪",
+          "body": "我们不会收集或出售你的阅读数据。"
+        },
+        "cloudSync": {
+          "title": "云同步",
+          "body": "通过 iCloud 在 Apple 设备间同步你的图书馆。"
+        },
+        "compression": {
+          "title": "智能压缩",
+          "body": "在不离开应用的情况下减小文件大小并节省空间。"
+        }
+      }
+    },
+    "finalCta": {
+      "badge": "从这里开始",
+      "title": "你的图书馆。你的设备。你的规则。",
+      "desc": "从 Reader 开始。在需要时添加实用工具。一切保留在设备上。",
+      "button": "试用网页工具"
+    },
+    "stickyBar": {
+      "text": "获取 BiblioFuse"
+    },
+    "altTexts": {
+      "heroImage": "BiblioFuse 在 iPhone 上的图书馆",
+      "logo": "BiblioFuse 标志",
+      "appStore": "在 App Store 下载",
+      "googlePlay": "在 Google Play 获取",
+      "microsoftStore": "从 Microsoft 获取"
     }
   }
 }

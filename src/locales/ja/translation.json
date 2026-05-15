@@ -364,6 +364,232 @@
           ]
         ]
       }
+    },
+    "productFamily": {
+      "eyebrow": "BiblioFuse ファミリー",
+      "titleA": "一つのエコシステム。",
+      "titleB": "ファイルを所有するためのツール。",
+      "desc": "Modern Logic Tech Solutions が、自分のデバイスにライブラリを保存する読者とコレクターのために構築。他人のログインの向こう側ではありません。",
+      "alsoOn": "こちらでも",
+      "products": {
+        "reader": {
+          "tag": "フラッグシップ",
+          "desc": "個人の電子書籍とコミックコレクションのためのネイティブリーダー兼ライブラリマネージャー。",
+          "bullet1": "EPUB、PDF、CBZ、CBR、RAR、ZIP、TXT",
+          "bullet2": "タグ、評価、進捗、ブックマーク",
+          "bullet3": "iPhone、iPad、Mac で iCloud ライブラリ（Mac は審査中）",
+          "cta": "App Store で入手",
+          "secondary": "Google Play"
+        },
+        "webTool": {
+          "tag": "無料",
+          "desc": "ブラウザで電子書籍ファイルを変換、結合、圧縮。インストール不要、完全にデバイス上で処理。",
+          "bullet1": "EPUB / PDF / CBZ / ZIP の結合と変換",
+          "bullet2": "WebAssembly 搭載、100% プライベート",
+          "bullet3": "ブラウザがあればどのプラットフォームでも動作",
+          "cta": "ウェブツールを起動"
+        },
+        "archive": {
+          "tag": "Mac · Windows",
+          "desc": "重複するコミックアーカイブ、写真、ファイルを検出して削除。名前変更、再圧縮、別フォルダ保存後も対応。",
+          "bullet1": "CBZ/CBR/ZIP/RAR の知覚ハッシュ",
+          "bullet2": "スマート自動選択とゴミ箱への安全な削除",
+          "bullet3": "高速再スキャンのためのハッシュキャッシュ",
+          "cta": "Mac App Store",
+          "secondary": "Microsoft Store"
+        },
+        "smartdecrypt": {
+          "tag": "iOS · Mac · Windows",
+          "desc": "保存したファイル名パターンを使用して、パスワード保護された PDF とアーカイブを解除。",
+          "bullet1": "PDF、ZIP、7z 対応",
+          "bullet2": "繰り返しファイルのパターンマッチ",
+          "bullet3": "パスワードはシステムキーチェーンに保存",
+          "cta": "iOS · Mac App Store",
+          "secondary": "Microsoft Store"
+        }
+      }
+    },
+    "readerSection": {
+      "eyebrow": "BiblioFuse Reader",
+      "title": "長時間の読書セッションのために構築。",
+      "desc": "実際に使うライブラリツールを備えた集中型リーダー：フォーマット、フォルダ、タグ、評価、進捗、ブックマーク。iPhone、iPad、Mac で同じライブラリを iCloud で同期。",
+      "features": {
+        "library": {
+          "eyebrow": "ライブラリ",
+          "title": "あらゆるフォーマットに対応する一つの本棚。",
+          "desc": "EPUB、PDF、CBZ、CBR、RAR、ZIP、TXT：フォルダ、検索、最近の本を備えた単一ライブラリで読書。ファイル、ドキュメントピッカー、iCloud Drive からインポート。",
+          "bullet1Title": "タグと評価",
+          "bullet1Body": "必要に応じてフォルダなしで整理。",
+          "bullet2Title": "読書の進捗",
+          "bullet2Body": "各書籍が中断箇所を記憶。",
+          "bullet3Title": "iCloud クロスデバイス",
+          "bullet3Body": "iPad で中断した箇所を iPhone で再開。",
+          "imageAlt": "タグ、評価、読書進捗のある BiblioFuse ライブラリ"
+        },
+        "reading": {
+          "eyebrow": "あなたの読み方で",
+          "title": "TTS、自動スクロール、ピークズーム。",
+          "desc": "長時間のセッションに必要な操作を備えた集中リーダー。EPUB と TXT のテキスト読み上げ。コミックとウェブトゥーンの自動スクロール。位置を失わずにパネルを拡大表示するピークズーム。",
+          "bullet1Title": "テキスト読み上げ",
+          "bullet1Body": "EPUB と TXT のハンズフリーナレーション。",
+          "bullet2Title": "自動スクロール",
+          "bullet2Body": "ページ送りまたは連続、画像アーカイブ向けに調整。",
+          "bullet3Title": "ピークズーム",
+          "bullet3Body": "ダブルタップで密集パネルと小さな文字を拡大。",
+          "imageAlt": "TTS、自動スクロール、ピークズーム付き BiblioFuse 読書ビュー"
+        },
+        "streaming": {
+          "eyebrow": "Mac からモバイルへストリーミング",
+          "title": "ライブラリハブ。iPhone にストリーミング。",
+          "badge": "サードパーティサーバー不要 · サブスクリプション不要",
+          "desc": "Mac では、BiblioFuse がデスクトップライブラリハブになります：分割ビューのライブラリ/リーダーインターフェースでローカルフォルダ、iCloud フォルダ、SMB ネットワーク共有を管理。自宅ではローカル Wi-Fi 経由で、外出先では 5G でリモートから、iPhone と iPad の BiblioFuse に直接書籍をストリーミング。",
+          "bullet1Title": "ローカル Wi-Fi ストリーミング",
+          "bullet1Body": "任意の Mac ソースから即座にブラウズ。",
+          "bullet2Title": "リモート 5G ストリーミング",
+          "bullet2Body": "Tailscale でどこからでも自宅ライブラリを開く。",
+          "bullet3Title": "ローカル、iCloud、SMB ソース",
+          "bullet3Body": "一つの Mac ライブラリ、既存のすべてのフォルダ。",
+          "bullet4Title": "オプション PIN",
+          "bullet4Body": "共有ネットワークでのストリーミングアクセスをロック。",
+          "imageAlt": "分割ビューリーダー付き BiblioFuse Mac ライブラリ",
+          "footnote": "リモートアクセスには Mac と iOS の両方で iCloud サインインと Tailscale 接続が必要です。"
+        }
+      }
+    },
+    "toolsHighlight": {
+      "badge": "内蔵ツール",
+      "title": "アプリを離れずに圧縮と結合。",
+      "supports": "対応形式",
+      "onDevice": "すべての処理はデバイス上で実行されます。アップロードは一切ありません。",
+      "tools": {
+        "resize": {
+          "title": "最短辺にリサイズ",
+          "body": "目標の最短寸法を設定し、アーカイブ内の全画像を再ページング。",
+          "kpi": "1080 px",
+          "label": "標準プリセット"
+        },
+        "convert": {
+          "title": "WebP または JPG に変換",
+          "body": "ページを WebP または JPG に再エンコードして、より小さく鮮明なアーカイブに。",
+          "kpi": "最大 50%",
+          "label": "より小さなファイル"
+        },
+        "merge": {
+          "title": "チャプターとシリーズを結合",
+          "body": "チャプター、巻、分割ダウンロードを一つのクリーンな CBZ、ZIP、PDF に結合。",
+          "kpi": "多数を 1 つに",
+          "label": "ワンパス"
+        }
+      }
+    },
+    "archiveSection": {
+      "badge": "姉妹アプリ · Mac と Windows",
+      "titleA": "重複アーカイブを見つける。",
+      "titleB": "名前変更後も。",
+      "desc": "Archive Duplicate Scanner は、名前変更、再圧縮、別フォルダ保存された後でも、重複するコミックアーカイブ、写真、ファイルを検出して削除します。",
+      "features": {
+        "scanning": {
+          "title": "コミックアーカイブスキャン",
+          "body": "知覚ハッシュを使用した CBZ、CBR、ZIP、RAR。"
+        },
+        "photo": {
+          "title": "重複写真検出",
+          "body": "JPG、PNG、HEIC、WEBP、BMP、GIF。"
+        },
+        "select": {
+          "title": "スマート自動選択",
+          "body": "最大、最小、最新、最古、または最多ページ数を保持。"
+        },
+        "delete": {
+          "title": "安全な削除",
+          "body": "マークされたファイルはシステムのゴミ箱にのみ移動。"
+        }
+      },
+      "altBadge": "Mac App Store で Archive Duplicate Scanner をダウンロード",
+      "altImage": "Archive Duplicate Scanner の設定とスキャン開始",
+      "pricing": "1,000 ファイルまでのスキャンは永久に無料で利用可能。7 日間のトライアルでフルアクセスが解除され、一度の購入でサブスクリプションなしの無制限利用が可能。",
+      "stats": {
+        "threshold": "デフォルト閾値",
+        "sampled": "サンプルページ数",
+        "local": "100% ローカル",
+        "noCloud": "クラウドなし、トラッキングなし"
+      }
+    },
+    "decryptSection": {
+      "badge": "姉妹アプリ · iOS · Mac · Windows",
+      "titleA": "ファイルをドロップ。",
+      "titleB": "自動で解除。",
+      "desc": "SmartDecrypt は、メモ、メッセージ、古いメールで正しいパスワードを探すことなく、パスワード保護された PDF とアーカイブのロックを解除します。",
+      "features": {
+        "formats": {
+          "title": "PDF · ZIP · 7z",
+          "body": "保護された PDF を解除し、ZIP/7z アーカイブを抽出。"
+        },
+        "patterns": {
+          "title": "保存されたパターン",
+          "body": "繰り返しのファイル名形式に自動一致。"
+        },
+        "batch": {
+          "title": "バッチアップグレード",
+          "body": "一度の Pro 購入でバッチロードとパスワードサイクルを解除。"
+        },
+        "keychain": {
+          "title": "キーチェーン安全",
+          "body": "パスワードは Apple キーチェーンに保持。"
+        }
+      },
+      "altBadge": "App Store で SmartDecrypt PDF ZIP をダウンロード",
+      "pricing": "無料ユーザーはパターンマッチで一度に 1 ファイルを解除できます。SmartDecrypt Pro は一度のユニバーサル購入で、iOS と macOS でのバッチファイルロードと自動パスワードサイクルを解除します。",
+      "steps": {
+        "drop": "ファイルをドロップ",
+        "match": "パターンを一致",
+        "unlock": "解除済み"
+      },
+      "queueTitle": "キュー (3)",
+      "queueStatus": "自動マッチング有効",
+      "states": {
+        "unlocked": "解除済み",
+        "matching": "マッチング中",
+        "queued": "待機中"
+      }
+    },
+    "privacyStrip": {
+      "eyebrow": "なぜ BiblioFuse か",
+      "title": "いくつかのシンプルな原則に基づいて構築。",
+      "items": {
+        "noAds": {
+          "title": "広告なし",
+          "body": "広告のない中断のない読書をお楽しみください。"
+        },
+        "noTracking": {
+          "title": "トラッキングなし",
+          "body": "お客様の読書データを収集・販売することはありません。"
+        },
+        "cloudSync": {
+          "title": "クラウド同期",
+          "body": "iCloud で Apple デバイス間でライブラリを同期。"
+        },
+        "compression": {
+          "title": "スマート圧縮",
+          "body": "アプリを離れずにファイルサイズを縮小し、容量を節約。"
+        }
+      }
+    },
+    "finalCta": {
+      "badge": "ここから始める",
+      "title": "あなたのライブラリ。あなたのデバイス。あなたのルール。",
+      "desc": "Reader から始めましょう。必要に応じてユーティリティを追加。すべてデバイス上に保持されます。",
+      "button": "ウェブツールを試す"
+    },
+    "stickyBar": {
+      "text": "BiblioFuse を入手"
+    },
+    "altTexts": {
+      "heroImage": "iPhone 上の BiblioFuse ライブラリ",
+      "logo": "BiblioFuse ロゴ",
+      "appStore": "App Store でダウンロード",
+      "googlePlay": "Google Play で入手",
+      "microsoftStore": "Microsoft から入手"
     }
   }
 }
