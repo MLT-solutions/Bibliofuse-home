@@ -590,6 +590,25 @@
       "appStore": "App Store에서 다운로드",
       "googlePlay": "Google Play에서 받기",
       "microsoftStore": "Microsoft에서 받기"
+    },
+    "seo": {
+      "homeTitle": "BiblioFuse Reader: 개인 전자책 라이브러리, 5G Mac 스트리밍과 파일 도구",
+      "homeDesc": "EPUB, PDF, CBZ, CBR을 읽고 Mac 홈 라이브러리를 Wi‑Fi 또는 원격 5G로 iPhone에 스트리밍하며, 기기에서 압축·병합하고 CBZ/사진 중복을 비공개로 찾습니다.",
+      "webTitle": "브라우저용 비공개 EPUB, PDF, CBZ 압축 도구",
+      "webDesc": "BiblioFuse Web Tool은 WebAssembly로 EPUB, PDF, CBZ, ZIP을 브라우저에서 로컬로 압축, 병합, 변환합니다. 업로드와 가입이 없습니다.",
+      "aboutTitle": "BiblioFuse 비공개 읽기 및 파일 도구 소개",
+      "aboutDesc": "BiblioFuse는 iPhone, iPad, Mac, Android, Windows, 웹에서 개인 전자책, 만화, 아카이브, 문서 라이브러리를 위한 기기 내 비공개 도구를 만듭니다.",
+      "privacyTitle": "BiblioFuse 개인정보 처리방침",
+      "privacyDesc": "BiblioFuse는 로컬 또는 플랫폼 저장소로 읽기, 압축, 병합, 스트리밍, 중복 스캔을 비공개로 유지합니다. 광고와 추적이 없습니다.",
+      "appFeatures": [
+        "EPUB, PDF, CBZ, CBR, RAR, ZIP, TXT 리더",
+        "Wi‑Fi 또는 Tailscale 원격 5G로 Mac 홈 라이브러리를 iPhone/iPad에 스트리밍",
+        "iOS는 Mac 스트리밍 경유 SMB, Android는 네이티브 SMB",
+        "기기 내 압축 및 병합으로 휴대폰 저장 공간 절약",
+        "샘플 이미지 페이지 perceptual hash로 CBZ, CBR, ZIP, RAR 중복 스캔",
+        "로컬 브라우저 처리 기반 비공개 WebAssembly 웹 도구",
+        "광고 없음, 추적 없음, 계정 불필요"
+      ]
     }
   }
 }

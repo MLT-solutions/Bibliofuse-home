@@ -44,8 +44,10 @@ const Privacy = () => {
     return (
         <>
             <SEO
-                title={t('redesign.privacyPage.title')}
-                description={t('seo.reader.desc')}
+                title={t('redesign.seo.privacyTitle')}
+                description={t('redesign.seo.privacyDesc')}
+                canonical="/privacy"
+                schemaType="website"
             />
             <div className="min-h-screen bg-[#F6F8FC] px-4 pb-20 pt-28 text-slate-950 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl">

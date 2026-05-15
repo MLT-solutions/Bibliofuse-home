@@ -4,33 +4,51 @@ import { useTranslation } from 'react-i18next';
 import { useParams, useLocation } from 'react-router-dom';
 import { SUPPORTED_LANGUAGES } from '../i18n';
 
-const SEO = ({ title, description, canonical, type = 'website' }) => {
-    const { i18n } = useTranslation();
+const SEO = ({ title, description, canonical, type = 'website', schemaType = 'suite', schemaName = 'BiblioFuse', featureList }) => {
+    const { i18n, t } = useTranslation();
     const { lang } = useParams();
     const location = useLocation();
 
-    const currentLang = i18n.language;
+    const currentLang = lang || i18n.language || 'en';
     const siteName = 'BiblioFuse';
     const fullTitle = `${title} | ${siteName}`;
-    const baseUrl = 'https://bibliofuse.github.io/Bibliofuse-home';
+    const baseUrl = 'https://bibliofuse.com';
 
     // Get current path without language prefix
     const pathWithoutLang = location.pathname.replace(`/${lang}`, '') || '/';
+    const canonicalPath = canonical || pathWithoutLang;
+    const normalizedPath = canonicalPath === '/' ? '/' : canonicalPath.replace(/\/$/, '');
+    const localizedPath = `/${currentLang}${normalizedPath === '/' ? '/' : normalizedPath}`;
+    const canonicalUrl = `${baseUrl}${localizedPath}`;
+    const alternatePath = normalizedPath === '/' ? '/' : normalizedPath;
+    const defaultFeatureList = t('redesign.seo.appFeatures', { returnObjects: true });
 
-    // Structured Data for SoftwareApplication
-    const structuredData = {
+    const softwareSuite = {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "BiblioFuse",
-        "applicationCategory": "ReferenceApplication",
-        "operatingSystem": "Windows, Android, iOS, Web",
+        "name": schemaName,
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "iOS, iPadOS, macOS, Android, Windows, Web",
+        "url": canonicalUrl,
+        "inLanguage": currentLang,
+        "description": description,
+        "featureList": Array.isArray(featureList) ? featureList : Array.isArray(defaultFeatureList) ? defaultFeatureList : [],
         "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
-        },
-        "description": description
+        }
     };
+    const structuredData = schemaType === 'website'
+        ? {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": siteName,
+            "url": baseUrl,
+            "inLanguage": currentLang,
+            "description": description
+        }
+        : softwareSuite;
 
     return (
         <Helmet>
@@ -38,7 +56,7 @@ const SEO = ({ title, description, canonical, type = 'website' }) => {
             <html lang={currentLang} />
             <title>{fullTitle}</title>
             <meta name="description" content={description} />
-            <link rel="canonical" href={canonical ? `${baseUrl}${canonical}` : `${baseUrl}/${lang}${pathWithoutLang}`} />
+            <link rel="canonical" href={canonicalUrl} />
 
             {/* Hreflang tags for multilingual SEO */}
             {SUPPORTED_LANGUAGES.map((langCode) => (
@@ -46,14 +64,14 @@ const SEO = ({ title, description, canonical, type = 'website' }) => {
                     key={langCode}
                     rel="alternate"
                     hrefLang={langCode}
-                    href={`${baseUrl}/${langCode}${pathWithoutLang}`}
+                    href={`${baseUrl}/${langCode}${alternatePath}`}
                 />
             ))}
             {/* x-default points to English */}
             <link
                 rel="alternate"
                 hrefLang="x-default"
-                href={`${baseUrl}/en${pathWithoutLang}`}
+                href={`${baseUrl}/en${alternatePath}`}
             />
 
             {/* Open Graph / Facebook */}
@@ -61,7 +79,7 @@ const SEO = ({ title, description, canonical, type = 'website' }) => {
             <meta property="og:site_name" content={siteName} />
             <meta property="og:title" content={fullTitle} />
             <meta property="og:description" content={description} />
-            <meta property="og:url" content={canonical ? `${baseUrl}${canonical}` : `${baseUrl}/${lang}${pathWithoutLang}`} />
+            <meta property="og:url" content={canonicalUrl} />
             <meta property="og:image" content={`${baseUrl}/logo_rounded.png`} />
 
             {/* Twitter */}

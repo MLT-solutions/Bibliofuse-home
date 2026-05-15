@@ -8,9 +8,10 @@ const About = () => {
     return (
         <div className="min-h-screen bg-[#F6F8FC] px-4 pb-20 pt-28 text-slate-950 sm:px-6 lg:px-8">
             <SEO
-                title={t('seo.about.title')}
-                description={t('seo.about.desc')}
+                title={t('redesign.seo.aboutTitle')}
+                description={t('redesign.seo.aboutDesc')}
                 canonical="/about"
+                schemaType="website"
             />
             <div className="mx-auto max-w-4xl">
                 <div className="mb-10 text-center">

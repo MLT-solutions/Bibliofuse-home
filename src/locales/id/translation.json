@@ -590,6 +590,25 @@
       "appStore": "Unduh di App Store",
       "googlePlay": "Dapatkan di Google Play",
       "microsoftStore": "Dapatkan dari Microsoft"
+    },
+    "seo": {
+      "homeTitle": "BiblioFuse Reader: pustaka privat, streaming Mac 5G & alat file",
+      "homeDesc": "Baca EPUB, PDF, CBZ dan CBR, streaming pustaka Mac rumah ke iPhone lewat Wi‑Fi atau 5G jarak jauh, kompres dan gabung di perangkat, serta temukan duplikat CBZ/foto secara privat.",
+      "webTitle": "Alat browser privat untuk kompresi EPUB, PDF dan CBZ",
+      "webDesc": "BiblioFuse Web Tool mengompres, menggabung dan mengonversi EPUB, PDF, CBZ dan ZIP secara lokal di browser dengan WebAssembly. Tanpa unggah dan tanpa daftar.",
+      "aboutTitle": "Tentang alat baca dan file privat BiblioFuse",
+      "aboutDesc": "BiblioFuse membuat alat privat di perangkat untuk pustaka pribadi ebook, komik, arsip dan dokumen di iPhone, iPad, Mac, Android, Windows dan web.",
+      "privacyTitle": "Kebijakan Privasi BiblioFuse",
+      "privacyDesc": "BiblioFuse menjaga alur baca, kompresi, penggabungan, streaming dan pemindaian duplikat tetap privat dengan penyimpanan lokal atau platform. Tanpa iklan dan pelacakan.",
+      "appFeatures": [
+        "Reader EPUB, PDF, CBZ, CBR, RAR, ZIP dan TXT",
+        "Streaming pustaka Mac rumah ke iPhone/iPad melalui Wi‑Fi atau 5G jarak jauh dengan Tailscale",
+        "Akses SMB via streaming Mac di iOS dan SMB native di Android",
+        "Kompresi dan penggabungan di perangkat untuk menghemat ruang ponsel",
+        "Pemindai duplikat CBZ, CBR, ZIP dan RAR memakai perceptual hash halaman contoh",
+        "Alat web WebAssembly privat dengan pemrosesan lokal browser",
+        "Tanpa iklan, tanpa pelacakan dan tanpa akun"
+      ]
     }
   }
 }

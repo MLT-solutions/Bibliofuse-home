@@ -590,6 +590,25 @@
       "appStore": "Muat turun di App Store",
       "googlePlay": "Dapatkan di Google Play",
       "microsoftStore": "Dapatkan dari Microsoft"
+    },
+    "seo": {
+      "homeTitle": "BiblioFuse Reader: pustaka peribadi, penstriman Mac 5G & alat fail",
+      "homeDesc": "Baca EPUB, PDF, CBZ dan CBR, strim pustaka Mac rumah ke iPhone melalui Wi‑Fi atau 5G jauh, mampat dan gabung pada peranti, serta cari pendua CBZ/foto secara peribadi.",
+      "webTitle": "Alat pelayar peribadi untuk mampat EPUB, PDF dan CBZ",
+      "webDesc": "BiblioFuse Web Tool memampat, menggabung dan menukar EPUB, PDF, CBZ dan ZIP secara setempat dalam pelayar dengan WebAssembly. Tanpa muat naik dan tanpa daftar.",
+      "aboutTitle": "Tentang alat bacaan dan fail peribadi BiblioFuse",
+      "aboutDesc": "BiblioFuse membina alat peribadi pada peranti untuk pustaka ebook, komik, arkib dan dokumen peribadi merentas iPhone, iPad, Mac, Android, Windows dan web.",
+      "privacyTitle": "Dasar Privasi BiblioFuse",
+      "privacyDesc": "BiblioFuse mengekalkan bacaan, pemampatan, penggabungan, penstriman dan imbasan pendua secara peribadi dengan storan setempat atau platform. Tiada iklan dan tiada penjejakan.",
+      "appFeatures": [
+        "Pembaca EPUB, PDF, CBZ, CBR, RAR, ZIP dan TXT",
+        "Strim pustaka Mac rumah ke iPhone/iPad melalui Wi‑Fi atau 5G jauh dengan Tailscale",
+        "Akses SMB melalui penstriman Mac pada iOS dan SMB natif pada Android",
+        "Pemampatan dan penggabungan pada peranti untuk menjimatkan ruang telefon",
+        "Pengimbas pendua CBZ, CBR, ZIP dan RAR menggunakan hash persepsi halaman sampel",
+        "Alat web WebAssembly peribadi dengan pemprosesan pelayar setempat",
+        "Tiada iklan, tiada penjejakan dan tiada akaun"
+      ]
     }
   }
 }

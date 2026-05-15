@@ -590,6 +590,25 @@
       "appStore": "Descargar en la App Store",
       "googlePlay": "Descargar en Google Play",
       "microsoftStore": "Descargar de Microsoft"
+    },
+    "seo": {
+      "homeTitle": "BiblioFuse Reader: biblioteca privada, streaming 5G desde Mac y herramientas",
+      "homeDesc": "Lee EPUB, PDF, CBZ y CBR, transmite tu biblioteca del Mac al iPhone por Wi‑Fi o 5G remoto, comprime y fusiona en el dispositivo, y encuentra duplicados CBZ/fotos en privado.",
+      "webTitle": "Herramienta privada para comprimir EPUB, PDF y CBZ en el navegador",
+      "webDesc": "Usa BiblioFuse Web Tool para comprimir, fusionar y convertir EPUB, PDF, CBZ y ZIP localmente en el navegador con WebAssembly. Sin subidas ni registro.",
+      "aboutTitle": "Sobre las herramientas privadas de lectura y archivos de BiblioFuse",
+      "aboutDesc": "BiblioFuse crea herramientas privadas y en el dispositivo para bibliotecas personales de ebooks, cómics, archivos y documentos en iPhone, iPad, Mac, Android, Windows y web.",
+      "privacyTitle": "Política de privacidad de BiblioFuse",
+      "privacyDesc": "BiblioFuse mantiene privados los flujos de lectura, compresión, fusión, streaming y detección de duplicados con almacenamiento local o de plataforma. Sin anuncios ni rastreo.",
+      "appFeatures": [
+        "Lector EPUB, PDF, CBZ, CBR, RAR, ZIP y TXT",
+        "Streaming de biblioteca Mac a iPhone/iPad por Wi‑Fi o 5G remoto con Tailscale",
+        "Acceso SMB vía streaming de Mac en iOS y SMB nativo en Android",
+        "Compresión y fusión en el dispositivo para ahorrar espacio",
+        "Detector de duplicados CBZ, CBR, ZIP y RAR con hash perceptual de páginas muestreadas",
+        "Herramienta web privada WebAssembly con procesamiento local",
+        "Sin anuncios, sin rastreo y sin cuenta"
+      ]
     }
   }
 }

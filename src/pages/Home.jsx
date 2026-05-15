@@ -929,12 +929,13 @@ function StickyDownloadBar() {
 
 const Home = () => {
   const { lang = 'en' } = useParams();
+  const { t } = useTranslation();
 
   return (
     <div className="bf-home min-h-screen overflow-x-hidden bg-white text-slate-950">
       <SEO
-        title="BiblioFuse - E-book Reader, Library Manager & Compression Tools"
-        description="BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web."
+        title={t('redesign.seo.homeTitle')}
+        description={t('redesign.seo.homeDesc')}
         canonical="/"
       />
       <Hero lang={lang} />

@@ -590,6 +590,25 @@
       "appStore": "App Store でダウンロード",
       "googlePlay": "Google Play で入手",
       "microsoftStore": "Microsoft から入手"
+    },
+    "seo": {
+      "homeTitle": "BiblioFuse Reader：プライベート電子書籍ライブラリ、5G Macストリーミングとファイルツール",
+      "homeDesc": "EPUB、PDF、CBZ、CBRを読み、MacのホームライブラリをWi‑Fiまたはリモート5GでiPhoneへストリーミング。端末上で圧縮・結合し、CBZ/写真の重複も私的に検出します。",
+      "webTitle": "ブラウザで使うプライベートEPUB、PDF、CBZ圧縮ツール",
+      "webDesc": "BiblioFuse Web ToolはWebAssemblyでEPUB、PDF、CBZ、ZIPをブラウザ内でローカルに圧縮・結合・変換します。アップロードも登録も不要です。",
+      "aboutTitle": "BiblioFuseのプライベート読書・ファイルツールについて",
+      "aboutDesc": "BiblioFuseはiPhone、iPad、Mac、Android、Windows、Webで個人の電子書籍、コミック、アーカイブ、文書ライブラリを扱う端末内プライベートツールを作っています。",
+      "privacyTitle": "BiblioFuse プライバシーポリシー",
+      "privacyDesc": "BiblioFuseは読書、圧縮、結合、ストリーミング、重複スキャンをローカルまたはプラットフォーム所有の保存先で私的に保ちます。広告なし、追跡なし。",
+      "appFeatures": [
+        "EPUB、PDF、CBZ、CBR、RAR、ZIP、TXTリーダー",
+        "MacホームライブラリをWi‑FiまたはTailscaleのリモート5GでiPhone/iPadへストリーミング",
+        "iOSはMacストリーミング経由SMB、AndroidはネイティブSMB",
+        "端末上の圧縮・結合でスマホ容量を節約",
+        "サンプル画像ページの知覚ハッシュでCBZ、CBR、ZIP、RARの重複を検出",
+        "ローカルブラウザ処理のプライベートWebAssembly Webツール",
+        "広告なし、追跡なし、アカウント不要"
+      ]
     }
   }
 }

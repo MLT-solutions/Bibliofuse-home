@@ -4,6 +4,7 @@ import SEO from '../components/SEO';
 
 const WebApp = () => {
     const { t } = useTranslation();
+    const webAppFeatures = t('redesign.webapp.features', { returnObjects: true });
 
     const handleLaunchApp = () => {
         window.open('https://bibliofuse-web.netlify.app/', '_blank', 'noopener,noreferrer');
@@ -12,8 +13,11 @@ const WebApp = () => {
     return (
         <>
             <SEO
-                title={t('nav.webapp')}
-                description={t('redesign.webapp.seoDesc')}
+                title={t('redesign.seo.webTitle')}
+                description={t('redesign.seo.webDesc')}
+                canonical="/webapp"
+                schemaName="BiblioFuse Web Tool"
+                featureList={webAppFeatures.map((feature) => `${feature.title}: ${feature.body}`)}
             />
             <div className="pt-16 min-h-screen flex flex-col w-full bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
                 <div className="flex-1 w-full flex items-center justify-center p-8">
@@ -41,7 +45,7 @@ const WebApp = () => {
 
                             {/* Features Grid */}
                             <div className="grid md:grid-cols-2 gap-4 mb-8">
-                                {t('redesign.webapp.features', { returnObjects: true }).map((feature) => (
+                                {webAppFeatures.map((feature) => (
                                   <div key={feature.title} className="flex items-start space-x-3">
                                     <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
                                         <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

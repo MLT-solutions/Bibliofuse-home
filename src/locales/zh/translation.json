@@ -590,6 +590,25 @@
       "appStore": "在 App Store 下载",
       "googlePlay": "在 Google Play 获取",
       "microsoftStore": "从 Microsoft 获取"
+    },
+    "seo": {
+      "homeTitle": "BiblioFuse Reader：私密电子书库、5G Mac 串流与文件工具",
+      "homeDesc": "阅读 EPUB、PDF、CBZ 和 CBR，通过 Wi‑Fi 或远程 5G 将 Mac 家庭书库串流到 iPhone，本机压缩合并，并私密查找 CBZ/照片重复项。",
+      "webTitle": "私密浏览器 EPUB、PDF、CBZ 压缩工具",
+      "webDesc": "使用 BiblioFuse Web Tool 在浏览器中通过 WebAssembly 本地压缩、合并和转换 EPUB、PDF、CBZ、ZIP。无需上传，无需注册。",
+      "aboutTitle": "关于 BiblioFuse 私密阅读与文件工具",
+      "aboutDesc": "BiblioFuse 为 iPhone、iPad、Mac、Android、Windows 和网页打造设备端私密工具，管理个人电子书、漫画、压缩包和文档库。",
+      "privacyTitle": "BiblioFuse 隐私政策",
+      "privacyDesc": "BiblioFuse 通过本地或平台自有存储，让阅读、压缩、合并、串流和重复扫描保持私密。无广告、无追踪。",
+      "appFeatures": [
+        "EPUB、PDF、CBZ、CBR、RAR、ZIP 和 TXT 阅读器",
+        "通过 Wi‑Fi 或 Tailscale 远程 5G 将 Mac 家庭书库串流到 iPhone/iPad",
+        "iOS 通过 Mac 串流访问 SMB，Android 原生 SMB",
+        "设备端压缩和合并，节省手机空间",
+        "使用抽样页面感知哈希查找 CBZ、CBR、ZIP、RAR 重复项",
+        "私密 WebAssembly 网页工具，本地浏览器处理",
+        "无广告、无追踪、无需账户"
+      ]
     }
   }
 }

@@ -590,6 +590,25 @@
       "appStore": "Скачать в App Store",
       "googlePlay": "Скачать в Google Play",
       "microsoftStore": "Скачать из Microsoft"
+    },
+    "seo": {
+      "homeTitle": "BiblioFuse Reader: приватная библиотека, 5G-стриминг Mac и инструменты",
+      "homeDesc": "Читайте EPUB, PDF, CBZ и CBR, стримьте домашнюю библиотеку Mac на iPhone по Wi‑Fi или удаленному 5G, сжимайте и объединяйте локально, находите дубликаты CBZ/фото.",
+      "webTitle": "Приватный браузерный инструмент для EPUB, PDF и CBZ",
+      "webDesc": "BiblioFuse Web Tool сжимает, объединяет и конвертирует EPUB, PDF, CBZ и ZIP локально в браузере через WebAssembly. Без загрузки и регистрации.",
+      "aboutTitle": "О приватных инструментах чтения и файлов BiblioFuse",
+      "aboutDesc": "BiblioFuse создает приватные инструменты на устройстве для личных библиотек ebooks, комиксов, архивов и документов на iPhone, iPad, Mac, Android, Windows и web.",
+      "privacyTitle": "Политика конфиденциальности BiblioFuse",
+      "privacyDesc": "BiblioFuse сохраняет чтение, сжатие, объединение, стриминг и поиск дубликатов приватными через локальное или платформенное хранилище. Без рекламы и отслеживания.",
+      "appFeatures": [
+        "Читалка EPUB, PDF, CBZ, CBR, RAR, ZIP и TXT",
+        "Стриминг библиотеки Mac на iPhone/iPad по Wi‑Fi или удаленному 5G с Tailscale",
+        "SMB через стриминг Mac на iOS и нативный SMB на Android",
+        "Сжатие и объединение на устройстве для экономии памяти",
+        "Поиск дубликатов CBZ, CBR, ZIP и RAR по perceptual hash выбранных страниц",
+        "Приватный WebAssembly web-инструмент с локальной обработкой",
+        "Без рекламы, отслеживания и аккаунта"
+      ]
     }
   }
 }
