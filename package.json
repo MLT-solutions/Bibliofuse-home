@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/generate-sitemap.js",
+    "build": "vite build && node scripts/generate-sitemap.js && node scripts/generate-static-routes.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
