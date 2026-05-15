@@ -10,9 +10,9 @@ const BASE_URL = 'https://bibliofuse.com';
 const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
 const ROUTES = [
     { path: '/', priority: '1.0', changefreq: 'weekly' },
-    { path: '/webapp', priority: '0.8', changefreq: 'monthly' },
-    { path: '/about', priority: '0.6', changefreq: 'monthly' },
-    { path: '/privacy', priority: '0.4', changefreq: 'yearly' },
+    { path: '/webapp/', priority: '0.8', changefreq: 'monthly' },
+    { path: '/about/', priority: '0.6', changefreq: 'monthly' },
+    { path: '/privacy/', priority: '0.4', changefreq: 'yearly' },
 ];
 
 function generateSitemap() {

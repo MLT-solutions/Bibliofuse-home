@@ -17,7 +17,7 @@ const SEO = ({ title, description, canonical, type = 'website', schemaType = 'su
     // Get current path without language prefix
     const pathWithoutLang = location.pathname.replace(`/${lang}`, '') || '/';
     const canonicalPath = canonical || pathWithoutLang;
-    const normalizedPath = canonicalPath === '/' ? '/' : canonicalPath.replace(/\/$/, '');
+    const normalizedPath = canonicalPath === '/' ? '/' : `${canonicalPath.replace(/\/$/, '')}/`;
     const localizedPath = `/${currentLang}${normalizedPath === '/' ? '/' : normalizedPath}`;
     const canonicalUrl = `${baseUrl}${localizedPath}`;
     const alternatePath = normalizedPath === '/' ? '/' : normalizedPath;
