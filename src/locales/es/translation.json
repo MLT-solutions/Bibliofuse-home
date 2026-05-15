@@ -1,171 +1,369 @@
 {
-    "nav": {
-        "home": "Inicio",
-        "reader": "Lector",
-        "webapp": "Aplicación Web",
-        "about": "Sobre"
+  "nav": {
+    "home": "Inicio",
+    "reader": "Lector",
+    "webapp": "Aplicación Web",
+    "about": "Sobre",
+    "tools": "Herramientas",
+    "getApp": "Obtener app"
+  },
+  "home": {
+    "hero": {
+      "title": "BiblioFuse",
+      "subtitle": "El ecosistema definitivo de libros electrónicos. Herramientas para gestionar, lector para disfrutar.",
+      "btn": {
+        "ios": "iOS App Store",
+        "android": "Google Play",
+        "web": "Iniciar herramienta web",
+        "pc": "Herramientas PC"
+      }
     },
-    "home": {
-        "hero": {
-            "title": "BiblioFuse",
-            "subtitle": "El ecosistema definitivo de libros electrónicos. Herramientas para gestionar, lector para disfrutar.",
-            "btn": {
-                "ios": "iOS App Store",
-                "android": "Google Play",
-                "web": "Iniciar herramienta web",
-                "pc": "Herramientas PC"
-            }
+    "warning": {
+      "title": "Descarga solo desde fuentes oficiales",
+      "message": "Las aplicaciones BiblioFuse se distribuyen exclusivamente a través de Apple App Store, Google Play Store y Microsoft Store. Nunca descargues desde sitios web no oficiales para proteger tu dispositivo de malware y amenazas de seguridad."
+    },
+    "table": {
+      "title": "Comparación de ediciones",
+      "headers": {
+        "feature": "Característica",
+        "ios": "Lector iOS",
+        "android": "Lector Android",
+        "web": "Herramienta Web",
+        "pc": "Herramientas PC"
+      },
+      "rows": {
+        "primary": {
+          "name": "Función principal",
+          "v_read": "Lectura, Gestión de biblioteca (Etiqueta/Calificar), Compresión/Fusión",
+          "v_create": "Compresión/Fusión en cualquier lugar",
+          "v_heavy": "Compresión/Fusión de alto rendimiento"
         },
-        "warning": {
-            "title": "Descarga solo desde fuentes oficiales",
-            "message": "Las aplicaciones BiblioFuse se distribuyen exclusivamente a través de Apple App Store, Google Play Store y Microsoft Store. Nunca descargues desde sitios web no oficiales para proteger tu dispositivo de malware y amenazas de seguridad."
+        "platform": {
+          "name": "Plataforma",
+          "v_ios": "iPhone/iPad",
+          "v_android": "Teléfono/Tablet Android",
+          "v_web": "Navegador (Todos)",
+          "v_pc": "Windows (Exe)"
         },
-        "table": {
-            "title": "Comparación de ediciones",
-            "headers": {
-                "feature": "Característica",
-                "ios": "Lector iOS",
-                "android": "Lector Android",
-                "web": "Herramienta Web",
-                "pc": "Herramientas PC"
-            },
-            "rows": {
-                "primary": {
-                    "name": "Función principal",
-                    "v_read": "Lectura, Gestión de biblioteca (Etiqueta/Calificar), Compresión/Fusión",
-                    "v_create": "Compresión/Fusión en cualquier lugar",
-                    "v_heavy": "Compresión/Fusión de alto rendimiento"
-                },
-                "platform": {
-                    "name": "Plataforma",
-                    "v_ios": "iPhone/iPad",
-                    "v_android": "Teléfono/Tablet Android",
-                    "v_web": "Navegador (Todos)",
-                    "v_pc": "Windows (Exe)"
-                },
-                "processing": {
-                    "name": "Procesamiento",
-                    "v_native": "Nativo en dispositivo",
-                    "v_wasm": "WASM local (Privado)",
-                    "v_win": "Nativo Windows"
-                },
-                "convert": {
-                    "name": "Convertir/Unir",
-                    "v_mobile": "(EPUB/CBZ)",
-                    "v_web": "(EPUB/CBZ/PDF)",
-                    "v_pc_1": "(Carpeta/CBZ/PDF)",
-                    "v_pc_2": "(EPUB)"
-                },
-                "reader_feat": {
-                    "name": "Funciones de lector",
-                    "v_advanced": "✔ (Avanzado)",
-                    "v_basic": "Vista previa básica"
-                },
-                "cloud": {
-                    "name": "Copia de seguridad automática",
-                    "v_icloud": "✔ (iCloud)",
-                    "v_gdrive": "✔ (local)"
-                },
-                "bookshelf": {
-                    "name": "Biblioteca iCloud",
-                    "v_ios": "✔ (multidispositivo)"
-                },
-                "lang": {
-                    "name": "Soporte de idiomas",
-                    "v_12": "12 Idiomas",
-                    "v_12_list": "(Inglés, Español, Francés, Holandés, Portugués, Ruso, Chino simplificado, Japonés, Coreano, Indonesio, Malayo)",
-                    "v_6": "6 Idiomas",
-                    "v_6_list": "(Inglés, Español, Francés, Holandés, Portugués, Chino simplificado)",
-                    "v_pc": "Solo inglés"
-                },
-                "avail": {
-                    "name": "Disponibilidad",
-                    "v_review": "En revisión",
-                    "v_cbz": "Ver. CBZ",
-                    "v_epub": "Ver. EPUB"
-                }
-            }
+        "processing": {
+          "name": "Procesamiento",
+          "v_native": "Nativo en dispositivo",
+          "v_wasm": "WASM local (Privado)",
+          "v_win": "Nativo Windows"
+        },
+        "convert": {
+          "name": "Convertir/Unir",
+          "v_mobile": "(EPUB/CBZ)",
+          "v_web": "(EPUB/CBZ/PDF)",
+          "v_pc_1": "(Carpeta/CBZ/PDF)",
+          "v_pc_2": "(EPUB)"
+        },
+        "reader_feat": {
+          "name": "Funciones de lector",
+          "v_advanced": "✔ (Avanzado)",
+          "v_basic": "Vista previa básica"
+        },
+        "cloud": {
+          "name": "Copia de seguridad automática",
+          "v_icloud": "✔ (iCloud)",
+          "v_gdrive": "✔ (local)"
+        },
+        "bookshelf": {
+          "name": "Biblioteca iCloud",
+          "v_ios": "✔ (multidispositivo)"
+        },
+        "lang": {
+          "name": "Soporte de idiomas",
+          "v_12": "12 Idiomas",
+          "v_12_list": "(Inglés, Español, Francés, Holandés, Portugués, Ruso, Chino simplificado, Japonés, Coreano, Indonesio, Malayo)",
+          "v_6": "6 Idiomas",
+          "v_6_list": "(Inglés, Español, Francés, Holandés, Portugués, Chino simplificado)",
+          "v_pc": "Solo inglés"
+        },
+        "avail": {
+          "name": "Disponibilidad",
+          "v_review": "En revisión",
+          "v_cbz": "Ver. CBZ",
+          "v_epub": "Ver. EPUB"
         }
+      }
+    }
+  },
+  "reader": {
+    "title": "Experiencia de lectura de próxima generación",
+    "subtitle": "Diseñado para velocidad, comodidad y flexibilidad. La aplicación BiblioFuse Reader se adapta a cómo quieres leer.",
+    "features": {
+      "immersive": {
+        "title": "Lectura inmersiva",
+        "desc": "Interfaz sin distracciones con temas personalizables y modos de lectura."
+      },
+      "webtoon": {
+        "title": "Modo Webtoon continuo",
+        "desc": "Experimenta cómics y manga en un desplazamiento vertical continuo, optimizado para móviles. Usa el desplazamiento automático para leer sin manos."
+      },
+      "peek": {
+        "title": "Zoom rápido (Peek)",
+        "desc": "Doble toque para hacer zoom instantáneo en detalles sin perder tu lugar. Perfecto para leer texto pequeño en paneles densos."
+      },
+      "smart": {
+        "title": "Etiquetado y calificación inteligente",
+        "desc": "Organiza tu biblioteca con etiquetas personalizadas y calificaciones con estrellas. Lleva un registro de lo que has leído y lo que amas."
+      },
+      "compress": {
+        "title": "Herramientas de compresión",
+        "desc": "Une series o reduce el tamaño de archivo de CBZ/EPUB hasta en un 50%."
+      },
+      "cloud": {
+        "title": "Sincronización en la nube",
+        "desc": "Sincroniza perfectamente tu progreso de lectura y biblioteca entre dispositivos usando iCloud (iOS) o Google Drive (Android)."
+      },
+      "lang": {
+        "title": "Soporte para 12 idiomas",
+        "desc": "Interfaz totalmente localizada disponible en 12 idiomas principales, haciendo la lectura accesible en todo el mundo."
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre BiblioFuse",
+    "intro_1": "BiblioFuse es un conjunto de herramientas y lectores diseñados para dar a los amantes de los libros electrónicos control total sobre su biblioteca. A diferencia de los jardines vallados que te encierran en un ecosistema específico, BiblioFuse te permite gestionar, convertir y leer tus libros en cualquier dispositivo.",
+    "intro_2": "Nuestra herramienta web utiliza tecnología WebAssembly (WASM) de vanguardia para procesar archivos completamente en tu dispositivo. Esto significa una gestión de archivos privada, rápida y segura sin subir nunca tu biblioteca personal a un servidor.",
+    "work_title": "Trabaja con nosotros",
+    "work_text": "Somos un equipo pequeño y apasionado dedicado a construir software que respeta la privacidad y propiedad del usuario. Actualmente estamos abiertos a oportunidades freelance y colaboraciones.",
+    "connect_title": "Conectar",
+    "connect_text": "¿Interesado en contribuir o contratar? Contáctanos."
+  },
+  "seo": {
+    "home": {
+      "title": "Gestiona y lee libros electrónicos en cualquier lugar",
+      "desc": "BiblioFuse: Lector de ebooks sin conexión y gestor de biblioteca. Etiqueta, califica, rastrea el progreso de lectura. Biblioteca personal privada con sincronización iCloud. Sin anuncios, sin seguimiento. CBZ, EPUB, ZIP. iOS, Android, Windows."
     },
     "reader": {
-        "title": "Experiencia de lectura de próxima generación",
-        "subtitle": "Diseñado para velocidad, comodidad y flexibilidad. La aplicación BiblioFuse Reader se adapta a cómo quieres leer.",
-        "features": {
-            "immersive": {
-                "title": "Lectura inmersiva",
-                "desc": "Interfaz sin distracciones con temas personalizables y modos de lectura."
-            },
-            "webtoon": {
-                "title": "Modo Webtoon continuo",
-                "desc": "Experimenta cómics y manga en un desplazamiento vertical continuo, optimizado para móviles. Usa el desplazamiento automático para leer sin manos."
-            },
-            "peek": {
-                "title": "Zoom rápido (Peek)",
-                "desc": "Doble toque para hacer zoom instantáneo en detalles sin perder tu lugar. Perfecto para leer texto pequeño en paneles densos."
-            },
-            "smart": {
-                "title": "Etiquetado y calificación inteligente",
-                "desc": "Organiza tu biblioteca con etiquetas personalizadas y calificaciones con estrellas. Lleva un registro de lo que has leído y lo que amas."
-            },
-            "compress": {
-                "title": "Herramientas de compresión",
-                "desc": "Une series o reduce el tamaño de archivo de CBZ/EPUB hasta en un 50%."
-            },
-            "cloud": {
-                "title": "Sincronización en la nube",
-                "desc": "Sincroniza perfectamente tu progreso de lectura y biblioteca entre dispositivos usando iCloud (iOS) o Google Drive (Android)."
-            },
-            "lang": {
-                "title": "Soporte para 12 idiomas",
-                "desc": "Interfaz totalmente localizada disponible en 12 idiomas principales, haciendo la lectura accesible en todo el mundo."
-            }
-        }
+      "title": "Lector de libros electrónicos de última generación",
+      "desc": "Un lector de libros electrónicos rápido y sin distracciones para iOS y Android. Incluye modo webtoon continuo, etiquetado inteligente y Peek Zoom para cómics."
     },
     "about": {
-        "title": "Sobre BiblioFuse",
-        "intro_1": "BiblioFuse es un conjunto de herramientas y lectores diseñados para dar a los amantes de los libros electrónicos control total sobre su biblioteca. A diferencia de los jardines vallados que te encierran en un ecosistema específico, BiblioFuse te permite gestionar, convertir y leer tus libros en cualquier dispositivo.",
-        "intro_2": "Nuestra herramienta web utiliza tecnología WebAssembly (WASM) de vanguardia para procesar archivos completamente en tu dispositivo. Esto significa una gestión de archivos privada, rápida y segura sin subir nunca tu biblioteca personal a un servidor.",
-        "work_title": "Trabaja con nosotros",
-        "work_text": "Somos un equipo pequeño y apasionado dedicado a construir software que respeta la privacidad y propiedad del usuario. Actualmente estamos abiertos a oportunidades freelance y colaboraciones.",
-        "connect_title": "Conectar",
-        "connect_text": "¿Interesado en contribuir o contratar? Contáctanos."
+      "title": "Acerca de nosotros",
+      "desc": "Conoce al equipo detrás de BiblioFuse. Estamos dedicados a construir software privado y centrado en el usuario para los amantes de los libros electrónicos."
+    }
+  },
+  "privacy": {
+    "title": "¿Por qué elegir BiblioFuse?",
+    "noAds": {
+      "title": "Sin anuncios",
+      "desc": "Disfruta de una lectura sin interrupciones ni anuncios molestos"
     },
-    "seo": {
-        "home": {
-            "title": "Gestiona y lee libros electrónicos en cualquier lugar",
-            "desc": "BiblioFuse: Lector de ebooks sin conexión y gestor de biblioteca. Etiqueta, califica, rastrea el progreso de lectura. Biblioteca personal privada con sincronización iCloud. Sin anuncios, sin seguimiento. CBZ, EPUB, ZIP. iOS, Android, Windows."
-        },
-        "reader": {
-            "title": "Lector de libros electrónicos de última generación",
-            "desc": "Un lector de libros electrónicos rápido y sin distracciones para iOS y Android. Incluye modo webtoon continuo, etiquetado inteligente y Peek Zoom para cómics."
-        },
-        "about": {
-            "title": "Acerca de nosotros",
-            "desc": "Conoce al equipo detrás de BiblioFuse. Estamos dedicados a construir software privado y centrado en el usuario para los amantes de los libros electrónicos."
-        }
+    "noTracking": {
+      "title": "Sin seguimiento",
+      "desc": "Tu privacidad está protegida. No recopilamos ni vendemos tus datos"
     },
-    "privacy": {
-        "title": "¿Por qué elegir BiblioFuse?",
-        "noAds": {
-            "title": "Sin anuncios",
-            "desc": "Disfruta de una lectura sin interrupciones ni anuncios molestos"
+    "cloudSync": {
+      "title": "Sincronización en la nube",
+      "desc": "Sincroniza tu biblioteca sin problemas entre dispositivos con iCloud"
+    },
+    "compression": {
+      "title": "Compresión inteligente",
+      "desc": "Reduce el tamaño del archivo y ahorra espacio sin pérdida de calidad"
+    }
+  },
+  "footer": {
+    "rights": "© 2025 Modern Logic Tech Solutions (Reg. No: 202503109774 (003722143-P)). Todos los derechos reservados.",
+    "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malasia",
+    "privacy": "Política de Privacidad"
+  },
+  "redesign": {
+    "nav": {
+      "tools": "Herramientas",
+      "getApp": "Obtener app"
+    },
+    "tools": {
+      "readerSub": "iPhone · iPad · Mac · Android",
+      "webSub": "Compresión en el navegador",
+      "archiveSub": "Mac · Windows",
+      "smartSub": "iPhone · iPad · Mac · Windows"
+    },
+    "common": {
+      "noAds": "Sin anuncios",
+      "noTracking": "Sin rastreo",
+      "onDevice": "Procesamiento en el dispositivo",
+      "tryWebTool": "Probar la herramienta web",
+      "launch": "Abrir",
+      "getBiblioFuse": "Obtener BiblioFuse"
+    },
+    "aboutPage": {
+      "eyebrow": "BiblioFuse",
+      "lead": "Herramientas para quienes quieren que su biblioteca de lectura y sus flujos de documentos sean privados, locales y bajo su control.",
+      "pills": [
+        "Sin anuncios",
+        "Sin rastreo",
+        "Procesamiento en el dispositivo"
+      ]
+    },
+    "privacyPage": {
+      "eyebrow": "Privacidad",
+      "title": "Política de privacidad",
+      "desc": "BiblioFuse está diseñado alrededor del procesamiento local, sin anuncios y sin rastreo. Esta política explica qué permanece en tu dispositivo y qué datos limitados pueden intervenir al usar servicios de plataforma.",
+      "error": "Error al cargar la política de privacidad. Inténtalo de nuevo más tarde."
+    },
+    "webapp": {
+      "seoDesc": "Gestiona y convierte tu biblioteca digital. Administra archivos EPUB, PDF, CBZ y ZIP, ahorra espacio con fusión inteligente de series y mantén todo privado con una herramienta WASM en el navegador.",
+      "title": "BiblioFuse Web App",
+      "subtitle": "Tu kit universal de e-books en el navegador",
+      "features": [
+        {
+          "title": "100% privado",
+          "body": "Todo el procesamiento ocurre localmente en tu navegador"
         },
-        "noTracking": {
-            "title": "Sin seguimiento",
-            "desc": "Tu privacidad está protegida. No recopilamos ni vendemos tus datos"
+        {
+          "title": "Sin instalación",
+          "body": "Funciona al instante en cualquier plataforma o dispositivo"
         },
-        "cloudSync": {
-            "title": "Sincronización en la nube",
-            "desc": "Sincroniza tu biblioteca sin problemas entre dispositivos con iCloud"
+        {
+          "title": "Fusionar y convertir",
+          "body": "Compatible con EPUB, PDF, CBZ y ZIP"
         },
-        "compression": {
-            "title": "Compresión inteligente",
-            "desc": "Reduce el tamaño del archivo y ahorra espacio sin pérdida de calidad"
+        {
+          "title": "Compresión inteligente",
+          "body": "Ahorra hasta un 50% de espacio"
         }
+      ],
+      "launch": "Abrir Web App",
+      "info": "Se abre en una pestaña nueva · No requiere registro · Con WebAssembly",
+      "platforms": "Funciona en Windows, macOS, Linux, Android, iOS y ChromeOS"
     },
     "footer": {
-        "rights": "© 2025 Modern Logic Tech Solutions (Reg. No: 202503109774 (003722143-P)). Todos los derechos reservados.",
-        "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malasia",
-        "privacy": "Política de Privacidad"
+      "desc": "Una pequeña suite de herramientas y lectores para quienes quieren su biblioteca en sus propios dispositivos, no detrás de un inicio de sesión ajeno.",
+      "products": "Productos",
+      "company": "Empresa",
+      "legal": "Legal",
+      "webTool": "Herramienta web",
+      "contact": "Contacto",
+      "work": "Trabaja con nosotros",
+      "eula": "Términos de uso (EULA)",
+      "stores": "Apple App Store · Google Play · Microsoft Store"
+    },
+    "home": {
+      "seoTitle": "BiblioFuse - E-book Reader, Library Manager & Compression Tools",
+      "seoDesc": "BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web.",
+      "hero": {
+        "version": "Version 2.0.1 - native on iPhone, iPad & Mac",
+        "titleA": "Your library,",
+        "titleB": "read your way.",
+        "desc": "BiblioFuse is a native reader and library manager for personal ebook, comic, and document collections across iPhone, iPad, and Mac.",
+        "warningTitle": "Download from official sources only.",
+        "warningBody": "BiblioFuse is exclusively distributed via Apple App Store, Google Play Store and Microsoft Store. Never download from unofficial websites.",
+        "chipA": "Universal · iCloud",
+        "chipB": "iPhone · iPad · Mac",
+        "chipC": "TTS · auto-scroll",
+        "chipD": "Hands-free reading",
+        "reads": "Reads"
+      },
+      "table": {
+        "eyebrow": "Comparar ediciones",
+        "title": "Elige la edición según tu forma de trabajar.",
+        "desc": "Todas las ediciones comparten la misma filosofía: en el dispositivo y sin rastreo. Las diferencias están en la plataforma y el flujo de trabajo.",
+        "feature": "Función",
+        "badges": {
+          "universal": "Compra universal",
+          "edition": "Edición",
+          "free": "Gratis"
+        },
+        "editions": {
+          "apple": "BiblioFuse Reader",
+          "android": "Lector Android",
+          "web": "Herramienta web",
+          "pc": "Herramientas PC"
+        },
+        "subtitles": {
+          "apple": "iPhone · iPad · Mac",
+          "android": "Teléfono · Tableta",
+          "web": "Navegador · Todos los dispositivos",
+          "pc": "Windows"
+        },
+        "unique": "Único",
+        "where": "Dónde conseguirlo",
+        "iosNote": "iOS publicado · Mac en revisión",
+        "cbz": "Edición CBZ",
+        "epub": "Edición EPUB",
+        "rows": [
+          [
+            "Función principal",
+            "Leer, organizar, comprimir y fusionar - en iPhone, iPad y Mac",
+            "Leer, organizar, comprimir y fusionar",
+            "Comprimir / fusionar en cualquier lugar",
+            "Compresión y fusión intensivas"
+          ],
+          [
+            "Plataforma",
+            "iPhone, iPad y Mac",
+            "Teléfono / tableta Android",
+            "Navegador (todos los dispositivos)",
+            "Windows (.exe)"
+          ],
+          [
+            "Procesamiento",
+            "SwiftUI nativo, en el dispositivo",
+            "Nativo en el dispositivo",
+            "WASM local (privado)",
+            "Windows nativo"
+          ],
+          [
+            "Comprimir / fusionar",
+            "EPUB / CBZ / CBR",
+            "EPUB / CBZ",
+            "EPUB / CBZ / PDF",
+            "Carpeta / CBZ / PDF / EPUB"
+          ],
+          [
+            "Formatos de lectura",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "EPUB · PDF · CBZ · ZIP · TXT",
+            "Solo herramienta",
+            "Solo herramienta"
+          ],
+          [
+            "Funciones de lectura",
+            "TTS, zoom rápido, auto-scroll",
+            "Avanzado",
+            "-",
+            "-"
+          ],
+          [
+            "Streaming Mac → iOS",
+            "Wi-Fi + 5G remoto vía Tailscale",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "Fuentes locales, iCloud y SMB",
+            "Local + iCloud; SMB vía streaming desde Mac",
+            "Local + SMB nativo",
+            "Solo herramienta",
+            "Solo herramienta"
+          ],
+          [
+            "Copia automática BD",
+            "iCloud",
+            "Local",
+            "-",
+            "-"
+          ],
+          [
+            "Biblioteca iCloud",
+            "Entre dispositivos",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "Idiomas",
+            "12 idiomas|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
+            "12 idiomas|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
+            "6 idiomas|EN, ES, FR, NL, PT, ZH",
+            "Inglés"
+          ]
+        ]
+      }
     }
+  }
 }

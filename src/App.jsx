@@ -6,7 +6,6 @@ import './i18n';
 import { SUPPORTED_LANGUAGES } from './i18n';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
-import Reader from './pages/Reader';
 import WebApp from './pages/WebApp';
 import About from './pages/About';
 import Privacy from './pages/Privacy';
@@ -55,6 +54,20 @@ function AppLayout() {
     }
   }, [lang, i18n, navigate, location]);
 
+  React.useEffect(() => {
+    if (!location.hash) {
+      window.requestAnimationFrame(() => {
+        window.scrollTo({ top: 0 });
+      });
+      return;
+    }
+
+    const targetId = location.hash.slice(1);
+    window.requestAnimationFrame(() => {
+      document.getElementById(targetId)?.scrollIntoView({ block: 'start' });
+    });
+  }, [location.hash, location.pathname]);
+
   // Get current path without language prefix
   const currentPath = location.pathname.replace(`/${lang}`, '') || '/';
   const isWebApp = currentPath === '/webapp';
@@ -65,15 +78,40 @@ function AppLayout() {
       <main className="flex-1 flex flex-col">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/reader" element={<Reader />} />
+          <Route path="/reader" element={<Navigate to={`/${lang}/#reader`} replace />} />
           <Route path="/webapp" element={<WebApp />} />
           <Route path="/about" element={<About />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<Navigate to={`/${lang}/`} replace />} />
         </Routes>
       </main>
+      <BackToTopButton />
       {!isWebApp && <Footer />}
     </div>
+  );
+}
+
+function BackToTopButton() {
+  const [visible, setVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 500);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return (
+    <button
+      type="button"
+      aria-label="Go to top"
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      className={`fixed bottom-5 left-4 z-40 grid h-11 w-11 place-items-center rounded-full border border-slate-200 bg-white text-slate-950 shadow-2xl transition sm:hidden ${visible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-4 opacity-0'}`}
+    >
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="m18 15-6-6-6 6" />
+      </svg>
+    </button>
   );
 }
 

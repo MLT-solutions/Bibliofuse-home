@@ -1,272 +1,944 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import logo from '../assets/logo.png';
 import SEO from '../components/SEO';
 
-const Home = () => {
-    const { lang } = useParams();
-    const { t } = useTranslation();
+const appStoreUrl = 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093';
+const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ';
+const archiveMacUrl = 'https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449';
+const archiveMsUrl = 'https://apps.microsoft.com/detail/9n2jb4k5wvcq';
+const smartDecryptUrl = 'https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229';
+const smartDecryptMsUrl = 'https://apps.microsoft.com/detail/9p9bfkr5zdz8';
+const imageBase = '/image/offline-apps/bibliofuse';
 
+function StoreBadge({ type, size = 'lg', className = '' }) {
+  const sizes = size === 'sm' ? 'h-10' : 'h-12';
+  if (type === 'apple') {
     return (
-        <div className="pt-20 pb-12 w-full">
-            <SEO
-                title={t('seo.home.title')}
-                description={t('seo.home.desc')}
-                canonical="/"
-            />
-            {/* Hero Section */}
-            <div className="flex flex-col items-center justify-center min-h-[60vh] text-center px-4 space-y-8">
-                <div className="relative group">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-violet-600 rounded-full blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                    <img src={logo} alt="BiblioFuse Logo" className="relative w-64 md:w-96 drop-shadow-2xl rounded-3xl" />
-                </div>
-                <h1 className="text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-indigo-100">
-                    {t('home.hero.title')}
-                </h1>
-                <p className="text-xl md:text-2xl text-slate-300 max-w-2xl font-light">
-                    {t('home.hero.subtitle')}
-                </p>
-
-                {/* Download / Action Buttons */}
-                <div className="flex flex-wrap gap-4 justify-center mt-8 items-center">
-                    {/* iOS App Store - First */}
-                    <a
-                        href="https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block hover:scale-105 transition-transform"
-                    >
-                        <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt="Download on the App Store" className="h-12" />
-                    </a>
-
-                    {/* Google Play - Second */}
-                    <a
-                        href="https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block hover:scale-105 transition-transform"
-                    >
-                        <img src="/image/Playstore.png" alt="Get it on Google Play" className="h-12" />
-                    </a>
-
-                    {/* Web Tool - Third */}
-                    <Link
-                        to={`/${lang}/webapp`}
-                        className="glass-button px-8 py-3 rounded-full font-semibold flex items-center gap-2 group cursor-pointer"
-                    >
-                        <img src="/image/WebAssembly_Logo.svg" alt="WebAssembly" className="h-6" />
-                        {t('home.hero.btn.web')}
-                    </Link>
-
-                    {/* Microsoft Store - Fourth */}
-                    <a
-                        href="#comparison-table"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            document.getElementById('comparison-table').scrollIntoView({ behavior: 'smooth' });
-                        }}
-                        className="inline-block hover:scale-105 transition-transform"
-                    >
-                        <img src="/image/Microsoft_Store_badge.svg" alt="Get it from Microsoft" className="h-12" />
-                    </a>
-                </div>
-
-                {/* Official Distribution Warning */}
-                <div className="mt-8 max-w-3xl mx-auto">
-                    <div className="glass-panel rounded-xl p-6 border-2 border-amber-500/30 bg-amber-500/5">
-                        <div className="flex items-start gap-4">
-                            <svg className="w-8 h-8 flex-shrink-0 fill-amber-400" viewBox="0 0 24 24"><path d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z" /></svg>
-                            <div className="flex-1">
-                                <h3 className="text-lg font-bold text-amber-300 mb-2">{t('home.warning.title')}</h3>
-                                <p className="text-sm text-slate-300 leading-relaxed">{t('home.warning.message')}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* Comparison Table Section */}
-            <div id="comparison-table" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
-                <h2 className="text-3xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">{t('home.table.title')}</h2>
-                <div className="overflow-x-auto glass-panel rounded-2xl p-6">
-                    <table className="w-full text-left border-collapse min-w-[800px]">
-                        <thead>
-                            <tr className="border-b border-white/10 text-slate-300">
-                                <th className="py-4 px-6 font-semibold w-[20%]">{t('home.table.headers.feature')}</th>
-                                <th className="py-4 px-6 font-semibold text-center w-[20%] text-white">{t('home.table.headers.ios')}</th>
-                                <th className="py-4 px-6 font-semibold text-center w-[20%] text-green-400">{t('home.table.headers.android')}</th>
-                                <th className="py-4 px-6 font-semibold text-center w-[20%] text-blue-400">{t('home.table.headers.web')}</th>
-                                <th className="py-4 px-6 font-semibold text-center w-[20%] text-purple-400">{t('home.table.headers.pc')}</th>
-                            </tr>
-                        </thead>
-                        <tbody className="divide-y divide-white/5 text-sm md:text-base">
-                            <tr>
-                                <td className="py-4 px-6 font-medium text-slate-200">{t('home.table.rows.primary.name')}</td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.primary.v_read')}</td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.primary.v_read')}</td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.primary.v_create')}</td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.primary.v_heavy')}</td>
-                            </tr>
-                            <tr>
-                                <td className="py-4 px-6 font-medium text-slate-200">{t('home.table.rows.platform.name')}</td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.platform.v_ios')}</td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.platform.v_android')}</td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.platform.v_web')}</td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.platform.v_pc')}</td>
-                            </tr>
-                            <tr>
-                                <td className="py-4 px-6 font-medium text-slate-200">{t('home.table.rows.processing.name')}</td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.processing.v_native')}</td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.processing.v_native')}</td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.processing.v_wasm')}</td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.processing.v_win')}</td>
-                            </tr>
-                            <tr>
-                                <td className="py-4 px-6 font-medium text-slate-200">{t('home.table.rows.convert.name')}</td>
-                                <td className="py-4 px-6 text-center font-bold text-green-400">{t('home.table.rows.convert.v_mobile')}</td>
-                                <td className="py-4 px-6 text-center font-bold text-green-400">{t('home.table.rows.convert.v_mobile')}</td>
-                                <td className="py-4 px-6 text-center font-bold text-green-400">{t('home.table.rows.convert.v_web')}</td>
-                                <td className="py-4 px-6 text-center font-bold text-green-400">
-                                    <div className="flex flex-col">
-                                        <span>{t('home.table.rows.convert.v_pc_1')}</span>
-                                        <span>{t('home.table.rows.convert.v_pc_2')}</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="py-4 px-6 font-medium text-slate-200">{t('home.table.rows.reader_feat.name')}</td>
-                                <td className="py-4 px-6 text-center font-bold text-green-400">{t('home.table.rows.reader_feat.v_advanced')}</td>
-                                <td className="py-4 px-6 text-center font-bold text-green-400">{t('home.table.rows.reader_feat.v_advanced')}</td>
-                                <td className="py-4 px-6 text-center text-slate-600">✘</td>
-                                <td className="py-4 px-6 text-center text-slate-600">✘</td>
-                            </tr>
-                            <tr>
-                                <td className="py-4 px-6 font-medium text-slate-200">{t('home.table.rows.cloud.name')}</td>
-                                <td className="py-4 px-6 text-center font-bold text-green-400">{t('home.table.rows.cloud.v_icloud')}</td>
-                                <td className="py-4 px-6 text-center font-bold text-green-400">{t('home.table.rows.cloud.v_gdrive')}</td>
-                                <td className="py-4 px-6 text-center text-slate-600">✘</td>
-                                <td className="py-4 px-6 text-center text-slate-600">✘</td>
-                            </tr>
-                            <tr>
-                                <td className="py-4 px-6 font-medium text-slate-200">{t('home.table.rows.bookshelf.name')}</td>
-                                <td className="py-4 px-6 text-center font-bold text-green-400">{t('home.table.rows.bookshelf.v_ios')}</td>
-                                <td className="py-4 px-6 text-center text-slate-600">✘</td>
-                                <td className="py-4 px-6 text-center text-slate-600">✘</td>
-                                <td className="py-4 px-6 text-center text-slate-600">✘</td>
-                            </tr>
-                            <tr>
-                                <td className="py-4 px-6 font-medium text-slate-200">{t('home.table.rows.lang.name')}</td>
-                                <td className="py-4 px-6 text-center">
-                                    <span className="font-bold text-green-400 block mb-1">{t('home.table.rows.lang.v_12')}</span>
-                                    <span className="text-xs text-slate-400 block leading-tight">{t('home.table.rows.lang.v_12_list')}</span>
-                                </td>
-                                <td className="py-4 px-6 text-center">
-                                    <span className="font-bold text-green-400 block mb-1">{t('home.table.rows.lang.v_12')}</span>
-                                    <span className="text-xs text-slate-400 block leading-tight">{t('home.table.rows.lang.v_12_list')}</span>
-                                </td>
-                                <td className="py-4 px-6 text-center">
-                                    <span className="font-bold text-slate-200 block mb-1">{t('home.table.rows.lang.v_6')}</span>
-                                    <span className="text-xs text-slate-400 block leading-tight">{t('home.table.rows.lang.v_6_list')}</span>
-                                </td>
-                                <td className="py-4 px-6 text-center text-slate-400">{t('home.table.rows.lang.v_pc')}</td>
-                            </tr>
-                            <tr>
-                                <td className="py-4 px-6 font-medium text-slate-200 align-middle">{t('home.table.rows.avail.name')}</td>
-                                <td className="py-4 px-6 text-center align-middle">
-                                    <a href="https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093" target="_blank" rel="noopener noreferrer" className="inline-block hover:scale-110 transition-transform">
-                                        <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt="Download on the App Store" className="h-10 inline-block" />
-                                    </a>
-                                </td>
-                                <td className="py-4 px-6 text-center align-middle">
-                                    <a href="https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ" target="_blank" rel="noopener noreferrer" className="inline-block hover:scale-110 transition-transform">
-                                        <img src="/image/Playstore.png" alt="Get it on Google Play" className="h-10 inline-block" />
-                                    </a>
-                                </td>
-                                <td className="py-4 px-6 text-center align-middle">
-                                    <Link to={`/${lang}/webapp`} className="inline-block hover:scale-110 transition-transform cursor-pointer">
-                                        <img src="/image/WebAssembly_Logo.svg" alt="WebAssembly" className="h-10 inline-block" />
-                                    </Link>
-                                </td>
-                                <td className="py-4 px-6 text-center align-middle">
-                                    <div className="flex flex-col gap-2 items-center justify-center">
-                                        <a href="https://apps.microsoft.com/detail/9p7b02538tfq?hl=en-US&gl=MY" target="_blank" rel="noopener noreferrer" className="inline-block hover:scale-110 transition-transform">
-                                            <img src="/image/Microsoft_Store_badge.svg" alt="Get it from Microsoft" className="h-10 inline-block" />
-                                        </a>
-                                        <span className="text-xs text-slate-400">{t('home.table.rows.avail.v_cbz')}</span>
-                                        <a href="https://apps.microsoft.com/detail/9pdllhdz6kkl?hl=en-US&gl=MY" target="_blank" rel="noopener noreferrer" className="inline-block hover:scale-110 transition-transform">
-                                            <img src="/image/Microsoft_Store_badge.svg" alt="Get it from Microsoft" className="h-10 inline-block" />
-                                        </a>
-                                        <span className="text-xs text-slate-400">{t('home.table.rows.avail.v_epub')}</span>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            {/* Privacy & Features Highlights */}
-            <div className="max-w-7xl mx-auto px-4 py-16">
-                <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    {t('privacy.title')}
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {/* No Ads */}
-                    <div className="glass-card p-6 rounded-2xl border border-white/10 hover:border-red-500/30 transition-all group">
-                        <div className="flex flex-col items-center text-center">
-                            <div className="w-16 h-16 mb-4 rounded-full bg-red-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-                                <svg className="w-8 h-8 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
-                                </svg>
-                            </div>
-                            <h3 className="text-xl font-semibold mb-2 text-red-400">{t('privacy.noAds.title')}</h3>
-                            <p className="text-slate-300 text-sm">{t('privacy.noAds.desc')}</p>
-                        </div>
-                    </div>
-
-                    {/* No Tracking */}
-                    <div className="glass-card p-6 rounded-2xl border border-white/10 hover:border-green-500/30 transition-all group">
-                        <div className="flex flex-col items-center text-center">
-                            <div className="w-16 h-16 mb-4 rounded-full bg-green-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-                                <svg className="w-8 h-8 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                            </div>
-                            <h3 className="text-xl font-semibold mb-2 text-green-400">{t('privacy.noTracking.title')}</h3>
-                            <p className="text-slate-300 text-sm">{t('privacy.noTracking.desc')}</p>
-                        </div>
-                    </div>
-
-                    {/* Cloud Sync */}
-                    <div className="glass-card p-6 rounded-2xl border border-white/10 hover:border-blue-500/30 transition-all group">
-                        <div className="flex flex-col items-center text-center">
-                            <div className="w-16 h-16 mb-4 rounded-full bg-blue-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-                                <svg className="w-8 h-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                                </svg>
-                            </div>
-                            <h3 className="text-xl font-semibold mb-2 text-blue-400">{t('privacy.cloudSync.title')}</h3>
-                            <p className="text-slate-300 text-sm">{t('privacy.cloudSync.desc')}</p>
-                        </div>
-                    </div>
-
-                    {/* Smart Compression */}
-                    <div className="glass-card p-6 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all group">
-                        <div className="flex flex-col items-center text-center">
-                            <div className="w-16 h-16 mb-4 rounded-full bg-purple-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-                                <svg className="w-8 h-8 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-                                </svg>
-                            </div>
-                            <h3 className="text-xl font-semibold mb-2 text-purple-400">{t('privacy.compression.title')}</h3>
-                            <p className="text-slate-300 text-sm">{t('privacy.compression.desc')}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <a href={appStoreUrl} target="_blank" rel="noopener noreferrer" className={`inline-flex ${className}`}>
+        <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt="Download on the App Store" className={`${sizes} w-auto object-contain`} />
+      </a>
     );
+  }
+  if (type === 'play') {
+    return (
+      <a href={playStoreUrl} target="_blank" rel="noopener noreferrer" className={`inline-flex ${className}`}>
+        <img src="/image/Playstore.png" alt="Get it on Google Play" className={`${sizes} w-auto object-contain`} />
+      </a>
+    );
+  }
+  return null;
+}
+
+function AppStoreImageBadge({ href, alt = 'Download on the App Store', size = 'sm', className = '' }) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={`inline-flex transition hover:-translate-y-0.5 ${className}`}>
+      <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt={alt} className={`${size === 'lg' ? 'h-12' : 'h-10'} w-auto object-contain`} />
+    </a>
+  );
+}
+
+function MicrosoftStoreImageBadge({ href, size = 'sm', className = '' }) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={`inline-flex transition hover:-translate-y-0.5 ${className}`}>
+      <img src="/image/Microsoft_Store_badge.svg" alt="Get it from Microsoft" className={`${size === 'lg' ? 'h-12' : 'h-10'} w-auto object-contain`} />
+    </a>
+  );
+}
+
+function WebToolButton({ lang, children = 'Try the Web Tool', compact = false }) {
+  return (
+    <Link
+      to={`/${lang}/webapp`}
+      className={`inline-flex items-center justify-center gap-2 rounded-xl bg-[#0b1220] font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#152033] ${compact ? 'h-10 px-4 text-sm' : 'h-12 px-5 text-sm'}`}
+    >
+      <img src="/image/WebAssembly_Logo.svg" alt="" className="h-5 w-5" />
+      {children}
+      <ArrowRightIcon />
+    </Link>
+  );
+}
+
+function CheckIcon({ className = 'text-emerald-600' }) {
+  return (
+    <span className={`inline-grid h-6 w-6 place-items-center rounded-full bg-emerald-50 ${className}`}>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M5 13l4 4L19 7" />
+      </svg>
+    </span>
+  );
+}
+
+function DashIcon() {
+  return (
+    <span className="inline-grid h-6 w-6 place-items-center rounded-full bg-slate-100 text-slate-400">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round">
+        <path d="M6 12h12" />
+      </svg>
+    </span>
+  );
+}
+
+function ArrowRightIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 12h14M13 6l6 6-6 6" />
+    </svg>
+  );
+}
+
+function ProductIcon({ kind }) {
+  const props = { width: 22, height: 22, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2.2, strokeLinecap: 'round', strokeLinejoin: 'round' };
+  if (kind === 'book') return <svg {...props}><path d="M4 19V5a2 2 0 012-2h3v18H6a2 2 0 01-2-2z" /><path d="M11 3h3v18h-3z" /><path d="M16 5l4 1-3.5 14-4-1z" /></svg>;
+  if (kind === 'globe') return <svg {...props}><circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3a13 13 0 010 18 13 13 0 010-18" /></svg>;
+  if (kind === 'folder') return <svg {...props}><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" /><path d="M8 13h8" /></svg>;
+  if (kind === 'lock') return <svg {...props}><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 018 0v3" /></svg>;
+  return null;
+}
+
+function Hero({ lang }) {
+  const { t } = useTranslation();
+  const signals = [t('redesign.common.noAds'), t('redesign.common.noTracking'), t('redesign.common.onDevice')];
+
+  return (
+    <section id="top" className="relative overflow-hidden bg-[#f5f8ff] pt-28 pb-16 sm:pb-20">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_10%,rgba(45,124,246,0.14),transparent_34%),radial-gradient(circle_at_85%_18%,rgba(20,194,166,0.13),transparent_28%)]" />
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr_1fr] lg:gap-8 lg:px-8">
+        <div className="min-w-0 max-w-full">
+          <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 shadow-sm">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inset-0 rounded-full bg-teal-300 animate-ping" />
+              <span className="relative h-2 w-2 rounded-full bg-teal-500" />
+            </span>
+            {t('redesign.home.hero.version')}
+          </div>
+
+          <h1 className="mt-5 max-w-3xl text-[clamp(2.75rem,5.6vw,4.75rem)] font-black leading-[0.98] tracking-tight text-[#0b1220]">
+            {t('redesign.home.hero.titleA')}
+            <br />
+            <span className="bg-gradient-to-r from-[#1e5fd3] to-[#14c2a6] bg-clip-text text-transparent">{t('redesign.home.hero.titleB')}</span>
+          </h1>
+
+          <p className="mt-6 max-w-full text-lg leading-8 text-slate-600 sm:max-w-xl md:text-xl">
+            {t('redesign.home.hero.desc')}
+          </p>
+
+          <div id="download" className="mt-8 flex flex-wrap items-center gap-3">
+            <StoreBadge type="apple" />
+            <StoreBadge type="play" />
+            <WebToolButton lang={lang}>{t('redesign.common.tryWebTool')}</WebToolButton>
+          </div>
+
+          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-slate-600">
+            {signals.map((item) => (
+              <span key={item} className="flex items-center gap-1.5">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16A34A" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                {item}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-7 flex max-w-full items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50/85 px-4 py-3 text-left sm:max-w-xl">
+            <svg className="mt-0.5 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="#d97706"><path d="M13 14h-2v-4h2m0 8h-2v-2h2M1 21h22L12 2 1 21z" /></svg>
+            <div className="text-xs leading-relaxed text-amber-950/90">
+              <span className="block font-bold">{t('redesign.home.hero.warningTitle')}</span>
+              {t('redesign.home.hero.warningBody')}
+            </div>
+          </div>
+        </div>
+
+        <div className="relative mx-auto w-full max-w-[min(380px,100%)] lg:justify-self-end">
+          <div className="absolute -inset-10 -z-0 rounded-full bg-[radial-gradient(circle,rgba(45,124,246,0.18),transparent_68%)]" />
+          <img src={`${imageBase}/iphone/1.png`} alt="BiblioFuse library on iPhone" className="relative z-10 block w-full drop-shadow-2xl motion-safe:animate-[float_7s_ease-in-out_infinite]" />
+          <div className="absolute -left-3 bottom-8 z-20 hidden items-center gap-2.5 rounded-2xl border border-slate-200 bg-white px-3 py-2.5 shadow-xl md:flex lg:-left-6">
+            <span className="grid h-9 w-9 place-items-center rounded-lg bg-blue-50 text-blue-600">
+              <ProductIcon kind="book" />
+            </span>
+            <span>
+              <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">{t('redesign.home.hero.chipA')}</span>
+              <span className="block text-xs font-bold text-slate-900">{t('redesign.home.hero.chipB')}</span>
+            </span>
+          </div>
+          <div className="absolute -right-3 top-1/3 z-20 hidden items-center gap-2.5 rounded-2xl border border-slate-200 bg-white px-3 py-2.5 shadow-xl md:flex lg:-right-6">
+            <span className="grid h-9 w-9 place-items-center rounded-lg bg-teal-50 text-teal-600">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z" /><path d="M19 12a3 3 0 00-3-3v6a3 3 0 003-3z" /></svg>
+            </span>
+            <span>
+              <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">{t('redesign.home.hero.chipC')}</span>
+              <span className="block text-xs font-bold text-slate-900">{t('redesign.home.hero.chipD')}</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative mx-auto mt-14 flex max-w-7xl flex-wrap items-center gap-x-8 gap-y-3 px-4 text-slate-500 sm:px-6 lg:px-8">
+        <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">{t('redesign.home.hero.reads')}</span>
+        {['EPUB', 'PDF', 'CBZ', 'CBR', 'RAR', 'ZIP', 'TXT'].map((format) => (
+          <span key={format} className="text-base font-black tracking-tight text-slate-700 sm:text-lg">{format}</span>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ProductFamily() {
+  const products = [
+    {
+      tag: 'Flagship',
+      icon: 'book',
+      name: 'BiblioFuse Reader',
+      desc: 'Native reader & library manager for personal e-book and comic collections.',
+      bullets: ['EPUB, PDF, CBZ, CBR, RAR, ZIP & TXT', 'Tags, ratings, progress & bookmarks', 'iCloud library across iPhone, iPad & Mac (Mac in review)'],
+      cta: 'Get on App Store',
+      href: appStoreUrl,
+      secondary: 'Google Play',
+      secondaryHref: playStoreUrl,
+      accent: 'blue',
+    },
+    {
+      tag: 'Free',
+      icon: 'globe',
+      name: 'BiblioFuse Web Tool',
+      desc: 'Convert, merge and compress e-book files in your browser - no install, fully on-device.',
+      bullets: ['EPUB / PDF / CBZ / ZIP merge & convert', 'Powered by WebAssembly - 100% private', 'Works on any platform with a browser'],
+      cta: 'Launch Web Tool',
+      href: 'https://bibliofuse-web.netlify.app/',
+      accent: 'teal',
+    },
+    {
+      tag: 'Mac · Windows',
+      icon: 'folder',
+      name: 'Archive Duplicate Scanner',
+      desc: 'Finds and removes duplicate comic book archives, photos, and files - even when renamed, recompressed, or saved in different folders.',
+      bullets: ['Perceptual hashing for CBZ/CBR/ZIP/RAR', 'Smart auto-select & safe-delete to Trash', 'Hash cache for fast repeat scans'],
+      cta: 'Mac App Store',
+      href: archiveMacUrl,
+      secondary: 'Microsoft Store',
+      secondaryHref: archiveMsUrl,
+      accent: 'orange',
+    },
+    {
+      tag: 'iOS · Mac · Windows',
+      icon: 'lock',
+      name: 'SmartDecrypt PDF ZIP',
+      desc: 'Unlocks password-protected PDFs and archives using saved filename patterns.',
+      bullets: ['PDF, ZIP & 7z support', 'Pattern match for recurring files', 'Passwords stored in system Keychain'],
+      cta: 'iOS · Mac App Store',
+      href: smartDecryptUrl,
+      secondary: 'Microsoft Store',
+      secondaryHref: smartDecryptMsUrl,
+      accent: 'violet',
+      dark: true,
+    },
+  ];
+
+  return (
+    <section id="family" className="bg-white py-20 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+          <div>
+            <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">The BiblioFuse family</div>
+            <h2 className="max-w-2xl text-[clamp(1.8rem,3.4vw,2.75rem)] font-black leading-[1.05] tracking-tight text-slate-950">
+              One ecosystem.
+              <br />
+              <span className="font-semibold text-slate-500">Tools for owning your files.</span>
+            </h2>
+          </div>
+          <p className="max-w-sm text-sm leading-6 text-slate-600">
+            Built by Modern Logic Tech Solutions for readers and collectors who keep their library on their own devices - not behind someone else's login.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {products.map((product) => (
+            <ProductCard key={product.name} {...product} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProductCard({ tag, icon, name, desc, bullets, cta, href, to, secondary, secondaryHref, accent, dark }) {
+  const accents = {
+    blue: 'bg-blue-50 text-blue-600',
+    teal: 'bg-teal-50 text-teal-600',
+    orange: 'bg-orange-50 text-orange-600',
+    violet: 'bg-violet-50 text-violet-600',
+  };
+  const ctaClass = dark ? 'bg-violet-600 text-white hover:bg-violet-700' : 'bg-[#0b1220] text-white hover:bg-[#152033]';
+  const cardClass = dark
+    ? 'bg-[#0b1220] text-white shadow-[0_28px_70px_-36px_rgba(15,23,42,0.9)]'
+    : 'border border-slate-200 bg-[#f7f9fe] text-slate-950';
+  const linkContent = (
+    <>
+      {cta}
+      <ArrowRightIcon />
+    </>
+  );
+
+  return (
+    <article className={`relative flex h-full flex-col rounded-3xl p-6 transition hover:-translate-y-1 hover:shadow-xl ${cardClass}`}>
+      {dark && <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_80%_0%,rgba(139,92,246,0.27),transparent_55%)]" />}
+      <div className="relative">
+        <div className="mb-5 flex items-center justify-between">
+          <span className={`grid h-11 w-11 place-items-center rounded-xl ${dark ? 'bg-white/10 text-violet-200' : accents[accent]}`}>
+            <ProductIcon kind={icon} />
+          </span>
+          <span className={`rounded-full px-2.5 py-1 text-[10px] font-black uppercase tracking-wider ${dark ? 'bg-white/10 text-violet-100' : accents[accent]}`}>{tag}</span>
+        </div>
+        <h3 className={`mb-2 text-xl font-black tracking-tight ${dark ? 'text-white' : 'text-slate-950'}`}>{name}</h3>
+        <p className={`mb-5 text-sm leading-relaxed ${dark ? 'text-white/70' : 'text-slate-600'}`}>{desc}</p>
+        <ul className="mb-6 space-y-2.5">
+          {bullets.map((bullet) => (
+            <li key={bullet} className={`flex items-start gap-2.5 text-sm ${dark ? 'text-white/85' : 'text-slate-800'}`}>
+              <svg className="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={dark ? '#a78bfa' : '#2d7cf6'} strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+              {bullet}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="relative mt-auto">
+        {to ? (
+          <Link to={to} className={`inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl px-4 text-sm font-semibold transition ${ctaClass}`}>
+            {linkContent}
+          </Link>
+        ) : (
+          <a href={href} target={href?.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer" className={`inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl px-4 text-sm font-semibold transition ${ctaClass}`}>
+            {linkContent}
+          </a>
+        )}
+        {secondary && (
+          <a href={secondaryHref} target="_blank" rel="noopener noreferrer" className={`mt-2 block rounded-lg py-1.5 text-center text-xs font-semibold transition ${dark ? 'text-white/70 hover:text-white' : 'text-ink-muted hover:text-ink'}`}>
+            also on {secondary} →
+          </a>
+        )}
+      </div>
+    </article>
+  );
+}
+
+function ReaderFeatureRow({ eyebrow, title, desc, bullets, image, alt, reverse, kind = 'iphone', accent = 'blue', footnote, badge }) {
+  const accentClasses = {
+    blue: 'bg-blue-50 text-blue-600',
+    teal: 'bg-teal-50 text-teal-600',
+    violet: 'bg-violet-50 text-violet-600',
+  };
+  const dotClasses = {
+    blue: 'bg-blue-600',
+    teal: 'bg-teal-500',
+    violet: 'bg-violet-600',
+  };
+
+  return (
+    <div className={`grid items-center gap-10 lg:grid-cols-2 lg:gap-16 ${reverse ? 'lg:[&>div:first-child]:order-2' : ''}`}>
+      <div>
+        <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">
+          <span className={`h-1.5 w-1.5 rounded-full ${dotClasses[accent]}`} />
+          {eyebrow}
+        </div>
+        <h3 className="mt-3 text-[clamp(1.6rem,2.8vw,2.25rem)] font-black leading-[1.05] tracking-tight text-slate-950">{title}</h3>
+        {badge && (
+          <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-blue-700">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z" /></svg>
+            {badge}
+          </div>
+        )}
+        <p className="mt-4 text-lg leading-relaxed text-slate-600">{desc}</p>
+        <ul className="mt-6 space-y-3">
+          {bullets.map((bullet) => (
+            <li key={bullet.title} className="flex items-start gap-3">
+              <span className={`mt-0.5 grid h-6 w-6 flex-shrink-0 place-items-center rounded-full ${accentClasses[accent]}`}>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+              </span>
+              <span className="leading-snug text-slate-900"><strong className="font-bold">{bullet.title}</strong> <span className="text-slate-600">- {bullet.body}</span></span>
+            </li>
+          ))}
+        </ul>
+        {footnote && <p className="mt-5 max-w-md border-l-2 border-slate-200 pl-3 text-xs leading-relaxed text-slate-500">{footnote}</p>}
+      </div>
+
+      <div className="relative">
+        {kind === 'iphone' ? (
+          <div className="relative mx-auto max-w-[360px]">
+            <div className="absolute -inset-12 -z-10 rounded-full bg-[radial-gradient(circle,rgba(45,124,246,0.16),transparent_70%)]" />
+            <img src={image} alt={alt} className="block w-full drop-shadow-2xl" />
+          </div>
+        ) : (
+          <div className="relative">
+            <div className="absolute -inset-10 -z-10 rounded-3xl bg-[radial-gradient(circle,rgba(45,124,246,0.16),transparent_70%)]" />
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl">
+              <div className="flex h-8 items-center gap-1.5 border-b border-slate-200 bg-slate-50 px-3">
+                <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />
+                <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
+                <span className="h-3 w-3 rounded-full bg-[#28c840]" />
+              </div>
+              <img src={image} alt={alt} className="block w-full" />
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function ReaderSection() {
+  return (
+    <section id="reader" className="scroll-mt-16 bg-[#f5f8ff] py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto mb-20 max-w-2xl text-center">
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">BiblioFuse Reader</div>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">Built for long reading sessions.</h2>
+          <p className="mt-5 text-lg leading-relaxed text-slate-600">
+            A focused reader with the library tools you actually use: formats, folders, tags, ratings, progress, and bookmarks. The same library on iPhone, iPad and Mac, kept in sync through your iCloud.
+          </p>
+        </div>
+
+        <div className="space-y-24 lg:space-y-32">
+          <ReaderFeatureRow
+            eyebrow="Library"
+            title="One shelf for every format."
+            desc="EPUB, PDF, CBZ, CBR, RAR, ZIP and TXT - read in a single library with folders, search and recent books. Import from Files, document picker, or your iCloud Drive."
+            bullets={[
+              { title: 'Tags & ratings', body: 'organize without folders if you want to.' },
+              { title: 'Reading progress', body: 'every book remembers where you left off.' },
+              { title: 'iCloud cross-device', body: 'pick up on iPhone where you stopped on iPad.' },
+            ]}
+            image={`${imageBase}/iphone/2.png`}
+            alt="BiblioFuse library with tags, ratings and reading progress"
+          />
+
+          <ReaderFeatureRow
+            reverse
+            eyebrow="Read your way"
+            title="TTS, auto-scroll & peek zoom."
+            desc="A distraction-free reader with the controls that matter for long sessions. Text-to-speech for EPUB and TXT. Auto-scroll for comics and webtoons. Peek zoom to inspect a panel without losing your place."
+            bullets={[
+              { title: 'Text-to-speech', body: 'hands-free narration for EPUB and TXT.' },
+              { title: 'Auto-scroll', body: 'paged or continuous, tuned for image archives.' },
+              { title: 'Peek zoom', body: 'double-tap to inspect dense panels and small text.' },
+            ]}
+            image={`${imageBase}/iphone/3.png`}
+            alt="BiblioFuse reading view with TTS, auto-scroll and peek zoom"
+            accent="teal"
+          />
+
+          <ReaderFeatureRow
+            eyebrow="Mac streams to mobile"
+            title="Library hub. Streams to your iPhone."
+            badge="No third-party server · No subscription"
+            desc="On Mac, BiblioFuse becomes a desktop library hub: manage local folders, iCloud folders and SMB network shares in a split-view library/reader interface. Then stream books straight to BiblioFuse on iPhone and iPad over local Wi-Fi at home, or remotely over 5G when you're out."
+            bullets={[
+              { title: 'Local Wi-Fi streaming', body: 'instant browse from any Mac source.' },
+              { title: 'Remote 5G streaming', body: 'open your home library from anywhere with Tailscale.' },
+              { title: 'Local, iCloud & SMB sources', body: 'one Mac library, every folder you already have.' },
+              { title: 'Optional PIN', body: 'lock streaming access on shared networks.' },
+            ]}
+            image={`${imageBase}/mac/1.png`}
+            alt="BiblioFuse Mac library with split-view reader"
+            kind="mac"
+            footnote="Remote access requires iCloud signed in and Tailscale connected on both Mac and iOS."
+          />
+        </div>
+
+        <ToolsHighlight />
+      </div>
+    </section>
+  );
+}
+
+function ToolsHighlight() {
+  const tools = [
+    {
+      title: 'Resize to shortest side',
+      body: 'Set a target shortest dimension and re-page every image in your archive.',
+      kpi: '1080 px',
+      label: 'Typical preset',
+      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 9V5a1 1 0 011-1h4" /><path d="M20 15v4a1 1 0 01-1 1h-4" /><path d="M9 9h6v6H9z" /></svg>,
+    },
+    {
+      title: 'Convert to WebP or JPG',
+      body: 'Re-encode pages to WebP or JPG for smaller archives that still look crisp.',
+      kpi: 'Up to 50%',
+      label: 'Smaller files',
+      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><circle cx="9" cy="11" r="1.5" /><path d="M21 17l-5-5-9 9" /></svg>,
+    },
+    {
+      title: 'Merge chapters & series',
+      body: 'Combine chapters, volumes or split downloads into one clean CBZ, ZIP or PDF.',
+      kpi: 'Many to 1',
+      label: 'One pass',
+      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3v6a4 4 0 004 4h4" /><path d="M16 21l3-3-3-3" /><path d="M5 13v8" /></svg>,
+    },
+  ];
+
+  return (
+    <div className="mt-24 rounded-3xl border border-slate-200 bg-white p-8 shadow-xl sm:p-10">
+      <div className="mb-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <span className="inline-flex self-start items-center gap-2 rounded-full bg-teal-50 px-3 py-1.5 text-xs font-black uppercase tracking-wider text-teal-700">Built-in tools</span>
+        <h4 className="text-2xl font-black tracking-tight text-slate-950">Compress & merge without leaving the app.</h4>
+      </div>
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+        {tools.map((tool) => (
+          <article key={tool.title} className="flex flex-col rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <div className="mb-4 flex items-center justify-between">
+              <span className="grid h-10 w-10 place-items-center rounded-xl bg-teal-50 text-teal-700">{tool.icon}</span>
+              <span className="text-right">
+                <span className="block text-lg font-black tracking-tight text-slate-950">{tool.kpi}</span>
+                <span className="block text-[10px] uppercase tracking-wider text-slate-400">{tool.label}</span>
+              </span>
+            </div>
+            <h5 className="mb-1.5 font-black text-slate-950">{tool.title}</h5>
+            <p className="text-sm leading-relaxed text-slate-600">{tool.body}</p>
+          </article>
+        ))}
+      </div>
+      <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-slate-200 pt-6 text-xs text-slate-500">
+        <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">Supports</span>
+        {['EPUB', 'PDF', 'CBZ', 'CBR', 'RAR', 'ZIP'].map((format) => (
+          <span key={format} className="text-base font-black tracking-tight text-slate-800">{format}</span>
+        ))}
+        <span className="ml-auto text-xs text-slate-400">All processing runs on-device. Nothing uploaded.</span>
+      </div>
+    </div>
+  );
+}
+
+function ComparisonTable({ lang }) {
+  const { t } = useTranslation();
+  const table = t('redesign.home.table', { returnObjects: true });
+  const editions = [
+    { key: 'apple', name: table.editions.apple, subtitle: table.subtitles.apple, badge: table.badges.universal, tint: 'blue' },
+    { key: 'android', name: table.editions.android, subtitle: table.subtitles.android, badge: table.badges.edition, tint: 'teal' },
+    { key: 'web', name: table.editions.web, subtitle: table.subtitles.web, badge: table.badges.free, tint: 'violet' },
+    { key: 'pc', name: table.editions.pc, subtitle: table.subtitles.pc, badge: table.badges.edition, tint: 'orange' },
+  ];
+  const rows = table.rows.map((row, index) => ({
+    label: row[0],
+    highlight: index === 6,
+    strong: index === 3 ? 'green' : undefined,
+    cells: {
+      apple: row[1],
+      android: row[2],
+      web: row[3],
+      pc: row[4],
+    },
+  }));
+
+  return (
+    <section id="comparison-table" className="bg-white py-20 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">{table.eyebrow}</div>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">{table.title}</h2>
+          <p className="mt-4 text-slate-600">{table.desc}</p>
+        </div>
+        <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-xl">
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[980px] table-fixed border-collapse">
+              <colgroup>
+                <col className="w-[220px]" />
+                <col className="w-[190px]" />
+                <col className="w-[190px]" />
+                <col className="w-[190px]" />
+                <col className="w-[190px]" />
+              </colgroup>
+              <thead>
+                <tr className="bg-white">
+                  <th className="px-6 py-5 text-left text-xs font-bold uppercase tracking-wider text-slate-400">{table.feature}</th>
+                  {editions.map((edition) => (
+                    <th key={edition.key} className="px-4 py-5 text-center align-bottom">
+                      <div className="flex flex-col items-center gap-1">
+                        <div className={`inline-flex rounded-full px-2 py-0.5 text-[10px] font-black uppercase tracking-wider ${tintClass(edition.tint)}`}>{edition.badge}</div>
+                        <div className="text-base font-black tracking-tight text-slate-950">{edition.name}</div>
+                        <div className="text-xs text-slate-500">{edition.subtitle}</div>
+                      </div>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((row) => (
+                  <tr key={row.label} className={`border-t border-slate-200 ${row.highlight ? 'bg-blue-50/70' : 'bg-white/70'}`}>
+                    <td className="px-6 py-4 align-top text-sm font-bold text-slate-950">
+                      <div className="flex items-center gap-2">
+                        {row.label}
+                        {row.highlight && <span className="rounded bg-blue-600 px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-white">{table.unique}</span>}
+                      </div>
+                    </td>
+                    {editions.map((edition) => (
+                      <td key={edition.key} className="px-4 py-4 text-center align-top text-sm">
+                        {renderLocalizedTableCell(row.cells[edition.key], row.strong)}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+                <tr className="border-t border-slate-200 bg-white">
+                  <td className="px-6 py-5 align-middle text-sm font-bold text-slate-950">{table.where}</td>
+                  <td className="px-4 py-5 text-center align-middle">
+                    <div className="flex flex-col items-center gap-1.5">
+                      <StoreBadge type="apple" size="sm" />
+                      <span className="text-[10px] text-slate-400">{table.iosNote}</span>
+                    </div>
+                  </td>
+                  <td className="px-4 py-5 text-center align-middle"><StoreBadge type="play" size="sm" /></td>
+                  <td className="px-4 py-5 text-center align-middle">
+                    <WebToolButton lang={lang} compact>{t('redesign.common.launch')}</WebToolButton>
+                  </td>
+                  <td className="px-4 py-5 text-center align-middle">
+                    <div className="flex flex-col items-center gap-1.5">
+                      <MicrosoftStoreImageBadge href="https://apps.microsoft.com/detail/9p7b02538tfq" />
+                      <span className="text-[10px] text-slate-400">{table.cbz}</span>
+                      <MicrosoftStoreImageBadge href="https://apps.microsoft.com/detail/9pdllhdz6kkl" />
+                      <span className="text-[10px] text-slate-400">{table.epub}</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function tintClass(tint) {
+  if (tint === 'blue') return 'bg-blue-50 text-blue-700';
+  if (tint === 'teal') return 'bg-teal-50 text-teal-700';
+  if (tint === 'violet') return 'bg-violet-50 text-violet-700';
+  return 'bg-orange-50 text-orange-700';
+}
+
+function renderTableCell(cell, strong) {
+  if (typeof cell === 'string') return <span className={`leading-snug ${strong === 'green' ? 'font-semibold text-emerald-600' : 'text-slate-800'}`}>{cell}</span>;
+  if (cell?.yes === true) {
+    return (
+      <div className="flex flex-col items-center gap-1 text-center">
+        {cell.big ? <span className="font-bold text-slate-950">{cell.big}</span> : <CheckIcon />}
+        {cell.note && <span className="text-[11px] leading-tight text-slate-500">{cell.note}</span>}
+      </div>
+    );
+  }
+  if (cell?.yes === false) {
+    return (
+      <div className="flex flex-col items-center gap-1 text-center">
+        <DashIcon />
+        {cell.note && <span className="text-[11px] leading-tight text-slate-500">{cell.note}</span>}
+      </div>
+    );
+  }
+  return null;
+}
+
+function renderLocalizedTableCell(cell, strong) {
+  if (cell === '-') return <DashIcon />;
+  const [big, note] = String(cell).split('|');
+  return (
+    <span className={`leading-snug ${strong === 'green' ? 'font-semibold text-emerald-600' : 'text-slate-800'}`}>
+      <span className={note ? 'block font-bold text-slate-950' : ''}>{big}</span>
+      {note && <span className="mt-1 block text-[11px] leading-tight text-slate-500">{note}</span>}
+    </span>
+  );
+}
+
+function ArchiveScannerSection() {
+  return (
+    <section id="archive" className="relative overflow-hidden py-24 sm:py-28">
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,#FFFFFF_0%,#FFF7EE_60%,#FFFFFF_100%)]" />
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
+          <div>
+            <div className="inline-flex items-center gap-2 rounded-full bg-warm/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-warm-deep">
+              <span className="h-1.5 w-1.5 rounded-full bg-warm" />
+              Sister app · Mac & Windows
+            </div>
+            <h2 className="font-display tighter mt-5 text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.05] text-ink">
+              Find duplicate archives.
+              <br />
+              <span className="text-warm-deep">Even after renaming.</span>
+            </h2>
+            <p className="mt-5 max-w-lg text-lg leading-relaxed text-ink-muted">
+              Archive Duplicate Scanner finds and removes duplicate comic book archives, photos, and files - even when they have been renamed, recompressed, or saved in different folders.
+            </p>
+
+            <div className="mt-8 grid max-w-lg gap-4 sm:grid-cols-2">
+              {[
+                { title: 'Comic archive scanning', body: 'CBZ, CBR, ZIP and RAR using perceptual hashing.' },
+                { title: 'Photo duplicate detection', body: 'JPG, PNG, HEIC, WEBP, BMP and GIF.' },
+                { title: 'Smart auto-select', body: 'Keep largest, smallest, newest, oldest, or most pages.' },
+                { title: 'Safe deletion', body: 'Marked files move to system Trash only.' },
+              ].map((feature) => (
+                <div key={feature.title} className="flex items-start gap-2.5">
+                  <span className="mt-0.5 grid h-5 w-5 flex-shrink-0 place-items-center rounded-md bg-warm/15 text-warm-deep">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                  </span>
+                  <span>
+                    <span className="block text-sm font-semibold text-ink">{feature.title}</span>
+                    <span className="block text-xs leading-snug text-ink-muted">{feature.body}</span>
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <AppStoreImageBadge href={archiveMacUrl} alt="Download Archive Duplicate Scanner on the Mac App Store" size="lg" />
+              <MicrosoftStoreImageBadge href={archiveMsUrl} size="lg" />
+            </div>
+
+            <p className="mt-5 text-xs text-ink-soft">
+              Free usage is available forever for scans up to 1,000 files. A 7-day trial unlocks full access, and a one-time purchase unlocks unlimited use with no subscription.
+            </p>
+          </div>
+
+          <div className="relative">
+            <div className="absolute -inset-10 -z-10 rounded-3xl bg-[radial-gradient(closest-side,rgba(255,138,58,.25),transparent)] opacity-60" />
+            <div className="overflow-hidden rounded-2xl border border-line bg-white shadow-deep">
+              <img src="/image/offline-apps/archivescan/v1.png" alt="Archive Duplicate Scanner configure and start scan" className="block w-full" />
+            </div>
+
+            <div className="absolute -bottom-6 left-1/2 hidden -translate-x-1/2 items-center gap-6 rounded-2xl border border-line bg-white px-5 py-3 shadow-float sm:flex">
+              <div>
+                <div className="font-display tighter text-xl font-bold text-ink">90%</div>
+                <div className="text-[10px] uppercase tracking-wider text-ink-soft">Default threshold</div>
+              </div>
+              <div className="h-8 w-px bg-line" />
+              <div>
+                <div className="font-display tighter text-xl font-bold text-ink">x3</div>
+                <div className="text-[10px] uppercase tracking-wider text-ink-soft">Pages sampled</div>
+              </div>
+              <div className="h-8 w-px bg-line" />
+              <div>
+                <div className="font-display tighter text-xl font-bold text-emerald-600">100% local</div>
+                <div className="text-[10px] uppercase tracking-wider text-ink-soft">No cloud, no tracking</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SmartDecryptSection() {
+  return (
+    <section
+      id="smartdecrypt"
+      className="relative isolate overflow-hidden py-24 text-white sm:py-28"
+      style={{
+        background:
+          'radial-gradient(60% 80% at 20% 0%, rgba(45,124,246,.2), transparent 55%), radial-gradient(70% 80% at 90% 100%, rgba(139,92,246,.28), transparent 55%), linear-gradient(180deg, #0A0F1F 0%, #050714 100%)',
+      }}
+    >
+      <div className="grain absolute inset-0 -z-10 opacity-[0.08]" />
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
+          <div>
+            <div className="inline-flex items-center gap-2 rounded-full bg-violet/15 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-[#C4B5FD]">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#A78BFA]" />
+              Sister app · iOS · Mac · Windows
+            </div>
+            <h2 className="font-display tighter mt-5 text-[clamp(2rem,4.5vw,3.25rem)] font-bold leading-[1.02] text-white">
+              Drop the file.
+              <br />
+              <span className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">It unlocks itself.</span>
+            </h2>
+            <p className="mt-5 max-w-lg text-lg leading-relaxed text-white/70">
+              SmartDecrypt helps you unlock password-protected PDFs and archives without hunting through notes, messages, or old emails for the right password.
+            </p>
+
+            <div className="mt-8 grid max-w-lg gap-4 sm:grid-cols-2">
+              {[
+                { title: 'PDF · ZIP · 7z', body: 'Unlock protected PDFs and extract ZIP/7z archives.' },
+                { title: 'Saved patterns', body: 'Match recurring filename formats automatically.' },
+                { title: 'Batch upgrade', body: 'One-time Pro unlocks batch loading and password cycling.' },
+                { title: 'Keychain-safe', body: 'Passwords stay in the Apple Keychain.' },
+              ].map((feature) => (
+                <div key={feature.title} className="flex items-start gap-2.5">
+                  <span className="mt-0.5 grid h-5 w-5 flex-shrink-0 place-items-center rounded-md bg-violet-400/20 text-violet-200">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                  </span>
+                  <span>
+                    <span className="block text-sm font-semibold text-white">{feature.title}</span>
+                    <span className="block text-xs leading-snug text-white/60">{feature.body}</span>
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <AppStoreImageBadge href={smartDecryptUrl} alt="Download SmartDecrypt PDF ZIP on the App Store" size="lg" />
+              <MicrosoftStoreImageBadge href={smartDecryptMsUrl} size="lg" />
+            </div>
+
+            <p className="mt-5 text-xs text-white/50">
+              Free users can unlock one file at a time with pattern matching. SmartDecrypt Pro is a one-time universal purchase that unlocks batch file loading and automatic password cycling on iOS and macOS.
+            </p>
+          </div>
+
+          <div className="relative">
+            <div className="absolute -inset-12 -z-10 rounded-full bg-[radial-gradient(closest-side,rgba(167,139,250,.4),transparent)] opacity-70" />
+            <div className="hairline-dark rounded-3xl bg-[linear-gradient(160deg,rgba(255,255,255,.04),rgba(255,255,255,.01))] p-8">
+              <div className="grid grid-cols-3 items-center gap-3">
+                {[
+                  { n: 1, label: 'Drop files', icon: 'file' },
+                  { n: 2, label: 'Match pattern', icon: 'wand' },
+                  { n: 3, label: 'Unlocked', icon: 'unlock' },
+                ].map((step, index) => (
+                  <div key={step.n} className="flex flex-col items-center text-center">
+                    <div className={`relative mb-2 grid h-14 w-14 place-items-center rounded-2xl ${index === 0 ? 'bg-blue-400/20' : index === 1 ? 'bg-violet-400/25' : 'bg-emerald-400/20'}`}>
+                      <div className={`absolute -right-1 -top-1 grid h-5 w-5 place-items-center rounded-full text-[10px] font-bold text-night ${index === 0 ? 'bg-blue-400' : index === 1 ? 'bg-violet-400' : 'bg-emerald-400'}`}>{step.n}</div>
+                      <SmartStepIcon kind={step.icon} />
+                    </div>
+                    <div className="text-xs font-semibold text-white">{step.label}</div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="hairline-dark mt-7 rounded-2xl bg-white/[.03] p-4">
+                <div className="mb-3 flex items-center justify-between">
+                  <div className="text-xs font-semibold uppercase tracking-wider text-white/50">Queue (3)</div>
+                  <div className="text-xs text-white/40">Auto-matching active</div>
+                </div>
+                <div className="space-y-2">
+                  {[
+                    { name: 'statement-2026-04.pdf', state: 'unlocked' },
+                    { name: 'payslip-2026-04.zip', state: 'matching' },
+                    { name: 'archive-trusted.7z', state: 'queued' },
+                  ].map((file) => (
+                    <div key={file.name} className="flex items-center justify-between gap-3 rounded-xl bg-white/[.03] p-2.5">
+                      <div className="flex min-w-0 items-center gap-2.5">
+                        <span className="grid h-7 w-7 flex-shrink-0 place-items-center rounded-lg bg-blue-400/10 text-blue-300">
+                          <span className="text-[9px] font-bold">{file.name.split('.').pop().toUpperCase()}</span>
+                        </span>
+                        <span className="truncate text-sm text-white">{file.name}</span>
+                      </div>
+                      <span className={`flex-shrink-0 rounded-full px-2 py-1 text-[10px] font-bold uppercase tracking-wider ${file.state === 'unlocked' ? 'bg-emerald-400/15 text-emerald-400' : file.state === 'matching' ? 'bg-violet-400/20 text-violet-200' : 'bg-white/[.06] text-white/50'}`}>
+                        {file.state}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SmartStepIcon({ kind }) {
+  const props = { width: 22, height: 22, viewBox: '0 0 24 24', fill: 'none', stroke: '#fff', strokeWidth: 2.2, strokeLinecap: 'round', strokeLinejoin: 'round' };
+  if (kind === 'file') return <svg {...props}><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z" /><path d="M14 3v5h5" /></svg>;
+  if (kind === 'wand') return <svg {...props}><path d="M15 4l5 5" /><path d="M3 21l12-12" /><path d="M18 11l3-3" /><path d="M5 4l1 1" /><path d="M19 14l1 1" /></svg>;
+  if (kind === 'unlock') return <svg {...props}><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 017.5-2" /></svg>;
+  return null;
+}
+
+function PrivacyStrip() {
+  const items = [
+    { title: 'No ads', body: 'Enjoy uninterrupted reading without advertisements.', tint: 'bg-rose-50 text-rose-600', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18.36 18.36A9 9 0 015.64 5.64m12.72 12.72L5.64 5.64" /></svg> },
+    { title: 'No tracking', body: 'We do not collect or sell your reading data.', tint: 'bg-emerald-50 text-emerald-600', icon: <ProductIcon kind="lock" /> },
+    { title: 'Cloud sync', body: 'Sync your library across Apple devices with iCloud.', tint: 'bg-blue-50 text-blue-600', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" /></svg> },
+    { title: 'Smart compression', body: 'Reduce file size and save storage without leaving the app.', tint: 'bg-violet-50 text-violet-600', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7" /><path d="M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4" /></svg> },
+  ];
+
+  return (
+    <section id="about" className="bg-[#f5f8ff] py-20 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">Why BiblioFuse</div>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">Built on a few simple principles.</h2>
+        </div>
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {items.map((item) => (
+            <article key={item.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition hover:shadow-xl">
+              <div className={`mb-4 grid h-11 w-11 place-items-center rounded-xl ${item.tint}`}>{item.icon}</div>
+              <h3 className="mb-1.5 font-black text-slate-950">{item.title}</h3>
+              <p className="text-sm leading-relaxed text-slate-600">{item.body}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FinalCTA({ lang }) {
+  return (
+    <section className="bg-white py-20 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-br from-[#2d7cf6] to-[#14c2a6] p-10 text-white sm:p-16">
+          <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(rgba(255,255,255,.6)_1px,transparent_1px)] [background-size:24px_24px]" />
+          <img src={logo} alt="" className="absolute bottom-[-40px] right-[-20px] hidden w-80 rounded-[52px] opacity-20 md:block" />
+          <div className="relative max-w-2xl">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1.5 text-xs font-bold uppercase tracking-wider">
+              <span className="h-1.5 w-1.5 rounded-full bg-white" />
+              Start here
+            </div>
+            <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-black leading-[1.02] tracking-tight">Your library. Your device. Your rules.</h2>
+            <p className="mt-4 text-lg leading-relaxed text-white/90">
+              Start with the Reader. Add the utilities when you need them. Everything stays on-device.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <StoreBadge type="apple" />
+              <StoreBadge type="play" />
+              <WebToolButton lang={lang}>Try the Web Tool</WebToolButton>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function StickyDownloadBar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 900);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return (
+    <div className={`fixed bottom-5 left-1/2 z-30 -translate-x-1/2 transition-all ${scrolled ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-6 opacity-0'}`}>
+      <div className="flex max-w-[calc(100vw-2rem)] items-center gap-2 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-3 py-2.5 text-white shadow-2xl backdrop-blur-md sm:gap-3 sm:px-4">
+        <img src={logo} alt="" className="h-7 w-7 rounded-lg" />
+        <span className="hidden text-sm font-bold sm:inline">Get BiblioFuse</span>
+        <StoreBadge type="apple" size="sm" />
+        <StoreBadge type="play" size="sm" />
+      </div>
+    </div>
+  );
+}
+
+const Home = () => {
+  const { lang = 'en' } = useParams();
+
+  return (
+    <div className="bf-home min-h-screen overflow-x-hidden bg-white text-slate-950">
+      <SEO
+        title="BiblioFuse - E-book Reader, Library Manager & Compression Tools"
+        description="BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web."
+        canonical="/"
+      />
+      <Hero lang={lang} />
+      <ProductFamily lang={lang} />
+      <ReaderSection />
+      <ComparisonTable lang={lang} />
+      <ArchiveScannerSection />
+      <SmartDecryptSection />
+      <PrivacyStrip />
+      <FinalCTA lang={lang} />
+      <StickyDownloadBar />
+    </div>
+  );
 };
 
 export default Home;

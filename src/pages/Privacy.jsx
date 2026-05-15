@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 
 const Privacy = () => {
     const { lang } = useParams();
-    const { i18n } = useTranslation();
+    const { i18n, t } = useTranslation();
     const [content, setContent] = useState('');
     const [loading, setLoading] = useState(true);
 
@@ -31,7 +31,7 @@ const Privacy = () => {
                     const text = await response.text();
                     setContent(text);
                 } catch (fallbackError) {
-                    setContent('# Privacy Policy\n\nError loading privacy policy. Please try again later.');
+                    setContent(`# ${t('redesign.privacyPage.title')}\n\n${t('redesign.privacyPage.error')}`);
                 }
             } finally {
                 setLoading(false);
@@ -44,24 +44,33 @@ const Privacy = () => {
     return (
         <>
             <SEO
-                title="Privacy Policy"
-                description="BiblioFuse Reader privacy policy - Learn how we protect your data and privacy."
+                title={t('redesign.privacyPage.title')}
+                description={t('seo.reader.desc')}
             />
-            <div className="min-h-screen pt-20 px-4 pb-12">
-                <div className="max-w-4xl mx-auto">
+            <div className="min-h-screen bg-[#F6F8FC] px-4 pb-20 pt-28 text-slate-950 sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-4xl">
+                    <div className="mb-10 text-center">
+                        <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">{t('redesign.privacyPage.eyebrow')}</div>
+                        <h1 className="font-display text-[clamp(2.4rem,5vw,4.5rem)] font-black leading-[0.98] tracking-tight text-slate-950">{t('redesign.privacyPage.title')}</h1>
+                        <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
+                            {t('redesign.privacyPage.desc')}
+                        </p>
+                    </div>
+
                     {loading ? (
-                        <div className="flex items-center justify-center py-20">
-                            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
+                        <div className="flex items-center justify-center rounded-3xl border border-slate-200 bg-white py-24 shadow-xl">
+                            <div className="h-12 w-12 animate-spin rounded-full border-4 border-blue-100 border-b-blue-600"></div>
                         </div>
                     ) : (
-                        <div className="prose prose-invert prose-lg max-w-none
-                            prose-headings:text-white prose-headings:font-bold
-                            prose-h1:text-4xl prose-h1:mb-6
-                            prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4
-                            prose-p:text-slate-300 prose-p:leading-relaxed
-                            prose-a:text-blue-400 prose-a:no-underline hover:prose-a:text-blue-300
-                            prose-strong:text-white prose-strong:font-semibold
-                            prose-ul:text-slate-300 prose-li:my-1
+                        <div className="prose prose-lg max-w-none rounded-3xl border border-slate-200 bg-white p-7 shadow-xl sm:p-10
+                            prose-headings:font-display prose-headings:font-black prose-headings:tracking-tight prose-headings:text-slate-950
+                            prose-h1:hidden
+                            prose-h2:mt-10 prose-h2:border-t prose-h2:border-slate-200 prose-h2:pt-8 prose-h2:text-2xl
+                            first:prose-h2:mt-0 first:prose-h2:border-t-0 first:prose-h2:pt-0
+                            prose-p:leading-relaxed prose-p:text-slate-600
+                            prose-a:font-semibold prose-a:text-blue-600 prose-a:no-underline hover:prose-a:text-blue-700
+                            prose-strong:font-bold prose-strong:text-slate-950
+                            prose-ul:text-slate-600 prose-li:my-1 prose-li:marker:text-blue-500
                         ">
                             <ReactMarkdown>{content}</ReactMarkdown>
                         </div>

@@ -1,171 +1,369 @@
 {
-    "nav": {
-        "home": "Beranda",
-        "reader": "Pembaca",
-        "webapp": "Aplikasi Web",
-        "about": "Tentang"
+  "nav": {
+    "home": "Beranda",
+    "reader": "Pembaca",
+    "webapp": "Aplikasi Web",
+    "about": "Tentang",
+    "tools": "Alat",
+    "getApp": "Dapatkan app"
+  },
+  "home": {
+    "hero": {
+      "title": "BiblioFuse",
+      "subtitle": "Ekosistem E-Book Utama. Alat untuk mengelola, Pembaca untuk menikmati.",
+      "btn": {
+        "ios": "iOS App Store",
+        "android": "Google Play",
+        "web": "Luncurkan Alat Web",
+        "pc": "Alat PC"
+      }
     },
-    "home": {
-        "hero": {
-            "title": "BiblioFuse",
-            "subtitle": "Ekosistem E-Book Utama. Alat untuk mengelola, Pembaca untuk menikmati.",
-            "btn": {
-                "ios": "iOS App Store",
-                "android": "Google Play",
-                "web": "Luncurkan Alat Web",
-                "pc": "Alat PC"
-            }
+    "warning": {
+      "title": "Unduh hanya dari sumber resmi",
+      "message": "Aplikasi BiblioFuse hanya didistribusikan melalui Apple App Store, Google Play Store, dan Microsoft Store. Jangan pernah mengunduh dari situs web tidak resmi untuk melindungi perangkat Anda dari malware dan ancaman keamanan."
+    },
+    "table": {
+      "title": "Perbandingan Edisi",
+      "headers": {
+        "feature": "Fitur",
+        "ios": "Pembaca iOS",
+        "android": "Pembaca Android",
+        "web": "Alat Web",
+        "pc": "Alat PC"
+      },
+      "rows": {
+        "primary": {
+          "name": "Fungsi Utama",
+          "v_read": "Membaca, Manajemen Perpustakaan (Tag/Peringkat), Kompresi/Penggabungan",
+          "v_create": "Kompresi/Penggabungan di Mana Saja",
+          "v_heavy": "Kompresi/Penggabungan Kelas Berat"
         },
-        "warning": {
-            "title": "Unduh hanya dari sumber resmi",
-            "message": "Aplikasi BiblioFuse hanya didistribusikan melalui Apple App Store, Google Play Store, dan Microsoft Store. Jangan pernah mengunduh dari situs web tidak resmi untuk melindungi perangkat Anda dari malware dan ancaman keamanan."
+        "platform": {
+          "name": "Platform",
+          "v_ios": "iPhone/iPad",
+          "v_android": "Ponsel/Tablet Android",
+          "v_web": "Browser (Semua Perangkat)",
+          "v_pc": "Windows (Exe)"
         },
-        "table": {
-            "title": "Perbandingan Edisi",
-            "headers": {
-                "feature": "Fitur",
-                "ios": "Pembaca iOS",
-                "android": "Pembaca Android",
-                "web": "Alat Web",
-                "pc": "Alat PC"
-            },
-            "rows": {
-                "primary": {
-                    "name": "Fungsi Utama",
-                    "v_read": "Membaca, Manajemen Perpustakaan (Tag/Peringkat), Kompresi/Penggabungan",
-                    "v_create": "Kompresi/Penggabungan di Mana Saja",
-                    "v_heavy": "Kompresi/Penggabungan Kelas Berat"
-                },
-                "platform": {
-                    "name": "Platform",
-                    "v_ios": "iPhone/iPad",
-                    "v_android": "Ponsel/Tablet Android",
-                    "v_web": "Browser (Semua Perangkat)",
-                    "v_pc": "Windows (Exe)"
-                },
-                "processing": {
-                    "name": "Pemrosesan",
-                    "v_native": "Native di Perangkat",
-                    "v_wasm": "WASM Lokal (Privat)",
-                    "v_win": "Native Windows"
-                },
-                "convert": {
-                    "name": "Konversi/Gabung",
-                    "v_mobile": "(EPUB/CBZ)",
-                    "v_web": "(EPUB/CBZ/PDF)",
-                    "v_pc_1": "(Folder/CBZ/PDF)",
-                    "v_pc_2": "(EPUB)"
-                },
-                "reader_feat": {
-                    "name": "Fitur Pembaca",
-                    "v_advanced": "✔ (Lanjutan)",
-                    "v_basic": "Pratinjau Dasar"
-                },
-                "cloud": {
-                    "name": "Backup DB Otomatis",
-                    "v_icloud": "✔ (iCloud)",
-                    "v_gdrive": "✔ (lokal)"
-                },
-                "bookshelf": {
-                    "name": "Rak Buku iCloud",
-                    "v_ios": "✔ (lintas perangkat)"
-                },
-                "lang": {
-                    "name": "Dukungan Bahasa",
-                    "v_12": "12 Bahasa",
-                    "v_12_list": "(Inggris, Spanyol, Prancis, Belanda, Portugis, Rusia, Mandarin Sederhana, Jepang, Korea, Indonesia, Melayu)",
-                    "v_6": "6 Bahasa",
-                    "v_6_list": "(Inggris, Spanyol, Prancis, Belanda, Portugis, Mandarin Sederhana)",
-                    "v_pc": "Hanya Inggris"
-                },
-                "avail": {
-                    "name": "Ketersediaan",
-                    "v_review": "Dalam Tinjauan",
-                    "v_cbz": "Ver. CBZ",
-                    "v_epub": "Ver. EPUB"
-                }
-            }
+        "processing": {
+          "name": "Pemrosesan",
+          "v_native": "Native di Perangkat",
+          "v_wasm": "WASM Lokal (Privat)",
+          "v_win": "Native Windows"
+        },
+        "convert": {
+          "name": "Konversi/Gabung",
+          "v_mobile": "(EPUB/CBZ)",
+          "v_web": "(EPUB/CBZ/PDF)",
+          "v_pc_1": "(Folder/CBZ/PDF)",
+          "v_pc_2": "(EPUB)"
+        },
+        "reader_feat": {
+          "name": "Fitur Pembaca",
+          "v_advanced": "✔ (Lanjutan)",
+          "v_basic": "Pratinjau Dasar"
+        },
+        "cloud": {
+          "name": "Backup DB Otomatis",
+          "v_icloud": "✔ (iCloud)",
+          "v_gdrive": "✔ (lokal)"
+        },
+        "bookshelf": {
+          "name": "Rak Buku iCloud",
+          "v_ios": "✔ (lintas perangkat)"
+        },
+        "lang": {
+          "name": "Dukungan Bahasa",
+          "v_12": "12 Bahasa",
+          "v_12_list": "(Inggris, Spanyol, Prancis, Belanda, Portugis, Rusia, Mandarin Sederhana, Jepang, Korea, Indonesia, Melayu)",
+          "v_6": "6 Bahasa",
+          "v_6_list": "(Inggris, Spanyol, Prancis, Belanda, Portugis, Mandarin Sederhana)",
+          "v_pc": "Hanya Inggris"
+        },
+        "avail": {
+          "name": "Ketersediaan",
+          "v_review": "Dalam Tinjauan",
+          "v_cbz": "Ver. CBZ",
+          "v_epub": "Ver. EPUB"
         }
+      }
+    }
+  },
+  "reader": {
+    "title": "Pengalaman Membaca Generasi Berikutnya",
+    "subtitle": "Dibangun untuk kecepatan, kenyamanan, dan fleksibilitas. Aplikasi BiblioFuse Reader beradaptasi dengan cara Anda ingin membaca.",
+    "features": {
+      "immersive": {
+        "title": "Membaca Imersif",
+        "desc": "Antarmuka bebas gangguan dengan tema dan mode membaca yang dapat disesuaikan."
+      },
+      "webtoon": {
+        "title": "Mode Webtoon Berkelanjutan",
+        "desc": "Nikmati komik dan manga dalam gulungan vertikal mulus, dioptimalkan untuk layar seluler. Gunakan gulir otomatis untuk membaca hands-free."
+      },
+      "peek": {
+        "title": "Zoom Cepat (Peek)",
+        "desc": "Ketuk dua kali untuk memperbesar detail secara instan tanpa kehilangan tempat Anda. Sempurna untuk membaca teks kecil di panel padat."
+      },
+      "smart": {
+        "title": "Tag & Peringkat Cerdas",
+        "desc": "Atur perpustakaan Anda dengan tag khusus dan peringkat bintang. Lacak apa yang telah Anda baca dan apa yang Anda sukai."
+      },
+      "compress": {
+        "title": "Alat Kompresi",
+        "desc": "Gabungkan seri atau kurangi ukuran file CBZ/EPUB hingga 50%."
+      },
+      "cloud": {
+        "title": "Sinkronisasi Cloud",
+        "desc": "Sinkronkan kemajuan membaca dan perpustakaan Anda dengan mulus di seluruh perangkat menggunakan iCloud (iOS) atau Google Drive (Android)."
+      },
+      "lang": {
+        "title": "Dukungan 12 Bahasa",
+        "desc": "Antarmuka yang sepenuhnya dilokalisasi tersedia dalam 12 bahasa utama, membuat membaca dapat diakses di seluruh dunia."
+      }
+    }
+  },
+  "about": {
+    "title": "Tentang BiblioFuse",
+    "intro_1": "BiblioFuse adalah rangkaian alat dan pembaca yang dirancang untuk memberikan kontrol penuh atas perpustakaan mereka kepada pecinta e-book. Tidak seperti taman bertembok yang mengunci Anda ke dalam ekosistem tertentu, BiblioFuse memberdayakan Anda untuk mengelola, mengonversi, dan membaca buku Anda di perangkat apa pun.",
+    "intro_2": "Alat web kami menggunakan teknologi WebAssembly (WASM) mutakhir untuk memproses file sepenuhnya di perangkat Anda. Ini berarti manajemen file pribadi, cepat, dan aman tanpa pernah mengunggah perpustakaan pribadi Anda ke server.",
+    "work_title": "Bekerja Bersama Kami",
+    "work_text": "Kami adalah tim kecil yang bersemangat yang didedikasikan untuk membangun perangkat lunak yang menghormati privasi dan kepemilikan pengguna. Kami saat ini terbuka untuk peluang lepas dan kolaborasi.",
+    "connect_title": "Terhubung",
+    "connect_text": "Tertarik untuk berkontribusi atau merekrut? Hubungi kami."
+  },
+  "seo": {
+    "home": {
+      "title": "Kelola dan Baca E-book Di Mana Saja",
+      "desc": "BiblioFuse: Pembaca ebook offline & pengelola perpustakaan. Tag, nilai, lacak kemajuan membaca. Perpustakaan pribadi dengan sinkronisasi iCloud. Tanpa iklan, tanpa pelacakan. CBZ, EPUB, ZIP. iOS, Android, Windows."
     },
     "reader": {
-        "title": "Pengalaman Membaca Generasi Berikutnya",
-        "subtitle": "Dibangun untuk kecepatan, kenyamanan, dan fleksibilitas. Aplikasi BiblioFuse Reader beradaptasi dengan cara Anda ingin membaca.",
-        "features": {
-            "immersive": {
-                "title": "Membaca Imersif",
-                "desc": "Antarmuka bebas gangguan dengan tema dan mode membaca yang dapat disesuaikan."
-            },
-            "webtoon": {
-                "title": "Mode Webtoon Berkelanjutan",
-                "desc": "Nikmati komik dan manga dalam gulungan vertikal mulus, dioptimalkan untuk layar seluler. Gunakan gulir otomatis untuk membaca hands-free."
-            },
-            "peek": {
-                "title": "Zoom Cepat (Peek)",
-                "desc": "Ketuk dua kali untuk memperbesar detail secara instan tanpa kehilangan tempat Anda. Sempurna untuk membaca teks kecil di panel padat."
-            },
-            "smart": {
-                "title": "Tag & Peringkat Cerdas",
-                "desc": "Atur perpustakaan Anda dengan tag khusus dan peringkat bintang. Lacak apa yang telah Anda baca dan apa yang Anda sukai."
-            },
-            "compress": {
-                "title": "Alat Kompresi",
-                "desc": "Gabungkan seri atau kurangi ukuran file CBZ/EPUB hingga 50%."
-            },
-            "cloud": {
-                "title": "Sinkronisasi Cloud",
-                "desc": "Sinkronkan kemajuan membaca dan perpustakaan Anda dengan mulus di seluruh perangkat menggunakan iCloud (iOS) atau Google Drive (Android)."
-            },
-            "lang": {
-                "title": "Dukungan 12 Bahasa",
-                "desc": "Antarmuka yang sepenuhnya dilokalisasi tersedia dalam 12 bahasa utama, membuat membaca dapat diakses di seluruh dunia."
-            }
-        }
+      "title": "Pembaca E-book Generasi Baru",
+      "desc": "Pembaca ebook cepat tanpa gangguan untuk iOS dan Android. Mode webtoon berkelanjutan, tag cerdas, dan Zoom Cepat untuk komik."
     },
     "about": {
-        "title": "Tentang BiblioFuse",
-        "intro_1": "BiblioFuse adalah rangkaian alat dan pembaca yang dirancang untuk memberikan kontrol penuh atas perpustakaan mereka kepada pecinta e-book. Tidak seperti taman bertembok yang mengunci Anda ke dalam ekosistem tertentu, BiblioFuse memberdayakan Anda untuk mengelola, mengonversi, dan membaca buku Anda di perangkat apa pun.",
-        "intro_2": "Alat web kami menggunakan teknologi WebAssembly (WASM) mutakhir untuk memproses file sepenuhnya di perangkat Anda. Ini berarti manajemen file pribadi, cepat, dan aman tanpa pernah mengunggah perpustakaan pribadi Anda ke server.",
-        "work_title": "Bekerja Bersama Kami",
-        "work_text": "Kami adalah tim kecil yang bersemangat yang didedikasikan untuk membangun perangkat lunak yang menghormati privasi dan kepemilikan pengguna. Kami saat ini terbuka untuk peluang lepas dan kolaborasi.",
-        "connect_title": "Terhubung",
-        "connect_text": "Tertarik untuk berkontribusi atau merekrut? Hubungi kami."
+      "title": "Tentang Kami",
+      "desc": "Pelajari tentang tim di balik BiblioFuse. Kami berdedikasi untuk membangun perangkat lunak pribadi dan berpusat pada pengguna untuk pecinta ebook."
+    }
+  },
+  "privacy": {
+    "title": "Mengapa BiblioFuse?",
+    "noAds": {
+      "title": "Tanpa Iklan",
+      "desc": "Nikmati membaca tanpa gangguan iklan yang mengganggu"
     },
-    "seo": {
-        "home": {
-            "title": "Kelola dan Baca E-book Di Mana Saja",
-            "desc": "BiblioFuse: Pembaca ebook offline & pengelola perpustakaan. Tag, nilai, lacak kemajuan membaca. Perpustakaan pribadi dengan sinkronisasi iCloud. Tanpa iklan, tanpa pelacakan. CBZ, EPUB, ZIP. iOS, Android, Windows."
-        },
-        "reader": {
-            "title": "Pembaca E-book Generasi Baru",
-            "desc": "Pembaca ebook cepat tanpa gangguan untuk iOS dan Android. Mode webtoon berkelanjutan, tag cerdas, dan Zoom Cepat untuk komik."
-        },
-        "about": {
-            "title": "Tentang Kami",
-            "desc": "Pelajari tentang tim di balik BiblioFuse. Kami berdedikasi untuk membangun perangkat lunak pribadi dan berpusat pada pengguna untuk pecinta ebook."
-        }
+    "noTracking": {
+      "title": "Tanpa Pelacakan",
+      "desc": "Privasi Anda dilindungi. Kami tidak mengumpulkan atau menjual data Anda"
     },
-    "privacy": {
-        "title": "Mengapa BiblioFuse?",
-        "noAds": {
-            "title": "Tanpa Iklan",
-            "desc": "Nikmati membaca tanpa gangguan iklan yang mengganggu"
+    "cloudSync": {
+      "title": "Sinkronisasi Cloud",
+      "desc": "Sinkronkan perpustakaan Anda dengan mulus di seluruh perangkat dengan iCloud"
+    },
+    "compression": {
+      "title": "Kompresi Cerdas",
+      "desc": "Kurangi ukuran file dan hemat ruang tanpa kehilangan kualitas"
+    }
+  },
+  "footer": {
+    "rights": "© 2025 Modern Logic Tech Solutions (No. Reg: 202503109774 (003722143-P)). Hak cipta dilindungi undang-undang.",
+    "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malaysia",
+    "privacy": "Kebijakan Privasi"
+  },
+  "redesign": {
+    "nav": {
+      "tools": "Alat",
+      "getApp": "Dapatkan app"
+    },
+    "tools": {
+      "readerSub": "iPhone · iPad · Mac · Android",
+      "webSub": "Kompresi di browser",
+      "archiveSub": "Mac · Windows",
+      "smartSub": "iPhone · iPad · Mac · Windows"
+    },
+    "common": {
+      "noAds": "Tanpa iklan",
+      "noTracking": "Tanpa pelacakan",
+      "onDevice": "Diproses di perangkat",
+      "tryWebTool": "Coba Web Tool",
+      "launch": "Buka",
+      "getBiblioFuse": "Dapatkan BiblioFuse"
+    },
+    "aboutPage": {
+      "eyebrow": "BiblioFuse",
+      "lead": "Alat untuk orang yang ingin pustaka bacaan dan alur dokumennya tetap privat, lokal, dan di bawah kendali sendiri.",
+      "pills": [
+        "Tanpa iklan",
+        "Tanpa pelacakan",
+        "Diproses di perangkat"
+      ]
+    },
+    "privacyPage": {
+      "eyebrow": "Privasi",
+      "title": "Kebijakan Privasi",
+      "desc": "BiblioFuse dibangun dengan pemrosesan lokal, tanpa iklan, dan tanpa pelacakan. Kebijakan ini menjelaskan apa yang tetap di perangkat Anda dan data terbatas apa yang mungkin terlibat saat memakai layanan platform.",
+      "error": "Gagal memuat kebijakan privasi. Coba lagi nanti."
+    },
+    "webapp": {
+      "seoDesc": "Kelola dan konversi pustaka digital Anda. Kelola EPUB, PDF, CBZ, dan ZIP, hemat ruang dengan penggabungan seri cerdas, dan jaga semuanya privat di alat WASM browser.",
+      "title": "BiblioFuse Web App",
+      "subtitle": "Toolkit e-book universal di browser",
+      "features": [
+        {
+          "title": "100% Privat",
+          "body": "Semua pemrosesan terjadi lokal di browser Anda"
         },
-        "noTracking": {
-            "title": "Tanpa Pelacakan",
-            "desc": "Privasi Anda dilindungi. Kami tidak mengumpulkan atau menjual data Anda"
+        {
+          "title": "Tanpa Instalasi",
+          "body": "Langsung bekerja di platform atau perangkat apa pun"
         },
-        "cloudSync": {
-            "title": "Sinkronisasi Cloud",
-            "desc": "Sinkronkan perpustakaan Anda dengan mulus di seluruh perangkat dengan iCloud"
+        {
+          "title": "Gabung & Konversi",
+          "body": "EPUB, PDF, CBZ, dan ZIP didukung"
         },
-        "compression": {
-            "title": "Kompresi Cerdas",
-            "desc": "Kurangi ukuran file dan hemat ruang tanpa kehilangan kualitas"
+        {
+          "title": "Kompresi Cerdas",
+          "body": "Hemat ruang hingga 50%"
         }
+      ],
+      "launch": "Buka Web App",
+      "info": "Dibuka di tab baru · Tanpa daftar · Didukung WebAssembly",
+      "platforms": "Bekerja di Windows, macOS, Linux, Android, iOS, dan ChromeOS"
     },
     "footer": {
-        "rights": "© 2025 Modern Logic Tech Solutions (No. Reg: 202503109774 (003722143-P)). Hak cipta dilindungi undang-undang.",
-        "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malaysia",
-        "privacy": "Kebijakan Privasi"
+      "desc": "Rangkaian kecil alat dan reader untuk orang yang ingin pustakanya ada di perangkat sendiri, bukan di balik login pihak lain.",
+      "products": "Produk",
+      "company": "Perusahaan",
+      "legal": "Legal",
+      "webTool": "Web Tool",
+      "contact": "Kontak",
+      "work": "Bekerja dengan kami",
+      "eula": "Ketentuan Penggunaan (EULA)",
+      "stores": "Apple App Store · Google Play · Microsoft Store"
+    },
+    "home": {
+      "seoTitle": "BiblioFuse - E-book Reader, Library Manager & Compression Tools",
+      "seoDesc": "BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web.",
+      "hero": {
+        "version": "Version 2.0.1 - native on iPhone, iPad & Mac",
+        "titleA": "Your library,",
+        "titleB": "read your way.",
+        "desc": "BiblioFuse is a native reader and library manager for personal ebook, comic, and document collections across iPhone, iPad, and Mac.",
+        "warningTitle": "Download from official sources only.",
+        "warningBody": "BiblioFuse is exclusively distributed via Apple App Store, Google Play Store and Microsoft Store. Never download from unofficial websites.",
+        "chipA": "Universal · iCloud",
+        "chipB": "iPhone · iPad · Mac",
+        "chipC": "TTS · auto-scroll",
+        "chipD": "Hands-free reading",
+        "reads": "Reads"
+      },
+      "table": {
+        "eyebrow": "Bandingkan edisi",
+        "title": "Pilih edisi sesuai cara kerja Anda.",
+        "desc": "Semua edisi memiliki filosofi yang sama: diproses di perangkat dan tanpa pelacakan. Perbedaannya ada pada platform dan alur kerja.",
+        "feature": "Fitur",
+        "badges": {
+          "universal": "Pembelian universal",
+          "edition": "Edisi",
+          "free": "Gratis"
+        },
+        "editions": {
+          "apple": "BiblioFuse Reader",
+          "android": "Android Reader",
+          "web": "Web Tool",
+          "pc": "PC Tools"
+        },
+        "subtitles": {
+          "apple": "iPhone · iPad · Mac",
+          "android": "Ponsel · Tablet",
+          "web": "Browser · Semua perangkat",
+          "pc": "Windows"
+        },
+        "unique": "Unik",
+        "where": "Tempat mendapatkan",
+        "iosNote": "iOS dirilis · Mac dalam peninjauan",
+        "cbz": "Edisi CBZ",
+        "epub": "Edisi EPUB",
+        "rows": [
+          [
+            "Fungsi utama",
+            "Baca, atur, kompres & gabung - di iPhone, iPad dan Mac",
+            "Baca, atur, kompres & gabung",
+            "Kompres / gabung di mana saja",
+            "Kompres & gabung tugas berat"
+          ],
+          [
+            "Platform",
+            "iPhone, iPad & Mac",
+            "Ponsel / tablet Android",
+            "Browser (semua perangkat)",
+            "Windows (.exe)"
+          ],
+          [
+            "Pemrosesan",
+            "SwiftUI native, di perangkat",
+            "Native di perangkat",
+            "WASM lokal (privat)",
+            "Windows native"
+          ],
+          [
+            "Kompres / gabung",
+            "EPUB / CBZ / CBR",
+            "EPUB / CBZ",
+            "EPUB / CBZ / PDF",
+            "Folder / CBZ / PDF / EPUB"
+          ],
+          [
+            "Format baca",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "EPUB · PDF · CBZ · ZIP · TXT",
+            "Hanya alat",
+            "Hanya alat"
+          ],
+          [
+            "Fitur reader",
+            "TTS, peek zoom, auto-scroll",
+            "Lanjutan",
+            "-",
+            "-"
+          ],
+          [
+            "Streaming Mac → iOS",
+            "Wi-Fi + 5G jarak jauh via Tailscale",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "Sumber lokal, iCloud & SMB",
+            "Lokal + iCloud; SMB via streaming Mac",
+            "Lokal + SMB native",
+            "Hanya alat",
+            "Hanya alat"
+          ],
+          [
+            "Backup DB otomatis",
+            "iCloud",
+            "Lokal",
+            "-",
+            "-"
+          ],
+          [
+            "Rak buku iCloud",
+            "Lintas perangkat",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "Dukungan bahasa",
+            "12 bahasa|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
+            "12 bahasa|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
+            "6 bahasa|EN, ES, FR, NL, PT, ZH",
+            "Inggris"
+          ]
+        ]
+      }
     }
+  }
 }

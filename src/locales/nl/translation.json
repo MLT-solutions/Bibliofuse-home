@@ -1,171 +1,369 @@
 {
-    "nav": {
-        "home": "Home",
-        "reader": "Lezer",
-        "webapp": "Web App",
-        "about": "Over"
+  "nav": {
+    "home": "Home",
+    "reader": "Lezer",
+    "webapp": "Web App",
+    "about": "Over",
+    "tools": "Tools",
+    "getApp": "Download app"
+  },
+  "home": {
+    "hero": {
+      "title": "BiblioFuse",
+      "subtitle": "Het ultieme e-book ecosysteem. Tools om te beheren, Reader om te genieten.",
+      "btn": {
+        "ios": "iOS App Store",
+        "android": "Google Play",
+        "web": "Start webgereedschap",
+        "pc": "PC-tools"
+      }
     },
-    "home": {
-        "hero": {
-            "title": "BiblioFuse",
-            "subtitle": "Het ultieme e-book ecosysteem. Tools om te beheren, Reader om te genieten.",
-            "btn": {
-                "ios": "iOS App Store",
-                "android": "Google Play",
-                "web": "Start webgereedschap",
-                "pc": "PC-tools"
-            }
+    "warning": {
+      "title": "Download alleen van officiële bronnen",
+      "message": "BiblioFuse-apps worden uitsluitend gedistribueerd via de Apple App Store, Google Play Store en Microsoft Store. Download nooit van onofficiële websites om uw apparaat te beschermen tegen malware en beveiligingsrisico's."
+    },
+    "table": {
+      "title": "Vergelijking van edities",
+      "headers": {
+        "feature": "Functie",
+        "ios": "iOS-lezer",
+        "android": "Android-lezer",
+        "web": "Webtool",
+        "pc": "PC-tools"
+      },
+      "rows": {
+        "primary": {
+          "name": "Hoofdfunctie",
+          "v_read": "Lezen, Bibliotheekbeheer (Tag/Beoordelen), Compressie/Samenvoegen",
+          "v_create": "Compressie/Samenvoegen overal",
+          "v_heavy": "Zware Compressie/Samenvoegen"
         },
-        "warning": {
-            "title": "Download alleen van officiële bronnen",
-            "message": "BiblioFuse-apps worden uitsluitend gedistribueerd via de Apple App Store, Google Play Store en Microsoft Store. Download nooit van onofficiële websites om uw apparaat te beschermen tegen malware en beveiligingsrisico's."
+        "platform": {
+          "name": "Platform",
+          "v_ios": "iPhone/iPad",
+          "v_android": "Android Telefoon/Tablet",
+          "v_web": "Browser (Alle apparaten)",
+          "v_pc": "Windows (Exe)"
         },
-        "table": {
-            "title": "Vergelijking van edities",
-            "headers": {
-                "feature": "Functie",
-                "ios": "iOS-lezer",
-                "android": "Android-lezer",
-                "web": "Webtool",
-                "pc": "PC-tools"
-            },
-            "rows": {
-                "primary": {
-                    "name": "Hoofdfunctie",
-                    "v_read": "Lezen, Bibliotheekbeheer (Tag/Beoordelen), Compressie/Samenvoegen",
-                    "v_create": "Compressie/Samenvoegen overal",
-                    "v_heavy": "Zware Compressie/Samenvoegen"
-                },
-                "platform": {
-                    "name": "Platform",
-                    "v_ios": "iPhone/iPad",
-                    "v_android": "Android Telefoon/Tablet",
-                    "v_web": "Browser (Alle apparaten)",
-                    "v_pc": "Windows (Exe)"
-                },
-                "processing": {
-                    "name": "Verwerking",
-                    "v_native": "Lokaal op apparaat",
-                    "v_wasm": "Lokale WASM (Privé)",
-                    "v_win": "Native Windows"
-                },
-                "convert": {
-                    "name": "Converteren/Samenvoegen",
-                    "v_mobile": "(EPUB/CBZ)",
-                    "v_web": "(EPUB/CBZ/PDF)",
-                    "v_pc_1": "(Map/CBZ/PDF)",
-                    "v_pc_2": "(EPUB)"
-                },
-                "reader_feat": {
-                    "name": "Lezerfuncties",
-                    "v_advanced": "✔ (Geavanceerd)",
-                    "v_basic": "Basisvoorbeeld"
-                },
-                "cloud": {
-                    "name": "Automatische back-up",
-                    "v_icloud": "✔ (iCloud)",
-                    "v_gdrive": "✔ (lokaal)"
-                },
-                "bookshelf": {
-                    "name": "iCloud Boekenkast",
-                    "v_ios": "✔ (meerdere apparaten)"
-                },
-                "lang": {
-                    "name": "Taalondersteuning",
-                    "v_12": "12 Talen",
-                    "v_12_list": "(Engels, Spaans, Frans, Nederlands, Portugees, Russisch, Vereenvoudigd Chinees, Japans, Koreaans, Indonesisch, Maleis)",
-                    "v_6": "6 Talen",
-                    "v_6_list": "(Engels, Spaans, Frans, Nederlands, Portugees, Vereenvoudigd Chinees)",
-                    "v_pc": "Alleen Engels"
-                },
-                "avail": {
-                    "name": "Beschikbaarheid",
-                    "v_review": "In beoordeling",
-                    "v_cbz": "CBZ Ver.",
-                    "v_epub": "EPUB Ver."
-                }
-            }
+        "processing": {
+          "name": "Verwerking",
+          "v_native": "Lokaal op apparaat",
+          "v_wasm": "Lokale WASM (Privé)",
+          "v_win": "Native Windows"
+        },
+        "convert": {
+          "name": "Converteren/Samenvoegen",
+          "v_mobile": "(EPUB/CBZ)",
+          "v_web": "(EPUB/CBZ/PDF)",
+          "v_pc_1": "(Map/CBZ/PDF)",
+          "v_pc_2": "(EPUB)"
+        },
+        "reader_feat": {
+          "name": "Lezerfuncties",
+          "v_advanced": "✔ (Geavanceerd)",
+          "v_basic": "Basisvoorbeeld"
+        },
+        "cloud": {
+          "name": "Automatische back-up",
+          "v_icloud": "✔ (iCloud)",
+          "v_gdrive": "✔ (lokaal)"
+        },
+        "bookshelf": {
+          "name": "iCloud Boekenkast",
+          "v_ios": "✔ (meerdere apparaten)"
+        },
+        "lang": {
+          "name": "Taalondersteuning",
+          "v_12": "12 Talen",
+          "v_12_list": "(Engels, Spaans, Frans, Nederlands, Portugees, Russisch, Vereenvoudigd Chinees, Japans, Koreaans, Indonesisch, Maleis)",
+          "v_6": "6 Talen",
+          "v_6_list": "(Engels, Spaans, Frans, Nederlands, Portugees, Vereenvoudigd Chinees)",
+          "v_pc": "Alleen Engels"
+        },
+        "avail": {
+          "name": "Beschikbaarheid",
+          "v_review": "In beoordeling",
+          "v_cbz": "CBZ Ver.",
+          "v_epub": "EPUB Ver."
         }
+      }
+    }
+  },
+  "reader": {
+    "title": "Next-Gen Leeservaring",
+    "subtitle": "Gebouwd voor snelheid, comfort en flexibiliteit. De BiblioFuse Reader-app past zich aan hoe jij wilt lezen.",
+    "features": {
+      "immersive": {
+        "title": "Meeslepend Lezen",
+        "desc": "Afleidingsvrije interface met aanpasbare thema's en leesmodi."
+      },
+      "webtoon": {
+        "title": "Continue Webtoon-modus",
+        "desc": "Ervaar strips en manga in een naadloze verticale scroll, geoptimaliseerd voor mobiele schermen. Gebruik auto-scroll voor handsfree lezen."
+      },
+      "peek": {
+        "title": "Peek Zoom",
+        "desc": "Dubbeltik om direct in te zoomen op details zonder je plek te verliezen. Perfect voor het lezen van kleine tekst in dichte panelen."
+      },
+      "smart": {
+        "title": "Slim taggen & beoordelen",
+        "desc": "Organiseer je bibliotheek met aangepaste tags en sterbeoordelingen. Houd bij wat je hebt gelezen en waar je van houdt."
+      },
+      "compress": {
+        "title": "Compressietools",
+        "desc": "Voeg series samen of verklein de bestandsgrootte van CBZ/EPUB tot 50%."
+      },
+      "cloud": {
+        "title": "Cloud Sync",
+        "desc": "Synchroniseer naadloos je leesvoortgang en bibliotheek tussen apparaten via iCloud (iOS) of Google Drive (Android)."
+      },
+      "lang": {
+        "title": "Ondersteuning voor 12 Talen",
+        "desc": "Volledig gelokaliseerde interface beschikbaar in 12 hoofdtalen, waardoor lezen wereldwijd toegankelijk wordt."
+      }
+    }
+  },
+  "about": {
+    "title": "Over BiblioFuse",
+    "intro_1": "BiblioFuse is een suite van tools en readers ontworpen om e-bookliefhebbers volledige controle over hun bibliotheek te geven. In tegenstelling tot gesloten systemen die je opsluiten in een specifiek ecosysteem, stelt BiblioFuse je in staat om je boeken op elk apparaat te beheren, converteren en lezen.",
+    "intro_2": "Onze webtool gebruikt geavanceerde WebAssembly (WASM) technologie om bestanden volledig op je apparaat te verwerken. Dit betekent privé, snel en veilig bestandsbeheer zonder ooit je persoonlijke bibliotheek naar een server te uploaden.",
+    "work_title": "Werk met ons",
+    "work_text": "We zijn een klein, gepassioneerd team dat zich inzet voor het bouwen van software die de privacy en het eigendom van de gebruiker respecteert. We staan momenteel open voor freelance kansen en samenwerkingen.",
+    "connect_title": "Verbinden",
+    "connect_text": "Geïnteresseerd in bijdragen of inhuren? Neem contact met ons op."
+  },
+  "seo": {
+    "home": {
+      "title": "Beheer en lees e-books overal",
+      "desc": "BiblioFuse: Offline ebook-lezer en bibliotheekbeheerder. Tag, beoordeel, volg leesvoortgang. Privé persoonlijke bibliotheek met iCloud-synchronisatie. Geen advertenties, geen tracking. CBZ, EPUB, ZIP. iOS, Android, Windows."
     },
     "reader": {
-        "title": "Next-Gen Leeservaring",
-        "subtitle": "Gebouwd voor snelheid, comfort en flexibiliteit. De BiblioFuse Reader-app past zich aan hoe jij wilt lezen.",
-        "features": {
-            "immersive": {
-                "title": "Meeslepend Lezen",
-                "desc": "Afleidingsvrije interface met aanpasbare thema's en leesmodi."
-            },
-            "webtoon": {
-                "title": "Continue Webtoon-modus",
-                "desc": "Ervaar strips en manga in een naadloze verticale scroll, geoptimaliseerd voor mobiele schermen. Gebruik auto-scroll voor handsfree lezen."
-            },
-            "peek": {
-                "title": "Peek Zoom",
-                "desc": "Dubbeltik om direct in te zoomen op details zonder je plek te verliezen. Perfect voor het lezen van kleine tekst in dichte panelen."
-            },
-            "smart": {
-                "title": "Slim taggen & beoordelen",
-                "desc": "Organiseer je bibliotheek met aangepaste tags en sterbeoordelingen. Houd bij wat je hebt gelezen en waar je van houdt."
-            },
-            "compress": {
-                "title": "Compressietools",
-                "desc": "Voeg series samen of verklein de bestandsgrootte van CBZ/EPUB tot 50%."
-            },
-            "cloud": {
-                "title": "Cloud Sync",
-                "desc": "Synchroniseer naadloos je leesvoortgang en bibliotheek tussen apparaten via iCloud (iOS) of Google Drive (Android)."
-            },
-            "lang": {
-                "title": "Ondersteuning voor 12 Talen",
-                "desc": "Volledig gelokaliseerde interface beschikbaar in 12 hoofdtalen, waardoor lezen wereldwijd toegankelijk wordt."
-            }
-        }
+      "title": "Next-gen e-book lezer",
+      "desc": "Een snelle, afleidingsvrije e-book lezer voor iOS en Android. Bevat continue webtoon-modus, slim taggen en Peek Zoom voor strips."
     },
     "about": {
-        "title": "Over BiblioFuse",
-        "intro_1": "BiblioFuse is een suite van tools en readers ontworpen om e-bookliefhebbers volledige controle over hun bibliotheek te geven. In tegenstelling tot gesloten systemen die je opsluiten in een specifiek ecosysteem, stelt BiblioFuse je in staat om je boeken op elk apparaat te beheren, converteren en lezen.",
-        "intro_2": "Onze webtool gebruikt geavanceerde WebAssembly (WASM) technologie om bestanden volledig op je apparaat te verwerken. Dit betekent privé, snel en veilig bestandsbeheer zonder ooit je persoonlijke bibliotheek naar een server te uploaden.",
-        "work_title": "Werk met ons",
-        "work_text": "We zijn een klein, gepassioneerd team dat zich inzet voor het bouwen van software die de privacy en het eigendom van de gebruiker respecteert. We staan momenteel open voor freelance kansen en samenwerkingen.",
-        "connect_title": "Verbinden",
-        "connect_text": "Geïnteresseerd in bijdragen of inhuren? Neem contact met ons op."
+      "title": "Over ons",
+      "desc": "Leer over het team achter BiblioFuse. We zijn toegewijd aan het bouwen van privé, gebruikersgerichte software voor e-book liefhebbers."
+    }
+  },
+  "privacy": {
+    "title": "Waarom BiblioFuse?",
+    "noAds": {
+      "title": "Geen advertenties",
+      "desc": "Geniet van ononderbroken lezen zonder vervelende advertenties"
     },
-    "seo": {
-        "home": {
-            "title": "Beheer en lees e-books overal",
-            "desc": "BiblioFuse: Offline ebook-lezer en bibliotheekbeheerder. Tag, beoordeel, volg leesvoortgang. Privé persoonlijke bibliotheek met iCloud-synchronisatie. Geen advertenties, geen tracking. CBZ, EPUB, ZIP. iOS, Android, Windows."
-        },
-        "reader": {
-            "title": "Next-gen e-book lezer",
-            "desc": "Een snelle, afleidingsvrije e-book lezer voor iOS en Android. Bevat continue webtoon-modus, slim taggen en Peek Zoom voor strips."
-        },
-        "about": {
-            "title": "Over ons",
-            "desc": "Leer over het team achter BiblioFuse. We zijn toegewijd aan het bouwen van privé, gebruikersgerichte software voor e-book liefhebbers."
-        }
+    "noTracking": {
+      "title": "Geen tracking",
+      "desc": "Uw privacy is beschermd. We verzamelen of verkopen uw gegevens niet"
     },
-    "privacy": {
-        "title": "Waarom BiblioFuse?",
-        "noAds": {
-            "title": "Geen advertenties",
-            "desc": "Geniet van ononderbroken lezen zonder vervelende advertenties"
+    "cloudSync": {
+      "title": "Cloud-synchronisatie",
+      "desc": "Synchroniseer uw bibliotheek naadloos tussen apparaten met iCloud"
+    },
+    "compression": {
+      "title": "Slimme compressie",
+      "desc": "Verklein de bestandsgrootte en bespaar ruimte zonder kwaliteitsverlies"
+    }
+  },
+  "footer": {
+    "rights": "© 2025 Modern Logic Tech Solutions (Reg. Nr: 202503109774 (003722143-P)). Alle rechten voorbehouden.",
+    "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Maleisië",
+    "privacy": "Privacybeleid"
+  },
+  "redesign": {
+    "nav": {
+      "tools": "Tools",
+      "getApp": "Download app"
+    },
+    "tools": {
+      "readerSub": "iPhone · iPad · Mac · Android",
+      "webSub": "Compressie in de browser",
+      "archiveSub": "Mac · Windows",
+      "smartSub": "iPhone · iPad · Mac · Windows"
+    },
+    "common": {
+      "noAds": "Geen advertenties",
+      "noTracking": "Geen tracking",
+      "onDevice": "Verwerking op apparaat",
+      "tryWebTool": "Probeer webtool",
+      "launch": "Start",
+      "getBiblioFuse": "Download BiblioFuse"
+    },
+    "aboutPage": {
+      "eyebrow": "BiblioFuse",
+      "lead": "Tools voor mensen die hun leesbibliotheek en documentwerkstromen privé, lokaal en onder eigen controle willen houden.",
+      "pills": [
+        "Geen advertenties",
+        "Geen tracking",
+        "Verwerking op apparaat"
+      ]
+    },
+    "privacyPage": {
+      "eyebrow": "Privacy",
+      "title": "Privacybeleid",
+      "desc": "BiblioFuse is gebouwd rond lokale verwerking, geen advertenties en geen tracking. Dit beleid legt uit wat op je apparaat blijft en welke beperkte gegevens betrokken kunnen zijn bij platformdiensten.",
+      "error": "Fout bij laden van privacybeleid. Probeer het later opnieuw."
+    },
+    "webapp": {
+      "seoDesc": "Beheer en converteer je digitale bibliotheek. Werk met EPUB, PDF, CBZ en ZIP, bespaar opslag met slim samenvoegen, en houd alles privé in een browser-WASM-tool.",
+      "title": "BiblioFuse Web App",
+      "subtitle": "Je universele e-booktoolkit in de browser",
+      "features": [
+        {
+          "title": "100% privé",
+          "body": "Alle verwerking gebeurt lokaal in je browser"
         },
-        "noTracking": {
-            "title": "Geen tracking",
-            "desc": "Uw privacy is beschermd. We verzamelen of verkopen uw gegevens niet"
+        {
+          "title": "Geen installatie",
+          "body": "Werkt direct op elk platform of apparaat"
         },
-        "cloudSync": {
-            "title": "Cloud-synchronisatie",
-            "desc": "Synchroniseer uw bibliotheek naadloos tussen apparaten met iCloud"
+        {
+          "title": "Samenvoegen & converteren",
+          "body": "EPUB, PDF, CBZ en ZIP worden ondersteund"
         },
-        "compression": {
-            "title": "Slimme compressie",
-            "desc": "Verklein de bestandsgrootte en bespaar ruimte zonder kwaliteitsverlies"
+        {
+          "title": "Slimme compressie",
+          "body": "Bespaar tot 50% opslagruimte"
         }
+      ],
+      "launch": "Start Web App",
+      "info": "Opent in een nieuw tabblad · Geen account nodig · Aangedreven door WebAssembly",
+      "platforms": "Werkt op Windows, macOS, Linux, Android, iOS en ChromeOS"
     },
     "footer": {
-        "rights": "© 2025 Modern Logic Tech Solutions (Reg. Nr: 202503109774 (003722143-P)). Alle rechten voorbehouden.",
-        "address": "1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Maleisië",
-        "privacy": "Privacybeleid"
+      "desc": "Een kleine suite tools en readers voor mensen die hun bibliotheek op hun eigen apparaten willen houden, niet achter andermans login.",
+      "products": "Producten",
+      "company": "Bedrijf",
+      "legal": "Juridisch",
+      "webTool": "Webtool",
+      "contact": "Contact",
+      "work": "Werk met ons",
+      "eula": "Gebruiksvoorwaarden (EULA)",
+      "stores": "Apple App Store · Google Play · Microsoft Store"
+    },
+    "home": {
+      "seoTitle": "BiblioFuse - E-book Reader, Library Manager & Compression Tools",
+      "seoDesc": "BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web.",
+      "hero": {
+        "version": "Version 2.0.1 - native on iPhone, iPad & Mac",
+        "titleA": "Your library,",
+        "titleB": "read your way.",
+        "desc": "BiblioFuse is a native reader and library manager for personal ebook, comic, and document collections across iPhone, iPad, and Mac.",
+        "warningTitle": "Download from official sources only.",
+        "warningBody": "BiblioFuse is exclusively distributed via Apple App Store, Google Play Store and Microsoft Store. Never download from unofficial websites.",
+        "chipA": "Universal · iCloud",
+        "chipB": "iPhone · iPad · Mac",
+        "chipC": "TTS · auto-scroll",
+        "chipD": "Hands-free reading",
+        "reads": "Reads"
+      },
+      "table": {
+        "eyebrow": "Edities vergelijken",
+        "title": "Kies de editie die past bij je workflow.",
+        "desc": "Alle edities delen dezelfde filosofie: verwerking op het apparaat en geen tracking. De verschillen zitten in platform en workflow.",
+        "feature": "Functie",
+        "badges": {
+          "universal": "Universele aankoop",
+          "edition": "Editie",
+          "free": "Gratis"
+        },
+        "editions": {
+          "apple": "BiblioFuse Reader",
+          "android": "Android Reader",
+          "web": "Webtool",
+          "pc": "PC-tools"
+        },
+        "subtitles": {
+          "apple": "iPhone · iPad · Mac",
+          "android": "Telefoon · Tablet",
+          "web": "Browser · Alle apparaten",
+          "pc": "Windows"
+        },
+        "unique": "Uniek",
+        "where": "Waar te krijgen",
+        "iosNote": "iOS uitgebracht · Mac in beoordeling",
+        "cbz": "CBZ-editie",
+        "epub": "EPUB-editie",
+        "rows": [
+          [
+            "Hoofdfunctie",
+            "Lezen, organiseren, comprimeren en samenvoegen - op iPhone, iPad en Mac",
+            "Lezen, organiseren, comprimeren en samenvoegen",
+            "Overal comprimeren / samenvoegen",
+            "Zware compressie en samenvoeging"
+          ],
+          [
+            "Platform",
+            "iPhone, iPad en Mac",
+            "Android-telefoon / tablet",
+            "Browser (alle apparaten)",
+            "Windows (.exe)"
+          ],
+          [
+            "Verwerking",
+            "Native SwiftUI, op apparaat",
+            "Native op apparaat",
+            "Lokale WASM (privé)",
+            "Native Windows"
+          ],
+          [
+            "Comprimeren / samenvoegen",
+            "EPUB / CBZ / CBR",
+            "EPUB / CBZ",
+            "EPUB / CBZ / PDF",
+            "Map / CBZ / PDF / EPUB"
+          ],
+          [
+            "Leesformaten",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "EPUB · PDF · CBZ · ZIP · TXT",
+            "Alleen tool",
+            "Alleen tool"
+          ],
+          [
+            "Readerfuncties",
+            "TTS, peek zoom, automatisch scrollen",
+            "Geavanceerd",
+            "-",
+            "-"
+          ],
+          [
+            "Mac → iOS-streaming",
+            "Wi-Fi + remote 5G via Tailscale",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "Lokale, iCloud- en SMB-bronnen",
+            "Lokaal + iCloud; SMB via Mac-streaming",
+            "Lokaal + native SMB",
+            "Alleen tool",
+            "Alleen tool"
+          ],
+          [
+            "Automatische DB-back-up",
+            "iCloud",
+            "Lokaal",
+            "-",
+            "-"
+          ],
+          [
+            "iCloud-boekenplank",
+            "Tussen apparaten",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "Taalondersteuning",
+            "12 talen|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
+            "12 talen|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
+            "6 talen|EN, ES, FR, NL, PT, ZH",
+            "Engels"
+          ]
+        ]
+      }
     }
+  }
 }
