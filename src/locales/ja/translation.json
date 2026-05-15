@@ -242,20 +242,20 @@
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
     "home": {
-      "seoTitle": "BiblioFuse - E-book Reader, Library Manager & Compression Tools",
-      "seoDesc": "BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web.",
+      "seoTitle": "BiblioFuse — 電子書籍リーダー、ライブラリ管理、圧縮ツール",
+      "seoDesc": "BiblioFuseは、iPhone、iPad、Mac、Android、Web上で個人のライブラリを読書、整理、ストリーミング、圧縮、結合するためのプライベートな電子書籍エコシステムです。",
       "hero": {
-        "version": "Version 2.0.1 - native on iPhone, iPad & Mac",
-        "titleA": "Your library,",
-        "titleB": "read your way.",
-        "desc": "BiblioFuse is a native reader and library manager for personal ebook, comic, and document collections across iPhone, iPad, and Mac.",
-        "warningTitle": "Download from official sources only.",
-        "warningBody": "BiblioFuse is exclusively distributed via Apple App Store, Google Play Store and Microsoft Store. Never download from unofficial websites.",
-        "chipA": "Universal · iCloud",
+        "version": "バージョン 2.0.1 — iPhone、iPad、Macネイティブ対応",
+        "titleA": "あなたのライブラリ、",
+        "titleB": "あなたの読み方で。",
+        "desc": "BiblioFuseは、iPhone、iPad、Mac上の個人の電子書籍、コミック、ドキュメントコレクションのためのネイティブリーダー兼ライブラリマネージャーです。",
+        "warningTitle": "公式ソースからのみダウンロードしてください。",
+        "warningBody": "BiblioFuseはApple App Store、Google Play Store、Microsoft Storeを通じてのみ配布されています。非公式ウェブサイトからは絶対にダウンロードしないでください。",
+        "chipA": "ユニバーサル · iCloud",
         "chipB": "iPhone · iPad · Mac",
-        "chipC": "TTS · auto-scroll",
-        "chipD": "Hands-free reading",
-        "reads": "Reads"
+        "chipC": "TTS · 自動スクロール",
+        "chipD": "ハンズフリー読書",
+        "reads": "読む"
       },
       "table": {
         "eyebrow": "エディション比較",

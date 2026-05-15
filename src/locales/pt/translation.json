@@ -242,20 +242,20 @@
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
     "home": {
-      "seoTitle": "BiblioFuse - E-book Reader, Library Manager & Compression Tools",
-      "seoDesc": "BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web.",
+      "seoTitle": "BiblioFuse — Leitor de E-books, Gerenciador de Biblioteca e Ferramentas de Compressão",
+      "seoDesc": "BiblioFuse é um ecossistema privado de e-books para ler, organizar, transmitir, comprimir e mesclar sua biblioteca pessoal no iPhone, iPad, Mac, Android e na web.",
       "hero": {
-        "version": "Version 2.0.1 - native on iPhone, iPad & Mac",
-        "titleA": "Your library,",
-        "titleB": "read your way.",
-        "desc": "BiblioFuse is a native reader and library manager for personal ebook, comic, and document collections across iPhone, iPad, and Mac.",
-        "warningTitle": "Download from official sources only.",
-        "warningBody": "BiblioFuse is exclusively distributed via Apple App Store, Google Play Store and Microsoft Store. Never download from unofficial websites.",
+        "version": "Versão 2.0.1 — nativa no iPhone, iPad e Mac",
+        "titleA": "Sua biblioteca,",
+        "titleB": "leia do seu jeito.",
+        "desc": "BiblioFuse é um leitor e gerenciador de biblioteca nativo para coleções pessoais de ebooks, quadrinhos e documentos no iPhone, iPad e Mac.",
+        "warningTitle": "Baixe apenas de fontes oficiais.",
+        "warningBody": "O BiblioFuse é distribuído exclusivamente pela Apple App Store, Google Play Store e Microsoft Store. Nunca baixe de sites não oficiais.",
         "chipA": "Universal · iCloud",
         "chipB": "iPhone · iPad · Mac",
-        "chipC": "TTS · auto-scroll",
-        "chipD": "Hands-free reading",
-        "reads": "Reads"
+        "chipC": "TTS · rolagem automática",
+        "chipD": "Leitura mãos livres",
+        "reads": "Lê"
       },
       "table": {
         "eyebrow": "Comparar edições",

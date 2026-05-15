@@ -242,20 +242,20 @@
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
     "home": {
-      "seoTitle": "BiblioFuse - E-book Reader, Library Manager & Compression Tools",
-      "seoDesc": "BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web.",
+      "seoTitle": "BiblioFuse — 电子书阅读器、图书馆管理器与压缩工具",
+      "seoDesc": "BiblioFuse 是一个私密的电子书生态系统，可在 iPhone、iPad、Mac、Android 和网页上阅读、整理、串流、压缩和合并您的个人图书馆。",
       "hero": {
-        "version": "Version 2.0.1 - native on iPhone, iPad & Mac",
-        "titleA": "Your library,",
-        "titleB": "read your way.",
-        "desc": "BiblioFuse is a native reader and library manager for personal ebook, comic, and document collections across iPhone, iPad, and Mac.",
-        "warningTitle": "Download from official sources only.",
-        "warningBody": "BiblioFuse is exclusively distributed via Apple App Store, Google Play Store and Microsoft Store. Never download from unofficial websites.",
-        "chipA": "Universal · iCloud",
+        "version": "版本 2.0.1 — iPhone、iPad、Mac 原生应用",
+        "titleA": "你的图书馆，",
+        "titleB": "随心阅读。",
+        "desc": "BiblioFuse 是一款原生阅读器和图书馆管理器，用于管理 iPhone、iPad 和 Mac 上的个人电子书、漫画和文档收藏。",
+        "warningTitle": "请仅从官方渠道下载。",
+        "warningBody": "BiblioFuse 仅通过 Apple App Store、Google Play Store 和 Microsoft Store 分发。切勿从非官方网站下载。",
+        "chipA": "通用 · iCloud",
         "chipB": "iPhone · iPad · Mac",
-        "chipC": "TTS · auto-scroll",
-        "chipD": "Hands-free reading",
-        "reads": "Reads"
+        "chipC": "TTS · 自动滚动",
+        "chipD": "免提阅读",
+        "reads": "阅读"
       },
       "table": {
         "eyebrow": "版本比较",

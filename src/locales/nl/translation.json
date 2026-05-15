@@ -242,20 +242,20 @@
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
     "home": {
-      "seoTitle": "BiblioFuse - E-book Reader, Library Manager & Compression Tools",
-      "seoDesc": "BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web.",
+      "seoTitle": "BiblioFuse — E-book Lezer, Bibliotheekbeheer & Compressietools",
+      "seoDesc": "BiblioFuse is een privé e-book ecosysteem voor het lezen, organiseren, streamen, comprimeren en samenvoegen van je persoonlijke bibliotheek op iPhone, iPad, Mac, Android en het web.",
       "hero": {
-        "version": "Version 2.0.1 - native on iPhone, iPad & Mac",
-        "titleA": "Your library,",
-        "titleB": "read your way.",
-        "desc": "BiblioFuse is a native reader and library manager for personal ebook, comic, and document collections across iPhone, iPad, and Mac.",
-        "warningTitle": "Download from official sources only.",
-        "warningBody": "BiblioFuse is exclusively distributed via Apple App Store, Google Play Store and Microsoft Store. Never download from unofficial websites.",
-        "chipA": "Universal · iCloud",
+        "version": "Versie 2.0.1 — native op iPhone, iPad en Mac",
+        "titleA": "Jouw bibliotheek,",
+        "titleB": "lees op jouw manier.",
+        "desc": "BiblioFuse is een native lezer en bibliotheekbeheerder voor persoonlijke ebook-, strip- en documentcollecties op iPhone, iPad en Mac.",
+        "warningTitle": "Download alleen van officiële bronnen.",
+        "warningBody": "BiblioFuse wordt uitsluitend gedistribueerd via de Apple App Store, Google Play Store en Microsoft Store. Download nooit van onofficiële websites.",
+        "chipA": "Universeel · iCloud",
         "chipB": "iPhone · iPad · Mac",
         "chipC": "TTS · auto-scroll",
-        "chipD": "Hands-free reading",
-        "reads": "Reads"
+        "chipD": "Handsfree lezen",
+        "reads": "Leest"
       },
       "table": {
         "eyebrow": "Edities vergelijken",

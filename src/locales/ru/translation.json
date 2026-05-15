@@ -242,20 +242,20 @@
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
     "home": {
-      "seoTitle": "BiblioFuse - E-book Reader, Library Manager & Compression Tools",
-      "seoDesc": "BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web.",
+      "seoTitle": "BiblioFuse — Читалка электронных книг, Менеджер Библиотеки и Инструменты Сжатия",
+      "seoDesc": "BiblioFuse — это приватная экосистема электронных книг для чтения, организации, потоковой передачи, сжатия и объединения вашей личной библиотеки на iPhone, iPad, Mac, Android и в вебе.",
       "hero": {
-        "version": "Version 2.0.1 - native on iPhone, iPad & Mac",
-        "titleA": "Your library,",
-        "titleB": "read your way.",
-        "desc": "BiblioFuse is a native reader and library manager for personal ebook, comic, and document collections across iPhone, iPad, and Mac.",
-        "warningTitle": "Download from official sources only.",
-        "warningBody": "BiblioFuse is exclusively distributed via Apple App Store, Google Play Store and Microsoft Store. Never download from unofficial websites.",
-        "chipA": "Universal · iCloud",
+        "version": "Версия 2.0.1 — нативно на iPhone, iPad и Mac",
+        "titleA": "Ваша библиотека,",
+        "titleB": "читайте по-своему.",
+        "desc": "BiblioFuse — это нативный ридер и менеджер библиотеки для личных коллекций электронных книг, комиксов и документов на iPhone, iPad и Mac.",
+        "warningTitle": "Скачивайте только из официальных источников.",
+        "warningBody": "BiblioFuse распространяется исключительно через Apple App Store, Google Play Store и Microsoft Store. Никогда не скачивайте с неофициальных сайтов.",
+        "chipA": "Универсальный · iCloud",
         "chipB": "iPhone · iPad · Mac",
-        "chipC": "TTS · auto-scroll",
-        "chipD": "Hands-free reading",
-        "reads": "Reads"
+        "chipC": "TTS · автопрокрутка",
+        "chipD": "Чтение без рук",
+        "reads": "Читает"
       },
       "table": {
         "eyebrow": "Сравнение редакций",

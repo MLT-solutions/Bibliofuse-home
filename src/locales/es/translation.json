@@ -242,20 +242,20 @@
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
     "home": {
-      "seoTitle": "BiblioFuse - E-book Reader, Library Manager & Compression Tools",
-      "seoDesc": "BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web.",
+      "seoTitle": "BiblioFuse - Lector de eBooks, Gestor de Biblioteca y Herramientas de Compresión",
+      "seoDesc": "BiblioFuse es un ecosistema privado de libros electrónicos para leer, organizar, transmitir, comprimir y fusionar tu biblioteca personal en iPhone, iPad, Mac, Android y la web.",
       "hero": {
-        "version": "Version 2.0.1 - native on iPhone, iPad & Mac",
-        "titleA": "Your library,",
-        "titleB": "read your way.",
-        "desc": "BiblioFuse is a native reader and library manager for personal ebook, comic, and document collections across iPhone, iPad, and Mac.",
-        "warningTitle": "Download from official sources only.",
-        "warningBody": "BiblioFuse is exclusively distributed via Apple App Store, Google Play Store and Microsoft Store. Never download from unofficial websites.",
+        "version": "Versión 2.0.1 — nativa en iPhone, iPad y Mac",
+        "titleA": "Tu biblioteca,",
+        "titleB": "lee a tu manera.",
+        "desc": "BiblioFuse es un lector y gestor de biblioteca nativo para colecciones personales de ebooks, cómics y documentos en iPhone, iPad y Mac.",
+        "warningTitle": "Descarga solo de fuentes oficiales.",
+        "warningBody": "BiblioFuse se distribuye exclusivamente a través de Apple App Store, Google Play Store y Microsoft Store. Nunca descargues de sitios web no oficiales.",
         "chipA": "Universal · iCloud",
         "chipB": "iPhone · iPad · Mac",
-        "chipC": "TTS · auto-scroll",
-        "chipD": "Hands-free reading",
-        "reads": "Reads"
+        "chipC": "TTS · auto-desplazamiento",
+        "chipD": "Lectura manos libres",
+        "reads": "Lee"
       },
       "table": {
         "eyebrow": "Comparar ediciones",

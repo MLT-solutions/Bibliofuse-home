@@ -242,20 +242,20 @@
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
     "home": {
-      "seoTitle": "BiblioFuse - E-book Reader, Library Manager & Compression Tools",
-      "seoDesc": "BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web.",
+      "seoTitle": "BiblioFuse — Lecteur d'eBooks, Gestionnaire de Bibliothèque et Outils de Compression",
+      "seoDesc": "BiblioFuse est un écosystème privé de livres électroniques pour lire, organiser, diffuser, compresser et fusionner votre bibliothèque personnelle sur iPhone, iPad, Mac, Android et le web.",
       "hero": {
-        "version": "Version 2.0.1 - native on iPhone, iPad & Mac",
-        "titleA": "Your library,",
-        "titleB": "read your way.",
-        "desc": "BiblioFuse is a native reader and library manager for personal ebook, comic, and document collections across iPhone, iPad, and Mac.",
-        "warningTitle": "Download from official sources only.",
-        "warningBody": "BiblioFuse is exclusively distributed via Apple App Store, Google Play Store and Microsoft Store. Never download from unofficial websites.",
-        "chipA": "Universal · iCloud",
+        "version": "Version 2.0.1 — native sur iPhone, iPad et Mac",
+        "titleA": "Votre bibliothèque,",
+        "titleB": "lisez à votre façon.",
+        "desc": "BiblioFuse est un lecteur et gestionnaire de bibliothèque natif pour vos collections personnelles d'ebooks, de BD et de documents sur iPhone, iPad et Mac.",
+        "warningTitle": "Téléchargez uniquement depuis les sources officielles.",
+        "warningBody": "BiblioFuse est distribué exclusivement via l'Apple App Store, le Google Play Store et le Microsoft Store. Ne téléchargez jamais depuis des sites non officiels.",
+        "chipA": "Universel · iCloud",
         "chipB": "iPhone · iPad · Mac",
-        "chipC": "TTS · auto-scroll",
-        "chipD": "Hands-free reading",
-        "reads": "Reads"
+        "chipC": "TTS · défilement automatique",
+        "chipD": "Lecture mains libres",
+        "reads": "Lit"
       },
       "table": {
         "eyebrow": "Comparer les éditions",

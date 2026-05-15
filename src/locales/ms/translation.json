@@ -242,20 +242,20 @@
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
     "home": {
-      "seoTitle": "BiblioFuse - E-book Reader, Library Manager & Compression Tools",
-      "seoDesc": "BiblioFuse is a private e-book ecosystem for reading, organizing, streaming, compressing and merging your personal library on iPhone, iPad, Mac, Android and the web.",
+      "seoTitle": "BiblioFuse — Pembaca E-book, Pengurus Perpustakaan & Alat Mampatan",
+      "seoDesc": "BiblioFuse ialah ekosistem e-book peribadi untuk membaca, menyusun, menstrim, memampat dan menggabungkan perpustakaan peribadi anda pada iPhone, iPad, Mac, Android dan web.",
       "hero": {
-        "version": "Version 2.0.1 - native on iPhone, iPad & Mac",
-        "titleA": "Your library,",
-        "titleB": "read your way.",
-        "desc": "BiblioFuse is a native reader and library manager for personal ebook, comic, and document collections across iPhone, iPad, and Mac.",
-        "warningTitle": "Download from official sources only.",
-        "warningBody": "BiblioFuse is exclusively distributed via Apple App Store, Google Play Store and Microsoft Store. Never download from unofficial websites.",
+        "version": "Versi 2.0.1 — asli pada iPhone, iPad & Mac",
+        "titleA": "Perpustakaan anda,",
+        "titleB": "baca mengikut cara anda.",
+        "desc": "BiblioFuse ialah pembaca dan pengurus perpustakaan asli untuk koleksi ebook, komik dan dokumen peribadi pada iPhone, iPad dan Mac.",
+        "warningTitle": "Muat turun hanya dari sumber rasmi.",
+        "warningBody": "BiblioFuse diedarkan secara eksklusif melalui Apple App Store, Google Play Store dan Microsoft Store. Jangan sesekali memuat turun dari laman web tidak rasmi.",
         "chipA": "Universal · iCloud",
         "chipB": "iPhone · iPad · Mac",
-        "chipC": "TTS · auto-scroll",
-        "chipD": "Hands-free reading",
-        "reads": "Reads"
+        "chipC": "TTS · tatal auto",
+        "chipD": "Bacaan tanpa tangan",
+        "reads": "Membaca"
       },
       "table": {
         "eyebrow": "Bandingkan edisi",
