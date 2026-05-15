@@ -562,4 +562,191 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/about" />
   </url>
+  <url>
+    <loc>https://bibliofuse.com/en/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/privacy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/privacy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/privacy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/privacy" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/es/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/privacy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/privacy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/privacy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/privacy" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/fr/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/privacy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/privacy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/privacy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/privacy" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/nl/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/privacy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/privacy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/privacy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/privacy" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/pt/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/privacy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/privacy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/privacy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/privacy" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ru/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/privacy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/privacy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/privacy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/privacy" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/zh/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/privacy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/privacy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/privacy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/privacy" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ja/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/privacy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/privacy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/privacy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/privacy" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ko/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/privacy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/privacy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/privacy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/privacy" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/id/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/privacy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/privacy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/privacy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/privacy" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ms/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/privacy" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/privacy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/privacy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/privacy" />
+  </url>
 </urlset>
