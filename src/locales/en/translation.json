@@ -213,6 +213,14 @@
         "cbz-vs-cbr-vs-epub-formats-explained": {
           "title": "CBZ vs CBR vs EPUB — Comic and Ebook Formats Explained",
           "excerpt": "Confused by CBZ, CBR, EPUB, and PDF? This guide explains what each format contains, where it came from, and which one to download for comics, manga, or novels."
+        },
+        "wifi-transfer-comics-to-iphone": {
+          "title": "How to Transfer Comics to iPhone Without iTunes or a Cable",
+          "excerpt": "BiblioFuse Wi-Fi Transfer lets you drag an entire comic library from your Mac or PC browser directly into your iPhone — no cable, no iTunes, no cloud upload required."
+        },
+        "how-to-read-manga-on-iphone": {
+          "title": "How to Read Manga on iPhone: Right-to-Left, Vertical Scroll, and Double Pages",
+          "excerpt": "Configure BiblioFuse for manga reading: enable right-to-left mode, use vertical scroll for webtoons, and get proper double-page spreads in landscape orientation."
         }
       }
     },

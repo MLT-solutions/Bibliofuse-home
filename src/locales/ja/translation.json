@@ -634,6 +634,14 @@
         "cbz-vs-cbr-vs-epub-formats-explained": {
           "title": "CBZ vs CBR vs EPUB — コミック・電子書籍フォーマット完全解説",
           "excerpt": "CBZ、CBR、EPUB、PDFの違いに困惑していませんか？各フォーマットの中身と、コミック・マンガ・小説にどれを選ぶべきかを解説します。"
+        },
+        "wifi-transfer-comics-to-iphone": {
+          "title": "iTunesやケーブルなしでiPhoneにコミックを転送する方法",
+          "excerpt": "BiblioFuseのWi-Fi転送機能を使えば、MacやPCのブラウザからiPhoneに漫画ライブラリを直接ドラッグ＆ドロップで転送できます。ケーブル不要、iTunes不要、クラウドアップロード不要。"
+        },
+        "how-to-read-manga-on-iphone": {
+          "title": "iPhoneでマンガを読む：右から左、縦スクロール、見開きページの設定方法",
+          "excerpt": "BiblioFuseをマンガ向けに設定する方法：右から左の読み方向、縦スクロール（ウェブトゥーン対応）、横向きでの見開き表示を解説します。"
         }
       }
     }

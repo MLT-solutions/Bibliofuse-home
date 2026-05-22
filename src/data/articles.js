@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'how-to-read-manga-on-iphone',
+    date: '2026-05-22',
+    tags: ['guide', 'tips'],
+    coverImage: '/image/blog/Read Manga on iPhone.jpg',
+  },
+  {
+    slug: 'wifi-transfer-comics-to-iphone',
+    date: '2026-05-22',
+    tags: ['guide', 'tips'],
+    coverImage: '/image/blog/Transfer Comics to iPhone.jpg',
+  },
+  {
     slug: 'cbz-vs-cbr-vs-epub-formats-explained',
     date: '2026-05-22',
     tags: ['guide'],
