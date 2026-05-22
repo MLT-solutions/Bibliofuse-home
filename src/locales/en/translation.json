@@ -194,6 +194,10 @@
         "update": "Update"
       },
       "posts": {
+        "manage-your-bibliofuse-library": {
+          "title": "Managing Your BiblioFuse Library: Folders, Transfers, and Mac Streaming",
+          "excerpt": "How to get books into BiblioFuse on any platform, manage your library grid, and stream your entire Mac collection to iPhone over Tailscale."
+        },
         "reduce-comic-ebook-file-size": {
           "title": "Why Comic and Ebook Files Are So Large — and How to Fix It",
           "excerpt": "CBZ and EPUB are both ZIP archives packed with PNG images. Learn why that makes them huge, and how BiblioFuse's on-device compression shrinks them by up to 87.5%."

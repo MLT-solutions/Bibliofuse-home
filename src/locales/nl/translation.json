@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "manage-your-bibliofuse-library": {
+          "title": "Je BiblioFuse-bibliotheek beheren: mappen, overdrachten en Mac-streaming",
+          "excerpt": "Hoe je boeken toevoegt op elk platform, je bibliotheekraster beheert en je volledige Mac-collectie streamt naar iPhone via Tailscale."
+        },
         "reduce-comic-ebook-file-size": {
           "title": "Waarom comic- en ebook-bestanden zo groot zijn — en hoe je dat oplost",
           "excerpt": "CBZ en EPUB zijn ZIP-archieven vol PNG-afbeeldingen. Leer waarom ze zo groot zijn en hoe BiblioFuse ze tot 87,5% kleiner maakt."

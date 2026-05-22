@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "manage-your-bibliofuse-library": {
+          "title": "Gerencie sua biblioteca BiblioFuse: pastas, transferências e streaming do Mac",
+          "excerpt": "Como adicionar livros em qualquer plataforma, gerenciar a grade da biblioteca e transmitir toda a coleção do Mac para o iPhone via Tailscale."
+        },
         "reduce-comic-ebook-file-size": {
           "title": "Por que arquivos de quadrinhos e ebooks são tão grandes — e como resolver",
           "excerpt": "CBZ e EPUB são arquivos ZIP com imagens PNG. Saiba por que são tão grandes e como o BiblioFuse os reduz em até 87,5%."

@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "manage-your-bibliofuse-library": {
+          "title": "Mengurus Perpustakaan BiblioFuse: Folder, Pemindahan, dan Penstriman dari Mac",
+          "excerpt": "Cara menambah buku di semua platform, mengurus grid perpustakaan, dan membuat penstriman seluruh koleksi Mac ke iPhone melalui Tailscale."
+        },
         "reduce-comic-ebook-file-size": {
           "title": "Kenapa Fail Komik dan Ebook Sangat Besar — dan Cara Mengatasinya",
           "excerpt": "CBZ dan EPUB kedua-duanya adalah arkib ZIP yang penuh dengan imej PNG. Ketahui sebab saiznya besar dan cara BiblioFuse mengurangkannya sehingga 87.5%."

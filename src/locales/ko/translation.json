@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "manage-your-bibliofuse-library": {
+          "title": "BiblioFuse 라이브러리 관리: 폴더, 전송, Mac 스트리밍",
+          "excerpt": "모든 플랫폼에서 책을 추가하는 방법, 라이브러리 그리드 관리, Tailscale로 Mac 컬렉션 전체를 iPhone으로 스트리밍하는 방법."
+        },
         "reduce-comic-ebook-file-size": {
           "title": "만화와 전자책 파일이 왜 이렇게 큰가 — 그리고 해결 방법",
           "excerpt": "CBZ와 EPUB은 모두 PNG 이미지로 가득 찬 ZIP 아카이브입니다. 파일이 왜 이렇게 큰지, 그리고 BiblioFuse가 최대 87.5% 줄이는 방법을 알아보세요."

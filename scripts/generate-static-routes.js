@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
-const ARTICLE_SLUGS = ['reduce-comic-ebook-file-size', 'getting-started-with-bibliofuse'];
+const ARTICLE_SLUGS = ['manage-your-bibliofuse-library', 'reduce-comic-ebook-file-size', 'getting-started-with-bibliofuse'];
 const ROUTES = ['/', '/webapp', '/about', '/privacy', '/blog', ...ARTICLE_SLUGS.map(s => `/blog/${s}`)];
 
 const distDir = join(__dirname, '..', 'dist');
