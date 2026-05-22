@@ -4,6 +4,7 @@
     "reader": "リーダー",
     "webapp": "Webアプリ",
     "about": "概要",
+    "blog": "ブログ",
     "tools": "ツール",
     "getApp": "アプリを入手"
   },
@@ -608,7 +609,17 @@
         "サンプル画像ページの知覚ハッシュでCBZ、CBR、ZIP、RARの重複を検出",
         "ローカルブラウザ処理のプライベートWebAssembly Webツール",
         "広告なし、追跡なし、アカウント不要"
-      ]
+      ],
+      "blogTitle": "BiblioFuseブログ — ヒント、ガイド、アップデート",
+      "blogDesc": "BiblioFuseをさらに活用するためのガイド、リリースノート、アイデアをお届けします。"
+    },
+    "blog": {
+      "posts": {
+        "getting-started-with-bibliofuse": {
+          "title": "BiblioFuseを使い始める",
+          "excerpt": "書籍のインポート、ライブラリの管理、すぐに読み始めるためのコア機能のガイドです。"
+        }
+      }
     }
   }
 }

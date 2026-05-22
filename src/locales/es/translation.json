@@ -4,6 +4,7 @@
     "reader": "Lector",
     "webapp": "Aplicación Web",
     "about": "Sobre",
+    "blog": "Blog",
     "tools": "Herramientas",
     "getApp": "Obtener app"
   },
@@ -608,7 +609,17 @@
         "Detector de duplicados CBZ, CBR, ZIP y RAR con hash perceptual de páginas muestreadas",
         "Herramienta web privada WebAssembly con procesamiento local",
         "Sin anuncios, sin rastreo y sin cuenta"
-      ]
+      ],
+      "blogTitle": "BiblioFuse Blog — Consejos, guías y novedades",
+      "blogDesc": "Guías, notas de versión e ideas para sacar el máximo partido a BiblioFuse."
+    },
+    "blog": {
+      "posts": {
+        "getting-started-with-bibliofuse": {
+          "title": "Comenzando con BiblioFuse",
+          "excerpt": "Un recorrido por las funciones principales para importar libros, gestionar tu biblioteca y empezar a leer en minutos."
+        }
+      }
     }
   }
 }

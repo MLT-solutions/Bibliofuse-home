@@ -8,11 +8,14 @@ const __dirname = dirname(__filename);
 // Configuration
 const BASE_URL = 'https://bibliofuse.com';
 const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
+const ARTICLE_SLUGS = ['getting-started-with-bibliofuse'];
 const ROUTES = [
     { path: '/', priority: '1.0', changefreq: 'weekly' },
     { path: '/webapp/', priority: '0.8', changefreq: 'monthly' },
     { path: '/about/', priority: '0.6', changefreq: 'monthly' },
     { path: '/privacy/', priority: '0.4', changefreq: 'yearly' },
+    { path: '/blog/', priority: '0.7', changefreq: 'weekly' },
+    ...ARTICLE_SLUGS.map(s => ({ path: `/blog/${s}/`, priority: '0.6', changefreq: 'monthly' })),
 ];
 
 function generateSitemap() {

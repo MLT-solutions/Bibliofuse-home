@@ -4,6 +4,7 @@
     "reader": "Lezer",
     "webapp": "Web App",
     "about": "Over",
+    "blog": "Blog",
     "tools": "Tools",
     "getApp": "Download app"
   },
@@ -608,7 +609,17 @@
         "CBZ, CBR, ZIP en RAR duplicaatscanner met perceptuele hash van voorbeeldpagina’s",
         "Privé WebAssembly webtool met lokale browserverwerking",
         "Geen advertenties, geen tracking en geen account"
-      ]
+      ],
+      "blogTitle": "BiblioFuse Blog — Tips, gidsen en updates",
+      "blogDesc": "Gidsen, release notes en ideeën om meer uit BiblioFuse te halen."
+    },
+    "blog": {
+      "posts": {
+        "getting-started-with-bibliofuse": {
+          "title": "Aan de slag met BiblioFuse",
+          "excerpt": "Een overzicht van de kernfuncties om boeken te importeren, je bibliotheek te beheren en binnen enkele minuten te beginnen met lezen."
+        }
+      }
     }
   }
 }

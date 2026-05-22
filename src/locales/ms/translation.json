@@ -4,6 +4,7 @@
     "reader": "Pembaca",
     "webapp": "Aplikasi Web",
     "about": "Tentang",
+    "blog": "Blog",
     "tools": "Alat",
     "getApp": "Dapatkan app"
   },
@@ -608,7 +609,17 @@
         "Pengimbas pendua CBZ, CBR, ZIP dan RAR menggunakan hash persepsi halaman sampel",
         "Alat web WebAssembly peribadi dengan pemprosesan pelayar setempat",
         "Tiada iklan, tiada penjejakan dan tiada akaun"
-      ]
+      ],
+      "blogTitle": "Blog BiblioFuse — Petua, panduan & kemas kini",
+      "blogDesc": "Panduan, nota keluaran, dan idea untuk memaksimalkan penggunaan BiblioFuse."
+    },
+    "blog": {
+      "posts": {
+        "getting-started-with-bibliofuse": {
+          "title": "Bermula dengan BiblioFuse",
+          "excerpt": "Panduan ciri-ciri utama untuk mengimport buku, mengurus perpustakaan anda, dan mula membaca dalam beberapa minit."
+        }
+      }
     }
   }
 }

@@ -4,6 +4,7 @@
     "reader": "Lecteur",
     "webapp": "WebApp",
     "about": "À propos",
+    "blog": "Blog",
     "tools": "Outils",
     "getApp": "Obtenir l’app"
   },
@@ -608,7 +609,17 @@
         "Détection de doublons CBZ, CBR, ZIP et RAR par hachage perceptuel de pages échantillonnées",
         "Outil web WebAssembly privé avec traitement local",
         "Sans publicité, sans suivi et sans compte"
-      ]
+      ],
+      "blogTitle": "Blog BiblioFuse — Conseils, guides et nouveautés",
+      "blogDesc": "Guides, notes de version et idées pour tirer le meilleur parti de BiblioFuse."
+    },
+    "blog": {
+      "posts": {
+        "getting-started-with-bibliofuse": {
+          "title": "Démarrer avec BiblioFuse",
+          "excerpt": "Un tour d'horizon des fonctions essentielles pour importer des livres, gérer votre bibliothèque et commencer à lire en quelques minutes."
+        }
+      }
     }
   }
 }

@@ -4,6 +4,7 @@
     "reader": "Pembaca",
     "webapp": "Aplikasi Web",
     "about": "Tentang",
+    "blog": "Blog",
     "tools": "Alat",
     "getApp": "Dapatkan app"
   },
@@ -608,7 +609,17 @@
         "Pemindai duplikat CBZ, CBR, ZIP dan RAR memakai perceptual hash halaman contoh",
         "Alat web WebAssembly privat dengan pemrosesan lokal browser",
         "Tanpa iklan, tanpa pelacakan dan tanpa akun"
-      ]
+      ],
+      "blogTitle": "Blog BiblioFuse — Tips, panduan & pembaruan",
+      "blogDesc": "Panduan, catatan rilis, dan ide untuk memaksimalkan penggunaan BiblioFuse."
+    },
+    "blog": {
+      "posts": {
+        "getting-started-with-bibliofuse": {
+          "title": "Memulai dengan BiblioFuse",
+          "excerpt": "Panduan fitur utama untuk mengimpor buku, mengelola perpustakaan, dan mulai membaca dalam hitungan menit."
+        }
+      }
     }
   }
 }

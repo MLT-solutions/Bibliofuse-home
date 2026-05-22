@@ -4,6 +4,7 @@
     "reader": "Reader",
     "webapp": "Web App",
     "about": "About",
+    "blog": "Blog",
     "tools": "Tools",
     "getApp": "Get the app"
   },
@@ -174,6 +175,30 @@
     "nav": {
       "tools": "Tools",
       "getApp": "Get the app"
+    },
+    "blog": {
+      "eyebrow": "Blog",
+      "title": "Tips, guides & updates",
+      "subtitle": "Guides, release notes, and ideas to help you get more from your reading life.",
+      "readMore": "Read article",
+      "backToBlog": "Back to Blog",
+      "notFound": "Article not found. It may have been moved or removed.",
+      "homeSectionEyebrow": "From the Blog",
+      "homeSectionTitle": "Tips & updates",
+      "homeSectionDesc": "Guides, release notes, and ideas for your reading life.",
+      "viewAll": "View all articles",
+      "tags": {
+        "guide": "Guide",
+        "news": "News",
+        "tips": "Tips",
+        "update": "Update"
+      },
+      "posts": {
+        "getting-started-with-bibliofuse": {
+          "title": "Getting Started with BiblioFuse",
+          "excerpt": "A walkthrough of the core features to help you import books, manage your library, and start reading in minutes."
+        }
+      }
     },
     "tools": {
       "readerSub": "iPhone · iPad · Mac · Android",
@@ -600,6 +625,8 @@
       "aboutDesc": "BiblioFuse builds private, on-device reading and file tools for personal ebook, comic, archive and document libraries across iPhone, iPad, Mac, Android, Windows and web.",
       "privacyTitle": "BiblioFuse Privacy Policy",
       "privacyDesc": "BiblioFuse keeps reading, compression, merge, streaming and duplicate-scan workflows private with local or platform-owned storage. No ads and no tracking.",
+      "blogTitle": "BiblioFuse Blog — Tips, guides & updates",
+      "blogDesc": "Guides, release notes, and ideas to help you get more from BiblioFuse.",
       "appFeatures": [
         "EPUB, PDF, CBZ, CBR, RAR, ZIP and TXT reader",
         "Mac home library streaming to iPhone and iPad over Wi-Fi or remote 5G with Tailscale",

@@ -34,6 +34,7 @@ const Navigation = () => {
         { id: 'reader', label: t('nav.reader'), path: '/', hash: '#reader' },
         { id: 'webapp', label: t('nav.webapp'), path: '/webapp' },
         { id: 'about', label: t('nav.about'), path: '/about' },
+        { id: 'blog', label: t('nav.blog'), path: '/blog' },
     ];
     const tools = [
         { name: 'BiblioFuse Reader', sub: t('redesign.tools.readerSub'), path: '/', hash: '#reader', color: 'blue', icon: 'book' },
@@ -82,7 +83,11 @@ const Navigation = () => {
 
     // Get current active tab based on location
     const currentPath = location.pathname.replace(`/${lang}`, '') || '/';
-    const activeTab = location.hash === '#reader' ? 'reader' : tabs.find(tab => tab.path === currentPath && !tab.hash)?.id || null;
+    const activeTab = location.hash === '#reader'
+        ? 'reader'
+        : (currentPath.startsWith('/blog')
+            ? 'blog'
+            : tabs.find(tab => tab.path === currentPath && !tab.hash)?.id || null);
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/80 transition-all duration-300">

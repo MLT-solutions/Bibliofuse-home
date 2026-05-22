@@ -4,6 +4,7 @@
     "reader": "阅读器",
     "webapp": "Web应用",
     "about": "关于",
+    "blog": "博客",
     "tools": "工具",
     "getApp": "获取应用"
   },
@@ -608,7 +609,17 @@
         "使用抽样页面感知哈希查找 CBZ、CBR、ZIP、RAR 重复项",
         "私密 WebAssembly 网页工具，本地浏览器处理",
         "无广告、无追踪、无需账户"
-      ]
+      ],
+      "blogTitle": "BiblioFuse 博客 — 技巧、指南与更新",
+      "blogDesc": "指南、版本说明和创意，帮助您从 BiblioFuse 中获得更多。"
+    },
+    "blog": {
+      "posts": {
+        "getting-started-with-bibliofuse": {
+          "title": "BiblioFuse 入门指南",
+          "excerpt": "核心功能概览，帮助您导入书籍、管理图书馆，几分钟内即可开始阅读。"
+        }
+      }
     }
   }
 }

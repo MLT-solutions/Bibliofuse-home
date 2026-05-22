@@ -6,7 +6,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
-const ROUTES = ['/', '/webapp', '/about', '/privacy'];
+const ARTICLE_SLUGS = ['getting-started-with-bibliofuse'];
+const ROUTES = ['/', '/webapp', '/about', '/privacy', '/blog', ...ARTICLE_SLUGS.map(s => `/blog/${s}`)];
 
 const distDir = join(__dirname, '..', 'dist');
 const sourceIndex = join(distDir, 'index.html');

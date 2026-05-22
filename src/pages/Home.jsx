@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import logo from '../assets/logo.png';
 import SEO from '../components/SEO';
+import { articles } from '../data/articles';
 
 const appStoreUrl = 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093';
 const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ';
@@ -875,6 +876,89 @@ function PrivacyStrip() {
   );
 }
 
+const TAG_COLORS = {
+  guide: 'bg-blue-50 text-blue-600',
+  news: 'bg-teal-50 text-teal-600',
+  tips: 'bg-violet-50 text-violet-600',
+  update: 'bg-green-50 text-green-600',
+};
+
+function BlogPreview({ lang }) {
+  const { t, i18n } = useTranslation();
+  const currentLang = lang || i18n.language || 'en';
+  const preview = articles.slice(0, 3);
+
+  if (preview.length === 0) return null;
+
+  return (
+    <section className="bg-[#f5f8ff] py-20 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <div className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">
+              {t('redesign.blog.homeSectionEyebrow')}
+            </div>
+            <h2 className="text-[clamp(1.75rem,3.5vw,2.5rem)] font-black leading-tight tracking-tight text-slate-950">
+              {t('redesign.blog.homeSectionTitle')}
+            </h2>
+            <p className="mt-2 text-base text-slate-500">{t('redesign.blog.homeSectionDesc')}</p>
+          </div>
+          <Link
+            to={`/${currentLang}/blog`}
+            className="inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 hover:text-slate-950"
+          >
+            {t('redesign.blog.viewAll')}
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </Link>
+        </div>
+
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {preview.map(article => {
+            const title = t(`redesign.blog.posts.${article.slug}.title`, { defaultValue: article.slug });
+            const excerpt = t(`redesign.blog.posts.${article.slug}.excerpt`, { defaultValue: '' });
+            const dateStr = new Date(article.date).toLocaleDateString(currentLang, {
+              year: 'numeric', month: 'short', day: 'numeric',
+            });
+            return (
+              <Link
+                key={article.slug}
+                to={`/${currentLang}/blog/${article.slug}`}
+                className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <div className="mb-3 flex flex-wrap gap-2">
+                  {article.tags.map(tag => (
+                    <span
+                      key={tag}
+                      className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold ${TAG_COLORS[tag] ?? TAG_COLORS.guide}`}
+                    >
+                      {t(`redesign.blog.tags.${tag}`, { defaultValue: tag })}
+                    </span>
+                  ))}
+                </div>
+                <h3 className="mb-2 flex-1 text-base font-black leading-snug text-slate-950 transition-colors group-hover:text-blue-600">
+                  {title}
+                </h3>
+                <p className="mb-4 line-clamp-2 text-sm leading-relaxed text-slate-500">{excerpt}</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-slate-400">{dateStr}</span>
+                  <span className="flex items-center gap-1 text-xs font-semibold text-blue-600 transition-[gap] group-hover:gap-2">
+                    {t('redesign.blog.readMore')}
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                  </span>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function FinalCTA({ lang }) {
   const { t } = useTranslation();
   return (
@@ -945,6 +1029,7 @@ const Home = () => {
       <ArchiveScannerSection />
       <SmartDecryptSection />
       <PrivacyStrip />
+      <BlogPreview lang={lang} />
       <FinalCTA lang={lang} />
       <StickyDownloadBar />
     </div>
