@@ -56,7 +56,7 @@ Untuk mengirim buku ke tab Alat, masuk ke mode pilihan (tekan lama buku pertama,
 
 ## Streaming Perpustakaan Mac ke iPhone
 
-Jika koleksi utama kamu ada di Mac, kamu tidak perlu menyalin apa pun. BiblioFuse bisa melakukan streaming langsung dari Mac ke iPhone — tetapi gunakan Tailscale daripada metode Wi-Fi dasar yang bisa tidak stabil saat ponsel berpindah jaringan.
+Jika koleksi utama kamu ada di Mac, kamu tidak perlu menyalin apa pun. [BiblioFuse](/id/) bisa melakukan streaming langsung dari Mac ke iPhone — tetapi gunakan Tailscale daripada metode Wi-Fi dasar yang bisa tidak stabil saat ponsel berpindah jaringan.
 
 Tailscale membuat jaringan terenkripsi privat antara perangkatmu. Setelah dikonfigurasi, iPhone kamu dapat menjangkau Mac baik saat menggunakan data seluler, Wi-Fi publik, maupun di rumah.
 

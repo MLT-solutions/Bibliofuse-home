@@ -2,7 +2,7 @@
 
 Je hebt een leesapp gedownload, een map met CBZ-bestanden gekopieerd en nu ziet je bibliotheek eruit als een archiefkast na een tornado. Herkenbaar?
 
-BiblioFuse is gebouwd op een eenvoudig idee: je verzameling ebooks, strips en documenten moet aanvoelen als een echte bibliotheek — georganiseerd, snel en volledig van jou. Geen cloud-uploads, geen abonnementen, geen advertenties. Gewoon jouw bestanden, op jouw apparaten.
+[BiblioFuse](/nl/) is gebouwd op een eenvoudig idee: je verzameling ebooks, strips en documenten moet aanvoelen als een echte bibliotheek — georganiseerd, snel en volledig van jou. Geen cloud-uploads, geen abonnementen, geen advertenties. Gewoon jouw bestanden, op jouw apparaten.
 
 Deze handleiding behandelt alles wat je nodig hebt om van nul naar een werkende bibliotheek te gaan in een paar minuten.
 
@@ -54,4 +54,3 @@ Om een mangaserie samen te voegen tot één volume, houd je meerdere CBZ-bestand
 - **iCloud-boekenplank** — schakel het in via Instellingen om je bibliotheek, leesposities, tags en beoordelingen automatisch te synchroniseren.
 - **Archive Duplicate Scanner** — een bijbehorende Mac-app die dubbele CBZ- en fotobestanden vindt via perceptuele hashing.
 
-BiblioFuse is ontworpen om onzichtbaar te blijven — stel het eenmalig in en het werkt vanzelf. Voor losse bestandsklussen op elk apparaat is de [Webtool](/nl/webapp) altijd beschikbaar.

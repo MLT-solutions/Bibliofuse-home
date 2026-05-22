@@ -24,7 +24,7 @@ Een hoge-resolutie comicpagina — doorgaans 1800 × 2700 pixels in 24-bits kleu
 | WebP (gecomprimeerd) | 200 | ~250 kB | **~50 MB** |
 | Opgeslagen ruimte | | | **87,5%** |
 
-Over een lange serie: een mangabibliotheek van 50 delen in PNG neemt zo'n **20 GB** in beslag. Diezelfde serie gecomprimeerd naar WebP past in **2,5 GB** — een besparing van **17,5 GB** voor één enkele serie.
+Over een lange serie: een mangabibliotheek van 50 delen in PNG neemt zo'n **20 GB** in beslag. Diezelfde serie gecomprimeerd naar WebP past in **2,5 GB** — een besparing van **17,5 GB** voor één enkele serie. Tools zoals [BiblioFuse](/nl/webapp) verwerken deze conversie volledig op het apparaat, zonder desktopsoftware.
 
 ## Wat WebP beter maakt
 

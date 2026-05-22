@@ -2,7 +2,7 @@
 
 Anda mengunduh aplikasi baca, menyalin folder berisi file CBZ, dan sekarang perpustakaan Anda terlihat seperti lemari arsip setelah diterjang badai. Familiar?
 
-BiblioFuse dibangun di atas ide sederhana: koleksi ebook, komik, dan dokumen Anda seharusnya terasa seperti perpustakaan sungguhan — terorganisir, cepat, dan sepenuhnya milik Anda. Tidak ada unggahan ke cloud, tidak ada langganan, tidak ada iklan. Hanya file Anda, di perangkat Anda.
+[BiblioFuse](/id/) dibangun di atas ide sederhana: koleksi ebook, komik, dan dokumen Anda seharusnya terasa seperti perpustakaan sungguhan — terorganisir, cepat, dan sepenuhnya milik Anda. Tidak ada unggahan ke cloud, tidak ada langganan, tidak ada iklan. Hanya file Anda, di perangkat Anda.
 
 Panduan ini mencakup semua yang Anda butuhkan untuk membangun perpustakaan yang berfungsi dari nol dalam beberapa menit.
 
@@ -54,4 +54,3 @@ Untuk menggabungkan seri manga menjadi satu volume, tekan dan tahan beberapa fil
 - **iCloud Bookshelf** — aktifkan di Pengaturan untuk menyinkronkan perpustakaan, posisi baca, tag, dan penilaian secara otomatis.
 - **Archive Duplicate Scanner** — aplikasi pendamping untuk Mac yang menemukan file CBZ dan foto duplikat menggunakan perceptual hashing.
 
-BiblioFuse dirancang untuk tidak mengganggu — atur sekali dan biarkan bekerja sendiri. Untuk pekerjaan file cepat dari perangkat mana pun, [Web Tool](/id/webapp) selalu tersedia.

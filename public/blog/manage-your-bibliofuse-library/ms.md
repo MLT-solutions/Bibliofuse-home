@@ -56,7 +56,7 @@ Untuk menghantar buku ke tab Alat, masuk ke mod pilihan (tekan lama buku pertama
 
 ## Penstriman Perpustakaan Mac ke iPhone
 
-Jika koleksi utama kamu ada di Mac, kamu tidak perlu menyalin apa-apa. BiblioFuse boleh membuat penstriman terus dari Mac ke iPhone — tetapi gunakan Tailscale dan bukannya kaedah Wi-Fi asas yang boleh tidak stabil apabila telefon bertukar rangkaian.
+Jika koleksi utama kamu ada di Mac, kamu tidak perlu menyalin apa-apa. [BiblioFuse](/ms/) boleh membuat penstriman terus dari Mac ke iPhone — tetapi gunakan Tailscale dan bukannya kaedah Wi-Fi asas yang boleh tidak stabil apabila telefon bertukar rangkaian.
 
 Tailscale mencipta rangkaian peribadi yang disulitkan antara peranti kamu. Setelah disediakan, iPhone kamu boleh mencapai Mac kamu sama ada menggunakan data mudah alih, Wi-Fi awam, atau di rumah.
 

@@ -2,7 +2,7 @@
 
 Descargaste una app de lectura, copiaste una carpeta de archivos CBZ y ahora tu biblioteca parece un archivero después de un tornado. ¿Te suena familiar?
 
-BiblioFuse está construido sobre una idea simple: tu colección de ebooks, cómics y documentos debería sentirse como una biblioteca de verdad — organizada, rápida y completamente tuya. Sin subidas a la nube, sin suscripciones, sin anuncios. Solo tus archivos, en tus dispositivos.
+[BiblioFuse](/es/) está construido sobre una idea simple: tu colección de ebooks, cómics y documentos debería sentirse como una biblioteca de verdad — organizada, rápida y completamente tuya. Sin subidas a la nube, sin suscripciones, sin anuncios. Solo tus archivos, en tus dispositivos.
 
 Esta guía cubre todo lo que necesitas para pasar de cero a una biblioteca funcional en pocos minutos.
 
@@ -54,4 +54,3 @@ Para combinar una serie de manga en un único volumen, mantén pulsado para sele
 - **Estantería iCloud** — actívala en Ajustes para sincronizar tu biblioteca, posiciones de lectura, etiquetas y valoraciones automáticamente.
 - **Archive Duplicate Scanner** — una app para Mac que encuentra archivos CBZ y fotos duplicados con hash perceptual, para limpiar sin revisar cada archivo a mano.
 
-BiblioFuse está diseñado para no estorbar — configúralo una vez y funciona solo. Para trabajos de archivo puntuales desde cualquier dispositivo, la [Herramienta web](/es/webapp) siempre está disponible.

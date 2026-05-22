@@ -56,7 +56,7 @@ To send books to the Tools tab, enter selection mode (long-press the first book,
 
 ## Streaming Your Mac Library to iPhone
 
-If your main collection lives on a Mac, you don't need to copy anything. BiblioFuse can stream directly from Mac to iPhone — but use Tailscale rather than the basic Wi-Fi method, which can be unreliable as your phone switches between networks.
+If your main collection lives on a Mac, you don't need to copy anything. [BiblioFuse](/en/) can stream directly from Mac to iPhone — but use Tailscale rather than the basic Wi-Fi method, which can be unreliable as your phone switches between networks.
 
 Tailscale creates a private encrypted network between your devices. Once set up, your iPhone can reach your Mac whether you're on mobile data, a coffee shop Wi-Fi, or at home. The connection is stable and works anywhere.
 

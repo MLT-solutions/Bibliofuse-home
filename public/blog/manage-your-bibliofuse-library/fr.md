@@ -56,7 +56,7 @@ Pour envoyer des livres à l'onglet Outils, activez le mode de sélection (appuy
 
 ## Streaming de votre bibliothèque Mac vers iPhone
 
-Si votre collection principale se trouve sur un Mac, vous n'avez pas besoin de tout copier. BiblioFuse peut diffuser directement depuis Mac vers iPhone — mais utilisez Tailscale plutôt que la méthode Wi-Fi de base, qui peut être instable lorsque le téléphone change de réseau.
+Si votre collection principale se trouve sur un Mac, vous n'avez pas besoin de tout copier. [BiblioFuse](/fr/) peut diffuser directement depuis Mac vers iPhone — mais utilisez Tailscale plutôt que la méthode Wi-Fi de base, qui peut être instable lorsque le téléphone change de réseau.
 
 Tailscale crée un réseau privé chiffré entre vos appareils. Une fois configuré, votre iPhone peut atteindre votre Mac que vous soyez en données mobiles, sur un Wi-Fi public ou chez vous.
 
