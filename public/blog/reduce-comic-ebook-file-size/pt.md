@@ -24,7 +24,7 @@ Uma página de quadrinho em alta resolução — tipicamente 1800 × 2700 pixels
 | WebP (comprimido) | 200 | ~250 kB | **~50 MB** |
 | Armazenamento economizado | | | **87,5%** |
 
-Multiplique por uma série longa. Uma biblioteca manga de 50 volumes em PNG ocupa cerca de **20 GB**. A mesma série comprimida para WebP cabe em **2,5 GB** — uma economia de **17,5 GB** de uma única série. Ferramentas como o [BiblioFuse](/pt/webapp) fazem essa conversão completamente no dispositivo, sem precisar de nenhum software no computador.
+Multiplique por uma série longa. Uma biblioteca manga de 50 volumes em PNG ocupa cerca de **20 GB**. A mesma série comprimida para WebP cabe em **2,5 GB** — uma economia de **17,5 GB** de uma única série. Ferramentas como o [BiblioFuse](https://bibliofuse.com/pt/webapp) fazem essa conversão completamente no dispositivo, sem precisar de nenhum software no computador.
 
 ## O que torna o WebP melhor
 

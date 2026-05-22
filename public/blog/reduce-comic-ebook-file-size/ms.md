@@ -24,7 +24,7 @@ Halaman komik beresolusi tinggi — biasanya 1800 × 2700 piksel dalam warna 24-
 | WebP (termampat) | 200 | ~250 kB | **~50 MB** |
 | Storan yang dijimat | | | **87.5%** |
 
-Darabkan dengan siri yang panjang. Perpustakaan manga 50 jilid dalam format PNG mengambil kira-kira **20 GB**. Siri yang sama selepas dimampatkan ke WebP muat dalam **2.5 GB** — penjimatan **17.5 GB** hanya daripada satu siri. Alat seperti [BiblioFuse](/ms/webapp) mengendalikan penukaran ini sepenuhnya pada peranti, tanpa memerlukan sebarang perisian desktop.
+Darabkan dengan siri yang panjang. Perpustakaan manga 50 jilid dalam format PNG mengambil kira-kira **20 GB**. Siri yang sama selepas dimampatkan ke WebP muat dalam **2.5 GB** — penjimatan **17.5 GB** hanya daripada satu siri. Alat seperti [BiblioFuse](https://bibliofuse.com/ms/webapp) mengendalikan penukaran ini sepenuhnya pada peranti, tanpa memerlukan sebarang perisian desktop.
 
 ## Apa yang Menjadikan WebP Lebih Baik
 

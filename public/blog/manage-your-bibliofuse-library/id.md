@@ -1,6 +1,6 @@
 # Mengelola Perpustakaan BiblioFuse: Folder, Transfer, dan Streaming dari Mac
 
-BiblioFuse dibangun berdasarkan satu aturan sederhana: file kamu tetap berada di tempat kamu meletakkannya. Aplikasi tidak pernah memindahkan, mengganti nama, atau mengurung file dalam format proprietary. Memahami di mana buku-buku berada — dan bagaimana menempatkannya di sana — adalah perbedaan antara perpustakaan yang bekerja untukmu dan satu yang selalu kamu lawan.
+[BiblioFuse](https://bibliofuse.com) dibangun berdasarkan satu aturan sederhana: file kamu tetap berada di tempat kamu meletakkannya. Aplikasi tidak pernah memindahkan, mengganti nama, atau mengurung file dalam format proprietary. Memahami di mana buku-buku berada — dan bagaimana menempatkannya di sana — adalah perbedaan antara perpustakaan yang bekerja untukmu dan satu yang selalu kamu lawan.
 
 ## Cara Menambahkan Buku: Empat Cara
 

@@ -1,6 +1,6 @@
 # Mengurus Perpustakaan BiblioFuse: Folder, Pemindahan, dan Penstriman dari Mac
 
-BiblioFuse dibina atas satu peraturan mudah: fail kamu kekal di tempat kamu meletakkannya. Aplikasi tidak akan memindahkan, menamakan semula, atau memenjarakan fail dalam format proprietari. Memahami di mana buku-buku berada — dan bagaimana untuk meletakkannya di sana — membezakan antara perpustakaan yang bekerja untuk kamu dengan perpustakaan yang sentiasa menentangmu.
+[BiblioFuse](https://bibliofuse.com) dibina atas satu peraturan mudah: fail kamu kekal di tempat kamu meletakkannya. Aplikasi tidak akan memindahkan, menamakan semula, atau memenjarakan fail dalam format proprietari. Memahami di mana buku-buku berada — dan bagaimana untuk meletakkannya di sana — membezakan antara perpustakaan yang bekerja untuk kamu dengan perpustakaan yang sentiasa menentangmu.
 
 ## Cara Menambah Buku: Empat Cara
 

@@ -1,6 +1,6 @@
 # Gérer votre bibliothèque BiblioFuse : dossiers, transferts et streaming depuis Mac
 
-BiblioFuse repose sur une règle simple : vos fichiers restent là où vous les placez. L'application ne déplace, ne renomme et n'enferme jamais les fichiers dans un format propriétaire. Comprendre où vivent vos livres — et comment les y amener — fait toute la différence entre une bibliothèque qui travaille pour vous et une contre laquelle vous luttez constamment.
+[BiblioFuse](https://bibliofuse.com) repose sur une règle simple : vos fichiers restent là où vous les placez. L'application ne déplace, ne renomme et n'enferme jamais les fichiers dans un format propriétaire. Comprendre où vivent vos livres — et comment les y amener — fait toute la différence entre une bibliothèque qui travaille pour vous et une contre laquelle vous luttez constamment.
 
 ## Comment ajouter des livres : quatre chemins
 

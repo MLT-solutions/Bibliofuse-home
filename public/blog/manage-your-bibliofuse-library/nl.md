@@ -1,6 +1,6 @@
 # Je BiblioFuse-bibliotheek beheren: mappen, overdrachten en Mac-streaming
 
-BiblioFuse is gebouwd op een eenvoudige regel: je bestanden blijven waar jij ze neerzet. De app verplaatst, hernoemt of sluit bestanden nooit op in een eigen formaat. Begrijpen waar boeken staan — en hoe je ze daar krijgt — maakt het verschil tussen een bibliotheek die voor je werkt en een waartegen je constant vecht.
+[BiblioFuse](https://bibliofuse.com) is gebouwd op een eenvoudige regel: je bestanden blijven waar jij ze neerzet. De app verplaatst, hernoemt of sluit bestanden nooit op in een eigen formaat. Begrijpen waar boeken staan — en hoe je ze daar krijgt — maakt het verschil tussen een bibliotheek die voor je werkt en een waartegen je constant vecht.
 
 ## Boeken toevoegen: vier manieren
 

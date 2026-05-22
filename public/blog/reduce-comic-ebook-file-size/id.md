@@ -24,7 +24,7 @@ Halaman komik beresolusi tinggi — biasanya 1800 × 2700 piksel dengan warna 24
 | WebP (terkompresi) | 200 | ~250 kB | **~50 MB** |
 | Ruang yang dihemat | | | **87,5%** |
 
-Kalikan dengan serial panjang. Perpustakaan manga 50 volume dalam format PNG memakan sekitar **20 GB**. Serial yang sama setelah dikompresi ke WebP muat dalam **2,5 GB** — penghematan **17,5 GB** hanya dari satu serial. Alat seperti [BiblioFuse](/id/webapp) menangani konversi ini sepenuhnya di perangkat, tanpa memerlukan perangkat lunak desktop apa pun.
+Kalikan dengan serial panjang. Perpustakaan manga 50 volume dalam format PNG memakan sekitar **20 GB**. Serial yang sama setelah dikompresi ke WebP muat dalam **2,5 GB** — penghematan **17,5 GB** hanya dari satu serial. Alat seperti [BiblioFuse](https://bibliofuse.com/id/webapp) menangani konversi ini sepenuhnya di perangkat, tanpa memerlukan perangkat lunak desktop apa pun.
 
 ## Apa yang Membuat WebP Lebih Baik
 

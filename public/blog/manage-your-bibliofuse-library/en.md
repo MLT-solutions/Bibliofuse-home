@@ -1,6 +1,6 @@
 # Managing Your BiblioFuse Library: Folders, Transfers, and Mac Streaming
 
-BiblioFuse is built around a simple rule: your files stay where you put them. The app never moves, renames, or locks files into a proprietary format. Understanding where books live — and how to get them there — makes the difference between a library that works for you and one you're constantly fighting.
+[BiblioFuse](https://bibliofuse.com) is built around a simple rule: your files stay where you put them. The app never moves, renames, or locks files into a proprietary format. Understanding where books live — and how to get them there — makes the difference between a library that works for you and one you're constantly fighting.
 
 ## Getting Books In: Four Paths
 

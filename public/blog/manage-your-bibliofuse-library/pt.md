@@ -1,6 +1,6 @@
 # Gerencie sua biblioteca BiblioFuse: pastas, transferências e streaming do Mac
 
-O BiblioFuse é construído em torno de uma regra simples: seus arquivos ficam onde você os coloca. O app nunca move, renomeia nem prende arquivos em um formato proprietário. Entender onde os livros ficam — e como colocá-los lá — faz a diferença entre uma biblioteca que trabalha para você e uma com a qual você está sempre brigando.
+O [BiblioFuse](https://bibliofuse.com) é construído em torno de uma regra simples: seus arquivos ficam onde você os coloca. O app nunca move, renomeia nem prende arquivos em um formato proprietário. Entender onde os livros ficam — e como colocá-los lá — faz a diferença entre uma biblioteca que trabalha para você e uma com a qual você está sempre brigando.
 
 ## Como adicionar livros: quatro caminhos
 

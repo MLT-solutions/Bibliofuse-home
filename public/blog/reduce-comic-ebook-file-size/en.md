@@ -24,7 +24,7 @@ A high-resolution comic page — typically 1800 × 2700 pixels at 24-bit color �
 | WebP (compressed) | 200 | ~250 kB | **~50 MB** |
 | Storage saved | | | **87.5%** |
 
-Scale that across a long series. A 50-volume manga library in PNG format takes up roughly **20 GB**. The same series compressed to WebP fits in about **2.5 GB** — a saving of **17.5 GB** from a single series. Tools like [BiblioFuse](/en/webapp) handle this conversion entirely on-device, without needing any desktop software.
+Scale that across a long series. A 50-volume manga library in PNG format takes up roughly **20 GB**. The same series compressed to WebP fits in about **2.5 GB** — a saving of **17.5 GB** from a single series. Tools like [BiblioFuse](https://bibliofuse.com/en/webapp) handle this conversion entirely on-device, without needing any desktop software.
 
 ## What Makes WebP Better
 
