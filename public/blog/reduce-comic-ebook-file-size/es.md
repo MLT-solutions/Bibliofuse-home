@@ -24,7 +24,7 @@ Una página de cómic en alta resolución — típicamente 1800 × 2700 píxeles
 | WebP (comprimido) | 200 | ~250 kB | **~50 MB** |
 | Espacio ahorrado | | | **87,5 %** |
 
-Multiplica eso por una serie larga. Una biblioteca manga de 50 volúmenes en PNG ocupa unos **20 GB**. La misma serie comprimida a WebP cabe en unos **2,5 GB** — un ahorro de **17,5 GB** de una sola serie. Herramientas como [BiblioFuse](https://bibliofuse.com/es/webapp) realizan esta conversión completamente en el dispositivo, sin necesitar ningún software de escritorio.
+Multiplica eso por una serie larga. Una biblioteca manga de 50 volúmenes en PNG ocupa unos **20 GB**. La misma serie comprimida a WebP cabe en unos **2,5 GB** — un ahorro de **17,5 GB** de una sola serie. Herramientas como [BiblioFuse](https://bibliofuse.com) realizan esta conversión completamente en el dispositivo, sin necesitar ningún software de escritorio.
 
 ## Qué hace mejor al WebP
 

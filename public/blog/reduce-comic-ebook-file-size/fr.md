@@ -24,7 +24,7 @@ Une planche de BD en haute résolution — typiquement 1800 × 2700 pixels en co
 | WebP (compressé) | 200 | ~250 ko | **~50 Mo** |
 | Espace économisé | | | **87,5 %** |
 
-Sur une longue série, une bibliothèque manga de 50 tomes en PNG occupe environ **20 Go**. La même série compressée en WebP tient dans **2,5 Go** — soit **17,5 Go** économisés sur une seule série. Des outils comme [BiblioFuse](https://bibliofuse.com/fr/webapp) gèrent cette conversion entièrement sur l'appareil, sans aucun logiciel de bureau requis.
+Sur une longue série, une bibliothèque manga de 50 tomes en PNG occupe environ **20 Go**. La même série compressée en WebP tient dans **2,5 Go** — soit **17,5 Go** économisés sur une seule série. Des outils comme [BiblioFuse](https://bibliofuse.com) gèrent cette conversion entièrement sur l'appareil, sans aucun logiciel de bureau requis.
 
 ## Ce qui rend WebP plus efficace
 
