@@ -23,30 +23,41 @@ function ArticleCard({ article, lang }) {
   return (
     <Link
       to={`/${currentLang}/blog/${article.slug}`}
-      className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+      className="group flex flex-col rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md overflow-hidden"
     >
-      <div className="mb-4 flex flex-wrap gap-2">
-        {article.tags.map(tag => (
-          <span
-            key={tag}
-            className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold ${TAG_COLORS[tag] ?? TAG_COLORS.guide}`}
-          >
-            {t(`redesign.blog.tags.${tag}`, { defaultValue: tag })}
+      {article.coverImage && (
+        <div className="aspect-[16/9] w-full overflow-hidden bg-slate-100">
+          <img
+            src={article.coverImage}
+            alt={title}
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+      )}
+      <div className="flex flex-1 flex-col p-6">
+        <div className="mb-4 flex flex-wrap gap-2">
+          {article.tags.map(tag => (
+            <span
+              key={tag}
+              className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold ${TAG_COLORS[tag] ?? TAG_COLORS.guide}`}
+            >
+              {t(`redesign.blog.tags.${tag}`, { defaultValue: tag })}
+            </span>
+          ))}
+        </div>
+        <h2 className="mb-2 flex-none text-lg font-black leading-snug text-slate-950 transition-colors group-hover:text-blue-600">
+          {title}
+        </h2>
+        <p className="mb-5 flex-1 text-sm leading-relaxed text-slate-600">{excerpt}</p>
+        <div className="flex items-center justify-between">
+          <span className="text-xs text-slate-400">{dateStr}</span>
+          <span className="flex items-center gap-1 text-xs font-semibold text-blue-600 transition-[gap] group-hover:gap-2">
+            {t('redesign.blog.readMore')}
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
           </span>
-        ))}
-      </div>
-      <h2 className="mb-2 flex-none text-lg font-black leading-snug text-slate-950 transition-colors group-hover:text-blue-600">
-        {title}
-      </h2>
-      <p className="mb-5 flex-1 text-sm leading-relaxed text-slate-600">{excerpt}</p>
-      <div className="flex items-center justify-between">
-        <span className="text-xs text-slate-400">{dateStr}</span>
-        <span className="flex items-center gap-1 text-xs font-semibold text-blue-600 transition-[gap] group-hover:gap-2">
-          {t('redesign.blog.readMore')}
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M5 12h14M13 6l6 6-6 6" />
-          </svg>
-        </span>
+        </div>
       </div>
     </Link>
   );

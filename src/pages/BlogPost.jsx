@@ -92,6 +92,16 @@ const BlogPost = () => {
             {t('redesign.blog.backToBlog')}
           </Link>
 
+          {article.coverImage && (
+            <div className="mb-10 overflow-hidden rounded-3xl border border-slate-200 shadow-xl">
+              <img
+                src={article.coverImage}
+                alt={title}
+                className="h-auto w-full object-cover"
+              />
+            </div>
+          )}
+
           <div className="mb-10">
             <div className="mb-4 flex flex-wrap gap-2">
               {article.tags.map(tag => (
