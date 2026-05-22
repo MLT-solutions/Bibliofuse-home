@@ -12,7 +12,7 @@ Op Mac en Android houdt BiblioFuse mappen in de gaten in plaats van bestanden te
 
 iPhone en iPad gebruiken een sandbox-bestandsmodel, dus kopieer je boeken naar een locatie die de app kan zien. Twee locaties werken:
 
-**iCloud Drive → BiblioFuse** — Open de Bestanden-app en ga naar iCloud Drive → BiblioFuse. Kopieer of verplaats je eboekenmappen hierheen. Elke map die je hier neerzet verschijnt als een aparte map in de BiblioFuse-lijst. Boeken die hier zijn opgeslagen krijgen automatisch voortgangsbeheer: je leespositie synchroniseert tussen iPhone, iPad en Mac. Je pakt het op precies waar je gebleven was, op elk apparaat.
+**iCloud Drive → BiblioFuse** — Open de Bestanden-app en ga naar iCloud Drive → BiblioFuse. Kopieer of verplaats je eboekenmappen hierheen. Elke map die je hier neerzet verschijnt als een aparte map in de BiblioFuse-lijst. Boeken of bestanden die je rechtstreeks in de root van iCloud Drive → BiblioFuse plaatst (niet in een submap) verschijnen onder een map genaamd **iCloud** in de app. Boeken die hier zijn opgeslagen krijgen automatisch voortgangsbeheer: je leespositie synchroniseert tussen iPhone, iPad en Mac. Je pakt het op precies waar je gebleven was, op elk apparaat.
 
 **Op mijn iPhone → BiblioFuse** — Voor opslag alleen op het apparaat kopieer je de eboekenmappen hierheen. Mappen verschijnen op dezelfde manier in de lijst, maar de voortgang blijft alleen op dat apparaat.
 

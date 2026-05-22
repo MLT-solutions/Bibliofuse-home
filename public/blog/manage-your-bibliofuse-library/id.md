@@ -12,7 +12,7 @@ Di Mac dan Android, BiblioFuse memantau folder alih-alih memiliki file. Di bilah
 
 iPhone dan iPad menggunakan model file sandbox, jadi kamu menyalin buku ke lokasi yang dapat dilihat oleh aplikasi. Dua lokasi yang bisa digunakan:
 
-**iCloud Drive → BiblioFuse** — Buka aplikasi File dan navigasi ke iCloud Drive → BiblioFuse. Salin atau pindahkan folder ebook kamu ke sini. Setiap folder yang kamu letakkan muncul sebagai folder terpisah dalam daftar BiblioFuse. Buku yang disimpan di sini mendapatkan pelacakan kemajuan otomatis: posisi membaca kamu tersinkronisasi antara iPhone, iPad, dan Mac. Lanjutkan tepat dari tempat kamu berhenti di perangkat mana saja.
+**iCloud Drive → BiblioFuse** — Buka aplikasi File dan navigasi ke iCloud Drive → BiblioFuse. Salin atau pindahkan folder ebook kamu ke sini. Setiap folder yang kamu letakkan muncul sebagai folder terpisah dalam daftar BiblioFuse. Buku atau file yang diletakkan langsung di root iCloud Drive → BiblioFuse (bukan di dalam subfolder) akan muncul di aplikasi di bawah folder bernama **iCloud**. Buku yang disimpan di sini mendapatkan pelacakan kemajuan otomatis: posisi membaca kamu tersinkronisasi antara iPhone, iPad, dan Mac. Lanjutkan tepat dari tempat kamu berhenti di perangkat mana saja.
 
 **Di iPhone Saya → BiblioFuse** — Untuk penyimpanan hanya di perangkat, salin folder ebook ke sini. Folder muncul dengan cara yang sama dalam daftar, tetapi kemajuan hanya tersimpan di perangkat tersebut.
 

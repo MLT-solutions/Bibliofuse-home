@@ -12,7 +12,7 @@ Di Mac dan Android, BiblioFuse memantau folder dan bukannya memiliki fail. Di ba
 
 iPhone dan iPad menggunakan model fail berpagar pasir (sandbox), jadi kamu perlu menyalin buku ke lokasi yang boleh dilihat oleh aplikasi. Dua lokasi yang boleh digunakan:
 
-**iCloud Drive → BiblioFuse** — Buka aplikasi Fail dan navigasi ke iCloud Drive → BiblioFuse. Salin atau pindahkan folder ebook kamu ke sini. Setiap folder yang diletakkan akan muncul sebagai folder berasingan dalam senarai BiblioFuse. Buku yang disimpan di sini mendapat penjejakan kemajuan automatik: kedudukan pembacaan kamu disegerakkan antara iPhone, iPad dan Mac. Sambung semula tepat dari tempat kamu berhenti pada mana-mana peranti.
+**iCloud Drive → BiblioFuse** — Buka aplikasi Fail dan navigasi ke iCloud Drive → BiblioFuse. Salin atau pindahkan folder ebook kamu ke sini. Setiap folder yang diletakkan akan muncul sebagai folder berasingan dalam senarai BiblioFuse. Buku atau fail yang diletakkan terus di root iCloud Drive → BiblioFuse (bukan di dalam subfolder) akan muncul dalam aplikasi di bawah folder bernama **iCloud**. Buku yang disimpan di sini mendapat penjejakan kemajuan automatik: kedudukan pembacaan kamu disegerakkan antara iPhone, iPad dan Mac. Sambung semula tepat dari tempat kamu berhenti pada mana-mana peranti.
 
 **iPhone Saya → BiblioFuse** — Untuk penyimpanan tempatan sahaja, salin folder ebook ke sini. Folder kelihatan sama dalam senarai, tetapi kemajuan hanya disimpan pada peranti tersebut.
 

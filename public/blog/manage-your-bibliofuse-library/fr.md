@@ -12,7 +12,7 @@ Sur Mac et Android, BiblioFuse surveille les dossiers plutôt que de posséder d
 
 iPhone et iPad utilisent un modèle de fichiers en bac à sable, donc vous copiez les livres vers un emplacement que l'application peut voir. Deux emplacements fonctionnent :
 
-**iCloud Drive → BiblioFuse** — Ouvrez l'application Fichiers et naviguez vers iCloud Drive → BiblioFuse. Copiez ou déplacez vos dossiers d'ebooks ici. Chaque dossier que vous déposez apparaît comme un dossier séparé dans la liste BiblioFuse. Les livres stockés ici bénéficient d'un suivi automatique de la progression : votre position de lecture se synchronise entre iPhone, iPad et Mac. Reprenez exactement là où vous en étiez sur n'importe quel appareil.
+**iCloud Drive → BiblioFuse** — Ouvrez l'application Fichiers et naviguez vers iCloud Drive → BiblioFuse. Copiez ou déplacez vos dossiers d'ebooks ici. Chaque dossier que vous déposez apparaît comme un dossier séparé dans la liste BiblioFuse. Les livres ou fichiers placés directement à la racine d'iCloud Drive → BiblioFuse (pas dans un sous-dossier) apparaissent sous un dossier appelé **iCloud** dans l'application. Les livres stockés ici bénéficient d'un suivi automatique de la progression : votre position de lecture se synchronise entre iPhone, iPad et Mac. Reprenez exactement là où vous en étiez sur n'importe quel appareil.
 
 **Sur mon iPhone → BiblioFuse** — Pour un stockage uniquement local, copiez les dossiers d'ebooks ici. Les dossiers apparaissent de la même façon dans la liste, mais la progression reste sur cet appareil uniquement.
 

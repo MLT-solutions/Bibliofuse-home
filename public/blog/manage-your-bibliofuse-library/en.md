@@ -12,7 +12,7 @@ On Mac and Android, BiblioFuse watches folders rather than owning files. In the 
 
 iPhone and iPad use a sandboxed file model, so you copy books into a location the app can see. Two locations work:
 
-**iCloud Drive → BiblioFuse** — Open the Files app and navigate to iCloud Drive → BiblioFuse. Copy or move your ebook folders here. Each folder you drop in appears as a separate folder in the BiblioFuse book list. Books stored here get automatic sidecar progress tracking: your reading position syncs across iPhone, iPad, and Mac. Pick up exactly where you left off on any device.
+**iCloud Drive → BiblioFuse** — Open the Files app and navigate to iCloud Drive → BiblioFuse. Copy or move your ebook folders here. Each folder you drop in appears as a separate folder in the BiblioFuse book list. Books or files placed directly in the root (not inside a subfolder) appear under a folder called **iCloud** in the app. Books stored here get automatic sidecar progress tracking: your reading position syncs across iPhone, iPad, and Mac. Pick up exactly where you left off on any device.
 
 **On My iPhone → BiblioFuse** — For local-only storage, copy ebook folders here instead. Folders appear the same way in the book list, but progress stays on that device only.
 

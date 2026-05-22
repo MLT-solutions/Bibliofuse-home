@@ -12,7 +12,7 @@ En Mac y Android, BiblioFuse vigila carpetas en lugar de poseer archivos. En la 
 
 iPhone e iPad usan un modelo de archivos con sandbox, así que copias los libros a una ubicación que la app puede ver. Hay dos opciones:
 
-**iCloud Drive → BiblioFuse** — Abre la app Archivos y navega a iCloud Drive → BiblioFuse. Copia o mueve aquí tus carpetas de ebooks. Cada carpeta que agregues aparece como una carpeta separada en la lista de BiblioFuse. Los libros almacenados aquí tienen seguimiento automático del progreso: tu posición de lectura se sincroniza entre iPhone, iPad y Mac. Retomas exactamente donde lo dejaste en cualquier dispositivo.
+**iCloud Drive → BiblioFuse** — Abre la app Archivos y navega a iCloud Drive → BiblioFuse. Copia o mueve aquí tus carpetas de ebooks. Cada carpeta que agregues aparece como una carpeta separada en la lista de BiblioFuse. Los libros o archivos colocados directamente en la raíz de iCloud Drive → BiblioFuse (sin estar dentro de una subcarpeta) aparecen bajo una carpeta llamada **iCloud** en la app. Los libros almacenados aquí tienen seguimiento automático del progreso: tu posición de lectura se sincroniza entre iPhone, iPad y Mac. Retomas exactamente donde lo dejaste en cualquier dispositivo.
 
 **En mi iPhone → BiblioFuse** — Para almacenamiento solo local, copia las carpetas aquí. Las carpetas aparecen igual en la lista, pero el progreso solo se guarda en ese dispositivo.
 

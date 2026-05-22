@@ -12,7 +12,7 @@ No Mac e no Android, o BiblioFuse monitora pastas em vez de possuir arquivos. Na
 
 iPhone e iPad usam um modelo de arquivos em sandbox, então você copia os livros para um local que o app pode ver. Dois locais funcionam:
 
-**iCloud Drive → BiblioFuse** — Abra o app Arquivos e navegue até iCloud Drive → BiblioFuse. Copie ou mova suas pastas de ebooks aqui. Cada pasta que você colocar aparece como uma pasta separada na lista do BiblioFuse. Livros armazenados aqui têm rastreamento automático de progresso: sua posição de leitura sincroniza entre iPhone, iPad e Mac. Retome exatamente de onde parou em qualquer dispositivo.
+**iCloud Drive → BiblioFuse** — Abra o app Arquivos e navegue até iCloud Drive → BiblioFuse. Copie ou mova suas pastas de ebooks aqui. Cada pasta que você colocar aparece como uma pasta separada na lista do BiblioFuse. Livros ou arquivos colocados diretamente na raiz do iCloud Drive → BiblioFuse (sem estar dentro de uma subpasta) aparecem em uma pasta chamada **iCloud** no app. Livros armazenados aqui têm rastreamento automático de progresso: sua posição de leitura sincroniza entre iPhone, iPad e Mac. Retome exatamente de onde parou em qualquer dispositivo.
 
 **No meu iPhone → BiblioFuse** — Para armazenamento apenas local, copie as pastas de ebooks aqui. As pastas aparecem da mesma forma na lista, mas o progresso fica apenas naquele dispositivo.
 
