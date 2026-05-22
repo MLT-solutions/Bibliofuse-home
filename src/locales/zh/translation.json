@@ -626,6 +626,14 @@
         "getting-started-with-bibliofuse": {
           "title": "BiblioFuse 入门指南",
           "excerpt": "核心功能概览，帮助您导入书籍、管理图书馆，几分钟内即可开始阅读。"
+        },
+        "read-cbz-cbr-on-iphone": {
+          "title": "如何在 iPhone 上阅读 CBZ 和 CBR 漫画",
+          "excerpt": "iPhone 不支持原生 CBZ 或 CBR 格式。本指南介绍这些格式的含义，以及如何通过 Wi-Fi 传输或 iCloud 将漫画导入 BiblioFuse。"
+        },
+        "cbz-vs-cbr-vs-epub-formats-explained": {
+          "title": "CBZ vs CBR vs EPUB — 漫画与电子书格式全解析",
+          "excerpt": "对 CBZ、CBR、EPUB 和 PDF 感到困惑？本文解析每种格式的内容，以及下载漫画、日漫或小说时该选哪个。"
         }
       }
     }

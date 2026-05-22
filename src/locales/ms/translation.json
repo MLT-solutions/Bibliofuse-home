@@ -626,6 +626,14 @@
         "getting-started-with-bibliofuse": {
           "title": "Bermula dengan BiblioFuse",
           "excerpt": "Panduan ciri-ciri utama untuk mengimport buku, mengurus perpustakaan anda, dan mula membaca dalam beberapa minit."
+        },
+        "read-cbz-cbr-on-iphone": {
+          "title": "Cara Membaca Komik CBZ dan CBR di iPhone",
+          "excerpt": "iPhone tidak mempunyai sokongan terbina dalam untuk CBZ atau CBR. Panduan ini menjelaskan cara mengimport komik ke BiblioFuse."
+        },
+        "cbz-vs-cbr-vs-epub-formats-explained": {
+          "title": "CBZ vs CBR vs EPUB — Format Komik dan E-buku Dijelaskan",
+          "excerpt": "Keliru dengan CBZ, CBR, EPUB, dan PDF? Panduan ini menjelaskan kandungan setiap format dan mana yang dipilih untuk komik, manga, atau novel."
         }
       }
     }

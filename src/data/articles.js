@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'cbz-vs-cbr-vs-epub-formats-explained',
+    date: '2026-05-22',
+    tags: ['guide'],
+    coverImage: '/image/blog/CBZ vs CBR vs EPUB Explained.jpg',
+  },
+  {
+    slug: 'read-cbz-cbr-on-iphone',
+    date: '2026-05-22',
+    tags: ['guide', 'tips'],
+    coverImage: '/image/blog/Read CBZ CBR on iPhone.jpg',
+  },
+  {
     slug: 'manage-your-bibliofuse-library',
     date: '2026-05-22',
     tags: ['guide', 'tips'],

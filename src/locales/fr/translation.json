@@ -626,6 +626,14 @@
         "getting-started-with-bibliofuse": {
           "title": "Démarrer avec BiblioFuse",
           "excerpt": "Un tour d'horizon des fonctions essentielles pour importer des livres, gérer votre bibliothèque et commencer à lire en quelques minutes."
+        },
+        "read-cbz-cbr-on-iphone": {
+          "title": "Comment lire des bandes dessinées CBZ et CBR sur iPhone",
+          "excerpt": "L'iPhone ne prend pas en charge nativement CBZ ou CBR. Ce guide explique ces formats et comment importer vos BD dans BiblioFuse."
+        },
+        "cbz-vs-cbr-vs-epub-formats-explained": {
+          "title": "CBZ vs CBR vs EPUB — Les Formats de BD et d'Ebooks Expliqués",
+          "excerpt": "Confus par CBZ, CBR, EPUB et PDF ? Ce guide explique le contenu de chaque format et lequel choisir pour vos BD, manga ou romans."
         }
       }
     }

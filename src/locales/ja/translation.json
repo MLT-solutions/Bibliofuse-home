@@ -626,6 +626,14 @@
         "getting-started-with-bibliofuse": {
           "title": "BiblioFuseを使い始める",
           "excerpt": "書籍のインポート、ライブラリの管理、すぐに読み始めるためのコア機能のガイドです。"
+        },
+        "read-cbz-cbr-on-iphone": {
+          "title": "iPhoneでCBZ・CBRコミックを読む方法",
+          "excerpt": "iPhoneはCBZ/CBRに対応していません。BiblioFuseを使ったファイルのインポートと読書設定を解説します。"
+        },
+        "cbz-vs-cbr-vs-epub-formats-explained": {
+          "title": "CBZ vs CBR vs EPUB — コミック・電子書籍フォーマット完全解説",
+          "excerpt": "CBZ、CBR、EPUB、PDFの違いに困惑していませんか？各フォーマットの中身と、コミック・マンガ・小説にどれを選ぶべきかを解説します。"
         }
       }
     }

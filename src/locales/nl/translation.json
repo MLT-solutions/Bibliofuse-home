@@ -626,6 +626,14 @@
         "getting-started-with-bibliofuse": {
           "title": "Aan de slag met BiblioFuse",
           "excerpt": "Een overzicht van de kernfuncties om boeken te importeren, je bibliotheek te beheren en binnen enkele minuten te beginnen met lezen."
+        },
+        "read-cbz-cbr-on-iphone": {
+          "title": "CBZ- en CBR-strips lezen op iPhone",
+          "excerpt": "iPhone ondersteunt CBZ en CBR niet van nature. Deze gids legt uit wat deze formaten zijn en hoe je strips importeert in BiblioFuse."
+        },
+        "cbz-vs-cbr-vs-epub-formats-explained": {
+          "title": "CBZ vs CBR vs EPUB — Comic- en E-bookformaten Uitgelegd",
+          "excerpt": "Verward door CBZ, CBR, EPUB en PDF? Deze gids legt uit wat elk formaat bevat en welk je het beste kiest voor comics, manga of romans."
         }
       }
     }
