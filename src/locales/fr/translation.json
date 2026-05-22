@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "reduce-comic-ebook-file-size": {
+          "title": "Pourquoi les fichiers de BD et d'ebooks sont si volumineux — et comment y remédier",
+          "excerpt": "CBZ et EPUB sont des archives ZIP remplies d'images PNG. Découvrez pourquoi ils sont si volumineux et comment BiblioFuse les réduit jusqu'à 87,5 %."
+        },
         "getting-started-with-bibliofuse": {
           "title": "Démarrer avec BiblioFuse",
           "excerpt": "Un tour d'horizon des fonctions essentielles pour importer des livres, gérer votre bibliothèque et commencer à lire en quelques minutes."

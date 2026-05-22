@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "reduce-comic-ebook-file-size": {
+          "title": "漫画和电子书文件为什么这么大——以及如何解决",
+          "excerpt": "CBZ 和 EPUB 本质上都是装满 PNG 图片的 ZIP 压缩包，了解它们为何如此庞大，以及 BiblioFuse 如何将文件缩减最多 87.5%。"
+        },
         "getting-started-with-bibliofuse": {
           "title": "BiblioFuse 入门指南",
           "excerpt": "核心功能概览，帮助您导入书籍、管理图书馆，几分钟内即可开始阅读。"

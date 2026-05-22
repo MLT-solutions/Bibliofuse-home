@@ -194,6 +194,10 @@
         "update": "Update"
       },
       "posts": {
+        "reduce-comic-ebook-file-size": {
+          "title": "Why Comic and Ebook Files Are So Large — and How to Fix It",
+          "excerpt": "CBZ and EPUB are both ZIP archives packed with PNG images. Learn why that makes them huge, and how BiblioFuse's on-device compression shrinks them by up to 87.5%."
+        },
         "getting-started-with-bibliofuse": {
           "title": "Getting Started with BiblioFuse",
           "excerpt": "A walkthrough of the core features to help you import books, manage your library, and start reading in minutes."
