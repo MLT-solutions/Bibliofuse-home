@@ -72,3 +72,73 @@ Helper scripts in `scripts/`:
 - `sync-keys.cjs` — syncs key structure from en to all other locales
 - `scan-untranslated.cjs` — finds keys that are still empty/untranslated
 - `translate-all-langs.cjs` / `translate-all.cjs` — batch-translate via API
+
+## Blog
+
+### Cover images
+
+Path: `public/image/blog/{Short Title}.jpg` (singular `image`, not `images`)
+Live URL: `https://bibliofuse.com/image/blog/{Short%20Title}.jpg`
+Size: 2816 × 1536 px, JPEG quality 92.
+Accent colours: blue `(59,130,246)` = guide, purple `(139,92,246)` = explainer, amber `(245,158,11)` = tips.
+
+### Registration checklist
+
+When adding a new article:
+1. Prepend to `src/data/articles.js` (newest first).
+2. Prepend slug to `ARTICLE_SLUGS` in both `scripts/generate-sitemap.js` and `scripts/generate-static-routes.js`.
+3. Add `redesign.blog.posts.{slug}` (`title` + `excerpt`) to all 11 `src/locales/{lang}/translation.json` files.
+
+### Social — Buffer
+
+**GraphQL endpoint:** `https://api.buffer.com/graphql`
+**Token:** `8a6z1GSOD1HoKAN-xaXWZkkNvDehz7KkKaYh_RkIAm9`
+**Organization ID:** `67c54e0f0f5e2f782e5d2e17`
+
+Do NOT use `https://api.bufferapp.com` (old REST v1) or `https://publish.buffer.com` — they reject this token.
+
+**Channel IDs:**
+
+| Channel | ID |
+|---------|-----|
+| Twitter/X (`mattlifetech`) | `67c54e593b85969eaf67659e` |
+| Instagram (`mattlifetech`) | `67c54e3d3b85969eaf65a04f` |
+| LinkedIn company (`modern-logic-tech-solutions`) | `69fbfce95c4c051afa1b4ecd` |
+| LinkedIn personal (`matthew-choo`) | `69fbfce95c4c051afa1b4ece` — **read-only, skip** |
+
+**Scheduling slots (SGT = UTC+8). Space 2 articles ≥ 2 h apart on the same channel:**
+
+| Channel | Article 1 (SGT) | Article 2 (SGT) |
+|---------|-----------------|-----------------|
+| Twitter/X | 09:00 | 11:00 |
+| LinkedIn company | 09:30 | 11:30 |
+| Instagram | 10:00 | 12:00 |
+
+**createPost mutation (GraphQL):**
+
+```graphql
+mutation CreatePost($input: CreatePostInput!) {
+  createPost(input: $input) {
+    ... on PostActionSuccess { post { id dueAt } }
+    ... on InvalidInputError { message }
+    ... on LimitReachedError { message }
+    ... on UnauthorizedError { message }
+    ... on UnexpectedError   { message }
+    ... on RestProxyError    { message }
+  }
+}
+```
+
+Required `CreatePostInput` fields:
+- `channelId` — channel ID from table above
+- `text` — post copy
+- `schedulingType` — `"automatic"`
+- `mode` — `"customScheduled"`
+- `dueAt` — ISO 8601 UTC timestamp
+- `assets` — `[{ image: { url: "https://bibliofuse.com/image/blog/..." } }]`
+- `metadata.instagram.type` — **required for Instagram**: `"post"`, also set `shouldShareToFeed: true`
+
+**Hashtags:**
+- Twitter/X: `#BiblioFuse #Comics #Manga` (2–3 max)
+- Instagram: 8–10 tags, always include `#BiblioFuse #Comics #Manga #iPhone #ReadingLife`
+- LinkedIn: no hashtags, professional tone
