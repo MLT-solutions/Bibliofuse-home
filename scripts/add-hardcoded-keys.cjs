@@ -21,7 +21,7 @@ const newEn = {
           "desc": "Native reader & library manager for personal e-book and comic collections.",
           "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP & TXT",
           "bullet2": "Tags, ratings, progress & bookmarks",
-          "bullet3": "iCloud library across iPhone, iPad & Mac (Mac in review)",
+          "bullet3": "iCloud library across iPhone, iPad & Mac",
           "cta": "Get on App Store",
           "secondary": "Google Play"
         },

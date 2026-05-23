@@ -83,7 +83,7 @@
         },
         "avail": {
           "name": "Ketersediaan",
-          "v_review": "Dalam Tinjauan",
+          "v_review": "Dirilis",
           "v_cbz": "Ver. CBZ",
           "v_epub": "Ver. EPUB"
         }
@@ -282,7 +282,7 @@
         },
         "unique": "Unik",
         "where": "Tempat mendapatkan",
-        "iosNote": "iOS dirilis · Mac dalam peninjauan",
+        "iosNote": "iOS dan Mac sudah dirilis",
         "cbz": "Edisi CBZ",
         "epub": "Edisi EPUB",
         "rows": [
@@ -378,7 +378,7 @@
           "desc": "Pembaca dan pengelola perpustakaan native untuk koleksi e-book dan komik pribadi.",
           "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP & TXT",
           "bullet2": "Tag, penilaian, progres & penanda buku",
-          "bullet3": "Perpustakaan iCloud di iPhone, iPad & Mac (Mac dalam peninjauan)",
+          "bullet3": "Perpustakaan iCloud di iPhone, iPad & Mac",
           "cta": "Dapatkan di App Store",
           "secondary": "Google Play"
         },
@@ -453,7 +453,7 @@
           "bullet4Title": "PIN opsional",
           "bullet4Body": "kunci akses streaming di jaringan bersama.",
           "imageAlt": "Perpustakaan Mac BiblioFuse dengan pembaca tampilan terpisah",
-          "footnote": "Akses jarak jauh memerlukan iCloud masuk dan Tailscale terhubung di Mac dan iOS."
+          "footnote": "Akses jarak jauh memerlukan iCloud masuk dan Tailscale terhubung di Mac dan iOS. Kami juga menyarankan memakai Tailscale untuk koneksi Wi-Fi lokal dengan memilih nama perangkat yang berisi \"(iCloud)\"."
         }
       }
     },

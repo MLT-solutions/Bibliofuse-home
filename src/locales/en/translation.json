@@ -83,7 +83,7 @@
         },
         "avail": {
           "name": "Availability",
-          "v_review": "In Review",
+          "v_review": "Released",
           "v_cbz": "CBZ Ver.",
           "v_epub": "EPUB Ver."
         }
@@ -409,7 +409,7 @@
         ],
         "unique": "Unique",
         "where": "Where to get it",
-        "iosNote": "iOS released · Mac in review",
+        "iosNote": "iOS and Mac released",
         "cbz": "CBZ Edition",
         "epub": "EPUB Edition"
       }
@@ -426,7 +426,7 @@
           "desc": "Native reader & library manager for personal e-book and comic collections.",
           "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP & TXT",
           "bullet2": "Tags, ratings, progress & bookmarks",
-          "bullet3": "iCloud library across iPhone, iPad & Mac (Mac in review)",
+          "bullet3": "iCloud library across iPhone, iPad & Mac",
           "cta": "Get on App Store",
           "secondary": "Google Play"
         },
@@ -501,7 +501,7 @@
           "bullet4Title": "Optional PIN",
           "bullet4Body": "lock streaming access on shared networks.",
           "imageAlt": "BiblioFuse Mac library with split-view reader",
-          "footnote": "Remote access requires iCloud signed in and Tailscale connected on both Mac and iOS."
+          "footnote": "Remote access requires iCloud signed in and Tailscale connected on both Mac and iOS. We also recommend using Tailscale for local Wi-Fi connections by selecting the device name with \"(iCloud)\"."
         }
       }
     },

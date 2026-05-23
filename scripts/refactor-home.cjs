@@ -81,7 +81,7 @@ src = src.replace(`tag: 'Flagship',`, `tag: ${pr('reader','tag')},`);
 src = src.replace(`desc: 'Native reader & library manager for personal e-book and comic collections.',`, `desc: ${pr('reader','desc')},`);
 src = src.replace(`'EPUB, PDF, CBZ, CBR, RAR, ZIP & TXT'`, `${pr('reader','bullet1')}`);
 src = src.replace(`'Tags, ratings, progress & bookmarks'`, `${pr('reader','bullet2')}`);
-src = src.replace(`'iCloud library across iPhone, iPad & Mac (Mac in review)'`, `${pr('reader','bullet3')}`);
+src = src.replace(`'iCloud library across iPhone, iPad & Mac'`, `${pr('reader','bullet3')}`);
 src = src.replace(`cta: 'Get on App Store',`, `cta: ${pr('reader','cta')},`);
 src = src.replace(`secondary: 'Google Play',`, `secondary: ${pr('reader','secondary')},`);
 

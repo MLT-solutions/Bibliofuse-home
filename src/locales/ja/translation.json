@@ -83,7 +83,7 @@
         },
         "avail": {
           "name": "利用可能性",
-          "v_review": "審査中",
+          "v_review": "公開済み",
           "v_cbz": "CBZ版",
           "v_epub": "EPUB版"
         }
@@ -282,7 +282,7 @@
         },
         "unique": "独自",
         "where": "入手先",
-        "iosNote": "iOS公開済み · Mac審査中",
+        "iosNote": "iOS・Mac 公開済み",
         "cbz": "CBZ版",
         "epub": "EPUB版",
         "rows": [
@@ -378,7 +378,7 @@
           "desc": "個人の電子書籍とコミックコレクションのためのネイティブリーダー兼ライブラリマネージャー。",
           "bullet1": "EPUB、PDF、CBZ、CBR、RAR、ZIP、TXT",
           "bullet2": "タグ、評価、進捗、ブックマーク",
-          "bullet3": "iPhone、iPad、Mac で iCloud ライブラリ（Mac は審査中）",
+          "bullet3": "iPhone、iPad、Mac で iCloud ライブラリ",
           "cta": "App Store で入手",
           "secondary": "Google Play"
         },
@@ -453,7 +453,7 @@
           "bullet4Title": "オプション PIN",
           "bullet4Body": "共有ネットワークでのストリーミングアクセスをロック。",
           "imageAlt": "分割ビューリーダー付き BiblioFuse Mac ライブラリ",
-          "footnote": "リモートアクセスには Mac と iOS の両方で iCloud サインインと Tailscale 接続が必要です。"
+          "footnote": "リモートアクセスには、Mac と iOS の両方で iCloud にサインインし、Tailscale に接続している必要があります。ローカル Wi-Fi 接続でも、\"(iCloud)\" が付いたデバイス名を選択して Tailscale を使うことをおすすめします。"
         }
       }
     },

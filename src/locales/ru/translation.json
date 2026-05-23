@@ -83,7 +83,7 @@
         },
         "avail": {
           "name": "Доступность",
-          "v_review": "На проверке",
+          "v_review": "Выпущено",
           "v_cbz": "Вер. CBZ",
           "v_epub": "Вер. EPUB"
         }
@@ -282,7 +282,7 @@
         },
         "unique": "Уникально",
         "where": "Где получить",
-        "iosNote": "iOS выпущено · Mac на проверке",
+        "iosNote": "iOS и Mac выпущены",
         "cbz": "Редакция CBZ",
         "epub": "Редакция EPUB",
         "rows": [
@@ -378,7 +378,7 @@
           "desc": "Нативный ридер и менеджер библиотеки для личных коллекций электронных книг и комиксов.",
           "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP и TXT",
           "bullet2": "Теги, рейтинг, прогресс и закладки",
-          "bullet3": "Библиотека iCloud на iPhone, iPad и Mac (Mac на проверке)",
+          "bullet3": "Библиотека iCloud на iPhone, iPad и Mac",
           "cta": "Скачать в App Store",
           "secondary": "Google Play"
         },
@@ -453,7 +453,7 @@
           "bullet4Title": "Опциональный PIN",
           "bullet4Body": "заблокируйте доступ к стримингу в общих сетях.",
           "imageAlt": "Библиотека Mac BiblioFuse с разделенным видом ридера",
-          "footnote": "Удаленный доступ требует входа в iCloud и подключения Tailscale на Mac и iOS."
+          "footnote": "Для удаленного доступа необходимо войти в iCloud и подключить Tailscale на Mac и iOS. Мы также рекомендуем использовать Tailscale для локального Wi-Fi, выбирая имя устройства с \"(iCloud)\"."
         }
       }
     },

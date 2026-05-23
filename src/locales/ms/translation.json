@@ -83,7 +83,7 @@
         },
         "avail": {
           "name": "Ketersediaan",
-          "v_review": "Dalam Semakan",
+          "v_review": "Dikeluarkan",
           "v_cbz": "Ver. CBZ",
           "v_epub": "Ver. EPUB"
         }
@@ -282,7 +282,7 @@
         },
         "unique": "Unik",
         "where": "Tempat mendapatkannya",
-        "iosNote": "iOS dilancarkan · Mac dalam semakan",
+        "iosNote": "iOS dan Mac telah dikeluarkan",
         "cbz": "Edisi CBZ",
         "epub": "Edisi EPUB",
         "rows": [
@@ -378,7 +378,7 @@
           "desc": "Pembaca dan pengurus perpustakaan asli untuk koleksi e-book dan komik peribadi.",
           "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP & TXT",
           "bullet2": "Tag, penilaian, kemajuan & penanda buku",
-          "bullet3": "Perpustakaan iCloud pada iPhone, iPad & Mac (Mac dalam semakan)",
+          "bullet3": "Perpustakaan iCloud pada iPhone, iPad & Mac",
           "cta": "Dapatkan di App Store",
           "secondary": "Google Play"
         },
@@ -453,7 +453,7 @@
           "bullet4Title": "PIN pilihan",
           "bullet4Body": "kunci akses strim pada rangkaian yang dikongsi.",
           "imageAlt": "Perpustakaan Mac BiblioFuse dengan pembaca paparan berpisah",
-          "footnote": "Akses jarak jauh memerlukan iCloud didaftar masuk dan Tailscale disambungkan pada kedua-dua Mac dan iOS."
+          "footnote": "Akses jarak jauh memerlukan iCloud didaftar masuk dan Tailscale disambungkan pada kedua-dua Mac dan iOS. Kami juga mengesyorkan penggunaan Tailscale untuk sambungan Wi-Fi tempatan dengan memilih nama peranti yang mengandungi \"(iCloud)\"."
         }
       }
     },

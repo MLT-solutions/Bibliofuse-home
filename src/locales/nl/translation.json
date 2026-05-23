@@ -83,7 +83,7 @@
         },
         "avail": {
           "name": "Beschikbaarheid",
-          "v_review": "In beoordeling",
+          "v_review": "Uitgebracht",
           "v_cbz": "CBZ Ver.",
           "v_epub": "EPUB Ver."
         }
@@ -282,7 +282,7 @@
         },
         "unique": "Uniek",
         "where": "Waar te krijgen",
-        "iosNote": "iOS uitgebracht · Mac in beoordeling",
+        "iosNote": "iOS en Mac uitgebracht",
         "cbz": "CBZ-editie",
         "epub": "EPUB-editie",
         "rows": [
@@ -378,7 +378,7 @@
           "desc": "Native lezer en bibliotheekbeheerder voor persoonlijke e-book- en stripcollecties.",
           "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP en TXT",
           "bullet2": "Tags, beoordelingen, voortgang en bladwijzers",
-          "bullet3": "iCloud-bibliotheek op iPhone, iPad en Mac (Mac in beoordeling)",
+          "bullet3": "iCloud-bibliotheek op iPhone, iPad en Mac",
           "cta": "Download in App Store",
           "secondary": "Google Play"
         },
@@ -453,7 +453,7 @@
           "bullet4Title": "Optionele pincode",
           "bullet4Body": "vergrendel streamingtoegang op gedeelde netwerken.",
           "imageAlt": "BiblioFuse Mac-bibliotheek met split-view lezer",
-          "footnote": "Toegang op afstand vereist iCloud aangemeld en Tailscale verbonden op zowel Mac als iOS."
+          "footnote": "Toegang op afstand vereist dat iCloud is aangemeld en Tailscale is verbonden op zowel Mac als iOS. We raden ook aan Tailscale te gebruiken voor lokale Wi-Fi-verbindingen door de apparaatnaam met \"(iCloud)\" te kiezen."
         }
       }
     },
