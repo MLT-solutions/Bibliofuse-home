@@ -642,6 +642,14 @@
         "how-to-read-manga-on-iphone": {
           "title": "iPhoneでマンガを読む：右から左、縦スクロール、見開きページの設定方法",
           "excerpt": "BiblioFuseをマンガ向けに設定する方法：右から左の読み方向、縦スクロール（ウェブトゥーン対応）、横向きでの見開き表示を解説します。"
+        },
+        "best-comic-reader-iphone-ipad": {
+          "title": "2026年版：iPhoneとiPadの最強コミックリーダー",
+          "excerpt": "フォーマット対応・パフォーマンス・読み方向・ライブラリ管理の観点から優れたモバイルコミックリーダーの条件を整理し、BiblioFuseが各要件を満たす方法を解説。"
+        },
+        "icloud-sync-reading-progress": {
+          "title": "BiblioFuseがiCloudを通じてiPhone・iPad・Mac間で読書進捗を同期する方法",
+          "excerpt": "BiblioFuseはiCloudを使い、すべてのAppleデバイス間で正確な読書位置・読み方向・タグ・評価を自動的に同期します。"
         }
       }
     }

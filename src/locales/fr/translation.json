@@ -642,6 +642,14 @@
         "how-to-read-manga-on-iphone": {
           "title": "Comment lire des mangas sur iPhone : droite à gauche, défilement vertical et doubles pages",
           "excerpt": "Configurez BiblioFuse pour la lecture manga : activez le mode droite à gauche, le défilement vertical pour les webtoons et les doubles pages en mode paysage."
+        },
+        "best-comic-reader-iphone-ipad": {
+          "title": "Le meilleur lecteur de comics pour iPhone et iPad en 2026",
+          "excerpt": "Une analyse pratique de ce qui fait un excellent lecteur de comics mobile — support des formats, performances, direction de lecture et gestion de bibliothèque — et comment BiblioFuse répond à chaque point."
+        },
+        "icloud-sync-reading-progress": {
+          "title": "Comment BiblioFuse synchronise la progression de lecture entre iPhone, iPad et Mac via iCloud",
+          "excerpt": "BiblioFuse utilise iCloud pour synchroniser automatiquement votre position de lecture exacte, la direction, les étiquettes et les notes sur tous vos appareils Apple."
         }
       }
     }

@@ -32,8 +32,8 @@ This file is the source of truth for the daily article agent.
 | 2 | ✅ | `cbz-vs-cbr-vs-epub-formats-explained` | CBZ vs CBR vs EPUB — Comic and Ebook Formats Explained | BiblioFuse iOS |
 | 3 | ✅ | `wifi-transfer-comics-to-iphone` | How to Transfer Comics to iPhone Without iTunes or a Cable | BiblioFuse iOS |
 | 4 | ✅ | `how-to-read-manga-on-iphone` | How to Read Manga on iPhone: Right-to-Left, Vertical Scroll, and Double Pages | BiblioFuse iOS |
-| 5 | ⬜ | `best-comic-reader-iphone-ipad` | Best Comic Reader for iPhone and iPad in 2026 | BiblioFuse iOS |
-| 6 | ⬜ | `icloud-sync-reading-progress` | How BiblioFuse Syncs Reading Progress Across iPhone, iPad, and Mac via iCloud | BiblioFuse iOS |
+| 5 | ✅ | `best-comic-reader-iphone-ipad` | Best Comic Reader for iPhone and iPad in 2026 | BiblioFuse iOS |
+| 6 | ✅ | `icloud-sync-reading-progress` | How BiblioFuse Syncs Reading Progress Across iPhone, iPad, and Mac via iCloud | BiblioFuse iOS |
 | 7 | ⬜ | `mac-home-library-streaming-iphone` | Stream Your Mac Comic Library to iPhone Over Wi-Fi (No Copying Required) | BiblioFuse iOS |
 | 8 | ⬜ | `ocr-comics-extract-text-iphone` | Extract Text from Comics and Manga on iPhone with OCR | BiblioFuse iOS |
 | 9 | ⬜ | `epub-reader-iphone-no-drm` | Best DRM-Free EPUB Reader for iPhone — Without Apple Books | BiblioFuse iOS |

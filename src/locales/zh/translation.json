@@ -642,6 +642,14 @@
         "how-to-read-manga-on-iphone": {
           "title": "如何在 iPhone 上阅读漫画：从右到左、竖向滚动与双页展示",
           "excerpt": "配置 BiblioFuse 阅读漫画：启用从右到左模式、条漫的竖向滚动，以及横屏下的正确双页展示。"
+        },
+        "best-comic-reader-iphone-ipad": {
+          "title": "2026年iPhone和iPad最佳漫画阅读器",
+          "excerpt": "从格式支持、性能、阅读方向到库管理，全面分析优秀移动漫画阅读器的标准，以及BiblioFuse如何满足每一项需求。"
+        },
+        "icloud-sync-reading-progress": {
+          "title": "BiblioFuse如何通过iCloud在iPhone、iPad和Mac间同步阅读进度",
+          "excerpt": "BiblioFuse使用iCloud自动同步你在所有Apple设备上的精确阅读位置、阅读方向、标签和评分。"
         }
       }
     }

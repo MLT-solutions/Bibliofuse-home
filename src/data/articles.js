@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'icloud-sync-reading-progress',
+    date: '2026-05-24',
+    tags: ['guide', 'tips'],
+    coverImage: '/image/blog/iCloud Sync Reading Progress.jpg',
+  },
+  {
+    slug: 'best-comic-reader-iphone-ipad',
+    date: '2026-05-24',
+    tags: ['guide'],
+    coverImage: '/image/blog/Best Comic Reader iPhone iPad.jpg',
+  },
+  {
     slug: 'how-to-read-manga-on-iphone',
     date: '2026-05-22',
     tags: ['guide', 'tips'],
