@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'ocr-comics-extract-text-iphone',
+    date: '2026-05-24',
+    tags: ['guide', 'tips'],
+    coverImage: '/image/blog/OCR Comics on iPhone.jpg',
+  },
+  {
+    slug: 'mac-home-library-streaming-iphone',
+    date: '2026-05-24',
+    tags: ['guide'],
+    coverImage: '/image/blog/Mac Home Library.jpg',
+  },
+  {
     slug: 'icloud-sync-reading-progress',
     date: '2026-05-24',
     tags: ['guide', 'tips'],

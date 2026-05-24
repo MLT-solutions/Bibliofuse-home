@@ -650,6 +650,14 @@
         "icloud-sync-reading-progress": {
           "title": "Hoe BiblioFuse leesvoortgang synchroniseert tussen iPhone, iPad en Mac via iCloud",
           "excerpt": "BiblioFuse gebruikt iCloud om automatisch uw exacte leespositie, leesrichting, tags en beoordelingen te synchroniseren op al uw Apple-apparaten."
+        },
+        "mac-home-library-streaming-iphone": {
+          "title": "Stream Je Mac-Comicbibliotheek naar iPhone via Wi-Fi (Zonder Kopiëren)",
+          "excerpt": "Mac Home Library in BiblioFuse streamt je volledige Mac-collectie naar iPhone via lokaal Wi-Fi — geen bestanden kopiëren, geen iCloud-opslag vereist."
+        },
+        "ocr-comics-extract-text-iphone": {
+          "title": "Tekst Uit Comics en Manga Halen op iPhone met OCR",
+          "excerpt": "De on-device OCR van BiblioFuse laat je op elke comic- of mangapagina tikken om tekst te extraheren — zoek Japans woordenschat op, kopieer citaten of vertaal dialogen."
         }
       }
     }

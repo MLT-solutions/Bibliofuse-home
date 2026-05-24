@@ -650,6 +650,14 @@
         "icloud-sync-reading-progress": {
           "title": "BiblioFuse如何通过iCloud在iPhone、iPad和Mac间同步阅读进度",
           "excerpt": "BiblioFuse使用iCloud自动同步你在所有Apple设备上的精确阅读位置、阅读方向、标签和评分。"
+        },
+        "mac-home-library-streaming-iphone": {
+          "title": "通过 Wi-Fi 将 Mac 漫画库串流到 iPhone（无需复制文件）",
+          "excerpt": "BiblioFuse 的 Mac Home Library 功能通过本地 Wi-Fi 将整个 Mac 漫画库串流至 iPhone——无需复制文件，无需 iCloud 存储空间。"
+        },
+        "ocr-comics-extract-text-iphone": {
+          "title": "在 iPhone 上用 OCR 提取漫画和漫画文字",
+          "excerpt": "BiblioFuse 的本地 OCR 功能让你点按任意漫画或漫画页面即可提取文字——查找日语词汇、复制台词或翻译对话，无需离开阅读器。"
         }
       }
     }

@@ -650,6 +650,14 @@
         "icloud-sync-reading-progress": {
           "title": "BiblioFuseがiCloudを通じてiPhone・iPad・Mac間で読書進捗を同期する方法",
           "excerpt": "BiblioFuseはiCloudを使い、すべてのAppleデバイス間で正確な読書位置・読み方向・タグ・評価を自動的に同期します。"
+        },
+        "mac-home-library-streaming-iphone": {
+          "title": "MacのマンガライブラリをWi-FiでiPhoneにストリーミング（コピー不要）",
+          "excerpt": "BiblioFuseのMac Home Libraryは、ローカルWi-Fi経由でMacのコレクション全体をiPhoneにストリーミング。ファイルコピー不要、iCloudストレージも不要です。"
+        },
+        "ocr-comics-extract-text-iphone": {
+          "title": "iPhoneでOCRを使ってコミックとマンガからテキストを抽出する",
+          "excerpt": "BiblioFuseのオンデバイスOCRで、コミックやマンガのページをタップするだけでテキストを抽出。日本語の語彙を調べたり、セリフをコピーしたりリーダー内で翻訳したりできます。"
         }
       }
     }

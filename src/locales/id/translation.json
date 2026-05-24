@@ -650,6 +650,14 @@
         "icloud-sync-reading-progress": {
           "title": "Cara BiblioFuse Menyinkronkan Progres Baca di iPhone, iPad, dan Mac melalui iCloud",
           "excerpt": "BiblioFuse menggunakan iCloud untuk menyinkronkan posisi baca yang tepat, arah baca, tag, dan penilaian secara otomatis di semua perangkat Apple Anda."
+        },
+        "mac-home-library-streaming-iphone": {
+          "title": "Streaming Perpustakaan Komik Mac ke iPhone via Wi-Fi (Tanpa Menyalin File)",
+          "excerpt": "Mac Home Library di BiblioFuse melakukan streaming seluruh koleksi Mac Anda ke iPhone melalui Wi-Fi lokal — tanpa menyalin file, tanpa memerlukan penyimpanan iCloud."
+        },
+        "ocr-comics-extract-text-iphone": {
+          "title": "Ekstrak Teks dari Komik dan Manga di iPhone dengan OCR",
+          "excerpt": "OCR on-device BiblioFuse memungkinkan Anda mengetuk halaman komik atau manga untuk mengekstrak teks — cari kosakata Jepang, salin kutipan, atau terjemahkan dialog tanpa keluar dari pembaca."
         }
       }
     }
