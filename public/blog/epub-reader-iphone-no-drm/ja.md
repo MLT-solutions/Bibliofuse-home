@@ -1,13 +1,19 @@
-# iPhoneで使えるDRMフリーEPUBリーダーの決定版——Apple Books不要
+# iPhoneで使えるDRMフリーEPUBリーダー——Apple Books不要
 
-インディーズ出版社のEPUBファイル、Humble Bundleのダウンロード、Project Gutenbergの古典作品——DRMなしで完全に自分のものだ。ところがApple Booksで取り込もうとすると、メタデータは崩れ、ライブラリは乱雑になり、アプリ自体がストアとして機能している。
+インディーズ出版社のEPUB、Humble Bundle、Project Gutenbergで入手した電子書籍はDRMなしで完全に自分のものだ。しかしApple Booksに取り込むと、メタデータが崩れ、ライブラリが乱雑になり、ストアが前面に出てくる。
 
-[BiblioFuse](/ja/) はこのためのアプリだ。DRMフリーEPUBのネイティブiPhone・iPadリーダーで、CBZ、CBR、PDFも対応。ローカルライブラリを主役に、アカウント不要・ストア不要で動く。
+[BiblioFuse](/ja/) はこのために作られたアプリだ。DRMフリーEPUBのネイティブiPhone・iPadリーダーで、CBZ、CBR、PDFにも対応。ローカルライブラリを主役に、アカウント不要・ストア不要で動作する。
 
-**Apple Booksの問題点：** 外部からインポートしたファイルはメタデータが崩れやすく、タイトルや表紙が正しく表示されない。ライブラリ構造は固定されており、ジャンルやシリーズでのカスタム分類ができない。デフォルト画面はストアが表示され、Wi-Fiでのフォルダ一括転送も不可能だ。
+## Apple Booksの問題点
 
-**BiblioFuseが優れている点：** EPUB、PDF、CBZ、CBR、ZIP、RAR、TXTをそのまま開ける。カスタムタグと評価でライブラリを整理し、Wi-Fi転送でブラウザからドラッグするだけでiPhoneに送れる。iCloud同期でiPhone・iPad・Mac間の読書位置が自動同期。ネット接続不要で完全オフライン動作する。
+外部からインポートしたファイルはメタデータが崩れやすく、タイトルや表紙が正しく表示されないことが多い。ライブラリ構造は固定でジャンルやシリーズでの分類ができず、デフォルト画面にはストアが表示される。Wi-Fiでのフォルダ一括転送も不可だ。
 
-**取り込み方法：** Wi-Fi転送ボタンをタップして表示されたURLをブラウザで開き、EPUBをドラッグ。またはファイルAppで長押しして「BiblioFuseで開く」を選択。MacユーザーはMac Home Libraryを有効にすると、ファイルをコピーせずiPhoneからストリーミング読書ができる。
+## BiblioFuseの強み
+
+EPUB、PDF、CBZ、CBR、ZIP、RAR、TXTをそのまま開ける。カスタムタグと1〜5の評価でライブラリを整理できる。Wi-Fi転送はMacやPCのブラウザにEPUBをドラッグするだけで完了——ケーブルもアカウントも不要。iCloud同期でiPhone・iPad・Mac間の読書位置が自動で揃う。完全オフライン対応。
+
+## 取り込み方法
+
+Wi-Fi転送ボタンをタップして表示されたURLをブラウザで開き、EPUBをドラッグする。またはファイルAppで長押しして「BiblioFuseで開く」を選択。Mac Home Libraryを有効にすれば、ファイルをコピーせずMacの書庫をiPhoneでそのまま読める。
 
 [BiblioFuseはApp Storeで入手可能](/ja/)。iPhone・iPad対応。
