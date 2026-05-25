@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'bibliofuse-tools-tab-guide',
+    date: '2026-05-25',
+    tags: ['guide', 'tips'],
+    coverImage: '/image/blog/BiblioFuse Tools Tab.jpg',
+  },
+  {
+    slug: 'epub-reader-iphone-no-drm',
+    date: '2026-05-25',
+    tags: ['guide'],
+    coverImage: '/image/blog/EPUB Reader No DRM.jpg',
+  },
+  {
     slug: 'ocr-comics-extract-text-iphone',
     date: '2026-05-24',
     tags: ['guide', 'tips'],

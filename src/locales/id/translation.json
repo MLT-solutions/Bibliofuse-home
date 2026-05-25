@@ -658,6 +658,14 @@
         "ocr-comics-extract-text-iphone": {
           "title": "Ekstrak Teks dari Komik dan Manga di iPhone dengan OCR",
           "excerpt": "OCR on-device BiblioFuse memungkinkan Anda mengetuk halaman komik atau manga untuk mengekstrak teks — cari kosakata Jepang, salin kutipan, atau terjemahkan dialog tanpa keluar dari pembaca."
+        },
+        "epub-reader-iphone-no-drm": {
+          "title": "Pembaca EPUB Bebas DRM Terbaik untuk iPhone — Tanpa Apple Books",
+          "excerpt": "BiblioFuse dirancang untuk koleksi EPUB bebas DRM — impor dari Humble Bundle, Project Gutenberg, atau penerbit independen, atur dengan tag, dan baca tanpa toko di antaranya."
+        },
+        "bibliofuse-tools-tab-guide": {
+          "title": "Menggunakan Tab Alat BiblioFuse: Kompres, Konversi, dan Gabung di iPhone",
+          "excerpt": "Tab Alat BiblioFuse memungkinkan Anda mengompres file CBZ besar, mengonversi format, dan menggabungkan bab menjadi volume — semuanya di iPhone, tanpa komputer."
         }
       }
     }

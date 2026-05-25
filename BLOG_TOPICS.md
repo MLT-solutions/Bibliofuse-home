@@ -36,8 +36,8 @@ This file is the source of truth for the daily article agent.
 | 6 | ✅ | `icloud-sync-reading-progress` | How BiblioFuse Syncs Reading Progress Across iPhone, iPad, and Mac via iCloud | BiblioFuse iOS |
 | 7 | ✅ | `mac-home-library-streaming-iphone` | Stream Your Mac Comic Library to iPhone Over Wi-Fi (No Copying Required) | BiblioFuse iOS |
 | 8 | ✅ | `ocr-comics-extract-text-iphone` | Extract Text from Comics and Manga on iPhone with OCR | BiblioFuse iOS |
-| 9 | ⬜ | `epub-reader-iphone-no-drm` | Best DRM-Free EPUB Reader for iPhone — Without Apple Books | BiblioFuse iOS |
-| 10 | ⬜ | `bibliofuse-tools-tab-guide` | Using the BiblioFuse Tools Tab: Compress, Convert, and Merge on iPhone | BiblioFuse iOS |
+| 9 | ✅ | `epub-reader-iphone-no-drm` | Best DRM-Free EPUB Reader for iPhone — Without Apple Books | BiblioFuse iOS |
+| 10 | ✅ | `bibliofuse-tools-tab-guide` | Using the BiblioFuse Tools Tab: Compress, Convert, and Merge on iPhone | BiblioFuse iOS |
 
 ---
 

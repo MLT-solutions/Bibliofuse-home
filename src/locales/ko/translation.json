@@ -658,6 +658,14 @@
         "ocr-comics-extract-text-iphone": {
           "title": "iPhone에서 OCR로 만화와 망가에서 텍스트 추출하기",
           "excerpt": "BiblioFuse의 온디바이스 OCR로 만화나 망가 페이지를 탭하면 텍스트를 추출할 수 있습니다 — 일본어 어휘 검색, 대사 복사, 번역을 리더 안에서 바로."
+        },
+        "epub-reader-iphone-no-drm": {
+          "title": "iPhone 최고의 DRM 없는 EPUB 리더 — Apple Books 없이",
+          "excerpt": "BiblioFuse는 DRM 없는 EPUB 컬렉션을 위해 만들어졌습니다 — Humble Bundle, Project Gutenberg, 독립 출판사에서 가져와 태그로 정리하고 스토어 없이 읽어보세요."
+        },
+        "bibliofuse-tools-tab-guide": {
+          "title": "BiblioFuse 도구 탭 가이드: iPhone에서 압축, 변환, 병합하기",
+          "excerpt": "BiblioFuse의 도구 탭을 사용하면 큰 CBZ 파일을 압축하고, 형식을 변환하고, 챕터를 하나의 볼륨으로 병합할 수 있습니다 — 모두 iPhone에서, 컴퓨터 없이."
         }
       }
     }

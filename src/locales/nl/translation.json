@@ -658,6 +658,14 @@
         "ocr-comics-extract-text-iphone": {
           "title": "Tekst Uit Comics en Manga Halen op iPhone met OCR",
           "excerpt": "De on-device OCR van BiblioFuse laat je op elke comic- of mangapagina tikken om tekst te extraheren — zoek Japans woordenschat op, kopieer citaten of vertaal dialogen."
+        },
+        "epub-reader-iphone-no-drm": {
+          "title": "Beste DRM-Vrije EPUB-Lezer voor iPhone — Zonder Apple Books",
+          "excerpt": "BiblioFuse is gebouwd voor DRM-vrije EPUB-collecties — importeer van Humble Bundle, Project Gutenberg of onafhankelijke uitgevers, organiseer met labels en lees zonder winkel tussenin."
+        },
+        "bibliofuse-tools-tab-guide": {
+          "title": "De BiblioFuse Hulpmiddelen-Tab: Comprimeren, Converteren en Samenvoegen op iPhone",
+          "excerpt": "Het tabblad Hulpmiddelen van BiblioFuse laat je grote CBZ-bestanden comprimeren, formaten converteren en hoofdstukken samenvoegen tot volumes — allemaal op je iPhone, zonder computer."
         }
       }
     }
