@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "merge-cbz-files-online": {
+          "title": "Cara Menggabungkan Beberapa File CBZ Menjadi Satu — Alat Online Gratis",
+          "excerpt": "Gabungkan chapter CBZ menjadi satu volume langsung di browser. Tanpa unggah file, tanpa instalasi — BiblioFuse Web Tool menggabungkan secara gratis."
+        },
+        "convert-pdf-to-cbz-online": {
+          "title": "Cara Mengonversi PDF ke CBZ Online (Tanpa Software, Tanpa Unggah)",
+          "excerpt": "Konversi komik dan manga PDF ke CBZ langsung di browser menggunakan WebAssembly. BiblioFuse Web Tool memproses semuanya secara lokal — file tidak pernah meninggalkan perangkat Anda."
+        },
         "manage-your-bibliofuse-library": {
           "title": "Mengelola Perpustakaan BiblioFuse: Folder, Transfer, dan Streaming dari Mac",
           "excerpt": "Cara menambahkan buku di semua platform, mengelola grid perpustakaan, dan melakukan streaming seluruh koleksi Mac ke iPhone via Tailscale."

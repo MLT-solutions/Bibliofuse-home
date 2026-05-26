@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "merge-cbz-files-online": {
+          "title": "Comment fusionner plusieurs fichiers CBZ en un seul — Outil gratuit en ligne",
+          "excerpt": "Combinez des chapitres CBZ en un seul volume directement dans votre navigateur. Sans téléchargement, sans logiciel — l'outil Web BiblioFuse fusionne gratuitement."
+        },
+        "convert-pdf-to-cbz-online": {
+          "title": "Comment convertir un PDF en CBZ en ligne (sans logiciel, sans envoi de fichiers)",
+          "excerpt": "Convertissez des PDF de bandes dessinées en CBZ dans votre navigateur grâce à WebAssembly. L'outil Web BiblioFuse traite tout localement — vos fichiers ne quittent jamais votre appareil."
+        },
         "manage-your-bibliofuse-library": {
           "title": "Gérer votre bibliothèque BiblioFuse : dossiers, transferts et streaming depuis Mac",
           "excerpt": "Comment ajouter des livres sur toutes les plateformes, gérer votre grille de bibliothèque et diffuser toute votre collection Mac vers iPhone via Tailscale."

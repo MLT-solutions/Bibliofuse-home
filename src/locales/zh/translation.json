@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "merge-cbz-files-online": {
+          "title": "如何在线将多个CBZ文件合并为一个——免费工具",
+          "excerpt": "直接在浏览器中将多个CBZ章节合并为一卷。无需上传文件，无需安装软件——BiblioFuse网页工具免费完成合并。"
+        },
+        "convert-pdf-to-cbz-online": {
+          "title": "如何在线将PDF转换为CBZ（无需软件，无需上传）",
+          "excerpt": "使用WebAssembly技术，直接在浏览器中将PDF漫画或漫画书转换为CBZ格式。BiblioFuse网页工具在本地处理，文件不会离开您的设备。"
+        },
         "manage-your-bibliofuse-library": {
           "title": "管理你的 BiblioFuse 书库：文件夹、传输与 Mac 流式访问",
           "excerpt": "如何在各平台添加书籍、管理书库网格，以及通过 Tailscale 将整个 Mac 藏书流式传输到 iPhone。"

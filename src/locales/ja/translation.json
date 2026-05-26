@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "merge-cbz-files-online": {
+          "title": "複数のCBZファイルを1つに結合する方法——無料オンラインツール",
+          "excerpt": "ブラウザ上でCBZの各章を1つのボリュームにまとめられます。ファイルのアップロード不要、ソフト不要——BiblioFuse Webツールが無料で対応。"
+        },
+        "convert-pdf-to-cbz-online": {
+          "title": "PDFをCBZにオンラインで変換する方法（ソフト不要・アップロード不要）",
+          "excerpt": "WebAssemblyを使い、ブラウザ内でPDFの漫画をCBZ形式に変換できます。BiblioFuse Webツールはすべてローカルで処理——ファイルはデバイスから出ません。"
+        },
         "manage-your-bibliofuse-library": {
           "title": "BiblioFuseのライブラリ管理：フォルダ・転送・Macストリーミング",
           "excerpt": "あらゆるプラットフォームで本を追加する方法、ライブラリグリッドの操作、TailscaleでMacのコレクション全体をiPhoneにストリーミングする手順。"

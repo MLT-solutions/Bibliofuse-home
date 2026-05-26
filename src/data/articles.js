@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'merge-cbz-files-online',
+    date: '2026-05-26',
+    tags: ['guide'],
+    coverImage: '/image/blog/Merge CBZ Files Online.jpg',
+  },
+  {
+    slug: 'convert-pdf-to-cbz-online',
+    date: '2026-05-26',
+    tags: ['guide'],
+    coverImage: '/image/blog/Convert PDF to CBZ.jpg',
+  },
+  {
     slug: 'bibliofuse-tools-tab-guide',
     date: '2026-05-25',
     tags: ['guide', 'tips'],

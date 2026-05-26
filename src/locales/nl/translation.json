@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "merge-cbz-files-online": {
+          "title": "Meerdere CBZ-bestanden samenvoegen — Gratis online tool",
+          "excerpt": "Combineer CBZ-hoofdstukken tot één volume rechtstreeks in je browser. Geen upload, geen software — de BiblioFuse Web Tool voegt gratis samen."
+        },
+        "convert-pdf-to-cbz-online": {
+          "title": "PDF naar CBZ converteren online (geen software, geen upload)",
+          "excerpt": "Converteer PDF-strips en manga naar CBZ in je browser met WebAssembly. De BiblioFuse Web Tool verwerkt alles lokaal — je bestanden verlaten je apparaat nooit."
+        },
         "manage-your-bibliofuse-library": {
           "title": "Je BiblioFuse-bibliotheek beheren: mappen, overdrachten en Mac-streaming",
           "excerpt": "Hoe je boeken toevoegt op elk platform, je bibliotheekraster beheert en je volledige Mac-collectie streamt naar iPhone via Tailscale."

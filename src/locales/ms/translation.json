@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "merge-cbz-files-online": {
+          "title": "Cara Menggabungkan Beberapa Fail CBZ Menjadi Satu — Alat Dalam Talian Percuma",
+          "excerpt": "Gabungkan bab-bab CBZ menjadi satu jilid terus dalam pelayar anda. Tiada muat naik, tiada perisian — BiblioFuse Web Tool menggabungkan secara percuma."
+        },
+        "convert-pdf-to-cbz-online": {
+          "title": "Cara Tukar PDF kepada CBZ Dalam Talian (Tiada Perisian, Tiada Muat Naik)",
+          "excerpt": "Tukar komik dan manga PDF kepada CBZ terus dalam pelayar menggunakan WebAssembly. BiblioFuse Web Tool memproses semuanya secara tempatan — fail tidak pernah keluar dari peranti anda."
+        },
         "manage-your-bibliofuse-library": {
           "title": "Mengurus Perpustakaan BiblioFuse: Folder, Pemindahan, dan Penstriman dari Mac",
           "excerpt": "Cara menambah buku di semua platform, mengurus grid perpustakaan, dan membuat penstriman seluruh koleksi Mac ke iPhone melalui Tailscale."
