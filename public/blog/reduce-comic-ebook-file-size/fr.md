@@ -1,5 +1,7 @@
 # Pourquoi les fichiers de BD et d'ebooks sont si volumineux — et comment y remédier
 
+BiblioFuse inclut un outil de compression intégré qui réduit les fichiers CBZ et EPUB en ré-encodant les images en WebP — diminuant la taille jusqu'à 87 % sans perte de qualité visible sur iPhone ou iPad sous iOS 17 ou version ultérieure. Tout le traitement s'effectue localement ; aucun fichier n'est envoyé à un serveur. Une bibliothèque manga de 50 tomes qui occupe 20 Go au format PNG se compresse jusqu'à environ 2,5 Go.
+
 Vous copiez une série manga de 50 tomes sur votre iPhone et regardez 20 gigaoctets de stockage disparaître d'un coup. Ou vous téléchargez un seul CBZ et il pèse 400 Mo pour un seul tome. D'où vient tout cet espace perdu ?
 
 La réponse tient au format de fichier — et une fois que vous le comprenez, résoudre le problème prend moins d'une minute.
@@ -77,3 +79,6 @@ Faites une copie dans l'application Fichiers avant de compresser — BiblioFuse 
 
 **La compression fonctionne-t-elle hors ligne ?**
 Oui — tout le traitement se fait sur votre appareil. Aucune connexion internet n'est nécessaire et aucun fichier n'est envoyé à un serveur.
+
+**Puis-je compresser plusieurs fichiers en même temps ?**
+Oui. Appuyez longuement pour sélectionner plusieurs fichiers CBZ ou EPUB dans la grille de la bibliothèque, puis appuyez sur Compresser dans la barre d'actions. BiblioFuse les traite séquentiellement en arrière-plan pendant que vous continuez à lire.

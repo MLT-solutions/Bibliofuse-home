@@ -1,5 +1,7 @@
 # How to Convert PDF to CBZ Online (No Software, No Upload)
 
+The BiblioFuse Web Tool converts PDF to CBZ entirely in your browser using WebAssembly — no software installation, no account, and no file upload to any server. For scanned PDFs, page images are extracted losslessly so the resulting CBZ is identical in quality to the source. The free tier handles up to three files per batch.
+
 You downloaded a scanned graphic novel as a PDF. It opens fine in Preview or Acrobat, but in your comic reader the experience is wrong — pages load sluggishly, zooming goes soft, and flipping between pages doesn't snap the way it should. You know CBZ handles comics better. The obstacle is converting without installing yet another desktop app, or sending your files to a website you don't know.
 
 The [BiblioFuse Web Tool](/en/webapp/) solves this inside your browser. No account. No upload. No software installation. Your files never leave your device.
@@ -66,7 +68,7 @@ Once conversion is done and you've downloaded your CBZ files, you have a few cle
 
 **AirDrop:** On a Mac, select your CBZ files in Finder, right-click, and AirDrop them to your iPhone. Tap "Open in BiblioFuse" when the transfer completes.
 
-## Common Questions
+## Frequently Asked Questions
 
 **Does the tool handle PDFs that contain both images and text layers?**
 

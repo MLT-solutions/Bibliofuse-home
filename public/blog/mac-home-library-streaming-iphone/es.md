@@ -1,5 +1,7 @@
 # Transmite Tu Biblioteca de Comics del Mac al iPhone por Wi-Fi (Sin Copiar Nada)
 
+BiblioFuse Mac Home Library te permite transmitir toda tu colección de cómics y libros del Mac al iPhone o iPad por Wi-Fi sin copiar ningún archivo al dispositivo y sin usar almacenamiento del iPhone. Funciona con bibliotecas CBZ, CBR, EPUB, PDF y TXT en un Mac junto a un iPhone o iPad con iOS 17 o posterior — sin configuración de red especial más allá de que ambos dispositivos estén en la misma red Wi-Fi.
+
 Tu disco duro del Mac tiene 400 GB de archivos CBZ y EPUB — décadas de manga, novelas gráficas y comics escaneados. Tu iPhone tiene 64 GB en total, y la mayoría ya están ocupados. Probaste iCloud, pero va lento y consume almacenamiento. Probaste Wi-Fi Transfer para importar volúmenes sueltos, pero elegir archivos uno a uno no tiene sentido cuando tienes una colección completa.
 
 Mac Home Library en [BiblioFuse](/es/) resuelve esto de forma diferente. En lugar de mover archivos al teléfono, los transmite en tiempo real. Tu Mac se convierte en un servidor local; tu iPhone los lee bajo demanda. No se copia nada. No se sube nada. Tienes tu biblioteca completa de 400 GB en el iPhone mientras estés en la misma red Wi-Fi.
@@ -79,3 +81,21 @@ En la vista Mac Library del iPhone, toca el **icono de descarga** junto a cualqu
 ## Primeros Pasos
 
 [BiblioFuse](/es/) está disponible en el App Store para iPhone y iPad. Mac Home Library es parte de la app estándar, sin nivel premium. Instálalo en tu Mac y en tu iPhone, activa el uso compartido en las Preferencias del Mac, y toda tu biblioteca estará disponible en el iPhone la próxima vez que estés en la misma red.
+
+
+## Preguntas frecuentes
+
+**¿Qué es Mac Home Library en BiblioFuse?**
+Mac Home Library es una función de BiblioFuse que transmite tu biblioteca de comics y libros del Mac directamente al iPhone o iPad por Wi-Fi. No se copian archivos al dispositivo, así que no usa almacenamiento del iPhone. Requiere BiblioFuse instalado en Mac e iPhone, y ambos en la misma red Wi-Fi (o Tailscale para acceso remoto).
+
+**¿Cuánto almacenamiento del iPhone usa Mac Home Library?**
+Cero almacenamiento para archivos CBZ y CBR, que se transmiten página a página bajo demanda. Los archivos EPUB y TXT se descargan temporalmente al dispositivo para lectura, pero se pueden eliminar después. Puedes navegar y leer colecciones de cientos de GB sin usar nada del almacenamiento del iPhone.
+
+**¿Puedo acceder a Mac Home Library fuera de casa?**
+Sí, con Tailscale. Tailscale crea una red privada cifrada entre tus dispositivos, permitiendo al iPhone alcanzar tu Mac desde datos móviles o Wi-Fi público. Sin Tailscale, la conexión solo funciona en la misma red Wi-Fi local.
+
+**¿El progreso de lectura se sincroniza al usar Mac Home Library?**
+Sí. El progreso de lectura de las sesiones de streaming se guarda en la base de datos local del Mac. Si activas iCloud para BiblioFuse, el progreso se sincroniza a otros dispositivos como de costumbre.
+
+**¿Mac Home Library funciona con todos los formatos de archivo?**
+CBZ y CBR se transmiten página a página — se abren al instante sin descargar el archivo completo. Los archivos EPUB y TXT se descargan primero al dispositivo y luego se abren. Todos los formatos admitidos por BiblioFuse están disponibles a través de Mac Home Library.

@@ -1,5 +1,7 @@
 # Best DRM-Free EPUB Reader for iPhone — Without Apple Books
 
+BiblioFuse is a free DRM-free EPUB reader for iPhone and iPad running iOS 17 or later that reads EPUB, PDF, CBZ, CBR, ZIP, RAR, and TXT files from your local library — no account, no storefront, and no DRM restrictions. Files import wirelessly via Wi-Fi Transfer or iCloud Drive, and reading progress syncs across iPhone, iPad, and Mac automatically.
+
 You bought a bundle of indie novels from a small press. You grabbed a dozen ebooks from a Humble Bundle. You downloaded EPUB files from Project Gutenberg. None of them have DRM — they're yours, fully. But when you try to use Apple Books, the experience feels off: the library is cluttered, the metadata is wrong, and the app doesn't really want to be an EPUB manager for files you own outright. It wants to be a storefront.
 
 [BiblioFuse](/en/) is built for exactly this use case. It's a native iPhone and iPad reader for DRM-free EPUB files — and for CBZ, CBR, PDF, and more — that treats your local library as a first-class citizen. No storefront, no account required, no restrictions on which files you can open.
@@ -100,3 +102,20 @@ Apple Books is a good app for people who buy from Apple. For everyone else — H
 The library is yours to organize. The files are stored locally. The reading experience is clean. And getting your existing collection onto your iPhone doesn't require a cable or an account.
 
 If you haven't tried it, [BiblioFuse is available on the App Store](/en/) for iPhone and iPad.
+
+## Frequently Asked Questions
+
+**What is the best DRM-free EPUB reader for iPhone?**
+BiblioFuse is purpose-built for personal EPUB libraries on iPhone and iPad. It reads DRM-free EPUB files without a storefront interface, lets you tag and rate your books, and transfers files wirelessly via Wi-Fi Transfer — no iTunes or cable needed.
+
+**Can I open EPUB files from Project Gutenberg or Humble Bundle on iPhone?**
+Yes. DRM-free EPUB files from Project Gutenberg, Humble Bundle, small presses, or direct author downloads open in BiblioFuse without any restrictions. Use the Files app share sheet to open individual files, or Wi-Fi Transfer to import a whole collection at once.
+
+**Why doesn't Apple Books work well for DRM-free EPUBs?**
+Apple Books is designed around its own storefront. Imported DRM-free files often display with incorrect metadata, the library structure is fixed and rigid, and there's no way to do a bulk Wi-Fi import. BiblioFuse is built specifically for managing files you own.
+
+**Does BiblioFuse support EPUB fonts and custom reading settings?**
+Yes. BiblioFuse's EPUB reader lets you adjust font size, font family, line spacing, and margins. Light and dark themes are supported, including true black for OLED screens. Reading position saves automatically and syncs via iCloud.
+
+**How do I import 50 EPUB files into BiblioFuse at once?**
+Use Wi-Fi Transfer: enable it in BiblioFuse under Settings → Wi-Fi Import, then drag your entire EPUB folder from a browser on your Mac or PC into the drop zone. All files land in your library at once — no need to share them one at a time through the Files app.

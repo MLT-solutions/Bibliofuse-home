@@ -1,5 +1,7 @@
 # iPhone용 최고의 DRM 없는 EPUB 리더 — Apple Books 없이
 
+BiblioFuse는 iOS 17 이상의 iPhone 및 iPad용 무료 DRM 없는 EPUB 리더로, 로컬 라이브러리의 EPUB, PDF, CBZ, CBR, ZIP, RAR, TXT 파일을 읽을 수 있습니다 — 계정 없음, 스토어 없음, DRM 제한 없음. 파일은 Wi-Fi Transfer 또는 iCloud Drive를 통해 무선으로 가져오며, 독서 진행 상황은 iPhone, iPad, Mac 간에 자동으로 동기화됩니다.
+
 소규모 출판사에서 인디 소설 묶음을 구입했습니다. Humble Bundle에서 수십 권의 전자책을 받았습니다. Project Gutenberg에서 EPUB 파일을 다운로드했습니다. 이 파일들 중 어느 것도 DRM이 없습니다 — 완전히 여러분의 것입니다. 하지만 Apple Books를 사용하려 하면 경험이 어색하게 느껴집니다. 라이브러리는 지저분하고, 메타데이터는 잘못되어 있으며, 앱은 여러분이 소유한 파일을 위한 EPUB 관리자가 되고 싶어하지 않습니다. 앱은 스토어가 되고 싶어합니다.
 
 [BiblioFuse](/ko/)는 정확히 이런 용도로 만들어졌습니다. DRM 없는 EPUB 파일 — CBZ, CBR, PDF 등도 포함 — 을 위한 네이티브 iPhone 및 iPad 리더로, 로컬 라이브러리를 최우선으로 취급합니다. 스토어 없음, 계정 불필요, 열 수 있는 파일에 제한 없음.
@@ -100,3 +102,21 @@ Apple Books는 Apple에서 구매하는 사람들에게 좋은 앱입니다. 그
 라이브러리는 여러분이 정리하는 것입니다. 파일은 로컬에 저장됩니다. 독서 경험은 깔끔합니다. 그리고 기존 컬렉션을 iPhone으로 가져오는 데 케이블이나 계정이 필요하지 않습니다.
 
 아직 사용해보지 않았다면, [BiblioFuse는 App Store에서 이용 가능합니다](/ko/) iPhone 및 iPad용으로.
+
+
+## 자주 묻는 질문
+
+**BiblioFuse가 iPhone에서 DRM 없는 EPUB 파일을 읽을 수 있나요?**
+네. BiblioFuse는 iOS 17 이상의 네이티브 EPUB 리더로, 구매한 EPUB, Gutenberg에서 다운로드한 파일, 기타 DRM 없는 소스의 파일을 로컬 라이브러리에서 직접 엽니다. 계정도 스토어도 필요 없습니다.
+
+**iPhone의 BiblioFuse에 EPUB 파일을 어떻게 가져오나요?**
+세 가지 방법이 있습니다. Wi-Fi Transfer(앱에서 설정 -> Wi-Fi 가져오기를 켜고 PC 브라우저에서 URL 방문 후 파일 드래그), iCloud Drive(Mac에서 iCloud Drive -> BiblioFuse에 EPUB 복사하면 iPhone에 자동 표시), 또는 파일 앱(EPUB 길게 누르기 -> 공유 -> BiblioFuse).
+
+**BiblioFuse가 Project Gutenberg 책을 지원하나요?**
+네. BiblioFuse는 Project Gutenberg, Standard Ebooks 및 기타 공개 도메인 소스의 파일을 포함한 모든 표준 EPUB 파일을 엽니다. 이 책들은 DRM 없는 EPUB 파일로 바로 작동합니다.
+
+**BiblioFuse가 EPUB 독서 진행 상황을 기기 간에 어떻게 동기화하나요?**
+BiblioFuse는 iCloud를 통해 진행 상황을 동기화합니다. iCloud Drive -> BiblioFuse에 EPUB 파일을 두면 동기화가 활성화됩니다. 진행 상황, 태그, 별점이 iPhone, iPad, Mac 간에 자동으로 동기화됩니다.
+
+**BiblioFuse가 EPUB 외에 PDF도 읽을 수 있나요?**
+네. BiblioFuse는 EPUB, PDF, CBZ, CBR, ZIP, RAR, TXT를 하나의 리더에서 읽습니다. 책과 만화의 전체 라이브러리를 하나의 앱에서 관리할 수 있으며, 모든 형식에 동일한 가져오기 시스템을 사용합니다.

@@ -1,5 +1,7 @@
 # Pembaca Komik Terbaik untuk iPhone dan iPad di 2026
 
+BiblioFuse adalah pembaca komik native untuk iPhone dan iPad yang mendukung CBZ, CBR, ZIP, RAR, EPUB, PDF, dan TXT di iOS 17 atau lebih baru. Dilengkapi Wi-Fi Transfer untuk impor massal tanpa kabel, Mac Home Library untuk streaming koleksi desktop tanpa menyalin file, memori arah baca per volume, serta alat kompresi dan konversi di perangkat — semuanya tanpa akun atau langganan.
+
 Kamu sudah mengumpulkan ratusan komik — file CBZ dari arsip penggemar, volume CBR yang dibeli dari penerbit, novel grafis EPUB dari Humble Bundle, dan beberapa PDF di antaranya. Membukanya di iPhone seharusnya mudah. Nyatanya, kamu menghabiskan dua puluh menit mengunduh aplikasi yang tidak bisa membuka setengah formatmu, merusak tata letak manga, atau langsung macet begitu scan resolusi tinggi dimuat.
 
 Panduan ini menjelaskan apa yang benar-benar membedakan pembaca komik mobile yang baik, dan mengapa [BiblioFuse](/id/) unggul untuk pembaca dengan koleksi format campuran di iPhone dan iPad pada 2026.
@@ -61,3 +63,20 @@ OCR memungkinkan kamu memilih dan menyalin teks dari halaman scan — berguna un
 [BiblioFuse](/id/) gratis di App Store untuk iPhone dan iPad. Unduh, gunakan Wi-Fi Transfer untuk memuat koleksimu, dan perpustakaanmu siap. Tidak perlu langganan untuk membaca.
 
 Jika koleksi utamamu ada di Mac, aktifkan Mac Home Library dan akses semuanya dari ponselmu hari itu juga tanpa menyalin satu pun file.
+
+## Pertanyaan yang Sering Diajukan
+
+**Apa aplikasi pembaca komik terbaik untuk iPhone di 2026?**
+BiblioFuse adalah pilihan utama untuk pembaca dengan koleksi multi-format yang besar. Membaca CBZ, CBR, ZIP, RAR, EPUB, PDF, dan TXT secara native, menangani manga kanan-ke-kiri dengan benar, dan mengimpor file secara nirkabel melalui Wi-Fi Transfer tanpa iTunes atau kabel.
+
+**Apakah BiblioFuse mendukung file CBR di iPhone dan iPad?**
+Ya. BiblioFuse membuka file CBR langsung tanpa mengonversinya ke CBZ. Aplikasi memperlakukan CBR dan CBZ secara identik di pembaca, dengan opsi navigasi halaman, zoom, dan arah baca yang sama.
+
+**Bisakah membaca komik dari Mac di iPhone tanpa menyalin file?**
+Bisa, menggunakan Mac Home Library. Instal BiblioFuse di kedua perangkat, aktifkan berbagi di aplikasi Mac, dan seluruh perpustakaan komik Mac bisa dijelajahi dari iPhone melalui Wi-Fi. Tidak ada yang disalin ke ponsel; halaman distream sesuai permintaan.
+
+**Adakah pembaca komik gratis untuk iPhone yang bisa menangani koleksi besar?**
+BiblioFuse gratis diunduh tanpa akun. Menggunakan rendering halaman per halaman sehingga bahkan CBZ 500 MB dengan 300 halaman resolusi tinggi terbuka dalam sekitar satu detik tanpa memuat seluruh file ke memori.
+
+**Aplikasi pembaca komik apa yang mendukung manga dan komik barat di iPhone?**
+BiblioFuse mendukung keduanya. Arah baca disimpan per volume — volume manga tetap kanan-ke-kiri, komik barat tetap kiri-ke-kanan. Webtoon menggunakan mode scroll vertikal terpisah. Kamu mengonfigurasi setiap seri sekali dan pengaturan tetap tersimpan.

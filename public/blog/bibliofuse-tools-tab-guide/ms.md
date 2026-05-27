@@ -1,5 +1,7 @@
 # Menggunakan Tab Alat BiblioFuse: Mampat, Tukar, dan Gabung di iPhone
 
+Tab Alat BiblioFuse membolehkan anda memampatkan, menukar, dan menggabungkan fail CBZ, EPUB, PDF dan RAR terus di iPhone atau iPad — tanpa komputer atau muat naik ke cloud. Alat Mampat mengekod semula imej ke WebP, biasanya mengurangkan saiz fail sebanyak 60-75%. Tukar mengendalikan perubahan PDF ke CBZ dan RAR ke CBZ, manakala Gabung menggabungkan beberapa fail bab menjadi satu arkib jilid.
+
 Anda sedang rehat makan tengah hari, telefon di tangan, dan mendapati koleksi komik anda sedang menghakis storan iPhone. Fail CBZ daripada siri manga itu setiap satu bersaiz 80–120 MB. Anda ingin memampatkannya, tetapi komputer riba ada di rumah dan anda tidak mahu tunggu hingga malam. Atau mungkin anda ada beberapa fail bab daripada satu siri dan ingin menggabungkannya menjadi satu jilid sebelum membaca dengan selesa.
 
 [BiblioFuse](/ms/) mengendalikan kedua-dua keadaan ini tanpa komputer. Tab Alat — yang dibina dalam aplikasi iOS — membolehkan anda memampatkan, menukar, dan menggabungkan komik dan ebook terus di iPhone atau iPad anda. Semua proses dijalankan pada peranti. Tiada fail dimuat naik ke mana-mana. Tiada aplikasi desktop diperlukan.
@@ -127,3 +129,21 @@ Tab Alat adalah satu bahagian daripada apa yang [BiblioFuse](/ms/) lakukan. Apli
 Jika anda telah menggunakan BiblioFuse terutamanya sebagai pembaca, tab Alat adalah berbaloi untuk diterokai. Ia mengubah iPhone anda menjadi stesen pemprosesan fail yang berkebolehan — tidak perlu desktop.
 
 [BiblioFuse tersedia di App Store](/ms/) untuk iPhone dan iPad.
+
+
+## Soalan Lazim
+
+**Apa yang dilakukan alat mampatan BiblioFuse?**
+Alat mampatan mengekod semula imej dalam fail CBZ dan EPUB ke format WebP, biasanya mengurangkan saiz fail 60-75% dengan kehilangan kualiti yang sedikit atau tiada pada skrin iPhone atau iPad. Pemprosesan berlaku sepenuhnya pada peranti menggunakan perkakasan mampatan imej iPhone.
+
+**Bolehkah saya memampatkan fail komik di iPhone tanpa komputer?**
+Ya. Tab Alat BiblioFuse berjalan sepenuhnya pada peranti pada iOS 17 atau lebih baru. Pilih fail CBZ atau EPUB dalam perpustakaan anda, hantarkannya ke giliran alat, pilih Mampat dan iPhone memproses fail secara tempatan. Tiada desktop diperlukan.
+
+**Bagaimana penggabungan fail CBZ berfungsi dalam BiblioFuse?**
+Masuk ke mod pilihan dengan menekan lama fail CBZ pertama, kemudian ketuk bab lain untuk menambahkannya. Ketuk butang Alat pada bar bawah, pilih Gabung dan BiblioFuse menggabungkan fail mengikut urutan yang anda tentukan. Hasilnya pergi ke folder export dalam iPhone Saya -> BiblioFuse -> export.
+
+**Format apa yang disokong alat mampatan BiblioFuse?**
+Alat mampatan menyokong fail CBZ dan EPUB. Alat penukaran menukar PDF ke CBZ dan RAR ke CBZ. Alat gabung menggabungkan berbilang CBZ menjadi satu fail CBZ. PDF ke CBZ berguna untuk fail PDF yang diimbas dengan imej yang mendapat manfaat daripada pengekod semula WebP.
+
+**Di mana fail output selepas menggunakan tab Alat?**
+Pada iOS, fail yang diproses muncul secara automatik dalam iPhone Saya -> BiblioFuse -> export. Dari sana anda boleh memindahkannya ke iCloud Drive -> BiblioFuse untuk penyegerakan antara peranti, atau berkongsi dengan aplikasi lain. Pada Android, anda memilih folder output semasa menjalankan alat.

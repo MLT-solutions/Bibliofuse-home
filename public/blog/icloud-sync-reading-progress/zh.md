@@ -1,5 +1,7 @@
 # BiblioFuse如何通过iCloud在iPhone、iPad和Mac间同步阅读进度
 
+BiblioFuse 通过 iCloud 在 iPhone、iPad 和 Mac 之间自动同步阅读进度、标签、评分和阅读方向——无需手动操作。适用于存储在 iCloud 云盘上的 EPUB、CBZ、CBR 和 PDF 文件（iOS 17 或更高版本），进度绑定到每个文件的内容哈希而非文件名，因此重命名或移动文件夹后仍能正确保留。iCloud 同步无需付费订阅即可使用。
+
 你在上班途中用iPhone读漫画——翻到第80页，到家后切换到iPad，却要翻找页面缩略图才能找到之前的位置。或者在Mac上读完一章，第二天早上拿起iPhone，发现还停在第一页。
 
 阅读进度同步听起来简单，但在大多数阅读器中都存在微妙的失效问题。[BiblioFuse](/zh/)使用iCloud同步你的精确阅读位置——页码、阅读方向和显示设置——在iPhone、iPad和Mac之间自动完成，无需手动操作。
@@ -45,3 +47,20 @@
 ## 立即开始
 
 [BiblioFuse](/zh/)在App Store免费提供，适用于iPhone和iPad，iCloud同步无需付费订阅。在设备设置中为BiblioFuse启用iCloud Drive，进度即刻开始跨设备同步。
+
+## 常见问题
+
+**BiblioFuse 如何在 iPhone 和 iPad 之间同步阅读进度？**
+BiblioFuse 将进度元数据存储在 iCloud 中，并将其绑定到每个文件的内容哈希，而非文件名。即使重命名或移动文件，进度也能正确同步。在设置 → Apple ID → iCloud 中为 BiblioFuse 启用 iCloud Drive 即可激活同步。
+
+**BiblioFuse 能同步 CBZ 和漫画文件的进度吗？**
+可以。CBZ、CBR、EPUB 和 PDF 均支持进度同步。CBZ/CBR 同步精确的页码，EPUB 同步章节内的精确位置。阅读方向（从左到右或从右到左）也按卷同步。
+
+**在 BiblioFuse 中启用 iCloud 同步需要开启什么？**
+两件事：在设置 → Apple ID → iCloud 中启用 iCloud Drive，并在该列表中开启 BiblioFuse 开关。两项都开启后，同步会自动开始，无需手动触发。
+
+**离线阅读时 iCloud 同步是否有效？**
+有效。没有网络连接时阅读，BiblioFuse 会在本地保存进度。设备下次连接到 iCloud 时自动上传更新。若两台设备发生冲突，BiblioFuse 优先采用页码更高的设备。
+
+**BiblioFuse 中 iCloud 同步和 Mac 家庭书库的区别是什么？**
+iCloud 同步将文件和进度数据复制到云端，可在任意设备上使用。Mac 家庭书库通过本地 Wi-Fi 按需从 Mac 流式传输文件——不会将任何内容复制到设备或 iCloud。需要在任何地方离线访问时使用 iCloud；在家浏览完整收藏而不占用设备存储时使用 Mac 家庭书库。

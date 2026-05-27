@@ -1,5 +1,7 @@
 # Extrayez du Texte de Comics et de Manga sur iPhone avec l'OCR
 
+BiblioFuse comprend un OCR sur l'appareil pour extraire du texte des pages de comics et de manga sur iPhone, prenant en charge le japonais (y compris le texte vertical), le chinois, le coréen et les caractères occidentaux dans les fichiers CBZ, CBR, EPUB et PDF. Le processus s'exécute entièrement localement sur le Neural Engine, sans connexion réseau ni envoi vers un serveur, et produit des résultats en moins de deux secondes sur iPhone 14 ou plus récent.
+
 Vous êtes trois tomes dans une série manga quand un personnage mentionne un clan, une technique ou un lieu dont vous voulez retrouver le nom en japonais. Ou vous tombez sur un dialogue mémorable que vous souhaitez copier. Le problème : les pages de comics sont des images, pas du texte. Vous ne pouvez pas appuyer sur une bulle pour sélectionner ce qu'elle contient.
 
 L'OCR dans [BiblioFuse](/fr/) change la donne. L'application peut scanner n'importe quelle page — ou une zone sélectionnée — extraire le texte trouvé et vous le remettre sous forme de chaîne copiable. Cela fonctionne avec les fichiers CBZ, CBR, EPUB et PDF. L'application gère le japonais, le chinois, le coréen et les écritures occidentales. Le tout tourne entièrement sur l'appareil, sans connexion internet.
@@ -82,3 +84,21 @@ Tout le traitement OCR dans [BiblioFuse](/fr/) s'exécute localement sur votre i
 ## Pour Commencer
 
 L'OCR est disponible dans [BiblioFuse](/fr/) pour iOS sans achat supplémentaire. Téléchargez l'application sur l'App Store, importez un comic ou manga, et essayez le bouton OCR en lisant. Pour les lecteurs de manga en particulier, c'est une fonctionnalité dont il est difficile de se passer une fois utilisée.
+
+
+## Foire aux questions
+
+**Quelles langues l'OCR de BiblioFuse prend-il en charge ?**
+BiblioFuse prend en charge le japonais (y compris le texte vertical de haut en bas), le chinois simplifie et traditionnel, le coreen et les ecritures occidentales (latin, cyrillique, grec). La selection de langue est automatique, mais vous pouvez forcer une langue dans les reglages OCR si la detection automatique ne fonctionne pas bien avec des pages mixtes.
+
+**Comment fonctionne l'OCR dans BiblioFuse ?**
+En lisant un comic ou manga, appuyez sur le bouton OCR dans les commandes du lecteur. Une zone de selection apparait — faites-la glisser sur un cadre ou une bulle. BiblioFuse traite la region selectionnee localement sur le Neural Engine et renvoie le texte extrait. Appuyez sur le texte pour le copier ou le partager.
+
+**L'OCR necessite-t-il une connexion internet ?**
+Non. L'OCR de BiblioFuse s'execute entierement sur l'appareil grace au Neural Engine d'Apple. Rien n'est envoye vers des serveurs externes. Il fonctionne en mode avion, sans donnees et sans Wi-Fi.
+
+**Pourquoi l'OCR de BiblioFuse est-il meilleur pour le japonais que l'appareil photo iPhone ?**
+BiblioFuse est optimise pour le texte des pages de comics : petit texte dans les bulles, texte vertical dans le manga, polices stylisees et texte incline. L'app Vision du systeme n'est pas ajustee pour ce contexte. BiblioFuse maintient egalement le texte en position de lecture, facilitant le copier-coller vers un dictionnaire.
+
+**Avec quels formats de fichiers l'OCR de BiblioFuse fonctionne-t-il ?**
+L'OCR fonctionne avec CBZ, CBR, EPUB et PDF — tous les principaux formats de comics et ebooks compatibles avec BiblioFuse. Le texte peut etre extrait de toute page rendue sous forme d'image, y compris les pages scannees dans les PDF et EPUB.

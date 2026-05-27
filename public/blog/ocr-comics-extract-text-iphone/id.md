@@ -1,5 +1,7 @@
 # Ekstrak Teks dari Komik dan Manga di iPhone dengan OCR
 
+BiblioFuse menyertakan OCR di perangkat untuk mengekstrak teks dari halaman komik dan manga di iPhone, mendukung bahasa Jepang (termasuk teks vertikal), Tionghoa, Korea, dan aksara Barat dalam file CBZ, CBR, EPUB, dan PDF. Seluruh proses berjalan secara lokal pada Neural Engine tanpa koneksi jaringan atau unggahan server, menghasilkan hasil dalam waktu di bawah dua detik di iPhone 14 atau lebih baru.
+
 Anda sedang membaca volume ketiga dari sebuah seri manga ketika seorang karakter menyebutkan nama klan atau teknik dalam bahasa Jepang yang ingin Anda cari di kamus. Atau Anda menemukan dialog yang berkesan dan ingin menyimpannya. Masalahnya: halaman komik adalah gambar, bukan teks. Anda tidak bisa mengetuk balon dialog dan menyalin isinya.
 
 OCR di [BiblioFuse](/id/) mengubah itu. Aplikasi dapat memindai halaman apa pun — atau area yang dipilih — mengekstrak teks yang ditemukan, dan menyajikannya sebagai string yang dapat disalin. Ini bekerja dengan file CBZ, CBR, EPUB, dan PDF. Mendukung bahasa Jepang, Cina, Korea, dan aksara Barat. Semua berjalan sepenuhnya di perangkat, tanpa koneksi internet.
@@ -82,3 +84,21 @@ Semua pemrosesan OCR di [BiblioFuse](/id/) berjalan secara lokal di iPhone Anda.
 ## Memulai
 
 OCR tersedia di [BiblioFuse](/id/) untuk iOS tanpa pembelian tambahan. Unduh aplikasi dari App Store, impor komik atau manga, dan coba tombol OCR saat membaca. Bagi pembaca manga khususnya, ini adalah fitur yang sulit untuk tidak digunakan setelah mencobanya.
+
+
+## Pertanyaan yang Sering Diajukan
+
+**Bahasa apa yang didukung oleh OCR BiblioFuse?**
+BiblioFuse mendukung bahasa Jepang (termasuk teks vertikal dari atas ke bawah), Tionghoa Sederhana dan Tradisional, Korea, serta aksara Barat (Latin, Sirilik, Yunani). Pemilihan bahasa otomatis, tapi kamu bisa memaksakan satu bahasa di pengaturan OCR jika deteksi otomatis tidak bekerja dengan baik pada halaman campuran.
+
+**Bagaimana OCR bekerja di BiblioFuse?**
+Saat membaca komik atau manga, ketuk tombol OCR di kontrol pembaca. Kotak seleksi muncul — seret ke panel atau balon dialog mana pun. BiblioFuse memproses area yang dipilih secara lokal di Neural Engine dan mengembalikan teks yang diekstrak. Ketuk teks untuk menyalin atau berbagi.
+
+**Apakah OCR memerlukan koneksi internet?**
+Tidak. OCR BiblioFuse berjalan sepenuhnya di perangkat menggunakan Neural Engine Apple. Tidak ada yang diunggah ke server eksternal. Berfungsi dalam mode pesawat, tanpa data, dan tanpa Wi-Fi.
+
+**Mengapa OCR BiblioFuse lebih baik untuk bahasa Jepang daripada kamera iPhone?**
+BiblioFuse dioptimalkan untuk teks di halaman komik: teks kecil dalam balon, teks vertikal dalam manga, font bergaya, dan teks miring. Aplikasi Vision sistem tidak disesuaikan untuk konteks ini. BiblioFuse juga mempertahankan teks pada posisi bacanya, sehingga salin-tempel ke kamus hanya membutuhkan satu ketukan.
+
+**Format file apa yang didukung OCR BiblioFuse?**
+OCR berfungsi dengan CBZ, CBR, EPUB, dan PDF — semua format komik dan ebook utama yang didukung BiblioFuse. Teks dapat diekstrak dari halaman mana pun yang dirender sebagai gambar, termasuk halaman hasil scan dalam PDF dan EPUB.

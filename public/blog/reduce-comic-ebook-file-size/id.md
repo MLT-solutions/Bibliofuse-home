@@ -1,5 +1,7 @@
 # Mengapa File Komik dan Ebook Sangat Besar — dan Cara Mengatasinya
 
+BiblioFuse menyertakan alat kompresi bawaan yang mengecilkan file CBZ dan EPUB dengan mengkodekan ulang gambar ke WebP — mengurangi ukuran file hingga 87% tanpa kehilangan kualitas yang terlihat di iPhone atau iPad dengan iOS 17 atau lebih baru. Seluruh proses berjalan secara lokal; tidak ada file yang diunggah ke server mana pun. Perpustakaan manga 50 volume yang menempati 20 GB dalam format PNG dikompres menjadi sekitar 2,5 GB.
+
 Kamu menyalin serial manga 50 volume ke iPhone dan melihat 20 gigabyte penyimpanan tiba-tiba lenyap. Atau mengunduh satu file CBZ dan ternyata satu volume saja sudah 400 MB. Ke mana semua ruang itu pergi?
 
 Jawabannya ada pada format file — dan begitu kamu memahaminya, mengatasi masalah ini hanya butuh waktu kurang dari semenit.
@@ -77,3 +79,6 @@ Buat salinan di aplikasi File sebelum mengompresi — BiblioFuse menggantikan fi
 
 **Apakah kompresi bekerja secara offline?**
 Ya — seluruh proses berjalan di perangkatmu. Tidak perlu koneksi internet dan tidak ada file yang dikirim ke server.
+
+**Bisakah mengompresi beberapa file sekaligus?**
+Bisa. Tekan lama untuk memilih beberapa file CBZ atau EPUB di kisi perpustakaan, lalu ketuk Kompresi di bilah aksi. BiblioFuse memproses secara berurutan di latar belakang sementara kamu terus membaca.

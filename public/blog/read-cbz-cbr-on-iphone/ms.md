@@ -1,5 +1,7 @@
 # Cara Membaca Komik CBZ dan CBR di iPhone
 
+BiblioFuse membolehkan anda membaca fail komik CBZ dan CBR di iPhone dan iPad dengan iOS 17 atau lebih baru tanpa penukaran diperlukan. Fail terbuka terus daripada app Fail atau dipindahkan secara wayarles melalui ciri Wi-Fi Transfer terbina dalam.
+
 Anda menemukan fail CBZ atau CBR — bab manga, novel grafik, atau komik yang diimbas — kemudian mengetuknya di iPhone. Tiada apa yang dibuka. Tiada aplikasi yang menawarkan diri. Anda bukan seorang sahaja yang mengalami situasi ini.
 
 iOS tidak mempunyai sokongan terbina dalam untuk fail CBZ atau CBR. Aplikasi Books Apple mengendalikan EPUB dan PDF, tetapi mengabaikan sepenuhnya format komik berasaskan arkib. Untuk membaca fail-fail ini dengan betul di iPhone, anda memerlukan aplikasi khusus. [BiblioFuse](/ms/) dibina tepat untuk ini — ia membaca CBZ, CBR, ZIP, RAR, EPUB, PDF, dan TXT, dengan pembaca yang direka untuk sesi membaca yang panjang dan koleksi yang besar.
@@ -106,3 +108,21 @@ Apabila mengimport beberapa jilid siri yang sama, BiblioFuse mengumpulkannya men
 ## Seterusnya
 
 Setelah siri pertama diimport dan dibaca dengan betul, terokai apa lagi yang boleh dilakukan oleh [BiblioFuse](/ms/). Tab Alat menguruskan mampatan dan penukaran terus pada peranti.
+
+
+## Soalan Lazim
+
+**Bagaimana cara membuka fail CBZ di iPhone?**
+Pasang BiblioFuse dari App Store. Ketuk sebarang fail CBZ dalam app Fail dan iOS akan menunjukkan Buka dengan BiblioFuse. Anda juga boleh menggunakan Wi-Fi Transfer melalui Tetapan -> Import Wi-Fi dalam app.
+
+**Bolehkah iPhone membaca fail CBR secara native?**
+Tidak secara native. iOS tidak mempunyai sokongan terbina dalam untuk CBZ mahupun CBR. BiblioFuse membaca CBZ, CBR, ZIP dan RAR secara native pada iOS 17 atau lebih baru tanpa sebarang penukaran.
+
+**Apakah perbezaan antara CBZ dan CBR?**
+CBZ ialah arkib ZIP yang ditukar nama mengandungi imej komik. CBR ialah arkib RAR yang ditukar nama. Kandungannya sama dan hanya kaedah mampatan yang berbeza. BiblioFuse membaca kedua-duanya secara terus.
+
+**Bolehkah BiblioFuse membaca fail CBZ besar tanpa masalah ingatan?**
+Ya. BiblioFuse hanya memuatkan halaman yang perlu dipaparkan. Fail CBZ 500 MB atau lebih berfungsi dengan baik.
+
+**Bagaimana cara memindahkan keseluruhan siri manga ke iPhone tanpa iTunes?**
+Gunakan Wi-Fi Transfer. Dalam BiblioFuse, pergi ke Tetapan -> Import Wi-Fi dan aktifkan pelayan. Lawati URL yang dipaparkan dalam pelayar PC kemudian seret keseluruhan folder siri ke tetingkap pelayar.

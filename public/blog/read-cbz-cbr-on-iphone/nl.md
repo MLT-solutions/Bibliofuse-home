@@ -1,5 +1,7 @@
 # CBZ- en CBR-strips lezen op iPhone
 
+BiblioFuse laat je CBZ- en CBR-comicbestanden lezen op iPhone en iPad met iOS 17 of later zonder conversie nodig. Bestanden openen direct vanuit de Bestanden-app of worden draadloos overgedragen via de ingebouwde Wi-Fi Transfer functie.
+
 Je vond een CBZ- of CBR-bestand — een manga-hoofdstuk, een graphic novel, een gescande strip — en tikte erop op je iPhone. Er gebeurde niets. Geen app bood zich aan. Je bent niet de enige.
 
 iOS heeft geen ingebouwde ondersteuning voor CBZ- of CBR-bestanden. Apple's Books-app verwerkt EPUB en PDF, maar negeert archiefgebaseerde stripformaten volledig. Om die bestanden correct te lezen op je iPhone, heb je een gespecialiseerde app nodig. [BiblioFuse](/nl/) is daar precies voor gebouwd — het leest CBZ, CBR, ZIP, RAR, EPUB, PDF en TXT, met een lezer voor lange lees­sessies en grote collecties.
@@ -106,3 +108,21 @@ Wanneer je meerdere delen van dezelfde serie importeert, groepeert BiblioFuse ze
 ## Wat daarna
 
 Zodra je eerste serie geïmporteerd is, ontdek je wat [BiblioFuse](/nl/) nog meer kan. Het tabblad Extra beheert compressie en conversie direct op het apparaat.
+
+
+## Veelgestelde vragen
+
+**Hoe open ik CBZ-bestanden op iPhone?**
+Installeer BiblioFuse uit de App Store. Tik op een CBZ-bestand in de Bestanden-app en iOS toont Openen met BiblioFuse. Je kunt ook Wi-Fi Transfer gebruiken via Instellingen -> Wi-Fi Import in de app.
+
+**Kan iPhone CBR-bestanden native lezen?**
+Niet native. iOS heeft geen ingebouwde ondersteuning voor CBZ of CBR. BiblioFuse leest CBZ, CBR, ZIP en RAR native op iOS 17 of later zonder conversiestap.
+
+**Wat is het verschil tussen CBZ en CBR?**
+CBZ is een hernoemd ZIP-archief met comicafbeeldingen. CBR is een hernoemd RAR-archief. De inhoud is identiek en alleen de compressiemethode verschilt. BiblioFuse leest beide direct.
+
+**Kan BiblioFuse grote CBZ-bestanden lezen zonder geheugenproblemen?**
+Ja. BiblioFuse laadt alleen de pagina's die het moet weergeven. CBZ-bestanden van 500 MB of meer werken prima.
+
+**Hoe zet ik een complete mangaserie over naar iPhone zonder iTunes?**
+Gebruik Wi-Fi Transfer. Ga in BiblioFuse naar Instellingen -> Wi-Fi Import en schakel de server in. Bezoek de getoonde URL in de pc-browser en sleep de volledige seriemap naar het browservenster.

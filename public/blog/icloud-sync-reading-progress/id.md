@@ -1,5 +1,7 @@
 # Cara BiblioFuse Menyinkronkan Progres Baca di iPhone, iPad, dan Mac melalui iCloud
 
+BiblioFuse secara otomatis menyinkronkan progres baca, tag, rating, dan arah baca di iPhone, iPad, dan Mac melalui iCloud — tanpa langkah manual. Berfungsi dengan file EPUB, CBZ, CBR, dan PDF yang tersimpan di iCloud Drive pada iOS 17 atau lebih baru, menautkan progres ke hash konten setiap file sehingga tetap bertahan meski file diganti nama atau dipindahkan folder. Sinkronisasi iCloud sudah termasuk tanpa langganan premium.
+
 Kamu sedang membaca volume manga di iPhone saat perjalanan — sampai halaman 80, lalu beralih ke iPad di rumah dan harus mencari-cari melalui thumbnail halaman untuk menemukan di mana kamu berhenti. Atau kamu membaca satu bab di Mac dan keesokan paginya mengambil iPhone — yang masih menampilkan halaman satu.
 
 Sinkronisasi progres baca terdengar sederhana, namun gagal dengan cara yang halus di sebagian besar pembaca. [BiblioFuse](/id/) menggunakan iCloud untuk menyinkronkan posisi baca yang tepat — nomor halaman, arah baca, dan pengaturan tampilan — di iPhone, iPad, dan Mac, tanpa langkah manual.
@@ -70,3 +72,21 @@ Jika membaca offline, BiblioFuse menyimpan progres secara lokal dan menyinkronka
 ## Mulai Sekarang
 
 [BiblioFuse](/id/) gratis di App Store untuk iPhone dan iPad. Sinkronisasi iCloud sudah termasuk tanpa tingkat premium. Aktifkan iCloud Drive untuk BiblioFuse di pengaturan perangkat dan progresmu mulai tersinkronisasi segera.
+
+
+## Pertanyaan yang Sering Diajukan
+
+**Bagaimana BiblioFuse menyinkronkan progres baca antara iPhone dan iPad?**
+BiblioFuse menyimpan metadata progres di iCloud dan menautkannya ke hash konten setiap file, bukan nama file. Artinya progres tetap tersinkron dengan benar meski kamu mengganti nama atau memindahkan file. Aktifkan iCloud Drive untuk BiblioFuse di Pengaturan → Apple ID → iCloud untuk mengaktifkan sinkronisasi.
+
+**Apakah BiblioFuse menyinkronkan progres untuk file CBZ dan manga?**
+Ya. Sinkronisasi progres berfungsi untuk CBZ, CBR, EPUB, dan PDF. Untuk CBZ dan CBR, nomor halaman yang tepat disinkronkan. Untuk EPUB, posisi tepat di dalam bab disinkronkan. Arah baca (kiri ke kanan atau kanan ke kiri) juga disinkronkan per volume.
+
+**Apa yang perlu diaktifkan agar sinkronisasi iCloud berfungsi di BiblioFuse?**
+Dua hal: iCloud Drive harus diaktifkan di Pengaturan → Apple ID → iCloud, dan BiblioFuse harus diaktifkan dalam daftar tersebut. Setelah keduanya aktif, sinkronisasi dimulai otomatis tanpa tombol 'sinkronkan sekarang'.
+
+**Apakah sinkronisasi iCloud berfungsi jika saya membaca offline?**
+Ya. Jika membaca tanpa koneksi internet, BiblioFuse menyimpan progres secara lokal. Saat perangkat terhubung ke iCloud berikutnya, progres akan diunggah. Jika dua perangkat konflik, BiblioFuse mengutamakan yang memiliki nomor halaman lebih tinggi.
+
+**Apa perbedaan sinkronisasi iCloud dengan Mac Home Library di BiblioFuse?**
+Sinkronisasi iCloud menyalin file dan data progres ke cloud agar tersedia di perangkat mana pun. Mac Home Library mengalirkan file sesuai permintaan dari Mac melalui Wi-Fi lokal — tidak ada yang disalin ke perangkat atau iCloud. Gunakan iCloud untuk akses offline di mana saja; gunakan Mac Home Library untuk menjelajahi koleksi lengkap di rumah tanpa menduplikasi penyimpanan.

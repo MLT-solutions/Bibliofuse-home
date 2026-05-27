@@ -1,5 +1,7 @@
 # BiblioFuse「工具」标签页：在 iPhone 上压缩、转换与合并文件
 
+BiblioFuse 工具标签页让你直接在 iPhone 或 iPad 上压缩、转换和合并 CBZ、EPUB、PDF 和 RAR 文件——无需电脑或上传到云端。压缩工具将图片重新编码为 WebP，通常可将文件大小减少 60-75%。转换功能支持 PDF 转 CBZ 和 RAR 转 CBZ，而合并功能可将多个章节文件合并为单个卷册压缩包。
+
 漫画 CBZ 文件占用大量空间？想把分章节文件合并成一册？[BiblioFuse](/zh/) 内置的「工具」标签页让你直接在 iPhone 或 iPad 上完成压缩、转换和合并，无需电脑，文件全程不离开设备。
 
 ## 三大核心功能
@@ -29,3 +31,21 @@
 所有操作均在设备端完成，无需联网。既保护隐私，也适用于飞机或网络不稳定的场景。BiblioFuse 支持后台处理，压缩期间可继续阅读。除工具功能外，BiblioFuse 还支持 Wi-Fi 传输、iCloud 同步、标签与评分以及 OCR 文字识别。
 
 [BiblioFuse 可在 App Store 下载](/zh/)，支持 iPhone 和 iPad。
+
+
+## 常见问题
+
+**BiblioFuse 压缩工具有什么作用？**
+压缩工具将 CBZ 和 EPUB 文件中的图片重新编码为 WebP 格式，通常将文件大小减少 60-75%，在 iPhone 或 iPad 屏幕上几乎看不出质量损失。处理完全在设备上运行，使用 iPhone 的图像压缩硬件。
+
+**可以在 iPhone 上不用电脑压缩漫画文件吗？**
+可以。BiblioFuse 工具标签页在 iOS 17 或更高版本上完全在设备端运行。在书库中选择 CBZ 或 EPUB 文件，将其发送到工具队列，选择压缩，iPhone 即在本地处理文件。无需桌面电脑。
+
+**BiblioFuse 中 CBZ 文件合并如何工作？**
+长按第一个 CBZ 文件进入选择模式，然后点按其他章节文件添加。点按底部栏中的工具按钮，选择合并，BiblioFuse 按你指定的顺序合并文件。结果保存到我的 iPhone -> BiblioFuse -> export 文件夹。
+
+**BiblioFuse 压缩工具支持哪些格式？**
+压缩工具支持 CBZ 和 EPUB 文件。转换工具将 PDF 转为 CBZ，将 RAR 转为 CBZ。合并工具将多个 CBZ 合并为单个 CBZ 文件。PDF 转 CBZ 对包含图片的扫描 PDF 特别有用，可从 WebP 重新编码中受益。
+
+**使用工具标签页后，输出文件在哪里？**
+在 iOS 上，处理完的文件自动出现在我的 iPhone -> BiblioFuse -> export 中。从那里可以将其移动到 iCloud 云盘 -> BiblioFuse 以便跨设备同步，或与其他 App 共享。在 Android 上，运行工具时选择输出文件夹。

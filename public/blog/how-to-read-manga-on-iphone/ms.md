@@ -1,5 +1,7 @@
 # Cara Membaca Manga di iPhone: Kanan ke Kiri, Tatal Menegak, dan Halaman Berganda
 
+BiblioFuse membolehkan anda membaca manga di iPhone dan iPad dalam format CBZ, CBR, ZIP atau RAR dengan aliran halaman kanan ke kiri yang betul, mod tatal menegak untuk webtoon, dan pengesanan halaman berganda automatik dalam orientasi landskap. Ia berjalan pada iOS 17 atau lebih baru dan tidak memerlukan akaun atau langganan — fail dimuatkan melalui Wi-Fi Transfer atau iCloud Drive tanpa kabel.
+
 Membaca manga di iPhone nampak mudah — ia cuma gambar yang tersusun mengikut urutan. Tetapi sesiapa yang pernah mencubanya tahu masalah yang timbul: pembaca yang direka untuk komik Barat memaksakan aliran halaman dari kiri ke kanan, merosakkan pengalaman membaca di setiap panel. Webtoon (komik tatal menegak) dipaparkan sebagai halaman berasingan dan bukannya jalur yang berterusan. Halaman berganda pula muncul dalam mod potret, memampatkan karya seni yang direka untuk memenuhi lebar penuh skrin.
 
 Manga mempunyai keperluan khusus yang diabaikan oleh kebanyakan pembaca serbaguna. [BiblioFuse](/ms/) direka untuk mengendalikan semuanya — mod kanan ke kiri, tatal menegak, pengesanan halaman berganda, dan tetapan arah membaca mengikut siri yang kekal antara sesi.
@@ -128,3 +130,21 @@ Untuk sesi membaca yang panjang, mengurangkan kecerahan dan mengaktifkan Night S
 Setelah persediaan membaca kamu dikonfigurasi, [BiblioFuse](/ms/) mempunyai beberapa ciri lagi yang patut diterokai. Mac Home Library membolehkan kamu mengalir seluruh koleksi manga desktop ke iPhone melalui Wi-Fi tanpa menyalin apa-apa ke peranti — sesuai jika kamu mempunyai terabait manga di Mac yang kamu tidak mahu diduplikasi. Tab Alat mengendalikan pemampatan — berguna untuk mengecilkan jilid CBZ 200 MB kepada 40–50 MB tanpa kehilangan kualiti yang ketara, membebaskan storan untuk lebih banyak siri.
 
 Tetapan yang betul membuat perbezaan antara pembaca yang melawan kamu dan satu yang hilang dalam pengalaman membaca. Manga dibaca dari kanan ke kiri, dengan spread dalam landskap dan webtoon dalam tatal menegak, berfungsi tepat seperti yang sepatutnya.
+
+
+## Soalan Lazim
+
+**Apakah aplikasi pembaca manga terbaik untuk iPhone?**
+BiblioFuse direka khas untuk manga di iPhone dan iPad. Ia menyokong mod bacaan kanan ke kiri, mod tatal menegak untuk webtoon, halaman berganda automatik dalam landskap, dan memori arah bacaan mengikut siri — jadi anda mengkonfigurasi setiap siri sekali dan ia kekal betul.
+
+**Bagaimana cara mengaktifkan mod kanan ke kiri untuk manga di iPhone?**
+Buka jilid manga dalam BiblioFuse, ketuk tengah skrin untuk menunjukkan kawalan, kemudian ketuk ikon arah bacaan dan pilih Kanan ke Kiri. Arah leret dan zon ketuk kedua-duanya terbalik untuk menyesuaikan urutan bacaan Jepun. BiblioFuse menyimpan tetapan ini mengikut jilid.
+
+**Bolehkah saya membaca webtoon (komik tatal menegak) di iPhone?**
+Ya. Dalam BiblioFuse, buka jilid, ketuk ikon susun atur, dan pilih Tatal Menegak. Halaman ditindih menjadi jalur menegak yang berterusan — tiada rehat halaman, tiada pemotongan mendatar. Mod ini berfungsi untuk webtoon Korea, manhwa, dan sebarang format jalur panjang.
+
+**Adakah BiblioFuse memaparkan halaman berganda dengan betul?**
+Ya. Putar iPhone anda ke mod landskap semasa membaca, dan BiblioFuse secara automatik beralih ke paparan dua halaman. Dalam mod kanan ke kiri, urutan halaman juga diterbalikkan supaya spread dibaca dengan betul.
+
+**Format manga apa yang disokong BiblioFuse di iPhone?**
+BiblioFuse membaca CBZ, CBR, ZIP dan RAR — format yang digunakan oleh hampir semua keluaran scan manga — serta EPUB dan PDF. Tiada penukaran diperlukan; fail terbuka terus tanpa mengira format.

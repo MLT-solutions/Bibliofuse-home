@@ -1,5 +1,7 @@
 # How BiblioFuse Syncs Reading Progress Across iPhone, iPad, and Mac via iCloud
 
+BiblioFuse syncs reading progress, tags, ratings, and reading direction settings across iPhone, iPad, and Mac automatically via iCloud — no manual steps required. It works with EPUB, CBZ, CBR, and PDF files stored in iCloud Drive on iOS 17 or later, keying progress to each file's content hash so it survives renames and folder moves.
+
 You're reading a manga volume on your iPhone during your commute — get through 80 pages, then switch to your iPad at home and have to hunt through the page thumbnails to find where you left off. Or you read a chapter on your Mac and pick up your iPhone the next morning, only to find it still showing page one.
 
 Reading progress sync is one of those features that sounds simple but breaks subtly in most readers. [BiblioFuse](/en/) uses iCloud to synchronize your exact reading position — including page number, reading direction, and display settings — across iPhone, iPad, and Mac, with no manual steps required.
@@ -119,3 +121,20 @@ No manual steps, no "remember to sync," no hunting for your page.
 [BiblioFuse](/en/) is free on the App Store for iPhone and iPad. iCloud sync is included — there's no premium tier required to use it. Enable iCloud Drive for BiblioFuse in your device settings, and your progress starts syncing across devices immediately.
 
 For the full Mac Home Library setup and Wi-Fi Transfer walkthrough, visit the [BiblioFuse](/en/) help section after installing.
+
+## Frequently Asked Questions
+
+**How does BiblioFuse sync reading progress across iPhone and iPad?**
+BiblioFuse stores progress metadata in iCloud and keys it to each file's content hash — not the filename. This means progress syncs correctly even if you rename or move a file. Enable iCloud Drive for BiblioFuse in Settings → Apple ID → iCloud to activate sync.
+
+**Does BiblioFuse sync reading progress for CBZ and manga files?**
+Yes. Progress sync works for CBZ, CBR, EPUB, and PDF files. For CBZ and CBR volumes, the exact page number syncs. For EPUB files, the precise position within a chapter syncs. Reading direction (left-to-right or right-to-left) also syncs per volume.
+
+**What do I need to turn on for iCloud sync to work in BiblioFuse?**
+Two things: iCloud Drive must be enabled in Settings → Apple ID → iCloud, and BiblioFuse must be toggled on in that iCloud list. Once both are on, sync starts automatically. There's no "sync now" button — changes propagate in the background.
+
+**Does iCloud sync work if I read offline?**
+Yes. If you read without an internet connection, BiblioFuse stores progress locally. The next time the device connects to iCloud, it pushes the update. If two devices conflict, BiblioFuse favors whichever has the higher page number.
+
+**How is iCloud sync different from Mac Home Library in BiblioFuse?**
+iCloud sync copies files and progress data to the cloud so they're available on any device. Mac Home Library streams files on demand from your Mac over local Wi-Fi — nothing is copied to the device or iCloud. Use iCloud for offline access anywhere; use Mac Home Library to browse your full collection at home without duplicating storage.

@@ -1,5 +1,7 @@
 # Managing Your BiblioFuse Library: Folders, Transfers, and Mac Streaming
 
+BiblioFuse manages your EPUB, CBZ, CBR, PDF, and TXT library across iPhone, iPad, and Mac without moving or locking your files. On iOS 17 or later, you can load files via Wi-Fi Transfer, iCloud Drive, or the Files app share sheet — and stream your entire Mac library to iPhone over Wi-Fi with zero storage cost on the device.
+
 [BiblioFuse](https://bibliofuse.com) is built around a simple rule: your files stay where you put them. The app never moves, renames, or locks files into a proprietary format. Understanding where books live — and how to get them there — makes the difference between a library that works for you and one you're constantly fighting.
 
 ## Getting Books In: Four Paths
@@ -104,3 +106,20 @@ Your Mac library folders now appear in the sidebar just like local storage. Brow
 - **iCloud is the lowest-friction sync path**: books in iCloud Drive → BiblioFuse appear on all your Apple devices with progress tracking out of the box.
 - **The export folder is a staging area**: after compression on iOS, find results in On My iPhone → BiblioFuse → export, then move them where you want them long-term.
 - **Check Permissions first if streaming isn't working**: most connection issues trace back to Local Network or iCloud permission being off.
+
+## Frequently Asked Questions
+
+**Where does BiblioFuse store my files on iPhone?**
+BiblioFuse uses two folders visible in the Files app: iCloud Drive → BiblioFuse (synced across devices) and On My iPhone → BiblioFuse (local only). Wi-Fi Transfer files land in the local import subfolder; files you add via iCloud go into the iCloud folder.
+
+**How do I get books from my Mac to my iPhone without a cable?**
+Use Wi-Fi Transfer: in BiblioFuse on iPhone, go to Settings → Wi-Fi Import, toggle it on, then visit the URL shown in any browser on your Mac and drag files in. Alternatively, drop files into iCloud Drive → BiblioFuse on your Mac and they sync automatically.
+
+**Does BiblioFuse support folder-based series organization?**
+Yes. Drop a folder of CBZ volumes (e.g., a manga series) into the BiblioFuse folder — each subfolder appears as a separate series entry in the library. Individual volumes inside a folder list in reading order.
+
+**What's the difference between Mac Home Library streaming and iCloud sync?**
+iCloud sync copies files to your device so you can read offline anywhere. Mac Home Library streams pages on demand from your Mac over Wi-Fi — nothing is copied to the iPhone, so it uses no device storage, but you need to be on the same network (or use Tailscale for remote access).
+
+**How do I send a book from my Mac library to my iPhone quickly?**
+Right-click any book cover in BiblioFuse on Mac and choose Send to iCloud. BiblioFuse copies it to iCloud Drive → BiblioFuse, and it appears on your iPhone within minutes.

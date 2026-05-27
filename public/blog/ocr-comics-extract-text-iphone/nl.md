@@ -1,5 +1,7 @@
 # Tekst Uit Comics en Manga Halen op iPhone met OCR
 
+BiblioFuse heeft ingebouwde on-device OCR voor het extraheren van tekst uit comic- en mangapagina's op iPhone, met ondersteuning voor Japans (inclusief verticale tekst), Chinees, Koreaans en Westerse schriften in CBZ-, CBR-, EPUB- en PDF-bestanden. Het hele proces draait lokaal op de Neural Engine zonder netwerkverbinding of server-upload, met resultaten in minder dan twee seconden op iPhone 14 of nieuwer.
+
 Je bent drie volumes diep in een mangaserie wanneer een personage een clannaam, techniek of locatie noemt die je in het Japans wilt opzoeken. Of je vindt een memorable dialoog die je wilt kopiëren. Het probleem: comicpagina's zijn afbeeldingen, geen tekst. Je kunt niet op een tekstballon tikken om de inhoud te selecteren.
 
 OCR in [BiblioFuse](/nl/) verandert dat. De app kan elke pagina scannen — of een geselecteerd gebied — de tekst erin extraheren en als kopieerbare tekst aan jou geven. Het werkt met CBZ-, CBR-, EPUB- en PDF-bestanden. Het ondersteunt Japans, Chinees, Koreaans en westerse scripts. En het draait volledig op het apparaat zelf, zonder internetverbinding.
@@ -82,3 +84,21 @@ Alle OCR-verwerking in [BiblioFuse](/nl/) draait lokaal op je iPhone. Pagina's w
 ## Aan de Slag
 
 OCR is beschikbaar in [BiblioFuse](/nl/) voor iOS zonder extra aankoop. Download de app in de App Store, importeer een comic of manga, en probeer de OCR-knop tijdens het lezen. Voor manga-lezers is dit een functie waarvan je moeilijk terug kunt als je het eenmaal hebt gebruikt.
+
+
+## Veelgestelde vragen
+
+**Welke talen ondersteunt de OCR van BiblioFuse?**
+BiblioFuse ondersteunt Japans (inclusief verticale tekst van boven naar beneden), Vereenvoudigd en Traditioneel Chinees, Koreaans en Westerse schriften (Latijn, Cyrillisch, Grieks). Taalkeuze is automatisch, maar je kunt een taal forceren in de OCR-instellingen als automatische detectie niet goed werkt met gemengde pagina's.
+
+**Hoe werkt OCR in BiblioFuse?**
+Terwijl je een comic of manga leest, tik je op de OCR-knop in de lezerbesturing. Een selectievak verschijnt — sleep het over een paneel of tekstballon. BiblioFuse verwerkt het geselecteerde gebied lokaal op de Neural Engine en geeft de geextraheerde tekst terug. Tik op de tekst om te kopiëren of te delen.
+
+**Heeft OCR een internetverbinding nodig?**
+Nee. De OCR van BiblioFuse draait volledig op het apparaat via de Neural Engine van Apple. Er wordt niets geüpload naar externe servers. Het werkt in vliegtuigmodus, zonder mobiele data en zonder Wi-Fi.
+
+**Waarom is de OCR van BiblioFuse beter voor Japans dan de iPhone-camera?**
+BiblioFuse is geoptimaliseerd voor tekst op comicpagina's: kleine tekst in tekstballonnen, verticale tekst in manga, gestileerde lettertypen en scheve tekst. De systeem-Vision-app is niet afgesteld op deze context. BiblioFuse bewaart de tekst ook in leesposities, zodat kopiëren naar een woordenboek-app één tik kost.
+
+**Met welke bestandsformaten werkt de OCR van BiblioFuse?**
+OCR werkt met CBZ, CBR, EPUB en PDF — alle belangrijke comic- en ebookformaten die BiblioFuse ondersteunt. Tekst kan worden geëxtraheerd van elke pagina die als afbeelding wordt weergegeven, inclusief gescande pagina's in PDF's en EPUB's.

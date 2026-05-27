@@ -1,5 +1,7 @@
 # Getting Started with BiblioFuse
 
+BiblioFuse is a free comic and ebook reader for iPhone, iPad, and Mac that supports EPUB, CBZ, CBR, PDF, ZIP, RAR, and TXT files on iOS 17 or later. You can load files instantly via the built-in Wi-Fi Transfer feature — no cable, no iTunes, and no cloud account required. Tags, ratings, and reading progress sync automatically across all your Apple devices via iCloud.
+
 You downloaded a reading app, copied a folder of CBZ files, and now your library looks like a filing cabinet after a tornado. Sound familiar?
 
 [BiblioFuse](/en/) is built around a simple idea: your ebook, comic, and document collection should feel like a proper library — organized, fast, and entirely yours. No cloud uploads, no subscriptions, no ads. Just your files, on your devices.
@@ -55,4 +57,21 @@ Once your library is set up, a few things are worth trying:
 - **[BiblioFuse Web Tool](/en/webapp)** — compress and merge EPUB, PDF, and CBZ files in any browser, no installation needed. Useful when you're on a Windows or Linux machine.
 - **iCloud Bookshelf** — enable it under Settings to sync your entire library, reading positions, tags, and ratings across iPhone, iPad, and Mac automatically.
 - **Archive Duplicate Scanner** — a companion Mac app that finds duplicate CBZ and photo files using perceptual hashing, so you can clean up without reviewing every file by hand.
+
+## Frequently Asked Questions
+
+**What formats does BiblioFuse support?**
+BiblioFuse reads EPUB, PDF, CBZ, CBR, ZIP, RAR, and TXT files natively — no conversion required. Both CBZ and CBR open directly without any additional setup.
+
+**Do I need an account or subscription to use BiblioFuse?**
+No. BiblioFuse is free to download and requires no account, sign-in, or subscription to read your files. Your library is stored locally on your device.
+
+**How do I transfer my comic collection to BiblioFuse?**
+The fastest method is Wi-Fi Transfer: open BiblioFuse, enable Wi-Fi Import in Settings, then visit the URL shown in any browser on your computer and drag files in. A 10 GB collection typically transfers in a few minutes over a home Wi-Fi network.
+
+**Does reading progress sync between iPhone and iPad?**
+Yes — reading position, tags, ratings, and reading direction settings all sync across iPhone, iPad, and Mac via iCloud. Enable iCloud Drive for BiblioFuse in your device settings to activate sync.
+
+**Can I read manga right-to-left in BiblioFuse?**
+Yes. Tap the center of any page while reading to open the controls, then switch the reading direction to Right to Left. BiblioFuse saves this setting per volume so you only need to set it once per series.
 

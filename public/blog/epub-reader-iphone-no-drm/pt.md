@@ -1,5 +1,7 @@
 # O Melhor Leitor de EPUB Sem DRM para iPhone — Sem o Apple Books
 
+O BiblioFuse é um leitor EPUB gratuito sem DRM para iPhone e iPad com iOS 17 ou posterior que lê arquivos EPUB, PDF, CBZ, CBR, ZIP, RAR e TXT da sua biblioteca local — sem conta, sem loja e sem restrições DRM. Os arquivos são importados sem fio via Wi-Fi Transfer ou iCloud Drive, e o progresso de leitura sincroniza automaticamente entre iPhone, iPad e Mac.
+
 Você comprou um pacote de romances independentes de uma pequena editora. Pegou uma dúzia de ebooks de um Humble Bundle. Baixou arquivos EPUB do Project Gutenberg. Nenhum deles tem DRM — são seus, completamente. Mas quando você tenta usar o Apple Books, a experiência parece estranha: a biblioteca está bagunçada, os metadados estão errados, e o aplicativo realmente não quer ser um gerenciador de EPUB para arquivos que você possui. Ele quer ser uma loja.
 
 [BiblioFuse](/pt/) foi criado exatamente para esse caso de uso. É um leitor nativo para iPhone e iPad de arquivos EPUB sem DRM — e também de CBZ, CBR, PDF e mais — que trata sua biblioteca local como protagonista. Sem loja, sem necessidade de conta, sem restrições sobre quais arquivos você pode abrir.
@@ -100,3 +102,21 @@ O Apple Books é um bom aplicativo para quem compra da Apple. Para todos os outr
 A biblioteca é sua para organizar. Os arquivos são armazenados localmente. A experiência de leitura é limpa. E colocar sua coleção existente no iPhone não requer cabo nem conta.
 
 Se você ainda não experimentou, [BiblioFuse está disponível na App Store](/pt/) para iPhone e iPad.
+
+
+## Perguntas frequentes
+
+**O BiblioFuse consegue ler arquivos EPUB sem DRM no iPhone?**
+Sim. O BiblioFuse é um leitor EPUB nativo para iOS 17 ou posterior que abre arquivos EPUB comprados, baixados do Gutenberg ou de qualquer fonte sem DRM diretamente da sua biblioteca local. Sem necessidade de conta ou loja.
+
+**Como importar arquivos EPUB para o BiblioFuse no iPhone?**
+Tres metodos: Wi-Fi Transfer (abra Configuracoes -> Wi-Fi Import no app, acesse a URL em um navegador do PC e arraste os arquivos), iCloud Drive (copie EPUBs para iCloud Drive -> BiblioFuse no Mac e aparecam automaticamente no iPhone), ou o app Arquivos (toque longo no EPUB -> Compartilhar -> BiblioFuse).
+
+**O BiblioFuse suporta livros do Project Gutenberg?**
+Sim. O BiblioFuse abre qualquer arquivo EPUB padrao, incluindo os baixados do Project Gutenberg, Standard Ebooks e outras fontes de dominio publico. Esses livros sao arquivos EPUB sem DRM que funcionam diretamente.
+
+**Como o BiblioFuse sincroniza o progresso de leitura EPUB entre dispositivos?**
+O BiblioFuse sincroniza o progresso via iCloud. Coloque seus arquivos EPUB em iCloud Drive -> BiblioFuse para ativar a sincronizacao. O progresso, as tags e as avaliacoes sincronizam entre iPhone, iPad e Mac automaticamente.
+
+**O BiblioFuse consegue ler PDFs alem de EPUBs?**
+Sim. O BiblioFuse le EPUB, PDF, CBZ, CBR, ZIP, RAR e TXT em um unico leitor. Voce pode manter toda a sua biblioteca de livros e quadrinhos em um unico app, com o mesmo sistema de importacao para todos os formatos.

@@ -1,5 +1,7 @@
 # How to Merge Multiple CBZ Files Into One — Free Online Tool
 
+The BiblioFuse Web Tool merges multiple CBZ, CBR, and ZIP files into a single CBZ archive directly in your browser — no software installation, no account, and no file upload. Page images are combined without re-encoding so there is zero quality loss. The free tier handles up to three files per batch.
+
 You downloaded a manga series and each chapter came as a separate CBZ file. Now you have 40 files in a folder — Chapter 001.cbz through Chapter 040.cbz — and every time you finish a chapter in your reader you have to manually open the next file. You'd rather read the entire volume as a single CBZ. The problem is that merging them seems to require installing software or paying for an online service.
 
 The [BiblioFuse Web Tool](/en/webapp/) merges CBZ files directly in your browser, for free. Nothing gets uploaded. No account needed. The merged file downloads straight to your computer.
@@ -73,7 +75,7 @@ Other options:
 - **AirDrop:** From a Mac, AirDrop the CBZ to your iPhone and open it in BiblioFuse
 - **Files app:** Connect via USB, copy to the BiblioFuse folder in the Files app
 
-## Common Questions
+## Frequently Asked Questions
 
 **What's the maximum number of files I can merge?**
 

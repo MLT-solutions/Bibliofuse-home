@@ -1,5 +1,7 @@
 # Utiliser l'onglet Outils de BiblioFuse : Compresser, Convertir et Fusionner sur iPhone
 
+L'onglet Outils de BiblioFuse vous permet de compresser, convertir et fusionner des fichiers CBZ, EPUB, PDF et RAR directement sur iPhone ou iPad — sans ordinateur ni envoi vers le cloud. L'outil de compression reencode les images en WebP, reduisant generalement la taille des fichiers de 60 a 75 %. La conversion gere les changements PDF vers CBZ et RAR vers CBZ, tandis que la fusion combine plusieurs fichiers de chapitres en une seule archive de volume.
+
 Vous êtes en pause déjeuner, téléphone en main, et vous réalisez que votre collection de comics est en train de dévorer l'espace de stockage de votre iPhone. Les fichiers CBZ de cette série manga font entre 80 et 120 Mo chacun. Vous aimeriez les compresser, mais votre ordinateur est chez vous et vous n'avez pas envie d'attendre ce soir. Ou peut-être avez-vous plusieurs fichiers de chapitres d'une série et souhaitez-vous les fusionner en un seul volume avant une longue séance de lecture.
 
 [BiblioFuse](/fr/) gère ces deux situations sans ordinateur. L'onglet Outils — intégré directement dans l'app iOS — vous permet de compresser, convertir et fusionner vos comics et ebooks directement sur votre iPhone ou iPad. Tout le traitement s'effectue sur l'appareil. Aucun fichier n'est envoyé nulle part. Aucune app de bureau n'est nécessaire.
@@ -127,3 +129,21 @@ L'onglet Outils n'est qu'une partie de ce que fait [BiblioFuse](/fr/). La même 
 Si vous avez utilisé BiblioFuse principalement comme lecteur jusqu'ici, l'onglet Outils vaut vraiment la peine d'être exploré. Il transforme votre iPhone en une station de traitement de fichiers performante — sans ordinateur requis.
 
 [BiblioFuse est disponible sur l'App Store](/fr/) pour iPhone et iPad.
+
+
+## Foire aux questions
+
+**Que fait l'outil de compression de BiblioFuse ?**
+L'outil de compression reencode les images dans les fichiers CBZ et EPUB au format WebP, reduisant generalement la taille des fichiers de 60 a 75% avec peu ou pas de perte de qualite visible sur les ecrans iPhone ou iPad. Le traitement s'effectue entierement sur l'appareil en utilisant le materiel de compression d'images de l'iPhone.
+
+**Puis-je compresser des fichiers comics sur iPhone sans ordinateur ?**
+Oui. L'onglet Outils de BiblioFuse s'execute entierement sur l'appareil sous iOS 17 ou ulterieur. Selectionnez les fichiers CBZ ou EPUB dans votre bibliotheque, envoyez-les dans la file des outils, choisissez Compresser et l'iPhone traite les fichiers localement. Aucun bureau necessaire.
+
+**Comment fonctionne la fusion de fichiers CBZ dans BiblioFuse ?**
+Entrez en mode selection en appuyant longuement sur le premier fichier CBZ, puis appuyez sur les autres chapitres pour les ajouter. Appuyez sur le bouton Outils dans la barre inferieure, choisissez Fusionner et BiblioFuse combine les fichiers dans l'ordre que vous specifiez. Le resultat va dans le dossier export dans Mon iPhone -> BiblioFuse -> export.
+
+**Quels formats l'outil de compression de BiblioFuse prend-il en charge ?**
+L'outil de compression prend en charge les fichiers CBZ et EPUB. L'outil de conversion convertit PDF en CBZ et RAR en CBZ. L'outil de fusion combine plusieurs CBZ en un seul fichier CBZ. PDF en CBZ est utile pour les fichiers PDF scandes avec des images qui beneficient du rereencodage WebP.
+
+**Ou vont les fichiers de sortie apres utilisation de l'onglet Outils ?**
+Sur iOS, les fichiers traites apparaissent automatiquement dans Mon iPhone -> BiblioFuse -> export. De la, vous pouvez les deplacer vers iCloud Drive -> BiblioFuse pour la synchronisation entre appareils, ou les partager avec d'autres apps. Sur Android, vous choisissez le dossier de sortie lors de l'execution de l'outil.

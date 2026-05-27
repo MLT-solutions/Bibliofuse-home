@@ -1,5 +1,7 @@
 # Memulai dengan BiblioFuse
 
+BiblioFuse adalah pembaca komik dan ebook gratis untuk iPhone, iPad, dan Mac yang mendukung file EPUB, CBZ, CBR, PDF, ZIP, RAR, dan TXT di iOS 17 atau lebih baru. File langsung dimuat melalui fitur Wi-Fi Transfer bawaan — tanpa kabel, tanpa iTunes, dan tanpa akun cloud. Tag, penilaian, dan progres membaca disinkronkan secara otomatis di semua perangkat Apple kamu melalui iCloud.
+
 Anda mengunduh aplikasi baca, menyalin folder berisi file CBZ, dan sekarang perpustakaan Anda terlihat seperti lemari arsip setelah diterjang badai. Familiar?
 
 [BiblioFuse](/id/) dibangun di atas ide sederhana: koleksi ebook, komik, dan dokumen Anda seharusnya terasa seperti perpustakaan sungguhan — terorganisir, cepat, dan sepenuhnya milik Anda. Tidak ada unggahan ke cloud, tidak ada langganan, tidak ada iklan. Hanya file Anda, di perangkat Anda.
@@ -54,3 +56,20 @@ Untuk menggabungkan seri manga menjadi satu volume, tekan dan tahan beberapa fil
 - **iCloud Bookshelf** — aktifkan di Pengaturan untuk menyinkronkan perpustakaan, posisi baca, tag, dan penilaian secara otomatis.
 - **Archive Duplicate Scanner** — aplikasi pendamping untuk Mac yang menemukan file CBZ dan foto duplikat menggunakan perceptual hashing.
 
+
+## Pertanyaan yang Sering Diajukan
+
+**Format apa saja yang didukung BiblioFuse?**
+BiblioFuse membaca EPUB, PDF, CBZ, CBR, ZIP, RAR, dan TXT secara native — tanpa konversi. CBZ dan CBR langsung terbuka tanpa pengaturan tambahan.
+
+**Apakah saya perlu akun atau langganan untuk menggunakan BiblioFuse?**
+Tidak. BiblioFuse gratis diunduh dan tidak memerlukan akun, login, atau langganan untuk membaca file. Perpustakaan disimpan secara lokal di perangkat kamu.
+
+**Bagaimana cara memindahkan koleksi komik ke BiblioFuse?**
+Metode tercepat adalah Wi-Fi Transfer: buka BiblioFuse, aktifkan Wi-Fi Import di Pengaturan, lalu kunjungi URL yang ditampilkan di browser mana pun di komputer kamu dan seret file ke dalamnya. Koleksi 10 GB dapat ditransfer dalam beberapa menit di jaringan Wi-Fi rumahan.
+
+**Apakah progres membaca tersinkronisasi antara iPhone dan iPad?**
+Ya. Posisi membaca, tag, penilaian, dan arah membaca disinkronkan melalui iCloud antara iPhone, iPad, dan Mac. Aktifkan iCloud Drive untuk BiblioFuse di pengaturan perangkat untuk mengaktifkan sinkronisasi.
+
+**Bisakah saya membaca manga dari kanan ke kiri di BiblioFuse?**
+Bisa. Ketuk bagian tengah halaman saat membaca untuk menampilkan kontrol, lalu ubah arah membaca ke Kanan ke Kiri. BiblioFuse menyimpan pengaturan ini per volume sehingga hanya perlu diatur sekali per seri.

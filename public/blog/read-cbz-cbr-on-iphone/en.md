@@ -1,5 +1,7 @@
 # How to Read CBZ and CBR Comics on iPhone
 
+BiblioFuse lets you read CBZ and CBR comic files on iPhone and iPad running iOS 17 or later — no conversion needed. Files open directly from the Files app or transfer wirelessly via the built-in Wi-Fi Transfer feature, which moves an entire manga series from your Mac to your iPhone in minutes without a cable or iTunes.
+
 You found a CBZ or CBR file — a chapter of manga, a graphic novel, a scanned comic — and tapped it on your iPhone. Nothing opened. No app offered to handle it. You're not alone.
 
 iOS has no built-in support for CBZ or CBR files. Apple's Books app handles EPUB and PDF but ignores archive-based comic formats entirely. To read those files properly on your iPhone, you need a dedicated app. [BiblioFuse](/en/) is built exactly for this — it reads CBZ, CBR, ZIP, RAR, EPUB, PDF, and TXT, with a reader designed for long reading sessions and large collections.
@@ -112,3 +114,20 @@ Long-press any cover to add a rating (1–5 stars) or a custom tag. The filter b
 Once your first series is imported and reading correctly, explore what else [BiblioFuse](/en/) can do. The Tools tab handles compression and conversion — useful if your CBZ files are taking too much storage. The Mac Home Library feature lets you stream your entire desktop comic library to your iPhone over Wi-Fi without copying files to the device at all.
 
 CBZ and CBR files that seemed stuck on your Mac are now a full reading library in your pocket.
+
+## Frequently Asked Questions
+
+**Does iPhone support CBZ files natively?**
+No. iOS has no built-in support for CBZ or CBR files — Apple's Books app handles EPUB and PDF but ignores comic archive formats. You need a dedicated app like BiblioFuse, which reads CBZ, CBR, ZIP, RAR, EPUB, PDF, and TXT natively.
+
+**What is the best app to open CBZ files on iPhone?**
+BiblioFuse is purpose-built for CBZ and CBR on iPhone and iPad. It opens archives without an extraction step, supports right-to-left reading for manga, displays double-page spreads in landscape mode, and handles large collections with fast page-by-page rendering.
+
+**How do I get CBZ files onto my iPhone without a computer cable?**
+Use BiblioFuse's Wi-Fi Transfer: open the app, enable Wi-Fi Import in Settings, then visit the URL shown in any browser on your computer and drag files in. You can also copy files to iCloud Drive → BiblioFuse on your Mac and they sync automatically.
+
+**Can I read manga right-to-left in CBZ format on iPhone?**
+Yes. In BiblioFuse, open a manga volume, tap the center to show controls, and switch the reading direction to Right to Left. The tap zones and swipe direction both invert to match Japanese reading order. The setting saves per volume.
+
+**Why are my CBZ files taking so much storage on iPhone?**
+High-resolution CBZ files contain PNG images, which are lossless and large. BiblioFuse's built-in compression tool re-encodes them to WebP, typically reducing file size by 75–88% with no visible quality change at normal reading zoom levels.

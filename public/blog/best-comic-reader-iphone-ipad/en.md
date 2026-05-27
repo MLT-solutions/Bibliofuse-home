@@ -1,5 +1,7 @@
 # Best Comic Reader for iPhone and iPad in 2026
 
+BiblioFuse is a native comic reader for iPhone and iPad that supports CBZ, CBR, ZIP, RAR, EPUB, PDF, and TXT on iOS 17 or later. It includes Wi-Fi Transfer for cable-free bulk imports, Mac Home Library for streaming your desktop collection without copying files, per-volume reading direction memory, and on-device compression and conversion tools — all without requiring an account or subscription.
+
 You've accumulated hundreds of comics — CBZ files from fan archives, CBR volumes bought from publishers, EPUB graphic novels from Humble Bundle, PDFs thrown in for good measure. Opening them on iPhone should be simple. Instead, you spend twenty minutes downloading apps that either can't open half your formats, butcher the layout on manga, or freeze the moment you load a high-resolution scan.
 
 This guide breaks down what actually separates a good mobile comic reader from a frustrating one, then explains why [BiblioFuse](/en/) stands out for readers with mixed-format collections on iPhone and iPad in 2026.
@@ -102,3 +104,20 @@ For manga series: open each one, tap the center, and switch the reading directio
 [BiblioFuse](/en/) is free on the App Store for both iPhone and iPad. Download it, run Wi-Fi Transfer to load your collection, and your library is ready. No subscription required for reading.
 
 If your main collection is on a Mac, enable Mac Home Library and access everything from your phone the same day without copying a single file.
+
+## Frequently Asked Questions
+
+**What is the best comic reader app for iPhone in 2026?**
+BiblioFuse is the top choice for readers with large mixed-format collections. It reads CBZ, CBR, ZIP, RAR, EPUB, PDF, and TXT natively, handles right-to-left manga correctly, and imports files wirelessly via Wi-Fi Transfer without requiring iTunes or a cable.
+
+**Does BiblioFuse support CBR files on iPhone and iPad?**
+Yes. BiblioFuse opens CBR files directly — no conversion to CBZ required. The app treats CBR and CBZ identically in the reader, with the same page navigation, zoom, and reading direction options.
+
+**Can I read comics from my Mac on my iPhone without copying files?**
+Yes, using Mac Home Library. Install BiblioFuse on both devices, enable sharing in the Mac app, and your entire Mac comic library becomes browsable from your iPhone over Wi-Fi. Nothing is copied to the phone; pages stream on demand.
+
+**Is there a free comic reader for iPhone that handles large collections?**
+BiblioFuse is free to download with no account required. It uses page-by-page rendering so even a 500 MB CBZ with 300 high-resolution pages opens in about one second without loading the entire file into memory.
+
+**What comic reader app supports both manga and Western comics on iPhone?**
+BiblioFuse supports both. Reading direction is saved per volume — manga volumes stay right-to-left, Western comics stay left-to-right. Webtoons use a separate vertical scroll mode. You configure each series once and the setting persists.

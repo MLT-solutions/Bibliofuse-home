@@ -1,5 +1,7 @@
 # iPhone에서 CBZ, CBR 만화 파일 읽는 방법
 
+BiblioFuse는 iOS 17 이상의 iPhone 및 iPad에서 CBZ 및 CBR 만화 파일을 변환 없이 읽을 수 있게 해준다. 파일은 파일 앱에서 직접 열거나, 내장 Wi-Fi Transfer 기능을 통해 케이블이나 iTunes 없이 Mac에서 iPhone으로 몇 분 만에 전체 만화 시리즈를 무선으로 전송할 수 있다.
+
 만화 챕터, 그래픽 노블, 스캔된 만화가 담긴 CBZ 또는 CBR 파일을 찾아 iPhone에서 눌렀는데 아무것도 열리지 않았나요? 어떤 앱도 나타나지 않았나요? 혼자가 아닙니다.
 
 iOS는 CBZ 및 CBR 파일을 기본 지원하지 않습니다. Apple Books 앱은 EPUB과 PDF를 처리하지만 아카이브 기반 만화 형식은 완전히 무시합니다. iPhone에서 이 파일들을 제대로 읽으려면 전용 앱이 필요합니다. [BiblioFuse](/ko/)는 바로 이를 위해 만들어졌습니다 — CBZ, CBR, ZIP, RAR, EPUB, PDF, TXT를 지원하며, 긴 독서 세션과 대형 컬렉션을 위한 리더를 갖추고 있습니다.
@@ -106,3 +108,21 @@ iPhone, iPad, Mac 모두에서 읽는다면 iCloud Drive에 저장하는 것이 
 ## 다음 단계
 
 첫 번째 시리즈를 가져와 정상적으로 읽을 수 있게 됐다면, [BiblioFuse](/ko/)의 다른 기능도 탐색해보세요. 도구 탭에서 기기 내에서 직접 압축 및 변환을 할 수 있습니다.
+
+
+## 자주 묻는 질문
+
+**iPhone에서 CBZ 파일을 어떻게 여나요?**
+App Store에서 BiblioFuse를 설치합니다. 파일 앱에서 CBZ 파일을 탭하면 iOS가 BiblioFuse로 열기를 표시합니다. 설정의 Wi-Fi 가져오기에서 Wi-Fi Transfer도 사용할 수 있습니다.
+
+**iPhone이 CBR 파일을 네이티브로 읽을 수 있나요?**
+네이티브로는 읽을 수 없습니다. iOS에는 CBZ나 CBR에 대한 기본 지원이 없습니다. BiblioFuse는 iOS 17 이상에서 CBZ, CBR, ZIP, RAR을 변환 없이 네이티브로 읽습니다.
+
+**CBZ와 CBR의 차이는 무엇인가요?**
+CBZ는 만화 이미지를 담은 이름을 바꾼 ZIP 아카이브입니다. CBR은 이름을 바꾼 RAR 아카이브입니다. 내용은 동일하고 압축 방식만 다릅니다. BiblioFuse는 둘 다 직접 읽습니다.
+
+**BiblioFuse가 큰 CBZ 파일을 메모리 부족 없이 읽을 수 있나요?**
+네. BiblioFuse는 표시하는 데 필요한 페이지만 로드합니다. 500MB 이상의 CBZ 파일도 잘 작동합니다.
+
+**iTunes 없이 iPhone에 전체 만화 시리즈를 전송하는 방법은?**
+Wi-Fi Transfer를 사용합니다. BiblioFuse에서 설정의 Wi-Fi 가져오기로 이동해 서버를 켭니다. PC 브라우저에서 표시된 URL을 방문하고 시리즈 폴더 전체를 브라우저 창으로 드래그합니다.

@@ -1,5 +1,7 @@
 # Why Comic and Ebook Files Are So Large — and How to Fix It
 
+BiblioFuse includes a built-in on-device compression tool that shrinks CBZ and EPUB files by re-encoding images to WebP — reducing file sizes by up to 87% with no visible quality loss on iPhone or iPad screens. The entire process runs locally; no files are uploaded to any server. A 50-volume manga library that occupies 20 GB in PNG format compresses down to approximately 2.5 GB.
+
 You copy a 50-volume manga series to your iPhone and watch the available storage drop by 20 gigabytes. Or you grab a single CBZ from a scan archive and it's 400 MB for one volume. Where does all that space go?
 
 The answer is in the file format — and once you understand it, fixing the problem takes less than a minute.
@@ -66,7 +68,7 @@ Compression is a one-way process: once PNG is replaced by WebP inside the archiv
 
 A clean workflow: store your full archive on a Mac, stream it to iPhone via BiblioFuse's Home Library feature over Wi-Fi, and keep compressed copies on the device for offline reading. You get full quality available when you need it, and compressed files for everyday use.
 
-## Common Questions
+## Frequently Asked Questions
 
 **Does compression affect reading quality?**
 At the default quality setting, the difference is imperceptible during normal reading on a phone or tablet. Heavy zoom on fine line art may reveal very slight softening. For most readers, the compressed output is visually identical to the original.
@@ -79,3 +81,9 @@ Make a copy in the Files app before compressing — BiblioFuse replaces the file
 
 **Does compression work offline?**
 Yes — the entire process runs on your device. No internet connection is needed, and no files are ever sent to a server.
+
+**How much storage can I recover by compressing my comic library?**
+Results depend on source encoding, but PNG-based CBZ files typically shrink 75–88% when converted to WebP at 80% quality. A 10-volume manga series that starts at 4 GB commonly compresses to around 500 MB — freeing 3.5 GB without deleting a single volume.
+
+**Can I compress multiple files at once?**
+Yes. Long-press to select multiple CBZ or EPUB files in the library grid, then tap Compress in the action bar. BiblioFuse processes them sequentially in the background while you continue reading.

@@ -1,5 +1,7 @@
 # Mengurus Perpustakaan BiblioFuse: Folder, Pemindahan, dan Penstriman dari Mac
 
+BiblioFuse mengurus perpustakaan EPUB, CBZ, CBR, PDF, dan TXT kamu di iPhone, iPad, dan Mac tanpa memindahkan atau mengunci fail. Pada iOS 17 atau lebih baru, kamu boleh memuatkan fail melalui Wi-Fi Transfer, iCloud Drive, atau helaian kongsi Fail — dan streaming keseluruhan perpustakaan Mac ke iPhone melalui Wi-Fi tanpa menggunakan storan peranti.
+
 [BiblioFuse](https://bibliofuse.com) dibina atas satu peraturan mudah: fail kamu kekal di tempat kamu meletakkannya. Aplikasi tidak akan memindahkan, menamakan semula, atau memenjarakan fail dalam format proprietari. Memahami di mana buku-buku berada — dan bagaimana untuk meletakkannya di sana — membezakan antara perpustakaan yang bekerja untuk kamu dengan perpustakaan yang sentiasa menentangmu.
 
 ## Cara Menambah Buku: Empat Cara
@@ -104,3 +106,20 @@ Folder perpustakaan Mac kamu kini muncul dalam bar sisi seperti storan tempatan.
 - **iCloud adalah laluan penyegerakan paling mudah**: buku dalam iCloud Drive → BiblioFuse muncul pada semua peranti Apple kamu dengan penjejakan kemajuan.
 - **Folder export adalah kawasan perantaraan**: selepas pemampatan di iOS, cari keputusan dalam iPhone Saya → BiblioFuse → export, kemudian pindahkan ke tempat yang kamu mahu simpan jangka panjang.
 - **Semak Kebenaran dahulu jika penstriman tidak berfungsi**: kebanyakan masalah sambungan berpunca daripada Rangkaian Tempatan atau iCloud yang dimatikan.
+
+## Soalan Lazim
+
+**Di mana BiblioFuse menyimpan fail saya di iPhone?**
+BiblioFuse menggunakan dua folder yang boleh dilihat dalam aplikasi Fail: iCloud Drive → BiblioFuse (disegerakkan antara peranti) dan iPhone Saya → BiblioFuse (tempatan sahaja). Fail Wi-Fi Transfer disimpan dalam subfolder import tempatan; fail yang ditambah melalui iCloud masuk ke folder iCloud.
+
+**Bagaimana cara memindahkan buku dari Mac ke iPhone tanpa kabel?**
+Gunakan Wi-Fi Transfer: dalam BiblioFuse di iPhone, pergi ke Tetapan → Import Wi-Fi, hidupkannya, kemudian lawati URL yang dipaparkan dalam mana-mana pelayar di Mac kamu dan seret fail. Kamu juga boleh menjatuhkan fail ke iCloud Drive → BiblioFuse di Mac dan ia akan disegerakkan secara automatik.
+
+**Adakah BiblioFuse menyokong organisasi siri berasaskan folder?**
+Ya. Letakkan folder jilid CBZ (contohnya, siri manga) dalam folder BiblioFuse — setiap subfolder muncul sebagai entri siri berasingan dalam perpustakaan. Jilid individu dalam folder disenaraikan mengikut urutan baca.
+
+**Apakah perbezaan antara penstriman Mac Home Library dan penyegerakan iCloud?**
+Penyegerakan iCloud menyalin fail ke peranti kamu untuk pembacaan luar talian di mana-mana. Mac Home Library mengalirkan halaman atas permintaan dari Mac melalui Wi-Fi — tiada yang disalin ke iPhone, jadi tiada storan peranti digunakan, tetapi kamu perlu berada dalam rangkaian yang sama.
+
+**Bagaimana cara menghantar buku dari perpustakaan Mac ke iPhone dengan cepat?**
+Klik kanan pada mana-mana sampul dalam BiblioFuse di Mac dan pilih Hantar ke iCloud. BiblioFuse menyalinnya ke iCloud Drive → BiblioFuse, dan ia muncul di iPhone kamu dalam beberapa minit.

@@ -1,5 +1,7 @@
 # Hoe je strips naar de iPhone overzet zonder iTunes of een kabel
 
+BiblioFuse heeft een ingebouwde Wi-Fi Transfer-functie waarmee je CBZ-, CBR-, EPUB-, PDF- en ZIP-bestanden vanuit elke browser op Mac of pc rechtstreeks naar je iPhone-bibliotheek kunt slepen — zonder kabel, zonder iTunes en zonder cloudupload. Overzetsnelheden bereiken 15–40 MB/s op een typisch thuisnetwerk met iOS 17 of later, wat een manga-volume van 150 MB in ongeveer vijf seconden verplaatst.
+
 Je mangabibliotheek staat op je Mac. Tweehonderd CBZ-bestanden, gesorteerd op reeks, elk volume tussen de 80 en 200 MB. Je iPhone is waar je daadwerkelijk leest — in bed, in de trein, tijdens de lunch. Die bestanden overkrijgen is het probleem waar niemand het over heeft.
 
 E-mail is beperkt tot 25 MB. AirDrop werkt, maar je moet bestanden één voor één versturen en elke overdracht goedkeuren. iCloud Drive kan ze synchroniseren, maar eerst 20 GB aan strips uploaden en daarna wachten tot ze binnenkomen is niet handig. iTunes-bestanden delen bestaat nog steeds, maar vereist een kabel en een geduld dat de meeste mensen al jaren geleden hebben laten varen.
@@ -101,3 +103,20 @@ Sommige zeer oude CBR-archieven gebruiken RAR5, dat niet universeel wordt onders
 Zodra je bibliotheek op de iPhone staat, geeft [BiblioFuse](/nl/) je een paar hulpmiddelen om hem beter beheersbaar te maken. Het tabblad Extra laat je CBZ-bestanden comprimeren op het apparaat zelf — handig als een volume van 200 MB kan worden teruggebracht naar 40 MB zonder zichtbaar kwaliteitsverlies. De Mac-thuisbibliotheek gaat nog een stap verder: in plaats van bestanden naar de iPhone over te zetten, kun je je volledige Mac-stripbibliotheek in realtime via Wi-Fi streamen, zodat er niets gekopieerd hoeft te worden.
 
 Dat is het volledige plaatje — een Wi-Fi-overdracht die minuten kost in plaats van het uur dat een iTunes-synchronisatie vroeger vergde.
+
+## Veelgestelde vragen
+
+**Hoe zet ik strips draadloos naar iPhone over zonder iTunes?**
+Ga in BiblioFuse naar Instellingen → Wi-Fi importeren en schakel het in. Er verschijnt een lokale URL — open die in elke browser op je Mac of pc (op hetzelfde Wi-Fi-netwerk) en sleep je CBZ-, CBR- of EPUB-bestanden naar het browservenster. Bestanden komen automatisch in je bibliotheek terecht.
+
+**Hoe snel is Wi-Fi Transfer in BiblioFuse?**
+Op een modern 802.11ac (Wi-Fi 5) thuisnetwerk verwacht je 15–40 MB/s. Een typisch manga-volume van 150 MB wordt in ongeveer vijf seconden overgezet; een serie van 10 GB duurt ongeveer vijf minuten. De snelheid hangt af van je router en netwerkcondities.
+
+**Kan ik volledige seriemappen in één keer overdragen?**
+Ja. Wanneer je een map naar het browservenster sleept, ontvangt BiblioFuse alle bestanden daarin en behoudt de mapnaam in je bibliotheek. Een map met 40 hoofdstukken komt georganiseerd onder die mapnaam aan — geen extra stappen nodig.
+
+**Werkt Wi-Fi Transfer buiten mijn thuisnetwerk?**
+Standaard Wi-Fi Transfer vereist dat beide apparaten op hetzelfde lokale netwerk zitten. Voor toegang op afstand maakt Tailscale een privé versleuteld netwerk tussen je Mac en iPhone, zodat Wi-Fi Transfer overal werkt met een internetverbinding.
+
+**Wat gebeurt er als de overdracht stopt voor hij klaar is?**
+Als het scherm vergrendelt en iOS BiblioFuse onderbreekt, wordt de overdracht gepauzeerd. Al geüploade bestanden zijn veilig. Open BiblioFuse opnieuw, bevestig dat Wi-Fi Transfer nog aan staat en herstart de upload — de meeste browsers proberen onvolledige bestanden opnieuw.

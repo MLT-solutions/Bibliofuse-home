@@ -1,5 +1,7 @@
 # BiblioFuseがiCloudを通じてiPhone・iPad・Mac間で読書進捗を同期する方法
 
+BiblioFuse は EPUB、CBZ、CBR、PDF ファイルの読書進捗・タグ・評価・読み方向を、iPhone・iPad・Mac 間で iCloud を通じて自動同期する。iOS 17 以降の iCloud Drive に保存されたファイルが対象で、進捗はファイル名でなくコンテンツハッシュに紐づくため、リネームやフォルダ移動後も正確に引き継がれる。iCloud 同期はプレミアム不要で利用できる。
+
 通勤中にiPhoneでマンガを読む——80ページまで進んで帰宅後にiPadに切り替えると、どこまで読んだか探さなければならない。あるいはMacで一章読み、翌朝iPhoneを手に取ると第1ページが表示されている。
 
 読書進捗の同期はシンプルに見えるが、多くのリーダーで微妙に失敗している。[BiblioFuse](/ja/)はiCloudを使い、ページ数・読み方向・表示設定を含む正確な読書位置を、iPhone・iPad・Mac間で手動操作なしに同期する。
@@ -39,3 +41,21 @@
 ## 始めよう
 
 [BiblioFuse](/ja/)はApp Storeで無料配布（iPhone・iPad対応）。iCloud同期はプレミアムなしで利用できる。デバイス設定でBiblioFuseのiCloud Driveを有効にすれば、すぐに進捗の同期が始まる。
+
+
+## よくある質問
+
+**BiblioFuse はどのようにして iPhone と iPad 間で読書進捗を同期しますか？**
+BiblioFuse は進捗メタデータを iCloud に保存し、ファイル名でなくコンテンツハッシュに紐づけます。そのため、ファイルをリネームや移動しても進捗は正確に引き継がれます。設定 → Apple ID → iCloud で BiblioFuse の iCloud Drive を有効にすると同期が始まります。
+
+**BiblioFuse は CBZ やマンガファイルの進捗も同期しますか？**
+はい。CBZ、CBR、EPUB、PDF で進捗同期に対応しています。CBZ/CBR は正確なページ番号、EPUB はチャプター内の正確な位置が同期されます。読み方向（左→右、右→左）もボリュームごとに同期されます。
+
+**BiblioFuse で iCloud 同期を有効にするには何を設定すればよいですか？**
+2 つ確認してください。設定 → Apple ID → iCloud で iCloud Drive が有効になっていること、そのリストで BiblioFuse がオンになっていること。両方オンにすれば自動で同期が始まります。「今すぐ同期」ボタンはありません。
+
+**オフラインで読んでも iCloud 同期は機能しますか？**
+はい。インターネットなしで読んだ場合、BiblioFuse は進捗をローカルに保存し、次に iCloud に接続したときに送信します。2 台のデバイスが競合した場合、ページ番号が多い方（より読み進んだ方）が優先されます。
+
+**BiblioFuse の iCloud 同期と Mac Home Library の違いは何ですか？**
+iCloud 同期はファイルと進捗データをクラウドにコピーし、どのデバイスでも利用できるようにします。Mac Home Library は Mac からローカル Wi-Fi 経由でオンデマンドにストリーミングし、デバイスや iCloud には何もコピーされません。オフラインでどこでも読む場合は iCloud、自宅でコレクション全体を閲覧したい場合は Mac Home Library を使いましょう。

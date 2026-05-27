@@ -1,5 +1,7 @@
 # Cara Membaca Manga di iPhone: Kanan ke Kiri, Gulir Vertikal, dan Halaman Ganda
 
+BiblioFuse memungkinkan kamu membaca manga di iPhone dan iPad dalam format CBZ, CBR, ZIP, atau RAR dengan alur halaman kanan ke kiri yang benar, mode gulir vertikal untuk webtoon, dan deteksi halaman ganda otomatis dalam orientasi lanskap. Berjalan di iOS 17 atau lebih baru dan tidak memerlukan akun atau langganan — file dimuat melalui Wi-Fi Transfer atau iCloud Drive tanpa kabel.
+
 Membaca manga di iPhone kedengarannya sederhana — hanya gambar berurutan. Tapi siapa pun yang pernah mencobanya pasti tahu masalahnya: pembaca yang dirancang untuk komik Barat memaksa alur halaman dari kiri ke kanan, yang merusak pengalaman membaca di setiap panel. Webtoon (komik bergulir vertikal) ditampilkan sebagai halaman individual alih-alih strip panjang yang berkesinambungan. Halaman ganda tampil dalam mode potret dan memampatkan karya seni yang dirancang untuk memenuhi lebar penuh layar.
 
 Manga memiliki persyaratan khusus yang diabaikan oleh kebanyakan pembaca serbaguna. [BiblioFuse](/id/) dirancang untuk menangani semuanya — mode kanan ke kiri, gulir vertikal, deteksi halaman ganda, dan pengaturan arah membaca per seri yang tersimpan di antara sesi.
@@ -128,3 +130,21 @@ Untuk sesi membaca yang panjang, mengurangi kecerahan dan mengaktifkan Night Shi
 Sekarang pengaturan membaca sudah dikonfigurasi, [BiblioFuse](/id/) memiliki beberapa fitur lagi yang layak dijelajahi. Mac Home Library memungkinkan kamu melakukan streaming seluruh koleksi manga desktop ke iPhone melalui Wi-Fi tanpa menyalin apa pun ke perangkat — ideal jika kamu memiliki terabyte manga di Mac yang tidak ingin kamu duplikasi. Tab Alat menangani kompresi — berguna untuk mengecilkan volume CBZ 200 MB menjadi 40–50 MB tanpa kehilangan kualitas yang terlihat, membebaskan penyimpanan untuk lebih banyak seri.
 
 Pengaturan yang tepat membuat perbedaan antara pembaca yang melawanmu dan pembaca yang menyatu dalam pengalaman membaca. Manga dibaca dari kanan ke kiri, dengan spread dalam mode lanskap dan webtoon dalam gulir vertikal, bekerja persis seperti seharusnya.
+
+
+## Pertanyaan yang Sering Diajukan
+
+**Apa aplikasi pembaca manga terbaik untuk iPhone?**
+BiblioFuse dibuat khusus untuk manga di iPhone dan iPad. Mendukung mode membaca kanan ke kiri, mode gulir vertikal untuk webtoon, halaman ganda otomatis dalam mode lanskap, dan memori arah membaca per seri — sehingga kamu mengkonfigurasi setiap seri sekali dan tetap benar.
+
+**Bagaimana cara mengatur mode kanan ke kiri untuk manga di iPhone?**
+Buka volume manga di BiblioFuse, ketuk tengah layar untuk menampilkan kontrol, lalu ketuk ikon arah membaca dan pilih Kanan ke Kiri. Arah geser dan zona ketuk keduanya terbalik untuk menyesuaikan urutan membaca Jepang. BiblioFuse menyimpan pengaturan ini per volume.
+
+**Bisakah saya membaca webtoon (komik gulir vertikal) di iPhone?**
+Ya. Di BiblioFuse, buka volume, ketuk ikon tata letak, dan pilih Gulir Vertikal. Halaman ditumpuk menjadi strip vertikal yang berkesinambungan — tanpa jeda halaman, tanpa pemotongan horizontal. Mode ini berfungsi untuk webtoon Korea, manhwa, dan format strip panjang apa pun.
+
+**Apakah BiblioFuse menampilkan halaman ganda dengan benar?**
+Ya. Putar iPhone ke mode lanskap saat membaca, dan BiblioFuse secara otomatis beralih ke tampilan dua halaman. Dalam mode kanan ke kiri, urutan halaman juga terbalik sehingga spread terbaca dengan benar.
+
+**Format manga apa yang didukung BiblioFuse di iPhone?**
+BiblioFuse membaca CBZ, CBR, ZIP, dan RAR — format yang digunakan oleh hampir semua rilis scan manga — serta EPUB dan PDF. Tidak perlu konversi; file langsung terbuka tanpa memandang formatnya.

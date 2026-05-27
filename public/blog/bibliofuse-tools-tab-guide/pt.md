@@ -1,5 +1,7 @@
 # Usando a Aba de Ferramentas do BiblioFuse: Compactar, Converter e Mesclar no iPhone
 
+A aba Ferramentas do BiblioFuse permite compactar, converter e mesclar arquivos CBZ, EPUB, PDF e RAR diretamente no iPhone ou iPad — sem computador ou upload para nuvem. A ferramenta de compactacao recodifica imagens para WebP, geralmente reduzindo o tamanho dos arquivos em 60-75%. Converter lida com conversoes de PDF para CBZ e RAR para CBZ, enquanto Mesclar combina varios arquivos de capitulos em um unico arquivo de volume.
+
 Você está no intervalo do almoço, celular na mão, e percebe que sua coleção de quadrinhos está consumindo o armazenamento do seu iPhone. Os arquivos CBZ dessa série de manga têm entre 80 e 120 MB cada. Você gostaria de compactá-los, mas o seu notebook está em casa e não quer esperar até a noite. Ou talvez você tenha vários arquivos de capítulos de uma série e queira mesclá-los em um único volume antes de começar uma longa sessão de leitura.
 
 [BiblioFuse](/pt/) resolve ambas as situações sem precisar de um computador. A aba Ferramentas — integrada ao aplicativo iOS — permite compactar, converter e mesclar seus quadrinhos e ebooks diretamente no iPhone ou iPad. Tudo roda no próprio dispositivo. Nenhum arquivo é enviado a lugar nenhum. Nenhum aplicativo desktop é necessário.
@@ -127,3 +129,21 @@ A aba Ferramentas é uma parte do que o [BiblioFuse](/pt/) faz. O mesmo aplicati
 Se você tem usado o BiblioFuse principalmente como leitor, a aba Ferramentas vale a pena explorar. Ela transforma seu iPhone em uma estação de processamento de arquivos capaz — sem precisar de desktop.
 
 [BiblioFuse está disponível na App Store](/pt/) para iPhone e iPad.
+
+
+## Perguntas frequentes
+
+**O que faz a ferramenta de compactacao do BiblioFuse?**
+A ferramenta de compactacao recodifica imagens em arquivos CBZ e EPUB para o formato WebP, tipicamente reduzindo o tamanho dos arquivos em 60-75% com pouca ou nenhuma perda de qualidade visivel em telas de iPhone ou iPad. O processamento ocorre inteiramente no dispositivo usando o hardware de compressao de imagens do iPhone.
+
+**Posso compactar arquivos de quadrinhos no iPhone sem computador?**
+Sim. A aba Ferramentas do BiblioFuse roda inteiramente no dispositivo no iOS 17 ou posterior. Selecione os arquivos CBZ ou EPUB na sua biblioteca, envie-os para a fila de ferramentas, escolha Compactar e o iPhone processa os arquivos localmente. Sem desktop necessario.
+
+**Como funciona a mesclagem de arquivos CBZ no BiblioFuse?**
+Entre no modo de selecao pressionando longo no primeiro arquivo CBZ, depois toque nos outros capitulos para adiciona-los. Toque no botao Ferramentas na barra inferior, escolha Mesclar e o BiblioFuse combina os arquivos na ordem que voce especifica. O resultado vai para a pasta export em Meu iPhone -> BiblioFuse -> export.
+
+**Quais formatos a ferramenta de compactacao do BiblioFuse suporta?**
+A ferramenta de compactacao suporta arquivos CBZ e EPUB. A ferramenta de conversao converte PDF para CBZ e RAR para CBZ. A ferramenta de mesclagem combina varios CBZ em um unico arquivo CBZ. PDF para CBZ e util para arquivos PDF digitalizados com imagens que se beneficiam da recodificacao WebP.
+
+**Onde vao os arquivos de saida apos usar a aba Ferramentas?**
+No iOS, os arquivos processados aparecem automaticamente em Meu iPhone -> BiblioFuse -> export. De la voce pode move-los para iCloud Drive -> BiblioFuse para sincronizacao entre dispositivos, ou compartilha-los com outros apps. No Android, voce escolhe a pasta de saida ao executar a ferramenta.

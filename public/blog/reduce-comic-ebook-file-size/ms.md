@@ -1,5 +1,7 @@
 # Kenapa Fail Komik dan Ebook Sangat Besar — dan Cara Mengatasinya
 
+BiblioFuse menyertakan alat pemampatan terbina dalam yang mengecilkan fail CBZ dan EPUB dengan mengekodkan semula gambar ke WebP — mengurangkan saiz fail sehingga 87% tanpa sebarang kehilangan kualiti yang ketara pada iPhone atau iPad dengan iOS 17 atau lebih baru. Keseluruhan proses dijalankan secara tempatan; tiada fail dimuat naik ke mana-mana pelayan. Perpustakaan manga 50 jilid yang mengambil 20 GB dalam format PNG dimampatkan menjadi lebih kurang 2.5 GB.
+
 Kamu menyalin siri manga 50 jilid ke iPhone dan melihat 20 gigabait storan terus lesap. Atau memuat turun satu fail CBZ dan ia sudah 400 MB untuk satu jilid sahaja. Ke mana perginya semua ruang itu?
 
 Jawapannya terletak pada format fail — dan sebaik sahaja kamu faham, menyelesaikan masalah ini hanya mengambil masa kurang daripada seminit.
@@ -77,3 +79,6 @@ Buat salinan dalam aplikasi Fail sebelum memampatkan — BiblioFuse menggantikan
 
 **Adakah pemampatan berfungsi tanpa talian?**
 Ya — keseluruhan proses berjalan pada peranti kamu. Tiada sambungan internet diperlukan dan tiada fail yang dihantar ke pelayan.
+
+**Bolehkah beberapa fail dimampatkan sekaligus?**
+Boleh. Tekan lama untuk memilih beberapa fail CBZ atau EPUB dalam grid perpustakaan, kemudian ketik Mampat dalam bar tindakan. BiblioFuse memprosesnya secara berurutan di latar belakang sementara kamu terus membaca.

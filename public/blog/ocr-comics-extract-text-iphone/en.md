@@ -1,5 +1,7 @@
 # Extract Text from Comics and Manga on iPhone with OCR
 
+BiblioFuse includes on-device OCR for extracting text from comic and manga pages on iPhone — supporting Japanese (including vertical text), Chinese, Korean, and Western scripts in CBZ, CBR, EPUB, and PDF files. The entire process runs locally on the Neural Engine with no network connection or server upload required, producing results in under two seconds on iPhone 14 or newer.
+
 You're three volumes into a manga series when a character drops a name — a clan, a technique, a location — spelled out in the original Japanese that the English translation renders phonetically. You want to look it up, check the kanji, or run it through a dictionary app. But comic pages are images, not text. You can't tap the speech bubble and copy what's inside.
 
 OCR in [BiblioFuse](/en/) changes that. The app can scan any page — or any selected region of a page — extract the text it finds, and hand it to you as a copyable string. It works on CBZ, CBR, EPUB, and PDF files. It handles Japanese, Chinese, Korean, and Western scripts. And it runs entirely on-device with no network connection required.
@@ -112,3 +114,20 @@ On-device OCR is possible because Apple's Neural Engine on modern iPhones is pow
 ## Getting Started
 
 OCR is available in [BiblioFuse](/en/) for iOS — no additional purchase or in-app unlock required. Download the app from the App Store, import a comic or manga, and try tapping the OCR button while reading. For manga readers especially, it's one of those features that's hard to go back to reading without once you've used it.
+
+## Frequently Asked Questions
+
+**Can I extract text from manga pages on iPhone?**
+Yes. BiblioFuse has a built-in OCR tool that works directly in the reader. Tap the center of the page to show controls, then tap the OCR button to scan the current page. You can also long-press and drag to select a specific speech bubble or region.
+
+**Does BiblioFuse OCR support Japanese vertical text?**
+Yes. BiblioFuse's OCR handles vertical Japanese text in manga speech bubbles, including right-to-left column reading order. The extracted text is presented in the correct sequence, not scrambled by a left-to-right scan order.
+
+**Is the OCR in BiblioFuse done on-device or uploaded to a server?**
+All OCR processing runs locally on your iPhone's Neural Engine — nothing is sent to a server. This works offline and keeps your content private. An iPhone 14 or newer completes full-page OCR in under two seconds.
+
+**What languages does BiblioFuse OCR support?**
+BiblioFuse OCR handles Japanese (horizontal and vertical), Simplified and Traditional Chinese, Korean, and standard Latin-script languages. Script detection is automatic — you don't need to change a language setting when switching between manga types.
+
+**How accurate is OCR on comic pages compared to documents?**
+High-resolution CBZ files (600+ DPI) OCR very accurately. Standard releases (300 DPI) produce good results on clean lettering. Accuracy drops with heavy JPEG artifacts, stylized fonts, or very low-resolution scans. Using the region selector on a single speech bubble rather than scanning the full page usually gives cleaner results.

@@ -1,5 +1,7 @@
 # Por que arquivos de quadrinhos e ebooks são tão grandes — e como resolver
 
+BiblioFuse inclui uma ferramenta de compressão integrada que reduz arquivos CBZ e EPUB recodificando imagens para WebP — diminuindo o tamanho em até 87% sem perda de qualidade visível no iPhone ou iPad com iOS 17 ou posterior. Todo o processo ocorre localmente; nenhum arquivo é enviado a qualquer servidor. Uma biblioteca manga de 50 volumes que ocupa 20 GB em formato PNG é comprimida para aproximadamente 2,5 GB.
+
 Você copia uma série manga de 50 volumes para o seu iPhone e vê 20 gigabytes de armazenamento desaparecerem de uma vez. Ou baixa um único CBZ e ele tem 400 MB para apenas um volume. Para onde vai todo esse espaço?
 
 A resposta está no formato do arquivo — e quando você entende isso, resolver o problema leva menos de um minuto.
@@ -77,3 +79,6 @@ Faça uma cópia no app Arquivos antes de comprimir — a BiblioFuse substitui o
 
 **A compressão funciona offline?**
 Sim — todo o processo roda no seu dispositivo. Nenhuma conexão com internet é necessária e nenhum arquivo é enviado a um servidor.
+
+**Posso comprimir vários arquivos ao mesmo tempo?**
+Sim. Pressione longamente para selecionar vários arquivos CBZ ou EPUB na grade da biblioteca e toque em Comprimir na barra de ações. A BiblioFuse os processa sequencialmente em segundo plano enquanto você continua lendo.

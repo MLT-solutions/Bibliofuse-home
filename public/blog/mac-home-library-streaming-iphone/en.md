@@ -1,5 +1,7 @@
 # Stream Your Mac Comic Library to iPhone Over Wi-Fi (No Copying Required)
 
+BiblioFuse Mac Home Library lets you stream your entire Mac comic and ebook collection to iPhone or iPad over Wi-Fi with no files copied to the device and zero iPhone storage used. It works with CBZ, CBR, EPUB, PDF, and TXT libraries on a Mac running alongside an iPhone or iPad on iOS 17 or later — no special network configuration required beyond both devices being on the same Wi-Fi network.
+
 Your Mac hard drive has 400 GB of CBZ and EPUB files — decades of collected manga, graphic novels, and scanned comics. Your iPhone has 64 GB total, and most of that is already spoken for. You've tried iCloud sync, but it runs slowly and eats storage. You've tried Wi-Fi Transfer for selective imports, but picking individual volumes every time defeats the point of having a full collection.
 
 Mac Home Library in [BiblioFuse](/en/) solves this problem differently. Instead of moving files to your phone, it streams them. Your Mac becomes a local server; your iPhone becomes a browser that reads from it on demand. Nothing is copied. Nothing is uploaded. You get your full 400 GB library on your iPhone as long as you're on the same Wi-Fi network.
@@ -97,3 +99,20 @@ You don't need to download your entire collection to take some of it with you �
 [BiblioFuse](/en/) is available on the App Store for iPhone and iPad. Mac Home Library is part of the standard app; there's no separate activation or premium tier. Install it on both your Mac and iPhone, enable sharing in Mac Preferences, and your entire library is available on iPhone the next time you're on the same network.
 
 For offline access and long-term library management, Wi-Fi Transfer and iCloud Sync round out the workflow. All three features are built into [BiblioFuse](/en/) and work together to keep your reading collection available wherever and however you want to read.
+
+## Frequently Asked Questions
+
+**How do I stream my Mac comic library to iPhone without copying files?**
+Install BiblioFuse on both your Mac and iPhone. In the Mac app, go to Preferences → Home Library and enable sharing. On iPhone, open BiblioFuse and tap Mac Home Library in the library sidebar. Your Mac's folders appear immediately — no IP address or router configuration needed.
+
+**Does Mac Home Library use iPhone storage?**
+No. Pages stream on demand from the Mac; nothing is stored on the iPhone beyond the BiblioFuse app and your progress data. You can browse and read a 400 GB library without using any iPhone storage for the files themselves.
+
+**Can I use Mac Home Library over mobile data, not just Wi-Fi?**
+Not directly, but Tailscale creates a private encrypted network between your Mac and iPhone so the streaming connection works over 5G or any internet connection. Install Tailscale on both devices, sign in with the same account, and BiblioFuse uses the Tailscale endpoint automatically.
+
+**What formats does Mac Home Library support?**
+Mac Home Library streams any format BiblioFuse reads — CBZ, CBR, ZIP, RAR, EPUB, PDF, and TXT. CBZ and CBR volumes stream page-by-page for instant opening; EPUB and TXT files are downloaded to the device first before opening.
+
+**Does reading progress sync when using Mac Home Library?**
+Yes. Progress from Mac Home Library sessions is stored and pushed to iCloud, the same as locally stored files. If you stream volume 3 of a series on iPhone and read to page 87, that position is available on your iPad and Mac afterward.

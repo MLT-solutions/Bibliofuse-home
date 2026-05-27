@@ -1,5 +1,7 @@
 # Cara Memindahkan Komik ke iPhone Tanpa iTunes atau Kabel
 
+BiblioFuse menyertakan fitur Wi-Fi Transfer bawaan yang memungkinkanmu menyeret file CBZ, CBR, EPUB, PDF, dan ZIP dari browser mana pun di Mac atau PC langsung ke perpustakaan iPhone — tanpa kabel, tanpa iTunes, dan tanpa unggah ke cloud. Kecepatan transfer mencapai 15–40 MB/s di jaringan Wi-Fi rumahan biasa dengan iOS 17 atau lebih baru, memindahkan volume manga 150 MB dalam sekitar lima detik.
+
 Koleksi manga kamu tersimpan di Mac. Dua ratus file CBZ, tersusun rapi per seri, masing-masing volume berukuran 80 hingga 200 MB. iPhone adalah tempat kamu benar-benar membaca — di kasur, di kereta, saat makan siang. Memindahkan file-file itu ke sana adalah masalah yang jarang dibahas.
 
 Email dibatasi 25 MB. AirDrop bisa dipakai, tapi kamu harus mengirim file satu per satu dan menyetujui setiap transfer. iCloud Drive bisa menyinkronkan, tapi mengunggah 20 GB komik terlebih dahulu lalu menunggu unduhan selesai jelas tidak praktis. File sharing lewat iTunes masih ada, tapi butuh kabel dan tingkat kesabaran yang sudah lama ditinggalkan kebanyakan orang.
@@ -101,3 +103,20 @@ Beberapa arsip CBR yang sangat lama menggunakan RAR5, yang tidak didukung secara
 Setelah perpustakaanmu ada di iPhone, [BiblioFuse](/id/) menyediakan beberapa alat untuk membuatnya lebih mudah dikelola. Tab Tools memungkinkan kamu mengompres file CBZ di perangkat — berguna jika volume 200 MB bisa diperkecil menjadi 40 MB tanpa kehilangan kualitas yang terlihat. Fitur Mac Home Library melangkah lebih jauh: alih-alih mentransfer file ke iPhone sama sekali, fitur ini memungkinkan kamu melakukan streaming seluruh koleksi komik Mac lewat Wi-Fi secara real time, sehingga tidak ada yang perlu disalin.
 
 Itulah gambaran lengkapnya — transfer Wi-Fi yang butuh hitungan menit, bukan satu jam seperti sinkronisasi iTunes dulu.
+
+## Pertanyaan yang Sering Diajukan
+
+**Bagaimana cara memindahkan komik ke iPhone secara nirkabel tanpa iTunes?**
+Di BiblioFuse, buka Pengaturan → Impor Wi-Fi dan aktifkan. URL lokal akan muncul — buka di browser mana pun di Mac atau PC (dalam jaringan Wi-Fi yang sama) lalu seret file CBZ, CBR, atau EPUB ke jendela browser. File masuk ke perpustakaanmu secara otomatis.
+
+**Seberapa cepat Wi-Fi Transfer di BiblioFuse?**
+Di jaringan rumahan 802.11ac (Wi-Fi 5) modern, kecepatan sekitar 15–40 MB/s. Volume manga 150 MB ditransfer dalam sekitar lima detik; seri 10 GB butuh sekitar lima menit. Kecepatan tergantung router dan kemacetan jaringanmu.
+
+**Bisakah mentransfer folder seri lengkap sekaligus?**
+Bisa. Ketika kamu menyeret folder ke zona unggah browser, BiblioFuse menerima semua file di dalamnya dan mempertahankan nama folder di perpustakaanmu. Folder berisi 40 bab datang terorganisir di bawah nama folder itu — tidak perlu langkah ekstra.
+
+**Apakah Wi-Fi Transfer bekerja di luar jaringan rumah?**
+Wi-Fi Transfer standar memerlukan kedua perangkat dalam jaringan lokal yang sama. Untuk akses jarak jauh, Tailscale membuat jaringan terenkripsi privat antara Mac dan iPhone sehingga Wi-Fi Transfer berfungsi di mana saja dengan koneksi internet.
+
+**Apa yang terjadi jika transfer berhenti sebelum selesai?**
+Jika layar terkunci dan iOS menangguhkan BiblioFuse, transfer dijeda. File yang sudah diunggah aman. Buka kembali BiblioFuse, pastikan Wi-Fi Transfer masih aktif, dan mulai ulang unggahan — sebagian besar browser akan mencoba ulang file yang belum selesai.

@@ -1,5 +1,7 @@
 # Je BiblioFuse-bibliotheek beheren: mappen, overdrachten en Mac-streaming
 
+BiblioFuse beheert je EPUB-, CBZ-, CBR-, PDF- en TXT-bibliotheek op iPhone, iPad en Mac zonder bestanden te verplaatsen of te vergrendelen. Op iOS 17 of later kun je bestanden laden via Wi-Fi Transfer, iCloud Drive of het deelvenster van de Bestanden-app — en je hele Mac-bibliotheek draadloos naar iPhone streamen zonder opslagruimte op het apparaat te gebruiken.
+
 [BiblioFuse](https://bibliofuse.com) is gebouwd op een eenvoudige regel: je bestanden blijven waar jij ze neerzet. De app verplaatst, hernoemt of sluit bestanden nooit op in een eigen formaat. Begrijpen waar boeken staan — en hoe je ze daar krijgt — maakt het verschil tussen een bibliotheek die voor je werkt en een waartegen je constant vecht.
 
 ## Boeken toevoegen: vier manieren
@@ -104,3 +106,20 @@ Je Mac-bibliotheekmappen verschijnen nu in de zijbalk, net als lokale opslag. Bl
 - **iCloud is het eenvoudigste synchronisatiepad**: boeken in iCloud Drive → BiblioFuse verschijnen op al je Apple-apparaten met voortgangsbeheer.
 - **De exportmap is een tussenstation**: na compressie op iOS vind je resultaten in Op mijn iPhone → BiblioFuse → export, verplaats ze dan naar de gewenste definitieve locatie.
 - **Controleer machtigingen als streaming niet werkt**: de meeste verbindingsproblemen zijn te herleiden tot Lokaal netwerk of iCloud dat uitgeschakeld is.
+
+## Veelgestelde vragen
+
+**Waar slaat BiblioFuse mijn bestanden op de iPhone op?**
+BiblioFuse gebruikt twee mappen die zichtbaar zijn in de Bestanden-app: iCloud Drive → BiblioFuse (gesynchroniseerd tussen apparaten) en Op mijn iPhone → BiblioFuse (alleen lokaal). Wi-Fi Transfer-bestanden komen in de lokale importsubmap; bestanden die je via iCloud toevoegt, gaan naar de iCloud-map.
+
+**Hoe breng ik boeken van mijn Mac naar mijn iPhone zonder kabel?**
+Gebruik Wi-Fi Transfer: ga in BiblioFuse op iPhone naar Instellingen → Wi-Fi importeren en schakel het in. Bezoek de URL in een browser op je Mac en sleep de bestanden erin. Je kunt ook bestanden naar iCloud Drive → BiblioFuse slepen op je Mac en ze synchroniseren automatisch.
+
+**Ondersteunt BiblioFuse op mappen gebaseerde serieorganisatie?**
+Ja. Zet een map met CBZ-volumes (bijvoorbeeld een mangaserie) in de BiblioFuse-map — elke submap verschijnt als een aparte serie-invoer in de bibliotheek. Individuele volumes in een map worden in leesvolgorde weergegeven.
+
+**Wat is het verschil tussen Mac Home Library-streaming en iCloud-synchronisatie?**
+iCloud-synchronisatie kopieert bestanden naar je apparaat zodat je overal offline kunt lezen. Mac Home Library streamt pagina's op aanvraag van je Mac via Wi-Fi — niets wordt naar de iPhone gekopieerd, dus er wordt geen apparaatopslag gebruikt, maar je moet op hetzelfde netwerk zitten.
+
+**Hoe stuur ik snel een boek van mijn Mac-bibliotheek naar mijn iPhone?**
+Klik met de rechtermuisknop op een boekomslag in BiblioFuse op Mac en kies Stuur naar iCloud. BiblioFuse kopieert het naar iCloud Drive → BiblioFuse, en het verschijnt binnen minuten op je iPhone.

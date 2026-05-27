@@ -1,5 +1,7 @@
 # Menggunakan Tab Alat BiblioFuse: Kompres, Konversi, dan Gabungkan di iPhone
 
+Tab Alat BiblioFuse memungkinkan kamu mengompres, mengonversi, dan menggabungkan file CBZ, EPUB, PDF, dan RAR langsung di iPhone atau iPad — tanpa komputer atau unggahan ke cloud. Alat Kompres mengodekan ulang gambar ke WebP, biasanya memotong ukuran file sebesar 60-75%. Konversi menangani perubahan PDF ke CBZ dan RAR ke CBZ, sementara Gabungkan mengombinasikan beberapa file bab menjadi satu arsip volume.
+
 Kamu sedang istirahat makan siang, telepon di tangan, dan menyadari koleksi komik kamu menghabiskan penyimpanan iPhone. File CBZ dari seri manga itu masing-masing berukuran 80–120 MB. Kamu ingin mengompresnya, tapi laptop ada di rumah dan tidak mau menunggu sampai malam. Atau mungkin kamu punya beberapa file bab dari satu seri dan ingin menggabungkannya menjadi satu volume sebelum membaca panjang.
 
 [BiblioFuse](/id/) menangani keduanya tanpa komputer. Tab Alat — yang terintegrasi dalam aplikasi iOS — memungkinkan kamu mengompres, mengonversi, dan menggabungkan komik dan ebook langsung di iPhone atau iPad. Semua berjalan di perangkat. Tidak ada file yang diunggah ke mana pun. Tidak perlu aplikasi desktop.
@@ -127,3 +129,21 @@ Tab Alat adalah satu bagian dari apa yang [BiblioFuse](/id/) lakukan. Aplikasi y
 Jika kamu telah menggunakan BiblioFuse terutama sebagai pembaca, tab Alat layak untuk dijelajahi. Ini mengubah iPhone kamu menjadi stasiun pemrosesan file yang mampu — tidak perlu desktop.
 
 [BiblioFuse tersedia di App Store](/id/) untuk iPhone dan iPad.
+
+
+## Pertanyaan yang Sering Diajukan
+
+**Apa yang dilakukan alat kompresi BiblioFuse?**
+Alat kompresi mengodekan ulang gambar dalam file CBZ dan EPUB ke format WebP, biasanya mengurangi ukuran file 60-75% dengan sedikit atau tanpa kehilangan kualitas yang terlihat di layar iPhone atau iPad. Pemrosesan terjadi sepenuhnya di perangkat menggunakan perangkat keras kompresi gambar iPhone.
+
+**Bisakah saya mengompres file komik di iPhone tanpa komputer?**
+Ya. Tab Alat BiblioFuse berjalan sepenuhnya di perangkat pada iOS 17 atau lebih baru. Pilih file CBZ atau EPUB di perpustakaanmu, kirim ke antrian alat, pilih Kompres dan iPhone memproses file secara lokal. Tidak perlu desktop.
+
+**Bagaimana penggabungan file CBZ bekerja di BiblioFuse?**
+Masuk ke mode pilih dengan menekan lama file CBZ pertama, lalu ketuk bab lainnya untuk menambahkan. Ketuk tombol Alat di bilah bawah, pilih Gabungkan dan BiblioFuse menggabungkan file sesuai urutan yang kamu tentukan. Hasilnya masuk ke folder export di iPhone Saya -> BiblioFuse -> export.
+
+**Format apa yang didukung alat kompresi BiblioFuse?**
+Alat kompresi mendukung file CBZ dan EPUB. Alat konversi mengonversi PDF ke CBZ dan RAR ke CBZ. Alat gabung mengombinasikan beberapa CBZ menjadi satu file CBZ. PDF ke CBZ berguna untuk file PDF yang dipindai dengan gambar yang mendapat manfaat dari pengodean ulang WebP.
+
+**Di mana file output setelah menggunakan tab Alat?**
+Di iOS, file yang diproses muncul otomatis di iPhone Saya -> BiblioFuse -> export. Dari sana kamu bisa memindahkannya ke iCloud Drive -> BiblioFuse untuk sinkronisasi antar perangkat, atau berbagi ke app lain. Di Android, kamu memilih folder output saat menjalankan alat.

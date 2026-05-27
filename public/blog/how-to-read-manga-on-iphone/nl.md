@@ -1,5 +1,7 @@
 # Manga lezen op iPhone: van rechts naar links, verticaal scrollen en dubbele pagina's
 
+BiblioFuse laat je manga lezen op iPhone en iPad in CBZ-, CBR-, ZIP- of RAR-formaat met de juiste rechts-naar-links paginastroom, verticale scrollmodus voor webtoons en automatische detectie van dubbele paginaspreidingen in landschapsmodus. Het werkt op iOS 17 of later en vereist geen account of abonnement — bestanden laden via Wi-Fi Transfer of iCloud Drive zonder kabel.
+
 Manga lezen op een iPhone klinkt eenvoudig — het zijn gewoon afbeeldingen in volgorde. Maar wie het heeft geprobeerd, kent de problemen: een lezer die voor westerse strips is gebouwd, dwingt een stroom van links naar rechts af, wat de leeservaring in elk paneel breekt. Webtoons (verticaal scrollende strips) worden als afzonderlijke pagina's weergegeven in plaats van als een doorlopende strook. Dubbele pagina's worden in portretmodus weergegeven, waardoor artwork dat is ontworpen om de volledige breedte te beslaan, samengeperst wordt.
 
 Manga heeft specifieke vereisten die de meeste algemene lezers negeren. [BiblioFuse](/nl/) is ontworpen om ze allemaal aan te kunnen — modus van rechts naar links, verticaal scrollen, detectie van dubbele pagina's en leesrichtingsinstellingen per serie die tussen sessies bewaard blijven.
@@ -128,3 +130,21 @@ Voor lange leessessies vermindert het verlagen van de helderheid en het inschake
 Nu je leesconfiguratie is ingesteld, heeft [BiblioFuse](/nl/) nog een paar functies die het verkennen waard zijn. Met de Mac Home Library kun je je volledige desktop manga-collectie via Wi-Fi streamen naar je iPhone zonder iets naar het apparaat te kopiëren — ideaal als je terabytes aan manga op een Mac hebt staan die je liever niet wilt dupliceren. Het tabblad Extra beheert compressie — handig om CBZ-volumes van 200 MB terug te brengen naar 40–50 MB zonder zichtbaar kwaliteitsverlies, waardoor er opslagruimte vrijkomt voor meer series.
 
 De juiste instellingen maken het verschil tussen een lezer die je hindert en een die in de leeservaring verdwijnt. Manga lezen van rechts naar links, met spreads in landschap en webtoons in verticaal scrollen, werkt precies zoals het hoort.
+
+
+## Veelgestelde vragen
+
+**Wat is de beste manga-lezer-app voor iPhone?**
+BiblioFuse is specifiek gebouwd voor manga op iPhone en iPad. Het ondersteunt de leesvolgorde van rechts naar links, verticale scrollmodus voor webtoons, automatische dubbele pagina's in landschap en per-serie leesrichtingsgeheugen — je configureert elke serie eenmalig en het blijft correct.
+
+**Hoe stel ik de rechts-naar-links modus in voor manga op iPhone?**
+Open een manga-volume in BiblioFuse, tik op het midden van het scherm om de besturing te tonen, dan op het leesrichtingspictogram en selecteer Rechts naar Links. Zowel de veegrichting als de tikzones worden omgekeerd om de Japanse leesvolgorde te volgen. BiblioFuse slaat deze instelling per volume op.
+
+**Kan ik webtoons (verticaal scrollende strips) lezen op iPhone?**
+Ja. Open het volume in BiblioFuse, tik op het indelingspictogram en selecteer Verticaal Scrollen. Pagina's stapelen zich op tot een doorlopende verticale strook — geen pagina-onderbrekingen, geen horizontaal afsnijden. Deze modus werkt voor Koreaanse webtoons, manhwa en elk lang-strip-formaat.
+
+**Toont BiblioFuse dubbele pagina's correct?**
+Ja. Draai je iPhone naar de liggende modus tijdens het lezen en BiblioFuse schakelt automatisch over naar twee-pagina-spreiding. In rechts-naar-links modus wordt ook de paginavolgorde omgekeerd zodat de spreiding correct gelezen wordt.
+
+**Welke manga-formaten ondersteunt BiblioFuse op iPhone?**
+BiblioFuse leest CBZ, CBR, ZIP en RAR — de formaten die door vrijwel alle manga scan-releases worden gebruikt — evenals EPUB en PDF. Er is geen conversie nodig; bestanden openen direct ongeacht het formaat.

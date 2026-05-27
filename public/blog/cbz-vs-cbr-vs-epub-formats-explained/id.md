@@ -1,5 +1,7 @@
 # CBZ vs CBR vs EPUB — Format Komik dan E-book Dijelaskan
 
+BiblioFuse mendukung CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT di iPhone, iPad, dan Mac dengan iOS 17 atau lebih baru — membaca semua format komik dan e-book ini secara native tanpa langkah konversi. CBZ dan CBR adalah arsip gambar yang paling cocok untuk komik dan manga, sedangkan EPUB adalah format teks reflow yang dirancang untuk novel dan non-fiksi.
+
 Kamu melihat halaman unduhan dan menemukan empat jenis file: CBZ, CBR, EPUB, PDF. Semuanya mengklaim sebagai "buku yang sama". Mana yang harus diunduh? Mana yang akan berjalan di ponsel, tablet, atau Mac-mu?
 
 Panduan ini menjelaskan semuanya. Setelah membaca, kamu akan tahu persis apa itu setiap format, apa isinya, dan mana yang tepat untuk situasimu.
@@ -79,3 +81,20 @@ Untuk komik, PDF bisa digunakan tapi tidak ideal: file sering besar dan zoom di 
 | EPUB (teks) | Sangat kecil | Teks terkompresi sangat baik |
 
 Volume manga dalam format PNG CBZ biasanya berukuran 300–400 MB. Volume yang sama dikompresi ke WebP berukuran 40–80 MB — pengurangan 80% tanpa kehilangan kualitas yang terlihat di layar ponsel.
+
+## Pertanyaan yang Sering Diajukan
+
+**Apa perbedaan antara format komik CBZ dan CBR?**
+CBZ dan CBR keduanya adalah arsip gambar sekuensial — CBZ menggunakan wadah ZIP dan CBR menggunakan RAR. Gambar di dalamnya identik; hanya format arsip luar yang berbeda. CBZ adalah standar modern karena ZIP bersifat terbuka; CBR ditemukan di rilisan lama. BiblioFuse membaca keduanya tanpa konversi.
+
+**Bisakah membaca file EPUB di aplikasi komik?**
+Bisa, jika aplikasi mendukung EPUB secara native. BiblioFuse menangani file EPUB tanpa DRM bersama CBZ dan CBR — kamu bisa menyimpan novel dan novel grafis dalam satu perpustakaan. EPUB adalah format reflow, sehingga ukuran font, spasi baris, dan margin bisa disesuaikan.
+
+**Format apa yang terbaik untuk manga — CBZ atau EPUB?**
+CBZ hampir selalu menjadi pilihan terbaik untuk manga. Halaman manga adalah gambar penuh halaman, dan CBZ dirancang khusus untuk itu. Unduh CBZ (atau CBR) kapan pun tersedia untuk komik dan manga.
+
+**Bagaimana cara mengkonversi CBR ke CBZ?**
+CBR dan CBZ berisi file gambar yang identik — hanya wadahnya yang berbeda. Kamu bisa mengarsipkan ulang: ekstrak CBR, pilih semua gambar, kompres ke ZIP, dan ganti nama file dari .zip ke .cbz. Tab Alat BiblioFuse juga bisa menangani konversi CBR ke CBZ langsung di iPhone.
+
+**Mengapa file CBZ saya sangat besar?**
+File CBZ besar biasanya berisi gambar PNG resolusi tinggi yang tidak terkompresi dan berat. Mengonversi ke WebP pada kualitas 80% biasanya mengurangi ukuran file 75–88% tanpa perubahan yang terlihat di layar ponsel. Alat kompresi bawaan BiblioFuse menangani ini di perangkat.

@@ -1,5 +1,7 @@
 # De Gereedschappen-tab van BiblioFuse gebruiken: Comprimeren, Converteren en Samenvoegen op iPhone
 
+Het tabblad Gereedschappen van BiblioFuse laat je CBZ-, EPUB-, PDF- en RAR-bestanden direct comprimeren, converteren en samenvoegen op iPhone of iPad — geen computer of cloud-upload nodig. De Comprimeer-tool codeert afbeeldingen opnieuw naar WebP, waardoor bestandsgroottes doorgaans 60-75% kleiner worden. Converteren verwerkt PDF-naar-CBZ en RAR-naar-CBZ wijzigingen, terwijl Samenvoegen meerdere hoofdstukbestanden combineert tot een enkel volumearchief.
+
 Je zit in je lunchpauze, telefoon in de hand, en je merkt dat je stripboekencollectie de opslag van je iPhone opslokt. De CBZ-bestanden van die mangaserie wegen elk 80–120 MB. Je zou ze graag willen comprimeren, maar je laptop staat thuis en je wilt niet wachten tot vanavond. Of misschien heb je meerdere hoofdstukbestanden van een serie en wil je ze samenvoegen tot één enkel volume voordat je begint met een lange leesbeurs.
 
 [BiblioFuse](/nl/) doet beide zonder een computer. Het tabblad Gereedschappen — ingebouwd in de iOS-app — laat je je stripboeken en e-books direct comprimeren, converteren en samenvoegen op je iPhone of iPad. Alles werkt op het apparaat zelf. Er worden geen bestanden ergens naartoe geüpload. Er is geen desktop-app nodig.
@@ -127,3 +129,21 @@ Het tabblad Gereedschappen is één onderdeel van wat [BiblioFuse](/nl/) doet. D
 Als je BiblioFuse voornamelijk als lezer hebt gebruikt, is het tabblad Gereedschappen het verkennen waard. Het maakt van je iPhone een capabel bestandsverwerkingsstation — geen desktop vereist.
 
 [BiblioFuse is beschikbaar in de App Store](/nl/) voor iPhone en iPad.
+
+
+## Veelgestelde vragen
+
+**Wat doet het comprimeertool van BiblioFuse?**
+Het comprimeertool codeert afbeeldingen in CBZ- en EPUB-bestanden opnieuw naar WebP-formaat, waardoor bestandsgroottes doorgaans 60-75% kleiner worden met weinig of geen zichtbaar kwaliteitsverlies op iPhone- of iPad-schermen. De verwerking vindt volledig op het apparaat plaats via de beeldcompressiehardware van de iPhone.
+
+**Kan ik comicbestanden comprimeren op iPhone zonder computer?**
+Ja. Het tabblad Gereedschappen van BiblioFuse draait volledig op het apparaat op iOS 17 of later. Selecteer CBZ- of EPUB-bestanden in je bibliotheek, voeg ze toe aan de gereedschapswachtrij, kies Comprimeren en de iPhone verwerkt de bestanden lokaal. Geen desktop nodig.
+
+**Hoe werkt het samenvoegen van CBZ-bestanden in BiblioFuse?**
+Ga in selectiemodus via lang indrukken op het eerste CBZ-bestand, dan tikken op andere hoofdstukken om ze toe te voegen. Tik op de knop Gereedschappen in de onderste balk, kies Samenvoegen en BiblioFuse combineert de bestanden in de volgorde die je opgeeft. Het resultaat gaat naar de exportmap in Op mijn iPhone -> BiblioFuse -> export.
+
+**Welke formaten ondersteunt het comprimeertool van BiblioFuse?**
+Het comprimeertool ondersteunt CBZ- en EPUB-bestanden. Het converteertool zet PDF om naar CBZ en RAR naar CBZ. Het samenvoeg-tool combineert meerdere CBZ's in een enkel CBZ-bestand. PDF naar CBZ is handig voor gescande PDF-bestanden met afbeeldingen die profiteren van WebP-hercodering.
+
+**Waar gaan uitvoerbestanden naartoe na gebruik van het tabblad Gereedschappen?**
+Op iOS verschijnen verwerkte bestanden automatisch in Op mijn iPhone -> BiblioFuse -> export. Van daaruit kun je ze verplaatsen naar iCloud Drive -> BiblioFuse voor synchronisatie tussen apparaten, of delen met andere apps. Op Android kies je de uitvoermap bij het uitvoeren van het gereedschap.

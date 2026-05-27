@@ -1,5 +1,7 @@
 # Gestiona tu biblioteca BiblioFuse: carpetas, transferencias y streaming desde Mac
 
+BiblioFuse gestiona tu biblioteca de EPUB, CBZ, CBR, PDF y TXT en iPhone, iPad y Mac sin mover ni bloquear tus archivos. En iOS 17 o superior, puedes cargar archivos mediante Wi-Fi Transfer, iCloud Drive o la hoja de compartir de Archivos — y transmitir toda tu biblioteca Mac a iPhone por Wi-Fi sin coste de almacenamiento en el dispositivo.
+
 [BiblioFuse](https://bibliofuse.com) está construido alrededor de una regla simple: tus archivos se quedan donde los pones. La app nunca mueve, renombra ni encierra los archivos en un formato propietario. Entender dónde viven los libros —y cómo llevarlos allí— marca la diferencia entre una biblioteca que trabaja para ti y una con la que estás peleando constantemente.
 
 ## Cómo añadir libros: cuatro caminos
@@ -104,3 +106,20 @@ Las carpetas de tu biblioteca Mac aparecen ahora en la barra lateral igual que e
 - **iCloud es el método de sincronización más sencillo**: los libros en iCloud Drive → BiblioFuse aparecen en todos tus dispositivos Apple con seguimiento del progreso desde el primer momento.
 - **La carpeta export es una zona de preparación**: tras comprimir en iOS, encuentra los resultados en En mi iPhone → BiblioFuse → export y muévelos donde los quieras guardar a largo plazo.
 - **Comprueba los permisos si el streaming no funciona**: la mayoría de los problemas de conexión se deben a que la Red local o iCloud están desactivados.
+
+## Preguntas frecuentes
+
+**¿Dónde almacena BiblioFuse mis archivos en iPhone?**
+BiblioFuse usa dos carpetas visibles en la app Archivos: iCloud Drive → BiblioFuse (sincronizado entre dispositivos) y En mi iPhone → BiblioFuse (solo local). Los archivos de Wi-Fi Transfer van a la subcarpeta de importación local; los que añades vía iCloud van a la carpeta de iCloud.
+
+**¿Cómo paso libros de mi Mac a mi iPhone sin cables?**
+Usa Wi-Fi Transfer: en BiblioFuse en iPhone, ve a Ajustes → Importar por Wi-Fi, actívalo, y visita la URL que aparece en cualquier navegador de tu Mac y arrastra los archivos. También puedes soltar archivos en iCloud Drive → BiblioFuse en tu Mac y se sincronizan automáticamente.
+
+**¿Admite BiblioFuse la organización por series en carpetas?**
+Sí. Coloca una carpeta de volúmenes CBZ (por ejemplo, una serie manga) en la carpeta de BiblioFuse — cada subcarpeta aparece como una entrada de serie separada en la biblioteca. Los volúmenes individuales dentro de una carpeta se listan en orden de lectura.
+
+**¿Cuál es la diferencia entre el streaming de Mac Home Library y la sincronización iCloud?**
+La sincronización iCloud copia archivos en tu dispositivo para que puedas leer sin conexión en cualquier lugar. Mac Home Library transmite páginas a demanda desde tu Mac por Wi-Fi — nada se copia al iPhone, por lo que no usa almacenamiento, pero necesitas estar en la misma red (o usar Tailscale para acceso remoto).
+
+**¿Cómo envío un libro de mi biblioteca Mac a mi iPhone rápidamente?**
+Haz clic derecho en cualquier portada en BiblioFuse del Mac y elige Enviar a iCloud. BiblioFuse lo copia a iCloud Drive → BiblioFuse, y aparece en tu iPhone en minutos.

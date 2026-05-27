@@ -1,5 +1,7 @@
 # Using the BiblioFuse Tools Tab: Compress, Convert, and Merge on iPhone
 
+BiblioFuse's Tools tab lets you compress, convert, and merge CBZ, EPUB, PDF, and RAR files directly on iPhone or iPad — no computer or cloud upload required. The Compress tool re-encodes images to WebP, typically cutting file sizes by 60–75%. Convert handles PDF-to-CBZ and RAR-to-CBZ changes, while Merge combines multiple chapter files into a single volume archive.
+
 You're on your lunch break, phone in hand, and you notice your comic collection is eating through your iPhone's storage. The CBZ files from that manga series are each 80–120 MB. You'd like to compress them, but your laptop is at home and you don't want to wait until tonight. Or maybe you have several chapter files from a series and want to merge them into a single volume before settling in for a long reading session.
 
 [BiblioFuse](/en/) handles both of these without a computer. The Tools tab — built into the iOS app — lets you compress, convert, and merge your comics and ebooks directly on your iPhone or iPad. Everything runs on-device. No file gets uploaded anywhere. No desktop app required.
@@ -127,3 +129,20 @@ The Tools tab is one part of what [BiblioFuse](/en/) does. The same app also han
 If you've been using BiblioFuse primarily as a reader, the Tools tab is worth exploring. It turns your iPhone into a capable file processing station — no desktop required.
 
 [BiblioFuse is available on the App Store](/en/) for iPhone and iPad.
+
+## Frequently Asked Questions
+
+**Can I compress CBZ files on iPhone without a computer?**
+Yes. BiblioFuse's Tools tab includes a Compress function that re-encodes the images inside CBZ and EPUB files to WebP, reducing file sizes by 60–75% on typical manga scans. Long-press any file in the library, tap Compress, adjust the quality slider, and tap Compress again. Everything runs on-device.
+
+**How do I merge manga chapters into a single CBZ file on iPhone?**
+In the Tools tab, tap Merge, add your chapter CBZ files in reading order, name the output, and tap Merge. BiblioFuse combines all images into a single CBZ archive. The originals are not deleted. Use this to turn 15 loose chapters into one clean volume file.
+
+**Can I convert PDF to CBZ on iPhone?**
+Yes. The Convert tool in BiblioFuse's Tools tab handles PDF-to-CBZ conversion on-device. Tap Convert, add your PDF, choose CBZ as the output format, and tap Convert. The result is a CBZ where each page of the PDF becomes an image in the archive.
+
+**Does the Tools tab work without an internet connection?**
+Yes — all three tools (Compress, Convert, Merge) run entirely on your iPhone. No files are uploaded and no network connection is required. Processing happens in the background so you can continue reading while a large compression job runs.
+
+**What output format does the Merge tool produce?**
+Merge always outputs a CBZ file, regardless of the input formats. If you merge a mix of CBZ and CBR files, the result is a single CBZ archive with all the pages in the order you specified.

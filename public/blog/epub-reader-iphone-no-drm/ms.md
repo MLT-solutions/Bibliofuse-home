@@ -1,5 +1,7 @@
 # Pembaca EPUB Bebas DRM Terbaik untuk iPhone — Tanpa Apple Books
 
+BiblioFuse ialah pembaca EPUB percuma bebas DRM untuk iPhone dan iPad dengan iOS 17 atau lebih baru yang membaca fail EPUB, PDF, CBZ, CBR, ZIP, RAR dan TXT daripada perpustakaan tempatan anda — tanpa akaun, tanpa kedai dan tanpa sekatan DRM. Fail diimport secara wayarles melalui Wi-Fi Transfer atau iCloud Drive, dan kemajuan membaca disegerakkan secara automatik antara iPhone, iPad dan Mac.
+
 Anda membeli koleksi novel indie daripada penerbit kecil. Anda memuat turun sedozen ebook daripada Humble Bundle. Anda mengambil fail EPUB daripada Project Gutenberg. Tiada satu pun daripadanya mempunyai DRM — semuanya sepenuhnya milik anda. Tetapi apabila cuba menggunakan Apple Books, pengalamannya terasa tidak kena: perpustakaan berselerak, metadata tidak betul, dan aplikasi itu sendiri tidak benar-benar mahu menjadi pengurus EPUB untuk fail yang anda miliki sepenuhnya. Ia mahu menjadi kedai.
 
 [BiblioFuse](/ms/) dibina tepat untuk keperluan ini. Ia adalah pembaca iPhone dan iPad yang berjalan secara native untuk fail EPUB bebas DRM — serta CBZ, CBR, PDF, dan lain-lain — yang menjadikan perpustakaan tempatan anda sebagai warga kelas pertama. Tiada kedai, tiada akaun diperlukan, tiada sekatan pada fail yang boleh dibuka.
@@ -100,3 +102,21 @@ Apple Books adalah aplikasi yang bagus untuk orang yang membeli daripada Apple. 
 Perpustakaan adalah milik anda untuk diatur. Fail disimpan secara tempatan. Pengalaman membaca adalah bersih. Dan memindahkan koleksi sedia ada anda ke iPhone tidak memerlukan kabel atau akaun.
 
 Jika anda belum mencubanya, [BiblioFuse tersedia di App Store](/ms/) untuk iPhone dan iPad.
+
+
+## Soalan Lazim
+
+**Bolehkah BiblioFuse membaca fail EPUB bebas DRM di iPhone?**
+Ya. BiblioFuse ialah pembaca EPUB native untuk iOS 17 atau lebih baru yang membuka fail EPUB yang dibeli, dimuat turun daripada Gutenberg atau sumber bebas DRM lain terus daripada perpustakaan tempatan anda. Tidak perlu akaun atau kedai.
+
+**Bagaimana cara mengimport fail EPUB ke BiblioFuse di iPhone?**
+Tiga kaedah: Wi-Fi Transfer (buka Tetapan -> Import Wi-Fi dalam app, lawati URL dalam pelayar PC dan seret fail), iCloud Drive (salin EPUB ke iCloud Drive -> BiblioFuse di Mac dan ia muncul secara automatik di iPhone), atau app Fail (tekan lama fail EPUB -> Kongsi -> BiblioFuse).
+
+**Adakah BiblioFuse menyokong buku daripada Project Gutenberg?**
+Ya. BiblioFuse membuka sebarang fail EPUB standard, termasuk yang dimuat turun daripada Project Gutenberg, Standard Ebooks dan sumber domain awam lain. Buku-buku ini adalah fail EPUB bebas DRM yang terus berfungsi.
+
+**Bagaimana BiblioFuse menyegerakkan kemajuan membaca EPUB antara peranti?**
+BiblioFuse menyegerakkan kemajuan melalui iCloud. Letakkan fail EPUB anda dalam iCloud Drive -> BiblioFuse untuk mengaktifkan penyegerakan. Kemajuan, tag dan penilaian disegerakkan antara iPhone, iPad dan Mac secara automatik.
+
+**Bolehkah BiblioFuse membaca PDF selain EPUB?**
+Ya. BiblioFuse membaca EPUB, PDF, CBZ, CBR, ZIP, RAR dan TXT dalam satu pembaca. Anda boleh menyimpan seluruh perpustakaan buku dan komik dalam satu app dengan sistem import yang sama untuk semua format.

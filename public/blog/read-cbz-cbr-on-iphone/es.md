@@ -1,5 +1,7 @@
 # Cómo leer cómics CBZ y CBR en el iPhone
 
+BiblioFuse te permite leer archivos de comic CBZ y CBR en iPhone e iPad con iOS 17 o posterior sin necesidad de conversion. Los archivos se abren directamente desde la app Archivos o se transfieren de forma inalambrica a traves de la funcion Wi-Fi Transfer incorporada, que mueve toda una serie de manga de tu Mac al iPhone en minutos sin cable ni iTunes.
+
 Encontraste un archivo CBZ o CBR —un capítulo de manga, una novela gráfica, un cómic escaneado— y lo abriste en tu iPhone. No pasó nada. Ninguna aplicación se ofreció a abrirlo. No eres el único.
 
 iOS no tiene soporte nativo para archivos CBZ o CBR. La aplicación Libros de Apple gestiona EPUB y PDF, pero ignora completamente los formatos de cómics basados en archivos comprimidos. Para leer esos archivos correctamente en tu iPhone, necesitas una aplicación especializada. [BiblioFuse](/es/) está diseñado exactamente para esto — lee CBZ, CBR, ZIP, RAR, EPUB, PDF y TXT, con un lector pensado para sesiones largas y colecciones grandes.
@@ -106,3 +108,21 @@ Cuando importas varios volúmenes de la misma serie, BiblioFuse los agrupa por c
 ## Qué sigue
 
 Una vez que tu primera serie esté importada, explora lo que más puede hacer [BiblioFuse](/es/). La pestaña Herramientas gestiona la compresión y conversión directamente en el dispositivo.
+
+
+## Preguntas frecuentes
+
+**Como abro archivos CBZ en el iPhone?**
+Instala BiblioFuse desde el App Store. Toca cualquier archivo CBZ en el app Archivos o via un enlace de descarga y iOS mostrara Abrir con BiblioFuse. Tambien puedes usar Wi-Fi Transfer: en BiblioFuse, ve a Configuracion -> Importar por Wi-Fi, activa el servidor y visita la URL en el navegador de tu PC para arrastrar los archivos.
+
+**Puede el iPhone leer archivos CBR de forma nativa?**
+No de forma nativa, iOS no tiene soporte integrado para CBZ ni CBR. Necesitas una app dedicada. BiblioFuse lee CBZ, CBR, ZIP y RAR de forma nativa en iOS 17 o posterior sin ningun paso de conversion.
+
+**Cual es la diferencia entre CBZ y CBR?**
+CBZ es un archivo ZIP renombrado que contiene imagenes de comic. CBR es un archivo RAR renombrado. El contenido es identico y solo difiere el metodo de compresion. BiblioFuse lee ambos directamente.
+
+**Puede BiblioFuse leer archivos CBZ grandes sin quedarse sin memoria?**
+Si. BiblioFuse carga solo las paginas que necesita mostrar. Los archivos CBZ de 500 MB o mas funcionan bien y solo la pagina actual y las adyacentes se mantienen en memoria.
+
+**Como transfiero una serie de manga completa al iPhone sin iTunes?**
+Usa Wi-Fi Transfer. En BiblioFuse, ve a Configuracion -> Importar por Wi-Fi y activa el servidor. Visita la URL mostrada en el navegador del PC, luego arrastra toda la carpeta de la serie a la ventana del navegador. BiblioFuse recibe los archivos y los agrega a la biblioteca automaticamente.
