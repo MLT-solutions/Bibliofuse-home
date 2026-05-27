@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "merge-epub-files-online": {
+          "title": "複数のEPUBファイルを1つに結合する方法（オンライン・プライベート・無料）",
+          "excerpt": "BiblioFuse Webツールは、複数のEPUBファイルをブラウザ上で完全に処理し、1冊の電子書籍に結合します。ソフトウェアのインストール不要、アカウント登録不要、ファイルがサーバーにアップロードされることも一切ありません。"
+        },
+        "compress-epub-online": {
+          "title": "EPUBファイルをオンラインで圧縮・最適化する方法——品質を落とさずにファイルサイズを削減",
+          "excerpt": "BiblioFuse ウェブツールは、EPUBファイルをブラウザ上で直接圧縮・最適化します。ソフトのインストール不要、アカウント登録不要、ファイルのアップロードも一切不要です。"
+        },
         "archive-duplicate-scanner-language-update": {
           "title": "Archive Duplicate Scanner がポルトガル語、スペイン語、インドネシア語、中国語に対応",
           "excerpt": "Archive Duplicate Scanner がポルトガル語、スペイン語、Bahasa Indonesia、簡体字中国語の完全UIサポートを追加。知覚ハッシュを使用してマンガアーカイブや写真の重複を検出。MacとWindows向けに無料で利用可能。"

@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'merge-epub-files-online',
+    date: '2026-05-27',
+    tags: ['guide'],
+    coverImage: '/image/blog/Merge EPUB Files Online.jpg',
+  },
+  {
+    slug: 'compress-epub-online',
+    date: '2026-05-27',
+    tags: ['guide', 'tips'],
+    coverImage: '/image/blog/Compress EPUB Online.jpg',
+  },
+  {
     slug: 'archive-duplicate-scanner-language-update',
     date: '2026-05-27',
     tags: ['Archive Duplicate Scanner', 'Update', 'Languages'],

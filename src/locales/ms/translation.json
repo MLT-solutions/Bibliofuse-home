@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "merge-epub-files-online": {
+          "title": "Cara Menggabungkan Beberapa Fail EPUB Menjadi Satu (Dalam Talian, Peribadi, Percuma)",
+          "excerpt": "BiblioFuse Web Tool menggabungkan beberapa fail EPUB menjadi satu buku elektronik sepenuhnya dalam pelayar anda — tanpa perlu memasang perisian, tanpa akaun, dan fail anda tidak pernah dimuat naik ke mana-mana pelayan."
+        },
+        "compress-epub-online": {
+          "title": "Cara Mampat Fail EPUB Dalam Talian Tanpa Kehilangan Kualiti Bacaan",
+          "excerpt": "BiblioFuse Web Tool memampatkan dan mengoptimumkan fail EPUB terus dalam pelayar anda — tanpa perisian, tanpa akaun, dan tanpa perlu memuat naik fail. Seret EPUB ke alat, tetapkan tahap pemampatan, dan muat turun fail yang lebih kecil dalam beberapa saat."
+        },
         "archive-duplicate-scanner-language-update": {
           "title": "Archive Duplicate Scanner Kini Tersedia dalam Portugis, Sepanyol, Indonesia, dan Cina",
           "excerpt": "Archive Duplicate Scanner menambah sokongan UI penuh untuk Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah. Cari arkib komik dan foto duplikat dengan penghashing perseptual — percuma untuk Mac dan Windows."

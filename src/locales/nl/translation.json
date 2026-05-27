@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "merge-epub-files-online": {
+          "title": "Meerdere EPUB-bestanden samenvoegen tot één (online, privé en gratis)",
+          "excerpt": "De BiblioFuse Web Tool voegt meerdere EPUB-bestanden samen tot één enkel e-boek, volledig in je browser — zonder software te installeren, zonder account en zonder dat je bestanden ooit naar een server worden geüpload."
+        },
+        "compress-epub-online": {
+          "title": "EPUB-bestanden online comprimeren zonder kwaliteitsverlies",
+          "excerpt": "De BiblioFuse Web Tool comprimeert en optimaliseert EPUB-bestanden direct in je browser — zonder software, account of bestandsupload. Sleep je EPUB naar de tool, stel een compressieniveau in en download het kleinere bestand binnen enkele seconden."
+        },
         "archive-duplicate-scanner-language-update": {
           "title": "Archive Duplicate Scanner nu beschikbaar in Portugees, Spaans, Indonesisch en Chinees",
           "excerpt": "Archive Duplicate Scanner voegt volledige UI-ondersteuning toe voor Portugees, Spaans, Bahasa Indonesia en Vereenvoudigd Chinees. Vind dubbele stripboekarchiven en foto's met perceptuele hashing — gratis voor Mac en Windows."

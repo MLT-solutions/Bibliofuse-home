@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "merge-epub-files-online": {
+          "title": "Cómo combinar varios archivos EPUB en uno (online, privado y gratis)",
+          "excerpt": "La herramienta web BiblioFuse combina varios archivos EPUB en un único libro electrónico directamente en tu navegador — sin instalar software, sin crear cuenta y sin que tus archivos se suban a ningún servidor."
+        },
+        "compress-epub-online": {
+          "title": "Cómo comprimir archivos EPUB en línea sin perder calidad de lectura",
+          "excerpt": "La herramienta web BiblioFuse comprime y optimiza archivos EPUB directamente en tu navegador, sin necesidad de software, cuenta o carga de archivos. Arrastra tu EPUB, elige un nivel de compresión y descarga el archivo más pequeño en segundos."
+        },
         "archive-duplicate-scanner-language-update": {
           "title": "Archive Duplicate Scanner ya disponible en Portugués, Español, Indonesio y Chino",
           "excerpt": "Archive Duplicate Scanner añade soporte completo de interfaz para Portugués, Español, Bahasa Indonesia y Chino Simplificado. Encuentra archivos de cómics y fotos duplicados con hashing perceptual — gratis para Mac y Windows."

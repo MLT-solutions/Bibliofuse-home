@@ -47,8 +47,8 @@ This file is the source of truth for the daily article agent.
 |---|--------|------|---------------|---------|
 | 11 | ✅ | `convert-pdf-to-cbz-online` | How to Convert PDF to CBZ Online (No Software, No Upload) | BiblioFuse Web |
 | 12 | ✅ | `merge-cbz-files-online` | How to Merge Multiple CBZ Files Into One — Free Online Tool | BiblioFuse Web |
-| 13 | ⬜ | `compress-epub-online` | Compress and Optimize EPUB Files Online Without Losing Quality | BiblioFuse Web |
-| 14 | ⬜ | `merge-epub-files-online` | How to Merge Multiple EPUB Files Into One (Online, Private, Free) | BiblioFuse Web |
+| 13 | ✅ | `compress-epub-online` | Compress and Optimize EPUB Files Online Without Losing Quality | BiblioFuse Web |
+| 14 | ✅ | `merge-epub-files-online` | How to Merge Multiple EPUB Files Into One (Online, Private, Free) | BiblioFuse Web |
 | 15 | ⬜ | `privacy-first-ebook-tools` | Why Privacy Matters for Ebook Tools — And How WASM Changes Everything | BiblioFuse Web |
 
 ---
