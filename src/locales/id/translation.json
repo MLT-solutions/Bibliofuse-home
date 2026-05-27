@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "archive-duplicate-scanner-language-update": {
+          "title": "Archive Duplicate Scanner Kini Tersedia dalam Bahasa Portugis, Spanyol, Indonesia, dan Cina",
+          "excerpt": "Archive Duplicate Scanner menambahkan dukungan UI penuh untuk Bahasa Portugis, Spanyol, Indonesia, dan Cina Sederhana — aplikasi kini berbicara dalam bahasa Anda secara native. Temukan arsip komik dan foto duplikat dengan perceptual hashing, gratis untuk Mac dan Windows."
+        },
         "merge-cbz-files-online": {
           "title": "Cara Menggabungkan Beberapa File CBZ Menjadi Satu — Alat Online Gratis",
           "excerpt": "Gabungkan chapter CBZ menjadi satu volume langsung di browser. Tanpa unggah file, tanpa instalasi — BiblioFuse Web Tool menggabungkan secara gratis."

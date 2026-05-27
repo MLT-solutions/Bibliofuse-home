@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "archive-duplicate-scanner-language-update": {
+          "title": "Archive Duplicate Scanner nu beschikbaar in Portugees, Spaans, Indonesisch en Chinees",
+          "excerpt": "Archive Duplicate Scanner voegt volledige UI-ondersteuning toe voor Portugees, Spaans, Bahasa Indonesia en Vereenvoudigd Chinees. Vind dubbele stripboekarchiven en foto's met perceptuele hashing — gratis voor Mac en Windows."
+        },
         "merge-cbz-files-online": {
           "title": "Meerdere CBZ-bestanden samenvoegen — Gratis online tool",
           "excerpt": "Combineer CBZ-hoofdstukken tot één volume rechtstreeks in je browser. Geen upload, geen software — de BiblioFuse Web Tool voegt gratis samen."

@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "archive-duplicate-scanner-language-update": {
+          "title": "Archive Duplicate Scanner 이제 포르투갈어, 스페인어, 인도네시아어, 중국어 지원",
+          "excerpt": "Archive Duplicate Scanner가 포르투갈어, 스페인어, Bahasa Indonesia, 간체 중국어의 완전한 UI 지원을 추가했습니다. 지각적 해싱으로 중복 만화 아카이브와 사진을 찾으세요 — Mac과 Windows에서 무료로 사용 가능."
+        },
         "merge-cbz-files-online": {
           "title": "여러 CBZ 파일을 하나로 합치는 방법 — 무료 온라인 도구",
           "excerpt": "브라우저에서 바로 CBZ 챕터 파일들을 하나의 볼륨으로 합치세요. 업로드 불필요, 설치 불필요 — BiblioFuse 웹 툴이 무료로 처리합니다."

@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "archive-duplicate-scanner-language-update": {
+          "title": "Archive Duplicate Scanner 现已支持葡萄牙语、西班牙语、印度尼西亚语和简体中文",
+          "excerpt": "Archive Duplicate Scanner 新增葡萄牙语、西班牙语、印度尼西亚语和简体中文完整界面支持——应用程序现在原生支持您的语言。使用感知哈希查找重复漫画档案和照片，Mac 和 Windows 均可免费使用。"
+        },
         "merge-cbz-files-online": {
           "title": "如何在线将多个CBZ文件合并为一个——免费工具",
           "excerpt": "直接在浏览器中将多个CBZ章节合并为一卷。无需上传文件，无需安装软件——BiblioFuse网页工具免费完成合并。"

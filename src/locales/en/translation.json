@@ -194,6 +194,10 @@
         "update": "Update"
       },
       "posts": {
+        "archive-duplicate-scanner-language-update": {
+          "title": "Archive Duplicate Scanner Now Available in Portuguese, Spanish, Indonesian, and Chinese",
+          "excerpt": "Archive Duplicate Scanner adds full UI support for Portuguese, Spanish, Bahasa Indonesia, and Simplified Chinese. Find duplicate comic archives and photos with perceptual hashing — free on Mac and Windows."
+        },
         "merge-cbz-files-online": {
           "title": "How to Merge Multiple CBZ Files Into One — Free Online Tool",
           "excerpt": "Combine chapter-by-chapter CBZ files into a single volume entirely in your browser. No upload, no software — the BiblioFuse Web Tool merges CBZ, CBR, and ZIP archives for free."

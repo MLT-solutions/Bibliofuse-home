@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "archive-duplicate-scanner-language-update": {
+          "title": "Archive Duplicate Scanner Agora Disponível em Português, Espanhol, Indonésio e Chinês",
+          "excerpt": "Archive Duplicate Scanner adiciona suporte completo de interface para Português, Espanhol, Bahasa Indonesia e Chinês Simplificado — o aplicativo agora fala o seu idioma nativamente. Encontre arquivos de quadrinhos e fotos duplicados com hashing perceptual, grátis para Mac e Windows."
+        },
         "merge-cbz-files-online": {
           "title": "Como unir vários arquivos CBZ em um só — Ferramenta online gratuita",
           "excerpt": "Combine capítulos CBZ em um único volume diretamente no navegador. Sem envio de arquivos, sem software — a BiblioFuse Web Tool faz a fusão gratuitamente."

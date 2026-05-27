@@ -142,3 +142,26 @@ Required `CreatePostInput` fields:
 - Twitter/X: `#BiblioFuse #Comics #Manga` (2–3 max)
 - Instagram: 8–10 tags, always include `#BiblioFuse #Comics #Manga #iPhone #ReadingLife`
 - LinkedIn: no hashtags, professional tone
+
+### Article skill routine
+
+Configuration for the `/article` skill and the daily blog routine. This section overrides all skill defaults.
+
+### Paths
+- **Cover images:** `public/image/blog/{Title}.jpg` — note singular `image`, not `images`
+- **Article content:** `public/blog/{slug}/{lang}.md`
+- **Cover image public URL (after deploy):** `https://bibliofuse.com/image/blog/{Title}.jpg`
+
+### Registration checklist (every new article)
+1. Prepend entry to `src/data/articles.js` — fields: `slug`, `date`, `tags`, `coverImage`
+2. Prepend slug to `ARTICLE_SLUGS` in **both** `scripts/generate-sitemap.js` and `scripts/generate-static-routes.js`
+3. Add `redesign.blog.posts.{slug}` keys (`title` + `excerpt`) to all 11 `src/locales/{lang}/translation.json` files
+
+### Locales
+11 languages: `en es fr nl pt ru zh ja ko id ms`
+
+### Social (Buffer — Step 8 of /article skill)
+- **Article URL pattern:** `https://bibliofuse.com/en/blog/{slug}` (use locale prefix per post language if targeting multilingual audiences, but default to `/en/`)
+- **Cover image for posts:** use the live URL `https://bibliofuse.com/image/blog/{Title}.jpg` — no local file upload needed
+- **Hashtags:** `#BiblioFuse #Comics #Manga #eReader #EPUB #CBZ` — adjust per article topic
+- **Best post times (SGT/UTC+8):** Twitter 9am & 5pm · LinkedIn 8am & noon · Instagram 11am & 7pm · Facebook 1pm & 3pm

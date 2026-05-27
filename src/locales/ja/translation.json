@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "archive-duplicate-scanner-language-update": {
+          "title": "Archive Duplicate Scanner がポルトガル語、スペイン語、インドネシア語、中国語に対応",
+          "excerpt": "Archive Duplicate Scanner がポルトガル語、スペイン語、Bahasa Indonesia、簡体字中国語の完全UIサポートを追加。知覚ハッシュを使用してマンガアーカイブや写真の重複を検出。MacとWindows向けに無料で利用可能。"
+        },
         "merge-cbz-files-online": {
           "title": "複数のCBZファイルを1つに結合する方法——無料オンラインツール",
           "excerpt": "ブラウザ上でCBZの各章を1つのボリュームにまとめられます。ファイルのアップロード不要、ソフト不要——BiblioFuse Webツールが無料で対応。"

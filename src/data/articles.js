@@ -1,5 +1,11 @@
 export const articles = [
   {
+    slug: 'archive-duplicate-scanner-language-update',
+    date: '2026-05-27',
+    tags: ['Archive Duplicate Scanner', 'Update', 'Languages'],
+    coverImage: '/image/blog/4 New Languages.jpg',
+  },
+  {
     slug: 'merge-cbz-files-online',
     date: '2026-05-26',
     tags: ['guide'],
