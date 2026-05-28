@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "unlock-password-protected-pdf-iphone": {
+          "title": "如何在 iPhone 和 Mac 上解锁受密码保护的 PDF",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ 可以在 iPhone、iPad 和 Mac 上移除受保护 PDF 文件的密码，无需将您的文档发送至任何外部服务器。它还能解锁受密码保护的 ZIP 和 CBZ 压缩包，并可通过内置批量模式一次性解密多个文件。"
+        },
+        "privacy-first-ebook-tools": {
+          "title": "为什么电子书工具的隐私保护至关重要——WebAssembly 如何彻底改变一切",
+          "excerpt": "BiblioFuse 网页工具完全在浏览器内通过 WebAssembly 处理您的电子书和漫画文件——您的文件永远不会离开设备，也不会上传到任何服务器。它能够在完全保护隐私的前提下压缩、转换和合并 EPUB、CBZ 和 PDF 文件，无需账号，免费使用。"
+        },
         "merge-epub-files-online": {
           "title": "如何将多个EPUB文件合并为一个（在线、私密、免费）",
           "excerpt": "BiblioFuse网页工具可以将多个EPUB文件直接在浏览器中合并为一本完整的电子书——无需安装任何软件，无需注册账号，您的文件绝不会上传到任何服务器。"

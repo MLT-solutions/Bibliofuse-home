@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "unlock-password-protected-pdf-iphone": {
+          "title": "Comment Déverrouiller un PDF Protégé par Mot de Passe sur iPhone et Mac",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ supprime les mots de passe des fichiers PDF protégés sur iPhone, iPad et Mac sans envoyer vos documents vers aucun serveur externe. Il déverrouille également les archives ZIP et CBZ protégées par mot de passe, et peut déchiffrer plusieurs fichiers à la fois grâce au mode de déchiffrement par lot."
+        },
+        "privacy-first-ebook-tools": {
+          "title": "Pourquoi la confidentialité est essentielle pour les outils d'ebook — et comment WASM change tout",
+          "excerpt": "L'outil web BiblioFuse traite vos ebooks et vos fichiers de bandes dessinées entièrement dans votre navigateur grâce à WebAssembly — vos fichiers ne quittent jamais votre appareil et rien n'est jamais envoyé à un serveur. Il compresse, convertit et fusionne des fichiers EPUB, CBZ et PDF en toute confidentialité, et son utilisation est gratuite sans compte requis."
+        },
         "merge-epub-files-online": {
           "title": "Comment fusionner plusieurs fichiers EPUB en un seul (en ligne, privé et gratuit)",
           "excerpt": "L'outil web BiblioFuse fusionne plusieurs fichiers EPUB en un seul ebook directement dans votre navigateur — sans logiciel à installer, sans compte requis et sans que vos fichiers soient jamais envoyés sur un serveur."

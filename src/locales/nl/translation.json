@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "unlock-password-protected-pdf-iphone": {
+          "title": "Hoe Ontgrendel Je een Met Wachtwoord Beveiligd PDF op iPhone en Mac",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ verwijdert wachtwoorden uit beveiligde PDF-bestanden op iPhone, iPad en Mac zonder uw documenten naar een externe server te sturen. Het ontgrendelt ook met wachtwoord beveiligde ZIP- en CBZ-archieven en kan meerdere bestanden tegelijk ontsleutelen dankzij de ingebouwde batchmodus."
+        },
+        "privacy-first-ebook-tools": {
+          "title": "Waarom privacy belangrijk is bij ebook-tools — en hoe WASM alles verandert",
+          "excerpt": "De BiblioFuse Web Tool verwerkt je ebooks en stripbestanden volledig in je browser met WebAssembly — je bestanden verlaten nooit je apparaat en er wordt niets naar een server geüpload. Het comprimeert, converteert en voegt EPUB-, CBZ- en PDF-bestanden samen met volledige privacy, en het is gratis te gebruiken zonder account."
+        },
         "merge-epub-files-online": {
           "title": "Meerdere EPUB-bestanden samenvoegen tot één (online, privé en gratis)",
           "excerpt": "De BiblioFuse Web Tool voegt meerdere EPUB-bestanden samen tot één enkel e-boek, volledig in je browser — zonder software te installeren, zonder account en zonder dat je bestanden ooit naar een server worden geüpload."

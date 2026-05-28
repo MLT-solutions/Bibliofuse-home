@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "unlock-password-protected-pdf-iphone": {
+          "title": "Cara Membuka Kunci PDF Berpassword di iPhone dan Mac",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ menghapus password dari file PDF terproteksi di iPhone, iPad, dan Mac tanpa mengirimkan dokumen Anda ke server manapun. Aplikasi ini juga membuka kunci arsip ZIP dan CBZ yang dilindungi password, dan dapat mendekripsi beberapa file sekaligus menggunakan mode batch bawaan."
+        },
+        "privacy-first-ebook-tools": {
+          "title": "Mengapa Privasi Penting untuk Alat Ebook — dan Bagaimana WASM Mengubah Segalanya",
+          "excerpt": "BiblioFuse Web Tool memproses ebook dan file komik Anda sepenuhnya di dalam browser menggunakan WebAssembly — file Anda tidak pernah meninggalkan perangkat dan tidak ada yang pernah diunggah ke server. Alat ini mengompres, mengonversi, dan menggabungkan file EPUB, CBZ, dan PDF dengan privasi penuh, serta gratis digunakan tanpa perlu akun."
+        },
         "merge-epub-files-online": {
           "title": "Cara Menggabungkan Beberapa File EPUB Menjadi Satu (Online, Privat, Gratis)",
           "excerpt": "BiblioFuse Web Tool menggabungkan beberapa file EPUB menjadi satu ebook sepenuhnya di dalam browser Anda — tanpa perlu menginstal perangkat lunak, tanpa akun, dan file Anda tidak pernah diunggah ke server mana pun."

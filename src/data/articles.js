@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'unlock-password-protected-pdf-iphone',
+    date: '2026-05-28',
+    tags: ['guide', 'tips'],
+    coverImage: '/image/blog/Unlock Password Protected PDF.jpg',
+  },
+  {
+    slug: 'privacy-first-ebook-tools',
+    date: '2026-05-28',
+    tags: ['guide'],
+    coverImage: '/image/blog/Privacy First Ebook Tools.jpg',
+  },
+  {
     slug: 'merge-epub-files-online',
     date: '2026-05-27',
     tags: ['guide'],

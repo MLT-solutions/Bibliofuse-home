@@ -49,7 +49,7 @@ This file is the source of truth for the daily article agent.
 | 12 | ✅ | `merge-cbz-files-online` | How to Merge Multiple CBZ Files Into One — Free Online Tool | BiblioFuse Web |
 | 13 | ✅ | `compress-epub-online` | Compress and Optimize EPUB Files Online Without Losing Quality | BiblioFuse Web |
 | 14 | ✅ | `merge-epub-files-online` | How to Merge Multiple EPUB Files Into One (Online, Private, Free) | BiblioFuse Web |
-| 15 | ⬜ | `privacy-first-ebook-tools` | Why Privacy Matters for Ebook Tools — And How WASM Changes Everything | BiblioFuse Web |
+| 15 | ✅ | `privacy-first-ebook-tools` | Why Privacy Matters for Ebook Tools — And How WASM Changes Everything | BiblioFuse Web |
 
 ---
 
@@ -57,7 +57,7 @@ This file is the source of truth for the daily article agent.
 
 | # | Status | Slug | Title / Angle | Product |
 |---|--------|------|---------------|---------|
-| 16 | ⬜ | `unlock-password-protected-pdf-iphone` | How to Unlock a Password-Protected PDF on iPhone and Mac | SmartDecrypt |
+| 16 | ✅ | `unlock-password-protected-pdf-iphone` | How to Unlock a Password-Protected PDF on iPhone and Mac | SmartDecrypt |
 | 17 | ⬜ | `decrypt-password-protected-cbz-zip` | How to Open Password-Protected CBZ and ZIP Files on iPhone | SmartDecrypt |
 | 18 | ⬜ | `batch-decrypt-password-protected-files` | Batch Decrypt Multiple Password-Protected Files at Once | SmartDecrypt |
 | 19 | ⬜ | `pdf-zip-password-manager-profiles` | Save Passwords for CBZ and PDF Collections — Never Type Them Again | SmartDecrypt |

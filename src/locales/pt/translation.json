@@ -615,6 +615,14 @@
     },
     "blog": {
       "posts": {
+        "unlock-password-protected-pdf-iphone": {
+          "title": "Como Desbloquear um PDF com Senha no iPhone e no Mac",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ remove senhas de arquivos PDF protegidos no iPhone, iPad e Mac sem enviar seus documentos para nenhum servidor externo. Ele também desbloqueia arquivos ZIP e CBZ protegidos por senha e pode descriptografar vários arquivos de uma só vez com o modo em lote integrado."
+        },
+        "privacy-first-ebook-tools": {
+          "title": "Por que a privacidade importa em ferramentas de ebook — e como o WASM muda tudo",
+          "excerpt": "A BiblioFuse Web Tool processa seus ebooks e arquivos de quadrinhos inteiramente dentro do seu navegador usando WebAssembly — seus arquivos nunca saem do seu dispositivo e nada é enviado a um servidor. Ela comprime, converte e mescla arquivos EPUB, CBZ e PDF com privacidade completa, e é gratuita sem necessidade de conta."
+        },
         "merge-epub-files-online": {
           "title": "Como juntar vários arquivos EPUB em um só (online, privado e gratuito)",
           "excerpt": "A BiblioFuse Web Tool une vários arquivos EPUB em um único e-book diretamente no seu navegador — sem instalar software, sem criar conta e sem que seus arquivos sejam enviados a nenhum servidor."
