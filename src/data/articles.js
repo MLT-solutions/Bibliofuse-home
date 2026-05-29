@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'batch-decrypt-password-protected-files',
+    date: '2026-05-29',
+    tags: ['guide', 'tips', 'smartdecrypt'],
+    coverImage: '/image/blog/Batch Decrypt Files.jpg',
+  },
+  {
+    slug: 'decrypt-password-protected-cbz-zip',
+    date: '2026-05-29',
+    tags: ['guide', 'smartdecrypt'],
+    coverImage: '/image/blog/Open Protected CBZ ZIP.jpg',
+  },
+  {
     slug: 'read-manga-online-iphone',
     date: '2026-05-29',
     tags: ['manga', 'ios', 'reading'],

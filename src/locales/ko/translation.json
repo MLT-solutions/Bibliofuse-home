@@ -698,6 +698,14 @@
         "bibliofuse-tools-tab-guide": {
           "title": "BiblioFuse 도구 탭 가이드: iPhone에서 압축, 변환, 병합하기",
           "excerpt": "BiblioFuse의 도구 탭을 사용하면 큰 CBZ 파일을 압축하고, 형식을 변환하고, 챕터를 하나의 볼륨으로 병합할 수 있습니다 — 모두 iPhone에서, 컴퓨터 없이."
+        },
+        "decrypt-password-protected-cbz-zip": {
+          "title": "iPhone에서 비밀번호로 보호된 CBZ 및 ZIP 파일 여는 방법",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ는 파일을 서버에 업로드하지 않고 iPhone, iPad, Mac에서 비밀번호로 보호된 CBZ 및 ZIP 아카이브를 열 수 있습니다. 기기에서 만화 아카이브를 복호화한 후 BiblioFuse에서 열어 읽으세요."
+        },
+        "batch-decrypt-password-protected-files": {
+          "title": "비밀번호로 보호된 여러 파일을 한 번에 일괄 복호화하는 방법",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ는 iPhone, iPad, Mac에서 비밀번호로 보호된 여러 PDF, CBZ, ZIP 파일을 한 번에 복호화합니다. 파일을 선택하고 비밀번호 프로필을 적용하면 업로드 없이 기기에서 모두 처리됩니다."
         }
       }
     }

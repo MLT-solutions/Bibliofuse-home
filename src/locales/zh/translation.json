@@ -698,6 +698,14 @@
         "bibliofuse-tools-tab-guide": {
           "title": "使用 BiblioFuse 工具标签：在 iPhone 上压缩、转换和合并文件",
           "excerpt": "BiblioFuse 的工具标签让你在 iPhone 上直接压缩大型 CBZ 文件、转换格式、将章节合并为卷——无需电脑。"
+        },
+        "decrypt-password-protected-cbz-zip": {
+          "title": "如何在iPhone上打开受密码保护的CBZ和ZIP文件",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ可以在iPhone、iPad和Mac上打开受密码保护的CBZ和ZIP压缩包，无需将文件上传到任何服务器。在设备上解密漫画档案，然后在BiblioFuse中打开阅读。"
+        },
+        "batch-decrypt-password-protected-files": {
+          "title": "如何一次批量解密多个受密码保护的文件",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ可以在iPhone、iPad和Mac上一次性解密多个受密码保护的PDF、CBZ和ZIP文件。选择任意数量的文件，应用密码配置文件，应用程序即可在设备上处理所有文件，无需上传。"
         }
       }
     }

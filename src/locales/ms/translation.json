@@ -698,6 +698,14 @@
         "bibliofuse-tools-tab-guide": {
           "title": "Menggunakan Tab Alat BiblioFuse: Mampat, Tukar dan Gabung di iPhone",
           "excerpt": "Tab Alat BiblioFuse membolehkan anda memampatkan fail CBZ besar, menukar format dan menggabungkan bab menjadi jilid — semua pada iPhone anda, tanpa komputer."
+        },
+        "decrypt-password-protected-cbz-zip": {
+          "title": "Cara Membuka Fail CBZ dan ZIP yang Dilindungi Kata Laluan di iPhone",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ membuka arkib CBZ dan ZIP yang dilindungi kata laluan pada iPhone, iPad dan Mac tanpa memuat naik fail ke mana-mana pelayan. Sahsulit arkib komik pada peranti, kemudian buka dalam BiblioFuse untuk membaca."
+        },
+        "batch-decrypt-password-protected-files": {
+          "title": "Cara Menyahsulit Beberapa Fail yang Dilindungi Kata Laluan Sekaligus",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ menyahsulit beberapa fail PDF, CBZ dan ZIP yang dilindungi kata laluan dalam satu operasi pada iPhone, iPad dan Mac. Pilih fail, terapkan profil kata laluan, dan aplikasi memproses semuanya pada peranti tanpa muat naik."
         }
       }
     }

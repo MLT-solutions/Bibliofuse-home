@@ -698,6 +698,14 @@
         "bibliofuse-tools-tab-guide": {
           "title": "Usando la Pestaña Herramientas de BiblioFuse: Comprimir, Convertir y Fusionar en iPhone",
           "excerpt": "La pestaña Herramientas de BiblioFuse te permite comprimir archivos CBZ grandes, convertir entre formatos y fusionar capítulos en volúmenes — todo en tu iPhone, sin ordenador."
+        },
+        "decrypt-password-protected-cbz-zip": {
+          "title": "Cómo abrir archivos CBZ y ZIP protegidos con contraseña en iPhone",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ abre archivos CBZ y ZIP protegidos con contraseña en iPhone, iPad y Mac sin subir tus archivos a ningún servidor. Descifra archivos de cómics en el dispositivo y luego ábrelos en BiblioFuse."
+        },
+        "batch-decrypt-password-protected-files": {
+          "title": "Cómo descifrar varios archivos protegidos con contraseña a la vez",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ descifra múltiples archivos PDF, CBZ y ZIP protegidos con contraseña en una sola operación en iPhone, iPad y Mac. Selecciona cualquier número de archivos, aplica un perfil de contraseña y la app procesa todo en el dispositivo."
         }
       }
     }

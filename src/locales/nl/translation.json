@@ -698,6 +698,14 @@
         "bibliofuse-tools-tab-guide": {
           "title": "De BiblioFuse Hulpmiddelen-Tab: Comprimeren, Converteren en Samenvoegen op iPhone",
           "excerpt": "Het tabblad Hulpmiddelen van BiblioFuse laat je grote CBZ-bestanden comprimeren, formaten converteren en hoofdstukken samenvoegen tot volumes — allemaal op je iPhone, zonder computer."
+        },
+        "decrypt-password-protected-cbz-zip": {
+          "title": "Hoe open je wachtwoordbeveiligde CBZ- en ZIP-bestanden op iPhone",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ opent wachtwoordbeveiligde CBZ- en ZIP-archieven op iPhone, iPad en Mac zonder uw bestanden te uploaden naar een server. Ontsleutel comicbestanden op het apparaat en open ze daarna in BiblioFuse."
+        },
+        "batch-decrypt-password-protected-files": {
+          "title": "Hoe meerdere wachtwoordbeveiligde bestanden tegelijk ontsleutelen",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ ontsleutelt meerdere wachtwoordbeveiligde PDF-, CBZ- en ZIP-bestanden in één bewerking op iPhone, iPad en Mac. Selecteer bestanden, pas een wachtwoordprofiel toe en de app verwerkt alles op het apparaat zonder uploads."
         }
       }
     }
