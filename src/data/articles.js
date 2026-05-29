@@ -1,5 +1,11 @@
 export const articles = [
   {
+    slug: 'read-manga-online-iphone',
+    date: '2026-05-29',
+    tags: ['manga', 'ios', 'reading'],
+    coverImage: '/image/blog/Read Manga Without Losing Your Place.jpg',
+  },
+  {
     slug: 'unlock-password-protected-pdf-iphone',
     date: '2026-05-28',
     tags: ['guide', 'tips'],

@@ -615,6 +615,10 @@
     },
     "blog": {
       "posts": {
+        "read-manga-online-iphone": {
+          "title": "iPhoneでオンライン漫画を読んでいて場所を見失わない方法",
+          "excerpt": "ContentCueはポップアップ広告が漫画の読書セッションを中断する前にスクロール位置を自動保存するiOSブラウザです——「再開」をタップすれば、Webtoons、Tapas、またはどの漫画サイトでも、ちょうど読んでいた場所に戻れます。ローカルのCBZ・CBR・EPUBコレクションには、BiblioFuseがすべての巻の正確なページを記憶するiPhone専用の読書アプリです。"
+        },
         "unlock-password-protected-pdf-iphone": {
           "title": "iPhoneとMacでパスワード保護されたPDFを解除する方法",
           "excerpt": "SmartDecrypt PDF ZIP CBZは、iPhone・iPad・Mac上でパスワード保護されたPDFファイルから保護を取り除くアプリで、ドキュメントを外部サーバーへ送信することはありません。パスワードで保護されたZIPおよびCBZアーカイブの解除にも対応し、内蔵のバッチモードで複数ファイルを一括して復号することができます。"

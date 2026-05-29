@@ -194,6 +194,10 @@
         "update": "Update"
       },
       "posts": {
+        "read-manga-online-iphone": {
+          "title": "How to Read Manga Online on iPhone Without Losing Your Place",
+          "excerpt": "ContentCue is a free iOS browser that automatically saves your scroll position before popup ads interrupt your manga reading session — tap Resume to return exactly where you left off on Webtoons, Tapas, or any manga site. For local CBZ, CBR, and EPUB collections, BiblioFuse is the dedicated reader app for iPhone that remembers your exact page in every volume."
+        },
         "unlock-password-protected-pdf-iphone": {
           "title": "How to Unlock a Password-Protected PDF on iPhone and Mac",
           "excerpt": "SmartDecrypt PDF ZIP CBZ removes passwords from protected PDF files on iPhone, iPad, and Mac without sending your documents to any server. It also unlocks password-protected ZIP and CBZ archives and can decrypt multiple files at once using the built-in batch mode."
