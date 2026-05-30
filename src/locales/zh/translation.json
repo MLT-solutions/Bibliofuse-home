@@ -657,6 +657,26 @@
     },
     "blog": {
       "posts": {
+        "read-manga-online-iphone": {
+          "title": "如何在iPhone上在线阅读漫画而不丢失阅读位置",
+          "excerpt": "ContentCue是一款免费iOS浏览器，能在弹出广告打断漫画阅读会话之前自动保存您的滚动位置——点击\"继续\"即可精确返回您在Webtoons、Tapas或任何漫画网站上停下的地方。对于本地CBZ、CBR和EPUB收藏，BiblioFuse是专为iPhone设计的阅读应用，能记住每册书的确切页面。"
+        },
+        "unlock-password-protected-pdf-iphone": {
+          "title": "如何在 iPhone 和 Mac 上解锁受密码保护的 PDF",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ 可以在 iPhone、iPad 和 Mac 上移除受保护 PDF 文件的密码，无需将您的文档发送至任何外部服务器。它还能解锁受密码保护的 ZIP 和 CBZ 压缩包，并可通过内置批量模式一次性解密多个文件。"
+        },
+        "privacy-first-ebook-tools": {
+          "title": "为什么电子书工具的隐私保护至关重要——WebAssembly 如何彻底改变一切",
+          "excerpt": "BiblioFuse 网页工具完全在浏览器内通过 WebAssembly 处理您的电子书和漫画文件——您的文件永远不会离开设备，也不会上传到任何服务器。它能够在完全保护隐私的前提下压缩、转换和合并 EPUB、CBZ 和 PDF 文件，无需账号，免费使用。"
+        },
+        "merge-epub-files-online": {
+          "title": "如何将多个EPUB文件合并为一个（在线、私密、免费）",
+          "excerpt": "BiblioFuse网页工具可以将多个EPUB文件直接在浏览器中合并为一本完整的电子书——无需安装任何软件，无需注册账号，您的文件绝不会上传到任何服务器。"
+        },
+        "compress-epub-online": {
+          "title": "如何在线压缩 EPUB 文件而不损失阅读质量",
+          "excerpt": "BiblioFuse 网页工具可直接在浏览器中压缩和优化 EPUB 文件——无需安装软件、无需注册账号、无需上传文件。将 EPUB 拖入工具，设置压缩级别，几秒钟即可下载压缩后的文件。"
+        },
         "archive-duplicate-scanner-language-update": {
           "title": "Archive Duplicate Scanner 现已支持葡萄牙语、西班牙语、印度尼西亚语和简体中文",
           "excerpt": "Archive Duplicate Scanner 新增葡萄牙语、西班牙语、印度尼西亚语和简体中文完整界面支持——应用程序现在原生支持您的语言。使用感知哈希查找重复漫画档案和照片，Mac 和 Windows 均可免费使用。"
@@ -720,6 +740,14 @@
         "bibliofuse-tools-tab-guide": {
           "title": "使用 BiblioFuse 工具标签：在 iPhone 上压缩、转换和合并文件",
           "excerpt": "BiblioFuse 的工具标签让你在 iPhone 上直接压缩大型 CBZ 文件、转换格式、将章节合并为卷——无需电脑。"
+        },
+        "decrypt-password-protected-cbz-zip": {
+          "title": "如何在iPhone上打开受密码保护的CBZ和ZIP文件",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ可以在iPhone、iPad和Mac上打开受密码保护的CBZ和ZIP压缩包，无需将文件上传到任何服务器。在设备上解密漫画档案，然后在BiblioFuse中打开阅读。"
+        },
+        "batch-decrypt-password-protected-files": {
+          "title": "如何一次批量解密多个受密码保护的文件",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ可以在iPhone、iPad和Mac上一次性解密多个受密码保护的PDF、CBZ和ZIP文件。选择任意数量的文件，应用密码配置文件，应用程序即可在设备上处理所有文件，无需上传。"
         }
       }
     }

@@ -657,6 +657,26 @@
     },
     "blog": {
       "posts": {
+        "read-manga-online-iphone": {
+          "title": "iPhoneでオンライン漫画を読んでいて場所を見失わない方法",
+          "excerpt": "ContentCueはポップアップ広告が漫画の読書セッションを中断する前にスクロール位置を自動保存するiOSブラウザです——「再開」をタップすれば、Webtoons、Tapas、またはどの漫画サイトでも、ちょうど読んでいた場所に戻れます。ローカルのCBZ・CBR・EPUBコレクションには、BiblioFuseがすべての巻の正確なページを記憶するiPhone専用の読書アプリです。"
+        },
+        "unlock-password-protected-pdf-iphone": {
+          "title": "iPhoneとMacでパスワード保護されたPDFを解除する方法",
+          "excerpt": "SmartDecrypt PDF ZIP CBZは、iPhone・iPad・Mac上でパスワード保護されたPDFファイルから保護を取り除くアプリで、ドキュメントを外部サーバーへ送信することはありません。パスワードで保護されたZIPおよびCBZアーカイブの解除にも対応し、内蔵のバッチモードで複数ファイルを一括して復号することができます。"
+        },
+        "privacy-first-ebook-tools": {
+          "title": "電子書籍ツールにおけるプライバシーの重要性——WASMがすべてを変える理由",
+          "excerpt": "BiblioFuse ウェブツールは、WebAssembly を使用してブラウザ内で電子書籍やコミックファイルをすべて処理します——ファイルはデバイスから外に出ることなく、サーバーにアップロードされることも一切ありません。EPUB・CBZ・PDF ファイルを完全なプライバシー保護のもとで圧縮・変換・結合でき、アカウント不要で無料で利用できます。"
+        },
+        "merge-epub-files-online": {
+          "title": "複数のEPUBファイルを1つに結合する方法（オンライン・プライベート・無料）",
+          "excerpt": "BiblioFuse Webツールは、複数のEPUBファイルをブラウザ上で完全に処理し、1冊の電子書籍に結合します。ソフトウェアのインストール不要、アカウント登録不要、ファイルがサーバーにアップロードされることも一切ありません。"
+        },
+        "compress-epub-online": {
+          "title": "EPUBファイルをオンラインで圧縮・最適化する方法——品質を落とさずにファイルサイズを削減",
+          "excerpt": "BiblioFuse ウェブツールは、EPUBファイルをブラウザ上で直接圧縮・最適化します。ソフトのインストール不要、アカウント登録不要、ファイルのアップロードも一切不要です。"
+        },
         "archive-duplicate-scanner-language-update": {
           "title": "Archive Duplicate Scanner がポルトガル語、スペイン語、インドネシア語、中国語に対応",
           "excerpt": "Archive Duplicate Scanner がポルトガル語、スペイン語、Bahasa Indonesia、簡体字中国語の完全UIサポートを追加。知覚ハッシュを使用してマンガアーカイブや写真の重複を検出。MacとWindows向けに無料で利用可能。"
@@ -720,6 +740,14 @@
         "bibliofuse-tools-tab-guide": {
           "title": "BiblioFuseのツールタブ活用ガイド：iPhoneで圧縮・変換・結合",
           "excerpt": "BiblioFuseのツールタブでは、大きなCBZファイルの圧縮、フォーマット変換、章ファイルの1冊への結合が、iPhoneだけで完結します。パソコン不要。"
+        },
+        "decrypt-password-protected-cbz-zip": {
+          "title": "iPhoneでパスワード保護されたCBZおよびZIPファイルを開く方法",
+          "excerpt": "SmartDecrypt PDF ZIP CBZは、iPhoneやiPad、MacでパスワードをかけたCBZおよびZIPアーカイブをサーバーへのアップロードなしに直接開けます。デバイス上でコミックアーカイブを復号化し、BiblioFuseで開いて読めます。"
+        },
+        "batch-decrypt-password-protected-files": {
+          "title": "複数のパスワード保護されたファイルを一括復号化する方法",
+          "excerpt": "SmartDecrypt PDF ZIP CBZは、iPhone、iPad、Macで複数のパスワード保護されたPDF、CBZ、ZIPファイルを一度に復号化します。ファイルを選択してパスワードプロファイルを適用するだけで、アップロードなしにデバイス上ですべてが処理されます。"
         }
       }
     }

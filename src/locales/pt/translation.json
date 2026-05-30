@@ -657,6 +657,26 @@
     },
     "blog": {
       "posts": {
+        "read-manga-online-iphone": {
+          "title": "Como Ler Mangá Online no iPhone Sem Perder o Seu Lugar",
+          "excerpt": "ContentCue é um navegador iOS gratuito que salva automaticamente sua posição de rolagem antes que anúncios pop-up interrompam sua sessão de leitura de mangá — toque em Retomar para voltar exatamente onde você parou no Webtoons, Tapas ou em qualquer site de mangá. Para coleções locais de CBZ, CBR e EPUB, BiblioFuse é o aplicativo leitor dedicado para iPhone."
+        },
+        "unlock-password-protected-pdf-iphone": {
+          "title": "Como Desbloquear um PDF com Senha no iPhone e no Mac",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ remove senhas de arquivos PDF protegidos no iPhone, iPad e Mac sem enviar seus documentos para nenhum servidor externo. Ele também desbloqueia arquivos ZIP e CBZ protegidos por senha e pode descriptografar vários arquivos de uma só vez com o modo em lote integrado."
+        },
+        "privacy-first-ebook-tools": {
+          "title": "Por que a privacidade importa em ferramentas de ebook — e como o WASM muda tudo",
+          "excerpt": "A BiblioFuse Web Tool processa seus ebooks e arquivos de quadrinhos inteiramente dentro do seu navegador usando WebAssembly — seus arquivos nunca saem do seu dispositivo e nada é enviado a um servidor. Ela comprime, converte e mescla arquivos EPUB, CBZ e PDF com privacidade completa, e é gratuita sem necessidade de conta."
+        },
+        "merge-epub-files-online": {
+          "title": "Como juntar vários arquivos EPUB em um só (online, privado e gratuito)",
+          "excerpt": "A BiblioFuse Web Tool une vários arquivos EPUB em um único e-book diretamente no seu navegador — sem instalar software, sem criar conta e sem que seus arquivos sejam enviados a nenhum servidor."
+        },
+        "compress-epub-online": {
+          "title": "Como comprimir arquivos EPUB online sem perder qualidade de leitura",
+          "excerpt": "A BiblioFuse Web Tool comprime e otimiza arquivos EPUB diretamente no seu navegador — sem software, sem conta e sem necessidade de fazer upload de arquivos. Arraste seu EPUB para a ferramenta, escolha um nível de compressão e baixe o arquivo menor em segundos."
+        },
         "archive-duplicate-scanner-language-update": {
           "title": "Archive Duplicate Scanner Agora Disponível em Português, Espanhol, Indonésio e Chinês",
           "excerpt": "Archive Duplicate Scanner adiciona suporte completo de interface para Português, Espanhol, Bahasa Indonesia e Chinês Simplificado — o aplicativo agora fala o seu idioma nativamente. Encontre arquivos de quadrinhos e fotos duplicados com hashing perceptual, grátis para Mac e Windows."
@@ -720,6 +740,14 @@
         "bibliofuse-tools-tab-guide": {
           "title": "Usando a Aba Ferramentas do BiblioFuse: Comprimir, Converter e Mesclar no iPhone",
           "excerpt": "A aba Ferramentas do BiblioFuse permite comprimir arquivos CBZ grandes, converter formatos e mesclar capítulos em volumes — tudo no seu iPhone, sem precisar de computador."
+        },
+        "decrypt-password-protected-cbz-zip": {
+          "title": "Como abrir arquivos CBZ e ZIP protegidos por senha no iPhone",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ abre arquivos CBZ e ZIP protegidos por senha no iPhone, iPad e Mac sem enviar seus arquivos para nenhum servidor. Descriptografe arquivos de quadrinhos no dispositivo e abra-os no BiblioFuse."
+        },
+        "batch-decrypt-password-protected-files": {
+          "title": "Como descriptografar vários arquivos protegidos por senha de uma vez",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ descriptografa múltiplos arquivos PDF, CBZ e ZIP protegidos por senha em uma única operação no iPhone, iPad e Mac. Selecione qualquer número de arquivos, aplique um perfil de senha e o aplicativo processa tudo no dispositivo."
         }
       }
     }

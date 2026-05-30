@@ -657,6 +657,26 @@
     },
     "blog": {
       "posts": {
+        "read-manga-online-iphone": {
+          "title": "Comment Lire du Manga en Ligne sur iPhone Sans Perdre Sa Page",
+          "excerpt": "ContentCue est un navigateur iOS gratuit qui enregistre automatiquement votre position de défilement avant que les publicités intempestives n'interrompent votre session de lecture — appuyez sur Reprendre pour revenir exactement là où vous étiez sur Webtoons, Tapas ou tout autre site de manga. Pour les collections locales CBZ, CBR et EPUB, BiblioFuse est l'application lectrice dédiée pour iPhone."
+        },
+        "unlock-password-protected-pdf-iphone": {
+          "title": "Comment Déverrouiller un PDF Protégé par Mot de Passe sur iPhone et Mac",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ supprime les mots de passe des fichiers PDF protégés sur iPhone, iPad et Mac sans envoyer vos documents vers aucun serveur externe. Il déverrouille également les archives ZIP et CBZ protégées par mot de passe, et peut déchiffrer plusieurs fichiers à la fois grâce au mode de déchiffrement par lot."
+        },
+        "privacy-first-ebook-tools": {
+          "title": "Pourquoi la confidentialité est essentielle pour les outils d'ebook — et comment WASM change tout",
+          "excerpt": "L'outil web BiblioFuse traite vos ebooks et vos fichiers de bandes dessinées entièrement dans votre navigateur grâce à WebAssembly — vos fichiers ne quittent jamais votre appareil et rien n'est jamais envoyé à un serveur. Il compresse, convertit et fusionne des fichiers EPUB, CBZ et PDF en toute confidentialité, et son utilisation est gratuite sans compte requis."
+        },
+        "merge-epub-files-online": {
+          "title": "Comment fusionner plusieurs fichiers EPUB en un seul (en ligne, privé et gratuit)",
+          "excerpt": "L'outil web BiblioFuse fusionne plusieurs fichiers EPUB en un seul ebook directement dans votre navigateur — sans logiciel à installer, sans compte requis et sans que vos fichiers soient jamais envoyés sur un serveur."
+        },
+        "compress-epub-online": {
+          "title": "Comment compresser des fichiers EPUB en ligne sans perdre la qualité de lecture",
+          "excerpt": "L'outil web BiblioFuse compresse et optimise les fichiers EPUB directement dans votre navigateur — sans logiciel, sans compte et sans téléchargement de fichiers. Déposez votre EPUB, choisissez un niveau de compression et téléchargez le fichier réduit en quelques secondes."
+        },
         "archive-duplicate-scanner-language-update": {
           "title": "Archive Duplicate Scanner maintenant disponible en Portugais, Espagnol, Indonésien et Chinois",
           "excerpt": "Archive Duplicate Scanner ajoute une prise en charge complète de l'interface pour le Portugais, l'Espagnol, le Bahasa Indonesia et le Chinois Simplifié. Trouvez les archives de bandes dessinées et photos en double avec le hachage perceptuel — gratuit sur Mac et Windows."
@@ -720,6 +740,14 @@
         "bibliofuse-tools-tab-guide": {
           "title": "Utiliser l'Onglet Outils de BiblioFuse : Compresser, Convertir et Fusionner sur iPhone",
           "excerpt": "L'onglet Outils de BiblioFuse vous permet de compresser des CBZ volumineux, de convertir des formats et de fusionner des chapitres en volumes — directement sur iPhone, sans ordinateur."
+        },
+        "decrypt-password-protected-cbz-zip": {
+          "title": "Comment ouvrir des fichiers CBZ et ZIP protégés par mot de passe sur iPhone",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ ouvre les archives CBZ et ZIP protégées par mot de passe sur iPhone, iPad et Mac sans envoyer vos fichiers vers un serveur. Déchiffrez les archives de bandes dessinées sur l'appareil, puis ouvrez-les dans BiblioFuse."
+        },
+        "batch-decrypt-password-protected-files": {
+          "title": "Comment déchiffrer plusieurs fichiers protégés par mot de passe en une seule fois",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ déchiffre plusieurs fichiers PDF, CBZ et ZIP protégés par mot de passe en une seule opération sur iPhone, iPad et Mac. Sélectionnez n'importe quel nombre de fichiers, appliquez un profil de mot de passe et l'application traite tout sur l'appareil."
         }
       }
     }

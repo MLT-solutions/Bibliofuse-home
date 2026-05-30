@@ -657,6 +657,26 @@
     },
     "blog": {
       "posts": {
+        "read-manga-online-iphone": {
+          "title": "Cara Membaca Manga Online di iPhone Tanpa Kehilangan Tempat Baca",
+          "excerpt": "ContentCue adalah pelayar iOS percuma yang secara automatik menyimpan kedudukan tatal anda sebelum iklan pop-up mengganggu sesi membaca manga — ketuk Sambung untuk kembali tepat di tempat anda berhenti di Webtoons, Tapas, atau mana-mana laman manga. Untuk koleksi CBZ, CBR, dan EPUB tempatan, BiblioFuse adalah aplikasi pembaca khusus untuk iPhone yang mengingati halaman tepat anda dalam setiap jilid."
+        },
+        "unlock-password-protected-pdf-iphone": {
+          "title": "Cara Membuka Kunci PDF Berlindung Kata Laluan di iPhone dan Mac",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ mengalih keluar kata laluan daripada fail PDF yang dilindungi di iPhone, iPad, dan Mac tanpa menghantar dokumen anda ke sebarang pelayan luar. Ia juga membuka kunci arkib ZIP dan CBZ yang dilindungi kata laluan, dan boleh menyahsulit beberapa fail serentak menggunakan mod kelompok terbina dalam."
+        },
+        "privacy-first-ebook-tools": {
+          "title": "Mengapa Privasi Penting untuk Alat Buku Elektronik — dan Bagaimana WASM Mengubah Segalanya",
+          "excerpt": "BiblioFuse Web Tool memproses buku elektronik dan fail komik anda sepenuhnya di dalam pelayar menggunakan WebAssembly — fail anda tidak pernah meninggalkan peranti dan tiada apa-apa yang dimuat naik ke pelayan. Ia memampatkan, menukar, dan menggabungkan fail EPUB, CBZ, dan PDF dengan privasi sepenuhnya, serta percuma digunakan tanpa perlu akaun."
+        },
+        "merge-epub-files-online": {
+          "title": "Cara Menggabungkan Beberapa Fail EPUB Menjadi Satu (Dalam Talian, Peribadi, Percuma)",
+          "excerpt": "BiblioFuse Web Tool menggabungkan beberapa fail EPUB menjadi satu buku elektronik sepenuhnya dalam pelayar anda — tanpa perlu memasang perisian, tanpa akaun, dan fail anda tidak pernah dimuat naik ke mana-mana pelayan."
+        },
+        "compress-epub-online": {
+          "title": "Cara Mampat Fail EPUB Dalam Talian Tanpa Kehilangan Kualiti Bacaan",
+          "excerpt": "BiblioFuse Web Tool memampatkan dan mengoptimumkan fail EPUB terus dalam pelayar anda — tanpa perisian, tanpa akaun, dan tanpa perlu memuat naik fail. Seret EPUB ke alat, tetapkan tahap pemampatan, dan muat turun fail yang lebih kecil dalam beberapa saat."
+        },
         "archive-duplicate-scanner-language-update": {
           "title": "Archive Duplicate Scanner Kini Tersedia dalam Portugis, Sepanyol, Indonesia, dan Cina",
           "excerpt": "Archive Duplicate Scanner menambah sokongan UI penuh untuk Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah. Cari arkib komik dan foto duplikat dengan penghashing perseptual — percuma untuk Mac dan Windows."
@@ -720,6 +740,14 @@
         "bibliofuse-tools-tab-guide": {
           "title": "Menggunakan Tab Alat BiblioFuse: Mampat, Tukar dan Gabung di iPhone",
           "excerpt": "Tab Alat BiblioFuse membolehkan anda memampatkan fail CBZ besar, menukar format dan menggabungkan bab menjadi jilid — semua pada iPhone anda, tanpa komputer."
+        },
+        "decrypt-password-protected-cbz-zip": {
+          "title": "Cara Membuka Fail CBZ dan ZIP yang Dilindungi Kata Laluan di iPhone",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ membuka arkib CBZ dan ZIP yang dilindungi kata laluan pada iPhone, iPad dan Mac tanpa memuat naik fail ke mana-mana pelayan. Sahsulit arkib komik pada peranti, kemudian buka dalam BiblioFuse untuk membaca."
+        },
+        "batch-decrypt-password-protected-files": {
+          "title": "Cara Menyahsulit Beberapa Fail yang Dilindungi Kata Laluan Sekaligus",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ menyahsulit beberapa fail PDF, CBZ dan ZIP yang dilindungi kata laluan dalam satu operasi pada iPhone, iPad dan Mac. Pilih fail, terapkan profil kata laluan, dan aplikasi memproses semuanya pada peranti tanpa muat naik."
         }
       }
     }

@@ -1,5 +1,47 @@
 export const articles = [
   {
+    slug: 'batch-decrypt-password-protected-files',
+    date: '2026-05-29',
+    tags: ['guide', 'tips', 'smartdecrypt'],
+    coverImage: '/image/blog/Batch Decrypt Files.jpg',
+  },
+  {
+    slug: 'decrypt-password-protected-cbz-zip',
+    date: '2026-05-29',
+    tags: ['guide', 'smartdecrypt'],
+    coverImage: '/image/blog/Open Protected CBZ ZIP.jpg',
+  },
+  {
+    slug: 'read-manga-online-iphone',
+    date: '2026-05-29',
+    tags: ['manga', 'ios', 'reading'],
+    coverImage: '/image/blog/Read Manga Without Losing Your Place.jpg',
+  },
+  {
+    slug: 'unlock-password-protected-pdf-iphone',
+    date: '2026-05-28',
+    tags: ['guide', 'tips'],
+    coverImage: '/image/blog/Unlock Password Protected PDF.jpg',
+  },
+  {
+    slug: 'privacy-first-ebook-tools',
+    date: '2026-05-28',
+    tags: ['guide'],
+    coverImage: '/image/blog/Privacy First Ebook Tools.jpg',
+  },
+  {
+    slug: 'merge-epub-files-online',
+    date: '2026-05-27',
+    tags: ['guide'],
+    coverImage: '/image/blog/Merge EPUB Files Online.jpg',
+  },
+  {
+    slug: 'compress-epub-online',
+    date: '2026-05-27',
+    tags: ['guide', 'tips'],
+    coverImage: '/image/blog/Compress EPUB Online.jpg',
+  },
+  {
     slug: 'archive-duplicate-scanner-language-update',
     date: '2026-05-27',
     tags: ['Archive Duplicate Scanner', 'Update', 'Languages'],

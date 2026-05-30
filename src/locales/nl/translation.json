@@ -657,6 +657,26 @@
     },
     "blog": {
       "posts": {
+        "read-manga-online-iphone": {
+          "title": "Hoe Lees Je Online Manga op iPhone Zonder Je Plek te Verliezen",
+          "excerpt": "ContentCue is een gratis iOS-browser die automatisch je scrollpositie opslaat voordat pop-upadvertenties je mangasessie onderbreken — tik op Hervatten om precies terug te keren waar je was op Webtoons, Tapas of een andere mangasite. Voor lokale CBZ-, CBR- en EPUB-collecties is BiblioFuse de dedicated lezer-app voor iPhone."
+        },
+        "unlock-password-protected-pdf-iphone": {
+          "title": "Hoe Ontgrendel Je een Met Wachtwoord Beveiligd PDF op iPhone en Mac",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ verwijdert wachtwoorden uit beveiligde PDF-bestanden op iPhone, iPad en Mac zonder uw documenten naar een externe server te sturen. Het ontgrendelt ook met wachtwoord beveiligde ZIP- en CBZ-archieven en kan meerdere bestanden tegelijk ontsleutelen dankzij de ingebouwde batchmodus."
+        },
+        "privacy-first-ebook-tools": {
+          "title": "Waarom privacy belangrijk is bij ebook-tools — en hoe WASM alles verandert",
+          "excerpt": "De BiblioFuse Web Tool verwerkt je ebooks en stripbestanden volledig in je browser met WebAssembly — je bestanden verlaten nooit je apparaat en er wordt niets naar een server geüpload. Het comprimeert, converteert en voegt EPUB-, CBZ- en PDF-bestanden samen met volledige privacy, en het is gratis te gebruiken zonder account."
+        },
+        "merge-epub-files-online": {
+          "title": "Meerdere EPUB-bestanden samenvoegen tot één (online, privé en gratis)",
+          "excerpt": "De BiblioFuse Web Tool voegt meerdere EPUB-bestanden samen tot één enkel e-boek, volledig in je browser — zonder software te installeren, zonder account en zonder dat je bestanden ooit naar een server worden geüpload."
+        },
+        "compress-epub-online": {
+          "title": "EPUB-bestanden online comprimeren zonder kwaliteitsverlies",
+          "excerpt": "De BiblioFuse Web Tool comprimeert en optimaliseert EPUB-bestanden direct in je browser — zonder software, account of bestandsupload. Sleep je EPUB naar de tool, stel een compressieniveau in en download het kleinere bestand binnen enkele seconden."
+        },
         "archive-duplicate-scanner-language-update": {
           "title": "Archive Duplicate Scanner nu beschikbaar in Portugees, Spaans, Indonesisch en Chinees",
           "excerpt": "Archive Duplicate Scanner voegt volledige UI-ondersteuning toe voor Portugees, Spaans, Bahasa Indonesia en Vereenvoudigd Chinees. Vind dubbele stripboekarchiven en foto's met perceptuele hashing — gratis voor Mac en Windows."
@@ -720,6 +740,14 @@
         "bibliofuse-tools-tab-guide": {
           "title": "De BiblioFuse Hulpmiddelen-Tab: Comprimeren, Converteren en Samenvoegen op iPhone",
           "excerpt": "Het tabblad Hulpmiddelen van BiblioFuse laat je grote CBZ-bestanden comprimeren, formaten converteren en hoofdstukken samenvoegen tot volumes — allemaal op je iPhone, zonder computer."
+        },
+        "decrypt-password-protected-cbz-zip": {
+          "title": "Hoe open je wachtwoordbeveiligde CBZ- en ZIP-bestanden op iPhone",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ opent wachtwoordbeveiligde CBZ- en ZIP-archieven op iPhone, iPad en Mac zonder uw bestanden te uploaden naar een server. Ontsleutel comicbestanden op het apparaat en open ze daarna in BiblioFuse."
+        },
+        "batch-decrypt-password-protected-files": {
+          "title": "Hoe meerdere wachtwoordbeveiligde bestanden tegelijk ontsleutelen",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ ontsleutelt meerdere wachtwoordbeveiligde PDF-, CBZ- en ZIP-bestanden in één bewerking op iPhone, iPad en Mac. Selecteer bestanden, pas een wachtwoordprofiel toe en de app verwerkt alles op het apparaat zonder uploads."
         }
       }
     }
