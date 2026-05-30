@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'find-duplicate-comics-cbz-mac',
+    date: '2026-05-30',
+    tags: ['guide', 'mac'],
+    coverImage: '/image/blog/Find Duplicate Comics Mac.jpg',
+  },
+  {
+    slug: 'pdf-zip-password-manager-profiles',
+    date: '2026-05-30',
+    tags: ['guide', 'tips', 'smartdecrypt'],
+    coverImage: '/image/blog/PDF ZIP Password Profiles.jpg',
+  },
+  {
     slug: 'batch-decrypt-password-protected-files',
     date: '2026-05-29',
     tags: ['guide', 'tips', 'smartdecrypt'],

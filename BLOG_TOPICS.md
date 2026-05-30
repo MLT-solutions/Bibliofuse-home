@@ -60,7 +60,7 @@ This file is the source of truth for the daily article agent.
 | 16 | ✅ | `unlock-password-protected-pdf-iphone` | How to Unlock a Password-Protected PDF on iPhone and Mac | SmartDecrypt |
 | 17 | ✅ | `decrypt-password-protected-cbz-zip` | How to Open Password-Protected CBZ and ZIP Files on iPhone | SmartDecrypt |
 | 18 | ✅ | `batch-decrypt-password-protected-files` | Batch Decrypt Multiple Password-Protected Files at Once | SmartDecrypt |
-| 19 | ⬜ | `pdf-zip-password-manager-profiles` | Save Passwords for CBZ and PDF Collections — Never Type Them Again | SmartDecrypt |
+| 19 | ✅ | `pdf-zip-password-manager-profiles` | Save Passwords for CBZ and PDF Collections — Never Type Them Again | SmartDecrypt |
 
 ---
 
@@ -68,7 +68,7 @@ This file is the source of truth for the daily article agent.
 
 | # | Status | Slug | Title / Angle | Product |
 |---|--------|------|---------------|---------|
-| 20 | ⬜ | `find-duplicate-comics-cbz-mac` | How to Find and Remove Duplicate CBZ Comic Files on Mac | Archive Duplicate Scanner |
+| 20 | ✅ | `find-duplicate-comics-cbz-mac` | How to Find and Remove Duplicate CBZ Comic Files on Mac | Archive Duplicate Scanner |
 | 21 | ⬜ | `clean-up-duplicate-manga-library` | How to Clean Up a Duplicate Manga Collection the Smart Way | Archive Duplicate Scanner |
 | 22 | ⬜ | `perceptual-hashing-duplicate-detection` | How Perceptual Hashing Finds Duplicate Comics Even After Renaming | Archive Duplicate Scanner |
 | 23 | ⬜ | `find-duplicate-photos-mac` | Find Duplicate Photos on Mac — Including HEIC, WebP, and RAW | Archive Duplicate Scanner |

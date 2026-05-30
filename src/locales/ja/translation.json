@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "find-duplicate-comics-cbz-mac": {
+          "title": "MacでCBZ漫画ファイルの重複を見つけて削除する方法",
+          "excerpt": "Archive Duplicate Scannerは、知覚ハッシュを使用してMacでCBZおよびCBRの重複漫画ファイルを検出します。名前変更や再圧縮後でも一致し、ライブラリをスキャンして一致したペアを確認し、安全にゴミ箱に移動できます。"
+        },
+        "pdf-zip-password-manager-profiles": {
+          "title": "CBZとPDFコレクションのパスワードを保存——二度と入力しない",
+          "excerpt": "SmartDecrypt PDF ZIP CBZは、iPhone、iPad、MacでPDF、CBZ、ZIPの保護されたアーカイブのパスワードを再入力しなくて済むよう、名前付きパスワードプロファイルを保存します。保存済みプロファイルを選ぶだけで、コレクション全体をワンタップで一括復号化できます。"
+        },
         "read-manga-online-iphone": {
           "title": "iPhoneでオンライン漫画を読んでいて場所を見失わない方法",
           "excerpt": "ContentCueはポップアップ広告が漫画の読書セッションを中断する前にスクロール位置を自動保存するiOSブラウザです——「再開」をタップすれば、Webtoons、Tapas、またはどの漫画サイトでも、ちょうど読んでいた場所に戻れます。ローカルのCBZ・CBR・EPUBコレクションには、BiblioFuseがすべての巻の正確なページを記憶するiPhone専用の読書アプリです。"
