@@ -180,7 +180,8 @@
       "readerSub": "iPhone · iPad · Mac · Android",
       "webSub": "浏览器内压缩",
       "archiveSub": "Mac · Windows",
-      "smartSub": "iPhone · iPad · Mac · Windows"
+      "smartSub": "iPhone · iPad · Mac · Windows",
+      "contentcueSub": "iPhone · iPad"
     },
     "common": {
       "noAds": "无广告",
@@ -407,6 +408,14 @@
           "bullet3": "密码存储在系统钥匙串中",
           "cta": "iOS · Mac App Store",
           "secondary": "Microsoft Store"
+        },
+        "contentcue": {
+          "tag": "仅限 iOS",
+          "desc": "轻量阅读浏览器，在任何中断后恢复您的滚动位置。",
+          "bullet1": "弹窗或跳转后一键恢复",
+          "bullet2": "阅读模式与自动滚动",
+          "bullet3": "书签 · 无需账号",
+          "cta": "App Store"
         }
       }
     },
@@ -552,6 +561,39 @@
         "unlocked": "已解锁",
         "matching": "匹配中",
         "queued": "排队中"
+      }
+    },
+    "contentcueSection": {
+      "badge": "姊妹应用 · iPhone 和 iPad",
+      "titleA": "浏览。被打断。",
+      "titleB": "从中断处精确恢复。",
+      "desc": "ContentCue 是专为长篇文章、文档、论坛和漫画设计的轻量阅读浏览器。弹窗、跳转和误触都无法夺走您的位置——一键即可回到原处。",
+      "features": {
+        "resume": {
+          "title": "一键恢复",
+          "body": "立即返回保存的滚动位置。"
+        },
+        "adOutlines": {
+          "title": "广告轮廓标记",
+          "body": "标记可能的广告元素，专注阅读。"
+        },
+        "mute": {
+          "title": "音频静音",
+          "body": "无需离开页面即可静音自动播放内容。"
+        },
+        "bookmarks": {
+          "title": "书签",
+          "body": "收藏页面以便回访——无需账号。"
+        }
+      },
+      "altBadge": "在 App Store 下载 ContentCue",
+      "pricing": "免费使用。ContentCue Pro 一次性购买价格为 $2.99：无限书签、自定义广告轮廓样式和可调节自动滚动。",
+      "langNote": "应用界面：英语 · 西班牙语 · 葡萄牙语 · 印尼语 · 简体中文",
+      "platformNote": "iPhone 和 iPad · Apple Silicon Mac（通过 App Store 安装 iOS 应用）",
+      "stats": {
+        "requires": "系统要求",
+        "oneTimePro": "一次性 Pro",
+        "appLangs": "应用语言"
       }
     },
     "privacyStrip": {

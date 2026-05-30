@@ -180,7 +180,8 @@
       "readerSub": "iPhone · iPad · Mac · Android",
       "webSub": "Pemampatan dalam pelayar",
       "archiveSub": "Mac · Windows",
-      "smartSub": "iPhone · iPad · Mac · Windows"
+      "smartSub": "iPhone · iPad · Mac · Windows",
+      "contentcueSub": "iPhone · iPad"
     },
     "common": {
       "noAds": "Tiada iklan",
@@ -407,6 +408,14 @@
           "bullet3": "Kata laluan disimpan dalam Rantai Kunci sistem",
           "cta": "iOS · Mac App Store",
           "secondary": "Microsoft Store"
+        },
+        "contentcue": {
+          "tag": "iOS Sahaja",
+          "desc": "Pelayar baca ringan yang memulihkan kedudukan tatal anda selepas sebarang gangguan.",
+          "bullet1": "Sambung semula dengan satu ketuk selepas popup atau ubah hala",
+          "bullet2": "Mod baca dengan tatal automatik",
+          "bullet3": "Penanda buku · Tiada akaun diperlukan",
+          "cta": "App Store"
         }
       }
     },
@@ -552,6 +561,39 @@
         "unlocked": "dibuka",
         "matching": "memadankan",
         "queued": "dalam giliran"
+      }
+    },
+    "contentcueSection": {
+      "badge": "Aplikasi adik-beradik · iPhone & iPad",
+      "titleA": "Layari. Diganggu.",
+      "titleB": "Sambung semula tepat di mana anda berhenti.",
+      "desc": "ContentCue ialah pelayar baca ringan untuk artikel panjang, dokumentasi, forum dan komik. Popup, ubah hala dan ketukan tidak sengaja tidak boleh mencuri tempat anda——satu ketuk membawa anda kembali.",
+      "features": {
+        "resume": {
+          "title": "Sambung semula satu ketuk",
+          "body": "Kembali ke kedudukan tatal yang disimpan serta-merta."
+        },
+        "adOutlines": {
+          "title": "Garisan iklan",
+          "body": "Menandakan elemen iklan untuk membaca tanpa gangguan."
+        },
+        "mute": {
+          "title": "Redam audio",
+          "body": "Redamkan audio yang dimainkan secara automatik tanpa meninggalkan halaman."
+        },
+        "bookmarks": {
+          "title": "Penanda buku",
+          "body": "Simpan halaman untuk dilawati semula——tiada akaun diperlukan."
+        }
+      },
+      "altBadge": "Muat turun ContentCue di App Store",
+      "pricing": "Percuma digunakan. ContentCue Pro ialah pembelian sekali gus $2.99: penanda buku tanpa had, gaya garisan iklan tersuai dan tatal automatik yang boleh dilaraskan.",
+      "langNote": "Antara muka aplikasi: Inggeris · Sepanyol · Portugis · Bahasa Indonesia · Cina Mudah",
+      "platformNote": "iPhone & iPad · Mac Apple Silicon (aplikasi iOS melalui App Store)",
+      "stats": {
+        "requires": "Memerlukan",
+        "oneTimePro": "Pro sekali beli",
+        "appLangs": "Bahasa aplikasi"
       }
     },
     "privacyStrip": {

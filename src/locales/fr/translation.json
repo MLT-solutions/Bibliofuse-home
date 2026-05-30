@@ -180,7 +180,8 @@
       "readerSub": "iPhone · iPad · Mac · Android",
       "webSub": "Compression dans le navigateur",
       "archiveSub": "Mac · Windows",
-      "smartSub": "iPhone · iPad · Mac · Windows"
+      "smartSub": "iPhone · iPad · Mac · Windows",
+      "contentcueSub": "iPhone · iPad"
     },
     "common": {
       "noAds": "Sans publicité",
@@ -407,6 +408,14 @@
           "bullet3": "Mots de passe stockés dans le Trousseau système",
           "cta": "iOS · Mac App Store",
           "secondary": "Microsoft Store"
+        },
+        "contentcue": {
+          "tag": "iOS uniquement",
+          "desc": "Navigateur de lecture léger qui restaure votre position après toute interruption.",
+          "bullet1": "Reprise en un tap après popups ou redirections",
+          "bullet2": "Mode lecture avec défilement automatique",
+          "bullet3": "Favoris · Aucun compte requis",
+          "cta": "App Store"
         }
       }
     },
@@ -552,6 +561,39 @@
         "unlocked": "déverrouillé",
         "matching": "en correspondance",
         "queued": "en attente"
+      }
+    },
+    "contentcueSection": {
+      "badge": "Application sœur · iPhone et iPad",
+      "titleA": "Naviguez. Soyez interrompu.",
+      "titleB": "Reprenez exactement là où vous vous étiez arrêté.",
+      "desc": "ContentCue est un navigateur de lecture léger pour les longs articles, la documentation, les forums et les BD. Les popups, redirections et frappes accidentelles ne peuvent pas vous faire perdre votre place — un tap vous y ramène.",
+      "features": {
+        "resume": {
+          "title": "Reprise en un tap",
+          "body": "Retourne instantanément à votre position sauvegardée."
+        },
+        "adOutlines": {
+          "title": "Contours des publicités",
+          "body": "Marque les éléments publicitaires pour une lecture sans distraction."
+        },
+        "mute": {
+          "title": "Couper le son",
+          "body": "Silence l'audio automatique sans quitter la page."
+        },
+        "bookmarks": {
+          "title": "Favoris",
+          "body": "Sauvegardez les pages à revisiter — sans compte requis."
+        }
+      },
+      "altBadge": "Télécharger ContentCue sur l'App Store",
+      "pricing": "Gratuit. ContentCue Pro est un achat unique à 2,99 $ : favoris illimités, styles de contours personnalisés et défilement automatique ajustable.",
+      "langNote": "Interface : Anglais · Espagnol · Portugais · Indonésien · Chinois simplifié",
+      "platformNote": "iPhone et iPad · Mac Apple Silicon (app iOS via App Store)",
+      "stats": {
+        "requires": "Nécessite",
+        "oneTimePro": "Pro unique",
+        "appLangs": "Langues de l'app"
       }
     },
     "privacyStrip": {

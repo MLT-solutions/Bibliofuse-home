@@ -264,7 +264,8 @@
       "readerSub": "iPhone · iPad · Mac · Android",
       "webSub": "In-browser compression",
       "archiveSub": "Mac · Windows",
-      "smartSub": "iPhone · iPad · Mac · Windows"
+      "smartSub": "iPhone · iPad · Mac · Windows",
+      "contentcueSub": "iPhone · iPad"
     },
     "common": {
       "noAds": "No ads",
@@ -491,6 +492,14 @@
           "bullet3": "Passwords stored in system Keychain",
           "cta": "iOS · Mac App Store",
           "secondary": "Microsoft Store"
+        },
+        "contentcue": {
+          "tag": "iOS Only",
+          "desc": "Lightweight reading browser that restores your scroll position after any interruption.",
+          "bullet1": "One-tap resume after popups or redirects",
+          "bullet2": "Reading Mode with auto-scroll",
+          "bullet3": "Bookmarks · No account needed",
+          "cta": "App Store"
         }
       }
     },
@@ -636,6 +645,39 @@
         "unlocked": "unlocked",
         "matching": "matching",
         "queued": "queued"
+      }
+    },
+    "contentcueSection": {
+      "badge": "Sister app · iPhone & iPad",
+      "titleA": "Browse. Get interrupted.",
+      "titleB": "Resume exactly where you left off.",
+      "desc": "ContentCue is a lightweight reading browser for long articles, documentation, forums, and comics. Popups, redirects, and accidental taps can't steal your place — one tap gets you back.",
+      "features": {
+        "resume": {
+          "title": "One-tap Resume",
+          "body": "Returns to your saved scroll position instantly."
+        },
+        "adOutlines": {
+          "title": "Visual ad outlines",
+          "body": "Marks likely ad elements for distraction-free reading."
+        },
+        "mute": {
+          "title": "Audio mute",
+          "body": "Silence auto-playing audio without leaving the page."
+        },
+        "bookmarks": {
+          "title": "Bookmarks",
+          "body": "Save pages to revisit — no account required."
+        }
+      },
+      "altBadge": "Download ContentCue on the App Store",
+      "pricing": "Free to use. ContentCue Pro is a $2.99 one-time purchase: unlimited bookmarks, custom ad outline styles, and adjustable auto-scroll.",
+      "langNote": "App UI: English · Spanish · Portuguese · Indonesian · Simplified Chinese",
+      "platformNote": "iPhone & iPad · Apple Silicon Mac (iOS app via App Store)",
+      "stats": {
+        "requires": "Requires",
+        "oneTimePro": "One-time Pro",
+        "appLangs": "App languages"
       }
     },
     "privacyStrip": {

@@ -180,7 +180,8 @@
       "readerSub": "iPhone · iPad · Mac · Android",
       "webSub": "Compressie in de browser",
       "archiveSub": "Mac · Windows",
-      "smartSub": "iPhone · iPad · Mac · Windows"
+      "smartSub": "iPhone · iPad · Mac · Windows",
+      "contentcueSub": "iPhone · iPad"
     },
     "common": {
       "noAds": "Geen advertenties",
@@ -407,6 +408,14 @@
           "bullet3": "Wachtwoorden opgeslagen in systeemsleutelhanger",
           "cta": "iOS · Mac App Store",
           "secondary": "Microsoft Store"
+        },
+        "contentcue": {
+          "tag": "Alleen iOS",
+          "desc": "Lichte leesnavigator die je scrolpositie herstelt na elke onderbreking.",
+          "bullet1": "Hervat met één tik na popups of omleidingen",
+          "bullet2": "Leesmodus met automatisch scrollen",
+          "bullet3": "Bladwijzers · Geen account nodig",
+          "cta": "App Store"
         }
       }
     },
@@ -552,6 +561,39 @@
         "unlocked": "ontgrendeld",
         "matching": "matchend",
         "queued": "in wachtrij"
+      }
+    },
+    "contentcueSection": {
+      "badge": "Zuster-app · iPhone en iPad",
+      "titleA": "Browsen. Onderbroken worden.",
+      "titleB": "Hervat precies waar je was gebleven.",
+      "desc": "ContentCue is een lichte leesnavigator voor lange artikelen, documentatie, forums en strips. Popups, omleidingen en onbedoelde tikken kunnen je plaats niet stelen — één tik brengt je terug.",
+      "features": {
+        "resume": {
+          "title": "Hervat met één tik",
+          "body": "Keert onmiddellijk terug naar je opgeslagen positie."
+        },
+        "adOutlines": {
+          "title": "Advertentiecontouren",
+          "body": "Markeert vermoedelijke advertentie-elementen voor afleidingvrij lezen."
+        },
+        "mute": {
+          "title": "Audio dempen",
+          "body": "Dempt automatisch afspelende audio zonder de pagina te verlaten."
+        },
+        "bookmarks": {
+          "title": "Bladwijzers",
+          "body": "Sla pagina's op om later terug te bezoeken — geen account nodig."
+        }
+      },
+      "altBadge": "Download ContentCue in de App Store",
+      "pricing": "Gratis te gebruiken. ContentCue Pro is een eenmalige aankoop van $2,99: onbeperkte bladwijzers, aangepaste advertentiecontourstijlen en instelbaar automatisch scrollen.",
+      "langNote": "App-interface: Engels · Spaans · Portugees · Indonesisch · Vereenvoudigd Chinees",
+      "platformNote": "iPhone en iPad · Apple Silicon Mac (iOS-app via App Store)",
+      "stats": {
+        "requires": "Vereist",
+        "oneTimePro": "Eenmalig Pro",
+        "appLangs": "App-talen"
       }
     },
     "privacyStrip": {

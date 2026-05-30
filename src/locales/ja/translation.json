@@ -180,7 +180,8 @@
       "readerSub": "iPhone · iPad · Mac · Android",
       "webSub": "ブラウザ内圧縮",
       "archiveSub": "Mac · Windows",
-      "smartSub": "iPhone · iPad · Mac · Windows"
+      "smartSub": "iPhone · iPad · Mac · Windows",
+      "contentcueSub": "iPhone · iPad"
     },
     "common": {
       "noAds": "広告なし",
@@ -407,6 +408,14 @@
           "bullet3": "パスワードはシステムキーチェーンに保存",
           "cta": "iOS · Mac App Store",
           "secondary": "Microsoft Store"
+        },
+        "contentcue": {
+          "tag": "iOSのみ",
+          "desc": "中断後もスクロール位置を復元する軽量リーディングブラウザ。",
+          "bullet1": "ポップアップ後もワンタップで再開",
+          "bullet2": "自動スクロール付きリーディングモード",
+          "bullet3": "ブックマーク · アカウント不要",
+          "cta": "App Store"
         }
       }
     },
@@ -552,6 +561,39 @@
         "unlocked": "解除済み",
         "matching": "マッチング中",
         "queued": "待機中"
+      }
+    },
+    "contentcueSection": {
+      "badge": "姉妹アプリ · iPhone & iPad",
+      "titleA": "ブラウズ。中断される。",
+      "titleB": "中断した場所から正確に再開。",
+      "desc": "ContentCueは、長い記事、ドキュメント、フォーラム、マンガ向けの軽量リーディングブラウザです。ポップアップ、リダイレクト、誤タップがあっても読んでいた場所を奪われません——ワンタップで戻れます。",
+      "features": {
+        "resume": {
+          "title": "ワンタップ再開",
+          "body": "保存されたスクロール位置に即座に戻ります。"
+        },
+        "adOutlines": {
+          "title": "広告アウトライン",
+          "body": "広告要素をマークして集中して読めます。"
+        },
+        "mute": {
+          "title": "音声ミュート",
+          "body": "ページを離れずに自動再生音声をミュートします。"
+        },
+        "bookmarks": {
+          "title": "ブックマーク",
+          "body": "再訪するページを保存——アカウント不要。"
+        }
+      },
+      "altBadge": "App StoreでContentCueをダウンロード",
+      "pricing": "無料でご利用いただけます。ContentCue Proは$2.99の買い切り：無制限のブックマーク、カスタム広告アウトラインスタイル、調整可能な自動スクロール。",
+      "langNote": "アプリUI：英語 · スペイン語 · ポルトガル語 · インドネシア語 · 簡体字中国語",
+      "platformNote": "iPhone · iPad · Apple Silicon Mac（App StoreよりiOSアプリとして）",
+      "stats": {
+        "requires": "動作環境",
+        "oneTimePro": "Pro買い切り",
+        "appLangs": "対応言語数"
       }
     },
     "privacyStrip": {

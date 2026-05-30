@@ -180,7 +180,8 @@
       "readerSub": "iPhone · iPad · Mac · Android",
       "webSub": "브라우저 내 압축",
       "archiveSub": "Mac · Windows",
-      "smartSub": "iPhone · iPad · Mac · Windows"
+      "smartSub": "iPhone · iPad · Mac · Windows",
+      "contentcueSub": "iPhone · iPad"
     },
     "common": {
       "noAds": "광고 없음",
@@ -407,6 +408,14 @@
           "bullet3": "비밀번호는 시스템 키체인에 저장",
           "cta": "iOS · Mac App Store",
           "secondary": "Microsoft Store"
+        },
+        "contentcue": {
+          "tag": "iOS 전용",
+          "desc": "중단 후에도 스크롤 위치를 복원하는 가벼운 읽기 브라우저.",
+          "bullet1": "팝업 또는 리디렉션 후 한 번 탭으로 재개",
+          "bullet2": "자동 스크롤이 있는 읽기 모드",
+          "bullet3": "북마크 · 계정 불필요",
+          "cta": "App Store"
         }
       }
     },
@@ -552,6 +561,39 @@
         "unlocked": "잠금 해제됨",
         "matching": "매칭 중",
         "queued": "대기 중"
+      }
+    },
+    "contentcueSection": {
+      "badge": "자매 앱 · iPhone 및 iPad",
+      "titleA": "탐색합니다. 방해를 받습니다.",
+      "titleB": "정확히 멈춘 곳에서 재개합니다.",
+      "desc": "ContentCue는 긴 기사, 문서, 포럼, 만화를 위한 가벼운 읽기 브라우저입니다. 팝업, 리디렉션, 실수로 탭해도 읽던 위치를 잃지 않습니다——한 번의 탭으로 돌아올 수 있습니다.",
+      "features": {
+        "resume": {
+          "title": "한 번 탭으로 재개",
+          "body": "저장된 스크롤 위치로 즉시 돌아갑니다."
+        },
+        "adOutlines": {
+          "title": "광고 윤곽선",
+          "body": "광고 요소를 표시하여 집중해서 읽을 수 있습니다."
+        },
+        "mute": {
+          "title": "오디오 음소거",
+          "body": "페이지를 떠나지 않고 자동 재생 오디오를 음소거합니다."
+        },
+        "bookmarks": {
+          "title": "북마크",
+          "body": "다시 방문할 페이지 저장——계정 불필요."
+        }
+      },
+      "altBadge": "App Store에서 ContentCue 다운로드",
+      "pricing": "무료로 사용할 수 있습니다. ContentCue Pro는 $2.99 일회성 구매: 무제한 북마크, 사용자 정의 광고 윤곽선 스타일, 조정 가능한 자동 스크롤.",
+      "langNote": "앱 UI: 영어 · 스페인어 · 포르투갈어 · 인도네시아어 · 간체 중국어",
+      "platformNote": "iPhone 및 iPad · Apple Silicon Mac (App Store를 통한 iOS 앱)",
+      "stats": {
+        "requires": "요구사항",
+        "oneTimePro": "Pro 일회성",
+        "appLangs": "앱 언어"
       }
     },
     "privacyStrip": {

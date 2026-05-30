@@ -41,6 +41,7 @@ const Navigation = () => {
         { name: 'BiblioFuse Web Tool', sub: t('redesign.tools.webSub'), path: '/webapp', color: 'teal', icon: 'globe' },
         { name: 'Archive Duplicate Scanner', sub: t('redesign.tools.archiveSub'), path: '/', hash: '#archive', color: 'orange', icon: 'search' },
         { name: 'SmartDecrypt PDF ZIP', sub: t('redesign.tools.smartSub'), path: '/', hash: '#smartdecrypt', color: 'violet', icon: 'lock' },
+        { name: 'ContentCue', sub: t('redesign.tools.contentcueSub'), path: '/', hash: '#contentcue', color: 'green', icon: 'browser' },
     ];
 
     const toggleLangMenu = () => setIsLangOpen(!isLangOpen);
@@ -211,6 +212,7 @@ function toolIconClass(color) {
     if (color === 'blue') return 'bg-blue-50 text-blue-600';
     if (color === 'teal') return 'bg-teal-50 text-teal-600';
     if (color === 'orange') return 'bg-orange-50 text-orange-600';
+    if (color === 'green') return 'bg-green-50 text-green-600';
     return 'bg-violet-50 text-violet-600';
 }
 
@@ -236,6 +238,16 @@ function ToolIcon({ kind }) {
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="5" y="11" width="14" height="10" rx="2" />
                 <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+            </svg>
+        );
+    }
+    if (kind === 'browser') {
+        return (
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M2 9h20" />
+                <circle cx="6" cy="6.5" r="0.9" fill="currentColor" stroke="none" />
+                <circle cx="9" cy="6.5" r="0.9" fill="currentColor" stroke="none" />
             </svg>
         );
     }

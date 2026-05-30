@@ -180,7 +180,8 @@
       "readerSub": "iPhone · iPad · Mac · Android",
       "webSub": "Kompresi di browser",
       "archiveSub": "Mac · Windows",
-      "smartSub": "iPhone · iPad · Mac · Windows"
+      "smartSub": "iPhone · iPad · Mac · Windows",
+      "contentcueSub": "iPhone · iPad"
     },
     "common": {
       "noAds": "Tanpa iklan",
@@ -407,6 +408,14 @@
           "bullet3": "Kata sandi disimpan di Keychain sistem",
           "cta": "iOS · Mac App Store",
           "secondary": "Microsoft Store"
+        },
+        "contentcue": {
+          "tag": "Hanya iOS",
+          "desc": "Browser baca ringan yang memulihkan posisi gulir Anda setelah gangguan apapun.",
+          "bullet1": "Lanjutkan dengan satu ketuk setelah popup atau pengalihan",
+          "bullet2": "Mode baca dengan gulir otomatis",
+          "bullet3": "Bookmark · Tanpa akun diperlukan",
+          "cta": "App Store"
         }
       }
     },
@@ -552,6 +561,39 @@
         "unlocked": "terbuka",
         "matching": "mencocokkan",
         "queued": "mengantri"
+      }
+    },
+    "contentcueSection": {
+      "badge": "Aplikasi pendamping · iPhone & iPad",
+      "titleA": "Jelajahi. Terganggu.",
+      "titleB": "Lanjutkan tepat di mana Anda berhenti.",
+      "desc": "ContentCue adalah browser baca ringan untuk artikel panjang, dokumentasi, forum, dan komik. Popup, pengalihan, dan ketukan tidak sengaja tidak dapat mencuri tempat Anda——satu ketuk membawa Anda kembali.",
+      "features": {
+        "resume": {
+          "title": "Lanjutkan dengan satu ketuk",
+          "body": "Kembali ke posisi gulir yang tersimpan secara instan."
+        },
+        "adOutlines": {
+          "title": "Garis iklan",
+          "body": "Menandai elemen iklan untuk membaca tanpa gangguan."
+        },
+        "mute": {
+          "title": "Bisukan audio",
+          "body": "Bisukan audio yang diputar otomatis tanpa meninggalkan halaman."
+        },
+        "bookmarks": {
+          "title": "Bookmark",
+          "body": "Simpan halaman untuk dikunjungi lagi——tanpa akun diperlukan."
+        }
+      },
+      "altBadge": "Unduh ContentCue di App Store",
+      "pricing": "Gratis digunakan. ContentCue Pro adalah pembelian satu kali seharga $2,99: bookmark tak terbatas, gaya garis iklan khusus, dan gulir otomatis yang dapat disesuaikan.",
+      "langNote": "Antarmuka aplikasi: Inggris · Spanyol · Portugis · Bahasa Indonesia · Tionghoa Sederhana",
+      "platformNote": "iPhone & iPad · Mac Apple Silicon (aplikasi iOS via App Store)",
+      "stats": {
+        "requires": "Membutuhkan",
+        "oneTimePro": "Pro sekali bayar",
+        "appLangs": "Bahasa aplikasi"
       }
     },
     "privacyStrip": {

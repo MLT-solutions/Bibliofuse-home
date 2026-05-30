@@ -11,6 +11,7 @@ const archiveMacUrl = 'https://apps.apple.com/eg/app/archive-duplicate-scanner/i
 const archiveMsUrl = 'https://apps.microsoft.com/detail/9n2jb4k5wvcq';
 const smartDecryptUrl = 'https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229';
 const smartDecryptMsUrl = 'https://apps.microsoft.com/detail/9p9bfkr5zdz8';
+const contentCueUrl = 'https://apps.apple.com/us/app/contentcue-reading-browser/id6770080864';
 const imageBase = '/image/offline-apps/bibliofuse';
 
 function StoreBadge({ type, size = 'lg', className = '' }) {
@@ -95,6 +96,7 @@ function ProductIcon({ kind }) {
   if (kind === 'globe') return <svg {...props}><circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3a13 13 0 010 18 13 13 0 010-18" /></svg>;
   if (kind === 'folder') return <svg {...props}><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" /><path d="M8 13h8" /></svg>;
   if (kind === 'lock') return <svg {...props}><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 018 0v3" /></svg>;
+  if (kind === 'browser') return <svg {...props}><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M2 9h20" /><circle cx="6" cy="6.5" r="0.8" fill="currentColor" stroke="none" /><circle cx="9" cy="6.5" r="0.8" fill="currentColor" stroke="none" /></svg>;
   return null;
 }
 
@@ -233,6 +235,16 @@ function ProductFamily() {
       accent: 'violet',
       dark: true,
     },
+    {
+      tag: t('redesign.productFamily.products.contentcue.tag'),
+      icon: 'browser',
+      name: 'ContentCue',
+      desc: t('redesign.productFamily.products.contentcue.desc'),
+      bullets: [t('redesign.productFamily.products.contentcue.bullet1'), t('redesign.productFamily.products.contentcue.bullet2'), t('redesign.productFamily.products.contentcue.bullet3')],
+      cta: t('redesign.productFamily.products.contentcue.cta'),
+      href: contentCueUrl,
+      accent: 'green',
+    },
   ];
 
   return (
@@ -252,7 +264,7 @@ function ProductFamily() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5">
           {products.map((product) => (
             <ProductCard key={product.name} {...product} />
           ))}
@@ -269,6 +281,7 @@ function ProductCard({ tag, icon, name, desc, bullets, cta, href, to, secondary,
     teal: 'bg-teal-50 text-teal-600',
     orange: 'bg-orange-50 text-orange-600',
     violet: 'bg-violet-50 text-violet-600',
+    green: 'bg-green-50 text-green-600',
   };
   const ctaClass = dark ? 'bg-violet-600 text-white hover:bg-violet-700' : 'bg-[#0b1220] text-white hover:bg-[#152033]';
   const cardClass = dark
@@ -838,6 +851,118 @@ function SmartDecryptSection() {
   );
 }
 
+function ContentCueSection() {
+  const { t } = useTranslation();
+  return (
+    <section id="contentcue" className="relative overflow-hidden py-24 sm:py-28">
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,#FFFFFF_0%,#F0FDF4_60%,#FFFFFF_100%)]" />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
+          <div>
+            <div className="inline-flex items-center gap-2 rounded-full bg-green-100 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-green-700">
+              <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+              {t('redesign.contentcueSection.badge')}
+            </div>
+            <h2 className="font-display tighter mt-5 text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.05] text-ink">
+              {t('redesign.contentcueSection.titleA')}
+              <br />
+              <span className="text-green-600">{t('redesign.contentcueSection.titleB')}</span>
+            </h2>
+            <p className="mt-5 max-w-lg text-lg leading-relaxed text-ink-muted">
+              {t('redesign.contentcueSection.desc')}
+            </p>
+
+            <div className="mt-8 grid max-w-lg gap-4 sm:grid-cols-2">
+              {[
+                { title: t('redesign.contentcueSection.features.resume.title'), body: t('redesign.contentcueSection.features.resume.body') },
+                { title: t('redesign.contentcueSection.features.adOutlines.title'), body: t('redesign.contentcueSection.features.adOutlines.body') },
+                { title: t('redesign.contentcueSection.features.mute.title'), body: t('redesign.contentcueSection.features.mute.body') },
+                { title: t('redesign.contentcueSection.features.bookmarks.title'), body: t('redesign.contentcueSection.features.bookmarks.body') },
+              ].map((feature) => (
+                <div key={feature.title} className="flex items-start gap-2.5">
+                  <span className="mt-0.5 grid h-5 w-5 flex-shrink-0 place-items-center rounded-md bg-green-100 text-green-700">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                  </span>
+                  <span>
+                    <span className="block text-sm font-semibold text-ink">{feature.title}</span>
+                    <span className="block text-xs leading-snug text-ink-muted">{feature.body}</span>
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <AppStoreImageBadge href={contentCueUrl} alt={t('redesign.contentcueSection.altBadge')} size="lg" />
+            </div>
+
+            <p className="mt-5 text-xs text-ink-soft">{t('redesign.contentcueSection.pricing')}</p>
+            <p className="mt-3 rounded-lg bg-green-50 px-3 py-2 text-xs text-green-700">
+              <span className="font-semibold">{t('redesign.contentcueSection.langNote')}</span>
+              <br />
+              {t('redesign.contentcueSection.platformNote')}
+            </p>
+          </div>
+
+          <div className="relative">
+            <div className="absolute -inset-10 -z-10 rounded-3xl bg-[radial-gradient(closest-side,rgba(34,197,94,.2),transparent)] opacity-60" />
+            <div className="overflow-hidden rounded-2xl border border-line bg-white shadow-deep">
+              <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
+                <div className="flex items-center gap-2">
+                  <div className="flex gap-1.5">
+                    <div className="h-3 w-3 rounded-full bg-red-400" />
+                    <div className="h-3 w-3 rounded-full bg-yellow-400" />
+                    <div className="h-3 w-3 rounded-full bg-green-400" />
+                  </div>
+                  <div className="flex-1 truncate rounded-md border border-slate-200 bg-white px-3 py-1 text-xs text-slate-400">
+                    en.wikipedia.org/wiki/Manga
+                  </div>
+                </div>
+              </div>
+              <div className="relative bg-white px-6 py-5">
+                <div className="absolute right-4 top-4">
+                  <div className="flex items-center gap-1.5 rounded-lg bg-green-500 px-3 py-1.5 text-xs font-bold text-white shadow-sm">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    Resume
+                  </div>
+                </div>
+                <div className="space-y-3 pr-20">
+                  <div className="h-4 w-3/4 rounded bg-slate-200" />
+                  <div className="h-3 w-full rounded bg-slate-100" />
+                  <div className="h-3 w-5/6 rounded bg-slate-100" />
+                  <div className="flex h-10 w-full items-center justify-center rounded border-2 border-dashed border-amber-300 bg-amber-50">
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-amber-500">Ad</span>
+                  </div>
+                  <div className="h-3 w-full rounded bg-slate-100" />
+                  <div className="h-3 w-4/5 rounded bg-slate-100" />
+                  <div className="h-3 w-full rounded bg-slate-100" />
+                  <div className="h-3 w-2/3 rounded bg-slate-100" />
+                </div>
+              </div>
+            </div>
+
+            <div className="absolute -bottom-6 left-1/2 hidden -translate-x-1/2 items-center gap-6 rounded-2xl border border-line bg-white px-5 py-3 shadow-float sm:flex">
+              <div>
+                <div className="font-display tighter text-xl font-bold text-ink">iOS 16+</div>
+                <div className="text-[10px] uppercase tracking-wider text-ink-soft">{t('redesign.contentcueSection.stats.requires')}</div>
+              </div>
+              <div className="h-8 w-px bg-line" />
+              <div>
+                <div className="font-display tighter text-xl font-bold text-green-600">$2.99</div>
+                <div className="text-[10px] uppercase tracking-wider text-ink-soft">{t('redesign.contentcueSection.stats.oneTimePro')}</div>
+              </div>
+              <div className="h-8 w-px bg-line" />
+              <div>
+                <div className="font-display tighter text-xl font-bold text-ink">5</div>
+                <div className="text-[10px] uppercase tracking-wider text-ink-soft">{t('redesign.contentcueSection.stats.appLangs')}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function SmartStepIcon({ kind }) {
   const props = { width: 22, height: 22, viewBox: '0 0 24 24', fill: 'none', stroke: '#fff', strokeWidth: 2.2, strokeLinecap: 'round', strokeLinejoin: 'round' };
   if (kind === 'file') return <svg {...props}><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z" /><path d="M14 3v5h5" /></svg>;
@@ -1028,6 +1153,7 @@ const Home = () => {
       <ComparisonTable lang={lang} />
       <ArchiveScannerSection />
       <SmartDecryptSection />
+      <ContentCueSection />
       <PrivacyStrip />
       <BlogPreview lang={lang} />
       <FinalCTA lang={lang} />
