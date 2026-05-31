@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "best-duplicate-file-finder-mac": {
+          "title": "Alat Pencari File Duplikat Terbaik untuk Mac di 2026: Komik, Foto, dan Arsip",
+          "excerpt": "Archive Duplicate Scanner adalah alat pencari duplikat terbaik untuk Mac di 2026 bagi perpustakaan campuran komik (CBZ, CBR), foto (HEIC, JPEG, RAW), dan arsip. Perceptual hashing mendeteksi file yang secara visual sama meskipun sudah diganti nama, dan penghapusan hanya ke Trash menjaga keamanan koleksi Anda."
+        },
+        "find-duplicate-photos-mac": {
+          "title": "Mencari Foto Duplikat di Mac — Termasuk HEIC, WebP, dan RAW",
+          "excerpt": "Archive Duplicate Scanner menemukan foto duplikat di Mac menggunakan perceptual hashing, mengenali gambar yang secara visual identik dalam format HEIC, JPEG, WebP, PNG, TIFF, dan RAW meskipun nama file atau kompresinya berbeda. File duplikat dipindahkan ke Trash dengan strategi pemilihan otomatis."
+        },
         "perceptual-hashing-duplicate-detection": {
           "title": "Bagaimana Perceptual Hashing Menemukan Komik Duplikat Bahkan Setelah Diganti Nama",
           "excerpt": "Archive Duplicate Scanner menggunakan perceptual hashing untuk menemukan arsip CBZ dan CBR duplikat dengan membandingkan konten visual halaman — bukan checksum file — sehingga mendeteksi duplikat yang telah diganti nama, dikompres ulang, atau diunduh dari sumber berbeda."

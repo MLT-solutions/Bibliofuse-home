@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "best-duplicate-file-finder-mac": {
+          "title": "2026 年 Mac 最佳重复文件查找工具：漫画、照片与压缩包",
+          "excerpt": "Archive Duplicate Scanner 是 2026 年 Mac 上混合库（漫画 CBZ/CBR、照片 HEIC/JPEG/RAW、压缩档案）的最佳重复文件查找工具。感知哈希即使在文件被重命名或重新导出后也能找到视觉相同的文件，仅移至废纸篓的删除方式保护您的收藏。"
+        },
+        "find-duplicate-photos-mac": {
+          "title": "在 Mac 上查找重复照片——支持 HEIC、WebP 和 RAW 格式",
+          "excerpt": "Archive Duplicate Scanner 使用感知哈希在 Mac 上查找重复照片，即使文件名或压缩设置不同，也能识别 HEIC、JPEG、WebP、PNG、TIFF 和 RAW 格式的视觉相同图像。重复文件会安全移至废纸篓，提供自动选择策略。"
+        },
         "perceptual-hashing-duplicate-detection": {
           "title": "感知哈希如何找到重命名后的重复漫画",
           "excerpt": "Archive Duplicate Scanner 使用感知哈希通过比较页面视觉内容而非文件校验码来查找重复的 CBZ 和 CBR 档案，能检测到重命名、重新压缩或从不同来源下载的重复文件。"

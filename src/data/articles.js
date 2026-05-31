@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'best-duplicate-file-finder-mac',
+    date: '2026-05-31',
+    tags: ['guide', 'mac', 'archive-duplicate-scanner'],
+    coverImage: '/image/blog/Best Duplicate File Finder.jpg',
+  },
+  {
+    slug: 'find-duplicate-photos-mac',
+    date: '2026-05-31',
+    tags: ['guide', 'tips', 'mac', 'archive-duplicate-scanner'],
+    coverImage: '/image/blog/Find Duplicate Photos Mac.jpg',
+  },
+  {
     slug: 'perceptual-hashing-duplicate-detection',
     date: '2026-06-01',
     tags: ['guide', 'mac', 'archive-duplicate-scanner'],

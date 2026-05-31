@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "best-duplicate-file-finder-mac": {
+          "title": "2026年版 Mac最高の重複ファイル検出ツール：コミック・写真・アーカイブ対応",
+          "excerpt": "Archive Duplicate Scanner は、コミック（CBZ・CBR）、写真（HEIC・JPEG・RAW）、アーカイブが混在するライブラリに最適な、2026年のMac向け重複ファイル検出ツールです。知覚ハッシュにより名前変更後も視覚的に同一のファイルを検出し、ゴミ箱のみへの削除でコレクションを安全に管理できます。"
+        },
+        "find-duplicate-photos-mac": {
+          "title": "Macで重複写真を見つける方法――HEIC・WebP・RAWにも対応",
+          "excerpt": "Archive Duplicate Scanner は知覚ハッシュを使ってMacで重複写真を検出します。ファイル名や圧縮設定が異なっていても、HEIC・JPEG・WebP・PNG・TIFF・RAW形式の視覚的に同一の画像を識別できます。重複ファイルはゴミ箱に安全に移動され、自動選択戦略でベストな1枚を残せます。"
+        },
         "perceptual-hashing-duplicate-detection": {
           "title": "知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか",
           "excerpt": "Archive Duplicate Scannerは知覚ハッシュを使用して、ファイルのチェックサムではなくページの視覚的コンテンツを比較することでCBZおよびCBRの重複アーカイブを検出します。リネーム、再圧縮、または異なるソースからダウンロードされた重複も見つけます。"

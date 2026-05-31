@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "best-duplicate-file-finder-mac": {
+          "title": "Meilleur outil de recherche de fichiers en double pour Mac en 2026 : BD, photos et archives",
+          "excerpt": "Archive Duplicate Scanner est le meilleur outil de déduplication pour Mac en 2026 pour les bibliothèques mixtes de BD (CBZ, CBR), photos (HEIC, JPEG, RAW) et archives. Le hachage perceptuel repère les fichiers visuellement identiques même renommés, et la suppression vers la Corbeille uniquement sécurise votre collection."
+        },
+        "find-duplicate-photos-mac": {
+          "title": "Trouver les photos en double sur Mac — HEIC, WebP et RAW inclus",
+          "excerpt": "Archive Duplicate Scanner trouve les photos en double sur Mac grâce au hachage perceptuel, en identifiant les images visuellement identiques au format HEIC, JPEG, WebP, PNG, TIFF et RAW même si leurs noms ou leur compression diffèrent. Déplacez les doublons vers la Corbeille avec des stratégies de sélection automatique."
+        },
         "perceptual-hashing-duplicate-detection": {
           "title": "Comment le Hachage Perceptuel Trouve les Doublons de BD Même Après Renommage",
           "excerpt": "Archive Duplicate Scanner utilise le hachage perceptuel pour trouver les archives CBZ et CBR en double en comparant le contenu visuel des pages — pas les checksums — détectant les doublons renommés, recompressés ou téléchargés de sources différentes."

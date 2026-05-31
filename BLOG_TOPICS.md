@@ -71,8 +71,8 @@ This file is the source of truth for the daily article agent.
 | 20 | ✅ | `find-duplicate-comics-cbz-mac` | How to Find and Remove Duplicate CBZ Comic Files on Mac | Archive Duplicate Scanner |
 | 21 | ✅ | `clean-up-duplicate-manga-library` | How to Clean Up a Duplicate Manga Collection the Smart Way | Archive Duplicate Scanner |
 | 22 | ✅ | `perceptual-hashing-duplicate-detection` | How Perceptual Hashing Finds Duplicate Comics Even After Renaming | Archive Duplicate Scanner |
-| 23 | ⬜ | `find-duplicate-photos-mac` | Find Duplicate Photos on Mac — Including HEIC, WebP, and RAW | Archive Duplicate Scanner |
-| 24 | ⬜ | `best-duplicate-file-finder-mac` | Best Duplicate File Finder for Mac in 2026: Comics, Photos, and Archives | Archive Duplicate Scanner |
+| 23 | ✅ | `find-duplicate-photos-mac` | Find Duplicate Photos on Mac — Including HEIC, WebP, and RAW | Archive Duplicate Scanner |
+| 24 | ✅ | `best-duplicate-file-finder-mac` | Best Duplicate File Finder for Mac in 2026: Comics, Photos, and Archives | Archive Duplicate Scanner |
 
 ---
 

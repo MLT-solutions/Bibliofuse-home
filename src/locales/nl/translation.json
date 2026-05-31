@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "best-duplicate-file-finder-mac": {
+          "title": "Beste tool voor dubbele bestanden op Mac in 2026: strips, foto's en archieven",
+          "excerpt": "Archive Duplicate Scanner is de beste deduplicatietool voor Mac in 2026 voor gemengde bibliotheken van strips (CBZ, CBR), foto's (HEIC, JPEG, RAW) en archieven. Perceptuele hashing vindt visueel identieke bestanden ook na hernaming, en alleen Prullenmand-verwijdering houdt je collectie veilig."
+        },
+        "find-duplicate-photos-mac": {
+          "title": "Dubbele foto's vinden op Mac — inclusief HEIC, WebP en RAW",
+          "excerpt": "Archive Duplicate Scanner vindt dubbele foto's op Mac via perceptuele hashing, die visueel identieke afbeeldingen herkent in HEIC, JPEG, WebP, PNG, TIFF en RAW zelfs bij verschillende bestandsnamen of compressie. Verplaats duplicaten veilig naar de Prullenmand met automatische selectiestrategieën."
+        },
         "perceptual-hashing-duplicate-detection": {
           "title": "Hoe Perceptuele Hashing Dubbele Comics Vindt Zelfs Na Hernaming",
           "excerpt": "Archive Duplicate Scanner gebruikt perceptuele hashing om dubbele CBZ en CBR archieven te vinden door visuele pagina-inhoud te vergelijken — niet bestandschecksums — waardoor duplicaten worden gevonden die hernoemd, opnieuw gecomprimeerd of van verschillende bronnen zijn gedownload."

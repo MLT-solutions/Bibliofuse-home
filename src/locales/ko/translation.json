@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "best-duplicate-file-finder-mac": {
+          "title": "2026년 Mac 최고의 중복 파일 찾기 도구: 만화, 사진, 아카이브",
+          "excerpt": "Archive Duplicate Scanner는 만화(CBZ, CBR), 사진(HEIC, JPEG, RAW), 아카이브가 혼합된 라이브러리를 위한 2026년 Mac 최고의 중복 파일 탐색 도구입니다. 지각적 해싱으로 이름이 변경된 파일도 시각적으로 동일한 파일을 찾고, 휴지통 전용 삭제로 컬렉션을 안전하게 관리합니다."
+        },
+        "find-duplicate-photos-mac": {
+          "title": "Mac에서 중복 사진 찾기 — HEIC, WebP, RAW 포함",
+          "excerpt": "Archive Duplicate Scanner는 지각적 해싱을 사용해 Mac에서 중복 사진을 찾습니다. 파일 이름이나 압축 설정이 달라도 HEIC, JPEG, WebP, PNG, TIFF, RAW 형식의 시각적으로 동일한 이미지를 식별합니다. 중복 파일은 휴지통으로 안전하게 이동되며 자동 선택 전략을 지원합니다."
+        },
         "perceptual-hashing-duplicate-detection": {
           "title": "지각 해싱이 이름 변경 후에도 중복 만화를 찾는 방법",
           "excerpt": "Archive Duplicate Scanner는 파일 체크섬이 아닌 페이지 시각적 내용을 비교하여 중복 CBZ 및 CBR 아카이브를 찾는 지각 해싱을 사용합니다. 이름이 변경되거나 재압축되거나 다른 소스에서 다운로드된 중복도 감지합니다."
