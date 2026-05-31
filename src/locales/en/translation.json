@@ -194,6 +194,14 @@
         "update": "Update"
       },
       "posts": {
+        "perceptual-hashing-duplicate-detection": {
+          "title": "How Perceptual Hashing Finds Duplicate Comics Even After Renaming",
+          "excerpt": "Archive Duplicate Scanner uses perceptual hashing to find duplicate CBZ and CBR archives by comparing visual page content — not file checksums — so it catches duplicates that have been renamed, re-compressed, or downloaded from different sources. Understand how the algorithm works and why it outperforms standard checksum-based duplicate finders for manga and comic libraries."
+        },
+        "clean-up-duplicate-manga-library": {
+          "title": "How to Clean Up a Duplicate Manga Collection the Smart Way",
+          "excerpt": "Archive Duplicate Scanner finds duplicate manga volumes across your Mac using perceptual hashing, matching CBZ and CBR files even after renaming or recompression. Review matched pairs side by side, keep the best version, and safely move duplicates to Trash — no permanent deletion until you are ready."
+        },
         "find-duplicate-comics-cbz-mac": {
           "title": "How to Find and Remove Duplicate CBZ Comic Files on Mac",
           "excerpt": "Archive Duplicate Scanner finds duplicate CBZ and CBR comic files on Mac using perceptual hashing — matching files even after renaming, recompressing, or repackaging. Scan your library, review matched pairs side by side, and safely move duplicates to Trash without risking any originals."

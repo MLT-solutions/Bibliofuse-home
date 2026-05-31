@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "perceptual-hashing-duplicate-detection": {
+          "title": "Bagaimana Perceptual Hashing Menemukan Komik Duplikat Bahkan Setelah Diganti Nama",
+          "excerpt": "Archive Duplicate Scanner menggunakan perceptual hashing untuk menemukan arsip CBZ dan CBR duplikat dengan membandingkan konten visual halaman — bukan checksum file — sehingga mendeteksi duplikat yang telah diganti nama, dikompres ulang, atau diunduh dari sumber berbeda."
+        },
+        "clean-up-duplicate-manga-library": {
+          "title": "Cara Membersihkan Koleksi Manga Duplikat dengan Cerdas",
+          "excerpt": "Archive Duplicate Scanner menemukan volume manga duplikat di Mac menggunakan perceptual hashing, mencocokkan file CBZ dan CBR bahkan setelah penggantian nama atau kompresi ulang. Tinjau pasangan yang cocok dan pindahkan duplikat ke Trash dengan aman."
+        },
         "find-duplicate-comics-cbz-mac": {
           "title": "Cara Menemukan dan Menghapus File CBZ Komik Duplikat di Mac",
           "excerpt": "Archive Duplicate Scanner menemukan file komik CBZ dan CBR duplikat di Mac menggunakan hashing perseptual — mencocokkan file bahkan setelah diganti nama, dikompres ulang, atau dikemas ulang. Pindai perpustakaan Anda dan pindahkan duplikat ke Sampah dengan aman."

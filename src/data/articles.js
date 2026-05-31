@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'perceptual-hashing-duplicate-detection',
+    date: '2026-06-01',
+    tags: ['guide', 'mac', 'archive-duplicate-scanner'],
+    coverImage: '/image/blog/Perceptual Hashing Comics.jpg',
+  },
+  {
+    slug: 'clean-up-duplicate-manga-library',
+    date: '2026-06-01',
+    tags: ['guide', 'tips', 'mac', 'archive-duplicate-scanner'],
+    coverImage: '/image/blog/Clean Up Duplicate Manga.jpg',
+  },
+  {
     slug: 'find-duplicate-comics-cbz-mac',
     date: '2026-05-30',
     tags: ['guide', 'mac'],

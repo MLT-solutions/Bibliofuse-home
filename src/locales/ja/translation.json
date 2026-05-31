@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "perceptual-hashing-duplicate-detection": {
+          "title": "知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか",
+          "excerpt": "Archive Duplicate Scannerは知覚ハッシュを使用して、ファイルのチェックサムではなくページの視覚的コンテンツを比較することでCBZおよびCBRの重複アーカイブを検出します。リネーム、再圧縮、または異なるソースからダウンロードされた重複も見つけます。"
+        },
+        "clean-up-duplicate-manga-library": {
+          "title": "重複マンガコレクションをスマートに整理する方法",
+          "excerpt": "Archive Duplicate Scannerは知覚ハッシュを使ってMac上の重複マンガを検索し、リネームや再圧縮後もCBZ・CBRファイルを照合します。一致したペアを並べて確認し、重複をゴミ箱に安全に移動できます。"
+        },
         "find-duplicate-comics-cbz-mac": {
           "title": "MacでCBZ漫画ファイルの重複を見つけて削除する方法",
           "excerpt": "Archive Duplicate Scannerは、知覚ハッシュを使用してMacでCBZおよびCBRの重複漫画ファイルを検出します。名前変更や再圧縮後でも一致し、ライブラリをスキャンして一致したペアを確認し、安全にゴミ箱に移動できます。"

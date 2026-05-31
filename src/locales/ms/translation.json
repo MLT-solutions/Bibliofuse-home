@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "perceptual-hashing-duplicate-detection": {
+          "title": "Bagaimana Pencincangan Persepsi Menemui Komik Pendua Walaupun Selepas Penamaan Semula",
+          "excerpt": "Archive Duplicate Scanner menggunakan pencincangan persepsi untuk mencari arkib CBZ dan CBR pendua dengan membandingkan kandungan visual halaman — bukan checksum fail — mengesan pendua yang dinamakan semula, dimampatkan semula atau dimuat turun dari sumber berbeza."
+        },
+        "clean-up-duplicate-manga-library": {
+          "title": "Cara Membersihkan Koleksi Manga Pendua dengan Bijak",
+          "excerpt": "Archive Duplicate Scanner mencari jilid manga pendua di Mac menggunakan pencincangan persepsi, memadankan fail CBZ dan CBR walaupun selepas penamaan semula atau pemampatan semula. Semak pasangan yang sepadan dan alihkan pendua ke Tong Sampah dengan selamat."
+        },
         "find-duplicate-comics-cbz-mac": {
           "title": "Cara Mencari dan Mengalih Keluar Fail CBZ Komik Pendua di Mac",
           "excerpt": "Archive Duplicate Scanner mencari fail komik CBZ dan CBR pendua di Mac menggunakan pencincangan perseptual — memadankan fail walaupun selepas menamakan semula, memampatkan semula, atau membungkus semula. Imbas perpustakaan anda dan alih keluar pendua ke Sampah dengan selamat."

@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "perceptual-hashing-duplicate-detection": {
+          "title": "感知哈希如何找到重命名后的重复漫画",
+          "excerpt": "Archive Duplicate Scanner 使用感知哈希通过比较页面视觉内容而非文件校验码来查找重复的 CBZ 和 CBR 档案，能检测到重命名、重新压缩或从不同来源下载的重复文件。"
+        },
+        "clean-up-duplicate-manga-library": {
+          "title": "如何智能清理重复的漫画收藏",
+          "excerpt": "Archive Duplicate Scanner 使用感知哈希在 Mac 上查找重复的漫画卷，即使文件经过重命名或重新压缩也能匹配 CBZ 和 CBR 文件。并排审查匹配对，安全地将重复文件移至废纸篓。"
+        },
         "find-duplicate-comics-cbz-mac": {
           "title": "如何在Mac上查找并删除重复的CBZ漫画文件",
           "excerpt": "Archive Duplicate Scanner使用感知哈希在Mac上查找重复的CBZ和CBR漫画文件——即使在重命名、重新压缩或重新打包后也能匹配文件。扫描您的库，并排查看匹配对，安全地将重复项移到废纸篓。"

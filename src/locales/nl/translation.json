@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "perceptual-hashing-duplicate-detection": {
+          "title": "Hoe Perceptuele Hashing Dubbele Comics Vindt Zelfs Na Hernaming",
+          "excerpt": "Archive Duplicate Scanner gebruikt perceptuele hashing om dubbele CBZ en CBR archieven te vinden door visuele pagina-inhoud te vergelijken — niet bestandschecksums — waardoor duplicaten worden gevonden die hernoemd, opnieuw gecomprimeerd of van verschillende bronnen zijn gedownload."
+        },
+        "clean-up-duplicate-manga-library": {
+          "title": "Hoe Je een Dubbele Mangacollectie op de Slimme Manier Opruimt",
+          "excerpt": "Archive Duplicate Scanner vindt dubbele manga-volumes op je Mac met perceptuele hashing, waarbij CBZ en CBR bestanden worden gematcht zelfs na hernaming of hercompressie. Bekijk gematchte paren naast elkaar en verplaats duplicaten veilig naar de Prullenmand."
+        },
         "find-duplicate-comics-cbz-mac": {
           "title": "Dubbele CBZ-Comicbestanden Vinden en Verwijderen op Mac",
           "excerpt": "Archive Duplicate Scanner vindt dubbele CBZ- en CBR-comicbestanden op Mac met behulp van perceptuele hashing — bestanden matchen zelfs na hernoemen, hercomprimeren of opnieuw verpakken. Scan je bibliotheek en verplaats duplicaten veilig naar de Prullenmand."

@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "perceptual-hashing-duplicate-detection": {
+          "title": "Comment le Hachage Perceptuel Trouve les Doublons de BD Même Après Renommage",
+          "excerpt": "Archive Duplicate Scanner utilise le hachage perceptuel pour trouver les archives CBZ et CBR en double en comparant le contenu visuel des pages — pas les checksums — détectant les doublons renommés, recompressés ou téléchargés de sources différentes."
+        },
+        "clean-up-duplicate-manga-library": {
+          "title": "Comment Nettoyer une Collection de Manga en Double de Façon Intelligente",
+          "excerpt": "Archive Duplicate Scanner trouve les volumes de manga en double sur votre Mac grâce au hachage perceptuel, en faisant correspondre les fichiers CBZ et CBR même après renommage ou recompression. Examinez les paires côte à côte et déplacez les doublons dans la Corbeille en toute sécurité."
+        },
         "find-duplicate-comics-cbz-mac": {
           "title": "Comment Trouver et Supprimer les Fichiers CBZ en Double sur Mac",
           "excerpt": "Archive Duplicate Scanner détecte les doublons de fichiers CBZ et CBR sur Mac grâce au hachage perceptuel — même après renommage, recompression ou reconditionnement. Analysez votre bibliothèque, examinez les paires correspondantes et déplacez les doublons en toute sécurité vers la Corbeille."

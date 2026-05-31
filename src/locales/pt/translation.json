@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "perceptual-hashing-duplicate-detection": {
+          "title": "Como o Hash Perceptual Encontra Quadrinhos Duplicados Mesmo Após Renomeação",
+          "excerpt": "Archive Duplicate Scanner usa hash perceptual para encontrar arquivos CBZ e CBR duplicados comparando conteúdo visual de páginas — não checksums — detectando duplicatas renomeadas, recomprimidas ou baixadas de fontes diferentes."
+        },
+        "clean-up-duplicate-manga-library": {
+          "title": "Como Limpar uma Coleção de Mangá Duplicada de Forma Inteligente",
+          "excerpt": "Archive Duplicate Scanner encontra volumes de mangá duplicados no seu Mac usando hash perceptual, combinando arquivos CBZ e CBR mesmo após renomeação ou recompressão. Revise pares correspondentes lado a lado e mova duplicatas para a Lixeira com segurança."
+        },
         "find-duplicate-comics-cbz-mac": {
           "title": "Como Encontrar e Remover Arquivos CBZ de Quadrinhos Duplicados no Mac",
           "excerpt": "Archive Duplicate Scanner encontra arquivos de quadrinhos CBZ e CBR duplicados no Mac usando hash perceptual — correspondendo arquivos mesmo após renomeação, recompressão ou reempacotamento. Digitalize sua biblioteca e mova duplicatas com segurança para a Lixeira."

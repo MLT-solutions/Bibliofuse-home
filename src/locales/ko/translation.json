@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "perceptual-hashing-duplicate-detection": {
+          "title": "지각 해싱이 이름 변경 후에도 중복 만화를 찾는 방법",
+          "excerpt": "Archive Duplicate Scanner는 파일 체크섬이 아닌 페이지 시각적 내용을 비교하여 중복 CBZ 및 CBR 아카이브를 찾는 지각 해싱을 사용합니다. 이름이 변경되거나 재압축되거나 다른 소스에서 다운로드된 중복도 감지합니다."
+        },
+        "clean-up-duplicate-manga-library": {
+          "title": "중복 만화 컬렉션을 스마트하게 정리하는 방법",
+          "excerpt": "Archive Duplicate Scanner는 지각 해싱을 사용하여 Mac에서 중복 만화 볼륨을 찾고, 이름 변경이나 재압축 후에도 CBZ 및 CBR 파일을 매칭합니다. 매칭된 쌍을 나란히 검토하고 중복 항목을 안전하게 휴지통으로 이동하세요."
+        },
         "find-duplicate-comics-cbz-mac": {
           "title": "Mac에서 중복 CBZ 만화 파일 찾기 및 제거 방법",
           "excerpt": "Archive Duplicate Scanner는 지각적 해싱을 사용하여 Mac에서 중복 CBZ 및 CBR 만화 파일을 찾습니다. 이름 변경이나 재압축 후에도 파일을 일치시키며, 라이브러리를 스캔하고 일치하는 쌍을 검토하여 안전하게 휴지통으로 이동할 수 있습니다."
