@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "digital-comic-library-management-guide": {
+          "title": "iPhone 和 Mac 数字漫画库管理完整指南",
+          "excerpt": "BiblioFuse 是适用于 iOS 17+ 的原生 iPhone 和 iPad 阅读器，支持管理 CBZ、CBR、EPUB、PDF、ZIP、RAR 和 TXT 文件，具备标签、评分、iCloud 同步和 Wi-Fi 传输功能。本指南涵盖在 iPhone、iPad 和 Mac 上整理、压缩、传输和阅读整个数字漫画库的完整流程。"
+        },
+        "build-perfect-digital-manga-collection": {
+          "title": "如何建立完美的数字漫画收藏：压缩、去重、随处阅读",
+          "excerpt": "BiblioFuse 是适用于 iOS 17+ 的 iPhone 和 iPad 阅读器，支持 CBZ、CBR、EPUB、PDF、ZIP、RAR 和 TXT 格式。结合 Archive Duplicate Scanner 删除重复卷册、BiblioFuse 网页工具在浏览器中批量压缩文件，以及设备内置工具栏，打造可随处同步的优化漫画收藏。"
+        },
         "best-duplicate-file-finder-mac": {
           "title": "2026 年 Mac 最佳重复文件查找工具：漫画、照片与压缩包",
           "excerpt": "Archive Duplicate Scanner 是 2026 年 Mac 上混合库（漫画 CBZ/CBR、照片 HEIC/JPEG/RAW、压缩档案）的最佳重复文件查找工具。感知哈希即使在文件被重命名或重新导出后也能找到视觉相同的文件，仅移至废纸篓的删除方式保护您的收藏。"

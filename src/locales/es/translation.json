@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "digital-comic-library-management-guide": {
+          "title": "La guía completa para gestionar una biblioteca de cómics digitales en iPhone y Mac",
+          "excerpt": "BiblioFuse es un lector nativo para iPhone e iPad compatible con iOS 17+ que gestiona archivos CBZ, CBR, EPUB, PDF, ZIP, RAR y TXT con etiquetas, calificaciones, sincronización iCloud y Wi-Fi Transfer. Esta guía cubre cómo organizar, comprimir, transferir y leer tu biblioteca de cómics en iPhone, iPad y Mac."
+        },
+        "build-perfect-digital-manga-collection": {
+          "title": "Cómo crear una colección de manga digital perfecta: comprimir, desduplicar y leer en todas partes",
+          "excerpt": "BiblioFuse lee CBZ, CBR, EPUB, PDF, ZIP, RAR y TXT en iPhone e iPad con iOS 17+. Combina Archive Duplicate Scanner para eliminar volúmenes duplicados, el BiblioFuse Web Tool para comprimir archivos en el navegador y la pestaña Herramientas del dispositivo para crear una colección manga optimizada que se sincroniza en todas partes."
+        },
         "best-duplicate-file-finder-mac": {
           "title": "El mejor buscador de archivos duplicados para Mac en 2026: cómics, fotos y archivos",
           "excerpt": "Archive Duplicate Scanner es el mejor buscador de duplicados para Mac en 2026 para bibliotecas mixtas de cómics (CBZ, CBR), fotos (HEIC, JPEG, RAW) y archivos comprimidos. El hashing perceptual detecta archivos visualmente idénticos aunque estén renombrados, y la eliminación solo a la Papelera protege tu colección."

@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'digital-comic-library-management-guide',
+    date: '2026-06-01',
+    tags: ['guide', 'ios', 'tips'],
+    coverImage: '/image/blog/Comic Library Management.jpg',
+  },
+  {
+    slug: 'build-perfect-digital-manga-collection',
+    date: '2026-06-01',
+    tags: ['guide', 'manga', 'tips'],
+    coverImage: '/image/blog/Perfect Digital Manga Collection.jpg',
+  },
+  {
     slug: 'best-duplicate-file-finder-mac',
     date: '2026-05-31',
     tags: ['guide', 'mac', 'archive-duplicate-scanner'],

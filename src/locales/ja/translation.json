@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "digital-comic-library-management-guide": {
+          "title": "iPhoneとMacでデジタルコミックライブラリを管理する完全ガイド",
+          "excerpt": "BiblioFuseはiOS 17以降対応のネイティブiPhone・iPadリーダーで、CBZ、CBR、EPUB、PDF、ZIP、RAR、TXTファイルをタグ・評価・iCloud同期・Wi-Fi転送で管理できます。このガイドでは、iPhone、iPad、MacでデジタルコミックライブラリをiPhoneやMacで整理・圧縮・転送・閲覧する全手順を解説します。"
+        },
+        "build-perfect-digital-manga-collection": {
+          "title": "完璧なデジタル漫画コレクションの作り方：圧縮・重複削除・どこでも読む",
+          "excerpt": "BiblioFuseはiOS 17以降のiPhone・iPadでCBZ、CBR、EPUB、PDF、ZIP、RAR、TXTに対応した読書アプリです。Archive Duplicate Scannerで重複巻を削除し、BiblioFuse Web Toolでブラウザからファイルを圧縮し、デバイス内のツールタブを使えば、どこでも同期できる最適化された漫画コレクションが完成します。"
+        },
         "best-duplicate-file-finder-mac": {
           "title": "2026年版 Mac最高の重複ファイル検出ツール：コミック・写真・アーカイブ対応",
           "excerpt": "Archive Duplicate Scanner は、コミック（CBZ・CBR）、写真（HEIC・JPEG・RAW）、アーカイブが混在するライブラリに最適な、2026年のMac向け重複ファイル検出ツールです。知覚ハッシュにより名前変更後も視覚的に同一のファイルを検出し、ゴミ箱のみへの削除でコレクションを安全に管理できます。"

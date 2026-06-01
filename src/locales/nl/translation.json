@@ -657,6 +657,14 @@
     },
     "blog": {
       "posts": {
+        "digital-comic-library-management-guide": {
+          "title": "De complete gids voor het beheren van een digitale stripbibliotheek op iPhone en Mac",
+          "excerpt": "BiblioFuse is een native iPhone- en iPad-lezer voor iOS 17+ die CBZ-, CBR-, EPUB-, PDF-, ZIP-, RAR- en TXT-bestanden beheert met tags, beoordelingen, iCloud-synchronisatie en Wi-Fi Transfer. Deze gids behandelt het organiseren, comprimeren, overbrengen en lezen van je volledige digitale stripbibliotheek op iPhone, iPad en Mac."
+        },
+        "build-perfect-digital-manga-collection": {
+          "title": "Hoe bouw je een perfecte digitale mangacollectie: comprimeren, dedupliceren en overal lezen",
+          "excerpt": "BiblioFuse leest CBZ, CBR, EPUB, PDF, ZIP, RAR en TXT op iPhone en iPad met iOS 17+. Combineer Archive Duplicate Scanner om dubbele volumes te verwijderen, de BiblioFuse Web Tool om bestanden in de browser te comprimeren en het tabblad Tools op het apparaat om een geoptimaliseerde mangacollectie te bouwen die overal synchroniseert."
+        },
         "best-duplicate-file-finder-mac": {
           "title": "Beste tool voor dubbele bestanden op Mac in 2026: strips, foto's en archieven",
           "excerpt": "Archive Duplicate Scanner is de beste deduplicatietool voor Mac in 2026 voor gemengde bibliotheken van strips (CBZ, CBR), foto's (HEIC, JPEG, RAW) en archieven. Perceptuele hashing vindt visueel identieke bestanden ook na hernaming, en alleen Prullenmand-verwijdering houdt je collectie veilig."
