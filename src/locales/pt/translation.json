@@ -659,132 +659,174 @@
     "blog": {
       "posts": {
         "smartdecrypt-language-update": {
-          "title": "SmartDecrypt PDF ZIP Agora Disponível em Português, Espanhol, Indonésio e Chinês",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ adiciona suporte completo de interface para português, espanhol, bahasa Indonesia e chinês simplificado. Desbloqueie PDFs e arquivos protegidos no iPhone, iPad, Mac e Windows — totalmente no dispositivo."
+          "title": "SmartDecrypt PDF ZIP: 4 Novos Idiomas",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ adiciona suporte completo de interface para português, espanhol, bahasa Indonesia e chinês simplificado. Desbloqueie PDFs e arquivos protegidos no iPhone, iPad, Mac e Windows — totalmente no dispositivo.",
+          "seoDescription": "SmartDecrypt PDF ZIP CBZ adiciona suporte completo de interface para português, espanhol, bahasa Indonesia e chinês simplificado."
         },
         "digital-comic-library-management-guide": {
-          "title": "O guia completo para gerenciar uma biblioteca de quadrinhos digitais no iPhone e Mac",
-          "excerpt": "O BiblioFuse é um leitor nativo para iPhone e iPad com iOS 17+ que gerencia arquivos CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT com tags, avaliações, sincronização iCloud e Wi-Fi Transfer. Este guia aborda como organizar, comprimir, transferir e ler sua biblioteca de quadrinhos no iPhone, iPad e Mac."
+          "title": "Guia de Gerenciamento de Biblioteca de HQs",
+          "excerpt": "O BiblioFuse é um leitor nativo para iPhone e iPad com iOS 17+ que gerencia arquivos CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT com tags, avaliações, sincronização iCloud e Wi-Fi Transfer. Este guia aborda como organizar, comprimir, transferir e ler sua biblioteca de quadrinhos no iPhone, iPad e Mac.",
+          "seoDescription": "O BiblioFuse é um leitor nativo para iPhone e iPad com iOS 17+ que gerencia arquivos CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT com tags, avaliações."
         },
         "build-perfect-digital-manga-collection": {
-          "title": "Como criar uma coleção digital de mangá perfeita: comprimir, deduplicar e ler em todo lugar",
-          "excerpt": "O BiblioFuse lê CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT no iPhone e iPad com iOS 17+. Combine o Archive Duplicate Scanner para remover volumes duplicados, o BiblioFuse Web Tool para comprimir arquivos no navegador e a aba Ferramentas no dispositivo para criar uma coleção manga otimizada que sincroniza em todo lugar."
+          "title": "Monte a Coleção de Mangá Digital Perfeita",
+          "excerpt": "O BiblioFuse lê CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT no iPhone e iPad com iOS 17+. Combine o Archive Duplicate Scanner para remover volumes duplicados, o BiblioFuse Web Tool para comprimir arquivos no navegador e a aba Ferramentas no dispositivo para criar uma coleção manga otimizada que sincroniza em todo lugar.",
+          "seoDescription": "O BiblioFuse lê CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT no iPhone e iPad com iOS 17+. Combine o Archive Duplicate Scanner para remover volumes duplicados, o."
         },
         "best-duplicate-file-finder-mac": {
-          "title": "Melhor localizador de arquivos duplicados para Mac em 2026: quadrinhos, fotos e arquivos",
-          "excerpt": "O Archive Duplicate Scanner é o melhor localizador de duplicatas para Mac em 2026 para bibliotecas mistas de quadrinhos (CBZ, CBR), fotos (HEIC, JPEG, RAW) e arquivos compactados. O hashing perceptual detecta arquivos visualmente idênticos mesmo após renomear, e a exclusão apenas para o Lixo protege sua coleção."
+          "title": "Melhor Localizador de Duplicatas para Mac (2026)",
+          "excerpt": "O Archive Duplicate Scanner é o melhor localizador de duplicatas para Mac em 2026 para bibliotecas mistas de quadrinhos (CBZ, CBR), fotos (HEIC, JPEG, RAW) e arquivos compactados. O hashing perceptual detecta arquivos visualmente idênticos mesmo após renomear, e a exclusão apenas para o Lixo protege sua coleção.",
+          "seoDescription": "O Archive Duplicate Scanner é o melhor localizador de duplicatas para Mac em 2026 para bibliotecas mistas de quadrinhos (CBZ, CBR), fotos (HEIC, JPEG."
         },
         "find-duplicate-photos-mac": {
           "title": "Encontrar fotos duplicadas no Mac — incluindo HEIC, WebP e RAW",
-          "excerpt": "O Archive Duplicate Scanner encontra fotos duplicadas no Mac usando hashing perceptual, identificando imagens visualmente idênticas em HEIC, JPEG, WebP, PNG, TIFF e RAW mesmo com nomes ou compressão diferentes. Mova duplicatas para o Lixo com estratégias de seleção automática."
+          "excerpt": "O Archive Duplicate Scanner encontra fotos duplicadas no Mac usando hashing perceptual, identificando imagens visualmente idênticas em HEIC, JPEG, WebP, PNG, TIFF e RAW mesmo com nomes ou compressão diferentes. Mova duplicatas para o Lixo com estratégias de seleção automática.",
+          "seoDescription": "O Archive Duplicate Scanner encontra fotos duplicadas no Mac usando hashing perceptual, identificando imagens visualmente idênticas em HEIC, JPEG, WebP."
         },
         "perceptual-hashing-duplicate-detection": {
           "title": "Como o Hash Perceptual Encontra Quadrinhos Duplicados Mesmo Após Renomeação",
-          "excerpt": "Archive Duplicate Scanner usa hash perceptual para encontrar arquivos CBZ e CBR duplicados comparando conteúdo visual de páginas — não checksums — detectando duplicatas renomeadas, recomprimidas ou baixadas de fontes diferentes."
+          "excerpt": "Archive Duplicate Scanner usa hash perceptual para encontrar arquivos CBZ e CBR duplicados comparando conteúdo visual de páginas — não checksums — detectando duplicatas renomeadas, recomprimidas ou baixadas de fontes diferentes.",
+          "seoDescription": "Archive Duplicate Scanner usa hash perceptual para encontrar arquivos CBZ e CBR duplicados comparando conteúdo visual de páginas — não checksums —."
         },
         "clean-up-duplicate-manga-library": {
           "title": "Como Limpar uma Coleção de Mangá Duplicada de Forma Inteligente",
-          "excerpt": "Archive Duplicate Scanner encontra volumes de mangá duplicados no seu Mac usando hash perceptual, combinando arquivos CBZ e CBR mesmo após renomeação ou recompressão. Revise pares correspondentes lado a lado e mova duplicatas para a Lixeira com segurança."
+          "excerpt": "Archive Duplicate Scanner encontra volumes de mangá duplicados no seu Mac usando hash perceptual, combinando arquivos CBZ e CBR mesmo após renomeação ou recompressão. Revise pares correspondentes lado a lado e mova duplicatas para a Lixeira com segurança.",
+          "seoDescription": "Archive Duplicate Scanner encontra volumes de mangá duplicados no seu Mac usando hash perceptual, combinando arquivos CBZ e CBR mesmo após renomeação ou."
         },
         "find-duplicate-comics-cbz-mac": {
           "title": "Como Encontrar e Remover Arquivos CBZ de Quadrinhos Duplicados no Mac",
-          "excerpt": "Archive Duplicate Scanner encontra arquivos de quadrinhos CBZ e CBR duplicados no Mac usando hash perceptual — correspondendo arquivos mesmo após renomeação, recompressão ou reempacotamento. Digitalize sua biblioteca e mova duplicatas com segurança para a Lixeira."
+          "excerpt": "Archive Duplicate Scanner encontra arquivos de quadrinhos CBZ e CBR duplicados no Mac usando hash perceptual — correspondendo arquivos mesmo após renomeação, recompressão ou reempacotamento. Digitalize sua biblioteca e mova duplicatas com segurança para a Lixeira.",
+          "seoDescription": "Archive Duplicate Scanner encontra arquivos de quadrinhos CBZ e CBR duplicados no Mac usando hash perceptual — correspondendo arquivos mesmo após."
         },
         "pdf-zip-password-manager-profiles": {
           "title": "Salve Senhas para Coleções CBZ e PDF — Nunca Mais Digite Novamente",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ armazena perfis de senha com nomes no iPhone, iPad e Mac para que você nunca precise redigitar senhas de seus arquivos PDF, CBZ e ZIP protegidos. Selecione um perfil salvo para descriptografar toda uma coleção em um toque, totalmente no dispositivo."
+          "excerpt": "SmartDecrypt PDF ZIP CBZ armazena perfis de senha com nomes no iPhone, iPad e Mac para que você nunca precise redigitar senhas de seus arquivos PDF, CBZ e ZIP protegidos. Selecione um perfil salvo para descriptografar toda uma coleção em um toque, totalmente no dispositivo.",
+          "seoDescription": "SmartDecrypt PDF ZIP CBZ armazena perfis de senha com nomes no iPhone, iPad e Mac para que você nunca precise redigitar senhas de seus arquivos PDF, CBZ e."
         },
         "read-manga-online-iphone": {
           "title": "Como Ler Mangá Online no iPhone Sem Perder o Seu Lugar",
-          "excerpt": "ContentCue é um navegador iOS gratuito que salva automaticamente sua posição de rolagem antes que anúncios pop-up interrompam sua sessão de leitura de mangá — toque em Retomar para voltar exatamente onde você parou no Webtoons, Tapas ou em qualquer site de mangá. Para coleções locais de CBZ, CBR e EPUB, BiblioFuse é o aplicativo leitor dedicado para iPhone."
+          "excerpt": "ContentCue é um navegador iOS gratuito que salva automaticamente sua posição de rolagem antes que anúncios pop-up interrompam sua sessão de leitura de mangá — toque em Retomar para voltar exatamente onde você parou no Webtoons, Tapas ou em qualquer site de mangá. Para coleções locais de CBZ, CBR e EPUB, BiblioFuse é o aplicativo leitor dedicado para iPhone.",
+          "seoDescription": "ContentCue é um navegador iOS gratuito que salva automaticamente sua posição de rolagem antes que anúncios pop-up interrompam sua sessão de leitura de."
         },
         "unlock-password-protected-pdf-iphone": {
           "title": "Como Desbloquear um PDF com Senha no iPhone e no Mac",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ remove senhas de arquivos PDF protegidos no iPhone, iPad e Mac sem enviar seus documentos para nenhum servidor externo. Ele também desbloqueia arquivos ZIP e CBZ protegidos por senha e pode descriptografar vários arquivos de uma só vez com o modo em lote integrado."
+          "excerpt": "SmartDecrypt PDF ZIP CBZ remove senhas de arquivos PDF protegidos no iPhone, iPad e Mac sem enviar seus documentos para nenhum servidor externo. Ele também desbloqueia arquivos ZIP e CBZ protegidos por senha e pode descriptografar vários arquivos de uma só vez com o modo em lote integrado.",
+          "seoDescription": "SmartDecrypt PDF ZIP CBZ remove senhas de arquivos PDF protegidos no iPhone, iPad e Mac sem enviar seus documentos para nenhum servidor externo."
         },
         "privacy-first-ebook-tools": {
           "title": "Por que a privacidade importa em ferramentas de ebook — e como o WASM muda tudo",
-          "excerpt": "A BiblioFuse Web Tool processa seus ebooks e arquivos de quadrinhos inteiramente dentro do seu navegador usando WebAssembly — seus arquivos nunca saem do seu dispositivo e nada é enviado a um servidor. Ela comprime, converte e mescla arquivos EPUB, CBZ e PDF com privacidade completa, e é gratuita sem necessidade de conta."
+          "excerpt": "A BiblioFuse Web Tool processa seus ebooks e arquivos de quadrinhos inteiramente dentro do seu navegador usando WebAssembly — seus arquivos nunca saem do seu dispositivo e nada é enviado a um servidor. Ela comprime, converte e mescla arquivos EPUB, CBZ e PDF com privacidade completa, e é gratuita sem necessidade de conta.",
+          "seoDescription": "A BiblioFuse Web Tool processa seus ebooks e arquivos de quadrinhos inteiramente dentro do seu navegador usando WebAssembly — seus arquivos nunca saem do."
         },
         "merge-epub-files-online": {
           "title": "Como juntar vários arquivos EPUB em um só (online, privado e gratuito)",
-          "excerpt": "A BiblioFuse Web Tool une vários arquivos EPUB em um único e-book diretamente no seu navegador — sem instalar software, sem criar conta e sem que seus arquivos sejam enviados a nenhum servidor."
+          "excerpt": "A BiblioFuse Web Tool une vários arquivos EPUB em um único e-book diretamente no seu navegador — sem instalar software, sem criar conta e sem que seus arquivos sejam enviados a nenhum servidor.",
+          "seoDescription": "A BiblioFuse Web Tool une vários arquivos EPUB em um único e-book diretamente no seu navegador — sem instalar software, sem criar conta e sem que seus."
         },
         "compress-epub-online": {
           "title": "Como comprimir arquivos EPUB online sem perder qualidade de leitura",
-          "excerpt": "A BiblioFuse Web Tool comprime e otimiza arquivos EPUB diretamente no seu navegador — sem software, sem conta e sem necessidade de fazer upload de arquivos. Arraste seu EPUB para a ferramenta, escolha um nível de compressão e baixe o arquivo menor em segundos."
+          "excerpt": "A BiblioFuse Web Tool comprime e otimiza arquivos EPUB diretamente no seu navegador — sem software, sem conta e sem necessidade de fazer upload de arquivos. Arraste seu EPUB para a ferramenta, escolha um nível de compressão e baixe o arquivo menor em segundos.",
+          "seoDescription": "A BiblioFuse Web Tool comprime e otimiza arquivos EPUB diretamente no seu navegador — sem software, sem conta e sem necessidade de fazer upload de."
         },
         "archive-duplicate-scanner-language-update": {
-          "title": "Archive Duplicate Scanner Agora Disponível em Português, Espanhol, Indonésio e Chinês",
-          "excerpt": "Archive Duplicate Scanner adiciona suporte completo de interface para Português, Espanhol, Bahasa Indonesia e Chinês Simplificado — o aplicativo agora fala o seu idioma nativamente. Encontre arquivos de quadrinhos e fotos duplicados com hashing perceptual, grátis para Mac e Windows."
+          "title": "Archive Duplicate Scanner: 4 Novos Idiomas",
+          "excerpt": "Archive Duplicate Scanner adiciona suporte completo de interface para Português, Espanhol, Bahasa Indonesia e Chinês Simplificado — o aplicativo agora fala o seu idioma nativamente. Encontre arquivos de quadrinhos e fotos duplicados com hashing perceptual, grátis para Mac e Windows.",
+          "seoDescription": "Archive Duplicate Scanner adiciona suporte completo de interface para Português, Espanhol, Bahasa Indonesia e Chinês Simplificado — o aplicativo agora."
         },
         "merge-cbz-files-online": {
           "title": "Como unir vários arquivos CBZ em um só — Ferramenta online gratuita",
-          "excerpt": "Combine capítulos CBZ em um único volume diretamente no navegador. Sem envio de arquivos, sem software — a BiblioFuse Web Tool faz a fusão gratuitamente."
+          "excerpt": "Combine capítulos CBZ em um único volume diretamente no navegador. Sem envio de arquivos, sem software — a BiblioFuse Web Tool faz a fusão gratuitamente.",
+          "seoDescription": "Combine capítulos CBZ em um único volume diretamente no navegador. Sem envio de arquivos, sem software — a BiblioFuse Web Tool faz a fusão gratuitamente."
         },
         "convert-pdf-to-cbz-online": {
           "title": "Como converter PDF em CBZ online (sem software, sem envio de arquivos)",
-          "excerpt": "Converta quadrinhos e mangás de PDF para CBZ no navegador usando WebAssembly. A BiblioFuse Web Tool processa tudo localmente — seus arquivos nunca saem do dispositivo."
+          "excerpt": "Converta quadrinhos e mangás de PDF para CBZ no navegador usando WebAssembly. A BiblioFuse Web Tool processa tudo localmente — seus arquivos nunca saem do dispositivo.",
+          "seoDescription": "Converta quadrinhos e mangás de PDF para CBZ no navegador usando WebAssembly. A BiblioFuse Web Tool processa tudo localmente — seus arquivos nunca saem do."
         },
         "manage-your-bibliofuse-library": {
-          "title": "Gerencie sua biblioteca BiblioFuse: pastas, transferências e streaming do Mac",
-          "excerpt": "Como adicionar livros em qualquer plataforma, gerenciar a grade da biblioteca e transmitir toda a coleção do Mac para o iPhone via Tailscale."
+          "title": "Gerenciando Sua Biblioteca BiblioFuse",
+          "excerpt": "Como adicionar livros em qualquer plataforma, gerenciar a grade da biblioteca e transmitir toda a coleção do Mac para o iPhone via Tailscale.",
+          "seoDescription": "Como adicionar livros em qualquer plataforma, gerenciar a grade da biblioteca e transmitir toda a coleção do Mac para o iPhone via Tailscale."
         },
         "reduce-comic-ebook-file-size": {
           "title": "Por que arquivos de quadrinhos e ebooks são tão grandes — e como resolver",
-          "excerpt": "CBZ e EPUB são arquivos ZIP com imagens PNG. Saiba por que são tão grandes e como o BiblioFuse os reduz em até 87,5%."
+          "excerpt": "CBZ e EPUB são arquivos ZIP com imagens PNG. Saiba por que são tão grandes e como o BiblioFuse os reduz em até 87,5%.",
+          "seoDescription": "CBZ e EPUB são arquivos ZIP com imagens PNG. Saiba por que são tão grandes e como o BiblioFuse os reduz em até 87,5%."
         },
         "getting-started-with-bibliofuse": {
           "title": "Primeiros Passos com BiblioFuse",
-          "excerpt": "Um guia pelas funcionalidades principais para importar livros, gerir a sua biblioteca e começar a ler em minutos."
+          "excerpt": "Um guia pelas funcionalidades principais para importar livros, gerir a sua biblioteca e começar a ler em minutos.",
+          "seoDescription": "Um guia pelas funcionalidades principais para importar livros, gerir a sua biblioteca e começar a ler em minutos."
         },
         "read-cbz-cbr-on-iphone": {
           "title": "Como Ler Quadrinhos CBZ e CBR no iPhone",
-          "excerpt": "O iPhone não suporta CBZ ou CBR nativamente. Este guia explica esses formatos e como importar seus quadrinhos no BiblioFuse."
+          "excerpt": "O iPhone não suporta CBZ ou CBR nativamente. Este guia explica esses formatos e como importar seus quadrinhos no BiblioFuse.",
+          "seoDescription": "O iPhone não suporta CBZ ou CBR nativamente. Este guia explica esses formatos e como importar seus quadrinhos no BiblioFuse."
         },
         "cbz-vs-cbr-vs-epub-formats-explained": {
           "title": "CBZ vs CBR vs EPUB — Formatos de Quadrinhos e Ebooks Explicados",
-          "excerpt": "Confuso com CBZ, CBR, EPUB e PDF? Este guia explica o que cada formato contém e qual escolher para quadrinhos, mangá ou romances."
+          "excerpt": "Confuso com CBZ, CBR, EPUB e PDF? Este guia explica o que cada formato contém e qual escolher para quadrinhos, mangá ou romances.",
+          "seoDescription": "Confuso com CBZ, CBR, EPUB e PDF? Este guia explica o que cada formato contém e qual escolher para quadrinhos, mangá ou romances."
         },
         "wifi-transfer-comics-to-iphone": {
           "title": "Como transferir quadrinhos para o iPhone sem iTunes ou cabo",
-          "excerpt": "O Wi-Fi Transfer do BiblioFuse permite arrastar toda a sua coleção de quadrinhos do navegador do Mac ou PC diretamente para o iPhone — sem cabo, sem iTunes, sem upload para a nuvem."
+          "excerpt": "O Wi-Fi Transfer do BiblioFuse permite arrastar toda a sua coleção de quadrinhos do navegador do Mac ou PC diretamente para o iPhone — sem cabo, sem iTunes, sem upload para a nuvem.",
+          "seoDescription": "O Wi-Fi Transfer do BiblioFuse permite arrastar toda a sua coleção de quadrinhos do navegador do Mac ou PC diretamente para o iPhone — sem cabo, sem."
         },
         "how-to-read-manga-on-iphone": {
-          "title": "Como ler manga no iPhone: da direita para a esquerda, scroll vertical e páginas duplas",
-          "excerpt": "Configure o BiblioFuse para leitura de manga: ative o modo direita-para-esquerda, use scroll vertical para webtoons e obtenha páginas duplas corretas no modo paisagem."
+          "title": "Ler Manga no iPhone: Modo RTL e Webtoon",
+          "excerpt": "Configure o BiblioFuse para leitura de manga: ative o modo direita-para-esquerda, use scroll vertical para webtoons e obtenha páginas duplas corretas no modo paisagem.",
+          "seoDescription": "Configure o BiblioFuse para leitura de manga: ative o modo direita-para-esquerda, use scroll vertical para webtoons e obtenha páginas duplas corretas no."
         },
         "best-comic-reader-iphone-ipad": {
           "title": "O melhor leitor de comics para iPhone e iPad em 2026",
-          "excerpt": "Uma análise prática do que torna um leitor de quadrinhos móvel excelente — suporte a formatos, desempenho, direção de leitura e gerenciamento de biblioteca — e como o BiblioFuse atende a cada ponto."
+          "excerpt": "Uma análise prática do que torna um leitor de quadrinhos móvel excelente — suporte a formatos, desempenho, direção de leitura e gerenciamento de biblioteca — e como o BiblioFuse atende a cada ponto.",
+          "seoDescription": "Uma análise prática do que torna um leitor de quadrinhos móvel excelente — suporte a formatos, desempenho, direção de leitura e gerenciamento de."
         },
         "icloud-sync-reading-progress": {
-          "title": "Como o BiblioFuse sincroniza o progresso de leitura entre iPhone, iPad e Mac via iCloud",
-          "excerpt": "O BiblioFuse usa o iCloud para sincronizar automaticamente sua posição exata de leitura, direção, tags e classificações em todos os seus dispositivos Apple."
+          "title": "Sincronizar Progresso de Leitura em Apple",
+          "excerpt": "O BiblioFuse usa o iCloud para sincronizar automaticamente sua posição exata de leitura, direção, tags e classificações em todos os seus dispositivos Apple.",
+          "seoDescription": "O BiblioFuse usa o iCloud para sincronizar automaticamente sua posição exata de leitura, direção, tags e classificações em todos os seus dispositivos."
         },
         "mac-home-library-streaming-iphone": {
-          "title": "Transmita Sua Biblioteca de Comics do Mac para o iPhone via Wi-Fi (Sem Copiar Nada)",
-          "excerpt": "Mac Home Library no BiblioFuse transmite toda a sua coleção do Mac para o iPhone via Wi-Fi local — sem copiar arquivos, sem precisar de espaço iCloud."
+          "title": "Transmita Sua Biblioteca Mac para o iPhone",
+          "excerpt": "Mac Home Library no BiblioFuse transmite toda a sua coleção do Mac para o iPhone via Wi-Fi local — sem copiar arquivos, sem precisar de espaço iCloud.",
+          "seoDescription": "Mac Home Library no BiblioFuse transmite toda a sua coleção do Mac para o iPhone via Wi-Fi local — sem copiar arquivos, sem precisar de espaço iCloud."
         },
         "ocr-comics-extract-text-iphone": {
           "title": "Extraia Texto de Comics e Mangá no iPhone com OCR",
-          "excerpt": "O OCR no dispositivo do BiblioFuse permite tocar em qualquer página de quadrinho ou mangá para extrair texto — pesquise vocabulário japonês, copie citações ou traduza diálogos sem sair do leitor."
+          "excerpt": "O OCR no dispositivo do BiblioFuse permite tocar em qualquer página de quadrinho ou mangá para extrair texto — pesquise vocabulário japonês, copie citações ou traduza diálogos sem sair do leitor.",
+          "seoDescription": "O OCR no dispositivo do BiblioFuse permite tocar em qualquer página de quadrinho ou mangá para extrair texto — pesquise vocabulário japonês, copie."
         },
         "epub-reader-iphone-no-drm": {
           "title": "Melhor Leitor EPUB Sem DRM para iPhone — Sem o Apple Books",
-          "excerpt": "BiblioFuse foi feito para coleções EPUB sem DRM — importe do Humble Bundle, Project Gutenberg ou editoras independentes, organize com tags e leia sem uma loja no caminho."
+          "excerpt": "BiblioFuse foi feito para coleções EPUB sem DRM — importe do Humble Bundle, Project Gutenberg ou editoras independentes, organize com tags e leia sem uma loja no caminho.",
+          "seoDescription": "BiblioFuse foi feito para coleções EPUB sem DRM — importe do Humble Bundle, Project Gutenberg ou editoras independentes, organize com tags e leia sem uma."
         },
         "bibliofuse-tools-tab-guide": {
           "title": "Usando a Aba Ferramentas do BiblioFuse: Comprimir, Converter e Mesclar no iPhone",
-          "excerpt": "A aba Ferramentas do BiblioFuse permite comprimir arquivos CBZ grandes, converter formatos e mesclar capítulos em volumes — tudo no seu iPhone, sem precisar de computador."
+          "excerpt": "A aba Ferramentas do BiblioFuse permite comprimir arquivos CBZ grandes, converter formatos e mesclar capítulos em volumes — tudo no seu iPhone, sem precisar de computador.",
+          "seoDescription": "A aba Ferramentas do BiblioFuse permite comprimir arquivos CBZ grandes, converter formatos e mesclar capítulos em volumes — tudo no seu iPhone, sem."
         },
         "decrypt-password-protected-cbz-zip": {
           "title": "Como abrir arquivos CBZ e ZIP protegidos por senha no iPhone",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ abre arquivos CBZ e ZIP protegidos por senha no iPhone, iPad e Mac sem enviar seus arquivos para nenhum servidor. Descriptografe arquivos de quadrinhos no dispositivo e abra-os no BiblioFuse."
+          "excerpt": "SmartDecrypt PDF ZIP CBZ abre arquivos CBZ e ZIP protegidos por senha no iPhone, iPad e Mac sem enviar seus arquivos para nenhum servidor. Descriptografe arquivos de quadrinhos no dispositivo e abra-os no BiblioFuse.",
+          "seoDescription": "SmartDecrypt PDF ZIP CBZ abre arquivos CBZ e ZIP protegidos por senha no iPhone, iPad e Mac sem enviar seus arquivos para nenhum servidor."
         },
         "batch-decrypt-password-protected-files": {
           "title": "Como descriptografar vários arquivos protegidos por senha de uma vez",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ descriptografa múltiplos arquivos PDF, CBZ e ZIP protegidos por senha em uma única operação no iPhone, iPad e Mac. Selecione qualquer número de arquivos, aplique um perfil de senha e o aplicativo processa tudo no dispositivo."
+          "excerpt": "SmartDecrypt PDF ZIP CBZ descriptografa múltiplos arquivos PDF, CBZ e ZIP protegidos por senha em uma única operação no iPhone, iPad e Mac. Selecione qualquer número de arquivos, aplique um perfil de senha e o aplicativo processa tudo no dispositivo.",
+          "seoDescription": "SmartDecrypt PDF ZIP CBZ descriptografa múltiplos arquivos PDF, CBZ e ZIP protegidos por senha em uma única operação no iPhone, iPad e Mac."
+        },
+        "cbz-cbr-rar-zip-which-format-best": {
+          "title": "CBZ, CBR, RAR, ZIP — Qual formato de arquivo de quadrinhos usar?",
+          "excerpt": "Uma explicação clara de cada formato de arquivo de quadrinhos, quando usar cada um e por que o BiblioFuse os lê todos sem problemas.",
+          "seoDescription": "Compare os formatos CBZ, CBR, RAR, ZIP e PDF para quadrinhos. Aprenda qual formato usar para sua coleção e como o BiblioFuse os lê nativamente."
+        },
+        "reading-progress-sync-no-cloud-account": {
+          "title": "Como sincronizar o progresso de leitura sem uma conta na nuvem",
+          "excerpt": "O BiblioFuse oferece várias formas de manter o progresso de leitura consistente entre dispositivos sem depender de nenhuma conta na nuvem.",
+          "seoDescription": "Sincronize o progresso de leitura de quadrinhos entre iPhone e iPad sem conta na nuvem. Wi-Fi, AirDrop, marcadores e mais com o BiblioFuse."
         }
       }
     }

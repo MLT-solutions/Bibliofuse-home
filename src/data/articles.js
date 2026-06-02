@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'reading-progress-sync-no-cloud-account',
+    date: '2026-06-03',
+    tags: ['sync', 'ios', 'tips'],
+    coverImage: '/image/blog/Sync Progress Offline.jpg',
+  },
+  {
+    slug: 'cbz-cbr-rar-zip-which-format-best',
+    date: '2026-06-03',
+    tags: ['formats', 'guide', 'cbz'],
+    coverImage: '/image/blog/Comic Archive Formats.jpg',
+  },
+  {
     slug: 'smartdecrypt-language-update',
     date: '2026-06-02',
     tags: ['update', 'smartdecrypt', 'languages'],
