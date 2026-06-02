@@ -84,5 +84,5 @@ This file is the source of truth for the daily article agent.
 | 26 | ✅ | `digital-comic-library-management-guide` | The Complete Guide to Managing a Digital Comic Library on iPhone and Mac | BiblioFuse iOS + Web |
 | 27 | ✅ | `cbz-cbr-rar-zip-which-format-best` | CBZ, CBR, RAR, ZIP — Which Comic Archive Format Should You Use? | BiblioFuse iOS |
 | 28 | ✅ | `reading-progress-sync-no-cloud-account` | How to Sync Reading Progress Without a Cloud Account | BiblioFuse iOS |
-| 29 | ⬜ | `webp-vs-png-for-comics` | WebP vs PNG for Comics: Which Format Gives the Best Quality-to-Size Ratio? | BiblioFuse iOS + Web |
-| 30 | ⬜ | `tailscale-remote-library-access` | Access Your Home Comic Library Remotely with BiblioFuse and Tailscale | BiblioFuse iOS |
+| 29 | ✅ | `webp-vs-png-for-comics` | WebP vs PNG for Comics: Which Format Gives the Best Quality-to-Size Ratio? | BiblioFuse iOS + Web |
+| 30 | ✅ | `tailscale-remote-library-access` | Access Your Home Comic Library Remotely with BiblioFuse and Tailscale | BiblioFuse iOS |

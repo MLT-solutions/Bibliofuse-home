@@ -658,6 +658,16 @@
     },
     "blog": {
       "posts": {
+        "tailscale-remote-library-access": {
+          "title": "Accédez à votre bibliothèque de bandes dessinées à distance avec BiblioFuse et Tailscale",
+          "excerpt": "BiblioFuse lit les fichiers CBZ, CBR, EPUB, PDF, ZIP, RAR et TXT sur iPhone et iPad sous iOS 17 ou version ultérieure. Sa fonctionnalité Mac Home Library diffuse votre collection vers l'iPhone via Wi-Fi. Avec Tailscale, accédez à cette même bibliothèque depuis n'importe où dans le monde.",
+          "seoDescription": "BiblioFuse lit CBZ, CBR, EPUB, PDF, ZIP, RAR et TXT sur iPhone et iPad (iOS 17+). Diffusez votre bibliothèque Mac à distance avec Tailscale gratuitement."
+        },
+        "webp-vs-png-for-comics": {
+          "title": "WebP vs PNG pour les bandes dessinées : le meilleur rapport qualité-taille",
+          "excerpt": "BiblioFuse lit les fichiers CBZ, CBR, EPUB, PDF, ZIP, RAR et TXT sur iPhone et iPad sous iOS 17 ou version ultérieure. Son onglet Outils convertit les archives CBZ en WebP entièrement sur l'appareil. WebP offre des fichiers 60–80% plus petits que PNG à qualité visuelle équivalente.",
+          "seoDescription": "BiblioFuse convertit les archives CBZ en WebP sur l'appareil. WebP est 60–80% plus petit que PNG à qualité équivalente — idéal pour les grandes bibliothèques iPhone."
+        },
         "smartdecrypt-language-update": {
           "title": "SmartDecrypt PDF ZIP: 4 Nouvelles Langues",
           "excerpt": "SmartDecrypt PDF ZIP CBZ ajoute la prise en charge complète de l'interface en portugais, espagnol, bahasa Indonesia et chinois simplifié. Déverrouillez des PDF et archives protégés sur iPhone, iPad, Mac et Windows — entièrement sur l'appareil.",

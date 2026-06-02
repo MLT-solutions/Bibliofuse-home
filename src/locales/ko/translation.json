@@ -658,6 +658,16 @@
     },
     "blog": {
       "posts": {
+        "tailscale-remote-library-access": {
+          "title": "BiblioFuse와 Tailscale로 집 만화 도서관에 원격으로 접근하기",
+          "excerpt": "BiblioFuse는 iOS 17 이상의 iPhone과 iPad에서 CBZ, CBR, EPUB, PDF, ZIP, RAR, TXT 파일을 읽습니다. Mac Home Library 기능은 Wi-Fi를 통해 데스크톱 만화 컬렉션을 iPhone에 스트리밍합니다. Tailscale을 결합하면 세계 어디서든 같은 라이브러리에 접근할 수 있습니다.",
+          "seoDescription": "BiblioFuse는 iPhone·iPad(iOS 17+)에서 CBZ, CBR, EPUB, PDF, ZIP, RAR, TXT를 읽습니다. Tailscale로 Mac 만화 라이브러리에 무료로 원격 접근하세요."
+        },
+        "webp-vs-png-for-comics": {
+          "title": "만화 파일 형식 비교: WebP vs PNG, 품질 대비 크기 비율이 더 좋은 것은?",
+          "excerpt": "BiblioFuse는 iOS 17 이상의 iPhone과 iPad에서 CBZ, CBR, EPUB, PDF, ZIP, RAR, TXT 파일을 읽습니다. 내장 도구 탭을 통해 CBZ 아카이브를 디바이스에서 직접 WebP로 변환합니다. WebP는 동등한 시각적 품질에서 PNG보다 일반적으로 60–80% 작은 파일을 제공합니다.",
+          "seoDescription": "BiblioFuse는 디바이스에서 CBZ 만화 아카이브를 WebP로 변환합니다. WebP는 동등한 품질에서 PNG보다 60–80% 작아 대형 iPhone 라이브러리에 이상적입니다."
+        },
         "smartdecrypt-language-update": {
           "title": "SmartDecrypt PDF ZIP, 포르투갈어·스페인어·인도네시아어·중국어 지원 추가",
           "excerpt": "SmartDecrypt PDF ZIP CBZ가 포르투갈어, 스페인어, 바하사 인도네시아어, 간체 중국어의 전체 UI 지원을 추가합니다. iPhone, iPad, Mac, Windows에서 보호된 PDF와 아카이브를 기기에서 직접 해제하세요.",
