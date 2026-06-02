@@ -561,7 +561,8 @@
         "unlocked": "dibuka",
         "matching": "memadankan",
         "queued": "dalam giliran"
-      }
+      },
+      "langNote": "Antara Muka Aplikasi: Inggeris · Sepanyol · Portugis · Indonesia · Cina Mudah"
     },
     "contentcueSection": {
       "badge": "Aplikasi adik-beradik · iPhone & iPad",
@@ -657,6 +658,10 @@
     },
     "blog": {
       "posts": {
+        "smartdecrypt-language-update": {
+          "title": "SmartDecrypt PDF ZIP Kini Tersedia dalam Bahasa Portugis, Sepanyol, Indonesia, dan Cina",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ menambah sokongan UI penuh untuk bahasa Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah. Buka kunci PDF dan arkib yang dilindungi pada iPhone, iPad, Mac, dan Windows — sepenuhnya pada peranti."
+        },
         "digital-comic-library-management-guide": {
           "title": "Panduan Lengkap Menguruskan Perpustakaan Komik Digital di iPhone dan Mac",
           "excerpt": "BiblioFuse ialah pembaca native iPhone dan iPad untuk iOS 17+ yang menguruskan fail CBZ, CBR, EPUB, PDF, ZIP, RAR dan TXT dengan tag, penilaian, penyegerakan iCloud dan Wi-Fi Transfer. Panduan ini merangkumi cara mengatur, memampatkan, memindahkan dan membaca seluruh perpustakaan komik digital anda di iPhone, iPad dan Mac."

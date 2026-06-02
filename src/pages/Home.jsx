@@ -797,6 +797,9 @@ function SmartDecryptSection() {
             <p className="mt-5 text-xs text-white/50">
               {t('redesign.decryptSection.pricing')}
             </p>
+            <p className="mt-3 rounded-lg bg-violet-400/10 px-3 py-2 text-xs text-violet-200">
+              <span className="font-semibold">{t('redesign.decryptSection.langNote')}</span>
+            </p>
           </div>
 
           <div className="relative">

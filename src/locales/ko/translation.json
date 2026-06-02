@@ -561,7 +561,8 @@
         "unlocked": "잠금 해제됨",
         "matching": "매칭 중",
         "queued": "대기 중"
-      }
+      },
+      "langNote": "앱 UI 언어: 영어 · 스페인어 · 포르투갈어 · 인도네시아어 · 간체 중국어"
     },
     "contentcueSection": {
       "badge": "자매 앱 · iPhone 및 iPad",
@@ -657,6 +658,10 @@
     },
     "blog": {
       "posts": {
+        "smartdecrypt-language-update": {
+          "title": "SmartDecrypt PDF ZIP, 포르투갈어·스페인어·인도네시아어·중국어 지원 추가",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ가 포르투갈어, 스페인어, 바하사 인도네시아어, 간체 중국어의 전체 UI 지원을 추가합니다. iPhone, iPad, Mac, Windows에서 보호된 PDF와 아카이브를 기기에서 직접 해제하세요."
+        },
         "digital-comic-library-management-guide": {
           "title": "iPhone과 Mac에서 디지털 만화 라이브러리 관리하기 완벽 가이드",
           "excerpt": "BiblioFuse는 iOS 17 이상용 네이티브 iPhone·iPad 리더로, CBZ, CBR, EPUB, PDF, ZIP, RAR, TXT 파일을 태그·평점·iCloud 동기화·Wi-Fi Transfer로 관리합니다. 이 가이드는 iPhone, iPad, Mac에서 디지털 만화 라이브러리를 정리·압축·전송·읽는 전 과정을 다룹니다."

@@ -561,7 +561,8 @@
         "unlocked": "разблокировано",
         "matching": "сопоставление",
         "queued": "в очереди"
-      }
+      },
+      "langNote": "Интерфейс приложения: Английский · Испанский · Португальский · Индонезийский · Упрощённый китайский"
     },
     "contentcueSection": {
       "badge": "Дополнительное приложение · iPhone и iPad",
@@ -657,6 +658,10 @@
     },
     "blog": {
       "posts": {
+        "smartdecrypt-language-update": {
+          "title": "SmartDecrypt PDF ZIP теперь доступен на португальском, испанском, индонезийском и китайском",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ добавляет полную локализацию интерфейса на португальском, испанском, bahasa Indonesia и упрощённом китайском. Разблокируйте защищённые PDF и архивы на iPhone, iPad, Mac и Windows — полностью на устройстве."
+        },
         "digital-comic-library-management-guide": {
           "title": "Полное руководство по управлению цифровой библиотекой комиксов на iPhone и Mac",
           "excerpt": "BiblioFuse — нативный ридер для iPhone и iPad с iOS 17+, который управляет файлами CBZ, CBR, EPUB, PDF, ZIP, RAR и TXT с помощью тегов, оценок, синхронизации iCloud и Wi-Fi Transfer. Руководство охватывает организацию, сжатие, перенос и чтение всей цифровой библиотеки комиксов на iPhone, iPad и Mac."

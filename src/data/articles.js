@@ -1,5 +1,11 @@
 export const articles = [
   {
+    slug: 'smartdecrypt-language-update',
+    date: '2026-06-02',
+    tags: ['update', 'smartdecrypt', 'languages'],
+    coverImage: '/image/blog/SmartDecrypt 4 New Languages.jpg',
+  },
+  {
     slug: 'digital-comic-library-management-guide',
     date: '2026-06-01',
     tags: ['guide', 'ios', 'tips'],

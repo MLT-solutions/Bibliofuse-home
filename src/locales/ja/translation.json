@@ -561,7 +561,8 @@
         "unlocked": "解除済み",
         "matching": "マッチング中",
         "queued": "待機中"
-      }
+      },
+      "langNote": "アプリ UI 言語：英語 · スペイン語 · ポルトガル語 · インドネシア語 · 簡体字中国語"
     },
     "contentcueSection": {
       "badge": "姉妹アプリ · iPhone & iPad",
@@ -657,6 +658,10 @@
     },
     "blog": {
       "posts": {
+        "smartdecrypt-language-update": {
+          "title": "SmartDecrypt PDF ZIP がポルトガル語・スペイン語・インドネシア語・中国語に対応",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ がポルトガル語、スペイン語、バハサ・インドネシア語、簡体字中国語の完全な UI サポートを追加。iPhone、iPad、Mac、Windows でパスワード保護された PDF やアーカイブをデバイス上で解除。"
+        },
         "digital-comic-library-management-guide": {
           "title": "iPhoneとMacでデジタルコミックライブラリを管理する完全ガイド",
           "excerpt": "BiblioFuseはiOS 17以降対応のネイティブiPhone・iPadリーダーで、CBZ、CBR、EPUB、PDF、ZIP、RAR、TXTファイルをタグ・評価・iCloud同期・Wi-Fi転送で管理できます。このガイドでは、iPhone、iPad、MacでデジタルコミックライブラリをiPhoneやMacで整理・圧縮・転送・閲覧する全手順を解説します。"
