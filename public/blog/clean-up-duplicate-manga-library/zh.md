@@ -4,7 +4,7 @@
 
 对大多数漫画读者来说，重复文件会悄无声息地积累多年——来自不同来源的下载、在硬盘间移动文件、从未清理的备份。结果就是存储空间被浪费、阅读时感到困惑，也没有简单的方法来判断哪个版本质量更好。
 
-本指南介绍了一个实用的工作流程，用 [Archive Duplicate Scanner](https://bibliofuse.com/zh/) 来查找、审查并删除重复漫画——这是一款专为此问题设计的 Mac 工具。
+本指南介绍了一个实用的工作流程，用 [Archive Duplicate Scanner](/zh/) 来查找、审查并删除重复漫画——这是一款专为此问题设计的 Mac 工具。
 
 ---
 
@@ -24,7 +24,7 @@
 
 ## Archive Duplicate Scanner 的不同之处
 
-[Archive Duplicate Scanner](https://bibliofuse.com/zh/) 使用**感知哈希**来比较CBZ和CBR文件内部的实际图像。它不是问"这两个文件是否逐字节相同？"，而是问"这两个文件是否包含相同的漫画页面？"
+[Archive Duplicate Scanner](/zh/) 使用**感知哈希**来比较CBZ和CBR文件内部的实际图像。它不是问"这两个文件是否逐字节相同？"，而是问"这两个文件是否包含相同的漫画页面？"
 
 这意味着它能检测到以下情况的重复文件：
 
@@ -63,7 +63,7 @@ Archive Duplicate Scanner 将文件移至废纸篓——不是永久删除。如
 
 **每次大量下载后进行扫描。** 下载一批新卷后运行 Archive Duplicate Scanner，在重复文件增多前及时发现。
 
-**使用 [BiblioFuse](https://bibliofuse.com/zh/) 从整理好的文件夹中阅读。** 通过 BiblioFuse 的本地流媒体功能将 Mac 库推送到 iPhone 或 iPad 时，你从单一真实来源读取内容。
+**使用 [BiblioFuse](/zh/) 从整理好的文件夹中阅读。** 通过 BiblioFuse 的本地流媒体功能将 Mac 库推送到 iPhone 或 iPad 时，你从单一真实来源读取内容。
 
 ---
 

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useParams, useLocation } from 'react-router-dom';
 import { SUPPORTED_LANGUAGES } from '../i18n';
 
-const SEO = ({ title, description, canonical, type = 'website', schemaType = 'suite', schemaName = 'BiblioFuse', featureList }) => {
+const SEO = ({ title, description, canonical, type = 'website', schemaType = 'suite', schemaName = 'BiblioFuse', featureList, image, datePublished, author }) => {
     const { i18n, t } = useTranslation();
     const { lang } = useParams();
     const location = useLocation();
@@ -39,6 +39,29 @@ const SEO = ({ title, description, canonical, type = 'website', schemaType = 'su
             "priceCurrency": "USD"
         }
     };
+    const articleSchema = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": title,
+        "description": description,
+        "url": canonicalUrl,
+        "inLanguage": currentLang,
+        "datePublished": datePublished || null,
+        "image": image ? `${baseUrl}${image}` : `${baseUrl}/logo_rounded.png`,
+        "author": {
+            "@type": "Person",
+            "name": author || "BiblioFuse"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": siteName,
+            "logo": {
+                "@type": "ImageObject",
+                "url": `${baseUrl}/logo_rounded.png`
+            }
+        }
+    };
+
     const structuredData = schemaType === 'website'
         ? {
             "@context": "https://schema.org",
@@ -48,6 +71,8 @@ const SEO = ({ title, description, canonical, type = 'website', schemaType = 'su
             "inLanguage": currentLang,
             "description": description
         }
+        : schemaType === 'article'
+        ? articleSchema
         : softwareSuite;
 
     return (
@@ -80,13 +105,13 @@ const SEO = ({ title, description, canonical, type = 'website', schemaType = 'su
             <meta property="og:title" content={fullTitle} />
             <meta property="og:description" content={description} />
             <meta property="og:url" content={canonicalUrl} />
-            <meta property="og:image" content={`${baseUrl}/logo_rounded.png`} />
+            <meta property="og:image" content={image ? `${baseUrl}${image}` : `${baseUrl}/logo_rounded.png`} />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={fullTitle} />
             <meta name="twitter:description" content={description} />
-            <meta name="twitter:image" content={`${baseUrl}/logo_rounded.png`} />
+            <meta name="twitter:image" content={image ? `${baseUrl}${image}` : `${baseUrl}/logo_rounded.png`} />
 
             {/* Structured Data */}
             <script type="application/ld+json">

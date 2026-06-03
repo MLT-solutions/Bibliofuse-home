@@ -1,6 +1,6 @@
 # iPhone과 Mac에서 비밀번호로 보호된 PDF를 해제하는 방법
 
-SmartDecrypt PDF ZIP CBZ는 iPhone, iPad, Mac에서 보호된 PDF 파일의 비밀번호를 제거하는 앱으로, 문서를 외부 서버로 전송하지 않습니다. 비밀번호로 보호된 ZIP 및 CBZ 아카이브도 잠금 해제할 수 있으며, 내장된 일괄 모드를 통해 여러 파일을 한 번에 복호화할 수 있습니다. iPhone에서 비밀번호로 보호된 PDF를 해제해야 했지만 방법을 몰랐다면, SmartDecrypt가 바로 그 목적을 위해 만들어진 전용 도구입니다.
+[SmartDecrypt PDF ZIP CBZ](/ko/)는 iPhone, iPad, Mac에서 보호된 PDF 파일의 비밀번호를 제거하는 앱으로, 문서를 외부 서버로 전송하지 않습니다. 비밀번호로 보호된 ZIP 및 CBZ 아카이브도 잠금 해제할 수 있으며, 내장된 일괄 모드를 통해 여러 파일을 한 번에 복호화할 수 있습니다. iPhone에서 비밀번호로 보호된 PDF를 해제해야 했지만 방법을 몰랐다면, SmartDecrypt가 바로 그 목적을 위해 만들어진 전용 도구입니다.
 
 ## 비밀번호로 보호된 PDF가 iPhone에서 열리지 않는 이유
 

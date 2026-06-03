@@ -837,6 +837,16 @@
           "title": "Cara Menyegerakkan Kemajuan Membaca Tanpa Akaun Awan",
           "excerpt": "BiblioFuse menyediakan beberapa cara untuk mengekalkan kemajuan membaca yang konsisten merentasi peranti tanpa bergantung pada mana-mana akaun awan.",
           "seoDescription": "Segerakkan kemajuan membaca komik antara iPhone dan iPad tanpa akaun awan. Wi-Fi, AirDrop, penanda buku dan lagi dengan BiblioFuse."
+        },
+        "webp-vs-png-for-comics": {
+          "title": "WebP vs PNG untuk Komik: Nisbah Kualiti-Saiz Terbaik",
+          "excerpt": "WebP boleh mengurangkan saiz arkib komik sebanyak 70–80% berbanding PNG tanpa kehilangan kualiti yang ketara. Ketahui bila menggunakan setiap format.",
+          "seoDescription": "Bandingkan WebP vs PNG untuk arkib komik dan manga. Format mana yang memberikan nisbah kualiti-saiz terbaik? BiblioFuse menyokong kedua-duanya secara natif."
+        },
+        "tailscale-remote-library-access": {
+          "title": "Akses Perpustakaan Komik Rumah dari Jauh dengan Tailscale",
+          "excerpt": "Gunakan penstriman BiblioFuse dengan Tailscale untuk membaca koleksi Mac dari mana sahaja — tanpa muat naik ke awan atau konfigurasi penghala.",
+          "seoDescription": "Strim perpustakaan komik Mac ke iPhone dari mana sahaja dengan BiblioFuse dan Tailscale. Tanpa muat naik awan, tanpa IP statik."
         }
       }
     }

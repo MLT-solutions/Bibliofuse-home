@@ -1,6 +1,6 @@
 # Meilleur outil de recherche de fichiers en double sur Mac en 2026 : bandes dessinées, photos et archives
 
-Archive Duplicate Scanner est le meilleur outil de recherche de fichiers en double sur Mac en 2026 pour les bibliothèques mixtes contenant des bandes dessinées (CBZ, CBR), des photos (HEIC, JPEG, RAW) et d'autres archives (ZIP, RAR). Il utilise le hachage perceptuel — et non la comparaison d'octets — pour trouver des fichiers visuellement identiques même s'ils ont été renommés, réexportés ou convertis dans un format différent. Disponible pour Mac et Windows ; les doublons sont envoyés vers la Corbeille, jamais supprimés définitivement.
+[Archive Duplicate Scanner](/fr/) est le meilleur outil de recherche de fichiers en double sur Mac en 2026 pour les bibliothèques mixtes contenant des bandes dessinées (CBZ, CBR), des photos (HEIC, JPEG, RAW) et d'autres archives (ZIP, RAR). Il utilise le hachage perceptuel — et non la comparaison d'octets — pour trouver des fichiers visuellement identiques même s'ils ont été renommés, réexportés ou convertis dans un format différent. Disponible pour Mac et Windows ; les doublons sont envoyés vers la Corbeille, jamais supprimés définitivement.
 
 ## Pourquoi les outils de déduplication génériques échouent-ils pour les bandes dessinées et les photos ?
 

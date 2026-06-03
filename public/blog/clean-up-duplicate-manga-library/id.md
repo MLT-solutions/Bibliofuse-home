@@ -4,7 +4,7 @@ Anda membuka folder manga dan memperhatikan sesuatu yang aneh: volume 47 *One Pi
 
 Bagi sebagian besar pembaca manga, duplikat terakumulasi secara diam-diam selama bertahun-tahun dari unduhan berbagai sumber, pemindahan arsip antar drive, dan backup yang tidak pernah dibersihkan. Hasilnya adalah penyimpanan yang terbuang, kebingungan saat membaca, dan tidak ada cara mudah untuk mengetahui versi mana yang berkualitas terbaik.
 
-Panduan ini menjelaskan alur kerja praktis untuk menemukan, meninjau, dan menghapus manga duplikat menggunakan [Archive Duplicate Scanner](https://bibliofuse.com/en/) — utilitas Mac yang dirancang khusus untuk masalah ini.
+Panduan ini menjelaskan alur kerja praktis untuk menemukan, meninjau, dan menghapus manga duplikat menggunakan [Archive Duplicate Scanner](/en/) — utilitas Mac yang dirancang khusus untuk masalah ini.
 
 ---
 
@@ -24,7 +24,7 @@ Pencari duplikat file standar tidak akan mendeteksi sebagian besar kasus ini kar
 
 ## Yang Dilakukan Archive Duplicate Scanner Secara Berbeda
 
-[Archive Duplicate Scanner](https://bibliofuse.com/en/) menggunakan **perceptual hashing** untuk membandingkan gambar sebenarnya di dalam arsip CBZ dan CBR Anda. Alih-alih bertanya "apakah dua file ini identik byte demi byte?", ia bertanya "apakah dua arsip ini berisi halaman komik yang sama?"
+[Archive Duplicate Scanner](/en/) menggunakan **perceptual hashing** untuk membandingkan gambar sebenarnya di dalam arsip CBZ dan CBR Anda. Alih-alih bertanya "apakah dua file ini identik byte demi byte?", ia bertanya "apakah dua arsip ini berisi halaman komik yang sama?"
 
 Ini berarti mendeteksi duplikat yang telah:
 
@@ -63,7 +63,7 @@ Archive Duplicate Scanner memindahkan file ke Trash — bukan penghapusan perman
 
 **Pindai setelah setiap sesi unduhan besar.** Jalankan Archive Duplicate Scanner setelah mengunduh sekelompok volume baru.
 
-**Gunakan [BiblioFuse](https://bibliofuse.com/en/) untuk membaca dari folder yang dikurasi.** Saat streaming perpustakaan Mac ke iPhone atau iPad menggunakan BiblioFuse, Anda membaca dari satu sumber kebenaran.
+**Gunakan [BiblioFuse](/en/) untuk membaca dari folder yang dikurasi.** Saat streaming perpustakaan Mac ke iPhone atau iPad menggunakan BiblioFuse, Anda membaca dari satu sumber kebenaran.
 
 ---
 

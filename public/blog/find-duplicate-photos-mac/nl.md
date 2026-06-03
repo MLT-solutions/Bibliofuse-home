@@ -1,6 +1,6 @@
 # Dubbele foto's vinden op Mac — inclusief HEIC, WebP en RAW
 
-Archive Duplicate Scanner vindt dubbele foto's op Mac met behulp van perceptuele hashing, een techniek die visueel identieke afbeeldingen herkent ook als ze verschillende bestandsnamen, indelingen of compressie-instellingen hebben. De app ondersteunt HEIC, WebP, JPEG, PNG, TIFF, RAW en tientallen andere indelingen. De app is beschikbaar voor Mac en Windows en verplaatst duplicaten veilig naar de Prullenmand in plaats van ze permanent te verwijderen.
+[Archive Duplicate Scanner](/nl/) vindt dubbele foto's op Mac met behulp van perceptuele hashing, een techniek die visueel identieke afbeeldingen herkent ook als ze verschillende bestandsnamen, indelingen of compressie-instellingen hebben. De app ondersteunt HEIC, WebP, JPEG, PNG, TIFF, RAW en tientallen andere indelingen. De app is beschikbaar voor Mac en Windows en verplaatst duplicaten veilig naar de Prullenmand in plaats van ze permanent te verwijderen.
 
 ## Het probleem met fotobibliotheken die grenzeloos groeien
 

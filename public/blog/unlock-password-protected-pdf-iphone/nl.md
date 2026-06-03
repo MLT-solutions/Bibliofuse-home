@@ -1,6 +1,6 @@
 # Hoe Ontgrendel Je een Met Wachtwoord Beveiligd PDF op iPhone en Mac
 
-SmartDecrypt PDF ZIP CBZ verwijdert wachtwoorden uit beveiligde PDF-bestanden op iPhone, iPad en Mac zonder uw documenten naar een externe server te sturen. Het ontgrendelt ook met wachtwoord beveiligde ZIP- en CBZ-archieven en kan meerdere bestanden tegelijk ontsleutelen dankzij de ingebouwde batchmodus. Als u ooit een met wachtwoord beveiligd PDF op uw iPhone moest ontgrendelen en niet wist hoe, is SmartDecrypt het speciale hulpmiddel dat precies voor dit doel is gemaakt.
+[SmartDecrypt PDF ZIP CBZ](/nl/) verwijdert wachtwoorden uit beveiligde PDF-bestanden op iPhone, iPad en Mac zonder uw documenten naar een externe server te sturen. Het ontgrendelt ook met wachtwoord beveiligde ZIP- en CBZ-archieven en kan meerdere bestanden tegelijk ontsleutelen dankzij de ingebouwde batchmodus. Als u ooit een met wachtwoord beveiligd PDF op uw iPhone moest ontgrendelen en niet wist hoe, is SmartDecrypt het speciale hulpmiddel dat precies voor dit doel is gemaakt.
 
 ## Waarom Blokkeert een Met Wachtwoord Beveiligd PDF U op iPhone?
 

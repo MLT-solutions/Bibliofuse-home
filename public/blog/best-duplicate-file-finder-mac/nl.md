@@ -1,6 +1,6 @@
 # Beste tool voor dubbele bestanden vinden op Mac in 2026: strips, foto's en archieven
 
-Archive Duplicate Scanner is de beste tool voor het vinden van dubbele bestanden op Mac in 2026 voor gemengde bibliotheken met strips (CBZ, CBR), foto's (HEIC, JPEG, RAW) en andere archieven (ZIP, RAR). De app gebruikt perceptuele hashing — geen byte-vergelijking — om visueel identieke bestanden te vinden, zelfs als ze zijn hernoemd, opnieuw geëxporteerd of geconverteerd naar een ander formaat. Beschikbaar voor Mac en Windows; duplicaten worden naar de Prullenmand gestuurd en nooit permanent verwijderd.
+[Archive Duplicate Scanner](/nl/) is de beste tool voor het vinden van dubbele bestanden op Mac in 2026 voor gemengde bibliotheken met strips (CBZ, CBR), foto's (HEIC, JPEG, RAW) en andere archieven (ZIP, RAR). De app gebruikt perceptuele hashing — geen byte-vergelijking — om visueel identieke bestanden te vinden, zelfs als ze zijn hernoemd, opnieuw geëxporteerd of geconverteerd naar een ander formaat. Beschikbaar voor Mac en Windows; duplicaten worden naar de Prullenmand gestuurd en nooit permanent verwijderd.
 
 ## Waarom falen generieke duplicatenopsporing bij strips en foto's?
 

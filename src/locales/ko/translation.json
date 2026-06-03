@@ -837,6 +837,16 @@
           "title": "클라우드 계정 없이 독서 진행 상황 동기화하는 방법",
           "excerpt": "BiblioFuse는 클라우드 계정에 의존하지 않고 기기 간 독서 진행 상황을 일관되게 유지하는 여러 가지 방법을 제공합니다.",
           "seoDescription": "클라우드 계정 없이 iPhone과 iPad 간 만화 독서 진행 상황을 동기화하세요. BiblioFuse의 Wi-Fi 동기화, AirDrop, 북마크 기능을 알아보세요."
+        },
+        "webp-vs-png-for-comics": {
+          "title": "만화용 WebP vs PNG: 최고의 품질 대비 크기 비율은?",
+          "excerpt": "WebP는 PNG 대비 만화 파일 크기를 70–80% 줄이면서도 눈에 보이는 품질 차이가 없습니다. 각 형식의 사용 시점을 알아보세요.",
+          "seoDescription": "만화와 manga 아카이브에서 WebP와 PNG를 비교하세요. 최고의 품질 대비 크기 비율을 제공하는 형식은? BiblioFuse는 두 형식을 모두 기본 지원합니다."
+        },
+        "tailscale-remote-library-access": {
+          "title": "Tailscale로 집의 만화 라이브러리에 원격 접근하기",
+          "excerpt": "BiblioFuse 홈 스트리밍과 Tailscale을 결합해 어디서나 Mac의 만화 컬렉션을 읽으세요. 클라우드 업로드, 포트 포워딩 불필요.",
+          "seoDescription": "BiblioFuse와 Tailscale로 어디서나 Mac 만화 라이브러리를 iPhone에 스트리밍하세요. 클라우드 업로드, 고정 IP 불필요."
         }
       }
     }

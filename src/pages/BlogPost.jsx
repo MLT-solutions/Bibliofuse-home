@@ -68,18 +68,48 @@ const BlogPost = () => {
 
   const title = t(`redesign.blog.posts.${slug}.title`, { defaultValue: slug });
   const excerpt = t(`redesign.blog.posts.${slug}.excerpt`, { defaultValue: '' });
+  const seoDescription = t(`redesign.blog.posts.${slug}.seoDescription`, { defaultValue: excerpt });
   const dateStr = new Date(article.date).toLocaleDateString(currentLang, {
     year: 'numeric', month: 'long', day: 'numeric',
   });
+
+  // Build FAQPage JSON-LD from bold Q&A pairs in the FAQ section
+  const faqSchema = React.useMemo(() => {
+    if (!content) return null;
+    const faqStart = content.search(/^## (Frequently Asked Questions|FAQ)/m);
+    if (faqStart === -1) return null;
+    const faqSection = content.slice(faqStart);
+    const pairs = [];
+    const qRegex = /\*\*(.+\?)\*\*\n+([\s\S]+?)(?=\n\n\*\*|\n\n##|$)/g;
+    let match;
+    while ((match = qRegex.exec(faqSection)) !== null) {
+      pairs.push({ question: match[1].trim(), answer: match[2].trim().replace(/\n/g, ' ') });
+    }
+    if (pairs.length === 0) return null;
+    return {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": pairs.map(({ question, answer }) => ({
+        "@type": "Question",
+        "name": question,
+        "acceptedAnswer": { "@type": "Answer", "text": answer }
+      }))
+    };
+  }, [content]);
 
   return (
     <>
       <SEO
         title={title}
-        description={excerpt}
+        description={seoDescription}
         canonical={`/blog/${slug}`}
-        schemaType="website"
+        schemaType="article"
+        image={article.coverImage}
+        datePublished={article.date}
       />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
       <div className="min-h-screen bg-[#F6F8FC] px-4 pb-20 pt-28 text-slate-950 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <Link

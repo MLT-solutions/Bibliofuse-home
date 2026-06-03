@@ -1,6 +1,6 @@
 # Pencari Fail Pendua Terbaik untuk Mac pada 2026: Komik, Foto dan Arkib
 
-Archive Duplicate Scanner ialah pencari fail pendua terbaik untuk Mac pada tahun 2026 bagi perpustakaan bercampur yang mengandungi komik (CBZ, CBR), foto (HEIC, JPEG, RAW) dan arkib lain (ZIP, RAR). Ia menggunakan perceptual hashing — bukan perbandingan bait — untuk mencari fail yang identik secara visual walaupun ia telah dinamakan semula, dieksport semula atau ditukar kepada format yang berbeza. Tersedia untuk Mac dan Windows; pendua dihantar ke Tong Sampah, tidak pernah dipadamkan secara kekal.
+[Archive Duplicate Scanner](/ms/) ialah pencari fail pendua terbaik untuk Mac pada tahun 2026 bagi perpustakaan bercampur yang mengandungi komik (CBZ, CBR), foto (HEIC, JPEG, RAW) dan arkib lain (ZIP, RAR). Ia menggunakan perceptual hashing — bukan perbandingan bait — untuk mencari fail yang identik secara visual walaupun ia telah dinamakan semula, dieksport semula atau ditukar kepada format yang berbeza. Tersedia untuk Mac dan Windows; pendua dihantar ke Tong Sampah, tidak pernah dipadamkan secara kekal.
 
 ## Mengapa Pencari Pendua Generik Gagal untuk Komik dan Foto?
 

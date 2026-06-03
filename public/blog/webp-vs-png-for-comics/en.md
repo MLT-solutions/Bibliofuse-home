@@ -1,91 +1,91 @@
 # WebP vs PNG for Comics: Which Format Gives the Best Quality-to-Size Ratio?
 
-BiblioFuse reads CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT files on iPhone and iPad running iOS 17 or later, and its built-in Tools tab converts comic page images between formats entirely on-device. For comic archives, WebP typically delivers 60–80% smaller files than PNG at equivalent visual quality, making it the better choice for large libraries stored on iPhone.
+You open your comic folder and notice something odd: two scanned chapters of the same series, both looking identical on screen, but one is 45 MB and the other is 14 MB. The difference? One was saved as PNG, the other as WebP. If you've ever wondered why comic archives vary so wildly in size — and whether you're wasting storage on your iPhone — this breakdown will answer it.
 
-You have a manga collection taking up 30 GB on your iPhone. Half of that is raw PNG scans from fan groups — lossless, beautiful, and enormous. You're not sure whether converting to WebP is worth the quality trade-off, or whether you'll notice any difference at all on a phone screen. This guide gives you the technical answer and walks you through the conversion in [BiblioFuse](/en/).
+## Why Image Format Matters for Comics
 
-## What WebP vs PNG for Comics Actually Means
+Comics are image-heavy by nature. A single 24-page issue scanned at print quality can contain anywhere from 50 to 200 images, each several megabytes in PNG form. Scale that to a library of 500 volumes and you're looking at hundreds of gigabytes of storage — most of which comes down to how those images are encoded.
 
-PNG (Portable Network Graphics) uses lossless compression. Every pixel is stored exactly as captured — nothing is discarded. This makes PNG ideal for screenshots and text-heavy images, where even tiny compression artefacts are visible. For a 1,600×2,400 manga page at 300 DPI, a typical lossless PNG lands around 3–6 MB.
+For comic readers, image format choice affects three things: file size (storage and transfer speed), render quality (especially for fine linework and colour gradients), and app compatibility (whether your reader can even open the file). PNG has been the default for scanned comics for decades. WebP is the newer contender, and the results aren't as simple as "newer = better."
 
-WebP is a modern format developed by Google. It supports both lossless and lossy compression. In lossy mode at quality 80–85, a WebP version of the same manga page typically lands at 400–900 KB — a reduction of 75–88% with no visible change at normal reading zoom on an iPhone screen.
+## How PNG Compression Works
 
-For JPEG comics already in CBZ archives, WebP lossy also wins. Re-encoding a high-quality JPEG at WebP quality 82 produces a smaller file with fewer compression artefacts (WebP uses a more efficient DCT block structure than JPEG).
+PNG uses lossless compression. Every pixel in the original image is preserved exactly — no data is thrown away. The compression algorithm (DEFLATE) finds patterns in the image data and encodes them more efficiently, but when you decode a PNG, you get back a bit-perfect copy of the original.
 
-## Why Format Choice Matters More for Comics Than for Photos
+For comics, this matters because line art has sharp transitions between black and white. Lossy formats (like standard JPEG) introduce artifacts at those edges — blurry outlines, colour fringing, noise in flat colour fills. PNG avoids all of that. The trade-off is file size: a 3000×4500 px colour scan can easily hit 8–15 MB per page as a PNG.
 
-Comic archives are unusual compared to ordinary photo libraries:
+## How WebP Compression Works
 
-- **Volume counts are high.** A complete manga series can run 100+ volumes. At 200 pages each, that is 20,000 images. Format efficiency multiplies across every image.
-- **Screen resolution is the ceiling.** An iPhone 15 Pro screen is 2,556×1,179 pixels. A PNG page scanned at 3,000×4,500 pixels contains more data than the screen can ever display. The excess resolution is pure overhead — it adds file size without adding reading quality.
-- **Storage is limited.** iCloud syncs your library across devices, but the local download cache on your iPhone is limited by storage. Smaller files mean more volumes fit in the same space.
+WebP was developed by Google and supports both lossless and lossy modes. In lossless mode, WebP typically beats PNG by 25–35% in file size for photographic content. For synthetic images like line art, the gap narrows — sometimes PNG is actually smaller.
 
-A 20,000-image PNG library at an average 2.5 MB per image = 50 GB. The same library in WebP at average 500 KB per image = 10 GB. That's 40 GB recovered from the same reading experience.
+In lossy mode, WebP can compress a comic scan to a fraction of PNG size while preserving subjective quality. At quality 85–90, a page that was 12 MB as a lossless PNG might drop to under 1 MB as a lossy WebP — with differences that are nearly invisible at normal reading distances on a phone screen.
 
-## How BiblioFuse Converts Comic Pages to WebP
+The catch: lossy WebP, like JPEG, is permanently destructive. Every re-encode degrades the image slightly. And unlike JPEG, which has been supported everywhere for 30 years, WebP compatibility is still catching up — most comic readers handle it fine in 2026, but a few older tools do not.
 
-[BiblioFuse](/en/)'s Tools tab includes an on-device compression engine that re-encodes CBZ archives to WebP without sending any files to a server.
+## Direct Comparison: Same Comic, Different Formats
 
-### Step-by-Step: Compress a CBZ to WebP on iPhone
+Here's what a typical colour manga page looks like across formats (approximate values for a 2200×3200 px page):
 
-1. Open **BiblioFuse** on your iPhone
-2. Tap the **Tools** tab (the wrench icon at the bottom)
-3. Tap **Compress / Convert**
-4. Select the CBZ or CBR volume you want to compress
-5. Choose the target format: **WebP** (lossy) or **WebP Lossless**
-6. Set the quality slider — **82** is a good default for manga; raise it to **88** for artwork with fine linework or colour gradients
-7. Tap **Compress** — the app processes the archive on-device and saves the result
+| Format | Mode | File Size | Quality |
+|--------|------|-----------|---------|
+| PNG | Lossless | 8.2 MB | Perfect |
+| WebP | Lossless | 6.1 MB | Perfect |
+| WebP | Quality 90 | 1.8 MB | Excellent |
+| WebP | Quality 75 | 0.9 MB | Good |
+| JPEG | Quality 90 | 2.1 MB | Excellent |
+| JPEG | Quality 75 | 1.1 MB | Fair (artifacts) |
 
-The original file is not deleted automatically — you can compare them side by side before removing the original.
+For scanned black-and-white manga, WebP lossless is typically 20–30% smaller than PNG. For colour art with gradients, WebP lossy at quality 85–90 delivers the best ratio.
 
-For a full series, repeat across volumes, or use the **BiblioFuse Web Tool** at [bibliofuse.com/webapp](/en/webapp/) to batch-process multiple CBZ files in a browser. The Web Tool is WASM-based — your files never leave your device.
+## How BiblioFuse Handles WebP Comics
 
-## WebP Lossless vs WebP Lossy for Comics
+[BiblioFuse](https://bibliofuse.com/en/) natively supports WebP images inside CBZ archives on both iOS and macOS. When you open a CBZ that contains WebP pages, BiblioFuse decodes them with full hardware acceleration — no slowdown, no visual quality loss from the reader side.
 
-| Scenario | Recommended format | Why |
-|----------|--------------------|-----|
-| Fan-scan PNG manga (greyscale or colour) | WebP lossy q82 | 75–88% size reduction, invisible at reading zoom |
-| Professional rips with fine linework | WebP lossy q88 | Preserves fine detail, still ~65% smaller than PNG |
-| Text-heavy educational comics | WebP lossless | Avoids any character aliasing in dialogue bubbles |
-| Cover images for display | WebP lossy q90 | High visual fidelity, still 60% smaller than PNG |
-| Already JPEG (most Western comics) | WebP lossy q82 | Cleans up JPEG artefacts, 30–50% size reduction |
+The [BiblioFuse web tools](https://bibliofuse.com/en/webapp/) also let you compress CBZ archives in your browser. When you run a compress operation, the tool converts PNG pages to WebP at a quality setting tuned to preserve visual fidelity while cutting file size significantly — usually 60–80% reduction for colour scans, 30–50% for black-and-white.
 
-The visible difference between PNG and WebP lossy at q82 is essentially zero on a phone screen. You would need to zoom to 300% into a solid-colour gradient and look for banding before noticing anything. For reading, it does not exist.
+All processing happens entirely in your browser using WebAssembly. Your comics never leave your device — no upload, no account, no server.
 
-## Does WebP Affect Compatibility?
+## Step-by-Step: Convert Your Comic Archive to WebP
 
-BiblioFuse reads WebP pages inside CBZ archives natively on iOS 17+. Other readers vary. If you share CBZ files with others who use different readers on Windows or Android, verify their app supports WebP-inside-CBZ before converting your masters.
+1. Go to the [BiblioFuse web tool](https://bibliofuse.com/en/webapp/) on any browser.
+2. Drop a CBZ or ZIP archive onto the Compress area.
+3. Adjust the quality slider — start at 85 for colour, 80 for black-and-white.
+4. Click Compress. The tool processes everything locally in your browser.
+5. Download the result. Open it in BiblioFuse (or any reader) to compare.
 
-If cross-compatibility matters, keep the original PNG CBZ as an archive and maintain a smaller WebP version for everyday reading on your iPhone. [BiblioFuse](/en/) stores both side by side without conflict.
+If you're unsatisfied with quality, try a higher setting. The tool is non-destructive — your original file is unchanged.
 
-## Using the BiblioFuse Web Tool for Batch Processing
+## When to Stick With PNG
 
-For large libraries, the [BiblioFuse Web Tool](/en/webapp/) offers batch processing that is more practical than doing volumes one at a time on the phone.
+Lossless PNG still wins in a few scenarios:
 
-1. Open [bibliofuse.com/webapp](/en/webapp/) in Chrome, Edge, or Safari on your Mac or PC
-2. Drag up to 3 CBZ files at once (free tier) onto the drop zone
-3. Select **Compress / Repackage** and choose **WebP** as the output format
-4. Click **Process** — the tool runs locally in your browser via WASM; nothing uploads
-5. Download the compressed CBZ files and transfer them to your iPhone via Wi-Fi Transfer
+**Raw scans you plan to edit.** If you're a scanlator or archivist who will run processing passes (descreen, denoise, level-adjust), always work in PNG. Running those operations on WebP lossy introduces compounded artifacts.
 
-The Web Tool and BiblioFuse share the same on-device WASM compression engine, so quality settings produce identical output.
+**Line art at small file sizes.** For very clean black-and-white linework, PNG's pattern-based compression can match or beat WebP lossless, especially on pages with large solid areas.
+
+**Maximum archival safety.** If you want a format that will definitely be readable in 20 years with any tool, PNG is the safer bet. WebP is nearly universal now but PNG has 30 years of ubiquity behind it.
+
+## When WebP Wins
+
+**Large colour libraries.** If you have thousands of colour volumes, WebP lossy at quality 85–90 cuts storage by 70–80% with no visible quality difference at typical screen resolutions. On a 128 GB iPhone, that difference is hundreds of gigabytes.
+
+**Slow transfers.** Sending 50 volumes over Wi-Fi from your Mac to your iPhone? Smaller files mean faster sync. The BiblioFuse home library streaming feature benefits directly from smaller page sizes.
+
+**eReader screens.** A 326 ppi iPhone display or 250 ppi iPad display cannot resolve the difference between PNG and WebP quality 90. The extra data from PNG is literally imperceptible.
 
 ## Frequently Asked Questions
 
-**Does WebP look worse than PNG in a comic reader?**
-Not at reading zoom levels. WebP lossy at quality 80 or above is visually indistinguishable from the source PNG when viewed at a standard reading size on a phone or tablet screen. Differences only appear at extreme zoom levels into solid-colour fills or diagonal line edges.
+**Does lossy compression affect reading experience?**
+At quality 85+, no. The artifacts are below the threshold of perception at normal reading distance. Quality below 75 can show banding in gradients and softening of fine lines.
 
-**Can BiblioFuse read WebP pages inside CBZ files?**
-Yes. BiblioFuse on iOS 17+ reads WebP images inside CBZ archives natively. You can convert existing PNG-based CBZ files to WebP using the Tools tab in the app or the BiblioFuse Web Tool in a browser — both work entirely on-device.
+**Can BiblioFuse open CBZ files containing mixed WebP and PNG pages?**
+Yes. BiblioFuse detects each page's format independently. Mixed-format archives work correctly.
 
-**What quality setting should I use for manga?**
-For greyscale manga, WebP lossy at quality 82 gives the best balance of size and sharpness. For colour manga with detailed artwork, use quality 85–88. For covers or display images where pixel-perfect quality matters, use quality 90 or WebP lossless.
+**What about AVIF? Is it better than WebP?**
+AVIF is newer still and offers even better compression ratios, particularly for photos. For comics in 2026, AVIF encoder/decoder support in reading apps is still inconsistent. WebP is the better practical choice for now.
 
-**How much smaller are WebP files compared to PNG for comics?**
-Typical results: a 3 MB PNG manga page becomes 400–700 KB in WebP lossy at q82 — a 75–88% reduction. A 1 MB JPEG page becomes 500–700 KB in WebP — a 30–50% reduction. Across a 50 GB PNG library, the space saved is typically 35–45 GB.
+## The Practical Verdict
 
-**Will converting to WebP break other comic apps?**
-WebP inside CBZ is supported by most modern readers. Older Windows readers (like some versions of CDisplay) may not render WebP pages. If you need maximum compatibility, keep the original PNG archive and use the WebP version only in BiblioFuse on your iPhone.
+For an active reading library on your iPhone, WebP at quality 85–90 is the right call for colour comics — dramatically smaller, visually identical at screen resolutions. For black-and-white manga, the gains are smaller but still real. Keep a PNG master copy of anything precious; use WebP for everything you actually read.
 
-**Is the BiblioFuse Web Tool free for batch converting CBZ to WebP?**
-The free tier processes up to 3 files per batch. There is no account required and no upload — all processing happens in your browser via WASM. Visit [bibliofuse.com/webapp](/en/webapp/) to use it.
+[BiblioFuse](https://bibliofuse.com/en/) handles both seamlessly, and the web tool makes conversion a 30-second job with no software to install.

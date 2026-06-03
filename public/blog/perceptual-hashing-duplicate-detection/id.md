@@ -4,7 +4,7 @@ Anda mengganti nama file. Anda mengompresi ulang arsip. Anda mengunduh volume ya
 
 Namun, komik di dalamnya sama. Setiap halaman sama. Dan jika Anda mencoba membersihkan perpustakaan digital, duplikat yang hampir identik ini adalah persis yang lolos dari pencari duplikat standar.
 
-Inilah masalah yang diselesaikan perceptual hashing, dan ini adalah teknik inti [Archive Duplicate Scanner](https://bibliofuse.com/en/).
+Inilah masalah yang diselesaikan perceptual hashing, dan ini adalah teknik inti [Archive Duplicate Scanner](/en/).
 
 ---
 
@@ -40,7 +40,7 @@ Dua gambar dengan konten visual yang mirip menghasilkan hash dengan **jarak Hamm
 
 ## Cara Archive Duplicate Scanner Menerapkan Ini
 
-[Archive Duplicate Scanner](https://bibliofuse.com/en/) menerapkan perceptual hashing di tingkat arsip:
+[Archive Duplicate Scanner](/en/) menerapkan perceptual hashing di tingkat arsip:
 
 1. **Ekstraksi** — membuka setiap CBZ atau CBR dan membaca gambar internal
 2. **Hash setiap halaman** — setiap halaman mendapat perceptual hash
@@ -73,6 +73,6 @@ Ketika 90% halaman di dua arsip cocok, kemungkinan positif palsu turun mendekati
 
 ## Menggunakan Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](https://bibliofuse.com/en/) adalah aplikasi Mac asli yang memindahkan duplikat terpilih ke Trash (bukan penghapusan permanen).
+[Archive Duplicate Scanner](/en/) adalah aplikasi Mac asli yang memindahkan duplikat terpilih ke Trash (bukan penghapusan permanen).
 
-Setelah perpustakaan Anda bersih, padukan dengan [BiblioFuse](https://bibliofuse.com/en/) di iPhone untuk satu sumber bacaan yang terkurasi.
+Setelah perpustakaan Anda bersih, padukan dengan [BiblioFuse](/en/) di iPhone untuk satu sumber bacaan yang terkurasi.

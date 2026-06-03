@@ -4,7 +4,7 @@
 
 しかし、中のコミックは同じだ。すべてのページが同じだ。そして、デジタルライブラリを整理しようとしているなら、これらのほぼ同一の重複ファイルこそが標準的な重複検索ツールをすり抜けるものだ。
 
-これが知覚ハッシュが解決する問題であり、[Archive Duplicate Scanner](https://bibliofuse.com/ja/) の中核にある技術だ。
+これが知覚ハッシュが解決する問題であり、[Archive Duplicate Scanner](/ja/) の中核にある技術だ。
 
 ---
 
@@ -40,7 +40,7 @@
 
 ## Archive Duplicate Scannerの適用方法
 
-[Archive Duplicate Scanner](https://bibliofuse.com/ja/) はアーカイブレベルで知覚ハッシュを適用する：
+[Archive Duplicate Scanner](/ja/) はアーカイブレベルで知覚ハッシュを適用する：
 
 1. **抽出** — 各CBZまたはCBRを開いて内部画像を読む
 2. **各ページのハッシュ** — 各ページが知覚ハッシュを取得
@@ -73,6 +73,6 @@
 
 ## Archive Duplicate Scannerの使用
 
-[Archive Duplicate Scanner](https://bibliofuse.com/ja/) は、選択した重複をゴミ箱に移動する（完全削除ではない）ネイティブMacアプリだ。
+[Archive Duplicate Scanner](/ja/) は、選択した重複をゴミ箱に移動する（完全削除ではない）ネイティブMacアプリだ。
 
-ライブラリを整理したら、iPhone の [BiblioFuse](https://bibliofuse.com/ja/) と組み合わせて、唯一のキュレートされた読書ソースを活用する。
+ライブラリを整理したら、iPhone の [BiblioFuse](/ja/) と組み合わせて、唯一のキュレートされた読書ソースを活用する。

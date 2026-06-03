@@ -4,7 +4,7 @@ You open your manga folder and notice something off: *One Piece* volume 47 is th
 
 For most manga readers, duplicates accumulate silently over years of downloading from different sources, moving archives between drives, and creating backups that never got cleaned up. The result is wasted storage, confusion when reading, and no easy way to tell which version is highest quality.
 
-This guide walks through a practical workflow for finding, reviewing, and removing duplicate manga using [Archive Duplicate Scanner](https://bibliofuse.com/en/) — a Mac utility built specifically for this problem.
+This guide walks through a practical workflow for finding, reviewing, and removing duplicate manga using [Archive Duplicate Scanner](/en/) — a Mac utility built specifically for this problem.
 
 ---
 
@@ -26,7 +26,7 @@ A standard duplicate file finder won't catch most of these cases because it comp
 
 ## What Archive Duplicate Scanner Does Differently
 
-[Archive Duplicate Scanner](https://bibliofuse.com/en/) uses **perceptual hashing** to compare the actual images inside your CBZ and CBR archives. Instead of asking "are these two files byte-for-byte identical?", it asks "do these two archives contain the same comic pages?"
+[Archive Duplicate Scanner](/en/) uses **perceptual hashing** to compare the actual images inside your CBZ and CBR archives. Instead of asking "are these two files byte-for-byte identical?", it asks "do these two archives contain the same comic pages?"
 
 This means it catches duplicates that have been:
 
@@ -94,7 +94,7 @@ If your collection is flat (all volumes in one folder), the scan is faster but t
 
 **Name files consistently.** Even though Archive Duplicate Scanner works regardless of filename, consistent naming (series name, volume number, source) makes the review step easier and reduces the chance of confusion.
 
-**Use [BiblioFuse](https://bibliofuse.com/en/) to read from your curated folder.** When you stream your Mac library to iPhone or iPad using BiblioFuse's home streaming feature, you're reading from the single source of truth — not a copy. This prevents reading-progress drift between duplicate copies.
+**Use [BiblioFuse](/en/) to read from your curated folder.** When you stream your Mac library to iPhone or iPad using BiblioFuse's home streaming feature, you're reading from the single source of truth — not a copy. This prevents reading-progress drift between duplicate copies.
 
 ---
 

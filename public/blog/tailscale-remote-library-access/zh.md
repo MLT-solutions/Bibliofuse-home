@@ -1,107 +1,74 @@
-# 使用 BiblioFuse 和 Tailscale 远程访问家中漫画库
+# 使用 BiblioFuse 和 Tailscale 远程访问家中的漫画库
 
-BiblioFuse 支持在运行 iOS 17 或更高版本的 iPhone 和 iPad 上读取 CBZ、CBR、EPUB、PDF、ZIP、RAR 和 TXT 格式文件。其 Mac Home Library 功能可让您通过本地 Wi-Fi 网络将 Mac 上的完整漫画库串流到 iPhone，无需复制文件。结合 Tailscale，您可以将同样的串流连接扩展至互联网，从世界任何地方访问您的家庭漫画库——这正是 BiblioFuse 与 Tailscale 远程访问的核心价值。
+你正在出差，晚上 10 点坐在酒店房间里，无书可读。你所有的漫画收藏——800 册，按你喜欢的方式整理得井井有条——正躺在家里连接着 Mac 的外置硬盘里。通常情况下，你只能等回家后再看。现在不用了。
 
-您出门时，家里的 Mac 上存有 2 TB 的漫画。您的 iPhone 只有 128 GB 存储空间——远远不够存放所有内容。出行途中，您希望读取这些漫画，却不想把文件上传到云端，也不想为额外的同步服务付费。本文将介绍如何通过 [BiblioFuse](/zh/) 和 Tailscale 免费计划实现这一目标。
+BiblioFuse 的家庭库串流功能让你的 iPhone 可以像在同一 Wi-Fi 网络中一样连接到你的 Mac，即使你在世界的另一端。让这一切成为可能的桥梁是 Tailscale——一款零配置的 VPN 网状网络，在后台静默运行，无需端口转发、静态 IP 或任何路由器配置。
 
-## 什么是 BiblioFuse 与 Tailscale 的远程漫画库访问？
+## 为什么"上传到云端"不是答案
 
-BiblioFuse 的 Mac Home Library 功能将您的 Mac 变成漫画收藏的串流服务器。当 iPhone 和 Mac 位于同一 Wi-Fi 网络时，您可以在 iPhone 的 BiblioFuse 中直接浏览并打开 Mac 上的文件——无需复制、无需同步、不占用手机本地存储。
+显而易见的替代方案是将你的库同步到 iCloud、Dropbox 或 Google Drive。这对小型收藏有效。一旦规模扩大，就行不通了：
 
-局限在于"同一网络"。一旦离家，连接就会中断——您的 Mac 位于家用路由器后方，iPhone 无法直接访问它。
+- 1 TB 的漫画库通过家庭宽带上传需要数周时间。
+- 这种规模的云存储每月费用在 50–150 元不等，且无限期持续。
+- 你失去了控制权：每一本漫画的每一页都保存在别人的服务器上。
 
-Tailscale 通过在您的设备之间建立加密的点对点网状网络来解决这一问题。无论 iPhone 和 Mac 物理位置在哪里，它们都出现在同一虚拟网络中。对于 BiblioFuse 而言，这意味着 Mac Home Library 连接在互联网上的工作方式与在家中 Wi-Fi 上完全相同。
+Tailscale 的方式什么都不上传。你的库留在 Mac 上，iPhone 通过加密隧道按需获取页面。你无需为存储付费，文件永远在你的掌控之中。
 
-## 为什么 BiblioFuse 搭配 Tailscale 比云存储更好？
+## BiblioFuse 家庭串流的工作原理
 
-云存储是显而易见的替代方案——将所有内容同步到 iCloud Drive 或 Google Drive，随时随地访问。但对于大型漫画库，云同步存在实际局限：
+macOS 版 BiblioFuse 内置了一个 HTTP 服务器，iPhone 应用可以连接到它。当两台设备处于同一 Wi-Fi 网络时，iPhone 可以浏览 Mac 库、在阅读时串流页面，并同步阅读进度——而无需复制任何文件。
 
-- **存储费用。** 2 TB iCloud 每月需要 68 元人民币。Tailscale 免费计划支持 100 台设备，无存储费用。
-- **上传时间。** 通过家庭网络将 2 TB 上传到任何云服务需要数天时间。使用 Tailscale + BiblioFuse，您直接从 Mac 串流——无需上传。
-- **隐私保护。** 文件永远不会离开您的网络。Tailscale 以点对点方式路由流量；其中继服务器只处理连接协商，不涉及您的文件内容。
-- **阅读体验。** 通过 [BiblioFuse](/zh/) Mac Home Library 串流速度很快——点击即加载页面，与本地存储一样。云同步文件需要完整下载后才能打开。
+Tailscale 将这个本地网络延伸到你所在的任何地方，让 Mac 的私有 IP 地址从你账号下任何运行 Tailscale 的设备上都可以访问，并且全程端对端加密。
 
-## 第一步——在 BiblioFuse 中设置 Mac Home Library
+## Tailscale 的工作原理
 
-BiblioFuse 的 Mac Home Library 是一项通过本地网络将 Mac 漫画文件夹提供给 iPhone 应用的功能。
+Tailscale 基于 WireGuard 构建，这是一款以快速和密码学安全著称的现代 VPN 协议。它创建了一个点对点的网状网络：每台设备直接连接到你账号下的其他设备，无需通过中央服务器路由流量。
 
-1. 在 iPhone 和 Mac 上分别安装 **BiblioFuse**（从各平台的 App Store 下载）
-2. 在 Mac 上打开 BiblioFuse，前往 **设置 → Mac Home Library**
-3. 点击 **启用**——Mac 开始在本地端口上提供您的库
-4. 在 iPhone 上打开 BiblioFuse，前往 **书库 → 添加来源 → Mac Home Library**
-5. 您的 Mac 应自动出现在本地网络中，点击它即可连接
+整个设置大约需要 5 分钟，不需要访问路由器。
 
-验证是否正常工作：从 iPhone 浏览 Mac 上的某个文件夹并打开一个 CBZ 文件。页面应在一两秒内加载完成。确认本地 Wi-Fi 下正常工作后，即可添加 Tailscale。
+## 分步设置
 
-## 第二步——安装和配置 Tailscale
+### 在你的 Mac 上
 
-Tailscale 是基于 WireGuard 构建的 VPN。免费计划支持最多 100 台设备，完全满足此处的需求。
+1. 从 [tailscale.com](https://tailscale.com) 或 Mac App Store 下载 Tailscale。
+2. 用 Google、GitHub、Microsoft 登录，或创建免费的 Tailscale 账号。
+3. 记下你 Mac 的 Tailscale IP 地址（例如 `100.x.x.x`）。
+4. 打开 Mac 上的 BiblioFuse，进入**偏好设置 → 家庭库服务器**。
+5. 启用服务器。默认端口为 `8686`。
 
-1. 前往 **tailscale.com** 创建免费账户
-2. 在 Mac 上安装 **Tailscale 应用**（可通过 App Store 或 tailscale.com/download 获取）
-3. 在 iPhone 上安装 **Tailscale 应用**（从 App Store 下载）
-4. 在两台设备上使用同一账户登录 Tailscale
-5. 在 Mac 的 Tailscale 应用中，确认显示 Tailscale IP 地址（通常为 `100.x.x.x`）
-6. 在 iPhone 上打开 Tailscale 应用，确认 Mac 出现在设备列表中并显示绿色状态
+### 在你的 iPhone 上
 
-现在两台设备都在您的私人 Tailscale 网络中，无论物理位置如何都可以互相通信。
+1. 从 App Store 安装 Tailscale。
+2. 登录与 Mac 相同的 Tailscale 账号。
+3. 开启 Tailscale VPN 开关。
+4. 打开 iPhone 上的 [BiblioFuse](https://bibliofuse.com/zh/)，进入**资料库 → 连接到 Mac**。
+5. 输入你 Mac 的 Tailscale IP 地址和端口 `8686`。
+6. 点击连接，Mac 库立即出现。
 
-## 第三步——通过 Tailscale 将 BiblioFuse 连接到 Mac
+## 性能与带宽
 
-Tailscale 运行后，BiblioFuse 可以通过 Tailscale IP 地址访问 Mac 的 Home Library。
+Tailscale 在可能的情况下建立直接点对点连接。在典型的酒店 Wi-Fi 或移动网络（20–50 Mbps）下，串流漫画页面运行流畅。BiblioFuse 只发送当前页面并预加载后续几页。
 
-1. 在 Mac 上记录 Tailscale IP 地址（显示在 Tailscale 菜单栏应用中，例如 `100.64.0.2`）
-2. 在 iPhone 上打开 BiblioFuse，前往 **书库 → 添加来源 → Mac Home Library**
-3. 如果 Mac 未自动出现（在不同网络下不会自动出现），点击 **手动输入地址**
-4. 输入 Tailscale IP 地址和 BiblioFuse 使用的端口（默认：`8080`）
-5. 点击 **连接**
+## 隐私与安全
 
-您的 Mac 书库现在出现在 iPhone 的 BiblioFuse 中。打开任意文件夹、点击任意卷，内容会通过 Tailscale 串流，效果与本地 Wi-Fi 完全相同。
+Tailscale 连接通过 WireGuard 进行端对端加密。没有其他人可以访问你的 BiblioFuse 服务器。你的文件永远不会经过任何第三方服务器。
 
-## 第四步——离家后保持连接
+## 常见问题
 
-要使远程访问正常工作，您的 Mac 需要：
+**Mac 需要保持开机状态吗？**
+是的。BiblioFuse 在 Mac 处于活跃状态时运行。在系统设置 → 电池中关闭自动休眠。
 
-- **保持唤醒状态**——在 **系统设置 → 电池 → 选项 → 显示器关闭时防止自动进入睡眠** 中禁用睡眠（适用于台式 Mac），或设置定时计划
-- **保持互联网连接**——家中路由器在您出行期间持续连接
-- **运行 Tailscale**——在 Tailscale 偏好设置中设置登录时自动启动
+**通过手机数据也能用吗？**
+可以。Tailscale 适用于任何网络连接。串流漫画每页大约消耗 1–3 MB。
 
-对于 MacBook，"防止睡眠"选项需要连接电源适配器。如果家中的 Mac 是未插电的 MacBook，可设置具体计划：例如早上 06:00 唤醒，晚上 23:00 睡眠。
+**可以连接多台 Mac 吗？**
+可以。将每台 Mac 添加到你的 Tailscale 账号，并在 BiblioFuse 中保存为不同连接。
 
-## 实际使用场景
+**Tailscale 收费吗？**
+有免费套餐，支持最多 3 个用户和 100 台设备——个人使用绰绰有余。
 
-**旅行中阅读长篇系列。** 您收藏的完整《海贼王》（107 卷，压缩为 CBZ 约 15 GB）存放在家中的 Mac 上。在没有 Wi-Fi 的飞机上您无法访问——但在旅途中有任何互联网连接（酒店 Wi-Fi、移动数据）时，[BiblioFuse](/zh/) 会按需串流每一页。您不需要下载 15 GB，而是在阅读时逐页下载。
+## 开始使用
 
-**在慢速连接下阅读。** Tailscale 使用 WireGuard，在移动数据上表现高效。通过 BiblioFuse 工具选项卡压缩的 CBZ 页面（WebP 编码）通常每页 200–500 KB。在 10–20 Mbps 的 4G 速度下，每页加载时间不到 0.1 秒。即使在 2 Mbps 的拥挤酒店 Wi-Fi 下，页面也能在一秒内加载完成。
+如果你还没有 [BiblioFuse](https://bibliofuse.com/zh/)，请从 App Store 下载 iPhone 和 iPad 版本，从 Mac App Store 下载 macOS 版本。Tailscale 在 [tailscale.com](https://tailscale.com) 免费下载。
 
-**管理家庭书库。** 将配偶的 iPhone 或平板添加到同一 Tailscale 账户（免费计划支持最多 100 台设备）。家庭所有成员都可以从同一台 Mac 的书库串流，无需分别订阅云服务。
-
-## 故障排除
-
-**启用 Tailscale 后 Mac 未出现在 BiblioFuse 中。** 使用手动 IP 输入方式，填入 Mac 的 Tailscale IP 地址。自动发现依赖 mDNS 广播，无法跨越网络边界。
-
-**移动数据下页面加载缓慢。** 使用 BiblioFuse 工具选项卡或 [BiblioFuse 网页工具](/zh/webapp/) 压缩 CBZ 档案以减小页面大小。质量 82 的 WebP 编码 CBZ 文件通常比基于 PNG 的档案小 75–88%，可显著加快远程串流速度。
-
-**Mac 进入了睡眠状态。** 在 Mac 系统设置中启用"显示器关闭时防止自动进入睡眠"，或在终端运行 `caffeinate -i &` 保持唤醒状态。
-
-**Tailscale 连接断开。** Tailscale 会在网络条件变化时自动重新连接。如果连接失败，在 iPhone 上关闭并重新打开 BiblioFuse 以重试连接。Tailscale 的 DERP 中继服务器负责处理无法直接进行点对点路由的情况。
-
-## 常见问题解答
-
-**不使用 Tailscale 能否远程访问家中的漫画库？**
-可以，但其他方式更复杂或隐私性更低。在路由器上进行端口转发会将您的 Mac 直接暴露在互联网中，存在安全风险。云同步（iCloud、Google Drive）需要先上传整个书库。Tailscale 提供加密、零配置的远程访问，无需暴露任何端口。
-
-**此用途下 Tailscale 需要付费吗？**
-Tailscale 的免费计划支持单个个人账户最多 100 台设备，无存储费用，无带宽限制。对于在自己设备间共享的个人漫画库，免费计划可以无限期满足需求。
-
-**通过移动数据串流漫画的速度如何？**
-使用压缩 CBZ 文件（WebP 页面），每页通常为 200–500 KB。在 10 Mbps 的 4G 连接下，每页加载时间不到半秒。即使在 2 Mbps 的较慢酒店 Wi-Fi 下，阅读体验也很流畅。基于 PNG 的档案（每页 2–5 MB）明显更慢，在远程串流前进行压缩收益最大。
-
-**BiblioFuse 在 iPad 上也支持 Tailscale 吗？**
-是的。BiblioFuse 支持 iPhone 和 iPad，Tailscale 也可在 iPad 上使用。设置完全相同——安装两个应用、登录 Tailscale，然后使用 Tailscale IP 地址连接到 Mac Home Library。
-
-**使用 Tailscale 时我的漫画收藏是否保密？**
-是的。Tailscale 对设备间的所有流量使用 WireGuard 加密。您的文件在加密隧道中直接在 iPhone 和 Mac 之间传输。Tailscale 的服务器负责连接协调，但从不查看您的文件内容。
-
-**如果我不在家时 Mac 重启了怎么办？**
-如果 Tailscale 设置为登录时启动，且 BiblioFuse for Mac 中的 Mac Home Library 设置为启动时运行，重启后连接将自动恢复。在各自的设置中将两个应用都设置为登录时启动，以确保连续性。
+两者结合，让你的家庭漫画库如影随形——无需将任何文件上传到云端。

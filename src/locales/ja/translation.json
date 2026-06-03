@@ -837,6 +837,16 @@
           "title": "クラウドアカウントなしで読書進捗を同期する方法",
           "excerpt": "BiblioFuseは、クラウドアカウントに依存せず、デバイス間で読書進捗を一貫して保つ複数の方法を提供しています。",
           "seoDescription": "クラウドアカウントなしでiPhoneとiPad間のマンガ読書進捗を同期。BiblioFuseのWi-Fi同期・AirDrop・ブックマーク機能を解説。"
+        },
+        "webp-vs-png-for-comics": {
+          "title": "コミック用WebP vs PNG：最高の画質・サイズ比はどちら？",
+          "excerpt": "WebPはPNGと比べてコミックアーカイブのサイズを70–80%削減でき、視覚的な品質差はほぼありません。各形式の使いどころを解説します。",
+          "seoDescription": "コミック・マンガのアーカイブにおけるWebPとPNGを比較。最高の画質・サイズ比はどちら？BiblioFuseは両方をネイティブサポート。"
+        },
+        "tailscale-remote-library-access": {
+          "title": "TailscaleでMacのコミックライブラリにリモートアクセス",
+          "excerpt": "BiblioFuseのホームライブラリストリーミングとTailscaleを組み合わせて、どこからでも自宅のMacコミックコレクションを読もう。クラウド不要、ルーター設定不要。",
+          "seoDescription": "BiblioFuseとTailscaleを使って、どこからでもMacのコミックライブラリをiPhoneにストリーミング。クラウド不要、静的IP不要。"
         }
       }
     }

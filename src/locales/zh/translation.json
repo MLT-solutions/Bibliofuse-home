@@ -837,6 +837,16 @@
           "title": "无需云账户同步阅读进度的方法",
           "excerpt": "BiblioFuse提供多种方式，让你无需依赖任何云账户即可在设备间保持阅读进度一致。",
           "seoDescription": "无需云账户，在iPhone和iPad之间同步漫画阅读进度。BiblioFuse支持Wi-Fi同步、AirDrop导出、书签等多种方式。"
+        },
+        "webp-vs-png-for-comics": {
+          "title": "漫画用 WebP vs PNG：哪种格式性价比最高？",
+          "excerpt": "WebP可以将漫画文件体积缩减70–80%，且视觉效果与PNG无差别。了解各格式的适用场景，以及BiblioFuse如何原生支持两者。",
+          "seoDescription": "比较WebP与PNG在漫画和漫画档案中的表现，找出性价比最高的格式。BiblioFuse原生支持两种格式。"
+        },
+        "tailscale-remote-library-access": {
+          "title": "用 Tailscale 远程访问家中漫画库",
+          "excerpt": "结合BiblioFuse家庭库串流与Tailscale，随时随地阅读Mac上的全部漫画——无需上传云端，无需配置端口转发。",
+          "seoDescription": "使用BiblioFuse和Tailscale，从任何地方将Mac漫画库串流到iPhone。无需云端上传，无需静态IP，安全加密隧道即可实现。"
         }
       }
     }

@@ -1,6 +1,6 @@
 # 在 Mac 上查找重复照片——包括 HEIC、WebP 和 RAW 格式
 
-Archive Duplicate Scanner 使用感知哈希技术在 Mac 上查找重复照片——即使文件名、格式或压缩设置不同，也能匹配视觉上相同的图像。支持 HEIC、WebP、JPEG、PNG、TIFF、RAW 等数十种格式。该应用适用于 Mac 和 Windows，将重复文件安全移入废纸篓，而非永久删除。
+[Archive Duplicate Scanner](/zh/) 使用感知哈希技术在 Mac 上查找重复照片——即使文件名、格式或压缩设置不同，也能匹配视觉上相同的图像。支持 HEIC、WebP、JPEG、PNG、TIFF、RAW 等数十种格式。该应用适用于 Mac 和 Windows，将重复文件安全移入废纸篓，而非永久删除。
 
 ## 不断膨胀的照片库有什么问题？
 

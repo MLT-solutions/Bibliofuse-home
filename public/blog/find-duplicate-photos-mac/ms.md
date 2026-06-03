@@ -1,6 +1,6 @@
 # Cari Foto Pendua di Mac — Termasuk HEIC, WebP dan RAW
 
-Archive Duplicate Scanner mencari foto pendua di Mac menggunakan perceptual hashing — teknik yang memadankan imej yang identik secara visual walaupun mempunyai nama fail, format atau tetapan mampatan yang berbeza. Ia menyokong HEIC, WebP, JPEG, PNG, TIFF, RAW dan berpuluh-puluh format lain. Aplikasi ini tersedia untuk Mac dan Windows, dan memindahkan pendua ke Tong Sampah dengan selamat, bukannya memadamnya secara kekal.
+[Archive Duplicate Scanner](/ms/) mencari foto pendua di Mac menggunakan perceptual hashing — teknik yang memadankan imej yang identik secara visual walaupun mempunyai nama fail, format atau tetapan mampatan yang berbeza. Ia menyokong HEIC, WebP, JPEG, PNG, TIFF, RAW dan berpuluh-puluh format lain. Aplikasi ini tersedia untuk Mac dan Windows, dan memindahkan pendua ke Tong Sampah dengan selamat, bukannya memadamnya secara kekal.
 
 ## Masalah Perpustakaan Foto yang Terus Membesar Tanpa Had
 

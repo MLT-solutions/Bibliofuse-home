@@ -373,6 +373,16 @@
           "title": "How to Sync Reading Progress Without a Cloud Account",
           "excerpt": "BiblioFuse gives you several ways to keep reading progress consistent across devices without relying on any cloud account.",
           "seoDescription": "Sync comic and manga reading progress across iPhone and iPad without a cloud account. Wi-Fi sync, AirDrop export, bookmarks, and more with BiblioFuse."
+        },
+        "webp-vs-png-for-comics": {
+          "title": "WebP vs PNG for Comics: Best Quality-to-Size Ratio",
+          "excerpt": "WebP can cut your comic archive size by 70–80% vs PNG with no visible quality loss. A plain-English breakdown of when to use each format and how BiblioFuse handles both.",
+          "seoDescription": "Compare WebP vs PNG for comic and manga archives. Which format gives the best quality-to-size ratio? BiblioFuse reads both natively."
+        },
+        "tailscale-remote-library-access": {
+          "title": "Remote Access Your Home Comic Library with Tailscale",
+          "excerpt": "Use BiblioFuse's home library streaming with Tailscale to read your entire Mac comic collection from anywhere — no cloud upload, no port forwarding, just an encrypted tunnel.",
+          "seoDescription": "Stream your Mac comic library to iPhone from anywhere using BiblioFuse and Tailscale. No cloud upload, no static IP needed — just a secure VPN tunnel."
         }
       }
     },

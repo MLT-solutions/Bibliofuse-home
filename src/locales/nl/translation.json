@@ -837,6 +837,16 @@
           "title": "Leesvoortgang synchroniseren zonder cloudaccount",
           "excerpt": "BiblioFuse biedt meerdere manieren om leesvoortgang consistent te houden tussen apparaten, zonder afhankelijk te zijn van een cloudaccount.",
           "seoDescription": "Synchroniseer leesvoortgang van strips tussen iPhone en iPad zonder cloudaccount. Wi-Fi, AirDrop, bladwijzers en meer met BiblioFuse."
+        },
+        "webp-vs-png-for-comics": {
+          "title": "WebP vs PNG voor comics: beste kwaliteit-grootteverhouding",
+          "excerpt": "WebP kan striparchief-bestanden 70–80% kleiner maken dan PNG zonder zichtbaar kwaliteitsverlies. Ontdek wanneer je elk formaat gebruikt.",
+          "seoDescription": "Vergelijk WebP vs PNG voor comic- en manga-archieven. Welk formaat biedt de beste kwaliteit-grootteverhouding? BiblioFuse ondersteunt beide native."
+        },
+        "tailscale-remote-library-access": {
+          "title": "Toegang tot je comicsbibliotheek op afstand met Tailscale",
+          "excerpt": "Gebruik BiblioFuse-streaming met Tailscale om je Mac-comicscollectie overal te lezen — zonder cloud-upload of routerconfiguratie.",
+          "seoDescription": "Stream je Mac-comicsbibliotheek naar iPhone via BiblioFuse en Tailscale. Geen cloud-upload, geen statisch IP nodig — gewoon een veilige VPN-tunnel."
         }
       }
     }

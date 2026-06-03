@@ -837,6 +837,16 @@
           "title": "Cómo sincronizar el progreso de lectura sin una cuenta en la nube",
           "excerpt": "BiblioFuse ofrece varias formas de mantener el progreso de lectura sincronizado entre dispositivos sin depender de ninguna cuenta en la nube.",
           "seoDescription": "Sincroniza el progreso de lectura de cómics entre iPhone e iPad sin cuenta en la nube. Wi-Fi, AirDrop, marcadores y más con BiblioFuse."
+        },
+        "webp-vs-png-for-comics": {
+          "title": "WebP vs PNG para cómics: ¿Cuál ofrece la mejor relación calidad-tamaño?",
+          "excerpt": "WebP puede reducir el tamaño de tu archivo de cómics un 70–80% frente a PNG sin pérdida de calidad visible. Descubre cuándo usar cada formato.",
+          "seoDescription": "Compara WebP vs PNG para archivos de cómics y manga. ¿Qué formato ofrece la mejor relación calidad-tamaño? BiblioFuse es compatible con ambos de forma nativa."
+        },
+        "tailscale-remote-library-access": {
+          "title": "Accede a tu biblioteca de cómics desde cualquier lugar con Tailscale",
+          "excerpt": "Usa el streaming de BiblioFuse con Tailscale para leer tu colección de cómics en Mac desde cualquier lugar — sin subir a la nube ni configurar el router.",
+          "seoDescription": "Transmite tu biblioteca de cómics de Mac al iPhone desde cualquier lugar usando BiblioFuse y Tailscale. Sin subir a la nube, sin IP estática."
         }
       }
     }

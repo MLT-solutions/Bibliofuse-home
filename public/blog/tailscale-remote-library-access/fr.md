@@ -1,107 +1,74 @@
-# Accédez à votre bibliothèque de BD depuis n'importe où avec BiblioFuse et Tailscale
+# Accédez à votre bibliothèque de comics à distance avec BiblioFuse et Tailscale
 
-BiblioFuse lit les fichiers CBZ, CBR, EPUB, PDF, ZIP, RAR et TXT sur iPhone et iPad sous iOS 17 ou version ultérieure. Sa fonction Mac Home Library vous permet de diffuser toute votre collection de BD depuis votre Mac vers votre iPhone via le réseau Wi-Fi local, sans copier de fichiers. Combinée à Tailscale, vous pouvez étendre cette même connexion sur internet et accéder à votre bibliothèque depuis n'importe où dans le monde.
+Vous êtes en déplacement professionnel, dans une chambre d'hôtel à 22h sans rien à lire. Toute votre collection de comics — 800 volumes parfaitement organisés — est sur un disque externe connecté à votre Mac à la maison. Normalement, vous devriez attendre votre retour. Plus maintenant.
 
-Vous quittez votre domicile avec 2 To de manga sur votre Mac. Votre iPhone dispose de 128 Go de stockage — loin d'être suffisant pour tout contenir. Vous souhaitez lire cette bibliothèque en voyage, sans déplacer de fichiers vers le cloud ni payer un service de synchronisation séparé. Ce guide vous montre comment y parvenir avec [BiblioFuse](/fr/) et le plan gratuit de Tailscale.
+La fonction de streaming de bibliothèque domestique de BiblioFuse permet à votre iPhone de se connecter à votre Mac comme s'ils étaient sur le même réseau Wi-Fi, même si vous êtes à l'autre bout du monde. Le pont qui rend cela possible est Tailscale — un réseau VPN maillé sans configuration, qui fonctionne silencieusement en arrière-plan et ne nécessite ni redirection de port, ni IP statique, ni configuration du routeur.
 
-## Qu'est-ce que l'accès distant à une bibliothèque de BD avec BiblioFuse et Tailscale ?
+## Pourquoi "uploadez sur le cloud" n'est pas la réponse
 
-La fonction Mac Home Library de BiblioFuse transforme votre Mac en serveur de diffusion pour votre collection de BD. Lorsque votre iPhone et votre Mac sont sur le même réseau Wi-Fi, vous parcourez et ouvrez des fichiers depuis votre Mac dans BiblioFuse sur votre iPhone — sans copier, sans synchroniser, sans utiliser le stockage du téléphone.
+La solution évidente est de synchroniser votre bibliothèque avec iCloud, Dropbox ou Google Drive. Cela fonctionne pour les petites collections. À grande échelle, ça s'effondre :
 
-La limitation est « même réseau ». Dès que vous quittez votre domicile, la connexion est coupée — votre Mac est derrière votre routeur domestique et votre iPhone ne peut plus l'atteindre directement.
+- Une bibliothèque de comics d'1 To prend des semaines à uploader sur une connexion résidentielle.
+- Le stockage cloud à cette échelle coûte 10–30 € par mois indéfiniment.
+- Vous perdez le contrôle : chaque page de chaque comic est sur les serveurs de quelqu'un d'autre.
 
-Tailscale résout ce problème en créant un réseau maillé chiffré de pair à pair entre vos appareils. Votre iPhone et votre Mac apparaissent sur le même réseau virtuel, peu importe où ils se trouvent physiquement. Pour BiblioFuse, cela signifie que la connexion Mac Home Library fonctionne exactement de la même façon sur internet que sur votre Wi-Fi domestique.
+L'approche Tailscale ne uploade rien. Votre bibliothèque reste sur votre Mac. Votre iPhone récupère les pages à la demande via un tunnel chiffré. Vous ne payez rien pour le stockage et vos fichiers ne quittent jamais votre contrôle.
 
-## Pourquoi BiblioFuse avec Tailscale est-il meilleur que le stockage cloud ?
+## Comment fonctionne le streaming domestique de BiblioFuse
 
-Le stockage cloud est l'alternative évidente — synchronisez tout sur iCloud Drive ou Google Drive et accédez depuis n'importe où. Mais pour les grandes bibliothèques de BD, la synchronisation cloud a de vraies limites :
+BiblioFuse pour macOS inclut un serveur HTTP intégré auquel l'app iPhone peut se connecter. Lorsque les deux appareils sont sur le même réseau Wi-Fi, votre iPhone peut parcourir votre bibliothèque Mac, diffuser des pages pendant la lecture et synchroniser la progression — sans copier aucun fichier.
 
-- **Coût du stockage.** 2 To d'iCloud coûtent 9,99 €/mois. Le plan gratuit de Tailscale prend en charge 100 appareils sans frais de stockage.
-- **Temps de téléversement.** Envoyer 2 To vers un service cloud prend des jours sur une connexion domestique. Avec Tailscale et BiblioFuse, vous diffusez directement depuis votre Mac — aucun téléversement requis.
-- **Confidentialité.** Les fichiers ne quittent jamais votre réseau. Tailscale achemine le trafic de pair à pair ; ses serveurs relais ne gèrent que la négociation de connexion, pas vos fichiers.
-- **Expérience de lecture.** La diffusion via [BiblioFuse](/fr/) et Mac Home Library est rapide — les pages se chargent au toucher, comme avec le stockage local. Les fichiers synchronisés dans le cloud nécessitent un téléchargement complet avant ouverture.
+Tailscale étend ce réseau local où que vous soyez, rendant l'IP privée de votre Mac accessible depuis n'importe quel appareil exécutant Tailscale sous votre compte, de façon sécurisée avec chiffrement bout en bout.
 
-## Étape 1 — Configurer Mac Home Library dans BiblioFuse
+## Ce que fait Tailscale
 
-Mac Home Library de BiblioFuse est une fonction qui sert les dossiers de BD de votre Mac à l'application iPhone via le réseau local.
+Tailscale est construit sur WireGuard, un protocole VPN moderne reconnu pour sa rapidité et sa robustesse cryptographique. Il crée un maillage pair-à-pair : chaque appareil se connecte directement aux autres appareils de votre compte, sans router le trafic via un serveur central.
 
-1. Installez **BiblioFuse** sur votre iPhone et votre Mac (depuis l'App Store sur chaque plateforme)
-2. Sur votre Mac, ouvrez BiblioFuse et allez dans **Réglages → Mac Home Library**
-3. Cliquez sur **Activer** — le Mac commence à servir votre bibliothèque sur un port local
-4. Sur votre iPhone, ouvrez BiblioFuse et allez dans **Bibliothèque → Ajouter une source → Mac Home Library**
-5. Votre Mac devrait apparaître automatiquement sur le réseau local. Appuyez dessus pour vous connecter.
+La configuration prend environ 5 minutes et ne nécessite aucun accès au routeur.
 
-Vérifiez que cela fonctionne : parcourez un dossier de votre Mac depuis votre iPhone et ouvrez un CBZ. Les pages doivent se charger en une ou deux secondes. Une fois que cela fonctionne sur le Wi-Fi local, vous êtes prêt à ajouter Tailscale.
+## Configuration étape par étape
 
-## Étape 2 — Installer et configurer Tailscale
+### Sur votre Mac
 
-Tailscale est un VPN construit sur WireGuard. Le plan gratuit prend en charge jusqu'à 100 appareils et couvre tout ce dont vous avez besoin ici.
+1. Téléchargez Tailscale depuis [tailscale.com](https://tailscale.com) ou le Mac App Store.
+2. Connectez-vous avec Google, GitHub, Microsoft ou créez un compte Tailscale gratuit.
+3. Notez l'adresse IP Tailscale de votre Mac (ex. `100.x.x.x`).
+4. Ouvrez BiblioFuse sur votre Mac et allez dans **Préférences → Serveur de bibliothèque domestique**.
+5. Activez le serveur. Le port par défaut est `8686`.
 
-1. Rendez-vous sur **tailscale.com** et créez un compte gratuit
-2. Installez l'**application Tailscale** sur votre Mac (disponible via l'App Store ou tailscale.com/download)
-3. Installez l'**application Tailscale** sur votre iPhone (depuis l'App Store)
-4. Connectez-vous à Tailscale sur les deux appareils avec le même compte
-5. Dans l'application Tailscale sur votre Mac, vérifiez qu'elle affiche une adresse IP Tailscale (généralement `100.x.x.x`)
-6. Sur votre iPhone, ouvrez Tailscale et vérifiez que votre Mac apparaît dans la liste des appareils avec un statut vert
+### Sur votre iPhone
 
-Les deux appareils sont maintenant sur votre réseau Tailscale privé. Ils peuvent communiquer quelle que soit leur localisation physique.
+1. Installez Tailscale depuis l'App Store.
+2. Connectez-vous au même compte Tailscale que sur votre Mac.
+3. Activez le basculement VPN Tailscale.
+4. Ouvrez [BiblioFuse](https://bibliofuse.com/fr/) sur votre iPhone et allez dans **Bibliothèque → Se connecter au Mac**.
+5. Entrez l'adresse IP Tailscale de votre Mac et le port `8686`.
+6. Appuyez sur Connecter. Votre bibliothèque Mac apparaît immédiatement.
 
-## Étape 3 — Connecter BiblioFuse à votre Mac via Tailscale
+## Performance et bande passante
 
-Avec Tailscale en cours d'exécution, BiblioFuse peut atteindre la Mac Home Library de votre Mac en utilisant l'adresse IP Tailscale.
+Tailscale établit des connexions directes pair-à-pair lorsque c'est possible. Sur une connexion Wi-Fi d'hôtel typique ou sur données mobiles, le streaming de pages de comics fonctionne confortablement. BiblioFuse n'envoie que la page courante et précharge les suivantes.
 
-1. Sur votre Mac, notez l'adresse IP Tailscale (affichée dans l'application de la barre de menus — quelque chose comme `100.64.0.2`)
-2. Sur votre iPhone, ouvrez BiblioFuse et allez dans **Bibliothèque → Ajouter une source → Mac Home Library**
-3. Si votre Mac n'apparaît pas automatiquement (ce ne sera pas le cas sur un autre réseau), appuyez sur **Saisir l'adresse manuellement**
-4. Tapez l'adresse IP Tailscale et le port utilisé par BiblioFuse (par défaut : `8080`)
-5. Appuyez sur **Connecter**
+## Confidentialité et sécurité
 
-Votre bibliothèque Mac apparaît maintenant dans BiblioFuse sur votre iPhone. Ouvrez n'importe quel dossier, appuyez sur n'importe quel volume et il est diffusé via Tailscale exactement comme sur le Wi-Fi local.
+La connexion Tailscale est chiffrée bout en bout avec WireGuard. Personne d'autre ne peut accéder à votre serveur BiblioFuse. Vos fichiers ne passent jamais par un serveur tiers.
 
-## Étape 4 — Maintenir la connexion quand vous partez
+## Questions fréquentes
 
-Pour que l'accès distant fonctionne, votre Mac doit être :
+**Mon Mac doit-il rester allumé ?**
+Oui. BiblioFuse fonctionne tant que votre Mac est actif. Désactivez la mise en veille dans Réglages Système → Batterie.
 
-- **Éveillé** — désactivez la mise en veille pour l'accès réseau dans **Réglages système → Batterie → Options → Empêcher la mise en veille automatique quand l'écran est éteint** (pour Mac fixe) ou configurez une plage horaire
-- **Connecté à internet** — votre routeur domestique reste connecté pendant que vous voyagez
-- **Avec Tailscale en cours d'exécution** — configurez Tailscale pour qu'il se lance au démarrage de session dans ses préférences
+**Cela fonctionne-t-il avec les données mobiles ?**
+Oui. Tailscale fonctionne sur toute connexion Internet. Le streaming de comics consomme environ 1–3 Mo par page.
 
-Sur un MacBook, l'option « Empêcher la mise en veille » nécessite l'adaptateur secteur. Si votre Mac est un MacBook débranché, configurez un horaire spécifique : réveil à 06:00 et mise en veille à 23:00, par exemple.
+**Puis-je l'utiliser avec plusieurs Macs ?**
+Oui. Ajoutez chaque Mac à votre compte Tailscale et sauvegardez chacun comme connexion dans BiblioFuse.
 
-## Cas d'utilisation pratiques
+**Tailscale est-il payant ?**
+Il dispose d'un niveau gratuit supportant jusqu'à 3 utilisateurs et 100 appareils — largement suffisant pour un usage personnel.
 
-**Lire une longue série en voyage.** Votre collection complète de One Piece (107 volumes, ~15 Go en CBZ compressés) se trouve sur votre Mac à la maison. Dans un avion sans Wi-Fi vous n'aurez pas accès, mais pendant le voyage avec n'importe quelle connexion internet (Wi-Fi d'hôtel, données mobiles), [BiblioFuse](/fr/) diffuse chaque page à la demande. Vous ne téléchargez pas 15 Go ; vous téléchargez des pages individuelles au fur et à mesure que vous lisez.
+## Pour commencer
 
-**Lire sur une connexion lente.** Tailscale utilise WireGuard, qui est efficace sur les données mobiles. Les pages CBZ compressées (encodées en WebP via l'onglet Outils de BiblioFuse) font généralement entre 200 et 500 Ko chacune. À des vitesses 4G de 10–20 Mbps, chaque page se charge en moins de 0,1 seconde. Même sur un Wi-Fi d'hôtel congestionné à 2 Mbps, les pages se chargent en moins d'une seconde.
+Si vous n'avez pas encore [BiblioFuse](https://bibliofuse.com/fr/), téléchargez-le depuis l'App Store pour iPhone et iPad, et depuis le Mac App Store pour macOS. Tailscale est gratuit sur [tailscale.com](https://tailscale.com).
 
-**Gérer une bibliothèque familiale.** Ajoutez l'iPhone de votre conjoint ou une tablette au même compte Tailscale (jusqu'à 100 appareils sur le plan gratuit). Toute la famille peut diffuser depuis la même bibliothèque Mac sans abonnements cloud séparés.
-
-## Dépannage
-
-**Le Mac n'apparaît pas dans BiblioFuse après l'activation de Tailscale.** Utilisez la méthode de saisie manuelle de l'IP avec l'adresse IP Tailscale de votre Mac. La découverte automatique repose sur la diffusion mDNS, qui ne franchit pas les frontières réseau.
-
-**Les pages se chargent lentement sur les données mobiles.** Compressez vos archives CBZ à l'aide de l'onglet Outils de BiblioFuse ou de l'[Outil Web BiblioFuse](/fr/webapp/) pour réduire la taille des pages. Les fichiers CBZ encodés en WebP à la qualité 82 sont généralement 75 à 88 % plus petits que les archives basées sur PNG.
-
-**Le Mac s'est mis en veille.** Activez « Empêcher la mise en veille automatique » dans les Réglages système, ou utilisez la commande `caffeinate -i &` dans le Terminal pour le maintenir éveillé.
-
-**La connexion Tailscale se coupe.** Tailscale se reconnecte automatiquement lorsque les conditions réseau changent. Si la connexion échoue, fermez et rouvrez BiblioFuse sur votre iPhone pour relancer la connexion.
-
-## Foire aux questions
-
-**Puis-je accéder à ma bibliothèque de BD à distance sans Tailscale ?**
-Oui, mais les alternatives sont plus complexes ou moins privées. La redirection de ports sur votre routeur expose votre Mac directement à internet — un risque de sécurité. La synchronisation cloud (iCloud, Google Drive) nécessite d'abord de téléverser toute votre bibliothèque. Tailscale offre un accès distant chiffré sans configuration et sans exposer de ports.
-
-**Tailscale est-il payant pour cet usage ?**
-Le plan gratuit de Tailscale prend en charge jusqu'à 100 appareils sur un seul compte personnel, sans frais de stockage ni limites de bande passante. Pour une bibliothèque personnelle de BD partagée entre vos propres appareils, le plan gratuit est amplement suffisant.
-
-**Quelle est la vitesse de diffusion des BD sur les données mobiles ?**
-Avec des fichiers CBZ compressés (pages WebP), les pages individuelles font généralement entre 200 et 500 Ko. Sur une connexion 4G à 10 Mbps, chaque page se charge en moins d'une demi-seconde. Même sur un Wi-Fi d'hôtel plus lent à 2 Mbps, l'expérience de lecture reste fluide.
-
-**BiblioFuse fonctionne-t-il aussi avec Tailscale sur iPad ?**
-Oui. BiblioFuse prend en charge l'iPhone et l'iPad, et Tailscale est également disponible sur iPad. La configuration est identique — installez les deux applications, connectez-vous à Tailscale et connectez-vous à la Mac Home Library en utilisant l'adresse IP Tailscale.
-
-**Ma collection de BD est-elle privée quand j'utilise Tailscale ?**
-Oui. Tailscale utilise le chiffrement WireGuard pour tout le trafic entre les appareils. Vos fichiers sont transmis directement entre votre iPhone et votre Mac dans un tunnel chiffré. Les serveurs de Tailscale gèrent la coordination de connexion mais ne voient jamais le contenu de vos fichiers.
-
-**Que se passe-t-il si mon Mac redémarre pendant mon absence ?**
-Si Tailscale est configuré pour se lancer à l'ouverture de session et que Mac Home Library est configurée pour démarrer automatiquement dans BiblioFuse pour Mac, la connexion se rétablit automatiquement après le redémarrage. Configurez les deux applications pour qu'elles se lancent à l'ouverture de session afin d'assurer la continuité.
+La combinaison des deux fait que votre bibliothèque domestique vous accompagne partout — sans uploader un seul fichier dans le cloud.

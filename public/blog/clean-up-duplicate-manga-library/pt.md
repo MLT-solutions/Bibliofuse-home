@@ -4,7 +4,7 @@ Você abre sua pasta de mangá e nota algo estranho: o volume 47 de *One Piece* 
 
 Para a maioria dos leitores de mangá, duplicatas se acumulam silenciosamente ao longo de anos de downloads de diferentes fontes, movimentações de arquivos entre drives e backups que nunca foram limpos. O resultado é armazenamento desperdiçado, confusão na leitura e nenhuma maneira fácil de identificar qual versão tem melhor qualidade.
 
-Este guia apresenta um fluxo de trabalho prático para encontrar, revisar e remover mangás duplicados usando o [Archive Duplicate Scanner](https://bibliofuse.com/en/) — um utilitário para Mac desenvolvido especificamente para esse problema.
+Este guia apresenta um fluxo de trabalho prático para encontrar, revisar e remover mangás duplicados usando o [Archive Duplicate Scanner](/en/) — um utilitário para Mac desenvolvido especificamente para esse problema.
 
 ---
 
@@ -24,7 +24,7 @@ Um localizador de arquivos duplicados padrão não detectará a maioria desses c
 
 ## O que o Archive Duplicate Scanner faz de diferente
 
-O [Archive Duplicate Scanner](https://bibliofuse.com/en/) usa **hash perceptual** para comparar as imagens reais dentro dos seus arquivos CBZ e CBR. Em vez de perguntar "esses dois arquivos são idênticos byte a byte?", ele pergunta "esses dois arquivos contêm as mesmas páginas de quadrinhos?"
+O [Archive Duplicate Scanner](/en/) usa **hash perceptual** para comparar as imagens reais dentro dos seus arquivos CBZ e CBR. Em vez de perguntar "esses dois arquivos são idênticos byte a byte?", ele pergunta "esses dois arquivos contêm as mesmas páginas de quadrinhos?"
 
 Isso significa que ele detecta duplicatas que foram:
 
@@ -63,7 +63,7 @@ O Archive Duplicate Scanner move arquivos para a Lixeira — não exclusão perm
 
 **Escaneie após cada sessão de download importante.** Execute o Archive Duplicate Scanner após baixar um lote de novos volumes para detectar sobreposições antes que se multipliquem.
 
-**Use o [BiblioFuse](https://bibliofuse.com/en/) para ler a partir da sua pasta curada.** Ao transmitir sua biblioteca Mac para iPhone ou iPad pelo BiblioFuse, você lê da única fonte da verdade.
+**Use o [BiblioFuse](/en/) para ler a partir da sua pasta curada.** Ao transmitir sua biblioteca Mac para iPhone ou iPad pelo BiblioFuse, você lê da única fonte da verdade.
 
 ---
 

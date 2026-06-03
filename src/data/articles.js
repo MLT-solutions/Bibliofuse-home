@@ -1,14 +1,14 @@
 export const articles = [
   {
     slug: 'tailscale-remote-library-access',
-    date: '2026-06-02',
-    tags: ['guide', 'ios', 'tips'],
+    date: '2026-06-04',
+    tags: ['guide', 'ios', 'tailscale'],
     coverImage: '/image/blog/Remote Comic Library.jpg',
   },
   {
     slug: 'webp-vs-png-for-comics',
-    date: '2026-06-02',
-    tags: ['guide', 'formats', 'tips'],
+    date: '2026-06-04',
+    tags: ['guide', 'formats', 'webp'],
     coverImage: '/image/blog/WebP vs PNG Comics.jpg',
   },
   {

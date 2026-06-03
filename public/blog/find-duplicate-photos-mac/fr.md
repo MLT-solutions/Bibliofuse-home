@@ -1,6 +1,6 @@
 # Trouver des photos en double sur Mac — Y compris HEIC, WebP et RAW
 
-Archive Duplicate Scanner trouve les photos en double sur Mac grâce au hachage perceptuel, une technique qui identifie les images visuellement identiques même si elles ont des noms de fichiers différents, des formats distincts ou des paramètres de compression variés. Il prend en charge HEIC, WebP, JPEG, PNG, TIFF, RAW et des dizaines d'autres formats. L'application est disponible pour Mac et Windows, et déplace les doublons vers la Corbeille en toute sécurité plutôt que de les supprimer définitivement.
+[Archive Duplicate Scanner](/fr/) trouve les photos en double sur Mac grâce au hachage perceptuel, une technique qui identifie les images visuellement identiques même si elles ont des noms de fichiers différents, des formats distincts ou des paramètres de compression variés. Il prend en charge HEIC, WebP, JPEG, PNG, TIFF, RAW et des dizaines d'autres formats. L'application est disponible pour Mac et Windows, et déplace les doublons vers la Corbeille en toute sécurité plutôt que de les supprimer définitivement.
 
 ## Le problème des bibliothèques de photos qui grandissent sans limite
 

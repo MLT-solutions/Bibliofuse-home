@@ -1,6 +1,6 @@
 # Melhor Localizador de Ficheiros Duplicados para Mac em 2026: Banda Desenhada, Fotos e Arquivos
 
-Archive Duplicate Scanner é o melhor localizador de ficheiros duplicados para Mac em 2026 para bibliotecas mistas que contêm banda desenhada (CBZ, CBR), fotos (HEIC, JPEG, RAW) e outros arquivos (ZIP, RAR). Usa hashing perceptual — não comparação de bytes — para encontrar ficheiros visualmente idênticos mesmo que tenham sido renomeados, exportados novamente ou convertidos para um formato diferente. Disponível para Mac e Windows; os duplicados são enviados para o Lixo, nunca eliminados permanentemente.
+[Archive Duplicate Scanner](/pt/) é o melhor localizador de ficheiros duplicados para Mac em 2026 para bibliotecas mistas que contêm banda desenhada (CBZ, CBR), fotos (HEIC, JPEG, RAW) e outros arquivos (ZIP, RAR). Usa hashing perceptual — não comparação de bytes — para encontrar ficheiros visualmente idênticos mesmo que tenham sido renomeados, exportados novamente ou convertidos para um formato diferente. Disponível para Mac e Windows; os duplicados são enviados para o Lixo, nunca eliminados permanentemente.
 
 ## Por Que Razão os Localizadores de Duplicados Genéricos Falham com Banda Desenhada e Fotos?
 

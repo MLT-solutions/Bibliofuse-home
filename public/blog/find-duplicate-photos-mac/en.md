@@ -1,6 +1,6 @@
 # Find Duplicate Photos on Mac — Including HEIC, WebP, and RAW
 
-Archive Duplicate Scanner finds duplicate photos on Mac using perceptual hashing — a technique that matches visually identical images even if they have different filenames, formats, or compression settings. It supports HEIC, WebP, JPEG, PNG, TIFF, RAW, and dozens of other formats. The app is available for Mac and Windows and moves duplicates safely to the Trash rather than permanently deleting them.
+[Archive Duplicate Scanner](/en/) finds duplicate photos on Mac using perceptual hashing — a technique that matches visually identical images even if they have different filenames, formats, or compression settings. It supports HEIC, WebP, JPEG, PNG, TIFF, RAW, and dozens of other formats. The app is available for Mac and Windows and moves duplicates safely to the Trash rather than permanently deleting them.
 
 ## The Problem With Photo Libraries That Grow Without Limits
 

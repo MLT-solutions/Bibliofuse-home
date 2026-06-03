@@ -4,7 +4,7 @@ Você renomeou um arquivo. Recomprimiu um arquivo. Baixou o mesmo volume de uma 
 
 No entanto, o quadrinho dentro é o mesmo. Cada página é a mesma. E se você estiver tentando limpar sua biblioteca digital, esses quase-idênticos duplicatas são exatamente os que escapam dos localizadores de duplicatas padrão.
 
-Esse é o problema que o hash perceptual resolve, e é a técnica no núcleo do [Archive Duplicate Scanner](https://bibliofuse.com/en/).
+Esse é o problema que o hash perceptual resolve, e é a técnica no núcleo do [Archive Duplicate Scanner](/en/).
 
 ---
 
@@ -40,7 +40,7 @@ Dois hashes com conteúdo visual semelhante terão uma **distância de Hamming**
 
 ## Como o Archive Duplicate Scanner Aplica Isso
 
-O [Archive Duplicate Scanner](https://bibliofuse.com/en/) aplica hash perceptual no nível do arquivo:
+O [Archive Duplicate Scanner](/en/) aplica hash perceptual no nível do arquivo:
 
 1. **Extração** — abre cada CBZ ou CBR e lê as imagens internas
 2. **Hash de cada página** — cada página recebe um hash perceptual
@@ -76,6 +76,6 @@ Um arquivo tem páginas `001.jpg` enquanto outro tem `page_001.jpg`. Hash percep
 
 ## Usando o Archive Duplicate Scanner
 
-O [Archive Duplicate Scanner](https://bibliofuse.com/en/) é um aplicativo Mac nativo que traz hash perceptual para toda sua biblioteca. Move duplicatas selecionadas para a Lixeira (não exclusão permanente).
+O [Archive Duplicate Scanner](/en/) é um aplicativo Mac nativo que traz hash perceptual para toda sua biblioteca. Move duplicatas selecionadas para a Lixeira (não exclusão permanente).
 
-Com sua biblioteca limpa, combine-a com o [BiblioFuse](https://bibliofuse.com/en/) no iPhone para uma fonte única e curada para leitura.
+Com sua biblioteca limpa, combine-a com o [BiblioFuse](/en/) no iPhone para uma fonte única e curada para leitura.

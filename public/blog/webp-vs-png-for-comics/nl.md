@@ -1,91 +1,76 @@
-# WebP vs PNG voor Comics: Welk Formaat Geeft de Beste Kwaliteit-Grootteverhouding?
+# WebP vs PNG voor comics: welk formaat biedt de beste kwaliteit-grootteverhouding?
 
-BiblioFuse leest CBZ-, CBR-, EPUB-, PDF-, ZIP-, RAR- en TXT-bestanden op iPhone en iPad met iOS 17 of nieuwer, en het ingebouwde tabblad Tools converteert stripafbeeldingen volledig op het apparaat zelf naar andere formaten. Voor striparchiven levert WebP doorgaans 60–80% kleinere bestanden dan PNG bij vergelijkbare visuele kwaliteit, waardoor het de betere keuze is voor grote bibliotheken op je iPhone.
+Je opent je comicsmap en merkt iets vreemds op: twee gescande hoofdstukken van dezelfde serie, visueel identiek op het scherm, maar het ene is 45 MB en het andere slechts 14 MB. Het verschil? Het ene is opgeslagen als PNG, het andere als WebP. Als je je ooit hebt afgevraagd waarom comicsarchieven zo sterk in grootte variëren — en of je opslagruimte verspilt op je iPhone — geeft deze analyse de antwoorden.
 
-Je hebt een mangacollectie die 30 GB inneemt op je iPhone. De helft bestaat uit onbewerkte PNG-scans van fangroepen — lossless, prachtig en enorm groot. Je vraagt je af of het de moeite waard is om naar WebP te converteren en of je het kwaliteitsverschil überhaupt zult merken op een telefoonscherm. Deze gids geeft je het technische antwoord en legt stap voor stap uit hoe je de conversie uitvoert in [BiblioFuse](/nl/).
+## Waarom bestandsformaat belangrijk is voor comics
 
-## Wat Betekent WebP vs PNG voor Comics Eigenlijk?
+Comics zijn van nature beeldintensief. Een gescand nummer van 24 pagina's kan 50 tot 200 afbeeldingen bevatten, elk enkele megabytes in PNG-formaat. Vermenigvuldig dat met een bibliotheek van 500 volumes en je hebt het over honderden gigabytes, waarvan het grootste deel wordt bepaald door hoe die afbeeldingen worden gecodeerd.
 
-PNG (Portable Network Graphics) gebruikt lossless compressie. Elke pixel wordt exact opgeslagen zoals vastgelegd — er gaat niets verloren. Dit maakt PNG ideaal voor schermafbeeldingen en tekstzware afbeeldingen, waarbij zelfs kleine compressieartefacten zichtbaar zijn. Een typische manga-pagina van 1.600×2.400 pixels bij 300 DPI weegt zo'n 3–6 MB als lossless PNG.
+Bestandsformaat beïnvloedt drie dingen: bestandsgrootte (opslag en overdrachtssnelheid), visuele kwaliteit (vooral voor fijne lijnen en kleurgradiënten) en app-compatibiliteit.
 
-WebP is een modern formaat ontwikkeld door Google. Het ondersteunt zowel lossless als lossy compressie. In lossy-modus bij kwaliteit 80–85 levert dezelfde manga-pagina als WebP typisch 400–900 KB op — een reductie van 75–88% zonder zichtbaar verschil bij normale leeszoom op een iPhone-scherm.
+## Hoe PNG-compressie werkt
 
-Voor JPEG-comics die al in CBZ-archiven zitten, wint WebP lossy eveneens. Een hoge-kwaliteit JPEG hercoderen als WebP bij kwaliteit 82 levert een kleiner bestand op met minder compressieartefacten (WebP gebruikt een efficiëntere DCT-blokstructuur dan JPEG).
+PNG gebruikt verliesloze compressie. Elke pixel van de originele afbeelding wordt exact bewaard. Voor comics is dit belangrijk omdat stripkunst scherpe overgangen heeft tussen zwart en wit. Formaten met verlies zoals JPEG introduceren artefacten bij die overgangen. PNG vermijdt dit, maar ten koste van grotere bestandsgroottes: een kleurpagina van 3000×4500 px kan gemakkelijk 8–15 MB bereiken.
 
-## Waarom Is het Formaat Zo Belangrijk voor Comics?
+## Hoe WebP-compressie werkt
 
-Striparchiven zijn bijzonder vergeleken met gewone fotobibliotheken:
+WebP, ontwikkeld door Google, ondersteunt zowel verliesloze als verlieshebbende modi. In verliesloze modus verslaat WebP PNG doorgaans met 25–35% in bestandsgrootte voor fotografische inhoud. In verlieshebbende modus bij kwaliteit 85–90 kan een pagina van 12 MB als verliesloze PNG dalen tot onder de 1 MB als verlieshebbend WebP, met verschillen die nauwelijks zichtbaar zijn op typische schermresoluties.
 
-- **Het aantal delen is hoog.** Een complete manga-reeks kan meer dan 100 delen bevatten. Met 200 pagina's per deel zijn dat 20.000 afbeeldingen. De efficiëntie van het formaat vermenigvuldigt zich over elke afbeelding.
-- **De schermresolutie is het plafond.** Een iPhone 15 Pro-scherm heeft 2.556×1.179 pixels. Een PNG-pagina gescand op 3.000×4.500 pixels bevat meer data dan het scherm ooit kan weergeven. De overtollige resolutie is pure overhead — het vergroot de bestandsgrootte zonder de leeservaring te verbeteren.
-- **Opslag is beperkt.** iCloud synchroniseert je bibliotheek, maar de lokale downloadcache op je iPhone wordt beperkt door opslagruimte. Kleinere bestanden betekenen meer volumes in dezelfde ruimte.
+## Directe vergelijking: dezelfde comic in verschillende formaten
 
-Een bibliotheek van 20.000 PNG-afbeeldingen bij gemiddeld 2,5 MB per afbeelding = 50 GB. Dezelfde bibliotheek in WebP bij gemiddeld 500 KB per afbeelding = 10 GB. Dat is 40 GB teruggewonnen met dezelfde leeservaring.
+Geschatte waarden voor een kleurenmangapagina van 2200×3200 px:
 
-## Hoe Converteert BiblioFuse Stripafbeeldingen naar WebP?
+| Formaat | Modus | Bestandsgrootte | Kwaliteit |
+|---------|-------|-----------------|-----------|
+| PNG | Verloorloos | 8,2 MB | Perfect |
+| WebP | Verloorloos | 6,1 MB | Perfect |
+| WebP | Kwaliteit 90 | 1,8 MB | Uitstekend |
+| WebP | Kwaliteit 75 | 0,9 MB | Goed |
+| JPEG | Kwaliteit 90 | 2,1 MB | Uitstekend |
 
-Het tabblad Tools van [BiblioFuse](/nl/) bevat een op-apparaat compressie-engine die CBZ-archiven herversleutelt naar WebP zonder bestanden naar een server te sturen.
+## Hoe BiblioFuse met WebP-comics omgaat
 
-### Stap voor Stap: Comprimeer een CBZ naar WebP op iPhone
+[BiblioFuse](https://bibliofuse.com/nl/) ondersteunt native WebP-afbeeldingen in CBZ-archieven op iOS en macOS. De [webtools van BiblioFuse](https://bibliofuse.com/nl/webapp/) laten je ook CBZ-archieven rechtstreeks in de browser comprimeren. De tool converteert PNG-pagina's naar WebP met kwaliteitsinstellingen die zijn afgesteld om visuele getrouwheid te behouden terwijl de bestandsgrootte aanzienlijk wordt verminderd.
 
-1. Open **BiblioFuse** op je iPhone
-2. Tik op het tabblad **Tools** (het moersleutelpictogram onderaan)
-3. Tik op **Compress / Convert**
-4. Selecteer het CBZ- of CBR-deel dat je wilt comprimeren
-5. Kies het doelformaat: **WebP** (lossy) of **WebP Lossless**
-6. Stel de kwaliteitsschuifregelaar in op **82** als standaard voor manga; verhoog naar **88** voor kunstwerken met fijne lijnen of kleurverlopen
-7. Tik op **Compress** — de app verwerkt het archief op het apparaat en slaat het resultaat op
+Alle verwerking vindt lokaal plaats in je browser via WebAssembly. Je comics verlaten nooit je apparaat.
 
-Het originele bestand wordt niet automatisch verwijderd — je kunt ze naast elkaar vergelijken voordat je het origineel verwijdert.
+## Stap voor stap: je comicsarchief converteren naar WebP
 
-Voor een complete reeks herhaal je dit voor elk deel, of gebruik je de **BiblioFuse Web Tool** op [bibliofuse.com/webapp](/nl/webapp/) om meerdere CBZ-bestanden tegelijk in een browser te verwerken. De Web Tool is WASM-gebaseerd — je bestanden verlaten je apparaat nooit.
+1. Ga naar de [BiblioFuse webtool](https://bibliofuse.com/nl/webapp/) in een browser.
+2. Sleep een CBZ- of ZIP-bestand naar het compressiegebied.
+3. Pas de kwaliteitsschuif aan — begin bij 85 voor kleur, 80 voor zwart-wit.
+4. Klik op Comprimeren. De tool verwerkt alles lokaal.
+5. Download het resultaat en open het in BiblioFuse ter vergelijking.
 
-## WebP Lossless vs WebP Lossy voor Comics
+## Wanneer bij PNG blijven
 
-| Scenario | Aanbevolen formaat | Waarom |
-|----------|--------------------|--------|
-| Fan-scan PNG manga (grijstinten of kleur) | WebP lossy q82 | 75–88% kleiner, onzichtbaar bij leeszoom |
-| Professionele rips met fijne lijnen | WebP lossy q88 | Behoudt details, nog ~65% kleiner dan PNG |
-| Tekstzware educatieve strips | WebP lossless | Voorkomt aliasing in tekstballonnen |
-| Omslagafbeeldingen | WebP lossy q90 | Hoge visuele kwaliteit, nog 60% kleiner dan PNG |
-| Al JPEG (meeste westerse strips) | WebP lossy q82 | Vermindert JPEG-artefacten, 30–50% kleiner |
+**Originele scans die je gaat bewerken.** Als je bewerkingen uitvoert (descreen, ruisonderdrukking), werk altijd in PNG.
 
-Het zichtbare verschil tussen PNG en WebP lossy bij q82 is vrijwel nul op een telefoonscherm. Je zou op 300% moeten inzoomen op een effen kleurvlak en naar banding moeten zoeken om iets op te merken. Voor het lezen bestaat het gewoon niet.
+**Lijntekeningen met kleine bestanden.** Voor zeer schone zwart-witte lijntekeningen kan PNG-compressie gelijk zijn aan of beter dan verliesloze WebP.
 
-## Heeft WebP Invloed op Compatibiliteit?
+**Maximale archiefveiligheid.** PNG is de veiligste keuze voor leesbaarheid over 20 jaar.
 
-BiblioFuse leest WebP-pagina's in CBZ-archiven native op iOS 17+. Andere lezers variëren. Als je CBZ-bestanden deelt met anderen die andere apps op Windows of Android gebruiken, controleer dan of hun app WebP-in-CBZ ondersteunt voordat je converteert.
+## Wanneer WebP wint
 
-Als compatibiliteit belangrijk is, bewaar dan het originele PNG-CBZ als archief en gebruik de kleinere WebP-versie voor dagelijks lezen op je iPhone. [BiblioFuse](/nl/) slaat beide naast elkaar op zonder conflict.
+**Grote kleurencollecties.** WebP met verlies bij kwaliteit 85–90 vermindert de opslag met 70–80% zonder zichtbaar kwaliteitsverschil.
 
-## De BiblioFuse Web Tool Gebruiken voor Batchverwerking
+**Trage overdrachten.** Kleinere bestanden betekenen snellere synchronisatie tussen je Mac en iPhone.
 
-Voor grote bibliotheken biedt de [BiblioFuse Web Tool](/nl/webapp/) batchverwerking die praktischer is dan volumes één voor één op de telefoon doen.
+**Leesschermen.** Een iPhone-scherm met 326 ppi kan het verschil niet oplossen tussen PNG en WebP bij kwaliteit 90.
 
-1. Open [bibliofuse.com/webapp](/nl/webapp/) in Chrome, Edge of Safari op je Mac of pc
-2. Sleep maximaal 3 CBZ-bestanden tegelijk (gratis tier) naar de dropzone
-3. Selecteer **Compress / Repackage** en kies **WebP** als uitvoerformaat
-4. Klik op **Process** — de tool werkt lokaal in je browser via WASM; er wordt niets geüpload
-5. Download de gecomprimeerde CBZ-bestanden en breng ze over naar je iPhone via Wi-Fi Transfer
+## Veelgestelde vragen
 
-De Web Tool en BiblioFuse delen dezelfde WASM-compressie-engine, zodat dezelfde kwaliteitsinstellingen identieke resultaten opleveren.
+**Beïnvloedt compressie met verlies de leeservaring?**
+Bij kwaliteit 85 of hoger niet. Artefacten liggen onder de waarnemingsdrempel bij normale leesafstand.
 
-## Veelgestelde Vragen
+**Kan BiblioFuse CBZ-bestanden openen met gemengde WebP- en PNG-pagina's?**
+Ja. BiblioFuse detecteert het formaat van elke pagina onafhankelijk.
 
-**Ziet WebP er slechter uit dan PNG in een stripreader?**
-Niet bij normale leeszoom. WebP lossy bij kwaliteit 80 of hoger is visueel niet te onderscheiden van de bron-PNG bij standaard leesgrootte op een telefoon of tablet. Verschillen zijn alleen zichtbaar bij extreme zoom in effen kleurvlakken of op de randen van diagonale lijnen.
+**Hoe zit het met AVIF? Is het beter dan WebP?**
+AVIF biedt betere compressieverhoudingen, maar in 2026 is de compatibiliteit in comicsreaders nog ongelijkmatig. WebP is de betere praktische keuze.
 
-**Kan BiblioFuse WebP-pagina's in CBZ-bestanden lezen?**
-Ja. BiblioFuse op iOS 17+ leest WebP-afbeeldingen in CBZ-archiven native. Je kunt bestaande PNG-CBZ-bestanden converteren naar WebP via het tabblad Tools in de app of de BiblioFuse Web Tool in een browser — beide werken volledig op het apparaat.
+## Conclusie
 
-**Welke kwaliteitsinstelling moet ik gebruiken voor manga?**
-Voor grijstintenmanga geeft WebP lossy bij kwaliteit 82 de beste balans van grootte en scherpte. Voor kleurenmanga met gedetailleerd artwork gebruik je kwaliteit 85–88. Voor omslagen of displayafbeeldingen waar pixelperfecte kwaliteit telt, gebruik je kwaliteit 90 of WebP lossless.
+Voor een actieve leesbibliotheek op je iPhone is WebP bij kwaliteit 85–90 de juiste keuze voor kleurencomics. Voor zwart-wit manga zijn de winsten kleiner maar reëel. Bewaar een PNG-masterkopie van alles wat kostbaar is; gebruik WebP voor alles wat je normaal leest.
 
-**Hoeveel kleiner zijn WebP-bestanden vergeleken met PNG voor comics?**
-Typische resultaten: een PNG-manga-pagina van 3 MB wordt 400–700 KB in WebP lossy bij q82 — een reductie van 75–88%. Een JPEG-pagina van 1 MB wordt 500–700 KB in WebP — een reductie van 30–50%. Over een PNG-bibliotheek van 50 GB is de besparing typisch 35–45 GB.
-
-**Breekt converteren naar WebP andere stripapps?**
-WebP in CBZ wordt ondersteund door de meeste moderne lezers. Oudere Windows-lezers (zoals sommige versies van CDisplay) ondersteunen WebP-pagina's mogelijk niet. Als je maximale compatibiliteit nodig hebt, bewaar dan het originele PNG-archief en gebruik de WebP-versie alleen in BiblioFuse op je iPhone.
-
-**Is de BiblioFuse Web Tool gratis voor het batchgewijs converteren van CBZ naar WebP?**
-De gratis tier verwerkt maximaal 3 bestanden per batch. Er is geen account vereist en er wordt niets geüpload — alle verwerking vindt plaats in je browser via WASM. Bezoek [bibliofuse.com/webapp](/nl/webapp/) om het te gebruiken.
+[BiblioFuse](https://bibliofuse.com/nl/) verwerkt beide formaten naadloos, en de webtool maakt van conversie een klus van 30 seconden zonder software te installeren.

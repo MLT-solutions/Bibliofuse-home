@@ -4,7 +4,7 @@ Vous avez renommé un fichier. Vous avez recompressé une archive. Vous avez té
 
 Pourtant, la bande dessinée à l'intérieur est la même. Chaque page est la même. Et si vous essayez de nettoyer votre bibliothèque numérique, ces quasi-doublons sont exactement ceux qui échappent aux outils de détection de doublons standard.
 
-C'est le problème que résout le hachage perceptuel, et c'est la technique au cœur d'[Archive Duplicate Scanner](https://bibliofuse.com/fr/).
+C'est le problème que résout le hachage perceptuel, et c'est la technique au cœur d'[Archive Duplicate Scanner](/fr/).
 
 ---
 
@@ -40,7 +40,7 @@ Deux images au contenu visuel similaire produisent des hachages avec une **dista
 
 ## Comment Archive Duplicate Scanner applique cela
 
-[Archive Duplicate Scanner](https://bibliofuse.com/fr/) applique le hachage perceptuel au niveau de l'archive :
+[Archive Duplicate Scanner](/fr/) applique le hachage perceptuel au niveau de l'archive :
 
 1. **Extraction** — ouvre chaque CBZ ou CBR et lit les images internes
 2. **Hachage de chaque page** — chaque page reçoit un hachage perceptuel
@@ -76,6 +76,6 @@ Une archive a des pages `001.jpg` alors qu'une autre a `page_001.jpg`. Le hachag
 
 ## Utiliser Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](https://bibliofuse.com/fr/) est une application Mac native qui apporte le hachage perceptuel à toute votre bibliothèque. Il déplace les doublons sélectionnés dans la Corbeille (pas de suppression définitive).
+[Archive Duplicate Scanner](/fr/) est une application Mac native qui apporte le hachage perceptuel à toute votre bibliothèque. Il déplace les doublons sélectionnés dans la Corbeille (pas de suppression définitive).
 
-Une fois votre bibliothèque nettoyée, associez-la à [BiblioFuse](https://bibliofuse.com/fr/) sur iPhone pour une source unique et organisée pour la lecture.
+Une fois votre bibliothèque nettoyée, associez-la à [BiblioFuse](/fr/) sur iPhone pour une source unique et organisée pour la lecture.

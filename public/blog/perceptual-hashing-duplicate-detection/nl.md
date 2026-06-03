@@ -4,7 +4,7 @@ Je hebt een bestand hernoemd. Je hebt een archief opnieuw gecomprimeerd. Je hebt
 
 Toch is de strip erin hetzelfde. Elke pagina is hetzelfde. En als je je digitale bibliotheek probeert op te ruimen, zijn deze bijna-identieke duplicaten precies de bestanden die door standaard duplicaatzoektools glippen.
 
-Dit is het probleem dat perceptuele hashing oplost, en het is de techniek in de kern van [Archive Duplicate Scanner](https://bibliofuse.com/en/).
+Dit is het probleem dat perceptuele hashing oplost, en het is de techniek in de kern van [Archive Duplicate Scanner](/en/).
 
 ---
 
@@ -40,7 +40,7 @@ Twee afbeeldingen met vergelijkbare visuele inhoud produceren hashes met een lag
 
 ## Hoe Archive Duplicate Scanner dit toepast
 
-[Archive Duplicate Scanner](https://bibliofuse.com/en/) past perceptuele hashing toe op archiefniveau:
+[Archive Duplicate Scanner](/en/) past perceptuele hashing toe op archiefniveau:
 
 1. **Extractie** — opent elk CBZ- of CBR-archief en leest de interne afbeeldingen
 2. **Hash van elke pagina** — elke pagina krijgt een perceptuele hash
@@ -76,6 +76,6 @@ Het ene archief heeft pagina's `001.jpg`, het andere `page_001.jpg`. Perceptuele
 
 ## Archive Duplicate Scanner gebruiken
 
-[Archive Duplicate Scanner](https://bibliofuse.com/en/) is een native Mac-app die perceptuele hashing naar je volledige bibliotheek brengt. Het verplaatst geselecteerde duplicaten naar de Prullenmand (geen definitieve verwijdering).
+[Archive Duplicate Scanner](/en/) is een native Mac-app die perceptuele hashing naar je volledige bibliotheek brengt. Het verplaatst geselecteerde duplicaten naar de Prullenmand (geen definitieve verwijdering).
 
-Eenmaal je bibliotheek schoon, combineer het met [BiblioFuse](https://bibliofuse.com/en/) op iPhone voor één gecureerde bron voor lezen.
+Eenmaal je bibliotheek schoon, combineer het met [BiblioFuse](/en/) op iPhone voor één gecureerde bron voor lezen.

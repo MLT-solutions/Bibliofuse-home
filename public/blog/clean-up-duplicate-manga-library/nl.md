@@ -4,7 +4,7 @@ Je opent je mangamap en ziet iets vreemds: deel 47 van *One Piece* staat er drie
 
 Voor de meeste mangalezers hopen duplicaten zich stilletjes op over jaren van downloads van verschillende bronnen, verplaatsingen van archieven tussen schijven en back-ups die nooit opgeruimd werden. Het resultaat is verspilde opslag, verwarring bij het lezen en geen eenvoudige manier om te bepalen welke versie de beste kwaliteit heeft.
 
-Deze gids beschrijft een praktische workflow voor het vinden, beoordelen en verwijderen van dubbele manga met [Archive Duplicate Scanner](https://bibliofuse.com/en/) — een Mac-hulpprogramma dat speciaal voor dit probleem is gebouwd.
+Deze gids beschrijft een praktische workflow voor het vinden, beoordelen en verwijderen van dubbele manga met [Archive Duplicate Scanner](/en/) — een Mac-hulpprogramma dat speciaal voor dit probleem is gebouwd.
 
 ---
 
@@ -24,7 +24,7 @@ Een standaard zoeker naar dubbele bestanden detecteert de meeste gevallen niet o
 
 ## Wat Archive Duplicate Scanner anders doet
 
-[Archive Duplicate Scanner](https://bibliofuse.com/en/) gebruikt **perceptuele hashing** om de werkelijke afbeeldingen in je CBZ- en CBR-archieven te vergelijken. In plaats van te vragen "zijn deze twee bestanden byte voor byte identiek?", vraagt het "bevatten deze twee archieven dezelfde strippagina's?"
+[Archive Duplicate Scanner](/en/) gebruikt **perceptuele hashing** om de werkelijke afbeeldingen in je CBZ- en CBR-archieven te vergelijken. In plaats van te vragen "zijn deze twee bestanden byte voor byte identiek?", vraagt het "bevatten deze twee archieven dezelfde strippagina's?"
 
 Dit betekent dat het duplicaten detecteert die zijn:
 
@@ -63,7 +63,7 @@ Archive Duplicate Scanner verplaatst bestanden naar de Prullenmand — geen defi
 
 **Scan na elke grote downloadsessie.** Start Archive Duplicate Scanner na het downloaden van een batch nieuwe delen om overlapping te detecteren.
 
-**Gebruik [BiblioFuse](https://bibliofuse.com/en/) om te lezen vanuit je gecureerde map.** Wanneer je je Mac-bibliotheek streamt naar iPhone of iPad via BiblioFuse, lees je van de enige bron van de waarheid.
+**Gebruik [BiblioFuse](/en/) om te lezen vanuit je gecureerde map.** Wanneer je je Mac-bibliotheek streamt naar iPhone of iPad via BiblioFuse, lees je van de enige bron van de waarheid.
 
 ---
 

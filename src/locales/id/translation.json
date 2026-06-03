@@ -837,6 +837,16 @@
           "title": "Cara Menyinkronkan Progres Membaca Tanpa Akun Cloud",
           "excerpt": "BiblioFuse memberi Anda beberapa cara untuk menjaga konsistensi progres membaca antar perangkat tanpa bergantung pada akun cloud mana pun.",
           "seoDescription": "Sinkronkan progres membaca komik antara iPhone dan iPad tanpa akun cloud. Wi-Fi, AirDrop, bookmark, dan lainnya dengan BiblioFuse."
+        },
+        "webp-vs-png-for-comics": {
+          "title": "WebP vs PNG untuk Komik: Rasio Kualitas-Ukuran Terbaik",
+          "excerpt": "WebP dapat mengurangi ukuran arsip komik 70–80% dibanding PNG tanpa kehilangan kualitas yang terlihat. Pelajari kapan menggunakan setiap format.",
+          "seoDescription": "Bandingkan WebP vs PNG untuk arsip komik dan manga. Format mana yang memberikan rasio kualitas-ukuran terbaik? BiblioFuse mendukung keduanya secara native."
+        },
+        "tailscale-remote-library-access": {
+          "title": "Akses Perpustakaan Komik Rumah dari Jauh dengan Tailscale",
+          "excerpt": "Gunakan streaming BiblioFuse dengan Tailscale untuk membaca koleksi Mac dari mana saja — tanpa upload cloud atau konfigurasi router.",
+          "seoDescription": "Stream perpustakaan komik Mac ke iPhone dari mana saja dengan BiblioFuse dan Tailscale. Tanpa upload cloud, tanpa IP statis."
         }
       }
     }
