@@ -658,6 +658,16 @@
     },
     "blog": {
       "posts": {
+        "night-reading-comics-iphone": {
+          "title": "Lire des BD la Nuit sur iPhone : Mode Sombre et Conseils de Confort Visuel",
+          "excerpt": "BiblioFuse pour iOS dispose d'un mode sombre, d'un curseur de luminosité en dessous du minimum iOS et d'un filtre sépia — la combinaison idéale pour lire des BD la nuit sans fatiguer les yeux.",
+          "seoDescription": "BiblioFuse pour iOS offre un vrai mode sombre, une luminosité inférieure au minimum iOS et un filtre sépia pour lire des BD confortablement la nuit sur iPhone."
+        },
+        "cbz-to-pdf-online": {
+          "title": "Comment Convertir un Fichier CBZ en PDF en Ligne — Gratuit, Privé, Sans Téléchargement",
+          "excerpt": "L'application web BiblioFuse convertit CBZ en PDF entièrement dans votre navigateur avec WebAssembly — sans serveur, sans compte, sans fichier envoyé nulle part. Conversion instantanée sans perte de qualité.",
+          "seoDescription": "Convertissez CBZ en PDF gratuitement dans votre navigateur. BiblioFuse utilise WebAssembly — sans uploads, sans compte, sans limites de taille. Fonctionne sur tous les appareils."
+        },
         "tailscale-remote-library-access": {
           "title": "Accédez à votre bibliothèque de bandes dessinées à distance avec BiblioFuse et Tailscale",
           "excerpt": "BiblioFuse lit les fichiers CBZ, CBR, EPUB, PDF, ZIP, RAR et TXT sur iPhone et iPad sous iOS 17 ou version ultérieure. Sa fonctionnalité Mac Home Library diffuse votre collection vers l'iPhone via Wi-Fi. Avec Tailscale, accédez à cette même bibliothèque depuis n'importe où dans le monde.",

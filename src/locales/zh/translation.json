@@ -658,6 +658,16 @@
     },
     "blog": {
       "posts": {
+        "night-reading-comics-iphone": {
+          "title": "iPhone 夜间阅读漫画：深色模式与护眼技巧",
+          "excerpt": "BiblioFuse iOS 版提供深色模式、低于 iOS 系统最低值的亮度控制和复古褐色滤镜——专为夜间阅读漫画和漫画不伤眼而设计的完整方案。",
+          "seoDescription": "BiblioFuse iOS 版提供真正的深色模式、低于 iOS 最低亮度和复古褐色滤镜，让你在 iPhone 上夜间舒适阅读漫画。"
+        },
+        "cbz-to-pdf-online": {
+          "title": "如何在线将 CBZ 转换为 PDF——免费、私密、无需上传",
+          "excerpt": "BiblioFuse 网页工具在浏览器内通过 WebAssembly 将 CBZ 转换为 PDF——无需服务器、无需账户、文件不上传任何地方。即时转换，无质量损失。",
+          "seoDescription": "免费在浏览器中将 CBZ 转换为 PDF。BiblioFuse 使用 WebAssembly——无上传、无账户、无文件大小限制。支持任意设备。"
+        },
         "tailscale-remote-library-access": {
           "title": "使用BiblioFuse和Tailscale远程访问家庭漫画库",
           "excerpt": "BiblioFuse可在iOS 17或更高版本的iPhone和iPad上读取CBZ、CBR、EPUB、PDF、ZIP、RAR和TXT文件。其Mac Home Library功能可通过Wi-Fi将桌面漫画集流式传输到iPhone。结合Tailscale，您可以从世界任何地方访问同一个库，无需云存储。",

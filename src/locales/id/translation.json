@@ -658,6 +658,16 @@
     },
     "blog": {
       "posts": {
+        "night-reading-comics-iphone": {
+          "title": "Membaca Komik di Malam Hari di iPhone: Mode Gelap dan Tips Kenyamanan Mata",
+          "excerpt": "BiblioFuse untuk iOS memiliki mode gelap, kontrol kecerahan di bawah minimum iOS, dan filter sepia — kombinasi tepat untuk membaca komik dan manga malam hari tanpa membebani mata.",
+          "seoDescription": "BiblioFuse untuk iOS menawarkan mode gelap sejati, kecerahan di bawah minimum iOS, dan filter sepia untuk membaca komik malam hari yang nyaman di iPhone."
+        },
+        "cbz-to-pdf-online": {
+          "title": "Cara Mengkonversi CBZ ke PDF Online — Gratis, Privat, Tanpa Upload",
+          "excerpt": "Aplikasi web BiblioFuse mengkonversi CBZ ke PDF sepenuhnya di browser Anda menggunakan WebAssembly — tanpa server, tanpa akun, tanpa file diunggah ke mana pun. Konversi instan tanpa kehilangan kualitas.",
+          "seoDescription": "Konversi CBZ ke PDF gratis di browser Anda. BiblioFuse menggunakan WebAssembly — tanpa upload, tanpa akun, tanpa batas ukuran file."
+        },
         "tailscale-remote-library-access": {
           "title": "Akses Perpustakaan Komik Rumah Anda dari Jarak Jauh dengan BiblioFuse dan Tailscale",
           "excerpt": "BiblioFuse membaca file CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT di iPhone dan iPad dengan iOS 17 atau lebih baru. Fitur Mac Home Library mengalirkan koleksi desktop ke iPhone melalui Wi-Fi. Dikombinasikan dengan Tailscale, Anda dapat mengakses perpustakaan yang sama dari mana saja di dunia tanpa penyimpanan cloud.",

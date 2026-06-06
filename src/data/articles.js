@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'night-reading-comics-iphone',
+    date: '2026-06-07',
+    tags: ['ios', 'tips', 'dark-mode'],
+    coverImage: '/image/blog/Night Reading Comics.jpg',
+  },
+  {
+    slug: 'cbz-to-pdf-online',
+    date: '2026-06-07',
+    tags: ['web', 'guide', 'conversion'],
+    coverImage: '/image/blog/CBZ to PDF Online.jpg',
+  },
+  {
     slug: 'tailscale-remote-library-access',
     date: '2026-06-04',
     tags: ['guide', 'ios', 'tailscale'],

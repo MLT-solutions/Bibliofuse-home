@@ -86,3 +86,20 @@ This file is the source of truth for the daily article agent.
 | 28 | ✅ | `reading-progress-sync-no-cloud-account` | How to Sync Reading Progress Without a Cloud Account | BiblioFuse iOS |
 | 29 | ✅ | `webp-vs-png-for-comics` | WebP vs PNG for Comics: Which Format Gives the Best Quality-to-Size Ratio? | BiblioFuse iOS + Web |
 | 30 | ✅ | `tailscale-remote-library-access` | Access Your Home Comic Library Remotely with BiblioFuse and Tailscale | BiblioFuse iOS |
+
+---
+
+## Queue — Batch 2 (added 2026-06-07)
+
+| # | Status | Slug | Title / Angle | Product |
+|---|--------|------|---------------|---------|
+| 31 | ✅ | `cbz-to-pdf-online` | How to Convert CBZ to PDF Online (Free, No Upload) | BiblioFuse Web |
+| 32 | ✅ | `night-reading-comics-iphone` | Reading Comics at Night on iPhone: Dark Mode and Eye Comfort Tips | BiblioFuse iOS |
+| 33 | ⬜ | `epub-to-pdf-online` | Convert EPUB to PDF Online: Free, Private, Browser-Only | BiblioFuse Web |
+| 34 | ⬜ | `organize-manga-series-iphone` | How to Organize Manga by Series in BiblioFuse on iPhone | BiblioFuse iOS |
+| 35 | ⬜ | `comic-bookmarks-iphone` | Using Bookmarks in BiblioFuse: Never Lose Your Place in a Comic | BiblioFuse iOS |
+| 36 | ⬜ | `extract-images-from-cbz` | How to Extract Images from CBZ Files Online (Free, No Software) | BiblioFuse Web |
+| 37 | ⬜ | `double-page-spreads-comics` | Reading Double-Page Spreads in Comics: How BiblioFuse Handles Wide Images | BiblioFuse iOS |
+| 38 | ⬜ | `backup-comic-library-mac` | How to Back Up Your Comic Library on Mac: External Drive, NAS, and Cloud Options | All apps |
+| 39 | ⬜ | `ebook-formats-long-term-library` | Best File Formats for a Long-Term Digital Library (EPUB, CBZ, PDF Compared) | Cross-product |
+| 40 | ⬜ | `sideload-comics-iphone-without-itunes` | How to Sideload Comics to iPhone Without iTunes or iCloud | BiblioFuse iOS |

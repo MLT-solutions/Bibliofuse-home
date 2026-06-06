@@ -194,6 +194,16 @@
         "update": "Update"
       },
       "posts": {
+        "night-reading-comics-iphone": {
+          "title": "Reading Comics at Night on iPhone: Dark Mode and Eye Comfort Tips",
+          "excerpt": "BiblioFuse for iOS has dark mode, an in-app brightness slider below the iOS minimum, and a sepia filter — the right combination for nighttime comic and manga reading without eye strain.",
+          "seoDescription": "BiblioFuse for iOS offers true dark mode, sub-iOS-minimum brightness, and a sepia filter for comfortable nighttime comic reading on iPhone."
+        },
+        "cbz-to-pdf-online": {
+          "title": "How to Convert CBZ to PDF Online — Free, Private, No Upload",
+          "excerpt": "The BiblioFuse web app converts CBZ to PDF entirely in your browser using WebAssembly — no server, no account, no files uploaded anywhere. Instant conversion with no quality loss.",
+          "seoDescription": "Convert CBZ to PDF free in your browser. BiblioFuse uses WebAssembly — no uploads, no account, no file size limits. Works on any device."
+        },
         "tailscale-remote-library-access": {
           "title": "Access Your Home Comic Library Remotely with BiblioFuse and Tailscale",
           "excerpt": "BiblioFuse reads CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT on iPhone and iPad (iOS 17+). Its Mac Home Library feature streams your desktop comic collection to iPhone over Wi-Fi. Combined with Tailscale, you can access that same library from anywhere in the world — no cloud storage required.",
