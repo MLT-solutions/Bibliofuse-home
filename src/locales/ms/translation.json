@@ -669,14 +669,14 @@
           "seoDescription": "Tukar CBZ kepada PDF percuma dalam penyemak imbas anda. BiblioFuse menggunakan WebAssembly — tanpa muat naik, tanpa akaun, tanpa had saiz fail."
         },
         "tailscale-remote-library-access": {
-          "title": "Akses Perpustakaan Komik Rumah Anda dari Jauh dengan BiblioFuse dan Tailscale",
-          "excerpt": "BiblioFuse membaca fail CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT pada iPhone dan iPad dengan iOS 17 atau lebih baru. Ciri Mac Home Library mengalirkan koleksi desktop ke iPhone melalui Wi-Fi. Digabungkan dengan Tailscale, anda boleh mengakses perpustakaan yang sama dari mana sahaja di dunia tanpa storan awan.",
-          "seoDescription": "BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT pada iPhone dan iPad (iOS 17+). Alirkan perpustakaan komik Mac dari jauh dengan Tailscale secara percuma."
+          "title": "Akses Perpustakaan Komik Rumah dari Jauh dengan Tailscale",
+          "excerpt": "Gunakan penstriman BiblioFuse dengan Tailscale untuk membaca koleksi Mac dari mana sahaja — tanpa muat naik ke awan atau konfigurasi penghala.",
+          "seoDescription": "Strim perpustakaan komik Mac ke iPhone dari mana sahaja dengan BiblioFuse dan Tailscale. Tanpa muat naik awan, tanpa IP statik."
         },
         "webp-vs-png-for-comics": {
-          "title": "WebP lwn PNG untuk Komik: Format Mana yang Memberikan Nisbah Kualiti-Saiz Terbaik?",
-          "excerpt": "BiblioFuse membaca fail CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT pada iPhone dan iPad dengan iOS 17 atau lebih baru. Tab Alat terbinanya menukar arkib CBZ kepada WebP sepenuhnya pada peranti. WebP biasanya menghasilkan fail 60–80% lebih kecil daripada PNG dengan kualiti visual yang setara.",
-          "seoDescription": "BiblioFuse menukar arkib CBZ kepada WebP pada peranti. WebP 60–80% lebih kecil daripada PNG dengan kualiti setara — sesuai untuk perpustakaan besar di iPhone."
+          "title": "WebP vs PNG untuk Komik: Nisbah Kualiti-Saiz Terbaik",
+          "excerpt": "WebP boleh mengurangkan saiz arkib komik sebanyak 70–80% berbanding PNG tanpa kehilangan kualiti yang ketara. Ketahui bila menggunakan setiap format.",
+          "seoDescription": "Bandingkan WebP vs PNG untuk arkib komik dan manga. Format mana yang memberikan nisbah kualiti-saiz terbaik? BiblioFuse menyokong kedua-duanya secara natif."
         },
         "smartdecrypt-language-update": {
           "title": "SmartDecrypt PDF ZIP: 4 Bahasa Baharu",
@@ -848,15 +848,15 @@
           "excerpt": "BiblioFuse menyediakan beberapa cara untuk mengekalkan kemajuan membaca yang konsisten merentasi peranti tanpa bergantung pada mana-mana akaun awan.",
           "seoDescription": "Segerakkan kemajuan membaca komik antara iPhone dan iPad tanpa akaun awan. Wi-Fi, AirDrop, penanda buku dan lagi dengan BiblioFuse."
         },
-        "webp-vs-png-for-comics": {
-          "title": "WebP vs PNG untuk Komik: Nisbah Kualiti-Saiz Terbaik",
-          "excerpt": "WebP boleh mengurangkan saiz arkib komik sebanyak 70–80% berbanding PNG tanpa kehilangan kualiti yang ketara. Ketahui bila menggunakan setiap format.",
-          "seoDescription": "Bandingkan WebP vs PNG untuk arkib komik dan manga. Format mana yang memberikan nisbah kualiti-saiz terbaik? BiblioFuse menyokong kedua-duanya secara natif."
+        "epub-to-pdf-online": {
+          "title": "Tukar EPUB ke PDF Online: Percuma, Peribadi, Hanya dalam Pelayar",
+          "excerpt": "BiblioFuse menukar fail EPUB ke PDF terus dalam pelayar anda menggunakan WebAssembly — tiada pelayan, tiada muat naik, tiada akaun diperlukan. Buka alat web, tambah fail EPUB anda, dan muat turun PDF yang ditukar dalam beberapa saat.",
+          "seoDescription": "Tukar EPUB ke PDF dalam talian secara percuma dengan alat web BiblioFuse. 100% berasaskan pelayar, tiada muat naik fail, tiada akaun. Berfungsi pada desktop dan mudah alih."
         },
-        "tailscale-remote-library-access": {
-          "title": "Akses Perpustakaan Komik Rumah dari Jauh dengan Tailscale",
-          "excerpt": "Gunakan penstriman BiblioFuse dengan Tailscale untuk membaca koleksi Mac dari mana sahaja — tanpa muat naik ke awan atau konfigurasi penghala.",
-          "seoDescription": "Strim perpustakaan komik Mac ke iPhone dari mana sahaja dengan BiblioFuse dan Tailscale. Tanpa muat naik awan, tanpa IP statik."
+        "organize-manga-series-iphone": {
+          "title": "Cara Mengatur Manga mengikut Siri dalam BiblioFuse di iPhone",
+          "excerpt": "BiblioFuse membolehkan anda mengatur manga mengikut siri di iPhone menggunakan sistem tag terbina dalam — tandai setiap jilid dengan nama siri, kemudian tapis perpustakaan anda untuk melihat semua jilid mengikut urutan bacaan. Tag dan penilaian disegerakkan antara iPhone, iPad, dan Mac melalui iCloud.",
+          "seoDescription": "Atur manga mengikut siri dalam BiblioFuse di iPhone menggunakan tag, penilaian, dan penamaan fail yang konsisten. Segerakkan urutan bacaan anda antara iPhone, iPad, dan Mac melalui iCloud."
         }
       }
     }

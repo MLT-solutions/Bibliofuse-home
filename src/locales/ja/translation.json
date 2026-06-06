@@ -669,14 +669,14 @@
           "seoDescription": "ブラウザ内でCBZをPDFに無料変換。BiblioFuseはWebAssemblyを使用——アップロードなし、アカウントなし、ファイルサイズ制限なし。"
         },
         "tailscale-remote-library-access": {
-          "title": "BiblioFuseとTailscaleを使って自宅の漫画ライブラリにリモートアクセス",
-          "excerpt": "BiblioFuseはiOS 17以降のiPhoneとiPadでCBZ、CBR、EPUB、PDF、ZIP、RAR、TXTファイルを読み取ります。Mac Home Library機能はWi-Fi経由でデスクトップの漫画コレクションをiPhoneにストリーミングします。Tailscaleと組み合わせることで、世界中どこからでも同じライブラリにアクセスできます。",
-          "seoDescription": "BiblioFuseはiPhone・iPad（iOS 17+）でCBZ、CBR、EPUB、PDF、ZIP、RAR、TXTを読み取ります。Tailscaleを使って無料でMac漫画ライブラリにリモートアクセス。"
+          "title": "TailscaleでMacのコミックライブラリにリモートアクセス",
+          "excerpt": "BiblioFuseのホームライブラリストリーミングとTailscaleを組み合わせて、どこからでも自宅のMacコミックコレクションを読もう。クラウド不要、ルーター設定不要。",
+          "seoDescription": "BiblioFuseとTailscaleを使って、どこからでもMacのコミックライブラリをiPhoneにストリーミング。クラウド不要、静的IP不要。"
         },
         "webp-vs-png-for-comics": {
-          "title": "漫画のWebP対PNG：画質とファイルサイズの比率が最も優れているのはどちら？",
-          "excerpt": "BiblioFuseはiOS 17以降のiPhoneとiPadでCBZ、CBR、EPUB、PDF、ZIP、RAR、TXTファイルを読み取ります。組み込みのツールタブでデバイス上のみでCBZアーカイブをWebPに変換できます。WebPは同等の視覚品質でPNGより通常60〜80%小さいファイルを提供します。",
-          "seoDescription": "BiblioFuseはデバイス上でCBZ漫画アーカイブをWebPに変換します。WebPは同等の品質でPNGより60〜80%小さく、大型iPhoneライブラリに最適です。"
+          "title": "コミック用WebP vs PNG：最高の画質・サイズ比はどちら？",
+          "excerpt": "WebPはPNGと比べてコミックアーカイブのサイズを70–80%削減でき、視覚的な品質差はほぼありません。各形式の使いどころを解説します。",
+          "seoDescription": "コミック・マンガのアーカイブにおけるWebPとPNGを比較。最高の画質・サイズ比はどちら？BiblioFuseは両方をネイティブサポート。"
         },
         "smartdecrypt-language-update": {
           "title": "SmartDecrypt PDF ZIP がポルトガル語・スペイン語・インドネシア語・中国語に対応",
@@ -848,15 +848,15 @@
           "excerpt": "BiblioFuseは、クラウドアカウントに依存せず、デバイス間で読書進捗を一貫して保つ複数の方法を提供しています。",
           "seoDescription": "クラウドアカウントなしでiPhoneとiPad間のマンガ読書進捗を同期。BiblioFuseのWi-Fi同期・AirDrop・ブックマーク機能を解説。"
         },
-        "webp-vs-png-for-comics": {
-          "title": "コミック用WebP vs PNG：最高の画質・サイズ比はどちら？",
-          "excerpt": "WebPはPNGと比べてコミックアーカイブのサイズを70–80%削減でき、視覚的な品質差はほぼありません。各形式の使いどころを解説します。",
-          "seoDescription": "コミック・マンガのアーカイブにおけるWebPとPNGを比較。最高の画質・サイズ比はどちら？BiblioFuseは両方をネイティブサポート。"
+        "epub-to-pdf-online": {
+          "title": "EPUBをオンラインでPDFに変換：無料・プライベート・ブラウザだけで完結",
+          "excerpt": "BiblioFuseはWebAssemblyを使用して、EPUBファイルをブラウザ内で直接PDFに変換します——サーバー不要、アップロード不要、アカウント不要。ウェブツールを開いてEPUBファイルを追加し、数秒で変換済みPDFをダウンロードできます。",
+          "seoDescription": "BiblioFuseウェブツールでEPUBをPDFに無料でオンライン変換。100%ブラウザベース、ファイルアップロード不要、アカウント不要。デスクトップとモバイルに対応。"
         },
-        "tailscale-remote-library-access": {
-          "title": "TailscaleでMacのコミックライブラリにリモートアクセス",
-          "excerpt": "BiblioFuseのホームライブラリストリーミングとTailscaleを組み合わせて、どこからでも自宅のMacコミックコレクションを読もう。クラウド不要、ルーター設定不要。",
-          "seoDescription": "BiblioFuseとTailscaleを使って、どこからでもMacのコミックライブラリをiPhoneにストリーミング。クラウド不要、静的IP不要。"
+        "organize-manga-series-iphone": {
+          "title": "iPhoneのBiblioFuseでマンガをシリーズ別に整理する方法",
+          "excerpt": "BiblioFuseの内蔵タグシステムを使って、iPhoneでマンガをシリーズ別に整理できます——各巻にシリーズ名のタグを付け、ライブラリをフィルタリングして読む順番で全巻を確認できます。タグと評価はiCloudを通じてiPhone、iPad、Mac間で同期されます。",
+          "seoDescription": "iPhoneのBiblioFuseでタグ、評価、一貫したファイル名を使ってマンガをシリーズ別に整理。iCloudを通じてiPhone、iPad、Mac間で読む順番を同期。"
         }
       }
     }

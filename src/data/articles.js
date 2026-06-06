@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'organize-manga-series-iphone',
+    date: '2026-06-06',
+    tags: ['ios', 'guide', 'manga'],
+    coverImage: '/image/blog/Organize Manga iPhone.jpg',
+  },
+  {
+    slug: 'epub-to-pdf-online',
+    date: '2026-06-06',
+    tags: ['web', 'guide', 'conversion'],
+    coverImage: '/image/blog/EPUB to PDF Online.jpg',
+  },
+  {
     slug: 'night-reading-comics-iphone',
     date: '2026-06-07',
     tags: ['ios', 'tips', 'dark-mode'],

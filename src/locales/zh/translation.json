@@ -669,14 +669,14 @@
           "seoDescription": "免费在浏览器中将 CBZ 转换为 PDF。BiblioFuse 使用 WebAssembly——无上传、无账户、无文件大小限制。支持任意设备。"
         },
         "tailscale-remote-library-access": {
-          "title": "使用BiblioFuse和Tailscale远程访问家庭漫画库",
-          "excerpt": "BiblioFuse可在iOS 17或更高版本的iPhone和iPad上读取CBZ、CBR、EPUB、PDF、ZIP、RAR和TXT文件。其Mac Home Library功能可通过Wi-Fi将桌面漫画集流式传输到iPhone。结合Tailscale，您可以从世界任何地方访问同一个库，无需云存储。",
-          "seoDescription": "BiblioFuse在iPhone和iPad（iOS 17+）上读取CBZ、CBR、EPUB、PDF、ZIP、RAR和TXT。使用Tailscale免费远程流式传输您的Mac漫画库。"
+          "title": "用 Tailscale 远程访问家中漫画库",
+          "excerpt": "结合BiblioFuse家庭库串流与Tailscale，随时随地阅读Mac上的全部漫画——无需上传云端，无需配置端口转发。",
+          "seoDescription": "使用BiblioFuse和Tailscale，从任何地方将Mac漫画库串流到iPhone。无需云端上传，无需静态IP，安全加密隧道即可实现。"
         },
         "webp-vs-png-for-comics": {
-          "title": "漫画格式对比：WebP与PNG哪个画质与文件大小比更好？",
-          "excerpt": "BiblioFuse可在iOS 17或更高版本的iPhone和iPad上读取CBZ、CBR、EPUB、PDF、ZIP、RAR和TXT文件。其内置工具标签页可完全在设备上将漫画存档转换为WebP。WebP在等效视觉质量下通常比PNG小60–80%。",
-          "seoDescription": "BiblioFuse在设备上将CBZ漫画存档转换为WebP。WebP在等效视觉质量下比PNG小60–80%——是iPhone大型漫画库的理想选择。"
+          "title": "漫画用 WebP vs PNG：哪种格式性价比最高？",
+          "excerpt": "WebP可以将漫画文件体积缩减70–80%，且视觉效果与PNG无差别。了解各格式的适用场景，以及BiblioFuse如何原生支持两者。",
+          "seoDescription": "比较WebP与PNG在漫画和漫画档案中的表现，找出性价比最高的格式。BiblioFuse原生支持两种格式。"
         },
         "smartdecrypt-language-update": {
           "title": "SmartDecrypt PDF ZIP 现已支持葡萄牙语、西班牙语、印尼语和中文",
@@ -848,15 +848,15 @@
           "excerpt": "BiblioFuse提供多种方式，让你无需依赖任何云账户即可在设备间保持阅读进度一致。",
           "seoDescription": "无需云账户，在iPhone和iPad之间同步漫画阅读进度。BiblioFuse支持Wi-Fi同步、AirDrop导出、书签等多种方式。"
         },
-        "webp-vs-png-for-comics": {
-          "title": "漫画用 WebP vs PNG：哪种格式性价比最高？",
-          "excerpt": "WebP可以将漫画文件体积缩减70–80%，且视觉效果与PNG无差别。了解各格式的适用场景，以及BiblioFuse如何原生支持两者。",
-          "seoDescription": "比较WebP与PNG在漫画和漫画档案中的表现，找出性价比最高的格式。BiblioFuse原生支持两种格式。"
+        "epub-to-pdf-online": {
+          "title": "在线将 EPUB 转换为 PDF：免费、私密、纯浏览器操作",
+          "excerpt": "BiblioFuse 使用 WebAssembly 技术直接在浏览器中将 EPUB 文件转换为 PDF——无需服务器、无需上传、无需账户。打开网页工具，添加 EPUB 文件，即可在几秒内下载转换好的 PDF。",
+          "seoDescription": "使用 BiblioFuse 网页工具免费在线将 EPUB 转换为 PDF。100% 基于浏览器，无需上传文件，无需账户。支持桌面端和移动端。"
         },
-        "tailscale-remote-library-access": {
-          "title": "用 Tailscale 远程访问家中漫画库",
-          "excerpt": "结合BiblioFuse家庭库串流与Tailscale，随时随地阅读Mac上的全部漫画——无需上传云端，无需配置端口转发。",
-          "seoDescription": "使用BiblioFuse和Tailscale，从任何地方将Mac漫画库串流到iPhone。无需云端上传，无需静态IP，安全加密隧道即可实现。"
+        "organize-manga-series-iphone": {
+          "title": "如何在 iPhone 上用 BiblioFuse 按系列整理漫画",
+          "excerpt": "BiblioFuse 让您通过内置标签系统在 iPhone 上按系列整理漫画——为每一卷添加系列名称标签，然后筛选您的书库，按阅读顺序查看所有卷。标签和评分通过 iCloud 在 iPhone、iPad 和 Mac 之间同步。",
+          "seoDescription": "使用标签、评分和一致的文件命名在 iPhone 上用 BiblioFuse 按系列整理漫画。通过 iCloud 在 iPhone、iPad 和 Mac 之间同步您的阅读顺序。"
         }
       }
     }

@@ -669,14 +669,14 @@
           "seoDescription": "Converteer CBZ naar PDF gratis in je browser. BiblioFuse gebruikt WebAssembly — geen uploads, geen account, geen bestandsgroottelimieten. Werkt op elk apparaat."
         },
         "tailscale-remote-library-access": {
-          "title": "Toegang tot je thuis stripbibliotheek op afstand met BiblioFuse en Tailscale",
-          "excerpt": "BiblioFuse leest CBZ-, CBR-, EPUB-, PDF-, ZIP-, RAR- en TXT-bestanden op iPhone en iPad met iOS 17 of nieuwer. De Mac Home Library-functie streamt je collectie naar de iPhone via Wi-Fi. Met Tailscale heb je overal ter wereld toegang tot dezelfde bibliotheek.",
-          "seoDescription": "BiblioFuse leest CBZ, CBR, EPUB, PDF, ZIP, RAR en TXT op iPhone en iPad (iOS 17+). Stream je Mac-stripbibliotheek op afstand met Tailscale gratis."
+          "title": "Toegang tot je comicsbibliotheek op afstand met Tailscale",
+          "excerpt": "Gebruik BiblioFuse-streaming met Tailscale om je Mac-comicscollectie overal te lezen — zonder cloud-upload of routerconfiguratie.",
+          "seoDescription": "Stream je Mac-comicsbibliotheek naar iPhone via BiblioFuse en Tailscale. Geen cloud-upload, geen statisch IP nodig — gewoon een veilige VPN-tunnel."
         },
         "webp-vs-png-for-comics": {
-          "title": "WebP vs PNG voor strips: beste kwaliteit-grootteverhouding",
-          "excerpt": "BiblioFuse leest CBZ-, CBR-, EPUB-, PDF-, ZIP-, RAR- en TXT-bestanden op iPhone en iPad met iOS 17 of nieuwer. Het ingebouwde tabblad Tools converteert CBZ-archiven naar WebP volledig op het apparaat. WebP levert doorgaans 60–80% kleinere bestanden dan PNG bij vergelijkbare visuele kwaliteit.",
-          "seoDescription": "BiblioFuse converteert CBZ-archiven naar WebP op het apparaat. WebP is 60–80% kleiner dan PNG bij vergelijkbare kwaliteit — ideaal voor grote iPhone-bibliotheken."
+          "title": "WebP vs PNG voor comics: beste kwaliteit-grootteverhouding",
+          "excerpt": "WebP kan striparchief-bestanden 70–80% kleiner maken dan PNG zonder zichtbaar kwaliteitsverlies. Ontdek wanneer je elk formaat gebruikt.",
+          "seoDescription": "Vergelijk WebP vs PNG voor comic- en manga-archieven. Welk formaat biedt de beste kwaliteit-grootteverhouding? BiblioFuse ondersteunt beide native."
         },
         "smartdecrypt-language-update": {
           "title": "SmartDecrypt PDF ZIP: 4 Nieuwe Talen",
@@ -848,15 +848,15 @@
           "excerpt": "BiblioFuse biedt meerdere manieren om leesvoortgang consistent te houden tussen apparaten, zonder afhankelijk te zijn van een cloudaccount.",
           "seoDescription": "Synchroniseer leesvoortgang van strips tussen iPhone en iPad zonder cloudaccount. Wi-Fi, AirDrop, bladwijzers en meer met BiblioFuse."
         },
-        "webp-vs-png-for-comics": {
-          "title": "WebP vs PNG voor comics: beste kwaliteit-grootteverhouding",
-          "excerpt": "WebP kan striparchief-bestanden 70–80% kleiner maken dan PNG zonder zichtbaar kwaliteitsverlies. Ontdek wanneer je elk formaat gebruikt.",
-          "seoDescription": "Vergelijk WebP vs PNG voor comic- en manga-archieven. Welk formaat biedt de beste kwaliteit-grootteverhouding? BiblioFuse ondersteunt beide native."
+        "epub-to-pdf-online": {
+          "title": "EPUB naar PDF Online Converteren: Gratis, Privé, Alleen in de Browser",
+          "excerpt": "BiblioFuse converteert EPUB-bestanden naar PDF volledig in je browser via WebAssembly — geen server, geen upload, geen account vereist. Open de webtool, voeg je EPUB-bestanden toe en download de geconverteerde PDF in seconden.",
+          "seoDescription": "Converteer EPUB naar PDF online gratis met de BiblioFuse webtool. 100% browsergebaseerd, geen bestandsupload, geen account nodig. Werkt op desktop en mobiel."
         },
-        "tailscale-remote-library-access": {
-          "title": "Toegang tot je comicsbibliotheek op afstand met Tailscale",
-          "excerpt": "Gebruik BiblioFuse-streaming met Tailscale om je Mac-comicscollectie overal te lezen — zonder cloud-upload of routerconfiguratie.",
-          "seoDescription": "Stream je Mac-comicsbibliotheek naar iPhone via BiblioFuse en Tailscale. Geen cloud-upload, geen statisch IP nodig — gewoon een veilige VPN-tunnel."
+        "organize-manga-series-iphone": {
+          "title": "Manga per Serie Organiseren in BiblioFuse op iPhone",
+          "excerpt": "BiblioFuse laat je manga per serie organiseren op iPhone met het ingebouwde tagsysteem — tag elk deel met de serienaam en filter je bibliotheek om alle delen in leesolgorde te zien. Tags en beoordelingen synchroniseren via iCloud tussen iPhone, iPad en Mac.",
+          "seoDescription": "Organiseer manga per serie in BiblioFuse op iPhone met tags, beoordelingen en consistente bestandsnamen. Synchroniseer je leesvolgorde via iCloud tussen iPhone, iPad en Mac."
         }
       }
     }

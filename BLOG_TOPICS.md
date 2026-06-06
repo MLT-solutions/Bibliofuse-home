@@ -95,8 +95,8 @@ This file is the source of truth for the daily article agent.
 |---|--------|------|---------------|---------|
 | 31 | ✅ | `cbz-to-pdf-online` | How to Convert CBZ to PDF Online (Free, No Upload) | BiblioFuse Web |
 | 32 | ✅ | `night-reading-comics-iphone` | Reading Comics at Night on iPhone: Dark Mode and Eye Comfort Tips | BiblioFuse iOS |
-| 33 | ⬜ | `epub-to-pdf-online` | Convert EPUB to PDF Online: Free, Private, Browser-Only | BiblioFuse Web |
-| 34 | ⬜ | `organize-manga-series-iphone` | How to Organize Manga by Series in BiblioFuse on iPhone | BiblioFuse iOS |
+| 33 | ✅ | `epub-to-pdf-online` | Convert EPUB to PDF Online: Free, Private, Browser-Only | BiblioFuse Web |
+| 34 | ✅ | `organize-manga-series-iphone` | How to Organize Manga by Series in BiblioFuse on iPhone | BiblioFuse iOS |
 | 35 | ⬜ | `comic-bookmarks-iphone` | Using Bookmarks in BiblioFuse: Never Lose Your Place in a Comic | BiblioFuse iOS |
 | 36 | ⬜ | `extract-images-from-cbz` | How to Extract Images from CBZ Files Online (Free, No Software) | BiblioFuse Web |
 | 37 | ⬜ | `double-page-spreads-comics` | Reading Double-Page Spreads in Comics: How BiblioFuse Handles Wide Images | BiblioFuse iOS |

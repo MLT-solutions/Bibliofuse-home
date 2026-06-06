@@ -205,14 +205,14 @@
           "seoDescription": "Convert CBZ to PDF free in your browser. BiblioFuse uses WebAssembly — no uploads, no account, no file size limits. Works on any device."
         },
         "tailscale-remote-library-access": {
-          "title": "Access Your Home Comic Library Remotely with BiblioFuse and Tailscale",
-          "excerpt": "BiblioFuse reads CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT on iPhone and iPad (iOS 17+). Its Mac Home Library feature streams your desktop comic collection to iPhone over Wi-Fi. Combined with Tailscale, you can access that same library from anywhere in the world — no cloud storage required.",
-          "seoDescription": "BiblioFuse reads CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT on iPhone and iPad (iOS 17+). Stream your Mac comic library remotely using Tailscale for free."
+          "title": "Remote Access Your Home Comic Library with Tailscale",
+          "excerpt": "Use BiblioFuse's home library streaming with Tailscale to read your entire Mac comic collection from anywhere — no cloud upload, no port forwarding, just an encrypted tunnel.",
+          "seoDescription": "Stream your Mac comic library to iPhone from anywhere using BiblioFuse and Tailscale. No cloud upload, no static IP needed — just a secure VPN tunnel."
         },
         "webp-vs-png-for-comics": {
           "title": "WebP vs PNG for Comics: Best Quality-to-Size Ratio",
-          "excerpt": "BiblioFuse reads CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT on iPhone and iPad running iOS 17 or later. Its built-in Tools tab converts comic archives to WebP entirely on-device. WebP typically delivers 60–80% smaller files than PNG at equivalent visual quality — the better choice for large comic libraries on iPhone.",
-          "seoDescription": "BiblioFuse converts CBZ comic archives to WebP on-device. WebP is 60–80% smaller than PNG at equivalent visual quality — ideal for large iPhone libraries."
+          "excerpt": "WebP can cut your comic archive size by 70–80% vs PNG with no visible quality loss. A plain-English breakdown of when to use each format and how BiblioFuse handles both.",
+          "seoDescription": "Compare WebP vs PNG for comic and manga archives. Which format gives the best quality-to-size ratio? BiblioFuse reads both natively."
         },
         "smartdecrypt-language-update": {
           "title": "SmartDecrypt PDF ZIP: 4 New Languages",
@@ -384,15 +384,15 @@
           "excerpt": "BiblioFuse gives you several ways to keep reading progress consistent across devices without relying on any cloud account.",
           "seoDescription": "Sync comic and manga reading progress across iPhone and iPad without a cloud account. Wi-Fi sync, AirDrop export, bookmarks, and more with BiblioFuse."
         },
-        "webp-vs-png-for-comics": {
-          "title": "WebP vs PNG for Comics: Best Quality-to-Size Ratio",
-          "excerpt": "WebP can cut your comic archive size by 70–80% vs PNG with no visible quality loss. A plain-English breakdown of when to use each format and how BiblioFuse handles both.",
-          "seoDescription": "Compare WebP vs PNG for comic and manga archives. Which format gives the best quality-to-size ratio? BiblioFuse reads both natively."
+        "epub-to-pdf-online": {
+          "title": "Convert EPUB to PDF Online: Free, Private, Browser-Only",
+          "excerpt": "BiblioFuse converts EPUB files to PDF entirely in your browser using WebAssembly — no server, no upload, no account required. Open the web tool, add your EPUB files, and download the converted PDF in seconds.",
+          "seoDescription": "Convert EPUB to PDF online for free using the BiblioFuse web tool. 100% browser-based, no file upload, no account needed. Works on desktop and mobile."
         },
-        "tailscale-remote-library-access": {
-          "title": "Remote Access Your Home Comic Library with Tailscale",
-          "excerpt": "Use BiblioFuse's home library streaming with Tailscale to read your entire Mac comic collection from anywhere — no cloud upload, no port forwarding, just an encrypted tunnel.",
-          "seoDescription": "Stream your Mac comic library to iPhone from anywhere using BiblioFuse and Tailscale. No cloud upload, no static IP needed — just a secure VPN tunnel."
+        "organize-manga-series-iphone": {
+          "title": "How to Organize Manga by Series in BiblioFuse on iPhone",
+          "excerpt": "BiblioFuse lets you organize manga by series on iPhone using its built-in tag system — tag each volume with the series name, then filter your library to see every volume in reading order. Tags and ratings sync across iPhone, iPad, and Mac via iCloud.",
+          "seoDescription": "Organize manga by series in BiblioFuse on iPhone using tags, ratings, and consistent file naming. Sync your reading order across iPhone, iPad, and Mac via iCloud."
         }
       }
     },

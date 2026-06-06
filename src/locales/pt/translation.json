@@ -669,14 +669,14 @@
           "seoDescription": "Converta CBZ para PDF grátis no seu navegador. BiblioFuse usa WebAssembly — sem uploads, sem conta, sem limites de tamanho. Funciona em qualquer dispositivo."
         },
         "tailscale-remote-library-access": {
-          "title": "Acesse sua biblioteca de quadrinhos remotamente com BiblioFuse e Tailscale",
-          "excerpt": "O BiblioFuse lê arquivos CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT no iPhone e iPad com iOS 17 ou posterior. O recurso Mac Home Library transmite sua coleção para o iPhone via Wi-Fi. Com o Tailscale, você acessa essa mesma biblioteca de qualquer lugar do mundo sem armazenamento em nuvem.",
-          "seoDescription": "O BiblioFuse lê CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT no iPhone e iPad (iOS 17+). Transmita sua biblioteca de quadrinhos Mac remotamente com Tailscale gratuitamente."
+          "title": "Acesse sua biblioteca de quadrinhos remotamente com Tailscale",
+          "excerpt": "Use o streaming do BiblioFuse com Tailscale para ler sua coleção do Mac de qualquer lugar — sem upload na nuvem nem configuração de roteador.",
+          "seoDescription": "Transmita sua biblioteca de quadrinhos do Mac para o iPhone de qualquer lugar com BiblioFuse e Tailscale. Sem upload na nuvem, sem IP estático."
         },
         "webp-vs-png-for-comics": {
           "title": "WebP vs PNG para quadrinhos: melhor relação qualidade-tamanho",
-          "excerpt": "O BiblioFuse lê arquivos CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT no iPhone e iPad com iOS 17 ou posterior. Sua aba Ferramentas converte arquivos CBZ para WebP completamente no dispositivo. O WebP oferece arquivos 60–80% menores que PNG com qualidade visual equivalente.",
-          "seoDescription": "O BiblioFuse converte arquivos CBZ para WebP no dispositivo. WebP é 60–80% menor que PNG com qualidade visual equivalente — ideal para grandes bibliotecas no iPhone."
+          "excerpt": "WebP pode reduzir o tamanho do seu arquivo de quadrinhos em 70–80% em relação ao PNG sem perda de qualidade visível. Saiba quando usar cada formato.",
+          "seoDescription": "Compare WebP vs PNG para arquivos de quadrinhos e manga. Qual formato oferece a melhor relação qualidade-tamanho? O BiblioFuse suporta ambos nativamente."
         },
         "smartdecrypt-language-update": {
           "title": "SmartDecrypt PDF ZIP: 4 Novos Idiomas",
@@ -848,15 +848,15 @@
           "excerpt": "O BiblioFuse oferece várias formas de manter o progresso de leitura consistente entre dispositivos sem depender de nenhuma conta na nuvem.",
           "seoDescription": "Sincronize o progresso de leitura de quadrinhos entre iPhone e iPad sem conta na nuvem. Wi-Fi, AirDrop, marcadores e mais com o BiblioFuse."
         },
-        "webp-vs-png-for-comics": {
-          "title": "WebP vs PNG para quadrinhos: melhor relação qualidade-tamanho",
-          "excerpt": "WebP pode reduzir o tamanho do seu arquivo de quadrinhos em 70–80% em relação ao PNG sem perda de qualidade visível. Saiba quando usar cada formato.",
-          "seoDescription": "Compare WebP vs PNG para arquivos de quadrinhos e manga. Qual formato oferece a melhor relação qualidade-tamanho? O BiblioFuse suporta ambos nativamente."
+        "epub-to-pdf-online": {
+          "title": "Converter EPUB para PDF Online: Grátis, Privado, Apenas no Navegador",
+          "excerpt": "O BiblioFuse converte arquivos EPUB para PDF diretamente no seu navegador usando WebAssembly — sem servidor, sem upload, sem conta necessária. Abra a ferramenta web, adicione seus arquivos EPUB e baixe o PDF convertido em segundos.",
+          "seoDescription": "Converta EPUB para PDF online gratuitamente com a ferramenta web BiblioFuse. 100% no navegador, sem envio de arquivos, sem conta. Funciona em desktop e mobile."
         },
-        "tailscale-remote-library-access": {
-          "title": "Acesse sua biblioteca de quadrinhos remotamente com Tailscale",
-          "excerpt": "Use o streaming do BiblioFuse com Tailscale para ler sua coleção do Mac de qualquer lugar — sem upload na nuvem nem configuração de roteador.",
-          "seoDescription": "Transmita sua biblioteca de quadrinhos do Mac para o iPhone de qualquer lugar com BiblioFuse e Tailscale. Sem upload na nuvem, sem IP estático."
+        "organize-manga-series-iphone": {
+          "title": "Como Organizar Mangá por Série no BiblioFuse no iPhone",
+          "excerpt": "O BiblioFuse permite organizar mangás por série no iPhone usando o sistema de etiquetas integrado — etiquete cada volume com o nome da série e filtre sua biblioteca para ver todos os volumes em ordem de leitura. As etiquetas e avaliações sincronizam entre iPhone, iPad e Mac via iCloud.",
+          "seoDescription": "Organize mangás por série no BiblioFuse no iPhone usando etiquetas, avaliações e nomes de arquivos consistentes. Sincronize sua ordem de leitura entre iPhone, iPad e Mac via iCloud."
         }
       }
     }
