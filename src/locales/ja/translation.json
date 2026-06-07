@@ -658,6 +658,16 @@
     },
     "blog": {
       "posts": {
+        "extract-images-from-cbz": {
+          "title": "CBZファイルから画像をオンラインで抽出する方法（無料・ソフト不要）",
+          "excerpt": "CBZファイルとは、コミックの各ページに対応する個別の画像ファイル（通常はJPEG、PNG、またはWebP）が格納されたZIPアーカイブです。BiblioFuse ウェブツールを使えば、ソフトのインストールもファイルのアップロードも不要で、ブラウザ上で直接画像を抽出できます。すべてWebAssemblyによってクライアント側で処理されます。",
+          "seoDescription": "BiblioFuse ウェブツールで CBZ ファイルから画像を無料でオンライン抽出。インストール不要・アップロード不要——すべてブラウザ上の WebAssembly で完結。"
+        },
+        "comic-bookmarks-iphone": {
+          "title": "BiblioFuseのブックマーク活用法：漫画でページを見失わない方法",
+          "excerpt": "BiblioFuseのブックマーク機能を使えば、漫画・コミック・EPUBのどのページにもカスタム名をつけて保存し、瞬時に戻ることができます。この機能はiOS 17以降のiPhoneおよびiPadで動作し、すべてのブックマークはiCloud経由で自動的に全デバイスに同期されます。",
+          "seoDescription": "iPhoneとiPadでBiblioFuseのブックマークを使う方法を解説。名前付きブックマークの保存、任意のページへのジャンプ、iCloudでの同期が可能です。"
+        },
         "night-reading-comics-iphone": {
           "title": "iPhoneで夜に漫画を読む：ダークモードと目の疲れを減らすコツ",
           "excerpt": "BiblioFuse for iOSはダークモード、iOSの最低値を下回る輝度コントロール、セピアフィルターを搭載——夜間の漫画・マンガ読書を目に優しくする完全な組み合わせです。",

@@ -658,6 +658,16 @@
     },
     "blog": {
       "posts": {
+        "extract-images-from-cbz": {
+          "title": "Cara Mengekstrak Gambar dari File CBZ Online (Gratis, Tanpa Software)",
+          "excerpt": "File CBZ adalah arsip ZIP yang berisi file gambar individual — biasanya JPEG, PNG, atau WebP — satu per halaman komik. Anda bisa mengekstrak gambar-gambar tersebut langsung di browser menggunakan BiblioFuse Web Tool, tanpa menginstal apa pun dan tanpa mengunggah file. Semuanya berjalan di sisi klien via WebAssembly.",
+          "seoDescription": "Ekstrak gambar dari file CBZ secara online gratis dengan BiblioFuse Web Tool. Tanpa instalasi, tanpa upload — semuanya berjalan di browser via WebAssembly."
+        },
+        "comic-bookmarks-iphone": {
+          "title": "Menggunakan Bookmark di BiblioFuse: Jangan Pernah Kehilangan Tempat di Komik",
+          "excerpt": "Bookmark BiblioFuse memungkinkan kamu menyimpan halaman mana saja dalam komik, manga, atau EPUB dengan nama kustom sehingga bisa langsung kembali ke sana kapan saja. Fitur ini bekerja di iPhone dan iPad dengan iOS 17 atau lebih baru, dan setiap bookmark otomatis tersinkronisasi ke semua perangkatmu melalui iCloud.",
+          "seoDescription": "Pelajari cara menggunakan bookmark di BiblioFuse pada iPhone dan iPad. Simpan bookmark bernama, lompat ke halaman mana saja, dan sinkronkan antar perangkat melalui iCloud."
+        },
         "night-reading-comics-iphone": {
           "title": "Membaca Komik di Malam Hari di iPhone: Mode Gelap dan Tips Kenyamanan Mata",
           "excerpt": "BiblioFuse untuk iOS memiliki mode gelap, kontrol kecerahan di bawah minimum iOS, dan filter sepia — kombinasi tepat untuk membaca komik dan manga malam hari tanpa membebani mata.",

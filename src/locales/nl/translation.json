@@ -658,6 +658,16 @@
     },
     "blog": {
       "posts": {
+        "extract-images-from-cbz": {
+          "title": "Afbeeldingen Uit CBZ-Bestanden Extraheren Online (Gratis, Zonder Software)",
+          "excerpt": "Een CBZ-bestand is een ZIP-archief dat afzonderlijke afbeeldingsbestanden bevat — doorgaans JPEG, PNG of WebP — één per stripbladzijde. Je kunt die afbeeldingen direct in je browser extraheren met de BiblioFuse Webtool, zonder iets te installeren en zonder bestanden te uploaden. Alles draait client-side via WebAssembly.",
+          "seoDescription": "Extraheer afbeeldingen uit CBZ-bestanden online gratis met de BiblioFuse Webtool. Geen installatie, geen upload — alles werkt in je browser via WebAssembly."
+        },
+        "comic-bookmarks-iphone": {
+          "title": "Bladwijzers gebruiken in BiblioFuse: verlies nooit meer je plek in een strip",
+          "excerpt": "Met de bladwijzers van BiblioFuse sla je elke pagina in een strip, manga of EPUB op met een zelfgekozen naam, zodat je er direct naartoe kunt springen. De functie werkt op iPhone en iPad met iOS 17 of nieuwer, en elke bladwijzer synchroniseert automatisch via iCloud naar al je apparaten.",
+          "seoDescription": "Leer bladwijzers gebruiken in BiblioFuse op iPhone en iPad. Sla benoemde bladwijzers op, spring naar elke pagina en synchroniseer via iCloud."
+        },
         "night-reading-comics-iphone": {
           "title": "'s Nachts Comics Lezen op iPhone: Donkere Modus en Tips voor Oogcomfort",
           "excerpt": "BiblioFuse voor iOS heeft een donkere modus, een helderheidsregelaar onder het iOS-minimum en een sepia-filter — de ideale combinatie voor nachtelijk lezen van comics zonder vermoeidheid.",

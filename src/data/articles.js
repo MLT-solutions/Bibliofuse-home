@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'extract-images-from-cbz',
+    date: '2026-06-07',
+    tags: ['web', 'guide', 'cbz'],
+    coverImage: '/image/blog/Extract Images CBZ.jpg',
+  },
+  {
+    slug: 'comic-bookmarks-iphone',
+    date: '2026-06-07',
+    tags: ['ios', 'guide', 'tips'],
+    coverImage: '/image/blog/Comic Bookmarks iPhone.jpg',
+  },
+  {
     slug: 'organize-manga-series-iphone',
     date: '2026-06-06',
     tags: ['ios', 'guide', 'manga'],
