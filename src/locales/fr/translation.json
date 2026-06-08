@@ -658,6 +658,16 @@
     },
     "blog": {
       "posts": {
+        "extract-images-from-cbz": {
+          "title": "Comment Extraire les Images d'un Fichier CBZ en Ligne (Gratuit, Sans Logiciel)",
+          "excerpt": "Un fichier CBZ est une archive ZIP contenant des images individuelles — généralement JPEG, PNG ou WebP — une par page de bande dessinée. Vous pouvez extraire ces images directement dans votre navigateur grâce à l'Outil Web BiblioFuse, sans rien installer et sans envoyer le moindre fichier. Tout s'exécute côté client via WebAssembly.",
+          "seoDescription": "Extrayez les images d'un fichier CBZ en ligne gratuitement avec l'Outil Web BiblioFuse. Aucune installation, aucun envoi de fichier — tout fonctionne dans votre navigateur."
+        },
+        "comic-bookmarks-iphone": {
+          "title": "Utiliser les signets dans BiblioFuse : ne perdez plus jamais votre place dans un comic",
+          "excerpt": "Les signets de BiblioFuse vous permettent d'enregistrer n'importe quelle page d'un comic, d'un manga ou d'un EPUB avec un nom personnalisé pour y revenir instantanément. Cette fonction est disponible sur iPhone et iPad sous iOS 17 ou version ultérieure, et chaque signet se synchronise via iCloud sur tous vos appareils.",
+          "seoDescription": "Apprenez à utiliser les signets de BiblioFuse sur iPhone et iPad. Sauvegardez des signets nommés, accédez à n'importe quelle page et synchronisez entre appareils via iCloud."
+        },
         "night-reading-comics-iphone": {
           "title": "Lire des BD la Nuit sur iPhone : Mode Sombre et Conseils de Confort Visuel",
           "excerpt": "BiblioFuse pour iOS dispose d'un mode sombre, d'un curseur de luminosité en dessous du minimum iOS et d'un filtre sépia — la combinaison idéale pour lire des BD la nuit sans fatiguer les yeux.",

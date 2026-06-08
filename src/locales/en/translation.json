@@ -194,6 +194,16 @@
         "update": "Update"
       },
       "posts": {
+        "extract-images-from-cbz": {
+          "title": "How to Extract Images from CBZ Files Online (Free, No Software)",
+          "excerpt": "A CBZ file is a ZIP archive containing individual image files — typically JPEG, PNG, or WebP — one per comic page. You can extract those images directly in your browser using the BiblioFuse Web Tool, with no software to install and no file upload required. Everything runs client-side via WebAssembly, so your files never leave your device.",
+          "seoDescription": "Extract images from CBZ files online for free using the BiblioFuse Web Tool. No software installation, no file upload — everything runs in your browser via WebAssembly."
+        },
+        "comic-bookmarks-iphone": {
+          "title": "Using Bookmarks in BiblioFuse: Never Lose Your Place in a Comic",
+          "excerpt": "BiblioFuse bookmarks let you save any page in a comic, manga, or EPUB with a custom name so you can jump back to it instantly. The feature works on iPhone and iPad running iOS 17 or later, and every bookmark syncs automatically across all your devices via iCloud.",
+          "seoDescription": "Learn how to use bookmarks in BiblioFuse on iPhone and iPad. Save named bookmarks, jump to any page, and sync across devices via iCloud — never lose your place in a comic again."
+        },
         "night-reading-comics-iphone": {
           "title": "Reading Comics at Night on iPhone: Dark Mode and Eye Comfort Tips",
           "excerpt": "BiblioFuse for iOS has dark mode, an in-app brightness slider below the iOS minimum, and a sepia filter — the right combination for nighttime comic and manga reading without eye strain.",

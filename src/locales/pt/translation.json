@@ -658,6 +658,16 @@
     },
     "blog": {
       "posts": {
+        "extract-images-from-cbz": {
+          "title": "Como Extrair Imagens de Arquivos CBZ Online (Grátis, Sem Instalar Nada)",
+          "excerpt": "Um arquivo CBZ é um arquivo ZIP contendo arquivos de imagem individuais — normalmente JPEG, PNG ou WebP — um por página de quadrinho. Você pode extrair essas imagens diretamente no navegador usando a Ferramenta Web BiblioFuse, sem instalar nada e sem enviar nenhum arquivo. Tudo roda no lado do cliente via WebAssembly.",
+          "seoDescription": "Extraia imagens de arquivos CBZ online gratuitamente com a Ferramenta Web BiblioFuse. Sem instalação, sem upload — tudo funciona no navegador via WebAssembly."
+        },
+        "comic-bookmarks-iphone": {
+          "title": "Usando favoritos no BiblioFuse: nunca perca seu lugar em um quadrinho",
+          "excerpt": "Os favoritos do BiblioFuse permitem salvar qualquer página de um quadrinho, mangá ou EPUB com um nome personalizado para voltar a ela instantaneamente. O recurso funciona no iPhone e iPad com iOS 17 ou posterior, e cada favorito sincroniza automaticamente em todos os seus dispositivos via iCloud.",
+          "seoDescription": "Aprenda a usar favoritos no BiblioFuse no iPhone e iPad. Salve favoritos com nome, salte para qualquer página e sincronize entre dispositivos via iCloud."
+        },
         "night-reading-comics-iphone": {
           "title": "Ler Quadrinhos à Noite no iPhone: Modo Escuro e Dicas de Conforto Visual",
           "excerpt": "BiblioFuse para iOS tem modo escuro, controle de brilho independente abaixo do mínimo do iOS e filtro sépia — a combinação certa para ler quadrinhos à noite sem cansar os olhos.",

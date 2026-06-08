@@ -658,6 +658,16 @@
     },
     "blog": {
       "posts": {
+        "extract-images-from-cbz": {
+          "title": "如何在线从 CBZ 文件提取图片（免费，无需安装软件）",
+          "excerpt": "CBZ 文件是一个包含独立图片文件的 ZIP 压缩包——通常是 JPEG、PNG 或 WebP，每页漫画对应一张图片。您可以直接在浏览器中使用 BiblioFuse 网页工具提取这些图片，无需安装任何软件，也无需上传文件。一切操作均在客户端通过 WebAssembly 完成，文件永远不会离开您的设备。",
+          "seoDescription": "使用 BiblioFuse 网页工具免费在线从 CBZ 文件提取图片。无需安装软件，无需上传文件——一切在浏览器中通过 WebAssembly 完成。"
+        },
+        "comic-bookmarks-iphone": {
+          "title": "在 BiblioFuse 中使用书签：再也不会在漫画中迷失位置",
+          "excerpt": "BiblioFuse 的书签功能让你为漫画、漫画书或 EPUB 中的任意页面添加自定义名称，随时一键跳回。该功能支持运行 iOS 17 或更高版本的 iPhone 和 iPad，每个书签都会通过 iCloud 自动同步到你的所有设备。",
+          "seoDescription": "了解如何在 iPhone 和 iPad 上使用 BiblioFuse 书签。保存命名书签、跳转到任意页面，并通过 iCloud 跨设备同步。"
+        },
         "night-reading-comics-iphone": {
           "title": "iPhone 夜间阅读漫画：深色模式与护眼技巧",
           "excerpt": "BiblioFuse iOS 版提供深色模式、低于 iOS 系统最低值的亮度控制和复古褐色滤镜——专为夜间阅读漫画和漫画不伤眼而设计的完整方案。",

@@ -658,6 +658,16 @@
     },
     "blog": {
       "posts": {
+        "extract-images-from-cbz": {
+          "title": "Cara Mengekstrak Imej dari Fail CBZ Secara Dalam Talian (Percuma, Tanpa Perisian)",
+          "excerpt": "Fail CBZ ialah arkib ZIP yang mengandungi fail imej individu — biasanya JPEG, PNG atau WebP — satu bagi setiap halaman komik. Anda boleh mengekstrak imej-imej tersebut terus dalam pelayar menggunakan BiblioFuse Web Tool, tanpa memasang apa-apa dan tanpa memuat naik fail. Semua berjalan di sisi klien melalui WebAssembly.",
+          "seoDescription": "Ekstrak imej dari fail CBZ secara dalam talian percuma dengan BiblioFuse Web Tool. Tiada pemasangan, tiada muat naik — semua berjalan dalam pelayar melalui WebAssembly."
+        },
+        "comic-bookmarks-iphone": {
+          "title": "Menggunakan Penanda Buku dalam BiblioFuse: Jangan Pernah Hilang Tempat dalam Komik",
+          "excerpt": "Penanda buku BiblioFuse membolehkan anda menyimpan mana-mana halaman dalam komik, manga, atau EPUB dengan nama pilihan sendiri supaya boleh kembali ke sana dengan segera. Ciri ini berfungsi pada iPhone dan iPad yang menjalankan iOS 17 atau lebih baharu, dan setiap penanda buku disegerakkan secara automatik ke semua peranti anda melalui iCloud.",
+          "seoDescription": "Ketahui cara menggunakan penanda buku dalam BiblioFuse pada iPhone dan iPad. Simpan penanda buku bernama, lompat ke mana-mana halaman, dan segerakkan merentas peranti melalui iCloud."
+        },
         "night-reading-comics-iphone": {
           "title": "Membaca Komik Pada Waktu Malam di iPhone: Mod Gelap dan Tips Keselesaan Mata",
           "excerpt": "BiblioFuse untuk iOS mempunyai mod gelap, kawalan kecerahan di bawah minimum iOS, dan penapis sepia — gabungan yang tepat untuk membaca komik dan manga waktu malam tanpa membebankan mata.",
