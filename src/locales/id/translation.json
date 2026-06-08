@@ -857,6 +857,16 @@
           "title": "Cara Mengorganisasi Manga berdasarkan Seri di BiblioFuse di iPhone",
           "excerpt": "BiblioFuse memungkinkan Anda mengorganisasi manga berdasarkan seri di iPhone menggunakan sistem tag bawaan — beri tag setiap volume dengan nama seri, lalu filter perpustakaan Anda untuk melihat semua volume dalam urutan baca. Tag dan penilaian disinkronkan antara iPhone, iPad, dan Mac melalui iCloud.",
           "seoDescription": "Organisasi manga berdasarkan seri di BiblioFuse di iPhone menggunakan tag, penilaian, dan penamaan file yang konsisten. Sinkronkan urutan baca Anda antara iPhone, iPad, dan Mac melalui iCloud."
+        },
+        "comic-bookmarks-iphone": {
+          "title": "Menggunakan Bookmark di BiblioFuse: Jangan Pernah Kehilangan Halaman dalam Komik",
+          "excerpt": "BiblioFuse memungkinkan kamu menambahkan bookmark di halaman mana pun dalam komik atau ebook di iPhone. Bookmark disinkronkan antara iPhone, iPad, dan Mac melalui iCloud — posisi tersimpan tersedia di semua perangkat.",
+          "seoDescription": "Pelajari cara menggunakan bookmark di BiblioFuse pada iPhone untuk menyimpan posisi baca di komik atau ebook mana pun. Sinkronisasi melalui iCloud di semua perangkat Apple."
+        },
+        "extract-images-from-cbz": {
+          "title": "Cara Mengekstrak Gambar dari File CBZ Secara Online (Gratis, Tanpa Software)",
+          "excerpt": "Alat web BiblioFuse memungkinkan kamu mengekstrak gambar individual dari file CBZ langsung di browser — tanpa unggah, tanpa software, tanpa akun. Pemrosesan menggunakan WebAssembly agar komikmu tetap privat.",
+          "seoDescription": "Ekstrak gambar dari file CBZ secara online gratis dengan BiblioFuse Web. 100% di browser dengan WebAssembly — tanpa unggah file, tanpa server, tanpa akun."
         }
       }
     }

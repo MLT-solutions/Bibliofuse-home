@@ -857,6 +857,16 @@
           "title": "Cómo Organizar Manga por Serie en BiblioFuse en iPhone",
           "excerpt": "BiblioFuse te permite organizar el manga por serie en iPhone usando su sistema de etiquetas integrado — etiqueta cada volumen con el nombre de la serie y filtra tu biblioteca para ver todos los volúmenes en orden de lectura. Las etiquetas y valoraciones se sincronizan entre iPhone, iPad y Mac mediante iCloud.",
           "seoDescription": "Organiza el manga por serie en BiblioFuse en iPhone usando etiquetas, valoraciones y nombres de archivo consistentes. Sincroniza tu orden de lectura en iPhone, iPad y Mac mediante iCloud."
+        },
+        "comic-bookmarks-iphone": {
+          "title": "Usar marcadores en BiblioFuse: nunca pierdas tu lugar en un cómic",
+          "excerpt": "BiblioFuse te permite añadir marcadores en cualquier página de un cómic o ebook en iPhone. Los marcadores se sincronizan entre iPhone, iPad y Mac mediante iCloud para que siempre encuentres tu lugar.",
+          "seoDescription": "Aprende a usar marcadores en BiblioFuse en iPhone para guardar tu posición en cualquier cómic o ebook. Los marcadores se sincronizan vía iCloud en todos tus dispositivos Apple."
+        },
+        "extract-images-from-cbz": {
+          "title": "Cómo extraer imágenes de archivos CBZ online (gratis, sin software)",
+          "excerpt": "BiblioFuse Web te permite extraer imágenes individuales de archivos CBZ directamente en tu navegador — sin subidas, sin software, sin cuenta. El procesamiento usa WebAssembly para que tus cómics permanezcan privados.",
+          "seoDescription": "Extrae imágenes de archivos CBZ online de forma gratuita con BiblioFuse Web. 100% en el navegador con WebAssembly — sin subida de archivos, sin servidor, sin cuenta."
         }
       }
     }

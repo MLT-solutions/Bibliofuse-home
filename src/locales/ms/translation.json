@@ -857,6 +857,16 @@
           "title": "Cara Mengatur Manga mengikut Siri dalam BiblioFuse di iPhone",
           "excerpt": "BiblioFuse membolehkan anda mengatur manga mengikut siri di iPhone menggunakan sistem tag terbina dalam — tandai setiap jilid dengan nama siri, kemudian tapis perpustakaan anda untuk melihat semua jilid mengikut urutan bacaan. Tag dan penilaian disegerakkan antara iPhone, iPad, dan Mac melalui iCloud.",
           "seoDescription": "Atur manga mengikut siri dalam BiblioFuse di iPhone menggunakan tag, penilaian, dan penamaan fail yang konsisten. Segerakkan urutan bacaan anda antara iPhone, iPad, dan Mac melalui iCloud."
+        },
+        "comic-bookmarks-iphone": {
+          "title": "Menggunakan Penanda Buku di BiblioFuse: Jangan Sesekali Hilang Tempat dalam Komik",
+          "excerpt": "BiblioFuse membolehkan anda menambah penanda buku di mana-mana halaman dalam komik atau ebook di iPhone. Penanda buku disegerakkan antara iPhone, iPad, dan Mac melalui iCloud — kedudukan yang disimpan tersedia di semua peranti.",
+          "seoDescription": "Ketahui cara menggunakan penanda buku dalam BiblioFuse di iPhone untuk menyimpan kedudukan baca dalam mana-mana komik atau ebook. Penyegerakan melalui iCloud di semua peranti Apple anda."
+        },
+        "extract-images-from-cbz": {
+          "title": "Cara Mengekstrak Gambar daripada Fail CBZ Secara Dalam Talian (Percuma, Tanpa Perisian)",
+          "excerpt": "Alat web BiblioFuse membolehkan anda mengekstrak gambar individual daripada fail CBZ terus dalam pelayar — tanpa muat naik, tanpa perisian, tanpa akaun. Pemprosesan menggunakan WebAssembly agar komik anda kekal peribadi.",
+          "seoDescription": "Ekstrak gambar daripada fail CBZ secara dalam talian percuma dengan BiblioFuse Web. 100% dalam pelayar dengan WebAssembly — tanpa muat naik fail, tanpa pelayan, tanpa akaun."
         }
       }
     }

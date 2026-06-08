@@ -857,6 +857,16 @@
           "title": "iPhoneのBiblioFuseでマンガをシリーズ別に整理する方法",
           "excerpt": "BiblioFuseの内蔵タグシステムを使って、iPhoneでマンガをシリーズ別に整理できます——各巻にシリーズ名のタグを付け、ライブラリをフィルタリングして読む順番で全巻を確認できます。タグと評価はiCloudを通じてiPhone、iPad、Mac間で同期されます。",
           "seoDescription": "iPhoneのBiblioFuseでタグ、評価、一貫したファイル名を使ってマンガをシリーズ別に整理。iCloudを通じてiPhone、iPad、Mac間で読む順番を同期。"
+        },
+        "comic-bookmarks-iphone": {
+          "title": "BiblioFuseのブックマーク機能：コミックでページを見失わない",
+          "excerpt": "BiblioFuseではiPhoneのコミックや電子書籍の任意のページにブックマークを追加できます。ブックマークはiCloud経由でiPhone、iPad、Mac間で同期され、保存した位置にどのデバイスからでもアクセスできます。",
+          "seoDescription": "iPhoneのBiblioFuseでブックマークを使って、コミックや電子書籍の読書位置を保存する方法を学ぼう。iCloudですべてのAppleデバイスで同期。"
+        },
+        "extract-images-from-cbz": {
+          "title": "CBZファイルから画像をオンラインで抽出する方法（無料・ソフト不要）",
+          "excerpt": "BiblioFuse WebはCBZファイルから画像をブラウザで直接抽出できます——アップロード不要、ソフト不要、アカウント不要。WebAssemblyで処理するのでコミックはプライベートに保たれます。",
+          "seoDescription": "BiblioFuse WebでCBZファイルから画像をオンラインで無料抽出。WebAssemblyで100%ブラウザ内処理——ファイルアップロードなし、サーバーなし、アカウント不要。"
         }
       }
     }

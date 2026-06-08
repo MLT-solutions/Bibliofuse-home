@@ -857,6 +857,16 @@
           "title": "Manga per Serie Organiseren in BiblioFuse op iPhone",
           "excerpt": "BiblioFuse laat je manga per serie organiseren op iPhone met het ingebouwde tagsysteem — tag elk deel met de serienaam en filter je bibliotheek om alle delen in leesolgorde te zien. Tags en beoordelingen synchroniseren via iCloud tussen iPhone, iPad en Mac.",
           "seoDescription": "Organiseer manga per serie in BiblioFuse op iPhone met tags, beoordelingen en consistente bestandsnamen. Synchroniseer je leesvolgorde via iCloud tussen iPhone, iPad en Mac."
+        },
+        "comic-bookmarks-iphone": {
+          "title": "Bladwijzers gebruiken in BiblioFuse: raak je plek in een stripboek nooit kwijt",
+          "excerpt": "BiblioFuse laat je op elke pagina van een stripboek of ebook op iPhone een bladwijzer plaatsen. Bladwijzers synchroniseren via iCloud tussen iPhone, iPad en Mac — je opgeslagen plekken volgen je overal.",
+          "seoDescription": "Leer hoe je bladwijzers gebruikt in BiblioFuse op iPhone om je leespositie in elk stripboek of ebook op te slaan. Synchronisatie via iCloud op al je Apple-apparaten."
+        },
+        "extract-images-from-cbz": {
+          "title": "Afbeeldingen extraheren uit CBZ-bestanden online (gratis, geen software)",
+          "excerpt": "BiblioFuse Web laat je afbeeldingen uit CBZ-bestanden extraheren direct in je browser — geen upload, geen software, geen account. Verwerking gebeurt volledig in WebAssembly zodat je strips privé blijven.",
+          "seoDescription": "Extraheer afbeeldingen uit CBZ-bestanden online gratis met BiblioFuse Web. 100% in de browser met WebAssembly — geen bestandsupload, geen server, geen account."
         }
       }
     }
