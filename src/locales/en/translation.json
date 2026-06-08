@@ -194,15 +194,25 @@
         "update": "Update"
       },
       "posts": {
+        "double-page-spreads-comics": {
+          "title": "Reading Double-Page Spreads in Comics: How BiblioFuse Handles Wide Images",
+          "excerpt": "BiblioFuse reads CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT files on iPhone and iPad running iOS 17 or later. When you reach a double-page spread, BiblioFuse automatically detects paired pages and can display them side-by-side, preserving the intended artwork. You can switch between single-page, side-by-side, and full-zoom modes at any time.",
+          "seoDescription": "Learn how BiblioFuse handles double-page spreads in comics on iPhone and iPad. Automatic spread detection, landscape mode, and pinch-to-zoom for the best reading experience."
+        },
+        "backup-comic-library-mac": {
+          "title": "How to Back Up Your Comic Library on Mac: External Drive, NAS, and Cloud Options",
+          "excerpt": "BiblioFuse stores your comics and ebooks — EPUB, CBZ, CBR, PDF, ZIP, RAR, and TXT — on iPhone, iPad, and Mac, and streams your Mac library directly to iPhone over Wi-Fi without copying files. To back up your Mac comic library, you can use Time Machine with an external drive or NAS, copy files to cloud storage like iCloud Drive or Dropbox, or use any backup tool that mirrors a standard folder. BiblioFuse reading progress syncs automatically via iCloud so your place in every book is always preserved.",
+          "seoDescription": "Learn how to back up your Mac comic library using Time Machine, external drives, NAS, and cloud storage. Protect your EPUB, CBZ, and PDF collection from data loss."
+        },
         "extract-images-from-cbz": {
           "title": "How to Extract Images from CBZ Files Online (Free, No Software)",
-          "excerpt": "A CBZ file is a ZIP archive containing individual image files — typically JPEG, PNG, or WebP — one per comic page. You can extract those images directly in your browser using the BiblioFuse Web Tool, with no software to install and no file upload required. Everything runs client-side via WebAssembly, so your files never leave your device.",
-          "seoDescription": "Extract images from CBZ files online for free using the BiblioFuse Web Tool. No software installation, no file upload — everything runs in your browser via WebAssembly."
+          "excerpt": "BiblioFuse Web lets you extract individual images from CBZ files directly in your browser — no upload, no software, no account. Processing runs entirely in WebAssembly so your comics stay private.",
+          "seoDescription": "Extract images from CBZ files online for free using BiblioFuse Web. 100% browser-based with WebAssembly — no file upload, no server, no account required."
         },
         "comic-bookmarks-iphone": {
           "title": "Using Bookmarks in BiblioFuse: Never Lose Your Place in a Comic",
-          "excerpt": "BiblioFuse bookmarks let you save any page in a comic, manga, or EPUB with a custom name so you can jump back to it instantly. The feature works on iPhone and iPad running iOS 17 or later, and every bookmark syncs automatically across all your devices via iCloud.",
-          "seoDescription": "Learn how to use bookmarks in BiblioFuse on iPhone and iPad. Save named bookmarks, jump to any page, and sync across devices via iCloud — never lose your place in a comic again."
+          "excerpt": "BiblioFuse lets you drop bookmarks on any page in a comic or ebook on iPhone. Bookmarks sync across iPhone, iPad, and Mac via iCloud — your saved spots follow you across every device.",
+          "seoDescription": "Learn how to use bookmarks in BiblioFuse on iPhone to save your reading position in any comic or ebook. Bookmarks sync via iCloud across all your Apple devices."
         },
         "night-reading-comics-iphone": {
           "title": "Reading Comics at Night on iPhone: Dark Mode and Eye Comfort Tips",
@@ -403,16 +413,6 @@
           "title": "How to Organize Manga by Series in BiblioFuse on iPhone",
           "excerpt": "BiblioFuse lets you organize manga by series on iPhone using its built-in tag system — tag each volume with the series name, then filter your library to see every volume in reading order. Tags and ratings sync across iPhone, iPad, and Mac via iCloud.",
           "seoDescription": "Organize manga by series in BiblioFuse on iPhone using tags, ratings, and consistent file naming. Sync your reading order across iPhone, iPad, and Mac via iCloud."
-        },
-        "comic-bookmarks-iphone": {
-          "title": "Using Bookmarks in BiblioFuse: Never Lose Your Place in a Comic",
-          "excerpt": "BiblioFuse lets you drop bookmarks on any page in a comic or ebook on iPhone. Bookmarks sync across iPhone, iPad, and Mac via iCloud — your saved spots follow you across every device.",
-          "seoDescription": "Learn how to use bookmarks in BiblioFuse on iPhone to save your reading position in any comic or ebook. Bookmarks sync via iCloud across all your Apple devices."
-        },
-        "extract-images-from-cbz": {
-          "title": "How to Extract Images from CBZ Files Online (Free, No Software)",
-          "excerpt": "BiblioFuse Web lets you extract individual images from CBZ files directly in your browser — no upload, no software, no account. Processing runs entirely in WebAssembly so your comics stay private.",
-          "seoDescription": "Extract images from CBZ files online for free using BiblioFuse Web. 100% browser-based with WebAssembly — no file upload, no server, no account required."
         }
       }
     },

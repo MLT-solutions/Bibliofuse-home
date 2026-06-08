@@ -658,15 +658,25 @@
     },
     "blog": {
       "posts": {
+        "double-page-spreads-comics": {
+          "title": "Leer Páginas Dobles en Cómics: Cómo BiblioFuse Maneja Imágenes Anchas",
+          "excerpt": "BiblioFuse lee archivos CBZ, CBR, EPUB, PDF, ZIP, RAR y TXT en iPhone y iPad con iOS 17 o posterior. Cuando llegas a una página doble, BiblioFuse detecta automáticamente las páginas emparejadas y puede mostrarlas lado a lado, preservando el arte original. Puedes cambiar entre modo de una página, lado a lado y zoom completo en cualquier momento.",
+          "seoDescription": "Aprende cómo BiblioFuse maneja las páginas dobles en cómics en iPhone y iPad. Detección automática, modo horizontal y zoom para la mejor experiencia de lectura."
+        },
+        "backup-comic-library-mac": {
+          "title": "Cómo hacer copia de seguridad de tu biblioteca de cómics en Mac: disco externo, NAS y opciones en la nube",
+          "excerpt": "BiblioFuse almacena tus cómics y ebooks — EPUB, CBZ, CBR, PDF, ZIP, RAR y TXT — en iPhone, iPad y Mac, y transmite tu biblioteca de Mac directamente al iPhone por Wi-Fi sin copiar archivos. Para hacer copia de seguridad de tu biblioteca de cómics en Mac, puedes usar Time Machine con un disco externo o NAS, copiar archivos a almacenamiento en la nube como iCloud Drive o Dropbox, o usar cualquier herramienta de copia de seguridad que refleje una carpeta estándar. El progreso de lectura de BiblioFuse se sincroniza automáticamente a través de iCloud.",
+          "seoDescription": "Aprende cómo hacer copia de seguridad de tu biblioteca de cómics en Mac usando Time Machine, discos externos, NAS y almacenamiento en la nube. Protege tu colección de EPUB, CBZ y PDF."
+        },
         "extract-images-from-cbz": {
-          "title": "Cómo Extraer Imágenes de Archivos CBZ Online (Gratis, Sin Instalar Nada)",
-          "excerpt": "Un archivo CBZ es un archivo ZIP que contiene imágenes individuales — normalmente JPEG, PNG o WebP — una por página de cómic. Puedes extraer esas imágenes directamente en tu navegador usando la Herramienta Web de BiblioFuse, sin instalar nada y sin subir ningún archivo. Todo funciona del lado del cliente mediante WebAssembly, por lo que tus archivos nunca salen de tu dispositivo.",
-          "seoDescription": "Extrae imágenes de archivos CBZ online gratis con la Herramienta Web de BiblioFuse. Sin instalación, sin subir archivos — todo funciona en tu navegador."
+          "title": "Cómo extraer imágenes de archivos CBZ online (gratis, sin software)",
+          "excerpt": "BiblioFuse Web te permite extraer imágenes individuales de archivos CBZ directamente en tu navegador — sin subidas, sin software, sin cuenta. El procesamiento usa WebAssembly para que tus cómics permanezcan privados.",
+          "seoDescription": "Extrae imágenes de archivos CBZ online de forma gratuita con BiblioFuse Web. 100% en el navegador con WebAssembly — sin subida de archivos, sin servidor, sin cuenta."
         },
         "comic-bookmarks-iphone": {
-          "title": "Cómo usar los marcadores de BiblioFuse: nunca pierdas tu lugar en un cómic",
-          "excerpt": "Los marcadores de BiblioFuse te permiten guardar cualquier página de un cómic, manga o EPUB con un nombre personalizado para volver a ella al instante. La función funciona en iPhone y iPad con iOS 17 o posterior, y cada marcador se sincroniza automáticamente en todos tus dispositivos a través de iCloud.",
-          "seoDescription": "Aprende a usar los marcadores de BiblioFuse en iPhone y iPad. Guarda marcadores con nombre, salta a cualquier página y sincroniza entre dispositivos vía iCloud."
+          "title": "Usar marcadores en BiblioFuse: nunca pierdas tu lugar en un cómic",
+          "excerpt": "BiblioFuse te permite añadir marcadores en cualquier página de un cómic o ebook en iPhone. Los marcadores se sincronizan entre iPhone, iPad y Mac mediante iCloud para que siempre encuentres tu lugar.",
+          "seoDescription": "Aprende a usar marcadores en BiblioFuse en iPhone para guardar tu posición en cualquier cómic o ebook. Los marcadores se sincronizan vía iCloud en todos tus dispositivos Apple."
         },
         "night-reading-comics-iphone": {
           "title": "Leer Cómics de Noche en iPhone: Modo Oscuro y Consejos para el Confort Visual",
@@ -867,16 +877,6 @@
           "title": "Cómo Organizar Manga por Serie en BiblioFuse en iPhone",
           "excerpt": "BiblioFuse te permite organizar el manga por serie en iPhone usando su sistema de etiquetas integrado — etiqueta cada volumen con el nombre de la serie y filtra tu biblioteca para ver todos los volúmenes en orden de lectura. Las etiquetas y valoraciones se sincronizan entre iPhone, iPad y Mac mediante iCloud.",
           "seoDescription": "Organiza el manga por serie en BiblioFuse en iPhone usando etiquetas, valoraciones y nombres de archivo consistentes. Sincroniza tu orden de lectura en iPhone, iPad y Mac mediante iCloud."
-        },
-        "comic-bookmarks-iphone": {
-          "title": "Usar marcadores en BiblioFuse: nunca pierdas tu lugar en un cómic",
-          "excerpt": "BiblioFuse te permite añadir marcadores en cualquier página de un cómic o ebook en iPhone. Los marcadores se sincronizan entre iPhone, iPad y Mac mediante iCloud para que siempre encuentres tu lugar.",
-          "seoDescription": "Aprende a usar marcadores en BiblioFuse en iPhone para guardar tu posición en cualquier cómic o ebook. Los marcadores se sincronizan vía iCloud en todos tus dispositivos Apple."
-        },
-        "extract-images-from-cbz": {
-          "title": "Cómo extraer imágenes de archivos CBZ online (gratis, sin software)",
-          "excerpt": "BiblioFuse Web te permite extraer imágenes individuales de archivos CBZ directamente en tu navegador — sin subidas, sin software, sin cuenta. El procesamiento usa WebAssembly para que tus cómics permanezcan privados.",
-          "seoDescription": "Extrae imágenes de archivos CBZ online de forma gratuita con BiblioFuse Web. 100% en el navegador con WebAssembly — sin subida de archivos, sin servidor, sin cuenta."
         }
       }
     }

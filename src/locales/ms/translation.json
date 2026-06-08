@@ -658,15 +658,25 @@
     },
     "blog": {
       "posts": {
+        "double-page-spreads-comics": {
+          "title": "Membaca Halaman Berganda dalam Komik: Cara BiblioFuse Mengendalikan Imej Lebar",
+          "excerpt": "BiblioFuse membaca fail CBZ, CBR, EPUB, PDF, ZIP, RAR dan TXT pada iPhone dan iPad yang menjalankan iOS 17 atau lebih baru. Apabila anda mencapai helaian berganda, BiblioFuse secara automatik mengesan halaman yang dipasangkan dan boleh memaparkannya bersebelahan, mengekalkan karya seni seperti yang dimaksudkan. Anda boleh beralih antara mod halaman tunggal, bersebelahan dan zum penuh pada bila-bila masa.",
+          "seoDescription": "Ketahui cara BiblioFuse mengendalikan helaian berganda dalam komik pada iPhone dan iPad. Pengesanan automatik, mod landskap dan zum untuk pengalaman membaca terbaik."
+        },
+        "backup-comic-library-mac": {
+          "title": "Cara Membuat Sandaran Perpustakaan Komik di Mac: Pemacu Luaran, NAS dan Pilihan Awan",
+          "excerpt": "BiblioFuse menyimpan komik dan ebook anda — EPUB, CBZ, CBR, PDF, ZIP, RAR dan TXT — pada iPhone, iPad dan Mac, serta menstrim perpustakaan Mac anda terus ke iPhone melalui Wi-Fi tanpa menyalin fail. Untuk membuat sandaran perpustakaan komik di Mac, anda boleh menggunakan Time Machine dengan pemacu luaran atau NAS, menyalin fail ke storan awan seperti iCloud Drive atau Dropbox, atau menggunakan mana-mana alat sandaran yang mencerminkan folder standard. Kemajuan membaca BiblioFuse disegerakkan secara automatik melalui iCloud.",
+          "seoDescription": "Ketahui cara membuat sandaran perpustakaan komik di Mac menggunakan Time Machine, pemacu luaran, NAS dan storan awan. Lindungi koleksi EPUB, CBZ dan PDF anda daripada kehilangan data."
+        },
         "extract-images-from-cbz": {
-          "title": "Cara Mengekstrak Imej dari Fail CBZ Secara Dalam Talian (Percuma, Tanpa Perisian)",
-          "excerpt": "Fail CBZ ialah arkib ZIP yang mengandungi fail imej individu — biasanya JPEG, PNG atau WebP — satu bagi setiap halaman komik. Anda boleh mengekstrak imej-imej tersebut terus dalam pelayar menggunakan BiblioFuse Web Tool, tanpa memasang apa-apa dan tanpa memuat naik fail. Semua berjalan di sisi klien melalui WebAssembly.",
-          "seoDescription": "Ekstrak imej dari fail CBZ secara dalam talian percuma dengan BiblioFuse Web Tool. Tiada pemasangan, tiada muat naik — semua berjalan dalam pelayar melalui WebAssembly."
+          "title": "Cara Mengekstrak Gambar daripada Fail CBZ Secara Dalam Talian (Percuma, Tanpa Perisian)",
+          "excerpt": "Alat web BiblioFuse membolehkan anda mengekstrak gambar individual daripada fail CBZ terus dalam pelayar — tanpa muat naik, tanpa perisian, tanpa akaun. Pemprosesan menggunakan WebAssembly agar komik anda kekal peribadi.",
+          "seoDescription": "Ekstrak gambar daripada fail CBZ secara dalam talian percuma dengan BiblioFuse Web. 100% dalam pelayar dengan WebAssembly — tanpa muat naik fail, tanpa pelayan, tanpa akaun."
         },
         "comic-bookmarks-iphone": {
-          "title": "Menggunakan Penanda Buku dalam BiblioFuse: Jangan Pernah Hilang Tempat dalam Komik",
-          "excerpt": "Penanda buku BiblioFuse membolehkan anda menyimpan mana-mana halaman dalam komik, manga, atau EPUB dengan nama pilihan sendiri supaya boleh kembali ke sana dengan segera. Ciri ini berfungsi pada iPhone dan iPad yang menjalankan iOS 17 atau lebih baharu, dan setiap penanda buku disegerakkan secara automatik ke semua peranti anda melalui iCloud.",
-          "seoDescription": "Ketahui cara menggunakan penanda buku dalam BiblioFuse pada iPhone dan iPad. Simpan penanda buku bernama, lompat ke mana-mana halaman, dan segerakkan merentas peranti melalui iCloud."
+          "title": "Menggunakan Penanda Buku di BiblioFuse: Jangan Sesekali Hilang Tempat dalam Komik",
+          "excerpt": "BiblioFuse membolehkan anda menambah penanda buku di mana-mana halaman dalam komik atau ebook di iPhone. Penanda buku disegerakkan antara iPhone, iPad, dan Mac melalui iCloud — kedudukan yang disimpan tersedia di semua peranti.",
+          "seoDescription": "Ketahui cara menggunakan penanda buku dalam BiblioFuse di iPhone untuk menyimpan kedudukan baca dalam mana-mana komik atau ebook. Penyegerakan melalui iCloud di semua peranti Apple anda."
         },
         "night-reading-comics-iphone": {
           "title": "Membaca Komik Pada Waktu Malam di iPhone: Mod Gelap dan Tips Keselesaan Mata",
@@ -867,16 +877,6 @@
           "title": "Cara Mengatur Manga mengikut Siri dalam BiblioFuse di iPhone",
           "excerpt": "BiblioFuse membolehkan anda mengatur manga mengikut siri di iPhone menggunakan sistem tag terbina dalam — tandai setiap jilid dengan nama siri, kemudian tapis perpustakaan anda untuk melihat semua jilid mengikut urutan bacaan. Tag dan penilaian disegerakkan antara iPhone, iPad, dan Mac melalui iCloud.",
           "seoDescription": "Atur manga mengikut siri dalam BiblioFuse di iPhone menggunakan tag, penilaian, dan penamaan fail yang konsisten. Segerakkan urutan bacaan anda antara iPhone, iPad, dan Mac melalui iCloud."
-        },
-        "comic-bookmarks-iphone": {
-          "title": "Menggunakan Penanda Buku di BiblioFuse: Jangan Sesekali Hilang Tempat dalam Komik",
-          "excerpt": "BiblioFuse membolehkan anda menambah penanda buku di mana-mana halaman dalam komik atau ebook di iPhone. Penanda buku disegerakkan antara iPhone, iPad, dan Mac melalui iCloud — kedudukan yang disimpan tersedia di semua peranti.",
-          "seoDescription": "Ketahui cara menggunakan penanda buku dalam BiblioFuse di iPhone untuk menyimpan kedudukan baca dalam mana-mana komik atau ebook. Penyegerakan melalui iCloud di semua peranti Apple anda."
-        },
-        "extract-images-from-cbz": {
-          "title": "Cara Mengekstrak Gambar daripada Fail CBZ Secara Dalam Talian (Percuma, Tanpa Perisian)",
-          "excerpt": "Alat web BiblioFuse membolehkan anda mengekstrak gambar individual daripada fail CBZ terus dalam pelayar — tanpa muat naik, tanpa perisian, tanpa akaun. Pemprosesan menggunakan WebAssembly agar komik anda kekal peribadi.",
-          "seoDescription": "Ekstrak gambar daripada fail CBZ secara dalam talian percuma dengan BiblioFuse Web. 100% dalam pelayar dengan WebAssembly — tanpa muat naik fail, tanpa pelayan, tanpa akaun."
         }
       }
     }

@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'backup-comic-library-mac',
+    date: '2026-06-08',
+    tags: ['ios', 'mac', 'guide'],
+    coverImage: '/image/blog/Backup Comic Library Mac.jpg',
+  },
+  {
+    slug: 'double-page-spreads-comics',
+    date: '2026-06-08',
+    tags: ['ios', 'guide', 'reading'],
+    coverImage: '/image/blog/Double Page Spreads Comics.jpg',
+  },
+  {
     slug: 'extract-images-from-cbz',
     date: '2026-06-09',
     tags: ['web', 'guide', 'cbz'],

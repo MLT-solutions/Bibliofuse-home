@@ -658,15 +658,25 @@
     },
     "blog": {
       "posts": {
+        "double-page-spreads-comics": {
+          "title": "Ler Páginas Duplas em Quadrinhos: Como o BiblioFuse Trata Imagens Largas",
+          "excerpt": "O BiblioFuse lê arquivos CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT no iPhone e iPad com iOS 17 ou posterior. Quando você chega a uma página dupla, o BiblioFuse detecta automaticamente as páginas emparelhadas e pode exibi-las lado a lado, preservando a obra como foi concebida. Você pode alternar entre modo de página única, lado a lado e zoom completo a qualquer momento.",
+          "seoDescription": "Aprenda como o BiblioFuse trata páginas duplas em quadrinhos no iPhone e iPad. Detecção automática, modo paisagem e zoom para a melhor experiência de leitura."
+        },
+        "backup-comic-library-mac": {
+          "title": "Como fazer backup da sua biblioteca de quadrinhos no Mac: disco externo, NAS e opções de nuvem",
+          "excerpt": "O BiblioFuse armazena seus quadrinhos e ebooks — EPUB, CBZ, CBR, PDF, ZIP, RAR e TXT — no iPhone, iPad e Mac, e transmite sua biblioteca do Mac diretamente para o iPhone por Wi-Fi sem copiar arquivos. Para fazer backup da sua biblioteca de quadrinhos no Mac, você pode usar o Time Machine com um disco externo ou NAS, copiar arquivos para armazenamento em nuvem como iCloud Drive ou Dropbox, ou usar qualquer ferramenta de backup que espelhe uma pasta padrão. O progresso de leitura do BiblioFuse sincroniza automaticamente via iCloud.",
+          "seoDescription": "Aprenda como fazer backup da sua biblioteca de quadrinhos no Mac usando Time Machine, discos externos, NAS e armazenamento em nuvem. Proteja sua coleção de EPUB, CBZ e PDF."
+        },
         "extract-images-from-cbz": {
-          "title": "Como Extrair Imagens de Arquivos CBZ Online (Grátis, Sem Instalar Nada)",
-          "excerpt": "Um arquivo CBZ é um arquivo ZIP contendo arquivos de imagem individuais — normalmente JPEG, PNG ou WebP — um por página de quadrinho. Você pode extrair essas imagens diretamente no navegador usando a Ferramenta Web BiblioFuse, sem instalar nada e sem enviar nenhum arquivo. Tudo roda no lado do cliente via WebAssembly.",
-          "seoDescription": "Extraia imagens de arquivos CBZ online gratuitamente com a Ferramenta Web BiblioFuse. Sem instalação, sem upload — tudo funciona no navegador via WebAssembly."
+          "title": "Como extrair imagens de arquivos CBZ online (grátis, sem software)",
+          "excerpt": "O BiblioFuse Web permite extrair imagens individuais de arquivos CBZ diretamente no navegador — sem upload, sem software, sem conta. O processamento usa WebAssembly para manter seus quadrinhos privados.",
+          "seoDescription": "Extraia imagens de arquivos CBZ online gratuitamente com o BiblioFuse Web. 100% no navegador com WebAssembly — sem upload de arquivos, sem servidor, sem conta."
         },
         "comic-bookmarks-iphone": {
-          "title": "Usando favoritos no BiblioFuse: nunca perca seu lugar em um quadrinho",
-          "excerpt": "Os favoritos do BiblioFuse permitem salvar qualquer página de um quadrinho, mangá ou EPUB com um nome personalizado para voltar a ela instantaneamente. O recurso funciona no iPhone e iPad com iOS 17 ou posterior, e cada favorito sincroniza automaticamente em todos os seus dispositivos via iCloud.",
-          "seoDescription": "Aprenda a usar favoritos no BiblioFuse no iPhone e iPad. Salve favoritos com nome, salte para qualquer página e sincronize entre dispositivos via iCloud."
+          "title": "Usar marcadores no BiblioFuse: nunca perca seu lugar em um quadrinho",
+          "excerpt": "O BiblioFuse permite adicionar marcadores em qualquer página de um quadrinho ou ebook no iPhone. Os marcadores sincronizam entre iPhone, iPad e Mac via iCloud — suas posições salvas o seguem em todos os dispositivos.",
+          "seoDescription": "Aprenda a usar marcadores no BiblioFuse no iPhone para salvar sua posição em qualquer quadrinho ou ebook. Sincronização via iCloud em todos os seus dispositivos Apple."
         },
         "night-reading-comics-iphone": {
           "title": "Ler Quadrinhos à Noite no iPhone: Modo Escuro e Dicas de Conforto Visual",
@@ -867,16 +877,6 @@
           "title": "Como Organizar Mangá por Série no BiblioFuse no iPhone",
           "excerpt": "O BiblioFuse permite organizar mangás por série no iPhone usando o sistema de etiquetas integrado — etiquete cada volume com o nome da série e filtre sua biblioteca para ver todos os volumes em ordem de leitura. As etiquetas e avaliações sincronizam entre iPhone, iPad e Mac via iCloud.",
           "seoDescription": "Organize mangás por série no BiblioFuse no iPhone usando etiquetas, avaliações e nomes de arquivos consistentes. Sincronize sua ordem de leitura entre iPhone, iPad e Mac via iCloud."
-        },
-        "comic-bookmarks-iphone": {
-          "title": "Usar marcadores no BiblioFuse: nunca perca seu lugar em um quadrinho",
-          "excerpt": "O BiblioFuse permite adicionar marcadores em qualquer página de um quadrinho ou ebook no iPhone. Os marcadores sincronizam entre iPhone, iPad e Mac via iCloud — suas posições salvas o seguem em todos os dispositivos.",
-          "seoDescription": "Aprenda a usar marcadores no BiblioFuse no iPhone para salvar sua posição em qualquer quadrinho ou ebook. Sincronização via iCloud em todos os seus dispositivos Apple."
-        },
-        "extract-images-from-cbz": {
-          "title": "Como extrair imagens de arquivos CBZ online (grátis, sem software)",
-          "excerpt": "O BiblioFuse Web permite extrair imagens individuais de arquivos CBZ diretamente no navegador — sem upload, sem software, sem conta. O processamento usa WebAssembly para manter seus quadrinhos privados.",
-          "seoDescription": "Extraia imagens de arquivos CBZ online gratuitamente com o BiblioFuse Web. 100% no navegador com WebAssembly — sem upload de arquivos, sem servidor, sem conta."
         }
       }
     }

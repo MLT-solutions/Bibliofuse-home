@@ -658,15 +658,25 @@
     },
     "blog": {
       "posts": {
+        "double-page-spreads-comics": {
+          "title": "만화의 양면 펼침 읽기: BiblioFuse가 와이드 이미지를 처리하는 방법",
+          "excerpt": "BiblioFuse는 iOS 17 이상이 설치된 iPhone 및 iPad에서 CBZ, CBR, EPUB, PDF, ZIP, RAR, TXT 파일을 읽습니다. 양면 펼침 페이지에 도달하면 BiblioFuse가 자동으로 페어링된 페이지를 감지하여 나란히 표시할 수 있으며, 예술가가 의도한 대로 작품을 보여줍니다. 단일 페이지, 나란히 보기, 전체 확대 모드 사이를 언제든지 전환할 수 있습니다.",
+          "seoDescription": "BiblioFuse가 iPhone과 iPad에서 만화의 양면 펼침을 처리하는 방법을 알아보세요. 자동 감지, 가로 모드, 핀치 줌으로 최고의 독서 경험을 제공합니다."
+        },
+        "backup-comic-library-mac": {
+          "title": "Mac에서 만화 라이브러리 백업하는 방법: 외장 드라이브, NAS 및 클라우드 옵션",
+          "excerpt": "BiblioFuse는 iPhone, iPad 및 Mac에 EPUB, CBZ, CBR, PDF, ZIP, RAR, TXT 등의 만화와 전자책을 저장하며, 파일을 복사하지 않고 Wi-Fi를 통해 Mac 라이브러리를 iPhone으로 직접 스트리밍합니다. Mac의 만화 라이브러리를 백업하려면 외장 드라이브나 NAS가 있는 Time Machine을 사용하거나, iCloud Drive 또는 Dropbox와 같은 클라우드 스토리지에 파일을 복사하거나, 표준 폴더를 미러링하는 백업 도구를 사용할 수 있습니다. BiblioFuse 읽기 진행 상황은 iCloud를 통해 자동으로 동기화됩니다.",
+          "seoDescription": "Time Machine, 외장 드라이브, NAS 및 클라우드 스토리지를 사용하여 Mac에서 만화 라이브러리를 백업하는 방법을 알아보세요. EPUB, CBZ, PDF 컬렉션을 데이터 손실로부터 보호하세요."
+        },
         "extract-images-from-cbz": {
-          "title": "CBZ 파일에서 이미지 온라인으로 추출하는 방법 (무료, 소프트웨어 불필요)",
-          "excerpt": "CBZ 파일은 만화의 각 페이지에 해당하는 개별 이미지 파일(보통 JPEG, PNG 또는 WebP)이 담긴 ZIP 압축 파일입니다. BiblioFuse 웹 도구를 사용하면 소프트웨어 설치나 파일 업로드 없이 브라우저에서 직접 이미지를 추출할 수 있습니다. 모든 작업은 WebAssembly를 통해 클라이언트 측에서 처리됩니다.",
-          "seoDescription": "BiblioFuse 웹 도구로 CBZ 파일에서 이미지를 무료로 온라인 추출하세요. 소프트웨어 설치 없음, 업로드 없음——모든 것이 브라우저의 WebAssembly로 처리됩니다."
+          "title": "CBZ 파일에서 이미지를 온라인으로 추출하는 방법 (무료, 소프트웨어 불필요)",
+          "excerpt": "BiblioFuse Web을 사용하면 브라우저에서 직접 CBZ 파일의 개별 이미지를 추출할 수 있습니다 — 업로드 없음, 소프트웨어 없음, 계정 없음. WebAssembly로 처리되어 만화는 비공개로 유지됩니다.",
+          "seoDescription": "BiblioFuse Web으로 CBZ 파일에서 이미지를 온라인으로 무료 추출하세요. WebAssembly로 100% 브라우저 내 처리 — 파일 업로드 없음, 서버 없음, 계정 불필요."
         },
         "comic-bookmarks-iphone": {
-          "title": "BiblioFuse 북마크 활용하기: 만화에서 읽던 위치를 잃지 않는 방법",
-          "excerpt": "BiblioFuse의 북마크 기능을 사용하면 만화, 망가, EPUB의 어떤 페이지에든 사용자 이름을 붙여 저장하고 즉시 되돌아갈 수 있습니다. 이 기능은 iOS 17 이상의 iPhone과 iPad에서 작동하며, 모든 북마크는 iCloud를 통해 기기 전체에 자동으로 동기화됩니다.",
-          "seoDescription": "iPhone과 iPad에서 BiblioFuse 북마크 사용법을 알아보세요. 이름 붙인 북마크 저장, 페이지 이동, iCloud를 통한 기기 간 동기화를 지원합니다."
+          "title": "BiblioFuse 북마크 사용하기: 만화에서 읽던 페이지를 잃지 마세요",
+          "excerpt": "BiblioFuse는 iPhone의 만화나 전자책에서 원하는 어떤 페이지에도 북마크를 추가할 수 있습니다. 북마크는 iCloud를 통해 iPhone, iPad, Mac 간에 동기화되어 모든 기기에서 저장된 위치에 접근할 수 있습니다.",
+          "seoDescription": "iPhone의 BiblioFuse에서 북마크를 사용하여 만화나 전자책의 읽기 위치를 저장하는 방법을 알아보세요. iCloud를 통해 모든 Apple 기기에서 동기화됩니다."
         },
         "night-reading-comics-iphone": {
           "title": "iPhone에서 밤에 만화 읽기: 다크 모드와 눈 편안함 팁",
@@ -867,16 +877,6 @@
           "title": "iPhone에서 BiblioFuse로 만화를 시리즈별로 정리하는 방법",
           "excerpt": "BiblioFuse의 내장 태그 시스템을 사용하여 iPhone에서 만화를 시리즈별로 정리할 수 있습니다 — 각 권에 시리즈 이름으로 태그를 지정하고 라이브러리를 필터링하여 읽기 순서로 모든 권을 확인하세요. 태그와 평점은 iCloud를 통해 iPhone, iPad, Mac 간에 동기화됩니다.",
           "seoDescription": "iPhone의 BiblioFuse에서 태그, 평점, 일관된 파일 이름을 사용하여 만화를 시리즈별로 정리하세요. iCloud를 통해 iPhone, iPad, Mac 간에 읽기 순서를 동기화."
-        },
-        "comic-bookmarks-iphone": {
-          "title": "BiblioFuse 북마크 사용하기: 만화에서 읽던 페이지를 잃지 마세요",
-          "excerpt": "BiblioFuse는 iPhone의 만화나 전자책에서 원하는 어떤 페이지에도 북마크를 추가할 수 있습니다. 북마크는 iCloud를 통해 iPhone, iPad, Mac 간에 동기화되어 모든 기기에서 저장된 위치에 접근할 수 있습니다.",
-          "seoDescription": "iPhone의 BiblioFuse에서 북마크를 사용하여 만화나 전자책의 읽기 위치를 저장하는 방법을 알아보세요. iCloud를 통해 모든 Apple 기기에서 동기화됩니다."
-        },
-        "extract-images-from-cbz": {
-          "title": "CBZ 파일에서 이미지를 온라인으로 추출하는 방법 (무료, 소프트웨어 불필요)",
-          "excerpt": "BiblioFuse Web을 사용하면 브라우저에서 직접 CBZ 파일의 개별 이미지를 추출할 수 있습니다 — 업로드 없음, 소프트웨어 없음, 계정 없음. WebAssembly로 처리되어 만화는 비공개로 유지됩니다.",
-          "seoDescription": "BiblioFuse Web으로 CBZ 파일에서 이미지를 온라인으로 무료 추출하세요. WebAssembly로 100% 브라우저 내 처리 — 파일 업로드 없음, 서버 없음, 계정 불필요."
         }
       }
     }

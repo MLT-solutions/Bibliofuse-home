@@ -658,15 +658,25 @@
     },
     "blog": {
       "posts": {
+        "double-page-spreads-comics": {
+          "title": "Lire les Planches Double Page dans les Comics : Comment BiblioFuse Gère les Images Larges",
+          "excerpt": "BiblioFuse lit les fichiers CBZ, CBR, EPUB, PDF, ZIP, RAR et TXT sur iPhone et iPad sous iOS 17 ou ultérieur. Lorsque vous atteignez une planche double page, BiblioFuse détecte automatiquement les pages appariées et peut les afficher côte à côte, préservant l'œuvre telle qu'elle a été conçue. Vous pouvez basculer entre le mode page unique, côte à côte et zoom complet à tout moment.",
+          "seoDescription": "Découvrez comment BiblioFuse gère les planches double page dans les comics sur iPhone et iPad. Détection automatique, mode paysage et zoom pour la meilleure expérience de lecture."
+        },
+        "backup-comic-library-mac": {
+          "title": "Comment sauvegarder votre bibliothèque de comics sur Mac : disque externe, NAS et options cloud",
+          "excerpt": "BiblioFuse stocke vos comics et ebooks — EPUB, CBZ, CBR, PDF, ZIP, RAR et TXT — sur iPhone, iPad et Mac, et diffuse votre bibliothèque Mac directement sur iPhone via Wi-Fi sans copier de fichiers. Pour sauvegarder votre bibliothèque de comics sur Mac, vous pouvez utiliser Time Machine avec un disque externe ou un NAS, copier des fichiers dans un stockage cloud comme iCloud Drive ou Dropbox, ou utiliser tout outil de sauvegarde qui reflète un dossier standard. La progression de lecture de BiblioFuse se synchronise automatiquement via iCloud.",
+          "seoDescription": "Apprenez à sauvegarder votre bibliothèque de comics sur Mac avec Time Machine, disques externes, NAS et stockage cloud. Protégez votre collection EPUB, CBZ et PDF."
+        },
         "extract-images-from-cbz": {
-          "title": "Comment Extraire les Images d'un Fichier CBZ en Ligne (Gratuit, Sans Logiciel)",
-          "excerpt": "Un fichier CBZ est une archive ZIP contenant des images individuelles — généralement JPEG, PNG ou WebP — une par page de bande dessinée. Vous pouvez extraire ces images directement dans votre navigateur grâce à l'Outil Web BiblioFuse, sans rien installer et sans envoyer le moindre fichier. Tout s'exécute côté client via WebAssembly.",
-          "seoDescription": "Extrayez les images d'un fichier CBZ en ligne gratuitement avec l'Outil Web BiblioFuse. Aucune installation, aucun envoi de fichier — tout fonctionne dans votre navigateur."
+          "title": "Comment extraire des images de fichiers CBZ en ligne (gratuit, sans logiciel)",
+          "excerpt": "BiblioFuse Web vous permet d'extraire des images individuelles de fichiers CBZ directement dans votre navigateur — sans envoi de fichiers, sans logiciel, sans compte. Le traitement utilise WebAssembly pour garantir la confidentialité de vos comics.",
+          "seoDescription": "Extrayez des images de fichiers CBZ en ligne gratuitement avec BiblioFuse Web. 100% dans le navigateur avec WebAssembly — sans envoi de fichiers, sans serveur, sans compte."
         },
         "comic-bookmarks-iphone": {
-          "title": "Utiliser les signets dans BiblioFuse : ne perdez plus jamais votre place dans un comic",
-          "excerpt": "Les signets de BiblioFuse vous permettent d'enregistrer n'importe quelle page d'un comic, d'un manga ou d'un EPUB avec un nom personnalisé pour y revenir instantanément. Cette fonction est disponible sur iPhone et iPad sous iOS 17 ou version ultérieure, et chaque signet se synchronise via iCloud sur tous vos appareils.",
-          "seoDescription": "Apprenez à utiliser les signets de BiblioFuse sur iPhone et iPad. Sauvegardez des signets nommés, accédez à n'importe quelle page et synchronisez entre appareils via iCloud."
+          "title": "Utiliser les signets dans BiblioFuse : ne perdez plus votre place dans un comics",
+          "excerpt": "BiblioFuse vous permet de placer des signets sur n'importe quelle page dans un comics ou ebook sur iPhone. Les signets se synchronisent entre iPhone, iPad et Mac via iCloud — vos positions sauvegardées vous suivent partout.",
+          "seoDescription": "Apprenez à utiliser les signets dans BiblioFuse sur iPhone pour sauvegarder votre position dans n'importe quel comics ou ebook. Synchronisation via iCloud sur tous vos appareils Apple."
         },
         "night-reading-comics-iphone": {
           "title": "Lire des BD la Nuit sur iPhone : Mode Sombre et Conseils de Confort Visuel",
@@ -867,16 +877,6 @@
           "title": "Comment Organiser les Mangas par Série dans BiblioFuse sur iPhone",
           "excerpt": "BiblioFuse vous permet d'organiser les mangas par série sur iPhone grâce à son système d'étiquettes intégré — étiquetez chaque tome avec le nom de la série, puis filtrez votre bibliothèque pour voir tous les volumes dans l'ordre de lecture. Les étiquettes et les notes se synchronisent entre iPhone, iPad et Mac via iCloud.",
           "seoDescription": "Organisez les mangas par série dans BiblioFuse sur iPhone avec des étiquettes, des notes et des noms de fichiers cohérents. Synchronisez votre ordre de lecture sur iPhone, iPad et Mac via iCloud."
-        },
-        "comic-bookmarks-iphone": {
-          "title": "Utiliser les signets dans BiblioFuse : ne perdez plus votre place dans un comics",
-          "excerpt": "BiblioFuse vous permet de placer des signets sur n'importe quelle page dans un comics ou ebook sur iPhone. Les signets se synchronisent entre iPhone, iPad et Mac via iCloud — vos positions sauvegardées vous suivent partout.",
-          "seoDescription": "Apprenez à utiliser les signets dans BiblioFuse sur iPhone pour sauvegarder votre position dans n'importe quel comics ou ebook. Synchronisation via iCloud sur tous vos appareils Apple."
-        },
-        "extract-images-from-cbz": {
-          "title": "Comment extraire des images de fichiers CBZ en ligne (gratuit, sans logiciel)",
-          "excerpt": "BiblioFuse Web vous permet d'extraire des images individuelles de fichiers CBZ directement dans votre navigateur — sans envoi de fichiers, sans logiciel, sans compte. Le traitement utilise WebAssembly pour garantir la confidentialité de vos comics.",
-          "seoDescription": "Extrayez des images de fichiers CBZ en ligne gratuitement avec BiblioFuse Web. 100% dans le navigateur avec WebAssembly — sans envoi de fichiers, sans serveur, sans compte."
         }
       }
     }

@@ -658,15 +658,25 @@
     },
     "blog": {
       "posts": {
+        "double-page-spreads-comics": {
+          "title": "コミックの見開きページを読む：BiblioFuse が横長画像を処理する方法",
+          "excerpt": "BiblioFuse は、iOS 17 以降を搭載した iPhone および iPad で CBZ、CBR、EPUB、PDF、ZIP、RAR、TXT ファイルを読み取ります。見開きページに到達すると、BiblioFuse は自動的にペアとなるページを検出し、並べて表示することができます。これにより、アーティストが意図した通りのアートワークが再現されます。単ページ、並べて表示、フルズームモードにいつでも切り替えられます。",
+          "seoDescription": "BiblioFuse が iPhone と iPad でコミックの見開きページをどのように処理するかを学びましょう。自動検出、横向きモード、ピンチズームで最高の読書体験を。"
+        },
+        "backup-comic-library-mac": {
+          "title": "Mac でコミックライブラリをバックアップする方法：外付けドライブ、NAS、クラウドオプション",
+          "excerpt": "BiblioFuse は iPhone、iPad、Mac に EPUB、CBZ、CBR、PDF、ZIP、RAR、TXT などのコミックや電子書籍を保存し、Mac ライブラリを Wi-Fi 経由でファイルをコピーせずに直接 iPhone にストリーミングします。Mac でコミックライブラリをバックアップするには、外付けドライブや NAS を使用した Time Machine、iCloud Drive や Dropbox などのクラウドストレージへのファイルコピー、または標準フォルダをミラーリングする任意のバックアップツールを使用できます。BiblioFuse の読書進捗は iCloud を通じて自動的に同期されます。",
+          "seoDescription": "Time Machine、外付けドライブ、NAS、クラウドストレージを使って Mac でコミックライブラリをバックアップする方法を学びましょう。EPUB、CBZ、PDF コレクションをデータ損失から守りましょう。"
+        },
         "extract-images-from-cbz": {
           "title": "CBZファイルから画像をオンラインで抽出する方法（無料・ソフト不要）",
-          "excerpt": "CBZファイルとは、コミックの各ページに対応する個別の画像ファイル（通常はJPEG、PNG、またはWebP）が格納されたZIPアーカイブです。BiblioFuse ウェブツールを使えば、ソフトのインストールもファイルのアップロードも不要で、ブラウザ上で直接画像を抽出できます。すべてWebAssemblyによってクライアント側で処理されます。",
-          "seoDescription": "BiblioFuse ウェブツールで CBZ ファイルから画像を無料でオンライン抽出。インストール不要・アップロード不要——すべてブラウザ上の WebAssembly で完結。"
+          "excerpt": "BiblioFuse WebはCBZファイルから画像をブラウザで直接抽出できます——アップロード不要、ソフト不要、アカウント不要。WebAssemblyで処理するのでコミックはプライベートに保たれます。",
+          "seoDescription": "BiblioFuse WebでCBZファイルから画像をオンラインで無料抽出。WebAssemblyで100%ブラウザ内処理——ファイルアップロードなし、サーバーなし、アカウント不要。"
         },
         "comic-bookmarks-iphone": {
-          "title": "BiblioFuseのブックマーク活用法：漫画でページを見失わない方法",
-          "excerpt": "BiblioFuseのブックマーク機能を使えば、漫画・コミック・EPUBのどのページにもカスタム名をつけて保存し、瞬時に戻ることができます。この機能はiOS 17以降のiPhoneおよびiPadで動作し、すべてのブックマークはiCloud経由で自動的に全デバイスに同期されます。",
-          "seoDescription": "iPhoneとiPadでBiblioFuseのブックマークを使う方法を解説。名前付きブックマークの保存、任意のページへのジャンプ、iCloudでの同期が可能です。"
+          "title": "BiblioFuseのブックマーク機能：コミックでページを見失わない",
+          "excerpt": "BiblioFuseではiPhoneのコミックや電子書籍の任意のページにブックマークを追加できます。ブックマークはiCloud経由でiPhone、iPad、Mac間で同期され、保存した位置にどのデバイスからでもアクセスできます。",
+          "seoDescription": "iPhoneのBiblioFuseでブックマークを使って、コミックや電子書籍の読書位置を保存する方法を学ぼう。iCloudですべてのAppleデバイスで同期。"
         },
         "night-reading-comics-iphone": {
           "title": "iPhoneで夜に漫画を読む：ダークモードと目の疲れを減らすコツ",
@@ -867,16 +877,6 @@
           "title": "iPhoneのBiblioFuseでマンガをシリーズ別に整理する方法",
           "excerpt": "BiblioFuseの内蔵タグシステムを使って、iPhoneでマンガをシリーズ別に整理できます——各巻にシリーズ名のタグを付け、ライブラリをフィルタリングして読む順番で全巻を確認できます。タグと評価はiCloudを通じてiPhone、iPad、Mac間で同期されます。",
           "seoDescription": "iPhoneのBiblioFuseでタグ、評価、一貫したファイル名を使ってマンガをシリーズ別に整理。iCloudを通じてiPhone、iPad、Mac間で読む順番を同期。"
-        },
-        "comic-bookmarks-iphone": {
-          "title": "BiblioFuseのブックマーク機能：コミックでページを見失わない",
-          "excerpt": "BiblioFuseではiPhoneのコミックや電子書籍の任意のページにブックマークを追加できます。ブックマークはiCloud経由でiPhone、iPad、Mac間で同期され、保存した位置にどのデバイスからでもアクセスできます。",
-          "seoDescription": "iPhoneのBiblioFuseでブックマークを使って、コミックや電子書籍の読書位置を保存する方法を学ぼう。iCloudですべてのAppleデバイスで同期。"
-        },
-        "extract-images-from-cbz": {
-          "title": "CBZファイルから画像をオンラインで抽出する方法（無料・ソフト不要）",
-          "excerpt": "BiblioFuse WebはCBZファイルから画像をブラウザで直接抽出できます——アップロード不要、ソフト不要、アカウント不要。WebAssemblyで処理するのでコミックはプライベートに保たれます。",
-          "seoDescription": "BiblioFuse WebでCBZファイルから画像をオンラインで無料抽出。WebAssemblyで100%ブラウザ内処理——ファイルアップロードなし、サーバーなし、アカウント不要。"
         }
       }
     }
