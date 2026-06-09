@@ -40,7 +40,22 @@ The App requires the following permissions to function:
 * **Storage Access:** Required to open, read, and manage your book files locally.  
 * **Network Access:** Required to sync your files with your chosen cloud provider (iCloud or Google Drive) and to validate premium licenses.
 
-## **6\. Contact Us**
+## **6\. Windows PC App (BiblioFuse for Windows)**
+
+**Microsoft Store Payments:**
+
+The Windows app offers a one-time in-app purchase ("BiblioFuse Pro — Lifetime Unlock") processed exclusively by the **Microsoft Store**. We do not collect, store, or have access to your payment details. Purchase validation is performed via the Microsoft Store API (`Windows.Services.Store`), which communicates directly between your device and Microsoft. We receive no personal identity or billing information.
+
+**Permissions:**
+
+* **Local file access:** Required to open, read, and display e-book files stored on your device.
+* **Local network access:** Required to stream your library to iOS devices on the same Wi-Fi network. Streaming is entirely optional and user-initiated. No data is transmitted to our servers — all streaming is peer-to-peer on your local network.
+
+**Telemetry & Analytics:**
+
+The Windows app collects no telemetry, crash reports, or usage analytics. No data about your usage is sent to us or any third party.
+
+## **7\. Contact Us**
 
 If you have any questions about this Privacy Policy, please contact us at:
 

@@ -40,7 +40,22 @@ L'Application nécessite les autorisations suivantes pour fonctionner:
 * **Accès au Stockage:** Requis pour ouvrir, lire et gérer vos fichiers de livres localement.
 * **Accès au Réseau:** Requis pour synchroniser vos fichiers avec votre fournisseur cloud choisi (iCloud ou Google Drive) et pour valider les licences premium.
 
-## **6. Nous Contacter**
+## **6\. Application Windows (BiblioFuse pour Windows)**
+
+**Paiements via Microsoft Store:**
+
+L'application Windows propose un achat unique intégré ("BiblioFuse Pro — Déverrouillage À Vie") traité exclusivement par le **Microsoft Store**. Nous ne collectons pas, ne stockons pas et n'avons pas accès à vos données de paiement. La validation des achats est effectuée via l'API Microsoft Store (`Windows.Services.Store`), qui communique directement entre votre appareil et Microsoft. Nous ne recevons aucune information personnelle ni détail de facturation.
+
+**Autorisations:**
+
+* **Accès aux fichiers locaux:** Requis pour ouvrir, lire et afficher les fichiers de livres électroniques stockés sur votre appareil.
+* **Accès au réseau local:** Requis pour diffuser votre bibliothèque vers les appareils iOS sur le même réseau Wi-Fi. La diffusion est entièrement facultative et lancée par l'utilisateur. Aucune donnée n'est transmise à nos serveurs — toute la diffusion se fait de pair à pair sur votre réseau local.
+
+**Télémétrie et Analyse:**
+
+L'application Windows ne collecte aucune télémétrie, rapport de plantage ou analyse d'utilisation. Aucune donnée sur votre utilisation n'est envoyée à nous ou à des tiers.
+
+## **7\. Nous Contacter**
 
 Si vous avez des questions concernant cette Politique de Confidentialité, veuillez nous contacter à:
 

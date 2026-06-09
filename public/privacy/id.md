@@ -40,7 +40,22 @@ Aplikasi memerlukan izin berikut untuk berfungsi:
 * **Akses Penyimpanan:** Diperlukan untuk membuka, membaca, dan mengelola file buku Anda secara lokal.
 * **Akses Jaringan:** Diperlukan untuk mensinkronkan file Anda dengan penyedia cloud pilihan Anda (iCloud atau Google Drive) dan untuk memvalidasi lisensi premium.
 
-## **6. Hubungi Kami**
+## **6\. Aplikasi Windows (BiblioFuse untuk Windows)**
+
+**Pembayaran Microsoft Store:**
+
+Aplikasi Windows menawarkan pembelian satu kali dalam aplikasi ("BiblioFuse Pro — Buka Kunci Seumur Hidup") yang diproses secara eksklusif oleh **Microsoft Store**. Kami tidak mengumpulkan, menyimpan, atau memiliki akses ke detail pembayaran Anda. Validasi pembelian dilakukan melalui API Microsoft Store (`Windows.Services.Store`), yang berkomunikasi langsung antara perangkat Anda dan Microsoft. Kami tidak menerima identitas pribadi atau informasi penagihan.
+
+**Izin:**
+
+* **Akses file lokal:** Diperlukan untuk membuka, membaca, dan menampilkan file e-book yang tersimpan di perangkat Anda.
+* **Akses jaringan lokal:** Diperlukan untuk melakukan streaming perpustakaan Anda ke perangkat iOS di jaringan Wi-Fi yang sama. Streaming sepenuhnya opsional dan dimulai oleh pengguna. Tidak ada data yang dikirim ke server kami — semua streaming adalah peer-to-peer di jaringan lokal Anda.
+
+**Telemetri dan Analitik:**
+
+Aplikasi Windows tidak mengumpulkan telemetri, laporan kerusakan, atau analitik penggunaan. Tidak ada data tentang penggunaan Anda yang dikirim kepada kami atau pihak ketiga.
+
+## **7\. Hubungi Kami**
 
 Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, silakan hubungi kami di:
 

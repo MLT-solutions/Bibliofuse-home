@@ -40,7 +40,22 @@ Aplikasi memerlukan kebenaran berikut untuk berfungsi:
 * **Akses Storan:** Diperlukan untuk membuka, membaca, dan mengurus fail buku anda secara tempatan.
 * **Akses Rangkaian:** Diperlukan untuk menyegerak fail anda dengan pembekal awan pilihan anda (iCloud atau Google Drive) dan untuk mengesahkan lesen premium.
 
-## **6. Hubungi Kami**
+## **6\. Aplikasi Windows (BiblioFuse untuk Windows)**
+
+**Pembayaran Microsoft Store:**
+
+Aplikasi Windows menawarkan pembelian satu kali dalam aplikasi ("BiblioFuse Pro — Buka Kunci Seumur Hidup") yang diproses secara eksklusif oleh **Microsoft Store**. Kami tidak mengumpul, menyimpan, atau mempunyai akses kepada butiran pembayaran anda. Pengesahan pembelian dilakukan melalui API Microsoft Store (`Windows.Services.Store`), yang berkomunikasi terus antara peranti anda dan Microsoft. Kami tidak menerima maklumat identiti peribadi atau butiran pengebilan.
+
+**Kebenaran:**
+
+* **Akses fail tempatan:** Diperlukan untuk membuka, membaca, dan memaparkan fail e-buku yang disimpan di peranti anda.
+* **Akses rangkaian tempatan:** Diperlukan untuk mengalirkan perpustakaan anda ke peranti iOS pada rangkaian Wi-Fi yang sama. Penstriman sepenuhnya pilihan dan dimulakankan oleh pengguna. Tiada data yang dihantar ke pelayan kami — semua penstriman adalah peer-to-peer pada rangkaian tempatan anda.
+
+**Telemetri dan Analitik:**
+
+Aplikasi Windows tidak mengumpul telemetri, laporan ranap, atau analitik penggunaan. Tiada data tentang penggunaan anda yang dihantar kepada kami atau pihak ketiga.
+
+## **7\. Hubungi Kami**
 
 Jika anda mempunyai sebarang pertanyaan tentang Dasar Privasi ini, sila hubungi kami di:
 
