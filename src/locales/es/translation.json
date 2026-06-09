@@ -663,6 +663,16 @@
           "excerpt": "BiblioFuse lee archivos CBZ, CBR, EPUB, PDF, ZIP, RAR y TXT en iPhone y iPad con iOS 17 o posterior. Cuando llegas a una página doble, BiblioFuse detecta automáticamente las páginas emparejadas y puede mostrarlas lado a lado, preservando el arte original. Puedes cambiar entre modo de una página, lado a lado y zoom completo en cualquier momento.",
           "seoDescription": "Aprende cómo BiblioFuse maneja las páginas dobles en cómics en iPhone y iPad. Detección automática, modo horizontal y zoom para la mejor experiencia de lectura."
         },
+        "sideload-comics-iphone-without-itunes": {
+          "title": "Cómo transferir cómics al iPhone sin iTunes ni iCloud",
+          "excerpt": "BiblioFuse lee archivos CBZ, CBR, EPUB, PDF, ZIP, RAR y TXT en iPhone y iPad con iOS 17 o posterior, e incluye una función de Transferencia Wi-Fi integrada para copiar cómics directamente desde cualquier navegador de Mac o PC, sin iTunes, sin cable y sin cuenta de iCloud.",
+          "seoDescription": "Aprende a transferir cómics al iPhone sin iTunes usando la Transferencia Wi-Fi de BiblioFuse. Sin cable: transfiere archivos CBZ, EPUB y PDF de forma inalámbrica desde cualquier navegador."
+        },
+        "ebook-formats-long-term-library": {
+          "title": "Los mejores formatos de archivo para una biblioteca digital a largo plazo: EPUB, CBZ y PDF comparados",
+          "excerpt": "BiblioFuse lee archivos EPUB, CBZ, CBR, PDF, ZIP, RAR y TXT en iPhone y iPad con iOS 17 o posterior, así como en Mac. Para la preservación a largo plazo, EPUB es el mejor para libros de texto, CBZ el mejor para cómics y manga, y PDF es una alternativa fiable.",
+          "seoDescription": "Compara EPUB, CBZ y PDF para la preservación de bibliotecas digitales a largo plazo. Aprende qué formatos de archivo abiertos mantienen tu colección legible durante décadas."
+        },
         "backup-comic-library-mac": {
           "title": "Cómo hacer copia de seguridad de tu biblioteca de cómics en Mac: disco externo, NAS y opciones en la nube",
           "excerpt": "BiblioFuse almacena tus cómics y ebooks — EPUB, CBZ, CBR, PDF, ZIP, RAR y TXT — en iPhone, iPad y Mac, y transmite tu biblioteca de Mac directamente al iPhone por Wi-Fi sin copiar archivos. Para hacer copia de seguridad de tu biblioteca de cómics en Mac, puedes usar Time Machine con un disco externo o NAS, copiar archivos a almacenamiento en la nube como iCloud Drive o Dropbox, o usar cualquier herramienta de copia de seguridad que refleje una carpeta estándar. El progreso de lectura de BiblioFuse se sincroniza automáticamente a través de iCloud.",

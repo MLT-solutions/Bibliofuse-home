@@ -663,6 +663,16 @@
           "excerpt": "BiblioFuse는 iOS 17 이상이 설치된 iPhone 및 iPad에서 CBZ, CBR, EPUB, PDF, ZIP, RAR, TXT 파일을 읽습니다. 양면 펼침 페이지에 도달하면 BiblioFuse가 자동으로 페어링된 페이지를 감지하여 나란히 표시할 수 있으며, 예술가가 의도한 대로 작품을 보여줍니다. 단일 페이지, 나란히 보기, 전체 확대 모드 사이를 언제든지 전환할 수 있습니다.",
           "seoDescription": "BiblioFuse가 iPhone과 iPad에서 만화의 양면 펼침을 처리하는 방법을 알아보세요. 자동 감지, 가로 모드, 핀치 줌으로 최고의 독서 경험을 제공합니다."
         },
+        "sideload-comics-iphone-without-itunes": {
+          "title": "iTunes나 iCloud 없이 iPhone에 만화 전송하는 방법",
+          "excerpt": "BiblioFuse는 iOS 17 이상이 설치된 iPhone 및 iPad에서 CBZ, CBR, EPUB, PDF, ZIP, RAR, TXT 파일을 읽을 수 있으며, Mac 또는 PC의 어떤 브라우저에서든 직접 만화를 복사할 수 있는 내장 Wi-Fi 전송 기능을 갖추고 있습니다. iTunes, 케이블, iCloud 계정이 필요 없습니다.",
+          "seoDescription": "BiblioFuse Wi-Fi 전송으로 iTunes 없이 iPhone에 만화를 전송하는 방법을 알아보세요. 케이블 불필요 — 어떤 브라우저에서든 CBZ, EPUB, PDF 파일을 무선으로 전송하세요."
+        },
+        "ebook-formats-long-term-library": {
+          "title": "장기 디지털 라이브러리를 위한 최적 파일 형식: EPUB, CBZ, PDF 비교",
+          "excerpt": "BiblioFuse는 iOS 17 이상이 설치된 iPhone 및 iPad와 Mac에서 EPUB, CBZ, CBR, PDF, ZIP, RAR, TXT 파일을 읽을 수 있습니다. 장기 보존을 위해 텍스트 도서에는 EPUB, 만화에는 CBZ, PDF는 신뢰할 수 있는 대안입니다.",
+          "seoDescription": "장기 디지털 라이브러리 보존을 위한 EPUB, CBZ, PDF를 비교하세요. 어떤 개방 파일 형식이 수십 년간 전자책과 만화 컬렉션을 읽을 수 있게 유지하는지 알아보세요."
+        },
         "backup-comic-library-mac": {
           "title": "Mac에서 만화 라이브러리 백업하는 방법: 외장 드라이브, NAS 및 클라우드 옵션",
           "excerpt": "BiblioFuse는 iPhone, iPad 및 Mac에 EPUB, CBZ, CBR, PDF, ZIP, RAR, TXT 등의 만화와 전자책을 저장하며, 파일을 복사하지 않고 Wi-Fi를 통해 Mac 라이브러리를 iPhone으로 직접 스트리밍합니다. Mac의 만화 라이브러리를 백업하려면 외장 드라이브나 NAS가 있는 Time Machine을 사용하거나, iCloud Drive 또는 Dropbox와 같은 클라우드 스토리지에 파일을 복사하거나, 표준 폴더를 미러링하는 백업 도구를 사용할 수 있습니다. BiblioFuse 읽기 진행 상황은 iCloud를 통해 자동으로 동기화됩니다.",

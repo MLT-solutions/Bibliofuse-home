@@ -663,6 +663,16 @@
           "excerpt": "BiblioFuse membaca file CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT di iPhone dan iPad yang menjalankan iOS 17 atau lebih baru. Saat Anda mencapai halaman ganda, BiblioFuse secara otomatis mendeteksi halaman yang berpasangan dan dapat menampilkannya berdampingan, menjaga karya seni sesuai yang dimaksudkan. Anda dapat beralih antara mode halaman tunggal, berdampingan, dan zoom penuh kapan saja.",
           "seoDescription": "Pelajari cara BiblioFuse menangani halaman ganda dalam komik di iPhone dan iPad. Deteksi otomatis, mode lanskap, dan zoom untuk pengalaman membaca terbaik."
         },
+        "sideload-comics-iphone-without-itunes": {
+          "title": "Cara memindahkan komik ke iPhone tanpa iTunes atau iCloud",
+          "excerpt": "BiblioFuse membaca file CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT di iPhone dan iPad dengan iOS 17 atau lebih baru, dan menyertakan fitur Transfer Wi-Fi bawaan untuk menyalin komik langsung dari browser Mac atau PC mana pun — tanpa iTunes, tanpa kabel, dan tanpa akun iCloud.",
+          "seoDescription": "Pelajari cara memindahkan komik ke iPhone tanpa iTunes menggunakan Transfer Wi-Fi BiblioFuse. Tanpa kabel — transfer file CBZ, EPUB, dan PDF secara nirkabel dari browser mana pun."
+        },
+        "ebook-formats-long-term-library": {
+          "title": "Format file terbaik untuk perpustakaan digital jangka panjang: perbandingan EPUB, CBZ, dan PDF",
+          "excerpt": "BiblioFuse membaca file EPUB, CBZ, CBR, PDF, ZIP, RAR, dan TXT di iPhone dan iPad dengan iOS 17 atau lebih baru, serta di Mac. Untuk penyimpanan jangka panjang, EPUB terbaik untuk buku teks, CBZ terbaik untuk komik dan manga, dan PDF adalah alternatif yang andal.",
+          "seoDescription": "Bandingkan EPUB, CBZ, dan PDF untuk pelestarian perpustakaan digital jangka panjang. Pelajari format file terbuka mana yang membuat koleksi ebook dan komik Anda tetap dapat dibaca selama beberapa dekade."
+        },
         "backup-comic-library-mac": {
           "title": "Cara Membuat Cadangan Perpustakaan Komik di Mac: Drive Eksternal, NAS, dan Opsi Cloud",
           "excerpt": "BiblioFuse menyimpan komik dan ebook Anda — EPUB, CBZ, CBR, PDF, ZIP, RAR, dan TXT — di iPhone, iPad, dan Mac, serta mengalirkan perpustakaan Mac Anda langsung ke iPhone melalui Wi-Fi tanpa menyalin file. Untuk mencadangkan perpustakaan komik di Mac, Anda dapat menggunakan Time Machine dengan drive eksternal atau NAS, menyalin file ke penyimpanan cloud seperti iCloud Drive atau Dropbox, atau menggunakan alat cadangan apa pun yang mencerminkan folder standar. Kemajuan membaca BiblioFuse disinkronkan secara otomatis melalui iCloud.",

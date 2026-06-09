@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'sideload-comics-iphone-without-itunes',
+    date: '2026-06-09',
+    tags: ['ios', 'guide', 'tips'],
+    coverImage: '/image/blog/Sideload Comics iPhone.jpg',
+  },
+  {
+    slug: 'ebook-formats-long-term-library',
+    date: '2026-06-09',
+    tags: ['guide', 'formats', 'cross-product'],
+    coverImage: '/image/blog/Ebook Formats Long-Term.jpg',
+  },
+  {
     slug: 'backup-comic-library-mac',
     date: '2026-06-08',
     tags: ['ios', 'mac', 'guide'],

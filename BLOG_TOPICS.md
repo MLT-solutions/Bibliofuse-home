@@ -101,5 +101,5 @@ This file is the source of truth for the daily article agent.
 | 36 | ✅ | `extract-images-from-cbz` | How to Extract Images from CBZ Files Online (Free, No Software) | BiblioFuse Web |
 | 37 | ✅ | `double-page-spreads-comics` | Reading Double-Page Spreads in Comics: How BiblioFuse Handles Wide Images | BiblioFuse iOS |
 | 38 | ✅ | `backup-comic-library-mac` | How to Back Up Your Comic Library on Mac: External Drive, NAS, and Cloud Options | All apps |
-| 39 | ⬜ | `ebook-formats-long-term-library` | Best File Formats for a Long-Term Digital Library (EPUB, CBZ, PDF Compared) | Cross-product |
-| 40 | ⬜ | `sideload-comics-iphone-without-itunes` | How to Sideload Comics to iPhone Without iTunes or iCloud | BiblioFuse iOS |
+| 39 | ✅ | `ebook-formats-long-term-library` | Best File Formats for a Long-Term Digital Library (EPUB, CBZ, PDF Compared) | Cross-product |
+| 40 | ✅ | `sideload-comics-iphone-without-itunes` | How to Sideload Comics to iPhone Without iTunes or iCloud | BiblioFuse iOS |

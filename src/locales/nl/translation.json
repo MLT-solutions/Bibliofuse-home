@@ -663,6 +663,16 @@
           "excerpt": "BiblioFuse leest CBZ-, CBR-, EPUB-, PDF-, ZIP-, RAR- en TXT-bestanden op iPhone en iPad met iOS 17 of later. Wanneer je een dubbele pagina bereikt, detecteert BiblioFuse automatisch de gekoppelde pagina's en kan ze naast elkaar weergeven, zodat het kunstwerk er uitziet zoals bedoeld. Je kunt op elk moment schakelen tussen enkelvoudige pagina, naast elkaar en volledig zoom.",
           "seoDescription": "Leer hoe BiblioFuse dubbele pagina's in comics beheert op iPhone en iPad. Automatische detectie, liggende modus en zoom voor de beste leeservaring."
         },
+        "sideload-comics-iphone-without-itunes": {
+          "title": "Strips overzetten naar iPhone zonder iTunes of iCloud",
+          "excerpt": "BiblioFuse leest CBZ-, CBR-, EPUB-, PDF-, ZIP-, RAR- en TXT-bestanden op iPhone en iPad met iOS 17 of hoger, en bevat een ingebouwde Wi-Fi-overdracht zodat je strips direct kunt kopiëren vanuit elke Mac- of pc-browser — geen iTunes, geen kabel en geen iCloud-account nodig.",
+          "seoDescription": "Leer hoe je strips naar iPhone overzet zonder iTunes met BiblioFuse Wi-Fi-overdracht. Geen kabel nodig — zet CBZ-, EPUB- en PDF-bestanden draadloos over vanuit elke browser."
+        },
+        "ebook-formats-long-term-library": {
+          "title": "Beste bestandsformaten voor een digitale bibliotheek op de lange termijn: EPUB, CBZ en PDF vergeleken",
+          "excerpt": "BiblioFuse leest EPUB-, CBZ-, CBR-, PDF-, ZIP-, RAR- en TXT-bestanden op iPhone en iPad met iOS 17 of hoger, en op Mac. Voor langdurige bewaring is EPUB het beste voor tekstboeken, CBZ het beste voor strips en manga, en PDF een betrouwbare terugvaloptie.",
+          "seoDescription": "Vergelijk EPUB, CBZ en PDF voor het langdurig bewaren van digitale bibliotheken. Ontdek welke open bestandsformaten je e-book- en comicverzameling tientallen jaren leesbaar houden."
+        },
         "backup-comic-library-mac": {
           "title": "Hoe maak je een back-up van je comicbibliotheek op Mac: externe schijf, NAS en cloudopties",
           "excerpt": "BiblioFuse slaat je comics en ebooks op — EPUB, CBZ, CBR, PDF, ZIP, RAR en TXT — op iPhone, iPad en Mac, en streamt je Mac-bibliotheek direct naar iPhone via Wi-Fi zonder bestanden te kopiëren. Voor een back-up van je comicbibliotheek op Mac kun je Time Machine gebruiken met een externe schijf of NAS, bestanden kopiëren naar cloudopslag zoals iCloud Drive of Dropbox, of een back-uptool gebruiken die een standaardmap spiegelt. De leesvoortgang van BiblioFuse synchroniseert automatisch via iCloud.",
