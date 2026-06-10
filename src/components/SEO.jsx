@@ -21,7 +21,7 @@ const ORGANIZATION = {
     "sameAs": [
         "https://apps.apple.com/app/bibliofuse-reader-compress/id6758330093",
         "https://play.google.com/store/apps/details?id=com.modernlogic.bibliofuse",
-        "https://www.microsoft.com/store/apps/9P39PKBP4CNC"
+        "https://apps.microsoft.com/store/detail/9N77MZ509ML2"
     ]
 };
 

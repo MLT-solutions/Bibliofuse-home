@@ -7,6 +7,7 @@ import { articles } from '../data/articles';
 
 const appStoreUrl = 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093';
 const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ';
+const bibliofusePcUrl = 'https://apps.microsoft.com/store/detail/9N77MZ509ML2';
 const archiveMacUrl = 'https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449';
 const archiveMsUrl = 'https://apps.microsoft.com/detail/9n2jb4k5wvcq';
 const smartDecryptUrl = 'https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229';
@@ -146,7 +147,7 @@ function Hero({ lang }) {
           <div id="download" className="mt-8 flex flex-wrap items-center gap-3">
             <StoreBadge type="apple" />
             <StoreBadge type="play" />
-            <PCReaderComingSoonBadge />
+            <MicrosoftStoreImageBadge href={bibliofusePcUrl} />
           </div>
 
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-slate-600">
@@ -609,16 +610,7 @@ function ComparisonTable() {
                     </div>
                   </td>
                   <td className="px-4 py-5 text-center align-middle">
-                    <a
-                      href="mailto:support@mlogictech.com?subject=Notify%20me%3A%20BiblioFuse%20PC%20Reader"
-                      className="inline-flex items-center gap-1.5 rounded-lg bg-orange-50 px-3 py-2 text-xs font-bold text-orange-700 transition hover:bg-orange-100"
-                    >
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                        <polyline points="22,6 12,13 2,6" />
-                      </svg>
-                      {table.pcNotify}
-                    </a>
+                    <MicrosoftStoreImageBadge href={bibliofusePcUrl} />
                   </td>
                   <td className="px-4 py-5 text-center align-middle">
                     <StoreBadge type="play" size="sm" />
@@ -1251,7 +1243,7 @@ function FinalCTA({ lang }) {
             <div className="mt-7 flex flex-wrap gap-3">
               <StoreBadge type="apple" />
               <StoreBadge type="play" />
-              <PCReaderComingSoonBadge light />
+              <MicrosoftStoreImageBadge href={bibliofusePcUrl} />
             </div>
           </div>
         </div>
@@ -1278,6 +1270,7 @@ function StickyDownloadBar() {
         <span className="hidden text-sm font-bold sm:inline">{t('redesign.stickyBar.text')}</span>
         <StoreBadge type="apple" size="sm" />
         <StoreBadge type="play" size="sm" />
+        <MicrosoftStoreImageBadge href={bibliofusePcUrl} size="sm" />
       </div>
     </div>
   );

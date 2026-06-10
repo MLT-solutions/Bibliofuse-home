@@ -26,6 +26,9 @@ const Footer = () => {
                             <a href="https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader" target="_blank" rel="noopener noreferrer" className="inline-flex">
                                 <img src="/image/Playstore.png" alt={t('redesign.altTexts.googlePlay')} className="h-10 w-auto object-contain" />
                             </a>
+                            <a href="https://apps.microsoft.com/store/detail/9N77MZ509ML2" target="_blank" rel="noopener noreferrer" className="inline-flex">
+                                <img src="/image/Microsoft_Store_badge.svg" alt={t('redesign.altTexts.microsoftStore')} className="h-10 w-auto object-contain" />
+                            </a>
                         </div>
                     </div>
 
