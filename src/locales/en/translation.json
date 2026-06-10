@@ -533,7 +533,7 @@
           ["Compress / merge", "EPUB / CBZ / CBR", "EPUB / CBZ / CBR", "EPUB / CBZ"],
           ["Read formats", "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT", "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT", "EPUB · PDF · CBZ · ZIP"],
           ["Reader features", "TTS, peek zoom, auto-scroll, progress, ratings, tags", "TTS, auto-scroll, progress, ratings, tags", "Peek zoom, auto-scroll, progress, ratings, tags"],
-          ["PC / Mac → iPhone streaming", "Tailscale ON — home & 5G remote||No Tailscale — home Wi-Fi only (not fully tested)", "Tailscale ON — home & 5G remote||No Tailscale — home Wi-Fi only (not fully tested)", "-"],
+          ["PC / Mac → iPhone streaming", "Tailscale ON — home & 5G remote||No Tailscale — home Wi-Fi only (not in roadmap yet)", "Tailscale ON — home & 5G remote||No Tailscale — home Wi-Fi only (not in roadmap yet)", "-"],
           ["Library sources", "Local + iCloud + SMB|Mac: native · iOS: via streaming", "Local + iCloud + SMB", "Local + external folders"],
           ["iCloud bookshelf", "Cross-device sync", "Cross-device sync", "-"],
           ["Language support", "12 languages|EN ES FR NL PT RU ZH JA KO ID MS", "11 languages", "12 languages|EN ES FR NL PT RU ZH JA KO ID MS"]
@@ -606,6 +606,34 @@
               },
               {
                 "text": "Allow network access when the app launches for the first time"
+              }
+            ]
+          },
+          {
+            "q": "Why does streaming require Tailscale? Can't it just use home Wi-Fi?",
+            "a": "Tailscale is required because of how iOS handles local network connections. Here is what happened:",
+            "bullets": [
+              {
+                "text": "Early versions worked on home Wi-Fi without Tailscale",
+                "sub": [
+                  "The app used Bonjour (Apple's local discovery) over HTTP — this worked fine",
+                  "Once remote 5G streaming was added, iOS App Transport Security began blocking HTTP to raw IP addresses, which broke the LAN-only path"
+                ]
+              },
+              {
+                "text": "Tailscale works on home Wi-Fi just as well as it does remotely",
+                "sub": [
+                  "When both devices are on the same network, Tailscale routes traffic directly — there is no speed penalty compared to plain Wi-Fi",
+                  "Keeping Tailscale on at home and away gives you one consistent setup with no mode-switching"
+                ]
+              },
+              {
+                "text": "A Tailscale-free LAN mode is not in the current roadmap",
+                "sub": [
+                  "Even when you turn off Tailscale, the app may try the previously stored Tailscale address, causing a handshake failure",
+                  "Building a reliable automatic LAN-only fallback is complex and not planned for now",
+                  "The simplest setup: keep Tailscale on both devices always. It handles home Wi-Fi and 5G remote with zero extra configuration"
+                ]
               }
             ]
           },

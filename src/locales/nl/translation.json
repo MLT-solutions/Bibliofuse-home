@@ -308,8 +308,8 @@
           ],
           [
             "PC / Mac → iPhone streaming",
-            "Tailscale AAN — thuis en 5G op afstand||Zonder Tailscale — alleen thuis-wifi (niet volledig getest)",
-            "Tailscale AAN — thuis en 5G op afstand||Zonder Tailscale — alleen thuis-wifi (niet volledig getest)",
+            "Tailscale AAN — thuis en 5G op afstand||Zonder Tailscale — alleen thuis-wifi (nog niet in de roadmap)",
+            "Tailscale AAN — thuis en 5G op afstand||Zonder Tailscale — alleen thuis-wifi (nog niet in de roadmap)",
             "-"
           ],
           [
@@ -396,6 +396,34 @@
               },
               {
                 "text": "Sta netwerktoegang toe bij de eerste keer opstarten van de app"
+              }
+            ]
+          },
+          {
+            "q": "Waarom vereist streaming Tailscale? Kan het niet gewoon over thuis-wifi werken?",
+            "a": "Tailscale is vereist vanwege de manier waarop iOS lokale netwerkverbindingen afhandelt. Dit is wat er is gebeurd:",
+            "bullets": [
+              {
+                "text": "Eerdere versies werkten op thuis-wifi zonder Tailscale",
+                "sub": [
+                  "De app gebruikte Bonjour (Apple's lokale ontdekking) via HTTP — dit werkte prima",
+                  "Zodra remote 5G-streaming werd toegevoegd, begon iOS App Transport Security HTTP naar rauwe IP-adressen te blokkeren, waardoor het LAN-pad kapot ging"
+                ]
+              },
+              {
+                "text": "Tailscale werkt op thuis-wifi net zo goed als op afstand",
+                "sub": [
+                  "Wanneer beide apparaten op hetzelfde netwerk zitten, stuurt Tailscale verkeer direct door — er is geen snelheidsnadeel ten opzichte van gewone wifi",
+                  "Tailscale altijd aan houden thuis en onderweg geeft één consistente setup zonder van modus te wisselen"
+                ]
+              },
+              {
+                "text": "Een LAN-modus zonder Tailscale staat niet in de huidige roadmap",
+                "sub": [
+                  "Zelfs als je Tailscale uitschakelt, kan de app het eerder opgeslagen Tailscale-adres proberen, wat een verbindingsfout veroorzaakt",
+                  "Een betrouwbare automatische LAN-fallback bouwen is complex en momenteel niet gepland",
+                  "De eenvoudigste setup: houd Tailscale op beide apparaten altijd aan. Het regelt thuis-wifi en 5G-remote zonder extra configuratie"
+                ]
               }
             ]
           },

@@ -308,8 +308,8 @@
           ],
           [
             "Penstriman PC / Mac → iPhone",
-            "Tailscale HIDUP — rumah & 5G jauh||Tanpa Tailscale — Wi-Fi rumah sahaja (belum diuji sepenuhnya)",
-            "Tailscale HIDUP — rumah & 5G jauh||Tanpa Tailscale — Wi-Fi rumah sahaja (belum diuji sepenuhnya)",
+            "Tailscale HIDUP — rumah & 5G jauh||Tanpa Tailscale — Wi-Fi rumah sahaja (belum dalam pelan pembangunan)",
+            "Tailscale HIDUP — rumah & 5G jauh||Tanpa Tailscale — Wi-Fi rumah sahaja (belum dalam pelan pembangunan)",
             "-"
           ],
           [
@@ -396,6 +396,34 @@
               },
               {
                 "text": "Benarkan akses rangkaian apabila apl dilancarkan buat kali pertama"
+              }
+            ]
+          },
+          {
+            "q": "Mengapa penstriman memerlukan Tailscale? Tidakkah boleh menggunakan Wi-Fi rumah sahaja?",
+            "a": "Tailscale diperlukan kerana cara iOS mengendalikan sambungan rangkaian tempatan. Berikut adalah apa yang berlaku:",
+            "bullets": [
+              {
+                "text": "Versi awal berfungsi pada Wi-Fi rumah tanpa Tailscale",
+                "sub": [
+                  "Apl menggunakan Bonjour (penemuan tempatan Apple) melalui HTTP — ini berfungsi dengan baik",
+                  "Setelah penstriman jauh 5G ditambah, iOS App Transport Security mula menyekat HTTP ke alamat IP mentah, yang merosakkan laluan LAN sahaja"
+                ]
+              },
+              {
+                "text": "Tailscale berfungsi pada Wi-Fi rumah sama baiknya dengan jauh",
+                "sub": [
+                  "Apabila kedua-dua peranti berada pada rangkaian yang sama, Tailscale menghalakan trafik secara terus — tiada penalti kelajuan berbanding Wi-Fi biasa",
+                  "Memastikan Tailscale sentiasa dihidupkan di rumah dan semasa keluar memberikan satu persediaan yang konsisten tanpa penukaran mod"
+                ]
+              },
+              {
+                "text": "Mod LAN tanpa Tailscale belum ada dalam pelan pembangunan semasa",
+                "sub": [
+                  "Walaupun mematikan Tailscale, apl mungkin masih mencuba alamat Tailscale yang disimpan sebelumnya, menyebabkan kegagalan jabat tangan",
+                  "Membina sandaran LAN automatik yang boleh dipercayai adalah kompleks dan tidak dirancang buat masa ini",
+                  "Persediaan paling mudah: sentiasa hidupkan Tailscale pada kedua-dua peranti. Ia mengendalikan Wi-Fi rumah dan 5G jauh tanpa konfigurasi tambahan"
+                ]
               }
             ]
           },

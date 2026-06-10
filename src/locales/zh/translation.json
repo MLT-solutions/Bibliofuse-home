@@ -308,8 +308,8 @@
           ],
           [
             "PC / Mac → iPhone 串流",
-            "Tailscale 开启 — 家中及5G远程||不使用 Tailscale — 仅家中 Wi-Fi（未完全测试）",
-            "Tailscale 开启 — 家中及5G远程||不使用 Tailscale — 仅家中 Wi-Fi（未完全测试）",
+            "Tailscale 开启 — 家中及5G远程||不使用 Tailscale — 仅家中 Wi-Fi（暂不在开发计划中）",
+            "Tailscale 开启 — 家中及5G远程||不使用 Tailscale — 仅家中 Wi-Fi（暂不在开发计划中）",
             "-"
           ],
           [
@@ -396,6 +396,34 @@
               },
               {
                 "text": "首次启动应用时允许网络访问"
+              }
+            ]
+          },
+          {
+            "q": "为什么串流需要 Tailscale？不能直接用家里的 Wi-Fi 吗？",
+            "a": "需要 Tailscale 是因为 iOS 处理本地网络连接的方式。以下是发生的情况：",
+            "bullets": [
+              {
+                "text": "早期版本在没有 Tailscale 的情况下通过家庭 Wi-Fi 工作",
+                "sub": [
+                  "应用使用 Bonjour（苹果的本地发现）通过 HTTP 运行——这很好用",
+                  "当添加远程 5G 串流后，iOS 应用传输安全（ATS）开始阻止对原始 IP 地址的 HTTP 连接，导致仅限局域网的路径失效"
+                ]
+              },
+              {
+                "text": "Tailscale 在家庭 Wi-Fi 上的效果与远程使用时一样好",
+                "sub": [
+                  "当两台设备在同一网络上时，Tailscale 直接路由流量——与普通 Wi-Fi 相比没有速度损失",
+                  "在家和外出时始终保持 Tailscale 开启，让您拥有一致的设置，无需切换模式"
+                ]
+              },
+              {
+                "text": "无 Tailscale 的局域网模式目前不在开发计划中",
+                "sub": [
+                  "即使关闭 Tailscale，应用可能仍会尝试之前存储的 Tailscale 地址，导致连接失败",
+                  "构建可靠的自动局域网回退机制较为复杂，目前暂无计划",
+                  "最简单的设置：始终在两台设备上保持 Tailscale 开启。无需额外配置即可在家庭 Wi-Fi 和 5G 远程下使用"
+                ]
               }
             ]
           },

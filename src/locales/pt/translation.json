@@ -308,8 +308,8 @@
           ],
           [
             "Streaming PC / Mac → iPhone",
-            "Tailscale ATIVO — casa e 5G remoto||Sem Tailscale — apenas Wi-Fi doméstico (não totalmente testado)",
-            "Tailscale ATIVO — casa e 5G remoto||Sem Tailscale — apenas Wi-Fi doméstico (não totalmente testado)",
+            "Tailscale ATIVO — casa e 5G remoto||Sem Tailscale — apenas Wi-Fi doméstico (não está no roadmap ainda)",
+            "Tailscale ATIVO — casa e 5G remoto||Sem Tailscale — apenas Wi-Fi doméstico (não está no roadmap ainda)",
             "-"
           ],
           [
@@ -396,6 +396,34 @@
               },
               {
                 "text": "Permita o acesso à rede quando o app for iniciado pela primeira vez"
+              }
+            ]
+          },
+          {
+            "q": "Por que o streaming requer Tailscale? Não pode funcionar apenas com o Wi-Fi doméstico?",
+            "a": "O Tailscale é necessário por causa de como o iOS trata as conexões de rede local. Veja o que aconteceu:",
+            "bullets": [
+              {
+                "text": "Versões anteriores funcionavam no Wi-Fi doméstico sem Tailscale",
+                "sub": [
+                  "O app usava Bonjour (descoberta local da Apple) via HTTP — isso funcionava bem",
+                  "Quando o streaming remoto por 5G foi adicionado, o iOS App Transport Security começou a bloquear HTTP para endereços IP brutos, o que quebrou o caminho LAN"
+                ]
+              },
+              {
+                "text": "O Tailscale funciona no Wi-Fi doméstico tão bem quanto remotamente",
+                "sub": [
+                  "Quando ambos os dispositivos estão na mesma rede, o Tailscale roteia o tráfego diretamente — não há penalidade de velocidade em relação ao Wi-Fi normal",
+                  "Manter o Tailscale sempre ativado em casa e fora dá uma configuração consistente sem troca de modo"
+                ]
+              },
+              {
+                "text": "Um modo LAN sem Tailscale não está no roadmap atual",
+                "sub": [
+                  "Mesmo ao desativar o Tailscale, o app pode tentar o endereço Tailscale armazenado anteriormente, causando falha de conexão",
+                  "Construir um fallback LAN automático confiável é complexo e não está planejado agora",
+                  "A configuração mais simples: mantenha o Tailscale ativado em ambos os dispositivos sempre. Funciona em Wi-Fi doméstico e 5G remoto sem configuração extra"
+                ]
               }
             ]
           },

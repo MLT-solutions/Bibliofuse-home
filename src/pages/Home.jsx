@@ -49,6 +49,21 @@ function MicrosoftStoreImageBadge({ href, size = 'sm', className = '' }) {
   );
 }
 
+function PCReaderComingSoonBadge({ light = false, className = '' }) {
+  return (
+    <div className={`inline-flex flex-col items-center gap-1 ${className}`}>
+      <img
+        src="/image/Microsoft_Store_badge.svg"
+        alt="BiblioFuse PC Reader — Coming Soon"
+        className="h-12 w-auto object-contain opacity-40 grayscale"
+      />
+      <span className={`text-[10px] font-semibold tracking-wide ${light ? 'text-white/50' : 'text-slate-400'}`}>
+        PC Reader — Coming Soon
+      </span>
+    </div>
+  );
+}
+
 function WebToolButton({ lang, children, compact = false }) {
   return (
     <Link
@@ -130,7 +145,7 @@ function Hero({ lang }) {
           <div id="download" className="mt-8 flex flex-wrap items-center gap-3">
             <StoreBadge type="apple" />
             <StoreBadge type="play" />
-            <WebToolButton lang={lang}>{t('redesign.common.tryWebTool')}</WebToolButton>
+            <PCReaderComingSoonBadge />
           </div>
 
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-slate-600">
@@ -1235,7 +1250,7 @@ function FinalCTA({ lang }) {
             <div className="mt-7 flex flex-wrap gap-3">
               <StoreBadge type="apple" />
               <StoreBadge type="play" />
-              <WebToolButton lang={lang}>{t('redesign.finalCta.button')}</WebToolButton>
+              <PCReaderComingSoonBadge light />
             </div>
           </div>
         </div>

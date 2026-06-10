@@ -308,8 +308,8 @@
           ],
           [
             "Streaming PC / Mac → iPhone",
-            "Tailscale AKTIF — rumah & 5G jarak jauh||Tanpa Tailscale — hanya Wi-Fi rumah (belum sepenuhnya diuji)",
-            "Tailscale AKTIF — rumah & 5G jarak jauh||Tanpa Tailscale — hanya Wi-Fi rumah (belum sepenuhnya diuji)",
+            "Tailscale AKTIF — rumah & 5G jarak jauh||Tanpa Tailscale — hanya Wi-Fi rumah (belum ada dalam roadmap)",
+            "Tailscale AKTIF — rumah & 5G jarak jauh||Tanpa Tailscale — hanya Wi-Fi rumah (belum ada dalam roadmap)",
             "-"
           ],
           [
@@ -396,6 +396,34 @@
               },
               {
                 "text": "Izinkan akses jaringan saat aplikasi pertama kali diluncurkan"
+              }
+            ]
+          },
+          {
+            "q": "Mengapa streaming memerlukan Tailscale? Tidak bisakah menggunakan Wi-Fi rumah saja?",
+            "a": "Tailscale diperlukan karena cara iOS menangani koneksi jaringan lokal. Berikut yang terjadi:",
+            "bullets": [
+              {
+                "text": "Versi awal bekerja di Wi-Fi rumah tanpa Tailscale",
+                "sub": [
+                  "Aplikasi menggunakan Bonjour (penemuan lokal Apple) melalui HTTP — ini bekerja dengan baik",
+                  "Setelah streaming 5G jarak jauh ditambahkan, iOS App Transport Security mulai memblokir HTTP ke alamat IP mentah, yang merusak jalur hanya-LAN"
+                ]
+              },
+              {
+                "text": "Tailscale bekerja di Wi-Fi rumah sama baiknya dengan jarak jauh",
+                "sub": [
+                  "Ketika kedua perangkat berada di jaringan yang sama, Tailscale merutekan lalu lintas secara langsung — tidak ada penalti kecepatan dibandingkan Wi-Fi biasa",
+                  "Menjaga Tailscale selalu aktif di rumah dan saat bepergian memberikan satu konfigurasi yang konsisten tanpa pergantian mode"
+                ]
+              },
+              {
+                "text": "Mode LAN tanpa Tailscale belum ada dalam roadmap saat ini",
+                "sub": [
+                  "Bahkan saat mematikan Tailscale, aplikasi mungkin masih mencoba alamat Tailscale yang sebelumnya tersimpan, menyebabkan kegagalan koneksi",
+                  "Membangun fallback LAN otomatis yang andal adalah hal yang kompleks dan belum direncanakan saat ini",
+                  "Pengaturan paling sederhana: selalu aktifkan Tailscale di kedua perangkat. Menangani Wi-Fi rumah dan 5G jarak jauh tanpa konfigurasi tambahan"
+                ]
               }
             ]
           },
