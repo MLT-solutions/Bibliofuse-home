@@ -1287,12 +1287,27 @@ const Home = () => {
   const { lang = 'en' } = useParams();
   const { t } = useTranslation();
 
+  const faqItems = React.useMemo(() => {
+    const items = t('redesign.home.faq.items', { returnObjects: true });
+    if (!Array.isArray(items)) return [];
+    return items.map(item => {
+      const answer = item.a
+        ? item.a
+        : Array.isArray(item.bullets)
+          ? item.bullets.map(b => b.text + (Array.isArray(b.sub) ? ' ' + b.sub.map(s => typeof s === 'string' ? s.replace(/<[^>]+>/g, '') : '').join(' ') : '')).join(' ')
+          : '';
+      return { q: item.q, a: answer.trim() };
+    }).filter(x => x.q && x.a);
+  }, [t]);
+
   return (
     <div className="bf-home min-h-screen overflow-x-hidden bg-white text-slate-950">
       <SEO
         title={t('redesign.seo.homeTitle')}
         description={t('redesign.seo.homeDesc')}
         canonical="/"
+        schemaType="home"
+        faqItems={faqItems}
       />
       <Hero lang={lang} />
       <ProductFamily lang={lang} />

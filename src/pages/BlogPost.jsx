@@ -97,6 +97,17 @@ const BlogPost = () => {
     };
   }, [content]);
 
+  const faqItemsForSchema = React.useMemo(() => {
+    if (!faqSchema) return null;
+    return faqSchema.mainEntity.map(e => ({ q: e.name, a: e.acceptedAnswer.text }));
+  }, [faqSchema]);
+
+  const breadcrumbs = [
+    { name: 'Home', url: 'https://bibliofuse.com/en/' },
+    { name: 'Blog', url: 'https://bibliofuse.com/en/blog/' },
+    { name: title, url: `https://bibliofuse.com/${currentLang}/blog/${slug}/` },
+  ];
+
   return (
     <>
       <SEO
@@ -106,10 +117,9 @@ const BlogPost = () => {
         schemaType="article"
         image={article.coverImage}
         datePublished={article.date}
+        faqItems={faqItemsForSchema}
+        breadcrumbs={breadcrumbs}
       />
-      {faqSchema && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      )}
       <div className="min-h-screen bg-[#F6F8FC] px-4 pb-20 pt-28 text-slate-950 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <Link
