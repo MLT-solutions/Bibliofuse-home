@@ -260,21 +260,21 @@
         "reads": "Lit"
       },
       "table": {
-        "eyebrow": "Comparer les éditions",
-        "title": "Choisissez l’édition adaptée à votre travail.",
-        "desc": "Toutes les éditions partagent la même philosophie: traitement sur l’appareil, sans suivi. Les différences concernent la plateforme et le flux de travail.",
-        "feature": "Fonction",
+        "eyebrow": "Comparer les lecteurs",
+        "title": "Choisissez le lecteur pour votre plateforme.",
+        "desc": "Tous les lecteurs partagent la même philosophie : traitement sur l'appareil, sans suivi. Les différences concernent la plateforme et le flux de travail.",
+        "feature": "Fonctionnalité",
         "badges": {
           "universal": "Achat universel",
           "edition": "Édition",
           "free": "Gratuit",
-          "comingSoon": "Coming Soon"
+          "comingSoon": "Bientôt disponible"
         },
         "editions": {
           "apple": "BiblioFuse Reader",
-          "android": "Lecteur Android",
+          "android": "Android Reader",
           "web": "Outil web",
-          "pc": "Outils PC"
+          "pc": "PC Reader"
         },
         "subtitles": {
           "apple": "iPhone · iPad · Mac",
@@ -283,134 +283,109 @@
           "pc": "Windows"
         },
         "unique": "Unique",
-        "where": "Où l’obtenir",
-        "iosNote": "iOS et Mac disponibles",
+        "where": "Où l'obtenir",
+        "iosNote": "iOS et Mac",
         "cbz": "Édition CBZ",
         "epub": "Édition EPUB",
         "rows": [
           [
-            "Fonction principale",
-            "Lire, organiser, compresser et fusionner - sur iPhone, iPad et Mac",
-            "Lire, organiser, compresser et fusionner",
-            "Compresser / fusionner partout",
-            "Compression et fusion avancées"
-          ],
-          [
             "Plateforme",
-            "iPhone, iPad et Mac",
-            "Téléphone / tablette Android",
-            "Navigateur (tous appareils)",
-            "Windows (.exe)"
-          ],
-          [
-            "Traitement",
-            "SwiftUI natif, sur l’appareil",
-            "Natif sur l’appareil",
-            "WASM local (privé)",
-            "Windows natif"
+            "iPhone · iPad · Mac",
+            "PC Windows",
+            "Téléphone · tablette Android"
           ],
           [
             "Compresser / fusionner",
             "EPUB / CBZ / CBR",
-            "EPUB / CBZ",
-            "EPUB / CBZ / PDF",
-            "Dossier / CBZ / PDF / EPUB"
+            "EPUB / CBZ / CBR",
+            "EPUB / CBZ"
           ],
           [
             "Formats de lecture",
             "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · ZIP · TXT",
-            "Outil seulement",
-            "Outil seulement"
+            "EPUB · PDF · CBZ · CBR · TXT",
+            "EPUB · PDF · CBZ · ZIP · TXT"
           ],
           [
-            "Fonctions lecteur",
-            "TTS, zoom aperçu, défilement auto",
-            "Avancé",
-            "-",
+            "Fonctions du lecteur",
+            "TTS, peek zoom, défilement auto",
+            "Progression, notes, étiquettes",
+            "Progression, notes, étiquettes"
+          ],
+          [
+            "Streaming PC / Mac → iPhone",
+            "Wi-Fi + Tailscale|LAN uniquement : non entièrement testé",
+            "Wi-Fi + Tailscale|LAN uniquement : non entièrement testé",
             "-"
           ],
           [
-            "Streaming Mac → iOS",
-            "Wi-Fi + 5G à distance via Tailscale",
-            "-",
-            "-",
-            "-"
-          ],
-          [
-            "Sources locales, iCloud et SMB",
-            "Local + iCloud; SMB via streaming Mac",
-            "Local + SMB natif",
-            "Outil seulement",
-            "Outil seulement"
-          ],
-          [
-            "Sauvegarde BD auto",
-            "iCloud",
-            "Local",
-            "-",
-            "-"
+            "Sources de bibliothèque",
+            "Local + iCloud ; SMB via streaming",
+            "Dossiers locaux",
+            "Local + dossiers externes"
           ],
           [
             "Bibliothèque iCloud",
-            "Entre appareils",
-            "-",
+            "Synchronisation multi-appareils",
             "-",
             "-"
           ],
           [
             "Langues",
-            "12 langues|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
-            "12 langues|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
-            "6 langues|EN, ES, FR, NL, PT, ZH",
-            "Anglais"
+            "12 langues|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11 langues",
+            "12 langues|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
-        "pcNotify": "Notify me when available"
+        "pcNotify": "Me notifier quand disponible"
       },
       "toolsSection": {
-        "eyebrow": "Standalone tools",
-        "title": "Also available as lightweight tools",
+        "eyebrow": "Outils autonomes",
+        "title": "Aussi disponible en outils légers",
         "web": {
           "name": "BiblioFuse Web",
-          "subtitle": "Free · Browser",
-          "desc": "Compress and merge EPUB, CBZ, and PDF files in your browser. No install, no account.",
-          "cta": "Launch free tool"
+          "subtitle": "Gratuit · Navigateur",
+          "desc": "Compressez et fusionnez des fichiers EPUB, CBZ et PDF dans votre navigateur. Sans installation, sans compte.",
+          "cta": "Lancer l'outil gratuit"
         },
         "pcCbz": {
           "name": "BiblioFuse CBZ",
           "subtitle": "Windows · Microsoft Store",
-          "desc": "Compress and merge comic archives on Windows."
+          "desc": "Compressez et fusionnez des archives de bandes dessinées sur Windows."
         },
         "pcEpub": {
           "name": "BiblioFuse EPUB",
           "subtitle": "Windows · Microsoft Store",
-          "desc": "Compress and merge EPUB files on Windows."
+          "desc": "Compressez et fusionnez des fichiers EPUB sur Windows."
         }
       },
       "faq": {
         "eyebrow": "FAQ",
-        "title": "Common questions",
+        "title": "Questions fréquentes",
         "items": [
           {
-            "q": "Does one purchase cover all platforms?",
-            "a": "No. iOS + Mac is a single universal purchase — one payment covers iPhone, iPad, and Mac. The Android Reader, PC Reader, and PC tools are each sold separately."
+            "q": "Un seul achat couvre-t-il toutes les plateformes ?",
+            "a": "Non. iOS + Mac est un achat universel — un paiement couvre iPhone, iPad et Mac. Le Android Reader, le PC Reader et les outils PC sont vendus séparément."
           },
           {
-            "q": "How does streaming from Mac or PC to iPhone work?",
-            "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. For remote access outside your home network, Tailscale is required. LAN-only streaming without Tailscale has not been fully tested — we recommend Tailscale for a reliable experience."
+            "q": "Comment fonctionne le streaming de Mac ou PC vers iPhone ?",
+            "a": "Votre Mac ou PC exécute un serveur local et écrit l'adresse de connexion dans iCloud Drive. Votre iPhone la détecte automatiquement. Les deux appareils doivent être dans le même état Tailscale : les deux activés (fonctionne à domicile et à distance) ou les deux désactivés (même Wi-Fi uniquement, non entièrement testé). Si un seul appareil a Tailscale activé, la connexion échouera. Garder Tailscale toujours activé sur les deux offre l'expérience la plus cohérente."
           },
           {
-            "q": "Why can't Android receive books from Mac or PC?",
-            "a": "The Android app uses a different codebase without iCloud integration, which is how the streaming handshake works. The best workflow for Android is to sync files to your phone using Syncthing or a similar tool, then add that folder as a library source in the app."
+            "q": "De quoi ai-je besoin pour configurer le streaming ?",
+            "a": "Votre Mac ou PC et votre iPhone doivent être connectés au même compte iCloud, et les deux doivent avoir Tailscale activé ou désactivé — ils doivent correspondre. Le nœud de sortie Tailscale n'a pas besoin d'être activé. Les comptes iCloud et Tailscale peuvent utiliser des adresses e-mail différentes."
           },
           {
-            "q": "What is the difference between the PC Reader and the PC EPUB / CBZ tools?",
-            "a": "The PC Reader is a full reading app — it opens books, manages your library, compresses files, and streams to iPhone. The PC EPUB and CBZ tools are lighter, cheaper apps focused on compression and merging only, with no reader."
+            "q": "Pourquoi Android ne peut-il pas recevoir des livres de Mac ou PC ?",
+            "a": "L'application Android utilise une base de code différente sans intégration iCloud, qui est le mécanisme de connexion du streaming. Le meilleur flux de travail pour Android est de synchroniser les fichiers sur votre téléphone avec Syncthing ou un outil similaire, puis d'ajouter ce dossier comme source de bibliothèque dans l'application."
           },
           {
-            "q": "When will the PC Reader be available?",
-            "a": "The PC Reader is awaiting Microsoft Store approval. Email support@mlogictech.com with subject \"Notify me: BiblioFuse PC Reader\" and we will let you know when it launches."
+            "q": "Quelle est la différence entre le PC Reader et les outils EPUB / CBZ pour PC ?",
+            "a": "Le PC Reader est une application de lecture complète — il ouvre des livres, gère votre bibliothèque, compresse des fichiers et streame vers iPhone. Les outils EPUB et CBZ pour PC sont des applications plus légères et moins chères, axées uniquement sur la compression et la fusion, sans lecteur."
+          },
+          {
+            "q": "Quand le PC Reader sera-t-il disponible ?",
+            "a": "Le PC Reader attend l'approbation du Microsoft Store. Envoyez un e-mail à support@mlogictech.com avec l'objet « Notify me: BiblioFuse PC Reader » et nous vous informerons de son lancement."
           }
         ]
       }

@@ -260,157 +260,132 @@
         "reads": "読む"
       },
       "table": {
-        "eyebrow": "エディション比較",
-        "title": "働き方に合うエディションを選ぶ。",
-        "desc": "すべてのエディションは、デバイス上で処理し、追跡しないという同じ思想を共有しています。違いはプラットフォームとワークフローです。",
+        "eyebrow": "リーダーを比較",
+        "title": "プラットフォームに合ったリーダーを選んでください。",
+        "desc": "すべてのリーダーは同じ理念を共有しています：デバイス上での処理、トラッキングなし。違いはプラットフォームとワークフローにあります。",
         "feature": "機能",
         "badges": {
           "universal": "ユニバーサル購入",
           "edition": "エディション",
           "free": "無料",
-          "comingSoon": "Coming Soon"
+          "comingSoon": "近日公開"
         },
         "editions": {
           "apple": "BiblioFuse Reader",
           "android": "Android Reader",
           "web": "Webツール",
-          "pc": "PCツール"
+          "pc": "PC Reader"
         },
         "subtitles": {
           "apple": "iPhone · iPad · Mac",
-          "android": "スマホ · タブレット",
+          "android": "スマートフォン · タブレット",
           "web": "ブラウザ · すべての端末",
           "pc": "Windows"
         },
         "unique": "独自",
-        "where": "入手先",
-        "iosNote": "iOS・Mac 公開済み",
+        "where": "入手方法",
+        "iosNote": "iOS・Mac",
         "cbz": "CBZ版",
         "epub": "EPUB版",
         "rows": [
           [
-            "主な機能",
-            "読む、整理、圧縮、結合 - iPhone、iPad、Macで対応",
-            "読む、整理、圧縮、結合",
-            "どこでも圧縮 / 結合",
-            "高負荷の圧縮と結合"
-          ],
-          [
             "プラットフォーム",
-            "iPhone、iPad、Mac",
-            "Androidスマホ / タブレット",
-            "ブラウザ（すべての端末）",
-            "Windows（.exe）"
-          ],
-          [
-            "処理方式",
-            "ネイティブSwiftUI、デバイス上処理",
-            "ネイティブ、デバイス上処理",
-            "ローカルWASM（プライベート）",
-            "ネイティブWindows"
+            "iPhone · iPad · Mac",
+            "Windows PC",
+            "Android スマートフォン · タブレット"
           ],
           [
             "圧縮 / 結合",
             "EPUB / CBZ / CBR",
-            "EPUB / CBZ",
-            "EPUB / CBZ / PDF",
-            "フォルダ / CBZ / PDF / EPUB"
+            "EPUB / CBZ / CBR",
+            "EPUB / CBZ"
           ],
           [
-            "読書形式",
+            "読書フォーマット",
             "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · ZIP · TXT",
-            "ツールのみ",
-            "ツールのみ"
+            "EPUB · PDF · CBZ · CBR · TXT",
+            "EPUB · PDF · CBZ · ZIP · TXT"
           ],
           [
             "リーダー機能",
             "TTS、ピークズーム、自動スクロール",
-            "高度",
+            "進捗、評価、タグ",
+            "進捗、評価、タグ"
+          ],
+          [
+            "PC / Mac → iPhone ストリーミング",
+            "Wi-Fi + Tailscale|LAN のみ：未完全テスト",
+            "Wi-Fi + Tailscale|LAN のみ：未完全テスト",
+            "-"
+          ],
+          [
+            "ライブラリソース",
+            "ローカル + iCloud；ストリーミング経由SMB",
+            "ローカルフォルダ",
+            "ローカル + 外部フォルダ"
+          ],
+          [
+            "iCloud 本棚",
+            "デバイス間同期",
             "-",
             "-"
           ],
           [
-            "Mac → iOSストリーミング",
-            "Wi-Fi + Tailscale経由のリモート5G",
-            "-",
-            "-",
-            "-"
-          ],
-          [
-            "ローカル、iCloud、SMBソース",
-            "ローカル + iCloud; SMBはMacストリーミング経由",
-            "ローカル + ネイティブSMB",
-            "ツールのみ",
-            "ツールのみ"
-          ],
-          [
-            "自動DBバックアップ",
-            "iCloud",
-            "ローカル",
-            "-",
-            "-"
-          ],
-          [
-            "iCloud本棚",
-            "デバイス間",
-            "-",
-            "-",
-            "-"
-          ],
-          [
-            "言語対応",
-            "12言語|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
-            "12言語|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
-            "6言語|EN, ES, FR, NL, PT, ZH",
-            "英語"
+            "対応言語",
+            "12 言語|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11 言語",
+            "12 言語|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
-        "pcNotify": "Notify me when available"
+        "pcNotify": "公開時に通知する"
       },
       "toolsSection": {
-        "eyebrow": "Standalone tools",
-        "title": "Also available as lightweight tools",
+        "eyebrow": "単体ツール",
+        "title": "軽量ツールとしても利用可能",
         "web": {
           "name": "BiblioFuse Web",
-          "subtitle": "Free · Browser",
-          "desc": "Compress and merge EPUB, CBZ, and PDF files in your browser. No install, no account.",
-          "cta": "Launch free tool"
+          "subtitle": "無料 · ブラウザ",
+          "desc": "ブラウザ上でEPUB、CBZ、PDFファイルを圧縮・結合。インストール不要、アカウント不要。",
+          "cta": "無料ツールを起動"
         },
         "pcCbz": {
           "name": "BiblioFuse CBZ",
           "subtitle": "Windows · Microsoft Store",
-          "desc": "Compress and merge comic archives on Windows."
+          "desc": "Windows でコミックアーカイブを圧縮・結合。"
         },
         "pcEpub": {
           "name": "BiblioFuse EPUB",
           "subtitle": "Windows · Microsoft Store",
-          "desc": "Compress and merge EPUB files on Windows."
+          "desc": "Windows で EPUB ファイルを圧縮・結合。"
         }
       },
       "faq": {
-        "eyebrow": "FAQ",
-        "title": "Common questions",
+        "eyebrow": "よくある質問",
+        "title": "よくある質問",
         "items": [
           {
-            "q": "Does one purchase cover all platforms?",
-            "a": "No. iOS + Mac is a single universal purchase — one payment covers iPhone, iPad, and Mac. The Android Reader, PC Reader, and PC tools are each sold separately."
+            "q": "1回の購入ですべてのプラットフォームをカバーできますか？",
+            "a": "いいえ。iOS + Mac はユニバーサル購入で、1回の支払いでiPhone、iPad、Macをカバーします。Android Reader、PC Reader、PCツールはそれぞれ別途販売されています。"
           },
           {
-            "q": "How does streaming from Mac or PC to iPhone work?",
-            "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. For remote access outside your home network, Tailscale is required. LAN-only streaming without Tailscale has not been fully tested — we recommend Tailscale for a reliable experience."
+            "q": "MacまたはPCからiPhoneへのストリーミングはどのように機能しますか？",
+            "a": "MacまたはPCがローカルサーバーを起動し、接続アドレスをiCloud Driveに書き込みます。iPhoneが自動的に検出します。両デバイスのTailscaleの状態を一致させる必要があります：両方オン（自宅でもリモートでも使用可能）または両方オフ（同一Wi-Fiのみ、未完全テスト）。一方のデバイスだけTailscaleがオンになっていると接続に失敗します。両デバイスで常にTailscaleをオンにしておくと最も安定した体験が得られます。"
           },
           {
-            "q": "Why can't Android receive books from Mac or PC?",
-            "a": "The Android app uses a different codebase without iCloud integration, which is how the streaming handshake works. The best workflow for Android is to sync files to your phone using Syncthing or a similar tool, then add that folder as a library source in the app."
+            "q": "ストリーミングの設定に何が必要ですか？",
+            "a": "MacまたはPCとiPhoneが同じiCloudアカウントにサインインしており、両デバイスのTailscaleの状態が一致している必要があります（両方オンまたは両方オフ）。TailscaleのExitノードを有効にする必要はありません。iCloudとTailscaleのアカウントは異なるメールアドレスを使用できます。"
           },
           {
-            "q": "What is the difference between the PC Reader and the PC EPUB / CBZ tools?",
-            "a": "The PC Reader is a full reading app — it opens books, manages your library, compresses files, and streams to iPhone. The PC EPUB and CBZ tools are lighter, cheaper apps focused on compression and merging only, with no reader."
+            "q": "AndroidはなぜMacやPCから本を受け取れないのですか？",
+            "a": "AndroidアプリはiCloud統合のない別のコードベースを使用しており、iCloudはストリーミングのハンドシェイクの仕組みです。Androidの最善の方法は、SyncthingなどのツールでスマートフォンにファイルをRで同期し、そのフォルダをアプリのライブラリソースとして追加することです。"
           },
           {
-            "q": "When will the PC Reader be available?",
-            "a": "The PC Reader is awaiting Microsoft Store approval. Email support@mlogictech.com with subject \"Notify me: BiblioFuse PC Reader\" and we will let you know when it launches."
+            "q": "PC ReaderとPC EPUB / CBZツールの違いは何ですか？",
+            "a": "PC Readerは完全な読書アプリで、本を開き、ライブラリを管理し、ファイルを圧縮し、iPhoneへストリーミングします。PC EPUB・CBZツールは、読書機能なしで圧縮と結合のみに特化した、より軽量で安価なアプリです。"
+          },
+          {
+            "q": "PC Readerはいつ公開されますか？",
+            "a": "PC ReaderはMicrosoft Storeの承認を待っています。support@mlogictech.comに「Notify me: BiblioFuse PC Reader」という件名でメールをお送りください。公開時にお知らせします。"
           }
         ]
       }

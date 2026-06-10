@@ -260,21 +260,21 @@
         "reads": "Читает"
       },
       "table": {
-        "eyebrow": "Сравнение редакций",
-        "title": "Выберите редакцию под свой рабочий процесс.",
-        "desc": "Все редакции разделяют одну философию: обработка на устройстве и без отслеживания. Отличия — в платформе и сценариях работы.",
+        "eyebrow": "Сравнить читалки",
+        "title": "Выберите читалку для своей платформы.",
+        "desc": "Все читалки придерживаются одной философии: обработка на устройстве, без отслеживания. Различия касаются платформы и рабочего процесса.",
         "feature": "Функция",
         "badges": {
           "universal": "Универсальная покупка",
-          "edition": "Редакция",
+          "edition": "Версия",
           "free": "Бесплатно",
-          "comingSoon": "Coming Soon"
+          "comingSoon": "Скоро"
         },
         "editions": {
           "apple": "BiblioFuse Reader",
           "android": "Android Reader",
           "web": "Веб-инструмент",
-          "pc": "PC-инструменты"
+          "pc": "PC Reader"
         },
         "subtitles": {
           "apple": "iPhone · iPad · Mac",
@@ -283,134 +283,109 @@
           "pc": "Windows"
         },
         "unique": "Уникально",
-        "where": "Где получить",
-        "iosNote": "iOS и Mac выпущены",
+        "where": "Где скачать",
+        "iosNote": "iOS и Mac",
         "cbz": "Редакция CBZ",
         "epub": "Редакция EPUB",
         "rows": [
           [
-            "Основная функция",
-            "Чтение, организация, сжатие и объединение - на iPhone, iPad и Mac",
-            "Чтение, организация, сжатие и объединение",
-            "Сжатие / объединение где угодно",
-            "Тяжелое сжатие и объединение"
-          ],
-          [
             "Платформа",
-            "iPhone, iPad и Mac",
-            "Android телефон / планшет",
-            "Браузер (все устройства)",
-            "Windows (.exe)"
-          ],
-          [
-            "Обработка",
-            "Нативный SwiftUI, на устройстве",
-            "Нативно на устройстве",
-            "Локальный WASM (приватно)",
-            "Нативный Windows"
+            "iPhone · iPad · Mac",
+            "Windows ПК",
+            "Android-телефон · планшет"
           ],
           [
             "Сжатие / объединение",
             "EPUB / CBZ / CBR",
-            "EPUB / CBZ",
-            "EPUB / CBZ / PDF",
-            "Папка / CBZ / PDF / EPUB"
+            "EPUB / CBZ / CBR",
+            "EPUB / CBZ"
           ],
           [
             "Форматы чтения",
             "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · ZIP · TXT",
-            "Только инструмент",
-            "Только инструмент"
+            "EPUB · PDF · CBZ · CBR · TXT",
+            "EPUB · PDF · CBZ · ZIP · TXT"
           ],
           [
-            "Функции чтения",
-            "TTS, быстрый зум, автопрокрутка",
-            "Расширенные",
+            "Функции читалки",
+            "TTS, peek zoom, авто-прокрутка",
+            "Прогресс, оценки, метки",
+            "Прогресс, оценки, метки"
+          ],
+          [
+            "Стриминг ПК / Mac → iPhone",
+            "Wi-Fi + Tailscale|Только LAN: не полностью протестировано",
+            "Wi-Fi + Tailscale|Только LAN: не полностью протестировано",
+            "-"
+          ],
+          [
+            "Источники библиотеки",
+            "Локальные + iCloud; SMB через стриминг",
+            "Локальные папки",
+            "Локальные + внешние папки"
+          ],
+          [
+            "Полка iCloud",
+            "Синхронизация между устройствами",
             "-",
             "-"
           ],
           [
-            "Стриминг Mac → iOS",
-            "Wi-Fi + удаленный 5G через Tailscale",
-            "-",
-            "-",
-            "-"
-          ],
-          [
-            "Локальные, iCloud и SMB источники",
-            "Локально + iCloud; SMB через стриминг с Mac",
-            "Локально + нативный SMB",
-            "Только инструмент",
-            "Только инструмент"
-          ],
-          [
-            "Автобэкап БД",
-            "iCloud",
-            "Локально",
-            "-",
-            "-"
-          ],
-          [
-            "Книжная полка iCloud",
-            "Между устройствами",
-            "-",
-            "-",
-            "-"
-          ],
-          [
-            "Поддержка языков",
-            "12 языков|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
-            "12 языков|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
-            "6 языков|EN, ES, FR, NL, PT, ZH",
-            "Английский"
+            "Языки",
+            "12 языков|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11 языков",
+            "12 языков|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
-        "pcNotify": "Notify me when available"
+        "pcNotify": "Уведомить о выходе"
       },
       "toolsSection": {
-        "eyebrow": "Standalone tools",
-        "title": "Also available as lightweight tools",
+        "eyebrow": "Отдельные инструменты",
+        "title": "Доступно также в виде лёгких инструментов",
         "web": {
           "name": "BiblioFuse Web",
-          "subtitle": "Free · Browser",
-          "desc": "Compress and merge EPUB, CBZ, and PDF files in your browser. No install, no account.",
-          "cta": "Launch free tool"
+          "subtitle": "Бесплатно · Браузер",
+          "desc": "Сжимайте и объединяйте файлы EPUB, CBZ и PDF прямо в браузере. Без установки, без аккаунта.",
+          "cta": "Открыть бесплатный инструмент"
         },
         "pcCbz": {
           "name": "BiblioFuse CBZ",
           "subtitle": "Windows · Microsoft Store",
-          "desc": "Compress and merge comic archives on Windows."
+          "desc": "Сжимайте и объединяйте архивы комиксов на Windows."
         },
         "pcEpub": {
           "name": "BiblioFuse EPUB",
           "subtitle": "Windows · Microsoft Store",
-          "desc": "Compress and merge EPUB files on Windows."
+          "desc": "Сжимайте и объединяйте файлы EPUB на Windows."
         }
       },
       "faq": {
         "eyebrow": "FAQ",
-        "title": "Common questions",
+        "title": "Частые вопросы",
         "items": [
           {
-            "q": "Does one purchase cover all platforms?",
-            "a": "No. iOS + Mac is a single universal purchase — one payment covers iPhone, iPad, and Mac. The Android Reader, PC Reader, and PC tools are each sold separately."
+            "q": "Одна покупка охватывает все платформы?",
+            "a": "Нет. iOS + Mac — это единая универсальная покупка: один платёж покрывает iPhone, iPad и Mac. Android Reader, PC Reader и инструменты для ПК продаются отдельно."
           },
           {
-            "q": "How does streaming from Mac or PC to iPhone work?",
-            "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. For remote access outside your home network, Tailscale is required. LAN-only streaming without Tailscale has not been fully tested — we recommend Tailscale for a reliable experience."
+            "q": "Как работает стриминг с Mac или ПК на iPhone?",
+            "a": "Ваш Mac или ПК запускает локальный сервер и записывает адрес подключения в iCloud Drive. iPhone подхватывает его автоматически. Оба устройства должны быть в одинаковом состоянии Tailscale: оба включены (работает дома и удалённо) или оба выключены (только одна Wi-Fi сеть, не полностью протестировано). Если Tailscale включён только на одном устройстве, соединение не установится. Держать Tailscale включённым на обоих устройствах — наиболее надёжный вариант."
           },
           {
-            "q": "Why can't Android receive books from Mac or PC?",
-            "a": "The Android app uses a different codebase without iCloud integration, which is how the streaming handshake works. The best workflow for Android is to sync files to your phone using Syncthing or a similar tool, then add that folder as a library source in the app."
+            "q": "Что нужно для настройки стриминга?",
+            "a": "Ваш Mac или ПК и iPhone должны быть авторизованы в одном аккаунте iCloud, а Tailscale должен быть включён или выключен на обоих — состояния должны совпадать. Включать exit node в Tailscale не нужно. Аккаунты iCloud и Tailscale могут использовать разные адреса электронной почты."
           },
           {
-            "q": "What is the difference between the PC Reader and the PC EPUB / CBZ tools?",
-            "a": "The PC Reader is a full reading app — it opens books, manages your library, compresses files, and streams to iPhone. The PC EPUB and CBZ tools are lighter, cheaper apps focused on compression and merging only, with no reader."
+            "q": "Почему Android не может получать книги с Mac или ПК?",
+            "a": "Приложение Android использует другую кодовую базу без интеграции iCloud, которая лежит в основе протокола стриминга. Лучший подход для Android — синхронизировать файлы на телефон через Syncthing или аналогичный инструмент, а затем добавить эту папку как источник библиотеки в приложении."
           },
           {
-            "q": "When will the PC Reader be available?",
-            "a": "The PC Reader is awaiting Microsoft Store approval. Email support@mlogictech.com with subject \"Notify me: BiblioFuse PC Reader\" and we will let you know when it launches."
+            "q": "В чём разница между PC Reader и инструментами EPUB / CBZ для ПК?",
+            "a": "PC Reader — полноценное приложение для чтения: открывает книги, управляет библиотекой, сжимает файлы и стримит на iPhone. Инструменты EPUB и CBZ для ПК — более лёгкие и дешёвые приложения, предназначенные только для сжатия и объединения, без читалки."
+          },
+          {
+            "q": "Когда будет доступен PC Reader?",
+            "a": "PC Reader ожидает одобрения в Microsoft Store. Напишите на support@mlogictech.com с темой «Notify me: BiblioFuse PC Reader» — мы сообщим о запуске."
           }
         ]
       }

@@ -260,21 +260,21 @@
         "reads": "Membaca"
       },
       "table": {
-        "eyebrow": "Bandingkan edisi",
-        "title": "Pilih edisi sesuai cara kerja Anda.",
-        "desc": "Semua edisi memiliki filosofi yang sama: diproses di perangkat dan tanpa pelacakan. Perbedaannya ada pada platform dan alur kerja.",
+        "eyebrow": "Bandingkan pembaca",
+        "title": "Pilih pembaca untuk platform Anda.",
+        "desc": "Semua pembaca berbagi filosofi yang sama: pemrosesan di perangkat, tanpa pelacakan. Perbedaannya ada pada platform dan alur kerja.",
         "feature": "Fitur",
         "badges": {
           "universal": "Pembelian universal",
           "edition": "Edisi",
           "free": "Gratis",
-          "comingSoon": "Coming Soon"
+          "comingSoon": "Segera hadir"
         },
         "editions": {
           "apple": "BiblioFuse Reader",
           "android": "Android Reader",
           "web": "Web Tool",
-          "pc": "PC Tools"
+          "pc": "PC Reader"
         },
         "subtitles": {
           "apple": "iPhone · iPad · Mac",
@@ -283,134 +283,109 @@
           "pc": "Windows"
         },
         "unique": "Unik",
-        "where": "Tempat mendapatkan",
-        "iosNote": "iOS dan Mac sudah dirilis",
+        "where": "Di mana mendapatkannya",
+        "iosNote": "iOS dan Mac",
         "cbz": "Edisi CBZ",
         "epub": "Edisi EPUB",
         "rows": [
           [
-            "Fungsi utama",
-            "Baca, atur, kompres & gabung - di iPhone, iPad dan Mac",
-            "Baca, atur, kompres & gabung",
-            "Kompres / gabung di mana saja",
-            "Kompres & gabung tugas berat"
-          ],
-          [
             "Platform",
-            "iPhone, iPad & Mac",
-            "Ponsel / tablet Android",
-            "Browser (semua perangkat)",
-            "Windows (.exe)"
+            "iPhone · iPad · Mac",
+            "PC Windows",
+            "Ponsel · tablet Android"
           ],
           [
-            "Pemrosesan",
-            "SwiftUI native, di perangkat",
-            "Native di perangkat",
-            "WASM lokal (privat)",
-            "Windows native"
-          ],
-          [
-            "Kompres / gabung",
+            "Kompresi / gabung",
             "EPUB / CBZ / CBR",
-            "EPUB / CBZ",
-            "EPUB / CBZ / PDF",
-            "Folder / CBZ / PDF / EPUB"
+            "EPUB / CBZ / CBR",
+            "EPUB / CBZ"
           ],
           [
             "Format baca",
             "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · ZIP · TXT",
-            "Hanya alat",
-            "Hanya alat"
+            "EPUB · PDF · CBZ · CBR · TXT",
+            "EPUB · PDF · CBZ · ZIP · TXT"
           ],
           [
-            "Fitur reader",
-            "TTS, peek zoom, auto-scroll",
-            "Lanjutan",
-            "-",
+            "Fitur pembaca",
+            "TTS, peek zoom, gulir otomatis",
+            "Kemajuan, peringkat, label",
+            "Kemajuan, peringkat, label"
+          ],
+          [
+            "Streaming PC / Mac → iPhone",
+            "Wi-Fi + Tailscale|LAN saja: belum sepenuhnya diuji",
+            "Wi-Fi + Tailscale|LAN saja: belum sepenuhnya diuji",
             "-"
           ],
           [
-            "Streaming Mac → iOS",
-            "Wi-Fi + 5G jarak jauh via Tailscale",
-            "-",
-            "-",
-            "-"
-          ],
-          [
-            "Sumber lokal, iCloud & SMB",
-            "Lokal + iCloud; SMB via streaming Mac",
-            "Lokal + SMB native",
-            "Hanya alat",
-            "Hanya alat"
-          ],
-          [
-            "Backup DB otomatis",
-            "iCloud",
-            "Lokal",
-            "-",
-            "-"
+            "Sumber perpustakaan",
+            "Lokal + iCloud; SMB via streaming",
+            "Folder lokal",
+            "Lokal + folder eksternal"
           ],
           [
             "Rak buku iCloud",
-            "Lintas perangkat",
-            "-",
+            "Sinkronisasi lintas perangkat",
             "-",
             "-"
           ],
           [
             "Dukungan bahasa",
-            "12 bahasa|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
-            "12 bahasa|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
-            "6 bahasa|EN, ES, FR, NL, PT, ZH",
-            "Inggris"
+            "12 bahasa|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11 bahasa",
+            "12 bahasa|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
-        "pcNotify": "Notify me when available"
+        "pcNotify": "Beritahu saya saat tersedia"
       },
       "toolsSection": {
-        "eyebrow": "Standalone tools",
-        "title": "Also available as lightweight tools",
+        "eyebrow": "Alat mandiri",
+        "title": "Tersedia juga sebagai alat ringan",
         "web": {
           "name": "BiblioFuse Web",
-          "subtitle": "Free · Browser",
-          "desc": "Compress and merge EPUB, CBZ, and PDF files in your browser. No install, no account.",
-          "cta": "Launch free tool"
+          "subtitle": "Gratis · Browser",
+          "desc": "Kompres dan gabungkan file EPUB, CBZ, dan PDF di browser Anda. Tanpa instalasi, tanpa akun.",
+          "cta": "Buka alat gratis"
         },
         "pcCbz": {
           "name": "BiblioFuse CBZ",
           "subtitle": "Windows · Microsoft Store",
-          "desc": "Compress and merge comic archives on Windows."
+          "desc": "Kompres dan gabungkan arsip komik di Windows."
         },
         "pcEpub": {
           "name": "BiblioFuse EPUB",
           "subtitle": "Windows · Microsoft Store",
-          "desc": "Compress and merge EPUB files on Windows."
+          "desc": "Kompres dan gabungkan file EPUB di Windows."
         }
       },
       "faq": {
-        "eyebrow": "FAQ",
-        "title": "Common questions",
+        "eyebrow": "Pertanyaan Umum",
+        "title": "Pertanyaan yang sering ditanyakan",
         "items": [
           {
-            "q": "Does one purchase cover all platforms?",
-            "a": "No. iOS + Mac is a single universal purchase — one payment covers iPhone, iPad, and Mac. The Android Reader, PC Reader, and PC tools are each sold separately."
+            "q": "Apakah satu pembelian mencakup semua platform?",
+            "a": "Tidak. iOS + Mac adalah pembelian universal tunggal — satu pembayaran mencakup iPhone, iPad, dan Mac. Android Reader, PC Reader, dan alat PC masing-masing dijual terpisah."
           },
           {
-            "q": "How does streaming from Mac or PC to iPhone work?",
-            "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. For remote access outside your home network, Tailscale is required. LAN-only streaming without Tailscale has not been fully tested — we recommend Tailscale for a reliable experience."
+            "q": "Bagaimana cara kerja streaming dari Mac atau PC ke iPhone?",
+            "a": "Mac atau PC Anda menjalankan server lokal dan menulis alamat koneksi ke iCloud Drive. iPhone Anda mendeteksinya secara otomatis. Kedua perangkat harus berada dalam status Tailscale yang sama: keduanya aktif (berfungsi di rumah dan jarak jauh) atau keduanya nonaktif (hanya Wi-Fi yang sama, belum sepenuhnya diuji). Jika hanya satu perangkat yang mengaktifkan Tailscale, koneksi akan gagal. Selalu mengaktifkan Tailscale di kedua perangkat memberikan pengalaman paling konsisten."
           },
           {
-            "q": "Why can't Android receive books from Mac or PC?",
-            "a": "The Android app uses a different codebase without iCloud integration, which is how the streaming handshake works. The best workflow for Android is to sync files to your phone using Syncthing or a similar tool, then add that folder as a library source in the app."
+            "q": "Apa yang diperlukan untuk menyiapkan streaming?",
+            "a": "Mac atau PC dan iPhone Anda harus masuk ke akun iCloud yang sama, dan keduanya harus memiliki Tailscale aktif atau nonaktif — harus cocok. Exit node Tailscale tidak perlu diaktifkan. Akun iCloud dan Tailscale dapat menggunakan alamat email yang berbeda."
           },
           {
-            "q": "What is the difference between the PC Reader and the PC EPUB / CBZ tools?",
-            "a": "The PC Reader is a full reading app — it opens books, manages your library, compresses files, and streams to iPhone. The PC EPUB and CBZ tools are lighter, cheaper apps focused on compression and merging only, with no reader."
+            "q": "Mengapa Android tidak dapat menerima buku dari Mac atau PC?",
+            "a": "Aplikasi Android menggunakan basis kode berbeda tanpa integrasi iCloud, yang merupakan mekanisme jabat tangan streaming. Alur kerja terbaik untuk Android adalah menyinkronkan file ke ponsel menggunakan Syncthing atau alat serupa, lalu menambahkan folder tersebut sebagai sumber perpustakaan di aplikasi."
           },
           {
-            "q": "When will the PC Reader be available?",
-            "a": "The PC Reader is awaiting Microsoft Store approval. Email support@mlogictech.com with subject \"Notify me: BiblioFuse PC Reader\" and we will let you know when it launches."
+            "q": "Apa perbedaan antara PC Reader dan alat EPUB / CBZ untuk PC?",
+            "a": "PC Reader adalah aplikasi baca lengkap — membuka buku, mengelola perpustakaan, mengompres file, dan streaming ke iPhone. Alat EPUB dan CBZ untuk PC adalah aplikasi yang lebih ringan dan murah, difokuskan hanya pada kompresi dan penggabungan, tanpa pembaca."
+          },
+          {
+            "q": "Kapan PC Reader akan tersedia?",
+            "a": "PC Reader sedang menunggu persetujuan Microsoft Store. Kirim email ke support@mlogictech.com dengan subjek \"Notify me: BiblioFuse PC Reader\" dan kami akan memberi tahu Anda saat diluncurkan."
           }
         ]
       }

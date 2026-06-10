@@ -260,21 +260,21 @@
         "reads": "Leest"
       },
       "table": {
-        "eyebrow": "Edities vergelijken",
-        "title": "Kies de editie die past bij je workflow.",
-        "desc": "Alle edities delen dezelfde filosofie: verwerking op het apparaat en geen tracking. De verschillen zitten in platform en workflow.",
+        "eyebrow": "Lezers vergelijken",
+        "title": "Kies de lezer voor jouw platform.",
+        "desc": "Alle lezers delen dezelfde filosofie: verwerking op het apparaat, geen tracking. Verschillen gaan over platform en workflow.",
         "feature": "Functie",
         "badges": {
           "universal": "Universele aankoop",
           "edition": "Editie",
           "free": "Gratis",
-          "comingSoon": "Coming Soon"
+          "comingSoon": "Binnenkort beschikbaar"
         },
         "editions": {
           "apple": "BiblioFuse Reader",
           "android": "Android Reader",
           "web": "Webtool",
-          "pc": "PC-tools"
+          "pc": "PC Reader"
         },
         "subtitles": {
           "apple": "iPhone · iPad · Mac",
@@ -283,134 +283,109 @@
           "pc": "Windows"
         },
         "unique": "Uniek",
-        "where": "Waar te krijgen",
-        "iosNote": "iOS en Mac uitgebracht",
+        "where": "Waar te verkrijgen",
+        "iosNote": "iOS en Mac",
         "cbz": "CBZ-editie",
         "epub": "EPUB-editie",
         "rows": [
           [
-            "Hoofdfunctie",
-            "Lezen, organiseren, comprimeren en samenvoegen - op iPhone, iPad en Mac",
-            "Lezen, organiseren, comprimeren en samenvoegen",
-            "Overal comprimeren / samenvoegen",
-            "Zware compressie en samenvoeging"
-          ],
-          [
             "Platform",
-            "iPhone, iPad en Mac",
-            "Android-telefoon / tablet",
-            "Browser (alle apparaten)",
-            "Windows (.exe)"
-          ],
-          [
-            "Verwerking",
-            "Native SwiftUI, op apparaat",
-            "Native op apparaat",
-            "Lokale WASM (privé)",
-            "Native Windows"
+            "iPhone · iPad · Mac",
+            "Windows-pc",
+            "Android-telefoon · tablet"
           ],
           [
             "Comprimeren / samenvoegen",
             "EPUB / CBZ / CBR",
-            "EPUB / CBZ",
-            "EPUB / CBZ / PDF",
-            "Map / CBZ / PDF / EPUB"
+            "EPUB / CBZ / CBR",
+            "EPUB / CBZ"
           ],
           [
             "Leesformaten",
             "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · ZIP · TXT",
-            "Alleen tool",
-            "Alleen tool"
+            "EPUB · PDF · CBZ · CBR · TXT",
+            "EPUB · PDF · CBZ · ZIP · TXT"
           ],
           [
-            "Readerfuncties",
+            "Leesfuncties",
             "TTS, peek zoom, automatisch scrollen",
-            "Geavanceerd",
-            "-",
+            "Voortgang, beoordelingen, labels",
+            "Voortgang, beoordelingen, labels"
+          ],
+          [
+            "PC / Mac → iPhone streaming",
+            "Wi-Fi + Tailscale|Alleen LAN: niet volledig getest",
+            "Wi-Fi + Tailscale|Alleen LAN: niet volledig getest",
             "-"
           ],
           [
-            "Mac → iOS-streaming",
-            "Wi-Fi + remote 5G via Tailscale",
-            "-",
-            "-",
-            "-"
-          ],
-          [
-            "Lokale, iCloud- en SMB-bronnen",
-            "Lokaal + iCloud; SMB via Mac-streaming",
-            "Lokaal + native SMB",
-            "Alleen tool",
-            "Alleen tool"
-          ],
-          [
-            "Automatische DB-back-up",
-            "iCloud",
-            "Lokaal",
-            "-",
-            "-"
+            "Bibliotheebbronnen",
+            "Lokaal + iCloud; SMB via streaming",
+            "Lokale mappen",
+            "Lokaal + externe mappen"
           ],
           [
             "iCloud-boekenplank",
-            "Tussen apparaten",
-            "-",
+            "Synchronisatie tussen apparaten",
             "-",
             "-"
           ],
           [
-            "Taalondersteuning",
-            "12 talen|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
-            "12 talen|EN, ES, FR, NL, PT, RU, ZH, JA, KO, ID, MS",
-            "6 talen|EN, ES, FR, NL, PT, ZH",
-            "Engels"
+            "Talen",
+            "12 talen|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11 talen",
+            "12 talen|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
-        "pcNotify": "Notify me when available"
+        "pcNotify": "Meld me wanneer beschikbaar"
       },
       "toolsSection": {
-        "eyebrow": "Standalone tools",
-        "title": "Also available as lightweight tools",
+        "eyebrow": "Losse tools",
+        "title": "Ook beschikbaar als lichte tools",
         "web": {
           "name": "BiblioFuse Web",
-          "subtitle": "Free · Browser",
-          "desc": "Compress and merge EPUB, CBZ, and PDF files in your browser. No install, no account.",
-          "cta": "Launch free tool"
+          "subtitle": "Gratis · Browser",
+          "desc": "Comprimeer en voeg EPUB-, CBZ- en PDF-bestanden samen in je browser. Geen installatie, geen account.",
+          "cta": "Gratis tool starten"
         },
         "pcCbz": {
           "name": "BiblioFuse CBZ",
           "subtitle": "Windows · Microsoft Store",
-          "desc": "Compress and merge comic archives on Windows."
+          "desc": "Comprimeer en voeg stripboekarchief samen op Windows."
         },
         "pcEpub": {
           "name": "BiblioFuse EPUB",
           "subtitle": "Windows · Microsoft Store",
-          "desc": "Compress and merge EPUB files on Windows."
+          "desc": "Comprimeer en voeg EPUB-bestanden samen op Windows."
         }
       },
       "faq": {
-        "eyebrow": "FAQ",
-        "title": "Common questions",
+        "eyebrow": "Veelgestelde vragen",
+        "title": "Veelgestelde vragen",
         "items": [
           {
-            "q": "Does one purchase cover all platforms?",
-            "a": "No. iOS + Mac is a single universal purchase — one payment covers iPhone, iPad, and Mac. The Android Reader, PC Reader, and PC tools are each sold separately."
+            "q": "Dekt één aankoop alle platforms?",
+            "a": "Nee. iOS + Mac is één universele aankoop — één betaling dekt iPhone, iPad en Mac. De Android Reader, PC Reader en pc-tools worden elk afzonderlijk verkocht."
           },
           {
-            "q": "How does streaming from Mac or PC to iPhone work?",
-            "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. For remote access outside your home network, Tailscale is required. LAN-only streaming without Tailscale has not been fully tested — we recommend Tailscale for a reliable experience."
+            "q": "Hoe werkt streaming van Mac of pc naar iPhone?",
+            "a": "Je Mac of pc draait een lokale server en schrijft het verbindingsadres naar iCloud Drive. Je iPhone pikt dit automatisch op. Beide apparaten moeten dezelfde Tailscale-status hebben: beide aan (werkt thuis en op afstand) of beide uit (alleen hetzelfde Wi-Fi, niet volledig getest). Als slechts één apparaat Tailscale heeft ingeschakeld, mislukt de verbinding. Tailscale altijd ingeschakeld houden op beide apparaten geeft de meest consistente ervaring."
           },
           {
-            "q": "Why can't Android receive books from Mac or PC?",
-            "a": "The Android app uses a different codebase without iCloud integration, which is how the streaming handshake works. The best workflow for Android is to sync files to your phone using Syncthing or a similar tool, then add that folder as a library source in the app."
+            "q": "Wat heb ik nodig om streaming in te stellen?",
+            "a": "Je Mac of pc en iPhone moeten allebei zijn aangemeld bij hetzelfde iCloud-account, en Tailscale moet op beide aan of uit staan — ze moeten overeenkomen. De Tailscale-exitnode hoeft niet ingeschakeld te zijn. iCloud- en Tailscale-accounts kunnen verschillende e-mailadressen gebruiken."
           },
           {
-            "q": "What is the difference between the PC Reader and the PC EPUB / CBZ tools?",
-            "a": "The PC Reader is a full reading app — it opens books, manages your library, compresses files, and streams to iPhone. The PC EPUB and CBZ tools are lighter, cheaper apps focused on compression and merging only, with no reader."
+            "q": "Waarom kan Android geen boeken ontvangen van Mac of pc?",
+            "a": "De Android-app gebruikt een andere codebase zonder iCloud-integratie, wat de basis is van het streaming-protocol. De beste werkwijze voor Android is bestanden synchroniseren naar je telefoon met Syncthing of een vergelijkbare tool, en die map vervolgens als bibliotheekbron toevoegen in de app."
           },
           {
-            "q": "When will the PC Reader be available?",
-            "a": "The PC Reader is awaiting Microsoft Store approval. Email support@mlogictech.com with subject \"Notify me: BiblioFuse PC Reader\" and we will let you know when it launches."
+            "q": "Wat is het verschil tussen de PC Reader en de EPUB / CBZ-tools voor pc?",
+            "a": "De PC Reader is een volledige leesapp — hij opent boeken, beheert je bibliotheek, comprimeert bestanden en streamt naar iPhone. De EPUB- en CBZ-tools voor pc zijn lichtere, goedkopere apps die zich alleen richten op comprimeren en samenvoegen, zonder lezer."
+          },
+          {
+            "q": "Wanneer is de PC Reader beschikbaar?",
+            "a": "De PC Reader wacht op goedkeuring van de Microsoft Store. Stuur een e-mail naar support@mlogictech.com met als onderwerp \"Notify me: BiblioFuse PC Reader\" en we laten je weten wanneer hij uitkomt."
           }
         ]
       }
