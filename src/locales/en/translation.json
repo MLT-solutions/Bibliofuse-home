@@ -5,6 +5,7 @@
     "webapp": "Web App",
     "about": "About",
     "blog": "Blog",
+    "changelog": "Changelog",
     "tools": "Tools",
     "getApp": "Get the app"
   },
@@ -941,6 +942,14 @@
       "googlePlay": "Get it on Google Play",
       "microsoftStore": "Get it from Microsoft"
     },
+    "changelog": {
+      "eyebrow": "Development Log",
+      "title": "What's Changed",
+      "subtitle": "Release history, bug fixes, known issues, and what's next — across all platforms.",
+      "filterAll": "All platforms",
+      "knownIssuesTitle": "Known Issues",
+      "roadmapTitle": "Roadmap"
+    },
     "seo": {
       "homeTitle": "BiblioFuse Reader: private ebook library, 5G Mac streaming & file tools",
       "homeDesc": "Read EPUB, PDF, CBZ and CBR, stream your Mac home library to iPhone over Wi-Fi or remote 5G, compress and merge files on-device, and find CBZ/photo duplicates privately.",
@@ -952,6 +961,8 @@
       "privacyDesc": "BiblioFuse keeps reading, compression, merge, streaming and duplicate-scan workflows private with local or platform-owned storage. No ads and no tracking.",
       "blogTitle": "BiblioFuse Blog — Tips, guides & updates",
       "blogDesc": "Guides, release notes, and ideas to help you get more from BiblioFuse.",
+      "changelogTitle": "BiblioFuse Changelog — App development history",
+      "changelogDesc": "Release history, bug fixes, known issues and roadmap for BiblioFuse Reader across iOS, macOS, Android, and PC.",
       "appFeatures": [
         "EPUB, PDF, CBZ, CBR, RAR, ZIP and TXT reader",
         "Mac home library streaming to iPhone and iPad over Wi-Fi or remote 5G with Tailscale",

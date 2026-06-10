@@ -6,7 +6,8 @@
     "about": "Sobre",
     "blog": "Blog",
     "tools": "Herramientas",
-    "getApp": "Obtener app"
+    "getApp": "Obtener app",
+    "changelog": "Historial"
   },
   "home": {
     "hero": {
@@ -750,7 +751,9 @@
         "Sin anuncios, sin rastreo y sin cuenta"
       ],
       "blogTitle": "BiblioFuse Blog — Consejos, guías y novedades",
-      "blogDesc": "Guías, notas de versión e ideas para sacar el máximo partido a BiblioFuse."
+      "blogDesc": "Guías, notas de versión e ideas para sacar el máximo partido a BiblioFuse.",
+      "changelogTitle": "Historial de BiblioFuse — Registro de desarrollo de la app",
+      "changelogDesc": "Historial de versiones, correcciones, problemas conocidos y hoja de ruta de BiblioFuse Reader para iOS, macOS, Android y PC."
     },
     "blog": {
       "posts": {
@@ -1001,6 +1004,14 @@
         "tips": "Consejos",
         "update": "Actualización"
       }
+    },
+    "changelog": {
+      "eyebrow": "Registro de desarrollo",
+      "title": "Qué ha cambiado",
+      "subtitle": "Historial de versiones, correcciones, problemas conocidos y próximas novedades en todas las plataformas.",
+      "filterAll": "Todas las plataformas",
+      "knownIssuesTitle": "Problemas conocidos",
+      "roadmapTitle": "Hoja de ruta"
     }
   }
 }

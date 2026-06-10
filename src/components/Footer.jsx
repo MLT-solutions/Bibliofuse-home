@@ -43,6 +43,7 @@ const Footer = () => {
                         <div className="mb-4 text-xs font-bold uppercase tracking-wider text-ink-soft">{t('redesign.footer.company')}</div>
                         <ul className="space-y-2.5">
                             <li><Link to={`/${lang || 'en'}/about`} className="text-ink transition hover:text-brand">{t('nav.about')}</Link></li>
+                            <li><Link to={`/${lang || 'en'}/changelog`} className="text-ink transition hover:text-brand">{t('nav.changelog')}</Link></li>
                             <li><a href="mailto:support@mlogictech.com" className="text-ink transition hover:text-brand">{t('redesign.footer.contact')}</a></li>
                             <li><a href="mailto:support@mlogictech.com" className="text-ink transition hover:text-brand">{t('redesign.footer.work')}</a></li>
                         </ul>

@@ -6,7 +6,8 @@
     "about": "Tentang",
     "blog": "Blog",
     "tools": "Alat",
-    "getApp": "Dapatkan app"
+    "getApp": "Dapatkan app",
+    "changelog": "Riwayat"
   },
   "home": {
     "hero": {
@@ -750,7 +751,9 @@
         "Tanpa iklan, tanpa pelacakan dan tanpa akun"
       ],
       "blogTitle": "Blog BiblioFuse — Tips, panduan & pembaruan",
-      "blogDesc": "Panduan, catatan rilis, dan ide untuk memaksimalkan penggunaan BiblioFuse."
+      "blogDesc": "Panduan, catatan rilis, dan ide untuk memaksimalkan penggunaan BiblioFuse.",
+      "changelogTitle": "Changelog BiblioFuse — Riwayat pengembangan aplikasi",
+      "changelogDesc": "Riwayat rilis, perbaikan, masalah yang diketahui, dan roadmap BiblioFuse Reader untuk iOS, macOS, Android, dan PC."
     },
     "blog": {
       "posts": {
@@ -1001,6 +1004,14 @@
         "tips": "Tips",
         "update": "Pembaruan"
       }
+    },
+    "changelog": {
+      "eyebrow": "Log pengembangan",
+      "title": "Apa yang berubah",
+      "subtitle": "Riwayat rilis, perbaikan bug, masalah yang diketahui, dan rencana ke depan — untuk semua platform.",
+      "filterAll": "Semua platform",
+      "knownIssuesTitle": "Masalah yang diketahui",
+      "roadmapTitle": "Roadmap"
     }
   }
 }

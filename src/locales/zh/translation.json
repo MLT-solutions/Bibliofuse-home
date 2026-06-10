@@ -6,7 +6,8 @@
     "about": "关于",
     "blog": "博客",
     "tools": "工具",
-    "getApp": "获取应用"
+    "getApp": "获取应用",
+    "changelog": "更新记录"
   },
   "home": {
     "hero": {
@@ -750,7 +751,9 @@
         "无广告、无追踪、无需账户"
       ],
       "blogTitle": "BiblioFuse 博客 — 技巧、指南与更新",
-      "blogDesc": "指南、版本说明和创意，帮助您从 BiblioFuse 中获得更多。"
+      "blogDesc": "指南、版本说明和创意，帮助您从 BiblioFuse 中获得更多。",
+      "changelogTitle": "BiblioFuse 更新记录 — 应用开发历史",
+      "changelogDesc": "BiblioFuse Reader 在 iOS、macOS、Android 和 PC 上的发布历史、错误修复、已知问题及路线图。"
     },
     "blog": {
       "posts": {
@@ -1001,6 +1004,14 @@
         "tips": "技巧",
         "update": "更新"
       }
+    },
+    "changelog": {
+      "eyebrow": "开发日志",
+      "title": "版本更新",
+      "subtitle": "各平台的发布历史、错误修复、已知问题及未来计划。",
+      "filterAll": "所有平台",
+      "knownIssuesTitle": "已知问题",
+      "roadmapTitle": "路线图"
     }
   }
 }

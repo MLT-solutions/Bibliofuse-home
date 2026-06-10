@@ -6,7 +6,8 @@
     "about": "概要",
     "blog": "ブログ",
     "tools": "ツール",
-    "getApp": "アプリを入手"
+    "getApp": "アプリを入手",
+    "changelog": "更新履歴"
   },
   "home": {
     "hero": {
@@ -750,7 +751,9 @@
         "広告なし、追跡なし、アカウント不要"
       ],
       "blogTitle": "BiblioFuseブログ — ヒント、ガイド、アップデート",
-      "blogDesc": "BiblioFuseをさらに活用するためのガイド、リリースノート、アイデアをお届けします。"
+      "blogDesc": "BiblioFuseをさらに活用するためのガイド、リリースノート、アイデアをお届けします。",
+      "changelogTitle": "BiblioFuse 更新履歴 — アプリ開発記録",
+      "changelogDesc": "iOS、macOS、Android、PC 向け BiblioFuse Reader のリリース履歴、バグ修正、既知の問題、ロードマップ。"
     },
     "blog": {
       "posts": {
@@ -1001,6 +1004,14 @@
         "tips": "ヒント",
         "update": "アップデート"
       }
+    },
+    "changelog": {
+      "eyebrow": "開発ログ",
+      "title": "変更内容",
+      "subtitle": "全プラットフォームのリリース履歴、バグ修正、既知の問題、今後の予定。",
+      "filterAll": "全プラットフォーム",
+      "knownIssuesTitle": "既知の問題",
+      "roadmapTitle": "ロードマップ"
     }
   }
 }

@@ -6,7 +6,8 @@
     "about": "Over",
     "blog": "Blog",
     "tools": "Tools",
-    "getApp": "Download app"
+    "getApp": "Download app",
+    "changelog": "Geschiedenis"
   },
   "home": {
     "hero": {
@@ -750,7 +751,9 @@
         "Geen advertenties, geen tracking en geen account"
       ],
       "blogTitle": "BiblioFuse Blog — Tips, gidsen en updates",
-      "blogDesc": "Gidsen, release notes en ideeën om meer uit BiblioFuse te halen."
+      "blogDesc": "Gidsen, release notes en ideeën om meer uit BiblioFuse te halen.",
+      "changelogTitle": "BiblioFuse Changelog — App-ontwikkelingsgeschiedenis",
+      "changelogDesc": "Versiegeschiedenis, bugfixes, bekende problemen en roadmap voor BiblioFuse Reader op iOS, macOS, Android en PC."
     },
     "blog": {
       "posts": {
@@ -1001,6 +1004,14 @@
         "tips": "Tips",
         "update": "Update"
       }
+    },
+    "changelog": {
+      "eyebrow": "Ontwikkelingslog",
+      "title": "Wat er veranderd is",
+      "subtitle": "Versiegeschiedenis, bugfixes, bekende problemen en wat er nog komt — voor alle platforms.",
+      "filterAll": "Alle platforms",
+      "knownIssuesTitle": "Bekende problemen",
+      "roadmapTitle": "Roadmap"
     }
   }
 }

@@ -15,6 +15,7 @@ const ROUTES = [
     { path: '/about/', priority: '0.6', changefreq: 'monthly' },
     { path: '/privacy/', priority: '0.4', changefreq: 'yearly' },
     { path: '/blog/', priority: '0.7', changefreq: 'weekly' },
+    { path: '/changelog/', priority: '0.6', changefreq: 'monthly' },
     ...ARTICLE_SLUGS.map(s => ({ path: `/blog/${s}/`, priority: '0.6', changefreq: 'monthly' })),
 ];
 

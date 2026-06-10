@@ -35,6 +35,7 @@ const Navigation = () => {
         { id: 'webapp', label: t('nav.webapp'), path: '/webapp' },
         { id: 'about', label: t('nav.about'), path: '/about' },
         { id: 'blog', label: t('nav.blog'), path: '/blog' },
+        { id: 'changelog', label: t('nav.changelog'), path: '/changelog' },
     ];
     const tools = [
         { name: 'BiblioFuse Reader', sub: t('redesign.tools.readerSub'), path: '/', hash: '#reader', color: 'blue', icon: 'book' },
@@ -88,6 +89,8 @@ const Navigation = () => {
         ? 'reader'
         : (currentPath.startsWith('/blog')
             ? 'blog'
+            : currentPath.startsWith('/changelog')
+            ? 'changelog'
             : tabs.find(tab => tab.path === currentPath && !tab.hash)?.id || null);
 
     return (
