@@ -195,6 +195,10 @@
         "update": "Update"
       },
       "posts": {
+        "pc-home-library-streaming-iphone": {
+          "title": "Stream Your Windows PC Comic Library to iPhone — Home Wi-Fi and 5G",
+          "excerpt": "BiblioFuse PC Reader lets your iPhone stream your entire Windows library over home Wi-Fi or 5G with Tailscale — no files copied, no iPhone storage used."
+        },
         "double-page-spreads-comics": {
           "title": "Reading Double-Page Spreads in Comics: How BiblioFuse Handles Wide Images",
           "excerpt": "BiblioFuse reads CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT files on iPhone and iPad running iOS 17 or later. When you reach a double-page spread, BiblioFuse automatically detects paired pages and can display them side-by-side, preserving the intended artwork. You can switch between single-page, side-by-side, and full-zoom modes at any time.",

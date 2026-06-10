@@ -986,6 +986,10 @@
           "title": "Как Организовать Мангу по Сериям в BiblioFuse на iPhone",
           "excerpt": "BiblioFuse позволяет организовать мангу по сериям на iPhone с помощью встроенной системы тегов — пометьте каждый том названием серии, затем фильтруйте библиотеку, чтобы видеть все тома в порядке чтения. Теги и оценки синхронизируются между iPhone, iPad и Mac через iCloud.",
           "seoDescription": "Организуйте мангу по сериям в BiblioFuse на iPhone с помощью тегов, оценок и согласованных имён файлов. Синхронизируйте порядок чтения между iPhone, iPad и Mac через iCloud."
+        },
+        "pc-home-library-streaming-iphone": {
+          "title": "Stream Your Windows PC Comic Library to iPhone — Home Wi-Fi and 5G",
+          "excerpt": "BiblioFuse PC Reader lets your iPhone stream your entire Windows library over home Wi-Fi or 5G with Tailscale — no files copied, no iPhone storage used."
         }
       },
       "eyebrow": "Blog",

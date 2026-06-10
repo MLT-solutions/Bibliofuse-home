@@ -1,5 +1,11 @@
 export const articles = [
   {
+    slug: 'pc-home-library-streaming-iphone',
+    date: '2026-06-10',
+    tags: ['windows', 'pc', 'guide', 'streaming'],
+    coverImage: '/image/blog/PC Home Library Streaming.jpg',
+  },
+  {
     slug: 'sideload-comics-iphone-without-itunes',
     date: '2026-06-09',
     tags: ['ios', 'guide', 'tips'],

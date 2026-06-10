@@ -986,6 +986,10 @@
           "title": "如何在 iPhone 上用 BiblioFuse 按系列整理漫画",
           "excerpt": "BiblioFuse 让您通过内置标签系统在 iPhone 上按系列整理漫画——为每一卷添加系列名称标签，然后筛选您的书库，按阅读顺序查看所有卷。标签和评分通过 iCloud 在 iPhone、iPad 和 Mac 之间同步。",
           "seoDescription": "使用标签、评分和一致的文件命名在 iPhone 上用 BiblioFuse 按系列整理漫画。通过 iCloud 在 iPhone、iPad 和 Mac 之间同步您的阅读顺序。"
+        },
+        "pc-home-library-streaming-iphone": {
+          "title": "Stream Your Windows PC Comic Library to iPhone — Home Wi-Fi and 5G",
+          "excerpt": "BiblioFuse PC Reader lets your iPhone stream your entire Windows library over home Wi-Fi or 5G with Tailscale — no files copied, no iPhone storage used."
         }
       },
       "eyebrow": "Blog",
