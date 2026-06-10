@@ -93,3 +93,7 @@ Tailscale has a free tier that supports up to 3 users and 100 devices — more t
 If you don't have [BiblioFuse](https://bibliofuse.com/en/) yet, download it from the App Store for iPhone and iPad, and from the Mac App Store for macOS. Tailscale is free to download from [tailscale.com](https://tailscale.com).
 
 The combination of both makes your home library feel like it's always with you — without uploading a single file to the cloud.
+
+---
+
+**Update (June 2026):** BiblioFuse PC Reader for Windows is now available on the Microsoft Store. The same Tailscale setup described above works identically with the PC app — install Tailscale on your Windows machine, sign in to the same account, and your iPhone connects to the PC library over 5G exactly as described here. See [Stream Your Windows PC Comic Library to iPhone](/en/blog/pc-home-library-streaming-iphone/) for the full Windows guide.
