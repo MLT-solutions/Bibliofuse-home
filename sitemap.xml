@@ -937,6 +937,193 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/" />
   </url>
   <url>
+    <loc>https://bibliofuse.com/en/changelog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/changelog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/changelog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/changelog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/changelog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/changelog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/es/changelog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/changelog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/changelog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/changelog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/changelog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/changelog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/fr/changelog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/changelog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/changelog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/changelog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/changelog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/changelog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/nl/changelog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/changelog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/changelog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/changelog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/changelog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/changelog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/pt/changelog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/changelog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/changelog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/changelog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/changelog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/changelog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ru/changelog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/changelog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/changelog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/changelog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/changelog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/changelog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/zh/changelog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/changelog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/changelog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/changelog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/changelog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/changelog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ja/changelog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/changelog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/changelog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/changelog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/changelog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/changelog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ko/changelog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/changelog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/changelog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/changelog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/changelog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/changelog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/id/changelog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/changelog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/changelog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/changelog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/changelog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/changelog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ms/changelog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/changelog/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/changelog/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/changelog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/changelog/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/changelog/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/changelog/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/changelog/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/changelog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
+  </url>
+  <url>
     <loc>https://bibliofuse.com/en/blog/sideload-comics-iphone-without-itunes/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
