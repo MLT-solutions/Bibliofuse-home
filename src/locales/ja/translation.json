@@ -271,10 +271,10 @@
           "comingSoon": "近日公開"
         },
         "editions": {
-          "apple": "BiblioFuse Reader",
-          "android": "Android Reader",
+          "apple": "BiblioFuse Reader iOS / macOS",
+          "android": "BiblioFuse Reader Android",
           "web": "Webツール",
-          "pc": "PC Reader"
+          "pc": "BiblioFuse Reader PC"
         },
         "subtitles": {
           "apple": "iPhone · iPad · Mac",
@@ -289,52 +289,46 @@
         "epub": "EPUB版",
         "rows": [
           [
-            "プラットフォーム",
-            "iPhone · iPad · Mac",
-            "Windows PC",
-            "Android スマートフォン · タブレット"
-          ],
-          [
             "圧縮 / 結合",
             "EPUB / CBZ / CBR",
             "EPUB / CBZ / CBR",
             "EPUB / CBZ"
           ],
           [
-            "読書フォーマット",
+            "対応フォーマット",
             "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · CBR · TXT",
-            "EPUB · PDF · CBZ · ZIP · TXT"
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "EPUB · PDF · CBZ · ZIP"
           ],
           [
             "リーダー機能",
-            "TTS、ピークズーム、自動スクロール",
-            "進捗、評価、タグ",
-            "進捗、評価、タグ"
+            "TTS、ピークズーム、自動スクロール、進捗、評価、タグ",
+            "TTS、自動スクロール、進捗、評価、タグ",
+            "ピークズーム、自動スクロール、進捗、評価、タグ"
           ],
           [
             "PC / Mac → iPhone ストリーミング",
-            "Wi-Fi + Tailscale|LAN のみ：未完全テスト",
-            "Wi-Fi + Tailscale|LAN のみ：未完全テスト",
+            "Tailscale ON — 自宅 & 5Gリモート||Tailscaleなし — 自宅Wi-Fiのみ（未完全テスト）",
+            "Tailscale ON — 自宅 & 5Gリモート||Tailscaleなし — 自宅Wi-Fiのみ（未完全テスト）",
             "-"
           ],
           [
             "ライブラリソース",
-            "ローカル + iCloud；ストリーミング経由SMB",
-            "ローカルフォルダ",
+            "ローカル + iCloud + SMB|Mac：ネイティブ · iOS：ストリーミング経由",
+            "ローカル + iCloud + SMB",
             "ローカル + 外部フォルダ"
           ],
           [
             "iCloud 本棚",
             "デバイス間同期",
-            "-",
+            "デバイス間同期",
             "-"
           ],
           [
-            "対応言語",
-            "12 言語|EN ES FR NL PT RU ZH JA KO ID MS",
-            "11 言語",
-            "12 言語|EN ES FR NL PT RU ZH JA KO ID MS"
+            "言語サポート",
+            "12言語|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11言語",
+            "12言語|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
         "pcNotify": "公開時に通知する"
@@ -364,28 +358,79 @@
         "title": "よくある質問",
         "items": [
           {
-            "q": "1回の購入ですべてのプラットフォームをカバーできますか？",
-            "a": "いいえ。iOS + Mac はユニバーサル購入で、1回の支払いでiPhone、iPad、Macをカバーします。Android Reader、PC Reader、PCツールはそれぞれ別途販売されています。"
+            "q": "1回の購入ですべてのプラットフォームをカバーしますか？",
+            "a": "いいえ。iOS + Mac は1回のユニバーサル購入で、iPhone、iPad、Mac をカバーします。Android Reader、PC Reader、PC ツールはそれぞれ別売りです。"
           },
           {
-            "q": "MacまたはPCからiPhoneへのストリーミングはどのように機能しますか？",
-            "a": "MacまたはPCがローカルサーバーを起動し、接続アドレスをiCloud Driveに書き込みます。iPhoneが自動的に検出します。両デバイスのTailscaleの状態を一致させる必要があります：両方オン（自宅でもリモートでも使用可能）または両方オフ（同一Wi-Fiのみ、未完全テスト）。一方のデバイスだけTailscaleがオンになっていると接続に失敗します。両デバイスで常にTailscaleをオンにしておくと最も安定した体験が得られます。"
+            "q": "iPhoneのBiblioFuseに本やフォルダを追加するには？",
+            "a": "BiblioFuse はファイルをiCloud同期フォルダに保存します。ファイルアプリ（BiblioFuseフォルダにファイルをコピー）、AirDrop、または内蔵Wi-Fi転送で本を追加できます。MacまたはPCからライブラリセッションを開き、任意のブラウザからファイルをドラッグしてください。",
+            "link": {
+              "label": "ステップバイステップのサイドロードガイド",
+              "href": "/blog/sideload-comics-iphone-without-itunes"
+            }
           },
           {
-            "q": "ストリーミングの設定に何が必要ですか？",
-            "a": "MacまたはPCとiPhoneが同じiCloudアカウントにサインインしており、両デバイスのTailscaleの状態が一致している必要があります（両方オンまたは両方オフ）。TailscaleのExitノードを有効にする必要はありません。iCloudとTailscaleのアカウントは異なるメールアドレスを使用できます。"
+            "q": "MacまたはPCからiPhoneへのストリーミングの仕組みは？",
+            "a": "MacまたはPCがローカルサーバーを起動し、接続アドレスをiCloud Driveに書き込みます。iPhoneが自動的に検出します。両デバイスは同じTailscale状態である必要があります：両方オン（自宅とリモートで使用可能）または両方オフ（同じWi-Fiのみ、未完全テスト）。一方のデバイスだけTailscaleがオンの場合、接続は失敗します。両方を常にオンにすると最も安定した体験が得られます。"
           },
           {
-            "q": "AndroidはなぜMacやPCから本を受け取れないのですか？",
-            "a": "AndroidアプリはiCloud統合のない別のコードベースを使用しており、iCloudはストリーミングのハンドシェイクの仕組みです。Androidの最善の方法は、SyncthingなどのツールでスマートフォンにファイルをRで同期し、そのフォルダをアプリのライブラリソースとして追加することです。"
+            "q": "ストリーミングの設定に必要なものは？",
+            "a": "MacまたはPCとiPhoneの両方で以下を設定してください：",
+            "bullets": [
+              {
+                "text": "両デバイスで同じiCloudアカウントにサインイン",
+                "sub": [
+                  "iOSとMacでは：設定 → [あなたの名前] → iCloudを開き、BiblioFuseが有効になっていることを確認",
+                  "PCでは：iCloudは内蔵されていません — Microsoft Storeから<a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">iCloud for Windowsをダウンロード</a>"
+                ]
+              },
+              {
+                "text": "両デバイスのTailscale状態が一致している必要があります — 両方ONまたは両方OFF",
+                "sub": [
+                  "両方ON — 自宅と5Gリモートで使用可能",
+                  "両方OFF — 自宅Wi-Fiのみ（未完全テスト）",
+                  "混在（一方がON、もう一方がOFF）— 接続が失敗",
+                  "Tailscaleの出口ノードを有効にする必要はありません",
+                  "iCloudとTailscaleのアカウントは異なるメールアドレスを使用できます"
+                ]
+              },
+              {
+                "text": "アプリの初回起動時にネットワークアクセスを許可する"
+              }
+            ]
+          },
+          {
+            "q": "AndroidがMacやPCから本を受信できないのはなぜですか？",
+            "a": "Androidアプリはストリーミングのハンドシェイクメカニズムの基盤となるiCloud統合のない別のコードベースを使用しています。Androidの最善のワークフローは、SyncthingまたはHJようなツールを使ってファイルをスマートフォンに同期し、そのフォルダをアプリのライブラリソースとして追加することです。"
+          },
+          {
+            "q": "読書の進捗、ブックマーク、評価、タグはどこに保存されますか？",
+            "a": "本のファイルがどこに保存されているかによって異なります：",
+            "bullets": [
+              {
+                "text": "ローカルストレージ — そのデバイスにのみ保存、デバイス間の同期なし"
+              },
+              {
+                "text": "iCloudストレージ — iCloudに保存、すべてのiOS、Mac、PCデバイスで自動同期"
+              },
+              {
+                "text": "SMB / ネットワーク共有（MacまたはPCストリーミング）— ホストデバイスに保存",
+                "sub": [
+                  "iOSがMacストリームを読む：進捗はMacに保存",
+                  "iOSがPCストリームを読む：進捗はPCに保存",
+                  "PC ↔ Mac：独立して保存され、データは共有されない",
+                  "MacとPCの両方をストリーミングホストとして使用すると、読書データが分割されます。一貫性のために1つのホストを使用することをお勧めします。"
+                ]
+              }
+            ]
           },
           {
             "q": "PC ReaderとPC EPUB / CBZツールの違いは何ですか？",
-            "a": "PC Readerは完全な読書アプリで、本を開き、ライブラリを管理し、ファイルを圧縮し、iPhoneへストリーミングします。PC EPUB・CBZツールは、読書機能なしで圧縮と結合のみに特化した、より軽量で安価なアプリです。"
+            "a": "PC Readerは完全な読書アプリです — 本を開き、ライブラリを管理し、ファイルを圧縮し、iPhoneにストリーミングします。PC EPUBとCBZツールは、リーダーなしで圧縮と結合のみに特化した、より軽量で安価なアプリです。"
           },
           {
-            "q": "PC Readerはいつ公開されますか？",
-            "a": "PC ReaderはMicrosoft Storeの承認を待っています。support@mlogictech.comに「Notify me: BiblioFuse PC Reader」という件名でメールをお送りください。公開時にお知らせします。"
+            "q": "PC Readerはいつ利用可能になりますか？",
+            "a": "PC ReaderはMicrosoft Storeの承認待ちです。件名「Notify me: BiblioFuse PC Reader」でsupport@mlogictech.comにメールを送ってください。リリース時にお知らせします。"
           }
         ]
       }

@@ -271,10 +271,10 @@
           "comingSoon": "Binnenkort beschikbaar"
         },
         "editions": {
-          "apple": "BiblioFuse Reader",
-          "android": "Android Reader",
+          "apple": "BiblioFuse Reader iOS / macOS",
+          "android": "BiblioFuse Reader Android",
           "web": "Webtool",
-          "pc": "PC Reader"
+          "pc": "BiblioFuse Reader PC"
         },
         "subtitles": {
           "apple": "iPhone · iPad · Mac",
@@ -289,12 +289,6 @@
         "epub": "EPUB-editie",
         "rows": [
           [
-            "Platform",
-            "iPhone · iPad · Mac",
-            "Windows-pc",
-            "Android-telefoon · tablet"
-          ],
-          [
             "Comprimeren / samenvoegen",
             "EPUB / CBZ / CBR",
             "EPUB / CBZ / CBR",
@@ -303,35 +297,35 @@
           [
             "Leesformaten",
             "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · CBR · TXT",
-            "EPUB · PDF · CBZ · ZIP · TXT"
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "EPUB · PDF · CBZ · ZIP"
           ],
           [
-            "Leesfuncties",
-            "TTS, peek zoom, automatisch scrollen",
-            "Voortgang, beoordelingen, labels",
-            "Voortgang, beoordelingen, labels"
+            "Lezerfuncties",
+            "TTS, peek zoom, auto-scroll, voortgang, beoordelingen, labels",
+            "TTS, auto-scroll, voortgang, beoordelingen, labels",
+            "Peek zoom, auto-scroll, voortgang, beoordelingen, labels"
           ],
           [
             "PC / Mac → iPhone streaming",
-            "Wi-Fi + Tailscale|Alleen LAN: niet volledig getest",
-            "Wi-Fi + Tailscale|Alleen LAN: niet volledig getest",
+            "Tailscale AAN — thuis en 5G op afstand||Zonder Tailscale — alleen thuis-wifi (niet volledig getest)",
+            "Tailscale AAN — thuis en 5G op afstand||Zonder Tailscale — alleen thuis-wifi (niet volledig getest)",
             "-"
           ],
           [
-            "Bibliotheebbronnen",
-            "Lokaal + iCloud; SMB via streaming",
-            "Lokale mappen",
+            "Bibliotheekapparaten",
+            "Lokaal + iCloud + SMB|Mac: native · iOS: via streaming",
+            "Lokaal + iCloud + SMB",
             "Lokaal + externe mappen"
           ],
           [
             "iCloud-boekenplank",
             "Synchronisatie tussen apparaten",
-            "-",
+            "Synchronisatie tussen apparaten",
             "-"
           ],
           [
-            "Talen",
+            "Taalondersteuning",
             "12 talen|EN ES FR NL PT RU ZH JA KO ID MS",
             "11 talen",
             "12 talen|EN ES FR NL PT RU ZH JA KO ID MS"
@@ -368,24 +362,75 @@
             "a": "Nee. iOS + Mac is één universele aankoop — één betaling dekt iPhone, iPad en Mac. De Android Reader, PC Reader en pc-tools worden elk afzonderlijk verkocht."
           },
           {
+            "q": "Hoe voeg ik boeken en mappen toe aan BiblioFuse op iPhone?",
+            "a": "BiblioFuse slaat bestanden op in zijn eigen iCloud-gesynchroniseerde map. Je kunt boeken toevoegen via de Bestanden-app (kopieer bestanden naar de BiblioFuse-map), via AirDrop, of via de ingebouwde Wi-Fi-overdracht — open een bibliotheeksessie vanuit Mac of pc en sleep bestanden vanuit een browser.",
+            "link": {
+              "label": "Stapsgewijze handleiding voor sideloaden",
+              "href": "/blog/sideload-comics-iphone-without-itunes"
+            }
+          },
+          {
             "q": "Hoe werkt streaming van Mac of pc naar iPhone?",
-            "a": "Je Mac of pc draait een lokale server en schrijft het verbindingsadres naar iCloud Drive. Je iPhone pikt dit automatisch op. Beide apparaten moeten dezelfde Tailscale-status hebben: beide aan (werkt thuis en op afstand) of beide uit (alleen hetzelfde Wi-Fi, niet volledig getest). Als slechts één apparaat Tailscale heeft ingeschakeld, mislukt de verbinding. Tailscale altijd ingeschakeld houden op beide apparaten geeft de meest consistente ervaring."
+            "a": "Je Mac of pc draait een lokale server en schrijft het verbindingsadres naar iCloud Drive. Je iPhone pikt dit automatisch op. Beide apparaten moeten dezelfde Tailscale-status hebben: beide aan (werkt thuis en op afstand) of beide uit (alleen hetzelfde wifi, niet volledig getest). Als slechts één apparaat Tailscale aan heeft, mislukt de verbinding. Beide apparaten altijd aan houden geeft de meest consistente ervaring."
           },
           {
             "q": "Wat heb ik nodig om streaming in te stellen?",
-            "a": "Je Mac of pc en iPhone moeten allebei zijn aangemeld bij hetzelfde iCloud-account, en Tailscale moet op beide aan of uit staan — ze moeten overeenkomen. De Tailscale-exitnode hoeft niet ingeschakeld te zijn. iCloud- en Tailscale-accounts kunnen verschillende e-mailadressen gebruiken."
+            "a": "Zowel je Mac of pc als je iPhone moeten het volgende geconfigureerd hebben:",
+            "bullets": [
+              {
+                "text": "Hetzelfde iCloud-account op beide apparaten",
+                "sub": [
+                  "Op iOS en Mac: ga naar Instellingen → [jouw naam] → iCloud en zorg dat BiblioFuse is ingeschakeld",
+                  "Op pc: iCloud is niet ingebouwd — <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">download iCloud voor Windows</a> via de Microsoft Store"
+                ]
+              },
+              {
+                "text": "Tailscale-status moet overeenkomen op beide apparaten — beide AAN of beide UIT",
+                "sub": [
+                  "Beide aan — werkt thuis en op afstand via 5G",
+                  "Beide uit — alleen thuis-wifi (niet volledig getest)",
+                  "Gemengd (één aan, één uit) — verbinding mislukt",
+                  "Tailscale exit-node hoeft niet ingeschakeld te zijn",
+                  "iCloud- en Tailscale-accounts kunnen verschillende e-mailadressen gebruiken"
+                ]
+              },
+              {
+                "text": "Sta netwerktoegang toe bij de eerste keer opstarten van de app"
+              }
+            ]
           },
           {
             "q": "Waarom kan Android geen boeken ontvangen van Mac of pc?",
-            "a": "De Android-app gebruikt een andere codebase zonder iCloud-integratie, wat de basis is van het streaming-protocol. De beste werkwijze voor Android is bestanden synchroniseren naar je telefoon met Syncthing of een vergelijkbare tool, en die map vervolgens als bibliotheekbron toevoegen in de app."
+            "a": "De Android-app gebruikt een andere codebase zonder iCloud-integratie, wat de basis is van het streaming-handshake-mechanisme. De beste workflow voor Android is bestanden synchroniseren naar je telefoon met Syncthing of een vergelijkbare tool en die map vervolgens als bibliotheekbron toevoegen in de app."
           },
           {
-            "q": "Wat is het verschil tussen de PC Reader en de EPUB / CBZ-tools voor pc?",
-            "a": "De PC Reader is een volledige leesapp — hij opent boeken, beheert je bibliotheek, comprimeert bestanden en streamt naar iPhone. De EPUB- en CBZ-tools voor pc zijn lichtere, goedkopere apps die zich alleen richten op comprimeren en samenvoegen, zonder lezer."
+            "q": "Waar worden leesvoortgang, bladwijzers, beoordelingen en labels opgeslagen?",
+            "a": "Dit hangt af van waar het boekbestand zich bevindt:",
+            "bullets": [
+              {
+                "text": "Lokale opslag — alleen opgeslagen op dat apparaat, geen synchronisatie tussen apparaten"
+              },
+              {
+                "text": "iCloud-opslag — opgeslagen in iCloud, synchroniseert automatisch op alle iOS-, Mac- en pc-apparaten"
+              },
+              {
+                "text": "SMB / netwerkshare (Mac- of pc-streaming) — opgeslagen op het hostapparaat",
+                "sub": [
+                  "iOS leest een Mac-stream: voortgang wordt opgeslagen op de Mac",
+                  "iOS leest een pc-stream: voortgang wordt opgeslagen op de pc",
+                  "PC ↔ Mac: onafhankelijk opgeslagen, gegevens worden niet gedeeld",
+                  "Als je zowel Mac als pc als streaming-host gebruikt, worden je leesgegevens gesplitst. Gebruik één host voor consistentie."
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Wat is het verschil tussen de PC Reader en de pc EPUB / CBZ-tools?",
+            "a": "De PC Reader is een volledige leesapp — hij opent boeken, beheert je bibliotheek, comprimeert bestanden en streamt naar iPhone. De pc EPUB- en CBZ-tools zijn lichtere, goedkopere apps die zich uitsluitend richten op comprimeren en samenvoegen, zonder lezer."
           },
           {
             "q": "Wanneer is de PC Reader beschikbaar?",
-            "a": "De PC Reader wacht op goedkeuring van de Microsoft Store. Stuur een e-mail naar support@mlogictech.com met als onderwerp \"Notify me: BiblioFuse PC Reader\" en we laten je weten wanneer hij uitkomt."
+            "a": "De PC Reader wacht op goedkeuring van de Microsoft Store. Stuur een e-mail naar support@mlogictech.com met als onderwerp \"Notify me: BiblioFuse PC Reader\" en we laten je weten wanneer hij wordt gelanceerd."
           }
         ]
       }

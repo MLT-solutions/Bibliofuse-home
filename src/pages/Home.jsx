@@ -533,7 +533,7 @@ function ComparisonTable() {
   ];
   const rows = table.rows.map((row, index) => ({
     label: row[0],
-    highlight: index === 4,
+    highlight: index === 3,
     cells: { apple: row[1], pc: row[2], android: row[3] },
   }));
 
@@ -667,7 +667,7 @@ function StandaloneToolsSection({ lang }) {
   );
 }
 
-function FaqSection() {
+function FaqSection({ lang }) {
   const { t } = useTranslation();
   const faq = t('redesign.home.faq', { returnObjects: true });
   const [open, setOpen] = useState(null);
@@ -695,7 +695,36 @@ function FaqSection() {
                 </svg>
               </button>
               {open === i && (
-                <div className="px-6 pb-5 text-sm leading-relaxed text-slate-600">{item.a}</div>
+                <div className="px-6 pb-5 text-sm leading-relaxed text-slate-600">
+                  {item.a && <p className={item.bullets ? 'mb-3' : ''}>{item.a}</p>}
+                  {item.bullets && (
+                    <ul className="space-y-2">
+                      {item.bullets.map((bullet, bi) => (
+                        <li key={bi}>
+                          <span className="font-semibold text-slate-800">{bullet.text}</span>
+                          {bullet.sub && (
+                            <ul className="mt-1 space-y-0.5 pl-4">
+                              {bullet.sub.map((s, si) => (
+                                <li key={si} className="text-slate-500" dangerouslySetInnerHTML={{ __html: `• ${s}` }} />
+                              ))}
+                            </ul>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {item.link && (
+                    <Link
+                      to={`/${lang}${item.link.href}`}
+                      className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:text-blue-700"
+                    >
+                      {item.link.label}
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                  )}
+                </div>
               )}
             </div>
           ))}
@@ -735,7 +764,23 @@ function renderTableCell(cell, strong) {
 
 function renderLocalizedTableCell(cell, strong) {
   if (cell === '-') return <DashIcon />;
-  const [big, note] = String(cell).split('|');
+  const str = String(cell);
+  if (str.includes('||')) {
+    return (
+      <div className="flex flex-col items-center gap-1.5">
+        {str.split('||').map((line, i) => {
+          const [main, sub] = line.split('|');
+          return (
+            <div key={i} className="text-center leading-snug">
+              <span className={`text-xs ${i === 0 ? 'font-semibold text-slate-900' : 'text-slate-500'}`}>{main}</span>
+              {sub && <span className="block text-[10px] text-slate-400">{sub}</span>}
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+  const [big, note] = str.split('|');
   return (
     <span className={`leading-snug ${strong === 'green' ? 'font-semibold text-emerald-600' : 'text-slate-800'}`}>
       <span className={note ? 'block font-bold text-slate-950' : ''}>{big}</span>
@@ -1238,7 +1283,7 @@ const Home = () => {
       <ReaderSection />
       <ComparisonTable />
       <StandaloneToolsSection lang={lang} />
-      <FaqSection />
+      <FaqSection lang={lang} />
       <ArchiveScannerSection />
       <SmartDecryptSection />
       <ContentCueSection />

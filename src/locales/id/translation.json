@@ -271,10 +271,10 @@
           "comingSoon": "Segera hadir"
         },
         "editions": {
-          "apple": "BiblioFuse Reader",
-          "android": "Android Reader",
+          "apple": "BiblioFuse Reader iOS / macOS",
+          "android": "BiblioFuse Reader Android",
           "web": "Web Tool",
-          "pc": "PC Reader"
+          "pc": "BiblioFuse Reader PC"
         },
         "subtitles": {
           "apple": "iPhone · iPad · Mac",
@@ -289,13 +289,7 @@
         "epub": "Edisi EPUB",
         "rows": [
           [
-            "Platform",
-            "iPhone · iPad · Mac",
-            "PC Windows",
-            "Ponsel · tablet Android"
-          ],
-          [
-            "Kompresi / gabung",
+            "Kompres / gabung",
             "EPUB / CBZ / CBR",
             "EPUB / CBZ / CBR",
             "EPUB / CBZ"
@@ -303,31 +297,31 @@
           [
             "Format baca",
             "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · CBR · TXT",
-            "EPUB · PDF · CBZ · ZIP · TXT"
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "EPUB · PDF · CBZ · ZIP"
           ],
           [
             "Fitur pembaca",
-            "TTS, peek zoom, gulir otomatis",
-            "Kemajuan, peringkat, label",
-            "Kemajuan, peringkat, label"
+            "TTS, peek zoom, gulir otomatis, kemajuan, penilaian, tag",
+            "TTS, gulir otomatis, kemajuan, penilaian, tag",
+            "Peek zoom, gulir otomatis, kemajuan, penilaian, tag"
           ],
           [
             "Streaming PC / Mac → iPhone",
-            "Wi-Fi + Tailscale|LAN saja: belum sepenuhnya diuji",
-            "Wi-Fi + Tailscale|LAN saja: belum sepenuhnya diuji",
+            "Tailscale AKTIF — rumah & 5G jarak jauh||Tanpa Tailscale — hanya Wi-Fi rumah (belum sepenuhnya diuji)",
+            "Tailscale AKTIF — rumah & 5G jarak jauh||Tanpa Tailscale — hanya Wi-Fi rumah (belum sepenuhnya diuji)",
             "-"
           ],
           [
             "Sumber perpustakaan",
-            "Lokal + iCloud; SMB via streaming",
-            "Folder lokal",
+            "Lokal + iCloud + SMB|Mac: bawaan · iOS: via streaming",
+            "Lokal + iCloud + SMB",
             "Lokal + folder eksternal"
           ],
           [
             "Rak buku iCloud",
             "Sinkronisasi lintas perangkat",
-            "-",
+            "Sinkronisasi lintas perangkat",
             "-"
           ],
           [
@@ -365,23 +359,74 @@
         "items": [
           {
             "q": "Apakah satu pembelian mencakup semua platform?",
-            "a": "Tidak. iOS + Mac adalah pembelian universal tunggal — satu pembayaran mencakup iPhone, iPad, dan Mac. Android Reader, PC Reader, dan alat PC masing-masing dijual terpisah."
+            "a": "Tidak. iOS + Mac adalah pembelian universal tunggal — satu pembayaran mencakup iPhone, iPad, dan Mac. Android Reader, PC Reader, dan alat PC dijual secara terpisah."
+          },
+          {
+            "q": "Bagaimana cara menambahkan buku dan folder ke BiblioFuse di iPhone?",
+            "a": "BiblioFuse menyimpan file di folder tersinkronisasi iCloud-nya sendiri. Anda dapat menambahkan buku melalui aplikasi File (salin file ke folder BiblioFuse), melalui AirDrop, atau melalui fitur Transfer Wi-Fi bawaan — buka sesi pustaka dari Mac atau PC dan seret file dari browser mana pun.",
+            "link": {
+              "label": "Panduan sideloading langkah demi langkah",
+              "href": "/blog/sideload-comics-iphone-without-itunes"
+            }
           },
           {
             "q": "Bagaimana cara kerja streaming dari Mac atau PC ke iPhone?",
-            "a": "Mac atau PC Anda menjalankan server lokal dan menulis alamat koneksi ke iCloud Drive. iPhone Anda mendeteksinya secara otomatis. Kedua perangkat harus berada dalam status Tailscale yang sama: keduanya aktif (berfungsi di rumah dan jarak jauh) atau keduanya nonaktif (hanya Wi-Fi yang sama, belum sepenuhnya diuji). Jika hanya satu perangkat yang mengaktifkan Tailscale, koneksi akan gagal. Selalu mengaktifkan Tailscale di kedua perangkat memberikan pengalaman paling konsisten."
+            "a": "Mac atau PC Anda menjalankan server lokal dan menulis alamat koneksi ke iCloud Drive. iPhone Anda mendeteksinya secara otomatis. Kedua perangkat harus memiliki status Tailscale yang sama: keduanya aktif (bekerja di rumah dan jarak jauh) atau keduanya tidak aktif (hanya Wi-Fi yang sama, belum sepenuhnya diuji). Jika hanya satu perangkat yang mengaktifkan Tailscale, koneksi akan gagal. Menjaga keduanya selalu aktif memberikan pengalaman paling konsisten."
           },
           {
-            "q": "Apa yang diperlukan untuk menyiapkan streaming?",
-            "a": "Mac atau PC dan iPhone Anda harus masuk ke akun iCloud yang sama, dan keduanya harus memiliki Tailscale aktif atau nonaktif — harus cocok. Exit node Tailscale tidak perlu diaktifkan. Akun iCloud dan Tailscale dapat menggunakan alamat email yang berbeda."
+            "q": "Apa yang dibutuhkan untuk mengatur streaming?",
+            "a": "Mac atau PC dan iPhone Anda harus memiliki konfigurasi berikut:",
+            "bullets": [
+              {
+                "text": "Akun iCloud yang sama di kedua perangkat",
+                "sub": [
+                  "Di iOS dan Mac: buka Pengaturan → [nama Anda] → iCloud dan pastikan BiblioFuse diaktifkan",
+                  "Di PC: iCloud tidak bawaan — <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">unduh iCloud untuk Windows</a> dari Microsoft Store"
+                ]
+              },
+              {
+                "text": "Status Tailscale harus sama di kedua perangkat — keduanya AKTIF atau keduanya TIDAK AKTIF",
+                "sub": [
+                  "Keduanya aktif — bekerja di rumah dan jarak jauh melalui 5G",
+                  "Keduanya tidak aktif — hanya Wi-Fi rumah (belum sepenuhnya diuji)",
+                  "Campuran (satu aktif, satu tidak) — koneksi akan gagal",
+                  "Exit node Tailscale tidak perlu diaktifkan",
+                  "Akun iCloud dan Tailscale dapat menggunakan alamat email yang berbeda"
+                ]
+              },
+              {
+                "text": "Izinkan akses jaringan saat aplikasi pertama kali diluncurkan"
+              }
+            ]
           },
           {
             "q": "Mengapa Android tidak dapat menerima buku dari Mac atau PC?",
-            "a": "Aplikasi Android menggunakan basis kode berbeda tanpa integrasi iCloud, yang merupakan mekanisme jabat tangan streaming. Alur kerja terbaik untuk Android adalah menyinkronkan file ke ponsel menggunakan Syncthing atau alat serupa, lalu menambahkan folder tersebut sebagai sumber perpustakaan di aplikasi."
+            "a": "Aplikasi Android menggunakan basis kode yang berbeda tanpa integrasi iCloud, yang merupakan dasar dari mekanisme jabat tangan streaming. Alur kerja terbaik untuk Android adalah menyinkronkan file ke ponsel menggunakan Syncthing atau alat serupa, lalu menambahkan folder tersebut sebagai sumber pustaka di aplikasi."
           },
           {
-            "q": "Apa perbedaan antara PC Reader dan alat EPUB / CBZ untuk PC?",
-            "a": "PC Reader adalah aplikasi baca lengkap — membuka buku, mengelola perpustakaan, mengompres file, dan streaming ke iPhone. Alat EPUB dan CBZ untuk PC adalah aplikasi yang lebih ringan dan murah, difokuskan hanya pada kompresi dan penggabungan, tanpa pembaca."
+            "q": "Di mana kemajuan membaca, bookmark, penilaian, dan tag disimpan?",
+            "a": "Tergantung di mana file buku disimpan:",
+            "bullets": [
+              {
+                "text": "Penyimpanan lokal — disimpan hanya di perangkat itu, tidak ada sinkronisasi lintas perangkat"
+              },
+              {
+                "text": "Penyimpanan iCloud — disimpan ke iCloud, disinkronkan secara otomatis di semua perangkat iOS, Mac, dan PC"
+              },
+              {
+                "text": "SMB / berbagi jaringan (streaming Mac atau PC) — disimpan di perangkat host",
+                "sub": [
+                  "iOS membaca stream Mac: kemajuan disimpan di Mac",
+                  "iOS membaca stream PC: kemajuan disimpan di PC",
+                  "PC ↔ Mac: disimpan secara independen, data tidak dibagikan",
+                  "Jika Anda menggunakan Mac dan PC sebagai host streaming, data membaca Anda akan terbagi. Gunakan satu host untuk konsistensi."
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Apa perbedaan antara PC Reader dan alat PC EPUB / CBZ?",
+            "a": "PC Reader adalah aplikasi membaca lengkap — membuka buku, mengelola perpustakaan, mengompres file, dan melakukan streaming ke iPhone. Alat PC EPUB dan CBZ adalah aplikasi yang lebih ringan dan murah yang hanya berfokus pada kompresi dan penggabungan, tanpa pembaca."
           },
           {
             "q": "Kapan PC Reader akan tersedia?",

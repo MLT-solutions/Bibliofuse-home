@@ -271,10 +271,10 @@
           "comingSoon": "即将推出"
         },
         "editions": {
-          "apple": "BiblioFuse Reader",
-          "android": "Android Reader",
+          "apple": "BiblioFuse Reader iOS / macOS",
+          "android": "BiblioFuse Reader Android",
           "web": "网页工具",
-          "pc": "PC Reader"
+          "pc": "BiblioFuse Reader PC"
         },
         "subtitles": {
           "apple": "iPhone · iPad · Mac",
@@ -289,52 +289,46 @@
         "epub": "EPUB 版本",
         "rows": [
           [
-            "平台",
-            "iPhone · iPad · Mac",
-            "Windows PC",
-            "Android 手机 · 平板"
-          ],
-          [
             "压缩 / 合并",
             "EPUB / CBZ / CBR",
             "EPUB / CBZ / CBR",
             "EPUB / CBZ"
           ],
           [
-            "阅读格式",
+            "支持格式",
             "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · CBR · TXT",
-            "EPUB · PDF · CBZ · ZIP · TXT"
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "EPUB · PDF · CBZ · ZIP"
           ],
           [
             "阅读器功能",
-            "TTS、局部放大、自动滚屏",
-            "阅读进度、评分、标签",
-            "阅读进度、评分、标签"
+            "TTS、peek zoom、自动滚动、进度、评分、标签",
+            "TTS、自动滚动、进度、评分、标签",
+            "Peek zoom、自动滚动、进度、评分、标签"
           ],
           [
             "PC / Mac → iPhone 串流",
-            "Wi-Fi + Tailscale|仅局域网：未完全测试",
-            "Wi-Fi + Tailscale|仅局域网：未完全测试",
+            "Tailscale 开启 — 家中及5G远程||不使用 Tailscale — 仅家中 Wi-Fi（未完全测试）",
+            "Tailscale 开启 — 家中及5G远程||不使用 Tailscale — 仅家中 Wi-Fi（未完全测试）",
             "-"
           ],
           [
             "书库来源",
-            "本地 + iCloud；SMB 通过串流",
-            "本地文件夹",
+            "本地 + iCloud + SMB|Mac：原生 · iOS：通过串流",
+            "本地 + iCloud + SMB",
             "本地 + 外部文件夹"
           ],
           [
             "iCloud 书架",
             "跨设备同步",
-            "-",
+            "跨设备同步",
             "-"
           ],
           [
             "语言支持",
-            "12 种语言|EN ES FR NL PT RU ZH JA KO ID MS",
-            "11 种语言",
-            "12 种语言|EN ES FR NL PT RU ZH JA KO ID MS"
+            "12种语言|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11种语言",
+            "12种语言|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
         "pcNotify": "上线时通知我"
@@ -364,28 +358,79 @@
         "title": "常见问题",
         "items": [
           {
-            "q": "一次购买可以覆盖所有平台吗？",
-            "a": "不可以。iOS + Mac 是一次通用购买——一次付款涵盖 iPhone、iPad 和 Mac。Android Reader、PC Reader 和 PC 工具各自单独销售。"
+            "q": "一次购买是否覆盖所有平台？",
+            "a": "不。iOS + Mac 是一次通用购买 — 一次付款涵盖 iPhone、iPad 和 Mac。Android Reader、PC Reader 及 PC 工具各自单独销售。"
           },
           {
-            "q": "从 Mac 或 PC 向 iPhone 串流是如何工作的？",
-            "a": "您的 Mac 或 PC 运行一个本地服务器，并将连接地址写入 iCloud Drive，iPhone 会自动检测到它。两台设备必须处于相同的 Tailscale 状态：都开启（在家和远程都能使用）或都关闭（仅限同一 Wi-Fi，未完全测试）。若只有一台设备开启了 Tailscale，连接将失败。在两台设备上始终保持 Tailscale 开启可获得最稳定的体验。"
+            "q": "如何在 iPhone 上向 BiblioFuse 添加书籍和文件夹？",
+            "a": "BiblioFuse 将文件存储在自己的 iCloud 同步文件夹中。您可以通过「文件」应用（将文件复制到 BiblioFuse 文件夹）、AirDrop，或通过内置 Wi-Fi 传输功能添加书籍 — 从 Mac 或 PC 开启库会话，然后从任意浏览器拖入文件。",
+            "link": {
+              "label": "逐步侧载指南",
+              "href": "/blog/sideload-comics-iphone-without-itunes"
+            }
+          },
+          {
+            "q": "Mac 或 PC 向 iPhone 的串流是如何工作的？",
+            "a": "您的 Mac 或 PC 运行本地服务器，并将连接地址写入 iCloud Drive。iPhone 会自动识别。两台设备必须具有相同的 Tailscale 状态：同时开启（在家和远程均可使用）或同时关闭（仅限同一 Wi-Fi，未完全测试）。如果只有一台设备开启了 Tailscale，连接将失败。保持两台设备始终开启 Tailscale 可获得最稳定的体验。"
           },
           {
             "q": "设置串流需要什么？",
-            "a": "您的 Mac 或 PC 与 iPhone 必须登录同一个 iCloud 账号，且两者的 Tailscale 状态必须一致（同时开启或同时关闭）。无需开启 Tailscale 出口节点。iCloud 和 Tailscale 账号可以使用不同的电子邮件地址。"
+            "a": "您的 Mac 或 PC 与 iPhone 必须完成以下配置：",
+            "bullets": [
+              {
+                "text": "两台设备使用相同的 iCloud 账户",
+                "sub": [
+                  "在 iOS 和 Mac 上：进入设置 → [您的姓名] → iCloud，确保 BiblioFuse 已启用",
+                  "在 PC 上：iCloud 未内置 — 请从 Microsoft Store <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">下载 iCloud for Windows</a>"
+                ]
+              },
+              {
+                "text": "两台设备的 Tailscale 状态必须一致 — 同时开启或同时关闭",
+                "sub": [
+                  "同时开启 — 在家和通过5G远程均可使用",
+                  "同时关闭 — 仅限家中同一 Wi-Fi（未完全测试）",
+                  "混合状态（一台开启，另一台关闭）— 连接将失败",
+                  "无需启用 Tailscale 出口节点",
+                  "iCloud 和 Tailscale 账户可使用不同的电子邮件地址"
+                ]
+              },
+              {
+                "text": "首次启动应用时允许网络访问"
+              }
+            ]
           },
           {
             "q": "为什么 Android 无法从 Mac 或 PC 接收书籍？",
-            "a": "Android 应用使用不同的代码库，没有 iCloud 集成，而 iCloud 正是串流握手机制的基础。Android 的最佳方案是使用 Syncthing 或类似工具将文件同步到手机，然后在应用中添加该文件夹作为书库来源。"
+            "a": "Android 应用使用不同的代码库，没有 iCloud 集成，而 iCloud 正是串流握手机制的基础。Android 的最佳工作流程是使用 Syncthing 或类似工具将文件同步到手机，然后在应用中将该文件夹添加为书库来源。"
           },
           {
-            "q": "PC Reader 和 PC EPUB / CBZ 工具有什么区别？",
-            "a": "PC Reader 是完整的阅读应用——可打开书籍、管理书库、压缩文件并向 iPhone 串流。EPUB 和 CBZ PC 工具是更轻量、更便宜的应用，仅专注于压缩和合并，没有阅读功能。"
+            "q": "阅读进度、书签、评分和标签保存在哪里？",
+            "a": "这取决于书籍文件的存储位置：",
+            "bullets": [
+              {
+                "text": "本地存储 — 仅保存在该设备上，不跨设备同步"
+              },
+              {
+                "text": "iCloud 存储 — 保存至 iCloud，自动同步到所有 iOS、Mac 和 PC 设备"
+              },
+              {
+                "text": "SMB / 网络共享（Mac 或 PC 串流）— 保存在主机设备上",
+                "sub": [
+                  "iOS 读取 Mac 串流：进度保存在 Mac 上",
+                  "iOS 读取 PC 串流：进度保存在 PC 上",
+                  "PC ↔ Mac：各自独立存储，数据不共享",
+                  "如果您同时使用 Mac 和 PC 作为串流主机，您的阅读数据将被分割。建议只使用一台主机以保持一致性。"
+                ]
+              }
+            ]
+          },
+          {
+            "q": "PC Reader 与 PC EPUB / CBZ 工具有什么区别？",
+            "a": "PC Reader 是一款完整的阅读应用 — 它可以打开书籍、管理书库、压缩文件并向 iPhone 串流。PC EPUB 和 CBZ 工具是更轻量、更便宜的应用，仅专注于压缩和合并，没有阅读功能。"
           },
           {
             "q": "PC Reader 何时上线？",
-            "a": "PC Reader 正在等待 Microsoft Store 审核。请发送邮件至 support@mlogictech.com，主题填写「Notify me: BiblioFuse PC Reader」，上线后我们会通知您。"
+            "a": "PC Reader 正在等待 Microsoft Store 审核。请发送电子邮件至 support@mlogictech.com，主题为\"Notify me: BiblioFuse PC Reader\"，我们将在发布时通知您。"
           }
         ]
       }

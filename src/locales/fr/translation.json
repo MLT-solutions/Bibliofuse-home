@@ -271,10 +271,10 @@
           "comingSoon": "Bientôt disponible"
         },
         "editions": {
-          "apple": "BiblioFuse Reader",
-          "android": "Android Reader",
+          "apple": "BiblioFuse Reader iOS / macOS",
+          "android": "BiblioFuse Reader Android",
           "web": "Outil web",
-          "pc": "PC Reader"
+          "pc": "BiblioFuse Reader PC"
         },
         "subtitles": {
           "apple": "iPhone · iPad · Mac",
@@ -289,12 +289,6 @@
         "epub": "Édition EPUB",
         "rows": [
           [
-            "Plateforme",
-            "iPhone · iPad · Mac",
-            "PC Windows",
-            "Téléphone · tablette Android"
-          ],
-          [
             "Compresser / fusionner",
             "EPUB / CBZ / CBR",
             "EPUB / CBZ / CBR",
@@ -303,31 +297,31 @@
           [
             "Formats de lecture",
             "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · CBR · TXT",
-            "EPUB · PDF · CBZ · ZIP · TXT"
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "EPUB · PDF · CBZ · ZIP"
           ],
           [
             "Fonctions du lecteur",
-            "TTS, peek zoom, défilement auto",
-            "Progression, notes, étiquettes",
-            "Progression, notes, étiquettes"
+            "TTS, peek zoom, défilement auto, progression, notes, étiquettes",
+            "TTS, défilement auto, progression, notes, étiquettes",
+            "Peek zoom, défilement auto, progression, notes, étiquettes"
           ],
           [
             "Streaming PC / Mac → iPhone",
-            "Wi-Fi + Tailscale|LAN uniquement : non entièrement testé",
-            "Wi-Fi + Tailscale|LAN uniquement : non entièrement testé",
+            "Tailscale activé — maison et 5G à distance||Sans Tailscale — Wi-Fi domestique uniquement (non entièrement testé)",
+            "Tailscale activé — maison et 5G à distance||Sans Tailscale — Wi-Fi domestique uniquement (non entièrement testé)",
             "-"
           ],
           [
             "Sources de bibliothèque",
-            "Local + iCloud ; SMB via streaming",
-            "Dossiers locaux",
+            "Local + iCloud + SMB|Mac: natif · iOS: via streaming",
+            "Local + iCloud + SMB",
             "Local + dossiers externes"
           ],
           [
             "Bibliothèque iCloud",
             "Synchronisation multi-appareils",
-            "-",
+            "Synchronisation multi-appareils",
             "-"
           ],
           [
@@ -365,27 +359,78 @@
         "items": [
           {
             "q": "Un seul achat couvre-t-il toutes les plateformes ?",
-            "a": "Non. iOS + Mac est un achat universel — un paiement couvre iPhone, iPad et Mac. Le Android Reader, le PC Reader et les outils PC sont vendus séparément."
+            "a": "Non. iOS + Mac est un achat universel unique — un paiement couvre iPhone, iPad et Mac. L'Android Reader, le PC Reader et les outils PC sont vendus séparément."
+          },
+          {
+            "q": "Comment ajouter des livres et des dossiers à BiblioFuse sur iPhone ?",
+            "a": "BiblioFuse stocke les fichiers dans son propre dossier synchronisé avec iCloud. Vous pouvez ajouter des livres via l'app Fichiers (copiez les fichiers dans le dossier BiblioFuse), par AirDrop, ou via le Transfert Wi-Fi intégré — ouvrez une session de bibliothèque depuis Mac ou PC et faites glisser des fichiers depuis n'importe quel navigateur.",
+            "link": {
+              "label": "Guide pas à pas pour charger du contenu",
+              "href": "/blog/sideload-comics-iphone-without-itunes"
+            }
           },
           {
             "q": "Comment fonctionne le streaming de Mac ou PC vers iPhone ?",
-            "a": "Votre Mac ou PC exécute un serveur local et écrit l'adresse de connexion dans iCloud Drive. Votre iPhone la détecte automatiquement. Les deux appareils doivent être dans le même état Tailscale : les deux activés (fonctionne à domicile et à distance) ou les deux désactivés (même Wi-Fi uniquement, non entièrement testé). Si un seul appareil a Tailscale activé, la connexion échouera. Garder Tailscale toujours activé sur les deux offre l'expérience la plus cohérente."
+            "a": "Votre Mac ou PC exécute un serveur local et écrit l'adresse de connexion dans iCloud Drive. Votre iPhone la détecte automatiquement. Les deux appareils doivent avoir le même état Tailscale : les deux activés (fonctionne à la maison et à distance) ou les deux désactivés (même Wi-Fi uniquement, non entièrement testé). Si seulement un appareil a Tailscale activé, la connexion échouera. Garder les deux appareils toujours activés donne l'expérience la plus cohérente."
           },
           {
-            "q": "De quoi ai-je besoin pour configurer le streaming ?",
-            "a": "Votre Mac ou PC et votre iPhone doivent être connectés au même compte iCloud, et les deux doivent avoir Tailscale activé ou désactivé — ils doivent correspondre. Le nœud de sortie Tailscale n'a pas besoin d'être activé. Les comptes iCloud et Tailscale peuvent utiliser des adresses e-mail différentes."
+            "q": "Que faut-il pour configurer le streaming ?",
+            "a": "Votre Mac ou PC et votre iPhone doivent avoir les éléments suivants configurés :",
+            "bullets": [
+              {
+                "text": "Même compte iCloud sur les deux appareils",
+                "sub": [
+                  "Sur iOS et Mac : allez dans Réglages → [votre nom] → iCloud et assurez-vous que BiblioFuse est activé",
+                  "Sur PC : iCloud n'est pas préinstallé — <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">téléchargez iCloud pour Windows</a> depuis le Microsoft Store"
+                ]
+              },
+              {
+                "text": "L'état de Tailscale doit correspondre sur les deux appareils — les deux ACTIVÉS ou les deux DÉSACTIVÉS",
+                "sub": [
+                  "Les deux activés — fonctionne à la maison et à distance via 5G",
+                  "Les deux désactivés — même Wi-Fi domestique uniquement (non entièrement testé)",
+                  "Mixte (l'un activé, l'autre non) — la connexion échouera",
+                  "Le nœud de sortie Tailscale n'a pas besoin d'être activé",
+                  "Les comptes iCloud et Tailscale peuvent utiliser des adresses e-mail différentes"
+                ]
+              },
+              {
+                "text": "Autoriser l'accès réseau lors du premier lancement de l'app"
+              }
+            ]
           },
           {
-            "q": "Pourquoi Android ne peut-il pas recevoir des livres de Mac ou PC ?",
-            "a": "L'application Android utilise une base de code différente sans intégration iCloud, qui est le mécanisme de connexion du streaming. Le meilleur flux de travail pour Android est de synchroniser les fichiers sur votre téléphone avec Syncthing ou un outil similaire, puis d'ajouter ce dossier comme source de bibliothèque dans l'application."
+            "q": "Pourquoi Android ne peut-il pas recevoir de livres de Mac ou PC ?",
+            "a": "L'app Android utilise une base de code différente sans intégration iCloud, qui est le mécanisme de la poignée de main de streaming. Le meilleur flux de travail pour Android est de synchroniser les fichiers sur votre téléphone avec Syncthing ou un outil similaire, puis d'ajouter ce dossier comme source de bibliothèque dans l'app."
           },
           {
-            "q": "Quelle est la différence entre le PC Reader et les outils EPUB / CBZ pour PC ?",
-            "a": "Le PC Reader est une application de lecture complète — il ouvre des livres, gère votre bibliothèque, compresse des fichiers et streame vers iPhone. Les outils EPUB et CBZ pour PC sont des applications plus légères et moins chères, axées uniquement sur la compression et la fusion, sans lecteur."
+            "q": "Où sont sauvegardés la progression de lecture, les signets, les notes et les étiquettes ?",
+            "a": "Cela dépend de l'emplacement du fichier du livre :",
+            "bullets": [
+              {
+                "text": "Stockage local — sauvegardé sur cet appareil uniquement, pas de synchronisation multi-appareils"
+              },
+              {
+                "text": "Stockage iCloud — sauvegardé sur iCloud, se synchronise automatiquement sur tous les appareils iOS, Mac et PC"
+              },
+              {
+                "text": "SMB / partage réseau (streaming Mac ou PC) — sauvegardé sur l'appareil hôte",
+                "sub": [
+                  "iOS lisant un flux Mac : la progression est sauvegardée sur le Mac",
+                  "iOS lisant un flux PC : la progression est sauvegardée sur le PC",
+                  "PC ↔ Mac : stockés indépendamment, ils ne partagent pas les données",
+                  "Si vous utilisez Mac et PC comme hôtes de streaming, vos données de lecture seront divisées. Utilisez un seul hôte pour plus de cohérence."
+                ]
+              }
+            ]
+          },
+          {
+            "q": "Quelle est la différence entre le PC Reader et les outils PC EPUB / CBZ ?",
+            "a": "Le PC Reader est une application de lecture complète — il ouvre des livres, gère votre bibliothèque, compresse des fichiers et diffuse vers iPhone. Les outils PC EPUB et CBZ sont des apps plus légères et moins chères axées uniquement sur la compression et la fusion, sans lecteur."
           },
           {
             "q": "Quand le PC Reader sera-t-il disponible ?",
-            "a": "Le PC Reader attend l'approbation du Microsoft Store. Envoyez un e-mail à support@mlogictech.com avec l'objet « Notify me: BiblioFuse PC Reader » et nous vous informerons de son lancement."
+            "a": "Le PC Reader attend l'approbation du Microsoft Store. Envoyez un e-mail à support@mlogictech.com avec l'objet \"Notify me: BiblioFuse PC Reader\" et nous vous avertirons lors du lancement."
           }
         ]
       }
