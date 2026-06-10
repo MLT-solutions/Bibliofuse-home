@@ -34,8 +34,12 @@ function PlatformBadge({ platform, small }) {
 
 const FILTERS = ['all', 'ios', 'pc', 'android'];
 
+const getStr = (val, lang) =>
+  val && typeof val === 'object' ? (val[lang] || val.en) : val;
+
 export default function Changelog() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
   const [filter, setFilter] = useState('all');
 
   const filtered = filter === 'all' ? ENTRIES : ENTRIES.filter(e => e.platform === filter);
@@ -102,8 +106,8 @@ export default function Changelog() {
                         </span>
                       )}
                     </div>
-                    <p className="text-sm font-bold text-slate-900">{entry.title}</p>
-                    <p className="mt-1 text-sm leading-relaxed text-slate-500">{entry.desc}</p>
+                    <p className="text-sm font-bold text-slate-900">{getStr(entry.title, lang)}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-slate-500">{getStr(entry.desc, lang)}</p>
                   </div>
                 </div>
               );
@@ -129,8 +133,8 @@ export default function Changelog() {
                     <div className="mb-1">
                       <PlatformBadge platform={issue.platform} small />
                     </div>
-                    <p className="text-sm font-bold text-slate-800">{issue.title}</p>
-                    <p className="mt-1 text-sm leading-relaxed text-slate-600">{issue.desc}</p>
+                    <p className="text-sm font-bold text-slate-800">{getStr(issue.title, lang)}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-slate-600">{getStr(issue.desc, lang)}</p>
                   </div>
                 </div>
               ))}
@@ -162,8 +166,8 @@ export default function Changelog() {
                           {s.label}
                         </span>
                       </div>
-                      <p className="text-sm font-bold text-slate-800">{item.title}</p>
-                      <p className="mt-1 text-sm leading-relaxed text-slate-600">{item.desc}</p>
+                      <p className="text-sm font-bold text-slate-800">{getStr(item.title, lang)}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-slate-600">{getStr(item.desc, lang)}</p>
                     </div>
                   </div>
                 );
