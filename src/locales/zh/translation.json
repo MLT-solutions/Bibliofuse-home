@@ -756,6 +756,14 @@
     },
     "blog": {
       "posts": {
+        "read-webtoons-on-iphone": {
+          "title": "如何在 iPhone 上阅读条漫：BiblioFuse 的无限垂直滚动",
+          "excerpt": "BiblioFuse 的垂直滚动模式专为条漫和韩国漫画设计，支持 CBZ 和 EPUB 长条格式。无需翻页，连续滚动浏览整个章节，轻松切换系列。"
+        },
+        "convert-zip-to-cbz-online": {
+          "title": "如何在线将 ZIP 转换为 CBZ：几秒内重命名漫画档案",
+          "excerpt": "CBZ 文件就是不同扩展名的 ZIP 压缩包。BiblioFuse 网页工具通过 WebAssembly 在浏览器中将 ZIP 转为 CBZ，无需上传，无需软件，完全私密。"
+        },
         "double-page-spreads-comics": {
           "title": "阅读漫画双页展开：BiblioFuse 如何处理宽幅图像",
           "excerpt": "BiblioFuse 可在运行 iOS 17 或更高版本的 iPhone 和 iPad 上读取 CBZ、CBR、EPUB、PDF、ZIP、RAR 和 TXT 文件。当您翻到双页展开时，BiblioFuse 会自动检测配对页面并可以并排显示，完整呈现艺术家的创作意图。您可以随时在单页模式、并排模式和全屏缩放模式之间切换。",

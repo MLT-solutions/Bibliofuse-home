@@ -756,6 +756,14 @@
     },
     "blog": {
       "posts": {
+        "read-webtoons-on-iphone": {
+          "title": "Cómo leer webtoons en iPhone: desplazamiento vertical infinito en BiblioFuse",
+          "excerpt": "El modo de desplazamiento vertical de BiblioFuse está diseñado para webtoons y manhwa — cómics CBZ y EPUB de tira larga. Desplázate continuamente por capítulos sin tocar la pantalla y navega entre series fácilmente."
+        },
+        "convert-zip-to-cbz-online": {
+          "title": "Cómo convertir ZIP a CBZ online: renombra archivos de cómics en segundos",
+          "excerpt": "Los archivos CBZ son archivos ZIP con una extensión diferente. La herramienta web de BiblioFuse convierte ZIP a CBZ en tu navegador usando WebAssembly — sin subir nada, sin software, completamente privado."
+        },
         "double-page-spreads-comics": {
           "title": "Leer Páginas Dobles en Cómics: Cómo BiblioFuse Maneja Imágenes Anchas",
           "excerpt": "BiblioFuse lee archivos CBZ, CBR, EPUB, PDF, ZIP, RAR y TXT en iPhone y iPad con iOS 17 o posterior. Cuando llegas a una página doble, BiblioFuse detecta automáticamente las páginas emparejadas y puede mostrarlas lado a lado, preservando el arte original. Puedes cambiar entre modo de una página, lado a lado y zoom completo en cualquier momento.",

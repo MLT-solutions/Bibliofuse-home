@@ -756,6 +756,14 @@
     },
     "blog": {
       "posts": {
+        "read-webtoons-on-iphone": {
+          "title": "iPhoneでウェブトゥーンを読む：BiblioFuseの無限縦スクロール",
+          "excerpt": "BiblioFuseの縦スクロールモードはウェブトゥーンやマンファ向け設計。CBZ・EPUBの縦読みコミックをページをめくらずに連続スクロールで読み進められます。"
+        },
+        "convert-zip-to-cbz-online": {
+          "title": "ZIPをCBZにオンラインで変換：コミックアーカイブを数秒でリネーム",
+          "excerpt": "CBZファイルは拡張子が異なるだけのZIPアーカイブです。BiblioFuseウェブツールはWebAssemblyでブラウザ内変換 — アップロード不要、ソフト不要、完全プライベート。"
+        },
         "double-page-spreads-comics": {
           "title": "コミックの見開きページを読む：BiblioFuse が横長画像を処理する方法",
           "excerpt": "BiblioFuse は、iOS 17 以降を搭載した iPhone および iPad で CBZ、CBR、EPUB、PDF、ZIP、RAR、TXT ファイルを読み取ります。見開きページに到達すると、BiblioFuse は自動的にペアとなるページを検出し、並べて表示することができます。これにより、アーティストが意図した通りのアートワークが再現されます。単ページ、並べて表示、フルズームモードにいつでも切り替えられます。",

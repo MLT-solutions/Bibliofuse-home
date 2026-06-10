@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'read-webtoons-on-iphone',
+    date: '2026-06-11',
+    tags: ['ios', 'webtoons', 'manga', 'guide'],
+    coverImage: '/image/blog/Read Webtoons iPhone.jpg',
+  },
+  {
+    slug: 'convert-zip-to-cbz-online',
+    date: '2026-06-11',
+    tags: ['web', 'tools', 'formats'],
+    coverImage: '/image/blog/ZIP to CBZ Online.jpg',
+  },
+  {
     slug: 'pc-home-library-streaming-iphone',
     date: '2026-06-10',
     tags: ['windows', 'pc', 'guide', 'streaming'],

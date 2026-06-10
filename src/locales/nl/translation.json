@@ -756,6 +756,14 @@
     },
     "blog": {
       "posts": {
+        "read-webtoons-on-iphone": {
+          "title": "Hoe webtoons lezen op iPhone: eindeloos verticaal scrollen in BiblioFuse",
+          "excerpt": "De verticale scrollmodus van BiblioFuse is gebouwd voor webtoons en manhwa — CBZ en EPUB langstrip-strips. Scroll continu door hoofdstukken zonder tikken en navigeer eenvoudig door series."
+        },
+        "convert-zip-to-cbz-online": {
+          "title": "ZIP naar CBZ online converteren: hernoem striparchief in seconden",
+          "excerpt": "CBZ-bestanden zijn ZIP-archieven met een andere extensie. De BiblioFuse webtool converteert ZIP naar CBZ in je browser via WebAssembly — geen upload, geen software, volledig privé."
+        },
         "double-page-spreads-comics": {
           "title": "Dubbele Pagina's Lezen in Comics: Hoe BiblioFuse Brede Afbeeldingen Beheert",
           "excerpt": "BiblioFuse leest CBZ-, CBR-, EPUB-, PDF-, ZIP-, RAR- en TXT-bestanden op iPhone en iPad met iOS 17 of later. Wanneer je een dubbele pagina bereikt, detecteert BiblioFuse automatisch de gekoppelde pagina's en kan ze naast elkaar weergeven, zodat het kunstwerk er uitziet zoals bedoeld. Je kunt op elk moment schakelen tussen enkelvoudige pagina, naast elkaar en volledig zoom.",

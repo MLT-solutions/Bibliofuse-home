@@ -103,3 +103,12 @@ This file is the source of truth for the daily article agent.
 | 38 | ✅ | `backup-comic-library-mac` | How to Back Up Your Comic Library on Mac: External Drive, NAS, and Cloud Options | All apps |
 | 39 | ✅ | `ebook-formats-long-term-library` | Best File Formats for a Long-Term Digital Library (EPUB, CBZ, PDF Compared) | Cross-product |
 | 40 | ✅ | `sideload-comics-iphone-without-itunes` | How to Sideload Comics to iPhone Without iTunes or iCloud | BiblioFuse iOS |
+
+---
+
+## Queue — Batch 3 (added 2026-06-11)
+
+| # | Status | Slug | Title / Angle | Product |
+|---|--------|------|---------------|---------|
+| 41 | ✅ | `read-webtoons-on-iphone` | How to Read Webtoons on iPhone: Infinite Vertical Scroll in BiblioFuse | BiblioFuse iOS |
+| 42 | ✅ | `convert-zip-to-cbz-online` | How to Convert ZIP to CBZ Online: Rename Comic Archives in Seconds | BiblioFuse Web |

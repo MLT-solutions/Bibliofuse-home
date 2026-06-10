@@ -195,6 +195,14 @@
         "update": "Update"
       },
       "posts": {
+        "read-webtoons-on-iphone": {
+          "title": "How to Read Webtoons on iPhone: Infinite Vertical Scroll in BiblioFuse",
+          "excerpt": "BiblioFuse's vertical scroll mode is built for webtoons and manhwa — CBZ and EPUB long-strip comics. Scroll continuously through chapters without page taps, configure image gaps, and navigate series easily."
+        },
+        "convert-zip-to-cbz-online": {
+          "title": "How to Convert ZIP to CBZ Online: Rename Comic Archives in Seconds",
+          "excerpt": "CBZ files are ZIP archives with a different extension. The BiblioFuse web tool converts ZIP to CBZ in your browser using WebAssembly — no upload, no software, completely private."
+        },
         "pc-home-library-streaming-iphone": {
           "title": "Stream Your Windows PC Comic Library to iPhone — Home Wi-Fi and 5G",
           "excerpt": "BiblioFuse PC Reader lets your iPhone stream your entire Windows library over home Wi-Fi or 5G with Tailscale — no files copied, no iPhone storage used."
