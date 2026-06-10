@@ -574,7 +574,11 @@
           },
           {
             "q": "How does streaming from Mac or PC to iPhone work?",
-            "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. For remote access outside your home network, Tailscale is required. LAN-only streaming without Tailscale has not been fully tested — we recommend Tailscale for a reliable experience."
+            "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. Both devices must be in the same Tailscale state: either both on Tailscale (works at home and remotely), or both off Tailscale (same Wi-Fi only, not fully tested). If only one device has Tailscale on, the connection will fail. Keeping both devices always on Tailscale gives the most consistent experience."
+          },
+          {
+            "q": "What do I need to set up streaming?",
+            "a": "Both your Mac or PC and your iPhone must be signed into the same iCloud account, and both must have Tailscale either on or off — they must match. Tailscale exit node does not need to be enabled. Your iCloud and Tailscale accounts can use different email addresses."
           },
           {
             "q": "Why can't Android receive books from Mac or PC?",
