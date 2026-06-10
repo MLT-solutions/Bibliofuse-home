@@ -372,7 +372,7 @@
           },
           {
             "q": "Bagaimana cara kerja streaming dari Mac atau PC ke iPhone?",
-            "a": "Mac atau PC Anda menjalankan server lokal dan menulis alamat koneksi ke iCloud Drive. iPhone Anda mendeteksinya secara otomatis. Kedua perangkat harus memiliki status Tailscale yang sama: keduanya aktif (bekerja di rumah dan jarak jauh) atau keduanya tidak aktif (hanya Wi-Fi yang sama, belum sepenuhnya diuji). Jika hanya satu perangkat yang mengaktifkan Tailscale, koneksi akan gagal. Menjaga keduanya selalu aktif memberikan pengalaman paling konsisten."
+            "a": "Mac atau PC Anda menjalankan server lokal dan menulis alamat koneksi ke iCloud Drive. iPhone Anda mendeteksinya secara otomatis. Kedua perangkat harus mengaktifkan Tailscale (bekerja di rumah dan jarak jauh). Jika hanya satu perangkat yang mengaktifkan Tailscale, koneksi akan gagal. Menjaga keduanya selalu aktif memberikan pengalaman paling konsisten."
           },
           {
             "q": "Apa yang dibutuhkan untuk mengatur streaming?",
@@ -386,10 +386,9 @@
                 ]
               },
               {
-                "text": "Status Tailscale harus sama di kedua perangkat — keduanya AKTIF atau keduanya TIDAK AKTIF",
+                "text": "Tailscale harus AKTIF di kedua perangkat",
                 "sub": [
                   "Keduanya aktif — bekerja di rumah dan jarak jauh melalui 5G",
-                  "Keduanya tidak aktif — hanya Wi-Fi rumah (belum sepenuhnya diuji)",
                   "Campuran (satu aktif, satu tidak) — koneksi akan gagal",
                   "Exit node Tailscale tidak perlu diaktifkan",
                   "Akun iCloud dan Tailscale dapat menggunakan alamat email yang berbeda"

@@ -621,7 +621,7 @@
           },
           {
             "q": "How does streaming from Mac or PC to iPhone work?",
-            "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. Both devices must be in the same Tailscale state: either both on Tailscale (works at home and remotely), or both off Tailscale (same Wi-Fi only, not fully tested). If only one device has Tailscale on, the connection will fail. Keeping both devices always on Tailscale gives the most consistent experience."
+            "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. Both devices must have Tailscale on (works at home and remotely). If only one device has Tailscale on, the connection will fail. Keeping both devices always on Tailscale gives the most consistent experience."
           },
           {
             "q": "What do I need to set up streaming?",
@@ -635,10 +635,9 @@
                 ]
               },
               {
-                "text": "Tailscale state must match on both devices — both ON or both OFF",
+                "text": "Tailscale must be ON on both devices",
                 "sub": [
                   "Both ON — works at home and remotely over 5G",
-                  "Both OFF — same home Wi-Fi only (not fully tested)",
                   "Mixed (one ON, one OFF) — connection will fail",
                   "Tailscale exit node does not need to be enabled",
                   "iCloud and Tailscale accounts can use different email addresses"

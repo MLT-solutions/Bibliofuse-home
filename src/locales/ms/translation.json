@@ -372,7 +372,7 @@
           },
           {
             "q": "Bagaimana penstriman dari Mac atau PC ke iPhone berfungsi?",
-            "a": "Mac atau PC anda menjalankan pelayan tempatan dan menulis alamat sambungan ke iCloud Drive. iPhone anda mengesannya secara automatik. Kedua-dua peranti mesti mempunyai status Tailscale yang sama: kedua-duanya dihidupkan (berfungsi di rumah dan dari jauh) atau kedua-duanya dimatikan (hanya Wi-Fi yang sama, belum diuji sepenuhnya). Jika hanya satu peranti mempunyai Tailscale dihidupkan, sambungan akan gagal. Memastikan kedua-duanya sentiasa dihidupkan memberikan pengalaman yang paling konsisten."
+            "a": "Mac atau PC anda menjalankan pelayan tempatan dan menulis alamat sambungan ke iCloud Drive. iPhone anda mengesannya secara automatik. Kedua-dua peranti mesti menghidupkan Tailscale (berfungsi di rumah dan dari jauh). Jika hanya satu peranti mempunyai Tailscale dihidupkan, sambungan akan gagal. Memastikan kedua-duanya sentiasa dihidupkan memberikan pengalaman yang paling konsisten."
           },
           {
             "q": "Apa yang diperlukan untuk menyediakan penstriman?",
@@ -386,10 +386,9 @@
                 ]
               },
               {
-                "text": "Status Tailscale mesti sepadan pada kedua-dua peranti — kedua-duanya HIDUP atau kedua-duanya MATI",
+                "text": "Tailscale mesti DIHIDUPKAN pada kedua-dua peranti",
                 "sub": [
                   "Kedua-duanya hidup — berfungsi di rumah dan dari jauh melalui 5G",
-                  "Kedua-duanya mati — hanya Wi-Fi rumah (belum diuji sepenuhnya)",
                   "Campuran (satu hidup, satu mati) — sambungan akan gagal",
                   "Nod keluar Tailscale tidak perlu didayakan",
                   "Akaun iCloud dan Tailscale boleh menggunakan alamat e-mel yang berbeza"

@@ -372,7 +372,7 @@
           },
           {
             "q": "Como funciona o streaming do Mac ou PC para o iPhone?",
-            "a": "Seu Mac ou PC executa um servidor local e escreve o endereço de conexão no iCloud Drive. Seu iPhone detecta automaticamente. Ambos os dispositivos devem ter o mesmo estado do Tailscale: ambos ativados (funciona em casa e remotamente) ou ambos desativados (apenas mesmo Wi-Fi, não totalmente testado). Se apenas um dispositivo tiver o Tailscale ativado, a conexão falhará. Manter ambos sempre ativados oferece a experiência mais consistente."
+            "a": "Seu Mac ou PC executa um servidor local e escreve o endereço de conexão no iCloud Drive. Seu iPhone detecta automaticamente. Ambos os dispositivos devem ter o Tailscale ativado (funciona em casa e remotamente). Se apenas um dispositivo tiver o Tailscale ativado, a conexão falhará. Manter ambos sempre ativados oferece a experiência mais consistente."
           },
           {
             "q": "O que preciso para configurar o streaming?",
@@ -386,10 +386,9 @@
                 ]
               },
               {
-                "text": "O estado do Tailscale deve corresponder em ambos os dispositivos — ambos ATIVADOS ou ambos DESATIVADOS",
+                "text": "O Tailscale deve estar ATIVADO em ambos os dispositivos",
                 "sub": [
                   "Ambos ativados — funciona em casa e remotamente via 5G",
-                  "Ambos desativados — apenas Wi-Fi doméstico (não totalmente testado)",
                   "Misto (um ativado, outro não) — a conexão falhará",
                   "O nó de saída do Tailscale não precisa ser ativado",
                   "As contas do iCloud e Tailscale podem usar endereços de e-mail diferentes"

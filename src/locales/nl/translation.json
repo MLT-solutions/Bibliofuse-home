@@ -372,7 +372,7 @@
           },
           {
             "q": "Hoe werkt streaming van Mac of pc naar iPhone?",
-            "a": "Je Mac of pc draait een lokale server en schrijft het verbindingsadres naar iCloud Drive. Je iPhone pikt dit automatisch op. Beide apparaten moeten dezelfde Tailscale-status hebben: beide aan (werkt thuis en op afstand) of beide uit (alleen hetzelfde wifi, niet volledig getest). Als slechts één apparaat Tailscale aan heeft, mislukt de verbinding. Beide apparaten altijd aan houden geeft de meest consistente ervaring."
+            "a": "Je Mac of pc draait een lokale server en schrijft het verbindingsadres naar iCloud Drive. Je iPhone pikt dit automatisch op. Beide apparaten moeten Tailscale aan hebben (werkt thuis en op afstand). Als slechts één apparaat Tailscale aan heeft, mislukt de verbinding. Beide apparaten altijd aan houden geeft de meest consistente ervaring."
           },
           {
             "q": "Wat heb ik nodig om streaming in te stellen?",
@@ -386,10 +386,9 @@
                 ]
               },
               {
-                "text": "Tailscale-status moet overeenkomen op beide apparaten — beide AAN of beide UIT",
+                "text": "Tailscale moet AAN zijn op beide apparaten",
                 "sub": [
                   "Beide aan — werkt thuis en op afstand via 5G",
-                  "Beide uit — alleen thuis-wifi (niet volledig getest)",
                   "Gemengd (één aan, één uit) — verbinding mislukt",
                   "Tailscale exit-node hoeft niet ingeschakeld te zijn",
                   "iCloud- en Tailscale-accounts kunnen verschillende e-mailadressen gebruiken"
