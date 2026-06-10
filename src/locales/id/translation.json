@@ -267,7 +267,8 @@
         "badges": {
           "universal": "Pembelian universal",
           "edition": "Edisi",
-          "free": "Gratis"
+          "free": "Gratis",
+          "comingSoon": "Coming Soon"
         },
         "editions": {
           "apple": "BiblioFuse Reader",
@@ -364,6 +365,53 @@
             "6 bahasa|EN, ES, FR, NL, PT, ZH",
             "Inggris"
           ]
+        ],
+        "pcNotify": "Notify me when available"
+      },
+      "toolsSection": {
+        "eyebrow": "Standalone tools",
+        "title": "Also available as lightweight tools",
+        "web": {
+          "name": "BiblioFuse Web",
+          "subtitle": "Free · Browser",
+          "desc": "Compress and merge EPUB, CBZ, and PDF files in your browser. No install, no account.",
+          "cta": "Launch free tool"
+        },
+        "pcCbz": {
+          "name": "BiblioFuse CBZ",
+          "subtitle": "Windows · Microsoft Store",
+          "desc": "Compress and merge comic archives on Windows."
+        },
+        "pcEpub": {
+          "name": "BiblioFuse EPUB",
+          "subtitle": "Windows · Microsoft Store",
+          "desc": "Compress and merge EPUB files on Windows."
+        }
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Common questions",
+        "items": [
+          {
+            "q": "Does one purchase cover all platforms?",
+            "a": "No. iOS + Mac is a single universal purchase — one payment covers iPhone, iPad, and Mac. The Android Reader, PC Reader, and PC tools are each sold separately."
+          },
+          {
+            "q": "How does streaming from Mac or PC to iPhone work?",
+            "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. For remote access outside your home network, Tailscale is required. LAN-only streaming without Tailscale has not been fully tested — we recommend Tailscale for a reliable experience."
+          },
+          {
+            "q": "Why can't Android receive books from Mac or PC?",
+            "a": "The Android app uses a different codebase without iCloud integration, which is how the streaming handshake works. The best workflow for Android is to sync files to your phone using Syncthing or a similar tool, then add that folder as a library source in the app."
+          },
+          {
+            "q": "What is the difference between the PC Reader and the PC EPUB / CBZ tools?",
+            "a": "The PC Reader is a full reading app — it opens books, manages your library, compresses files, and streams to iPhone. The PC EPUB and CBZ tools are lighter, cheaper apps focused on compression and merging only, with no reader."
+          },
+          {
+            "q": "When will the PC Reader be available?",
+            "a": "The PC Reader is awaiting Microsoft Store approval. Email support@mlogictech.com with subject \"Notify me: BiblioFuse PC Reader\" and we will let you know when it launches."
+          }
         ]
       }
     },
@@ -888,6 +936,22 @@
           "excerpt": "BiblioFuse memungkinkan Anda mengorganisasi manga berdasarkan seri di iPhone menggunakan sistem tag bawaan — beri tag setiap volume dengan nama seri, lalu filter perpustakaan Anda untuk melihat semua volume dalam urutan baca. Tag dan penilaian disinkronkan antara iPhone, iPad, dan Mac melalui iCloud.",
           "seoDescription": "Organisasi manga berdasarkan seri di BiblioFuse di iPhone menggunakan tag, penilaian, dan penamaan file yang konsisten. Sinkronkan urutan baca Anda antara iPhone, iPad, dan Mac melalui iCloud."
         }
+      },
+      "eyebrow": "Blog",
+      "title": "Tips, guides & updates",
+      "subtitle": "Guides, release notes, and ideas to help you get more from your reading life.",
+      "readMore": "Read article",
+      "backToBlog": "Back to Blog",
+      "notFound": "Article not found. It may have been moved or removed.",
+      "homeSectionEyebrow": "From the Blog",
+      "homeSectionTitle": "Tips & updates",
+      "homeSectionDesc": "Guides, release notes, and ideas for your reading life.",
+      "viewAll": "View all articles",
+      "tags": {
+        "guide": "Guide",
+        "news": "News",
+        "tips": "Tips",
+        "update": "Update"
       }
     }
   }

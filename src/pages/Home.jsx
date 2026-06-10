@@ -523,30 +523,23 @@ function ToolsHighlight() {
   );
 }
 
-function ComparisonTable({ lang }) {
+function ComparisonTable() {
   const { t } = useTranslation();
   const table = t('redesign.home.table', { returnObjects: true });
   const editions = [
-    { key: 'apple', name: table.editions.apple, subtitle: table.subtitles.apple, badge: table.badges.universal, tint: 'blue' },
-    { key: 'android', name: table.editions.android, subtitle: table.subtitles.android, badge: table.badges.edition, tint: 'teal' },
-    { key: 'web', name: table.editions.web, subtitle: table.subtitles.web, badge: table.badges.free, tint: 'violet' },
-    { key: 'pc', name: table.editions.pc, subtitle: table.subtitles.pc, badge: table.badges.edition, tint: 'orange' },
+    { key: 'apple',   name: table.editions.apple,   subtitle: table.subtitles.apple,   badge: table.badges.universal, tint: 'blue' },
+    { key: 'pc',      name: table.editions.pc,      subtitle: table.subtitles.pc,      badge: table.badges.comingSoon, tint: 'orange' },
+    { key: 'android', name: table.editions.android, subtitle: table.subtitles.android, badge: table.badges.edition,   tint: 'teal' },
   ];
   const rows = table.rows.map((row, index) => ({
     label: row[0],
-    highlight: index === 6,
-    strong: index === 3 ? 'green' : undefined,
-    cells: {
-      apple: row[1],
-      android: row[2],
-      web: row[3],
-      pc: row[4],
-    },
+    highlight: index === 4,
+    cells: { apple: row[1], pc: row[2], android: row[3] },
   }));
 
   return (
     <section id="comparison-table" className="bg-white py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">{table.eyebrow}</div>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">{table.title}</h2>
@@ -554,13 +547,12 @@ function ComparisonTable({ lang }) {
         </div>
         <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-xl">
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[980px] table-fixed border-collapse">
+            <table className="w-full min-w-[640px] table-fixed border-collapse">
               <colgroup>
-                <col className="w-[220px]" />
-                <col className="w-[190px]" />
-                <col className="w-[190px]" />
-                <col className="w-[190px]" />
-                <col className="w-[190px]" />
+                <col className="w-[200px]" />
+                <col />
+                <col />
+                <col />
               </colgroup>
               <thead>
                 <tr className="bg-white">
@@ -587,7 +579,7 @@ function ComparisonTable({ lang }) {
                     </td>
                     {editions.map((edition) => (
                       <td key={edition.key} className="px-4 py-4 text-center align-top text-sm">
-                        {renderLocalizedTableCell(row.cells[edition.key], row.strong)}
+                        {renderLocalizedTableCell(row.cells[edition.key])}
                       </td>
                     ))}
                   </tr>
@@ -600,22 +592,113 @@ function ComparisonTable({ lang }) {
                       <span className="text-[10px] text-slate-400">{table.iosNote}</span>
                     </div>
                   </td>
-                  <td className="px-4 py-5 text-center align-middle"><StoreBadge type="play" size="sm" /></td>
                   <td className="px-4 py-5 text-center align-middle">
-                    <WebToolButton lang={lang} compact>{t('redesign.common.launch')}</WebToolButton>
+                    <a
+                      href="mailto:support@mlogictech.com?subject=Notify%20me%3A%20BiblioFuse%20PC%20Reader"
+                      className="inline-flex items-center gap-1.5 rounded-lg bg-orange-50 px-3 py-2 text-xs font-bold text-orange-700 transition hover:bg-orange-100"
+                    >
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                      </svg>
+                      {table.pcNotify}
+                    </a>
                   </td>
                   <td className="px-4 py-5 text-center align-middle">
-                    <div className="flex flex-col items-center gap-1.5">
-                      <MicrosoftStoreImageBadge href="https://apps.microsoft.com/detail/9p7b02538tfq" />
-                      <span className="text-[10px] text-slate-400">{table.cbz}</span>
-                      <MicrosoftStoreImageBadge href="https://apps.microsoft.com/detail/9pdllhdz6kkl" />
-                      <span className="text-[10px] text-slate-400">{table.epub}</span>
-                    </div>
+                    <StoreBadge type="play" size="sm" />
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function StandaloneToolsSection({ lang }) {
+  const { t } = useTranslation();
+  const s = t('redesign.home.toolsSection', { returnObjects: true });
+  return (
+    <section className="bg-slate-50 py-14 sm:py-16">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-8 text-center">
+          <div className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">{s.eyebrow}</div>
+          <h2 className="text-xl font-black tracking-tight text-slate-950">{s.title}</h2>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-3">
+          <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5">
+            <div className="mb-3 flex items-center gap-2.5">
+              <span className="grid h-9 w-9 flex-shrink-0 place-items-center rounded-xl bg-violet-50 text-violet-600"><ProductIcon kind="globe" /></span>
+              <div>
+                <div className="text-sm font-black text-slate-950">{s.web.name}</div>
+                <div className="text-[10px] text-slate-500">{s.web.subtitle}</div>
+              </div>
+            </div>
+            <p className="mb-4 flex-1 text-xs leading-relaxed text-slate-600">{s.web.desc}</p>
+            <WebToolButton lang={lang} compact>{s.web.cta}</WebToolButton>
+          </div>
+          <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5">
+            <div className="mb-3 flex items-center gap-2.5">
+              <span className="grid h-9 w-9 flex-shrink-0 place-items-center rounded-xl bg-orange-50 text-orange-600"><ProductIcon kind="folder" /></span>
+              <div>
+                <div className="text-sm font-black text-slate-950">{s.pcCbz.name}</div>
+                <div className="text-[10px] text-slate-500">{s.pcCbz.subtitle}</div>
+              </div>
+            </div>
+            <p className="mb-4 flex-1 text-xs leading-relaxed text-slate-600">{s.pcCbz.desc}</p>
+            <MicrosoftStoreImageBadge href="https://apps.microsoft.com/detail/9p7b02538tfq" />
+          </div>
+          <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5">
+            <div className="mb-3 flex items-center gap-2.5">
+              <span className="grid h-9 w-9 flex-shrink-0 place-items-center rounded-xl bg-orange-50 text-orange-600"><ProductIcon kind="book" /></span>
+              <div>
+                <div className="text-sm font-black text-slate-950">{s.pcEpub.name}</div>
+                <div className="text-[10px] text-slate-500">{s.pcEpub.subtitle}</div>
+              </div>
+            </div>
+            <p className="mb-4 flex-1 text-xs leading-relaxed text-slate-600">{s.pcEpub.desc}</p>
+            <MicrosoftStoreImageBadge href="https://apps.microsoft.com/detail/9pdllhdz6kkl" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FaqSection() {
+  const { t } = useTranslation();
+  const faq = t('redesign.home.faq', { returnObjects: true });
+  const [open, setOpen] = useState(null);
+  return (
+    <section className="bg-white py-16 sm:py-20">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-10 text-center">
+          <div className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">{faq.eyebrow}</div>
+          <h2 className="text-[clamp(1.75rem,3.5vw,2.5rem)] font-black tracking-tight text-slate-950">{faq.title}</h2>
+        </div>
+        <div className="divide-y divide-slate-200 rounded-2xl border border-slate-200">
+          {faq.items.map((item, i) => (
+            <div key={i}>
+              <button
+                onClick={() => setOpen(open === i ? null : i)}
+                className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+              >
+                <span className="text-sm font-bold text-slate-950">{item.q}</span>
+                <svg
+                  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
+                  strokeLinecap="round" strokeLinejoin="round"
+                  className={`flex-shrink-0 text-slate-400 transition-transform duration-200 ${open === i ? 'rotate-180' : ''}`}
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </button>
+              {open === i && (
+                <div className="px-6 pb-5 text-sm leading-relaxed text-slate-600">{item.a}</div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -1153,7 +1236,9 @@ const Home = () => {
       <Hero lang={lang} />
       <ProductFamily lang={lang} />
       <ReaderSection />
-      <ComparisonTable lang={lang} />
+      <ComparisonTable />
+      <StandaloneToolsSection lang={lang} />
+      <FaqSection />
       <ArchiveScannerSection />
       <SmartDecryptSection />
       <ContentCueSection />
