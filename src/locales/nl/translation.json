@@ -233,7 +233,7 @@
       "platforms": "Werkt op Windows, macOS, Linux, Android, iOS en ChromeOS"
     },
     "footer": {
-      "desc": "Een kleine suite tools en readers voor mensen die hun bibliotheek op hun eigen apparaten willen houden, niet achter andermans login.",
+      "desc": "Een kleine suite van tools en lezers voor mensen die hun bibliotheek op hun eigen apparaten willen bewaren, niet achter iemand anders zijn login.",
       "products": "Producten",
       "company": "Bedrijf",
       "legal": "Juridisch",
@@ -986,18 +986,18 @@
         }
       },
       "eyebrow": "Blog",
-      "title": "Tips, guides & updates",
-      "subtitle": "Guides, release notes, and ideas to help you get more from your reading life.",
-      "readMore": "Read article",
-      "backToBlog": "Back to Blog",
-      "notFound": "Article not found. It may have been moved or removed.",
-      "homeSectionEyebrow": "From the Blog",
+      "title": "Tips, handleidingen en updates",
+      "subtitle": "Handleidingen, release-notes en ideeën om meer uit je leesleven te halen.",
+      "readMore": "Artikel lezen",
+      "backToBlog": "Terug naar blog",
+      "notFound": "Artikel niet gevonden. Het is mogelijk verplaatst of verwijderd.",
+      "homeSectionEyebrow": "Van de blog",
       "homeSectionTitle": "Tips & updates",
-      "homeSectionDesc": "Guides, release notes, and ideas for your reading life.",
-      "viewAll": "View all articles",
+      "homeSectionDesc": "Handleidingen, release-notes en ideeën voor je leesleven.",
+      "viewAll": "Alle artikelen bekijken",
       "tags": {
-        "guide": "Guide",
-        "news": "News",
+        "guide": "Handleiding",
+        "news": "Nieuws",
         "tips": "Tips",
         "update": "Update"
       }

@@ -233,7 +233,7 @@
       "platforms": "Funciona en Windows, macOS, Linux, Android, iOS y ChromeOS"
     },
     "footer": {
-      "desc": "Una pequeña suite de herramientas y lectores para quienes quieren su biblioteca en sus propios dispositivos, no detrás de un inicio de sesión ajeno.",
+      "desc": "Un pequeño conjunto de herramientas y lectores para personas que quieren su biblioteca en sus propios dispositivos, no detrás del inicio de sesión de otra persona.",
       "products": "Productos",
       "company": "Empresa",
       "legal": "Legal",
@@ -986,20 +986,20 @@
         }
       },
       "eyebrow": "Blog",
-      "title": "Tips, guides & updates",
-      "subtitle": "Guides, release notes, and ideas to help you get more from your reading life.",
-      "readMore": "Read article",
-      "backToBlog": "Back to Blog",
-      "notFound": "Article not found. It may have been moved or removed.",
-      "homeSectionEyebrow": "From the Blog",
-      "homeSectionTitle": "Tips & updates",
-      "homeSectionDesc": "Guides, release notes, and ideas for your reading life.",
-      "viewAll": "View all articles",
+      "title": "Consejos, guías y novedades",
+      "subtitle": "Guías, notas de versión e ideas para sacar más partido a tu vida lectora.",
+      "readMore": "Leer artículo",
+      "backToBlog": "Volver al blog",
+      "notFound": "Artículo no encontrado. Es posible que haya sido movido o eliminado.",
+      "homeSectionEyebrow": "Del blog",
+      "homeSectionTitle": "Consejos y novedades",
+      "homeSectionDesc": "Guías, notas de versión e ideas para tu vida lectora.",
+      "viewAll": "Ver todos los artículos",
       "tags": {
-        "guide": "Guide",
-        "news": "News",
-        "tips": "Tips",
-        "update": "Update"
+        "guide": "Guía",
+        "news": "Noticias",
+        "tips": "Consejos",
+        "update": "Actualización"
       }
     }
   }

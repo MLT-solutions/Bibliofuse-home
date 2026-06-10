@@ -233,13 +233,13 @@
       "platforms": "Berfungsi pada Windows, macOS, Linux, Android, iOS dan ChromeOS"
     },
     "footer": {
-      "desc": "Satu suite kecil alat dan pembaca untuk pengguna yang mahu pustaka mereka pada peranti sendiri, bukan di sebalik log masuk pihak lain.",
+      "desc": "Suite kecil alat dan pembaca untuk orang yang ingin menyimpan perpustakaan mereka di peranti sendiri, bukan di sebalik log masuk orang lain.",
       "products": "Produk",
       "company": "Syarikat",
       "legal": "Undang-undang",
       "webTool": "Alat web",
-      "contact": "Hubungi",
-      "work": "Bekerja dengan kami",
+      "contact": "Hubungi kami",
+      "work": "Bekerja bersama kami",
       "eula": "Terma Penggunaan (EULA)",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
@@ -986,20 +986,20 @@
         }
       },
       "eyebrow": "Blog",
-      "title": "Tips, guides & updates",
-      "subtitle": "Guides, release notes, and ideas to help you get more from your reading life.",
-      "readMore": "Read article",
-      "backToBlog": "Back to Blog",
-      "notFound": "Article not found. It may have been moved or removed.",
-      "homeSectionEyebrow": "From the Blog",
-      "homeSectionTitle": "Tips & updates",
-      "homeSectionDesc": "Guides, release notes, and ideas for your reading life.",
-      "viewAll": "View all articles",
+      "title": "Tips, panduan & kemas kini",
+      "subtitle": "Panduan, nota keluaran, dan idea untuk meningkatkan kehidupan membaca anda.",
+      "readMore": "Baca artikel",
+      "backToBlog": "Kembali ke blog",
+      "notFound": "Artikel tidak dijumpai. Ia mungkin telah dipindahkan atau dibuang.",
+      "homeSectionEyebrow": "Dari blog",
+      "homeSectionTitle": "Tips & kemas kini",
+      "homeSectionDesc": "Panduan, nota keluaran, dan idea untuk kehidupan membaca anda.",
+      "viewAll": "Lihat semua artikel",
       "tags": {
-        "guide": "Guide",
-        "news": "News",
+        "guide": "Panduan",
+        "news": "Berita",
         "tips": "Tips",
-        "update": "Update"
+        "update": "Kemas kini"
       }
     }
   }

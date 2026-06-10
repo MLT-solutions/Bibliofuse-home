@@ -233,14 +233,14 @@
       "platforms": "支持 Windows、macOS、Linux、Android、iOS 和 ChromeOS"
     },
     "footer": {
-      "desc": "一套小巧的工具和阅读器，让你的图书馆保留在自己的设备上，而不是被锁在他人的登录系统后面。",
+      "desc": "一套小型工具和阅读器，专为希望将书库保存在自己设备上（而非依赖他人账号）的读者设计。",
       "products": "产品",
       "company": "公司",
-      "legal": "法律",
+      "legal": "法律信息",
       "webTool": "网页工具",
-      "contact": "联系",
+      "contact": "联系我们",
       "work": "与我们合作",
-      "eula": "使用条款 (EULA)",
+      "eula": "使用条款（EULA）",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
     "home": {
@@ -986,20 +986,20 @@
         }
       },
       "eyebrow": "Blog",
-      "title": "Tips, guides & updates",
-      "subtitle": "Guides, release notes, and ideas to help you get more from your reading life.",
-      "readMore": "Read article",
-      "backToBlog": "Back to Blog",
-      "notFound": "Article not found. It may have been moved or removed.",
-      "homeSectionEyebrow": "From the Blog",
-      "homeSectionTitle": "Tips & updates",
-      "homeSectionDesc": "Guides, release notes, and ideas for your reading life.",
-      "viewAll": "View all articles",
+      "title": "技巧、指南与更新",
+      "subtitle": "指南、版本说明和让您的阅读生活更精彩的想法。",
+      "readMore": "阅读文章",
+      "backToBlog": "返回博客",
+      "notFound": "文章未找到，可能已被移动或删除。",
+      "homeSectionEyebrow": "来自博客",
+      "homeSectionTitle": "技巧与更新",
+      "homeSectionDesc": "指南、版本说明和阅读生活的灵感。",
+      "viewAll": "查看所有文章",
       "tags": {
-        "guide": "Guide",
-        "news": "News",
-        "tips": "Tips",
-        "update": "Update"
+        "guide": "指南",
+        "news": "资讯",
+        "tips": "技巧",
+        "update": "更新"
       }
     }
   }

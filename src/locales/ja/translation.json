@@ -233,14 +233,14 @@
       "platforms": "Windows、macOS、Linux、Android、iOS、ChromeOSで動作"
     },
     "footer": {
-      "desc": "自分のライブラリを他社ログインの奥ではなく、自分のデバイス上に置きたい人のための小さなツールとリーダーのセットです。",
+      "desc": "自分のデバイスに本棚を持ちたい方のための、小さなツールとリーダーのセット。",
       "products": "製品",
       "company": "会社",
       "legal": "法的情報",
       "webTool": "Webツール",
       "contact": "お問い合わせ",
-      "work": "協業について",
-      "eula": "利用規約 (EULA)",
+      "work": "採用・協業",
+      "eula": "利用規約（EULA）",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
     "home": {
@@ -986,20 +986,20 @@
         }
       },
       "eyebrow": "Blog",
-      "title": "Tips, guides & updates",
-      "subtitle": "Guides, release notes, and ideas to help you get more from your reading life.",
-      "readMore": "Read article",
-      "backToBlog": "Back to Blog",
-      "notFound": "Article not found. It may have been moved or removed.",
-      "homeSectionEyebrow": "From the Blog",
-      "homeSectionTitle": "Tips & updates",
-      "homeSectionDesc": "Guides, release notes, and ideas for your reading life.",
-      "viewAll": "View all articles",
+      "title": "ヒント、ガイド、アップデート",
+      "subtitle": "ガイド、リリースノート、読書生活をより豊かにするアイデア。",
+      "readMore": "記事を読む",
+      "backToBlog": "ブログに戻る",
+      "notFound": "記事が見つかりません。移動または削除された可能性があります。",
+      "homeSectionEyebrow": "ブログから",
+      "homeSectionTitle": "ヒントとアップデート",
+      "homeSectionDesc": "読書生活のためのガイド、リリースノート、アイデア。",
+      "viewAll": "すべての記事を見る",
       "tags": {
-        "guide": "Guide",
-        "news": "News",
-        "tips": "Tips",
-        "update": "Update"
+        "guide": "ガイド",
+        "news": "ニュース",
+        "tips": "ヒント",
+        "update": "アップデート"
       }
     }
   }

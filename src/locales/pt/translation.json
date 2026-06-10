@@ -233,14 +233,14 @@
       "platforms": "Funciona em Windows, macOS, Linux, Android, iOS e ChromeOS"
     },
     "footer": {
-      "desc": "Uma pequena suíte de ferramentas e leitores para quem quer a biblioteca nos próprios dispositivos, não atrás do login de outra empresa.",
+      "desc": "Um pequeno conjunto de ferramentas e leitores para pessoas que querem sua biblioteca nos próprios dispositivos, sem depender do login de outra pessoa.",
       "products": "Produtos",
       "company": "Empresa",
       "legal": "Legal",
       "webTool": "Ferramenta web",
       "contact": "Contato",
       "work": "Trabalhe conosco",
-      "eula": "Termos de Uso (EULA)",
+      "eula": "Termos de uso (EULA)",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
     "home": {
@@ -986,20 +986,20 @@
         }
       },
       "eyebrow": "Blog",
-      "title": "Tips, guides & updates",
-      "subtitle": "Guides, release notes, and ideas to help you get more from your reading life.",
-      "readMore": "Read article",
-      "backToBlog": "Back to Blog",
-      "notFound": "Article not found. It may have been moved or removed.",
-      "homeSectionEyebrow": "From the Blog",
-      "homeSectionTitle": "Tips & updates",
-      "homeSectionDesc": "Guides, release notes, and ideas for your reading life.",
-      "viewAll": "View all articles",
+      "title": "Dicas, guias e novidades",
+      "subtitle": "Guias, notas de versão e ideias para aproveitar mais sua vida de leitura.",
+      "readMore": "Ler artigo",
+      "backToBlog": "Voltar ao blog",
+      "notFound": "Artigo não encontrado. Pode ter sido movido ou removido.",
+      "homeSectionEyebrow": "Do blog",
+      "homeSectionTitle": "Dicas e novidades",
+      "homeSectionDesc": "Guias, notas de versão e ideias para sua vida de leitura.",
+      "viewAll": "Ver todos os artigos",
       "tags": {
-        "guide": "Guide",
-        "news": "News",
-        "tips": "Tips",
-        "update": "Update"
+        "guide": "Guia",
+        "news": "Notícias",
+        "tips": "Dicas",
+        "update": "Atualização"
       }
     }
   }

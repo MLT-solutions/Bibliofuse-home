@@ -233,13 +233,13 @@
       "platforms": "Bekerja di Windows, macOS, Linux, Android, iOS, dan ChromeOS"
     },
     "footer": {
-      "desc": "Rangkaian kecil alat dan reader untuk orang yang ingin pustakanya ada di perangkat sendiri, bukan di balik login pihak lain.",
+      "desc": "Rangkaian kecil alat dan pembaca untuk orang-orang yang ingin menyimpan perpustakaan di perangkat mereka sendiri, bukan di balik akun orang lain.",
       "products": "Produk",
       "company": "Perusahaan",
-      "legal": "Legal",
+      "legal": "Hukum",
       "webTool": "Web Tool",
       "contact": "Kontak",
-      "work": "Bekerja dengan kami",
+      "work": "Bergabung dengan kami",
       "eula": "Ketentuan Penggunaan (EULA)",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
@@ -986,20 +986,20 @@
         }
       },
       "eyebrow": "Blog",
-      "title": "Tips, guides & updates",
-      "subtitle": "Guides, release notes, and ideas to help you get more from your reading life.",
-      "readMore": "Read article",
-      "backToBlog": "Back to Blog",
-      "notFound": "Article not found. It may have been moved or removed.",
-      "homeSectionEyebrow": "From the Blog",
-      "homeSectionTitle": "Tips & updates",
-      "homeSectionDesc": "Guides, release notes, and ideas for your reading life.",
-      "viewAll": "View all articles",
+      "title": "Tips, panduan & pembaruan",
+      "subtitle": "Panduan, catatan rilis, dan ide untuk meningkatkan kehidupan membaca Anda.",
+      "readMore": "Baca artikel",
+      "backToBlog": "Kembali ke blog",
+      "notFound": "Artikel tidak ditemukan. Mungkin sudah dipindahkan atau dihapus.",
+      "homeSectionEyebrow": "Dari blog",
+      "homeSectionTitle": "Tips & pembaruan",
+      "homeSectionDesc": "Panduan, catatan rilis, dan ide untuk kehidupan membaca Anda.",
+      "viewAll": "Lihat semua artikel",
       "tags": {
-        "guide": "Guide",
-        "news": "News",
+        "guide": "Panduan",
+        "news": "Berita",
         "tips": "Tips",
-        "update": "Update"
+        "update": "Pembaruan"
       }
     }
   }

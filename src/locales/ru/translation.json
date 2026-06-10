@@ -233,13 +233,13 @@
       "platforms": "Работает на Windows, macOS, Linux, Android, iOS и ChromeOS"
     },
     "footer": {
-      "desc": "Небольшой набор инструментов и читалок для тех, кто хочет хранить библиотеку на своих устройствах, а не за чужим входом.",
+      "desc": "Небольшой набор инструментов и читалок для людей, которые хотят хранить библиотеку на собственных устройствах, а не за чужим логином.",
       "products": "Продукты",
       "company": "Компания",
       "legal": "Правовая информация",
       "webTool": "Веб-инструмент",
       "contact": "Контакты",
-      "work": "Сотрудничество",
+      "work": "Работайте с нами",
       "eula": "Условия использования (EULA)",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
@@ -986,20 +986,20 @@
         }
       },
       "eyebrow": "Blog",
-      "title": "Tips, guides & updates",
-      "subtitle": "Guides, release notes, and ideas to help you get more from your reading life.",
-      "readMore": "Read article",
-      "backToBlog": "Back to Blog",
-      "notFound": "Article not found. It may have been moved or removed.",
-      "homeSectionEyebrow": "From the Blog",
-      "homeSectionTitle": "Tips & updates",
-      "homeSectionDesc": "Guides, release notes, and ideas for your reading life.",
-      "viewAll": "View all articles",
+      "title": "Советы, руководства и обновления",
+      "subtitle": "Руководства, заметки о выпусках и идеи для вашей читательской жизни.",
+      "readMore": "Читать статью",
+      "backToBlog": "Назад в блог",
+      "notFound": "Статья не найдена. Возможно, она была перемещена или удалена.",
+      "homeSectionEyebrow": "Из блога",
+      "homeSectionTitle": "Советы и обновления",
+      "homeSectionDesc": "Руководства, заметки о выпусках и идеи для вашей читательской жизни.",
+      "viewAll": "Все статьи",
       "tags": {
-        "guide": "Guide",
-        "news": "News",
-        "tips": "Tips",
-        "update": "Update"
+        "guide": "Руководство",
+        "news": "Новости",
+        "tips": "Советы",
+        "update": "Обновление"
       }
     }
   }

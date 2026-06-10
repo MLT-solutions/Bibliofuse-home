@@ -50,6 +50,7 @@ function MicrosoftStoreImageBadge({ href, size = 'sm', className = '' }) {
 }
 
 function PCReaderComingSoonBadge({ light = false, className = '' }) {
+  const { t } = useTranslation();
   return (
     <div className={`inline-flex flex-col items-center gap-1 ${className}`}>
       <img
@@ -58,7 +59,7 @@ function PCReaderComingSoonBadge({ light = false, className = '' }) {
         className="h-12 w-auto object-contain opacity-40 grayscale"
       />
       <span className={`text-[10px] font-semibold tracking-wide ${light ? 'text-white/50' : 'text-slate-400'}`}>
-        PC Reader — Coming Soon
+        PC Reader — {t('redesign.home.table.badges.comingSoon')}
       </span>
     </div>
   );
