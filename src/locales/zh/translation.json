@@ -327,9 +327,9 @@
           ],
           [
             "语言支持",
-            "12种语言|EN ES FR NL PT RU ZH JA KO ID MS",
-            "11种语言",
-            "12种语言|EN ES FR NL PT RU ZH JA KO ID MS"
+            "11种语言|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11种语言|EN ES FR NL PT RU ZH JA KO ID MS",
+            "12种语言|EN ES FR NL PT RU ZH JA KO ID MS DE"
           ]
         ],
         "pcNotify": "上线时通知我"

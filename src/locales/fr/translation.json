@@ -327,9 +327,9 @@
           ],
           [
             "Langues",
-            "12 langues|EN ES FR NL PT RU ZH JA KO ID MS",
-            "11 langues",
-            "12 langues|EN ES FR NL PT RU ZH JA KO ID MS"
+            "11 langues|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11 langues|EN ES FR NL PT RU ZH JA KO ID MS",
+            "12 langues|EN ES FR NL PT RU ZH JA KO ID MS DE"
           ]
         ],
         "pcNotify": "Me notifier quand disponible"

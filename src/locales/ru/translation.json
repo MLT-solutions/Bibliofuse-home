@@ -327,9 +327,9 @@
           ],
           [
             "Языковая поддержка",
-            "12 языков|EN ES FR NL PT RU ZH JA KO ID MS",
-            "11 языков",
-            "12 языков|EN ES FR NL PT RU ZH JA KO ID MS"
+            "11 языков|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11 языков|EN ES FR NL PT RU ZH JA KO ID MS",
+            "12 языков|EN ES FR NL PT RU ZH JA KO ID MS DE"
           ]
         ],
         "pcNotify": "Уведомить о выходе"

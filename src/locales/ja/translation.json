@@ -327,9 +327,9 @@
           ],
           [
             "言語サポート",
-            "12言語|EN ES FR NL PT RU ZH JA KO ID MS",
-            "11言語",
-            "12言語|EN ES FR NL PT RU ZH JA KO ID MS"
+            "11言語|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11言語|EN ES FR NL PT RU ZH JA KO ID MS",
+            "12言語|EN ES FR NL PT RU ZH JA KO ID MS DE"
           ]
         ],
         "pcNotify": "公開時に通知する"

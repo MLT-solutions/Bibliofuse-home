@@ -531,13 +531,48 @@
           "android": "Phone · Tablet"
         },
         "rows": [
-          ["Compress / merge", "EPUB / CBZ / CBR", "EPUB / CBZ / CBR", "EPUB / CBZ"],
-          ["Read formats", "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT", "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT", "EPUB · PDF · CBZ · ZIP"],
-          ["Reader features", "TTS, peek zoom, auto-scroll, progress, ratings, tags", "TTS, auto-scroll, progress, ratings, tags", "Peek zoom, auto-scroll, progress, ratings, tags"],
-          ["PC / Mac → iPhone streaming", "Tailscale ON — home & 5G remote||No Tailscale — home Wi-Fi only (not in roadmap yet)", "Tailscale ON — home & 5G remote||No Tailscale — home Wi-Fi only (not in roadmap yet)", "-"],
-          ["Library sources", "Local + iCloud + SMB|Mac: native · iOS: via streaming", "Local + iCloud + SMB", "Local + external folders"],
-          ["iCloud bookshelf", "Cross-device sync", "Cross-device sync", "-"],
-          ["Language support", "12 languages|EN ES FR NL PT RU ZH JA KO ID MS", "11 languages", "12 languages|EN ES FR NL PT RU ZH JA KO ID MS"]
+          [
+            "Compress / merge",
+            "EPUB / CBZ / CBR",
+            "EPUB / CBZ / CBR",
+            "EPUB / CBZ"
+          ],
+          [
+            "Read formats",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "EPUB · PDF · CBZ · ZIP"
+          ],
+          [
+            "Reader features",
+            "TTS, peek zoom, auto-scroll, progress, ratings, tags",
+            "TTS, auto-scroll, progress, ratings, tags",
+            "Peek zoom, auto-scroll, progress, ratings, tags"
+          ],
+          [
+            "PC / Mac → iPhone streaming",
+            "Tailscale ON — home & 5G remote||No Tailscale — home Wi-Fi only (not in roadmap yet)",
+            "Tailscale ON — home & 5G remote||No Tailscale — home Wi-Fi only (not in roadmap yet)",
+            "-"
+          ],
+          [
+            "Library sources",
+            "Local + iCloud + SMB|Mac: native · iOS: via streaming",
+            "Local + iCloud + SMB",
+            "Local + external folders"
+          ],
+          [
+            "iCloud bookshelf",
+            "Cross-device sync",
+            "Cross-device sync",
+            "-"
+          ],
+          [
+            "Language support",
+            "11 languages|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11 languages|EN ES FR NL PT RU ZH JA KO ID MS",
+            "12 languages|EN ES FR NL PT RU ZH JA KO ID MS DE"
+          ]
         ],
         "unique": "Unique",
         "where": "Where to get it",

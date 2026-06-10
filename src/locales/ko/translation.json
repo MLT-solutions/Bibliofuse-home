@@ -327,9 +327,9 @@
           ],
           [
             "언어 지원",
-            "12개 언어|EN ES FR NL PT RU ZH JA KO ID MS",
-            "11개 언어",
-            "12개 언어|EN ES FR NL PT RU ZH JA KO ID MS"
+            "11개 언어|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11개 언어|EN ES FR NL PT RU ZH JA KO ID MS",
+            "12개 언어|EN ES FR NL PT RU ZH JA KO ID MS DE"
           ]
         ],
         "pcNotify": "출시 시 알림 받기"
