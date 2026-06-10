@@ -50,21 +50,6 @@ function MicrosoftStoreImageBadge({ href, size = 'sm', className = '' }) {
   );
 }
 
-function PCReaderComingSoonBadge({ light = false, className = '' }) {
-  const { t } = useTranslation();
-  return (
-    <div className={`inline-flex flex-col items-center gap-1 ${className}`}>
-      <img
-        src="/image/Microsoft_Store_badge.svg"
-        alt="BiblioFuse PC Reader — Coming Soon"
-        className="h-12 w-auto object-contain opacity-40 grayscale"
-      />
-      <span className={`text-[10px] font-semibold tracking-wide ${light ? 'text-white/50' : 'text-slate-400'}`}>
-        PC Reader — {t('redesign.home.table.badges.comingSoon')}
-      </span>
-    </div>
-  );
-}
 
 function WebToolButton({ lang, children, compact = false }) {
   return (
@@ -545,7 +530,7 @@ function ComparisonTable() {
   const table = t('redesign.home.table', { returnObjects: true });
   const editions = [
     { key: 'apple',   name: table.editions.apple,   subtitle: table.subtitles.apple,   badge: table.badges.universal, tint: 'blue' },
-    { key: 'pc',      name: table.editions.pc,      subtitle: table.subtitles.pc,      badge: table.badges.comingSoon, tint: 'orange' },
+    { key: 'pc',      name: table.editions.pc,      subtitle: table.subtitles.pc,      badge: table.badges.msStore,    tint: 'orange' },
     { key: 'android', name: table.editions.android, subtitle: table.subtitles.android, badge: table.badges.edition,   tint: 'teal' },
   ];
   const rows = table.rows.map((row, index) => ({

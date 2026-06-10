@@ -269,7 +269,7 @@
           "universal": "通用购买",
           "edition": "版本",
           "free": "免费",
-          "comingSoon": "即将推出"
+          "msStore": "Microsoft Store"
         },
         "editions": {
           "apple": "BiblioFuse Reader iOS / macOS",

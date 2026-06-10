@@ -269,7 +269,7 @@
           "universal": "Универсальная покупка",
           "edition": "Версия",
           "free": "Бесплатно",
-          "comingSoon": "Скоро"
+          "msStore": "Microsoft Store"
         },
         "editions": {
           "apple": "BiblioFuse Reader iOS / macOS",

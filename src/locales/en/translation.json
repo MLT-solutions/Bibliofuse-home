@@ -521,8 +521,8 @@
         "feature": "Feature",
         "badges": {
           "universal": "Universal purchase",
-          "comingSoon": "Coming Soon",
-          "edition": "Edition"
+          "edition": "Edition",
+          "msStore": "Microsoft Store"
         },
         "editions": {
           "apple": "BiblioFuse Reader iOS / macOS",
