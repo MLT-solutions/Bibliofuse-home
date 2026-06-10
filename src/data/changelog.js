@@ -10,7 +10,7 @@ export const ENTRIES = [
     platform: 'ios',
     type: 'release',
     title: 'v2.0.4 — iOS & macOS',
-    desc: 'TTS now resumes from your visible scroll position instead of the chapter top. Bug fixes for Mac streaming toolbar sort/filter controls and stale connection handling.',
+    desc: 'Fixed stale Mac streaming connections and sort/filter toolbar controls in the Mac stream view.',
   },
   {
     date: '2026-06-02',
@@ -115,11 +115,6 @@ export const KNOWN_ISSUES = [
     desc: "iOS's App Transport Security blocks plain HTTP to local IPs. Tailscale is required for both home Wi-Fi and remote streaming. A LAN-only mode without Tailscale is not currently in the roadmap.",
   },
   {
-    platform: 'pc',
-    title: 'Microsoft Store approval pending',
-    desc: 'The PC Reader app has been submitted but not yet approved. It is not publicly downloadable yet.',
-  },
-  {
     platform: 'android',
     title: 'No Mac/PC → Android streaming',
     desc: 'Android uses a separate Flutter codebase without iCloud integration. Streaming support would require a near-total rewrite and is not planned.',
@@ -137,6 +132,12 @@ export const ROADMAP = [
     title: 'Microsoft Store public launch',
     desc: 'Awaiting Store approval. Will be available as a free download with a 7-day trial and one-time lifetime purchase.',
     status: 'pending',
+  },
+  {
+    platform: 'ios',
+    title: 'TTS resume from scroll position',
+    desc: 'Text-to-speech will resume from your current visible scroll position instead of the chapter top. Targeting the next App Store release.',
+    status: 'exploring',
   },
   {
     platform: 'ios',
