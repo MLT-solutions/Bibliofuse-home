@@ -477,10 +477,6 @@
           {
             "q": "Quelle est la différence entre le PC Reader et les outils PC EPUB / CBZ ?",
             "a": "Le PC Reader est une application de lecture complète — il ouvre des livres, gère votre bibliothèque, compresse des fichiers et diffuse vers iPhone. Les outils PC EPUB et CBZ sont des apps plus légères et moins chères axées uniquement sur la compression et la fusion, sans lecteur."
-          },
-          {
-            "q": "Quand le PC Reader sera-t-il disponible ?",
-            "a": "Le PC Reader attend l'approbation du Microsoft Store. Envoyez un e-mail à support@mlogictech.com avec l'objet \"Notify me: BiblioFuse PC Reader\" et nous vous avertirons lors du lancement."
           }
         ]
       }

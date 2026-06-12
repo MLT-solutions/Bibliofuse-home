@@ -689,7 +689,7 @@ function FaqSection({ lang }) {
               </button>
               {open === i && (
                 <div className="px-6 pb-5 text-sm leading-relaxed text-slate-600">
-                  {item.a && <p className={item.bullets ? 'mb-3' : ''}>{item.a}</p>}
+                  {item.a && <p className={item.bullets ? 'mb-3' : ''} dangerouslySetInnerHTML={{ __html: item.a }} />}
                   {item.bullets && (
                     <ul className="space-y-2">
                       {item.bullets.map((bullet, bi) => (

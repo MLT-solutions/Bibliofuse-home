@@ -477,10 +477,6 @@
           {
             "q": "PC ReaderとPC EPUB / CBZツールの違いは何ですか？",
             "a": "PC Readerは完全な読書アプリです — 本を開き、ライブラリを管理し、ファイルを圧縮し、iPhoneにストリーミングします。PC EPUBとCBZツールは、リーダーなしで圧縮と結合のみに特化した、より軽量で安価なアプリです。"
-          },
-          {
-            "q": "PC Readerはいつ利用可能になりますか？",
-            "a": "PC ReaderはMicrosoft Storeの承認待ちです。件名「Notify me: BiblioFuse PC Reader」でsupport@mlogictech.comにメールを送ってください。リリース時にお知らせします。"
           }
         ]
       }
