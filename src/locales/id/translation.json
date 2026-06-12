@@ -400,6 +400,28 @@
             ]
           },
           {
+            "q": "Streaming sudah dikonfigurasi dengan benar tapi masih tidak berfungsi — apa yang harus dicoba?",
+            "a": "Cache endpoint yang kedaluwarsa adalah penyebab paling umum. Satu atau lebih file <code>stream_endpoint.json</code> yang tersimpan di iCloud memiliki stempel waktu yang sudah lama, sehingga BiblioFuse tidak dapat menemukan host.",
+            "bullets": [
+              {
+                "text": "Hapus file-file yang kedaluwarsa dari iCloud",
+                "sub": [
+                  "Di iPhone: buka aplikasi File → iCloud Drive → BiblioFuse. Hapus semua file bernama <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, dll.",
+                  "Di Mac: buka Finder → iCloud Drive → BiblioFuse (root) dan BiblioFuse → Dokumen. Hapus semua file <code>stream_endpoint*.json</code> di kedua lokasi.",
+                  "Di PC: iCloud mungkin hanya menampilkan versi cloud (hanya online) dari file-file ini, sehingga penghapusan dari PC mungkin tidak dapat diandalkan — gunakan iPhone atau Mac."
+                ]
+              },
+              {
+                "text": "Setelah menghapus, buka kembali BiblioFuse di host (Mac atau PC) dan iPhone",
+                "sub": [
+                  "Aplikasi host akan membuat ulang file endpoint baru dengan stempel waktu terkini.",
+                  "Di iPhone, buka daftar sumber streaming — Anda seharusnya melihat nama PC atau Mac dengan titik hijau di sebelah kanan, yang mengonfirmasi bahwa perangkat telah terdeteksi.",
+                  "Jika titik berwarna abu-abu, tunggu beberapa detik lagi atau paksa tutup dan buka kembali BiblioFuse di host."
+                ]
+              }
+            ]
+          },
+          {
             "q": "Mengapa streaming memerlukan Tailscale? Tidak bisakah menggunakan Wi-Fi rumah saja?",
             "a": "Tailscale diperlukan karena cara iOS menangani koneksi jaringan lokal. Berikut yang terjadi:",
             "bullets": [

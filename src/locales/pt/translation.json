@@ -400,6 +400,28 @@
             ]
           },
           {
+            "q": "O streaming está configurado corretamente mas ainda não funciona — o que devo tentar?",
+            "a": "Um cache de endpoints desatualizado é a causa mais comum. Um ou mais arquivos <code>stream_endpoint.json</code> armazenados no iCloud têm um timestamp desatualizado, impedindo o BiblioFuse de descobrir o host.",
+            "bullets": [
+              {
+                "text": "Exclua os arquivos desatualizados do iCloud",
+                "sub": [
+                  "No iPhone: abra o app Arquivos → iCloud Drive → BiblioFuse. Exclua qualquer arquivo chamado <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
+                  "No Mac: abra o Finder → iCloud Drive → BiblioFuse (raiz) e BiblioFuse → Documentos. Exclua todos os arquivos <code>stream_endpoint*.json</code> em ambos os locais.",
+                  "No PC: o iCloud pode mostrar apenas a versão na nuvem (somente online) desses arquivos, portanto a exclusão pelo PC pode não funcionar de forma confiável — use iPhone ou Mac."
+                ]
+              },
+              {
+                "text": "Após excluir, reabra o BiblioFuse no host (Mac ou PC) e no iPhone",
+                "sub": [
+                  "O app host regenerará um novo arquivo de endpoint com um timestamp atual.",
+                  "No iPhone, vá para a lista de fontes de streaming — você deve ver o nome do PC ou Mac com um ponto verde à direita, confirmando que foi detectado.",
+                  "Se o ponto estiver cinza, aguarde mais alguns segundos ou force o fechamento e reabra o BiblioFuse no host."
+                ]
+              }
+            ]
+          },
+          {
             "q": "Por que o streaming requer Tailscale? Não pode funcionar apenas com o Wi-Fi doméstico?",
             "a": "O Tailscale é necessário por causa de como o iOS trata as conexões de rede local. Veja o que aconteceu:",
             "bullets": [

@@ -400,6 +400,28 @@
             ]
           },
           {
+            "q": "Le streaming est correctement configuré mais ne fonctionne toujours pas — que dois-je essayer ?",
+            "a": "Un cache d'endpoints obsolète est la cause la plus fréquente. Un ou plusieurs fichiers <code>stream_endpoint.json</code> stockés dans iCloud ont un horodatage dépassé, ce qui empêche BiblioFuse de découvrir l'hôte.",
+            "bullets": [
+              {
+                "text": "Supprimer les fichiers obsolètes d'iCloud",
+                "sub": [
+                  "Sur iPhone : ouvrez l'app Fichiers → iCloud Drive → BiblioFuse. Supprimez tout fichier nommé <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
+                  "Sur Mac : ouvrez le Finder → iCloud Drive → BiblioFuse (racine) et BiblioFuse → Documents. Supprimez tous les fichiers <code>stream_endpoint*.json</code> aux deux emplacements.",
+                  "Sur PC : iCloud peut n'afficher que la version cloud (en ligne uniquement) de ces fichiers, la suppression depuis le PC peut donc ne pas être fiable — utilisez iPhone ou Mac."
+                ]
+              },
+              {
+                "text": "Après la suppression, rouvrez BiblioFuse sur l'hôte (Mac ou PC) et sur l'iPhone",
+                "sub": [
+                  "L'app hôte régénérera un nouveau fichier d'endpoint avec un horodatage actuel.",
+                  "Sur iPhone, accédez à la liste des sources de streaming — vous devriez voir le nom du PC ou Mac avec un point vert à droite, confirmant qu'il a été détecté.",
+                  "Si le point est gris, attendez quelques secondes supplémentaires ou forcez la fermeture et rouvrez BiblioFuse sur l'hôte."
+                ]
+              }
+            ]
+          },
+          {
             "q": "Pourquoi le streaming nécessite-t-il Tailscale ? Ne peut-il pas fonctionner sur le Wi-Fi domestique ?",
             "a": "Tailscale est requis en raison de la façon dont iOS gère les connexions réseau locales. Voici ce qui s'est passé :",
             "bullets": [

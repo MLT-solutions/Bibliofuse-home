@@ -657,6 +657,28 @@
             ]
           },
           {
+            "q": "Streaming is set up correctly but still not working — what should I try?",
+            "a": "A stale endpoint cache is the most common cause. One or more <code>stream_endpoint.json</code> files stored in iCloud has an outdated timestamp, which prevents BiblioFuse from discovering the host.",
+            "bullets": [
+              {
+                "text": "Delete the stale files from iCloud",
+                "sub": [
+                  "On iPhone: open the Files app → iCloud Drive → BiblioFuse. Delete any file named <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
+                  "On Mac: open Finder → iCloud Drive → BiblioFuse (root) and BiblioFuse → Documents. Delete all <code>stream_endpoint*.json</code> files in both locations.",
+                  "On PC: iCloud may show only the cloud (online-only) version of these files, so deletion from PC may not work reliably — use iPhone or Mac instead."
+                ]
+              },
+              {
+                "text": "After deleting, reopen BiblioFuse on both the host (Mac or PC) and iPhone",
+                "sub": [
+                  "The host app will regenerate a fresh endpoint file with a current timestamp.",
+                  "On iPhone, go to the streaming source list — you should see the PC or Mac name with a green dot on the right, confirming it has been detected.",
+                  "If the dot is grey, wait a few more seconds or force-quit and reopen BiblioFuse on the host."
+                ]
+              }
+            ]
+          },
+          {
             "q": "Why does streaming require Tailscale? Can't it just use home Wi-Fi?",
             "a": "Tailscale is required because of how iOS handles local network connections. Here is what happened:",
             "bullets": [

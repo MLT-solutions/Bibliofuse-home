@@ -400,6 +400,28 @@
             ]
           },
           {
+            "q": "串流已正确配置但仍无法使用 — 该怎么办？",
+            "a": "过期的端点缓存是最常见的原因。存储在 iCloud 中的一个或多个 <code>stream_endpoint.json</code> 文件的时间戳已过期，导致 BiblioFuse 无法发现主机。",
+            "bullets": [
+              {
+                "text": "删除 iCloud 中的过期文件",
+                "sub": [
+                  "在 iPhone 上：打开「文件」应用 → iCloud Drive → BiblioFuse。删除名为 <code>stream_endpoint.json</code>、<code>stream_endpoint 1.json</code>、<code>stream_endpoint 2.json</code> 等的所有文件。",
+                  "在 Mac 上：打开访达 → iCloud Drive → BiblioFuse（根目录）和 BiblioFuse → 文稿。删除两个位置中的所有 <code>stream_endpoint*.json</code> 文件。",
+                  "在 PC 上：iCloud 可能只显示这些文件的云端（仅在线）版本，因此从 PC 删除可能不可靠 — 请使用 iPhone 或 Mac。"
+                ]
+              },
+              {
+                "text": "删除后，在主机（Mac 或 PC）和 iPhone 上重新打开 BiblioFuse",
+                "sub": [
+                  "主机应用将使用当前时间戳重新生成新的端点文件。",
+                  "在 iPhone 上，进入串流源列表 — 应看到 PC 或 Mac 名称右侧显示绿色圆点，表示已成功检测到。",
+                  "如果圆点为灰色，请再等几秒钟，或强制关闭并重新打开主机上的 BiblioFuse。"
+                ]
+              }
+            ]
+          },
+          {
             "q": "为什么串流需要 Tailscale？不能直接用家里的 Wi-Fi 吗？",
             "a": "需要 Tailscale 是因为 iOS 处理本地网络连接的方式。以下是发生的情况：",
             "bullets": [

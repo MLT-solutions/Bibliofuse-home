@@ -400,6 +400,28 @@
             ]
           },
           {
+            "q": "Streaming is correct ingesteld maar werkt nog steeds niet — wat kan ik proberen?",
+            "a": "Een verouderde endpoint-cache is de meest voorkomende oorzaak. Een of meer <code>stream_endpoint.json</code>-bestanden in iCloud hebben een verouderde tijdstempel, waardoor BiblioFuse de host niet kan vinden.",
+            "bullets": [
+              {
+                "text": "Verwijder de verouderde bestanden uit iCloud",
+                "sub": [
+                  "Op iPhone: open de Bestanden-app → iCloud Drive → BiblioFuse. Verwijder elk bestand met de naam <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
+                  "Op Mac: open Finder → iCloud Drive → BiblioFuse (root) en BiblioFuse → Documenten. Verwijder alle <code>stream_endpoint*.json</code>-bestanden op beide locaties.",
+                  "Op pc: iCloud toont mogelijk alleen de cloudversie (alleen online) van deze bestanden, waardoor verwijdering via pc mogelijk niet betrouwbaar werkt — gebruik iPhone of Mac."
+                ]
+              },
+              {
+                "text": "Open na het verwijderen BiblioFuse opnieuw op de host (Mac of pc) en op de iPhone",
+                "sub": [
+                  "De host-app genereert een nieuw endpoint-bestand met een actuele tijdstempel.",
+                  "Ga op iPhone naar de lijst met streamingbronnen — je zou de naam van de pc of Mac met een groene stip rechts moeten zien, wat bevestigt dat die is gedetecteerd.",
+                  "Als de stip grijs is, wacht dan nog een paar seconden of sluit BiblioFuse geforceerd af en open het opnieuw op de host."
+                ]
+              }
+            ]
+          },
+          {
             "q": "Waarom vereist streaming Tailscale? Kan het niet gewoon over thuis-wifi werken?",
             "a": "Tailscale is vereist vanwege de manier waarop iOS lokale netwerkverbindingen afhandelt. Dit is wat er is gebeurd:",
             "bullets": [

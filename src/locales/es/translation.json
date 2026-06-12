@@ -400,6 +400,28 @@
             ]
           },
           {
+            "q": "El streaming está configurado correctamente pero sigue sin funcionar — ¿qué puedo intentar?",
+            "a": "Una caché de endpoints obsoleta es la causa más común. Uno o más archivos <code>stream_endpoint.json</code> almacenados en iCloud tienen una marca de tiempo desactualizada, lo que impide que BiblioFuse descubra el host.",
+            "bullets": [
+              {
+                "text": "Elimina los archivos obsoletos de iCloud",
+                "sub": [
+                  "En iPhone: abre la app Archivos → iCloud Drive → BiblioFuse. Elimina cualquier archivo llamado <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
+                  "En Mac: abre Finder → iCloud Drive → BiblioFuse (raíz) y BiblioFuse → Documentos. Elimina todos los archivos <code>stream_endpoint*.json</code> en ambas ubicaciones.",
+                  "En PC: iCloud puede mostrar solo la versión en la nube (solo en línea) de estos archivos, por lo que la eliminación desde PC puede no ser confiable — usa iPhone o Mac."
+                ]
+              },
+              {
+                "text": "Tras eliminar, vuelve a abrir BiblioFuse en el host (Mac o PC) y en el iPhone",
+                "sub": [
+                  "La app del host regenerará un nuevo archivo de endpoint con una marca de tiempo actual.",
+                  "En iPhone, ve a la lista de fuentes de streaming — deberías ver el nombre del PC o Mac con un punto verde a la derecha, confirmando que ha sido detectado.",
+                  "Si el punto es gris, espera unos segundos más o cierra y vuelve a abrir BiblioFuse en el host."
+                ]
+              }
+            ]
+          },
+          {
             "q": "¿Por qué el streaming requiere Tailscale? ¿No puede funcionar solo con Wi-Fi doméstico?",
             "a": "Tailscale es necesario por la forma en que iOS gestiona las conexiones de red local. Esto es lo que ocurrió:",
             "bullets": [

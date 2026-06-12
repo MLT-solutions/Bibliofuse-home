@@ -400,6 +400,28 @@
             ]
           },
           {
+            "q": "스트리밍이 올바르게 설정되었지만 여전히 작동하지 않습니다 — 무엇을 시도해야 하나요?",
+            "a": "오래된 엔드포인트 캐시가 가장 일반적인 원인입니다. iCloud에 저장된 <code>stream_endpoint.json</code> 파일 중 하나 이상의 타임스탬프가 오래되어 BiblioFuse가 호스트를 검색하지 못하고 있습니다.",
+            "bullets": [
+              {
+                "text": "iCloud에서 오래된 파일 삭제",
+                "sub": [
+                  "iPhone의 경우: 파일 앱 → iCloud Drive → BiblioFuse를 엽니다. <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code> 등의 파일을 모두 삭제하세요.",
+                  "Mac의 경우: Finder → iCloud Drive → BiblioFuse(루트)와 BiblioFuse → 문서를 엽니다. 두 위치에 있는 모든 <code>stream_endpoint*.json</code> 파일을 삭제하세요.",
+                  "PC의 경우: iCloud가 이 파일들의 클라우드(온라인 전용) 버전만 표시할 수 있으므로, PC에서의 삭제가 안정적으로 작동하지 않을 수 있습니다 — iPhone 또는 Mac을 사용하세요."
+                ]
+              },
+              {
+                "text": "삭제 후 호스트(Mac 또는 PC)와 iPhone 모두에서 BiblioFuse를 다시 열기",
+                "sub": [
+                  "호스트 앱이 현재 타임스탬프로 새 엔드포인트 파일을 재생성합니다.",
+                  "iPhone에서 스트리밍 소스 목록으로 이동하면 PC 또는 Mac 이름 오른쪽에 녹색 점이 표시되어 감지되었음을 확인할 수 있습니다.",
+                  "점이 회색이면 몇 초 더 기다리거나 호스트에서 BiblioFuse를 강제 종료한 후 다시 여세요."
+                ]
+              }
+            ]
+          },
+          {
             "q": "스트리밍에 왜 Tailscale이 필요한가요? 집 Wi-Fi로는 안 되나요?",
             "a": "Tailscale은 iOS가 로컬 네트워크 연결을 처리하는 방식 때문에 필요합니다. 다음은 그 경위입니다:",
             "bullets": [

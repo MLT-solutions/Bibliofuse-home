@@ -400,6 +400,28 @@
             ]
           },
           {
+            "q": "Penstriman sudah disediakan dengan betul tetapi masih tidak berfungsi — apa yang perlu dicuba?",
+            "a": "Cache titik akhir yang lapuk adalah punca paling biasa. Satu atau lebih fail <code>stream_endpoint.json</code> yang disimpan dalam iCloud mempunyai cap masa yang sudah lama, yang menghalang BiblioFuse daripada menemui hos.",
+            "bullets": [
+              {
+                "text": "Padam fail lapuk daripada iCloud",
+                "sub": [
+                  "Pada iPhone: buka app Fail → iCloud Drive → BiblioFuse. Padamkan mana-mana fail bernama <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, dsb.",
+                  "Pada Mac: buka Finder → iCloud Drive → BiblioFuse (root) dan BiblioFuse → Dokumen. Padamkan semua fail <code>stream_endpoint*.json</code> di kedua-dua lokasi.",
+                  "Pada PC: iCloud mungkin hanya menunjukkan versi awan (dalam talian sahaja) fail-fail ini, jadi pemadaman dari PC mungkin tidak boleh dipercayai — gunakan iPhone atau Mac."
+                ]
+              },
+              {
+                "text": "Selepas memadam, buka semula BiblioFuse pada hos (Mac atau PC) dan iPhone",
+                "sub": [
+                  "App hos akan menjana semula fail titik akhir baharu dengan cap masa semasa.",
+                  "Pada iPhone, pergi ke senarai sumber penstriman — anda sepatutnya melihat nama PC atau Mac dengan titik hijau di sebelah kanan, mengesahkan ia telah dikesan.",
+                  "Jika titik berwarna kelabu, tunggu beberapa saat lagi atau tutup paksa dan buka semula BiblioFuse pada hos."
+                ]
+              }
+            ]
+          },
+          {
             "q": "Mengapa penstriman memerlukan Tailscale? Tidakkah boleh menggunakan Wi-Fi rumah sahaja?",
             "a": "Tailscale diperlukan kerana cara iOS mengendalikan sambungan rangkaian tempatan. Berikut adalah apa yang berlaku:",
             "bullets": [
