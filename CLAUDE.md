@@ -97,21 +97,20 @@ When adding a new article:
 
 Do NOT use `https://api.bufferapp.com` (old REST v1) or `https://publish.buffer.com` — they reject this token.
 
-**Channel IDs:**
+**Channel IDs (Buffer — Twitter/X and Instagram only):**
 
 | Channel | ID |
 |---------|-----|
 | Twitter/X (`mattlifetech`) | `67c54e593b85969eaf67659e` |
 | Instagram (`mattlifetech`) | `67c54e3d3b85969eaf65a04f` |
-| LinkedIn company (`modern-logic-tech-solutions`) | `69fbfce95c4c051afa1b4ecd` |
-| LinkedIn personal (`matthew-choo`) | `69fbfce95c4c051afa1b4ece` — **read-only, skip** |
+
+> LinkedIn removed from Buffer (slot used for Pinterest). BiblioFuse comic/reader content has low LinkedIn engagement — skip LinkedIn entirely for this project.
 
 **Scheduling slots (SGT = UTC+8). Space 2 articles ≥ 2 h apart on the same channel:**
 
 | Channel | Article 1 (SGT) | Article 2 (SGT) |
 |---------|-----------------|-----------------|
 | Twitter/X | 09:00 | 11:00 |
-| LinkedIn company | 09:30 | 11:30 |
 | Instagram | 10:00 | 12:00 |
 
 **createPost mutation (GraphQL):**
@@ -141,7 +140,6 @@ Required `CreatePostInput` fields:
 **Hashtags:**
 - Twitter/X: `#BiblioFuse #Comics #Manga` (2–3 max)
 - Instagram: 8–10 tags, always include `#BiblioFuse #Comics #Manga #iPhone #ReadingLife`
-- LinkedIn: no hashtags, professional tone
 
 ### Article skill routine
 
