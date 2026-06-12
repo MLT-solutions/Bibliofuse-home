@@ -663,8 +663,9 @@
               {
                 "text": "Delete the stale files from iCloud",
                 "sub": [
-                  "On iPhone or Mac: open the Files app → iCloud Drive → BiblioFuse. Delete any file named <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
-                  "On iPhone or Mac: open Finder → iCloud Drive → BiblioFuse (root) and BiblioFuse → Documents. Delete all <code>stream_endpoint*.json</code> files in both locations.",
+                  "On iPhone: open the Files app → iCloud Drive → BiblioFuse (root) and BiblioFuse → Documents.",
+                  "On Mac: open Finder → iCloud Drive → BiblioFuse (root) and BiblioFuse → Documents.",
+                  "In both locations, delete any file named <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
                   "On PC: iCloud may show only the cloud (online-only) version of these files, so deletion from PC may not work reliably — use iPhone or Mac instead."
                 ]
               },

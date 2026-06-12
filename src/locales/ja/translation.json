@@ -406,8 +406,9 @@
               {
                 "text": "iCloud から古いファイルを削除する",
                 "sub": [
-                  "iPhone または Mac の場合：ファイルアプリ → iCloud Drive → BiblioFuse を開きます。<code>stream_endpoint.json</code>、<code>stream_endpoint 1.json</code>、<code>stream_endpoint 2.json</code> などのファイルをすべて削除してください。",
-                  "iPhone または Mac の場合：Finder → iCloud Drive → BiblioFuse（ルート）と BiblioFuse → 書類 を開きます。両方の場所にある <code>stream_endpoint*.json</code> ファイルをすべて削除してください。",
+                  "iPhone の場合：ファイルアプリ → iCloud Drive → BiblioFuse（ルート）と BiblioFuse → 書類 を開きます。",
+                  "Mac の場合：Finder → iCloud Drive → BiblioFuse（ルート）と BiblioFuse → 書類 を開きます。",
+                  "両方の場所で、<code>stream_endpoint.json</code>、<code>stream_endpoint 1.json</code>、<code>stream_endpoint 2.json</code> などのファイルをすべて削除してください。",
                   "PC の場合：iCloud はこれらのファイルのクラウド版（オンラインのみ）しか表示しないことがあるため、PC からの削除は確実に機能しない場合があります — iPhone または Mac を使用してください。"
                 ]
               },

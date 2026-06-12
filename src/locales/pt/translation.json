@@ -406,8 +406,9 @@
               {
                 "text": "Exclua os arquivos desatualizados do iCloud",
                 "sub": [
-                  "No iPhone ou Mac: abra o app Arquivos → iCloud Drive → BiblioFuse. Exclua qualquer arquivo chamado <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
-                  "No iPhone ou Mac: abra o Finder → iCloud Drive → BiblioFuse (raiz) e BiblioFuse → Documentos. Exclua todos os arquivos <code>stream_endpoint*.json</code> em ambos os locais.",
+                  "No iPhone: abra o app Arquivos → iCloud Drive → BiblioFuse (raiz) e BiblioFuse → Documentos.",
+                  "No Mac: abra o Finder → iCloud Drive → BiblioFuse (raiz) e BiblioFuse → Documentos.",
+                  "Em ambos os locais, exclua qualquer arquivo chamado <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
                   "No PC: o iCloud pode mostrar apenas a versão na nuvem (somente online) desses arquivos, portanto a exclusão pelo PC pode não funcionar de forma confiável — use iPhone ou Mac."
                 ]
               },

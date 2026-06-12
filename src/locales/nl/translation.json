@@ -406,8 +406,9 @@
               {
                 "text": "Verwijder de verouderde bestanden uit iCloud",
                 "sub": [
-                  "Op iPhone of Mac: open de Bestanden-app → iCloud Drive → BiblioFuse. Verwijder elk bestand met de naam <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
-                  "Op iPhone of Mac: open Finder → iCloud Drive → BiblioFuse (root) en BiblioFuse → Documenten. Verwijder alle <code>stream_endpoint*.json</code>-bestanden op beide locaties.",
+                  "Op iPhone: open de Bestanden-app → iCloud Drive → BiblioFuse (root) en BiblioFuse → Documenten.",
+                  "Op Mac: open Finder → iCloud Drive → BiblioFuse (root) en BiblioFuse → Documenten.",
+                  "Verwijder op beide locaties elk bestand met de naam <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
                   "Op pc: iCloud toont mogelijk alleen de cloudversie (alleen online) van deze bestanden, waardoor verwijdering via pc mogelijk niet betrouwbaar werkt — gebruik iPhone of Mac."
                 ]
               },

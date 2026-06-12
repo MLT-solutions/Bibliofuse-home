@@ -406,8 +406,9 @@
               {
                 "text": "Supprimer les fichiers obsolètes d'iCloud",
                 "sub": [
-                  "Sur iPhone ou Mac : ouvrez l'app Fichiers → iCloud Drive → BiblioFuse. Supprimez tout fichier nommé <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
-                  "Sur iPhone ou Mac : ouvrez Finder → iCloud Drive → BiblioFuse (racine) et BiblioFuse → Documents. Supprimez tous les fichiers <code>stream_endpoint*.json</code> aux deux emplacements.",
+                  "Sur iPhone : ouvrez l'app Fichiers → iCloud Drive → BiblioFuse (racine) et BiblioFuse → Documents.",
+                  "Sur Mac : ouvrez Finder → iCloud Drive → BiblioFuse (racine) et BiblioFuse → Documents.",
+                  "Dans les deux emplacements, supprimez tout fichier nommé <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
                   "Sur PC : iCloud peut n'afficher que la version cloud (en ligne uniquement) de ces fichiers, la suppression depuis le PC peut donc ne pas être fiable — utilisez iPhone ou Mac."
                 ]
               },
