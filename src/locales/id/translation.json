@@ -406,8 +406,8 @@
               {
                 "text": "Hapus file-file yang kedaluwarsa dari iCloud",
                 "sub": [
-                  "Di iPhone: buka aplikasi File → iCloud Drive → BiblioFuse. Hapus semua file bernama <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, dll.",
-                  "Di Mac: buka Finder → iCloud Drive → BiblioFuse (root) dan BiblioFuse → Dokumen. Hapus semua file <code>stream_endpoint*.json</code> di kedua lokasi.",
+                  "Di iPhone atau Mac: buka aplikasi File → iCloud Drive → BiblioFuse. Hapus semua file bernama <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, dll.",
+                  "Di iPhone atau Mac: buka Finder → iCloud Drive → BiblioFuse (root) dan BiblioFuse → Dokumen. Hapus semua file <code>stream_endpoint*.json</code> di kedua lokasi.",
                   "Di PC: iCloud mungkin hanya menampilkan versi cloud (hanya online) dari file-file ini, sehingga penghapusan dari PC mungkin tidak dapat diandalkan — gunakan iPhone atau Mac."
                 ]
               },

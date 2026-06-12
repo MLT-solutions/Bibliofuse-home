@@ -406,8 +406,8 @@
               {
                 "text": "Удалите устаревшие файлы из iCloud",
                 "sub": [
-                  "На iPhone: откройте приложение «Файлы» → iCloud Drive → BiblioFuse. Удалите все файлы с именем <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code> и т.д.",
-                  "На Mac: откройте Finder → iCloud Drive → BiblioFuse (корень) и BiblioFuse → Документы. Удалите все файлы <code>stream_endpoint*.json</code> в обоих местах.",
+                  "На iPhone или Mac: откройте приложение «Файлы» → iCloud Drive → BiblioFuse. Удалите все файлы с именем <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code> и т.д.",
+                  "На iPhone или Mac: откройте Finder → iCloud Drive → BiblioFuse (корень) и BiblioFuse → Документы. Удалите все файлы <code>stream_endpoint*.json</code> в обоих местах.",
                   "На PC: iCloud может отображать только облачную версию (только онлайн) этих файлов, поэтому удаление с PC может работать ненадёжно — используйте iPhone или Mac."
                 ]
               },

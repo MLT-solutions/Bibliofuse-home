@@ -406,8 +406,8 @@
               {
                 "text": "删除 iCloud 中的过期文件",
                 "sub": [
-                  "在 iPhone 上：打开「文件」应用 → iCloud Drive → BiblioFuse。删除名为 <code>stream_endpoint.json</code>、<code>stream_endpoint 1.json</code>、<code>stream_endpoint 2.json</code> 等的所有文件。",
-                  "在 Mac 上：打开访达 → iCloud Drive → BiblioFuse（根目录）和 BiblioFuse → 文稿。删除两个位置中的所有 <code>stream_endpoint*.json</code> 文件。",
+                  "在 iPhone 或 Mac 上：打开「文件」应用 → iCloud Drive → BiblioFuse。删除名为 <code>stream_endpoint.json</code>、<code>stream_endpoint 1.json</code>、<code>stream_endpoint 2.json</code> 等的所有文件。",
+                  "在 iPhone 或 Mac 上：打开访达 → iCloud Drive → BiblioFuse（根目录）和 BiblioFuse → 文稿。删除两个位置中的所有 <code>stream_endpoint*.json</code> 文件。",
                   "在 PC 上：iCloud 可能只显示这些文件的云端（仅在线）版本，因此从 PC 删除可能不可靠 — 请使用 iPhone 或 Mac。"
                 ]
               },

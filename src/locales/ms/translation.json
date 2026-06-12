@@ -406,8 +406,8 @@
               {
                 "text": "Padam fail lapuk daripada iCloud",
                 "sub": [
-                  "Pada iPhone: buka app Fail → iCloud Drive → BiblioFuse. Padamkan mana-mana fail bernama <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, dsb.",
-                  "Pada Mac: buka Finder → iCloud Drive → BiblioFuse (root) dan BiblioFuse → Dokumen. Padamkan semua fail <code>stream_endpoint*.json</code> di kedua-dua lokasi.",
+                  "Pada iPhone atau Mac: buka app Fail → iCloud Drive → BiblioFuse. Padamkan mana-mana fail bernama <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, dsb.",
+                  "Pada iPhone atau Mac: buka Finder → iCloud Drive → BiblioFuse (root) dan BiblioFuse → Dokumen. Padamkan semua fail <code>stream_endpoint*.json</code> di kedua-dua lokasi.",
                   "Pada PC: iCloud mungkin hanya menunjukkan versi awan (dalam talian sahaja) fail-fail ini, jadi pemadaman dari PC mungkin tidak boleh dipercayai — gunakan iPhone atau Mac."
                 ]
               },
