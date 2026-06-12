@@ -1,0 +1,22 @@
+# BiblioFuse — Comic & eBook Reader
+
+BiblioFuse is a cross-platform comic and ebook reader app available on iOS, Android, macOS, Windows, and the Web. It supports CBZ, CBR, EPUB, PDF, and ZIP formats, with cloud sync, streaming, and a built-in web reader.
+
+## Key pages
+- https://bibliofuse.com/en/ — Homepage and app overview
+- https://bibliofuse.com/en/webapp — Web App (read in browser, no install needed)
+- https://bibliofuse.com/en/blog/ — Blog: guides, tips, and how-tos for comic and ebook readers
+- https://bibliofuse.com/en/about — About BiblioFuse
+- https://bibliofuse.com/sitemap.xml — Full sitemap
+
+## App downloads
+- iOS: https://apps.apple.com/app/bibliofuse/id6470965906
+- Android: https://play.google.com/store/apps/details?id=com.bibliofuse.app
+- macOS: https://apps.apple.com/app/bibliofuse/id6470965906
+- Windows (PC Reader): available on the Microsoft Store
+
+## Content
+Blog articles cover topics including: reading CBZ/CBR files on iPhone, converting ZIP to CBZ, reading manga and webtoons on mobile, cloud storage integration, and cross-device comic syncing.
+
+## Permissions
+Content on this site may be crawled, indexed, and used to inform AI-generated answers. Attribution appreciated but not required.
