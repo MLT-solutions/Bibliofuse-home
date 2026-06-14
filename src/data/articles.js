@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'bibliofuse-ipad-reading-tips',
+    date: '2026-06-15',
+    tags: ['ios', 'ipad', 'guide', 'tips'],
+    coverImage: '/image/blog/BiblioFuse iPad Tips.jpg',
+  },
+  {
+    slug: 'read-pdf-comics-iphone',
+    date: '2026-06-15',
+    tags: ['ios', 'pdf', 'comics', 'guide'],
+    coverImage: '/image/blog/PDF Comics iPhone.jpg',
+  },
+  {
     slug: 'read-webtoons-on-iphone',
     date: '2026-06-11',
     tags: ['ios', 'webtoons', 'manga', 'guide'],

@@ -1016,6 +1016,14 @@
         "pc-home-library-streaming-iphone": {
           "title": "Stream Your Windows PC Comic Library to iPhone — Home Wi-Fi and 5G",
           "excerpt": "BiblioFuse PC Reader lets your iPhone stream your entire Windows library over home Wi-Fi or 5G with Tailscale — no files copied, no iPhone storage used."
+        },
+        "read-pdf-comics-iphone": {
+          "title": "Como ler quadrinhos em PDF no iPhone com BiblioFuse",
+          "excerpt": "O BiblioFuse lê quadrinhos em PDF nativamente no iPhone com os mesmos controles de tela cheia que CBZ e EPUB. Transfira por Wi-Fi, importe do Arquivos ou AirDrop — com sincronização de progresso via iCloud."
+        },
+        "bibliofuse-ipad-reading-tips": {
+          "title": "BiblioFuse no iPad: dicas para leitura de quadrinhos em tela cheia",
+          "excerpt": "A tela maior do iPad desbloqueia páginas duplas em paisagem, um controle deslizante de miniaturas e streaming de biblioteca do Mac no BiblioFuse. Configure modos de exibição, leitura noturna e Stage Manager."
         }
       },
       "eyebrow": "Blog",
