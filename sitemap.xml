@@ -1124,6 +1124,380 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
   </url>
   <url>
+    <loc>https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/es/blog/bibliofuse-ipad-reading-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/fr/blog/bibliofuse-ipad-reading-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/nl/blog/bibliofuse-ipad-reading-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/pt/blog/bibliofuse-ipad-reading-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ru/blog/bibliofuse-ipad-reading-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/zh/blog/bibliofuse-ipad-reading-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ja/blog/bibliofuse-ipad-reading-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ko/blog/bibliofuse-ipad-reading-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/id/blog/bibliofuse-ipad-reading-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ms/blog/bibliofuse-ipad-reading-tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/bibliofuse-ipad-reading-tips/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/bibliofuse-ipad-reading-tips/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/en/blog/read-pdf-comics-iphone/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/es/blog/read-pdf-comics-iphone/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/fr/blog/read-pdf-comics-iphone/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/nl/blog/read-pdf-comics-iphone/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/pt/blog/read-pdf-comics-iphone/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ru/blog/read-pdf-comics-iphone/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/zh/blog/read-pdf-comics-iphone/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ja/blog/read-pdf-comics-iphone/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ko/blog/read-pdf-comics-iphone/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/id/blog/read-pdf-comics-iphone/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ms/blog/read-pdf-comics-iphone/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/read-pdf-comics-iphone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/read-pdf-comics-iphone/" />
+  </url>
+  <url>
     <loc>https://bibliofuse.com/en/blog/read-webtoons-on-iphone/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
