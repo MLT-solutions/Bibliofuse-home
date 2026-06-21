@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'airdrop-books-to-iphone',
+    date: '2026-06-21',
+    tags: ['ios', 'guide', 'tips', 'airdrop'],
+    coverImage: '/image/blog/AirDrop Comics iPhone.jpg',
+  },
+  {
+    slug: 'change-reading-direction-comics',
+    date: '2026-06-21',
+    tags: ['ios', 'manga', 'guide', 'tips'],
+    coverImage: '/image/blog/Reading Direction LTR RTL.jpg',
+  },
+  {
     slug: 'bibliofuse-ipad-reading-tips',
     date: '2026-06-15',
     tags: ['ios', 'ipad', 'guide', 'tips'],

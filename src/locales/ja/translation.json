@@ -775,6 +775,14 @@
     },
     "blog": {
       "posts": {
+        "airdrop-books-to-iphone": {
+          "title": "AirDropを使ってiPhoneに漫画や電子書籍を転送する方法",
+          "excerpt": "BiblioFuseはiOS 17以降のiPhoneおよびiPadで、AirDropで共有されたCBZ・CBR・EPUB・PDF・ZIP・RAR・TXTファイルを受け取ることができます。共有シートでファイルを受け入れ、BiblioFuseを選ぶだけでライブラリに即座に追加されます。ケーブル不要、アカウント不要、クラウド待機不要。"
+        },
+        "change-reading-direction-comics": {
+          "title": "BiblioFuseで左→右（LTR）と右→左（RTL）の読み方向を切り替える方法",
+          "excerpt": "BiblioFuseはiOS 17以降のiPhoneとiPadで、左から右（LTR）と右から左（RTL）の読み方向を切り替えられます。読書中に設定アイコンをタップするだけで即座に方向が変わります。日本の漫画、韓国のマンファ、欧米のコミックすべてに対応しています。"
+        },
         "read-webtoons-on-iphone": {
           "title": "iPhoneでウェブトゥーンを読む：BiblioFuseの無限縦スクロール",
           "excerpt": "BiblioFuseの縦スクロールモードはウェブトゥーンやマンファ向け設計。CBZ・EPUBの縦読みコミックをページをめくらずに連続スクロールで読み進められます。"
