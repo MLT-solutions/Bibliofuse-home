@@ -1,99 +1,68 @@
 # Cara Menggunakan AirDrop untuk Mentransfer Komik dan Ebook ke iPhone
 
-BiblioFuse menerima file yang dibagikan melalui AirDrop di iPhone dan iPad yang menjalankan iOS 17 atau lebih baru. Ketika seseorang berbagi file CBZ, CBR, EPUB, PDF, ZIP, RAR, atau TXT melalui AirDrop, Anda bisa langsung membukanya di BiblioFuse dari menu berbagi. File tersimpan ke perpustakaan BiblioFuse dan otomatis tersinkronisasi ke perangkat Apple lain Anda melalui iCloud.
+Ketika Anda perlu memindahkan beberapa komik atau ebook ke iPhone, AirDrop adalah cara tercepat. Tanpa kabel, tanpa aplikasi pihak ketiga, tanpa masuk ke layanan apapun. Pilih file di Mac, pilih iPhone dari daftar AirDrop, dan file langsung masuk ke [BiblioFuse](https://bibliofuse.com/id/) dalam hitungan detik.
 
-## Mengapa AirDrop Menjadi Salah Satu Cara Tercepat Memasukkan Komik ke iPhone
+Panduan ini mencakup transfer file CBZ, CBR, EPUB, PDF, dan ZIP melalui AirDrop, cara menerimanya agar terbuka di BiblioFuse, dan solusi ketika AirDrop tidak menampilkan perangkat Anda atau transfer macet.
 
-AirDrop mentransfer file dengan kecepatan Wi-Fi lokal atau Bluetooth tanpa koneksi internet dan tanpa batas ukuran file. Komik CBZ berukuran 400 MB bisa tiba di iPhone Anda dalam waktu kurang dari sepuluh detik saat Anda berada di dekat Mac atau iPad pengirim. Tidak perlu login ke akun apa pun, tidak ada layanan cloud yang perlu dilalui, dan transfernya terenkripsi dari ujung ke ujung.
+## Cara Kerja AirDrop
 
-Bagi pembaca komik dan manga, AirDrop sangat berguna ketika berbagi file antar perangkat Anda sendiri. Jika Anda mengunduh volume manga baru di Mac dan ingin segera membacanya di iPhone, AirDrop mengirimkannya langsung — tanpa kabel USB, tanpa lampiran email yang dibatasi 25 MB, dan tanpa menunggu iCloud Drive menyinkronkan file besar. [BiblioFuse](/id/) menerima file dan langsung menambahkannya ke perpustakaan Anda.
+AirDrop membuat koneksi terenkripsi peer-to-peer menggunakan Wi-Fi Direct. Perangkat tidak perlu berada di jaringan yang sama dan tidak ada yang melewati server Apple. File CBZ 150 MB biasanya ditransfer dalam 3–6 detik ketika kedua perangkat berada dalam jarak satu meter.
 
-## Cara AirDrop Komik atau Ebook ke iPhone
+Ketika iPhone menerima file komik (CBZ, CBR) atau ebook (EPUB, PDF), iOS meminta Anda memilih aplikasi untuk membukanya. Ketuk **BiblioFuse** dan file langsung diimpor ke perpustakaan Anda.
 
-Proses ini bekerja dari perangkat Apple mana pun — Mac, iPad, atau iPhone lain — ke iPhone Anda yang menjalankan BiblioFuse.
+## Langkah demi Langkah: Mac ke iPhone
 
-### Dari Mac
+### 1. Aktifkan AirDrop di Kedua Perangkat
 
-1. Buka **Finder** di Mac dan temukan file komik (CBZ, EPUB, PDF, dll.).
-2. Klik kanan file dan pilih **Bagikan → AirDrop**.
-3. Pilih iPhone Anda dari daftar penerima AirDrop terdekat.
-4. Di iPhone, muncul notifikasi yang meminta Anda menerima file. Ketuk **Terima**.
-5. iOS menanyakan aplikasi mana yang akan membuka file. Ketuk **BiblioFuse**.
-6. File diimpor ke BiblioFuse dan muncul di perpustakaan Anda.
+**Di iPhone:** Buka Pusat Kontrol. Tekan lama ubin jaringan, lalu ketuk **AirDrop**. Pilih **Hanya Kontak** atau **Semua Orang selama 10 Menit**.
 
-### Dari iPad atau iPhone Lain
+**Di Mac:** Buka Finder dan pilih **Pergi → AirDrop** (atau tekan Shift+Command+R). Atur visibilitas AirDrop di bagian bawah jendela.
 
-1. Buka aplikasi **File** dan temukan file komik.
-2. Tekan dan tahan file, lalu ketuk **Bagikan**.
-3. Ketuk ikon **AirDrop** dan pilih iPhone Anda.
-4. Terima file di iPhone dan buka dengan BiblioFuse.
+### 2. Pilih File Anda
 
-### Berbagi Langsung dari Aplikasi Pembaca Komik
+Di Finder, navigasi ke file komik atau ebook Anda. Gunakan Command+klik atau Shift+klik untuk memilih beberapa file. Grup 5–10 file lebih konsisten ditransfer daripada mengirim 20+ sekaligus.
 
-Jika Anda menggunakan pembaca lain di Mac dan ingin mengirim file ke iPhone, Anda biasanya bisa menyeret file dari aplikasi tersebut ke Desktop, lalu menggunakan AirDrop dari Finder. Atau gunakan **Bagikan → AirDrop** dari aplikasi mana saja yang mendukung menu Bagikan macOS.
+### 3. Mulai Transfer
 
-## Pastikan AirDrop Aktif Sebelum Memulai
+Klik kanan file yang dipilih dan pilih **Bagikan → AirDrop**. Lembar berbagi terbuka menampilkan perangkat terdekat. iPhone Anda seharusnya muncul dalam beberapa detik. Klik.
 
-AirDrop membutuhkan Wi-Fi dan Bluetooth aktif di kedua perangkat. Kedua perangkat tidak perlu terhubung ke jaringan yang sama — AirDrop membuat koneksi langsung peer-to-peer. Jaga kedua perangkat dalam jarak sekitar 9 meter (30 kaki) satu sama lain untuk transfer yang andal.
+Notifikasi muncul di iPhone Anda meminta persetujuan. Ketuk **Terima**.
 
-**Di iPhone:** Buka Pusat Kontrol dan tekan lama pada ubin jaringan (kelompok kiri atas). Ketuk **AirDrop** dan pilih **Semua Orang Selama 10 Menit** atau **Hanya Kontak** sesuai preferensi. Jika menerima dari Mac sendiri, **Hanya Kontak** adalah pilihan paling aman.
+### 4. Pilih BiblioFuse sebagai Aplikasi Target
 
-**Di Mac:** Buka Finder, klik **AirDrop** di bilah sisi, dan atur **Izinkan saya ditemukan oleh** ke **Semua Orang** atau **Hanya Kontak** di bagian bawah jendela.
+Setelah menerima, iOS menanyakan aplikasi mana yang akan membuka setiap file. [BiblioFuse](https://bibliofuse.com/id/) muncul dalam daftar. Ketuk — file langsung diimpor.
 
-## Yang Terjadi Setelah File Tiba di BiblioFuse
+Jika Anda tidak sengaja menutup prompt ini, file ada di **File → Unduhan**. Ketuk di sana untuk membukanya di BiblioFuse.
 
-Ketika Anda menerima file yang dikirim via AirDrop dan memilih BiblioFuse sebagai tujuan, BiblioFuse menyalin file ke folder perpustakaan internalnya. Setelah itu:
+## Mengirim dari iPhone ke iPhone
 
-- File muncul di perpustakaan pada bagian yang relevan (komik, ebook, atau semua file).
-- Sinkronisasi iCloud mengirimkan file ke perangkat Apple lain yang menggunakan BiblioFuse secara otomatis jika iCloud diaktifkan.
-- BiblioFuse membaca format file (CBZ, EPUB, PDF, dll.) dan membukanya dengan mesin pembaca yang sesuai.
-- Progres membaca, penanda, atau tag yang Anda tambahkan tersinkronisasi antar perangkat melalui iCloud.
+Prosesnya identik di kedua arah. Di iPhone pengirim:
 
-Anda tidak perlu menaruh file secara manual ke dalam folder atau mengganti namanya. BiblioFuse menangani impor secara otomatis.
+1. Buka aplikasi **File** dan navigasi ke file komik.
+2. Tekan lama file, lalu ketuk **Bagikan**. Untuk beberapa file: Pilih → pilih file → Bagikan.
+3. Ketuk **AirDrop** di lembar berbagi.
+4. Pilih iPhone penerima.
 
-## AirDrop vs Wi-Fi Transfer: Mana yang Harus Digunakan?
+## Memecahkan Masalah Umum
 
-BiblioFuse juga memiliki fitur **Wi-Fi Transfer** bawaan yang memungkinkan Anda menyeret file dari browser mana pun di Mac atau PC — termasuk Windows — tanpa memerlukan AirDrop. Berikut panduan kapan menggunakan masing-masing:
+**iPhone tidak muncul di daftar AirDrop di Mac**
 
-| Situasi | Metode Terbaik |
-|---------|---------------|
-| Mengirim dari Mac, iPad, atau iPhone | AirDrop |
-| Mengirim dari PC Windows | Wi-Fi Transfer |
-| Mengirim dari mesin Linux | Wi-Fi Transfer |
-| Banyak file sekaligus | Wi-Fi Transfer (seret beberapa) |
-| Satu file cepat antar perangkat Apple sendiri | AirDrop |
-| Berbagi dari perangkat teman | AirDrop |
+Bluetooth dan Wi-Fi harus aktif di kedua perangkat. Jika masih tidak muncul: matikan dan nyalakan AirDrop di iPhone, atau lakukan hal sama untuk Bluetooth di Mac.
 
-Untuk pengguna Windows, buka BiblioFuse di iPhone, ketuk tombol **Wi-Fi Transfer**, lalu buka alamat yang ditampilkan di browser PC Anda. Anda bisa menyeret dan melepas beberapa file sekaligus tanpa perlu menginstal aplikasi di sisi PC.
+Hanya Kontak memerlukan Mac dan iPhone berbagi kontak/Apple ID. Jika menggunakan Apple ID berbeda, atur keduanya ke **Semua Orang selama 10 Menit**.
 
-## Pertanyaan yang Sering Diajukan
+**Transfer macet di "Menunggu" atau "Mengirim"**
 
-### Bisakah saya AirDrop file CBZ langsung ke BiblioFuse di iPhone?
+Dekatkan perangkat, coba dengan lebih sedikit file sekaligus, dan pastikan tidak ada perangkat dalam mode daya rendah. Untuk file besar yang terus gagal, gunakan [Transfer Wi-Fi BiblioFuse](https://bibliofuse.com/id/).
 
-Ya. Ketika Anda mengirim file CBZ melalui AirDrop ke iPhone, iOS akan menampilkan menu berbagi yang menanyakan aplikasi mana yang akan membuka file tersebut. Pilih BiblioFuse dan file langsung diimpor ke perpustakaan Anda. BiblioFuse mendukung CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT di iOS 17 atau lebih baru.
+## Kapan AirDrop Bukan Alat yang Tepat
 
-### Apakah AirDrop bisa digunakan untuk file komik berukuran besar?
+| Skenario | Alat yang Lebih Baik |
+|----------|---------------------|
+| 50+ file dari perpustakaan Mac | Transfer Wi-Fi BiblioFuse |
+| Sinkronisasi berkelanjutan, koleksi besar | [Streaming perpustakaan Mac](https://bibliofuse.com/id/blog/mac-home-library-streaming-iphone/) |
+| File dari Windows atau Android | Kabel USB melalui aplikasi File |
 
-Ya. AirDrop tidak memiliki batas ukuran file dan transfer berjalan pada kecepatan Wi-Fi lokal, sehingga sangat cocok untuk file CBZ atau EPUB yang besar. File komik berukuran 300–500 MB biasanya selesai ditransfer dalam waktu kurang dari 30 detik saat kedua perangkat berdekatan.
+## Kesimpulan
 
-### Mengapa iPhone saya tidak muncul sebagai penerima AirDrop?
-
-Penyebab paling umum adalah: AirDrop di iPhone diatur ke **Menerima Mati**, Bluetooth dinonaktifkan di salah satu perangkat, perangkat terlalu berjauhan, atau layar iPhone terkunci. Aktifkan AirDrop di Pusat Kontrol iPhone dan jaga kedua perangkat berdekatan dengan layar tidak terkunci.
-
-### Bisakah saya membuka EPUB melalui AirDrop di BiblioFuse, bukan di Apple Books?
-
-Ya. Ketika iOS menampilkan pilihan aplikasi setelah Anda menerima file AirDrop, ketuk **BiblioFuse**. Jika menu berbagi secara default mengarah ke Apple Books, ketuk **Lainnya** atau **Buka di Aplikasi Lain** untuk menemukan BiblioFuse. Anda juga bisa menjadikan BiblioFuse sebagai penangan default untuk EPUB dengan membuka file EPUB melalui aplikasi File dan memilih BiblioFuse dari menu buka di.
-
-### Bagaimana cara mengirim komik ke iPhone dari PC Windows?
-
-AirDrop hanya berfungsi antar perangkat Apple, jadi tidak bisa digunakan dari Windows. Sebagai alternatif, gunakan fitur **Wi-Fi Transfer** bawaan BiblioFuse: ketuk ikon transfer di BiblioFuse pada iPhone Anda, lalu buka URL yang ditampilkan di browser Windows Anda dan seret file langsung ke halaman tersebut.
-
-### Apakah file yang dikirim melalui AirDrop tetap ada di iPhone jika saya menghapusnya dari Mac?
-
-Ya. Begitu BiblioFuse menerima dan mengimpor file, aplikasi menyimpan salinannya sendiri di folder perpustakaan aplikasi. Menghapus file asli dari Mac tidak memengaruhi salinan di dalam BiblioFuse di iPhone Anda.
-
-## Mulai Membaca Komik Tanpa Kabel
-
-AirDrop adalah cara tercepat untuk memindahkan komik dan ebook dari satu perangkat Apple ke perangkat lainnya. Begitu BiblioFuse mendapatkan file, Anda bisa langsung mulai membaca — tanpa penundaan sinkronisasi, tanpa login akun, tanpa langkah tambahan.
-
-Unduh [BiblioFuse](/id/) dari App Store untuk mulai membangun perpustakaan bacaan nirkabel Anda. Untuk transfer dari Windows atau untuk file dalam jumlah banyak, fitur Wi-Fi Transfer bawaan selalu tersedia sebagai alternatif.
+AirDrop adalah cara tercepat untuk mentransfer komik atau ebook antara perangkat Apple. Aktifkan AirDrop di kedua ujung, pilih file, klik iPhone di lembar berbagi, terima di ponsel, dan pilih [BiblioFuse](https://bibliofuse.com/id/) sebagai tujuan — seluruh prosesnya kurang dari 30 detik untuk sebagian besar file.

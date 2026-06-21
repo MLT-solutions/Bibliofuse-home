@@ -1,99 +1,68 @@
-# Hoe gebruik je AirDrop om strips en ebooks naar iPhone over te zetten met BiblioFuse
+# Hoe gebruik je AirDrop om strips en ebooks naar iPhone te sturen
 
-BiblioFuse accepteert bestanden die via AirDrop worden gedeeld op iPhone en iPad met iOS 17 of nieuwer. Wanneer iemand een CBZ-, CBR-, EPUB-, PDF-, ZIP-, RAR- of TXT-bestand via AirDrop met je deelt, kun je het direct in BiblioFuse openen vanuit het deelmenu. Het bestand wordt opgeslagen in je BiblioFuse-bibliotheek en synchroniseert automatisch naar je andere Apple-apparaten via iCloud.
+Als je een paar strips of ebooks naar je iPhone wilt sturen, is AirDrop de snelste manier. Geen kabels, geen extra apps, geen inloggen. Selecteer de bestanden op je Mac, kies je iPhone uit de AirDrop-lijst en ze komen direct in [BiblioFuse](https://bibliofuse.com/nl/) terecht.
 
-## Waarom AirDrop een van de snelste manieren is om strips naar iPhone te sturen
+Deze gids behandelt het versturen van CBZ-, CBR-, EPUB-, PDF- en ZIP-bestanden via AirDrop, hoe je ze accepteert zodat ze in BiblioFuse openen, en wat je doet als AirDrop je apparaat niet ziet of een overdracht vastloopt.
 
-AirDrop verstuurt bestanden op de snelheid van lokaal Wi-Fi of Bluetooth, zonder internetverbinding en zonder bestandsgroottelimiet. Een CBZ-strip van 400 MB kan binnen tien seconden op je iPhone staan als je vlak bij de verzendende Mac of iPad bent. Je hoeft nergens in te loggen, er is geen cloudservice in het spel en de overdracht is end-to-end versleuteld.
+## Wat AirDrop doet
 
-Voor strip- en manga-liefhebbers is AirDrop bijzonder handig om bestanden tussen je eigen apparaten te verplaatsen. Als je een nieuw mangavolume op je Mac hebt gedownload en het meteen op je iPhone wilt lezen, stuurt AirDrop het rechtstreeks door — geen USB-kabel, geen e-mailbijlage met een limiet van 25 MB en geen wachten tot iCloud Drive een groot bestand synchroniseert. [BiblioFuse](/nl/) ontvangt het bestand en voegt het direct toe aan je bibliotheek.
+AirDrop maakt een versleutelde peer-to-peer verbinding via Wi-Fi Direct. Je apparaten hoeven niet op hetzelfde netwerk te zitten en er gaat niets via Apple's servers. Een CBZ-bestand van 150 MB wordt meestal in 3–6 seconden overgedragen als beide apparaten binnen een meter van elkaar zijn.
 
-## Hoe stuur je een strip of ebook via AirDrop naar je iPhone
+Wanneer je iPhone een stripbestand (CBZ, CBR) of ebook (EPUB, PDF) ontvangt, vraagt iOS welke app je wilt gebruiken. Tik op **BiblioFuse** en het bestand wordt direct in je bibliotheek geïmporteerd.
 
-Het proces werkt vanaf elk Apple-apparaat — Mac, iPad of een andere iPhone — naar je iPhone met BiblioFuse.
+## Stap voor stap: Mac naar iPhone
 
-### Vanaf een Mac
+### 1. Zet AirDrop aan op beide apparaten
 
-1. Open de **Finder** op je Mac en zoek het stripbestand (CBZ, EPUB, PDF, enzovoort).
-2. Klik met de rechtermuisknop op het bestand en kies **Deel → AirDrop**.
-3. Selecteer je iPhone in de lijst met nabijgelegen AirDrop-ontvangers.
-4. Op je iPhone verschijnt een melding om het bestand te accepteren. Tik op **Accepteer**.
-5. iOS vraagt welke app het bestand moet openen. Tik op **BiblioFuse**.
-6. Het bestand wordt geïmporteerd in BiblioFuse en verschijnt in je bibliotheek.
+**Op iPhone:** Open Bedieningspaneel. Houd de netwerktegel ingedrukt, tik dan op **AirDrop**. Stel in op **Alleen contacten** of **Iedereen gedurende 10 minuten**.
 
-### Vanaf een iPad of een andere iPhone
+**Op Mac:** Open Finder en kies **Ga → AirDrop** (of druk op Shift+Command+R). Stel de AirDrop-zichtbaarheid in onderaan het venster.
 
-1. Open de app **Bestanden** en zoek het stripbestand.
-2. Houd het bestand ingedrukt en tik op **Deel**.
-3. Tik op het **AirDrop**-pictogram en kies je iPhone.
-4. Accepteer het bestand op je iPhone en open het met BiblioFuse.
+### 2. Selecteer je bestanden
 
-### Rechtstreeks delen vanuit een andere leesapp
+Navigeer in Finder naar je strip- of ebook-bestanden. Gebruik Command+klik of Shift+klik voor meerdere bestanden. Groepen van 5–10 bestanden gaan betrouwbaarder dan 20+ tegelijk.
 
-Als je op een Mac een andere lezer gebruikt en een bestand naar je iPhone wilt sturen, kun je het bestand doorgaans van die app naar het bureaublad slepen en het daarna via AirDrop in Finder versturen. Je kunt ook **Deel → AirDrop** gebruiken vanuit elke app die het macOS-deelmenu ondersteunt.
+### 3. Start de overdracht
 
-## Zorg dat AirDrop aanstaat voordat je begint
+Klik rechts op de geselecteerde bestanden en kies **Deel → AirDrop**. Het deelvenster toont nabije apparaten. Je iPhone verschijnt binnen enkele seconden. Klik erop.
 
-AirDrop vereist dat Wi-Fi en Bluetooth op beide apparaten zijn ingeschakeld. De apparaten hoeven niet op hetzelfde netwerk te zijn — AirDrop maakt een directe peer-to-peer verbinding. Houd beide apparaten binnen ongeveer 9 meter van elkaar voor betrouwbare overdrachten.
+Op je iPhone verschijnt een melding. Tik op **Accepteer**.
 
-**Op iPhone:** Open het Bedieningspaneel en houd het netwerkvak (linksboven) ingedrukt. Tik op **AirDrop** en kies **Iedereen 10 minuten** of **Alleen contacten** naar jouw voorkeur. Als je van je eigen Mac ontvangt, is **Alleen contacten** de veiligste keuze.
+### 4. Kies BiblioFuse als doel-app
 
-**Op Mac:** Open Finder, klik op **AirDrop** in de zijbalk en stel **Laat mij zichtbaar zijn voor** onderaan het venster in op **Iedereen** of **Alleen contacten**.
+Na het accepteren vraagt iOS in welke app elk bestand moet openen. [BiblioFuse](https://bibliofuse.com/nl/) staat in de lijst. Tik erop — het bestand wordt direct geïmporteerd.
 
-## Wat er gebeurt nadat het bestand in BiblioFuse is aangekomen
+Als je de melding per ongeluk wegveegt, staat het bestand in **Bestanden → Downloads**. Tik het aan om het in BiblioFuse te openen.
 
-Wanneer je een via AirDrop ontvangen bestand accepteert en BiblioFuse als bestemming kiest, kopieert de app het bestand naar zijn interne bibliotheekmap. Vanaf dat moment:
+## Versturen van iPhone naar iPhone
 
-- Verschijnt het bestand in je bibliotheek onder de juiste categorie (strips, ebooks of alle bestanden).
-- Stuurt iCloud-synchronisatie het bestand automatisch naar je andere Apple-apparaten met BiblioFuse, als iCloud is ingeschakeld.
-- Herkent BiblioFuse het bestandsformaat (CBZ, EPUB, PDF, enzovoort) en opent het met de juiste leesengine.
-- Synchroniseren je leesvoortgang, bladwijzers en tags via iCloud over al je apparaten.
+Het proces werkt identiek in beide richtingen. Op de verzendende iPhone:
 
-Je hoeft het bestand niet handmatig in een map te plaatsen of te hernoemen. BiblioFuse regelt de import automatisch.
+1. Open de **Bestanden**-app en navigeer naar je strips.
+2. Houd een bestand ingedrukt, tik dan op **Deel**. Voor meerdere bestanden: Selecteer → bestanden kiezen → Deel.
+3. Tik op **AirDrop** in het deelvenster.
+4. Selecteer de ontvangende iPhone.
 
-## AirDrop of Wi-Fi Transfer: wat kies je?
+## Veelvoorkomende problemen oplossen
 
-BiblioFuse heeft ook een ingebouwde **Wi-Fi Transfer**-functie waarmee je bestanden vanuit elke browser op een Mac of pc kunt slepen — ook vanuit Windows — zonder dat je AirDrop nodig hebt. Hier zie je wanneer je welke methode het beste kunt gebruiken:
+**iPhone verschijnt niet in de AirDrop-lijst op Mac**
 
-| Situatie | Beste methode |
-|----------|---------------|
-| Versturen vanaf een Mac, iPad of iPhone | AirDrop |
-| Versturen vanaf een Windows-pc | Wi-Fi Transfer |
-| Versturen vanaf een Linux-machine | Wi-Fi Transfer |
-| Grote hoeveelheid bestanden tegelijk | Wi-Fi Transfer (meerdere slepen) |
-| Snel één bestand tussen je eigen Apple-apparaten | AirDrop |
-| Delen vanaf het apparaat van een vriend | AirDrop |
+Bluetooth én Wi-Fi moeten aan staan op beide apparaten. Nog steeds niet zichtbaar? Zet AirDrop op iPhone uit en weer aan, of doe hetzelfde met Bluetooth op de Mac.
 
-Voor Windows-gebruikers: open BiblioFuse op je iPhone, tik op de knop **Wi-Fi Transfer** en open het weergegeven adres in een browser op je pc. Je kunt meerdere bestanden tegelijk slepen zonder iets op de pc te installeren.
+Alleen contacten vereist dat Mac en iPhone een gezamenlijk contact/Apple ID delen. Gebruik je verschillende Apple IDs, stel beiden in op **Iedereen gedurende 10 minuten**.
 
-## Veelgestelde vragen
+**Overdracht vastgelopen op "Wachten" of "Versturen"**
 
-### Kan ik CBZ-bestanden rechtstreeks via AirDrop naar BiblioFuse op mijn iPhone sturen?
+Zet apparaten dichter bij elkaar, probeer met minder bestanden tegelijk en controleer dat geen apparaat in energiebesparende modus staat. Voor grote bestanden die consistent mislukken, gebruik de [BiblioFuse Wi-Fi Transfer](https://bibliofuse.com/nl/).
 
-Ja. Wanneer je een CBZ-bestand via AirDrop naar je iPhone stuurt, toont iOS een deelmenu om te kiezen met welke app je het wilt openen. Kies BiblioFuse en het bestand wordt direct in je bibliotheek geïmporteerd. BiblioFuse ondersteunt CBZ, CBR, EPUB, PDF, ZIP, RAR en TXT op iOS 17 of nieuwer.
+## Wanneer AirDrop niet het juiste middel is
 
-### Werkt AirDrop ook voor grote stripbestanden?
+| Scenario | Beter middel |
+|----------|--------------|
+| 50+ bestanden van een Mac-bibliotheek | BiblioFuse Wi-Fi Transfer |
+| Doorlopende synchronisatie, grote collectie | [Mac bibliotheek streaming](https://bibliofuse.com/nl/blog/mac-home-library-streaming-iphone/) |
+| Bestanden van Windows of Android | USB-kabel via Bestanden-app |
 
-Ja. AirDrop heeft geen bestandsgroottelimiet en verstuurt op de snelheid van lokaal Wi-Fi, waardoor het uitstekend geschikt is voor grote CBZ- of EPUB-bestanden. Een strip van 300–500 MB wordt doorgaans in minder dan 30 seconden overgedragen als de apparaten dicht bij elkaar zijn.
+## Conclusie
 
-### Waarom verschijnt mijn iPhone niet als AirDrop-ontvanger?
-
-De meest voorkomende oorzaken zijn: AirDrop staat op **Ontvangen uitgeschakeld** op de iPhone, Bluetooth is uitgeschakeld op een van de apparaten, de apparaten zijn te ver van elkaar verwijderd, of het scherm van de iPhone is vergrendeld. Schakel AirDrop in via het Bedieningspaneel op je iPhone en houd beide apparaten dicht bij elkaar met de schermen ontgrendeld.
-
-### Kan ik een EPUB-ebook in BiblioFuse openen in plaats van in Apple Books?
-
-Ja. Wanneer iOS na het accepteren van het AirDrop-bestand de app-selectie toont, tik je op **BiblioFuse**. Als het deelmenu standaard Apple Books opent, tik je op **Meer** of **Openen in andere app** om BiblioFuse te vinden. Je kunt BiblioFuse ook instellen als standaard-handler voor EPUB door een EPUB te openen via de app Bestanden en BiblioFuse te kiezen in het menu Openen in.
-
-### Hoe stuur ik strips naar mijn iPhone vanaf een Windows-pc?
-
-AirDrop werkt alleen tussen Apple-apparaten, dus je kunt het niet gebruiken vanuit Windows. Gebruik in plaats daarvan de ingebouwde **Wi-Fi Transfer**-functie van BiblioFuse: tik op het overdrachtsicoon in BiblioFuse op je iPhone, open de weergegeven URL vervolgens in een browser op je Windows-pc en sleep de bestanden direct naar de pagina.
-
-### Blijft het via AirDrop ontvangen bestand op mijn iPhone staan als ik het van mijn Mac verwijder?
-
-Ja. Zodra BiblioFuse het bestand heeft ontvangen en geïmporteerd, bewaart de app een eigen kopie in de bibliotheekmap. Het origineel van je Mac verwijderen heeft geen invloed op de kopie in BiblioFuse op je iPhone.
-
-## Begin zonder kabels met het lezen van je strips
-
-AirDrop is de snelste manier om strips en ebooks van het ene Apple-apparaat naar het andere te verplaatsen. Zodra BiblioFuse het bestand heeft, kun je meteen beginnen met lezen — geen synchronisatievertraging, geen inloggen, geen tussenstappen.
-
-Download [BiblioFuse](/nl/) uit de App Store en begin met het opbouwen van je draadloze leesbibliotheek. Voor overdrachten vanuit Windows of voor grotere batches is de ingebouwde Wi-Fi Transfer-functie altijd beschikbaar als alternatief.
+AirDrop is de snelste manier om een strip of ebook van het ene Apple-apparaat naar het andere te sturen. Zet AirDrop aan op beide kanten, selecteer je bestanden, klik op je iPhone, accepteer op de telefoon en kies [BiblioFuse](https://bibliofuse.com/nl/) als doel — het hele proces duurt minder dan 30 seconden voor de meeste bestanden.

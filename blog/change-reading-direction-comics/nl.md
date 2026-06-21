@@ -1,88 +1,62 @@
-# Leesrichting wisselen tussen LTR en RTL in BiblioFuse
+# Hoe wissel je tussen links-naar-rechts en rechts-naar-links lezen in BiblioFuse
 
-BiblioFuse laat je de leesrichting wisselen tussen links-naar-rechts (LTR) en rechts-naar-links (RTL) op iPhone en iPad met iOS 17 of nieuwer. De app opent CBZ-, CBR-, EPUB-, PDF-, ZIP-, RAR- en TXT-bestanden en laat je de leesrichting direct omzetten zonder opnieuw op te starten of je comic opnieuw te importeren. Mangalezers kunnen RTL-modus inschakelen zodat pagina's op de Japanse manier omslaan, terwijl westerse strips standaard op LTR blijven staan.
+De meeste westerse strips worden van links naar rechts gelezen: je bladert door naar rechts te vegen, de panelen lopen vanaf de linkerbovenhoek en het verhaal beweegt in dezelfde richting als een gewoon boek. Japanse manga draait alles om — panelen lopen van rechts naar links, de eerste pagina bevindt zich rechts in het volume en je veegt naar links om verder te gaan. Als je beide formaten leest, heb je een lezer nodig die beide aankan zonder elke keer opnieuw in te stellen.
 
-## Waarom leesrichting zo belangrijk is voor strips en manga
+[BiblioFuse](https://bibliofuse.com/nl/) slaat de leesrichting op als instelling per boek, zodat je mangabibliotheek van rechts naar links leest en je westerse strips van links naar rechts — zonder handmatige aanpassingen tussen sessies.
 
-Als je een Japanse manga in BiblioFuse opent en van links naar rechts begint te lezen, loopt het verhaal achterstevoren. Panels die bedoeld zijn om van rechts naar links te lezen verschijnen in omgekeerde volgorde, dialogen lopen door elkaar en actiescènes verliezen hun visuele flow. Overschakelen naar RTL in BiblioFuse duurt vijf seconden en lost het probleem meteen op.
+## Waarom leesrichting belangrijk is
 
-Hetzelfde probleem doet zich voor bij webtoons, manhwa en sommige Europese bandes dessinées met onconventionele paneelindelingen. Eén instelling die dit allemaal oplost tijdens de leeservaring — zonder het bestand te bewerken of opnieuw te importeren — is wat [BiblioFuse](/nl/) het juiste gereedschap maakt voor lezers die strips uit meerdere tradities verzamelen.
+Een manga openen in LTR-modus betekent het verhaal achterstevoren lezen — panelen die van rechts naar links zouden moeten lopen, verschijnen van links naar rechts, waardoor ritme en grappen verloren gaan.
 
-## Hoe verander je de leesrichting in BiblioFuse?
+Het probleem wordt ingewikkelder met manhwa (Koreaanse webcomics) en manhua (Chinese strips). De meeste manhwa gebruikt verticaal scrollen zonder richtingsambiguïteit, maar manhua varieert.
 
-De leesrichting wijzigen in BiblioFuse vergt slechts een paar tikken vanuit de leesweergave.
+## Leesrichting instellen in BiblioFuse
 
-1. Open een strip of manga in BiblioFuse op je iPhone of iPad.
-2. Tik op het midden van het scherm om de lezersbediening tevoorschijn te halen.
-3. Tik op het **instellingenpictogram** (tandwiel of schuifregelaars) in de bovenste of onderste werkbalk.
-4. Zoek de optie **Leesrichting** — deze toont pictogrammen voor LTR (pijl naar rechts) en RTL (pijl naar links).
-5. Kies **RTL** voor manga en Japanse strips, of **LTR** voor westerse strips en de meeste romans.
-6. De weergave wordt direct bijgewerkt. Veeg of tik om de nieuwe paginavolgorde te bevestigen.
+### Standaard voor de hele app
 
-BiblioFuse onthoudt je voorkeur voor leesrichting per bestand. Als je een CBZ op RTL zet, opent dat bestand altijd in RTL totdat je het weer verandert. Andere bestanden in je bibliotheek worden niet beïnvloed.
+Open **Instellingen → Lezen → Leesrichting** om de globale standaard in te stellen. Opties zijn:
 
-## Een globale standaard leesrichting instellen
+- **Links naar rechts (LTR)** — standaard voor westerse strips en de meeste EPUB-ebooks
+- **Rechts naar links (RTL)** — standaard voor manga en sommige manhua
 
-Voor lezers die voornamelijk manga lezen, bespaart RTL als globale standaard herhaalde tikbewegingen.
+Kies wat je het vaakst leest.
 
-1. Open **BiblioFuse** en ga naar het tabblad **Instellingen** (of het instellingstandwiel in de bibliotheekweergave).
-2. Tik op **Leesvoorkeuren** of **Lezerinstellingen**.
-3. Stel **Standaard leesrichting** in op **RTL**.
-4. Alle nieuwe bestanden die je opent, gebruiken standaard RTL. Bestanden die je al individueel hebt ingesteld, behouden hun opgeslagen instelling.
+### Per boek aanpassen
 
-Dit is vooral handig als je bibliotheek voornamelijk Japanse manga bevat — je stelt het één keer in en hoeft er nooit meer aan te denken.
+De globale standaard geldt voor elk nieuw geopend bestand, maar je kunt het per boek aanpassen zonder de globale instelling te wijzigen.
 
-## LTR of RTL: welke gebruik je voor verschillende stripsoorten?
+Tik tijdens het lezen in het midden van het scherm om de lezerbediening te tonen, tik dan op het **tandwiel** in de werkbalk bovenaan. De schakelaar **Leesrichting** staat bovenaan het snelle instellingenpaneel. De wijziging werkt onmiddellijk door, midden in een sessie.
 
-Verschillende striptradities volgen verschillende conventies. Hier is een kort overzicht:
+[BiblioFuse](https://bibliofuse.com/nl/) slaat deze voorkeur per bestand op. De volgende keer dat je hetzelfde boek opent, wordt de door jou ingestelde richting gebruikt.
 
-**Gebruik RTL voor:**
-- Japanse manga (bijv. One Piece, Naruto, Berserk)
-- Koreaanse manhwa in traditioneel formaat (geen webtoons)
-- Sommige Chinese manhua die Japanse conventies volgen
+## Wat er verandert bij wisselen van richting
 
-**Gebruik LTR voor:**
-- Westerse strips (Marvel, DC, Image, Dark Horse)
-- Europese bandes dessinées
-- De meeste EPUB-teksteboeken
-- Webtoons en manhwa in verticale scroll-modus
+**Veegrichting** — In LTR veeg je naar links om vooruit te gaan. In RTL veeg je naar rechts om vooruit te gaan. Dit voelt vreemd aan het begin, maar weerspiegelt hoe je fysiek een manga-pagina omslaat.
 
-**Verticale scroll-modus** (voor webtoons) staat los van de paginarichting. In verticale scroll-modus heeft de links/rechts-instelling geen zichtbaar effect omdat vegen is vervangen door omhoog en omlaag scrollen. Je vindt verticale scroll in hetzelfde lezersinstelling-paneel.
+**Volgorde bij twee-pagina-layout** — In LTR heeft de linkerpagina het lagere paginanummer. In RTL heeft de rechterpagina het lagere nummer, zoals in gedrukte manga-volumes.
 
-## Hoe wissel je van richting midden in een sessie zonder je plek te verliezen?
+**Oriëntatie van de miniatuurbalk** — De balk onderaan de lezer keert om. In RTL-modus is de meest linkse miniatuur de laatste pagina van het volume.
 
-BiblioFuse behoudt je leespositie wanneer je van richting wisselt. Als je op pagina 47 van een manga zit en van LTR naar RTL schakelt, blijf je op pagina 47. De paginanummering springt niet en wordt niet gereset.
+**Detectie van dubbele pagina's** — BiblioFuse herkent dubbele pagina's. In RTL-modus is de rechterpagina pagina N en de linkerpagina N+1.
 
-Dit is belangrijk omdat sommige mangavolumes extra inhoud bevatten — kleurenpagina's, auteursnotities, bonushoofdstukken — die mogelijk in LTR zijn opgemaakt, ook binnen een verder RTL-volume. Je kunt van richting wisselen, dat onderdeel lezen en terugschakelen zonder naar een bladwijzerpagina te navigeren.
+## Verticaal scrollen en leesrichting
+
+Verticaal scroll-modus — voor manhwa en webtoons — wordt niet beïnvloed door de LTR/RTL-instelling. Continu scrollen heeft geen links-rechts paginavolgorde.
+
+## Automatische detectie
+
+Sommige CBZ-bestanden bevatten een `ComicInfo.xml`-bestand met de beoogde leesrichting. BiblioFuse leest deze metadata en stelt de richting automatisch in bij het eerste openen.
 
 ## Veelgestelde vragen
 
-### Hoe stel ik de leesrichting in voor manga in BiblioFuse?
+**De veegrichting voelt omgekeerd na het wisselen naar RTL. Klopt dat?**
 
-Tik op het midden van het scherm tijdens het lezen om de lezersbediening te openen, tik daarna op het instellingenpictogram en kies **RTL** onder Leesrichting. De wijziging geldt onmiddellijk voor de huidige pagina. BiblioFuse slaat de instelling op voor dat bestand, zodat het voortaan altijd in RTL opent.
+Ja — in RTL-modus ga je vooruit door naar rechts te vegen. Dit weerspiegelt het fysieke gebaar van het omslaan van een manga-pagina. Je raakt er snel aan gewend.
 
-### Verandert de leesrichting de paginanummering?
+**Synchroniseert de leesrichting tussen iPhone en iPad?**
 
-Nee. Het aantal pagina's blijft gelijk, ongeacht of je LTR of RTL leest. Van richting wisselen verandert alleen welke rand van het scherm naar de volgende pagina gaat — het hernummert of herordent de onderliggende pagina's in het bestand niet.
+Per-bestand richtingvoorkeuren synchroniseren via iCloud samen met de leespositie. De globale standaardinstelling is apparaatspecifiek en synchroniseert niet.
 
-### Kan ik RTL als standaard instellen voor al mijn manga?
+## Conclusie
 
-Ja. Ga naar **Instellingen → Leesvoorkeuren → Standaard leesrichting** en kies RTL. BiblioFuse past RTL toe op elk nieuw bestand dat je opent. Bestanden die je al hebt gelezen met een opgeslagen richting behouden hun individuele instelling.
-
-### Ondersteunt BiblioFuse RTL voor EPUB-eboeken?
-
-BiblioFuse kan de richting wisselen voor EPUB-bestanden, maar de meeste Japanse manga in EPUB-formaat bevatten al een leesrichtingdeclaratie in de bestandsmetadata. BiblioFuse respecteert die metadata, waardoor manga-EPUB's vaak automatisch in de juiste richting openen. Je kunt dit toch handmatig overschrijven via het lezersinstelling-paneel.
-
-### Wat is het verschil tussen RTL-paginamodus en verticale scroll-modus?
-
-RTL-paginamodus verandert de richting van horizontale paginaomslaan — naar links vegen gaat vooruit in plaats van achteruit. Verticale scroll-modus verwijdert horizontaal vegen volledig en vervangt dit door continu scrollen van boven naar beneden, ontworpen voor webtoons en langstripcomics. Beide instellingen zijn beschikbaar in hetzelfde lezersinstelling-paneel en kunnen onafhankelijk van elkaar worden ingesteld.
-
-### Onthoudt BiblioFuse mijn leesrichting per bestand?
-
-Ja. BiblioFuse slaat de richting die je voor elk bestand instelt afzonderlijk op. Je manga opent in RTL, je DC-strips in LTR en je webtoons in verticale scroll — allemaal automatisch, op basis van wat je de laatste keer hebt ingesteld voor elk bestand.
-
-## Lees elke strip zoals hij bedoeld is
-
-Leesrichting is een kleine instelling met een grote invloed op het leesplezier. Zodra BiblioFuse op RTL staat voor je manga, vloeien de panels zoals de tekenaar het voor ogen had, lezen de tekstballonnen in de juiste volgorde en komen dubbele pagina's correct samen.
-
-Download [BiblioFuse](/nl/) in de App Store en open vandaag nog je mangabibliotheek. Als je nieuwe mangabestanden naar je iPhone wilt overbrengen, laat de ingebouwde Wi-Fi-overdracht je bestanden rechtstreeks slepen vanuit een browser op je Mac of pc — zonder kabel, zonder iTunes, zonder iCloud-account.
+Wisselen van leesrichting in [BiblioFuse](https://bibliofuse.com/nl/) duurt drie tikken en wordt automatisch per boek onthouden. Stel je globale standaard in op je meest gelezen formaat, pas per boek aan waar nodig, en de lezer beheert veegrichting, twee-pagina-volgorde en miniatuuroriëntatie zonder verdere configuratie.

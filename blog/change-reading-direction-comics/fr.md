@@ -1,88 +1,62 @@
-# Comment changer le sens de lecture LTR et RTL dans BiblioFuse
+# Comment changer entre la lecture de gauche à droite et de droite à gauche dans BiblioFuse
 
-BiblioFuse vous permet de basculer le sens de lecture entre gauche à droite (LTR) et droite à gauche (RTL) sur iPhone et iPad sous iOS 17 ou version ultérieure. L'application lit les fichiers CBZ, CBR, EPUB, PDF, ZIP, RAR et TXT et vous permet d'inverser le sens de lecture instantanément, sans redémarrer ni réimporter votre comic. Les lecteurs de manga peuvent activer le mode RTL pour que les pages se tournent à la japonaise, tandis que les comics occidentaux restent en LTR par défaut.
+La plupart des comics occidentaux se lisent de gauche à droite : vous tournez la page en glissant vers la droite, les cases se succèdent depuis le coin supérieur gauche et l'histoire avance dans le sens normal de la lecture. Le manga japonais inverse tout — les cases vont de droite à gauche, la première page se trouve à droite du volume et vous glissez vers la gauche pour avancer. Si vous lisez les deux formats, vous avez besoin d'un lecteur capable de gérer les deux sans reconfiguration à chaque changement de série.
 
-## Pourquoi le sens de lecture est essentiel pour les comics et les mangas
+[BiblioFuse](https://bibliofuse.com/fr/) enregistre la direction de lecture en tant que réglage par livre, de sorte que votre bibliothèque de mangas se lit de droite à gauche et vos comics occidentaux de gauche à droite, sans aucune manipulation entre les sessions.
 
-Si vous ouvrez un manga japonais dans BiblioFuse et commencez à lire de gauche à droite, l'histoire se déroule à l'envers. Les cases prévues pour être lues de droite à gauche apparaissent dans l'ordre inverse, les dialogues sont décousus et les scènes d'action perdent tout leur rythme visuel. Passer en RTL dans BiblioFuse prend cinq secondes et corrige immédiatement le problème.
+## Pourquoi la direction de lecture est importante
 
-Le même souci se pose avec les webtoons, les manhwas et certaines bandes dessinées européennes aux compositions de planches atypiques. Disposer d'un seul réglage qui règle tout cela pendant la session de lecture — sans modifier le fichier ni le réimporter — c'est ce qui fait de [BiblioFuse](/fr/) l'outil idéal pour les lecteurs qui collectionnent des comics de différentes traditions.
+Ouvrir un manga en mode LTR revient à le lire à l'envers — les cases qui devraient aller de droite à gauche apparaissent de gauche à droite, ruinant le rythme et les gags. La confrontation en fin de chapitre devient le dialogue d'ouverture.
 
-## Comment changer le sens de lecture dans BiblioFuse
+La question se complique avec le manhwa (webcomics coréens) et le manhua (comics chinois). La plupart des manhwa utilisent un défilement vertical sans ambiguïté directionnelle, mais le manhua varie.
 
-Changer le sens de lecture dans BiblioFuse ne demande que quelques appuis depuis la vue de lecture.
+## Régler la direction de lecture dans BiblioFuse
 
-1. Ouvrez un comic ou un manga dans BiblioFuse sur votre iPhone ou iPad.
-2. Appuyez au centre de l'écran pour afficher les contrôles du lecteur.
-3. Appuyez sur l'**icône des réglages** (engrenage ou curseurs) dans la barre d'outils supérieure ou inférieure.
-4. Repérez l'option **Sens de lecture** — elle affiche des icônes pour LTR (flèche pointant vers la droite) et RTL (flèche pointant vers la gauche).
-5. Appuyez sur **RTL** pour les mangas et les comics japonais, ou sur **LTR** pour les comics occidentaux et la plupart des romans.
-6. La vue se met à jour immédiatement. Faites glisser ou appuyez pour confirmer le nouvel ordre des pages.
+### Valeur par défaut globale
 
-BiblioFuse mémorise votre préférence de sens par fichier. Si vous passez un CBZ en RTL, ce fichier s'ouvrira toujours en RTL jusqu'à ce que vous le changiez. Les autres fichiers de votre bibliothèque ne sont pas affectés.
+Ouvrez **Réglages → Lecture → Direction de lecture** pour définir la valeur par défaut globale. Les options sont :
 
-## Définir un sens de lecture global par défaut
+- **Gauche à droite (LTR)** — standard pour les comics occidentaux et la plupart des EPUB
+- **Droite à gauche (RTL)** — standard pour le manga et certains manhua
 
-Pour les lecteurs qui lisent principalement du manga, définir le RTL comme sens par défaut global évite de devoir répéter le réglage à chaque fichier.
+Choisissez le format que vous lisez le plus souvent.
 
-1. Ouvrez **BiblioFuse** et accédez à l'onglet **Réglages** (ou à l'engrenage de réglages dans la vue bibliothèque).
-2. Appuyez sur **Préférences de lecture** ou **Réglages du lecteur**.
-3. Réglez **Sens de lecture par défaut** sur **RTL**.
-4. Tous les nouveaux fichiers que vous ouvrirez utiliseront RTL par défaut. Les fichiers déjà configurés individuellement conservent leur réglage enregistré.
+### Réglage par livre
 
-C'est particulièrement pratique si votre bibliothèque est principalement composée de mangas japonais — vous le configurez une fois et n'y pensez plus.
+La valeur par défaut s'applique à tout nouveau fichier ouvert, mais vous pouvez la remplacer pour chaque livre sans modifier le réglage global.
 
-## LTR ou RTL : lequel choisir selon le type de comic ?
+Pendant la lecture, appuyez au centre de l'écran pour afficher les commandes, puis appuyez sur l'**icône d'engrenage** dans la barre d'outils. Le sélecteur **Direction de lecture** apparaît en haut du panneau. Le changement prend effet immédiatement, sans fermer le livre.
 
-Les différentes traditions du comic obéissent à des conventions différentes. Voici un guide rapide :
+[BiblioFuse](https://bibliofuse.com/fr/) enregistre cette préférence par fichier. La prochaine fois que vous ouvrez le même livre, il s'ouvre dans la direction que vous avez définie.
 
-**Utilisez RTL pour :**
-- Les mangas japonais (ex. : One Piece, Naruto, Berserk)
-- Les manhwas coréens publiés en format traditionnel (pas les webtoons)
-- Certains manhuas chinois qui suivent les conventions japonaises
+## Ce qui change lors du basculement
 
-**Utilisez LTR pour :**
-- Les comics occidentaux (Marvel, DC, Image, Dark Horse)
-- Les bandes dessinées européennes
-- La plupart des ebooks EPUB en texte
-- Les webtoons et manhwas en défilement vertical
+**Direction du glissement** — En LTR, glissez vers la gauche pour avancer. En RTL, glissez vers la droite pour avancer. Le changement peut dérouter au début, mais il reflète l'acte physique de tourner les pages d'un manga.
 
-**Le mode défilement vertical** (pour les webtoons) est distinct du sens de page. Dans ce mode, le réglage gauche/droite n'a aucun effet visible car le glissement horizontal est remplacé par un défilement de haut en bas. Vous trouverez le défilement vertical dans le même panneau de réglages du lecteur.
+**Ordre en affichage deux pages** — En mode paysage LTR, la page gauche a le numéro inférieur. En RTL, la page droite a le numéro inférieur, comme dans les volumes imprimés.
 
-## Comment changer de sens en cours de lecture sans perdre sa place ?
+**Orientation de la barre de miniatures** — La barre s'inverse. En mode RTL, la miniature la plus à gauche est la dernière page du volume.
 
-BiblioFuse préserve votre position de lecture lorsque vous changez de sens. Si vous êtes à la page 47 d'un manga et passez de LTR à RTL, vous restez à la page 47. La numérotation des pages ne saute pas et ne se réinitialise pas.
+**Détection des planches doubles** — BiblioFuse identifie les doubles pages. En RTL, la page droite est la page N et la gauche la page N+1.
 
-C'est important car certains volumes de manga contiennent du contenu supplémentaire — pages en couleur, notes de l'auteur, chapitres bonus — qui peut être formaté en LTR au sein d'un volume par ailleurs en RTL. Vous pouvez changer de sens, lire cette section, puis revenir en arrière sans avoir à naviguer jusqu'à une page marquée.
+## Défilement vertical et direction de lecture
 
-## Foire aux questions
+Le mode de défilement vertical — utilisé pour le manhwa et les webtoons — n'est pas affecté par le réglage LTR/RTL. Le défilement continu n'a pas d'ordre de pages gauche-droite.
 
-### Comment changer le sens de lecture du manga dans BiblioFuse ?
+## Détection automatique
 
-Appuyez au centre de l'écran pendant la lecture pour afficher les contrôles du lecteur, puis appuyez sur l'icône des réglages et choisissez **RTL** sous Sens de lecture. Le changement prend effet immédiatement sur la page en cours. BiblioFuse enregistre ce réglage pour ce fichier afin qu'il s'ouvre toujours en RTL par la suite.
+Certains fichiers CBZ contiennent un fichier `ComicInfo.xml` précisant la direction de lecture. BiblioFuse lit ces métadonnées et applique automatiquement la direction correcte à la première ouverture.
 
-### Est-ce que changer le sens de lecture modifie la numérotation des pages ?
+## Questions fréquentes
 
-Non. Le nombre de pages reste identique que vous lisiez en LTR ou en RTL. Changer le sens modifie uniquement quel bord de l'écran fait avancer à la page suivante — cela ne renumérote pas et ne réorganise pas les pages du fichier.
+**La direction de glissement me semble inversée après avoir activé RTL. Est-ce normal ?**
 
-### Puis-je définir RTL comme valeur par défaut pour tout mon manga ?
+Oui — en mode RTL, glisser vers la droite avance à la page suivante. Cela reflète le geste physique de feuilleter un manga. Vous vous y habituerez en quelques minutes.
 
-Oui. Rendez-vous dans **Réglages → Préférences de lecture → Sens de lecture par défaut** et choisissez RTL. BiblioFuse appliquera RTL à tous les nouveaux fichiers que vous ouvrirez. Les fichiers déjà lus avec un sens enregistré conservent leur réglage individuel.
+**La direction de lecture se synchronise-t-elle entre iPhone et iPad ?**
 
-### BiblioFuse prend-il en charge le RTL pour les ebooks EPUB ?
+Les préférences de direction par fichier se synchronisent via iCloud. Le réglage par défaut global est local à l'appareil et ne se synchronise pas.
 
-BiblioFuse peut changer le sens pour les fichiers EPUB, mais la plupart des mangas japonais au format EPUB incluent déjà une déclaration de sens de lecture dans les métadonnées du fichier. BiblioFuse respecte ces métadonnées, si bien que les EPUB de manga s'ouvrent souvent automatiquement dans le bon sens. Vous pouvez néanmoins le modifier manuellement depuis le panneau de réglages du lecteur.
+## En résumé
 
-### Quelle est la différence entre le mode page RTL et le mode défilement vertical ?
-
-Le mode page RTL modifie le sens des changements de page horizontaux — glisser vers la gauche avance au lieu de reculer. Le mode défilement vertical supprime complètement le glissement horizontal et le remplace par un défilement continu de haut en bas, conçu pour les webtoons et les comics en bande longue. Les deux réglages sont disponibles dans le même panneau de réglages du lecteur et peuvent être modifiés indépendamment l'un de l'autre.
-
-### BiblioFuse mémorise-t-il mon sens de lecture par fichier ?
-
-Oui. BiblioFuse enregistre le sens que vous définissez pour chaque fichier individuellement. Vos mangas s'ouvrent en RTL, vos comics DC en LTR et vos webtoons en défilement vertical — tout automatiquement, en fonction de ce que vous avez réglé la dernière fois que vous avez lu chaque fichier.
-
-## Lisez chaque comic dans le bon sens
-
-Le sens de lecture est un petit réglage qui a un impact considérable sur le plaisir de lecture. Une fois BiblioFuse configuré en RTL pour votre manga, les cases s'enchaînent comme l'artiste l'a voulu, les bulles se lisent dans l'ordre et les doubles pages s'assemblent correctement.
-
-Téléchargez [BiblioFuse](/fr/) depuis l'App Store et ouvrez votre bibliothèque de mangas dès aujourd'hui. Si vous souhaitez transférer de nouveaux fichiers manga sur votre iPhone, la fonction de transfert Wi-Fi intégrée vous permet de glisser-déposer des fichiers directement depuis un navigateur sur votre Mac ou PC — sans câble, sans iTunes, sans compte iCloud.
+Changer la direction de lecture dans [BiblioFuse](https://bibliofuse.com/fr/) prend trois appuis et se mémorise automatiquement par livre. Définissez votre valeur par défaut pour le format que vous lisez le plus, ajustez par livre le reste, et le lecteur gère direction de glissement, ordre des doubles pages et orientation des miniatures sans autre configuration.

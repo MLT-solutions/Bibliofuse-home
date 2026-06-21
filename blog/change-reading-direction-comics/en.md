@@ -1,88 +1,76 @@
 # How to Switch Between LTR and RTL Reading in BiblioFuse
 
-BiblioFuse lets you switch the reading direction between left-to-right (LTR) and right-to-left (RTL) on iPhone and iPad running iOS 17 or later. The app reads CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT files and lets you flip reading direction instantly without restarting or re-importing your comic. Manga readers can enable RTL mode so pages turn the Japanese way, while Western comics default to standard LTR.
+Most Western comics read left-to-right: you turn the page with a right swipe, panels flow from the top-left corner, and the story moves across a spread in the direction you'd read a book. Japanese manga flips everything — panels run right-to-left, the first page is on the right side of the volume, and you swipe left to advance. If you read both formats, you need a reader that handles both without reconfiguring every time you switch series.
 
-## Why Reading Direction Matters for Comics and Manga
+[BiblioFuse](https://bibliofuse.com/en/) keeps reading direction as a per-book setting, so your manga library reads right-to-left and your superhero comics read left-to-right without any manual toggling between sessions.
 
-If you pick up a Japanese manga in BiblioFuse and start reading left-to-right, the story runs backwards. Panels meant to be read right-to-left now appear in reverse order, dialogue is out of sequence, and action scenes lose their visual flow. Switching to RTL in BiblioFuse takes five seconds and immediately fixes this.
+## Why Reading Direction Matters
 
-The same problem shows up in webtoons, manhwa, and some European bandes dessinées that use unconventional panel layouts. Having a single setting that fixes all of this inside the reading session — without editing the file or re-importing — is what makes [BiblioFuse](/en/) the right tool for readers who collect across multiple comic traditions.
+It's easy to underestimate the impact of getting this wrong. Open a manga in LTR mode and you'll read the story backwards — panels that should run right-to-left appear left-to-right, ruining pacing and gags. The confrontation at the end of a chapter becomes the greeting at the start. Translators and publishers add "Read right to left!" notices precisely because this mistake is common.
 
-## How to Change Reading Direction in BiblioFuse
+The problem compounds for manhwa (Korean webcomics) and manhua (Chinese comics). Most manhwa uses vertical scroll without directional ambiguity, but manhua varies, and some series switch direction mid-volume.
 
-Changing the reading direction in BiblioFuse takes only a few taps inside the reading view.
+## Setting Reading Direction in BiblioFuse
 
-1. Open a comic or manga file in BiblioFuse on your iPhone or iPad.
-2. Tap the centre of the screen to reveal the reader controls.
-3. Tap the **settings icon** (gear or sliders icon) in the top or bottom toolbar.
-4. Find the **Reading Direction** option — it shows icons for LTR (left arrow pointing right) and RTL (right arrow pointing left).
-5. Tap **RTL** for manga and Japanese comics, or **LTR** for Western comics and most novels.
-6. The view updates immediately. Swipe or tap to confirm the new page order.
+### App-Wide Default
 
-BiblioFuse remembers your direction preference per file. If you switch a CBZ to RTL, that file always opens RTL until you change it again. Other files in your library are not affected.
+Open **Settings → Reading → Reading Direction** to set the global default. Options are:
 
-## Setting a Global Default Reading Direction
+- **Left to Right (LTR)** — standard for Western comics and most EPUB ebooks
+- **Right to Left (RTL)** — standard for manga, some manhua
 
-For readers who mostly read manga, setting RTL as the global default saves repeated taps.
+Set this to whichever format you read most. If manga makes up most of your library, set RTL as the default.
 
-1. Open **BiblioFuse** and go to the **Settings** tab (or the profile/settings gear in the library view).
-2. Tap **Reading Preferences** or **Reader Settings**.
-3. Set **Default Reading Direction** to **RTL**.
-4. All new files you open will default to RTL. Files you have previously set individually keep their saved setting.
+### Per-Book Override
 
-This is particularly useful if your library is predominantly Japanese manga — you set it once and forget about it.
+The global default applies to any newly opened file, but you can override it per book without changing the global setting.
 
-## LTR vs RTL: Which to Use for Different Comic Types
+While reading, tap the centre of the screen to reveal the reader controls, then tap the **gear icon** in the top toolbar. The **Reading Direction** toggle appears at the top of the quick settings panel. Switch between LTR and RTL here — the change takes effect immediately, mid-session, without closing the book.
 
-Different comic traditions follow different conventions. Here's a quick guide:
+[BiblioFuse](https://bibliofuse.com/en/) saves this per-file preference. Next time you open the same book, it opens in the direction you set last time, regardless of the global default. Your manga will consistently open RTL while your Western comics open LTR.
 
-**Use RTL for:**
-- Japanese manga (e.g. One Piece, Naruto, Berserk)
-- Korean manhwa published in traditional format (not webtoons)
-- Some Chinese manhua that follow Japanese conventions
+## What Changes When You Switch Direction
 
-**Use LTR for:**
-- Western comics (Marvel, DC, Image, Dark Horse)
-- European bandes dessinées
-- Most EPUB text ebooks
-- Webtoons and long-strip manhwa in vertical scroll mode
+The direction setting controls several things simultaneously:
 
-**Vertical scroll mode** (for webtoons) is separate from page direction. In vertical scroll mode the left/right direction setting has no visible effect because swiping is replaced by scrolling up or down. You can find vertical scroll in the same reading settings panel.
+**Swipe direction** — In LTR, swipe left to advance (next page), right to go back. In RTL, swipe right to advance, left to go back. The reversal trips readers up the first time — it feels counterintuitive until you realise the gesture now mirrors turning a physical manga page toward the left.
 
-## How to Switch Direction Mid-Read Without Losing Your Place
+**Two-page layout ordering** — In LTR two-page mode (landscape), the left page has the lower page number. In RTL, the right page has the lower page number — matching how physical manga volumes are printed.
 
-BiblioFuse preserves your reading position when you change direction. If you are on page 47 of a manga and switch from LTR to RTL, you stay on page 47. The page numbering does not jump or reset.
+**Thumbnail scrubber orientation** — The thumbnail bar at the bottom of the reader reverses. In RTL mode, the leftmost thumbnail is the last page in the volume; dragging right moves backward through the book.
 
-This matters because some manga volumes include extra content — colour pages, author notes, bonus chapters — that may be formatted in LTR even inside an otherwise RTL volume. You can flip direction, read that section, and flip back without navigating to a bookmarked page.
+**Spread detection** — BiblioFuse identifies double-page spreads by aspect ratio and image dimensions. When it detects a spread, it displays both pages together. In RTL mode, the right page is page N and the left page is page N+1, matching the publisher's print ordering.
 
-## Frequently Asked Questions
+## Keyboard and Tap Zone Navigation
 
-### How do I switch reading direction for manga in BiblioFuse?
+On iPad with an external keyboard, arrow keys follow the current direction setting. In LTR, the right arrow goes to the next page. In RTL, the right arrow moves backward in the story (to the previous panel sequence), and the left arrow advances forward — matching the physical metaphor of a right-to-left book.
 
-Tap the centre of the screen while reading to bring up the reader controls, then tap the settings icon and choose **RTL** under Reading Direction. The change takes effect immediately on the current page. BiblioFuse saves the setting for that file so it opens RTL every time after that.
+Tap zones are direction-aware in the same way. If you've configured tap-right-side = next page in **Settings → Gestures**, this remains consistent: tapping the right side of the screen always moves "forward," whether that's the next or previous physical page number depending on direction.
 
-### Does changing reading direction affect page numbering?
+## Vertical Scroll and Reading Direction
 
-No. The page count stays the same regardless of whether you read LTR or RTL. Switching direction just changes which edge of the screen advances to the next page — it does not renumber or reorder the underlying pages in the file.
+Vertical scroll mode — used for manhwa and webtoons — is not affected by the LTR/RTL setting. Continuous scroll has no left-right page ordering, so the direction toggle doesn't apply. Scroll direction is always top-to-bottom.
 
-### Can I set RTL as the default for all my manga?
+If you read a mix of manhwa (vertical) and manga (RTL), you can leave the reading direction set to RTL. Manhwa files will open in vertical scroll as expected, and manga files will respect the RTL setting — they're stored as separate per-book preferences.
 
-Yes. Go to **Settings → Reading Preferences → Default Reading Direction** and choose RTL. BiblioFuse will apply RTL to every new file you open. Files you have already read with a saved direction keep their individual setting.
+## Automatic Detection
 
-### Does BiblioFuse support RTL for EPUB ebooks?
+Some CBZ files contain a `ComicInfo.xml` file that specifies the intended reading direction. BiblioFuse reads this metadata when present and sets the per-book direction accordingly on first open — no manual override needed. This works for files exported by ComicRack, YACReader, and other tools that write ComicInfo metadata. If your file has this metadata, you'll see the direction applied automatically the first time you open it.
 
-BiblioFuse can switch direction for EPUB files, but most Japanese manga in EPUB format already include a reading direction declaration in the file metadata. BiblioFuse respects that metadata, so manga EPUBs often open in the correct direction automatically. You can still override it manually via the reading settings panel.
+## Common Questions
 
-### What is the difference between RTL page mode and vertical scroll mode?
+**My swipe direction feels backwards after switching to RTL. Is that correct?**
 
-RTL page mode changes the direction of horizontal page turns — swiping left advances forward instead of back. Vertical scroll mode removes horizontal swiping entirely and replaces it with continuous top-to-bottom scrolling, which is designed for webtoons and long-strip comics. Both settings are available in the same reader settings panel and can be switched independently.
+Yes — in RTL mode, swiping right advances to the next page. This mirrors the physical act of turning a manga page toward the left side of the volume. It takes a few minutes to feel natural, but the metaphor is consistent with how the books are designed to be read.
 
-### Does BiblioFuse remember my reading direction per file?
+**Can I set reading direction on iPhone and have it apply on iPad too?**
 
-Yes. BiblioFuse saves the direction you set for each file individually. Your manga opens RTL, your DC comics open LTR, and your webtoons open in vertical scroll — all automatically, based on what you set the last time you read each file.
+Per-file direction preferences sync via iCloud along with reading position. If you set a file to RTL on iPhone, it will open RTL on iPad. The global default setting is device-local and does not sync.
 
-## Make Every Comic Read the Right Way
+**Does the reading direction affect how files are imported or named?**
 
-Reading direction is a small setting with a big impact on enjoyment. Once BiblioFuse is set to RTL for your manga, the panels flow the way the artist intended, speech bubbles read in order, and double-page spreads come together correctly.
+No. Reading direction only affects how the reader displays and navigates files. File names, folder structure, and the library view are unaffected.
 
-Download [BiblioFuse](/en/) from the App Store and open your manga library today. If you want to transfer new manga files to your iPhone, the built-in Wi-Fi Transfer feature lets you drag files directly from a browser on your Mac or PC — no cable, no iTunes, no iCloud account needed.
+## Key Takeaway
+
+Switching reading direction in [BiblioFuse](https://bibliofuse.com/en/) takes three taps and persists per book automatically. Set your global default to match your primary reading format, override per-book for everything else, and the reader handles swipe direction, two-page ordering, and thumbnail orientation without further configuration. For anyone who reads both manga and Western comics, it's the setting that makes the difference between a reader you fight and one that disappears into the background.

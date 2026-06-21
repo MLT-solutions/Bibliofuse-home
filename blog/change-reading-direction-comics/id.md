@@ -1,88 +1,54 @@
-# Cara Mengganti Arah Baca Komik di BiblioFuse: Panduan LTR dan RTL
+# Cara Beralih antara Membaca Kiri-ke-Kanan dan Kanan-ke-Kiri di BiblioFuse
 
-BiblioFuse memungkinkan kamu mengganti arah baca antara kiri ke kanan (LTR) dan kanan ke kiri (RTL) di iPhone dan iPad yang menjalankan iOS 17 atau lebih baru. Aplikasi ini mendukung file CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT, dan kamu bisa mengganti arah baca secara instan tanpa perlu me-restart aplikasi atau mengimpor ulang komik. Pembaca manga bisa mengaktifkan mode RTL agar halaman berbalik seperti cara baca manga Jepang, sementara komik Barat secara default menggunakan LTR standar.
+Kebanyakan komik Barat dibaca dari kiri ke kanan: Anda berpindah halaman dengan geser ke kanan, panel mengalir dari sudut kiri atas, dan cerita bergerak seperti buku biasa. Manga Jepang membalik segalanya — panel berjalan dari kanan ke kiri, halaman pertama ada di sisi kanan volume, dan Anda menggeser ke kiri untuk maju. Jika Anda membaca kedua format, Anda membutuhkan pembaca yang menangani keduanya tanpa perlu dikonfigurasi ulang setiap kali berganti seri.
 
-## Mengapa Arah Baca Penting untuk Komik dan Manga
+[BiblioFuse](https://bibliofuse.com/id/) menyimpan arah membaca sebagai pengaturan per buku, sehingga koleksi manga Anda dibaca kanan-ke-kiri dan komik Barat dibaca kiri-ke-kanan — tanpa pengalihan manual antara sesi.
 
-Jika kamu membuka manga Jepang di BiblioFuse dan membacanya dari kiri ke kanan, ceritanya akan berjalan mundur. Panel-panel yang seharusnya dibaca dari kanan ke kiri kini muncul dalam urutan terbalik, dialog tidak berurutan, dan alur adegan aksi kehilangan dinamikanya. Mengganti ke RTL di BiblioFuse hanya butuh lima detik dan langsung memperbaiki masalah ini.
+## Mengapa Arah Membaca Itu Penting
 
-Masalah yang sama juga muncul pada webtoon, manhwa Korea, dan sebagian bande dessinée Eropa yang menggunakan tata letak panel yang tidak konvensional. Memiliki satu pengaturan yang bisa menyelesaikan semuanya di tengah sesi baca — tanpa mengedit file atau mengimpor ulang — inilah yang menjadikan [BiblioFuse](/{lang}/) alat yang tepat bagi pembaca yang mengoleksi komik dari berbagai tradisi.
+Membuka manga dalam mode LTR berarti membaca cerita secara terbalik — panel yang seharusnya berjalan dari kanan ke kiri muncul dari kiri ke kanan, merusak ritme dan lelucon.
 
-## Cara Mengganti Arah Baca di BiblioFuse
+## Mengatur Arah Membaca di BiblioFuse
 
-Mengganti arah baca di BiblioFuse hanya butuh beberapa ketukan di dalam tampilan baca.
+### Default Seluruh Aplikasi
 
-1. Buka file komik atau manga di BiblioFuse pada iPhone atau iPad kamu.
-2. Ketuk bagian tengah layar untuk menampilkan kontrol pembaca.
-3. Ketuk **ikon pengaturan** (ikon roda gigi atau slider) di toolbar atas atau bawah.
-4. Cari opsi **Arah Baca** — di sini ditampilkan ikon LTR (panah ke kanan) dan RTL (panah ke kiri).
-5. Pilih **RTL** untuk manga dan komik Jepang, atau **LTR** untuk komik Barat dan sebagian besar novel.
-6. Tampilan langsung diperbarui. Geser atau ketuk untuk memastikan urutan halaman yang baru.
+Buka **Pengaturan → Membaca → Arah Membaca** untuk menetapkan default global. Pilihan:
 
-BiblioFuse mengingat preferensi arah baca per file. Jika kamu mengganti CBZ ke RTL, file tersebut akan selalu dibuka dalam RTL hingga kamu mengubahnya lagi. File lain di perpustakaan kamu tidak terpengaruh.
+- **Kiri ke Kanan (LTR)** — standar untuk komik Barat dan sebagian besar ebook EPUB
+- **Kanan ke Kiri (RTL)** — standar untuk manga
 
-## Mengatur Arah Baca Default Secara Global
+Pilih format yang paling sering Anda baca.
 
-Bagi yang sebagian besar membaca manga, mengatur RTL sebagai default global bisa menghemat ketukan berulang.
+### Penggantian Per Buku
 
-1. Buka **BiblioFuse** dan masuk ke tab **Pengaturan** (atau ikon roda gigi profil/pengaturan di tampilan perpustakaan).
-2. Ketuk **Preferensi Baca** atau **Pengaturan Pembaca**.
-3. Atur **Arah Baca Default** ke **RTL**.
-4. Semua file baru yang kamu buka akan secara default menggunakan RTL. File yang sebelumnya sudah diatur secara individual akan tetap menggunakan pengaturannya masing-masing.
+Default global diterapkan ke file yang baru dibuka, tetapi Anda dapat menggantinya per buku tanpa mengubah pengaturan global.
 
-Fitur ini sangat berguna jika perpustakaanmu didominasi manga Jepang — cukup atur sekali dan lupakan.
+Saat membaca, ketuk tengah layar untuk menampilkan kontrol pembaca, lalu ketuk **ikon roda gigi** di bilah alat atas. Sakelar **Arah Membaca** muncul di bagian atas panel pengaturan cepat. Perubahan berlaku segera.
 
-## LTR vs RTL: Mana yang Digunakan untuk Berbagai Jenis Komik
+[BiblioFuse](https://bibliofuse.com/id/) menyimpan preferensi ini per file. Lain kali Anda membuka buku yang sama, buku tersebut terbuka dengan arah yang Anda tetapkan terakhir kali.
 
-Tradisi komik yang berbeda mengikuti konvensi yang berbeda pula. Berikut panduan singkatnya:
+## Yang Berubah Saat Beralih Arah
 
-**Gunakan RTL untuk:**
-- Manga Jepang (misalnya One Piece, Naruto, Berserk)
-- Manhwa Korea format tradisional (bukan webtoon)
-- Beberapa manhua Cina yang mengikuti konvensi Jepang
+**Arah geser** — Dalam LTR, geser kiri = halaman berikutnya. Dalam RTL, geser kanan = halaman berikutnya. Pembalikan ini terasa aneh pada awalnya tetapi mencerminkan tindakan fisik membalik halaman manga.
 
-**Gunakan LTR untuk:**
-- Komik Barat (Marvel, DC, Image, Dark Horse)
-- Bande dessinée Eropa
-- Sebagian besar ebook teks EPUB
-- Webtoon dan manhwa strip panjang dalam mode gulir vertikal
+**Urutan tata letak dua halaman** — Dalam mode lanskap LTR, halaman kiri memiliki nomor lebih kecil. Dalam RTL, halaman kanan memiliki nomor lebih kecil, sesuai cara volume manga dicetak.
 
-**Mode gulir vertikal** (untuk webtoon) terpisah dari arah halaman. Dalam mode gulir vertikal, pengaturan arah kiri/kanan tidak berdampak visual karena menggeser digantikan dengan menggulir ke atas atau ke bawah. Kamu bisa menemukan gulir vertikal di panel pengaturan baca yang sama.
+**Orientasi bilah thumbnail** — Bilah thumbnail di bagian bawah pembaca terbalik. Dalam mode RTL, thumbnail paling kiri adalah halaman terakhir volume.
 
-## Bagaimana Cara Mengganti Arah di Tengah Baca Tanpa Kehilangan Posisi?
+## Mode Gulir Vertikal dan Arah Membaca
 
-BiblioFuse mempertahankan posisi baca kamu saat mengganti arah. Jika kamu sedang di halaman 47 sebuah manga dan beralih dari LTR ke RTL, kamu tetap berada di halaman 47. Penomoran halaman tidak melompat atau direset.
+Mode gulir vertikal (untuk manhwa dan webtoon) tidak dipengaruhi oleh pengaturan LTR/RTL. Gulir berkelanjutan tidak memiliki urutan halaman kiri-kanan.
 
-Hal ini penting karena beberapa volume manga menyertakan konten tambahan — halaman berwarna, catatan penulis, bab bonus — yang mungkin diformat dalam LTR meskipun berada di dalam volume RTL. Kamu bisa mengganti arah, membaca bagian tersebut, lalu mengganti kembali tanpa perlu navigasi ke halaman yang di-bookmark.
+## Pertanyaan Umum
 
-## Pertanyaan yang Sering Diajukan
+**Arah geser terasa terbalik setelah beralih ke RTL. Apakah itu benar?**
 
-### Bagaimana cara mengganti arah baca manga di BiblioFuse?
+Ya — dalam mode RTL, menggeser ke kanan maju ke halaman berikutnya. Ini mencerminkan tindakan fisik membalik halaman manga. Anda akan terbiasa dalam beberapa menit.
 
-Ketuk bagian tengah layar saat membaca untuk memunculkan kontrol pembaca, lalu ketuk ikon pengaturan dan pilih **RTL** di bawah Arah Baca. Perubahan langsung berlaku di halaman saat ini. BiblioFuse menyimpan pengaturan tersebut untuk file itu sehingga akan terbuka dalam RTL setiap saat setelahnya.
+**Apakah arah membaca disinkronkan antara iPhone dan iPad?**
 
-### Apakah mengganti arah baca mempengaruhi penomoran halaman?
+Preferensi arah per file disinkronkan melalui iCloud bersama posisi membaca. Pengaturan default global bersifat lokal perangkat dan tidak disinkronkan.
 
-Tidak. Jumlah halaman tetap sama terlepas dari apakah kamu membaca LTR atau RTL. Mengganti arah hanya mengubah tepi layar mana yang digunakan untuk berpindah ke halaman berikutnya — tidak mengubah urutan atau penomoran halaman di dalam file.
+## Kesimpulan
 
-### Bisakah saya mengatur RTL sebagai default untuk semua manga saya?
-
-Bisa. Masuk ke **Pengaturan → Preferensi Baca → Arah Baca Default** dan pilih RTL. BiblioFuse akan menerapkan RTL ke setiap file baru yang kamu buka. File yang sudah kamu baca dengan pengaturan arah tersimpan akan tetap menggunakan pengaturan individualnya.
-
-### Apakah BiblioFuse mendukung RTL untuk ebook EPUB?
-
-BiblioFuse bisa mengganti arah untuk file EPUB, tetapi sebagian besar manga Jepang dalam format EPUB sudah menyertakan deklarasi arah baca di metadata file. BiblioFuse menghormati metadata tersebut, sehingga EPUB manga sering kali terbuka secara otomatis dalam arah yang benar. Kamu tetap bisa menggantinya secara manual melalui panel pengaturan baca.
-
-### Apa perbedaan antara mode halaman RTL dan mode gulir vertikal?
-
-Mode halaman RTL mengubah arah pergantian halaman horizontal — menggeser ke kiri berarti maju ke depan, bukan ke belakang. Mode gulir vertikal menghilangkan geseran horizontal sepenuhnya dan menggantinya dengan guliran berkelanjutan dari atas ke bawah, yang dirancang untuk webtoon dan komik strip panjang. Kedua pengaturan tersedia di panel pengaturan pembaca yang sama dan dapat diaktifkan secara independen.
-
-### Apakah BiblioFuse mengingat arah baca per file?
-
-Ya. BiblioFuse menyimpan arah yang kamu atur untuk setiap file secara individual. Manga kamu terbuka dengan RTL, komik DC terbuka dengan LTR, dan webtoon terbuka dalam mode gulir vertikal — semuanya otomatis, berdasarkan pengaturan terakhir kali kamu membaca masing-masing file.
-
-## Baca Setiap Komik dengan Cara yang Benar
-
-Arah baca adalah pengaturan kecil dengan dampak besar terhadap kenikmatan membaca. Setelah BiblioFuse diatur ke RTL untuk manga kamu, panel-panel mengalir sesuai dengan yang dimaksudkan sang seniman, balon dialog terbaca dengan urutan yang benar, dan spread halaman ganda tersusun dengan sempurna.
-
-Unduh [BiblioFuse](/{lang}/) dari App Store dan buka perpustakaan manga kamu hari ini. Jika kamu ingin memindahkan file manga baru ke iPhone, fitur Wi-Fi Transfer bawaan memungkinkan kamu menyeret file langsung dari browser di Mac atau PC — tanpa kabel, tanpa iTunes, tanpa perlu akun iCloud.
+Beralih arah membaca di [BiblioFuse](https://bibliofuse.com/id/) membutuhkan tiga ketukan dan tersimpan otomatis per buku. Tetapkan default global untuk format yang paling sering Anda baca, ganti per buku untuk yang lainnya, dan pembaca mengelola arah geser, urutan halaman ganda, serta orientasi thumbnail tanpa konfigurasi lebih lanjut.
