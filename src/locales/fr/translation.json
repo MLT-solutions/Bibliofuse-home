@@ -775,6 +775,14 @@
     },
     "blog": {
       "posts": {
+        "airdrop-books-to-iphone": {
+          "title": "Comment utiliser AirDrop pour transférer des comics et ebooks sur iPhone",
+          "excerpt": "BiblioFuse accepte les fichiers CBZ, CBR, EPUB, PDF, ZIP, RAR et TXT partagés via AirDrop sur iPhone et iPad sous iOS 17 ou version ultérieure. Acceptez le fichier depuis la feuille de partage iOS, choisissez BiblioFuse, et il arrive directement dans votre bibliothèque — sans câble, sans compte, sans délai cloud."
+        },
+        "change-reading-direction-comics": {
+          "title": "Comment passer de la lecture LTR à RTL dans BiblioFuse",
+          "excerpt": "BiblioFuse vous permet de changer le sens de lecture entre gauche-à-droite (LTR) et droite-à-gauche (RTL) sur iPhone et iPad sous iOS 17 ou version ultérieure. Appuyez sur l'icône des réglages pendant la lecture pour inverser instantanément le sens — idéal pour le manga, le manhwa et les comics occidentaux."
+        },
         "read-webtoons-on-iphone": {
           "title": "Comment lire des webtoons sur iPhone : défilement vertical infini dans BiblioFuse",
           "excerpt": "Le mode défilement vertical de BiblioFuse est fait pour les webtoons et manhwa — BD longues bandes en CBZ et EPUB. Faites défiler les chapitres en continu sans taper l'écran."

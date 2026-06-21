@@ -775,6 +775,14 @@
     },
     "blog": {
       "posts": {
+        "airdrop-books-to-iphone": {
+          "title": "如何用 AirDrop 将漫画和电子书传输到 iPhone",
+          "excerpt": "BiblioFuse 支持通过 AirDrop 接收 CBZ、CBR、EPUB、PDF、ZIP、RAR 和 TXT 文件，适用于运行 iOS 17 或更高版本的 iPhone 和 iPad。接受文件后，从系统共享菜单中选择 BiblioFuse，文件即刻进入您的书库，无需数据线、无需账号、无需等待云端同步。"
+        },
+        "change-reading-direction-comics": {
+          "title": "如何在 BiblioFuse 中切换从左到右（LTR）和从右到左（RTL）阅读方向",
+          "excerpt": "BiblioFuse 支持在 iOS 17 或更高版本的 iPhone 和 iPad 上切换从左到右（LTR）和从右到左（RTL）阅读方向。阅读时点击设置图标即可立即切换——非常适合日漫、韩漫和欧美漫画。"
+        },
         "read-webtoons-on-iphone": {
           "title": "如何在 iPhone 上阅读条漫：BiblioFuse 的无限垂直滚动",
           "excerpt": "BiblioFuse 的垂直滚动模式专为条漫和韩国漫画设计，支持 CBZ 和 EPUB 长条格式。无需翻页，连续滚动浏览整个章节，轻松切换系列。"
