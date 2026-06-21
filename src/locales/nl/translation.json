@@ -1021,6 +1021,14 @@
           "title": "PDF-strips lezen op iPhone met BiblioFuse",
           "excerpt": "BiblioFuse leest PDF-strips native op iPhone met dezelfde volledigschermcontroles als CBZ en EPUB. Overdracht via Wi-Fi, importeer vanuit Bestanden of AirDrop — met iCloud-voortgangssynchronisatie."
         },
+        "airdrop-books-to-iphone": {
+          "title": "Hoe gebruik je AirDrop om strips en ebooks naar iPhone te sturen",
+          "excerpt": "Met AirDrop stuur je CBZ-, CBR-, EPUB- en PDF-bestanden van je Mac of een andere iPhone direct naar BiblioFuse zonder kabels of extra apps. Zet AirDrop aan op beide apparaten en kies BiblioFuse in het deelvenster."
+        },
+        "change-reading-direction-comics": {
+          "title": "Hoe wissel je tussen LTR en RTL lezen in BiblioFuse",
+          "excerpt": "BiblioFuse slaat leesrichting per boek op, zodat manga rechts-naar-links en westerse strips links-naar-rechts worden gelezen. Stel een globale standaard in en overschrijf per boek in drie tikken."
+        },
         "bibliofuse-ipad-reading-tips": {
           "title": "BiblioFuse op iPad: tips voor volledigscherm stripslezen",
           "excerpt": "Het grotere iPad-scherm ontsluit twee-paginaweergave in liggende stand, een miniatuurschuifregelaar en Mac-bibliotheeklist streaming in BiblioFuse. Configureer weergavemodi, nachtlezen en Stage Manager."

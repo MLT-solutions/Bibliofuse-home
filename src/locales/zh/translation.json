@@ -1021,6 +1021,14 @@
           "title": "用 BiblioFuse 在 iPhone 上阅读 PDF 漫画",
           "excerpt": "BiblioFuse 在 iPhone 上原生支持 PDF 漫画，提供与 CBZ、EPUB 相同的全屏操控体验。通过 Wi-Fi 传输、文件导入或 AirDrop 添加，阅读进度通过 iCloud 自动同步。"
         },
+        "airdrop-books-to-iphone": {
+          "title": "如何使用 AirDrop 将漫画和电子书传输到 iPhone",
+          "excerpt": "AirDrop 可在几秒内将 CBZ、CBR、EPUB 和 PDF 文件从 Mac 或其他 iPhone 直接传输到 BiblioFuse，无需数据线或额外应用。在两台设备上启用 AirDrop，选择文件，在共享菜单中选择 BiblioFuse 即可。"
+        },
+        "change-reading-direction-comics": {
+          "title": "如何在 BiblioFuse 中切换 LTR 和 RTL 阅读方向",
+          "excerpt": "BiblioFuse 按书籍保存阅读方向，因此漫画自动从右到左阅读，西方漫画从左到右阅读。设置全局默认值，只需三次点击即可按书籍调整。"
+        },
         "bibliofuse-ipad-reading-tips": {
           "title": "BiblioFuse iPad 使用技巧：全屏漫画阅读指南",
           "excerpt": "iPad 的大屏幕让 BiblioFuse 支持横屏双页显示、缩略图导航栏和 Mac 书库串流。配置显示模式、夜间阅读和 Stage Manager 获得最佳体验。"

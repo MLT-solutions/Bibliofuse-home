@@ -1021,6 +1021,14 @@
           "title": "BiblioFuseでiPhoneのPDFコミックを読む方法",
           "excerpt": "BiblioFuseはiPhoneでPDFコミックをCBZ・EPUBと同じ全画面操作でネイティブ対応。Wi-Fi転送・「ファイル」アプリ・AirDropで追加し、iCloudで読書進捗を同期。"
         },
+        "airdrop-books-to-iphone": {
+          "title": "AirDropを使ってiPhoneにコミックや電子書籍を転送する方法",
+          "excerpt": "AirDropを使えば、CBZ・CBR・EPUB・PDFファイルをMacや別のiPhoneから数秒でBiblioFuseに直接転送できます。ケーブル不要、追加アプリ不要。両デバイスでAirDropを有効にし、ファイルを選択して共有シートでBiblioFuseを選ぶだけです。"
+        },
+        "change-reading-direction-comics": {
+          "title": "BiblioFuseでLTRとRTLの読む方向を切り替える方法",
+          "excerpt": "BiblioFuseは読む方向を本ごとに保存するため、漫画は右から左、洋書コミックは左から右に自動的に読めます。グローバルデフォルトを設定し、3回のタップで本ごとに上書きできます。"
+        },
         "bibliofuse-ipad-reading-tips": {
           "title": "iPadでBiblioFuseを使いこなす：フルページコミック読書のコツ",
           "excerpt": "iPadの大画面で見開き横向き表示、サムネイルスクラバー、Macライブラリストリーミングが使えます。表示モード・ナイトモード・Stage Managerを設定して最高の読書体験を。"

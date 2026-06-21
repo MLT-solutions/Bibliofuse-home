@@ -1021,6 +1021,14 @@
           "title": "Cara Membaca Komik PDF di iPhone dengan BiblioFuse",
           "excerpt": "BiblioFuse membaca komik PDF secara natif di iPhone dengan kawalan skrin penuh yang sama seperti CBZ dan EPUB. Pindah melalui Wi-Fi, import dari Fail atau AirDrop — dengan penyegerakan kemajuan bacaan melalui iCloud."
         },
+        "airdrop-books-to-iphone": {
+          "title": "Cara Menggunakan AirDrop untuk Memindahkan Komik dan Ebook ke iPhone",
+          "excerpt": "AirDrop membolehkan anda menghantar fail CBZ, CBR, EPUB dan PDF dari Mac atau iPhone lain terus ke BiblioFuse dalam beberapa saat, tanpa kabel atau aplikasi tambahan. Aktifkan AirDrop pada kedua-dua peranti, pilih fail dan ketik BiblioFuse dalam helaian kongsi."
+        },
+        "change-reading-direction-comics": {
+          "title": "Cara Beralih antara Bacaan LTR dan RTL di BiblioFuse",
+          "excerpt": "BiblioFuse menyimpan arah bacaan setiap buku supaya manga dibaca dari kanan ke kiri dan komik Barat dari kiri ke kanan secara automatik. Tetapkan lalai global dan ganti setiap buku dengan tiga ketikan."
+        },
         "bibliofuse-ipad-reading-tips": {
           "title": "BiblioFuse di iPad: Tips Membaca Komik Skrin Penuh",
           "excerpt": "Skrin iPad yang lebih besar membuka paparan dua halaman landskap, gelangsar lakaran kecil, dan strim perpustakaan Mac dalam BiblioFuse. Konfigurasikan mod paparan, membaca malam, dan Stage Manager."

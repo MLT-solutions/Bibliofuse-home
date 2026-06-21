@@ -1021,6 +1021,14 @@
           "title": "Como ler quadrinhos em PDF no iPhone com BiblioFuse",
           "excerpt": "O BiblioFuse lê quadrinhos em PDF nativamente no iPhone com os mesmos controles de tela cheia que CBZ e EPUB. Transfira por Wi-Fi, importe do Arquivos ou AirDrop — com sincronização de progresso via iCloud."
         },
+        "airdrop-books-to-iphone": {
+          "title": "Como usar o AirDrop para transferir quadrinhos e ebooks para o iPhone",
+          "excerpt": "O AirDrop permite enviar arquivos CBZ, CBR, EPUB e PDF do Mac ou de outro iPhone diretamente para o BiblioFuse em segundos, sem cabos nem aplicativos. Ative o AirDrop nos dois dispositivos, selecione os arquivos e escolha BiblioFuse na folha de compartilhamento."
+        },
+        "change-reading-direction-comics": {
+          "title": "Como alternar entre leitura LTR e RTL no BiblioFuse",
+          "excerpt": "O BiblioFuse salva a direção de leitura por livro, para que o mangá seja lido da direita para a esquerda e os quadrinhos ocidentais da esquerda para a direita automaticamente. Defina um padrão global e ajuste por livro em três toques."
+        },
         "bibliofuse-ipad-reading-tips": {
           "title": "BiblioFuse no iPad: dicas para leitura de quadrinhos em tela cheia",
           "excerpt": "A tela maior do iPad desbloqueia páginas duplas em paisagem, um controle deslizante de miniaturas e streaming de biblioteca do Mac no BiblioFuse. Configure modos de exibição, leitura noturna e Stage Manager."
