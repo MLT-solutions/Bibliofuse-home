@@ -1,14 +1,14 @@
 # How to Use AirDrop to Transfer Comics and Ebooks to iPhone
 
-When you need to move a handful of comics or ebooks to your iPhone, AirDrop is the fastest way to do it. No cables, no third-party apps, no signing into a service. Select the files on your Mac, choose your iPhone from the AirDrop list, and they land directly in [BiblioFuse](https://bibliofuse.com/en/) in seconds.
+AirDrop is one of the fastest ways to move a handful of comics or ebooks from Mac to iPhone — no cable, no account, nothing uploaded to a server. But the process has one extra step that trips people up: transferred files land in the **Files app**, not directly in BiblioFuse. You need to open them from there.
 
-This guide covers transferring CBZ, CBR, EPUB, PDF, and ZIP files via AirDrop, accepting them so they open in BiblioFuse, and what to do when AirDrop doesn't show your device or a transfer gets stuck.
+This guide covers the full flow: transfer, finding the files, importing into BiblioFuse, and cleaning up.
 
 ## What AirDrop Does
 
 AirDrop creates an encrypted peer-to-peer connection using Wi-Fi Direct. Your devices don't need to be on the same network, and nothing goes through Apple's servers. Transfer speed depends on file size and proximity — a 150 MB CBZ file typically transfers in 3–6 seconds when both devices are within a metre of each other.
 
-AirDrop supports any file type. When your iPhone receives a comic file (CBZ, CBR) or ebook (EPUB, PDF), iOS prompts you to choose an app to open it in. Tap **BiblioFuse** and the file imports directly into your library.
+Received files land in **Files → iCloud Drive → Downloads** (or **Files → On My iPhone → Downloads** if iCloud Drive is off). They don't open directly in BiblioFuse — you import them from the Files app after the transfer completes.
 
 ## Step-by-Step: Mac to iPhone
 
@@ -26,13 +26,25 @@ In Finder, navigate to your comic or ebook files. You can select multiple files 
 
 Right-click the selected files and choose **Share → AirDrop**. The share sheet opens showing nearby devices. Your iPhone should appear within a few seconds. Click it.
 
-A notification appears on your iPhone asking if you want to accept the files. Tap **Accept**.
+A notification appears on your iPhone asking if you want to accept the files. Tap **Accept**. The files transfer to **Files → iCloud Drive → Downloads**.
 
-### 4. Choose BiblioFuse as the Target App
+### 4. Import Into BiblioFuse From the Files App
 
-After accepting, iOS asks which app to open each file in. [BiblioFuse](https://bibliofuse.com/en/) appears in the list alongside Files, Books, and other reader apps you've installed. Tap **BiblioFuse** — the file imports directly and appears in your library.
+Once the transfer completes, open the **Files** app on iPhone.
 
-If you accidentally dismiss this prompt, the file lands in **Files → Downloads**. Tap it there, then choose to open it in BiblioFuse.
+Navigate to **iCloud Drive → Downloads** (or **On My iPhone → Downloads**). You'll see your transferred CBZ, EPUB, or other files there.
+
+To import them into BiblioFuse:
+
+1. Tap **Select** (top right) and choose all the files you want to import.
+2. Tap the **Share** icon (box with arrow), then choose **BiblioFuse** from the list.
+3. BiblioFuse opens and imports all selected files into your library.
+
+> **Note on the AirDrop notification:** If you received a single file, tapping **Open** on the notification may show an app picker — you can select BiblioFuse there. For multiple files, the notification doesn't offer a direct open option, so the Files app route is the reliable method for any transfer.
+
+### 5. Clean Up Downloads
+
+After importing, the original files remain in **Files → Downloads** and continue to use iCloud storage. Go back to Files, select the transferred files, and delete them to keep your Downloads folder clean.
 
 ## Sending From iPhone to iPhone
 
@@ -43,17 +55,17 @@ The process works the same in both directions. On the sending iPhone:
 3. Tap **AirDrop** in the share sheet.
 4. Select the recipient iPhone from the device list.
 
-The recipient sees an accept prompt and then the same app picker. This works for any format BiblioFuse supports — CBZ, CBR, ZIP, EPUB, PDF.
+The recipient accepts the transfer, then imports from Files → Downloads into BiblioFuse using the same steps above.
 
 ## Sending from iPad to iPhone
 
 Identical to Mac to iPhone. AirDrop treats all Apple devices the same way. If you have comics on your iPad that you want on iPhone, open Files on iPad, share the files, tap AirDrop, and select the iPhone.
 
-For larger libraries, AirDrop per-file transfers add up. The [BiblioFuse Wi-Fi Transfer tool](https://bibliofuse.com/en/) handles bulk imports more efficiently — open Tools in BiblioFuse, enable Wi-Fi Transfer, and drag entire folders from Finder into the browser upload page on your Mac.
+For larger libraries, AirDrop per-file transfers add up. [BiblioFuse's Wi-Fi Transfer](https://bibliofuse.com/en/) handles bulk imports more efficiently — enable Wi-Fi Transfer in BiblioFuse Tools and drag entire folders from Finder into the browser upload page on your Mac. Files go directly into the app without the intermediate Files app step.
 
 ## AirDrop for CBR and ZIP Archives
 
-AirDrop sends the raw file unchanged, so CBR (RAR archive) and ZIP files transfer without modification. BiblioFuse opens CBR and ZIP files as comic archives natively — a ZIP file containing images is treated identically to a CBZ. If your files are `.rar` or `.zip` rather than `.cbr` or `.cbz`, they'll still open correctly.
+AirDrop sends the raw file unchanged, so CBR (RAR archive) and ZIP files transfer without modification. BiblioFuse opens CBR and ZIP files as comic archives natively — a ZIP file containing images is treated identically to a CBZ. If your files are `.rar` or `.zip` rather than `.cbr` or `.cbz`, they'll still open correctly after importing from Files.
 
 ## Troubleshooting Common Problems
 
@@ -67,9 +79,9 @@ Contacts Only requires both devices to share a contact record — if you're usin
 
 This typically happens with large files (400 MB+). AirDrop's Wi-Fi Direct connection can be throttled by Wi-Fi interference. Move both devices closer together, retry with fewer files at once, and ensure neither device is in Low Power Mode. If large files consistently fail, use [BiblioFuse's Wi-Fi Transfer](https://bibliofuse.com/en/) — it runs over your local network and handles large files more reliably than AirDrop.
 
-**"Open in" prompt doesn't show BiblioFuse**
+**BiblioFuse doesn't appear in the share sheet**
 
-Make sure BiblioFuse is installed and has been launched at least once after installation. If it still doesn't appear in the picker, open the **Files** app, tap the downloaded file, long-press → Share → Open in, then look for BiblioFuse in the full app list.
+Make sure BiblioFuse is installed and has been launched at least once. If it still doesn't appear, long-press the file in Files → tap Share → scroll to the bottom and tap **More** to see the full app list. BiblioFuse should appear there.
 
 **AirDrop not available on older Macs**
 
@@ -87,4 +99,4 @@ AirDrop is ideal for moving a few files quickly. For larger jobs, consider:
 
 ## Key Takeaway
 
-AirDrop is the fastest way to get a comic or ebook from one Apple device to another. Enable AirDrop on both ends, select your files, click your iPhone in the share sheet, accept on the phone, and choose [BiblioFuse](https://bibliofuse.com/en/) as the target — the whole process takes under 30 seconds for most files. For bulk transfers or a large ongoing library, pair it with BiblioFuse's Wi-Fi Transfer tool for the best of both approaches.
+AirDrop transfers your comic and ebook files to iPhone without a cable or cloud account. After accepting the transfer on iPhone, find the files in **Files → Downloads**, select them all, share to BiblioFuse, and then delete the originals from Downloads. For single files the notification shortcut works, but for multiple files the Files app is the reliable path. For bulk imports or a large ongoing library, [BiblioFuse's Wi-Fi Transfer](https://bibliofuse.com/en/) skips the Files step entirely and lands files directly in the app.
