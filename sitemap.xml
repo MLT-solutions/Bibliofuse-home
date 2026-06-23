@@ -563,6 +563,567 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/grepreader/" />
   </url>
   <url>
+    <loc>https://bibliofuse.com/en/archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/archive/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/archive/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/archive/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/archive/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/archive/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/archive/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/archive/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/es/archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/archive/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/archive/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/archive/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/archive/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/archive/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/archive/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/archive/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/fr/archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/archive/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/archive/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/archive/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/archive/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/archive/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/archive/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/archive/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/nl/archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/archive/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/archive/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/archive/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/archive/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/archive/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/archive/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/archive/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/pt/archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/archive/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/archive/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/archive/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/archive/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/archive/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/archive/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/archive/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ru/archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/archive/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/archive/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/archive/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/archive/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/archive/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/archive/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/archive/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/zh/archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/archive/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/archive/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/archive/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/archive/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/archive/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/archive/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/archive/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ja/archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/archive/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/archive/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/archive/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/archive/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/archive/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/archive/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/archive/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ko/archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/archive/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/archive/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/archive/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/archive/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/archive/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/archive/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/archive/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/id/archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/archive/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/archive/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/archive/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/archive/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/archive/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/archive/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/archive/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ms/archive/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/archive/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/archive/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/archive/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/archive/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/archive/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/archive/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/archive/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/en/smartdecrypt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/smartdecrypt/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/es/smartdecrypt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/smartdecrypt/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/fr/smartdecrypt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/smartdecrypt/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/nl/smartdecrypt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/smartdecrypt/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/pt/smartdecrypt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/smartdecrypt/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ru/smartdecrypt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/smartdecrypt/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/zh/smartdecrypt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/smartdecrypt/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ja/smartdecrypt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/smartdecrypt/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ko/smartdecrypt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/smartdecrypt/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/id/smartdecrypt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/smartdecrypt/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ms/smartdecrypt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/smartdecrypt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/smartdecrypt/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/en/contentcue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/contentcue/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/es/contentcue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/contentcue/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/fr/contentcue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/contentcue/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/nl/contentcue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/contentcue/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/pt/contentcue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/contentcue/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ru/contentcue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/contentcue/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/zh/contentcue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/contentcue/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ja/contentcue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/contentcue/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ko/contentcue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/contentcue/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/id/contentcue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/contentcue/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ms/contentcue/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/contentcue/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/contentcue/" />
+  </url>
+  <url>
     <loc>https://bibliofuse.com/en/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
