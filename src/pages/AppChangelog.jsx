@@ -47,7 +47,7 @@ const APP_CONFIGS = {
     ENTRIES: GREPREADER_ENTRIES,
     KNOWN_ISSUES: GREPREADER_ISSUES,
     ROADMAP: GREPREADER_ROADMAP,
-    platforms: ['ios'],
+    platforms: ['all', 'ios', 'pc'],
     storeUrl: 'https://apps.apple.com/app/id6779977609',
     appCategory: 'BookApplication',
     operatingSystem: 'iOS, iPadOS, macOS',

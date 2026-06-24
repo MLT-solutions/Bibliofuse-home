@@ -1,8 +1,43 @@
 // Changelog — BiblioFuse GrepTag Reader
-// platform: 'ios' (covers iOS + macOS universal build)
-// released: true = live in App Store, false = pending / unreleased
+// platform: 'ios' (covers iOS + macOS universal build) | 'pc' (Windows)
+// released: true = live in store, false = pending / unreleased
 
 export const ENTRIES = [
+  // ── Windows — initial build (not yet submitted) ──────────────────────────
+  {
+    date: '2026-06-25',
+    version: '1.0.0',
+    platform: 'pc',
+    type: 'feature',
+    released: false,
+    title: {
+      en: 'Windows — Initial build: grep, TTS & Wi-Fi sync',
+      es: 'Windows — Compilación inicial: grep, TTS y sincronización Wi-Fi',
+      fr: 'Windows — Version initiale : grep, TTS et synchronisation Wi-Fi',
+      nl: 'Windows — Eerste build: grep, TTS en Wi-Fi-synchronisatie',
+      pt: 'Windows — Build inicial: grep, TTS e sincronização Wi-Fi',
+      ru: 'Windows — Первая сборка: grep, TTS и Wi-Fi синхронизация',
+      zh: 'Windows — 初始版本：grep、TTS & Wi-Fi 同步',
+      ja: 'Windows — 初期ビルド：grep、TTS & Wi-Fi 同期',
+      ko: 'Windows — 초기 빌드: grep, TTS & Wi-Fi 동기화',
+      id: 'Windows — Build awal: grep, TTS & sinkronisasi Wi-Fi',
+      ms: 'Windows — Build awal: grep, TTS & segerak Wi-Fi',
+    },
+    desc: {
+      en: 'WinUI 3 desktop app for TXT and EPUB library management on Windows. Keyword grep profiles with AND/OR/NOT logic. Tag database with JSON export/import for cross-device tag sync with the iOS/macOS app. TTS reading with chapter continuation and Now Playing lock-screen controls. Wi-Fi sync over LAN. Fully unlocked on Windows — no purchase required.',
+      es: 'Aplicación de escritorio WinUI 3 para gestión de bibliotecas TXT y EPUB en Windows. Perfiles de búsqueda por palabra clave con lógica AND/OR/NOT. Base de datos de etiquetas con exportación/importación JSON para sincronización de etiquetas con la app de iOS/macOS. Lectura TTS con continuidad de capítulos y controles Now Playing en pantalla de bloqueo. Sincronización Wi-Fi por LAN. Completamente desbloqueada en Windows — no se requiere ninguna compra.',
+      fr: 'Application de bureau WinUI 3 pour la gestion de bibliothèques TXT et EPUB sur Windows. Profils de recherche par mots-clés avec logique AND/OR/NOT. Base de données de tags avec export/import JSON pour la synchronisation des tags avec l\'app iOS/macOS. Lecture TTS avec continuité des chapitres et contrôles Now Playing sur l\'écran de verrouillage. Synchronisation Wi-Fi sur LAN. Entièrement déverrouillée sur Windows — aucun achat requis.',
+      nl: 'WinUI 3 desktop-app voor TXT- en EPUB-bibliotheekbeheer op Windows. Trefwoordprofielen met AND/OR/NOT-logica. Tagdatabase met JSON-export/import voor cross-device tagsynchronisatie met de iOS/macOS-app. TTS-lezen met hoofdstukvervolg en Now Playing-vergrendelschermbesturingselementen. Wi-Fi-synchronisatie via LAN. Volledig ontgrendeld op Windows — geen aankoop vereist.',
+      pt: 'Aplicativo de desktop WinUI 3 para gerenciamento de biblioteca TXT e EPUB no Windows. Perfis de busca por palavra-chave com lógica AND/OR/NOT. Banco de dados de tags com exportação/importação JSON para sincronização de tags com o app iOS/macOS. Leitura TTS com continuidade de capítulos e controles Now Playing na tela de bloqueio. Sincronização Wi-Fi por LAN. Totalmente desbloqueado no Windows — nenhuma compra necessária.',
+      ru: 'Настольное приложение WinUI 3 для управления библиотекой TXT и EPUB на Windows. Профили поиска по ключевым словам с логикой AND/OR/NOT. База данных тегов с экспортом/импортом JSON для синхронизации тегов с приложением iOS/macOS. Чтение TTS с продолжением глав и управлением на экране блокировки Now Playing. Синхронизация по Wi-Fi через LAN. Полностью разблокировано на Windows — покупка не требуется.',
+      zh: '适用于 Windows 的 WinUI 3 桌面应用，支持 TXT 和 EPUB 书库管理。支持 AND/OR/NOT 逻辑的关键字 grep 配置文件。标签数据库支持 JSON 导出/导入，可与 iOS/macOS 应用跨设备同步标签。TTS 阅读，支持章节连续播放和锁屏 Now Playing 控件。局域网 Wi-Fi 同步。Windows 版完全解锁——无需购买。',
+      ja: 'Windows 用 WinUI 3 デスクトップアプリ。TXT と EPUB のライブラリ管理。AND/OR/NOT 論理によるキーワード grep プロファイル。JSON エクスポート/インポート対応のタグデータベースで iOS/macOS アプリとクロスデバイスタグ同期。TTS はチャプター連続再生とロック画面の Now Playing コントロールに対応。LAN 経由の Wi-Fi 同期。Windows 版は完全解放 — 購入不要。',
+      ko: 'Windows용 WinUI 3 데스크탑 앱으로 TXT 및 EPUB 라이브러리 관리. AND/OR/NOT 논리를 사용한 키워드 grep 프로필. JSON 내보내기/가져오기를 지원하는 태그 데이터베이스로 iOS/macOS 앱과 크로스 디바이스 태그 동기화. 챕터 연속 재생과 잠금 화면 Now Playing 컨트롤이 포함된 TTS. LAN Wi-Fi 동기화. Windows에서 완전 해제 — 구매 불필요.',
+      id: 'Aplikasi desktop WinUI 3 untuk manajemen perpustakaan TXT dan EPUB di Windows. Profil grep kata kunci dengan logika AND/OR/NOT. Database tag dengan ekspor/impor JSON untuk sinkronisasi tag lintas perangkat dengan aplikasi iOS/macOS. Pembacaan TTS dengan kelanjutan bab dan kontrol layar kunci Now Playing. Sinkronisasi Wi-Fi melalui LAN. Sepenuhnya terbuka di Windows — tidak perlu pembelian.',
+      ms: 'Aplikasi desktop WinUI 3 untuk pengurusan perpustakaan TXT dan EPUB pada Windows. Profil grep kata kunci dengan logik AND/OR/NOT. Pangkalan data tag dengan eksport/import JSON untuk segerak tag merentas peranti dengan aplikasi iOS/macOS. Pembacaan TTS dengan kesinambungan bab dan kawalan skrin kunci Now Playing. Segerak Wi-Fi melalui LAN. Dibuka sepenuhnya pada Windows — tiada pembelian diperlukan.',
+    },
+  },
+
   // ── Build 8 — unreleased (in-review / pending) ──────────────────────────
   {
     date: '2026-06-24',
