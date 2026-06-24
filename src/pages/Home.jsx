@@ -13,6 +13,7 @@ const archiveMsUrl = 'https://apps.microsoft.com/detail/9n2jb4k5wvcq';
 const smartDecryptUrl = 'https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229';
 const smartDecryptMsUrl = 'https://apps.microsoft.com/detail/9p9bfkr5zdz8';
 const contentCueUrl = 'https://apps.apple.com/us/app/contentcue-reading-browser/id6770080864';
+const grepTagReaderUrl = 'https://apps.apple.com/app/id6779977609';
 const imageBase = '/image/offline-apps/bibliofuse';
 
 function StoreBadge({ type, size = 'lg', className = '' }) {
@@ -99,6 +100,7 @@ function ProductIcon({ kind }) {
   if (kind === 'folder') return <svg {...props}><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" /><path d="M8 13h8" /></svg>;
   if (kind === 'lock') return <svg {...props}><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 018 0v3" /></svg>;
   if (kind === 'browser') return <svg {...props}><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M2 9h20" /><circle cx="6" cy="6.5" r="0.8" fill="currentColor" stroke="none" /><circle cx="9" cy="6.5" r="0.8" fill="currentColor" stroke="none" /></svg>;
+  if (kind === 'search') return <svg {...props}><circle cx="11" cy="11" r="7" /><path d="M21 21l-4.35-4.35" /></svg>;
   return null;
 }
 
@@ -187,12 +189,12 @@ function Hero({ lang }) {
   );
 }
 
-function ProductFamily() {
+function ProductFamily({ lang }) {
   const { t } = useTranslation();
   const products = [
     {
       tag: t('redesign.productFamily.products.reader.tag'),
-      icon: 'book',
+      logoSrc: '/image/bibliofuse-logo.png',
       name: 'BiblioFuse Reader',
       desc: t('redesign.productFamily.products.reader.desc'),
       bullets: [t('redesign.productFamily.products.reader.bullet1'), t('redesign.productFamily.products.reader.bullet2'), t('redesign.productFamily.products.reader.bullet3')],
@@ -204,7 +206,7 @@ function ProductFamily() {
     },
     {
       tag: t('redesign.productFamily.products.webTool.tag'),
-      icon: 'globe',
+      logoSrc: '/image/webtool-logo.png',
       name: 'BiblioFuse Web Tool',
       desc: t('redesign.productFamily.products.webTool.desc'),
       bullets: [t('redesign.productFamily.products.webTool.bullet1'), t('redesign.productFamily.products.webTool.bullet2'), t('redesign.productFamily.products.webTool.bullet3')],
@@ -214,7 +216,7 @@ function ProductFamily() {
     },
     {
       tag: t('redesign.productFamily.products.archive.tag'),
-      icon: 'folder',
+      logoSrc: '/image/archive-logo.png',
       name: 'Archive Duplicate Scanner',
       desc: t('redesign.productFamily.products.archive.desc'),
       bullets: [t('redesign.productFamily.products.archive.bullet1'), t('redesign.productFamily.products.archive.bullet2'), t('redesign.productFamily.products.archive.bullet3')],
@@ -226,7 +228,7 @@ function ProductFamily() {
     },
     {
       tag: t('redesign.productFamily.products.smartdecrypt.tag'),
-      icon: 'lock',
+      logoSrc: '/image/smartdecrypt-logo.png',
       name: 'SmartDecrypt PDF ZIP',
       desc: t('redesign.productFamily.products.smartdecrypt.desc'),
       bullets: [t('redesign.productFamily.products.smartdecrypt.bullet1'), t('redesign.productFamily.products.smartdecrypt.bullet2'), t('redesign.productFamily.products.smartdecrypt.bullet3')],
@@ -239,13 +241,24 @@ function ProductFamily() {
     },
     {
       tag: t('redesign.productFamily.products.contentcue.tag'),
-      icon: 'browser',
+      logoSrc: '/image/contentcue-logo.png',
       name: 'ContentCue',
       desc: t('redesign.productFamily.products.contentcue.desc'),
       bullets: [t('redesign.productFamily.products.contentcue.bullet1'), t('redesign.productFamily.products.contentcue.bullet2'), t('redesign.productFamily.products.contentcue.bullet3')],
       cta: t('redesign.productFamily.products.contentcue.cta'),
       href: contentCueUrl,
       accent: 'green',
+    },
+    {
+      tag: t('redesign.productFamily.products.grepreader.tag'),
+      icon: 'search',
+      logoSrc: '/image/grepreader-logo.png',
+      name: 'GrepTag Reader',
+      desc: t('redesign.productFamily.products.grepreader.desc'),
+      bullets: [t('redesign.productFamily.products.grepreader.bullet1'), t('redesign.productFamily.products.grepreader.bullet2'), t('redesign.productFamily.products.grepreader.bullet3')],
+      cta: t('redesign.productFamily.products.grepreader.cta'),
+      to: `/${lang}/grepreader`,
+      accent: 'indigo',
     },
   ];
 
@@ -276,7 +289,7 @@ function ProductFamily() {
   );
 }
 
-function ProductCard({ tag, icon, name, desc, bullets, cta, href, to, secondary, secondaryHref, accent, dark }) {
+function ProductCard({ tag, icon, logoSrc, name, desc, bullets, cta, href, to, secondary, secondaryHref, accent, dark }) {
   const { t } = useTranslation();
   const accents = {
     blue: 'bg-blue-50 text-blue-600',
@@ -284,6 +297,7 @@ function ProductCard({ tag, icon, name, desc, bullets, cta, href, to, secondary,
     orange: 'bg-orange-50 text-orange-600',
     violet: 'bg-violet-50 text-violet-600',
     green: 'bg-green-50 text-green-600',
+    indigo: 'bg-indigo-50 text-indigo-600',
   };
   const ctaClass = dark ? 'bg-violet-600 text-white hover:bg-violet-700' : 'bg-[#0b1220] text-white hover:bg-[#152033]';
   const cardClass = dark
@@ -301,8 +315,8 @@ function ProductCard({ tag, icon, name, desc, bullets, cta, href, to, secondary,
       {dark && <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_80%_0%,rgba(139,92,246,0.27),transparent_55%)]" />}
       <div className="relative">
         <div className="mb-5 flex items-center justify-between">
-          <span className={`grid h-11 w-11 place-items-center rounded-xl ${dark ? 'bg-white/10 text-violet-200' : accents[accent]}`}>
-            <ProductIcon kind={icon} />
+          <span className={`grid h-11 w-11 place-items-center rounded-xl overflow-hidden ${logoSrc ? '' : dark ? 'bg-white/10 text-violet-200' : accents[accent]}`}>
+            {logoSrc ? <img src={logoSrc} alt={name} className="h-11 w-11 object-cover" /> : <ProductIcon kind={icon} />}
           </span>
           <span className={`rounded-full px-2.5 py-1 text-[10px] font-black uppercase tracking-wider ${dark ? 'bg-white/10 text-violet-100' : accents[accent]}`}>{tag}</span>
         </div>
@@ -334,6 +348,114 @@ function ProductCard({ tag, icon, name, desc, bullets, cta, href, to, secondary,
         )}
       </div>
     </article>
+  );
+}
+
+function TwoAppsSection({ lang }) {
+  const { t } = useTranslation();
+
+  const comicBullets = [
+    t('redesign.twoAppsSection.comicBullet1'),
+    t('redesign.twoAppsSection.comicBullet2'),
+    t('redesign.twoAppsSection.comicBullet3'),
+  ];
+  const textBullets = [
+    t('redesign.twoAppsSection.textBullet1'),
+    t('redesign.twoAppsSection.textBullet2'),
+    t('redesign.twoAppsSection.textBullet3'),
+  ];
+
+  return (
+    <section className="bg-[#f5f8ff] py-16 sm:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-10 text-center">
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-indigo-600">{t('redesign.twoAppsSection.eyebrow')}</div>
+          <h2 className="text-[clamp(1.6rem,3vw,2.4rem)] font-black leading-tight tracking-tight text-slate-950">
+            {t('redesign.twoAppsSection.titleA')}{' '}
+            <span className="font-semibold text-slate-500">{t('redesign.twoAppsSection.titleB')}</span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-slate-600">
+            {t('redesign.twoAppsSection.desc')}
+          </p>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-2">
+          {/* BiblioFuse Reader — comics */}
+          <div className="flex flex-col rounded-3xl border border-blue-100 bg-white p-7 shadow-sm">
+            <div className="mb-5 flex items-center justify-between">
+              <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-xl">
+                <img src="/image/bibliofuse-logo.png" alt="BiblioFuse Reader" className="h-11 w-11 object-cover" />
+              </span>
+              <span className="rounded-full bg-blue-50 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-blue-600">
+                {t('redesign.twoAppsSection.comicTag')}
+              </span>
+            </div>
+            <h3 className="mb-1 text-lg font-black tracking-tight text-slate-950">BiblioFuse Reader</h3>
+            <p className="mb-4 text-sm font-medium text-blue-700">{t('redesign.twoAppsSection.comicIdent')}</p>
+            <ul className="mb-6 space-y-2.5">
+              {comicBullets.map((b) => (
+                <li key={b} className="flex items-start gap-2.5 text-sm text-slate-700">
+                  <svg className="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2d7cf6" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                  {b}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-auto">
+              <a
+                href={appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl bg-[#0b1220] px-4 text-sm font-semibold text-white transition hover:bg-[#152033]"
+              >
+                {t('redesign.twoAppsSection.comicCta')}
+                <ArrowRightIcon />
+              </a>
+            </div>
+          </div>
+
+          {/* GrepTag Reader — novels */}
+          <div className="flex flex-col rounded-3xl border border-indigo-100 bg-white p-7 shadow-sm">
+            <div className="mb-5 flex items-center justify-between">
+              <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-xl">
+                <img src="/image/grepreader-logo.png" alt="GrepTag Reader" className="h-11 w-11 object-cover" />
+              </span>
+              <span className="rounded-full bg-indigo-50 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-indigo-600">
+                {t('redesign.twoAppsSection.textTag')}
+              </span>
+            </div>
+            <h3 className="mb-1 text-lg font-black tracking-tight text-slate-950">GrepTag Reader</h3>
+            <p className="mb-4 text-sm font-medium text-indigo-700">{t('redesign.twoAppsSection.textIdent')}</p>
+            <ul className="mb-6 space-y-2.5">
+              {textBullets.map((b) => (
+                <li key={b} className="flex items-start gap-2.5 text-sm text-slate-700">
+                  <svg className="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                  {b}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-auto">
+              <Link
+                to={`/${lang}/grepreader`}
+                className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 text-sm font-semibold text-white transition hover:bg-indigo-700"
+              >
+                {t('redesign.twoAppsSection.textCta')}
+                <ArrowRightIcon />
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <p className="mt-6 text-center text-xs text-slate-500">{t('redesign.twoAppsSection.bothNote')}</p>
+        <div className="mt-4 text-center">
+          <Link
+            to={`/${lang}/grepreader#why-two-apps`}
+            className="text-xs font-medium text-indigo-500 underline-offset-2 hover:underline"
+          >
+            Why are these two separate apps? →
+          </Link>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -623,7 +745,9 @@ function StandaloneToolsSection({ lang }) {
         <div className="grid gap-4 sm:grid-cols-3">
           <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5">
             <div className="mb-3 flex items-center gap-2.5">
-              <span className="grid h-9 w-9 flex-shrink-0 place-items-center rounded-xl bg-violet-50 text-violet-600"><ProductIcon kind="globe" /></span>
+              <span className="grid h-9 w-9 flex-shrink-0 place-items-center overflow-hidden rounded-xl">
+                <img src="/image/webtool-logo.png" alt={s.web.name} className="h-9 w-9 object-cover" />
+              </span>
               <div>
                 <div className="text-sm font-black text-slate-950">{s.web.name}</div>
                 <div className="text-[10px] text-slate-500">{s.web.subtitle}</div>
@@ -634,7 +758,9 @@ function StandaloneToolsSection({ lang }) {
           </div>
           <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5">
             <div className="mb-3 flex items-center gap-2.5">
-              <span className="grid h-9 w-9 flex-shrink-0 place-items-center rounded-xl bg-orange-50 text-orange-600"><ProductIcon kind="folder" /></span>
+              <span className="grid h-9 w-9 flex-shrink-0 place-items-center overflow-hidden rounded-xl">
+                <img src="/image/cbz-resizer-logo.png" alt={s.pcCbz.name} className="h-9 w-9 object-cover" />
+              </span>
               <div>
                 <div className="text-sm font-black text-slate-950">{s.pcCbz.name}</div>
                 <div className="text-[10px] text-slate-500">{s.pcCbz.subtitle}</div>
@@ -645,7 +771,9 @@ function StandaloneToolsSection({ lang }) {
           </div>
           <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5">
             <div className="mb-3 flex items-center gap-2.5">
-              <span className="grid h-9 w-9 flex-shrink-0 place-items-center rounded-xl bg-orange-50 text-orange-600"><ProductIcon kind="book" /></span>
+              <span className="grid h-9 w-9 flex-shrink-0 place-items-center overflow-hidden rounded-xl">
+                <img src="/image/epub-resizer-logo.png" alt={s.pcEpub.name} className="h-9 w-9 object-cover" />
+              </span>
               <div>
                 <div className="text-sm font-black text-slate-950">{s.pcEpub.name}</div>
                 <div className="text-[10px] text-slate-500">{s.pcEpub.subtitle}</div>
@@ -784,6 +912,7 @@ function renderLocalizedTableCell(cell, strong) {
 
 function ArchiveScannerSection() {
   const { t } = useTranslation();
+  const { lang = 'en' } = useParams();
   return (
     <section id="archive" className="relative overflow-hidden py-24 sm:py-28">
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,#FFFFFF_0%,#FFF7EE_60%,#FFFFFF_100%)]" />
@@ -791,6 +920,9 @@ function ArchiveScannerSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
           <div>
+            <div className="mb-5">
+              <img src="/image/archive-logo.png" alt="Archive Duplicate Scanner" className="h-16 w-16 rounded-2xl object-cover shadow-sm" />
+            </div>
             <div className="inline-flex items-center gap-2 rounded-full bg-warm/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-warm-deep">
               <span className="h-1.5 w-1.5 rounded-full bg-warm" />
               {t('redesign.archiveSection.badge')}
@@ -831,6 +963,10 @@ function ArchiveScannerSection() {
             <p className="mt-5 text-xs text-ink-soft">
               {t('redesign.archiveSection.pricing')}
             </p>
+
+            <Link to={`/${lang}/archive`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-600 hover:text-orange-700 transition-colors">
+              {t('redesign.archiveSection.learnMore', 'Learn more about Archive Duplicate Scanner')} →
+            </Link>
           </div>
 
           <div className="relative">
@@ -864,6 +1000,7 @@ function ArchiveScannerSection() {
 
 function SmartDecryptSection() {
   const { t } = useTranslation();
+  const { lang = 'en' } = useParams();
   return (
     <section
       id="smartdecrypt"
@@ -878,6 +1015,9 @@ function SmartDecryptSection() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
           <div>
+            <div className="mb-5">
+              <img src="/image/smartdecrypt-logo.png" alt="SmartDecrypt" className="h-16 w-16 rounded-2xl object-cover shadow-sm" />
+            </div>
             <div className="inline-flex items-center gap-2 rounded-full bg-violet/15 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-[#C4B5FD]">
               <span className="h-1.5 w-1.5 rounded-full bg-[#A78BFA]" />
               {t('redesign.decryptSection.badge')}
@@ -921,6 +1061,10 @@ function SmartDecryptSection() {
             <p className="mt-3 rounded-lg bg-violet-400/10 px-3 py-2 text-xs text-violet-200">
               <span className="font-semibold">{t('redesign.decryptSection.langNote')}</span>
             </p>
+
+            <Link to={`/${lang}/smartdecrypt`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-violet-300 hover:text-violet-100 transition-colors">
+              {t('redesign.decryptSection.learnMore', 'Learn more about SmartDecrypt')} →
+            </Link>
           </div>
 
           <div className="relative">
@@ -977,12 +1121,16 @@ function SmartDecryptSection() {
 
 function ContentCueSection() {
   const { t } = useTranslation();
+  const { lang = 'en' } = useParams();
   return (
     <section id="contentcue" className="relative overflow-hidden py-24 sm:py-28">
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,#FFFFFF_0%,#F0FDF4_60%,#FFFFFF_100%)]" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
           <div>
+            <div className="mb-5">
+              <img src="/image/contentcue-logo.png" alt="ContentCue" className="h-16 w-16 rounded-2xl object-cover shadow-sm" />
+            </div>
             <div className="inline-flex items-center gap-2 rounded-full bg-green-100 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-green-700">
               <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
               {t('redesign.contentcueSection.badge')}
@@ -1025,6 +1173,10 @@ function ContentCueSection() {
               <br />
               {t('redesign.contentcueSection.platformNote')}
             </p>
+
+            <Link to={`/${lang}/contentcue`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-green-600 hover:text-green-700 transition-colors">
+              {t('redesign.contentcueSection.learnMore', 'Learn more about ContentCue')} →
+            </Link>
           </div>
 
           <div className="relative">
@@ -1289,6 +1441,7 @@ const Home = () => {
       />
       <Hero lang={lang} />
       <ProductFamily lang={lang} />
+      <TwoAppsSection lang={lang} />
       <ReaderSection />
       <ComparisonTable />
       <StandaloneToolsSection lang={lang} />

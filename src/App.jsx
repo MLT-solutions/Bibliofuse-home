@@ -12,6 +12,12 @@ import Privacy from './pages/Privacy';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Changelog from './pages/Changelog';
+import AppChangelog from './pages/AppChangelog';
+import AppPrivacy from './pages/AppPrivacy';
+import GrepTagReader from './pages/GrepTagReader';
+import ArchiveScanner from './pages/ArchiveScanner';
+import SmartDecrypt from './pages/SmartDecrypt';
+import ContentCue from './pages/ContentCue';
 import Footer from './components/Footer';
 
 // Language redirect component - detects and redirects to proper language
@@ -74,6 +80,10 @@ function AppLayout() {
   // Get current path without language prefix
   const currentPath = location.pathname.replace(`/${lang}`, '') || '/';
   const isWebApp = currentPath === '/webapp';
+  const isGrepTagReader = currentPath === '/grepreader';
+  const isArchiveScanner = currentPath === '/archive';
+  const isSmartDecrypt = currentPath === '/smartdecrypt';
+  const isContentCue = currentPath === '/contentcue';
 
   return (
     <div className="min-h-screen bg-[#0f172a] text-white flex flex-col">
@@ -88,11 +98,23 @@ function AppLayout() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/changelog" element={<Changelog />} />
+          <Route path="/grepreader" element={<GrepTagReader />} />
+          <Route path="/grepreader/changelog" element={<AppChangelog appSlug="grepreader" />} />
+          <Route path="/grepreader/privacy" element={<AppPrivacy appSlug="grepreader" />} />
+          <Route path="/archive" element={<ArchiveScanner />} />
+          <Route path="/archive/changelog" element={<AppChangelog appSlug="archive" />} />
+          <Route path="/archive/privacy" element={<AppPrivacy appSlug="archive" />} />
+          <Route path="/smartdecrypt" element={<SmartDecrypt />} />
+          <Route path="/smartdecrypt/changelog" element={<AppChangelog appSlug="smartdecrypt" />} />
+          <Route path="/smartdecrypt/privacy" element={<AppPrivacy appSlug="smartdecrypt" />} />
+          <Route path="/contentcue" element={<ContentCue />} />
+          <Route path="/contentcue/changelog" element={<AppChangelog appSlug="contentcue" />} />
+          <Route path="/contentcue/privacy" element={<AppPrivacy appSlug="contentcue" />} />
           <Route path="*" element={<Navigate to={`/${lang}/`} replace />} />
         </Routes>
       </main>
       <BackToTopButton />
-      {!isWebApp && <Footer />}
+      {!isWebApp && !isGrepTagReader && !isArchiveScanner && !isSmartDecrypt && !isContentCue && <Footer />}
     </div>
   );
 }

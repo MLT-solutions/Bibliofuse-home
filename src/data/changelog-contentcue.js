@@ -1,0 +1,107 @@
+// Changelog — ContentCue
+// platform: 'ios'
+// released: true = live in App Store, false = pending / unreleased
+
+export const ENTRIES = [
+  {
+    date: '2026-05-27',
+    version: '1.0.0',
+    platform: 'ios',
+    type: 'release',
+    released: true,
+    title: {
+      en: 'v1.0 — Premium, bookmarks & reading controls',
+      es: 'v1.0 — Premium, marcadores y controles de lectura',
+      fr: 'v1.0 — Premium, signets et contrôles de lecture',
+      nl: 'v1.0 — Premium, bladwijzers en leesbesturingselementen',
+      pt: 'v1.0 — Premium, favoritos e controles de leitura',
+      ru: 'v1.0 — Premium, закладки и элементы управления чтением',
+      zh: 'v1.0 — Premium、书签 & 阅读控件',
+      ja: 'v1.0 — Premium、ブックマーク、読書コントロール',
+      ko: 'v1.0 — 프리미엄, 북마크 & 읽기 컨트롤',
+      id: 'v1.0 — Premium, penanda & kontrol membaca',
+      ms: 'v1.0 — Premium, penanda halaman & kawalan membaca',
+    },
+    desc: {
+      en: 'One-time Pro unlock ($2.99) with unlimited bookmarks, custom ad border styles, and adjustable auto-scroll speed. Reading Mode strips page clutter for a cleaner view. Stay-in-browser blocks app-redirect prompts that pull you out of a site mid-read. Full-page translation powered by iOS 18 (requires iOS 18 or later). Redirect controls. Localized app text across all supported languages.',
+      es: 'Desbloqueo Pro de pago único ($2,99) con marcadores ilimitados, estilos de bordes de anuncios personalizados y velocidad de desplazamiento automático ajustable. El modo de lectura elimina el desorden de la página para una vista más limpia. "Permanecer en el navegador" bloquea las solicitudes de redirección a apps que te sacan del sitio a mitad de la lectura. Traducción de página completa potenciada por iOS 18 (requiere iOS 18 o superior). Controles de redirección. Texto de la app localizado en todos los idiomas compatibles.',
+      fr: 'Déblocage Pro unique ($2,99) avec des signets illimités, des styles de bordures d\'annonces personnalisés et une vitesse de défilement automatique réglable. Le Mode Lecture supprime le désordre de la page pour une vue plus propre. Rester dans le navigateur bloque les invites de redirection d\'applications qui vous font quitter un site en cours de lecture. Traduction pleine page propulsée par iOS 18 (nécessite iOS 18 ou ultérieur). Contrôles de redirection. Texte de l\'application localisé dans toutes les langues prises en charge.',
+      nl: 'Eenmalige Pro-ontgrendeling ($2,99) met onbeperkte bladwijzers, aangepaste advertentiegrenstijlen en verstelbare automatische scrollsnelheid. Leezmodus verwijdert paginaoverlast voor een overzichtelijkere weergave. In browser blijven blokkeert app-omleidingsprompts die u midden in het lezen van een site weghalen. Volledige paginavertaling aangedreven door iOS 18 (vereist iOS 18 of later). Omleidingsbesturingselementen. App-tekst gelokaliseerd in alle ondersteunde talen.',
+      pt: 'Desbloqueio Pro único ($2,99) com favoritos ilimitados, estilos personalizados de borda de anúncio e velocidade de rolagem automática ajustável. Modo Leitura remove a desordem da página para uma visualização mais limpa. Ficar no navegador bloqueia prompts de redirecionamento de app que tiram você de um site no meio da leitura. Tradução de página inteira com iOS 18 (requer iOS 18 ou posterior). Controles de redirecionamento. Texto do app localizado em todos os idiomas suportados.',
+      ru: 'Единовременная разблокировка Pro ($2,99) с безлимитными закладками, настраиваемыми стилями рамок рекламы и регулируемой скоростью автопрокрутки. Режим чтения убирает лишние элементы страницы для более чистого вида. «Остаться в браузере» блокирует запросы на редирект в приложения, прерывающие чтение на сайте. Полностраничный перевод на базе iOS 18 (требуется iOS 18 или новее). Управление редиректами. Текст приложения локализован на все поддерживаемые языки.',
+      zh: '一次性 Pro 解锁（$2.99），包含无限书签、自定义广告边框样式和可调节自动滚动速度。阅读模式移除页面杂乱元素以获得更清晰的视图。"留在浏览器中"功能屏蔽在阅读过程中将你跳转至其他应用的重定向提示。基于 iOS 18 的全页翻译（需要 iOS 18 或更高版本）。重定向控制。应用文字已在所有支持语言中完成本地化。',
+      ja: '一回払いの Pro アンロック（$2.99）：無制限のブックマーク、カスタム広告ボーダースタイル、調整可能な自動スクロール速度。読書モードでページの煩わしい要素を除去してすっきりした表示に。ブラウザに留まる機能で、読書中に他のアプリへのリダイレクトを防止。iOS 18 による全ページ翻訳（iOS 18 以降が必要）。リダイレクトコントロール。サポートされる全言語でアプリテキストをローカライズ。',
+      ko: '일회성 Pro 잠금 해제($2.99): 무제한 북마크, 맞춤형 광고 테두리 스타일, 조절 가능한 자동 스크롤 속도. 읽기 모드로 페이지 혼란 요소를 제거하여 더 깔끔한 화면 제공. 브라우저 유지 기능으로 읽는 중 다른 앱으로 이동시키는 리디렉션 프롬프트 차단. iOS 18 기반 전체 페이지 번역(iOS 18 이상 필요). 리디렉션 컨트롤. 지원되는 모든 언어에서 앱 텍스트 현지화.',
+      id: 'Buka kunci Pro sekali bayar ($2,99) dengan bookmark tak terbatas, gaya tepi iklan kustom, dan kecepatan gulir otomatis yang dapat disesuaikan. Mode Membaca menghapus kekacauan halaman untuk tampilan yang lebih bersih. Tetap di browser memblokir permintaan pengalihan aplikasi yang mengeluarkan Anda dari situs saat membaca. Terjemahan halaman penuh didukung iOS 18 (memerlukan iOS 18 atau lebih baru). Kontrol pengalihan. Teks aplikasi dilokalkan dalam semua bahasa yang didukung.',
+      ms: 'Buka kunci Pro sekali bayar ($2.99) dengan penanda halaman tanpa had, gaya sempadan iklan tersuai, dan kelajuan auto-skrol yang boleh dilaraskan. Mod Membaca mengalih keluar kekacauan halaman untuk paparan yang lebih bersih. Kekal dalam pelayar menyekat gesaan peralihan apl yang mengeluarkan anda dari tapak semasa membaca. Terjemahan halaman penuh dikuasai oleh iOS 18 (memerlukan iOS 18 atau lebih baru). Kawalan peralihan. Teks apl disetempatkan dalam semua bahasa yang disokong.',
+    },
+  },
+  {
+    date: '2026-05-16',
+    version: '1.0.0',
+    platform: 'ios',
+    type: 'release',
+    released: true,
+    title: {
+      en: 'v1.0 — Initial launch',
+      es: 'v1.0 — Lanzamiento inicial',
+      fr: 'v1.0 — Lancement initial',
+      nl: 'v1.0 — Eerste lancering',
+      pt: 'v1.0 — Lançamento inicial',
+      ru: 'v1.0 — Первый запуск',
+      zh: 'v1.0 — 初始发布',
+      ja: 'v1.0 — 初回リリース',
+      ko: 'v1.0 — 초기 출시',
+      id: 'v1.0 — Peluncuran awal',
+      ms: 'v1.0 — Pelancaran awal',
+    },
+    desc: {
+      en: 'App Store launch. An iOS browser that saves your scroll position so you can pick up exactly where you left off when an ad interrupts. Tap Resume to return to your saved position on any site. Colored borders highlight in-body ads (visual distinction — ads still display and load fully). Audio mute toggle for quiet reading. Works with Webtoons, Tapas, manga sites, and any web content.',
+      es: 'Lanzamiento en App Store. Un navegador iOS que guarda tu posición de desplazamiento para que puedas continuar exactamente donde lo dejaste cuando un anuncio interrumpe. Toca Reanudar para volver a tu posición guardada en cualquier sitio. Bordes de color resaltan los anuncios dentro del contenido (distinción visual: los anuncios siguen mostrándose y cargándose completamente). Palanca de silencio de audio para lectura tranquila. Funciona con Webtoons, Tapas, sitios de manga y cualquier contenido web.',
+      fr: 'Lancement sur l\'App Store. Un navigateur iOS qui sauvegarde votre position de défilement pour que vous puissiez reprendre exactement là où vous en étiez quand une publicité interrompt. Tapez Reprendre pour retourner à votre position sauvegardée sur n\'importe quel site. Des bordures colorées mettent en évidence les publicités dans le contenu (distinction visuelle — les publicités s\'affichent et se chargent normalement). Bascule de désactivation audio pour une lecture tranquille. Fonctionne avec Webtoons, Tapas, sites de manga et tout contenu web.',
+      nl: 'App Store lancering. Een iOS-browser die uw scrollpositie opslaat zodat u exact kunt doorgaan waar u was gebleven wanneer een advertentie onderbreekt. Tik op Hervatten om terug te keren naar uw opgeslagen positie op elke site. Gekleurde randen markeren in-pagina advertenties (visueel onderscheid — advertenties worden nog steeds volledig weergegeven en geladen). Geluiddemper voor stil lezen. Werkt met Webtoons, Tapas, mangasites en elke webinhoud.',
+      pt: 'Lançamento na App Store. Um navegador iOS que salva sua posição de rolagem para que você possa continuar exatamente onde parou quando um anúncio interrompe. Toque em Retomar para voltar à sua posição salva em qualquer site. Bordas coloridas destacam anúncios dentro do conteúdo (distinção visual — os anúncios ainda são exibidos e carregados completamente). Botão de silenciar áudio para leitura tranquila. Funciona com Webtoons, Tapas, sites de manga e qualquer conteúdo web.',
+      ru: 'Запуск в App Store. Браузер для iOS, который сохраняет позицию прокрутки, чтобы вы могли продолжить чтение с того места, где остановились, когда реклама прерывает. Нажмите «Продолжить», чтобы вернуться к сохранённой позиции на любом сайте. Цветные рамки выделяют рекламу внутри контента (визуальное отличие — реклама по-прежнему отображается и загружается полностью). Переключатель отключения звука для тихого чтения. Работает с Webtoons, Tapas, сайтами манги и любым веб-контентом.',
+      zh: 'App Store 发布。一款 iOS 浏览器，保存你的滚动位置，当广告打断时可从停止处继续阅读。点击"继续"即可返回任何网站的已保存位置。彩色边框突出显示页面内广告（视觉区分——广告仍正常显示和加载）。音频静音切换，支持安静阅读。适用于 Webtoons、Tapas、漫画网站及任何网页内容。',
+      ja: 'App Store リリース。広告が邪魔したときに、中断した場所からそのまま再開できるようスクロール位置を保存する iOS ブラウザ。「再開」をタップすると任意のサイトの保存済み位置に戻れます。カラーボーダーがコンテンツ内の広告を視覚的に区別します（広告は通常通り表示・読み込みされます）。静かな読書のための音声ミュート切り替え。Webtoons、Tapas、漫画サイト、すべての Web コンテンツで動作。',
+      ko: 'App Store 출시. 광고가 방해할 때 정확히 멈춘 곳에서 다시 시작할 수 있도록 스크롤 위치를 저장하는 iOS 브라우저. 재개를 탭하면 어떤 사이트에서도 저장된 위치로 돌아갑니다. 색상 테두리로 페이지 내 광고를 시각적으로 구분(광고는 여전히 정상적으로 표시 및 로드됨). 조용한 독서를 위한 오디오 음소거 토글. Webtoons, Tapas, 만화 사이트 및 모든 웹 콘텐츠와 호환.',
+      id: 'Peluncuran App Store. Browser iOS yang menyimpan posisi gulir Anda sehingga Anda bisa melanjutkan tepat di mana Anda berhenti ketika iklan mengganggu. Ketuk Lanjutkan untuk kembali ke posisi tersimpan di situs mana pun. Tepi berwarna menyoroti iklan di dalam konten (perbedaan visual — iklan masih ditampilkan dan dimuat penuh). Toggle mute audio untuk membaca dengan tenang. Bekerja dengan Webtoons, Tapas, situs manga, dan konten web apa pun.',
+      ms: 'Pelancaran App Store. Pelayar iOS yang menyimpan kedudukan tatal anda supaya anda boleh meneruskan tepat di tempat anda berhenti apabila iklan mengganggu. Ketik Sambung semula untuk kembali ke kedudukan tersimpan di mana-mana tapak. Sempadan berwarna menonjolkan iklan dalam kandungan (perbezaan visual — iklan masih dipaparkan dan dimuatkan sepenuhnya). Togol redam audio untuk membaca dengan tenang. Berfungsi dengan Webtoons, Tapas, tapak manga, dan sebarang kandungan web.',
+    },
+  },
+];
+
+export const KNOWN_ISSUES = [];
+
+export const ROADMAP = [
+  {
+    platform: 'ios',
+    status: 'exploring',
+    title: {
+      en: 'Custom reading themes',
+      es: 'Temas de lectura personalizados',
+      fr: 'Thèmes de lecture personnalisés',
+      nl: 'Aangepaste leesthema\'s',
+      pt: 'Temas de leitura personalizados',
+      ru: 'Пользовательские темы для чтения',
+      zh: '自定义阅读主题',
+      ja: 'カスタム読書テーマ',
+      ko: '맞춤 읽기 테마',
+      id: 'Tema membaca kustom',
+      ms: 'Tema membaca tersuai',
+    },
+    desc: {
+      en: 'User-selectable background and text colors for the browser UI — light, dark, sepia, and custom hex values.',
+      es: 'Colores de fondo y texto seleccionables por el usuario para la interfaz del navegador: claro, oscuro, sepia y valores hexadecimales personalizados.',
+      fr: 'Couleurs d\'arrière-plan et de texte sélectionnables par l\'utilisateur pour l\'interface du navigateur — clair, sombre, sépia et valeurs hexadécimales personnalisées.',
+      nl: 'Door de gebruiker selecteerbare achtergrond- en tekstkleuren voor de browserinterface — licht, donker, sepia en aangepaste hex-waarden.',
+      pt: 'Cores de fundo e texto selecionáveis pelo usuário para a interface do navegador — claro, escuro, sépia e valores hexadecimais personalizados.',
+      ru: 'Пользовательские цвета фона и текста для интерфейса браузера — светлая, тёмная, сепия и произвольные hex-значения.',
+      zh: '用户可选择浏览器界面的背景和文字颜色——浅色、深色、棕褐色和自定义十六进制值。',
+      ja: 'ブラウザ UI の背景色とテキスト色をユーザーが選択可能に — ライト、ダーク、セピア、カスタム hex 値。',
+      ko: '브라우저 UI의 배경 및 텍스트 색상을 사용자가 선택 가능 — 밝게, 어둡게, 세피아, 사용자 지정 hex 값.',
+      id: 'Warna latar belakang dan teks yang dapat dipilih pengguna untuk UI browser — terang, gelap, sepia, dan nilai hex kustom.',
+      ms: 'Warna latar belakang dan teks yang boleh dipilih pengguna untuk UI pelayar — cerah, gelap, sepia, dan nilai hex tersuai.',
+    },
+  },
+];

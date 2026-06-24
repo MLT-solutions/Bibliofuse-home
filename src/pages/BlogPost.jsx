@@ -102,6 +102,32 @@ const BlogPost = () => {
     return faqSchema.mainEntity.map(e => ({ q: e.name, a: e.acceptedAnswer.text }));
   }, [faqSchema]);
 
+  // Build HowTo JSON-LD from numbered step headings (### 1. Step Name)
+  const howToSchema = React.useMemo(() => {
+    if (!content || !title.match(/^how\s+to/i)) return null;
+    const stepRegex = /^###\s+\d+\.\s+(.+)$([\s\S]*?)(?=^###\s+\d+\.|^##\s+|$)/gm;
+    const steps = [];
+    let match;
+    while ((match = stepRegex.exec(content)) !== null) {
+      const name = match[1].trim();
+      const desc = match[2].replace(/\*\*/g, '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').trim().split('\n\n')[0].trim();
+      if (name) steps.push({ name, text: desc || name });
+    }
+    if (steps.length < 2) return null;
+    return {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": title,
+      "description": seoDescription,
+      "step": steps.map((s, i) => ({
+        "@type": "HowToStep",
+        "position": i + 1,
+        "name": s.name,
+        "text": s.text,
+      })),
+    };
+  }, [content, title, seoDescription]);
+
   const breadcrumbs = [
     { name: 'Home', url: 'https://bibliofuse.com/en/' },
     { name: 'Blog', url: 'https://bibliofuse.com/en/blog/' },
@@ -118,6 +144,7 @@ const BlogPost = () => {
         image={article.coverImage}
         datePublished={article.date}
         faqItems={faqItemsForSchema}
+        howToSchema={howToSchema}
         breadcrumbs={breadcrumbs}
       />
       <div className="min-h-screen bg-[#F6F8FC] px-4 pb-20 pt-28 text-slate-950 sm:px-6 lg:px-8">

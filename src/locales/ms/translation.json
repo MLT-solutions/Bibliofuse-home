@@ -182,7 +182,8 @@
       "webSub": "Pemampatan dalam pelayar",
       "archiveSub": "Mac · Windows",
       "smartSub": "iPhone · iPad · Mac · Windows",
-      "contentcueSub": "iPhone · iPad"
+      "contentcueSub": "iPhone · iPad",
+      "grepSub": "iPhone · iPad · Mac"
     },
     "common": {
       "noAds": "Tiada iklan",
@@ -238,8 +239,8 @@
       "products": "Produk",
       "company": "Syarikat",
       "legal": "Undang-undang",
-      "webTool": "Alat web",
-      "contact": "Hubungi kami",
+      "webTool": "Alat Web",
+      "contact": "Hubungi",
       "work": "Bekerja bersama kami",
       "eula": "Terma Penggunaan (EULA)",
       "stores": "Apple App Store · Google Play · Microsoft Store"
@@ -344,12 +345,12 @@
           "cta": "Lancarkan alat percuma"
         },
         "pcCbz": {
-          "name": "BiblioFuse CBZ",
+          "name": "BiblioFuse CBZ Resizer",
           "subtitle": "Windows · Microsoft Store",
           "desc": "Mampatkan dan gabungkan arkib komik pada Windows."
         },
         "pcEpub": {
-          "name": "BiblioFuse EPUB",
+          "name": "BiblioFuse EPUB Resizer",
           "subtitle": "Windows · Microsoft Store",
           "desc": "Mampatkan dan gabungkan fail EPUB pada Windows."
         }
@@ -478,6 +479,47 @@
           {
             "q": "Apakah perbezaan antara PC Reader dan alat PC EPUB / CBZ?",
             "a": "PC Reader ialah apl membaca penuh — ia membuka buku, mengurus perpustakaan anda, memampatkan fail, dan membuat penstriman ke iPhone. Alat PC EPUB dan CBZ ialah apl yang lebih ringan dan murah yang hanya berfokus pada pemampatan dan penggabungan, tanpa pembaca."
+          },
+          {
+            "q": "Bagaimana cara mendapatkan suara teks-ke-pertuturan yang lebih baik dalam BiblioFuse?",
+            "a": "Suara berkualiti tinggi sudah tertanam dalam peranti anda tetapi perlu dimuat turun secara berasingan — BiblioFuse akan mengesannya secara automatik setelah dipasang.",
+            "bullets": [
+              {
+                "text": "iPhone / iPad",
+                "sub": [
+                  "Pergi ke Tetapan → Kebolehcapaian → Kandungan Pertuturan → Suara",
+                  "Pilih bahasa anda, kemudian muat turun suara Dipertingkat atau Premium",
+                  "Suara Premium pada iOS 16+ mempunyai kualiti neural (tahap Siri)"
+                ]
+              },
+              {
+                "text": "Mac",
+                "sub": [
+                  "Pergi ke Tetapan Sistem → Kebolehcapaian → Kandungan Pertuturan → Suara Sistem → Urus Suara",
+                  "Muat turun sebarang suara Dipertingkat atau Premium untuk bahasa anda"
+                ]
+              },
+              {
+                "text": "Windows 10 / Windows 11",
+                "sub": [
+                  "Pergi ke Tetapan → Masa & bahasa → Bahasa & rantau",
+                  "Tambah bahasa bacaan anda, atau buka Pilihan bahasa untuk bahasa yang telah dipasang",
+                  "Di bawah Ciri bahasa, pasang Teks-ke-pertuturan",
+                  "Mulakan semula BiblioFuse, kemudian mulakan sesi TTS baharu"
+                ]
+              },
+              {
+                "text": "Suara Semula Jadi Windows 11 (pilihan)",
+                "sub": [
+                  "Pergi ke Tetapan → Kebolehcapaian → Pencerita",
+                  "Di bawah Tambah suara semula jadi, muat turun suara yang dikehendaki",
+                  "Nota: Windows mungkin hanya mendedahkan suara ini kepada Pencerita sahaja, bukan semua apl"
+                ]
+              },
+              {
+                "text": "Tiada kemas kini aplikasi diperlukan — BiblioFuse mengesan suara yang baru dipasang apabila ia didedahkan melalui sistem teks-ke-pertuturan Windows atau Apple"
+              }
+            ]
           }
         ]
       }
@@ -531,6 +573,14 @@
           "bullet2": "Mod baca dengan tatal automatik",
           "bullet3": "Penanda buku · Tiada akaun diperlukan",
           "cta": "App Store"
+        },
+        "grepreader": {
+          "tag": "iOS Only",
+          "desc": "Carian teks penuh, penandaan dan penganjuran untuk perpustakaan EPUB dan TXT.",
+          "bullet1": "Grep dengan logik AND / OR / NOT",
+          "bullet2": "Tag mengikut genre · jalankan secara automatik semasa import",
+          "bullet3": "Penyegerakan Wi-Fi dua hala antara peranti",
+          "cta": "Ketahui Lebih Lanjut"
         }
       }
     },
@@ -547,7 +597,7 @@
           "bullet1Body": "susun tanpa folder jika anda mahu.",
           "bullet2Title": "Kemajuan membaca",
           "bullet2Body": "setiap buku mengingati di mana anda berhenti.",
-          "bullet3Title": "iCloud merentas peranti",
+          "bullet3Title": "iCloud pelbagai peranti",
           "bullet3Body": "sambung pada iPhone dari tempat anda berhenti pada iPad.",
           "imageAlt": "Perpustakaan BiblioFuse dengan tag, penilaian dan kemajuan membaca"
         },
@@ -557,9 +607,9 @@
           "desc": "Pembaca bebas gangguan dengan kawalan yang penting untuk sesi panjang. Teks-ke-suara untuk EPUB dan TXT. Tatal auto untuk komik dan webtoon. Zum pintas untuk memeriksa panel tanpa kehilangan tempat.",
           "bullet1Title": "Teks-ke-suara",
           "bullet1Body": "narasi tanpa tangan untuk EPUB dan TXT.",
-          "bullet2Title": "Tatal auto",
+          "bullet2Title": "Tatal automatik",
           "bullet2Body": "berhalaman atau berterusan, ditala untuk arkib imej.",
-          "bullet3Title": "Zum pintas",
+          "bullet3Title": "Peek zum",
           "bullet3Body": "ketuk dua kali untuk memeriksa panel padat dan teks kecil.",
           "imageAlt": "Paparan bacaan BiblioFuse dengan TTS, tatal auto dan zum pintas"
         },
@@ -777,19 +827,23 @@
       "posts": {
         "airdrop-books-to-iphone": {
           "title": "Cara Menggunakan AirDrop untuk Memindahkan Komik dan Ebook ke iPhone",
-          "excerpt": "BiblioFuse menerima fail CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT yang dikongsi melalui AirDrop pada iPhone dan iPad yang menjalankan iOS 17 atau lebih baharu. Terima fail dari helaian kongsi iOS, ketik BiblioFuse, dan fail terus masuk ke perpustakaan anda — tanpa kabel, tanpa akaun, tanpa menunggu penyegerakan awan."
+          "excerpt": "AirDrop membolehkan anda menghantar fail CBZ, CBR, EPUB dan PDF dari Mac atau iPhone lain terus ke BiblioFuse dalam beberapa saat, tanpa kabel atau aplikasi tambahan. Aktifkan AirDrop pada kedua-dua peranti, pilih fail dan ketik BiblioFuse dalam helaian kongsi.",
+          "seoDescription": "AirDrop CBZ, CBR, EPUB, and PDF files from Mac to iPhone — files land in Files → Downloads. Select them, share to BiblioFuse, then delete from Downloads. Full step-by-step guide."
         },
         "change-reading-direction-comics": {
-          "title": "Cara Beralih Antara Arah Baca LTR dan RTL dalam BiblioFuse",
-          "excerpt": "BiblioFuse membolehkan anda bertukar arah baca antara kiri-ke-kanan (LTR) dan kanan-ke-kiri (RTL) pada iPhone dan iPad yang menjalankan iOS 17 atau lebih baharu. Ketik ikon tetapan semasa membaca untuk menukar arah serta-merta — sesuai untuk manga, manhwa, dan komik Barat."
+          "title": "Cara Beralih antara Bacaan LTR dan RTL di BiblioFuse",
+          "excerpt": "BiblioFuse menyimpan arah bacaan setiap buku supaya manga dibaca dari kanan ke kiri dan komik Barat dari kiri ke kanan secara automatik. Tetapkan lalai global dan ganti setiap buku dengan tiga ketikan.",
+          "seoDescription": "Set right-to-left reading direction for manga or left-to-right for Western comics in BiblioFuse. The app remembers the direction per book automatically."
         },
         "read-webtoons-on-iphone": {
           "title": "Cara Membaca Webtoon di iPhone: Tatal Vertikal Tanpa Henti di BiblioFuse",
-          "excerpt": "Mod tatal vertikal BiblioFuse dibina untuk webtoon dan manhwa — komik jalur panjang CBZ dan EPUB. Tatal berterusan melalui bab tanpa ketukan dan navigasi siri dengan mudah."
+          "excerpt": "Mod tatal vertikal BiblioFuse dibina untuk webtoon dan manhwa — komik jalur panjang CBZ dan EPUB. Tatal berterusan melalui bab tanpa ketukan dan navigasi siri dengan mudah.",
+          "seoDescription": "BiblioFuse's vertical scroll mode is designed for webtoons and long-strip manga on iPhone. Read continuously without page-tapping — CBZ, CBR, and ZIP supported."
         },
         "convert-zip-to-cbz-online": {
           "title": "Cara Tukar ZIP kepada CBZ Dalam Talian: Namakan Semula Arkib Komik dalam Beberapa Saat",
-          "excerpt": "Fail CBZ adalah arkib ZIP dengan sambungan berbeza. Alat web BiblioFuse menukar ZIP kepada CBZ dalam pelayar menggunakan WebAssembly — tanpa muat naik, tanpa perisian, sepenuhnya peribadi."
+          "excerpt": "Fail CBZ adalah arkib ZIP dengan sambungan berbeza. Alat web BiblioFuse menukar ZIP kepada CBZ dalam pelayar menggunakan WebAssembly — tanpa muat naik, tanpa perisian, sepenuhnya peribadi.",
+          "seoDescription": "Convert ZIP comic archives to CBZ format instantly in your browser using BiblioFuse Web. No file upload, no account — 100% WebAssembly, works on any device."
         },
         "double-page-spreads-comics": {
           "title": "Membaca Halaman Berganda dalam Komik: Cara BiblioFuse Mengendalikan Imej Lebar",
@@ -1023,23 +1077,18 @@
         },
         "pc-home-library-streaming-iphone": {
           "title": "Stream Your Windows PC Comic Library to iPhone — Home Wi-Fi and 5G",
-          "excerpt": "BiblioFuse PC Reader lets your iPhone stream your entire Windows library over home Wi-Fi or 5G with Tailscale — no files copied, no iPhone storage used."
+          "excerpt": "BiblioFuse PC Reader lets your iPhone stream your entire Windows library over home Wi-Fi or 5G with Tailscale — no files copied, no iPhone storage used.",
+          "seoDescription": "Stream your entire Windows PC comic and ebook library to iPhone over Wi-Fi using BiblioFuse. No copying files — read CBZ, CBR, EPUB, and PDF directly from your PC."
         },
         "read-pdf-comics-iphone": {
           "title": "Cara Membaca Komik PDF di iPhone dengan BiblioFuse",
-          "excerpt": "BiblioFuse membaca komik PDF secara natif di iPhone dengan kawalan skrin penuh yang sama seperti CBZ dan EPUB. Pindah melalui Wi-Fi, import dari Fail atau AirDrop — dengan penyegerakan kemajuan bacaan melalui iCloud."
-        },
-        "airdrop-books-to-iphone": {
-          "title": "Cara Menggunakan AirDrop untuk Memindahkan Komik dan Ebook ke iPhone",
-          "excerpt": "AirDrop membolehkan anda menghantar fail CBZ, CBR, EPUB dan PDF dari Mac atau iPhone lain terus ke BiblioFuse dalam beberapa saat, tanpa kabel atau aplikasi tambahan. Aktifkan AirDrop pada kedua-dua peranti, pilih fail dan ketik BiblioFuse dalam helaian kongsi."
-        },
-        "change-reading-direction-comics": {
-          "title": "Cara Beralih antara Bacaan LTR dan RTL di BiblioFuse",
-          "excerpt": "BiblioFuse menyimpan arah bacaan setiap buku supaya manga dibaca dari kanan ke kiri dan komik Barat dari kiri ke kanan secara automatik. Tetapkan lalai global dan ganti setiap buku dengan tiga ketikan."
+          "excerpt": "BiblioFuse membaca komik PDF secara natif di iPhone dengan kawalan skrin penuh yang sama seperti CBZ dan EPUB. Pindah melalui Wi-Fi, import dari Fail atau AirDrop — dengan penyegerakan kemajuan bacaan melalui iCloud.",
+          "seoDescription": "Read PDF comics on iPhone with BiblioFuse's full-screen reader. Supports zoom, page turn, vertical scroll, and bookmarks — same experience as CBZ and EPUB."
         },
         "bibliofuse-ipad-reading-tips": {
           "title": "BiblioFuse di iPad: Tips Membaca Komik Skrin Penuh",
-          "excerpt": "Skrin iPad yang lebih besar membuka paparan dua halaman landskap, gelangsar lakaran kecil, dan strim perpustakaan Mac dalam BiblioFuse. Konfigurasikan mod paparan, membaca malam, dan Stage Manager."
+          "excerpt": "Skrin iPad yang lebih besar membuka paparan dua halaman landskap, gelangsar lakaran kecil, dan strim perpustakaan Mac dalam BiblioFuse. Konfigurasikan mod paparan, membaca malam, dan Stage Manager.",
+          "seoDescription": "Get the most out of reading comics and ebooks on iPad with BiblioFuse. Tips for two-page landscape spreads, zoom, auto-scroll, and streaming from Mac."
         }
       },
       "eyebrow": "Blog",
@@ -1049,7 +1098,7 @@
       "backToBlog": "Kembali ke blog",
       "notFound": "Artikel tidak dijumpai. Ia mungkin telah dipindahkan atau dibuang.",
       "homeSectionEyebrow": "Dari blog",
-      "homeSectionTitle": "Tips & kemas kini",
+      "homeSectionTitle": "Tips dan kemas kini",
       "homeSectionDesc": "Panduan, nota keluaran, dan idea untuk kehidupan membaca anda.",
       "viewAll": "Lihat semua artikel",
       "tags": {
@@ -1065,7 +1114,413 @@
       "subtitle": "Sejarah keluaran, pembaikan pepijat, isu yang diketahui dan perancangan masa hadapan — untuk semua platform.",
       "filterAll": "Semua platform",
       "knownIssuesTitle": "Isu yang diketahui",
-      "roadmapTitle": "Peta jalan"
+      "roadmapTitle": "Peta Jalan"
+    },
+    "twoAppsSection": {
+      "eyebrow": "Dua aplikasi, satu ekosistem",
+      "titleA": "Untuk komik dan manga.",
+      "titleB": "Atau untuk novel dan novel ringan.",
+      "desc": "Setiap aplikasi direka berdasarkan cara perpustakaannya berfungsi — saiz fail berbeza, tabiat membaca berbeza, keperluan storan berbeza.",
+      "comicTag": "KOMIK · MANGA · PDF",
+      "comicIdent": "Perpustakaan anda ada di Mac. Strimkan ke iPhone.",
+      "comicBullet1": "CBZ, CBR, PDF, EPUB & TXT",
+      "comicBullet2": "Mampat & gabung untuk jimat storan",
+      "comicBullet3": "Strim dari Mac melalui Wi-Fi atau 5G",
+      "comicCta": "Muat Turun BiblioFuse Reader",
+      "textTag": "EPUB · NOVEL · TXT",
+      "textIdent": "Perpustakaan anda ada di telefon. Cari. Tag.",
+      "textBullet1": "Grep teks penuh dengan logik AND / OR / NOT",
+      "textBullet2": "Tag mengikut genre · segerak ke mana-mana arah",
+      "textBullet3": "Kulit buku untuk EPUB & TXT — perpustakaan visual",
+      "textCta": "Terokai GrepTag Reader",
+      "bothNote": "Ramai pembaca menggunakan BiblioFuse untuk komik dan GrepTag untuk novel — kedua-duanya percuma untuk dicuba."
+    },
+    "grepTagPage": {
+      "hero": {
+        "badge": "iOS · macOS",
+        "title": "Cari. Tag. Miliki Perpustakaan Anda.",
+        "desc": "BiblioFuse GrepTag Reader adalah kit alat carian teks penuh dan penandaan untuk koleksi EPUB dan TXT. Fail anda kekal di peranti——tiada indeks awan, tiada muat naik.",
+        "appStoreCta": "Download on App Store",
+        "trust1": "Imbasan grep percuma——tanpa had",
+        "trust2": "Tiada pelayan, tiada muat naik",
+        "trust3": "Teks CJK disokong",
+        "comingSoon": "Akan datang — menunggu kelulusan App Store"
+      },
+      "grep": {
+        "eyebrow": "Grep dan Profil",
+        "title": "Cari teks penuh setiap buku.",
+        "desc": "Taip mana-mana kata kunci dan GrepTag membaca terus dari fail EPUB dan TXT anda——tiada indeks perlu dibina, tiada muat naik diperlukan. Simpan carian sebagai profil bernama dengan logik AND, OR dan NOT dan jalankan semula seiring perpustakaan anda berkembang.",
+        "bullet1": "Logik Boolean——\"Sci-Fi AND naga NOT percintaan\"",
+        "bullet2": "Sehingga 2 profil percuma · Pro membuka tanpa had",
+        "bullet3": "Jalankan automatik semasa import menandai buku baharu",
+        "badge": "Sentiasa percuma · imbasan tanpa had"
+      },
+      "tags": {
+        "eyebrow": "Tag dan Penemuan",
+        "title": "Tag mengikut genre. Tapis serta-merta.",
+        "desc": "Gunakan tag dari keputusan imbasan dengan satu ketukan, atau tandai buku secara manual. Tapis perpustakaan anda mengikut satu atau lebih tag untuk melihat semua buku dalam genre. Lima tag percuma——Pro membuka tanpa had.",
+        "bullet1": "5 tag percuma · Pro membuka tanpa had",
+        "bullet2": "Penapisan berbilang tag AND / OR",
+        "bullet3": "Penandaan satu ketukan dari keputusan imbasan"
+      },
+      "sync": {
+        "eyebrow": "Penyegerakan Wi-Fi",
+        "title": "Segerak ke mana-mana arah——tanpa iCloud.",
+        "desc": "Pindahkan seluruh perpustakaan anda melalui Wi-Fi tempatan antara iPhone, iPad dan Mac ke mana-mana arah. Buku kekal pada perkakasan anda——tiada yang dihantar ke pelayan luaran.",
+        "bullet1": "iPhone → iPad, Mac → iPhone, iPad → Mac",
+        "bullet2": "Tag dan metadata bergerak bersama fail anda",
+        "bullet3": "Ciri Pro——pembelian sekali atau langganan"
+      },
+      "covers": {
+        "eyebrow": "Kulit dan Pembaca",
+        "title": "Perpustakaan visual. Pembaca terbina.",
+        "desc": "Kulit EPUB diekstrak secara automatik. Untuk buku TXT, kulit dipadankan dari imej dalam folder yang sama atau diambil dengan menampal URL. Baca EPUB dan TXT dengan TTS, penanda buku dan fon boleh laras.",
+        "bullet1": "Kulit EPUB diekstrak automatik (percuma)",
+        "bullet2": "Kulit TXT dari imej folder sama atau URL (Pro)",
+        "bullet3": "TTS dengan kawalan kelantangan · penanda buku · fon"
+      },
+      "whySeparate": {
+        "eyebrow": "Mengapa dua aplikasi?",
+        "title": "Perpustakaan berbeza memerlukan alat berbeza.",
+        "desc": "BiblioFuse Reader dibina untuk fail komik bergambar besar——penstriman dari Mac, pemampatan dalam aplikasi. GrepTag dibina untuk fail teks kecil yang muat sepenuhnya di peranti——grep, tag, segerak ke mana-mana arah.",
+        "col1": "BiblioFuse Reader",
+        "col2": "GrepTag Reader",
+        "row1Label": "Best for",
+        "row1col1": "Comics, manga, PDF",
+        "row1col2": "EPUB, light novels, TXT",
+        "row2Label": "File size",
+        "row2col1": "50–300 MB per volume",
+        "row2col2": "Under 5 MB each",
+        "row3Label": "Reka bentuk storan",
+        "row3col1": "Penstriman dari Mac · pemampatan dalam aplikasi",
+        "row3col2": "Simpan di peranti · segerak ke mana-mana arah",
+        "row4Label": "Ciri utama",
+        "row4col1": "Mampatkan, gabungkan, strim, sandaran automatik",
+        "row4col2": "Full-text grep, tags, covers, Wi-Fi sync",
+        "row5Label": "Format",
+        "row5col1": "CBZ, CBR, PDF, EPUB, TXT",
+        "row5col2": "EPUB, TXT"
+      },
+      "pricing": {
+        "eyebrow": "Harga",
+        "title": "Percuma untuk mencari. Pro untuk memiliki.",
+        "freeTitle": "Percuma",
+        "freeDesc": "Search and discover your library forever.",
+        "proTitle": "Pro",
+        "proDesc": "One-time purchase unlocks everything, forever.",
+        "proMonthly": "$0.99 / month",
+        "proYearly": "$4.99 / year",
+        "proLifetime": "$14.99 one-time",
+        "proTrial": "7-day free trial on monthly & yearly",
+        "appStoreCta": "Try Free on App Store",
+        "approvalNote": "Aplikasi sedang menunggu kelulusan App Store — akan tersedia tidak lama lagi."
+      },
+      "seo": {
+        "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
+        "desc": "Full-text grep for EPUB and TXT on iPhone and Mac. Boolean keyword profiles, genre tags, Wi-Fi sync, and TXT covers. Free to try — no server, no uploads."
+      },
+      "faq": [
+        {
+          "q": "Apakah GrepTag Reader?",
+          "a": "GrepTag Reader ialah aplikasi carian teks penuh dan penandaan untuk koleksi ebook EPUB dan TXT di iPhone, iPad, Mac dan Windows. Ia membolehkan anda mencari seluruh perpustakaan untuk mana-mana kata kunci menggunakan logik boolean AND / OR / NOT, menandai buku mengikut genre dan menyegerakkan perpustakaan melalui Wi-Fi tempatan — tanpa memuat naik fail ke mana-mana pelayan."
+        },
+        {
+          "q": "Apakah perbezaan antara GrepTag Reader dan BiblioFuse Reader?",
+          "a": "BiblioFuse Reader dibina untuk fail komik besar (CBZ, CBR, PDF) yang kaya dengan imej. Ia menjanakan aliran dari Mac, memampatkan arkib dan menyokong pembacaan gaya webtoon/manga. GrepTag Reader dibina untuk perpustakaan teks EPUB dan TXT — menawarkan carian grep teks penuh, tag genre dan penyegerakan Wi-Fi ke mana-mana arah. Keduanya adalah aplikasi berasingan kerana model storan yang berbeza asasnya: komik memerlukan penstriman, novel muat sepenuhnya pada peranti."
+        },
+        {
+          "q": "Adakah carian grep teks penuh percuma?",
+          "a": "Ya. Pengimbasan grep sentiasa percuma dan tanpa had — anda boleh mencari seluruh perpustakaan EPUB dan TXT untuk mana-mana kata kunci sebanyak yang anda mahu. Simpan sehingga 2 profil carian bernama secara percuma. Pro membuka profil tanpa had."
+        },
+        {
+          "q": "Adakah GrepTag Reader memuat naik fail saya ke pelayan?",
+          "a": "Tidak. GrepTag Reader membaca terus daripada fail tempatan anda. Tiada apa yang dimuat naik ke mana-mana pelayan — tiada indeks awan, tiada backend pembangun. Fail kekal pada peranti anda."
+        },
+        {
+          "q": "Format fail apakah yang disokong GrepTag Reader?",
+          "a": "GrepTag Reader menyokong fail EPUB dan TXT. Ia boleh mencari dan menandai kedua-dua format, mengekstrak kulit EPUB secara automatik, dan memadankan kulit untuk buku TXT daripada imej dalam folder yang sama atau URL yang ditampal (ciri Pro)."
+        },
+        {
+          "q": "Berapa banyak tag yang boleh saya miliki secara percuma?",
+          "a": "Lima tag disertakan dalam peringkat percuma. Pro membuka tag tanpa had. Anda boleh menggunakan tag daripada keputusan imbasan dengan satu ketukan, atau menandai buku secara manual dan menapis mengikut berbilang tag menggunakan logik AND atau OR."
+        },
+        {
+          "q": "Bolehkah saya menyegerakkan perpustakaan antara iPhone, iPad dan Mac?",
+          "a": "Ya. Penyegerakan Wi-Fi memindahkan seluruh perpustakaan anda — buku, tag dan metadata — melalui Wi-Fi tempatan ke mana-mana arah (iPhone → iPad, Mac → iPhone, iPad → Mac). Tiada akaun iCloud atau sambungan internet diperlukan. Penyegerakan Wi-Fi ialah ciri Pro."
+        }
+      ]
+    },
+    "archivePage": {
+      "seo": {
+        "title": "Archive Duplicate Scanner — Find Duplicate Comics & Photos on Mac & Windows",
+        "desc": "Archive Duplicate Scanner finds duplicate CBZ, CBR, ZIP, RAR and photo files using perceptual hashing — even after renaming or recompression. Free up to 1,000 files, $19.99 one-time Pro."
+      },
+      "hero": {
+        "badge": "Mac & Windows",
+        "title": "Find duplicates. Even after renaming.",
+        "desc": "Archive Duplicate Scanner opens your comic archives and compares the images inside — not just filenames or file sizes. A duplicate is a duplicate, no matter how many times it has been renamed or recompressed.",
+        "trust1": "No cloud upload",
+        "trust2": "Safe Trash deletion",
+        "trust3": "7-day free trial",
+        "macStore": "Download on Mac App Store",
+        "winStore": "Get it from Microsoft Store"
+      },
+      "scanning": {
+        "eyebrow": "Deep Archive Scanning",
+        "title": "Opens archives and compares pages inside",
+        "desc": "Most duplicate finders compare file names or sizes. Archive Duplicate Scanner opens each CBZ, CBR, ZIP, or RAR file, extracts thumbnails from the actual pages inside, and compares them using perceptual hashing. Two archives with completely different names and file sizes are still caught if their content matches.",
+        "bullet1": "Supports CBZ, CBR, ZIP, and RAR comic archives",
+        "bullet2": "Configurable similarity threshold — 90% recommended",
+        "bullet3": "Hash cache makes repeat scans near-instant",
+        "badge": "Works with manga, manhwa, and manhua"
+      },
+      "photos": {
+        "eyebrow": "Photos & Filename Matching",
+        "title": "Photos and fuzzy filenames — both covered",
+        "desc": "Beyond archives, detect duplicate JPG, PNG, HEIC, WEBP, BMP, and GIF photos using the dHash algorithm. Filename Fuzzy Matching catches copies that differ only in formatting — \"Spider-Man #001\" vs \"Spider Man 001\" — using RapidFuzz with a configurable threshold.",
+        "bullet1": "Photo formats: JPG, PNG, HEIC, WEBP, BMP, GIF",
+        "bullet2": "RapidFuzz algorithm with configurable symbol-stripping",
+        "bullet3": "Unicode-aware — works with Japanese, Korean, Chinese and any character set"
+      },
+      "autoselect": {
+        "eyebrow": "Smart Auto-Select",
+        "title": "One click marks the right file to keep",
+        "desc": "Set a rule — keep the Largest, Smallest, Newest, Oldest, or file with the Most Pages — and Auto-Select marks every duplicate in one click. Review the results before anything is touched. Nothing moves until you confirm.",
+        "bullet1": "Five rules: Largest, Smallest, Newest, Oldest, Most Pages",
+        "bullet2": "Last-copy safety warning prevents accidental total deletion",
+        "bullet3": "Permanent ignore list for intentional variant pairs",
+        "badge": "Files moved to Trash — recoverable any time"
+      },
+      "export": {
+        "eyebrow": "Reports & Multi-Folder",
+        "title": "Export results, compare across folders",
+        "desc": "Export your scan as a CSV for spreadsheets or as a full HTML report with thumbnails, similarity scores, and sortable columns. Multi-Folder mode compares two separate folders — useful for finding duplicates between your organised library and a Downloads folder.",
+        "bullet1": "HTML report with embedded thumbnails and statistics",
+        "bullet2": "CSV export for spreadsheets and archiving",
+        "bullet3": "Multi-folder comparison: Folder A vs Folder B"
+      },
+      "pricing": {
+        "eyebrow": "Simple Pricing",
+        "title": "Free forever. Unlock Pro when you need it.",
+        "freeTitle": "Free",
+        "proTitle": "Pro — $19.99",
+        "trial": "7-day free trial available on Mac App Store",
+        "feat1": "Archive scanning (CBZ/CBR/ZIP/RAR)",
+        "feat1free": "Up to 1,000 files",
+        "feat1pro": "Unlimited",
+        "feat2": "Photo duplicate detection",
+        "feat2free": "Up to 1,000 files",
+        "feat2pro": "Unlimited",
+        "feat3": "Filename fuzzy matching",
+        "feat3free": "Up to 1,000 files",
+        "feat3pro": "Unlimited",
+        "feat4": "Smart Auto-Select",
+        "feat5": "Export reports (CSV & HTML)",
+        "feat6": "Multi-folder comparison",
+        "feat7": "Hash cache (fast rescans)",
+        "feat8": "Permanent ignore list"
+      },
+      "faqTitle": "Frequently Asked Questions",
+      "faq": [
+        {
+          "q": "What is perceptual hashing and why does it matter?",
+          "a": "Perceptual hashing compares the visual structure of images rather than raw file bytes. Two files can have different names, sizes, and metadata — but if their content looks the same, perceptual hashing matches them. Standard duplicate finders fail the moment a file is renamed or re-exported; Archive Duplicate Scanner does not."
+        },
+        {
+          "q": "Can it find duplicates that have been renamed?",
+          "a": "Yes. Renaming a file changes nothing about its content. Archive Duplicate Scanner compares the images inside each archive, so a duplicate is detected regardless of what the file is called."
+        },
+        {
+          "q": "Is deletion permanent?",
+          "a": "No. Marked files are moved to the system Trash (macOS) or Recycle Bin (Windows), not permanently deleted. You can recover any file before emptying the Trash."
+        },
+        {
+          "q": "Which file formats are supported?",
+          "a": "Comic archives: CBZ, CBR, ZIP, RAR. Photos: JPG, PNG, HEIC, WEBP, BMP, GIF. Filename fuzzy matching works with any file type."
+        },
+        {
+          "q": "Does it work with photos, not just comics?",
+          "a": "Yes. Select Photos mode to scan JPG, PNG, HEIC, WEBP, BMP, and GIF files. It works with iPhone photo library exports, scanned documents, and digital art collections."
+        },
+        {
+          "q": "Is there a trial before I buy?",
+          "a": "You can scan up to 1,000 files for free, forever. A 7-day free trial on Mac App Store unlocks unlimited access, and the one-time Pro purchase is $19.99 with no subscription."
+        }
+      ],
+      "backDesc": "Looking for a comic and ebook reader?",
+      "backCta": "Back to BiblioFuse Reader"
+    },
+    "smartdecryptPage": {
+      "seo": {
+        "title": "SmartDecrypt — Auto-Unlock Password-Protected PDFs and Archives",
+        "desc": "SmartDecrypt unlocks PDF, ZIP, and 7z files using saved filename patterns. Drop the file — it finds the right password automatically. Free for one file at a time, $9.99 Pro unlocks batch processing on iOS and macOS."
+      },
+      "hero": {
+        "badge": "iOS · macOS · Windows",
+        "title": "Drop the file. It unlocks itself.",
+        "desc": "SmartDecrypt matches your files to saved password profiles by filename pattern — so unlocking a bank statement or invoice never requires hunting for the right password again.",
+        "trust1": "Passwords in system Keychain",
+        "trust2": "Files never leave your device",
+        "trust3": "Universal iOS + macOS purchase",
+        "appStore": "Download on App Store",
+        "winStore": "Get it from Microsoft Store"
+      },
+      "patterns": {
+        "eyebrow": "Pattern-Based Auto-Unlock",
+        "title": "Save once, unlock forever",
+        "desc": "Create a saved profile for any recurring file — match by filename pattern, keyword, or extension. The next time that file arrives, SmartDecrypt picks the right password automatically. No hunting, no guessing.",
+        "bullet1": "Match by filename pattern, keyword, or file extension",
+        "bullet2": "Multiple profiles for different file sources (bank, payroll, invoices)",
+        "bullet3": "Auto password cycling tries all matching profiles in sequence",
+        "badge": "Designed for recurring files with repeatable passwords"
+      },
+      "formats": {
+        "eyebrow": "Formats Supported",
+        "title": "PDF, ZIP, and 7z — all three",
+        "desc": "Unlock password-protected PDFs, extract ZIP archives, and open 7z files — including unencrypted archives which are extracted normally without asking for a password.",
+        "bullet1": "PDF — unlock and keep the full document intact",
+        "bullet2": "ZIP & 7z — extract contents with or without password",
+        "bullet3": "Unencrypted archives extracted automatically — no prompt needed"
+      },
+      "mobile": {
+        "eyebrow": "iOS Share Sheet & Keychain",
+        "title": "Receive files from anywhere. Passwords stay private.",
+        "desc": "On iPhone and iPad, open files directly in SmartDecrypt or send them through the iOS Share Sheet from Files, Mail, or any other app. Passwords are stored exclusively in the system Keychain — never in a database, never on a server.",
+        "bullet1": "iOS Share Sheet — send files from Files, Mail, Safari, and more",
+        "bullet2": "Passwords stored in Apple Keychain, not in the app",
+        "bullet3": "Files processed locally — nothing uploaded"
+      },
+      "pricing": {
+        "eyebrow": "Simple Pricing",
+        "title": "Free for one file. Pro unlocks batch.",
+        "freeTitle": "Free",
+        "proTitle": "Pro — $9.99",
+        "universalNote": "One-time universal purchase — unlocks Pro on both iOS and macOS",
+        "feat1": "Unlock PDF, ZIP, 7z",
+        "feat1free": "One file at a time",
+        "feat1pro": "Batch loading",
+        "feat2": "Saved password patterns",
+        "feat2free": "3 profiles",
+        "feat2pro": "Unlimited profiles",
+        "feat3": "Auto password cycling",
+        "feat4": "iOS Share Sheet",
+        "feat5": "System Keychain storage",
+        "feat6": "macOS drag & drop"
+      },
+      "faqTitle": "Frequently Asked Questions",
+      "faq": [
+        {
+          "q": "What file formats does SmartDecrypt support?",
+          "a": "PDF, ZIP, and 7z. Unencrypted ZIP and 7z archives are extracted normally without asking for a password. SmartDecrypt does not currently support RAR, EPUB, or other formats."
+        },
+        {
+          "q": "Does SmartDecrypt bypass unknown passwords?",
+          "a": "No. SmartDecrypt is designed for files you already have permission to access. It uses passwords you have saved in a profile — it does not crack or brute-force unknown passwords."
+        },
+        {
+          "q": "Are my passwords safe?",
+          "a": "Yes. Passwords are stored exclusively in the system Keychain on your device — the same secure storage used by Safari and your other apps. SmartDecrypt never stores passwords in its own database, and nothing is uploaded to any server."
+        },
+        {
+          "q": "What is a filename pattern?",
+          "a": "A filename pattern is a partial name or keyword that identifies recurring files. For example, if your bank sends monthly statements named 'BankStatement_2024-01.pdf', create a profile with the pattern 'BankStatement' and the password. SmartDecrypt matches future files to that profile automatically."
+        },
+        {
+          "q": "Is the Pro purchase shared between iPhone and Mac?",
+          "a": "Yes. SmartDecrypt Pro is a one-time universal purchase. Buy once on either iOS or macOS and unlock Pro on both platforms using the same Apple ID."
+        }
+      ],
+      "backDesc": "Looking for a comic and ebook reader?",
+      "backCta": "Back to BiblioFuse Reader"
+    },
+    "contentcuePage": {
+      "seo": {
+        "title": "ContentCue — Reading Browser That Never Loses Your Place",
+        "desc": "ContentCue is a mobile browser for iPhone and iPad that automatically saves your scroll position when ads interrupt your reading. One tap resumes exactly where you left off. Not an ad blocker — all ads still load."
+      },
+      "hero": {
+        "badge": "iPhone & iPad",
+        "title": "Read. Get interrupted. Resume exactly where you left off.",
+        "desc": "ContentCue saves your scroll position when a popup or redirect breaks your reading flow. One tap brings you back to the exact spot, on any site — Webtoons, Tapas, manga aggregators, blogs.",
+        "trust1": "Not an ad blocker",
+        "trust2": "No browsing data collected",
+        "trust3": "Works with any website",
+        "appStore": "Download on App Store"
+      },
+      "how": {
+        "eyebrow": "How It Works",
+        "title": "Three steps. No setup needed.",
+        "step1title": "Browse normally",
+        "step1desc": "Open any website in ContentCue and read as usual. No per-site setup. No accounts.",
+        "step2title": "Ad interrupts",
+        "step2desc": "A popup or redirect takes you away. ContentCue auto-saves your exact scroll position before it happens.",
+        "step3title": "Tap Resume",
+        "step3desc": "The Resume button appears. One tap returns you to the exact line you were reading."
+      },
+      "restore": {
+        "eyebrow": "Position Restore",
+        "title": "One tap. Back to your exact place.",
+        "desc": "ContentCue watches for page interruptions — popups, redirect banners, accidental taps on ads — and auto-saves your scroll position. A Resume button appears when your position is saved. Tap it once and you're back where you were.",
+        "bullet1": "Automatic position save on every navigation away",
+        "bullet2": "Resume button visible any time your position is saved",
+        "bullet3": "Works on all content sites — no per-site configuration needed"
+      },
+      "visual": {
+        "eyebrow": "Visual Ad Distinction",
+        "title": "See what's content and what's an ad",
+        "desc": "ContentCue draws colored borders around in-page ads so you can instantly distinguish them from the content you're reading. This is not ad blocking — all ads still load and display normally. It's just visual clarity.",
+        "bullet1": "Colored borders highlight in-page ads",
+        "bullet2": "All ads still load and display normally",
+        "bullet3": "Customize border color with Pro",
+        "badge": "All ads display normally — we just help you see them"
+      },
+      "extras": {
+        "eyebrow": "Audio & Bookmarks",
+        "title": "Mute autoplay. Save your favourites.",
+        "desc": "Toggle audio mute to silence autoplay video ads while reading in public. Bookmark up to 3 sites free, or upgrade to Pro for unlimited bookmarks and adjustable auto-scroll speed for webtoons and manga.",
+        "bullet1": "Audio mute — silence all website audio with one tap",
+        "bullet2": "Bookmarks — 3 free, unlimited with Pro",
+        "bullet3": "Adjustable auto-scroll speed for long-form content (Pro)"
+      },
+      "pricing": {
+        "eyebrow": "Simple Pricing",
+        "title": "Free forever. Pro for power readers.",
+        "freeTitle": "Free",
+        "proTitle": "Pro — $2.99",
+        "feat1": "Position restore",
+        "feat2": "Visual ad distinction",
+        "feat3": "Audio mute",
+        "feat4": "Bookmarks",
+        "feat4free": "3",
+        "feat4pro": "Unlimited",
+        "feat5": "Custom ad border color",
+        "feat6": "Adjustable auto-scroll"
+      },
+      "faqTitle": "Frequently Asked Questions",
+      "faq": [
+        {
+          "q": "Is ContentCue an ad blocker?",
+          "a": "No. ContentCue does not block, hide, or prevent ads from loading. All advertisements display normally. ContentCue improves navigation by saving your scroll position when ads interrupt your reading, and it draws colored borders around in-page ads so you can see them clearly."
+        },
+        {
+          "q": "Which sites does ContentCue work with?",
+          "a": "ContentCue is a full web browser, so it works with any website — Webtoons, Tapas, LINE Webtoon, independent creator pages, manga aggregators, WordPress blogs, and thousands more. No per-site setup is needed."
+        },
+        {
+          "q": "How does position restore work?",
+          "a": "ContentCue monitors your scroll position while you read. When you navigate away (tapping an ad link, a redirect, or the back button), it saves your exact position. A Resume button appears in the browser UI. Tap it to return to exactly where you were."
+        },
+        {
+          "q": "Does ContentCue collect my browsing data?",
+          "a": "No. ContentCue processes all browsing entirely on your device using Apple WebKit. No browsing history, visited URLs, or personal data is collected or transmitted anywhere."
+        },
+        {
+          "q": "What does the Pro upgrade include?",
+          "a": "Pro is a one-time $2.99 purchase. It unlocks unlimited bookmarks, custom ad border colors, and adjustable auto-scroll speed. There is no subscription — pay once, use forever."
+        }
+      ],
+      "backDesc": "Looking for a comic and ebook reader?",
+      "backCta": "Back to BiblioFuse Reader"
     }
   }
 }

@@ -12,10 +12,22 @@ const ARTICLE_SLUGS = ['airdrop-books-to-iphone', 'change-reading-direction-comi
 const ROUTES = [
     { path: '/', priority: '1.0', changefreq: 'weekly' },
     { path: '/webapp/', priority: '0.8', changefreq: 'monthly' },
+    { path: '/grepreader/', priority: '0.8', changefreq: 'monthly' },
+    { path: '/archive/', priority: '0.8', changefreq: 'monthly' },
+    { path: '/smartdecrypt/', priority: '0.8', changefreq: 'monthly' },
+    { path: '/contentcue/', priority: '0.8', changefreq: 'monthly' },
     { path: '/about/', priority: '0.6', changefreq: 'monthly' },
     { path: '/privacy/', priority: '0.4', changefreq: 'yearly' },
     { path: '/blog/', priority: '0.7', changefreq: 'weekly' },
     { path: '/changelog/', priority: '0.6', changefreq: 'monthly' },
+    { path: '/archive/changelog/', priority: '0.5', changefreq: 'monthly' },
+    { path: '/archive/privacy/', priority: '0.4', changefreq: 'yearly' },
+    { path: '/smartdecrypt/changelog/', priority: '0.5', changefreq: 'monthly' },
+    { path: '/smartdecrypt/privacy/', priority: '0.4', changefreq: 'yearly' },
+    { path: '/contentcue/changelog/', priority: '0.5', changefreq: 'monthly' },
+    { path: '/contentcue/privacy/', priority: '0.4', changefreq: 'yearly' },
+    { path: '/grepreader/changelog/', priority: '0.5', changefreq: 'monthly' },
+    { path: '/grepreader/privacy/', priority: '0.4', changefreq: 'yearly' },
     ...ARTICLE_SLUGS.map(s => ({ path: `/blog/${s}/`, priority: '0.6', changefreq: 'monthly' })),
 ];
 

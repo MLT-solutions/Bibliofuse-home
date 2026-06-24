@@ -38,11 +38,12 @@ const Navigation = () => {
         { id: 'changelog', label: t('nav.changelog'), path: '/changelog' },
     ];
     const tools = [
-        { name: 'BiblioFuse Reader', sub: t('redesign.tools.readerSub'), path: '/', hash: '#reader', color: 'blue', icon: 'book' },
-        { name: 'BiblioFuse Web Tool', sub: t('redesign.tools.webSub'), path: '/webapp', color: 'teal', icon: 'globe' },
-        { name: 'Archive Duplicate Scanner', sub: t('redesign.tools.archiveSub'), path: '/', hash: '#archive', color: 'orange', icon: 'search' },
-        { name: 'SmartDecrypt PDF ZIP', sub: t('redesign.tools.smartSub'), path: '/', hash: '#smartdecrypt', color: 'violet', icon: 'lock' },
-        { name: 'ContentCue', sub: t('redesign.tools.contentcueSub'), path: '/', hash: '#contentcue', color: 'green', icon: 'browser' },
+        { name: 'BiblioFuse Reader', sub: t('redesign.tools.readerSub'), path: '/', hash: '#reader', logo: '/image/bibliofuse-logo.png', logoZoom: 1.5 },
+        { name: 'BiblioFuse Web Tool', sub: t('redesign.tools.webSub'), path: '/webapp', logo: '/image/webtool-logo.png' },
+        { name: 'GrepTag Reader', sub: t('redesign.tools.grepSub'), path: '/grepreader', logo: '/image/grepreader-logo.png', logoZoom: 1.3 },
+        { name: 'Archive Duplicate Scanner', sub: t('redesign.tools.archiveSub'), path: '/archive', logo: '/image/archive-logo.png', logoZoom: 1.15 },
+        { name: 'SmartDecrypt PDF ZIP', sub: t('redesign.tools.smartSub'), path: '/smartdecrypt', logo: '/image/smartdecrypt-logo.png' },
+        { name: 'ContentCue', sub: t('redesign.tools.contentcueSub'), path: '/contentcue', logo: '/image/contentcue-logo.png', logoZoom: 1.15 },
     ];
 
     const toggleLangMenu = () => setIsLangOpen(!isLangOpen);
@@ -149,8 +150,8 @@ const Navigation = () => {
                                                         onClick={() => setIsToolsOpen(false)}
                                                         className="group flex items-start gap-3 rounded-xl p-3 transition hover:bg-slate-50"
                                                     >
-                                                        <span className={`grid h-9 w-9 shrink-0 place-items-center rounded-lg ${toolIconClass(tool.color)}`}>
-                                                            <ToolIcon kind={tool.icon} />
+                                                        <span className="h-9 w-9 shrink-0 rounded-lg overflow-hidden shadow-sm block flex-none">
+                                                            <img src={tool.logo} alt={tool.name} className="h-full w-full object-cover" style={tool.logoZoom ? { transform: `scale(${tool.logoZoom})`, transformOrigin: 'center' } : undefined} />
                                                         </span>
                                                         <span className="min-w-0 flex-1">
                                                             <span className="block text-sm font-bold leading-tight text-slate-950">{tool.name}</span>

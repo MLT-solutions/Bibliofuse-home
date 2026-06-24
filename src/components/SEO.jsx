@@ -38,8 +38,10 @@ const SEO = ({
     imageHeight,
     datePublished,
     author,
-    faqItems,       // [{ q, a }] — plain text only
-    breadcrumbs,    // [{ name, url }]
+    faqItems,         // [{ q, a }] — plain text only
+    howToSchema,      // pre-built HowTo JSON-LD object
+    breadcrumbs,      // [{ name, url }]
+    additionalSchemas, // [JSON-LD object] — extra schemas rendered after primary
 }) => {
     const { i18n, t } = useTranslation();
     const { lang } = useParams();
@@ -195,12 +197,26 @@ const SEO = ({
                 </script>
             )}
 
+            {/* HowTo schema (blog articles with numbered steps) */}
+            {howToSchema && (
+                <script type="application/ld+json">
+                    {JSON.stringify(howToSchema)}
+                </script>
+            )}
+
             {/* BreadcrumbList schema */}
             {breadcrumbSchema && (
                 <script type="application/ld+json">
                     {JSON.stringify(breadcrumbSchema)}
                 </script>
             )}
+
+            {/* Additional schemas */}
+            {additionalSchemas && additionalSchemas.map((schema, i) => (
+                <script key={`extra-${i}`} type="application/ld+json">
+                    {JSON.stringify(schema)}
+                </script>
+            ))}
         </Helmet>
     );
 };
