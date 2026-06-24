@@ -23,11 +23,11 @@ The site:
 
 ### Repos on Mac
 
-| Platform | Path |
-|----------|------|
-| iOS / iPadOS / macOS (native Swift) | `~/GitHub/bibliofuse_iosv2` |
-| Android / cross-platform (Flutter, older) | `~/GitHub/bibliofuse-flutter` |
-| Windows | `~/GitHub/bibliofuse-windows` |
+| Platform | Path | GitHub |
+|----------|------|--------|
+| iOS / iPadOS / macOS (native Swift) | `~/GitHub/bibliofuse_iosv2` | — |
+| Android / cross-platform (Flutter, older) | `~/GitHub/bibliofuse-flutter` | — |
+| Windows | `~/GitHub/bibliofuse-windows` | https://github.com/MLT-solutions/bibliofuse-windows |
 
 ### Store Links
 
@@ -178,9 +178,12 @@ Stored on NAS only — **not in a cloud/GitHub repo**.
 
 **Homepage section anchor:** *(not yet a dedicated section — listed in ProductFamily if added)*
 
-### Repo on Mac
+### Repos on Mac
 
-`~/GitHub/bibliofusegreptagreader`
+| Platform | Path | GitHub |
+|----------|------|--------|
+| iOS / iPadOS / macOS | `~/GitHub/bibliofusegreptagreader` | https://github.com/MLT-solutions/bibliofusegreptagreader |
+| Windows | *(not yet cloned locally)* | https://github.com/MLT-solutions/bibliofusgreptag-windows |
 
 ### Store Links
 
