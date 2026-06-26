@@ -3,7 +3,8 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 
-const grepTagAppStoreUrl = 'https://apps.apple.com/app/id6779977609';
+const grepTagAppStoreUrl = 'https://apps.apple.com/app/bibliofuse-grep-tag-reader/id6779977609';
+const grepTagMsStoreUrl = 'https://apps.microsoft.com/store/detail/9MT6VDXXZ3RH';
 
 function CheckGreen() {
   return (
@@ -133,11 +134,26 @@ const GrepTagReader = () => {
             {t('redesign.grepTagPage.hero.desc')}
           </p>
 
-          <div className="flex flex-col items-center gap-2">
-            <div className="inline-flex cursor-not-allowed items-center gap-2 rounded-xl bg-white/20 px-6 py-3 opacity-50 grayscale">
-              <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt={t('redesign.grepTagPage.hero.appStoreCta')} className="h-8 w-auto" />
+          <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-wrap justify-center gap-3">
+              <a
+                href={grepTagAppStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl bg-white/90 px-5 py-2.5 shadow-lg transition hover:bg-white"
+              >
+                <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt={t('redesign.grepTagPage.hero.appStoreCta')} className="h-8 w-auto" />
+              </a>
+              <a
+                href={grepTagMsStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl bg-white/90 px-5 py-2.5 shadow-lg transition hover:bg-white"
+              >
+                <img src="/image/Microsoft_Store_badge.svg" alt={t('redesign.grepTagPage.hero.msStoreCta')} className="h-8 w-auto" />
+              </a>
             </div>
-            <span className="text-xs font-medium text-indigo-300">{t('redesign.grepTagPage.hero.comingSoon')}</span>
+            <span className="text-xs font-medium text-indigo-300">{t('redesign.grepTagPage.hero.macInReview')}</span>
           </div>
 
           <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-medium text-indigo-300">

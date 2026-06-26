@@ -597,7 +597,7 @@
           "bullet1Body": "必要に応じてフォルダなしで整理。",
           "bullet2Title": "読書の進捗",
           "bullet2Body": "各書籍が中断箇所を記憶。",
-          "bullet3Title": "iCloudクロスデバイス",
+          "bullet3Title": "iCloud クロスデバイス",
           "bullet3Body": "iPad で中断した箇所を iPhone で再開。",
           "imageAlt": "タグ、評価、読書進捗のある BiblioFuse ライブラリ"
         },
@@ -609,7 +609,7 @@
           "bullet1Body": "EPUB と TXT のハンズフリーナレーション。",
           "bullet2Title": "自動スクロール",
           "bullet2Body": "ページ送りまたは連続、画像アーカイブ向けに調整。",
-          "bullet3Title": "Peekズーム",
+          "bullet3Title": "ピークズーム",
           "bullet3Body": "ダブルタップで密集パネルと小さな文字を拡大。",
           "imageAlt": "TTS、自動スクロール、ピークズーム付き BiblioFuse 読書ビュー"
         },
@@ -1144,7 +1144,9 @@
         "trust1": "無料grepスキャン——無制限",
         "trust2": "サーバーなし、アップロードなし",
         "trust3": "CJKテキスト対応",
-        "comingSoon": "まもなく公開 — App Store審査待ち"
+        "comingSoon": "まもなく公開 — App Store審査待ち",
+        "msStoreCta": "Get it from Microsoft",
+        "macInReview": "iOS available now · macOS in review"
       },
       "grep": {
         "eyebrow": "Grepとプロフィール",

@@ -597,7 +597,7 @@
           "bullet1Body": "organize sem pastas se preferir.",
           "bullet2Title": "Progresso de leitura",
           "bullet2Body": "cada livro lembra onde parou.",
-          "bullet3Title": "iCloud em vários dispositivos",
+          "bullet3Title": "iCloud entre dispositivos",
           "bullet3Body": "continue no iPhone onde parou no iPad.",
           "imageAlt": "Biblioteca BiblioFuse com etiquetas, avaliações e progresso de leitura"
         },
@@ -607,7 +607,7 @@
           "desc": "Um leitor sem distrações com os controlos que importam para sessões longas. Texto para voz para EPUB e TXT. Scroll automático para banda desenhada e webtoons. Peek zoom para inspecionar um painel sem perder o lugar.",
           "bullet1Title": "Texto para voz",
           "bullet1Body": "narração mãos-livres para EPUB e TXT.",
-          "bullet2Title": "Deslocamento automático",
+          "bullet2Title": "Scroll automático",
           "bullet2Body": "paginado ou contínuo, afinado para arquivos de imagem.",
           "bullet3Title": "Peek zoom",
           "bullet3Body": "toque duplo para inspecionar painéis densos e texto pequeno.",
@@ -1144,7 +1144,9 @@
         "trust1": "Pesquisa grep gratuita — ilimitada",
         "trust2": "Sem servidor, sem envios",
         "trust3": "Texto CJK suportado",
-        "comingSoon": "Em breve — a aguardar aprovação na App Store"
+        "comingSoon": "Em breve — a aguardar aprovação na App Store",
+        "msStoreCta": "Get it from Microsoft",
+        "macInReview": "iOS available now · macOS in review"
       },
       "grep": {
         "eyebrow": "Grep e Perfis",

@@ -1144,7 +1144,9 @@
         "trust1": "Recherche grep gratuite — illimitée",
         "trust2": "Sans serveur, sans envoi",
         "trust3": "Texte CJK pris en charge",
-        "comingSoon": "Bientôt disponible — en attente d'approbation App Store"
+        "comingSoon": "Bientôt disponible — en attente d'approbation App Store",
+        "msStoreCta": "Get it from Microsoft",
+        "macInReview": "iOS available now · macOS in review"
       },
       "grep": {
         "eyebrow": "Grep et Profils",

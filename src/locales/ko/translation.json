@@ -597,7 +597,7 @@
           "bullet1Body": "원하는 경우 폴더 없이 정리.",
           "bullet2Title": "읽기 진행률",
           "bullet2Body": "각 책이 중단 위치를 기억.",
-          "bullet3Title": "iCloud 다기기",
+          "bullet3Title": "iCloud 크로스 디바이스",
           "bullet3Body": "iPad에서 중단한 곳을 iPhone에서 이어서.",
           "imageAlt": "태그, 평점, 읽기 진행률이 있는 BiblioFuse 라이브러리"
         },
@@ -609,7 +609,7 @@
           "bullet1Body": "EPUB 및 TXT용 핸즈프리 내레이션.",
           "bullet2Title": "자동 스크롤",
           "bullet2Body": "페이지 또는 연속, 이미지 아카이브에 맞게 조정.",
-          "bullet3Title": "Peek 줌",
+          "bullet3Title": "픽 줌",
           "bullet3Body": "밀집된 패널과 작은 텍스트를 더블 탭으로 확대.",
           "imageAlt": "TTS, 자동 스크롤, 픽 줌이 있는 BiblioFuse 읽기 화면"
         },
@@ -1144,7 +1144,9 @@
         "trust1": "무료 grep 검색——무제한",
         "trust2": "서버 없음, 업로드 없음",
         "trust3": "CJK 텍스트 지원",
-        "comingSoon": "출시 예정 — App Store 승인 대기 중"
+        "comingSoon": "출시 예정 — App Store 승인 대기 중",
+        "msStoreCta": "Get it from Microsoft",
+        "macInReview": "iOS available now · macOS in review"
       },
       "grep": {
         "eyebrow": "Grep 및 프로필",

@@ -1144,7 +1144,9 @@
         "trust1": "Pemindaian grep gratis——tanpa batas",
         "trust2": "Tanpa server, tanpa unggahan",
         "trust3": "Teks CJK didukung",
-        "comingSoon": "Segera hadir — menunggu persetujuan App Store"
+        "comingSoon": "Segera hadir — menunggu persetujuan App Store",
+        "msStoreCta": "Get it from Microsoft",
+        "macInReview": "iOS available now · macOS in review"
       },
       "grep": {
         "eyebrow": "Grep dan Profil",

@@ -597,7 +597,7 @@
           "bullet1Body": "无需文件夹即可整理。",
           "bullet2Title": "阅读进度",
           "bullet2Body": "每本书都会记住你读到哪了。",
-          "bullet3Title": "iCloud跨设备",
+          "bullet3Title": "iCloud 跨设备",
           "bullet3Body": "在 iPhone 上从 iPad 停下的地方继续。",
           "imageAlt": "BiblioFuse 图书馆，包含标签、评分和阅读进度"
         },
@@ -609,7 +609,7 @@
           "bullet1Body": "EPUB 和 TXT 的免提朗读。",
           "bullet2Title": "自动滚动",
           "bullet2Body": "分页或连续，针对图像存档进行了优化。",
-          "bullet3Title": "Peek缩放",
+          "bullet3Title": "Peek Zoom",
           "bullet3Body": "双击查看密集面板和小号文字。",
           "imageAlt": "BiblioFuse 阅读视图，包含 TTS、自动滚动和 Peek Zoom"
         },
@@ -1144,7 +1144,9 @@
         "trust1": "免费grep搜索——无限次",
         "trust2": "无服务器，无上传",
         "trust3": "支持中日韩文字",
-        "comingSoon": "即将推出——等待 App Store 审核"
+        "comingSoon": "即将推出——等待 App Store 审核",
+        "msStoreCta": "Get it from Microsoft",
+        "macInReview": "iOS available now · macOS in review"
       },
       "grep": {
         "eyebrow": "Grep与配置文件",

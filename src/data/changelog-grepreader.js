@@ -3,7 +3,7 @@
 // released: true = live in store, false = pending / unreleased
 
 export const ENTRIES = [
-  // ── Windows — initial build (not yet submitted) ──────────────────────────
+  // ── Windows — initial build (submitted to Microsoft Store) ──────────────
   {
     date: '2026-06-25',
     version: '1.0.0',
@@ -38,13 +38,13 @@ export const ENTRIES = [
     },
   },
 
-  // ── Build 8 — unreleased (in-review / pending) ──────────────────────────
+  // ── Build 8 — released (iOS live; macOS in review) ───────────────────────
   {
     date: '2026-06-24',
     version: '1.0.0',
     platform: 'ios',
     type: 'release',
-    released: false,
+    released: true,
     title: {
       en: 'Build 8 — TTS Now Playing & chapter continuity',
       es: 'Build 8 — TTS Ahora reproduciendo y continuidad de capítulos',

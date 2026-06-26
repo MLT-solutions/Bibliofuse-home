@@ -1136,10 +1136,12 @@
         "title": "Search. Tag. Own your library.",
         "desc": "BiblioFuse GrepTag Reader is a full-text search and tagging toolkit for EPUB and TXT collections. Your files stay on your device — no cloud index, no uploads.",
         "appStoreCta": "Download on App Store",
+        "msStoreCta": "Get it from Microsoft",
         "trust1": "Free grep scan — unlimited",
         "trust2": "No server, no uploads",
         "trust3": "CJK text supported",
-        "comingSoon": "Coming soon — awaiting App Store approval"
+        "comingSoon": "Coming soon — awaiting App Store approval",
+        "macInReview": "iOS available now · macOS in review"
       },
       "grep": {
         "eyebrow": "Grep & Profiles",

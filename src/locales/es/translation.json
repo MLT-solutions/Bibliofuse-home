@@ -607,7 +607,7 @@
           "desc": "Un lector sin distracciones con los controles que importan para sesiones largas. Texto a voz para EPUB y TXT. Auto-desplazamiento para cómics y webtoons. Peek zoom para inspeccionar un panel sin perder tu lugar.",
           "bullet1Title": "Texto a voz",
           "bullet1Body": "narración manos libres para EPUB y TXT.",
-          "bullet2Title": "Desplazamiento automático",
+          "bullet2Title": "Auto-desplazamiento",
           "bullet2Body": "paginado o continuo, ajustado para archivos de imagen.",
           "bullet3Title": "Peek zoom",
           "bullet3Body": "doble toque para inspeccionar paneles densos y texto pequeño.",
@@ -1144,7 +1144,9 @@
         "trust1": "Búsqueda grep gratuita — ilimitada",
         "trust2": "Sin servidor, sin subidas",
         "trust3": "Compatible con texto CJK",
-        "comingSoon": "Próximamente — pendiente de aprobación en App Store"
+        "comingSoon": "Próximamente — pendiente de aprobación en App Store",
+        "msStoreCta": "Get it from Microsoft",
+        "macInReview": "iOS available now · macOS in review"
       },
       "grep": {
         "eyebrow": "Grep y Perfiles",

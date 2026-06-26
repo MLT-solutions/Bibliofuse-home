@@ -183,14 +183,15 @@ Stored on NAS only — **not in a cloud/GitHub repo**.
 | Platform | Path | GitHub |
 |----------|------|--------|
 | iOS / iPadOS / macOS | `~/GitHub/bibliofusegreptagreader` | https://github.com/MLT-solutions/bibliofusegreptagreader |
-| Windows | *(not yet cloned locally)* | https://github.com/MLT-solutions/bibliofusgreptag-windows |
+| Windows | `/Users/mattclaw/GitHub/bibliofusgreptag-windows` | https://github.com/MLT-solutions/bibliofusgreptag-windows |
 
 ### Store Links
 
 | Store | URL |
 |-------|-----|
-| Apple App Store (iOS / macOS) | https://apps.apple.com/app/id6779977609 |
-| Microsoft Store (Windows) | *(pending — not yet submitted)* |
+| Apple App Store (iOS) | https://apps.apple.com/app/bibliofuse-grep-tag-reader/id6779977609 |
+| Apple App Store (macOS) | https://apps.apple.com/app/bibliofuse-grep-tag-reader/id6779977609 *(in review)* |
+| Microsoft Store (Windows) | https://apps.microsoft.com/store/detail/9MT6VDXXZ3RH |
 
 Bundle ID: `com.mlogictech.bibliofusegreptagreader`
 

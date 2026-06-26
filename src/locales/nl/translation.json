@@ -597,7 +597,7 @@
           "bullet1Body": "organiseer zonder mappen als je dat wilt.",
           "bullet2Title": "Leesvoortgang",
           "bullet2Body": "elk boek onthoudt waar je was gebleven.",
-          "bullet3Title": "iCloud multi-apparaat",
+          "bullet3Title": "iCloud cross-device",
           "bullet3Body": "ga verder op iPhone waar je stopte op iPad.",
           "imageAlt": "BiblioFuse-bibliotheek met tags, beoordelingen en leesvoortgang"
         },
@@ -607,7 +607,7 @@
           "desc": "Een afleidingsvrije lezer met de bediening die telt voor lange sessies. Tekst-naar-spraak voor EPUB en TXT. Auto-scroll voor strips en webtoons. Peek zoom om een paneel te inspecteren zonder je plaats te verliezen.",
           "bullet1Title": "Tekst-naar-spraak",
           "bullet1Body": "handsfree vertelling voor EPUB en TXT.",
-          "bullet2Title": "Automatisch scrollen",
+          "bullet2Title": "Auto-scroll",
           "bullet2Body": "gepagineerd of doorlopend, afgestemd op beeldarchieven.",
           "bullet3Title": "Peek zoom",
           "bullet3Body": "dubbeltik om dichte panelen en kleine tekst te inspecteren.",
@@ -1144,7 +1144,9 @@
         "trust1": "Gratis grep-scan — onbeperkt",
         "trust2": "Geen server, geen uploads",
         "trust3": "CJK-tekst ondersteund",
-        "comingSoon": "Binnenkort beschikbaar — wacht op App Store-goedkeuring"
+        "comingSoon": "Binnenkort beschikbaar — wacht op App Store-goedkeuring",
+        "msStoreCta": "Get it from Microsoft",
+        "macInReview": "iOS available now · macOS in review"
       },
       "grep": {
         "eyebrow": "Grep en Profielen",

@@ -597,7 +597,7 @@
           "bullet1Body": "susun tanpa folder jika anda mahu.",
           "bullet2Title": "Kemajuan membaca",
           "bullet2Body": "setiap buku mengingati di mana anda berhenti.",
-          "bullet3Title": "iCloud pelbagai peranti",
+          "bullet3Title": "iCloud merentas peranti",
           "bullet3Body": "sambung pada iPhone dari tempat anda berhenti pada iPad.",
           "imageAlt": "Perpustakaan BiblioFuse dengan tag, penilaian dan kemajuan membaca"
         },
@@ -607,9 +607,9 @@
           "desc": "Pembaca bebas gangguan dengan kawalan yang penting untuk sesi panjang. Teks-ke-suara untuk EPUB dan TXT. Tatal auto untuk komik dan webtoon. Zum pintas untuk memeriksa panel tanpa kehilangan tempat.",
           "bullet1Title": "Teks-ke-suara",
           "bullet1Body": "narasi tanpa tangan untuk EPUB dan TXT.",
-          "bullet2Title": "Tatal automatik",
+          "bullet2Title": "Tatal auto",
           "bullet2Body": "berhalaman atau berterusan, ditala untuk arkib imej.",
-          "bullet3Title": "Peek zum",
+          "bullet3Title": "Zum pintas",
           "bullet3Body": "ketuk dua kali untuk memeriksa panel padat dan teks kecil.",
           "imageAlt": "Paparan bacaan BiblioFuse dengan TTS, tatal auto dan zum pintas"
         },
@@ -1144,7 +1144,9 @@
         "trust1": "Imbasan grep percuma——tanpa had",
         "trust2": "Tiada pelayan, tiada muat naik",
         "trust3": "Teks CJK disokong",
-        "comingSoon": "Akan datang — menunggu kelulusan App Store"
+        "comingSoon": "Akan datang — menunggu kelulusan App Store",
+        "msStoreCta": "Get it from Microsoft",
+        "macInReview": "iOS available now · macOS in review"
       },
       "grep": {
         "eyebrow": "Grep dan Profil",
