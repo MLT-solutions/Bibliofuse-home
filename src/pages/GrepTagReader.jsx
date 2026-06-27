@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
+import StickyDownloadBar from '../components/StickyDownloadBar';
 
 const grepTagAppStoreUrl = 'https://apps.apple.com/app/bibliofuse-grep-tag-reader/id6779977609';
 const grepTagMsStoreUrl = 'https://apps.microsoft.com/store/detail/9MT6VDXXZ3RH';
@@ -342,6 +343,13 @@ const GrepTagReader = () => {
           </Link>
         </div>
       </section>
+
+      <StickyDownloadBar
+        logo="/image/grepreader-logo.png"
+        appName="GrepTag Reader"
+        appStoreUrl={grepTagAppStoreUrl}
+        msStoreUrl={grepTagMsStoreUrl}
+      />
     </>
   );
 };

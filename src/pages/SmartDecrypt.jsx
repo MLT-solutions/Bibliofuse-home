@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
+import StickyDownloadBar from '../components/StickyDownloadBar';
 
 const appStoreUrl = 'https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229';
 const msStoreUrl = 'https://apps.microsoft.com/detail/9p9bfkr5zdz8';
@@ -259,6 +260,13 @@ const SmartDecrypt = () => {
           </Link>
         </div>
       </section>
+
+      <StickyDownloadBar
+        logo="/image/smartdecrypt-logo.png"
+        appName="SmartDecrypt PDF ZIP"
+        appStoreUrl={appStoreUrl}
+        msStoreUrl={msStoreUrl}
+      />
     </>
   );
 };

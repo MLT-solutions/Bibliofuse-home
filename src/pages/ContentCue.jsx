@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
+import StickyDownloadBar from '../components/StickyDownloadBar';
 
 const appStoreUrl = 'https://apps.apple.com/us/app/contentcue-reading-browser/id6770080864';
 
@@ -260,6 +261,12 @@ const ContentCue = () => {
           </Link>
         </div>
       </section>
+
+      <StickyDownloadBar
+        logo="/image/contentcue-logo.png"
+        appName="ContentCue"
+        appStoreUrl={appStoreUrl}
+      />
     </>
   );
 };

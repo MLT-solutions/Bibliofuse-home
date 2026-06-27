@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
+import StickyDownloadBar from '../components/StickyDownloadBar';
 
 const macAppStoreUrl = 'https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449';
 const msStoreUrl = 'https://apps.microsoft.com/detail/9n2jb4k5wvcq';
@@ -274,6 +275,13 @@ const ArchiveScanner = () => {
           </Link>
         </div>
       </section>
+
+      <StickyDownloadBar
+        logo="/image/archive-logo.png"
+        appName="Archive Duplicate Scanner"
+        macStoreUrl={macAppStoreUrl}
+        msStoreUrl={msStoreUrl}
+      />
     </>
   );
 };
