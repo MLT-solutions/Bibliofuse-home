@@ -33,22 +33,22 @@ export default function StickyDownloadBar({
         visible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-6 opacity-0'
       }`}
     >
-      <div className="flex max-w-[calc(100vw-2rem)] items-center gap-2 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-3 py-2.5 text-white shadow-2xl backdrop-blur-md sm:gap-3 sm:px-4">
-        <img src={logo} alt="" className="h-7 w-7 rounded-lg flex-shrink-0" />
-        <span className="hidden text-sm font-bold sm:inline whitespace-nowrap">{appName}</span>
+      <div className="flex max-w-[calc(100vw-2rem)] items-center gap-1.5 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-2.5 py-2 text-white shadow-2xl backdrop-blur-md sm:gap-3 sm:px-4 sm:py-2.5">
+        <img src={logo} alt="" className="h-6 w-6 flex-shrink-0 rounded-lg sm:h-7 sm:w-7" />
+        <span className="hidden text-sm font-bold whitespace-nowrap sm:inline">{appName}</span>
         {appStoreUrl && (
           <a href={appStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex flex-shrink-0">
-            <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt="Download on the App Store" className="h-7 w-auto" />
+            <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt="Download on the App Store" className="h-6 w-auto sm:h-7" />
           </a>
         )}
         {macStoreUrl && (
           <a href={macStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex flex-shrink-0">
-            <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt="Download on the Mac App Store" className="h-7 w-auto" />
+            <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt="Download on the Mac App Store" className="h-6 w-auto sm:h-7" />
           </a>
         )}
         {msStoreUrl && (
           <a href={msStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex flex-shrink-0">
-            <img src="/image/Microsoft_Store_badge.svg" alt="Get it from Microsoft" className="h-7 w-auto" />
+            <img src="/image/Microsoft_Store_badge.svg" alt="Get it from Microsoft" className="h-6 w-auto sm:h-7" />
           </a>
         )}
       </div>
