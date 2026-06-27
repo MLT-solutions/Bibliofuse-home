@@ -1139,9 +1139,9 @@
       "hero": {
         "badge": "iOS · macOS · Windows",
         "title": "Recherchez. Étiquetez. Maîtrisez votre bibliothèque.",
-        "desc": "BiblioFuse GrepTag Reader est un outil de recherche plein texte et d'étiquetage pour les collections EPUB et TXT. Vos fichiers restent sur votre appareil — pas d'index cloud, pas d'envoi.",
+        "desc": "BiblioFuse GrepTag Reader vous permet de rechercher dans n'importe quel fichier EPUB ou TXT — tapez un mot et trouvez chaque livre qui le contient. Classez par genre, synchronisez en Wi-Fi et gardez tous vos fichiers privés sur votre propre appareil.",
         "appStoreCta": "Download on App Store",
-        "trust1": "Recherche grep gratuite — illimitée",
+        "trust1": "Recherche gratuite dans tous vos ebooks, sans limite",
         "trust2": "Sans serveur, sans envoi",
         "trust3": "Texte CJK pris en charge",
         "comingSoon": "Disponible maintenant sur l'App Store",
@@ -1149,7 +1149,7 @@
         "macInReview": "iOS, macOS et Windows disponibles maintenant"
       },
       "grep": {
-        "eyebrow": "Grep et Profils",
+        "eyebrow": "Rechercher Dans les Livres",
         "title": "Recherchez le texte complet de chaque livre.",
         "desc": "Tapez n'importe quel mot-clé et GrepTag lit directement vos fichiers EPUB et TXT — pas d'index à construire, pas d'envoi requis. Enregistrez des recherches sous forme de profils avec la logique AND, OR et NOT et relancez-les à mesure que votre bibliothèque grandit.",
         "bullet1": "Logique booléenne — \"Sci-Fi AND dragons NOT romance\"",
@@ -1218,8 +1218,8 @@
         "approvalNote": "Disponible maintenant sur l'App Store et le Microsoft Store."
       },
       "seo": {
-        "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "Recherche grep plein texte pour EPUB et TXT sur iPhone, iPad, Mac et Windows. Profils de mots-clés booléens, tags de genre, synchronisation Wi-Fi locale, TTS, signets, couvertures EPUB et association de couvertures TXT. Gratuit à essayer — sans serveur, sans envoi."
+        "title": "GrepTag Reader — Rechercher Dans Tous vos EPUB et eBooks | iPhone, iPad, Mac, Windows",
+        "desc": "Recherchez dans chaque fichier EPUB et TXT sur iPhone, iPad, Mac et Windows — trouvez n'importe quel mot dans toute votre bibliothèque d'ebooks. Classez par genre, synchronisez en Wi-Fi. Sans cloud. Gratuit."
       },
       "faq": [
         {
@@ -1261,6 +1261,14 @@
         {
           "q": "Mon iPhone peut-il synchroniser de nouveaux livres vers mon Mac ou PC ?",
           "a": "Oui. Si vous ajoutez un livre sur iPhone dans un dossier qui n'existe pas encore sur votre Mac ou PC, GrepTag vous demandera de créer le dossier et de l'ajouter à votre liste de bibliothèque sur l'appareil récepteur avant de terminer la synchronisation."
+        },
+        {
+          "q": "Comment rechercher un mot ou une phrase spécifique dans mes fichiers ebook ?",
+          "a": "Ouvrez GrepTag Reader, allez dans l'onglet Recherche et tapez n'importe quel mot ou phrase. L'app ouvre chaque fichier EPUB et TXT de votre bibliothèque et renvoie chaque livre qui contient votre terme de recherche — sans index préalable, sans téléversement. Combinez les termes avec AND, OR et NOT pour des résultats plus précis (par exemple : \"magie AND dragons NOT romance\"). Enregistrez vos recherches fréquentes comme profils nommés qui se relancent automatiquement à l'importation de nouveaux livres. La recherche est toujours gratuite et illimitée."
+        },
+        {
+          "q": "GrepTag Reader a-t-il besoin d'une connexion internet pour fonctionner ?",
+          "a": "Non. GrepTag Reader fonctionne entièrement hors ligne. La recherche, l'étiquetage et l'organisation se font directement sur votre appareil — l'app lit vos fichiers EPUB et TXT localement, sans serveur ni connexion internet. Le réseau n'est utilisé que pour la fonctionnalité optionnelle Wi-Fi Sync, qui transfère des livres entre vos propres appareils via votre réseau local."
         }
       ],
       "faqTitle": "Questions fréquentes"

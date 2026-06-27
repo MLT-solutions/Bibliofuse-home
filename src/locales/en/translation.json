@@ -1134,17 +1134,17 @@
       "hero": {
         "badge": "iOS · macOS · Windows",
         "title": "Search. Tag. Own your library.",
-        "desc": "BiblioFuse GrepTag Reader is a full-text search and tagging toolkit for EPUB and TXT collections. Your files stay on your device — no cloud index, no uploads.",
+        "desc": "BiblioFuse GrepTag Reader lets you search inside any EPUB or TXT file — type a word and find every book that contains it. Tag by genre, sync over Wi-Fi, and keep every file private on your own device.",
         "appStoreCta": "Download on App Store",
         "msStoreCta": "Get it from Microsoft",
-        "trust1": "Free grep scan — unlimited",
+        "trust1": "Search all your ebooks, free · no limit",
         "trust2": "No server, no uploads",
         "trust3": "CJK text supported",
         "comingSoon": "Available now on the App Store",
         "macInReview": "iOS, macOS, and Windows available now"
       },
       "grep": {
-        "eyebrow": "Grep & Profiles",
+        "eyebrow": "Search Inside Books",
         "title": "Search the full text of every book.",
         "desc": "Type any keyword and GrepTag reads directly from your EPUB and TXT files — no index to build, no upload required. Save searches as named profiles with AND, OR, and NOT logic and re-run them as your library grows.",
         "bullet1": "Boolean logic — \"Sci-Fi AND dragons NOT romance\"",
@@ -1213,8 +1213,8 @@
         "approvalNote": "Available now on the App Store and Microsoft Store."
       },
       "seo": {
-        "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "Full-text grep for EPUB and TXT on iPhone, iPad, Mac, and Windows. Boolean keyword profiles, genre tags, local Wi-Fi sync, TTS, bookmarks, EPUB covers, and TXT cover matching. Free to try — no server, no uploads."
+        "title": "GrepTag Reader — Search Inside Every EPUB & eBook | iPhone, iPad, Mac, Windows",
+        "desc": "Search inside every EPUB and TXT file on iPhone, iPad, Mac, and Windows — find any word across your entire ebook library. Tag by genre, sync over Wi-Fi. No cloud index, no uploads. Free to try."
       },
       "faq": [
         {
@@ -1256,6 +1256,14 @@
         {
           "q": "Can my iPhone sync new books back to my Mac or PC?",
           "a": "Yes. If you add a book on iPhone inside a folder that does not yet exist on your Mac or PC, GrepTag will ask you to create the folder and add it to your library list on the receiving device before completing the sync."
+        },
+        {
+          "q": "How do I search for a specific word or phrase inside my ebook files?",
+          "a": "Open GrepTag Reader, go to the Search tab, and type any word or phrase. The app opens each EPUB and TXT file in your library and returns every book that contains your search term — no pre-built index, no upload needed. Combine terms with AND, OR, and NOT for more precise results (for example: \"magic AND dragons NOT romance\"). Save frequent searches as named profiles that re-run automatically whenever new books are imported. All searching is always free and unlimited."
+        },
+        {
+          "q": "Does GrepTag Reader need an internet connection to work?",
+          "a": "No. GrepTag Reader works completely offline. All searching, tagging, and organising happens directly on your device — the app reads your EPUB and TXT files locally without a server or internet connection. The only time a network is used is the optional Wi-Fi Sync feature, which transfers books between your own devices over your local network."
         }
       ],
       "faqTitle": "Frequently Asked Questions"

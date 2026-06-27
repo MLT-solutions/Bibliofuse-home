@@ -1139,9 +1139,9 @@
       "hero": {
         "badge": "iOS · macOS · Windows",
         "title": "搜索。标记。掌控你的书库。",
-        "desc": "BiblioFuse GrepTag Reader 是一款为EPUB和TXT藏书提供全文搜索和标记功能的工具。你的文件留在设备上——无云端索引，无上传。",
+        "desc": "BiblioFuse GrepTag Reader 让您在任何 EPUB 或 TXT 文件中搜索——输入一个词，即可找到包含它的每一本书。按流派标记，通过 Wi-Fi 同步，所有文件都私密保存在您自己的设备上。",
         "appStoreCta": "Download on App Store",
-        "trust1": "免费grep搜索——无限次",
+        "trust1": "免费搜索所有电子书，无限制",
         "trust2": "无服务器，无上传",
         "trust3": "支持中日韩文字",
         "comingSoon": "现已在 App Store 上架",
@@ -1149,7 +1149,7 @@
         "macInReview": "iOS、macOS 和 Windows 现已推出"
       },
       "grep": {
-        "eyebrow": "Grep与配置文件",
+        "eyebrow": "在书籍内部搜索",
         "title": "搜索每本书的全文。",
         "desc": "输入任何关键词，GrepTag直接读取你的EPUB和TXT文件——无需构建索引，无需上传。将搜索保存为命名配置文件，使用AND、OR和NOT逻辑，随书库增长反复运行。",
         "bullet1": "布尔逻辑——\"科幻 AND 龙 NOT 言情\"",
@@ -1218,8 +1218,8 @@
         "approvalNote": "现已在 App Store 和 Microsoft Store 上架。"
       },
       "seo": {
-        "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "适用于 iPhone、iPad、Mac 和 Windows 的 EPUB 与 TXT 全文 grep 搜索。支持布尔关键字配置文件、类型标签、本地 Wi-Fi 同步、TTS、书签、EPUB 封面和 TXT 封面匹配。可免费试用——无服务器、无上传。"
+        "title": "GrepTag Reader — 在所有 EPUB 和电子书中搜索文本 | iPhone、iPad、Mac、Windows",
+        "desc": "在 iPhone、iPad、Mac 和 Windows 上搜索每个 EPUB 和 TXT 文件内的内容——在整个电子书库中查找任意词语。按流派标记，通过 Wi-Fi 同步。无需云端，免费开始。"
       },
       "faq": [
         {
@@ -1261,6 +1261,14 @@
         {
           "q": "我的 iPhone 可以将新书同步回 Mac 或 PC 吗？",
           "a": "可以。如果您在 iPhone 上将书籍添加到 Mac 或 PC 上尚不存在的文件夹中，GrepTag 会在完成同步之前提示您在接收设备上创建该文件夹并将其添加到书库列表中。"
+        },
+        {
+          "q": "如何在我的电子书文件中搜索特定的词语或短语？",
+          "a": "打开 GrepTag Reader，进入\"搜索\"标签页，输入任意词语或短语。应用将打开书库中的每个 EPUB 和 TXT 文件，并返回包含您搜索词的每一本书——无需预先建立索引，无需上传。使用 AND、OR 和 NOT 组合词语以获得更精确的结果（例如：\"魔法 AND 龙 NOT 爱情\"）。将常用搜索保存为命名配置文件，新书导入时自动运行。搜索功能永久免费且无限制。"
+        },
+        {
+          "q": "GrepTag Reader 需要联网才能使用吗？",
+          "a": "不需要。GrepTag Reader 完全离线运行。所有搜索、标记和整理都直接在您的设备上进行——应用在本地读取您的 EPUB 和 TXT 文件，无需服务器或网络连接。只有在使用可选的 Wi-Fi Sync 功能时才会用到网络，该功能通过本地网络在您自己的设备之间传输书籍。"
         }
       ],
       "faqTitle": "常见问题"

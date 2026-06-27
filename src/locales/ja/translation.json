@@ -1139,9 +1139,9 @@
       "hero": {
         "badge": "iOS · macOS · Windows",
         "title": "検索。タグ付け。ライブラリを掌握。",
-        "desc": "BiblioFuse GrepTag Readerは、EPUBとTXTコレクション向けの全文検索・タグ付けツールキットです。ファイルはデバイス上に保存されます——クラウドインデックスなし、アップロードなし。",
+        "desc": "BiblioFuse GrepTag Reader は、あらゆる EPUB や TXT ファイルの中を検索できます — 単語を入力すれば、それを含むすべての本が見つかります。ジャンルでタグ付けし、Wi-Fi で同期。すべてのファイルはプライベートにご自身のデバイスに保存されます。",
         "appStoreCta": "Download on App Store",
-        "trust1": "無料grepスキャン——無制限",
+        "trust1": "すべての電子書籍を無料で検索、制限なし",
         "trust2": "サーバーなし、アップロードなし",
         "trust3": "CJKテキスト対応",
         "comingSoon": "App Store で提供中",
@@ -1149,7 +1149,7 @@
         "macInReview": "iOS、macOS、Windows で提供中"
       },
       "grep": {
-        "eyebrow": "Grepとプロフィール",
+        "eyebrow": "書籍内テキスト検索",
         "title": "すべての本の全文を検索。",
         "desc": "キーワードを入力すると、GrepTagがEPUBとTXTファイルを直接読み取ります——インデックス作成不要、アップロード不要。AND、OR、NOT論理で検索をプロフィールとして保存し、ライブラリの成長に合わせて再実行できます。",
         "bullet1": "ブール論理——「Sci-Fi AND ドラゴン NOT 恋愛」",
@@ -1218,8 +1218,8 @@
         "approvalNote": "App Store と Microsoft Store で提供中です。"
       },
       "seo": {
-        "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "iPhone、iPad、Mac、Windows 向けの EPUB と TXT 全文 grep。ブールキーワードプロファイル、ジャンルタグ、ローカル Wi-Fi 同期、TTS、ブックマーク、EPUB カバー、TXT カバー照合に対応。無料でお試し可能 — サーバーなし、アップロードなし。"
+        "title": "GrepTag Reader — 全 EPUB・電子書籍内を検索 | iPhone・iPad・Mac・Windows",
+        "desc": "iPhone、iPad、Mac、Windows 上のすべての EPUB・TXT ファイル内を検索。電子書籍ライブラリ全体から任意の単語を検索。ジャンルでタグ付け、Wi-Fi 同期。クラウド不要。無料で試せます。"
       },
       "faq": [
         {
@@ -1261,6 +1261,14 @@
         {
           "q": "iPhone の新しい書籍を Mac や PC に同期して戻すことはできますか？",
           "a": "はい。iPhone で Mac または PC にまだ存在しないフォルダ内に書籍を追加した場合、GrepTag は同期を完了する前に受信側デバイスでフォルダを作成してライブラリリストに追加するよう促します。"
+        },
+        {
+          "q": "ebook ファイル内の特定の単語やフレーズを検索するにはどうすればいいですか？",
+          "a": "GrepTag Reader を開き、「検索」タブに移動して任意の単語やフレーズを入力します。アプリはライブラリ内のすべての EPUB・TXT ファイルを開き、検索語を含むすべての本を返します — 事前インデックス不要、アップロード不要。AND、OR、NOT で語句を組み合わせるとより精確な結果が得られます（例：「魔法 AND ドラゴン NOT ロマンス」）。よく使う検索を名前付きプロファイルとして保存すれば、新しい本をインポートしたときに自動で再実行されます。検索は常に無料・無制限です。"
+        },
+        {
+          "q": "GrepTag Reader はインターネット接続なしで動作しますか？",
+          "a": "はい。GrepTag Reader は完全にオフラインで動作します。検索・タグ付け・整理のすべてがデバイス上で直接行われます — アプリはローカルの EPUB・TXT ファイルを読み込むため、サーバーやインターネット接続は不要です。ネットワークが使われるのは、オプションの Wi-Fi Sync 機能でご自身のデバイス間でローカルネットワーク経由に本を転送するときだけです。"
         }
       ],
       "faqTitle": "よくある質問"

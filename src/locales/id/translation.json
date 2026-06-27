@@ -1139,9 +1139,9 @@
       "hero": {
         "badge": "iOS · macOS · Windows",
         "title": "Cari. Beri Tag. Kuasai Perpustakaanmu.",
-        "desc": "BiblioFuse GrepTag Reader adalah toolkit pencarian teks lengkap dan penandaan untuk koleksi EPUB dan TXT. File Anda tetap di perangkat——tanpa indeks cloud, tanpa unggahan.",
+        "desc": "BiblioFuse GrepTag Reader memungkinkan Anda mencari di dalam file EPUB atau TXT mana pun — ketik kata dan temukan setiap buku yang mengandungnya. Tandai berdasarkan genre, sinkronkan melalui Wi-Fi, dan simpan semua file secara pribadi di perangkat Anda sendiri.",
         "appStoreCta": "Download on App Store",
-        "trust1": "Pemindaian grep gratis——tanpa batas",
+        "trust1": "Cari semua ebook Anda, gratis tanpa batas",
         "trust2": "Tanpa server, tanpa unggahan",
         "trust3": "Teks CJK didukung",
         "comingSoon": "Kini tersedia di App Store",
@@ -1149,7 +1149,7 @@
         "macInReview": "iOS, macOS, dan Windows kini tersedia"
       },
       "grep": {
-        "eyebrow": "Grep dan Profil",
+        "eyebrow": "Cari di Dalam Buku",
         "title": "Cari teks lengkap setiap buku.",
         "desc": "Ketik kata kunci apa pun dan GrepTag membaca langsung dari file EPUB dan TXT Anda——tanpa indeks yang perlu dibuat, tanpa unggahan. Simpan pencarian sebagai profil bernama dengan logika AND, OR, dan NOT dan jalankan ulang seiring perpustakaan Anda berkembang.",
         "bullet1": "Logika Boolean——\"Sci-Fi AND naga NOT romansa\"",
@@ -1218,8 +1218,8 @@
         "approvalNote": "Kini tersedia di App Store dan Microsoft Store."
       },
       "seo": {
-        "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "Grep teks penuh untuk EPUB dan TXT di iPhone, iPad, Mac, dan Windows. Profil kata kunci boolean, tag genre, sinkronisasi Wi-Fi lokal, TTS, bookmark, sampul EPUB, dan pencocokan sampul TXT. Gratis untuk dicoba — tanpa server, tanpa unggahan."
+        "title": "GrepTag Reader — Cari di Dalam Semua EPUB dan eBook | iPhone, iPad, Mac, Windows",
+        "desc": "Cari di dalam setiap file EPUB dan TXT di iPhone, iPad, Mac, dan Windows — temukan kata apapun di seluruh perpustakaan ebook Anda. Tandai berdasarkan genre, sinkronkan via Wi-Fi. Tanpa cloud. Gratis."
       },
       "faq": [
         {
@@ -1261,6 +1261,14 @@
         {
           "q": "Bisakah iPhone saya menyinkronkan buku baru kembali ke Mac atau PC saya?",
           "a": "Ya. Jika Anda menambahkan buku di iPhone ke dalam folder yang belum ada di Mac atau PC Anda, GrepTag akan meminta Anda membuat folder tersebut dan menambahkannya ke daftar perpustakaan di perangkat penerima sebelum menyelesaikan sinkronisasi."
+        },
+        {
+          "q": "Bagaimana cara mencari kata atau frasa tertentu di dalam file ebook saya?",
+          "a": "Buka GrepTag Reader, pergi ke tab Cari, dan ketik kata atau frasa apa pun. Aplikasi membuka setiap file EPUB dan TXT di perpustakaan Anda dan mengembalikan setiap buku yang mengandung istilah pencarian Anda — tanpa indeks yang dibangun sebelumnya, tanpa unggahan. Gabungkan istilah dengan AND, OR, dan NOT untuk hasil yang lebih tepat (misalnya: \"sihir AND naga NOT romansa\"). Simpan pencarian yang sering digunakan sebagai profil bernama yang dijalankan ulang secara otomatis saat buku baru diimpor. Semua pencarian selalu gratis dan tidak terbatas."
+        },
+        {
+          "q": "Apakah GrepTag Reader memerlukan koneksi internet untuk bekerja?",
+          "a": "Tidak. GrepTag Reader bekerja sepenuhnya secara offline. Semua pencarian, penandaan, dan pengorganisasian terjadi langsung di perangkat Anda — aplikasi membaca file EPUB dan TXT Anda secara lokal tanpa memerlukan server atau koneksi internet. Jaringan hanya digunakan untuk fitur Wi-Fi Sync opsional yang mentransfer buku antara perangkat Anda sendiri melalui jaringan lokal."
         }
       ],
       "faqTitle": "Pertanyaan yang sering diajukan"

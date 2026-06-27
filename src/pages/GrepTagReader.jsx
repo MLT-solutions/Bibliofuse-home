@@ -112,10 +112,12 @@ const GrepTagReader = () => {
         schemaName="BiblioFuse GrepTag Reader"
         operatingSystem="iOS, iPadOS, macOS, Windows"
         featureList={[
-          t('redesign.grepTagPage.grep.title'),
-          t('redesign.grepTagPage.tags.title'),
+          'Search inside ebooks — find any word across your entire EPUB or TXT library',
+          'Keyword search with AND, OR, NOT logic — save searches as reusable profiles',
+          'Tag ebooks by genre and filter your library instantly',
           t('redesign.grepTagPage.sync.title'),
           t('redesign.grepTagPage.covers.title'),
+          'Works fully offline — no internet connection required',
           t('redesign.grepTagPage.pricing.feat8', 'Export Tag DB'),
         ]}
         faqItems={faqItems}
