@@ -47,8 +47,8 @@ export default function Changelog() {
   return (
     <div className="min-h-screen bg-[#F6F8FC] px-4 pb-24 pt-28 text-slate-950 sm:px-6 lg:px-8">
       <SEO
-        title={t('redesign.changelog.seo.title')}
-        description={t('redesign.changelog.seo.desc')}
+        title={t('redesign.seo.changelogTitle')}
+        description={t('redesign.seo.changelogDesc')}
         canonical="/changelog"
         schemaType="website"
       />
@@ -56,11 +56,12 @@ export default function Changelog() {
       <div className="mx-auto max-w-3xl">
         {/* Header */}
         <div className="mb-10 text-center">
+          <img src="/image/bibliofuse-logo.png" alt="BiblioFuse Reader" className="mx-auto mb-4 h-16 w-16 rounded-2xl shadow-sm" />
           <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">
-            {t('redesign.changelog.eyebrow')}
+            {t('nav.changelog')}
           </div>
           <h1 className="font-display text-[clamp(2rem,5vw,3.5rem)] font-black leading-tight tracking-tight text-slate-950">
-            {t('redesign.changelog.title')}
+            BiblioFuse Reader
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-slate-500">
             {t('redesign.changelog.subtitle')}
