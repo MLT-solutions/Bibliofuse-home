@@ -190,7 +190,7 @@ Stored on NAS only — **not in a cloud/GitHub repo**.
 | Store | URL |
 |-------|-----|
 | Apple App Store (iOS) | https://apps.apple.com/app/bibliofuse-grep-tag-reader/id6779977609 |
-| Apple App Store (macOS) | https://apps.apple.com/app/bibliofuse-grep-tag-reader/id6779977609 *(in review)* |
+| Apple App Store (macOS) | https://apps.apple.com/app/bibliofuse-grep-tag-reader/id6779977609 |
 | Microsoft Store (Windows) | https://apps.microsoft.com/store/detail/9MT6VDXXZ3RH |
 
 Bundle ID: `com.mlogictech.bibliofusegreptagreader`

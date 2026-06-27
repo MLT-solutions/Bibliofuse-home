@@ -3,13 +3,13 @@
 // released: true = live in store, false = pending / unreleased
 
 export const ENTRIES = [
-  // ── Build 10 / v1.0.1 — Wi-Fi sync iCloud path refactor (resubmitted) ──
+  // ── Build 10 / v1.0.1 — Wi-Fi sync iCloud path refactor (released) ──
   {
     date: '2026-06-25',
     version: '1.0.1',
     platform: 'ios',
     type: 'fix',
-    released: false,
+    released: true,
     title: {
       en: 'Build 10 / v1.0.1 — Wi-Fi sync iCloud path refactor',
       es: 'Build 10 / v1.0.1 — Refactorización de ruta iCloud para sincronización Wi-Fi',
@@ -44,7 +44,7 @@ export const ENTRIES = [
     version: '1.0.0',
     platform: 'ios',
     type: 'fix',
-    released: false,
+    released: true,
     title: {
       en: 'Build 9 — macOS window-close fix',
       es: 'Build 9 — Corrección del cierre de ventana en macOS',
@@ -79,7 +79,7 @@ export const ENTRIES = [
     version: '1.0.0',
     platform: 'pc',
     type: 'fix',
-    released: false,
+    released: true,
     title: {
       en: 'Windows — Wi-Fi sync iCloud path fix & Store localization',
       es: 'Windows — Corrección de ruta iCloud para sincronización Wi-Fi y localización en tienda',
@@ -108,13 +108,13 @@ export const ENTRIES = [
     },
   },
 
-  // ── Windows — initial build (submitted to Microsoft Store) ──────────────
+  // ── Windows — initial build (released on Microsoft Store) ───────────────
   {
     date: '2026-06-25',
     version: '1.0.0',
     platform: 'pc',
     type: 'feature',
-    released: false,
+    released: true,
     title: {
       en: 'Windows — Initial build: grep, TTS & Wi-Fi sync',
       es: 'Windows — Compilación inicial: grep, TTS y sincronización Wi-Fi',

@@ -140,17 +140,17 @@ const GrepTagReader = () => {
                 href={grepTagAppStoreUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-white/90 px-5 py-2.5 shadow-lg transition hover:bg-white"
+                className="inline-flex"
               >
-                <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt={t('redesign.grepTagPage.hero.appStoreCta')} className="h-8 w-auto" />
+                <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt={t('redesign.grepTagPage.hero.appStoreCta')} className="h-10 w-auto" />
               </a>
               <a
                 href={grepTagMsStoreUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-white/90 px-5 py-2.5 shadow-lg transition hover:bg-white"
+                className="inline-flex"
               >
-                <img src="/image/Microsoft_Store_badge.svg" alt={t('redesign.grepTagPage.hero.msStoreCta')} className="h-8 w-auto" />
+                <img src="/image/Microsoft_Store_badge.svg" alt={t('redesign.grepTagPage.hero.msStoreCta')} className="h-10 w-auto" />
               </a>
             </div>
             <span className="text-xs font-medium text-indigo-300">{t('redesign.grepTagPage.hero.macInReview')}</span>

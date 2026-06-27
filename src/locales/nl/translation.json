@@ -1137,16 +1137,16 @@
     },
     "grepTagPage": {
       "hero": {
-        "badge": "iOS · macOS",
+        "badge": "iOS · macOS · Windows",
         "title": "Zoek. Tag. Bezit je bibliotheek.",
         "desc": "BiblioFuse GrepTag Reader is een toolkit voor volledige tekstzoekopdrachten en tagging voor EPUB- en TXT-collecties. Je bestanden blijven op je apparaat — geen cloudindex, geen uploads.",
         "appStoreCta": "Download on App Store",
         "trust1": "Gratis grep-scan — onbeperkt",
         "trust2": "Geen server, geen uploads",
         "trust3": "CJK-tekst ondersteund",
-        "comingSoon": "Binnenkort beschikbaar — wacht op App Store-goedkeuring",
+        "comingSoon": "Nu beschikbaar in de App Store",
         "msStoreCta": "Get it from Microsoft",
-        "macInReview": "iOS available now · macOS in review"
+        "macInReview": "iOS, macOS en Windows nu beschikbaar"
       },
       "grep": {
         "eyebrow": "Grep en Profielen",
@@ -1215,7 +1215,7 @@
         "proLifetime": "$14.99 one-time",
         "proTrial": "7-day free trial on monthly & yearly",
         "appStoreCta": "Try Free on App Store",
-        "approvalNote": "De app wacht op App Store-goedkeuring — binnenkort beschikbaar."
+        "approvalNote": "Nu beschikbaar in de App Store en Microsoft Store."
       },
       "seo": {
         "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",

@@ -1140,8 +1140,8 @@
         "trust1": "Free grep scan — unlimited",
         "trust2": "No server, no uploads",
         "trust3": "CJK text supported",
-        "comingSoon": "Coming soon — awaiting App Store approval",
-        "macInReview": "iOS available now · macOS in review"
+        "comingSoon": "Available now on the App Store",
+        "macInReview": "iOS, macOS, and Windows available now"
       },
       "grep": {
         "eyebrow": "Grep & Profiles",
@@ -1210,7 +1210,7 @@
         "proLifetime": "$14.99 one-time",
         "proTrial": "7-day free trial on monthly & yearly",
         "appStoreCta": "Try Free on App Store",
-        "approvalNote": "App is currently awaiting App Store approval — available soon."
+        "approvalNote": "Available now on the App Store and Microsoft Store."
       },
       "seo": {
         "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
