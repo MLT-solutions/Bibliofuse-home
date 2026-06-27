@@ -29,11 +29,11 @@ export default function StickyDownloadBar({
 
   return (
     <div
-      className={`fixed bottom-5 left-1/2 z-30 -translate-x-1/2 transition-all duration-300 ${
+      className={`fixed bottom-5 left-0 right-0 z-30 flex justify-center px-4 transition-all duration-300 ${
         visible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-6 opacity-0'
       }`}
     >
-      <div className="flex max-w-[calc(100vw-2rem)] items-center gap-1.5 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-2.5 py-2 text-white shadow-2xl backdrop-blur-md sm:gap-3 sm:px-4 sm:py-2.5">
+      <div className="pointer-events-auto flex items-center gap-1.5 rounded-2xl border border-white/10 bg-[#0b1220]/95 px-2.5 py-2 text-white shadow-2xl backdrop-blur-md sm:gap-3 sm:px-4 sm:py-2.5">
         <img src={logo} alt="" className="h-6 w-6 flex-shrink-0 rounded-lg sm:h-7 sm:w-7" />
         <span className="hidden text-sm font-bold whitespace-nowrap sm:inline">{appName}</span>
         {appStoreUrl && (
