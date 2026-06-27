@@ -1162,11 +1162,11 @@
       },
       "sync": {
         "eyebrow": "Wi-Fi Sync",
-        "title": "Sync over local Wi-Fi, with Apple discovery fallback.",
-        "desc": "Transfer books, tags, ratings, keyword profiles, and folder structure between iPhone, iPad, Mac, and Windows over your local network. Apple devices may use tiny iCloud metadata snapshots for discovery, but book files transfer over Wi-Fi and do not upload to a developer server.",
+        "title": "Sync over local Wi-Fi, with iCloud-assisted discovery.",
+        "desc": "Transfer books, tags, ratings, keyword profiles, and folder structure between iPhone, iPad, Mac, and Windows over your local network. All Apple devices must be signed in to the same iCloud account — iCloud is used only for device discovery (a tiny metadata snapshot), not for uploading your books. Book files transfer over Wi-Fi only and never leave your local network.",
         "bullet1": "Mac / PC ↔ iPhone / iPad, iPhone ↔ iPad, Mac ↔ Mac, PC ↔ PC",
         "bullet2": "Books, tags, ratings, keyword profiles, and folder hierarchy sync across devices",
-        "bullet3": "Pro feature — source device server must be running during transfer"
+        "bullet3": "Pro feature — all Apple devices must share the same iCloud account"
       },
       "covers": {
         "eyebrow": "Covers & Reader",
@@ -1242,8 +1242,20 @@
           "a": "Five tags are included in the free tier. Pro unlocks unlimited tags. You can apply tags from scan results in one tap, or tag books manually and filter by multiple tags using AND or OR logic."
         },
         {
-          "q": "Can I sync my library between iPhone, iPad, and Mac?",
-          "a": "Yes. Wi-Fi sync transfers books, tags, ratings, keyword profiles, and folder structure over your local network. Mac/iOS discovery can use small iCloud metadata snapshots, but book files transfer over Wi-Fi and are not uploaded to a developer server. Wi-Fi sync is a Pro feature."
+          "q": "Can I sync my library between iPhone, iPad, Mac, and PC?",
+          "a": "Yes. Wi-Fi Sync transfers books, tags, ratings, keyword profiles, and folder structure between any combination of iPhone, iPad, Mac, and Windows PC. All Apple devices in the sync must be signed in to the same iCloud account — iCloud is used only for device discovery, not for storing your books. Book files travel over your local Wi-Fi and are never uploaded to any developer server. Wi-Fi Sync is a Pro feature."
+        },
+        {
+          "q": "Can I use more than one iPhone or iPad with Wi-Fi Sync?",
+          "a": "Yes. Multiple iPhones and iPads can all participate in the same library sync. The iOS version of GrepTag stores paths relative to the app's root folder, so the same path structure works across every iOS device signed in to the same iCloud account."
+        },
+        {
+          "q": "Should I use Mac or PC as the source of truth for my library?",
+          "a": "We recommend keeping one Mac or one PC as your primary library device. GrepTag's metadata tracks three separate path types — PC paths, iOS paths, and Mac paths. iOS works across multiple iPhones and iPads because it uses relative paths. Mac and PC each store absolute paths for their own device, so syncing is most reliable when there is only one Mac and one PC in your setup."
+        },
+        {
+          "q": "Can my iPhone sync new books back to my Mac or PC?",
+          "a": "Yes. If you add a book on iPhone inside a folder that does not yet exist on your Mac or PC, GrepTag will ask you to create the folder and add it to your library list on the receiving device before completing the sync."
         }
       ],
       "faqTitle": "Frequently Asked Questions"
