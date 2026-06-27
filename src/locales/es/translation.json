@@ -1247,8 +1247,20 @@
           "a": "Cinco etiquetas están incluidas en el nivel gratuito. Pro desbloquea etiquetas ilimitadas. Puedes aplicar etiquetas desde los resultados de búsqueda con un toque, o etiquetar libros manualmente y filtrar por varias etiquetas con lógica AND u OR."
         },
         {
-          "q": "¿Puedo sincronizar mi biblioteca entre iPhone, iPad y Mac?",
-          "a": "Sí. La sincronización Wi‑Fi transfiere libros, etiquetas, calificaciones, perfiles de palabras clave y estructura de carpetas por tu red local. El descubrimiento en Mac/iOS puede usar pequeñas instantáneas de metadatos en iCloud, pero los archivos de libros se transfieren por Wi‑Fi y no se suben a un servidor del desarrollador. Wi‑Fi sync es una función Pro."
+          "q": "¿Puedo sincronizar mi biblioteca entre iPhone, iPad, Mac y PC?",
+          "a": "Sí. Wi-Fi Sync transfiere libros, etiquetas, valoraciones, perfiles de palabras clave y la estructura de carpetas entre cualquier combinación de iPhone, iPad, Mac y Windows PC. Todos los dispositivos Apple en la sincronización deben tener iniciada sesión con la misma cuenta de iCloud — iCloud solo se usa para el descubrimiento de dispositivos, no para almacenar tus libros. Los archivos viajan por tu red Wi-Fi local y nunca se suben a ningún servidor de desarrollador. Wi-Fi Sync es una función Pro."
+        },
+        {
+          "q": "¿Puedo usar más de un iPhone o iPad con Wi-Fi Sync?",
+          "a": "Sí. Varios iPhones e iPads pueden participar en la misma sincronización de biblioteca. La versión iOS de GrepTag almacena rutas relativas a la carpeta raíz de la app, por lo que la misma estructura de rutas funciona en todos los dispositivos iOS con la misma cuenta de iCloud."
+        },
+        {
+          "q": "¿Debo usar Mac o PC como fuente principal de mi biblioteca?",
+          "a": "Recomendamos usar un Mac o un PC como dispositivo de biblioteca principal. Los metadatos de GrepTag registran tres tipos de rutas distintos: rutas de PC, rutas de iOS y rutas de Mac. iOS funciona en varios iPhones e iPads porque usa rutas relativas. Mac y PC almacenan rutas absolutas de su propio dispositivo, por lo que la sincronización es más fiable cuando solo hay un Mac y un PC en tu configuración."
+        },
+        {
+          "q": "¿Puede mi iPhone sincronizar nuevos libros de vuelta a mi Mac o PC?",
+          "a": "Sí. Si añades un libro en iPhone dentro de una carpeta que todavía no existe en tu Mac o PC, GrepTag te pedirá que crees la carpeta y la añadas a tu lista de biblioteca en el dispositivo receptor antes de completar la sincronización."
         }
       ],
       "faqTitle": "Preguntas frecuentes"

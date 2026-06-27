@@ -1247,8 +1247,20 @@
           "a": "Vijf tags zijn inbegrepen in de gratis versie. Pro ontgrendelt onbeperkte tags. Je kunt tags toepassen vanuit scanresultaten met één tik, of boeken handmatig taggen en filteren op meerdere tags met AND- of OR-logica."
         },
         {
-          "q": "Kan ik mijn bibliotheek synchroniseren tussen iPhone, iPad en Mac?",
-          "a": "Ja. Wi‑Fi-synchronisatie draagt boeken, tags, ratings, trefwoordprofielen en mapstructuur over via je lokale netwerk. Mac/iOS-detectie kan kleine iCloud-metadatasnapshots gebruiken, maar boekbestanden gaan via Wi‑Fi en worden niet naar een ontwikkelaarsserver geüpload. Wi‑Fi-synchronisatie is een Pro-functie."
+          "q": "Kan ik mijn bibliotheek synchroniseren tussen iPhone, iPad, Mac en PC?",
+          "a": "Ja. Wi-Fi Sync draagt boeken, tags, beoordelingen, trefwoordprofielen en mappenstructuur over tussen elke combinatie van iPhone, iPad, Mac en Windows PC. Alle Apple-apparaten die deelnemen aan de synchronisatie moeten zijn aangemeld bij hetzelfde iCloud-account — iCloud wordt alleen gebruikt voor apparaatdetectie, niet voor het opslaan van je boeken. Bestanden worden overgebracht via je lokale Wi-Fi-netwerk en worden nooit geüpload naar een ontwikkelaarsserver. Wi-Fi Sync is een Pro-functie."
+        },
+        {
+          "q": "Kan ik meer dan één iPhone of iPad gebruiken met Wi-Fi Sync?",
+          "a": "Ja. Meerdere iPhones en iPads kunnen allemaal deelnemen aan dezelfde bibliotheekhsynchronisatie. De iOS-versie van GrepTag slaat paden op relatief aan de hoofdmap van de app, zodat dezelfde padstructuur werkt op alle iOS-apparaten die zijn aangemeld bij hetzelfde iCloud-account."
+        },
+        {
+          "q": "Moet ik Mac of PC gebruiken als de primaire bron voor mijn bibliotheek?",
+          "a": "We raden aan om één Mac of één PC te gebruiken als primair bibliotheekstation. De metadata van GrepTag bijhoudt drie afzonderlijke padtypen: PC-paden, iOS-paden en Mac-paden. iOS werkt op meerdere iPhones en iPads omdat het relatieve paden gebruikt. Mac en PC slaan elk absolute paden op voor hun eigen apparaat, zodat synchronisatie het betrouwbaarst is wanneer er slechts één Mac en één PC in uw configuratie zijn."
+        },
+        {
+          "q": "Kan mijn iPhone nieuwe boeken terug synchroniseren naar mijn Mac of PC?",
+          "a": "Ja. Als je een boek toevoegt op iPhone in een map die nog niet bestaat op je Mac of PC, zal GrepTag je vragen de map aan te maken en deze toe te voegen aan je bibliotheeklijst op het ontvangende apparaat voordat de synchronisatie wordt voltooid."
         }
       ],
       "faqTitle": "Veelgestelde vragen"

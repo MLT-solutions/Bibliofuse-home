@@ -1247,8 +1247,20 @@
           "a": "Lima tag disertakan dalam peringkat percuma. Pro membuka tag tanpa had. Anda boleh menggunakan tag daripada keputusan imbasan dengan satu ketukan, atau menandai buku secara manual dan menapis mengikut berbilang tag menggunakan logik AND atau OR."
         },
         {
-          "q": "Bolehkah saya menyegerakkan perpustakaan antara iPhone, iPad dan Mac?",
-          "a": "Ya. Segerak Wi‑Fi memindahkan buku, tag, penilaian, profil kata kunci, dan struktur folder melalui rangkaian setempat anda. Penemuan Mac/iOS boleh menggunakan snapshot metadata iCloud kecil, tetapi fail buku dipindahkan melalui Wi‑Fi dan tidak dimuat naik ke pelayan pembangun. Segerak Wi‑Fi ialah ciri Pro."
+          "q": "Bolehkah saya menyegerakkan perpustakaan antara iPhone, iPad, Mac dan PC?",
+          "a": "Ya. Wi-Fi Sync memindahkan buku, tag, penilaian, profil kata kunci dan struktur folder antara mana-mana kombinasi iPhone, iPad, Mac dan Windows PC. Semua peranti Apple dalam penyegerakan mesti log masuk ke akaun iCloud yang sama — iCloud hanya digunakan untuk penemuan peranti, bukan untuk menyimpan buku anda. Fail berpindah melalui rangkaian Wi-Fi tempatan anda dan tidak pernah dimuat naik ke mana-mana pelayan pembangun. Wi-Fi Sync adalah ciri Pro."
+        },
+        {
+          "q": "Bolehkah saya menggunakan lebih daripada satu iPhone atau iPad dengan Wi-Fi Sync?",
+          "a": "Ya. Beberapa iPhone dan iPad semuanya boleh menyertai penyegerakan perpustakaan yang sama. Versi iOS GrepTag menyimpan laluan relatif kepada folder akar aplikasi, jadi struktur laluan yang sama berfungsi di setiap peranti iOS yang log masuk ke akaun iCloud yang sama."
+        },
+        {
+          "q": "Haruskah saya menggunakan Mac atau PC sebagai sumber utama perpustakaan saya?",
+          "a": "Kami mengesyorkan mengekalkan satu Mac atau satu PC sebagai peranti perpustakaan utama. Metadata GrepTag menjejaki tiga jenis laluan yang berbeza — laluan PC, laluan iOS dan laluan Mac. iOS berfungsi di beberapa iPhone dan iPad kerana ia menggunakan laluan relatif. Mac dan PC masing-masing menyimpan laluan mutlak untuk peranti mereka sendiri, jadi penyegerakan paling boleh dipercayai apabila hanya ada satu Mac dan satu PC dalam persediaan anda."
+        },
+        {
+          "q": "Bolehkah iPhone saya menyegerakkan buku baharu semula ke Mac atau PC saya?",
+          "a": "Ya. Jika anda menambah buku pada iPhone dalam folder yang belum wujud pada Mac atau PC anda, GrepTag akan meminta anda membuat folder dan menambahkannya ke senarai perpustakaan pada peranti penerima sebelum melengkapkan penyegerakan."
         }
       ],
       "faqTitle": "Soalan lazim"

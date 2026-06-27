@@ -1247,8 +1247,20 @@
           "a": "Lima tag disertakan dalam tingkatan gratis. Pro membuka tag tak terbatas. Anda dapat menerapkan tag dari hasil pemindaian dengan satu ketukan, atau menandai buku secara manual dan memfilter berdasarkan beberapa tag menggunakan logika AND atau OR."
         },
         {
-          "q": "Bisakah saya menyinkronkan perpustakaan antara iPhone, iPad, dan Mac?",
-          "a": "Ya. Sinkronisasi Wi‑Fi mentransfer buku, tag, rating, profil kata kunci, dan struktur folder melalui jaringan lokal Anda. Penemuan Mac/iOS dapat memakai snapshot metadata iCloud kecil, tetapi file buku ditransfer melalui Wi‑Fi dan tidak diunggah ke server pengembang. Sinkronisasi Wi‑Fi adalah fitur Pro."
+          "q": "Bisakah saya menyinkronkan perpustakaan antara iPhone, iPad, Mac, dan PC?",
+          "a": "Ya. Wi-Fi Sync mentransfer buku, tag, penilaian, profil kata kunci, dan struktur folder antara kombinasi apa pun dari iPhone, iPad, Mac, dan Windows PC. Semua perangkat Apple dalam sinkronisasi harus masuk ke akun iCloud yang sama — iCloud hanya digunakan untuk penemuan perangkat, bukan untuk menyimpan buku Anda. File berpindah melalui jaringan Wi-Fi lokal Anda dan tidak pernah diunggah ke server pengembang mana pun. Wi-Fi Sync adalah fitur Pro."
+        },
+        {
+          "q": "Bisakah saya menggunakan lebih dari satu iPhone atau iPad dengan Wi-Fi Sync?",
+          "a": "Ya. Beberapa iPhone dan iPad semuanya dapat berpartisipasi dalam sinkronisasi perpustakaan yang sama. Versi iOS GrepTag menyimpan jalur relatif terhadap folder root aplikasi, sehingga struktur jalur yang sama berfungsi di setiap perangkat iOS yang masuk ke akun iCloud yang sama."
+        },
+        {
+          "q": "Haruskah saya menggunakan Mac atau PC sebagai sumber utama perpustakaan saya?",
+          "a": "Kami menyarankan untuk menjaga satu Mac atau satu PC sebagai perangkat perpustakaan utama. Metadata GrepTag melacak tiga jenis jalur terpisah — jalur PC, jalur iOS, dan jalur Mac. iOS bekerja di beberapa iPhone dan iPad karena menggunakan jalur relatif. Mac dan PC masing-masing menyimpan jalur absolut untuk perangkat mereka sendiri, sehingga sinkronisasi paling andal ketika hanya ada satu Mac dan satu PC dalam pengaturan Anda."
+        },
+        {
+          "q": "Bisakah iPhone saya menyinkronkan buku baru kembali ke Mac atau PC saya?",
+          "a": "Ya. Jika Anda menambahkan buku di iPhone ke dalam folder yang belum ada di Mac atau PC Anda, GrepTag akan meminta Anda membuat folder tersebut dan menambahkannya ke daftar perpustakaan di perangkat penerima sebelum menyelesaikan sinkronisasi."
         }
       ],
       "faqTitle": "Pertanyaan yang sering diajukan"

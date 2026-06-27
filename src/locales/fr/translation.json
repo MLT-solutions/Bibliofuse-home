@@ -1247,8 +1247,20 @@
           "a": "Cinq étiquettes sont incluses dans le niveau gratuit. Pro débloque des étiquettes illimitées. Vous pouvez appliquer des étiquettes depuis les résultats de scan en un tap, ou étiqueter les livres manuellement et filtrer par plusieurs étiquettes avec la logique AND ou OR."
         },
         {
-          "q": "Puis-je synchroniser ma bibliothèque entre iPhone, iPad et Mac ?",
-          "a": "Oui. La synchronisation Wi‑Fi transfère livres, tags, notes, profils de mots-clés et structure de dossiers sur votre réseau local. La découverte Mac/iOS peut utiliser de petits snapshots de métadonnées iCloud, mais les fichiers de livres passent en Wi‑Fi et ne sont pas envoyés à un serveur développeur. La synchronisation Wi‑Fi est une fonction Pro."
+          "q": "Puis-je synchroniser ma bibliothèque entre iPhone, iPad, Mac et PC ?",
+          "a": "Oui. Wi-Fi Sync transfère des livres, des étiquettes, des évaluations, des profils de mots-clés et la structure des dossiers entre toute combinaison d'iPhone, iPad, Mac et Windows PC. Tous les appareils Apple participant à la synchronisation doivent être connectés au même compte iCloud — iCloud n'est utilisé que pour la découverte des appareils, pas pour stocker vos livres. Les fichiers transitent par votre réseau Wi-Fi local et ne sont jamais téléversés vers un serveur de développeur. Wi-Fi Sync est une fonctionnalité Pro."
+        },
+        {
+          "q": "Puis-je utiliser plusieurs iPhone ou iPad avec Wi-Fi Sync ?",
+          "a": "Oui. Plusieurs iPhones et iPads peuvent tous participer à la même synchronisation de bibliothèque. La version iOS de GrepTag stocke les chemins d'accès relatifs au dossier racine de l'app, de sorte que la même structure de chemins fonctionne sur tous les appareils iOS connectés au même compte iCloud."
+        },
+        {
+          "q": "Dois-je utiliser un Mac ou un PC comme source de référence pour ma bibliothèque ?",
+          "a": "Nous recommandons de conserver un Mac ou un PC comme appareil de bibliothèque principal. Les métadonnées de GrepTag suivent trois types de chemins distincts : chemins PC, chemins iOS et chemins Mac. iOS fonctionne sur plusieurs iPhones et iPads car il utilise des chemins relatifs. Mac et PC stockent chacun des chemins absolus pour leur propre appareil, donc la synchronisation est la plus fiable lorsqu'il n'y a qu'un seul Mac et un seul PC dans votre configuration."
+        },
+        {
+          "q": "Mon iPhone peut-il synchroniser de nouveaux livres vers mon Mac ou PC ?",
+          "a": "Oui. Si vous ajoutez un livre sur iPhone dans un dossier qui n'existe pas encore sur votre Mac ou PC, GrepTag vous demandera de créer le dossier et de l'ajouter à votre liste de bibliothèque sur l'appareil récepteur avant de terminer la synchronisation."
         }
       ],
       "faqTitle": "Questions fréquentes"
