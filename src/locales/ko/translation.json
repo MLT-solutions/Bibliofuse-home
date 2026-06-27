@@ -1167,11 +1167,11 @@
       },
       "sync": {
         "eyebrow": "Wi-Fi 동기화",
-        "title": "어느 방향으로든 동기화——iCloud 불필요.",
-        "desc": "로컬 Wi-Fi를 통해 iPhone, iPad, Mac 간에 전체 서재를 어느 방향으로든 전송하세요. 책은 기기에 보관됩니다——외부 서버로 아무것도 전송되지 않습니다.",
-        "bullet1": "iPhone → iPad, Mac → iPhone, iPad → Mac",
-        "bullet2": "태그와 메타데이터가 파일과 함께 전송",
-        "bullet3": "Pro 기능——일회성 구매 또는 구독"
+        "title": "로컬 Wi‑Fi로 동기화하고 Apple 탐색 대체 경로를 지원합니다.",
+        "desc": "iPhone, iPad, Mac, Windows 간에 책, 태그, 평점, 키워드 프로필, 폴더 구조를 로컬 네트워크로 전송합니다. Apple 기기는 탐색을 위해 작은 iCloud 메타데이터 스냅샷을 사용할 수 있지만, 책 파일은 Wi‑Fi로 전송되며 개발자 서버에 업로드되지 않습니다.",
+        "bullet1": "Mac / PC ↔ iPhone / iPad, iPhone ↔ iPad, Mac ↔ Mac, PC ↔ PC",
+        "bullet2": "책, 태그, 평점, 키워드 프로필, 폴더 계층이 기기 간 동기화됩니다",
+        "bullet3": "Pro 기능 — 전송 중 원본 기기 서버가 실행 중이어야 합니다"
       },
       "covers": {
         "eyebrow": "표지 및 리더",
@@ -1219,7 +1219,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "Full-text grep for EPUB and TXT on iPhone and Mac. Boolean keyword profiles, genre tags, Wi-Fi sync, and TXT covers. Free to try — no server, no uploads."
+        "desc": "iPhone, iPad, Mac, Windows에서 EPUB 및 TXT 전체 텍스트 grep. 불리언 키워드 프로필, 장르 태그, 로컬 Wi-Fi 동기화, TTS, 북마크, EPUB 표지, TXT 표지 매칭 지원. 무료로 체험 가능 — 서버 없음, 업로드 없음."
       },
       "faq": [
         {
@@ -1248,9 +1248,10 @@
         },
         {
           "q": "iPhone, iPad, Mac 간에 라이브러리를 동기화할 수 있나요?",
-          "a": "네. Wi-Fi 동기화는 로컬 Wi-Fi를 통해 어느 방향으로든 전체 라이브러리(책, 태그, 메타데이터)를 전송합니다(iPhone → iPad, Mac → iPhone, iPad → Mac). iCloud 계정이나 인터넷 연결이 필요하지 않습니다. Wi-Fi 동기화는 Pro 기능입니다."
+          "a": "예. Wi‑Fi 동기화는 책, 태그, 평점, 키워드 프로필, 폴더 구조를 로컬 네트워크로 전송합니다. Mac/iOS 탐색은 작은 iCloud 메타데이터 스냅샷을 사용할 수 있지만, 책 파일은 Wi‑Fi로 전송되며 개발자 서버에 업로드되지 않습니다. Wi‑Fi 동기화는 Pro 기능입니다."
         }
-      ]
+      ],
+      "faqTitle": "자주 묻는 질문"
     },
     "archivePage": {
       "seo": {

@@ -1167,11 +1167,11 @@
       },
       "sync": {
         "eyebrow": "Penyegerakan Wi-Fi",
-        "title": "Segerak ke mana-mana arah——tanpa iCloud.",
-        "desc": "Pindahkan seluruh perpustakaan anda melalui Wi-Fi tempatan antara iPhone, iPad dan Mac ke mana-mana arah. Buku kekal pada perkakasan anda——tiada yang dihantar ke pelayan luaran.",
-        "bullet1": "iPhone → iPad, Mac → iPhone, iPad → Mac",
-        "bullet2": "Tag dan metadata bergerak bersama fail anda",
-        "bullet3": "Ciri Pro——pembelian sekali atau langganan"
+        "title": "Segerak melalui Wi‑Fi setempat, dengan fallback penemuan Apple.",
+        "desc": "Pindahkan buku, tag, penilaian, profil kata kunci, dan struktur folder antara iPhone, iPad, Mac, dan Windows melalui rangkaian setempat anda. Peranti Apple mungkin menggunakan snapshot metadata iCloud kecil untuk penemuan, tetapi fail buku dipindahkan melalui Wi‑Fi dan tidak dimuat naik ke pelayan pembangun.",
+        "bullet1": "Mac / PC ↔ iPhone / iPad, iPhone ↔ iPad, Mac ↔ Mac, PC ↔ PC",
+        "bullet2": "Buku, tag, penilaian, profil kata kunci, dan hierarki folder disegerakkan merentas peranti",
+        "bullet3": "Ciri Pro — pelayan peranti sumber mesti berjalan semasa pemindahan"
       },
       "covers": {
         "eyebrow": "Kulit dan Pembaca",
@@ -1219,7 +1219,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "Full-text grep for EPUB and TXT on iPhone and Mac. Boolean keyword profiles, genre tags, Wi-Fi sync, and TXT covers. Free to try — no server, no uploads."
+        "desc": "Grep teks penuh untuk EPUB dan TXT pada iPhone, iPad, Mac, dan Windows. Profil kata kunci boolean, tag genre, segerak Wi-Fi setempat, TTS, penanda halaman, kulit EPUB, dan padanan kulit TXT. Percuma untuk dicuba — tiada pelayan, tiada muat naik."
       },
       "faq": [
         {
@@ -1248,9 +1248,10 @@
         },
         {
           "q": "Bolehkah saya menyegerakkan perpustakaan antara iPhone, iPad dan Mac?",
-          "a": "Ya. Penyegerakan Wi-Fi memindahkan seluruh perpustakaan anda — buku, tag dan metadata — melalui Wi-Fi tempatan ke mana-mana arah (iPhone → iPad, Mac → iPhone, iPad → Mac). Tiada akaun iCloud atau sambungan internet diperlukan. Penyegerakan Wi-Fi ialah ciri Pro."
+          "a": "Ya. Segerak Wi‑Fi memindahkan buku, tag, penilaian, profil kata kunci, dan struktur folder melalui rangkaian setempat anda. Penemuan Mac/iOS boleh menggunakan snapshot metadata iCloud kecil, tetapi fail buku dipindahkan melalui Wi‑Fi dan tidak dimuat naik ke pelayan pembangun. Segerak Wi‑Fi ialah ciri Pro."
         }
-      ]
+      ],
+      "faqTitle": "Soalan lazim"
     },
     "archivePage": {
       "seo": {

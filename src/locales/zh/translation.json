@@ -1167,11 +1167,11 @@
       },
       "sync": {
         "eyebrow": "Wi-Fi同步",
-        "title": "任意方向同步——无需iCloud。",
-        "desc": "通过本地Wi-Fi在iPhone、iPad和Mac之间任意方向传输完整书库。书籍留在你的设备上——不上传到任何外部服务器。",
-        "bullet1": "iPhone → iPad，Mac → iPhone，iPad → Mac",
-        "bullet2": "标签和元数据随文件一起传输",
-        "bullet3": "Pro功能——一次性购买或订阅"
+        "title": "通过本地 Wi‑Fi 同步，并支持 Apple 发现备用机制。",
+        "desc": "在 iPhone、iPad、Mac 和 Windows 之间通过本地网络传输书籍、标签、评分、关键字配置文件和文件夹结构。Apple 设备可能使用小型 iCloud 元数据快照进行发现，但书籍文件通过 Wi‑Fi 传输，不会上传到开发者服务器。",
+        "bullet1": "Mac / PC ↔ iPhone / iPad、iPhone ↔ iPad、Mac ↔ Mac、PC ↔ PC",
+        "bullet2": "书籍、标签、评分、关键字配置文件和文件夹层级可跨设备同步",
+        "bullet3": "Pro 功能——传输期间源设备服务器必须保持运行"
       },
       "covers": {
         "eyebrow": "封面与阅读器",
@@ -1219,7 +1219,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "Full-text grep for EPUB and TXT on iPhone and Mac. Boolean keyword profiles, genre tags, Wi-Fi sync, and TXT covers. Free to try — no server, no uploads."
+        "desc": "适用于 iPhone、iPad、Mac 和 Windows 的 EPUB 与 TXT 全文 grep 搜索。支持布尔关键字配置文件、类型标签、本地 Wi-Fi 同步、TTS、书签、EPUB 封面和 TXT 封面匹配。可免费试用——无服务器、无上传。"
       },
       "faq": [
         {
@@ -1248,9 +1248,10 @@
         },
         {
           "q": "可以在iPhone、iPad和Mac之间同步书库吗？",
-          "a": "可以。Wi-Fi同步通过本地Wi-Fi在任意方向传输整个书库——书籍、标签和元数据（iPhone → iPad、Mac → iPhone、iPad → Mac）。无需iCloud账号或互联网连接。Wi-Fi同步是Pro功能。"
+          "a": "可以。Wi‑Fi 同步会通过本地网络传输书籍、标签、评分、关键字配置文件和文件夹结构。Mac/iOS 发现可能使用小型 iCloud 元数据快照，但书籍文件通过 Wi‑Fi 传输，不会上传到开发者服务器。Wi‑Fi 同步是 Pro 功能。"
         }
-      ]
+      ],
+      "faqTitle": "常见问题"
     },
     "archivePage": {
       "seo": {

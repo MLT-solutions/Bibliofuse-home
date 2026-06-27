@@ -1167,11 +1167,11 @@
       },
       "sync": {
         "eyebrow": "Wi-Fi Sync",
-        "title": "Sync in elke richting — geen iCloud nodig.",
-        "desc": "Breng je volledige bibliotheek over via lokale Wi-Fi tussen iPhone, iPad en Mac in elke richting. Boeken blijven op je hardware — niets gaat naar een externe server.",
-        "bullet1": "iPhone → iPad, Mac → iPhone, iPad → Mac",
-        "bullet2": "Tags en metadata reizen mee met je bestanden",
-        "bullet3": "Pro-functie — eenmalige aankoop of abonnement"
+        "title": "Synchroniseer via lokale Wi‑Fi, met Apple-detectie als fallback.",
+        "desc": "Verplaats boeken, tags, ratings, trefwoordprofielen en mapstructuur tussen iPhone, iPad, Mac en Windows via je lokale netwerk. Apple-apparaten kunnen kleine iCloud-metadatasnapshots gebruiken voor detectie, maar boekbestanden worden via Wi‑Fi overgedragen en niet naar een ontwikkelaarsserver geüpload.",
+        "bullet1": "Mac / PC ↔ iPhone / iPad, iPhone ↔ iPad, Mac ↔ Mac, PC ↔ PC",
+        "bullet2": "Boeken, tags, ratings, trefwoordprofielen en maphiërarchie synchroniseren tussen apparaten",
+        "bullet3": "Pro-functie — de server van het bronapparaat moet actief zijn tijdens overdracht"
       },
       "covers": {
         "eyebrow": "Omslagen en Lezer",
@@ -1219,7 +1219,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "Full-text grep for EPUB and TXT on iPhone and Mac. Boolean keyword profiles, genre tags, Wi-Fi sync, and TXT covers. Free to try — no server, no uploads."
+        "desc": "Volledige tekst-grep voor EPUB en TXT op iPhone, iPad, Mac en Windows. Booleaanse trefwoordprofielen, genretags, lokale Wi-Fi-synchronisatie, TTS, bladwijzers, EPUB-omslagen en TXT-omslagkoppeling. Gratis te proberen — geen server, geen uploads."
       },
       "faq": [
         {
@@ -1248,9 +1248,10 @@
         },
         {
           "q": "Kan ik mijn bibliotheek synchroniseren tussen iPhone, iPad en Mac?",
-          "a": "Ja. Wi-Fi-synchronisatie draagt je volledige bibliotheek — boeken, tags en metadata — over via lokale Wi-Fi in elke richting (iPhone → iPad, Mac → iPhone, iPad → Mac). Er is geen iCloud-account of internetverbinding nodig. Wi-Fi-synchronisatie is een Pro-functie."
+          "a": "Ja. Wi‑Fi-synchronisatie draagt boeken, tags, ratings, trefwoordprofielen en mapstructuur over via je lokale netwerk. Mac/iOS-detectie kan kleine iCloud-metadatasnapshots gebruiken, maar boekbestanden gaan via Wi‑Fi en worden niet naar een ontwikkelaarsserver geüpload. Wi‑Fi-synchronisatie is een Pro-functie."
         }
-      ]
+      ],
+      "faqTitle": "Veelgestelde vragen"
     },
     "archivePage": {
       "seo": {

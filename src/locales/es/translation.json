@@ -1167,11 +1167,11 @@
       },
       "sync": {
         "eyebrow": "Sincronización Wi-Fi",
-        "title": "Sincroniza en cualquier dirección — sin iCloud.",
-        "desc": "Transfiere tu biblioteca completa por Wi-Fi local entre iPhone, iPad y Mac en cualquier dirección. Los libros permanecen en tu hardware — nada va a un servidor externo.",
-        "bullet1": "iPhone → iPad, Mac → iPhone, iPad → Mac",
-        "bullet2": "Las etiquetas y metadatos viajan con tus archivos",
-        "bullet3": "Función Pro — compra única o suscripción"
+        "title": "Sincroniza por Wi‑Fi local, con descubrimiento Apple de respaldo.",
+        "desc": "Transfiere libros, etiquetas, calificaciones, perfiles de palabras clave y estructura de carpetas entre iPhone, iPad, Mac y Windows por tu red local. Los dispositivos Apple pueden usar pequeñas instantáneas de metadatos en iCloud para descubrimiento, pero los archivos de libros se transfieren por Wi‑Fi y no se suben a un servidor del desarrollador.",
+        "bullet1": "Mac / PC ↔ iPhone / iPad, iPhone ↔ iPad, Mac ↔ Mac, PC ↔ PC",
+        "bullet2": "Libros, etiquetas, calificaciones, perfiles de palabras clave y jerarquía de carpetas se sincronizan entre dispositivos",
+        "bullet3": "Función Pro — el servidor del dispositivo de origen debe estar activo durante la transferencia"
       },
       "covers": {
         "eyebrow": "Portadas y Lector",
@@ -1219,7 +1219,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "Full-text grep for EPUB and TXT on iPhone and Mac. Boolean keyword profiles, genre tags, Wi-Fi sync, and TXT covers. Free to try — no server, no uploads."
+        "desc": "Búsqueda grep de texto completo para EPUB y TXT en iPhone, iPad, Mac y Windows. Perfiles de palabras clave booleanas, etiquetas de género, sincronización Wi-Fi local, TTS, marcadores, portadas EPUB y asociación de portadas TXT. Gratis para probar — sin servidor, sin subidas."
       },
       "faq": [
         {
@@ -1248,9 +1248,10 @@
         },
         {
           "q": "¿Puedo sincronizar mi biblioteca entre iPhone, iPad y Mac?",
-          "a": "Sí. La sincronización Wi-Fi transfiere toda tu biblioteca — libros, etiquetas y metadatos — por Wi-Fi local en cualquier dirección (iPhone → iPad, Mac → iPhone, iPad → Mac). No se necesita cuenta de iCloud ni conexión a internet. La sincronización Wi-Fi es una función Pro."
+          "a": "Sí. La sincronización Wi‑Fi transfiere libros, etiquetas, calificaciones, perfiles de palabras clave y estructura de carpetas por tu red local. El descubrimiento en Mac/iOS puede usar pequeñas instantáneas de metadatos en iCloud, pero los archivos de libros se transfieren por Wi‑Fi y no se suben a un servidor del desarrollador. Wi‑Fi sync es una función Pro."
         }
-      ]
+      ],
+      "faqTitle": "Preguntas frecuentes"
     },
     "archivePage": {
       "seo": {

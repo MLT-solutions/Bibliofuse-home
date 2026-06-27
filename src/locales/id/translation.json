@@ -1167,11 +1167,11 @@
       },
       "sync": {
         "eyebrow": "Sinkronisasi Wi-Fi",
-        "title": "Sinkronkan ke segala arah——tanpa iCloud.",
-        "desc": "Transfer seluruh perpustakaan Anda melalui Wi-Fi lokal antara iPhone, iPad, dan Mac ke segala arah. Buku tetap di perangkat Anda——tidak ada yang dikirim ke server eksternal.",
-        "bullet1": "iPhone → iPad, Mac → iPhone, iPad → Mac",
-        "bullet2": "Tag dan metadata ikut bersama file Anda",
-        "bullet3": "Fitur Pro——pembelian sekali atau langganan"
+        "title": "Sinkronkan lewat Wi‑Fi lokal, dengan fallback penemuan Apple.",
+        "desc": "Transfer buku, tag, rating, profil kata kunci, dan struktur folder antara iPhone, iPad, Mac, dan Windows melalui jaringan lokal Anda. Perangkat Apple dapat memakai snapshot metadata iCloud kecil untuk penemuan, tetapi file buku ditransfer melalui Wi‑Fi dan tidak diunggah ke server pengembang.",
+        "bullet1": "Mac / PC ↔ iPhone / iPad, iPhone ↔ iPad, Mac ↔ Mac, PC ↔ PC",
+        "bullet2": "Buku, tag, rating, profil kata kunci, dan hierarki folder disinkronkan antar perangkat",
+        "bullet3": "Fitur Pro — server perangkat sumber harus berjalan selama transfer"
       },
       "covers": {
         "eyebrow": "Sampul dan Pembaca",
@@ -1219,7 +1219,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "Full-text grep for EPUB and TXT on iPhone and Mac. Boolean keyword profiles, genre tags, Wi-Fi sync, and TXT covers. Free to try — no server, no uploads."
+        "desc": "Grep teks penuh untuk EPUB dan TXT di iPhone, iPad, Mac, dan Windows. Profil kata kunci boolean, tag genre, sinkronisasi Wi-Fi lokal, TTS, bookmark, sampul EPUB, dan pencocokan sampul TXT. Gratis untuk dicoba — tanpa server, tanpa unggahan."
       },
       "faq": [
         {
@@ -1248,9 +1248,10 @@
         },
         {
           "q": "Bisakah saya menyinkronkan perpustakaan antara iPhone, iPad, dan Mac?",
-          "a": "Ya. Sinkronisasi Wi-Fi mentransfer seluruh perpustakaan Anda — buku, tag, dan metadata — melalui Wi-Fi lokal ke segala arah (iPhone → iPad, Mac → iPhone, iPad → Mac). Tidak diperlukan akun iCloud atau koneksi internet. Sinkronisasi Wi-Fi adalah fitur Pro."
+          "a": "Ya. Sinkronisasi Wi‑Fi mentransfer buku, tag, rating, profil kata kunci, dan struktur folder melalui jaringan lokal Anda. Penemuan Mac/iOS dapat memakai snapshot metadata iCloud kecil, tetapi file buku ditransfer melalui Wi‑Fi dan tidak diunggah ke server pengembang. Sinkronisasi Wi‑Fi adalah fitur Pro."
         }
-      ]
+      ],
+      "faqTitle": "Pertanyaan yang sering diajukan"
     },
     "archivePage": {
       "seo": {

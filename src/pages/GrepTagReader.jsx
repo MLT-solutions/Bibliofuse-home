@@ -74,6 +74,8 @@ function FeatureSection({ eyebrow, title, desc, bullets, badge, accent = 'indigo
 const GrepTagReader = () => {
   const { t } = useTranslation();
   const { lang } = useParams();
+  const faqItemsRaw = t('redesign.grepTagPage.faq', { returnObjects: true });
+  const faqItems = Array.isArray(faqItemsRaw) ? faqItemsRaw : [];
 
   const pricingRows = [
     { label: t('redesign.grepTagPage.pricing.feat1', 'Grep scan'), free: t('redesign.grepTagPage.pricing.feat1free', 'Unlimited'), pro: true },
@@ -108,7 +110,15 @@ const GrepTagReader = () => {
         canonical="/grepreader"
         schemaType="suite"
         schemaName="BiblioFuse GrepTag Reader"
-        faqItems={t('redesign.grepTagPage.faq', { returnObjects: true })}
+        operatingSystem="iOS, iPadOS, macOS, Windows"
+        featureList={[
+          t('redesign.grepTagPage.grep.title'),
+          t('redesign.grepTagPage.tags.title'),
+          t('redesign.grepTagPage.sync.title'),
+          t('redesign.grepTagPage.covers.title'),
+          t('redesign.grepTagPage.pricing.feat8', 'Export Tag DB'),
+        ]}
+        faqItems={faqItems}
       />
 
       {/* Hero */}
@@ -280,6 +290,31 @@ const GrepTagReader = () => {
                 <div className="border-l border-slate-100 px-5 py-3.5 text-sm text-slate-700">{row.col1}</div>
                 <div className="border-l border-indigo-100 bg-indigo-50/50 px-5 py-3.5 text-sm font-medium text-indigo-900">{row.col2}</div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-white py-20 sm:py-24">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 text-center">
+            <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-indigo-600">FAQ</div>
+            <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-black tracking-tight text-slate-950">
+              {t('redesign.grepTagPage.faqTitle', 'Frequently Asked Questions')}
+            </h2>
+          </div>
+          <div className="space-y-4">
+            {faqItems.map((item) => (
+              <details key={item.q} className="group rounded-2xl border border-slate-200 bg-white shadow-sm">
+                <summary className="flex cursor-pointer list-none items-start justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900">
+                  {item.q}
+                  <svg className="flex-shrink-0 transition-transform group-open:rotate-180" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </summary>
+                <p className="px-5 pb-5 text-sm leading-relaxed text-slate-600">{item.a}</p>
+              </details>
             ))}
           </div>
         </div>

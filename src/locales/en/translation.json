@@ -1162,11 +1162,11 @@
       },
       "sync": {
         "eyebrow": "Wi-Fi Sync",
-        "title": "Sync any direction — no iCloud required.",
-        "desc": "Transfer your full library over local Wi-Fi between iPhone, iPad, and Mac in any direction. Books stay on your hardware — nothing goes to a developer-run server.",
-        "bullet1": "iPhone → iPad, Mac → iPhone, iPad → Mac",
-        "bullet2": "Tags and metadata travel with your files",
-        "bullet3": "Pro feature — one-time purchase or subscription"
+        "title": "Sync over local Wi-Fi, with Apple discovery fallback.",
+        "desc": "Transfer books, tags, ratings, keyword profiles, and folder structure between iPhone, iPad, Mac, and Windows over your local network. Apple devices may use tiny iCloud metadata snapshots for discovery, but book files transfer over Wi-Fi and do not upload to a developer server.",
+        "bullet1": "Mac / PC ↔ iPhone / iPad, iPhone ↔ iPad, Mac ↔ Mac, PC ↔ PC",
+        "bullet2": "Books, tags, ratings, keyword profiles, and folder hierarchy sync across devices",
+        "bullet3": "Pro feature — source device server must be running during transfer"
       },
       "covers": {
         "eyebrow": "Covers & Reader",
@@ -1214,7 +1214,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "Full-text grep for EPUB and TXT on iPhone and Mac. Boolean keyword profiles, genre tags, Wi-Fi sync, and TXT covers. Free to try — no server, no uploads."
+        "desc": "Full-text grep for EPUB and TXT on iPhone, iPad, Mac, and Windows. Boolean keyword profiles, genre tags, local Wi-Fi sync, TTS, bookmarks, EPUB covers, and TXT cover matching. Free to try — no server, no uploads."
       },
       "faq": [
         {
@@ -1243,9 +1243,10 @@
         },
         {
           "q": "Can I sync my library between iPhone, iPad, and Mac?",
-          "a": "Yes. Wi-Fi sync transfers your full library — books, tags, and metadata — over local Wi-Fi in any direction (iPhone → iPad, Mac → iPhone, iPad → Mac). No iCloud account or internet connection is required. Wi-Fi sync is a Pro feature."
+          "a": "Yes. Wi-Fi sync transfers books, tags, ratings, keyword profiles, and folder structure over your local network. Mac/iOS discovery can use small iCloud metadata snapshots, but book files transfer over Wi-Fi and are not uploaded to a developer server. Wi-Fi sync is a Pro feature."
         }
-      ]
+      ],
+      "faqTitle": "Frequently Asked Questions"
     },
     "archivePage": {
       "seo": {

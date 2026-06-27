@@ -1167,11 +1167,11 @@
       },
       "sync": {
         "eyebrow": "Wi-Fi同期",
-        "title": "どの方向にも同期——iCloud不要。",
-        "desc": "ローカルWi-Fi経由でiPhone、iPad、Mac間でライブラリ全体をどの方向にも転送。本はあなたのハードウェアに残ります——外部サーバーには何も送信されません。",
-        "bullet1": "iPhone → iPad、Mac → iPhone、iPad → Mac",
-        "bullet2": "タグとメタデータがファイルと一緒に転送",
-        "bullet3": "Pro機能——一回限りの購入またはサブスクリプション"
+        "title": "ローカル Wi‑Fi で同期し、Apple 検出フォールバックにも対応。",
+        "desc": "iPhone、iPad、Mac、Windows 間で、書籍、タグ、評価、キーワードプロファイル、フォルダ構造をローカルネットワーク経由で転送します。Apple デバイスでは検出のために小さな iCloud メタデータスナップショットを使う場合がありますが、書籍ファイルは Wi‑Fi で転送され、開発者サーバーにはアップロードされません。",
+        "bullet1": "Mac / PC ↔ iPhone / iPad、iPhone ↔ iPad、Mac ↔ Mac、PC ↔ PC",
+        "bullet2": "書籍、タグ、評価、キーワードプロファイル、フォルダ階層をデバイス間で同期",
+        "bullet3": "Pro 機能 — 転送中は転送元デバイスのサーバーを起動しておく必要があります"
       },
       "covers": {
         "eyebrow": "カバーとリーダー",
@@ -1219,7 +1219,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — Search, Tag & Organise Your EPUB Library",
-        "desc": "Full-text grep for EPUB and TXT on iPhone and Mac. Boolean keyword profiles, genre tags, Wi-Fi sync, and TXT covers. Free to try — no server, no uploads."
+        "desc": "iPhone、iPad、Mac、Windows 向けの EPUB と TXT 全文 grep。ブールキーワードプロファイル、ジャンルタグ、ローカル Wi-Fi 同期、TTS、ブックマーク、EPUB カバー、TXT カバー照合に対応。無料でお試し可能 — サーバーなし、アップロードなし。"
       },
       "faq": [
         {
@@ -1248,9 +1248,10 @@
         },
         {
           "q": "iPhone、iPad、Mac間でライブラリを同期できますか？",
-          "a": "はい。Wi-Fi同期は、ローカルWi-Fi経由でライブラリ全体（本、タグ、メタデータ）をどの方向にも転送します（iPhone → iPad、Mac → iPhone、iPad → Mac）。iCloudアカウントもインターネット接続も不要です。Wi-Fi同期はPro機能です。"
+          "a": "はい。Wi‑Fi 同期は、書籍、タグ、評価、キーワードプロファイル、フォルダ構造をローカルネットワーク上で転送します。Mac/iOS の検出では小さな iCloud メタデータスナップショットを使う場合がありますが、書籍ファイルは Wi‑Fi で転送され、開発者サーバーにはアップロードされません。Wi‑Fi 同期は Pro 機能です。"
         }
-      ]
+      ],
+      "faqTitle": "よくある質問"
     },
     "archivePage": {
       "seo": {
