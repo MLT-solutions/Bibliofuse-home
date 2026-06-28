@@ -825,6 +825,16 @@
     },
     "blog": {
       "posts": {
+        "reading-ebooks-offline-iphone": {
+          "title": "Ebooks Volledig Offline Lezen op iPhone: Geen Cloud Vereist",
+          "excerpt": "BiblioFuse slaat je volledige bibliotheek lokaal op het apparaat op — geen account, geen streaming, geen laadschermen. Lees elke EPUB, CBZ of PDF overal.",
+          "seoDescription": "Lees ebooks en strips volledig offline op iPhone met BiblioFuse. Bestanden worden lokaal opgeslagen — geen cloudaccount vereist."
+        },
+        "convert-cbr-to-cbz-online": {
+          "title": "CBR Omzetten naar CBZ Online: Gratis, Zonder Software",
+          "excerpt": "CBR-bestanden zijn RAR-archieven; CBZ-bestanden zijn ZIP-archieven — je kunt de extensie niet zomaar hernoemen. BiblioFuse's converter herarchiveert je strips in seconden zonder upload.",
+          "seoDescription": "Zet CBR om naar CBZ online gratis zonder bestanden te uploaden. BiblioFuse gebruikt WebAssembly voor conversie in je browser."
+        },
         "organize-ebooks-by-content-not-metadata": {
           "title": "Organiseer Ebooks op Inhoud, Niet op Metadata of ISBN",
           "excerpt": "De meeste ebook-managers vereisen handmatige metadata-invoer of ISBN-opzoeking. GrepTag Reader leest de daadwerkelijke tekst in je EPUB- en TXT-bestanden en voegt automatisch tags toe aan elk boek op basis van wat erin staat geschreven.",

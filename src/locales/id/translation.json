@@ -825,6 +825,16 @@
     },
     "blog": {
       "posts": {
+        "reading-ebooks-offline-iphone": {
+          "title": "Membaca Ebook Sepenuhnya Offline di iPhone: Tanpa Cloud",
+          "excerpt": "BiblioFuse menyimpan seluruh perpustakaan secara lokal di perangkat — tanpa akun, tanpa streaming, tanpa layar loading. Baca EPUB, CBZ, atau PDF di mana saja.",
+          "seoDescription": "Baca ebook dan komik sepenuhnya offline di iPhone dengan BiblioFuse. File disimpan lokal — tanpa akun cloud diperlukan."
+        },
+        "convert-cbr-to-cbz-online": {
+          "title": "Cara Mengonversi CBR ke CBZ Online: Gratis, Tanpa Software",
+          "excerpt": "File CBR adalah arsip RAR; CBZ adalah arsip ZIP — tidak bisa hanya mengubah ekstensi. Konverter BiblioFuse mengarsipkan ulang komik Anda dalam detik tanpa unggahan.",
+          "seoDescription": "Konversi CBR ke CBZ online gratis tanpa mengunggah file. BiblioFuse menggunakan WebAssembly untuk mengonversi di browser."
+        },
         "organize-ebooks-by-content-not-metadata": {
           "title": "Atur Ebook berdasarkan Konten, Bukan Metadata atau ISBN",
           "excerpt": "Kebanyakan pengelola ebook membutuhkan entri metadata manual atau pencarian ISBN. GrepTag Reader membaca teks sebenarnya di dalam file EPUB dan TXT Anda dan secara otomatis menandai setiap buku berdasarkan apa yang ditulis di dalamnya.",

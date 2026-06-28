@@ -825,6 +825,16 @@
     },
     "blog": {
       "posts": {
+        "reading-ebooks-offline-iphone": {
+          "title": "在 iPhone 上完全离线阅读电子书：无需云服务",
+          "excerpt": "BiblioFuse 将整个书库存储在设备本地——无需账户，无需流式传输，无需加载界面。在任何地方阅读 EPUB、CBZ 或 PDF。",
+          "seoDescription": "使用 BiblioFuse 在 iPhone 上完全离线阅读电子书和漫画。文件存储在本地，无需云账户。"
+        },
+        "convert-cbr-to-cbz-online": {
+          "title": "如何在线将 CBR 转换为 CBZ：免费，无需软件",
+          "excerpt": "CBR 文件是 RAR 压缩包，CBZ 是 ZIP 压缩包——不能仅靠重命名扩展名转换。BiblioFuse 在线工具无需上传，几秒内完成重新归档。",
+          "seoDescription": "免费在线将 CBR 转换为 CBZ，无需上传文件。BiblioFuse 使用 WebAssembly 在浏览器中完成转换。"
+        },
         "organize-ebooks-by-content-not-metadata": {
           "title": "按内容整理电子书，而非元数据或 ISBN",
           "excerpt": "大多数电子书管理器要求手动输入元数据或查询 ISBN。GrepTag Reader 读取 EPUB 和 TXT 文件内的实际文字，并根据书中写的内容自动为每本书打标签，无需任何元数据录入。",

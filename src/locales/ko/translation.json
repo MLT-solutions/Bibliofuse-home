@@ -825,6 +825,16 @@
     },
     "blog": {
       "posts": {
+        "reading-ebooks-offline-iphone": {
+          "title": "iPhone에서 완전히 오프라인으로 전자책 읽기: 클라우드 불필요",
+          "excerpt": "BiblioFuse는 전체 라이브러리를 기기에 로컬로 저장합니다 — 계정, 스트리밍, 로딩 화면 불필요. 어디서나 EPUB, CBZ, PDF를 읽으세요.",
+          "seoDescription": "BiblioFuse로 iPhone에서 완전 오프라인으로 전자책과 만화 읽기. 파일은 로컬 저장 — 클라우드 계정 불필요."
+        },
+        "convert-cbr-to-cbz-online": {
+          "title": "CBR을 CBZ로 온라인 변환하는 방법: 무료, 소프트웨어 불필요",
+          "excerpt": "CBR 파일은 RAR 아카이브, CBZ는 ZIP 아카이브 — 확장자만 바꾸면 안 됩니다. BiblioFuse 변환기는 업로드 없이 브라우저에서 수초 내 변환합니다.",
+          "seoDescription": "CBR을 CBZ로 무료 온라인 변환. 파일 업로드 없음. BiblioFuse가 WebAssembly로 브라우저에서 처리."
+        },
         "organize-ebooks-by-content-not-metadata": {
           "title": "메타데이터나 ISBN이 아닌 내용으로 전자책 정리하기",
           "excerpt": "대부분의 전자책 관리 앱은 메타데이터 수동 입력이나 ISBN 조회가 필요합니다. GrepTag Reader는 EPUB 및 TXT 파일 내의 실제 텍스트를 읽고 안에 쓰인 내용을 바탕으로 모든 책에 자동으로 태그를 붙입니다.",

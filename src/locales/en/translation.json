@@ -195,6 +195,16 @@
         "update": "Update"
       },
       "posts": {
+        "reading-ebooks-offline-iphone": {
+          "title": "Reading Ebooks Completely Offline on iPhone: No Cloud Required",
+          "excerpt": "BiblioFuse stores your entire library locally on device — no account, no streaming, no loading screens. Read any EPUB, CBZ, or PDF anywhere, even at 30,000 feet.",
+          "seoDescription": "Read ebooks and comics completely offline on iPhone with BiblioFuse. Files are stored locally — no cloud account needed. Works in airplane mode, tunnels, and rural areas."
+        },
+        "convert-cbr-to-cbz-online": {
+          "title": "How to Convert CBR to CBZ Online: Free, No Software Required",
+          "excerpt": "CBR files are RAR archives; CBZ files are ZIP archives — you can't just rename the extension. BiblioFuse's browser-based converter re-archives your comics in seconds with no upload required.",
+          "seoDescription": "Convert CBR to CBZ online for free without uploading files. BiblioFuse uses WebAssembly to convert RAR-based comics to ZIP-based CBZ entirely in your browser."
+        },
         "organize-ebooks-by-content-not-metadata": {
           "title": "Organize Ebooks by Content, Not Metadata or ISBN",
           "excerpt": "Most ebook managers require manual metadata entry or ISBN lookup. GrepTag Reader reads the actual text inside your EPUB and TXT files and auto-tags every book based on what is written inside — no metadata entry required.",
