@@ -78,4 +78,4 @@ Yes. SmartDecrypt PDF ZIP CBZ supports password profiles for all three formats. 
 
 ## Never Type the Same Password Twice
 
-Password profiles turn SmartDecrypt PDF ZIP CBZ into a set-it-and-forget-it decryption system. Create the profile once when a new collection arrives, and every future batch from that source decrypts in one tap — on iPhone, iPad, or Mac, always on-device, never uploaded. Search for **SmartDecrypt PDF ZIP CBZ** on the App Store to get started.
+Password profiles turn SmartDecrypt PDF ZIP CBZ into a set-it-and-forget-it decryption system. Create the profile once when a new collection arrives, and every future batch from that source decrypts in one tap — on iPhone, iPad, or Mac, always on-device, never uploaded. Search for [SmartDecrypt PDF ZIP CBZ](/en/smartdecrypt/) on the App Store to get started.

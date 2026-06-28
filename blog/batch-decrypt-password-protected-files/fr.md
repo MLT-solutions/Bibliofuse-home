@@ -79,3 +79,5 @@ Oui. La version Mac prend en charge le déchiffrement par lot avec importation p
 ## Faites-en plus en un seul appui
 
 Le déchiffrement par lot transforme une tâche fastidieuse de plusieurs heures en un seul appui. SmartDecrypt PDF ZIP CBZ traite tous vos PDF, CBZ et ZIP protégés en une seule opération. Recherchez **SmartDecrypt PDF ZIP CBZ** sur l'App Store pour commencer, puis ouvrez vos archives CBZ déchiffrées dans [BiblioFuse](/fr/).
+
+[SmartDecrypt PDF ZIP CBZ](/fr/smartdecrypt/) — disponible sur l'App Store.

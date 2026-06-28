@@ -82,4 +82,4 @@ Yes. The Mac version of SmartDecrypt supports batch decryption with drag-and-dro
 
 ## Get More Done, One Tap at a Time
 
-Batch decryption transforms a tedious hour-long task into a single tap. SmartDecrypt PDF ZIP CBZ handles every password-protected PDF, CBZ, and ZIP in your collection at once — on iPhone, iPad, or Mac, without uploading a single file. Search for **SmartDecrypt PDF ZIP CBZ** on the App Store to start. Once your CBZ archives are decrypted, open them in [BiblioFuse](/en/) for the best comic reading experience on iPhone.
+Batch decryption transforms a tedious hour-long task into a single tap. SmartDecrypt PDF ZIP CBZ handles every password-protected PDF, CBZ, and ZIP in your collection at once — on iPhone, iPad, or Mac, without uploading a single file. Search for [SmartDecrypt PDF ZIP CBZ](/en/smartdecrypt/) on the App Store to start. Once your CBZ archives are decrypted, open them in [BiblioFuse](/en/) for the best comic reading experience on iPhone.

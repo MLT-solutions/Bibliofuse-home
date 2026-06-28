@@ -89,3 +89,5 @@ Ya. Tambah mana-mana pemacu yang dipasang atau folder sebagai lokasi pengimbasan
 ## Bina Perpustakaan yang Lebih Kemas dalam Satu Petang
 
 Fail komik pendua membuang ruang storan, mengacaukan paparan perpustakaan anda, dan menyukarkan pengurusan dari masa ke masa. Archive Duplicate Scanner mengendalikan bahagian yang sukar — mengesan arkib yang serupa secara visual tanpa mengira nama fail — dan memberi anda laluan yang selamat, melalui Sampah sahaja, untuk membersihkan. Cari **Archive Duplicate Scanner** di Mac App Store untuk menjalankan imbasan pertama anda hari ini. Setelah perpustakaan anda bersih, gunakan [BiblioFuse](/ms/) untuk membaca dan mengurus koleksi komik anda pada iPhone dan Mac.
+
+[Archive Duplicate Scanner](/ms/archive/) — tersedia di Mac App Store dan Microsoft Store.

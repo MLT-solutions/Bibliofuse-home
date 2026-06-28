@@ -79,3 +79,5 @@ Oui. SmartDecrypt PDF ZIP CBZ prend en charge les profils de mots de passe pour 
 ## Ne Tapez Plus Jamais le Même Mot de Passe Deux Fois
 
 Les profils de mots de passe transforment SmartDecrypt PDF ZIP CBZ en un système de déchiffrement configuré une fois pour toutes. Créez le profil une fois à l'arrivée d'une nouvelle collection, et tous les lots futurs de cette source se déchiffrent en un seul appui — sur iPhone, iPad ou Mac, toujours sur l'appareil, sans aucun envoi. Recherchez **SmartDecrypt PDF ZIP CBZ** sur l'App Store pour commencer.
+
+[SmartDecrypt PDF ZIP CBZ](/fr/smartdecrypt/) — disponible sur l'App Store.

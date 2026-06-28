@@ -96,4 +96,4 @@ Ja. De app verplaatst bestanden alleen naar de Prullenmand — er wordt nooit ie
 
 Als je Mac-bibliotheek strips, foto's en archieven combineert, is Archive Duplicate Scanner het juiste hulpmiddel. Perceptuele hashing detecteert visuele duplicaten die tools op basis van bytes missen, de formaatlijst dekt alles van CBZ tot HEIC en DNG, en de verwijdering uitsluitend naar de Prullenmand houdt je collectie veilig.
 
-[Download Archive Duplicate Scanner](/nl/) en ruim vandaag nog je bibliotheek op. Voor het beheren en lezen van je strip- en e-bookbestanden is [BiblioFuse](/nl/) een aanvullende app die CBZ, CBR, EPUB, PDF en meer leest op iPhone en iPad.
+[Download Archive Duplicate Scanner](/nl/archive/) en ruim vandaag nog je bibliotheek op. Voor het beheren en lezen van je strip- en e-bookbestanden is [BiblioFuse](/nl/) een aanvullende app die CBZ, CBR, EPUB, PDF en meer leest op iPhone en iPad.

@@ -75,3 +75,5 @@ SmartDecrypt vereist het juiste wachtwoord om een bestand te ontsleutelen — he
 ## Aan de Slag
 
 Als met wachtwoord beveiligde PDF's een terugkerend knelpunt zijn op uw iPhone of Mac, is SmartDecrypt PDF ZIP CBZ de schoonste beschikbare oplossing. Het draait volledig op het apparaat, verwerkt PDF, ZIP en CBZ, ondersteunt batchontsleuteling en duurt minder dan een minuut om te gebruiken. Zoek naar **SmartDecrypt PDF ZIP CBZ** in de App Store om te beginnen.
+
+[SmartDecrypt PDF ZIP CBZ](/nl/smartdecrypt/) — beschikbaar in de App Store.

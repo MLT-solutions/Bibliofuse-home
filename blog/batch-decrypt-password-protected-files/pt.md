@@ -79,3 +79,5 @@ Sim. A versão Mac suporta descriptografia em lote com importação por arrastar
 ## Faça mais com um único toque
 
 A descriptografia em lote transforma uma tarefa tediosa de horas em um único toque. SmartDecrypt PDF ZIP CBZ processa todos os seus PDFs, CBZs e ZIPs protegidos de uma vez. Pesquise **SmartDecrypt PDF ZIP CBZ** na App Store para começar, depois abra seus arquivos CBZ descriptografados em [BiblioFuse](/pt/).
+
+[SmartDecrypt PDF ZIP CBZ](/pt/smartdecrypt/) — disponível na App Store.

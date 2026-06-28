@@ -79,3 +79,5 @@ BiblioFuse를 사용해 iPhone에 디지털 만화 라이브러리를 구축 중
 ## 한 번의 탭으로 더 많은 일을 처리하세요
 
 일괄 복호화는 지루한 수 시간의 작업을 한 번의 탭으로 바꿉니다. SmartDecrypt PDF ZIP CBZ는 컬렉션의 모든 비밀번호로 보호된 PDF, CBZ, ZIP을 한 번에 처리합니다. App Store에서 **SmartDecrypt PDF ZIP CBZ**를 검색하여 시작하고, CBZ 아카이브를 복호화한 후 [BiblioFuse](/ko/)에서 열어 iPhone에서 최상의 만화 독서 경험을 즐기세요.
+
+[SmartDecrypt PDF ZIP CBZ](/ko/smartdecrypt/) — App Store에서 다운로드.

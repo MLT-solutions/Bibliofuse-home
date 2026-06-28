@@ -96,4 +96,4 @@ Ya. Aplikasi hanya memindahkan file ke Tempat Sampah — ia tidak pernah menghap
 
 Jika perpustakaan Mac Anda mencampur komik, foto, dan arsip, Archive Duplicate Scanner adalah alat yang tepat. Perceptual hashing menangkap duplikat visual yang dilewatkan oleh alat berbasis byte, daftar format mencakup segalanya mulai dari CBZ hingga HEIC hingga DNG, dan penghapusan hanya ke Tempat Sampah menjaga keamanan koleksi Anda.
 
-[Unduh Archive Duplicate Scanner](/id/) dan bersihkan perpustakaan Anda hari ini. Untuk mengelola dan membaca file komik dan ebook, [BiblioFuse](/id/) adalah aplikasi pendamping yang membaca CBZ, CBR, EPUB, PDF, dan lainnya di iPhone dan iPad.
+[Unduh Archive Duplicate Scanner](/id/archive/) dan bersihkan perpustakaan Anda hari ini. Untuk mengelola dan membaca file komik dan ebook, [BiblioFuse](/id/) adalah aplikasi pendamping yang membaca CBZ, CBR, EPUB, PDF, dan lainnya di iPhone dan iPad.

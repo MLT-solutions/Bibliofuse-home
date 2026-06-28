@@ -1,6 +1,6 @@
 # SmartDecrypt PDF ZIP теперь доступен на португальском, испанском, индонезийском и китайском
 
-SmartDecrypt PDF ZIP CBZ теперь поддерживает португальский, испанский, bahasa Indonesia и упрощённый китайский — полный интерфейс приложения доступен на четырёх новых языках. Приложение разблокирует защищённые паролем PDF, ZIP и 7z-архивы на iPhone, iPad, Mac и Windows полностью на устройстве, без загрузки файлов. [Скачайте SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) в App Store или получите в Microsoft Store для Windows.
+SmartDecrypt PDF ZIP CBZ теперь поддерживает португальский, испанский, bahasa Indonesia и упрощённый китайский — полный интерфейс приложения доступен на четырёх новых языках. Приложение разблокирует защищённые паролем PDF, ZIP и 7z-архивы на iPhone, iPad, Mac и Windows полностью на устройстве, без загрузки файлов. [Скачайте SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) в App Store или получите в Microsoft Store для Windows. Посетите [страницу SmartDecrypt](/ru/smartdecrypt/) для ознакомления со всеми функциями.
 
 ## Почему эти языки были важны
 

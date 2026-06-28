@@ -89,3 +89,5 @@ Sim. Adicione qualquer disco montado ou pasta como localização de análise. Ar
 ## Organize a Sua Biblioteca Numa Tarde
 
 Os duplicados de banda desenhada desperdiçam espaço de armazenamento, sobrecarregam a vista da biblioteca e dificultam a organização ao longo do tempo. Archive Duplicate Scanner trata da parte difícil — detetar arquivos visualmente idênticos independentemente do nome de ficheiro — e oferece-lhe um caminho seguro para a limpeza, apenas através do Lixo. Encontre o **Archive Duplicate Scanner** na Mac App Store para realizar a sua primeira análise hoje. Depois de a biblioteca estar organizada, use o [BiblioFuse](/pt/) para ler e organizar a sua coleção de banda desenhada no iPhone e Mac.
+
+[Archive Duplicate Scanner](/pt/archive/) — disponível na Mac App Store e na Microsoft Store.

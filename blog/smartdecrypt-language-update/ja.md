@@ -1,6 +1,6 @@
 # SmartDecrypt PDF ZIP がポルトガル語・スペイン語・インドネシア語・中国語に対応
 
-SmartDecrypt PDF ZIP CBZ がポルトガル語、スペイン語、バハサ・インドネシア語、簡体字中国語に対応しました。4 つの新言語でアプリの完全な UI を提供します。iPhone、iPad、Mac、Windows でパスワード保護された PDF、ZIP、7z をすべてデバイス上で解除でき、ファイルのアップロードは不要です。App Store から [SmartDecrypt PDF ZIP をダウンロード](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)するか、Windows 向けに Microsoft Store から入手できます。
+SmartDecrypt PDF ZIP CBZ がポルトガル語、スペイン語、バハサ・インドネシア語、簡体字中国語に対応しました。4 つの新言語でアプリの完全な UI を提供します。iPhone、iPad、Mac、Windows でパスワード保護された PDF、ZIP、7z をすべてデバイス上で解除でき、ファイルのアップロードは不要です。App Store から [SmartDecrypt PDF ZIP をダウンロード](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)するか、Windows 向けに Microsoft Store から入手できます。 [SmartDecrypt ページ](/ja/smartdecrypt/)で全機能をご確認ください。
 
 ## なぜこれらの言語が重要だったのか
 

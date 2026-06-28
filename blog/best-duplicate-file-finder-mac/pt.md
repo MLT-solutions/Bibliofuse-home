@@ -97,3 +97,5 @@ Sim. A aplicação apenas move os ficheiros para o Lixo — nunca elimina nada p
 Se a sua biblioteca Mac mistura banda desenhada, fotos e arquivos, o Archive Duplicate Scanner é a ferramenta certa. O hashing perceptual deteta duplicados visuais que as ferramentas baseadas em bytes falham, a lista de formatos cobre tudo desde CBZ a HEIC a DNG, e a eliminação apenas para o Lixo mantém a sua coleção segura.
 
 [Descarregue o Archive Duplicate Scanner](/pt/) e limpe a sua biblioteca hoje. Para gerir e ler os seus ficheiros de banda desenhada e ebook, o [BiblioFuse](/pt/) é uma aplicação complementar que lê CBZ, CBR, EPUB, PDF e mais no iPhone e iPad.
+
+[Archive Duplicate Scanner](/pt/archive/) — disponível na Mac App Store e na Microsoft Store.

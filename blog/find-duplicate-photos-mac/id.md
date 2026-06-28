@@ -78,4 +78,4 @@ Ya. Archive Duplicate Scanner tersedia untuk Mac dan Windows. Versi Windows memi
 
 Perpustakaan dengan 40.000 foto dan 30% duplikat membuang puluhan gigabyte penyimpanan. Archive Duplicate Scanner memberi Anda alat untuk membersihkannya dengan aman — perceptual hashing yang menangkap duplikat visual di berbagai format, strategi pemilihan otomatis yang menghilangkan dugaan, dan penghapusan hanya ke Tempat Sampah yang menjaga keamanan Anda.
 
-[Unduh Archive Duplicate Scanner](/id/) dan mulai pemindaian pertama Anda hari ini. Jika Anda juga ingin mengompresi atau mengonversi batch koleksi foto Anda, [Alat Web BiblioFuse](/id/webapp/) menangani file EPUB, CBZ, dan PDF sepenuhnya di browser Anda.
+[Unduh Archive Duplicate Scanner](/id/archive/) dan mulai pemindaian pertama Anda hari ini. Jika Anda juga ingin mengompresi atau mengonversi batch koleksi foto Anda, [Alat Web BiblioFuse](/id/webapp/) menangani file EPUB, CBZ, dan PDF sepenuhnya di browser Anda.

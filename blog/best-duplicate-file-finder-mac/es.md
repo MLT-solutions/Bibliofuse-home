@@ -96,4 +96,4 @@ Sí. La aplicación solo mueve los archivos a la Papelera — nunca elimina nada
 
 Si tu biblioteca de Mac combina cómics, fotos y archivos comprimidos, Archive Duplicate Scanner es la herramienta adecuada. El hash perceptual detecta duplicados visuales que las herramientas basadas en bytes pasan por alto, la lista de formatos cubre todo, desde CBZ hasta HEIC y DNG, y la eliminación exclusiva a la Papelera mantiene tu colección segura.
 
-[Descarga Archive Duplicate Scanner](/es/) y limpia tu biblioteca hoy. Para gestionar y leer tus archivos de cómics y libros electrónicos, [BiblioFuse](/es/) es una aplicación complementaria que lee CBZ, CBR, EPUB, PDF y más en iPhone y iPad.
+[Descarga Archive Duplicate Scanner](/es/archive/) y limpia tu biblioteca hoy. Para gestionar y leer tus archivos de cómics y libros electrónicos, [BiblioFuse](/es/) es una aplicación complementaria que lee CBZ, CBR, EPUB, PDF y más en iPhone y iPad.

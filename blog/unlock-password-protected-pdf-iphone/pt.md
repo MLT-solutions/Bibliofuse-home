@@ -75,3 +75,5 @@ O SmartDecrypt requer a senha correta para descriptografar um arquivo — não �
 ## Comece Agora
 
 Se PDFs protegidos por senha são um ponto de atrito recorrente no seu iPhone ou Mac, o SmartDecrypt PDF ZIP CBZ é a solução mais eficiente disponível. Ele funciona inteiramente no dispositivo, lida com PDF, ZIP e CBZ, suporta descriptografia em lote e leva menos de um minuto para usar. Pesquise por **SmartDecrypt PDF ZIP CBZ** na App Store para começar.
+
+[SmartDecrypt PDF ZIP CBZ](/pt/smartdecrypt/) — disponível na App Store.

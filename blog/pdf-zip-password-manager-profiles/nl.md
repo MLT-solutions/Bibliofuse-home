@@ -79,3 +79,5 @@ Ja. SmartDecrypt PDF ZIP CBZ ondersteunt wachtwoordprofielen voor alle drie de f
 ## Typ Nooit Meer Hetzelfde Wachtwoord Twee Keer
 
 Wachtwoordprofielen maken van SmartDecrypt PDF ZIP CBZ een eenmalig-instellen-en-vergeten ontsleutelssysteem. Maak het profiel één keer aan wanneer een nieuwe collectie binnenkomt, en elke toekomstige batch van die bron wordt in één tik ontsleuteld — op iPhone, iPad of Mac, altijd lokaal op het apparaat, nooit geüpload. Zoek naar **SmartDecrypt PDF ZIP CBZ** in de App Store om te beginnen.
+
+[SmartDecrypt PDF ZIP CBZ](/nl/smartdecrypt/) — beschikbaar in de App Store.

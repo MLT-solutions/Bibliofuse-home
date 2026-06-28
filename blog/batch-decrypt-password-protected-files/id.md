@@ -79,3 +79,5 @@ Ya. Versi Mac mendukung dekripsi batch dengan impor seret dan lepas dari Finder.
 ## Lakukan Lebih Banyak dengan Satu Ketukan
 
 Dekripsi batch mengubah tugas yang membosankan selama berjam-jam menjadi satu ketukan. SmartDecrypt PDF ZIP CBZ menangani semua PDF, CBZ, dan ZIP yang dilindungi dalam koleksi Anda sekaligus. Cari **SmartDecrypt PDF ZIP CBZ** di App Store untuk memulai, lalu buka arsip CBZ yang didekripsi di [BiblioFuse](/id/).
+
+[SmartDecrypt PDF ZIP CBZ](/id/smartdecrypt/) — tersedia di App Store.

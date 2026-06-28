@@ -79,3 +79,5 @@ Sim. O Archive Duplicate Scanner está disponível para Mac e Windows. A versão
 Uma biblioteca de 40 000 fotos com 30% de duplicados desperdiça dezenas de gigabytes de armazenamento. O Archive Duplicate Scanner dá-lhe as ferramentas para a limpar com segurança — hashing perceptual que deteta duplicados visuais entre formatos, estratégias de seleção automática que eliminam as suposições, e eliminação apenas para o Lixo que o mantém protegido.
 
 [Descarregue o Archive Duplicate Scanner](/pt/) e inicie a sua primeira análise hoje. Se também quiser comprimir ou converter em lote as suas coleções de fotos, a [Ferramenta Web BiblioFuse](/pt/webapp/) suporta ficheiros EPUB, CBZ e PDF inteiramente no seu browser.
+
+[Archive Duplicate Scanner](/pt/archive/) — disponível na Mac App Store e na Microsoft Store.

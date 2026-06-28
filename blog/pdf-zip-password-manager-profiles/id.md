@@ -79,3 +79,5 @@ Ya. SmartDecrypt PDF ZIP CBZ mendukung profil kata sandi untuk ketiga format ter
 ## Tidak Perlu Mengetik Kata Sandi yang Sama Dua Kali
 
 Profil kata sandi mengubah SmartDecrypt PDF ZIP CBZ menjadi sistem dekripsi sekali atur dan lupakan. Buat profil sekali saat koleksi baru tiba, dan setiap batch berikutnya dari sumber itu terdekripsi dalam satu ketukan — di iPhone, iPad, atau Mac, selalu di perangkat, tidak pernah diunggah. Cari **SmartDecrypt PDF ZIP CBZ** di App Store untuk memulai.
+
+[SmartDecrypt PDF ZIP CBZ](/id/smartdecrypt/) — tersedia di App Store.

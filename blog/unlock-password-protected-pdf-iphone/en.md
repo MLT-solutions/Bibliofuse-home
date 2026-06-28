@@ -74,4 +74,4 @@ SmartDecrypt requires the correct password to decrypt a file — it is not a pas
 
 ## Get Started
 
-If password-protected PDFs are a recurring friction point on your iPhone or Mac, SmartDecrypt PDF ZIP CBZ is the cleanest solution available. It runs entirely on-device, handles PDF, ZIP, and CBZ, supports batch decryption, and takes under a minute to use. Search for **SmartDecrypt PDF ZIP CBZ** on the App Store to get started.
+If password-protected PDFs are a recurring friction point on your iPhone or Mac, SmartDecrypt PDF ZIP CBZ is the cleanest solution available. It runs entirely on-device, handles PDF, ZIP, and CBZ, supports batch decryption, and takes under a minute to use. Search for [SmartDecrypt PDF ZIP CBZ](/en/smartdecrypt/) on the App Store to get started.

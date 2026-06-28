@@ -75,3 +75,5 @@ SmartDecrypt memerlukan kata laluan yang betul untuk menyahsulit fail — ia buk
 ## Mulakan Sekarang
 
 Jika PDF berlindung kata laluan adalah titik geseran berulang di iPhone atau Mac anda, SmartDecrypt PDF ZIP CBZ adalah penyelesaian paling bersih yang tersedia. Ia berjalan sepenuhnya di peranti, mengendalikan PDF, ZIP, dan CBZ, menyokong penyahsulitan kelompok, dan mengambil masa kurang daripada seminit untuk digunakan. Cari **SmartDecrypt PDF ZIP CBZ** di App Store untuk memulakan.
+
+[SmartDecrypt PDF ZIP CBZ](/ms/smartdecrypt/) — tersedia di App Store.

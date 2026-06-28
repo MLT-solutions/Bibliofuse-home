@@ -96,4 +96,4 @@ Yes. The app only moves files to the Trash — it never permanently deletes anyt
 
 If your Mac library mixes comics, photos, and archives, Archive Duplicate Scanner is the right tool. Perceptual hashing catches visual duplicates that byte-based tools miss, the format list covers everything from CBZ to HEIC to DNG, and the Trash-only deletion keeps your collection safe.
 
-[Download Archive Duplicate Scanner](/en/) and clean up your library today. For managing and reading your comic and ebook files, [BiblioFuse](/en/) is a companion app that reads CBZ, CBR, EPUB, PDF, and more on iPhone and iPad.
+[Download Archive Duplicate Scanner](/en/archive/) and clean up your library today. For managing and reading your comic and ebook files, [BiblioFuse](/en/) is a companion app that reads CBZ, CBR, EPUB, PDF, and more on iPhone and iPad.

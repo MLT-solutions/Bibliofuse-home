@@ -88,4 +88,4 @@ Yes. Add any mounted drive or folder as a scan location. Archive Duplicate Scann
 
 ## Build a Cleaner Library in One Afternoon
 
-Duplicate comics waste storage, clutter your library view, and make organisation harder over time. Archive Duplicate Scanner handles the hard part — detecting visually identical archives regardless of filename — and gives you a safe, Trash-only path to cleaning up. Find **Archive Duplicate Scanner** on the Mac App Store to run your first scan today. Once your library is clean, use [BiblioFuse](/en/) to read and organise your comic collection on iPhone and Mac.
+Duplicate comics waste storage, clutter your library view, and make organisation harder over time. Archive Duplicate Scanner handles the hard part — detecting visually identical archives regardless of filename — and gives you a safe, Trash-only path to cleaning up. Find [Archive Duplicate Scanner](/en/archive/) on the Mac App Store to run your first scan today. Once your library is clean, use [BiblioFuse](/en/) to read and organise your comic collection on iPhone and Mac.

@@ -79,3 +79,5 @@ Sí. SmartDecrypt PDF ZIP CBZ admite perfiles de contraseñas para los tres form
 ## No Escribas la Misma Contraseña Dos Veces
 
 Los perfiles de contraseñas convierten SmartDecrypt PDF ZIP CBZ en un sistema de descifrado configura-y-olvida. Crea el perfil una vez cuando llegue una nueva colección, y todos los lotes futuros de esa fuente se descifrarán con un toque — en iPhone, iPad o Mac, siempre en el dispositivo, sin subidas. Busca **SmartDecrypt PDF ZIP CBZ** en la App Store para empezar.
+
+[SmartDecrypt PDF ZIP CBZ](/es/smartdecrypt/) — disponible en la App Store.

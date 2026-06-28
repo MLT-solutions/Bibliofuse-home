@@ -78,4 +78,4 @@ Ja. Archive Duplicate Scanner is beschikbaar voor zowel Mac als Windows. De Wind
 
 Een bibliotheek van 40.000 foto's met 30% duplicaten verspilt tientallen gigabytes aan opslagruimte. Archive Duplicate Scanner geeft je de tools om deze veilig op te schonen — perceptuele hashing die visuele duplicaten over indelingen heen detecteert, automatische selectiestrategieën die het giswerk wegnemen, en verwijdering uitsluitend naar de Prullenmand die je beschermt.
 
-[Download Archive Duplicate Scanner](/nl/) en start vandaag nog je eerste scan. Als je ook je fotocollecties wilt comprimeren of batchgewijs wilt converteren, verwerkt de [BiblioFuse-webtool](/nl/webapp/) EPUB-, CBZ- en PDF-bestanden volledig in je browser.
+[Download Archive Duplicate Scanner](/nl/archive/) en start vandaag nog je eerste scan. Als je ook je fotocollecties wilt comprimeren of batchgewijs wilt converteren, verwerkt de [BiblioFuse-webtool](/nl/webapp/) EPUB-, CBZ- en PDF-bestanden volledig in je browser.

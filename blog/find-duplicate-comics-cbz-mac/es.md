@@ -89,3 +89,5 @@ Sí. Añade cualquier disco montado o carpeta como ubicación de análisis. Arch
 ## Ordena tu Biblioteca en una Tarde
 
 Los cómics duplicados desperdician espacio de almacenamiento, saturan la vista de tu biblioteca y dificultan la organización con el tiempo. Archive Duplicate Scanner se encarga de la parte difícil —detectar archivos visualmente idénticos independientemente del nombre de archivo— y te ofrece un camino seguro, solo mediante la Papelera, para limpiar tu colección. Encuentra **Archive Duplicate Scanner** en la Mac App Store para realizar tu primer análisis hoy. Una vez que tu biblioteca esté ordenada, usa [BiblioFuse](/es/) para leer y organizar tu colección de cómics en iPhone y Mac.
+
+[Archive Duplicate Scanner](/es/archive/) — disponible en Mac App Store y Microsoft Store.

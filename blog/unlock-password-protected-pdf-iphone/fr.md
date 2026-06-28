@@ -75,3 +75,5 @@ SmartDecrypt nécessite le mot de passe correct pour déchiffrer un fichier — 
 ## Commencer
 
 Si les PDF protégés par mot de passe sont un problème récurrent sur votre iPhone ou Mac, SmartDecrypt PDF ZIP CBZ est la solution la plus efficace disponible. Il fonctionne entièrement sur l'appareil, gère PDF, ZIP et CBZ, prend en charge le déchiffrement par lot et s'utilise en moins d'une minute. Recherchez **SmartDecrypt PDF ZIP CBZ** sur l'App Store pour commencer.
+
+[SmartDecrypt PDF ZIP CBZ](/fr/smartdecrypt/) — disponible sur l'App Store.

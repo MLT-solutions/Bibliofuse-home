@@ -89,3 +89,5 @@ Oui. Ajoutez n'importe quel disque monté ou dossier comme emplacement d'analyse
 ## Organisez votre Bibliothèque en une Après-midi
 
 Les BD en double gaspillent de l'espace de stockage, encombrent l'affichage de votre bibliothèque et compliquent l'organisation au fil du temps. Archive Duplicate Scanner prend en charge la partie difficile — détecter les archives visuellement identiques quel que soit leur nom de fichier — et vous offre un chemin sûr vers le nettoyage, uniquement via la Corbeille. Trouvez **Archive Duplicate Scanner** sur le Mac App Store pour effectuer votre première analyse dès aujourd'hui. Une fois votre bibliothèque nettoyée, utilisez [BiblioFuse](/fr/) pour lire et organiser votre collection de BD sur iPhone et Mac.
+
+[Archive Duplicate Scanner](/fr/archive/) — disponible sur le Mac App Store et le Microsoft Store.

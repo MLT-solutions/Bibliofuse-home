@@ -89,3 +89,5 @@ Archive Duplicate Scanner는 CBZ 및 CBR 만화 아카이브를 지원합니다.
 ## 하루 오후만에 깔끔한 라이브러리 만들기
 
 중복 만화 파일은 저장 공간을 낭비하고, 라이브러리 보기를 어지럽히며, 시간이 갈수록 정리를 더 어렵게 만듭니다. Archive Duplicate Scanner는 가장 어려운 부분인 파일 이름과 무관하게 시각적으로 동일한 아카이브를 감지하는 작업을 처리하고, 휴지통만을 통한 안전한 정리 방법을 제공합니다. Mac App Store에서 **Archive Duplicate Scanner**를 찾아 오늘 첫 번째 스캔을 실행하세요. 라이브러리가 정리되면 [BiblioFuse](/ko/)를 사용해 iPhone과 Mac에서 만화 컬렉션을 읽고 관리하세요.
+
+[Archive Duplicate Scanner](/ko/archive/) — Mac App Store와 Microsoft Store에서 다운로드.
