@@ -1,6 +1,6 @@
 # Archive Duplicate Scanner Désormais Disponible en Portugais, Espagnol, Indonésien et Chinois
 
-Archive Duplicate Scanner prend désormais en charge le portugais, l'espagnol, le bahasa indonésien et le chinois simplifié — apportant l'interface complète de l'application à quatre nouvelles langues. L'application détecte les archives de bandes dessinées en double (CBZ, CBR, ZIP, RAR) et les photos grâce au hachage perceptuel, disponible gratuitement pour Mac et Windows. [Téléchargez-la maintenant](/fr/#archive) pour Mac ou Windows.
+Archive Duplicate Scanner prend désormais en charge le portugais, l'espagnol, le bahasa indonésien et le chinois simplifié — apportant l'interface complète de l'application à quatre nouvelles langues. L'application détecte les archives de bandes dessinées en double (CBZ, CBR, ZIP, RAR) et les photos grâce au hachage perceptuel, disponible gratuitement pour Mac et Windows. [Téléchargez-la maintenant](/fr/archive/) pour Mac ou Windows.
 
 ## Pourquoi les Collectionneurs Internationaux en Avaient Besoin
 
@@ -23,7 +23,7 @@ L'application suit automatiquement le paramètre de langue de votre système d'e
 
 ## Ce que Fait Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/fr/#archive) utilise le **hachage perceptuel** pour détecter les doublons. Il ouvre chaque archive (CBZ, CBR, ZIP, RAR) et calcule un hachage perceptuel des images de pages réelles à l'intérieur. Deux fichiers peuvent avoir des noms complètement différents, des tailles différentes et même une compression différente — si les pages semblent identiques, elles correspondent.
+[Archive Duplicate Scanner](/fr/archive/) utilise le **hachage perceptuel** pour détecter les doublons. Il ouvre chaque archive (CBZ, CBR, ZIP, RAR) et calcule un hachage perceptuel des images de pages réelles à l'intérieur. Deux fichiers peuvent avoir des noms complètement différents, des tailles différentes et même une compression différente — si les pages semblent identiques, elles correspondent.
 
 Autres capacités clés :
 
@@ -58,4 +58,4 @@ La mise à jour est disponible maintenant sur les deux plateformes :
 - **Mac App Store :** [Télécharger Archive Duplicate Scanner](https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449)
 - **Microsoft Store :** [Télécharger Archive Duplicate Scanner](https://apps.microsoft.com/detail/9n2jb4k5wvcq)
 
-Visitez la [page Archive Duplicate Scanner](/fr/#archive) pour en savoir plus sur toutes les fonctionnalités avant de télécharger.
+Visitez la [page Archive Duplicate Scanner](/fr/archive/) pour en savoir plus sur toutes les fonctionnalités avant de télécharger.

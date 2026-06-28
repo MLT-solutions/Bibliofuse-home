@@ -1,6 +1,6 @@
 # Cara Membuka Fail CBZ dan ZIP yang Dilindungi Kata Laluan di iPhone
 
-SmartDecrypt PDF ZIP CBZ membuka arkib CBZ dan ZIP yang dilindungi kata laluan terus pada iPhone, iPad dan Mac tanpa memuat naik fail anda ke mana-mana pelayan. Aplikasi ini menyahsulit arkib CBZ komik dan fail ZIP pada peranti menggunakan enjin berasaskan Rust, kemudian menyimpan salinan yang dibuka kuncinya ke aplikasi Fail. Selepas penyahsulitan, buka komik CBZ anda dalam [BiblioFuse](/ms/) untuk pengalaman membaca terbaik di iPhone. Muat turun SmartDecrypt PDF ZIP CBZ daripada App Store untuk mengalih kata laluan arkib dalam masa beberapa saat.
+[SmartDecrypt PDF ZIP CBZ](/ms/smartdecrypt/) membuka arkib CBZ dan ZIP yang dilindungi kata laluan terus pada iPhone, iPad dan Mac tanpa memuat naik fail anda ke mana-mana pelayan. Aplikasi ini menyahsulit arkib CBZ komik dan fail ZIP pada peranti menggunakan enjin berasaskan Rust, kemudian menyimpan salinan yang dibuka kuncinya ke aplikasi Fail. Selepas penyahsulitan, buka komik CBZ anda dalam [BiblioFuse](/ms/) untuk pengalaman membaca terbaik di iPhone. Muat turun SmartDecrypt PDF ZIP CBZ daripada App Store untuk mengalih kata laluan arkib dalam masa beberapa saat.
 
 ## Mengapa Fail CBZ yang Dilindungi Kata Laluan Tidak Boleh Dibuka dalam Kebanyakan Pembaca Komik?
 
@@ -69,4 +69,4 @@ SmartDecrypt memerlukan kata laluan yang betul — ia tidak cuba meneka atau mem
 
 ## Buka Kunci Komik dan Arkib Anda
 
-Fail CBZ dan ZIP yang dilindungi kata laluan tidak perlu lagi menghalang aliran membaca anda. SmartDecrypt PDF ZIP CBZ menyahsulit sebarang arkib yang dilindungi pada iPhone atau Mac anda dalam beberapa saat tanpa muat naik. Cari **SmartDecrypt PDF ZIP CBZ** di App Store untuk bermula, kemudian buka komik yang disahsulit dalam [BiblioFuse](/ms/).
+Fail CBZ dan ZIP yang dilindungi kata laluan tidak perlu lagi menghalang aliran membaca anda. SmartDecrypt PDF ZIP CBZ menyahsulit sebarang arkib yang dilindungi pada iPhone atau Mac anda dalam beberapa saat tanpa muat naik. Cari [SmartDecrypt PDF ZIP CBZ](/ms/smartdecrypt/) di App Store untuk bermula, kemudian buka komik yang disahsulit dalam [BiblioFuse](/ms/).

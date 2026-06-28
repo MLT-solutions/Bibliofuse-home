@@ -1,6 +1,6 @@
 # Cara Menemukan Foto Duplikat di Mac — Termasuk HEIC, WebP, dan RAW
 
-[Archive Duplicate Scanner](/id/) menemukan foto duplikat di Mac menggunakan perceptual hashing — teknik yang mencocokkan gambar yang identik secara visual meskipun memiliki nama file, format, atau pengaturan kompresi yang berbeda. Aplikasi ini mendukung HEIC, WebP, JPEG, PNG, TIFF, RAW, dan puluhan format lainnya. Tersedia untuk Mac dan Windows, serta memindahkan duplikat ke Tempat Sampah dengan aman alih-alih menghapusnya secara permanen.
+[Archive Duplicate Scanner](/id/archive/) menemukan foto duplikat di Mac menggunakan perceptual hashing — teknik yang mencocokkan gambar yang identik secara visual meskipun memiliki nama file, format, atau pengaturan kompresi yang berbeda. Aplikasi ini mendukung HEIC, WebP, JPEG, PNG, TIFF, RAW, dan puluhan format lainnya. Tersedia untuk Mac dan Windows, serta memindahkan duplikat ke Tempat Sampah dengan aman alih-alih menghapusnya secara permanen.
 
 ## Masalah Perpustakaan Foto yang Terus Bertumbuh Tanpa Batas
 
@@ -78,4 +78,4 @@ Ya. Archive Duplicate Scanner tersedia untuk Mac dan Windows. Versi Windows memi
 
 Perpustakaan dengan 40.000 foto dan 30% duplikat membuang puluhan gigabyte penyimpanan. Archive Duplicate Scanner memberi Anda alat untuk membersihkannya dengan aman — perceptual hashing yang menangkap duplikat visual di berbagai format, strategi pemilihan otomatis yang menghilangkan dugaan, dan penghapusan hanya ke Tempat Sampah yang menjaga keamanan Anda.
 
-[Unduh Archive Duplicate Scanner](/id/) dan mulai pemindaian pertama Anda hari ini. Jika Anda juga ingin mengompresi atau mengonversi batch koleksi foto Anda, [Alat Web BiblioFuse](/id/webapp/) menangani file EPUB, CBZ, dan PDF sepenuhnya di browser Anda.
+[Unduh Archive Duplicate Scanner](/id/archive/) dan mulai pemindaian pertama Anda hari ini. Jika Anda juga ingin mengompresi atau mengonversi batch koleksi foto Anda, [Alat Web BiblioFuse](/id/webapp/) menangani file EPUB, CBZ, dan PDF sepenuhnya di browser Anda.

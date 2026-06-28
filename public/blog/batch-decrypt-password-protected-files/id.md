@@ -10,7 +10,7 @@ Sebagian besar alat dekripsi di iPhone memproses file satu per satu. Mereka tida
 
 SmartDecrypt PDF ZIP CBZ menyelesaikan masalah ini dengan dua fitur yang bekerja bersama: **dekripsi batch** dan **profil password**. Pilih semua file sekaligus, terapkan profil, dan ketuk sekali.
 
-[SmartDecrypt](/id/) menangani semuanya di perangkat — tanpa layanan cloud, tanpa menunggu per file, tanpa unggahan.
+[SmartDecrypt](/id/smartdecrypt/) menangani semuanya di perangkat — tanpa layanan cloud, tanpa menunggu per file, tanpa unggahan.
 
 ## Cara Kerja Dekripsi Batch di SmartDecrypt
 
@@ -79,3 +79,5 @@ Ya. Versi Mac mendukung dekripsi batch dengan impor seret dan lepas dari Finder.
 ## Lakukan Lebih Banyak dengan Satu Ketukan
 
 Dekripsi batch mengubah tugas yang membosankan selama berjam-jam menjadi satu ketukan. SmartDecrypt PDF ZIP CBZ menangani semua PDF, CBZ, dan ZIP yang dilindungi dalam koleksi Anda sekaligus. Cari **SmartDecrypt PDF ZIP CBZ** di App Store untuk memulai, lalu buka arsip CBZ yang didekripsi di [BiblioFuse](/id/).
+
+[SmartDecrypt PDF ZIP CBZ](/id/smartdecrypt/) — tersedia di App Store.

@@ -1,6 +1,6 @@
 # Beste tool voor dubbele bestanden vinden op Mac in 2026: strips, foto's en archieven
 
-[Archive Duplicate Scanner](/nl/) is de beste tool voor het vinden van dubbele bestanden op Mac in 2026 voor gemengde bibliotheken met strips (CBZ, CBR), foto's (HEIC, JPEG, RAW) en andere archieven (ZIP, RAR). De app gebruikt perceptuele hashing — geen byte-vergelijking — om visueel identieke bestanden te vinden, zelfs als ze zijn hernoemd, opnieuw geëxporteerd of geconverteerd naar een ander formaat. Beschikbaar voor Mac en Windows; duplicaten worden naar de Prullenmand gestuurd en nooit permanent verwijderd.
+[Archive Duplicate Scanner](/nl/archive/) is de beste tool voor het vinden van dubbele bestanden op Mac in 2026 voor gemengde bibliotheken met strips (CBZ, CBR), foto's (HEIC, JPEG, RAW) en andere archieven (ZIP, RAR). De app gebruikt perceptuele hashing — geen byte-vergelijking — om visueel identieke bestanden te vinden, zelfs als ze zijn hernoemd, opnieuw geëxporteerd of geconverteerd naar een ander formaat. Beschikbaar voor Mac en Windows; duplicaten worden naar de Prullenmand gestuurd en nooit permanent verwijderd.
 
 ## Waarom falen generieke duplicatenopsporing bij strips en foto's?
 
@@ -96,4 +96,4 @@ Ja. De app verplaatst bestanden alleen naar de Prullenmand — er wordt nooit ie
 
 Als je Mac-bibliotheek strips, foto's en archieven combineert, is Archive Duplicate Scanner het juiste hulpmiddel. Perceptuele hashing detecteert visuele duplicaten die tools op basis van bytes missen, de formaatlijst dekt alles van CBZ tot HEIC en DNG, en de verwijdering uitsluitend naar de Prullenmand houdt je collectie veilig.
 
-[Download Archive Duplicate Scanner](/nl/) en ruim vandaag nog je bibliotheek op. Voor het beheren en lezen van je strip- en e-bookbestanden is [BiblioFuse](/nl/) een aanvullende app die CBZ, CBR, EPUB, PDF en meer leest op iPhone en iPad.
+[Download Archive Duplicate Scanner](/nl/archive/) en ruim vandaag nog je bibliotheek op. Voor het beheren en lezen van je strip- en e-bookbestanden is [BiblioFuse](/nl/) een aanvullende app die CBZ, CBR, EPUB, PDF en meer leest op iPhone en iPad.

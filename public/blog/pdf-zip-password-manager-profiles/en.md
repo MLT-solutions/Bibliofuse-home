@@ -10,7 +10,7 @@ The password is rarely the issue. You know it. You might have it saved in a note
 
 Most decryption tools on iPhone process files one at a time and have no memory between sessions.
 
-SmartDecrypt PDF ZIP CBZ solves this with password profiles: a named, secure, on-device store for every password you use regularly. Use [SmartDecrypt](/en/) to save a profile once and never type that password again.
+SmartDecrypt PDF ZIP CBZ solves this with password profiles: a named, secure, on-device store for every password you use regularly. Use [SmartDecrypt](/en/smartdecrypt/) to save a profile once and never type that password again.
 
 ## How Password Profiles Work
 
@@ -78,4 +78,4 @@ Yes. SmartDecrypt PDF ZIP CBZ supports password profiles for all three formats. 
 
 ## Never Type the Same Password Twice
 
-Password profiles turn SmartDecrypt PDF ZIP CBZ into a set-it-and-forget-it decryption system. Create the profile once when a new collection arrives, and every future batch from that source decrypts in one tap — on iPhone, iPad, or Mac, always on-device, never uploaded. Search for **SmartDecrypt PDF ZIP CBZ** on the App Store to get started.
+Password profiles turn SmartDecrypt PDF ZIP CBZ into a set-it-and-forget-it decryption system. Create the profile once when a new collection arrives, and every future batch from that source decrypts in one tap — on iPhone, iPad, or Mac, always on-device, never uploaded. Search for [SmartDecrypt PDF ZIP CBZ](/en/smartdecrypt/) on the App Store to get started.

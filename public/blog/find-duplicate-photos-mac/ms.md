@@ -1,6 +1,6 @@
 # Cari Foto Pendua di Mac — Termasuk HEIC, WebP dan RAW
 
-[Archive Duplicate Scanner](/ms/) mencari foto pendua di Mac menggunakan perceptual hashing — teknik yang memadankan imej yang identik secara visual walaupun mempunyai nama fail, format atau tetapan mampatan yang berbeza. Ia menyokong HEIC, WebP, JPEG, PNG, TIFF, RAW dan berpuluh-puluh format lain. Aplikasi ini tersedia untuk Mac dan Windows, dan memindahkan pendua ke Tong Sampah dengan selamat, bukannya memadamnya secara kekal.
+[Archive Duplicate Scanner](/ms/archive/) mencari foto pendua di Mac menggunakan perceptual hashing — teknik yang memadankan imej yang identik secara visual walaupun mempunyai nama fail, format atau tetapan mampatan yang berbeza. Ia menyokong HEIC, WebP, JPEG, PNG, TIFF, RAW dan berpuluh-puluh format lain. Aplikasi ini tersedia untuk Mac dan Windows, dan memindahkan pendua ke Tong Sampah dengan selamat, bukannya memadamnya secara kekal.
 
 ## Masalah Perpustakaan Foto yang Terus Membesar Tanpa Had
 
@@ -78,4 +78,4 @@ Ya. Archive Duplicate Scanner tersedia untuk Mac dan Windows. Versi Windows memp
 
 Perpustakaan dengan 40,000 foto dan 30% pendua membazirkan berpuluh-puluh gigabait storan. Archive Duplicate Scanner memberikan anda alat untuk membersihkannya dengan selamat — perceptual hashing yang menangkap pendua visual merentas format, strategi pemilihan automatik yang menghapuskan tekaan, dan pemadaman ke Tong Sampah sahaja yang memastikan anda terlindung.
 
-[Muat turun Archive Duplicate Scanner](/ms/) dan mulakan imbasan pertama anda hari ini. Jika anda juga ingin memampatkan atau menukar secara berkelompok koleksi foto anda, [Alat Web BiblioFuse](/ms/webapp/) mengendalikan fail EPUB, CBZ dan PDF sepenuhnya dalam pelayar anda.
+[Muat turun Archive Duplicate Scanner](/ms/archive/) dan mulakan imbasan pertama anda hari ini. Jika anda juga ingin memampatkan atau menukar secara berkelompok koleksi foto anda, [Alat Web BiblioFuse](/ms/webapp/) mengendalikan fail EPUB, CBZ dan PDF sepenuhnya dalam pelayar anda.

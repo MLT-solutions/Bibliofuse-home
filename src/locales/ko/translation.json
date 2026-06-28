@@ -1170,12 +1170,12 @@
         "badge": "iOS · macOS · Windows",
         "title": "검색하세요. 태그하세요. 서재를 지배하세요.",
         "desc": "GrepTag Reader는 EPUB 및 TXT 파일의 실제 텍스트를 검색합니다 — 수동 메타데이터 입력도, ISBN 입력도 필요 없습니다. 키워드를 입력하면 일치하는 모든 책이 즉시 표시됩니다. 장르별 태그, AND 논리로 필터링, Wi-Fi로 동기화.",
-        "appStoreCta": "Download on App Store",
+        "appStoreCta": "App Store에서 다운로드",
         "trust1": "수동 메타데이터나 ISBN 입력 불필요",
         "trust2": "서버 없음, 업로드 없음",
         "trust3": "CJK 텍스트 지원",
         "comingSoon": "App Store에서 이용 가능",
-        "msStoreCta": "Get it from Microsoft",
+        "msStoreCta": "Microsoft에서 받기",
         "macInReview": "iOS, macOS 및 Windows에서 이용 가능"
       },
       "grep": {
@@ -1217,12 +1217,12 @@
         "desc": "BiblioFuse Reader는 대용량 이미지 만화 파일을 위해 구축——Mac에서 스트리밍, 앱 내 압축. GrepTag는 기기에 완전히 들어맞는 소형 텍스트 파일을 위해 구축——grep, 태그, 어느 방향으로든 동기화.",
         "col1": "BiblioFuse Reader",
         "col2": "GrepTag Reader",
-        "row1Label": "Best for",
-        "row1col1": "Comics, manga, PDF",
-        "row1col2": "EPUB, light novels, TXT",
-        "row2Label": "File size",
-        "row2col1": "50–300 MB per volume",
-        "row2col2": "Under 5 MB each",
+        "row1Label": "최적 용도",
+        "row1col1": "만화, 망가, PDF",
+        "row1col2": "EPUB, 라이트노벨, TXT",
+        "row2Label": "파일 크기",
+        "row2col1": "권당 50–300 MB",
+        "row2col2": "각 5 MB 미만",
         "row3Label": "저장 설계",
         "row3col1": "Mac에서 스트리밍 · 앱 내 압축",
         "row3col2": "기기에 저장 · 어느 방향으로든 동기화",
@@ -1237,14 +1237,14 @@
         "eyebrow": "요금제",
         "title": "검색은 무료. 소유는 Pro.",
         "freeTitle": "무료",
-        "freeDesc": "Search and discover your library forever.",
+        "freeDesc": "영원히 무료로 라이브러리를 검색하고 발견하세요.",
         "proTitle": "Pro",
-        "proDesc": "One-time purchase unlocks everything, forever.",
-        "proMonthly": "$0.99 / month",
-        "proYearly": "$4.99 / year",
-        "proLifetime": "$14.99 one-time",
-        "proTrial": "7-day free trial on monthly & yearly",
-        "appStoreCta": "Try Free on App Store",
+        "proDesc": "일회 구매로 모든 기능을 영구적으로 잠금 해제.",
+        "proMonthly": "$0.99 / 월",
+        "proYearly": "$4.99 / 년",
+        "proLifetime": "$14.99 일회",
+        "proTrial": "월간 및 연간 플랜에서 7일 무료 체험",
+        "appStoreCta": "App Store에서 무료 체험",
         "approvalNote": "App Store 및 Microsoft Store에서 이용 가능합니다."
       },
       "seo": {
@@ -1305,275 +1305,275 @@
     },
     "archivePage": {
       "seo": {
-        "title": "Archive Duplicate Scanner — Find Duplicate Comics & Photos on Mac & Windows",
-        "desc": "Archive Duplicate Scanner finds duplicate CBZ, CBR, ZIP, RAR and photo files using perceptual hashing — even after renaming or recompression. Free up to 1,000 files, $19.99 one-time Pro."
+        "title": "Archive Duplicate Scanner — Mac 및 Windows에서 중복 만화와 사진 찾기",
+        "desc": "Archive Duplicate Scanner는 감지적 해싱으로 중복 CBZ, CBR, ZIP, RAR 및 사진 파일을 찾습니다 — 이름 변경이나 재압축 후에도 가능합니다. 1,000개 파일까지 무료, Pro는 $19.99 일회성 결제."
       },
       "hero": {
-        "badge": "Mac & Windows",
-        "title": "Find duplicates. Even after renaming.",
-        "desc": "Archive Duplicate Scanner는 만화 아카이브를 열고 파일명이나 크기가 아닌 실제 내부 이미지를 비교합니다. 한 파일이 comic_E1-5이고 다른 파일이 ComiX_E1-10이라 해도, 첫 몇 페이지가 일치하면 중복으로 표시됩니다.",
-        "trust1": "No cloud upload",
-        "trust2": "Safe Trash deletion",
-        "trust3": "7-day free trial",
-        "macStore": "Download on Mac App Store",
-        "winStore": "Get it from Microsoft Store"
+        "badge": "Mac 및 Windows",
+        "title": "중복을 찾으세요. 이름을 바꿔도 찾아냅니다.",
+        "desc": "Archive Duplicate Scanner는 만화 아카이브를 열고 내부의 실제 이미지를 비교합니다 — 파일 이름이나 크기만이 아닙니다. 한 파일이 comic_E1-5이고 다른 파일이 ComiX_E1-10이라도 처음 몇 페이지가 일치하면 중복으로 표시됩니다.",
+        "trust1": "클라우드 업로드 없음",
+        "trust2": "안전한 휴지통 삭제",
+        "trust3": "7일 무료 체험",
+        "macStore": "Mac App Store에서 다운로드",
+        "winStore": "Microsoft Store에서 받기"
       },
       "scanning": {
-        "eyebrow": "Deep Archive Scanning",
-        "title": "Opens archives and compares pages inside",
+        "eyebrow": "심층 아카이브 스캔",
+        "title": "아카이브를 열고 내부 페이지를 비교",
         "desc": "대부분의 중복 검색 도구는 파일명이나 크기만 비교합니다. Archive Duplicate Scanner는 각 CBZ, CBR, ZIP 또는 RAR 파일을 열고 실제 페이지에서 썸네일을 추출해 비교합니다. comic_E1-5와 ComiX_E1-10 — 이름도 다르고 에피소드 범위도 달라도 — 시작 페이지가 일치하면 감지됩니다.",
         "bullet1": "아카이브를 열고 페이지 이미지를 비교 — 파일명만이 아님",
-        "bullet2": "Configurable similarity threshold — 90% recommended",
-        "bullet3": "Hash cache makes repeat scans near-instant",
-        "badge": "Works with manga, manhwa, and manhua"
+        "bullet2": "구성 가능한 유사도 임계값 — 90% 권장",
+        "bullet3": "해시 캐시로 반복 스캔을 거의 즉시 완료",
+        "badge": "만화, 만화(manhwa), 만화(manhua) 지원"
       },
       "photos": {
-        "eyebrow": "Photos & Filename Matching",
-        "title": "Photos and fuzzy filenames — both covered",
-        "desc": "Beyond archives, detect duplicate JPG, PNG, HEIC, WEBP, BMP, and GIF photos using the dHash algorithm. Filename Fuzzy Matching catches copies that differ only in formatting — \"Spider-Man #001\" vs \"Spider Man 001\" — using RapidFuzz with a configurable threshold.",
-        "bullet1": "Photo formats: JPG, PNG, HEIC, WEBP, BMP, GIF",
-        "bullet2": "RapidFuzz algorithm with configurable symbol-stripping",
-        "bullet3": "Unicode-aware — works with Japanese, Korean, Chinese and any character set"
+        "eyebrow": "사진 및 파일명 매칭",
+        "title": "사진과 유사한 파일 이름 — 모두 지원",
+        "desc": "아카이브 외에도 dHash 알고리즘을 사용하여 중복 JPG, PNG, HEIC, WEBP, BMP, GIF 사진을 감지합니다. 파일명 퍼지 매칭은 형식만 다른 복사본 — \"Spider-Man #001\" vs \"Spider Man 001\" — 을 구성 가능한 임계값으로 감지합니다.",
+        "bullet1": "사진 형식: JPG, PNG, HEIC, WEBP, BMP, GIF",
+        "bullet2": "구성 가능한 기호 제거 기능이 있는 RapidFuzz 알고리즘",
+        "bullet3": "유니코드 지원 — 일본어, 한국어, 중국어 및 모든 문자 집합에서 작동"
       },
       "autoselect": {
-        "eyebrow": "Smart Auto-Select",
-        "title": "One click marks the right file to keep",
-        "desc": "Set a rule — keep the Largest, Smallest, Newest, Oldest, or file with the Most Pages — and Auto-Select marks every duplicate in one click. Review the results before anything is touched. Nothing moves until you confirm.",
-        "bullet1": "Five rules: Largest, Smallest, Newest, Oldest, Most Pages",
-        "bullet2": "Last-copy safety warning prevents accidental total deletion",
-        "bullet3": "Permanent ignore list for intentional variant pairs",
-        "badge": "Files moved to Trash — recoverable any time"
+        "eyebrow": "스마트 자동 선택",
+        "title": "한 번의 클릭으로 보관할 올바른 파일 표시",
+        "desc": "규칙 설정 — 가장 크거나, 가장 작거나, 가장 새로운 것, 가장 오래된 것, 또는 페이지 수가 가장 많은 파일 유지 — 자동 선택이 한 번의 클릭으로 모든 중복을 표시합니다. 아무것도 수정되기 전에 결과를 검토하세요. 확인할 때까지 아무것도 이동하지 않습니다.",
+        "bullet1": "다섯 가지 규칙: 가장 큰 것, 가장 작은 것, 가장 새로운 것, 가장 오래된 것, 가장 많은 페이지",
+        "bullet2": "마지막 복사본 안전 경고로 실수로 인한 전체 삭제 방지",
+        "bullet3": "의도적인 변형 쌍을 위한 영구 무시 목록",
+        "badge": "파일을 휴지통으로 이동 — 언제든지 복구 가능"
       },
       "export": {
-        "eyebrow": "Reports & Multi-Folder",
-        "title": "Export results, compare across folders",
-        "desc": "Export your scan as a CSV for spreadsheets or as a full HTML report with thumbnails, similarity scores, and sortable columns. Multi-Folder mode compares two separate folders — useful for finding duplicates between your organised library and a Downloads folder.",
-        "bullet1": "HTML report with embedded thumbnails and statistics",
-        "bullet2": "CSV export for spreadsheets and archiving",
-        "bullet3": "Multi-folder comparison: Folder A vs Folder B"
+        "eyebrow": "보고서 및 다중 폴더",
+        "title": "결과 내보내기, 폴더 간 비교",
+        "desc": "스캔 결과를 스프레드시트용 CSV 또는 썸네일, 유사도 점수, 정렬 가능한 열이 포함된 완전한 HTML 보고서로 내보냅니다. 다중 폴더 모드는 두 개의 별도 폴더를 비교합니다 — 정리된 라이브러리와 다운로드 폴더 사이의 중복을 찾는 데 유용합니다.",
+        "bullet1": "내장 썸네일과 통계가 있는 HTML 보고서",
+        "bullet2": "스프레드시트 및 아카이빙을 위한 CSV 내보내기",
+        "bullet3": "다중 폴더 비교: 폴더 A vs 폴더 B"
       },
       "pricing": {
-        "eyebrow": "Simple Pricing",
-        "title": "Free forever. Unlock Pro when you need it.",
-        "freeTitle": "Free",
+        "eyebrow": "간단한 요금제",
+        "title": "영원히 무료. 필요할 때 Pro 해제.",
+        "freeTitle": "무료",
         "proTitle": "Pro — $19.99",
-        "trial": "7-day free trial available on Mac App Store",
-        "feat1": "Archive scanning (CBZ/CBR/ZIP/RAR)",
-        "feat1free": "Up to 1,000 files",
-        "feat1pro": "Unlimited",
-        "feat2": "Photo duplicate detection",
-        "feat2free": "Up to 1,000 files",
-        "feat2pro": "Unlimited",
-        "feat3": "Filename fuzzy matching",
-        "feat3free": "Up to 1,000 files",
-        "feat3pro": "Unlimited",
-        "feat4": "Smart Auto-Select",
-        "feat5": "Export reports (CSV & HTML)",
-        "feat6": "Multi-folder comparison",
-        "feat7": "Hash cache (fast rescans)",
-        "feat8": "Permanent ignore list"
+        "trial": "Mac App Store에서 7일 무료 체험 제공",
+        "feat1": "아카이브 스캔(CBZ/CBR/ZIP/RAR)",
+        "feat1free": "최대 1,000개 파일",
+        "feat1pro": "무제한",
+        "feat2": "중복 사진 감지",
+        "feat2free": "최대 1,000개 파일",
+        "feat2pro": "무제한",
+        "feat3": "파일명 퍼지 매칭",
+        "feat3free": "최대 1,000개 파일",
+        "feat3pro": "무제한",
+        "feat4": "스마트 자동 선택",
+        "feat5": "보고서 내보내기(CSV 및 HTML)",
+        "feat6": "다중 폴더 비교",
+        "feat7": "해시 캐시(빠른 재스캔)",
+        "feat8": "영구 무시 목록"
       },
-      "faqTitle": "Frequently Asked Questions",
+      "faqTitle": "자주 묻는 질문",
       "faq": [
         {
-          "q": "What is perceptual hashing and why does it matter?",
-          "a": "Perceptual hashing compares the visual structure of images rather than raw file bytes. Two files can have different names, sizes, and metadata — but if their content looks the same, perceptual hashing matches them. Standard duplicate finders fail the moment a file is renamed or re-exported; Archive Duplicate Scanner does not."
+          "q": "감지적 해싱이란 무엇이며 왜 중요한가요?",
+          "a": "감지적 해싱은 원시 파일 바이트가 아닌 이미지의 시각적 구조를 비교합니다. 두 파일은 이름, 크기, 메타데이터가 달라도 내용이 같아 보이면 감지적 해싱이 일치시킵니다. 표준 중복 검색기는 파일 이름이 변경되거나 다시 내보내지면 실패하지만 Archive Duplicate Scanner는 그렇지 않습니다."
         },
         {
-          "q": "Can it find duplicates that have been renamed?",
-          "a": "Yes. Renaming a file changes nothing about its content. Archive Duplicate Scanner compares the images inside each archive, so a duplicate is detected regardless of what the file is called."
+          "q": "이름이 바뀐 중복 파일을 찾을 수 있나요?",
+          "a": "네. 파일 이름을 바꾸는 것은 내용을 변경하지 않습니다. Archive Duplicate Scanner는 각 아카이브 내의 이미지를 비교하므로 파일 이름과 상관없이 중복이 감지됩니다."
         },
         {
-          "q": "Is deletion permanent?",
-          "a": "No. Marked files are moved to the system Trash (macOS) or Recycle Bin (Windows), not permanently deleted. You can recover any file before emptying the Trash."
+          "q": "삭제가 영구적인가요?",
+          "a": "아니요. 표시된 파일은 시스템 휴지통(macOS) 또는 재활용 통(Windows)으로 이동되며 영구 삭제되지 않습니다. 휴지통을 비우기 전에 언제든지 파일을 복구할 수 있습니다."
         },
         {
-          "q": "Which file formats are supported?",
-          "a": "Comic archives: CBZ, CBR, ZIP, RAR. Photos: JPG, PNG, HEIC, WEBP, BMP, GIF. Filename fuzzy matching works with any file type."
+          "q": "어떤 파일 형식이 지원되나요?",
+          "a": "만화 아카이브: CBZ, CBR, ZIP, RAR. 사진: JPG, PNG, HEIC, WEBP, BMP, GIF. 파일명 퍼지 매칭은 모든 파일 유형에서 작동합니다."
         },
         {
-          "q": "Does it work with photos, not just comics?",
-          "a": "Yes. Select Photos mode to scan JPG, PNG, HEIC, WEBP, BMP, and GIF files. It works with iPhone photo library exports, scanned documents, and digital art collections."
+          "q": "만화뿐만 아니라 사진도 작동하나요?",
+          "a": "네. 사진 모드를 선택하여 JPG, PNG, HEIC, WEBP, BMP, GIF 파일을 스캔하세요. iPhone 사진 라이브러리 내보내기, 스캔된 문서, 디지털 아트 컬렉션에 작동합니다."
         },
         {
-          "q": "Is there a trial before I buy?",
-          "a": "You can scan up to 1,000 files for free, forever. A 7-day free trial on Mac App Store unlocks unlimited access, and the one-time Pro purchase is $19.99 with no subscription."
+          "q": "구매 전에 체험판이 있나요?",
+          "a": "최대 1,000개 파일을 영원히 무료로 스캔할 수 있습니다. Mac App Store에서 7일 무료 체험으로 무제한 액세스가 해제되며, Pro 일회성 구매는 구독 없이 $19.99입니다."
         }
       ],
-      "backDesc": "Looking for a comic and ebook reader?",
-      "backCta": "Back to BiblioFuse Reader"
+      "backDesc": "만화 및 전자책 리더를 찾고 있나요?",
+      "backCta": "BiblioFuse Reader로 돌아가기"
     },
     "smartdecryptPage": {
       "seo": {
-        "title": "SmartDecrypt — Auto-Unlock Password-Protected PDFs and Archives",
-        "desc": "SmartDecrypt는 저장된 파일명 패턴을 사용해 PDF, ZIP, 7z 파일을 자동으로 잠금 해제합니다 — 항상 동일한 비밀번호 형식을 사용하는 은행 명세서, 보험 서류, 청구서에 완벽합니다."
+        "title": "SmartDecrypt — 암호로 보호된 PDF 및 압축 파일 자동 잠금 해제",
+        "desc": "SmartDecrypt는 저장된 파일명 패턴을 사용하여 PDF, ZIP, 7z 파일을 자동으로 잠금 해제합니다. 항상 동일한 비밀번호 형식을 사용하는 은행 명세서, 보험 서류, 청구서에 완벽합니다. 파일을 드래그하면 자동으로 올바른 비밀번호를 찾습니다."
       },
       "hero": {
         "badge": "iOS · macOS · Windows",
-        "title": "Drop the file. It unlocks itself.",
-        "desc": "SmartDecrypt matches your files to saved password profiles by filename pattern — so unlocking a bank statement or invoice never requires hunting for the right password again.",
-        "trust1": "Passwords in system Keychain",
-        "trust2": "Files never leave your device",
-        "trust3": "Universal iOS + macOS purchase",
-        "appStore": "Download on App Store",
-        "winStore": "Get it from Microsoft Store"
+        "title": "파일을 드래그하면 자동으로 잠금이 해제됩니다.",
+        "desc": "SmartDecrypt는 파일명 패턴으로 저장된 비밀번호 프로필에 파일을 일치시킵니다. 따라서 은행 명세서나 청구서를 잠금 해제할 때 올바른 비밀번호를 찾는 번거로움이 없습니다.",
+        "trust1": "시스템 Keychain에 비밀번호 저장",
+        "trust2": "파일이 기기를 떠나지 않음",
+        "trust3": "iOS + macOS 범용 구매",
+        "appStore": "App Store에서 다운로드",
+        "winStore": "Microsoft Store에서 받기"
       },
       "patterns": {
-        "eyebrow": "Pattern-Based Auto-Unlock",
-        "title": "Save once, unlock forever",
-        "desc": "은행 명세서, 보험 PDF, 급여 명세서는 항상 같은 비밀번호 패턴으로 옵니다 — 주민등록번호, 생년월일 또는 계좌번호. 프로필을 한 번 저장하면 SmartDecrypt가 해당 파일 유형이 도착할 때마다 자동으로 올바른 비밀번호를 선택합니다.",
-        "bullet1": "파일명 패턴으로 매칭 — 예: \"DBS_Statement_*\" → 주민번호 비밀번호",
-        "bullet2": "은행 명세서, 보험 PDF, 청구서, 급여 명세서별 개별 프로필",
-        "bullet3": "Auto password cycling tries all matching profiles in sequence",
-        "badge": "Designed for recurring files with repeatable passwords"
+        "eyebrow": "패턴 기반 자동 잠금 해제",
+        "title": "한 번 저장하면 계속 사용",
+        "desc": "은행 명세서, 보험 PDF, 급여 명세서는 항상 동일한 비밀번호 패턴으로 전달됩니다. 주민등록번호, 생년월일 또는 계좌번호 등으로 프로필을 한 번 저장하면 SmartDecrypt가 해당 파일 유형이 도착할 때마다 올바른 비밀번호를 자동으로 선택합니다.",
+        "bullet1": "파일명 패턴으로 일치 — 예: \"DBS_Statement_*\" → 주민등록번호 비밀번호",
+        "bullet2": "은행 명세서, 보험 PDF, 청구서, 급여 명세서용 별도 프로필",
+        "bullet3": "자동 비밀번호 순환 — 일치하는 모든 프로필을 순서대로 시도",
+        "badge": "반복되는 파일과 반복 가능한 비밀번호를 위해 설계됨"
       },
       "formats": {
-        "eyebrow": "Formats Supported",
-        "title": "PDF, ZIP, and 7z — all three",
-        "desc": "Unlock password-protected PDFs, extract ZIP archives, and open 7z files — including unencrypted archives which are extracted normally without asking for a password.",
-        "bullet1": "PDF — unlock and keep the full document intact",
-        "bullet2": "ZIP & 7z — extract contents with or without password",
-        "bullet3": "Unencrypted archives extracted automatically — no prompt needed"
+        "eyebrow": "지원되는 형식",
+        "title": "PDF, ZIP, 7z — 세 가지 모두",
+        "desc": "암호로 보호된 PDF를 잠금 해제하고, ZIP 아카이브를 추출하며, 7z 파일을 열 수 있습니다. 암호화되지 않은 아카이브는 비밀번호를 묻지 않고 정상적으로 추출됩니다.",
+        "bullet1": "PDF — 잠금을 해제하고 전체 문서 유지",
+        "bullet2": "ZIP & 7z — 비밀번호 유무에 관계없이 내용 추출",
+        "bullet3": "암호화되지 않은 아카이브는 자동으로 추출 — 메시지 표시 ��음"
       },
       "mobile": {
-        "eyebrow": "iOS Share Sheet & Keychain",
-        "title": "Receive files from anywhere. Passwords stay private.",
-        "desc": "On iPhone and iPad, open files directly in SmartDecrypt or send them through the iOS Share Sheet from Files, Mail, or any other app. Passwords are stored exclusively in the system Keychain — never in a database, never on a server.",
-        "bullet1": "iOS Share Sheet — send files from Files, Mail, Safari, and more",
-        "bullet2": "Passwords stored in Apple Keychain, not in the app",
-        "bullet3": "Files processed locally — nothing uploaded"
+        "eyebrow": "iOS Share Sheet 및 Keychain",
+        "title": "어디서나 파일을 받으세요. 비밀번호는 비공개로 유지됩니다.",
+        "desc": "iPhone 및 iPad에서 SmartDecrypt에서 직접 파일을 열거나 파일, 메일 또는 다른 앱에서 iOS Share Sheet를 통해 보낼 수 있습니다. 비밀번호는 시스템 Keychain에만 저장되며, 데이터베이스나 서버에 저장되지 않습니다.",
+        "bullet1": "iOS Share Sheet — 파일, 메일, Safari 등에서 파일 보내기",
+        "bullet2": "비밀번호를 앱이 아닌 Apple Keychain에 저장",
+        "bullet3": "파일은 로컬에서 처리 — 업로드되지 않음"
       },
       "pricing": {
-        "eyebrow": "Simple Pricing",
-        "title": "Free for one file. Pro unlocks batch.",
-        "freeTitle": "Free",
+        "eyebrow": "간단한 가격 책정",
+        "title": "한 파일은 무료. Pro는 일괄 처리를 지원합니다.",
+        "freeTitle": "무료",
         "proTitle": "Pro — $9.99",
-        "universalNote": "One-time universal purchase — unlocks Pro on both iOS and macOS",
-        "feat1": "Unlock PDF, ZIP, 7z",
-        "feat1free": "One file at a time",
-        "feat1pro": "Batch loading",
-        "feat2": "Saved password patterns",
-        "feat2free": "3 profiles",
-        "feat2pro": "Unlimited profiles",
-        "feat3": "Auto password cycling",
+        "universalNote": "일회성 범용 구매 — iOS 및 macOS의 Pro를 모두 잠금 해제",
+        "feat1": "PDF, ZIP, 7z 잠금 해제",
+        "feat1free": "한 번에 하나의 파일",
+        "feat1pro": "일괄 로딩",
+        "feat2": "저장된 비밀번호 패턴",
+        "feat2free": "3개 프로필",
+        "feat2pro": "무제한 프로필",
+        "feat3": "자동 비밀번호 순환",
         "feat4": "iOS Share Sheet",
-        "feat5": "System Keychain storage",
-        "feat6": "macOS drag & drop"
+        "feat5": "시스템 Keychain 저장소",
+        "feat6": "macOS 드래그 앤 드롭"
       },
-      "faqTitle": "Frequently Asked Questions",
+      "faqTitle": "자주 묻는 질문",
       "faq": [
         {
-          "q": "What file formats does SmartDecrypt support?",
-          "a": "PDF, ZIP, and 7z. Unencrypted ZIP and 7z archives are extracted normally without asking for a password. SmartDecrypt does not currently support RAR, EPUB, or other formats."
+          "q": "SmartDecrypt는 어떤 파일 형식을 지원합니까?",
+          "a": "PDF, ZIP, 7z를 지원합니다. 암호화되지 않은 ZIP 및 7z 아카이브는 비밀번호를 묻지 않고 정상적으로 추출됩니다. SmartDecrypt는 현재 RAR, EPUB 또는 기타 형식을 지원하지 않습니다."
         },
         {
-          "q": "Does SmartDecrypt bypass unknown passwords?",
-          "a": "No. SmartDecrypt is designed for files you already have permission to access. It uses passwords you have saved in a profile — it does not crack or brute-force unknown passwords."
+          "q": "SmartDecrypt가 알 수 없는 비밀번호를 우회합니까?",
+          "a": "아니요. SmartDecrypt는 이미 접근 권한이 있는 파일을 위해 설계되었습니다. 프로필에 저장한 비밀번호를 사용합니다. 알 수 없는 비밀번호를 크래킹하거나 무차별 대입하지 않습니다."
         },
         {
-          "q": "Are my passwords safe?",
-          "a": "Yes. Passwords are stored exclusively in the system Keychain on your device — the same secure storage used by Safari and your other apps. SmartDecrypt never stores passwords in its own database, and nothing is uploaded to any server."
+          "q": "내 비밀번호가 안전합니까?",
+          "a": "네, 안전합니다. 비밀번호는 기기의 시스템 Keychain에만 저장되며, Safari 및 기타 앱에서 사용하는 동일한 보안 저장소입니다. SmartDecrypt는 자체 데이터베이스에 비밀번호를 저장하지 않으며, 서버에 업로드되지 않습니다."
         },
         {
-          "q": "What is a filename pattern?",
-          "a": "A filename pattern is a partial name or keyword that identifies recurring files. For example, if your bank sends monthly statements named 'BankStatement_2024-01.pdf', create a profile with the pattern 'BankStatement' and the password. SmartDecrypt matches future files to that profile automatically."
+          "q": "파일명 패턴이란 무엇입니까?",
+          "a": "파일명 패턴은 반복되는 파일을 식별하는 부분 이름 또는 키워드입니다. 예를 들어, 은행에서 'BankStatement_2024-01.pdf'로 이름이 지정된 월간 명세서를 보내는 경우, 패턴 'BankStatement'와 비밀번호를 사용하여 프로필을 만듭니다. SmartDecrypt는 향후 파일을 해당 프로필에 자동으로 일치시킵니다."
         },
         {
-          "q": "Is the Pro purchase shared between iPhone and Mac?",
-          "a": "Yes. SmartDecrypt Pro is a one-time universal purchase. Buy once on either iOS or macOS and unlock Pro on both platforms using the same Apple ID."
+          "q": "Pro 구매가 iPhone과 Mac 간에 공유됩니까?",
+          "a": "네. SmartDecrypt Pro는 일회성 범용 구매입니다. iOS 또는 macOS에서 한 번 구매하고 동일한 Apple ID를 사용하여 두 플랫폼 모두에서 Pro를 잠금 해제합니다."
         }
       ],
-      "backDesc": "Looking for a comic and ebook reader?",
-      "backCta": "Back to BiblioFuse Reader"
+      "backDesc": "만화 및 전자책 리더를 찾으세요?",
+      "backCta": "BiblioFuse Reader로 돌아가기"
     },
     "contentcuePage": {
       "seo": {
-        "title": "ContentCue — Reading Browser That Never Loses Your Place",
-        "desc": "ContentCue는 iPhone과 iPad용 읽기 브라우저로, 광고가 방해할 때 스크롤 위치를 저장하고 광고 주변에 색상 테두리를 그려 콘텐츠와 스폰서 내용을 항상 구별할 수 있게 합니다."
+        "title": "ContentCue — 읽던 위치를 절대 잃지 않는 리딩 브라우저",
+        "desc": "ContentCue는 iPhone과 iPad용 리딩 브라우저로, 광고가 방해할 때 스크롤 위치를 저장하고 광고 주변에 색상 테두리를 그려서 콘텐츠와 스폰서 광고를 구분할 수 있게 해줍니다. 한 번의 탭으로 읽던 위치로 돌아갑니다."
       },
       "hero": {
         "badge": "iPhone & iPad",
-        "title": "Read. Get interrupted. Resume exactly where you left off.",
-        "desc": "ContentCue는 팝업이나 리디렉션이 독서 흐름을 끊을 때 정확한 스크롤 위치를 저장합니다. 색상 테두리로 페이지의 어느 부분이 광고인지 표시 — 진짜 기사 내용과 스폰서 블록을 한눈에 구별할 수 있습니다.",
-        "trust1": "광고 강조 표시, 차단하지 않음",
-        "trust2": "No browsing data collected",
-        "trust3": "Works with any website",
-        "appStore": "Download on App Store"
+        "title": "읽다가. 방해받다. 정확히 읽던 위치에서 다시 시작.",
+        "desc": "ContentCue는 팝업이나 리다이렉트가 읽기를 방해할 때 정확한 스크롤 위치를 저장합니다. 색상 테두리로 광고 영역을 표시하여 실제 기사 콘텐츠와 스폰서 광고를 한눈에 구분할 수 있습니다. 한 번의 탭으로 원래 위치로 돌아갑니다.",
+        "trust1": "광고는 강조, 차단하지 않음",
+        "trust2": "열람 데이터 수집 없음",
+        "trust3": "모든 웹사이트에서 작동",
+        "appStore": "App Store에서 다운로드"
       },
       "how": {
-        "eyebrow": "How It Works",
-        "title": "Three steps. No setup needed.",
-        "step1title": "Browse normally",
-        "step1desc": "Open any website in ContentCue and read as usual. No per-site setup. No accounts.",
-        "step2title": "Ad interrupts",
-        "step2desc": "A popup or redirect takes you away. ContentCue auto-saves your exact scroll position before it happens.",
-        "step3title": "Tap Resume",
-        "step3desc": "The Resume button appears. One tap returns you to the exact line you were reading."
+        "eyebrow": "작동 원리",
+        "title": "3단계. 설정 필요 없음.",
+        "step1title": "평소처럼 탐색",
+        "step1desc": "ContentCue에서 아무 웹사이트나 열고 평소대로 읽으세요. 사이트별 설정도, 계정도 필요 없습니다.",
+        "step2title": "광고가 방해함",
+        "step2desc": "팝업이나 리다이렉트가 나타나 다른 페이지로 이동합니다. ContentCue가 그 순간 정확한 스크롤 위치를 자동으로 저장합니다.",
+        "step3title": "이어서 읽기 탭",
+        "step3desc": "이어서 읽기 버튼이 나타납니다. 한 번 탭하면 읽던 정확한 줄로 돌아갑니다."
       },
       "restore": {
-        "eyebrow": "Position Restore",
-        "title": "One tap. Back to your exact place.",
-        "desc": "ContentCue watches for page interruptions — popups, redirect banners, accidental taps on ads — and auto-saves your scroll position. A Resume button appears when your position is saved. Tap it once and you're back where you were.",
-        "bullet1": "Automatic position save on every navigation away",
-        "bullet2": "Resume button visible any time your position is saved",
-        "bullet3": "Works on all content sites — no per-site configuration needed"
+        "eyebrow": "위치 복원",
+        "title": "한 번의 탭. 정확한 위치로 돌아가기.",
+        "desc": "ContentCue는 페이지 방해 요소(팝업, 리다이렉트 배너, 실수로 광고 탭하기 등)를 감지하고 스크롤 위치를 자동으로 저장합니다. 위치가 저장되면 이어서 읽기 버튼이 나타납니다. 탭하면 원래 위치로 돌아갑니다.",
+        "bullet1": "탐색할 때마다 자동으로 위치 저장",
+        "bullet2": "위치가 저장되면 언제든 이어서 읽기 버튼 표시",
+        "bullet3": "모든 콘텐츠 사이트에서 작동 — 사이트별 설정 불필요"
       },
       "visual": {
-        "eyebrow": "Visual Ad Distinction",
-        "title": "See what's content and what's an ad",
-        "desc": "ContentCue draws colored borders around in-page ads so you can instantly distinguish them from the content you're reading. This is not ad blocking — all ads still load and display normally. It's just visual clarity.",
-        "bullet1": "Colored borders highlight in-page ads",
-        "bullet2": "All ads still load and display normally",
-        "bullet3": "Customize border color with Pro",
-        "badge": "All ads display normally — we just help you see them"
+        "eyebrow": "시각적 광고 구분",
+        "title": "콘텐츠와 광고 구분하기",
+        "desc": "ContentCue는 페이지 내 광고 주변에 색상 테두리를 그려서 읽는 콘텐츠와 즉시 구분할 수 있게 해줍니다. 이는 광고 차단이 아닙니다 — 모든 광고가 정상적으로 로드되고 표시됩니다. 단지 시각적 명확성을 제공할 뿐입니다.",
+        "bullet1": "색상 테두리로 페이지 내 광고 강조",
+        "bullet2": "모든 광고가 정상적으로 로드되고 표시됨",
+        "bullet3": "Pro에서 테두리 색상 커스터마이징",
+        "badge": "모든 광고가 정상 표시됨 — 단지 더 잘 보이게 도와줍니다"
       },
       "extras": {
-        "eyebrow": "Audio & Bookmarks",
-        "title": "Mute autoplay. Save your favourites.",
-        "desc": "Toggle audio mute to silence autoplay video ads while reading in public. Bookmark up to 3 sites free, or upgrade to Pro for unlimited bookmarks and adjustable auto-scroll speed for webtoons and manga.",
-        "bullet1": "Audio mute — silence all website audio with one tap",
-        "bullet2": "Bookmarks — 3 free, unlimited with Pro",
-        "bullet3": "Adjustable auto-scroll speed for long-form content (Pro)"
+        "eyebrow": "오디오 및 북마크",
+        "title": "자동재생 음소거. 즐겨찾기 저장.",
+        "desc": "오디오 음소거를 활성화하여 공개된 장소에서 읽을 때 자동재생 동영상 광고의 소리를 끕니다. 무료로 최대 3개 사이트 북마크, 또는 Pro로 업그레이드하여 무제한 북마크와 웹툰·만화용 조정 가능한 자동 스크롤 속도를 사용하세요.",
+        "bullet1": "오디오 음소거 — 한 번의 탭으로 모든 웹사이트 오디오 음소거",
+        "bullet2": "북마크 — 무료 3개, Pro에서 무제한",
+        "bullet3": "긴 형식 콘텐츠용 조정 가능한 자동 스크롤 속도 (Pro)"
       },
       "pricing": {
-        "eyebrow": "Simple Pricing",
-        "title": "Free forever. Pro for power readers.",
-        "freeTitle": "Free",
+        "eyebrow": "간단한 가격",
+        "title": "무료 영구 사용. Pro는 애독가를 위해.",
+        "freeTitle": "무료",
         "proTitle": "Pro — $2.99",
-        "feat1": "Position restore",
-        "feat2": "Visual ad distinction",
-        "feat3": "Audio mute",
-        "feat4": "Bookmarks",
-        "feat4free": "3",
-        "feat4pro": "Unlimited",
-        "feat5": "Custom ad border color",
-        "feat6": "Adjustable auto-scroll"
+        "feat1": "위치 복원",
+        "feat2": "시각적 광고 구분",
+        "feat3": "오디오 음소거",
+        "feat4": "북마크",
+        "feat4free": "3개",
+        "feat4pro": "무제한",
+        "feat5": "커스텀 광고 테두리 색상",
+        "feat6": "조정 가능한 자동 스크롤"
       },
-      "faqTitle": "Frequently Asked Questions",
+      "faqTitle": "자주 묻는 질문",
       "faq": [
         {
-          "q": "Is ContentCue an ad blocker?",
-          "a": "No. ContentCue does not block, hide, or prevent ads from loading. All advertisements display normally. ContentCue improves navigation by saving your scroll position when ads interrupt your reading, and it draws colored borders around in-page ads so you can see them clearly."
+          "q": "ContentCue는 광고 차단기인가요?",
+          "a": "아니요. ContentCue는 광고를 차단, 숨김 또는 로드하지 않습니다. 모든 광고가 정상적으로 표시됩니다. ContentCue는 광고가 읽기를 방해할 때 스크롤 위치를 저장하여 탐색을 개선하고, 페이지 내 광고 주변에 색상 테두리를 그려서 명확하게 보일 수 있도록 합니다."
         },
         {
-          "q": "Which sites does ContentCue work with?",
-          "a": "ContentCue is a full web browser, so it works with any website — Webtoons, Tapas, LINE Webtoon, independent creator pages, manga aggregators, WordPress blogs, and thousands more. No per-site setup is needed."
+          "q": "ContentCue는 어떤 사이트에서 작동하나요?",
+          "a": "ContentCue는 완전한 웹 브라우저이므로 모든 웹사이트에서 작동합니다 — Webtoons, Tapas, LINE Webtoon, 독립 작가 페이지, 만화 검색 사이트, WordPress 블로그 등 수천 개 사이트에서요. 사이트별 설정이 필요 없습니다."
         },
         {
-          "q": "How does position restore work?",
-          "a": "ContentCue monitors your scroll position while you read. When you navigate away (tapping an ad link, a redirect, or the back button), it saves your exact position. A Resume button appears in the browser UI. Tap it to return to exactly where you were."
+          "q": "위치 복원은 어떻게 작동하나요?",
+          "a": "ContentCue는 읽는 동안 스크롤 위치를 모니터링합니다. 탐색할 때(광고 링크 탭, 리다이렉트 또는 뒤로 버튼), 정확한 위치를 저장합니다. 브라우저 UI에 이어서 읽기 버튼이 나타납니다. 탭하면 정확히 읽던 위치로 돌아갑니다."
         },
         {
-          "q": "Does ContentCue collect my browsing data?",
-          "a": "No. ContentCue processes all browsing entirely on your device using Apple WebKit. No browsing history, visited URLs, or personal data is collected or transmitted anywhere."
+          "q": "ContentCue는 제 열람 데이터를 수집하나요?",
+          "a": "아니요. ContentCue는 Apple WebKit을 사용하여 기기 내에서만 모든 탐색을 처리합니다. 열람 기록, 방문한 URL, 개인 데이터가 수집되거나 전송되지 않습니다."
         },
         {
-          "q": "What does the Pro upgrade include?",
-          "a": "Pro is a one-time $2.99 purchase. It unlocks unlimited bookmarks, custom ad border colors, and adjustable auto-scroll speed. There is no subscription — pay once, use forever."
+          "q": "Pro 업그레이드에는 무엇이 포함되나요?",
+          "a": "Pro는 일회성 $2.99 구매입니다. 무제한 북마크, 커스텀 광고 테두리 색상, 조정 가능한 자동 스크롤 속도를 사용할 수 있습니다. 구독이 아닙니다 — 한 번 구매하면 영구적으로 사용할 수 있습니다."
         }
       ],
-      "backDesc": "Looking for a comic and ebook reader?",
-      "backCta": "Back to BiblioFuse Reader"
+      "backDesc": "만화와 전자책 리더를 찾고 있나요?",
+      "backCta": "BiblioFuse Reader로 돌아가기"
     }
   }
 }

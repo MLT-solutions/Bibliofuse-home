@@ -1170,12 +1170,12 @@
         "badge": "iOS · macOS · Windows",
         "title": "Busca. Etiqueta. Domina tu biblioteca.",
         "desc": "GrepTag Reader busca el texto real dentro de tus archivos EPUB y TXT — sin metadatos manuales, sin entrada de ISBN. Escribe una palabra clave y cada libro que la contiene aparece al instante. Etiqueta por género, filtra con lógica AND, sincroniza por Wi-Fi.",
-        "appStoreCta": "Download on App Store",
+        "appStoreCta": "Descargar en App Store",
         "trust1": "Sin metadatos manuales ni ISBN",
         "trust2": "Sin servidor, sin subidas",
         "trust3": "Compatible con texto CJK",
         "comingSoon": "Ya disponible en App Store",
-        "msStoreCta": "Get it from Microsoft",
+        "msStoreCta": "Obtener en Microsoft",
         "macInReview": "iOS, macOS y Windows disponibles ahora"
       },
       "grep": {
@@ -1217,12 +1217,12 @@
         "desc": "BiblioFuse Reader está hecho para archivos de cómics grandes — transmite desde Mac, comprime en la app. GrepTag está hecho para archivos de texto pequeños que caben en el dispositivo — grep, etiqueta, sincroniza en cualquier dirección.",
         "col1": "BiblioFuse Reader",
         "col2": "GrepTag Reader",
-        "row1Label": "Best for",
-        "row1col1": "Comics, manga, PDF",
-        "row1col2": "EPUB, light novels, TXT",
-        "row2Label": "File size",
-        "row2col1": "50–300 MB per volume",
-        "row2col2": "Under 5 MB each",
+        "row1Label": "Ideal para",
+        "row1col1": "Cómics, manga, PDF",
+        "row1col2": "EPUB, novelas ligeras, TXT",
+        "row2Label": "Tamaño de archivo",
+        "row2col1": "50–300 MB por volumen",
+        "row2col2": "Menos de 5 MB cada uno",
         "row3Label": "Almacenamiento",
         "row3col1": "Transmite desde Mac · comprime en la app",
         "row3col2": "Guarda en dispositivo · sincroniza en cualquier dirección",
@@ -1237,14 +1237,14 @@
         "eyebrow": "Precios",
         "title": "Gratis para buscar. Pro para dominar.",
         "freeTitle": "Gratis",
-        "freeDesc": "Search and discover your library forever.",
+        "freeDesc": "Busca y descubre tu biblioteca para siempre.",
         "proTitle": "Pro",
-        "proDesc": "One-time purchase unlocks everything, forever.",
-        "proMonthly": "$0.99 / month",
-        "proYearly": "$4.99 / year",
-        "proLifetime": "$14.99 one-time",
-        "proTrial": "7-day free trial on monthly & yearly",
-        "appStoreCta": "Try Free on App Store",
+        "proDesc": "Una compra única desbloquea todo, para siempre.",
+        "proMonthly": "$0,99 / mes",
+        "proYearly": "$4,99 / año",
+        "proLifetime": "$14,99 único",
+        "proTrial": "Prueba gratuita de 7 días en mensual y anual",
+        "appStoreCta": "Probar gratis en App Store",
         "approvalNote": "Ya disponible en App Store y Microsoft Store."
       },
       "seo": {
@@ -1305,275 +1305,275 @@
     },
     "archivePage": {
       "seo": {
-        "title": "Archive Duplicate Scanner — Find Duplicate Comics & Photos on Mac & Windows",
-        "desc": "Archive Duplicate Scanner finds duplicate CBZ, CBR, ZIP, RAR and photo files using perceptual hashing — even after renaming or recompression. Free up to 1,000 files, $19.99 one-time Pro."
+        "title": "Archive Duplicate Scanner — Encuentra Duplicados de Cómics y Fotos en Mac y Windows",
+        "desc": "Archive Duplicate Scanner encuentra archivos CBZ, CBR, ZIP, RAR y fotos duplicadas usando hash perceptual — incluso tras renombrarlos o recomprimirlos. Gratis hasta 1.000 archivos, Pro por $19,99 de por vida."
       },
       "hero": {
-        "badge": "Mac & Windows",
-        "title": "Find duplicates. Even after renaming.",
-        "desc": "Archive Duplicate Scanner abre tus archivos de cómics y compara las imágenes reales dentro — no solo nombres de archivo o tamaños. Incluso si un archivo se llama comic_E1-5 y otro ComiX_E1-10, si las primeras páginas coinciden, los marca como duplicados.",
-        "trust1": "No cloud upload",
-        "trust2": "Safe Trash deletion",
-        "trust3": "7-day free trial",
-        "macStore": "Download on Mac App Store",
-        "winStore": "Get it from Microsoft Store"
+        "badge": "Mac y Windows",
+        "title": "Encuentra duplicados. Incluso tras renombrarlos.",
+        "desc": "Archive Duplicate Scanner abre tus archivos de cómics y compara las imágenes reales en su interior — no solo los nombres de archivo o tamaños. Aunque un archivo se llame comic_E1-5 y otro ComiX_E1-10, si las primeras páginas coinciden, los marca como duplicados.",
+        "trust1": "Sin carga en la nube",
+        "trust2": "Eliminación segura a Papelera",
+        "trust3": "Prueba gratuita de 7 días",
+        "macStore": "Descargar en Mac App Store",
+        "winStore": "Obtener en Microsoft Store"
       },
       "scanning": {
-        "eyebrow": "Deep Archive Scanning",
-        "title": "Opens archives and compares pages inside",
+        "eyebrow": "Escaneo Profundo de Archivos",
+        "title": "Abre archivos y compara las páginas internas",
         "desc": "La mayoría de buscadores de duplicados solo comparan nombres o tamaños de archivo. Archive Duplicate Scanner abre cada archivo CBZ, CBR, ZIP o RAR, extrae miniaturas de las páginas reales y las compara. Un archivo llamado comic_E1-5 y otro ComiX_E1-10 — distinto nombre, distinto rango de episodios — aún se detectan si sus páginas iniciales coinciden.",
         "bullet1": "Abre archivos y compara imágenes de páginas — no solo nombres de archivo",
-        "bullet2": "Configurable similarity threshold — 90% recommended",
-        "bullet3": "Hash cache makes repeat scans near-instant",
-        "badge": "Works with manga, manhwa, and manhua"
+        "bullet2": "Umbral de similitud configurable — 90% recomendado",
+        "bullet3": "Caché de hash hace los rescaneos casi instantáneos",
+        "badge": "Compatible con manga, manhwa y manhua"
       },
       "photos": {
-        "eyebrow": "Photos & Filename Matching",
-        "title": "Photos and fuzzy filenames — both covered",
-        "desc": "Beyond archives, detect duplicate JPG, PNG, HEIC, WEBP, BMP, and GIF photos using the dHash algorithm. Filename Fuzzy Matching catches copies that differ only in formatting — \"Spider-Man #001\" vs \"Spider Man 001\" — using RapidFuzz with a configurable threshold.",
-        "bullet1": "Photo formats: JPG, PNG, HEIC, WEBP, BMP, GIF",
-        "bullet2": "RapidFuzz algorithm with configurable symbol-stripping",
-        "bullet3": "Unicode-aware — works with Japanese, Korean, Chinese and any character set"
+        "eyebrow": "Fotos y Coincidencia de Nombres",
+        "title": "Fotos y nombres similares — ambos cubiertos",
+        "desc": "Además de archivos, detecta fotos JPG, PNG, HEIC, WEBP, BMP y GIF duplicadas usando el algoritmo dHash. La coincidencia difusa de nombres captura copias que solo difieren en formato — \"Spider-Man #001\" vs \"Spider Man 001\" — con un umbral configurable.",
+        "bullet1": "Formatos de foto: JPG, PNG, HEIC, WEBP, BMP, GIF",
+        "bullet2": "Algoritmo RapidFuzz con eliminación de símbolos configurable",
+        "bullet3": "Compatible con Unicode — funciona con japonés, coreano, chino y cualquier conjunto de caracteres"
       },
       "autoselect": {
-        "eyebrow": "Smart Auto-Select",
-        "title": "One click marks the right file to keep",
-        "desc": "Set a rule — keep the Largest, Smallest, Newest, Oldest, or file with the Most Pages — and Auto-Select marks every duplicate in one click. Review the results before anything is touched. Nothing moves until you confirm.",
-        "bullet1": "Five rules: Largest, Smallest, Newest, Oldest, Most Pages",
-        "bullet2": "Last-copy safety warning prevents accidental total deletion",
-        "bullet3": "Permanent ignore list for intentional variant pairs",
-        "badge": "Files moved to Trash — recoverable any time"
+        "eyebrow": "Autoselección Inteligente",
+        "title": "Un clic marca el archivo correcto para conservar",
+        "desc": "Define una regla — conservar el Más Grande, el Más Pequeño, el Más Nuevo, el Más Antiguo o el de Más Páginas — y la Autoselección marca cada duplicado en un clic. Revisa los resultados antes de que se toque algo. Nada se mueve hasta que confirmes.",
+        "bullet1": "Cinco reglas: Más Grande, Más Pequeño, Más Nuevo, Más Antiguo, Más Páginas",
+        "bullet2": "Advertencia de última copia evita la eliminación accidental total",
+        "bullet3": "Lista de ignorados permanente para pares de variantes intencionales",
+        "badge": "Archivos movidos a Papelera — recuperables en cualquier momento"
       },
       "export": {
-        "eyebrow": "Reports & Multi-Folder",
-        "title": "Export results, compare across folders",
-        "desc": "Export your scan as a CSV for spreadsheets or as a full HTML report with thumbnails, similarity scores, and sortable columns. Multi-Folder mode compares two separate folders — useful for finding duplicates between your organised library and a Downloads folder.",
-        "bullet1": "HTML report with embedded thumbnails and statistics",
-        "bullet2": "CSV export for spreadsheets and archiving",
-        "bullet3": "Multi-folder comparison: Folder A vs Folder B"
+        "eyebrow": "Informes y Múltiples Carpetas",
+        "title": "Exporta resultados, compara entre carpetas",
+        "desc": "Exporta tu escaneo como CSV para hojas de cálculo o como informe HTML completo con miniaturas, puntuaciones de similitud y columnas ordenables. El modo Multi-Carpeta compara dos carpetas separadas — útil para encontrar duplicados entre tu biblioteca organizada y una carpeta de Descargas.",
+        "bullet1": "Informe HTML con miniaturas incrustadas y estadísticas",
+        "bullet2": "Exportación CSV para hojas de cálculo y archivado",
+        "bullet3": "Comparación entre carpetas: Carpeta A vs Carpeta B"
       },
       "pricing": {
-        "eyebrow": "Simple Pricing",
-        "title": "Free forever. Unlock Pro when you need it.",
-        "freeTitle": "Free",
-        "proTitle": "Pro — $19.99",
-        "trial": "7-day free trial available on Mac App Store",
-        "feat1": "Archive scanning (CBZ/CBR/ZIP/RAR)",
-        "feat1free": "Up to 1,000 files",
-        "feat1pro": "Unlimited",
-        "feat2": "Photo duplicate detection",
-        "feat2free": "Up to 1,000 files",
-        "feat2pro": "Unlimited",
-        "feat3": "Filename fuzzy matching",
-        "feat3free": "Up to 1,000 files",
-        "feat3pro": "Unlimited",
-        "feat4": "Smart Auto-Select",
-        "feat5": "Export reports (CSV & HTML)",
-        "feat6": "Multi-folder comparison",
-        "feat7": "Hash cache (fast rescans)",
-        "feat8": "Permanent ignore list"
+        "eyebrow": "Precios Simples",
+        "title": "Gratis para siempre. Desbloquea Pro cuando lo necesites.",
+        "freeTitle": "Gratis",
+        "proTitle": "Pro — $19,99",
+        "trial": "Prueba gratuita de 7 días disponible en Mac App Store",
+        "feat1": "Escaneo de archivos (CBZ/CBR/ZIP/RAR)",
+        "feat1free": "Hasta 1.000 archivos",
+        "feat1pro": "Ilimitado",
+        "feat2": "Detección de fotos duplicadas",
+        "feat2free": "Hasta 1.000 archivos",
+        "feat2pro": "Ilimitado",
+        "feat3": "Coincidencia difusa de nombres",
+        "feat3free": "Hasta 1.000 archivos",
+        "feat3pro": "Ilimitado",
+        "feat4": "Autoselección inteligente",
+        "feat5": "Exportar informes (CSV y HTML)",
+        "feat6": "Comparación multi-carpeta",
+        "feat7": "Caché de hash (rescaneos rápidos)",
+        "feat8": "Lista de ignorados permanente"
       },
-      "faqTitle": "Frequently Asked Questions",
+      "faqTitle": "Preguntas Frecuentes",
       "faq": [
         {
-          "q": "What is perceptual hashing and why does it matter?",
-          "a": "Perceptual hashing compares the visual structure of images rather than raw file bytes. Two files can have different names, sizes, and metadata — but if their content looks the same, perceptual hashing matches them. Standard duplicate finders fail the moment a file is renamed or re-exported; Archive Duplicate Scanner does not."
+          "q": "¿Qué es el hash perceptual y por qué importa?",
+          "a": "El hash perceptual compara la estructura visual de las imágenes en lugar de los bytes brutos del archivo. Dos archivos pueden tener nombres, tamaños y metadatos diferentes, pero si su contenido parece igual, el hash perceptual los empareja. Los buscadores de duplicados estándar fallan en cuanto se renombra o exporta un archivo; Archive Duplicate Scanner no."
         },
         {
-          "q": "Can it find duplicates that have been renamed?",
-          "a": "Yes. Renaming a file changes nothing about its content. Archive Duplicate Scanner compares the images inside each archive, so a duplicate is detected regardless of what the file is called."
+          "q": "¿Puede encontrar duplicados que han sido renombrados?",
+          "a": "Sí. Renombrar un archivo no cambia nada sobre su contenido. Archive Duplicate Scanner compara las imágenes dentro de cada archivo, por lo que un duplicado se detecta independientemente de cómo se llame el archivo."
         },
         {
-          "q": "Is deletion permanent?",
-          "a": "No. Marked files are moved to the system Trash (macOS) or Recycle Bin (Windows), not permanently deleted. You can recover any file before emptying the Trash."
+          "q": "¿La eliminación es permanente?",
+          "a": "No. Los archivos marcados se mueven a la Papelera del sistema (macOS) o a la Papelera de reciclaje (Windows), no se eliminan permanentemente. Puedes recuperar cualquier archivo antes de vaciar la Papelera."
         },
         {
-          "q": "Which file formats are supported?",
-          "a": "Comic archives: CBZ, CBR, ZIP, RAR. Photos: JPG, PNG, HEIC, WEBP, BMP, GIF. Filename fuzzy matching works with any file type."
+          "q": "¿Qué formatos de archivo son compatibles?",
+          "a": "Archivos de cómics: CBZ, CBR, ZIP, RAR. Fotos: JPG, PNG, HEIC, WEBP, BMP, GIF. La coincidencia difusa de nombres funciona con cualquier tipo de archivo."
         },
         {
-          "q": "Does it work with photos, not just comics?",
-          "a": "Yes. Select Photos mode to scan JPG, PNG, HEIC, WEBP, BMP, and GIF files. It works with iPhone photo library exports, scanned documents, and digital art collections."
+          "q": "¿Funciona con fotos, no solo con cómics?",
+          "a": "Sí. Selecciona el modo Fotos para escanear archivos JPG, PNG, HEIC, WEBP, BMP y GIF. Funciona con exportaciones de biblioteca de fotos de iPhone, documentos escaneados y colecciones de arte digital."
         },
         {
-          "q": "Is there a trial before I buy?",
-          "a": "You can scan up to 1,000 files for free, forever. A 7-day free trial on Mac App Store unlocks unlimited access, and the one-time Pro purchase is $19.99 with no subscription."
+          "q": "¿Hay una prueba antes de comprar?",
+          "a": "Puedes escanear hasta 1.000 archivos gratis, para siempre. Una prueba gratuita de 7 días en Mac App Store desbloquea acceso ilimitado, y la compra única de Pro cuesta $19,99 sin suscripción."
         }
       ],
-      "backDesc": "Looking for a comic and ebook reader?",
-      "backCta": "Back to BiblioFuse Reader"
+      "backDesc": "¿Buscas un lector de cómics y ebooks?",
+      "backCta": "Volver a BiblioFuse Reader"
     },
     "smartdecryptPage": {
       "seo": {
-        "title": "SmartDecrypt — Auto-Unlock Password-Protected PDFs and Archives",
-        "desc": "SmartDecrypt desbloquea automáticamente archivos PDF, ZIP y 7z usando patrones de nombre de archivo guardados — perfecto para estados de cuenta bancarios, documentos de seguros y facturas que siempre usan el mismo formato de contraseña."
+        "title": "SmartDecrypt — Desbloquea automáticamente PDFs y archivos protegidos con contraseña",
+        "desc": "SmartDecrypt desbloquea automáticamente archivos PDF, ZIP y 7z usando patrones de nombre de archivo guardados — perfecto para extractos bancarios, documentos de seguros e facturas que siempre usan el mismo formato de contraseña. Suelta el archivo, encuentra la contraseña correcta automáticamente."
       },
       "hero": {
         "badge": "iOS · macOS · Windows",
-        "title": "Drop the file. It unlocks itself.",
-        "desc": "SmartDecrypt matches your files to saved password profiles by filename pattern — so unlocking a bank statement or invoice never requires hunting for the right password again.",
-        "trust1": "Passwords in system Keychain",
-        "trust2": "Files never leave your device",
-        "trust3": "Universal iOS + macOS purchase",
-        "appStore": "Download on App Store",
-        "winStore": "Get it from Microsoft Store"
+        "title": "Suelta el archivo. Se desbloquea solo.",
+        "desc": "SmartDecrypt relaciona tus archivos con perfiles de contraseña guardados según el patrón del nombre — así que desbloquear un extracto bancario o factura nunca vuelve a requerir buscar la contraseña correcta.",
+        "trust1": "Contraseñas en el Keychain del sistema",
+        "trust2": "Los archivos nunca salen de tu dispositivo",
+        "trust3": "Compra universal iOS + macOS",
+        "appStore": "Descargar en App Store",
+        "winStore": "Obtener en Microsoft Store"
       },
       "patterns": {
-        "eyebrow": "Pattern-Based Auto-Unlock",
-        "title": "Save once, unlock forever",
-        "desc": "Los estados de cuenta bancarios, PDFs de seguros y nóminas siempre llegan con el mismo patrón de contraseña — tu número de identificación, fecha de nacimiento o número de cuenta. Guarda un perfil una vez y SmartDecrypt selecciona la contraseña correcta automáticamente cada vez que llega ese tipo de archivo.",
-        "bullet1": "Coincidencia por patrón de nombre de archivo — ej. \"DBS_Statement_*\" → tu contraseña de identificación",
-        "bullet2": "Perfiles separados para estados de cuenta, PDFs de seguros, facturas y nóminas",
-        "bullet3": "Auto password cycling tries all matching profiles in sequence",
-        "badge": "Designed for recurring files with repeatable passwords"
+        "eyebrow": "Desbloqueo automático basado en patrones",
+        "title": "Guarda una vez, desbloquea para siempre",
+        "desc": "Los extractos bancarios, PDFs de seguros y nóminas siempre llegan con el mismo patrón de contraseña — tu NRIC, fecha de nacimiento o número de cuenta. Guarda un perfil una vez y SmartDecrypt elige la contraseña correcta automáticamente cada vez que llega ese tipo de archivo.",
+        "bullet1": "Coincide con el patrón del nombre de archivo — p. ej. \"DBS_Statement_*\" → tu contraseña NRIC",
+        "bullet2": "Perfiles separados para extractos bancarios, PDFs de seguros, facturas, nóminas",
+        "bullet3": "Ciclado automático de contraseñas — prueba todos los perfiles coincidentes en secuencia",
+        "badge": "Diseñado para archivos recurrentes con contraseñas repetibles"
       },
       "formats": {
-        "eyebrow": "Formats Supported",
-        "title": "PDF, ZIP, and 7z — all three",
-        "desc": "Unlock password-protected PDFs, extract ZIP archives, and open 7z files — including unencrypted archives which are extracted normally without asking for a password.",
-        "bullet1": "PDF — unlock and keep the full document intact",
-        "bullet2": "ZIP & 7z — extract contents with or without password",
-        "bullet3": "Unencrypted archives extracted automatically — no prompt needed"
+        "eyebrow": "Formatos compatibles",
+        "title": "PDF, ZIP y 7z — los tres",
+        "desc": "Desbloquea PDFs protegidos con contraseña, extrae archivos ZIP y abre archivos 7z — incluidos archivos sin cifrar que se extraen normalmente sin pedir contraseña.",
+        "bullet1": "PDF — desbloquea y mantiene el documento completo intacto",
+        "bullet2": "ZIP y 7z — extrae contenido con o sin contraseña",
+        "bullet3": "Archivos sin cifrar se extraen automáticamente — sin solicitud"
       },
       "mobile": {
-        "eyebrow": "iOS Share Sheet & Keychain",
-        "title": "Receive files from anywhere. Passwords stay private.",
-        "desc": "On iPhone and iPad, open files directly in SmartDecrypt or send them through the iOS Share Sheet from Files, Mail, or any other app. Passwords are stored exclusively in the system Keychain — never in a database, never on a server.",
-        "bullet1": "iOS Share Sheet — send files from Files, Mail, Safari, and more",
-        "bullet2": "Passwords stored in Apple Keychain, not in the app",
-        "bullet3": "Files processed locally — nothing uploaded"
+        "eyebrow": "iOS Share Sheet y Keychain",
+        "title": "Recibe archivos desde cualquier lugar. Las contraseñas se mantienen privadas.",
+        "desc": "En iPhone e iPad, abre archivos directamente en SmartDecrypt o envíalos a través de iOS Share Sheet desde Archivos, Mail o cualquier otra app. Las contraseñas se almacenan exclusivamente en el Keychain del sistema — nunca en una base de datos, nunca en un servidor.",
+        "bullet1": "iOS Share Sheet — envía archivos desde Archivos, Mail, Safari y más",
+        "bullet2": "Contraseñas almacenadas en Apple Keychain, no en la app",
+        "bullet3": "Archivos procesados localmente — nada se carga"
       },
       "pricing": {
-        "eyebrow": "Simple Pricing",
-        "title": "Free for one file. Pro unlocks batch.",
-        "freeTitle": "Free",
+        "eyebrow": "Precios simples",
+        "title": "Gratis para un archivo. Pro desbloquea lotes.",
+        "freeTitle": "Gratis",
         "proTitle": "Pro — $9.99",
-        "universalNote": "One-time universal purchase — unlocks Pro on both iOS and macOS",
-        "feat1": "Unlock PDF, ZIP, 7z",
-        "feat1free": "One file at a time",
-        "feat1pro": "Batch loading",
-        "feat2": "Saved password patterns",
-        "feat2free": "3 profiles",
-        "feat2pro": "Unlimited profiles",
-        "feat3": "Auto password cycling",
+        "universalNote": "Compra universal única — desbloquea Pro en iOS y macOS",
+        "feat1": "Desbloquea PDF, ZIP, 7z",
+        "feat1free": "Un archivo a la vez",
+        "feat1pro": "Carga por lotes",
+        "feat2": "Patrones de contraseña guardados",
+        "feat2free": "3 perfiles",
+        "feat2pro": "Perfiles ilimitados",
+        "feat3": "Ciclado automático de contraseñas",
         "feat4": "iOS Share Sheet",
-        "feat5": "System Keychain storage",
-        "feat6": "macOS drag & drop"
+        "feat5": "Almacenamiento en Keychain del sistema",
+        "feat6": "Arrastrar y soltar en macOS"
       },
-      "faqTitle": "Frequently Asked Questions",
+      "faqTitle": "Preguntas frecuentes",
       "faq": [
         {
-          "q": "What file formats does SmartDecrypt support?",
-          "a": "PDF, ZIP, and 7z. Unencrypted ZIP and 7z archives are extracted normally without asking for a password. SmartDecrypt does not currently support RAR, EPUB, or other formats."
+          "q": "¿Qué formatos de archivo admite SmartDecrypt?",
+          "a": "PDF, ZIP y 7z. Los archivos ZIP y 7z sin cifrar se extraen normalmente sin pedir contraseña. SmartDecrypt no admite actualmente RAR, EPUB u otros formatos."
         },
         {
-          "q": "Does SmartDecrypt bypass unknown passwords?",
-          "a": "No. SmartDecrypt is designed for files you already have permission to access. It uses passwords you have saved in a profile — it does not crack or brute-force unknown passwords."
+          "q": "¿SmartDecrypt omite contraseñas desconocidas?",
+          "a": "No. SmartDecrypt está diseñado para archivos a los que ya tienes permiso para acceder. Usa contraseñas que has guardado en un perfil — no descifra ni fuerza contraseñas desconocidas."
         },
         {
-          "q": "Are my passwords safe?",
-          "a": "Yes. Passwords are stored exclusively in the system Keychain on your device — the same secure storage used by Safari and your other apps. SmartDecrypt never stores passwords in its own database, and nothing is uploaded to any server."
+          "q": "¿Mis contraseñas están seguras?",
+          "a": "Sí. Las contraseñas se almacenan exclusivamente en el Keychain del sistema en tu dispositivo — el mismo almacenamiento seguro que usa Safari y tus otras apps. SmartDecrypt nunca almacena contraseñas en su propia base de datos, y nada se carga a ningún servidor."
         },
         {
-          "q": "What is a filename pattern?",
-          "a": "A filename pattern is a partial name or keyword that identifies recurring files. For example, if your bank sends monthly statements named 'BankStatement_2024-01.pdf', create a profile with the pattern 'BankStatement' and the password. SmartDecrypt matches future files to that profile automatically."
+          "q": "¿Qué es un patrón de nombre de archivo?",
+          "a": "Un patrón de nombre de archivo es un nombre parcial o palabra clave que identifica archivos recurrentes. Por ejemplo, si tu banco envía extractos mensuales con nombres como 'BankStatement_2024-01.pdf', crea un perfil con el patrón 'BankStatement' y la contraseña. SmartDecrypt relaciona automáticamente los archivos futuros con ese perfil."
         },
         {
-          "q": "Is the Pro purchase shared between iPhone and Mac?",
-          "a": "Yes. SmartDecrypt Pro is a one-time universal purchase. Buy once on either iOS or macOS and unlock Pro on both platforms using the same Apple ID."
+          "q": "¿La compra de Pro se comparte entre iPhone y Mac?",
+          "a": "Sí. SmartDecrypt Pro es una compra universal única. Compra una vez en iOS o macOS y desbloquea Pro en ambas plataformas usando el mismo Apple ID."
         }
       ],
-      "backDesc": "Looking for a comic and ebook reader?",
-      "backCta": "Back to BiblioFuse Reader"
+      "backDesc": "¿Buscas un lector de cómics y libros electrónicos?",
+      "backCta": "Volver a BiblioFuse Reader"
     },
     "contentcuePage": {
       "seo": {
-        "title": "ContentCue — Reading Browser That Never Loses Your Place",
-        "desc": "ContentCue es un navegador de lectura para iPhone e iPad que guarda tu posición de desplazamiento cuando los anuncios te interrumpen, y dibuja bordes de colores alrededor de los anuncios para que siempre sepas qué es contenido y qué es patrocinado."
+        "title": "ContentCue — Navegador de lectura que nunca pierde tu lugar",
+        "desc": "ContentCue es un navegador de lectura para iPhone e iPad que guarda tu posición de desplazamiento cuando los anuncios te interrumpen, y dibuja bordes de colores alrededor de los anuncios para que siempre sepas qué es contenido y qué es patrocinado. Un toque reanuda donde lo dejaste."
       },
       "hero": {
-        "badge": "iPhone & iPad",
-        "title": "Read. Get interrupted. Resume exactly where you left off.",
-        "desc": "ContentCue guarda tu posición exacta de desplazamiento cuando un popup o redirección interrumpe tu lectura. Bordes de colores marcan qué partes de la página son anuncios — para que puedas distinguir el contenido real de los bloques patrocinados de un vistazo.",
+        "badge": "iPhone e iPad",
+        "title": "Lee. Sé interrumpido. Reanuda exactamente donde lo dejaste.",
+        "desc": "ContentCue guarda tu posición de desplazamiento exacta cuando un popup o redirección interrumpe tu lectura. Los bordes de colores marcan qué partes de la página son anuncios, para que puedas distinguir el contenido real del artículo de los bloques patrocinados de un vistazo. Un toque te devuelve a donde estabas.",
         "trust1": "Anuncios resaltados, no bloqueados",
-        "trust2": "No browsing data collected",
-        "trust3": "Works with any website",
-        "appStore": "Download on App Store"
+        "trust2": "No se recopilan datos de navegación",
+        "trust3": "Funciona con cualquier sitio web",
+        "appStore": "Descargar en App Store"
       },
       "how": {
-        "eyebrow": "How It Works",
-        "title": "Three steps. No setup needed.",
-        "step1title": "Browse normally",
-        "step1desc": "Open any website in ContentCue and read as usual. No per-site setup. No accounts.",
-        "step2title": "Ad interrupts",
-        "step2desc": "A popup or redirect takes you away. ContentCue auto-saves your exact scroll position before it happens.",
-        "step3title": "Tap Resume",
-        "step3desc": "The Resume button appears. One tap returns you to the exact line you were reading."
+        "eyebrow": "Cómo funciona",
+        "title": "Tres pasos. Sin configuración necesaria.",
+        "step1title": "Navega normalmente",
+        "step1desc": "Abre cualquier sitio web en ContentCue y lee como de costumbre. Sin configuración por sitio. Sin cuentas.",
+        "step2title": "Un anuncio te interrumpe",
+        "step2desc": "Un popup o redirección te lleva a otra parte. ContentCue guarda automáticamente tu posición de desplazamiento exacta antes de que suceda.",
+        "step3title": "Toca Reanudar",
+        "step3desc": "Aparece el botón Reanudar. Un toque te devuelve a la línea exacta que estabas leyendo."
       },
       "restore": {
-        "eyebrow": "Position Restore",
-        "title": "One tap. Back to your exact place.",
-        "desc": "ContentCue watches for page interruptions — popups, redirect banners, accidental taps on ads — and auto-saves your scroll position. A Resume button appears when your position is saved. Tap it once and you're back where you were.",
-        "bullet1": "Automatic position save on every navigation away",
-        "bullet2": "Resume button visible any time your position is saved",
-        "bullet3": "Works on all content sites — no per-site configuration needed"
+        "eyebrow": "Restauración de posición",
+        "title": "Un toque. De vuelta a tu lugar exacto.",
+        "desc": "ContentCue vigila las interrupciones de página — popups, banners de redirección, toques accidentales en anuncios — y guarda automáticamente tu posición de desplazamiento. Un botón Reanudar aparece cuando tu posición se ha guardado. Tócalo una vez y volverás a donde estabas.",
+        "bullet1": "Guardado automático de posición en cada navegación",
+        "bullet2": "Botón Reanudar visible cuando tu posición está guardada",
+        "bullet3": "Funciona en todos los sitios de contenido — sin configuración por sitio necesaria"
       },
       "visual": {
-        "eyebrow": "Visual Ad Distinction",
-        "title": "See what's content and what's an ad",
-        "desc": "ContentCue draws colored borders around in-page ads so you can instantly distinguish them from the content you're reading. This is not ad blocking — all ads still load and display normally. It's just visual clarity.",
-        "bullet1": "Colored borders highlight in-page ads",
-        "bullet2": "All ads still load and display normally",
-        "bullet3": "Customize border color with Pro",
-        "badge": "All ads display normally — we just help you see them"
+        "eyebrow": "Distinción visual de anuncios",
+        "title": "Ve qué es contenido y qué es un anuncio",
+        "desc": "ContentCue dibuja bordes de colores alrededor de los anuncios en la página para que puedas distinguirlos instantáneamente del contenido que estás leyendo. Esto no es bloqueo de anuncios — todos los anuncios se cargan y se muestran normalmente. Es solo claridad visual.",
+        "bullet1": "Bordes de colores resaltan anuncios en la página",
+        "bullet2": "Todos los anuncios se cargan y se muestran normalmente",
+        "bullet3": "Personaliza el color del borde con Pro",
+        "badge": "Todos los anuncios se muestran normalmente — solo te ayudamos a verlos"
       },
       "extras": {
-        "eyebrow": "Audio & Bookmarks",
-        "title": "Mute autoplay. Save your favourites.",
-        "desc": "Toggle audio mute to silence autoplay video ads while reading in public. Bookmark up to 3 sites free, or upgrade to Pro for unlimited bookmarks and adjustable auto-scroll speed for webtoons and manga.",
-        "bullet1": "Audio mute — silence all website audio with one tap",
-        "bullet2": "Bookmarks — 3 free, unlimited with Pro",
-        "bullet3": "Adjustable auto-scroll speed for long-form content (Pro)"
+        "eyebrow": "Audio y marcadores",
+        "title": "Silencia la reproducción automática. Guarda tus favoritos.",
+        "desc": "Activa el silenciador de audio para silenciar anuncios de video con reproducción automática mientras lees en público. Añade marcadores en hasta 3 sitios gratis, o actualiza a Pro para marcadores ilimitados y velocidad de desplazamiento automático ajustable para webtoons y manga.",
+        "bullet1": "Silenciador de audio — silencia todo audio del sitio web con un toque",
+        "bullet2": "Marcadores — 3 gratis, ilimitados con Pro",
+        "bullet3": "Velocidad de desplazamiento automático ajustable para contenido extenso (Pro)"
       },
       "pricing": {
-        "eyebrow": "Simple Pricing",
-        "title": "Free forever. Pro for power readers.",
-        "freeTitle": "Free",
+        "eyebrow": "Precios simples",
+        "title": "Gratis para siempre. Pro para lectores apasionados.",
+        "freeTitle": "Gratis",
         "proTitle": "Pro — $2.99",
-        "feat1": "Position restore",
-        "feat2": "Visual ad distinction",
-        "feat3": "Audio mute",
-        "feat4": "Bookmarks",
+        "feat1": "Restauración de posición",
+        "feat2": "Distinción visual de anuncios",
+        "feat3": "Silenciador de audio",
+        "feat4": "Marcadores",
         "feat4free": "3",
-        "feat4pro": "Unlimited",
-        "feat5": "Custom ad border color",
-        "feat6": "Adjustable auto-scroll"
+        "feat4pro": "Ilimitados",
+        "feat5": "Color de borde de anuncio personalizado",
+        "feat6": "Desplazamiento automático ajustable"
       },
-      "faqTitle": "Frequently Asked Questions",
+      "faqTitle": "Preguntas frecuentes",
       "faq": [
         {
-          "q": "Is ContentCue an ad blocker?",
-          "a": "No. ContentCue does not block, hide, or prevent ads from loading. All advertisements display normally. ContentCue improves navigation by saving your scroll position when ads interrupt your reading, and it draws colored borders around in-page ads so you can see them clearly."
+          "q": "¿Es ContentCue un bloqueador de anuncios?",
+          "a": "No. ContentCue no bloquea, oculta ni impide que se carguen los anuncios. Todos los anuncios se muestran normalmente. ContentCue mejora la navegación al guardar tu posición de desplazamiento cuando los anuncios interrumpen tu lectura, y dibuja bordes de colores alrededor de los anuncios en la página para que los veas claramente."
         },
         {
-          "q": "Which sites does ContentCue work with?",
-          "a": "ContentCue is a full web browser, so it works with any website — Webtoons, Tapas, LINE Webtoon, independent creator pages, manga aggregators, WordPress blogs, and thousands more. No per-site setup is needed."
+          "q": "¿Con qué sitios funciona ContentCue?",
+          "a": "ContentCue es un navegador web completo, por lo que funciona con cualquier sitio web — Webtoons, Tapas, LINE Webtoon, páginas de creadores independientes, agregadores de manga, blogs de WordPress y miles más. No se necesita configuración por sitio."
         },
         {
-          "q": "How does position restore work?",
-          "a": "ContentCue monitors your scroll position while you read. When you navigate away (tapping an ad link, a redirect, or the back button), it saves your exact position. A Resume button appears in the browser UI. Tap it to return to exactly where you were."
+          "q": "¿Cómo funciona la restauración de posición?",
+          "a": "ContentCue monitorea tu posición de desplazamiento mientras lees. Cuando navegas a otro lugar (tocando un enlace de anuncio, una redirección o el botón atrás), guarda tu posición exacta. Aparece un botón Reanudar en la interfaz del navegador. Tócalo para volver exactamente a donde estabas."
         },
         {
-          "q": "Does ContentCue collect my browsing data?",
-          "a": "No. ContentCue processes all browsing entirely on your device using Apple WebKit. No browsing history, visited URLs, or personal data is collected or transmitted anywhere."
+          "q": "¿ContentCue recopila mis datos de navegación?",
+          "a": "No. ContentCue procesa toda la navegación completamente en tu dispositivo usando WebKit de Apple. No se recopila ni se transmite ningún historial de navegación, URLs visitadas o datos personales."
         },
         {
-          "q": "What does the Pro upgrade include?",
-          "a": "Pro is a one-time $2.99 purchase. It unlocks unlimited bookmarks, custom ad border colors, and adjustable auto-scroll speed. There is no subscription — pay once, use forever."
+          "q": "¿Qué incluye la actualización Pro?",
+          "a": "Pro es una compra única de $2.99. Desbloquea marcadores ilimitados, colores de borde de anuncio personalizados y velocidad de desplazamiento automático ajustable. No hay suscripción — paga una vez, usa para siempre."
         }
       ],
-      "backDesc": "Looking for a comic and ebook reader?",
-      "backCta": "Back to BiblioFuse Reader"
+      "backDesc": "¿Buscas un lector de cómics y ebooks?",
+      "backCta": "Volver a BiblioFuse Reader"
     }
   }
 }

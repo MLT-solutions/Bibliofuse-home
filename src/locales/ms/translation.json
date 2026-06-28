@@ -1170,12 +1170,12 @@
         "badge": "iOS · macOS · Windows",
         "title": "Cari. Tag. Miliki Perpustakaan Anda.",
         "desc": "GrepTag Reader mencari teks sebenar dalam fail EPUB dan TXT anda — tanpa metadata manual, tanpa kemasukan ISBN. Taip kata kunci dan setiap buku yang sepadan muncul serta-merta. Tandakan mengikut genre, tapis dengan logik AND, segerakkan melalui Wi-Fi.",
-        "appStoreCta": "Download on App Store",
+        "appStoreCta": "Muat turun di App Store",
         "trust1": "Tiada keperluan metadata manual atau ISBN",
         "trust2": "Tiada pelayan, tiada muat naik",
         "trust3": "Teks CJK disokong",
         "comingSoon": "Kini tersedia di App Store",
-        "msStoreCta": "Get it from Microsoft",
+        "msStoreCta": "Dapatkan dari Microsoft",
         "macInReview": "iOS, macOS, dan Windows kini tersedia"
       },
       "grep": {
@@ -1217,12 +1217,12 @@
         "desc": "BiblioFuse Reader dibina untuk fail komik bergambar besar——penstriman dari Mac, pemampatan dalam aplikasi. GrepTag dibina untuk fail teks kecil yang muat sepenuhnya di peranti——grep, tag, segerak ke mana-mana arah.",
         "col1": "BiblioFuse Reader",
         "col2": "GrepTag Reader",
-        "row1Label": "Best for",
-        "row1col1": "Comics, manga, PDF",
-        "row1col2": "EPUB, light novels, TXT",
-        "row2Label": "File size",
-        "row2col1": "50–300 MB per volume",
-        "row2col2": "Under 5 MB each",
+        "row1Label": "Terbaik untuk",
+        "row1col1": "Komik, manga, PDF",
+        "row1col2": "EPUB, novel ringan, TXT",
+        "row2Label": "Saiz fail",
+        "row2col1": "50–300 MB setiap jilid",
+        "row2col2": "Bawah 5 MB setiap satu",
         "row3Label": "Reka bentuk storan",
         "row3col1": "Penstriman dari Mac · pemampatan dalam aplikasi",
         "row3col2": "Simpan di peranti · segerak ke mana-mana arah",
@@ -1237,14 +1237,14 @@
         "eyebrow": "Harga",
         "title": "Percuma untuk mencari. Pro untuk memiliki.",
         "freeTitle": "Percuma",
-        "freeDesc": "Search and discover your library forever.",
+        "freeDesc": "Cari dan temui perpustakaan anda selamanya.",
         "proTitle": "Pro",
-        "proDesc": "One-time purchase unlocks everything, forever.",
-        "proMonthly": "$0.99 / month",
-        "proYearly": "$4.99 / year",
-        "proLifetime": "$14.99 one-time",
-        "proTrial": "7-day free trial on monthly & yearly",
-        "appStoreCta": "Try Free on App Store",
+        "proDesc": "Pembelian sekali gus membuka semua ciri, selamanya.",
+        "proMonthly": "$0.99 / bulan",
+        "proYearly": "$4.99 / tahun",
+        "proLifetime": "$14.99 sekali",
+        "proTrial": "Percubaan percuma 7 hari untuk bulanan & tahunan",
+        "appStoreCta": "Cuba Percuma di App Store",
         "approvalNote": "Kini tersedia di App Store dan Microsoft Store."
       },
       "seo": {
@@ -1305,275 +1305,275 @@
     },
     "archivePage": {
       "seo": {
-        "title": "Archive Duplicate Scanner — Find Duplicate Comics & Photos on Mac & Windows",
-        "desc": "Archive Duplicate Scanner finds duplicate CBZ, CBR, ZIP, RAR and photo files using perceptual hashing — even after renaming or recompression. Free up to 1,000 files, $19.99 one-time Pro."
+        "title": "Archive Duplicate Scanner — Cari Komik dan Foto Pendua di Mac dan Windows",
+        "desc": "Archive Duplicate Scanner mencari fail CBZ, CBR, ZIP, RAR dan foto pendua menggunakan perceptual hashing — walaupun selepas menamakan semula atau pemampatan semula. Percuma sehingga 1,000 fail, Pro pada $19.99 sekali bayar."
       },
       "hero": {
-        "badge": "Mac & Windows",
-        "title": "Find duplicates. Even after renaming.",
-        "desc": "Archive Duplicate Scanner membuka arkib komik anda dan membandingkan imej sebenar di dalamnya — bukan sekadar nama fail atau saiznya. Walaupun satu fail dinamakan comic_E1-5 dan satu lagi ComiX_E1-10, jika beberapa halaman pertama sepadan, kedua-duanya ditandakan sebagai pendua.",
-        "trust1": "No cloud upload",
-        "trust2": "Safe Trash deletion",
-        "trust3": "7-day free trial",
-        "macStore": "Download on Mac App Store",
-        "winStore": "Get it from Microsoft Store"
+        "badge": "Mac dan Windows",
+        "title": "Cari fail pendua. Walaupun selepas menamakan semula.",
+        "desc": "Archive Duplicate Scanner membuka arkib komik anda dan membandingkan imej sebenar di dalamnya — bukan sahaja nama fail atau saiz. Walaupun satu fail dipanggil comic_E1-5 dan yang lain ComiX_E1-10, jika beberapa halaman pertama sepadan, keduanya ditandai sebagai pendua.",
+        "trust1": "Tiada muat naik ke awan",
+        "trust2": "Pemadaman selamat ke Tong Sampah",
+        "trust3": "Percubaan percuma 7 hari",
+        "macStore": "Muat turun di Mac App Store",
+        "winStore": "Dapatkan dari Microsoft Store"
       },
       "scanning": {
-        "eyebrow": "Deep Archive Scanning",
-        "title": "Opens archives and compares pages inside",
+        "eyebrow": "Pengimbasan Arkib Mendalam",
+        "title": "Membuka arkib dan membandingkan halaman di dalamnya",
         "desc": "Kebanyakan pencari pendua hanya membandingkan nama atau saiz fail. Archive Duplicate Scanner membuka setiap fail CBZ, CBR, ZIP, atau RAR, mengekstrak lakaran kecil daripada halaman sebenar, dan membandingkannya. Fail bernama comic_E1-5 dan ComiX_E1-10 — nama berbeza, julat episod berbeza — masih dikesan jika halaman pembuka mereka sepadan.",
         "bullet1": "Membuka arkib dan membandingkan imej halaman — bukan sekadar nama fail",
-        "bullet2": "Configurable similarity threshold — 90% recommended",
-        "bullet3": "Hash cache makes repeat scans near-instant",
-        "badge": "Works with manga, manhwa, and manhua"
+        "bullet2": "Ambang kemiripan yang boleh dikonfigurasi — disyorkan 90%",
+        "bullet3": "Cache hash menjadikan pengimbasan semula hampir segera",
+        "badge": "Berfungsi dengan manga, manhwa dan manhua"
       },
       "photos": {
-        "eyebrow": "Photos & Filename Matching",
-        "title": "Photos and fuzzy filenames — both covered",
-        "desc": "Beyond archives, detect duplicate JPG, PNG, HEIC, WEBP, BMP, and GIF photos using the dHash algorithm. Filename Fuzzy Matching catches copies that differ only in formatting — \"Spider-Man #001\" vs \"Spider Man 001\" — using RapidFuzz with a configurable threshold.",
-        "bullet1": "Photo formats: JPG, PNG, HEIC, WEBP, BMP, GIF",
-        "bullet2": "RapidFuzz algorithm with configurable symbol-stripping",
-        "bullet3": "Unicode-aware — works with Japanese, Korean, Chinese and any character set"
+        "eyebrow": "Foto dan Pemadanan Nama Fail",
+        "title": "Foto dan nama fail serupa — kedua-duanya diliputi",
+        "desc": "Selain arkib, kesan foto JPG, PNG, HEIC, WEBP, BMP dan GIF pendua menggunakan algoritma dHash. Pemadanan nama fail kabur menangkap salinan yang hanya berbeza dalam format — \"Spider-Man #001\" vs \"Spider Man 001\" — dengan ambang yang boleh dikonfigurasi.",
+        "bullet1": "Format foto: JPG, PNG, HEIC, WEBP, BMP, GIF",
+        "bullet2": "Algoritma RapidFuzz dengan penyingkiran simbol yang boleh dikonfigurasi",
+        "bullet3": "Menyokong Unicode — berfungsi dengan Jepun, Korea, Cina dan mana-mana set aksara"
       },
       "autoselect": {
-        "eyebrow": "Smart Auto-Select",
-        "title": "One click marks the right file to keep",
-        "desc": "Set a rule — keep the Largest, Smallest, Newest, Oldest, or file with the Most Pages — and Auto-Select marks every duplicate in one click. Review the results before anything is touched. Nothing moves until you confirm.",
-        "bullet1": "Five rules: Largest, Smallest, Newest, Oldest, Most Pages",
-        "bullet2": "Last-copy safety warning prevents accidental total deletion",
-        "bullet3": "Permanent ignore list for intentional variant pairs",
-        "badge": "Files moved to Trash — recoverable any time"
+        "eyebrow": "Pemilihan Automatik Pintar",
+        "title": "Satu klik menandai fail yang betul untuk disimpan",
+        "desc": "Tetapkan peraturan — simpan yang Terbesar, Terkecil, Terbaru, Tertua, atau fail dengan Halaman Terbanyak — dan Pemilihan Automatik menandai setiap pendua dalam satu klik. Semak keputusan sebelum apa-apa diubah. Tiada yang bergerak sehingga anda mengesahkan.",
+        "bullet1": "Lima peraturan: Terbesar, Terkecil, Terbaru, Tertua, Halaman Terbanyak",
+        "bullet2": "Amaran salinan terakhir menghalang pemadaman keseluruhan yang tidak disengaja",
+        "bullet3": "Senarai abaikan kekal untuk pasangan varian yang disengajakan",
+        "badge": "Fail dipindahkan ke Tong Sampah — boleh dipulihkan pada bila-bila masa"
       },
       "export": {
-        "eyebrow": "Reports & Multi-Folder",
-        "title": "Export results, compare across folders",
-        "desc": "Export your scan as a CSV for spreadsheets or as a full HTML report with thumbnails, similarity scores, and sortable columns. Multi-Folder mode compares two separate folders — useful for finding duplicates between your organised library and a Downloads folder.",
-        "bullet1": "HTML report with embedded thumbnails and statistics",
-        "bullet2": "CSV export for spreadsheets and archiving",
-        "bullet3": "Multi-folder comparison: Folder A vs Folder B"
+        "eyebrow": "Laporan dan Berbilang Folder",
+        "title": "Eksport keputusan, bandingkan merentasi folder",
+        "desc": "Eksport imbasan anda sebagai CSV untuk hamparan atau sebagai laporan HTML penuh dengan lakaran kecil, skor kemiripan dan lajur yang boleh diisih. Mod Berbilang Folder membandingkan dua folder berasingan — berguna untuk mencari pendua antara pustaka yang tersusun dan folder Muat Turun.",
+        "bullet1": "Laporan HTML dengan lakaran kecil tertanam dan statistik",
+        "bullet2": "Eksport CSV untuk hamparan dan pengarkiban",
+        "bullet3": "Perbandingan berbilang folder: Folder A lwn Folder B"
       },
       "pricing": {
-        "eyebrow": "Simple Pricing",
-        "title": "Free forever. Unlock Pro when you need it.",
-        "freeTitle": "Free",
+        "eyebrow": "Harga Ringkas",
+        "title": "Percuma selamanya. Buka kunci Pro apabila perlu.",
+        "freeTitle": "Percuma",
         "proTitle": "Pro — $19.99",
-        "trial": "7-day free trial available on Mac App Store",
-        "feat1": "Archive scanning (CBZ/CBR/ZIP/RAR)",
-        "feat1free": "Up to 1,000 files",
-        "feat1pro": "Unlimited",
-        "feat2": "Photo duplicate detection",
-        "feat2free": "Up to 1,000 files",
-        "feat2pro": "Unlimited",
-        "feat3": "Filename fuzzy matching",
-        "feat3free": "Up to 1,000 files",
-        "feat3pro": "Unlimited",
-        "feat4": "Smart Auto-Select",
-        "feat5": "Export reports (CSV & HTML)",
-        "feat6": "Multi-folder comparison",
-        "feat7": "Hash cache (fast rescans)",
-        "feat8": "Permanent ignore list"
+        "trial": "Percubaan percuma 7 hari tersedia di Mac App Store",
+        "feat1": "Pengimbasan arkib (CBZ/CBR/ZIP/RAR)",
+        "feat1free": "Sehingga 1,000 fail",
+        "feat1pro": "Tanpa had",
+        "feat2": "Pengesanan foto pendua",
+        "feat2free": "Sehingga 1,000 fail",
+        "feat2pro": "Tanpa had",
+        "feat3": "Pemadanan nama fail kabur",
+        "feat3free": "Sehingga 1,000 fail",
+        "feat3pro": "Tanpa had",
+        "feat4": "Pemilihan automatik pintar",
+        "feat5": "Eksport laporan (CSV dan HTML)",
+        "feat6": "Perbandingan berbilang folder",
+        "feat7": "Cache hash (pengimbasan semula pantas)",
+        "feat8": "Senarai abaikan kekal"
       },
-      "faqTitle": "Frequently Asked Questions",
+      "faqTitle": "Soalan Lazim",
       "faq": [
         {
-          "q": "What is perceptual hashing and why does it matter?",
-          "a": "Perceptual hashing compares the visual structure of images rather than raw file bytes. Two files can have different names, sizes, and metadata — but if their content looks the same, perceptual hashing matches them. Standard duplicate finders fail the moment a file is renamed or re-exported; Archive Duplicate Scanner does not."
+          "q": "Apakah perceptual hashing dan mengapa ia penting?",
+          "a": "Perceptual hashing membandingkan struktur visual imej berbanding bait fail mentah. Dua fail boleh mempunyai nama, saiz dan metadata yang berbeza — tetapi jika kandungannya kelihatan sama, perceptual hashing akan memadankannya. Pencari pendua standard gagal sebaik fail dinamakan semula atau dieksport semula; Archive Duplicate Scanner tidak."
         },
         {
-          "q": "Can it find duplicates that have been renamed?",
-          "a": "Yes. Renaming a file changes nothing about its content. Archive Duplicate Scanner compares the images inside each archive, so a duplicate is detected regardless of what the file is called."
+          "q": "Bolehkah ia mencari pendua yang telah dinamakan semula?",
+          "a": "Ya. Menamakan semula fail tidak mengubah kandungannya. Archive Duplicate Scanner membandingkan imej di dalam setiap arkib, jadi pendua dikesan tanpa mengira nama fail."
         },
         {
-          "q": "Is deletion permanent?",
-          "a": "No. Marked files are moved to the system Trash (macOS) or Recycle Bin (Windows), not permanently deleted. You can recover any file before emptying the Trash."
+          "q": "Adakah pemadaman kekal?",
+          "a": "Tidak. Fail yang ditandai dipindahkan ke Tong Sampah sistem (macOS) atau Recycle Bin (Windows), bukan dipadam secara kekal. Anda boleh memulihkan mana-mana fail sebelum mengosongkan Tong Sampah."
         },
         {
-          "q": "Which file formats are supported?",
-          "a": "Comic archives: CBZ, CBR, ZIP, RAR. Photos: JPG, PNG, HEIC, WEBP, BMP, GIF. Filename fuzzy matching works with any file type."
+          "q": "Format fail apa yang disokong?",
+          "a": "Arkib komik: CBZ, CBR, ZIP, RAR. Foto: JPG, PNG, HEIC, WEBP, BMP, GIF. Pemadanan nama fail kabur berfungsi dengan mana-mana jenis fail."
         },
         {
-          "q": "Does it work with photos, not just comics?",
-          "a": "Yes. Select Photos mode to scan JPG, PNG, HEIC, WEBP, BMP, and GIF files. It works with iPhone photo library exports, scanned documents, and digital art collections."
+          "q": "Adakah ia berfungsi dengan foto, bukan sahaja komik?",
+          "a": "Ya. Pilih mod Foto untuk mengimbas fail JPG, PNG, HEIC, WEBP, BMP dan GIF. Berfungsi dengan eksport perpustakaan foto iPhone, dokumen yang diimbas dan koleksi seni digital."
         },
         {
-          "q": "Is there a trial before I buy?",
-          "a": "You can scan up to 1,000 files for free, forever. A 7-day free trial on Mac App Store unlocks unlimited access, and the one-time Pro purchase is $19.99 with no subscription."
+          "q": "Adakah terdapat percubaan sebelum membeli?",
+          "a": "Anda boleh mengimbas sehingga 1,000 fail secara percuma selamanya. Percubaan percuma 7 hari di Mac App Store membuka akses tanpa had, dan pembelian Pro sekali gus adalah $19.99 tanpa langganan."
         }
       ],
-      "backDesc": "Looking for a comic and ebook reader?",
-      "backCta": "Back to BiblioFuse Reader"
+      "backDesc": "Mencari pembaca komik dan ebook?",
+      "backCta": "Kembali ke BiblioFuse Reader"
     },
     "smartdecryptPage": {
       "seo": {
         "title": "SmartDecrypt — Auto-Unlock Password-Protected PDFs and Archives",
-        "desc": "SmartDecrypt membuka kunci fail PDF, ZIP, dan 7z secara automatik menggunakan corak nama fail yang disimpan — sesuai untuk penyata bank, dokumen insurans, dan invois yang sentiasa menggunakan format kata laluan yang sama."
+        "desc": "SmartDecrypt auto-unlocks PDF, ZIP, and 7z files using saved filename patterns — perfect for bank statements, insurance docs, and invoices that always use the same password format. Drop the file, it finds the right password automatically."
       },
       "hero": {
         "badge": "iOS · macOS · Windows",
-        "title": "Drop the file. It unlocks itself.",
-        "desc": "SmartDecrypt matches your files to saved password profiles by filename pattern — so unlocking a bank statement or invoice never requires hunting for the right password again.",
-        "trust1": "Passwords in system Keychain",
-        "trust2": "Files never leave your device",
-        "trust3": "Universal iOS + macOS purchase",
-        "appStore": "Download on App Store",
-        "winStore": "Get it from Microsoft Store"
+        "title": "Lepas fail. Ia membuka sendiri.",
+        "desc": "SmartDecrypt memadankan fail anda dengan profil kata laluan tersimpan mengikut corak nama fail — jadi membuka penyata bank atau invois tidak perlu mencari kata laluan yang tepat lagi.",
+        "trust1": "Kata laluan dalam Sistem Keychain",
+        "trust2": "Fail tidak pernah meninggalkan peranti anda",
+        "trust3": "Pembelian universal iOS + macOS",
+        "appStore": "Muat turun di App Store",
+        "winStore": "Dapatkan dari Microsoft Store"
       },
       "patterns": {
         "eyebrow": "Pattern-Based Auto-Unlock",
-        "title": "Save once, unlock forever",
-        "desc": "Penyata bank, PDF insurans, dan slip gaji sentiasa tiba dengan corak kata laluan yang sama — nombor kad pengenalan, tarikh lahir, atau nombor akaun anda. Simpan profil sekali dan SmartDecrypt akan memilih kata laluan yang betul secara automatik setiap kali jenis fail tersebut tiba.",
-        "bullet1": "Padankan mengikut corak nama fail — cth. \"DBS_Statement_*\" → kata laluan MyKAD anda",
-        "bullet2": "Profil berasingan untuk penyata bank, PDF insurans, invois, dan slip gaji",
-        "bullet3": "Auto password cycling tries all matching profiles in sequence",
-        "badge": "Designed for recurring files with repeatable passwords"
+        "title": "Simpan sekali, buka selamanya",
+        "desc": "Penyata bank, PDF insurans, dan slip gaji sentiasa tiba dengan corak kata laluan yang sama — NRIC anda, tarikh lahir, atau nombor akaun. Simpan profil sekali dan SmartDecrypt memilih kata laluan yang tepat secara automatik setiap kali jenis fail itu tiba.",
+        "bullet1": "Padankan mengikut corak nama fail — cth. \"DBS_Statement_*\" → kata laluan NRIC anda",
+        "bullet2": "Profil berasingan untuk penyata bank, PDF insurans, invois, slip gaji",
+        "bullet3": "Kitaran kata laluan automatik — cuba semua profil yang sepadan secara berturutan",
+        "badge": "Direka untuk fail berulang dengan kata laluan yang boleh diulang"
       },
       "formats": {
-        "eyebrow": "Formats Supported",
-        "title": "PDF, ZIP, and 7z — all three",
-        "desc": "Unlock password-protected PDFs, extract ZIP archives, and open 7z files — including unencrypted archives which are extracted normally without asking for a password.",
-        "bullet1": "PDF — unlock and keep the full document intact",
-        "bullet2": "ZIP & 7z — extract contents with or without password",
-        "bullet3": "Unencrypted archives extracted automatically — no prompt needed"
+        "eyebrow": "Format yang Disokong",
+        "title": "PDF, ZIP, dan 7z — ketiga-tiganya",
+        "desc": "Buka PDF yang dilindungi kata laluan, ekstrak arkib ZIP, dan buka fail 7z — termasuk arkib yang tidak disulitkan yang diekstrak secara normal tanpa meminta kata laluan.",
+        "bullet1": "PDF — buka dan simpan dokumen lengkap utuh",
+        "bullet2": "ZIP & 7z — ekstrak kandungan dengan atau tanpa kata laluan",
+        "bullet3": "Arkib yang tidak disulitkan diekstrak secara automatik — tidak perlu digesa"
       },
       "mobile": {
         "eyebrow": "iOS Share Sheet & Keychain",
-        "title": "Receive files from anywhere. Passwords stay private.",
-        "desc": "On iPhone and iPad, open files directly in SmartDecrypt or send them through the iOS Share Sheet from Files, Mail, or any other app. Passwords are stored exclusively in the system Keychain — never in a database, never on a server.",
-        "bullet1": "iOS Share Sheet — send files from Files, Mail, Safari, and more",
-        "bullet2": "Passwords stored in Apple Keychain, not in the app",
-        "bullet3": "Files processed locally — nothing uploaded"
+        "title": "Terima fail dari mana-mana. Kata laluan tetap peribadi.",
+        "desc": "Pada iPhone dan iPad, buka fail terus dalam SmartDecrypt atau hantarkan melalui iOS Share Sheet daripada Files, Mail, atau aplikasi lain. Kata laluan disimpan secara eksklusif dalam Keychain sistem — tidak pernah dalam pangkalan data, tidak pernah di pelayan.",
+        "bullet1": "iOS Share Sheet — hantar fail daripada Files, Mail, Safari, dan lainnya",
+        "bullet2": "Kata laluan disimpan dalam Apple Keychain, bukan dalam aplikasi",
+        "bullet3": "Fail diproses secara lokal — tiada yang dimuat naik"
       },
       "pricing": {
-        "eyebrow": "Simple Pricing",
-        "title": "Free for one file. Pro unlocks batch.",
-        "freeTitle": "Free",
+        "eyebrow": "Harga Mudah",
+        "title": "Percuma untuk satu fail. Pro membuka batch.",
+        "freeTitle": "Percuma",
         "proTitle": "Pro — $9.99",
-        "universalNote": "One-time universal purchase — unlocks Pro on both iOS and macOS",
-        "feat1": "Unlock PDF, ZIP, 7z",
-        "feat1free": "One file at a time",
-        "feat1pro": "Batch loading",
-        "feat2": "Saved password patterns",
-        "feat2free": "3 profiles",
-        "feat2pro": "Unlimited profiles",
-        "feat3": "Auto password cycling",
+        "universalNote": "Pembelian universal sekali — membuka Pro pada iOS dan macOS",
+        "feat1": "Buka PDF, ZIP, 7z",
+        "feat1free": "Satu fail pada satu masa",
+        "feat1pro": "Pemuatan batch",
+        "feat2": "Profil corak kata laluan tersimpan",
+        "feat2free": "3 profil",
+        "feat2pro": "Profil tidak terbatas",
+        "feat3": "Kitaran kata laluan automatik",
         "feat4": "iOS Share Sheet",
-        "feat5": "System Keychain storage",
+        "feat5": "Penyimpanan Keychain sistem",
         "feat6": "macOS drag & drop"
       },
-      "faqTitle": "Frequently Asked Questions",
+      "faqTitle": "Soalan Lazim",
       "faq": [
         {
-          "q": "What file formats does SmartDecrypt support?",
-          "a": "PDF, ZIP, and 7z. Unencrypted ZIP and 7z archives are extracted normally without asking for a password. SmartDecrypt does not currently support RAR, EPUB, or other formats."
+          "q": "Apakah format fail yang disokong SmartDecrypt?",
+          "a": "PDF, ZIP, dan 7z. Arkib ZIP dan 7z yang tidak disulitkan diekstrak secara normal tanpa meminta kata laluan. SmartDecrypt tidak menyokong RAR, EPUB, atau format lain pada masa ini."
         },
         {
-          "q": "Does SmartDecrypt bypass unknown passwords?",
-          "a": "No. SmartDecrypt is designed for files you already have permission to access. It uses passwords you have saved in a profile — it does not crack or brute-force unknown passwords."
+          "q": "Adakah SmartDecrypt memintas kata laluan yang tidak diketahui?",
+          "a": "Tidak. SmartDecrypt direka untuk fail yang anda sudah mempunyai kebenaran untuk mengakses. Ia menggunakan kata laluan yang anda simpan dalam profil — ia tidak memecah atau brute-force kata laluan yang tidak diketahui."
         },
         {
-          "q": "Are my passwords safe?",
-          "a": "Yes. Passwords are stored exclusively in the system Keychain on your device — the same secure storage used by Safari and your other apps. SmartDecrypt never stores passwords in its own database, and nothing is uploaded to any server."
+          "q": "Adakah kata laluan saya selamat?",
+          "a": "Ya. Kata laluan disimpan secara eksklusif dalam Keychain sistem pada peranti anda — penyimpanan selamat yang sama yang digunakan oleh Safari dan aplikasi lain anda. SmartDecrypt tidak pernah menyimpan kata laluan dalam pangkalan datanya sendiri, dan tiada yang dimuat naik ke mana-mana pelayan."
         },
         {
-          "q": "What is a filename pattern?",
-          "a": "A filename pattern is a partial name or keyword that identifies recurring files. For example, if your bank sends monthly statements named 'BankStatement_2024-01.pdf', create a profile with the pattern 'BankStatement' and the password. SmartDecrypt matches future files to that profile automatically."
+          "q": "Apakah itu corak nama fail?",
+          "a": "Corak nama fail ialah nama separa atau kata kunci yang mengenal pasti fail berulang. Contohnya, jika bank anda menghantar penyata bulanan bernama 'BankStatement_2024-01.pdf', buat profil dengan corak 'BankStatement' dan kata laluan. SmartDecrypt memadankan fail masa depan dengan profil itu secara automatik."
         },
         {
-          "q": "Is the Pro purchase shared between iPhone and Mac?",
-          "a": "Yes. SmartDecrypt Pro is a one-time universal purchase. Buy once on either iOS or macOS and unlock Pro on both platforms using the same Apple ID."
+          "q": "Adakah pembelian Pro dikongsi antara iPhone dan Mac?",
+          "a": "Ya. SmartDecrypt Pro ialah pembelian universal sekali. Beli sekali pada iOS atau macOS dan buka kunci Pro pada kedua-dua platform menggunakan ID Apple yang sama."
         }
       ],
-      "backDesc": "Looking for a comic and ebook reader?",
-      "backCta": "Back to BiblioFuse Reader"
+      "backDesc": "Mencari pembaca komik dan e-book?",
+      "backCta": "Kembali ke BiblioFuse Reader"
     },
     "contentcuePage": {
       "seo": {
-        "title": "ContentCue — Reading Browser That Never Loses Your Place",
-        "desc": "ContentCue ialah pelayar membaca untuk iPhone dan iPad yang menyimpan kedudukan tatal anda apabila iklan mengganggu, dan melukis sempadan berwarna di sekeliling iklan supaya anda sentiasa tahu mana kandungan dan mana yang ditaja."
+        "title": "ContentCue — Pelayar Bacaan Yang Tidak Pernah Kehilangan Tempat Anda",
+        "desc": "ContentCue ialah pelayar bacaan untuk iPhone dan iPad yang menyimpan kedudukan skrol anda apabila iklan mengganggu anda, dan melukis sempadan berwarna di sekitar iklan supaya anda sentiasa tahu apa itu kandungan dan apa itu tajaan. Satu ketikan untuk meneruskan dari tempat anda berhenti."
       },
       "hero": {
         "badge": "iPhone & iPad",
-        "title": "Read. Get interrupted. Resume exactly where you left off.",
-        "desc": "ContentCue menyimpan kedudukan tatal tepat anda apabila popup atau ubah hala memutuskan aliran bacaan anda. Sempadan berwarna menandakan bahagian halaman mana yang merupakan iklan — supaya anda dapat membezakan kandungan artikel sebenar daripada blok yang ditaja dengan sekilas pandang.",
-        "trust1": "Iklan diserlahkan, tidak disekat",
-        "trust2": "No browsing data collected",
-        "trust3": "Works with any website",
-        "appStore": "Download on App Store"
+        "title": "Baca. Terganggu. Teruskan dari tempat anda berhenti.",
+        "desc": "ContentCue menyimpan kedudukan skrol tepat anda apabila popup atau pengalihan memecahkan aliran bacaan anda. Sempadan berwarna menandakan bahagian mana halaman yang merupakan iklan — supaya anda dapat membezakan kandungan artikel sebenar daripada blok tajaan sekilas. Satu ketikan membawa anda kembali ke tempat anda berada.",
+        "trust1": "Iklan diserlahkan, bukan disekat",
+        "trust2": "Tiada data pelayaran dikumpul",
+        "trust3": "Berfungsi dengan mana-mana laman web",
+        "appStore": "Muat turun di App Store"
       },
       "how": {
-        "eyebrow": "How It Works",
-        "title": "Three steps. No setup needed.",
-        "step1title": "Browse normally",
-        "step1desc": "Open any website in ContentCue and read as usual. No per-site setup. No accounts.",
-        "step2title": "Ad interrupts",
-        "step2desc": "A popup or redirect takes you away. ContentCue auto-saves your exact scroll position before it happens.",
-        "step3title": "Tap Resume",
-        "step3desc": "The Resume button appears. One tap returns you to the exact line you were reading."
+        "eyebrow": "Cara Ia Berfungsi",
+        "title": "Tiga langkah. Tiada persediaan diperlukan.",
+        "step1title": "Layar dengan normal",
+        "step1desc": "Buka mana-mana laman web dalam ContentCue dan baca seperti biasa. Tiada persediaan setiap laman. Tiada akaun.",
+        "step2title": "Iklan mengganggu",
+        "step2desc": "Popup atau pengalihan membawa anda pergi. ContentCue secara automatik menyimpan kedudukan skrol tepat anda sebelum ia berlaku.",
+        "step3title": "Ketik Teruskan",
+        "step3desc": "Butang Teruskan muncul. Satu ketikan membawa anda kembali ke garis tepat yang anda sedang baca."
       },
       "restore": {
-        "eyebrow": "Position Restore",
-        "title": "One tap. Back to your exact place.",
-        "desc": "ContentCue watches for page interruptions — popups, redirect banners, accidental taps on ads — and auto-saves your scroll position. A Resume button appears when your position is saved. Tap it once and you're back where you were.",
-        "bullet1": "Automatic position save on every navigation away",
-        "bullet2": "Resume button visible any time your position is saved",
-        "bullet3": "Works on all content sites — no per-site configuration needed"
+        "eyebrow": "Pulih Kedudukan",
+        "title": "Satu ketikan. Kembali ke tempat anda yang tepat.",
+        "desc": "ContentCue memantau gangguan halaman — popup, banner pengalihan, ketikan tidak sengaja pada iklan — dan secara automatik menyimpan kedudukan skrol anda. Butang Teruskan muncul apabila kedudukan anda disimpan. Ketiknya sekali dan anda kembali ke tempat anda berada.",
+        "bullet1": "Simpan kedudukan automatik pada setiap navigasi pergi",
+        "bullet2": "Butang Teruskan boleh dilihat pada bila-bila masa kedudukan anda disimpan",
+        "bullet3": "Berfungsi di semua laman kandungan — tiada konfigurasi setiap laman diperlukan"
       },
       "visual": {
-        "eyebrow": "Visual Ad Distinction",
-        "title": "See what's content and what's an ad",
-        "desc": "ContentCue draws colored borders around in-page ads so you can instantly distinguish them from the content you're reading. This is not ad blocking — all ads still load and display normally. It's just visual clarity.",
-        "bullet1": "Colored borders highlight in-page ads",
-        "bullet2": "All ads still load and display normally",
-        "bullet3": "Customize border color with Pro",
-        "badge": "All ads display normally — we just help you see them"
+        "eyebrow": "Perbezaan Iklan Visual",
+        "title": "Lihat apa itu kandungan dan apa itu iklan",
+        "desc": "ContentCue melukis sempadan berwarna di sekitar iklan dalam halaman supaya anda dapat membezakan mereka daripada kandungan yang anda sedang baca. Ini bukan penyekatan iklan — semua iklan masih memuatkan dan memaparkan dengan normal. Ia hanya kejelasan visual.",
+        "bullet1": "Sempadan berwarna menyerlahkan iklan dalam halaman",
+        "bullet2": "Semua iklan masih memuatkan dan memaparkan dengan normal",
+        "bullet3": "Sesuaikan warna sempadan dengan Pro",
+        "badge": "Semua iklan dipaparkan dengan normal — kami hanya membantu anda melihatnya"
       },
       "extras": {
-        "eyebrow": "Audio & Bookmarks",
-        "title": "Mute autoplay. Save your favourites.",
-        "desc": "Toggle audio mute to silence autoplay video ads while reading in public. Bookmark up to 3 sites free, or upgrade to Pro for unlimited bookmarks and adjustable auto-scroll speed for webtoons and manga.",
-        "bullet1": "Audio mute — silence all website audio with one tap",
-        "bullet2": "Bookmarks — 3 free, unlimited with Pro",
-        "bullet3": "Adjustable auto-scroll speed for long-form content (Pro)"
+        "eyebrow": "Audio & Penanda Halaman",
+        "title": "Senyapkan main muka otomatis. Simpan kegemaran anda.",
+        "desc": "Togol peredaman audio untuk menyenyapkan iklan video main muka otomatis semasa membaca di khalayak ramai. Tandai sehingga 3 laman percuma, atau naik taraf ke Pro untuk penanda halaman tanpa had dan kelajuan skrol otomatis yang boleh disesuaikan untuk webtoon dan manga.",
+        "bullet1": "Peredaman audio — senyapkan semua audio laman web dengan satu ketikan",
+        "bullet2": "Penanda halaman — 3 percuma, tanpa had dengan Pro",
+        "bullet3": "Kelajuan skrol otomatis yang boleh disesuaikan untuk kandungan bentuk panjang (Pro)"
       },
       "pricing": {
-        "eyebrow": "Simple Pricing",
-        "title": "Free forever. Pro for power readers.",
-        "freeTitle": "Free",
+        "eyebrow": "Harga Mudah",
+        "title": "Bebas selamanya. Pro untuk pembaca berkuasa.",
+        "freeTitle": "Bebas",
         "proTitle": "Pro — $2.99",
-        "feat1": "Position restore",
-        "feat2": "Visual ad distinction",
-        "feat3": "Audio mute",
-        "feat4": "Bookmarks",
+        "feat1": "Pulih kedudukan",
+        "feat2": "Perbezaan iklan visual",
+        "feat3": "Peredaman audio",
+        "feat4": "Penanda halaman",
         "feat4free": "3",
-        "feat4pro": "Unlimited",
-        "feat5": "Custom ad border color",
-        "feat6": "Adjustable auto-scroll"
+        "feat4pro": "Tanpa had",
+        "feat5": "Warna sempadan iklan tersuai",
+        "feat6": "Skrol otomatis yang boleh disesuaikan"
       },
-      "faqTitle": "Frequently Asked Questions",
+      "faqTitle": "Soalan Lazim",
       "faq": [
         {
-          "q": "Is ContentCue an ad blocker?",
-          "a": "No. ContentCue does not block, hide, or prevent ads from loading. All advertisements display normally. ContentCue improves navigation by saving your scroll position when ads interrupt your reading, and it draws colored borders around in-page ads so you can see them clearly."
+          "q": "Adakah ContentCue penyekat iklan?",
+          "a": "Tidak. ContentCue tidak menyekat, menyembunyikan, atau menghalang iklan daripada memuatkan. Semua iklan dipaparkan dengan normal. ContentCue meningkatkan navigasi dengan menyimpan kedudukan skrol anda apabila iklan mengganggu bacaan anda, dan ia melukis sempadan berwarna di sekitar iklan dalam halaman supaya anda dapat melihatnya dengan jelas."
         },
         {
-          "q": "Which sites does ContentCue work with?",
-          "a": "ContentCue is a full web browser, so it works with any website — Webtoons, Tapas, LINE Webtoon, independent creator pages, manga aggregators, WordPress blogs, and thousands more. No per-site setup is needed."
+          "q": "Laman web mana yang ContentCue berfungsi dengan?",
+          "a": "ContentCue ialah pelayar web penuh, jadi ia berfungsi dengan mana-mana laman web — Webtoons, Tapas, LINE Webtoon, halaman pencipta bebas, pengagregat manga, blog WordPress, dan ribuan lagi. Tiada persediaan setiap laman diperlukan."
         },
         {
-          "q": "How does position restore work?",
-          "a": "ContentCue monitors your scroll position while you read. When you navigate away (tapping an ad link, a redirect, or the back button), it saves your exact position. A Resume button appears in the browser UI. Tap it to return to exactly where you were."
+          "q": "Bagaimana cara kerja pemulihan kedudukan?",
+          "a": "ContentCue memantau kedudukan skrol anda semasa anda membaca. Apabila anda menavigasi pergi (mengetik pautan iklan, pengalihan, atau butang kembali), ia menyimpan kedudukan tepat anda. Butang Teruskan muncul dalam UI pelayar. Ketiknya untuk kembali ke tempat anda berada."
         },
         {
-          "q": "Does ContentCue collect my browsing data?",
-          "a": "No. ContentCue processes all browsing entirely on your device using Apple WebKit. No browsing history, visited URLs, or personal data is collected or transmitted anywhere."
+          "q": "Adakah ContentCue mengumpul data pelayaran saya?",
+          "a": "Tidak. ContentCue memproses pelayaran sepenuhnya di peranti anda menggunakan WebKit Apple. Tiada sejarah pelayaran, URL yang dilawati, atau data peribadi dikumpul atau dihantar ke mana-mana."
         },
         {
-          "q": "What does the Pro upgrade include?",
-          "a": "Pro is a one-time $2.99 purchase. It unlocks unlimited bookmarks, custom ad border colors, and adjustable auto-scroll speed. There is no subscription — pay once, use forever."
+          "q": "Apakah yang disertakan dalam naik taraf Pro?",
+          "a": "Pro ialah pembelian sekali $2.99. Ia membuka kunci penanda halaman tanpa had, warna sempadan iklan tersuai, dan kelajuan skrol otomatis yang boleh disesuaikan. Tiada langganan — bayar sekali, gunakan selamanya."
         }
       ],
-      "backDesc": "Looking for a comic and ebook reader?",
-      "backCta": "Back to BiblioFuse Reader"
+      "backDesc": "Mencari pembaca komik dan ebook?",
+      "backCta": "Kembali ke BiblioFuse Reader"
     }
   }
 }

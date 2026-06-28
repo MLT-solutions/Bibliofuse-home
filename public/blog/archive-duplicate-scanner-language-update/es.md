@@ -1,6 +1,6 @@
 # Archive Duplicate Scanner Ahora Disponible en Portugués, Español, Indonesio y Chino
 
-Archive Duplicate Scanner ahora es compatible con Portugués, Español, Bahasa Indonesia y Chino Simplificado — llevando la interfaz completa de la aplicación a cuatro nuevos idiomas. La app encuentra archivos duplicados de cómics (CBZ, CBR, ZIP, RAR) y fotos usando hashing perceptual, disponible gratis para Mac y Windows. Y la gran noticia para ti: **la app ahora habla Español**. [Descárgala ahora](/es/#archive) y úsala en tu idioma.
+Archive Duplicate Scanner ahora es compatible con Portugués, Español, Bahasa Indonesia y Chino Simplificado — llevando la interfaz completa de la aplicación a cuatro nuevos idiomas. La app encuentra archivos duplicados de cómics (CBZ, CBR, ZIP, RAR) y fotos usando hashing perceptual, disponible gratis para Mac y Windows. Y la gran noticia para ti: **la app ahora habla Español**. [Descárgala ahora](/es/archive/) y úsala en tu idioma.
 
 ## Por Qué los Coleccionistas Internacionales Necesitaban Esto
 
@@ -23,7 +23,7 @@ La app sigue automáticamente el idioma de tu sistema operativo. En macOS, ve a 
 
 ## Qué Hace Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/es/#archive) usa **hashing perceptual** para detectar duplicados. Abre cada archivo (CBZ, CBR, ZIP, RAR) y calcula un hash perceptual de las imágenes reales de las páginas internas. Dos archivos pueden tener nombres completamente diferentes, tamaños diferentes e incluso compresión diferente — si las páginas se ven iguales, coinciden. Renombrar `Spider-Man_001.cbz` a `spiderman-001-hd.cbz` no oculta el duplicado.
+[Archive Duplicate Scanner](/es/archive/) usa **hashing perceptual** para detectar duplicados. Abre cada archivo (CBZ, CBR, ZIP, RAR) y calcula un hash perceptual de las imágenes reales de las páginas internas. Dos archivos pueden tener nombres completamente diferentes, tamaños diferentes e incluso compresión diferente — si las páginas se ven iguales, coinciden. Renombrar `Spider-Man_001.cbz` a `spiderman-001-hd.cbz` no oculta el duplicado.
 
 Otras capacidades clave:
 
@@ -64,4 +64,4 @@ La actualización está disponible ahora en ambas plataformas:
 - **Mac App Store:** [Descargar Archive Duplicate Scanner](https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449)
 - **Microsoft Store:** [Descargar Archive Duplicate Scanner](https://apps.microsoft.com/detail/9n2jb4k5wvcq)
 
-Visita la [página de Archive Duplicate Scanner](/es/#archive) para obtener más información sobre todas las funciones antes de descargar.
+Visita la [página de Archive Duplicate Scanner](/es/archive/) para obtener más información sobre todas las funciones antes de descargar.
