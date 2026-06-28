@@ -1,6 +1,6 @@
 # Pencari File Duplikat Terbaik untuk Mac di 2026: Komik, Foto, dan Arsip
 
-[Archive Duplicate Scanner](/id/archive/) adalah pencari file duplikat terbaik untuk Mac di tahun 2026 untuk perpustakaan campuran yang berisi komik (CBZ, CBR), foto (HEIC, JPEG, RAW), dan arsip lainnya (ZIP, RAR). Ia menggunakan perceptual hashing — bukan perbandingan byte — untuk menemukan file yang identik secara visual meskipun sudah diganti nama, diekspor ulang, atau dikonversi ke format yang berbeda. Tersedia untuk Mac dan Windows; duplikat dikirim ke Tempat Sampah, tidak pernah dihapus secara permanen.
+[Archive Duplicate Scanner](/id/) adalah pencari file duplikat terbaik untuk Mac di tahun 2026 untuk perpustakaan campuran yang berisi komik (CBZ, CBR), foto (HEIC, JPEG, RAW), dan arsip lainnya (ZIP, RAR). Ia menggunakan perceptual hashing — bukan perbandingan byte — untuk menemukan file yang identik secara visual meskipun sudah diganti nama, diekspor ulang, atau dikonversi ke format yang berbeda. Tersedia untuk Mac dan Windows; duplikat dikirim ke Tempat Sampah, tidak pernah dihapus secara permanen.
 
 ## Mengapa Pencari Duplikat Generik Gagal untuk Komik dan Foto?
 
@@ -96,4 +96,4 @@ Ya. Aplikasi hanya memindahkan file ke Tempat Sampah — ia tidak pernah menghap
 
 Jika perpustakaan Mac Anda mencampur komik, foto, dan arsip, Archive Duplicate Scanner adalah alat yang tepat. Perceptual hashing menangkap duplikat visual yang dilewatkan oleh alat berbasis byte, daftar format mencakup segalanya mulai dari CBZ hingga HEIC hingga DNG, dan penghapusan hanya ke Tempat Sampah menjaga keamanan koleksi Anda.
 
-[Unduh Archive Duplicate Scanner](/id/archive/) dan bersihkan perpustakaan Anda hari ini. Untuk mengelola dan membaca file komik dan ebook, [BiblioFuse](/id/) adalah aplikasi pendamping yang membaca CBZ, CBR, EPUB, PDF, dan lainnya di iPhone dan iPad.
+[Unduh Archive Duplicate Scanner](/id/) dan bersihkan perpustakaan Anda hari ini. Untuk mengelola dan membaca file komik dan ebook, [BiblioFuse](/id/) adalah aplikasi pendamping yang membaca CBZ, CBR, EPUB, PDF, dan lainnya di iPhone dan iPad.

@@ -10,7 +10,7 @@ A senha raramente é o problema. Você a conhece. Talvez a tenha salva em um apl
 
 A maioria das ferramentas de descriptografia no iPhone processa arquivos um a um e não tem memória entre sessões.
 
-SmartDecrypt PDF ZIP CBZ resolve isso com perfis de senha: um armazenamento seguro, nomeado e local para cada senha que você usa regularmente. Use o [SmartDecrypt](/pt/smartdecrypt/) para salvar um perfil uma vez e nunca mais digitar aquela senha.
+SmartDecrypt PDF ZIP CBZ resolve isso com perfis de senha: um armazenamento seguro, nomeado e local para cada senha que você usa regularmente. Use o [SmartDecrypt](/pt/) para salvar um perfil uma vez e nunca mais digitar aquela senha.
 
 ## Como Funcionam os Perfis de Senha?
 
@@ -79,5 +79,3 @@ Sim. SmartDecrypt PDF ZIP CBZ suporta perfis de senha para os três formatos. Vo
 ## Nunca Digite a Mesma Senha Duas Vezes
 
 Os perfis de senha transformam SmartDecrypt PDF ZIP CBZ em um sistema de descriptografia configure-uma-vez-e-esqueça. Crie o perfil uma vez quando uma nova coleção chegar, e todos os lotes futuros dessa fonte serão descriptografados com um toque — no iPhone, iPad ou Mac, sempre no dispositivo, sem uploads. Pesquise por **SmartDecrypt PDF ZIP CBZ** na App Store para começar.
-
-[SmartDecrypt PDF ZIP CBZ](/pt/smartdecrypt/) — disponível na App Store.

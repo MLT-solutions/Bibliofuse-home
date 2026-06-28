@@ -4,7 +4,7 @@ Abres tu carpeta de manga y notas algo raro: el volumen 47 de *One Piece* aparec
 
 Para la mayoría de lectores de manga, los duplicados se acumulan en silencio durante años de descargas de diferentes fuentes, traslados de archivos entre discos y copias de seguridad que nunca se limpiaron. El resultado es almacenamiento desperdiciado, confusión al leer y sin manera fácil de saber qué versión tiene mayor calidad.
 
-Esta guía explica un flujo de trabajo práctico para encontrar, revisar y eliminar manga duplicado usando [Archive Duplicate Scanner](/es/archive/) — una utilidad para Mac diseñada específicamente para este problema.
+Esta guía explica un flujo de trabajo práctico para encontrar, revisar y eliminar manga duplicado usando [Archive Duplicate Scanner](/es/) — una utilidad para Mac diseñada específicamente para este problema.
 
 ---
 
@@ -26,7 +26,7 @@ Un buscador de archivos duplicados estándar no detectará la mayoría de estos 
 
 ## Lo que hace Archive Duplicate Scanner de forma diferente
 
-[Archive Duplicate Scanner](/es/archive/) usa **hash perceptual** para comparar las imágenes reales dentro de tus archivos CBZ y CBR. En lugar de preguntar "¿son estos dos archivos idénticos byte a byte?", pregunta "¿contienen estos dos archivos las mismas páginas de cómic?"
+[Archive Duplicate Scanner](/es/) usa **hash perceptual** para comparar las imágenes reales dentro de tus archivos CBZ y CBR. En lugar de preguntar "¿son estos dos archivos idénticos byte a byte?", pregunta "¿contienen estos dos archivos las mismas páginas de cómic?"
 
 Esto significa que detecta duplicados que han sido:
 

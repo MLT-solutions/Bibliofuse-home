@@ -1,6 +1,6 @@
 # Comment Déverrouiller un PDF Protégé par Mot de Passe sur iPhone et Mac
 
-[SmartDecrypt PDF ZIP CBZ](/fr/smartdecrypt/) supprime les mots de passe des fichiers PDF protégés sur iPhone, iPad et Mac sans envoyer vos documents vers aucun serveur externe. Il déverrouille également les archives ZIP et CBZ protégées par mot de passe, et peut déchiffrer plusieurs fichiers à la fois grâce au mode de déchiffrement par lot. Si vous avez déjà eu besoin de déverrouiller un PDF protégé par mot de passe sur iPhone sans trouver de solution simple, SmartDecrypt est l'outil conçu exactement pour ça.
+[SmartDecrypt PDF ZIP CBZ](/fr/) supprime les mots de passe des fichiers PDF protégés sur iPhone, iPad et Mac sans envoyer vos documents vers aucun serveur externe. Il déverrouille également les archives ZIP et CBZ protégées par mot de passe, et peut déchiffrer plusieurs fichiers à la fois grâce au mode de déchiffrement par lot. Si vous avez déjà eu besoin de déverrouiller un PDF protégé par mot de passe sur iPhone sans trouver de solution simple, SmartDecrypt est l'outil conçu exactement pour ça.
 
 ## Pourquoi un PDF Protégé par Mot de Passe Vous Bloque-t-il sur iPhone ?
 
@@ -75,5 +75,3 @@ SmartDecrypt nécessite le mot de passe correct pour déchiffrer un fichier — 
 ## Commencer
 
 Si les PDF protégés par mot de passe sont un problème récurrent sur votre iPhone ou Mac, SmartDecrypt PDF ZIP CBZ est la solution la plus efficace disponible. Il fonctionne entièrement sur l'appareil, gère PDF, ZIP et CBZ, prend en charge le déchiffrement par lot et s'utilise en moins d'une minute. Recherchez **SmartDecrypt PDF ZIP CBZ** sur l'App Store pour commencer.
-
-[SmartDecrypt PDF ZIP CBZ](/fr/smartdecrypt/) — disponible sur l'App Store.

@@ -1,6 +1,6 @@
 # Archive Duplicate Scanner Now Available in Portuguese, Spanish, Indonesian, and Chinese
 
-Archive Duplicate Scanner now supports Portuguese, Spanish, Bahasa Indonesia, and Simplified Chinese — bringing the full app interface to four new languages. The app finds duplicate comic archives (CBZ, CBR, ZIP, RAR) and photos using perceptual hashing, available free for Mac and Windows. [Download it now](/en/archive/) for Mac or Windows and try it in your language.
+Archive Duplicate Scanner now supports Portuguese, Spanish, Bahasa Indonesia, and Simplified Chinese — bringing the full app interface to four new languages. The app finds duplicate comic archives (CBZ, CBR, ZIP, RAR) and photos using perceptual hashing, available free for Mac and Windows. [Download it now](/en/#archive) for Mac or Windows and try it in your language.
 
 ## Why International Collectors Needed This
 
@@ -25,7 +25,7 @@ The app automatically follows your operating system language setting. On macOS, 
 
 If you haven't used it yet, here's what Archive Duplicate Scanner does — and why collectors keep it around.
 
-[Archive Duplicate Scanner](/en/archive/) uses **perceptual hashing** to detect duplicates. It opens each archive (CBZ, CBR, ZIP, RAR) and computes a perceptual hash of the actual page images inside. Two files can have completely different names, different file sizes, and even different compression — if the pages look the same, they match. Renaming `Spider-Man_001.cbz` to `spiderman-001-hd.cbz` doesn't hide the duplicate.
+[Archive Duplicate Scanner](/en/#archive) uses **perceptual hashing** to detect duplicates. It opens each archive (CBZ, CBR, ZIP, RAR) and computes a perceptual hash of the actual page images inside. Two files can have completely different names, different file sizes, and even different compression — if the pages look the same, they match. Renaming `Spider-Man_001.cbz` to `spiderman-001-hd.cbz` doesn't hide the duplicate.
 
 Beyond archives, it also deduplicates photos: JPEG, PNG, HEIC, WEBP, BMP, and GIF. The same perceptual hash approach catches duplicates that have been cropped, resized, or saved at different quality levels.
 
@@ -81,4 +81,4 @@ The update is available now on both platforms:
 - **Mac App Store:** [Download Archive Duplicate Scanner](https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449)
 - **Microsoft Store:** [Download Archive Duplicate Scanner](https://apps.microsoft.com/detail/9n2jb4k5wvcq)
 
-Visit the [Archive Duplicate Scanner page](/en/archive/) to learn more about the full feature set before downloading.
+Visit the [Archive Duplicate Scanner page](/en/#archive) to learn more about the full feature set before downloading.

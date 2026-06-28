@@ -1,6 +1,6 @@
 # Pencari Fail Pendua Terbaik untuk Mac pada 2026: Komik, Foto dan Arkib
 
-[Archive Duplicate Scanner](/ms/archive/) ialah pencari fail pendua terbaik untuk Mac pada tahun 2026 bagi perpustakaan bercampur yang mengandungi komik (CBZ, CBR), foto (HEIC, JPEG, RAW) dan arkib lain (ZIP, RAR). Ia menggunakan perceptual hashing — bukan perbandingan bait — untuk mencari fail yang identik secara visual walaupun ia telah dinamakan semula, dieksport semula atau ditukar kepada format yang berbeza. Tersedia untuk Mac dan Windows; pendua dihantar ke Tong Sampah, tidak pernah dipadamkan secara kekal.
+[Archive Duplicate Scanner](/ms/) ialah pencari fail pendua terbaik untuk Mac pada tahun 2026 bagi perpustakaan bercampur yang mengandungi komik (CBZ, CBR), foto (HEIC, JPEG, RAW) dan arkib lain (ZIP, RAR). Ia menggunakan perceptual hashing — bukan perbandingan bait — untuk mencari fail yang identik secara visual walaupun ia telah dinamakan semula, dieksport semula atau ditukar kepada format yang berbeza. Tersedia untuk Mac dan Windows; pendua dihantar ke Tong Sampah, tidak pernah dipadamkan secara kekal.
 
 ## Mengapa Pencari Pendua Generik Gagal untuk Komik dan Foto?
 
@@ -96,4 +96,4 @@ Ya. Aplikasi hanya memindahkan fail ke Tong Sampah — ia tidak pernah memadamka
 
 Jika perpustakaan Mac anda mencampur komik, foto dan arkib, Archive Duplicate Scanner ialah alat yang tepat. Perceptual hashing menangkap pendua visual yang dilepaskan oleh alat berasaskan bait, senarai format merangkumi segala-galanya daripada CBZ hingga HEIC hingga DNG, dan pemadaman hanya ke Tong Sampah menjaga keselamatan koleksi anda.
 
-[Muat turun Archive Duplicate Scanner](/ms/archive/) dan bersihkan perpustakaan anda hari ini. Untuk mengurus dan membaca fail komik dan ebook anda, [BiblioFuse](/ms/) ialah aplikasi pendamping yang membaca CBZ, CBR, EPUB, PDF dan banyak lagi pada iPhone dan iPad.
+[Muat turun Archive Duplicate Scanner](/ms/) dan bersihkan perpustakaan anda hari ini. Untuk mengurus dan membaca fail komik dan ebook anda, [BiblioFuse](/ms/) ialah aplikasi pendamping yang membaca CBZ, CBR, EPUB, PDF dan banyak lagi pada iPhone dan iPad.

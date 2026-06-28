@@ -1,6 +1,6 @@
 # Archive Duplicate Scanner Kini Tersedia dalam Portugis, Sepanyol, Indonesia, dan Cina
 
-Archive Duplicate Scanner kini menyokong Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah — keseluruhan antara muka aplikasi telah diterjemahkan ke dalam empat bahasa baharu. Aplikasi ini mengesan arkib komik duplikat (CBZ, CBR, ZIP, RAR) dan foto menggunakan penghashing perseptual, tersedia secara percuma untuk Mac dan Windows. [Muat turun sekarang](/ms/archive/) dan gunakannya dalam bahasa pilihan anda.
+Archive Duplicate Scanner kini menyokong Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah — keseluruhan antara muka aplikasi telah diterjemahkan ke dalam empat bahasa baharu. Aplikasi ini mengesan arkib komik duplikat (CBZ, CBR, ZIP, RAR) dan foto menggunakan penghashing perseptual, tersedia secara percuma untuk Mac dan Windows. [Muat turun sekarang](/ms/#archive) dan gunakannya dalam bahasa pilihan anda.
 
 ## Mengapa Pengumpul Antarabangsa Memerlukannya
 
@@ -25,7 +25,7 @@ Aplikasi secara automatik mengikut tetapan bahasa sistem pengendalian anda. Di m
 
 Jika anda belum pernah menggunakannya, inilah yang dilakukan oleh Archive Duplicate Scanner — dan mengapa pengumpul terus menggunakannya.
 
-[Archive Duplicate Scanner](/ms/archive/) menggunakan **penghashing perseptual** untuk mengesan duplikat. Ia membuka setiap arkib (CBZ, CBR, ZIP, RAR) dan mengira hash perseptual imej halaman sebenar di dalamnya. Dua fail boleh mempunyai nama yang sama sekali berbeza, saiz fail berbeza, malah pemampatan berbeza — jika halaman kelihatan sama, ia sepadan. Menamakan semula `Spider-Man_001.cbz` kepada `spiderman-001-hd.cbz` tidak menyembunyikan duplikat.
+[Archive Duplicate Scanner](/ms/#archive) menggunakan **penghashing perseptual** untuk mengesan duplikat. Ia membuka setiap arkib (CBZ, CBR, ZIP, RAR) dan mengira hash perseptual imej halaman sebenar di dalamnya. Dua fail boleh mempunyai nama yang sama sekali berbeza, saiz fail berbeza, malah pemampatan berbeza — jika halaman kelihatan sama, ia sepadan. Menamakan semula `Spider-Man_001.cbz` kepada `spiderman-001-hd.cbz` tidak menyembunyikan duplikat.
 
 Selain arkib, ia juga mendeduplikat foto: JPEG, PNG, HEIC, WEBP, BMP, dan GIF. Pendekatan hash perseptual yang sama mengesan duplikat yang telah dipangkas, diubah saiz, atau disimpan pada tahap kualiti berbeza.
 
@@ -84,4 +84,4 @@ Kemas kini tersedia sekarang di kedua-dua platform:
 - **Mac App Store:** [Muat Turun Archive Duplicate Scanner](https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449)
 - **Microsoft Store:** [Muat Turun Archive Duplicate Scanner](https://apps.microsoft.com/detail/9n2jb4k5wvcq)
 
-Lawati [halaman Archive Duplicate Scanner](/ms/archive/) untuk mengetahui lebih lanjut tentang set ciri penuh sebelum memuat turun.
+Lawati [halaman Archive Duplicate Scanner](/ms/#archive) untuk mengetahui lebih lanjut tentang set ciri penuh sebelum memuat turun.

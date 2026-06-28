@@ -10,7 +10,7 @@ Kata laluan bukanlah masalahnya. Anda sudah tahu. Mungkin sudah disimpan dalam a
 
 Kebanyakan alat penyahsulitan di iPhone memproses fail satu demi satu dan tidak mengingati apa-apa antara sesi.
 
-SmartDecrypt PDF ZIP CBZ menyelesaikan masalah ini dengan profil kata laluan: storan selamat dan bernama pada peranti untuk setiap kata laluan yang kerap digunakan. Gunakan [SmartDecrypt](/ms/smartdecrypt/) untuk menyimpan profil sekali dan tidak perlu menaip kata laluan itu lagi.
+SmartDecrypt PDF ZIP CBZ menyelesaikan masalah ini dengan profil kata laluan: storan selamat dan bernama pada peranti untuk setiap kata laluan yang kerap digunakan. Gunakan [SmartDecrypt](/ms/) untuk menyimpan profil sekali dan tidak perlu menaip kata laluan itu lagi.
 
 ## Bagaimana Profil Kata Laluan Berfungsi?
 
@@ -79,5 +79,3 @@ Ya. SmartDecrypt PDF ZIP CBZ menyokong profil kata laluan untuk ketiga-tiga form
 ## Tidak Perlu Menaip Kata Laluan yang Sama Dua Kali
 
 Profil kata laluan mengubah SmartDecrypt PDF ZIP CBZ menjadi sistem penyahsulitan sedia-guna-dan-lupakan. Cipta profil sekali apabila koleksi baharu tiba, dan setiap kelompok masa depan daripada sumber itu dinyahsulit dalam satu ketikan — pada iPhone, iPad, atau Mac, sentiasa pada peranti, tidak pernah dimuat naik. Cari **SmartDecrypt PDF ZIP CBZ** di App Store untuk bermula.
-
-[SmartDecrypt PDF ZIP CBZ](/ms/smartdecrypt/) — tersedia di App Store.

@@ -1,6 +1,6 @@
 # Cómo abrir archivos CBZ y ZIP protegidos con contraseña en iPhone
 
-[SmartDecrypt PDF ZIP CBZ](/es/smartdecrypt/) abre archivos CBZ y ZIP protegidos con contraseña directamente en iPhone, iPad y Mac sin subir tus archivos a ningún servidor. La aplicación descifra archivos CBZ de cómics y archivos ZIP en el dispositivo usando un motor basado en Rust, y guarda la copia desbloqueada en la app Archivos. Después del descifrado, abre tus cómics CBZ en [BiblioFuse](/es/) para la mejor experiencia de lectura en iPhone. Descarga SmartDecrypt PDF ZIP CBZ desde la App Store para eliminar contraseñas de archivos en segundos.
+SmartDecrypt PDF ZIP CBZ abre archivos CBZ y ZIP protegidos con contraseña directamente en iPhone, iPad y Mac sin subir tus archivos a ningún servidor. La aplicación descifra archivos CBZ de cómics y archivos ZIP en el dispositivo usando un motor basado en Rust, y guarda la copia desbloqueada en la app Archivos. Después del descifrado, abre tus cómics CBZ en [BiblioFuse](/es/) para la mejor experiencia de lectura en iPhone. Descarga SmartDecrypt PDF ZIP CBZ desde la App Store para eliminar contraseñas de archivos en segundos.
 
 ## ¿Por qué los archivos CBZ protegidos con contraseña no se abren en los lectores de cómics?
 
@@ -69,4 +69,4 @@ SmartDecrypt requiere la contraseña correcta: no intenta descifrar contraseñas
 
 ## Desbloquea tus cómics y archivos
 
-Los archivos CBZ y ZIP protegidos con contraseña ya no tienen que bloquear tu flujo de lectura. SmartDecrypt PDF ZIP CBZ descifra cualquier archivo protegido en tu iPhone o Mac en segundos, sin subidas. Busca [SmartDecrypt PDF ZIP CBZ](/es/smartdecrypt/) en la App Store para comenzar y luego abre tus cómics descifrados en [BiblioFuse](/es/).
+Los archivos CBZ y ZIP protegidos con contraseña ya no tienen que bloquear tu flujo de lectura. SmartDecrypt PDF ZIP CBZ descifra cualquier archivo protegido en tu iPhone o Mac en segundos, sin subidas. Busca **SmartDecrypt PDF ZIP CBZ** en la App Store para comenzar y luego abre tus cómics descifrados en [BiblioFuse](/es/).

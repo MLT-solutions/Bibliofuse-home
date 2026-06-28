@@ -1,6 +1,6 @@
 # Encontrar fotos duplicadas en Mac — Incluyendo HEIC, WebP y RAW
 
-[Archive Duplicate Scanner](/es/archive/) encuentra fotos duplicadas en Mac mediante hash perceptual, una técnica que identifica imágenes visualmente idénticas aunque tengan nombres de archivo distintos, formatos diferentes o ajustes de compresión variados. Es compatible con HEIC, WebP, JPEG, PNG, TIFF, RAW y docenas de otros formatos. La aplicación está disponible para Mac y Windows, y mueve los duplicados a la Papelera de forma segura en lugar de eliminarlos permanentemente.
+[Archive Duplicate Scanner](/es/) encuentra fotos duplicadas en Mac mediante hash perceptual, una técnica que identifica imágenes visualmente idénticas aunque tengan nombres de archivo distintos, formatos diferentes o ajustes de compresión variados. Es compatible con HEIC, WebP, JPEG, PNG, TIFF, RAW y docenas de otros formatos. La aplicación está disponible para Mac y Windows, y mueve los duplicados a la Papelera de forma segura en lugar de eliminarlos permanentemente.
 
 ## El problema de las bibliotecas de fotos que crecen sin límite
 
@@ -78,4 +78,4 @@ Sí. Archive Duplicate Scanner está disponible tanto para Mac como para Windows
 
 Una biblioteca de 40.000 fotos con un 30 % de duplicados desperdicia decenas de gigabytes de almacenamiento. Archive Duplicate Scanner te ofrece las herramientas para limpiarla de forma segura: hash perceptual que detecta duplicados visuales entre formatos, estrategias de selección automática que eliminan las conjeturas y eliminación solo a la Papelera que te mantiene protegido.
 
-[Descarga Archive Duplicate Scanner](/es/archive/) y comienza tu primer análisis hoy. Si también quieres comprimir o convertir por lotes tus colecciones de fotos, la [herramienta web de BiblioFuse](/es/webapp/) gestiona archivos EPUB, CBZ y PDF completamente en tu navegador.
+[Descarga Archive Duplicate Scanner](/es/) y comienza tu primer análisis hoy. Si también quieres comprimir o convertir por lotes tus colecciones de fotos, la [herramienta web de BiblioFuse](/es/webapp/) gestiona archivos EPUB, CBZ y PDF completamente en tu navegador.

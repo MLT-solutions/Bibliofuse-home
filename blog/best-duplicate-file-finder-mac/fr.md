@@ -1,6 +1,6 @@
 # Meilleur outil de recherche de fichiers en double sur Mac en 2026 : bandes dessinées, photos et archives
 
-[Archive Duplicate Scanner](/fr/archive/) est le meilleur outil de recherche de fichiers en double sur Mac en 2026 pour les bibliothèques mixtes contenant des bandes dessinées (CBZ, CBR), des photos (HEIC, JPEG, RAW) et d'autres archives (ZIP, RAR). Il utilise le hachage perceptuel — et non la comparaison d'octets — pour trouver des fichiers visuellement identiques même s'ils ont été renommés, réexportés ou convertis dans un format différent. Disponible pour Mac et Windows ; les doublons sont envoyés vers la Corbeille, jamais supprimés définitivement.
+[Archive Duplicate Scanner](/fr/) est le meilleur outil de recherche de fichiers en double sur Mac en 2026 pour les bibliothèques mixtes contenant des bandes dessinées (CBZ, CBR), des photos (HEIC, JPEG, RAW) et d'autres archives (ZIP, RAR). Il utilise le hachage perceptuel — et non la comparaison d'octets — pour trouver des fichiers visuellement identiques même s'ils ont été renommés, réexportés ou convertis dans un format différent. Disponible pour Mac et Windows ; les doublons sont envoyés vers la Corbeille, jamais supprimés définitivement.
 
 ## Pourquoi les outils de déduplication génériques échouent-ils pour les bandes dessinées et les photos ?
 
@@ -96,4 +96,4 @@ Oui. L'application déplace uniquement les fichiers vers la Corbeille — elle n
 
 Si votre bibliothèque Mac mélange bandes dessinées, photos et archives, Archive Duplicate Scanner est le bon outil. Le hachage perceptuel détecte les doublons visuels que les outils basés sur les octets manquent, la liste des formats couvre tout de CBZ à HEIC en passant par DNG, et la suppression vers la Corbeille uniquement protège votre collection.
 
-[Téléchargez Archive Duplicate Scanner](/fr/archive/) et nettoyez votre bibliothèque dès aujourd'hui. Pour gérer et lire vos fichiers de bandes dessinées et d'e-books, [BiblioFuse](/fr/) est une application complémentaire qui lit CBZ, CBR, EPUB, PDF et bien plus sur iPhone et iPad.
+[Téléchargez Archive Duplicate Scanner](/fr/) et nettoyez votre bibliothèque dès aujourd'hui. Pour gérer et lire vos fichiers de bandes dessinées et d'e-books, [BiblioFuse](/fr/) est une application complémentaire qui lit CBZ, CBR, EPUB, PDF et bien plus sur iPhone et iPad.

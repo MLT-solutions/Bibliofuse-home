@@ -26,7 +26,7 @@ Dit maakt Archive Duplicate Scanner het juiste hulpmiddel voor het soort duplica
 
 ### Stap 1: Download en Start Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/nl/archive/) is beschikbaar in de Mac App Store. Installeer het en open het vanuit Programma's.
+[Archive Duplicate Scanner](/nl/) is beschikbaar in de Mac App Store. Installeer het en open het vanuit Programma's.
 
 ### Stap 2: Voeg Je Stripbibliotheekmap Toe
 
@@ -89,5 +89,3 @@ Ja. Voeg elk gemount station of map toe als scanlocatie. Archive Duplicate Scann
 ## Bouw een Overzichtelijkere Bibliotheek in Één Middag
 
 Dubbele strips verspillen opslagruimte, maken je bibliotheekweergave rommelig en bemoeilijken de organisatie na verloop van tijd. Archive Duplicate Scanner neemt het moeilijke deel over — het detecteren van visueel identieke archieven ongeacht bestandsnaam — en biedt je een veilig pad om op te ruimen via alleen de Prullenmand. Vind **Archive Duplicate Scanner** in de Mac App Store om vandaag nog je eerste scan uit te voeren. Zodra je bibliotheek opgeruimd is, gebruik je [BiblioFuse](/nl/) om je stripverzameling te lezen en te organiseren op iPhone en Mac.
-
-[Archive Duplicate Scanner](/nl/archive/) — beschikbaar in de Mac App Store en Microsoft Store.

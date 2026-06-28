@@ -4,7 +4,7 @@
 
 그러나 안에 있는 만화는 같다. 모든 페이지가 같다. 그리고 디지털 라이브러리를 정리하려고 한다면, 이러한 거의 동일한 중복 파일들이 바로 표준 중복 탐지기를 빠져나가는 것들이다.
 
-이것이 지각 해싱이 해결하는 문제이며, [Archive Duplicate Scanner](/ko/archive/)의 핵심 기술이다.
+이것이 지각 해싱이 해결하는 문제이며, [Archive Duplicate Scanner](/ko/)의 핵심 기술이다.
 
 ---
 
@@ -40,7 +40,7 @@
 
 ## Archive Duplicate Scanner가 이것을 적용하는 방법
 
-[Archive Duplicate Scanner](/ko/archive/)는 아카이브 수준에서 지각 해싱을 적용한다:
+[Archive Duplicate Scanner](/ko/)는 아카이브 수준에서 지각 해싱을 적용한다:
 
 1. **추출** — 각 CBZ 또는 CBR을 열고 내부 이미지를 읽음
 2. **각 페이지 해싱** — 모든 페이지가 지각 해시를 얻음
@@ -73,6 +73,6 @@
 
 ## Archive Duplicate Scanner 사용하기
 
-[Archive Duplicate Scanner](/ko/archive/)는 선택한 중복을 휴지통으로 이동하는(영구 삭제 아님) 네이티브 Mac 앱이다.
+[Archive Duplicate Scanner](/ko/)는 선택한 중복을 휴지통으로 이동하는(영구 삭제 아님) 네이티브 Mac 앱이다.
 
 라이브러리 정리 후, iPhone의 [BiblioFuse](/ko/)와 결합하여 단일 큐레이션된 독서 소스를 활용하라.

@@ -4,7 +4,7 @@ You renamed a file. You re-compressed an archive. You downloaded the same volume
 
 Yet the comic inside is the same. Every page is the same. And if you're trying to clean up your digital library, these near-identical duplicates are exactly the ones that slip through standard duplicate finders.
 
-This is the problem perceptual hashing solves, and it's the technique at the core of [Archive Duplicate Scanner](/en/archive/).
+This is the problem perceptual hashing solves, and it's the technique at the core of [Archive Duplicate Scanner](/en/).
 
 ---
 
@@ -46,7 +46,7 @@ For most comic page comparisons, a Hamming distance under 10 indicates the same 
 
 ## How Archive Duplicate Scanner Applies This
 
-[Archive Duplicate Scanner](/en/archive/) applies perceptual hashing at the archive level:
+[Archive Duplicate Scanner](/en/) applies perceptual hashing at the archive level:
 
 1. **Extract** — it opens each CBZ or CBR archive and reads the image files inside
 2. **Hash each page** — every page in every archive gets a perceptual hash
@@ -99,7 +99,7 @@ This also means that when you download a "higher quality" version of a volume yo
 
 ## Using Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/en/archive/) is a native Mac app that brings perceptual hashing to your full library:
+[Archive Duplicate Scanner](/en/) is a native Mac app that brings perceptual hashing to your full library:
 
 - Scans entire folder trees recursively
 - Handles CBZ, CBR, and loose image files

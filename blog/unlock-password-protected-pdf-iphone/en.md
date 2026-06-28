@@ -1,6 +1,6 @@
 # How to Unlock a Password-Protected PDF on iPhone and Mac
 
-[SmartDecrypt PDF ZIP CBZ](/en/smartdecrypt/) removes passwords from protected PDF files on iPhone, iPad, and Mac without sending your documents to any server. It also unlocks password-protected ZIP and CBZ archives and can decrypt multiple files at once using the built-in batch mode. If you've ever needed to unlock a password-protected PDF on iPhone and gotten nowhere fast, SmartDecrypt is the dedicated tool built for exactly that job.
+[SmartDecrypt PDF ZIP CBZ](/en/) removes passwords from protected PDF files on iPhone, iPad, and Mac without sending your documents to any server. It also unlocks password-protected ZIP and CBZ archives and can decrypt multiple files at once using the built-in batch mode. If you've ever needed to unlock a password-protected PDF on iPhone and gotten nowhere fast, SmartDecrypt is the dedicated tool built for exactly that job.
 
 ## Why Does a Password-Protected PDF Block You on iPhone?
 
@@ -74,4 +74,4 @@ SmartDecrypt requires the correct password to decrypt a file — it is not a pas
 
 ## Get Started
 
-If password-protected PDFs are a recurring friction point on your iPhone or Mac, SmartDecrypt PDF ZIP CBZ is the cleanest solution available. It runs entirely on-device, handles PDF, ZIP, and CBZ, supports batch decryption, and takes under a minute to use. Search for [SmartDecrypt PDF ZIP CBZ](/en/smartdecrypt/) on the App Store to get started.
+If password-protected PDFs are a recurring friction point on your iPhone or Mac, SmartDecrypt PDF ZIP CBZ is the cleanest solution available. It runs entirely on-device, handles PDF, ZIP, and CBZ, supports batch decryption, and takes under a minute to use. Search for **SmartDecrypt PDF ZIP CBZ** on the App Store to get started.

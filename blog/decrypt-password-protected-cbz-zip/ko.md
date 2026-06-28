@@ -1,6 +1,6 @@
 # iPhone에서 비밀번호로 보호된 CBZ 및 ZIP 파일 여는 방법
 
-[SmartDecrypt PDF ZIP CBZ](/ko/smartdecrypt/)는 파일을 서버에 업로드하지 않고 iPhone, iPad, Mac에서 비밀번호로 보호된 CBZ 및 ZIP 아카이브를 직접 열 수 있습니다. 앱은 Rust 기반 엔진을 사용하여 기기에서 CBZ 만화 아카이브와 ZIP 파일을 복호화하고 잠금 해제된 복사본을 파일 앱에 저장합니다. 복호화 후 [BiblioFuse](/ko/)에서 CBZ 만화를 열어 iPhone에서 최상의 독서 경험을 즐기세요. App Store에서 SmartDecrypt PDF ZIP CBZ를 다운로드하면 몇 초 만에 아카이브 비밀번호를 제거할 수 있습니다.
+SmartDecrypt PDF ZIP CBZ는 파일을 서버에 업로드하지 않고 iPhone, iPad, Mac에서 비밀번호로 보호된 CBZ 및 ZIP 아카이브를 직접 열 수 있습니다. 앱은 Rust 기반 엔진을 사용하여 기기에서 CBZ 만화 아카이브와 ZIP 파일을 복호화하고 잠금 해제된 복사본을 파일 앱에 저장합니다. 복호화 후 [BiblioFuse](/ko/)에서 CBZ 만화를 열어 iPhone에서 최상의 독서 경험을 즐기세요. App Store에서 SmartDecrypt PDF ZIP CBZ를 다운로드하면 몇 초 만에 아카이브 비밀번호를 제거할 수 있습니다.
 
 ## 비밀번호로 보호된 CBZ 파일이 대부분의 만화 리더에서 열리지 않는 이유
 
@@ -69,4 +69,4 @@ SmartDecrypt는 정확한 비밀번호가 필요합니다. 알 수 없는 비밀
 
 ## 만화와 아카이브를 잠금 해제하세요
 
-비밀번호로 보호된 CBZ 및 ZIP 파일이 더 이상 독서 워크플로를 방해하지 않아도 됩니다. SmartDecrypt PDF ZIP CBZ는 iPhone 또는 Mac에서 보호된 아카이브를 몇 초 만에 복호화합니다. App Store에서 [SmartDecrypt PDF ZIP CBZ](/ko/smartdecrypt/)를 검색하여 시작하고, 복호화된 만화를 [BiblioFuse](/ko/)에서 열어 최상의 독서 경험을 즐기세요.
+비밀번호로 보호된 CBZ 및 ZIP 파일이 더 이상 독서 워크플로를 방해하지 않아도 됩니다. SmartDecrypt PDF ZIP CBZ는 iPhone 또는 Mac에서 보호된 아카이브를 몇 초 만에 복호화합니다. App Store에서 **SmartDecrypt PDF ZIP CBZ**를 검색하여 시작하고, 복호화된 만화를 [BiblioFuse](/ko/)에서 열어 최상의 독서 경험을 즐기세요.

@@ -1,6 +1,6 @@
 # El mejor buscador de archivos duplicados para Mac en 2026: cómics, fotos y archivos
 
-[Archive Duplicate Scanner](/es/archive/) es el mejor buscador de archivos duplicados para Mac en 2026 para bibliotecas mixtas que contienen cómics (CBZ, CBR), fotos (HEIC, JPEG, RAW) y otros archivos (ZIP, RAR). Utiliza hash perceptual —no comparación de bytes— para encontrar archivos visualmente idénticos aunque hayan sido renombrados, reexportados o convertidos a un formato diferente. Disponible para Mac y Windows; los duplicados se envían a la Papelera y nunca se eliminan permanentemente.
+[Archive Duplicate Scanner](/es/) es el mejor buscador de archivos duplicados para Mac en 2026 para bibliotecas mixtas que contienen cómics (CBZ, CBR), fotos (HEIC, JPEG, RAW) y otros archivos (ZIP, RAR). Utiliza hash perceptual —no comparación de bytes— para encontrar archivos visualmente idénticos aunque hayan sido renombrados, reexportados o convertidos a un formato diferente. Disponible para Mac y Windows; los duplicados se envían a la Papelera y nunca se eliminan permanentemente.
 
 ## ¿Por qué los buscadores de duplicados genéricos fallan con cómics y fotos?
 
@@ -96,4 +96,4 @@ Sí. La aplicación solo mueve los archivos a la Papelera — nunca elimina nada
 
 Si tu biblioteca de Mac combina cómics, fotos y archivos comprimidos, Archive Duplicate Scanner es la herramienta adecuada. El hash perceptual detecta duplicados visuales que las herramientas basadas en bytes pasan por alto, la lista de formatos cubre todo, desde CBZ hasta HEIC y DNG, y la eliminación exclusiva a la Papelera mantiene tu colección segura.
 
-[Descarga Archive Duplicate Scanner](/es/archive/) y limpia tu biblioteca hoy. Para gestionar y leer tus archivos de cómics y libros electrónicos, [BiblioFuse](/es/) es una aplicación complementaria que lee CBZ, CBR, EPUB, PDF y más en iPhone y iPad.
+[Descarga Archive Duplicate Scanner](/es/) y limpia tu biblioteca hoy. Para gestionar y leer tus archivos de cómics y libros electrónicos, [BiblioFuse](/es/) es una aplicación complementaria que lee CBZ, CBR, EPUB, PDF y más en iPhone y iPad.

@@ -1,6 +1,6 @@
 # Find Duplicate Photos on Mac — Including HEIC, WebP, and RAW
 
-[Archive Duplicate Scanner](/en/archive/) finds duplicate photos on Mac using perceptual hashing — a technique that matches visually identical images even if they have different filenames, formats, or compression settings. It supports HEIC, WebP, JPEG, PNG, TIFF, RAW, and dozens of other formats. The app is available for Mac and Windows and moves duplicates safely to the Trash rather than permanently deleting them.
+[Archive Duplicate Scanner](/en/) finds duplicate photos on Mac using perceptual hashing — a technique that matches visually identical images even if they have different filenames, formats, or compression settings. It supports HEIC, WebP, JPEG, PNG, TIFF, RAW, and dozens of other formats. The app is available for Mac and Windows and moves duplicates safely to the Trash rather than permanently deleting them.
 
 ## The Problem With Photo Libraries That Grow Without Limits
 
@@ -78,4 +78,4 @@ Yes. Archive Duplicate Scanner is available for both Mac and Windows. The Window
 
 A 40,000-photo library with 30% duplicates wastes tens of gigabytes of storage. Archive Duplicate Scanner gives you the tools to clean it up safely — perceptual hashing that catches visual duplicates across formats, auto-select strategies that take the guesswork out, and Trash-only deletion that keeps you protected.
 
-[Download Archive Duplicate Scanner](/en/archive/) and start your first scan today. If you also want to compress or batch-convert your photo collections, the [BiblioFuse Web Tool](/en/webapp/) handles EPUB, CBZ, and PDF files entirely in your browser.
+[Download Archive Duplicate Scanner](/en/) and start your first scan today. If you also want to compress or batch-convert your photo collections, the [BiblioFuse Web Tool](/en/webapp/) handles EPUB, CBZ, and PDF files entirely in your browser.

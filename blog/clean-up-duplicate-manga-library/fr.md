@@ -4,7 +4,7 @@ Vous ouvrez votre dossier manga et remarquez quelque chose d'étrange : le volum
 
 Pour la plupart des lecteurs de manga, les doublons s'accumulent silencieusement au fil des années — téléchargements depuis diverses sources, déplacements d'archives entre disques, sauvegardes jamais nettoyées. Résultat : espace gaspillé, confusion lors de la lecture, et aucun moyen simple d'identifier la meilleure version.
 
-Ce guide présente un flux de travail pratique pour trouver, examiner et supprimer les doublons manga avec [Archive Duplicate Scanner](/fr/archive/) — un utilitaire Mac conçu spécifiquement pour ce problème.
+Ce guide présente un flux de travail pratique pour trouver, examiner et supprimer les doublons manga avec [Archive Duplicate Scanner](/fr/) — un utilitaire Mac conçu spécifiquement pour ce problème.
 
 ---
 
@@ -24,7 +24,7 @@ Un outil de recherche de doublons standard ne détecte pas la plupart de ces cas
 
 ## Ce que fait Archive Duplicate Scanner différemment
 
-[Archive Duplicate Scanner](/fr/archive/) utilise le **hachage perceptuel** pour comparer les images réelles à l'intérieur de vos archives CBZ et CBR. Au lieu de demander "ces deux fichiers sont-ils identiques octet par octet ?", il demande "ces deux archives contiennent-elles les mêmes pages de bande dessinée ?"
+[Archive Duplicate Scanner](/fr/) utilise le **hachage perceptuel** pour comparer les images réelles à l'intérieur de vos archives CBZ et CBR. Au lieu de demander "ces deux fichiers sont-ils identiques octet par octet ?", il demande "ces deux archives contiennent-elles les mêmes pages de bande dessinée ?"
 
 Cela lui permet de détecter des doublons qui ont été :
 
