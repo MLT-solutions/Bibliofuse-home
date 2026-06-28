@@ -123,8 +123,8 @@ This file is the source of truth for the daily article agent.
 | 44 | ✅ | `bibliofuse-ipad-reading-tips` | BiblioFuse on iPad: Tips for Full-Page Comic Reading | BiblioFuse iOS |
 | 45 | ✅ | `change-reading-direction-comics` | How to Switch Between LTR and RTL Reading in BiblioFuse | BiblioFuse iOS |
 | 46 | ✅ | `airdrop-books-to-iphone` | How to Use AirDrop to Transfer Comics and Ebooks to iPhone | BiblioFuse iOS |
-| 47 | ⬜ | `reading-ebooks-offline-iphone` | Reading Ebooks Completely Offline on iPhone: No Cloud Required | BiblioFuse iOS |
-| 48 | ⬜ | `convert-cbr-to-cbz-online` | How to Convert CBR to CBZ Online: Free, No Software Required | BiblioFuse Web |
+| 47 | ✅ | `reading-ebooks-offline-iphone` | Reading Ebooks Completely Offline on iPhone: No Cloud Required | BiblioFuse iOS |
+| 48 | ✅ | `convert-cbr-to-cbz-online` | How to Convert CBR to CBZ Online: Free, No Software Required | BiblioFuse Web |
 | 49 | ⬜ | `extract-pages-from-pdf-online` | How to Extract Pages from a PDF Online for Free | BiblioFuse Web |
 | 50 | ⬜ | `best-epub-reader-mac` | Best EPUB Reader for macOS in 2026 | BiblioFuse iOS |
 | 51 | ⬜ | `bibliofuse-app-settings-guide` | BiblioFuse Settings Explained: Reading Preferences, Display, and Privacy | BiblioFuse iOS |

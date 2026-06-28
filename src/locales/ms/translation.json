@@ -855,6 +855,16 @@
           "excerpt": "SmartDecrypt PDF ZIP CBZ kini menyokong 11 bahasa — Inggeris, Sepanyol, Perancis, Belanda, Portugis, Rusia, Cina, Jepun, Korea, Indonesia, dan Melayu. Buka kunci penyata bank dan PDF insurans dengan corak kata laluan yang sukar diingat dalam bahasa anda sendiri.",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ menambah 6 bahasa baharu: Perancis, Belanda, Rusia, Jepun, Korea, dan Melayu. Buka kunci PDF bank dengan kata laluan berasaskan corak pada iPhone, Mac, dan Windows."
         },
+        "reading-ebooks-offline-iphone": {
+          "title": "Membaca Ebook Sepenuhnya Offline di iPhone: Tanpa Awan",
+          "excerpt": "BiblioFuse menyimpan fail EPUB, CBZ, CBR, PDF, ZIP, RAR dan TXT secara tempatan di iPhone anda — baca keseluruhan perpustakaan anda dalam kapal terbang, bawah tanah atau di mana sahaja tanpa isyarat. Tiada langganan awan atau akaun diperlukan. iOS 17 ke atas.",
+          "seoDescription": "BiblioFuse membaca EPUB, CBZ, CBR, PDF, ZIP, RAR dan TXT secara tempatan di iPhone. Tanpa awan, tanpa akaun, tanpa isyarat. Panduan bacaan offline lengkap untuk iOS 17+."
+        },
+        "convert-cbr-to-cbz-online": {
+          "title": "Cara Menukar CBR kepada CBZ Dalam Talian: Percuma, Tanpa Perisian",
+          "excerpt": "Alat web BiblioFuse menukar arkib komik CBR (berasaskan RAR) kepada format CBZ (berasaskan ZIP) terus dalam pelayar anda — tanpa memuat naik fail, tanpa pemasangan, sepenuhnya peribadi. Seret fail anda dan muat turun CBZ yang telah ditukar dalam beberapa saat.",
+          "seoDescription": "Tukar CBR kepada CBZ dalam talian dalam pelayar menggunakan BiblioFuse Web Tool. Tanpa muat naik fail, tanpa perisian. Berasaskan WebAssembly, percuma untuk fail tunggal."
+        },
         "airdrop-books-to-iphone": {
           "title": "Cara Menggunakan AirDrop untuk Memindahkan Komik dan Ebook ke iPhone",
           "excerpt": "AirDrop membolehkan anda menghantar fail CBZ, CBR, EPUB dan PDF dari Mac atau iPhone lain terus ke BiblioFuse dalam beberapa saat, tanpa kabel atau aplikasi tambahan. Aktifkan AirDrop pada kedua-dua peranti, pilih fail dan ketik BiblioFuse dalam helaian kongsi.",

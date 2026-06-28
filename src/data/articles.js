@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'reading-ebooks-offline-iphone',
+    date: '2026-06-28',
+    tags: ['ios', 'offline', 'guide', 'epub'],
+    coverImage: '/image/blog/Offline Ebook Reading iPhone.jpg',
+  },
+  {
+    slug: 'convert-cbr-to-cbz-online',
+    date: '2026-06-28',
+    tags: ['web', 'guide', 'conversion', 'cbr', 'cbz'],
+    coverImage: '/image/blog/Convert CBR to CBZ Online.jpg',
+  },
+  {
     slug: 'organize-ebooks-by-content-not-metadata',
     date: '2026-06-28',
     tags: ['grepreader', 'guide', 'ebooks'],

@@ -855,6 +855,16 @@
           "excerpt": "SmartDecrypt PDF ZIP CBZ ondersteunt nu 11 talen — Engels, Spaans, Frans, Nederlands, Portugees, Russisch, Chinees, Japans, Koreaans, Indonesisch en Maleis. Ontgrendel bankafschriften en verzekeringsPDFs met moeilijk te onthouden wachtwoordpatronen in je eigen taal.",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ voegt 6 nieuwe talen toe: Frans, Nederlands, Russisch, Japans, Koreaans en Maleis. Ontgrendel bank-PDFs met patroongebaseerde wachtwoorden op iPhone, Mac en Windows."
         },
+        "reading-ebooks-offline-iphone": {
+          "title": "E-books volledig offline lezen op iPhone: geen cloud vereist",
+          "excerpt": "BiblioFuse slaat EPUB, CBZ, CBR, PDF, ZIP, RAR en TXT-bestanden lokaal op je iPhone op — lees je hele bibliotheek in vliegtuigen, ondergronds of overal zonder signaal. Geen cloud-abonnement of account nodig. iOS 17 of hoger.",
+          "seoDescription": "BiblioFuse leest EPUB, CBZ, CBR, PDF, ZIP, RAR en TXT lokaal op iPhone. Geen cloud, geen account, geen signaal vereist. Volledige offline leesgids voor iOS 17+."
+        },
+        "convert-cbr-to-cbz-online": {
+          "title": "CBR naar CBZ online converteren: gratis, geen software vereist",
+          "excerpt": "De BiblioFuse webtool converteert CBR (RAR-gebaseerde) striparchief bestanden naar CBZ (ZIP-gebaseerd) formaat direct in je browser — geen upload, geen installatie, volledig privé. Sleep je bestand erin en download de geconverteerde CBZ in seconden.",
+          "seoDescription": "Converteer CBR naar CBZ online in je browser met BiblioFuse Web Tool. Geen bestandsupload, geen software. WebAssembly-aangedreven, gratis voor losse bestanden."
+        },
         "airdrop-books-to-iphone": {
           "title": "Hoe gebruik je AirDrop om strips en ebooks naar iPhone te sturen",
           "excerpt": "Met AirDrop stuur je CBZ-, CBR-, EPUB- en PDF-bestanden van je Mac of een andere iPhone direct naar BiblioFuse zonder kabels of extra apps. Zet AirDrop aan op beide apparaten en kies BiblioFuse in het deelvenster.",

@@ -855,6 +855,16 @@
           "excerpt": "SmartDecrypt PDF ZIP CBZ agora suporta 11 idiomas — inglês, espanhol, francês, holandês, português, russo, chinês, japonês, coreano, indonésio e malaio. Desbloqueie extratos bancários e PDFs de seguros com padrões de senha difíceis de lembrar no seu próprio idioma.",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ adiciona 6 novos idiomas: francês, holandês, russo, japonês, coreano e malaio. Desbloqueie PDFs bancários com senhas baseadas em padrões no iPhone, Mac e Windows."
         },
+        "reading-ebooks-offline-iphone": {
+          "title": "Ler ebooks completamente offline no iPhone: sem necessidade de nuvem",
+          "excerpt": "BiblioFuse armazena arquivos EPUB, CBZ, CBR, PDF, ZIP, RAR e TXT localmente no seu iPhone — leia sua biblioteca completa em aviões, metrô ou em qualquer lugar sem sinal. Sem assinatura de nuvem ou conta necessária. iOS 17 ou posterior.",
+          "seoDescription": "BiblioFuse lê EPUB, CBZ, CBR, PDF, ZIP, RAR e TXT localmente no iPhone. Sem nuvem, sem conta, sem sinal. Guia completo de leitura offline para iOS 17+."
+        },
+        "convert-cbr-to-cbz-online": {
+          "title": "Como converter CBR para CBZ online: grátis, sem software",
+          "excerpt": "A ferramenta web BiblioFuse converte arquivos CBR (baseados em RAR) para formato CBZ (baseado em ZIP) diretamente no seu navegador — sem upload, sem instalação, completamente privado. Arraste seu arquivo e baixe o CBZ convertido em segundos.",
+          "seoDescription": "Converta CBR para CBZ online no seu navegador com BiblioFuse Web Tool. Sem upload de arquivos, sem software. Baseado em WebAssembly, gratuito para arquivos individuais."
+        },
         "airdrop-books-to-iphone": {
           "title": "Como usar o AirDrop para transferir quadrinhos e ebooks para o iPhone",
           "excerpt": "O AirDrop permite enviar arquivos CBZ, CBR, EPUB e PDF do Mac ou de outro iPhone diretamente para o BiblioFuse em segundos, sem cabos nem aplicativos. Ative o AirDrop nos dois dispositivos, selecione os arquivos e escolha BiblioFuse na folha de compartilhamento.",

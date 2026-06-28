@@ -855,6 +855,16 @@
           "excerpt": "SmartDecrypt PDF ZIP CBZ kini mendukung 11 bahasa — Inggris, Spanyol, Prancis, Belanda, Portugis, Rusia, Cina, Jepang, Korea, Indonesia, dan Melayu. Buka kunci laporan bank dan PDF asuransi dengan pola kata sandi yang sulit diingat dalam bahasa Anda sendiri.",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ menambahkan 6 bahasa baru: Prancis, Belanda, Rusia, Jepang, Korea, dan Melayu. Buka kunci PDF bank dengan kata sandi berbasis pola di iPhone, Mac, dan Windows."
         },
+        "reading-ebooks-offline-iphone": {
+          "title": "Membaca Ebook Sepenuhnya Offline di iPhone: Tanpa Cloud",
+          "excerpt": "BiblioFuse menyimpan file EPUB, CBZ, CBR, PDF, ZIP, RAR, dan TXT secara lokal di iPhone Anda — baca seluruh perpustakaan di pesawat, bawah tanah, atau di mana saja tanpa sinyal. Tidak perlu berlangganan cloud atau akun. iOS 17 ke atas.",
+          "seoDescription": "BiblioFuse membaca EPUB, CBZ, CBR, PDF, ZIP, RAR, dan TXT secara lokal di iPhone. Tanpa cloud, tanpa akun, tanpa sinyal. Panduan lengkap membaca offline untuk iOS 17+."
+        },
+        "convert-cbr-to-cbz-online": {
+          "title": "Cara Mengonversi CBR ke CBZ Online: Gratis, Tanpa Software",
+          "excerpt": "BiblioFuse Web Tool mengonversi arsip komik CBR (berbasis RAR) ke format CBZ (berbasis ZIP) langsung di browser Anda — tanpa unggah file, tanpa instalasi, sepenuhnya privat. Seret file Anda dan unduh CBZ yang telah dikonversi dalam hitungan detik.",
+          "seoDescription": "Konversi CBR ke CBZ online di browser menggunakan BiblioFuse Web Tool. Tanpa unggah file, tanpa software. Berbasis WebAssembly, gratis untuk file tunggal."
+        },
         "airdrop-books-to-iphone": {
           "title": "Cara Menggunakan AirDrop untuk Mentransfer Komik dan Ebook ke iPhone",
           "excerpt": "AirDrop memungkinkan pengiriman file CBZ, CBR, EPUB, dan PDF dari Mac atau iPhone lain langsung ke BiblioFuse dalam hitungan detik, tanpa kabel atau aplikasi tambahan. Aktifkan AirDrop di kedua perangkat, pilih file, dan ketuk BiblioFuse di lembar berbagi.",

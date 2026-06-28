@@ -225,6 +225,16 @@
           "excerpt": "SmartDecrypt PDF ZIP CBZ now supports 11 languages — English, Spanish, French, Dutch, Portuguese, Russian, Chinese, Japanese, Korean, Indonesian, and Malay. Unlock bank statements and insurance PDFs with hard-to-remember password patterns in your own language.",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ adds 6 new languages: French, Dutch, Russian, Japanese, Korean, and Malay. Unlock bank PDFs with pattern-based passwords on iPhone, Mac, and Windows."
         },
+        "reading-ebooks-offline-iphone": {
+          "title": "Reading Ebooks Completely Offline on iPhone: No Cloud Required",
+          "excerpt": "BiblioFuse stores EPUB, CBZ, CBR, PDF, ZIP, RAR, and TXT files locally on your iPhone — read your entire library on planes, underground, or anywhere with no signal. No cloud subscription or account needed. iOS 17 or later.",
+          "seoDescription": "BiblioFuse reads EPUB, CBZ, CBR, PDF, ZIP, RAR, and TXT files locally on iPhone. No cloud, no account, no signal required. Full offline reading guide for iOS 17+."
+        },
+        "convert-cbr-to-cbz-online": {
+          "title": "How to Convert CBR to CBZ Online: Free, No Software Required",
+          "excerpt": "The BiblioFuse Web Tool converts CBR (RAR-based) comic archives to CBZ (ZIP-based) format directly in your browser — no upload, no install, completely private. Drop in your file and download the converted CBZ in seconds.",
+          "seoDescription": "Convert CBR to CBZ online in your browser using BiblioFuse Web Tool. No file upload, no software. WebAssembly-powered, free for single files, works on any device."
+        },
         "airdrop-books-to-iphone": {
           "title": "How to Use AirDrop to Transfer Comics and Ebooks to iPhone",
           "excerpt": "AirDrop lets you send CBZ, CBR, EPUB, and PDF files from Mac or another iPhone directly into BiblioFuse in seconds — no cables, no apps, no account needed. Enable AirDrop on both devices, select your files, and tap BiblioFuse in the share sheet.",
