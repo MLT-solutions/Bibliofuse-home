@@ -1,96 +1,113 @@
-# Cara Mengonversi CBR ke CBZ Online: Gratis, Tanpa Software
+# Cara Mengonversi CBR ke CBZ Secara Online: Gratis, Tanpa Perlu Instal Software
 
-Kamu punya folder penuh file CBR — komik dalam format arsip RAR — dan pembaca yang hanya membuka CBZ. Atau kamu sedang mengarsipkan koleksi dan menginginkan format terbuka yang konsisten. Solusinya terasa sederhana: ganti ekstensi dari `.cbr` ke `.cbz`. Tapi itu tidak berhasil.
+Alat web BiblioFuse mengonversi arsip komik CBR ke format CBZ langsung di browser Anda — tanpa software yang perlu diinstal, tanpa file yang diunggah ke server. File CBR adalah arsip RAR; file CBZ adalah arsip ZIP yang berisi gambar komik yang sama. BiblioFuse mengemas ulang gambar-gambar tersebut ke dalam ZIP standar berbasis CBZ, menjaga semua kualitas karya seni Anda. Buka alatnya di browser mana pun, masukkan file CBR Anda, dan unduh CBZ yang telah dikonversi dalam hitungan detik.
 
-File CBR adalah arsip RAR. File CBZ adalah arsip ZIP. Keduanya menggunakan format kompresi yang berbeda di baliknya — kamu tidak bisa begitu saja mengubah nama ekstensi. Kamu perlu mengekstrak gambar dari RAR dan mengompresnya ulang sebagai ZIP. [Konverter online BiblioFuse](https://bibliofuse.com/id/webapp/) melakukan ini di browser kamu, tanpa ada file yang diunggah ke server mana pun.
+Koleksi komik Anda mungkin memiliki puluhan — bahkan ratusan — file .cbr. CBR adalah format arsip komik yang pertama, dibangun di atas standar kompresi RAR. CBZ muncul belakangan, menggunakan format ZIP yang lebih terbuka. Saat ini, sebagian besar pembaca komik modern, pustaka, dan alat pengarsipan lebih menyukai CBZ. Mengonversi CBR ke CBZ secara online, tanpa menginstal software atau mengunggah file ke server pihak ketiga, adalah cara paling bersih untuk menstandarisasi koleksi Anda.
 
-## CBR vs CBZ: Apa Perbedaan Sebenarnya?
+## Apa Perbedaan Antara CBR dan CBZ?
 
-Baik CBR maupun CBZ adalah format arsip komik. Keduanya berisi rangkaian file gambar (biasanya JPG atau PNG) yang ditampilkan pembaca secara berurutan untuk mensimulasikan pembacaan komik.
+Baik CBR maupun CBZ adalah format arsip komik. Keduanya bekerja dengan prinsip yang sama: mengompres folder gambar halaman komik berurutan (biasanya JPEG atau PNG) ke dalam satu file arsip. Satu-satunya perbedaan nyata adalah algoritma kompresinya:
 
-Perbedaannya ada pada kompresi yang mendasarinya:
+- **CBR** — menggunakan kompresi RAR. RAR adalah format kepemilikan yang dikembangkan oleh Eugene Roshal. Pemindai komik lama menyukainya karena rasio kompresi yang baik. Ekstensi `.cbr` singkatan dari "Comic Book RAR".
+- **CBZ** — menggunakan kompresi ZIP. ZIP adalah standar terbuka, didukung secara luas oleh setiap sistem operasi tanpa software tambahan. Ekstensi `.cbz` singkatan dari "Comic Book ZIP".
 
-| Format | Jenis arsip | Standar terbuka? |
-|--------|------------|----------------|
-| CBZ | ZIP | Ya |
-| CBR | RAR | Tidak (proprietary) |
+Gambar-gambar di dalam kedua format tersebut identik. Mengonversi CBR ke CBZ tidak mengubah karya seni, urutan halaman, atau kualitas — hanya mengemas ulang file-file yang sama ke dalam kontainer arsip yang berbeda.
 
-RAR adalah format proprietary yang dikembangkan oleh Eugene Roshal. Membuka file RAR memerlukan perangkat lunak WinRAR resmi atau pustaka yang mengimplementasikan spesifikasi RAR — dan pustaka itu harus secara eksplisit disertakan dalam setiap pembaca. Banyak pembaca modern, termasuk alat berbasis browser, hanya mendukung CBZ berbasis ZIP karena spesifikasi ZIP bersifat terbuka dan diimplementasikan secara luas.
+## Mengapa Perlu Mengonversi CBR ke CBZ Secara Online?
 
-CBZ menjadi standar de facto untuk komik digital sebagian karena ZIP bebas royalti dan lintas platform. Setiap sistem operasi dapat membuka file ZIP tanpa perangkat lunak pihak ketiga. Jika kamu mengarsipkan koleksi untuk jangka panjang, CBZ adalah pilihan yang lebih aman.
+**Kompatibilitas:** CBZ didukung secara native oleh hampir semua pembaca komik, aplikasi pustaka, dan alat pengarsipan. Beberapa aplikasi — terutama di iOS, Web, dan platform baru — hanya mendukung arsip berbasis ZIP. CBZ bekerja di mana saja; CBR terkadang tidak.
 
-## Cara Kerja Konversi
+**Standar terbuka:** ZIP adalah format yang sepenuhnya terbuka. RAR memiliki spesifikasi kepemilikan dan memerlukan pustaka dekoding khusus. Untuk pengarsipan jangka panjang, CBZ adalah pilihan yang lebih tahan lama.
 
-Mengonversi CBR ke CBZ melibatkan tiga langkah:
+**Manajemen file:** macOS dan Windows dapat membuka file ZIP secara native tanpa aplikasi tambahan. Anda dapat menjelajahi konten CBZ di Finder atau File Explorer dengan mengganti nama ekstensinya menjadi `.zip`. File CBR memerlukan WinRAR atau dekompresor khusus.
 
-1. Ekstrak gambar dari CBR (arsip RAR)
-2. Masukkan gambar yang sama ke dalam arsip ZIP baru
-3. Ganti nama ekstensi `.zip` menjadi `.cbz`
+**Kompatibilitas web:** [Alat Web BiblioFuse](https://bibliofuse.com/id/webapp/) bekerja secara eksklusif dengan arsip berbasis ZIP (CBZ). Mengonversi file CBR Anda terlebih dahulu membuatnya kompatibel dengan semua alat komik online.
 
-Alat online BiblioFuse melakukan ketiga langkah ini di browser menggunakan WebAssembly. File kamu tidak pernah diunggah — ekstraksi, kompresi ulang, dan unduhan semuanya terjadi secara lokal di perangkat kamu.
+## Cara Mengonversi CBR ke CBZ Secara Online — Langkah demi Langkah
 
-## Langkah demi Langkah: Konversi CBR ke CBZ Online
+Alat web BiblioFuse memproses file sepenuhnya di browser Anda menggunakan WebAssembly. Tidak ada yang diunggah ke server, dan tidak ada data pribadi yang dikirimkan. File Anda tetap berada di perangkat Anda selama proses berlangsung.
 
-1. Buka [bibliofuse.com/id/webapp/](https://bibliofuse.com/id/webapp/)
-2. Buka alat **Konversi** dari bilah alat.
-3. Klik **Pilih file** atau seret file `.cbr` kamu ke zona jatuhkan.
-4. Alat mengekstrak gambar, membuat arsip ZIP baru, dan mengunduh file `.cbz` secara otomatis.
+### Langkah 1: Buka Alat Web BiblioFuse
 
-Untuk konversi batch — beberapa file CBR sekaligus — pilih semua file dalam pemilih file. Setiap file diproses dan diunduh secara terpisah. Tidak ada batas antrean yang diberlakukan oleh alat, meskipun file yang sangat besar (400+ MB) mungkin memerlukan waktu lebih lama tergantung pada kemampuan pemrosesan perangkat kamu.
+Kunjungi [bibliofuse.com/id/webapp/](https://bibliofuse.com/id/webapp/) di Chrome, Firefox, Safari, atau Edge. Tidak diperlukan akun atau login.
 
-## Mengapa Konversi Berbasis Browser Bersifat Privat
+### Langkah 2: Impor File CBR Anda
 
-Konversi dijalankan sepenuhnya di browser kamu melalui WebAssembly (WASM). Ini adalah teknologi yang sama yang memungkinkan game dan editor video berjalan di browser tanpa plugin — pekerjaan komputasi intensif yang dieksekusi secara native di sandbox browser.
+Klik **Tambah file** atau seret file CBR Anda langsung ke zona jatuh alat tersebut. Alat ini menerima arsip CBR (berbasis RAR) dan mengekstrak gambar-gambar di dalamnya.
 
-Saat menggunakan [alat web BiblioFuse](https://bibliofuse.com/id/webapp/):
+Untuk tingkat gratis, Anda dapat memproses hingga 3 file per batch. Jatuhkan ketiganya sekaligus untuk mengonversinya dalam satu operasi.
 
-- File CBR kamu dibaca ke dalam memori browser
-- Gambar diekstrak dalam memori
-- File ZIP baru dibuat dalam memori
-- ZIP diunduh ke perangkat kamu
+### Langkah 3: Pilih Format Output
 
-Tidak ada saat di mana data meninggalkan mesin kamu. Tidak ada panggilan server selama konversi. Kamu dapat memverifikasinya dengan membuka inspektor jaringan browser (F12 → Jaringan) dan mengamati: satu-satunya permintaan adalah pemuatan halaman awal. Tidak ada unggahan yang muncul.
+Pilih **CBZ** sebagai format output di opsi alat. Ini memberitahu konverter untuk mengemas ulang gambar-gambar yang diekstrak sebagai arsip ZIP dengan ekstensi `.cbz`.
 
-Ini penting jika koleksi komik kamu mencakup konten berlisensi, pemindaian pribadi, atau hal lain yang kamu tidak ingin diunggah ke server pihak ketiga.
+### Langkah 4: Konversi dan Unduh
 
-## Mengonversi File CBR di iPhone atau iPad
+Klik **Konversi** (atau tombol aksi yang setara). Alat memproses file di browser Anda — tanpa unggahan, tanpa menunggu respons server. Saat pemrosesan selesai, tautan unduhan muncul. Klik untuk menyimpan file CBZ yang telah dikonversi ke Mac atau PC Anda.
 
-Alat web BiblioFuse juga bekerja di browser mobile. Buka [bibliofuse.com/id/webapp/](https://bibliofuse.com/id/webapp/) di Safari atau Chrome di iPhone atau iPad.
+File yang diunduh adalah arsip CBZ standar yang berisi gambar yang sama dengan CBR asli Anda, dikemas ulang dalam format ZIP.
 
-Di iOS, ketuk **Pilih file** dan navigasikan ke file CBR kamu di aplikasi File, iCloud Drive, atau penyedia penyimpanan cloud yang terhubung. File CBZ yang diunduh akan masuk ke folder Unduhan, dari mana kamu dapat membagikannya langsung ke [BiblioFuse](https://bibliofuse.com/id/) untuk dibaca.
+## Kualitas dan Ukuran File Setelah Konversi
 
-## Setelah Konversi: Membaca File CBZ di BiblioFuse
+Konversi CBR ke CBZ tidak mengubah kualitas gambar (lossless). Gambar halaman komik (file JPEG, PNG, atau WebP di dalam arsip) diekstrak dari kontainer RAR dan ditempatkan langsung ke kontainer ZIP tanpa pengkodean ulang atau perubahan kompresi.
 
-BiblioFuse di iPhone membaca file CBZ secara native — tidak diperlukan konversi lebih lanjut. Untuk membaca file yang dikonversi:
+Ukuran file mungkin sedikit berbeda antara CBR asli dan CBZ yang dihasilkan. ZIP dan RAR menggunakan algoritma kompresi yang berbeda, sehingga gambar yang sama yang dikompres dengan ZIP mungkin menghasilkan file yang sedikit lebih besar atau lebih kecil dari aslinya yang RAR. Perbedaannya biasanya kurang dari 5%, dan kualitas gambar identik.
 
-1. Konversi CBR ke CBZ menggunakan alat web di Mac atau iPhone kamu.
-2. Transfer file CBZ ke iPhone melalui Wi-Fi Transfer atau AirDrop.
-3. Impor ke BiblioFuse dengan memilih file di aplikasi File dan membagikannya ke aplikasi.
+Jika Anda juga ingin mengurangi ukuran file CBZ yang dikonversi, alat web BiblioFuse menawarkan langkah kompresi opsional — ia dapat mengubah ukuran dan mengompres ulang gambar di dalam arsip untuk mengurangi ukuran file.
 
-Catatan: BiblioFuse juga membaca file CBR langsung di iPhone — ia menangani ekstraksi RAR secara native. Alasan utama untuk mengonversi adalah jika kamu mengarsipkan file, membagikannya kepada orang lain, atau menggunakan alat lain dalam alur kerja yang memerlukan CBZ secara khusus.
+## Mengonversi Beberapa File CBR ke CBZ Sekaligus
 
-## Pertanyaan Umum
+Untuk pengguna gratis, alat web BiblioFuse memproses hingga 3 file per batch. Jatuhkan beberapa file CBR sekaligus untuk mengonversinya dalam satu kali proses:
 
-**Bisakah saya mengonversi beberapa file CBR sekaligus?**
+1. Klik **Tambah file** dan pilih 2–3 file CBR (atau seret semuanya sekaligus ke alat).
+2. Atur format output ke **CBZ** untuk semua file.
+3. Klik **Konversi**. Semua file diproses secara paralel di browser Anda.
+4. Unduh setiap CBZ yang telah dikonversi secara individual.
 
-Ya. Pilih semua file CBR dalam pemilih file dan alat memproses masing-masing. File diunduh satu per satu — kamu mendapatkan satu `.cbz` per `.cbr`. Jika setelah itu ingin menggabungkannya menjadi satu volume, gunakan alat gabung CBZ.
+Untuk koleksi yang lebih besar, ulangi dalam batch 3 file. Jika Anda perlu mengonversi puluhan atau ratusan file sekaligus, alat menangani proses yang sama untuk setiap set — tanpa akun, tanpa antrean, tanpa batas per hari.
 
-**Apakah kualitas gambar berubah selama konversi?**
+## Privasi: Mengapa Tidak Mengunggah Itu Penting
 
-Tidak. Gambar di dalam arsip tidak dikodekan ulang. Konversi mengekstrak file JPG atau PNG asli dan menempatkannya ke dalam ZIP baru tanpa menyentuh data gambar. CBZ yang dikonversi identik secara piksel dengan CBR aslinya.
+Banyak alat konversi file online bekerja dengan mengunggah file Anda ke server cloud, memprosesnya di sana, dan mengirimkannya kembali. File Anda melewati server pihak ketiga — berpotensi disimpan, dicatat, atau digunakan dengan cara yang tidak dapat Anda kendalikan.
 
-**Bagaimana jika file CBR dilindungi kata sandi?**
+Alat web BiblioFuse berbeda. Ia menggunakan WebAssembly untuk menjalankan logika konversi langsung di browser Anda. File CBR Anda tidak pernah meninggalkan perangkat Anda. Ini terutama penting untuk komik yang telah Anda beli atau pindai sendiri — tidak ada risiko privasi atau hak cipta.
 
-File CBR yang dilindungi kata sandi tidak dapat dibuka tanpa kata sandi. Alat web tidak dapat melewati perlindungan kata sandi. Jika CBR kamu dienkripsi, buka kuncinya terlebih dahulu — SmartDecrypt dapat membuka kunci secara batch file CBZ, PDF, dan ZIP yang dilindungi kata sandi di iPhone dan Mac.
+## Membaca File CBZ di iPhone Setelah Konversi
 
-**File CBR saya terkonversi tapi CBZ tidak bisa dibuka — apa yang terjadi?**
+Setelah mengonversi file CBR Anda ke CBZ, mengimpornya ke [BiblioFuse](https://bibliofuse.com/id/) di iPhone sangatlah mudah:
 
-Beberapa file berlabel `.cbr` sebenarnya adalah arsip ZIP (diganti nama dari `.cbz` atau dibuat oleh perangkat lunak yang menggunakan ZIP secara default). Jika konversi menghasilkan file yang tidak dapat dibuka di pembaca kamu, coba ganti nama `.cbr` asli menjadi `.zip` dan periksa apakah itu sudah arsip ZIP. Mungkin kamu hanya perlu mengganti namanya langsung menjadi `.cbz` tanpa konversi.
+1. Transfer file CBZ ke iPhone Anda melalui Transfer Wi-Fi, AirDrop, atau aplikasi File.
+2. BiblioFuse mengimpornya ke pustaka lokal Anda.
+3. Buka dan baca segera — CBZ adalah format native BiblioFuse.
 
-**Apakah ada batas ukuran file?**
+Catatan: BiblioFuse di iPhone juga membaca file CBR secara native, sehingga konversi tidak benar-benar diperlukan untuk membaca di iOS. Namun untuk berbagi dengan orang lain, menggunakan alat lain, atau membangun arsip jangka panjang, CBZ adalah format yang lebih baik.
 
-Tidak ada batas yang dipaksakan server karena tidak ada file yang pernah diunggah. Batas praktisnya adalah RAM perangkat yang tersedia — file CBR yang sangat besar (1 GB+) dapat membuat browser berjalan lambat di perangkat dengan memori terbatas. Untuk sebagian besar file komik di bawah 200 MB, konversi selesai dalam beberapa detik.
+## Pertanyaan yang Sering Diajukan
 
-## Kesimpulan
+### Apa perbedaan antara CBR dan CBZ?
 
-CBR dan CBZ terlihat serupa tetapi menggunakan format arsip yang berbeda di baliknya. Mengonversi CBR ke CBZ berarti mengarsipkan ulang gambar komik dari RAR ke format ZIP — [alat online BiblioFuse](https://bibliofuse.com/id/webapp/) melakukan ini sepenuhnya di browser tanpa perlu mengunggah file. Kualitas gambar terjaga, prosesnya bersifat privat, dan file CBZ yang dihasilkan berfungsi di pembaca mana pun yang mendukung format terbuka berbasis ZIP.
+File CBR menggunakan kompresi RAR; file CBZ menggunakan kompresi ZIP. Keduanya berisi jenis gambar halaman komik yang sama (JPEG, PNG, atau WebP). Satu-satunya perbedaan adalah format arsip yang membungkus gambar. Mengonversi CBR ke CBZ mengemas ulang gambar ke dalam arsip ZIP tanpa mengubahnya.
+
+### Bisakah saya mengonversi CBR ke CBZ tanpa menginstal software?
+
+Ya. Alat web BiblioFuse berjalan sepenuhnya di browser Anda menggunakan WebAssembly. Buka di Chrome, Firefox, Safari, atau Edge — tanpa unduhan, tanpa instalasi, tanpa akun yang diperlukan. Jatuhkan file CBR Anda dan unduh CBZ yang telah dikonversi.
+
+### Apakah mengonversi CBR ke CBZ mengurangi kualitas gambar?
+
+Tidak. Konversi CBR ke CBZ adalah pertukaran kontainer tanpa kehilangan data. File gambar di dalam arsip diekstrak dan dikemas ulang tanpa pengkodean ulang. Kualitasnya identik dengan aslinya. Ukuran file mungkin berubah beberapa persen karena perbedaan kompresi ZIP vs RAR, tetapi karya seni tidak berubah.
+
+### Apakah aman mengonversi file CBR menggunakan alat online?
+
+Dengan alat web BiblioFuse, ya. Alat ini menggunakan WebAssembly untuk memproses file secara lokal di browser Anda — file CBR Anda tidak pernah diunggah ke server. Alat konversi yang memerlukan unggahan file kurang privat. Jika privasi penting bagi Anda, gunakan alat berbasis browser tanpa unggahan.
+
+### Berapa lama waktu yang dibutuhkan untuk mengonversi CBR ke CBZ?
+
+Biasanya beberapa detik per file, tergantung pada ukuran file dan prosesor perangkat Anda. File CBR 100 MB dikonversi dalam waktu kurang dari 5 detik di sebagian besar laptop modern. Alat memproses file secara paralel di browser Anda, sehingga konversi batch efisien.
+
+### Mengapa BiblioFuse di iPhone membaca CBR tanpa konversi?
+
+BiblioFuse di iOS menyertakan dekompresor RAR bawaan, sehingga membuka file CBR secara native tanpa langkah konversi apa pun. Konversi berguna saat Anda menginginkan CBZ untuk kompatibilitas dengan alat lain, pembaca online, atau pengarsipan jangka panjang — bukan karena BiblioFuse memerlukannya.
+
+## Solusi Lengkap untuk Konversi Arsip Komik
+
+Mengonversi CBR ke CBZ secara online adalah langkah cepat menuju pustaka komik yang lebih kompatibel, terbuka, dan tahan lama. [Alat Web BiblioFuse](https://bibliofuse.com/id/webapp/) menjadikannya gratis, privat, dan instan — buka di browser mana pun, tidak perlu mendaftar. Masukkan file CBR Anda, dapatkan CBZ kembali, dan impor ke pembaca mana pun yang mendukung standar berbasis ZIP.
