@@ -865,6 +865,16 @@
           "excerpt": "SmartDecrypt PDF ZIP CBZ prend désormais en charge 11 langues — anglais, espagnol, français, néerlandais, portugais, russe, chinois, japonais, coréen, indonésien et malais. Déverrouillez vos relevés bancaires et PDFs d'assurance avec des mots de passe difficiles à retenir dans votre propre langue.",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ ajoute 6 nouvelles langues : français, néerlandais, russe, japonais, coréen et malais. Déverrouillez des PDFs bancaires avec des mots de passe basés sur des modèles sur iPhone, Mac et Windows."
         },
+        "reading-ebooks-offline-iphone": {
+          "title": "Lire des ebooks hors ligne sur iPhone: aucun cloud requis",
+          "excerpt": "BiblioFuse stocke les fichiers EPUB, CBZ, CBR, PDF, ZIP, RAR et TXT localement sur votre iPhone — lisez toute votre bibliothèque en avion, dans le métro ou partout sans connexion. Aucun abonnement cloud ni compte nécessaire. iOS 17 ou ultérieur.",
+          "seoDescription": "BiblioFuse lit EPUB, CBZ, CBR, PDF, ZIP, RAR et TXT localement sur iPhone. Sans cloud, sans compte, sans signal. Guide complet de lecture hors ligne pour iOS 17+."
+        },
+        "convert-cbr-to-cbz-online": {
+          "title": "Convertir CBR en CBZ en ligne: gratuit, sans logiciel",
+          "excerpt": "L'outil web BiblioFuse convertit les archives CBR (RAR) en format CBZ (ZIP) directement dans votre navigateur — sans téléchargement, sans installation, totalement privé. Déposez votre fichier et téléchargez le CBZ converti en quelques secondes.",
+          "seoDescription": "Convertissez CBR en CBZ en ligne dans votre navigateur avec BiblioFuse Web Tool. Pas de téléchargement, pas de logiciel. Basé sur WebAssembly, gratuit pour les fichiers individuels."
+        },
         "airdrop-books-to-iphone": {
           "title": "Comment utiliser AirDrop pour transférer des comics et ebooks sur iPhone",
           "excerpt": "AirDrop permet d'envoyer des fichiers CBZ, CBR, EPUB et PDF depuis votre Mac ou un autre iPhone directement dans BiblioFuse en quelques secondes, sans câble ni application tierce. Activez AirDrop sur les deux appareils, sélectionnez vos fichiers et choisissez BiblioFuse.",

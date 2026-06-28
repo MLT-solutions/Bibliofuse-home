@@ -865,6 +865,16 @@
           "excerpt": "SmartDecrypt PDF ZIP CBZ 现已支持 11 种语言——英语、西班牙语、法语、荷兰语、葡萄牙语、俄语、中文、日语、韩语、印度尼西亚语和马来语。用您自己的语言解锁银行账单和保险 PDF，再也不用烦恼难以记忆的密码规律。",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ 新增 6 种语言：法语、荷兰语、俄语、日语、韩语和马来语。在 iPhone、Mac 和 Windows 上用模式密码解锁银行 PDF。"
         },
+        "reading-ebooks-offline-iphone": {
+          "title": "在iPhone上完全离线阅读电子书：无需云服务",
+          "excerpt": "BiblioFuse将EPUB、CBZ、CBR、PDF、ZIP、RAR和TXT文件本地存储在您的iPhone上——可在飞机、地铁或任何没有信号的地方阅读整个书库。无需云订阅或账户，支持iOS 17及更高版本。",
+          "seoDescription": "BiblioFuse在iPhone上本地读取EPUB、CBZ、CBR、PDF、ZIP、RAR和TXT文件。无云、无账户、无信号要求。iOS 17+完整离线阅读指南。"
+        },
+        "convert-cbr-to-cbz-online": {
+          "title": "在线将CBR转换为CBZ：免费，无需软件",
+          "excerpt": "BiblioFuse网页工具可在浏览器中直接将CBR（基于RAR）漫画档案转换为CBZ（基于ZIP）格式——无需上传、无需安装，完全保护隐私。拖入文件，几秒内下载转换后的CBZ。",
+          "seoDescription": "使用BiblioFuse Web Tool在浏览器中在线将CBR转换为CBZ。无需上传文件，无需软件。WebAssembly驱动，单文件免费使用。"
+        },
         "airdrop-books-to-iphone": {
           "title": "如何使用 AirDrop 将漫画和电子书传输到 iPhone",
           "excerpt": "AirDrop 可在几秒内将 CBZ、CBR、EPUB 和 PDF 文件从 Mac 或其他 iPhone 直接传输到 BiblioFuse，无需数据线或额外应用。在两台设备上启用 AirDrop，选择文件，在共享菜单中选择 BiblioFuse 即可。",

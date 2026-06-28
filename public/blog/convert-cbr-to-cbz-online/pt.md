@@ -1,96 +1,113 @@
-# Como Converter CBR para CBZ Online: Grátis, Sem Software
+# Como converter CBR para CBZ online: grátis, sem instalar software
 
-Você tem uma pasta cheia de arquivos CBR — quadrinhos no formato de arquivo RAR — e um leitor que só abre CBZ. Ou está arquivando sua coleção e quer um formato aberto e consistente. A solução parece simples: renomear a extensão de `.cbr` para `.cbz`. Mas isso não funciona.
+A ferramenta web BiblioFuse converte arquivos CBR de quadrinhos para o formato CBZ diretamente no seu navegador — sem software para instalar, sem arquivos enviados para um servidor. Arquivos CBR são arquivos RAR; arquivos CBZ são arquivos ZIP contendo as mesmas imagens dos quadrinhos. O BiblioFuse reembala as imagens em um ZIP padrão com a extensão CBZ, mantendo toda a qualidade das suas artes. Abra a ferramenta em qualquer navegador, arraste seu arquivo CBR e baixe o CBZ convertido em segundos.
 
-Arquivos CBR são arquivos RAR. Arquivos CBZ são arquivos ZIP. Eles usam formatos de compressão diferentes por baixo — você não pode simplesmente renomear a extensão. Você precisa extrair as imagens do RAR e recomprimí-las como ZIP. [O conversor online do BiblioFuse](https://bibliofuse.com/pt/webapp/) faz isso no seu navegador, sem que nenhum arquivo seja enviado para qualquer servidor.
+Sua coleção de quadrinhos tem dezenas — talvez centenas — de arquivos .cbr. O CBR foi o formato original de arquivo para quadrinhos, construído sobre o padrão de compressão RAR. O CBZ surgiu depois, usando o formato ZIP mais aberto. Hoje, a maioria dos leitores de quadrinhos modernos, bibliotecas e ferramentas de arquivamento preferem o CBZ. Converter CBR para CBZ online, sem instalar programas ou enviar arquivos para servidores de terceiros, é a forma mais limpa de padronizar sua coleção.
 
-## CBR vs CBZ: Qual É a Diferença Real?
+## Qual é a diferença entre CBR e CBZ?
 
-Tanto CBR quanto CBZ são formatos de arquivo para quadrinhos. Ambos contêm uma sequência de arquivos de imagem (geralmente JPG ou PNG), que o leitor exibe em ordem para simular a leitura de um quadrinho.
+Tanto CBR quanto CBZ são formatos de arquivo para quadrinhos. Eles funcionam com o mesmo princípio: compactar uma pasta de imagens de páginas sequenciais (geralmente JPEG ou PNG) em um único arquivo. A única diferença real é o algoritmo de compressão:
 
-A diferença está na compressão subjacente:
+- **CBR** — usa compressão RAR. RAR é um formato proprietário desenvolvido por Eugene Roshal. Os primeiros digitalizadores de quadrinhos o preferiam pelas boas taxas de compressão. A extensão `.cbr` significa "Comic Book RAR".
+- **CBZ** — usa compressão ZIP. ZIP é um padrão aberto, amplamente suportado por todos os sistemas operacionais sem software adicional. A extensão `.cbz` significa "Comic Book ZIP".
 
-| Formato | Tipo de arquivo | Padrão aberto? |
-|---------|----------------|---------------|
-| CBZ | ZIP | Sim |
-| CBR | RAR | Não (proprietário) |
+As imagens dentro de ambos os formatos são idênticas. Converter CBR para CBZ não altera as artes, a ordem das páginas ou a qualidade — apenas reembala os mesmos arquivos em um contêiner diferente.
 
-RAR é um formato proprietário desenvolvido por Eugene Roshal. Abrir arquivos RAR requer o software oficial WinRAR ou uma biblioteca que implemente a especificação RAR — e essa biblioteca precisa ser incluída explicitamente em cada leitor. Muitos leitores modernos, incluindo ferramentas baseadas em navegador, suportam apenas CBZ baseado em ZIP porque a especificação ZIP é aberta e amplamente implementada.
+## Por que converter CBR para CBZ online?
 
-CBZ se tornou o padrão de fato para quadrinhos digitais em parte porque ZIP é livre de royalties e multiplataforma. Cada sistema operacional pode abrir um arquivo ZIP sem software de terceiros. Se você estiver arquivando uma coleção a longo prazo, CBZ é a escolha mais segura.
+**Compatibilidade:** CBZ é suportado nativamente por praticamente todos os leitores de quadrinhos, aplicativos de biblioteca e ferramentas de arquivamento. Alguns aplicativos — especialmente no iOS, Web e plataformas mais novas — suportam apenas arquivos baseados em ZIP. CBZ funciona em todo lugar; CBR às vezes não.
 
-## Como Funciona a Conversão
+**Padrões abertos:** ZIP é um formato completamente aberto. RAR tem uma especificação proprietária e requer bibliotecas de decodificação específicas. Para arquivamento de longo prazo, CBZ é a escolha mais preparada para o futuro.
 
-Converter CBR para CBZ envolve três etapas:
+**Gerenciamento de arquivos:** macOS e Windows podem abrir arquivos ZIP nativamente sem nenhum aplicativo extra. Você pode navegar pelo conteúdo de um CBZ no Finder ou Explorador de Arquivos renomeando a extensão para `.zip`. Arquivos CBR requerem WinRAR ou um descompressor dedicado.
 
-1. Extrair as imagens do CBR (arquivo RAR)
-2. Colocar essas mesmas imagens em um novo arquivo ZIP
-3. Renomear a extensão `.zip` para `.cbz`
+**Compatibilidade web:** A [Ferramenta Web BiblioFuse](https://bibliofuse.com/pt/webapp/) funciona exclusivamente com arquivos baseados em ZIP (CBZ). Converter seus arquivos CBR primeiro os torna compatíveis com o conjunto completo de ferramentas online para quadrinhos.
 
-A ferramenta online do BiblioFuse executa as três etapas no seu navegador usando WebAssembly. Seus arquivos nunca são enviados — a extração, a recompressão e o download ocorrem localmente no seu dispositivo.
+## Como converter CBR para CBZ online — passo a passo
 
-## Passo a Passo: Converter CBR para CBZ Online
+A ferramenta web BiblioFuse processa arquivos completamente no seu navegador usando WebAssembly. Nada é enviado para um servidor e nenhum dado pessoal é transmitido. Seus arquivos permanecem no seu computador durante todo o processo.
 
-1. Acesse [bibliofuse.com/pt/webapp/](https://bibliofuse.com/pt/webapp/)
-2. Abra a ferramenta **Converter** na barra de ferramentas.
-3. Clique em **Selecionar arquivos** ou arraste seus arquivos `.cbr` para a zona de soltar.
-4. A ferramenta extrai as imagens, cria um novo arquivo ZIP e baixa o arquivo `.cbz` automaticamente.
+### Passo 1: Abra a ferramenta web BiblioFuse
 
-Para conversão em lote — vários arquivos CBR de uma vez — selecione todos os seus arquivos no seletor de arquivos. Cada arquivo é processado e baixado separadamente. Não há limite de fila imposto pela ferramenta, embora arquivos muito grandes (400+ MB) possam demorar mais dependendo da capacidade de processamento do seu dispositivo.
+Acesse [bibliofuse.com/pt/webapp/](https://bibliofuse.com/pt/webapp/) no Chrome, Firefox, Safari ou Edge. Nenhuma conta ou login é necessário.
 
-## Por Que a Conversão no Navegador É Privada
+### Passo 2: Importe seu arquivo CBR
 
-A conversão é executada inteiramente no seu navegador via WebAssembly (WASM). É a mesma tecnologia que permite que jogos e editores de vídeo funcionem em um navegador sem plugin — trabalho computacionalmente intensivo executado nativamente no sandbox do navegador.
+Clique em **Adicionar arquivos** ou arraste seu arquivo CBR diretamente para a zona de soltura da ferramenta. A ferramenta aceita arquivos CBR (baseados em RAR) e extrai as imagens contidas neles.
 
-Quando você usa a [ferramenta web do BiblioFuse](https://bibliofuse.com/pt/webapp/):
+Para o nível gratuito, você pode processar até 3 arquivos por lote. Solte os três de uma vez para convertê-los em uma única operação.
 
-- Seu arquivo CBR é lido na memória do navegador
-- As imagens são extraídas na memória
-- Um novo arquivo ZIP é construído na memória
-- O ZIP é baixado para o seu dispositivo
+### Passo 3: Selecione o formato de saída
 
-Em nenhum momento qualquer dado sai da sua máquina. Não há chamadas ao servidor durante a conversão. Você pode verificar isso abrindo o inspetor de rede do seu navegador (F12 → Rede): as únicas solicitações são o carregamento inicial da página. Nenhum upload aparece.
+Escolha **CBZ** como formato de saída nas opções da ferramenta. Isso instrui o conversor a reembalar as imagens extraídas como um arquivo ZIP com a extensão `.cbz`.
 
-Isso importa se sua coleção de quadrinhos inclui conteúdo licenciado, scans pessoais ou qualquer outra coisa que você prefira não enviar para um servidor de terceiros.
+### Passo 4: Converter e baixar
 
-## Converter Arquivos CBR no iPhone ou iPad
+Clique em **Converter** (ou o botão de ação equivalente). A ferramenta processa o arquivo no seu navegador — sem upload, sem esperar resposta do servidor. Quando o processamento é concluído, um link de download aparece. Clique nele para salvar o arquivo CBZ convertido no seu Mac ou PC.
 
-A ferramenta web do BiblioFuse também funciona em navegadores móveis. Acesse [bibliofuse.com/pt/webapp/](https://bibliofuse.com/pt/webapp/) no Safari ou Chrome no iPhone ou iPad.
+O arquivo baixado é um arquivo CBZ padrão contendo as mesmas imagens do seu CBR original, reembaladas no formato ZIP.
 
-No iOS, toque em **Selecionar arquivos** e navegue até seus arquivos CBR no app Arquivos, iCloud Drive, ou um provedor de armazenamento em nuvem conectado. Os arquivos CBZ baixados vão para sua pasta de Downloads, de onde você pode compartilhá-los diretamente no [BiblioFuse](https://bibliofuse.com/pt/) para leitura.
+## Qualidade e tamanho do arquivo após a conversão
 
-## Após a Conversão: Lendo Arquivos CBZ no BiblioFuse
+A conversão de CBR para CBZ é sem perdas para as imagens. As imagens das páginas dos quadrinhos (arquivos JPEG, PNG ou WebP dentro do arquivo) são extraídas do contêiner RAR e colocadas diretamente no contêiner ZIP sem nenhuma recodificação ou alteração de compressão.
 
-O BiblioFuse no iPhone lê arquivos CBZ nativamente — nenhuma conversão adicional é necessária. Para ler seus arquivos convertidos:
+O tamanho do arquivo pode diferir ligeiramente entre o CBR original e o CBZ resultante. ZIP e RAR usam algoritmos de compressão diferentes, então as mesmas imagens comprimidas com ZIP podem produzir um arquivo ligeiramente maior ou menor que o original RAR. A diferença é tipicamente menor que 5%, e a qualidade da imagem é idêntica.
 
-1. Converta CBR para CBZ usando a ferramenta web no seu Mac ou iPhone.
-2. Transfira os arquivos CBZ para o iPhone via Transferência Wi-Fi ou AirDrop.
-3. Importe para o BiblioFuse selecionando os arquivos no app Arquivos e compartilhando para o app.
+Se você também quiser reduzir o tamanho do arquivo CBZ convertido, a ferramenta web BiblioFuse oferece uma etapa de compressão opcional — ela pode redimensionar e recomprimir as imagens dentro do arquivo para reduzir seu tamanho.
 
-Observação: o BiblioFuse também lê arquivos CBR diretamente no iPhone — ele lida com a extração RAR nativamente. O principal motivo para converter é se você está arquivando arquivos, compartilhando-os com outras pessoas ou usando outra ferramenta no seu fluxo de trabalho que exija especificamente CBZ.
+## Converter vários arquivos CBR para CBZ em lote
 
-## Perguntas Frequentes
+Para usuários gratuitos, a ferramenta web BiblioFuse processa até 3 arquivos por lote. Solte vários arquivos CBR de uma vez para convertê-los em uma única passagem:
 
-**Posso converter vários arquivos CBR de uma vez?**
+1. Clique em **Adicionar arquivos** e selecione 2 a 3 arquivos CBR (ou arraste todos de uma vez para a ferramenta).
+2. Defina o formato de saída como **CBZ** para todos os arquivos.
+3. Clique em **Converter**. Todos os arquivos são processados em paralelo no seu navegador.
+4. Baixe cada CBZ convertido individualmente.
 
-Sim. Selecione todos os seus arquivos CBR no seletor de arquivos e a ferramenta processa cada um. Os arquivos são baixados individualmente — você recebe um `.cbz` por `.cbr`. Se depois quiser mesclá-los em um único volume, use a ferramenta de mesclar CBZ.
+Para coleções maiores, repita em lotes de 3. Se você precisar converter dezenas ou centenas de arquivos de uma vez, a ferramenta lida com o mesmo processo para cada conjunto — sem conta, sem fila, sem limite diário.
 
-**A qualidade da imagem muda durante a conversão?**
+## Privacidade: por que não fazer upload importa
 
-Não. As imagens dentro do arquivo não são recodificadas. A conversão extrai os arquivos JPG ou PNG originais e os coloca em um novo ZIP sem tocar nos dados de imagem. O CBZ convertido é idêntico ao CBR original no nível de pixel.
+Muitas ferramentas de conversão de arquivos online funcionam enviando seu arquivo para um servidor na nuvem, processando lá e enviando de volta. Seu arquivo passa por um servidor de terceiros — potencialmente armazenado, registrado ou usado de maneiras que você não pode controlar.
 
-**E se o arquivo CBR estiver protegido por senha?**
+A ferramenta web BiblioFuse é diferente. Ela usa WebAssembly para executar a lógica de conversão diretamente no seu navegador. Seu arquivo CBR nunca sai do seu computador. Isso é especialmente importante para quadrinhos que você comprou ou digitalizou — sem exposição de privacidade ou direitos autorais.
 
-Arquivos CBR protegidos por senha não podem ser abertos sem a senha. A ferramenta web não consegue contornar a proteção por senha. Se seu CBR estiver criptografado, desbloqueie-o primeiro — o SmartDecrypt pode desbloquear em lote arquivos CBZ, PDF e ZIP protegidos por senha no iPhone e Mac.
+## Ler arquivos CBZ no iPhone após a conversão
 
-**Meu arquivo CBR foi convertido mas o CBZ não abre — o que aconteceu?**
+Depois de converter seus arquivos CBR para CBZ, importá-los para o [BiblioFuse](https://bibliofuse.com/pt/) no iPhone é simples:
 
-Alguns arquivos rotulados como `.cbr` são na verdade arquivos ZIP (renomeados de `.cbz` ou criados por software que usa ZIP por padrão). Se a conversão produzir um arquivo que seu leitor não consiga abrir, tente renomear o `.cbr` original para `.zip` e verificar se já é um arquivo ZIP. Talvez você só precise renomeá-lo diretamente para `.cbz` sem conversão.
+1. Transfira os arquivos CBZ para o seu iPhone via Transferência Wi-Fi, AirDrop ou o app Arquivos.
+2. O BiblioFuse os importa para sua biblioteca local.
+3. Abra e leia imediatamente — CBZ é o formato nativo do BiblioFuse.
 
-**Existe um limite de tamanho de arquivo?**
+Observação: o BiblioFuse no iPhone também lê arquivos CBR nativamente, então a conversão não é estritamente necessária para leitura no iOS. Mas para compartilhar com outros, usar outras ferramentas ou construir um arquivo de longo prazo, CBZ é o melhor formato.
 
-Não existe limite imposto pelo servidor porque nenhum arquivo é enviado. O limite prático é a RAM disponível no seu dispositivo — arquivos CBR muito grandes (1 GB+) podem fazer o navegador funcionar lentamente em dispositivos com memória limitada. Para a maioria dos arquivos de quadrinhos com menos de 200 MB, a conversão é concluída em alguns segundos.
+## Perguntas frequentes
 
-## Conclusão
+### Qual é a diferença entre CBR e CBZ?
 
-CBR e CBZ parecem similares, mas usam formatos de arquivo diferentes por baixo. Converter CBR para CBZ significa rearquivar as imagens dos quadrinhos do formato RAR para ZIP — a [ferramenta online do BiblioFuse](https://bibliofuse.com/pt/webapp/) faz isso inteiramente no seu navegador sem precisar enviar arquivos. A qualidade da imagem é preservada, o processo é privado e o arquivo CBZ resultante funciona em qualquer leitor que suporte o formato aberto baseado em ZIP.
+Arquivos CBR usam compressão RAR; arquivos CBZ usam compressão ZIP. Ambos contêm o mesmo tipo de imagens de páginas de quadrinhos (JPEG, PNG ou WebP). A única diferença é o formato de arquivo que envolve as imagens. Converter CBR para CBZ reembala as imagens em um arquivo ZIP sem alterá-las.
+
+### Posso converter CBR para CBZ sem instalar software?
+
+Sim. A ferramenta web BiblioFuse funciona completamente no seu navegador usando WebAssembly. Abra no Chrome, Firefox, Safari ou Edge — sem download, sem instalação, sem conta necessária. Solte seu arquivo CBR e baixe o CBZ convertido.
+
+### A conversão de CBR para CBZ reduz a qualidade da imagem?
+
+Não. A conversão de CBR para CBZ é uma troca de contêiner sem perdas. Os arquivos de imagem dentro do arquivo são extraídos e reembalados sem recodificação. A qualidade é idêntica ao original. O tamanho do arquivo pode mudar alguns poucos por cento devido às diferenças na compressão ZIP versus RAR, mas as artes ficam inalteradas.
+
+### É seguro converter arquivos CBR usando uma ferramenta online?
+
+Com a ferramenta web BiblioFuse, sim. A ferramenta usa WebAssembly para processar arquivos localmente no seu navegador — seu arquivo CBR nunca é enviado para um servidor. Ferramentas de conversão que exigem upload de arquivo são menos privadas. Se a privacidade importa para você, use uma ferramenta baseada no navegador sem upload.
+
+### Quanto tempo leva a conversão de CBR para CBZ?
+
+Normalmente alguns segundos por arquivo, dependendo do tamanho do arquivo e do processador do seu dispositivo. Um arquivo CBR de 100 MB é convertido em menos de 5 segundos na maioria dos laptops modernos. A ferramenta processa arquivos em paralelo no seu navegador, então conversões em lote são eficientes.
+
+### Por que o BiblioFuse no iPhone lê CBR sem conversão?
+
+O BiblioFuse no iOS inclui um descompressor RAR integrado, então abre arquivos CBR nativamente sem nenhuma etapa de conversão. A conversão é útil quando você quer CBZ para compatibilidade com outras ferramentas, leitores online ou arquivamento de longo prazo — não porque o BiblioFuse exige.
+
+## Solução completa para conversão de arquivos de quadrinhos
+
+Converter CBR para CBZ online é um passo rápido em direção a uma biblioteca de quadrinhos mais compatível, aberta e preparada para o futuro. A [Ferramenta Web BiblioFuse](https://bibliofuse.com/pt/webapp/) torna isso gratuito, privado e instantâneo — abra em qualquer navegador, sem necessidade de cadastro. Solte seus arquivos CBR, receba CBZ de volta e importe-os em qualquer leitor que suporte o padrão baseado em ZIP.

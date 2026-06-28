@@ -1,108 +1,102 @@
 # Ebooks Volledig Offline Lezen op iPhone: Geen Cloud Vereist
 
-Je stapt in een vliegtuig voor een vlucht van 14 uur. In je handbagage zit je iPhone met 300 ebooks, 40 mangadelen en meerdere stripverhalen. De Wi-Fi van de luchtvaartmaatschappij is betaald en traag. Je opent [BiblioFuse](https://bibliofuse.com/nl/) — elk boek opent direct, van de exacte pagina waar je was gebleven, zonder één netwerkaanvraag.
+BiblioFuse slaat al je EPUB-, CBZ-, CBR-, PDF-, ZIP-, RAR- en TXT-bestanden lokaal op op je iPhone, zodat je je volledige bibliotheek offline kunt lezen — in het vliegtuig, ondergronds of overal zonder signaal — zonder cloudabonnement of account. De app werkt op iOS 17 of later, en je boeken blijven op het apparaat staan totdat je ze zelf verwijdert. Ebooks offline lezen op de iPhone met BiblioFuse vereist na de eerste bestandsoverdracht geen internetverbinding meer.
 
-Dit is geen speciale instelling — dit is het standaardgedrag. BiblioFuse slaat alles lokaal op je apparaat op en synchroniseert voortgang via iCloud op de achtergrond wanneer er een verbinding beschikbaar is. Geen cloudaccount nodig om te lezen. Geen streaming. Geen laadschermen.
+Je kent het gevoel: je stapt in een lange vlucht, pakt je lees-app en ziet een laadanimatie of een foutmelding "bibliotheek niet beschikbaar". Apps die afhankelijk zijn van de cloud behandelen offline toegang als bijzaak — soms als een betaalde functie. BiblioFuse keert die logica om. Je bibliotheek woont op je iPhone en lezen werkt precies hetzelfde of je nu volledige LTE-dekking hebt of helemaal geen signaal.
 
-## Waarom Afhankelijkheid van de Cloud Problematisch Is
+## Waarom de Meeste Leesapps Falen Zonder Verbinding
 
-De meeste leesapps zijn ontworpen met een abonnement in gedachten. De cloud is geen functie — het is een vergrendelingsmechanisme. Je boeken leven op een server, je voortgang staat op de server, en de app werkt niet meer als het bedrijf sluit, de voorwaarden wijzigt, of je abonnement verloopt.
+Populaire ebook-apps zoals Kindle of Apple Books laten je specifieke titels downloaden voor offline lezen, maar alleen binnen hun eigen ecosystemen. Bestanden in derde-partijformaten, of bestanden van buiten hun winkels, kunnen vaak helemaal niet worden geïmporteerd. Apps die zijn gebouwd rond streaming vanuit een clouddienst weigeren gewoonweg bestanden te openen zonder verbinding.
 
-Zelfs Apple Books gebruikt een cloud-eerst model. Boeken die je via Apple "bezit" zijn beveiligd met DRM en iCloud-downloads — ze zijn pas echt lokaal als ze expliciet zijn gedownload, en ze zijn gekoppeld aan je Apple ID.
+[BiblioFuse](https://bibliofuse.com/nl/) is lokaal-eerst. Bestanden die je naar de app overbrengt, worden opgeslagen in de eigen container op je apparaat. Tijdens het lezen wordt er geen server gecontacteerd — de app opent het bestand gewoon vanuit de lokale opslag. Zo hoort offline ebooks lezen op de iPhone te werken.
 
-Voor mensen met grote DRM-vrije bibliotheken — CBZ-striparcheven, EPUB-bestanden van uitgevers, PDF-leerboeken — past dit model niet. Jij bezit de bestanden. Je wilt ze lezen zonder ze aan een dienst over te dragen.
+## Hoe Zet Je Bestanden Over voor Offline Lezen?
 
-## Hoe BiblioFuse Je Bibliotheek Lokaal Opslaat
+Voordat je offline kunt lezen, moeten de bestanden op het apparaat staan. BiblioFuse ondersteunt vier overdrachtsmethoden, die allemaal resulteren in lokaal opgeslagen bestanden die zonder internet werken:
 
-BiblioFuse is van ontwerp offline-first. Wanneer je een bestand aan de app toevoegt — via Wi-Fi Transfer, AirDrop, de Bestanden-app of een andere methode — wordt het gekopieerd naar de lokale sandbox van de app op je iPhone. Het originele bestand op je Mac of elders blijft daar staan; BiblioFuse heeft zijn eigen kopie op het apparaat.
+### Wi-Fi-overdracht (Snelst voor grote hoeveelheden)
 
-Dit betekent:
+BiblioFuse heeft een ingebouwde Wi-Fi-overdachtsfunctie onder het tabblad Extra. Schakel het in en er verschijnt een lokaal webadres — open dat adres in een browser op je Mac of pc en sleep je bestanden direct naar het venster. Bestanden komen via je lokale Wi-Fi-netwerk in BiblioFuse terecht, zonder kabel of cloudaccount. Internettoegang is niet vereist — alleen lokaal Wi-Fi.
 
-- Je volledige bibliotheek is op elk moment toegankelijk, ongeacht de netwerkstatus
-- Leesvoortgang wordt lokaal bijgehouden en gesynchroniseerd met iCloud wanneer er verbinding is
-- Er is geen account vereist om de app te gebruiken — niet eens een Apple ID (hoewel iCloud-sync er wel een gebruikt als ingeschakeld)
-- De app werkt identiek in een vliegtuig, in een metrotunnel, of in een landelijk gebied zonder signaal
+Een bibliotheek van 100 bestanden importeert zo doorgaans in minder dan twee minuten.
 
-BiblioFuse ondersteunt EPUB, CBZ, CBR, ZIP, PDF en gewone afbeeldingsarchieven. Elk formaat werkt offline zonder gedragsverandering.
+### AirDrop (Alleen Apple-apparaten)
 
-## Ebooks en Comics Op Je iPhone Laden
+Selecteer op Mac of iPad je strip- en ebook-bestanden in Finder of Bestanden. Klik met de rechtermuisknop → Deel → AirDrop → selecteer je iPhone. Overgebrachte bestanden komen terecht in Bestanden → Downloads op je iPhone. Open de app Bestanden, selecteer de overgebrachte bestanden, tik op Deel en kies BiblioFuse. Ze worden direct geïmporteerd in de lokale opslag.
 
-Er zijn drie manieren om bestanden in BiblioFuse te laden zonder afhankelijk te zijn van een clouddienst.
+### App Bestanden en Deelmenu
 
-### Methode 1: Wi-Fi Transfer (Lokaal Netwerk, Geen Internet)
+Als je bestanden via e-mailbijlage, USB-kabel of directe download binnenkomen, verschijnen ze in de app Bestanden. Selecteer ze, tik op Deel en stuur ze naar BiblioFuse. Met één tik worden ze geïmporteerd in de lokale opslag.
 
-Wi-Fi Transfer is BiblioFuse's ingebouwde tool voor het verplaatsen van bestanden van een Mac of pc naar iPhone via een lokaal Wi-Fi-netwerk. Er wordt geen gebruik gemaakt van internet.
+### Importeren vanuit iCloud Drive
 
-1. Open [BiblioFuse](https://bibliofuse.com/nl/) op je iPhone en tik op **Tools** onderaan.
-2. Tik op **Wi-Fi Transfer** en noteer het weergegeven IP-adres.
-3. Open op je Mac een browser en ga naar dat IP-adres.
-4. Sleep je EPUB-, CBZ- of PDF-bestanden naar het uploadgebied in de browser.
+Bestanden in iCloud Drive zijn technisch gezien nog steeds opgeslagen in de cloud. Om ze echt offline beschikbaar te maken, open je de app Bestanden, navigeer je naar het bestand en deel je het met BiblioFuse. BiblioFuse maakt een lokale kopie in zijn eigen container. Vanaf dat moment is het bestand volledig offline beschikbaar — het origineel in iCloud is niet langer nodig.
 
-Bestanden worden overgedragen met de snelheid van het lokale netwerk — doorgaans 30–80 MB/s — en komen direct in je bibliotheek terecht. Geen tussenpersoon-app, geen iCloud, geen internetverbinding nodig.
+## Wat "Lokaal Opgeslagen" in de Praktijk Betekent
 
-### Methode 2: AirDrop
+Wanneer BiblioFuse een bestand importeert, kopieert het dat bestand naar zijn eigen beveiligde opslag op je iPhone. De oorspronkelijke bron — iCloud Drive, AirDrop, Wi-Fi-overdracht — wordt irrelevant. Het bestand woont nu op je apparaat.
 
-Voor het snel verplaatsen van een paar bestanden van een ander Apple-apparaat:
+**Opslagruimte:** De beschikbare opslag van je iPhone bepaalt de omvang van de bibliotheek. Een typische EPUB-roman is 2–10 MB. Een CBZ-stripboekaflevering gemiddeld 30–150 MB afhankelijk van de beeldresolutie. Een complete manga-reeks in CBZ kan 1–5 GB gebruiken. Een iPhone van 128 GB kan gemakkelijk 600–800 strip-afleveringen bevatten naast andere apps.
 
-1. Deel de bestanden via AirDrop vanaf Mac, iPad of een andere iPhone.
-2. Accepteer de overdracht op je iPhone.
-3. Vind de bestanden in **Bestanden → Downloads**.
-4. Selecteer ze, tik op Delen en kies BiblioFuse.
+**Bestanden verwijderen:** Een titel verwijderen uit BiblioFuse maakt lokale opslag vrij. Het heeft geen invloed op kopieën in iCloud Drive of op je Mac. Lokale bibliotheek en cloudopslag worden onafhankelijk beheerd.
 
-AirDrop gebruikt peer-to-peer Wi-Fi. Het werkt tussen je eigen Apple-apparaten ongeacht of een van beide mobiele data of internettoegang heeft.
+**Leesvoortgang synchroniseren:** BiblioFuse synchroniseert bladwijzers, leespositie, tags en beoordelingen via iCloud wanneer er een verbinding beschikbaar is. Synchronisatie verloopt automatisch zodra je opnieuw verbinding maakt — je verliest je plek niet, zelfs na weken offline. De bestanden zelf hoeven niet in iCloud te staan voor deze synchronisatie.
 
-### Methode 3: Bestanden-app via USB
+## Alles Wat Offline Werkt
 
-Verbind je iPhone met je Mac via USB en gebruik Finder (macOS Catalina of later):
+Zodra bestanden zijn geïmporteerd, werkt elke kernfunctie zonder internet:
 
-1. Selecteer je iPhone in Finder.
-2. Klik op **Bestanden**.
-3. Sleep bestanden rechtstreeks naar het bestandsgebied van BiblioFuse.
+- **Alle leesmodi** — pagina voor pagina, doorlopend scrollen, dubbele pagina-indeling — werken volledig offline.
+- **Alle formaten** — EPUB, CBZ, CBR, PDF, ZIP, RAR, TXT — openen identiek, al dan niet verbonden.
+- **OCR** — het Vision-framework van Apple draait op het apparaat; tekstextractie uit stripvensters en gescande pagina's werkt zonder verbinding.
+- **Bladwijzers en markeringen** — lokaal opgeslagen, gesynchroniseerd naar andere apparaten wanneer je opnieuw verbinding maakt.
+- **Tags en beoordelingen** — lokaal opgeslagen in de database van BiblioFuse.
+- **Bibliotheekzoekfunctie** — doorzoekt je lokale metadata; geen netwerkaanvraag.
 
-USB-overdrachten zijn de snelste en meest betrouwbare methode voor grote bibliotheken — honderden delen worden in minuten overgedragen.
+De enige functie die netwerktoegang vereist, is **Mac Home Library Streaming**, waarmee content van je Mac via lokaal Wi-Fi wordt gestreamd. Al het andere is volledig lokaal.
 
-## Wat Gebeurt Er met Leesvoortgang Offline?
+## Is Offline Lezen Trager?
 
-BiblioFuse schrijft leesvoortgang naar een lokale database op je apparaat. Elke pagina, bladwijzer en annotatie wordt eerst lokaal opgeslagen. Wanneer er een internetverbinding beschikbaar komt, worden wijzigingen automatisch gesynchroniseerd met iCloud.
+Nee — het is sneller. Toegang tot lokale opslag is aanzienlijk sneller dan streamen of downloaden vanuit een cloud. Wanneer BiblioFuse een CBZ-bestand van 200 MB opent dat op je apparaat is opgeslagen, leest het rechtstreeks vanuit de flashopslag. Pagina's laden direct, ongeacht de bestandsgrootte.
 
-Als je op iPhone offline leest en daarna BiblioFuse op iPad of Mac opent, staat je voortgang te wachten. De synchronisatie gebruikt de meest recente tijdstempel — geen conflicten of gegevensverlies, ook niet als beide apparaten tegelijkertijd offline waren.
+Apps die afhankelijk zijn van de cloud laden vaak progressief — de eerste pagina's zijn beschikbaar terwijl latere pagina's worden gedownload. BiblioFuse doet dit niet. Een manga-volume van 400 pagina's opent met dezelfde snelheid als een aflevering van 10 pagina's.
 
-Je hoeft niets te doen om deze synchronisatie te starten. BiblioFuse regelt het op de achtergrond zodra je apparaat verbinding maakt.
+## Praktische Offline Leesscenario's
 
-## Ondersteunde Offline Formaten
+**Lange vluchten:** Zet je leeslijst de avond van tevoren over. Tijdens de vlucht is je bibliotheek volledig beschikbaar — geen vliegtuig-Wi-Fi nodig.
 
-BiblioFuse leest de volgende formaten volledig offline:
+**Trein- en metroritten:** Ondergrondse trajecten zonder signaal zijn geen probleem. BiblioFuse-pagina's bevriezen niet en hoeven niet opnieuw te worden geladen als je uit een tunnel komt.
 
-| Formaat | Veelgebruikt voor |
-|---------|------------------|
-| EPUB | Ebooks, romans, non-fictie |
-| CBZ | Striparcheven (op ZIP gebaseerd) |
-| CBR | Striparcheven (op RAR gebaseerd) |
-| ZIP | Afbeeldingsarchieven |
-| PDF | Leerboeken, kunstboeken, gescande documenten |
+**Reizen zonder dataroaming:** Als je in het buitenland bent zonder lokale SIM, blijft je bibliotheek volledig toegankelijk. Alleen functies die internet vereisen (zoals app-updates) worden beïnvloed.
 
-Alle formaten openen even snel offline als online. Geen gedegradeerde modus, geen watermerken en geen advertenties.
+**Afgelegen locaties:** Wandeltochten, landelijke gebieden, boten — de opslag van je telefoon is de enige vereiste.
 
 ## Veelgestelde Vragen
 
-**Heb ik een Apple-account nodig om BiblioFuse offline te gebruiken?**
+### Heeft BiblioFuse Wi-Fi nodig om ebooks op de iPhone te lezen?
 
-Nee. BiblioFuse werkt volledig zonder Apple ID. Als je iCloud niet gebruikt, wordt voortgang lokaal opgeslagen en niet gesynchroniseerd met andere apparaten, maar alles anders — lezen, bladwijzers, bibliotheekheer — werkt prima.
+Nee. Zodra bestanden zijn geïmporteerd in BiblioFuse, leest de app ze vanuit de lokale opslag op je iPhone. Er is geen internet of Wi-Fi nodig om bestanden in je bibliotheek te openen, te lezen of er doorheen te navigeren. Wi-Fi wordt alleen gebruikt tijdens de eerste bestandsoverdracht als je de Wi-Fi-overdrachtsmethode gebruikt.
 
-**Kan ik DRM-vrije ebooks die ik buiten Apple heb gekocht lezen?**
+### Kan ik EPUB-bestanden offline lezen op de iPhone zonder account?
 
-Ja. BiblioFuse leest elk DRM-vrij EPUB-bestand, ongeacht de herkomst. Ebooks van uitgevers, Project Gutenberg of winkels die DRM-vrije EPUB-downloads aanbieden, werken allemaal. BiblioFuse kan geen DRM-beveiligde bestanden openen.
+Ja. BiblioFuse vereist geen account, inloggegevens of abonnement. Zet je EPUB-bestanden eenmalig over en je kunt ze voor onbepaalde tijd lezen, volledig offline. Er zijn geen accountvereisten voor lezen.
 
-**Nemen de bestanden opslagruimte in beslag?**
+### Hoe zet ik ebooks over naar de iPhone zonder internet?
 
-Ja — omdat bestanden lokaal worden opgeslagen, gebruiken ze apparaatopslag. Een typische EPUB-roman is 1–5 MB. Een CBZ-mangadeel van hoge kwaliteit is 80–200 MB. Voor een paar tientallen tot een paar honderd boeken is opslag geen praktisch probleem op moderne iPhones.
+Gebruik de Wi-Fi-overdracht van BiblioFuse (van Mac of pc naar iPhone via lokaal Wi-Fi — geen internetverbinding vereist, alleen een gedeeld lokaal netwerk) of AirDrop (helemaal geen netwerk nodig, peer-to-peer). Beide methoden importeren bestanden direct in de lokale bibliotheek van BiblioFuse zonder tussenkomst van een clouddienst.
 
-**Werkt de app in Vliegtuigmodus?**
+### Welke formaten kan ik offline lezen op de iPhone met BiblioFuse?
 
-Volledig. Schakel Vliegtuigmodus in en open BiblioFuse — je volledige bibliotheek is er, voortgangsregistratie werkt en bladwijzers werken normaal. iCloud-synchronisatie pauzeert gewoon totdat je weer verbinding maakt.
+BiblioFuse leest EPUB-, PDF-, CBZ-, CBR-, ZIP-, RAR- en TXT-bestanden offline. Alle formaten worden identiek behandeld — er is geen formaatspecifieke beperking op offline toegang.
 
-## De Kern van de Zaak
+### Verlies ik mijn leesvoortgang als ik weken offline ben?
 
-BiblioFuse is gebouwd op het principe dat je leesleven niet afhankelijk zou moeten zijn van de beschikbaarheid van een server. Je bestanden zijn lokaal. Je voortgang is eerst lokaal. Je leeservaring is identiek, of je nu op een glasvezelverbinding zit of op 10.000 meter hoogte vliegt.
+Nee. Leesvoortgang wordt opgeslagen in de lokale opslag van je iPhone terwijl je leest. Wanneer je opnieuw verbinding maakt met internet, synchroniseert BiblioFuse die voortgang automatisch naar iCloud en je andere apparaten. Je verliest je plek niet.
 
-Als je een bibliotheek van ebooks of strips hebt en ze op iPhone wilt lezen zonder cloudafhankelijkheid, is [BiblioFuse](https://bibliofuse.com/nl/) de directe weg. Laad je bestanden eenmalig via Wi-Fi, AirDrop of USB — en lees overal.
+### Hoeveel iPhone-opslag heb ik nodig voor een offline bibliotheek?
+
+Dat hangt af van je bestanden. EPUB-romans zijn gemiddeld 5 MB elk — 1.000 romans passen in ongeveer 5 GB. CBZ-strip-afleveringen zijn gemiddeld 60–100 MB — 100 afleveringen gebruiken 6–10 GB. Een complete manga-reeks van 20 delen kan 2–4 GB zijn in CBZ. Als vuistregel: reken 1 GB per 10–15 strip-volumes.
+
+## Jouw Bibliotheek, Overal Waar Je Gaat
+
+Ebooks offline lezen op de iPhone zou geen omweg of premiumabonnement mogen vereisen. Met [BiblioFuse](https://bibliofuse.com/nl/) is je bibliotheek volledig draagbaar — in vliegtuigen, treinen, ondergronds of op plekken zonder signaal. Zet je bestanden eenmalig over en de app regelt al het andere volledig op het apparaat. Geen account. Geen cloud. Geen verbinding vereist.
