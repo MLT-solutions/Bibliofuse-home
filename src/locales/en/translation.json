@@ -195,6 +195,36 @@
         "update": "Update"
       },
       "posts": {
+        "organize-ebooks-by-content-not-metadata": {
+          "title": "Organize Ebooks by Content, Not Metadata or ISBN",
+          "excerpt": "Most ebook managers require manual metadata entry or ISBN lookup. GrepTag Reader reads the actual text inside your EPUB and TXT files and auto-tags every book based on what is written inside — no metadata entry required.",
+          "seoDescription": "Organize your ebook library automatically without entering metadata or ISBN numbers. GrepTag Reader reads EPUB and TXT content and generates tags from what is actually written inside."
+        },
+        "find-duplicate-comics-different-names": {
+          "title": "How to Find Duplicate Comics With Different Filenames",
+          "excerpt": "Standard duplicate finders miss comics with different names — like comic_E1-5 and ComiX_E1-10. Archive Duplicate Scanner compares actual page images using perceptual hashing to catch duplicates that filename tools miss entirely.",
+          "seoDescription": "Find duplicate CBZ and CBR comic files even when they have different filenames. Archive Duplicate Scanner uses perceptual hashing to compare page images, not filenames."
+        },
+        "open-bank-statement-pdf-iphone": {
+          "title": "How to Open Password-Protected Bank Statement PDFs on iPhone",
+          "excerpt": "Bank PDFs are locked with your NRIC, date of birth, or account number — passwords you know but never remember. SmartDecrypt saves the pattern once per bank and unlocks every future statement automatically.",
+          "seoDescription": "Open password-protected bank statement PDFs on iPhone without typing the password every time. SmartDecrypt matches filenames to saved patterns and unlocks automatically."
+        },
+        "contentcue-11-languages": {
+          "title": "ContentCue Now Available in 11 Languages",
+          "excerpt": "ContentCue now supports 11 languages — English, Spanish, French, Dutch, Portuguese, Russian, Chinese, Japanese, Korean, Indonesian, and Malay. Read web articles without losing your place to ads, and always know which parts of the page are editorial vs. paid placements.",
+          "seoDescription": "ContentCue adds French, Dutch, Russian, Japanese, Korean, and Malay. Highlight ads while reading web articles — colored borders mark paid content so you always know what you are reading."
+        },
+        "archive-duplicate-scanner-11-languages": {
+          "title": "Archive Duplicate Scanner Now Available in 11 Languages",
+          "excerpt": "Archive Duplicate Scanner now supports 11 languages — English, Spanish, French, Dutch, Portuguese, Russian, Chinese, Japanese, Korean, Indonesian, and Malay. Find duplicate comics even when they have different names like comic_E1-5 and ComiX_E1-10 — visual page comparison catches what filename tools miss.",
+          "seoDescription": "Archive Duplicate Scanner adds French, Dutch, Russian, Japanese, Korean, and Malay. Find duplicate CBZ files by comparing page images, not just filenames, on Mac and Windows."
+        },
+        "smartdecrypt-11-languages": {
+          "title": "SmartDecrypt Now Available in 11 Languages",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ now supports 11 languages — English, Spanish, French, Dutch, Portuguese, Russian, Chinese, Japanese, Korean, Indonesian, and Malay. Unlock bank statements and insurance PDFs with hard-to-remember password patterns in your own language.",
+          "seoDescription": "SmartDecrypt PDF ZIP CBZ adds 6 new languages: French, Dutch, Russian, Japanese, Korean, and Malay. Unlock bank PDFs with pattern-based passwords on iPhone, Mac, and Windows."
+        },
         "airdrop-books-to-iphone": {
           "title": "How to Use AirDrop to Transfer Comics and Ebooks to iPhone",
           "excerpt": "AirDrop lets you send CBZ, CBR, EPUB, and PDF files from Mac or another iPhone directly into BiblioFuse in seconds — no cables, no apps, no account needed. Enable AirDrop on both devices, select your files, and tap BiblioFuse in the share sheet.",
@@ -1134,10 +1164,10 @@
       "hero": {
         "badge": "iOS · macOS · Windows",
         "title": "Search. Tag. Own your library.",
-        "desc": "BiblioFuse GrepTag Reader lets you search inside any EPUB or TXT file — type a word and find every book that contains it. Tag by genre, sync over Wi-Fi, and keep every file private on your own device.",
+        "desc": "GrepTag Reader searches the actual text inside your EPUB and TXT files — no manual metadata, no ISBN entry. Type a keyword and every matching book surfaces instantly. Tag by genre, filter with AND logic, sync over Wi-Fi.",
         "appStoreCta": "Download on App Store",
         "msStoreCta": "Get it from Microsoft",
-        "trust1": "Search all your ebooks, free · no limit",
+        "trust1": "No manual metadata or ISBN needed",
         "trust2": "No server, no uploads",
         "trust3": "CJK text supported",
         "comingSoon": "Available now on the App Store",
@@ -1146,19 +1176,19 @@
       "grep": {
         "eyebrow": "Search Inside Books",
         "title": "Search the full text of every book.",
-        "desc": "Type any keyword and GrepTag reads directly from your EPUB and TXT files — no index to build, no upload required. Save searches as named profiles with AND, OR, and NOT logic and re-run them as your library grows.",
+        "desc": "Type any keyword and GrepTag reads directly from your EPUB and TXT files — no index to build, no upload, no manual tagging. Save searches as named profiles with AND, OR, and NOT logic and re-run them as your library grows. New books are tagged automatically on import.",
         "bullet1": "Boolean logic — \"Sci-Fi AND dragons NOT romance\"",
         "bullet2": "Save up to 2 profiles free · Pro unlocks unlimited",
-        "bullet3": "Auto-run on import tags new books automatically",
+        "bullet3": "Auto-run on import — new books tagged automatically, no metadata entry needed",
         "badge": "Always free · unlimited scans"
       },
       "tags": {
         "eyebrow": "Tags & Discovery",
         "title": "Tag by genre. Filter instantly.",
-        "desc": "Apply tags from scan results in one tap, or tag books manually. Filter your library by one or more tags to see every book in a genre. Five tags are free — Pro unlocks unlimited.",
+        "desc": "Tags come from what is actually inside the book — not from title, author, or ISBN you have to type manually. Apply tags from scan results in one tap. Filter your library using AND logic to find books that match ALL your selected tags at once.",
         "bullet1": "5 tags free · Pro unlocks unlimited",
-        "bullet2": "AND / OR multi-tag filtering",
-        "bullet3": "One-tap tagging from scan results"
+        "bullet2": "Multi-select tags with AND logic — finds books matching ALL chosen tags",
+        "bullet3": "One-tap tagging straight from search results — no forms to fill"
       },
       "sync": {
         "eyebrow": "Wi-Fi Sync",
@@ -1214,7 +1244,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — Search Inside Every EPUB & eBook | iPhone, iPad, Mac, Windows",
-        "desc": "Search inside every EPUB and TXT file on iPhone, iPad, Mac, and Windows — find any word across your entire ebook library. Tag by genre, sync over Wi-Fi. No cloud index, no uploads. Free to try."
+        "desc": "Search inside every EPUB and TXT file on iPhone, iPad, Mac, and Windows. No manual metadata or ISBN entry needed — GrepTag scans book content and auto-tags your library by genre. Free to try."
       },
       "faq": [
         {
@@ -1276,7 +1306,7 @@
       "hero": {
         "badge": "Mac & Windows",
         "title": "Find duplicates. Even after renaming.",
-        "desc": "Archive Duplicate Scanner opens your comic archives and compares the images inside — not just filenames or file sizes. A duplicate is a duplicate, no matter how many times it has been renamed or recompressed.",
+        "desc": "Archive Duplicate Scanner opens your comic archives and compares the actual images inside — not just filenames or file sizes. Even if one file is called comic_E1-5 and another ComiX_E1-10, if the first few pages match, it flags them as duplicates.",
         "trust1": "No cloud upload",
         "trust2": "Safe Trash deletion",
         "trust3": "7-day free trial",
@@ -1286,8 +1316,8 @@
       "scanning": {
         "eyebrow": "Deep Archive Scanning",
         "title": "Opens archives and compares pages inside",
-        "desc": "Most duplicate finders compare file names or sizes. Archive Duplicate Scanner opens each CBZ, CBR, ZIP, or RAR file, extracts thumbnails from the actual pages inside, and compares them using perceptual hashing. Two archives with completely different names and file sizes are still caught if their content matches.",
-        "bullet1": "Supports CBZ, CBR, ZIP, and RAR comic archives",
+        "desc": "Most duplicate finders only compare file names or sizes. Archive Duplicate Scanner opens each CBZ, CBR, ZIP, or RAR file, extracts thumbnails from the actual pages, and compares them. A file named comic_E1-5 and another named ComiX_E1-10 — different name, different episode range — are still caught if their opening pages match.",
+        "bullet1": "Opens archives and compares page images — not just filenames",
         "bullet2": "Configurable similarity threshold — 90% recommended",
         "bullet3": "Hash cache makes repeat scans near-instant",
         "badge": "Works with manga, manhwa, and manhua"
@@ -1371,7 +1401,7 @@
     "smartdecryptPage": {
       "seo": {
         "title": "SmartDecrypt — Auto-Unlock Password-Protected PDFs and Archives",
-        "desc": "SmartDecrypt unlocks PDF, ZIP, and 7z files using saved filename patterns. Drop the file — it finds the right password automatically. Free for one file at a time, $9.99 Pro unlocks batch processing on iOS and macOS."
+        "desc": "SmartDecrypt auto-unlocks PDF, ZIP, and 7z files using saved filename patterns — perfect for bank statements, insurance docs, and invoices that always use the same password format. Drop the file, it finds the right password automatically."
       },
       "hero": {
         "badge": "iOS · macOS · Windows",
@@ -1386,10 +1416,10 @@
       "patterns": {
         "eyebrow": "Pattern-Based Auto-Unlock",
         "title": "Save once, unlock forever",
-        "desc": "Create a saved profile for any recurring file — match by filename pattern, keyword, or extension. The next time that file arrives, SmartDecrypt picks the right password automatically. No hunting, no guessing.",
-        "bullet1": "Match by filename pattern, keyword, or file extension",
-        "bullet2": "Multiple profiles for different file sources (bank, payroll, invoices)",
-        "bullet3": "Auto password cycling tries all matching profiles in sequence",
+        "desc": "Bank statements, insurance PDFs, and payroll slips always arrive with the same password pattern — your NRIC, date of birth, or account number. Save a profile once and SmartDecrypt picks the right password automatically every time that file type arrives.",
+        "bullet1": "Match by filename pattern — e.g. \"DBS_Statement_*\" → your NRIC password",
+        "bullet2": "Separate profiles for bank statements, insurance PDFs, invoices, payroll slips",
+        "bullet3": "Auto password cycling — tries all matching profiles in sequence",
         "badge": "Designed for recurring files with repeatable passwords"
       },
       "formats": {
@@ -1454,13 +1484,13 @@
     "contentcuePage": {
       "seo": {
         "title": "ContentCue — Reading Browser That Never Loses Your Place",
-        "desc": "ContentCue is a mobile browser for iPhone and iPad that automatically saves your scroll position when ads interrupt your reading. One tap resumes exactly where you left off. Not an ad blocker — all ads still load."
+        "desc": "ContentCue is a reading browser for iPhone and iPad that saves your scroll position when ads interrupt you, and draws colored borders around ads so you always know what is content and what is sponsored. One tap resumes where you left off."
       },
       "hero": {
         "badge": "iPhone & iPad",
         "title": "Read. Get interrupted. Resume exactly where you left off.",
-        "desc": "ContentCue saves your scroll position when a popup or redirect breaks your reading flow. One tap brings you back to the exact spot, on any site — Webtoons, Tapas, manga aggregators, blogs.",
-        "trust1": "Not an ad blocker",
+        "desc": "ContentCue saves your exact scroll position when a popup or redirect breaks your reading flow. Colored borders mark which parts of the page are ads — so you can tell real article content from sponsored blocks at a glance. One tap brings you back to where you were.",
+        "trust1": "Ads highlighted, not blocked",
         "trust2": "No browsing data collected",
         "trust3": "Works with any website",
         "appStore": "Download on App Store"

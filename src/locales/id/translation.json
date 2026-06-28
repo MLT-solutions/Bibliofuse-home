@@ -825,6 +825,36 @@
     },
     "blog": {
       "posts": {
+        "organize-ebooks-by-content-not-metadata": {
+          "title": "Atur Ebook berdasarkan Konten, Bukan Metadata atau ISBN",
+          "excerpt": "Kebanyakan pengelola ebook membutuhkan entri metadata manual atau pencarian ISBN. GrepTag Reader membaca teks sebenarnya di dalam file EPUB dan TXT Anda dan secara otomatis menandai setiap buku berdasarkan apa yang ditulis di dalamnya.",
+          "seoDescription": "Atur perpustakaan ebook Anda secara otomatis tanpa memasukkan metadata atau ISBN. GrepTag Reader membaca konten EPUB dan TXT dan menghasilkan tag berdasarkan apa yang ditulis di dalamnya."
+        },
+        "find-duplicate-comics-different-names": {
+          "title": "Cara Menemukan Komik Duplikat dengan Nama File Berbeda",
+          "excerpt": "Pencari duplikat standar melewatkan komik dengan nama berbeda — seperti comic_E1-5 dan ComiX_E1-10. Archive Duplicate Scanner membandingkan gambar halaman nyata menggunakan perceptual hashing untuk menangkap duplikat yang terlewat.",
+          "seoDescription": "Temukan file CBZ dan CBR komik duplikat meskipun memiliki nama file berbeda. Archive Duplicate Scanner menggunakan perceptual hashing untuk membandingkan gambar halaman."
+        },
+        "open-bank-statement-pdf-iphone": {
+          "title": "Cara Membuka PDF Laporan Bank Berpassword di iPhone",
+          "excerpt": "PDF bank terkunci dengan NIK atau tanggal lahir Anda — kata sandi yang Anda tahu tapi tidak ingat. SmartDecrypt menyimpan pola sekali per bank dan membuka kunci setiap laporan berikutnya secara otomatis.",
+          "seoDescription": "Buka PDF laporan bank berpassword di iPhone tanpa mengetik kata sandi setiap kali. SmartDecrypt mencocokkan nama file dengan pola tersimpan dan membuka kunci secara otomatis."
+        },
+        "contentcue-11-languages": {
+          "title": "ContentCue Kini Tersedia dalam 11 Bahasa",
+          "excerpt": "ContentCue kini mendukung 11 bahasa. Baca artikel web tanpa kehilangan tempat Anda karena iklan, dan selalu tahu bagian mana halaman yang editorial dan mana yang merupakan penempatan berbayar.",
+          "seoDescription": "ContentCue menambahkan bahasa Prancis, Belanda, Rusia, Jepang, Korea, dan Melayu. Sorot iklan saat membaca artikel web — border berwarna menandai konten berbayar."
+        },
+        "archive-duplicate-scanner-11-languages": {
+          "title": "Archive Duplicate Scanner Kini Tersedia dalam 11 Bahasa",
+          "excerpt": "Archive Duplicate Scanner kini mendukung 11 bahasa. Temukan komik duplikat bahkan saat memiliki nama berbeda seperti comic_E1-5 dan ComiX_E1-10 — perbandingan halaman visual menangkap apa yang terlewatkan oleh alat nama file.",
+          "seoDescription": "Archive Duplicate Scanner menambahkan bahasa Prancis, Belanda, Rusia, Jepang, Korea, dan Melayu. Temukan file CBZ duplikat dengan membandingkan gambar halaman, bukan hanya nama file."
+        },
+        "smartdecrypt-11-languages": {
+          "title": "SmartDecrypt Kini Tersedia dalam 11 Bahasa",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ kini mendukung 11 bahasa — Inggris, Spanyol, Prancis, Belanda, Portugis, Rusia, Cina, Jepang, Korea, Indonesia, dan Melayu. Buka kunci laporan bank dan PDF asuransi dengan pola kata sandi yang sulit diingat dalam bahasa Anda sendiri.",
+          "seoDescription": "SmartDecrypt PDF ZIP CBZ menambahkan 6 bahasa baru: Prancis, Belanda, Rusia, Jepang, Korea, dan Melayu. Buka kunci PDF bank dengan kata sandi berbasis pola di iPhone, Mac, dan Windows."
+        },
         "airdrop-books-to-iphone": {
           "title": "Cara Menggunakan AirDrop untuk Mentransfer Komik dan Ebook ke iPhone",
           "excerpt": "AirDrop memungkinkan pengiriman file CBZ, CBR, EPUB, dan PDF dari Mac atau iPhone lain langsung ke BiblioFuse dalam hitungan detik, tanpa kabel atau aplikasi tambahan. Aktifkan AirDrop di kedua perangkat, pilih file, dan ketuk BiblioFuse di lembar berbagi.",
@@ -1139,9 +1169,9 @@
       "hero": {
         "badge": "iOS · macOS · Windows",
         "title": "Cari. Beri Tag. Kuasai Perpustakaanmu.",
-        "desc": "BiblioFuse GrepTag Reader memungkinkan Anda mencari di dalam file EPUB atau TXT mana pun — ketik kata dan temukan setiap buku yang mengandungnya. Tandai berdasarkan genre, sinkronkan melalui Wi-Fi, dan simpan semua file secara pribadi di perangkat Anda sendiri.",
+        "desc": "GrepTag Reader mencari teks nyata di dalam file EPUB dan TXT Anda — tanpa metadata manual, tanpa input ISBN. Ketik kata kunci dan setiap buku yang cocok langsung muncul. Tandai berdasarkan genre, filter dengan logika AND, sinkronisasi melalui Wi-Fi.",
         "appStoreCta": "Download on App Store",
-        "trust1": "Cari semua ebook Anda, gratis tanpa batas",
+        "trust1": "Tidak perlu metadata atau ISBN manual",
         "trust2": "Tanpa server, tanpa unggahan",
         "trust3": "Teks CJK didukung",
         "comingSoon": "Kini tersedia di App Store",
@@ -1151,19 +1181,19 @@
       "grep": {
         "eyebrow": "Cari di Dalam Buku",
         "title": "Cari teks lengkap setiap buku.",
-        "desc": "Ketik kata kunci apa pun dan GrepTag membaca langsung dari file EPUB dan TXT Anda——tanpa indeks yang perlu dibuat, tanpa unggahan. Simpan pencarian sebagai profil bernama dengan logika AND, OR, dan NOT dan jalankan ulang seiring perpustakaan Anda berkembang.",
+        "desc": "Ketik kata kunci apa pun dan GrepTag membaca langsung dari file EPUB dan TXT Anda — tidak perlu membuat indeks, tidak ada unggahan, tidak ada penandaan manual. Simpan pencarian sebagai profil bernama dengan logika AND, OR, dan NOT, dan jalankan ulang seiring perpustakaan Anda berkembang. Buku baru ditandai secara otomatis saat diimpor.",
         "bullet1": "Logika Boolean——\"Sci-Fi AND naga NOT romansa\"",
         "bullet2": "Hingga 2 profil gratis · Pro membuka tak terbatas",
-        "bullet3": "Jalankan otomatis saat impor menandai buku baru",
+        "bullet3": "Jalankan otomatis saat impor — buku baru ditandai otomatis, tidak perlu input metadata",
         "badge": "Selalu gratis · pemindaian tak terbatas"
       },
       "tags": {
         "eyebrow": "Tag dan Penemuan",
         "title": "Tag berdasarkan genre. Filter seketika.",
-        "desc": "Terapkan tag dari hasil pemindaian dengan satu ketukan, atau tandai buku secara manual. Filter perpustakaan Anda berdasarkan satu atau lebih tag untuk melihat semua buku dalam genre. Lima tag gratis——Pro membuka tak terbatas.",
+        "desc": "Tag berasal dari apa yang sebenarnya ada di dalam buku — bukan dari judul, penulis, atau ISBN yang harus Anda ketik secara manual. Terapkan tag dari hasil pemindaian dengan satu ketukan. Filter perpustakaan menggunakan logika AND untuk menemukan buku yang cocok dengan SEMUA tag yang dipilih sekaligus.",
         "bullet1": "5 tag gratis · Pro membuka tak terbatas",
-        "bullet2": "Filter multi-tag AND / OR",
-        "bullet3": "Penandaan satu ketukan dari hasil pemindaian"
+        "bullet2": "Pilih banyak tag dengan logika AND — temukan buku yang cocok dengan SEMUA tag yang dipilih",
+        "bullet3": "Penandaan satu ketuk langsung dari hasil pencarian — tanpa isian formulir"
       },
       "sync": {
         "eyebrow": "Sinkronisasi Wi-Fi",
@@ -1219,7 +1249,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — Cari di Dalam Semua EPUB dan eBook | iPhone, iPad, Mac, Windows",
-        "desc": "Cari di dalam setiap file EPUB dan TXT di iPhone, iPad, Mac, dan Windows — temukan kata apapun di seluruh perpustakaan ebook Anda. Tandai berdasarkan genre, sinkronkan via Wi-Fi. Tanpa cloud. Gratis."
+        "desc": "Cari di setiap file EPUB dan TXT di iPhone, iPad, Mac, dan Windows. Tidak perlu memasukkan metadata atau ISBN secara manual — GrepTag memindai konten buku dan menandai perpustakaan Anda secara otomatis berdasarkan genre. Gratis untuk dicoba."
       },
       "faq": [
         {
@@ -1281,7 +1311,7 @@
       "hero": {
         "badge": "Mac & Windows",
         "title": "Find duplicates. Even after renaming.",
-        "desc": "Archive Duplicate Scanner opens your comic archives and compares the images inside — not just filenames or file sizes. A duplicate is a duplicate, no matter how many times it has been renamed or recompressed.",
+        "desc": "Archive Duplicate Scanner membuka arsip komik Anda dan membandingkan gambar sebenarnya di dalamnya — bukan hanya nama file atau ukurannya. Bahkan jika satu file bernama comic_E1-5 dan yang lain ComiX_E1-10, jika beberapa halaman pertama cocok, keduanya ditandai sebagai duplikat.",
         "trust1": "No cloud upload",
         "trust2": "Safe Trash deletion",
         "trust3": "7-day free trial",
@@ -1291,8 +1321,8 @@
       "scanning": {
         "eyebrow": "Deep Archive Scanning",
         "title": "Opens archives and compares pages inside",
-        "desc": "Most duplicate finders compare file names or sizes. Archive Duplicate Scanner opens each CBZ, CBR, ZIP, or RAR file, extracts thumbnails from the actual pages inside, and compares them using perceptual hashing. Two archives with completely different names and file sizes are still caught if their content matches.",
-        "bullet1": "Supports CBZ, CBR, ZIP, and RAR comic archives",
+        "desc": "Kebanyakan pencari duplikat hanya membandingkan nama atau ukuran file. Archive Duplicate Scanner membuka setiap file CBZ, CBR, ZIP, atau RAR, mengekstrak thumbnail dari halaman sebenarnya, dan membandingkannya. File bernama comic_E1-5 dan ComiX_E1-10 — nama berbeda, rentang episode berbeda — tetap terdeteksi jika halaman pembukanya cocok.",
+        "bullet1": "Membuka arsip dan membandingkan gambar halaman — bukan sekadar nama file",
         "bullet2": "Configurable similarity threshold — 90% recommended",
         "bullet3": "Hash cache makes repeat scans near-instant",
         "badge": "Works with manga, manhwa, and manhua"
@@ -1376,7 +1406,7 @@
     "smartdecryptPage": {
       "seo": {
         "title": "SmartDecrypt — Auto-Unlock Password-Protected PDFs and Archives",
-        "desc": "SmartDecrypt unlocks PDF, ZIP, and 7z files using saved filename patterns. Drop the file — it finds the right password automatically. Free for one file at a time, $9.99 Pro unlocks batch processing on iOS and macOS."
+        "desc": "SmartDecrypt membuka kunci file PDF, ZIP, dan 7z secara otomatis menggunakan pola nama file yang tersimpan — sempurna untuk laporan bank, dokumen asuransi, dan faktur yang selalu menggunakan format kata sandi yang sama."
       },
       "hero": {
         "badge": "iOS · macOS · Windows",
@@ -1391,9 +1421,9 @@
       "patterns": {
         "eyebrow": "Pattern-Based Auto-Unlock",
         "title": "Save once, unlock forever",
-        "desc": "Create a saved profile for any recurring file — match by filename pattern, keyword, or extension. The next time that file arrives, SmartDecrypt picks the right password automatically. No hunting, no guessing.",
-        "bullet1": "Match by filename pattern, keyword, or file extension",
-        "bullet2": "Multiple profiles for different file sources (bank, payroll, invoices)",
+        "desc": "Laporan bank, PDF asuransi, dan slip gaji selalu datang dengan pola kata sandi yang sama — NIK, tanggal lahir, atau nomor rekening Anda. Simpan profil sekali dan SmartDecrypt akan memilih kata sandi yang tepat secara otomatis setiap kali jenis file tersebut tiba.",
+        "bullet1": "Cocokkan berdasarkan pola nama file — mis. \"DBS_Statement_*\" → kata sandi NIK Anda",
+        "bullet2": "Profil terpisah untuk laporan bank, PDF asuransi, faktur, dan slip gaji",
         "bullet3": "Auto password cycling tries all matching profiles in sequence",
         "badge": "Designed for recurring files with repeatable passwords"
       },
@@ -1459,13 +1489,13 @@
     "contentcuePage": {
       "seo": {
         "title": "ContentCue — Reading Browser That Never Loses Your Place",
-        "desc": "ContentCue is a mobile browser for iPhone and iPad that automatically saves your scroll position when ads interrupt your reading. One tap resumes exactly where you left off. Not an ad blocker — all ads still load."
+        "desc": "ContentCue adalah browser membaca untuk iPhone dan iPad yang menyimpan posisi gulir saat iklan mengganggu Anda, dan menggambar batas berwarna di sekitar iklan agar Anda selalu tahu mana konten dan mana yang disponsori."
       },
       "hero": {
         "badge": "iPhone & iPad",
         "title": "Read. Get interrupted. Resume exactly where you left off.",
-        "desc": "ContentCue saves your scroll position when a popup or redirect breaks your reading flow. One tap brings you back to the exact spot, on any site — Webtoons, Tapas, manga aggregators, blogs.",
-        "trust1": "Not an ad blocker",
+        "desc": "ContentCue menyimpan posisi gulir tepat Anda saat popup atau pengalihan memutus alur baca Anda. Batas berwarna menandai bagian halaman mana yang merupakan iklan — sehingga Anda bisa membedakan konten artikel asli dari blok sponsor sekilas pandang.",
+        "trust1": "Iklan disorot, tidak diblokir",
         "trust2": "No browsing data collected",
         "trust3": "Works with any website",
         "appStore": "Download on App Store"

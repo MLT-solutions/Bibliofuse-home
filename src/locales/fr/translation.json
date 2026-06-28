@@ -825,6 +825,36 @@
     },
     "blog": {
       "posts": {
+        "organize-ebooks-by-content-not-metadata": {
+          "title": "Organisez vos Ebooks par Contenu, pas par Métadonnées ni ISBN",
+          "excerpt": "La plupart des gestionnaires d'ebooks nécessitent une saisie manuelle de métadonnées ou une recherche ISBN. GrepTag Reader lit le texte réel à l'intérieur de vos fichiers EPUB et TXT et étiquette automatiquement chaque livre selon ce qui est écrit dedans.",
+          "seoDescription": "Organisez votre bibliothèque d'ebooks automatiquement sans saisir de métadonnées ni ISBN. GrepTag Reader lit le contenu EPUB et TXT et génère des tags à partir de ce qui est écrit dedans."
+        },
+        "find-duplicate-comics-different-names": {
+          "title": "Comment Trouver des Comics Dupliqués avec des Noms de Fichiers Différents",
+          "excerpt": "Les outils de détection de doublons standard ratent les comics avec des noms différents — comme comic_E1-5 et ComiX_E1-10. Archive Duplicate Scanner compare les images de pages réelles pour capturer les doublons que les outils de nom de fichier ratent entièrement.",
+          "seoDescription": "Trouvez des fichiers CBZ et CBR de comics dupliqués même s'ils ont des noms différents. Archive Duplicate Scanner utilise le hachage perceptuel pour comparer les images de pages."
+        },
+        "open-bank-statement-pdf-iphone": {
+          "title": "Comment Ouvrir des PDFs de Relevés Bancaires Protégés sur iPhone",
+          "excerpt": "Les PDFs bancaires sont verrouillés par votre numéro de sécurité sociale ou date de naissance. SmartDecrypt enregistre le modèle une fois par banque et déverrouille chaque relevé automatiquement.",
+          "seoDescription": "Ouvrez des PDFs de relevés bancaires protégés sur iPhone sans taper le mot de passe à chaque fois. SmartDecrypt fait correspondre les noms de fichiers avec des modèles enregistrés."
+        },
+        "contentcue-11-languages": {
+          "title": "ContentCue Disponible en 11 Langues",
+          "excerpt": "ContentCue prend désormais en charge 11 langues. Lisez des articles web sans perdre votre place à cause des publicités, et sachez toujours quelles parties de la page sont éditoriales et lesquelles sont des emplacements payants.",
+          "seoDescription": "ContentCue ajoute le français, néerlandais, russe, japonais, coréen et malais. Mettez en évidence les publicités pendant la lecture — les bordures colorées marquent le contenu payant."
+        },
+        "archive-duplicate-scanner-11-languages": {
+          "title": "Archive Duplicate Scanner Disponible en 11 Langues",
+          "excerpt": "Archive Duplicate Scanner prend désormais en charge 11 langues. Trouvez des comics en double même quand ils ont des noms différents comme comic_E1-5 et ComiX_E1-10 — la comparaison visuelle des pages détecte ce que les outils de nom de fichier ratent.",
+          "seoDescription": "Archive Duplicate Scanner ajoute le français, néerlandais, russe, japonais, coréen et malais. Trouvez les fichiers CBZ en double en comparant les images de pages, pas seulement les noms de fichiers."
+        },
+        "smartdecrypt-11-languages": {
+          "title": "SmartDecrypt Disponible en 11 Langues",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ prend désormais en charge 11 langues — anglais, espagnol, français, néerlandais, portugais, russe, chinois, japonais, coréen, indonésien et malais. Déverrouillez vos relevés bancaires et PDFs d'assurance avec des mots de passe difficiles à retenir dans votre propre langue.",
+          "seoDescription": "SmartDecrypt PDF ZIP CBZ ajoute 6 nouvelles langues : français, néerlandais, russe, japonais, coréen et malais. Déverrouillez des PDFs bancaires avec des mots de passe basés sur des modèles sur iPhone, Mac et Windows."
+        },
         "airdrop-books-to-iphone": {
           "title": "Comment utiliser AirDrop pour transférer des comics et ebooks sur iPhone",
           "excerpt": "AirDrop permet d'envoyer des fichiers CBZ, CBR, EPUB et PDF depuis votre Mac ou un autre iPhone directement dans BiblioFuse en quelques secondes, sans câble ni application tierce. Activez AirDrop sur les deux appareils, sélectionnez vos fichiers et choisissez BiblioFuse.",
@@ -1139,9 +1169,9 @@
       "hero": {
         "badge": "iOS · macOS · Windows",
         "title": "Recherchez. Étiquetez. Maîtrisez votre bibliothèque.",
-        "desc": "BiblioFuse GrepTag Reader vous permet de rechercher dans n'importe quel fichier EPUB ou TXT — tapez un mot et trouvez chaque livre qui le contient. Classez par genre, synchronisez en Wi-Fi et gardez tous vos fichiers privés sur votre propre appareil.",
+        "desc": "GrepTag Reader recherche le texte réel dans vos fichiers EPUB et TXT — sans métadonnées manuelles, sans saisie d'ISBN. Tapez un mot-clé et chaque livre correspondant apparaît instantanément. Taguez par genre, filtrez avec la logique AND, synchronisez en Wi-Fi.",
         "appStoreCta": "Download on App Store",
-        "trust1": "Recherche gratuite dans tous vos ebooks, sans limite",
+        "trust1": "Aucune métadonnée ni ISBN à saisir",
         "trust2": "Sans serveur, sans envoi",
         "trust3": "Texte CJK pris en charge",
         "comingSoon": "Disponible maintenant sur l'App Store",
@@ -1151,19 +1181,19 @@
       "grep": {
         "eyebrow": "Rechercher Dans les Livres",
         "title": "Recherchez le texte complet de chaque livre.",
-        "desc": "Tapez n'importe quel mot-clé et GrepTag lit directement vos fichiers EPUB et TXT — pas d'index à construire, pas d'envoi requis. Enregistrez des recherches sous forme de profils avec la logique AND, OR et NOT et relancez-les à mesure que votre bibliothèque grandit.",
+        "desc": "Tapez n'importe quel mot-clé et GrepTag lit directement vos fichiers EPUB et TXT — sans index à construire, sans upload, sans taguage manuel. Sauvegardez des recherches comme profils nommés avec la logique AND, OR et NOT, et relancez-les au fil de la croissance de votre bibliothèque. Les nouveaux livres sont tagués automatiquement à l'import.",
         "bullet1": "Logique booléenne — \"Sci-Fi AND dragons NOT romance\"",
         "bullet2": "Jusqu'à 2 profils gratuits · Pro débloque illimité",
-        "bullet3": "Exécution automatique à l'import étiquette les nouveaux livres",
+        "bullet3": "Exécution automatique à l'import — nouveaux livres tagués sans saisie de métadonnées",
         "badge": "Toujours gratuit · recherches illimitées"
       },
       "tags": {
         "eyebrow": "Étiquettes et Découverte",
         "title": "Étiquetez par genre. Filtrez instantanément.",
-        "desc": "Appliquez des étiquettes depuis les résultats en un tap, ou étiquetez les livres manuellement. Filtrez votre bibliothèque par une ou plusieurs étiquettes pour voir tous les livres d'un genre. Cinq étiquettes gratuites — Pro débloque illimité.",
+        "desc": "Les tags proviennent de ce qui est réellement dans le livre — pas du titre, de l'auteur ou de l'ISBN à saisir manuellement. Appliquez des tags depuis les résultats d'analyse en un tap. Filtrez avec la logique AND pour trouver les livres correspondant à TOUS vos tags sélectionnés.",
         "bullet1": "5 étiquettes gratuites · Pro débloque illimité",
-        "bullet2": "Filtrage multi-étiquettes AND / OR",
-        "bullet3": "Étiquetage en un tap depuis les résultats"
+        "bullet2": "Sélection multiple de tags avec logique AND — trouve les livres correspondant à TOUS les tags choisis",
+        "bullet3": "Taguage en un tap depuis les résultats — sans formulaires"
       },
       "sync": {
         "eyebrow": "Synchronisation Wi-Fi",
@@ -1219,7 +1249,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — Rechercher Dans Tous vos EPUB et eBooks | iPhone, iPad, Mac, Windows",
-        "desc": "Recherchez dans chaque fichier EPUB et TXT sur iPhone, iPad, Mac et Windows — trouvez n'importe quel mot dans toute votre bibliothèque d'ebooks. Classez par genre, synchronisez en Wi-Fi. Sans cloud. Gratuit."
+        "desc": "Recherchez dans chaque fichier EPUB et TXT sur iPhone, iPad, Mac et Windows. Aucune saisie manuelle de métadonnées ou d'ISBN — GrepTag analyse le contenu des livres et tague automatiquement votre bibliothèque par genre. Gratuit à essayer."
       },
       "faq": [
         {
@@ -1281,7 +1311,7 @@
       "hero": {
         "badge": "Mac & Windows",
         "title": "Find duplicates. Even after renaming.",
-        "desc": "Archive Duplicate Scanner opens your comic archives and compares the images inside — not just filenames or file sizes. A duplicate is a duplicate, no matter how many times it has been renamed or recompressed.",
+        "desc": "Archive Duplicate Scanner ouvre vos archives de BD et compare les images réelles à l'intérieur — pas seulement les noms ou tailles de fichiers. Même si un fichier s'appelle comic_E1-5 et un autre ComiX_E1-10, si les premières pages correspondent, ils sont signalés comme doublons.",
         "trust1": "No cloud upload",
         "trust2": "Safe Trash deletion",
         "trust3": "7-day free trial",
@@ -1291,8 +1321,8 @@
       "scanning": {
         "eyebrow": "Deep Archive Scanning",
         "title": "Opens archives and compares pages inside",
-        "desc": "Most duplicate finders compare file names or sizes. Archive Duplicate Scanner opens each CBZ, CBR, ZIP, or RAR file, extracts thumbnails from the actual pages inside, and compares them using perceptual hashing. Two archives with completely different names and file sizes are still caught if their content matches.",
-        "bullet1": "Supports CBZ, CBR, ZIP, and RAR comic archives",
+        "desc": "La plupart des détecteurs de doublons comparent uniquement les noms ou tailles de fichiers. Archive Duplicate Scanner ouvre chaque fichier CBZ, CBR, ZIP ou RAR, extrait des miniatures des pages réelles et les compare. Un fichier nommé comic_E1-5 et un autre ComiX_E1-10 — noms différents, plages d'épisodes différentes — sont quand même détectés si leurs premières pages correspondent.",
+        "bullet1": "Ouvre les archives et compare les images des pages — pas seulement les noms",
         "bullet2": "Configurable similarity threshold — 90% recommended",
         "bullet3": "Hash cache makes repeat scans near-instant",
         "badge": "Works with manga, manhwa, and manhua"
@@ -1376,7 +1406,7 @@
     "smartdecryptPage": {
       "seo": {
         "title": "SmartDecrypt — Auto-Unlock Password-Protected PDFs and Archives",
-        "desc": "SmartDecrypt unlocks PDF, ZIP, and 7z files using saved filename patterns. Drop the file — it finds the right password automatically. Free for one file at a time, $9.99 Pro unlocks batch processing on iOS and macOS."
+        "desc": "SmartDecrypt déverrouille automatiquement les fichiers PDF, ZIP et 7z grâce à des profils de noms de fichiers sauvegardés — idéal pour les relevés bancaires, documents d'assurance et factures qui utilisent toujours le même format de mot de passe."
       },
       "hero": {
         "badge": "iOS · macOS · Windows",
@@ -1391,9 +1421,9 @@
       "patterns": {
         "eyebrow": "Pattern-Based Auto-Unlock",
         "title": "Save once, unlock forever",
-        "desc": "Create a saved profile for any recurring file — match by filename pattern, keyword, or extension. The next time that file arrives, SmartDecrypt picks the right password automatically. No hunting, no guessing.",
-        "bullet1": "Match by filename pattern, keyword, or file extension",
-        "bullet2": "Multiple profiles for different file sources (bank, payroll, invoices)",
+        "desc": "Les relevés bancaires, PDFs d'assurance et bulletins de salaire arrivent toujours avec le même schéma de mot de passe — votre numéro de sécurité sociale, date de naissance ou numéro de compte. Sauvegardez un profil une fois et SmartDecrypt choisit automatiquement le bon mot de passe à chaque arrivée de ce type de fichier.",
+        "bullet1": "Correspondance par motif de nom de fichier — ex. \"DBS_Statement_*\" → votre mot de passe d'identifiant",
+        "bullet2": "Profils séparés pour relevés bancaires, PDFs d'assurance, factures et bulletins de salaire",
         "bullet3": "Auto password cycling tries all matching profiles in sequence",
         "badge": "Designed for recurring files with repeatable passwords"
       },
@@ -1459,13 +1489,13 @@
     "contentcuePage": {
       "seo": {
         "title": "ContentCue — Reading Browser That Never Loses Your Place",
-        "desc": "ContentCue is a mobile browser for iPhone and iPad that automatically saves your scroll position when ads interrupt your reading. One tap resumes exactly where you left off. Not an ad blocker — all ads still load."
+        "desc": "ContentCue est un navigateur de lecture pour iPhone et iPad qui sauvegarde votre position de défilement quand les publicités vous interrompent, et dessine des bordures colorées autour des annonces pour toujours savoir ce qui est contenu et ce qui est sponsorisé."
       },
       "hero": {
         "badge": "iPhone & iPad",
         "title": "Read. Get interrupted. Resume exactly where you left off.",
-        "desc": "ContentCue saves your scroll position when a popup or redirect breaks your reading flow. One tap brings you back to the exact spot, on any site — Webtoons, Tapas, manga aggregators, blogs.",
-        "trust1": "Not an ad blocker",
+        "desc": "ContentCue sauvegarde votre position exacte de défilement quand un popup ou une redirection interrompt votre lecture. Des bordures colorées marquent les parties de la page qui sont des publicités — pour distinguer d'un coup d'œil le vrai contenu des blocs sponsorisés.",
+        "trust1": "Publicités surlignées, non bloquées",
         "trust2": "No browsing data collected",
         "trust3": "Works with any website",
         "appStore": "Download on App Store"

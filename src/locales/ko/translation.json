@@ -825,6 +825,36 @@
     },
     "blog": {
       "posts": {
+        "organize-ebooks-by-content-not-metadata": {
+          "title": "메타데이터나 ISBN이 아닌 내용으로 전자책 정리하기",
+          "excerpt": "대부분의 전자책 관리 앱은 메타데이터 수동 입력이나 ISBN 조회가 필요합니다. GrepTag Reader는 EPUB 및 TXT 파일 내의 실제 텍스트를 읽고 안에 쓰인 내용을 바탕으로 모든 책에 자동으로 태그를 붙입니다.",
+          "seoDescription": "메타데이터나 ISBN을 입력하지 않고 전자책 라이브러리를 자동으로 정리하세요. GrepTag Reader가 EPUB과 TXT 내용을 읽고 실제 쓰인 내용에서 태그를 생성합니다."
+        },
+        "find-duplicate-comics-different-names": {
+          "title": "파일명이 다른 중복 만화 파일 찾는 방법",
+          "excerpt": "표준 중복 찾기는 comic_E1-5와 ComiX_E1-10 같은 이름이 다른 만화를 놓칩니다. Archive Duplicate Scanner는 실제 페이지 이미지를 비교해 파일명 도구가 완전히 놓치는 중복을 잡아냅니다.",
+          "seoDescription": "파일명이 달라도 중복 CBZ 및 CBR 만화 파일을 찾아보세요. Archive Duplicate Scanner는 지각 해싱으로 페이지 이미지를 비교합니다."
+        },
+        "open-bank-statement-pdf-iphone": {
+          "title": "iPhone에서 비밀번호로 잠긴 은행 명세서 PDF 여는 방법",
+          "excerpt": "은행 PDF는 주민등록번호나 생년월일로 잠겨 있습니다 — 알지만 기억 안 나는 비밀번호. SmartDecrypt는 은행마다 패턴을 한 번만 저장하고 이후 명세서를 자동으로 해제합니다.",
+          "seoDescription": "iPhone에서 비밀번호를 매번 입력하지 않고 비밀번호가 걸린 은행 명세서 PDF를 열어보세요. SmartDecrypt가 파일명을 저장된 패턴에 대조해 자동 해제합니다."
+        },
+        "contentcue-11-languages": {
+          "title": "ContentCue 이제 11개 언어 지원",
+          "excerpt": "ContentCue가 이제 11개 언어를 지원합니다. 광고에 방해받지 않고 웹 기사를 읽고, 페이지의 어느 부분이 편집 콘텐츠이고 어느 부분이 유료 광고인지 항상 알 수 있습니다.",
+          "seoDescription": "ContentCue에 프랑스어, 네덜란드어, 러시아어, 일본어, 한국어, 말레이어 추가. 읽는 동안 컬러 테두리로 광고를 표시해 유료 콘텐츠를 즉시 식별하세요."
+        },
+        "archive-duplicate-scanner-11-languages": {
+          "title": "Archive Duplicate Scanner 이제 11개 언어 지원",
+          "excerpt": "Archive Duplicate Scanner가 이제 11개 언어를 지원합니다. comic_E1-5와 ComiX_E1-10처럼 이름이 달라도 중복 만화를 찾아냅니다 — 페이지 시각 비교가 파일명 도구가 놓치는 것을 잡아냅니다.",
+          "seoDescription": "Archive Duplicate Scanner에 프랑스어, 네덜란드어, 러시아어, 일본어, 한국어, 말레이어 추가. Mac과 Windows에서 파일명이 아닌 페이지 이미지 비교로 중복 CBZ 파일을 찾아보세요."
+        },
+        "smartdecrypt-11-languages": {
+          "title": "SmartDecrypt 이제 11개 언어 지원",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ가 이제 11개 언어를 지원합니다 — 영어, 스페인어, 프랑스어, 네덜란드어, 포르투갈어, 러시아어, 중국어, 일본어, 한국어, 인도네시아어, 말레이어. 기억하기 어려운 패턴 비밀번호로 잠긴 은행 명세서와 보험 PDF를 내 언어로 잠금 해제하세요.",
+          "seoDescription": "SmartDecrypt PDF ZIP CBZ에 프랑스어, 네덜란드어, 러시아어, 일본어, 한국어, 말레이어 6개 언어 추가. iPhone, Mac, Windows에서 패턴 기반 비밀번호 PDF를 잠금 해제하세요."
+        },
         "airdrop-books-to-iphone": {
           "title": "AirDrop으로 iPhone에 만화와 전자책 전송하는 방법",
           "excerpt": "AirDrop을 사용하면 CBZ, CBR, EPUB, PDF 파일을 Mac이나 다른 iPhone에서 몇 초 만에 BiblioFuse로 직접 전송할 수 있습니다. 케이블 없이, 추가 앱 없이 양쪽에서 AirDrop을 활성화하고 공유 시트에서 BiblioFuse를 선택하세요.",
@@ -1139,9 +1169,9 @@
       "hero": {
         "badge": "iOS · macOS · Windows",
         "title": "검색하세요. 태그하세요. 서재를 지배하세요.",
-        "desc": "BiblioFuse GrepTag Reader를 사용하면 모든 EPUB 또는 TXT 파일 내부를 검색할 수 있습니다. 단어를 입력하면 해당 단어가 포함된 모든 책을 찾아드립니다. 장르별로 태그를 붙이고, Wi-Fi로 동기화하며, 모든 파일은 내 기기에 안전하게 보관됩니다.",
+        "desc": "GrepTag Reader는 EPUB 및 TXT 파일의 실제 텍스트를 검색합니다 — 수동 메타데이터 입력도, ISBN 입력도 필요 없습니다. 키워드를 입력하면 일치하는 모든 책이 즉시 표시됩니다. 장르별 태그, AND 논리로 필터링, Wi-Fi로 동기화.",
         "appStoreCta": "Download on App Store",
-        "trust1": "모든 전자책 무료 검색, 제한 없음",
+        "trust1": "수동 메타데이터나 ISBN 입력 불필요",
         "trust2": "서버 없음, 업로드 없음",
         "trust3": "CJK 텍스트 지원",
         "comingSoon": "App Store에서 이용 가능",
@@ -1151,19 +1181,19 @@
       "grep": {
         "eyebrow": "책 내부 검색",
         "title": "모든 책의 전체 텍스트를 검색하세요.",
-        "desc": "키워드를 입력하면 GrepTag가 EPUB 및 TXT 파일을 직접 읽습니다——색인 구축 불필요, 업로드 불필요. AND, OR, NOT 논리로 검색을 명명된 프로필로 저장하고 서재가 성장함에 따라 재실행하세요.",
+        "desc": "키워드를 입력하면 GrepTag가 EPUB 및 TXT 파일을 직접 읽습니다 — 인덱스 생성 없음, 업로드 없음, 수동 태그 없음. AND, OR, NOT 논리로 검색을 이름 있는 프로필로 저장하고, 도서관이 성장함에 따라 다시 실행하세요. 새 책은 가져올 때 자동으로 태그가 붙습니다.",
         "bullet1": "불리언 논리——\"Sci-Fi AND 드래곤 NOT 로맨스\"",
         "bullet2": "최대 2개 프로필 무료 · Pro는 무제한 해제",
-        "bullet3": "가져오기 시 자동 실행으로 새 책 태그 지정",
+        "bullet3": "가져오기 시 자동 실행 — 새 책에 자동 태그, 메타데이터 입력 불필요",
         "badge": "항상 무료 · 무제한 스캔"
       },
       "tags": {
         "eyebrow": "태그 및 발견",
         "title": "장르별 태그. 즉시 필터링.",
-        "desc": "스캔 결과에서 한 번 탭으로 태그를 적용하거나 수동으로 태그를 지정하세요. 하나 이상의 태그로 서재를 필터링하여 장르의 모든 책을 확인하세요. 5개 태그 무료——Pro는 무제한 해제.",
+        "desc": "태그는 책 안에 실제로 있는 내용에서 나옵니다 — 수동으로 입력해야 하는 제목, 저자, ISBN이 아닙니다. 스캔 결과에서 한 번의 탭으로 태그를 적용하세요. AND 논리로 라이브러리를 필터링해 선택한 모든 태그에 해당하는 책을 찾으세요.",
         "bullet1": "5개 태그 무료 · Pro는 무제한 해제",
-        "bullet2": "AND / OR 다중 태그 필터링",
-        "bullet3": "스캔 결과에서 한 번 탭으로 태그 지정"
+        "bullet2": "다중 태그 선택 + AND 논리 — 선택한 모든 태그에 맞는 책 검색",
+        "bullet3": "검색 결과에서 한 번의 탭으로 태그 — 양식 작성 없음"
       },
       "sync": {
         "eyebrow": "Wi-Fi 동기화",
@@ -1219,7 +1249,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — 모든 EPUB 및 전자책 내부 텍스트 검색 | iPhone, iPad, Mac, Windows",
-        "desc": "iPhone, iPad, Mac, Windows에서 모든 EPUB 및 TXT 파일 내부를 검색하세요 — 전체 전자책 라이브러리에서 어떤 단어도 찾을 수 있습니다. 장르별 태그, Wi-Fi 동기화. 클라우드 없음. 무료 시작."
+        "desc": "iPhone, iPad, Mac, Windows의 모든 EPUB 및 TXT 파일을 검색하세요. 메타데이터나 ISBN을 수동으로 입력할 필요 없이 — GrepTag가 도서 내용을 스캔해 장르별로 자동 태그를 붙입니다. 무료로 체험 가능."
       },
       "faq": [
         {
@@ -1281,7 +1311,7 @@
       "hero": {
         "badge": "Mac & Windows",
         "title": "Find duplicates. Even after renaming.",
-        "desc": "Archive Duplicate Scanner opens your comic archives and compares the images inside — not just filenames or file sizes. A duplicate is a duplicate, no matter how many times it has been renamed or recompressed.",
+        "desc": "Archive Duplicate Scanner는 만화 아카이브를 열고 파일명이나 크기가 아닌 실제 내부 이미지를 비교합니다. 한 파일이 comic_E1-5이고 다른 파일이 ComiX_E1-10이라 해도, 첫 몇 페이지가 일치하면 중복으로 표시됩니다.",
         "trust1": "No cloud upload",
         "trust2": "Safe Trash deletion",
         "trust3": "7-day free trial",
@@ -1291,8 +1321,8 @@
       "scanning": {
         "eyebrow": "Deep Archive Scanning",
         "title": "Opens archives and compares pages inside",
-        "desc": "Most duplicate finders compare file names or sizes. Archive Duplicate Scanner opens each CBZ, CBR, ZIP, or RAR file, extracts thumbnails from the actual pages inside, and compares them using perceptual hashing. Two archives with completely different names and file sizes are still caught if their content matches.",
-        "bullet1": "Supports CBZ, CBR, ZIP, and RAR comic archives",
+        "desc": "대부분의 중복 검색 도구는 파일명이나 크기만 비교합니다. Archive Duplicate Scanner는 각 CBZ, CBR, ZIP 또는 RAR 파일을 열고 실제 페이지에서 썸네일을 추출해 비교합니다. comic_E1-5와 ComiX_E1-10 — 이름도 다르고 에피소드 범위도 달라도 — 시작 페이지가 일치하면 감지됩니다.",
+        "bullet1": "아카이브를 열고 페이지 이미지를 비교 — 파일명만이 아님",
         "bullet2": "Configurable similarity threshold — 90% recommended",
         "bullet3": "Hash cache makes repeat scans near-instant",
         "badge": "Works with manga, manhwa, and manhua"
@@ -1376,7 +1406,7 @@
     "smartdecryptPage": {
       "seo": {
         "title": "SmartDecrypt — Auto-Unlock Password-Protected PDFs and Archives",
-        "desc": "SmartDecrypt unlocks PDF, ZIP, and 7z files using saved filename patterns. Drop the file — it finds the right password automatically. Free for one file at a time, $9.99 Pro unlocks batch processing on iOS and macOS."
+        "desc": "SmartDecrypt는 저장된 파일명 패턴을 사용해 PDF, ZIP, 7z 파일을 자동으로 잠금 해제합니다 — 항상 동일한 비밀번호 형식을 사용하는 은행 명세서, 보험 서류, 청구서에 완벽합니다."
       },
       "hero": {
         "badge": "iOS · macOS · Windows",
@@ -1391,9 +1421,9 @@
       "patterns": {
         "eyebrow": "Pattern-Based Auto-Unlock",
         "title": "Save once, unlock forever",
-        "desc": "Create a saved profile for any recurring file — match by filename pattern, keyword, or extension. The next time that file arrives, SmartDecrypt picks the right password automatically. No hunting, no guessing.",
-        "bullet1": "Match by filename pattern, keyword, or file extension",
-        "bullet2": "Multiple profiles for different file sources (bank, payroll, invoices)",
+        "desc": "은행 명세서, 보험 PDF, 급여 명세서는 항상 같은 비밀번호 패턴으로 옵니다 — 주민등록번호, 생년월일 또는 계좌번호. 프로필을 한 번 저장하면 SmartDecrypt가 해당 파일 유형이 도착할 때마다 자동으로 올바른 비밀번호를 선택합니다.",
+        "bullet1": "파일명 패턴으로 매칭 — 예: \"DBS_Statement_*\" → 주민번호 비밀번호",
+        "bullet2": "은행 명세서, 보험 PDF, 청구서, 급여 명세서별 개별 프로필",
         "bullet3": "Auto password cycling tries all matching profiles in sequence",
         "badge": "Designed for recurring files with repeatable passwords"
       },
@@ -1459,13 +1489,13 @@
     "contentcuePage": {
       "seo": {
         "title": "ContentCue — Reading Browser That Never Loses Your Place",
-        "desc": "ContentCue is a mobile browser for iPhone and iPad that automatically saves your scroll position when ads interrupt your reading. One tap resumes exactly where you left off. Not an ad blocker — all ads still load."
+        "desc": "ContentCue는 iPhone과 iPad용 읽기 브라우저로, 광고가 방해할 때 스크롤 위치를 저장하고 광고 주변에 색상 테두리를 그려 콘텐츠와 스폰서 내용을 항상 구별할 수 있게 합니다."
       },
       "hero": {
         "badge": "iPhone & iPad",
         "title": "Read. Get interrupted. Resume exactly where you left off.",
-        "desc": "ContentCue saves your scroll position when a popup or redirect breaks your reading flow. One tap brings you back to the exact spot, on any site — Webtoons, Tapas, manga aggregators, blogs.",
-        "trust1": "Not an ad blocker",
+        "desc": "ContentCue는 팝업이나 리디렉션이 독서 흐름을 끊을 때 정확한 스크롤 위치를 저장합니다. 색상 테두리로 페이지의 어느 부분이 광고인지 표시 — 진짜 기사 내용과 스폰서 블록을 한눈에 구별할 수 있습니다.",
+        "trust1": "광고 강조 표시, 차단하지 않음",
         "trust2": "No browsing data collected",
         "trust3": "Works with any website",
         "appStore": "Download on App Store"

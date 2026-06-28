@@ -825,6 +825,36 @@
     },
     "blog": {
       "posts": {
+        "organize-ebooks-by-content-not-metadata": {
+          "title": "按内容整理电子书，而非元数据或 ISBN",
+          "excerpt": "大多数电子书管理器要求手动输入元数据或查询 ISBN。GrepTag Reader 读取 EPUB 和 TXT 文件内的实际文字，并根据书中写的内容自动为每本书打标签，无需任何元数据录入。",
+          "seoDescription": "无需输入元数据或 ISBN，自动整理你的电子书库。GrepTag Reader 读取 EPUB 和 TXT 内容，根据实际写入内容生成标签。"
+        },
+        "find-duplicate-comics-different-names": {
+          "title": "如何找到文件名不同的重复漫画文件",
+          "excerpt": "标准重复工具会漏掉名称不同的漫画——如 comic_E1-5 和 ComiX_E1-10。Archive Duplicate Scanner 通过比对实际页面图片，用感知哈希捕获文件名工具完全错过的重复。",
+          "seoDescription": "即使文件名不同，也能找到重复的 CBZ 和 CBR 漫画文件。Archive Duplicate Scanner 使用感知哈希比对页面图片，而非文件名。"
+        },
+        "open-bank-statement-pdf-iphone": {
+          "title": "如何在 iPhone 上打开有密码保护的银行账单 PDF",
+          "excerpt": "银行 PDF 被你的身份证号或出生日期锁定——你知道但记不清的密码。SmartDecrypt 每家银行只需保存一次密码规律，此后每张账单自动解锁。",
+          "seoDescription": "在 iPhone 上打开有密码保护的银行账单 PDF，无需每次手动输入密码。SmartDecrypt 将文件名与保存的模式匹配并自动解锁。"
+        },
+        "contentcue-11-languages": {
+          "title": "ContentCue 现已支持 11 种语言",
+          "excerpt": "ContentCue 现已支持 11 种语言。阅读网络文章时不再因广告而迷失位置，始终清楚页面哪些部分是编辑内容、哪些是付费投放。",
+          "seoDescription": "ContentCue 新增法语、荷兰语、俄语、日语、韩语和马来语。阅读时用彩色边框标注广告，轻松区分编辑内容与付费内容。"
+        },
+        "archive-duplicate-scanner-11-languages": {
+          "title": "Archive Duplicate Scanner 现已支持 11 种语言",
+          "excerpt": "Archive Duplicate Scanner 现已支持 11 种语言。即使文件名不同（如 comic_E1-5 和 ComiX_E1-10），也能找出重复漫画——页面视觉比对能捕获文件名工具遗漏的内容。",
+          "seoDescription": "Archive Duplicate Scanner 新增法语、荷兰语、俄语、日语、韩语和马来语。通过比对页面图片（而非仅文件名）在 Mac 和 Windows 上查找重复 CBZ 文件。"
+        },
+        "smartdecrypt-11-languages": {
+          "title": "SmartDecrypt 现已支持 11 种语言",
+          "excerpt": "SmartDecrypt PDF ZIP CBZ 现已支持 11 种语言——英语、西班牙语、法语、荷兰语、葡萄牙语、俄语、中文、日语、韩语、印度尼西亚语和马来语。用您自己的语言解锁银行账单和保险 PDF，再也不用烦恼难以记忆的密码规律。",
+          "seoDescription": "SmartDecrypt PDF ZIP CBZ 新增 6 种语言：法语、荷兰语、俄语、日语、韩语和马来语。在 iPhone、Mac 和 Windows 上用模式密码解锁银行 PDF。"
+        },
         "airdrop-books-to-iphone": {
           "title": "如何使用 AirDrop 将漫画和电子书传输到 iPhone",
           "excerpt": "AirDrop 可在几秒内将 CBZ、CBR、EPUB 和 PDF 文件从 Mac 或其他 iPhone 直接传输到 BiblioFuse，无需数据线或额外应用。在两台设备上启用 AirDrop，选择文件，在共享菜单中选择 BiblioFuse 即可。",
@@ -1139,9 +1169,9 @@
       "hero": {
         "badge": "iOS · macOS · Windows",
         "title": "搜索。标记。掌控你的书库。",
-        "desc": "BiblioFuse GrepTag Reader 让您在任何 EPUB 或 TXT 文件中搜索——输入一个词，即可找到包含它的每一本书。按流派标记，通过 Wi-Fi 同步，所有文件都私密保存在您自己的设备上。",
+        "desc": "GrepTag Reader 搜索 EPUB 和 TXT 文件中的实际文字——无需手动填写元数据，无需输入 ISBN。输入关键词，所有匹配书籍立即出现。按类型打标签，用 AND 逻辑过滤，通过 Wi-Fi 同步。",
         "appStoreCta": "Download on App Store",
-        "trust1": "免费搜索所有电子书，无限制",
+        "trust1": "无需手动填写元数据或 ISBN",
         "trust2": "无服务器，无上传",
         "trust3": "支持中日韩文字",
         "comingSoon": "现已在 App Store 上架",
@@ -1151,19 +1181,19 @@
       "grep": {
         "eyebrow": "在书籍内部搜索",
         "title": "搜索每本书的全文。",
-        "desc": "输入任何关键词，GrepTag直接读取你的EPUB和TXT文件——无需构建索引，无需上传。将搜索保存为命名配置文件，使用AND、OR和NOT逻辑，随书库增长反复运行。",
+        "desc": "输入任意关键词，GrepTag 直接读取 EPUB 和 TXT 文件——无需建立索引，无需上传，无需手动标记。用 AND、OR 和 NOT 逻辑将搜索保存为命名配置文件，随着书库增长可随时重新运行。导入新书时自动打标签。",
         "bullet1": "布尔逻辑——\"科幻 AND 龙 NOT 言情\"",
         "bullet2": "免费最多2个配置文件 · Pro解锁无限",
-        "bullet3": "导入时自动运行，为新书打标签",
+        "bullet3": "导入时自动运行——新书自动打标签，无需输入元数据",
         "badge": "永久免费 · 无限次扫描"
       },
       "tags": {
         "eyebrow": "标签与发现",
         "title": "按类型标记。立即筛选。",
-        "desc": "一键将标签应用于扫描结果，或手动为书籍添加标签。按一个或多个标签筛选书库，查看某类型的所有书籍。五个标签免费——Pro解锁无限。",
+        "desc": "标签来自书籍实际内容——而非您需要手动输入的书名、作者或 ISBN。一键从扫描结果中应用标签。使用 AND 逻辑过滤书库，一次找出符合所有已选标签的书籍。",
         "bullet1": "5个标签免费 · Pro解锁无限",
-        "bullet2": "AND / OR 多标签筛选",
-        "bullet3": "一键从扫描结果打标签"
+        "bullet2": "多选标签 + AND 逻辑——找出符合所有已选标签的书籍",
+        "bullet3": "从搜索结果一键打标签——无需填写表单"
       },
       "sync": {
         "eyebrow": "Wi-Fi同步",
@@ -1219,7 +1249,7 @@
       },
       "seo": {
         "title": "GrepTag Reader — 在所有 EPUB 和电子书中搜索文本 | iPhone、iPad、Mac、Windows",
-        "desc": "在 iPhone、iPad、Mac 和 Windows 上搜索每个 EPUB 和 TXT 文件内的内容——在整个电子书库中查找任意词语。按流派标记，通过 Wi-Fi 同步。无需云端，免费开始。"
+        "desc": "在 iPhone、iPad、Mac 和 Windows 上搜索每个 EPUB 和 TXT 文件的内容。无需手动输入元数据或 ISBN——GrepTag 扫描书籍内容，自动按类型标记您的书库。免费试用。"
       },
       "faq": [
         {
@@ -1281,7 +1311,7 @@
       "hero": {
         "badge": "Mac & Windows",
         "title": "Find duplicates. Even after renaming.",
-        "desc": "Archive Duplicate Scanner opens your comic archives and compares the images inside — not just filenames or file sizes. A duplicate is a duplicate, no matter how many times it has been renamed or recompressed.",
+        "desc": "Archive Duplicate Scanner 打开漫画压缩包并比较内部的实际图片——而不仅仅是文件名或大小。即使一个文件叫 comic_E1-5，另一个叫 ComiX_E1-10，只要前几页匹配，它们就会被标记为重复。",
         "trust1": "No cloud upload",
         "trust2": "Safe Trash deletion",
         "trust3": "7-day free trial",
@@ -1291,8 +1321,8 @@
       "scanning": {
         "eyebrow": "Deep Archive Scanning",
         "title": "Opens archives and compares pages inside",
-        "desc": "Most duplicate finders compare file names or sizes. Archive Duplicate Scanner opens each CBZ, CBR, ZIP, or RAR file, extracts thumbnails from the actual pages inside, and compares them using perceptual hashing. Two archives with completely different names and file sizes are still caught if their content matches.",
-        "bullet1": "Supports CBZ, CBR, ZIP, and RAR comic archives",
+        "desc": "大多数重复查找工具只比较文件名或大小。Archive Duplicate Scanner 打开每个 CBZ、CBR、ZIP 或 RAR 文件，提取实际页面的缩略图并进行比较。名为 comic_E1-5 和 ComiX_E1-10 的文件——名称不同、剧集范围不同——只要开头页面匹配，仍会被检测出来。",
+        "bullet1": "打开压缩包并比较页面图片——不只是文件名",
         "bullet2": "Configurable similarity threshold — 90% recommended",
         "bullet3": "Hash cache makes repeat scans near-instant",
         "badge": "Works with manga, manhwa, and manhua"
@@ -1376,7 +1406,7 @@
     "smartdecryptPage": {
       "seo": {
         "title": "SmartDecrypt — Auto-Unlock Password-Protected PDFs and Archives",
-        "desc": "SmartDecrypt unlocks PDF, ZIP, and 7z files using saved filename patterns. Drop the file — it finds the right password automatically. Free for one file at a time, $9.99 Pro unlocks batch processing on iOS and macOS."
+        "desc": "SmartDecrypt 通过保存的文件名模式自动解锁 PDF、ZIP 和 7z 文件——非常适合总是使用相同密码格式的银行账单、保险文件和发票。"
       },
       "hero": {
         "badge": "iOS · macOS · Windows",
@@ -1391,9 +1421,9 @@
       "patterns": {
         "eyebrow": "Pattern-Based Auto-Unlock",
         "title": "Save once, unlock forever",
-        "desc": "Create a saved profile for any recurring file — match by filename pattern, keyword, or extension. The next time that file arrives, SmartDecrypt picks the right password automatically. No hunting, no guessing.",
-        "bullet1": "Match by filename pattern, keyword, or file extension",
-        "bullet2": "Multiple profiles for different file sources (bank, payroll, invoices)",
+        "desc": "银行账单、保险 PDF 和工资单总是以相同的密码规律到达——您的身份证号、出生日期或账号。只需保存一次配置，每次收到该类型文件时，SmartDecrypt 会自动选择正确的密码。",
+        "bullet1": "按文件名模式匹配——例如 \"DBS_Statement_*\" → 您的身份证密码",
+        "bullet2": "银行账单、保险 PDF、发票、工资单各有独立配置文件",
         "bullet3": "Auto password cycling tries all matching profiles in sequence",
         "badge": "Designed for recurring files with repeatable passwords"
       },
@@ -1459,13 +1489,13 @@
     "contentcuePage": {
       "seo": {
         "title": "ContentCue — Reading Browser That Never Loses Your Place",
-        "desc": "ContentCue is a mobile browser for iPhone and iPad that automatically saves your scroll position when ads interrupt your reading. One tap resumes exactly where you left off. Not an ad blocker — all ads still load."
+        "desc": "ContentCue 是 iPhone 和 iPad 上的阅读浏览器，在广告打断阅读时保存滚动位置，并在广告周围绘制彩色边框，让您随时清楚哪些是内容、哪些是赞助内容。"
       },
       "hero": {
         "badge": "iPhone & iPad",
         "title": "Read. Get interrupted. Resume exactly where you left off.",
-        "desc": "ContentCue saves your scroll position when a popup or redirect breaks your reading flow. One tap brings you back to the exact spot, on any site — Webtoons, Tapas, manga aggregators, blogs.",
-        "trust1": "Not an ad blocker",
+        "desc": "ContentCue 在弹窗或跳转打断阅读时保存您的精确滚动位置。彩色边框标记页面上哪些部分是广告——让您一眼就能区分真正的文章内容和赞助块。",
+        "trust1": "广告高亮显示，不被屏蔽",
         "trust2": "No browsing data collected",
         "trust3": "Works with any website",
         "appStore": "Download on App Store"

@@ -1,5 +1,41 @@
 export const articles = [
   {
+    slug: 'organize-ebooks-by-content-not-metadata',
+    date: '2026-06-28',
+    tags: ['grepreader', 'guide', 'ebooks'],
+    coverImage: '/image/blog/Organize Ebooks by Content Not Metadata.jpg',
+  },
+  {
+    slug: 'find-duplicate-comics-different-names',
+    date: '2026-06-28',
+    tags: ['archive', 'guide', 'duplicates'],
+    coverImage: '/image/blog/Find Duplicate Comics Different Names.jpg',
+  },
+  {
+    slug: 'open-bank-statement-pdf-iphone',
+    date: '2026-06-28',
+    tags: ['smartdecrypt', 'guide', 'pdf'],
+    coverImage: '/image/blog/Open Bank Statement PDF iPhone.jpg',
+  },
+  {
+    slug: 'contentcue-11-languages',
+    date: '2026-06-28',
+    tags: ['update', 'contentcue', 'languages'],
+    coverImage: '/image/blog/ContentCue 11 Languages.jpg',
+  },
+  {
+    slug: 'archive-duplicate-scanner-11-languages',
+    date: '2026-06-28',
+    tags: ['update', 'archive', 'languages'],
+    coverImage: '/image/blog/Archive Duplicate Scanner 11 Languages.jpg',
+  },
+  {
+    slug: 'smartdecrypt-11-languages',
+    date: '2026-06-28',
+    tags: ['update', 'smartdecrypt', 'languages'],
+    coverImage: '/image/blog/SmartDecrypt 11 Languages.jpg',
+  },
+  {
     slug: 'airdrop-books-to-iphone',
     date: '2026-06-22',
     tags: ['ios', 'airdrop', 'transfer', 'guide'],
