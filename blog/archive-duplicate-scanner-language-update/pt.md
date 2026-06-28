@@ -1,6 +1,6 @@
 # Archive Duplicate Scanner Agora Disponível em Português, Espanhol, Indonésio e Chinês
 
-Archive Duplicate Scanner agora suporta Português, Espanhol, Bahasa Indonesia e Chinês Simplificado — trazendo a interface completa do aplicativo para quatro novos idiomas. O app encontra arquivos duplicados de quadrinhos (CBZ, CBR, ZIP, RAR) e fotos usando hashing perceptual, disponível gratuitamente para Mac e Windows. E a grande notícia para você: **o app agora fala Português**. [Baixe agora](/pt/#archive) e use na sua língua.
+Archive Duplicate Scanner agora suporta Português, Espanhol, Bahasa Indonesia e Chinês Simplificado — trazendo a interface completa do aplicativo para quatro novos idiomas. O app encontra arquivos duplicados de quadrinhos (CBZ, CBR, ZIP, RAR) e fotos usando hashing perceptual, disponível gratuitamente para Mac e Windows. E a grande notícia para você: **o app agora fala Português**. [Baixe agora](/pt/archive/) e use na sua língua.
 
 ## Por Que Colecionadores Internacionais Precisavam Disso
 
@@ -23,7 +23,7 @@ O app segue automaticamente o idioma do seu sistema operacional. No macOS, vá e
 
 ## O Que o Archive Duplicate Scanner Faz
 
-[Archive Duplicate Scanner](/pt/#archive) usa **hashing perceptual** para detectar duplicatas. Ele abre cada arquivo (CBZ, CBR, ZIP, RAR) e computa um hash perceptual das imagens reais das páginas internas. Dois arquivos podem ter nomes completamente diferentes, tamanhos de arquivo diferentes e até compressão diferente — se as páginas parecerem iguais, eles correspondem.
+[Archive Duplicate Scanner](/pt/archive/) usa **hashing perceptual** para detectar duplicatas. Ele abre cada arquivo (CBZ, CBR, ZIP, RAR) e computa um hash perceptual das imagens reais das páginas internas. Dois arquivos podem ter nomes completamente diferentes, tamanhos de arquivo diferentes e até compressão diferente — se as páginas parecerem iguais, eles correspondem.
 
 Outros recursos principais:
 
@@ -64,4 +64,4 @@ A atualização está disponível agora em ambas as plataformas:
 - **Mac App Store:** [Baixar Archive Duplicate Scanner](https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449)
 - **Microsoft Store:** [Baixar Archive Duplicate Scanner](https://apps.microsoft.com/detail/9n2jb4k5wvcq)
 
-Visite a [página do Archive Duplicate Scanner](/pt/#archive) para saber mais sobre todos os recursos antes de baixar.
+Visite a [página do Archive Duplicate Scanner](/pt/archive/) para saber mais sobre todos os recursos antes de baixar.

@@ -26,7 +26,7 @@ Archive Duplicate Scanner использует перцептивное хэши
 
 ### Шаг 1: Скачайте и Запустите Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/ru/) доступен в Mac App Store. Установите его и запустите из папки «Программы».
+[Archive Duplicate Scanner](/ru/archive/) доступен в Mac App Store. Установите его и запустите из папки «Программы».
 
 ### Шаг 2: Добавьте Папку с Библиотекой Комиксов
 

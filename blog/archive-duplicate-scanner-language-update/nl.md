@@ -1,6 +1,6 @@
 # Archive Duplicate Scanner Nu Beschikbaar in Portugees, Spaans, Indonesisch en Chinees
 
-Archive Duplicate Scanner ondersteunt nu Portugees, Spaans, Bahasa Indonesia en Vereenvoudigd Chinees — waarmee de volledige app-interface naar vier nieuwe talen wordt gebracht. De app vindt dubbele comic-archieven (CBZ, CBR, ZIP, RAR) en foto's met behulp van perceptual hashing, gratis beschikbaar voor Mac en Windows. [Download nu](/nl/#archive) voor Mac of Windows.
+Archive Duplicate Scanner ondersteunt nu Portugees, Spaans, Bahasa Indonesia en Vereenvoudigd Chinees — waarmee de volledige app-interface naar vier nieuwe talen wordt gebracht. De app vindt dubbele comic-archieven (CBZ, CBR, ZIP, RAR) en foto's met behulp van perceptual hashing, gratis beschikbaar voor Mac en Windows. [Download nu](/nl/archive/) voor Mac of Windows.
 
 ## Waarom Internationale Verzamelaars Dit Nodig Hadden
 
@@ -23,7 +23,7 @@ De app volgt automatisch de taalinstelling van uw besturingssysteem. Ga op macOS
 
 ## Wat Archive Duplicate Scanner Doet
 
-[Archive Duplicate Scanner](/nl/#archive) gebruikt **perceptual hashing** om duplicaten te detecteren. Het opent elk archief (CBZ, CBR, ZIP, RAR) en berekent een perceptual hash van de werkelijke paginaafbeeldingen binnenin. Twee bestanden kunnen volledig verschillende namen, bestandsgroottes en zelfs verschillende compressie hebben — als de pagina's er hetzelfde uitzien, komen ze overeen.
+[Archive Duplicate Scanner](/nl/archive/) gebruikt **perceptual hashing** om duplicaten te detecteren. Het opent elk archief (CBZ, CBR, ZIP, RAR) en berekent een perceptual hash van de werkelijke paginaafbeeldingen binnenin. Twee bestanden kunnen volledig verschillende namen, bestandsgroottes en zelfs verschillende compressie hebben — als de pagina's er hetzelfde uitzien, komen ze overeen.
 
 Andere belangrijke mogelijkheden:
 
@@ -58,4 +58,4 @@ De update is nu beschikbaar op beide platforms:
 - **Mac App Store:** [Download Archive Duplicate Scanner](https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449)
 - **Microsoft Store:** [Download Archive Duplicate Scanner](https://apps.microsoft.com/detail/9n2jb4k5wvcq)
 
-Bezoek de [Archive Duplicate Scanner-pagina](/nl/#archive) voor meer informatie over alle functies voordat u downloadt.
+Bezoek de [Archive Duplicate Scanner-pagina](/nl/archive/) voor meer informatie over alle functies voordat u downloadt.

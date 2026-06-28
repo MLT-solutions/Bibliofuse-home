@@ -1,6 +1,6 @@
 # Cara Membuka Kunci PDF Berlindung Kata Laluan di iPhone dan Mac
 
-[SmartDecrypt PDF ZIP CBZ](/ms/) mengalih keluar kata laluan daripada fail PDF yang dilindungi di iPhone, iPad, dan Mac tanpa menghantar dokumen anda ke sebarang pelayan luar. Ia juga membuka kunci arkib ZIP dan CBZ yang dilindungi kata laluan, dan boleh menyahsulit beberapa fail serentak menggunakan mod kelompok terbina dalam. Jika anda pernah perlu membuka kunci PDF berlindung kata laluan di iPhone tetapi tidak tahu caranya, SmartDecrypt adalah alat khusus yang direka tepat untuk tujuan itu.
+[SmartDecrypt PDF ZIP CBZ](/ms/smartdecrypt/) mengalih keluar kata laluan daripada fail PDF yang dilindungi di iPhone, iPad, dan Mac tanpa menghantar dokumen anda ke sebarang pelayan luar. Ia juga membuka kunci arkib ZIP dan CBZ yang dilindungi kata laluan, dan boleh menyahsulit beberapa fail serentak menggunakan mod kelompok terbina dalam. Jika anda pernah perlu membuka kunci PDF berlindung kata laluan di iPhone tetapi tidak tahu caranya, SmartDecrypt adalah alat khusus yang direka tepat untuk tujuan itu.
 
 ## Mengapa PDF Berlindung Kata Laluan Menyekat Akses di iPhone?
 

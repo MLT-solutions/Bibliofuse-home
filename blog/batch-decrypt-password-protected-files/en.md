@@ -10,7 +10,7 @@ Most decryption tools on iPhone process files one at a time. They have no concep
 
 SmartDecrypt PDF ZIP CBZ solves this with two features working together: **batch decrypt** and **password profiles**. Select all files at once, apply the profile, and tap once.
 
-[SmartDecrypt](/en/) handles this entirely on-device — no cloud service, no per-file wait, no upload.
+[SmartDecrypt](/en/smartdecrypt/) handles this entirely on-device — no cloud service, no per-file wait, no upload.
 
 ## How Batch Decrypt Works in SmartDecrypt
 

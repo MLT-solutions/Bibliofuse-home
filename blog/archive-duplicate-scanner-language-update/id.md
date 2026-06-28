@@ -1,6 +1,6 @@
 # Archive Duplicate Scanner Kini Tersedia dalam Bahasa Portugis, Spanyol, Indonesia, dan Tionghoa
 
-Archive Duplicate Scanner kini mendukung Bahasa Portugis, Spanyol, Indonesia, dan Tionghoa Sederhana — membawa antarmuka aplikasi lengkap ke empat bahasa baru. Aplikasi ini menemukan arsip komik duplikat (CBZ, CBR, ZIP, RAR) dan foto menggunakan perceptual hashing, tersedia gratis untuk Mac dan Windows. Dan kabar baik untuk Anda: **aplikasi ini sekarang berbicara Bahasa Indonesia**. [Unduh sekarang](/id/#archive) dan gunakan dalam bahasa Anda.
+Archive Duplicate Scanner kini mendukung Bahasa Portugis, Spanyol, Indonesia, dan Tionghoa Sederhana — membawa antarmuka aplikasi lengkap ke empat bahasa baru. Aplikasi ini menemukan arsip komik duplikat (CBZ, CBR, ZIP, RAR) dan foto menggunakan perceptual hashing, tersedia gratis untuk Mac dan Windows. Dan kabar baik untuk Anda: **aplikasi ini sekarang berbicara Bahasa Indonesia**. [Unduh sekarang](/id/archive/) dan gunakan dalam bahasa Anda.
 
 ## Mengapa Kolektor Internasional Membutuhkan Ini
 
@@ -23,7 +23,7 @@ Aplikasi secara otomatis mengikuti pengaturan bahasa sistem operasi Anda. Di mac
 
 ## Apa yang Dilakukan Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/id/#archive) menggunakan **perceptual hashing** untuk mendeteksi duplikat. Ini membuka setiap arsip (CBZ, CBR, ZIP, RAR) dan menghitung hash perceptual dari gambar halaman aktual di dalamnya. Dua file dapat memiliki nama yang sepenuhnya berbeda, ukuran file berbeda, dan bahkan kompresi berbeda — jika halamannya terlihat sama, keduanya cocok.
+[Archive Duplicate Scanner](/id/archive/) menggunakan **perceptual hashing** untuk mendeteksi duplikat. Ini membuka setiap arsip (CBZ, CBR, ZIP, RAR) dan menghitung hash perceptual dari gambar halaman aktual di dalamnya. Dua file dapat memiliki nama yang sepenuhnya berbeda, ukuran file berbeda, dan bahkan kompresi berbeda — jika halamannya terlihat sama, keduanya cocok.
 
 Selain arsip, aplikasi ini juga mendeduplikasi foto: JPEG, PNG, HEIC, WEBP, BMP, dan GIF.
 
@@ -66,4 +66,4 @@ Pembaruan tersedia sekarang di kedua platform:
 - **Mac App Store:** [Unduh Archive Duplicate Scanner](https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449)
 - **Microsoft Store:** [Unduh Archive Duplicate Scanner](https://apps.microsoft.com/detail/9n2jb4k5wvcq)
 
-Kunjungi [halaman Archive Duplicate Scanner](/id/#archive) untuk mempelajari lebih lanjut tentang semua fitur sebelum mengunduh.
+Kunjungi [halaman Archive Duplicate Scanner](/id/archive/) untuk mempelajari lebih lanjut tentang semua fitur sebelum mengunduh.

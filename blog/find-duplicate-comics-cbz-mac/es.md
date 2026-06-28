@@ -26,7 +26,7 @@ Esto convierte a Archive Duplicate Scanner en la herramienta adecuada para el ti
 
 ### Paso 1: Descargar e Iniciar Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/es/) está disponible en la Mac App Store. Instálalo y ábrelo desde la carpeta Aplicaciones.
+[Archive Duplicate Scanner](/es/archive/) está disponible en la Mac App Store. Instálalo y ábrelo desde la carpeta Aplicaciones.
 
 ### Paso 2: Añadir la Carpeta de tu Biblioteca de Cómics
 

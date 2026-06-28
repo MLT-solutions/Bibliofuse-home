@@ -10,7 +10,7 @@ Kebanyakan alat penyahsulitan pada iPhone memproses fail satu per satu. Tiada ko
 
 SmartDecrypt PDF ZIP CBZ menyelesaikan masalah ini dengan dua ciri yang berfungsi bersama: **penyahsulitan kelompok** dan **profil kata laluan**. Pilih semua fail sekaligus, terapkan profil dan ketik sekali.
 
-[SmartDecrypt](/ms/) mengendalikan semuanya pada peranti — tanpa perkhidmatan awan, tanpa menunggu setiap fail, tanpa muat naik.
+[SmartDecrypt](/ms/smartdecrypt/) mengendalikan semuanya pada peranti — tanpa perkhidmatan awan, tanpa menunggu setiap fail, tanpa muat naik.
 
 ## Cara Penyahsulitan Kelompok Berfungsi dalam SmartDecrypt
 

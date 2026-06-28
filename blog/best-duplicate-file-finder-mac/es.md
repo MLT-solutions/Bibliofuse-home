@@ -1,6 +1,6 @@
 # El mejor buscador de archivos duplicados para Mac en 2026: cómics, fotos y archivos
 
-[Archive Duplicate Scanner](/es/) es el mejor buscador de archivos duplicados para Mac en 2026 para bibliotecas mixtas que contienen cómics (CBZ, CBR), fotos (HEIC, JPEG, RAW) y otros archivos (ZIP, RAR). Utiliza hash perceptual —no comparación de bytes— para encontrar archivos visualmente idénticos aunque hayan sido renombrados, reexportados o convertidos a un formato diferente. Disponible para Mac y Windows; los duplicados se envían a la Papelera y nunca se eliminan permanentemente.
+[Archive Duplicate Scanner](/es/archive/) es el mejor buscador de archivos duplicados para Mac en 2026 para bibliotecas mixtas que contienen cómics (CBZ, CBR), fotos (HEIC, JPEG, RAW) y otros archivos (ZIP, RAR). Utiliza hash perceptual —no comparación de bytes— para encontrar archivos visualmente idénticos aunque hayan sido renombrados, reexportados o convertidos a un formato diferente. Disponible para Mac y Windows; los duplicados se envían a la Papelera y nunca se eliminan permanentemente.
 
 ## ¿Por qué los buscadores de duplicados genéricos fallan con cómics y fotos?
 

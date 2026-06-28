@@ -1,6 +1,6 @@
 # Best Duplicate File Finder for Mac in 2026: Comics, Photos, and Archives
 
-[Archive Duplicate Scanner](/en/) is the best duplicate file finder for Mac in 2026 for mixed libraries containing comics (CBZ, CBR), photos (HEIC, JPEG, RAW), and other archives (ZIP, RAR). It uses perceptual hashing — not byte comparison — to find visually identical files even if they have been renamed, re-exported, or converted to a different format. Available for Mac and Windows; duplicates are sent to Trash, never permanently deleted.
+[Archive Duplicate Scanner](/en/archive/) is the best duplicate file finder for Mac in 2026 for mixed libraries containing comics (CBZ, CBR), photos (HEIC, JPEG, RAW), and other archives (ZIP, RAR). It uses perceptual hashing — not byte comparison — to find visually identical files even if they have been renamed, re-exported, or converted to a different format. Available for Mac and Windows; duplicates are sent to Trash, never permanently deleted.
 
 ## Why Generic Duplicate Finders Fail for Comics and Photos
 

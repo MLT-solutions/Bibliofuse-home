@@ -10,7 +10,7 @@ Het wachtwoord is zelden het probleem. Je kent het. Misschien heb je het ergens 
 
 De meeste ontsleutelingstools op iPhone verwerken bestanden één voor één en hebben geen geheugen tussen sessies.
 
-SmartDecrypt PDF ZIP CBZ lost dit op met wachtwoordprofielen: een benoemde, veilige, lokale opslag voor elk wachtwoord dat je regelmatig gebruikt. Gebruik [SmartDecrypt](/nl/) om eenmalig een profiel op te slaan en dat wachtwoord nooit meer in te typen.
+SmartDecrypt PDF ZIP CBZ lost dit op met wachtwoordprofielen: een benoemde, veilige, lokale opslag voor elk wachtwoord dat je regelmatig gebruikt. Gebruik [SmartDecrypt](/nl/smartdecrypt/) om eenmalig een profiel op te slaan en dat wachtwoord nooit meer in te typen.
 
 ## Hoe Werken Wachtwoordprofielen?
 

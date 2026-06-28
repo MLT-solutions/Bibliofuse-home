@@ -10,7 +10,7 @@ A maioria das ferramentas de descriptografia no iPhone processa arquivos um de c
 
 SmartDecrypt PDF ZIP CBZ resolve isso com dois recursos combinados: **descriptografia em lote** e **perfis de senha**. Selecione todos os arquivos de uma vez, aplique o perfil e toque uma vez.
 
-[SmartDecrypt](/pt/) lida com tudo no dispositivo — sem serviço de nuvem, sem espera por arquivo, sem upload.
+[SmartDecrypt](/pt/smartdecrypt/) lida com tudo no dispositivo — sem serviço de nuvem, sem espera por arquivo, sem upload.
 
 ## Como funciona a descriptografia em lote no SmartDecrypt
 

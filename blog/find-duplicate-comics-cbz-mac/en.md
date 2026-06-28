@@ -26,7 +26,7 @@ This makes Archive Duplicate Scanner the right tool for the kind of duplicates a
 
 ### Step 1: Download and Launch Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/en/) is available on the Mac App Store. Install it and launch it from Applications.
+[Archive Duplicate Scanner](/en/archive/) is available on the Mac App Store. Install it and launch it from Applications.
 
 ### Step 2: Add Your Comic Library Folder
 

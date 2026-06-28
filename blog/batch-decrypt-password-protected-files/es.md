@@ -10,7 +10,7 @@ La mayoría de las herramientas de descifrado en iPhone procesan archivos uno a 
 
 SmartDecrypt PDF ZIP CBZ resuelve esto con dos funciones combinadas: **descifrado por lotes** y **perfiles de contraseña**. Selecciona todos los archivos a la vez, aplica el perfil y toca una vez.
 
-[SmartDecrypt](/es/) maneja todo en el dispositivo — sin servicio en la nube, sin espera por archivo, sin subidas.
+[SmartDecrypt](/es/smartdecrypt/) maneja todo en el dispositivo — sin servicio en la nube, sin espera por archivo, sin subidas.
 
 ## Cómo funciona el descifrado por lotes en SmartDecrypt
 

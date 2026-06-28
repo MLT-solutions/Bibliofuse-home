@@ -26,7 +26,7 @@ Ini menjadikan Archive Duplicate Scanner alat yang tepat untuk jenis fail pendua
 
 ### Langkah 1: Muat Turun dan Lancarkan Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/ms/) tersedia di Mac App Store. Pasang dan lancarkan dari folder Aplikasi.
+[Archive Duplicate Scanner](/ms/archive/) tersedia di Mac App Store. Pasang dan lancarkan dari folder Aplikasi.
 
 ### Langkah 2: Tambah Folder Perpustakaan Komik Anda
 

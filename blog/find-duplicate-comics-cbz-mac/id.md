@@ -26,7 +26,7 @@ Hal ini menjadikan Archive Duplicate Scanner alat yang tepat untuk jenis duplika
 
 ### Langkah 1: Unduh dan Jalankan Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/id/) tersedia di Mac App Store. Instal dan jalankan dari folder Applications.
+[Archive Duplicate Scanner](/id/archive/) tersedia di Mac App Store. Instal dan jalankan dari folder Applications.
 
 ### Langkah 2: Tambahkan Folder Perpustakaan Komik Anda
 

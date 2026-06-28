@@ -1,6 +1,6 @@
 # Cara Menemukan Foto Duplikat di Mac — Termasuk HEIC, WebP, dan RAW
 
-[Archive Duplicate Scanner](/id/) menemukan foto duplikat di Mac menggunakan perceptual hashing — teknik yang mencocokkan gambar yang identik secara visual meskipun memiliki nama file, format, atau pengaturan kompresi yang berbeda. Aplikasi ini mendukung HEIC, WebP, JPEG, PNG, TIFF, RAW, dan puluhan format lainnya. Tersedia untuk Mac dan Windows, serta memindahkan duplikat ke Tempat Sampah dengan aman alih-alih menghapusnya secara permanen.
+[Archive Duplicate Scanner](/id/archive/) menemukan foto duplikat di Mac menggunakan perceptual hashing — teknik yang mencocokkan gambar yang identik secara visual meskipun memiliki nama file, format, atau pengaturan kompresi yang berbeda. Aplikasi ini mendukung HEIC, WebP, JPEG, PNG, TIFF, RAW, dan puluhan format lainnya. Tersedia untuk Mac dan Windows, serta memindahkan duplikat ke Tempat Sampah dengan aman alih-alih menghapusnya secara permanen.
 
 ## Masalah Perpustakaan Foto yang Terus Bertumbuh Tanpa Batas
 

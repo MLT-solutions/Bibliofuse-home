@@ -4,7 +4,7 @@ Anda membuka folder manga dan perasan sesuatu yang pelik: jilid 47 *One Piece* a
 
 Bagi kebanyakan pembaca manga, fail pendua terkumpul secara senyap selama bertahun-tahun daripada muat turun pelbagai sumber, pemindahan arkib antara pemacu, dan sandaran yang tidak pernah dibersihkan. Hasilnya ialah ruang storan yang terbuang, kekeliruan semasa membaca, dan tiada cara mudah untuk menentukan versi mana yang paling berkualiti.
 
-Panduan ini menerangkan aliran kerja praktikal untuk mencari, menyemak, dan membuang manga pendua menggunakan [Archive Duplicate Scanner](/en/) — utiliti Mac yang direka khusus untuk masalah ini.
+Panduan ini menerangkan aliran kerja praktikal untuk mencari, menyemak, dan membuang manga pendua menggunakan [Archive Duplicate Scanner](/en/archive/) — utiliti Mac yang direka khusus untuk masalah ini.
 
 ---
 
@@ -24,7 +24,7 @@ Pencari fail pendua standard tidak akan mengesan kebanyakan kes ini kerana merek
 
 ## Apa yang Archive Duplicate Scanner Lakukan Berbeza
 
-[Archive Duplicate Scanner](/en/) menggunakan **pencincangan persepsi** untuk membandingkan imej sebenar di dalam arkib CBZ dan CBR anda. Daripada bertanya "adakah dua fail ini sama bait demi bait?", ia bertanya "adakah dua arkib ini mengandungi halaman komik yang sama?"
+[Archive Duplicate Scanner](/en/archive/) menggunakan **pencincangan persepsi** untuk membandingkan imej sebenar di dalam arkib CBZ dan CBR anda. Daripada bertanya "adakah dua fail ini sama bait demi bait?", ia bertanya "adakah dua arkib ini mengandungi halaman komik yang sama?"
 
 Ini bermakna ia mengesan fail pendua yang telah:
 

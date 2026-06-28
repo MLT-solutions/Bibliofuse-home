@@ -10,7 +10,7 @@ Le mot de passe n'est presque jamais le vrai problème. Vous le connaissez. Vous
 
 La plupart des outils de déchiffrement sur iPhone traitent les fichiers un par un et n'ont aucune mémoire entre les sessions.
 
-SmartDecrypt PDF ZIP CBZ résout ce problème avec des profils de mots de passe : un stockage nommé, sécurisé et local pour chaque mot de passe que vous utilisez régulièrement. Utilisez [SmartDecrypt](/fr/) pour enregistrer un profil une fois et ne plus jamais retaper ce mot de passe.
+SmartDecrypt PDF ZIP CBZ résout ce problème avec des profils de mots de passe : un stockage nommé, sécurisé et local pour chaque mot de passe que vous utilisez régulièrement. Utilisez [SmartDecrypt](/fr/smartdecrypt/) pour enregistrer un profil une fois et ne plus jamais retaper ce mot de passe.
 
 ## Comment Fonctionnent les Profils de Mots de Passe ?
 

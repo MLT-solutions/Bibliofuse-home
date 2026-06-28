@@ -26,7 +26,7 @@ Isto faz do Archive Duplicate Scanner a ferramenta certa para o tipo de duplicad
 
 ### Passo 1: Descarregar e Iniciar o Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/pt/) está disponível na Mac App Store. Instale-o e inicie-o a partir da pasta Aplicações.
+[Archive Duplicate Scanner](/pt/archive/) está disponível na Mac App Store. Instale-o e inicie-o a partir da pasta Aplicações.
 
 ### Passo 2: Adicionar a Pasta da Sua Biblioteca de Banda Desenhada
 

@@ -93,4 +93,4 @@ The update with Portuguese, Spanish, Bahasa Indonesia, and Simplified Chinese is
 - **iOS & Mac App Store:** [Download SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)
 - **Microsoft Store:** Available on Windows — search for SmartDecrypt PDF ZIP CBZ
 
-Visit the [SmartDecrypt section on bibliofuse.com](/en/#smartdecrypt) to see the full feature overview before downloading.
+Visit the [SmartDecrypt section on bibliofuse.com](/en/smartdecrypt/) to see the full feature overview before downloading.

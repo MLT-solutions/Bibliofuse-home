@@ -26,7 +26,7 @@ Archive Duplicate Scanner 使用感知哈希查找其他任何工具都无法发
 
 ### 第一步：下载并启动 Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/zh/) 已在 Mac App Store 上架。安装后从"应用程序"文件夹启动。
+[Archive Duplicate Scanner](/zh/archive/) 已在 Mac App Store 上架。安装后从"应用程序"文件夹启动。
 
 ### 第二步：添加漫画库文件夹
 

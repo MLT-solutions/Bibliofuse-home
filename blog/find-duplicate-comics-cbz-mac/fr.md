@@ -26,7 +26,7 @@ Cela fait d'Archive Duplicate Scanner l'outil idéal pour détecter les doublons
 
 ### Étape 1 : Télécharger et Lancer Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/fr/) est disponible sur le Mac App Store. Installez-le et lancez-le depuis le dossier Applications.
+[Archive Duplicate Scanner](/fr/archive/) est disponible sur le Mac App Store. Installez-le et lancez-le depuis le dossier Applications.
 
 ### Étape 2 : Ajouter votre Dossier de Bibliothèque de BD
 

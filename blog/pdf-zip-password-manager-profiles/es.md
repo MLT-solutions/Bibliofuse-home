@@ -10,7 +10,7 @@ La contraseña rara vez es el problema. La conoces. Quizás la tienes guardada e
 
 La mayoría de las herramientas de descifrado en iPhone procesan los archivos de uno en uno y no tienen memoria entre sesiones.
 
-SmartDecrypt PDF ZIP CBZ resuelve esto con perfiles de contraseñas: un almacén seguro y con nombre en el dispositivo para cada contraseña que usas regularmente. Usa [SmartDecrypt](/es/) para guardar un perfil una vez y no volver a escribir esa contraseña jamás.
+SmartDecrypt PDF ZIP CBZ resuelve esto con perfiles de contraseñas: un almacén seguro y con nombre en el dispositivo para cada contraseña que usas regularmente. Usa [SmartDecrypt](/es/smartdecrypt/) para guardar un perfil una vez y no volver a escribir esa contraseña jamás.
 
 ## ¿Cómo Funcionan los Perfiles de Contraseñas?
 

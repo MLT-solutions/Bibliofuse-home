@@ -10,7 +10,7 @@ De meeste ontsleuteltools op iPhone verwerken bestanden één voor één. Ze bie
 
 SmartDecrypt PDF ZIP CBZ lost dit op met twee gecombineerde functies: **batchontsleuteling** en **wachtwoordprofielen**. Selecteer alle bestanden tegelijk, pas het profiel toe en tik één keer.
 
-[SmartDecrypt](/nl/) verwerkt alles op het apparaat — geen cloudservice, geen wachten per bestand, geen upload.
+[SmartDecrypt](/nl/smartdecrypt/) verwerkt alles op het apparaat — geen cloudservice, geen wachten per bestand, geen upload.
 
 ## Hoe werkt batchontsleuteling in SmartDecrypt?
 
