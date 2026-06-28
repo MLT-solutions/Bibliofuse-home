@@ -1,6 +1,6 @@
 # Trouver des photos en double sur Mac — Y compris HEIC, WebP et RAW
 
-[Archive Duplicate Scanner](/fr/) trouve les photos en double sur Mac grâce au hachage perceptuel, une technique qui identifie les images visuellement identiques même si elles ont des noms de fichiers différents, des formats distincts ou des paramètres de compression variés. Il prend en charge HEIC, WebP, JPEG, PNG, TIFF, RAW et des dizaines d'autres formats. L'application est disponible pour Mac et Windows, et déplace les doublons vers la Corbeille en toute sécurité plutôt que de les supprimer définitivement.
+[Archive Duplicate Scanner](/fr/archive/) trouve les photos en double sur Mac grâce au hachage perceptuel, une technique qui identifie les images visuellement identiques même si elles ont des noms de fichiers différents, des formats distincts ou des paramètres de compression variés. Il prend en charge HEIC, WebP, JPEG, PNG, TIFF, RAW et des dizaines d'autres formats. L'application est disponible pour Mac et Windows, et déplace les doublons vers la Corbeille en toute sécurité plutôt que de les supprimer définitivement.
 
 ## Le problème des bibliothèques de photos qui grandissent sans limite
 
@@ -78,4 +78,4 @@ Oui. Archive Duplicate Scanner est disponible pour Mac et Windows. La version Wi
 
 Une bibliothèque de 40 000 photos avec 30 % de doublons gaspille des dizaines de gigaoctets d'espace disque. Archive Duplicate Scanner vous donne les outils pour la nettoyer en toute sécurité — hachage perceptuel qui détecte les doublons visuels entre formats, stratégies de sélection automatique qui éliminent les approximations, et suppression vers la Corbeille uniquement qui vous protège.
 
-[Téléchargez Archive Duplicate Scanner](/fr/) et lancez votre première analyse dès aujourd'hui. Si vous souhaitez également compresser ou convertir par lots vos collections de photos, l'[outil web BiblioFuse](/fr/webapp/) gère les fichiers EPUB, CBZ et PDF entièrement dans votre navigateur.
+[Téléchargez Archive Duplicate Scanner](/fr/archive/) et lancez votre première analyse dès aujourd'hui. Si vous souhaitez également compresser ou convertir par lots vos collections de photos, l'[outil web BiblioFuse](/fr/webapp/) gère les fichiers EPUB, CBZ et PDF entièrement dans votre navigateur.

@@ -4,7 +4,7 @@ Renombraste un archivo. Recomprimiste un archivo comprimido. Descargaste el mism
 
 Sin embargo, el cómic dentro es el mismo. Cada página es la misma. Y si estás intentando limpiar tu biblioteca digital, estos duplicados casi idénticos son exactamente los que se escapan de los buscadores de duplicados estándar.
 
-Este es el problema que resuelve el hash perceptual, y es la técnica en el núcleo de [Archive Duplicate Scanner](/es/).
+Este es el problema que resuelve el hash perceptual, y es la técnica en el núcleo de [Archive Duplicate Scanner](/es/archive/).
 
 ---
 
@@ -42,7 +42,7 @@ El hash resultante es típicamente de 64–256 bits. Dos imágenes con contenido
 
 ## Cómo Archive Duplicate Scanner Aplica Esto
 
-[Archive Duplicate Scanner](/es/) aplica el hash perceptual a nivel de archivo:
+[Archive Duplicate Scanner](/es/archive/) aplica el hash perceptual a nivel de archivo:
 
 1. **Extracción** — abre cada archivo CBZ o CBR y lee las imágenes internas
 2. **Hash de cada página** — cada página recibe un hash perceptual
@@ -78,7 +78,7 @@ Un archivo tiene páginas llamadas `001.jpg, 002.jpg...` mientras otro tiene `pa
 
 ## Usando Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/es/) es una aplicación Mac nativa:
+[Archive Duplicate Scanner](/es/archive/) es una aplicación Mac nativa:
 
 - Escanea árboles de carpetas completos de forma recursiva
 - Maneja CBZ, CBR y archivos de imagen sueltos

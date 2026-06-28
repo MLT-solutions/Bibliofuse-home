@@ -1,6 +1,6 @@
 # Cara Membuka File CBZ dan ZIP yang Dilindungi Password di iPhone
 
-SmartDecrypt PDF ZIP CBZ membuka arsip CBZ dan ZIP yang dilindungi password langsung di iPhone, iPad, dan Mac tanpa mengunggah file Anda ke server mana pun. Aplikasi mendekripsi arsip CBZ komik dan file ZIP di perangkat menggunakan mesin berbasis Rust, lalu menyimpan salinan yang tidak terkunci ke aplikasi Files. Setelah dekripsi, buka komik CBZ Anda di [BiblioFuse](/id/) untuk pengalaman membaca terbaik di iPhone. Unduh SmartDecrypt PDF ZIP CBZ dari App Store untuk menghapus password arsip dalam hitungan detik.
+[SmartDecrypt PDF ZIP CBZ](/id/smartdecrypt/) membuka arsip CBZ dan ZIP yang dilindungi password langsung di iPhone, iPad, dan Mac tanpa mengunggah file Anda ke server mana pun. Aplikasi mendekripsi arsip CBZ komik dan file ZIP di perangkat menggunakan mesin berbasis Rust, lalu menyimpan salinan yang tidak terkunci ke aplikasi Files. Setelah dekripsi, buka komik CBZ Anda di [BiblioFuse](/id/) untuk pengalaman membaca terbaik di iPhone. Unduh SmartDecrypt PDF ZIP CBZ dari App Store untuk menghapus password arsip dalam hitungan detik.
 
 ## Mengapa File CBZ yang Dilindungi Password Tidak Bisa Dibuka di Sebagian Besar Pembaca Komik?
 
@@ -69,4 +69,4 @@ SmartDecrypt memerlukan password yang benar — tidak mencoba menebak atau memak
 
 ## Buka Kunci Komik dan Arsip Anda
 
-File CBZ dan ZIP yang dilindungi password tidak harus menghalangi alur membaca Anda. SmartDecrypt PDF ZIP CBZ mendekripsi arsip yang dilindungi di iPhone atau Mac Anda dalam hitungan detik tanpa unggahan. Cari **SmartDecrypt PDF ZIP CBZ** di App Store untuk memulai, lalu buka komik yang didekripsi di [BiblioFuse](/id/).
+File CBZ dan ZIP yang dilindungi password tidak harus menghalangi alur membaca Anda. SmartDecrypt PDF ZIP CBZ mendekripsi arsip yang dilindungi di iPhone atau Mac Anda dalam hitungan detik tanpa unggahan. Cari [SmartDecrypt PDF ZIP CBZ](/id/smartdecrypt/) di App Store untuk memulai, lalu buka komik yang didekripsi di [BiblioFuse](/id/).

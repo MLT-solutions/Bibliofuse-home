@@ -4,7 +4,7 @@ Anda menamakan semula fail. Anda memampatkan semula arkib. Anda memuat turun jil
 
 Namun, komik di dalamnya adalah sama. Setiap halaman adalah sama. Dan jika anda cuba membersihkan perpustakaan digital anda, pendua yang hampir serupa ini adalah tepat yang terlepas daripada pencari pendua standard.
 
-Inilah masalah yang diselesaikan pencincangan persepsi, dan ia adalah teknik teras [Archive Duplicate Scanner](/en/).
+Inilah masalah yang diselesaikan pencincangan persepsi, dan ia adalah teknik teras [Archive Duplicate Scanner](/en/archive/).
 
 ---
 
@@ -40,7 +40,7 @@ Dua imej dengan kandungan visual yang serupa menghasilkan cincang dengan **jarak
 
 ## Cara Archive Duplicate Scanner Menerapkan Ini
 
-[Archive Duplicate Scanner](/en/) menerapkan pencincangan persepsi di peringkat arkib:
+[Archive Duplicate Scanner](/en/archive/) menerapkan pencincangan persepsi di peringkat arkib:
 
 1. **Pengekstrakan** — membuka setiap CBZ atau CBR dan membaca imej dalaman
 2. **Mencincang setiap halaman** — setiap halaman mendapat cincang persepsi
@@ -73,6 +73,6 @@ Apabila 90% halaman dalam dua arkib sepadan, kemungkinan positif palsu turun ham
 
 ## Menggunakan Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/en/) ialah aplikasi Mac asli yang mengalihkan pendua terpilih ke Tong Sampah (bukan pemadaman kekal).
+[Archive Duplicate Scanner](/en/archive/) ialah aplikasi Mac asli yang mengalihkan pendua terpilih ke Tong Sampah (bukan pemadaman kekal).
 
 Setelah perpustakaan anda bersih, padankan dengan [BiblioFuse](/en/) di iPhone untuk satu sumber bacaan yang terkurasi.

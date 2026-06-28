@@ -1,6 +1,6 @@
 # Como abrir arquivos CBZ e ZIP protegidos por senha no iPhone
 
-SmartDecrypt PDF ZIP CBZ abre arquivos CBZ e ZIP protegidos por senha diretamente no iPhone, iPad e Mac sem enviar seus arquivos para nenhum servidor. O aplicativo descriptografa arquivos CBZ de quadrinhos e arquivos ZIP no dispositivo usando um mecanismo baseado em Rust e salva a cópia desbloqueada no aplicativo Arquivos. Após a descriptografia, abra seus quadrinhos CBZ em [BiblioFuse](/pt/) para a melhor experiência de leitura no iPhone. Baixe SmartDecrypt PDF ZIP CBZ da App Store para remover senhas de arquivos em segundos.
+[SmartDecrypt PDF ZIP CBZ](/pt/smartdecrypt/) abre arquivos CBZ e ZIP protegidos por senha diretamente no iPhone, iPad e Mac sem enviar seus arquivos para nenhum servidor. O aplicativo descriptografa arquivos CBZ de quadrinhos e arquivos ZIP no dispositivo usando um mecanismo baseado em Rust e salva a cópia desbloqueada no aplicativo Arquivos. Após a descriptografia, abra seus quadrinhos CBZ em [BiblioFuse](/pt/) para a melhor experiência de leitura no iPhone. Baixe SmartDecrypt PDF ZIP CBZ da App Store para remover senhas de arquivos em segundos.
 
 ## Por que arquivos CBZ protegidos por senha não abrem na maioria dos leitores de quadrinhos?
 
@@ -69,4 +69,4 @@ SmartDecrypt requer a senha correta — não tenta adivinhar ou forçar senhas d
 
 ## Desbloqueie seus quadrinhos e arquivos
 
-Arquivos CBZ e ZIP protegidos por senha não precisam mais bloquear seu fluxo de leitura. SmartDecrypt PDF ZIP CBZ descriptografa qualquer arquivo protegido no seu iPhone ou Mac em segundos. Pesquise **SmartDecrypt PDF ZIP CBZ** na App Store para começar e abra seus quadrinhos descriptografados em [BiblioFuse](/pt/).
+Arquivos CBZ e ZIP protegidos por senha não precisam mais bloquear seu fluxo de leitura. SmartDecrypt PDF ZIP CBZ descriptografa qualquer arquivo protegido no seu iPhone ou Mac em segundos. Pesquise [SmartDecrypt PDF ZIP CBZ](/pt/smartdecrypt/) na App Store para começar e abra seus quadrinhos descriptografados em [BiblioFuse](/pt/).

@@ -1,102 +1,112 @@
 # Reading Ebooks Completely Offline on iPhone: No Cloud Required
 
-BiblioFuse stores all your EPUB, CBZ, CBR, PDF, ZIP, RAR, and TXT files locally on your iPhone, so you can read your entire library offline — on planes, underground, or anywhere with no signal — without a cloud subscription or account. The app runs on iOS 17 or later, and your books stay on-device until you choose to remove them. Reading ebooks offline on iPhone with BiblioFuse requires no internet connection after the initial file transfer.
+You're boarding a 14-hour flight. Your carry-on has your iPhone with 300 ebooks, 40 manga volumes, and several graphic novels. The airline's Wi-Fi is paid and slow. You tap [BiblioFuse](https://bibliofuse.com/en/) — every book opens instantly, from the exact page you were on, without a network request in sight.
 
-You've been there before: boarding a long flight, reaching for your reading app, and getting a spinning icon or a "library unavailable" error. Cloud-dependent apps treat offline access as a secondary concern — sometimes as a paid upgrade. BiblioFuse flips that assumption. Your library lives on your iPhone, and reading works exactly the same whether you have full LTE or no signal at all.
+That's not a setup — it's the default. BiblioFuse stores everything locally on your device and syncs progress through iCloud in the background when a connection is available. No cloud account required to read. No streaming. No loading spinners.
 
-## Why Most Reading Apps Fail Without a Connection
+## Why Cloud Dependence Is a Problem
 
-Popular ebook apps like Kindle or Apple Books let you download specific titles for offline reading, but only from within their own ecosystems. Files you own in third-party formats, or files sourced outside their stores, often can't be imported at all. Apps built around streaming from a cloud service simply refuse to open files without a connection.
+Most reading apps were designed with a subscription in mind. The cloud isn't a feature — it's a lock-in mechanism. Your books live on a server, your progress is server-side, and the app stops working if the company shuts down, changes its terms, or your subscription lapses.
 
-BiblioFuse is local-first. Files you transfer to the app are stored in its own container on your device. No server is contacted during reading — the app just opens the file from local storage. That's how reading ebooks offline on iPhone should work.
+Even Apple Books uses a cloud-first model. Books you "own" through Apple are backed by DRM and iCloud downloads — they're not truly local until explicitly downloaded, and they're tied to your Apple ID.
 
-## How to Transfer Files for Offline Reading
+For people with large DRM-free libraries — CBZ comic archives, EPUB files from publishers, PDF textbooks — this model doesn't fit. You own the files. You want to read them without surrendering them to a service.
 
-Before you can read offline, your files need to be on the device. [BiblioFuse](https://bibliofuse.com/en/) supports four transfer methods, all of which result in locally stored files that work without internet:
+## How BiblioFuse Stores Your Library Locally
 
-### Wi-Fi Transfer (Fastest for Bulk)
+BiblioFuse is offline-first by design. When you add a file to the app — through Wi-Fi Transfer, AirDrop, the Files app, or any other method — it's copied into the app's local sandbox on your iPhone. The original file on your Mac or wherever you sent it from stays there; BiblioFuse has its own copy on the device.
 
-BiblioFuse includes a built-in Wi-Fi Transfer feature under the Tools tab. Enable it, and a local web address appears — open that address in any browser on your Mac or PC and drag your files directly into the window. Files land in BiblioFuse over your local Wi-Fi network without a cable or cloud account. Internet access is not required — only local Wi-Fi.
+This means:
 
-A 100-file library typically imports in under two minutes this way.
+- Your entire library is accessible at any time, regardless of network status
+- Reading progress is tracked locally and synced to iCloud when connected
+- No account is required to use the app — not even an Apple ID (though iCloud sync uses one if enabled)
+- The app functions identically on a plane, in a subway tunnel, or in a rural area with no signal
 
-### AirDrop (Apple Devices Only)
+BiblioFuse supports EPUB, CBZ, CBR, ZIP, PDF, and plain image archives. Every format works offline with no difference in behaviour.
 
-On Mac or iPad, select your comic and ebook files in Finder or Files. Right-click → Share → AirDrop → select your iPhone. Transferred files land in Files → Downloads on your iPhone. Open the Files app, select the transferred files, tap Share, and choose BiblioFuse. They're imported directly into local storage.
+## Getting Ebooks and Comics Onto Your iPhone
 
-### Files App and Share Sheet
+There are three ways to load files into BiblioFuse without depending on a cloud service.
 
-If your files arrive via email attachment, USB cable, or direct download, they appear in the Files app. Select them, tap Share, and send to BiblioFuse. One tap imports them into local storage.
+### Method 1: Wi-Fi Transfer (Local Network, No Internet)
 
-### iCloud Drive Import
+Wi-Fi Transfer is BiblioFuse's built-in tool for moving files from a Mac or PC to iPhone over a local Wi-Fi network. It doesn't touch the internet.
 
-Files in iCloud Drive are still technically cloud-stored. To make them truly offline-ready, open the Files app, navigate to the file, share it to BiblioFuse. BiblioFuse creates a local copy in its own container. From that point forward, the file is fully available offline — the iCloud original is no longer needed.
+1. Open [BiblioFuse](https://bibliofuse.com/en/) on your iPhone and tap **Tools** at the bottom.
+2. Tap **Wi-Fi Transfer** and note the IP address displayed.
+3. On your Mac, open a browser and go to that IP address.
+4. Drag your EPUB, CBZ, or PDF files into the browser upload area.
 
-## What "Locally Stored" Means in Practice
+Files transfer at local network speed — typically 30–80 MB/s — and land directly in your library. No intermediary app, no iCloud, no internet connection used.
 
-When BiblioFuse imports a file, it copies that file into its own sandboxed storage on your iPhone. The original source — iCloud Drive, AirDrop, Wi-Fi Transfer — becomes irrelevant. The file now lives on your device.
+### Method 2: AirDrop
 
-**Storage space:** Your iPhone's available storage determines library size. A typical EPUB novel runs 2–10 MB. A CBZ comic issue averages 30–150 MB depending on image resolution. A complete manga series in CBZ might use 1–5 GB. A 128 GB iPhone can comfortably hold 600–800 comic issues alongside other apps.
+For moving a handful of files quickly from another Apple device:
 
-**Deleting files:** Removing a title from BiblioFuse frees up local storage. It doesn't touch any copy in iCloud Drive or on your Mac. Local library and cloud storage are managed independently.
+1. Share the files via AirDrop from Mac, iPad, or another iPhone.
+2. Accept the transfer on your iPhone.
+3. Find the files in **Files → Downloads**.
+4. Select them, tap Share, and choose BiblioFuse.
 
-**Reading progress sync:** BiblioFuse syncs bookmarks, reading position, tags, and ratings via iCloud when a connection is available. Sync is automatic when you reconnect — you won't lose your place even after weeks offline. The files themselves don't need to be in iCloud for this sync to work.
+AirDrop uses peer-to-peer Wi-Fi. It works between your own Apple devices regardless of whether either has cellular or internet access.
 
-## Everything That Works Offline
+### Method 3: Files App via USB
 
-Once files are imported, every core feature works without internet:
+Connect your iPhone to your Mac via USB and use Finder (macOS Catalina or later):
 
-- **All reading modes** — page-by-page, continuous scroll, double-page spread — are fully offline.
-- **All formats** — EPUB, CBZ, CBR, PDF, ZIP, RAR, TXT — open identically connected or not.
-- **OCR** — Apple's Vision framework runs on-device; text extraction from comic panels and scanned pages works without a connection.
-- **Bookmarks and highlights** — saved locally, synced to other devices when you reconnect.
-- **Tags and ratings** — stored locally in BiblioFuse's database.
-- **Library search** — searches your local metadata; no network request.
+1. Select your iPhone in Finder.
+2. Click **Files**.
+3. Drag files directly into BiblioFuse's file area.
 
-The only feature that requires network access is **Mac Home Library Streaming**, which streams content from your Mac over local Wi-Fi. Everything else is fully local.
+USB transfers are the fastest and most reliable method for large libraries — hundreds of volumes transfer in minutes.
 
-## Is Offline Reading Slower?
+## What Happens to Reading Progress When You're Offline?
 
-No — it's faster. Local storage access is significantly quicker than streaming or downloading from a cloud. When BiblioFuse opens a 200 MB CBZ file stored on your device, it reads directly from the flash storage. Pages load instantly regardless of file size.
+BiblioFuse writes reading progress to a local database on your device. Every page turn, bookmark, and annotation is stored locally first. When an internet connection becomes available, changes sync to iCloud automatically.
 
-Cloud-dependent apps often load progressively — the first few pages are available while later pages download. BiblioFuse doesn't do this. A 400-page manga volume opens with the same speed as a 10-page issue.
+If you read on iPhone offline, then later open BiblioFuse on iPad or Mac, your progress is waiting. The sync uses the most recent timestamp — so there's no conflict or data loss even if both devices were offline at the same time.
 
-## Practical Offline Reading Scenarios
+You don't need to do anything to trigger this sync. BiblioFuse handles it in the background as soon as your device connects.
 
-**Long-haul flights:** Transfer your reading queue the night before. During the flight, your library is fully available — no airline Wi-Fi required.
+## Offline-Compatible Formats Supported
 
-**Train and tube commutes:** Underground segments with no signal are non-events. BiblioFuse pages don't freeze or require re-loading when you come out of a tunnel.
+BiblioFuse reads the following formats entirely offline:
 
-**Travel without data roaming:** If you're abroad without a local SIM, your library stays fully accessible. Only features that require internet (like app updates) are affected.
+| Format | Common use |
+|--------|-----------|
+| EPUB | Ebooks, novels, non-fiction |
+| CBZ | Comic archives (ZIP-based) |
+| CBR | Comic archives (RAR-based) |
+| ZIP | Image archives |
+| PDF | Textbooks, art books, scanned documents |
 
-**Remote locations:** Hiking trips, rural areas, boats — your phone's storage is the only requirement.
+All formats open at the same speed offline as online. There's no degraded mode, no watermarks, and no ads.
 
-## Frequently Asked Questions
+## Common Questions
 
-### Does BiblioFuse need Wi-Fi to read ebooks on iPhone?
+**Do I need an Apple account to use BiblioFuse offline?**
 
-No. Once files are imported into BiblioFuse, the app reads them from local storage on your iPhone. No internet or Wi-Fi is needed to open, read, or navigate any file in your library. Wi-Fi is only used during the initial file transfer if you use the Wi-Fi Transfer method.
+No. BiblioFuse works entirely without an Apple ID. If you don't use iCloud, progress is stored locally and won't sync to other devices, but everything else — reading, bookmarks, library management — works fine.
 
-### Can I read EPUB files offline on iPhone without an account?
+**Can I read DRM-free ebooks purchased from non-Apple stores?**
 
-Yes. BiblioFuse doesn't require an account, login, or subscription. Transfer your EPUB files once, and you can read them indefinitely, completely offline. There are no account requirements for reading.
+Yes. BiblioFuse reads any DRM-free EPUB file regardless of where you got it. Ebooks from publishers, Project Gutenberg, or stores that offer DRM-free EPUB downloads all work. BiblioFuse cannot open DRM-protected files.
 
-### How do I transfer ebooks to iPhone without internet?
+**Will my files take up device storage?**
 
-Use BiblioFuse's Wi-Fi Transfer (Mac or PC to iPhone over local Wi-Fi — no internet connection required, only a shared local network) or AirDrop (no network at all, peer-to-peer). Both methods import files directly into BiblioFuse's local library without going through any cloud service.
+Yes — because files are stored locally, they use device storage rather than streaming. A typical EPUB novel is 1–5 MB. A high-quality CBZ manga volume is 80–200 MB. For a few dozen to a few hundred books, storage is not a practical concern on modern iPhones.
 
-### What formats can I read offline on iPhone with BiblioFuse?
+**Does the app work in Airplane Mode?**
 
-BiblioFuse reads EPUB, PDF, CBZ, CBR, ZIP, RAR, and TXT files offline. All formats are treated identically — there's no format-specific limitation on offline access.
+Completely. Enable Airplane Mode and open BiblioFuse — your entire library is there, progress tracking works, and bookmarks function normally. iCloud sync simply pauses until you reconnect.
 
-### Will my reading progress be lost if I'm offline for weeks?
+**What if I want to read on multiple devices?**
 
-No. Reading progress is saved to local storage on your iPhone as you read. When you reconnect to the internet, BiblioFuse syncs that progress to iCloud and across your other devices automatically. You won't lose your place.
+BiblioFuse syncs reading progress across devices via iCloud when you're connected. You read on iPhone offline; the next time you connect, progress syncs automatically to your iPad and Mac. You need to manually transfer the book files to each device — they aren't streamed. Once a file is on a device, it's available offline on that device.
 
-### How much iPhone storage do I need for an offline library?
+## The Core Takeaway
 
-It depends on your files. EPUB novels average 5 MB each — 1,000 novels fit in about 5 GB. CBZ comic issues average 60–100 MB — 100 issues use 6–10 GB. A full manga series of 20 volumes might be 2–4 GB in CBZ. As a rough guide, budget 1 GB for every 10–15 comic volumes.
+BiblioFuse is built on the assumption that your reading life shouldn't depend on a server being available. Your files are local. Your progress is local first. Your reading experience is identical whether you're on a fibre connection or 30,000 feet in the air.
 
-## Your Library, Wherever You Go
-
-Reading ebooks offline on iPhone shouldn't require a workaround or a premium plan. With [BiblioFuse](https://bibliofuse.com/en/), your library is fully portable — on planes, trains, underground, or in places with no signal. Transfer your files once, and the app handles everything else entirely on-device. No account. No cloud. No connection required.
+If you have a library of ebooks or comics and want to read them on iPhone without cloud dependency, [BiblioFuse](https://bibliofuse.com/en/) is the direct path. Load your files once over Wi-Fi, AirDrop, or USB — then read anywhere.

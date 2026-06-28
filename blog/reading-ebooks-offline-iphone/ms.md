@@ -1,102 +1,108 @@
-# Membaca Buku Elektronik Tanpa Talian di iPhone: Tanpa Awan
+# Membaca Ebook Sepenuhnya Luar Talian di iPhone: Tanpa Awan
 
-BiblioFuse menyimpan semua fail EPUB, CBZ, CBR, PDF, ZIP, RAR dan TXT secara tempatan di iPhone anda, membolehkan anda membaca seluruh perpustakaan tanpa talian — di dalam pesawat, kereta api bawah tanah, atau di mana-mana sahaja tanpa isyarat — tanpa langganan atau akaun awan. Aplikasi ini berfungsi pada iOS 17 atau lebih baharu, dan buku-buku anda kekal di peranti sehingga anda sendiri memilih untuk memadamnya. Membaca buku elektronik tanpa talian di iPhone dengan BiblioFuse tidak memerlukan sambungan internet selepas pemindahan fail pertama.
+Anda hendak menaiki penerbangan 14 jam. Dalam beg tangan ada iPhone dengan 300 ebook, 40 jilid manga, dan beberapa novel grafik. Wi-Fi syarikat penerbangan berbayar dan perlahan. Anda membuka [BiblioFuse](https://bibliofuse.com/ms/) — setiap buku terus terbuka di halaman terakhir yang dibaca, tanpa satu pun permintaan rangkaian.
 
-Anda pasti pernah mengalaminya: menaiki penerbangan jauh, membuka aplikasi membaca, dan mendapati ikon berputar atau mesej ralat "perpustakaan tidak tersedia". Aplikasi yang bergantung pada awan menganggap akses tanpa talian sebagai perkara kedua — kadang-kadang sebagai ciri berbayar. BiblioFuse membalikkan andaian itu. Perpustakaan anda berada di iPhone anda, dan pembacaan berfungsi dengan cara yang sama sama ada anda mempunyai LTE penuh atau tiada isyarat langsung.
+Ini bukan tetapan khas — inilah kelakuan lalainya. BiblioFuse menyimpan semua kandungan secara setempat di peranti dan menyegerakkan kemajuan melalui iCloud di latar belakang apabila sambungan tersedia. Tiada akaun awan diperlukan untuk membaca. Tanpa penstriman. Tanpa skrin pemuatan.
 
-## Mengapa Kebanyakan Aplikasi Membaca Gagal Tanpa Sambungan?
+## Mengapa Kebergantungan Awan Menjadi Masalah
 
-Aplikasi buku elektronik popular seperti Kindle atau Apple Books membenarkan anda memuat turun tajuk tertentu untuk membaca tanpa talian, tetapi hanya dalam ekosistem mereka sendiri. Fail yang anda miliki dalam format pihak ketiga, atau fail yang diperoleh dari luar kedai mereka, sering kali tidak dapat diimport langsung. Aplikasi yang direka untuk penstriman dari perkhidmatan awan hanya menolak untuk membuka fail tanpa sambungan.
+Kebanyakan aplikasi membaca direka dengan langganan dalam fikiran. Awan bukan ciri — ia adalah mekanisme penguncian. Buku-buku anda tersimpan di pelayan, kemajuan anda ada di pelayan, dan aplikasi berhenti berfungsi jika syarikat tutup, mengubah terma, atau langganan anda tamat.
 
-[BiblioFuse](https://bibliofuse.com/ms/) mengutamakan storan tempatan. Fail yang anda pindahkan ke aplikasi disimpan dalam bekas tersendiri di peranti anda. Tiada pelayan dihubungi semasa membaca — aplikasi hanya membuka fail dari storan tempatan. Begitulah cara membaca buku elektronik tanpa talian di iPhone sepatutnya berfungsi.
+Malah Apple Books menggunakan model awan-dahulu. Buku yang anda "miliki" melalui Apple dilindungi DRM dan muat turun iCloud — belum benar-benar setempat sehingga dimuat turun secara eksplisit, dan terikat kepada Apple ID anda.
 
-## Cara Memindahkan Fail untuk Membaca Tanpa Talian
+Bagi mereka yang mempunyai perpustakaan bebas DRM yang besar — arkib komik CBZ, fail EPUB daripada penerbit, PDF buku teks — model ini tidak sesuai. Anda yang memiliki fail tersebut. Anda mahu membacanya tanpa menyerahkannya kepada sesuatu perkhidmatan.
 
-Sebelum anda dapat membaca tanpa talian, fail perlu berada di peranti dahulu. BiblioFuse menyokong empat kaedah pemindahan, yang semuanya menghasilkan fail tersimpan secara tempatan yang berfungsi tanpa internet:
+## Cara BiblioFuse Menyimpan Perpustakaan Secara Setempat
 
-### Pemindahan Wi-Fi (Terpantas untuk Banyak Fail)
+BiblioFuse direka luar talian-dahulu dari awal. Apabila anda menambah fail ke aplikasi — melalui Pemindahan Wi-Fi, AirDrop, aplikasi Fail, atau cara lain — fail disalin ke kotak pasir setempat aplikasi di iPhone anda. Fail asal di Mac atau di mana sahaja anda menghantarnya kekal di sana; BiblioFuse mempunyai salinannya sendiri di peranti.
 
-BiblioFuse menyertakan ciri Pemindahan Wi-Fi terbina dalam di bawah tab Alat. Aktifkannya, dan alamat web tempatan akan muncul — buka alamat tersebut di mana-mana pelayar di Mac atau PC anda dan seret fail terus ke tetingkap. Fail tiba dalam BiblioFuse melalui rangkaian Wi-Fi tempatan anda tanpa kabel atau akaun awan. Akses internet tidak diperlukan — hanya Wi-Fi tempatan sahaja.
+Ini bermaksud:
 
-Perpustakaan 100 fail biasanya diimport dalam masa kurang daripada dua minit dengan cara ini.
+- Seluruh perpustakaan anda boleh diakses pada bila-bila masa, tanpa mengira status rangkaian
+- Kemajuan membaca direkod secara setempat dan disegerakkan ke iCloud apabila ada sambungan
+- Tiada akaun diperlukan untuk menggunakan aplikasi — malah tanpa Apple ID (walaupun penyegerakan iCloud memerlukannya jika diaktifkan)
+- Aplikasi berfungsi sama dalam pesawat, terowong bawah tanah, atau kawasan luar bandar tanpa isyarat
 
-### AirDrop (Peranti Apple Sahaja)
+BiblioFuse menyokong EPUB, CBZ, CBR, ZIP, PDF, dan arkib imej biasa. Setiap format berfungsi luar talian tanpa sebarang perbezaan kelakuan.
 
-Di Mac atau iPad, pilih fail komik dan buku elektronik anda dalam Finder atau Fail. Klik kanan → Kongsi → AirDrop → pilih iPhone anda. Fail yang dipindahkan tiba di Fail → Muat Turun di iPhone anda. Buka aplikasi Fail, pilih fail yang dipindahkan, ketuk Kongsi dan pilih BiblioFuse. Fail diimport terus ke storan tempatan.
+## Cara Memuatkan Ebook dan Komik ke iPhone
 
-### Aplikasi Fail dan Helaian Kongsi
+Terdapat tiga cara untuk memuatkan fail ke BiblioFuse tanpa bergantung kepada perkhidmatan awan.
 
-Jika fail anda tiba melalui lampiran e-mel, kabel USB atau muat turun terus, fail tersebut akan muncul dalam aplikasi Fail. Pilih fail berkenaan, ketuk Kongsi dan hantar ke BiblioFuse. Satu ketukan mengimportnya ke storan tempatan.
+### Cara 1: Pemindahan Wi-Fi (Rangkaian Setempat, Tanpa Internet)
 
-### Import dari iCloud Drive
+Pemindahan Wi-Fi adalah alat terbina dalam BiblioFuse untuk memindahkan fail dari Mac atau PC ke iPhone melalui rangkaian Wi-Fi setempat. Ia tidak menggunakan internet.
 
-Fail dalam iCloud Drive masih disimpan secara teknikal di awan. Untuk membuatnya benar-benar sedia untuk digunakan tanpa talian, buka aplikasi Fail, navigasi ke fail tersebut dan kongsi ke BiblioFuse. BiblioFuse membuat salinan tempatan dalam bekasnya sendiri. Dari titik itu, fail tersebut tersedia sepenuhnya tanpa talian — asal dalam iCloud tidak lagi diperlukan.
+1. Buka [BiblioFuse](https://bibliofuse.com/ms/) di iPhone dan ketik **Alat** di bahagian bawah.
+2. Ketik **Pemindahan Wi-Fi** dan catat alamat IP yang dipaparkan.
+3. Di Mac, buka pelayar dan pergi ke alamat IP tersebut.
+4. Seret fail EPUB, CBZ, atau PDF anda ke kawasan muat naik di pelayar.
 
-## Apa Maksud "Disimpan Secara Tempatan" dalam Praktik
+Fail dipindahkan pada kelajuan rangkaian setempat — biasanya 30–80 MB/s — dan terus masuk ke perpustakaan anda. Tanpa aplikasi perantara, tanpa iCloud, tanpa sambungan internet.
 
-Apabila BiblioFuse mengimport fail, ia menyalin fail tersebut ke storan terpencil miliknya di iPhone anda. Sumber asal — iCloud Drive, AirDrop, Pemindahan Wi-Fi — menjadi tidak relevan. Fail kini berada di peranti anda.
+### Cara 2: AirDrop
 
-**Ruang storan:** Storan tersedia di iPhone anda menentukan saiz perpustakaan. Novel EPUB biasa bersaiz 2–10 MB. Satu edisi komik CBZ purata 30–150 MB bergantung pada resolusi imej. Siri manga lengkap dalam CBZ mungkin menggunakan 1–5 GB. iPhone 128 GB boleh menyimpan 600–800 edisi komik dengan selesa bersama aplikasi lain.
+Untuk memindahkan beberapa fail dengan cepat dari peranti Apple lain:
 
-**Memadam fail:** Membuang tajuk dari BiblioFuse membebaskan storan tempatan. Ia tidak menjejaskan sebarang salinan dalam iCloud Drive atau di Mac anda. Perpustakaan tempatan dan storan awan diurus secara bebas.
+1. Kongsi fail melalui AirDrop dari Mac, iPad, atau iPhone lain.
+2. Terima pemindahan di iPhone anda.
+3. Cari fail di **Fail → Muat Turun**.
+4. Pilih fail, ketik Kongsi, dan pilih BiblioFuse.
 
-**Penyegerakan kemajuan membaca:** BiblioFuse menyegerakkan penanda halaman, kedudukan membaca, tag dan penilaian melalui iCloud apabila sambungan tersedia. Penyegerakan adalah automatik apabila anda menyambung semula — anda tidak akan kehilangan tempat bacaan walaupun selepas beberapa minggu tanpa talian. Fail itu sendiri tidak perlu berada dalam iCloud untuk penyegerakan ini berfungsi.
+AirDrop menggunakan Wi-Fi rakan-ke-rakan. Ia berfungsi antara peranti Apple anda tanpa mengira sama ada mana-mana peranti mempunyai data selular atau akses internet.
 
-## Semua yang Berfungsi Tanpa Talian
+### Cara 3: Aplikasi Fail melalui USB
 
-Setelah fail diimport, setiap ciri utama berfungsi tanpa internet:
+Sambungkan iPhone ke Mac melalui USB dan gunakan Finder (macOS Catalina atau lebih baharu):
 
-- **Semua mod membaca** — halaman demi halaman, tatal berterusan, paparan dua halaman — sepenuhnya tanpa talian.
-- **Semua format** — EPUB, CBZ, CBR, PDF, ZIP, RAR, TXT — dibuka dengan cara yang sama sama ada bersambung atau tidak.
-- **OCR** — rangka kerja Vision Apple berjalan di peranti; pengekstrakan teks dari panel komik dan halaman yang diimbas berfungsi tanpa sambungan.
-- **Penanda halaman dan sorotan** — disimpan secara tempatan, disegerakkan ke peranti lain apabila anda menyambung semula.
-- **Tag dan penilaian** — disimpan secara tempatan dalam pangkalan data BiblioFuse.
-- **Carian perpustakaan** — mencari metadata tempatan anda; tiada permintaan rangkaian.
+1. Pilih iPhone anda dalam Finder.
+2. Klik **Fail**.
+3. Seret fail terus ke kawasan fail BiblioFuse.
 
-Satu-satunya ciri yang memerlukan akses rangkaian ialah **Penstriman Perpustakaan Rumah Mac**, yang mengalirkan kandungan dari Mac anda melalui Wi-Fi tempatan. Semua yang lain adalah sepenuhnya tempatan.
+Pemindahan USB adalah kaedah paling cepat dan boleh dipercayai untuk perpustakaan besar — ratusan jilid dipindahkan dalam beberapa minit.
 
-## Adakah Membaca Tanpa Talian Lebih Lambat?
+## Apa yang Berlaku kepada Kemajuan Membaca Semasa Luar Talian?
 
-Tidak — ia lebih pantas. Akses storan tempatan jauh lebih pantas berbanding penstriman atau memuat turun dari awan. Apabila BiblioFuse membuka fail CBZ 200 MB yang disimpan di peranti anda, ia membaca terus dari storan kilat. Halaman dimuatkan dengan serta-merta tanpa mengira saiz fail.
+BiblioFuse menyimpan kemajuan membaca ke pangkalan data setempat di peranti anda. Setiap tukar halaman, penanda, dan anotasi disimpan secara setempat terlebih dahulu. Apabila sambungan internet tersedia, perubahan secara automatik disegerakkan ke iCloud.
 
-Aplikasi yang bergantung pada awan sering dimuatkan secara beransur-ansur — beberapa halaman pertama tersedia sementara halaman kemudian dimuat turun. BiblioFuse tidak melakukan ini. Volume manga 400 halaman dibuka dengan kelajuan yang sama seperti edisi 10 halaman.
+Jika anda membaca di iPhone dalam mod luar talian, kemudian membuka BiblioFuse di iPad atau Mac, kemajuan anda sudah menunggu di sana. Penyegerakan menggunakan cap masa terkini — tiada konflik atau kehilangan data walaupun kedua-dua peranti luar talian pada masa yang sama.
 
-## Senario Praktikal Membaca Tanpa Talian
+Anda tidak perlu melakukan apa-apa untuk mencetuskan penyegerakan ini. BiblioFuse mengendalikannya secara automatik di latar belakang sebaik sahaja peranti anda bersambung.
 
-**Penerbangan jarak jauh:** Pindahkan senarai bacaan anda pada malam sebelumnya. Semasa penerbangan, perpustakaan anda tersedia sepenuhnya — tiada Wi-Fi pesawat diperlukan.
+## Format yang Disokong Secara Luar Talian
 
-**Perjalanan kereta dan tren bawah tanah:** Bahagian bawah tanah tanpa isyarat bukan masalah. Halaman BiblioFuse tidak beku atau perlu dimuatkan semula apabila anda keluar dari terowong.
+BiblioFuse membaca format berikut sepenuhnya luar talian:
 
-**Perjalanan tanpa data perayauan:** Jika anda berada di luar negeri tanpa SIM tempatan, perpustakaan anda kekal boleh diakses sepenuhnya. Hanya ciri yang memerlukan internet (seperti kemas kini aplikasi) yang terjejas.
+| Format | Penggunaan biasa |
+|--------|----------------|
+| EPUB | Ebook, novel, bukan fiksyen |
+| CBZ | Arkib komik (berasaskan ZIP) |
+| CBR | Arkib komik (berasaskan RAR) |
+| ZIP | Arkib imej |
+| PDF | Buku teks, buku seni, dokumen imbasan |
 
-**Lokasi terpencil:** Pendakian gunung, kawasan luar bandar, bot — storan telefon anda adalah satu-satunya keperluan.
+Semua format dibuka pada kelajuan yang sama sama ada luar talian atau dalam talian. Tiada mod terjejas, tiada tera air, tiada iklan.
 
 ## Soalan Lazim
 
-### Adakah BiblioFuse memerlukan Wi-Fi untuk membaca buku elektronik di iPhone?
+**Adakah saya memerlukan akaun Apple untuk menggunakan BiblioFuse secara luar talian?**
 
-Tidak. Setelah fail diimport ke BiblioFuse, aplikasi membacanya dari storan tempatan iPhone anda. Tiada internet atau Wi-Fi diperlukan untuk membuka, membaca atau menavigasi sebarang fail dalam perpustakaan anda. Wi-Fi hanya digunakan semasa pemindahan fail pertama jika anda menggunakan kaedah Pemindahan Wi-Fi.
+Tidak. BiblioFuse berfungsi sepenuhnya tanpa Apple ID. Jika anda tidak menggunakan iCloud, kemajuan disimpan secara setempat dan tidak disegerakkan ke peranti lain, tetapi semua yang lain — membaca, penanda, pengurusan perpustakaan — berfungsi dengan baik.
 
-### Bolehkah saya membaca fail EPUB tanpa talian di iPhone tanpa akaun?
+**Bolehkah saya membaca ebook bebas DRM yang dibeli di luar Apple?**
 
-Ya. BiblioFuse tidak memerlukan akaun, log masuk atau langganan. Pindahkan fail EPUB anda sekali sahaja, dan anda boleh membacanya tanpa had masa, sepenuhnya tanpa talian. Tiada keperluan akaun untuk membaca.
+Ya. BiblioFuse membaca sebarang fail EPUB bebas DRM tanpa mengira sumbernya. Ebook dari penerbit, Project Gutenberg, atau kedai yang menawarkan muat turun EPUB bebas DRM semuanya berfungsi. BiblioFuse tidak dapat membuka fail yang dilindungi DRM.
 
-### Bagaimana cara memindahkan buku elektronik ke iPhone tanpa internet?
+**Adakah fail akan menggunakan storan peranti?**
 
-Gunakan Pemindahan Wi-Fi BiblioFuse (dari Mac atau PC ke iPhone melalui Wi-Fi tempatan — tiada sambungan internet diperlukan, hanya rangkaian tempatan yang dikongsi) atau AirDrop (tiada rangkaian langsung, rakan ke rakan). Kedua-dua kaedah mengimport fail terus ke perpustakaan tempatan BiblioFuse tanpa melalui sebarang perkhidmatan awan.
+Ya — kerana fail disimpan secara setempat, ia menggunakan storan peranti. Novel EPUB biasa bersaiz 1–5 MB. Jilid manga CBZ berkualiti tinggi bersaiz 80–200 MB. Untuk beberapa dozen hingga ratusan buku, storan bukanlah masalah praktikal di iPhone moden.
 
-### Format apa yang boleh dibaca tanpa talian di iPhone dengan BiblioFuse?
+**Adakah aplikasi berfungsi dalam Mod Penerbangan?**
 
-BiblioFuse membaca fail EPUB, PDF, CBZ, CBR, ZIP, RAR dan TXT tanpa talian. Semua format dikendalikan secara identik — tiada had khusus format untuk akses tanpa talian.
+Sepenuhnya. Aktifkan Mod Penerbangan dan buka BiblioFuse — seluruh perpustakaan anda ada di sana, penjejakan kemajuan berfungsi, dan penanda berfungsi seperti biasa. Penyegerakan iCloud hanya dijeda sehingga anda bersambung semula.
 
-### Adakah kemajuan membaca saya akan hilang jika saya tidak mempunyai talian selama beberapa minggu?
+## Kesimpulan Utama
 
-Tidak. Kemajuan membaca disimpan ke storan tempatan iPhone anda semasa anda membaca. Apabila anda menyambung semula ke internet, BiblioFuse menyegerakkan kemajuan tersebut ke iCloud dan peranti lain anda secara automatik. Anda tidak akan kehilangan tempat bacaan anda.
+BiblioFuse dibina atas prinsip bahawa kehidupan membaca anda tidak seharusnya bergantung kepada ketersediaan pelayan. Fail anda adalah setempat. Kemajuan anda disimpan setempat terlebih dahulu. Pengalaman membaca anda adalah sama sama ada anda menggunakan sambungan fiber atau berada di ketinggian 10,000 meter.
 
-### Berapa banyak storan iPhone yang saya perlukan untuk perpustakaan tanpa talian?
-
-Ia bergantung pada fail anda. Novel EPUB purata 5 MB setiap satu — 1,000 novel muat dalam kira-kira 5 GB. Edisi komik CBZ purata 60–100 MB — 100 edisi menggunakan 6–10 GB. Siri manga lengkap 20 jilid mungkin 2–4 GB dalam CBZ. Sebagai panduan kasar, anggaran 1 GB untuk setiap 10–15 jilid komik.
-
-## Perpustakaan Anda, Ke Mana Sahaja Anda Pergi
-
-Membaca buku elektronik tanpa talian di iPhone tidak sepatutnya memerlukan penyelesaian alternatif atau pelan premium. Dengan [BiblioFuse](https://bibliofuse.com/ms/), perpustakaan anda benar-benar mudah alih — di dalam pesawat, kereta api, bawah tanah, atau di tempat-tempat tanpa isyarat. Pindahkan fail anda sekali sahaja, dan aplikasi menguruskan segalanya sepenuhnya di peranti. Tiada akaun. Tiada awan. Tiada sambungan diperlukan.
+Jika anda mempunyai perpustakaan ebook atau komik dan ingin membacanya di iPhone tanpa kebergantungan awan, [BiblioFuse](https://bibliofuse.com/ms/) adalah jalan terusnya. Muat fail sekali melalui Wi-Fi, AirDrop, atau USB — kemudian baca di mana sahaja.

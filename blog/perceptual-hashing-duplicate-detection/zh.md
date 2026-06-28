@@ -4,7 +4,7 @@
 
 然而，里面的漫画是一样的。每一页都是一样的。如果你试图整理数字图书库，这些几乎相同的重复文件恰恰是标准重复查找工具会遗漏的。
 
-这就是感知哈希解决的问题，也是 [Archive Duplicate Scanner](/zh/) 核心技术。
+这就是感知哈希解决的问题，也是 [Archive Duplicate Scanner](/zh/archive/) 核心技术。
 
 ---
 
@@ -40,7 +40,7 @@
 
 ## Archive Duplicate Scanner 如何应用这项技术
 
-[Archive Duplicate Scanner](/zh/) 在档案级别应用感知哈希：
+[Archive Duplicate Scanner](/zh/archive/) 在档案级别应用感知哈希：
 
 1. **提取** — 打开每个 CBZ 或 CBR 档案并读取内部图像
 2. **每页哈希** — 每页获得一个感知哈希
@@ -76,6 +76,6 @@
 
 ## 使用 Archive Duplicate Scanner
 
-[Archive Duplicate Scanner](/zh/) 是一款原生 Mac 应用，将感知哈希技术带到整个图书库。它将选定的重复文件移至废纸篓（非永久删除）。
+[Archive Duplicate Scanner](/zh/archive/) 是一款原生 Mac 应用，将感知哈希技术带到整个图书库。它将选定的重复文件移至废纸篓（非永久删除）。
 
 清理库后，搭配 iPhone 上的 [BiblioFuse](/zh/) 使用，获得单一经过整理的阅读来源。

@@ -1,6 +1,6 @@
 # Best Duplicate File Finder for Mac in 2026: Comics, Photos, and Archives
 
-[Archive Duplicate Scanner](/en/) is the best duplicate file finder for Mac in 2026 for mixed libraries containing comics (CBZ, CBR), photos (HEIC, JPEG, RAW), and other archives (ZIP, RAR). It uses perceptual hashing — not byte comparison — to find visually identical files even if they have been renamed, re-exported, or converted to a different format. Available for Mac and Windows; duplicates are sent to Trash, never permanently deleted.
+[Archive Duplicate Scanner](/en/archive/) is the best duplicate file finder for Mac in 2026 for mixed libraries containing comics (CBZ, CBR), photos (HEIC, JPEG, RAW), and other archives (ZIP, RAR). It uses perceptual hashing — not byte comparison — to find visually identical files even if they have been renamed, re-exported, or converted to a different format. Available for Mac and Windows; duplicates are sent to Trash, never permanently deleted.
 
 ## Why Generic Duplicate Finders Fail for Comics and Photos
 
@@ -96,4 +96,4 @@ Yes. The app only moves files to the Trash — it never permanently deletes anyt
 
 If your Mac library mixes comics, photos, and archives, Archive Duplicate Scanner is the right tool. Perceptual hashing catches visual duplicates that byte-based tools miss, the format list covers everything from CBZ to HEIC to DNG, and the Trash-only deletion keeps your collection safe.
 
-[Download Archive Duplicate Scanner](/en/) and clean up your library today. For managing and reading your comic and ebook files, [BiblioFuse](/en/) is a companion app that reads CBZ, CBR, EPUB, PDF, and more on iPhone and iPad.
+[Download Archive Duplicate Scanner](/en/archive/) and clean up your library today. For managing and reading your comic and ebook files, [BiblioFuse](/en/) is a companion app that reads CBZ, CBR, EPUB, PDF, and more on iPhone and iPad.

@@ -1,113 +1,96 @@
-# Cara Menukar CBR kepada CBZ Secara Dalam Talian: Percuma, Tanpa Perlu Pasang Perisian
+# Cara Menukar CBR kepada CBZ dalam Talian: Percuma, Tanpa Perisian
 
-Alat web BiblioFuse menukar arkib komik CBR kepada format CBZ terus dalam pelayar anda — tanpa perisian yang perlu dipasang, tanpa fail yang dimuat naik ke pelayan. Fail CBR ialah arkib RAR; fail CBZ ialah arkib ZIP yang mengandungi imej komik yang sama. BiblioFuse membungkus semula imej-imej tersebut ke dalam ZIP piawai berasaskan CBZ, mengekalkan semua kualiti karya seni anda. Buka alat ini dalam mana-mana pelayar, masukkan fail CBR anda, dan muat turun CBZ yang telah ditukar dalam beberapa saat sahaja.
+Anda mempunyai folder penuh fail CBR — komik dalam format arkib RAR — dan pembaca yang hanya membuka CBZ. Atau anda sedang mengarkibkan koleksi dan mahukan format terbuka yang konsisten. Penyelesaiannya kelihatan mudah: tukar nama sambungan fail dari `.cbr` kepada `.cbz`. Tetapi itu tidak berfungsi.
 
-Koleksi komik anda mungkin mempunyai berpuluh-puluh — malah beratus-ratus — fail .cbr. CBR ialah format arkib komik yang pertama, dibina atas piawaian pemampatan RAR. CBZ muncul kemudian, menggunakan format ZIP yang lebih terbuka. Pada hari ini, kebanyakan pembaca komik moden, perpustakaan, dan alat pengarkiban lebih gemar CBZ. Menukar CBR kepada CBZ secara dalam talian, tanpa memasang perisian atau memuat naik fail ke pelayan pihak ketiga, adalah cara yang paling bersih untuk menstandarisasikan koleksi anda.
+Fail CBR adalah arkib RAR. Fail CBZ adalah arkib ZIP. Kedua-duanya menggunakan format mampatan yang berbeza di bawahnya — anda tidak boleh hanya menukar nama sambungan fail. Anda perlu mengekstrak gambar dari RAR dan memampat semula sebagai ZIP. [Penukar dalam talian BiblioFuse](https://bibliofuse.com/ms/webapp/) melakukan ini dalam pelayar anda, tanpa sebarang fail dimuat naik ke mana-mana pelayan.
 
-## Apakah Perbezaan Antara CBR dan CBZ?
+## CBR vs CBZ: Apakah Perbezaan Sebenarnya?
 
-Kedua-dua CBR dan CBZ adalah format arkib komik. Ia berfungsi dengan prinsip yang sama: memampatkan folder imej halaman komik berjujukan (biasanya JPEG atau PNG) ke dalam satu fail arkib. Satu-satunya perbezaan sebenar ialah algoritma pemampatan:
+Kedua-dua CBR dan CBZ adalah format arkib komik. Kedua-duanya mengandungi urutan fail imej (biasanya JPG atau PNG) yang ditunjukkan oleh pembaca secara berurutan untuk mensimulasikan pembacaan komik.
 
-- **CBR** — menggunakan pemampatan RAR. RAR ialah format proprietari yang dibangunkan oleh Eugene Roshal. Pengimbas komik lama menyukainya kerana nisbah pemampatan yang baik. Sambungan `.cbr` bermaksud "Comic Book RAR".
-- **CBZ** — menggunakan pemampatan ZIP. ZIP ialah piawaian terbuka, disokong secara meluas oleh setiap sistem pengendalian tanpa perisian tambahan. Sambungan `.cbz` bermaksud "Comic Book ZIP".
+Perbezaannya terletak pada mampatan asas:
 
-Imej-imej di dalam kedua-dua format adalah sama. Menukar CBR kepada CBZ tidak mengubah karya seni, susunan halaman, atau kualiti — ia hanya membungkus semula fail yang sama ke dalam bekas arkib yang berbeza.
+| Format | Jenis arkib | Standard terbuka? |
+|--------|------------|-----------------|
+| CBZ | ZIP | Ya |
+| CBR | RAR | Tidak (proprietari) |
 
-## Mengapa Perlu Menukar CBR kepada CBZ Secara Dalam Talian?
+RAR adalah format proprietari yang dibangunkan oleh Eugene Roshal. Membuka fail RAR memerlukan perisian WinRAR rasmi atau perpustakaan yang melaksanakan spesifikasi RAR — dan perpustakaan itu mesti disertakan secara eksplisit dalam setiap pembaca. Banyak pembaca moden, termasuk alat berasaskan pelayar, hanya menyokong CBZ berasaskan ZIP kerana spesifikasi ZIP adalah terbuka dan dilaksanakan secara meluas.
 
-**Keserasian:** CBZ disokong secara natif oleh hampir semua pembaca komik, aplikasi perpustakaan, dan alat pengarkiban. Sesetengah aplikasi — terutamanya di iOS, Web, dan platform baharu — hanya menyokong arkib berasaskan ZIP. CBZ berfungsi di mana sahaja; CBR kadang-kadang tidak.
+CBZ menjadi standard de facto untuk komik digital sebahagiannya kerana ZIP bebas royalti dan rentas platform. Setiap sistem operasi boleh membuka fail ZIP tanpa perisian pihak ketiga. Jika anda mengarkibkan koleksi untuk jangka panjang, CBZ adalah pilihan yang lebih selamat.
 
-**Piawaian terbuka:** ZIP ialah format yang sepenuhnya terbuka. RAR mempunyai spesifikasi proprietari dan memerlukan perpustakaan penyahkodan khusus. Untuk pengarkiban jangka panjang, CBZ ialah pilihan yang lebih tahan masa hadapan.
+## Cara Penukaran Berfungsi
 
-**Pengurusan fail:** macOS dan Windows boleh membuka fail ZIP secara natif tanpa sebarang aplikasi tambahan. Anda boleh menyemak imbas kandungan CBZ dalam Finder atau File Explorer dengan menamakan semula sambungannya kepada `.zip`. Fail CBR memerlukan WinRAR atau penyahpampat khusus.
+Menukar CBR kepada CBZ melibatkan tiga langkah:
 
-**Keserasian web:** [Alat Web BiblioFuse](https://bibliofuse.com/ms/webapp/) berfungsi secara eksklusif dengan arkib berasaskan ZIP (CBZ). Menukar fail CBR anda terlebih dahulu menjadikannya serasi dengan semua alat komik dalam talian.
+1. Ekstrak gambar dari CBR (arkib RAR)
+2. Masukkan gambar yang sama ke dalam arkib ZIP baru
+3. Tukar nama sambungan `.zip` kepada `.cbz`
 
-## Cara Menukar CBR kepada CBZ Secara Dalam Talian — Langkah demi Langkah
+Alat dalam talian BiblioFuse menjalankan ketiga-tiga langkah ini dalam pelayar menggunakan WebAssembly. Fail anda tidak pernah dimuat naik — pengekstrakan, pemampatan semula, dan muat turun semuanya berlaku secara setempat di peranti anda.
 
-Alat web BiblioFuse memproses fail sepenuhnya dalam pelayar anda menggunakan WebAssembly. Tiada apa yang dimuat naik ke pelayan, dan tiada data peribadi yang dihantar. Fail anda kekal pada peranti anda sepanjang proses berlangsung.
+## Langkah demi Langkah: Tukar CBR kepada CBZ dalam Talian
 
-### Langkah 1: Buka Alat Web BiblioFuse
+1. Pergi ke [bibliofuse.com/ms/webapp/](https://bibliofuse.com/ms/webapp/)
+2. Buka alat **Tukar** dari bar alat.
+3. Klik **Pilih fail** atau seret fail `.cbr` anda ke zon jatuhan.
+4. Alat mengekstrak gambar, membuat arkib ZIP baru, dan memuat turun fail `.cbz` secara automatik.
 
-Pergi ke [bibliofuse.com/ms/webapp/](https://bibliofuse.com/ms/webapp/) dalam Chrome, Firefox, Safari, atau Edge. Tiada akaun atau log masuk diperlukan.
+Untuk penukaran kelompok — beberapa fail CBR sekaligus — pilih semua fail dalam pemilih fail. Setiap fail diproses dan dimuat turun secara berasingan. Tiada had giliran yang dikenakan oleh alat, walaupun fail yang sangat besar (400+ MB) mungkin mengambil masa lebih lama bergantung pada kuasa pemprosesan peranti anda.
 
-### Langkah 2: Import Fail CBR Anda
+## Mengapa Penukaran Berasaskan Pelayar Bersifat Peribadi
 
-Klik **Tambah fail** atau seret fail CBR anda terus ke zon jatuh alat tersebut. Alat ini menerima arkib CBR (berasaskan RAR) dan mengekstrak imej-imej di dalamnya.
+Penukaran dijalankan sepenuhnya dalam pelayar anda melalui WebAssembly (WASM). Ini adalah teknologi yang sama yang membolehkan permainan dan editor video berjalan dalam pelayar tanpa plugin — kerja intensif pengiraan yang dilaksanakan secara asli dalam kotak pasir pelayar.
 
-Untuk peringkat percuma, anda boleh memproses sehingga 3 fail setiap kelompok. Jatuhkan ketiga-tiganya sekaligus untuk menukarnya dalam satu operasi.
+Apabila menggunakan [alat web BiblioFuse](https://bibliofuse.com/ms/webapp/):
 
-### Langkah 3: Pilih Format Output
+- Fail CBR anda dibaca ke dalam memori pelayar
+- Gambar diekstrak dalam memori
+- Fail ZIP baru dibina dalam memori
+- ZIP dimuat turun ke peranti anda
 
-Pilih **CBZ** sebagai format output dalam pilihan alat. Ini memberitahu penukar untuk membungkus semula imej yang diekstrak sebagai arkib ZIP dengan sambungan `.cbz`.
+Pada bila-bila masa, tiada data meninggalkan mesin anda. Tiada panggilan pelayan semasa penukaran. Anda boleh mengesahkan ini dengan membuka pemeriksa rangkaian pelayar (F12 → Rangkaian) dan memerhati: satu-satunya permintaan adalah pemuatan halaman awal. Tiada muat naik muncul.
 
-### Langkah 4: Tukar dan Muat Turun
+Ini penting jika koleksi komik anda termasuk kandungan berlesen, imbasan peribadi, atau apa-apa lagi yang anda lebih suka tidak dimuat naik ke pelayan pihak ketiga.
 
-Klik **Tukar** (atau butang tindakan yang setara). Alat memproses fail dalam pelayar anda — tanpa muat naik, tanpa menunggu respons pelayan. Apabila pemprosesan selesai, pautan muat turun muncul. Klik untuk menyimpan fail CBZ yang telah ditukar ke Mac atau PC anda.
+## Menukar Fail CBR di iPhone atau iPad
 
-Fail yang dimuat turun ialah arkib CBZ piawai yang mengandungi imej yang sama seperti CBR asal anda, dibungkus semula dalam format ZIP.
+Alat web BiblioFuse juga berfungsi pada pelayar mudah alih. Pergi ke [bibliofuse.com/ms/webapp/](https://bibliofuse.com/ms/webapp/) dalam Safari atau Chrome di iPhone atau iPad.
 
-## Kualiti dan Saiz Fail Selepas Penukaran
+Pada iOS, ketik **Pilih fail** dan navigasikan ke fail CBR anda dalam aplikasi Fail, iCloud Drive, atau pembekal storan awan yang disambungkan. Fail CBZ yang dimuat turun pergi ke folder Muat Turun anda, dari sana anda boleh berkongsi terus ke [BiblioFuse](https://bibliofuse.com/ms/) untuk dibaca.
 
-Penukaran CBR kepada CBZ tidak menjejaskan kualiti imej (tanpa kehilangan data). Imej halaman komik (fail JPEG, PNG, atau WebP di dalam arkib) diekstrak dari bekas RAR dan diletakkan terus ke bekas ZIP tanpa sebarang pengekodan semula atau perubahan pemampatan.
+## Selepas Penukaran: Membaca Fail CBZ dalam BiblioFuse
 
-Saiz fail mungkin berbeza sedikit antara CBR asal dan CBZ yang dihasilkan. ZIP dan RAR menggunakan algoritma pemampatan yang berbeza, jadi imej yang sama yang dimampatkan dengan ZIP mungkin menghasilkan fail yang sedikit lebih besar atau lebih kecil daripada asal RAR. Perbezaannya biasanya kurang daripada 5%, dan kualiti imej adalah sama.
+BiblioFuse di iPhone membaca fail CBZ secara asli — tiada penukaran lanjut diperlukan. Untuk membaca fail yang ditukar:
 
-Jika anda juga ingin mengurangkan saiz fail CBZ yang ditukar, alat web BiblioFuse menawarkan langkah pemampatan pilihan — ia boleh mengubah saiz dan memampatkan semula imej di dalam arkib untuk mengurangkan saiz fail.
+1. Tukar CBR kepada CBZ menggunakan alat web di Mac atau iPhone anda.
+2. Pindahkan fail CBZ ke iPhone melalui Pemindahan Wi-Fi atau AirDrop.
+3. Import ke BiblioFuse dengan memilih fail dalam aplikasi Fail dan berkongsi ke aplikasi.
 
-## Menukar Beberapa Fail CBR kepada CBZ Serentak
-
-Untuk pengguna percuma, alat web BiblioFuse memproses sehingga 3 fail setiap kelompok. Jatuhkan beberapa fail CBR sekaligus untuk menukarnya dalam satu proses:
-
-1. Klik **Tambah fail** dan pilih 2–3 fail CBR (atau seret semuanya sekaligus ke alat).
-2. Tetapkan format output kepada **CBZ** untuk semua fail.
-3. Klik **Tukar**. Semua fail diproses secara selari dalam pelayar anda.
-4. Muat turun setiap CBZ yang telah ditukar secara berasingan.
-
-Untuk koleksi yang lebih besar, ulangi dalam kelompok 3 fail. Jika anda perlu menukar berpuluh atau beratus fail sekaligus, alat ini mengendalikan proses yang sama untuk setiap set — tanpa akaun, tanpa giliran, tanpa had harian.
-
-## Privasi: Mengapa Tidak Memuat Naik Itu Penting
-
-Banyak alat penukaran fail dalam talian berfungsi dengan memuat naik fail anda ke pelayan awan, memprosesnya di sana, dan menghantarnya kembali. Fail anda melalui pelayan pihak ketiga — berpotensi disimpan, dilog, atau digunakan dengan cara yang tidak dapat anda kawal.
-
-Alat web BiblioFuse adalah berbeza. Ia menggunakan WebAssembly untuk menjalankan logik penukaran terus dalam pelayar anda. Fail CBR anda tidak pernah meninggalkan peranti anda. Ini amat penting terutamanya untuk komik yang telah anda beli atau imbas sendiri — tiada pendedahan privasi atau hak cipta.
-
-## Membaca Fail CBZ di iPhone Selepas Penukaran
-
-Setelah menukar fail CBR anda kepada CBZ, mengimportnya ke [BiblioFuse](https://bibliofuse.com/ms/) di iPhone adalah mudah:
-
-1. Pindahkan fail CBZ ke iPhone anda melalui Pindahan Wi-Fi, AirDrop, atau aplikasi Fail.
-2. BiblioFuse mengimportnya ke perpustakaan tempatan anda.
-3. Buka dan baca serta-merta — CBZ ialah format natif BiblioFuse.
-
-Nota: BiblioFuse di iPhone juga membaca fail CBR secara natif, jadi penukaran tidak benar-benar diperlukan untuk membaca di iOS. Tetapi untuk berkongsi dengan orang lain, menggunakan alat lain, atau membina arkib jangka panjang, CBZ adalah format yang lebih baik.
+Nota: BiblioFuse juga membaca fail CBR terus di iPhone — ia mengendalikan pengekstrakan RAR secara asli. Sebab utama untuk menukar adalah jika anda mengarkibkan fail, berkongsinya dengan orang lain, atau menggunakan alat lain dalam aliran kerja yang memerlukan CBZ secara khusus.
 
 ## Soalan Lazim
 
-### Apakah perbezaan antara CBR dan CBZ?
+**Bolehkah saya menukar beberapa fail CBR sekaligus?**
 
-Fail CBR menggunakan pemampatan RAR; fail CBZ menggunakan pemampatan ZIP. Kedua-duanya mengandungi jenis imej halaman komik yang sama (JPEG, PNG, atau WebP). Satu-satunya perbezaan ialah format arkib yang membungkus imej. Menukar CBR kepada CBZ membungkus semula imej ke dalam arkib ZIP tanpa mengubahnya.
+Ya. Pilih semua fail CBR dalam pemilih fail dan alat memproses setiap satu. Fail dimuat turun secara individu — anda mendapat satu `.cbz` bagi setiap `.cbr`. Jika selepas itu ingin menggabungkannya menjadi satu jilid, gunakan alat gabung CBZ.
 
-### Bolehkah saya menukar CBR kepada CBZ tanpa memasang perisian?
+**Adakah kualiti imej berubah semasa penukaran?**
 
-Ya. Alat web BiblioFuse berjalan sepenuhnya dalam pelayar anda menggunakan WebAssembly. Buka dalam Chrome, Firefox, Safari, atau Edge — tanpa muat turun, tanpa pemasangan, tanpa akaun diperlukan. Jatuhkan fail CBR anda dan muat turun CBZ yang telah ditukar.
+Tidak. Imej dalam arkib tidak dikodkan semula. Penukaran mengekstrak fail JPG atau PNG asal dan meletakkannya ke dalam ZIP baru tanpa menyentuh data imej. CBZ yang ditukar adalah sama secara piksel dengan CBR asal.
 
-### Adakah penukaran CBR kepada CBZ mengurangkan kualiti imej?
+**Bagaimana jika fail CBR dilindungi kata laluan?**
 
-Tidak. Penukaran CBR kepada CBZ ialah pertukaran bekas tanpa kehilangan data. Fail imej di dalam arkib diekstrak dan dibungkus semula tanpa pengekodan semula. Kualiti adalah sama dengan yang asal. Saiz fail mungkin berubah beberapa peratus disebabkan perbezaan dalam pemampatan ZIP berbanding RAR, tetapi karya seni tidak berubah.
+Fail CBR yang dilindungi kata laluan tidak boleh dibuka tanpa kata laluan. Alat web tidak boleh memintas perlindungan kata laluan. Jika CBR anda disulitkan, buka kuncinya dahulu — SmartDecrypt boleh membuka kunci secara kelompok fail CBZ, PDF, dan ZIP yang dilindungi kata laluan di iPhone dan Mac.
 
-### Adakah selamat menukar fail CBR menggunakan alat dalam talian?
+**Fail CBR saya telah ditukar tetapi CBZ tidak boleh dibuka — apa yang berlaku?**
 
-Dengan alat web BiblioFuse, ya. Alat ini menggunakan WebAssembly untuk memproses fail secara tempatan dalam pelayar anda — fail CBR anda tidak pernah dimuat naik ke pelayan. Alat penukaran yang memerlukan muat naik fail adalah kurang peribadi. Jika privasi penting bagi anda, gunakan alat berasaskan pelayar tanpa muat naik.
+Sesetengah fail berlabel `.cbr` sebenarnya adalah arkib ZIP (dinamakan semula dari `.cbz` atau dibuat oleh perisian yang menggunakan ZIP secara lalai). Jika penukaran menghasilkan fail yang tidak boleh dibuka dalam pembaca anda, cuba namakan semula `.cbr` asal kepada `.zip` dan semak sama ada ia sudah menjadi arkib ZIP. Mungkin anda hanya perlu menamakan semulanya terus kepada `.cbz` tanpa penukaran.
 
-### Berapa lama masa yang diperlukan untuk menukar CBR kepada CBZ?
+**Adakah terdapat had saiz fail?**
 
-Biasanya beberapa saat bagi setiap fail, bergantung pada saiz fail dan pemproses peranti anda. Fail CBR 100 MB ditukar dalam masa kurang daripada 5 saat pada kebanyakan komputer riba moden. Alat memproses fail secara selari dalam pelayar anda, jadi penukaran kelompok adalah cekap.
+Tiada had yang dikenakan pelayan kerana tiada fail yang pernah dimuat naik. Had praktikal adalah RAM yang tersedia di peranti anda — fail CBR yang sangat besar (1 GB+) boleh menyebabkan pelayar berjalan perlahan pada peranti dengan memori terhad. Untuk kebanyakan fail komik di bawah 200 MB, penukaran selesai dalam beberapa saat.
 
-### Mengapa BiblioFuse di iPhone membaca CBR tanpa penukaran?
+## Kesimpulan Utama
 
-BiblioFuse di iOS mempunyai penyahpampat RAR terbina dalam, jadi ia membuka fail CBR secara natif tanpa sebarang langkah penukaran. Penukaran berguna apabila anda mahukan CBZ untuk keserasian dengan alat lain, pembaca dalam talian, atau pengarkiban jangka panjang — bukan kerana BiblioFuse memerlukannya.
-
-## Penyelesaian Lengkap untuk Penukaran Arkib Komik
-
-Menukar CBR kepada CBZ secara dalam talian adalah langkah pantas ke arah perpustakaan komik yang lebih serasi, terbuka, dan tahan masa hadapan. [Alat Web BiblioFuse](https://bibliofuse.com/ms/webapp/) menjadikannya percuma, peribadi, dan serta-merta — buka dalam mana-mana pelayar, tanpa perlu mendaftar. Masukkan fail CBR anda, dapatkan CBZ kembali, dan import ke mana-mana pembaca yang menyokong piawaian berasaskan ZIP.
+CBR dan CBZ kelihatan serupa tetapi menggunakan format arkib yang berbeza di bawahnya. Menukar CBR kepada CBZ bermaksud mengarkibkan semula imej komik dari RAR ke format ZIP — [alat dalam talian BiblioFuse](https://bibliofuse.com/ms/webapp/) melakukan ini sepenuhnya dalam pelayar anda tanpa memerlukan muat naik fail. Kualiti imej terpelihara, proses ini bersifat peribadi, dan fail CBZ yang dihasilkan berfungsi dalam mana-mana pembaca yang menyokong format ZIP terbuka.

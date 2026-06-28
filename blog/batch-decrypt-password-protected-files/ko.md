@@ -10,7 +10,7 @@ iPhone의 대부분의 복호화 도구는 파일을 하나씩 처리합니다. 
 
 SmartDecrypt PDF ZIP CBZ는 두 가지 기능의 조합으로 이 문제를 해결합니다: **일괄 복호화**와 **비밀번호 프로필**. 모든 파일을 한 번에 선택하고 프로필을 적용한 다음 한 번 탭하면 됩니다.
 
-[SmartDecrypt](/ko/)는 모든 것을 기기에서 처리합니다 — 클라우드 서비스 없음, 파일별 대기 없음, 업로드 없음.
+[SmartDecrypt](/ko/smartdecrypt/)는 모든 것을 기기에서 처리합니다 — 클라우드 서비스 없음, 파일별 대기 없음, 업로드 없음.
 
 ## SmartDecrypt에서 일괄 복호화 작동 방식
 
@@ -79,3 +79,5 @@ BiblioFuse를 사용해 iPhone에 디지털 만화 라이브러리를 구축 중
 ## 한 번의 탭으로 더 많은 일을 처리하세요
 
 일괄 복호화는 지루한 수 시간의 작업을 한 번의 탭으로 바꿉니다. SmartDecrypt PDF ZIP CBZ는 컬렉션의 모든 비밀번호로 보호된 PDF, CBZ, ZIP을 한 번에 처리합니다. App Store에서 **SmartDecrypt PDF ZIP CBZ**를 검색하여 시작하고, CBZ 아카이브를 복호화한 후 [BiblioFuse](/ko/)에서 열어 iPhone에서 최상의 만화 독서 경험을 즐기세요.
+
+[SmartDecrypt PDF ZIP CBZ](/ko/smartdecrypt/) — App Store에서 다운로드.

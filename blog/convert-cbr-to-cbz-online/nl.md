@@ -1,113 +1,96 @@
-# Hoe CBR naar CBZ online converteren: gratis, zonder software te installeren
+# CBR Omzetten naar CBZ Online: Gratis, Zonder Software
 
-De BiblioFuse webapplicatie converteert CBR-stripboekbestanden naar CBZ-formaat direct in je browser — geen software om te installeren, geen bestanden die naar een server worden geüpload. CBR-bestanden zijn RAR-archieven; CBZ-bestanden zijn ZIP-archieven met dezelfde stripafbeeldingen. BiblioFuse verpakt de afbeeldingen opnieuw in een standaard ZIP-gebaseerd CBZ-formaat, waarbij alle kwaliteit van je kunstwerk behouden blijft. Open de tool in elke browser, zet je CBR-bestand erin en download de geconverteerde CBZ in seconden.
+Je hebt een map vol CBR-bestanden — strips in RAR-archiefformaat — en een lezer die alleen CBZ opent. Of je archiveert je collectie en wilt een consistent, open formaat. De oplossing klinkt eenvoudig: hernoem de extensie van `.cbr` naar `.cbz`. Maar dat werkt niet.
 
-Je stripboekencollectie bevat tientallen — misschien honderden — .cbr-bestanden. CBR was het originele stripboekformaat, gebouwd op de RAR-compressiestandaard. CBZ kwam later, met het meer open ZIP-formaat. Tegenwoordig geven de meeste moderne stripboeklezers, bibliotheken en archiveringsprogramma's de voorkeur aan CBZ. CBR naar CBZ online converteren, zonder software te installeren of bestanden naar servers van derden te uploaden, is de schoonste manier om je collectie te standaardiseren.
+CBR-bestanden zijn RAR-archieven. CBZ-bestanden zijn ZIP-archieven. Ze gebruiken verschillende compressie-indelingen onder de motorkap — je kunt de bestandsextensie niet zomaar hernoemen. Je moet de afbeeldingen uit het RAR-archief extraheren en ze opnieuw als ZIP inpakken. [De online converter van BiblioFuse](https://bibliofuse.com/nl/webapp/) doet dit in je browser, zonder dat er bestanden naar een server worden geüpload.
 
-## Wat is het verschil tussen CBR en CBZ?
+## CBR vs CBZ: Wat Is het Echte Verschil?
 
-Zowel CBR als CBZ zijn stripboekformaten. Ze werken op hetzelfde principe: een map met opeenvolgende stripafbeeldingen (meestal JPEG of PNG) samenvoegen in één archiefbestand. Het enige echte verschil is het compressie-algoritme:
+Zowel CBR als CBZ zijn archiefindelingen voor strips. Beide bevatten een reeks afbeeldingsbestanden (meestal JPG of PNG), die de lezer in volgorde weergeeft om het lezen van een strip te simuleren.
 
-- **CBR** — gebruikt RAR-compressie. RAR is een eigen formaat ontwikkeld door Eugene Roshal. Oudere stripboekscanner gebruikten het liever vanwege de goede compressieverhouding. De extensie `.cbr` staat voor "Comic Book RAR".
-- **CBZ** — gebruikt ZIP-compressie. ZIP is een open standaard, breed ondersteund door elk besturingssysteem zonder extra software. De extensie `.cbz` staat voor "Comic Book ZIP".
+Het verschil zit in de onderliggende compressie:
 
-De afbeeldingen in beide formaten zijn identiek. CBR naar CBZ converteren verandert niets aan het artwork, de paginavolgorde of de kwaliteit — het verpakt alleen dezelfde bestanden opnieuw in een andere archiefcontainer.
+| Indeling | Archieftype | Open standaard? |
+|----------|------------|----------------|
+| CBZ | ZIP | Ja |
+| CBR | RAR | Nee (propriëtair) |
 
-## Waarom CBR naar CBZ online converteren?
+RAR is een propriëtair formaat ontwikkeld door Eugene Roshal. Het openen van RAR-bestanden vereist de officiële WinRAR-software of een bibliotheek die de RAR-specificatie implementeert — en die bibliotheek moet expliciet in elke lezer zijn opgenomen. Veel moderne lezers, inclusief browsergebaseerde tools, ondersteunen alleen op ZIP gebaseerde CBZ omdat de ZIP-specificatie open en breed geïmplementeerd is.
 
-**Compatibiliteit:** CBZ wordt native ondersteund door vrijwel elke stripboeklezer, bibliotheekapp en archiveringtool. Sommige apps — met name op iOS, Web en nieuwere platforms — ondersteunen alleen ZIP-gebaseerde archieven. CBZ werkt overal; CBR soms niet.
+CBZ werd de de facto standaard voor digitale strips mede omdat ZIP royaltyvrij en platformonafhankelijk is. Elk besturingssysteem kan een ZIP-bestand openen zonder software van derden. Als je een collectie voor de lange termijn archiveert, is CBZ de veiligere keuze.
 
-**Open standaarden:** ZIP is een volledig open formaat. RAR heeft een eigen specificatie en vereist specifieke decoderingsbibliotheeken. Voor langdurige archivering is CBZ de meer toekomstbestendige keuze.
+## Hoe de Conversie Werkt
 
-**Bestandsbeheer:** macOS en Windows kunnen ZIP-bestanden native openen zonder extra app. Je kunt de inhoud van een CBZ bekijken in Finder of Verkenner door de extensie te hernoemen naar `.zip`. CBR-bestanden vereisen WinRAR of een speciale decompressor.
+CBR naar CBZ converteren omvat drie stappen:
 
-**Webcompatibiliteit:** De [BiblioFuse Webapplicatie](https://bibliofuse.com/nl/webapp/) werkt exclusief met ZIP-gebaseerde archieven (CBZ). Door je CBR-bestanden eerst te converteren worden ze compatibel met de volledige reeks online stripboekentools.
+1. De afbeeldingen uit het CBR (RAR-archief) extraheren
+2. Die afbeeldingen in een nieuw ZIP-archief plaatsen
+3. De `.zip`-extensie hernoemen naar `.cbz`
 
-## Hoe CBR naar CBZ online converteren — stap voor stap
+De online tool van BiblioFuse voert alle drie stappen uit in je browser met WebAssembly. Je bestanden worden nooit geüpload — extractie, hercompressie en download vinden allemaal lokaal op je apparaat plaats.
 
-De BiblioFuse webapplicatie verwerkt bestanden volledig in je browser met behulp van WebAssembly. Er wordt niets naar een server geüpload en er worden geen persoonlijke gegevens verzonden. Je bestanden blijven tijdens het hele proces op je computer.
+## Stap voor Stap: CBR naar CBZ Online Converteren
 
-### Stap 1: Open de BiblioFuse webapplicatie
+1. Ga naar [bibliofuse.com/nl/webapp/](https://bibliofuse.com/nl/webapp/)
+2. Open de **Converteren**-tool vanuit de werkbalk.
+3. Klik op **Bestanden selecteren** of sleep je `.cbr`-bestanden naar de dropzone.
+4. De tool extraheert de afbeeldingen, maakt een nieuw ZIP-archief en downloadt het `.cbz`-bestand automatisch.
 
-Ga naar [bibliofuse.com/nl/webapp/](https://bibliofuse.com/nl/webapp/) in Chrome, Firefox, Safari of Edge. Er is geen account of aanmelding vereist.
+Voor batchconversie — meerdere CBR-bestanden tegelijk — selecteer je alle bestanden in de bestandsselecteur. Elk bestand wordt afzonderlijk verwerkt en gedownload. Er is geen rij-limiet opgelegd door de tool, hoewel zeer grote bestanden (400+ MB) langer kunnen duren afhankelijk van de verwerkingskracht van je apparaat.
 
-### Stap 2: Importeer je CBR-bestand
+## Waarom Browsergebaseerde Conversie Privé Is
 
-Klik op **Bestanden toevoegen** of sleep je CBR-bestand rechtstreeks naar de neerzetzone van de tool. De tool accepteert CBR-archieven (op RAR gebaseerd) en extraheert de afbeeldingen daarin.
+De conversie wordt volledig in je browser uitgevoerd via WebAssembly (WASM). Dit is dezelfde technologie die games en video-editors in een browser laat werken zonder plugin — rekenintensief werk dat native in de browser-sandbox wordt uitgevoerd.
 
-Voor het gratis niveau kun je maximaal 3 bestanden per batch verwerken. Zet alle drie tegelijk neer om ze in één bewerking te converteren.
+Wanneer je de [BiblioFuse-webtool](https://bibliofuse.com/nl/webapp/) gebruikt:
 
-### Stap 3: Selecteer het uitvoerformaat
+- Je CBR-bestand wordt in het browsergeheugen geladen
+- De afbeeldingen worden in het geheugen geëxtraheerd
+- Een nieuw ZIP-bestand wordt in het geheugen geconstrueerd
+- De ZIP wordt naar je apparaat gedownload
 
-Kies **CBZ** als uitvoerformaat in de opties van de tool. Dit vertelt de converter om de geëxtraheerde afbeeldingen opnieuw te verpakken als een ZIP-archief met de extensie `.cbz`.
+Op geen enkel moment verlaat er data je machine. Er zijn geen serveraanroepen tijdens de conversie. Je kunt dit verifiëren door de netwerkinspector van je browser te openen (F12 → Netwerk): de enige aanvragen zijn de initiële paginalading. Er verschijnen geen uploads.
 
-### Stap 4: Converteren en downloaden
+Dit is belangrijk als je stripverzameling gelicentieerde inhoud, persoonlijke scans of iets anders bevat dat je liever niet naar een server van derden upload.
 
-Klik op **Converteren** (of de equivalente actieknop). De tool verwerkt het bestand in je browser — geen upload, geen wachten op serverrespons. Wanneer de verwerking voltooid is, verschijnt er een downloadlink. Klik erop om het geconverteerde CBZ-bestand op je Mac of pc op te slaan.
+## CBR-Bestanden Converteren op iPhone of iPad
 
-Het gedownloade bestand is een standaard CBZ-archief met dezelfde afbeeldingen als je originele CBR, opnieuw verpakt in ZIP-formaat.
+De BiblioFuse-webtool werkt ook op mobiele browsers. Ga naar [bibliofuse.com/nl/webapp/](https://bibliofuse.com/nl/webapp/) in Safari of Chrome op iPhone of iPad.
 
-## Kwaliteit en bestandsgrootte na conversie
+Op iOS tik je op **Bestanden selecteren** en navigeer je naar je CBR-bestanden in de Bestanden-app, iCloud Drive, of een verbonden cloudstorage-provider. Gedownloade CBZ-bestanden gaan naar je Downloadmap, vanwaar je ze direct in [BiblioFuse](https://bibliofuse.com/nl/) kunt delen om te lezen.
 
-CBR naar CBZ conversie is verliesvrij voor de afbeeldingen. De stripafbeeldingen (JPEG-, PNG- of WebP-bestanden in het archief) worden uit de RAR-container gehaald en rechtstreeks in de ZIP-container geplaatst zonder hercodering of compressieverandering.
+## Na de Conversie: CBZ-Bestanden Lezen in BiblioFuse
 
-De bestandsgrootte kan licht verschillen tussen de originele CBR en de resulterende CBZ. ZIP en RAR gebruiken verschillende compressie-algoritmen, zodat dezelfde afbeeldingen gecomprimeerd met ZIP een iets groter of kleiner bestand kunnen opleveren dan het RAR-origineel. Het verschil is doorgaans minder dan 5%, en de beeldkwaliteit is identiek.
+BiblioFuse op iPhone leest CBZ-bestanden native — geen verdere conversie nodig. Om je geconverteerde bestanden te lezen:
 
-Als je ook de bestandsgrootte van de geconverteerde CBZ wilt verkleinen, biedt de BiblioFuse webapplicatie een optionele compressiestap — het kan de afbeeldingen in het archief verkleinen en hercomprimeren om de bestandsgrootte te verminderen.
+1. Converteer CBR naar CBZ met de webtool op je Mac of iPhone.
+2. Zet de CBZ-bestanden over naar je iPhone via Wi-Fi Transfer of AirDrop.
+3. Importeer in BiblioFuse door de bestanden in de Bestanden-app te selecteren en te delen naar de app.
 
-## Meerdere CBR-bestanden tegelijk naar CBZ converteren
+Opmerking: BiblioFuse leest ook CBR-bestanden direct op iPhone — het verwerkt RAR-extractie native. De voornaamste reden om te converteren is als je bestanden archiveert, deelt met anderen, of een ander tool in je workflow gebruikt dat specifiek CBZ vereist.
 
-Voor gratis gebruikers verwerkt de BiblioFuse webapplicatie maximaal 3 bestanden per batch. Zet meerdere CBR-bestanden tegelijk neer om ze in één keer te converteren:
+## Veelgestelde Vragen
 
-1. Klik op **Bestanden toevoegen** en selecteer 2–3 CBR-bestanden (of sleep ze allemaal tegelijk naar de tool).
-2. Stel het uitvoerformaat in op **CBZ** voor alle bestanden.
-3. Klik op **Converteren**. Alle bestanden worden parallel verwerkt in je browser.
-4. Download elke geconverteerde CBZ afzonderlijk.
+**Kan ik meerdere CBR-bestanden tegelijk converteren?**
 
-Herhaal voor grotere collecties in batches van 3. Als je tientallen of honderden bestanden tegelijk moet converteren, verwerkt de tool hetzelfde proces voor elke set — geen account, geen wachtrij, geen dagelijks limiet.
+Ja. Selecteer alle CBR-bestanden in de bestandsselecteur en de tool verwerkt ze allemaal. Bestanden worden afzonderlijk gedownload — je krijgt één `.cbz` per `.cbr`. Als je ze daarna wilt samenvoegen tot één volume, gebruik dan de CBZ-samenvoeg-tool.
 
-## Privacy: waarom geen upload belangrijk is
+**Verandert de beeldkwaliteit tijdens de conversie?**
 
-Veel online bestandsconversietools werken door je bestand naar een cloudserver te uploaden, het daar te verwerken en terug te sturen. Je bestand passeert een server van een derde partij — mogelijk opgeslagen, geregistreerd of op manieren gebruikt die je niet kunt controleren.
+Nee. De afbeeldingen in het archief worden niet opnieuw gecodeerd. De conversie extraheert de originele JPG- of PNG-bestanden en plaatst ze in een nieuwe ZIP zonder de afbeeldingsdata aan te raken. De geconverteerde CBZ is pixelidentiek aan de originele CBR.
 
-De BiblioFuse webapplicatie is anders. Het gebruikt WebAssembly om de conversielogica direct in je browser uit te voeren. Je CBR-bestand verlaat nooit je computer. Dit is met name belangrijk voor strips die je zelf hebt gekocht of gescand — geen privacyrisico of auteursrechtblootstelling.
+**Wat als het CBR-bestand met een wachtwoord is beveiligd?**
 
-## CBZ-bestanden lezen op iPhone na conversie
+Met een wachtwoord beveiligde CBR-bestanden kunnen niet worden geopend zonder het wachtwoord. De webtool kan wachtwoordbeveiliging niet omzeilen. Als je CBR versleuteld is, ontgrendel het dan eerst — SmartDecrypt kan met wachtwoord beveiligde CBZ-, PDF- en ZIP-bestanden op iPhone en Mac in batches ontgrendelen.
 
-Nadat je je CBR-bestanden naar CBZ hebt geconverteerd, is het importeren in [BiblioFuse](https://bibliofuse.com/nl/) op iPhone eenvoudig:
+**Mijn CBR-bestand is geconverteerd maar de CBZ opent niet — wat is er gebeurd?**
 
-1. Zet de CBZ-bestanden over naar je iPhone via Wi-Fi overdracht, AirDrop of de Bestanden-app.
-2. BiblioFuse importeert ze in je lokale bibliotheek.
-3. Open en lees meteen — CBZ is het native formaat van BiblioFuse.
+Sommige bestanden gelabeld als `.cbr` zijn eigenlijk ZIP-archieven (hernoemd van `.cbz` of gemaakt door software die standaard ZIP gebruikt). Als de conversie een bestand produceert dat je lezer niet kan openen, probeer dan het originele `.cbr` te hernoemen naar `.zip` en controleer of het al een ZIP-archief is. Mogelijk hoef je het alleen maar direct naar `.cbz` te hernoemen zonder conversie.
 
-Opmerking: BiblioFuse op iPhone leest ook CBR-bestanden native, dus conversie is niet strikt vereist voor lezen op iOS. Maar voor delen met anderen, gebruik met andere tools of het opbouwen van een langetermijnarchief is CBZ het betere formaat.
+**Is er een bestandsgroottelimiet?**
 
-## Veelgestelde vragen
+Er bestaat geen door de server opgelegde limiet omdat er nooit een bestand wordt geüpload. De praktische limiet is het beschikbare RAM van je apparaat — zeer grote CBR-bestanden (1 GB+) kunnen de browser vertragen op apparaten met beperkt geheugen. Voor de meeste stripbestanden onder de 200 MB is de conversie in enkele seconden klaar.
 
-### Wat is het verschil tussen CBR en CBZ?
+## De Kern van de Zaak
 
-CBR-bestanden gebruiken RAR-compressie; CBZ-bestanden gebruiken ZIP-compressie. Beide bevatten hetzelfde type stripafbeeldingen (JPEG, PNG of WebP). Het enige verschil is het archiefformaat dat de afbeeldingen omhult. CBR naar CBZ converteren verpakt de afbeeldingen opnieuw in een ZIP-archief zonder ze te wijzigen.
-
-### Kan ik CBR naar CBZ converteren zonder software te installeren?
-
-Ja. De BiblioFuse webapplicatie werkt volledig in je browser met WebAssembly. Open het in Chrome, Firefox, Safari of Edge — geen download, geen installatie, geen account vereist. Zet je CBR-bestand erin en download de geconverteerde CBZ.
-
-### Vermindert het converteren van CBR naar CBZ de beeldkwaliteit?
-
-Nee. CBR naar CBZ conversie is een verliesvrije containerwissel. De afbeeldingsbestanden in het archief worden geëxtraheerd en opnieuw verpakt zonder hercodering. De kwaliteit is identiek aan het origineel. De bestandsgrootte kan een paar procent veranderen door verschillen in ZIP vs RAR compressie, maar het artwork blijft ongewijzigd.
-
-### Is het veilig om CBR-bestanden te converteren met een online tool?
-
-Met de BiblioFuse webapplicatie, ja. De tool gebruikt WebAssembly om bestanden lokaal in je browser te verwerken — je CBR-bestand wordt nooit naar een server geüpload. Conversietools die het uploaden van bestanden vereisen zijn minder privacyvriendelijk. Als privacy voor jou belangrijk is, gebruik dan een op de browser gebaseerde tool zonder upload.
-
-### Hoe lang duurt het converteren van CBR naar CBZ?
-
-Doorgaans een paar seconden per bestand, afhankelijk van de bestandsgrootte en de processor van je apparaat. Een CBR-bestand van 100 MB converteert in minder dan 5 seconden op de meeste moderne laptops. De tool verwerkt bestanden parallel in je browser, dus batchconversies zijn efficiënt.
-
-### Waarom leest BiblioFuse op iPhone CBR zonder conversie?
-
-BiblioFuse op iOS bevat een ingebouwde RAR-decompressor, zodat het CBR-bestanden native opent zonder enige conversiestap. Conversie is nuttig wanneer je CBZ wilt voor compatibiliteit met andere tools, online lezers of langdurige archivering — niet omdat BiblioFuse het vereist.
-
-## Alles-in-één oplossing voor stripboekconversie
-
-CBR naar CBZ online converteren is een snelle stap naar een meer compatibele, open en toekomstbestendige stripboekbibliotheek. De [BiblioFuse Webapplicatie](https://bibliofuse.com/nl/webapp/) maakt het gratis, privé en onmiddellijk — open het in elke browser, geen aanmelding vereist. Zet je CBR-bestanden erin, krijg CBZ terug en importeer ze in elke lezer die de ZIP-gebaseerde standaard ondersteunt.
+CBR en CBZ lijken op elkaar maar gebruiken onder de motorkap verschillende archiefindelingen. CBR naar CBZ converteren betekent de stripafbeeldingen herarchiveren van RAR naar ZIP-formaat — de [online tool van BiblioFuse](https://bibliofuse.com/nl/webapp/) doet dit volledig in je browser zonder dat er bestanden hoeven te worden geüpload. De beeldkwaliteit blijft behouden, het proces is privé, en het resulterende CBZ-bestand werkt in elke lezer die het open ZIP-gebaseerde formaat ondersteunt.

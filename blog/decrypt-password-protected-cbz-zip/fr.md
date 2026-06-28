@@ -1,6 +1,6 @@
 # Comment ouvrir des fichiers CBZ et ZIP protégés par mot de passe sur iPhone
 
-SmartDecrypt PDF ZIP CBZ ouvre les archives CBZ et ZIP protégées par mot de passe directement sur iPhone, iPad et Mac sans envoyer vos fichiers vers un serveur. L'application déchiffre les archives CBZ de bandes dessinées et les fichiers ZIP sur l'appareil grâce à un moteur basé sur Rust, puis enregistre la copie déverrouillée dans l'application Fichiers. Après le déchiffrement, ouvrez vos bandes dessinées CBZ dans [BiblioFuse](/fr/) pour la meilleure expérience de lecture sur iPhone. Téléchargez SmartDecrypt PDF ZIP CBZ depuis l'App Store pour supprimer les mots de passe des archives en quelques secondes.
+[SmartDecrypt PDF ZIP CBZ](/fr/smartdecrypt/) ouvre les archives CBZ et ZIP protégées par mot de passe directement sur iPhone, iPad et Mac sans envoyer vos fichiers vers un serveur. L'application déchiffre les archives CBZ de bandes dessinées et les fichiers ZIP sur l'appareil grâce à un moteur basé sur Rust, puis enregistre la copie déverrouillée dans l'application Fichiers. Après le déchiffrement, ouvrez vos bandes dessinées CBZ dans [BiblioFuse](/fr/) pour la meilleure expérience de lecture sur iPhone. Téléchargez SmartDecrypt PDF ZIP CBZ depuis l'App Store pour supprimer les mots de passe des archives en quelques secondes.
 
 ## Pourquoi les fichiers CBZ protégés ne s'ouvrent-ils pas dans les lecteurs de bandes dessinées ?
 
@@ -69,4 +69,4 @@ SmartDecrypt requiert le mot de passe correct — il ne tente pas de deviner ou 
 
 ## Déverrouillez vos bandes dessinées et archives
 
-Les fichiers CBZ et ZIP protégés par mot de passe ne doivent plus bloquer votre lecture. SmartDecrypt PDF ZIP CBZ déchiffre toute archive protégée sur votre iPhone ou Mac en quelques secondes, sans envoi de données. Recherchez **SmartDecrypt PDF ZIP CBZ** sur l'App Store pour commencer, puis ouvrez vos bandes dessinées déchiffrées dans [BiblioFuse](/fr/).
+Les fichiers CBZ et ZIP protégés par mot de passe ne doivent plus bloquer votre lecture. SmartDecrypt PDF ZIP CBZ déchiffre toute archive protégée sur votre iPhone ou Mac en quelques secondes, sans envoi de données. Recherchez [SmartDecrypt PDF ZIP CBZ](/fr/smartdecrypt/) sur l'App Store pour commencer, puis ouvrez vos bandes dessinées déchiffrées dans [BiblioFuse](/fr/).

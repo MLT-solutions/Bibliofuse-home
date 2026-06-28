@@ -1,102 +1,108 @@
-# Lire des Ebooks Hors Ligne sur iPhone : Aucun Cloud Requis
+# Lire des Ebooks Hors Ligne sur iPhone : Aucun Compte Cloud Requis
 
-BiblioFuse stocke tous vos fichiers EPUB, CBZ, CBR, PDF, ZIP, RAR et TXT localement sur votre iPhone, pour que vous puissiez lire toute votre bibliothèque hors ligne — en avion, dans le métro ou partout où il n'y a pas de signal — sans abonnement ni compte cloud. L'application fonctionne sous iOS 17 ou version ultérieure, et vos livres restent sur l'appareil jusqu'à ce que vous choisissiez de les supprimer. Lire des ebooks hors ligne sur iPhone avec BiblioFuse ne nécessite aucune connexion internet après le transfert initial des fichiers.
+Vous embarquez pour un vol de 14 heures. Dans votre bagage à main, vous avez votre iPhone avec 300 ebooks, 40 tomes de manga et plusieurs bandes dessinées. Le Wi-Fi de l'avion est payant et lent. Vous ouvrez [BiblioFuse](https://bibliofuse.com/fr/) — chaque livre s'ouvre instantanément, à la page exacte où vous vous étiez arrêté, sans la moindre requête réseau.
 
-Vous l'avez déjà vécu : vous embarquez dans un long vol, vous cherchez votre application de lecture et vous tombez sur une icône de chargement ou un message « bibliothèque indisponible ». Les applications dépendantes du cloud traitent l'accès hors ligne comme une fonction secondaire — parfois comme une option payante. BiblioFuse renverse ce paradigme. Votre bibliothèque vit sur votre iPhone et la lecture fonctionne exactement de la même façon que vous ayez une connexion LTE complète ou aucun signal.
+Ce n'est pas une configuration particulière — c'est le comportement par défaut. BiblioFuse stocke tout localement sur votre appareil et synchronise la progression via iCloud en arrière-plan quand une connexion est disponible. Aucun compte cloud n'est nécessaire pour lire. Pas de streaming. Pas d'écran de chargement.
 
-## Pourquoi la Plupart des Applications de Lecture Échouent sans Connexion ?
+## Pourquoi la Dépendance au Cloud Pose Problème
 
-Les applications de lecture populaires comme Kindle ou Apple Books permettent de télécharger des titres spécifiques pour les lire hors ligne, mais uniquement au sein de leurs propres écosystèmes. Les fichiers que vous possédez dans des formats tiers, ou des fichiers provenant d'autres sources que leurs boutiques, ne peuvent souvent pas être importés du tout. Les applications conçues pour diffuser depuis un service cloud refusent tout simplement d'ouvrir des fichiers sans connexion.
+La plupart des applications de lecture ont été conçues avec un abonnement en tête. Le cloud n'est pas une fonctionnalité — c'est un mécanisme de rétention. Vos livres vivent sur un serveur, votre progression est côté serveur, et l'application cesse de fonctionner si la société ferme, modifie ses conditions ou si votre abonnement expire.
 
-[BiblioFuse](https://bibliofuse.com/fr/) fonctionne en mode local par défaut. Les fichiers que vous transférez dans l'application sont stockés dans son propre conteneur sur votre appareil. Aucun serveur n'est contacté pendant la lecture : l'application ouvre simplement le fichier depuis le stockage local. C'est ainsi que la lecture d'ebooks hors ligne sur iPhone devrait fonctionner.
+Même Apple Books utilise un modèle cloud-first. Les livres que vous « possédez » via Apple sont protégés par DRM et des téléchargements iCloud — ils ne sont vraiment locaux qu'une fois explicitement téléchargés, et ils sont liés à votre identifiant Apple.
 
-## Comment Transférer des Fichiers pour la Lecture Hors Ligne ?
+Pour ceux qui ont de grandes bibliothèques sans DRM — archives CBZ de bandes dessinées, fichiers EPUB d'éditeurs, PDF de manuels scolaires — ce modèle ne convient pas. Vous possédez les fichiers. Vous voulez les lire sans les confier à un service.
 
-Avant de pouvoir lire hors ligne, vos fichiers doivent être sur l'appareil. BiblioFuse prend en charge quatre méthodes de transfert, qui aboutissent toutes à des fichiers stockés localement fonctionnant sans internet :
+## Comment BiblioFuse Stocke Votre Bibliothèque Localement
 
-### Transfert Wi-Fi (Le plus rapide pour les grandes bibliothèques)
+BiblioFuse est conçu pour fonctionner hors ligne dès le départ. Quand vous ajoutez un fichier à l'application — via le Transfert Wi-Fi, AirDrop, l'application Fichiers ou toute autre méthode — il est copié dans l'espace local de l'application sur votre iPhone. Le fichier original sur votre Mac ou ailleurs reste en place ; BiblioFuse possède sa propre copie sur l'appareil.
 
-BiblioFuse inclut une fonction de transfert Wi-Fi intégrée dans l'onglet Outils. Activez-la et une adresse web locale apparaît : ouvrez-la dans n'importe quel navigateur sur votre Mac ou PC et faites glisser vos fichiers directement dans la fenêtre. Les fichiers arrivent dans BiblioFuse via votre réseau Wi-Fi local sans câble ni compte cloud. Aucun accès internet n'est requis — uniquement un Wi-Fi local.
+Cela signifie que :
 
-Une bibliothèque de 100 fichiers s'importe généralement en moins de deux minutes avec cette méthode.
+- Votre bibliothèque complète est accessible à tout moment, quel que soit l'état du réseau
+- La progression de lecture est enregistrée localement et synchronisée avec iCloud quand une connexion est disponible
+- Aucun compte n'est nécessaire pour utiliser l'application — pas même un identifiant Apple (bien que la synchro iCloud en utilise un si elle est activée)
+- L'application fonctionne de manière identique dans un avion, dans un tunnel de métro ou dans une zone rurale sans signal
 
-### AirDrop (Appareils Apple uniquement)
+BiblioFuse prend en charge EPUB, CBZ, CBR, ZIP, PDF et les archives d'images simples. Chaque format fonctionne hors ligne sans aucune différence de comportement.
 
-Sur Mac ou iPad, sélectionnez vos fichiers de bandes dessinées et d'ebooks dans le Finder ou l'application Fichiers. Clic droit → Partager → AirDrop → sélectionnez votre iPhone. Les fichiers transférés arrivent dans Fichiers → Téléchargements sur votre iPhone. Ouvrez l'application Fichiers, sélectionnez les fichiers transférés, appuyez sur Partager et choisissez BiblioFuse. Ils sont importés directement dans le stockage local.
+## Comment Charger des Ebooks et des Comics sur Votre iPhone
 
-### Application Fichiers et Feuille de partage
+Il existe trois façons de charger des fichiers dans BiblioFuse sans dépendre d'un service cloud.
 
-Si vos fichiers arrivent par pièce jointe, câble USB ou téléchargement direct, ils apparaissent dans l'application Fichiers. Sélectionnez-les, appuyez sur Partager et envoyez-les à BiblioFuse. Un seul geste les importe dans le stockage local.
+### Méthode 1 : Transfert Wi-Fi (Réseau Local, Sans Internet)
 
-### Importation depuis iCloud Drive
+Le Transfert Wi-Fi est l'outil intégré de BiblioFuse pour déplacer des fichiers d'un Mac ou d'un PC vers l'iPhone via un réseau Wi-Fi local. Il ne touche pas à internet.
 
-Les fichiers dans iCloud Drive sont techniquement encore stockés dans le cloud. Pour les rendre vraiment disponibles hors ligne, ouvrez l'application Fichiers, naviguez jusqu'au fichier et partagez-le avec BiblioFuse. BiblioFuse crée une copie locale dans son propre conteneur. À partir de ce moment, le fichier est entièrement disponible hors ligne — l'original dans iCloud n'est plus nécessaire.
+1. Ouvrez [BiblioFuse](https://bibliofuse.com/fr/) sur votre iPhone et appuyez sur **Outils** en bas.
+2. Appuyez sur **Transfert Wi-Fi** et notez l'adresse IP affichée.
+3. Sur votre Mac, ouvrez un navigateur et accédez à cette adresse IP.
+4. Glissez vos fichiers EPUB, CBZ ou PDF dans la zone de dépôt du navigateur.
 
-## Ce que « Stocké Localement » Signifie en Pratique
+Les fichiers se transfèrent à la vitesse du réseau local — généralement 30 à 80 Mo/s — et arrivent directement dans votre bibliothèque. Pas d'application intermédiaire, pas d'iCloud, pas de connexion internet utilisée.
 
-Lorsque BiblioFuse importe un fichier, il le copie dans son propre stockage sécurisé sur votre iPhone. La source d'origine — iCloud Drive, AirDrop, Transfert Wi-Fi — devient sans importance. Le fichier vit désormais sur votre appareil.
+### Méthode 2 : AirDrop
 
-**Espace de stockage :** Le stockage disponible de votre iPhone détermine la taille de la bibliothèque. Un roman EPUB typique pèse entre 2 et 10 Mo. Un numéro de BD en CBZ pèse en moyenne entre 30 et 150 Mo selon la résolution des images. Une série manga complète en CBZ peut utiliser entre 1 et 5 Go. Un iPhone de 128 Go peut confortablement contenir 600 à 800 numéros de BD en plus des autres applications.
+Pour déplacer quelques fichiers rapidement depuis un autre appareil Apple :
 
-**Suppression de fichiers :** La suppression d'un titre dans BiblioFuse libère le stockage local. Elle ne touche à aucune copie dans iCloud Drive ni sur votre Mac. La bibliothèque locale et le stockage cloud sont gérés indépendamment.
+1. Partagez les fichiers via AirDrop depuis un Mac, un iPad ou un autre iPhone.
+2. Acceptez le transfert sur votre iPhone.
+3. Trouvez les fichiers dans **Fichiers → Téléchargements**.
+4. Sélectionnez-les, appuyez sur Partager et choisissez BiblioFuse.
 
-**Synchronisation de la progression :** BiblioFuse synchronise les signets, la position de lecture, les étiquettes et les évaluations via iCloud lorsqu'une connexion est disponible. La synchronisation est automatique à la reconnexion — vous ne perdrez pas votre place même après des semaines hors ligne. Les fichiers eux-mêmes n'ont pas besoin d'être dans iCloud pour que cette synchronisation fonctionne.
+AirDrop utilise le Wi-Fi pair-à-pair. Cela fonctionne entre vos propres appareils Apple, que l'un ou l'autre ait accès à internet ou non.
 
-## Tout ce qui Fonctionne Hors Ligne
+### Méthode 3 : Application Fichiers via USB
 
-Une fois les fichiers importés, toutes les fonctions principales fonctionnent sans internet :
+Connectez votre iPhone à votre Mac via USB et utilisez le Finder (macOS Catalina ou version ultérieure) :
 
-- **Tous les modes de lecture** — page par page, défilement continu, double page — sont entièrement disponibles hors ligne.
-- **Tous les formats** — EPUB, CBZ, CBR, PDF, ZIP, RAR, TXT — s'ouvrent de façon identique, connecté ou non.
-- **OCR** — le framework Vision d'Apple s'exécute sur l'appareil ; l'extraction de texte depuis les cases de BD et les pages numérisées fonctionne sans connexion.
-- **Signets et surlignages** — enregistrés localement, synchronisés sur vos autres appareils à la reconnexion.
-- **Étiquettes et évaluations** — stockées localement dans la base de données de BiblioFuse.
-- **Recherche dans la bibliothèque** — recherche dans vos métadonnées locales ; aucune requête réseau.
+1. Sélectionnez votre iPhone dans le Finder.
+2. Cliquez sur **Fichiers**.
+3. Glissez les fichiers directement dans la zone de fichiers de BiblioFuse.
 
-La seule fonction nécessitant un accès réseau est la **diffusion depuis Mac**, qui diffuse le contenu depuis votre Mac via Wi-Fi local. Tout le reste est entièrement local.
+Les transferts USB sont la méthode la plus rapide et la plus fiable pour les grandes bibliothèques — des centaines de volumes se transfèrent en quelques minutes.
 
-## La Lecture Hors Ligne Est-elle Plus Lente ?
+## Que Se Passe-t-il avec la Progression de Lecture Hors Ligne ?
 
-Non — elle est plus rapide. L'accès au stockage local est nettement plus rapide que la diffusion ou le téléchargement depuis un cloud. Lorsque BiblioFuse ouvre un fichier CBZ de 200 Mo stocké sur votre appareil, il le lit directement depuis la mémoire flash. Les pages se chargent instantanément quelle que soit la taille du fichier.
+BiblioFuse enregistre la progression de lecture dans une base de données locale sur votre appareil. Chaque changement de page, signet et annotation est d'abord stocké localement. Quand une connexion internet devient disponible, les modifications se synchronisent automatiquement avec iCloud.
 
-Les applications dépendantes du cloud chargent souvent progressivement : les premières pages sont disponibles pendant que les suivantes se téléchargent. BiblioFuse ne fait pas cela. Un volume manga de 400 pages s'ouvre aussi rapidement qu'un numéro de 10 pages.
+Si vous lisez sur iPhone hors ligne, puis ouvrez BiblioFuse sur iPad ou Mac, votre progression vous attend. La synchronisation utilise l'horodatage le plus récent — sans conflit ni perte de données, même si les deux appareils étaient hors ligne simultanément.
 
-## Scénarios Pratiques de Lecture Hors Ligne
+Vous n'avez rien à faire pour déclencher cette synchronisation. BiblioFuse s'en occupe en arrière-plan dès que votre appareil se connecte.
 
-**Longs vols :** Transférez votre liste de lecture la veille. Pendant le vol, votre bibliothèque est entièrement accessible — pas besoin du Wi-Fi de l'avion.
+## Formats Compatibles Hors Ligne
 
-**Trajets en train ou métro :** Les tronçons souterrains sans signal ne posent aucun problème. Les pages de BiblioFuse ne se figent pas et n'ont pas besoin d'être rechargées à la sortie d'un tunnel.
+BiblioFuse lit les formats suivants entièrement hors ligne :
 
-**Voyages sans données en itinérance :** Si vous êtes à l'étranger sans SIM locale, votre bibliothèque reste entièrement accessible. Seules les fonctions nécessitant internet (comme les mises à jour de l'application) sont concernées.
+| Format | Usage courant |
+|--------|--------------|
+| EPUB | Ebooks, romans, non-fiction |
+| CBZ | Archives de comics (basées sur ZIP) |
+| CBR | Archives de comics (basées sur RAR) |
+| ZIP | Archives d'images |
+| PDF | Manuels, livres d'art, documents numérisés |
 
-**Endroits isolés :** Randonnées, zones rurales, bateaux — le stockage de votre téléphone est la seule exigence.
+Tous les formats s'ouvrent à la même vitesse hors ligne qu'en ligne. Pas de mode dégradé, pas de filigranes, pas de publicité.
 
-## Foire aux Questions
+## Questions Fréquentes
 
-### BiblioFuse a-t-il besoin du Wi-Fi pour lire des ebooks sur iPhone ?
+**Ai-je besoin d'un compte Apple pour utiliser BiblioFuse hors ligne ?**
 
-Non. Une fois les fichiers importés dans BiblioFuse, l'application les lit depuis le stockage local de votre iPhone. Aucun internet ni Wi-Fi n'est nécessaire pour ouvrir, lire ou naviguer dans un fichier de votre bibliothèque. Le Wi-Fi n'est utilisé que lors du transfert initial si vous utilisez la méthode de transfert Wi-Fi.
+Non. BiblioFuse fonctionne entièrement sans identifiant Apple. Si vous n'utilisez pas iCloud, la progression est stockée localement et ne se synchronise pas avec d'autres appareils, mais tout le reste — lecture, signets, gestion de la bibliothèque — fonctionne parfaitement.
 
-### Puis-je lire des fichiers EPUB hors ligne sur iPhone sans compte ?
+**Puis-je lire des ebooks sans DRM achetés en dehors d'Apple ?**
 
-Oui. BiblioFuse ne requiert ni compte, ni identifiant, ni abonnement. Transférez vos fichiers EPUB une fois et vous pouvez les lire indéfiniment, entièrement hors ligne. Il n'y a aucune exigence de compte pour la lecture.
+Oui. BiblioFuse lit tout fichier EPUB sans DRM, quelle que soit sa provenance. Les ebooks d'éditeurs, de Project Gutenberg ou de boutiques proposant des téléchargements EPUB sans DRM fonctionnent tous. BiblioFuse ne peut pas ouvrir les fichiers protégés par DRM.
 
-### Comment transférer des ebooks sur iPhone sans internet ?
+**Les fichiers utiliseront-ils le stockage de l'appareil ?**
 
-Utilisez le Transfert Wi-Fi de BiblioFuse (de Mac ou PC vers iPhone via Wi-Fi local — aucune connexion internet requise, seulement un réseau local partagé) ou AirDrop (aucun réseau du tout, en pair à pair). Les deux méthodes importent les fichiers directement dans la bibliothèque locale de BiblioFuse sans passer par aucun service cloud.
+Oui — comme les fichiers sont stockés localement, ils utilisent le stockage de l'appareil. Un roman EPUB typique fait 1 à 5 Mo. Un volume de manga CBZ de haute qualité fait 80 à 200 Mo. Pour quelques dizaines à quelques centaines de livres, le stockage n'est pas un problème pratique sur les iPhones modernes.
 
-### Quels formats puis-je lire hors ligne sur iPhone avec BiblioFuse ?
+**L'application fonctionne-t-elle en Mode Avion ?**
 
-BiblioFuse lit les fichiers EPUB, PDF, CBZ, CBR, ZIP, RAR et TXT hors ligne. Tous les formats sont traités de façon identique — il n'y a aucune limitation spécifique à un format pour l'accès hors ligne.
+Complètement. Activez le Mode Avion et ouvrez BiblioFuse — toute votre bibliothèque est là, le suivi de progression fonctionne et les signets fonctionnent normalement. La synchronisation iCloud se suspend simplement jusqu'à ce que vous vous reconnectiez.
 
-### Ma progression de lecture sera-t-elle perdue si je suis hors ligne pendant des semaines ?
+## L'essentiel à Retenir
 
-Non. La progression de lecture est enregistrée dans le stockage local de votre iPhone au fur et à mesure de votre lecture. Lorsque vous vous reconnectez à internet, BiblioFuse synchronise automatiquement cette progression avec iCloud et sur vos autres appareils. Vous ne perdrez pas votre place.
+BiblioFuse est construit sur le principe que votre vie de lecteur ne devrait pas dépendre de la disponibilité d'un serveur. Vos fichiers sont locaux. Votre progression est locale en premier. Votre expérience de lecture est identique que vous soyez sur une connexion fibre ou à 10 000 mètres d'altitude.
 
-### De combien de stockage iPhone ai-je besoin pour une bibliothèque hors ligne ?
-
-Cela dépend de vos fichiers. Les romans EPUB pèsent en moyenne 5 Mo chacun — 1 000 romans tiennent dans environ 5 Go. Les numéros de BD CBZ pèsent en moyenne entre 60 et 100 Mo — 100 numéros utilisent entre 6 et 10 Go. Une série manga complète de 20 volumes peut peser entre 2 et 4 Go en CBZ. En règle générale, prévoyez 1 Go pour 10 à 15 volumes de BD.
-
-## Votre Bibliothèque, Où que Vous Alliez
-
-Lire des ebooks hors ligne sur iPhone ne devrait pas nécessiter de contournement ni d'abonnement premium. Avec [BiblioFuse](https://bibliofuse.com/fr/), votre bibliothèque est entièrement portable — en avion, en train, dans le métro ou dans des endroits sans signal. Transférez vos fichiers une fois et l'application gère tout le reste entièrement sur l'appareil. Pas de compte. Pas de cloud. Pas de connexion requise.
+Si vous avez une bibliothèque d'ebooks ou de comics et souhaitez les lire sur iPhone sans dépendance au cloud, [BiblioFuse](https://bibliofuse.com/fr/) est la solution directe. Chargez vos fichiers une fois via Wi-Fi, AirDrop ou USB — et lisez où que vous soyez.

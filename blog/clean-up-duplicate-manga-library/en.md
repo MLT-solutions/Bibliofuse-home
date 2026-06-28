@@ -4,7 +4,7 @@ You open your manga folder and notice something off: *One Piece* volume 47 is th
 
 For most manga readers, duplicates accumulate silently over years of downloading from different sources, moving archives between drives, and creating backups that never got cleaned up. The result is wasted storage, confusion when reading, and no easy way to tell which version is highest quality.
 
-This guide walks through a practical workflow for finding, reviewing, and removing duplicate manga using [Archive Duplicate Scanner](/en/) — a Mac utility built specifically for this problem.
+This guide walks through a practical workflow for finding, reviewing, and removing duplicate manga using [Archive Duplicate Scanner](/en/archive/) — a Mac utility built specifically for this problem.
 
 ---
 
@@ -26,7 +26,7 @@ A standard duplicate file finder won't catch most of these cases because it comp
 
 ## What Archive Duplicate Scanner Does Differently
 
-[Archive Duplicate Scanner](/en/) uses **perceptual hashing** to compare the actual images inside your CBZ and CBR archives. Instead of asking "are these two files byte-for-byte identical?", it asks "do these two archives contain the same comic pages?"
+[Archive Duplicate Scanner](/en/archive/) uses **perceptual hashing** to compare the actual images inside your CBZ and CBR archives. Instead of asking "are these two files byte-for-byte identical?", it asks "do these two archives contain the same comic pages?"
 
 This means it catches duplicates that have been:
 

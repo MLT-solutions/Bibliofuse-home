@@ -1,102 +1,108 @@
 # Membaca Ebook Sepenuhnya Offline di iPhone: Tanpa Cloud
 
-BiblioFuse menyimpan semua file EPUB, CBZ, CBR, PDF, ZIP, RAR, dan TXT langsung di iPhone Anda, sehingga Anda dapat membaca seluruh perpustakaan secara offline — di pesawat, di bawah tanah, atau di mana saja tanpa sinyal — tanpa berlangganan atau membuat akun cloud. Aplikasi ini berjalan di iOS 17 atau lebih baru, dan buku-buku Anda tetap tersimpan di perangkat hingga Anda memilih untuk menghapusnya. Membaca ebook offline di iPhone dengan BiblioFuse tidak memerlukan koneksi internet setelah transfer file awal.
+Kamu hendak naik penerbangan 14 jam. Di tas kabin ada iPhone dengan 300 ebook, 40 volume manga, dan beberapa novel grafis. Wi-Fi maskapai berbayar dan lambat. Kamu membuka [BiblioFuse](https://bibliofuse.com/id/) — setiap buku langsung terbuka di halaman terakhir yang dibaca, tanpa satu pun permintaan jaringan.
 
-Anda pasti pernah mengalaminya: menaiki penerbangan panjang, membuka aplikasi baca, lalu melihat ikon berputar atau pesan "perpustakaan tidak tersedia". Aplikasi yang bergantung pada cloud memperlakukan akses offline sebagai fitur sekunder — kadang sebagai peningkatan berbayar. BiblioFuse membalikkan asumsi itu. Perpustakaan Anda berada di iPhone, dan membaca berfungsi persis sama baik saat Anda punya LTE penuh maupun tidak ada sinyal sama sekali.
+Ini bukan pengaturan khusus — inilah perilaku defaultnya. BiblioFuse menyimpan semua konten secara lokal di perangkat dan menyinkronkan kemajuan lewat iCloud di latar belakang saat ada koneksi. Tidak perlu akun cloud untuk membaca. Tanpa streaming. Tanpa layar loading.
 
-## Mengapa Sebagian Besar Aplikasi Baca Gagal Tanpa Koneksi?
+## Mengapa Ketergantungan Cloud Menjadi Masalah
 
-Aplikasi ebook populer seperti Kindle atau Apple Books memungkinkan Anda mengunduh judul tertentu untuk dibaca offline, tetapi hanya dalam ekosistem mereka sendiri. File yang Anda miliki dalam format pihak ketiga, atau file yang berasal dari luar toko mereka, sering kali tidak dapat diimpor sama sekali. Aplikasi yang dirancang untuk streaming dari layanan cloud secara sederhana menolak membuka file tanpa koneksi.
+Sebagian besar aplikasi membaca dirancang dengan model berlangganan. Cloud bukan fitur — melainkan mekanisme penguncian. Buku-bukumu tersimpan di server, kemajuanmu ada di server, dan aplikasi berhenti bekerja jika perusahaan tutup, mengubah ketentuan, atau langgananmu habis.
 
-[BiblioFuse](https://bibliofuse.com/id/) mengutamakan penyimpanan lokal. File yang Anda transfer ke aplikasi disimpan di wadah tersendiri di perangkat Anda. Tidak ada server yang dihubungi selama membaca — aplikasi hanya membuka file dari penyimpanan lokal. Begitulah cara membaca ebook offline di iPhone seharusnya bekerja.
+Bahkan Apple Books menggunakan model cloud-first. Buku yang kamu "miliki" melalui Apple dilindungi DRM dan unduhan iCloud — belum benar-benar lokal hingga diunduh secara eksplisit, dan terikat ke Apple ID-mu.
 
-## Cara Transfer File untuk Membaca Offline
+Bagi mereka yang memiliki perpustakaan besar bebas DRM — arsip komik CBZ, file EPUB dari penerbit, PDF buku teks — model ini tidak cocok. Kamu yang memiliki file-nya. Kamu ingin membacanya tanpa menyerahkannya ke layanan tertentu.
 
-Sebelum dapat membaca offline, file perlu berada di perangkat terlebih dahulu. BiblioFuse mendukung empat metode transfer, yang semuanya menghasilkan file tersimpan secara lokal yang berfungsi tanpa internet:
+## Cara BiblioFuse Menyimpan Perpustakaan Secara Lokal
 
-### Transfer Wi-Fi (Tercepat untuk Banyak File)
+BiblioFuse dirancang offline-first sejak awal. Saat kamu menambahkan file ke aplikasi — melalui Transfer Wi-Fi, AirDrop, aplikasi File, atau cara lain — file disalin ke sandbox lokal aplikasi di iPhone-mu. File asli di Mac atau di mana pun kamu mengirimnya tetap ada di sana; BiblioFuse memiliki salinannya sendiri di perangkat.
 
-BiblioFuse menyertakan fitur Transfer Wi-Fi bawaan di tab Alat. Aktifkan, dan alamat web lokal akan muncul — buka alamat tersebut di browser mana saja di Mac atau PC Anda lalu seret file langsung ke jendela. File masuk ke BiblioFuse melalui jaringan Wi-Fi lokal tanpa kabel atau akun cloud. Akses internet tidak diperlukan — hanya Wi-Fi lokal.
+Artinya:
 
-Perpustakaan berisi 100 file biasanya selesai diimpor dalam waktu kurang dari dua menit.
+- Seluruh perpustakaanmu dapat diakses kapan saja, terlepas dari status jaringan
+- Kemajuan membaca dicatat secara lokal dan disinkronkan ke iCloud saat ada koneksi
+- Tidak diperlukan akun untuk menggunakan aplikasi — bahkan tanpa Apple ID (meskipun sinkronisasi iCloud memerlukannya jika diaktifkan)
+- Aplikasi bekerja identik di pesawat, di terowongan bawah tanah, atau di daerah pedesaan tanpa sinyal
 
-### AirDrop (Hanya Perangkat Apple)
+BiblioFuse mendukung EPUB, CBZ, CBR, ZIP, PDF, dan arsip gambar biasa. Setiap format bekerja offline tanpa perbedaan perilaku apa pun.
 
-Di Mac atau iPad, pilih file komik dan ebook Anda di Finder atau Berkas. Klik kanan → Bagikan → AirDrop → pilih iPhone Anda. File yang ditransfer akan tiba di Berkas → Unduhan di iPhone Anda. Buka aplikasi Berkas, pilih file yang ditransfer, ketuk Bagikan, dan pilih BiblioFuse. File langsung diimpor ke penyimpanan lokal.
+## Cara Memuat Ebook dan Komik ke iPhone
 
-### Aplikasi Berkas dan Lembar Berbagi
+Ada tiga cara memuat file ke BiblioFuse tanpa bergantung pada layanan cloud.
 
-Jika file Anda tiba melalui lampiran email, kabel USB, atau unduhan langsung, file tersebut muncul di aplikasi Berkas. Pilih file, ketuk Bagikan, dan kirim ke BiblioFuse. Satu ketukan mengimpornya ke penyimpanan lokal.
+### Cara 1: Transfer Wi-Fi (Jaringan Lokal, Tanpa Internet)
 
-### Impor dari iCloud Drive
+Transfer Wi-Fi adalah alat bawaan BiblioFuse untuk memindahkan file dari Mac atau PC ke iPhone melalui jaringan Wi-Fi lokal. Tidak menggunakan internet.
 
-File di iCloud Drive secara teknis masih tersimpan di cloud. Untuk membuatnya benar-benar siap offline, buka aplikasi Berkas, navigasi ke file, lalu bagikan ke BiblioFuse. BiblioFuse membuat salinan lokal di wadah miliknya sendiri. Mulai saat itu, file sepenuhnya tersedia offline — file asli di iCloud tidak lagi diperlukan.
+1. Buka [BiblioFuse](https://bibliofuse.com/id/) di iPhone dan ketuk **Alat** di bagian bawah.
+2. Ketuk **Transfer Wi-Fi** dan catat alamat IP yang ditampilkan.
+3. Di Mac, buka browser dan buka alamat IP tersebut.
+4. Seret file EPUB, CBZ, atau PDF ke area unggah di browser.
 
-## Apa Arti "Tersimpan Secara Lokal" dalam Praktiknya
+File ditransfer dengan kecepatan jaringan lokal — biasanya 30–80 MB/detik — dan langsung masuk ke perpustakaanmu. Tanpa aplikasi perantara, tanpa iCloud, tanpa koneksi internet.
 
-Saat BiblioFuse mengimpor file, file tersebut disalin ke penyimpanan tersandbox miliknya di iPhone Anda. Sumber aslinya — iCloud Drive, AirDrop, Transfer Wi-Fi — menjadi tidak relevan. File kini berada di perangkat Anda.
+### Cara 2: AirDrop
 
-**Ruang penyimpanan:** Penyimpanan iPhone yang tersedia menentukan ukuran perpustakaan. Novel EPUB tipikal berukuran 2–10 MB. Satu edisi komik CBZ rata-rata 30–150 MB tergantung resolusi gambar. Seri manga lengkap dalam CBZ bisa menggunakan 1–5 GB. iPhone 128 GB dapat dengan nyaman menyimpan 600–800 edisi komik bersamaan dengan aplikasi lain.
+Untuk memindahkan beberapa file dengan cepat dari perangkat Apple lain:
 
-**Menghapus file:** Menghapus judul dari BiblioFuse membebaskan penyimpanan lokal. Ini tidak memengaruhi salinan mana pun di iCloud Drive atau Mac Anda. Perpustakaan lokal dan penyimpanan cloud dikelola secara terpisah.
+1. Bagikan file melalui AirDrop dari Mac, iPad, atau iPhone lain.
+2. Terima transfer di iPhone-mu.
+3. Temukan file di **File → Unduhan**.
+4. Pilih file, ketuk Bagikan, dan pilih BiblioFuse.
 
-**Sinkronisasi progres membaca:** BiblioFuse menyinkronkan bookmark, posisi membaca, tag, dan penilaian melalui iCloud saat koneksi tersedia. Sinkronisasi berjalan otomatis saat Anda kembali terhubung — Anda tidak akan kehilangan posisi membaca meski setelah beberapa minggu offline. File itu sendiri tidak perlu berada di iCloud agar sinkronisasi ini berfungsi.
+AirDrop menggunakan Wi-Fi peer-to-peer. Berfungsi antar perangkat Apple milikmu terlepas dari apakah salah satunya memiliki data seluler atau akses internet.
 
-## Semua yang Berfungsi Offline
+### Cara 3: Aplikasi File via USB
 
-Setelah file diimpor, setiap fitur utama bekerja tanpa internet:
+Hubungkan iPhone ke Mac melalui USB dan gunakan Finder (macOS Catalina atau lebih baru):
 
-- **Semua mode membaca** — halaman per halaman, gulir berkelanjutan, tampilan dua halaman — sepenuhnya offline.
-- **Semua format** — EPUB, CBZ, CBR, PDF, ZIP, RAR, TXT — terbuka identik baik terhubung maupun tidak.
-- **OCR** — framework Vision Apple berjalan di perangkat; ekstraksi teks dari panel komik dan halaman yang dipindai berfungsi tanpa koneksi.
-- **Bookmark dan sorotan** — disimpan secara lokal, disinkronkan ke perangkat lain saat Anda terhubung kembali.
-- **Tag dan penilaian** — tersimpan secara lokal di database BiblioFuse.
-- **Pencarian perpustakaan** — mencari metadata lokal Anda; tidak ada permintaan jaringan.
+1. Pilih iPhone di Finder.
+2. Klik **File**.
+3. Seret file langsung ke area file BiblioFuse.
 
-Satu-satunya fitur yang memerlukan akses jaringan adalah **Streaming Perpustakaan Mac**, yang mengalirkan konten dari Mac Anda melalui Wi-Fi lokal. Semua yang lain sepenuhnya lokal.
+Transfer USB adalah metode tercepat dan paling andal untuk perpustakaan besar — ratusan volume ditransfer dalam hitungan menit.
 
-## Apakah Membaca Offline Lebih Lambat?
+## Apa yang Terjadi pada Kemajuan Membaca Saat Offline?
 
-Tidak — bahkan lebih cepat. Akses penyimpanan lokal jauh lebih cepat dibandingkan streaming atau mengunduh dari cloud. Saat BiblioFuse membuka file CBZ 200 MB yang tersimpan di perangkat Anda, ia membaca langsung dari penyimpanan flash. Halaman dimuat seketika terlepas dari ukuran file.
+BiblioFuse menyimpan kemajuan membaca ke database lokal di perangkatmu. Setiap ganti halaman, penanda, dan anotasi pertama kali disimpan secara lokal. Saat ada koneksi internet, perubahan secara otomatis disinkronkan ke iCloud.
 
-Aplikasi yang bergantung pada cloud sering memuat secara bertahap — beberapa halaman pertama tersedia sementara halaman selanjutnya diunduh. BiblioFuse tidak melakukan ini. Volume manga 400 halaman terbuka dengan kecepatan yang sama seperti edisi 10 halaman.
+Jika kamu membaca di iPhone dalam mode offline, lalu membuka BiblioFuse di iPad atau Mac, kemajuanmu sudah tersinkronkan di sana. Sinkronisasi menggunakan stempel waktu terbaru — tidak ada konflik atau kehilangan data meski kedua perangkat offline secara bersamaan.
 
-## Skenario Praktis Membaca Offline
+Kamu tidak perlu melakukan apa pun untuk memicu sinkronisasi ini. BiblioFuse menanganinya secara otomatis di latar belakang begitu perangkat terhubung.
 
-**Penerbangan jarak jauh:** Transfer antrean bacaan Anda malam sebelumnya. Selama penerbangan, perpustakaan Anda sepenuhnya tersedia — tidak perlu Wi-Fi pesawat.
+## Format yang Didukung Secara Offline
 
-**Perjalanan kereta dan MRT:** Segmen bawah tanah tanpa sinyal bukan masalah. Halaman BiblioFuse tidak membeku atau perlu dimuat ulang saat Anda keluar dari terowongan.
+BiblioFuse membaca format berikut sepenuhnya offline:
 
-**Perjalanan tanpa roaming data:** Jika Anda di luar negeri tanpa SIM lokal, perpustakaan Anda tetap sepenuhnya dapat diakses. Hanya fitur yang membutuhkan internet (seperti pembaruan aplikasi) yang terpengaruh.
+| Format | Penggunaan umum |
+|--------|----------------|
+| EPUB | Ebook, novel, non-fiksi |
+| CBZ | Arsip komik (berbasis ZIP) |
+| CBR | Arsip komik (berbasis RAR) |
+| ZIP | Arsip gambar |
+| PDF | Buku teks, buku seni, dokumen pindaian |
 
-**Lokasi terpencil:** Perjalanan hiking, daerah pedesaan, kapal — penyimpanan ponsel Anda adalah satu-satunya persyaratan.
+Semua format dibuka dengan kecepatan yang sama baik offline maupun online. Tidak ada mode terdegradasi, tanda air, atau iklan.
 
-## Pertanyaan yang Sering Diajukan
+## Pertanyaan Umum
 
-### Apakah BiblioFuse membutuhkan Wi-Fi untuk membaca ebook di iPhone?
+**Apakah saya memerlukan akun Apple untuk menggunakan BiblioFuse secara offline?**
 
-Tidak. Setelah file diimpor ke BiblioFuse, aplikasi membacanya dari penyimpanan lokal iPhone Anda. Tidak perlu internet atau Wi-Fi untuk membuka, membaca, atau menavigasi file mana pun di perpustakaan Anda. Wi-Fi hanya digunakan selama transfer file awal jika Anda menggunakan metode Transfer Wi-Fi.
+Tidak. BiblioFuse bekerja sepenuhnya tanpa Apple ID. Jika kamu tidak menggunakan iCloud, kemajuan disimpan secara lokal dan tidak disinkronkan ke perangkat lain, tetapi semuanya — membaca, penanda, pengelolaan perpustakaan — berfungsi dengan baik.
 
-### Bisakah saya membaca file EPUB offline di iPhone tanpa akun?
+**Bisakah saya membaca ebook bebas DRM yang dibeli di luar Apple?**
 
-Ya. BiblioFuse tidak memerlukan akun, login, atau langganan. Transfer file EPUB Anda sekali, dan Anda bisa membacanya tanpa batas waktu, sepenuhnya offline. Tidak ada persyaratan akun untuk membaca.
+Ya. BiblioFuse membaca file EPUB bebas DRM apa pun terlepas dari sumbernya. Ebook dari penerbit, Project Gutenberg, atau toko yang menawarkan unduhan EPUB bebas DRM semuanya berfungsi. BiblioFuse tidak dapat membuka file yang dilindungi DRM.
 
-### Bagaimana cara mentransfer ebook ke iPhone tanpa internet?
+**Apakah file akan menggunakan penyimpanan perangkat?**
 
-Gunakan Transfer Wi-Fi BiblioFuse (dari Mac atau PC ke iPhone melalui Wi-Fi lokal — tidak perlu koneksi internet, hanya jaringan lokal bersama) atau AirDrop (tidak perlu jaringan sama sekali, peer-to-peer). Kedua metode mengimpor file langsung ke perpustakaan lokal BiblioFuse tanpa melalui layanan cloud mana pun.
+Ya — karena file disimpan secara lokal, file menggunakan penyimpanan perangkat. Novel EPUB tipikal berukuran 1–5 MB. Volume manga CBZ berkualitas tinggi berukuran 80–200 MB. Untuk beberapa puluh hingga ratusan buku, penyimpanan bukanlah masalah praktis di iPhone modern.
 
-### Format apa yang bisa dibaca offline di iPhone dengan BiblioFuse?
+**Apakah aplikasi berfungsi dalam Mode Pesawat?**
 
-BiblioFuse membaca file EPUB, PDF, CBZ, CBR, ZIP, RAR, dan TXT secara offline. Semua format diperlakukan identik — tidak ada batasan spesifik format untuk akses offline.
+Sepenuhnya. Aktifkan Mode Pesawat dan buka BiblioFuse — seluruh perpustakaanmu ada di sana, pelacakan kemajuan berfungsi, dan penanda berfungsi normal. Sinkronisasi iCloud hanya dijeda hingga kamu terhubung kembali.
 
-### Apakah progres membaca saya akan hilang jika saya offline selama berminggu-minggu?
+## Kesimpulan
 
-Tidak. Progres membaca disimpan ke penyimpanan lokal iPhone Anda saat Anda membaca. Saat Anda terhubung kembali ke internet, BiblioFuse menyinkronkan progres tersebut ke iCloud dan perangkat lain Anda secara otomatis. Anda tidak akan kehilangan posisi membaca.
+BiblioFuse dibangun atas prinsip bahwa kehidupan membacamu tidak boleh bergantung pada ketersediaan server. File-mu bersifat lokal. Kemajuanmu tersimpan lokal terlebih dahulu. Pengalaman membacamu identik baik saat menggunakan koneksi fiber maupun di ketinggian 10.000 meter.
 
-### Berapa penyimpanan iPhone yang saya butuhkan untuk perpustakaan offline?
-
-Tergantung pada file Anda. Novel EPUB rata-rata 5 MB masing-masing — 1.000 novel muat dalam sekitar 5 GB. Edisi komik CBZ rata-rata 60–100 MB — 100 edisi menggunakan 6–10 GB. Seri manga lengkap 20 volume mungkin 2–4 GB dalam CBZ. Sebagai panduan kasar, anggarkan 1 GB untuk setiap 10–15 volume komik.
-
-## Perpustakaan Anda, ke Mana Pun Anda Pergi
-
-Membaca ebook offline di iPhone seharusnya tidak memerlukan solusi alternatif atau paket premium. Dengan [BiblioFuse](https://bibliofuse.com/id/), perpustakaan Anda sepenuhnya portabel — di pesawat, kereta, bawah tanah, atau di tempat yang tidak ada sinyal. Transfer file Anda sekali, dan aplikasi menangani segalanya sepenuhnya di perangkat. Tanpa akun. Tanpa cloud. Tanpa koneksi yang diperlukan.
+Jika kamu memiliki perpustakaan ebook atau komik dan ingin membacanya di iPhone tanpa bergantung pada cloud, [BiblioFuse](https://bibliofuse.com/id/) adalah solusi langsungnya. Muat file sekali melalui Wi-Fi, AirDrop, atau USB — lalu baca di mana saja.
