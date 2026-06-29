@@ -661,7 +661,7 @@
       "badge": "姉妹アプリ · Mac と Windows",
       "titleA": "重複アーカイブを見つける。",
       "titleB": "名前変更後も。",
-      "desc": "Archive Duplicate Scanner は、名前変更、再圧縮、別フォルダ保存された後でも、重複するコミックアーカイブ、写真、ファイルを検出して削除します。",
+      "desc": "Comic Duplicate Scanner は、名前変更、再圧縮、別フォルダ保存された後でも、重複するコミックアーカイブ、写真、ファイルを検出して削除します。",
       "features": {
         "scanning": {
           "title": "コミックアーカイブスキャン",
@@ -680,8 +680,8 @@
           "body": "マークされたファイルはシステムのゴミ箱にのみ移動。"
         }
       },
-      "altBadge": "Mac App Store で Archive Duplicate Scanner をダウンロード",
-      "altImage": "Archive Duplicate Scanner の設定とスキャン開始",
+      "altBadge": "Mac App Store で Comic Duplicate Scanner をダウンロード",
+      "altImage": "Comic Duplicate Scanner の設定とスキャン開始",
       "pricing": "1,000 ファイルまでのスキャンは永久に無料で利用可能。7 日間のトライアルでフルアクセスが解除され、一度の購入でサブスクリプションなしの無制限利用が可能。",
       "stats": {
         "threshold": "デフォルト閾値",
@@ -826,14 +826,14 @@
     "blog": {
       "posts": {
         "reading-ebooks-offline-iphone": {
-          "title": "iPhoneで完全オフライン電子書籍を読む：クラウド不要",
-          "excerpt": "BiblioFuseはライブラリ全体をデバイスにローカル保存します。アカウント不要、ストリーミング不要、読み込み画面なし。EPUB、CBZ、PDFをどこでも読めます。",
-          "seoDescription": "BiblioFuseでiPhoneで電子書籍やコミックを完全オフラインで読む。ファイルはローカル保存でクラウドアカウント不要。"
+          "title": "iPhoneで電子書籍を完全オフラインで読む：クラウド不要",
+          "excerpt": "BiblioFuseはEPUB、CBZ、CBR、PDF、ZIP、RAR、TXTファイルをiPhoneにローカル保存します。飛行機の中、地下鉄、電波のない場所でも全ライブラリを読めます。クラウドサブスクリプションやアカウントは不要で、iOS 17以降に対応しています。",
+          "seoDescription": "BiblioFuseはEPUB、CBZ、CBR、PDF、ZIP、RAR、TXTをiPhoneにローカル保存。クラウド不要、アカウント不要、オフラインで完全動作。iOS 17+対応のオフライン読書ガイド。"
         },
         "convert-cbr-to-cbz-online": {
-          "title": "CBRをオンラインでCBZに変換する方法：無料、ソフト不要",
-          "excerpt": "CBRはRARアーカイブ、CBZはZIPアーカイブで拡張子の変更だけでは不十分。BiblioFuseのコンバーターはアップロード不要でブラウザ内で数秒変換します。",
-          "seoDescription": "CBRをCBZにオンラインで無料変換。ファイルのアップロード不要。BiblioFuseがWebAssemblyでブラウザ内処理。"
+          "title": "オンラインでCBRをCBZに変換：無料、ソフト不要",
+          "excerpt": "BiblioFuse WebツールはCBR（RARベース）の漫画アーカイブをCBZ（ZIPベース）形式に直接ブラウザ内で変換します。ファイルのアップロード不要、インストール不要、完全にプライベート。ファイルをドロップして数秒でCBZをダウンロードできます。",
+          "seoDescription": "BiblioFuse Web Toolでブラウザ内でCBRをCBZにオンライン変換。ファイルアップロード不要、ソフト不要。WebAssembly使用、単ファイル無料。"
         },
         "organize-ebooks-by-content-not-metadata": {
           "title": "メタデータやISBNではなくコンテンツで電子書籍を整理する",
@@ -842,8 +842,8 @@
         },
         "find-duplicate-comics-different-names": {
           "title": "ファイル名が違う重複コミックの見つけ方",
-          "excerpt": "一般的な重複検索ツールはcomic_E1-5とComiX_E1-10のような名前の違うコミックを見逃します。Archive Duplicate Scannerは実際のページ画像を比較して、ファイル名ツールが見逃す重複を捕捉します。",
-          "seoDescription": "ファイル名が異なる重複CBZ・CBRコミックファイルを見つける方法。Archive Duplicate Scannerが知覚ハッシュでページ画像を比較。"
+          "excerpt": "一般的な重複検索ツールはcomic_E1-5とComiX_E1-10のような名前の違うコミックを見逃します。Comic Duplicate Scannerは実際のページ画像を比較して、ファイル名ツールが見逃す重複を捕捉します。",
+          "seoDescription": "ファイル名が異なる重複CBZ・CBRコミックファイルを見つける方法。Comic Duplicate Scannerが知覚ハッシュでページ画像を比較。"
         },
         "open-bank-statement-pdf-iphone": {
           "title": "iPhoneでパスワード付き銀行明細書PDFを開く方法",
@@ -856,24 +856,14 @@
           "seoDescription": "ContentCue にフランス語・オランダ語・ロシア語・日本語・韓国語・マレー語が追加。読書中に広告をカラーボーダーでハイライトし、有料コンテンツを一目で識別。"
         },
         "archive-duplicate-scanner-11-languages": {
-          "title": "Archive Duplicate Scanner が11言語に対応",
-          "excerpt": "Archive Duplicate Scanner が11言語に対応しました。comic_E1-5 と ComiX_E1-10 のように名前が違っても重複コミックを発見できます — ページの視覚比較がファイル名ツールでは見逃すものを検出します。",
-          "seoDescription": "Archive Duplicate Scanner にフランス語・オランダ語・ロシア語・日本語・韓国語・マレー語が追加。MacとWindowsでページ画像比較により重複CBZファイルを検出。"
+          "title": "Comic Duplicate Scanner が11言語に対応",
+          "excerpt": "Comic Duplicate Scanner が11言語に対応しました。comic_E1-5 と ComiX_E1-10 のように名前が違っても重複コミックを発見できます — ページの視覚比較がファイル名ツールでは見逃すものを検出します。",
+          "seoDescription": "Comic Duplicate Scanner にフランス語・オランダ語・ロシア語・日本語・韓国語・マレー語が追加。MacとWindowsでページ画像比較により重複CBZファイルを検出。"
         },
         "smartdecrypt-11-languages": {
           "title": "SmartDecrypt が11言語に対応",
           "excerpt": "SmartDecrypt PDF ZIP CBZ が11言語に対応しました — 英語、スペイン語、フランス語、オランダ語、ポルトガル語、ロシア語、中国語、日本語、韓国語、インドネシア語、マレー語。銀行明細書や保険PDFの覚えにくいパスワードパターンを、あなたの言語で解除できます。",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ にフランス語、オランダ語、ロシア語、日本語、韓国語、マレー語の6言語が追加。iPhone・Mac・Windowsでパターンベースのパスワード付きPDFを解除。"
-        },
-        "reading-ebooks-offline-iphone": {
-          "title": "iPhoneで電子書籍を完全オフラインで読む：クラウド不要",
-          "excerpt": "BiblioFuseはEPUB、CBZ、CBR、PDF、ZIP、RAR、TXTファイルをiPhoneにローカル保存します。飛行機の中、地下鉄、電波のない場所でも全ライブラリを読めます。クラウドサブスクリプションやアカウントは不要で、iOS 17以降に対応しています。",
-          "seoDescription": "BiblioFuseはEPUB、CBZ、CBR、PDF、ZIP、RAR、TXTをiPhoneにローカル保存。クラウド不要、アカウント不要、オフラインで完全動作。iOS 17+対応のオフライン読書ガイド。"
-        },
-        "convert-cbr-to-cbz-online": {
-          "title": "オンラインでCBRをCBZに変換：無料、ソフト不要",
-          "excerpt": "BiblioFuse WebツールはCBR（RARベース）の漫画アーカイブをCBZ（ZIPベース）形式に直接ブラウザ内で変換します。ファイルのアップロード不要、インストール不要、完全にプライベート。ファイルをドロップして数秒でCBZをダウンロードできます。",
-          "seoDescription": "BiblioFuse Web Toolでブラウザ内でCBRをCBZにオンライン変換。ファイルアップロード不要、ソフト不要。WebAssembly使用、単ファイル無料。"
         },
         "airdrop-books-to-iphone": {
           "title": "AirDropを使ってiPhoneにコミックや電子書籍を転送する方法",
@@ -957,33 +947,33 @@
         },
         "build-perfect-digital-manga-collection": {
           "title": "完璧なデジタル漫画コレクションの作り方：圧縮・重複削除・どこでも読む",
-          "excerpt": "BiblioFuseはiOS 17以降のiPhone・iPadでCBZ、CBR、EPUB、PDF、ZIP、RAR、TXTに対応した読書アプリです。Archive Duplicate Scannerで重複巻を削除し、BiblioFuse Web Toolでブラウザからファイルを圧縮し、デバイス内のツールタブを使えば、どこでも同期できる最適化された漫画コレクションが完成します。",
-          "seoDescription": "BiblioFuseはiOS 17以降のiPhone・iPadでCBZ、CBR、EPUB、PDF、ZIP、RAR、TXTに対応した読書アプリです。Archive Duplicate Scannerで重複巻を削除し、BiblioFuse Web."
+          "excerpt": "BiblioFuseはiOS 17以降のiPhone・iPadでCBZ、CBR、EPUB、PDF、ZIP、RAR、TXTに対応した読書アプリです。Comic Duplicate Scannerで重複巻を削除し、BiblioFuse Web Toolでブラウザからファイルを圧縮し、デバイス内のツールタブを使えば、どこでも同期できる最適化された漫画コレクションが完成します。",
+          "seoDescription": "BiblioFuseはiOS 17以降のiPhone・iPadでCBZ、CBR、EPUB、PDF、ZIP、RAR、TXTに対応した読書アプリです。Comic Duplicate Scannerで重複巻を削除し、BiblioFuse Web."
         },
         "best-duplicate-file-finder-mac": {
           "title": "2026年版 Mac最高の重複ファイル検出ツール：コミック・写真・アーカイブ対応",
-          "excerpt": "Archive Duplicate Scanner は、コミック（CBZ・CBR）、写真（HEIC・JPEG・RAW）、アーカイブが混在するライブラリに最適な、2026年のMac向け重複ファイル検出ツールです。知覚ハッシュにより名前変更後も視覚的に同一のファイルを検出し、ゴミ箱のみへの削除でコレクションを安全に管理できます。",
-          "seoDescription": "Archive Duplicate Scanner."
+          "excerpt": "Comic Duplicate Scanner は、コミック（CBZ・CBR）、写真（HEIC・JPEG・RAW）、アーカイブが混在するライブラリに最適な、2026年のMac向け重複ファイル検出ツールです。知覚ハッシュにより名前変更後も視覚的に同一のファイルを検出し、ゴミ箱のみへの削除でコレクションを安全に管理できます。",
+          "seoDescription": "Comic Duplicate Scanner."
         },
         "find-duplicate-photos-mac": {
           "title": "Macで重複写真を見つける方法――HEIC・WebP・RAWにも対応",
-          "excerpt": "Archive Duplicate Scanner は知覚ハッシュを使ってMacで重複写真を検出します。ファイル名や圧縮設定が異なっていても、HEIC・JPEG・WebP・PNG・TIFF・RAW形式の視覚的に同一の画像を識別できます。重複ファイルはゴミ箱に安全に移動され、自動選択戦略でベストな1枚を残せます。",
-          "seoDescription": "Archive Duplicate Scanner."
+          "excerpt": "Comic Duplicate Scanner は知覚ハッシュを使ってMacで重複写真を検出します。ファイル名や圧縮設定が異なっていても、HEIC・JPEG・WebP・PNG・TIFF・RAW形式の視覚的に同一の画像を識別できます。重複ファイルはゴミ箱に安全に移動され、自動選択戦略でベストな1枚を残せます。",
+          "seoDescription": "Comic Duplicate Scanner."
         },
         "perceptual-hashing-duplicate-detection": {
           "title": "知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか",
-          "excerpt": "Archive Duplicate Scannerは知覚ハッシュを使用して、ファイルのチェックサムではなくページの視覚的コンテンツを比較することでCBZおよびCBRの重複アーカイブを検出します。リネーム、再圧縮、または異なるソースからダウンロードされた重複も見つけます。",
-          "seoDescription": "Archive Duplicate Scannerは知覚ハッシュを使用して、ファイルのチェックサムではなくページの視覚的コンテンツを比較することでCBZおよびCBRの重複アーカイブを検出します。リネーム、再圧縮、または異なるソースからダウンロードされた重複も見つけます。"
+          "excerpt": "Comic Duplicate Scannerは知覚ハッシュを使用して、ファイルのチェックサムではなくページの視覚的コンテンツを比較することでCBZおよびCBRの重複アーカイブを検出します。リネーム、再圧縮、または異なるソースからダウンロードされた重複も見つけます。",
+          "seoDescription": "Comic Duplicate Scannerは知覚ハッシュを使用して、ファイルのチェックサムではなくページの視覚的コンテンツを比較することでCBZおよびCBRの重複アーカイブを検出します。リネーム、再圧縮、または異なるソースからダウンロードされた重複も見つけます。"
         },
         "clean-up-duplicate-manga-library": {
           "title": "重複マンガコレクションをスマートに整理する方法",
-          "excerpt": "Archive Duplicate Scannerは知覚ハッシュを使ってMac上の重複マンガを検索し、リネームや再圧縮後もCBZ・CBRファイルを照合します。一致したペアを並べて確認し、重複をゴミ箱に安全に移動できます。",
-          "seoDescription": "Archive Duplicate Scannerは知覚ハッシュを使ってMac上の重複マンガを検索し、リネームや再圧縮後もCBZ・CBRファイルを照合します。一致したペアを並べて確認し、重複をゴミ箱に安全に移動できます。"
+          "excerpt": "Comic Duplicate Scannerは知覚ハッシュを使ってMac上の重複マンガを検索し、リネームや再圧縮後もCBZ・CBRファイルを照合します。一致したペアを並べて確認し、重複をゴミ箱に安全に移動できます。",
+          "seoDescription": "Comic Duplicate Scannerは知覚ハッシュを使ってMac上の重複マンガを検索し、リネームや再圧縮後もCBZ・CBRファイルを照合します。一致したペアを並べて確認し、重複をゴミ箱に安全に移動できます。"
         },
         "find-duplicate-comics-cbz-mac": {
           "title": "MacでCBZ漫画ファイルの重複を見つけて削除する方法",
-          "excerpt": "Archive Duplicate Scannerは、知覚ハッシュを使用してMacでCBZおよびCBRの重複漫画ファイルを検出します。名前変更や再圧縮後でも一致し、ライブラリをスキャンして一致したペアを確認し、安全にゴミ箱に移動できます。",
-          "seoDescription": "Archive Duplicate Scannerは、知覚ハッシュを使用してMacでCBZおよびCBRの重複漫画ファイルを検出します。名前変更や再圧縮後でも一致し、ライブラリをスキャンして一致したペアを確認し、安全にゴミ箱に移動できます。"
+          "excerpt": "Comic Duplicate Scannerは、知覚ハッシュを使用してMacでCBZおよびCBRの重複漫画ファイルを検出します。名前変更や再圧縮後でも一致し、ライブラリをスキャンして一致したペアを確認し、安全にゴミ箱に移動できます。",
+          "seoDescription": "Comic Duplicate Scannerは、知覚ハッシュを使用してMacでCBZおよびCBRの重複漫画ファイルを検出します。名前変更や再圧縮後でも一致し、ライブラリをスキャンして一致したペアを確認し、安全にゴミ箱に移動できます。"
         },
         "pdf-zip-password-manager-profiles": {
           "title": "CBZとPDFコレクションのパスワードを保存——二度と入力しない",
@@ -1016,9 +1006,9 @@
           "seoDescription": "BiblioFuse ウェブツールは、EPUBファイルをブラウザ上で直接圧縮・最適化します。ソフトのインストール不要、アカウント登録不要、ファイルのアップロードも一切不要です。"
         },
         "archive-duplicate-scanner-language-update": {
-          "title": "Archive Duplicate Scanner がポルトガル語、スペイン語、インドネシア語、中国語に対応",
-          "excerpt": "Archive Duplicate Scanner がポルトガル語、スペイン語、Bahasa Indonesia、簡体字中国語の完全UIサポートを追加。知覚ハッシュを使用してマンガアーカイブや写真の重複を検出。MacとWindows向けに無料で利用可能。",
-          "seoDescription": "Archive Duplicate Scanner がポルトガル語、スペイン語、Bahasa Indonesia、簡体字中国語の完全UIサポートを追加。知覚ハッシュを使用してマンガアーカイブや写真の重複を検出。MacとWindows向けに無料で利用可能。"
+          "title": "Comic Duplicate Scanner がポルトガル語、スペイン語、インドネシア語、中国語に対応",
+          "excerpt": "Comic Duplicate Scanner がポルトガル語、スペイン語、Bahasa Indonesia、簡体字中国語の完全UIサポートを追加。知覚ハッシュを使用してマンガアーカイブや写真の重複を検出。MacとWindows向けに無料で利用可能。",
+          "seoDescription": "Comic Duplicate Scanner がポルトガル語、スペイン語、Bahasa Indonesia、簡体字中国語の完全UIサポートを追加。知覚ハッシュを使用してマンガアーカイブや写真の重複を検出。MacとWindows向けに無料で利用可能。"
         },
         "merge-cbz-files-online": {
           "title": "複数のCBZファイルを1つに結合する方法——無料オンラインツール",
@@ -1325,13 +1315,13 @@
     },
     "archivePage": {
       "seo": {
-        "title": "Archive Duplicate Scanner — MacとWindowsで重複コミックや写真を検索",
-        "desc": "Archive Duplicate Scanner は、知覚的ハッシュを使用して重複した CBZ、CBR、ZIP、RAR、写真ファイルを検索します。名前変更や再圧縮後でも検出可能。1,000 ファイルまで無料、Pro は $19.99 の一回払い。"
+        "title": "Comic Duplicate Scanner — MacとWindowsで重複コミックや写真を検索",
+        "desc": "Comic Duplicate Scanner は知覚ハッシュを使って CBZ、CBR、ZIP、RAR および写真ファイルの重複を検出します。名前変更や再圧縮後、あるいは解像度やカラーモードが異なる場合でも対応。1,000ファイルまで無料、Pro は買い切り $19.99。"
       },
       "hero": {
         "badge": "Mac と Windows",
         "title": "重複を見つける。名前変更後でも。",
-        "desc": "Archive Duplicate Scanner はコミックアーカイブを開き、内部の実際の画像を比較します（ファイル名やサイズだけではありません）。一方のファイルが comic_E1-5、もう一方が ComiX_E1-10 と呼ばれていても、最初の数ページが一致すれば重複としてフラグが立てられます。",
+        "desc": "Comic Duplicate Scanner はコミックアーカイブを開き、内部の実際の画像を比較します（ファイル名やサイズだけではありません）。一方のファイルが comic_E1-5、もう一方が ComiX_E1-10 と呼ばれていても、最初の数ページが一致すれば重複としてフラグが立てられます。",
         "trust1": "クラウドへのアップロードなし",
         "trust2": "ゴミ箱への安全な削除",
         "trust3": "7日間無料トライアル",
@@ -1341,11 +1331,12 @@
       "scanning": {
         "eyebrow": "ディープアーカイブスキャン",
         "title": "アーカイブを開いて内部ページを比較",
-        "desc": "ほとんどの重複検索ツールはファイル名やサイズしか比較しません。Archive Duplicate Scanner は各 CBZ・CBR・ZIP・RAR ファイルを開き、実際のページからサムネイルを抽出して比較します。comic_E1-5 と ComiX_E1-10——名前もエピソード範囲も異なっていても——最初のページが一致すれば検出されます。",
+        "desc": "ほとんどの重複検索ツールはファイル名やサイズしか比較しません。Comic Duplicate Scanner は各 CBZ・CBR・ZIP・RAR ファイルを開き、実際のページからサムネイルを抽出して比較します。comic_E1-5 と ComiX_E1-10——名前もエピソード範囲も異なっていても——最初のページが一致すれば検出されます。",
         "bullet1": "アーカイブを開いてページ画像を比較——ファイル名だけではありません",
         "bullet2": "設定可能な類似度しきい値 — 90% を推奨",
         "bullet3": "ハッシュキャッシュにより再スキャンをほぼ即座に実行",
-        "badge": "マンガ、マンファ、マンファに対応"
+        "badge": "マンガ、マンファ、マンファに対応",
+        "bullet4": "解像度やカラーモードが異なっていても重複を検出 — 同じページの1200pxのグレースケールスキャンと3000pxのカラースキャンも重複としてフラグが立てられます"
       },
       "photos": {
         "eyebrow": "写真とファイル名マッチング",
@@ -1397,11 +1388,11 @@
       "faq": [
         {
           "q": "知覚的ハッシュとは何ですか？なぜ重要ですか？",
-          "a": "知覚的ハッシュは、生のファイルバイトではなく、画像の視覚的構造を比較します。2 つのファイルは名前、サイズ、メタデータが異なっていても、内容が同じように見えれば知覚的ハッシュがそれらを照合します。標準的な重複検索ツールはファイルが名前変更や再エクスポートされると失敗しますが、Archive Duplicate Scanner は失敗しません。"
+          "a": "知覚的ハッシュは、生のファイルバイトではなく、画像の視覚的構造を比較します。2 つのファイルは名前、サイズ、メタデータが異なっていても、内容が同じように見えれば知覚的ハッシュがそれらを照合します。標準的な重複検索ツールはファイルが名前変更や再エクスポートされると失敗しますが、Comic Duplicate Scanner は失敗しません。"
         },
         {
           "q": "名前が変更された重複ファイルを見つけられますか？",
-          "a": "はい。ファイルの名前変更はその内容には影響しません。Archive Duplicate Scanner は各アーカイブ内の画像を比較するため、ファイル名に関わらず重複が検出されます。"
+          "a": "はい。ファイルの名前変更はその内容には影響しません。Comic Duplicate Scanner は各アーカイブ内の画像を比較するため、ファイル名に関わらず重複が検出されます。"
         },
         {
           "q": "削除は永久的ですか？",
@@ -1418,6 +1409,14 @@
         {
           "q": "購入前にトライアルはありますか？",
           "a": "最大 1,000 ファイルを永久に無料でスキャンできます。Mac App Store での 7 日間無料トライアルで無制限アクセスがアンロックされ、Pro の一回払いは $19.99 でサブスクリプションなしです。"
+        },
+        {
+          "q": "カラースキャンと同じコンテンツの白黒バージョンを照合できますか？",
+          "a": "はい。dHashアルゴリズムは色の値ではなく輝度のグラデーションで動作します。同じページのフルカラースキャンとグレースケール版はほぼ同一のハッシュ値を生成し、重複としてフラグが立てられます。"
+        },
+        {
+          "q": "画像の解像度は重複検出に影響しますか？",
+          "a": "いいえ。dHashは比較前にすべての画像を小さな固定グリッドにリサイズするため、同じページの1200pxと3000pxのスキャンは同じハッシュ値になります。ソース間の解像度の違いは完全に無視されます。"
         }
       ],
       "backDesc": "コミック・電子書籍リーダーをお探しですか？",

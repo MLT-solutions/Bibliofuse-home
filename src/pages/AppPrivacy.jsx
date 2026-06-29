@@ -6,14 +6,14 @@ import SEO from '../components/SEO';
 
 const PRIVACY_CONFIGS = {
   archive: {
-    appName: 'Archive Duplicate Scanner',
+    appName: 'Comic Duplicate Scanner',
     logo: '/image/archive-logo.png',
     rawUrl: 'https://raw.githubusercontent.com/mlt-solutions/app-legal-docs/main/archiveduplicatescanner/PRIVACY.md',
-    privacySummary: 'Archive Duplicate Scanner collects no personal data. All file scanning and duplicate detection runs entirely on your Mac or Windows PC. No files, hashes, or scan results are uploaded to any server.',
+    privacySummary: 'Comic Duplicate Scanner collects no personal data. All file scanning and duplicate detection runs entirely on your Mac or Windows PC. No files, hashes, or scan results are uploaded to any server.',
     faq: [
-      { q: 'Does Archive Duplicate Scanner collect personal data?', a: 'No. Archive Duplicate Scanner does not collect, store, or transmit any personal data. All scanning runs on your device and no data leaves your Mac or Windows PC.' },
-      { q: 'What data does Archive Duplicate Scanner store locally?', a: 'Archive Duplicate Scanner stores a local hash cache for faster rescans, your app preferences, and your Pro license key. All data is stored locally on your device and is never uploaded.' },
-      { q: 'Is Archive Duplicate Scanner safe to use?', a: 'Yes. Archive Duplicate Scanner processes all files locally. It does not connect to any external server, collect analytics, or transmit any data.' },
+      { q: 'Does Comic Duplicate Scanner collect personal data?', a: 'No. Comic Duplicate Scanner does not collect, store, or transmit any personal data. All scanning runs on your device and no data leaves your Mac or Windows PC.' },
+      { q: 'What data does Comic Duplicate Scanner store locally?', a: 'Comic Duplicate Scanner stores a local hash cache for faster rescans, your app preferences, and your Pro license key. All data is stored locally on your device and is never uploaded.' },
+      { q: 'Is Comic Duplicate Scanner safe to use?', a: 'Yes. Comic Duplicate Scanner processes all files locally. It does not connect to any external server, collect analytics, or transmit any data.' },
     ],
   },
   grepreader: {

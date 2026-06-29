@@ -2,7 +2,7 @@
 
 Anda mengemas kini perpustakaan komik dan menjalankan pencari pendua standard. Hasilnya: tiada pendua ditemui. Namun anda tahu ada sesuatu yang tidak kena — anda mempunyai episod 1-5 dalam satu fail dan episod 1-10 dalam fail lain, dan lima episod pertama jelas bertindih.
 
-Inilah masalah khusus yang [Archive Duplicate Scanner](/ms/archive/) dibina untuk selesaikan: mencari arkib komik pendua dengan membandingkan kandungan halaman yang sebenar, bukan nama fail atau saiznya.
+Inilah masalah khusus yang [Comic Duplicate Scanner](/ms/archive/) dibina untuk selesaikan: mencari arkib komik pendua dengan membandingkan kandungan halaman yang sebenar, bukan nama fail atau saiznya.
 
 ## Mengapa Pencari Pendua Standard Tidak Berkesan untuk Komik
 
@@ -11,9 +11,9 @@ Inilah masalah khusus yang [Archive Duplicate Scanner](/ms/archive/) dibina untu
 - **Fail yang dikodkan semula**: komik yang sama dari dua sumber, kualiti JPEG berbeza, cincang sepenuhnya berbeza
 - **Format berbeza**: kandungan yang sama sebagai CBZ dan CBR
 
-## Cara Archive Duplicate Scanner Mengesannya
+## Cara Comic Duplicate Scanner Mengesannya
 
-[Archive Duplicate Scanner](/ms/archive/) menggunakan pencincangan perseptual pada imej halaman sebenar dalam setiap arkib:
+[Comic Duplicate Scanner](/ms/archive/) menggunakan pencincangan perseptual pada imej halaman sebenar dalam setiap arkib:
 
 1. Membuka kedua-dua arkib (CBZ, CBR, ZIP, atau RAR)
 2. Mengekstrak halaman awal daripada setiap satu
@@ -24,6 +24,6 @@ Jika cincang sepadan di atas ambang yang boleh dikonfigurasi, arkib ditandakan s
 
 Ambang yang lebih ketat memerlukan padanan visual yang lebih dekat. Lebih longgar menangkap lebih banyak kes sempadan. Lalai dikalibrasi untuk menangkap kebanyakan pendua praktikal tanpa positif palsu.
 
-Archive Duplicate Scanner percuma untuk mengimbas dan pratonton. Pro membolehkan tindakan pukal. Tanpa langganan.
+Comic Duplicate Scanner percuma untuk mengimbas dan pratonton. Pro membolehkan tindakan pukal. Tanpa langganan.
 
-Muat turun [Archive Duplicate Scanner](/ms/archive/) dari App Store atau Microsoft Store.
+Muat turun [Comic Duplicate Scanner](/ms/archive/) dari App Store atau Microsoft Store.

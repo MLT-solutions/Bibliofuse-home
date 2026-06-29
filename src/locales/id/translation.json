@@ -661,7 +661,7 @@
       "badge": "App saudara · Mac & Windows",
       "titleA": "Temukan arsip duplikat.",
       "titleB": "Bahkan setelah diganti nama.",
-      "desc": "Archive Duplicate Scanner menemukan dan menghapus arsip komik, foto, dan file duplikat, bahkan setelah diganti nama, dikompres ulang, atau disimpan di folder berbeda.",
+      "desc": "Comic Duplicate Scanner menemukan dan menghapus arsip komik, foto, dan file duplikat, bahkan setelah diganti nama, dikompres ulang, atau disimpan di folder berbeda.",
       "features": {
         "scanning": {
           "title": "Pemindaian arsip komik",
@@ -680,8 +680,8 @@
           "body": "File yang ditandai hanya dipindahkan ke Trash sistem."
         }
       },
-      "altBadge": "Unduh Archive Duplicate Scanner di Mac App Store",
-      "altImage": "Archive Duplicate Scanner konfigurasi dan mulai pindai",
+      "altBadge": "Unduh Comic Duplicate Scanner di Mac App Store",
+      "altImage": "Comic Duplicate Scanner konfigurasi dan mulai pindai",
       "pricing": "Penggunaan gratis tersedia selamanya untuk pemindaian hingga 1.000 file. Uji coba 7 hari membuka akses penuh, dan pembelian satu kali membuka penggunaan tak terbatas tanpa langganan.",
       "stats": {
         "threshold": "Ambang default",
@@ -827,13 +827,13 @@
       "posts": {
         "reading-ebooks-offline-iphone": {
           "title": "Membaca Ebook Sepenuhnya Offline di iPhone: Tanpa Cloud",
-          "excerpt": "BiblioFuse menyimpan seluruh perpustakaan secara lokal di perangkat — tanpa akun, tanpa streaming, tanpa layar loading. Baca EPUB, CBZ, atau PDF di mana saja.",
-          "seoDescription": "Baca ebook dan komik sepenuhnya offline di iPhone dengan BiblioFuse. File disimpan lokal — tanpa akun cloud diperlukan."
+          "excerpt": "BiblioFuse menyimpan file EPUB, CBZ, CBR, PDF, ZIP, RAR, dan TXT secara lokal di iPhone Anda — baca seluruh perpustakaan di pesawat, bawah tanah, atau di mana saja tanpa sinyal. Tidak perlu berlangganan cloud atau akun. iOS 17 ke atas.",
+          "seoDescription": "BiblioFuse membaca EPUB, CBZ, CBR, PDF, ZIP, RAR, dan TXT secara lokal di iPhone. Tanpa cloud, tanpa akun, tanpa sinyal. Panduan lengkap membaca offline untuk iOS 17+."
         },
         "convert-cbr-to-cbz-online": {
           "title": "Cara Mengonversi CBR ke CBZ Online: Gratis, Tanpa Software",
-          "excerpt": "File CBR adalah arsip RAR; CBZ adalah arsip ZIP — tidak bisa hanya mengubah ekstensi. Konverter BiblioFuse mengarsipkan ulang komik Anda dalam detik tanpa unggahan.",
-          "seoDescription": "Konversi CBR ke CBZ online gratis tanpa mengunggah file. BiblioFuse menggunakan WebAssembly untuk mengonversi di browser."
+          "excerpt": "BiblioFuse Web Tool mengonversi arsip komik CBR (berbasis RAR) ke format CBZ (berbasis ZIP) langsung di browser Anda — tanpa unggah file, tanpa instalasi, sepenuhnya privat. Seret file Anda dan unduh CBZ yang telah dikonversi dalam hitungan detik.",
+          "seoDescription": "Konversi CBR ke CBZ online di browser menggunakan BiblioFuse Web Tool. Tanpa unggah file, tanpa software. Berbasis WebAssembly, gratis untuk file tunggal."
         },
         "organize-ebooks-by-content-not-metadata": {
           "title": "Atur Ebook berdasarkan Konten, Bukan Metadata atau ISBN",
@@ -842,8 +842,8 @@
         },
         "find-duplicate-comics-different-names": {
           "title": "Cara Menemukan Komik Duplikat dengan Nama File Berbeda",
-          "excerpt": "Pencari duplikat standar melewatkan komik dengan nama berbeda — seperti comic_E1-5 dan ComiX_E1-10. Archive Duplicate Scanner membandingkan gambar halaman nyata menggunakan perceptual hashing untuk menangkap duplikat yang terlewat.",
-          "seoDescription": "Temukan file CBZ dan CBR komik duplikat meskipun memiliki nama file berbeda. Archive Duplicate Scanner menggunakan perceptual hashing untuk membandingkan gambar halaman."
+          "excerpt": "Pencari duplikat standar melewatkan komik dengan nama berbeda — seperti comic_E1-5 dan ComiX_E1-10. Comic Duplicate Scanner membandingkan gambar halaman nyata menggunakan perceptual hashing untuk menangkap duplikat yang terlewat.",
+          "seoDescription": "Temukan file CBZ dan CBR komik duplikat meskipun memiliki nama file berbeda. Comic Duplicate Scanner menggunakan perceptual hashing untuk membandingkan gambar halaman."
         },
         "open-bank-statement-pdf-iphone": {
           "title": "Cara Membuka PDF Laporan Bank Berpassword di iPhone",
@@ -856,24 +856,14 @@
           "seoDescription": "ContentCue menambahkan bahasa Prancis, Belanda, Rusia, Jepang, Korea, dan Melayu. Sorot iklan saat membaca artikel web — border berwarna menandai konten berbayar."
         },
         "archive-duplicate-scanner-11-languages": {
-          "title": "Archive Duplicate Scanner Kini Tersedia dalam 11 Bahasa",
-          "excerpt": "Archive Duplicate Scanner kini mendukung 11 bahasa. Temukan komik duplikat bahkan saat memiliki nama berbeda seperti comic_E1-5 dan ComiX_E1-10 — perbandingan halaman visual menangkap apa yang terlewatkan oleh alat nama file.",
-          "seoDescription": "Archive Duplicate Scanner menambahkan bahasa Prancis, Belanda, Rusia, Jepang, Korea, dan Melayu. Temukan file CBZ duplikat dengan membandingkan gambar halaman, bukan hanya nama file."
+          "title": "Comic Duplicate Scanner Kini Tersedia dalam 11 Bahasa",
+          "excerpt": "Comic Duplicate Scanner kini mendukung 11 bahasa. Temukan komik duplikat bahkan saat memiliki nama berbeda seperti comic_E1-5 dan ComiX_E1-10 — perbandingan halaman visual menangkap apa yang terlewatkan oleh alat nama file.",
+          "seoDescription": "Comic Duplicate Scanner menambahkan bahasa Prancis, Belanda, Rusia, Jepang, Korea, dan Melayu. Temukan file CBZ duplikat dengan membandingkan gambar halaman, bukan hanya nama file."
         },
         "smartdecrypt-11-languages": {
           "title": "SmartDecrypt Kini Tersedia dalam 11 Bahasa",
           "excerpt": "SmartDecrypt PDF ZIP CBZ kini mendukung 11 bahasa — Inggris, Spanyol, Prancis, Belanda, Portugis, Rusia, Cina, Jepang, Korea, Indonesia, dan Melayu. Buka kunci laporan bank dan PDF asuransi dengan pola kata sandi yang sulit diingat dalam bahasa Anda sendiri.",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ menambahkan 6 bahasa baru: Prancis, Belanda, Rusia, Jepang, Korea, dan Melayu. Buka kunci PDF bank dengan kata sandi berbasis pola di iPhone, Mac, dan Windows."
-        },
-        "reading-ebooks-offline-iphone": {
-          "title": "Membaca Ebook Sepenuhnya Offline di iPhone: Tanpa Cloud",
-          "excerpt": "BiblioFuse menyimpan file EPUB, CBZ, CBR, PDF, ZIP, RAR, dan TXT secara lokal di iPhone Anda — baca seluruh perpustakaan di pesawat, bawah tanah, atau di mana saja tanpa sinyal. Tidak perlu berlangganan cloud atau akun. iOS 17 ke atas.",
-          "seoDescription": "BiblioFuse membaca EPUB, CBZ, CBR, PDF, ZIP, RAR, dan TXT secara lokal di iPhone. Tanpa cloud, tanpa akun, tanpa sinyal. Panduan lengkap membaca offline untuk iOS 17+."
-        },
-        "convert-cbr-to-cbz-online": {
-          "title": "Cara Mengonversi CBR ke CBZ Online: Gratis, Tanpa Software",
-          "excerpt": "BiblioFuse Web Tool mengonversi arsip komik CBR (berbasis RAR) ke format CBZ (berbasis ZIP) langsung di browser Anda — tanpa unggah file, tanpa instalasi, sepenuhnya privat. Seret file Anda dan unduh CBZ yang telah dikonversi dalam hitungan detik.",
-          "seoDescription": "Konversi CBR ke CBZ online di browser menggunakan BiblioFuse Web Tool. Tanpa unggah file, tanpa software. Berbasis WebAssembly, gratis untuk file tunggal."
         },
         "airdrop-books-to-iphone": {
           "title": "Cara Menggunakan AirDrop untuk Mentransfer Komik dan Ebook ke iPhone",
@@ -957,33 +947,33 @@
         },
         "build-perfect-digital-manga-collection": {
           "title": "Bangun Koleksi Manga Digital Sempurna",
-          "excerpt": "BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT di iPhone dan iPad dengan iOS 17+. Gabungkan Archive Duplicate Scanner untuk menghapus volume duplikat, BiblioFuse Web Tool untuk mengompresi file di browser, dan tab Alat di perangkat untuk membangun koleksi manga yang teroptimalkan dan tersinkronisasi di mana saja.",
-          "seoDescription": "BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT di iPhone dan iPad dengan iOS 17+. Gabungkan Archive Duplicate Scanner untuk menghapus volume."
+          "excerpt": "BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT di iPhone dan iPad dengan iOS 17+. Gabungkan Comic Duplicate Scanner untuk menghapus volume duplikat, BiblioFuse Web Tool untuk mengompresi file di browser, dan tab Alat di perangkat untuk membangun koleksi manga yang teroptimalkan dan tersinkronisasi di mana saja.",
+          "seoDescription": "BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT di iPhone dan iPad dengan iOS 17+. Gabungkan Comic Duplicate Scanner untuk menghapus volume."
         },
         "best-duplicate-file-finder-mac": {
           "title": "Aplikasi Pencari Duplikat Terbaik Mac (2026)",
-          "excerpt": "Archive Duplicate Scanner adalah alat pencari duplikat terbaik untuk Mac di 2026 bagi perpustakaan campuran komik (CBZ, CBR), foto (HEIC, JPEG, RAW), dan arsip. Perceptual hashing mendeteksi file yang secara visual sama meskipun sudah diganti nama, dan penghapusan hanya ke Trash menjaga keamanan koleksi Anda.",
-          "seoDescription": "Archive Duplicate Scanner adalah alat pencari duplikat terbaik untuk Mac di 2026 bagi perpustakaan campuran komik (CBZ, CBR), foto (HEIC, JPEG, RAW), dan."
+          "excerpt": "Comic Duplicate Scanner adalah alat pencari duplikat terbaik untuk Mac di 2026 bagi perpustakaan campuran komik (CBZ, CBR), foto (HEIC, JPEG, RAW), dan arsip. Perceptual hashing mendeteksi file yang secara visual sama meskipun sudah diganti nama, dan penghapusan hanya ke Trash menjaga keamanan koleksi Anda.",
+          "seoDescription": "Comic Duplicate Scanner adalah alat pencari duplikat terbaik untuk Mac di 2026 bagi perpustakaan campuran komik (CBZ, CBR), foto (HEIC, JPEG, RAW), dan."
         },
         "find-duplicate-photos-mac": {
           "title": "Mencari Foto Duplikat di Mac — Termasuk HEIC, WebP, dan RAW",
-          "excerpt": "Archive Duplicate Scanner menemukan foto duplikat di Mac menggunakan perceptual hashing, mengenali gambar yang secara visual identik dalam format HEIC, JPEG, WebP, PNG, TIFF, dan RAW meskipun nama file atau kompresinya berbeda. File duplikat dipindahkan ke Trash dengan strategi pemilihan otomatis.",
-          "seoDescription": "Archive Duplicate Scanner menemukan foto duplikat di Mac menggunakan perceptual hashing, mengenali gambar yang secara visual identik dalam format HEIC."
+          "excerpt": "Comic Duplicate Scanner menemukan foto duplikat di Mac menggunakan perceptual hashing, mengenali gambar yang secara visual identik dalam format HEIC, JPEG, WebP, PNG, TIFF, dan RAW meskipun nama file atau kompresinya berbeda. File duplikat dipindahkan ke Trash dengan strategi pemilihan otomatis.",
+          "seoDescription": "Comic Duplicate Scanner menemukan foto duplikat di Mac menggunakan perceptual hashing, mengenali gambar yang secara visual identik dalam format HEIC."
         },
         "perceptual-hashing-duplicate-detection": {
           "title": "Bagaimana Perceptual Hashing Menemukan Komik Duplikat Bahkan Setelah Diganti Nama",
-          "excerpt": "Archive Duplicate Scanner menggunakan perceptual hashing untuk menemukan arsip CBZ dan CBR duplikat dengan membandingkan konten visual halaman — bukan checksum file — sehingga mendeteksi duplikat yang telah diganti nama, dikompres ulang, atau diunduh dari sumber berbeda.",
-          "seoDescription": "Archive Duplicate Scanner menggunakan perceptual hashing untuk menemukan arsip CBZ dan CBR duplikat dengan membandingkan konten visual halaman — bukan."
+          "excerpt": "Comic Duplicate Scanner menggunakan perceptual hashing untuk menemukan arsip CBZ dan CBR duplikat dengan membandingkan konten visual halaman — bukan checksum file — sehingga mendeteksi duplikat yang telah diganti nama, dikompres ulang, atau diunduh dari sumber berbeda.",
+          "seoDescription": "Comic Duplicate Scanner menggunakan perceptual hashing untuk menemukan arsip CBZ dan CBR duplikat dengan membandingkan konten visual halaman — bukan."
         },
         "clean-up-duplicate-manga-library": {
           "title": "Cara Membersihkan Koleksi Manga Duplikat dengan Cerdas",
-          "excerpt": "Archive Duplicate Scanner menemukan volume manga duplikat di Mac menggunakan perceptual hashing, mencocokkan file CBZ dan CBR bahkan setelah penggantian nama atau kompresi ulang. Tinjau pasangan yang cocok dan pindahkan duplikat ke Trash dengan aman.",
-          "seoDescription": "Archive Duplicate Scanner menemukan volume manga duplikat di Mac menggunakan perceptual hashing, mencocokkan file CBZ dan CBR bahkan setelah penggantian."
+          "excerpt": "Comic Duplicate Scanner menemukan volume manga duplikat di Mac menggunakan perceptual hashing, mencocokkan file CBZ dan CBR bahkan setelah penggantian nama atau kompresi ulang. Tinjau pasangan yang cocok dan pindahkan duplikat ke Trash dengan aman.",
+          "seoDescription": "Comic Duplicate Scanner menemukan volume manga duplikat di Mac menggunakan perceptual hashing, mencocokkan file CBZ dan CBR bahkan setelah penggantian."
         },
         "find-duplicate-comics-cbz-mac": {
           "title": "Cara Menemukan dan Menghapus File CBZ Komik Duplikat di Mac",
-          "excerpt": "Archive Duplicate Scanner menemukan file komik CBZ dan CBR duplikat di Mac menggunakan hashing perseptual — mencocokkan file bahkan setelah diganti nama, dikompres ulang, atau dikemas ulang. Pindai perpustakaan Anda dan pindahkan duplikat ke Sampah dengan aman.",
-          "seoDescription": "Archive Duplicate Scanner menemukan file komik CBZ dan CBR duplikat di Mac menggunakan hashing perseptual — mencocokkan file bahkan setelah diganti nama."
+          "excerpt": "Comic Duplicate Scanner menemukan file komik CBZ dan CBR duplikat di Mac menggunakan hashing perseptual — mencocokkan file bahkan setelah diganti nama, dikompres ulang, atau dikemas ulang. Pindai perpustakaan Anda dan pindahkan duplikat ke Sampah dengan aman.",
+          "seoDescription": "Comic Duplicate Scanner menemukan file komik CBZ dan CBR duplikat di Mac menggunakan hashing perseptual — mencocokkan file bahkan setelah diganti nama."
         },
         "pdf-zip-password-manager-profiles": {
           "title": "Simpan Kata Sandi untuk Koleksi CBZ dan PDF — Tidak Perlu Mengetik Ulang",
@@ -1016,9 +1006,9 @@
           "seoDescription": "BiblioFuse Web Tool mengompres dan mengoptimalkan file EPUB langsung di browser Anda — tanpa perangkat lunak, tanpa akun, dan tanpa perlu mengunggah file."
         },
         "archive-duplicate-scanner-language-update": {
-          "title": "Archive Duplicate Scanner: 4 Bahasa Baru",
-          "excerpt": "Archive Duplicate Scanner menambahkan dukungan UI penuh untuk Bahasa Portugis, Spanyol, Indonesia, dan Cina Sederhana — aplikasi kini berbicara dalam bahasa Anda secara native. Temukan arsip komik dan foto duplikat dengan perceptual hashing, gratis untuk Mac dan Windows.",
-          "seoDescription": "Archive Duplicate Scanner menambahkan dukungan UI penuh untuk Bahasa Portugis, Spanyol, Indonesia, dan Cina Sederhana — aplikasi kini berbicara dalam."
+          "title": "Comic Duplicate Scanner: 4 Bahasa Baru",
+          "excerpt": "Comic Duplicate Scanner menambahkan dukungan UI penuh untuk Bahasa Portugis, Spanyol, Indonesia, dan Cina Sederhana — aplikasi kini berbicara dalam bahasa Anda secara native. Temukan arsip komik dan foto duplikat dengan perceptual hashing, gratis untuk Mac dan Windows.",
+          "seoDescription": "Comic Duplicate Scanner menambahkan dukungan UI penuh untuk Bahasa Portugis, Spanyol, Indonesia, dan Cina Sederhana — aplikasi kini berbicara dalam."
         },
         "merge-cbz-files-online": {
           "title": "Cara Menggabungkan Beberapa File CBZ Menjadi Satu — Alat Online Gratis",
@@ -1325,13 +1315,13 @@
     },
     "archivePage": {
       "seo": {
-        "title": "Archive Duplicate Scanner — Temukan Komik dan Foto Duplikat di Mac dan Windows",
-        "desc": "Archive Duplicate Scanner menemukan file CBZ, CBR, ZIP, RAR, dan foto duplikat menggunakan perceptual hashing — bahkan setelah penggantian nama atau kompresi ulang. Gratis hingga 1.000 file, Pro seharga $19,99 sekali bayar."
+        "title": "Comic Duplicate Scanner — Temukan Komik dan Foto Duplikat di Mac dan Windows",
+        "desc": "Comic Duplicate Scanner menemukan file duplikat CBZ, CBR, ZIP, RAR, dan foto menggunakan perceptual hashing — bahkan setelah penggantian nama, rekompresi, atau dengan resolusi dan mode warna berbeda. Gratis hingga 1.000 file, Pro pembelian satu kali $19,99."
       },
       "hero": {
         "badge": "Mac dan Windows",
         "title": "Temukan duplikat. Bahkan setelah diganti nama.",
-        "desc": "Archive Duplicate Scanner membuka arsip komik Anda dan membandingkan gambar aktual di dalamnya — bukan hanya nama file atau ukuran. Meski satu file bernama comic_E1-5 dan yang lain ComiX_E1-10, jika beberapa halaman pertama cocok, keduanya ditandai sebagai duplikat.",
+        "desc": "Comic Duplicate Scanner membuka arsip komik Anda dan membandingkan gambar aktual di dalamnya — bukan hanya nama file atau ukuran. Meski satu file bernama comic_E1-5 dan yang lain ComiX_E1-10, jika beberapa halaman pertama cocok, keduanya ditandai sebagai duplikat.",
         "trust1": "Tanpa unggahan ke cloud",
         "trust2": "Penghapusan aman ke Tempat Sampah",
         "trust3": "Uji coba gratis 7 hari",
@@ -1341,11 +1331,12 @@
       "scanning": {
         "eyebrow": "Pemindaian Arsip Mendalam",
         "title": "Membuka arsip dan membandingkan halaman di dalamnya",
-        "desc": "Kebanyakan pencari duplikat hanya membandingkan nama atau ukuran file. Archive Duplicate Scanner membuka setiap file CBZ, CBR, ZIP, atau RAR, mengekstrak thumbnail dari halaman sebenarnya, dan membandingkannya. File bernama comic_E1-5 dan ComiX_E1-10 — nama berbeda, rentang episode berbeda — tetap terdeteksi jika halaman pembukanya cocok.",
+        "desc": "Kebanyakan pencari duplikat hanya membandingkan nama atau ukuran file. Comic Duplicate Scanner membuka setiap file CBZ, CBR, ZIP, atau RAR, mengekstrak thumbnail dari halaman sebenarnya, dan membandingkannya. File bernama comic_E1-5 dan ComiX_E1-10 — nama berbeda, rentang episode berbeda — tetap terdeteksi jika halaman pembukanya cocok.",
         "bullet1": "Membuka arsip dan membandingkan gambar halaman — bukan sekadar nama file",
         "bullet2": "Ambang batas kemiripan yang dapat dikonfigurasi — disarankan 90%",
         "bullet3": "Cache hash membuat pemindaian ulang hampir instan",
-        "badge": "Berfungsi dengan manga, manhwa, dan manhua"
+        "badge": "Berfungsi dengan manga, manhwa, dan manhua",
+        "bullet4": "Mendeteksi duplikat di berbagai resolusi dan mode warna — hasil pindaian skala abu-abu 1200px dan pindaian berwarna 3000px dari halaman yang sama tetap ditandai"
       },
       "photos": {
         "eyebrow": "Foto dan Pencocokan Nama File",
@@ -1397,11 +1388,11 @@
       "faq": [
         {
           "q": "Apa itu perceptual hashing dan mengapa penting?",
-          "a": "Perceptual hashing membandingkan struktur visual gambar daripada byte file mentah. Dua file dapat memiliki nama, ukuran, dan metadata yang berbeda — tetapi jika kontennya terlihat sama, perceptual hashing akan mencocokkannya. Pencari duplikat standar gagal begitu file diganti nama atau diekspor ulang; Archive Duplicate Scanner tidak."
+          "a": "Perceptual hashing membandingkan struktur visual gambar daripada byte file mentah. Dua file dapat memiliki nama, ukuran, dan metadata yang berbeda — tetapi jika kontennya terlihat sama, perceptual hashing akan mencocokkannya. Pencari duplikat standar gagal begitu file diganti nama atau diekspor ulang; Comic Duplicate Scanner tidak."
         },
         {
           "q": "Bisakah menemukan duplikat yang telah diganti nama?",
-          "a": "Ya. Mengganti nama file tidak mengubah kontennya. Archive Duplicate Scanner membandingkan gambar di dalam setiap arsip, sehingga duplikat terdeteksi terlepas dari nama file."
+          "a": "Ya. Mengganti nama file tidak mengubah kontennya. Comic Duplicate Scanner membandingkan gambar di dalam setiap arsip, sehingga duplikat terdeteksi terlepas dari nama file."
         },
         {
           "q": "Apakah penghapusan permanen?",
@@ -1418,6 +1409,14 @@
         {
           "q": "Apakah ada uji coba sebelum membeli?",
           "a": "Anda dapat memindai hingga 1.000 file secara gratis selamanya. Uji coba gratis 7 hari di Mac App Store membuka akses tak terbatas, dan pembelian Pro satu kali seharga $19,99 tanpa langganan."
+        },
+        {
+          "q": "Bisakah mencocokkan pindaian berwarna dengan versi hitam-putih dari konten yang sama?",
+          "a": "Ya. Algoritma dHash bekerja berdasarkan gradien luminansi, bukan nilai warna. Pindaian berwarna penuh dan versi skala abu-abu dari halaman yang sama menghasilkan hash yang hampir identik dan akan ditandai sebagai duplikat."
+        },
+        {
+          "q": "Apakah resolusi gambar memengaruhi deteksi duplikat?",
+          "a": "Tidak. dHash mengubah ukuran setiap gambar ke grid tetap yang kecil sebelum membandingkan, sehingga pindaian 1200px dan 3000px dari halaman yang sama menghasilkan nilai hash yang sama. Perbedaan resolusi antar sumber diabaikan sepenuhnya."
         }
       ],
       "backDesc": "Mencari pembaca komik dan ebook?",

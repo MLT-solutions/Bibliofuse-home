@@ -39,7 +39,7 @@ export const articles = [
     slug: 'archive-duplicate-scanner-11-languages',
     date: '2026-06-28',
     tags: ['update', 'archive', 'languages'],
-    coverImage: '/image/blog/Archive Duplicate Scanner 11 Languages.jpg',
+    coverImage: '/image/blog/Comic Duplicate Scanner 11 Languages.jpg',
   },
   {
     slug: 'smartdecrypt-11-languages',
@@ -272,7 +272,7 @@ export const articles = [
   {
     slug: 'archive-duplicate-scanner-language-update',
     date: '2026-05-27',
-    tags: ['Archive Duplicate Scanner', 'Update', 'Languages'],
+    tags: ['Comic Duplicate Scanner', 'Update', 'Languages'],
     coverImage: '/image/blog/4 New Languages.jpg',
   },
   {

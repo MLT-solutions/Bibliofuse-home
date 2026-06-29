@@ -2,7 +2,7 @@
 
 You're cleaning up your comic library and you run a standard duplicate file finder. It tells you no duplicates found. But you know something is wrong — you have episodes 1-5 in one file and episodes 1-10 in another, and the first five clearly overlap. The files have different names, different sizes, different hashes. Standard tools miss them entirely.
 
-This is the specific problem [Archive Duplicate Scanner](/en/archive/) was built for: finding duplicate comic archives by comparing the actual page content, not the filenames or file sizes.
+This is the specific problem [Comic Duplicate Scanner](/en/archive/) was built for: finding duplicate comic archives by comparing the actual page content, not the filenames or file sizes.
 
 ## Why Standard Duplicate Finders Don't Work for Comics
 
@@ -16,9 +16,9 @@ Hash-based duplicate detection works perfectly when files are byte-for-byte iden
 
 **Format differences**: You have `chapter_01.cbz` (ZIP-based) and `chapter_01.cbr` (RAR-based). Identical content inside, completely different container formats.
 
-## How Archive Duplicate Scanner Detects These
+## How Comic Duplicate Scanner Detects These
 
-[Archive Duplicate Scanner](/en/archive/) uses perceptual hashing on the actual page images inside each archive. Here's what that means:
+[Comic Duplicate Scanner](/en/archive/) uses perceptual hashing on the actual page images inside each archive. Here's what that means:
 
 When two comic archives are compared, the app:
 
@@ -43,7 +43,7 @@ These two files:
 - Have different hashes
 - Might even be from different sources (different scan groups, different JPEG settings)
 
-Archive Duplicate Scanner opens both, extracts pages 1-5 from `comic_E1-5.cbz` and pages 1-5 from `ComiX_E1-10.cbz`, computes perceptual hashes for each, and compares them. The hashes match. The pair is flagged.
+Comic Duplicate Scanner opens both, extracts pages 1-5 from `comic_E1-5.cbz` and pages 1-5 from `ComiX_E1-10.cbz`, computes perceptual hashes for each, and compares them. The hashes match. The pair is flagged.
 
 You're then shown both files in a side-by-side comparison with the matched pages visible, and you choose what to do: keep both, delete the shorter one, or move the longer one to your archive.
 
@@ -59,7 +59,7 @@ The default threshold is calibrated to catch most practical duplicates without g
 
 ## Handling Large Libraries
 
-Archive Duplicate Scanner scans folders recursively. You can point it at your entire comic library — including subfolders organised by series, publisher, or year — and it will scan everything in one pass.
+Comic Duplicate Scanner scans folders recursively. You can point it at your entire comic library — including subfolders organised by series, publisher, or year — and it will scan everything in one pass.
 
 For very large libraries (thousands of files), the initial scan takes time proportional to the number of archives and pages. Subsequent scans are faster because perceptual hashes are cached per file.
 
@@ -70,6 +70,6 @@ The scan results show:
 - **File details** — size, format, modification date for each file in the pair
 - **Page preview** — visual comparison of the matched pages side by side
 
-You can filter results by confidence level, sort by match score, and process pairs in bulk. Archive Duplicate Scanner Pro allows you to move or delete matched files directly from the results view — you don't need to hunt for them in Finder.
+You can filter results by confidence level, sort by match score, and process pairs in bulk. Comic Duplicate Scanner Pro allows you to move or delete matched files directly from the results view — you don't need to hunt for them in Finder.
 
-Download [Archive Duplicate Scanner](/en/archive/) from the App Store or Microsoft Store and scan your first folder for free.
+Download [Comic Duplicate Scanner](/en/archive/) from the App Store or Microsoft Store and scan your first folder for free.

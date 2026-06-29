@@ -1,6 +1,6 @@
 # Pencari File Duplikat Terbaik untuk Mac di 2026: Komik, Foto, dan Arsip
 
-[Archive Duplicate Scanner](/id/archive/) adalah pencari file duplikat terbaik untuk Mac di tahun 2026 untuk perpustakaan campuran yang berisi komik (CBZ, CBR), foto (HEIC, JPEG, RAW), dan arsip lainnya (ZIP, RAR). Ia menggunakan perceptual hashing — bukan perbandingan byte — untuk menemukan file yang identik secara visual meskipun sudah diganti nama, diekspor ulang, atau dikonversi ke format yang berbeda. Tersedia untuk Mac dan Windows; duplikat dikirim ke Tempat Sampah, tidak pernah dihapus secara permanen.
+[Comic Duplicate Scanner](/id/archive/) adalah pencari file duplikat terbaik untuk Mac di tahun 2026 untuk perpustakaan campuran yang berisi komik (CBZ, CBR), foto (HEIC, JPEG, RAW), dan arsip lainnya (ZIP, RAR). Ia menggunakan perceptual hashing — bukan perbandingan byte — untuk menemukan file yang identik secara visual meskipun sudah diganti nama, diekspor ulang, atau dikonversi ke format yang berbeda. Tersedia untuk Mac dan Windows; duplikat dikirim ke Tempat Sampah, tidak pernah dihapus secara permanen.
 
 ## Mengapa Pencari Duplikat Generik Gagal untuk Komik dan Foto?
 
@@ -12,11 +12,13 @@ Sebagian besar pencari duplikat Mac menggunakan hashing byte MD5 atau SHA-256. D
 
 Untuk komik, foto, dan arsip, Anda memerlukan alat yang memahami konten visual — dan itu berarti perceptual hashing.
 
-## Apa yang Membuat Archive Duplicate Scanner Menjadi Pencari File Duplikat Terbaik untuk Mac?
+## Apa yang Membuat Comic Duplicate Scanner Menjadi Pencari File Duplikat Terbaik untuk Mac?
 
 ### Perceptual hashing untuk konten visual
 
-Archive Duplicate Scanner menghasilkan sidik jari visual untuk setiap gambar atau halaman komik. Gambar yang mirip menghasilkan sidik jari yang serupa. Aplikasi mengukur perbedaan antara sidik jari menggunakan jarak Hamming — semakin kecil jaraknya, semakin mirip pasangan tersebut secara visual. Anda dapat menyetel ambang sensitivitas untuk mengontrol apakah hampir-duplikat disertakan atau hanya kecocokan visual yang tepat.
+Comic Duplicate Scanner menghasilkan sidik jari visual untuk setiap gambar atau halaman komik. Gambar yang mirip menghasilkan sidik jari yang serupa. Aplikasi mengukur perbedaan antara sidik jari menggunakan jarak Hamming — semakin kecil jaraknya, semakin mirip pasangan tersebut secara visual. Anda dapat menyetel ambang sensitivitas untuk mengontrol apakah hampir-duplikat disertakan atau hanya kecocokan visual yang tepat.
+
+Karena algoritma hashing mengubah ukuran setiap gambar ke grid tetap kecil dan mengonversi ke skala abu-abu sebelum membandingkan, dua sifat berlaku yang sebagian besar pendeteksi duplikat tidak dapat klaim: **perbedaan resolusi diabaikan** (pemindaian 1200px dan 3000px dari halaman yang sama menghasilkan hash yang sama), dan **mode warna diabaikan** (pemindaian berwarna dan hitam-putih dari halaman yang sama tetap ditandai sebagai duplikat).
 
 ### Pencocokan nama file fuzzy
 
@@ -24,7 +26,7 @@ Sebelum pemindaian visual dijalankan, aplikasi menandai file dengan nama yang me
 
 ### Strategi pemilihan otomatis
 
-Setelah duplikat dikelompokkan, Archive Duplicate Scanner menawarkan strategi pemilihan yang cerdas:
+Setelah duplikat dikelompokkan, Comic Duplicate Scanner menawarkan strategi pemilihan yang cerdas:
 
 - **Simpan terbesar** — menyimpan file dengan resolusi atau kualitas tertinggi
 - **Simpan tertua** — mengasumsikan file asli dibuat pertama kali
@@ -38,7 +40,7 @@ Aplikasi tidak pernah melewati Tempat Sampah. Duplikat yang dipilih dipindahkan 
 
 ## Bagaimana Cara Menggunakan Pencari File Duplikat Mac Terbaik?
 
-1. **Unduh** Archive Duplicate Scanner dari Mac App Store atau situs web pengembang.
+1. **Unduh** Comic Duplicate Scanner dari Mac App Store atau situs web pengembang.
 2. **Tambah folder** — seret direktori yang ingin Anda pindai. Anda dapat menggabungkan folder ekspor Foto, folder Unduhan, dan drive eksternal dalam satu sesi.
 3. **Pindai** — aplikasi menjalankan perceptual hashing pada semua file yang didukung. Perpustakaan tipikal berisi 20.000 file selesai dalam 3–5 menit pada Apple Silicon.
 4. **Tinjau grup** — telusuri grup duplikat dengan pratinjau thumbnail berdampingan. Lihat ukuran file, format, dimensi, dan tanggal pembuatan sekilas.
@@ -54,39 +56,40 @@ Aplikasi tidak pernah melewati Tempat Sampah. Duplikat yang dipilih dipindahkan 
 | Komik | CBZ, CBR, ZIP, RAR |
 | Arsip | ZIP, RAR (pencocokan berbasis konten) |
 
-## Bagaimana Archive Duplicate Scanner Dibandingkan dengan Alternatif Lain?
+## Bagaimana Comic Duplicate Scanner Dibandingkan dengan Alternatif Lain?
 
 | Alat | Metode | Lintas format? | Dukungan komik? | Hapus aman? |
-|------|--------|----------------|-----------------|-------------|
-| **Archive Duplicate Scanner** | Perceptual hash | Ya | Ya | Hanya Tempat Sampah |
-| Gemini 2 | Perceptual hash | Sebagian | Tidak | Tempat Sampah |
-| dupeGuru | Perceptual hash | Sebagian | Tidak | Tempat Sampah |
-| CleanMyMac | Byte hash | Tidak | Tidak | Tempat Sampah |
-| Terminal `fdupes` | Byte hash | Tidak | Tidak | Permanen |
+| Alat | Metode | Lintas format? | Komik? | Res. invarian? | Warna/H&P? | Hapus aman? |
+|------|--------|--------------|----------------|----------------------|-----------------|-------------|
+| **Comic Duplicate Scanner** | Perceptual hash | Ya | Ya | Ya | Ya | Hanya Tempat Sampah |
+| Gemini 2 | Perceptual hash | Sebagian | Tidak | Sebagian | Tidak | Tempat Sampah |
+| dupeGuru | Perceptual hash | Sebagian | Tidak | Sebagian | Tidak | Tempat Sampah |
+| CleanMyMac | Hash byte | Tidak | Tidak | Tidak | Tidak | Tempat Sampah |
+| Terminal `fdupes` | Hash byte | Tidak | Tidak | Tidak | Tidak | Permanen |
 
-Archive Duplicate Scanner adalah satu-satunya alat dalam perbandingan ini yang dirancang khusus untuk perpustakaan campuran komik dan foto, dengan dukungan native CBZ/CBR bersama format foto standar.
+Comic Duplicate Scanner adalah satu-satunya alat dalam perbandingan ini yang dirancang khusus untuk perpustakaan campuran komik dan foto, dengan dukungan native CBZ/CBR bersama format foto standar.
 
 ## Pertanyaan yang Sering Diajukan
 
 ### Apa pencari foto duplikat gratis terbaik untuk Mac di 2026?
 
-Apple Foto menyertakan pencari duplikat dasar untuk foto yang sudah ada di dalam perpustakaannya (Foto → album Duplikat). Ini gratis tetapi terbatas — hanya berfungsi di dalam perpustakaan Foto, melewatkan file di Finder, dan menggunakan pencocokan tepat, bukan perceptual hashing. Untuk perpustakaan campuran foto dan komik, Archive Duplicate Scanner menawarkan cakupan format yang jauh lebih luas dan pemindaian lintas folder.
+Apple Foto menyertakan pencari duplikat dasar untuk foto yang sudah ada di dalam perpustakaannya (Foto → album Duplikat). Ini gratis tetapi terbatas — hanya berfungsi di dalam perpustakaan Foto, melewatkan file di Finder, dan menggunakan pencocokan tepat, bukan perceptual hashing. Untuk perpustakaan campuran foto dan komik, Comic Duplicate Scanner menawarkan cakupan format yang jauh lebih luas dan pemindaian lintas folder.
 
 ### Apakah bisa menemukan duplikat antara drive eksternal dan drive internal Mac?
 
 Ya. Anda dapat menambahkan folder apa pun yang dapat diakses melalui Finder, termasuk drive USB eksternal, kartu SD, dan volume jaringan. Duplikat diidentifikasi di semua folder yang ditambahkan, bukan hanya dalam satu drive.
 
-### Apakah Archive Duplicate Scanner mendukung Mac Apple Silicon?
+### Apakah Comic Duplicate Scanner mendukung Mac Apple Silicon?
 
-Ya. Archive Duplicate Scanner dikompilasi sebagai Universal Binary dan berjalan secara native di Apple Silicon (M1, M2, M3, M4) maupun Mac Intel. Pipeline perceptual hashing dioptimalkan untuk core performa seri M.
+Ya. Comic Duplicate Scanner dikompilasi sebagai Universal Binary dan berjalan secara native di Apple Silicon (M1, M2, M3, M4) maupun Mac Intel. Pipeline perceptual hashing dioptimalkan untuk core performa seri M.
 
 ### Apa bedanya dengan pencari duplikat bawaan Apple di Foto?
 
-Pencari Apple hanya bekerja di dalam perpustakaan Foto dan hanya mendeteksi duplikat tepat yang diimpor pada waktu yang sama. Archive Duplicate Scanner memindai folder apa pun, mencocokkan file dalam format berbeda (HEIC vs JPEG), dan menangkap file yang telah diganti nama atau diekspor ulang.
+Pencari Apple hanya bekerja di dalam perpustakaan Foto dan hanya mendeteksi duplikat tepat yang diimpor pada waktu yang sama. Comic Duplicate Scanner memindai folder apa pun, mencocokkan file dalam format berbeda (HEIC vs JPEG), dan menangkap file yang telah diganti nama atau diekspor ulang.
 
-### Apakah ada versi Windows dari Archive Duplicate Scanner?
+### Apakah ada versi Windows dari Comic Duplicate Scanner?
 
-Ya. Archive Duplicate Scanner juga tersedia untuk Windows. Versi Windows berbagi mesin perceptual hashing yang sama dan mendukung format file yang sama dengan versi Mac.
+Ya. Comic Duplicate Scanner juga tersedia untuk Windows. Versi Windows berbagi mesin perceptual hashing yang sama dan mendukung format file yang sama dengan versi Mac.
 
 ### Bisakah saya membatalkan penghapusan jika saya menghapus file yang salah?
 
@@ -94,6 +97,6 @@ Ya. Aplikasi hanya memindahkan file ke Tempat Sampah — ia tidak pernah menghap
 
 ## Kesimpulan: Pencari File Duplikat Mac Terbaik untuk Perpustakaan Campuran
 
-Jika perpustakaan Mac Anda mencampur komik, foto, dan arsip, Archive Duplicate Scanner adalah alat yang tepat. Perceptual hashing menangkap duplikat visual yang dilewatkan oleh alat berbasis byte, daftar format mencakup segalanya mulai dari CBZ hingga HEIC hingga DNG, dan penghapusan hanya ke Tempat Sampah menjaga keamanan koleksi Anda.
+Jika perpustakaan Mac Anda mencampur komik, foto, dan arsip, Comic Duplicate Scanner adalah alat yang tepat. Perceptual hashing menangkap duplikat visual yang dilewatkan oleh alat berbasis byte, daftar format mencakup segalanya mulai dari CBZ hingga HEIC hingga DNG, dan penghapusan hanya ke Tempat Sampah menjaga keamanan koleksi Anda.
 
-[Unduh Archive Duplicate Scanner](/id/archive/) dan bersihkan perpustakaan Anda hari ini. Untuk mengelola dan membaca file komik dan ebook, [BiblioFuse](/id/) adalah aplikasi pendamping yang membaca CBZ, CBR, EPUB, PDF, dan lainnya di iPhone dan iPad.
+[Unduh Comic Duplicate Scanner](/id/archive/) dan bersihkan perpustakaan Anda hari ini. Untuk mengelola dan membaca file komik dan ebook, [BiblioFuse](/id/) adalah aplikasi pendamping yang membaca CBZ, CBR, EPUB, PDF, dan lainnya di iPhone dan iPad.

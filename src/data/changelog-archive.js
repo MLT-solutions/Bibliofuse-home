@@ -1,4 +1,4 @@
-// Changelog — Archive Duplicate Scanner
+// Changelog — Comic Duplicate Scanner
 // platforms: 'mac' | 'pc' | 'all'
 // released: true = live in store, false = pending / unreleased
 

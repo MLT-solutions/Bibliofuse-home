@@ -661,7 +661,7 @@
       "badge": "姊妹应用 · Mac 和 Windows",
       "titleA": "找到重复存档。",
       "titleB": "即使重命名后。",
-      "desc": "Archive Duplicate Scanner 查找并删除重复的漫画存档、照片和文件，即使它们被重命名、重新压缩或保存在不同文件夹中。",
+      "desc": "Comic Duplicate Scanner 查找并删除重复的漫画存档、照片和文件，即使它们被重命名、重新压缩或保存在不同文件夹中。",
       "features": {
         "scanning": {
           "title": "漫画存档扫描",
@@ -680,8 +680,8 @@
           "body": "标记的文件仅移至系统废纸篓。"
         }
       },
-      "altBadge": "在 Mac App Store 下载 Archive Duplicate Scanner",
-      "altImage": "Archive Duplicate Scanner 配置并开始扫描",
+      "altBadge": "在 Mac App Store 下载 Comic Duplicate Scanner",
+      "altImage": "Comic Duplicate Scanner 配置并开始扫描",
       "pricing": "最多 1,000 个文件的扫描永久免费使用。7 天试用解锁完整访问权限，一次性购买解锁无限使用，无需订阅。",
       "stats": {
         "threshold": "默认阈值",
@@ -826,14 +826,14 @@
     "blog": {
       "posts": {
         "reading-ebooks-offline-iphone": {
-          "title": "在 iPhone 上完全离线阅读电子书：无需云服务",
-          "excerpt": "BiblioFuse 将整个书库存储在设备本地——无需账户，无需流式传输，无需加载界面。在任何地方阅读 EPUB、CBZ 或 PDF。",
-          "seoDescription": "使用 BiblioFuse 在 iPhone 上完全离线阅读电子书和漫画。文件存储在本地，无需云账户。"
+          "title": "在iPhone上完全离线阅读电子书：无需云服务",
+          "excerpt": "BiblioFuse将EPUB、CBZ、CBR、PDF、ZIP、RAR和TXT文件本地存储在您的iPhone上——可在飞机、地铁或任何没有信号的地方阅读整个书库。无需云订阅或账户，支持iOS 17及更高版本。",
+          "seoDescription": "BiblioFuse在iPhone上本地读取EPUB、CBZ、CBR、PDF、ZIP、RAR和TXT文件。无云、无账户、无信号要求。iOS 17+完整离线阅读指南。"
         },
         "convert-cbr-to-cbz-online": {
-          "title": "如何在线将 CBR 转换为 CBZ：免费，无需软件",
-          "excerpt": "CBR 文件是 RAR 压缩包，CBZ 是 ZIP 压缩包——不能仅靠重命名扩展名转换。BiblioFuse 在线工具无需上传，几秒内完成重新归档。",
-          "seoDescription": "免费在线将 CBR 转换为 CBZ，无需上传文件。BiblioFuse 使用 WebAssembly 在浏览器中完成转换。"
+          "title": "在线将CBR转换为CBZ：免费，无需软件",
+          "excerpt": "BiblioFuse网页工具可在浏览器中直接将CBR（基于RAR）漫画档案转换为CBZ（基于ZIP）格式——无需上传、无需安装，完全保护隐私。拖入文件，几秒内下载转换后的CBZ。",
+          "seoDescription": "使用BiblioFuse Web Tool在浏览器中在线将CBR转换为CBZ。无需上传文件，无需软件。WebAssembly驱动，单文件免费使用。"
         },
         "organize-ebooks-by-content-not-metadata": {
           "title": "按内容整理电子书，而非元数据或 ISBN",
@@ -842,8 +842,8 @@
         },
         "find-duplicate-comics-different-names": {
           "title": "如何找到文件名不同的重复漫画文件",
-          "excerpt": "标准重复工具会漏掉名称不同的漫画——如 comic_E1-5 和 ComiX_E1-10。Archive Duplicate Scanner 通过比对实际页面图片，用感知哈希捕获文件名工具完全错过的重复。",
-          "seoDescription": "即使文件名不同，也能找到重复的 CBZ 和 CBR 漫画文件。Archive Duplicate Scanner 使用感知哈希比对页面图片，而非文件名。"
+          "excerpt": "标准重复工具会漏掉名称不同的漫画——如 comic_E1-5 和 ComiX_E1-10。Comic Duplicate Scanner 通过比对实际页面图片，用感知哈希捕获文件名工具完全错过的重复。",
+          "seoDescription": "即使文件名不同，也能找到重复的 CBZ 和 CBR 漫画文件。Comic Duplicate Scanner 使用感知哈希比对页面图片，而非文件名。"
         },
         "open-bank-statement-pdf-iphone": {
           "title": "如何在 iPhone 上打开有密码保护的银行账单 PDF",
@@ -856,24 +856,14 @@
           "seoDescription": "ContentCue 新增法语、荷兰语、俄语、日语、韩语和马来语。阅读时用彩色边框标注广告，轻松区分编辑内容与付费内容。"
         },
         "archive-duplicate-scanner-11-languages": {
-          "title": "Archive Duplicate Scanner 现已支持 11 种语言",
-          "excerpt": "Archive Duplicate Scanner 现已支持 11 种语言。即使文件名不同（如 comic_E1-5 和 ComiX_E1-10），也能找出重复漫画——页面视觉比对能捕获文件名工具遗漏的内容。",
-          "seoDescription": "Archive Duplicate Scanner 新增法语、荷兰语、俄语、日语、韩语和马来语。通过比对页面图片（而非仅文件名）在 Mac 和 Windows 上查找重复 CBZ 文件。"
+          "title": "Comic Duplicate Scanner 现已支持 11 种语言",
+          "excerpt": "Comic Duplicate Scanner 现已支持 11 种语言。即使文件名不同（如 comic_E1-5 和 ComiX_E1-10），也能找出重复漫画——页面视觉比对能捕获文件名工具遗漏的内容。",
+          "seoDescription": "Comic Duplicate Scanner 新增法语、荷兰语、俄语、日语、韩语和马来语。通过比对页面图片（而非仅文件名）在 Mac 和 Windows 上查找重复 CBZ 文件。"
         },
         "smartdecrypt-11-languages": {
           "title": "SmartDecrypt 现已支持 11 种语言",
           "excerpt": "SmartDecrypt PDF ZIP CBZ 现已支持 11 种语言——英语、西班牙语、法语、荷兰语、葡萄牙语、俄语、中文、日语、韩语、印度尼西亚语和马来语。用您自己的语言解锁银行账单和保险 PDF，再也不用烦恼难以记忆的密码规律。",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ 新增 6 种语言：法语、荷兰语、俄语、日语、韩语和马来语。在 iPhone、Mac 和 Windows 上用模式密码解锁银行 PDF。"
-        },
-        "reading-ebooks-offline-iphone": {
-          "title": "在iPhone上完全离线阅读电子书：无需云服务",
-          "excerpt": "BiblioFuse将EPUB、CBZ、CBR、PDF、ZIP、RAR和TXT文件本地存储在您的iPhone上——可在飞机、地铁或任何没有信号的地方阅读整个书库。无需云订阅或账户，支持iOS 17及更高版本。",
-          "seoDescription": "BiblioFuse在iPhone上本地读取EPUB、CBZ、CBR、PDF、ZIP、RAR和TXT文件。无云、无账户、无信号要求。iOS 17+完整离线阅读指南。"
-        },
-        "convert-cbr-to-cbz-online": {
-          "title": "在线将CBR转换为CBZ：免费，无需软件",
-          "excerpt": "BiblioFuse网页工具可在浏览器中直接将CBR（基于RAR）漫画档案转换为CBZ（基于ZIP）格式——无需上传、无需安装，完全保护隐私。拖入文件，几秒内下载转换后的CBZ。",
-          "seoDescription": "使用BiblioFuse Web Tool在浏览器中在线将CBR转换为CBZ。无需上传文件，无需软件。WebAssembly驱动，单文件免费使用。"
         },
         "airdrop-books-to-iphone": {
           "title": "如何使用 AirDrop 将漫画和电子书传输到 iPhone",
@@ -957,33 +947,33 @@
         },
         "build-perfect-digital-manga-collection": {
           "title": "如何建立完美的数字漫画收藏：压缩、去重、随处阅读",
-          "excerpt": "BiblioFuse 是适用于 iOS 17+ 的 iPhone 和 iPad 阅读器，支持 CBZ、CBR、EPUB、PDF、ZIP、RAR 和 TXT 格式。结合 Archive Duplicate Scanner 删除重复卷册、BiblioFuse 网页工具在浏览器中批量压缩文件，以及设备内置工具栏，打造可随处同步的优化漫画收藏。",
-          "seoDescription": "BiblioFuse 是适用于 iOS 17+ 的 iPhone 和 iPad 阅读器，支持 CBZ、CBR、EPUB、PDF、ZIP、RAR 和 TXT 格式。结合 Archive Duplicate Scanner 删除重复卷册、BiblioFuse."
+          "excerpt": "BiblioFuse 是适用于 iOS 17+ 的 iPhone 和 iPad 阅读器，支持 CBZ、CBR、EPUB、PDF、ZIP、RAR 和 TXT 格式。结合 Comic Duplicate Scanner 删除重复卷册、BiblioFuse 网页工具在浏览器中批量压缩文件，以及设备内置工具栏，打造可随处同步的优化漫画收藏。",
+          "seoDescription": "BiblioFuse 是适用于 iOS 17+ 的 iPhone 和 iPad 阅读器，支持 CBZ、CBR、EPUB、PDF、ZIP、RAR 和 TXT 格式。结合 Comic Duplicate Scanner 删除重复卷册、BiblioFuse."
         },
         "best-duplicate-file-finder-mac": {
           "title": "2026 年 Mac 最佳重复文件查找工具：漫画、照片与压缩包",
-          "excerpt": "Archive Duplicate Scanner 是 2026 年 Mac 上混合库（漫画 CBZ/CBR、照片 HEIC/JPEG/RAW、压缩档案）的最佳重复文件查找工具。感知哈希即使在文件被重命名或重新导出后也能找到视觉相同的文件，仅移至废纸篓的删除方式保护您的收藏。",
-          "seoDescription": "Archive Duplicate Scanner 是 2026 年 Mac 上混合库（漫画 CBZ/CBR、照片 HEIC/JPEG/RAW、压缩档案）的最佳重复文件查找工具。感知哈希即使在文件被重命名或重新导出后也能找到视觉相同的文件，仅移至废纸篓的删除方式保护您的收藏。"
+          "excerpt": "Comic Duplicate Scanner 是 2026 年 Mac 上混合库（漫画 CBZ/CBR、照片 HEIC/JPEG/RAW、压缩档案）的最佳重复文件查找工具。感知哈希即使在文件被重命名或重新导出后也能找到视觉相同的文件，仅移至废纸篓的删除方式保护您的收藏。",
+          "seoDescription": "Comic Duplicate Scanner 是 2026 年 Mac 上混合库（漫画 CBZ/CBR、照片 HEIC/JPEG/RAW、压缩档案）的最佳重复文件查找工具。感知哈希即使在文件被重命名或重新导出后也能找到视觉相同的文件，仅移至废纸篓的删除方式保护您的收藏。"
         },
         "find-duplicate-photos-mac": {
           "title": "在 Mac 上查找重复照片——支持 HEIC、WebP 和 RAW 格式",
-          "excerpt": "Archive Duplicate Scanner 使用感知哈希在 Mac 上查找重复照片，即使文件名或压缩设置不同，也能识别 HEIC、JPEG、WebP、PNG、TIFF 和 RAW 格式的视觉相同图像。重复文件会安全移至废纸篓，提供自动选择策略。",
-          "seoDescription": "Archive Duplicate Scanner 使用感知哈希在 Mac 上查找重复照片，即使文件名或压缩设置不同，也能识别 HEIC、JPEG、WebP、PNG、TIFF 和 RAW 格式的视觉相同图像。重复文件会安全移至废纸篓，提供自动选择策略。"
+          "excerpt": "Comic Duplicate Scanner 使用感知哈希在 Mac 上查找重复照片，即使文件名或压缩设置不同，也能识别 HEIC、JPEG、WebP、PNG、TIFF 和 RAW 格式的视觉相同图像。重复文件会安全移至废纸篓，提供自动选择策略。",
+          "seoDescription": "Comic Duplicate Scanner 使用感知哈希在 Mac 上查找重复照片，即使文件名或压缩设置不同，也能识别 HEIC、JPEG、WebP、PNG、TIFF 和 RAW 格式的视觉相同图像。重复文件会安全移至废纸篓，提供自动选择策略。"
         },
         "perceptual-hashing-duplicate-detection": {
           "title": "感知哈希如何找到重命名后的重复漫画",
-          "excerpt": "Archive Duplicate Scanner 使用感知哈希通过比较页面视觉内容而非文件校验码来查找重复的 CBZ 和 CBR 档案，能检测到重命名、重新压缩或从不同来源下载的重复文件。",
-          "seoDescription": "Archive Duplicate Scanner 使用感知哈希通过比较页面视觉内容而非文件校验码来查找重复的 CBZ 和 CBR 档案，能检测到重命名、重新压缩或从不同来源下载的重复文件。"
+          "excerpt": "Comic Duplicate Scanner 使用感知哈希通过比较页面视觉内容而非文件校验码来查找重复的 CBZ 和 CBR 档案，能检测到重命名、重新压缩或从不同来源下载的重复文件。",
+          "seoDescription": "Comic Duplicate Scanner 使用感知哈希通过比较页面视觉内容而非文件校验码来查找重复的 CBZ 和 CBR 档案，能检测到重命名、重新压缩或从不同来源下载的重复文件。"
         },
         "clean-up-duplicate-manga-library": {
           "title": "如何智能清理重复的漫画收藏",
-          "excerpt": "Archive Duplicate Scanner 使用感知哈希在 Mac 上查找重复的漫画卷，即使文件经过重命名或重新压缩也能匹配 CBZ 和 CBR 文件。并排审查匹配对，安全地将重复文件移至废纸篓。",
-          "seoDescription": "Archive Duplicate Scanner 使用感知哈希在 Mac 上查找重复的漫画卷，即使文件经过重命名或重新压缩也能匹配 CBZ 和 CBR 文件。并排审查匹配对，安全地将重复文件移至废纸篓。"
+          "excerpt": "Comic Duplicate Scanner 使用感知哈希在 Mac 上查找重复的漫画卷，即使文件经过重命名或重新压缩也能匹配 CBZ 和 CBR 文件。并排审查匹配对，安全地将重复文件移至废纸篓。",
+          "seoDescription": "Comic Duplicate Scanner 使用感知哈希在 Mac 上查找重复的漫画卷，即使文件经过重命名或重新压缩也能匹配 CBZ 和 CBR 文件。并排审查匹配对，安全地将重复文件移至废纸篓。"
         },
         "find-duplicate-comics-cbz-mac": {
           "title": "如何在Mac上查找并删除重复的CBZ漫画文件",
-          "excerpt": "Archive Duplicate Scanner使用感知哈希在Mac上查找重复的CBZ和CBR漫画文件——即使在重命名、重新压缩或重新打包后也能匹配文件。扫描您的库，并排查看匹配对，安全地将重复项移到废纸篓。",
-          "seoDescription": "Archive Duplicate Scanner使用感知哈希在Mac上查找重复的CBZ和CBR漫画文件——即使在重命名、重新压缩或重新打包后也能匹配文件。扫描您的库，并排查看匹配对，安全地将重复项移到废纸篓。"
+          "excerpt": "Comic Duplicate Scanner使用感知哈希在Mac上查找重复的CBZ和CBR漫画文件——即使在重命名、重新压缩或重新打包后也能匹配文件。扫描您的库，并排查看匹配对，安全地将重复项移到废纸篓。",
+          "seoDescription": "Comic Duplicate Scanner使用感知哈希在Mac上查找重复的CBZ和CBR漫画文件——即使在重命名、重新压缩或重新打包后也能匹配文件。扫描您的库，并排查看匹配对，安全地将重复项移到废纸篓。"
         },
         "pdf-zip-password-manager-profiles": {
           "title": "保存CBZ和PDF合集密码——再也不用重复输入",
@@ -1016,9 +1006,9 @@
           "seoDescription": "BiblioFuse 网页工具可直接在浏览器中压缩和优化 EPUB 文件——无需安装软件、无需注册账号、无需上传文件。将 EPUB 拖入工具，设置压缩级别，几秒钟即可下载压缩后的文件。"
         },
         "archive-duplicate-scanner-language-update": {
-          "title": "Archive Duplicate Scanner 现已支持葡萄牙语、西班牙语、印度尼西亚语和简体中文",
-          "excerpt": "Archive Duplicate Scanner 新增葡萄牙语、西班牙语、印度尼西亚语和简体中文完整界面支持——应用程序现在原生支持您的语言。使用感知哈希查找重复漫画档案和照片，Mac 和 Windows 均可免费使用。",
-          "seoDescription": "Archive Duplicate Scanner 新增葡萄牙语、西班牙语、印度尼西亚语和简体中文完整界面支持——应用程序现在原生支持您的语言。使用感知哈希查找重复漫画档案和照片，Mac 和 Windows 均可免费使用。"
+          "title": "Comic Duplicate Scanner 现已支持葡萄牙语、西班牙语、印度尼西亚语和简体中文",
+          "excerpt": "Comic Duplicate Scanner 新增葡萄牙语、西班牙语、印度尼西亚语和简体中文完整界面支持——应用程序现在原生支持您的语言。使用感知哈希查找重复漫画档案和照片，Mac 和 Windows 均可免费使用。",
+          "seoDescription": "Comic Duplicate Scanner 新增葡萄牙语、西班牙语、印度尼西亚语和简体中文完整界面支持——应用程序现在原生支持您的语言。使用感知哈希查找重复漫画档案和照片，Mac 和 Windows 均可免费使用。"
         },
         "merge-cbz-files-online": {
           "title": "如何在线将多个CBZ文件合并为一个——免费工具",
@@ -1325,13 +1315,13 @@
     },
     "archivePage": {
       "seo": {
-        "title": "Archive Duplicate Scanner — 在 Mac 和 Windows 上查找重复漫画和照片",
-        "desc": "Archive Duplicate Scanner 使用感知哈希查找重复的 CBZ、CBR、ZIP、RAR 和照片文件——即使重命名或重新压缩后也能识别。免费扫描 1,000 个文件，专业版 $19.99 一次性付款。"
+        "title": "Comic Duplicate Scanner — 在 Mac 和 Windows 上查找重复漫画和照片",
+        "desc": "Comic Duplicate Scanner 使用感知哈希查找重复的 CBZ、CBR、ZIP、RAR 和照片文件——即使在重命名、重新压缩或不同分辨率和色彩模式下也能识别。免费支持最多 1,000 个文件，Pro 版一次性购买 $19.99。"
       },
       "hero": {
         "badge": "Mac 和 Windows",
         "title": "查找重复文件。即使重命名后也能找到。",
-        "desc": "Archive Duplicate Scanner 打开您的漫画档案并比较其中的实际图像——而不仅仅是文件名或大小。即使一个文件叫 comic_E1-5，另一个叫 ComiX_E1-10，只要前几页匹配，就会被标记为重复。",
+        "desc": "Comic Duplicate Scanner 打开您的漫画档案并比较其中的实际图像——而不仅仅是文件名或大小。即使一个文件叫 comic_E1-5，另一个叫 ComiX_E1-10，只要前几页匹配，就会被标记为重复。",
         "trust1": "无云端上传",
         "trust2": "安全移至废纸篓",
         "trust3": "7 天免费试用",
@@ -1341,11 +1331,12 @@
       "scanning": {
         "eyebrow": "深度档案扫描",
         "title": "打开档案并比较内部页面",
-        "desc": "大多数重复查找工具只比较文件名或大小。Archive Duplicate Scanner 打开每个 CBZ、CBR、ZIP 或 RAR 文件，提取实际页面的缩略图并进行比较。名为 comic_E1-5 和 ComiX_E1-10 的文件——名称不同、剧集范围不同——只要开头页面匹配，仍会被检测出来。",
+        "desc": "大多数重复查找工具只比较文件名或大小。Comic Duplicate Scanner 打开每个 CBZ、CBR、ZIP 或 RAR 文件，提取实际页面的缩略图并进行比较。名为 comic_E1-5 和 ComiX_E1-10 的文件——名称不同、剧集范围不同——只要开头页面匹配，仍会被检测出来。",
         "bullet1": "打开压缩包并比较页面图片——不只是文件名",
         "bullet2": "可配置的相似度阈值——推荐 90%",
         "bullet3": "哈希缓存使重复扫描几乎即时完成",
-        "badge": "支持漫画、韩漫和中国漫画"
+        "badge": "支持漫画、韩漫和中国漫画",
+        "bullet4": "跨分辨率和色彩模式识别重复项——同一页面的 1200px 灰度扫描和 3000px 彩色扫描仍会被标记"
       },
       "photos": {
         "eyebrow": "照片和文件名匹配",
@@ -1397,11 +1388,11 @@
       "faq": [
         {
           "q": "什么是感知哈希，为什么重要？",
-          "a": "感知哈希比较图像的视觉结构，而不是原始文件字节。两个文件可以有不同的名称、大小和元数据——但如果内容看起来相同，感知哈希就会匹配它们。标准重复查找器在文件重命名或重新导出时会失败；Archive Duplicate Scanner 不会。"
+          "a": "感知哈希比较图像的视觉结构，而不是原始文件字节。两个文件可以有不同的名称、大小和元数据——但如果内容看起来相同，感知哈希就会匹配它们。标准重复查找器在文件重命名或重新导出时会失败；Comic Duplicate Scanner 不会。"
         },
         {
           "q": "能找到被重命名的重复文件吗？",
-          "a": "可以。重命名文件不会改变其内容。Archive Duplicate Scanner 比较每个档案内部的图像，因此无论文件叫什么名字都能检测到重复。"
+          "a": "可以。重命名文件不会改变其内容。Comic Duplicate Scanner 比较每个档案内部的图像，因此无论文件叫什么名字都能检测到重复。"
         },
         {
           "q": "删除是永久性的吗？",
@@ -1418,6 +1409,14 @@
         {
           "q": "购买前有试用吗？",
           "a": "您可以永久免费扫描最多 1,000 个文件。Mac App Store 的 7 天免费试用可解锁无限访问，Pro 一次性购买价格为 $19.99，无需订阅。"
+        },
+        {
+          "q": "它能将彩色扫描与同一内容的黑白版本进行匹配吗？",
+          "a": "可以。dHash 算法基于亮度梯度而非色彩值进行比较。同一页面的全彩扫描和灰度版本会产生几乎相同的哈希值，并被标记为重复项。"
+        },
+        {
+          "q": "图像分辨率会影响重复检测吗？",
+          "a": "不会。dHash 在比较前会将每张图像缩放到固定的小网格，因此同一页面的 1200px 和 3000px 扫描会生成相同的哈希值。来自不同来源的分辨率差异会被完全忽略。"
         }
       ],
       "backDesc": "正在寻找漫画和电子书阅读器？",

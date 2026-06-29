@@ -83,7 +83,7 @@ const ArchiveScanner = () => {
 
   const breadcrumbs = [
     { name: 'Home', url: 'https://bibliofuse.com/en/' },
-    { name: 'Archive Duplicate Scanner', url: `https://bibliofuse.com/${lang || 'en'}/archive/` },
+    { name: 'Comic Duplicate Scanner', url: `https://bibliofuse.com/${lang || 'en'}/archive/` },
   ];
 
   return (
@@ -93,7 +93,7 @@ const ArchiveScanner = () => {
         description={t('redesign.archivePage.seo.desc')}
         canonical="/archive"
         schemaType="suite"
-        schemaName="Archive Duplicate Scanner"
+        schemaName="Comic Duplicate Scanner"
         faqItems={t('redesign.archivePage.faq', { returnObjects: true })}
         breadcrumbs={breadcrumbs}
       />
@@ -111,7 +111,7 @@ const ArchiveScanner = () => {
           </div>
 
           <div className="mb-6 flex justify-center">
-            <img src="/image/archive-logo.png" alt="Archive Duplicate Scanner" className="h-20 w-20 rounded-2xl shadow-2xl" />
+            <img src="/image/archive-logo.png" alt="Comic Duplicate Scanner" className="h-20 w-20 rounded-2xl shadow-2xl" />
           </div>
 
           <h1 className="mb-5 text-[clamp(2.4rem,5vw,4rem)] font-black leading-tight tracking-tight text-white">
@@ -146,11 +146,11 @@ const ArchiveScanner = () => {
         eyebrow={t('redesign.archivePage.scanning.eyebrow')}
         title={t('redesign.archivePage.scanning.title')}
         desc={t('redesign.archivePage.scanning.desc')}
-        bullets={[t('redesign.archivePage.scanning.bullet1'), t('redesign.archivePage.scanning.bullet2'), t('redesign.archivePage.scanning.bullet3')]}
+        bullets={[t('redesign.archivePage.scanning.bullet1'), t('redesign.archivePage.scanning.bullet2'), t('redesign.archivePage.scanning.bullet3'), t('redesign.archivePage.scanning.bullet4')]}
         badge={t('redesign.archivePage.scanning.badge')}
         accent="amber"
         screenshot="/image/archivescan/mac-1.png"
-        screenshotAlt="Archive Duplicate Scanner — scan setup"
+        screenshotAlt="Comic Duplicate Scanner — scan setup"
       />
 
       {/* Feature: Photos & Filenames */}
@@ -162,7 +162,7 @@ const ArchiveScanner = () => {
         accent="orange"
         reverse
         screenshot="/image/archivescan/mac-2.png"
-        screenshotAlt="Archive Duplicate Scanner — photo and filename scan"
+        screenshotAlt="Comic Duplicate Scanner — photo and filename scan"
       />
 
       {/* Feature: Smart Auto-Select */}
@@ -174,7 +174,7 @@ const ArchiveScanner = () => {
         badge={t('redesign.archivePage.autoselect.badge')}
         accent="amber"
         screenshot="/image/archivescan/mac-3.png"
-        screenshotAlt="Archive Duplicate Scanner — auto-select results"
+        screenshotAlt="Comic Duplicate Scanner — auto-select results"
       />
 
       {/* Feature: Export Reports */}
@@ -186,7 +186,7 @@ const ArchiveScanner = () => {
         accent="orange"
         reverse
         screenshot="/image/archivescan/mac-4.png"
-        screenshotAlt="Archive Duplicate Scanner — export reports"
+        screenshotAlt="Comic Duplicate Scanner — export reports"
       />
 
       {/* Pricing */}
@@ -278,7 +278,7 @@ const ArchiveScanner = () => {
 
       <StickyDownloadBar
         logo="/image/archive-logo.png"
-        appName="Archive Duplicate Scanner"
+        appName="Comic Duplicate Scanner"
         macStoreUrl={macAppStoreUrl}
         msStoreUrl={msStoreUrl}
       />

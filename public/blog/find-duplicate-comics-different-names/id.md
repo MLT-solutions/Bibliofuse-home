@@ -2,7 +2,7 @@
 
 Anda membersihkan perpustakaan komik dan menjalankan pencari duplikat standar. Hasilnya: tidak ada duplikat. Namun Anda tahu ada yang salah — Anda punya episode 1-5 di satu file dan episode 1-10 di file lain, dan lima episode pertama jelas tumpang tindih.
 
-Inilah masalah spesifik yang dibuat oleh [Archive Duplicate Scanner](/id/archive/): menemukan arsip komik duplikat dengan membandingkan konten halaman yang sebenarnya, bukan nama file atau ukurannya.
+Inilah masalah spesifik yang dibuat oleh [Comic Duplicate Scanner](/id/archive/): menemukan arsip komik duplikat dengan membandingkan konten halaman yang sebenarnya, bukan nama file atau ukurannya.
 
 ## Mengapa Pencari Duplikat Standar Tidak Bekerja untuk Komik
 
@@ -11,9 +11,9 @@ Inilah masalah spesifik yang dibuat oleh [Archive Duplicate Scanner](/id/archive
 - **File yang dikodekan ulang**: komik yang sama dari dua sumber, kualitas JPEG berbeda, hash sepenuhnya berbeda
 - **Format berbeda**: konten yang sama sebagai CBZ dan CBR
 
-## Cara Archive Duplicate Scanner Mendeteksinya
+## Cara Comic Duplicate Scanner Mendeteksinya
 
-[Archive Duplicate Scanner](/id/archive/) menggunakan perceptual hashing pada gambar halaman di dalam setiap arsip:
+[Comic Duplicate Scanner](/id/archive/) menggunakan perceptual hashing pada gambar halaman di dalam setiap arsip:
 
 1. Membuka kedua arsip (CBZ, CBR, ZIP, atau RAR)
 2. Mengekstrak halaman awal dari masing-masing
@@ -24,6 +24,6 @@ Jika hash cocok di atas ambang batas yang dapat dikonfigurasi, arsip ditandai se
 
 Ambang batas lebih ketat memerlukan kecocokan visual lebih dekat. Lebih longgar menangkap lebih banyak kasus batas. Default dikalibrasi untuk menangkap sebagian besar duplikat praktis tanpa positif palsu.
 
-Archive Duplicate Scanner gratis untuk memindai dan melihat pratinjau. Pro memungkinkan tindakan massal. Tanpa langganan.
+Comic Duplicate Scanner gratis untuk memindai dan melihat pratinjau. Pro memungkinkan tindakan massal. Tanpa langganan.
 
-Unduh [Archive Duplicate Scanner](/id/archive/) dari App Store atau Microsoft Store.
+Unduh [Comic Duplicate Scanner](/id/archive/) dari App Store atau Microsoft Store.

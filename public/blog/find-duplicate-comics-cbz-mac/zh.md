@@ -1,6 +1,6 @@
 # 如何在 Mac 上查找并删除重复的 CBZ 漫画文件
 
-Archive Duplicate Scanner 使用感知哈希技术在 Mac 上查找重复的 CBZ、CBR 及漫画压缩文件，即使文件经过重命名、重新压缩或重新打包也能识别匹配项。扫描整个漫画库，并排查看匹配文件对，安全地将重复文件移至废纸篓，无需担心原始文件受损。
+Comic Duplicate Scanner 使用感知哈希技术在 Mac 上查找重复的 CBZ、CBR 及漫画压缩文件，即使文件经过重命名、重新压缩或重新打包也能识别匹配项。扫描整个漫画库，并排查看匹配文件对，安全地将重复文件移至废纸篓，无需担心原始文件受损。
 
 ## 为什么漫画重复文件比你想象的更难发现
 
@@ -8,11 +8,11 @@ Archive Duplicate Scanner 使用感知哈希技术在 Mac 上查找重复的 CBZ
 
 标准重复检测工具通过比较文件哈希来工作——任何改动，哪怕只是重命名或添加注释标签，都会产生不同的哈希值，重复文件因此逃过检测。感知哈希的工作方式截然不同：它分析压缩包内图像的视觉内容，根据你所看到的内容创建指纹，而非依赖精确的字节数据。
 
-Archive Duplicate Scanner 使用感知哈希查找其他任何工具都无法发现的漫画重复文件。
+Comic Duplicate Scanner 使用感知哈希查找其他任何工具都无法发现的漫画重复文件。
 
 ## 感知哈希如何识别漫画重复文件？
 
-当 Archive Duplicate Scanner 扫描 CBZ 或 CBR 文件时，它会打开压缩包，对其中的图像进行采样，并为每张图像计算感知哈希值。这些哈希值捕捉视觉结构——形状、对比度模式和布局——而不依赖于精确的像素值。
+当 Comic Duplicate Scanner 扫描 CBZ 或 CBR 文件时，它会打开压缩包，对其中的图像进行采样，并为每张图像计算感知哈希值。这些哈希值捕捉视觉结构——形状、对比度模式和布局——而不依赖于精确的像素值。
 
 包含相同页面的两个 CBZ 文件会产生匹配的哈希值，即使：
 - 文件名完全不同
@@ -20,74 +20,74 @@ Archive Duplicate Scanner 使用感知哈希查找其他任何工具都无法发
 - 一个文件有元数据标签而另一个没有
 - 不同版本之间页面顺序有所不同
 
-这使得 Archive Duplicate Scanner 成为处理漫画库多年来从多个来源下载所积累的各类重复文件的理想工具。
+这使得 Comic Duplicate Scanner 成为处理漫画库多年来从多个来源下载所积累的各类重复文件的理想工具。
 
 ## 如何在 Mac 上查找重复的 CBZ 文件
 
-### 第一步：下载并启动 Archive Duplicate Scanner
+### 第一步：下载并启动 Comic Duplicate Scanner
 
-[Archive Duplicate Scanner](/zh/archive/) 已在 Mac App Store 上架。安装后从"应用程序"文件夹启动。
+[Comic Duplicate Scanner](/zh/archive/) 已在 Mac App Store 上架。安装后从"应用程序"文件夹启动。
 
 ### 第二步：添加漫画库文件夹
 
-将漫画文件夹拖入 Archive Duplicate Scanner 窗口，或使用"添加文件夹"按钮进行浏览。你可以同时扫描多个位置——主库、外部硬盘和备份位置，一次全部搞定。
+将漫画文件夹拖入 Comic Duplicate Scanner 窗口，或使用"添加文件夹"按钮进行浏览。你可以同时扫描多个位置——主库、外部硬盘和备份位置，一次全部搞定。
 
 ### 第三步：开始扫描
 
-点击"扫描"。Archive Duplicate Scanner 会打开每个 CBZ 和 CBR 文件，对图像进行采样并计算感知哈希值。在现代 Mac 上，扫描 1000 部漫画的库通常只需几分钟即可完成。
+点击"扫描"。Comic Duplicate Scanner 会打开每个 CBZ 和 CBR 文件，对图像进行采样并计算感知哈希值。在现代 Mac 上，扫描 1000 部漫画的库通常只需几分钟即可完成。
 
 ### 第四步：查看匹配文件对
 
-扫描完成后，Archive Duplicate Scanner 会呈现检测到的重复文件组。每组并排显示匹配的压缩包，包含文件名、文件大小、修改日期和文件夹路径。你可以预览封面图像或打开任一压缩包进行确认。
+扫描完成后，Comic Duplicate Scanner 会呈现检测到的重复文件组。每组并排显示匹配的压缩包，包含文件名、文件大小、修改日期和文件夹路径。你可以预览封面图像或打开任一压缩包进行确认。
 
 ### 第五步：自动选择要保留的副本
 
-Archive Duplicate Scanner 的自动选择策略根据你配置的规则决定保留哪个文件：保留较大的文件（可能质量更好）、保留首选文件夹中的文件（主库）或保留最近修改的副本。你也可以在每个文件组中手动选择要保留的文件。
+Comic Duplicate Scanner 的自动选择策略根据你配置的规则决定保留哪个文件：保留较大的文件（可能质量更好）、保留首选文件夹中的文件（主库）或保留最近修改的副本。你也可以在每个文件组中手动选择要保留的文件。
 
 ### 第六步：将重复文件移至废纸篓
 
-点击"删除重复文件"（或"移至废纸篓"）。Archive Duplicate Scanner 从不永久删除文件——它只会将文件移至废纸篓。如有需要，清空废纸篓前可先行查看。
+点击"删除重复文件"（或"移至废纸篓"）。Comic Duplicate Scanner 从不永久删除文件——它只会将文件移至废纸篓。如有需要，清空废纸篓前可先行查看。
 
 ## 大型漫画库的自动选择策略
 
-当需要处理 200 个重复文件组时，逐一手动审查并不实际。Archive Duplicate Scanner 的自动选择策略可自动完成决策：
+当需要处理 200 个重复文件组时，逐一手动审查并不实际。Comic Duplicate Scanner 的自动选择策略可自动完成决策：
 
 **保留较大文件：** 较大的 CBZ 压缩包通常包含质量更高的图像。此策略会自动保留更好的版本。
 
-**保留首选文件夹中的文件：** 如果主库位于 `~/Comics`，而重复文件在备份硬盘上，可告知 Archive Duplicate Scanner 始终优先选择 `~/Comics` 中的副本。备份副本将被标记为待删除。
+**保留首选文件夹中的文件：** 如果主库位于 `~/Comics`，而重复文件在备份硬盘上，可告知 Comic Duplicate Scanner 始终优先选择 `~/Comics` 中的副本。备份副本将被标记为待删除。
 
 **保留最近修改的文件：** 适用于较新文件是同一扫描组中经过修正或更新的版本的情况。
 
-自动选择运行后，在确认之前请检查一遍标记的选择结果。Archive Duplicate Scanner 在未经你明确确认的情况下绝不删除文件。
+自动选择运行后，在确认之前请检查一遍标记的选择结果。Comic Duplicate Scanner 在未经你明确确认的情况下绝不删除文件。
 
 ## 模糊文件名匹配有什么帮助？
 
-除感知哈希外，Archive Duplicate Scanner 还使用模糊文件名匹配，在图像分析之前就能找出可能的重复文件。`One-Punch-Man-v01.cbz` 和 `One_Punch_Man_Vol_1.cbz` 之类的文件会被标记为潜在匹配项。
+除感知哈希外，Comic Duplicate Scanner 还使用模糊文件名匹配，在图像分析之前就能找出可能的重复文件。`One-Punch-Man-v01.cbz` 和 `One_Punch_Man_Vol_1.cbz` 之类的文件会被标记为潜在匹配项。
 
 这种双层方法——模糊文件名匹配加感知哈希确认——能发现对人来说显而易见但依赖精确字符串或字节比较的工具所看不见的重复文件。
 
 ## 常见问题
 
 **如何在 Mac 上查找重复的 CBZ 文件？**
-使用 Archive Duplicate Scanner。添加漫画文件夹，点击"扫描"，应用程序会使用感知哈希识别重复的 CBZ 和 CBR 文件。即使文件重命名或重新压缩后也能检测到匹配项，然后让你安全地将重复文件移至废纸篓。
+使用 Comic Duplicate Scanner。添加漫画文件夹，点击"扫描"，应用程序会使用感知哈希识别重复的 CBZ 和 CBR 文件。即使文件重命名或重新压缩后也能检测到匹配项，然后让你安全地将重复文件移至废纸篓。
 
-**如果文件名不同，Archive Duplicate Scanner 还能找到重复文件吗？**
-可以。Archive Duplicate Scanner 对 CBZ 压缩包内的图像使用感知哈希。如果两个压缩包包含相同的扫描页面，无论文件名、文件大小还是元数据如何，都会被标记为重复文件。
+**如果文件名不同，Comic Duplicate Scanner 还能找到重复文件吗？**
+可以。Comic Duplicate Scanner 对 CBZ 压缩包内的图像使用感知哈希。如果两个压缩包包含相同的扫描页面，无论文件名、文件大小还是元数据如何，都会被标记为重复文件。
 
-**Archive Duplicate Scanner 会永久删除文件吗？**
-不会。Archive Duplicate Scanner 只会将文件移至废纸篓。你可以在清空废纸篓前查看并恢复文件——在任何规模的库上使用都很安全。
+**Comic Duplicate Scanner 会永久删除文件吗？**
+不会。Comic Duplicate Scanner 只会将文件移至废纸篓。你可以在清空废纸篓前查看并恢复文件——在任何规模的库上使用都很安全。
 
-**Archive Duplicate Scanner 支持哪些漫画格式？**
-Archive Duplicate Scanner 支持 CBZ 和 CBR 漫画压缩格式。它还可以扫描照片文件（JPEG、PNG、HEIC、WebP、RAW）和标准 ZIP/RAR 压缩包。
+**Comic Duplicate Scanner 支持哪些漫画格式？**
+Comic Duplicate Scanner 支持 CBZ 和 CBR 漫画压缩格式。它还可以扫描照片文件（JPEG、PNG、HEIC、WebP、RAW）和标准 ZIP/RAR 压缩包。
 
 **扫描大型漫画库需要多长时间？**
 扫描速度取决于库的大小和你的 Mac 性能。一个包含 1000 个 CBZ 文件的库通常只需几分钟即可完成扫描。在大型收藏中，搭载 Apple 芯片的 Mac 扫描速度明显快于 Intel Mac。
 
-**Archive Duplicate Scanner 支持跨多个硬盘工作吗？**
-支持。将任何已挂载的硬盘或文件夹添加为扫描位置。Archive Duplicate Scanner 可同时比较多个硬盘上的文件——非常适合在主库和备份硬盘之间查找重复文件。
+**Comic Duplicate Scanner 支持跨多个硬盘工作吗？**
+支持。将任何已挂载的硬盘或文件夹添加为扫描位置。Comic Duplicate Scanner 可同时比较多个硬盘上的文件——非常适合在主库和备份硬盘之间查找重复文件。
 
 ## 一个下午整理好整洁的漫画库
 
-重复漫画浪费存储空间，使库视图杂乱，长期以来也让整理工作更加困难。Archive Duplicate Scanner 负责处理最难的部分——无论文件名如何，都能检测出视觉上完全相同的压缩包——并为你提供一条只通过废纸篓进行清理的安全路径。在 Mac App Store 上找到 **Archive Duplicate Scanner**，立即进行第一次扫描。漫画库整理干净后，使用 [BiblioFuse](/zh/) 在 iPhone 和 Mac 上阅读和管理你的漫画收藏。
+重复漫画浪费存储空间，使库视图杂乱，长期以来也让整理工作更加困难。Comic Duplicate Scanner 负责处理最难的部分——无论文件名如何，都能检测出视觉上完全相同的压缩包——并为你提供一条只通过废纸篓进行清理的安全路径。在 Mac App Store 上找到 **Comic Duplicate Scanner**，立即进行第一次扫描。漫画库整理干净后，使用 [BiblioFuse](/zh/) 在 iPhone 和 Mac 上阅读和管理你的漫画收藏。
 
-[Archive Duplicate Scanner](/zh/archive/) — 在 Mac App Store 和 Microsoft Store 下载.
+[Comic Duplicate Scanner](/zh/archive/) — 在 Mac App Store 和 Microsoft Store 下载.

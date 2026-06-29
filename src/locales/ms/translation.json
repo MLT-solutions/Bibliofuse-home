@@ -661,7 +661,7 @@
       "badge": "Aplikasi saudara · Mac & Windows",
       "titleA": "Cari arkib pendua.",
       "titleB": "Walaupun selepas dinamakan semula.",
-      "desc": "Archive Duplicate Scanner mengesan dan membuang arkib komik, foto, dan fail pendua, walaupun selepas dinamakan semula, dimampatkan semula, atau disimpan dalam folder berbeza.",
+      "desc": "Comic Duplicate Scanner mengesan dan membuang arkib komik, foto, dan fail pendua, walaupun selepas dinamakan semula, dimampatkan semula, atau disimpan dalam folder berbeza.",
       "features": {
         "scanning": {
           "title": "Imbasan arkib komik",
@@ -680,8 +680,8 @@
           "body": "Fail yang ditanda hanya dipindahkan ke Tong Sampah sistem."
         }
       },
-      "altBadge": "Muat turun Archive Duplicate Scanner di Mac App Store",
-      "altImage": "Archive Duplicate Scanner konfigurasi dan mula imbasan",
+      "altBadge": "Muat turun Comic Duplicate Scanner di Mac App Store",
+      "altImage": "Comic Duplicate Scanner konfigurasi dan mula imbasan",
       "pricing": "Penggunaan percuma tersedia selama-lamanya untuk imbasan sehingga 1,000 fail. Percubaan 7 hari membuka akses penuh, dan pembelian sekali gus membuka penggunaan tanpa had tanpa langganan.",
       "stats": {
         "threshold": "Ambang lalai",
@@ -826,14 +826,14 @@
     "blog": {
       "posts": {
         "reading-ebooks-offline-iphone": {
-          "title": "Membaca Ebook Sepenuhnya Luar Talian di iPhone: Tanpa Awan",
-          "excerpt": "BiblioFuse menyimpan seluruh perpustakaan secara setempat di peranti — tanpa akaun, tanpa penstriman, tanpa skrin pemuatan. Baca EPUB, CBZ, atau PDF di mana sahaja.",
-          "seoDescription": "Baca ebook dan komik sepenuhnya luar talian di iPhone dengan BiblioFuse. Fail disimpan setempat — tanpa akaun awan diperlukan."
+          "title": "Membaca Ebook Sepenuhnya Offline di iPhone: Tanpa Awan",
+          "excerpt": "BiblioFuse menyimpan fail EPUB, CBZ, CBR, PDF, ZIP, RAR dan TXT secara tempatan di iPhone anda — baca keseluruhan perpustakaan anda dalam kapal terbang, bawah tanah atau di mana sahaja tanpa isyarat. Tiada langganan awan atau akaun diperlukan. iOS 17 ke atas.",
+          "seoDescription": "BiblioFuse membaca EPUB, CBZ, CBR, PDF, ZIP, RAR dan TXT secara tempatan di iPhone. Tanpa awan, tanpa akaun, tanpa isyarat. Panduan bacaan offline lengkap untuk iOS 17+."
         },
         "convert-cbr-to-cbz-online": {
-          "title": "Cara Menukar CBR kepada CBZ dalam Talian: Percuma, Tanpa Perisian",
-          "excerpt": "Fail CBR adalah arkib RAR; CBZ adalah arkib ZIP — anda tidak boleh hanya menukar sambungan. Penukar BiblioFuse mengarkibkan semula komik anda dalam saat tanpa muat naik.",
-          "seoDescription": "Tukar CBR kepada CBZ dalam talian percuma tanpa memuat naik fail. BiblioFuse menggunakan WebAssembly untuk menukar dalam pelayar."
+          "title": "Cara Menukar CBR kepada CBZ Dalam Talian: Percuma, Tanpa Perisian",
+          "excerpt": "Alat web BiblioFuse menukar arkib komik CBR (berasaskan RAR) kepada format CBZ (berasaskan ZIP) terus dalam pelayar anda — tanpa memuat naik fail, tanpa pemasangan, sepenuhnya peribadi. Seret fail anda dan muat turun CBZ yang telah ditukar dalam beberapa saat.",
+          "seoDescription": "Tukar CBR kepada CBZ dalam talian dalam pelayar menggunakan BiblioFuse Web Tool. Tanpa muat naik fail, tanpa perisian. Berasaskan WebAssembly, percuma untuk fail tunggal."
         },
         "organize-ebooks-by-content-not-metadata": {
           "title": "Susun Ebook mengikut Kandungan, Bukan Metadata atau ISBN",
@@ -842,8 +842,8 @@
         },
         "find-duplicate-comics-different-names": {
           "title": "Cara Mencari Komik Pendua dengan Nama Fail Berbeza",
-          "excerpt": "Pencari pendua standard terlepas komik dengan nama berbeza — seperti comic_E1-5 dan ComiX_E1-10. Archive Duplicate Scanner membandingkan imej halaman sebenar menggunakan pencincangan perseptual untuk menangkap pendua yang terlepas.",
-          "seoDescription": "Cari fail CBZ dan CBR komik pendua walaupun mempunyai nama fail berbeza. Archive Duplicate Scanner menggunakan pencincangan perseptual untuk membandingkan imej halaman."
+          "excerpt": "Pencari pendua standard terlepas komik dengan nama berbeza — seperti comic_E1-5 dan ComiX_E1-10. Comic Duplicate Scanner membandingkan imej halaman sebenar menggunakan pencincangan perseptual untuk menangkap pendua yang terlepas.",
+          "seoDescription": "Cari fail CBZ dan CBR komik pendua walaupun mempunyai nama fail berbeza. Comic Duplicate Scanner menggunakan pencincangan perseptual untuk membandingkan imej halaman."
         },
         "open-bank-statement-pdf-iphone": {
           "title": "Cara Membuka PDF Penyata Bank Berkata Laluan di iPhone",
@@ -856,24 +856,14 @@
           "seoDescription": "ContentCue menambah bahasa Perancis, Belanda, Rusia, Jepun, Korea, dan Melayu. Serlahkan iklan semasa membaca artikel web — sempadan berwarna menandakan kandungan berbayar."
         },
         "archive-duplicate-scanner-11-languages": {
-          "title": "Archive Duplicate Scanner Kini Tersedia dalam 11 Bahasa",
-          "excerpt": "Archive Duplicate Scanner kini menyokong 11 bahasa. Cari komik pendua walaupun mempunyai nama berbeza seperti comic_E1-5 dan ComiX_E1-10 — perbandingan halaman visual menangkap apa yang terlepas oleh alat nama fail.",
-          "seoDescription": "Archive Duplicate Scanner menambah bahasa Perancis, Belanda, Rusia, Jepun, Korea, dan Melayu. Cari fail CBZ pendua dengan membandingkan imej halaman, bukan sekadar nama fail."
+          "title": "Comic Duplicate Scanner Kini Tersedia dalam 11 Bahasa",
+          "excerpt": "Comic Duplicate Scanner kini menyokong 11 bahasa. Cari komik pendua walaupun mempunyai nama berbeza seperti comic_E1-5 dan ComiX_E1-10 — perbandingan halaman visual menangkap apa yang terlepas oleh alat nama fail.",
+          "seoDescription": "Comic Duplicate Scanner menambah bahasa Perancis, Belanda, Rusia, Jepun, Korea, dan Melayu. Cari fail CBZ pendua dengan membandingkan imej halaman, bukan sekadar nama fail."
         },
         "smartdecrypt-11-languages": {
           "title": "SmartDecrypt Kini Tersedia dalam 11 Bahasa",
           "excerpt": "SmartDecrypt PDF ZIP CBZ kini menyokong 11 bahasa — Inggeris, Sepanyol, Perancis, Belanda, Portugis, Rusia, Cina, Jepun, Korea, Indonesia, dan Melayu. Buka kunci penyata bank dan PDF insurans dengan corak kata laluan yang sukar diingat dalam bahasa anda sendiri.",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ menambah 6 bahasa baharu: Perancis, Belanda, Rusia, Jepun, Korea, dan Melayu. Buka kunci PDF bank dengan kata laluan berasaskan corak pada iPhone, Mac, dan Windows."
-        },
-        "reading-ebooks-offline-iphone": {
-          "title": "Membaca Ebook Sepenuhnya Offline di iPhone: Tanpa Awan",
-          "excerpt": "BiblioFuse menyimpan fail EPUB, CBZ, CBR, PDF, ZIP, RAR dan TXT secara tempatan di iPhone anda — baca keseluruhan perpustakaan anda dalam kapal terbang, bawah tanah atau di mana sahaja tanpa isyarat. Tiada langganan awan atau akaun diperlukan. iOS 17 ke atas.",
-          "seoDescription": "BiblioFuse membaca EPUB, CBZ, CBR, PDF, ZIP, RAR dan TXT secara tempatan di iPhone. Tanpa awan, tanpa akaun, tanpa isyarat. Panduan bacaan offline lengkap untuk iOS 17+."
-        },
-        "convert-cbr-to-cbz-online": {
-          "title": "Cara Menukar CBR kepada CBZ Dalam Talian: Percuma, Tanpa Perisian",
-          "excerpt": "Alat web BiblioFuse menukar arkib komik CBR (berasaskan RAR) kepada format CBZ (berasaskan ZIP) terus dalam pelayar anda — tanpa memuat naik fail, tanpa pemasangan, sepenuhnya peribadi. Seret fail anda dan muat turun CBZ yang telah ditukar dalam beberapa saat.",
-          "seoDescription": "Tukar CBR kepada CBZ dalam talian dalam pelayar menggunakan BiblioFuse Web Tool. Tanpa muat naik fail, tanpa perisian. Berasaskan WebAssembly, percuma untuk fail tunggal."
         },
         "airdrop-books-to-iphone": {
           "title": "Cara Menggunakan AirDrop untuk Memindahkan Komik dan Ebook ke iPhone",
@@ -957,33 +947,33 @@
         },
         "build-perfect-digital-manga-collection": {
           "title": "Bina Koleksi Manga Digital Sempurna",
-          "excerpt": "BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR dan TXT pada iPhone dan iPad dengan iOS 17+. Gabungkan Archive Duplicate Scanner untuk membuang jilid pendua, BiblioFuse Web Tool untuk memampatkan fail dalam penyemak imbas, dan tab Alat di peranti untuk membina koleksi manga yang dioptimumkan dan disegerakkan di mana-mana.",
-          "seoDescription": "BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR dan TXT pada iPhone dan iPad dengan iOS 17+. Gabungkan Archive Duplicate Scanner untuk membuang jilid."
+          "excerpt": "BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR dan TXT pada iPhone dan iPad dengan iOS 17+. Gabungkan Comic Duplicate Scanner untuk membuang jilid pendua, BiblioFuse Web Tool untuk memampatkan fail dalam penyemak imbas, dan tab Alat di peranti untuk membina koleksi manga yang dioptimumkan dan disegerakkan di mana-mana.",
+          "seoDescription": "BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR dan TXT pada iPhone dan iPad dengan iOS 17+. Gabungkan Comic Duplicate Scanner untuk membuang jilid."
         },
         "best-duplicate-file-finder-mac": {
           "title": "Alat Pencari Fail Pendua Terbaik Mac (2026)",
-          "excerpt": "Archive Duplicate Scanner ialah alat pencari duplikat terbaik untuk Mac 2026 bagi perpustakaan campuran komik (CBZ, CBR), foto (HEIC, JPEG, RAW) dan arkib. Pengehasan perseptual mengesan fail yang secara visual sama walaupun selepas penamaan semula, dan pemadaman hanya ke Tong Sampah menjaga keselamatan koleksi anda.",
-          "seoDescription": "Archive Duplicate Scanner ialah alat pencari duplikat terbaik untuk Mac 2026 bagi perpustakaan campuran komik (CBZ, CBR), foto (HEIC, JPEG, RAW) dan arkib."
+          "excerpt": "Comic Duplicate Scanner ialah alat pencari duplikat terbaik untuk Mac 2026 bagi perpustakaan campuran komik (CBZ, CBR), foto (HEIC, JPEG, RAW) dan arkib. Pengehasan perseptual mengesan fail yang secara visual sama walaupun selepas penamaan semula, dan pemadaman hanya ke Tong Sampah menjaga keselamatan koleksi anda.",
+          "seoDescription": "Comic Duplicate Scanner ialah alat pencari duplikat terbaik untuk Mac 2026 bagi perpustakaan campuran komik (CBZ, CBR), foto (HEIC, JPEG, RAW) dan arkib."
         },
         "find-duplicate-photos-mac": {
           "title": "Mencari Foto Pendua di Mac — Termasuk HEIC, WebP dan RAW",
-          "excerpt": "Archive Duplicate Scanner mencari foto pendua di Mac menggunakan pengehasan perseptual, mengenal pasti imej yang secara visual sama dalam format HEIC, JPEG, WebP, PNG, TIFF dan RAW walaupun nama fail atau pemampatan berbeza. Fail pendua dipindahkan ke Tong Sampah dengan strategi pemilihan automatik.",
-          "seoDescription": "Archive Duplicate Scanner mencari foto pendua di Mac menggunakan pengehasan perseptual, mengenal pasti imej yang secara visual sama dalam format HEIC."
+          "excerpt": "Comic Duplicate Scanner mencari foto pendua di Mac menggunakan pengehasan perseptual, mengenal pasti imej yang secara visual sama dalam format HEIC, JPEG, WebP, PNG, TIFF dan RAW walaupun nama fail atau pemampatan berbeza. Fail pendua dipindahkan ke Tong Sampah dengan strategi pemilihan automatik.",
+          "seoDescription": "Comic Duplicate Scanner mencari foto pendua di Mac menggunakan pengehasan perseptual, mengenal pasti imej yang secara visual sama dalam format HEIC."
         },
         "perceptual-hashing-duplicate-detection": {
           "title": "Bagaimana Pencincangan Persepsi Menemui Komik Pendua Walaupun Selepas Penamaan Semula",
-          "excerpt": "Archive Duplicate Scanner menggunakan pencincangan persepsi untuk mencari arkib CBZ dan CBR pendua dengan membandingkan kandungan visual halaman — bukan checksum fail — mengesan pendua yang dinamakan semula, dimampatkan semula atau dimuat turun dari sumber berbeza.",
-          "seoDescription": "Archive Duplicate Scanner menggunakan pencincangan persepsi untuk mencari arkib CBZ dan CBR pendua dengan membandingkan kandungan visual halaman — bukan."
+          "excerpt": "Comic Duplicate Scanner menggunakan pencincangan persepsi untuk mencari arkib CBZ dan CBR pendua dengan membandingkan kandungan visual halaman — bukan checksum fail — mengesan pendua yang dinamakan semula, dimampatkan semula atau dimuat turun dari sumber berbeza.",
+          "seoDescription": "Comic Duplicate Scanner menggunakan pencincangan persepsi untuk mencari arkib CBZ dan CBR pendua dengan membandingkan kandungan visual halaman — bukan."
         },
         "clean-up-duplicate-manga-library": {
           "title": "Cara Membersihkan Koleksi Manga Pendua dengan Bijak",
-          "excerpt": "Archive Duplicate Scanner mencari jilid manga pendua di Mac menggunakan pencincangan persepsi, memadankan fail CBZ dan CBR walaupun selepas penamaan semula atau pemampatan semula. Semak pasangan yang sepadan dan alihkan pendua ke Tong Sampah dengan selamat.",
-          "seoDescription": "Archive Duplicate Scanner mencari jilid manga pendua di Mac menggunakan pencincangan persepsi, memadankan fail CBZ dan CBR walaupun selepas penamaan."
+          "excerpt": "Comic Duplicate Scanner mencari jilid manga pendua di Mac menggunakan pencincangan persepsi, memadankan fail CBZ dan CBR walaupun selepas penamaan semula atau pemampatan semula. Semak pasangan yang sepadan dan alihkan pendua ke Tong Sampah dengan selamat.",
+          "seoDescription": "Comic Duplicate Scanner mencari jilid manga pendua di Mac menggunakan pencincangan persepsi, memadankan fail CBZ dan CBR walaupun selepas penamaan."
         },
         "find-duplicate-comics-cbz-mac": {
           "title": "Cara Mencari dan Mengalih Keluar Fail CBZ Komik Pendua di Mac",
-          "excerpt": "Archive Duplicate Scanner mencari fail komik CBZ dan CBR pendua di Mac menggunakan pencincangan perseptual — memadankan fail walaupun selepas menamakan semula, memampatkan semula, atau membungkus semula. Imbas perpustakaan anda dan alih keluar pendua ke Sampah dengan selamat.",
-          "seoDescription": "Archive Duplicate Scanner mencari fail komik CBZ dan CBR pendua di Mac menggunakan pencincangan perseptual — memadankan fail walaupun selepas menamakan."
+          "excerpt": "Comic Duplicate Scanner mencari fail komik CBZ dan CBR pendua di Mac menggunakan pencincangan perseptual — memadankan fail walaupun selepas menamakan semula, memampatkan semula, atau membungkus semula. Imbas perpustakaan anda dan alih keluar pendua ke Sampah dengan selamat.",
+          "seoDescription": "Comic Duplicate Scanner mencari fail komik CBZ dan CBR pendua di Mac menggunakan pencincangan perseptual — memadankan fail walaupun selepas menamakan."
         },
         "pdf-zip-password-manager-profiles": {
           "title": "Simpan Kata Laluan untuk Koleksi CBZ dan PDF — Tidak Perlu Taip Semula",
@@ -1016,9 +1006,9 @@
           "seoDescription": "BiblioFuse Web Tool memampatkan dan mengoptimumkan fail EPUB terus dalam pelayar anda — tanpa perisian, tanpa akaun, dan tanpa perlu memuat naik fail."
         },
         "archive-duplicate-scanner-language-update": {
-          "title": "Archive Duplicate Scanner: 4 Bahasa Baharu",
-          "excerpt": "Archive Duplicate Scanner menambah sokongan UI penuh untuk Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah. Cari arkib komik dan foto duplikat dengan penghashing perseptual — percuma untuk Mac dan Windows.",
-          "seoDescription": "Archive Duplicate Scanner menambah sokongan UI penuh untuk Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah. Cari arkib komik dan foto duplikat dengan."
+          "title": "Comic Duplicate Scanner: 4 Bahasa Baharu",
+          "excerpt": "Comic Duplicate Scanner menambah sokongan UI penuh untuk Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah. Cari arkib komik dan foto duplikat dengan penghashing perseptual — percuma untuk Mac dan Windows.",
+          "seoDescription": "Comic Duplicate Scanner menambah sokongan UI penuh untuk Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah. Cari arkib komik dan foto duplikat dengan."
         },
         "merge-cbz-files-online": {
           "title": "Cara Menggabungkan Beberapa Fail CBZ Menjadi Satu — Alat Dalam Talian Percuma",
@@ -1325,13 +1315,13 @@
     },
     "archivePage": {
       "seo": {
-        "title": "Archive Duplicate Scanner — Cari Komik dan Foto Pendua di Mac dan Windows",
-        "desc": "Archive Duplicate Scanner mencari fail CBZ, CBR, ZIP, RAR dan foto pendua menggunakan perceptual hashing — walaupun selepas menamakan semula atau pemampatan semula. Percuma sehingga 1,000 fail, Pro pada $19.99 sekali bayar."
+        "title": "Comic Duplicate Scanner — Cari Komik dan Foto Pendua di Mac dan Windows",
+        "desc": "Comic Duplicate Scanner mencari fail pendua CBZ, CBR, ZIP, RAR dan foto menggunakan perceptual hashing — walaupun selepas penamaan semula, pemampatan semula, atau dengan resolusi dan mod warna berbeza. Percuma sehingga 1,000 fail, Pro pembelian sekali $19.99."
       },
       "hero": {
         "badge": "Mac dan Windows",
         "title": "Cari fail pendua. Walaupun selepas menamakan semula.",
-        "desc": "Archive Duplicate Scanner membuka arkib komik anda dan membandingkan imej sebenar di dalamnya — bukan sahaja nama fail atau saiz. Walaupun satu fail dipanggil comic_E1-5 dan yang lain ComiX_E1-10, jika beberapa halaman pertama sepadan, keduanya ditandai sebagai pendua.",
+        "desc": "Comic Duplicate Scanner membuka arkib komik anda dan membandingkan imej sebenar di dalamnya — bukan sahaja nama fail atau saiz. Walaupun satu fail dipanggil comic_E1-5 dan yang lain ComiX_E1-10, jika beberapa halaman pertama sepadan, keduanya ditandai sebagai pendua.",
         "trust1": "Tiada muat naik ke awan",
         "trust2": "Pemadaman selamat ke Tong Sampah",
         "trust3": "Percubaan percuma 7 hari",
@@ -1341,11 +1331,12 @@
       "scanning": {
         "eyebrow": "Pengimbasan Arkib Mendalam",
         "title": "Membuka arkib dan membandingkan halaman di dalamnya",
-        "desc": "Kebanyakan pencari pendua hanya membandingkan nama atau saiz fail. Archive Duplicate Scanner membuka setiap fail CBZ, CBR, ZIP, atau RAR, mengekstrak lakaran kecil daripada halaman sebenar, dan membandingkannya. Fail bernama comic_E1-5 dan ComiX_E1-10 — nama berbeza, julat episod berbeza — masih dikesan jika halaman pembuka mereka sepadan.",
+        "desc": "Kebanyakan pencari pendua hanya membandingkan nama atau saiz fail. Comic Duplicate Scanner membuka setiap fail CBZ, CBR, ZIP, atau RAR, mengekstrak lakaran kecil daripada halaman sebenar, dan membandingkannya. Fail bernama comic_E1-5 dan ComiX_E1-10 — nama berbeza, julat episod berbeza — masih dikesan jika halaman pembuka mereka sepadan.",
         "bullet1": "Membuka arkib dan membandingkan imej halaman — bukan sekadar nama fail",
         "bullet2": "Ambang kemiripan yang boleh dikonfigurasi — disyorkan 90%",
         "bullet3": "Cache hash menjadikan pengimbasan semula hampir segera",
-        "badge": "Berfungsi dengan manga, manhwa dan manhua"
+        "badge": "Berfungsi dengan manga, manhwa dan manhua",
+        "bullet4": "Mengesan duplikat merentas resolusi dan mod warna yang berbeza — imbasan skala kelabu 1200px dan imbasan berwarna 3000px pada halaman yang sama tetap ditandakan"
       },
       "photos": {
         "eyebrow": "Foto dan Pemadanan Nama Fail",
@@ -1397,11 +1388,11 @@
       "faq": [
         {
           "q": "Apakah perceptual hashing dan mengapa ia penting?",
-          "a": "Perceptual hashing membandingkan struktur visual imej berbanding bait fail mentah. Dua fail boleh mempunyai nama, saiz dan metadata yang berbeza — tetapi jika kandungannya kelihatan sama, perceptual hashing akan memadankannya. Pencari pendua standard gagal sebaik fail dinamakan semula atau dieksport semula; Archive Duplicate Scanner tidak."
+          "a": "Perceptual hashing membandingkan struktur visual imej berbanding bait fail mentah. Dua fail boleh mempunyai nama, saiz dan metadata yang berbeza — tetapi jika kandungannya kelihatan sama, perceptual hashing akan memadankannya. Pencari pendua standard gagal sebaik fail dinamakan semula atau dieksport semula; Comic Duplicate Scanner tidak."
         },
         {
           "q": "Bolehkah ia mencari pendua yang telah dinamakan semula?",
-          "a": "Ya. Menamakan semula fail tidak mengubah kandungannya. Archive Duplicate Scanner membandingkan imej di dalam setiap arkib, jadi pendua dikesan tanpa mengira nama fail."
+          "a": "Ya. Menamakan semula fail tidak mengubah kandungannya. Comic Duplicate Scanner membandingkan imej di dalam setiap arkib, jadi pendua dikesan tanpa mengira nama fail."
         },
         {
           "q": "Adakah pemadaman kekal?",
@@ -1418,6 +1409,14 @@
         {
           "q": "Adakah terdapat percubaan sebelum membeli?",
           "a": "Anda boleh mengimbas sehingga 1,000 fail secara percuma selamanya. Percubaan percuma 7 hari di Mac App Store membuka akses tanpa had, dan pembelian Pro sekali gus adalah $19.99 tanpa langganan."
+        },
+        {
+          "q": "Bolehkah ia memadankan imbasan berwarna dengan versi hitam-putih kandungan yang sama?",
+          "a": "Ya. Algoritma dHash beroperasi berdasarkan kecerunan luminans, bukan nilai warna. Imbasan berwarna penuh dan versi skala kelabu halaman yang sama menghasilkan hash yang hampir sama dan akan ditandakan sebagai duplikat."
+        },
+        {
+          "q": "Adakah resolusi imej mempengaruhi pengesanan duplikat?",
+          "a": "Tidak. dHash mengubah saiz setiap imej kepada grid tetap yang kecil sebelum membandingkan, jadi imbasan 1200px dan 3000px halaman yang sama menghasilkan nilai hash yang sama. Perbezaan resolusi antara sumber diabaikan sepenuhnya."
         }
       ],
       "backDesc": "Mencari pembaca komik dan ebook?",

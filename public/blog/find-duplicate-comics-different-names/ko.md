@@ -2,7 +2,7 @@
 
 만화 라이브러리를 정리하면서 표준 중복 파일 찾기를 실행합니다. "중복 없음"이라고 나옵니다. 하지만 뭔가 이상한 걸 알고 있습니다 — 1-5화 파일과 1-10화 파일이 있는데, 앞의 5화는 명백히 겹칩니다.
 
-[Archive Duplicate Scanner](/ko/archive/)가 해결하도록 만들어진 바로 이 문제입니다: 파일명이나 크기가 아닌 실제 페이지 내용을 비교해 중복 만화 압축 파일을 찾아냅니다.
+[Comic Duplicate Scanner](/ko/archive/)가 해결하도록 만들어진 바로 이 문제입니다: 파일명이나 크기가 아닌 실제 페이지 내용을 비교해 중복 만화 압축 파일을 찾아냅니다.
 
 ## 표준 중복 찾기가 만화에 통하지 않는 이유
 
@@ -11,9 +11,9 @@
 - **재인코딩 파일**: 두 출처에서 같은 만화지만 JPEG 품질이 달라 해시가 완전히 다름
 - **형식이 다른 경우**: CBZ와 CBR로 동일한 내용
 
-## Archive Duplicate Scanner의 감지 방식
+## Comic Duplicate Scanner의 감지 방식
 
-[Archive Duplicate Scanner](/ko/archive/)는 각 압축 파일 안의 실제 페이지 이미지에 지각 해싱을 사용합니다.
+[Comic Duplicate Scanner](/ko/archive/)는 각 압축 파일 안의 실제 페이지 이미지에 지각 해싱을 사용합니다.
 
 1. 두 압축 파일(CBZ, CBR, ZIP, RAR)을 열기
 2. 각각 첫 페이지 추출
@@ -24,6 +24,6 @@
 
 엄격한 임계값은 더 가까운 시각 일치를 요구하고, 느슨한 임계값은 더 많은 경계선 케이스를 잡아냅니다. 기본값은 오탐 없이 실제 중복을 잡도록 설정되어 있습니다.
 
-Archive Duplicate Scanner는 스캔과 미리보기가 무료. Pro는 일괄 작업을 활성화합니다. 구독 없음.
+Comic Duplicate Scanner는 스캔과 미리보기가 무료. Pro는 일괄 작업을 활성화합니다. 구독 없음.
 
-App Store 또는 Microsoft Store에서 [Archive Duplicate Scanner](/ko/archive/)를 다운로드하세요.
+App Store 또는 Microsoft Store에서 [Comic Duplicate Scanner](/ko/archive/)를 다운로드하세요.

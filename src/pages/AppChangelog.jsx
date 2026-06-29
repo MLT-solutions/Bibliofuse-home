@@ -28,7 +28,7 @@ const ROADMAP_STATUS = {
 
 const APP_CONFIGS = {
   archive: {
-    appName: 'Archive Duplicate Scanner',
+    appName: 'Comic Duplicate Scanner',
     logo: '/image/archive-logo.png',
     accent: 'text-orange-600',
     ENTRIES: ARCHIVE_ENTRIES,

@@ -217,7 +217,7 @@ function ProductFamily({ lang }) {
     {
       tag: t('redesign.productFamily.products.archive.tag'),
       logoSrc: '/image/archive-logo.png',
-      name: 'Archive Duplicate Scanner',
+      name: 'Comic Duplicate Scanner',
       desc: t('redesign.productFamily.products.archive.desc'),
       bullets: [t('redesign.productFamily.products.archive.bullet1'), t('redesign.productFamily.products.archive.bullet2'), t('redesign.productFamily.products.archive.bullet3')],
       cta: t('redesign.productFamily.products.archive.cta'),
@@ -921,7 +921,7 @@ function ArchiveScannerSection() {
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
           <div>
             <div className="mb-5">
-              <img src="/image/archive-logo.png" alt="Archive Duplicate Scanner" className="h-16 w-16 rounded-2xl object-cover shadow-sm" />
+              <img src="/image/archive-logo.png" alt="Comic Duplicate Scanner" className="h-16 w-16 rounded-2xl object-cover shadow-sm" />
             </div>
             <div className="inline-flex items-center gap-2 rounded-full bg-warm/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-warm-deep">
               <span className="h-1.5 w-1.5 rounded-full bg-warm" />
@@ -965,7 +965,7 @@ function ArchiveScannerSection() {
             </p>
 
             <Link to={`/${lang}/archive`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-600 hover:text-orange-700 transition-colors">
-              {t('redesign.archiveSection.learnMore', 'Learn more about Archive Duplicate Scanner')} →
+              {t('redesign.archiveSection.learnMore', 'Learn more about Comic Duplicate Scanner')} →
             </Link>
           </div>
 

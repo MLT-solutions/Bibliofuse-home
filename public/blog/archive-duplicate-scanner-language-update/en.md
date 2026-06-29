@@ -1,16 +1,16 @@
-# Archive Duplicate Scanner Now Available in Portuguese, Spanish, Indonesian, and Chinese
+# Comic Duplicate Scanner Now Available in Portuguese, Spanish, Indonesian, and Chinese
 
-Archive Duplicate Scanner now supports Portuguese, Spanish, Bahasa Indonesia, and Simplified Chinese — bringing the full app interface to four new languages. The app finds duplicate comic archives (CBZ, CBR, ZIP, RAR) and photos using perceptual hashing, available free for Mac and Windows. [Download it now](/en/archive/) for Mac or Windows and try it in your language.
+Comic Duplicate Scanner now supports Portuguese, Spanish, Bahasa Indonesia, and Simplified Chinese — bringing the full app interface to four new languages. The app finds duplicate comic archives (CBZ, CBR, ZIP, RAR) and photos using perceptual hashing, available free for Mac and Windows. [Download it now](/en/archive/) for Mac or Windows and try it in your language.
 
 ## Why International Collectors Needed This
 
-Managing a large comic or manga collection is hard enough without fighting a language barrier. Until now, collectors in Brazil, Latin America, Indonesia, and China had to navigate Archive Duplicate Scanner in English even if they discovered the app through a community in their own language. Menus were in English. Scan result labels were in English. Export reports were in English. For readers building libraries of 10,000+ Portuguese manhwa files or Indonesian manga scans, that friction added up.
+Managing a large comic or manga collection is hard enough without fighting a language barrier. Until now, collectors in Brazil, Latin America, Indonesia, and China had to navigate Comic Duplicate Scanner in English even if they discovered the app through a community in their own language. Menus were in English. Scan result labels were in English. Export reports were in English. For readers building libraries of 10,000+ Portuguese manhwa files or Indonesian manga scans, that friction added up.
 
 This update removes that barrier entirely.
 
 ## What's New — 4 New Language Packs
 
-The latest version of Archive Duplicate Scanner adds full UI localization for:
+The latest version of Comic Duplicate Scanner adds full UI localization for:
 
 - **Portuguese** (Português)
 - **Spanish** (Español)
@@ -19,13 +19,13 @@ The latest version of Archive Duplicate Scanner adds full UI localization for:
 
 "Full UI support" means every visible string in the app is now translated — menus, toolbar buttons, column headers in the results table, similarity score labels, confirmation dialogs, preference panes, and the HTML export report with thumbnails. Nothing is left in English when you switch your system language to one of these four.
 
-The app automatically follows your operating system language setting. On macOS, go to **System Settings → General → Language & Region** and move your preferred language to the top of the list. On Windows, change the display language in **Settings → Time & Language → Language & Region**. Restart Archive Duplicate Scanner and the UI switches immediately — no reinstall, no separate language pack to download.
+The app automatically follows your operating system language setting. On macOS, go to **System Settings → General → Language & Region** and move your preferred language to the top of the list. On Windows, change the display language in **Settings → Time & Language → Language & Region**. Restart Comic Duplicate Scanner and the UI switches immediately — no reinstall, no separate language pack to download.
 
-## What Archive Duplicate Scanner Does
+## What Comic Duplicate Scanner Does
 
-If you haven't used it yet, here's what Archive Duplicate Scanner does — and why collectors keep it around.
+If you haven't used it yet, here's what Comic Duplicate Scanner does — and why collectors keep it around.
 
-[Archive Duplicate Scanner](/en/archive/) uses **perceptual hashing** to detect duplicates. It opens each archive (CBZ, CBR, ZIP, RAR) and computes a perceptual hash of the actual page images inside. Two files can have completely different names, different file sizes, and even different compression — if the pages look the same, they match. Renaming `Spider-Man_001.cbz` to `spiderman-001-hd.cbz` doesn't hide the duplicate.
+[Comic Duplicate Scanner](/en/archive/) uses **perceptual hashing** to detect duplicates. It opens each archive (CBZ, CBR, ZIP, RAR) and computes a perceptual hash of the actual page images inside. Two files can have completely different names, different file sizes, and even different compression — if the pages look the same, they match. Renaming `Spider-Man_001.cbz` to `spiderman-001-hd.cbz` doesn't hide the duplicate.
 
 Beyond archives, it also deduplicates photos: JPEG, PNG, HEIC, WEBP, BMP, and GIF. The same perceptual hash approach catches duplicates that have been cropped, resized, or saved at different quality levels.
 
@@ -43,7 +43,7 @@ Other key capabilities:
 
 ### Portuguese-Speaking Collectors
 
-Brazil has one of the largest comic-collecting communities in the world. Portuguese readers managing archives of Brazilian editions, translated manga, and manhwa collections can now use Archive Duplicate Scanner entirely in their native language — including the export reports they share with other collectors.
+Brazil has one of the largest comic-collecting communities in the world. Portuguese readers managing archives of Brazilian editions, translated manga, and manhwa collections can now use Comic Duplicate Scanner entirely in their native language — including the export reports they share with other collectors.
 
 ### Spanish-Speaking Collectors
 
@@ -51,7 +51,7 @@ Spanish-language comic culture spans Spain, Mexico, Argentina, Colombia, and bey
 
 ### Indonesian Manhwa and Manga Fans
 
-Indonesia is one of the biggest manhwa and manga markets in Asia. Many Indonesian collectors manage archives in Bahasa Indonesia filenames — and while Archive Duplicate Scanner's fuzzy matching already handled those Unicode filenames correctly, the UI was still in English. That changes with this update.
+Indonesia is one of the biggest manhwa and manga markets in Asia. Many Indonesian collectors manage archives in Bahasa Indonesia filenames — and while Comic Duplicate Scanner's fuzzy matching already handled those Unicode filenames correctly, the UI was still in English. That changes with this update.
 
 ### Simplified Chinese / Manhua Collectors
 
@@ -59,26 +59,26 @@ Chinese-language manhua libraries can grow enormous quickly. Chinese filenames (
 
 ## Frequently Asked Questions
 
-**Does Archive Duplicate Scanner work with Chinese, Japanese, or Korean filenames?**
+**Does Comic Duplicate Scanner work with Chinese, Japanese, or Korean filenames?**
 Yes. The fuzzy filename matching is fully Unicode-aware and has always supported CJK filenames. The new Simplified Chinese UI is a separate addition that localizes the interface itself — the underlying matching engine already handled CJK content correctly.
 
 **How do I switch the app to my language?**
-The app follows your operating system language setting automatically. On macOS, set your preferred language in System Settings → General → Language & Region. On Windows, change it in Settings → Time & Language → Language & Region. Restart Archive Duplicate Scanner after changing the setting.
+The app follows your operating system language setting automatically. On macOS, set your preferred language in System Settings → General → Language & Region. On Windows, change it in Settings → Time & Language → Language & Region. Restart Comic Duplicate Scanner after changing the setting.
 
 **Is the app free?**
-Archive Duplicate Scanner is free for libraries up to 1,000 files. For larger collections, a one-time purchase of USD 19.99 unlocks unlimited scanning. The Mac version includes a 7-day free trial for the full version. The Windows version on the Microsoft Store is free to download and use within the free tier.
+Comic Duplicate Scanner is free for libraries up to 1,000 files. For larger collections, a one-time purchase of USD 19.99 unlocks unlimited scanning. The Mac version includes a 7-day free trial for the full version. The Windows version on the Microsoft Store is free to download and use within the free tier.
 
 **Which file formats does it support?**
 Comic archives: CBZ, CBR, ZIP, RAR. Photos: JPEG, PNG, HEIC, WEBP, BMP, GIF. The app opens archives and inspects the actual page images — it is not limited to comparing filenames or file sizes.
 
 **Is my data sent anywhere?**
-No. Archive Duplicate Scanner is entirely local — your files, hashes, and scan results never leave your device. There is no cloud component, no analytics tracking, and no account required.
+No. Comic Duplicate Scanner is entirely local — your files, hashes, and scan results never leave your device. There is no cloud component, no analytics tracking, and no account required.
 
-## Download Archive Duplicate Scanner
+## Download Comic Duplicate Scanner
 
 The update is available now on both platforms:
 
-- **Mac App Store:** [Download Archive Duplicate Scanner](https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449)
-- **Microsoft Store:** [Download Archive Duplicate Scanner](https://apps.microsoft.com/detail/9n2jb4k5wvcq)
+- **Mac App Store:** [Download Comic Duplicate Scanner](https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449)
+- **Microsoft Store:** [Download Comic Duplicate Scanner](https://apps.microsoft.com/detail/9n2jb4k5wvcq)
 
-Visit the [Archive Duplicate Scanner page](/en/archive/) to learn more about the full feature set before downloading.
+Visit the [Comic Duplicate Scanner page](/en/archive/) to learn more about the full feature set before downloading.

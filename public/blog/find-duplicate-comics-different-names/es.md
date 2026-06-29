@@ -2,7 +2,7 @@
 
 Estás limpiando tu biblioteca de cómics y ejecutas un buscador de duplicados estándar. Te dice que no hay duplicados. Pero sabes que algo está mal — tienes los episodios 1-5 en un archivo y los episodios 1-10 en otro, y los primeros cinco claramente se superponen.
 
-Este es el problema específico para el que fue creado [Archive Duplicate Scanner](/es/archive/): encontrar archivos de cómics duplicados comparando el contenido real de las páginas, no los nombres de archivo ni los tamaños.
+Este es el problema específico para el que fue creado [Comic Duplicate Scanner](/es/archive/): encontrar archivos de cómics duplicados comparando el contenido real de las páginas, no los nombres de archivo ni los tamaños.
 
 ## Por Qué los Buscadores de Duplicados Estándar No Funcionan para Cómics
 
@@ -11,9 +11,9 @@ Este es el problema específico para el que fue creado [Archive Duplicate Scanne
 - **Archivos recodificados**: mismo cómic de dos fuentes, diferente calidad JPEG, hash completamente diferente
 - **Diferentes formatos**: mismo contenido como CBZ y CBR
 
-## Cómo Archive Duplicate Scanner lo Detecta
+## Cómo Comic Duplicate Scanner lo Detecta
 
-[Archive Duplicate Scanner](/es/archive/) usa hashing perceptual en las imágenes de página reales dentro de cada archivo. Cuando se comparan dos archivos, la app:
+[Comic Duplicate Scanner](/es/archive/) usa hashing perceptual en las imágenes de página reales dentro de cada archivo. Cuando se comparan dos archivos, la app:
 
 1. Abre ambos archivos (CBZ, CBR, ZIP o RAR)
 2. Extrae las primeras páginas de cada uno
@@ -26,6 +26,6 @@ Si los hashes coinciden por encima de un umbral configurable, los archivos se ma
 
 Un umbral más estricto requiere una coincidencia visual más cercana. Uno más laxo captura más casos límite. El predeterminado está calibrado para capturar la mayoría de los duplicados prácticos sin generar falsos positivos.
 
-Archive Duplicate Scanner es gratuito para escanear y previsualizar coincidencias. Archive Duplicate Scanner Pro permite acciones de mover/eliminar en bloque. Sin suscripción.
+Comic Duplicate Scanner es gratuito para escanear y previsualizar coincidencias. Comic Duplicate Scanner Pro permite acciones de mover/eliminar en bloque. Sin suscripción.
 
-Descarga [Archive Duplicate Scanner](/es/archive/) desde el App Store o Microsoft Store.
+Descarga [Comic Duplicate Scanner](/es/archive/) desde el App Store o Microsoft Store.

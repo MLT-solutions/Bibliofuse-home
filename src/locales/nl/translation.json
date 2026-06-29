@@ -661,7 +661,7 @@
       "badge": "Zusterapp · Mac en Windows",
       "titleA": "Vind dubbele archieven.",
       "titleB": "Zelfs na hernoemen.",
-      "desc": "Archive Duplicate Scanner vindt en verwijdert dubbele striparchieven, foto's en bestanden, zelfs na hernoemen, hercomprimeren of opslaan in andere mappen.",
+      "desc": "Comic Duplicate Scanner vindt en verwijdert dubbele striparchieven, foto's en bestanden, zelfs na hernoemen, hercomprimeren of opslaan in andere mappen.",
       "features": {
         "scanning": {
           "title": "Striparchiefscanning",
@@ -680,8 +680,8 @@
           "body": "Gemarkeerde bestanden worden alleen naar de systeemprullenbak verplaatst."
         }
       },
-      "altBadge": "Download Archive Duplicate Scanner in de Mac App Store",
-      "altImage": "Archive Duplicate Scanner configureren en scan starten",
+      "altBadge": "Download Comic Duplicate Scanner in de Mac App Store",
+      "altImage": "Comic Duplicate Scanner configureren en scan starten",
       "pricing": "Gratis gebruik is voor altijd beschikbaar voor scans tot 1.000 bestanden. Een proefperiode van 7 dagen ontgrendelt volledige toegang, en een eenmalige aankoop ontgrendelt onbeperkt gebruik zonder abonnement.",
       "stats": {
         "threshold": "Standaarddrempel",
@@ -826,14 +826,14 @@
     "blog": {
       "posts": {
         "reading-ebooks-offline-iphone": {
-          "title": "Ebooks Volledig Offline Lezen op iPhone: Geen Cloud Vereist",
-          "excerpt": "BiblioFuse slaat je volledige bibliotheek lokaal op het apparaat op — geen account, geen streaming, geen laadschermen. Lees elke EPUB, CBZ of PDF overal.",
-          "seoDescription": "Lees ebooks en strips volledig offline op iPhone met BiblioFuse. Bestanden worden lokaal opgeslagen — geen cloudaccount vereist."
+          "title": "E-books volledig offline lezen op iPhone: geen cloud vereist",
+          "excerpt": "BiblioFuse slaat EPUB, CBZ, CBR, PDF, ZIP, RAR en TXT-bestanden lokaal op je iPhone op — lees je hele bibliotheek in vliegtuigen, ondergronds of overal zonder signaal. Geen cloud-abonnement of account nodig. iOS 17 of hoger.",
+          "seoDescription": "BiblioFuse leest EPUB, CBZ, CBR, PDF, ZIP, RAR en TXT lokaal op iPhone. Geen cloud, geen account, geen signaal vereist. Volledige offline leesgids voor iOS 17+."
         },
         "convert-cbr-to-cbz-online": {
-          "title": "CBR Omzetten naar CBZ Online: Gratis, Zonder Software",
-          "excerpt": "CBR-bestanden zijn RAR-archieven; CBZ-bestanden zijn ZIP-archieven — je kunt de extensie niet zomaar hernoemen. BiblioFuse's converter herarchiveert je strips in seconden zonder upload.",
-          "seoDescription": "Zet CBR om naar CBZ online gratis zonder bestanden te uploaden. BiblioFuse gebruikt WebAssembly voor conversie in je browser."
+          "title": "CBR naar CBZ online converteren: gratis, geen software vereist",
+          "excerpt": "De BiblioFuse webtool converteert CBR (RAR-gebaseerde) striparchief bestanden naar CBZ (ZIP-gebaseerd) formaat direct in je browser — geen upload, geen installatie, volledig privé. Sleep je bestand erin en download de geconverteerde CBZ in seconden.",
+          "seoDescription": "Converteer CBR naar CBZ online in je browser met BiblioFuse Web Tool. Geen bestandsupload, geen software. WebAssembly-aangedreven, gratis voor losse bestanden."
         },
         "organize-ebooks-by-content-not-metadata": {
           "title": "Organiseer Ebooks op Inhoud, Niet op Metadata of ISBN",
@@ -842,8 +842,8 @@
         },
         "find-duplicate-comics-different-names": {
           "title": "Duplicaat-Comics Met Verschillende Bestandsnamen Vinden",
-          "excerpt": "Standaard duplicatenvingers missen comics met andere namen — zoals comic_E1-5 en ComiX_E1-10. Archive Duplicate Scanner vergelijkt echte pagina-afbeeldingen om duplicaten te vangen die bestandsnaamtools missen.",
-          "seoDescription": "Vind gedupliceerde CBZ- en CBR-comicbestanden ook al hebben ze verschillende bestandsnamen. Archive Duplicate Scanner gebruikt perceptuele hashing om pagina-afbeeldingen te vergelijken."
+          "excerpt": "Standaard duplicatenvingers missen comics met andere namen — zoals comic_E1-5 en ComiX_E1-10. Comic Duplicate Scanner vergelijkt echte pagina-afbeeldingen om duplicaten te vangen die bestandsnaamtools missen.",
+          "seoDescription": "Vind gedupliceerde CBZ- en CBR-comicbestanden ook al hebben ze verschillende bestandsnamen. Comic Duplicate Scanner gebruikt perceptuele hashing om pagina-afbeeldingen te vergelijken."
         },
         "open-bank-statement-pdf-iphone": {
           "title": "Wachtwoordbeveiligde Bankafschriften PDF Openen op iPhone",
@@ -856,24 +856,14 @@
           "seoDescription": "ContentCue voegt Frans, Nederlands, Russisch, Japans, Koreaans en Maleis toe. Markeer advertenties tijdens het lezen — gekleurde randen markeren betaalde inhoud."
         },
         "archive-duplicate-scanner-11-languages": {
-          "title": "Archive Duplicate Scanner Nu Beschikbaar in 11 Talen",
-          "excerpt": "Archive Duplicate Scanner ondersteunt nu 11 talen. Vind duplicaat-comics zelfs als ze verschillende namen hebben zoals comic_E1-5 en ComiX_E1-10 — visuele paginavergelijking vangt wat bestandsnaamtools missen.",
-          "seoDescription": "Archive Duplicate Scanner voegt Frans, Nederlands, Russisch, Japans, Koreaans en Maleis toe. Vind dubbele CBZ-bestanden door paginaafbeeldingen te vergelijken, niet alleen bestandsnamen."
+          "title": "Comic Duplicate Scanner Nu Beschikbaar in 11 Talen",
+          "excerpt": "Comic Duplicate Scanner ondersteunt nu 11 talen. Vind duplicaat-comics zelfs als ze verschillende namen hebben zoals comic_E1-5 en ComiX_E1-10 — visuele paginavergelijking vangt wat bestandsnaamtools missen.",
+          "seoDescription": "Comic Duplicate Scanner voegt Frans, Nederlands, Russisch, Japans, Koreaans en Maleis toe. Vind dubbele CBZ-bestanden door paginaafbeeldingen te vergelijken, niet alleen bestandsnamen."
         },
         "smartdecrypt-11-languages": {
           "title": "SmartDecrypt Nu Beschikbaar in 11 Talen",
           "excerpt": "SmartDecrypt PDF ZIP CBZ ondersteunt nu 11 talen — Engels, Spaans, Frans, Nederlands, Portugees, Russisch, Chinees, Japans, Koreaans, Indonesisch en Maleis. Ontgrendel bankafschriften en verzekeringsPDFs met moeilijk te onthouden wachtwoordpatronen in je eigen taal.",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ voegt 6 nieuwe talen toe: Frans, Nederlands, Russisch, Japans, Koreaans en Maleis. Ontgrendel bank-PDFs met patroongebaseerde wachtwoorden op iPhone, Mac en Windows."
-        },
-        "reading-ebooks-offline-iphone": {
-          "title": "E-books volledig offline lezen op iPhone: geen cloud vereist",
-          "excerpt": "BiblioFuse slaat EPUB, CBZ, CBR, PDF, ZIP, RAR en TXT-bestanden lokaal op je iPhone op — lees je hele bibliotheek in vliegtuigen, ondergronds of overal zonder signaal. Geen cloud-abonnement of account nodig. iOS 17 of hoger.",
-          "seoDescription": "BiblioFuse leest EPUB, CBZ, CBR, PDF, ZIP, RAR en TXT lokaal op iPhone. Geen cloud, geen account, geen signaal vereist. Volledige offline leesgids voor iOS 17+."
-        },
-        "convert-cbr-to-cbz-online": {
-          "title": "CBR naar CBZ online converteren: gratis, geen software vereist",
-          "excerpt": "De BiblioFuse webtool converteert CBR (RAR-gebaseerde) striparchief bestanden naar CBZ (ZIP-gebaseerd) formaat direct in je browser — geen upload, geen installatie, volledig privé. Sleep je bestand erin en download de geconverteerde CBZ in seconden.",
-          "seoDescription": "Converteer CBR naar CBZ online in je browser met BiblioFuse Web Tool. Geen bestandsupload, geen software. WebAssembly-aangedreven, gratis voor losse bestanden."
         },
         "airdrop-books-to-iphone": {
           "title": "Hoe gebruik je AirDrop om strips en ebooks naar iPhone te sturen",
@@ -957,33 +947,33 @@
         },
         "build-perfect-digital-manga-collection": {
           "title": "Bouw de Perfecte Digitale Manga-collectie",
-          "excerpt": "BiblioFuse leest CBZ, CBR, EPUB, PDF, ZIP, RAR en TXT op iPhone en iPad met iOS 17+. Combineer Archive Duplicate Scanner om dubbele volumes te verwijderen, de BiblioFuse Web Tool om bestanden in de browser te comprimeren en het tabblad Tools op het apparaat om een geoptimaliseerde mangacollectie te bouwen die overal synchroniseert.",
-          "seoDescription": "BiblioFuse leest CBZ, CBR, EPUB, PDF, ZIP, RAR en TXT op iPhone en iPad met iOS 17+. Combineer Archive Duplicate Scanner om dubbele volumes te."
+          "excerpt": "BiblioFuse leest CBZ, CBR, EPUB, PDF, ZIP, RAR en TXT op iPhone en iPad met iOS 17+. Combineer Comic Duplicate Scanner om dubbele volumes te verwijderen, de BiblioFuse Web Tool om bestanden in de browser te comprimeren en het tabblad Tools op het apparaat om een geoptimaliseerde mangacollectie te bouwen die overal synchroniseert.",
+          "seoDescription": "BiblioFuse leest CBZ, CBR, EPUB, PDF, ZIP, RAR en TXT op iPhone en iPad met iOS 17+. Combineer Comic Duplicate Scanner om dubbele volumes te."
         },
         "best-duplicate-file-finder-mac": {
           "title": "Beste Tool voor Dubbele Bestanden Mac (2026)",
-          "excerpt": "Archive Duplicate Scanner is de beste deduplicatietool voor Mac in 2026 voor gemengde bibliotheken van strips (CBZ, CBR), foto's (HEIC, JPEG, RAW) en archieven. Perceptuele hashing vindt visueel identieke bestanden ook na hernaming, en alleen Prullenmand-verwijdering houdt je collectie veilig.",
-          "seoDescription": "Archive Duplicate Scanner is de beste deduplicatietool voor Mac in 2026 voor gemengde bibliotheken van strips (CBZ, CBR), foto's (HEIC, JPEG, RAW) en."
+          "excerpt": "Comic Duplicate Scanner is de beste deduplicatietool voor Mac in 2026 voor gemengde bibliotheken van strips (CBZ, CBR), foto's (HEIC, JPEG, RAW) en archieven. Perceptuele hashing vindt visueel identieke bestanden ook na hernaming, en alleen Prullenmand-verwijdering houdt je collectie veilig.",
+          "seoDescription": "Comic Duplicate Scanner is de beste deduplicatietool voor Mac in 2026 voor gemengde bibliotheken van strips (CBZ, CBR), foto's (HEIC, JPEG, RAW) en."
         },
         "find-duplicate-photos-mac": {
           "title": "Dubbele foto's vinden op Mac — inclusief HEIC, WebP en RAW",
-          "excerpt": "Archive Duplicate Scanner vindt dubbele foto's op Mac via perceptuele hashing, die visueel identieke afbeeldingen herkent in HEIC, JPEG, WebP, PNG, TIFF en RAW zelfs bij verschillende bestandsnamen of compressie. Verplaats duplicaten veilig naar de Prullenmand met automatische selectiestrategieën.",
-          "seoDescription": "Archive Duplicate Scanner vindt dubbele foto's op Mac via perceptuele hashing, die visueel identieke afbeeldingen herkent in HEIC, JPEG, WebP, PNG, TIFF."
+          "excerpt": "Comic Duplicate Scanner vindt dubbele foto's op Mac via perceptuele hashing, die visueel identieke afbeeldingen herkent in HEIC, JPEG, WebP, PNG, TIFF en RAW zelfs bij verschillende bestandsnamen of compressie. Verplaats duplicaten veilig naar de Prullenmand met automatische selectiestrategieën.",
+          "seoDescription": "Comic Duplicate Scanner vindt dubbele foto's op Mac via perceptuele hashing, die visueel identieke afbeeldingen herkent in HEIC, JPEG, WebP, PNG, TIFF."
         },
         "perceptual-hashing-duplicate-detection": {
           "title": "Hoe Perceptuele Hashing Dubbele Comics Vindt Zelfs Na Hernaming",
-          "excerpt": "Archive Duplicate Scanner gebruikt perceptuele hashing om dubbele CBZ en CBR archieven te vinden door visuele pagina-inhoud te vergelijken — niet bestandschecksums — waardoor duplicaten worden gevonden die hernoemd, opnieuw gecomprimeerd of van verschillende bronnen zijn gedownload.",
-          "seoDescription": "Archive Duplicate Scanner gebruikt perceptuele hashing om dubbele CBZ en CBR archieven te vinden door visuele pagina-inhoud te vergelijken — niet."
+          "excerpt": "Comic Duplicate Scanner gebruikt perceptuele hashing om dubbele CBZ en CBR archieven te vinden door visuele pagina-inhoud te vergelijken — niet bestandschecksums — waardoor duplicaten worden gevonden die hernoemd, opnieuw gecomprimeerd of van verschillende bronnen zijn gedownload.",
+          "seoDescription": "Comic Duplicate Scanner gebruikt perceptuele hashing om dubbele CBZ en CBR archieven te vinden door visuele pagina-inhoud te vergelijken — niet."
         },
         "clean-up-duplicate-manga-library": {
           "title": "Hoe Je een Dubbele Mangacollectie op de Slimme Manier Opruimt",
-          "excerpt": "Archive Duplicate Scanner vindt dubbele manga-volumes op je Mac met perceptuele hashing, waarbij CBZ en CBR bestanden worden gematcht zelfs na hernaming of hercompressie. Bekijk gematchte paren naast elkaar en verplaats duplicaten veilig naar de Prullenmand.",
-          "seoDescription": "Archive Duplicate Scanner vindt dubbele manga-volumes op je Mac met perceptuele hashing, waarbij CBZ en CBR bestanden worden gematcht zelfs na hernaming."
+          "excerpt": "Comic Duplicate Scanner vindt dubbele manga-volumes op je Mac met perceptuele hashing, waarbij CBZ en CBR bestanden worden gematcht zelfs na hernaming of hercompressie. Bekijk gematchte paren naast elkaar en verplaats duplicaten veilig naar de Prullenmand.",
+          "seoDescription": "Comic Duplicate Scanner vindt dubbele manga-volumes op je Mac met perceptuele hashing, waarbij CBZ en CBR bestanden worden gematcht zelfs na hernaming."
         },
         "find-duplicate-comics-cbz-mac": {
           "title": "Dubbele CBZ-Comicbestanden Vinden en Verwijderen op Mac",
-          "excerpt": "Archive Duplicate Scanner vindt dubbele CBZ- en CBR-comicbestanden op Mac met behulp van perceptuele hashing — bestanden matchen zelfs na hernoemen, hercomprimeren of opnieuw verpakken. Scan je bibliotheek en verplaats duplicaten veilig naar de Prullenmand.",
-          "seoDescription": "Archive Duplicate Scanner vindt dubbele CBZ- en CBR-comicbestanden op Mac met behulp van perceptuele hashing — bestanden matchen zelfs na hernoemen."
+          "excerpt": "Comic Duplicate Scanner vindt dubbele CBZ- en CBR-comicbestanden op Mac met behulp van perceptuele hashing — bestanden matchen zelfs na hernoemen, hercomprimeren of opnieuw verpakken. Scan je bibliotheek en verplaats duplicaten veilig naar de Prullenmand.",
+          "seoDescription": "Comic Duplicate Scanner vindt dubbele CBZ- en CBR-comicbestanden op Mac met behulp van perceptuele hashing — bestanden matchen zelfs na hernoemen."
         },
         "pdf-zip-password-manager-profiles": {
           "title": "Bewaar Wachtwoorden voor CBZ- en PDF-Verzamelingen — Nooit Meer Opnieuw Typen",
@@ -1016,9 +1006,9 @@
           "seoDescription": "De BiblioFuse Web Tool comprimeert en optimaliseert EPUB-bestanden direct in je browser — zonder software, account of bestandsupload."
         },
         "archive-duplicate-scanner-language-update": {
-          "title": "Archive Duplicate Scanner: 4 Nieuwe Talen",
-          "excerpt": "Archive Duplicate Scanner voegt volledige UI-ondersteuning toe voor Portugees, Spaans, Bahasa Indonesia en Vereenvoudigd Chinees. Vind dubbele stripboekarchiven en foto's met perceptuele hashing — gratis voor Mac en Windows.",
-          "seoDescription": "Archive Duplicate Scanner voegt volledige UI-ondersteuning toe voor Portugees, Spaans, Bahasa Indonesia en Vereenvoudigd Chinees."
+          "title": "Comic Duplicate Scanner: 4 Nieuwe Talen",
+          "excerpt": "Comic Duplicate Scanner voegt volledige UI-ondersteuning toe voor Portugees, Spaans, Bahasa Indonesia en Vereenvoudigd Chinees. Vind dubbele stripboekarchiven en foto's met perceptuele hashing — gratis voor Mac en Windows.",
+          "seoDescription": "Comic Duplicate Scanner voegt volledige UI-ondersteuning toe voor Portugees, Spaans, Bahasa Indonesia en Vereenvoudigd Chinees."
         },
         "merge-cbz-files-online": {
           "title": "Meerdere CBZ-bestanden samenvoegen — Gratis online tool",
@@ -1325,13 +1315,13 @@
     },
     "archivePage": {
       "seo": {
-        "title": "Archive Duplicate Scanner — Vind Dubbele Comics en Foto's op Mac en Windows",
-        "desc": "Archive Duplicate Scanner vindt dubbele CBZ-, CBR-, ZIP-, RAR- en fotobestanden via perceptuele hashing — zelfs na hernoemen of hercompressie. Gratis tot 1.000 bestanden, Pro voor $19,99 eenmalig."
+        "title": "Comic Duplicate Scanner — Vind Dubbele Comics en Foto's op Mac en Windows",
+        "desc": "Comic Duplicate Scanner vindt dubbele CBZ-, CBR-, ZIP-, RAR- en fotobestanden met perceptuele hashing — ook na hernoemen, hercompressie, of bij verschillende resoluties en kleurmodi. Gratis tot 1.000 bestanden, Pro eenmalig $19,99."
       },
       "hero": {
         "badge": "Mac en Windows",
         "title": "Vind duplicaten. Ook na hernoemen.",
-        "desc": "Archive Duplicate Scanner opent je comicarchieven en vergelijkt de werkelijke afbeeldingen erin — niet alleen bestandsnamen of -groottes. Zelfs als één bestand comic_E1-5 heet en een ander ComiX_E1-10, worden ze als duplicaten gemarkeerd als de eerste pagina's overeenkomen.",
+        "desc": "Comic Duplicate Scanner opent je comicarchieven en vergelijkt de werkelijke afbeeldingen erin — niet alleen bestandsnamen of -groottes. Zelfs als één bestand comic_E1-5 heet en een ander ComiX_E1-10, worden ze als duplicaten gemarkeerd als de eerste pagina's overeenkomen.",
         "trust1": "Geen cloudupload",
         "trust2": "Veilig naar Prullenbak verwijderen",
         "trust3": "7 dagen gratis proberen",
@@ -1341,11 +1331,12 @@
       "scanning": {
         "eyebrow": "Diepgaand Archiefonderzoek",
         "title": "Opent archieven en vergelijkt pagina's van binnen",
-        "desc": "De meeste duplicaatdetectors vergelijken alleen bestandsnamen of -groottes. Archive Duplicate Scanner opent elk CBZ-, CBR-, ZIP- of RAR-bestand, extraheert miniaturen van de werkelijke pagina's en vergelijkt ze. Een bestand genaamd comic_E1-5 en een ander ComiX_E1-10 — andere naam, ander epsiodebereik — worden toch gevonden als hun beginpagina's overeenkomen.",
+        "desc": "De meeste duplicaatdetectors vergelijken alleen bestandsnamen of -groottes. Comic Duplicate Scanner opent elk CBZ-, CBR-, ZIP- of RAR-bestand, extraheert miniaturen van de werkelijke pagina's en vergelijkt ze. Een bestand genaamd comic_E1-5 en een ander ComiX_E1-10 — andere naam, ander epsiodebereik — worden toch gevonden als hun beginpagina's overeenkomen.",
         "bullet1": "Opent archieven en vergelijkt paginaafbeeldingen — niet alleen bestandsnamen",
         "bullet2": "Instelbare gelijkheidsdrempel — 90% aanbevolen",
         "bullet3": "Hash-cache maakt herhaalde scans bijna direct",
-        "badge": "Werkt met manga, manhwa en manhua"
+        "badge": "Werkt met manga, manhwa en manhua",
+        "bullet4": "Herkent duplicaten bij verschillende resoluties en kleurmodi — een grijswaardenscan van 1200px en een kleurscan van 3000px van dezelfde pagina worden toch gemarkeerd"
       },
       "photos": {
         "eyebrow": "Foto's en Bestandsnaamovereenkomst",
@@ -1397,11 +1388,11 @@
       "faq": [
         {
           "q": "Wat is perceptuele hashing en waarom is het belangrijk?",
-          "a": "Perceptuele hashing vergelijkt de visuele structuur van afbeeldingen in plaats van ruwe bestandsbytes. Twee bestanden kunnen verschillende namen, groottes en metadata hebben — maar als hun inhoud er hetzelfde uitziet, worden ze gekoppeld. Standaard duplicaatdetectors falen zodra een bestand wordt hernoemd of opnieuw geëxporteerd; Archive Duplicate Scanner niet."
+          "a": "Perceptuele hashing vergelijkt de visuele structuur van afbeeldingen in plaats van ruwe bestandsbytes. Twee bestanden kunnen verschillende namen, groottes en metadata hebben — maar als hun inhoud er hetzelfde uitziet, worden ze gekoppeld. Standaard duplicaatdetectors falen zodra een bestand wordt hernoemd of opnieuw geëxporteerd; Comic Duplicate Scanner niet."
         },
         {
           "q": "Kan het duplicaten vinden die zijn hernoemd?",
-          "a": "Ja. Een bestand hernoemen verandert niets aan de inhoud. Archive Duplicate Scanner vergelijkt de afbeeldingen in elk archief, dus een duplicaat wordt gedetecteerd ongeacht hoe het bestand heet."
+          "a": "Ja. Een bestand hernoemen verandert niets aan de inhoud. Comic Duplicate Scanner vergelijkt de afbeeldingen in elk archief, dus een duplicaat wordt gedetecteerd ongeacht hoe het bestand heet."
         },
         {
           "q": "Is verwijdering permanent?",
@@ -1418,6 +1409,14 @@
         {
           "q": "Is er een proefperiode voordat ik koop?",
           "a": "Je kunt tot 1.000 bestanden gratis scannen, voor altijd. Een gratis proefperiode van 7 dagen in de Mac App Store ontgrendelt onbeperkte toegang, en de eenmalige Pro-aankoop is $19,99 zonder abonnement."
+        },
+        {
+          "q": "Kan het een kleurscan vergelijken met een zwart-witversie van dezelfde inhoud?",
+          "a": "Ja. Het dHash-algoritme werkt op luminantiegradiënten, niet op kleurwaarden. Een volkleurenscan en een grijswaardenscan van dezelfde pagina leveren vrijwel identieke hashes op en worden als duplicaten gemarkeerd."
+        },
+        {
+          "q": "Heeft de beeldresolutie invloed op de duplicaatdetectie?",
+          "a": "Nee. dHash schaalt elke afbeelding naar een klein vast raster voordat er vergeleken wordt, waardoor een scan van 1200px en een van 3000px van dezelfde pagina dezelfde hashwaarde opleveren. Resolutieverschillen tussen bronnen worden volledig genegeerd."
         }
       ],
       "backDesc": "Op zoek naar een comic- en ebook-lezer?",

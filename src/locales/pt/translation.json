@@ -661,7 +661,7 @@
       "badge": "App irmã · Mac e Windows",
       "titleA": "Encontre arquivos duplicados.",
       "titleB": "Mesmo depois de renomear.",
-      "desc": "O Archive Duplicate Scanner encontra e remove arquivos duplicados de banda desenhada, fotos e ficheiros, mesmo quando foram renomeados, recomprimidos ou guardados em pastas diferentes.",
+      "desc": "O Comic Duplicate Scanner encontra e remove arquivos duplicados de banda desenhada, fotos e ficheiros, mesmo quando foram renomeados, recomprimidos ou guardados em pastas diferentes.",
       "features": {
         "scanning": {
           "title": "Análise de arquivos de BD",
@@ -680,8 +680,8 @@
           "body": "Os ficheiros marcados são apenas movidos para o Lixo do sistema."
         }
       },
-      "altBadge": "Descarregar Archive Duplicate Scanner na Mac App Store",
-      "altImage": "Archive Duplicate Scanner configurar e iniciar análise",
+      "altBadge": "Descarregar Comic Duplicate Scanner na Mac App Store",
+      "altImage": "Comic Duplicate Scanner configurar e iniciar análise",
       "pricing": "A utilização gratuita está disponível para sempre para análises até 1.000 ficheiros. Um teste de 7 dias desbloqueia o acesso completo, e uma compra única desbloqueia o uso ilimitado sem assinatura.",
       "stats": {
         "threshold": "Limiar predefinido",
@@ -826,14 +826,14 @@
     "blog": {
       "posts": {
         "reading-ebooks-offline-iphone": {
-          "title": "Lendo Ebooks Completamente Offline no iPhone: Sem Necessidade de Nuvem",
-          "excerpt": "O BiblioFuse armazena toda a sua biblioteca localmente no dispositivo — sem conta, sem streaming, sem telas de carregamento. Leia qualquer EPUB, CBZ ou PDF em qualquer lugar.",
-          "seoDescription": "Leia ebooks e quadrinhos completamente offline no iPhone com o BiblioFuse. Arquivos armazenados localmente — sem conta em nuvem necessária."
+          "title": "Ler ebooks completamente offline no iPhone: sem necessidade de nuvem",
+          "excerpt": "BiblioFuse armazena arquivos EPUB, CBZ, CBR, PDF, ZIP, RAR e TXT localmente no seu iPhone — leia sua biblioteca completa em aviões, metrô ou em qualquer lugar sem sinal. Sem assinatura de nuvem ou conta necessária. iOS 17 ou posterior.",
+          "seoDescription": "BiblioFuse lê EPUB, CBZ, CBR, PDF, ZIP, RAR e TXT localmente no iPhone. Sem nuvem, sem conta, sem sinal. Guia completo de leitura offline para iOS 17+."
         },
         "convert-cbr-to-cbz-online": {
-          "title": "Como Converter CBR para CBZ Online: Grátis, Sem Software",
-          "excerpt": "Arquivos CBR são arquivos RAR; CBZ são ZIP — você não pode simplesmente renomear a extensão. O conversor do BiblioFuse rearquiva seus quadrinhos em segundos sem upload.",
-          "seoDescription": "Converta CBR para CBZ online grátis sem enviar arquivos. BiblioFuse usa WebAssembly para converter no seu navegador."
+          "title": "Como converter CBR para CBZ online: grátis, sem software",
+          "excerpt": "A ferramenta web BiblioFuse converte arquivos CBR (baseados em RAR) para formato CBZ (baseado em ZIP) diretamente no seu navegador — sem upload, sem instalação, completamente privado. Arraste seu arquivo e baixe o CBZ convertido em segundos.",
+          "seoDescription": "Converta CBR para CBZ online no seu navegador com BiblioFuse Web Tool. Sem upload de arquivos, sem software. Baseado em WebAssembly, gratuito para arquivos individuais."
         },
         "organize-ebooks-by-content-not-metadata": {
           "title": "Organize Ebooks por Conteúdo, Não por Metadados ou ISBN",
@@ -842,8 +842,8 @@
         },
         "find-duplicate-comics-different-names": {
           "title": "Como Encontrar Quadrinhos Duplicados Com Nomes de Arquivo Diferentes",
-          "excerpt": "Localizadores de duplicados padrão perdem quadrinhos com nomes diferentes — como comic_E1-5 e ComiX_E1-10. Archive Duplicate Scanner compara imagens de página reais para capturar duplicatas que ferramentas de nome de arquivo ignoram.",
-          "seoDescription": "Encontre arquivos CBZ e CBR de quadrinhos duplicados mesmo quando têm nomes diferentes. Archive Duplicate Scanner usa hashing perceptual para comparar imagens de páginas."
+          "excerpt": "Localizadores de duplicados padrão perdem quadrinhos com nomes diferentes — como comic_E1-5 e ComiX_E1-10. Comic Duplicate Scanner compara imagens de página reais para capturar duplicatas que ferramentas de nome de arquivo ignoram.",
+          "seoDescription": "Encontre arquivos CBZ e CBR de quadrinhos duplicados mesmo quando têm nomes diferentes. Comic Duplicate Scanner usa hashing perceptual para comparar imagens de páginas."
         },
         "open-bank-statement-pdf-iphone": {
           "title": "Como Abrir PDFs de Extratos Bancários com Senha no iPhone",
@@ -856,24 +856,14 @@
           "seoDescription": "ContentCue adiciona francês, holandês, russo, japonês, coreano e malaio. Destaque anúncios durante a leitura — bordas coloridas marcam o conteúdo pago."
         },
         "archive-duplicate-scanner-11-languages": {
-          "title": "Archive Duplicate Scanner Agora Disponível em 11 Idiomas",
-          "excerpt": "Archive Duplicate Scanner agora suporta 11 idiomas. Encontre quadrinhos duplicados mesmo quando têm nomes diferentes como comic_E1-5 e ComiX_E1-10 — a comparação visual de páginas detecta o que ferramentas de nome de arquivo perdem.",
-          "seoDescription": "Archive Duplicate Scanner adiciona francês, holandês, russo, japonês, coreano e malaio. Encontre arquivos CBZ duplicados comparando imagens de páginas, não apenas nomes de arquivos."
+          "title": "Comic Duplicate Scanner Agora Disponível em 11 Idiomas",
+          "excerpt": "Comic Duplicate Scanner agora suporta 11 idiomas. Encontre quadrinhos duplicados mesmo quando têm nomes diferentes como comic_E1-5 e ComiX_E1-10 — a comparação visual de páginas detecta o que ferramentas de nome de arquivo perdem.",
+          "seoDescription": "Comic Duplicate Scanner adiciona francês, holandês, russo, japonês, coreano e malaio. Encontre arquivos CBZ duplicados comparando imagens de páginas, não apenas nomes de arquivos."
         },
         "smartdecrypt-11-languages": {
           "title": "SmartDecrypt Agora Disponível em 11 Idiomas",
           "excerpt": "SmartDecrypt PDF ZIP CBZ agora suporta 11 idiomas — inglês, espanhol, francês, holandês, português, russo, chinês, japonês, coreano, indonésio e malaio. Desbloqueie extratos bancários e PDFs de seguros com padrões de senha difíceis de lembrar no seu próprio idioma.",
           "seoDescription": "SmartDecrypt PDF ZIP CBZ adiciona 6 novos idiomas: francês, holandês, russo, japonês, coreano e malaio. Desbloqueie PDFs bancários com senhas baseadas em padrões no iPhone, Mac e Windows."
-        },
-        "reading-ebooks-offline-iphone": {
-          "title": "Ler ebooks completamente offline no iPhone: sem necessidade de nuvem",
-          "excerpt": "BiblioFuse armazena arquivos EPUB, CBZ, CBR, PDF, ZIP, RAR e TXT localmente no seu iPhone — leia sua biblioteca completa em aviões, metrô ou em qualquer lugar sem sinal. Sem assinatura de nuvem ou conta necessária. iOS 17 ou posterior.",
-          "seoDescription": "BiblioFuse lê EPUB, CBZ, CBR, PDF, ZIP, RAR e TXT localmente no iPhone. Sem nuvem, sem conta, sem sinal. Guia completo de leitura offline para iOS 17+."
-        },
-        "convert-cbr-to-cbz-online": {
-          "title": "Como converter CBR para CBZ online: grátis, sem software",
-          "excerpt": "A ferramenta web BiblioFuse converte arquivos CBR (baseados em RAR) para formato CBZ (baseado em ZIP) diretamente no seu navegador — sem upload, sem instalação, completamente privado. Arraste seu arquivo e baixe o CBZ convertido em segundos.",
-          "seoDescription": "Converta CBR para CBZ online no seu navegador com BiblioFuse Web Tool. Sem upload de arquivos, sem software. Baseado em WebAssembly, gratuito para arquivos individuais."
         },
         "airdrop-books-to-iphone": {
           "title": "Como usar o AirDrop para transferir quadrinhos e ebooks para o iPhone",
@@ -957,33 +947,33 @@
         },
         "build-perfect-digital-manga-collection": {
           "title": "Monte a Coleção de Mangá Digital Perfeita",
-          "excerpt": "O BiblioFuse lê CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT no iPhone e iPad com iOS 17+. Combine o Archive Duplicate Scanner para remover volumes duplicados, o BiblioFuse Web Tool para comprimir arquivos no navegador e a aba Ferramentas no dispositivo para criar uma coleção manga otimizada que sincroniza em todo lugar.",
-          "seoDescription": "O BiblioFuse lê CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT no iPhone e iPad com iOS 17+. Combine o Archive Duplicate Scanner para remover volumes duplicados, o."
+          "excerpt": "O BiblioFuse lê CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT no iPhone e iPad com iOS 17+. Combine o Comic Duplicate Scanner para remover volumes duplicados, o BiblioFuse Web Tool para comprimir arquivos no navegador e a aba Ferramentas no dispositivo para criar uma coleção manga otimizada que sincroniza em todo lugar.",
+          "seoDescription": "O BiblioFuse lê CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT no iPhone e iPad com iOS 17+. Combine o Comic Duplicate Scanner para remover volumes duplicados, o."
         },
         "best-duplicate-file-finder-mac": {
           "title": "Melhor Localizador de Duplicatas para Mac (2026)",
-          "excerpt": "O Archive Duplicate Scanner é o melhor localizador de duplicatas para Mac em 2026 para bibliotecas mistas de quadrinhos (CBZ, CBR), fotos (HEIC, JPEG, RAW) e arquivos compactados. O hashing perceptual detecta arquivos visualmente idênticos mesmo após renomear, e a exclusão apenas para o Lixo protege sua coleção.",
-          "seoDescription": "O Archive Duplicate Scanner é o melhor localizador de duplicatas para Mac em 2026 para bibliotecas mistas de quadrinhos (CBZ, CBR), fotos (HEIC, JPEG."
+          "excerpt": "O Comic Duplicate Scanner é o melhor localizador de duplicatas para Mac em 2026 para bibliotecas mistas de quadrinhos (CBZ, CBR), fotos (HEIC, JPEG, RAW) e arquivos compactados. O hashing perceptual detecta arquivos visualmente idênticos mesmo após renomear, e a exclusão apenas para o Lixo protege sua coleção.",
+          "seoDescription": "O Comic Duplicate Scanner é o melhor localizador de duplicatas para Mac em 2026 para bibliotecas mistas de quadrinhos (CBZ, CBR), fotos (HEIC, JPEG."
         },
         "find-duplicate-photos-mac": {
           "title": "Encontrar fotos duplicadas no Mac — incluindo HEIC, WebP e RAW",
-          "excerpt": "O Archive Duplicate Scanner encontra fotos duplicadas no Mac usando hashing perceptual, identificando imagens visualmente idênticas em HEIC, JPEG, WebP, PNG, TIFF e RAW mesmo com nomes ou compressão diferentes. Mova duplicatas para o Lixo com estratégias de seleção automática.",
-          "seoDescription": "O Archive Duplicate Scanner encontra fotos duplicadas no Mac usando hashing perceptual, identificando imagens visualmente idênticas em HEIC, JPEG, WebP."
+          "excerpt": "O Comic Duplicate Scanner encontra fotos duplicadas no Mac usando hashing perceptual, identificando imagens visualmente idênticas em HEIC, JPEG, WebP, PNG, TIFF e RAW mesmo com nomes ou compressão diferentes. Mova duplicatas para o Lixo com estratégias de seleção automática.",
+          "seoDescription": "O Comic Duplicate Scanner encontra fotos duplicadas no Mac usando hashing perceptual, identificando imagens visualmente idênticas em HEIC, JPEG, WebP."
         },
         "perceptual-hashing-duplicate-detection": {
           "title": "Como o Hash Perceptual Encontra Quadrinhos Duplicados Mesmo Após Renomeação",
-          "excerpt": "Archive Duplicate Scanner usa hash perceptual para encontrar arquivos CBZ e CBR duplicados comparando conteúdo visual de páginas — não checksums — detectando duplicatas renomeadas, recomprimidas ou baixadas de fontes diferentes.",
-          "seoDescription": "Archive Duplicate Scanner usa hash perceptual para encontrar arquivos CBZ e CBR duplicados comparando conteúdo visual de páginas — não checksums —."
+          "excerpt": "Comic Duplicate Scanner usa hash perceptual para encontrar arquivos CBZ e CBR duplicados comparando conteúdo visual de páginas — não checksums — detectando duplicatas renomeadas, recomprimidas ou baixadas de fontes diferentes.",
+          "seoDescription": "Comic Duplicate Scanner usa hash perceptual para encontrar arquivos CBZ e CBR duplicados comparando conteúdo visual de páginas — não checksums —."
         },
         "clean-up-duplicate-manga-library": {
           "title": "Como Limpar uma Coleção de Mangá Duplicada de Forma Inteligente",
-          "excerpt": "Archive Duplicate Scanner encontra volumes de mangá duplicados no seu Mac usando hash perceptual, combinando arquivos CBZ e CBR mesmo após renomeação ou recompressão. Revise pares correspondentes lado a lado e mova duplicatas para a Lixeira com segurança.",
-          "seoDescription": "Archive Duplicate Scanner encontra volumes de mangá duplicados no seu Mac usando hash perceptual, combinando arquivos CBZ e CBR mesmo após renomeação ou."
+          "excerpt": "Comic Duplicate Scanner encontra volumes de mangá duplicados no seu Mac usando hash perceptual, combinando arquivos CBZ e CBR mesmo após renomeação ou recompressão. Revise pares correspondentes lado a lado e mova duplicatas para a Lixeira com segurança.",
+          "seoDescription": "Comic Duplicate Scanner encontra volumes de mangá duplicados no seu Mac usando hash perceptual, combinando arquivos CBZ e CBR mesmo após renomeação ou."
         },
         "find-duplicate-comics-cbz-mac": {
           "title": "Como Encontrar e Remover Arquivos CBZ de Quadrinhos Duplicados no Mac",
-          "excerpt": "Archive Duplicate Scanner encontra arquivos de quadrinhos CBZ e CBR duplicados no Mac usando hash perceptual — correspondendo arquivos mesmo após renomeação, recompressão ou reempacotamento. Digitalize sua biblioteca e mova duplicatas com segurança para a Lixeira.",
-          "seoDescription": "Archive Duplicate Scanner encontra arquivos de quadrinhos CBZ e CBR duplicados no Mac usando hash perceptual — correspondendo arquivos mesmo após."
+          "excerpt": "Comic Duplicate Scanner encontra arquivos de quadrinhos CBZ e CBR duplicados no Mac usando hash perceptual — correspondendo arquivos mesmo após renomeação, recompressão ou reempacotamento. Digitalize sua biblioteca e mova duplicatas com segurança para a Lixeira.",
+          "seoDescription": "Comic Duplicate Scanner encontra arquivos de quadrinhos CBZ e CBR duplicados no Mac usando hash perceptual — correspondendo arquivos mesmo após."
         },
         "pdf-zip-password-manager-profiles": {
           "title": "Salve Senhas para Coleções CBZ e PDF — Nunca Mais Digite Novamente",
@@ -1016,9 +1006,9 @@
           "seoDescription": "A BiblioFuse Web Tool comprime e otimiza arquivos EPUB diretamente no seu navegador — sem software, sem conta e sem necessidade de fazer upload de."
         },
         "archive-duplicate-scanner-language-update": {
-          "title": "Archive Duplicate Scanner: 4 Novos Idiomas",
-          "excerpt": "Archive Duplicate Scanner adiciona suporte completo de interface para Português, Espanhol, Bahasa Indonesia e Chinês Simplificado — o aplicativo agora fala o seu idioma nativamente. Encontre arquivos de quadrinhos e fotos duplicados com hashing perceptual, grátis para Mac e Windows.",
-          "seoDescription": "Archive Duplicate Scanner adiciona suporte completo de interface para Português, Espanhol, Bahasa Indonesia e Chinês Simplificado — o aplicativo agora."
+          "title": "Comic Duplicate Scanner: 4 Novos Idiomas",
+          "excerpt": "Comic Duplicate Scanner adiciona suporte completo de interface para Português, Espanhol, Bahasa Indonesia e Chinês Simplificado — o aplicativo agora fala o seu idioma nativamente. Encontre arquivos de quadrinhos e fotos duplicados com hashing perceptual, grátis para Mac e Windows.",
+          "seoDescription": "Comic Duplicate Scanner adiciona suporte completo de interface para Português, Espanhol, Bahasa Indonesia e Chinês Simplificado — o aplicativo agora."
         },
         "merge-cbz-files-online": {
           "title": "Como unir vários arquivos CBZ em um só — Ferramenta online gratuita",
@@ -1325,13 +1315,13 @@
     },
     "archivePage": {
       "seo": {
-        "title": "Archive Duplicate Scanner — Encontre HQs e Fotos Duplicadas no Mac e Windows",
-        "desc": "Archive Duplicate Scanner encontra arquivos CBZ, CBR, ZIP, RAR e fotos duplicadas usando hash perceptual — mesmo após renomear ou recompressão. Grátis para até 1.000 arquivos, Pro por $19,99 único."
+        "title": "Comic Duplicate Scanner — Encontre HQs e Fotos Duplicadas no Mac e Windows",
+        "desc": "Comic Duplicate Scanner encontra arquivos duplicados de CBZ, CBR, ZIP, RAR e fotos usando hash perceptual — mesmo após renomeação, recompressão, ou com resoluções e modos de cor diferentes. Gratuito até 1.000 arquivos, Pro por pagamento único de $19,99."
       },
       "hero": {
         "badge": "Mac e Windows",
         "title": "Encontre duplicatas. Mesmo após renomear.",
-        "desc": "Archive Duplicate Scanner abre seus arquivos de HQ e compara as imagens reais dentro — não apenas nomes de arquivo ou tamanhos. Mesmo que um arquivo se chame comic_E1-5 e outro ComiX_E1-10, se as primeiras páginas coincidirem, serão sinalizados como duplicatas.",
+        "desc": "Comic Duplicate Scanner abre seus arquivos de HQ e compara as imagens reais dentro — não apenas nomes de arquivo ou tamanhos. Mesmo que um arquivo se chame comic_E1-5 e outro ComiX_E1-10, se as primeiras páginas coincidirem, serão sinalizados como duplicatas.",
         "trust1": "Sem upload na nuvem",
         "trust2": "Exclusão segura para Lixeira",
         "trust3": "Teste gratuito de 7 dias",
@@ -1341,11 +1331,12 @@
       "scanning": {
         "eyebrow": "Varredura Profunda de Arquivos",
         "title": "Abre arquivos e compara páginas internas",
-        "desc": "A maioria dos detectores de duplicatas compara apenas nomes ou tamanhos de arquivos. O Archive Duplicate Scanner abre cada arquivo CBZ, CBR, ZIP ou RAR, extrai miniaturas das páginas reais e as compara. Um arquivo chamado comic_E1-5 e outro ComiX_E1-10 — nomes diferentes, intervalos de episódios diferentes — ainda são detectados se suas páginas iniciais corresponderem.",
+        "desc": "A maioria dos detectores de duplicatas compara apenas nomes ou tamanhos de arquivos. O Comic Duplicate Scanner abre cada arquivo CBZ, CBR, ZIP ou RAR, extrai miniaturas das páginas reais e as compara. Um arquivo chamado comic_E1-5 e outro ComiX_E1-10 — nomes diferentes, intervalos de episódios diferentes — ainda são detectados se suas páginas iniciais corresponderem.",
         "bullet1": "Abre arquivos e compara imagens de páginas — não apenas nomes de arquivos",
         "bullet2": "Limite de similaridade configurável — 90% recomendado",
         "bullet3": "Cache de hash torna novas varreduras quase instantâneas",
-        "badge": "Funciona com manga, manhwa e manhua"
+        "badge": "Funciona com manga, manhwa e manhua",
+        "bullet4": "Detecta duplicados entre diferentes resoluções e modos de cor — um scan em escala de cinza de 1200px e um scan colorido de 3000px da mesma página ainda são sinalizados"
       },
       "photos": {
         "eyebrow": "Fotos e Correspondência de Nomes",
@@ -1397,11 +1388,11 @@
       "faq": [
         {
           "q": "O que é hash perceptual e por que é importante?",
-          "a": "O hash perceptual compara a estrutura visual das imagens em vez dos bytes brutos do arquivo. Dois arquivos podem ter nomes, tamanhos e metadados diferentes — mas se o conteúdo parecer igual, o hash perceptual os associa. Detectores de duplicatas padrão falham quando um arquivo é renomeado ou reexportado; Archive Duplicate Scanner não."
+          "a": "O hash perceptual compara a estrutura visual das imagens em vez dos bytes brutos do arquivo. Dois arquivos podem ter nomes, tamanhos e metadados diferentes — mas se o conteúdo parecer igual, o hash perceptual os associa. Detectores de duplicatas padrão falham quando um arquivo é renomeado ou reexportado; Comic Duplicate Scanner não."
         },
         {
           "q": "Consegue encontrar duplicatas que foram renomeadas?",
-          "a": "Sim. Renomear um arquivo não muda nada sobre seu conteúdo. Archive Duplicate Scanner compara as imagens dentro de cada arquivo, então uma duplicata é detectada independentemente do nome do arquivo."
+          "a": "Sim. Renomear um arquivo não muda nada sobre seu conteúdo. Comic Duplicate Scanner compara as imagens dentro de cada arquivo, então uma duplicata é detectada independentemente do nome do arquivo."
         },
         {
           "q": "A exclusão é permanente?",
@@ -1418,6 +1409,14 @@
         {
           "q": "Há um teste antes de comprar?",
           "a": "Você pode varrer até 1.000 arquivos gratuitamente, para sempre. Um teste gratuito de 7 dias na Mac App Store desbloqueia acesso ilimitado, e a compra única do Pro é $19,99 sem assinatura."
+        },
+        {
+          "q": "Ele pode comparar um scan colorido com uma versão em preto e branco do mesmo conteúdo?",
+          "a": "Sim. O algoritmo dHash trabalha com gradientes de luminância, não com valores de cor. Um scan colorido e uma versão em escala de cinza da mesma página produzem hashes quase idênticos e serão sinalizados como duplicados."
+        },
+        {
+          "q": "A resolução da imagem afeta a detecção de duplicados?",
+          "a": "Não. O dHash redimensiona cada imagem para uma grade fixa pequena antes de comparar, então um scan de 1200px e um de 3000px da mesma página geram o mesmo valor de hash. As diferenças de resolução entre fontes são completamente ignoradas."
         }
       ],
       "backDesc": "Procurando um leitor de HQs e ebooks?",
