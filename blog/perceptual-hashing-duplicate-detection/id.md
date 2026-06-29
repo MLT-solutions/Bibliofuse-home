@@ -4,7 +4,7 @@ Anda mengganti nama file. Anda mengompresi ulang arsip. Anda mengunduh volume ya
 
 Namun, komik di dalamnya sama. Setiap halaman sama. Dan jika Anda mencoba membersihkan perpustakaan digital, duplikat yang hampir identik ini adalah persis yang lolos dari pencari duplikat standar.
 
-Inilah masalah yang diselesaikan perceptual hashing, dan ini adalah teknik inti [Archive Duplicate Scanner](/en/archive/).
+Inilah masalah yang diselesaikan perceptual hashing, dan ini adalah teknik inti [Comic Duplicate Scanner](/en/archive/).
 
 ---
 
@@ -36,11 +36,16 @@ Tapi untuk arsip komik, pendekatan ini melewatkan duplikat paling umum di dunia 
 
 Dua gambar dengan konten visual yang mirip menghasilkan hash dengan **jarak Hamming** yang rendah.
 
+Dua sifat penting muncul langsung dari langkah-langkah ini:
+
+- **Resolusi tidak relevan.** Langkah 1 mengubah ukuran setiap gambar ke grid tetap yang sama sebelum komputasi apa pun. Pemindaian 1200px dan 3000px dari halaman yang sama keduanya menjadi thumbnail 32×32 yang sama dan menghasilkan hash yang sama.
+- **Mode warna tidak relevan.** Langkah 2 mengonversi ke skala abu-abu sebelum perbandingan. Pemindaian berwarna penuh dan pemindaian skala abu-abu dari halaman yang sama menghasilkan hash yang hampir identik, karena algoritma hanya menganalisis struktur luminansi, bukan nilai warna.
+
 ---
 
-## Cara Archive Duplicate Scanner Menerapkan Ini
+## Cara Comic Duplicate Scanner Menerapkan Ini
 
-[Archive Duplicate Scanner](/en/archive/) menerapkan perceptual hashing di tingkat arsip:
+[Comic Duplicate Scanner](/en/archive/) menerapkan perceptual hashing di tingkat arsip:
 
 1. **Ekstraksi** — membuka setiap CBZ atau CBR dan membaca gambar internal
 2. **Hash setiap halaman** — setiap halaman mendapat perceptual hash
@@ -61,6 +66,9 @@ Ketika 90% halaman di dua arsip cocok, kemungkinan positif palsu turun mendekati
 
 ---
 
+**Kasus 5: Pindaian berwarna vs. pindaian hitam-putih**
+Anda memiliki dua salinan volume manga yang sama: satu adalah pindaian berwarna dari edisi digital awal, yang lain adalah pindaian skala abu-abu dari rilis ulang yang lebih baru. Ukuran file berbeda, kedalaman warna berbeda, tampilan visual berbeda. Tetapi karena dHash mengonversi ke skala abu-abu sebelum hashing, kedua salinan direduksi menjadi sidik jari luminansi yang sama → ditandai sebagai duplikat. Ini adalah kasus yang hampir semua detektor duplikat lain lewatkan sepenuhnya.
+
 ## Batas Perceptual Hashing
 
 **Pengeditan visual signifikan akan memutus pencocokan.** Watermark ringan atau pemotongan kecil biasanya tidak mempengaruhi deteksi.
@@ -71,8 +79,8 @@ Ketika 90% halaman di dua arsip cocok, kemungkinan positif palsu turun mendekati
 
 ---
 
-## Menggunakan Archive Duplicate Scanner
+## Menggunakan Comic Duplicate Scanner
 
-[Archive Duplicate Scanner](/en/archive/) adalah aplikasi Mac asli yang memindahkan duplikat terpilih ke Trash (bukan penghapusan permanen).
+[Comic Duplicate Scanner](/en/archive/) adalah aplikasi Mac asli yang memindahkan duplikat terpilih ke Trash (bukan penghapusan permanen).
 
 Setelah perpustakaan Anda bersih, padukan dengan [BiblioFuse](/en/) di iPhone untuk satu sumber bacaan yang terkurasi.

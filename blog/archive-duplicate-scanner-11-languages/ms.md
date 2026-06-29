@@ -1,8 +1,8 @@
-# Archive Duplicate Scanner Kini Tersedia dalam 11 Bahasa — Cari Komik yang Tidak Anda Ketahui Adalah Pendua
+# Comic Duplicate Scanner Kini Tersedia dalam 11 Bahasa — Cari Komik yang Tidak Anda Ketahui Adalah Pendua
 
-Apabila mengurus koleksi komik yang besar, pendua tidak selalu kelihatan seperti pendua. Satu fail bernama `comic_E1-5.cbz`. Yang lain `ComiX_E1-10.cbz`. Nama berbeza, julat yang kelihatan berbeza — tetapi halaman di dalamnya bertindih. [Archive Duplicate Scanner](/ms/archive/) dibina tepat untuk ini: ia membuka arkib dan membandingkan imej halaman itu sendiri, bukan sekadar nama fail.
+Apabila mengurus koleksi komik yang besar, pendua tidak selalu kelihatan seperti pendua. Satu fail bernama `comic_E1-5.cbz`. Yang lain `ComiX_E1-10.cbz`. Nama berbeza, julat yang kelihatan berbeza — tetapi halaman di dalamnya bertindih. [Comic Duplicate Scanner](/ms/archive/) dibina tepat untuk ini: ia membuka arkib dan membandingkan imej halaman itu sendiri, bukan sekadar nama fail.
 
-Keupayaan itu kini tersedia dalam 11 bahasa. Archive Duplicate Scanner telah meluaskan lokalisasi antara muka penuhnya ke bahasa Inggeris, Sepanyol, Perancis, Belanda, Portugis, Rusia, Cina Ringkas, Jepun, Korea, Bahasa Indonesia, dan Melayu.
+Keupayaan itu kini tersedia dalam 11 bahasa. Comic Duplicate Scanner telah meluaskan lokalisasi antara muka penuhnya ke bahasa Inggeris, Sepanyol, Perancis, Belanda, Portugis, Rusia, Cina Ringkas, Jepun, Korea, Bahasa Indonesia, dan Melayu.
 
 ## Masalah Pengesanan Berasaskan Nama Fail
 
@@ -12,7 +12,7 @@ Pencari pendua standard membandingkan nama, saiz, atau cincang. Pendekatan itu g
 - **Julat episod yang bertindih**: `manga_vol1_ch1-5.cbz` dan `manga_vol1_ch3-8.cbz` mengandungi bab yang sama di dalam arkib yang berbeza
 - **Fail yang dikodkan semula**: CBZ yang dieksport semula mempunyai cincang yang berbeza tetapi kandungan halaman yang sama
 
-[Archive Duplicate Scanner](/ms/archive/) memintas masalah ini dengan mengekstrak sampel imej halaman daripada setiap arkib dan membandingkannya secara visual menggunakan pencincangan perseptual.
+[Comic Duplicate Scanner](/ms/archive/) memintas masalah ini dengan mengekstrak sampel imej halaman daripada setiap arkib dan membandingkannya secara visual menggunakan pencincangan perseptual.
 
 ## Yang Baharu: Sokongan Penuh 11 Bahasa
 
@@ -34,10 +34,10 @@ Keseluruhan antara muka aplikasi diterjemahkan — kawalan imbasan, senarai kepu
 
 ## Cara Kerja Perbandingan Visual
 
-Archive Duplicate Scanner membuka setiap arkib CBZ, CBR, ZIP, atau RAR, mengekstrak halaman awal, dan menjana cincang perseptual bagi setiap satu. Jika cukup banyak cincang yang sepadan, pasangan tersebut ditandakan sebagai pendua berpotensi — tanpa mengira apa yang dikatakan nama fail.
+Comic Duplicate Scanner membuka setiap arkib CBZ, CBR, ZIP, atau RAR, mengekstrak halaman awal, dan menjana cincang perseptual bagi setiap satu. Jika cukup banyak cincang yang sepadan, pasangan tersebut ditandakan sebagai pendua berpotensi — tanpa mengira apa yang dikatakan nama fail.
 
 Anda mengawal sensitiviti padanan. Ambang yang lebih ketat memerlukan padanan visual yang lebih dekat; ambang yang lebih longgar menangkap lebih banyak kes sempadan.
 
-Archive Duplicate Scanner percuma untuk mengimbas dan pratonton padanan. Archive Duplicate Scanner Pro ialah pembelian universal sekali yang membolehkan tindakan pindah/padam pukal. Tanpa langganan.
+Comic Duplicate Scanner percuma untuk mengimbas dan pratonton padanan. Comic Duplicate Scanner Pro ialah pembelian universal sekali yang membolehkan tindakan pindah/padam pukal. Tanpa langganan.
 
-Muat turun [Archive Duplicate Scanner](/ms/archive/) dari App Store atau Microsoft Store.
+Muat turun [Comic Duplicate Scanner](/ms/archive/) dari App Store atau Microsoft Store.

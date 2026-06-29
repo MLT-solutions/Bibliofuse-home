@@ -4,7 +4,7 @@ You open your manga folder and notice something off: *One Piece* volume 47 is th
 
 For most manga readers, duplicates accumulate silently over years of downloading from different sources, moving archives between drives, and creating backups that never got cleaned up. The result is wasted storage, confusion when reading, and no easy way to tell which version is highest quality.
 
-This guide walks through a practical workflow for finding, reviewing, and removing duplicate manga using [Archive Duplicate Scanner](/en/archive/) — a Mac utility built specifically for this problem.
+This guide walks through a practical workflow for finding, reviewing, and removing duplicate manga using [Comic Duplicate Scanner](/en/archive/) — a Mac utility built specifically for this problem.
 
 ---
 
@@ -24,9 +24,9 @@ A standard duplicate file finder won't catch most of these cases because it comp
 
 ---
 
-## What Archive Duplicate Scanner Does Differently
+## What Comic Duplicate Scanner Does Differently
 
-[Archive Duplicate Scanner](/en/archive/) uses **perceptual hashing** to compare the actual images inside your CBZ and CBR archives. Instead of asking "are these two files byte-for-byte identical?", it asks "do these two archives contain the same comic pages?"
+[Comic Duplicate Scanner](/en/archive/) uses **perceptual hashing** to compare the actual images inside your CBZ and CBR archives. Instead of asking "are these two files byte-for-byte identical?", it asks "do these two archives contain the same comic pages?"
 
 This means it catches duplicates that have been:
 
@@ -43,7 +43,7 @@ It also works on images directly, not just archives, so if you have a mix of loo
 
 ### Step 1: Scan your library folder
 
-Open Archive Duplicate Scanner and add your manga folder — or multiple folders if your collection spans drives. You can drag and drop folders directly onto the app.
+Open Comic Duplicate Scanner and add your manga folder — or multiple folders if your collection spans drives. You can drag and drop folders directly onto the app.
 
 The scanner reads every CBZ and CBR file it finds, extracts images, and generates perceptual hashes for each page. This happens entirely on your Mac with no network connection required.
 
@@ -51,7 +51,7 @@ For a large library (several thousand files), the initial scan may take a few mi
 
 ### Step 2: Review matched pairs
 
-Once the scan completes, Archive Duplicate Scanner presents matched pairs side by side. For each pair, you can see:
+Once the scan completes, Comic Duplicate Scanner presents matched pairs side by side. For each pair, you can see:
 
 - The file path of both copies
 - Thumbnail previews so you can visually confirm they're the same content
@@ -68,11 +68,11 @@ Use the review interface to mark which file you want to keep and which to remove
 - **Keep the version from a trusted source folder** — if you have a "curated" library and a "downloads" folder, prefer the curated copy
 - **Keep the file with the cleaner filename** — easier to manage long-term
 
-Archive Duplicate Scanner lets you select a keep/remove decision for each pair, or apply a rule across all matches (e.g. "always keep the larger file").
+Comic Duplicate Scanner lets you select a keep/remove decision for each pair, or apply a rule across all matches (e.g. "always keep the larger file").
 
 ### Step 4: Move duplicates to Trash
 
-Once you've reviewed and selected, send the duplicates to Trash. Archive Duplicate Scanner moves files — it does not permanently delete them. This means you can recover a file if you make a mistake, by simply going to Trash and putting it back.
+Once you've reviewed and selected, send the duplicates to Trash. Comic Duplicate Scanner moves files — it does not permanently delete them. This means you can recover a file if you make a mistake, by simply going to Trash and putting it back.
 
 Only empty the Trash once you're confident the right files were removed.
 
@@ -80,7 +80,7 @@ Only empty the Trash once you're confident the right files were removed.
 
 ## Handling Series Folders vs Flat Structures
 
-If your manga library is organised into per-series subfolders (e.g. `Manga/Berserk/`, `Manga/Vinland Saga/`), Archive Duplicate Scanner will cross-folder compare. A duplicate sitting in `Manga/Berserk/` and a stray copy in `Downloads/old/Berserk_vol3.cbz` will still be matched.
+If your manga library is organised into per-series subfolders (e.g. `Manga/Berserk/`, `Manga/Vinland Saga/`), Comic Duplicate Scanner will cross-folder compare. A duplicate sitting in `Manga/Berserk/` and a stray copy in `Downloads/old/Berserk_vol3.cbz` will still be matched.
 
 If your collection is flat (all volumes in one folder), the scan is faster but the review interface is especially useful for spotting which copy came from which source.
 
@@ -90,9 +90,9 @@ If your collection is flat (all volumes in one folder), the scan is faster but t
 
 **Establish a single "authoritative" folder.** Keep your curated library in one place. When you download a new volume, move it into that folder and delete the original from your downloads directory — don't let volumes accumulate in two places.
 
-**Scan after every major download session.** Run Archive Duplicate Scanner after you've downloaded a batch of new volumes to catch overlaps before they multiply. The scan takes only a few minutes for incremental checks once the initial index is built.
+**Scan after every major download session.** Run Comic Duplicate Scanner after you've downloaded a batch of new volumes to catch overlaps before they multiply. The scan takes only a few minutes for incremental checks once the initial index is built.
 
-**Name files consistently.** Even though Archive Duplicate Scanner works regardless of filename, consistent naming (series name, volume number, source) makes the review step easier and reduces the chance of confusion.
+**Name files consistently.** Even though Comic Duplicate Scanner works regardless of filename, consistent naming (series name, volume number, source) makes the review step easier and reduces the chance of confusion.
 
 **Use [BiblioFuse](/en/) to read from your curated folder.** When you stream your Mac library to iPhone or iPad using BiblioFuse's home streaming feature, you're reading from the single source of truth — not a copy. This prevents reading-progress drift between duplicate copies.
 
@@ -100,14 +100,14 @@ If your collection is flat (all volumes in one folder), the scan is faster but t
 
 ## FAQ
 
-**Will Archive Duplicate Scanner delete my files automatically?**
+**Will Comic Duplicate Scanner delete my files automatically?**
 No. It moves files to Trash, not permanent deletion. You review every match before anything is removed, and you can restore from Trash if needed.
 
 **What formats does it support?**
 CBZ, CBR, and image archives. It also supports loose image files, so if you have a mix of packed volumes and extracted page folders, it handles both.
 
 **My two files have completely different checksums — will it still find the match?**
-Yes. Archive Duplicate Scanner uses perceptual hashing on the images inside each archive, not the archive checksum. Re-compressed files, renamed files, and files with different internal structures are all matched based on visual content.
+Yes. Comic Duplicate Scanner uses perceptual hashing on the images inside each archive, not the archive checksum. Re-compressed files, renamed files, and files with different internal structures are all matched based on visual content.
 
 **How do I decide which copy to keep?**
 Check file size (larger is usually better quality), compare source (known-good source vs. unknown download), and review the thumbnail previews to confirm the content matches.
@@ -116,6 +116,6 @@ Check file size (larger is usually better quality), compare source (known-good s
 
 ## The Result
 
-A well-maintained manga library is faster to browse, easier to back up, and more reliable to read. Running Archive Duplicate Scanner once after a big cleanup — and periodically after new downloads — keeps duplicates from piling up again.
+A well-maintained manga library is faster to browse, easier to back up, and more reliable to read. Running Comic Duplicate Scanner once after a big cleanup — and periodically after new downloads — keeps duplicates from piling up again.
 
 If you use BiblioFuse on iPhone or iPad, a cleaner Mac library means fewer sync issues, faster home streaming, and reading progress that actually means something.

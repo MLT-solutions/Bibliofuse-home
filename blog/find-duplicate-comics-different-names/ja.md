@@ -2,7 +2,7 @@
 
 コミックライブラリを整理しようと一般的な重複検索ツールを走らせたら「重複なし」と表示されます。でも何かおかしいとわかっています — 第1-5話のファイルと第1-10話のファイルがあり、最初の5話は明らかに重複しているのに。
 
-これが [Archive Duplicate Scanner](/ja/archive/) が解決するために作られた問題です：ファイル名やサイズではなく、ページの実際の内容を比較して重複コミックアーカイブを見つけます。
+これが [Comic Duplicate Scanner](/ja/archive/) が解決するために作られた問題です：ファイル名やサイズではなく、ページの実際の内容を比較して重複コミックアーカイブを見つけます。
 
 ## なぜ一般的な重複検索がコミックに効かないか
 
@@ -11,9 +11,9 @@
 - **再エンコードファイル**：2つの配布元からの同じコミックで、JPEG品質が異なりハッシュも完全に違う
 - **異なるフォーマット**：CBZとCBRで同じ内容
 
-## Archive Duplicate Scanner の検出方法
+## Comic Duplicate Scanner の検出方法
 
-[Archive Duplicate Scanner](/ja/archive/) は各アーカイブ内の実際のページ画像に対して知覚ハッシュを使用します。
+[Comic Duplicate Scanner](/ja/archive/) は各アーカイブ内の実際のページ画像に対して知覚ハッシュを使用します。
 
 1. 両方のアーカイブ（CBZ、CBR、ZIP、RAR）を開く
 2. 各アーカイブから最初のページを抽出
@@ -24,6 +24,6 @@
 
 厳しいしきい値はより近い視覚的一致を必要とし、緩いしきい値はより多くの境界ケースを拾います。デフォルトは誤検出なしで実際の重複を捕捉するように調整されています。
 
-Archive Duplicate Scanner はスキャンとプレビューが無料。Proは一括操作を解放。サブスクリプション不要。
+Comic Duplicate Scanner はスキャンとプレビューが無料。Proは一括操作を解放。サブスクリプション不要。
 
-App StoreまたはMicrosoft Storeから [Archive Duplicate Scanner](/ja/archive/) をダウンロード。
+App StoreまたはMicrosoft Storeから [Comic Duplicate Scanner](/ja/archive/) をダウンロード。

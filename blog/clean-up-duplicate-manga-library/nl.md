@@ -4,7 +4,7 @@ Je opent je mangamap en ziet iets vreemds: deel 47 van *One Piece* staat er drie
 
 Voor de meeste mangalezers hopen duplicaten zich stilletjes op over jaren van downloads van verschillende bronnen, verplaatsingen van archieven tussen schijven en back-ups die nooit opgeruimd werden. Het resultaat is verspilde opslag, verwarring bij het lezen en geen eenvoudige manier om te bepalen welke versie de beste kwaliteit heeft.
 
-Deze gids beschrijft een praktische workflow voor het vinden, beoordelen en verwijderen van dubbele manga met [Archive Duplicate Scanner](/en/archive/) — een Mac-hulpprogramma dat speciaal voor dit probleem is gebouwd.
+Deze gids beschrijft een praktische workflow voor het vinden, beoordelen en verwijderen van dubbele manga met [Comic Duplicate Scanner](/en/archive/) — een Mac-hulpprogramma dat speciaal voor dit probleem is gebouwd.
 
 ---
 
@@ -22,9 +22,9 @@ Een standaard zoeker naar dubbele bestanden detecteert de meeste gevallen niet o
 
 ---
 
-## Wat Archive Duplicate Scanner anders doet
+## Wat Comic Duplicate Scanner anders doet
 
-[Archive Duplicate Scanner](/en/archive/) gebruikt **perceptuele hashing** om de werkelijke afbeeldingen in je CBZ- en CBR-archieven te vergelijken. In plaats van te vragen "zijn deze twee bestanden byte voor byte identiek?", vraagt het "bevatten deze twee archieven dezelfde strippagina's?"
+[Comic Duplicate Scanner](/en/archive/) gebruikt **perceptuele hashing** om de werkelijke afbeeldingen in je CBZ- en CBR-archieven te vergelijken. In plaats van te vragen "zijn deze twee bestanden byte voor byte identiek?", vraagt het "bevatten deze twee archieven dezelfde strippagina's?"
 
 Dit betekent dat het duplicaten detecteert die zijn:
 
@@ -39,13 +39,13 @@ Dit betekent dat het duplicaten detecteert die zijn:
 
 ### Stap 1: Scan je bibliotheekmap
 
-Open Archive Duplicate Scanner en voeg je mangamap toe. Je kunt mappen rechtstreeks naar de app slepen.
+Open Comic Duplicate Scanner en voeg je mangamap toe. Je kunt mappen rechtstreeks naar de app slepen.
 
 De scanner leest elk CBZ- en CBR-bestand, extraheert afbeeldingen en genereert perceptuele hashes voor elke pagina. Dit gebeurt volledig op je Mac zonder netwerkverbinding.
 
 ### Stap 2: Beoordeel gematchte paren
 
-Na voltooiing van de scan presenteert Archive Duplicate Scanner gematchte paren naast elkaar met miniatuurvoorbeelden, bestandsgrootte en overeenkomstpercentage.
+Na voltooiing van de scan presenteert Comic Duplicate Scanner gematchte paren naast elkaar met miniatuurvoorbeelden, bestandsgrootte en overeenkomstpercentage.
 
 ### Stap 3: Selecteer wat je wilt verwijderen
 
@@ -53,7 +53,7 @@ Veelgebruikte strategie: bewaar het grotere bestand (doorgaans hogere resolutie)
 
 ### Stap 4: Verplaats duplicaten naar de Prullenmand
 
-Archive Duplicate Scanner verplaatst bestanden naar de Prullenmand — geen definitieve verwijdering. Je kunt bestanden herstellen als dat nodig is.
+Comic Duplicate Scanner verplaatst bestanden naar de Prullenmand — geen definitieve verwijdering. Je kunt bestanden herstellen als dat nodig is.
 
 ---
 
@@ -61,7 +61,7 @@ Archive Duplicate Scanner verplaatst bestanden naar de Prullenmand — geen defi
 
 **Stel één "gezaghebbende" map in.** Bewaar je gecureerde bibliotheek op één plek.
 
-**Scan na elke grote downloadsessie.** Start Archive Duplicate Scanner na het downloaden van een batch nieuwe delen om overlapping te detecteren.
+**Scan na elke grote downloadsessie.** Start Comic Duplicate Scanner na het downloaden van een batch nieuwe delen om overlapping te detecteren.
 
 **Gebruik [BiblioFuse](/en/) om te lezen vanuit je gecureerde map.** Wanneer je je Mac-bibliotheek streamt naar iPhone of iPad via BiblioFuse, lees je van de enige bron van de waarheid.
 
@@ -69,11 +69,11 @@ Archive Duplicate Scanner verplaatst bestanden naar de Prullenmand — geen defi
 
 ## Veelgestelde vragen
 
-**Verwijdert Archive Duplicate Scanner mijn bestanden automatisch?**
+**Verwijdert Comic Duplicate Scanner mijn bestanden automatisch?**
 Nee. Het verplaatst bestanden naar de Prullenmand, niet definitief verwijderd.
 
 **Welke formaten worden ondersteund?**
 CBZ, CBR en afbeeldingsarchieven.
 
 **Mijn twee bestanden hebben volledig verschillende checksums — zal het de overeenkomst toch vinden?**
-Ja. Archive Duplicate Scanner gebruikt perceptuele hashing op de afbeeldingen in elk archief, niet de bestandschecksum.
+Ja. Comic Duplicate Scanner gebruikt perceptuele hashing op de afbeeldingen in elk archief, niet de bestandschecksum.

@@ -2,7 +2,7 @@
 
 Vous nettoyez votre bibliothèque de comics et lancez un outil de détection de doublons standard. Il vous dit qu'il n'y en a pas. Mais vous savez que quelque chose ne va pas — vous avez les épisodes 1-5 dans un fichier et les épisodes 1-10 dans un autre, et les cinq premiers se chevauchent clairement.
 
-C'est le problème spécifique pour lequel [Archive Duplicate Scanner](/fr/archive/) a été conçu : trouver les archives de comics en double en comparant le contenu réel des pages, pas les noms de fichiers ou les tailles.
+C'est le problème spécifique pour lequel [Comic Duplicate Scanner](/fr/archive/) a été conçu : trouver les archives de comics en double en comparant le contenu réel des pages, pas les noms de fichiers ou les tailles.
 
 ## Pourquoi les Outils Classiques Échouent avec les Comics
 
@@ -11,9 +11,9 @@ C'est le problème spécifique pour lequel [Archive Duplicate Scanner](/fr/archi
 - **Fichiers ré-encodés** : même comic de deux sources, qualité JPEG différente, hash complètement différent
 - **Formats différents** : même contenu en CBZ et CBR
 
-## Comment Archive Duplicate Scanner les Détecte
+## Comment Comic Duplicate Scanner les Détecte
 
-[Archive Duplicate Scanner](/fr/archive/) utilise le hachage perceptuel sur les images de pages réelles à l'intérieur de chaque archive. Il :
+[Comic Duplicate Scanner](/fr/archive/) utilise le hachage perceptuel sur les images de pages réelles à l'intérieur de chaque archive. Il :
 
 1. Ouvre les deux archives (CBZ, CBR, ZIP ou RAR)
 2. Extrait les premières pages de chacune
@@ -24,6 +24,6 @@ Si les hachages correspondent au-dessus d'un seuil configurable, les archives so
 
 Un seuil plus strict nécessite une correspondance visuelle plus proche. Plus laxe, il capture plus de cas limites. La valeur par défaut est calibrée pour capturer la plupart des doublons pratiques sans faux positifs.
 
-Archive Duplicate Scanner est gratuit pour scanner et prévisualiser. Pro permet des actions de déplacement/suppression en masse. Sans abonnement.
+Comic Duplicate Scanner est gratuit pour scanner et prévisualiser. Pro permet des actions de déplacement/suppression en masse. Sans abonnement.
 
-Téléchargez [Archive Duplicate Scanner](/fr/archive/) sur l'App Store ou le Microsoft Store.
+Téléchargez [Comic Duplicate Scanner](/fr/archive/) sur l'App Store ou le Microsoft Store.

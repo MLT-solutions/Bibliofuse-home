@@ -1,8 +1,8 @@
-# Archive Duplicate Scanner 现已支持 11 种语言 — 找出你不知道是重复的漫画
+# Comic Duplicate Scanner 现已支持 11 种语言 — 找出你不知道是重复的漫画
 
-管理大型漫画收藏时，重复文件不总是一眼就能看出来。一个文件叫 `comic_E1-5.cbz`，另一个叫 `ComiX_E1-10.cbz`。名称不同，表面上的集数范围也不同——但内部页面是重叠的。[Archive Duplicate Scanner](/zh/archive/) 正是为此而生：它打开压缩包，比对页面图片本身，而不仅仅是文件名。
+管理大型漫画收藏时，重复文件不总是一眼就能看出来。一个文件叫 `comic_E1-5.cbz`，另一个叫 `ComiX_E1-10.cbz`。名称不同，表面上的集数范围也不同——但内部页面是重叠的。[Comic Duplicate Scanner](/zh/archive/) 正是为此而生：它打开压缩包，比对页面图片本身，而不仅仅是文件名。
 
-这一功能现已支持 11 种语言。Archive Duplicate Scanner 将完整的界面本地化扩展至英语、西班牙语、法语、荷兰语、葡萄牙语、俄语、简体中文、日语、韩语、印度尼西亚语和马来语。
+这一功能现已支持 11 种语言。Comic Duplicate Scanner 将完整的界面本地化扩展至英语、西班牙语、法语、荷兰语、葡萄牙语、俄语、简体中文、日语、韩语、印度尼西亚语和马来语。
 
 ## 按文件名查找重复的局限
 
@@ -12,7 +12,7 @@
 - **集数范围重叠**：`manga_vol1_ch1-5.cbz` 和 `manga_vol1_ch3-8.cbz` 在不同压缩包中包含相同章节
 - **重新编码的文件**：以不同 JPEG 质量重新导出的 CBZ 具有不同的哈希值，但页面内容相同
 
-[Archive Duplicate Scanner](/zh/archive/) 通过提取每个压缩包的页面图片样本，使用感知哈希进行视觉比对，彻底绕开上述问题。
+[Comic Duplicate Scanner](/zh/archive/) 通过提取每个压缩包的页面图片样本，使用感知哈希进行视觉比对，彻底绕开上述问题。
 
 ## 新功能：完整支持 11 种语言
 
@@ -34,10 +34,10 @@
 
 ## 视觉比对的工作原理
 
-Archive Duplicate Scanner 打开每个 CBZ、CBR、ZIP 或 RAR 压缩包，提取开头页面并为每页生成感知哈希。如果足够多的哈希匹配，该对文件就会被标记为潜在重复——无论文件名写的是什么。
+Comic Duplicate Scanner 打开每个 CBZ、CBR、ZIP 或 RAR 压缩包，提取开头页面并为每页生成感知哈希。如果足够多的哈希匹配，该对文件就会被标记为潜在重复——无论文件名写的是什么。
 
 你可以控制匹配灵敏度。更严格的阈值要求更接近的视觉匹配；更宽松的阈值可以捕获更多边界情况。
 
-Archive Duplicate Scanner 免费提供扫描和预览匹配结果功能。Archive Duplicate Scanner Pro 是一次性购买，解锁批量移动/删除操作。无需订阅。
+Comic Duplicate Scanner 免费提供扫描和预览匹配结果功能。Comic Duplicate Scanner Pro 是一次性购买，解锁批量移动/删除操作。无需订阅。
 
-前往 App Store 或 Microsoft Store 下载 [Archive Duplicate Scanner](/zh/archive/)。
+前往 App Store 或 Microsoft Store 下载 [Comic Duplicate Scanner](/zh/archive/)。

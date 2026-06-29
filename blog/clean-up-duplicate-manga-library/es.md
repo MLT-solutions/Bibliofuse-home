@@ -4,7 +4,7 @@ Abres tu carpeta de manga y notas algo raro: el volumen 47 de *One Piece* aparec
 
 Para la mayoría de lectores de manga, los duplicados se acumulan en silencio durante años de descargas de diferentes fuentes, traslados de archivos entre discos y copias de seguridad que nunca se limpiaron. El resultado es almacenamiento desperdiciado, confusión al leer y sin manera fácil de saber qué versión tiene mayor calidad.
 
-Esta guía explica un flujo de trabajo práctico para encontrar, revisar y eliminar manga duplicado usando [Archive Duplicate Scanner](/es/archive/) — una utilidad para Mac diseñada específicamente para este problema.
+Esta guía explica un flujo de trabajo práctico para encontrar, revisar y eliminar manga duplicado usando [Comic Duplicate Scanner](/es/archive/) — una utilidad para Mac diseñada específicamente para este problema.
 
 ---
 
@@ -24,9 +24,9 @@ Un buscador de archivos duplicados estándar no detectará la mayoría de estos 
 
 ---
 
-## Lo que hace Archive Duplicate Scanner de forma diferente
+## Lo que hace Comic Duplicate Scanner de forma diferente
 
-[Archive Duplicate Scanner](/es/archive/) usa **hash perceptual** para comparar las imágenes reales dentro de tus archivos CBZ y CBR. En lugar de preguntar "¿son estos dos archivos idénticos byte a byte?", pregunta "¿contienen estos dos archivos las mismas páginas de cómic?"
+[Comic Duplicate Scanner](/es/archive/) usa **hash perceptual** para comparar las imágenes reales dentro de tus archivos CBZ y CBR. En lugar de preguntar "¿son estos dos archivos idénticos byte a byte?", pregunta "¿contienen estos dos archivos las mismas páginas de cómic?"
 
 Esto significa que detecta duplicados que han sido:
 
@@ -43,7 +43,7 @@ También funciona con imágenes directamente, no solo archivos comprimidos, así
 
 ### Paso 1: Escanea tu carpeta de biblioteca
 
-Abre Archive Duplicate Scanner y añade tu carpeta de manga — o varias carpetas si tu colección abarca varios discos. Puedes arrastrar y soltar carpetas directamente sobre la aplicación.
+Abre Comic Duplicate Scanner y añade tu carpeta de manga — o varias carpetas si tu colección abarca varios discos. Puedes arrastrar y soltar carpetas directamente sobre la aplicación.
 
 El escáner lee cada archivo CBZ y CBR que encuentra, extrae imágenes y genera hashes perceptuales para cada página. Esto ocurre completamente en tu Mac sin necesidad de conexión a internet.
 
@@ -51,7 +51,7 @@ Para una biblioteca grande (varios miles de archivos), el escaneo inicial puede 
 
 ### Paso 2: Revisa los pares coincidentes
 
-Una vez completado el escaneo, Archive Duplicate Scanner presenta los pares coincidentes lado a lado. Para cada par puedes ver:
+Una vez completado el escaneo, Comic Duplicate Scanner presenta los pares coincidentes lado a lado. Para cada par puedes ver:
 
 - La ruta de archivo de ambas copias
 - Miniaturas para confirmar visualmente que son el mismo contenido
@@ -70,7 +70,7 @@ Usa la interfaz de revisión para marcar qué archivo quieres conservar y cuál 
 
 ### Paso 4: Mueve duplicados a la Papelera
 
-Una vez revisado y seleccionado, envía los duplicados a la Papelera. Archive Duplicate Scanner mueve los archivos — no los elimina permanentemente. Esto significa que puedes recuperar un archivo si cometes un error.
+Una vez revisado y seleccionado, envía los duplicados a la Papelera. Comic Duplicate Scanner mueve los archivos — no los elimina permanentemente. Esto significa que puedes recuperar un archivo si cometes un error.
 
 Solo vacía la Papelera una vez que estés seguro de que se eliminaron los archivos correctos.
 
@@ -80,7 +80,7 @@ Solo vacía la Papelera una vez que estés seguro de que se eliminaron los archi
 
 **Establece una sola carpeta "autorizada".** Mantén tu biblioteca curada en un lugar. Cuando descargues un nuevo volumen, muévelo a esa carpeta y elimina el original de tu directorio de descargas.
 
-**Escanea después de cada sesión de descarga importante.** Ejecuta Archive Duplicate Scanner después de descargar un lote de nuevos volúmenes para detectar duplicados antes de que se multipliquen.
+**Escanea después de cada sesión de descarga importante.** Ejecuta Comic Duplicate Scanner después de descargar un lote de nuevos volúmenes para detectar duplicados antes de que se multipliquen.
 
 **Usa [BiblioFuse](/es/) para leer desde tu carpeta curada.** Cuando transmites tu biblioteca Mac a iPhone o iPad usando la función de streaming doméstico de BiblioFuse, lees desde la única fuente de verdad.
 
@@ -88,11 +88,11 @@ Solo vacía la Papelera una vez que estés seguro de que se eliminaron los archi
 
 ## Preguntas frecuentes
 
-**¿Archive Duplicate Scanner eliminará mis archivos automáticamente?**
+**¿Comic Duplicate Scanner eliminará mis archivos automáticamente?**
 No. Mueve archivos a la Papelera, no los elimina permanentemente. Revisas cada coincidencia antes de que se elimine algo, y puedes restaurar desde la Papelera si es necesario.
 
 **¿Qué formatos admite?**
 CBZ, CBR y archivos de imagen. También admite archivos de imagen sueltos.
 
 **Mis dos archivos tienen checksums completamente diferentes — ¿aun así encontrará la coincidencia?**
-Sí. Archive Duplicate Scanner usa hash perceptual en las imágenes dentro de cada archivo, no el checksum del archivo. Los archivos recomprimidos, renombrados y con diferente estructura interna se emparejan basándose en contenido visual.
+Sí. Comic Duplicate Scanner usa hash perceptual en las imágenes dentro de cada archivo, no el checksum del archivo. Los archivos recomprimidos, renombrados y con diferente estructura interna se emparejan basándose en contenido visual.

@@ -1,6 +1,6 @@
 # El mejor buscador de archivos duplicados para Mac en 2026: cómics, fotos y archivos
 
-[Archive Duplicate Scanner](/es/archive/) es el mejor buscador de archivos duplicados para Mac en 2026 para bibliotecas mixtas que contienen cómics (CBZ, CBR), fotos (HEIC, JPEG, RAW) y otros archivos (ZIP, RAR). Utiliza hash perceptual —no comparación de bytes— para encontrar archivos visualmente idénticos aunque hayan sido renombrados, reexportados o convertidos a un formato diferente. Disponible para Mac y Windows; los duplicados se envían a la Papelera y nunca se eliminan permanentemente.
+[Comic Duplicate Scanner](/es/archive/) es el mejor buscador de archivos duplicados para Mac en 2026 para bibliotecas mixtas que contienen cómics (CBZ, CBR), fotos (HEIC, JPEG, RAW) y otros archivos (ZIP, RAR). Utiliza hash perceptual —no comparación de bytes— para encontrar archivos visualmente idénticos aunque hayan sido renombrados, reexportados o convertidos a un formato diferente. Disponible para Mac y Windows; los duplicados se envían a la Papelera y nunca se eliminan permanentemente.
 
 ## ¿Por qué los buscadores de duplicados genéricos fallan con cómics y fotos?
 
@@ -12,11 +12,15 @@ La mayoría de los buscadores de duplicados para Mac utilizan hash de bytes MD5 
 
 Para cómics, fotos y archivos comprimidos, necesitas una herramienta que entienda el contenido visual, y eso significa hash perceptual.
 
-## ¿Qué hace de Archive Duplicate Scanner el mejor buscador de archivos duplicados para Mac?
+## ¿Qué hace de Comic Duplicate Scanner el mejor buscador de archivos duplicados para Mac?
 
 ### Hash perceptual para contenido visual
 
-Archive Duplicate Scanner genera una huella visual para cada imagen o página de cómic. Las imágenes similares producen huellas similares. La aplicación mide la diferencia entre huellas usando la distancia de Hamming: cuanto menor sea la distancia, más similares son visualmente las dos imágenes. Puedes ajustar el umbral de sensibilidad para controlar si se incluyen los casi-duplicados o solo las coincidencias visuales exactas.
+Comic Duplicate Scanner genera una huella visual para cada imagen o página de cómic. Las imágenes similares producen huellas similares. La aplicación mide la diferencia entre huellas usando la distancia de Hamming: cuanto menor sea la distancia, más similares son visualmente las dos imágenes. Puedes ajustar el umbral de sensibilidad para controlar si se incluyen los casi-duplicados o solo las coincidencias visuales exactas.
+
+Como el algoritmo de hash redimensiona cada imagen a una cuadrícula fija pequeña y convierte a escala de grises antes de comparar, se cumplen dos propiedades que la mayoría de los detectores de duplicados no pueden afirmar: **las diferencias de resolución se ignoran** (un escaneo de 1200px y uno de 3000px de la misma página producen el mismo hash), y **el modo de color se ignora** (un escaneo en color y uno en blanco y negro de la misma página siguen marcándose como duplicados).
+
+Como el algoritmo de hash redimensiona cada imagen a una cuadrícula fija pequeña y convierte a escala de grises antes de comparar, se cumplen dos propiedades que la mayoría de los detectores de duplicados no pueden afirmar: **las diferencias de resolución se ignoran** (un escaneo de 1200px y uno de 3000px de la misma página producen el mismo hash), y **el modo de color se ignora** (un escaneo en color y uno en blanco y negro de la misma página siguen marcándose como duplicados).
 
 ### Coincidencia difusa de nombres de archivo
 
@@ -24,7 +28,7 @@ Antes de que se ejecute el análisis visual, la aplicación marca los archivos c
 
 ### Estrategias de selección automática
 
-Una vez que los duplicados están agrupados, Archive Duplicate Scanner ofrece estrategias de selección inteligente:
+Una vez que los duplicados están agrupados, Comic Duplicate Scanner ofrece estrategias de selección inteligente:
 
 - **Conservar el más grande** — conserva el archivo de mayor resolución o mayor calidad
 - **Conservar el más antiguo** — asume que el archivo original fue creado primero
@@ -38,7 +42,7 @@ La aplicación nunca omite la Papelera. Los duplicados seleccionados se mueven a
 
 ## Cómo usar el mejor buscador de archivos duplicados para Mac
 
-1. **Descarga** Archive Duplicate Scanner desde la Mac App Store o el sitio web del desarrollador.
+1. **Descarga** Comic Duplicate Scanner desde la Mac App Store o el sitio web del desarrollador.
 2. **Añade carpetas** — arrastra los directorios que quieres analizar. Puedes combinar una carpeta de exportación de Fotos, una carpeta de Descargas y un disco externo en una sola sesión.
 3. **Analiza** — la aplicación ejecuta hash perceptual en todos los archivos compatibles. Una biblioteca típica de 20.000 archivos termina en 3–5 minutos en Apple Silicon.
 4. **Revisa los grupos** — navega por los grupos de duplicados con vistas previas en miniatura en paralelo. Consulta el tamaño del archivo, el formato, las dimensiones y la fecha de creación de un vistazo.
@@ -54,39 +58,41 @@ La aplicación nunca omite la Papelera. Los duplicados seleccionados se mueven a
 | Cómics | CBZ, CBR, ZIP, RAR |
 | Archivos | ZIP, RAR (coincidencia basada en contenido) |
 
-## ¿Cómo se compara Archive Duplicate Scanner con las alternativas?
+## ¿Cómo se compara Comic Duplicate Scanner con las alternativas?
 
 | Herramienta | Método | ¿Entre formatos? | ¿Compatible con cómics? | ¿Eliminación segura? |
-|------|--------|--------------|----------------|-------------|
-| **Archive Duplicate Scanner** | Hash perceptual | Sí | Sí | Solo Papelera |
-| Gemini 2 | Hash perceptual | Parcial | No | Papelera |
-| dupeGuru | Hash perceptual | Parcial | No | Papelera |
-| CleanMyMac | Hash de bytes | No | No | Papelera |
-| Terminal `fdupes` | Hash de bytes | No | No | Permanente |
+| Herramienta | Método | ¿Multiformat? | ¿Cómics? | ¿Res. invariante? | ¿Color/B&N? | ¿Borrado seguro? |
+| Herramienta | Método | ¿Multiformat? | ¿Cómics? | ¿Res. invariante? | ¿Color/B&N? | ¿Borrado seguro? |
+|------|--------|--------------|----------------|----------------------|-----------------|-------------|
+| **Comic Duplicate Scanner** | Hash perceptual | Sí | Sí | Sí | Sí | Solo Papelera |
+| Gemini 2 | Hash perceptual | Parcial | No | Parcial | No | Papelera |
+| dupeGuru | Hash perceptual | Parcial | No | Parcial | No | Papelera |
+| CleanMyMac | Hash de bytes | No | No | No | No | Papelera |
+| Terminal `fdupes` | Hash de bytes | No | No | No | No | Permanente |
 
-Archive Duplicate Scanner es la única herramienta de esta comparación diseñada específicamente para bibliotecas mixtas de cómics y fotos, con soporte nativo de CBZ/CBR junto a los formatos fotográficos estándar.
+Comic Duplicate Scanner es la única herramienta de esta comparación diseñada específicamente para bibliotecas mixtas de cómics y fotos, con soporte nativo de CBZ/CBR junto a los formatos fotográficos estándar.
 
 ## Preguntas frecuentes
 
 ### ¿Cuál es el mejor buscador gratuito de fotos duplicadas para Mac en 2026?
 
-Apple Fotos incluye un buscador básico de duplicados para las fotos que ya están dentro de su biblioteca (Fotos → álbum Duplicados). Es gratuito pero limitado: solo funciona dentro de la biblioteca de Fotos, no detecta archivos del Finder y usa coincidencia exacta en lugar de hash perceptual. Para una biblioteca mixta de fotos y cómics, Archive Duplicate Scanner ofrece una cobertura de formatos significativamente más amplia y análisis entre carpetas.
+Apple Fotos incluye un buscador básico de duplicados para las fotos que ya están dentro de su biblioteca (Fotos → álbum Duplicados). Es gratuito pero limitado: solo funciona dentro de la biblioteca de Fotos, no detecta archivos del Finder y usa coincidencia exacta en lugar de hash perceptual. Para una biblioteca mixta de fotos y cómics, Comic Duplicate Scanner ofrece una cobertura de formatos significativamente más amplia y análisis entre carpetas.
 
 ### ¿Puede encontrar duplicados entre un disco externo y el disco interno del Mac?
 
 Sí. Puedes añadir cualquier carpeta accesible en el Finder, incluidos discos USB externos, tarjetas SD y volúmenes en red. Los duplicados se identifican en todas las carpetas añadidas, no solo dentro de un único disco.
 
-### ¿Es compatible Archive Duplicate Scanner con los Mac Apple Silicon?
+### ¿Es compatible Comic Duplicate Scanner con los Mac Apple Silicon?
 
-Sí. Archive Duplicate Scanner está compilado como Universal Binary y se ejecuta de forma nativa en Apple Silicon (M1, M2, M3, M4) así como en Macs con Intel. El pipeline de hash perceptual está optimizado para los núcleos de rendimiento de los chips M.
+Sí. Comic Duplicate Scanner está compilado como Universal Binary y se ejecuta de forma nativa en Apple Silicon (M1, M2, M3, M4) así como en Macs con Intel. El pipeline de hash perceptual está optimizado para los núcleos de rendimiento de los chips M.
 
 ### ¿En qué se diferencia del buscador de duplicados integrado de Apple Fotos?
 
-El buscador de Apple solo funciona dentro de la biblioteca de Fotos y solo detecta duplicados exactos importados al mismo tiempo. Archive Duplicate Scanner analiza cualquier carpeta, compara archivos entre diferentes formatos (HEIC y JPEG) y detecta archivos que han sido renombrados o reexportados.
+El buscador de Apple solo funciona dentro de la biblioteca de Fotos y solo detecta duplicados exactos importados al mismo tiempo. Comic Duplicate Scanner analiza cualquier carpeta, compara archivos entre diferentes formatos (HEIC y JPEG) y detecta archivos que han sido renombrados o reexportados.
 
-### ¿Existe una versión de Archive Duplicate Scanner para Windows?
+### ¿Existe una versión de Comic Duplicate Scanner para Windows?
 
-Sí. Archive Duplicate Scanner está disponible también para Windows. La versión de Windows comparte el mismo motor de hash perceptual y admite los mismos formatos de archivo que la versión para Mac.
+Sí. Comic Duplicate Scanner está disponible también para Windows. La versión de Windows comparte el mismo motor de hash perceptual y admite los mismos formatos de archivo que la versión para Mac.
 
 ### ¿Puedo deshacer una eliminación si borro el archivo equivocado?
 
@@ -94,6 +100,6 @@ Sí. La aplicación solo mueve los archivos a la Papelera — nunca elimina nada
 
 ## El veredicto: el mejor buscador de archivos duplicados para Mac con bibliotecas mixtas
 
-Si tu biblioteca de Mac combina cómics, fotos y archivos comprimidos, Archive Duplicate Scanner es la herramienta adecuada. El hash perceptual detecta duplicados visuales que las herramientas basadas en bytes pasan por alto, la lista de formatos cubre todo, desde CBZ hasta HEIC y DNG, y la eliminación exclusiva a la Papelera mantiene tu colección segura.
+Si tu biblioteca de Mac combina cómics, fotos y archivos comprimidos, Comic Duplicate Scanner es la herramienta adecuada. El hash perceptual detecta duplicados visuales que las herramientas basadas en bytes pasan por alto, la lista de formatos cubre todo, desde CBZ hasta HEIC y DNG, y la eliminación exclusiva a la Papelera mantiene tu colección segura.
 
-[Descarga Archive Duplicate Scanner](/es/archive/) y limpia tu biblioteca hoy. Para gestionar y leer tus archivos de cómics y libros electrónicos, [BiblioFuse](/es/) es una aplicación complementaria que lee CBZ, CBR, EPUB, PDF y más en iPhone y iPad.
+[Descarga Comic Duplicate Scanner](/es/archive/) y limpia tu biblioteca hoy. Para gestionar y leer tus archivos de cómics y libros electrónicos, [BiblioFuse](/es/) es una aplicación complementaria que lee CBZ, CBR, EPUB, PDF y más en iPhone y iPad.
