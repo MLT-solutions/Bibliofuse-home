@@ -114,7 +114,7 @@ const ContentCue = () => {
           </a>
 
           <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-medium text-green-300">
-            {[t('redesign.contentcuePage.hero.trust1'), t('redesign.contentcuePage.hero.trust2'), t('redesign.contentcuePage.hero.trust3')].map((s) => (
+            {[t('redesign.contentcuePage.hero.trust1'), t('redesign.contentcuePage.hero.trust2'), t('redesign.contentcuePage.hero.trust3'), t('redesign.contentcuePage.hero.trust4')].map((s) => (
               <span key={s} className="flex items-center gap-1.5">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4ade80" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
                 {s}

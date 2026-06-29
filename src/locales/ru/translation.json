@@ -555,7 +555,8 @@
           "bullet2": "Умный авто-выбор и безопасное удаление в Корзину",
           "bullet3": "Кеш хешей для быстрых повторных сканирований",
           "cta": "Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Доступно на 11 языках"
         },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
@@ -564,7 +565,8 @@
           "bullet2": "Сопоставление шаблонов для повторяющихся файлов",
           "bullet3": "Пароли хранятся в системной Связке ключей",
           "cta": "iOS · Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Доступно на 11 языках"
         },
         "contentcue": {
           "tag": "Только iOS",
@@ -572,7 +574,8 @@
           "bullet1": "Возобновление одним нажатием после всплывающих окон",
           "bullet2": "Режим чтения с автопрокруткой",
           "bullet3": "Закладки · Аккаунт не нужен",
-          "cta": "App Store"
+          "cta": "App Store",
+          "bullet4": "Доступно на 11 языках"
         },
         "grepreader": {
           "tag": "iOS Only",
@@ -1326,7 +1329,8 @@
         "trust2": "Безопасное удаление в Корзину",
         "trust3": "7-дневная бесплатная пробная версия",
         "macStore": "Загрузить в Mac App Store",
-        "winStore": "Получить в Microsoft Store"
+        "winStore": "Получить в Microsoft Store",
+        "trust4": "11 языков"
       },
       "scanning": {
         "eyebrow": "Глубокое сканирование архивов",
@@ -1435,7 +1439,8 @@
         "trust2": "Файлы никогда не покидают ваше устройство",
         "trust3": "Универсальная покупка iOS + macOS",
         "appStore": "Скачать в App Store",
-        "winStore": "Получить в Microsoft Store"
+        "winStore": "Получить в Microsoft Store",
+        "trust4": "11 языков"
       },
       "patterns": {
         "eyebrow": "Автоматическое разблокирование по шаблону",
@@ -1517,7 +1522,8 @@
         "trust1": "Объявления выделены, не заблокированы",
         "trust2": "Данные о просмотрах не собираются",
         "trust3": "Работает с любым сайтом",
-        "appStore": "Загрузить из App Store"
+        "appStore": "Загрузить из App Store",
+        "trust4": "11 языков"
       },
       "how": {
         "eyebrow": "Как это работает",

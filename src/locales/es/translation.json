@@ -555,7 +555,8 @@
           "bullet2": "Selección automática inteligente y eliminación segura a la Papelera",
           "bullet3": "Caché de hash para escaneos rápidos repetidos",
           "cta": "Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Disponible en 11 idiomas"
         },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
@@ -564,7 +565,8 @@
           "bullet2": "Coincidencia de patrones para archivos recurrentes",
           "bullet3": "Contraseñas guardadas en el Llavero del sistema",
           "cta": "iOS · Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Disponible en 11 idiomas"
         },
         "contentcue": {
           "tag": "Solo iOS",
@@ -572,7 +574,8 @@
           "bullet1": "Reanudar con un toque tras popups o redirecciones",
           "bullet2": "Modo de lectura con desplazamiento automático",
           "bullet3": "Marcadores · Sin cuenta necesaria",
-          "cta": "App Store"
+          "cta": "App Store",
+          "bullet4": "Disponible en 11 idiomas"
         },
         "grepreader": {
           "tag": "iOS Only",
@@ -1326,7 +1329,8 @@
         "trust2": "Eliminación segura a Papelera",
         "trust3": "Prueba gratuita de 7 días",
         "macStore": "Descargar en Mac App Store",
-        "winStore": "Obtener en Microsoft Store"
+        "winStore": "Obtener en Microsoft Store",
+        "trust4": "11 idiomas"
       },
       "scanning": {
         "eyebrow": "Escaneo Profundo de Archivos",
@@ -1435,7 +1439,8 @@
         "trust2": "Los archivos nunca salen de tu dispositivo",
         "trust3": "Compra universal iOS + macOS",
         "appStore": "Descargar en App Store",
-        "winStore": "Obtener en Microsoft Store"
+        "winStore": "Obtener en Microsoft Store",
+        "trust4": "11 idiomas"
       },
       "patterns": {
         "eyebrow": "Desbloqueo automático basado en patrones",
@@ -1517,7 +1522,8 @@
         "trust1": "Anuncios resaltados, no bloqueados",
         "trust2": "No se recopilan datos de navegación",
         "trust3": "Funciona con cualquier sitio web",
-        "appStore": "Descargar en App Store"
+        "appStore": "Descargar en App Store",
+        "trust4": "11 idiomas"
       },
       "how": {
         "eyebrow": "Cómo funciona",

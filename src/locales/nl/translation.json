@@ -555,7 +555,8 @@
           "bullet2": "Slimme autoselectie en veilig verwijderen naar prullenbak",
           "bullet3": "Hash-cache voor snelle herhaalscans",
           "cta": "Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Beschikbaar in 11 talen"
         },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
@@ -564,7 +565,8 @@
           "bullet2": "Patroonherkenning voor terugkerende bestanden",
           "bullet3": "Wachtwoorden opgeslagen in systeemsleutelhanger",
           "cta": "iOS · Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Beschikbaar in 11 talen"
         },
         "contentcue": {
           "tag": "Alleen iOS",
@@ -572,7 +574,8 @@
           "bullet1": "Hervat met één tik na popups of omleidingen",
           "bullet2": "Leesmodus met automatisch scrollen",
           "bullet3": "Bladwijzers · Geen account nodig",
-          "cta": "App Store"
+          "cta": "App Store",
+          "bullet4": "Beschikbaar in 11 talen"
         },
         "grepreader": {
           "tag": "iOS Only",
@@ -1326,7 +1329,8 @@
         "trust2": "Veilig naar Prullenbak verwijderen",
         "trust3": "7 dagen gratis proberen",
         "macStore": "Downloaden in Mac App Store",
-        "winStore": "Verkrijgen via Microsoft Store"
+        "winStore": "Verkrijgen via Microsoft Store",
+        "trust4": "11 talen"
       },
       "scanning": {
         "eyebrow": "Diepgaand Archiefonderzoek",
@@ -1435,7 +1439,8 @@
         "trust2": "Bestanden verlaten uw apparaat nooit",
         "trust3": "Universele iOS + macOS-aankoop",
         "appStore": "Download op App Store",
-        "winStore": "Haal het van Microsoft Store"
+        "winStore": "Haal het van Microsoft Store",
+        "trust4": "11 talen"
       },
       "patterns": {
         "eyebrow": "Op patroon gebaseerde automatische ontgrendeling",
@@ -1517,7 +1522,8 @@
         "trust1": "Advertenties gemarkeerd, niet geblokkeerd",
         "trust2": "Geen surfgegevens verzameld",
         "trust3": "Werkt met elke website",
-        "appStore": "Download in App Store"
+        "appStore": "Download in App Store",
+        "trust4": "11 talen"
       },
       "how": {
         "eyebrow": "Hoe het werkt",

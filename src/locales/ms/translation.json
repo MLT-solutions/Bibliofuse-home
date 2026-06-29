@@ -555,7 +555,8 @@
           "bullet2": "Pilih automatik pintar & padam selamat ke Tong Sampah",
           "bullet3": "Cache cincang untuk imbasan ulang pantas",
           "cta": "Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Tersedia dalam 11 bahasa"
         },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
@@ -564,7 +565,8 @@
           "bullet2": "Padanan corak untuk fail berulang",
           "bullet3": "Kata laluan disimpan dalam Rantai Kunci sistem",
           "cta": "iOS · Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Tersedia dalam 11 bahasa"
         },
         "contentcue": {
           "tag": "iOS Sahaja",
@@ -572,7 +574,8 @@
           "bullet1": "Sambung semula dengan satu ketuk selepas popup atau ubah hala",
           "bullet2": "Mod baca dengan tatal automatik",
           "bullet3": "Penanda buku · Tiada akaun diperlukan",
-          "cta": "App Store"
+          "cta": "App Store",
+          "bullet4": "Tersedia dalam 11 bahasa"
         },
         "grepreader": {
           "tag": "iOS Only",
@@ -1326,7 +1329,8 @@
         "trust2": "Pemadaman selamat ke Tong Sampah",
         "trust3": "Percubaan percuma 7 hari",
         "macStore": "Muat turun di Mac App Store",
-        "winStore": "Dapatkan dari Microsoft Store"
+        "winStore": "Dapatkan dari Microsoft Store",
+        "trust4": "11 bahasa"
       },
       "scanning": {
         "eyebrow": "Pengimbasan Arkib Mendalam",
@@ -1435,7 +1439,8 @@
         "trust2": "Fail tidak pernah meninggalkan peranti anda",
         "trust3": "Pembelian universal iOS + macOS",
         "appStore": "Muat turun di App Store",
-        "winStore": "Dapatkan dari Microsoft Store"
+        "winStore": "Dapatkan dari Microsoft Store",
+        "trust4": "11 bahasa"
       },
       "patterns": {
         "eyebrow": "Pattern-Based Auto-Unlock",
@@ -1517,7 +1522,8 @@
         "trust1": "Iklan diserlahkan, bukan disekat",
         "trust2": "Tiada data pelayaran dikumpul",
         "trust3": "Berfungsi dengan mana-mana laman web",
-        "appStore": "Muat turun di App Store"
+        "appStore": "Muat turun di App Store",
+        "trust4": "11 bahasa"
       },
       "how": {
         "eyebrow": "Cara Ia Berfungsi",

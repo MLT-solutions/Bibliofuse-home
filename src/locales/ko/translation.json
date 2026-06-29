@@ -555,7 +555,8 @@
           "bullet2": "스마트 자동 선택 및 휴지통으로 안전 삭제",
           "bullet3": "빠른 재스캔을 위한 해시 캐시",
           "cta": "Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "11개 언어 지원"
         },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
@@ -564,7 +565,8 @@
           "bullet2": "반복 파일에 대한 패턴 매칭",
           "bullet3": "비밀번호는 시스템 키체인에 저장",
           "cta": "iOS · Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "11개 언어 지원"
         },
         "contentcue": {
           "tag": "iOS 전용",
@@ -572,7 +574,8 @@
           "bullet1": "팝업 또는 리디렉션 후 한 번 탭으로 재개",
           "bullet2": "자동 스크롤이 있는 읽기 모드",
           "bullet3": "북마크 · 계정 불필요",
-          "cta": "App Store"
+          "cta": "App Store",
+          "bullet4": "11개 언어 지원"
         },
         "grepreader": {
           "tag": "iOS Only",
@@ -1326,7 +1329,8 @@
         "trust2": "안전한 휴지통 삭제",
         "trust3": "7일 무료 체험",
         "macStore": "Mac App Store에서 다운로드",
-        "winStore": "Microsoft Store에서 받기"
+        "winStore": "Microsoft Store에서 받기",
+        "trust4": "11개 언어"
       },
       "scanning": {
         "eyebrow": "심층 아카이브 스캔",
@@ -1435,7 +1439,8 @@
         "trust2": "파일이 기기를 떠나지 않음",
         "trust3": "iOS + macOS 범용 구매",
         "appStore": "App Store에서 다운로드",
-        "winStore": "Microsoft Store에서 받기"
+        "winStore": "Microsoft Store에서 받기",
+        "trust4": "11개 언어"
       },
       "patterns": {
         "eyebrow": "패턴 기반 자동 잠금 해제",
@@ -1517,7 +1522,8 @@
         "trust1": "광고는 강조, 차단하지 않음",
         "trust2": "열람 데이터 수집 없음",
         "trust3": "모든 웹사이트에서 작동",
-        "appStore": "App Store에서 다운로드"
+        "appStore": "App Store에서 다운로드",
+        "trust4": "11개 언어"
       },
       "how": {
         "eyebrow": "작동 원리",

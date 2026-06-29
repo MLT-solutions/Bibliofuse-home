@@ -555,7 +555,8 @@
           "bullet2": "スマート自動選択とゴミ箱への安全な削除",
           "bullet3": "高速再スキャンのためのハッシュキャッシュ",
           "cta": "Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "11言語対応"
         },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
@@ -564,7 +565,8 @@
           "bullet2": "繰り返しファイルのパターンマッチ",
           "bullet3": "パスワードはシステムキーチェーンに保存",
           "cta": "iOS · Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "11言語対応"
         },
         "contentcue": {
           "tag": "iOSのみ",
@@ -572,7 +574,8 @@
           "bullet1": "ポップアップ後もワンタップで再開",
           "bullet2": "自動スクロール付きリーディングモード",
           "bullet3": "ブックマーク · アカウント不要",
-          "cta": "App Store"
+          "cta": "App Store",
+          "bullet4": "11言語対応"
         },
         "grepreader": {
           "tag": "iOS Only",
@@ -1326,7 +1329,8 @@
         "trust2": "ゴミ箱への安全な削除",
         "trust3": "7日間無料トライアル",
         "macStore": "Mac App Store でダウンロード",
-        "winStore": "Microsoft Store から入手"
+        "winStore": "Microsoft Store から入手",
+        "trust4": "11言語"
       },
       "scanning": {
         "eyebrow": "ディープアーカイブスキャン",
@@ -1435,7 +1439,8 @@
         "trust2": "ファイルはデバイスから出ません",
         "trust3": "iOS + macOS ユニバーサル購入",
         "appStore": "App Store でダウンロード",
-        "winStore": "Microsoft Store で入手"
+        "winStore": "Microsoft Store で入手",
+        "trust4": "11言語"
       },
       "patterns": {
         "eyebrow": "パターンベースの自動解除",
@@ -1517,7 +1522,8 @@
         "trust1": "広告はブロックせず強調表示",
         "trust2": "閲覧データは収集しません",
         "trust3": "どのウェブサイトでも動作",
-        "appStore": "App Storeからダウンロード"
+        "appStore": "App Storeからダウンロード",
+        "trust4": "11言語"
       },
       "how": {
         "eyebrow": "使い方",

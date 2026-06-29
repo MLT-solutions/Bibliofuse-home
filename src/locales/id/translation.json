@@ -555,7 +555,8 @@
           "bullet2": "Pilih otomatis cerdas & hapus aman ke Trash",
           "bullet3": "Cache hash untuk pemindaian ulang cepat",
           "cta": "Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Tersedia dalam 11 bahasa"
         },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
@@ -564,7 +565,8 @@
           "bullet2": "Cocokkan pola untuk file berulang",
           "bullet3": "Kata sandi disimpan di Keychain sistem",
           "cta": "iOS · Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Tersedia dalam 11 bahasa"
         },
         "contentcue": {
           "tag": "Hanya iOS",
@@ -572,7 +574,8 @@
           "bullet1": "Lanjutkan dengan satu ketuk setelah popup atau pengalihan",
           "bullet2": "Mode baca dengan gulir otomatis",
           "bullet3": "Bookmark · Tanpa akun diperlukan",
-          "cta": "App Store"
+          "cta": "App Store",
+          "bullet4": "Tersedia dalam 11 bahasa"
         },
         "grepreader": {
           "tag": "iOS Only",
@@ -1326,7 +1329,8 @@
         "trust2": "Penghapusan aman ke Tempat Sampah",
         "trust3": "Uji coba gratis 7 hari",
         "macStore": "Unduh di Mac App Store",
-        "winStore": "Dapatkan dari Microsoft Store"
+        "winStore": "Dapatkan dari Microsoft Store",
+        "trust4": "11 bahasa"
       },
       "scanning": {
         "eyebrow": "Pemindaian Arsip Mendalam",
@@ -1435,7 +1439,8 @@
         "trust2": "File tidak pernah meninggalkan perangkat Anda",
         "trust3": "Pembelian universal iOS + macOS",
         "appStore": "Unduh di App Store",
-        "winStore": "Dapatkan dari Microsoft Store"
+        "winStore": "Dapatkan dari Microsoft Store",
+        "trust4": "11 bahasa"
       },
       "patterns": {
         "eyebrow": "Buka Otomatis Berbasis Pola",
@@ -1517,7 +1522,8 @@
         "trust1": "Iklan ditandai, bukan diblokir",
         "trust2": "Tidak ada data browsing yang dikumpulkan",
         "trust3": "Bekerja dengan situs web apa pun",
-        "appStore": "Unduh di App Store"
+        "appStore": "Unduh di App Store",
+        "trust4": "11 bahasa"
       },
       "how": {
         "eyebrow": "Cara Kerja",

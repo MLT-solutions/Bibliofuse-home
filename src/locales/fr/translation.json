@@ -555,7 +555,8 @@
           "bullet2": "Sélection automatique intelligente et suppression sécurisée vers la Corbeille",
           "bullet3": "Cache de hachage pour analyses rapides répétées",
           "cta": "Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Disponible en 11 langues"
         },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
@@ -564,7 +565,8 @@
           "bullet2": "Correspondance de motifs pour fichiers récurrents",
           "bullet3": "Mots de passe stockés dans le Trousseau système",
           "cta": "iOS · Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Disponible en 11 langues"
         },
         "contentcue": {
           "tag": "iOS uniquement",
@@ -572,7 +574,8 @@
           "bullet1": "Reprise en un tap après popups ou redirections",
           "bullet2": "Mode lecture avec défilement automatique",
           "bullet3": "Favoris · Aucun compte requis",
-          "cta": "App Store"
+          "cta": "App Store",
+          "bullet4": "Disponible en 11 langues"
         },
         "grepreader": {
           "tag": "iOS Only",
@@ -1326,7 +1329,8 @@
         "trust2": "Suppression sécurisée vers la Corbeille",
         "trust3": "Essai gratuit de 7 jours",
         "macStore": "Télécharger sur le Mac App Store",
-        "winStore": "Obtenir sur le Microsoft Store"
+        "winStore": "Obtenir sur le Microsoft Store",
+        "trust4": "11 langues"
       },
       "scanning": {
         "eyebrow": "Analyse Approfondie des Archives",
@@ -1435,7 +1439,8 @@
         "trust2": "Les fichiers ne quittent jamais votre appareil",
         "trust3": "Achat universel iOS + macOS",
         "appStore": "Télécharger sur App Store",
-        "winStore": "Obtenir sur Microsoft Store"
+        "winStore": "Obtenir sur Microsoft Store",
+        "trust4": "11 langues"
       },
       "patterns": {
         "eyebrow": "Déverrouillage automatique basé sur modèle",
@@ -1517,7 +1522,8 @@
         "trust1": "Annonces mises en évidence, non bloquées",
         "trust2": "Aucune donnée de navigation collectée",
         "trust3": "Fonctionne avec n'importe quel site web",
-        "appStore": "Télécharger sur App Store"
+        "appStore": "Télécharger sur App Store",
+        "trust4": "11 langues"
       },
       "how": {
         "eyebrow": "Comment ça marche",

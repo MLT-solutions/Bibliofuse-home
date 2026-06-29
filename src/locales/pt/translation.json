@@ -555,7 +555,8 @@
           "bullet2": "Seleção automática inteligente e eliminação segura para o Lixo",
           "bullet3": "Cache de hash para análises rápidas repetidas",
           "cta": "Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Disponível em 11 idiomas"
         },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
@@ -564,7 +565,8 @@
           "bullet2": "Correspondência de padrões para ficheiros recorrentes",
           "bullet3": "Palavras-passe guardadas nas Chaves do sistema",
           "cta": "iOS · Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Disponível em 11 idiomas"
         },
         "contentcue": {
           "tag": "Apenas iOS",
@@ -572,7 +574,8 @@
           "bullet1": "Retomar com um toque após popups ou redirecionamentos",
           "bullet2": "Modo de leitura com rolagem automática",
           "bullet3": "Favoritos · Sem conta necessária",
-          "cta": "App Store"
+          "cta": "App Store",
+          "bullet4": "Disponível em 11 idiomas"
         },
         "grepreader": {
           "tag": "iOS Only",
@@ -1326,7 +1329,8 @@
         "trust2": "Exclusão segura para Lixeira",
         "trust3": "Teste gratuito de 7 dias",
         "macStore": "Baixar na Mac App Store",
-        "winStore": "Obter na Microsoft Store"
+        "winStore": "Obter na Microsoft Store",
+        "trust4": "11 idiomas"
       },
       "scanning": {
         "eyebrow": "Varredura Profunda de Arquivos",
@@ -1435,7 +1439,8 @@
         "trust2": "Arquivos nunca deixam seu dispositivo",
         "trust3": "Compra universal iOS + macOS",
         "appStore": "Baixar na App Store",
-        "winStore": "Obter na Microsoft Store"
+        "winStore": "Obter na Microsoft Store",
+        "trust4": "11 idiomas"
       },
       "patterns": {
         "eyebrow": "Desbloqueio Automático Baseado em Padrões",
@@ -1517,7 +1522,8 @@
         "trust1": "Anúncios destacados, não bloqueados",
         "trust2": "Nenhum dado de navegação coletado",
         "trust3": "Funciona com qualquer site",
-        "appStore": "Baixar na App Store"
+        "appStore": "Baixar na App Store",
+        "trust4": "11 idiomas"
       },
       "how": {
         "eyebrow": "Como Funciona",

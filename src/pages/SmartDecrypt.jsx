@@ -129,7 +129,7 @@ const SmartDecrypt = () => {
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-medium text-violet-300">
-            {[t('redesign.smartdecryptPage.hero.trust1'), t('redesign.smartdecryptPage.hero.trust2'), t('redesign.smartdecryptPage.hero.trust3')].map((s) => (
+            {[t('redesign.smartdecryptPage.hero.trust1'), t('redesign.smartdecryptPage.hero.trust2'), t('redesign.smartdecryptPage.hero.trust3'), t('redesign.smartdecryptPage.hero.trust4')].map((s) => (
               <span key={s} className="flex items-center gap-1.5">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
                 {s}

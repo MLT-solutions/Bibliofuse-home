@@ -875,7 +875,8 @@
           "bullet2": "Smart auto-select & safe-delete to Trash",
           "bullet3": "Hash cache for fast repeat scans",
           "cta": "Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Available in 11 languages"
         },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
@@ -884,7 +885,8 @@
           "bullet2": "Pattern match for recurring files",
           "bullet3": "Passwords stored in system Keychain",
           "cta": "iOS · Mac App Store",
-          "secondary": "Microsoft Store"
+          "secondary": "Microsoft Store",
+          "bullet4": "Available in 11 languages"
         },
         "contentcue": {
           "tag": "iOS Only",
@@ -892,7 +894,8 @@
           "bullet1": "One-tap resume after popups or redirects",
           "bullet2": "Reading Mode with auto-scroll",
           "bullet3": "Bookmarks · No account needed",
-          "cta": "App Store"
+          "cta": "App Store",
+          "bullet4": "Available in 11 languages"
         },
         "grepreader": {
           "tag": "iOS · Mac · Windows",
@@ -1321,7 +1324,8 @@
         "trust2": "Safe Trash deletion",
         "trust3": "7-day free trial",
         "macStore": "Download on Mac App Store",
-        "winStore": "Get it from Microsoft Store"
+        "winStore": "Get it from Microsoft Store",
+        "trust4": "11 languages"
       },
       "scanning": {
         "eyebrow": "Deep Archive Scanning",
@@ -1430,7 +1434,8 @@
         "trust2": "Files never leave your device",
         "trust3": "Universal iOS + macOS purchase",
         "appStore": "Download on App Store",
-        "winStore": "Get it from Microsoft Store"
+        "winStore": "Get it from Microsoft Store",
+        "trust4": "11 languages"
       },
       "patterns": {
         "eyebrow": "Pattern-Based Auto-Unlock",
@@ -1512,7 +1517,8 @@
         "trust1": "Ads highlighted, not blocked",
         "trust2": "No browsing data collected",
         "trust3": "Works with any website",
-        "appStore": "Download on App Store"
+        "appStore": "Download on App Store",
+        "trust4": "11 languages"
       },
       "how": {
         "eyebrow": "How It Works",
