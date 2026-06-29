@@ -691,7 +691,8 @@
         "sampled": "Pages échantillonnées",
         "local": "100% local",
         "noCloud": "Sans cloud, sans pistage"
-      }
+      },
+      "langNote": "Interface : Anglais · Espagnol · Français · Néerlandais · Portugais · Russe · Chinois simplifié · Japonais · Coréen · Indonésien · Malais"
     },
     "decryptSection": {
       "badge": "App sœur · iOS · Mac · Windows",
@@ -730,7 +731,7 @@
         "matching": "en correspondance",
         "queued": "en attente"
       },
-      "langNote": "Interface de l'app : Anglais · Espagnol · Portugais · Indonésien · Chinois simplifié"
+      "langNote": "Interface : Anglais · Espagnol · Français · Néerlandais · Portugais · Russe · Chinois simplifié · Japonais · Coréen · Indonésien · Malais"
     },
     "contentcueSection": {
       "badge": "Application sœur · iPhone et iPad",
@@ -757,7 +758,7 @@
       },
       "altBadge": "Télécharger ContentCue sur l'App Store",
       "pricing": "Gratuit. ContentCue Pro est un achat unique à 2,99 $ : favoris illimités, styles de contours personnalisés et défilement automatique ajustable.",
-      "langNote": "Interface : Anglais · Espagnol · Portugais · Indonésien · Chinois simplifié",
+      "langNote": "Interface : Anglais · Espagnol · Français · Néerlandais · Portugais · Russe · Chinois simplifié · Japonais · Coréen · Indonésien · Malais",
       "platformNote": "iPhone et iPad · Mac Apple Silicon (app iOS via App Store)",
       "stats": {
         "requires": "Nécessite",
@@ -1314,7 +1315,8 @@
           "a": "Non. GrepTag Reader fonctionne entièrement hors ligne. La recherche, l'étiquetage et l'organisation se font directement sur votre appareil — l'app lit vos fichiers EPUB et TXT localement, sans serveur ni connexion internet. Le réseau n'est utilisé que pour la fonctionnalité optionnelle Wi-Fi Sync, qui transfère des livres entre vos propres appareils via votre réseau local."
         }
       ],
-      "faqTitle": "Questions fréquentes"
+      "faqTitle": "Questions fréquentes",
+      "languages": "Interface : Anglais · Espagnol · Français · Néerlandais · Portugais · Russe · Chinois simplifié · Japonais · Coréen · Indonésien · Malais"
     },
     "archivePage": {
       "seo": {
@@ -1371,7 +1373,7 @@
         "eyebrow": "Tarification Simple",
         "title": "Gratuit pour toujours. Débloquez Pro quand vous en avez besoin.",
         "freeTitle": "Gratuit",
-        "proTitle": "Pro — 19,99 $",
+        "proTitle": "Pro",
         "trial": "Essai gratuit de 7 jours disponible sur le Mac App Store",
         "feat1": "Analyse d'archives (CBZ/CBR/ZIP/RAR)",
         "feat1free": "Jusqu'à 1 000 fichiers",
@@ -1424,7 +1426,8 @@
         }
       ],
       "backDesc": "Vous cherchez un lecteur de BD et d'ebooks ?",
-      "backCta": "Retour à BiblioFuse Reader"
+      "backCta": "Retour à BiblioFuse Reader",
+      "languages": "Interface : Anglais · Espagnol · Français · Néerlandais · Portugais · Russe · Chinois simplifié · Japonais · Coréen · Indonésien · Malais"
     },
     "smartdecryptPage": {
       "seo": {
@@ -1471,7 +1474,7 @@
         "eyebrow": "Tarification simple",
         "title": "Gratuit pour un fichier. Pro déverrouille le lot.",
         "freeTitle": "Gratuit",
-        "proTitle": "Pro — $9.99",
+        "proTitle": "Pro",
         "universalNote": "Achat universel unique — déverrouille Pro sur iOS et macOS",
         "feat1": "Déverrouiller PDF, ZIP, 7z",
         "feat1free": "Un fichier à la fois",
@@ -1508,7 +1511,8 @@
         }
       ],
       "backDesc": "Vous cherchez un lecteur de bandes dessinées et de livres électroniques ?",
-      "backCta": "Retour à BiblioFuse Reader"
+      "backCta": "Retour à BiblioFuse Reader",
+      "languages": "Interface : Anglais · Espagnol · Français · Néerlandais · Portugais · Russe · Chinois simplifié · Japonais · Coréen · Indonésien · Malais"
     },
     "contentcuePage": {
       "seo": {
@@ -1564,7 +1568,7 @@
         "eyebrow": "Tarification simple",
         "title": "Gratuit à jamais. Pro pour les lecteurs passionnés.",
         "freeTitle": "Gratuit",
-        "proTitle": "Pro — $2.99",
+        "proTitle": "Pro",
         "feat1": "Restauration de position",
         "feat2": "Distinction visuelle des annonces",
         "feat3": "Silencieux audio",
@@ -1598,7 +1602,8 @@
         }
       ],
       "backDesc": "Vous cherchez un lecteur de bandes dessinées et de livres numériques ?",
-      "backCta": "Retour à BiblioFuse Reader"
+      "backCta": "Retour à BiblioFuse Reader",
+      "languages": "Interface : Anglais · Espagnol · Français · Néerlandais · Portugais · Russe · Chinois simplifié · Japonais · Coréen · Indonésien · Malais"
     }
   }
 }

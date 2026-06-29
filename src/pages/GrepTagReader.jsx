@@ -177,6 +177,7 @@ const GrepTagReader = () => {
               </span>
             ))}
           </div>
+          <p className="mt-4 text-xs text-indigo-200/70">{t('redesign.grepTagPage.languages')}</p>
         </div>
       </section>
 

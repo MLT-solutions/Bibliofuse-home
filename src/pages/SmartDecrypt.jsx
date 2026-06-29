@@ -136,6 +136,7 @@ const SmartDecrypt = () => {
               </span>
             ))}
           </div>
+          <p className="mt-4 text-xs text-violet-200/70">{t('redesign.smartdecryptPage.languages')}</p>
         </div>
       </section>
 

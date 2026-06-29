@@ -691,7 +691,8 @@
         "sampled": "Halaman sampel",
         "local": "100% tempatan",
         "noCloud": "Tiada awan, tiada penjejakan"
-      }
+      },
+      "langNote": "UI Apl: Inggeris · Sepanyol · Perancis · Belanda · Portugis · Rusia · Cina Ringkas · Jepun · Korea · Indonesia · Melayu"
     },
     "decryptSection": {
       "badge": "Aplikasi saudara · iOS · Mac · Windows",
@@ -730,7 +731,7 @@
         "matching": "memadankan",
         "queued": "dalam giliran"
       },
-      "langNote": "Antara Muka Aplikasi: Inggeris · Sepanyol · Portugis · Indonesia · Cina Mudah"
+      "langNote": "UI Apl: Inggeris · Sepanyol · Perancis · Belanda · Portugis · Rusia · Cina Ringkas · Jepun · Korea · Indonesia · Melayu"
     },
     "contentcueSection": {
       "badge": "Aplikasi adik-beradik · iPhone & iPad",
@@ -757,7 +758,7 @@
       },
       "altBadge": "Muat turun ContentCue di App Store",
       "pricing": "Percuma digunakan. ContentCue Pro ialah pembelian sekali gus $2.99: penanda buku tanpa had, gaya garisan iklan tersuai dan tatal automatik yang boleh dilaraskan.",
-      "langNote": "Antara muka aplikasi: Inggeris · Sepanyol · Portugis · Bahasa Indonesia · Cina Mudah",
+      "langNote": "UI Apl: Inggeris · Sepanyol · Perancis · Belanda · Portugis · Rusia · Cina Ringkas · Jepun · Korea · Indonesia · Melayu",
       "platformNote": "iPhone & iPad · Mac Apple Silicon (aplikasi iOS melalui App Store)",
       "stats": {
         "requires": "Memerlukan",
@@ -1314,7 +1315,8 @@
           "a": "Tidak. GrepTag Reader berfungsi sepenuhnya secara luar talian. Semua carian, penandaan dan penganjuran berlaku terus di peranti anda — aplikasi membaca fail EPUB dan TXT anda secara setempat tanpa memerlukan pelayan atau sambungan internet. Rangkaian hanya digunakan untuk ciri Wi-Fi Sync pilihan yang memindahkan buku antara peranti anda sendiri melalui rangkaian setempat."
         }
       ],
-      "faqTitle": "Soalan lazim"
+      "faqTitle": "Soalan lazim",
+      "languages": "UI Apl: Inggeris · Sepanyol · Perancis · Belanda · Portugis · Rusia · Cina Ringkas · Jepun · Korea · Indonesia · Melayu"
     },
     "archivePage": {
       "seo": {
@@ -1371,7 +1373,7 @@
         "eyebrow": "Harga Ringkas",
         "title": "Percuma selamanya. Buka kunci Pro apabila perlu.",
         "freeTitle": "Percuma",
-        "proTitle": "Pro — $19.99",
+        "proTitle": "Pro",
         "trial": "Percubaan percuma 7 hari tersedia di Mac App Store",
         "feat1": "Pengimbasan arkib (CBZ/CBR/ZIP/RAR)",
         "feat1free": "Sehingga 1,000 fail",
@@ -1424,7 +1426,8 @@
         }
       ],
       "backDesc": "Mencari pembaca komik dan ebook?",
-      "backCta": "Kembali ke BiblioFuse Reader"
+      "backCta": "Kembali ke BiblioFuse Reader",
+      "languages": "UI Apl: Inggeris · Sepanyol · Perancis · Belanda · Portugis · Rusia · Cina Ringkas · Jepun · Korea · Indonesia · Melayu"
     },
     "smartdecryptPage": {
       "seo": {
@@ -1471,7 +1474,7 @@
         "eyebrow": "Harga Mudah",
         "title": "Percuma untuk satu fail. Pro membuka batch.",
         "freeTitle": "Percuma",
-        "proTitle": "Pro — $9.99",
+        "proTitle": "Pro",
         "universalNote": "Pembelian universal sekali — membuka Pro pada iOS dan macOS",
         "feat1": "Buka PDF, ZIP, 7z",
         "feat1free": "Satu fail pada satu masa",
@@ -1508,7 +1511,8 @@
         }
       ],
       "backDesc": "Mencari pembaca komik dan e-book?",
-      "backCta": "Kembali ke BiblioFuse Reader"
+      "backCta": "Kembali ke BiblioFuse Reader",
+      "languages": "UI Apl: Inggeris · Sepanyol · Perancis · Belanda · Portugis · Rusia · Cina Ringkas · Jepun · Korea · Indonesia · Melayu"
     },
     "contentcuePage": {
       "seo": {
@@ -1564,7 +1568,7 @@
         "eyebrow": "Harga Mudah",
         "title": "Bebas selamanya. Pro untuk pembaca berkuasa.",
         "freeTitle": "Bebas",
-        "proTitle": "Pro — $2.99",
+        "proTitle": "Pro",
         "feat1": "Pulih kedudukan",
         "feat2": "Perbezaan iklan visual",
         "feat3": "Peredaman audio",
@@ -1598,7 +1602,8 @@
         }
       ],
       "backDesc": "Mencari pembaca komik dan ebook?",
-      "backCta": "Kembali ke BiblioFuse Reader"
+      "backCta": "Kembali ke BiblioFuse Reader",
+      "languages": "UI Apl: Inggeris · Sepanyol · Perancis · Belanda · Portugis · Rusia · Cina Ringkas · Jepun · Korea · Indonesia · Melayu"
     }
   }
 }

@@ -121,6 +121,7 @@ const ContentCue = () => {
               </span>
             ))}
           </div>
+          <p className="mt-4 text-xs text-green-200/70">{t('redesign.contentcuePage.languages')}</p>
         </div>
       </section>
 

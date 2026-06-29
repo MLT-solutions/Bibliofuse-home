@@ -138,6 +138,7 @@ const ArchiveScanner = () => {
               </span>
             ))}
           </div>
+          <p className="mt-4 text-xs text-amber-200/70">{t('redesign.archivePage.languages')}</p>
         </div>
       </section>
 

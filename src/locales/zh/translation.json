@@ -691,7 +691,8 @@
         "sampled": "已采样页面",
         "local": "100% 本地",
         "noCloud": "无云，无追踪"
-      }
+      },
+      "langNote": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语"
     },
     "decryptSection": {
       "badge": "姊妹应用 · iOS · Mac · Windows",
@@ -730,7 +731,7 @@
         "matching": "匹配中",
         "queued": "排队中"
       },
-      "langNote": "应用界面语言：英语 · 西班牙语 · 葡萄牙语 · 印尼语 · 简体中文"
+      "langNote": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语"
     },
     "contentcueSection": {
       "badge": "姊妹应用 · iPhone 和 iPad",
@@ -757,7 +758,7 @@
       },
       "altBadge": "在 App Store 下载 ContentCue",
       "pricing": "免费使用。ContentCue Pro 一次性购买价格为 $2.99：无限书签、自定义广告轮廓样式和可调节自动滚动。",
-      "langNote": "应用界面：英语 · 西班牙语 · 葡萄牙语 · 印尼语 · 简体中文",
+      "langNote": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语",
       "platformNote": "iPhone 和 iPad · Apple Silicon Mac（通过 App Store 安装 iOS 应用）",
       "stats": {
         "requires": "系统要求",
@@ -1314,7 +1315,8 @@
           "a": "不需要。GrepTag Reader 完全离线运行。所有搜索、标记和整理都直接在您的设备上进行——应用在本地读取您的 EPUB 和 TXT 文件，无需服务器或网络连接。只有在使用可选的 Wi-Fi Sync 功能时才会用到网络，该功能通过本地网络在您自己的设备之间传输书籍。"
         }
       ],
-      "faqTitle": "常见问题"
+      "faqTitle": "常见问题",
+      "languages": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语"
     },
     "archivePage": {
       "seo": {
@@ -1371,7 +1373,7 @@
         "eyebrow": "简单定价",
         "title": "永久免费。需要时解锁 Pro。",
         "freeTitle": "免费版",
-        "proTitle": "Pro — $19.99",
+        "proTitle": "Pro",
         "trial": "Mac App Store 提供 7 天免费试用",
         "feat1": "档案扫描（CBZ/CBR/ZIP/RAR）",
         "feat1free": "最多 1,000 个文件",
@@ -1424,7 +1426,8 @@
         }
       ],
       "backDesc": "正在寻找漫画和电子书阅读器？",
-      "backCta": "返回 BiblioFuse Reader"
+      "backCta": "返回 BiblioFuse Reader",
+      "languages": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语"
     },
     "smartdecryptPage": {
       "seo": {
@@ -1471,7 +1474,7 @@
         "eyebrow": "简单定价",
         "title": "免费版限一个文件。专业版解锁批量处理。",
         "freeTitle": "免费版",
-        "proTitle": "专业版 — $9.99",
+        "proTitle": "Pro",
         "universalNote": "一次性通用购买——在 iOS 和 macOS 上都解锁专业版",
         "feat1": "解锁 PDF、ZIP、7z",
         "feat1free": "一次处理一个文件",
@@ -1508,7 +1511,8 @@
         }
       ],
       "backDesc": "在寻找漫画和电子书阅读器？",
-      "backCta": "返回 BiblioFuse Reader"
+      "backCta": "返回 BiblioFuse Reader",
+      "languages": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语"
     },
     "contentcuePage": {
       "seo": {
@@ -1564,7 +1568,7 @@
         "eyebrow": "简单定价",
         "title": "永远免费。Pro 版本为铁杆读者准备。",
         "freeTitle": "免费",
-        "proTitle": "Pro — $2.99",
+        "proTitle": "Pro",
         "feat1": "位置恢复",
         "feat2": "视觉广告区分",
         "feat3": "音频静音",
@@ -1598,7 +1602,8 @@
         }
       ],
       "backDesc": "在寻找漫画和电子书阅读器？",
-      "backCta": "返回 BiblioFuse Reader"
+      "backCta": "返回 BiblioFuse Reader",
+      "languages": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语"
     }
   }
 }

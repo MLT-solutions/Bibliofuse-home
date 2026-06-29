@@ -1011,7 +1011,8 @@
         "sampled": "Pages sampled",
         "local": "100% local",
         "noCloud": "No cloud, no tracking"
-      }
+      },
+      "langNote": "App UI: English · Spanish · French · Dutch · Portuguese · Russian · Simplified Chinese · Japanese · Korean · Indonesian · Malay"
     },
     "decryptSection": {
       "badge": "Sister app · iOS · Mac · Windows",
@@ -1050,7 +1051,7 @@
         "matching": "matching",
         "queued": "queued"
       },
-      "langNote": "App UI: English · Spanish · Portuguese · Indonesian · Simplified Chinese"
+      "langNote": "App UI: English · Spanish · French · Dutch · Portuguese · Russian · Simplified Chinese · Japanese · Korean · Indonesian · Malay"
     },
     "contentcueSection": {
       "badge": "Sister app · iPhone & iPad",
@@ -1077,7 +1078,7 @@
       },
       "altBadge": "Download ContentCue on the App Store",
       "pricing": "Free to use. ContentCue Pro is a $2.99 one-time purchase: unlimited bookmarks, custom ad outline styles, and adjustable auto-scroll.",
-      "langNote": "App UI: English · Spanish · Portuguese · Indonesian · Simplified Chinese",
+      "langNote": "App UI: English · Spanish · French · Dutch · Portuguese · Russian · Simplified Chinese · Japanese · Korean · Indonesian · Malay",
       "platformNote": "iPhone & iPad · Apple Silicon Mac (iOS app via App Store)",
       "stats": {
         "requires": "Requires",
@@ -1309,7 +1310,8 @@
           "a": "No. GrepTag Reader works completely offline. All searching, tagging, and organising happens directly on your device — the app reads your EPUB and TXT files locally without a server or internet connection. The only time a network is used is the optional Wi-Fi Sync feature, which transfers books between your own devices over your local network."
         }
       ],
-      "faqTitle": "Frequently Asked Questions"
+      "faqTitle": "Frequently Asked Questions",
+      "languages": "App UI: English · Spanish · French · Dutch · Portuguese · Russian · Simplified Chinese · Japanese · Korean · Indonesian · Malay"
     },
     "archivePage": {
       "seo": {
@@ -1366,7 +1368,7 @@
         "eyebrow": "Simple Pricing",
         "title": "Free forever. Unlock Pro when you need it.",
         "freeTitle": "Free",
-        "proTitle": "Pro — $19.99",
+        "proTitle": "Pro",
         "trial": "7-day free trial available on Mac App Store",
         "feat1": "Archive scanning (CBZ/CBR/ZIP/RAR)",
         "feat1free": "Up to 1,000 files",
@@ -1419,7 +1421,8 @@
         }
       ],
       "backDesc": "Looking for a comic and ebook reader?",
-      "backCta": "Back to BiblioFuse Reader"
+      "backCta": "Back to BiblioFuse Reader",
+      "languages": "App UI: English · Spanish · French · Dutch · Portuguese · Russian · Simplified Chinese · Japanese · Korean · Indonesian · Malay"
     },
     "smartdecryptPage": {
       "seo": {
@@ -1466,7 +1469,7 @@
         "eyebrow": "Simple Pricing",
         "title": "Free for one file. Pro unlocks batch.",
         "freeTitle": "Free",
-        "proTitle": "Pro — $9.99",
+        "proTitle": "Pro",
         "universalNote": "One-time universal purchase — unlocks Pro on both iOS and macOS",
         "feat1": "Unlock PDF, ZIP, 7z",
         "feat1free": "One file at a time",
@@ -1503,7 +1506,8 @@
         }
       ],
       "backDesc": "Looking for a comic and ebook reader?",
-      "backCta": "Back to BiblioFuse Reader"
+      "backCta": "Back to BiblioFuse Reader",
+      "languages": "App UI: English · Spanish · French · Dutch · Portuguese · Russian · Simplified Chinese · Japanese · Korean · Indonesian · Malay"
     },
     "contentcuePage": {
       "seo": {
@@ -1559,7 +1563,7 @@
         "eyebrow": "Simple Pricing",
         "title": "Free forever. Pro for power readers.",
         "freeTitle": "Free",
-        "proTitle": "Pro — $2.99",
+        "proTitle": "Pro",
         "feat1": "Position restore",
         "feat2": "Visual ad distinction",
         "feat3": "Audio mute",
@@ -1593,7 +1597,8 @@
         }
       ],
       "backDesc": "Looking for a comic and ebook reader?",
-      "backCta": "Back to BiblioFuse Reader"
+      "backCta": "Back to BiblioFuse Reader",
+      "languages": "App UI: English · Spanish · French · Dutch · Portuguese · Russian · Simplified Chinese · Japanese · Korean · Indonesian · Malay"
     }
   }
 }

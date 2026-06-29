@@ -963,6 +963,9 @@ function ArchiveScannerSection() {
             <p className="mt-5 text-xs text-ink-soft">
               {t('redesign.archiveSection.pricing')}
             </p>
+            <p className="mt-3 rounded-lg bg-orange-50 px-3 py-2 text-xs text-orange-700">
+              <span className="font-semibold">{t('redesign.archiveSection.langNote')}</span>
+            </p>
 
             <Link to={`/${lang}/archive`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-600 hover:text-orange-700 transition-colors">
               {t('redesign.archiveSection.learnMore', 'Learn more about Comic Duplicate Scanner')} →

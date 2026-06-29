@@ -691,7 +691,8 @@
         "sampled": "サンプルページ数",
         "local": "100% ローカル",
         "noCloud": "クラウドなし、トラッキングなし"
-      }
+      },
+      "langNote": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語"
     },
     "decryptSection": {
       "badge": "姉妹アプリ · iOS · Mac · Windows",
@@ -730,7 +731,7 @@
         "matching": "マッチング中",
         "queued": "待機中"
       },
-      "langNote": "アプリ UI 言語：英語 · スペイン語 · ポルトガル語 · インドネシア語 · 簡体字中国語"
+      "langNote": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語"
     },
     "contentcueSection": {
       "badge": "姉妹アプリ · iPhone & iPad",
@@ -757,7 +758,7 @@
       },
       "altBadge": "App StoreでContentCueをダウンロード",
       "pricing": "無料でご利用いただけます。ContentCue Proは$2.99の買い切り：無制限のブックマーク、カスタム広告アウトラインスタイル、調整可能な自動スクロール。",
-      "langNote": "アプリUI：英語 · スペイン語 · ポルトガル語 · インドネシア語 · 簡体字中国語",
+      "langNote": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語",
       "platformNote": "iPhone · iPad · Apple Silicon Mac（App StoreよりiOSアプリとして）",
       "stats": {
         "requires": "動作環境",
@@ -1314,7 +1315,8 @@
           "a": "はい。GrepTag Reader は完全にオフラインで動作します。検索・タグ付け・整理のすべてがデバイス上で直接行われます — アプリはローカルの EPUB・TXT ファイルを読み込むため、サーバーやインターネット接続は不要です。ネットワークが使われるのは、オプションの Wi-Fi Sync 機能でご自身のデバイス間でローカルネットワーク経由に本を転送するときだけです。"
         }
       ],
-      "faqTitle": "よくある質問"
+      "faqTitle": "よくある質問",
+      "languages": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語"
     },
     "archivePage": {
       "seo": {
@@ -1371,7 +1373,7 @@
         "eyebrow": "シンプルな料金設定",
         "title": "永久無料。必要に応じて Pro をアンロック。",
         "freeTitle": "無料",
-        "proTitle": "Pro — $19.99",
+        "proTitle": "Pro",
         "trial": "Mac App Store で 7 日間無料トライアル提供",
         "feat1": "アーカイブスキャン（CBZ/CBR/ZIP/RAR）",
         "feat1free": "最大 1,000 ファイル",
@@ -1424,7 +1426,8 @@
         }
       ],
       "backDesc": "コミック・電子書籍リーダーをお探しですか？",
-      "backCta": "BiblioFuse Reader に戻る"
+      "backCta": "BiblioFuse Reader に戻る",
+      "languages": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語"
     },
     "smartdecryptPage": {
       "seo": {
@@ -1471,7 +1474,7 @@
         "eyebrow": "シンプルな価格設定",
         "title": "1 ファイルは無料。Pro はバッチ解除が可能。",
         "freeTitle": "無料",
-        "proTitle": "Pro — $9.99",
+        "proTitle": "Pro",
         "universalNote": "一度の購入で iOS と macOS の両方で Pro がアンロックされます",
         "feat1": "PDF、ZIP、7z を解除",
         "feat1free": "一度に 1 ファイル",
@@ -1508,7 +1511,8 @@
         }
       ],
       "backDesc": "コミックと電子書籍リーダーをお探しですか?",
-      "backCta": "BiblioFuse リーダーに戻る"
+      "backCta": "BiblioFuse リーダーに戻る",
+      "languages": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語"
     },
     "contentcuePage": {
       "seo": {
@@ -1564,7 +1568,7 @@
         "eyebrow": "シンプルな価格",
         "title": "永遠に無料。パワーリーダー向けPro。",
         "freeTitle": "無料",
-        "proTitle": "Pro — $2.99",
+        "proTitle": "Pro",
         "feat1": "位置復元",
         "feat2": "ビジュアル広告区別",
         "feat3": "オーディオ消音",
@@ -1598,7 +1602,8 @@
         }
       ],
       "backDesc": "マンガと電子書籍リーダーをお探しですか？",
-      "backCta": "BiblioFuseリーダーに戻る"
+      "backCta": "BiblioFuseリーダーに戻る",
+      "languages": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語"
     }
   }
 }

@@ -691,7 +691,8 @@
         "sampled": "Páginas muestreadas",
         "local": "100% local",
         "noCloud": "Sin nube, sin rastreo"
-      }
+      },
+      "langNote": "UI de la app: Inglés · Español · Francés · Neerlandés · Portugués · Ruso · Chino simplificado · Japonés · Coreano · Indonesio · Malayo"
     },
     "decryptSection": {
       "badge": "App hermana · iOS · Mac · Windows",
@@ -730,7 +731,7 @@
         "matching": "coincidiendo",
         "queued": "en cola"
       },
-      "langNote": "Interfaz de la app: Inglés · Español · Portugués · Indonesio · Chino Simplificado"
+      "langNote": "UI de la app: Inglés · Español · Francés · Neerlandés · Portugués · Ruso · Chino simplificado · Japonés · Coreano · Indonesio · Malayo"
     },
     "contentcueSection": {
       "badge": "App hermana · iPhone y iPad",
@@ -757,7 +758,7 @@
       },
       "altBadge": "Descargar ContentCue en el App Store",
       "pricing": "Gratis. ContentCue Pro es una compra única de $2.99: marcadores ilimitados, estilos de contorno personalizados y desplazamiento automático ajustable.",
-      "langNote": "Interfaz de la app: Inglés · Español · Portugués · Indonesio · Chino simplificado",
+      "langNote": "UI de la app: Inglés · Español · Francés · Neerlandés · Portugués · Ruso · Chino simplificado · Japonés · Coreano · Indonesio · Malayo",
       "platformNote": "iPhone y iPad · Mac Apple Silicon (app iOS vía App Store)",
       "stats": {
         "requires": "Requiere",
@@ -1314,7 +1315,8 @@
           "a": "No. GrepTag Reader funciona completamente sin conexión. Todo el proceso de búsqueda, etiquetado y organización ocurre directamente en tu dispositivo — la app lee tus archivos EPUB y TXT de forma local, sin necesidad de servidor ni conexión a internet. La única vez que se usa la red es con la función opcional Wi-Fi Sync, que transfiere libros entre tus propios dispositivos a través de tu red local."
         }
       ],
-      "faqTitle": "Preguntas frecuentes"
+      "faqTitle": "Preguntas frecuentes",
+      "languages": "UI de la app: Inglés · Español · Francés · Neerlandés · Portugués · Ruso · Chino simplificado · Japonés · Coreano · Indonesio · Malayo"
     },
     "archivePage": {
       "seo": {
@@ -1371,7 +1373,7 @@
         "eyebrow": "Precios Simples",
         "title": "Gratis para siempre. Desbloquea Pro cuando lo necesites.",
         "freeTitle": "Gratis",
-        "proTitle": "Pro — $19,99",
+        "proTitle": "Pro",
         "trial": "Prueba gratuita de 7 días disponible en Mac App Store",
         "feat1": "Escaneo de archivos (CBZ/CBR/ZIP/RAR)",
         "feat1free": "Hasta 1.000 archivos",
@@ -1424,7 +1426,8 @@
         }
       ],
       "backDesc": "¿Buscas un lector de cómics y ebooks?",
-      "backCta": "Volver a BiblioFuse Reader"
+      "backCta": "Volver a BiblioFuse Reader",
+      "languages": "UI de la app: Inglés · Español · Francés · Neerlandés · Portugués · Ruso · Chino simplificado · Japonés · Coreano · Indonesio · Malayo"
     },
     "smartdecryptPage": {
       "seo": {
@@ -1471,7 +1474,7 @@
         "eyebrow": "Precios simples",
         "title": "Gratis para un archivo. Pro desbloquea lotes.",
         "freeTitle": "Gratis",
-        "proTitle": "Pro — $9.99",
+        "proTitle": "Pro",
         "universalNote": "Compra universal única — desbloquea Pro en iOS y macOS",
         "feat1": "Desbloquea PDF, ZIP, 7z",
         "feat1free": "Un archivo a la vez",
@@ -1508,7 +1511,8 @@
         }
       ],
       "backDesc": "¿Buscas un lector de cómics y libros electrónicos?",
-      "backCta": "Volver a BiblioFuse Reader"
+      "backCta": "Volver a BiblioFuse Reader",
+      "languages": "UI de la app: Inglés · Español · Francés · Neerlandés · Portugués · Ruso · Chino simplificado · Japonés · Coreano · Indonesio · Malayo"
     },
     "contentcuePage": {
       "seo": {
@@ -1564,7 +1568,7 @@
         "eyebrow": "Precios simples",
         "title": "Gratis para siempre. Pro para lectores apasionados.",
         "freeTitle": "Gratis",
-        "proTitle": "Pro — $2.99",
+        "proTitle": "Pro",
         "feat1": "Restauración de posición",
         "feat2": "Distinción visual de anuncios",
         "feat3": "Silenciador de audio",
@@ -1598,7 +1602,8 @@
         }
       ],
       "backDesc": "¿Buscas un lector de cómics y ebooks?",
-      "backCta": "Volver a BiblioFuse Reader"
+      "backCta": "Volver a BiblioFuse Reader",
+      "languages": "UI de la app: Inglés · Español · Francés · Neerlandés · Portugués · Ruso · Chino simplificado · Japonés · Coreano · Indonesio · Malayo"
     }
   }
 }
