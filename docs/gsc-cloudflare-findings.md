@@ -1,7 +1,7 @@
 # GSC Impression Drop: Investigation Findings
 
 Date checked: 2026-07-02
-Status: Cloudflare/Googlebot-blocking theory **disproven**. Root cause is very likely a Google content-quality reassessment triggered by a mass, partly-untranslated page expansion on 2026-06-24, compounded by a structural finding that the entire site was invisible to any crawler that doesn't execute JavaScript. Four fixes shipped: internal redirect bug, noindex on non-English sister-app changelog/privacy pages, and build-time prerendering across all 869 pages. Impressions recovery not yet confirmed — monitoring.
+Status: Cloudflare/Googlebot-blocking theory **disproven**. Root cause is very likely a Google content-quality reassessment triggered by a mass, partly-untranslated page expansion on 2026-06-24, compounded by a structural finding that the entire site was invisible to any crawler that doesn't execute JavaScript. Fixes shipped for crawlability: internal trailing-slash cleanup, noindex on non-English sister-app changelog/privacy pages, and build-time prerendering. Reaudit on 2026-07-02 found and locally fixed a small app-link regression plus hardened prerender to fail closed. Impressions recovery not yet confirmed — monitoring.
 
 ## Summary
 
@@ -64,7 +64,18 @@ Because `Navigation.jsx`/`Footer.jsx` render on every page across all 11 languag
 - `src/pages/ContentCue.jsx`, `src/pages/ArchiveScanner.jsx`, `src/pages/SmartDecrypt.jsx`, `src/pages/GrepTagReader.jsx`
 - `src/locales/*/translation.json` (11 files)
 
-Verified live in-browser: all internal links on the homepage and blog listing now resolve with trailing slashes, matching sitemap canonicals.
+Verified in build output: homepage, blog, footer, navigation, and sister-app links resolve with trailing slashes, matching sitemap canonicals.
+
+**Reaudit correction:** the first redirect cleanup accidentally changed four sister-app bottom links to protocol-relative URLs:
+
+```txt
+//archive/changelog/
+//archive/privacy/
+//smartdecrypt/changelog/
+...
+```
+
+Browsers treat these as external protocol-relative hostnames, not localized internal routes. This was fixed locally by restoring language-prefixed paths such as `/en/archive/changelog/`. The same reaudit also normalized app-page detection in `App.jsx` so trailing-slash product pages (`/en/archive/`, `/en/webapp/`, etc.) are still recognized as product pages and do not render the global footer unintentionally. Production still needs a redeploy after this local correction.
 
 **This fix does not address the impression drop.** Internal 301s on nav links are a minor crawl-budget inefficiency, not something that causes a 95%+ overnight collapse on already-ranking pages. It's good hygiene and closes one gap in the coverage report, done independently of the root-cause investigation above.
 
@@ -81,7 +92,7 @@ Rather than re-translate-and-hope, applied the standard fix other teams use for 
 2. **Client-side (defense in depth):** Added a `noindex` prop to `SEO.jsx` and pass `noindex={lang !== 'en'}` from `AppChangelog.jsx` / `AppPrivacy.jsx`, so the tag is also correct for any client-side-only rendering path.
 3. **Sitemap:** `scripts/generate-sitemap.js` no longer emits `<loc>` entries for these 80 URLs (dropped from 869 → 789 total sitemap URLs). They're still referenced as `hreflang` alternates from the English version, which stays in the sitemap normally.
 
-Verified against the actual `npm run build` output: all 8 route types checked, non-English variants carry the noindex tag, English variants don't, and the sitemap URL count matches exactly (869 − 80 = 789).
+Verified against the actual `npm run build` output: all 8 route types checked, non-English variants carry the noindex tag, English variants don't, and the sitemap URL count matches exactly (869 − 80 = 789). Live spot check also confirmed `/es/archive/changelog/` has `noindex, follow`, while `/en/archive/changelog/` remains indexable.
 
 ## Fixed: Build-Time Prerendering — Every Page Now Has Real Content in Raw HTML (2026-07-02)
 
@@ -116,10 +127,12 @@ Went with Option A from the scoping discussion (build-time prerender step, not a
 - `AppPrivacy.jsx`'s live fetch from `raw.githubusercontent.com` was a flagged risk; in practice it rendered correctly across all runs (real browser, real network, same as a live visitor would experience) — no mitigation needed so far, but if a future build shows a privacy page freezing a loading state, cache those markdown files at build time instead of fetching from inside the headless page.
 - The manual noindex-string-injection in `generate-static-routes.js` (added earlier) is now technically redundant — Helmet's client-rendered noindex tag gets captured into the static file naturally during prerendering too — but left in place as a second, independent guarantee rather than removed.
 
-**Build-time cost, tuned empirically:** started at 8 concurrent Chrome tabs, which caused CPU contention severe enough that ~10% of pages (83/869) timed out waiting for Helmet to commit — not a logic bug, confirmed by testing the same page standalone (renders correctly in <1s with no contention). Dropped concurrency to 4 and raised the timeout to 15s; final result: **868/869 pages successfully prerendered** in ~8 minutes, one page (`/ru/blog/decrypt-password-protected-cbz-zip/`) fell back to the unrendered shell after exhausting retries (same as current behavior for that single page — not a regression, likely fixed by simply re-running the build).
+**Build-time cost, tuned empirically:** started at 8 concurrent Chrome tabs, which caused CPU contention severe enough that ~10% of pages (83/869) timed out waiting for Helmet to commit — not a logic bug, confirmed by testing the same page standalone (renders correctly in <1s with no contention). A later run at concurrency 4 still produced a random 1-page miss (`/fr/blog/organize-ebooks-by-content-not-metadata/`) whose body rendered but whose head stayed generic, proving the fallback was flaky rather than page-specific.
+
+**Reaudit hardening:** `scripts/prerender.js` now runs at concurrency 3, waits up to 30s for the SEO-managed title, logs progress every 50 pages, and fails the build if any route cannot produce SEO-complete HTML. It no longer writes partial/generic-head HTML on the final failed attempt. Verified with a fresh production build: **869/869 pages successfully prerendered**.
 
 **Verified against the actual build output:**
-- Raw HTML for `/en/archive/`, `/es/webapp/`, `/en/blog/epub-reader-iphone-no-drm/`, `/ja/smartdecrypt/`, `/en/archive/changelog/` all now show distinct, correct, per-page titles instead of one identical shell.
+- Raw HTML for `/en/archive/`, `/es/webapp/`, `/en/blog/epub-reader-iphone-no-drm/`, `/fr/blog/organize-ebooks-by-content-not-metadata/`, `/ja/smartdecrypt/`, `/en/archive/changelog/` all now show distinct, correct, per-page titles instead of one identical shell.
 - Fetched `/en/archive/` with `curl -A Googlebot` against the built output: canonical tag, all 11 `hreflang` alternates + x-default, meta description, Open Graph, Twitter Card, and 3 JSON-LD schemas (SoftwareApplication, FAQPage, BreadcrumbList) are all present in the raw response — no JavaScript execution required.
 - Noindex logic still correct on top of prerendering: `es/archive/changelog/` still carries `noindex, follow`, `en/archive/changelog/` doesn't.
 
@@ -136,5 +149,7 @@ Considered as Option B and still not recommended for this problem specifically:
 1. **Do not expect any of the fixes above to single-handedly recover impressions on their own timeline** — the redirect fix, noindex change, and prerendering are all hygiene/structural corrections, not a direct fix for whatever caused Google's initial quality reassessment of the site. Prerendering is the highest-leverage one of the three (it affects all 869 pages, not just the ones added Jun 24), but its effect plays out over Google's next crawl/render cycle for this site, not instantly.
 2. Watch the daily impressions trend for another 5–7 days. GSC data this recent can still be partial, and algorithmic reassessments can self-correct without any single "fix."
 3. If impressions haven't started recovering by ~Jul 9, consider whether the remaining templated content (the changelog/privacy pages themselves, or the Jun 27–29 sitewide template pushes) needs deeper content differentiation rather than just noindex on the locale variants.
-4. Re-run `npm run build` once more before the next deploy and confirm the prerender summary line shows close to 869/869 succeeded — if a much larger number falls back to the unrendered shell than the one-page flake seen here, re-check concurrency/timeout settings in `scripts/prerender.js` before deploying.
-5. Optionally add a top-priority Cloudflare custom rule for `cf.client.bot` (Skip Bot Fight Mode) as defensive hardening — reasonable, but confirmed not to be the cause of this incident.
+4. Before the next deploy, confirm `npm run build` ends with `Prerendered 869/869 pages`. The build should now fail instead of publishing incomplete prerender output.
+5. Before deploying SEO/link changes, run `rg 'to=\{?\x60//|to="//|href=\{?\x60//|href="//' src -S` and confirm no internal app route was accidentally converted into a protocol-relative URL.
+6. Deploy the local reaudit fixes so production no longer contains the protocol-relative sister-app bottom links.
+7. Optionally add a top-priority Cloudflare custom rule for `cf.client.bot` (Skip Bot Fight Mode) as defensive hardening — reasonable, but confirmed not to be the cause of this incident.

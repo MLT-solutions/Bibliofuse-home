@@ -50,7 +50,8 @@ These exist because of a real incident: a 2026-06-24 batch launch of ~130 new UR
 2. **Stagger large multi-locale launches.** Adding one new page × 11 languages at a time and letting Google crawl/settle it is safer than dropping 100+ new URLs across every language in a single commit.
 3. **Utility/legal pages (changelog, privacy, terms) don't need full translation.** They have near-zero organic search value in any language other than the primary one — users reach them via in-app links, not search. Default new non-English variants of this page type to `noindex` (see `NOINDEX_NON_EN_ROUTES` pattern in `generate-static-routes.js` and `generate-sitemap.js`) rather than mechanically translating boilerplate content across 11 locales.
 4. **Every internal link must include a trailing slash** matching the canonical sitemap URL (e.g. `/${lang}/webapp/`, not `/${lang}/webapp`). GitHub Pages 301-redirects the no-slash form, and since `Navigation.jsx`/`Footer.jsx` render on every page, a missing slash there multiplies into a sitewide redirect-crawl-budget issue. Check any new `Link to={...}` against this before committing.
-5. **After adding/changing routes, re-run `npm run build` and spot-check the result** — pull up 2–3 of the new pages' raw output (`curl -A Googlebot` or read the `dist/{lang}/{route}/index.html` file directly) and confirm real title/description/content is there, not the blank shell. Don't assume the dev server "looking right" means the deployed static output is correct — they're generated differently.
+5. **Never use protocol-relative internal routes** such as `//archive/changelog/`. App-page links must stay language-prefixed local paths such as `/${lang}/archive/changelog/`; otherwise browsers treat them as external hostnames. Before SEO deploys, run `rg 'to=\{?\x60//|to="//|href=\{?\x60//|href="//' src -S` and confirm no internal routes were accidentally converted.
+6. **After adding/changing routes, re-run `npm run build` and spot-check the result** — pull up 2–3 of the new pages' raw output (`curl -A Googlebot` or read the `dist/{lang}/{route}/index.html` file directly) and confirm real title/description/content is there, not the blank shell. Don't assume the dev server "looking right" means the deployed static output is correct — they're generated differently.
 
 ### Static site generation for GitHub Pages
 
@@ -63,7 +64,7 @@ Because GitHub Pages can't do server-side routing, and this is a client-rendered
 
 When adding a new page route, update `ROUTES` in **both** `generate-sitemap.js` and `generate-static-routes.js`. If it's a low-search-value utility page (changelog/privacy/legal), consider adding it to `NOINDEX_NON_EN_ROUTES` for non-English locales rather than translating it — see the "New page/route rollout rules" below.
 
-After any route/content change, run `npm run build` and check the prerender step's summary line (`✅ Prerendered N/N pages`). If it succeeds for close to all pages, you're fine — a small number of flakes from build-machine load is normal and not a regression. If a large number fail, re-check `scripts/prerender.js`'s concurrency/timeout settings before deploying.
+After any route/content change, run `npm run build` and check the prerender step's summary line (`✅ Prerendered N/N pages`). For the current route set this must finish as `✅ Prerendered 869/869 pages`; any miss should fail the build and must be fixed or rerun before deploy. If prerendering flakes, re-check `scripts/prerender.js`'s concurrency/timeout settings before deploying.
 
 ### Blog section
 

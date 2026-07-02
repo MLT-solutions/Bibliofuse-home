@@ -23,8 +23,9 @@ const ARTICLE_SLUGS = ['reading-ebooks-offline-iphone', 'convert-cbr-to-cbz-onli
 const ROUTES = ['/', '/webapp', '/grepreader', '/grepreader/changelog', '/grepreader/privacy', '/archive', '/archive/changelog', '/archive/privacy', '/smartdecrypt', '/smartdecrypt/changelog', '/smartdecrypt/privacy', '/contentcue', '/contentcue/changelog', '/contentcue/privacy', '/about', '/privacy', '/blog', '/changelog', ...ARTICLE_SLUGS.map(s => `/blog/${s}`)];
 
 const PORT = 4322;
-const CONCURRENCY = 4;
+const CONCURRENCY = 3;
 const MAX_RETRIES = 3;
+const SEO_READY_TIMEOUT_MS = 30000;
 
 const jobs = [];
 for (const lang of SUPPORTED_LANGUAGES) {
@@ -47,7 +48,7 @@ async function renderJob(browser, baseUrl, { urlPath, file }) {
         const page = await browser.newPage();
         try {
             await page.goto(`${baseUrl}${urlPath}`, { waitUntil: 'networkidle0', timeout: 30000 });
-            await page.waitForFunction(() => document.title.includes(' | BiblioFuse'), { timeout: 15000 }).catch(() => {});
+            await page.waitForFunction(() => document.title.includes(' | BiblioFuse'), { timeout: SEO_READY_TIMEOUT_MS });
             // Small buffer so any Helmet tags that commit alongside title (canonical,
             // hreflang, JSON-LD) are flushed too.
             await new Promise((resolve) => setTimeout(resolve, 150));
@@ -57,6 +58,10 @@ async function renderJob(browser, baseUrl, { urlPath, file }) {
             if (!rendered && attempt < MAX_RETRIES) {
                 await page.close();
                 continue; // retry: Helmet never committed or root never mounted
+            }
+            if (!rendered) {
+                await page.close();
+                return { urlPath, ok: false, error: 'SEO title/root readiness check failed' };
             }
             writeFileSync(file, html, 'utf-8');
             await page.close();
@@ -74,10 +79,15 @@ async function renderJob(browser, baseUrl, { urlPath, file }) {
 async function runPool(browser, baseUrl, allJobs) {
     const results = [];
     let index = 0;
+    let completed = 0;
     async function worker() {
         while (index < allJobs.length) {
             const job = allJobs[index++];
             results.push(await renderJob(browser, baseUrl, job));
+            completed += 1;
+            if (completed % 50 === 0 || completed === allJobs.length) {
+                console.log(`   ${completed}/${allJobs.length} pages processed`);
+            }
         }
     }
     await Promise.all(Array.from({ length: CONCURRENCY }, worker));
@@ -101,8 +111,9 @@ async function main() {
     const failed = results.filter((r) => !r.ok);
     console.log(`✅ Prerendered ${results.length - failed.length}/${results.length} pages`);
     if (failed.length > 0) {
-        console.log(`⚠️  ${failed.length} pages kept the unrendered shell (left as-is, not a build failure):`);
+        console.error(`❌ ${failed.length} pages failed prerender; refusing to publish incomplete SEO HTML:`);
         failed.slice(0, 20).forEach((f) => console.log(`   ${f.urlPath}${f.error ? ` — ${f.error}` : ''}`));
+        process.exit(1);
     }
 }
 
