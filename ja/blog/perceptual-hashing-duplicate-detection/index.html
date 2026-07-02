@@ -1,11 +1,8 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BiblioFuse — Private ebook &amp; comic reader for iOS, macOS, Android &amp; PC</title>
+<!DOCTYPE html><html lang="ja" data-rh="lang"><head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか | BiblioFuse</title>
 
   <!-- GitHub Pages SPA redirect handler -->
   <script>
@@ -18,12 +15,74 @@
       }
     })();
   </script>
-  <script type="module" crossorigin src="/assets/index-0Wd3jhk4.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BAYh0Q_z.css">
-</head>
+  <script type="module" crossorigin="" src="/assets/index-DimhGt6a.js"></script>
+  <link rel="stylesheet" crossorigin="" href="/assets/index-BAYh0Q_z.css">
+<link rel="canonical" href="https://bibliofuse.com/ja/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><meta name="description" content="Comic Duplicate Scannerは知覚ハッシュを使用して、ファイルのチェックサムではなくページの視覚的コンテンツを比較することでCBZおよびCBRの重複アーカイブを検出します。リネーム、再圧縮、または異なるソースからダウンロードされた重複も見つけます。" data-rh="true"><meta property="og:type" content="website" data-rh="true"><meta property="og:site_name" content="BiblioFuse" data-rh="true"><meta property="og:title" content="知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか | BiblioFuse" data-rh="true"><meta property="og:description" content="Comic Duplicate Scannerは知覚ハッシュを使用して、ファイルのチェックサムではなくページの視覚的コンテンツを比較することでCBZおよびCBRの重複アーカイブを検出します。リネーム、再圧縮、または異なるソースからダウンロードされた重複も見つけます。" data-rh="true"><meta property="og:url" content="https://bibliofuse.com/ja/blog/perceptual-hashing-duplicate-detection/" data-rh="true"><meta property="og:locale" content="ja" data-rh="true"><meta property="og:image" content="https://bibliofuse.com/image/blog/Perceptual Hashing Comics.jpg" data-rh="true"><meta property="og:image:alt" content="知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか" data-rh="true"><meta name="twitter:card" content="summary_large_image" data-rh="true"><meta name="twitter:title" content="知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか | BiblioFuse" data-rh="true"><meta name="twitter:description" content="Comic Duplicate Scannerは知覚ハッシュを使用して、ファイルのチェックサムではなくページの視覚的コンテンツを比較することでCBZおよびCBRの重複アーカイブを検出します。リネーム、再圧縮、または異なるソースからダウンロードされた重複も見つけます。" data-rh="true"><meta name="twitter:image" content="https://bibliofuse.com/image/blog/Perceptual Hashing Comics.jpg" data-rh="true"><meta name="twitter:image:alt" content="知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか" data-rh="true"><script type="application/ld+json" data-rh="true">{"@context":"https://schema.org","@type":"Article","headline":"知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか","description":"Comic Duplicate Scannerは知覚ハッシュを使用して、ファイルのチェックサムではなくページの視覚的コンテンツを比較することでCBZおよびCBRの重複アーカイブを検出します。リネーム、再圧縮、または異なるソースからダウンロードされた重複も見つけます。","url":"https://bibliofuse.com/ja/blog/perceptual-hashing-duplicate-detection/","inLanguage":"ja","datePublished":"2026-06-01","image":{"@type":"ImageObject","url":"https://bibliofuse.com/image/blog/Perceptual Hashing Comics.jpg"},"author":{"@type":"Person","name":"BiblioFuse"},"publisher":{"@type":"Organization","name":"BiblioFuse","url":"https://bibliofuse.com","logo":{"@type":"ImageObject","url":"https://bibliofuse.com/app-icon.png","width":300,"height":300},"sameAs":["https://apps.apple.com/app/bibliofuse-reader-compress/id6758330093","https://play.google.com/store/apps/details?id=com.modernlogic.bibliofuse","https://apps.microsoft.com/store/detail/9N77MZ509ML2"]}}</script><script type="application/ld+json" data-rh="true">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bibliofuse.com/en/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://bibliofuse.com/en/blog/"},{"@type":"ListItem","position":3,"name":"知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか","item":"https://bibliofuse.com/ja/blog/perceptual-hashing-duplicate-detection/"}]}</script></head>
 
 <body>
-  <div id="root"></div>
-</body>
+  <div id="root"><div class="min-h-screen bg-[#0f172a] text-white flex flex-col"><nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/80 transition-all duration-300"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-16"><a class="flex-shrink-0 cursor-pointer flex items-center gap-2" href="/ja/" data-discover="true"><img src="/assets/logo-dtWJDCBe.png" alt="BiblioFuse ロゴ" class="h-9 w-auto rounded-[10px] shadow-sm"><span class="text-xl font-black tracking-tight text-slate-950">BiblioFuse</span></a><div class="flex items-center gap-4"><div class="hidden md:block"><div class="ml-10 flex items-baseline space-x-4"><a class="px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-950 hover:bg-slate-100/70" href="/ja/" data-discover="true">ホーム</a><a class="px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-950 hover:bg-slate-100/70" href="/ja/#reader" data-discover="true">リーダー</a><a class="px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-950 hover:bg-slate-100/70" href="/ja/webapp/" data-discover="true">Webアプリ</a><a class="px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-950 hover:bg-slate-100/70" href="/ja/about/" data-discover="true">概要</a><a class="px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-950 bg-slate-100" href="/ja/blog/" data-discover="true">ブログ</a><a class="px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-950 hover:bg-slate-100/70" href="/ja/changelog/" data-discover="true">更新履歴</a><div class="relative"><button type="button" class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold transition-all duration-200 text-slate-600 hover:bg-slate-100/70 hover:text-slate-950">ツール<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button></div></div></div><div class="relative"><button class="flex items-center gap-1 text-slate-600 hover:text-slate-950 transition-colors px-2 py-1 rounded-lg hover:bg-slate-100 text-sm font-semibold"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span class="uppercase">ja</span></button></div><a href="https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex h-9 items-center gap-1.5 rounded-lg bg-[#0B1220] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[#162033] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D7CF6]">アプリを入手<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></div></nav><main class="flex-1 flex flex-col"><div class="min-h-screen bg-[#F6F8FC] px-4 pb-20 pt-28 text-slate-950 sm:px-6 lg:px-8"><div class="mx-auto max-w-4xl"><a class="mb-8 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-500 transition-colors hover:text-slate-950" href="/ja/blog/" data-discover="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>ブログに戻る</a><div class="mb-10 overflow-hidden rounded-3xl border border-slate-200 shadow-xl"><img src="/image/blog/Perceptual Hashing Comics.jpg" alt="知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか" class="h-auto w-full object-cover"></div><div class="mb-10"><div class="mb-4 flex flex-wrap gap-2"><span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-600">ガイド</span><span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-600">mac</span><span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-600">archive-duplicate-scanner</span></div><h1 class="font-display text-[clamp(2rem,4.5vw,3.5rem)] font-black leading-[1.02] tracking-tight text-slate-950">知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか</h1><p class="mt-3 text-sm text-slate-400">2026年6月1日</p></div><div class="prose prose-lg max-w-none rounded-3xl border border-slate-200 bg-white p-7 shadow-xl sm:p-10
+              prose-headings:font-display prose-headings:font-black prose-headings:tracking-tight prose-headings:text-slate-950
+              prose-h1:hidden
+              prose-h2:mt-10 prose-h2:border-t prose-h2:border-slate-200 prose-h2:pt-8 prose-h2:text-2xl
+              first:prose-h2:mt-0 first:prose-h2:border-t-0 first:prose-h2:pt-0
+              prose-p:leading-relaxed prose-p:text-slate-600
+              prose-a:font-semibold prose-a:text-blue-600 prose-a:no-underline hover:prose-a:text-blue-700
+              prose-strong:font-bold prose-strong:text-slate-950
+              prose-ul:text-slate-600 prose-li:my-1 prose-li:marker:text-blue-500
+              prose-ol:text-slate-600
+              prose-table:text-sm prose-th:text-slate-950 prose-td:text-slate-600
+              prose-code:rounded prose-code:bg-slate-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:text-sm prose-code:text-slate-800 prose-code:font-mono prose-code:before:content-none prose-code:after:content-none
+            "><h1>知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか</h1>
+<p>ファイルをリネームした。アーカイブを再圧縮した。同じ巻を別のソースからダウンロードした。通常の基準では、これらは今や「異なる」ファイルだ——異なる名前、異なるチェックサム、異なるファイルサイズ。</p>
+<p>しかし、中のコミックは同じだ。すべてのページが同じだ。そして、デジタルライブラリを整理しようとしているなら、これらのほぼ同一の重複ファイルこそが標準的な重複検索ツールをすり抜けるものだ。</p>
+<p>これが知覚ハッシュが解決する問題であり、<a href="/ja/archive/">Comic Duplicate Scanner</a> の中核にある技術だ。</p>
+<hr>
+<h2>なぜ標準的なファイル比較では不十分なのか</h2>
+<p>ほとんどの「重複ファイル検索」ツールは、各ファイルの<strong>チェックサム</strong>を計算し、同じチェックサムを共有するファイルを特定する。これは完全な複製には完璧に機能する。</p>
+<p>しかし、コミックアーカイブには、このアプローチは最も一般的な現実の重複を見逃す：</p>
+<table><thead><tr><th>シナリオ</th><th>同じチェックサム？</th><th>実際に重複？</th></tr></thead><tbody><tr><td>異なるファイル名のコピー</td><td>いいえ</td><td>はい</td></tr><tr><td>異なる品質で再圧縮</td><td>いいえ</td><td>はい</td></tr><tr><td>異なる構造で再パッケージ</td><td>いいえ</td><td>おそらくはい</td></tr><tr><td>2つの異なるソースからダウンロード</td><td>いいえ</td><td>多くの場合はい</td></tr><tr><td>正確なバイト対バイトコピー</td><td>はい</td><td>はい</td></tr></tbody></table>
+<hr>
+<h2>知覚ハッシュが代わりにすること</h2>
+<p><strong>知覚ハッシュ</strong>は、画像の<em>視覚的コンテンツ</em>から計算された短いフィンガープリントで、ファイルバイトからではない。最も広く使用されるアルゴリズム、<strong>pHash</strong>は大まかに次のように動作する：</p>
+<ol>
+<li>画像を小さな固定サイズ（例：32×32ピクセル）にリサイズ</li>
+<li>グレースケールに変換</li>
+<li>離散コサイン変換（DCT）を適用して周波数成分を抽出</li>
+<li>低周波部分を保持——これが全体的な構造を捉える</li>
+<li>各値を中央値と比較し、ビット文字列を生成</li>
+</ol>
+<p>視覚的に類似した内容の2つの画像は、低い<strong>ハミング距離</strong>のハッシュを生成する。</p>
+<p>これらのステップから直接、2つの重要な特性が導かれます：</p>
+<ul>
+<li><strong>解像度は関係ありません。</strong> ステップ1は、計算の前にすべての画像を同じ固定グリッドにリサイズします。同じページの1200pxスキャンと3000pxスキャンはどちらも同じ32×32サムネイルになり、同じハッシュ値を生成します。</li>
+<li><strong>カラーモードは関係ありません。</strong> ステップ2は比較前にグレースケールに変換します。同じページのフルカラースキャンとグレースケールスキャンは、アルゴリズムが輝度構造のみを分析し色の値は見ないため、ほぼ同一のハッシュ値を生成します。</li>
+</ul>
+<hr>
+<h2>Comic Duplicate Scannerの適用方法</h2>
+<p><a href="/ja/archive/">Comic Duplicate Scanner</a> はアーカイブレベルで知覚ハッシュを適用する：</p>
+<ol>
+<li><strong>抽出</strong> — 各CBZまたはCBRを開いて内部画像を読む</li>
+<li><strong>各ページのハッシュ</strong> — 各ページが知覚ハッシュを取得</li>
+<li><strong>比較</strong> — 類似性インデックスを構築し、高割合の一致ページを持つアーカイブを発見</li>
+<li><strong>スコアリング</strong> — マッチ信頼度を割り当て</li>
+</ol>
+<p>2つのアーカイブのページの90%が一致すると、誤検知の確率はほぼゼロになる。</p>
+<hr>
+<h2>実際のケース</h2>
+<p><strong>ケース1：</strong> <code>HxH_v12_en.cbz</code>をあるサイトから、<code>Hunter_X_Hunter_Volume_12.cbz</code>を別のサイトからダウンロード。チェックサム比較：一致なし。知覚ハッシュ：全章でほぼ同一のページ → 重複としてフラグ。</p>
+<p><strong>ケース2：</strong> CBZを圧縮ツールで処理し、各JPEGを80%品質に削減。チェックサムが変わった。知覚ハッシュ：視覚的に同一 → 検出。</p>
+<p><strong>ケース3：</strong> 1つのアーカイブはページが<code>001.jpg</code>、別のは<code>page_001.jpg</code>。知覚ハッシュは内部ファイル名を見ない → それでも検出。</p>
+<hr>
+<p><strong>ケース5：カラースキャンとモノクロスキャン</strong>
+同じ漫画巻の2つのコピーがあります：1つは初期デジタル版のカラースキャン、もう1つは後の再版のグレースケールスキャンです。ファイルサイズが異なり、色の深度が異なり、見た目も異なります。しかし、dHashはハッシュ前にグレースケールに変換するため、両方のコピーが同じ輝度フィンガープリントに還元され、重複としてフラグが立てられます。これは他のほぼすべての重複検出ツールが完全に見逃すケースです。</p>
+<h2>知覚ハッシュの限界</h2>
+<p><strong>重大な視覚的編集はマッチを壊す。</strong> 軽微な透かしや小さなトリミングは通常、検出に影響しない。</p>
+<p><strong>非常に低解像度の画像は信頼性が低い。</strong></p>
+<p><strong>複数巻にわたって類似した画風の漫画。</strong> 時折、誤検知が起こりうる——レビューインターフェイスで削除前にサムネイルを確認できる。</p>
+<hr>
+<h2>Comic Duplicate Scannerの使用</h2>
+<p><a href="/ja/archive/">Comic Duplicate Scanner</a> は、選択した重複をゴミ箱に移動する（完全削除ではない）ネイティブMacアプリだ。</p>
+<p>ライブラリを整理したら、iPhone の <a href="/ja/">BiblioFuse</a> と組み合わせて、唯一のキュレートされた読書ソースを活用する。</p></div></div></div></main><button type="button" aria-label="Go to top" class="fixed bottom-5 left-4 z-40 grid h-11 w-11 place-items-center rounded-full border border-slate-200 bg-white text-slate-950 shadow-2xl transition sm:hidden pointer-events-none translate-y-4 opacity-0"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg></button><footer class="border-t border-line bg-bg pt-16 pb-10 text-sm text-ink-muted"><div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"><div class="mb-12 grid grid-cols-1 gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]"><div class="max-w-sm"><a class="flex items-center gap-2.5" href="/ja/" data-discover="true"><img src="/assets/logo-dtWJDCBe.png" alt="BiblioFuse ロゴ" class="h-9 w-auto rounded-[10px] shadow-sm"><span class="font-display tighter text-xl font-bold text-ink">BiblioFuse</span></a><p class="mt-4 leading-relaxed">自分のデバイスに本棚を持ちたい方のための、小さなツールとリーダーのセット。</p><div class="mt-5 flex flex-wrap gap-2"><a href="https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093" target="_blank" rel="noopener noreferrer" class="inline-flex"><img src="/image/Download_on_the_App_Store_Badge.svg.png" alt="App Store でダウンロード" class="h-10 w-auto object-contain"></a><a href="https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader" target="_blank" rel="noopener noreferrer" class="inline-flex"><img src="/image/Playstore.png" alt="Google Play で入手" class="h-10 w-auto object-contain"></a><a href="https://apps.microsoft.com/store/detail/9N77MZ509ML2" target="_blank" rel="noopener noreferrer" class="inline-flex"><img src="/image/Microsoft_Store_badge.svg" alt="Microsoft から入手" class="h-10 w-auto object-contain"></a></div></div><div><div class="mb-4 text-xs font-bold uppercase tracking-wider text-ink-soft">製品</div><ul class="space-y-2.5"><li><a href="#reader" class="text-ink transition hover:text-brand">BiblioFuse Reader</a></li><li><a class="text-ink transition hover:text-brand" href="/ja/webapp/" data-discover="true">Webツール</a></li><li><a class="text-ink transition hover:text-brand" href="/ja/grepreader/" data-discover="true">GrepTag Reader</a></li><li><a class="text-ink transition hover:text-brand" href="/ja/archive/" data-discover="true">Comic Duplicate Scanner</a></li><li><a class="text-ink transition hover:text-brand" href="/ja/smartdecrypt/" data-discover="true">SmartDecrypt PDF ZIP</a></li><li><a class="text-ink transition hover:text-brand" href="/ja/contentcue/" data-discover="true">ContentCue</a></li></ul></div><div><div class="mb-4 text-xs font-bold uppercase tracking-wider text-ink-soft">会社</div><ul class="space-y-2.5"><li><a class="text-ink transition hover:text-brand" href="/ja/about/" data-discover="true">概要</a></li><li><a class="text-ink transition hover:text-brand" href="/ja/changelog/" data-discover="true">更新履歴</a></li><li><a href="mailto:support@mlogictech.com" class="text-ink transition hover:text-brand">お問い合わせ</a></li><li><a href="mailto:support@mlogictech.com" class="text-ink transition hover:text-brand">採用・協業</a></li></ul></div><div><div class="mb-4 text-xs font-bold uppercase tracking-wider text-ink-soft">法的情報</div><ul class="space-y-2.5"><li><a class="text-ink transition hover:text-brand" href="/ja/privacy/" data-discover="true">プライバシーポリシー</a></li><li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer" class="text-ink transition hover:text-brand">利用規約（EULA）</a></li></ul></div></div><div class="flex flex-col gap-4 border-t border-line pt-8 text-xs md:flex-row md:items-center md:justify-between"><div class="space-y-1"><p>© 2025 Modern Logic Tech Solutions (登録番号: 202503109774 (003722143-P))。全著作権所有。</p><p>1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malaysia</p></div><div class="flex items-center gap-4"><span class="inline-flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"></path></svg>Apple App Store · Google Play · Microsoft Store</span></div></div></div></footer></div></div>
 
-</html>
+
+</body></html>
