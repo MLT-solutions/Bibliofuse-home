@@ -12,11 +12,13 @@ Stack: React 18 + Vite, React Router v7, react-i18next, Tailwind CSS, react-helm
 
 ```bash
 npm run dev        # dev server on port 5174
-npm run build      # vite build → generate-sitemap.js → generate-static-routes.js
+npm run build      # vite build → generate-sitemap.js → generate-static-routes.js → prerender.js
 npm run lint       # eslint
 npm run deploy     # npm run build && gh-pages -d dist
 npm run preview    # preview built dist locally
 ```
+
+`npm run build` takes ~5–15 min because of the prerender step (see below) — don't run it on every save, only before verifying a deploy.
 
 ## Architecture
 
@@ -36,17 +38,32 @@ Pages: `Home`, `WebApp`, `About`, `Privacy` — mounted under `AppLayout` in `sr
 
 ### SEO
 
-`src/components/SEO.jsx` uses react-helmet-async to set `<title>`, meta description, canonical URL, hreflang alternate links for all 11 languages, Open Graph, Twitter Card, and JSON-LD structured data. Every page must render `<SEO>` with appropriate props.
+`src/components/SEO.jsx` uses react-helmet-async to set `<title>`, meta description, canonical URL, hreflang alternate links for all 11 languages, Open Graph, Twitter Card, and JSON-LD structured data. Every page must render `<SEO>` with appropriate props. Supports a `noindex` prop — pass `noindex={true}` to render `<meta name="robots" content="noindex, follow">` for pages that shouldn't rank (see "New page/route rollout rules" below).
+
+Because this is a client-rendered SPA, none of this reaches crawlers unless the **prerender build step** (`scripts/prerender.js`) runs successfully — see "Static site generation" below. Don't assume adding `<SEO>` props alone makes a page's metadata visible to Google; verify with `curl -A Googlebot <url>` against the built `dist/` output, not just in-browser.
+
+### New page/route rollout rules
+
+These exist because of a real incident: a 2026-06-24 batch launch of ~130 new URLs across 11 locales (with 2 apps briefly serving untranslated English content at 9 non-English URLs each) closely preceded a >95% site-wide impression collapse in Google Search Console. Full writeup: `docs/gsc-cloudflare-findings.md`.
+
+1. **Translate before you publish, not after.** Don't add a route to `ROUTES` in `generate-sitemap.js`/`generate-static-routes.js` for a locale until that locale's translation keys are actually filled in (check with `node scripts/scan-untranslated.cjs`). A route live with English-only content sitting behind 9 other language URLs is duplicate content, indexed and submitted, until it's fixed — even a few days of that is enough to trigger a quality reassessment.
+2. **Stagger large multi-locale launches.** Adding one new page × 11 languages at a time and letting Google crawl/settle it is safer than dropping 100+ new URLs across every language in a single commit.
+3. **Utility/legal pages (changelog, privacy, terms) don't need full translation.** They have near-zero organic search value in any language other than the primary one — users reach them via in-app links, not search. Default new non-English variants of this page type to `noindex` (see `NOINDEX_NON_EN_ROUTES` pattern in `generate-static-routes.js` and `generate-sitemap.js`) rather than mechanically translating boilerplate content across 11 locales.
+4. **Every internal link must include a trailing slash** matching the canonical sitemap URL (e.g. `/${lang}/webapp/`, not `/${lang}/webapp`). GitHub Pages 301-redirects the no-slash form, and since `Navigation.jsx`/`Footer.jsx` render on every page, a missing slash there multiplies into a sitewide redirect-crawl-budget issue. Check any new `Link to={...}` against this before committing.
+5. **After adding/changing routes, re-run `npm run build` and spot-check the result** — pull up 2–3 of the new pages' raw output (`curl -A Googlebot` or read the `dist/{lang}/{route}/index.html` file directly) and confirm real title/description/content is there, not the blank shell. Don't assume the dev server "looking right" means the deployed static output is correct — they're generated differently.
 
 ### Static site generation for GitHub Pages
 
-Because GitHub Pages can't do server-side routing, the build pipeline does two things:
+Because GitHub Pages can't do server-side routing, and this is a client-rendered SPA (React mounts via `ReactDOM.createRoot().render()`, not SSR), the build pipeline does three things in order:
 
 1. **`scripts/generate-sitemap.js`** — writes `dist/sitemap.xml` covering all routes × all languages.
-2. **`scripts/generate-static-routes.js`** — copies `dist/index.html` into `dist/{lang}/`, `dist/{lang}/webapp/`, etc. so direct URL loads work as static files. Routes covered: `/`, `/webapp`, `/about`, `/privacy`.
-3. **`public/404.html`** — redirects unknown GitHub Pages 404s back to `/` via `sessionStorage`.
+2. **`scripts/generate-static-routes.js`** — copies `dist/index.html` into `dist/{lang}/{route}/` for every route in `ROUTES` so direct URL loads work as static files. Also injects a static `<meta name="robots" content="noindex, follow">` directly into the HTML for routes listed in `NOINDEX_NON_EN_ROUTES` (currently: non-English locales of the 4 sister apps' `/changelog/` and `/privacy/` pages — see `docs/gsc-cloudflare-findings.md` for why).
+3. **`scripts/prerender.js`** — uses a headless browser (Puppeteer) to visit every one of those route files and overwrite them with the *actually rendered* HTML (real title, meta description, canonical, hreflang, JSON-LD, and visible content), instead of leaving the blank SPA shell. **This is required** — without it, every page on the site returns byte-for-byte identical, empty HTML to any crawler that doesn't execute JavaScript (confirmed live via `curl -A Googlebot`), which is functionally the most extreme form of duplicate content possible and was a major contributor to a real Google impression collapse (2026-06-26, see `docs/gsc-cloudflare-findings.md`). Because `main.jsx` uses `render()` not `hydrate()`, this has zero effect on real visitors — React just re-renders fresh on top of whatever's there.
+4. **`public/404.html`** — redirects unknown GitHub Pages 404s back to `/` via `sessionStorage`.
 
-When adding a new page route, update `ROUTES` in both scripts.
+When adding a new page route, update `ROUTES` in **both** `generate-sitemap.js` and `generate-static-routes.js`. If it's a low-search-value utility page (changelog/privacy/legal), consider adding it to `NOINDEX_NON_EN_ROUTES` for non-English locales rather than translating it — see the "New page/route rollout rules" below.
+
+After any route/content change, run `npm run build` and check the prerender step's summary line (`✅ Prerendered N/N pages`). If it succeeds for close to all pages, you're fine — a small number of flakes from build-machine load is normal and not a regression. If a large number fail, re-check `scripts/prerender.js`'s concurrency/timeout settings before deploying.
 
 ### Blog section
 

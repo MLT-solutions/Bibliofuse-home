@@ -22,7 +22,7 @@ function ArticleCard({ article, lang }) {
 
   return (
     <Link
-      to={`/${currentLang}/blog/${article.slug}`}
+      to={`/${currentLang}/blog/${article.slug}/`}
       className="group flex flex-col rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md overflow-hidden"
     >
       {article.coverImage && (

@@ -43,6 +43,7 @@ const SEO = ({
     howToSchema,      // pre-built HowTo JSON-LD object
     breadcrumbs,      // [{ name, url }]
     additionalSchemas, // [JSON-LD object] — extra schemas rendered after primary
+    noindex = false,  // true → render <meta name="robots" content="noindex, follow">
 }) => {
     const { i18n, t } = useTranslation();
     const { lang } = useParams();
@@ -159,6 +160,7 @@ const SEO = ({
             <html lang={currentLang} />
             <title>{fullTitle}</title>
             <meta name="description" content={description} />
+            {noindex && <meta name="robots" content="noindex, follow" />}
             <link rel="canonical" href={canonicalUrl} />
 
             {/* Hreflang */}

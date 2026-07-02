@@ -165,6 +165,7 @@ export default function AppChangelog({ appSlug }) {
           { name: appName, url: `${baseUrl}/en/${appSlug}/` },
           { name: 'Changelog', url: changelogUrl },
         ]}
+        noindex={language !== 'en'}
       />
 
       <div className="mx-auto max-w-3xl">

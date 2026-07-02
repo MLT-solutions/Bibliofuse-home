@@ -326,8 +326,8 @@ const GrepTagReader = () => {
 
       {/* App links */}
       <div className="flex justify-center gap-5 py-6 text-xs text-slate-400">
-        <Link to={`/${lang}/grepreader/changelog`} className="hover:text-slate-700">Changelog</Link>
-        <Link to={`/${lang}/grepreader/privacy`} className="hover:text-slate-700">Privacy Policy</Link>
+        <Link to={`//grepreader/changelog/`} className="hover:text-slate-700">Changelog</Link>
+        <Link to={`//grepreader/privacy/`} className="hover:text-slate-700">Privacy Policy</Link>
       </div>
 
       {/* Back to main app */}

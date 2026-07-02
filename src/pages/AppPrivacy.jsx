@@ -101,6 +101,7 @@ export default function AppPrivacy({ appSlug }) {
           { name: appName, url: `${baseUrl}/en/${appSlug}/` },
           { name: 'Privacy Policy', url: privacyUrl },
         ]}
+        noindex={(lang || 'en') !== 'en'}
       />
 
       <div className="mx-auto max-w-2xl">

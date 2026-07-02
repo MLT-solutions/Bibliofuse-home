@@ -54,7 +54,7 @@ const BlogPost = () => {
       <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-[#F6F8FC] px-4 pt-28 text-center">
         <p className="text-slate-600">{t('redesign.blog.notFound')}</p>
         <Link
-          to={`/${currentLang}/blog`}
+          to={`/${currentLang}/blog/`}
           className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-700"
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
@@ -150,7 +150,7 @@ const BlogPost = () => {
       <div className="min-h-screen bg-[#F6F8FC] px-4 pb-20 pt-28 text-slate-950 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <Link
-            to={`/${currentLang}/blog`}
+            to={`/${currentLang}/blog/`}
             className="mb-8 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-500 transition-colors hover:text-slate-950"
           >
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">

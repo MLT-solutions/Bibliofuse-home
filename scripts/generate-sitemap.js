@@ -31,12 +31,23 @@ const ROUTES = [
     ...ARTICLE_SLUGS.map(s => ({ path: `/blog/${s}/`, priority: '0.6', changefreq: 'monthly' })),
 ];
 
+// Sister-app changelog/privacy pages: non-English locale variants are noindex'd
+// (see docs/gsc-cloudflare-findings.md) — keep them out of the sitemap. English stays indexed.
+const NOINDEX_NON_EN_ROUTES = new Set([
+    '/archive/changelog/', '/archive/privacy/',
+    '/smartdecrypt/changelog/', '/smartdecrypt/privacy/',
+    '/contentcue/changelog/', '/contentcue/privacy/',
+    '/grepreader/changelog/', '/grepreader/privacy/',
+]);
+
 function generateSitemap() {
     const urls = [];
 
     // Generate URL entries for each route in each language
     ROUTES.forEach(route => {
         SUPPORTED_LANGUAGES.forEach(lang => {
+            if (lang !== 'en' && NOINDEX_NON_EN_ROUTES.has(route.path)) return;
+
             const url = `${BASE_URL}/${lang}${route.path}`;
 
             // Generate alternate links for all other languages

@@ -246,8 +246,8 @@ const ContentCue = () => {
 
       {/* App links */}
       <div className="flex justify-center gap-5 py-6 text-xs text-slate-400">
-        <Link to={`/${lang}/contentcue/changelog`} className="hover:text-slate-700">Changelog</Link>
-        <Link to={`/${lang}/contentcue/privacy`} className="hover:text-slate-700">Privacy Policy</Link>
+        <Link to={`//contentcue/changelog/`} className="hover:text-slate-700">Changelog</Link>
+        <Link to={`//contentcue/privacy/`} className="hover:text-slate-700">Privacy Policy</Link>
       </div>
 
       {/* Back to BiblioFuse */}

@@ -55,7 +55,7 @@ function MicrosoftStoreImageBadge({ href, size = 'sm', className = '' }) {
 function WebToolButton({ lang, children, compact = false }) {
   return (
     <Link
-      to={`/${lang}/webapp`}
+      to={`/${lang}/webapp/`}
       className={`inline-flex items-center justify-center gap-2 rounded-xl bg-[#0b1220] font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#152033] ${compact ? 'h-10 px-4 text-sm' : 'h-12 px-5 text-sm'}`}
     >
       <img src="/image/WebAssembly_Logo.svg" alt="" className="h-5 w-5" />
@@ -257,7 +257,7 @@ function ProductFamily({ lang }) {
       desc: t('redesign.productFamily.products.grepreader.desc'),
       bullets: [t('redesign.productFamily.products.grepreader.bullet1'), t('redesign.productFamily.products.grepreader.bullet2'), t('redesign.productFamily.products.grepreader.bullet3')],
       cta: t('redesign.productFamily.products.grepreader.cta'),
-      to: `/${lang}/grepreader`,
+      to: `/${lang}/grepreader/`,
       accent: 'indigo',
     },
   ];
@@ -435,7 +435,7 @@ function TwoAppsSection({ lang }) {
             </ul>
             <div className="mt-auto">
               <Link
-                to={`/${lang}/grepreader`}
+                to={`/${lang}/grepreader/`}
                 className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 text-sm font-semibold text-white transition hover:bg-indigo-700"
               >
                 {t('redesign.twoAppsSection.textCta')}
@@ -448,7 +448,7 @@ function TwoAppsSection({ lang }) {
         <p className="mt-6 text-center text-xs text-slate-500">{t('redesign.twoAppsSection.bothNote')}</p>
         <div className="mt-4 text-center">
           <Link
-            to={`/${lang}/grepreader#why-two-apps`}
+            to={`/${lang}/grepreader/#why-two-apps`}
             className="text-xs font-medium text-indigo-500 underline-offset-2 hover:underline"
           >
             Why are these two separate apps? →
@@ -967,7 +967,7 @@ function ArchiveScannerSection() {
               <span className="font-semibold">{t('redesign.archiveSection.langNote')}</span>
             </p>
 
-            <Link to={`/${lang}/archive`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-600 hover:text-orange-700 transition-colors">
+            <Link to={`/${lang}/archive/`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-600 hover:text-orange-700 transition-colors">
               {t('redesign.archiveSection.learnMore', 'Learn more about Comic Duplicate Scanner')} →
             </Link>
           </div>
@@ -1065,7 +1065,7 @@ function SmartDecryptSection() {
               <span className="font-semibold">{t('redesign.decryptSection.langNote')}</span>
             </p>
 
-            <Link to={`/${lang}/smartdecrypt`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-violet-300 hover:text-violet-100 transition-colors">
+            <Link to={`/${lang}/smartdecrypt/`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-violet-300 hover:text-violet-100 transition-colors">
               {t('redesign.decryptSection.learnMore', 'Learn more about SmartDecrypt')} →
             </Link>
           </div>
@@ -1177,7 +1177,7 @@ function ContentCueSection() {
               {t('redesign.contentcueSection.platformNote')}
             </p>
 
-            <Link to={`/${lang}/contentcue`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-green-600 hover:text-green-700 transition-colors">
+            <Link to={`/${lang}/contentcue/`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-green-600 hover:text-green-700 transition-colors">
               {t('redesign.contentcueSection.learnMore', 'Learn more about ContentCue')} →
             </Link>
           </div>
@@ -1308,7 +1308,7 @@ function BlogPreview({ lang }) {
             <p className="mt-2 text-base text-slate-500">{t('redesign.blog.homeSectionDesc')}</p>
           </div>
           <Link
-            to={`/${currentLang}/blog`}
+            to={`/${currentLang}/blog/`}
             className="inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 hover:text-slate-950"
           >
             {t('redesign.blog.viewAll')}
@@ -1328,7 +1328,7 @@ function BlogPreview({ lang }) {
             return (
               <Link
                 key={article.slug}
-                to={`/${currentLang}/blog/${article.slug}`}
+                to={`/${currentLang}/blog/${article.slug}/`}
                 className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
               >
                 <div className="mb-3 flex flex-wrap gap-2">

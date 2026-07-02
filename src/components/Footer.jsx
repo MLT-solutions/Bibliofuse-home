@@ -36,19 +36,19 @@ const Footer = () => {
                         <div className="mb-4 text-xs font-bold uppercase tracking-wider text-ink-soft">{t('redesign.footer.products')}</div>
                         <ul className="space-y-2.5">
                             <li><a href="#reader" className="text-ink transition hover:text-brand">BiblioFuse Reader</a></li>
-                            <li><Link to={`/${lang || 'en'}/webapp`} className="text-ink transition hover:text-brand">{t('redesign.footer.webTool')}</Link></li>
-                            <li><Link to={`/${lang || 'en'}/grepreader`} className="text-ink transition hover:text-brand">GrepTag Reader</Link></li>
-                            <li><Link to={`/${lang || 'en'}/archive`} className="text-ink transition hover:text-brand">Comic Duplicate Scanner</Link></li>
-                            <li><Link to={`/${lang || 'en'}/smartdecrypt`} className="text-ink transition hover:text-brand">SmartDecrypt PDF ZIP</Link></li>
-                            <li><Link to={`/${lang || 'en'}/contentcue`} className="text-ink transition hover:text-brand">ContentCue</Link></li>
+                            <li><Link to={`/${lang || 'en'}/webapp/`} className="text-ink transition hover:text-brand">{t('redesign.footer.webTool')}</Link></li>
+                            <li><Link to={`/${lang || 'en'}/grepreader/`} className="text-ink transition hover:text-brand">GrepTag Reader</Link></li>
+                            <li><Link to={`/${lang || 'en'}/archive/`} className="text-ink transition hover:text-brand">Comic Duplicate Scanner</Link></li>
+                            <li><Link to={`/${lang || 'en'}/smartdecrypt/`} className="text-ink transition hover:text-brand">SmartDecrypt PDF ZIP</Link></li>
+                            <li><Link to={`/${lang || 'en'}/contentcue/`} className="text-ink transition hover:text-brand">ContentCue</Link></li>
                         </ul>
                     </div>
 
                     <div>
                         <div className="mb-4 text-xs font-bold uppercase tracking-wider text-ink-soft">{t('redesign.footer.company')}</div>
                         <ul className="space-y-2.5">
-                            <li><Link to={`/${lang || 'en'}/about`} className="text-ink transition hover:text-brand">{t('nav.about')}</Link></li>
-                            <li><Link to={`/${lang || 'en'}/changelog`} className="text-ink transition hover:text-brand">{t('nav.changelog')}</Link></li>
+                            <li><Link to={`/${lang || 'en'}/about/`} className="text-ink transition hover:text-brand">{t('nav.about')}</Link></li>
+                            <li><Link to={`/${lang || 'en'}/changelog/`} className="text-ink transition hover:text-brand">{t('nav.changelog')}</Link></li>
                             <li><a href="mailto:support@mlogictech.com" className="text-ink transition hover:text-brand">{t('redesign.footer.contact')}</a></li>
                             <li><a href="mailto:support@mlogictech.com" className="text-ink transition hover:text-brand">{t('redesign.footer.work')}</a></li>
                         </ul>
@@ -58,7 +58,7 @@ const Footer = () => {
                         <div className="mb-4 text-xs font-bold uppercase tracking-wider text-ink-soft">{t('redesign.footer.legal')}</div>
                         <ul className="space-y-2.5">
                             <li>
-                                <Link to={`/${lang || 'en'}/privacy`} className="text-ink transition hover:text-brand">
+                                <Link to={`/${lang || 'en'}/privacy/`} className="text-ink transition hover:text-brand">
                                     {t('footer.privacy')}
                                 </Link>
                             </li>
