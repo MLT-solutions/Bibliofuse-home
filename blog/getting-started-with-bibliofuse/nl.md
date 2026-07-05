@@ -54,7 +54,7 @@ Om een mangaserie samen te voegen tot één volume, houd je meerdere CBZ-bestand
 
 - **[BiblioFuse Webtool](/nl/webapp)** — comprimeer en voeg EPUB-, PDF- en CBZ-bestanden samen in elke browser, zonder installatie.
 - **iCloud-boekenplank** — schakel het in via Instellingen om je bibliotheek, leesposities, tags en beoordelingen automatisch te synchroniseren.
-- **Comic Duplicate Scanner** — een bijbehorende Mac-app die dubbele CBZ- en fotobestanden vindt via perceptuele hashing.
+- **Archive Duplicate Scanner** — een bijbehorende Mac-app die dubbele CBZ- en fotobestanden vindt via perceptuele hashing.
 
 
 ## Veelgestelde vragen

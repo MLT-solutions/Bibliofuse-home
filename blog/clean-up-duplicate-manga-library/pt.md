@@ -4,7 +4,7 @@ Você abre sua pasta de mangá e nota algo estranho: o volume 47 de *One Piece* 
 
 Para a maioria dos leitores de mangá, duplicatas se acumulam silenciosamente ao longo de anos de downloads de diferentes fontes, movimentações de arquivos entre drives e backups que nunca foram limpos. O resultado é armazenamento desperdiçado, confusão na leitura e nenhuma maneira fácil de identificar qual versão tem melhor qualidade.
 
-Este guia apresenta um fluxo de trabalho prático para encontrar, revisar e remover mangás duplicados usando o [Comic Duplicate Scanner](/en/archive/) — um utilitário para Mac desenvolvido especificamente para esse problema.
+Este guia apresenta um fluxo de trabalho prático para encontrar, revisar e remover mangás duplicados usando o [Archive Duplicate Scanner](/en/) — um utilitário para Mac desenvolvido especificamente para esse problema.
 
 ---
 
@@ -22,9 +22,9 @@ Um localizador de arquivos duplicados padrão não detectará a maioria desses c
 
 ---
 
-## O que o Comic Duplicate Scanner faz de diferente
+## O que o Archive Duplicate Scanner faz de diferente
 
-O [Comic Duplicate Scanner](/en/archive/) usa **hash perceptual** para comparar as imagens reais dentro dos seus arquivos CBZ e CBR. Em vez de perguntar "esses dois arquivos são idênticos byte a byte?", ele pergunta "esses dois arquivos contêm as mesmas páginas de quadrinhos?"
+O [Archive Duplicate Scanner](/en/) usa **hash perceptual** para comparar as imagens reais dentro dos seus arquivos CBZ e CBR. Em vez de perguntar "esses dois arquivos são idênticos byte a byte?", ele pergunta "esses dois arquivos contêm as mesmas páginas de quadrinhos?"
 
 Isso significa que ele detecta duplicatas que foram:
 
@@ -39,13 +39,13 @@ Isso significa que ele detecta duplicatas que foram:
 
 ### Passo 1: Escaneie sua pasta de biblioteca
 
-Abra o Comic Duplicate Scanner e adicione sua pasta de mangá. Você pode arrastar e soltar pastas diretamente no aplicativo.
+Abra o Archive Duplicate Scanner e adicione sua pasta de mangá. Você pode arrastar e soltar pastas diretamente no aplicativo.
 
 O scanner lê cada arquivo CBZ e CBR, extrai imagens e gera hashes perceptuais para cada página. Tudo acontece completamente no seu Mac sem necessidade de conexão de rede.
 
 ### Passo 2: Revise os pares correspondentes
 
-Após a conclusão do scan, o Comic Duplicate Scanner apresenta os pares correspondentes lado a lado com miniaturas, tamanho de arquivo e porcentagem de similaridade.
+Após a conclusão do scan, o Archive Duplicate Scanner apresenta os pares correspondentes lado a lado com miniaturas, tamanho de arquivo e porcentagem de similaridade.
 
 ### Passo 3: Selecione o que remover
 
@@ -53,7 +53,7 @@ Estratégia comum: mantenha o arquivo maior (geralmente maior resolução) ou a 
 
 ### Passo 4: Mova duplicatas para a Lixeira
 
-O Comic Duplicate Scanner move arquivos para a Lixeira — não exclusão permanente. Você pode restaurar da Lixeira se necessário.
+O Archive Duplicate Scanner move arquivos para a Lixeira — não exclusão permanente. Você pode restaurar da Lixeira se necessário.
 
 ---
 
@@ -61,7 +61,7 @@ O Comic Duplicate Scanner move arquivos para a Lixeira — não exclusão perman
 
 **Estabeleça uma única pasta "autorizada".** Mantenha sua biblioteca curada em um lugar.
 
-**Escaneie após cada sessão de download importante.** Execute o Comic Duplicate Scanner após baixar um lote de novos volumes para detectar sobreposições antes que se multipliquem.
+**Escaneie após cada sessão de download importante.** Execute o Archive Duplicate Scanner após baixar um lote de novos volumes para detectar sobreposições antes que se multipliquem.
 
 **Use o [BiblioFuse](/en/) para ler a partir da sua pasta curada.** Ao transmitir sua biblioteca Mac para iPhone ou iPad pelo BiblioFuse, você lê da única fonte da verdade.
 
@@ -69,11 +69,11 @@ O Comic Duplicate Scanner move arquivos para a Lixeira — não exclusão perman
 
 ## Perguntas frequentes
 
-**O Comic Duplicate Scanner excluirá meus arquivos automaticamente?**
+**O Archive Duplicate Scanner excluirá meus arquivos automaticamente?**
 Não. Ele move arquivos para a Lixeira, não exclusão permanente.
 
 **Quais formatos são suportados?**
 CBZ, CBR e arquivos de imagem em arquivo compactado.
 
 **Meus dois arquivos têm checksums completamente diferentes — ele ainda encontrará a correspondência?**
-Sim. O Comic Duplicate Scanner usa hash perceptual nas imagens dentro de cada arquivo, não o checksum do arquivo.
+Sim. O Archive Duplicate Scanner usa hash perceptual nas imagens dentro de cada arquivo, não o checksum do arquivo.

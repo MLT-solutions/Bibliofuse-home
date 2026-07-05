@@ -1,6 +1,6 @@
 # Cara Membina Koleksi Manga Digital yang Sempurna: Mampat, Hapus Pendua, dan Baca di Mana-mana
 
-BiblioFuse ialah pembaca iOS yang menyokong semua format yang benar-benar digunakan pengumpul manga — CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT — pada iPhone dan iPad yang menjalankan iOS 17 atau lebih baharu. Tab Alat terbina dalam membolehkan anda memampatkan dan menukar fail terus pada peranti, tanpa memerlukan komputer. Digabungkan dengan Comic Duplicate Scanner pada Mac dan [BiblioFuse Web Tool](/ms/webapp/), anda mempunyai aliran kerja lengkap untuk membina dan mengekalkan koleksi manga digital yang sempurna.
+BiblioFuse ialah pembaca iOS yang menyokong semua format yang benar-benar digunakan pengumpul manga — CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT — pada iPhone dan iPad yang menjalankan iOS 17 atau lebih baharu. Tab Alat terbina dalam membolehkan anda memampatkan dan menukar fail terus pada peranti, tanpa memerlukan komputer. Digabungkan dengan Archive Duplicate Scanner pada Mac dan [BiblioFuse Web Tool](/ms/webapp/), anda mempunyai aliran kerja lengkap untuk membina dan mengekalkan koleksi manga digital yang sempurna.
 
 ## Masalah Pengumpul Manga
 
@@ -18,11 +18,11 @@ Kelajuan pemindahan juga penting. Menyalin 50 GB melalui USB atau menunggu iClou
 
 ## Langkah demi Langkah: Membina Koleksi yang Sempurna
 
-### 1. Audit dan Padam Fail Pendua (Comic Duplicate Scanner)
+### 1. Audit dan Padam Fail Pendua (Archive Duplicate Scanner)
 
-Sebelum memampatkan atau mengatur apa-apa, cari dahulu apa yang anda sudah miliki secara berganda. **Comic Duplicate Scanner** untuk Mac dan Windows menggunakan pencincangan perseptual (perceptual hashing) untuk membandingkan kandungan imej sebenar di dalam arkib CBZ, CBR, dan foto. Ia mengesan pendua walaupun nama fail telah diubah, jilid telah dimampat semula, atau kulit muka telah ditukar.
+Sebelum memampatkan atau mengatur apa-apa, cari dahulu apa yang anda sudah miliki secara berganda. **Archive Duplicate Scanner** untuk Mac dan Windows menggunakan pencincangan perseptual (perceptual hashing) untuk membandingkan kandungan imej sebenar di dalam arkib CBZ, CBR, dan foto. Ia mengesan pendua walaupun nama fail telah diubah, jilid telah dimampat semula, atau kulit muka telah ditukar.
 
-Jalankan imbasan penuh folder perpustakaan anda. Gunakan strategi pilih-auto untuk menandakan salinan berkualiti rendah dalam setiap pasangan pendua, semak senarai, kemudian hantar ke Sampah — Comic Duplicate Scanner tidak pernah memadam secara kekal tanpa pengesahan anda.
+Jalankan imbasan penuh folder perpustakaan anda. Gunakan strategi pilih-auto untuk menandakan salinan berkualiti rendah dalam setiap pasangan pendua, semak senarai, kemudian hantar ke Sampah — Archive Duplicate Scanner tidak pernah memadam secara kekal tanpa pengesahan anda.
 
 ### 2. Mampatkan Jilid yang Terlalu Besar (BiblioFuse Web Tool atau Tab Alat iOS)
 
@@ -52,7 +52,7 @@ Koleksi yang sempurna ialah yang boleh anda akses dari mana-mana. BiblioFuse men
 
 | Tugas | Alat |
 |-------|------|
-| Mencari jilid pendua | Comic Duplicate Scanner (Mac/Windows) |
+| Mencari jilid pendua | Archive Duplicate Scanner (Mac/Windows) |
 | Memampatkan / menukar / menggabungkan fail | BiblioFuse Web Tool (pelayar) atau tab Alat iOS |
 | Menyahsulitkan arkib yang dilindungi | SmartDecrypt PDF ZIP CBZ (iOS/macOS) |
 | Membaca, menandai, menilai, dan menyegerakkan | BiblioFuse iOS (iPhone/iPad, iOS 17+) |
@@ -70,7 +70,7 @@ Untuk perpustakaan yang sangat besar, **Mac Home Library** lebih baik lagi keran
 BiblioFuse membaca fail CBZ, CBR, ZIP, RAR, EPUB, PDF, dan TXT. CBZ ialah format arkib manga yang paling biasa dan dibuka dengan serta-merta. EPUB lebih baik untuk komik boleh-alir dan novel ringan. Semua format disokong tanpa sebarang penukaran diperlukan.
 
 **Bagaimana cara mencari jilid manga pendua pada Mac saya?**
-Gunakan Comic Duplicate Scanner. Ia menggunakan pencincangan perseptual untuk membandingkan kandungan imej di dalam arkib, jadi ia menemukan pendua walaupun nama fail berbeza atau fail telah dimampat semula. Imbasan penuh perpustakaan 500 jilid biasanya selesai dalam beberapa minit.
+Gunakan Archive Duplicate Scanner. Ia menggunakan pencincangan perseptual untuk membandingkan kandungan imej di dalam arkib, jadi ia menemukan pendua walaupun nama fail berbeza atau fail telah dimampat semula. Imbasan penuh perpustakaan 500 jilid biasanya selesai dalam beberapa minit.
 
 **Bolehkah saya mampatkan fail manga tanpa kehilangan kualiti?**
 Ya. BiblioFuse Web Tool dan tab Alat iOS kedua-duanya menawarkan tahap pemampatan yang mengurangkan saiz fail dengan ketara sambil mengekalkan imej cukup tajam untuk bacaan selesa. Untuk salinan bacaan kasual, tahap yang lebih agresif boleh mengurangkan saiz sebanyak 50–70%.
@@ -86,4 +86,4 @@ Ya, dengan SmartDecrypt PDF ZIP CBZ. Ia menyahsulitkan fail ZIP dan CBZ yang dil
 
 ## Mula Membaca Koleksi Sempurna Anda Hari Ini
 
-Koleksi manga yang luar biasa bukan hanya tentang memiliki jilid — ia tentang keupayaan untuk mencarinya, memuatkannya pada peranti anda, dan membukanya di mana-mana tanpa kesulitan. [BiblioFuse](/ms/) menyatukan pembaca, alat pemindahan, dan pemprosesan pada peranti yang anda perlukan dalam satu aplikasi. Gandingkan ia dengan Comic Duplicate Scanner dan SmartDecrypt untuk aliran kerja lengkap dari hujung ke hujung, dan koleksi anda akan berada dalam keadaan terbaik yang pernah ada.
+Koleksi manga yang luar biasa bukan hanya tentang memiliki jilid — ia tentang keupayaan untuk mencarinya, memuatkannya pada peranti anda, dan membukanya di mana-mana tanpa kesulitan. [BiblioFuse](/ms/) menyatukan pembaca, alat pemindahan, dan pemprosesan pada peranti yang anda perlukan dalam satu aplikasi. Gandingkan ia dengan Archive Duplicate Scanner dan SmartDecrypt untuk aliran kerja lengkap dari hujung ke hujung, dan koleksi anda akan berada dalam keadaan terbaik yang pernah ada.

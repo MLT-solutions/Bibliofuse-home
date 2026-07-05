@@ -4,7 +4,7 @@ Je hebt een bestand hernoemd. Je hebt een archief opnieuw gecomprimeerd. Je hebt
 
 Toch is de strip erin hetzelfde. Elke pagina is hetzelfde. En als je je digitale bibliotheek probeert op te ruimen, zijn deze bijna-identieke duplicaten precies de bestanden die door standaard duplicaatzoektools glippen.
 
-Dit is het probleem dat perceptuele hashing oplost, en het is de techniek in de kern van [Comic Duplicate Scanner](/en/archive/).
+Dit is het probleem dat perceptuele hashing oplost, en het is de techniek in de kern van [Archive Duplicate Scanner](/en/).
 
 ---
 
@@ -36,16 +36,11 @@ Een **perceptuele hash** is een korte vingerafdruk berekend van de *visuele inho
 
 Twee afbeeldingen met vergelijkbare visuele inhoud produceren hashes met een lage **Hamming-afstand**.
 
-Twee belangrijke eigenschappen vloeien rechtstreeks voort uit deze stappen:
-
-- **Resolutie is irrelevant.** Stap 1 schaalt elke afbeelding naar hetzelfde vaste raster voordat er iets wordt berekend. Een scan van 1200px en een van 3000px van dezelfde pagina worden beide omgezet naar dezelfde 32×32-miniatuur en produceren dezelfde hash.
-- **Kleurmodus is irrelevant.** Stap 2 converteert naar grijswaarden vóór de vergelijking. Een volkleurenscan en een grijswaardenscan van dezelfde pagina produceren bijna identieke hashes, omdat het algoritme alleen de luminantiestructuur analyseert, niet de kleurwaarden.
-
 ---
 
-## Hoe Comic Duplicate Scanner dit toepast
+## Hoe Archive Duplicate Scanner dit toepast
 
-[Comic Duplicate Scanner](/en/archive/) past perceptuele hashing toe op archiefniveau:
+[Archive Duplicate Scanner](/en/) past perceptuele hashing toe op archiefniveau:
 
 1. **Extractie** — opent elk CBZ- of CBR-archief en leest de interne afbeeldingen
 2. **Hash van elke pagina** — elke pagina krijgt een perceptuele hash
@@ -69,9 +64,6 @@ Het ene archief heeft pagina's `001.jpg`, het andere `page_001.jpg`. Perceptuele
 
 ---
 
-**Geval 5: Kleurenscan versus zwart-witscan**
-Je hebt twee kopieën van hetzelfde mangavolume: één is een kleurenscan van een vroege digitale uitgave, de andere is een grijswaardenscan van een latere heruitgave. Verschillende bestandsgroottes, verschillende kleurdiepte, verschillende visuele weergave. Maar omdat dHash converteert naar grijswaarden vóór het hashen, worden beide kopieën gereduceerd tot dezelfde luminantie-vingerafdruk → gemarkeerd als duplicaat. Dit is een geval dat bijna alle andere duplicaatdetectors volledig missen.
-
 ## De grenzen van perceptuele hashing
 
 **Significante visuele bewerkingen verbreken de match.** Lichte watermerken of kleine uitsnijdingen beïnvloeden de detectie doorgaans niet.
@@ -82,8 +74,8 @@ Je hebt twee kopieën van hetzelfde mangavolume: één is een kleurenscan van ee
 
 ---
 
-## Comic Duplicate Scanner gebruiken
+## Archive Duplicate Scanner gebruiken
 
-[Comic Duplicate Scanner](/en/archive/) is een native Mac-app die perceptuele hashing naar je volledige bibliotheek brengt. Het verplaatst geselecteerde duplicaten naar de Prullenmand (geen definitieve verwijdering).
+[Archive Duplicate Scanner](/en/) is een native Mac-app die perceptuele hashing naar je volledige bibliotheek brengt. Het verplaatst geselecteerde duplicaten naar de Prullenmand (geen definitieve verwijdering).
 
 Eenmaal je bibliotheek schoon, combineer het met [BiblioFuse](/en/) op iPhone voor één gecureerde bron voor lezen.

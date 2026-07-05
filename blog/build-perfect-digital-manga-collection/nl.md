@@ -1,6 +1,6 @@
 # Hoe Bouw Je een Perfecte Digitale Mangacollectie: Compress, Dedupliceer en Lees Overal
 
-BiblioFuse is de iOS-lezer die elk formaat ondersteunt dat mangaverzamelaars daadwerkelijk gebruiken — CBZ, CBR, EPUB, PDF, ZIP, RAR en TXT — op iPhone en iPad met iOS 17 of nieuwer. Het ingebouwde tabblad Tools stelt je in staat om bestanden rechtstreeks op het apparaat te comprimeren en te converteren, zonder ooit een computer nodig te hebben. Gecombineerd met Comic Duplicate Scanner op Mac en de [BiblioFuse Web Tool](/nl/webapp/) heb je een compleet werkproces om een perfecte digitale mangacollectie op te bouwen en te onderhouden.
+BiblioFuse is de iOS-lezer die elk formaat ondersteunt dat mangaverzamelaars daadwerkelijk gebruiken — CBZ, CBR, EPUB, PDF, ZIP, RAR en TXT — op iPhone en iPad met iOS 17 of nieuwer. Het ingebouwde tabblad Tools stelt je in staat om bestanden rechtstreeks op het apparaat te comprimeren en te converteren, zonder ooit een computer nodig te hebben. Gecombineerd met Archive Duplicate Scanner op Mac en de [BiblioFuse Web Tool](/nl/webapp/) heb je een compleet werkproces om een perfecte digitale mangacollectie op te bouwen en te onderhouden.
 
 ## Het Probleem van de Mangaverzamelaar
 
@@ -18,11 +18,11 @@ Overdrachtssnelheid telt ook mee. 50 GB kopiëren via USB of wachten tot iCloud 
 
 ## Stap voor Stap: De Perfecte Collectie Opbouwen
 
-### 1. Controleer en Verwijder Duplicaten (Comic Duplicate Scanner)
+### 1. Controleer en Verwijder Duplicaten (Archive Duplicate Scanner)
 
-Voordat je iets comprimmeert of organiseert, zoek eerst wat je al dubbel hebt. **Comic Duplicate Scanner** voor Mac en Windows gebruikt perceptuele hashing om de werkelijke afbeeldingsinhoud in CBZ-, CBR- en fotoarchieven te vergelijken. Het vindt duplicaten zelfs als de bestandsnaam is gewijzigd, het deel opnieuw gecomprimeerd is of de omslagafbeelding vervangen is.
+Voordat je iets comprimmeert of organiseert, zoek eerst wat je al dubbel hebt. **Archive Duplicate Scanner** voor Mac en Windows gebruikt perceptuele hashing om de werkelijke afbeeldingsinhoud in CBZ-, CBR- en fotoarchieven te vergelijken. Het vindt duplicaten zelfs als de bestandsnaam is gewijzigd, het deel opnieuw gecomprimeerd is of de omslagafbeelding vervangen is.
 
-Voer een volledige scan uit van je bibliotheekmap. Gebruik de automatische selectiestrategie om de kopie van lagere kwaliteit in elk duplicaatpaar te markeren, bekijk de lijst en stuur ze naar de Prullenmand — Comic Duplicate Scanner verwijdert nooit permanent zonder jouw bevestiging.
+Voer een volledige scan uit van je bibliotheekmap. Gebruik de automatische selectiestrategie om de kopie van lagere kwaliteit in elk duplicaatpaar te markeren, bekijk de lijst en stuur ze naar de Prullenmand — Archive Duplicate Scanner verwijdert nooit permanent zonder jouw bevestiging.
 
 ### 2. Comprimeer Grote Delen (BiblioFuse Web Tool of iOS Tabblad Tools)
 
@@ -52,7 +52,7 @@ Een perfecte collectie is er een die je overal kunt bereiken. BiblioFuse biedt d
 
 | Taak | Hulpmiddel |
 |------|-----------|
-| Dubbele delen vinden | Comic Duplicate Scanner (Mac/Windows) |
+| Dubbele delen vinden | Archive Duplicate Scanner (Mac/Windows) |
 | Bestanden comprimeren / converteren / samenvoegen | BiblioFuse Web Tool (browser) of iOS tabblad Tools |
 | Versleutelde archieven ontgrendelen | SmartDecrypt PDF ZIP CBZ (iOS/macOS) |
 | Lezen, taggen, beoordelen en synchroniseren | BiblioFuse iOS (iPhone/iPad, iOS 17+) |
@@ -70,7 +70,7 @@ Voor zeer grote bibliotheken is **Mac Home Library** nog beter omdat er helemaal
 BiblioFuse leest CBZ-, CBR-, ZIP-, RAR-, EPUB-, PDF- en TXT-bestanden. CBZ is het meest voorkomende manga-archiefformaat en opent direct. EPUB is beter voor herstroombare strips en light novels. Alle formaten worden ondersteund zonder conversie.
 
 **Hoe vind ik dubbele mangadelen op mijn Mac?**
-Gebruik Comic Duplicate Scanner. Het gebruikt perceptuele hashing om afbeeldingsinhoud in archieven te vergelijken, zodat het duplicaten vindt zelfs als bestandsnamen verschillen of bestanden opnieuw zijn gecomprimeerd. Een volledige scan van een bibliotheek van 500 delen duurt gewoonlijk een paar minuten.
+Gebruik Archive Duplicate Scanner. Het gebruikt perceptuele hashing om afbeeldingsinhoud in archieven te vergelijken, zodat het duplicaten vindt zelfs als bestandsnamen verschillen of bestanden opnieuw zijn gecomprimeerd. Een volledige scan van een bibliotheek van 500 delen duurt gewoonlijk een paar minuten.
 
 **Kan ik mangabestanden comprimeren zonder kwaliteitsverlies?**
 Ja. De BiblioFuse Web Tool en het iOS-tabblad Tools bieden compressieniveaus die de bestandsgrootte aanzienlijk verminderen terwijl afbeeldingen scherp genoeg blijven voor comfortabel lezen. Voor casuale leesvarianten kan een agressiever niveau de grootte met 50–70% reduceren.
@@ -86,4 +86,4 @@ Ja, met SmartDecrypt PDF ZIP CBZ. Het ontsleutelt wachtwoordbeveiligde ZIP- en C
 
 ## Begin Vandaag met Je Perfecte Collectie
 
-Een geweldige mangacollectie gaat niet alleen over het hebben van delen — het gaat erom ze te kunnen vinden, ze op je apparaat te laten passen en ze overal zonder moeite te openen. [BiblioFuse](/nl/) brengt de lezer, de overdrachtstools en de on-device verwerking samen in één app. Combineer het met Comic Duplicate Scanner en SmartDecrypt voor een compleet end-to-end werkproces, en je collectie is in de beste staat ooit.
+Een geweldige mangacollectie gaat niet alleen over het hebben van delen — het gaat erom ze te kunnen vinden, ze op je apparaat te laten passen en ze overal zonder moeite te openen. [BiblioFuse](/nl/) brengt de lezer, de overdrachtstools en de on-device verwerking samen in één app. Combineer het met Archive Duplicate Scanner en SmartDecrypt voor een compleet end-to-end werkproces, en je collectie is in de beste staat ooit.

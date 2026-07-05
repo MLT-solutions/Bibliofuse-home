@@ -1,6 +1,6 @@
 # Hoe open je wachtwoordbeveiligde CBZ- en ZIP-bestanden op iPhone
 
-[SmartDecrypt PDF ZIP CBZ](/nl/smartdecrypt/) opent wachtwoordbeveiligde CBZ- en ZIP-archieven rechtstreeks op iPhone, iPad en Mac zonder uw bestanden naar een server te uploaden. De app ontsleutelt CBZ-comicbestanden en ZIP-bestanden op het apparaat met een op Rust gebaseerde engine en slaat de ontgrendelde kopie op in de Bestanden-app. Na de ontsleuteling opent u uw CBZ-strips in [BiblioFuse](/nl/) voor de beste leeservaring op iPhone. Download SmartDecrypt PDF ZIP CBZ uit de App Store om archiefwachtwoorden in seconden te verwijderen.
+SmartDecrypt PDF ZIP CBZ opent wachtwoordbeveiligde CBZ- en ZIP-archieven rechtstreeks op iPhone, iPad en Mac zonder uw bestanden naar een server te uploaden. De app ontsleutelt CBZ-comicbestanden en ZIP-bestanden op het apparaat met een op Rust gebaseerde engine en slaat de ontgrendelde kopie op in de Bestanden-app. Na de ontsleuteling opent u uw CBZ-strips in [BiblioFuse](/nl/) voor de beste leeservaring op iPhone. Download SmartDecrypt PDF ZIP CBZ uit de App Store om archiefwachtwoorden in seconden te verwijderen.
 
 ## Waarom openen wachtwoordbeveiligde CBZ-bestanden niet in de meeste striplesers?
 
@@ -69,4 +69,4 @@ SmartDecrypt vereist het juiste wachtwoord — het probeert geen onbekende wacht
 
 ## Ontgrendel uw strips en archieven
 
-Wachtwoordbeveiligde CBZ- en ZIP-bestanden hoeven uw leesworkflow niet langer te blokkeren. SmartDecrypt PDF ZIP CBZ ontsleutelt elk beveiligd archief op uw iPhone of Mac in seconden. Zoek naar [SmartDecrypt PDF ZIP CBZ](/nl/smartdecrypt/) in de App Store om te beginnen, en open uw ontsleutelde strips vervolgens in [BiblioFuse](/nl/).
+Wachtwoordbeveiligde CBZ- en ZIP-bestanden hoeven uw leesworkflow niet langer te blokkeren. SmartDecrypt PDF ZIP CBZ ontsleutelt elk beveiligd archief op uw iPhone of Mac in seconden. Zoek naar **SmartDecrypt PDF ZIP CBZ** in de App Store om te beginnen, en open uw ontsleutelde strips vervolgens in [BiblioFuse](/nl/).

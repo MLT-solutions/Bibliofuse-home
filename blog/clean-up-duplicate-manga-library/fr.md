@@ -4,7 +4,7 @@ Vous ouvrez votre dossier manga et remarquez quelque chose d'étrange : le volum
 
 Pour la plupart des lecteurs de manga, les doublons s'accumulent silencieusement au fil des années — téléchargements depuis diverses sources, déplacements d'archives entre disques, sauvegardes jamais nettoyées. Résultat : espace gaspillé, confusion lors de la lecture, et aucun moyen simple d'identifier la meilleure version.
 
-Ce guide présente un flux de travail pratique pour trouver, examiner et supprimer les doublons manga avec [Comic Duplicate Scanner](/fr/archive/) — un utilitaire Mac conçu spécifiquement pour ce problème.
+Ce guide présente un flux de travail pratique pour trouver, examiner et supprimer les doublons manga avec [Archive Duplicate Scanner](/fr/) — un utilitaire Mac conçu spécifiquement pour ce problème.
 
 ---
 
@@ -22,9 +22,9 @@ Un outil de recherche de doublons standard ne détecte pas la plupart de ces cas
 
 ---
 
-## Ce que fait Comic Duplicate Scanner différemment
+## Ce que fait Archive Duplicate Scanner différemment
 
-[Comic Duplicate Scanner](/fr/archive/) utilise le **hachage perceptuel** pour comparer les images réelles à l'intérieur de vos archives CBZ et CBR. Au lieu de demander "ces deux fichiers sont-ils identiques octet par octet ?", il demande "ces deux archives contiennent-elles les mêmes pages de bande dessinée ?"
+[Archive Duplicate Scanner](/fr/) utilise le **hachage perceptuel** pour comparer les images réelles à l'intérieur de vos archives CBZ et CBR. Au lieu de demander "ces deux fichiers sont-ils identiques octet par octet ?", il demande "ces deux archives contiennent-elles les mêmes pages de bande dessinée ?"
 
 Cela lui permet de détecter des doublons qui ont été :
 
@@ -39,13 +39,13 @@ Cela lui permet de détecter des doublons qui ont été :
 
 ### Étape 1 : Analysez votre dossier bibliothèque
 
-Ouvrez Comic Duplicate Scanner et ajoutez votre dossier manga. Vous pouvez glisser-déposer des dossiers directement sur l'application.
+Ouvrez Archive Duplicate Scanner et ajoutez votre dossier manga. Vous pouvez glisser-déposer des dossiers directement sur l'application.
 
 Le scanner lit chaque fichier CBZ et CBR, extrait les images et génère des hachages perceptuels pour chaque page. Tout se passe entièrement sur votre Mac sans connexion réseau requise.
 
 ### Étape 2 : Examinez les paires correspondantes
 
-Une fois l'analyse terminée, Comic Duplicate Scanner présente les paires côte à côte avec des aperçus miniatures, la taille de chaque fichier et un pourcentage de similarité.
+Une fois l'analyse terminée, Archive Duplicate Scanner présente les paires côte à côte avec des aperçus miniatures, la taille de chaque fichier et un pourcentage de similarité.
 
 ### Étape 3 : Sélectionnez ce à supprimer
 
@@ -53,7 +53,7 @@ Stratégie recommandée : conservez le fichier le plus volumineux (généralemen
 
 ### Étape 4 : Déplacez les doublons dans la Corbeille
 
-Comic Duplicate Scanner déplace les fichiers — il ne les supprime pas définitivement. Vous pouvez restaurer depuis la Corbeille si nécessaire.
+Archive Duplicate Scanner déplace les fichiers — il ne les supprime pas définitivement. Vous pouvez restaurer depuis la Corbeille si nécessaire.
 
 ---
 
@@ -61,7 +61,7 @@ Comic Duplicate Scanner déplace les fichiers — il ne les supprime pas défini
 
 **Établissez un seul dossier "de référence".** Conservez votre bibliothèque soignée au même endroit. Lorsque vous téléchargez un nouveau volume, déplacez-le dans ce dossier.
 
-**Analysez après chaque grosse session de téléchargement.** Lancez Comic Duplicate Scanner après avoir téléchargé un lot de nouveaux volumes pour détecter les chevauchements avant qu'ils ne se multiplient.
+**Analysez après chaque grosse session de téléchargement.** Lancez Archive Duplicate Scanner après avoir téléchargé un lot de nouveaux volumes pour détecter les chevauchements avant qu'ils ne se multiplient.
 
 **Utilisez [BiblioFuse](/fr/) pour lire depuis votre dossier organisé.** Quand vous diffusez votre bibliothèque Mac vers iPhone ou iPad via BiblioFuse, vous lisez depuis une source unique.
 
@@ -69,11 +69,11 @@ Comic Duplicate Scanner déplace les fichiers — il ne les supprime pas défini
 
 ## FAQ
 
-**Comic Duplicate Scanner supprimera-t-il mes fichiers automatiquement ?**
+**Archive Duplicate Scanner supprimera-t-il mes fichiers automatiquement ?**
 Non. Il déplace les fichiers vers la Corbeille, pas de suppression définitive. Vous examinez chaque correspondance avant que quoi que ce soit ne soit supprimé.
 
 **Quels formats sont pris en charge ?**
 CBZ, CBR et fichiers image en archive.
 
 **Mes deux fichiers ont des checksums complètement différents — les trouvera-t-il quand même ?**
-Oui. Comic Duplicate Scanner utilise le hachage perceptuel sur les images à l'intérieur de chaque archive, pas le checksum du fichier.
+Oui. Archive Duplicate Scanner utilise le hachage perceptuel sur les images à l'intérieur de chaque archive, pas le checksum du fichier.

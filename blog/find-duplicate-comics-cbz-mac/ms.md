@@ -1,6 +1,6 @@
 # Cara Mencari dan Membuang Fail Komik CBZ Pendua di Mac
 
-Comic Duplicate Scanner mencari fail CBZ, CBR, dan arkib komik pendua di Mac menggunakan pencincangan perseptual — mengesan padanan walaupun fail telah dinamakan semula, dimampatkan semula, atau dibungkus semula. Imbas seluruh perpustakaan anda, semak pasangan fail yang sepadan secara berdampingan, dan pindahkan fail pendua ke Sampah dengan selamat tanpa membahayakan fail asal.
+Archive Duplicate Scanner mencari fail CBZ, CBR, dan arkib komik pendua di Mac menggunakan pencincangan perseptual — mengesan padanan walaupun fail telah dinamakan semula, dimampatkan semula, atau dibungkus semula. Imbas seluruh perpustakaan anda, semak pasangan fail yang sepadan secara berdampingan, dan pindahkan fail pendua ke Sampah dengan selamat tanpa membahayakan fail asal.
 
 ## Mengapa Fail Komik Pendua Lebih Sukar Ditemui daripada yang Anda Sangka
 
@@ -8,11 +8,11 @@ Perpustakaan komik digital mengumpulkan fail pendua dengan cara yang mengatasi p
 
 Alat pendua standard membandingkan cincang fail — sebarang perubahan, walaupun menamakan semula atau menambah tag ulasan, menghasilkan cincang berbeza dan fail pendua tidak dapat dikesan. Pencincangan perseptual berfungsi secara berbeza: ia menganalisis kandungan visual imej dalam arkib dan mencipta cap jari berdasarkan apa yang anda lihat, bukan bait yang tepat.
 
-Comic Duplicate Scanner menggunakan pencincangan perseptual untuk mencari fail komik pendua yang tidak dapat ditemui oleh alat lain.
+Archive Duplicate Scanner menggunakan pencincangan perseptual untuk mencari fail komik pendua yang tidak dapat ditemui oleh alat lain.
 
 ## Bagaimana Pencincangan Perseptual Berfungsi untuk Komik?
 
-Apabila Comic Duplicate Scanner mengimbas CBZ atau CBR, ia membuka arkib, mengambil sampel imej di dalamnya, dan mengira cincang perseptual untuk setiap imej. Cincang ini menangkap struktur visual — bentuk, corak kontras, dan susun atur — tanpa bergantung pada nilai piksel yang tepat.
+Apabila Archive Duplicate Scanner mengimbas CBZ atau CBR, ia membuka arkib, mengambil sampel imej di dalamnya, dan mengira cincang perseptual untuk setiap imej. Cincang ini menangkap struktur visual — bentuk, corak kontras, dan susun atur — tanpa bergantung pada nilai piksel yang tepat.
 
 Dua fail CBZ yang mengandungi halaman yang sama menghasilkan cincang yang sepadan walaupun:
 - Nama fail adalah berbeza sepenuhnya
@@ -20,74 +20,72 @@ Dua fail CBZ yang mengandungi halaman yang sama menghasilkan cincang yang sepada
 - Satu fail mempunyai tag metadata yang tidak ada pada fail lain
 - Susunan halaman berbeza antara keluaran
 
-Ini menjadikan Comic Duplicate Scanner alat yang tepat untuk jenis fail pendua yang terkumpul dalam perpustakaan komik selama bertahun-tahun memuat turun daripada pelbagai sumber.
+Ini menjadikan Archive Duplicate Scanner alat yang tepat untuk jenis fail pendua yang terkumpul dalam perpustakaan komik selama bertahun-tahun memuat turun daripada pelbagai sumber.
 
 ## Cara Mencari Fail CBZ Pendua di Mac
 
-### Langkah 1: Muat Turun dan Lancarkan Comic Duplicate Scanner
+### Langkah 1: Muat Turun dan Lancarkan Archive Duplicate Scanner
 
-[Comic Duplicate Scanner](/ms/archive/) tersedia di Mac App Store. Pasang dan lancarkan dari folder Aplikasi.
+[Archive Duplicate Scanner](/ms/) tersedia di Mac App Store. Pasang dan lancarkan dari folder Aplikasi.
 
 ### Langkah 2: Tambah Folder Perpustakaan Komik Anda
 
-Seret folder komik anda ke dalam tetingkap Comic Duplicate Scanner, atau gunakan butang Tambah Folder untuk menyemak imbas. Anda boleh mengimbas beberapa lokasi serentak — perpustakaan utama, pemacu luaran, dan lokasi sandaran semuanya sekali gus.
+Seret folder komik anda ke dalam tetingkap Archive Duplicate Scanner, atau gunakan butang Tambah Folder untuk menyemak imbas. Anda boleh mengimbas beberapa lokasi serentak — perpustakaan utama, pemacu luaran, dan lokasi sandaran semuanya sekali gus.
 
 ### Langkah 3: Mulakan Pengimbasan
 
-Klik Imbas. Comic Duplicate Scanner membuka setiap CBZ dan CBR, mengambil sampel imej, dan mengira cincang perseptual. Perpustakaan yang mengandungi 1,000 komik biasanya selesai dalam beberapa minit pada Mac moden.
+Klik Imbas. Archive Duplicate Scanner membuka setiap CBZ dan CBR, mengambil sampel imej, dan mengira cincang perseptual. Perpustakaan yang mengandungi 1,000 komik biasanya selesai dalam beberapa minit pada Mac moden.
 
 ### Langkah 4: Semak Pasangan yang Sepadan
 
-Selepas pengimbasan, Comic Duplicate Scanner memaparkan kumpulan pendua yang dikesan. Setiap kumpulan menunjukkan arkib yang sepadan secara berdampingan dengan nama fail, saiz fail, tarikh pengubahsuaian, dan laluan folder. Anda boleh pratonton imej kulit atau membuka mana-mana arkib untuk pengesahan.
+Selepas pengimbasan, Archive Duplicate Scanner memaparkan kumpulan pendua yang dikesan. Setiap kumpulan menunjukkan arkib yang sepadan secara berdampingan dengan nama fail, saiz fail, tarikh pengubahsuaian, dan laluan folder. Anda boleh pratonton imej kulit atau membuka mana-mana arkib untuk pengesahan.
 
 ### Langkah 5: Pilih Secara Automatik Salinan yang Ingin Disimpan
 
-Strategi pilih automatik Comic Duplicate Scanner memilih fail yang akan disimpan berdasarkan peraturan yang anda konfigurasikan: simpan fail yang lebih besar (kemungkinan kualiti lebih baik), simpan fail dalam folder pilihan (perpustakaan utama anda), atau simpan salinan yang paling baru diubah suai. Anda juga boleh memilih secara manual fail yang ingin disimpan dalam setiap kumpulan.
+Strategi pilih automatik Archive Duplicate Scanner memilih fail yang akan disimpan berdasarkan peraturan yang anda konfigurasikan: simpan fail yang lebih besar (kemungkinan kualiti lebih baik), simpan fail dalam folder pilihan (perpustakaan utama anda), atau simpan salinan yang paling baru diubah suai. Anda juga boleh memilih secara manual fail yang ingin disimpan dalam setiap kumpulan.
 
 ### Langkah 6: Pindahkan Fail Pendua ke Sampah
 
-Klik Buang Pendua (atau Pindah ke Sampah). Comic Duplicate Scanner tidak pernah memadamkan fail secara kekal — ia hanya memindahkannya ke Sampah. Semak di sana sebelum mengosongkan jika perlu.
+Klik Buang Pendua (atau Pindah ke Sampah). Archive Duplicate Scanner tidak pernah memadamkan fail secara kekal — ia hanya memindahkannya ke Sampah. Semak di sana sebelum mengosongkan jika perlu.
 
 ## Strategi Pilih Automatik untuk Perpustakaan Besar
 
-Apabila berurusan dengan 200 kumpulan pendua, menyemak setiap satu secara manual adalah tidak praktikal. Strategi pilih automatik Comic Duplicate Scanner mengautomasikan keputusan:
+Apabila berurusan dengan 200 kumpulan pendua, menyemak setiap satu secara manual adalah tidak praktikal. Strategi pilih automatik Archive Duplicate Scanner mengautomasikan keputusan:
 
 **Simpan fail yang lebih besar:** Arkib CBZ yang lebih besar biasanya mengandungi imej berkualiti lebih tinggi. Strategi ini secara automatik menyimpan versi yang lebih baik.
 
-**Simpan fail dalam folder pilihan:** Jika perpustakaan utama anda ada di `~/Comics` tetapi fail pendua berada pada pemacu sandaran, beritahu Comic Duplicate Scanner untuk sentiasa mengutamakan salinan `~/Comics`. Salinan sandaran akan ditandakan untuk dibuang.
+**Simpan fail dalam folder pilihan:** Jika perpustakaan utama anda ada di `~/Comics` tetapi fail pendua berada pada pemacu sandaran, beritahu Archive Duplicate Scanner untuk sentiasa mengutamakan salinan `~/Comics`. Salinan sandaran akan ditandakan untuk dibuang.
 
 **Simpan yang paling baru diubah suai:** Berguna apabila fail yang lebih baru adalah keluaran yang diperbetulkan atau dikemas kini daripada kumpulan imbasan yang sama.
 
-Selepas pilih automatik dijalankan, semak pilihan yang ditandakan sekali sebelum mengesahkan. Comic Duplicate Scanner tidak pernah memadamkan tanpa pengesahan eksplisit anda.
+Selepas pilih automatik dijalankan, semak pilihan yang ditandakan sekali sebelum mengesahkan. Archive Duplicate Scanner tidak pernah memadamkan tanpa pengesahan eksplisit anda.
 
 ## Bagaimana Pemadanan Nama Fail Kabur Membantu?
 
-Selain pencincangan perseptual, Comic Duplicate Scanner juga menggunakan pemadanan nama fail kabur untuk mengenal pasti kemungkinan pendua walaupun sebelum analisis imej. Fail seperti `One-Punch-Man-v01.cbz` dan `One_Punch_Man_Vol_1.cbz` ditandakan sebagai kemungkinan padanan.
+Selain pencincangan perseptual, Archive Duplicate Scanner juga menggunakan pemadanan nama fail kabur untuk mengenal pasti kemungkinan pendua walaupun sebelum analisis imej. Fail seperti `One-Punch-Man-v01.cbz` dan `One_Punch_Man_Vol_1.cbz` ditandakan sebagai kemungkinan padanan.
 
 Pendekatan dua lapisan ini — pemadanan nama fail kabur ditambah pengesahan cincang perseptual — menangkap fail pendua yang jelas bagi manusia tetapi tidak kelihatan kepada alat yang bergantung pada padanan rentetan atau bait yang tepat.
 
 ## Soalan Lazim
 
 **Bagaimana cara mencari fail CBZ pendua di Mac?**
-Gunakan Comic Duplicate Scanner. Tambah folder komik anda, klik Imbas, dan aplikasi mengenal pasti fail CBZ dan CBR pendua menggunakan pencincangan perseptual. Ia mengesan padanan walaupun selepas penamaan semula atau pemampatan semula, kemudian membolehkan anda memindahkan fail pendua ke Sampah dengan selamat.
+Gunakan Archive Duplicate Scanner. Tambah folder komik anda, klik Imbas, dan aplikasi mengenal pasti fail CBZ dan CBR pendua menggunakan pencincangan perseptual. Ia mengesan padanan walaupun selepas penamaan semula atau pemampatan semula, kemudian membolehkan anda memindahkan fail pendua ke Sampah dengan selamat.
 
-**Bolehkah Comic Duplicate Scanner mencari fail pendua jika nama fail berbeza?**
-Ya. Comic Duplicate Scanner menggunakan pencincangan perseptual pada imej dalam arkib CBZ. Jika dua arkib mengandungi halaman imbasan yang sama, keduanya ditandakan sebagai pendua tanpa mengira nama fail, saiz fail, atau metadata.
+**Bolehkah Archive Duplicate Scanner mencari fail pendua jika nama fail berbeza?**
+Ya. Archive Duplicate Scanner menggunakan pencincangan perseptual pada imej dalam arkib CBZ. Jika dua arkib mengandungi halaman imbasan yang sama, keduanya ditandakan sebagai pendua tanpa mengira nama fail, saiz fail, atau metadata.
 
-**Adakah Comic Duplicate Scanner memadamkan fail secara kekal?**
-Tidak. Comic Duplicate Scanner hanya memindahkan fail ke Sampah. Anda boleh menyemak dan memulihkannya sebelum mengosongkan — selamat digunakan pada perpustakaan mana-mana saiz.
+**Adakah Archive Duplicate Scanner memadamkan fail secara kekal?**
+Tidak. Archive Duplicate Scanner hanya memindahkan fail ke Sampah. Anda boleh menyemak dan memulihkannya sebelum mengosongkan — selamat digunakan pada perpustakaan mana-mana saiz.
 
-**Format komik apakah yang disokong Comic Duplicate Scanner?**
-Comic Duplicate Scanner menyokong arkib komik CBZ dan CBR. Ia juga mengimbas fail foto (JPEG, PNG, HEIC, WebP, RAW) dan arkib ZIP/RAR standard.
+**Format komik apakah yang disokong Archive Duplicate Scanner?**
+Archive Duplicate Scanner menyokong arkib komik CBZ dan CBR. Ia juga mengimbas fail foto (JPEG, PNG, HEIC, WebP, RAW) dan arkib ZIP/RAR standard.
 
 **Berapa lama masa yang diperlukan untuk mengimbas perpustakaan komik yang besar?**
 Kelajuan pengimbasan bergantung pada saiz perpustakaan dan Mac anda. Perpustakaan yang mengandungi 1,000 fail CBZ biasanya selesai dalam beberapa minit. Mac Apple Silicon mengimbas dengan lebih cepat berbanding Mac Intel pada koleksi besar.
 
-**Adakah Comic Duplicate Scanner berfungsi merentasi beberapa pemacu?**
-Ya. Tambah mana-mana pemacu yang dipasang atau folder sebagai lokasi pengimbasan. Comic Duplicate Scanner membandingkan fail merentasi beberapa pemacu secara serentak — sesuai untuk mencari fail pendua antara perpustakaan utama dan pemacu sandaran anda.
+**Adakah Archive Duplicate Scanner berfungsi merentasi beberapa pemacu?**
+Ya. Tambah mana-mana pemacu yang dipasang atau folder sebagai lokasi pengimbasan. Archive Duplicate Scanner membandingkan fail merentasi beberapa pemacu secara serentak — sesuai untuk mencari fail pendua antara perpustakaan utama dan pemacu sandaran anda.
 
 ## Bina Perpustakaan yang Lebih Kemas dalam Satu Petang
 
-Fail komik pendua membuang ruang storan, mengacaukan paparan perpustakaan anda, dan menyukarkan pengurusan dari masa ke masa. Comic Duplicate Scanner mengendalikan bahagian yang sukar — mengesan arkib yang serupa secara visual tanpa mengira nama fail — dan memberi anda laluan yang selamat, melalui Sampah sahaja, untuk membersihkan. Cari **Comic Duplicate Scanner** di Mac App Store untuk menjalankan imbasan pertama anda hari ini. Setelah perpustakaan anda bersih, gunakan [BiblioFuse](/ms/) untuk membaca dan mengurus koleksi komik anda pada iPhone dan Mac.
-
-[Comic Duplicate Scanner](/ms/archive/) — tersedia di Mac App Store dan Microsoft Store.
+Fail komik pendua membuang ruang storan, mengacaukan paparan perpustakaan anda, dan menyukarkan pengurusan dari masa ke masa. Archive Duplicate Scanner mengendalikan bahagian yang sukar — mengesan arkib yang serupa secara visual tanpa mengira nama fail — dan memberi anda laluan yang selamat, melalui Sampah sahaja, untuk membersihkan. Cari **Archive Duplicate Scanner** di Mac App Store untuk menjalankan imbasan pertama anda hari ini. Setelah perpustakaan anda bersih, gunakan [BiblioFuse](/ms/) untuk membaca dan mengurus koleksi komik anda pada iPhone dan Mac.

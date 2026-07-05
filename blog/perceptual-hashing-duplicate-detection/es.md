@@ -4,7 +4,7 @@ Renombraste un archivo. Recomprimiste un archivo comprimido. Descargaste el mism
 
 Sin embargo, el cómic dentro es el mismo. Cada página es la misma. Y si estás intentando limpiar tu biblioteca digital, estos duplicados casi idénticos son exactamente los que se escapan de los buscadores de duplicados estándar.
 
-Este es el problema que resuelve el hash perceptual, y es la técnica en el núcleo de [Comic Duplicate Scanner](/es/archive/).
+Este es el problema que resuelve el hash perceptual, y es la técnica en el núcleo de [Archive Duplicate Scanner](/es/).
 
 ---
 
@@ -38,16 +38,11 @@ El algoritmo más utilizado, **pHash**, funciona aproximadamente así:
 
 El hash resultante es típicamente de 64–256 bits. Dos imágenes con contenido visual similar producen hashes con una **distancia de Hamming** baja.
 
-Dos propiedades importantes se derivan directamente de estos pasos:
-
-- **La resolución es irrelevante.** El paso 1 redimensiona cada imagen a la misma cuadrícula fija antes de calcular nada. Un escaneo de 1200px y uno de 3000px de la misma página se convierten en la misma miniatura de 32×32 y producen el mismo hash.
-- **El modo de color es irrelevante.** El paso 2 convierte a escala de grises antes de comparar. Un escaneo a todo color y uno en escala de grises (blanco y negro) de la misma página producen hashes casi idénticos, porque el algoritmo solo analiza la estructura de luminancia, no los valores de color.
-
 ---
 
-## Cómo Comic Duplicate Scanner Aplica Esto
+## Cómo Archive Duplicate Scanner Aplica Esto
 
-[Comic Duplicate Scanner](/es/archive/) aplica el hash perceptual a nivel de archivo:
+[Archive Duplicate Scanner](/es/) aplica el hash perceptual a nivel de archivo:
 
 1. **Extracción** — abre cada archivo CBZ o CBR y lee las imágenes internas
 2. **Hash de cada página** — cada página recibe un hash perceptual
@@ -71,9 +66,6 @@ Un archivo tiene páginas llamadas `001.jpg, 002.jpg...` mientras otro tiene `pa
 
 ---
 
-**Caso 5: Escaneo en color frente a escaneo en blanco y negro**
-Tienes dos copias del mismo volumen de manga: una es un escaneo en color de una edición digital temprana, la otra es un escaneo en escala de grises de una reedición posterior. Tamaños de archivo diferentes, profundidad de color diferente, apariencia visual diferente. Pero como dHash convierte a escala de grises antes de aplicar el hash, ambas copias se reducen a la misma huella de luminancia → marcadas como duplicados. Este es un caso que casi todos los demás detectores de duplicados pasan por alto.
-
 ## Los Límites del Hash Perceptual
 
 **Las ediciones visuales significativas romperán la coincidencia.** Las marcas de agua leves o los recortes menores generalmente no afectan la detección.
@@ -84,9 +76,9 @@ Tienes dos copias del mismo volumen de manga: una es un escaneo en color de una 
 
 ---
 
-## Usando Comic Duplicate Scanner
+## Usando Archive Duplicate Scanner
 
-[Comic Duplicate Scanner](/es/archive/) es una aplicación Mac nativa:
+[Archive Duplicate Scanner](/es/) es una aplicación Mac nativa:
 
 - Escanea árboles de carpetas completos de forma recursiva
 - Maneja CBZ, CBR y archivos de imagen sueltos
