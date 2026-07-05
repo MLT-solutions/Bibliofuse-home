@@ -125,7 +125,7 @@ This file is the source of truth for the daily article agent.
 | 46 | ⬜ | `airdrop-books-to-iphone` | How to Use AirDrop to Transfer Comics and Ebooks to iPhone | BiblioFuse iOS |
 | 47 | ⬜ | `reading-ebooks-offline-iphone` | Reading Ebooks Completely Offline on iPhone: No Cloud Required | BiblioFuse iOS |
 | 48 | ⬜ | `convert-cbr-to-cbz-online` | How to Convert CBR to CBZ Online: Free, No Software Required | BiblioFuse Web |
-| 49 | ⬜ | `extract-pages-from-pdf-online` | How to Extract Pages from a PDF Online for Free | BiblioFuse Web |
-| 50 | ⬜ | `best-epub-reader-mac` | Best EPUB Reader for macOS in 2026 | BiblioFuse iOS |
+| 49 | ✅ | `extract-pages-from-pdf-online` | How to Extract Pages from a PDF Online for Free | BiblioFuse Web |
+| 50 | ✅ | `best-epub-reader-mac` | Best EPUB Reader for macOS in 2026 | BiblioFuse iOS |
 | 51 | ⬜ | `bibliofuse-app-settings-guide` | BiblioFuse Settings Explained: Reading Preferences, Display, and Privacy | BiblioFuse iOS |
 | 52 | ⬜ | `comic-reading-modes-iphone` | Comic Reading Modes in BiblioFuse: Page, Strip, and Scroll Explained | BiblioFuse iOS |

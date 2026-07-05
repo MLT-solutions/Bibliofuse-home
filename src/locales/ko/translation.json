@@ -1024,6 +1024,14 @@
         "bibliofuse-ipad-reading-tips": {
           "title": "BiblioFuse iPad 사용 팁: 전체 화면 만화 읽기 가이드",
           "excerpt": "iPad의 큰 화면으로 가로 두 페이지 스프레드, 썸네일 스크러버, Mac 라이브러리 스트리밍을 활용하세요. 디스플레이 모드, 야간 읽기, Stage Manager를 설정해 최적의 경험을 만드세요."
+        },
+        "best-epub-reader-mac": {
+          "title": "Best EPUB Reader for macOS in 2026",
+          "excerpt": "BiblioFuse is the best EPUB reader for macOS in 2026 — a native app that reads EPUB, PDF, CBZ, CBR, ZIP, RAR, and TXT with full iCloud sync, Wi-Fi Transfer, Mac Home Library streaming, and a seamless iPhone companion."
+        },
+        "extract-pages-from-pdf-online": {
+          "title": "How to Extract Pages from a PDF Online for Free",
+          "excerpt": "The BiblioFuse web tool lets you extract specific pages from any PDF directly in your browser — no software, no upload, no account. Processing runs in WebAssembly on your device, so your files stay completely private."
         }
       },
       "eyebrow": "Blog",

@@ -1024,6 +1024,14 @@
         "bibliofuse-ipad-reading-tips": {
           "title": "BiblioFuse en iPad: consejos para leer cómics a pantalla completa",
           "excerpt": "La pantalla más grande del iPad permite ver dobles páginas en horizontal, un desplazador de miniaturas y streaming de biblioteca desde Mac en BiblioFuse. Configura modos de pantalla, lectura nocturna y Stage Manager."
+        },
+        "best-epub-reader-mac": {
+          "title": "Best EPUB Reader for macOS in 2026",
+          "excerpt": "BiblioFuse is the best EPUB reader for macOS in 2026 — a native app that reads EPUB, PDF, CBZ, CBR, ZIP, RAR, and TXT with full iCloud sync, Wi-Fi Transfer, Mac Home Library streaming, and a seamless iPhone companion."
+        },
+        "extract-pages-from-pdf-online": {
+          "title": "How to Extract Pages from a PDF Online for Free",
+          "excerpt": "The BiblioFuse web tool lets you extract specific pages from any PDF directly in your browser — no software, no upload, no account. Processing runs in WebAssembly on your device, so your files stay completely private."
         }
       },
       "eyebrow": "Blog",

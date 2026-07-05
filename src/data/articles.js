@@ -1,5 +1,17 @@
 export const articles = [
   {
+    slug: 'best-epub-reader-mac',
+    date: '2026-07-05',
+    tags: ['mac', 'epub', 'guide'],
+    coverImage: '/image/blog/Best EPUB Reader Mac.jpg',
+  },
+  {
+    slug: 'extract-pages-from-pdf-online',
+    date: '2026-07-05',
+    tags: ['web', 'pdf', 'guide'],
+    coverImage: '/image/blog/Extract PDF Pages Online.jpg',
+  },
+  {
     slug: 'bibliofuse-ipad-reading-tips',
     date: '2026-06-15',
     tags: ['ios', 'ipad', 'guide', 'tips'],
