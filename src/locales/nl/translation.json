@@ -1531,6 +1531,173 @@
         "bullet2": "'Hé Siri, speel ContentCue af' start je briefing of podcast handsfree",
         "bullet3": "Vijf ingebouwde snelkoppelingen, met aparte bron- en snelheidsbediening voor RSS en podcasts"
       }
+    },
+    "comicReaderPage": {
+      "faqTitle": "Veelgestelde vragen",
+      "faq": [
+        {
+          "q": "Dekt één aankoop alle platforms?",
+          "a": "Nee. iOS + Mac is één universele aankoop — één betaling dekt iPhone, iPad en Mac. De Android Reader, PC Reader en pc-tools worden elk afzonderlijk verkocht."
+        },
+        {
+          "q": "Hoe voeg ik boeken en mappen toe aan BiblioFuse op iPhone?",
+          "a": "BiblioFuse slaat bestanden op in zijn eigen iCloud-gesynchroniseerde map. Je kunt boeken toevoegen via de Bestanden-app (kopieer bestanden naar de BiblioFuse-map), via AirDrop, of via de ingebouwde Wi-Fi-overdracht — open een bibliotheeksessie vanuit Mac of pc en sleep bestanden vanuit een browser.",
+          "link": {
+            "label": "Stapsgewijze handleiding voor sideloaden",
+            "href": "/blog/sideload-comics-iphone-without-itunes/"
+          }
+        },
+        {
+          "q": "Hoe werkt streaming van Mac of pc naar iPhone?",
+          "a": "Je Mac of pc draait een lokale server en schrijft het verbindingsadres naar iCloud Drive. Je iPhone pikt dit automatisch op. Beide apparaten moeten Tailscale aan hebben (werkt thuis en op afstand). Als slechts één apparaat Tailscale aan heeft, mislukt de verbinding. Beide apparaten altijd aan houden geeft de meest consistente ervaring."
+        },
+        {
+          "q": "Wat heb ik nodig om streaming in te stellen?",
+          "a": "Zowel je Mac of pc als je iPhone moeten het volgende geconfigureerd hebben:",
+          "bullets": [
+            {
+              "text": "Hetzelfde iCloud-account op beide apparaten",
+              "sub": [
+                "Op iOS en Mac: ga naar Instellingen → [jouw naam] → iCloud en zorg dat BiblioFuse is ingeschakeld",
+                "Op pc: iCloud is niet ingebouwd — <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">download iCloud voor Windows</a> via de Microsoft Store"
+              ]
+            },
+            {
+              "text": "Tailscale moet AAN zijn op beide apparaten",
+              "sub": [
+                "Beide aan — werkt thuis en op afstand via 5G",
+                "Gemengd (één aan, één uit) — verbinding mislukt",
+                "Tailscale exit-node hoeft niet ingeschakeld te zijn",
+                "iCloud- en Tailscale-accounts kunnen verschillende e-mailadressen gebruiken"
+              ]
+            },
+            {
+              "text": "Sta netwerktoegang toe bij de eerste keer opstarten van de app"
+            }
+          ]
+        },
+        {
+          "q": "Streaming is correct ingesteld maar werkt nog steeds niet — wat kan ik proberen?",
+          "a": "Een verouderde endpoint-cache is de meest voorkomende oorzaak. Een of meer <code>stream_endpoint.json</code>-bestanden in iCloud hebben een verouderde tijdstempel, waardoor BiblioFuse de host niet kan vinden.",
+          "bullets": [
+            {
+              "text": "Verwijder de verouderde bestanden uit iCloud",
+              "sub": [
+                "Op iPhone: open de Bestanden-app → iCloud Drive → BiblioFuse (root) en BiblioFuse → Documenten.",
+                "Op Mac: open Finder → iCloud Drive → BiblioFuse (root) en BiblioFuse → Documenten.",
+                "Verwijder op beide locaties elk bestand met de naam <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
+                "Op pc: iCloud toont mogelijk alleen de cloudversie (alleen online) van deze bestanden, waardoor verwijdering via pc mogelijk niet betrouwbaar werkt — gebruik iPhone of Mac."
+              ]
+            },
+            {
+              "text": "Open na het verwijderen BiblioFuse opnieuw op de host (Mac of pc) en op de iPhone",
+              "sub": [
+                "De host-app genereert een nieuw endpoint-bestand met een actuele tijdstempel.",
+                "Ga op iPhone naar de lijst met streamingbronnen — je zou de naam van de pc of Mac met een groene stip rechts moeten zien, wat bevestigt dat die is gedetecteerd.",
+                "Als de stip grijs is, wacht dan nog een paar seconden of sluit BiblioFuse geforceerd af en open het opnieuw op de host."
+              ]
+            }
+          ]
+        },
+        {
+          "q": "Waarom vereist streaming Tailscale? Kan het niet gewoon over thuis-wifi werken?",
+          "a": "Tailscale is vereist vanwege de manier waarop iOS lokale netwerkverbindingen afhandelt. Dit is wat er is gebeurd:",
+          "bullets": [
+            {
+              "text": "Eerdere versies werkten op thuis-wifi zonder Tailscale",
+              "sub": [
+                "De app gebruikte Bonjour (Apple's lokale ontdekking) via HTTP — dit werkte prima",
+                "Zodra remote 5G-streaming werd toegevoegd, begon iOS App Transport Security HTTP naar rauwe IP-adressen te blokkeren, waardoor het LAN-pad kapot ging"
+              ]
+            },
+            {
+              "text": "Tailscale werkt op thuis-wifi net zo goed als op afstand",
+              "sub": [
+                "Wanneer beide apparaten op hetzelfde netwerk zitten, stuurt Tailscale verkeer direct door — er is geen snelheidsnadeel ten opzichte van gewone wifi",
+                "Tailscale altijd aan houden thuis en onderweg geeft één consistente setup zonder van modus te wisselen"
+              ]
+            },
+            {
+              "text": "Een LAN-modus zonder Tailscale staat niet in de huidige roadmap",
+              "sub": [
+                "Zelfs als je Tailscale uitschakelt, kan de app het eerder opgeslagen Tailscale-adres proberen, wat een verbindingsfout veroorzaakt",
+                "Een betrouwbare automatische LAN-fallback bouwen is complex en momenteel niet gepland",
+                "De eenvoudigste setup: houd Tailscale op beide apparaten altijd aan. Het regelt thuis-wifi en 5G-remote zonder extra configuratie"
+              ]
+            }
+          ]
+        },
+        {
+          "q": "Waarom kan Android geen boeken ontvangen van Mac of pc?",
+          "a": "De Android-app gebruikt een andere codebase zonder iCloud-integratie, wat de basis is van het streaming-handshake-mechanisme. De beste workflow voor Android is bestanden synchroniseren naar je telefoon met Syncthing of een vergelijkbare tool en die map vervolgens als bibliotheekbron toevoegen in de app."
+        },
+        {
+          "q": "Waar worden leesvoortgang, bladwijzers, beoordelingen en labels opgeslagen?",
+          "a": "Dit hangt af van waar het boekbestand zich bevindt:",
+          "bullets": [
+            {
+              "text": "Lokale opslag — alleen opgeslagen op dat apparaat, geen synchronisatie tussen apparaten"
+            },
+            {
+              "text": "iCloud-opslag — opgeslagen in iCloud, synchroniseert automatisch op alle iOS-, Mac- en pc-apparaten"
+            },
+            {
+              "text": "SMB / netwerkshare (Mac- of pc-streaming) — opgeslagen op het hostapparaat",
+              "sub": [
+                "iOS leest een Mac-stream: voortgang wordt opgeslagen op de Mac",
+                "iOS leest een pc-stream: voortgang wordt opgeslagen op de pc",
+                "PC ↔ Mac: onafhankelijk opgeslagen, gegevens worden niet gedeeld",
+                "Als je zowel Mac als pc als streaming-host gebruikt, worden je leesgegevens gesplitst. Gebruik één host voor consistentie."
+              ]
+            }
+          ]
+        },
+        {
+          "q": "Wat is het verschil tussen de PC Reader en de pc EPUB / CBZ-tools?",
+          "a": "De PC Reader is een volledige leesapp — hij opent boeken, beheert je bibliotheek, comprimeert bestanden en streamt naar iPhone. De pc EPUB- en CBZ-tools zijn lichtere, goedkopere apps die zich uitsluitend richten op comprimeren en samenvoegen, zonder lezer."
+        },
+        {
+          "q": "Hoe krijg ik betere tekst-naar-spraak-stemmen in BiblioFuse?",
+          "a": "De hogere kwaliteitstemmen zijn ingebouwd in je apparaat maar moeten apart worden gedownload — BiblioFuse detecteert ze automatisch zodra ze zijn geïnstalleerd.",
+          "bullets": [
+            {
+              "text": "iPhone / iPad",
+              "sub": [
+                "Ga naar Instellingen → Toegankelijkheid → Gesproken inhoud → Stemmen",
+                "Kies je taal en download een Verbeterde of Premium stem",
+                "Premium-stemmen op iOS 16+ hebben neurale kwaliteit (Siri-niveau)"
+              ]
+            },
+            {
+              "text": "Mac",
+              "sub": [
+                "Ga naar Systeeminstellingen → Toegankelijkheid → Gesproken inhoud → Systeemtaal → Stemmen beheren",
+                "Download een Verbeterde of Premium stem voor je taal"
+              ]
+            },
+            {
+              "text": "Windows 10 / Windows 11",
+              "sub": [
+                "Ga naar Instellingen → Tijd en taal → Taal en regio",
+                "Voeg je leestaal toe of open Taalopties voor een geïnstalleerde taal",
+                "Installeer onder Taalmogelijkheden de optie Tekst naar spraak",
+                "Herstart BiblioFuse en start een nieuwe TTS-sessie"
+              ]
+            },
+            {
+              "text": "Windows 11 Natuurlijke stemmen (optioneel)",
+              "sub": [
+                "Ga naar Instellingen → Toegankelijkheid → Verteller",
+                "Kies onder Natuurlijke stemmen toevoegen de gewenste stem",
+                "Let op: Windows maakt deze stemmen mogelijk alleen beschikbaar voor Verteller, niet voor alle apps"
+              ]
+            },
+            {
+              "text": "Geen app-update vereist — BiblioFuse detecteert nieuw geïnstalleerde stemmen wanneer ze beschikbaar zijn via het Windows- of Apple-tekst-naar-spraaksysteem"
+            }
+          ]
+        }
+      ]
     }
   }
 }

@@ -203,27 +203,78 @@ function ReaderChooser({ lang }) {
   );
 }
 
+function stripHtml(value) {
+  return String(value || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function faqToPlainText(item) {
+  const parts = [stripHtml(item.a)];
+  if (Array.isArray(item.bullets)) {
+    item.bullets.forEach((bullet) => {
+      parts.push(stripHtml(bullet.text));
+      if (Array.isArray(bullet.sub)) {
+        bullet.sub.forEach((sub) => parts.push(stripHtml(sub)));
+      }
+    });
+  }
+  return parts.filter(Boolean).join(' ');
+}
+
+function RichText({ text, className }) {
+  return (
+    <span
+      className={className}
+      dangerouslySetInnerHTML={{ __html: text }}
+    />
+  );
+}
+
+function FaqAnswer({ item, lang }) {
+  const linkHref = item.link?.href?.startsWith('/')
+    ? `/${lang}${item.link.href.endsWith('/') ? item.link.href : `${item.link.href}/`}`
+    : item.link?.href;
+
+  return (
+    <div className="px-5 pb-5 text-sm leading-relaxed text-slate-600">
+      <p>
+        <RichText text={item.a} />
+      </p>
+      {item.link && (
+        <Link to={linkHref} className="mt-3 inline-flex font-semibold text-blue-600 hover:text-blue-700">
+          {item.link.label}
+        </Link>
+      )}
+      {Array.isArray(item.bullets) && item.bullets.length > 0 && (
+        <ul className="mt-4 space-y-3">
+          {item.bullets.map((bullet) => (
+            <li key={bullet.text} className="rounded-xl bg-slate-50 px-4 py-3">
+              <RichText text={bullet.text} className="font-semibold text-slate-800" />
+              {Array.isArray(bullet.sub) && bullet.sub.length > 0 && (
+                <ul className="mt-2 list-disc space-y-1.5 pl-5 text-slate-600">
+                  {bullet.sub.map((sub) => (
+                    <li key={sub}>
+                      <RichText text={sub} />
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
 const ComicReader = () => {
   const { t } = useTranslation();
   const { lang = 'en' } = useParams();
-  const faqItems = [
-    {
-      q: t('redesign.readerSection.features.library.title'),
-      a: t('redesign.readerSection.features.library.desc'),
-    },
-    {
-      q: t('redesign.readerSection.features.reading.title'),
-      a: t('redesign.readerSection.features.reading.desc'),
-    },
-    {
-      q: t('redesign.readerSection.features.streaming.title'),
-      a: t('redesign.readerSection.features.streaming.desc'),
-    },
-    {
-      q: t('redesign.toolsHighlight.title'),
-      a: t('redesign.toolsHighlight.onDevice'),
-    },
-  ];
+  const faqItemsRaw = t('redesign.comicReaderPage.faq', { returnObjects: true });
+  const faqItems = Array.isArray(faqItemsRaw) ? faqItemsRaw : [];
+  const faqItemsForSchema = faqItems.map((item) => ({
+    q: item.q,
+    a: faqToPlainText(item),
+  }));
 
   return (
     <div className="overflow-x-hidden bg-white">
@@ -244,7 +295,7 @@ const ComicReader = () => {
           t('redesign.twoAppsSection.comicBullet2'),
           t('redesign.twoAppsSection.comicBullet3'),
         ]}
-        faqItems={faqItems}
+        faqItems={faqItemsForSchema}
         breadcrumbs={[
           { name: 'BiblioFuse', url: `https://bibliofuse.com/${lang}/` },
           { name: 'BiblioFuse Reader', url: `https://bibliofuse.com/${lang}/comicreader/` },
@@ -349,7 +400,7 @@ const ComicReader = () => {
           <div className="mb-10 text-center">
             <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">FAQ</div>
             <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-black tracking-tight text-slate-950">
-              {t('redesign.grepTagPage.faqTitle', 'Frequently Asked Questions')}
+              {t('redesign.comicReaderPage.faqTitle', 'Frequently Asked Questions')}
             </h2>
           </div>
           <div className="space-y-4">
@@ -361,7 +412,7 @@ const ComicReader = () => {
                     <path d="M6 9l6 6 6-6" />
                   </svg>
                 </summary>
-                <p className="px-5 pb-5 text-sm leading-relaxed text-slate-600">{item.a}</p>
+                <FaqAnswer item={item} lang={lang} />
               </details>
             ))}
           </div>

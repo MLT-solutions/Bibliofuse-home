@@ -1531,6 +1531,173 @@
         "bullet2": "\"Hai Siri, putar ContentCue\" memulai buletin atau podcast tanpa perlu tangan",
         "bullet3": "Lima pintasan bawaan, dengan kontrol sumber dan kecepatan terpisah untuk RSS dan podcast"
       }
+    },
+    "comicReaderPage": {
+      "faqTitle": "Pertanyaan yang sering ditanyakan",
+      "faq": [
+        {
+          "q": "Apakah satu pembelian mencakup semua platform?",
+          "a": "Tidak. iOS + Mac adalah pembelian universal tunggal — satu pembayaran mencakup iPhone, iPad, dan Mac. Android Reader, PC Reader, dan alat PC dijual secara terpisah."
+        },
+        {
+          "q": "Bagaimana cara menambahkan buku dan folder ke BiblioFuse di iPhone?",
+          "a": "BiblioFuse menyimpan file di folder tersinkronisasi iCloud-nya sendiri. Anda dapat menambahkan buku melalui aplikasi File (salin file ke folder BiblioFuse), melalui AirDrop, atau melalui fitur Transfer Wi-Fi bawaan — buka sesi pustaka dari Mac atau PC dan seret file dari browser mana pun.",
+          "link": {
+            "label": "Panduan sideloading langkah demi langkah",
+            "href": "/blog/sideload-comics-iphone-without-itunes/"
+          }
+        },
+        {
+          "q": "Bagaimana cara kerja streaming dari Mac atau PC ke iPhone?",
+          "a": "Mac atau PC Anda menjalankan server lokal dan menulis alamat koneksi ke iCloud Drive. iPhone Anda mendeteksinya secara otomatis. Kedua perangkat harus mengaktifkan Tailscale (bekerja di rumah dan jarak jauh). Jika hanya satu perangkat yang mengaktifkan Tailscale, koneksi akan gagal. Menjaga keduanya selalu aktif memberikan pengalaman paling konsisten."
+        },
+        {
+          "q": "Apa yang dibutuhkan untuk mengatur streaming?",
+          "a": "Mac atau PC dan iPhone Anda harus memiliki konfigurasi berikut:",
+          "bullets": [
+            {
+              "text": "Akun iCloud yang sama di kedua perangkat",
+              "sub": [
+                "Di iOS dan Mac: buka Pengaturan → [nama Anda] → iCloud dan pastikan BiblioFuse diaktifkan",
+                "Di PC: iCloud tidak bawaan — <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">unduh iCloud untuk Windows</a> dari Microsoft Store"
+              ]
+            },
+            {
+              "text": "Tailscale harus AKTIF di kedua perangkat",
+              "sub": [
+                "Keduanya aktif — bekerja di rumah dan jarak jauh melalui 5G",
+                "Campuran (satu aktif, satu tidak) — koneksi akan gagal",
+                "Exit node Tailscale tidak perlu diaktifkan",
+                "Akun iCloud dan Tailscale dapat menggunakan alamat email yang berbeda"
+              ]
+            },
+            {
+              "text": "Izinkan akses jaringan saat aplikasi pertama kali diluncurkan"
+            }
+          ]
+        },
+        {
+          "q": "Streaming sudah dikonfigurasi dengan benar tapi masih tidak berfungsi — apa yang harus dicoba?",
+          "a": "Cache endpoint yang kedaluwarsa adalah penyebab paling umum. Satu atau lebih file <code>stream_endpoint.json</code> yang tersimpan di iCloud memiliki stempel waktu yang sudah lama, sehingga BiblioFuse tidak dapat menemukan host.",
+          "bullets": [
+            {
+              "text": "Hapus file-file yang kedaluwarsa dari iCloud",
+              "sub": [
+                "Di iPhone: buka aplikasi File → iCloud Drive → BiblioFuse (root) dan BiblioFuse → Dokumen.",
+                "Di Mac: buka Finder → iCloud Drive → BiblioFuse (root) dan BiblioFuse → Dokumen.",
+                "Di kedua lokasi, hapus semua file bernama <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, dll.",
+                "Di PC: iCloud mungkin hanya menampilkan versi cloud (hanya online) dari file-file ini, sehingga penghapusan dari PC mungkin tidak dapat diandalkan — gunakan iPhone atau Mac."
+              ]
+            },
+            {
+              "text": "Setelah menghapus, buka kembali BiblioFuse di host (Mac atau PC) dan iPhone",
+              "sub": [
+                "Aplikasi host akan membuat ulang file endpoint baru dengan stempel waktu terkini.",
+                "Di iPhone, buka daftar sumber streaming — Anda seharusnya melihat nama PC atau Mac dengan titik hijau di sebelah kanan, yang mengonfirmasi bahwa perangkat telah terdeteksi.",
+                "Jika titik berwarna abu-abu, tunggu beberapa detik lagi atau paksa tutup dan buka kembali BiblioFuse di host."
+              ]
+            }
+          ]
+        },
+        {
+          "q": "Mengapa streaming memerlukan Tailscale? Tidak bisakah menggunakan Wi-Fi rumah saja?",
+          "a": "Tailscale diperlukan karena cara iOS menangani koneksi jaringan lokal. Berikut yang terjadi:",
+          "bullets": [
+            {
+              "text": "Versi awal bekerja di Wi-Fi rumah tanpa Tailscale",
+              "sub": [
+                "Aplikasi menggunakan Bonjour (penemuan lokal Apple) melalui HTTP — ini bekerja dengan baik",
+                "Setelah streaming 5G jarak jauh ditambahkan, iOS App Transport Security mulai memblokir HTTP ke alamat IP mentah, yang merusak jalur hanya-LAN"
+              ]
+            },
+            {
+              "text": "Tailscale bekerja di Wi-Fi rumah sama baiknya dengan jarak jauh",
+              "sub": [
+                "Ketika kedua perangkat berada di jaringan yang sama, Tailscale merutekan lalu lintas secara langsung — tidak ada penalti kecepatan dibandingkan Wi-Fi biasa",
+                "Menjaga Tailscale selalu aktif di rumah dan saat bepergian memberikan satu konfigurasi yang konsisten tanpa pergantian mode"
+              ]
+            },
+            {
+              "text": "Mode LAN tanpa Tailscale belum ada dalam roadmap saat ini",
+              "sub": [
+                "Bahkan saat mematikan Tailscale, aplikasi mungkin masih mencoba alamat Tailscale yang sebelumnya tersimpan, menyebabkan kegagalan koneksi",
+                "Membangun fallback LAN otomatis yang andal adalah hal yang kompleks dan belum direncanakan saat ini",
+                "Pengaturan paling sederhana: selalu aktifkan Tailscale di kedua perangkat. Menangani Wi-Fi rumah dan 5G jarak jauh tanpa konfigurasi tambahan"
+              ]
+            }
+          ]
+        },
+        {
+          "q": "Mengapa Android tidak dapat menerima buku dari Mac atau PC?",
+          "a": "Aplikasi Android menggunakan basis kode yang berbeda tanpa integrasi iCloud, yang merupakan dasar dari mekanisme jabat tangan streaming. Alur kerja terbaik untuk Android adalah menyinkronkan file ke ponsel menggunakan Syncthing atau alat serupa, lalu menambahkan folder tersebut sebagai sumber pustaka di aplikasi."
+        },
+        {
+          "q": "Di mana kemajuan membaca, bookmark, penilaian, dan tag disimpan?",
+          "a": "Tergantung di mana file buku disimpan:",
+          "bullets": [
+            {
+              "text": "Penyimpanan lokal — disimpan hanya di perangkat itu, tidak ada sinkronisasi lintas perangkat"
+            },
+            {
+              "text": "Penyimpanan iCloud — disimpan ke iCloud, disinkronkan secara otomatis di semua perangkat iOS, Mac, dan PC"
+            },
+            {
+              "text": "SMB / berbagi jaringan (streaming Mac atau PC) — disimpan di perangkat host",
+              "sub": [
+                "iOS membaca stream Mac: kemajuan disimpan di Mac",
+                "iOS membaca stream PC: kemajuan disimpan di PC",
+                "PC ↔ Mac: disimpan secara independen, data tidak dibagikan",
+                "Jika Anda menggunakan Mac dan PC sebagai host streaming, data membaca Anda akan terbagi. Gunakan satu host untuk konsistensi."
+              ]
+            }
+          ]
+        },
+        {
+          "q": "Apa perbedaan antara PC Reader dan alat PC EPUB / CBZ?",
+          "a": "PC Reader adalah aplikasi membaca lengkap — membuka buku, mengelola perpustakaan, mengompres file, dan melakukan streaming ke iPhone. Alat PC EPUB dan CBZ adalah aplikasi yang lebih ringan dan murah yang hanya berfokus pada kompresi dan penggabungan, tanpa pembaca."
+        },
+        {
+          "q": "Bagaimana cara mendapatkan suara text-to-speech yang lebih baik di BiblioFuse?",
+          "a": "Suara berkualitas lebih tinggi sudah tertanam di perangkat Anda tetapi harus diunduh secara terpisah — BiblioFuse akan mendeteksinya secara otomatis setelah dipasang.",
+          "bullets": [
+            {
+              "text": "iPhone / iPad",
+              "sub": [
+                "Buka Pengaturan → Aksesibilitas → Konten yang Diucapkan → Suara",
+                "Pilih bahasa Anda, lalu unduh suara Disempurnakan atau Premium",
+                "Suara Premium di iOS 16+ memiliki kualitas neural (setara Siri)"
+              ]
+            },
+            {
+              "text": "Mac",
+              "sub": [
+                "Buka Pengaturan Sistem → Aksesibilitas → Konten yang Diucapkan → Suara Sistem → Kelola Suara",
+                "Unduh suara Disempurnakan atau Premium untuk bahasa Anda"
+              ]
+            },
+            {
+              "text": "Windows 10 / Windows 11",
+              "sub": [
+                "Buka Pengaturan → Waktu & bahasa → Bahasa & wilayah",
+                "Tambahkan bahasa baca Anda, atau buka Opsi bahasa untuk bahasa yang sudah terpasang",
+                "Di bawah Fitur bahasa, pasang Text-to-speech",
+                "Mulai ulang BiblioFuse, lalu mulai sesi TTS baru"
+              ]
+            },
+            {
+              "text": "Suara Alami Windows 11 (opsional)",
+              "sub": [
+                "Buka Pengaturan → Aksesibilitas → Narrator",
+                "Di bawah Tambahkan suara alami, unduh suara yang diinginkan",
+                "Catatan: Windows mungkin hanya menyediakan suara ini untuk Narrator, bukan semua aplikasi"
+              ]
+            },
+            {
+              "text": "Tidak perlu pembaruan aplikasi — BiblioFuse mendeteksi suara yang baru dipasang saat tersedia melalui sistem text-to-speech Windows atau Apple"
+            }
+          ]
+        }
+      ]
     }
   }
 }

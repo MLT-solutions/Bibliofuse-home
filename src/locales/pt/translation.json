@@ -1531,6 +1531,173 @@
         "bullet2": "\"Ei Siri, reproduzir ContentCue\" inicia seu boletim ou podcast sem usar as mãos",
         "bullet3": "Cinco atalhos integrados, com controles de fonte e velocidade separados para RSS e podcasts"
       }
+    },
+    "comicReaderPage": {
+      "faqTitle": "Perguntas comuns",
+      "faq": [
+        {
+          "q": "Uma compra cobre todas as plataformas?",
+          "a": "Não. iOS + Mac é uma compra universal única — um pagamento cobre iPhone, iPad e Mac. O Android Reader, o PC Reader e as ferramentas de PC são vendidos separadamente."
+        },
+        {
+          "q": "Como adiciono livros e pastas ao BiblioFuse no iPhone?",
+          "a": "O BiblioFuse armazena arquivos em sua própria pasta sincronizada com o iCloud. Você pode adicionar livros pelo app Arquivos (copie arquivos para a pasta BiblioFuse), via AirDrop, ou pela Transferência Wi-Fi integrada — abra uma sessão de biblioteca no Mac ou PC e arraste arquivos de qualquer navegador.",
+          "link": {
+            "label": "Guia passo a passo para sideloading",
+            "href": "/blog/sideload-comics-iphone-without-itunes/"
+          }
+        },
+        {
+          "q": "Como funciona o streaming do Mac ou PC para o iPhone?",
+          "a": "Seu Mac ou PC executa um servidor local e escreve o endereço de conexão no iCloud Drive. Seu iPhone detecta automaticamente. Ambos os dispositivos devem ter o Tailscale ativado (funciona em casa e remotamente). Se apenas um dispositivo tiver o Tailscale ativado, a conexão falhará. Manter ambos sempre ativados oferece a experiência mais consistente."
+        },
+        {
+          "q": "O que preciso para configurar o streaming?",
+          "a": "Seu Mac ou PC e seu iPhone precisam ter o seguinte configurado:",
+          "bullets": [
+            {
+              "text": "Mesma conta iCloud em ambos os dispositivos",
+              "sub": [
+                "No iOS e Mac: vá em Ajustes → [seu nome] → iCloud e certifique-se de que o BiblioFuse está ativado",
+                "No PC: o iCloud não vem instalado — <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">baixe o iCloud para Windows</a> na Microsoft Store"
+              ]
+            },
+            {
+              "text": "O Tailscale deve estar ATIVADO em ambos os dispositivos",
+              "sub": [
+                "Ambos ativados — funciona em casa e remotamente via 5G",
+                "Misto (um ativado, outro não) — a conexão falhará",
+                "O nó de saída do Tailscale não precisa ser ativado",
+                "As contas do iCloud e Tailscale podem usar endereços de e-mail diferentes"
+              ]
+            },
+            {
+              "text": "Permita o acesso à rede quando o app for iniciado pela primeira vez"
+            }
+          ]
+        },
+        {
+          "q": "O streaming está configurado corretamente mas ainda não funciona — o que devo tentar?",
+          "a": "Um cache de endpoints desatualizado é a causa mais comum. Um ou mais arquivos <code>stream_endpoint.json</code> armazenados no iCloud têm um timestamp desatualizado, impedindo o BiblioFuse de descobrir o host.",
+          "bullets": [
+            {
+              "text": "Exclua os arquivos desatualizados do iCloud",
+              "sub": [
+                "No iPhone: abra o app Arquivos → iCloud Drive → BiblioFuse (raiz) e BiblioFuse → Documentos.",
+                "No Mac: abra o Finder → iCloud Drive → BiblioFuse (raiz) e BiblioFuse → Documentos.",
+                "Em ambos os locais, exclua qualquer arquivo chamado <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
+                "No PC: o iCloud pode mostrar apenas a versão na nuvem (somente online) desses arquivos, portanto a exclusão pelo PC pode não funcionar de forma confiável — use iPhone ou Mac."
+              ]
+            },
+            {
+              "text": "Após excluir, reabra o BiblioFuse no host (Mac ou PC) e no iPhone",
+              "sub": [
+                "O app host regenerará um novo arquivo de endpoint com um timestamp atual.",
+                "No iPhone, vá para a lista de fontes de streaming — você deve ver o nome do PC ou Mac com um ponto verde à direita, confirmando que foi detectado.",
+                "Se o ponto estiver cinza, aguarde mais alguns segundos ou force o fechamento e reabra o BiblioFuse no host."
+              ]
+            }
+          ]
+        },
+        {
+          "q": "Por que o streaming requer Tailscale? Não pode funcionar apenas com o Wi-Fi doméstico?",
+          "a": "O Tailscale é necessário por causa de como o iOS trata as conexões de rede local. Veja o que aconteceu:",
+          "bullets": [
+            {
+              "text": "Versões anteriores funcionavam no Wi-Fi doméstico sem Tailscale",
+              "sub": [
+                "O app usava Bonjour (descoberta local da Apple) via HTTP — isso funcionava bem",
+                "Quando o streaming remoto por 5G foi adicionado, o iOS App Transport Security começou a bloquear HTTP para endereços IP brutos, o que quebrou o caminho LAN"
+              ]
+            },
+            {
+              "text": "O Tailscale funciona no Wi-Fi doméstico tão bem quanto remotamente",
+              "sub": [
+                "Quando ambos os dispositivos estão na mesma rede, o Tailscale roteia o tráfego diretamente — não há penalidade de velocidade em relação ao Wi-Fi normal",
+                "Manter o Tailscale sempre ativado em casa e fora dá uma configuração consistente sem troca de modo"
+              ]
+            },
+            {
+              "text": "Um modo LAN sem Tailscale não está no roadmap atual",
+              "sub": [
+                "Mesmo ao desativar o Tailscale, o app pode tentar o endereço Tailscale armazenado anteriormente, causando falha de conexão",
+                "Construir um fallback LAN automático confiável é complexo e não está planejado agora",
+                "A configuração mais simples: mantenha o Tailscale ativado em ambos os dispositivos sempre. Funciona em Wi-Fi doméstico e 5G remoto sem configuração extra"
+              ]
+            }
+          ]
+        },
+        {
+          "q": "Por que o Android não consegue receber livros do Mac ou PC?",
+          "a": "O app Android usa uma base de código diferente sem integração com iCloud, que é como o mecanismo de handshake do streaming funciona. O melhor fluxo de trabalho para Android é sincronizar arquivos para o telefone usando Syncthing ou ferramenta similar, depois adicionar essa pasta como fonte de biblioteca no app."
+        },
+        {
+          "q": "Onde são salvos o progresso de leitura, marcadores, avaliações e etiquetas?",
+          "a": "Depende de onde o arquivo do livro está armazenado:",
+          "bullets": [
+            {
+              "text": "Armazenamento local — salvo apenas naquele dispositivo, sem sincronização entre dispositivos"
+            },
+            {
+              "text": "Armazenamento iCloud — salvo no iCloud, sincroniza automaticamente em todos os dispositivos iOS, Mac e PC"
+            },
+            {
+              "text": "SMB / compartilhamento de rede (streaming Mac ou PC) — salvo no dispositivo host",
+              "sub": [
+                "iOS lendo um stream do Mac: o progresso é salvo no Mac",
+                "iOS lendo um stream do PC: o progresso é salvo no PC",
+                "PC ↔ Mac: armazenados independentemente, não compartilham dados",
+                "Se você usar Mac e PC como hosts de streaming, seus dados de leitura ficarão divididos. Use apenas um host para consistência."
+              ]
+            }
+          ]
+        },
+        {
+          "q": "Qual é a diferença entre o PC Reader e as ferramentas PC EPUB / CBZ?",
+          "a": "O PC Reader é um app de leitura completo — ele abre livros, gerencia sua biblioteca, comprime arquivos e transmite para o iPhone. As ferramentas PC EPUB e CBZ são apps mais leves e baratas focadas apenas em compressão e mesclagem, sem leitor."
+        },
+        {
+          "q": "Como obtenho melhores vozes de texto para fala no BiblioFuse?",
+          "a": "As vozes de maior qualidade estão integradas no seu dispositivo, mas precisam ser baixadas separadamente — o BiblioFuse as detectará automaticamente após a instalação.",
+          "bullets": [
+            {
+              "text": "iPhone / iPad",
+              "sub": [
+                "Vá para Ajustes → Acessibilidade → Conteúdo Falado → Vozes",
+                "Escolha seu idioma e baixe uma voz Avançada ou Premium",
+                "As vozes Premium no iOS 16+ têm qualidade neural (nível Siri)"
+              ]
+            },
+            {
+              "text": "Mac",
+              "sub": [
+                "Vá para Configurações do Sistema → Acessibilidade → Conteúdo Falado → Voz do Sistema → Gerenciar Vozes",
+                "Baixe qualquer voz Avançada ou Premium para seu idioma"
+              ]
+            },
+            {
+              "text": "Windows 10 / Windows 11",
+              "sub": [
+                "Vá para Configurações → Hora e idioma → Idioma e região",
+                "Adicione seu idioma de leitura ou abra as opções do idioma instalado",
+                "Em Recursos de idioma, instale Texto em fala",
+                "Reinicie o BiblioFuse e inicie uma nova sessão de TTS"
+              ]
+            },
+            {
+              "text": "Vozes naturais do Windows 11 (opcional)",
+              "sub": [
+                "Vá para Configurações → Acessibilidade → Narrador",
+                "Em Adicionar vozes naturais, baixe a voz desejada",
+                "Observação: o Windows pode disponibilizar essas vozes apenas ao Narrador, não a todos os apps"
+              ]
+            },
+            {
+              "text": "Nenhuma atualização do app é necessária — o BiblioFuse detecta as vozes recém-instaladas quando expostas pelo sistema de texto em fala do Windows ou Apple"
+            }
+          ]
+        }
+      ]
     }
   }
 }

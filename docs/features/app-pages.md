@@ -27,7 +27,9 @@ stays consistent across the hub.
 The homepage now keeps only a compact `ReaderTeaser` plus `TwoAppsSection`; the full
 reader walkthrough belongs on `/comicreader`. Homepage FAQ copy should stay at the
 brand/app-chooser level; setup-heavy BiblioFuse Reader questions belong on
-`/comicreader` or focused help/blog pages.
+`/comicreader` or focused help/blog pages. The full Reader FAQ lives in
+`redesign.comicReaderPage.faq` so troubleshooting answers can include nested bullet
+steps, code-formatted filenames, and support links without bloating the homepage.
 
 When describing Reader streaming, use Mac/PC language unless the feature is truly
 Mac-only. iOS can stream and read from both Mac and PC libraries.

@@ -1526,6 +1526,173 @@
       "backDesc": "Looking for a comic and ebook reader?",
       "backCta": "Back to BiblioFuse Reader",
       "languages": "App UI: English · Spanish · French · Dutch · Portuguese · Russian · Simplified Chinese · Japanese · Korean · Indonesian · Malay"
+    },
+    "comicReaderPage": {
+      "faqTitle": "Common questions",
+      "faq": [
+        {
+          "q": "Does one purchase cover all platforms?",
+          "a": "No. iOS + Mac is a single universal purchase — one payment covers iPhone, iPad, and Mac. The Android Reader, PC Reader, and PC tools are each sold separately."
+        },
+        {
+          "q": "How do I add books and folders to BiblioFuse on iPhone?",
+          "a": "BiblioFuse stores files in its own iCloud-synced folder. You can add books via the Files app (copy files into the BiblioFuse folder), via AirDrop, or via the built-in Wi-Fi Transfer — open a library session from Mac or PC and drag files in from any browser.",
+          "link": {
+            "label": "Step-by-step sideloading guide",
+            "href": "/blog/sideload-comics-iphone-without-itunes/"
+          }
+        },
+        {
+          "q": "How does streaming from Mac or PC to iPhone work?",
+          "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. Both devices must have Tailscale on (works at home and remotely). If only one device has Tailscale on, the connection will fail. Keeping both devices always on Tailscale gives the most consistent experience."
+        },
+        {
+          "q": "What do I need to set up streaming?",
+          "a": "Both your Mac or PC and your iPhone must have the following configured:",
+          "bullets": [
+            {
+              "text": "Same iCloud account on both devices",
+              "sub": [
+                "On iOS and Mac: go to Settings → [your name] → iCloud and make sure BiblioFuse is enabled",
+                "On PC: iCloud is not built-in — <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">download iCloud for Windows</a> from the Microsoft Store"
+              ]
+            },
+            {
+              "text": "Tailscale must be ON on both devices",
+              "sub": [
+                "Both ON — works at home and remotely over 5G",
+                "Mixed (one ON, one OFF) — connection will fail",
+                "Tailscale exit node does not need to be enabled",
+                "iCloud and Tailscale accounts can use different email addresses"
+              ]
+            },
+            {
+              "text": "Allow network access when the app launches for the first time"
+            }
+          ]
+        },
+        {
+          "q": "Streaming is set up correctly but still not working — what should I try?",
+          "a": "A stale endpoint cache is the most common cause. One or more <code>stream_endpoint.json</code> files stored in iCloud has an outdated timestamp, which prevents BiblioFuse from discovering the host.",
+          "bullets": [
+            {
+              "text": "Delete the stale files from iCloud",
+              "sub": [
+                "On iPhone: open the Files app → iCloud Drive → BiblioFuse (root) and BiblioFuse → Documents.",
+                "On Mac: open Finder → iCloud Drive → BiblioFuse (root) and BiblioFuse → Documents.",
+                "In both locations, delete any file named <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
+                "On PC: iCloud may show only the cloud (online-only) version of these files, so deletion from PC may not work reliably — use iPhone or Mac instead."
+              ]
+            },
+            {
+              "text": "After deleting, reopen BiblioFuse on both the host (Mac or PC) and iPhone",
+              "sub": [
+                "The host app will regenerate a fresh endpoint file with a current timestamp.",
+                "On iPhone, go to the streaming source list — you should see the PC or Mac name with a green dot on the right, confirming it has been detected.",
+                "If the dot is grey, wait a few more seconds or force-quit and reopen BiblioFuse on the host."
+              ]
+            }
+          ]
+        },
+        {
+          "q": "Why does streaming require Tailscale? Can't it just use home Wi-Fi?",
+          "a": "Tailscale is required because of how iOS handles local network connections. Here is what happened:",
+          "bullets": [
+            {
+              "text": "Early versions worked on home Wi-Fi without Tailscale",
+              "sub": [
+                "The app used Bonjour (Apple's local discovery) over HTTP — this worked fine",
+                "Once remote 5G streaming was added, iOS App Transport Security began blocking HTTP to raw IP addresses, which broke the LAN-only path"
+              ]
+            },
+            {
+              "text": "Tailscale works on home Wi-Fi just as well as it does remotely",
+              "sub": [
+                "When both devices are on the same network, Tailscale routes traffic directly — there is no speed penalty compared to plain Wi-Fi",
+                "Keeping Tailscale on at home and away gives you one consistent setup with no mode-switching"
+              ]
+            },
+            {
+              "text": "A Tailscale-free LAN mode is not in the current roadmap",
+              "sub": [
+                "Even when you turn off Tailscale, the app may try the previously stored Tailscale address, causing a handshake failure",
+                "Building a reliable automatic LAN-only fallback is complex and not planned for now",
+                "The simplest setup: keep Tailscale on both devices always. It handles home Wi-Fi and 5G remote with zero extra configuration"
+              ]
+            }
+          ]
+        },
+        {
+          "q": "Why can't Android receive books from Mac or PC?",
+          "a": "The Android app uses a different codebase without iCloud integration, which is how the streaming handshake works. The best workflow for Android is to sync files to your phone using Syncthing or a similar tool, then add that folder as a library source in the app."
+        },
+        {
+          "q": "Where are reading progress, bookmarks, ratings, and tags saved?",
+          "a": "It depends on where the book file lives:",
+          "bullets": [
+            {
+              "text": "Local storage — saved on that device only, no cross-device sync"
+            },
+            {
+              "text": "iCloud storage — saved to iCloud, syncs across all iOS, Mac, and PC devices automatically"
+            },
+            {
+              "text": "SMB / network share (Mac or PC streaming) — saved on the host device",
+              "sub": [
+                "iOS reading a Mac stream: progress saves on the Mac",
+                "iOS reading a PC stream: progress saves on the PC",
+                "PC ↔ Mac: stored independently — they do not share data",
+                "If you use both Mac and PC as streaming hosts, your reading data will be split. Stick to one host for consistency."
+              ]
+            }
+          ]
+        },
+        {
+          "q": "What is the difference between the PC Reader and the PC EPUB / CBZ tools?",
+          "a": "The PC Reader is a full reading app — it opens books, manages your library, compresses files, and streams to iPhone. The PC EPUB and CBZ tools are lighter, cheaper apps focused on compression and merging only, with no reader."
+        },
+        {
+          "q": "How do I get better text-to-speech voices in BiblioFuse?",
+          "a": "The higher-quality voices are built into your device but must be downloaded separately — BiblioFuse will pick them up automatically once they are installed.",
+          "bullets": [
+            {
+              "text": "iPhone / iPad",
+              "sub": [
+                "Go to Settings → Accessibility → Spoken Content → Voices",
+                "Choose your language, then download an Enhanced or Premium voice",
+                "Premium voices on iOS 16+ are neural quality (Siri-level)"
+              ]
+            },
+            {
+              "text": "Mac",
+              "sub": [
+                "Go to System Settings → Accessibility → Spoken Content → System Voice → Manage Voices",
+                "Download any Enhanced or Premium voice for your language"
+              ]
+            },
+            {
+              "text": "Windows 10 / Windows 11",
+              "sub": [
+                "Go to Settings → Time & language → Language & region",
+                "Add your reading language, or open Language options for an installed language",
+                "Under Language features, install Text-to-speech",
+                "Restart BiblioFuse, then start a new TTS session"
+              ]
+            },
+            {
+              "text": "Windows 11 Natural voices (optional)",
+              "sub": [
+                "Go to Settings → Accessibility → Narrator",
+                "Under Add natural voices, download the voice you want",
+                "Note: Windows may expose these voices only to Narrator and not to all apps"
+              ]
+            },
+            {
+              "text": "No app update required — BiblioFuse detects newly installed voices when they are exposed through the Windows or Apple text-to-speech system"
+            }
+          ]
+        }
+      ]
     }
   }
 }

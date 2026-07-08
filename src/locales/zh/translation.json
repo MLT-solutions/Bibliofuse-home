@@ -1531,6 +1531,173 @@
         "bullet2": "对 Siri 说\"播放 ContentCue\"即可免动手启动简报或播客",
         "bullet3": "五个内置快捷指令，RSS 与播客可分别设置来源和语速"
       }
+    },
+    "comicReaderPage": {
+      "faqTitle": "常见问题",
+      "faq": [
+        {
+          "q": "一次购买是否覆盖所有平台？",
+          "a": "不。iOS + Mac 是一次通用购买 — 一次付款涵盖 iPhone、iPad 和 Mac。Android Reader、PC Reader 及 PC 工具各自单独销售。"
+        },
+        {
+          "q": "如何在 iPhone 上向 BiblioFuse 添加书籍和文件夹？",
+          "a": "BiblioFuse 将文件存储在自己的 iCloud 同步文件夹中。您可以通过「文件」应用（将文件复制到 BiblioFuse 文件夹）、AirDrop，或通过内置 Wi-Fi 传输功能添加书籍 — 从 Mac 或 PC 开启库会话，然后从任意浏览器拖入文件。",
+          "link": {
+            "label": "逐步侧载指南",
+            "href": "/blog/sideload-comics-iphone-without-itunes/"
+          }
+        },
+        {
+          "q": "Mac 或 PC 向 iPhone 的串流是如何工作的？",
+          "a": "您的 Mac 或 PC 运行本地服务器，并将连接地址写入 iCloud Drive。iPhone 会自动识别。两台设备必须同时开启 Tailscale（在家和远程均可使用）。如果只有一台设备开启了 Tailscale，连接将失败。保持两台设备始终开启 Tailscale 可获得最稳定的体验。"
+        },
+        {
+          "q": "设置串流需要什么？",
+          "a": "您的 Mac 或 PC 与 iPhone 必须完成以下配置：",
+          "bullets": [
+            {
+              "text": "两台设备使用相同的 iCloud 账户",
+              "sub": [
+                "在 iOS 和 Mac 上：进入设置 → [您的姓名] → iCloud，确保 BiblioFuse 已启用",
+                "在 PC 上：iCloud 未内置 — 请从 Microsoft Store <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">下载 iCloud for Windows</a>"
+              ]
+            },
+            {
+              "text": "两台设备必须同时开启 Tailscale",
+              "sub": [
+                "同时开启 — 在家和通过5G远程均可使用",
+                "混合状态（一台开启，另一台关闭）— 连接将失败",
+                "无需启用 Tailscale 出口节点",
+                "iCloud 和 Tailscale 账户可使用不同的电子邮件地址"
+              ]
+            },
+            {
+              "text": "首次启动应用时允许网络访问"
+            }
+          ]
+        },
+        {
+          "q": "串流已正确配置但仍无法使用 — 该怎么办？",
+          "a": "过期的端点缓存是最常见的原因。存储在 iCloud 中的一个或多个 <code>stream_endpoint.json</code> 文件的时间戳已过期，导致 BiblioFuse 无法发现主机。",
+          "bullets": [
+            {
+              "text": "删除 iCloud 中的过期文件",
+              "sub": [
+                "在 iPhone 上：打开「文件」应用 → iCloud Drive → BiblioFuse（根目录）和 BiblioFuse → 文稿。",
+                "在 Mac 上：打开访达 → iCloud Drive → BiblioFuse（根目录）和 BiblioFuse → 文稿。",
+                "在两个位置中，删除名为 <code>stream_endpoint.json</code>、<code>stream_endpoint 1.json</code>、<code>stream_endpoint 2.json</code> 等的所有文件。",
+                "在 PC 上：iCloud 可能只显示这些文件的云端（仅在线）版本，因此从 PC 删除可能不可靠 — 请使用 iPhone 或 Mac。"
+              ]
+            },
+            {
+              "text": "删除后，在主机（Mac 或 PC）和 iPhone 上重新打开 BiblioFuse",
+              "sub": [
+                "主机应用将使用当前时间戳重新生成新的端点文件。",
+                "在 iPhone 上，进入串流源列表 — 应看到 PC 或 Mac 名称右侧显示绿色圆点，表示已成功检测到。",
+                "如果圆点为灰色，请再等几秒钟，或强制关闭并重新打开主机上的 BiblioFuse。"
+              ]
+            }
+          ]
+        },
+        {
+          "q": "为什么串流需要 Tailscale？不能直接用家里的 Wi-Fi 吗？",
+          "a": "需要 Tailscale 是因为 iOS 处理本地网络连接的方式。以下是发生的情况：",
+          "bullets": [
+            {
+              "text": "早期版本在没有 Tailscale 的情况下通过家庭 Wi-Fi 工作",
+              "sub": [
+                "应用使用 Bonjour（苹果的本地发现）通过 HTTP 运行——这很好用",
+                "当添加远程 5G 串流后，iOS 应用传输安全（ATS）开始阻止对原始 IP 地址的 HTTP 连接，导致仅限局域网的路径失效"
+              ]
+            },
+            {
+              "text": "Tailscale 在家庭 Wi-Fi 上的效果与远程使用时一样好",
+              "sub": [
+                "当两台设备在同一网络上时，Tailscale 直接路由流量——与普通 Wi-Fi 相比没有速度损失",
+                "在家和外出时始终保持 Tailscale 开启，让您拥有一致的设置，无需切换模式"
+              ]
+            },
+            {
+              "text": "无 Tailscale 的局域网模式目前不在开发计划中",
+              "sub": [
+                "即使关闭 Tailscale，应用可能仍会尝试之前存储的 Tailscale 地址，导致连接失败",
+                "构建可靠的自动局域网回退机制较为复杂，目前暂无计划",
+                "最简单的设置：始终在两台设备上保持 Tailscale 开启。无需额外配置即可在家庭 Wi-Fi 和 5G 远程下使用"
+              ]
+            }
+          ]
+        },
+        {
+          "q": "为什么 Android 无法从 Mac 或 PC 接收书籍？",
+          "a": "Android 应用使用不同的代码库，没有 iCloud 集成，而 iCloud 正是串流握手机制的基础。Android 的最佳工作流程是使用 Syncthing 或类似工具将文件同步到手机，然后在应用中将该文件夹添加为书库来源。"
+        },
+        {
+          "q": "阅读进度、书签、评分和标签保存在哪里？",
+          "a": "这取决于书籍文件的存储位置：",
+          "bullets": [
+            {
+              "text": "本地存储 — 仅保存在该设备上，不跨设备同步"
+            },
+            {
+              "text": "iCloud 存储 — 保存至 iCloud，自动同步到所有 iOS、Mac 和 PC 设备"
+            },
+            {
+              "text": "SMB / 网络共享（Mac 或 PC 串流）— 保存在主机设备上",
+              "sub": [
+                "iOS 读取 Mac 串流：进度保存在 Mac 上",
+                "iOS 读取 PC 串流：进度保存在 PC 上",
+                "PC ↔ Mac：各自独立存储，数据不共享",
+                "如果您同时使用 Mac 和 PC 作为串流主机，您的阅读数据将被分割。建议只使用一台主机以保持一致性。"
+              ]
+            }
+          ]
+        },
+        {
+          "q": "PC Reader 与 PC EPUB / CBZ 工具有什么区别？",
+          "a": "PC Reader 是一款完整的阅读应用 — 它可以打开书籍、管理书库、压缩文件并向 iPhone 串流。PC EPUB 和 CBZ 工具是更轻量、更便宜的应用，仅专注于压缩和合并，没有阅读功能。"
+        },
+        {
+          "q": "如何在 BiblioFuse 中获得更好的文字转语音声音？",
+          "a": "更高质量的声音已内置于您的设备中，但需要单独下载 — 安装后 BiblioFuse 将自动识别它们。",
+          "bullets": [
+            {
+              "text": "iPhone / iPad",
+              "sub": [
+                "前往「设置」→「辅助功能」→「朗读内容」→「声音」",
+                "选择您的语言，然后下载「增强型」或「高级」声音",
+                "iOS 16+ 上的高级声音具有神经网络质量（Siri 级别）"
+              ]
+            },
+            {
+              "text": "Mac",
+              "sub": [
+                "前往「系统设置」→「辅助功能」→「朗读内容」→「系统声音」→「管理声音」",
+                "为您的语言下载任意「增强型」或「高级」声音"
+              ]
+            },
+            {
+              "text": "Windows 10 / Windows 11",
+              "sub": [
+                "前往「设置」→「时间和语言」→「语言和区域」",
+                "添加您的阅读语言，或打开已安装语言的语言选项",
+                "在「语言功能」下，安装「文字转语音」",
+                "重启 BiblioFuse，然后开始新的 TTS 会话"
+              ]
+            },
+            {
+              "text": "Windows 11 自然语音（可选）",
+              "sub": [
+                "前往「设置」→「辅助功能」→「讲述人」",
+                "在「添加自然语音」下，下载所需语音",
+                "注意：Windows 可能仅向讲述人开放这些语音，而非所有应用"
+              ]
+            },
+            {
+              "text": "无需更新应用 — BiblioFuse 会在 Windows 或 Apple 文字转语音系统公开新安装的语音时自动检测"
+            }
+          ]
+        }
+      ]
     }
   }
 }
