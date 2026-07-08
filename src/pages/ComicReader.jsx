@@ -1,0 +1,400 @@
+import React from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import SEO from '../components/SEO';
+import StickyDownloadBar from '../components/StickyDownloadBar';
+
+const appStoreUrl = 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093';
+const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ';
+const bibliofusePcUrl = 'https://apps.microsoft.com/store/detail/9N77MZ509ML2';
+const imageBase = '/image/offline-apps/bibliofuse';
+
+function ArrowRightIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 12h14M13 6l6 6-6 6" />
+    </svg>
+  );
+}
+
+function StoreBadge({ type, href, size = 'lg' }) {
+  const sizes = size === 'sm' ? 'h-10' : 'h-12';
+  const src = type === 'microsoft' ? '/image/Microsoft_Store_badge.svg' : type === 'play' ? '/image/Playstore.png' : '/image/Download_on_the_App_Store_Badge.svg.png';
+  const alt = type === 'microsoft' ? 'Get it from Microsoft' : type === 'play' ? 'Get it on Google Play' : 'Download on the App Store';
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className="inline-flex transition hover:-translate-y-0.5">
+      <img src={src} alt={alt} className={`${sizes} w-auto object-contain`} />
+    </a>
+  );
+}
+
+function ReaderFeatureRow({ eyebrow, title, desc, bullets, image, alt, reverse, kind = 'iphone', accent = 'blue', footnote, badge }) {
+  const accentClasses = {
+    blue: 'bg-blue-50 text-blue-600',
+    teal: 'bg-teal-50 text-teal-600',
+    violet: 'bg-violet-50 text-violet-600',
+  };
+  const dotClasses = {
+    blue: 'bg-blue-600',
+    teal: 'bg-teal-500',
+    violet: 'bg-violet-600',
+  };
+
+  return (
+    <div className={`grid items-center gap-10 lg:grid-cols-2 lg:gap-16 ${reverse ? 'lg:[&>div:first-child]:order-2' : ''}`}>
+      <div>
+        <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">
+          <span className={`h-1.5 w-1.5 rounded-full ${dotClasses[accent]}`} />
+          {eyebrow}
+        </div>
+        <h2 className="mt-3 text-[clamp(1.6rem,2.8vw,2.25rem)] font-black leading-[1.05] tracking-tight text-slate-950">{title}</h2>
+        {badge && (
+          <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-blue-700">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z" /></svg>
+            {badge}
+          </div>
+        )}
+        <p className="mt-4 text-lg leading-relaxed text-slate-600">{desc}</p>
+        <ul className="mt-6 space-y-3">
+          {bullets.map((bullet) => (
+            <li key={bullet.title} className="flex items-start gap-3">
+              <span className={`mt-0.5 grid h-6 w-6 flex-shrink-0 place-items-center rounded-full ${accentClasses[accent]}`}>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+              </span>
+              <span className="leading-snug text-slate-900"><strong className="font-bold">{bullet.title}</strong> <span className="text-slate-600">- {bullet.body}</span></span>
+            </li>
+          ))}
+        </ul>
+        {footnote && <p className="mt-5 max-w-md border-l-2 border-slate-200 pl-3 text-xs leading-relaxed text-slate-500">{footnote}</p>}
+      </div>
+
+      <div className="relative">
+        {kind === 'iphone' ? (
+          <div className="relative mx-auto max-w-[360px]">
+            <div className="absolute -inset-12 -z-10 rounded-full bg-[radial-gradient(circle,rgba(45,124,246,0.16),transparent_70%)]" />
+            <img src={image} alt={alt} className="block w-full drop-shadow-2xl" />
+          </div>
+        ) : (
+          <div className="relative">
+            <div className="absolute -inset-10 -z-10 rounded-3xl bg-[radial-gradient(circle,rgba(45,124,246,0.16),transparent_70%)]" />
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl">
+              <div className="flex h-8 items-center gap-1.5 border-b border-slate-200 bg-slate-50 px-3">
+                <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />
+                <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
+                <span className="h-3 w-3 rounded-full bg-[#28c840]" />
+              </div>
+              <img src={image} alt={alt} className="block w-full" />
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function ToolsHighlight() {
+  const { t } = useTranslation();
+  const tools = [
+    {
+      title: t('redesign.toolsHighlight.tools.resize.title'),
+      body: t('redesign.toolsHighlight.tools.resize.body'),
+      kpi: t('redesign.toolsHighlight.tools.resize.kpi'),
+      label: t('redesign.toolsHighlight.tools.resize.label'),
+      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 9V5a1 1 0 011-1h4" /><path d="M20 15v4a1 1 0 01-1 1h-4" /><path d="M9 9h6v6H9z" /></svg>,
+    },
+    {
+      title: t('redesign.toolsHighlight.tools.convert.title'),
+      body: t('redesign.toolsHighlight.tools.convert.body'),
+      kpi: t('redesign.toolsHighlight.tools.convert.kpi'),
+      label: t('redesign.toolsHighlight.tools.convert.label'),
+      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><circle cx="9" cy="11" r="1.5" /><path d="M21 17l-5-5-9 9" /></svg>,
+    },
+    {
+      title: t('redesign.toolsHighlight.tools.merge.title'),
+      body: t('redesign.toolsHighlight.tools.merge.body'),
+      kpi: t('redesign.toolsHighlight.tools.merge.kpi'),
+      label: t('redesign.toolsHighlight.tools.merge.label'),
+      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3v6a4 4 0 004 4h4" /><path d="M16 21l3-3-3-3" /><path d="M5 13v8" /></svg>,
+    },
+  ];
+
+  return (
+    <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl sm:p-10">
+      <div className="mb-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <span className="inline-flex self-start items-center gap-2 rounded-full bg-teal-50 px-3 py-1.5 text-xs font-black uppercase tracking-wider text-teal-700">{t('redesign.toolsHighlight.badge')}</span>
+        <h2 className="text-2xl font-black tracking-tight text-slate-950">{t('redesign.toolsHighlight.title')}</h2>
+      </div>
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+        {tools.map((tool) => (
+          <article key={tool.title} className="flex flex-col rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <div className="mb-4 flex items-center justify-between">
+              <span className="grid h-10 w-10 place-items-center rounded-xl bg-teal-50 text-teal-700">{tool.icon}</span>
+              <span className="text-right">
+                <span className="block text-lg font-black tracking-tight text-slate-950">{tool.kpi}</span>
+                <span className="block text-[10px] uppercase tracking-wider text-slate-400">{tool.label}</span>
+              </span>
+            </div>
+            <h3 className="mb-1.5 font-black text-slate-950">{tool.title}</h3>
+            <p className="text-sm leading-relaxed text-slate-600">{tool.body}</p>
+          </article>
+        ))}
+      </div>
+      <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-slate-200 pt-6 text-xs text-slate-500">
+        <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">{t('redesign.toolsHighlight.supports')}</span>
+        {['EPUB', 'PDF', 'CBZ', 'CBR', 'RAR', 'ZIP'].map((format) => (
+          <span key={format} className="text-base font-black tracking-tight text-slate-800">{format}</span>
+        ))}
+        <span className="ml-auto text-xs text-slate-400">{t('redesign.toolsHighlight.onDevice')}</span>
+      </div>
+    </div>
+  );
+}
+
+function ReaderChooser({ lang }) {
+  const { t } = useTranslation();
+  const rows = [
+    { label: t('redesign.grepTagPage.whySeparate.row1Label'), col1: t('redesign.grepTagPage.whySeparate.row1col1'), col2: t('redesign.grepTagPage.whySeparate.row1col2') },
+    { label: t('redesign.grepTagPage.whySeparate.row2Label'), col1: t('redesign.grepTagPage.whySeparate.row2col1'), col2: t('redesign.grepTagPage.whySeparate.row2col2') },
+    { label: t('redesign.grepTagPage.whySeparate.row3Label'), col1: t('redesign.grepTagPage.whySeparate.row3col1'), col2: t('redesign.grepTagPage.whySeparate.row3col2') },
+    { label: t('redesign.grepTagPage.whySeparate.row4Label'), col1: t('redesign.grepTagPage.whySeparate.row4col1'), col2: t('redesign.grepTagPage.whySeparate.row4col2') },
+    { label: t('redesign.grepTagPage.whySeparate.row5Label'), col1: t('redesign.grepTagPage.whySeparate.row5col1'), col2: t('redesign.grepTagPage.whySeparate.row5col2') },
+  ];
+
+  return (
+    <section id="why-two-apps" className="bg-[#f8f7ff] py-20 sm:py-24">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-10 text-center">
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-indigo-600">{t('redesign.grepTagPage.whySeparate.eyebrow')}</div>
+          <h2 className="mb-4 text-[clamp(1.6rem,3vw,2.4rem)] font-black tracking-tight text-slate-950">
+            {t('redesign.grepTagPage.whySeparate.title')}
+          </h2>
+          <p className="mx-auto max-w-2xl text-sm leading-relaxed text-slate-600">
+            {t('redesign.grepTagPage.whySeparate.desc')}
+          </p>
+        </div>
+
+        <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+          <div className="grid grid-cols-3 bg-slate-800 text-white">
+            <div className="px-5 py-4 text-xs font-bold uppercase tracking-wider text-slate-400" />
+            <div className="border-l border-blue-500/40 bg-blue-900/40 px-5 py-4 text-center text-sm font-bold text-blue-200">
+              {t('redesign.grepTagPage.whySeparate.col1')}
+            </div>
+            <div className="border-l border-slate-700 px-5 py-4 text-center text-sm font-bold">
+              {t('redesign.grepTagPage.whySeparate.col2')}
+            </div>
+          </div>
+          {rows.map((row, i) => (
+            <div key={row.label} className={`grid grid-cols-3 border-t border-slate-100 ${i % 2 === 1 ? 'bg-slate-50' : 'bg-white'}`}>
+              <div className="px-5 py-3.5 text-xs font-bold uppercase tracking-wider text-slate-400">{row.label}</div>
+              <div className="border-l border-blue-100 bg-blue-50/50 px-5 py-3.5 text-sm font-medium text-blue-900">{row.col1}</div>
+              <div className="border-l border-slate-100 px-5 py-3.5 text-sm text-slate-700">{row.col2}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-6 text-center">
+          <Link to={`/${lang}/grepreader/`} className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700">
+            {t('redesign.twoAppsSection.textCta')}
+            <ArrowRightIcon />
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const ComicReader = () => {
+  const { t } = useTranslation();
+  const { lang = 'en' } = useParams();
+  const faqItems = [
+    {
+      q: t('redesign.readerSection.features.library.title'),
+      a: t('redesign.readerSection.features.library.desc'),
+    },
+    {
+      q: t('redesign.readerSection.features.reading.title'),
+      a: t('redesign.readerSection.features.reading.desc'),
+    },
+    {
+      q: t('redesign.readerSection.features.streaming.title'),
+      a: t('redesign.readerSection.features.streaming.desc'),
+    },
+    {
+      q: t('redesign.toolsHighlight.title'),
+      a: t('redesign.toolsHighlight.onDevice'),
+    },
+  ];
+
+  return (
+    <div className="overflow-x-hidden bg-white">
+      <SEO
+        title={`BiblioFuse Reader - ${t('redesign.readerSection.title')}`}
+        description={t('redesign.readerSection.desc')}
+        canonical="/comicreader"
+        schemaType="suite"
+        schemaName="BiblioFuse Reader"
+        operatingSystem="iOS, iPadOS, macOS, Android, Windows"
+        softwareVersion="2.1.2"
+        featureList={[
+          t('redesign.readerSection.features.library.title'),
+          t('redesign.readerSection.features.reading.title'),
+          t('redesign.readerSection.features.streaming.title'),
+          t('redesign.toolsHighlight.title'),
+          t('redesign.twoAppsSection.comicBullet1'),
+          t('redesign.twoAppsSection.comicBullet2'),
+          t('redesign.twoAppsSection.comicBullet3'),
+        ]}
+        faqItems={faqItems}
+        breadcrumbs={[
+          { name: 'BiblioFuse', url: `https://bibliofuse.com/${lang}/` },
+          { name: 'BiblioFuse Reader', url: `https://bibliofuse.com/${lang}/comicreader/` },
+        ]}
+      />
+
+      <section className="relative overflow-hidden bg-[#f5f8ff] pt-28 pb-20">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_10%,rgba(45,124,246,0.14),transparent_34%),radial-gradient(circle_at_85%_18%,rgba(20,194,166,0.13),transparent_28%)]" />
+        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1fr_0.95fr] lg:gap-10 lg:px-8">
+          <div>
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 shadow-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
+              {t('redesign.productFamily.products.reader.tag')}
+            </div>
+            <div className="mb-5">
+              <img src="/image/bibliofuse-logo.png" alt="BiblioFuse Reader" className="h-20 w-20 rounded-2xl shadow-xl" />
+            </div>
+            <h1 className="max-w-3xl text-[clamp(2.5rem,5vw,4rem)] font-black leading-[0.98] tracking-tight text-slate-950">
+              BiblioFuse Reader
+              <span className="mt-3 block bg-gradient-to-r from-[#1e5fd3] to-[#14c2a6] bg-clip-text text-transparent">{t('redesign.readerSection.title')}</span>
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
+              {t('redesign.readerSection.desc')}
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <StoreBadge type="apple" href={appStoreUrl} />
+              <StoreBadge type="play" href={playStoreUrl} />
+              <StoreBadge type="microsoft" href={bibliofusePcUrl} />
+            </div>
+            <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-slate-600">
+              {[t('redesign.common.noAds'), t('redesign.common.noTracking'), t('redesign.common.onDevice')].map((item) => (
+                <span key={item} className="flex items-center gap-1.5">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16A34A" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative mx-auto w-full max-w-[min(390px,100%)] lg:justify-self-end">
+            <div className="absolute -inset-10 -z-0 rounded-full bg-[radial-gradient(circle,rgba(45,124,246,0.18),transparent_68%)]" />
+            <img src={`${imageBase}/iphone/1.png`} alt={t('redesign.altTexts.heroImage')} className="relative z-10 block w-full drop-shadow-2xl" />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl space-y-24 px-4 sm:px-6 lg:space-y-32 lg:px-8">
+          <ReaderFeatureRow
+            eyebrow={t('redesign.readerSection.features.library.eyebrow')}
+            title={t('redesign.readerSection.features.library.title')}
+            desc={t('redesign.readerSection.features.library.desc')}
+            bullets={[
+              { title: t('redesign.readerSection.features.library.bullet1Title'), body: t('redesign.readerSection.features.library.bullet1Body') },
+              { title: t('redesign.readerSection.features.library.bullet2Title'), body: t('redesign.readerSection.features.library.bullet2Body') },
+              { title: t('redesign.readerSection.features.library.bullet3Title'), body: t('redesign.readerSection.features.library.bullet3Body') },
+            ]}
+            image={`${imageBase}/iphone/2.png`}
+            alt={t('redesign.readerSection.features.library.imageAlt')}
+          />
+
+          <ReaderFeatureRow
+            reverse
+            eyebrow={t('redesign.readerSection.features.reading.eyebrow')}
+            title={t('redesign.readerSection.features.reading.title')}
+            desc={t('redesign.readerSection.features.reading.desc')}
+            bullets={[
+              { title: t('redesign.readerSection.features.reading.bullet1Title'), body: t('redesign.readerSection.features.reading.bullet1Body') },
+              { title: t('redesign.readerSection.features.reading.bullet2Title'), body: t('redesign.readerSection.features.reading.bullet2Body') },
+              { title: t('redesign.readerSection.features.reading.bullet3Title'), body: t('redesign.readerSection.features.reading.bullet3Body') },
+            ]}
+            image={`${imageBase}/iphone/3.png`}
+            alt={t('redesign.readerSection.features.reading.imageAlt')}
+            accent="teal"
+          />
+
+          <ReaderFeatureRow
+            eyebrow={t('redesign.readerSection.features.streaming.eyebrow')}
+            title={t('redesign.readerSection.features.streaming.title')}
+            badge={t('redesign.readerSection.features.streaming.badge')}
+            desc={t('redesign.readerSection.features.streaming.desc')}
+            bullets={[
+              { title: t('redesign.readerSection.features.streaming.bullet1Title'), body: t('redesign.readerSection.features.streaming.bullet1Body') },
+              { title: t('redesign.readerSection.features.streaming.bullet2Title'), body: t('redesign.readerSection.features.streaming.bullet2Body') },
+              { title: t('redesign.readerSection.features.streaming.bullet3Title'), body: t('redesign.readerSection.features.streaming.bullet3Body') },
+              { title: t('redesign.readerSection.features.streaming.bullet4Title'), body: t('redesign.readerSection.features.streaming.bullet4Body') },
+            ]}
+            image={`${imageBase}/mac/1.png`}
+            alt={t('redesign.readerSection.features.streaming.imageAlt')}
+            kind="mac"
+            footnote={t('redesign.readerSection.features.streaming.footnote')}
+          />
+
+          <ToolsHighlight />
+        </div>
+      </section>
+
+      <ReaderChooser lang={lang} />
+
+      <section className="bg-white py-20 sm:py-24">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 text-center">
+            <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">FAQ</div>
+            <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-black tracking-tight text-slate-950">
+              {t('redesign.grepTagPage.faqTitle', 'Frequently Asked Questions')}
+            </h2>
+          </div>
+          <div className="space-y-4">
+            {faqItems.map((item) => (
+              <details key={item.q} className="group rounded-2xl border border-slate-200 bg-white shadow-sm">
+                <summary className="flex cursor-pointer list-none items-start justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900">
+                  {item.q}
+                  <svg className="flex-shrink-0 transition-transform group-open:rotate-180" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </summary>
+                <p className="px-5 pb-5 text-sm leading-relaxed text-slate-600">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="flex justify-center gap-5 py-6 text-xs text-slate-400">
+        <Link to={`/${lang}/changelog/`} className="hover:text-slate-700">Changelog</Link>
+        <Link to={`/${lang}/privacy/`} className="hover:text-slate-700">Privacy Policy</Link>
+      </div>
+
+      <section className="bg-white py-14">
+        <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
+          <p className="mb-4 text-sm text-slate-500">
+            {t('redesign.grepTagPage.whySeparate.desc')}
+          </p>
+          <Link
+            to={`/${lang}/`}
+            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-[#f7f9fe] px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:shadow-md"
+          >
+            Back to home
+          </Link>
+        </div>
+      </section>
+
+      <StickyDownloadBar
+        logo="/image/bibliofuse-logo.png"
+        appName="BiblioFuse Reader"
+        appStoreUrl={appStoreUrl}
+        msStoreUrl={bibliofusePcUrl}
+      />
+    </div>
+  );
+};
+
+export default ComicReader;

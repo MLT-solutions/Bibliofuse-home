@@ -347,13 +347,13 @@ const GrepTagReader = () => {
       <section className="bg-white py-14">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
           <p className="mb-4 text-sm text-slate-500">
-            Also reading comics and manga?
+            {t('redesign.grepTagPage.whySeparate.row1col1')}
           </p>
           <Link
-            to={`/${lang}/`}
+            to={`/${lang}/comicreader/`}
             className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-[#f7f9fe] px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:shadow-md"
           >
-            ← Back to BiblioFuse Reader
+            ← {t('redesign.twoAppsSection.comicCta')}
           </Link>
         </div>
       </section>

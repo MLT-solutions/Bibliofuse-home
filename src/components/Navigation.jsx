@@ -31,14 +31,14 @@ const Navigation = () => {
 
     const tabs = [
         { id: 'home', label: t('nav.home'), path: '/' },
-        { id: 'reader', label: t('nav.reader'), path: '/', hash: '#reader' },
+        { id: 'reader', label: t('nav.reader'), path: '/comicreader/' },
         { id: 'webapp', label: t('nav.webapp'), path: '/webapp/' },
         { id: 'about', label: t('nav.about'), path: '/about/' },
         { id: 'blog', label: t('nav.blog'), path: '/blog/' },
         { id: 'changelog', label: t('nav.changelog'), path: '/changelog/' },
     ];
     const tools = [
-        { name: 'BiblioFuse Reader', sub: t('redesign.tools.readerSub'), path: '/', hash: '#reader', logo: '/image/bibliofuse-logo.png', logoZoom: 1.5 },
+        { name: 'BiblioFuse Reader', sub: t('redesign.tools.readerSub'), path: '/comicreader/', logo: '/image/bibliofuse-logo.png', logoZoom: 1.5 },
         { name: 'BiblioFuse Web Tool', sub: t('redesign.tools.webSub'), path: '/webapp/', logo: '/image/webtool-logo.png' },
         { name: 'GrepTag Reader', sub: t('redesign.tools.grepSub'), path: '/grepreader/', logo: '/image/grepreader-logo.png', logoZoom: 1.3 },
         { name: 'Comic Duplicate Scanner', sub: t('redesign.tools.archiveSub'), path: '/archive/', logo: '/image/archive-logo.png', logoZoom: 1.15 },
@@ -86,7 +86,7 @@ const Navigation = () => {
 
     // Get current active tab based on location
     const currentPath = location.pathname.replace(`/${lang}`, '') || '/';
-    const activeTab = location.hash === '#reader'
+    const activeTab = currentPath.startsWith('/comicreader') || location.hash === '#reader'
         ? 'reader'
         : (currentPath.startsWith('/blog')
             ? 'blog'

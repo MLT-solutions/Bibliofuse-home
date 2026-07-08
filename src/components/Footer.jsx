@@ -35,7 +35,7 @@ const Footer = () => {
                     <div>
                         <div className="mb-4 text-xs font-bold uppercase tracking-wider text-ink-soft">{t('redesign.footer.products')}</div>
                         <ul className="space-y-2.5">
-                            <li><a href="#reader" className="text-ink transition hover:text-brand">BiblioFuse Reader</a></li>
+                            <li><Link to={`/${lang || 'en'}/comicreader/`} className="text-ink transition hover:text-brand">BiblioFuse Reader</Link></li>
                             <li><Link to={`/${lang || 'en'}/webapp/`} className="text-ink transition hover:text-brand">{t('redesign.footer.webTool')}</Link></li>
                             <li><Link to={`/${lang || 'en'}/grepreader/`} className="text-ink transition hover:text-brand">GrepTag Reader</Link></li>
                             <li><Link to={`/${lang || 'en'}/archive/`} className="text-ink transition hover:text-brand">Comic Duplicate Scanner</Link></li>

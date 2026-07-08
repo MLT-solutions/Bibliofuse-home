@@ -11,6 +11,9 @@ In order, after `vite build`:
 3. `scripts/prerender.js` — renders each route to static HTML so blog/marketing pages
    have real content for SEO crawlers and social-media unfurling, despite being an SPA.
 
+As of the `/comicreader` rollout, the current localized prerender set is 880 pages
+(80 routes × 11 languages). A completed build should end with `Prerendered 880/880 pages`.
+
 ## Manual content-maintenance scripts (not part of the automated build)
 A large set of one-off Node (`.cjs`/`.mjs`) and Python scripts for bulk-editing
 translations and content across all 11 languages — e.g. `translate-all-langs.cjs`,

@@ -19,7 +19,9 @@ The site:
 
 ## Main App — BiblioFuse Reader
 
-**Homepage section anchor:** `#reader` (Hero + ReaderSection)
+**Primary website route:** `/en/comicreader/`
+
+**Homepage presence:** Hero downloads + compact `ReaderTeaser` + `TwoAppsSection` chooser.
 
 ### Repos on Mac
 

@@ -199,6 +199,7 @@ function ProductFamily({ lang }) {
       desc: t('redesign.productFamily.products.reader.desc'),
       bullets: [t('redesign.productFamily.products.reader.bullet1'), t('redesign.productFamily.products.reader.bullet2'), t('redesign.productFamily.products.reader.bullet3')],
       cta: t('redesign.productFamily.products.reader.cta'),
+      to: `/${lang}/comicreader/`,
       href: appStoreUrl,
       secondary: t('redesign.productFamily.products.reader.secondary'),
       secondaryHref: playStoreUrl,
@@ -401,15 +402,13 @@ function TwoAppsSection({ lang }) {
               ))}
             </ul>
             <div className="mt-auto">
-              <a
-                href={appStoreUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to={`/${lang}/comicreader/`}
                 className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl bg-[#0b1220] px-4 text-sm font-semibold text-white transition hover:bg-[#152033]"
               >
                 {t('redesign.twoAppsSection.comicCta')}
                 <ArrowRightIcon />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -448,7 +447,7 @@ function TwoAppsSection({ lang }) {
         <p className="mt-6 text-center text-xs text-slate-500">{t('redesign.twoAppsSection.bothNote')}</p>
         <div className="mt-4 text-center">
           <Link
-            to={`/${lang}/grepreader/#why-two-apps`}
+            to={`/${lang}/comicreader/#why-two-apps`}
             className="text-xs font-medium text-indigo-500 underline-offset-2 hover:underline"
           >
             Why are these two separate apps? →
@@ -584,6 +583,40 @@ function ReaderSection() {
         </div>
 
         <ToolsHighlight />
+      </div>
+    </section>
+  );
+}
+
+function ReaderTeaser({ lang }) {
+  const { t } = useTranslation();
+  return (
+    <section id="reader" className="scroll-mt-16 bg-[#f5f8ff] py-16 sm:py-20">
+      <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:px-8">
+        <div>
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">{t('redesign.readerSection.eyebrow')}</div>
+          <h2 className="max-w-2xl text-[clamp(1.8rem,3.4vw,2.75rem)] font-black leading-[1.05] tracking-tight text-slate-950">
+            {t('redesign.readerSection.title')}
+          </h2>
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-600">
+            {t('redesign.readerSection.desc')}
+          </p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <Link
+              to={`/${lang}/comicreader/`}
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-[#0b1220] px-5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#152033]"
+            >
+              {t('redesign.twoAppsSection.comicCta')}
+              <ArrowRightIcon />
+            </Link>
+            <StoreBadge type="apple" size="sm" />
+            <StoreBadge type="play" size="sm" />
+          </div>
+        </div>
+        <div className="relative mx-auto w-full max-w-[min(300px,100%)] lg:justify-self-end">
+          <div className="absolute -inset-10 -z-0 rounded-full bg-[radial-gradient(circle,rgba(45,124,246,0.18),transparent_68%)]" />
+          <img src={`${imageBase}/iphone/1.png`} alt={t('redesign.altTexts.heroImage')} className="relative z-10 block w-full drop-shadow-2xl" />
+        </div>
       </div>
     </section>
   );
@@ -1445,7 +1478,7 @@ const Home = () => {
       <Hero lang={lang} />
       <ProductFamily lang={lang} />
       <TwoAppsSection lang={lang} />
-      <ReaderSection />
+      <ReaderTeaser lang={lang} />
       <ComparisonTable />
       <StandaloneToolsSection lang={lang} />
       <FaqSection lang={lang} />

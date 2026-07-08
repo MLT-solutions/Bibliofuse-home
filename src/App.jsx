@@ -15,6 +15,7 @@ import Changelog from './pages/Changelog';
 import AppChangelog from './pages/AppChangelog';
 import AppPrivacy from './pages/AppPrivacy';
 import GrepTagReader from './pages/GrepTagReader';
+import ComicReader from './pages/ComicReader';
 import ArchiveScanner from './pages/ArchiveScanner';
 import SmartDecrypt from './pages/SmartDecrypt';
 import ContentCue from './pages/ContentCue';
@@ -81,6 +82,7 @@ function AppLayout() {
   const currentPath = location.pathname.replace(`/${lang}`, '') || '/';
   const normalizedPath = currentPath === '/' ? '/' : currentPath.replace(/\/$/, '');
   const isWebApp = normalizedPath === '/webapp';
+  const isComicReader = normalizedPath === '/comicreader';
   const isGrepTagReader = normalizedPath === '/grepreader';
   const isArchiveScanner = normalizedPath === '/archive';
   const isSmartDecrypt = normalizedPath === '/smartdecrypt';
@@ -92,7 +94,8 @@ function AppLayout() {
       <main className="flex-1 flex flex-col">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/reader" element={<Navigate to={`/${lang}/#reader`} replace />} />
+          <Route path="/reader" element={<Navigate to={`/${lang}/comicreader/`} replace />} />
+          <Route path="/comicreader" element={<ComicReader />} />
           <Route path="/webapp" element={<WebApp />} />
           <Route path="/about" element={<About />} />
           <Route path="/privacy" element={<Privacy />} />
@@ -115,7 +118,7 @@ function AppLayout() {
         </Routes>
       </main>
       <BackToTopButton />
-      {!isWebApp && !isGrepTagReader && !isArchiveScanner && !isSmartDecrypt && !isContentCue && <Footer />}
+      {!isWebApp && !isComicReader && !isGrepTagReader && !isArchiveScanner && !isSmartDecrypt && !isContentCue && <Footer />}
     </div>
   );
 }

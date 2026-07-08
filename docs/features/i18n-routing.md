@@ -20,4 +20,5 @@ startup (`fallbackLng: 'en'`).
 
 ## Scroll behavior
 `AppLayout` also handles hash-based scroll-to-section on route change (used for e.g.
-`/reader` → `/<lang>/#reader` anchor links), and resets scroll to top otherwise.
+`/<lang>/comicreader/#why-two-apps` section links), and resets scroll to top otherwise.
+The legacy `/reader` path redirects to `/<lang>/comicreader/`.
