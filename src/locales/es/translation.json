@@ -454,7 +454,7 @@
         "library": {
           "eyebrow": "Biblioteca",
           "title": "Un estante para cada formato.",
-          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP y TXT: lee en una sola biblioteca con carpetas, búsqueda y libros recientes. Importa desde Archivos, selector de documentos o tu iCloud Drive.",
+          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP y TXT: lee todo en una sola biblioteca con carpetas, búsqueda y libros recientes. Las miniaturas de portada mantienen visuales las bibliotecas CBZ, CBR, EPUB y PDF sin usar portadas reales con derechos en las capturas del sitio. Importa desde Archivos, el selector de documentos o iCloud Drive.",
           "bullet1Title": "Etiquetas y valoraciones",
           "bullet1Body": "organiza sin carpetas si lo prefieres.",
           "bullet2Title": "Progreso de lectura",
@@ -1037,7 +1037,9 @@
       "textBullet2": "Etiqueta por género · sincronización Wi-Fi en cualquier dirección",
       "textBullet3": "Lector personalizable — temas, tipografías y búsqueda en todo el libro",
       "textCta": "Explorar GrepTag Reader",
-      "bothNote": "Muchos lectores usan BiblioFuse para cómics y GrepTag para novelas — ambas son gratis para probar."
+      "bothNote": "Muchos lectores usan BiblioFuse para cómics y GrepTag para novelas — ambas son gratis para probar.",
+      "comicCoverLine": "Miniaturas de portada para bibliotecas CBZ, CBR, EPUB y PDF.",
+      "textCoverLine": "Miniaturas de portada para bibliotecas EPUB y TXT, con soporte de imagen de portada."
     },
     "grepTagPage": {
       "hero": {
@@ -1080,7 +1082,7 @@
       "covers": {
         "eyebrow": "Portadas y Lector",
         "title": "Biblioteca visual. Lector integrado.",
-        "desc": "Las portadas EPUB se extraen automáticamente. Para libros TXT, las portadas se obtienen de imágenes en la misma carpeta o pegando una URL. Lee EPUB y TXT con TTS, marcadores y fuentes ajustables.",
+        "desc": "GrepTag Reader admite miniaturas de portada para bibliotecas EPUB y TXT, con soporte de imagen de portada. Las portadas EPUB se extraen automáticamente. Para libros TXT, las portadas se emparejan desde imágenes en la misma carpeta o se obtienen pegando una URL. Lee EPUB y TXT en el lector integrado con TTS, marcadores y fuentes ajustables.",
         "bullet1": "Portadas EPUB extraídas automáticamente (gratis)",
         "bullet2": "Portadas TXT de imágenes en la misma carpeta o URL (Pro)",
         "bullet3": "TTS con control de volumen · marcadores · navegación por capítulos"

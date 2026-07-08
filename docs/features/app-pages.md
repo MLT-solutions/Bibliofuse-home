@@ -58,6 +58,11 @@ visual `TwoAppsSection` as the homepage's main comic-vs-novel chooser, then send
 visitors to `/comicreader` or `/grepreader` for product details. The Reader platform
 comparison table belongs on `/comicreader` with the technical FAQ.
 
+Cover-thumbnail messaging belongs in both layers: a compact USP line in each
+homepage reader card, then fuller explanation in the Reader library section and the
+GrepTag covers section. Site screenshots should use generated or sanitized covers,
+not real copyrighted book covers.
+
 When describing Reader streaming, use Mac/PC language unless the feature is truly
 Mac-only. iOS can stream and read from both Mac and PC libraries.
 

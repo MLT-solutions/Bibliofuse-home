@@ -454,7 +454,7 @@
         "library": {
           "eyebrow": "Perpustakaan",
           "title": "Satu rak untuk setiap format.",
-          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP, dan TXT: baca dalam satu perpustakaan dengan folder, pencarian, dan buku terbaru. Impor dari File, pemilih dokumen, atau iCloud Drive Anda.",
+          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP, dan TXT - baca semuanya dalam satu pustaka dengan folder, pencarian, dan buku terbaru. Thumbnail sampul membantu pustaka CBZ, CBR, EPUB, dan PDF tetap visual tanpa memakai sampul buku asli berhak cipta pada screenshot situs. Impor dari Files, pemilih dokumen, atau iCloud Drive.",
           "bullet1Title": "Tag & penilaian",
           "bullet1Body": "atur tanpa folder jika Anda mau.",
           "bullet2Title": "Progres membaca",
@@ -1037,7 +1037,9 @@
       "textBullet2": "Tag berdasarkan genre · sinkron Wi-Fi ke segala arah",
       "textBullet3": "Pembaca yang dapat disesuaikan — tema, font & pencarian seluruh buku",
       "textCta": "Jelajahi GrepTag Reader",
-      "bothNote": "Banyak pembaca menggunakan BiblioFuse untuk komik dan GrepTag untuk novel — keduanya gratis untuk dicoba."
+      "bothNote": "Banyak pembaca menggunakan BiblioFuse untuk komik dan GrepTag untuk novel — keduanya gratis untuk dicoba.",
+      "comicCoverLine": "Thumbnail sampul untuk pustaka CBZ, CBR, EPUB, dan PDF.",
+      "textCoverLine": "Thumbnail sampul untuk pustaka EPUB dan TXT, termasuk dukungan gambar sampul."
     },
     "grepTagPage": {
       "hero": {
@@ -1080,7 +1082,7 @@
       "covers": {
         "eyebrow": "Sampul dan Pembaca",
         "title": "Perpustakaan visual. Pembaca bawaan.",
-        "desc": "Sampul EPUB diekstrak secara otomatis. Untuk buku TXT, sampul dicocokkan dari gambar di folder yang sama atau diambil dengan menempelkan URL. Baca EPUB dan TXT dengan TTS, penanda, dan font yang dapat disesuaikan.",
+        "desc": "GrepTag Reader mendukung thumbnail sampul untuk pustaka EPUB dan TXT, termasuk dukungan gambar sampul. Sampul EPUB diekstrak otomatis. Untuk buku TXT, sampul dicocokkan dari gambar di folder yang sama atau diambil dengan menempel URL. Baca EPUB dan TXT di reader bawaan dengan TTS, bookmark, dan font yang dapat disesuaikan.",
         "bullet1": "Sampul EPUB diekstrak otomatis (gratis)",
         "bullet2": "Sampul TXT dari gambar folder yang sama atau URL (Pro)",
         "bullet3": "TTS dengan kontrol volume · penanda · navigasi bab"

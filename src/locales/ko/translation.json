@@ -454,7 +454,7 @@
         "library": {
           "eyebrow": "라이브러리",
           "title": "모든 형식을 위한 하나의 책장.",
-          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP, TXT: 폴더, 검색, 최근 책이 있는 단일 라이브러리에서 읽기. 파일, 문서 선택기 또는 iCloud Drive에서 가져오기.",
+          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP, TXT를 폴더, 검색, 최근 책이 있는 하나의 라이브러리에서 읽을 수 있습니다. 표지 썸네일은 실제 저작권 표지를 사이트 스크린샷에 사용하지 않으면서도 CBZ, CBR, EPUB, PDF 라이브러리를 시각적으로 정리해 줍니다. 파일 앱, 문서 선택기 또는 iCloud Drive에서 가져올 수 있습니다.",
           "bullet1Title": "태그 및 평점",
           "bullet1Body": "원하는 경우 폴더 없이 정리.",
           "bullet2Title": "읽기 진행률",
@@ -1037,7 +1037,9 @@
       "textBullet2": "장르별 태그 · Wi-Fi로 양방향 동기화",
       "textBullet3": "커스터마이징 가능한 리더 — 테마, 글꼴, 전체 책 검색",
       "textCta": "GrepTag Reader 탐색",
-      "bothNote": "많은 독자들이 만화에는 BiblioFuse를, 소설에는 GrepTag를 사용합니다 — 둘 다 무료로 사용해 볼 수 있습니다."
+      "bothNote": "많은 독자들이 만화에는 BiblioFuse를, 소설에는 GrepTag를 사용합니다 — 둘 다 무료로 사용해 볼 수 있습니다.",
+      "comicCoverLine": "CBZ, CBR, EPUB, PDF 라이브러리용 표지 썸네일을 지원합니다.",
+      "textCoverLine": "EPUB 및 TXT 라이브러리용 표지 썸네일과 이미지 표지를 지원합니다."
     },
     "grepTagPage": {
       "hero": {
@@ -1080,7 +1082,7 @@
       "covers": {
         "eyebrow": "표지 및 리더",
         "title": "시각적 서재. 내장 리더.",
-        "desc": "EPUB 표지는 자동으로 추출됩니다. TXT 책의 표지는 같은 폴더의 이미지에서 매칭하거나 URL을 붙여넣어 가져옵니다. TTS, 북마크, 조정 가능한 글꼴로 EPUB과 TXT를 읽으세요.",
+        "desc": "GrepTag Reader는 EPUB 및 TXT 라이브러리용 표지 썸네일과 이미지 표지를 지원합니다. EPUB 표지는 자동으로 추출됩니다. TXT 책은 같은 폴더의 이미지나 붙여 넣은 URL로 표지를 맞출 수 있습니다. 내장 리더에서 TTS, 북마크, 조절 가능한 글꼴로 EPUB와 TXT를 읽을 수 있습니다.",
         "bullet1": "EPUB 표지 자동 추출 (무료)",
         "bullet2": "TXT 표지는 같은 폴더 이미지 또는 URL (Pro)",
         "bullet3": "볼륨 조절 TTS · 북마크 · 챕터 내비게이션"

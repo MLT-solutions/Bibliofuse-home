@@ -774,7 +774,7 @@
         "library": {
           "eyebrow": "Library",
           "title": "One shelf for every format.",
-          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP and TXT - read in a single library with folders, search and recent books. Import from Files, document picker, or your iCloud Drive.",
+          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP and TXT - read in a single library with folders, search and recent books. Cover thumbnails help CBZ, CBR, EPUB and PDF libraries stay visual without using real copyrighted covers in the site screenshots. Import from Files, document picker, or your iCloud Drive.",
           "bullet1Title": "Tags & ratings",
           "bullet1Body": "organize without folders if you want to.",
           "bullet2Title": "Reading progress",
@@ -1032,7 +1032,9 @@
       "textBullet2": "Tag by genre · Wi-Fi sync any direction",
       "textBullet3": "Custom reader — themes, fonts & whole-book search",
       "textCta": "Explore GrepTag Reader",
-      "bothNote": "Many readers use BiblioFuse for comics and GrepTag for novels — both are free to try."
+      "bothNote": "Many readers use BiblioFuse for comics and GrepTag for novels — both are free to try.",
+      "comicCoverLine": "Cover thumbnails for CBZ, CBR, EPUB, and PDF libraries.",
+      "textCoverLine": "Cover thumbnails for EPUB and TXT libraries, including image-cover support."
     },
     "grepTagPage": {
       "hero": {
@@ -1075,7 +1077,7 @@
       "covers": {
         "eyebrow": "Covers & Reader",
         "title": "Visual library. Built-in reader.",
-        "desc": "EPUB covers are extracted automatically. For TXT books, covers are matched from images in the same folder or fetched by pasting a URL. Read EPUB and TXT in the built-in reader with TTS, bookmarks, and adjustable fonts.",
+        "desc": "GrepTag Reader supports cover thumbnails for EPUB and TXT libraries, including image-cover support. EPUB covers are extracted automatically. For TXT books, covers are matched from images in the same folder or fetched by pasting a URL. Read EPUB and TXT in the built-in reader with TTS, bookmarks, and adjustable fonts.",
         "bullet1": "EPUB covers extracted automatically (free)",
         "bullet2": "TXT covers from same-folder images or URL (Pro)",
         "bullet3": "TTS with volume control · bookmarks · chapter navigation"

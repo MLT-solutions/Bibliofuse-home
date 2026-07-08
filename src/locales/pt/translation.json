@@ -454,7 +454,7 @@
         "library": {
           "eyebrow": "Biblioteca",
           "title": "Uma prateleira para cada formato.",
-          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP e TXT: leia numa única biblioteca com pastas, pesquisa e livros recentes. Importe de Ficheiros, seletor de documentos ou do seu iCloud Drive.",
+          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP e TXT - leia tudo em uma única biblioteca com pastas, busca e livros recentes. As miniaturas de capa ajudam bibliotecas CBZ, CBR, EPUB e PDF a ficarem visuais sem usar capas reais protegidas por direitos autorais nas capturas do site. Importe de Arquivos, seletor de documentos ou iCloud Drive.",
           "bullet1Title": "Etiquetas e avaliações",
           "bullet1Body": "organize sem pastas se preferir.",
           "bullet2Title": "Progresso de leitura",
@@ -1037,7 +1037,9 @@
       "textBullet2": "Etiquete por género · sincronização Wi-Fi em qualquer direção",
       "textBullet3": "Leitor personalizável — temas, tipos de letra e busca no livro inteiro",
       "textCta": "Explorar GrepTag Reader",
-      "bothNote": "Muitos leitores usam BiblioFuse para BD e GrepTag para romances — ambas são grátis para experimentar."
+      "bothNote": "Muitos leitores usam BiblioFuse para BD e GrepTag para romances — ambas são grátis para experimentar.",
+      "comicCoverLine": "Miniaturas de capa para bibliotecas CBZ, CBR, EPUB e PDF.",
+      "textCoverLine": "Miniaturas de capa para bibliotecas EPUB e TXT, incluindo suporte a imagem de capa."
     },
     "grepTagPage": {
       "hero": {
@@ -1080,7 +1082,7 @@
       "covers": {
         "eyebrow": "Capas e Leitor",
         "title": "Biblioteca visual. Leitor integrado.",
-        "desc": "As capas EPUB são extraídas automaticamente. Para livros TXT, as capas são associadas a imagens na mesma pasta ou obtidas colando um URL. Leia EPUB e TXT com TTS, marcadores e tipos de letra ajustáveis.",
+        "desc": "O GrepTag Reader oferece miniaturas de capa para bibliotecas EPUB e TXT, incluindo suporte a imagem de capa. Capas EPUB são extraídas automaticamente. Para livros TXT, as capas são associadas a imagens na mesma pasta ou obtidas colando uma URL. Leia EPUB e TXT no leitor integrado com TTS, marcadores e fontes ajustáveis.",
         "bullet1": "Capas EPUB extraídas automaticamente (gratuito)",
         "bullet2": "Capas TXT de imagens na mesma pasta ou URL (Pro)",
         "bullet3": "TTS com controlo de volume · marcadores · navegação por capítulos"

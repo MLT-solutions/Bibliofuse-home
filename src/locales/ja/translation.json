@@ -454,7 +454,7 @@
         "library": {
           "eyebrow": "ライブラリ",
           "title": "あらゆるフォーマットに対応する一つの本棚。",
-          "desc": "EPUB、PDF、CBZ、CBR、RAR、ZIP、TXT：フォルダ、検索、最近の本を備えた単一ライブラリで読書。ファイル、ドキュメントピッカー、iCloud Drive からインポート。",
+          "desc": "EPUB、PDF、CBZ、CBR、RAR、ZIP、TXTを、フォルダ、検索、最近読んだ本を備えた1つのライブラリで読めます。表紙サムネイルにより、CBZ、CBR、EPUB、PDFライブラリを視覚的に整理できます。サイトのスクリーンショットでは、著作権のある実在の表紙は使用していません。ファイル、ドキュメントピッカー、iCloud Driveからインポートできます。",
           "bullet1Title": "タグと評価",
           "bullet1Body": "必要に応じてフォルダなしで整理。",
           "bullet2Title": "読書の進捗",
@@ -1037,7 +1037,9 @@
       "textBullet2": "ジャンル別タグ · Wi-Fiで双方向同期",
       "textBullet3": "カスタマイズ可能なリーダー — テーマ、フォント、全書検索",
       "textCta": "GrepTag Readerを探索",
-      "bothNote": "多くの読者がコミックにBiblioFuse、小説にGrepTagを使っています——どちらも無料でお試しいただけます。"
+      "bothNote": "多くの読者がコミックにBiblioFuse、小説にGrepTagを使っています——どちらも無料でお試しいただけます。",
+      "comicCoverLine": "CBZ、CBR、EPUB、PDFライブラリの表紙サムネイルに対応。",
+      "textCoverLine": "EPUBとTXTライブラリの表紙サムネイルに対応し、表紙画像も利用できます。"
     },
     "grepTagPage": {
       "hero": {
@@ -1080,7 +1082,7 @@
       "covers": {
         "eyebrow": "カバーとリーダー",
         "title": "ビジュアルライブラリ。内蔵リーダー。",
-        "desc": "EPUBカバーは自動的に抽出されます。TXT本のカバーは同じフォルダ内の画像から取得するか、URLを貼り付けてフェッチします。TTS、ブックマーク、調整可能なフォントでEPUBとTXTを読めます。",
+        "desc": "GrepTag Readerは、EPUBとTXTライブラリの表紙サムネイルに対応し、表紙画像も利用できます。EPUBの表紙は自動抽出されます。TXT本では、同じフォルダ内の画像、または貼り付けたURLから表紙を設定できます。内蔵リーダーでEPUBとTXTを読み、TTS、ブックマーク、調整可能なフォントを使えます。",
         "bullet1": "EPUBカバー自動抽出（無料）",
         "bullet2": "TXTカバーは同フォルダ画像またはURL（Pro）",
         "bullet3": "音量調整TTS · ブックマーク · チャプターナビゲーション"

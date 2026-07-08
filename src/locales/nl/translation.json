@@ -454,7 +454,7 @@
         "library": {
           "eyebrow": "Bibliotheek",
           "title": "Eén plank voor elk formaat.",
-          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP en TXT: lees in één bibliotheek met mappen, zoekopdracht en recente boeken. Importeer vanuit Bestanden, documentkiezer of je iCloud Drive.",
+          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP en TXT - lees alles in één bibliotheek met mappen, zoeken en recente boeken. Omslagminiaturen houden CBZ-, CBR-, EPUB- en PDF-bibliotheken visueel zonder echte auteursrechtelijk beschermde covers in de sitescreenshots te gebruiken. Importeer vanuit Bestanden, de documentkiezer of iCloud Drive.",
           "bullet1Title": "Tags en beoordelingen",
           "bullet1Body": "organiseer zonder mappen als je dat wilt.",
           "bullet2Title": "Leesvoortgang",
@@ -1037,7 +1037,9 @@
       "textBullet2": "Tag op genre · Wi-Fi-sync in elke richting",
       "textBullet3": "Aanpasbare lezer — thema's, lettertypen en zoeken door het hele boek",
       "textCta": "GrepTag Reader verkennen",
-      "bothNote": "Veel lezers gebruiken BiblioFuse voor strips en GrepTag voor romans — beide zijn gratis te proberen."
+      "bothNote": "Veel lezers gebruiken BiblioFuse voor strips en GrepTag voor romans — beide zijn gratis te proberen.",
+      "comicCoverLine": "Omslagminiaturen voor CBZ-, CBR-, EPUB- en PDF-bibliotheken.",
+      "textCoverLine": "Omslagminiaturen voor EPUB- en TXT-bibliotheken, inclusief ondersteuning voor omslagafbeeldingen."
     },
     "grepTagPage": {
       "hero": {
@@ -1080,7 +1082,7 @@
       "covers": {
         "eyebrow": "Omslagen en Lezer",
         "title": "Visuele bibliotheek. Ingebouwde lezer.",
-        "desc": "EPUB-omslagen worden automatisch geëxtraheerd. Voor TXT-boeken worden omslagen gekoppeld aan afbeeldingen in dezelfde map of opgehaald via een URL. Lees EPUB en TXT met TTS, bladwijzers en aanpasbare lettertypen.",
+        "desc": "GrepTag Reader ondersteunt omslagminiaturen voor EPUB- en TXT-bibliotheken, inclusief ondersteuning voor omslagafbeeldingen. EPUB-covers worden automatisch geëxtraheerd. Voor TXT-boeken worden covers gekoppeld aan afbeeldingen in dezelfde map of opgehaald door een URL te plakken. Lees EPUB en TXT in de ingebouwde reader met TTS, bladwijzers en instelbare lettertypen.",
         "bullet1": "EPUB-omslagen automatisch geëxtraheerd (gratis)",
         "bullet2": "TXT-omslagen uit afbeeldingen in dezelfde map of URL (Pro)",
         "bullet3": "TTS met volumebeheer · bladwijzers · hoofdstuknavigatie"

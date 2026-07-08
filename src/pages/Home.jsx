@@ -398,7 +398,8 @@ function TwoAppsSection({ lang }) {
                 </span>
               </div>
               <h3 className="mb-1 text-lg font-black tracking-tight text-slate-950">BiblioFuse Reader</h3>
-              <p className="mb-4 text-sm font-medium text-blue-700">{t('redesign.twoAppsSection.comicIdent')}</p>
+              <p className="mb-3 text-sm font-medium text-blue-700">{t('redesign.twoAppsSection.comicIdent')}</p>
+              <p className="mb-4 rounded-xl bg-blue-50 px-3 py-2 text-xs font-semibold leading-relaxed text-blue-800">{t('redesign.twoAppsSection.comicCoverLine')}</p>
               <ul className="mb-6 space-y-2.5">
                 {comicBullets.map((b) => (
                   <li key={b} className="flex items-start gap-2.5 text-sm text-slate-700">
@@ -435,7 +436,8 @@ function TwoAppsSection({ lang }) {
                 </span>
               </div>
               <h3 className="mb-1 text-lg font-black tracking-tight text-slate-950">GrepTag Reader</h3>
-              <p className="mb-4 text-sm font-medium text-indigo-700">{t('redesign.twoAppsSection.textIdent')}</p>
+              <p className="mb-3 text-sm font-medium text-indigo-700">{t('redesign.twoAppsSection.textIdent')}</p>
+              <p className="mb-4 rounded-xl bg-indigo-50 px-3 py-2 text-xs font-semibold leading-relaxed text-indigo-800">{t('redesign.twoAppsSection.textCoverLine')}</p>
               <ul className="mb-6 space-y-2.5">
                 {textBullets.map((b) => (
                   <li key={b} className="flex items-start gap-2.5 text-sm text-slate-700">

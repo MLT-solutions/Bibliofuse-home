@@ -454,7 +454,7 @@
         "library": {
           "eyebrow": "图书馆",
           "title": "每种格式一个书架。",
-          "desc": "EPUB、PDF、CBZ、CBR、RAR、ZIP 和 TXT：在一个图书馆中阅读，支持文件夹、搜索和最近书籍。从文件、文档选择器或 iCloud Drive 导入。",
+          "desc": "EPUB、PDF、CBZ、CBR、RAR、ZIP 和 TXT，都可以在一个书库中阅读，并支持文件夹、搜索和最近阅读。封面缩略图让 CBZ、CBR、EPUB 和 PDF 书库更直观，同时网站截图不使用真实的受版权保护书封。可从“文件”、文档选择器或 iCloud Drive 导入。",
           "bullet1Title": "标签与评分",
           "bullet1Body": "无需文件夹即可整理。",
           "bullet2Title": "阅读进度",
@@ -1037,7 +1037,9 @@
       "textBullet2": "按类型标记 · Wi-Fi任意方向同步",
       "textBullet3": "可自定义阅读器——主题、字体与全书搜索",
       "textCta": "探索GrepTag Reader",
-      "bothNote": "许多读者用BiblioFuse看漫画，用GrepTag读小说——两款均可免费试用。"
+      "bothNote": "许多读者用BiblioFuse看漫画，用GrepTag读小说——两款均可免费试用。",
+      "comicCoverLine": "支持 CBZ、CBR、EPUB 和 PDF 书库的封面缩略图。",
+      "textCoverLine": "支持 EPUB 和 TXT 书库的封面缩略图，包括封面图片支持。"
     },
     "grepTagPage": {
       "hero": {
@@ -1080,7 +1082,7 @@
       "covers": {
         "eyebrow": "封面与阅读器",
         "title": "可视化书库。内置阅读器。",
-        "desc": "EPUB封面自动提取。TXT书籍的封面从同文件夹图片匹配或粘贴URL获取。内置阅读器支持TTS、书签和可调字体，可阅读EPUB和TXT。",
+        "desc": "GrepTag Reader 支持 EPUB 和 TXT 书库的封面缩略图，包括封面图片支持。EPUB 封面会自动提取。TXT 书籍可从同一文件夹中的图片匹配封面，也可粘贴 URL 获取封面。可在内置阅读器中阅读 EPUB 和 TXT，并使用 TTS、书签和可调字体。",
         "bullet1": "EPUB封面自动提取（免费）",
         "bullet2": "TXT封面来自同文件夹图片或URL（Pro）",
         "bullet3": "TTS含音量控制 · 书签 · 章节导航"

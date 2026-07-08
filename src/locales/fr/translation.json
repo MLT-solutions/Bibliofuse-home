@@ -454,7 +454,7 @@
         "library": {
           "eyebrow": "Bibliothèque",
           "title": "Une étagère pour chaque format.",
-          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP et TXT : lisez dans une seule bibliothèque avec dossiers, recherche et livres récents. Importez depuis Fichiers, le sélecteur de documents ou votre iCloud Drive.",
+          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP et TXT : lisez tout dans une seule bibliothèque avec dossiers, recherche et livres récents. Les miniatures de couverture rendent les bibliothèques CBZ, CBR, EPUB et PDF plus visuelles sans utiliser de vraies couvertures protégées dans les captures du site. Importez depuis Fichiers, le sélecteur de documents ou iCloud Drive.",
           "bullet1Title": "Étiquettes et notes",
           "bullet1Body": "organisez sans dossiers si vous préférez.",
           "bullet2Title": "Progression de lecture",
@@ -1037,7 +1037,9 @@
       "textBullet2": "Étiquetez par genre · synchronisation Wi-Fi dans tous les sens",
       "textBullet3": "Lecteur personnalisable — thèmes, polices et recherche dans tout le livre",
       "textCta": "Explorer GrepTag Reader",
-      "bothNote": "Beaucoup de lecteurs utilisent BiblioFuse pour les comics et GrepTag pour les romans — les deux sont gratuits à essayer."
+      "bothNote": "Beaucoup de lecteurs utilisent BiblioFuse pour les comics et GrepTag pour les romans — les deux sont gratuits à essayer.",
+      "comicCoverLine": "Miniatures de couverture pour les bibliothèques CBZ, CBR, EPUB et PDF.",
+      "textCoverLine": "Miniatures de couverture pour les bibliothèques EPUB et TXT, avec prise en charge des images de couverture."
     },
     "grepTagPage": {
       "hero": {
@@ -1080,7 +1082,7 @@
       "covers": {
         "eyebrow": "Couvertures et Lecteur",
         "title": "Bibliothèque visuelle. Lecteur intégré.",
-        "desc": "Les couvertures EPUB sont extraites automatiquement. Pour les livres TXT, les couvertures sont associées à des images dans le même dossier ou récupérées en collant une URL. Lisez EPUB et TXT avec TTS, signets et polices ajustables.",
+        "desc": "GrepTag Reader prend en charge les miniatures de couverture pour les bibliothèques EPUB et TXT, avec prise en charge des images de couverture. Les couvertures EPUB sont extraites automatiquement. Pour les livres TXT, les couvertures sont associées depuis des images du même dossier ou récupérées en collant une URL. Lisez EPUB et TXT dans le lecteur intégré avec TTS, signets et polices réglables.",
         "bullet1": "Couvertures EPUB extraites automatiquement (gratuit)",
         "bullet2": "Couvertures TXT depuis les images du même dossier ou URL (Pro)",
         "bullet3": "TTS avec contrôle du volume · signets · navigation par chapitre"

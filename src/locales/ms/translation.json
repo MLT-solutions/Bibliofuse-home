@@ -454,7 +454,7 @@
         "library": {
           "eyebrow": "Perpustakaan",
           "title": "Satu rak untuk setiap format.",
-          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP dan TXT: baca dalam satu perpustakaan dengan folder, carian dan buku terkini. Import dari Fail, pemilih dokumen, atau iCloud Drive anda.",
+          "desc": "EPUB, PDF, CBZ, CBR, RAR, ZIP dan TXT - baca dalam satu pustaka dengan folder, carian dan buku terkini. Thumbnail kulit membantu pustaka CBZ, CBR, EPUB dan PDF kekal visual tanpa menggunakan kulit buku sebenar yang berhak cipta dalam tangkapan skrin laman. Import daripada Files, pemilih dokumen atau iCloud Drive.",
           "bullet1Title": "Tag & penilaian",
           "bullet1Body": "susun tanpa folder jika anda mahu.",
           "bullet2Title": "Kemajuan membaca",
@@ -1037,7 +1037,9 @@
       "textBullet2": "Tag mengikut genre · segerak Wi-Fi ke mana-mana arah",
       "textBullet3": "Pembaca boleh disesuaikan — tema, fon & carian seluruh buku",
       "textCta": "Terokai GrepTag Reader",
-      "bothNote": "Ramai pembaca menggunakan BiblioFuse untuk komik dan GrepTag untuk novel — kedua-duanya percuma untuk dicuba."
+      "bothNote": "Ramai pembaca menggunakan BiblioFuse untuk komik dan GrepTag untuk novel — kedua-duanya percuma untuk dicuba.",
+      "comicCoverLine": "Thumbnail kulit untuk pustaka CBZ, CBR, EPUB dan PDF.",
+      "textCoverLine": "Thumbnail kulit untuk pustaka EPUB dan TXT, termasuk sokongan imej kulit."
     },
     "grepTagPage": {
       "hero": {
@@ -1080,7 +1082,7 @@
       "covers": {
         "eyebrow": "Kulit dan Pembaca",
         "title": "Perpustakaan visual. Pembaca terbina.",
-        "desc": "Kulit EPUB diekstrak secara automatik. Untuk buku TXT, kulit dipadankan dari imej dalam folder yang sama atau diambil dengan menampal URL. Baca EPUB dan TXT dengan TTS, penanda buku dan fon boleh laras.",
+        "desc": "GrepTag Reader menyokong thumbnail kulit untuk pustaka EPUB dan TXT, termasuk sokongan imej kulit. Kulit EPUB diekstrak secara automatik. Untuk buku TXT, kulit dipadankan daripada imej dalam folder yang sama atau diambil dengan menampal URL. Baca EPUB dan TXT dalam pembaca terbina dengan TTS, penanda buku dan fon boleh laras.",
         "bullet1": "Kulit EPUB diekstrak automatik (percuma)",
         "bullet2": "Kulit TXT dari imej folder sama atau URL (Pro)",
         "bullet3": "TTS dengan kawalan kelantangan · penanda buku · navigasi bab"
