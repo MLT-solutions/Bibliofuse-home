@@ -45,11 +45,16 @@ function AndroidRequest() {
 
     try {
       setStatus('submitting');
-      await fetch(scriptUrl, {
+      const submitRequest = fetch(scriptUrl, {
         method: 'POST',
         mode: 'no-cors',
         body: payload,
       });
+      submitRequest.catch(() => {});
+      await Promise.race([
+        submitRequest,
+        new Promise((resolve) => setTimeout(resolve, 5000)),
+      ]);
       form.reset();
       setSelectedApp(appOptions[0]);
       setStatus('success');

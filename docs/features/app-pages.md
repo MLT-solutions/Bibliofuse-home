@@ -25,6 +25,9 @@ own top-level route (`/comicreader`, `/grepreader`, `/archive`, `/smartdecrypt`,
 The homepage Android demand CTA routes to `/:lang/androidrequest/` instead of opening
 `mailto:`. `src/pages/AndroidRequest.jsx` renders a localized noindex form that posts
 to the Google Apps Script endpoint configured by `VITE_ANDROID_REQUEST_SCRIPT_URL`.
+Because Google Apps Script web apps return an opaque cross-origin response to this
+static site, the submit UI treats the request as accepted after a short grace period
+instead of waiting indefinitely for a readable response.
 Submissions include the visible answers plus hidden context fields:
 `siteLanguage`, `browserLanguage`, `pagePath`, `referrer`, and `submittedAt`.
 
