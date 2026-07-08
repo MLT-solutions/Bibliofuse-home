@@ -54,7 +54,7 @@ Untuk menggabungkan seri manga menjadi satu volume, tekan dan tahan beberapa fil
 
 - **[BiblioFuse Web Tool](/id/webapp)** — kompres dan gabungkan file EPUB, PDF, dan CBZ di browser mana pun, tanpa instalasi.
 - **iCloud Bookshelf** — aktifkan di Pengaturan untuk menyinkronkan perpustakaan, posisi baca, tag, dan penilaian secara otomatis.
-- **Archive Duplicate Scanner** — aplikasi pendamping untuk Mac yang menemukan file CBZ dan foto duplikat menggunakan perceptual hashing.
+- **Comic Duplicate Scanner** — aplikasi pendamping untuk Mac yang menemukan file CBZ dan foto duplikat menggunakan perceptual hashing.
 
 
 ## Pertanyaan yang Sering Diajukan

@@ -1,6 +1,6 @@
 # SmartDecrypt PDF ZIP 现已支持葡萄牙语、西班牙语、印尼语和中文
 
-SmartDecrypt PDF ZIP CBZ 现已支持葡萄牙语、西班牙语、印尼语（Bahasa Indonesia）和简体中文——将完整的应用界面带到四种新语言。该应用可在 iPhone、iPad、Mac 和 Windows 上完全本地解锁受密码保护的 PDF、ZIP 和 7z 文件，无需上传。现在即可从 App Store [下载 SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)，或从 Microsoft Store 获取 Windows 版本。
+SmartDecrypt PDF ZIP CBZ 现已支持葡萄牙语、西班牙语、印尼语（Bahasa Indonesia）和简体中文——将完整的应用界面带到四种新语言。该应用可在 iPhone、iPad、Mac 和 Windows 上完全本地解锁受密码保护的 PDF、ZIP 和 7z 文件，无需上传。现在即可从 App Store [下载 SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)，或从 Microsoft Store 获取 Windows 版本。 访问 [SmartDecrypt 页面](/zh/smartdecrypt/)，了解完整功能。
 
 ## 为什么这些语言如此重要
 
@@ -56,4 +56,4 @@ SmartDecrypt 使用 Apple 钥匙串存储命名密码配置文件。您只需创
 - **iOS 和 Mac App Store：** [下载 SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)
 - **Microsoft Store：** Windows 版本——搜索 SmartDecrypt PDF ZIP CBZ
 
-访问 [bibliofuse.com 上的 SmartDecrypt 页面](/zh/#smartdecrypt)，在下载前了解完整的功能介绍。
+访问 [bibliofuse.com 上的 SmartDecrypt 页面](/zh/smartdecrypt/)，在下载前了解完整的功能介绍。

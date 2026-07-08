@@ -1,6 +1,6 @@
 # Cara Membuka Kunci PDF Berpassword di iPhone dan Mac
 
-[SmartDecrypt PDF ZIP CBZ](/id/) menghapus password dari file PDF terproteksi di iPhone, iPad, dan Mac tanpa mengirimkan dokumen Anda ke server manapun. Aplikasi ini juga membuka kunci arsip ZIP dan CBZ yang dilindungi password, dan dapat mendekripsi beberapa file sekaligus menggunakan mode batch bawaan. Jika Anda pernah perlu membuka kunci PDF berpassword di iPhone tapi tidak tahu caranya, SmartDecrypt adalah alat khusus yang dirancang tepat untuk keperluan tersebut.
+[SmartDecrypt PDF ZIP CBZ](/id/smartdecrypt/) menghapus password dari file PDF terproteksi di iPhone, iPad, dan Mac tanpa mengirimkan dokumen Anda ke server manapun. Aplikasi ini juga membuka kunci arsip ZIP dan CBZ yang dilindungi password, dan dapat mendekripsi beberapa file sekaligus menggunakan mode batch bawaan. Jika Anda pernah perlu membuka kunci PDF berpassword di iPhone tapi tidak tahu caranya, SmartDecrypt adalah alat khusus yang dirancang tepat untuk keperluan tersebut.
 
 ## Mengapa PDF Berpassword Memblokir Akses di iPhone?
 
@@ -75,3 +75,5 @@ SmartDecrypt memerlukan password yang benar untuk mendekripsi file — ini bukan
 ## Mulai Sekarang
 
 Jika PDF berpassword adalah titik gesekan berulang di iPhone atau Mac Anda, SmartDecrypt PDF ZIP CBZ adalah solusi paling bersih yang tersedia. Berjalan sepenuhnya di perangkat, menangani PDF, ZIP, dan CBZ, mendukung dekripsi batch, dan membutuhkan kurang dari satu menit untuk digunakan. Cari **SmartDecrypt PDF ZIP CBZ** di App Store untuk memulai.
+
+[SmartDecrypt PDF ZIP CBZ](/id/smartdecrypt/) — tersedia di App Store.

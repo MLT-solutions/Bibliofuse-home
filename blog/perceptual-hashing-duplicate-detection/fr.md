@@ -4,7 +4,7 @@ Vous avez renommé un fichier. Vous avez recompressé une archive. Vous avez té
 
 Pourtant, la bande dessinée à l'intérieur est la même. Chaque page est la même. Et si vous essayez de nettoyer votre bibliothèque numérique, ces quasi-doublons sont exactement ceux qui échappent aux outils de détection de doublons standard.
 
-C'est le problème que résout le hachage perceptuel, et c'est la technique au cœur d'[Archive Duplicate Scanner](/fr/).
+C'est le problème que résout le hachage perceptuel, et c'est la technique au cœur d'[Comic Duplicate Scanner](/fr/archive/).
 
 ---
 
@@ -36,11 +36,16 @@ Un **hachage perceptuel** est une empreinte digitale courte calculée à partir 
 
 Deux images au contenu visuel similaire produisent des hachages avec une **distance de Hamming** faible.
 
+Deux propriétés importantes découlent directement de ces étapes :
+
+- **La résolution est sans importance.** L'étape 1 redimensionne chaque image vers la même grille fixe avant tout calcul. Un scan à 1200px et un à 3000px de la même page donnent la même vignette de 32×32 et produisent le même hash.
+- **Le mode couleur est sans importance.** L'étape 2 convertit en niveaux de gris avant la comparaison. Un scan en couleur et un scan en niveaux de gris de la même page produisent des hashes presque identiques, car l'algorithme analyse uniquement la structure de luminance, pas les valeurs de couleur.
+
 ---
 
-## Comment Archive Duplicate Scanner applique cela
+## Comment Comic Duplicate Scanner applique cela
 
-[Archive Duplicate Scanner](/fr/) applique le hachage perceptuel au niveau de l'archive :
+[Comic Duplicate Scanner](/fr/archive/) applique le hachage perceptuel au niveau de l'archive :
 
 1. **Extraction** — ouvre chaque CBZ ou CBR et lit les images internes
 2. **Hachage de chaque page** — chaque page reçoit un hachage perceptuel
@@ -64,6 +69,9 @@ Une archive a des pages `001.jpg` alors qu'une autre a `page_001.jpg`. Le hachag
 
 ---
 
+**Cas 5 : Scan couleur contre scan en noir et blanc**
+Vous avez deux copies du même volume de manga : une est un scan couleur d'une édition numérique ancienne, l'autre est un scan en niveaux de gris d'une réédition ultérieure. Tailles de fichier différentes, profondeur de couleur différente, apparence visuelle différente. Mais comme dHash convertit en niveaux de gris avant le hachage, les deux copies se réduisent à la même empreinte de luminance → signalées comme doublons. C'est un cas que presque tous les autres détecteurs de doublons manquent entièrement.
+
 ## Les limites du hachage perceptuel
 
 **Les modifications visuelles importantes brisent la correspondance.** Les légères filigranes ou les recadrages mineurs n'affectent généralement pas la détection.
@@ -74,8 +82,8 @@ Une archive a des pages `001.jpg` alors qu'une autre a `page_001.jpg`. Le hachag
 
 ---
 
-## Utiliser Archive Duplicate Scanner
+## Utiliser Comic Duplicate Scanner
 
-[Archive Duplicate Scanner](/fr/) est une application Mac native qui apporte le hachage perceptuel à toute votre bibliothèque. Il déplace les doublons sélectionnés dans la Corbeille (pas de suppression définitive).
+[Comic Duplicate Scanner](/fr/archive/) est une application Mac native qui apporte le hachage perceptuel à toute votre bibliothèque. Il déplace les doublons sélectionnés dans la Corbeille (pas de suppression définitive).
 
 Une fois votre bibliothèque nettoyée, associez-la à [BiblioFuse](/fr/) sur iPhone pour une source unique et organisée pour la lecture.

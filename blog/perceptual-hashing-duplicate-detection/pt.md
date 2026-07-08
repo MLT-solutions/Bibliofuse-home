@@ -4,7 +4,7 @@ Você renomeou um arquivo. Recomprimiu um arquivo. Baixou o mesmo volume de uma 
 
 No entanto, o quadrinho dentro é o mesmo. Cada página é a mesma. E se você estiver tentando limpar sua biblioteca digital, esses quase-idênticos duplicatas são exatamente os que escapam dos localizadores de duplicatas padrão.
 
-Esse é o problema que o hash perceptual resolve, e é a técnica no núcleo do [Archive Duplicate Scanner](/en/).
+Esse é o problema que o hash perceptual resolve, e é a técnica no núcleo do [Comic Duplicate Scanner](/en/archive/).
 
 ---
 
@@ -36,11 +36,16 @@ Um **hash perceptual** é uma impressão digital curta calculada a partir do *co
 
 Dois hashes com conteúdo visual semelhante terão uma **distância de Hamming** baixa.
 
+Duas propriedades importantes derivam diretamente dessas etapas:
+
+- **A resolução é irrelevante.** A etapa 1 redimensiona cada imagem para a mesma grade fixa antes de qualquer cálculo. Um scan de 1200px e um de 3000px da mesma página tornam-se a mesma miniatura de 32×32 e produzem o mesmo hash.
+- **O modo de cor é irrelevante.** A etapa 2 converte para escala de cinza antes da comparação. Um scan colorido e um scan em escala de cinza da mesma página produzem hashes quase idênticos, pois o algoritmo analisa apenas a estrutura de luminância, não os valores de cor.
+
 ---
 
-## Como o Archive Duplicate Scanner Aplica Isso
+## Como o Comic Duplicate Scanner Aplica Isso
 
-O [Archive Duplicate Scanner](/en/) aplica hash perceptual no nível do arquivo:
+O [Comic Duplicate Scanner](/en/archive/) aplica hash perceptual no nível do arquivo:
 
 1. **Extração** — abre cada CBZ ou CBR e lê as imagens internas
 2. **Hash de cada página** — cada página recebe um hash perceptual
@@ -64,6 +69,9 @@ Um arquivo tem páginas `001.jpg` enquanto outro tem `page_001.jpg`. Hash percep
 
 ---
 
+**Caso 5: Scan colorido vs. scan em preto e branco**
+Você tem duas cópias do mesmo volume de manga: uma é um scan colorido de uma edição digital antiga, a outra é um scan em escala de cinza de uma reedição posterior. Tamanhos de arquivo diferentes, profundidade de cor diferente, aparência visual diferente. Mas como o dHash converte para escala de cinza antes de aplicar o hash, ambas as cópias são reduzidas à mesma impressão digital de luminância → marcadas como duplicatas. Este é um caso que quase todos os outros detectores de duplicatas ignoram completamente.
+
 ## Os Limites do Hash Perceptual
 
 **Edições visuais significativas quebram a correspondência.** Marcas d'água leves ou recortes menores geralmente não afetam a detecção.
@@ -74,8 +82,8 @@ Um arquivo tem páginas `001.jpg` enquanto outro tem `page_001.jpg`. Hash percep
 
 ---
 
-## Usando o Archive Duplicate Scanner
+## Usando o Comic Duplicate Scanner
 
-O [Archive Duplicate Scanner](/en/) é um aplicativo Mac nativo que traz hash perceptual para toda sua biblioteca. Move duplicatas selecionadas para a Lixeira (não exclusão permanente).
+O [Comic Duplicate Scanner](/en/archive/) é um aplicativo Mac nativo que traz hash perceptual para toda sua biblioteca. Move duplicatas selecionadas para a Lixeira (não exclusão permanente).
 
 Com sua biblioteca limpa, combine-a com o [BiblioFuse](/en/) no iPhone para uma fonte única e curada para leitura.

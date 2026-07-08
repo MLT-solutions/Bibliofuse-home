@@ -1,12 +1,8 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BiblioFuse — Private ebook &amp; comic reader for iOS, macOS, Android &amp; PC</title>
-  <meta name="description" content="BiblioFuse is a private ebook and comic reader for iOS, macOS, Android, and Windows PC. Read EPUB, PDF, CBZ, CBR offline. No ads, no tracking, no account required." />
+<!DOCTYPE html><html lang="ko" data-rh="lang"><head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailscale로 집의 만화 라이브러리에 원격 접근하기 | BiblioFuse</title>
 
   <!-- GitHub Pages SPA redirect handler -->
   <script>
@@ -19,12 +15,74 @@
       }
     })();
   </script>
-  <script type="module" crossorigin src="/assets/index-D42eKU0y.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BGYjxMPy.css">
-</head>
+  <script type="module" crossorigin="" src="/assets/index-Bx4mbl36.js"></script>
+  <link rel="stylesheet" crossorigin="" href="/assets/index-BAYh0Q_z.css">
+<link rel="canonical" href="https://bibliofuse.com/ko/blog/tailscale-remote-library-access/" data-rh="true"><link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/tailscale-remote-library-access/" data-rh="true"><link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/tailscale-remote-library-access/" data-rh="true"><link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/tailscale-remote-library-access/" data-rh="true"><link rel="alternate" hreflang="nl" href="https://bibliofuse.com/nl/blog/tailscale-remote-library-access/" data-rh="true"><link rel="alternate" hreflang="pt" href="https://bibliofuse.com/pt/blog/tailscale-remote-library-access/" data-rh="true"><link rel="alternate" hreflang="ru" href="https://bibliofuse.com/ru/blog/tailscale-remote-library-access/" data-rh="true"><link rel="alternate" hreflang="zh" href="https://bibliofuse.com/zh/blog/tailscale-remote-library-access/" data-rh="true"><link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/tailscale-remote-library-access/" data-rh="true"><link rel="alternate" hreflang="ko" href="https://bibliofuse.com/ko/blog/tailscale-remote-library-access/" data-rh="true"><link rel="alternate" hreflang="id" href="https://bibliofuse.com/id/blog/tailscale-remote-library-access/" data-rh="true"><link rel="alternate" hreflang="ms" href="https://bibliofuse.com/ms/blog/tailscale-remote-library-access/" data-rh="true"><link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/tailscale-remote-library-access/" data-rh="true"><meta name="description" content="BiblioFuse와 Tailscale로 어디서나 Mac 만화 라이브러리를 iPhone에 스트리밍하세요. 클라우드 업로드, 고정 IP 불필요." data-rh="true"><meta property="og:type" content="website" data-rh="true"><meta property="og:site_name" content="BiblioFuse" data-rh="true"><meta property="og:title" content="Tailscale로 집의 만화 라이브러리에 원격 접근하기 | BiblioFuse" data-rh="true"><meta property="og:description" content="BiblioFuse와 Tailscale로 어디서나 Mac 만화 라이브러리를 iPhone에 스트리밍하세요. 클라우드 업로드, 고정 IP 불필요." data-rh="true"><meta property="og:url" content="https://bibliofuse.com/ko/blog/tailscale-remote-library-access/" data-rh="true"><meta property="og:locale" content="ko" data-rh="true"><meta property="og:image" content="https://bibliofuse.com/image/blog/Remote Comic Library.jpg" data-rh="true"><meta property="og:image:alt" content="Tailscale로 집의 만화 라이브러리에 원격 접근하기" data-rh="true"><meta name="twitter:card" content="summary_large_image" data-rh="true"><meta name="twitter:title" content="Tailscale로 집의 만화 라이브러리에 원격 접근하기 | BiblioFuse" data-rh="true"><meta name="twitter:description" content="BiblioFuse와 Tailscale로 어디서나 Mac 만화 라이브러리를 iPhone에 스트리밍하세요. 클라우드 업로드, 고정 IP 불필요." data-rh="true"><meta name="twitter:image" content="https://bibliofuse.com/image/blog/Remote Comic Library.jpg" data-rh="true"><meta name="twitter:image:alt" content="Tailscale로 집의 만화 라이브러리에 원격 접근하기" data-rh="true"><script type="application/ld+json" data-rh="true">{"@context":"https://schema.org","@type":"Article","headline":"Tailscale로 집의 만화 라이브러리에 원격 접근하기","description":"BiblioFuse와 Tailscale로 어디서나 Mac 만화 라이브러리를 iPhone에 스트리밍하세요. 클라우드 업로드, 고정 IP 불필요.","url":"https://bibliofuse.com/ko/blog/tailscale-remote-library-access/","inLanguage":"ko","datePublished":"2026-06-04","image":{"@type":"ImageObject","url":"https://bibliofuse.com/image/blog/Remote Comic Library.jpg"},"author":{"@type":"Person","name":"BiblioFuse"},"publisher":{"@type":"Organization","name":"BiblioFuse","url":"https://bibliofuse.com","logo":{"@type":"ImageObject","url":"https://bibliofuse.com/app-icon.png","width":300,"height":300},"sameAs":["https://apps.apple.com/app/bibliofuse-reader-compress/id6758330093","https://play.google.com/store/apps/details?id=com.modernlogic.bibliofuse","https://apps.microsoft.com/store/detail/9N77MZ509ML2"]}}</script><script type="application/ld+json" data-rh="true">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bibliofuse.com/en/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://bibliofuse.com/en/blog/"},{"@type":"ListItem","position":3,"name":"Tailscale로 집의 만화 라이브러리에 원격 접근하기","item":"https://bibliofuse.com/ko/blog/tailscale-remote-library-access/"}]}</script></head>
 
 <body>
-  <div id="root"></div>
-</body>
+  <div id="root"><div class="min-h-screen bg-[#0f172a] text-white flex flex-col"><nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/80 transition-all duration-300"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-16"><a class="flex-shrink-0 cursor-pointer flex items-center gap-2" href="/ko/" data-discover="true"><img src="/assets/logo-dtWJDCBe.png" alt="BiblioFuse 로고" class="h-9 w-auto rounded-[10px] shadow-sm"><span class="text-xl font-black tracking-tight text-slate-950">BiblioFuse</span></a><div class="flex items-center gap-4"><div class="hidden md:block"><div class="ml-10 flex items-baseline space-x-4"><a class="px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-950 hover:bg-slate-100/70" href="/ko/" data-discover="true">홈</a><a class="px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-950 hover:bg-slate-100/70" href="/ko/#reader" data-discover="true">리더</a><a class="px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-950 hover:bg-slate-100/70" href="/ko/webapp/" data-discover="true">웹 앱</a><a class="px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-950 hover:bg-slate-100/70" href="/ko/about/" data-discover="true">소개</a><a class="px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-950 bg-slate-100" href="/ko/blog/" data-discover="true">블로그</a><a class="px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-slate-950 hover:bg-slate-100/70" href="/ko/changelog/" data-discover="true">변경 이력</a><div class="relative"><button type="button" class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold transition-all duration-200 text-slate-600 hover:bg-slate-100/70 hover:text-slate-950">도구<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button></div></div></div><div class="relative"><button class="flex items-center gap-1 text-slate-600 hover:text-slate-950 transition-colors px-2 py-1 rounded-lg hover:bg-slate-100 text-sm font-semibold"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span class="uppercase">ko</span></button></div><a href="https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex h-9 items-center gap-1.5 rounded-lg bg-[#0B1220] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[#162033] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D7CF6]">앱 받기<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></div></nav><main class="flex-1 flex flex-col"><div class="min-h-screen bg-[#F6F8FC] px-4 pb-20 pt-28 text-slate-950 sm:px-6 lg:px-8"><div class="mx-auto max-w-4xl"><a class="mb-8 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-500 transition-colors hover:text-slate-950" href="/ko/blog/" data-discover="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>블로그로 돌아가기</a><div class="mb-10 overflow-hidden rounded-3xl border border-slate-200 shadow-xl"><img src="/image/blog/Remote Comic Library.jpg" alt="Tailscale로 집의 만화 라이브러리에 원격 접근하기" class="h-auto w-full object-cover"></div><div class="mb-10"><div class="mb-4 flex flex-wrap gap-2"><span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-600">가이드</span><span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-600">ios</span><span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-600">tailscale</span></div><h1 class="font-display text-[clamp(2rem,4.5vw,3.5rem)] font-black leading-[1.02] tracking-tight text-slate-950">Tailscale로 집의 만화 라이브러리에 원격 접근하기</h1><p class="mt-3 text-sm text-slate-400">2026년 6월 4일</p></div><div class="prose prose-lg max-w-none rounded-3xl border border-slate-200 bg-white p-7 shadow-xl sm:p-10
+              prose-headings:font-display prose-headings:font-black prose-headings:tracking-tight prose-headings:text-slate-950
+              prose-h1:hidden
+              prose-h2:mt-10 prose-h2:border-t prose-h2:border-slate-200 prose-h2:pt-8 prose-h2:text-2xl
+              first:prose-h2:mt-0 first:prose-h2:border-t-0 first:prose-h2:pt-0
+              prose-p:leading-relaxed prose-p:text-slate-600
+              prose-a:font-semibold prose-a:text-blue-600 prose-a:no-underline hover:prose-a:text-blue-700
+              prose-strong:font-bold prose-strong:text-slate-950
+              prose-ul:text-slate-600 prose-li:my-1 prose-li:marker:text-blue-500
+              prose-ol:text-slate-600
+              prose-table:text-sm prose-th:text-slate-950 prose-td:text-slate-600
+              prose-code:rounded prose-code:bg-slate-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:text-sm prose-code:text-slate-800 prose-code:font-mono prose-code:before:content-none prose-code:after:content-none
+            "><h1>BiblioFuse와 Tailscale로 집의 만화 라이브러리에 원격 접근하기</h1>
+<p>출장 중 밤 10시 호텔 방에 앉아 있는데 읽을 것이 없다. 800권의 만화 컬렉션이 집 Mac에 연결된 외장 드라이브에 고스란히 있는데. 보통은 집에 돌아올 때까지 기다려야 했다. 이제는 아니다.</p>
+<p>BiblioFuse의 홈 라이브러리 스트리밍 기능은 iPhone이 세계 어디에서나 집 Mac과 같은 Wi-Fi 네트워크에 있는 것처럼 연결할 수 있게 해준다. 이를 가능하게 하는 브릿지는 Tailscale이다. 포트 포워딩, 고정 IP, 라우터 설정이 필요 없는 제로 구성 VPN 메시가 백그라운드에서 조용히 실행된다.</p>
+<h2>"클라우드에 업로드하면 되지"가 답이 아닌 이유</h2>
+<p>명백한 대안은 iCloud, Dropbox, Google Drive에 라이브러리를 동기화하는 것이다. 소규모 컬렉션에는 효과적이지만, 규모가 커지면 문제가 생긴다.</p>
+<ul>
+<li>1TB 만화 라이브러리는 가정용 인터넷으로 업로드하는 데 몇 주가 걸린다.</li>
+<li>그 규모의 클라우드 스토리지는 월 10~30달러가 무기한 발생한다.</li>
+<li>통제권을 잃는다. 모든 만화의 모든 페이지가 다른 사람의 서버에 놓이게 된다.</li>
+</ul>
+<p>Tailscale 방식은 아무것도 업로드하지 않는다. 라이브러리는 Mac에 남아 있고, iPhone은 암호화된 터널을 통해 온디맨드로 페이지를 가져온다. 스토리지 비용은 없고, 파일은 절대로 내 통제를 벗어나지 않는다.</p>
+<h2>BiblioFuse 홈 스트리밍의 작동 방식</h2>
+<p>macOS용 BiblioFuse에는 iPhone 앱이 연결할 수 있는 내장 HTTP 서버가 포함되어 있다. 두 기기가 같은 Wi-Fi 네트워크에 있을 때 iPhone은 Mac 라이브러리를 탐색하고, 읽는 동안 페이지를 스트리밍하고, 독서 진행 상황을 동기화할 수 있다. 파일 복사 없이.</p>
+<p>Tailscale은 그 로컬 네트워크를 어디에서나 확장하여, Mac의 프라이빗 IP 주소를 내 계정 아래에서 Tailscale을 실행하는 모든 기기에서 엔드 투 엔드 암호화로 안전하게 접근할 수 있게 한다.</p>
+<h2>Tailscale이 하는 일</h2>
+<p>Tailscale은 빠르고 암호학적으로 강력하기로 알려진 현대적인 VPN 프로토콜인 WireGuard 위에 구축되었다. 피어 투 피어 메시를 만들어 각 기기가 중앙 서버를 통하지 않고 내 계정 아래의 다른 기기에 직접 연결된다.</p>
+<p>설정은 약 5분이 걸리며 라우터 접근이 필요하지 않다.</p>
+<h2>단계별 설정</h2>
+<h3>Mac에서</h3>
+<ol>
+<li><a href="https://tailscale.com">tailscale.com</a> 또는 Mac App Store에서 Tailscale을 다운로드한다.</li>
+<li>Google, GitHub, Microsoft로 로그인하거나 무료 Tailscale 계정을 만든다.</li>
+<li>Mac의 Tailscale IP 주소를 기록해 둔다(예: <code>100.x.x.x</code>).</li>
+<li>Mac에서 BiblioFuse를 열고 <strong>환경설정 → 홈 라이브러리 서버</strong>로 이동한다.</li>
+<li>서버를 활성화한다. 기본 포트는 <code>8686</code>이다.</li>
+</ol>
+<h3>iPhone에서</h3>
+<ol>
+<li>App Store에서 Tailscale을 설치한다.</li>
+<li>Mac에서 사용한 것과 같은 Tailscale 계정으로 로그인한다.</li>
+<li>Tailscale VPN 토글을 활성화한다.</li>
+<li>iPhone에서 <a href="https://bibliofuse.com/ko/">BiblioFuse</a>를 열고 <strong>라이브러리 → Mac에 연결</strong>로 이동한다.</li>
+<li>Mac의 Tailscale IP 주소와 포트 <code>8686</code>을 입력한다.</li>
+<li>연결을 탭하면 Mac 라이브러리가 즉시 나타난다.</li>
+</ol>
+<h2>성능과 대역폭</h2>
+<p>Tailscale은 가능하면 직접 피어 투 피어 연결을 설정한다. 일반적인 호텔 Wi-Fi나 모바일 연결(20~50Mbps)에서 만화 페이지 스트리밍은 편안하게 작동한다. BiblioFuse는 현재 페이지만 전송하고 다음 페이지를 미리 로드한다.</p>
+<h2>개인정보와 보안</h2>
+<p>Tailscale 연결은 WireGuard로 엔드 투 엔드 암호화된다. 다른 누구도 내 BiblioFuse 서버에 접근할 수 없다. 파일은 절대로 제3자 서버를 통하지 않는다.</p>
+<h2>자주 묻는 질문</h2>
+<p><strong>Mac이 켜져 있어야 합니까?</strong>
+그렇다. BiblioFuse는 Mac이 활성화된 동안 실행된다. 시스템 설정 → 배터리에서 자동 절전을 비활성화한다.</p>
+<p><strong>모바일 데이터로도 작동합니까?</strong>
+그렇다. Tailscale은 모든 인터넷 연결에서 작동한다. 만화 스트리밍은 압축 설정에 따라 페이지당 약 1~3MB를 사용한다.</p>
+<p><strong>여러 Mac과 사용할 수 있습니까?</strong>
+가능하다. 각 Mac을 Tailscale 계정에 추가하고 BiblioFuse에서 연결로 저장한다.</p>
+<p><strong>Tailscale은 유료입니까?</strong>
+최대 3명의 사용자와 100개의 기기를 지원하는 무료 티어가 있다. 개인 사용에는 충분하다.</p>
+<h2>시작하기</h2>
+<p>아직 <a href="https://bibliofuse.com/ko/">BiblioFuse</a>가 없다면 iPhone과 iPad용은 App Store에서, macOS용은 Mac App Store에서 다운로드하자. Tailscale은 <a href="https://tailscale.com">tailscale.com</a>에서 무료로 다운로드할 수 있다.</p>
+<p>두 가지를 결합하면 집의 라이브러리가 항상 함께하는 것처럼 느껴진다. 단 하나의 파일도 클라우드에 업로드하지 않고.</p></div></div></div></main><button type="button" aria-label="Go to top" class="fixed bottom-5 left-4 z-40 grid h-11 w-11 place-items-center rounded-full border border-slate-200 bg-white text-slate-950 shadow-2xl transition sm:hidden pointer-events-none translate-y-4 opacity-0"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg></button><footer class="border-t border-line bg-bg pt-16 pb-10 text-sm text-ink-muted"><div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"><div class="mb-12 grid grid-cols-1 gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]"><div class="max-w-sm"><a class="flex items-center gap-2.5" href="/ko/" data-discover="true"><img src="/assets/logo-dtWJDCBe.png" alt="BiblioFuse 로고" class="h-9 w-auto rounded-[10px] shadow-sm"><span class="font-display tighter text-xl font-bold text-ink">BiblioFuse</span></a><p class="mt-4 leading-relaxed">자신의 기기에 서재를 보관하고 싶은 분들을 위한 소형 툴 및 리더 모음입니다.</p><div class="mt-5 flex flex-wrap gap-2"><a href="https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093" target="_blank" rel="noopener noreferrer" class="inline-flex"><img src="/image/Download_on_the_App_Store_Badge.svg.png" alt="App Store에서 다운로드" class="h-10 w-auto object-contain"></a><a href="https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader" target="_blank" rel="noopener noreferrer" class="inline-flex"><img src="/image/Playstore.png" alt="Google Play에서 받기" class="h-10 w-auto object-contain"></a><a href="https://apps.microsoft.com/store/detail/9N77MZ509ML2" target="_blank" rel="noopener noreferrer" class="inline-flex"><img src="/image/Microsoft_Store_badge.svg" alt="Microsoft에서 받기" class="h-10 w-auto object-contain"></a></div></div><div><div class="mb-4 text-xs font-bold uppercase tracking-wider text-ink-soft">제품</div><ul class="space-y-2.5"><li><a href="#reader" class="text-ink transition hover:text-brand">BiblioFuse Reader</a></li><li><a class="text-ink transition hover:text-brand" href="/ko/webapp/" data-discover="true">웹 도구</a></li><li><a class="text-ink transition hover:text-brand" href="/ko/grepreader/" data-discover="true">GrepTag Reader</a></li><li><a class="text-ink transition hover:text-brand" href="/ko/archive/" data-discover="true">Comic Duplicate Scanner</a></li><li><a class="text-ink transition hover:text-brand" href="/ko/smartdecrypt/" data-discover="true">SmartDecrypt PDF ZIP</a></li><li><a class="text-ink transition hover:text-brand" href="/ko/contentcue/" data-discover="true">ContentCue</a></li></ul></div><div><div class="mb-4 text-xs font-bold uppercase tracking-wider text-ink-soft">회사</div><ul class="space-y-2.5"><li><a class="text-ink transition hover:text-brand" href="/ko/about/" data-discover="true">소개</a></li><li><a class="text-ink transition hover:text-brand" href="/ko/changelog/" data-discover="true">변경 이력</a></li><li><a href="mailto:support@mlogictech.com" class="text-ink transition hover:text-brand">문의</a></li><li><a href="mailto:support@mlogictech.com" class="text-ink transition hover:text-brand">함께 일하기</a></li></ul></div><div><div class="mb-4 text-xs font-bold uppercase tracking-wider text-ink-soft">법적 정보</div><ul class="space-y-2.5"><li><a class="text-ink transition hover:text-brand" href="/ko/privacy/" data-discover="true">개인정보 처리방침</a></li><li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer" class="text-ink transition hover:text-brand">이용 약관 (EULA)</a></li></ul></div></div><div class="flex flex-col gap-4 border-t border-line pt-8 text-xs md:flex-row md:items-center md:justify-between"><div class="space-y-1"><p>© 2025 Modern Logic Tech Solutions (등록 번호: 202503109774 (003722143-P)). 모든 권리 보유.</p><p>1984, Jalan SK 13/12, 43300 Seri Kembangan, Selangor, Malaysia</p></div><div class="flex items-center gap-4"><span class="inline-flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"></path></svg>Apple App Store · Google Play · Microsoft Store</span></div></div></div></footer></div></div>
 
-</html>
+
+</body></html>

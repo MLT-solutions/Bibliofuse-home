@@ -4,7 +4,7 @@
 
 对大多数漫画读者来说，重复文件会悄无声息地积累多年——来自不同来源的下载、在硬盘间移动文件、从未清理的备份。结果就是存储空间被浪费、阅读时感到困惑，也没有简单的方法来判断哪个版本质量更好。
 
-本指南介绍了一个实用的工作流程，用 [Archive Duplicate Scanner](/zh/) 来查找、审查并删除重复漫画——这是一款专为此问题设计的 Mac 工具。
+本指南介绍了一个实用的工作流程，用 [Comic Duplicate Scanner](/zh/archive/) 来查找、审查并删除重复漫画——这是一款专为此问题设计的 Mac 工具。
 
 ---
 
@@ -22,9 +22,9 @@
 
 ---
 
-## Archive Duplicate Scanner 的不同之处
+## Comic Duplicate Scanner 的不同之处
 
-[Archive Duplicate Scanner](/zh/) 使用**感知哈希**来比较CBZ和CBR文件内部的实际图像。它不是问"这两个文件是否逐字节相同？"，而是问"这两个文件是否包含相同的漫画页面？"
+[Comic Duplicate Scanner](/zh/archive/) 使用**感知哈希**来比较CBZ和CBR文件内部的实际图像。它不是问"这两个文件是否逐字节相同？"，而是问"这两个文件是否包含相同的漫画页面？"
 
 这意味着它能检测到以下情况的重复文件：
 
@@ -39,13 +39,13 @@
 
 ### 第1步：扫描库文件夹
 
-打开 Archive Duplicate Scanner 并添加漫画文件夹。可以直接将文件夹拖放到应用上。
+打开 Comic Duplicate Scanner 并添加漫画文件夹。可以直接将文件夹拖放到应用上。
 
 扫描器读取每个CBZ和CBR文件，提取图像，并为每页生成感知哈希值。整个过程完全在Mac本地完成，无需网络连接。
 
 ### 第2步：审查匹配对
 
-扫描完成后，Archive Duplicate Scanner 并排展示匹配对，包含缩略图预览、文件大小和相似度百分比。
+扫描完成后，Comic Duplicate Scanner 并排展示匹配对，包含缩略图预览、文件大小和相似度百分比。
 
 ### 第3步：选择要删除的文件
 
@@ -53,7 +53,7 @@
 
 ### 第4步：将重复文件移至废纸篓
 
-Archive Duplicate Scanner 将文件移至废纸篓——不是永久删除。如有需要，可从废纸篓恢复。
+Comic Duplicate Scanner 将文件移至废纸篓——不是永久删除。如有需要，可从废纸篓恢复。
 
 ---
 
@@ -61,7 +61,7 @@ Archive Duplicate Scanner 将文件移至废纸篓——不是永久删除。如
 
 **建立单一"权威"文件夹。** 将整理好的库保存在一个地方。
 
-**每次大量下载后进行扫描。** 下载一批新卷后运行 Archive Duplicate Scanner，在重复文件增多前及时发现。
+**每次大量下载后进行扫描。** 下载一批新卷后运行 Comic Duplicate Scanner，在重复文件增多前及时发现。
 
 **使用 [BiblioFuse](/zh/) 从整理好的文件夹中阅读。** 通过 BiblioFuse 的本地流媒体功能将 Mac 库推送到 iPhone 或 iPad 时，你从单一真实来源读取内容。
 
@@ -69,11 +69,11 @@ Archive Duplicate Scanner 将文件移至废纸篓——不是永久删除。如
 
 ## 常见问题
 
-**Archive Duplicate Scanner 会自动删除我的文件吗？**
+**Comic Duplicate Scanner 会自动删除我的文件吗？**
 不会。它将文件移至废纸篓，不会永久删除。删除任何内容之前，你需要审查每个匹配项。
 
 **支持哪些格式？**
 CBZ、CBR 和图像文件。
 
 **我的两个文件校验码完全不同——它还能找到匹配项吗？**
-可以。Archive Duplicate Scanner 对每个文件内部的图像使用感知哈希，而非文件校验码。
+可以。Comic Duplicate Scanner 对每个文件内部的图像使用感知哈希，而非文件校验码。
