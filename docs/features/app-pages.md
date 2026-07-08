@@ -25,7 +25,12 @@ drives the homepage teaser and the GrepTag comparison, so the comic-vs-novel dis
 stays consistent across the hub.
 
 The homepage now keeps only a compact `ReaderTeaser` plus `TwoAppsSection`; the full
-reader walkthrough belongs on `/comicreader`.
+reader walkthrough belongs on `/comicreader`. Homepage FAQ copy should stay at the
+brand/app-chooser level; setup-heavy BiblioFuse Reader questions belong on
+`/comicreader` or focused help/blog pages.
+
+When describing Reader streaming, use Mac/PC language unless the feature is truly
+Mac-only. iOS can stream and read from both Mac and PC libraries.
 
 ## Adding a new sister app
 Adding a 6th app means: new page component in `src/pages/`, new route + sub-routes in

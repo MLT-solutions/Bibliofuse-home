@@ -262,9 +262,9 @@
         "reads": "阅读"
       },
       "table": {
-        "eyebrow": "阅读器对比",
-        "title": "为您的平台选择阅读器。",
-        "desc": "所有阅读器均采用相同理念：本地处理，不追踪用户。差异在于平台与工作流程。",
+        "eyebrow": "比较应用",
+        "title": "选择合适的 BiblioFuse 应用。",
+        "desc": "先看你的任务：阅读漫画、搜索小说、解锁文档、清理重复文件，或快速使用浏览器工具。",
         "feature": "功能",
         "badges": {
           "universal": "通用购买",
@@ -337,7 +337,7 @@
       },
       "toolsSection": {
         "eyebrow": "独立工具",
-        "title": "也可作为轻量工具使用",
+        "title": "适合一次性任务的专用工具",
         "web": {
           "name": "BiblioFuse Web",
           "subtitle": "免费 · 浏览器",
@@ -356,170 +356,28 @@
         }
       },
       "faq": {
-        "eyebrow": "常见问题",
-        "title": "常见问题",
+        "eyebrow": "FAQ",
+        "title": "选择 BiblioFuse 工具",
         "items": [
           {
-            "q": "一次购买是否覆盖所有平台？",
-            "a": "不。iOS + Mac 是一次通用购买 — 一次付款涵盖 iPhone、iPad 和 Mac。Android Reader、PC Reader 及 PC 工具各自单独销售。"
+            "q": "我应该先用哪个 BiblioFuse 应用？",
+            "a": "漫画、PDF 和大型混合书库用 BiblioFuse Reader。EPUB/TXT 小说需要全文搜索和标签时用 GrepTag Reader。受密码保护的文件用 SmartDecrypt，清理重复文件用 Comic Duplicate Scanner，快速浏览器压缩或合并用 BiblioFuse Web。"
           },
           {
-            "q": "如何在 iPhone 上向 BiblioFuse 添加书籍和文件夹？",
-            "a": "BiblioFuse 将文件存储在自己的 iCloud 同步文件夹中。您可以通过「文件」应用（将文件复制到 BiblioFuse 文件夹）、AirDrop，或通过内置 Wi-Fi 传输功能添加书籍 — 从 Mac 或 PC 开启库会话，然后从任意浏览器拖入文件。",
-            "link": {
-              "label": "逐步侧载指南",
-              "href": "/blog/sideload-comics-iphone-without-itunes/"
-            }
+            "q": "我的文件会上传到 BiblioFuse 服务器吗？",
+            "a": "不会。应用以本机处理为核心。阅读、压缩、重复扫描和网页工具都在本地处理文件。同步和串流使用你自己的 iCloud、本地网络或 Tailscale，而不是 BiblioFuse 账户。"
           },
           {
-            "q": "Mac 或 PC 向 iPhone 的串流是如何工作的？",
-            "a": "您的 Mac 或 PC 运行本地服务器，并将连接地址写入 iCloud Drive。iPhone 会自动识别。两台设备必须同时开启 Tailscale（在家和远程均可使用）。如果只有一台设备开启了 Tailscale，连接将失败。保持两台设备始终开启 Tailscale 可获得最稳定的体验。"
+            "q": "iPhone 可以读取 Mac 或 PC 书库吗？",
+            "a": "可以。BiblioFuse Reader 可以从 Mac 或 PC 书库串流和阅读，所以大型漫画归档可以留在桌面端，iPhone 通过家庭 Wi‑Fi 或 Tailscale 5G 打开。"
           },
           {
-            "q": "设置串流需要什么？",
-            "a": "您的 Mac 或 PC 与 iPhone 必须完成以下配置：",
-            "bullets": [
-              {
-                "text": "两台设备使用相同的 iCloud 账户",
-                "sub": [
-                  "在 iOS 和 Mac 上：进入设置 → [您的姓名] → iCloud，确保 BiblioFuse 已启用",
-                  "在 PC 上：iCloud 未内置 — 请从 Microsoft Store <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">下载 iCloud for Windows</a>"
-                ]
-              },
-              {
-                "text": "两台设备必须同时开启 Tailscale",
-                "sub": [
-                  "同时开启 — 在家和通过5G远程均可使用",
-                  "混合状态（一台开启，另一台关闭）— 连接将失败",
-                  "无需启用 Tailscale 出口节点",
-                  "iCloud 和 Tailscale 账户可使用不同的电子邮件地址"
-                ]
-              },
-              {
-                "text": "首次启动应用时允许网络访问"
-              }
-            ]
+            "q": "轻量工具和 BiblioFuse Reader 是分开的吗？",
+            "a": "是。网页工具和 Windows resizer 工具用于压缩、转换或合并等专门任务。不需要完整阅读器和书库管理器时使用它们。"
           },
           {
-            "q": "串流已正确配置但仍无法使用 — 该怎么办？",
-            "a": "过期的端点缓存是最常见的原因。存储在 iCloud 中的一个或多个 <code>stream_endpoint.json</code> 文件的时间戳已过期，导致 BiblioFuse 无法发现主机。",
-            "bullets": [
-              {
-                "text": "删除 iCloud 中的过期文件",
-                "sub": [
-                  "在 iPhone 上：打开「文件」应用 → iCloud Drive → BiblioFuse（根目录）和 BiblioFuse → 文稿。",
-                  "在 Mac 上：打开访达 → iCloud Drive → BiblioFuse（根目录）和 BiblioFuse → 文稿。",
-                  "在两个位置中，删除名为 <code>stream_endpoint.json</code>、<code>stream_endpoint 1.json</code>、<code>stream_endpoint 2.json</code> 等的所有文件。",
-                  "在 PC 上：iCloud 可能只显示这些文件的云端（仅在线）版本，因此从 PC 删除可能不可靠 — 请使用 iPhone 或 Mac。"
-                ]
-              },
-              {
-                "text": "删除后，在主机（Mac 或 PC）和 iPhone 上重新打开 BiblioFuse",
-                "sub": [
-                  "主机应用将使用当前时间戳重新生成新的端点文件。",
-                  "在 iPhone 上，进入串流源列表 — 应看到 PC 或 Mac 名称右侧显示绿色圆点，表示已成功检测到。",
-                  "如果圆点为灰色，请再等几秒钟，或强制关闭并重新打开主机上的 BiblioFuse。"
-                ]
-              }
-            ]
-          },
-          {
-            "q": "为什么串流需要 Tailscale？不能直接用家里的 Wi-Fi 吗？",
-            "a": "需要 Tailscale 是因为 iOS 处理本地网络连接的方式。以下是发生的情况：",
-            "bullets": [
-              {
-                "text": "早期版本在没有 Tailscale 的情况下通过家庭 Wi-Fi 工作",
-                "sub": [
-                  "应用使用 Bonjour（苹果的本地发现）通过 HTTP 运行——这很好用",
-                  "当添加远程 5G 串流后，iOS 应用传输安全（ATS）开始阻止对原始 IP 地址的 HTTP 连接，导致仅限局域网的路径失效"
-                ]
-              },
-              {
-                "text": "Tailscale 在家庭 Wi-Fi 上的效果与远程使用时一样好",
-                "sub": [
-                  "当两台设备在同一网络上时，Tailscale 直接路由流量——与普通 Wi-Fi 相比没有速度损失",
-                  "在家和外出时始终保持 Tailscale 开启，让您拥有一致的设置，无需切换模式"
-                ]
-              },
-              {
-                "text": "无 Tailscale 的局域网模式目前不在开发计划中",
-                "sub": [
-                  "即使关闭 Tailscale，应用可能仍会尝试之前存储的 Tailscale 地址，导致连接失败",
-                  "构建可靠的自动局域网回退机制较为复杂，目前暂无计划",
-                  "最简单的设置：始终在两台设备上保持 Tailscale 开启。无需额外配置即可在家庭 Wi-Fi 和 5G 远程下使用"
-                ]
-              }
-            ]
-          },
-          {
-            "q": "为什么 Android 无法从 Mac 或 PC 接收书籍？",
-            "a": "Android 应用使用不同的代码库，没有 iCloud 集成，而 iCloud 正是串流握手机制的基础。Android 的最佳工作流程是使用 Syncthing 或类似工具将文件同步到手机，然后在应用中将该文件夹添加为书库来源。"
-          },
-          {
-            "q": "阅读进度、书签、评分和标签保存在哪里？",
-            "a": "这取决于书籍文件的存储位置：",
-            "bullets": [
-              {
-                "text": "本地存储 — 仅保存在该设备上，不跨设备同步"
-              },
-              {
-                "text": "iCloud 存储 — 保存至 iCloud，自动同步到所有 iOS、Mac 和 PC 设备"
-              },
-              {
-                "text": "SMB / 网络共享（Mac 或 PC 串流）— 保存在主机设备上",
-                "sub": [
-                  "iOS 读取 Mac 串流：进度保存在 Mac 上",
-                  "iOS 读取 PC 串流：进度保存在 PC 上",
-                  "PC ↔ Mac：各自独立存储，数据不共享",
-                  "如果您同时使用 Mac 和 PC 作为串流主机，您的阅读数据将被分割。建议只使用一台主机以保持一致性。"
-                ]
-              }
-            ]
-          },
-          {
-            "q": "PC Reader 与 PC EPUB / CBZ 工具有什么区别？",
-            "a": "PC Reader 是一款完整的阅读应用 — 它可以打开书籍、管理书库、压缩文件并向 iPhone 串流。PC EPUB 和 CBZ 工具是更轻量、更便宜的应用，仅专注于压缩和合并，没有阅读功能。"
-          },
-          {
-            "q": "如何在 BiblioFuse 中获得更好的文字转语音声音？",
-            "a": "更高质量的声音已内置于您的设备中，但需要单独下载 — 安装后 BiblioFuse 将自动识别它们。",
-            "bullets": [
-              {
-                "text": "iPhone / iPad",
-                "sub": [
-                  "前往「设置」→「辅助功能」→「朗读内容」→「声音」",
-                  "选择您的语言，然后下载「增强型」或「高级」声音",
-                  "iOS 16+ 上的高级声音具有神经网络质量（Siri 级别）"
-                ]
-              },
-              {
-                "text": "Mac",
-                "sub": [
-                  "前往「系统设置」→「辅助功能」→「朗读内容」→「系统声音」→「管理声音」",
-                  "为您的语言下载任意「增强型」或「高级」声音"
-                ]
-              },
-              {
-                "text": "Windows 10 / Windows 11",
-                "sub": [
-                  "前往「设置」→「时间和语言」→「语言和区域」",
-                  "添加您的阅读语言，或打开已安装语言的语言选项",
-                  "在「语言功能」下，安装「文字转语音」",
-                  "重启 BiblioFuse，然后开始新的 TTS 会话"
-                ]
-              },
-              {
-                "text": "Windows 11 自然语音（可选）",
-                "sub": [
-                  "前往「设置」→「辅助功能」→「讲述人」",
-                  "在「添加自然语音」下，下载所需语音",
-                  "注意：Windows 可能仅向讲述人开放这些语音，而非所有应用"
-                ]
-              },
-              {
-                "text": "无需更新应用 — BiblioFuse 会在 Windows 或 Apple 文字转语音系统公开新安装的语音时自动检测"
-              }
-            ]
+            "q": "这些应用免费吗？",
+            "a": "大多数 BiblioFuse 应用可以免费试用或有免费限制，重度使用可选择付费升级。各平台商店页面会显示当前价格。"
           }
         ]
       }
@@ -536,7 +394,7 @@
           "desc": "个人电子书和漫画收藏的原生阅读器与图书馆管理器。",
           "bullet1": "EPUB、PDF、CBZ、CBR、RAR、ZIP 和 TXT",
           "bullet2": "标签、评分、进度和书签",
-          "bullet3": "iCloud 同步 + 从 Mac 图书馆实时流式传输",
+          "bullet3": "iCloud 同步，以及从 Mac 或 PC 实时串流",
           "cta": "在 App Store 获取",
           "secondary": "Google Play"
         },
@@ -590,7 +448,7 @@
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
       "title": "为长时间阅读打造。",
-      "desc": "一个专注的阅读器，配备你真正使用的图书馆工具：格式、文件夹、标签、评分、进度和书签。同一图书馆在 iPhone、iPad 和 Mac 上通过 iCloud 保持同步。",
+      "desc": "一个专注的阅读器，提供你真正会用到的书库工具：格式、文件夹、标签、评分、进度和书签。书可以放在 iPhone、iPad、Mac 或 PC 上；需要更多空间时，也可以把桌面书库串流到 iPhone。",
       "features": {
         "library": {
           "eyebrow": "图书馆",
@@ -617,20 +475,20 @@
           "imageAlt": "BiblioFuse 阅读视图，包含 TTS、自动滚动和 Peek Zoom"
         },
         "streaming": {
-          "eyebrow": "Mac 串流到移动端",
-          "title": "图书馆中枢。串流到你的 iPhone。",
+          "eyebrow": "桌面书库串流到移动端",
+          "title": "书库中枢。串流到你的 iPhone。",
           "badge": "无第三方服务器 · 无订阅",
-          "desc": "在 Mac 上，BiblioFuse 变身为桌面图书馆中枢：以分屏图书馆/阅读器界面管理本地文件夹、iCloud 文件夹和 SMB 网络共享。然后通过家中本地 Wi-Fi 直接串流书籍到 iPhone 和 iPad 上的 BiblioFuse，或在外出时通过 5G 远程串流。",
+          "desc": "在 Mac 和 PC 上，BiblioFuse 会成为大型收藏的桌面书库中枢。你可以在主机上管理文件夹，然后通过家庭 Wi‑Fi，或借助 Tailscale 通过 5G，直接把书串流到 iPhone 和 iPad 上的 BiblioFuse。",
           "bullet1Title": "本地 Wi-Fi 串流",
-          "bullet1Body": "从任何 Mac 源即时浏览。",
+          "bullet1Body": "从 Mac 或 PC 来源即时浏览。",
           "bullet2Title": "远程 5G 串流",
           "bullet2Body": "通过 Tailscale 随时随地打开你的家庭图书馆。",
           "bullet3Title": "本地、iCloud 和 SMB 源",
-          "bullet3Body": "一个 Mac 图书馆，所有你已有的文件夹。",
+          "bullet3Body": "一个桌面书库，包含你已有的所有文件夹。",
           "bullet4Title": "可选 PIN",
           "bullet4Body": "在共享网络上锁定串流访问。",
-          "imageAlt": "BiblioFuse Mac 图书馆，分屏阅读器",
-          "footnote": "远程访问需要在 Mac 和 iOS 上都登录 iCloud 并连接 Tailscale。我们也建议本地 Wi-Fi 连接使用 Tailscale，并选择带有“(iCloud)”的设备名称。"
+          "imageAlt": "带分栏阅读器的 BiblioFuse 桌面书库",
+          "footnote": "远程访问需要主机和 iOS 设备登录 iCloud 并连接 Tailscale。为了在家和外出时都稳定使用，请在两台设备上都保持 Tailscale 开启。"
         }
       }
     },
@@ -807,7 +665,7 @@
     },
     "seo": {
       "homeTitle": "BiblioFuse Reader：私密电子书库、5G Mac 串流与文件工具",
-      "homeDesc": "阅读 EPUB、PDF、CBZ 和 CBR，通过 Wi‑Fi 或远程 5G 将 Mac 家庭书库串流到 iPhone，本机压缩合并，并私密查找 CBZ/照片重复项。",
+      "homeDesc": "BiblioFuse 是面向 iOS、macOS、Android、Windows PC 和网页的私密电子书与漫画阅读应用家族。离线阅读 EPUB、PDF、CBZ 和 CBR。通过 Wi‑Fi 或 5G 将 Mac 或 PC 书库串流到 iPhone。无广告，无跟踪。",
       "webTitle": "私密浏览器 EPUB、PDF、CBZ 压缩工具",
       "webDesc": "使用 BiblioFuse Web Tool 在浏览器中通过 WebAssembly 本地压缩、合并和转换 EPUB、PDF、CBZ、ZIP。无需上传，无需注册。",
       "aboutTitle": "关于 BiblioFuse 私密阅读与文件工具",
@@ -816,8 +674,8 @@
       "privacyDesc": "BiblioFuse 通过本地或平台自有存储，让阅读、压缩、合并、串流和重复扫描保持私密。无广告、无追踪。",
       "appFeatures": [
         "EPUB、PDF、CBZ、CBR、RAR、ZIP 和 TXT 阅读器",
-        "通过 Wi‑Fi 或 Tailscale 远程 5G 将 Mac 家庭书库串流到 iPhone/iPad",
-        "iOS 通过 Mac 串流访问 SMB，Android 原生 SMB",
+        "通过 Wi‑Fi 或 Tailscale 远程 5G，将 Mac 或 PC 家庭书库串流到 iPhone 和 iPad",
+        "iOS 通过桌面串流访问 SMB，Android 原生支持 SMB",
         "设备端压缩和合并，节省手机空间",
         "使用抽样页面感知哈希查找 CBZ、CBR、ZIP、RAR 重复项",
         "私密 WebAssembly 网页工具，本地浏览器处理",
@@ -1229,7 +1087,7 @@
       "whySeparate": {
         "eyebrow": "为什么是两个应用？",
         "title": "不同的书库需要不同的工具。",
-        "desc": "BiblioFuse Reader专为大型图像密集型漫画文件设计——从Mac串流、应用内压缩。GrepTag专为完全可存放在设备上的小型文本文件设计——grep、标记、任意方向同步。",
+        "desc": "BiblioFuse Reader 面向体积大的图片漫画文件：可从 Mac 或 PC 串流，并在应用内压缩。GrepTag 面向能完整放在设备上的小型文本文件：grep、标签、任意方向同步。",
         "col1": "BiblioFuse Reader",
         "col2": "GrepTag Reader",
         "row1Label": "适合",
@@ -1239,7 +1097,7 @@
         "row2col1": "每卷 50–300 MB",
         "row2col2": "每本不超过 5 MB",
         "row3Label": "存储设计",
-        "row3col1": "从Mac串流 · 应用内压缩",
+        "row3col1": "从 Mac 或 PC 串流 · 应用内压缩",
         "row3col2": "存储在设备 · 任意方向同步",
         "row4Label": "核心功能",
         "row4col1": "压缩、合并、串流、自动备份",
@@ -1273,7 +1131,7 @@
         },
         {
           "q": "GrepTag Reader与BiblioFuse Reader有什么区别？",
-          "a": "BiblioFuse Reader专为大型图像密集型漫画文件（CBZ、CBR、PDF）设计，支持从Mac串流、压缩档案和漫画/网络漫画阅读。GrepTag Reader专为EPUB和TXT文本书库设计——提供全文grep搜索、类型标签和任意方向的Wi-Fi同步。它们是独立应用，因为存储模式根本不同：漫画需要串流，小说完全可以存放在设备上。"
+          "a": "BiblioFuse Reader 面向大型图片漫画文件（CBZ、CBR、PDF）。它可从 Mac 或 PC 串流、压缩归档，并支持 webtoon/漫画阅读。GrepTag Reader 面向 EPUB 和 TXT 文本书库，提供全文 grep、类型标签和任意方向 Wi‑Fi 同步。"
         },
         {
           "q": "全文grep搜索是免费的吗？",

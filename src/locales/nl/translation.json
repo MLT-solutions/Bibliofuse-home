@@ -262,9 +262,9 @@
         "reads": "Leest"
       },
       "table": {
-        "eyebrow": "Lezers vergelijken",
-        "title": "Kies de lezer voor jouw platform.",
-        "desc": "Alle lezers delen dezelfde filosofie: verwerking op het apparaat, geen tracking. Verschillen gaan over platform en workflow.",
+        "eyebrow": "Apps vergelijken",
+        "title": "Kies de juiste BiblioFuse-app.",
+        "desc": "Begin bij je workflow: strips lezen, romans doorzoeken, documenten ontgrendelen, duplicaten opruimen of snel een browsertool gebruiken.",
         "feature": "Functie",
         "badges": {
           "universal": "Universele aankoop",
@@ -337,7 +337,7 @@
       },
       "toolsSection": {
         "eyebrow": "Losse tools",
-        "title": "Ook beschikbaar als lichte tools",
+        "title": "Gerichte tools voor losse klussen",
         "web": {
           "name": "BiblioFuse Web",
           "subtitle": "Gratis · Browser",
@@ -357,169 +357,27 @@
       },
       "faq": {
         "eyebrow": "FAQ",
-        "title": "Veelgestelde vragen",
+        "title": "Een BiblioFuse-tool kiezen",
         "items": [
           {
-            "q": "Dekt één aankoop alle platforms?",
-            "a": "Nee. iOS + Mac is één universele aankoop — één betaling dekt iPhone, iPad en Mac. De Android Reader, PC Reader en pc-tools worden elk afzonderlijk verkocht."
+            "q": "Met welke BiblioFuse-app moet ik beginnen?",
+            "a": "Gebruik BiblioFuse Reader voor strips, manga, PDF’s en grote gemengde bibliotheken. Gebruik GrepTag Reader voor EPUB/TXT-romans waar volledige tekstzoekactie en tags belangrijk zijn. Gebruik SmartDecrypt voor beveiligde bestanden, Comic Duplicate Scanner voor opruimen en BiblioFuse Web voor snel comprimeren of samenvoegen in de browser."
           },
           {
-            "q": "Hoe voeg ik boeken en mappen toe aan BiblioFuse op iPhone?",
-            "a": "BiblioFuse slaat bestanden op in zijn eigen iCloud-gesynchroniseerde map. Je kunt boeken toevoegen via de Bestanden-app (kopieer bestanden naar de BiblioFuse-map), via AirDrop, of via de ingebouwde Wi-Fi-overdracht — open een bibliotheeksessie vanuit Mac of pc en sleep bestanden vanuit een browser.",
-            "link": {
-              "label": "Stapsgewijze handleiding voor sideloaden",
-              "href": "/blog/sideload-comics-iphone-without-itunes/"
-            }
+            "q": "Worden mijn bestanden naar BiblioFuse-servers geüpload?",
+            "a": "Nee. De apps zijn gebouwd rond verwerking op je apparaat. Lezen, compressie, duplicaatscans en browsertools verwerken bestanden lokaal. Sync en streaming gebruiken je eigen iCloud, lokaal netwerk of Tailscale, geen BiblioFuse-account."
           },
           {
-            "q": "Hoe werkt streaming van Mac of pc naar iPhone?",
-            "a": "Je Mac of pc draait een lokale server en schrijft het verbindingsadres naar iCloud Drive. Je iPhone pikt dit automatisch op. Beide apparaten moeten Tailscale aan hebben (werkt thuis en op afstand). Als slechts één apparaat Tailscale aan heeft, mislukt de verbinding. Beide apparaten altijd aan houden geeft de meest consistente ervaring."
+            "q": "Kan iPhone lezen vanuit een Mac- of pc-bibliotheek?",
+            "a": "Ja. BiblioFuse Reader kan streamen en lezen vanuit een Mac- of pc-bibliotheek, zodat grote striparchieven op de desktop kunnen blijven terwijl je iPhone ze opent via Wi‑Fi thuis of 5G met Tailscale."
           },
           {
-            "q": "Wat heb ik nodig om streaming in te stellen?",
-            "a": "Zowel je Mac of pc als je iPhone moeten het volgende geconfigureerd hebben:",
-            "bullets": [
-              {
-                "text": "Hetzelfde iCloud-account op beide apparaten",
-                "sub": [
-                  "Op iOS en Mac: ga naar Instellingen → [jouw naam] → iCloud en zorg dat BiblioFuse is ingeschakeld",
-                  "Op pc: iCloud is niet ingebouwd — <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">download iCloud voor Windows</a> via de Microsoft Store"
-                ]
-              },
-              {
-                "text": "Tailscale moet AAN zijn op beide apparaten",
-                "sub": [
-                  "Beide aan — werkt thuis en op afstand via 5G",
-                  "Gemengd (één aan, één uit) — verbinding mislukt",
-                  "Tailscale exit-node hoeft niet ingeschakeld te zijn",
-                  "iCloud- en Tailscale-accounts kunnen verschillende e-mailadressen gebruiken"
-                ]
-              },
-              {
-                "text": "Sta netwerktoegang toe bij de eerste keer opstarten van de app"
-              }
-            ]
+            "q": "Zijn de lichte tools los van BiblioFuse Reader?",
+            "a": "Ja. De webtool en Windows-resizers zijn voor gerichte compressie-, conversie- of samenvoegtaken. Gebruik ze wanneer je niet de volledige lezer en bibliotheekmanager nodig hebt."
           },
           {
-            "q": "Streaming is correct ingesteld maar werkt nog steeds niet — wat kan ik proberen?",
-            "a": "Een verouderde endpoint-cache is de meest voorkomende oorzaak. Een of meer <code>stream_endpoint.json</code>-bestanden in iCloud hebben een verouderde tijdstempel, waardoor BiblioFuse de host niet kan vinden.",
-            "bullets": [
-              {
-                "text": "Verwijder de verouderde bestanden uit iCloud",
-                "sub": [
-                  "Op iPhone: open de Bestanden-app → iCloud Drive → BiblioFuse (root) en BiblioFuse → Documenten.",
-                  "Op Mac: open Finder → iCloud Drive → BiblioFuse (root) en BiblioFuse → Documenten.",
-                  "Verwijder op beide locaties elk bestand met de naam <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, etc.",
-                  "Op pc: iCloud toont mogelijk alleen de cloudversie (alleen online) van deze bestanden, waardoor verwijdering via pc mogelijk niet betrouwbaar werkt — gebruik iPhone of Mac."
-                ]
-              },
-              {
-                "text": "Open na het verwijderen BiblioFuse opnieuw op de host (Mac of pc) en op de iPhone",
-                "sub": [
-                  "De host-app genereert een nieuw endpoint-bestand met een actuele tijdstempel.",
-                  "Ga op iPhone naar de lijst met streamingbronnen — je zou de naam van de pc of Mac met een groene stip rechts moeten zien, wat bevestigt dat die is gedetecteerd.",
-                  "Als de stip grijs is, wacht dan nog een paar seconden of sluit BiblioFuse geforceerd af en open het opnieuw op de host."
-                ]
-              }
-            ]
-          },
-          {
-            "q": "Waarom vereist streaming Tailscale? Kan het niet gewoon over thuis-wifi werken?",
-            "a": "Tailscale is vereist vanwege de manier waarop iOS lokale netwerkverbindingen afhandelt. Dit is wat er is gebeurd:",
-            "bullets": [
-              {
-                "text": "Eerdere versies werkten op thuis-wifi zonder Tailscale",
-                "sub": [
-                  "De app gebruikte Bonjour (Apple's lokale ontdekking) via HTTP — dit werkte prima",
-                  "Zodra remote 5G-streaming werd toegevoegd, begon iOS App Transport Security HTTP naar rauwe IP-adressen te blokkeren, waardoor het LAN-pad kapot ging"
-                ]
-              },
-              {
-                "text": "Tailscale werkt op thuis-wifi net zo goed als op afstand",
-                "sub": [
-                  "Wanneer beide apparaten op hetzelfde netwerk zitten, stuurt Tailscale verkeer direct door — er is geen snelheidsnadeel ten opzichte van gewone wifi",
-                  "Tailscale altijd aan houden thuis en onderweg geeft één consistente setup zonder van modus te wisselen"
-                ]
-              },
-              {
-                "text": "Een LAN-modus zonder Tailscale staat niet in de huidige roadmap",
-                "sub": [
-                  "Zelfs als je Tailscale uitschakelt, kan de app het eerder opgeslagen Tailscale-adres proberen, wat een verbindingsfout veroorzaakt",
-                  "Een betrouwbare automatische LAN-fallback bouwen is complex en momenteel niet gepland",
-                  "De eenvoudigste setup: houd Tailscale op beide apparaten altijd aan. Het regelt thuis-wifi en 5G-remote zonder extra configuratie"
-                ]
-              }
-            ]
-          },
-          {
-            "q": "Waarom kan Android geen boeken ontvangen van Mac of pc?",
-            "a": "De Android-app gebruikt een andere codebase zonder iCloud-integratie, wat de basis is van het streaming-handshake-mechanisme. De beste workflow voor Android is bestanden synchroniseren naar je telefoon met Syncthing of een vergelijkbare tool en die map vervolgens als bibliotheekbron toevoegen in de app."
-          },
-          {
-            "q": "Waar worden leesvoortgang, bladwijzers, beoordelingen en labels opgeslagen?",
-            "a": "Dit hangt af van waar het boekbestand zich bevindt:",
-            "bullets": [
-              {
-                "text": "Lokale opslag — alleen opgeslagen op dat apparaat, geen synchronisatie tussen apparaten"
-              },
-              {
-                "text": "iCloud-opslag — opgeslagen in iCloud, synchroniseert automatisch op alle iOS-, Mac- en pc-apparaten"
-              },
-              {
-                "text": "SMB / netwerkshare (Mac- of pc-streaming) — opgeslagen op het hostapparaat",
-                "sub": [
-                  "iOS leest een Mac-stream: voortgang wordt opgeslagen op de Mac",
-                  "iOS leest een pc-stream: voortgang wordt opgeslagen op de pc",
-                  "PC ↔ Mac: onafhankelijk opgeslagen, gegevens worden niet gedeeld",
-                  "Als je zowel Mac als pc als streaming-host gebruikt, worden je leesgegevens gesplitst. Gebruik één host voor consistentie."
-                ]
-              }
-            ]
-          },
-          {
-            "q": "Wat is het verschil tussen de PC Reader en de pc EPUB / CBZ-tools?",
-            "a": "De PC Reader is een volledige leesapp — hij opent boeken, beheert je bibliotheek, comprimeert bestanden en streamt naar iPhone. De pc EPUB- en CBZ-tools zijn lichtere, goedkopere apps die zich uitsluitend richten op comprimeren en samenvoegen, zonder lezer."
-          },
-          {
-            "q": "Hoe krijg ik betere tekst-naar-spraak-stemmen in BiblioFuse?",
-            "a": "De hogere kwaliteitstemmen zijn ingebouwd in je apparaat maar moeten apart worden gedownload — BiblioFuse detecteert ze automatisch zodra ze zijn geïnstalleerd.",
-            "bullets": [
-              {
-                "text": "iPhone / iPad",
-                "sub": [
-                  "Ga naar Instellingen → Toegankelijkheid → Gesproken inhoud → Stemmen",
-                  "Kies je taal en download een Verbeterde of Premium stem",
-                  "Premium-stemmen op iOS 16+ hebben neurale kwaliteit (Siri-niveau)"
-                ]
-              },
-              {
-                "text": "Mac",
-                "sub": [
-                  "Ga naar Systeeminstellingen → Toegankelijkheid → Gesproken inhoud → Systeemtaal → Stemmen beheren",
-                  "Download een Verbeterde of Premium stem voor je taal"
-                ]
-              },
-              {
-                "text": "Windows 10 / Windows 11",
-                "sub": [
-                  "Ga naar Instellingen → Tijd en taal → Taal en regio",
-                  "Voeg je leestaal toe of open Taalopties voor een geïnstalleerde taal",
-                  "Installeer onder Taalmogelijkheden de optie Tekst naar spraak",
-                  "Herstart BiblioFuse en start een nieuwe TTS-sessie"
-                ]
-              },
-              {
-                "text": "Windows 11 Natuurlijke stemmen (optioneel)",
-                "sub": [
-                  "Ga naar Instellingen → Toegankelijkheid → Verteller",
-                  "Kies onder Natuurlijke stemmen toevoegen de gewenste stem",
-                  "Let op: Windows maakt deze stemmen mogelijk alleen beschikbaar voor Verteller, niet voor alle apps"
-                ]
-              },
-              {
-                "text": "Geen app-update vereist — BiblioFuse detecteert nieuw geïnstalleerde stemmen wanneer ze beschikbaar zijn via het Windows- of Apple-tekst-naar-spraaksysteem"
-              }
-            ]
+            "q": "Zijn de apps gratis?",
+            "a": "De meeste BiblioFuse-apps zijn gratis te proberen of hebben gratis limieten, met optionele betaalde upgrades voor zwaarder gebruik. De storepagina’s tonen de actuele prijs per platform."
           }
         ]
       }
@@ -536,7 +394,7 @@
           "desc": "Native lezer en bibliotheekbeheerder voor persoonlijke e-book- en stripcollecties.",
           "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP en TXT",
           "bullet2": "Tags, beoordelingen, voortgang en bladwijzers",
-          "bullet3": "iCloud-synchronisatie en live streaming vanaf je Mac-bibliotheek",
+          "bullet3": "iCloud-sync en live streaming vanaf Mac of pc",
           "cta": "Download in App Store",
           "secondary": "Google Play"
         },
@@ -590,7 +448,7 @@
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
       "title": "Gebouwd voor lange leessessies.",
-      "desc": "Een gefocuste lezer met de bibliotheektools die je echt gebruikt: formaten, mappen, tags, beoordelingen, voortgang en bladwijzers. Dezelfde bibliotheek op iPhone, iPad en Mac, gesynchroniseerd via iCloud.",
+      "desc": "Een gefocuste lezer met de bibliotheektools die je echt gebruikt: formaten, mappen, tags, beoordelingen, voortgang en bladwijzers. Bewaar boeken op iPhone, iPad, Mac of pc, en stream een desktopbibliotheek naar iPhone wanneer je meer opslag nodig hebt.",
       "features": {
         "library": {
           "eyebrow": "Bibliotheek",
@@ -617,20 +475,20 @@
           "imageAlt": "BiblioFuse leesweergave met TTS, auto-scroll en peek zoom"
         },
         "streaming": {
-          "eyebrow": "Mac streamt naar mobiel",
+          "eyebrow": "Desktop streamt naar mobiel",
           "title": "Bibliotheekhub. Stream naar je iPhone.",
           "badge": "Geen server van derden · Geen abonnement",
-          "desc": "Op Mac wordt BiblioFuse een desktopbibliotheekhub: beheer lokale mappen, iCloud-mappen en SMB-netwerkshares in een split-view bibliotheek/lezer-interface. Stream boeken rechtstreeks naar BiblioFuse op iPhone en iPad via lokale Wi-Fi thuis, of op afstand via 5G als je onderweg bent.",
+          "desc": "Op Mac en pc wordt BiblioFuse een desktopbibliotheekhub voor grote collecties. Beheer mappen op de host en stream boeken rechtstreeks naar BiblioFuse op iPhone en iPad via Wi‑Fi thuis of extern via 5G met Tailscale.",
           "bullet1Title": "Lokale Wi-Fi-streaming",
-          "bullet1Body": "direct bladeren vanaf elke Mac-bron.",
+          "bullet1Body": "direct bladeren vanaf een Mac- of pc-bron.",
           "bullet2Title": "Externe 5G-streaming",
           "bullet2Body": "open je thuisbibliotheek overal met Tailscale.",
           "bullet3Title": "Lokale, iCloud- en SMB-bronnen",
-          "bullet3Body": "één Mac-bibliotheek, elke map die je al hebt.",
+          "bullet3Body": "één desktopbibliotheek, elke map die je al bewaart.",
           "bullet4Title": "Optionele pincode",
           "bullet4Body": "vergrendel streamingtoegang op gedeelde netwerken.",
-          "imageAlt": "BiblioFuse Mac-bibliotheek met split-view lezer",
-          "footnote": "Toegang op afstand vereist dat iCloud is aangemeld en Tailscale is verbonden op zowel Mac als iOS. We raden ook aan Tailscale te gebruiken voor lokale Wi-Fi-verbindingen door de apparaatnaam met \"(iCloud)\" te kiezen."
+          "imageAlt": "BiblioFuse desktopbibliotheek met split-view lezer",
+          "footnote": "Voor externe toegang moeten host en iOS-apparaat zijn aangemeld bij iCloud en verbonden zijn via Tailscale. Houd Tailscale op beide apparaten aan voor de meest consistente thuis- en externe setup."
         }
       }
     },
@@ -807,7 +665,7 @@
     },
     "seo": {
       "homeTitle": "BiblioFuse Reader: privé e-bookbeheer, 5G Mac-streaming en tools",
-      "homeDesc": "Lees EPUB, PDF, CBZ en CBR, stream je Mac-thuisbibliotheek naar iPhone via Wi‑Fi of remote 5G, comprimeer en voeg lokaal samen, en vind CBZ/foto-duplicaten privé.",
+      "homeDesc": "BiblioFuse is een privéfamilie van ebook- en striplezers voor iOS, macOS, Android, Windows-pc en web. Lees EPUB, PDF, CBZ en CBR offline. Stream een Mac- of pc-bibliotheek naar iPhone via Wi‑Fi of 5G. Geen advertenties, geen tracking.",
       "webTitle": "Privé browsertool voor EPUB-, PDF- en CBZ-compressie",
       "webDesc": "Gebruik BiblioFuse Web Tool om EPUB, PDF, CBZ en ZIP lokaal in je browser te comprimeren, samen te voegen en converteren met WebAssembly. Geen upload of account.",
       "aboutTitle": "Over BiblioFuse privé lees- en bestandstools",
@@ -816,8 +674,8 @@
       "privacyDesc": "BiblioFuse houdt lezen, compressie, samenvoegen, streaming en duplicaatscans privé met lokale of platformopslag. Geen advertenties en geen tracking.",
       "appFeatures": [
         "EPUB, PDF, CBZ, CBR, RAR, ZIP en TXT reader",
-        "Mac-thuisbibliotheek streamen naar iPhone/iPad via Wi‑Fi of remote 5G met Tailscale",
-        "SMB via Mac-streaming op iOS en native SMB op Android",
+        "Mac- of pc-thuisbibliotheek streamen naar iPhone en iPad via Wi‑Fi of externe 5G met Tailscale",
+        "SMB-toegang via desktopstreaming op iOS en native SMB op Android",
         "Compressie en samenvoegen op apparaat om opslag te besparen",
         "CBZ, CBR, ZIP en RAR duplicaatscanner met perceptuele hash van voorbeeldpagina’s",
         "Privé WebAssembly webtool met lokale browserverwerking",
@@ -1229,7 +1087,7 @@
       "whySeparate": {
         "eyebrow": "Waarom twee apps?",
         "title": "Verschillende bibliotheken hebben verschillende tools nodig.",
-        "desc": "BiblioFuse Reader is gebouwd voor grote afbeeldingsrijke comicbestanden — streamen van Mac, comprimeren in de app. GrepTag is gebouwd voor kleine tekstbestanden die volledig op het apparaat passen — grep, taggen, sync in elke richting.",
+        "desc": "BiblioFuse Reader is gemaakt voor grote beeldrijke stripbestanden: stream vanaf Mac of pc en comprimeer in de app. GrepTag is gemaakt voor kleine tekstbestanden die volledig op het apparaat passen: grep, tags en synchronisatie in elke richting.",
         "col1": "BiblioFuse Reader",
         "col2": "GrepTag Reader",
         "row1Label": "Beste voor",
@@ -1239,7 +1097,7 @@
         "row2col1": "50–300 MB per volume",
         "row2col2": "Minder dan 5 MB per stuk",
         "row3Label": "Opslag",
-        "row3col1": "Streamen van Mac · comprimeren in app",
+        "row3col1": "Stream vanaf Mac of pc · comprimeer in de app",
         "row3col2": "Opslaan op apparaat · sync in elke richting",
         "row4Label": "Kernfuncties",
         "row4col1": "Comprimeren, samenvoegen, streamen, automatisch back-up",
@@ -1273,7 +1131,7 @@
         },
         {
           "q": "Wat is het verschil tussen GrepTag Reader en BiblioFuse Reader?",
-          "a": "BiblioFuse Reader is gebouwd voor grote, afbeeldingsrijke comicbestanden (CBZ, CBR, PDF). Het streamt van Mac, comprimeert archieven en verwerkt webtoon/manga-lezen. GrepTag Reader is gebouwd voor EPUB- en TXT-tekstbibliotheken — het biedt volledige tekst grep-zoekfunctie, genretags en Wi-Fi-synchronisatie in elke richting. Het zijn aparte apps omdat het opslagmodel fundamenteel verschilt: comics hebben streaming nodig, romans passen volledig op het apparaat."
+          "a": "BiblioFuse Reader is gemaakt voor grote beeldrijke stripbestanden (CBZ, CBR, PDF). Het streamt vanaf Mac of pc, comprimeert archieven en ondersteunt webtoon/manga-lezen. GrepTag Reader is gemaakt voor EPUB- en TXT-bibliotheken met volledige tekstzoekactie, tags en Wi‑Fi-sync in elke richting."
         },
         {
           "q": "Is de volledige tekst grep-zoekopdracht gratis?",

@@ -60,14 +60,14 @@ Freemium with subscription + lifetime option. 1-week free trial on Monthly and A
 | Peek Zoom | Fixed 2× | 1.5×–6× |
 | Batch & Merge | 3 / day | Unlimited |
 | Auto Backup | — | 5 versions |
-| Stream from Mac | — | Unlimited |
+| Stream from Mac or PC | — | Unlimited |
 
 ### Key Features
 
 - Formats: EPUB, PDF, CBZ, CBR, RAR, ZIP, TXT
 - Library with folders, tags, ratings, reading progress, bookmarks
 - iCloud sync (iOS/macOS) and Google Drive sync (Android)
-- Wi-Fi Transfer — stream Mac library directly to iPhone without copying files
+- Wi-Fi Transfer — stream Mac or PC library directly to iPhone without copying files
 - Continuous vertical scroll (webtoon/manga mode)
 - No ads, no tracking, fully on-device
 

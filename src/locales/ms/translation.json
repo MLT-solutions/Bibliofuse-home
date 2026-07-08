@@ -262,9 +262,9 @@
         "reads": "Membaca"
       },
       "table": {
-        "eyebrow": "Bandingkan pembaca",
-        "title": "Pilih pembaca untuk platform anda.",
-        "desc": "Semua pembaca berkongsi falsafah yang sama: pemprosesan pada peranti, tanpa penjejakan. Perbezaannya ialah platform dan aliran kerja.",
+        "eyebrow": "Bandingkan aplikasi",
+        "title": "Pilih aplikasi BiblioFuse yang sesuai.",
+        "desc": "Mula dengan aliran kerja: baca komik, cari novel, buka dokumen, bersihkan pendua, atau gunakan alat pelayar pantas.",
         "feature": "Ciri",
         "badges": {
           "universal": "Pembelian universal",
@@ -337,7 +337,7 @@
       },
       "toolsSection": {
         "eyebrow": "Alat kendiri",
-        "title": "Juga tersedia sebagai alat ringan",
+        "title": "Alat fokus untuk kerja sekali guna",
         "web": {
           "name": "BiblioFuse Web",
           "subtitle": "Percuma · Pelayar",
@@ -356,170 +356,28 @@
         }
       },
       "faq": {
-        "eyebrow": "Soalan Lazim",
-        "title": "Soalan lazim",
+        "eyebrow": "FAQ",
+        "title": "Memilih alat BiblioFuse",
         "items": [
           {
-            "q": "Adakah satu pembelian meliputi semua platform?",
-            "a": "Tidak. iOS + Mac adalah pembelian universal tunggal — satu bayaran meliputi iPhone, iPad, dan Mac. Android Reader, PC Reader, dan alat PC dijual secara berasingan."
+            "q": "Aplikasi BiblioFuse mana patut saya mula?",
+            "a": "Gunakan BiblioFuse Reader untuk komik, manga, PDF, dan pustaka campuran besar. Gunakan GrepTag Reader untuk novel EPUB/TXT apabila carian teks penuh dan tag penting. Gunakan SmartDecrypt untuk fail dilindungi, Comic Duplicate Scanner untuk pembersihan, dan BiblioFuse Web untuk mampatan atau gabungan pantas dalam pelayar."
           },
           {
-            "q": "Bagaimana cara menambah buku dan folder ke BiblioFuse di iPhone?",
-            "a": "BiblioFuse menyimpan fail dalam foldernya sendiri yang disegerakkan dengan iCloud. Anda boleh menambah buku melalui apl Fail (salin fail ke folder BiblioFuse), melalui AirDrop, atau melalui ciri Pemindahan Wi-Fi terbina dalam — buka sesi perpustakaan dari Mac atau PC dan seret fail dari mana-mana pelayar.",
-            "link": {
-              "label": "Panduan sideloading langkah demi langkah",
-              "href": "/blog/sideload-comics-iphone-without-itunes/"
-            }
+            "q": "Adakah fail saya dimuat naik ke pelayan BiblioFuse?",
+            "a": "Tidak. Aplikasi dibina sekitar pemprosesan pada peranti. Pembacaan, mampatan, imbasan pendua, dan alat web memproses fail secara setempat. Penyegerakan dan strim menggunakan iCloud, rangkaian tempatan, atau Tailscale anda sendiri, bukan akaun BiblioFuse."
           },
           {
-            "q": "Bagaimana penstriman dari Mac atau PC ke iPhone berfungsi?",
-            "a": "Mac atau PC anda menjalankan pelayan tempatan dan menulis alamat sambungan ke iCloud Drive. iPhone anda mengesannya secara automatik. Kedua-dua peranti mesti menghidupkan Tailscale (berfungsi di rumah dan dari jauh). Jika hanya satu peranti mempunyai Tailscale dihidupkan, sambungan akan gagal. Memastikan kedua-duanya sentiasa dihidupkan memberikan pengalaman yang paling konsisten."
+            "q": "Bolehkah iPhone membaca daripada pustaka Mac atau PC?",
+            "a": "Ya. BiblioFuse Reader boleh menstrim dan membaca daripada pustaka Mac atau PC, jadi arkib komik besar boleh kekal pada desktop sementara iPhone membukanya melalui Wi‑Fi rumah atau 5G dengan Tailscale."
           },
           {
-            "q": "Apa yang diperlukan untuk menyediakan penstriman?",
-            "a": "Mac atau PC dan iPhone anda mesti mempunyai perkara berikut dikonfigurasikan:",
-            "bullets": [
-              {
-                "text": "Akaun iCloud yang sama pada kedua-dua peranti",
-                "sub": [
-                  "Pada iOS dan Mac: pergi ke Tetapan → [nama anda] → iCloud dan pastikan BiblioFuse didayakan",
-                  "Pada PC: iCloud tidak terbina dalam — <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">muat turun iCloud untuk Windows</a> dari Microsoft Store"
-                ]
-              },
-              {
-                "text": "Tailscale mesti DIHIDUPKAN pada kedua-dua peranti",
-                "sub": [
-                  "Kedua-duanya hidup — berfungsi di rumah dan dari jauh melalui 5G",
-                  "Campuran (satu hidup, satu mati) — sambungan akan gagal",
-                  "Nod keluar Tailscale tidak perlu didayakan",
-                  "Akaun iCloud dan Tailscale boleh menggunakan alamat e-mel yang berbeza"
-                ]
-              },
-              {
-                "text": "Benarkan akses rangkaian apabila apl dilancarkan buat kali pertama"
-              }
-            ]
+            "q": "Adakah alat ringan berasingan daripada BiblioFuse Reader?",
+            "a": "Ya. Alat web dan resizer Windows adalah untuk kerja mampatan, penukaran, atau gabungan yang fokus. Gunakan apabila anda tidak memerlukan pembaca dan pengurus pustaka penuh."
           },
           {
-            "q": "Penstriman sudah disediakan dengan betul tetapi masih tidak berfungsi — apa yang perlu dicuba?",
-            "a": "Cache titik akhir yang lapuk adalah punca paling biasa. Satu atau lebih fail <code>stream_endpoint.json</code> yang disimpan dalam iCloud mempunyai cap masa yang sudah lama, yang menghalang BiblioFuse daripada menemui hos.",
-            "bullets": [
-              {
-                "text": "Padam fail lapuk daripada iCloud",
-                "sub": [
-                  "Pada iPhone: buka app Fail → iCloud Drive → BiblioFuse (root) dan BiblioFuse → Dokumen.",
-                  "Pada Mac: buka Finder → iCloud Drive → BiblioFuse (root) dan BiblioFuse → Dokumen.",
-                  "Di kedua-dua lokasi, padamkan mana-mana fail bernama <code>stream_endpoint.json</code>, <code>stream_endpoint 1.json</code>, <code>stream_endpoint 2.json</code>, dsb.",
-                  "Pada PC: iCloud mungkin hanya menunjukkan versi awan (dalam talian sahaja) fail-fail ini, jadi pemadaman dari PC mungkin tidak boleh dipercayai — gunakan iPhone atau Mac."
-                ]
-              },
-              {
-                "text": "Selepas memadam, buka semula BiblioFuse pada hos (Mac atau PC) dan iPhone",
-                "sub": [
-                  "App hos akan menjana semula fail titik akhir baharu dengan cap masa semasa.",
-                  "Pada iPhone, pergi ke senarai sumber penstriman — anda sepatutnya melihat nama PC atau Mac dengan titik hijau di sebelah kanan, mengesahkan ia telah dikesan.",
-                  "Jika titik berwarna kelabu, tunggu beberapa saat lagi atau tutup paksa dan buka semula BiblioFuse pada hos."
-                ]
-              }
-            ]
-          },
-          {
-            "q": "Mengapa penstriman memerlukan Tailscale? Tidakkah boleh menggunakan Wi-Fi rumah sahaja?",
-            "a": "Tailscale diperlukan kerana cara iOS mengendalikan sambungan rangkaian tempatan. Berikut adalah apa yang berlaku:",
-            "bullets": [
-              {
-                "text": "Versi awal berfungsi pada Wi-Fi rumah tanpa Tailscale",
-                "sub": [
-                  "Apl menggunakan Bonjour (penemuan tempatan Apple) melalui HTTP — ini berfungsi dengan baik",
-                  "Setelah penstriman jauh 5G ditambah, iOS App Transport Security mula menyekat HTTP ke alamat IP mentah, yang merosakkan laluan LAN sahaja"
-                ]
-              },
-              {
-                "text": "Tailscale berfungsi pada Wi-Fi rumah sama baiknya dengan jauh",
-                "sub": [
-                  "Apabila kedua-dua peranti berada pada rangkaian yang sama, Tailscale menghalakan trafik secara terus — tiada penalti kelajuan berbanding Wi-Fi biasa",
-                  "Memastikan Tailscale sentiasa dihidupkan di rumah dan semasa keluar memberikan satu persediaan yang konsisten tanpa penukaran mod"
-                ]
-              },
-              {
-                "text": "Mod LAN tanpa Tailscale belum ada dalam pelan pembangunan semasa",
-                "sub": [
-                  "Walaupun mematikan Tailscale, apl mungkin masih mencuba alamat Tailscale yang disimpan sebelumnya, menyebabkan kegagalan jabat tangan",
-                  "Membina sandaran LAN automatik yang boleh dipercayai adalah kompleks dan tidak dirancang buat masa ini",
-                  "Persediaan paling mudah: sentiasa hidupkan Tailscale pada kedua-dua peranti. Ia mengendalikan Wi-Fi rumah dan 5G jauh tanpa konfigurasi tambahan"
-                ]
-              }
-            ]
-          },
-          {
-            "q": "Mengapa Android tidak dapat menerima buku dari Mac atau PC?",
-            "a": "Apl Android menggunakan asas kod yang berbeza tanpa integrasi iCloud, yang merupakan asas mekanisme jabat tangan penstriman. Aliran kerja terbaik untuk Android ialah menyegerakkan fail ke telefon menggunakan Syncthing atau alat yang serupa, kemudian menambah folder tersebut sebagai sumber perpustakaan dalam apl."
-          },
-          {
-            "q": "Di mana kemajuan membaca, penanda buku, penilaian, dan tag disimpan?",
-            "a": "Bergantung pada di mana fail buku disimpan:",
-            "bullets": [
-              {
-                "text": "Storan tempatan — disimpan pada peranti itu sahaja, tiada penyegerakan merentas peranti"
-              },
-              {
-                "text": "Storan iCloud — disimpan ke iCloud, disegerakkan secara automatik merentas semua peranti iOS, Mac, dan PC"
-              },
-              {
-                "text": "SMB / perkongsian rangkaian (penstriman Mac atau PC) — disimpan pada peranti hos",
-                "sub": [
-                  "iOS membaca strim Mac: kemajuan disimpan pada Mac",
-                  "iOS membaca strim PC: kemajuan disimpan pada PC",
-                  "PC ↔ Mac: disimpan secara bebas, data tidak dikongsi",
-                  "Jika anda menggunakan Mac dan PC sebagai hos penstriman, data bacaan anda akan terpisah. Gunakan satu hos sahaja untuk konsistensi."
-                ]
-              }
-            ]
-          },
-          {
-            "q": "Apakah perbezaan antara PC Reader dan alat PC EPUB / CBZ?",
-            "a": "PC Reader ialah apl membaca penuh — ia membuka buku, mengurus perpustakaan anda, memampatkan fail, dan membuat penstriman ke iPhone. Alat PC EPUB dan CBZ ialah apl yang lebih ringan dan murah yang hanya berfokus pada pemampatan dan penggabungan, tanpa pembaca."
-          },
-          {
-            "q": "Bagaimana cara mendapatkan suara teks-ke-pertuturan yang lebih baik dalam BiblioFuse?",
-            "a": "Suara berkualiti tinggi sudah tertanam dalam peranti anda tetapi perlu dimuat turun secara berasingan — BiblioFuse akan mengesannya secara automatik setelah dipasang.",
-            "bullets": [
-              {
-                "text": "iPhone / iPad",
-                "sub": [
-                  "Pergi ke Tetapan → Kebolehcapaian → Kandungan Pertuturan → Suara",
-                  "Pilih bahasa anda, kemudian muat turun suara Dipertingkat atau Premium",
-                  "Suara Premium pada iOS 16+ mempunyai kualiti neural (tahap Siri)"
-                ]
-              },
-              {
-                "text": "Mac",
-                "sub": [
-                  "Pergi ke Tetapan Sistem → Kebolehcapaian → Kandungan Pertuturan → Suara Sistem → Urus Suara",
-                  "Muat turun sebarang suara Dipertingkat atau Premium untuk bahasa anda"
-                ]
-              },
-              {
-                "text": "Windows 10 / Windows 11",
-                "sub": [
-                  "Pergi ke Tetapan → Masa & bahasa → Bahasa & rantau",
-                  "Tambah bahasa bacaan anda, atau buka Pilihan bahasa untuk bahasa yang telah dipasang",
-                  "Di bawah Ciri bahasa, pasang Teks-ke-pertuturan",
-                  "Mulakan semula BiblioFuse, kemudian mulakan sesi TTS baharu"
-                ]
-              },
-              {
-                "text": "Suara Semula Jadi Windows 11 (pilihan)",
-                "sub": [
-                  "Pergi ke Tetapan → Kebolehcapaian → Pencerita",
-                  "Di bawah Tambah suara semula jadi, muat turun suara yang dikehendaki",
-                  "Nota: Windows mungkin hanya mendedahkan suara ini kepada Pencerita sahaja, bukan semua apl"
-                ]
-              },
-              {
-                "text": "Tiada kemas kini aplikasi diperlukan — BiblioFuse mengesan suara yang baru dipasang apabila ia didedahkan melalui sistem teks-ke-pertuturan Windows atau Apple"
-              }
-            ]
+            "q": "Adakah aplikasi percuma?",
+            "a": "Kebanyakan aplikasi BiblioFuse boleh dicuba percuma atau mempunyai had percuma, dengan naik taraf berbayar pilihan untuk penggunaan lebih berat. Halaman kedai menunjukkan harga semasa bagi setiap platform."
           }
         ]
       }
@@ -536,7 +394,7 @@
           "desc": "Pembaca dan pengurus perpustakaan asli untuk koleksi e-book dan komik peribadi.",
           "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP & TXT",
           "bullet2": "Tag, penilaian, kemajuan & penanda buku",
-          "bullet3": "Penyegerakan iCloud & penstriman langsung dari perpustakaan Mac anda",
+          "bullet3": "Penyegerakan iCloud & strim langsung dari Mac atau PC",
           "cta": "Dapatkan di App Store",
           "secondary": "Google Play"
         },
@@ -590,7 +448,7 @@
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
       "title": "Dibina untuk sesi membaca yang panjang.",
-      "desc": "Pembaca fokus dengan alat perpustakaan yang benar-benar anda guna: format, folder, tag, penilaian, kemajuan, dan penanda buku. Perpustakaan yang sama pada iPhone, iPad dan Mac, diselaraskan melalui iCloud.",
+      "desc": "Pembaca yang fokus dengan alat perpustakaan yang benar-benar anda gunakan: format, folder, tag, rating, kemajuan, dan penanda buku. Simpan buku pada iPhone, iPad, Mac, atau PC, dan strim pustaka desktop ke iPhone apabila memerlukan lebih ruang.",
       "features": {
         "library": {
           "eyebrow": "Perpustakaan",
@@ -617,20 +475,20 @@
           "imageAlt": "Paparan bacaan BiblioFuse dengan TTS, tatal auto dan zum pintas"
         },
         "streaming": {
-          "eyebrow": "Mac strim ke mudah alih",
-          "title": "Hab perpustakaan. Strim ke iPhone anda.",
+          "eyebrow": "Desktop strim ke mudah alih",
+          "title": "Hab perpustakaan. Strim ke iPhone.",
           "badge": "Tiada pelayan pihak ketiga · Tiada langganan",
-          "desc": "Pada Mac, BiblioFuse menjadi hab perpustakaan desktop: urus folder tempatan, folder iCloud dan perkongsian rangkaian SMB dalam antara muka perpustakaan/pembaca paparan berpisah. Kemudian strim buku terus ke BiblioFuse pada iPhone dan iPad melalui Wi-Fi tempatan di rumah, atau jarak jauh melalui 5G apabila anda di luar.",
+          "desc": "Pada Mac dan PC, BiblioFuse menjadi hab perpustakaan desktop untuk koleksi besar. Urus folder pada peranti hos, kemudian strim buku terus ke BiblioFuse pada iPhone dan iPad melalui Wi‑Fi rumah atau jarak jauh melalui 5G dengan Tailscale.",
           "bullet1Title": "Strim Wi-Fi tempatan",
-          "bullet1Body": "layari segera dari mana-mana sumber Mac.",
+          "bullet1Body": "semak imbas segera daripada sumber Mac atau PC.",
           "bullet2Title": "Strim 5G jarak jauh",
           "bullet2Body": "buka perpustakaan rumah anda dari mana-mana dengan Tailscale.",
           "bullet3Title": "Sumber tempatan, iCloud & SMB",
-          "bullet3Body": "satu perpustakaan Mac, semua folder yang anda sudah ada.",
+          "bullet3Body": "satu pustaka desktop, semua folder yang anda sudah simpan.",
           "bullet4Title": "PIN pilihan",
           "bullet4Body": "kunci akses strim pada rangkaian yang dikongsi.",
-          "imageAlt": "Perpustakaan Mac BiblioFuse dengan pembaca paparan berpisah",
-          "footnote": "Akses jarak jauh memerlukan iCloud didaftar masuk dan Tailscale disambungkan pada kedua-dua Mac dan iOS. Kami juga mengesyorkan penggunaan Tailscale untuk sambungan Wi-Fi tempatan dengan memilih nama peranti yang mengandungi \"(iCloud)\"."
+          "imageAlt": "Pustaka desktop BiblioFuse dengan pembaca split-view",
+          "footnote": "Akses jauh memerlukan hos dan peranti iOS log masuk ke iCloud dan bersambung melalui Tailscale. Untuk tetapan rumah dan jauh yang paling konsisten, biarkan Tailscale dihidupkan pada kedua-dua peranti."
         }
       }
     },
@@ -807,7 +665,7 @@
     },
     "seo": {
       "homeTitle": "BiblioFuse Reader: pustaka peribadi, penstriman Mac 5G & alat fail",
-      "homeDesc": "Baca EPUB, PDF, CBZ dan CBR, strim pustaka Mac rumah ke iPhone melalui Wi‑Fi atau 5G jauh, mampat dan gabung pada peranti, serta cari pendua CBZ/foto secara peribadi.",
+      "homeDesc": "BiblioFuse ialah keluarga pembaca ebook dan komik peribadi untuk iOS, macOS, Android, Windows PC, dan web. Baca EPUB, PDF, CBZ, CBR secara luar talian. Strim pustaka Mac atau PC ke iPhone melalui Wi‑Fi atau 5G. Tiada iklan, tiada penjejakan.",
       "webTitle": "Alat pelayar peribadi untuk mampat EPUB, PDF dan CBZ",
       "webDesc": "BiblioFuse Web Tool memampat, menggabung dan menukar EPUB, PDF, CBZ dan ZIP secara setempat dalam pelayar dengan WebAssembly. Tanpa muat naik dan tanpa daftar.",
       "aboutTitle": "Tentang alat bacaan dan fail peribadi BiblioFuse",
@@ -816,8 +674,8 @@
       "privacyDesc": "BiblioFuse mengekalkan bacaan, pemampatan, penggabungan, penstriman dan imbasan pendua secara peribadi dengan storan setempat atau platform. Tiada iklan dan tiada penjejakan.",
       "appFeatures": [
         "Pembaca EPUB, PDF, CBZ, CBR, RAR, ZIP dan TXT",
-        "Strim pustaka Mac rumah ke iPhone/iPad melalui Wi‑Fi atau 5G jauh dengan Tailscale",
-        "Akses SMB melalui penstriman Mac pada iOS dan SMB natif pada Android",
+        "Strim pustaka rumah Mac atau PC ke iPhone dan iPad melalui Wi‑Fi atau 5G jauh dengan Tailscale",
+        "Akses SMB melalui strim desktop pada iOS dan SMB asli pada Android",
         "Pemampatan dan penggabungan pada peranti untuk menjimatkan ruang telefon",
         "Pengimbas pendua CBZ, CBR, ZIP dan RAR menggunakan hash persepsi halaman sampel",
         "Alat web WebAssembly peribadi dengan pemprosesan pelayar setempat",
@@ -1229,7 +1087,7 @@
       "whySeparate": {
         "eyebrow": "Mengapa dua aplikasi?",
         "title": "Perpustakaan berbeza memerlukan alat berbeza.",
-        "desc": "BiblioFuse Reader dibina untuk fail komik bergambar besar——penstriman dari Mac, pemampatan dalam aplikasi. GrepTag dibina untuk fail teks kecil yang muat sepenuhnya di peranti——grep, tag, segerak ke mana-mana arah.",
+        "desc": "BiblioFuse Reader dibina untuk fail komik besar yang sarat imej — strim dari Mac atau PC, mampat dalam aplikasi. GrepTag dibina untuk fail teks kecil yang muat sepenuhnya pada peranti — grep, tag, segerak ke mana-mana arah.",
         "col1": "BiblioFuse Reader",
         "col2": "GrepTag Reader",
         "row1Label": "Terbaik untuk",
@@ -1239,7 +1097,7 @@
         "row2col1": "50–300 MB setiap jilid",
         "row2col2": "Bawah 5 MB setiap satu",
         "row3Label": "Reka bentuk storan",
-        "row3col1": "Penstriman dari Mac · pemampatan dalam aplikasi",
+        "row3col1": "Strim dari Mac atau PC · mampat dalam aplikasi",
         "row3col2": "Simpan di peranti · segerak ke mana-mana arah",
         "row4Label": "Ciri utama",
         "row4col1": "Mampatkan, gabungkan, strim, sandaran automatik",
@@ -1273,7 +1131,7 @@
         },
         {
           "q": "Apakah perbezaan antara GrepTag Reader dan BiblioFuse Reader?",
-          "a": "BiblioFuse Reader dibina untuk fail komik besar (CBZ, CBR, PDF) yang kaya dengan imej. Ia menjanakan aliran dari Mac, memampatkan arkib dan menyokong pembacaan gaya webtoon/manga. GrepTag Reader dibina untuk perpustakaan teks EPUB dan TXT — menawarkan carian grep teks penuh, tag genre dan penyegerakan Wi-Fi ke mana-mana arah. Keduanya adalah aplikasi berasingan kerana model storan yang berbeza asasnya: komik memerlukan penstriman, novel muat sepenuhnya pada peranti."
+          "a": "BiblioFuse Reader dibina untuk fail komik besar yang sarat imej (CBZ, CBR, PDF). Ia strim dari Mac atau PC, memampatkan arkib, dan menyokong bacaan webtoon/manga. GrepTag Reader dibina untuk pustaka EPUB dan TXT dengan carian teks penuh, tag genre, dan penyegerakan Wi‑Fi ke mana-mana arah."
         },
         {
           "q": "Adakah carian grep teks penuh percuma?",

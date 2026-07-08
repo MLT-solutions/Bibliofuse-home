@@ -262,9 +262,9 @@
         "reads": "読む"
       },
       "table": {
-        "eyebrow": "リーダーを比較",
-        "title": "プラットフォームに合ったリーダーを選んでください。",
-        "desc": "すべてのリーダーは同じ理念を共有しています：デバイス上での処理、トラッキングなし。違いはプラットフォームとワークフローにあります。",
+        "eyebrow": "アプリを比較",
+        "title": "最適なBiblioFuseアプリを選ぶ。",
+        "desc": "まず用途から選びます：コミックを読む、小说を検索する、文書を解除する、重複を整理する、またはブラウザで素早く処理する。",
         "feature": "機能",
         "badges": {
           "universal": "ユニバーサル購入",
@@ -337,7 +337,7 @@
       },
       "toolsSection": {
         "eyebrow": "単体ツール",
-        "title": "軽量ツールとしても利用可能",
+        "title": "単発作業向けの専用ツール",
         "web": {
           "name": "BiblioFuse Web",
           "subtitle": "無料 · ブラウザ",
@@ -356,170 +356,28 @@
         }
       },
       "faq": {
-        "eyebrow": "よくある質問",
-        "title": "よくある質問",
+        "eyebrow": "FAQ",
+        "title": "BiblioFuseツールを選ぶ",
         "items": [
           {
-            "q": "1回の購入ですべてのプラットフォームをカバーしますか？",
-            "a": "いいえ。iOS + Mac は1回のユニバーサル購入で、iPhone、iPad、Mac をカバーします。Android Reader、PC Reader、PC ツールはそれぞれ別売りです。"
+            "q": "どのBiblioFuseアプリから始めればいいですか？",
+            "a": "コミック、マンガ、PDF、大きな混在ライブラリにはBiblioFuse Reader。EPUB/TXT小说で全文検索やタグが重要ならGrepTag Reader。保護ファイルにはSmartDecrypt、整理にはComic Duplicate Scanner、ブラウザで素早く圧縮・結合するならBiblioFuse Webを使います。"
           },
           {
-            "q": "iPhoneのBiblioFuseに本やフォルダを追加するには？",
-            "a": "BiblioFuse はファイルをiCloud同期フォルダに保存します。ファイルアプリ（BiblioFuseフォルダにファイルをコピー）、AirDrop、または内蔵Wi-Fi転送で本を追加できます。MacまたはPCからライブラリセッションを開き、任意のブラウザからファイルをドラッグしてください。",
-            "link": {
-              "label": "ステップバイステップのサイドロードガイド",
-              "href": "/blog/sideload-comics-iphone-without-itunes/"
-            }
+            "q": "ファイルはBiblioFuseのサーバーにアップロードされますか？",
+            "a": "いいえ。アプリは端末上処理を中心に作られています。読書、圧縮、重複スキャン、Webツールはローカルで処理します。同期とストリーミングは、BiblioFuseアカウントではなく、あなたのiCloud、ローカルネットワーク、Tailscaleを使います。"
           },
           {
-            "q": "MacまたはPCからiPhoneへのストリーミングの仕組みは？",
-            "a": "MacまたはPCがローカルサーバーを起動し、接続アドレスをiCloud Driveに書き込みます。iPhoneが自動的に検出します。両デバイスはTailscaleをオンにする必要があります（自宅とリモートで使用可能）。一方のデバイスだけTailscaleがオンの場合、接続は失敗します。両方を常にオンにすると最も安定した体験が得られます。"
+            "q": "iPhoneはMacやPCのライブラリを読めますか？",
+            "a": "はい。BiblioFuse ReaderはMacまたはPCのライブラリからストリーミングして読めます。大きなコミックアーカイブはデスクトップに置いたまま、iPhoneで自宅Wi‑FiまたはTailscaleの5G経由で開けます。"
           },
           {
-            "q": "ストリーミングの設定に必要なものは？",
-            "a": "MacまたはPCとiPhoneの両方で以下を設定してください：",
-            "bullets": [
-              {
-                "text": "両デバイスで同じiCloudアカウントにサインイン",
-                "sub": [
-                  "iOSとMacでは：設定 → [あなたの名前] → iCloudを開き、BiblioFuseが有効になっていることを確認",
-                  "PCでは：iCloudは内蔵されていません — Microsoft Storeから<a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">iCloud for Windowsをダウンロード</a>"
-                ]
-              },
-              {
-                "text": "両デバイスでTailscaleをONにする必要があります",
-                "sub": [
-                  "両方ON — 自宅と5Gリモートで使用可能",
-                  "混在（一方がON、もう一方がOFF）— 接続が失敗",
-                  "Tailscaleの出口ノードを有効にする必要はありません",
-                  "iCloudとTailscaleのアカウントは異なるメールアドレスを使用できます"
-                ]
-              },
-              {
-                "text": "アプリの初回起動時にネットワークアクセスを許可する"
-              }
-            ]
+            "q": "軽量ツールはBiblioFuse Readerとは別ですか？",
+            "a": "はい。WebツールとWindows resizerツールは、圧縮、変換、結合などの単独作業向けです。完全なリーダーとライブラリ管理が不要なときに使います。"
           },
           {
-            "q": "ストリーミングは正しく設定されているのに動作しない — 何を試せばいい？",
-            "a": "古いエンドポイントキャッシュが最も一般的な原因です。iCloud に保存されている <code>stream_endpoint.json</code> ファイルのひとつ以上のタイムスタンプが古く、BiblioFuse がホストを検出できていません。",
-            "bullets": [
-              {
-                "text": "iCloud から古いファイルを削除する",
-                "sub": [
-                  "iPhone の場合：ファイルアプリ → iCloud Drive → BiblioFuse（ルート）と BiblioFuse → 書類 を開きます。",
-                  "Mac の場合：Finder → iCloud Drive → BiblioFuse（ルート）と BiblioFuse → 書類 を開きます。",
-                  "両方の場所で、<code>stream_endpoint.json</code>、<code>stream_endpoint 1.json</code>、<code>stream_endpoint 2.json</code> などのファイルをすべて削除してください。",
-                  "PC の場合：iCloud はこれらのファイルのクラウド版（オンラインのみ）しか表示しないことがあるため、PC からの削除は確実に機能しない場合があります — iPhone または Mac を使用してください。"
-                ]
-              },
-              {
-                "text": "削除後、ホスト（Mac または PC）と iPhone の両方で BiblioFuse を再起動する",
-                "sub": [
-                  "ホストアプリが現在のタイムスタンプで新しいエンドポイントファイルを再生成します。",
-                  "iPhone でストリーミングソースリストを開くと、PC または Mac の名前の右側に緑のドットが表示され、検出されたことが確認できます。",
-                  "ドットが灰色の場合は、数秒待つか、ホストの BiblioFuse を強制終了して再起動してください。"
-                ]
-              }
-            ]
-          },
-          {
-            "q": "なぜストリーミングにTailscaleが必要なのですか？自宅Wi-Fiだけでは使えないのですか？",
-            "a": "TailscaleはiOSがローカルネットワーク接続を処理する方法のために必要です。以下がその経緯です：",
-            "bullets": [
-              {
-                "text": "初期バージョンはTailscaleなしで自宅Wi-Fiで動作していました",
-                "sub": [
-                  "アプリはBonjour（AppleのローカルディスカバリM）をHTTP経由で使用していました — 正常に動作していました",
-                  "5Gリモートストリーミングが追加されると、iOS App Transport SecurityがIPアドレスへのHTTP接続をブロックし始め、LANのみのパスが壊れました"
-                ]
-              },
-              {
-                "text": "Tailscaleは自宅Wi-Fiでもリモートと同様に機能します",
-                "sub": [
-                  "両デバイスが同じネットワーク上にある場合、Tailscaleはトラフィックを直接ルーティングします — 通常のWi-Fiと比較して速度の低下はありません",
-                  "自宅でも外出先でもTailscaleをオンにしておくと、モードの切り替えなしに一貫したセットアップが得られます"
-                ]
-              },
-              {
-                "text": "TailscaleなしのLANのみモードは現在のロードマップにはありません",
-                "sub": [
-                  "Tailscaleをオフにしても、アプリが以前に保存されたTailscaleアドレスを試みてハンドシェイク失敗になる場合があります",
-                  "信頼性の高い自動LANフォールバックを構築することは複雑で、現時点では予定されていません",
-                  "最もシンプルな設定：両デバイスで常にTailscaleをオンにしておいてください。追加設定なしで自宅Wi-Fiと5Gリモートの両方に対応します"
-                ]
-              }
-            ]
-          },
-          {
-            "q": "AndroidがMacやPCから本を受信できないのはなぜですか？",
-            "a": "Androidアプリはストリーミングのハンドシェイクメカニズムの基盤となるiCloud統合のない別のコードベースを使用しています。Androidの最善のワークフローは、SyncthingまたはHJようなツールを使ってファイルをスマートフォンに同期し、そのフォルダをアプリのライブラリソースとして追加することです。"
-          },
-          {
-            "q": "読書の進捗、ブックマーク、評価、タグはどこに保存されますか？",
-            "a": "本のファイルがどこに保存されているかによって異なります：",
-            "bullets": [
-              {
-                "text": "ローカルストレージ — そのデバイスにのみ保存、デバイス間の同期なし"
-              },
-              {
-                "text": "iCloudストレージ — iCloudに保存、すべてのiOS、Mac、PCデバイスで自動同期"
-              },
-              {
-                "text": "SMB / ネットワーク共有（MacまたはPCストリーミング）— ホストデバイスに保存",
-                "sub": [
-                  "iOSがMacストリームを読む：進捗はMacに保存",
-                  "iOSがPCストリームを読む：進捗はPCに保存",
-                  "PC ↔ Mac：独立して保存され、データは共有されない",
-                  "MacとPCの両方をストリーミングホストとして使用すると、読書データが分割されます。一貫性のために1つのホストを使用することをお勧めします。"
-                ]
-              }
-            ]
-          },
-          {
-            "q": "PC ReaderとPC EPUB / CBZツールの違いは何ですか？",
-            "a": "PC Readerは完全な読書アプリです — 本を開き、ライブラリを管理し、ファイルを圧縮し、iPhoneにストリーミングします。PC EPUBとCBZツールは、リーダーなしで圧縮と結合のみに特化した、より軽量で安価なアプリです。"
-          },
-          {
-            "q": "BiblioFuseでより良いテキスト読み上げの声を使うにはどうすればよいですか？",
-            "a": "高品質な音声はデバイスに内蔵されていますが、別途ダウンロードが必要です — インストール後、BiblioFuseが自動的に認識します。",
-            "bullets": [
-              {
-                "text": "iPhone / iPad",
-                "sub": [
-                  "設定 → アクセシビリティ → スピーチ → 声 に移動",
-                  "言語を選択し、「拡張」または「プレミアム」の声をダウンロード",
-                  "iOS 16+ のプレミアム音声はニューラルクオリティ（Siriレベル）"
-                ]
-              },
-              {
-                "text": "Mac",
-                "sub": [
-                  "システム設定 → アクセシビリティ → スピーチ → システムの声 → 声を管理 に移動",
-                  "言語の「拡張」または「プレミアム」の声をダウンロード"
-                ]
-              },
-              {
-                "text": "Windows 10 / Windows 11",
-                "sub": [
-                  "設定 → 時刻と言語 → 言語と地域 に移動",
-                  "読書言語を追加するか、インストール済み言語の言語オプションを開く",
-                  "言語機能の下にある「テキスト読み上げ」をインストール",
-                  "BiblioFuseを再起動し、新しいTTSセッションを開始"
-                ]
-              },
-              {
-                "text": "Windows 11 ナチュラルボイス（オプション）",
-                "sub": [
-                  "設定 → アクセシビリティ → ナレーター に移動",
-                  "「ナチュラルボイスの追加」から使いたい音声をダウンロード",
-                  "注意：Windowsはこれらの音声をナレーターのみに提供し、すべてのアプリには対応しない場合があります"
-                ]
-              },
-              {
-                "text": "アプリのアップデートは不要 — BiblioFuseはWindowsまたはAppleのTTSシステムを通じて公開された新しい音声を自動検出"
-              }
-            ]
+            "q": "アプリは無料ですか？",
+            "a": "多くのBiblioFuseアプリは無料で試せるか、無料枠があります。重い利用には任意の有料アップグレードがあります。各プラットフォームの現在価格はストアページで確認できます。"
           }
         ]
       }
@@ -536,7 +394,7 @@
           "desc": "個人の電子書籍とコミックコレクションのためのネイティブリーダー兼ライブラリマネージャー。",
           "bullet1": "EPUB、PDF、CBZ、CBR、RAR、ZIP、TXT",
           "bullet2": "タグ、評価、進捗、ブックマーク",
-          "bullet3": "iCloud 同期と Mac ライブラリからのライブストリーミング",
+          "bullet3": "iCloud同期とMac/PCからのライブストリーミング",
           "cta": "App Store で入手",
           "secondary": "Google Play"
         },
@@ -590,7 +448,7 @@
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
       "title": "長時間の読書セッションのために構築。",
-      "desc": "実際に使うライブラリツールを備えた集中型リーダー：フォーマット、フォルダ、タグ、評価、進捗、ブックマーク。iPhone、iPad、Mac で同じライブラリを iCloud で同期。",
+      "desc": "形式、フォルダ、タグ、評価、進捗、ブックマークなど、本当に使うライブラリ機能に集中したリーダー。iPhone、iPad、Mac、PCに本を置けて、容量が必要なときはデスクトップライブラリをiPhoneへストリーミングできます。",
       "features": {
         "library": {
           "eyebrow": "ライブラリ",
@@ -617,20 +475,20 @@
           "imageAlt": "TTS、自動スクロール、ピークズーム付き BiblioFuse 読書ビュー"
         },
         "streaming": {
-          "eyebrow": "Mac からモバイルへストリーミング",
-          "title": "ライブラリハブ。iPhone にストリーミング。",
+          "eyebrow": "デスクトップからモバイルへ",
+          "title": "ライブラリハブ。iPhoneへストリーミング。",
           "badge": "サードパーティサーバー不要 · サブスクリプション不要",
-          "desc": "Mac では、BiblioFuse がデスクトップライブラリハブになります：分割ビューのライブラリ/リーダーインターフェースでローカルフォルダ、iCloud フォルダ、SMB ネットワーク共有を管理。自宅ではローカル Wi-Fi 経由で、外出先では 5G でリモートから、iPhone と iPad の BiblioFuse に直接書籍をストリーミング。",
+          "desc": "MacとPCでは、BiblioFuseが大きなコレクション向けのデスクトップライブラリハブになります。ホスト側でフォルダを管理し、自宅のWi‑FiまたはTailscale経由の5Gで、iPhone/iPadのBiblioFuseへ直接ストリーミングできます。",
           "bullet1Title": "ローカル Wi-Fi ストリーミング",
-          "bullet1Body": "任意の Mac ソースから即座にブラウズ。",
+          "bullet1Body": "MacまたはPCのソースからすぐに参照。",
           "bullet2Title": "リモート 5G ストリーミング",
           "bullet2Body": "Tailscale でどこからでも自宅ライブラリを開く。",
           "bullet3Title": "ローカル、iCloud、SMB ソース",
-          "bullet3Body": "一つの Mac ライブラリ、既存のすべてのフォルダ。",
+          "bullet3Body": "1つのデスクトップライブラリに、既存のすべてのフォルダを。",
           "bullet4Title": "オプション PIN",
           "bullet4Body": "共有ネットワークでのストリーミングアクセスをロック。",
-          "imageAlt": "分割ビューリーダー付き BiblioFuse Mac ライブラリ",
-          "footnote": "リモートアクセスには、Mac と iOS の両方で iCloud にサインインし、Tailscale に接続している必要があります。ローカル Wi-Fi 接続でも、\"(iCloud)\" が付いたデバイス名を選択して Tailscale を使うことをおすすめします。"
+          "imageAlt": "分割ビューリーダー付きのBiblioFuseデスクトップライブラリ",
+          "footnote": "リモートアクセスには、ホストとiOSデバイスがiCloudにサインインし、Tailscaleに接続されている必要があります。自宅でも外出先でも安定させるには、両方のデバイスでTailscaleをオンにしておくのがおすすめです。"
         }
       }
     },
@@ -807,7 +665,7 @@
     },
     "seo": {
       "homeTitle": "BiblioFuse Reader：プライベート電子書籍ライブラリ、5G Macストリーミングとファイルツール",
-      "homeDesc": "EPUB、PDF、CBZ、CBRを読み、MacのホームライブラリをWi‑Fiまたはリモート5GでiPhoneへストリーミング。端末上で圧縮・結合し、CBZ/写真の重複も私的に検出します。",
+      "homeDesc": "BiblioFuseはiOS、macOS、Android、Windows PC、Web向けのプライベートな電子書籍・コミックリーダーファミリーです。EPUB、PDF、CBZ、CBRをオフラインで読めます。MacまたはPCのライブラリをWi‑Fiや5GでiPhoneへストリーミング。広告なし、追跡なし。",
       "webTitle": "ブラウザで使うプライベートEPUB、PDF、CBZ圧縮ツール",
       "webDesc": "BiblioFuse Web ToolはWebAssemblyでEPUB、PDF、CBZ、ZIPをブラウザ内でローカルに圧縮・結合・変換します。アップロードも登録も不要です。",
       "aboutTitle": "BiblioFuseのプライベート読書・ファイルツールについて",
@@ -816,8 +674,8 @@
       "privacyDesc": "BiblioFuseは読書、圧縮、結合、ストリーミング、重複スキャンをローカルまたはプラットフォーム所有の保存先で私的に保ちます。広告なし、追跡なし。",
       "appFeatures": [
         "EPUB、PDF、CBZ、CBR、RAR、ZIP、TXTリーダー",
-        "MacホームライブラリをWi‑FiまたはTailscaleのリモート5GでiPhone/iPadへストリーミング",
-        "iOSはMacストリーミング経由SMB、AndroidはネイティブSMB",
+        "MacまたはPCのホームライブラリを、Wi‑FiまたはTailscaleのリモート5GでiPhone/iPadへストリーミング",
+        "iOSではデスクトップストリーミング経由のSMB、AndroidではネイティブSMB",
         "端末上の圧縮・結合でスマホ容量を節約",
         "サンプル画像ページの知覚ハッシュでCBZ、CBR、ZIP、RARの重複を検出",
         "ローカルブラウザ処理のプライベートWebAssembly Webツール",
@@ -1229,7 +1087,7 @@
       "whySeparate": {
         "eyebrow": "なぜ2つのアプリ？",
         "title": "異なるライブラリには異なるツールが必要。",
-        "desc": "BiblioFuse Readerは大容量の画像コミックファイル向けに作られています——Macからストリーミング、アプリ内圧縮。GrepTagはデバイス全体に収まる小さなテキストファイル向けに作られています——grep、タグ付け、どの方向にも同期。",
+        "desc": "BiblioFuse Readerは画像中心の大きなコミックファイル向けです。MacまたはPCからストリーミングし、アプリ内で圧縮できます。GrepTagは端末に収まる小さなテキストファイル向けで、grep、タグ、双方向同期に対応します。",
         "col1": "BiblioFuse Reader",
         "col2": "GrepTag Reader",
         "row1Label": "最適な用途",
@@ -1239,7 +1097,7 @@
         "row2col1": "1巻あたり50〜300 MB",
         "row2col2": "各5 MB未満",
         "row3Label": "ストレージ設計",
-        "row3col1": "Macからストリーミング · アプリ内圧縮",
+        "row3col1": "MacまたはPCからストリーミング · アプリ内圧縮",
         "row3col2": "デバイスに保存 · どの方向にも同期",
         "row4Label": "主な機能",
         "row4col1": "圧縮、結合、ストリーミング、自動バックアップ",
@@ -1273,7 +1131,7 @@
         },
         {
           "q": "GrepTag ReaderとBiblioFuse Readerの違いは何ですか？",
-          "a": "BiblioFuse Readerは大容量の画像コミックファイル（CBZ、CBR、PDF）向けに作られています。Macからのストリーミング、アーカイブの圧縮、webtoon/manga読書に対応しています。GrepTag ReaderはEPUBおよびTXTのテキストライブラリ向けに作られており、全文grep検索、ジャンルタグ、どの方向にも対応したWi-Fi同期を提供します。ストレージモデルが根本的に異なるため、別々のアプリになっています：コミックはストリーミングが必要で、小説はデバイスに完全に収まります。"
+          "a": "BiblioFuse Readerは画像中心の大きなコミックファイル（CBZ、CBR、PDF）向けです。MacまたはPCからストリーミングし、アーカイブを圧縮し、webtoon/マンガ読書に対応します。GrepTag ReaderはEPUB/TXTのテキストライブラリ向けで、全文grep、ジャンルタグ、任意方向のWi‑Fi同期を提供します。"
         },
         {
           "q": "全文grep検索は無料ですか？",
