@@ -21,15 +21,20 @@ own top-level route (`/comicreader`, `/grepreader`, `/archive`, `/smartdecrypt`,
 `src/pages/ComicReader.jsx` is the Layer-1 page for the flagship comic/ebook reader at
 `/comicreader`. It reuses the translated `redesign.readerSection.*`,
 `redesign.toolsHighlight.*`, and `redesign.grepTagPage.whySeparate.*` copy that also
-drives the homepage teaser and the GrepTag comparison, so the comic-vs-novel distinction
+supports the homepage reader chooser and the GrepTag comparison, so the comic-vs-novel distinction
 stays consistent across the hub.
 
-The homepage now keeps only a compact `ReaderTeaser` plus `TwoAppsSection`; the full
-reader walkthrough belongs on `/comicreader`. Homepage FAQ copy should stay at the
+The homepage now keeps the visual `TwoAppsSection` chooser instead of a separate
+Reader teaser; the full reader walkthrough belongs on `/comicreader`. Homepage FAQ copy should stay at the
 brand/app-chooser level; setup-heavy BiblioFuse Reader questions belong on
 `/comicreader` or focused help/blog pages. The full Reader FAQ lives in
 `redesign.comicReaderPage.faq` so troubleshooting answers can include nested bullet
 steps, code-formatted filenames, and support links without bloating the homepage.
+
+The homepage reader flow should not repeat the same Reader pitch twice. Use the
+visual `TwoAppsSection` as the homepage's main comic-vs-novel chooser, then send
+visitors to `/comicreader` or `/grepreader` for product details. The Reader platform
+comparison table belongs on `/comicreader` with the technical FAQ.
 
 When describing Reader streaming, use Mac/PC language unless the feature is truly
 Mac-only. iOS can stream and read from both Mac and PC libraries.

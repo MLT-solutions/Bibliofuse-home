@@ -443,7 +443,8 @@
           "bullet3": "可自定义阅读器——主题、字体与全书搜索",
           "cta": "了解更多"
         }
-      }
+      },
+      "learnMore": "了解更多"
     },
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
@@ -1698,6 +1699,15 @@
           ]
         }
       ]
+    },
+    "androidInterest": {
+      "eyebrow": "Android 需求名单",
+      "title": "想要其他 BiblioFuse 应用登陆 Android？",
+      "desc": "Android 发布需要 12-20 人参加为期 14 天的封闭测试。告诉我们你想要哪款应用，以及是否能在测试期间保持活跃。",
+      "note": "目前会打开邮件模板。Google 表单准备好后可替换为表单链接。",
+      "cta": "申请 Android 版本",
+      "mailSubject": "Android 应用测试意向",
+      "mailBody": "邮箱：\n\n感兴趣的应用：\n\nAndroid 手机、平板或两者：\n\n能否参与 14 天测试并保持活跃？是/否\n\n你最需要的功能：\n"
     }
   }
 }

@@ -10,6 +10,8 @@ This document is the single source of truth for the homepage. Read it before edi
 
 The site:
 - Introduces BiblioFuse Reader as the flagship and links to all store downloads.
+- Uses the homepage as a product-family chooser; product-family cards link to each
+  app's local landing page first, while store/download CTAs live in the app pages.
 - Surfaces the free BiblioFuse Web Tool (WASM-based, no account required).
 - Cross-promotes sister apps (Archive Duplicate Scanner, SmartDecrypt, ContentCue, GrepTag Reader) with dedicated page sections.
 - Hosts the blog (`/blog`) for SEO content around the app family.
@@ -21,7 +23,8 @@ The site:
 
 **Primary website route:** `/en/comicreader/`
 
-**Homepage presence:** Hero downloads + compact `ReaderTeaser` + `TwoAppsSection` chooser.
+**Homepage presence:** Hero downloads + `TwoAppsSection` chooser. Detailed platform comparison
+and troubleshooting FAQ belong on `/comicreader/`, not the homepage.
 
 ### Repos on Mac
 

@@ -443,7 +443,8 @@
           "bullet3": "커스터마이징 가능한 리더 — 테마, 글꼴, 전체 책 검색",
           "cta": "자세히 보기"
         }
-      }
+      },
+      "learnMore": "자세히 보기"
     },
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
@@ -1698,6 +1699,15 @@
           ]
         }
       ]
+    },
+    "androidInterest": {
+      "eyebrow": "Android 수요 목록",
+      "title": "다른 BiblioFuse 앱도 Android에서 원하시나요?",
+      "desc": "Android 출시는 12-20명이 14일 동안 참여하는 비공개 테스트가 필요합니다. 원하는 앱과 테스트 기간 동안 계속 활동할 수 있는지 알려주세요.",
+      "note": "현재는 이메일 템플릿을 엽니다. Google Form이 준비되면 해당 링크로 교체하세요.",
+      "cta": "Android 버전 요청",
+      "mailSubject": "Android 앱 테스트 관심",
+      "mailBody": "이메일:\n\n관심 있는 앱:\n\nAndroid 휴대폰, 태블릿 또는 둘 다:\n\n14일 동안 테스트하고 계속 활동할 수 있나요? 예/아니오\n\n가장 중요한 기능:\n"
     }
   }
 }

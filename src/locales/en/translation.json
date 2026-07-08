@@ -763,7 +763,8 @@
           "bullet3": "Custom reader — themes, fonts & whole-book search",
           "cta": "Learn More"
         }
-      }
+      },
+      "learnMore": "Learn more"
     },
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
@@ -1693,6 +1694,15 @@
           ]
         }
       ]
+    },
+    "androidInterest": {
+      "eyebrow": "Android demand list",
+      "title": "Want another BiblioFuse app on Android?",
+      "desc": "Android releases need a 12-20 person closed test for 14 days. Tell us which app you want and whether you can stay active during the test.",
+      "note": "This opens an email template for now. Replace it with a Google Form link once the form is ready.",
+      "cta": "Request Android version",
+      "mailSubject": "Android app test interest",
+      "mailBody": "Email:\n\nApp interested in:\n\nAndroid phone, tablet, or both:\n\nCan you help test for 14 days and stay active? Yes/No\n\nMost important feature for you:\n"
     }
   }
 }

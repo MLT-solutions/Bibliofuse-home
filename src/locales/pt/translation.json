@@ -443,7 +443,8 @@
           "bullet3": "Leitor personalizável — temas, tipos de letra e busca no livro inteiro",
           "cta": "Saber mais"
         }
-      }
+      },
+      "learnMore": "Saiba mais"
     },
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
@@ -1698,6 +1699,15 @@
           ]
         }
       ]
+    },
+    "androidInterest": {
+      "eyebrow": "Lista de interesse Android",
+      "title": "Quer outro app BiblioFuse no Android?",
+      "desc": "Lançamentos Android precisam de um teste fechado com 12 a 20 pessoas por 14 dias. Diga qual app você quer e se pode continuar ativo durante o teste.",
+      "note": "Por enquanto isto abre um modelo de e-mail. Troque por um link do Google Forms quando o formulário estiver pronto.",
+      "cta": "Pedir versão Android",
+      "mailSubject": "Interesse em teste de app Android",
+      "mailBody": "E-mail:\n\nApp de interesse:\n\nTelefone Android, tablet ou ambos:\n\nVocê pode testar por 14 dias e ficar ativo? Sim/Não\n\nRecurso mais importante para você:\n"
     }
   }
 }

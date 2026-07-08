@@ -198,9 +198,8 @@ function ProductFamily({ lang }) {
       name: 'BiblioFuse Reader',
       desc: t('redesign.productFamily.products.reader.desc'),
       bullets: [t('redesign.productFamily.products.reader.bullet1'), t('redesign.productFamily.products.reader.bullet2'), t('redesign.productFamily.products.reader.bullet3')],
-      cta: t('redesign.productFamily.products.reader.cta'),
+      cta: t('redesign.productFamily.learnMore'),
       to: `/${lang}/comicreader/`,
-      href: appStoreUrl,
       secondary: t('redesign.productFamily.products.reader.secondary'),
       secondaryHref: playStoreUrl,
       accent: 'blue',
@@ -211,8 +210,8 @@ function ProductFamily({ lang }) {
       name: 'BiblioFuse Web Tool',
       desc: t('redesign.productFamily.products.webTool.desc'),
       bullets: [t('redesign.productFamily.products.webTool.bullet1'), t('redesign.productFamily.products.webTool.bullet2'), t('redesign.productFamily.products.webTool.bullet3')],
-      cta: t('redesign.productFamily.products.webTool.cta'),
-      href: 'https://bibliofuse-web.netlify.app/',
+      cta: t('redesign.productFamily.learnMore'),
+      to: `/${lang}/webapp/`,
       accent: 'teal',
     },
     {
@@ -221,8 +220,8 @@ function ProductFamily({ lang }) {
       name: 'Comic Duplicate Scanner',
       desc: t('redesign.productFamily.products.archive.desc'),
       bullets: [t('redesign.productFamily.products.archive.bullet1'), t('redesign.productFamily.products.archive.bullet2'), t('redesign.productFamily.products.archive.bullet3'), t('redesign.productFamily.products.archive.bullet4')],
-      cta: t('redesign.productFamily.products.archive.cta'),
-      href: archiveMacUrl,
+      cta: t('redesign.productFamily.learnMore'),
+      to: `/${lang}/archive/`,
       secondary: t('redesign.productFamily.products.archive.secondary'),
       secondaryHref: archiveMsUrl,
       accent: 'orange',
@@ -233,8 +232,8 @@ function ProductFamily({ lang }) {
       name: 'SmartDecrypt PDF ZIP',
       desc: t('redesign.productFamily.products.smartdecrypt.desc'),
       bullets: [t('redesign.productFamily.products.smartdecrypt.bullet1'), t('redesign.productFamily.products.smartdecrypt.bullet2'), t('redesign.productFamily.products.smartdecrypt.bullet3'), t('redesign.productFamily.products.smartdecrypt.bullet4')],
-      cta: t('redesign.productFamily.products.smartdecrypt.cta'),
-      href: smartDecryptUrl,
+      cta: t('redesign.productFamily.learnMore'),
+      to: `/${lang}/smartdecrypt/`,
       secondary: t('redesign.productFamily.products.smartdecrypt.secondary'),
       secondaryHref: smartDecryptMsUrl,
       accent: 'violet',
@@ -246,8 +245,8 @@ function ProductFamily({ lang }) {
       name: 'ContentCue',
       desc: t('redesign.productFamily.products.contentcue.desc'),
       bullets: [t('redesign.productFamily.products.contentcue.bullet1'), t('redesign.productFamily.products.contentcue.bullet2'), t('redesign.productFamily.products.contentcue.bullet3'), t('redesign.productFamily.products.contentcue.bullet4')],
-      cta: t('redesign.productFamily.products.contentcue.cta'),
-      href: contentCueUrl,
+      cta: t('redesign.productFamily.learnMore'),
+      to: `/${lang}/contentcue/`,
       accent: 'green',
     },
     {
@@ -257,7 +256,7 @@ function ProductFamily({ lang }) {
       name: 'GrepTag Reader',
       desc: t('redesign.productFamily.products.grepreader.desc'),
       bullets: [t('redesign.productFamily.products.grepreader.bullet1'), t('redesign.productFamily.products.grepreader.bullet2'), t('redesign.productFamily.products.grepreader.bullet3')],
-      cta: t('redesign.productFamily.products.grepreader.cta'),
+      cta: t('redesign.productFamily.learnMore'),
       to: `/${lang}/grepreader/`,
       accent: 'indigo',
     },
@@ -380,66 +379,78 @@ function TwoAppsSection({ lang }) {
           </p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2">
+        <div className="grid gap-5 lg:grid-cols-2">
           {/* BiblioFuse Reader — comics */}
-          <div className="flex flex-col rounded-3xl border border-blue-100 bg-white p-7 shadow-sm">
-            <div className="mb-5 flex items-center justify-between">
-              <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-xl">
-                <img src="/image/bibliofuse-logo.png" alt="BiblioFuse Reader" className="h-11 w-11 object-cover" />
-              </span>
-              <span className="rounded-full bg-blue-50 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-blue-600">
-                {t('redesign.twoAppsSection.comicTag')}
-              </span>
+          <div className="grid overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-sm md:grid-cols-[0.88fr_1fr]">
+            <div className="relative min-h-[240px] bg-gradient-to-br from-blue-50 to-cyan-50 p-6">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(45,124,246,0.18),transparent_42%)]" />
+              <img src={`${imageBase}/iphone/1.png`} alt="BiblioFuse Reader" className="relative mx-auto h-[280px] w-auto drop-shadow-2xl" />
             </div>
-            <h3 className="mb-1 text-lg font-black tracking-tight text-slate-950">BiblioFuse Reader</h3>
-            <p className="mb-4 text-sm font-medium text-blue-700">{t('redesign.twoAppsSection.comicIdent')}</p>
-            <ul className="mb-6 space-y-2.5">
-              {comicBullets.map((b) => (
-                <li key={b} className="flex items-start gap-2.5 text-sm text-slate-700">
-                  <svg className="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2d7cf6" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-                  {b}
-                </li>
-              ))}
-            </ul>
-            <div className="mt-auto">
-              <Link
-                to={`/${lang}/comicreader/`}
-                className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl bg-[#0b1220] px-4 text-sm font-semibold text-white transition hover:bg-[#152033]"
-              >
-                {t('redesign.twoAppsSection.comicCta')}
-                <ArrowRightIcon />
-              </Link>
+            <div className="flex flex-col p-7">
+              <div className="mb-5 flex items-center justify-between gap-3">
+                <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-xl">
+                  <img src="/image/bibliofuse-logo.png" alt="BiblioFuse Reader" className="h-11 w-11 object-cover" />
+                </span>
+                <span className="rounded-full bg-blue-50 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-blue-600">
+                  {t('redesign.twoAppsSection.comicTag')}
+                </span>
+              </div>
+              <h3 className="mb-1 text-lg font-black tracking-tight text-slate-950">BiblioFuse Reader</h3>
+              <p className="mb-4 text-sm font-medium text-blue-700">{t('redesign.twoAppsSection.comicIdent')}</p>
+              <ul className="mb-6 space-y-2.5">
+                {comicBullets.map((b) => (
+                  <li key={b} className="flex items-start gap-2.5 text-sm text-slate-700">
+                    <svg className="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2d7cf6" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                    {b}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-auto">
+                <Link
+                  to={`/${lang}/comicreader/`}
+                  className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl bg-[#0b1220] px-4 text-sm font-semibold text-white transition hover:bg-[#152033]"
+                >
+                  {t('redesign.twoAppsSection.comicCta')}
+                  <ArrowRightIcon />
+                </Link>
+              </div>
             </div>
           </div>
 
           {/* GrepTag Reader — novels */}
-          <div className="flex flex-col rounded-3xl border border-indigo-100 bg-white p-7 shadow-sm">
-            <div className="mb-5 flex items-center justify-between">
-              <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-xl">
-                <img src="/image/grepreader-logo.png" alt="GrepTag Reader" className="h-11 w-11 object-cover" />
-              </span>
-              <span className="rounded-full bg-indigo-50 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-indigo-600">
-                {t('redesign.twoAppsSection.textTag')}
-              </span>
+          <div className="grid overflow-hidden rounded-3xl border border-indigo-100 bg-white shadow-sm md:grid-cols-[0.88fr_1fr]">
+            <div className="relative min-h-[240px] bg-gradient-to-br from-indigo-50 to-violet-50 p-6">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(79,70,229,0.18),transparent_42%)]" />
+              <img src="/image/grepreader/library.png" alt="GrepTag Reader library" className="relative mx-auto mt-4 w-full max-w-[260px] rounded-2xl border border-white/70 shadow-2xl" />
             </div>
-            <h3 className="mb-1 text-lg font-black tracking-tight text-slate-950">GrepTag Reader</h3>
-            <p className="mb-4 text-sm font-medium text-indigo-700">{t('redesign.twoAppsSection.textIdent')}</p>
-            <ul className="mb-6 space-y-2.5">
-              {textBullets.map((b) => (
-                <li key={b} className="flex items-start gap-2.5 text-sm text-slate-700">
-                  <svg className="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-                  {b}
-                </li>
-              ))}
-            </ul>
-            <div className="mt-auto">
-              <Link
-                to={`/${lang}/grepreader/`}
-                className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 text-sm font-semibold text-white transition hover:bg-indigo-700"
-              >
-                {t('redesign.twoAppsSection.textCta')}
-                <ArrowRightIcon />
-              </Link>
+            <div className="flex flex-col p-7">
+              <div className="mb-5 flex items-center justify-between gap-3">
+                <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-xl">
+                  <img src="/image/grepreader-logo.png" alt="GrepTag Reader" className="h-11 w-11 object-cover" />
+                </span>
+                <span className="rounded-full bg-indigo-50 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-indigo-600">
+                  {t('redesign.twoAppsSection.textTag')}
+                </span>
+              </div>
+              <h3 className="mb-1 text-lg font-black tracking-tight text-slate-950">GrepTag Reader</h3>
+              <p className="mb-4 text-sm font-medium text-indigo-700">{t('redesign.twoAppsSection.textIdent')}</p>
+              <ul className="mb-6 space-y-2.5">
+                {textBullets.map((b) => (
+                  <li key={b} className="flex items-start gap-2.5 text-sm text-slate-700">
+                    <svg className="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                    {b}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-auto">
+                <Link
+                  to={`/${lang}/grepreader/`}
+                  className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 text-sm font-semibold text-white transition hover:bg-indigo-700"
+                >
+                  {t('redesign.twoAppsSection.textCta')}
+                  <ArrowRightIcon />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -452,6 +463,34 @@ function TwoAppsSection({ lang }) {
           >
             Why are these two separate apps? →
           </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function AndroidInterestSection() {
+  const { t } = useTranslation();
+  const android = t('redesign.androidInterest', { returnObjects: true });
+  const mailtoHref = `mailto:support@mlogictech.com?subject=${encodeURIComponent(android.mailSubject)}&body=${encodeURIComponent(android.mailBody)}`;
+
+  return (
+    <section className="bg-white py-14 sm:py-16">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-6 rounded-3xl border border-emerald-100 bg-emerald-50/70 p-7 sm:p-8 md:grid-cols-[1fr_auto] md:items-center">
+          <div>
+            <div className="mb-2 text-xs font-black uppercase tracking-[0.18em] text-emerald-700">{android.eyebrow}</div>
+            <h2 className="text-2xl font-black tracking-tight text-slate-950">{android.title}</h2>
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-700">{android.desc}</p>
+            <p className="mt-3 text-xs leading-relaxed text-slate-500">{android.note}</p>
+          </div>
+          <a
+            href={mailtoHref}
+            className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 text-sm font-semibold text-white transition hover:bg-emerald-700"
+          >
+            {android.cta}
+            <ArrowRightIcon />
+          </a>
         </div>
       </div>
     </section>
@@ -1478,8 +1517,7 @@ const Home = () => {
       <Hero lang={lang} />
       <ProductFamily lang={lang} />
       <TwoAppsSection lang={lang} />
-      <ReaderTeaser lang={lang} />
-      <ComparisonTable />
+      <AndroidInterestSection />
       <StandaloneToolsSection lang={lang} />
       <FaqSection lang={lang} />
       <ArchiveScannerSection />

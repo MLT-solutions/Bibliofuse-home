@@ -443,7 +443,8 @@
           "bullet3": "Pembaca yang dapat disesuaikan — tema, font & pencarian seluruh buku",
           "cta": "Pelajari Lebih Lanjut"
         }
-      }
+      },
+      "learnMore": "Pelajari selengkapnya"
     },
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
@@ -1698,6 +1699,15 @@
           ]
         }
       ]
+    },
+    "androidInterest": {
+      "eyebrow": "Daftar minat Android",
+      "title": "Ingin app BiblioFuse lain hadir di Android?",
+      "desc": "Rilis Android perlu uji tertutup 12-20 orang selama 14 hari. Beri tahu app mana yang Anda inginkan dan apakah Anda bisa tetap aktif selama pengujian.",
+      "note": "Untuk saat ini tombol membuka templat email. Ganti dengan tautan Google Form saat formulir siap.",
+      "cta": "Minta versi Android",
+      "mailSubject": "Minat uji app Android",
+      "mailBody": "Email:\n\nApp yang diminati:\n\nPonsel Android, tablet, atau keduanya:\n\nBisa membantu uji 14 hari dan tetap aktif? Ya/Tidak\n\nFitur paling penting bagi Anda:\n"
     }
   }
 }

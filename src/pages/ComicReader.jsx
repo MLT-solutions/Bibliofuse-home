@@ -28,6 +28,135 @@ function StoreBadge({ type, href, size = 'lg' }) {
   );
 }
 
+function DashIcon() {
+  return (
+    <span className="inline-grid h-6 w-6 place-items-center rounded-full bg-slate-100 text-slate-400">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round">
+        <path d="M6 12h12" />
+      </svg>
+    </span>
+  );
+}
+
+function tintClass(tint) {
+  if (tint === 'blue') return 'bg-blue-50 text-blue-700';
+  if (tint === 'teal') return 'bg-teal-50 text-teal-700';
+  if (tint === 'violet') return 'bg-violet-50 text-violet-700';
+  return 'bg-orange-50 text-orange-700';
+}
+
+function renderLocalizedTableCell(cell) {
+  if (cell === '-') return <DashIcon />;
+  const str = String(cell);
+  if (str.includes('||')) {
+    return (
+      <div className="flex flex-col items-center gap-1.5">
+        {str.split('||').map((line, i) => {
+          const [main, sub] = line.split('|');
+          return (
+            <div key={i} className="text-center leading-snug">
+              <span className={`text-xs ${i === 0 ? 'font-semibold text-slate-900' : 'text-slate-500'}`}>{main}</span>
+              {sub && <span className="block text-[10px] text-slate-400">{sub}</span>}
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+  const [big, note] = str.split('|');
+  return (
+    <span className="leading-snug text-slate-800">
+      <span className={note ? 'block font-bold text-slate-950' : ''}>{big}</span>
+      {note && <span className="mt-1 block text-[11px] leading-tight text-slate-500">{note}</span>}
+    </span>
+  );
+}
+
+function ComparisonTable() {
+  const { t } = useTranslation();
+  const table = t('redesign.home.table', { returnObjects: true });
+  const editions = [
+    { key: 'apple',   name: table.editions.apple,   subtitle: table.subtitles.apple,   badge: table.badges.universal, tint: 'blue' },
+    { key: 'pc',      name: table.editions.pc,      subtitle: table.subtitles.pc,      badge: table.badges.msStore,    tint: 'orange' },
+    { key: 'android', name: table.editions.android, subtitle: table.subtitles.android, badge: table.badges.edition,   tint: 'teal' },
+  ];
+  const rows = table.rows.map((row, index) => ({
+    label: row[0],
+    highlight: index === 3,
+    cells: { apple: row[1], pc: row[2], android: row[3] },
+  }));
+
+  return (
+    <section id="comparison-table" className="bg-[#f5f8ff] py-20 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">{table.eyebrow}</div>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">{table.title}</h2>
+          <p className="mt-4 text-slate-600">{table.desc}</p>
+        </div>
+        <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-xl">
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[640px] table-fixed border-collapse">
+              <colgroup>
+                <col className="w-[200px]" />
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <tr className="bg-white">
+                  <th className="px-6 py-5 text-left text-xs font-bold uppercase tracking-wider text-slate-400">{table.feature}</th>
+                  {editions.map((edition) => (
+                    <th key={edition.key} className="px-4 py-5 text-center align-bottom">
+                      <div className="flex flex-col items-center gap-1">
+                        <div className={`inline-flex rounded-full px-2 py-0.5 text-[10px] font-black uppercase tracking-wider ${tintClass(edition.tint)}`}>{edition.badge}</div>
+                        <div className="text-base font-black tracking-tight text-slate-950">{edition.name}</div>
+                        <div className="text-xs text-slate-500">{edition.subtitle}</div>
+                      </div>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((row) => (
+                  <tr key={row.label} className={`border-t border-slate-200 ${row.highlight ? 'bg-blue-50/70' : 'bg-white/70'}`}>
+                    <td className="px-6 py-4 align-top text-sm font-bold text-slate-950">
+                      <div className="flex items-center gap-2">
+                        {row.label}
+                        {row.highlight && <span className="rounded bg-blue-600 px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-white">{table.unique}</span>}
+                      </div>
+                    </td>
+                    {editions.map((edition) => (
+                      <td key={edition.key} className="px-4 py-4 text-center align-top text-sm">
+                        {renderLocalizedTableCell(row.cells[edition.key])}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+                <tr className="border-t border-slate-200 bg-white">
+                  <td className="px-6 py-5 align-middle text-sm font-bold text-slate-950">{table.where}</td>
+                  <td className="px-4 py-5 text-center align-middle">
+                    <div className="flex flex-col items-center gap-1.5">
+                      <StoreBadge type="apple" href={appStoreUrl} size="sm" />
+                      <span className="text-[10px] text-slate-400">{table.iosNote}</span>
+                    </div>
+                  </td>
+                  <td className="px-4 py-5 text-center align-middle">
+                    <StoreBadge type="microsoft" href={bibliofusePcUrl} size="sm" />
+                  </td>
+                  <td className="px-4 py-5 text-center align-middle">
+                    <StoreBadge type="play" href={playStoreUrl} size="sm" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ReaderFeatureRow({ eyebrow, title, desc, bullets, image, alt, reverse, kind = 'iphone', accent = 'blue', footnote, badge }) {
   const accentClasses = {
     blue: 'bg-blue-50 text-blue-600',
@@ -394,6 +523,8 @@ const ComicReader = () => {
       </section>
 
       <ReaderChooser lang={lang} />
+
+      <ComparisonTable />
 
       <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

@@ -443,7 +443,8 @@
           "bullet3": "Aanpasbare lezer — thema's, lettertypen en zoeken door het hele boek",
           "cta": "Meer informatie"
         }
-      }
+      },
+      "learnMore": "Meer informatie"
     },
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
@@ -1698,6 +1699,15 @@
           ]
         }
       ]
+    },
+    "androidInterest": {
+      "eyebrow": "Android interesselijst",
+      "title": "Wil je nog een BiblioFuse-app op Android?",
+      "desc": "Android-releases hebben een gesloten test met 12-20 personen gedurende 14 dagen nodig. Vertel ons welke app je wilt en of je actief kunt blijven tijdens de test.",
+      "note": "Dit opent voorlopig een e-mailsjabloon. Vervang dit door een Google Forms-link zodra het formulier klaar is.",
+      "cta": "Android-versie aanvragen",
+      "mailSubject": "Interesse in Android-apptest",
+      "mailBody": "E-mail:\n\nGewenste app:\n\nAndroid-telefoon, tablet of beide:\n\nKun je 14 dagen testen en actief blijven? Ja/Nee\n\nBelangrijkste functie voor jou:\n"
     }
   }
 }
