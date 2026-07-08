@@ -1704,10 +1704,54 @@
       "eyebrow": "Android 要望リスト",
       "title": "他の BiblioFuse アプリも Android で使いたいですか？",
       "desc": "Android リリースには 12〜20 人で 14 日間のクローズドテストが必要です。希望するアプリと、テスト期間中に継続して参加できるか教えてください。",
-      "note": "現時点ではメールテンプレートを開きます。Google フォームが準備できたらリンクに差し替えてください。",
-      "cta": "Android版をリクエスト",
-      "mailSubject": "Androidアプリテスト参加希望",
-      "mailBody": "メール：\n\n希望するアプリ：\n\nAndroidスマホ、タブレット、または両方：\n\n14日間テストに参加し、継続して利用できますか？ はい/いいえ\n\n最も重要な機能：\n"
+      "cta": "Android版をリクエスト"
+    },
+    "androidRequestPage": {
+      "seoTitle": "Androidアプリのリクエスト",
+      "seoDesc": "一部のBiblioFuseアプリの今後のAndroid版への関心を登録します。",
+      "back": "BiblioFuseに戻る",
+      "eyebrow": "Android需要リスト",
+      "title": "Android版をリクエスト",
+      "desc": "Androidで使いたいBiblioFuseアプリを教えてください。現在のサイト言語も一緒に送信され、言語別の需要把握に使われます。",
+      "flow": {
+        "website": "Webサイト",
+        "appsScript": "Apps Script",
+        "googleSheet": "Google Sheet"
+      },
+      "fields": {
+        "email": "メール",
+        "appInterested": "興味のあるアプリ",
+        "deviceType": "Androidスマホ、タブレット、または両方？",
+        "canTest": "14日間テストに参加し、継続して利用できますか？",
+        "feature": "あなたにとって最も重要な機能",
+        "comments": "自由コメント"
+      },
+      "placeholders": {
+        "email": "you@example.com",
+        "select": "選択してください",
+        "otherApp": "アプリ名を入力してください",
+        "feature": "Android版が役立つために必要なことは何ですか？",
+        "comments": "ほかに伝えたいことはありますか？"
+      },
+      "options": {
+        "otherValue": "Others, please specify",
+        "otherLabel": "その他、具体的に記入",
+        "phone": "Androidスマホ",
+        "tablet": "Androidタブレット",
+        "both": "スマホとタブレット両方",
+        "yes": "はい",
+        "no": "いいえ"
+      },
+      "submit": "リクエストを送信",
+      "submitting": "送信中...",
+      "success": "ありがとうございます。Androidリクエストを記録しました。",
+      "configMissing": "Google Sheet接続がまだ設定されていません。リクエストを集める前に VITE_ANDROID_REQUEST_SCRIPT_URL を設定してください。",
+      "errorFallback": "問題が発生しました。後でもう一度お試しください。",
+      "sideTitle": "記録される内容",
+      "sideDesc": "回答に加えて、サイト言語とブラウザ言語がシートに送信されます。Comic Duplicate Scannerは大きな画面が必要なため意図的に除外しています。",
+      "languageLabel": "サイト言語",
+      "browserLanguageLabel": "ブラウザ言語",
+      "unknown": "不明"
     }
   }
 }

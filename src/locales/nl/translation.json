@@ -1704,10 +1704,54 @@
       "eyebrow": "Android interesselijst",
       "title": "Wil je nog een BiblioFuse-app op Android?",
       "desc": "Android-releases hebben een gesloten test met 12-20 personen gedurende 14 dagen nodig. Vertel ons welke app je wilt en of je actief kunt blijven tijdens de test.",
-      "note": "Dit opent voorlopig een e-mailsjabloon. Vervang dit door een Google Forms-link zodra het formulier klaar is.",
-      "cta": "Android-versie aanvragen",
-      "mailSubject": "Interesse in Android-apptest",
-      "mailBody": "E-mail:\n\nGewenste app:\n\nAndroid-telefoon, tablet of beide:\n\nKun je 14 dagen testen en actief blijven? Ja/Nee\n\nBelangrijkste functie voor jou:\n"
+      "cta": "Android-versie aanvragen"
+    },
+    "androidRequestPage": {
+      "seoTitle": "Android-app aanvragen",
+      "seoDesc": "Geef je interesse aan in toekomstige Android-versies van geselecteerde BiblioFuse-apps.",
+      "back": "Terug naar BiblioFuse",
+      "eyebrow": "Android interesselijst",
+      "title": "Vraag een Android-versie aan",
+      "desc": "Vertel welke BiblioFuse-app je op Android wilt. Je huidige websitetaal wordt meegestuurd zodat we de vraag per taal kunnen begrijpen.",
+      "flow": {
+        "website": "Website",
+        "appsScript": "Apps Script",
+        "googleSheet": "Google Sheet"
+      },
+      "fields": {
+        "email": "E-mail",
+        "appInterested": "Gewenste app",
+        "deviceType": "Android-telefoon, tablet of beide?",
+        "canTest": "Kun je 14 dagen testen en actief blijven?",
+        "feature": "Belangrijkste functie voor jou",
+        "comments": "Open opmerkingen"
+      },
+      "placeholders": {
+        "email": "jij@voorbeeld.com",
+        "select": "Kies een optie",
+        "otherApp": "Specificeer de app",
+        "feature": "Wat zou de Android-versie nuttig maken voor jou?",
+        "comments": "Wil je nog iets delen?"
+      },
+      "options": {
+        "otherValue": "Others, please specify",
+        "otherLabel": "Overige, graag specificeren",
+        "phone": "Android-telefoon",
+        "tablet": "Android-tablet",
+        "both": "Telefoon en tablet",
+        "yes": "Ja",
+        "no": "Nee"
+      },
+      "submit": "Aanvraag verzenden",
+      "submitting": "Verzenden...",
+      "success": "Bedankt. Je Android-aanvraag is geregistreerd.",
+      "configMissing": "De Google Sheet-koppeling is nog niet geconfigureerd. Stel VITE_ANDROID_REQUEST_SCRIPT_URL in voordat je aanvragen verzamelt.",
+      "errorFallback": "Er is iets misgegaan. Probeer het later opnieuw.",
+      "sideTitle": "Wat wordt geregistreerd",
+      "sideDesc": "De sheet ontvangt je antwoorden plus de websitetaal en browsertaal. Comic Duplicate Scanner is bewust uitgesloten omdat die een groter scherm nodig heeft.",
+      "languageLabel": "Websitetaal",
+      "browserLanguageLabel": "Browsertaal",
+      "unknown": "Onbekend"
     }
   }
 }

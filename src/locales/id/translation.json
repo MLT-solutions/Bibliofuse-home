@@ -1704,10 +1704,54 @@
       "eyebrow": "Daftar minat Android",
       "title": "Ingin app BiblioFuse lain hadir di Android?",
       "desc": "Rilis Android perlu uji tertutup 12-20 orang selama 14 hari. Beri tahu app mana yang Anda inginkan dan apakah Anda bisa tetap aktif selama pengujian.",
-      "note": "Untuk saat ini tombol membuka templat email. Ganti dengan tautan Google Form saat formulir siap.",
-      "cta": "Minta versi Android",
-      "mailSubject": "Minat uji app Android",
-      "mailBody": "Email:\n\nApp yang diminati:\n\nPonsel Android, tablet, atau keduanya:\n\nBisa membantu uji 14 hari dan tetap aktif? Ya/Tidak\n\nFitur paling penting bagi Anda:\n"
+      "cta": "Minta versi Android"
+    },
+    "androidRequestPage": {
+      "seoTitle": "Permintaan app Android",
+      "seoDesc": "Daftarkan minat untuk versi Android mendatang dari app BiblioFuse tertentu.",
+      "back": "Kembali ke BiblioFuse",
+      "eyebrow": "Daftar minat Android",
+      "title": "Minta versi Android",
+      "desc": "Beri tahu app BiblioFuse mana yang Anda inginkan di Android. Bahasa situs saat ini ikut dikirim agar kami memahami permintaan per lokal.",
+      "flow": {
+        "website": "Website",
+        "appsScript": "Apps Script",
+        "googleSheet": "Google Sheet"
+      },
+      "fields": {
+        "email": "Email",
+        "appInterested": "App yang diminati",
+        "deviceType": "Ponsel Android, tablet, atau keduanya?",
+        "canTest": "Bisa membantu uji 14 hari dan tetap aktif?",
+        "feature": "Fitur paling penting bagi Anda",
+        "comments": "Komentar terbuka"
+      },
+      "placeholders": {
+        "email": "anda@contoh.com",
+        "select": "Pilih satu",
+        "otherApp": "Sebutkan app",
+        "feature": "Apa yang membuat versi Android berguna bagi Anda?",
+        "comments": "Ada hal lain yang ingin dibagikan?"
+      },
+      "options": {
+        "otherValue": "Others, please specify",
+        "otherLabel": "Lainnya, sebutkan",
+        "phone": "Ponsel Android",
+        "tablet": "Tablet Android",
+        "both": "Ponsel dan tablet",
+        "yes": "Ya",
+        "no": "Tidak"
+      },
+      "submit": "Kirim permintaan",
+      "submitting": "Mengirim...",
+      "success": "Terima kasih. Permintaan Android Anda telah dicatat.",
+      "configMissing": "Koneksi Google Sheet belum dikonfigurasi. Atur VITE_ANDROID_REQUEST_SCRIPT_URL sebelum mengumpulkan permintaan.",
+      "errorFallback": "Terjadi kesalahan. Coba lagi nanti.",
+      "sideTitle": "Yang dicatat",
+      "sideDesc": "Sheet menerima jawaban Anda plus bahasa situs dan bahasa browser. Comic Duplicate Scanner sengaja dikecualikan karena membutuhkan layar yang lebih besar.",
+      "languageLabel": "Bahasa situs",
+      "browserLanguageLabel": "Bahasa browser",
+      "unknown": "Tidak diketahui"
     }
   }
 }

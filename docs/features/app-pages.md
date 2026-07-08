@@ -21,6 +21,21 @@ own top-level route (`/comicreader`, `/grepreader`, `/archive`, `/smartdecrypt`,
   linking to the raw ASC source files. Keep them framed/cropped so the page's own
   heading remains the primary heading.
 
+## Android request page
+The homepage Android demand CTA routes to `/:lang/androidrequest/` instead of opening
+`mailto:`. `src/pages/AndroidRequest.jsx` renders a localized noindex form that posts
+to the Google Apps Script endpoint configured by `VITE_ANDROID_REQUEST_SCRIPT_URL`.
+Submissions include the visible answers plus hidden context fields:
+`siteLanguage`, `browserLanguage`, `pagePath`, `referrer`, and `submittedAt`.
+
+The app-interest list is intentionally fixed to:
+`BiblioFuse GrepTag Reader`, `SmartDecrypt PDF ZIP`, `ContentCue`, and
+`Others, please specify`. Comic Duplicate Scanner is intentionally excluded because it
+needs a bigger screen.
+
+`/androidrequest` is generated as a static fallback for all 11 locales and marked
+`noindex, follow`, but it is not added to the sitemap.
+
 ## Flagship BiblioFuse Reader
 `src/pages/ComicReader.jsx` is the Layer-1 page for the flagship comic/ebook reader at
 `/comicreader`. It reuses the translated `redesign.readerSection.*`,

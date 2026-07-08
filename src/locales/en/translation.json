@@ -1699,10 +1699,54 @@
       "eyebrow": "Android demand list",
       "title": "Want another BiblioFuse app on Android?",
       "desc": "Android releases need a 12-20 person closed test for 14 days. Tell us which app you want and whether you can stay active during the test.",
-      "note": "This opens an email template for now. Replace it with a Google Form link once the form is ready.",
-      "cta": "Request Android version",
-      "mailSubject": "Android app test interest",
-      "mailBody": "Email:\n\nApp interested in:\n\nAndroid phone, tablet, or both:\n\nCan you help test for 14 days and stay active? Yes/No\n\nMost important feature for you:\n"
+      "cta": "Request Android version"
+    },
+    "androidRequestPage": {
+      "seoTitle": "Android app request",
+      "seoDesc": "Request interest in future Android versions of selected BiblioFuse apps.",
+      "back": "Back to BiblioFuse",
+      "eyebrow": "Android demand list",
+      "title": "Request an Android version",
+      "desc": "Tell us which BiblioFuse app you want on Android. Your current website language is included with the request so we can understand demand by locale.",
+      "flow": {
+        "website": "Website",
+        "appsScript": "Apps Script",
+        "googleSheet": "Google Sheet"
+      },
+      "fields": {
+        "email": "Email",
+        "appInterested": "App interested in",
+        "deviceType": "Android phone, tablet, or both?",
+        "canTest": "Can you help test for 14 days and stay active?",
+        "feature": "Most important feature for you",
+        "comments": "Open comments"
+      },
+      "placeholders": {
+        "email": "you@example.com",
+        "select": "Select one",
+        "otherApp": "Please specify the app",
+        "feature": "What would make the Android version useful for you?",
+        "comments": "Anything else you want to share?"
+      },
+      "options": {
+        "otherValue": "Others, please specify",
+        "otherLabel": "Others, please specify",
+        "phone": "Android phone",
+        "tablet": "Android tablet",
+        "both": "Both phone and tablet",
+        "yes": "Yes",
+        "no": "No"
+      },
+      "submit": "Submit request",
+      "submitting": "Submitting...",
+      "success": "Thank you. Your Android request has been recorded.",
+      "configMissing": "The Google Sheet connection is not configured yet. Please set VITE_ANDROID_REQUEST_SCRIPT_URL before collecting requests.",
+      "errorFallback": "Something went wrong. Please try again later.",
+      "sideTitle": "What gets recorded",
+      "sideDesc": "The sheet receives your answers plus the website language and browser language. Comic Duplicate Scanner is intentionally excluded because it needs a bigger screen.",
+      "languageLabel": "Website language",
+      "browserLanguageLabel": "Browser language",
+      "unknown": "Unknown"
     }
   }
 }

@@ -1704,10 +1704,54 @@
       "eyebrow": "Android 需求名单",
       "title": "想要其他 BiblioFuse 应用登陆 Android？",
       "desc": "Android 发布需要 12-20 人参加为期 14 天的封闭测试。告诉我们你想要哪款应用，以及是否能在测试期间保持活跃。",
-      "note": "目前会打开邮件模板。Google 表单准备好后可替换为表单链接。",
-      "cta": "申请 Android 版本",
-      "mailSubject": "Android 应用测试意向",
-      "mailBody": "邮箱：\n\n感兴趣的应用：\n\nAndroid 手机、平板或两者：\n\n能否参与 14 天测试并保持活跃？是/否\n\n你最需要的功能：\n"
+      "cta": "申请 Android 版本"
+    },
+    "androidRequestPage": {
+      "seoTitle": "Android 应用申请",
+      "seoDesc": "登记你对部分 BiblioFuse 应用未来 Android 版本的兴趣。",
+      "back": "返回 BiblioFuse",
+      "eyebrow": "Android 需求名单",
+      "title": "申请 Android 版本",
+      "desc": "告诉我们你希望哪款 BiblioFuse 应用登陆 Android。表单会附带当前网站语言，方便我们了解不同语言的需求。",
+      "flow": {
+        "website": "网站",
+        "appsScript": "Apps Script",
+        "googleSheet": "Google Sheet"
+      },
+      "fields": {
+        "email": "邮箱",
+        "appInterested": "感兴趣的应用",
+        "deviceType": "Android 手机、平板或两者？",
+        "canTest": "能否参与 14 天测试并保持活跃？",
+        "feature": "对你最重要的功能",
+        "comments": "开放评论"
+      },
+      "placeholders": {
+        "email": "you@example.com",
+        "select": "请选择",
+        "otherApp": "请注明应用",
+        "feature": "什么会让 Android 版本对你有用？",
+        "comments": "还有其他想分享的吗？"
+      },
+      "options": {
+        "otherValue": "Others, please specify",
+        "otherLabel": "其他，请注明",
+        "phone": "Android 手机",
+        "tablet": "Android 平板",
+        "both": "手机和平板",
+        "yes": "是",
+        "no": "否"
+      },
+      "submit": "提交申请",
+      "submitting": "提交中...",
+      "success": "谢谢。你的 Android 申请已记录。",
+      "configMissing": "Google Sheet 连接尚未配置。收集申请前请设置 VITE_ANDROID_REQUEST_SCRIPT_URL。",
+      "errorFallback": "出现问题。请稍后再试。",
+      "sideTitle": "会记录什么",
+      "sideDesc": "表格会收到你的回答，以及网站语言和浏览器语言。Comic Duplicate Scanner 因需要更大屏幕而被有意排除。",
+      "languageLabel": "网站语言",
+      "browserLanguageLabel": "浏览器语言",
+      "unknown": "未知"
     }
   }
 }

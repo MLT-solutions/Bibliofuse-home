@@ -1704,10 +1704,54 @@
       "eyebrow": "Список спроса Android",
       "title": "Хотите ещё одно приложение BiblioFuse на Android?",
       "desc": "Для релизов Android нужен закрытый тест на 12-20 человек в течение 14 дней. Сообщите, какое приложение вам нужно и сможете ли вы оставаться активным во время теста.",
-      "note": "Пока открывается шаблон письма. Замените его ссылкой Google Forms, когда форма будет готова.",
-      "cta": "Запросить Android-версию",
-      "mailSubject": "Интерес к тестированию Android-приложения",
-      "mailBody": "Email:\n\nИнтересующее приложение:\n\nAndroid телефон, планшет или оба:\n\nМожете тестировать 14 дней и оставаться активным? Да/Нет\n\nСамая важная функция для вас:\n"
+      "cta": "Запросить Android-версию"
+    },
+    "androidRequestPage": {
+      "seoTitle": "Запрос Android-приложения",
+      "seoDesc": "Сообщите об интересе к будущим Android-версиям выбранных приложений BiblioFuse.",
+      "back": "Назад к BiblioFuse",
+      "eyebrow": "Список спроса Android",
+      "title": "Запросить Android-версию",
+      "desc": "Сообщите, какое приложение BiblioFuse вы хотите видеть на Android. Текущий язык сайта отправляется вместе с запросом, чтобы мы понимали спрос по языкам.",
+      "flow": {
+        "website": "Сайт",
+        "appsScript": "Apps Script",
+        "googleSheet": "Google Sheet"
+      },
+      "fields": {
+        "email": "Email",
+        "appInterested": "Интересующее приложение",
+        "deviceType": "Телефон Android, планшет или оба?",
+        "canTest": "Можете тестировать 14 дней и оставаться активным?",
+        "feature": "Самая важная функция для вас",
+        "comments": "Открытый комментарий"
+      },
+      "placeholders": {
+        "email": "you@example.com",
+        "select": "Выберите вариант",
+        "otherApp": "Укажите приложение",
+        "feature": "Что сделало бы Android-версию полезной для вас?",
+        "comments": "Хотите добавить что-нибудь еще?"
+      },
+      "options": {
+        "otherValue": "Others, please specify",
+        "otherLabel": "Другое, укажите",
+        "phone": "Телефон Android",
+        "tablet": "Планшет Android",
+        "both": "Телефон и планшет",
+        "yes": "Да",
+        "no": "Нет"
+      },
+      "submit": "Отправить запрос",
+      "submitting": "Отправка...",
+      "success": "Спасибо. Ваш Android-запрос записан.",
+      "configMissing": "Подключение к Google Sheet еще не настроено. Укажите VITE_ANDROID_REQUEST_SCRIPT_URL перед сбором запросов.",
+      "errorFallback": "Что-то пошло не так. Попробуйте позже.",
+      "sideTitle": "Что записывается",
+      "sideDesc": "Таблица получает ваши ответы, язык сайта и язык браузера. Comic Duplicate Scanner намеренно исключен, потому что ему нужен больший экран.",
+      "languageLabel": "Язык сайта",
+      "browserLanguageLabel": "Язык браузера",
+      "unknown": "Неизвестно"
     }
   }
 }

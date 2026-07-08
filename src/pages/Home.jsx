@@ -473,8 +473,8 @@ function TwoAppsSection({ lang }) {
 
 function AndroidInterestSection() {
   const { t } = useTranslation();
+  const { lang } = useParams();
   const android = t('redesign.androidInterest', { returnObjects: true });
-  const mailtoHref = `mailto:support@mlogictech.com?subject=${encodeURIComponent(android.mailSubject)}&body=${encodeURIComponent(android.mailBody)}`;
 
   return (
     <section className="bg-white py-14 sm:py-16">
@@ -484,15 +484,14 @@ function AndroidInterestSection() {
             <div className="mb-2 text-xs font-black uppercase tracking-[0.18em] text-emerald-700">{android.eyebrow}</div>
             <h2 className="text-2xl font-black tracking-tight text-slate-950">{android.title}</h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-700">{android.desc}</p>
-            <p className="mt-3 text-xs leading-relaxed text-slate-500">{android.note}</p>
           </div>
-          <a
-            href={mailtoHref}
+          <Link
+            to={`/${lang}/androidrequest/`}
             className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 text-sm font-semibold text-white transition hover:bg-emerald-700"
           >
             {android.cta}
             <ArrowRightIcon />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -19,6 +19,7 @@ import ComicReader from './pages/ComicReader';
 import ArchiveScanner from './pages/ArchiveScanner';
 import SmartDecrypt from './pages/SmartDecrypt';
 import ContentCue from './pages/ContentCue';
+import AndroidRequest from './pages/AndroidRequest';
 import Footer from './components/Footer';
 
 // Language redirect component - detects and redirects to proper language
@@ -114,6 +115,7 @@ function AppLayout() {
           <Route path="/contentcue" element={<ContentCue />} />
           <Route path="/contentcue/changelog" element={<AppChangelog appSlug="contentcue" />} />
           <Route path="/contentcue/privacy" element={<AppPrivacy appSlug="contentcue" />} />
+          <Route path="/androidrequest" element={<AndroidRequest />} />
           <Route path="*" element={<Navigate to={`/${lang}/`} replace />} />
         </Routes>
       </main>

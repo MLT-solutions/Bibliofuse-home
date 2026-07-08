@@ -1704,10 +1704,54 @@
       "eyebrow": "Liste de demande Android",
       "title": "Vous voulez une autre app BiblioFuse sur Android ?",
       "desc": "Les sorties Android nécessitent un test fermé de 12 à 20 personnes pendant 14 jours. Dites-nous quelle app vous voulez et si vous pouvez rester actif pendant le test.",
-      "note": "Pour l’instant, cela ouvre un modèle d’e-mail. Remplacez-le par un lien Google Forms quand le formulaire sera prêt.",
-      "cta": "Demander la version Android",
-      "mailSubject": "Intérêt pour le test Android",
-      "mailBody": "E-mail :\n\nApp souhaitée :\n\nTéléphone Android, tablette ou les deux :\n\nPouvez-vous tester 14 jours et rester actif ? Oui/Non\n\nFonction la plus importante pour vous :\n"
+      "cta": "Demander la version Android"
+    },
+    "androidRequestPage": {
+      "seoTitle": "Demande d’app Android",
+      "seoDesc": "Indiquez votre intérêt pour de futures versions Android de certaines apps BiblioFuse.",
+      "back": "Retour à BiblioFuse",
+      "eyebrow": "Liste de demande Android",
+      "title": "Demander une version Android",
+      "desc": "Dites-nous quelle app BiblioFuse vous voulez sur Android. La langue actuelle du site est incluse pour comprendre la demande par langue.",
+      "flow": {
+        "website": "Site web",
+        "appsScript": "Apps Script",
+        "googleSheet": "Google Sheet"
+      },
+      "fields": {
+        "email": "E-mail",
+        "appInterested": "App souhaitée",
+        "deviceType": "Téléphone Android, tablette ou les deux ?",
+        "canTest": "Pouvez-vous tester 14 jours et rester actif ?",
+        "feature": "Fonction la plus importante pour vous",
+        "comments": "Commentaires libres"
+      },
+      "placeholders": {
+        "email": "vous@exemple.com",
+        "select": "Sélectionnez une option",
+        "otherApp": "Veuillez préciser l’app",
+        "feature": "Qu’est-ce qui rendrait la version Android utile pour vous ?",
+        "comments": "Autre chose à partager ?"
+      },
+      "options": {
+        "otherValue": "Others, please specify",
+        "otherLabel": "Autres, veuillez préciser",
+        "phone": "Téléphone Android",
+        "tablet": "Tablette Android",
+        "both": "Téléphone et tablette",
+        "yes": "Oui",
+        "no": "Non"
+      },
+      "submit": "Envoyer la demande",
+      "submitting": "Envoi...",
+      "success": "Merci. Votre demande Android a été enregistrée.",
+      "configMissing": "La connexion Google Sheet n’est pas encore configurée. Définissez VITE_ANDROID_REQUEST_SCRIPT_URL avant de collecter des demandes.",
+      "errorFallback": "Une erreur est survenue. Réessayez plus tard.",
+      "sideTitle": "Ce qui est enregistré",
+      "sideDesc": "La feuille reçoit vos réponses, la langue du site et la langue du navigateur. Comic Duplicate Scanner est volontairement exclu car il nécessite un écran plus grand.",
+      "languageLabel": "Langue du site",
+      "browserLanguageLabel": "Langue du navigateur",
+      "unknown": "Inconnue"
     }
   }
 }
