@@ -1149,10 +1149,10 @@ function ContentCueSection() {
 
             <div className="mt-8 grid max-w-lg gap-4 sm:grid-cols-2">
               {[
-                { title: t('redesign.contentcueSection.features.resume.title'), body: t('redesign.contentcueSection.features.resume.body') },
-                { title: t('redesign.contentcueSection.features.adOutlines.title'), body: t('redesign.contentcueSection.features.adOutlines.body') },
-                { title: t('redesign.contentcueSection.features.mute.title'), body: t('redesign.contentcueSection.features.mute.body') },
-                { title: t('redesign.contentcueSection.features.bookmarks.title'), body: t('redesign.contentcueSection.features.bookmarks.body') },
+                { title: t('redesign.contentcueSection.features.rssBriefing.title'), body: t('redesign.contentcueSection.features.rssBriefing.body') },
+                { title: t('redesign.contentcueSection.features.podcasts.title'), body: t('redesign.contentcueSection.features.podcasts.body') },
+                { title: t('redesign.contentcueSection.features.webTts.title'), body: t('redesign.contentcueSection.features.webTts.body') },
+                { title: t('redesign.contentcueSection.features.icloudSync.title'), body: t('redesign.contentcueSection.features.icloudSync.body') },
               ].map((feature) => (
                 <div key={feature.title} className="flex items-start gap-2.5">
                   <span className="mt-0.5 grid h-5 w-5 flex-shrink-0 place-items-center rounded-md bg-green-100 text-green-700">
@@ -1226,12 +1226,12 @@ function ContentCueSection() {
               </div>
               <div className="h-8 w-px bg-line" />
               <div>
-                <div className="font-display tighter text-xl font-bold text-green-600">$2.99</div>
+                <div className="font-display tighter text-xl font-bold text-green-600">{t('redesign.contentcueSection.stats.premiumValue')}</div>
                 <div className="text-[10px] uppercase tracking-wider text-ink-soft">{t('redesign.contentcueSection.stats.oneTimePro')}</div>
               </div>
               <div className="h-8 w-px bg-line" />
               <div>
-                <div className="font-display tighter text-xl font-bold text-ink">5</div>
+                <div className="font-display tighter text-xl font-bold text-ink">11</div>
                 <div className="text-[10px] uppercase tracking-wider text-ink-soft">{t('redesign.contentcueSection.stats.appLangs')}</div>
               </div>
             </div>

@@ -536,7 +536,7 @@
           "desc": "Native lezer en bibliotheekbeheerder voor persoonlijke e-book- en stripcollecties.",
           "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP en TXT",
           "bullet2": "Tags, beoordelingen, voortgang en bladwijzers",
-          "bullet3": "iCloud-bibliotheek op iPhone, iPad en Mac",
+          "bullet3": "iCloud-synchronisatie en live streaming vanaf je Mac-bibliotheek",
           "cta": "Download in App Store",
           "secondary": "Google Play"
         },
@@ -570,10 +570,10 @@
         },
         "contentcue": {
           "tag": "Alleen iOS",
-          "desc": "Lichte leesnavigator die je scrolpositie herstelt na elke onderbreking.",
-          "bullet1": "Hervat met één tik na popups of omleidingen",
-          "bullet2": "Leesmodus met automatisch scrollen",
-          "bullet3": "Bladwijzers · Geen account nodig",
+          "desc": "Alles-in-één browse-, lees- en luisterapp: RSS-lezer met audiobriefings, podcastspeler, tekst-naar-spraak voor webpagina's en iCloud-synchronisatie.",
+          "bullet1": "RSS-lezer met audiobriefing van ongelezen koppen",
+          "bullet2": "Podcastspeler met offline downloads",
+          "bullet3": "Tekst-naar-spraak voor webpagina's met achtergrondweergave",
           "cta": "App Store",
           "bullet4": "Beschikbaar in 11 talen"
         },
@@ -582,7 +582,7 @@
           "desc": "Volledige tekstzoekopdracht, tagging en organisatie voor EPUB- en TXT-bibliotheken.",
           "bullet1": "Grep met AND / OR / NOT logica",
           "bullet2": "Tag op genre · automatisch uitvoeren bij import",
-          "bullet3": "Wi-Fi sync in elke richting tussen apparaten",
+          "bullet3": "Aanpasbare lezer — thema's, lettertypen en zoeken door het hele boek",
           "cta": "Meer informatie"
         }
       }
@@ -735,35 +735,36 @@
     },
     "contentcueSection": {
       "badge": "Zuster-app · iPhone en iPad",
-      "titleA": "Browsen. Onderbroken worden.",
-      "titleB": "Hervat precies waar je was gebleven.",
-      "desc": "ContentCue is een lichte leesnavigator voor lange artikelen, documentatie, forums en strips. Popups, omleidingen en onbedoelde tikken kunnen je plaats niet stelen — één tik brengt je terug.",
+      "titleA": "Browse, lees en luister —",
+      "titleB": "verlies nooit je plek.",
+      "desc": "ContentCue is een alles-in-één browse-, lees- en luisterapp: RSS-feeds met een audiobriefing van je ongelezen koppen, een podcastspeler met offline downloads, tekst-naar-spraak voor elke webpagina met achtergrondweergave, en iCloud-synchronisatie op je apparaten.",
       "features": {
-        "resume": {
-          "title": "Hervat met één tik",
-          "body": "Keert onmiddellijk terug naar je opgeslagen positie."
+        "rssBriefing": {
+          "title": "RSS + audiobriefing",
+          "body": "Abonneer op feeds en beluister ongelezen koppen hardop."
         },
-        "adOutlines": {
-          "title": "Advertentiecontouren",
-          "body": "Markeert vermoedelijke advertentie-elementen voor afleidingvrij lezen."
+        "podcasts": {
+          "title": "Podcastspeler",
+          "body": "Zoek, stream en download afleveringen om offline te beluisteren."
         },
-        "mute": {
-          "title": "Audio dempen",
-          "body": "Dempt automatisch afspelende audio zonder de pagina te verlaten."
+        "webTts": {
+          "title": "Website TTS",
+          "body": "Druk op afspelen — blijft doorspelen met vergrendeld scherm."
         },
-        "bookmarks": {
-          "title": "Bladwijzers",
-          "body": "Sla pagina's op om later terug te bezoeken — geen account nodig."
+        "icloudSync": {
+          "title": "iCloud-synchronisatie",
+          "body": "Bladwijzers, feeds en abonnementen synchroniseren op je apparaten."
         }
       },
       "altBadge": "Download ContentCue in de App Store",
-      "pricing": "Gratis te gebruiken. ContentCue Pro is een eenmalige aankoop van $2,99: onbeperkte bladwijzers, aangepaste advertentiecontourstijlen en instelbaar automatisch scrollen.",
+      "pricing": "Gratis om te browsen. Premium ontgrendelt RSS, podcasts, TTS en iCloud-synchronisatie — jaarlijks met 7 dagen gratis proberen, of als eenmalige aankoop voor altijd.",
       "langNote": "App-taal: Engels · Spaans · Frans · Nederlands · Portugees · Russisch · Vereenvoudigd Chinees · Japans · Koreaans · Indonesisch · Maleis",
       "platformNote": "iPhone en iPad · Apple Silicon Mac (iOS-app via App Store)",
       "stats": {
         "requires": "Vereist",
-        "oneTimePro": "Eenmalig Pro",
-        "appLangs": "App-talen"
+        "oneTimePro": "Premium",
+        "appLangs": "App-talen",
+        "premiumValue": "Jaarlijks of voor altijd"
       }
     },
     "privacyStrip": {
@@ -1166,16 +1167,16 @@
       "titleB": "Of voor romans en light novels.",
       "desc": "Elke app is ontworpen rond hoe zijn bibliotheek echt werkt — verschillende bestandsgroottes, verschillende leesgewoonten, verschillende opslagbehoeften.",
       "comicTag": "STRIPS · MANGA · PDF",
-      "comicIdent": "Je bibliotheek leeft op je Mac. Stream het naar je iPhone.",
-      "comicBullet1": "CBZ, CBR, PDF, EPUB en TXT",
-      "comicBullet2": "Comprimeer en combineer om opslag te besparen",
-      "comicBullet3": "Stream vanaf Mac via Wi-Fi of 5G",
+      "comicIdent": "Grote bestanden. Bewaar ze op je iPhone — of stream ze rechtstreeks vanaf je Mac of PC.",
+      "comicBullet1": "Leest CBZ, CBR, PDF, EPUB & TXT",
+      "comicBullet2": "Comprimeer & combineer om ruimte te besparen — alles op het apparaat",
+      "comicBullet3": "Stream vanaf Mac of PC — thuis via Wi-Fi of onderweg via 5G, gebouwd voor grote volumes",
       "comicCta": "BiblioFuse Reader downloaden",
       "textTag": "EPUB · ROMANS · TXT",
-      "textIdent": "Je bibliotheek leeft op je telefoon. Zoek erin. Tag het.",
-      "textBullet1": "Volledige tekst grep met AND / OR / NOT logica",
-      "textBullet2": "Tag op genre · sync in elke richting",
-      "textBullet3": "Boekomslagen voor EPUB en TXT — visuele bibliotheek",
+      "textIdent": "Kleine bestanden. Je hele bibliotheek past op je telefoon — doorzoek en tag elk woord.",
+      "textBullet1": "Volledige tekst grep — AND / OR / NOT, start automatisch bij importeren",
+      "textBullet2": "Tag op genre · Wi-Fi-sync in elke richting",
+      "textBullet3": "Aanpasbare lezer — thema's, lettertypen en zoeken door het hele boek",
       "textCta": "GrepTag Reader verkennen",
       "bothNote": "Veel lezers gebruiken BiblioFuse voor strips en GrepTag voor romans — beide zijn gratis te proberen."
     },
@@ -1223,7 +1224,7 @@
         "desc": "EPUB-omslagen worden automatisch geëxtraheerd. Voor TXT-boeken worden omslagen gekoppeld aan afbeeldingen in dezelfde map of opgehaald via een URL. Lees EPUB en TXT met TTS, bladwijzers en aanpasbare lettertypen.",
         "bullet1": "EPUB-omslagen automatisch geëxtraheerd (gratis)",
         "bullet2": "TXT-omslagen uit afbeeldingen in dezelfde map of URL (Pro)",
-        "bullet3": "TTS met volumebeheer · bladwijzers · lettertypen"
+        "bullet3": "TTS met volumebeheer · bladwijzers · hoofdstuknavigatie"
       },
       "whySeparate": {
         "eyebrow": "Waarom twee apps?",
@@ -1313,10 +1314,27 @@
         {
           "q": "Heeft GrepTag Reader een internetverbinding nodig?",
           "a": "Nee. GrepTag Reader werkt volledig offline. Alle zoekacties, taggen en organiseren gebeurt direct op je apparaat — de app leest je EPUB- en TXT-bestanden lokaal, zonder server of internetverbinding. Het netwerk wordt alleen gebruikt voor de optionele Wi-Fi Sync-functie, die boeken overdraagt tussen je eigen apparaten via je lokale netwerk."
+        },
+        {
+          "q": "Kan ik het uiterlijk en de lettertypen van de lezer aanpassen?",
+          "a": "Ja. Kies uit Sepia-, Grijs- en Zwart-thema's (OLED) op iPhone, iPad en Mac. Selecteer een lettertype met live voorbeeld — waaronder Iowan, Charter, Kaiti en CJK-bewuste serif-lettertypen — of importeer je eigen .ttf/.otf-lettertype. Pas helderheid, tekstuitlijning en vet aan naar jouw leesvoorkeur."
+        },
+        {
+          "q": "Kan ik zoeken in het boek dat ik op dit moment lees?",
+          "a": "Ja. Zoeken door het hele boek doorzoekt het volledige TXT- of EPUB-bestand dat je leest, niet alleen het huidige hoofdstuk. Op Mac is er een aparte zoekbalk met dezelfde lettertypevoorbeeld-ervaring als op iOS."
         }
       ],
       "faqTitle": "Veelgestelde vragen",
-      "languages": "App-taal: Engels · Spaans · Frans · Nederlands · Portugees · Russisch · Vereenvoudigd Chinees · Japans · Koreaans · Indonesisch · Maleis"
+      "languages": "App-taal: Engels · Spaans · Frans · Nederlands · Portugees · Russisch · Vereenvoudigd Chinees · Japans · Koreaans · Indonesisch · Maleis",
+      "reader": {
+        "eyebrow": "Lezersaanpassing",
+        "title": "Maak de lezer helemaal van jezelf.",
+        "desc": "Stem de lezer af op jouw ogen op iPhone, iPad en Mac. Kies uit Sepia-, Grijs- en Zwart-thema's (OLED), selecteer een lettertype met live voorbeeld — of importeer je eigen lettertype — en pas helderheid, uitlijning en vet aan. Zoek door het hele boek dat je leest, niet alleen het huidige hoofdstuk.",
+        "bullet1": "Sepia-, Grijs- en Zwart-thema's (OLED) op iOS en macOS",
+        "bullet2": "Lettertypekiezer met live voorbeeld — Iowan, Charter, Kaiti, CJK-bewuste serif-lettertypen en meer — of importeer je eigen .ttf/.otf-lettertype",
+        "bullet3": "Helderheid, tekstuitlijning en vet — plus zoeken door het hele boek en een zoekbalk op macOS",
+        "badge": "Nieuw in 1.0.4 en 1.0.5"
+      }
     },
     "archivePage": {
       "seo": {
@@ -1516,16 +1534,16 @@
     },
     "contentcuePage": {
       "seo": {
-        "title": "ContentCue — Lezesbrowser die je plaats nooit verliest",
-        "desc": "ContentCue is een lezesbrowser voor iPhone en iPad die je scrollpositie opslaat wanneer advertenties je onderbreken, en tekent gekleurde randen rond advertenties zodat je altijd weet wat inhoud is en wat gesponsord. Eén tik hervat waar je bent gebleven."
+        "title": "ContentCue — Browse, lees en luister. Verlies nooit je plek.",
+        "desc": "ContentCue is een alles-in-één app voor iPhone en iPad: een RSS-lezer met audiobriefings, een podcastspeler, voorlezen van elke pagina met achtergrondweergave, en iCloud-synchronisatie — naast de bekende browser met positieherstel."
       },
       "hero": {
         "badge": "iPhone & iPad",
-        "title": "Lees. Word onderbroken. Hervat precies waar je bent gebleven.",
-        "desc": "ContentCue slaat je exacte scrollpositie op wanneer een popup of redirect je leesflow onderbreekt. Gekleurde randen markeren welke delen van de pagina advertenties zijn — zodat je echt artikelinhoud in één oogopslag van gesponsorde blokken kunt onderscheiden. Eén tik brengt je terug waar je was.",
-        "trust1": "Advertenties gemarkeerd, niet geblokkeerd",
-        "trust2": "Geen surfgegevens verzameld",
-        "trust3": "Werkt met elke website",
+        "title": "Browse, lees en luister — en verlies nooit je plek.",
+        "desc": "ContentCue is een alles-in-één app: browse met automatisch positieherstel, abonneer je op RSS-feeds en beluister een audiobriefing van je ongelezen koppen, stream of download podcasts, en laat elke webpagina hardop voorlezen — zelfs met vergrendeld scherm. Alles synchroniseert op je apparaten via iCloud.",
+        "trust1": "RSS, podcasts en web in één app",
+        "trust2": "Advertenties gemarkeerd, niet geblokkeerd",
+        "trust3": "iCloud-synchronisatie",
         "appStore": "Download in App Store",
         "trust4": "11 talen"
       },
@@ -1559,24 +1577,27 @@
       "extras": {
         "eyebrow": "Audio & bladwijzers",
         "title": "Geluid dempen. Sla je favorieten op.",
-        "desc": "Zet audio-demping aan om autoplay-videoadvertenties uit te schakelen terwijl je in het openbaar leest. Voeg tot 3 sites gratis aan favorieten toe, of upgrade naar Pro voor onbeperkte bladwijzers en instelbare auto-scroll-snelheid voor webtoons en manga.",
+        "desc": "Schakel geluid dempen in om automatisch afspelende videoadvertenties stil te zetten terwijl je in het openbaar leest. Voeg tot 3 pagina's gratis toe aan je bladwijzers, of upgrade naar Premium voor onbeperkte bladwijzers, aangepaste advertentierandkleuren en instelbare automatische scrollsnelheid voor webtoons, manga en lange artikelen.",
         "bullet1": "Audio dempen — schakel alle websiteaudio uit met één tik",
-        "bullet2": "Bladwijzers — 3 gratis, onbeperkt met Pro",
-        "bullet3": "Instelbare auto-scroll-snelheid voor long-form inhoud (Pro)"
+        "bullet2": "Bladwijzers — 3 gratis, onbeperkt met Premium",
+        "bullet3": "Instelbare automatische scrollsnelheid voor lange content (Premium)"
       },
       "pricing": {
         "eyebrow": "Eenvoudige prijzen",
-        "title": "Gratis voor altijd. Pro voor vaste lezers.",
+        "title": "Gratis om te browsen. Premium ontgrendelt de audiohub.",
         "freeTitle": "Gratis",
-        "proTitle": "Pro",
-        "feat1": "Positie herstellen",
-        "feat2": "Visuele advertentie-onderscheiding",
-        "feat3": "Audio dempen",
+        "proTitle": "Premium",
+        "feat1": "Positieherstel",
+        "feat2": "Visuele advertentieonderscheiding",
+        "feat3": "Geluid dempen",
         "feat4": "Bladwijzers",
         "feat4free": "3",
         "feat4pro": "Onbeperkt",
-        "feat5": "Aangepaste kleur advertentierand",
-        "feat6": "Instelbare auto-scroll"
+        "feat5": "RSS-lezer + TTS + OPML-import/-export",
+        "feat6": "Podcastspeler + offline downloads",
+        "feat7": "iCloud-synchronisatie",
+        "feat8": "Aangepaste advertentiekleuren, auto-scroll en Siri-snelkoppelingen",
+        "note": "Premium is beschikbaar als jaarabonnement met 7 dagen gratis proberen, of als eenmalige aankoop voor altijd. De prijs wordt weergegeven in de app voor jouw regio."
       },
       "faqTitle": "Veelgestelde vragen",
       "faq": [
@@ -1593,17 +1614,65 @@
           "a": "ContentCue controleert je scrollpositie terwijl je leest. Wanneer je navigeert weg (door op een advertentielink te tikken, een redirect of de terugnop), slaat het je exacte positie op. Een knop Hervatten verschijnt in de browser-UI. Tik erop om precies terug te keren naar waar je was."
         },
         {
+          "q": "Heeft ContentCue een RSS-lezer?",
+          "a": "Ja. Abonneer op elke RSS-feed, zet je favoriete kanalen vast en importeer of exporteer je hele abonnementenlijst via OPML. Schakel TTS in om je ongelezen koppen hardop te beluisteren als een doorlopende audiobriefing, als een persoonlijke radio."
+        },
+        {
+          "q": "Kan ik podcasts beluisteren in ContentCue?",
+          "a": "Ja. Zoek in de ingebouwde podcastdirectory, zet de shows die je volgt vast en stream of download afleveringen om offline te beluisteren. Afspelen werkt via het vergrendelscherm en bevat een ingebouwde slaaptimer."
+        },
+        {
+          "q": "Leest ContentCue webpagina's hardop voor?",
+          "a": "Ja. Druk op afspelen bij een artikel en ContentCue leest het hardop voor met tekst-naar-spraak. Audio speelt door op de achtergrond met vergrendeld scherm, en de app hervat snel je laatste artikel en positie."
+        },
+        {
+          "q": "Synchroniseert ContentCue tussen mijn iPhone en iPad?",
+          "a": "Ja, met Premium. Bladwijzers, RSS-feeds en podcastabonnementen worden automatisch gesynchroniseerd via iCloud op al je Apple-apparaten."
+        },
+        {
           "q": "Verzamelt ContentCue mijn surfgegevens?",
           "a": "Nee. ContentCue verwerkt al het surfen volledig op je apparaat met Apple WebKit. Er wordt geen browsehistorie, bezochte URL's of persoonlijke gegevens verzameld of ergens naartoe verzonden."
         },
         {
-          "q": "Wat bevat de Pro-upgrade?",
-          "a": "Pro is een eenmalige aankoop van $2.99. Het ontgrendelt onbeperkte bladwijzers, aangepaste advertentierandkleuren en instelbare auto-scroll-snelheid. Er is geen abonnement — betaal eenmaal, gebruik voor altijd."
+          "q": "Wat is inbegrepen bij ContentCue Premium?",
+          "a": "Premium ontgrendelt de volledige audiohub: RSS-lezer met TTS en OPML-import/-export, Podcastspeler met offline downloads, iCloud-synchronisatie op je apparaten, Siri-snelkoppelingen, onbeperkte bladwijzers, aangepaste advertentierandkleuren en instelbare automatische scrollsnelheid. Beschikbaar als jaarabonnement met 7 dagen gratis proberen, of als eenmalige aankoop voor altijd — de prijs wordt weergegeven in de app voor jouw regio."
         }
       ],
       "backDesc": "Zoeken naar een comic- en e-bookreader?",
       "backCta": "Terug naar BiblioFuse Reader",
-      "languages": "App-taal: Engels · Spaans · Frans · Nederlands · Portugees · Russisch · Vereenvoudigd Chinees · Japans · Koreaans · Indonesisch · Maleis"
+      "languages": "App-taal: Engels · Spaans · Frans · Nederlands · Portugees · Russisch · Vereenvoudigd Chinees · Japans · Koreaans · Indonesisch · Maleis",
+      "rss": {
+        "eyebrow": "RSS-lezer",
+        "title": "Abonneer op je feeds. Beluister de koppen die je gemist hebt.",
+        "desc": "Abonneer op je favoriete nieuwsfeeds en zet de kanalen die je het meest leest bovenaan vast. Importeer of exporteer je hele abonnementenlijst via OPML. Lees artikelen in een overzichtelijke, gerichte weergave — of schakel TTS in om ongelezen koppen achter elkaar te beluisteren, als een persoonlijke radio.",
+        "bullet1": "Abonneer op onbeperkt RSS-feeds en zet je favoriete kanalen vast",
+        "bullet2": "Importeer of exporteer je abonnementenlijst via OPML",
+        "bullet3": "TTS leest ongelezen koppen achter elkaar voor, als een audiobriefing"
+      },
+      "podcast": {
+        "eyebrow": "Podcastspeler",
+        "title": "Zoek, stream en download je favoriete shows.",
+        "desc": "Zoek in de ingebouwde podcastdirectory, zet je favoriete shows vast en stream of download afleveringen om later offline te luisteren. Bedien afspelen via het vergrendelscherm, met een ingebouwde slaaptimer.",
+        "bullet1": "Ingebouwde podcastdirectory met vastgezette shows",
+        "bullet2": "Stream of download afleveringen om offline te beluisteren",
+        "bullet3": "Bediening via het vergrendelscherm, met slaaptimer"
+      },
+      "tts": {
+        "eyebrow": "Website TTS",
+        "title": "Druk op afspelen op elke pagina. Blijf luisteren met vergrendeld scherm.",
+        "desc": "ContentCue leest elk artikel hardop voor terwijl je rijdt, kookt of loopt. Audio speelt door op de achtergrond wanneer je scherm vergrendeld is en hervat snel je laatste artikel en positie.",
+        "bullet1": "Tekst-naar-spraak voor elk artikel, met één tik",
+        "bullet2": "Audio speelt door op de achtergrond met vergrendeld scherm",
+        "bullet3": "Snel hervatten van je laatste artikel en positie"
+      },
+      "icloudSiri": {
+        "eyebrow": "iCloud-synchronisatie & Siri-snelkoppelingen",
+        "title": "Alles volgt je tussen je iPhone en iPad.",
+        "desc": "Bladwijzers, RSS-feeds en podcastabonnementen worden automatisch gesynchroniseerd op al je Apple-apparaten. Zeg 'Hé Siri, speel ContentCue af' om je RSS-briefing of podcast te starten zonder de app te openen — kies de bron en snelheid apart voor RSS en podcasts in de Siri-afspeelinstellingen.",
+        "bullet1": "Bladwijzers, RSS-feeds en podcastabonnementen gesynchroniseerd via iCloud",
+        "bullet2": "'Hé Siri, speel ContentCue af' start je briefing of podcast handsfree",
+        "bullet3": "Vijf ingebouwde snelkoppelingen, met aparte bron- en snelheidsbediening voor RSS en podcasts"
+      }
     }
   }
 }

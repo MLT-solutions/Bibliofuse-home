@@ -536,7 +536,7 @@
           "desc": "Pembaca dan pengurus perpustakaan asli untuk koleksi e-book dan komik peribadi.",
           "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP & TXT",
           "bullet2": "Tag, penilaian, kemajuan & penanda buku",
-          "bullet3": "Perpustakaan iCloud pada iPhone, iPad & Mac",
+          "bullet3": "Penyegerakan iCloud & penstriman langsung dari perpustakaan Mac anda",
           "cta": "Dapatkan di App Store",
           "secondary": "Google Play"
         },
@@ -570,10 +570,10 @@
         },
         "contentcue": {
           "tag": "iOS Sahaja",
-          "desc": "Pelayar baca ringan yang memulihkan kedudukan tatal anda selepas sebarang gangguan.",
-          "bullet1": "Sambung semula dengan satu ketuk selepas popup atau ubah hala",
-          "bullet2": "Mod baca dengan tatal automatik",
-          "bullet3": "Penanda buku · Tiada akaun diperlukan",
+          "desc": "Aplikasi serba boleh untuk melayari, membaca dan mendengar: pembaca RSS dengan taklimat audio, pemain podcast, teks-ke-suara laman web, dan penyegerakan iCloud.",
+          "bullet1": "Pembaca RSS dengan taklimat audio tajuk belum dibaca",
+          "bullet2": "Pemain podcast dengan muat turun luar talian",
+          "bullet3": "Teks-ke-suara laman web dengan main balik latar belakang",
           "cta": "App Store",
           "bullet4": "Tersedia dalam 11 bahasa"
         },
@@ -582,7 +582,7 @@
           "desc": "Carian teks penuh, penandaan dan penganjuran untuk perpustakaan EPUB dan TXT.",
           "bullet1": "Grep dengan logik AND / OR / NOT",
           "bullet2": "Tag mengikut genre · jalankan secara automatik semasa import",
-          "bullet3": "Penyegerakan Wi-Fi dua hala antara peranti",
+          "bullet3": "Pembaca boleh disesuaikan — tema, fon & carian seluruh buku",
           "cta": "Ketahui Lebih Lanjut"
         }
       }
@@ -735,35 +735,36 @@
     },
     "contentcueSection": {
       "badge": "Aplikasi adik-beradik · iPhone & iPad",
-      "titleA": "Layari. Diganggu.",
-      "titleB": "Sambung semula tepat di mana anda berhenti.",
-      "desc": "ContentCue ialah pelayar baca ringan untuk artikel panjang, dokumentasi, forum dan komik. Popup, ubah hala dan ketukan tidak sengaja tidak boleh mencuri tempat anda——satu ketuk membawa anda kembali.",
+      "titleA": "Layari, baca dan dengar —",
+      "titleB": "jangan sesekali hilang tempat anda.",
+      "desc": "ContentCue ialah aplikasi serba boleh untuk melayari, membaca dan mendengar: suapan RSS dengan taklimat audio tajuk belum dibaca, pemain podcast dengan muat turun luar talian, teks-ke-suara untuk mana-mana laman web dengan main balik latar belakang, dan penyegerakan iCloud pada peranti anda.",
       "features": {
-        "resume": {
-          "title": "Sambung semula satu ketuk",
-          "body": "Kembali ke kedudukan tatal yang disimpan serta-merta."
+        "rssBriefing": {
+          "title": "RSS + taklimat audio",
+          "body": "Langgan suapan dan dengar tajuk belum dibaca dengan kuat."
         },
-        "adOutlines": {
-          "title": "Garisan iklan",
-          "body": "Menandakan elemen iklan untuk membaca tanpa gangguan."
+        "podcasts": {
+          "title": "Pemain Podcast",
+          "body": "Cari, strim dan muat turun episod untuk didengar luar talian."
         },
-        "mute": {
-          "title": "Redam audio",
-          "body": "Redamkan audio yang dimainkan secara automatik tanpa meninggalkan halaman."
+        "webTts": {
+          "title": "TTS Laman Web",
+          "body": "Tekan main — terus dimainkan walaupun skrin dikunci."
         },
-        "bookmarks": {
-          "title": "Penanda buku",
-          "body": "Simpan halaman untuk dilawati semula——tiada akaun diperlukan."
+        "icloudSync": {
+          "title": "Penyegerakan iCloud",
+          "body": "Penanda, suapan dan langganan disegerakkan pada peranti anda."
         }
       },
       "altBadge": "Muat turun ContentCue di App Store",
-      "pricing": "Percuma digunakan. ContentCue Pro ialah pembelian sekali gus $2.99: penanda buku tanpa had, gaya garisan iklan tersuai dan tatal automatik yang boleh dilaraskan.",
+      "pricing": "Percuma untuk melayari. Premium membuka RSS, podcast, TTS dan penyegerakan iCloud — tahunan dengan percubaan percuma 7 hari, atau pembelian seumur hidup sekali sahaja.",
       "langNote": "UI Apl: Inggeris · Sepanyol · Perancis · Belanda · Portugis · Rusia · Cina Ringkas · Jepun · Korea · Indonesia · Melayu",
       "platformNote": "iPhone & iPad · Mac Apple Silicon (aplikasi iOS melalui App Store)",
       "stats": {
         "requires": "Memerlukan",
-        "oneTimePro": "Pro sekali beli",
-        "appLangs": "Bahasa aplikasi"
+        "oneTimePro": "Premium",
+        "appLangs": "Bahasa aplikasi",
+        "premiumValue": "Tahunan atau seumur hidup"
       }
     },
     "privacyStrip": {
@@ -1166,16 +1167,16 @@
       "titleB": "Atau untuk novel dan novel ringan.",
       "desc": "Setiap aplikasi direka berdasarkan cara perpustakaannya berfungsi — saiz fail berbeza, tabiat membaca berbeza, keperluan storan berbeza.",
       "comicTag": "KOMIK · MANGA · PDF",
-      "comicIdent": "Perpustakaan anda ada di Mac. Strimkan ke iPhone.",
-      "comicBullet1": "CBZ, CBR, PDF, EPUB & TXT",
-      "comicBullet2": "Mampat & gabung untuk jimat storan",
-      "comicBullet3": "Strim dari Mac melalui Wi-Fi atau 5G",
+      "comicIdent": "Fail besar. Simpan di iPhone anda — atau strim terus dari Mac atau PC anda.",
+      "comicBullet1": "Menyokong CBZ, CBR, PDF, EPUB & TXT",
+      "comicBullet2": "Mampat & gabung untuk jimat ruang — semuanya pada peranti",
+      "comicBullet3": "Strim dari Mac atau PC — Wi-Fi di rumah atau 5G di luar, dibina untuk volum besar",
       "comicCta": "Muat Turun BiblioFuse Reader",
       "textTag": "EPUB · NOVEL · TXT",
-      "textIdent": "Perpustakaan anda ada di telefon. Cari. Tag.",
-      "textBullet1": "Grep teks penuh dengan logik AND / OR / NOT",
-      "textBullet2": "Tag mengikut genre · segerak ke mana-mana arah",
-      "textBullet3": "Kulit buku untuk EPUB & TXT — perpustakaan visual",
+      "textIdent": "Fail kecil. Seluruh perpustakaan anda muat di telefon — cari dan tag setiap perkataan.",
+      "textBullet1": "Grep teks penuh — AND / OR / NOT, berjalan automatik semasa import",
+      "textBullet2": "Tag mengikut genre · segerak Wi-Fi ke mana-mana arah",
+      "textBullet3": "Pembaca boleh disesuaikan — tema, fon & carian seluruh buku",
       "textCta": "Terokai GrepTag Reader",
       "bothNote": "Ramai pembaca menggunakan BiblioFuse untuk komik dan GrepTag untuk novel — kedua-duanya percuma untuk dicuba."
     },
@@ -1223,7 +1224,7 @@
         "desc": "Kulit EPUB diekstrak secara automatik. Untuk buku TXT, kulit dipadankan dari imej dalam folder yang sama atau diambil dengan menampal URL. Baca EPUB dan TXT dengan TTS, penanda buku dan fon boleh laras.",
         "bullet1": "Kulit EPUB diekstrak automatik (percuma)",
         "bullet2": "Kulit TXT dari imej folder sama atau URL (Pro)",
-        "bullet3": "TTS dengan kawalan kelantangan · penanda buku · fon"
+        "bullet3": "TTS dengan kawalan kelantangan · penanda buku · navigasi bab"
       },
       "whySeparate": {
         "eyebrow": "Mengapa dua aplikasi?",
@@ -1313,10 +1314,27 @@
         {
           "q": "Adakah GrepTag Reader memerlukan sambungan internet untuk berfungsi?",
           "a": "Tidak. GrepTag Reader berfungsi sepenuhnya secara luar talian. Semua carian, penandaan dan penganjuran berlaku terus di peranti anda — aplikasi membaca fail EPUB dan TXT anda secara setempat tanpa memerlukan pelayan atau sambungan internet. Rangkaian hanya digunakan untuk ciri Wi-Fi Sync pilihan yang memindahkan buku antara peranti anda sendiri melalui rangkaian setempat."
+        },
+        {
+          "q": "Bolehkah saya menyesuaikan penampilan dan fon pembaca?",
+          "a": "Boleh. Pilih daripada tema Sepia, Kelabu, dan Hitam (OLED) pada iPhone, iPad, dan Mac. Pilih fon dengan pratonton langsung — termasuk Iowan, Charter, Kaiti, dan fon serif yang menyokong CJK — atau import fon .ttf/.otf anda sendiri. Laraskan kecerahan, jajaran teks, dan tebal mengikut cara anda suka membaca."
+        },
+        {
+          "q": "Bolehkah saya mencari di dalam buku yang sedang saya baca?",
+          "a": "Boleh. Carian seluruh buku mengimbas keseluruhan fail TXT atau EPUB yang sedang anda baca, bukan hanya bab semasa. Pada Mac, terdapat bar carian khusus dengan pengalaman pratonton fon yang sama seperti pada iOS."
         }
       ],
       "faqTitle": "Soalan lazim",
-      "languages": "UI Apl: Inggeris · Sepanyol · Perancis · Belanda · Portugis · Rusia · Cina Ringkas · Jepun · Korea · Indonesia · Melayu"
+      "languages": "UI Apl: Inggeris · Sepanyol · Perancis · Belanda · Portugis · Rusia · Cina Ringkas · Jepun · Korea · Indonesia · Melayu",
+      "reader": {
+        "eyebrow": "Penyesuaian Pembaca",
+        "title": "Jadikan pembaca milik anda.",
+        "desc": "Selaraskan pembaca mengikut mata anda pada iPhone, iPad, dan Mac. Pilih daripada tema Sepia, Kelabu, dan Hitam (OLED), pilih fon dengan pratonton langsung — atau import fon anda sendiri — dan laraskan kecerahan, jajaran, dan tebal. Cari dalam keseluruhan buku yang sedang anda baca, bukan hanya bab semasa.",
+        "bullet1": "Tema Sepia, Kelabu, dan Hitam (OLED) pada iOS dan macOS",
+        "bullet2": "Pemilih fon dengan pratonton langsung — Iowan, Charter, Kaiti, fon serif yang menyokong CJK, dan lain-lain — atau import fon .ttf/.otf anda sendiri",
+        "bullet3": "Kecerahan, jajaran teks, dan tebal — ditambah carian seluruh buku dan bar carian macOS",
+        "badge": "Baharu dalam 1.0.4 dan 1.0.5"
+      }
     },
     "archivePage": {
       "seo": {
@@ -1516,16 +1534,16 @@
     },
     "contentcuePage": {
       "seo": {
-        "title": "ContentCue — Pelayar Bacaan Yang Tidak Pernah Kehilangan Tempat Anda",
-        "desc": "ContentCue ialah pelayar bacaan untuk iPhone dan iPad yang menyimpan kedudukan skrol anda apabila iklan mengganggu anda, dan melukis sempadan berwarna di sekitar iklan supaya anda sentiasa tahu apa itu kandungan dan apa itu tajaan. Satu ketikan untuk meneruskan dari tempat anda berhenti."
+        "title": "ContentCue — Layari, baca dan dengar. Jangan sesekali hilang tempat anda.",
+        "desc": "ContentCue ialah aplikasi serba boleh untuk iPhone dan iPad: pembaca RSS dengan taklimat audio, pemain podcast, TTS laman web dengan main balik latar belakang, dan penyegerakan iCloud — ditambah pelayar pulih kedudukan yang anda sudah kenali."
       },
       "hero": {
         "badge": "iPhone & iPad",
-        "title": "Baca. Terganggu. Teruskan dari tempat anda berhenti.",
-        "desc": "ContentCue menyimpan kedudukan skrol tepat anda apabila popup atau pengalihan memecahkan aliran bacaan anda. Sempadan berwarna menandakan bahagian mana halaman yang merupakan iklan — supaya anda dapat membezakan kandungan artikel sebenar daripada blok tajaan sekilas. Satu ketikan membawa anda kembali ke tempat anda berada.",
-        "trust1": "Iklan diserlahkan, bukan disekat",
-        "trust2": "Tiada data pelayaran dikumpul",
-        "trust3": "Berfungsi dengan mana-mana laman web",
+        "title": "Layari, baca dan dengar — dan jangan sesekali hilang tempat anda.",
+        "desc": "ContentCue ialah aplikasi serba boleh: layari dengan pulih kedudukan automatik, langgan suapan RSS dan dengar taklimat audio bagi tajuk belum dibaca anda, strim atau muat turun podcast, dan jadikan mana-mana laman web dibaca dengan kuat — walaupun skrin dikunci. Semuanya disegerakkan pada peranti anda melalui iCloud.",
+        "trust1": "RSS, podcast & web dalam satu app",
+        "trust2": "Iklan disorot, bukan disekat",
+        "trust3": "Penyegerakan iCloud",
         "appStore": "Muat turun di App Store",
         "trust4": "11 bahasa"
       },
@@ -1559,24 +1577,27 @@
       "extras": {
         "eyebrow": "Audio & Penanda Halaman",
         "title": "Senyapkan main muka otomatis. Simpan kegemaran anda.",
-        "desc": "Togol peredaman audio untuk menyenyapkan iklan video main muka otomatis semasa membaca di khalayak ramai. Tandai sehingga 3 laman percuma, atau naik taraf ke Pro untuk penanda halaman tanpa had dan kelajuan skrol otomatis yang boleh disesuaikan untuk webtoon dan manga.",
+        "desc": "Aktifkan redam audio untuk membisukan iklan video main automatik semasa anda membaca di khalayak ramai. Tambah sehingga 3 halaman percuma ke penanda, atau naik taraf kepada Premium untuk penanda tanpa had, warna sempadan iklan tersuai, dan kelajuan skrol automatik boleh laras untuk webtoon, manga dan artikel panjang.",
         "bullet1": "Peredaman audio — senyapkan semua audio laman web dengan satu ketikan",
-        "bullet2": "Penanda halaman — 3 percuma, tanpa had dengan Pro",
-        "bullet3": "Kelajuan skrol otomatis yang boleh disesuaikan untuk kandungan bentuk panjang (Pro)"
+        "bullet2": "Penanda — 3 percuma, tanpa had dengan Premium",
+        "bullet3": "Kelajuan skrol automatik boleh laras untuk kandungan panjang (Premium)"
       },
       "pricing": {
         "eyebrow": "Harga Mudah",
-        "title": "Bebas selamanya. Pro untuk pembaca berkuasa.",
+        "title": "Percuma untuk melayari. Premium membuka hab audio.",
         "freeTitle": "Bebas",
-        "proTitle": "Pro",
+        "proTitle": "Premium",
         "feat1": "Pulih kedudukan",
-        "feat2": "Perbezaan iklan visual",
-        "feat3": "Peredaman audio",
-        "feat4": "Penanda halaman",
+        "feat2": "Perbezaan visual iklan",
+        "feat3": "Redam audio",
+        "feat4": "Penanda",
         "feat4free": "3",
         "feat4pro": "Tanpa had",
-        "feat5": "Warna sempadan iklan tersuai",
-        "feat6": "Skrol otomatis yang boleh disesuaikan"
+        "feat5": "Pembaca RSS + TTS + import/eksport OPML",
+        "feat6": "Pemain Podcast + muat turun luar talian",
+        "feat7": "Penyegerakan iCloud",
+        "feat8": "Warna iklan tersuai, skrol automatik & Pintasan Siri",
+        "note": "Premium tersedia sebagai langganan tahunan dengan percubaan percuma 7 hari, atau sebagai pembelian seumur hidup sekali sahaja. Harga dipaparkan dalam apl mengikut kawasan anda."
       },
       "faqTitle": "Soalan Lazim",
       "faq": [
@@ -1593,17 +1614,65 @@
           "a": "ContentCue memantau kedudukan skrol anda semasa anda membaca. Apabila anda menavigasi pergi (mengetik pautan iklan, pengalihan, atau butang kembali), ia menyimpan kedudukan tepat anda. Butang Teruskan muncul dalam UI pelayar. Ketiknya untuk kembali ke tempat anda berada."
         },
         {
+          "q": "Adakah ContentCue mempunyai pembaca RSS?",
+          "a": "Ya. Langgan mana-mana suapan RSS, semat saluran kegemaran anda, dan import atau eksport keseluruhan senarai langganan anda melalui OPML. Aktifkan TTS untuk mendengar tajuk belum dibaca dibacakan sebagai taklimat audio berterusan, seperti radio peribadi."
+        },
+        {
+          "q": "Bolehkah saya mendengar podcast dalam ContentCue?",
+          "a": "Ya. Cari dalam direktori podcast terbina dalam, semat rancangan yang anda ikuti, dan strim atau muat turun episod untuk didengar di luar talian. Main balik berfungsi dari skrin kunci dan disertakan pemasa tidur terbina dalam."
+        },
+        {
+          "q": "Adakah ContentCue membaca laman web dengan kuat?",
+          "a": "Ya. Tekan main pada mana-mana artikel dan ContentCue membacanya dengan kuat menggunakan teks-ke-suara. Audio terus dimainkan di latar belakang walaupun skrin dikunci, dan apl cepat menyambung semula artikel serta kedudukan terakhir anda."
+        },
+        {
+          "q": "Adakah ContentCue disegerakkan antara iPhone dan iPad saya?",
+          "a": "Ya, dengan Premium. Penanda, suapan RSS dan langganan podcast disegerakkan secara automatik melalui iCloud merentas semua peranti Apple anda."
+        },
+        {
           "q": "Adakah ContentCue mengumpul data pelayaran saya?",
           "a": "Tidak. ContentCue memproses pelayaran sepenuhnya di peranti anda menggunakan WebKit Apple. Tiada sejarah pelayaran, URL yang dilawati, atau data peribadi dikumpul atau dihantar ke mana-mana."
         },
         {
-          "q": "Apakah yang disertakan dalam naik taraf Pro?",
-          "a": "Pro ialah pembelian sekali $2.99. Ia membuka kunci penanda halaman tanpa had, warna sempadan iklan tersuai, dan kelajuan skrol otomatis yang boleh disesuaikan. Tiada langganan — bayar sekali, gunakan selamanya."
+          "q": "Apakah yang disertakan dalam ContentCue Premium?",
+          "a": "Premium membuka keseluruhan hab audio: Pembaca RSS dengan TTS dan import/eksport OPML, Pemain Podcast dengan muat turun luar talian, Penyegerakan iCloud pada peranti anda, Pintasan Siri, penanda tanpa had, warna sempadan iklan tersuai, dan kelajuan skrol automatik boleh laras. Tersedia sebagai langganan tahunan dengan percubaan percuma 7 hari, atau pembelian seumur hidup sekali sahaja — harga dipaparkan dalam apl mengikut kawasan anda."
         }
       ],
       "backDesc": "Mencari pembaca komik dan ebook?",
       "backCta": "Kembali ke BiblioFuse Reader",
-      "languages": "UI Apl: Inggeris · Sepanyol · Perancis · Belanda · Portugis · Rusia · Cina Ringkas · Jepun · Korea · Indonesia · Melayu"
+      "languages": "UI Apl: Inggeris · Sepanyol · Perancis · Belanda · Portugis · Rusia · Cina Ringkas · Jepun · Korea · Indonesia · Melayu",
+      "rss": {
+        "eyebrow": "Pembaca RSS",
+        "title": "Langgan suapan anda. Dengar tajuk yang anda terlepas.",
+        "desc": "Langgan suapan berita kegemaran anda dan semat saluran yang paling kerap anda baca di atas. Import atau eksport keseluruhan senarai langganan anda melalui OPML. Baca artikel dalam paparan bersih dan fokus — atau aktifkan TTS untuk mendengar tajuk belum dibaca secara berterusan, seperti radio peribadi.",
+        "bullet1": "Langgan suapan RSS tanpa had dan semat saluran kegemaran anda",
+        "bullet2": "Import atau eksport senarai langganan anda melalui OPML",
+        "bullet3": "TTS membaca tajuk belum dibaca secara berturut-turut, seperti taklimat audio"
+      },
+      "podcast": {
+        "eyebrow": "Pemain Podcast",
+        "title": "Cari, strim dan muat turun rancangan kegemaran anda.",
+        "desc": "Cari dalam direktori podcast terbina dalam, semat rancangan kegemaran anda, dan strim atau muat turun episod untuk didengar di luar talian kemudian. Kawal main balik dari skrin kunci, dengan pemasa tidur disertakan.",
+        "bullet1": "Direktori carian podcast terbina dalam dengan rancangan disemat",
+        "bullet2": "Strim atau muat turun episod untuk didengar di luar talian",
+        "bullet3": "Kawalan main balik dari skrin kunci, dengan pemasa tidur"
+      },
+      "tts": {
+        "eyebrow": "TTS Laman Web",
+        "title": "Tekan main pada mana-mana halaman. Terus dengar walaupun skrin dikunci.",
+        "desc": "ContentCue membaca mana-mana artikel dengan kuat semasa anda memandu, memasak atau berjalan. Audio terus dimainkan di latar belakang apabila skrin dikunci, dan cepat menyambung semula artikel serta kedudukan terakhir anda.",
+        "bullet1": "Teks-ke-suara untuk mana-mana artikel, satu ketikan sahaja",
+        "bullet2": "Audio terus dimainkan di latar belakang walaupun skrin dikunci",
+        "bullet3": "Sambung semula pantas artikel dan kedudukan terakhir anda"
+      },
+      "icloudSiri": {
+        "eyebrow": "Penyegerakan iCloud & Pintasan Siri",
+        "title": "Semuanya mengikuti anda antara iPhone dan iPad.",
+        "desc": "Penanda, suapan RSS dan langganan podcast disegerakkan secara automatik merentas semua peranti Apple anda. Sebut \"Hai Siri, main ContentCue\" untuk memulakan taklimat RSS atau podcast tanpa membuka apl — pilih sumber dan kelajuan secara berasingan untuk RSS dan Podcast dalam tetapan Main Balik Siri.",
+        "bullet1": "Penanda, suapan RSS dan langganan podcast disegerakkan melalui iCloud",
+        "bullet2": "\"Hai Siri, main ContentCue\" memulakan taklimat atau podcast tanpa guna tangan",
+        "bullet3": "Lima pintasan terbina dalam, dengan kawalan sumber dan kelajuan berasingan untuk RSS dan podcast"
+      }
     }
   }
 }

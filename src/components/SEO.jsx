@@ -34,6 +34,8 @@ const SEO = ({
     schemaName = 'BiblioFuse',
     operatingSystem,
     featureList,
+    softwareVersion,  // e.g. "2.1.2" — surfaced on SoftwareApplication schema
+    offers,           // override the default free Offer, e.g. { price, priceCurrency } or AggregateOffer
     image,
     imageWidth,
     imageHeight,
@@ -77,7 +79,9 @@ const SEO = ({
         "inLanguage": currentLang,
         "description": description,
         "featureList": Array.isArray(featureList) ? featureList : Array.isArray(defaultFeatureList) ? defaultFeatureList : [],
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        // Free to download; some apps offer optional in-app Premium. Pages may override `offers`.
+        "offers": offers || { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        ...(softwareVersion && { "softwareVersion": softwareVersion }),
         "publisher": ORGANIZATION,
     };
 

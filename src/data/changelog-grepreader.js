@@ -3,6 +3,112 @@
 // released: true = live in store, false = pending / unreleased
 
 export const ENTRIES = [
+
+  // ── Build 17 / v1.0.5 — Whole-book reader search (released) ──
+  {
+    date: "2026-07-07",
+    version: "1.0.5",
+    platform: "ios",
+    type: "feature",
+    released: true,
+    title: {
+      en: "Build 17 / v1.0.5 — Whole-book reader search",
+      es: "Build 17 / v1.0.5 — Búsqueda en todo el libro dentro del lector",
+      fr: "Build 17 / v1.0.5 — Recherche dans tout le livre du lecteur",
+      nl: "Build 17 / v1.0.5 — Zoeken door het hele boek in de lezer",
+      pt: "Build 17 / v1.0.5 — Busca no livro inteiro no leitor",
+      ru: "Build 17 / v1.0.5 — Поиск по всей книге в ридере",
+      zh: "Build 17 / v1.0.5 — 阅读器全书搜索",
+      ja: "Build 17 / v1.0.5 — リーダーでの全書検索",
+      ko: "Build 17 / v1.0.5 — 리더 전체 책 검색",
+      id: "Build 17 / v1.0.5 — Pencarian seluruh buku di pembaca",
+      ms: "Build 17 / v1.0.5 — Carian seluruh buku dalam pembaca",
+    },
+    desc: {
+      en: "Search now scans the entire book you're reading, not just the current chapter, for both TXT and EPUB. Wi-Fi Sync is safer — deletions detected on another device are now suggested rather than applied automatically. Fixed a bug that could create duplicate library entries when a book file was replaced in place. Released on the App Store for iOS and macOS.",
+      es: "La búsqueda ahora recorre todo el libro que estás leyendo, no solo el capítulo actual, tanto en TXT como en EPUB. La sincronización Wi-Fi es más segura: las eliminaciones detectadas en otro dispositivo ahora se sugieren en lugar de aplicarse automáticamente. Corregido un error que podía crear entradas duplicadas en la biblioteca al reemplazar un archivo de libro en el mismo lugar. Publicado en App Store para iOS y macOS.",
+      fr: "La recherche parcourt désormais tout le livre que vous lisez, pas seulement le chapitre en cours, pour TXT et EPUB. La synchronisation Wi-Fi est plus sûre : les suppressions détectées sur un autre appareil sont désormais suggérées plutôt qu'appliquées automatiquement. Correction d'un bug pouvant créer des entrées en double dans la bibliothèque lors du remplacement d'un fichier de livre au même endroit. Publié sur l'App Store pour iOS et macOS.",
+      nl: "Zoeken doorzoekt nu het hele boek dat je leest, niet alleen het huidige hoofdstuk, voor zowel TXT als EPUB. Wi-Fi-synchronisatie is veiliger — verwijderingen die op een ander apparaat worden gedetecteerd, worden nu voorgesteld in plaats van automatisch toegepast. Een bug opgelost die dubbele bibliotheekvermeldingen kon veroorzaken wanneer een boekbestand op dezelfde plek werd vervangen. Uitgebracht in de App Store voor iOS en macOS.",
+      pt: "A busca agora percorre o livro inteiro que você está lendo, não apenas o capítulo atual, tanto em TXT quanto em EPUB. A sincronização Wi-Fi é mais segura — exclusões detectadas em outro dispositivo agora são sugeridas em vez de aplicadas automaticamente. Corrigido um bug que podia criar entradas duplicadas na biblioteca ao substituir um arquivo de livro no mesmo lugar. Publicado na App Store para iOS e macOS.",
+      ru: "Поиск теперь охватывает всю книгу, которую вы читаете, а не только текущую главу, для TXT и EPUB. Wi-Fi синхронизация стала безопаснее — удаления, обнаруженные на другом устройстве, теперь предлагаются, а не применяются автоматически. Исправлена ошибка, которая могла создавать дублирующиеся записи в библиотеке при замене файла книги на том же месте. Выпущено в App Store для iOS и macOS.",
+      zh: "搜索现在会扫描你正在阅读的整本书，而不仅仅是当前章节，TXT 和 EPUB 均支持。Wi-Fi 同步更安全——在其他设备上检测到的删除操作现在会以建议形式呈现，而不是自动执行。修复了原地替换书籍文件时可能产生重复书库条目的错误。已在 App Store 面向 iOS 和 macOS 发布。",
+      ja: "検索が現在の章だけでなく、読んでいる本全体を対象にするようになりました（TXT・EPUB 両対応）。Wi-Fi 同期がより安全に — 他のデバイスで検出された削除は、自動的に適用されるのではなく提案されるようになりました。ブックファイルを同じ場所で置き換えた際にライブラリに重複項目が作成される不具合を修正しました。iOS と macOS 向けに App Store で公開済みです。",
+      ko: "이제 검색이 현재 챕터뿐 아니라 읽고 있는 책 전체를 대상으로 합니다(TXT 및 EPUB 모두 지원). Wi-Fi 동기화가 더 안전해졌습니다 — 다른 기기에서 감지된 삭제는 이제 자동으로 적용되지 않고 제안됩니다. 책 파일을 같은 위치에서 교체할 때 라이브러리에 중복 항목이 생기는 버그를 수정했습니다. iOS 및 macOS용으로 App Store에 출시되었습니다.",
+      id: "Pencarian kini memindai seluruh buku yang sedang kamu baca, bukan hanya bab saat ini, untuk TXT maupun EPUB. Sinkronisasi Wi-Fi lebih aman — penghapusan yang terdeteksi di perangkat lain kini disarankan, bukan diterapkan secara otomatis. Memperbaiki bug yang dapat membuat entri perpustakaan duplikat saat file buku diganti di tempat yang sama. Dirilis di App Store untuk iOS dan macOS.",
+      ms: "Carian kini mengimbas keseluruhan buku yang sedang anda baca, bukan hanya bab semasa, untuk TXT dan EPUB. Segerak Wi-Fi lebih selamat — pemadaman yang dikesan pada peranti lain kini dicadangkan dan bukan digunakan secara automatik. Membetulkan pepijat yang boleh mencipta entri perpustakaan pendua apabila fail buku digantikan di tempat yang sama. Dikeluarkan di App Store untuk iOS dan macOS.",
+    },
+  },
+
+  // ── Build 16 / v1.0.4 — Reader themes, typefaces & custom fonts (released) ──
+  {
+    date: "2026-07-06",
+    version: "1.0.4",
+    platform: "ios",
+    type: "feature",
+    released: true,
+    title: {
+      en: "Build 16 / v1.0.4 — Reader themes, typefaces & custom fonts",
+      es: "Build 16 / v1.0.4 — Temas, tipografías y fuentes personalizadas del lector",
+      fr: "Build 16 / v1.0.4 — Thèmes, polices et polices personnalisées du lecteur",
+      nl: "Build 16 / v1.0.4 — Lezersthema's, lettertypen en eigen fonts",
+      pt: "Build 16 / v1.0.4 — Temas, tipos de letra e fontes personalizadas do leitor",
+      ru: "Build 16 / v1.0.4 — Темы, шрифты и свои шрифты в ридере",
+      zh: "Build 16 / v1.0.4 — 阅读器主题、字体与自定义字体",
+      ja: "Build 16 / v1.0.4 — リーダーのテーマ、フォント、カスタムフォント",
+      ko: "Build 16 / v1.0.4 — 리더 테마, 글꼴 & 사용자 지정 글꼴",
+      id: "Build 16 / v1.0.4 — Tema pembaca, font & font khusus",
+      ms: "Build 16 / v1.0.4 — Tema pembaca, fon & fon tersuai",
+    },
+    desc: {
+      en: "A much richer reader on Mac and iPhone: new typefaces with live previews — Iowan, Charter, Kaiti (CJK-aware) and more — or import your own .ttf/.otf fonts. New Sepia, Gray, and Black (OLED) themes, brightness dimming, justified text alignment, and bold. Find in book for TXT and EPUB, with a matching find bar and typeface preview on macOS. Released on the App Store for iOS and macOS.",
+      es: "Un lector mucho más completo en Mac y iPhone: nuevas tipografías con vista previa en vivo — Iowan, Charter, Kaiti (compatible con CJK) y más — o importa tus propias fuentes .ttf/.otf. Nuevos temas Sepia, Gris y Negro (OLED), atenuación de brillo, alineación de texto justificada y negrita. Buscar en el libro para TXT y EPUB, con una barra de búsqueda y vista previa de tipografía equivalentes en macOS. Publicado en App Store para iOS y macOS.",
+      fr: "Un lecteur bien plus riche sur Mac et iPhone : nouvelles polices avec aperçu en direct — Iowan, Charter, Kaiti (compatible CJK) et plus — ou importez vos propres polices .ttf/.otf. Nouveaux thèmes Sépia, Gris et Noir (OLED), atténuation de la luminosité, texte justifié et gras. Recherche dans le livre pour TXT et EPUB, avec une barre de recherche et un aperçu des polices équivalents sur macOS. Publié sur l'App Store pour iOS et macOS.",
+      nl: "Een veel rijkere lezer op Mac en iPhone: nieuwe lettertypen met live voorbeeld — Iowan, Charter, Kaiti (CJK-bewust) en meer — of importeer je eigen .ttf/.otf-lettertypen. Nieuwe Sepia-, Grijs- en Zwart-thema's (OLED), helderheidsdimming, uitgevulde tekstuitlijning en vet. Zoeken in boek voor TXT en EPUB, met een bijpassende zoekbalk en lettertypevoorbeeld op macOS. Uitgebracht in de App Store voor iOS en macOS.",
+      pt: "Um leitor muito mais completo no Mac e no iPhone: novos tipos de letra com pré-visualização em tempo real — Iowan, Charter, Kaiti (compatível com CJK) e mais — ou importe seus próprios tipos de letra .ttf/.otf. Novos temas Sépia, Cinza e Preto (OLED), escurecimento de brilho, alinhamento de texto justificado e negrito. Buscar no livro para TXT e EPUB, com barra de busca e pré-visualização de tipografia equivalentes no macOS. Publicado na App Store para iOS e macOS.",
+      ru: "Гораздо более богатый ридер на Mac и iPhone: новые шрифты с предпросмотром в реальном времени — Iowan, Charter, Kaiti (с поддержкой CJK) и другие — или импортируйте свои шрифты .ttf/.otf. Новые темы «Сепия», «Серая» и «Чёрная» (OLED), затемнение экрана, выравнивание текста по ширине и жирный шрифт. Поиск в книге для TXT и EPUB, с такой же панелью поиска и предпросмотром шрифтов на macOS. Выпущено в App Store для iOS и macOS.",
+      zh: "Mac 与 iPhone 上大幅升级的阅读器：新增可实时预览的字体——Iowan、Charter、楷体（支持 CJK）等——或导入你自己的 .ttf/.otf 字体。新增棕褐、灰色和黑色（OLED）主题、屏幕调暗、两端对齐文本和加粗。为 TXT 和 EPUB 新增书内查找，macOS 上配有相同的查找栏和字体预览。已在 App Store 面向 iOS 和 macOS 发布。",
+      ja: "Mac と iPhone でリーダーが大幅に進化：ライブプレビュー付きの新しいフォント — Iowan、Charter、楷体（CJK 対応）など — または自分の .ttf/.otf フォントをインポート。新しいセピア・グレー・ブラック（OLED）テーマ、明るさの減光、両端揃えテキスト、太字。TXT と EPUB のブック内検索、macOS では対応する検索バーとフォントプレビューも追加。iOS と macOS 向けに App Store で公開済みです。",
+      ko: "Mac과 iPhone에서 한층 풍부해진 리더: 실시간 미리보기가 가능한 새 글꼴 — Iowan, Charter, Kaiti(중국어 대응) 등 — 또는 직접 .ttf/.otf 글꼴 가져오기. 새로운 세피아, 회색, 검정(OLED) 테마, 밝기 어둡게, 양쪽 정렬 텍스트, 굵게. TXT 및 EPUB용 책 내 찾기, macOS에서는 동일한 찾기 막대와 글꼴 미리보기 제공. iOS 및 macOS용으로 App Store에 출시되었습니다.",
+      id: "Pembaca yang jauh lebih kaya di Mac dan iPhone: font baru dengan pratinjau langsung — Iowan, Charter, Kaiti (mendukung CJK), dan lainnya — atau impor font .ttf/.otf milikmu sendiri. Tema Sepia, Abu-abu, dan Hitam (OLED) baru, peredupan kecerahan, perataan teks rata kiri-kanan, dan tebal. Cari dalam buku untuk TXT dan EPUB, dengan bilah pencarian dan pratinjau font yang setara di macOS. Dirilis di App Store untuk iOS dan macOS.",
+      ms: "Pembaca yang jauh lebih kaya pada Mac dan iPhone: fon baharu dengan pratonton langsung — Iowan, Charter, Kaiti (menyokong CJK), dan lain-lain — atau import fon .ttf/.otf anda sendiri. Tema Sepia, Kelabu, dan Hitam (OLED) baharu, pemalapan kecerahan, jajaran teks jajaran penuh, dan tebal. Cari dalam buku untuk TXT dan EPUB, dengan bar carian dan pratonton fon yang setara pada macOS. Dikeluarkan di App Store untuk iOS dan macOS.",
+    },
+  },
+
+  // ── Build 15 / v1.0.3 — Reader navigation improvements (released) ──
+  {
+    date: "2026-06-28",
+    version: "1.0.3",
+    platform: "ios",
+    type: "feature",
+    released: true,
+    title: {
+      en: "Build 15 / v1.0.3 — Reader navigation improvements",
+      es: "Build 15 / v1.0.3 — Mejoras de navegación del lector",
+      fr: "Build 15 / v1.0.3 — Améliorations de la navigation du lecteur",
+      nl: "Build 15 / v1.0.3 — Verbeterde lezersnavigatie",
+      pt: "Build 15 / v1.0.3 — Melhorias na navegação do leitor",
+      ru: "Build 15 / v1.0.3 — Улучшения навигации в ридере",
+      zh: "Build 15 / v1.0.3 — 阅读器导航改进",
+      ja: "Build 15 / v1.0.3 — リーダーナビゲーションの改善",
+      ko: "Build 15 / v1.0.3 — 리더 내비게이션 개선",
+      id: "Build 15 / v1.0.3 — Peningkatan navigasi pembaca",
+      ms: "Build 15 / v1.0.3 — Penambahbaikan navigasi pembaca",
+    },
+    desc: {
+      en: "Smoother page-turn and chapter-navigation behavior in the EPUB and TXT readers, with onboarding refinements. Released on the App Store for iOS and macOS.",
+      es: "Comportamiento de cambio de página y navegación por capítulos más fluido en los lectores de EPUB y TXT, con mejoras en la incorporación. Publicado en App Store para iOS y macOS.",
+      fr: "Comportement de changement de page et de navigation par chapitre plus fluide dans les lecteurs EPUB et TXT, avec des améliorations de l'intégration. Publié sur l'App Store pour iOS et macOS.",
+      nl: "Vloeiender bladeren en hoofdstuknavigatie in de EPUB- en TXT-lezers, met verbeterde onboarding. Uitgebracht in de App Store voor iOS en macOS.",
+      pt: "Comportamento de virada de página e navegação por capítulos mais suave nos leitores de EPUB e TXT, com melhorias na integração. Publicado na App Store para iOS e macOS.",
+      ru: "Более плавное перелистывание страниц и навигация по главам в ридерах EPUB и TXT, с улучшенным онбордингом. Выпущено в App Store для iOS и macOS.",
+      zh: "EPUB 和 TXT 阅读器的翻页与章节导航更加流畅，并改进了新手引导。已在 App Store 面向 iOS 和 macOS 发布。",
+      ja: "EPUB・TXT リーダーのページめくりとチャプターナビゲーションがより滑らかになり、オンボーディングも改善されました。iOS と macOS 向けに App Store で公開済みです。",
+      ko: "EPUB 및 TXT 리더의 페이지 넘김과 챕터 내비게이션이 더 부드러워졌고, 온보딩도 개선되었습니다. iOS 및 macOS용으로 App Store에 출시되었습니다.",
+      id: "Perilaku membalik halaman dan navigasi bab yang lebih halus di pembaca EPUB dan TXT, dengan penyempurnaan orientasi. Dirilis di App Store untuk iOS dan macOS.",
+      ms: "Kelakuan pusing halaman dan navigasi bab yang lebih lancar dalam pembaca EPUB dan TXT, dengan penambahbaikan orientasi. Dikeluarkan di App Store untuk iOS dan macOS.",
+    },
+  },
+
   // ── Build 10 / v1.0.1 — Wi-Fi sync iCloud path refactor (released) ──
   {
     date: '2026-06-25',

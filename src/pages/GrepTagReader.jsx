@@ -112,12 +112,14 @@ const GrepTagReader = () => {
         schemaType="suite"
         schemaName="BiblioFuse GrepTag Reader"
         operatingSystem="iOS, iPadOS, macOS, Windows"
+        softwareVersion="1.0.5"
         featureList={[
           'Search inside ebooks — find any word across your entire EPUB or TXT library',
           'Keyword search with AND, OR, NOT logic — save searches as reusable profiles',
           'Tag ebooks by genre and filter your library instantly',
           t('redesign.grepTagPage.sync.title'),
           t('redesign.grepTagPage.covers.title'),
+          t('redesign.grepTagPage.reader.title'),
           'Works fully offline — no internet connection required',
           t('redesign.grepTagPage.pricing.feat8', 'Export Tag DB'),
         ]}
@@ -221,6 +223,17 @@ const GrepTagReader = () => {
         bullets={[t('redesign.grepTagPage.covers.bullet1'), t('redesign.grepTagPage.covers.bullet2'), t('redesign.grepTagPage.covers.bullet3')]}
         accent="violet"
         reverse
+        screenshot="/image/grepreader/library.png"
+      />
+
+      {/* Feature: Reader Customization */}
+      <FeatureSection
+        eyebrow={t('redesign.grepTagPage.reader.eyebrow')}
+        title={t('redesign.grepTagPage.reader.title')}
+        desc={t('redesign.grepTagPage.reader.desc')}
+        bullets={[t('redesign.grepTagPage.reader.bullet1'), t('redesign.grepTagPage.reader.bullet2'), t('redesign.grepTagPage.reader.bullet3')]}
+        badge={t('redesign.grepTagPage.reader.badge')}
+        accent="indigo"
         screenshot="/image/grepreader/library.png"
       />
 

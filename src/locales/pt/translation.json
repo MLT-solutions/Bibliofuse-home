@@ -536,7 +536,7 @@
           "desc": "Leitor e gestor de biblioteca nativo para coleções pessoais de e-books e banda desenhada.",
           "bullet1": "EPUB, PDF, CBZ, CBR, RAR, ZIP e TXT",
           "bullet2": "Etiquetas, avaliações, progresso e marcadores",
-          "bullet3": "Biblioteca iCloud no iPhone, iPad e Mac",
+          "bullet3": "Sincronização iCloud e streaming ao vivo da sua biblioteca Mac",
           "cta": "Obter na App Store",
           "secondary": "Google Play"
         },
@@ -570,10 +570,10 @@
         },
         "contentcue": {
           "tag": "Apenas iOS",
-          "desc": "Navegador de leitura leve que restaura sua posição após qualquer interrupção.",
-          "bullet1": "Retomar com um toque após popups ou redirecionamentos",
-          "bullet2": "Modo de leitura com rolagem automática",
-          "bullet3": "Favoritos · Sem conta necessária",
+          "desc": "App completo para navegar, ler e ouvir: leitor RSS com boletins em áudio, player de podcasts, texto em voz alta para páginas web e sincronização iCloud.",
+          "bullet1": "Leitor RSS com boletim em áudio dos títulos não lidos",
+          "bullet2": "Player de podcasts com downloads offline",
+          "bullet3": "Texto em voz alta de páginas web com reprodução em segundo plano",
           "cta": "App Store",
           "bullet4": "Disponível em 11 idiomas"
         },
@@ -582,7 +582,7 @@
           "desc": "Pesquisa de texto completo, etiquetagem e organização para bibliotecas EPUB e TXT.",
           "bullet1": "Grep com lógica AND / OR / NOT",
           "bullet2": "Etiquetar por género · execução automática na importação",
-          "bullet3": "Sincronização Wi-Fi em qualquer direção entre dispositivos",
+          "bullet3": "Leitor personalizável — temas, tipos de letra e busca no livro inteiro",
           "cta": "Saber mais"
         }
       }
@@ -735,35 +735,36 @@
     },
     "contentcueSection": {
       "badge": "App irmã · iPhone e iPad",
-      "titleA": "Navegue. Seja interrompido.",
-      "titleB": "Retome exatamente onde parou.",
-      "desc": "ContentCue é um navegador de leitura leve para artigos longos, documentação, fóruns e quadrinhos. Popups, redirecionamentos e toques acidentais não podem roubar seu lugar — um toque te leva de volta.",
+      "titleA": "Navegue, leia e ouça —",
+      "titleB": "nunca perca seu lugar.",
+      "desc": "ContentCue é um app completo para navegar, ler e ouvir: feeds RSS com boletim em áudio dos títulos não lidos, player de podcasts com downloads offline, texto em voz alta para qualquer página web com reprodução em segundo plano, e sincronização iCloud nos seus dispositivos.",
       "features": {
-        "resume": {
-          "title": "Retomar com um toque",
-          "body": "Volta instantaneamente à sua posição salva."
+        "rssBriefing": {
+          "title": "RSS + boletim em áudio",
+          "body": "Assine feeds e ouça os títulos não lidos em voz alta."
         },
-        "adOutlines": {
-          "title": "Contornos de anúncios",
-          "body": "Marca elementos publicitários para leitura sem distrações."
+        "podcasts": {
+          "title": "Player de podcasts",
+          "body": "Pesquise, transmita e baixe episódios para ouvir offline."
         },
-        "mute": {
-          "title": "Silenciar áudio",
-          "body": "Silencia o áudio automático sem sair da página."
+        "webTts": {
+          "title": "Leitura em voz alta (TTS)",
+          "body": "Toque em reproduzir — continua tocando com a tela bloqueada."
         },
-        "bookmarks": {
-          "title": "Favoritos",
-          "body": "Salve páginas para revisitar — sem conta necessária."
+        "icloudSync": {
+          "title": "Sincronização iCloud",
+          "body": "Favoritos, feeds e assinaturas sincronizam nos seus dispositivos."
         }
       },
       "altBadge": "Baixar ContentCue na App Store",
-      "pricing": "Gratuito. ContentCue Pro é uma compra única de $2,99: favoritos ilimitados, estilos de contorno personalizados e rolagem automática ajustável.",
+      "pricing": "Grátis para navegar. Premium desbloqueia RSS, podcasts, TTS e sincronização iCloud — anual com 7 dias de teste grátis, ou compra única vitalícia.",
       "langNote": "Interface: Inglês · Espanhol · Francês · Holandês · Português · Russo · Chinês Simplificado · Japonês · Coreano · Indonésio · Malaio",
       "platformNote": "iPhone e iPad · Mac Apple Silicon (app iOS via App Store)",
       "stats": {
         "requires": "Requer",
-        "oneTimePro": "Pro único",
-        "appLangs": "Idiomas do app"
+        "oneTimePro": "Premium",
+        "appLangs": "Idiomas do app",
+        "premiumValue": "Anual ou vitalício"
       }
     },
     "privacyStrip": {
@@ -1166,16 +1167,16 @@
       "titleB": "Ou para romances e light novels.",
       "desc": "Cada aplicação é projetada em torno de como a sua biblioteca realmente funciona — tamanhos de ficheiro diferentes, hábitos de leitura diferentes, necessidades de armazenamento diferentes.",
       "comicTag": "BD · MANGA · PDF",
-      "comicIdent": "A sua biblioteca vive no seu Mac. Transmita para o iPhone.",
-      "comicBullet1": "CBZ, CBR, PDF, EPUB e TXT",
-      "comicBullet2": "Comprima e combine para poupar armazenamento",
-      "comicBullet3": "Transmita do Mac via Wi-Fi ou 5G",
+      "comicIdent": "Ficheiros grandes. Mantenha-os no seu iPhone — ou transmita-os diretamente do seu Mac ou PC.",
+      "comicBullet1": "Lê CBZ, CBR, PDF, EPUB e TXT",
+      "comicBullet2": "Comprima e combine para poupar espaço — tudo no dispositivo",
+      "comicBullet3": "Transmita do Mac ou PC — por Wi-Fi em casa ou 5G fora, feito para grandes volumes",
       "comicCta": "Baixar BiblioFuse Reader",
       "textTag": "EPUB · ROMANCES · TXT",
-      "textIdent": "A sua biblioteca vive no seu telefone. Pesquise. Etiquete.",
-      "textBullet1": "Grep de texto completo com lógica AND / OR / NOT",
-      "textBullet2": "Etiquetar por género · sincronizar em qualquer direção",
-      "textBullet3": "Capas para EPUB e TXT — biblioteca visual",
+      "textIdent": "Ficheiros pequenos. Toda a sua biblioteca cabe no seu telefone — pesquise e etiquete cada palavra.",
+      "textBullet1": "Grep de texto completo — AND / OR / NOT, executa automaticamente na importação",
+      "textBullet2": "Etiquete por género · sincronização Wi-Fi em qualquer direção",
+      "textBullet3": "Leitor personalizável — temas, tipos de letra e busca no livro inteiro",
       "textCta": "Explorar GrepTag Reader",
       "bothNote": "Muitos leitores usam BiblioFuse para BD e GrepTag para romances — ambas são grátis para experimentar."
     },
@@ -1223,7 +1224,7 @@
         "desc": "As capas EPUB são extraídas automaticamente. Para livros TXT, as capas são associadas a imagens na mesma pasta ou obtidas colando um URL. Leia EPUB e TXT com TTS, marcadores e tipos de letra ajustáveis.",
         "bullet1": "Capas EPUB extraídas automaticamente (gratuito)",
         "bullet2": "Capas TXT de imagens na mesma pasta ou URL (Pro)",
-        "bullet3": "TTS com controlo de volume · marcadores · tipos de letra"
+        "bullet3": "TTS com controlo de volume · marcadores · navegação por capítulos"
       },
       "whySeparate": {
         "eyebrow": "Porquê duas apps?",
@@ -1313,10 +1314,27 @@
         {
           "q": "O GrepTag Reader precisa de conexão com a internet para funcionar?",
           "a": "Não. O GrepTag Reader funciona completamente offline. Toda a pesquisa, marcação e organização acontece diretamente no seu dispositivo — o app lê seus arquivos EPUB e TXT localmente, sem servidor ou conexão com a internet. A rede só é usada para o recurso opcional Wi-Fi Sync, que transfere livros entre seus próprios dispositivos pela sua rede local."
+        },
+        {
+          "q": "Posso personalizar a aparência e as fontes do leitor?",
+          "a": "Sim. Escolha entre os temas Sépia, Cinza e Preto (OLED) no iPhone, iPad e Mac. Selecione um tipo de letra com pré-visualização em tempo real — incluindo Iowan, Charter, Kaiti e fontes serifadas compatíveis com CJK — ou importe sua própria fonte .ttf/.otf. Ajuste o brilho, o alinhamento do texto e o negrito conforme sua forma de ler."
+        },
+        {
+          "q": "Posso pesquisar dentro do livro que estou lendo no momento?",
+          "a": "Sim. A busca no livro inteiro percorre todo o arquivo TXT ou EPUB que você está lendo, não apenas o capítulo atual. No Mac, há uma barra de busca dedicada com a mesma experiência de pré-visualização de tipos de letra do iOS."
         }
       ],
       "faqTitle": "Perguntas frequentes",
-      "languages": "Interface: Inglês · Espanhol · Francês · Holandês · Português · Russo · Chinês Simplificado · Japonês · Coreano · Indonésio · Malaio"
+      "languages": "Interface: Inglês · Espanhol · Francês · Holandês · Português · Russo · Chinês Simplificado · Japonês · Coreano · Indonésio · Malaio",
+      "reader": {
+        "eyebrow": "Personalização do leitor",
+        "title": "Deixe o leitor com a sua cara.",
+        "desc": "Ajuste o leitor aos seus olhos no iPhone, iPad e Mac. Escolha entre os temas Sépia, Cinza e Preto (OLED), selecione um tipo de letra com pré-visualização em tempo real — ou importe sua própria fonte — e ajuste o brilho, o alinhamento e o negrito. Pesquise no livro inteiro que está lendo, não apenas no capítulo atual.",
+        "bullet1": "Temas Sépia, Cinza e Preto (OLED) no iOS e macOS",
+        "bullet2": "Seletor de tipos de letra com pré-visualização em tempo real — Iowan, Charter, Kaiti, fontes serifadas compatíveis com CJK e mais — ou importe sua própria fonte .ttf/.otf",
+        "bullet3": "Brilho, alinhamento de texto e negrito — além de busca no livro inteiro e uma barra de busca no macOS",
+        "badge": "Novidade nas versões 1.0.4 e 1.0.5"
+      }
     },
     "archivePage": {
       "seo": {
@@ -1516,16 +1534,16 @@
     },
     "contentcuePage": {
       "seo": {
-        "title": "ContentCue — Navegador de Leitura Que Nunca Perde Seu Lugar",
-        "desc": "ContentCue é um navegador de leitura para iPhone e iPad que salva sua posição de rolagem quando anúncios o interrompem, e desenha bordas coloridas ao redor dos anúncios para você sempre saber o que é conteúdo e o que é patrocinado. Um toque retoma onde você parou."
+        "title": "ContentCue — Navegue, leia e ouça. Nunca perca seu lugar.",
+        "desc": "ContentCue é um app completo para iPhone e iPad: um leitor RSS com boletins em áudio, um player de podcasts, leitura em voz alta de qualquer página com reprodução em segundo plano, e sincronização iCloud — além do navegador com restauração de posição que você já conhece."
       },
       "hero": {
         "badge": "iPhone e iPad",
-        "title": "Leia. Seja interrompido. Retome exatamente de onde parou.",
-        "desc": "ContentCue salva sua posição de rolagem exata quando um popup ou redirecionamento interrompe seu fluxo de leitura. Bordas coloridas marcam quais partes da página são anúncios — para você distinguir conteúdo de artigo real de blocos patrocinados num piscar de olhos. Um toque o traz de volta para onde você estava.",
-        "trust1": "Anúncios destacados, não bloqueados",
-        "trust2": "Nenhum dado de navegação coletado",
-        "trust3": "Funciona com qualquer site",
+        "title": "Navegue, leia e ouça — e nunca perca seu lugar.",
+        "desc": "ContentCue é um app completo: navegue com restauração automática de posição, assine feeds RSS e ouça um boletim em áudio dos seus títulos não lidos, transmita ou baixe podcasts, e faça qualquer página ser lida em voz alta — mesmo com a tela bloqueada. Tudo sincroniza nos seus dispositivos via iCloud.",
+        "trust1": "RSS, podcasts e web em um app",
+        "trust2": "Anúncios destacados, não bloqueados",
+        "trust3": "Sincronização iCloud",
         "appStore": "Baixar na App Store",
         "trust4": "11 idiomas"
       },
@@ -1559,24 +1577,27 @@
       "extras": {
         "eyebrow": "Áudio e Marcadores",
         "title": "Silencie reprodução automática. Salve seus favoritos.",
-        "desc": "Ative o silenciamento de áudio para silenciar anúncios em vídeo com reprodução automática enquanto lê em público. Marque até 3 sites gratuitamente, ou atualize para Pro para marcadores ilimitados e velocidade de rolagem automática ajustável para webtoons e mangá.",
+        "desc": "Ative o silenciar de áudio para silenciar anúncios de vídeo com reprodução automática enquanto lê em público. Adicione até 3 páginas gratuitamente aos favoritos, ou faça upgrade para Premium para favoritos ilimitados, cores personalizadas de borda de anúncio e velocidade de rolagem automática ajustável para webtoons, mangás e artigos longos.",
         "bullet1": "Silenciamento de áudio — silencie todo o áudio do site com um toque",
-        "bullet2": "Marcadores — 3 grátis, ilimitados com Pro",
-        "bullet3": "Velocidade de rolagem automática ajustável para conteúdo de longa forma (Pro)"
+        "bullet2": "Favoritos — 3 grátis, ilimitados com Premium",
+        "bullet3": "Velocidade de rolagem automática ajustável para conteúdo longo (Premium)"
       },
       "pricing": {
         "eyebrow": "Preços Simples",
-        "title": "Gratuito para sempre. Pro para leitores dedicados.",
+        "title": "Grátis para navegar. Premium desbloqueia o hub de áudio.",
         "freeTitle": "Gratuito",
-        "proTitle": "Pro",
+        "proTitle": "Premium",
         "feat1": "Restauração de posição",
         "feat2": "Distinção visual de anúncios",
-        "feat3": "Silenciamento de áudio",
-        "feat4": "Marcadores",
+        "feat3": "Silenciar áudio",
+        "feat4": "Favoritos",
         "feat4free": "3",
         "feat4pro": "Ilimitados",
-        "feat5": "Cor de borda de anúncio personalizada",
-        "feat6": "Rolagem automática ajustável"
+        "feat5": "Leitor RSS + TTS + importação/exportação OPML",
+        "feat6": "Player de podcasts + downloads offline",
+        "feat7": "Sincronização iCloud",
+        "feat8": "Cores de anúncio personalizadas, auto-scroll e Atalhos Siri",
+        "note": "Premium está disponível como assinatura anual com 7 dias de teste grátis, ou como compra única vitalícia. O preço é exibido no app de acordo com sua região."
       },
       "faqTitle": "Perguntas Frequentes",
       "faq": [
@@ -1593,17 +1614,65 @@
           "a": "ContentCue monitora sua posição de rolagem enquanto você lê. Quando você navega para longe (tocando em um link de anúncio, um redirecionamento ou o botão voltar), ele salva sua posição exata. Um botão Retomar aparece na interface do navegador. Toque para retornar exatamente para onde você estava."
         },
         {
+          "q": "ContentCue tem leitor RSS?",
+          "a": "Sim. Assine qualquer feed RSS, fixe seus canais favoritos e importe ou exporte toda a sua lista de assinaturas via OPML. Ative o TTS para ouvir seus títulos não lidos em voz alta como um boletim contínuo, como uma rádio pessoal."
+        },
+        {
+          "q": "Posso ouvir podcasts no ContentCue?",
+          "a": "Sim. Pesquise no diretório de podcasts integrado, fixe os programas que você acompanha e transmita ou baixe episódios para ouvir offline. A reprodução funciona pela tela de bloqueio e inclui temporizador de sono integrado."
+        },
+        {
+          "q": "ContentCue lê páginas da web em voz alta?",
+          "a": "Sim. Toque em reproduzir em qualquer artigo e o ContentCue o lê em voz alta com texto em voz alta. O áudio em segundo plano continua com a tela bloqueada, e o app retoma rapidamente seu último artigo e posição."
+        },
+        {
+          "q": "ContentCue sincroniza entre meu iPhone e iPad?",
+          "a": "Sim, com Premium. Favoritos, feeds RSS e assinaturas de podcasts sincronizam automaticamente via iCloud em todos os seus dispositivos Apple."
+        },
+        {
           "q": "ContentCue coleta meus dados de navegação?",
           "a": "Não. ContentCue processa toda navegação em seu dispositivo usando Apple WebKit. Nenhum histórico de navegação, URLs visitadas ou dados pessoais são coletados ou transmitidos em qualquer lugar."
         },
         {
-          "q": "O que a atualização Pro inclui?",
-          "a": "Pro é uma compra única por $2.99. Ela desbloqueia marcadores ilimitados, cores de borda de anúncio personalizadas e velocidade de rolagem automática ajustável. Não há assinatura — pague uma vez, use para sempre."
+          "q": "O que o ContentCue Premium inclui?",
+          "a": "Premium desbloqueia o hub de áudio completo: Leitor RSS com TTS e importação/exportação OPML, Player de podcasts com downloads offline, Sincronização iCloud nos seus dispositivos, Atalhos Siri, favoritos ilimitados, cores personalizadas de borda de anúncio e velocidade de rolagem automática ajustável. Está disponível como assinatura anual com 7 dias de teste grátis, ou como compra única vitalícia — o preço é exibido no app de acordo com sua região."
         }
       ],
       "backDesc": "Procurando um leitor de histórias em quadrinhos e ebooks?",
       "backCta": "Voltar para BiblioFuse Reader",
-      "languages": "Interface: Inglês · Espanhol · Francês · Holandês · Português · Russo · Chinês Simplificado · Japonês · Coreano · Indonésio · Malaio"
+      "languages": "Interface: Inglês · Espanhol · Francês · Holandês · Português · Russo · Chinês Simplificado · Japonês · Coreano · Indonésio · Malaio",
+      "rss": {
+        "eyebrow": "Leitor RSS",
+        "title": "Assine seus feeds. Ouça os títulos que você perdeu.",
+        "desc": "Assine seus feeds de notícias favoritos e fixe no topo os canais que você mais lê. Importe ou exporte toda a sua lista de assinaturas via OPML. Leia artigos em uma visualização limpa e focada — ou ative o TTS para ouvir seus títulos não lidos como um boletim contínuo, como uma rádio pessoal.",
+        "bullet1": "Assine feeds RSS ilimitados e fixe seus canais favoritos",
+        "bullet2": "Importe ou exporte sua lista de assinaturas via OPML",
+        "bullet3": "TTS lê seus títulos não lidos em sequência, como um boletim em áudio"
+      },
+      "podcast": {
+        "eyebrow": "Player de podcasts",
+        "title": "Pesquise, transmita e baixe seus programas favoritos.",
+        "desc": "Pesquise no diretório de podcasts integrado, fixe seus programas favoritos e transmita ou baixe episódios para ouvir offline depois. Controle a reprodução pela tela de bloqueio, com temporizador de sono integrado.",
+        "bullet1": "Diretório de podcasts integrado com programas fixados",
+        "bullet2": "Transmita ou baixe episódios para ouvir offline",
+        "bullet3": "Controles pela tela de bloqueio, com temporizador de sono"
+      },
+      "tts": {
+        "eyebrow": "Leitura em voz alta (TTS)",
+        "title": "Toque em reproduzir em qualquer página. Continue ouvindo com a tela bloqueada.",
+        "desc": "ContentCue lê qualquer artigo em voz alta enquanto você dirige, cozinha ou caminha. O áudio em segundo plano continua tocando quando você bloqueia a tela e retoma rapidamente seu último artigo e posição.",
+        "bullet1": "Texto em voz alta para qualquer artigo, com um toque",
+        "bullet2": "O áudio em segundo plano continua com a tela bloqueada",
+        "bullet3": "Retomada rápida do seu último artigo e posição"
+      },
+      "icloudSiri": {
+        "eyebrow": "Sincronização iCloud e Atalhos Siri",
+        "title": "Tudo acompanha você entre iPhone e iPad.",
+        "desc": "Favoritos, feeds RSS e assinaturas de podcasts sincronizam automaticamente em todos os seus dispositivos Apple. Diga \"Ei Siri, reproduzir ContentCue\" para iniciar seu boletim RSS ou podcast sem abrir o app — escolha a fonte e a velocidade separadamente para RSS e Podcasts nas configurações de Reprodução Siri.",
+        "bullet1": "Favoritos, feeds RSS e assinaturas de podcasts sincronizados via iCloud",
+        "bullet2": "\"Ei Siri, reproduzir ContentCue\" inicia seu boletim ou podcast sem usar as mãos",
+        "bullet3": "Cinco atalhos integrados, com controles de fonte e velocidade separados para RSS e podcasts"
+      }
     }
   }
 }

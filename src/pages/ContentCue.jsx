@@ -61,6 +61,8 @@ const ContentCue = () => {
     { label: t('redesign.contentcuePage.pricing.feat4'), free: t('redesign.contentcuePage.pricing.feat4free'), pro: t('redesign.contentcuePage.pricing.feat4pro') },
     { label: t('redesign.contentcuePage.pricing.feat5'), free: false, pro: true },
     { label: t('redesign.contentcuePage.pricing.feat6'), free: false, pro: true },
+    { label: t('redesign.contentcuePage.pricing.feat7'), free: false, pro: true },
+    { label: t('redesign.contentcuePage.pricing.feat8'), free: false, pro: true },
   ];
 
   function renderCell(val) {
@@ -82,6 +84,8 @@ const ContentCue = () => {
         canonical="/contentcue"
         schemaType="suite"
         schemaName="ContentCue Reading Browser"
+        operatingSystem="iOS, iPadOS"
+        softwareVersion="1.0.2"
         faqItems={t('redesign.contentcuePage.faq', { returnObjects: true })}
         breadcrumbs={breadcrumbs}
       />
@@ -150,6 +154,44 @@ const ContentCue = () => {
         </div>
       </section>
 
+      {/* Feature: RSS Reader */}
+      <FeatureSection
+        eyebrow={t('redesign.contentcuePage.rss.eyebrow')}
+        title={t('redesign.contentcuePage.rss.title')}
+        desc={t('redesign.contentcuePage.rss.desc')}
+        bullets={[t('redesign.contentcuePage.rss.bullet1'), t('redesign.contentcuePage.rss.bullet2'), t('redesign.contentcuePage.rss.bullet3')]}
+        accent="green"
+        reverse
+      />
+
+      {/* Feature: Podcast Player */}
+      <FeatureSection
+        eyebrow={t('redesign.contentcuePage.podcast.eyebrow')}
+        title={t('redesign.contentcuePage.podcast.title')}
+        desc={t('redesign.contentcuePage.podcast.desc')}
+        bullets={[t('redesign.contentcuePage.podcast.bullet1'), t('redesign.contentcuePage.podcast.bullet2'), t('redesign.contentcuePage.podcast.bullet3')]}
+        accent="emerald"
+      />
+
+      {/* Feature: Website TTS */}
+      <FeatureSection
+        eyebrow={t('redesign.contentcuePage.tts.eyebrow')}
+        title={t('redesign.contentcuePage.tts.title')}
+        desc={t('redesign.contentcuePage.tts.desc')}
+        bullets={[t('redesign.contentcuePage.tts.bullet1'), t('redesign.contentcuePage.tts.bullet2'), t('redesign.contentcuePage.tts.bullet3')]}
+        accent="green"
+        reverse
+      />
+
+      {/* Feature: iCloud Sync + Siri Shortcuts */}
+      <FeatureSection
+        eyebrow={t('redesign.contentcuePage.icloudSiri.eyebrow')}
+        title={t('redesign.contentcuePage.icloudSiri.title')}
+        desc={t('redesign.contentcuePage.icloudSiri.desc')}
+        bullets={[t('redesign.contentcuePage.icloudSiri.bullet1'), t('redesign.contentcuePage.icloudSiri.bullet2'), t('redesign.contentcuePage.icloudSiri.bullet3')]}
+        accent="emerald"
+      />
+
       {/* Feature: Position Restore */}
       <FeatureSection
         eyebrow={t('redesign.contentcuePage.restore.eyebrow')}
@@ -212,6 +254,8 @@ const ContentCue = () => {
               </div>
             ))}
           </div>
+
+          <p className="mt-6 text-center text-xs leading-relaxed text-slate-500">{t('redesign.contentcuePage.pricing.note')}</p>
 
           <div className="mt-8 flex justify-center">
             <a href={appStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex">

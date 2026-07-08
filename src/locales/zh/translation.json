@@ -536,7 +536,7 @@
           "desc": "个人电子书和漫画收藏的原生阅读器与图书馆管理器。",
           "bullet1": "EPUB、PDF、CBZ、CBR、RAR、ZIP 和 TXT",
           "bullet2": "标签、评分、进度和书签",
-          "bullet3": "iPhone、iPad 和 Mac 上的 iCloud 图书馆",
+          "bullet3": "iCloud 同步 + 从 Mac 图书馆实时流式传输",
           "cta": "在 App Store 获取",
           "secondary": "Google Play"
         },
@@ -570,10 +570,10 @@
         },
         "contentcue": {
           "tag": "仅限 iOS",
-          "desc": "轻量阅读浏览器，在任何中断后恢复您的滚动位置。",
-          "bullet1": "弹窗或跳转后一键恢复",
-          "bullet2": "阅读模式与自动滚动",
-          "bullet3": "书签 · 无需账号",
+          "desc": "浏览、阅读、收听一体化应用：带音频简报的 RSS 阅读器、播客播放器、网页文字转语音与 iCloud 同步。",
+          "bullet1": "RSS 阅读器，附带未读标题音频简报",
+          "bullet2": "播客播放器，支持离线下载",
+          "bullet3": "网页文字转语音，支持后台播放",
           "cta": "App Store",
           "bullet4": "支持 11 种语言"
         },
@@ -582,7 +582,7 @@
           "desc": "为EPUB和TXT书库提供全文搜索、标签和整理功能。",
           "bullet1": "支持AND / OR / NOT逻辑的Grep搜索",
           "bullet2": "按类型标记 · 导入时自动执行",
-          "bullet3": "设备间Wi-Fi双向同步",
+          "bullet3": "可自定义阅读器——主题、字体与全书搜索",
           "cta": "了解更多"
         }
       }
@@ -735,35 +735,36 @@
     },
     "contentcueSection": {
       "badge": "姊妹应用 · iPhone 和 iPad",
-      "titleA": "浏览。被打断。",
-      "titleB": "从中断处精确恢复。",
-      "desc": "ContentCue 是专为长篇文章、文档、论坛和漫画设计的轻量阅读浏览器。弹窗、跳转和误触都无法夺走您的位置——一键即可回到原处。",
+      "titleA": "浏览、阅读、收听——",
+      "titleB": "永不丢失你的进度。",
+      "desc": "ContentCue 是一款浏览、阅读、收听一体化应用：带未读标题音频简报的 RSS 信息源、支持离线下载的播客播放器、支持后台播放的任意网页文字转语音，以及跨设备的 iCloud 同步。",
       "features": {
-        "resume": {
-          "title": "一键恢复",
-          "body": "立即返回保存的滚动位置。"
+        "rssBriefing": {
+          "title": "RSS + 音频简报",
+          "body": "订阅信息源，收听朗读的未读标题。"
         },
-        "adOutlines": {
-          "title": "广告轮廓标记",
-          "body": "标记可能的广告元素，专注阅读。"
+        "podcasts": {
+          "title": "播客播放器",
+          "body": "搜索、在线播放并下载剧集供离线收听。"
         },
-        "mute": {
-          "title": "音频静音",
-          "body": "无需离开页面即可静音自动播放内容。"
+        "webTts": {
+          "title": "网页朗读（TTS）",
+          "body": "点击任意网页播放——锁屏后依然继续。"
         },
-        "bookmarks": {
-          "title": "书签",
-          "body": "收藏页面以便回访——无需账号。"
+        "icloudSync": {
+          "title": "iCloud 同步",
+          "body": "书签、信息源与订阅在你的设备间同步。"
         }
       },
       "altBadge": "在 App Store 下载 ContentCue",
-      "pricing": "免费使用。ContentCue Pro 一次性购买价格为 $2.99：无限书签、自定义广告轮廓样式和可调节自动滚动。",
+      "pricing": "免费浏览。Premium 解锁 RSS、播客、TTS 和 iCloud 同步——可选含 7 天免费试用的年度订阅，或一次性终身购买。",
       "langNote": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语",
       "platformNote": "iPhone 和 iPad · Apple Silicon Mac（通过 App Store 安装 iOS 应用）",
       "stats": {
         "requires": "系统要求",
-        "oneTimePro": "一次性 Pro",
-        "appLangs": "应用语言"
+        "oneTimePro": "Premium",
+        "appLangs": "应用语言",
+        "premiumValue": "年付或终身"
       }
     },
     "privacyStrip": {
@@ -1166,16 +1167,16 @@
       "titleB": "或适用于小说和轻小说。",
       "desc": "每款应用都围绕其书库的实际运作方式设计——不同的文件大小、不同的阅读习惯、不同的存储需求。",
       "comicTag": "漫画 · 漫画书 · PDF",
-      "comicIdent": "你的书库在Mac上。将其串流到iPhone。",
-      "comicBullet1": "CBZ、CBR、PDF、EPUB和TXT",
-      "comicBullet2": "压缩与合并以节省存储空间",
-      "comicBullet3": "通过Wi-Fi或5G从Mac串流",
+      "comicIdent": "大文件。保存在iPhone上——或直接从Mac或PC串流。",
+      "comicBullet1": "支持CBZ、CBR、PDF、EPUB和TXT",
+      "comicBullet2": "压缩与合并以节省空间——全部在设备上完成",
+      "comicBullet3": "从Mac或PC串流——家中用Wi-Fi，外出用5G，专为大容量而生",
       "comicCta": "下载BiblioFuse Reader",
       "textTag": "EPUB · 小说 · TXT",
-      "textIdent": "你的书库在手机上。搜索它。打标签。",
-      "textBullet1": "支持AND / OR / NOT逻辑的全文Grep",
-      "textBullet2": "按类型标记 · 任意方向同步",
-      "textBullet3": "EPUB和TXT的封面图——可视化书库",
+      "textIdent": "小文件。整个书库都能装进手机——搜索并为每个字标记。",
+      "textBullet1": "全文Grep——支持AND / OR / NOT，导入时自动运行",
+      "textBullet2": "按类型标记 · Wi-Fi任意方向同步",
+      "textBullet3": "可自定义阅读器——主题、字体与全书搜索",
       "textCta": "探索GrepTag Reader",
       "bothNote": "许多读者用BiblioFuse看漫画，用GrepTag读小说——两款均可免费试用。"
     },
@@ -1223,7 +1224,7 @@
         "desc": "EPUB封面自动提取。TXT书籍的封面从同文件夹图片匹配或粘贴URL获取。内置阅读器支持TTS、书签和可调字体，可阅读EPUB和TXT。",
         "bullet1": "EPUB封面自动提取（免费）",
         "bullet2": "TXT封面来自同文件夹图片或URL（Pro）",
-        "bullet3": "TTS含音量控制 · 书签 · 字体"
+        "bullet3": "TTS含音量控制 · 书签 · 章节导航"
       },
       "whySeparate": {
         "eyebrow": "为什么是两个应用？",
@@ -1313,10 +1314,27 @@
         {
           "q": "GrepTag Reader 需要联网才能使用吗？",
           "a": "不需要。GrepTag Reader 完全离线运行。所有搜索、标记和整理都直接在您的设备上进行——应用在本地读取您的 EPUB 和 TXT 文件，无需服务器或网络连接。只有在使用可选的 Wi-Fi Sync 功能时才会用到网络，该功能通过本地网络在您自己的设备之间传输书籍。"
+        },
+        {
+          "q": "我可以自定义阅读器的外观和字体吗？",
+          "a": "可以。在 iPhone、iPad 和 Mac 上可选择棕褐、灰色或黑色（OLED）主题。选择带实时预览的字体——包括 Iowan、Charter、楷体和支持 CJK 的衬线字体——或导入你自己的 .ttf/.otf 字体。还可以调整亮度、文本对齐方式和加粗，以适应你的阅读习惯。"
+        },
+        {
+          "q": "我可以在正在阅读的书中进行搜索吗？",
+          "a": "可以。全书搜索会扫描你正在阅读的整个 TXT 或 EPUB 文件，而不仅仅是当前章节。在 Mac 上有专门的查找栏，提供与 iOS 相同的字体预览体验。"
         }
       ],
       "faqTitle": "常见问题",
-      "languages": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语"
+      "languages": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语",
+      "reader": {
+        "eyebrow": "阅读器自定义",
+        "title": "打造专属于你的阅读器。",
+        "desc": "在 iPhone、iPad 和 Mac 上把阅读器调整到最适合你眼睛的状态。可选择棕褐、灰色或黑色（OLED）主题，选择带实时预览的字体——或导入自己的字体——并调整亮度、对齐方式和加粗。搜索你正在阅读的整本书，而不仅仅是当前章节。",
+        "bullet1": "iOS 与 macOS 上的棕褐、灰色和黑色（OLED）主题",
+        "bullet2": "带实时预览的字体选择器——Iowan、Charter、楷体、支持 CJK 的衬线字体等——或导入你自己的 .ttf/.otf 字体",
+        "bullet3": "亮度、文本对齐和加粗——外加全书搜索和 macOS 查找栏",
+        "badge": "1.0.4 与 1.0.5 新增"
+      }
     },
     "archivePage": {
       "seo": {
@@ -1516,16 +1534,16 @@
     },
     "contentcuePage": {
       "seo": {
-        "title": "ContentCue — 永远不会丢失你的位置的阅读浏览器",
-        "desc": "ContentCue 是一款为 iPhone 和 iPad 设计的阅读浏览器，当广告打断你时会保存你的滚动位置，并在广告周围绘制彩色边框，让你一眼就能分辨真实内容和赞助内容。轻轻一点即可返回你离开的位置。"
+        "title": "ContentCue — 浏览、阅读、收听，永不丢失进度。",
+        "desc": "ContentCue 是一款适用于 iPhone 和 iPad 的浏览、阅读、收听一体化应用：带音频简报的 RSS 阅读器、播客播放器、支持后台播放的网页朗读，以及 iCloud 同步——此外还有你熟悉的位置恢复浏览器功能。"
       },
       "hero": {
         "badge": "iPhone 和 iPad",
-        "title": "阅读。被打断。精确返回你的位置。",
-        "desc": "当弹窗或跳转打断你的阅读流程时，ContentCue 会保存你的精确滚动位置。彩色边框标记出页面的广告部分 — 让你一眼就能区分真实文章内容和赞助区块。轻轻一点就能返回你阅读的地方。",
-        "trust1": "广告高亮显示，不是阻止",
-        "trust2": "不收集任何浏览数据",
-        "trust3": "适用于任何网站",
+        "title": "浏览、阅读、收听——永不丢失你的进度。",
+        "desc": "ContentCue 是一款一体化应用：浏览时自动恢复阅读位置，订阅 RSS 并收听未读标题的音频简报，在线播放或下载播客，让任意网页被朗读出来——即使锁屏也能继续。所有内容通过 iCloud 在你的设备间同步。",
+        "trust1": "RSS、播客与网页浏览合一",
+        "trust2": "广告已标出，未拦截",
+        "trust3": "iCloud 同步",
         "appStore": "在 App Store 上下载",
         "trust4": "11 种语言"
       },
@@ -1559,24 +1577,27 @@
       "extras": {
         "eyebrow": "音频和书签",
         "title": "静音自动播放。保存你的收藏。",
-        "desc": "切换音频静音来屏蔽自动播放视频广告的声音，在公共场所安静阅读。免费书签最多 3 个，或升级到 Pro 版本获得无限书签和可调节的自动滚动速度，适合网络漫画和漫画。",
+        "desc": "开启静音以在公共场合阅读时屏蔽自动播放的视频广告。免费用户最多可添加 3 个书签，升级 Premium 可解锁无限书签、自定义广告边框颜色，以及适用于条漫、漫画和长文的可调节自动滚动速度。",
         "bullet1": "音频静音 — 轻轻一点屏蔽所有网站音频",
-        "bullet2": "书签 — 免费 3 个，Pro 版本无限",
-        "bullet3": "可调节的自动滚动速度，适合长篇内容（Pro 版本）"
+        "bullet2": "书签——免费 3 个，Premium 无限制",
+        "bullet3": "长内容可调节自动滚动速度（Premium）"
       },
       "pricing": {
         "eyebrow": "简单定价",
-        "title": "永远免费。Pro 版本为铁杆读者准备。",
+        "title": "免费浏览，Premium 解锁音频中心。",
         "freeTitle": "免费",
-        "proTitle": "Pro",
+        "proTitle": "Premium",
         "feat1": "位置恢复",
-        "feat2": "视觉广告区分",
+        "feat2": "广告视觉区分",
         "feat3": "音频静音",
         "feat4": "书签",
         "feat4free": "3 个",
         "feat4pro": "无限",
-        "feat5": "自定义广告边框颜色",
-        "feat6": "可调节的自动滚动"
+        "feat5": "RSS 阅读器 + TTS + OPML 导入/导出",
+        "feat6": "播客播放器 + 离线下载",
+        "feat7": "iCloud 同步",
+        "feat8": "自定义广告颜色、自动滚动与 Siri 快捷指令",
+        "note": "Premium 提供含 7 天免费试用的年度订阅，或一次性终身购买。应用会根据您的地区显示具体价格。"
       },
       "faqTitle": "常见问题",
       "faq": [
@@ -1593,17 +1614,65 @@
           "a": "ContentCue 在你阅读时监控你的滚动位置。当你离开页面时（点击广告链接、重定向或返回按钮），它会保存你的精确位置。浏览器 UI 中会出现恢复按钮。点击它可以返回到你所在的确切位置。"
         },
         {
+          "q": "ContentCue 有 RSS 阅读器吗？",
+          "a": "有。订阅任意 RSS 信息源，置顶收藏频道，并通过 OPML 导入或导出整个订阅列表。开启 TTS 即可将未读标题作为连续音频简报朗读，如同私人电台。"
+        },
+        {
+          "q": "我可以在 ContentCue 中收听播客吗？",
+          "a": "可以。在内置播客目录中搜索，置顶您关注的节目，在线播放或下载剧集供离线收听。播放支持锁屏控制，并内置睡眠定时器。"
+        },
+        {
+          "q": "ContentCue 会朗读网页内容吗？",
+          "a": "会。点击任意文章的播放键，ContentCue 即通过文字转语音朗读内容。锁屏后音频仍在后台继续播放，应用会快速恢复上次的文章和位置。"
+        },
+        {
+          "q": "ContentCue 能在我的 iPhone 和 iPad 间同步吗？",
+          "a": "可以，需要 Premium。书签、RSS 订阅和播客订阅会通过 iCloud 自动在您所有 Apple 设备上同步。"
+        },
+        {
           "q": "ContentCue 会收集我的浏览数据吗？",
           "a": "不会。ContentCue 使用 Apple WebKit 在你的设备上完全处理所有浏览。不会收集或传输任何浏览历史、访问的 URL 或个人数据。"
         },
         {
-          "q": "Pro 升级包含什么？",
-          "a": "Pro 是一次性购买，价格为 $2.99。它解锁无限书签、自定义广告边框颜色和可调节的自动滚动速度。没有订阅 — 一次付费，永久使用。"
+          "q": "ContentCue Premium 包含哪些内容？",
+          "a": "Premium 解锁完整音频中心：带 TTS 和 OPML 导入/导出的 RSS 阅读器、支持离线下载的播客播放器、跨设备 iCloud 同步、Siri 快捷指令、无限书签、自定义广告边框颜色以及可调节自动滚动速度。提供含 7 天免费试用的年度订阅，或一次性终身购买——应用会根据您的地区显示具体价格。"
         }
       ],
       "backDesc": "在寻找漫画和电子书阅读器？",
       "backCta": "返回 BiblioFuse Reader",
-      "languages": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语"
+      "languages": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语",
+      "rss": {
+        "eyebrow": "RSS 阅读器",
+        "title": "订阅你的信息源，收听错过的标题。",
+        "desc": "订阅您喜欢的新闻 RSS，将最常读的频道置顶。通过 OPML 导入或导出全部订阅列表。在干净专注的界面中阅读文章，或开启 TTS 将未读标题连续播放，如同私人电台简报。",
+        "bullet1": "订阅不限数量的 RSS 信息源并置顶收藏频道",
+        "bullet2": "通过 OPML 导入或导出订阅列表",
+        "bullet3": "TTS 连续朗读未读标题，如同音频简报"
+      },
+      "podcast": {
+        "eyebrow": "播客播放器",
+        "title": "搜索、在线播放并下载你喜爱的节目。",
+        "desc": "在内置播客目录中搜索，置顶您喜爱的节目，在线播放或下载剧集供离线收听。支持从锁屏界面控制播放，内置睡眠定时器。",
+        "bullet1": "内置播客搜索目录，可置顶节目",
+        "bullet2": "在线播放或下载剧集供离线收听",
+        "bullet3": "锁屏播放控制，内置睡眠定时器"
+      },
+      "tts": {
+        "eyebrow": "网页朗读（TTS）",
+        "title": "点击任意网页的播放键，锁屏后依然继续收听。",
+        "desc": "ContentCue 即可在您开车、做饭或散步时朗读任意文章内容。锁屏后音频继续在后台播放，并快速恢复上次的文章和位置。",
+        "bullet1": "一键为任意文章开启文字转语音",
+        "bullet2": "锁屏后音频仍在后台继续播放",
+        "bullet3": "快速恢复上次阅读的文章和位置"
+      },
+      "icloudSiri": {
+        "eyebrow": "iCloud 同步与 Siri 快捷指令",
+        "title": "所有内容都在你的 iPhone 和 iPad 间同步。",
+        "desc": "书签、RSS 订阅和播客订阅会自动在您所有 Apple 设备上同步。对 Siri 说\"播放 ContentCue\"，无需打开应用即可开始 RSS 简报或播客——在 Siri 播放设置中分别为 RSS 和播客选择播放来源与语速。",
+        "bullet1": "书签、RSS 订阅和播客订阅通过 iCloud 同步",
+        "bullet2": "对 Siri 说\"播放 ContentCue\"即可免动手启动简报或播客",
+        "bullet3": "五个内置快捷指令，RSS 与播客可分别设置来源和语速"
+      }
     }
   }
 }
