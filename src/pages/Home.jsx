@@ -364,6 +364,8 @@ function TwoAppsSection({ lang }) {
     t('redesign.twoAppsSection.textBullet2'),
     t('redesign.twoAppsSection.textBullet3'),
   ];
+  const mediaPanelClass = 'relative min-h-[240px] overflow-hidden md:min-h-full';
+  const mediaImageClass = 'absolute inset-0 h-full w-full scale-[1.08] object-cover object-center';
 
   return (
     <section className="bg-[#f5f8ff] py-16 sm:py-20">
@@ -382,9 +384,9 @@ function TwoAppsSection({ lang }) {
         <div className="grid gap-5 lg:grid-cols-2">
           {/* BiblioFuse Reader — comics */}
           <div className="grid overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-sm md:grid-cols-[0.88fr_1fr]">
-            <div className="relative min-h-[240px] bg-gradient-to-br from-blue-50 to-cyan-50 p-6">
+            <div className={`${mediaPanelClass} bg-gradient-to-br from-blue-50 to-cyan-50`}>
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(45,124,246,0.18),transparent_42%)]" />
-              <img src={`${imageBase}/iphone/1.png`} alt="BiblioFuse Reader" className="relative mx-auto h-[280px] w-auto drop-shadow-2xl" />
+              <img src={`${imageBase}/iphone/1.png`} alt="BiblioFuse Reader" className={`${mediaImageClass} drop-shadow-2xl`} />
             </div>
             <div className="flex flex-col p-7">
               <div className="mb-5 flex items-center justify-between gap-3">
@@ -419,9 +421,9 @@ function TwoAppsSection({ lang }) {
 
           {/* GrepTag Reader — novels */}
           <div className="grid overflow-hidden rounded-3xl border border-indigo-100 bg-white shadow-sm md:grid-cols-[0.88fr_1fr]">
-            <div className="relative min-h-[240px] bg-gradient-to-br from-indigo-50 to-violet-50 p-6">
+            <div className={`${mediaPanelClass} bg-gradient-to-br from-indigo-50 to-violet-50`}>
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(79,70,229,0.18),transparent_42%)]" />
-              <img src="/image/grepreader/library.png" alt="GrepTag Reader library" className="relative mx-auto mt-4 w-full max-w-[260px] rounded-2xl border border-white/70 shadow-2xl" />
+              <img src="/image/grepreader/asc/iphone-library.jpg" alt="GrepTag Reader library" className={`${mediaImageClass} object-[50%_48%] shadow-2xl`} />
             </div>
             <div className="flex flex-col p-7">
               <div className="mb-5 flex items-center justify-between gap-3">

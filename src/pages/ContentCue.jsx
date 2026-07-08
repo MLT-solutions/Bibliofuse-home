@@ -18,33 +18,49 @@ function Dash() {
   return <span className="text-slate-300 text-lg font-light">—</span>;
 }
 
-function FeatureSection({ eyebrow, title, desc, bullets, badge, accent = 'green', reverse = false }) {
+function FeatureSection({ eyebrow, title, desc, bullets, badge, accent = 'green', reverse = false, screenshot }) {
   const accentText = accent === 'green' ? 'text-green-600' : 'text-emerald-600';
   const accentBg = accent === 'green' ? 'bg-green-50' : 'bg-emerald-50';
   const accentIcon = accent === 'green' ? '#16a34a' : '#059669';
 
   return (
     <div className={`py-16 sm:py-20 ${reverse ? 'bg-[#f0fdf4]' : 'bg-white'}`}>
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <div className={`mb-3 text-xs font-bold uppercase tracking-[0.18em] ${accentText}`}>{eyebrow}</div>
-        <h2 className="mb-4 text-[clamp(1.6rem,3vw,2.4rem)] font-black leading-tight tracking-tight text-slate-950">
-          {title}
-        </h2>
-        <p className="mb-6 text-base leading-relaxed text-slate-600">{desc}</p>
-        <ul className="space-y-3">
-          {bullets.map((b) => (
-            <li key={b} className="flex items-start gap-3 text-sm text-slate-800">
-              <svg className="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={accentIcon} strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-              {b}
-            </li>
-          ))}
-        </ul>
-        {badge && (
-          <div className={`mt-6 inline-flex items-center gap-2 rounded-full ${accentBg} px-3 py-1.5 text-xs font-bold ${accentText}`}>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-            {badge}
+      <div className={`mx-auto px-4 sm:px-6 lg:px-8 ${screenshot ? 'max-w-7xl' : 'max-w-4xl'}`}>
+        <div className={`flex flex-col gap-10 lg:items-center lg:gap-16 ${screenshot ? 'lg:flex-row' : ''} ${reverse && screenshot ? 'lg:flex-row-reverse' : ''}`}>
+          <div className="flex-1">
+            <div className={`mb-3 text-xs font-bold uppercase tracking-[0.18em] ${accentText}`}>{eyebrow}</div>
+            <h2 className="mb-4 text-[clamp(1.6rem,3vw,2.4rem)] font-black leading-tight tracking-tight text-slate-950">
+              {title}
+            </h2>
+            <p className="mb-6 text-base leading-relaxed text-slate-600">{desc}</p>
+            <ul className="space-y-3">
+              {bullets.map((b) => (
+                <li key={b} className="flex items-start gap-3 text-sm text-slate-800">
+                  <svg className="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={accentIcon} strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                  {b}
+                </li>
+              ))}
+            </ul>
+            {badge && (
+              <div className={`mt-6 inline-flex items-center gap-2 rounded-full ${accentBg} px-3 py-1.5 text-xs font-bold ${accentText}`}>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                {badge}
+              </div>
+            )}
           </div>
-        )}
+          {screenshot && (
+            <div className="flex flex-1 justify-center lg:max-w-sm">
+              <div className="relative h-[420px] w-full max-w-[280px] overflow-hidden rounded-[2rem] bg-white shadow-2xl ring-1 ring-green-100 sm:h-[460px]">
+                <img
+                  src={screenshot}
+                  alt={title}
+                  className="h-full w-full object-cover object-[50%_58%]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -162,6 +178,7 @@ const ContentCue = () => {
         bullets={[t('redesign.contentcuePage.rss.bullet1'), t('redesign.contentcuePage.rss.bullet2'), t('redesign.contentcuePage.rss.bullet3')]}
         accent="green"
         reverse
+        screenshot="/image/contentcue/iphone-rss.jpg"
       />
 
       {/* Feature: Podcast Player */}
@@ -171,6 +188,7 @@ const ContentCue = () => {
         desc={t('redesign.contentcuePage.podcast.desc')}
         bullets={[t('redesign.contentcuePage.podcast.bullet1'), t('redesign.contentcuePage.podcast.bullet2'), t('redesign.contentcuePage.podcast.bullet3')]}
         accent="emerald"
+        screenshot="/image/contentcue/iphone-podcasts.jpg"
       />
 
       {/* Feature: Website TTS */}
@@ -181,6 +199,7 @@ const ContentCue = () => {
         bullets={[t('redesign.contentcuePage.tts.bullet1'), t('redesign.contentcuePage.tts.bullet2'), t('redesign.contentcuePage.tts.bullet3')]}
         accent="green"
         reverse
+        screenshot="/image/contentcue/iphone-tts-browser.jpg"
       />
 
       {/* Feature: iCloud Sync + Siri Shortcuts */}
@@ -200,6 +219,7 @@ const ContentCue = () => {
         bullets={[t('redesign.contentcuePage.restore.bullet1'), t('redesign.contentcuePage.restore.bullet2'), t('redesign.contentcuePage.restore.bullet3')]}
         accent="green"
         reverse
+        screenshot="/image/contentcue/iphone-web-reading.jpg"
       />
 
       {/* Feature: Visual Ad Distinction */}
@@ -210,6 +230,7 @@ const ContentCue = () => {
         bullets={[t('redesign.contentcuePage.visual.bullet1'), t('redesign.contentcuePage.visual.bullet2'), t('redesign.contentcuePage.visual.bullet3')]}
         badge={t('redesign.contentcuePage.visual.badge')}
         accent="emerald"
+        screenshot="/image/contentcue/iphone-tts-browser.jpg"
       />
 
       {/* Feature: Extras */}

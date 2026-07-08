@@ -59,12 +59,15 @@ function FeatureSection({ eyebrow, title, desc, bullets, badge, accent = 'indigo
             )}
           </div>
           {/* Screenshot */}
-          <div className="flex flex-1 items-center justify-center lg:max-w-xs">
-            <img
-              src={screenshot}
-              alt={title}
-              className="w-full max-w-[260px] drop-shadow-xl"
-            />
+          <div className="flex flex-1 items-center justify-center lg:max-w-sm">
+            <div className="relative h-[420px] w-full max-w-[280px] overflow-hidden rounded-[2rem] bg-white shadow-2xl ring-1 ring-indigo-100 sm:h-[460px]">
+              <img
+                src={screenshot}
+                alt={title}
+                className="h-full w-full object-cover object-[50%_58%]"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -191,7 +194,7 @@ const GrepTagReader = () => {
         bullets={[t('redesign.grepTagPage.grep.bullet1'), t('redesign.grepTagPage.grep.bullet2'), t('redesign.grepTagPage.grep.bullet3')]}
         badge={t('redesign.grepTagPage.grep.badge')}
         accent="indigo"
-        screenshot="/image/grepreader/grep-profiles.png"
+        screenshot="/image/grepreader/asc/iphone-grep-profile.jpg"
       />
 
       {/* Feature: Tags */}
@@ -202,7 +205,7 @@ const GrepTagReader = () => {
         bullets={[t('redesign.grepTagPage.tags.bullet1'), t('redesign.grepTagPage.tags.bullet2'), t('redesign.grepTagPage.tags.bullet3')]}
         accent="violet"
         reverse
-        screenshot="/image/grepreader/tags-results.png"
+        screenshot="/image/grepreader/asc/iphone-library.jpg"
       />
 
       {/* Feature: Wi-Fi Sync */}
@@ -212,7 +215,7 @@ const GrepTagReader = () => {
         desc={t('redesign.grepTagPage.sync.desc')}
         bullets={[t('redesign.grepTagPage.sync.bullet1'), t('redesign.grepTagPage.sync.bullet2'), t('redesign.grepTagPage.sync.bullet3')]}
         accent="indigo"
-        screenshot="/image/grepreader/wifi-sync.png"
+        screenshot="/image/grepreader/asc/iphone-sync.jpg"
       />
 
       {/* Feature: Covers & Reader */}
@@ -223,7 +226,7 @@ const GrepTagReader = () => {
         bullets={[t('redesign.grepTagPage.covers.bullet1'), t('redesign.grepTagPage.covers.bullet2'), t('redesign.grepTagPage.covers.bullet3')]}
         accent="violet"
         reverse
-        screenshot="/image/grepreader/library.png"
+        screenshot="/image/grepreader/asc/iphone-library.jpg"
       />
 
       {/* Feature: Reader Customization */}
@@ -234,7 +237,7 @@ const GrepTagReader = () => {
         bullets={[t('redesign.grepTagPage.reader.bullet1'), t('redesign.grepTagPage.reader.bullet2'), t('redesign.grepTagPage.reader.bullet3')]}
         badge={t('redesign.grepTagPage.reader.badge')}
         accent="indigo"
-        screenshot="/image/grepreader/library.png"
+        screenshot="/image/grepreader/asc/iphone-library.jpg"
       />
 
       {/* Pricing */}

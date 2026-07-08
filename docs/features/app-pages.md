@@ -16,6 +16,10 @@ own top-level route (`/comicreader`, `/grepreader`, `/archive`, `/smartdecrypt`,
   `/privacy` pages.
 - App logos/screenshots live under `public/image/<app-name>*` and
   `src/assets/` (for BiblioFuse's own feature icons).
+- App Store Connect screenshots may be reused when they accurately show the
+  feature, but add site-sized derivatives under `public/image/<app>/` instead of
+  linking to the raw ASC source files. Keep them framed/cropped so the page's own
+  heading remains the primary heading.
 
 ## Flagship BiblioFuse Reader
 `src/pages/ComicReader.jsx` is the Layer-1 page for the flagship comic/ebook reader at
