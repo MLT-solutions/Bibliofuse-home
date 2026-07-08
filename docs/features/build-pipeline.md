@@ -11,6 +11,9 @@ In order, after `vite build`:
 3. `scripts/prerender.js` — renders each route to static HTML so blog/marketing pages
    have real content for SEO crawlers and social-media unfurling, despite being an SPA.
    It serves `dist/` on an ephemeral local port during prerendering.
+   Prerender keeps the fail-closed behavior for incomplete SEO HTML, with configurable
+   `PRERENDER_PAGE_LOAD_TIMEOUT_MS` and `PRERENDER_SEO_READY_TIMEOUT_MS` timeouts
+   defaulting to 60 seconds to avoid false negatives on slower localized routes.
 
 As of the Android request page rollout, the current localized prerender set is 891 pages
 (81 routes × 11 languages). A completed build should end with `Prerendered 891/891 pages`.

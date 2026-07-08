@@ -24,7 +24,8 @@ const ROUTES = ['/', '/comicreader', '/webapp', '/grepreader', '/grepreader/chan
 
 const CONCURRENCY = 3;
 const MAX_RETRIES = 3;
-const SEO_READY_TIMEOUT_MS = 30000;
+const PAGE_LOAD_TIMEOUT_MS = Number(process.env.PRERENDER_PAGE_LOAD_TIMEOUT_MS || 60000);
+const SEO_READY_TIMEOUT_MS = Number(process.env.PRERENDER_SEO_READY_TIMEOUT_MS || 60000);
 
 const jobs = [];
 for (const lang of SUPPORTED_LANGUAGES) {
@@ -46,7 +47,7 @@ async function renderJob(browser, baseUrl, { urlPath, file }) {
     for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
         const page = await browser.newPage();
         try {
-            await page.goto(`${baseUrl}${urlPath}`, { waitUntil: 'networkidle0', timeout: 30000 });
+            await page.goto(`${baseUrl}${urlPath}`, { waitUntil: 'networkidle0', timeout: PAGE_LOAD_TIMEOUT_MS });
             await page.waitForFunction(() => document.title.includes(' | BiblioFuse'), { timeout: SEO_READY_TIMEOUT_MS });
             // Small buffer so any Helmet tags that commit alongside title (canonical,
             // hreflang, JSON-LD) are flushed too.
