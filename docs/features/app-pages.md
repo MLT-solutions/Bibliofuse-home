@@ -58,6 +58,15 @@ visual `TwoAppsSection` as the homepage's main comic-vs-novel chooser, then send
 visitors to `/comicreader` or `/grepreader` for product details. The Reader platform
 comparison table belongs on `/comicreader` with the technical FAQ.
 
+The `VisionProSection` (rendered after `ToolsHighlight`) covers the native visionOS
+app, live on the App Store as part of the universal iOS + Mac purchase. Its copy lives
+under `redesign.comicReaderPage.vision.*` and names the three spatial library layouts
+(Spatial Bookshelves, Grid View, Slanted Wall) plus the input-method story. `visionOS`
+is included in the page's `SoftwareApplication` `operatingSystem` schema, and two
+visionOS FAQ entries sit near the top of `redesign.comicReaderPage.faq`. Screenshots are
+web-optimized JPEGs in `public/image/comicreader/vision/`. Keep marketing of a visionOS
+build gated on real App Store availability (see the rollout rules in CLAUDE.md).
+
 Cover-thumbnail messaging belongs in both layers: a compact USP line in each
 homepage reader card, then fuller explanation in the Reader library section and the
 GrepTag covers section. Site screenshots should use generated or sanitized covers,

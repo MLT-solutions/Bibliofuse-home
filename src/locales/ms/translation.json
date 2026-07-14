@@ -1540,7 +1540,15 @@
       "faq": [
         {
           "q": "Adakah satu pembelian meliputi semua platform?",
-          "a": "Tidak. iOS + Mac adalah pembelian universal tunggal — satu bayaran meliputi iPhone, iPad, dan Mac. Android Reader, PC Reader, dan alat PC dijual secara berasingan."
+          "a": "Tidak. iOS + Mac ialah satu pembelian universal: satu bayaran meliputi iPhone, iPad, Mac dan Apple Vision Pro. Pembaca Android, Pembaca PC dan alat PC dijual berasingan."
+        },
+        {
+          "q": "Adakah BiblioFuse berfungsi pada Apple Vision Pro?",
+          "a": "Ya. BiblioFuse ialah aplikasi visionOS asli di App Store: tetingkap spatial sebenar, bukan aplikasi iPad mod keserasian. Ia menyokong penjejakan mata, cubit, tetikus, pad sesentuh dan papan kekunci, serta disertakan dalam pembelian universal iOS + Mac tanpa kos tambahan."
+        },
+        {
+          "q": "Susun atur bacaan spatial apakah yang disokong BiblioFuse pada visionOS?",
+          "a": "Tiga susun atur pustaka spatial: Rak buku spatial (kulit buku anda pada rak terapung), Paparan grid (grid terapung untuk pustaka besar) dan Dinding condong (dinding galeri condong dengan penapis penilaian dan tag). Anda juga boleh menstrim pustaka dari Mac atau PC untuk memastikan storan Vision Pro kekal lapang."
         },
         {
           "q": "Bagaimana cara menambah buku dan folder ke BiblioFuse di iPhone?",
@@ -1700,7 +1708,46 @@
             }
           ]
         }
-      ]
+      ],
+      "vision": {
+        "eyebrow": "Kini di Apple Vision Pro",
+        "badge": "Aplikasi visionOS asli",
+        "title": "Seluruh pustaka anda, dibayangkan semula dalam ruang.",
+        "desc": "BiblioFuse ialah aplikasi visionOS asli, bukan versi iPad yang diregangkan. Baca komik dan buku dalam tetingkap spatial sebenar, layari koleksi anda pada rak terapung, dan pastikan semuanya ringan dengan penstriman dari Mac atau PC anda.",
+        "modesTitle": "Tiga cara melayari dalam ruang",
+        "modes": {
+          "shelves": {
+            "title": "Rak buku spatial",
+            "body": "Kulit buku anda pada rak kayu sebenar, disusun mengelilingi anda."
+          },
+          "grid": {
+            "title": "Paparan grid",
+            "body": "Grid terapung yang kemas untuk mengimbas pustaka besar dengan pantas."
+          },
+          "wall": {
+            "title": "Dinding condong",
+            "body": "Dinding galeri condong dengan penapis penilaian dan tag pada pandangan sekilas."
+          }
+        },
+        "inputTitle": "Baca secara semula jadi, ikut cara anda",
+        "input": {
+          "eyes": {
+            "title": "Penjejakan mata & cubit",
+            "body": "Pandang dan cubit untuk menyelak halaman, tanpa pengawal."
+          },
+          "devices": {
+            "title": "Tetikus, pad sesentuh atau papan kekunci",
+            "body": "Page Down, Space, roda tatal atau klik, sama seperti di Mac."
+          },
+          "window": {
+            "title": "Tetingkap asli & bacaan spatial",
+            "body": "Bentuk tetingkap Potret, 2× Potret atau Lanskap untuk komik dan buku."
+          }
+        },
+        "streamNote": "Strim pustaka anda dari Mac atau PC supaya storan Vision Pro kekal lapang, melalui laluan peribadi Tailscale yang sama seperti yang digunakan BiblioFuse pada iPhone dan iPad.",
+        "imageAltModes": "BiblioFuse pada Apple Vision Pro memaparkan susun atur pustaka Rak buku spatial, Paparan grid dan Dinding condong",
+        "imageAltReading": "Membaca komik dalam BiblioFuse pada Apple Vision Pro dengan penjejakan mata dan pilihan kaedah input"
+      }
     },
     "androidInterest": {
       "eyebrow": "Senarai minat Android",

@@ -1540,7 +1540,15 @@
       "faq": [
         {
           "q": "一次购买是否覆盖所有平台？",
-          "a": "不。iOS + Mac 是一次通用购买 — 一次付款涵盖 iPhone、iPad 和 Mac。Android Reader、PC Reader 及 PC 工具各自单独销售。"
+          "a": "不。iOS + Mac 是一次通用购买——一次付款即涵盖 iPhone、iPad、Mac 和 Apple Vision Pro。Android 阅读器、PC 阅读器和 PC 工具均单独出售。"
+        },
+        {
+          "q": "BiblioFuse 能在 Apple Vision Pro 上使用吗？",
+          "a": "可以。BiblioFuse 是 App Store 上的原生 visionOS 应用——一个真正的空间窗口，而非兼容模式下的 iPad 应用。它支持眼动追踪、捏合、鼠标、触控板和键盘，并已包含在 iOS + Mac 通用购买中，无需额外付费。"
+        },
+        {
+          "q": "BiblioFuse 在 visionOS 上支持哪些空间阅读布局？",
+          "a": "三种空间图书馆布局：空间书架（封面陈列在悬浮书架上）、网格视图（面向大型图书馆的悬浮网格）和倾斜墙面（带评分和标签筛选的倾斜画廊墙面）。你还可以从 Mac 或 PC 串流图书馆，让 Vision Pro 的存储空间保持空闲。"
         },
         {
           "q": "如何在 iPhone 上向 BiblioFuse 添加书籍和文件夹？",
@@ -1700,7 +1708,46 @@
             }
           ]
         }
-      ]
+      ],
+      "vision": {
+        "eyebrow": "现已登陆 Apple Vision Pro",
+        "badge": "原生 visionOS 应用",
+        "title": "你的整个图书馆，在空间中焕然重生。",
+        "desc": "BiblioFuse 是原生 visionOS 应用，而非拉伸的 iPad 版本。在真正的空间窗口中阅读漫画和图书，在悬浮书架上浏览你的收藏，并通过从 Mac 或 PC 串流来保持设备轻量。",
+        "modesTitle": "在空间中浏览的三种方式",
+        "modes": {
+          "shelves": {
+            "title": "空间书架",
+            "body": "你的封面陈列在环绕你的真实木质书架上。"
+          },
+          "grid": {
+            "title": "网格视图",
+            "body": "简洁的悬浮网格，快速浏览大型图书馆。"
+          },
+          "wall": {
+            "title": "倾斜墙面",
+            "body": "倾斜的画廊墙面，一眼即可使用评分和标签筛选。"
+          }
+        },
+        "inputTitle": "以你的方式自然阅读",
+        "input": {
+          "eyes": {
+            "title": "眼动追踪与捏合",
+            "body": "注视并捏合即可翻页，无需控制器。"
+          },
+          "devices": {
+            "title": "鼠标、触控板或键盘",
+            "body": "Page Down、空格键、滚轮或点击，与 Mac 上一样。"
+          },
+          "window": {
+            "title": "原生窗口与空间阅读",
+            "body": "为漫画和图书提供竖屏、2× 竖屏或横屏窗口形态。"
+          }
+        },
+        "streamNote": "从 Mac 或 PC 串流你的图书馆，让 Vision Pro 的存储空间保持空闲——采用 BiblioFuse 在 iPhone 和 iPad 上使用的同一条 Tailscale 私有通道。",
+        "imageAltModes": "BiblioFuse 在 Apple Vision Pro 上展示空间书架、网格视图和倾斜墙面等图书馆布局",
+        "imageAltReading": "在 Apple Vision Pro 上使用 BiblioFuse 阅读漫画，配备眼动追踪和输入方式选项"
+      }
     },
     "androidInterest": {
       "eyebrow": "Android 需求名单",

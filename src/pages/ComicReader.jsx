@@ -279,6 +279,77 @@ function ToolsHighlight() {
   );
 }
 
+function VisionProSection() {
+  const { t } = useTranslation();
+  const v = t('redesign.comicReaderPage.vision', { returnObjects: true });
+  const modes = [
+    { key: 'shelves', icon: <path d="M4 6h16M4 12h16M4 18h16" /> },
+    { key: 'grid', icon: <><rect x="4" y="4" width="7" height="7" rx="1" /><rect x="13" y="4" width="7" height="7" rx="1" /><rect x="4" y="13" width="7" height="7" rx="1" /><rect x="13" y="13" width="7" height="7" rx="1" /></> },
+    { key: 'wall', icon: <path d="M4 8l16-3v11L4 19z" /> },
+  ];
+  const inputs = [
+    { key: 'eyes', icon: <><circle cx="12" cy="12" r="3" /><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z" /></> },
+    { key: 'devices', icon: <><rect x="6" y="3" width="12" height="18" rx="6" /><path d="M12 7v4" /></> },
+    { key: 'window', icon: <><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18" /></> },
+  ];
+
+  return (
+    <section id="apple-vision-pro" className="relative overflow-hidden bg-[#0a0f1e] py-20 sm:py-24">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(45,124,246,0.22),transparent_45%),radial-gradient(circle_at_85%_80%,rgba(20,194,166,0.16),transparent_40%)]" />
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto mb-14 max-w-3xl text-center">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-blue-200">
+            <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
+            {v.eyebrow}
+          </div>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-white">{v.title}</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-slate-300">{v.desc}</p>
+          <div className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-[11px] font-black uppercase tracking-wider text-white">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z" /></svg>
+            {v.badge}
+          </div>
+        </div>
+
+        <div className="overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
+          <img src={`/image/comicreader/vision/spatial-modes.jpg`} alt={v.imageAltModes} className="block w-full" loading="lazy" />
+        </div>
+
+        <div className="mt-8 grid gap-5 sm:grid-cols-3">
+          {modes.map((m) => (
+            <div key={m.key} className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+              <span className="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-blue-500/15 text-blue-300">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">{m.icon}</svg>
+              </span>
+              <h3 className="mb-1.5 text-base font-black text-white">{v.modes[m.key].title}</h3>
+              <p className="text-sm leading-relaxed text-slate-400">{v.modes[m.key].body}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-16 grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+          <div className="order-2 lg:order-1">
+            <h3 className="text-[clamp(1.5rem,2.6vw,2rem)] font-black tracking-tight text-white">{v.inputTitle}</h3>
+            <ul className="mt-6 space-y-4">
+              {inputs.map((it) => (
+                <li key={it.key} className="flex items-start gap-3">
+                  <span className="mt-0.5 grid h-8 w-8 flex-shrink-0 place-items-center rounded-lg bg-white/[0.06] text-teal-300">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">{it.icon}</svg>
+                  </span>
+                  <span className="leading-snug text-slate-200"><strong className="font-bold text-white">{v.input[it.key].title}</strong> <span className="text-slate-400">— {v.input[it.key].body}</span></span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-6 max-w-md border-l-2 border-blue-400/40 pl-3 text-sm leading-relaxed text-slate-400">{v.streamNote}</p>
+          </div>
+          <div className="order-1 overflow-hidden rounded-3xl border border-white/10 shadow-2xl lg:order-2">
+            <img src={`/image/comicreader/vision/designed-for-vision-pro.jpg`} alt={v.imageAltReading} className="block w-full" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ReaderChooser({ lang }) {
   const { t } = useTranslation();
   const rows = [
@@ -413,13 +484,14 @@ const ComicReader = () => {
         canonical="/comicreader"
         schemaType="suite"
         schemaName="BiblioFuse Reader"
-        operatingSystem="iOS, iPadOS, macOS, Android, Windows"
-        softwareVersion="2.1.2"
+        operatingSystem="iOS, iPadOS, macOS, visionOS, Android, Windows"
+        softwareVersion="2.1.4"
         featureList={[
           t('redesign.readerSection.features.library.title'),
           t('redesign.readerSection.features.reading.title'),
           t('redesign.readerSection.features.streaming.title'),
           t('redesign.toolsHighlight.title'),
+          t('redesign.comicReaderPage.vision.title'),
           t('redesign.twoAppsSection.comicBullet1'),
           t('redesign.twoAppsSection.comicBullet2'),
           t('redesign.twoAppsSection.comicBullet3'),
@@ -521,6 +593,8 @@ const ComicReader = () => {
           <ToolsHighlight />
         </div>
       </section>
+
+      <VisionProSection />
 
       <ReaderChooser lang={lang} />
 

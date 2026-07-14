@@ -1540,7 +1540,15 @@
       "faq": [
         {
           "q": "1回の購入ですべてのプラットフォームをカバーしますか？",
-          "a": "いいえ。iOS + Mac は1回のユニバーサル購入で、iPhone、iPad、Mac をカバーします。Android Reader、PC Reader、PC ツールはそれぞれ別売りです。"
+          "a": "いいえ。iOS + Mac は1回のユニバーサル購入で、1度の支払いで iPhone、iPad、Mac、Apple Vision Pro をカバーします。Android リーダー、PC リーダー、PC ツールはそれぞれ別売です。"
+        },
+        {
+          "q": "BiblioFuse は Apple Vision Pro で使えますか？",
+          "a": "はい。BiblioFuse は App Store のネイティブ visionOS アプリで、互換モードの iPad アプリではなく本物の空間ウィンドウです。視線トラッキング、ピンチ、マウス、トラックパッド、キーボードに対応し、iOS + Mac のユニバーサル購入に追加費用なしで含まれます。"
+        },
+        {
+          "q": "BiblioFuse は visionOS でどんな空間読書レイアウトに対応していますか？",
+          "a": "3つの空間ライブラリレイアウト：空間の本棚（浮かぶ棚に表紙を配置）、グリッド表示（大きなライブラリ向けの浮遊グリッド）、傾斜ウォール（評価とタグのフィルター付きの傾いたギャラリーウォール）。Mac や PC からライブラリをストリーミングして、Vision Pro のストレージを空けたままにもできます。"
         },
         {
           "q": "iPhoneのBiblioFuseに本やフォルダを追加するには？",
@@ -1700,7 +1708,46 @@
             }
           ]
         }
-      ]
+      ],
+      "vision": {
+        "eyebrow": "Apple Vision Pro に対応",
+        "badge": "ネイティブ visionOS アプリ",
+        "title": "ライブラリ全体を、空間で再構築。",
+        "desc": "BiblioFuse は引き伸ばした iPad 版ではなく、ネイティブの visionOS アプリです。本物の空間ウィンドウでコミックや本を読み、浮かぶ棚でコレクションを閲覧し、Mac や PC からストリーミングして本体を軽く保てます。",
+        "modesTitle": "空間で閲覧する3つの方法",
+        "modes": {
+          "shelves": {
+            "title": "空間の本棚",
+            "body": "あなたの表紙を、周囲に配置した本物の木製の棚に。"
+          },
+          "grid": {
+            "title": "グリッド表示",
+            "body": "大きなライブラリをすばやく見渡せる、すっきりとした浮遊グリッド。"
+          },
+          "wall": {
+            "title": "傾斜ウォール",
+            "body": "評価とタグのフィルターをひと目で使える、傾いたギャラリーウォール。"
+          }
+        },
+        "inputTitle": "あなたの方法で、自然に読む",
+        "input": {
+          "eyes": {
+            "title": "視線トラッキングとピンチ",
+            "body": "見てピンチするだけでページをめくれます。コントローラー不要。"
+          },
+          "devices": {
+            "title": "マウス、トラックパッド、キーボード",
+            "body": "Page Down、スペース、スクロールホイール、クリック。Mac と同じ操作。"
+          },
+          "window": {
+            "title": "ネイティブウィンドウと空間読書",
+            "body": "コミックや本に合わせて、縦・2×縦・横のウィンドウ形状を選べます。"
+          }
+        },
+        "streamNote": "Mac や PC からライブラリをストリーミングすれば、Vision Pro のストレージは空いたまま。BiblioFuse が iPhone や iPad で使うのと同じ Tailscale のプライベート経路を利用します。",
+        "imageAltModes": "Apple Vision Pro 上の BiblioFuse。空間の本棚、グリッド表示、傾斜ウォールのライブラリレイアウトを表示",
+        "imageAltReading": "Apple Vision Pro の BiblioFuse でコミックを読む様子。視線トラッキングと入力方法のオプション付き"
+      }
     },
     "androidInterest": {
       "eyebrow": "Android 要望リスト",

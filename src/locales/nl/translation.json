@@ -1540,7 +1540,15 @@
       "faq": [
         {
           "q": "Dekt één aankoop alle platforms?",
-          "a": "Nee. iOS + Mac is één universele aankoop — één betaling dekt iPhone, iPad en Mac. De Android Reader, PC Reader en pc-tools worden elk afzonderlijk verkocht."
+          "a": "Nee. iOS + Mac is één universele aankoop: één betaling dekt iPhone, iPad, Mac en Apple Vision Pro. De Android-lezer, pc-lezer en pc-tools worden apart verkocht."
+        },
+        {
+          "q": "Werkt BiblioFuse op Apple Vision Pro?",
+          "a": "Ja. BiblioFuse is een native visionOS-app in de App Store: een echt ruimtelijk venster, geen iPad-app in compatibiliteitsmodus. Het ondersteunt eye-tracking, knijpen, muis, trackpad en toetsenbord, en is inbegrepen in de universele iOS + Mac-aankoop zonder extra kosten."
+        },
+        {
+          "q": "Welke ruimtelijke leesindelingen ondersteunt BiblioFuse op visionOS?",
+          "a": "Drie ruimtelijke bibliotheekindelingen: Ruimtelijke boekenplanken (je covers op zwevende planken), Rasterweergave (een zwevend raster voor grote bibliotheken) en Schuine wand (een schuine galeriewand met beoordelings- en tagfilters). Je kunt je bibliotheek ook streamen vanaf een Mac of pc om de opslag van de Vision Pro vrij te houden."
         },
         {
           "q": "Hoe voeg ik boeken en mappen toe aan BiblioFuse op iPhone?",
@@ -1700,7 +1708,46 @@
             }
           ]
         }
-      ]
+      ],
+      "vision": {
+        "eyebrow": "Nu op Apple Vision Pro",
+        "badge": "Native visionOS-app",
+        "title": "Je hele bibliotheek, opnieuw ontworpen in de ruimte.",
+        "desc": "BiblioFuse is een native visionOS-app, geen uitgerekte iPad-versie. Lees strips en boeken in een echt ruimtelijk venster, blader door je collectie op zwevende planken en houd alles licht door te streamen vanaf je Mac of pc.",
+        "modesTitle": "Drie manieren om in de ruimte te bladeren",
+        "modes": {
+          "shelves": {
+            "title": "Ruimtelijke boekenplanken",
+            "body": "Je covers op echte houten planken, om je heen geplaatst."
+          },
+          "grid": {
+            "title": "Rasterweergave",
+            "body": "Een strak zwevend raster om snel door een grote bibliotheek te scannen."
+          },
+          "wall": {
+            "title": "Schuine wand",
+            "body": "Een schuine galeriewand met beoordelings- en tagfilters in één oogopslag."
+          }
+        },
+        "inputTitle": "Lees natuurlijk, op jouw manier",
+        "input": {
+          "eyes": {
+            "title": "Eye-tracking en knijpen",
+            "body": "Kijk en knijp om pagina's om te slaan, geen controller nodig."
+          },
+          "devices": {
+            "title": "Muis, trackpad of toetsenbord",
+            "body": "Page Down, spatie, scrollwiel of klik, net als op de Mac."
+          },
+          "window": {
+            "title": "Native venster en ruimtelijk lezen",
+            "body": "Venstervormen Staand, 2× Staand of Liggend voor strips en boeken."
+          }
+        },
+        "streamNote": "Stream je bibliotheek vanaf een Mac of pc zodat de opslag van de Vision Pro vrij blijft, via dezelfde privé Tailscale-route die BiblioFuse gebruikt op iPhone en iPad.",
+        "imageAltModes": "BiblioFuse op Apple Vision Pro met de bibliotheekindelingen Ruimtelijke boekenplanken, Rasterweergave en Schuine wand",
+        "imageAltReading": "Een strip lezen in BiblioFuse op Apple Vision Pro met eye-tracking en invoermethode-opties"
+      }
     },
     "androidInterest": {
       "eyebrow": "Android interesselijst",

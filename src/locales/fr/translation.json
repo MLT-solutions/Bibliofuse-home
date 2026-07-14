@@ -1540,7 +1540,15 @@
       "faq": [
         {
           "q": "Un seul achat couvre-t-il toutes les plateformes ?",
-          "a": "Non. iOS + Mac est un achat universel unique — un paiement couvre iPhone, iPad et Mac. L'Android Reader, le PC Reader et les outils PC sont vendus séparément."
+          "a": "Non. iOS + Mac forme un seul achat universel : un paiement couvre iPhone, iPad, Mac et Apple Vision Pro. Le Lecteur Android, le Lecteur PC et les outils PC sont vendus séparément."
+        },
+        {
+          "q": "BiblioFuse fonctionne-t-il sur Apple Vision Pro ?",
+          "a": "Oui. BiblioFuse est une app visionOS native sur l'App Store : une véritable fenêtre spatiale, pas une app iPad en mode de compatibilité. Elle prend en charge le suivi oculaire, le pincement, la souris, le trackpad et le clavier, et elle est incluse dans l'achat universel iOS + Mac sans frais supplémentaires."
+        },
+        {
+          "q": "Quelles dispositions de lecture spatiale BiblioFuse prend-il en charge sur visionOS ?",
+          "a": "Trois dispositions de bibliothèque spatiale : Étagères spatiales (vos couvertures sur des étagères flottantes), Vue en grille (une grille flottante pour les grandes bibliothèques) et Mur incliné (un mur-galerie incliné avec filtres de notes et d'étiquettes). Vous pouvez aussi diffuser votre bibliothèque depuis un Mac ou PC pour libérer le stockage du Vision Pro."
         },
         {
           "q": "Comment ajouter des livres et des dossiers à BiblioFuse sur iPhone ?",
@@ -1700,7 +1708,46 @@
             }
           ]
         }
-      ]
+      ],
+      "vision": {
+        "eyebrow": "Désormais sur Apple Vision Pro",
+        "badge": "App visionOS native",
+        "title": "Toute votre bibliothèque, réinventée dans l'espace.",
+        "desc": "BiblioFuse est une app visionOS native, pas une version iPad étirée. Lisez BD et livres dans une véritable fenêtre spatiale, parcourez votre collection sur des étagères flottantes et gardez tout léger en streaming depuis votre Mac ou PC.",
+        "modesTitle": "Trois façons de parcourir dans l'espace",
+        "modes": {
+          "shelves": {
+            "title": "Étagères spatiales",
+            "body": "Vos couvertures sur de vraies étagères en bois, disposées autour de vous."
+          },
+          "grid": {
+            "title": "Vue en grille",
+            "body": "Une grille flottante épurée pour parcourir vite une grande bibliothèque."
+          },
+          "wall": {
+            "title": "Mur incliné",
+            "body": "Un mur-galerie incliné avec filtres de notes et d'étiquettes d'un coup d'œil."
+          }
+        },
+        "inputTitle": "Lisez naturellement, à votre façon",
+        "input": {
+          "eyes": {
+            "title": "Suivi oculaire et pincement",
+            "body": "Regardez et pincez pour tourner les pages, sans manette."
+          },
+          "devices": {
+            "title": "Souris, trackpad ou clavier",
+            "body": "Page suivante, Espace, molette ou clic, comme sur Mac."
+          },
+          "window": {
+            "title": "Fenêtre native et lecture spatiale",
+            "body": "Formes de fenêtre Portrait, 2× Portrait ou Paysage pour BD et livres."
+          }
+        },
+        "streamNote": "Diffusez votre bibliothèque depuis un Mac ou PC pour libérer le stockage du Vision Pro, via la même route privée Tailscale que BiblioFuse utilise sur iPhone et iPad.",
+        "imageAltModes": "BiblioFuse sur Apple Vision Pro affichant les dispositions de bibliothèque Étagères spatiales, Vue en grille et Mur incliné",
+        "imageAltReading": "Lecture d'une BD dans BiblioFuse sur Apple Vision Pro avec suivi oculaire et options de méthode de saisie"
+      }
     },
     "androidInterest": {
       "eyebrow": "Liste de demande Android",
