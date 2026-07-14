@@ -279,7 +279,7 @@
           "pc": "BiblioFuse Reader PC"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac",
+          "apple": "iPhone · iPad · Mac · Vision Pro",
           "android": "스마트폰 · 태블릿",
           "web": "브라우저 · 모든 기기",
           "pc": "Windows"
@@ -309,7 +309,7 @@
             "피크 줌, 자동 스크롤, 진행도, 평점, 태그"
           ],
           [
-            "PC / Mac → iPhone 스트리밍",
+            "PC / Mac → iPhone & Vision Pro 스트리밍",
             "Tailscale 켜짐 — 집 & 5G 원격||Tailscale 없음 — 집 Wi-Fi만 (현재 로드맵에 없음)",
             "Tailscale 켜짐 — 집 & 5G 원격||Tailscale 없음 — 집 Wi-Fi만 (현재 로드맵에 없음)",
             "-"

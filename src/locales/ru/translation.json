@@ -279,7 +279,7 @@
           "pc": "BiblioFuse Reader PC"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac",
+          "apple": "iPhone · iPad · Mac · Vision Pro",
           "android": "Телефон · Планшет",
           "web": "Браузер · Все устройства",
           "pc": "Windows"
@@ -309,7 +309,7 @@
             "Peek zoom, авто-прокрутка, прогресс, оценки, метки"
           ],
           [
-            "Стриминг PC / Mac → iPhone",
+            "Стриминг PC / Mac → iPhone и Vision Pro",
             "Tailscale ВКЛ — дом и 5G удалённо||Без Tailscale — только домашний Wi-Fi (не в дорожной карте)",
             "Tailscale ВКЛ — дом и 5G удалённо||Без Tailscale — только домашний Wi-Fi (не в дорожной карте)",
             "-"

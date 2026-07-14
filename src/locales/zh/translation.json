@@ -279,7 +279,7 @@
           "pc": "BiblioFuse Reader PC"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac",
+          "apple": "iPhone · iPad · Mac · Vision Pro",
           "android": "手机 · 平板",
           "web": "浏览器 · 所有设备",
           "pc": "Windows"
@@ -309,7 +309,7 @@
             "Peek zoom、自动滚动、进度、评分、标签"
           ],
           [
-            "PC / Mac → iPhone 串流",
+            "PC / Mac → iPhone 与 Vision Pro 串流",
             "Tailscale 开启 — 家中及5G远程||不使用 Tailscale — 仅家中 Wi-Fi（暂不在开发计划中）",
             "Tailscale 开启 — 家中及5G远程||不使用 Tailscale — 仅家中 Wi-Fi（暂不在开发计划中）",
             "-"

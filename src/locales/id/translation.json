@@ -279,7 +279,7 @@
           "pc": "BiblioFuse Reader PC"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac",
+          "apple": "iPhone · iPad · Mac · Vision Pro",
           "android": "Ponsel · Tablet",
           "web": "Browser · Semua perangkat",
           "pc": "Windows"
@@ -309,7 +309,7 @@
             "Peek zoom, gulir otomatis, kemajuan, penilaian, tag"
           ],
           [
-            "Streaming PC / Mac → iPhone",
+            "Streaming PC / Mac → iPhone & Vision Pro",
             "Tailscale AKTIF — rumah & 5G jarak jauh||Tanpa Tailscale — hanya Wi-Fi rumah (belum ada dalam roadmap)",
             "Tailscale AKTIF — rumah & 5G jarak jauh||Tanpa Tailscale — hanya Wi-Fi rumah (belum ada dalam roadmap)",
             "-"

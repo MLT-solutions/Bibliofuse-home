@@ -602,7 +602,7 @@
           "android": "BiblioFuse Reader Android"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac",
+          "apple": "iPhone · iPad · Mac · Vision Pro",
           "pc": "Windows",
           "android": "Phone · Tablet"
         },
@@ -626,7 +626,7 @@
             "Peek zoom, auto-scroll, progress, ratings, tags"
           ],
           [
-            "PC / Mac → iPhone streaming",
+            "PC / Mac → iPhone & Vision Pro streaming",
             "Tailscale ON — home & 5G remote||No Tailscale — home Wi-Fi only (not in roadmap yet)",
             "Tailscale ON — home & 5G remote||No Tailscale — home Wi-Fi only (not in roadmap yet)",
             "-"
@@ -1538,15 +1538,33 @@
         "desc": "BiblioFuse is a native visionOS app — not a stretched iPad build. Read comics and books in a true spatial window, browse your collection on floating shelves, and keep everything light by streaming from your Mac or PC.",
         "modesTitle": "Three ways to browse in space",
         "modes": {
-          "shelves": { "title": "Spatial Bookshelves", "body": "Your covers on real wooden shelves, arranged around you." },
-          "grid": { "title": "Grid View", "body": "A clean floating grid for scanning a large library fast." },
-          "wall": { "title": "Slanted Wall", "body": "An angled gallery wall with rating and tag filters at a glance." }
+          "shelves": {
+            "title": "Spatial Bookshelves",
+            "body": "Your covers on real wooden shelves, arranged around you."
+          },
+          "grid": {
+            "title": "Grid View",
+            "body": "A clean floating grid for scanning a large library fast."
+          },
+          "wall": {
+            "title": "Slanted Wall",
+            "body": "An angled gallery wall with rating and tag filters at a glance."
+          }
         },
         "inputTitle": "Read naturally, your way",
         "input": {
-          "eyes": { "title": "Eye tracking & pinch", "body": "Look and pinch to turn pages — no controller needed." },
-          "devices": { "title": "Mouse, trackpad, or keyboard", "body": "Page Down, Space, scroll wheel, or click, just like on Mac." },
-          "window": { "title": "Native window & spatial reading", "body": "Portrait, 2× Portrait, or Landscape window shapes for comics and books." }
+          "eyes": {
+            "title": "Eye tracking & pinch",
+            "body": "Look and pinch to turn pages — no controller needed."
+          },
+          "devices": {
+            "title": "Mouse, trackpad, or keyboard",
+            "body": "Page Down, Space, scroll wheel, or click, just like on Mac."
+          },
+          "window": {
+            "title": "Native window & spatial reading",
+            "body": "Portrait, 2× Portrait, or Landscape window shapes for comics and books."
+          }
         },
         "streamNote": "Stream your library from a Mac or PC so Vision Pro storage stays free — the same private Tailscale route BiblioFuse uses on iPhone and iPad.",
         "imageAltModes": "BiblioFuse on Apple Vision Pro showing Spatial Bookshelves, Grid View, and Slanted Wall library layouts",

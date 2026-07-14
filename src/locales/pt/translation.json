@@ -279,7 +279,7 @@
           "pc": "BiblioFuse Reader PC"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac",
+          "apple": "iPhone · iPad · Mac · Vision Pro",
           "android": "Telemóvel · Tablet",
           "web": "Navegador · Todos os dispositivos",
           "pc": "Windows"
@@ -309,7 +309,7 @@
             "Peek zoom, rolagem automática, progresso, avaliações, etiquetas"
           ],
           [
-            "Streaming PC / Mac → iPhone",
+            "Streaming PC / Mac → iPhone e Vision Pro",
             "Tailscale ATIVO — casa e 5G remoto||Sem Tailscale — apenas Wi-Fi doméstico (não está no roadmap ainda)",
             "Tailscale ATIVO — casa e 5G remoto||Sem Tailscale — apenas Wi-Fi doméstico (não está no roadmap ainda)",
             "-"

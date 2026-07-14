@@ -279,7 +279,7 @@
           "pc": "BiblioFuse Reader PC"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac",
+          "apple": "iPhone · iPad · Mac · Vision Pro",
           "android": "Telefon · Tablet",
           "web": "Pelayar · Semua peranti",
           "pc": "Windows"
@@ -309,7 +309,7 @@
             "Peek zoom, tatal auto, kemajuan, penilaian, tag"
           ],
           [
-            "Penstriman PC / Mac → iPhone",
+            "Penstriman PC / Mac → iPhone & Vision Pro",
             "Tailscale HIDUP — rumah & 5G jauh||Tanpa Tailscale — Wi-Fi rumah sahaja (belum dalam pelan pembangunan)",
             "Tailscale HIDUP — rumah & 5G jauh||Tanpa Tailscale — Wi-Fi rumah sahaja (belum dalam pelan pembangunan)",
             "-"
