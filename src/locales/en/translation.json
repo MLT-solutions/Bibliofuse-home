@@ -1390,13 +1390,13 @@
     },
     "contentcuePage": {
       "seo": {
-        "title": "ContentCue — Browse, Read & Listen. Never Lose Your Place.",
-        "desc": "ContentCue is an all-in-one browse, read, and listen app for iPhone and iPad: an RSS reader with audio briefings, a podcast player, website text-to-speech with background playback, and iCloud sync — plus the position-restore browser you already know."
+        "title": "ContentCue — Read & Listen on iPhone, iPad & Apple Vision Pro",
+        "desc": "ContentCue is an all-in-one read-and-listen app for iPhone, iPad, and Apple Vision Pro: a position-restore reading browser, RSS reader with audio briefings, podcast player with offline downloads, website text-to-speech, CarPlay, and iCloud sync."
       },
       "hero": {
-        "badge": "iPhone & iPad",
+        "badge": "Now on Apple Vision Pro",
         "title": "Browse, read, and listen — and never lose your place.",
-        "desc": "ContentCue is an all-in-one app: browse with automatic position restore, subscribe to RSS feeds and hear an audio briefing of your unread headlines, stream or download podcasts, and have any web page read aloud — even with your screen locked. Everything syncs across your devices with iCloud.",
+        "desc": "ContentCue is an all-in-one app: browse with automatic position restore, hear your RSS feeds as an audio briefing, stream or download podcasts, and have any web page read aloud — on iPhone, iPad, Apple Vision Pro, and CarPlay. One purchase, every device, synced with iCloud.",
         "trust1": "RSS, podcasts & web in one app",
         "trust2": "Ads highlighted, not blocked",
         "trust3": "iCloud sync across devices",
@@ -1417,7 +1417,7 @@
         "eyebrow": "RSS Reader",
         "title": "Subscribe to your feeds. Hear the headlines you missed.",
         "desc": "Follow the news sources you care about and pin the channels you read most to the top. Import or export your entire subscription list with OPML. Read in a clean, focused view — or turn on TTS to hear your unread headlines back-to-back, like a personal radio briefing.",
-        "bullet1": "Subscribe to unlimited RSS feeds and pin your favourite channels",
+        "bullet1": "Follow your favourite feeds and pin the channels you read most",
         "bullet2": "Import or export your subscription list via OPML",
         "bullet3": "TTS reads unread headlines back-to-back as an audio briefing"
       },
@@ -1439,7 +1439,7 @@
       },
       "icloudSiri": {
         "eyebrow": "iCloud Sync & Siri Shortcuts",
-        "title": "Everything follows you across iPhone and iPad.",
+        "title": "Everything follows you across iPhone, iPad, and Vision Pro.",
         "desc": "Bookmarks, RSS feeds, and podcast subscriptions sync automatically across your Apple devices. Say “Hey Siri, play ContentCue” to start your RSS briefing or podcast without opening the app — choose your source and speed separately for RSS and podcasts in Siri Playback settings.",
         "bullet1": "Bookmarks, RSS feeds, and podcast subscriptions sync via iCloud",
         "bullet2": "“Hey Siri, play ContentCue” starts your briefing or podcast hands-free",
@@ -1472,7 +1472,7 @@
       },
       "pricing": {
         "eyebrow": "Simple Pricing",
-        "title": "Free to browse. Premium unlocks the audio hub.",
+        "title": "Free every day. Premium removes the limits.",
         "freeTitle": "Free",
         "proTitle": "Premium",
         "feat1": "Position restore",
@@ -1481,11 +1481,13 @@
         "feat4": "Bookmarks",
         "feat4free": "3",
         "feat4pro": "Unlimited",
-        "feat5": "RSS Reader + TTS + OPML import/export",
-        "feat6": "Podcast Player + offline downloads",
         "feat7": "iCloud Sync",
         "feat8": "Custom ad colours, auto-scroll & Siri Shortcuts",
-        "note": "Premium is available as a yearly subscription with a 7-day free trial, or a one-time lifetime purchase. Price is shown in the app for your region."
+        "note": "Premium is available as a yearly subscription with a 7-day free trial, or a one-time lifetime purchase. Price is shown in the app for your region.",
+        "featTts": "Website TTS & audio briefings",
+        "featPlatforms": "Native Vision Pro & CarPlay",
+        "featRss": "Saved RSS feeds",
+        "featPods": "Saved podcast shows"
       },
       "faqTitle": "Frequently Asked Questions",
       "faq": [
@@ -1514,8 +1516,16 @@
           "a": "Yes. Tap Play on any article and ContentCue reads it aloud with text-to-speech. Background audio keeps playing when your screen is locked, and the app quickly resumes your last article and position."
         },
         {
-          "q": "Does ContentCue sync across my iPhone and iPad?",
-          "a": "Yes, with Premium. Bookmarks, RSS feeds, and podcast subscriptions sync automatically via iCloud across all your Apple devices."
+          "q": "Does ContentCue sync across my iPhone, iPad, and Vision Pro?",
+          "a": "Yes, with Premium. Bookmarks, RSS feeds, and podcast subscriptions sync automatically via iCloud across all your Apple devices, including Apple Vision Pro."
+        },
+        {
+          "q": "Does ContentCue work on Apple Vision Pro?",
+          "a": "Yes. ContentCue has a native visionOS app — browse in a floating window, page through articles with a quick pinch, and shrink playback to a compact corner player. It’s a universal purchase: buy once and use it on iPhone, iPad, and Vision Pro, with Premium shared across all three."
+        },
+        {
+          "q": "Does ContentCue support CarPlay?",
+          "a": "Yes. ContentCue appears on your car’s CarPlay display with your saved podcasts and RSS feeds. You can start playback, see the current queue, and change playback speed directly from the car screen."
         },
         {
           "q": "Does ContentCue collect my browsing data?",
@@ -1523,12 +1533,49 @@
         },
         {
           "q": "What does ContentCue Premium include?",
-          "a": "Premium unlocks the full audio hub: RSS Reader with TTS and OPML import/export, Podcast Player with offline downloads, iCloud Sync across your devices, Siri Shortcuts, unlimited bookmarks, custom ad outline colours, and adjustable auto-scroll speed. It's available as a yearly subscription with a 7-day free trial, or a one-time lifetime purchase — price is shown in the app for your region."
+          "a": "Free includes the full reading browser plus up to 3 bookmarks, 3 RSS feeds, and 3 saved podcast shows. Premium removes those limits — unlimited bookmarks, feeds, and shows — and adds iCloud Sync across devices, Siri Shortcuts, custom ad outline colours, and adjustable auto-scroll speed. It’s available as a yearly subscription with a 7-day free trial, or a one-time lifetime purchase."
         }
       ],
       "backDesc": "Looking for a comic and ebook reader?",
       "backCta": "Back to BiblioFuse Reader",
-      "languages": "App UI: English · Spanish · French · Dutch · Portuguese · Russian · Simplified Chinese · Japanese · Korean · Indonesian · Malay"
+      "languages": "App UI: English · Spanish · French · Dutch · Portuguese · Russian · Simplified Chinese · Japanese · Korean · Indonesian · Malay",
+      "pain": {
+        "eyebrow": "Why ContentCue",
+        "title": "Reading on the web is broken. We fixed the annoying parts.",
+        "desc": "ContentCue was built around the everyday frustrations of reading and listening on your phone — without blocking ads or breaking the sites you love.",
+        "card1title": "You lose your place — constantly",
+        "card1problem": "A popup hijacks the page, a redirect fires, or you switch apps for a second — and now you’re scroll-hunting for the paragraph you were on.",
+        "card1fix": "ContentCue auto-saves your exact position and brings you back with one tap.",
+        "card2title": "Ads blend into the content",
+        "card2problem": "In-body ads are designed to look like the article, so you tap them by accident and lose your flow.",
+        "card2fix": "Colored outlines make every ad instantly recognisable — nothing is blocked, everything is clear.",
+        "card3title": "Your content lives in three different apps",
+        "card3problem": "A browser for articles, a separate RSS app, another app for podcasts — three inboxes, three players, three places to check.",
+        "card3fix": "One app with one audio player for web pages, RSS feeds, and podcasts.",
+        "card4title": "There’s never time to actually read",
+        "card4problem": "Your reading list grows on the commute, at the gym, in the car — exactly when your eyes are busy.",
+        "card4fix": "Turn any page or unread feed into audio and listen screen-locked, on CarPlay, or on Vision Pro."
+      },
+      "vision": {
+        "eyebrow": "Native Apple Vision Pro app",
+        "title": "Your reading room, the size of your living room.",
+        "desc": "ContentCue on Vision Pro is a true native visionOS app — not an iPad port. Browse, read, and listen in a floating window with gaze-friendly controls, then shrink playback down to a small corner player while you do something else.",
+        "bullet1": "Reading mode with pinch-to-page — a quick pinch anywhere pages down, no controls to aim at",
+        "bullet2": "RSS and podcasts in spatial view, with the same feeds and shows synced from your iPhone",
+        "bullet3": "Shrink playback to a compact corner window and keep listening while you work",
+        "alt1": "ContentCue browser window on Apple Vision Pro showing an article with the audio player",
+        "alt2": "ContentCue RSS feeds in a spatial window on Apple Vision Pro",
+        "alt3": "ContentCue podcast library in a spatial window on Apple Vision Pro"
+      },
+      "carplay": {
+        "eyebrow": "CarPlay",
+        "title": "Your feeds and shows, on the car display.",
+        "desc": "Connect your iPhone and ContentCue appears on CarPlay with your saved podcasts and RSS feeds. Start an episode or an article briefing from the car screen, check what’s up next in the queue, and change playback speed — all in the native CarPlay interface.",
+        "bullet1": "Browse your saved podcasts and RSS feeds from the car display",
+        "bullet2": "Queue view shows what’s playing now and up next",
+        "bullet3": "Adjust playback speed without picking up your phone",
+        "alt": "ContentCue on CarPlay showing the queue, podcasts, and RSS tabs"
+      }
     },
     "comicReaderPage": {
       "vision": {

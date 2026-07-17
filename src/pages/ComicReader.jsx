@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import StickyDownloadBar from '../components/StickyDownloadBar';
+import DevicePills from '../components/DevicePills';
 
 const appStoreUrl = 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093';
 const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ';
@@ -486,6 +487,7 @@ const ComicReader = () => {
         schemaName="BiblioFuse Reader"
         operatingSystem="iOS, iPadOS, macOS, visionOS, Android, Windows"
         softwareVersion="2.1.4"
+        storeLinks={[appStoreUrl, playStoreUrl, bibliofusePcUrl]}
         featureList={[
           t('redesign.readerSection.features.library.title'),
           t('redesign.readerSection.features.reading.title'),
@@ -526,6 +528,7 @@ const ComicReader = () => {
               <StoreBadge type="play" href={playStoreUrl} />
               <StoreBadge type="microsoft" href={bibliofusePcUrl} />
             </div>
+            <DevicePills devices={['iphone', 'ipad', 'mac', 'visionpro', 'android', 'windows']} tone="light" align="start" className="mt-5" />
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-slate-600">
               {[t('redesign.common.noAds'), t('redesign.common.noTracking'), t('redesign.common.onDevice')].map((item) => (
                 <span key={item} className="flex items-center gap-1.5">

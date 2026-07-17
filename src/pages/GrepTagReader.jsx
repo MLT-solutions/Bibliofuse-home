@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import StickyDownloadBar from '../components/StickyDownloadBar';
+import DevicePills from '../components/DevicePills';
 
 const grepTagAppStoreUrl = 'https://apps.apple.com/app/bibliofuse-grep-tag-reader/id6779977609';
 const grepTagMsStoreUrl = 'https://apps.microsoft.com/store/detail/9MT6VDXXZ3RH';
@@ -116,6 +117,7 @@ const GrepTagReader = () => {
         schemaName="BiblioFuse GrepTag Reader"
         operatingSystem="iOS, iPadOS, macOS, Windows"
         softwareVersion="1.0.5"
+        storeLinks={[grepTagAppStoreUrl, grepTagMsStoreUrl]}
         featureList={[
           'Search inside ebooks — find any word across your entire EPUB or TXT library',
           'Keyword search with AND, OR, NOT logic — save searches as reusable profiles',
@@ -148,9 +150,11 @@ const GrepTagReader = () => {
           <h1 className="mb-5 text-[clamp(2.4rem,5vw,4rem)] font-black leading-tight tracking-tight text-white">
             {t('redesign.grepTagPage.hero.title')}
           </h1>
-          <p className="mx-auto mb-8 max-w-xl text-lg leading-relaxed text-indigo-200">
+          <p className="mx-auto mb-6 max-w-xl text-lg leading-relaxed text-indigo-200">
             {t('redesign.grepTagPage.hero.desc')}
           </p>
+
+          <DevicePills devices={['iphone', 'ipad', 'mac', 'windows']} tone="dark" className="mb-8" />
 
           <div className="flex flex-col items-center gap-3">
             <div className="flex flex-wrap justify-center gap-3">

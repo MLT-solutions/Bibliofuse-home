@@ -1395,13 +1395,13 @@
     },
     "contentcuePage": {
       "seo": {
-        "title": "ContentCue — Navega, lee y escucha. Nunca pierdas tu lugar.",
-        "desc": "ContentCue es una app todo en uno para iPhone y iPad: un lector RSS con resúmenes en audio, un reproductor de podcasts, lectura en voz alta de cualquier página con reproducción en segundo plano y sincronización con iCloud — además del navegador con restauración de posición que ya conoces."
+        "title": "ContentCue — Lee y escucha en iPhone, iPad y Apple Vision Pro",
+        "desc": "ContentCue es una app todo en uno para leer y escuchar en iPhone, iPad y Apple Vision Pro: navegador de lectura con restauración de posición, lector RSS con resúmenes de audio, reproductor de podcasts con descargas sin conexión, texto a voz para webs, CarPlay y sincronización iCloud."
       },
       "hero": {
-        "badge": "iPhone e iPad",
+        "badge": "Ahora en Apple Vision Pro",
         "title": "Navega, lee y escucha — y nunca pierdas tu lugar.",
-        "desc": "ContentCue es una app todo en uno: navega con restauración automática de posición, suscríbete a feeds RSS y escucha un resumen en audio de tus titulares no leídos, transmite o descarga podcasts, y haz que cualquier página web se lea en voz alta — incluso con la pantalla bloqueada. Todo se sincroniza en tus dispositivos con iCloud.",
+        "desc": "ContentCue es una app todo en uno: navega con restauración automática de posición, escucha tus feeds RSS como un resumen de audio, transmite o descarga podcasts y haz que cualquier página web se lea en voz alta — en iPhone, iPad, Apple Vision Pro y CarPlay. Una sola compra, todos tus dispositivos, sincronizados con iCloud.",
         "trust1": "RSS, podcasts y web en una app",
         "trust2": "Anuncios resaltados, no bloqueados",
         "trust3": "Sincronización con iCloud",
@@ -1445,7 +1445,7 @@
       },
       "pricing": {
         "eyebrow": "Precios simples",
-        "title": "Gratis para navegar. Premium desbloquea el centro de audio.",
+        "title": "Gratis todos los días. Premium elimina los límites.",
         "freeTitle": "Gratis",
         "proTitle": "Premium",
         "feat1": "Restauración de posición",
@@ -1454,11 +1454,13 @@
         "feat4": "Marcadores",
         "feat4free": "3",
         "feat4pro": "Ilimitados",
-        "feat5": "Lector RSS + TTS + importación/exportación OPML",
-        "feat6": "Reproductor de podcasts + descargas offline",
         "feat7": "Sincronización iCloud",
         "feat8": "Colores de anuncios personalizados, auto-scroll y Atajos de Siri",
-        "note": "Premium está disponible como suscripción anual con 7 días de prueba gratuita, o como compra única de por vida. El precio se muestra en la app según tu región."
+        "note": "Premium está disponible como suscripción anual con 7 días de prueba gratuita, o como compra única de por vida. El precio se muestra en la app según tu región.",
+        "featTts": "TTS de webs y resúmenes de audio",
+        "featPlatforms": "Vision Pro y CarPlay nativos",
+        "featRss": "Feeds RSS guardados",
+        "featPods": "Programas de podcast guardados"
       },
       "faqTitle": "Preguntas frecuentes",
       "faq": [
@@ -1487,8 +1489,16 @@
           "a": "Sí. Toca reproducir en cualquier artículo y ContentCue lo lee en voz alta con texto a voz. El audio en segundo plano sigue sonando con la pantalla bloqueada, y la app retoma rápidamente tu último artículo y posición."
         },
         {
-          "q": "¿ContentCue se sincroniza entre mi iPhone y mi iPad?",
-          "a": "Sí, con Premium. Los marcadores, feeds RSS y suscripciones de podcasts se sincronizan automáticamente vía iCloud en todos tus dispositivos Apple."
+          "q": "¿ContentCue se sincroniza entre mi iPhone, iPad y Vision Pro?",
+          "a": "Sí, con Premium. Los marcadores, feeds RSS y suscripciones de podcasts se sincronizan automáticamente vía iCloud entre todos tus dispositivos Apple, incluido Apple Vision Pro."
+        },
+        {
+          "q": "¿ContentCue funciona en Apple Vision Pro?",
+          "a": "Sí. ContentCue tiene una app visionOS nativa — navega en una ventana flotante, pasa páginas con un pellizco rápido y reduce la reproducción a un reproductor compacto de esquina. Es una compra universal: compra una vez y úsala en iPhone, iPad y Vision Pro, con Premium compartido entre los tres."
+        },
+        {
+          "q": "¿ContentCue es compatible con CarPlay?",
+          "a": "Sí. ContentCue aparece en la pantalla CarPlay de tu coche con tus podcasts y feeds RSS guardados. Puedes iniciar la reproducción, ver la cola actual y cambiar la velocidad directamente desde la pantalla del coche."
         },
         {
           "q": "¿ContentCue recopila mis datos de navegación?",
@@ -1496,7 +1506,7 @@
         },
         {
           "q": "¿Qué incluye ContentCue Premium?",
-          "a": "Premium desbloquea el centro de audio completo: Lector RSS con TTS e importación/exportación OPML, Reproductor de podcasts con descargas offline, Sincronización iCloud en tus dispositivos, Atajos de Siri, marcadores ilimitados, colores personalizados del borde de anuncios y velocidad de desplazamiento automático ajustable. Está disponible como suscripción anual con 7 días de prueba gratuita, o como compra única de por vida — el precio se muestra en la app según tu región."
+          "a": "La versión gratuita incluye el navegador de lectura completo más hasta 3 marcadores, 3 feeds RSS y 3 programas de podcast guardados. Premium elimina esos límites — marcadores, feeds y programas ilimitados — y añade sincronización iCloud entre dispositivos, atajos de Siri, colores personalizados para el contorno de anuncios y velocidad de auto-desplazamiento ajustable. Está disponible como suscripción anual con 7 días de prueba gratis o como compra única de por vida."
         }
       ],
       "backDesc": "¿Buscas un lector de cómics y ebooks?",
@@ -1506,7 +1516,7 @@
         "eyebrow": "Lector RSS",
         "title": "Suscríbete a tus feeds. Escucha los titulares que te perdiste.",
         "desc": "Suscríbete a tus feeds de noticias favoritos y fija arriba los canales que más lees. Importa o exporta toda tu lista de suscripciones vía OPML. Lee artículos en una vista limpia y enfocada — o activa TTS para escuchar tus titulares no leídos como un boletín continuo, como una radio personal.",
-        "bullet1": "Suscríbete a feeds RSS ilimitados y fija tus canales favoritos",
+        "bullet1": "Sigue tus feeds favoritos y fija los canales que más lees",
         "bullet2": "Importa o exporta tu lista de suscripciones vía OPML",
         "bullet3": "TTS lee tus titulares no leídos seguidos, como un boletín en audio"
       },
@@ -1528,11 +1538,48 @@
       },
       "icloudSiri": {
         "eyebrow": "Sincronización iCloud y Atajos de Siri",
-        "title": "Todo te sigue entre tu iPhone y tu iPad.",
+        "title": "Todo te sigue en iPhone, iPad y Vision Pro.",
         "desc": "Los marcadores, feeds RSS y suscripciones de podcasts se sincronizan automáticamente en todos tus dispositivos Apple. Di «Oye Siri, reproduce ContentCue» para iniciar tu boletín RSS o podcast sin abrir la app — elige la fuente y la velocidad por separado para RSS y podcasts en los ajustes de Reproducción Siri.",
         "bullet1": "Marcadores, feeds RSS y suscripciones de podcasts sincronizados vía iCloud",
         "bullet2": "«Oye Siri, reproduce ContentCue» inicia tu boletín o podcast manos libres",
         "bullet3": "Cinco atajos integrados, con controles de fuente y velocidad separados para RSS y podcasts"
+      },
+      "pain": {
+        "eyebrow": "Por qué ContentCue",
+        "title": "Leer en la web está roto. Arreglamos las partes molestas.",
+        "desc": "ContentCue nació de las frustraciones diarias de leer y escuchar en el móvil — sin bloquear anuncios ni romper los sitios que te gustan.",
+        "card1title": "Pierdes el punto de lectura — constantemente",
+        "card1problem": "Un popup secuestra la página, salta una redirección o cambias de app un segundo — y ahora te toca buscar a ciegas el párrafo donde estabas.",
+        "card1fix": "ContentCue guarda automáticamente tu posición exacta y te devuelve con un toque.",
+        "card2title": "Los anuncios se camuflan con el contenido",
+        "card2problem": "Los anuncios insertados están diseñados para parecerse al artículo, así que los tocas sin querer y pierdes el hilo.",
+        "card2fix": "Los contornos de color hacen que cada anuncio sea reconocible al instante — nada se bloquea, todo queda claro.",
+        "card3title": "Tu contenido vive en tres apps distintas",
+        "card3problem": "Un navegador para artículos, una app de RSS aparte y otra para podcasts — tres bandejas, tres reproductores, tres sitios que revisar.",
+        "card3fix": "Una sola app con un solo reproductor de audio para webs, feeds RSS y podcasts.",
+        "card4title": "Nunca hay tiempo para leer de verdad",
+        "card4problem": "Tu lista de lectura crece en el trayecto, en el gimnasio, en el coche — justo cuando tus ojos están ocupados.",
+        "card4fix": "Convierte cualquier página o feed sin leer en audio y escucha con la pantalla bloqueada, en CarPlay o en Vision Pro."
+      },
+      "vision": {
+        "eyebrow": "App nativa para Apple Vision Pro",
+        "title": "Tu sala de lectura, del tamaño de tu salón.",
+        "desc": "ContentCue en Vision Pro es una app visionOS realmente nativa — no una adaptación de iPad. Navega, lee y escucha en una ventana flotante con controles pensados para la mirada, y reduce la reproducción a un pequeño reproductor de esquina mientras haces otra cosa.",
+        "bullet1": "Modo lectura con paso de página por pellizco — un pellizco rápido en cualquier punto avanza la página, sin apuntar a controles",
+        "bullet2": "RSS y podcasts en vista espacial, con los mismos feeds y programas sincronizados desde tu iPhone",
+        "bullet3": "Reduce la reproducción a una ventana compacta de esquina y sigue escuchando mientras trabajas",
+        "alt1": "Ventana del navegador de ContentCue en Apple Vision Pro mostrando un artículo con el reproductor de audio",
+        "alt2": "Feeds RSS de ContentCue en una ventana espacial en Apple Vision Pro",
+        "alt3": "Biblioteca de podcasts de ContentCue en una ventana espacial en Apple Vision Pro"
+      },
+      "carplay": {
+        "eyebrow": "CarPlay",
+        "title": "Tus feeds y programas, en la pantalla del coche.",
+        "desc": "Conecta tu iPhone y ContentCue aparece en CarPlay con tus podcasts y feeds RSS guardados. Inicia un episodio o un resumen de artículos desde la pantalla del coche, consulta qué viene después en la cola y cambia la velocidad de reproducción — todo en la interfaz nativa de CarPlay.",
+        "bullet1": "Explora tus podcasts y feeds RSS guardados desde la pantalla del coche",
+        "bullet2": "La vista de cola muestra lo que suena ahora y lo que viene después",
+        "bullet3": "Ajusta la velocidad de reproducción sin tocar el teléfono",
+        "alt": "ContentCue en CarPlay mostrando la cola, podcasts y pestañas RSS"
       }
     },
     "comicReaderPage": {

@@ -1395,13 +1395,13 @@
     },
     "contentcuePage": {
       "seo": {
-        "title": "ContentCue — Browse, lees en luister. Verlies nooit je plek.",
-        "desc": "ContentCue is een alles-in-één app voor iPhone en iPad: een RSS-lezer met audiobriefings, een podcastspeler, voorlezen van elke pagina met achtergrondweergave, en iCloud-synchronisatie — naast de bekende browser met positieherstel."
+        "title": "ContentCue — Lezen en luisteren op iPhone, iPad en Apple Vision Pro",
+        "desc": "ContentCue is een alles-in-één lees- en luisterapp voor iPhone, iPad en Apple Vision Pro: een leesbrowser met positieherstel, RSS-lezer met audiobriefings, podcastspeler met offline downloads, tekst-naar-spraak voor websites, CarPlay en iCloud-synchronisatie."
       },
       "hero": {
-        "badge": "iPhone & iPad",
+        "badge": "Nu op Apple Vision Pro",
         "title": "Browse, lees en luister — en verlies nooit je plek.",
-        "desc": "ContentCue is een alles-in-één app: browse met automatisch positieherstel, abonneer je op RSS-feeds en beluister een audiobriefing van je ongelezen koppen, stream of download podcasts, en laat elke webpagina hardop voorlezen — zelfs met vergrendeld scherm. Alles synchroniseert op je apparaten via iCloud.",
+        "desc": "ContentCue is een alles-in-één app: browse met automatisch positieherstel, hoor je RSS-feeds als audiobriefing, stream of download podcasts en laat elke webpagina voorlezen — op iPhone, iPad, Apple Vision Pro en CarPlay. Eén aankoop, al je apparaten, gesynchroniseerd via iCloud.",
         "trust1": "RSS, podcasts en web in één app",
         "trust2": "Advertenties gemarkeerd, niet geblokkeerd",
         "trust3": "iCloud-synchronisatie",
@@ -1445,7 +1445,7 @@
       },
       "pricing": {
         "eyebrow": "Eenvoudige prijzen",
-        "title": "Gratis om te browsen. Premium ontgrendelt de audiohub.",
+        "title": "Elke dag gratis. Premium heft de limieten op.",
         "freeTitle": "Gratis",
         "proTitle": "Premium",
         "feat1": "Positieherstel",
@@ -1454,11 +1454,13 @@
         "feat4": "Bladwijzers",
         "feat4free": "3",
         "feat4pro": "Onbeperkt",
-        "feat5": "RSS-lezer + TTS + OPML-import/-export",
-        "feat6": "Podcastspeler + offline downloads",
         "feat7": "iCloud-synchronisatie",
         "feat8": "Aangepaste advertentiekleuren, auto-scroll en Siri-snelkoppelingen",
-        "note": "Premium is beschikbaar als jaarabonnement met 7 dagen gratis proberen, of als eenmalige aankoop voor altijd. De prijs wordt weergegeven in de app voor jouw regio."
+        "note": "Premium is beschikbaar als jaarabonnement met 7 dagen gratis proberen, of als eenmalige aankoop voor altijd. De prijs wordt weergegeven in de app voor jouw regio.",
+        "featTts": "Website-TTS en audiobriefings",
+        "featPlatforms": "Native Vision Pro en CarPlay",
+        "featRss": "Opgeslagen RSS-feeds",
+        "featPods": "Opgeslagen podcastshows"
       },
       "faqTitle": "Veelgestelde vragen",
       "faq": [
@@ -1487,8 +1489,16 @@
           "a": "Ja. Druk op afspelen bij een artikel en ContentCue leest het hardop voor met tekst-naar-spraak. Audio speelt door op de achtergrond met vergrendeld scherm, en de app hervat snel je laatste artikel en positie."
         },
         {
-          "q": "Synchroniseert ContentCue tussen mijn iPhone en iPad?",
-          "a": "Ja, met Premium. Bladwijzers, RSS-feeds en podcastabonnementen worden automatisch gesynchroniseerd via iCloud op al je Apple-apparaten."
+          "q": "Synchroniseert ContentCue tussen mijn iPhone, iPad en Vision Pro?",
+          "a": "Ja, met Premium. Bladwijzers, RSS-feeds en podcastabonnementen synchroniseren automatisch via iCloud op al je Apple-apparaten, inclusief Apple Vision Pro."
+        },
+        {
+          "q": "Werkt ContentCue op Apple Vision Pro?",
+          "a": "Ja. ContentCue heeft een native visionOS-app — browse in een zwevend venster, blader door artikelen met een snelle knijpbeweging en verklein het afspelen tot een compacte hoekspeler. Het is een universele aankoop: koop één keer en gebruik het op iPhone, iPad en Vision Pro, met Premium gedeeld over alle drie."
+        },
+        {
+          "q": "Ondersteunt ContentCue CarPlay?",
+          "a": "Ja. ContentCue verschijnt op het CarPlay-scherm van je auto met je opgeslagen podcasts en RSS-feeds. Je kunt het afspelen starten, de wachtrij bekijken en de afspeelsnelheid aanpassen, direct vanaf het autoscherm."
         },
         {
           "q": "Verzamelt ContentCue mijn surfgegevens?",
@@ -1496,7 +1506,7 @@
         },
         {
           "q": "Wat is inbegrepen bij ContentCue Premium?",
-          "a": "Premium ontgrendelt de volledige audiohub: RSS-lezer met TTS en OPML-import/-export, Podcastspeler met offline downloads, iCloud-synchronisatie op je apparaten, Siri-snelkoppelingen, onbeperkte bladwijzers, aangepaste advertentierandkleuren en instelbare automatische scrollsnelheid. Beschikbaar als jaarabonnement met 7 dagen gratis proberen, of als eenmalige aankoop voor altijd — de prijs wordt weergegeven in de app voor jouw regio."
+          "a": "Gratis omvat de volledige leesbrowser plus maximaal 3 bladwijzers, 3 RSS-feeds en 3 opgeslagen podcastshows. Premium heft die limieten op — onbeperkte bladwijzers, feeds en shows — en voegt iCloud-synchronisatie tussen apparaten, Siri-shortcuts, aangepaste advertentierandkleuren en instelbare autoscrollsnelheid toe. Verkrijgbaar als jaarabonnement met 7 dagen gratis proefperiode of als eenmalige lifetime-aankoop."
         }
       ],
       "backDesc": "Zoeken naar een comic- en e-bookreader?",
@@ -1506,7 +1516,7 @@
         "eyebrow": "RSS-lezer",
         "title": "Abonneer op je feeds. Beluister de koppen die je gemist hebt.",
         "desc": "Abonneer op je favoriete nieuwsfeeds en zet de kanalen die je het meest leest bovenaan vast. Importeer of exporteer je hele abonnementenlijst via OPML. Lees artikelen in een overzichtelijke, gerichte weergave — of schakel TTS in om ongelezen koppen achter elkaar te beluisteren, als een persoonlijke radio.",
-        "bullet1": "Abonneer op onbeperkt RSS-feeds en zet je favoriete kanalen vast",
+        "bullet1": "Volg je favoriete feeds en pin de kanalen die je het meest leest",
         "bullet2": "Importeer of exporteer je abonnementenlijst via OPML",
         "bullet3": "TTS leest ongelezen koppen achter elkaar voor, als een audiobriefing"
       },
@@ -1528,11 +1538,48 @@
       },
       "icloudSiri": {
         "eyebrow": "iCloud-synchronisatie & Siri-snelkoppelingen",
-        "title": "Alles volgt je tussen je iPhone en iPad.",
+        "title": "Alles volgt je op iPhone, iPad en Vision Pro.",
         "desc": "Bladwijzers, RSS-feeds en podcastabonnementen worden automatisch gesynchroniseerd op al je Apple-apparaten. Zeg 'Hé Siri, speel ContentCue af' om je RSS-briefing of podcast te starten zonder de app te openen — kies de bron en snelheid apart voor RSS en podcasts in de Siri-afspeelinstellingen.",
         "bullet1": "Bladwijzers, RSS-feeds en podcastabonnementen gesynchroniseerd via iCloud",
         "bullet2": "'Hé Siri, speel ContentCue af' start je briefing of podcast handsfree",
         "bullet3": "Vijf ingebouwde snelkoppelingen, met aparte bron- en snelheidsbediening voor RSS en podcasts"
+      },
+      "pain": {
+        "eyebrow": "Waarom ContentCue",
+        "title": "Lezen op het web is stuk. Wij hebben de irritante delen opgelost.",
+        "desc": "ContentCue is gebouwd rond de dagelijkse frustraties van lezen en luisteren op je telefoon — zonder advertenties te blokkeren of je favoriete sites te breken.",
+        "card1title": "Je raakt je plek kwijt — constant",
+        "card1problem": "Een popup kaapt de pagina, een redirect vuurt af of je wisselt even van app — en nu ben je op zoek naar de alinea waar je was.",
+        "card1fix": "ContentCue slaat automatisch je exacte positie op en brengt je met één tik terug.",
+        "card2title": "Advertenties gaan op in de content",
+        "card2problem": "Advertenties in de tekst zijn ontworpen om op het artikel te lijken, dus je tikt er per ongeluk op en verliest je flow.",
+        "card2fix": "Gekleurde randen maken elke advertentie direct herkenbaar — niets wordt geblokkeerd, alles is duidelijk.",
+        "card3title": "Je content leeft in drie verschillende apps",
+        "card3problem": "Een browser voor artikelen, een aparte RSS-app, nog een app voor podcasts — drie inboxen, drie spelers, drie plekken om te checken.",
+        "card3fix": "Eén app met één audiospeler voor webpagina’s, RSS-feeds en podcasts.",
+        "card4title": "Er is nooit tijd om echt te lezen",
+        "card4problem": "Je leeslijst groeit tijdens het pendelen, in de sportschool, in de auto — precies wanneer je ogen bezig zijn.",
+        "card4fix": "Zet elke pagina of ongelezen feed om in audio en luister met vergrendeld scherm, via CarPlay of op Vision Pro."
+      },
+      "vision": {
+        "eyebrow": "Native Apple Vision Pro-app",
+        "title": "Jouw leeskamer, zo groot als je woonkamer.",
+        "desc": "ContentCue op Vision Pro is een echte native visionOS-app — geen iPad-port. Browse, lees en luister in een zwevend venster met blikvriendelijke bediening, en verklein het afspelen tot een kleine hoekspeler terwijl je iets anders doet.",
+        "bullet1": "Leesmodus met knijp-om-te-bladeren — een snelle knijpbeweging waar dan ook bladert verder, zonder op knoppen te mikken",
+        "bullet2": "RSS en podcasts in ruimtelijke weergave, met dezelfde feeds en shows gesynchroniseerd vanaf je iPhone",
+        "bullet3": "Verklein het afspelen tot een compact hoekvenster en blijf luisteren terwijl je werkt",
+        "alt1": "ContentCue-browservenster op Apple Vision Pro met een artikel en de audiospeler",
+        "alt2": "ContentCue RSS-feeds in een ruimtelijk venster op Apple Vision Pro",
+        "alt3": "ContentCue-podcastbibliotheek in een ruimtelijk venster op Apple Vision Pro"
+      },
+      "carplay": {
+        "eyebrow": "CarPlay",
+        "title": "Je feeds en shows, op het autoscherm.",
+        "desc": "Verbind je iPhone en ContentCue verschijnt op CarPlay met je opgeslagen podcasts en RSS-feeds. Start een aflevering of een artikelbriefing vanaf het autoscherm, bekijk wat er in de wachtrij staat en pas de afspeelsnelheid aan — allemaal in de native CarPlay-interface.",
+        "bullet1": "Blader door je opgeslagen podcasts en RSS-feeds via het autoscherm",
+        "bullet2": "De wachtrijweergave toont wat er nu speelt en wat er komt",
+        "bullet3": "Pas de afspeelsnelheid aan zonder je telefoon te pakken",
+        "alt": "ContentCue op CarPlay met de wachtrij, podcasts en RSS-tabbladen"
       }
     },
     "comicReaderPage": {

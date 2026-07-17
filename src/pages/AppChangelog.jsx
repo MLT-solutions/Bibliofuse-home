@@ -9,6 +9,8 @@ import { ENTRIES as CONTENTCUE_ENTRIES, KNOWN_ISSUES as CONTENTCUE_ISSUES, ROADM
 
 const ALL_PLATFORM_META = {
   ios: { label: 'iOS & macOS', color: 'bg-blue-100 text-blue-700',    dot: 'bg-blue-500' },
+  iosOnly: { label: 'iOS', color: 'bg-blue-100 text-blue-700', dot: 'bg-blue-500' },
+  iosVision: { label: 'iOS & visionOS', color: 'bg-blue-100 text-blue-700', dot: 'bg-blue-500' },
   mac: { label: 'macOS',       color: 'bg-blue-100 text-blue-700',    dot: 'bg-blue-500' },
   pc:  { label: 'PC (Windows)', color: 'bg-violet-100 text-violet-700', dot: 'bg-violet-500' },
   all: { label: 'All platforms', color: 'bg-slate-100 text-slate-600', dot: 'bg-slate-400' },
@@ -74,10 +76,10 @@ const APP_CONFIGS = {
     KNOWN_ISSUES: CONTENTCUE_ISSUES,
     ROADMAP: CONTENTCUE_ROADMAP,
     platforms: ['ios'],
-    storeUrl: 'https://apps.apple.com/us/app/contentcue-reading-browser/id6770080864',
+    storeUrl: 'https://apps.apple.com/us/app/contentcue-read-listen/id6770080864',
     appCategory: 'LifestyleApplication',
-    operatingSystem: 'iOS',
-    shortDesc: 'iOS browser that saves your scroll position when popup ads interrupt reading on Webtoons, Tapas, and manga sites.',
+    operatingSystem: 'iOS, iPadOS, visionOS',
+    shortDesc: 'Read-and-listen app for iPhone, iPad, and Apple Vision Pro: position-restore browser, RSS audio briefings, podcasts, website TTS, and CarPlay.',
   },
 };
 

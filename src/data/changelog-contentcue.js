@@ -1,12 +1,45 @@
 // Changelog — ContentCue
-// platform: 'ios'
+// platform: 'iosVision' (iOS + visionOS) or 'iosOnly'
 // released: true = live in App Store, false = pending / unreleased
 
 export const ENTRIES = [
   {
+    date: '2026-07-12',
+    version: '1.0.3',
+    platform: 'iosVision',
+    type: 'release',
+    released: true,
+    title: {
+      en: 'v1.0.3 — Native Apple Vision Pro app & CarPlay',
+      es: 'v1.0.3 — App nativa para Apple Vision Pro y CarPlay',
+      fr: 'v1.0.3 — App native Apple Vision Pro et CarPlay',
+      nl: 'v1.0.3 — Native Apple Vision Pro-app en CarPlay',
+      pt: 'v1.0.3 — App nativo para Apple Vision Pro e CarPlay',
+      ru: 'v1.0.3 — Нативное приложение для Apple Vision Pro и CarPlay',
+      zh: 'v1.0.3 — Apple Vision Pro 原生应用与 CarPlay',
+      ja: 'v1.0.3 — Apple Vision ProネイティブアプリとCarPlay',
+      ko: 'v1.0.3 — Apple Vision Pro 네이티브 앱 & CarPlay',
+      id: 'v1.0.3 — Aplikasi native Apple Vision Pro & CarPlay',
+      ms: 'v1.0.3 — Aplikasi natif Apple Vision Pro & CarPlay',
+    },
+    desc: {
+      en: 'ContentCue is now on Apple Vision Pro as a true native visionOS app: browse, read, and listen in a floating spatial window with gaze-friendly controls, page through reading mode with a quick pinch, and shrink playback into a compact corner player while you do something else. Also added CarPlay support — browse your saved podcasts and RSS feeds, see the playback queue, and change playback speed right from the car display. Universal purchase: one purchase covers iPhone, iPad, and Vision Pro, with Premium shared across all three.',
+      es: 'ContentCue llega a Apple Vision Pro como app visionOS realmente nativa: navega, lee y escucha en una ventana espacial flotante con controles pensados para la mirada, pasa páginas en modo lectura con un pellizco rápido y reduce la reproducción a un reproductor compacto de esquina mientras haces otra cosa. También se añadió compatibilidad con CarPlay — explora tus podcasts y feeds RSS guardados, consulta la cola de reproducción y cambia la velocidad desde la pantalla del coche. Compra universal: una sola compra cubre iPhone, iPad y Vision Pro, con Premium compartido entre los tres.',
+      fr: "ContentCue arrive sur Apple Vision Pro en véritable app visionOS native : naviguez, lisez et écoutez dans une fenêtre spatiale flottante aux commandes adaptées au regard, tournez les pages du mode lecture d'un pincement rapide et réduisez la lecture en un lecteur d'angle compact pendant que vous faites autre chose. Ajout également de la prise en charge de CarPlay — parcourez vos podcasts et flux RSS enregistrés, consultez la file de lecture et changez la vitesse directement depuis l'écran de la voiture. Achat universel : un seul achat couvre iPhone, iPad et Vision Pro, avec Premium partagé entre les trois.",
+      nl: 'ContentCue is nu op Apple Vision Pro als echte native visionOS-app: browse, lees en luister in een zwevend ruimtelijk venster met blikvriendelijke bediening, blader door de leesmodus met een snelle knijpbeweging en verklein het afspelen tot een compacte hoekspeler terwijl je iets anders doet. Ook CarPlay-ondersteuning toegevoegd — blader door je opgeslagen podcasts en RSS-feeds, bekijk de afspeelwachtrij en pas de afspeelsnelheid aan, direct vanaf het autoscherm. Universele aankoop: één aankoop dekt iPhone, iPad en Vision Pro, met Premium gedeeld over alle drie.',
+      pt: 'O ContentCue chega ao Apple Vision Pro como app visionOS verdadeiramente nativo: navegue, leia e ouça em uma janela espacial flutuante com controles pensados para o olhar, vire páginas no modo leitura com uma pinça rápida e reduza a reprodução a um player compacto de canto enquanto faz outra coisa. Também foi adicionado suporte a CarPlay — navegue pelos seus podcasts e feeds RSS salvos, veja a fila de reprodução e mude a velocidade diretamente pela tela do carro. Compra universal: uma única compra cobre iPhone, iPad e Vision Pro, com o Premium compartilhado entre os três.',
+      ru: 'ContentCue теперь доступен на Apple Vision Pro как по-настоящему нативное приложение для visionOS: просматривайте, читайте и слушайте в парящем пространственном окне с удобным управлением взглядом, листайте страницы в режиме чтения быстрым щипком и сворачивайте воспроизведение в компактный угловой плеер, занимаясь другими делами. Также добавлена поддержка CarPlay — просматривайте сохранённые подкасты и RSS-ленты, смотрите очередь воспроизведения и меняйте скорость прямо с экрана автомобиля. Универсальная покупка: одна покупка охватывает iPhone, iPad и Vision Pro, а Premium действует на всех трёх.',
+      zh: 'ContentCue 现已登陆 Apple Vision Pro，是真正的 visionOS 原生应用：在悬浮空间窗口中浏览、阅读、收听，控件专为注视交互设计；阅读模式下快速捏合即可翻页，还能把播放缩小成角落迷你播放器，边听边做别的事。同时新增 CarPlay 支持 — 在车载屏幕上浏览已保存的播客和 RSS 订阅、查看播放队列、调整播放速度。通用购买：一次购买即可覆盖 iPhone、iPad 和 Vision Pro，Premium 三端共享。',
+      ja: 'ContentCueがApple Vision Proに登場。真のvisionOSネイティブアプリとして、視線操作に最適化されたフローティング空間ウィンドウでブラウズ・読書・リスニングでき、リーディングモードでは素早いピンチでページ送り、再生をコンパクトなコーナープレーヤーに縮小して他の作業も続けられます。さらにCarPlayにも対応 — 保存済みのポッドキャストとRSSフィードの閲覧、再生キューの確認、再生速度の変更を車のディスプレイから直接行えます。ユニバーサル購入：1回の購入でiPhone・iPad・Vision Proをカバーし、Premiumも3デバイスで共有されます。',
+      ko: 'ContentCue가 이제 Apple Vision Pro에서 진정한 visionOS 네이티브 앱으로 제공됩니다. 시선 친화적 컨트롤의 플로팅 공간 윈도우에서 탐색·읽기·듣기가 가능하고, 읽기 모드에서 빠른 핀치로 페이지를 넘기며, 재생을 작은 코너 플레이어로 줄여 다른 일을 하면서 계속 들을 수 있습니다. CarPlay 지원도 추가되었습니다 — 저장된 팟캐스트와 RSS 피드 탐색, 재생 대기열 확인, 재생 속도 변경을 차량 디스플레이에서 바로 할 수 있습니다. 유니버설 구매: 한 번 구매로 iPhone, iPad, Vision Pro를 모두 지원하며 Premium도 세 기기에서 공유됩니다.',
+      id: 'ContentCue kini hadir di Apple Vision Pro sebagai aplikasi visionOS yang benar-benar native: jelajah, baca, dan dengarkan di jendela spasial melayang dengan kontrol ramah pandangan, balik halaman mode baca dengan cubitan cepat, dan kecilkan pemutaran menjadi pemutar sudut ringkas sambil melakukan hal lain. Dukungan CarPlay juga ditambahkan — jelajahi podcast dan feed RSS tersimpan, lihat antrean pemutaran, dan ubah kecepatan pemutaran langsung dari layar mobil. Pembelian universal: satu pembelian mencakup iPhone, iPad, dan Vision Pro, dengan Premium berbagi di ketiganya.',
+      ms: 'ContentCue kini hadir di Apple Vision Pro sebagai aplikasi visionOS yang benar-benar natif: layari, baca dan dengar dalam tetingkap spatial terapung dengan kawalan mesra pandangan, selak halaman mod bacaan dengan picitan pantas, dan kecilkan main balik kepada pemain sudut padat sambil membuat perkara lain. Sokongan CarPlay turut ditambah — layari podcast dan suapan RSS yang disimpan, lihat baris gilir main balik, dan tukar kelajuan main balik terus dari paparan kereta. Pembelian universal: satu pembelian meliputi iPhone, iPad dan Vision Pro, dengan Premium dikongsi merentas ketiga-tiganya.',
+    },
+  },
+  {
     date: '2026-07-03',
     version: '1.0.2',
-    platform: 'ios',
+    platform: 'iosOnly',
     type: 'release',
     released: true,
     title: {
@@ -39,7 +72,7 @@ export const ENTRIES = [
   {
     date: '2026-06-26',
     version: '1.0.1',
-    platform: 'ios',
+    platform: 'iosOnly',
     type: 'release',
     released: true,
     title: {
@@ -72,7 +105,7 @@ export const ENTRIES = [
   {
     date: '2026-05-27',
     version: '1.0.0',
-    platform: 'ios',
+    platform: 'iosOnly',
     type: 'release',
     released: true,
     title: {
@@ -105,7 +138,7 @@ export const ENTRIES = [
   {
     date: '2026-05-16',
     version: '1.0.0',
-    platform: 'ios',
+    platform: 'iosOnly',
     type: 'release',
     released: true,
     title: {
@@ -141,7 +174,7 @@ export const KNOWN_ISSUES = [];
 
 export const ROADMAP = [
   {
-    platform: 'ios',
+    platform: 'iosOnly',
     status: 'exploring',
     title: {
       en: 'Custom reading themes',

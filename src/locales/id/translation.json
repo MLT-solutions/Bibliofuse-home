@@ -1395,13 +1395,13 @@
     },
     "contentcuePage": {
       "seo": {
-        "title": "ContentCue — Jelajahi, baca, dan dengarkan. Jangan pernah kehilangan tempat Anda.",
-        "desc": "ContentCue adalah app serba guna untuk iPhone dan iPad: pembaca RSS dengan ringkasan audio, pemutar podcast, TTS situs web dengan pemutaran latar belakang, dan sinkronisasi iCloud — ditambah browser dengan pemulihan posisi yang sudah Anda kenal."
+        "title": "ContentCue — Baca & Dengarkan di iPhone, iPad & Apple Vision Pro",
+        "desc": "ContentCue adalah aplikasi baca-dan-dengar serba bisa untuk iPhone, iPad, dan Apple Vision Pro: browser baca dengan pemulihan posisi, pembaca RSS dengan ringkasan audio, pemutar podcast dengan unduhan offline, text-to-speech situs web, CarPlay, dan sinkronisasi iCloud."
       },
       "hero": {
-        "badge": "iPhone & iPad",
+        "badge": "Kini di Apple Vision Pro",
         "title": "Jelajahi, baca, dan dengarkan — dan jangan pernah kehilangan tempat Anda.",
-        "desc": "ContentCue adalah app serba guna: jelajahi dengan pemulihan posisi otomatis, berlangganan feed RSS dan dengarkan ringkasan audio dari judul yang belum dibaca, streaming atau unduh podcast, dan buat halaman web apa pun dibacakan — bahkan saat layar terkunci. Semua tersinkronisasi di perangkat Anda melalui iCloud.",
+        "desc": "ContentCue adalah aplikasi serba bisa: jelajah dengan pemulihan posisi otomatis, dengarkan feed RSS sebagai ringkasan audio, streaming atau unduh podcast, dan minta halaman web mana pun dibacakan — di iPhone, iPad, Apple Vision Pro, dan CarPlay. Sekali beli, semua perangkat, tersinkron dengan iCloud.",
         "trust1": "RSS, podcast & web dalam satu app",
         "trust2": "Iklan disorot, bukan diblokir",
         "trust3": "Sinkronisasi iCloud",
@@ -1445,7 +1445,7 @@
       },
       "pricing": {
         "eyebrow": "Harga Sederhana",
-        "title": "Gratis untuk menjelajah. Premium membuka hub audio.",
+        "title": "Gratis setiap hari. Premium menghapus batasnya.",
         "freeTitle": "Gratis",
         "proTitle": "Premium",
         "feat1": "Pemulihan posisi",
@@ -1454,11 +1454,13 @@
         "feat4": "Penanda halaman",
         "feat4free": "3",
         "feat4pro": "Tak terbatas",
-        "feat5": "Pembaca RSS + TTS + impor/ekspor OPML",
-        "feat6": "Pemutar Podcast + unduhan offline",
         "feat7": "Sinkronisasi iCloud",
         "feat8": "Warna iklan kustom, gulir otomatis & Pintasan Siri",
-        "note": "Premium tersedia sebagai langganan tahunan dengan uji coba gratis 7 hari, atau sebagai pembelian seumur hidup sekali bayar. Harga ditampilkan di app sesuai wilayah Anda."
+        "note": "Premium tersedia sebagai langganan tahunan dengan uji coba gratis 7 hari, atau sebagai pembelian seumur hidup sekali bayar. Harga ditampilkan di app sesuai wilayah Anda.",
+        "featTts": "TTS situs web & ringkasan audio",
+        "featPlatforms": "Vision Pro & CarPlay native",
+        "featRss": "Feed RSS tersimpan",
+        "featPods": "Acara podcast tersimpan"
       },
       "faqTitle": "Pertanyaan yang Sering Diajukan",
       "faq": [
@@ -1487,8 +1489,16 @@
           "a": "Ya. Ketuk putar pada artikel apa pun dan ContentCue membacakannya dengan ubah teks jadi suara. Audio terus diputar di latar belakang saat layar terkunci, dan app cepat melanjutkan artikel serta posisi terakhir Anda."
         },
         {
-          "q": "Apakah ContentCue tersinkronisasi antara iPhone dan iPad saya?",
-          "a": "Ya, dengan Premium. Penanda halaman, feed RSS, dan langganan podcast tersinkronisasi otomatis via iCloud di semua perangkat Apple Anda."
+          "q": "Apakah ContentCue tersinkron antara iPhone, iPad, dan Vision Pro saya?",
+          "a": "Ya, dengan Premium. Bookmark, feed RSS, dan langganan podcast tersinkron otomatis via iCloud di semua perangkat Apple Anda, termasuk Apple Vision Pro."
+        },
+        {
+          "q": "Apakah ContentCue berfungsi di Apple Vision Pro?",
+          "a": "Ya. ContentCue punya aplikasi visionOS native — jelajah di jendela melayang, balik halaman artikel dengan cubitan cepat, dan kecilkan pemutaran menjadi pemutar sudut ringkas. Ini pembelian universal: beli sekali dan gunakan di iPhone, iPad, dan Vision Pro, dengan Premium berbagi di ketiganya."
+        },
+        {
+          "q": "Apakah ContentCue mendukung CarPlay?",
+          "a": "Ya. ContentCue muncul di layar CarPlay mobil Anda dengan podcast dan feed RSS tersimpan. Anda bisa memulai pemutaran, melihat antrean saat ini, dan mengubah kecepatan pemutaran langsung dari layar mobil."
         },
         {
           "q": "Apakah ContentCue mengumpulkan data browsing saya?",
@@ -1496,7 +1506,7 @@
         },
         {
           "q": "Apa saja yang termasuk dalam ContentCue Premium?",
-          "a": "Premium membuka hub audio lengkap: Pembaca RSS dengan TTS dan impor/ekspor OPML, Pemutar Podcast dengan unduhan offline, Sinkronisasi iCloud di perangkat Anda, Pintasan Siri, penanda halaman tanpa batas, warna tepi iklan kustom, dan kecepatan gulir otomatis yang dapat disesuaikan. Tersedia sebagai langganan tahunan dengan uji coba gratis 7 hari, atau pembelian seumur hidup sekali bayar — harga ditampilkan di app sesuai wilayah Anda."
+          "a": "Versi gratis mencakup browser baca lengkap plus hingga 3 bookmark, 3 feed RSS, dan 3 acara podcast tersimpan. Premium menghapus batas tersebut — bookmark, feed, dan acara tanpa batas — serta menambahkan Sinkronisasi iCloud antar perangkat, Pintasan Siri, warna garis tepi iklan kustom, dan kecepatan gulir otomatis yang dapat diatur. Tersedia sebagai langganan tahunan dengan uji coba gratis 7 hari, atau pembelian sekali seumur hidup."
         }
       ],
       "backDesc": "Mencari pembaca komik dan ebook?",
@@ -1506,7 +1516,7 @@
         "eyebrow": "Pembaca RSS",
         "title": "Berlangganan feed Anda. Dengarkan judul yang terlewat.",
         "desc": "Berlangganan feed berita favorit Anda dan sematkan channel yang paling sering Anda baca ke atas. Impor atau ekspor seluruh daftar langganan Anda via OPML. Baca artikel dalam tampilan bersih dan fokus — atau aktifkan TTS untuk mendengar tajuk yang belum dibaca sebagai buletin berkesinambungan, seperti radio pribadi.",
-        "bullet1": "Berlangganan feed RSS tanpa batas dan sematkan channel favorit Anda",
+        "bullet1": "Ikuti feed favorit Anda dan sematkan kanal yang paling sering dibaca",
         "bullet2": "Impor atau ekspor daftar langganan Anda via OPML",
         "bullet3": "TTS membacakan judul yang belum dibaca berturut-turut, seperti buletin audio"
       },
@@ -1528,11 +1538,48 @@
       },
       "icloudSiri": {
         "eyebrow": "Sinkronisasi iCloud & Pintasan Siri",
-        "title": "Semuanya mengikuti Anda antara iPhone dan iPad.",
+        "title": "Semuanya mengikuti Anda di iPhone, iPad, dan Vision Pro.",
         "desc": "Penanda halaman, feed RSS, dan langganan podcast tersinkronisasi otomatis di semua perangkat Apple Anda. Ucapkan \"Hai Siri, putar ContentCue\" untuk memulai buletin RSS atau podcast tanpa membuka aplikasi — pilih sumber dan kecepatan secara terpisah untuk RSS dan Podcast di pengaturan Pemutaran Siri.",
         "bullet1": "Penanda halaman, feed RSS, dan langganan podcast tersinkronisasi via iCloud",
         "bullet2": "\"Hai Siri, putar ContentCue\" memulai buletin atau podcast tanpa perlu tangan",
         "bullet3": "Lima pintasan bawaan, dengan kontrol sumber dan kecepatan terpisah untuk RSS dan podcast"
+      },
+      "pain": {
+        "eyebrow": "Mengapa ContentCue",
+        "title": "Membaca di web itu menyebalkan. Kami perbaiki bagian yang mengganggu.",
+        "desc": "ContentCue dibuat berdasarkan frustrasi sehari-hari saat membaca dan mendengarkan di ponsel — tanpa memblokir iklan atau merusak situs favorit Anda.",
+        "card1title": "Anda terus kehilangan posisi baca",
+        "card1problem": "Popup membajak halaman, pengalihan terjadi, atau Anda berpindah aplikasi sebentar — dan kini Anda harus mencari-cari paragraf yang tadi dibaca.",
+        "card1fix": "ContentCue otomatis menyimpan posisi persis Anda dan mengembalikannya dengan satu ketukan.",
+        "card2title": "Iklan menyatu dengan konten",
+        "card2problem": "Iklan di dalam artikel dirancang mirip artikel, sehingga Anda tak sengaja mengetuknya dan kehilangan fokus.",
+        "card2fix": "Garis tepi berwarna membuat setiap iklan langsung dikenali — tidak ada yang diblokir, semuanya jelas.",
+        "card3title": "Konten Anda tersebar di tiga aplikasi berbeda",
+        "card3problem": "Browser untuk artikel, aplikasi RSS terpisah, aplikasi lain untuk podcast — tiga kotak masuk, tiga pemutar, tiga tempat untuk dicek.",
+        "card3fix": "Satu aplikasi dengan satu pemutar audio untuk halaman web, feed RSS, dan podcast.",
+        "card4title": "Tak pernah ada waktu untuk benar-benar membaca",
+        "card4problem": "Daftar bacaan Anda bertambah saat perjalanan, di gym, di mobil — tepat saat mata Anda sibuk.",
+        "card4fix": "Ubah halaman atau feed yang belum dibaca menjadi audio dan dengarkan saat layar terkunci, di CarPlay, atau di Vision Pro."
+      },
+      "vision": {
+        "eyebrow": "Aplikasi native Apple Vision Pro",
+        "title": "Ruang baca Anda, seluas ruang keluarga.",
+        "desc": "ContentCue di Vision Pro adalah aplikasi visionOS yang benar-benar native — bukan porting iPad. Jelajah, baca, dan dengarkan di jendela melayang dengan kontrol ramah pandangan, lalu kecilkan pemutaran menjadi pemutar sudut kecil sambil melakukan hal lain.",
+        "bullet1": "Mode baca dengan cubit-untuk-berpindah-halaman — cubitan cepat di mana saja menggulir halaman, tanpa perlu membidik kontrol",
+        "bullet2": "RSS dan podcast dalam tampilan spasial, dengan feed dan acara yang sama tersinkron dari iPhone Anda",
+        "bullet3": "Kecilkan pemutaran menjadi jendela sudut yang ringkas dan terus dengarkan sambil bekerja",
+        "alt1": "Jendela browser ContentCue di Apple Vision Pro menampilkan artikel dengan pemutar audio",
+        "alt2": "Feed RSS ContentCue dalam jendela spasial di Apple Vision Pro",
+        "alt3": "Perpustakaan podcast ContentCue dalam jendela spasial di Apple Vision Pro"
+      },
+      "carplay": {
+        "eyebrow": "CarPlay",
+        "title": "Feed dan acara Anda, di layar mobil.",
+        "desc": "Hubungkan iPhone Anda dan ContentCue muncul di CarPlay dengan podcast dan feed RSS tersimpan. Mulai episode atau ringkasan artikel dari layar mobil, cek antrean berikutnya, dan ubah kecepatan pemutaran — semuanya di antarmuka CarPlay asli.",
+        "bullet1": "Jelajahi podcast dan feed RSS tersimpan dari layar mobil",
+        "bullet2": "Tampilan antrean menunjukkan yang sedang diputar dan berikutnya",
+        "bullet3": "Sesuaikan kecepatan pemutaran tanpa mengambil ponsel",
+        "alt": "ContentCue di CarPlay menampilkan antrean, podcast, dan tab RSS"
       }
     },
     "comicReaderPage": {

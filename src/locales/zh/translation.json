@@ -1395,13 +1395,13 @@
     },
     "contentcuePage": {
       "seo": {
-        "title": "ContentCue — 浏览、阅读、收听，永不丢失进度。",
-        "desc": "ContentCue 是一款适用于 iPhone 和 iPad 的浏览、阅读、收听一体化应用：带音频简报的 RSS 阅读器、播客播放器、支持后台播放的网页朗读，以及 iCloud 同步——此外还有你熟悉的位置恢复浏览器功能。"
+        "title": "ContentCue — 在 iPhone、iPad 和 Apple Vision Pro 上阅读与收听",
+        "desc": "ContentCue 是一款适用于 iPhone、iPad 和 Apple Vision Pro 的一体化阅读收听应用：支持位置恢复的阅读浏览器、带语音简报的 RSS 阅读器、支持离线下载的播客播放器、网页朗读、CarPlay 和 iCloud 同步。"
       },
       "hero": {
-        "badge": "iPhone 和 iPad",
+        "badge": "现已登陆 Apple Vision Pro",
         "title": "浏览、阅读、收听——永不丢失你的进度。",
-        "desc": "ContentCue 是一款一体化应用：浏览时自动恢复阅读位置，订阅 RSS 并收听未读标题的音频简报，在线播放或下载播客，让任意网页被朗读出来——即使锁屏也能继续。所有内容通过 iCloud 在你的设备间同步。",
+        "desc": "ContentCue 是一款一体化应用：浏览网页自动保存阅读位置、把 RSS 订阅变成语音简报、串流或下载播客、朗读任意网页 — 支持 iPhone、iPad、Apple Vision Pro 和 CarPlay。一次购买，所有设备通用，iCloud 同步。",
         "trust1": "RSS、播客与网页浏览合一",
         "trust2": "广告已标出，未拦截",
         "trust3": "iCloud 同步",
@@ -1445,7 +1445,7 @@
       },
       "pricing": {
         "eyebrow": "简单定价",
-        "title": "免费浏览，Premium 解锁音频中心。",
+        "title": "每天免费用，Premium 解除全部限制。",
         "freeTitle": "免费",
         "proTitle": "Premium",
         "feat1": "位置恢复",
@@ -1454,11 +1454,13 @@
         "feat4": "书签",
         "feat4free": "3 个",
         "feat4pro": "无限",
-        "feat5": "RSS 阅读器 + TTS + OPML 导入/导出",
-        "feat6": "播客播放器 + 离线下载",
         "feat7": "iCloud 同步",
         "feat8": "自定义广告颜色、自动滚动与 Siri 快捷指令",
-        "note": "Premium 提供含 7 天免费试用的年度订阅，或一次性终身购买。应用会根据您的地区显示具体价格。"
+        "note": "Premium 提供含 7 天免费试用的年度订阅，或一次性终身购买。应用会根据您的地区显示具体价格。",
+        "featTts": "网页朗读与语音简报",
+        "featPlatforms": "原生 Vision Pro 与 CarPlay",
+        "featRss": "已保存的 RSS 订阅",
+        "featPods": "已保存的播客节目"
       },
       "faqTitle": "常见问题",
       "faq": [
@@ -1487,8 +1489,16 @@
           "a": "会。点击任意文章的播放键，ContentCue 即通过文字转语音朗读内容。锁屏后音频仍在后台继续播放，应用会快速恢复上次的文章和位置。"
         },
         {
-          "q": "ContentCue 能在我的 iPhone 和 iPad 间同步吗？",
-          "a": "可以，需要 Premium。书签、RSS 订阅和播客订阅会通过 iCloud 自动在您所有 Apple 设备上同步。"
+          "q": "ContentCue 能在 iPhone、iPad 和 Vision Pro 之间同步吗？",
+          "a": "可以，需要 Premium。书签、RSS 订阅和播客订阅会通过 iCloud 在你的所有 Apple 设备（包括 Apple Vision Pro）间自动同步。"
+        },
+        {
+          "q": "ContentCue 支持 Apple Vision Pro 吗？",
+          "a": "支持。ContentCue 拥有原生 visionOS 应用 — 在悬浮窗口中浏览、快速捏合翻页、把播放缩小成角落迷你播放器。它是通用购买：购买一次即可在 iPhone、iPad 和 Vision Pro 上使用，Premium 三端共享。"
+        },
+        {
+          "q": "ContentCue 支持 CarPlay 吗？",
+          "a": "支持。ContentCue 会出现在车辆的 CarPlay 屏幕上，显示已保存的播客和 RSS 订阅。你可以直接在车载屏幕上开始播放、查看当前队列、调整播放速度。"
         },
         {
           "q": "ContentCue 会收集我的浏览数据吗？",
@@ -1496,7 +1506,7 @@
         },
         {
           "q": "ContentCue Premium 包含哪些内容？",
-          "a": "Premium 解锁完整音频中心：带 TTS 和 OPML 导入/导出的 RSS 阅读器、支持离线下载的播客播放器、跨设备 iCloud 同步、Siri 快捷指令、无限书签、自定义广告边框颜色以及可调节自动滚动速度。提供含 7 天免费试用的年度订阅，或一次性终身购买——应用会根据您的地区显示具体价格。"
+          "a": "免费版包含完整的阅读浏览器，外加最多 3 个书签、3 个 RSS 订阅和 3 个已保存的播客节目。Premium 解除这些限制 — 书签、订阅和节目均不限量 — 并增加设备间 iCloud 同步、Siri 快捷指令、自定义广告边框颜色和可调自动滚动速度。可选择含 7 天免费试用的年度订阅，或一次性买断。"
         }
       ],
       "backDesc": "在寻找漫画和电子书阅读器？",
@@ -1506,7 +1516,7 @@
         "eyebrow": "RSS 阅读器",
         "title": "订阅你的信息源，收听错过的标题。",
         "desc": "订阅您喜欢的新闻 RSS，将最常读的频道置顶。通过 OPML 导入或导出全部订阅列表。在干净专注的界面中阅读文章，或开启 TTS 将未读标题连续播放，如同私人电台简报。",
-        "bullet1": "订阅不限数量的 RSS 信息源并置顶收藏频道",
+        "bullet1": "关注喜爱的订阅源，置顶最常读的频道",
         "bullet2": "通过 OPML 导入或导出订阅列表",
         "bullet3": "TTS 连续朗读未读标题，如同音频简报"
       },
@@ -1528,11 +1538,48 @@
       },
       "icloudSiri": {
         "eyebrow": "iCloud 同步与 Siri 快捷指令",
-        "title": "所有内容都在你的 iPhone 和 iPad 间同步。",
+        "title": "在 iPhone、iPad 和 Vision Pro 间无缝衔接。",
         "desc": "书签、RSS 订阅和播客订阅会自动在您所有 Apple 设备上同步。对 Siri 说\"播放 ContentCue\"，无需打开应用即可开始 RSS 简报或播客——在 Siri 播放设置中分别为 RSS 和播客选择播放来源与语速。",
         "bullet1": "书签、RSS 订阅和播客订阅通过 iCloud 同步",
         "bullet2": "对 Siri 说\"播放 ContentCue\"即可免动手启动简报或播客",
         "bullet3": "五个内置快捷指令，RSS 与播客可分别设置来源和语速"
+      },
+      "pain": {
+        "eyebrow": "为什么选择 ContentCue",
+        "title": "网页阅读体验糟糕，我们修复了那些烦人的部分。",
+        "desc": "ContentCue 围绕手机阅读和收听的日常痛点打造 — 不屏蔽广告，也不破坏你喜爱的网站。",
+        "card1title": "阅读位置总是丢失",
+        "card1problem": "弹窗劫持页面、重定向突然触发、或者你切换了一下应用 — 然后就得来回滚动找刚才读到的段落。",
+        "card1fix": "ContentCue 自动保存精确位置，一键带你回到原处。",
+        "card2title": "广告混在正文里",
+        "card2problem": "内嵌广告刻意做得像正文，一不小心点到就打断了阅读。",
+        "card2fix": "彩色边框让每条广告一目了然 — 不屏蔽任何内容，一切清清楚楚。",
+        "card3title": "内容分散在三个应用里",
+        "card3problem": "浏览器看文章、单独的 RSS 应用、再加一个播客应用 — 三个收件箱、三个播放器、三个要打开的地方。",
+        "card3fix": "一个应用、一个播放器，搞定网页、RSS 和播客。",
+        "card4title": "总是没时间好好阅读",
+        "card4problem": "通勤、健身、开车时阅读清单越积越多 — 偏偏这时你的眼睛腾不出来。",
+        "card4fix": "把任意页面或未读订阅变成音频，锁屏、CarPlay 或 Vision Pro 上都能听。"
+      },
+      "vision": {
+        "eyebrow": "Apple Vision Pro 原生应用",
+        "title": "你的阅读室，和客厅一样大。",
+        "desc": "Vision Pro 上的 ContentCue 是真正的 visionOS 原生应用，不是 iPad 移植版。在悬浮窗口中浏览、阅读、收听，控件专为注视交互设计；还可以把播放缩小成角落里的迷你播放器，边听边做别的事。",
+        "bullet1": "阅读模式支持捏合翻页 — 在任意位置快速捏合即可下翻，无需瞄准按钮",
+        "bullet2": "RSS 和播客的空间视图，与 iPhone 同步同样的订阅源和节目",
+        "bullet3": "把播放缩小为角落的小窗口，边工作边继续收听",
+        "alt1": "Apple Vision Pro 上的 ContentCue 浏览器窗口，显示文章和音频播放器",
+        "alt2": "Apple Vision Pro 空间窗口中的 ContentCue RSS 订阅",
+        "alt3": "Apple Vision Pro 空间窗口中的 ContentCue 播客库"
+      },
+      "carplay": {
+        "eyebrow": "CarPlay",
+        "title": "你的订阅和节目，搬上车载屏幕。",
+        "desc": "连接 iPhone 后，ContentCue 会出现在 CarPlay 上，显示你保存的播客和 RSS 订阅。在车载屏幕上开始播放单集或文章简报、查看队列中的下一项、调整播放速度 — 全部使用原生 CarPlay 界面。",
+        "bullet1": "在车载屏幕上浏览已保存的播客和 RSS 订阅",
+        "bullet2": "队列视图显示正在播放和即将播放的内容",
+        "bullet3": "无需拿起手机即可调整播放速度",
+        "alt": "CarPlay 上的 ContentCue，显示队列、播客和 RSS 标签页"
       }
     },
     "comicReaderPage": {

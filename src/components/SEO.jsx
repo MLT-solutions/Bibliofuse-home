@@ -32,10 +32,12 @@ const SEO = ({
     type = 'website',
     schemaType = 'suite',
     schemaName = 'BiblioFuse',
+    applicationCategory, // schema.org category, e.g. "LifestyleApplication"; defaults to Utilities
     operatingSystem,
     featureList,
     softwareVersion,  // e.g. "2.1.2" — surfaced on SoftwareApplication schema
     offers,           // override the default free Offer, e.g. { price, priceCurrency } or AggregateOffer
+    storeLinks,       // [url] — app store listing(s); rendered as sameAs + downloadUrl for entity linking
     image,
     imageWidth,
     imageHeight,
@@ -73,7 +75,7 @@ const SEO = ({
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": schemaName,
-        "applicationCategory": "UtilitiesApplication",
+        "applicationCategory": applicationCategory || "UtilitiesApplication",
         "operatingSystem": operatingSystem || "iOS, iPadOS, macOS, Android, Windows, Web",
         "url": canonicalUrl,
         "inLanguage": currentLang,
@@ -82,6 +84,7 @@ const SEO = ({
         // Free to download; some apps offer optional in-app Premium. Pages may override `offers`.
         "offers": offers || { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
         ...(softwareVersion && { "softwareVersion": softwareVersion }),
+        ...(storeLinks && storeLinks.length > 0 && { "sameAs": storeLinks, "downloadUrl": storeLinks[0] }),
         "publisher": ORGANIZATION,
     };
 

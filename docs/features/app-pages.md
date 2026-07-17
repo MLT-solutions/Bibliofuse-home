@@ -20,6 +20,13 @@ own top-level route (`/comicreader`, `/grepreader`, `/archive`, `/smartdecrypt`,
   feature, but add site-sized derivatives under `public/image/<app>/` instead of
   linking to the raw ASC source files. Keep them framed/cropped so the page's own
   heading remains the primary heading.
+- Every native-app hero shows a `DevicePills` row
+  (`src/components/DevicePills.jsx`): small inline-SVG icons + labels for the
+  platforms the app actually ships on (iphone/ipad/mac/visionpro/carplay/
+  windows/android/web keys). `tone="dark"|"light"` matches the hero background,
+  `align="start"` for left-aligned heroes. Device names are proper nouns and are
+  deliberately not translated. `/webapp` skips the row (it is itself the
+  browser tool).
 
 ## Android request page
 The homepage Android demand CTA routes to `/:lang/androidrequest/` instead of opening
@@ -74,6 +81,26 @@ not real copyrighted book covers.
 
 When describing Reader streaming, use Mac/PC language unless the feature is truly
 Mac-only. iOS can stream and read from both Mac and PC libraries.
+
+## ContentCue
+`src/pages/ContentCue.jsx` (`/contentcue`) markets ContentCue: Read & Listen
+(iOS + iPadOS + native visionOS, ASC id 6770080864). The page uses the app's blue
+brand identity (matching the app icon and ASC screenshots — it was green before the
+2026-07 redesign). Section order: hero (Vision Pro launch badge, device pills for
+iPhone/iPad/Vision Pro/CarPlay), pain-point cards (`redesign.contentcuePage.pain.*`
+— lost reading position, ads blending into content, content scattered across apps,
+no time to read), 3-step how-it-works, feature sections (position restore, ad
+outlines, RSS, podcasts, website TTS), a dark native-visionOS showcase
+(`vision.*`, three wide screenshots from `public/image/contentcue/vision-*.jpg`),
+a CarPlay section (`carplay.*`, `iphone-carplay.jpg`), iCloud/Siri, pricing, FAQ.
+
+Pricing/FAQ reflect the current free-tier limits: free users get the full browser
+plus up to 3 bookmarks, 3 RSS feeds, and 3 saved podcast shows; Premium removes the
+limits and adds iCloud sync (RSS/Podcast tabs are NOT premium-gated — don't
+reintroduce the old "Premium unlocks the audio hub" framing). SEO declares
+`operatingSystem="iOS, iPadOS, visionOS"`; keep `softwareVersion` in step with the
+live ASC version. One-off copy-injection scripts from the redesign:
+`scripts/contentcue-redesign-en.cjs` and `scripts/contentcue-redesign-locales.cjs`.
 
 ## Adding a new sister app
 Adding a 6th app means: new page component in `src/pages/`, new route + sub-routes in

@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import StickyDownloadBar from '../components/StickyDownloadBar';
+import DevicePills from '../components/DevicePills';
 
 const macAppStoreUrl = 'https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449';
 const msStoreUrl = 'https://apps.microsoft.com/detail/9n2jb4k5wvcq';
@@ -94,6 +95,14 @@ const ArchiveScanner = () => {
         canonical="/archive"
         schemaType="suite"
         schemaName="Comic Duplicate Scanner"
+        operatingSystem="macOS, Windows"
+        storeLinks={[macAppStoreUrl, msStoreUrl]}
+        featureList={[
+          t('redesign.archivePage.scanning.title'),
+          t('redesign.archivePage.photos.title'),
+          t('redesign.archivePage.autoselect.title'),
+          t('redesign.archivePage.export.title'),
+        ]}
         faqItems={t('redesign.archivePage.faq', { returnObjects: true })}
         breadcrumbs={breadcrumbs}
       />
@@ -117,9 +126,11 @@ const ArchiveScanner = () => {
           <h1 className="mb-5 text-[clamp(2.4rem,5vw,4rem)] font-black leading-tight tracking-tight text-white">
             {t('redesign.archivePage.hero.title')}
           </h1>
-          <p className="mx-auto mb-8 max-w-xl text-lg leading-relaxed text-amber-200">
+          <p className="mx-auto mb-6 max-w-xl text-lg leading-relaxed text-amber-200">
             {t('redesign.archivePage.hero.desc')}
           </p>
+
+          <DevicePills devices={['mac', 'windows']} tone="dark" className="mb-8" />
 
           <div className="flex flex-wrap justify-center gap-3">
             <a href={macAppStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex">

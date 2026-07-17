@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import StickyDownloadBar from '../components/StickyDownloadBar';
+import DevicePills from '../components/DevicePills';
 
 const appStoreUrl = 'https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229';
 const msStoreUrl = 'https://apps.microsoft.com/detail/9p9bfkr5zdz8';
@@ -92,6 +93,13 @@ const SmartDecrypt = () => {
         canonical="/smartdecrypt"
         schemaType="suite"
         schemaName="SmartDecrypt PDF ZIP"
+        operatingSystem="iOS, iPadOS, macOS, Windows"
+        storeLinks={[appStoreUrl, msStoreUrl]}
+        featureList={[
+          t('redesign.smartdecryptPage.patterns.title'),
+          t('redesign.smartdecryptPage.formats.title'),
+          t('redesign.smartdecryptPage.mobile.title'),
+        ]}
         faqItems={t('redesign.smartdecryptPage.faq', { returnObjects: true })}
         breadcrumbs={breadcrumbs}
       />
@@ -115,9 +123,11 @@ const SmartDecrypt = () => {
           <h1 className="mb-5 text-[clamp(2.4rem,5vw,4rem)] font-black leading-tight tracking-tight text-white">
             {t('redesign.smartdecryptPage.hero.title')}
           </h1>
-          <p className="mx-auto mb-8 max-w-xl text-lg leading-relaxed text-violet-200">
+          <p className="mx-auto mb-6 max-w-xl text-lg leading-relaxed text-violet-200">
             {t('redesign.smartdecryptPage.hero.desc')}
           </p>
+
+          <DevicePills devices={['iphone', 'ipad', 'mac', 'windows']} tone="dark" className="mb-8" />
 
           <div className="flex flex-wrap justify-center gap-3">
             <a href={appStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex">
