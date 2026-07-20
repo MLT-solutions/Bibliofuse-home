@@ -2,8 +2,9 @@
 
 Draft compilation for the `/comicreader/` platform picker (`src/components/ReaderFamilyGuide.jsx`),
 built 2026-07-20 by reading the actual product source repos rather than inferring from marketing
-copy. **Not authoritative until reviewed** — that's the point of the CSV format: open it, check
-each row, correct what's wrong, and the diff is the record of what changed and why.
+copy, then reviewed line-by-line by the product owner the same day. **Status: reviewed and
+applied** — the component now matches these CSVs exactly. Keep using the same workflow for future
+corrections: edit the CSV, note what changed, and it gets applied back to the component as a diff.
 
 ## Files
 
@@ -11,9 +12,10 @@ each row, correct what's wrong, and the diff is the record of what changed and w
 - `host-client-capabilities.csv` — the underlying host/client capability data that drives the
   picker's recommendation logic (`HOSTS`/`CLIENTS`/`MODE_INFO` in `ReaderFamilyGuide.jsx`).
 
-Both have a `confidence` column (`high` / `low` / `unverified`) and a `source` column citing the
-exact doc or file the claim comes from. `unverified` rows are flagged, not guessed — see "Open
-questions" below.
+Both have a `confidence` column and a `source` column citing where the claim comes from:
+`verified` = confirmed directly by the product owner (2026-07-20 review, second pass); `high` =
+a specific statement found in a source doc, not yet independently confirmed by the owner; `low` =
+a stated intent (e.g. a roadmap plan) rather than a documented or confirmed fact.
 
 ## Sources read
 
@@ -48,28 +50,32 @@ was written (see that file's git history, 2026-07-20):
    anything — streaming is documented as one-directional, Mac/PC/NAS → mobile/spatial/TV clients.
    Removed from the host list entirely.
 
-## Open questions (unverified — need your confirmation)
+## Resolved in the 2026-07-20 product-owner review (second pass)
 
-- **Can a Mac or Windows PC ever act as a stream *client*** (reading from another Mac, PC, or NAS
-  host), or are they host-only? Every doc found describes them only as hosts. The picker currently
-  assumes they can also be clients (`CLIENTS.mac`, `CLIENTS.windows`) — this may be wrong the same
-  way iPhone-as-host was wrong. Flagged `unverified` in `host-client-capabilities.csv`.
-- **Android phone streaming timeline** — "coming soon" is your own stated intent from this
-  conversation, not something found in any source doc (the current Android app is frozen; no
-  active native-Android-phone rewrite plan exists in any repo checked). Worth confirming this is
-  still accurate before it stays on a public page indefinitely.
-- Full Windows-as-client and Mac-as-client behavior wasn't traced through to code — this pass
-  prioritized correcting active misstatements over exhaustively verifying every cell.
+- **Mac and Windows are host-only, never clients.** Confirmed — the two `unverified` rows from the
+  first pass were correct to flag. Removed `CLIENTS.mac` and `CLIENTS.windows` from the component.
+- **Synology native streaming is confirmed working** (Local Wi-Fi + Manual Tailscale), not
+  "validation pending" as the v0.1.3 release notes had it — that gate language was stale. Removed
+  `host.nativeStreaming` from `HOSTS.synology`.
+- **New distinction surfaced:** `icloud_relay` (does this host write its endpoint to the user's
+  iCloud Drive for automatic discovery?) is separate from `tailscale_capable` (does Tailscale reach
+  this host at all?). Mac/Windows have both, so an iCloud client gets automatic "iCloud +
+  Tailscale" discovery against them. Synology has Tailscale reachability but not the iCloud relay,
+  so the same iCloud client instead resolves to Manual Tailscale against a Synology host — same
+  Tailscale capability, different resolved mode, because of this one flag.
+- **visionOS is also a standalone reader**, not client-only as the first pass had it.
+- **Android phone "coming soon" confirmed still accurate** by the product owner directly.
+- tvOS and Android TV are both `status: soon` (not `live`/`new` as the first pass guessed).
 
 ## Updating the component from this data
 
-Once you've corrected the CSVs, the fields map directly:
+The fields map directly:
 
 | CSV column | Component field |
 |---|---|
 | `platform-coverage.csv` rows | `COVERAGE_ROWS` array |
-| `host-client-capabilities.csv` `tailscale_capable` / `native_streaming` (hosts) | `HOSTS[key]` |
+| `host-client-capabilities.csv` `tailscale_capable` / `icloud_relay` / `native_streaming` (hosts) | `HOSTS[key]` |
 | `host-client-capabilities.csv` `can_stream` / `apple_icloud` / `lan_only` (clients) | `CLIENTS[key]` |
 
-Flag which rows changed and I'll apply the diff back to `ReaderFamilyGuide.jsx` directly rather
-than re-deriving it.
+Flag which rows changed and the diff gets applied back to `ReaderFamilyGuide.jsx` directly rather
+than re-derived from scratch.

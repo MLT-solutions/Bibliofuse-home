@@ -39,9 +39,28 @@ import React, { useMemo, useState } from 'react';
 //   iPhone/iPad host role anywhere in the source. Removed from HOSTS
 //   entirely rather than caveated — this isn't a "not yet," it's not a
 //   product concept.
-// Rest of this file's data (Windows/Mac/Android specifics) is still an
-// unverified first pass — see the docs/reader-family-data/ CSV compilation
-// for the full sourced pass.
+//
+// 2026-07-20, second pass — product-owner line-by-line review of the
+// docs/reader-family-data/ CSVs (verified confidence, not just cited docs):
+// - Mac and Windows are HOST ONLY, never clients — resolves the two
+//   `unverified` rows the first pass flagged. Removed CLIENTS.mac and
+//   CLIENTS.windows.
+// - Synology native streaming is confirmed working (Local Wi-Fi + Manual
+//   Tailscale), not "pending" — the v0.1.3 release-notes gate language was
+//   stale. Removed host.nativeStreaming from HOSTS.synology.
+// - New distinction: `icloudRelay` (does this host write its endpoint to the
+//   user's iCloud Drive for automatic discovery?) is separate from
+//   `tailscaleCapable` (does Tailscale reach this host at all?). Mac/Windows
+//   support both, so an iCloud client gets automatic "iCloud + Tailscale"
+//   discovery. Synology supports Tailscale but not the iCloud relay, so an
+//   iCloud client falls back to Manual Tailscale against it — same
+//   Tailscale-capable host, different resolved mode depending on this flag.
+// - visionOS is also a standalone reader, not client-only (COVERAGE_ROWS
+//   role text corrected; no CLIENTS logic change).
+// - tvOS and Android TV are both `status: 'soon'` per the product owner
+//   (not `'live'`/`'new'` as the first pass had it) — see COVERAGE_ROWS.
+// Windows/Mac/Android specifics are now product-owner-verified; see
+// docs/reader-family-data/ for the full sourced CSVs and per-row notes.
 
 const MODE_INFO = {
   'icloud-ts': {
@@ -59,19 +78,20 @@ const MODE_INFO = {
 };
 
 const HOSTS = {
-  mac: { label: 'Mac', tailscaleCapable: true },
-  windows: { label: 'Windows PC', tailscaleCapable: true },
+  mac: { label: 'Mac', tailscaleCapable: true, icloudRelay: true },
+  windows: { label: 'Windows PC', tailscaleCapable: true, icloudRelay: true },
   synology: {
     label: 'Synology NAS (SPK)',
     tailscaleCapable: true,
-    note: 'Zero-config folder picker — points at your existing library, nothing duplicated.',
-    nativeStreaming: 'pending',
+    icloudRelay: false,
+    note: 'Zero-config folder picker — points at your existing library, nothing duplicated. No automatic iCloud discovery (that’s a Mac/Windows-only relay) — pairs over Manual Tailscale instead.',
     appLink: 'https://github.com/MLT-solutions/bibliofuse-nas-distribution/releases',
     appLinkLabel: 'View Synology releases →',
   },
   docker: {
     label: 'Docker / other NAS',
     tailscaleCapable: false,
+    icloudRelay: false,
     note: 'Free self-hosted server and browser reader — no subscription needed to host or read in the browser.',
     nativeStreaming: 'unsupported',
     appLink: 'https://github.com/MLT-solutions/bibliofuse-nas-distribution',
@@ -81,24 +101,22 @@ const HOSTS = {
 
 const CLIENTS = {
   iphone_ipad: { label: 'iPhone / iPad', canStream: true, isAppleICloud: true },
-  mac: { label: 'Mac', canStream: true, isAppleICloud: true },
-  windows: { label: 'Windows PC', canStream: true, isAppleICloud: false },
-  visionpro: { label: 'Apple Vision Pro', canStream: true, isAppleICloud: true },
+  visionpro: { label: 'Apple Vision Pro', canStream: true, isAppleICloud: true, note: 'Also a standalone reader — this only applies when streaming from a host.' },
   appletv: { label: 'Apple TV', canStream: true, lanOnly: true, note: 'Companion app — streams only, no local library on the box itself. Local Wi-Fi (LAN) only: tvOS has no iCloud Documents entitlement and the Tailscale path is built but disabled pending an upstream Tailscale tvOS bug, so Apple TV can’t discover a host outside the house yet.' },
   androidphone: { label: 'Android phone', canStream: false, note: 'Streaming client is coming soon — standalone reading only today.' },
-  androidtv: { label: 'Android TV', canStream: false, note: 'Coming soon.' },
+  androidtv: { label: 'Android TV', canStream: false, note: 'Coming soon — planned as Local Wi-Fi only, not Tailscale.' },
 };
 
 const COVERAGE_ROWS = [
-  { platform: 'iPhone / iPad', role: 'Standalone · Client', modes: 'All 3 modes (as client)', status: 'live' },
-  { platform: 'macOS', role: 'Standalone · Host · Client', modes: 'All 3 modes', status: 'live' },
-  { platform: 'Windows PC', role: 'Standalone · Host · Client', modes: 'Local Wi-Fi · Manual Tailscale', status: 'live' },
-  { platform: 'visionOS', role: 'Client only', modes: 'iCloud + Tailscale · Local Wi-Fi', status: 'live' },
-  { platform: 'tvOS (Apple TV)', role: 'Companion / client only', modes: 'Local Wi-Fi only — no iCloud/Tailscale on tvOS', status: 'new' },
-  { platform: 'Android phone', role: 'Standalone only', modes: '—', status: 'soon', statusLabel: 'Streaming coming soon' },
-  { platform: 'Docker (NAS)', role: 'Host + free browser reader', modes: 'Browser only — no native-app streaming yet', status: 'soon', statusLabel: 'Native streaming not yet supported' },
-  { platform: 'Synology NAS (SPK)', role: 'Host + free browser reader', modes: 'Browser today; native streaming in validation', status: 'soon', statusLabel: 'Native streaming validation pending' },
-  { platform: 'Android TV', role: 'Client, coming soon', modes: '—', status: 'soon', statusLabel: 'Coming soon' },
+  { platform: 'iPhone / iPad', role: 'Standalone reader, supports streaming from a host', modes: 'Client: iCloud + Tailscale · Local Wi-Fi · Manual Tailscale', status: 'live' },
+  { platform: 'macOS', role: 'Standalone reader, supports hosting as a server', modes: 'Host: iCloud + Tailscale · Local Wi-Fi · Manual Tailscale', status: 'live' },
+  { platform: 'Windows PC', role: 'Standalone reader, supports hosting as a server', modes: 'Host: iCloud + Tailscale · Local Wi-Fi · Manual Tailscale', status: 'live' },
+  { platform: 'visionOS', role: 'Standalone reader, supports streaming from a host', modes: 'Client: iCloud + Tailscale · Local Wi-Fi · Manual Tailscale', status: 'live' },
+  { platform: 'tvOS (Apple TV)', role: 'Supports streaming from a host (no standalone library)', modes: 'Client: Local Wi-Fi', status: 'soon' },
+  { platform: 'Android phone', role: 'Standalone reader', modes: 'Client: none today — streaming coming soon', status: 'live' },
+  { platform: 'Docker (NAS)', role: 'Supports hosting as a server + free browser reader', modes: 'Host: none (browser reader only)', status: 'live' },
+  { platform: 'Synology NAS (SPK)', role: 'Supports hosting as a server + free browser reader', modes: 'Host: Local Wi-Fi · Manual Tailscale', status: 'live' },
+  { platform: 'Android TV', role: 'Supports streaming from a host (no standalone library)', modes: 'Client: Local Wi-Fi (planned)', status: 'soon' },
 ];
 
 function StatusPill({ status, label }) {
@@ -179,17 +197,12 @@ function Recommendation({ hostKey, clientKey, wantsAway }) {
     );
   }
 
-  if (host.nativeStreaming === 'unsupported' || host.nativeStreaming === 'pending') {
-    const pending = host.nativeStreaming === 'pending';
+  if (host.nativeStreaming === 'unsupported') {
     return (
       <div className="rounded-2xl border border-amber-200 bg-amber-50/60 p-6">
         <div className="mb-1 text-xs font-bold uppercase tracking-wider text-amber-700">Given your combination</div>
         <p className="text-sm leading-relaxed text-slate-800">
-          {pending ? (
-            <>Native app streaming from <strong>{host.label}</strong> to <strong>{client.label}</strong> is still being validated — not confirmed working yet.</>
-          ) : (
-            <>Native app streaming from <strong>{host.label}</strong> to <strong>{client.label}</strong> isn&rsquo;t supported yet in the released apps.</>
-          )}
+          Native app streaming from <strong>{host.label}</strong> to <strong>{client.label}</strong> isn&rsquo;t supported yet in the released apps.
           {' '}Host your library on {host.label} today and read it in its free built-in browser reader instead — that part works now, on any device, no app required.
         </p>
         {host.appLink && (
@@ -202,7 +215,7 @@ function Recommendation({ hostKey, clientKey, wantsAway }) {
   }
 
   const wantsRemote = wantsAway && host.tailscaleCapable && !client.lanOnly;
-  const modeKey = !wantsRemote ? 'local-wifi' : client.isAppleICloud ? 'icloud-ts' : 'manual-ts';
+  const modeKey = !wantsRemote ? 'local-wifi' : client.isAppleICloud && host.icloudRelay ? 'icloud-ts' : 'manual-ts';
   const mode = MODE_INFO[modeKey];
   const cappedByHost = wantsAway && !host.tailscaleCapable && !client.lanOnly;
   const cappedByClient = wantsAway && client.lanOnly;
