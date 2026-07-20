@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import logo from '../assets/logo.png';
 import SEO from '../components/SEO';
+import DevicePills from '../components/DevicePills';
+import ReaderComparisonTable from '../components/ReaderComparisonTable';
 import { articles } from '../data/articles';
 
 const appStoreUrl = 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093';
@@ -12,6 +14,7 @@ const archiveMacUrl = 'https://apps.apple.com/eg/app/archive-duplicate-scanner/i
 const archiveMsUrl = 'https://apps.microsoft.com/detail/9n2jb4k5wvcq';
 const smartDecryptMsUrl = 'https://apps.microsoft.com/detail/9p9bfkr5zdz8';
 const grepTagReaderUrl = 'https://apps.apple.com/app/id6779977609';
+const grepTagMsStoreUrl = 'https://apps.microsoft.com/store/detail/9MT6VDXXZ3RH';
 const imageBase = '/image/offline-apps/bibliofuse';
 
 function StoreBadge({ type, size = 'lg', className = '' }) {
@@ -187,6 +190,70 @@ function Hero({ lang }) {
   );
 }
 
+// Second flagship hero, added 2026-07-20 alongside ReaderComparisonTable so the
+// homepage funnel is: Reader hero -> GrepTag hero -> "why two apps" comparison
+// table -> decide which to check out -- instead of one generic hero followed by
+// a 6-card grid that gave every product equal weight. Reuses GrepTagReader.jsx's
+// existing hero copy/translation keys (redesign.grepTagPage.hero.*) rather than
+// new ones, so this ships fully localized across all 11 languages for free.
+function GrepTagHero({ lang }) {
+  const { t } = useTranslation();
+
+  return (
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#1e1b4b] via-[#312e81] to-[#1e1b4b] py-20 sm:py-24">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(99,102,241,0.3),transparent_50%),radial-gradient(circle_at_80%_70%,rgba(139,92,246,0.2),transparent_50%)]" />
+      <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-indigo-500/10 px-3 py-1.5 text-xs font-semibold text-indigo-200">
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inset-0 animate-ping rounded-full bg-indigo-400" />
+            <span className="relative h-2 w-2 rounded-full bg-indigo-400" />
+          </span>
+          {t('redesign.grepTagPage.hero.badge')}
+        </div>
+
+        <div className="mb-6 flex justify-center">
+          <img src="/image/grepreader-logo.png" alt="GrepTag Reader" className="h-20 w-20 rounded-2xl shadow-2xl" />
+        </div>
+
+        <h2 className="mb-5 text-[clamp(2.2rem,4.5vw,3.5rem)] font-black leading-tight tracking-tight text-white">
+          {t('redesign.grepTagPage.hero.title')}
+        </h2>
+        <p className="mx-auto mb-6 max-w-xl text-lg leading-relaxed text-indigo-200">
+          {t('redesign.grepTagPage.hero.desc')}
+        </p>
+
+        <DevicePills devices={['iphone', 'ipad', 'mac', 'windows']} tone="dark" className="mb-8" />
+
+        <div className="flex flex-col items-center gap-3">
+          <div className="flex flex-wrap justify-center gap-3">
+            <a href={grepTagReaderUrl} target="_blank" rel="noopener noreferrer" className="inline-flex">
+              <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt={t('redesign.grepTagPage.hero.appStoreCta')} className="h-10 w-auto" />
+            </a>
+            <a href={grepTagMsStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex">
+              <img src="/image/Microsoft_Store_badge.svg" alt={t('redesign.grepTagPage.hero.msStoreCta')} className="h-10 w-auto" />
+            </a>
+          </div>
+          <span className="text-xs font-medium text-indigo-300">{t('redesign.grepTagPage.hero.macInReview')}</span>
+        </div>
+
+        <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-medium text-indigo-300">
+          {[t('redesign.grepTagPage.hero.trust1'), t('redesign.grepTagPage.hero.trust2'), t('redesign.grepTagPage.hero.trust3')].map((s) => (
+            <span key={s} className="flex items-center gap-1.5">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#818cf8" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+              {s}
+            </span>
+          ))}
+        </div>
+        <p className="mt-4 text-xs text-indigo-200/70">{t('redesign.grepTagPage.languages')}</p>
+
+        <Link to={`/${lang}/grepreader/`} className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-300 hover:text-indigo-100 transition-colors">
+          {t('redesign.twoAppsSection.textCta', 'See full details')} →
+        </Link>
+      </div>
+    </section>
+  );
+}
+
 function ProductFamily({ lang }) {
   const { t } = useTranslation();
   const products = [
@@ -346,128 +413,6 @@ function ProductCard({ tag, icon, logoSrc, name, desc, bullets, cta, href, to, s
         )}
       </div>
     </article>
-  );
-}
-
-function TwoAppsSection({ lang }) {
-  const { t } = useTranslation();
-
-  const comicBullets = [
-    t('redesign.twoAppsSection.comicBullet1'),
-    t('redesign.twoAppsSection.comicBullet2'),
-    t('redesign.twoAppsSection.comicBullet3'),
-  ];
-  const textBullets = [
-    t('redesign.twoAppsSection.textBullet1'),
-    t('redesign.twoAppsSection.textBullet2'),
-    t('redesign.twoAppsSection.textBullet3'),
-  ];
-  const mediaPanelClass = 'relative min-h-[240px] overflow-hidden md:min-h-full';
-  const mediaImageClass = 'absolute inset-0 h-full w-full scale-[1.08] object-cover object-center';
-
-  return (
-    <section className="bg-[#f5f8ff] py-16 sm:py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-10 text-center">
-          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-indigo-600">{t('redesign.twoAppsSection.eyebrow')}</div>
-          <h2 className="text-[clamp(1.6rem,3vw,2.4rem)] font-black leading-tight tracking-tight text-slate-950">
-            {t('redesign.twoAppsSection.titleA')}{' '}
-            <span className="font-semibold text-slate-500">{t('redesign.twoAppsSection.titleB')}</span>
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-slate-600">
-            {t('redesign.twoAppsSection.desc')}
-          </p>
-        </div>
-
-        <div className="grid gap-5 lg:grid-cols-2">
-          {/* BiblioFuse Reader — comics */}
-          <div className="grid overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-sm md:grid-cols-[0.88fr_1fr]">
-            <div className={`${mediaPanelClass} bg-gradient-to-br from-blue-50 to-cyan-50`}>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(45,124,246,0.18),transparent_42%)]" />
-              <img src={`${imageBase}/iphone/1.png`} alt="BiblioFuse Reader" className={`${mediaImageClass} drop-shadow-2xl`} />
-            </div>
-            <div className="flex flex-col p-7">
-              <div className="mb-5 flex items-center justify-between gap-3">
-                <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-xl">
-                  <img src="/image/bibliofuse-logo.png" alt="BiblioFuse Reader" className="h-11 w-11 object-cover" />
-                </span>
-                <span className="rounded-full bg-blue-50 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-blue-600">
-                  {t('redesign.twoAppsSection.comicTag')}
-                </span>
-              </div>
-              <h3 className="mb-1 text-lg font-black tracking-tight text-slate-950">BiblioFuse Reader</h3>
-              <p className="mb-3 text-sm font-medium text-blue-700">{t('redesign.twoAppsSection.comicIdent')}</p>
-              <p className="mb-4 rounded-xl bg-blue-50 px-3 py-2 text-xs font-semibold leading-relaxed text-blue-800">{t('redesign.twoAppsSection.comicCoverLine')}</p>
-              <ul className="mb-6 space-y-2.5">
-                {comicBullets.map((b) => (
-                  <li key={b} className="flex items-start gap-2.5 text-sm text-slate-700">
-                    <svg className="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2d7cf6" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-                    {b}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-auto">
-                <Link
-                  to={`/${lang}/comicreader/`}
-                  className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl bg-[#0b1220] px-4 text-sm font-semibold text-white transition hover:bg-[#152033]"
-                >
-                  {t('redesign.twoAppsSection.comicCta')}
-                  <ArrowRightIcon />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* GrepTag Reader — novels */}
-          <div className="grid overflow-hidden rounded-3xl border border-indigo-100 bg-white shadow-sm md:grid-cols-[0.88fr_1fr]">
-            <div className={`${mediaPanelClass} bg-gradient-to-br from-indigo-50 to-violet-50`}>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(79,70,229,0.18),transparent_42%)]" />
-              <img src="/image/grepreader/asc/iphone-library.jpg" alt="GrepTag Reader library" className={`${mediaImageClass} object-[50%_48%] shadow-2xl`} />
-            </div>
-            <div className="flex flex-col p-7">
-              <div className="mb-5 flex items-center justify-between gap-3">
-                <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-xl">
-                  <img src="/image/grepreader-logo.png" alt="GrepTag Reader" className="h-11 w-11 object-cover" />
-                </span>
-                <span className="rounded-full bg-indigo-50 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-indigo-600">
-                  {t('redesign.twoAppsSection.textTag')}
-                </span>
-              </div>
-              <h3 className="mb-1 text-lg font-black tracking-tight text-slate-950">GrepTag Reader</h3>
-              <p className="mb-3 text-sm font-medium text-indigo-700">{t('redesign.twoAppsSection.textIdent')}</p>
-              <p className="mb-4 rounded-xl bg-indigo-50 px-3 py-2 text-xs font-semibold leading-relaxed text-indigo-800">{t('redesign.twoAppsSection.textCoverLine')}</p>
-              <ul className="mb-6 space-y-2.5">
-                {textBullets.map((b) => (
-                  <li key={b} className="flex items-start gap-2.5 text-sm text-slate-700">
-                    <svg className="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-                    {b}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-auto">
-                <Link
-                  to={`/${lang}/grepreader/`}
-                  className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 text-sm font-semibold text-white transition hover:bg-indigo-700"
-                >
-                  {t('redesign.twoAppsSection.textCta')}
-                  <ArrowRightIcon />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <p className="mt-6 text-center text-xs text-slate-500">{t('redesign.twoAppsSection.bothNote')}</p>
-        <div className="mt-4 text-center">
-          <Link
-            to={`/${lang}/comicreader/#why-two-apps`}
-            className="text-xs font-medium text-indigo-500 underline-offset-2 hover:underline"
-          >
-            Why are these two separate apps? →
-          </Link>
-        </div>
-      </div>
-    </section>
   );
 }
 
@@ -1267,8 +1212,9 @@ const Home = () => {
         faqItems={faqItems}
       />
       <Hero lang={lang} />
+      <GrepTagHero lang={lang} />
+      <ReaderComparisonTable lang={lang} />
       <ProductFamily lang={lang} />
-      <TwoAppsSection lang={lang} />
       <AndroidInterestSection />
       <StandaloneToolsSection lang={lang} />
       <FaqSection lang={lang} />
