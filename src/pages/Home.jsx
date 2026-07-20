@@ -114,6 +114,9 @@ function Hero({ lang }) {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_10%,rgba(45,124,246,0.14),transparent_34%),radial-gradient(circle_at_85%_18%,rgba(20,194,166,0.13),transparent_28%)]" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr_1fr] lg:gap-8 lg:px-8">
         <div className="min-w-0 max-w-full">
+          <div className="mb-5">
+            <img src="/image/bibliofuse-logo.png" alt="BiblioFuse Reader" className="h-16 w-16 rounded-2xl shadow-lg" />
+          </div>
           <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 shadow-sm">
             <span className="relative flex h-2 w-2">
               <span className="absolute inset-0 rounded-full bg-teal-300 animate-ping" />

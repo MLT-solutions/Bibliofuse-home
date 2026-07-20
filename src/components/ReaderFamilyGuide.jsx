@@ -90,8 +90,8 @@ const MODE_INFO = {
 };
 
 const HOSTS = {
-  mac: { label: 'Mac', tailscaleCapable: true, icloudRelay: true },
-  windows: { label: 'Windows PC', tailscaleCapable: true, icloudRelay: true },
+  mac: { label: 'Mac (support local & NAS)', tailscaleCapable: true, icloudRelay: true },
+  windows: { label: 'PC (support local & NAS)', tailscaleCapable: true, icloudRelay: true },
   synology: {
     label: 'Synology NAS (SPK)',
     tailscaleCapable: true,
@@ -119,16 +119,85 @@ const CLIENTS = {
   androidtv: { label: 'Android TV', canStream: false, note: 'Coming soon — planned as Local Wi-Fi only, not Tailscale.' },
 };
 
-const COVERAGE_ROWS = [
-  { platform: 'iPhone / iPad', role: 'Standalone reader, supports streaming from a host', modes: 'Client: iCloud + Tailscale · Local Wi-Fi · Manual Tailscale', status: 'live' },
-  { platform: 'macOS', role: 'Standalone reader, supports hosting as a server', modes: 'Host: iCloud + Tailscale · Local Wi-Fi · Manual Tailscale', status: 'live' },
-  { platform: 'Windows PC', role: 'Standalone reader, supports hosting as a server', modes: 'Host: iCloud + Tailscale · Local Wi-Fi · Manual Tailscale', status: 'live' },
-  { platform: 'visionOS', role: 'Standalone reader, supports streaming from a host', modes: 'Client: iCloud + Tailscale · Local Wi-Fi · Manual Tailscale', status: 'live' },
-  { platform: 'tvOS (Apple TV)', role: 'Supports streaming from a host (no standalone library)', modes: 'Client: Local Wi-Fi', status: 'soon' },
-  { platform: 'Android phone', role: 'Standalone reader', modes: 'Client: none today — streaming coming soon', status: 'live' },
-  { platform: 'Docker (NAS)', role: 'Supports hosting as a server + free browser reader', modes: 'Host: none (browser reader only)', status: 'live' },
-  { platform: 'Synology NAS (SPK)', role: 'Supports hosting as a server + free browser reader', modes: 'Host: Local Wi-Fi · Manual Tailscale', status: 'live' },
-  { platform: 'Android TV', role: 'Supports streaming from a host (no standalone library)', modes: 'Client: Local Wi-Fi (planned)', status: 'soon' },
+// Matrix data reviewed and supplied by the product owner, 2026-07-20 (fourth
+// pass) — replaces the earlier prose-summary COVERAGE_ROWS. `kind` picks the
+// streaming-cell symbol: 'host' rows show a supported-connection triangle,
+// 'client' rows show a can-connect-via circle; any cell can independently be
+// `true` (supported now), `'soon'` (not yet — shown as the same coming-soon
+// mark regardless of host/client kind), or `false`/omitted (not applicable).
+const MATRIX_ROWS = [
+  {
+    platform: 'Docker (NAS)', kind: 'host', status: 'live',
+    role: { hosting: true, browser: true },
+    content: { nas: true },
+    streaming: { localWifi: 'soon' },
+  },
+  {
+    platform: 'Synology NAS (SPK)', kind: 'host', status: 'live',
+    role: { hosting: true, browser: true },
+    content: { nas: true },
+    streaming: { localWifi: true, manualTs: true },
+  },
+  {
+    platform: 'macOS', kind: 'host', status: 'live',
+    role: { hosting: true, standaloneNo: true },
+    content: { local: true, nas: true, icloud: true },
+    streaming: { icloudTs: true, localWifi: true, manualTs: true },
+  },
+  {
+    platform: 'Windows PC', kind: 'host', status: 'live',
+    role: { hosting: true, standaloneNo: true },
+    content: { local: true, nas: true, icloud: true },
+    streaming: { icloudTs: true, localWifi: true, manualTs: true },
+  },
+  {
+    platform: 'iPhone / iPad', kind: 'client', status: 'live',
+    role: { standaloneHave: true },
+    content: { local: true, icloud: true, host: true },
+    streaming: { icloudTs: true, localWifi: true, manualTs: true },
+  },
+  {
+    platform: 'visionOS', kind: 'client', status: 'live',
+    role: { standaloneHave: true },
+    content: { local: true, icloud: true, host: true },
+    streaming: { icloudTs: true, localWifi: true, manualTs: true },
+  },
+  {
+    platform: 'Android phone', kind: 'client', status: 'live',
+    role: { standaloneNo: true },
+    content: { local: true, host: 'soon' },
+    streaming: { localWifi: 'soon' },
+  },
+  {
+    platform: 'tvOS (Apple TV)', kind: 'client', status: 'soon',
+    role: {},
+    content: { host: true },
+    streaming: { localWifi: true },
+  },
+  {
+    platform: 'Android TV', kind: 'client', status: 'soon',
+    role: {},
+    content: { host: true },
+    streaming: { localWifi: true },
+  },
+];
+
+const ROLE_COLS = [
+  { key: 'hosting', label: 'Hosting as a server' },
+  { key: 'browser', label: 'Free browser reader' },
+  { key: 'standaloneNo', label: 'Standalone reader (no streaming)' },
+  { key: 'standaloneHave', label: 'Standalone reader (has streaming)' },
+];
+const CONTENT_COLS = [
+  { key: 'local', label: 'Local' },
+  { key: 'nas', label: 'NAS' },
+  { key: 'icloud', label: 'iCloud' },
+  { key: 'host', label: 'Host' },
+];
+const STREAM_COLS = [
+  { key: 'icloudTs', label: 'iCloud + Tailscale' },
+  { key: 'localWifi', label: 'Local Wi-Fi' },
+  { key: 'manualTs', label: 'Manual Tailscale' },
 ];
 
 function StatusPill({ status, label }) {
@@ -141,30 +210,72 @@ function StatusPill({ status, label }) {
   return <span className={`inline-flex rounded-full px-2 py-0.5 text-[10px] font-black uppercase tracking-wider ${styles[status]}`}>{text}</span>;
 }
 
+function CheckCell({ value }) {
+  if (!value) return <td className="px-3 py-2.5 text-center"></td>;
+  if (value === 'soon') {
+    return <td className="px-3 py-2.5 text-center text-amber-500" title="Coming soon">✜</td>;
+  }
+  return <td className="px-3 py-2.5 text-center text-emerald-600" title="Supported">✓</td>;
+}
+
+function StreamCell({ value, kind }) {
+  if (!value) return <td className="px-3 py-2.5 text-center"></td>;
+  if (value === 'soon') {
+    return <td className="px-3 py-2.5 text-center text-amber-500" title="Coming soon">✜</td>;
+  }
+  return kind === 'host'
+    ? <td className="px-3 py-2.5 text-center text-blue-600" title="Supported connection">△</td>
+    : <td className="px-3 py-2.5 text-center text-indigo-500" title="Can connect via">○</td>;
+}
+
 function CoverageTable() {
   return (
     <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[640px] border-collapse">
+        <table className="w-full min-w-[900px] border-collapse text-sm">
           <thead>
-            <tr className="bg-slate-900 text-white">
-              <th className="px-5 py-3.5 text-left text-xs font-bold uppercase tracking-wider">Platform</th>
-              <th className="px-5 py-3.5 text-left text-xs font-bold uppercase tracking-wider">Role</th>
-              <th className="px-5 py-3.5 text-left text-xs font-bold uppercase tracking-wider">Connection modes</th>
-              <th className="px-5 py-3.5 text-left text-xs font-bold uppercase tracking-wider">Status</th>
+            <tr>
+              <th rowSpan={2} className="sticky left-0 z-20 border-b border-r border-slate-200 bg-slate-900 px-4 py-2.5 text-left text-xs font-bold uppercase tracking-wider text-white">
+                Platform
+              </th>
+              <th colSpan={ROLE_COLS.length} className="border-b border-blue-200 bg-blue-50 px-3 py-1.5 text-center text-[11px] font-black uppercase tracking-wider text-blue-700">Role</th>
+              <th colSpan={CONTENT_COLS.length} className="border-b border-emerald-200 bg-emerald-50 px-3 py-1.5 text-center text-[11px] font-black uppercase tracking-wider text-emerald-700">Content source support</th>
+              <th colSpan={STREAM_COLS.length} className="border-b border-slate-300 bg-slate-100 px-3 py-1.5 text-center text-[11px] font-black uppercase tracking-wider text-slate-600">Streaming connection modes</th>
+              <th rowSpan={2} className="border-b border-slate-200 bg-slate-900 px-3 py-2.5 text-center text-xs font-bold uppercase tracking-wider text-white">Status</th>
+            </tr>
+            <tr>
+              {ROLE_COLS.map((c) => (
+                <th key={c.key} className="border-b border-blue-100 bg-blue-50/60 px-2 py-2 text-center text-[10.5px] font-semibold leading-tight text-blue-700">{c.label}</th>
+              ))}
+              {CONTENT_COLS.map((c) => (
+                <th key={c.key} className="border-b border-emerald-100 bg-emerald-50/60 px-2 py-2 text-center text-[10.5px] font-semibold leading-tight text-emerald-700">{c.label}</th>
+              ))}
+              {STREAM_COLS.map((c) => (
+                <th key={c.key} className="border-b border-slate-200 bg-slate-50 px-2 py-2 text-center text-[10.5px] font-semibold leading-tight text-slate-600">{c.label}</th>
+              ))}
             </tr>
           </thead>
           <tbody>
-            {COVERAGE_ROWS.map((row, i) => (
-              <tr key={row.platform} className={`border-t border-slate-100 ${i % 2 === 1 ? 'bg-slate-50' : 'bg-white'}`}>
-                <td className="px-5 py-3.5 text-sm font-bold text-slate-950">{row.platform}</td>
-                <td className="px-5 py-3.5 text-sm text-slate-700">{row.role}</td>
-                <td className="px-5 py-3.5 text-sm text-slate-600">{row.modes}</td>
-                <td className="px-5 py-3.5"><StatusPill status={row.status} label={row.statusLabel} /></td>
-              </tr>
-            ))}
+            {MATRIX_ROWS.map((row, i) => {
+              const rowBg = i % 2 === 1 ? 'bg-slate-50' : 'bg-white';
+              return (
+                <tr key={row.platform} className="border-t border-slate-100">
+                  <td className={`sticky left-0 z-10 border-r border-slate-200 px-4 py-2.5 text-sm font-bold text-slate-950 ${rowBg}`}>{row.platform}</td>
+                  {ROLE_COLS.map((c) => <CheckCell key={c.key} value={row.role[c.key]} />)}
+                  {CONTENT_COLS.map((c) => <CheckCell key={c.key} value={row.content[c.key]} />)}
+                  {STREAM_COLS.map((c) => <StreamCell key={c.key} value={row.streaming[c.key]} kind={row.kind} />)}
+                  <td className="px-3 py-2.5 text-center"><StatusPill status={row.status} /></td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
+      </div>
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 border-t border-slate-200 bg-slate-50 px-4 py-2.5 text-[11px] text-slate-500">
+        <span className="flex items-center gap-1.5"><span className="text-emerald-600">✓</span> Supported</span>
+        <span className="flex items-center gap-1.5"><span className="text-indigo-500">○</span> Can connect via (client)</span>
+        <span className="flex items-center gap-1.5"><span className="text-blue-600">△</span> Supported connection (host)</span>
+        <span className="flex items-center gap-1.5"><span className="text-amber-500">✜</span> Coming soon</span>
       </div>
     </div>
   );

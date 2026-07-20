@@ -2,13 +2,12 @@
 
 Draft compilation for the `/comicreader/` platform picker (`src/components/ReaderFamilyGuide.jsx`),
 built 2026-07-20 by reading the actual product source repos rather than inferring from marketing
-copy, then reviewed line-by-line by the product owner the same day across three passes. **Status:
-role/modes/status columns reviewed and applied to the component.** `content_source_support` (added
-in the second review pass) is reviewed in the CSVs but **not yet reflected in
-`ReaderFamilyGuide.jsx`** — the component has no "where do your files come from" dimension yet;
-it's data-only until that's built. One field is deliberately unapplied — see "Open item" below.
-Keep using the same workflow for future corrections: edit the CSV, note what changed, and it gets
-applied back to the component as a diff.
+copy, then reviewed line-by-line by the product owner the same day across four passes. **Status:
+fully applied.** The coverage table was rebuilt as a matrix (role / content source support /
+streaming connection modes, each broken into sub-columns with ✓/△/○/✜ symbols, sticky first
+column) matching the product owner's own mockup — see `MATRIX_ROWS` in the component. One field is
+deliberately unapplied — see "Open item" below. Keep using the same workflow for future
+corrections: edit the CSV, note what changed, and it gets applied back to the component as a diff.
 
 ## Open item — needs your confirmation
 
@@ -91,13 +90,35 @@ means personally confirmed on top of that citation, not a new source). Every oth
 matched what the second pass had applied to the component — no further changes required, except
 the Android TV `can_stream` discrepancy noted above.
 
+## Fourth pass — coverage table rebuilt as a matrix
+
+Product owner supplied a mockup (role / content source support / streaming connection modes, each
+broken into sub-columns, with ✓/△/○/✜ symbols instead of prose) to replace the old 4-column
+Platform/Role/Modes/Status table. Rebuilt as `MATRIX_ROWS` in `ReaderFamilyGuide.jsx`:
+- **Role**: Hosting as a server, Free browser reader, Standalone reader (no streaming), Standalone
+  reader (has streaming) — 4 booleans per platform.
+- **Content source support**: Local, NAS, iCloud, Host (i.e. "gets content by streaming from a
+  host") — replaces the old free-text `content_source_support` string with 4 booleans, still
+  cross-checkable against the CSV column of the same name.
+- **Streaming connection modes**: iCloud + Tailscale, Local Wi-Fi, Manual Tailscale — each cell is
+  `true` (supported), `'soon'`, or absent. Symbol depends on the row's `kind`: host rows show △
+  ("supported connection"), client rows show ○ ("can connect via"), any `'soon'` value shows ✜
+  regardless of kind.
+- Table wrapper keeps `overflow-x-auto`; the Platform column and both header rows use `sticky
+  left-0` / normal `sticky` positioning respectively, verified in the dev server at a 375px mobile
+  viewport — scrolling the table horizontally leaves the Platform column pinned in place.
+
+This is now the authoritative shape for the on-page table — `platform-coverage.csv`'s prose
+`role`/`streaming_connection_modes` columns describe the same facts in text form for spreadsheet
+review, not a second implementation to keep in sync cell-by-cell.
+
 ## Updating the component from this data
 
 The fields map directly:
 
 | CSV column | Component field |
 |---|---|
-| `platform-coverage.csv` rows | `COVERAGE_ROWS` array |
+| `platform-coverage.csv` rows | `MATRIX_ROWS` array (role/content/streaming booleans, not the prose columns directly — see "Fourth pass" above) |
 | `host-client-capabilities.csv` `tailscale_capable` / `icloud_relay` / `native_streaming` (hosts) | `HOSTS[key]` |
 | `host-client-capabilities.csv` `can_stream` / `apple_icloud` / `lan_only` (clients) | `CLIENTS[key]` |
 

@@ -5,7 +5,6 @@ import SEO from '../components/SEO';
 import StickyDownloadBar from '../components/StickyDownloadBar';
 import DevicePills from '../components/DevicePills';
 import ReaderFamilyGuide from '../components/ReaderFamilyGuide';
-import ReaderComparisonTable from '../components/ReaderComparisonTable';
 
 const appStoreUrl = 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093';
 const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ';
@@ -587,8 +586,6 @@ const ComicReader = () => {
       </section>
 
       <VisionProSection />
-
-      <ReaderComparisonTable lang={lang} />
 
       <ComparisonTable />
 
