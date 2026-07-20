@@ -39,8 +39,8 @@ const Footer = () => {
                             <li><Link to={`/${lang || 'en'}/webapp/`} className="text-ink transition hover:text-brand">{t('redesign.footer.webTool')}</Link></li>
                             <li><Link to={`/${lang || 'en'}/grepreader/`} className="text-ink transition hover:text-brand">GrepTag Reader</Link></li>
                             <li><Link to={`/${lang || 'en'}/archive/`} className="text-ink transition hover:text-brand">Comic Duplicate Scanner</Link></li>
-                            <li><Link to={`/${lang || 'en'}/smartdecrypt/`} className="text-ink transition hover:text-brand">SmartDecrypt PDF ZIP</Link></li>
-                            <li><Link to={`/${lang || 'en'}/contentcue/`} className="text-ink transition hover:text-brand">ContentCue</Link></li>
+                            <li><a href="https://www.mlogictech.com/products#smartdecrypt" target="_blank" rel="noopener" className="text-ink transition hover:text-brand">SmartDecrypt PDF ZIP</a></li>
+                            <li><a href="https://www.mlogictech.com/products#contentcue" target="_blank" rel="noopener" className="text-ink transition hover:text-brand">ContentCue</a></li>
                         </ul>
                     </div>
 

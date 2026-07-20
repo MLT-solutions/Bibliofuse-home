@@ -233,7 +233,7 @@ function ProductFamily({ lang }) {
       desc: t('redesign.productFamily.products.smartdecrypt.desc'),
       bullets: [t('redesign.productFamily.products.smartdecrypt.bullet1'), t('redesign.productFamily.products.smartdecrypt.bullet2'), t('redesign.productFamily.products.smartdecrypt.bullet3'), t('redesign.productFamily.products.smartdecrypt.bullet4')],
       cta: t('redesign.productFamily.learnMore'),
-      to: `/${lang}/smartdecrypt/`,
+      href: 'https://www.mlogictech.com/products#smartdecrypt',
       secondary: t('redesign.productFamily.products.smartdecrypt.secondary'),
       secondaryHref: smartDecryptMsUrl,
       accent: 'violet',
@@ -246,7 +246,7 @@ function ProductFamily({ lang }) {
       desc: t('redesign.productFamily.products.contentcue.desc'),
       bullets: [t('redesign.productFamily.products.contentcue.bullet1'), t('redesign.productFamily.products.contentcue.bullet2'), t('redesign.productFamily.products.contentcue.bullet3'), t('redesign.productFamily.products.contentcue.bullet4')],
       cta: t('redesign.productFamily.learnMore'),
-      to: `/${lang}/contentcue/`,
+      href: 'https://www.mlogictech.com/products#contentcue',
       accent: 'green',
     },
     {
@@ -1140,9 +1140,9 @@ function SmartDecryptSection() {
               <span className="font-semibold">{t('redesign.decryptSection.langNote')}</span>
             </p>
 
-            <Link to={`/${lang}/smartdecrypt/`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-violet-300 hover:text-violet-100 transition-colors">
+            <a href="https://www.mlogictech.com/products#smartdecrypt" target="_blank" rel="noopener" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-violet-300 hover:text-violet-100 transition-colors">
               {t('redesign.decryptSection.learnMore', 'Learn more about SmartDecrypt')} →
-            </Link>
+            </a>
           </div>
 
           <div className="relative">
@@ -1252,9 +1252,9 @@ function ContentCueSection() {
               {t('redesign.contentcueSection.platformNote')}
             </p>
 
-            <Link to={`/${lang}/contentcue/`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-green-600 hover:text-green-700 transition-colors">
+            <a href="https://www.mlogictech.com/products#contentcue" target="_blank" rel="noopener" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-green-600 hover:text-green-700 transition-colors">
               {t('redesign.contentcueSection.learnMore', 'Learn more about ContentCue')} →
-            </Link>
+            </a>
           </div>
 
           <div className="relative">

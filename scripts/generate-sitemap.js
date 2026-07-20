@@ -18,8 +18,9 @@ const ROUTES = [
     { path: '/webapp/', priority: '0.8', changefreq: 'monthly' },
     { path: '/grepreader/', priority: '0.8', changefreq: 'monthly' },
     { path: '/archive/', priority: '0.8', changefreq: 'monthly' },
-    { path: '/smartdecrypt/', priority: '0.8', changefreq: 'monthly' },
-    { path: '/contentcue/', priority: '0.8', changefreq: 'monthly' },
+    // /smartdecrypt/ and /contentcue/ retired 2026-07-20 — full pages moved to
+    // mlogictech.com (0 clicks/90 days here; see docs/gsc-cloudflare-findings.md).
+    // Left out of the sitemap; the routes still exist as noindexed "moved" stubs.
     { path: '/about/', priority: '0.6', changefreq: 'monthly' },
     { path: '/privacy/', priority: '0.4', changefreq: 'yearly' },
     { path: '/blog/', priority: '0.7', changefreq: 'weekly' },

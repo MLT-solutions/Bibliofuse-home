@@ -42,8 +42,8 @@ const Navigation = () => {
         { name: 'BiblioFuse Web Tool', sub: t('redesign.tools.webSub'), path: '/webapp/', logo: '/image/webtool-logo.png' },
         { name: 'GrepTag Reader', sub: t('redesign.tools.grepSub'), path: '/grepreader/', logo: '/image/grepreader-logo.png', logoZoom: 1.3 },
         { name: 'Comic Duplicate Scanner', sub: t('redesign.tools.archiveSub'), path: '/archive/', logo: '/image/archive-logo.png', logoZoom: 1.15 },
-        { name: 'SmartDecrypt PDF ZIP', sub: t('redesign.tools.smartSub'), path: '/smartdecrypt/', logo: '/image/smartdecrypt-logo.png' },
-        { name: 'ContentCue', sub: t('redesign.tools.contentcueSub'), path: '/contentcue/', logo: '/image/contentcue-logo.png', logoZoom: 1.15 },
+        { name: 'SmartDecrypt PDF ZIP', sub: t('redesign.tools.smartSub'), href: 'https://www.mlogictech.com/products#smartdecrypt', logo: '/image/smartdecrypt-logo.png' },
+        { name: 'ContentCue', sub: t('redesign.tools.contentcueSub'), href: 'https://www.mlogictech.com/products#contentcue', logo: '/image/contentcue-logo.png', logoZoom: 1.15 },
     ];
 
     const toggleLangMenu = () => setIsLangOpen(!isLangOpen);
@@ -143,25 +143,31 @@ const Navigation = () => {
                                     {isToolsOpen && (
                                         <div className="absolute right-0 top-full w-[360px] pt-2">
                                             <div className="rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl">
-                                                {tools.map((tool) => (
-                                                    <Link
-                                                        key={tool.name}
-                                                        to={`/${lang}${tool.path}${tool.hash || ''}`}
-                                                        onClick={() => setIsToolsOpen(false)}
-                                                        className="group flex items-start gap-3 rounded-xl p-3 transition hover:bg-slate-50"
-                                                    >
-                                                        <span className="h-9 w-9 shrink-0 rounded-lg overflow-hidden shadow-sm block flex-none">
-                                                            <img src={tool.logo} alt={tool.name} className="h-full w-full object-cover" style={tool.logoZoom ? { transform: `scale(${tool.logoZoom})`, transformOrigin: 'center' } : undefined} />
-                                                        </span>
-                                                        <span className="min-w-0 flex-1">
-                                                            <span className="block text-sm font-bold leading-tight text-slate-950">{tool.name}</span>
-                                                            <span className="mt-0.5 block text-xs text-slate-500">{tool.sub}</span>
-                                                        </span>
-                                                        <svg className="mt-1.5 opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-                                                            <path d="m9 6 6 6-6 6" />
-                                                        </svg>
-                                                    </Link>
-                                                ))}
+                                                {tools.map((tool) => {
+                                                    const ToolTag = tool.href ? 'a' : Link;
+                                                    const toolProps = tool.href
+                                                        ? { href: tool.href, target: '_blank', rel: 'noopener' }
+                                                        : { to: `/${lang}${tool.path}${tool.hash || ''}` };
+                                                    return (
+                                                        <ToolTag
+                                                            key={tool.name}
+                                                            {...toolProps}
+                                                            onClick={() => setIsToolsOpen(false)}
+                                                            className="group flex items-start gap-3 rounded-xl p-3 transition hover:bg-slate-50"
+                                                        >
+                                                            <span className="h-9 w-9 shrink-0 rounded-lg overflow-hidden shadow-sm block flex-none">
+                                                                <img src={tool.logo} alt={tool.name} className="h-full w-full object-cover" style={tool.logoZoom ? { transform: `scale(${tool.logoZoom})`, transformOrigin: 'center' } : undefined} />
+                                                            </span>
+                                                            <span className="min-w-0 flex-1">
+                                                                <span className="block text-sm font-bold leading-tight text-slate-950">{tool.name}</span>
+                                                                <span className="mt-0.5 block text-xs text-slate-500">{tool.sub}</span>
+                                                            </span>
+                                                            <svg className="mt-1.5 opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                                                                <path d="m9 6 6 6-6 6" />
+                                                            </svg>
+                                                        </ToolTag>
+                                                    );
+                                                })}
                                             </div>
                                         </div>
                                     )}
