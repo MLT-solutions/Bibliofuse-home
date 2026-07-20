@@ -29,10 +29,13 @@ const Navigation = () => {
     const langMenuRef = useRef(null);
     const toolsMenuRef = useRef(null);
 
+    // 'Web App' demoted from a top-level tab to the Tools dropdown (still
+    // below, id 'webapp' entry) — see the 2026-07-20 portfolio review §06:
+    // no GSC signal justified its own nav-level destination, and it's now
+    // also cross-linked from the comicreader picker as a no-install option.
     const tabs = [
         { id: 'home', label: t('nav.home'), path: '/' },
         { id: 'reader', label: t('nav.reader'), path: '/comicreader/' },
-        { id: 'webapp', label: t('nav.webapp'), path: '/webapp/' },
         { id: 'about', label: t('nav.about'), path: '/about/' },
         { id: 'blog', label: t('nav.blog'), path: '/blog/' },
         { id: 'changelog', label: t('nav.changelog'), path: '/changelog/' },
