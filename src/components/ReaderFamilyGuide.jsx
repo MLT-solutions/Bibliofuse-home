@@ -1,0 +1,237 @@
+import React, { useMemo, useState } from 'react';
+
+// Added 2026-07-20 — the reader family grew to 9 surfaces across 3 streaming
+// modes (iOS/iPadOS, macOS, Windows, visionOS, tvOS, Android phone, Docker,
+// Synology SPK, Android TV) and the old 3-column apple/pc/android table
+// (ComparisonTable, above) couldn't carry that anymore. Client-side only,
+// deliberately not a new indexed route — see docs/site-showcase-audit.md and
+// the 2026-07-20 portfolio review (this site can't afford new indexed surface
+// while ranking position on existing pages is still suppressed).
+//
+// English-only by design, unlike the rest of this page: translating a
+// decision tree into 11 locales isn't worth it while low-signal-locale
+// translation work is paused (see src/i18n.js INDEXED_LANGUAGES). Revisit if
+// this becomes a permanent fixture.
+//
+// Host/client connection-mode data below is a first pass reverse-engineered
+// from product notes, not verified against the apps themselves — check it
+// before treating the picker's output as authoritative.
+
+const MODE_INFO = {
+  'icloud-ts': {
+    label: 'iCloud + Tailscale (automatic)',
+    detail: 'Keep Tailscale on. The app finds your library on its own, at home or away — nothing to type in.',
+  },
+  'manual-ts': {
+    label: 'Manual Tailscale',
+    detail: "For devices without iCloud. Enter the host's Tailscale address once in Settings.",
+  },
+  'local-wifi': {
+    label: 'Local Wi-Fi',
+    detail: 'No iCloud or Tailscale needed. Only works while both devices share the same Wi-Fi network.',
+  },
+};
+
+const HOSTS = {
+  iphone_ipad: { label: 'iPhone / iPad', tailscaleCapable: true },
+  mac: { label: 'Mac', tailscaleCapable: true },
+  windows: { label: 'Windows PC', tailscaleCapable: true },
+  synology: { label: 'Synology NAS (SPK)', tailscaleCapable: true, note: 'Zero-config folder picker — points at your existing library, nothing duplicated.' },
+  docker: { label: 'Docker / other NAS', tailscaleCapable: false, note: 'Local Wi-Fi only for now — away-from-home streaming for Docker hosts is on the roadmap.' },
+};
+
+const CLIENTS = {
+  iphone_ipad: { label: 'iPhone / iPad', canStream: true, isAppleICloud: true },
+  mac: { label: 'Mac', canStream: true, isAppleICloud: true },
+  windows: { label: 'Windows PC', canStream: true, isAppleICloud: false },
+  visionpro: { label: 'Apple Vision Pro', canStream: true, isAppleICloud: true },
+  appletv: { label: 'Apple TV', canStream: true, isAppleICloud: true, note: 'Companion app — streams only, no local library on the box itself.' },
+  androidphone: { label: 'Android phone', canStream: false, note: 'Streaming client is coming soon — standalone reading only today.' },
+  androidtv: { label: 'Android TV', canStream: false, note: 'Coming soon.' },
+};
+
+const COVERAGE_ROWS = [
+  { platform: 'iPhone / iPad', role: 'Standalone · Host · Client', modes: 'All 3 modes', status: 'live' },
+  { platform: 'macOS', role: 'Standalone · Host · Client', modes: 'All 3 modes', status: 'live' },
+  { platform: 'Windows PC', role: 'Standalone · Host · Client', modes: 'Local Wi-Fi · Manual Tailscale', status: 'live' },
+  { platform: 'visionOS', role: 'Client only', modes: 'iCloud + Tailscale · Local Wi-Fi', status: 'live' },
+  { platform: 'tvOS (Apple TV)', role: 'Companion / client only', modes: 'iCloud + Tailscale · Local Wi-Fi', status: 'new' },
+  { platform: 'Android phone', role: 'Standalone only', modes: '—', status: 'soon', statusLabel: 'Streaming coming soon' },
+  { platform: 'Docker (NAS)', role: 'Host only, web UI', modes: 'Local Wi-Fi only', status: 'new' },
+  { platform: 'Synology NAS (SPK)', role: 'Host only, web UI', modes: 'Local Wi-Fi · Manual Tailscale', status: 'new' },
+  { platform: 'Android TV', role: 'Client, coming soon', modes: '—', status: 'soon', statusLabel: 'Coming soon' },
+];
+
+function StatusPill({ status, label }) {
+  const styles = {
+    live: 'bg-emerald-50 text-emerald-700',
+    new: 'bg-blue-50 text-blue-700',
+    soon: 'bg-slate-100 text-slate-500',
+  };
+  const text = label || (status === 'live' ? 'Live' : status === 'new' ? 'New' : 'Coming soon');
+  return <span className={`inline-flex rounded-full px-2 py-0.5 text-[10px] font-black uppercase tracking-wider ${styles[status]}`}>{text}</span>;
+}
+
+function CoverageTable() {
+  return (
+    <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[640px] border-collapse">
+          <thead>
+            <tr className="bg-slate-900 text-white">
+              <th className="px-5 py-3.5 text-left text-xs font-bold uppercase tracking-wider">Platform</th>
+              <th className="px-5 py-3.5 text-left text-xs font-bold uppercase tracking-wider">Role</th>
+              <th className="px-5 py-3.5 text-left text-xs font-bold uppercase tracking-wider">Connection modes</th>
+              <th className="px-5 py-3.5 text-left text-xs font-bold uppercase tracking-wider">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {COVERAGE_ROWS.map((row, i) => (
+              <tr key={row.platform} className={`border-t border-slate-100 ${i % 2 === 1 ? 'bg-slate-50' : 'bg-white'}`}>
+                <td className="px-5 py-3.5 text-sm font-bold text-slate-950">{row.platform}</td>
+                <td className="px-5 py-3.5 text-sm text-slate-700">{row.role}</td>
+                <td className="px-5 py-3.5 text-sm text-slate-600">{row.modes}</td>
+                <td className="px-5 py-3.5"><StatusPill status={row.status} label={row.statusLabel} /></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function OptionGroup({ label, options, value, onChange }) {
+  return (
+    <div>
+      <div className="mb-2.5 text-xs font-bold uppercase tracking-wider text-slate-500">{label}</div>
+      <div className="flex flex-wrap gap-2">
+        {Object.entries(options).map(([key, opt]) => (
+          <button
+            key={key}
+            type="button"
+            onClick={() => onChange(key)}
+            className={`rounded-xl border px-3.5 py-2 text-sm font-semibold transition ${
+              value === key
+                ? 'border-blue-600 bg-blue-600 text-white shadow-sm'
+                : 'border-slate-200 bg-white text-slate-700 hover:border-blue-300 hover:bg-blue-50/50'
+            }`}
+          >
+            {opt.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Recommendation({ hostKey, clientKey, wantsAway }) {
+  const host = HOSTS[hostKey];
+  const client = CLIENTS[clientKey];
+
+  if (!client.canStream) {
+    return (
+      <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+        <div className="mb-1 text-xs font-bold uppercase tracking-wider text-slate-500">Given your combination</div>
+        <p className="text-sm leading-relaxed text-slate-700">
+          <strong>{client.label}</strong> can&rsquo;t stream from a host yet — {client.note} Use the BiblioFuse app on {client.label} for local, standalone reading in the meantime.
+        </p>
+      </div>
+    );
+  }
+
+  const wantsRemote = wantsAway && host.tailscaleCapable;
+  const modeKey = !wantsRemote ? 'local-wifi' : client.isAppleICloud ? 'icloud-ts' : 'manual-ts';
+  const mode = MODE_INFO[modeKey];
+  const cappedToLocal = wantsAway && !host.tailscaleCapable;
+
+  return (
+    <div className="rounded-2xl border border-blue-200 bg-blue-50/40 p-6">
+      <div className="mb-1 text-xs font-bold uppercase tracking-wider text-blue-700">Given your combination</div>
+      <ul className="mt-3 space-y-3 text-sm text-slate-800">
+        <li className="flex gap-2.5">
+          <span className="mt-0.5 font-black text-blue-600">1.</span>
+          <span>Run the host on <strong>{host.label}</strong>.{host.note && <span className="block text-slate-500">{host.note}</span>}</span>
+        </li>
+        <li className="flex gap-2.5">
+          <span className="mt-0.5 font-black text-blue-600">2.</span>
+          <span>Read on <strong>{client.label}</strong>.{client.note && <span className="block text-slate-500">{client.note}</span>}</span>
+        </li>
+        <li className="flex gap-2.5">
+          <span className="mt-0.5 font-black text-blue-600">3.</span>
+          <span>
+            In the {client.label} app&rsquo;s connection settings, choose <strong>{mode.label}</strong>.
+            <span className="block text-slate-500">{mode.detail}</span>
+          </span>
+        </li>
+      </ul>
+      {cappedToLocal && (
+        <p className="mt-4 rounded-lg bg-amber-50 px-3.5 py-2.5 text-xs font-semibold text-amber-800">
+          Note: {host.label} doesn&rsquo;t support away-from-home streaming yet, so this pairing is Local Wi-Fi only for now, even though you asked for both.
+        </p>
+      )}
+    </div>
+  );
+}
+
+function ReaderFamilyGuide() {
+  const [hostKey, setHostKey] = useState('iphone_ipad');
+  const [clientKey, setClientKey] = useState('iphone_ipad');
+  const [wantsAway, setWantsAway] = useState(true);
+
+  const recommendation = useMemo(
+    () => <Recommendation hostKey={hostKey} clientKey={clientKey} wantsAway={wantsAway} />,
+    [hostKey, clientKey, wantsAway]
+  );
+
+  return (
+    <section id="setup-guide" className="bg-white py-20 sm:py-24">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">Nine surfaces, one setup</div>
+          <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-black leading-tight tracking-tight text-slate-950">
+            Find your setup
+          </h2>
+          <p className="mt-4 text-slate-600">
+            The family now spans iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker, and Synology. Pick what hosts your books and what you want to read on, and see exactly which app and connection mode to use.
+          </p>
+        </div>
+
+        <div className="mb-14">
+          <CoverageTable />
+        </div>
+
+        <div className="rounded-3xl border border-slate-200 bg-[#f5f8ff] p-6 sm:p-8">
+          <div className="grid gap-6 sm:grid-cols-2">
+            <OptionGroup label="What hosts your library?" options={HOSTS} value={hostKey} onChange={setHostKey} />
+            <OptionGroup label="What do you want to read on?" options={CLIENTS} value={clientKey} onChange={setClientKey} />
+          </div>
+
+          <div className="mt-6">
+            <div className="mb-2.5 text-xs font-bold uppercase tracking-wider text-slate-500">Where will you read?</div>
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => setWantsAway(false)}
+                className={`rounded-xl border px-3.5 py-2 text-sm font-semibold transition ${!wantsAway ? 'border-blue-600 bg-blue-600 text-white shadow-sm' : 'border-slate-200 bg-white text-slate-700 hover:border-blue-300 hover:bg-blue-50/50'}`}
+              >
+                Only at home
+              </button>
+              <button
+                type="button"
+                onClick={() => setWantsAway(true)}
+                className={`rounded-xl border px-3.5 py-2 text-sm font-semibold transition ${wantsAway ? 'border-blue-600 bg-blue-600 text-white shadow-sm' : 'border-slate-200 bg-white text-slate-700 hover:border-blue-300 hover:bg-blue-50/50'}`}
+              >
+                At home and away
+              </button>
+            </div>
+          </div>
+
+          <div className="mt-7">{recommendation}</div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default ReaderFamilyGuide;

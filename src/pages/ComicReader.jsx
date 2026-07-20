@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import StickyDownloadBar from '../components/StickyDownloadBar';
 import DevicePills from '../components/DevicePills';
+import ReaderFamilyGuide from '../components/ReaderFamilyGuide';
 
 const appStoreUrl = 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093';
 const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ';
@@ -602,6 +603,8 @@ const ComicReader = () => {
       <ReaderChooser lang={lang} />
 
       <ComparisonTable />
+
+      <ReaderFamilyGuide />
 
       <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
