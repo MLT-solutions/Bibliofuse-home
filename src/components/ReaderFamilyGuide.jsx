@@ -52,12 +52,16 @@ const HOSTS = {
     tailscaleCapable: true,
     note: 'Zero-config folder picker — points at your existing library, nothing duplicated.',
     nativeStreaming: 'pending',
+    appLink: 'https://github.com/MLT-solutions/bibliofuse-nas-distribution/releases',
+    appLinkLabel: 'View Synology releases →',
   },
   docker: {
     label: 'Docker / other NAS',
     tailscaleCapable: false,
     note: 'Free self-hosted server and browser reader — no subscription needed to host or read in the browser.',
     nativeStreaming: 'unsupported',
+    appLink: 'https://github.com/MLT-solutions/bibliofuse-nas-distribution',
+    appLinkLabel: 'Get BiblioFuse NAS (Docker) →',
   },
 };
 
@@ -174,6 +178,11 @@ function Recommendation({ hostKey, clientKey, wantsAway }) {
           )}
           {' '}Host your library on {host.label} today and read it in its free built-in browser reader instead — that part works now, on any device, no app required.
         </p>
+        {host.appLink && (
+          <a href={host.appLink} target="_blank" rel="noopener" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-amber-800 hover:text-amber-950">
+            {host.appLinkLabel}
+          </a>
+        )}
       </div>
     );
   }
