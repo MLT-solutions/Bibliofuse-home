@@ -2,15 +2,20 @@
 
 Draft compilation for the `/comicreader/` platform picker (`src/components/ReaderFamilyGuide.jsx`),
 built 2026-07-20 by reading the actual product source repos rather than inferring from marketing
-copy, then reviewed line-by-line by the product owner the same day. **Status: reviewed and
-applied** — the component now matches these CSVs exactly. Keep using the same workflow for future
-corrections: edit the CSV, note what changed, and it gets applied back to the component as a diff.
+copy, then reviewed line-by-line by the product owner the same day. **Status: role/modes/status
+columns reviewed and applied to the component.** `content_source_support` (added in a later pass)
+is reviewed in the CSVs but **not yet reflected in `ReaderFamilyGuide.jsx`** — the component has no
+"where do your files come from" dimension yet; it's data-only until that's built. Keep using the
+same workflow for future corrections: edit the CSV, note what changed, and it gets applied back to
+the component as a diff.
 
 ## Files
 
-- `platform-coverage.csv` — the 9-row table shown on the page (role, connection modes, status).
+- `platform-coverage.csv` — the 9-row table shown on the page (role, content source support,
+  streaming connection modes, status).
 - `host-client-capabilities.csv` — the underlying host/client capability data that drives the
-  picker's recommendation logic (`HOSTS`/`CLIENTS`/`MODE_INFO` in `ReaderFamilyGuide.jsx`).
+  picker's recommendation logic (`HOSTS`/`CLIENTS`/`MODE_INFO` in `ReaderFamilyGuide.jsx`), plus
+  the same `content_source_support` column for cross-checking against `platform-coverage.csv`.
 
 Both have a `confidence` column and a `source` column citing where the claim comes from:
 `verified` = confirmed directly by the product owner (2026-07-20 review, second pass); `high` =
