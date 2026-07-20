@@ -7,7 +7,10 @@ const __dirname = dirname(__filename);
 
 // Configuration
 const BASE_URL = 'https://bibliofuse.com';
-const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
+// Mirrors src/i18n.js INDEXED_LANGUAGES — keep in sync (see docs/gsc-cloudflare-findings.md
+// 2026-07-20 reaudit). Locales outside this set still render for visitors but are kept out
+// of the sitemap; SEO.jsx also noindexes them by default.
+const INDEXED_LANGUAGES = ['en', 'es', 'fr', 'ja'];
 const ARTICLE_SLUGS = ['reading-ebooks-offline-iphone', 'convert-cbr-to-cbz-online', 'organize-ebooks-by-content-not-metadata', 'find-duplicate-comics-different-names', 'open-bank-statement-pdf-iphone', 'contentcue-11-languages', 'archive-duplicate-scanner-11-languages', 'smartdecrypt-11-languages', 'airdrop-books-to-iphone', 'change-reading-direction-comics', 'bibliofuse-ipad-reading-tips', 'read-pdf-comics-iphone', 'read-webtoons-on-iphone', 'convert-zip-to-cbz-online', 'pc-home-library-streaming-iphone', 'sideload-comics-iphone-without-itunes', 'ebook-formats-long-term-library', 'backup-comic-library-mac', 'double-page-spreads-comics', 'extract-images-from-cbz', 'comic-bookmarks-iphone', 'organize-manga-series-iphone', 'epub-to-pdf-online', 'night-reading-comics-iphone', 'cbz-to-pdf-online', 'tailscale-remote-library-access', 'webp-vs-png-for-comics', 'reading-progress-sync-no-cloud-account', 'cbz-cbr-rar-zip-which-format-best', 'smartdecrypt-language-update', 'digital-comic-library-management-guide', 'build-perfect-digital-manga-collection', 'best-duplicate-file-finder-mac', 'find-duplicate-photos-mac', 'perceptual-hashing-duplicate-detection', 'clean-up-duplicate-manga-library', 'find-duplicate-comics-cbz-mac', 'pdf-zip-password-manager-profiles', 'batch-decrypt-password-protected-files', 'decrypt-password-protected-cbz-zip', 'read-manga-online-iphone', 'unlock-password-protected-pdf-iphone', 'privacy-first-ebook-tools', 'merge-epub-files-online', 'compress-epub-online', 'archive-duplicate-scanner-language-update', 'merge-cbz-files-online', 'convert-pdf-to-cbz-online', 'bibliofuse-tools-tab-guide', 'epub-reader-iphone-no-drm', 'ocr-comics-extract-text-iphone', 'mac-home-library-streaming-iphone', 'icloud-sync-reading-progress', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'wifi-transfer-comics-to-iphone', 'cbz-vs-cbr-vs-epub-formats-explained', 'read-cbz-cbr-on-iphone', 'manage-your-bibliofuse-library', 'reduce-comic-ebook-file-size', 'getting-started-with-bibliofuse'];
 const ROUTES = [
     { path: '/', priority: '1.0', changefreq: 'weekly' },
@@ -46,13 +49,14 @@ function generateSitemap() {
 
     // Generate URL entries for each route in each language
     ROUTES.forEach(route => {
-        SUPPORTED_LANGUAGES.forEach(lang => {
+        INDEXED_LANGUAGES.forEach(lang => {
             if (lang !== 'en' && NOINDEX_NON_EN_ROUTES.has(route.path)) return;
 
             const url = `${BASE_URL}/${lang}${route.path}`;
 
-            // Generate alternate links for all other languages
-            const alternates = SUPPORTED_LANGUAGES.map(altLang =>
+            // Alternate links only to other indexed locales — pointing hreflang at a
+            // noindexed page sends a mixed signal for no benefit.
+            const alternates = INDEXED_LANGUAGES.map(altLang =>
                 `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${BASE_URL}/${altLang}${route.path}" />`
             ).join('\n');
 
@@ -79,7 +83,7 @@ ${urls.join('\n')}
     const outputPath = join(__dirname, '..', 'dist', 'sitemap.xml');
     writeFileSync(outputPath, sitemap, 'utf-8');
     console.log(`✅ Sitemap generated successfully at: ${outputPath}`);
-    console.log(`📊 Total URLs: ${urls.length} (${ROUTES.length} routes × ${SUPPORTED_LANGUAGES.length} languages)`);
+    console.log(`📊 Total URLs: ${urls.length} (${ROUTES.length} routes × up to ${INDEXED_LANGUAGES.length} indexed languages, minus noindex exclusions)`);
 }
 
 // Run the script

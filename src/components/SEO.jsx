@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { useParams, useLocation } from 'react-router-dom';
-import { SUPPORTED_LANGUAGES } from '../i18n';
+import { INDEXED_LANGUAGES } from '../i18n';
 
 const FALLBACK_OG_IMAGE = '/image/blog/Getting Started with BiblioFuse.jpg';
 const FALLBACK_OG_W = 2816;
@@ -47,13 +47,16 @@ const SEO = ({
     howToSchema,      // pre-built HowTo JSON-LD object
     breadcrumbs,      // [{ name, url }]
     additionalSchemas, // [JSON-LD object] — extra schemas rendered after primary
-    noindex = false,  // true → render <meta name="robots" content="noindex, follow">
+    noindex,          // explicit override; when omitted, defaults by locale (see below)
 }) => {
     const { i18n, t } = useTranslation();
     const { lang } = useParams();
     const location = useLocation();
 
     const currentLang = lang || i18n.language || 'en';
+    // Pages that don't pass `noindex` explicitly fall back to locale-based default:
+    // only INDEXED_LANGUAGES ask Google to index them (2026-07-20, see i18n.js).
+    const resolvedNoindex = noindex !== undefined ? noindex : !INDEXED_LANGUAGES.includes(currentLang);
     const siteName = 'BiblioFuse';
     const fullTitle = `${title} | ${siteName}`;
     const baseUrl = 'https://bibliofuse.com';
@@ -167,11 +170,12 @@ const SEO = ({
             <html lang={currentLang} />
             <title>{fullTitle}</title>
             <meta name="description" content={description} />
-            {noindex && <meta name="robots" content="noindex, follow" />}
+            {resolvedNoindex && <meta name="robots" content="noindex, follow" />}
             <link rel="canonical" href={canonicalUrl} />
 
-            {/* Hreflang */}
-            {SUPPORTED_LANGUAGES.map((langCode) => (
+            {/* Hreflang — only to locales we're asking Google to index; pointing at a
+                noindexed alternate sends a mixed signal for no benefit */}
+            {INDEXED_LANGUAGES.map((langCode) => (
                 <link key={langCode} rel="alternate" hrefLang={langCode} href={`${baseUrl}/${langCode}${alternatePath}`} />
             ))}
             <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/en${alternatePath}`} />

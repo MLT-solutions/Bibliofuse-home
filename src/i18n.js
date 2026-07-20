@@ -17,6 +17,14 @@ import ms from './locales/ms/translation.json';
 // Export supported languages for use in routing and SEO
 export const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
 
+// Locales with real search signal (see docs/gsc-cloudflare-findings.md 2026-07-20 reaudit
+// and the portfolio review it links to). Every route still renders in all 11 languages —
+// this only controls which locale variants ask Google to index them. The rest fall back to
+// browser/Google Translate rather than carrying near-zero-impression duplicate pages.
+// Mirrored (not imported — these run outside the Vite bundle) in scripts/generate-sitemap.js
+// and scripts/generate-static-routes.js; keep the three in sync.
+export const INDEXED_LANGUAGES = ['en', 'es', 'fr', 'ja'];
+
 
 i18n
     .use(LanguageDetector)

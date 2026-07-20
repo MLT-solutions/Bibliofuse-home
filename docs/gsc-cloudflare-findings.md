@@ -1,7 +1,9 @@
 # GSC Impression Drop: Investigation Findings
 
-Date checked: 2026-07-02
-Status: Cloudflare/Googlebot-blocking theory **disproven**. Root cause is very likely a Google content-quality reassessment triggered by a mass, partly-untranslated page expansion on 2026-06-24, compounded by a structural finding that the entire site was invisible to any crawler that doesn't execute JavaScript. Fixes shipped for crawlability: internal trailing-slash cleanup, noindex on non-English sister-app changelog/privacy pages, and build-time prerendering. Reaudit on 2026-07-02 found and locally fixed a small app-link regression plus hardened prerender to fail closed. Impressions recovery not yet confirmed — monitoring.
+Date checked: 2026-07-02. Reaudited: 2026-07-20.
+Status: Cloudflare/Googlebot-blocking theory **disproven**. Root cause is very likely a Google content-quality reassessment triggered by a mass, partly-untranslated page expansion on 2026-06-24, compounded by a structural finding that the entire site was invisible to any crawler that doesn't execute JavaScript. Fixes shipped for crawlability: internal trailing-slash cleanup, noindex on non-English sister-app changelog/privacy pages, and build-time prerendering.
+
+**2026-07-20 reaudit: recovery has NOT happened — do not treat this as resolved.** Daily impressions since 2026-07-08 look like they've partly returned (11–28/day vs. single digits in early July), but this is cosmetic: average position on the pages that used to carry real traffic has collapsed further, not recovered. `/en/blog/epub-reader-iphone-no-drm/` went from 476 impressions @ position 9.3 (Jun 15–24) to 40 impressions @ position 44.6 (Jul 10–19). `/en/blog/unlock-password-protected-pdf-iphone/` went from 336 impressions @ position 8.3 to 1 impression @ position 26. The only page that improved position is the bare homepage (9.3 → 1.1), which reads as Google narrowing the domain to branded queries, not a quality signal returning. See `docs/site-showcase-audit.md` and the 2026-07-20 portfolio review for the full current-state analysis and next steps (reduce locale/page volume rather than assume the June fixes were sufficient).
 
 ## Summary
 
@@ -146,9 +148,9 @@ Considered as Option B and still not recommended for this problem specifically:
 
 ## Recommended Next Steps
 
-1. **Do not expect any of the fixes above to single-handedly recover impressions on their own timeline** — the redirect fix, noindex change, and prerendering are all hygiene/structural corrections, not a direct fix for whatever caused Google's initial quality reassessment of the site. Prerendering is the highest-leverage one of the three (it affects all 869 pages, not just the ones added Jun 24), but its effect plays out over Google's next crawl/render cycle for this site, not instantly.
-2. Watch the daily impressions trend for another 5–7 days. GSC data this recent can still be partial, and algorithmic reassessments can self-correct without any single "fix."
-3. If impressions haven't started recovering by ~Jul 9, consider whether the remaining templated content (the changelog/privacy pages themselves, or the Jun 27–29 sitewide template pushes) needs deeper content differentiation rather than just noindex on the locale variants.
+1. ~~Do not expect any of the fixes above to single-handedly recover impressions on their own timeline~~ — **confirmed by the 2026-07-20 reaudit**: they didn't. Structural crawlability fixes were necessary but not sufficient.
+2. ~~Watch the daily impressions trend for another 5–7 days~~ — done; no real recovery by Jul 20 (18 days out).
+3. **Triggered**: impressions have not recovered by Jul 9 as flagged. The leading hypothesis now is that page/locale *volume* itself is still too high relative to the site's current trust budget — see the 2026-07-20 portfolio review for the data (61 articles × 11 locales ≈ 670 of 800 sitemap URLs, 171 clicks/90 days sitewide) and the recommended direction: freeze new translated content, prune the low-signal locale tail (noindex + drop from sitemap, same mechanism as the changelog/privacy fix below), and stop growing indexed surface until position recovers on pages that already used to rank.
 4. Before the next deploy, confirm `npm run build` ends with `Prerendered 869/869 pages`. The build should now fail instead of publishing incomplete prerender output.
 5. Before deploying SEO/link changes, run `rg 'to=\{?\x60//|to="//|href=\{?\x60//|href="//' src -S` and confirm no internal app route was accidentally converted into a protocol-relative URL.
 6. Deploy the local reaudit fixes so production no longer contains the protocol-relative sister-app bottom links.

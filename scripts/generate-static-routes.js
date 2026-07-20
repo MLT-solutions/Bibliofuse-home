@@ -6,6 +6,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
+// Mirrors src/i18n.js INDEXED_LANGUAGES — keep in sync (see docs/gsc-cloudflare-findings.md
+// 2026-07-20 reaudit). Routes still render for visitors in every locale below; only these
+// four ask Google to index them.
+const INDEXED_LANGUAGES = ['en', 'es', 'fr', 'ja'];
 
 // Sister-app changelog/privacy pages: non-English locale variants are noindex'd
 // (see docs/gsc-cloudflare-findings.md). Injected directly into the static HTML
@@ -39,7 +43,7 @@ for (const lang of SUPPORTED_LANGUAGES) {
         const routeDir = route === '/' ? join(distDir, lang) : join(distDir, lang, route.slice(1));
         mkdirSync(routeDir, { recursive: true });
         const outFile = join(routeDir, 'index.html');
-        if (NOINDEX_ALL_LOCALES_ROUTES.has(route) || (lang !== 'en' && NOINDEX_NON_EN_ROUTES.has(route))) {
+        if (NOINDEX_ALL_LOCALES_ROUTES.has(route) || (lang !== 'en' && NOINDEX_NON_EN_ROUTES.has(route)) || !INDEXED_LANGUAGES.includes(lang)) {
             writeFileSync(outFile, noindexHtml, 'utf-8');
             noindexed += 1;
         } else {
