@@ -138,6 +138,8 @@ function Hero({ lang }) {
             <MicrosoftStoreImageBadge href={bibliofusePcUrl} />
           </div>
 
+          <DevicePills devices={['iphone', 'ipad', 'mac', 'visionpro', 'appletv', 'android', 'windows']} tone="light" align="start" className="mt-5" />
+
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-slate-600">
             {signals.map((item) => (
               <span key={item} className="flex items-center gap-1.5">
@@ -146,6 +148,11 @@ function Hero({ lang }) {
               </span>
             ))}
           </div>
+          {/* Reuses grepTagPage's language-list string rather than adding a new
+              translation key across 11 locale files -- the text is generic
+              ("App UI: English · Spanish · ...") and already identically
+              duplicated under 7 other key names in this codebase. */}
+          <p className="mt-3 text-xs text-slate-500">{t('redesign.grepTagPage.languages')}</p>
 
           <div className="mt-7 flex max-w-full items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50/85 px-4 py-3 text-left sm:max-w-xl">
             <svg className="mt-0.5 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="#d97706"><path d="M13 14h-2v-4h2m0 8h-2v-2h2M1 21h22L12 2 1 21z" /></svg>
