@@ -238,7 +238,14 @@ function Recommendation({ hostKey, clientKey, wantsAway }) {
       <ul className="mt-3 space-y-3 text-sm text-slate-800">
         <li className="flex gap-2.5">
           <span className="mt-0.5 font-black text-blue-600">1.</span>
-          <span>Run the host on <strong>{host.label}</strong>.{host.note && <span className="block text-slate-500">{host.note}</span>}</span>
+          <span>
+            Run the host on <strong>{host.label}</strong>.{host.note && <span className="block text-slate-500">{host.note}</span>}
+            {host.appLink && (
+              <a href={host.appLink} target="_blank" rel="noopener" className="mt-1.5 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 hover:text-blue-900">
+                {host.appLinkLabel}
+              </a>
+            )}
+          </span>
         </li>
         <li className="flex gap-2.5">
           <span className="mt-0.5 font-black text-blue-600">2.</span>
