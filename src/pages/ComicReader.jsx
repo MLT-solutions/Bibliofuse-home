@@ -10,7 +10,45 @@ import ReaderComparisonTable from '../components/ReaderComparisonTable';
 const appStoreUrl = 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093';
 const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ';
 const bibliofusePcUrl = 'https://apps.microsoft.com/store/detail/9N77MZ509ML2';
+// Mirrors HOSTS.docker/synology.appLink in ReaderFamilyGuide.jsx — keep in sync.
+const dockerUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution';
+const synologyUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution/releases';
 const imageBase = '/image/offline-apps/bibliofuse';
+
+function HostBadge({ type, href }) {
+  const label = type === 'docker' ? 'Docker' : 'Synology';
+  const sub = type === 'docker' ? 'Self-host free' : 'Package Center';
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex h-12 items-center gap-2.5 rounded-xl border border-slate-300 bg-white px-4 text-left transition hover:-translate-y-0.5 hover:border-slate-400"
+    >
+      <span className="grid h-7 w-7 flex-shrink-0 place-items-center rounded-lg bg-slate-100 text-slate-600">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          {type === 'docker' ? (
+            <>
+              <rect x="3" y="3" width="7.5" height="7.5" rx="1.2" />
+              <rect x="13.5" y="3" width="7.5" height="7.5" rx="1.2" />
+              <rect x="3" y="13.5" width="7.5" height="7.5" rx="1.2" />
+              <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.2" />
+            </>
+          ) : (
+            <>
+              <rect x="5" y="2.5" width="14" height="19" rx="1.8" />
+              <path d="M8 7h8M8 12h8M8 17h8" />
+            </>
+          )}
+        </svg>
+      </span>
+      <span className="leading-tight">
+        <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">{sub}</span>
+        <span className="block text-sm font-bold text-slate-900">{label}</span>
+      </span>
+    </a>
+  );
+}
 
 function StoreBadge({ type, href, size = 'lg' }) {
   const sizes = size === 'sm' ? 'h-10' : 'h-12';
@@ -469,7 +507,14 @@ const ComicReader = () => {
               <StoreBadge type="play" href={playStoreUrl} />
               <StoreBadge type="microsoft" href={bibliofusePcUrl} />
             </div>
-            <DevicePills devices={['iphone', 'ipad', 'mac', 'visionpro', 'appletv', 'android', 'windows']} tone="light" align="start" className="mt-5" />
+            <div className="mt-3">
+              <div className="mb-2 text-xs font-semibold text-slate-500">Or self-host on a NAS:</div>
+              <div className="flex flex-wrap items-center gap-3">
+                <HostBadge type="docker" href={dockerUrl} />
+                <HostBadge type="synology" href={synologyUrl} />
+              </div>
+            </div>
+            <DevicePills devices={['iphone', 'ipad', 'mac', 'visionpro', 'appletv', 'android', 'windows', 'docker', 'synology']} tone="light" align="start" className="mt-5" />
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-slate-600">
               {[t('redesign.common.noAds'), t('redesign.common.noTracking'), t('redesign.common.onDevice')].map((item) => (
                 <span key={item} className="flex items-center gap-1.5">

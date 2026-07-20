@@ -5,7 +5,7 @@ import React from 'react';
  * Device names are proper nouns (iPhone, CarPlay, …) — intentionally not translated.
  *
  * props:
- *   devices — array of keys: iphone | ipad | mac | visionpro | appletv | carplay | windows | android | web
+ *   devices — array of keys: iphone | ipad | mac | visionpro | appletv | carplay | windows | android | web | docker | synology
  *   tone    — 'dark' (light text on dark hero) | 'light' (dark text on light hero)
  */
 
@@ -66,6 +66,23 @@ const ICONS = {
       <path d="M3 12h18M12 3c2.6 2.5 3.9 5.6 3.9 9S14.6 18.5 12 21c-2.6-2.5-3.9-5.6-3.9-9S9.4 5.5 12 3z" />
     </svg>
   ),
+  docker: (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="7.5" height="7.5" rx="1.2" />
+      <rect x="13.5" y="3" width="7.5" height="7.5" rx="1.2" />
+      <rect x="3" y="13.5" width="7.5" height="7.5" rx="1.2" />
+      <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.2" />
+    </svg>
+  ),
+  synology: (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="5" y="2.5" width="14" height="19" rx="1.8" />
+      <path d="M8 7h8M8 12h8M8 17h8" />
+      <circle cx="16" cy="7" r="0.4" fill="currentColor" />
+      <circle cx="16" cy="12" r="0.4" fill="currentColor" />
+      <circle cx="16" cy="17" r="0.4" fill="currentColor" />
+    </svg>
+  ),
 };
 
 const LABELS = {
@@ -78,6 +95,8 @@ const LABELS = {
   windows: 'Windows',
   android: 'Android',
   web: 'Web',
+  docker: 'Docker',
+  synology: 'Synology',
 };
 
 const DevicePills = ({ devices = [], tone = 'dark', align = 'center', className = '' }) => {
