@@ -2,12 +2,22 @@
 
 Draft compilation for the `/comicreader/` platform picker (`src/components/ReaderFamilyGuide.jsx`),
 built 2026-07-20 by reading the actual product source repos rather than inferring from marketing
-copy, then reviewed line-by-line by the product owner the same day. **Status: role/modes/status
-columns reviewed and applied to the component.** `content_source_support` (added in a later pass)
-is reviewed in the CSVs but **not yet reflected in `ReaderFamilyGuide.jsx`** — the component has no
-"where do your files come from" dimension yet; it's data-only until that's built. Keep using the
-same workflow for future corrections: edit the CSV, note what changed, and it gets applied back to
-the component as a diff.
+copy, then reviewed line-by-line by the product owner the same day across three passes. **Status:
+role/modes/status columns reviewed and applied to the component.** `content_source_support` (added
+in the second review pass) is reviewed in the CSVs but **not yet reflected in
+`ReaderFamilyGuide.jsx`** — the component has no "where do your files come from" dimension yet;
+it's data-only until that's built. One field is deliberately unapplied — see "Open item" below.
+Keep using the same workflow for future corrections: edit the CSV, note what changed, and it gets
+applied back to the component as a diff.
+
+## Open item — needs your confirmation
+
+The third-pass review of `host-client-capabilities.csv` flipped `Android TV`'s `can_stream` to
+`true`. That's held at `false` in both the CSV and the component, because it contradicts that same
+row's own note ("Not yet built") and `platform-coverage.csv`'s `status: soon` — flipping it would
+make the live picker tell visitors Android TV streaming works today, when nothing else in the same
+review says it does. Likely a copy/paste artifact from the adjacent Apple TV row. Confirm which is
+right and it'll get applied.
 
 ## Files
 
@@ -71,6 +81,15 @@ was written (see that file's git history, 2026-07-20):
 - **visionOS is also a standalone reader**, not client-only as the first pass had it.
 - **Android phone "coming soon" confirmed still accurate** by the product owner directly.
 - tvOS and Android TV are both `status: soon` (not `live`/`new` as the first pass guessed).
+
+## Third pass — host-client-capabilities.csv re-verified
+
+Product owner re-reviewed `host-client-capabilities.csv` after `content_source_support` was added,
+bumping Docker and Apple TV's `confidence` from `high` to `verified` (their `source` citation
+stayed as the original doc reference rather than switching to "Product owner review" — verified
+means personally confirmed on top of that citation, not a new source). Every other field already
+matched what the second pass had applied to the component — no further changes required, except
+the Android TV `can_stream` discrepancy noted above.
 
 ## Updating the component from this data
 

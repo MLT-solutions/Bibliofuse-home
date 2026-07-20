@@ -61,6 +61,18 @@ import React, { useMemo, useState } from 'react';
 //   (not `'live'`/`'new'` as the first pass had it) — see COVERAGE_ROWS.
 // Windows/Mac/Android specifics are now product-owner-verified; see
 // docs/reader-family-data/ for the full sourced CSVs and per-row notes.
+//
+// 2026-07-20, third pass — product owner re-reviewed and verified
+// host-client-capabilities.csv (added content_source_support, bumped
+// Docker/Apple TV confidence from `high` to `verified`). Every field that
+// affects this component's logic already matched what was applied in the
+// second pass above — no HOSTS/CLIENTS changes required, except one held
+// back: the submitted row flipped CLIENTS.androidtv.canStream to true, but
+// that contradicts the same row's own "Not yet built" note and
+// platform-coverage.csv's status=soon. Kept canStream: false and flagged it
+// in host-client-capabilities.csv rather than silently applying a claim
+// that Android TV streaming works when nothing else in the same review says
+// it does — confirm with the product owner before flipping this.
 
 const MODE_INFO = {
   'icloud-ts': {
