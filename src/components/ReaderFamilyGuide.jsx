@@ -16,6 +16,17 @@ import React, { useMemo, useState } from 'react';
 // Host/client connection-mode data below is a first pass reverse-engineered
 // from product notes, not verified against the apps themselves — check it
 // before treating the picker's output as authoritative.
+//
+// 2026-07-20 correction: Docker/Synology native-app streaming status was
+// wrong on first pass (claimed Local Wi-Fi / iCloud+Tailscale already work).
+// Per github.com/MLT-solutions/bibliofuse-nas-distribution's README ("Product
+// status" table) and the v0.1.3 release notes, released iOS/visionOS apps do
+// NOT support a Docker connection yet, and Synology native streaming is
+// "validation pending" — only the free built-in browser reader is confirmed
+// working today for either host. Fixed below (host.nativeStreaming). The
+// rest of this file's data (Windows/Mac/tvOS/Android specifics) is still
+// unverified against bibliofuse_iosv2 / bibliofuse-windows / bibliofuse-flutter
+// source — see the docs/reader-family-data/ CSV compilation for the full pass.
 
 const MODE_INFO = {
   'icloud-ts': {
@@ -36,8 +47,18 @@ const HOSTS = {
   iphone_ipad: { label: 'iPhone / iPad', tailscaleCapable: true },
   mac: { label: 'Mac', tailscaleCapable: true },
   windows: { label: 'Windows PC', tailscaleCapable: true },
-  synology: { label: 'Synology NAS (SPK)', tailscaleCapable: true, note: 'Zero-config folder picker — points at your existing library, nothing duplicated.' },
-  docker: { label: 'Docker / other NAS', tailscaleCapable: false, note: 'Local Wi-Fi only for now — away-from-home streaming for Docker hosts is on the roadmap.' },
+  synology: {
+    label: 'Synology NAS (SPK)',
+    tailscaleCapable: true,
+    note: 'Zero-config folder picker — points at your existing library, nothing duplicated.',
+    nativeStreaming: 'pending',
+  },
+  docker: {
+    label: 'Docker / other NAS',
+    tailscaleCapable: false,
+    note: 'Free self-hosted server and browser reader — no subscription needed to host or read in the browser.',
+    nativeStreaming: 'unsupported',
+  },
 };
 
 const CLIENTS = {
@@ -57,8 +78,8 @@ const COVERAGE_ROWS = [
   { platform: 'visionOS', role: 'Client only', modes: 'iCloud + Tailscale · Local Wi-Fi', status: 'live' },
   { platform: 'tvOS (Apple TV)', role: 'Companion / client only', modes: 'iCloud + Tailscale · Local Wi-Fi', status: 'new' },
   { platform: 'Android phone', role: 'Standalone only', modes: '—', status: 'soon', statusLabel: 'Streaming coming soon' },
-  { platform: 'Docker (NAS)', role: 'Host only, web UI', modes: 'Local Wi-Fi only', status: 'new' },
-  { platform: 'Synology NAS (SPK)', role: 'Host only, web UI', modes: 'Local Wi-Fi · Manual Tailscale', status: 'new' },
+  { platform: 'Docker (NAS)', role: 'Host + free browser reader', modes: 'Browser only — no native-app streaming yet', status: 'soon', statusLabel: 'Native streaming not yet supported' },
+  { platform: 'Synology NAS (SPK)', role: 'Host + free browser reader', modes: 'Browser today; native streaming in validation', status: 'soon', statusLabel: 'Native streaming validation pending' },
   { platform: 'Android TV', role: 'Client, coming soon', modes: '—', status: 'soon', statusLabel: 'Coming soon' },
 ];
 
@@ -135,6 +156,23 @@ function Recommendation({ hostKey, clientKey, wantsAway }) {
         <div className="mb-1 text-xs font-bold uppercase tracking-wider text-slate-500">Given your combination</div>
         <p className="text-sm leading-relaxed text-slate-700">
           <strong>{client.label}</strong> can&rsquo;t stream from a host yet — {client.note} Use the BiblioFuse app on {client.label} for local, standalone reading in the meantime.
+        </p>
+      </div>
+    );
+  }
+
+  if (host.nativeStreaming === 'unsupported' || host.nativeStreaming === 'pending') {
+    const pending = host.nativeStreaming === 'pending';
+    return (
+      <div className="rounded-2xl border border-amber-200 bg-amber-50/60 p-6">
+        <div className="mb-1 text-xs font-bold uppercase tracking-wider text-amber-700">Given your combination</div>
+        <p className="text-sm leading-relaxed text-slate-800">
+          {pending ? (
+            <>Native app streaming from <strong>{host.label}</strong> to <strong>{client.label}</strong> is still being validated — not confirmed working yet.</>
+          ) : (
+            <>Native app streaming from <strong>{host.label}</strong> to <strong>{client.label}</strong> isn&rsquo;t supported yet in the released apps.</>
+          )}
+          {' '}Host your library on {host.label} today and read it in its free built-in browser reader instead — that part works now, on any device, no app required.
         </p>
       </div>
     );
