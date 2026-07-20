@@ -32,6 +32,13 @@ import React, { useMemo, useState } from 'react';
 //   (TVAppState.remoteTailscaleEnabled = false) pending an upstream Tailscale
 //   tvOS client bug. Apple TV is Local Wi-Fi (LAN) only, by design, not a
 //   roadmap gap. Fixed via client.lanOnly.
+// - iPhone/iPad was never a real host option. Every source doc (Mac/PC
+//   remote-streaming docs, the LAN/Tailscale routing plan,
+//   private-remote-streaming-article-notes.md) describes streaming as
+//   Mac/PC/NAS -> iPhone/iPad/visionOS/tvOS, one direction. There is no
+//   iPhone/iPad host role anywhere in the source. Removed from HOSTS
+//   entirely rather than caveated — this isn't a "not yet," it's not a
+//   product concept.
 // Rest of this file's data (Windows/Mac/Android specifics) is still an
 // unverified first pass — see the docs/reader-family-data/ CSV compilation
 // for the full sourced pass.
@@ -52,7 +59,6 @@ const MODE_INFO = {
 };
 
 const HOSTS = {
-  iphone_ipad: { label: 'iPhone / iPad', tailscaleCapable: true },
   mac: { label: 'Mac', tailscaleCapable: true },
   windows: { label: 'Windows PC', tailscaleCapable: true },
   synology: {
@@ -84,7 +90,7 @@ const CLIENTS = {
 };
 
 const COVERAGE_ROWS = [
-  { platform: 'iPhone / iPad', role: 'Standalone · Host · Client', modes: 'All 3 modes', status: 'live' },
+  { platform: 'iPhone / iPad', role: 'Standalone · Client', modes: 'All 3 modes (as client)', status: 'live' },
   { platform: 'macOS', role: 'Standalone · Host · Client', modes: 'All 3 modes', status: 'live' },
   { platform: 'Windows PC', role: 'Standalone · Host · Client', modes: 'Local Wi-Fi · Manual Tailscale', status: 'live' },
   { platform: 'visionOS', role: 'Client only', modes: 'iCloud + Tailscale · Local Wi-Fi', status: 'live' },
@@ -236,7 +242,7 @@ function Recommendation({ hostKey, clientKey, wantsAway }) {
 }
 
 function ReaderFamilyGuide() {
-  const [hostKey, setHostKey] = useState('iphone_ipad');
+  const [hostKey, setHostKey] = useState('mac');
   const [clientKey, setClientKey] = useState('iphone_ipad');
   const [wantsAway, setWantsAway] = useState(true);
 
