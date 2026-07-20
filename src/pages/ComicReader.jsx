@@ -529,7 +529,7 @@ const ComicReader = () => {
               <StoreBadge type="play" href={playStoreUrl} />
               <StoreBadge type="microsoft" href={bibliofusePcUrl} />
             </div>
-            <DevicePills devices={['iphone', 'ipad', 'mac', 'visionpro', 'android', 'windows']} tone="light" align="start" className="mt-5" />
+            <DevicePills devices={['iphone', 'ipad', 'mac', 'visionpro', 'appletv', 'android', 'windows']} tone="light" align="start" className="mt-5" />
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-slate-600">
               {[t('redesign.common.noAds'), t('redesign.common.noTracking'), t('redesign.common.onDevice')].map((item) => (
                 <span key={item} className="flex items-center gap-1.5">

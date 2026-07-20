@@ -5,7 +5,7 @@ import React from 'react';
  * Device names are proper nouns (iPhone, CarPlay, …) — intentionally not translated.
  *
  * props:
- *   devices — array of keys: iphone | ipad | mac | visionpro | carplay | windows | android | web
+ *   devices — array of keys: iphone | ipad | mac | visionpro | appletv | carplay | windows | android | web
  *   tone    — 'dark' (light text on dark hero) | 'light' (dark text on light hero)
  */
 
@@ -31,6 +31,12 @@ const ICONS = {
   visionpro: (
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
       <path d="M12 7.5c-4.6 0-8.5 1-8.5 4.4 0 3 1.7 4.9 4 4.9 2 0 2.6-1.6 4.5-1.6s2.5 1.6 4.5 1.6c2.3 0 4-1.9 4-4.9 0-3.4-3.9-4.4-8.5-4.4z" />
+    </svg>
+  ),
+  appletv: (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2.5" y="5" width="19" height="12" rx="2" />
+      <path d="M9 21h6M12 17v4" />
     </svg>
   ),
   carplay: (
@@ -67,6 +73,7 @@ const LABELS = {
   ipad: 'iPad',
   mac: 'Mac',
   visionpro: 'Vision Pro',
+  appletv: 'Apple TV',
   carplay: 'CarPlay',
   windows: 'Windows',
   android: 'Android',
