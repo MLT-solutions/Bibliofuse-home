@@ -17,16 +17,24 @@ import React, { useMemo, useState } from 'react';
 // from product notes, not verified against the apps themselves — check it
 // before treating the picker's output as authoritative.
 //
-// 2026-07-20 correction: Docker/Synology native-app streaming status was
-// wrong on first pass (claimed Local Wi-Fi / iCloud+Tailscale already work).
-// Per github.com/MLT-solutions/bibliofuse-nas-distribution's README ("Product
-// status" table) and the v0.1.3 release notes, released iOS/visionOS apps do
-// NOT support a Docker connection yet, and Synology native streaming is
-// "validation pending" — only the free built-in browser reader is confirmed
-// working today for either host. Fixed below (host.nativeStreaming). The
-// rest of this file's data (Windows/Mac/tvOS/Android specifics) is still
-// unverified against bibliofuse_iosv2 / bibliofuse-windows / bibliofuse-flutter
-// source — see the docs/reader-family-data/ CSV compilation for the full pass.
+// 2026-07-20 corrections against actual source docs:
+// - Docker/Synology native-app streaming was wrong on first pass (claimed
+//   Local Wi-Fi / iCloud+Tailscale already work). Per
+//   github.com/MLT-solutions/bibliofuse-nas-distribution's README ("Product
+//   status" table) and the v0.1.3 release notes, released iOS/visionOS apps
+//   do NOT support a Docker connection yet, and Synology native streaming is
+//   "validation pending" — only the free built-in browser reader is confirmed
+//   working today for either host. Fixed via host.nativeStreaming.
+// - Apple TV was wrong too (claimed iCloud + Tailscale support). Per
+//   bibliofuse_iosv2/docs/tvos-streaming-reader-go-no-go-port-plan.md and
+//   mac-remote-streaming.md: tvOS has no iCloud Documents entitlement, and
+//   the Tailscale path is fully implemented but shipped disabled
+//   (TVAppState.remoteTailscaleEnabled = false) pending an upstream Tailscale
+//   tvOS client bug. Apple TV is Local Wi-Fi (LAN) only, by design, not a
+//   roadmap gap. Fixed via client.lanOnly.
+// Rest of this file's data (Windows/Mac/Android specifics) is still an
+// unverified first pass — see the docs/reader-family-data/ CSV compilation
+// for the full sourced pass.
 
 const MODE_INFO = {
   'icloud-ts': {
@@ -70,7 +78,7 @@ const CLIENTS = {
   mac: { label: 'Mac', canStream: true, isAppleICloud: true },
   windows: { label: 'Windows PC', canStream: true, isAppleICloud: false },
   visionpro: { label: 'Apple Vision Pro', canStream: true, isAppleICloud: true },
-  appletv: { label: 'Apple TV', canStream: true, isAppleICloud: true, note: 'Companion app — streams only, no local library on the box itself.' },
+  appletv: { label: 'Apple TV', canStream: true, lanOnly: true, note: 'Companion app — streams only, no local library on the box itself. Local Wi-Fi (LAN) only: tvOS has no iCloud Documents entitlement and the Tailscale path is built but disabled pending an upstream Tailscale tvOS bug, so Apple TV can’t discover a host outside the house yet.' },
   androidphone: { label: 'Android phone', canStream: false, note: 'Streaming client is coming soon — standalone reading only today.' },
   androidtv: { label: 'Android TV', canStream: false, note: 'Coming soon.' },
 };
@@ -80,7 +88,7 @@ const COVERAGE_ROWS = [
   { platform: 'macOS', role: 'Standalone · Host · Client', modes: 'All 3 modes', status: 'live' },
   { platform: 'Windows PC', role: 'Standalone · Host · Client', modes: 'Local Wi-Fi · Manual Tailscale', status: 'live' },
   { platform: 'visionOS', role: 'Client only', modes: 'iCloud + Tailscale · Local Wi-Fi', status: 'live' },
-  { platform: 'tvOS (Apple TV)', role: 'Companion / client only', modes: 'iCloud + Tailscale · Local Wi-Fi', status: 'new' },
+  { platform: 'tvOS (Apple TV)', role: 'Companion / client only', modes: 'Local Wi-Fi only — no iCloud/Tailscale on tvOS', status: 'new' },
   { platform: 'Android phone', role: 'Standalone only', modes: '—', status: 'soon', statusLabel: 'Streaming coming soon' },
   { platform: 'Docker (NAS)', role: 'Host + free browser reader', modes: 'Browser only — no native-app streaming yet', status: 'soon', statusLabel: 'Native streaming not yet supported' },
   { platform: 'Synology NAS (SPK)', role: 'Host + free browser reader', modes: 'Browser today; native streaming in validation', status: 'soon', statusLabel: 'Native streaming validation pending' },
@@ -187,10 +195,11 @@ function Recommendation({ hostKey, clientKey, wantsAway }) {
     );
   }
 
-  const wantsRemote = wantsAway && host.tailscaleCapable;
+  const wantsRemote = wantsAway && host.tailscaleCapable && !client.lanOnly;
   const modeKey = !wantsRemote ? 'local-wifi' : client.isAppleICloud ? 'icloud-ts' : 'manual-ts';
   const mode = MODE_INFO[modeKey];
-  const cappedToLocal = wantsAway && !host.tailscaleCapable;
+  const cappedByHost = wantsAway && !host.tailscaleCapable && !client.lanOnly;
+  const cappedByClient = wantsAway && client.lanOnly;
 
   return (
     <div className="rounded-2xl border border-blue-200 bg-blue-50/40 p-6">
@@ -212,9 +221,14 @@ function Recommendation({ hostKey, clientKey, wantsAway }) {
           </span>
         </li>
       </ul>
-      {cappedToLocal && (
+      {cappedByHost && (
         <p className="mt-4 rounded-lg bg-amber-50 px-3.5 py-2.5 text-xs font-semibold text-amber-800">
           Note: {host.label} doesn&rsquo;t support away-from-home streaming yet, so this pairing is Local Wi-Fi only for now, even though you asked for both.
+        </p>
+      )}
+      {cappedByClient && (
+        <p className="mt-4 rounded-lg bg-amber-50 px-3.5 py-2.5 text-xs font-semibold text-amber-800">
+          Note: {client.label} is Local Wi-Fi only by design — no iCloud or Tailscale support on this device — so this pairing works at home only, even though you asked for both.
         </p>
       )}
     </div>
