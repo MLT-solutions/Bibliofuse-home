@@ -78,7 +78,14 @@ When adding a new article:
 1. Add the entry to `src/data/articles.js`.
 2. Add `public/blog/{slug}/en.md` (and other language `.md` files as needed).
 3. Add `redesign.blog.posts.{slug}` keys to `src/locales/en/translation.json`.
-4. Add the slug to `ARTICLE_SLUGS` in both `scripts/generate-sitemap.js` and `scripts/generate-static-routes.js`.
+4. Add the slug to `ARTICLE_SLUGS` in **all three** of `scripts/generate-sitemap.js`,
+   `scripts/generate-static-routes.js`, **and `scripts/prerender.js`** — each file has
+   its own independent hardcoded copy of this list, not a shared import. Missing
+   `prerender.js` doesn't error or warn: the build still reports full success, but the
+   new article's route is silently never visited by the prerender step and ships as
+   the blank SPA shell to crawlers (confirmed live 2026-07-26 — verify a fresh
+   article's dist output actually contains its own text, not just that the build
+   exited 0, per the "New page/route rollout rules" verification step below).
 
 ### Adding a new translation key
 
@@ -104,7 +111,10 @@ Accent colours: blue `(59,130,246)` = guide, purple `(139,92,246)` = explainer, 
 
 When adding a new article:
 1. Prepend to `src/data/articles.js` (newest first).
-2. Prepend slug to `ARTICLE_SLUGS` in both `scripts/generate-sitemap.js` and `scripts/generate-static-routes.js`.
+2. Prepend slug to `ARTICLE_SLUGS` in **all three** of `scripts/generate-sitemap.js`,
+   `scripts/generate-static-routes.js`, and `scripts/prerender.js` (each has its own
+   independent copy — see the fuller warning in the "## Blog" section above; missing
+   `prerender.js` ships a blank page to crawlers with no build error).
 3. Add `redesign.blog.posts.{slug}` (`title` + `excerpt`) to all 11 `src/locales/{lang}/translation.json` files.
 
 ### Social — Buffer
@@ -170,7 +180,11 @@ Configuration for the `/article` skill and the daily blog routine. This section 
 
 ### Registration checklist (every new article)
 1. Prepend entry to `src/data/articles.js` — fields: `slug`, `date`, `tags`, `coverImage`
-2. Prepend slug to `ARTICLE_SLUGS` in **both** `scripts/generate-sitemap.js` and `scripts/generate-static-routes.js`
+2. Prepend slug to `ARTICLE_SLUGS` in **all three** of `scripts/generate-sitemap.js`,
+   `scripts/generate-static-routes.js`, **and `scripts/prerender.js`** (each has its
+   own independent hardcoded copy — missing `prerender.js` builds and deploys
+   successfully with no error, but silently ships the blank SPA shell for that
+   article to crawlers; confirmed live 2026-07-26, see the "## Blog" section above)
 3. Add `redesign.blog.posts.{slug}` keys (`title` + `excerpt`) to all 11 `src/locales/{lang}/translation.json` files
 
 ### Locales
