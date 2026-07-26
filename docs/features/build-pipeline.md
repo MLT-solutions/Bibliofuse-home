@@ -5,9 +5,15 @@
 ## Automated build steps (run on every `npm run build`)
 In order, after `vite build`:
 1. `scripts/generate-sitemap.js` — writes `public/sitemap.xml` from the known routes
-   (pages × languages, blog posts).
-2. `scripts/generate-static-routes.js` — enumerates every route the site serves, used
-   by the prerender step (and potentially by the host for routing config).
+   × `INDEXED_LANGUAGES` only (not all 11 `SUPPORTED_LANGUAGES` — see
+   `i18n-routing.md`), plus blog posts. Current output is 288 URLs (down from ~800
+   before the 2026-07-20 locale-indexing change).
+2. `scripts/generate-static-routes.js` — enumerates every route the site serves in
+   all 11 languages (routing/rendering doesn't narrow by `INDEXED_LANGUAGES`, only
+   the sitemap and `noindex` do), used by the prerender step (and potentially by the
+   host for routing config). Also injects a static `noindex` meta tag at build time
+   for non-indexed locales and for specific always-noindex routes
+   (`NOINDEX_ALL_LOCALES_ROUTES`: `/androidrequest`, `/smartdecrypt`, `/contentcue`).
 3. `scripts/prerender.js` — renders each route to static HTML so blog/marketing pages
    have real content for SEO crawlers and social-media unfurling, despite being an SPA.
    It serves `dist/` on an ephemeral local port during prerendering.
