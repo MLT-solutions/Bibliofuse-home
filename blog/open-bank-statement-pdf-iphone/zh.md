@@ -2,7 +2,7 @@
 
 每个月，你的银行都会发来一个 PDF。它被密码锁定——你的身份证号、出生日期或账户号码后六位。你以前输入过，但时间隔得够久，一时想不起来。
 
-[SmartDecrypt PDF ZIP](/zh/smartdecrypt/) 解决了这个问题：每家银行或机构只需保存一次密码规律。之后每次收到这个来源的账单，拖进来就自动解锁。
+[SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) 解决了这个问题：每家银行或机构只需保存一次密码规律。之后每次收到这个来源的账单，拖进来就自动解锁。
 
 ## 如何为银行账单配置 SmartDecrypt
 
@@ -26,4 +26,4 @@
 
 SmartDecrypt 免费支持每次解锁一个文件。SmartDecrypt Pro 通过一次性购买解锁批量处理功能。无需订阅。
 
-前往 App Store 或 Microsoft Store 下载 [SmartDecrypt PDF ZIP](/zh/smartdecrypt/)。
+前往 App Store 或 Microsoft Store 下载 [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)。

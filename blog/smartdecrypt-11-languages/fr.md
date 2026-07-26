@@ -1,6 +1,6 @@
 # SmartDecrypt Disponible en 11 Langues — Déverrouillez vos PDFs Bancaires dans Votre Langue
 
-Votre relevé bancaire arrive en PDF verrouillé. Le mot de passe est votre numéro de sécurité sociale, votre date de naissance ou les six derniers chiffres de votre compte — quelque chose que vous avez tapé des dizaines de fois sans jamais le retenir. [SmartDecrypt PDF ZIP](/fr/smartdecrypt/) a été conçu exactement pour ça : enregistrez le motif de mot de passe une fois, et chaque prochain relevé se déverrouille tout seul quand vous le déposez.
+Votre relevé bancaire arrive en PDF verrouillé. Le mot de passe est votre numéro de sécurité sociale, votre date de naissance ou les six derniers chiffres de votre compte — quelque chose que vous avez tapé des dizaines de fois sans jamais le retenir. [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) a été conçu exactement pour ça : enregistrez le motif de mot de passe une fois, et chaque prochain relevé se déverrouille tout seul quand vous le déposez.
 
 Cette expérience est maintenant disponible en 11 langues. SmartDecrypt PDF ZIP CBZ étend sa localisation complète à l'anglais, l'espagnol, le français, le néerlandais, le portugais, le russe, le chinois simplifié, le japonais, le coréen, le bahasa indonesia et le malais — plus de trois milliards de locuteurs natifs.
 
@@ -10,7 +10,7 @@ La plupart des gens ne se considèrent pas comme utilisateurs d'un outil de déc
 
 Le problème, ce sont les mots de passe. Les banques, assureurs et organismes gouvernementaux utilisent généralement des identifiants personnels comme mots de passe — numéro de sécurité sociale, date de naissance, numéro de contrat. Chaque institution utilise un format différent, et aucun ne correspond à vos mots de passe habituels.
 
-[SmartDecrypt](/fr/smartdecrypt/) résout ça avec la **correspondance de motifs de nom de fichier**. Vous créez un profil : "quand je reçois un fichier correspondant à `releve_*.pdf`, le mot de passe est mon numéro de SS". La prochaine fois que ce fichier arrive, vous le déposez dans SmartDecrypt et il se déverrouille en quelques secondes.
+[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) résout ça avec la **correspondance de motifs de nom de fichier**. Vous créez un profil : "quand je reçois un fichier correspondant à `releve_*.pdf`, le mot de passe est mon numéro de SS". La prochaine fois que ce fichier arrive, vous le déposez dans SmartDecrypt et il se déverrouille en quelques secondes.
 
 ## Nouveautés : Support Complet de 11 Langues
 
@@ -48,4 +48,4 @@ Les mots de passe sont stockés dans le Trousseau Apple ou le gestionnaire d'inf
 
 SmartDecrypt est gratuit pour déverrouiller un fichier à la fois. SmartDecrypt Pro est un achat universel unique qui débloque le traitement par lots. Sans abonnement.
 
-Téléchargez [SmartDecrypt PDF ZIP](/fr/smartdecrypt/) sur l'App Store ou le Microsoft Store. La mise à jour avec 11 langues est disponible maintenant sur toutes les plateformes.
+Téléchargez [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) sur l'App Store ou le Microsoft Store. La mise à jour avec 11 langues est disponible maintenant sur toutes les plateformes.

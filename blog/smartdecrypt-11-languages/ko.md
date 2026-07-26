@@ -1,6 +1,6 @@
 # SmartDecrypt 이제 11개 언어 지원 — 내 언어로 은행 PDF 잠금 해제
 
-은행 명세서가 잠긴 PDF로 옵니다. 비밀번호는 주민등록번호, 생년월일, 또는 계좌번호 뒷자리 — 수십 번 입력했지만 순간적으로 생각 안 나는 것들이죠. [SmartDecrypt PDF ZIP](/ko/smartdecrypt/)은 바로 이를 위해 만들어졌습니다. 비밀번호 패턴을 한 번 저장하면, 이후 파일을 넣을 때마다 자동으로 잠금이 해제됩니다.
+은행 명세서가 잠긴 PDF로 옵니다. 비밀번호는 주민등록번호, 생년월일, 또는 계좌번호 뒷자리 — 수십 번 입력했지만 순간적으로 생각 안 나는 것들이죠. [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)은 바로 이를 위해 만들어졌습니다. 비밀번호 패턴을 한 번 저장하면, 이후 파일을 넣을 때마다 자동으로 잠금이 해제됩니다.
 
 이 경험이 이제 11개 언어로 제공됩니다. SmartDecrypt PDF ZIP CBZ는 전체 UI 현지화를 영어, 스페인어, 프랑스어, 네덜란드어, 포르투갈어, 러시아어, 중국어 간체, 일본어, 한국어, 인도네시아어, 말레이어로 확대했습니다 — 30억 명 이상의 모국어 사용자를 커버합니다.
 
@@ -10,7 +10,7 @@
 
 문제는 비밀번호입니다. 은행, 보험사, 정부기관은 주민등록번호, 생년월일, 증권번호 같은 개인 식별 정보를 비밀번호로 사용하는 경향이 있습니다. 기관마다 형식이 달라 평소 쓰는 비밀번호와는 전혀 다릅니다.
 
-[SmartDecrypt](/ko/smartdecrypt/)는 **파일명 패턴 매칭**으로 이를 해결합니다. "파일명이 `KB_*.pdf`와 일치하면 비밀번호는 주민등록번호"라는 프로필을 한 번 만들어두면, 그 파일이 올 때마다 SmartDecrypt에 넣는 것만으로 몇 초 만에 잠금이 해제됩니다.
+[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)는 **파일명 패턴 매칭**으로 이를 해결합니다. "파일명이 `KB_*.pdf`와 일치하면 비밀번호는 주민등록번호"라는 프로필을 한 번 만들어두면, 그 파일이 올 때마다 SmartDecrypt에 넣는 것만으로 몇 초 만에 잠금이 해제됩니다.
 
 ## 새 기능: 11개 언어 완전 지원
 
@@ -48,4 +48,4 @@ SmartDecrypt는 기기 언어 설정을 자동으로 따릅니다. iOS: **설정
 
 SmartDecrypt는 파일 한 개씩 잠금 해제가 무료. SmartDecrypt Pro는 배치 처리를 개방하는 일회성 범용 구매입니다. 구독 없음.
 
-App Store 또는 Microsoft Store에서 [SmartDecrypt PDF ZIP](/ko/smartdecrypt/)을 다운로드하세요. 11개 언어 업데이트는 지금 바로 모든 플랫폼에서 사용할 수 있습니다.
+App Store 또는 Microsoft Store에서 [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)을 다운로드하세요. 11개 언어 업데이트는 지금 바로 모든 플랫폼에서 사용할 수 있습니다.

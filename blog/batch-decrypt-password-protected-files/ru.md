@@ -10,7 +10,7 @@ SmartDecrypt PDF ZIP CBZ расшифровывает несколько защ�
 
 SmartDecrypt PDF ZIP CBZ решает эту проблему с помощью двух функций: **пакетной расшифровки** и **профилей паролей**. Выберите все файлы сразу, примените профиль и нажмите один раз.
 
-[SmartDecrypt](/ru/smartdecrypt/) обрабатывает всё на устройстве — без облачного сервиса, без ожидания для каждого файла, без загрузок.
+[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) обрабатывает всё на устройстве — без облачного сервиса, без ожидания для каждого файла, без загрузок.
 
 ## Как работает пакетная расшифровка в SmartDecrypt
 
@@ -80,4 +80,4 @@ ZIP-архивы из экспортов приложений или личны�
 
 Пакетная расшифровка превращает утомительную многочасовую задачу в одно нажатие. SmartDecrypt PDF ZIP CBZ обрабатывает все защищённые PDF, CBZ и ZIP в вашей коллекции за один раз. Найдите **SmartDecrypt PDF ZIP CBZ** в App Store, чтобы начать, а затем открывайте расшифрованные комиксы в [BiblioFuse](/ru/).
 
-[SmartDecrypt PDF ZIP CBZ](/ru/smartdecrypt/) — доступно в App Store.
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) — доступно в App Store.

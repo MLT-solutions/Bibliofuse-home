@@ -10,7 +10,7 @@ SmartDecrypt PDF ZIP CBZ 可在 iPhone、iPad 和 Mac 上存储命名密码配�
 
 iPhone 上的大多数解密工具一次只能处理一个文件，而且在不同会话之间没有任何记忆功能。
 
-SmartDecrypt PDF ZIP CBZ 通过密码配置文件解决了这一问题：为你常用的每个密码提供一个有名称、安全且完全本地化的存储空间。使用 [SmartDecrypt](/zh/smartdecrypt/)，只需保存一次配置文件，以后再也不用输入那个密码。
+SmartDecrypt PDF ZIP CBZ 通过密码配置文件解决了这一问题：为你常用的每个密码提供一个有名称、安全且完全本地化的存储空间。使用 [SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)，只需保存一次配置文件，以后再也不用输入那个密码。
 
 ## 密码配置文件是如何工作的？
 
@@ -80,4 +80,4 @@ SmartDecrypt 不会根据文件名自动匹配配置文件——你需要在解�
 
 密码配置文件将 SmartDecrypt PDF ZIP CBZ 变成了一个"一次设置、永久生效"的解密系统。新收藏到来时创建一次配置文件，此后来自同一来源的所有批次只需一次点击即可完成解密——无论是 iPhone、iPad 还是 Mac，始终在本地处理，无需上传。在 App Store 搜索 **SmartDecrypt PDF ZIP CBZ** 立即开始使用。
 
-[SmartDecrypt PDF ZIP CBZ](/zh/smartdecrypt/) — 在 App Store 下载.
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) — 在 App Store 下载.

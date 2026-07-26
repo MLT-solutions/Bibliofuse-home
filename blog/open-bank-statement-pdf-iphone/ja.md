@@ -2,7 +2,7 @@
 
 毎月、銀行からPDFが届きます。マイナンバー、生年月日、または口座番号の下6桁でロックされています。以前入力したことはありますが、最近ではないので咄嗟には思い出せません。
 
-[SmartDecrypt PDF ZIP](/ja/smartdecrypt/) はこれを解決します。銀行や機関ごとにパスワードのパターンを一度保存するだけで、その後はファイルをドロップするたびに自動的に解除されます。
+[SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) はこれを解決します。銀行や機関ごとにパスワードのパターンを一度保存するだけで、その後はファイルをドロップするたびに自動的に解除されます。
 
 ## 銀行明細書のために SmartDecrypt を設定する
 
@@ -26,4 +26,4 @@ SmartDecrypt を開き + をタップして新しいプロファイルを追加�
 
 SmartDecryptは1ファイルずつ無料。SmartDecrypt Proはバッチ処理を解放する買い切り購入。サブスクリプション不要。
 
-App StoreまたはMicrosoft Storeから [SmartDecrypt PDF ZIP](/ja/smartdecrypt/) をダウンロード。
+App StoreまたはMicrosoft Storeから [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) をダウンロード。

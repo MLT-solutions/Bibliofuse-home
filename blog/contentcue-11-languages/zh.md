@@ -1,6 +1,6 @@
 # ContentCue 现已支持 11 种语言 — 阅读网页内容，不再被广告打断
 
-在网上阅读文章时，你经常搞不清哪里是正文，哪里开始是广告。一些广告设计得与正文一模一样——相同的字体、相同的栏宽、相同的视觉风格。[ContentCue](/zh/contentcue/) 通过在阅读时为广告区域标注彩色边框来解决这个问题，让你始终知道页面哪部分是编辑内容，哪部分是付费投放。
+在网上阅读文章时，你经常搞不清哪里是正文，哪里开始是广告。一些广告设计得与正文一模一样——相同的字体、相同的栏宽、相同的视觉风格。[ContentCue](https://apps.apple.com/us/app/contentcue-read-listen/id6770080864) 通过在阅读时为广告区域标注彩色边框来解决这个问题，让你始终知道页面哪部分是编辑内容，哪部分是付费投放。
 
 这一体验现在支持 11 种语言。ContentCue 将完整的界面本地化扩展至英语、西班牙语、法语、荷兰语、葡萄牙语、俄语、简体中文、日语、韩语、印度尼西亚语和马来语。
 
@@ -32,4 +32,4 @@
 
 ContentCue 在本地完成所有广告分类，不会将任何浏览数据上传到服务器。
 
-前往 App Store 下载 [ContentCue](/zh/contentcue/)。
+前往 App Store 下载 [ContentCue](https://apps.apple.com/us/app/contentcue-read-listen/id6770080864)。

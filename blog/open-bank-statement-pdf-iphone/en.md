@@ -2,7 +2,7 @@
 
 Every month, your bank sends a PDF. It's locked with a password. The password is something personal — your NRIC, your date of birth, the last six digits of your account number. You've typed it before, but not recently enough to remember it off the top of your head, so you're rummaging through old emails looking for the setup message, or calling the bank's helpline.
 
-This is a solvable problem. [SmartDecrypt PDF ZIP](/en/smartdecrypt/) lets you save the password pattern once per bank or institution. Every future statement from that source unlocks automatically when you drop it in.
+This is a solvable problem. [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) lets you save the password pattern once per bank or institution. Every future statement from that source unlocks automatically when you drop it in.
 
 ## Why Bank PDFs Are Password-Protected
 
@@ -12,7 +12,7 @@ The problem is that these passwords are not memorable in the way a chosen passwo
 
 ## Setting Up SmartDecrypt for Bank Statements
 
-[SmartDecrypt](/en/smartdecrypt/) uses filename pattern matching to connect incoming files to their saved passwords. Here's the setup:
+[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) uses filename pattern matching to connect incoming files to their saved passwords. Here's the setup:
 
 **Step 1 — Create a profile for each institution**
 
@@ -64,4 +64,4 @@ SmartDecrypt Pro supports batch decryption — you can drop in 12 months of stat
 
 SmartDecrypt is free for unlocking files one at a time. SmartDecrypt Pro adds batch processing and is a one-time universal purchase that covers iPhone, iPad, Mac, and Windows together. No subscription.
 
-Download [SmartDecrypt PDF ZIP](/en/smartdecrypt/) from the App Store or Microsoft Store and set up your first bank profile in under two minutes.
+Download [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) from the App Store or Microsoft Store and set up your first bank profile in under two minutes.

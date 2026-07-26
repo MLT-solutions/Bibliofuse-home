@@ -10,7 +10,7 @@ Kebanyakan alat penyahsulitan pada iPhone memproses fail satu per satu. Tiada ko
 
 SmartDecrypt PDF ZIP CBZ menyelesaikan masalah ini dengan dua ciri yang berfungsi bersama: **penyahsulitan kelompok** dan **profil kata laluan**. Pilih semua fail sekaligus, terapkan profil dan ketik sekali.
 
-[SmartDecrypt](/ms/smartdecrypt/) mengendalikan semuanya pada peranti — tanpa perkhidmatan awan, tanpa menunggu setiap fail, tanpa muat naik.
+[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) mengendalikan semuanya pada peranti — tanpa perkhidmatan awan, tanpa menunggu setiap fail, tanpa muat naik.
 
 ## Cara Penyahsulitan Kelompok Berfungsi dalam SmartDecrypt
 
@@ -80,4 +80,4 @@ Ya. Versi Mac menyokong penyahsulitan kelompok dengan import seret dan lepas dar
 
 Penyahsulitan kelompok mengubah tugas yang membosankan selama berjam-jam menjadi satu ketik. SmartDecrypt PDF ZIP CBZ mengendalikan semua PDF, CBZ dan ZIP yang dilindungi dalam koleksi anda sekaligus. Cari **SmartDecrypt PDF ZIP CBZ** di App Store untuk bermula, kemudian buka arkib CBZ yang disahsulit dalam [BiblioFuse](/ms/).
 
-[SmartDecrypt PDF ZIP CBZ](/ms/smartdecrypt/) — tersedia di App Store.
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) — tersedia di App Store.

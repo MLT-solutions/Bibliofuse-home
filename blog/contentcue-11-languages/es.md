@@ -1,6 +1,6 @@
 # ContentCue Ahora Disponible en 11 Idiomas — Lee Contenido Web sin Perder tu Lugar por los Anuncios
 
-Cuando lees artículos en la web, a menudo pierdes el hilo de dónde termina el contenido real y dónde comienzan los anuncios. [ContentCue](/es/contentcue/) resuelve esto marcando las regiones de anuncios con un borde de color mientras lees, para que siempre sepas qué partes de la página son editoriales y cuáles son contenido patrocinado.
+Cuando lees artículos en la web, a menudo pierdes el hilo de dónde termina el contenido real y dónde comienzan los anuncios. [ContentCue](https://apps.apple.com/us/app/contentcue-read-listen/id6770080864) resuelve esto marcando las regiones de anuncios con un borde de color mientras lees, para que siempre sepas qué partes de la página son editoriales y cuáles son contenido patrocinado.
 
 Esta experiencia ahora está disponible en 11 idiomas. ContentCue ha ampliado su localización completa al inglés, español, francés, neerlandés, portugués, ruso, chino simplificado, japonés, coreano, bahasa indonesia y malayo.
 
@@ -38,4 +38,4 @@ ContentCue usa señales estructurales, de posición y de red para clasificar reg
 
 ContentCue realiza toda la clasificación localmente, en tu dispositivo. No se cargan datos de navegación a ningún servidor.
 
-Descarga [ContentCue](/es/contentcue/) desde el App Store.
+Descarga [ContentCue](https://apps.apple.com/us/app/contentcue-read-listen/id6770080864) desde el App Store.

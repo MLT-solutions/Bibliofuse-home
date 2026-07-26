@@ -1,6 +1,6 @@
 # ContentCue Agora Disponível em 11 Idiomas — Leia Conteúdo Web sem Perder Seu Lugar por Causa de Anúncios
 
-Quando você lê artigos na web, muitas vezes perde o fio de onde termina o conteúdo real e onde os anúncios começam. [ContentCue](/pt/contentcue/) resolve isso marcando regiões de anúncios com uma borda colorida enquanto você lê, para que sempre saiba quais partes da página são editoriais e quais são espaços pagos.
+Quando você lê artigos na web, muitas vezes perde o fio de onde termina o conteúdo real e onde os anúncios começam. [ContentCue](https://apps.apple.com/us/app/contentcue-read-listen/id6770080864) resolve isso marcando regiões de anúncios com uma borda colorida enquanto você lê, para que sempre saiba quais partes da página são editoriais e quais são espaços pagos.
 
 Essa experiência agora está disponível em 11 idiomas. ContentCue expandiu sua localização completa para inglês, espanhol, francês, holandês, português, russo, chinês simplificado, japonês, coreano, bahasa indonesia e malaio.
 
@@ -32,4 +32,4 @@ A maioria dos bloqueadores de anúncios remove anúncios completamente. ContentC
 
 ContentCue realiza toda a classificação localmente, no seu dispositivo. Nenhum dado de navegação é enviado a qualquer servidor.
 
-Baixe [ContentCue](/pt/contentcue/) na App Store.
+Baixe [ContentCue](https://apps.apple.com/us/app/contentcue-read-listen/id6770080864) na App Store.

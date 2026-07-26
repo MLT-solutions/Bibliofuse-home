@@ -10,7 +10,7 @@ SmartDecrypt PDF ZIP CBZ는 iPhone, iPad, Mac에 이름이 있는 비밀번호 �
 
 iPhone의 대부분의 복호화 도구는 파일을 하나씩 처리하며 세션 간에 아무것도 기억하지 못합니다.
 
-SmartDecrypt PDF ZIP CBZ는 비밀번호 프로필로 이 문제를 해결합니다. 정기적으로 사용하는 모든 비밀번호를 위한 이름 있는, 안전한, 기기 내 저장소를 제공합니다. [SmartDecrypt](/ko/smartdecrypt/)로 프로필을 한 번 저장하면, 그 비밀번호는 다시 입력할 필요가 없습니다.
+SmartDecrypt PDF ZIP CBZ는 비밀번호 프로필로 이 문제를 해결합니다. 정기적으로 사용하는 모든 비밀번호를 위한 이름 있는, 안전한, 기기 내 저장소를 제공합니다. [SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)로 프로필을 한 번 저장하면, 그 비밀번호는 다시 입력할 필요가 없습니다.
 
 ## 비밀번호 프로필은 어떻게 작동하나요?
 
@@ -80,4 +80,4 @@ SmartDecrypt는 파일 이름으로 프로필을 자동 매칭하지 않습니�
 
 비밀번호 프로필은 SmartDecrypt PDF ZIP CBZ를 한 번 설정하면 그만인 복호화 시스템으로 만들어줍니다. 새 컬렉션이 도착했을 때 한 번 프로필을 만들어두면, 이후 그 출처의 모든 묶음이 한 번의 탭으로 복호화됩니다 — iPhone, iPad, Mac 어디서든, 항상 기기 내에서, 업로드 없이. App Store에서 **SmartDecrypt PDF ZIP CBZ**를 검색하여 시작하세요.
 
-[SmartDecrypt PDF ZIP CBZ](/ko/smartdecrypt/) — App Store에서 다운로드.
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) — App Store에서 다운로드.

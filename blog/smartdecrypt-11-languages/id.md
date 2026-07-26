@@ -1,6 +1,6 @@
 # SmartDecrypt Kini Tersedia dalam 11 Bahasa — Buka Kunci PDF Bank dalam Bahasa Anda
 
-Laporan bank Anda tiba sebagai PDF yang terkunci. Kata sandinya adalah NIK, tanggal lahir, atau enam digit terakhir rekening Anda — sesuatu yang sudah Anda ketik puluhan kali tapi tetap sulit diingat begitu saja. [SmartDecrypt PDF ZIP](/id/smartdecrypt/) memang dirancang untuk ini: simpan pola kata sandi sekali, dan setiap laporan berikutnya akan terbuka sendiri saat Anda menjatuhkannya ke dalam aplikasi.
+Laporan bank Anda tiba sebagai PDF yang terkunci. Kata sandinya adalah NIK, tanggal lahir, atau enam digit terakhir rekening Anda — sesuatu yang sudah Anda ketik puluhan kali tapi tetap sulit diingat begitu saja. [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) memang dirancang untuk ini: simpan pola kata sandi sekali, dan setiap laporan berikutnya akan terbuka sendiri saat Anda menjatuhkannya ke dalam aplikasi.
 
 Pengalaman itu kini tersedia dalam 11 bahasa. SmartDecrypt PDF ZIP CBZ memperluas lokalisasi antarmuka penuhnya ke bahasa Inggris, Spanyol, Prancis, Belanda, Portugis, Rusia, Mandarin Sederhana, Jepang, Korea, Bahasa Indonesia, dan Melayu — mencakup lebih dari tiga miliar penutur asli.
 
@@ -10,7 +10,7 @@ Kebanyakan orang tidak menganggap diri mereka pengguna alat dekripsi. Sampai ban
 
 Masalahnya adalah kata sandinya. Bank, perusahaan asuransi, dan lembaga pemerintah cenderung menggunakan pengidentifikasi pribadi sebagai kata sandi — NIK, tanggal lahir, atau nomor polis. Setiap lembaga menggunakan format yang berbeda, dan tidak ada yang cocok dengan kata sandi biasa Anda.
 
-[SmartDecrypt](/id/smartdecrypt/) mengatasi ini dengan **pencocokan pola nama file**. Anda membuat profil: "ketika saya menerima file yang cocok dengan `BCA_*.pdf`, kata sandinya adalah NIK saya". Lain kali file itu datang, Anda menjatuhkannya ke SmartDecrypt dan terbuka dalam hitungan detik.
+[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) mengatasi ini dengan **pencocokan pola nama file**. Anda membuat profil: "ketika saya menerima file yang cocok dengan `BCA_*.pdf`, kata sandinya adalah NIK saya". Lain kali file itu datang, Anda menjatuhkannya ke SmartDecrypt dan terbuka dalam hitungan detik.
 
 ## Yang Baru: Dukungan Penuh 11 Bahasa
 
@@ -48,4 +48,4 @@ Kata sandi disimpan di Apple Keychain atau Windows Credential Manager. Tidak per
 
 SmartDecrypt gratis untuk membuka kunci satu file sekaligus. SmartDecrypt Pro adalah pembelian universal satu kali yang membuka pemrosesan batch. Tanpa langganan.
 
-Unduh [SmartDecrypt PDF ZIP](/id/smartdecrypt/) dari App Store atau Microsoft Store. Pembaruan 11 bahasa sudah tersedia sekarang di semua platform.
+Unduh [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) dari App Store atau Microsoft Store. Pembaruan 11 bahasa sudah tersedia sekarang di semua platform.

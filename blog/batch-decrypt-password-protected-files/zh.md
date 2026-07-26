@@ -10,7 +10,7 @@ iPhone上大多数解密工具一次只处理一个文件。它们没有批量�
 
 SmartDecrypt PDF ZIP CBZ通过两个协同工作的功能解决了这个问题：**批量解密**和**密码配置文件**。一次性选择所有文件，应用配置文件，点击一次即可。
 
-[SmartDecrypt](/zh/smartdecrypt/)完全在设备上处理所有操作——无云服务，无逐文件等待，无上传。
+[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)完全在设备上处理所有操作——无云服务，无逐文件等待，无上传。
 
 ## SmartDecrypt中批量解密的工作原理
 
@@ -82,4 +82,4 @@ Mac的分享扩展也支持多文件：在Finder中选择批次，右键点击�
 
 批量解密将繁琐的数小时工作变成一次点击。SmartDecrypt PDF ZIP CBZ一次性处理您集合中所有受密码保护的PDF、CBZ和ZIP——在iPhone、iPad或Mac上，无需上传任何文件。在App Store中搜索**SmartDecrypt PDF ZIP CBZ**开始使用。CBZ档案解密后，在[BiblioFuse](/zh/)中打开，享受iPhone上最佳的漫画阅读体验。
 
-[SmartDecrypt PDF ZIP CBZ](/zh/smartdecrypt/) — 在 App Store 下载.
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) — 在 App Store 下载.

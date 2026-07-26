@@ -10,7 +10,7 @@ SmartDecrypt PDF ZIP CBZ は、iPhone・iPad・Mac にパスワードプロフ�
 
 iPhone の多くの復号ツールは一度に一ファイルしか処理できず、セッション間での記憶もありません。
 
-SmartDecrypt PDF ZIP CBZ は、パスワードプロファイルでこの問題を解決します。定期的に使うすべてのパスワードを、名前付きで安全にデバイス上に保存できます。[SmartDecrypt](/ja/smartdecrypt/) でプロファイルを一度保存すれば、そのパスワードを二度と入力する必要はありません。
+SmartDecrypt PDF ZIP CBZ は、パスワードプロファイルでこの問題を解決します。定期的に使うすべてのパスワードを、名前付きで安全にデバイス上に保存できます。[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) でプロファイルを一度保存すれば、そのパスワードを二度と入力する必要はありません。
 
 ## パスワードプロファイルの仕組み
 
@@ -80,4 +80,4 @@ SmartDecrypt はファイル名でプロファイルを自動マッチングす�
 
 パスワードプロファイルは SmartDecrypt PDF ZIP CBZ を「設定したら後は自動」の復号システムに変えます。新しいコレクションが届いたときに一度プロファイルを作成すれば、以降そのソースからのすべてのバッチをワンタップで復号できます——iPhone・iPad・Mac を問わず、常にデバイス上で、クラウドへのアップロードなしに。App Store で **SmartDecrypt PDF ZIP CBZ** を検索して今すぐ始めましょう。
 
-[SmartDecrypt PDF ZIP CBZ](/ja/smartdecrypt/) — App Store でダウンロード.
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) — App Store でダウンロード.

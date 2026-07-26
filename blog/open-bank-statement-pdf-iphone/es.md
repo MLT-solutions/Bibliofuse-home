@@ -2,7 +2,7 @@
 
 Cada mes, tu banco envía un PDF. Está bloqueado con una contraseña — tu número de identidad, fecha de nacimiento o los últimos seis dígitos de tu número de cuenta. La has escrito antes, pero no recuerdas cuál variante es la correcta.
 
-[SmartDecrypt PDF ZIP](/es/smartdecrypt/) resuelve esto: guarda el patrón de contraseña una vez por banco o institución. Cada extracto futuro de esa fuente se desbloquea automáticamente cuando lo arrastras.
+[SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) resuelve esto: guarda el patrón de contraseña una vez por banco o institución. Cada extracto futuro de esa fuente se desbloquea automáticamente cuando lo arrastras.
 
 ## Por Qué los PDFs Bancarios Llevan Contraseña
 
@@ -31,4 +31,4 @@ Las contraseñas se almacenan en Apple Keychain. Nunca se envían a ningún serv
 
 SmartDecrypt es gratuito para desbloquear un archivo a la vez. SmartDecrypt Pro añade el procesamiento por lotes con una compra única. Sin suscripción.
 
-Descarga [SmartDecrypt PDF ZIP](/es/smartdecrypt/) desde el App Store o Microsoft Store.
+Descarga [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) desde el App Store o Microsoft Store.

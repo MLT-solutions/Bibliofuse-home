@@ -1,6 +1,6 @@
 # Como Desbloquear um PDF com Senha no iPhone e no Mac
 
-[SmartDecrypt PDF ZIP CBZ](/pt/smartdecrypt/) remove senhas de arquivos PDF protegidos no iPhone, iPad e Mac sem enviar seus documentos para nenhum servidor externo. Ele também desbloqueia arquivos ZIP e CBZ protegidos por senha e pode descriptografar vários arquivos de uma só vez com o modo em lote integrado. Se você já precisou desbloquear um PDF com senha no iPhone e não encontrou uma solução simples, o SmartDecrypt é a ferramenta dedicada criada exatamente para isso.
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) remove senhas de arquivos PDF protegidos no iPhone, iPad e Mac sem enviar seus documentos para nenhum servidor externo. Ele também desbloqueia arquivos ZIP e CBZ protegidos por senha e pode descriptografar vários arquivos de uma só vez com o modo em lote integrado. Se você já precisou desbloquear um PDF com senha no iPhone e não encontrou uma solução simples, o SmartDecrypt é a ferramenta dedicada criada exatamente para isso.
 
 ## Por Que um PDF com Senha Bloqueia Você no iPhone?
 
@@ -76,4 +76,4 @@ O SmartDecrypt requer a senha correta para descriptografar um arquivo — não �
 
 Se PDFs protegidos por senha são um ponto de atrito recorrente no seu iPhone ou Mac, o SmartDecrypt PDF ZIP CBZ é a solução mais eficiente disponível. Ele funciona inteiramente no dispositivo, lida com PDF, ZIP e CBZ, suporta descriptografia em lote e leva menos de um minuto para usar. Pesquise por **SmartDecrypt PDF ZIP CBZ** na App Store para começar.
 
-[SmartDecrypt PDF ZIP CBZ](/pt/smartdecrypt/) — disponível na App Store.
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) — disponível na App Store.

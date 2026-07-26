@@ -2,7 +2,7 @@
 
 Todo mês, seu banco envia um PDF. Ele está bloqueado com uma senha — seu CPF, data de nascimento ou os últimos seis dígitos do seu número de conta. Você já digitou antes, mas não recentemente o suficiente para lembrar de imediato.
 
-[SmartDecrypt PDF ZIP](/pt/smartdecrypt/) resolve isso: salve o padrão de senha uma vez por banco ou instituição. Cada próximo extrato dessa fonte se desbloqueia automaticamente quando você o joga dentro.
+[SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) resolve isso: salve o padrão de senha uma vez por banco ou instituição. Cada próximo extrato dessa fonte se desbloqueia automaticamente quando você o joga dentro.
 
 ## Como Configurar o SmartDecrypt para Extratos Bancários
 
@@ -26,4 +26,4 @@ Senhas são armazenadas no Apple Keychain. Nunca são enviadas a nenhum servidor
 
 SmartDecrypt é gratuito para desbloquear um arquivo por vez. SmartDecrypt Pro adiciona processamento em lote com uma compra única. Sem assinatura.
 
-Baixe [SmartDecrypt PDF ZIP](/pt/smartdecrypt/) na App Store ou Microsoft Store.
+Baixe [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) na App Store ou Microsoft Store.

@@ -1,6 +1,6 @@
 # SmartDecrypt PDF ZIP теперь доступен на португальском, испанском, индонезийском и китайском
 
-SmartDecrypt PDF ZIP CBZ теперь поддерживает португальский, испанский, bahasa Indonesia и упрощённый китайский — полный интерфейс приложения доступен на четырёх новых языках. Приложение разблокирует защищённые паролем PDF, ZIP и 7z-архивы на iPhone, iPad, Mac и Windows полностью на устройстве, без загрузки файлов. [Скачайте SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) в App Store или получите в Microsoft Store для Windows. Посетите [страницу SmartDecrypt](/ru/smartdecrypt/) для ознакомления со всеми функциями.
+SmartDecrypt PDF ZIP CBZ теперь поддерживает португальский, испанский, bahasa Indonesia и упрощённый китайский — полный интерфейс приложения доступен на четырёх новых языках. Приложение разблокирует защищённые паролем PDF, ZIP и 7z-архивы на iPhone, iPad, Mac и Windows полностью на устройстве, без загрузки файлов. [Скачайте SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) в App Store или получите в Microsoft Store для Windows. Посетите [страницу SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) для ознакомления со всеми функциями.
 
 ## Почему эти языки были важны
 
@@ -56,4 +56,4 @@ SmartDecrypt хранит именованные профили паролей �
 - **App Store для iOS и Mac:** [Скачать SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)
 - **Microsoft Store:** Доступно на Windows — найдите SmartDecrypt PDF ZIP CBZ
 
-Посетите [раздел SmartDecrypt на bibliofuse.com](/ru/smartdecrypt/), чтобы ознакомиться с полным описанием функций перед загрузкой.
+Посетите [страницу SmartDecrypt в App Store](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229), чтобы ознакомиться с полным описанием функций перед загрузкой.

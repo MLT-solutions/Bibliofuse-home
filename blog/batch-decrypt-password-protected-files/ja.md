@@ -10,7 +10,7 @@ iPhoneのほとんどの復号化ツールはファイルを1つずつ処理し�
 
 SmartDecrypt PDF ZIP CBZは、2つの機能の組み合わせでこれを解決します：**一括復号化**と**パスワードプロファイル**。すべてのファイルを一度に選択し、プロファイルを適用して1回タップするだけです。
 
-[SmartDecrypt](/ja/smartdecrypt/)はすべてをデバイス上で処理します——クラウドサービスなし、ファイルごとの待機なし、アップロードなし。
+[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)はすべてをデバイス上で処理します——クラウドサービスなし、ファイルごとの待機なし、アップロードなし。
 
 ## SmartDecryptでの一括復号化の仕組み
 
@@ -80,4 +80,4 @@ BiblioFuseを使ってiPhoneにデジタルコミックライブラリを構築�
 
 一括復号化は、退屈な数時間の作業を1回のタップに変えます。SmartDecrypt PDF ZIP CBZはコレクション内のすべてのパスワード保護されたPDF、CBZ、ZIPを一度に処理します——iPhone、iPad、Macで、ファイルを1つもアップロードせずに。App Storeで**SmartDecrypt PDF ZIP CBZ**を検索して始めましょう。CBZアーカイブを復号化したら、[BiblioFuse](/ja/)で開いてiPhoneで最高のコミック読書体験をお楽しみください。
 
-[SmartDecrypt PDF ZIP CBZ](/ja/smartdecrypt/) — App Store でダウンロード.
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) — App Store でダウンロード.

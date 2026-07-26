@@ -2,7 +2,7 @@
 
 매달 은행에서 PDF가 옵니다. 주민등록번호, 생년월일, 또는 계좌번호 뒷자리로 잠겨 있습니다. 전에 입력한 적이 있지만 바로 기억이 안 납니다.
 
-[SmartDecrypt PDF ZIP](/ko/smartdecrypt/)이 이를 해결합니다. 은행이나 기관마다 비밀번호 패턴을 한 번만 저장해두면, 그 후부터는 파일을 넣는 것만으로 자동으로 잠금이 해제됩니다.
+[SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)이 이를 해결합니다. 은행이나 기관마다 비밀번호 패턴을 한 번만 저장해두면, 그 후부터는 파일을 넣는 것만으로 자동으로 잠금이 해제됩니다.
 
 ## 은행 명세서를 위한 SmartDecrypt 설정
 
@@ -26,4 +26,4 @@ SmartDecrypt를 열고 +를 탭해 새 프로필을 추가합니다. 이름, 파
 
 SmartDecrypt는 파일 한 개씩 무료. SmartDecrypt Pro는 배치 처리를 활성화하는 일회성 구매입니다. 구독 없음.
 
-App Store 또는 Microsoft Store에서 [SmartDecrypt PDF ZIP](/ko/smartdecrypt/)을 다운로드하세요.
+App Store 또는 Microsoft Store에서 [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)을 다운로드하세요.
