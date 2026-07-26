@@ -264,76 +264,94 @@
       "table": {
         "eyebrow": "比较应用",
         "title": "选择合适的 BiblioFuse 应用。",
-        "desc": "先看你的任务：阅读漫画、搜索小说、解锁文档、清理重复文件，或快速使用浏览器工具。",
+        "desc": "从你的使用场景开始：阅读漫画、搜索小说、解锁文档、清理重复文件，或使用快速浏览器工具。",
         "feature": "功能",
         "badges": {
           "universal": "通用购买",
           "edition": "版本",
-          "free": "免费",
-          "msStore": "Microsoft Store"
+          "msStore": "Microsoft Store",
+          "nas": "自托管 · 免费"
         },
         "editions": {
           "apple": "BiblioFuse Reader iOS / macOS",
+          "pc": "BiblioFuse Reader PC",
           "android": "BiblioFuse Reader Android",
-          "web": "网页工具",
-          "pc": "BiblioFuse Reader PC"
+          "nas": "BiblioFuse NAS"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac · Vision Pro",
-          "android": "手机 · 平板",
-          "web": "浏览器 · 所有设备",
-          "pc": "Windows"
+          "apple": "iPhone · iPad · Mac · Vision Pro · Apple TV",
+          "pc": "Windows",
+          "android": "手机 · 平板 · Android TV",
+          "nas": "Docker · Synology"
         },
-        "unique": "独特",
-        "where": "下载途径",
-        "iosNote": "iOS 和 Mac",
-        "cbz": "CBZ 版本",
-        "epub": "EPUB 版本",
         "rows": [
           [
-            "压缩 / 合并",
-            "EPUB / CBZ / CBR",
-            "EPUB / CBZ / CBR",
-            "EPUB / CBZ"
+            "阅读格式",
+            "iPhone、iPad、Mac 和 Vision Pro|EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT||Apple TV|仅支持 CBZ/CBR/ZIP/RAR",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "手机和平板|EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT||Android TV|仅支持 CBZ/CBR/ZIP/RAR",
+            "EPUB · CBZ · CBR · RAR · ZIP · TXT|浏览器阅读器，暂不支持 PDF"
           ],
           [
-            "支持格式",
-            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · ZIP"
+            "压缩/合并工具",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "-"
           ],
           [
             "阅读器功能",
-            "TTS、peek zoom、自动滚动、进度、评分、标签",
+            "TTS、Peek Zoom、自动滚动、进度、评分、标签",
             "TTS、自动滚动、进度、评分、标签",
-            "Peek zoom、自动滚动、进度、评分、标签"
+            "TTS、Peek Zoom、自动滚动、进度、评分、标签",
+            "连续滚动、进度、评分、标签|不支持 TTS 或 Peek Zoom"
           ],
           [
-            "PC / Mac → iPhone 与 Vision Pro 串流",
-            "Tailscale 开启 — 家中及5G远程||不使用 Tailscale — 仅家中 Wi-Fi（暂不在开发计划中）",
-            "Tailscale 开启 — 家中及5G远程||不使用 Tailscale — 仅家中 Wi-Fi（暂不在开发计划中）",
+            "手柄/外部输入",
+            "Xbox 风格蓝牙手柄|可自定义 — iPhone、iPad、Mac、Vision Pro 和 Apple TV",
+            "Xbox 风格蓝牙手柄|固定按键映射",
+            "Android TV|内置方向键/遥控器导航||手机和平板|功能已构建，尚未接入阅读器操作",
+            "-"
+          ],
+          [
+            "可以托管书库",
+            "仅限 Mac|iPhone、iPad、Vision Pro 和 Apple TV 改为从主机流式传输",
+            "支持",
+            "-",
+            "支持|Docker 和 Synology"
+          ],
+          [
+            "从主机流式传输",
+            "iPhone、iPad 和 Vision Pro|通过 iCloud + Tailscale 自动连接，或使用本地 Wi-Fi / 手动 Tailscale||Apple TV|仅限本地 Wi-Fi — 不支持 iCloud 或 Tailscale",
+            "-",
+            "Android 手机|本地 Wi-Fi 或手动 Tailscale，无自动 iCloud 发现功能||Android TV|仅限本地 Wi-Fi",
             "-"
           ],
           [
             "书库来源",
-            "本地 + iCloud + SMB|Mac：原生 · iOS：通过串流",
-            "本地 + iCloud + SMB",
-            "本地 + 外部文件夹"
+            "本地 + iCloud + SMB/NAS|Mac：原生支持 · iOS/Vision Pro：通过流式传输",
+            "本地 + iCloud + SMB/NAS",
+            "本地 + 外部文件夹",
+            "自有的连接/网络存储|非 iCloud"
           ],
           [
             "iCloud 书架",
+            "跨设备同步|Apple TV 不支持 — 无 iCloud",
             "跨设备同步",
-            "跨设备同步",
+            "-",
             "-"
           ],
           [
             "语言支持",
-            "11种语言|EN ES FR NL PT RU ZH JA KO ID MS",
-            "11种语言|EN ES FR NL PT RU ZH JA KO ID MS",
-            "12种语言|EN ES FR NL PT RU ZH JA KO ID MS DE"
+            "11 种语言|EN ES FR NL PT RU ZH JA KO ID MS",
+            "11 种语言|EN ES FR NL PT RU ZH JA KO ID MS",
+            "12 种语言|EN ES FR NL PT RU ZH JA KO ID MS DE",
+            "-"
           ]
         ],
-        "pcNotify": "上线时通知我"
+        "unique": "独有",
+        "where": "获取方式",
+        "iosNote": "iOS 和 Mac"
       },
       "toolsSection": {
         "eyebrow": "独立工具",
@@ -1782,6 +1800,10 @@
             "title": "眼动追踪与捏合",
             "body": "注视并捏合即可翻页，无需控制器。"
           },
+          "lookScroll": {
+            "title": "凝视边缘即可滚动",
+            "body": "将视线停留在顶部或底部边缘附近，页面就会自动滚动——无需捏合手势。"
+          },
           "devices": {
             "title": "鼠标、触控板或键盘",
             "body": "Page Down、空格键、滚轮或点击，与 Mac 上一样。"
@@ -1794,6 +1816,39 @@
         "streamNote": "从 Mac 或 PC 串流你的图书馆，让 Vision Pro 的存储空间保持空闲——采用 BiblioFuse 在 iPhone 和 iPad 上使用的同一条 Tailscale 私有通道。",
         "imageAltModes": "BiblioFuse 在 Apple Vision Pro 上展示空间书架、网格视图和倾斜墙面等图书馆布局",
         "imageAltReading": "在 Apple Vision Pro 上使用 BiblioFuse 阅读漫画，配备眼动追踪和输入方式选项"
+      },
+      "usageGuide": {
+        "eyebrow": "五种阅读方式",
+        "title": "如何使用 BiblioFuse Comic Reader？",
+        "desc": "点击下方任意问题查看简短答案。更喜欢图片？每个答案都链接到完整插图。",
+        "viewImageLabel": "查看插图（英文）",
+        "items": {
+          "mobile": {
+            "q": "我可以只把书放在手机上，不用服务器吗？",
+            "a": "可以——直接将漫画和书籍存储在 iPhone、iPad、visionOS 或 Android 上。所有功能均可离线使用，阅读进度保存在设备本地。无需服务器，无需设置。",
+            "imageAlt": "信息图：将书籍保存在移动设备上——iPhone、iPad、visionOS 和 Android 上的离线书库"
+          },
+          "biggerScreen": {
+            "q": "我可以在比手机更大的屏幕上阅读吗？",
+            "a": "可以——安装 Mac 或 PC 应用，或在 NAS 上打开免费内置的浏览器阅读器。你的书库和阅读进度会保存在你用作主机的电脑或 NAS 上。",
+            "imageAlt": "信息图：通过 Mac 应用、PC 应用或 NAS 浏览器阅读器在更大的屏幕上阅读"
+          },
+          "stream": {
+            "q": "我能不占用手机存储空间就访问整个书库吗？",
+            "a": "可以——从 Mac、PC 或 Synology NAS 主机流式传输到 iPhone、iPad、visionOS 或 Android。它会在家庭 Wi-Fi 上自动连接，并可选配 Tailscale 实现离家访问，阅读设备上不会永久保存任何内容。",
+            "imageAlt": "信息图：从 Mac、PC 或 Synology 流式传输书库，无需在手机上保存书籍"
+          },
+          "tv": {
+            "q": "我可以在电视上看漫画吗？",
+            "a": "可以——Apple TV 和 Android TV 应用会通过家庭 Wi-Fi 从 Mac、PC 或 Synology 主机流式传输你的书库，并提供适合电视的导航方式。电视上不会保存任何内容，你的进度会同步到其他设备。",
+            "imageAlt": "信息图：在 Apple TV 和 Android TV 上享受大屏幕轻松阅读"
+          },
+          "icloud": {
+            "q": "如何避免设备存储空间不足？",
+            "a": "将书库保存在你自己的 iCloud 存储中，而不是把每本书都下载到每台设备上。打开书籍时会自动加载，不需要时会自动卸载，同时阅读进度会在 iPhone、iPad、visionOS、Mac 和 PC 之间保持同步。",
+            "imageAlt": "信息图：使用 iCloud 节省设备存储空间，自动加载并同步阅读进度"
+          }
+        }
       }
     },
     "androidInterest": {

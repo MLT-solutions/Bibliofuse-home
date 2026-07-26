@@ -594,66 +594,89 @@
         "badges": {
           "universal": "Universal purchase",
           "edition": "Edition",
-          "msStore": "Microsoft Store"
+          "msStore": "Microsoft Store",
+          "nas": "Self-hosted · Free"
         },
         "editions": {
           "apple": "BiblioFuse Reader iOS / macOS",
           "pc": "BiblioFuse Reader PC",
-          "android": "BiblioFuse Reader Android"
+          "android": "BiblioFuse Reader Android",
+          "nas": "BiblioFuse NAS"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac · Vision Pro",
+          "apple": "iPhone · iPad · Mac · Vision Pro · Apple TV",
           "pc": "Windows",
-          "android": "Phone · Tablet"
+          "android": "Phone · Tablet · Android TV",
+          "nas": "Docker · Synology"
         },
         "rows": [
           [
-            "Compress / merge",
-            "EPUB / CBZ / CBR",
-            "EPUB / CBZ / CBR",
-            "EPUB / CBZ"
+            "Read formats",
+            "iPhone, iPad, Mac & Vision Pro|EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT||Apple TV|CBZ/CBR/ZIP/RAR only",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "Phone & tablet|EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT||Android TV|CBZ/CBR/ZIP/RAR only",
+            "EPUB · CBZ · CBR · RAR · ZIP · TXT|Browser reader, no PDF yet"
           ],
           [
-            "Read formats",
-            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · ZIP"
+            "Compress / merge tools",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "-"
           ],
           [
             "Reader features",
             "TTS, peek zoom, auto-scroll, progress, ratings, tags",
             "TTS, auto-scroll, progress, ratings, tags",
-            "Peek zoom, auto-scroll, progress, ratings, tags"
+            "TTS, peek zoom, auto-scroll, progress, ratings, tags",
+            "Continuous-scroll, progress, ratings, tags|No TTS or peek zoom"
           ],
           [
-            "PC / Mac → iPhone & Vision Pro streaming",
-            "Tailscale ON — home & 5G remote||No Tailscale — home Wi-Fi only (not in roadmap yet)",
-            "Tailscale ON — home & 5G remote||No Tailscale — home Wi-Fi only (not in roadmap yet)",
+            "Controller / external input",
+            "Xbox-style Bluetooth controller|Customizable — iPhone, iPad, Mac, Vision Pro & Apple TV",
+            "Xbox-style Bluetooth controller|Fixed bindings",
+            "Android TV|D-pad/remote navigation, built-in||Phone & tablet|Framework built, not yet wired to reader actions",
+            "-"
+          ],
+          [
+            "Can host a library",
+            "Mac only|iPhone, iPad, Vision Pro & Apple TV stream from a host instead",
+            "Yes",
+            "-",
+            "Yes|Docker & Synology"
+          ],
+          [
+            "Stream from a host",
+            "iPhone, iPad & Vision Pro|Automatic via iCloud + Tailscale, or Local Wi-Fi / Manual Tailscale||Apple TV|Local Wi-Fi only — no iCloud or Tailscale",
+            "-",
+            "Android phone|Local Wi-Fi or Manual Tailscale, no automatic iCloud discovery||Android TV|Local Wi-Fi only",
             "-"
           ],
           [
             "Library sources",
-            "Local + iCloud + SMB|Mac: native · iOS: via streaming",
-            "Local + iCloud + SMB",
-            "Local + external folders"
+            "Local + iCloud + SMB/NAS|Mac: native · iOS/Vision Pro: via streaming",
+            "Local + iCloud + SMB/NAS",
+            "Local + external folders",
+            "Own attached/network storage|Not iCloud"
           ],
           [
             "iCloud bookshelf",
+            "Cross-device sync|Not on Apple TV — no iCloud",
             "Cross-device sync",
-            "Cross-device sync",
+            "-",
             "-"
           ],
           [
             "Language support",
             "11 languages|EN ES FR NL PT RU ZH JA KO ID MS",
             "11 languages|EN ES FR NL PT RU ZH JA KO ID MS",
-            "12 languages|EN ES FR NL PT RU ZH JA KO ID MS DE"
+            "12 languages|EN ES FR NL PT RU ZH JA KO ID MS DE",
+            "-"
           ]
         ],
         "unique": "Unique",
         "where": "Where to get it",
-        "iosNote": "iOS and Mac",
-        "pcNotify": "Notify me when available"
+        "iosNote": "iOS and Mac"
       },
       "toolsSection": {
         "eyebrow": "Standalone tools",
@@ -1604,6 +1627,10 @@
             "title": "Eye tracking & pinch",
             "body": "Look and pinch to turn pages — no controller needed."
           },
+          "lookScroll": {
+            "title": "Stare edge to scroll",
+            "body": "Rest your gaze near the top or bottom edge and the page scrolls on its own — no pinch needed."
+          },
           "devices": {
             "title": "Mouse, trackpad, or keyboard",
             "body": "Page Down, Space, scroll wheel, or click, just like on Mac."
@@ -1616,6 +1643,39 @@
         "streamNote": "Stream your library from a Mac or PC so Vision Pro storage stays free — the same private Tailscale route BiblioFuse uses on iPhone and iPad.",
         "imageAltModes": "BiblioFuse on Apple Vision Pro showing Spatial Bookshelves, Grid View, and Slanted Wall library layouts",
         "imageAltReading": "Reading a comic in BiblioFuse on Apple Vision Pro with eye tracking and input method options"
+      },
+      "usageGuide": {
+        "eyebrow": "Five ways to read",
+        "title": "How can you use BiblioFuse Comic Reader?",
+        "desc": "Tap any question below for a short answer. Prefer a picture? Every answer links to a full illustration.",
+        "viewImageLabel": "View illustration (English)",
+        "items": {
+          "mobile": {
+            "q": "Can I just keep my books on my phone, with no server?",
+            "a": "Yes — store your comics and books directly on iPhone, iPad, visionOS, or Android. Everything works offline, and your reading progress stays on the device. No server, no setup.",
+            "imageAlt": "Infographic: keep books on your mobile device — offline library on iPhone, iPad, visionOS, and Android"
+          },
+          "biggerScreen": {
+            "q": "Can I read on a bigger screen than my phone?",
+            "a": "Yes — install the Mac or PC app, or open the free built-in browser reader on a NAS. Your library and reading progress stay with whichever computer or NAS you use to host it.",
+            "imageAlt": "Infographic: read on a bigger screen using the Mac app, PC app, or NAS browser reader"
+          },
+          "stream": {
+            "q": "Can I access my whole library without filling up my phone's storage?",
+            "a": "Yes — stream from a Mac, PC, or Synology NAS host to iPhone, iPad, visionOS, or Android. It connects automatically over your home Wi-Fi, with optional Tailscale for access away from home, and nothing is permanently stored on the reading device.",
+            "imageAlt": "Infographic: stream your library from Mac, PC, or Synology without keeping books on your phone"
+          },
+          "tv": {
+            "q": "Can I read comics on my TV?",
+            "a": "Yes — the Apple TV and Android TV apps stream your library from a Mac, PC, or Synology host over your home Wi-Fi, with TV-friendly navigation. Nothing is stored on the TV, and your progress carries over to your other devices.",
+            "imageAlt": "Infographic: lean-back big-screen reading on Apple TV and Android TV"
+          },
+          "icloud": {
+            "q": "How do I avoid running out of storage on my devices?",
+            "a": "Keep your library in your own iCloud storage instead of downloading every book to every device. Books load automatically when you open them and unload when you don't need them, while your reading progress stays in sync across iPhone, iPad, visionOS, Mac, and PC.",
+            "imageAlt": "Infographic: use iCloud to save device storage with auto-load and synced reading progress"
+          }
+        }
       },
       "faqTitle": "Common questions",
       "faq": [

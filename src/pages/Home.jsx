@@ -15,6 +15,9 @@ const archiveMsUrl = 'https://apps.microsoft.com/detail/9n2jb4k5wvcq';
 const smartDecryptMsUrl = 'https://apps.microsoft.com/detail/9p9bfkr5zdz8';
 const grepTagReaderUrl = 'https://apps.apple.com/app/id6779977609';
 const grepTagMsStoreUrl = 'https://apps.microsoft.com/store/detail/9MT6VDXXZ3RH';
+// Mirrors HOSTS.docker/synology.appLink in ReaderFamilyGuide.jsx — keep in sync.
+const dockerUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution';
+const synologyUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution/releases';
 const imageBase = '/image/offline-apps/bibliofuse';
 
 function StoreBadge({ type, size = 'lg', className = '' }) {
@@ -682,11 +685,12 @@ function ComparisonTable() {
     { key: 'apple',   name: table.editions.apple,   subtitle: table.subtitles.apple,   badge: table.badges.universal, tint: 'blue' },
     { key: 'pc',      name: table.editions.pc,      subtitle: table.subtitles.pc,      badge: table.badges.msStore,    tint: 'orange' },
     { key: 'android', name: table.editions.android, subtitle: table.subtitles.android, badge: table.badges.edition,   tint: 'teal' },
+    { key: 'nas',     name: table.editions.nas,     subtitle: table.subtitles.nas,     badge: table.badges.nas,       tint: 'violet' },
   ];
   const rows = table.rows.map((row, index) => ({
     label: row[0],
-    highlight: index === 3,
-    cells: { apple: row[1], pc: row[2], android: row[3] },
+    highlight: index === 5,
+    cells: { apple: row[1], pc: row[2], android: row[3], nas: row[4] },
   }));
 
   return (
@@ -699,9 +703,10 @@ function ComparisonTable() {
         </div>
         <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-xl">
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[640px] table-fixed border-collapse">
+            <table className="w-full min-w-[760px] table-fixed border-collapse">
               <colgroup>
-                <col className="w-[200px]" />
+                <col className="w-[190px]" />
+                <col />
                 <col />
                 <col />
                 <col />
@@ -749,6 +754,12 @@ function ComparisonTable() {
                   </td>
                   <td className="px-4 py-5 text-center align-middle">
                     <StoreBadge type="play" size="sm" />
+                  </td>
+                  <td className="px-4 py-5 text-center align-middle">
+                    <div className="flex flex-col items-center gap-1.5">
+                      <a href={dockerUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-blue-600 hover:text-blue-700">Docker →</a>
+                      <a href={synologyUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-blue-600 hover:text-blue-700">Synology →</a>
+                    </div>
                   </td>
                 </tr>
               </tbody>

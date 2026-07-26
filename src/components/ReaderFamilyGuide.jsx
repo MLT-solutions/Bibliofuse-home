@@ -73,6 +73,23 @@ import React, { useMemo, useState } from 'react';
 // in host-client-capabilities.csv rather than silently applying a claim
 // that Android TV streaming works when nothing else in the same review says
 // it does — confirm with the product owner before flipping this.
+//
+// 2026-07-24, fifth pass — product owner confirmed two capability launches:
+// Docker/other NAS now supports native Local Wi-Fi streaming to clients
+// (was `soon`), and the Android phone streaming client has shipped (Local
+// Wi-Fi + Manual Tailscale; no iCloud relay since Android has no iCloud
+// Documents access). CLIENTS.androidphone.canStream flipped to true.
+// Android TV remains unresolved per the third-pass note above — not part of
+// this update. Status column removed from the matrix table (redundant with
+// the per-cell "soon" glyph); table itself is now collapsed by default with
+// an expand toggle since it had grown long.
+//
+// 2026-07-24, sixth pass — product owner confirmed Android TV streaming has
+// shipped too (the third-pass hold applied). CLIENTS.androidtv.canStream
+// flipped to true, lanOnly: true added — Local Wi-Fi only, no Tailscale.
+// MATRIX_ROWS' Android TV row already only had streaming.localWifi set (no
+// manualTs), so the coverage table needed no change — only the interactive
+// picker's client list was stale.
 
 const MODE_INFO = {
   'icloud-ts': {
@@ -105,7 +122,6 @@ const HOSTS = {
     tailscaleCapable: false,
     icloudRelay: false,
     note: 'Free self-hosted server and browser reader — no subscription needed to host or read in the browser.',
-    nativeStreaming: 'unsupported',
     appLink: 'https://github.com/MLT-solutions/bibliofuse-nas-distribution',
     appLinkLabel: 'Get BiblioFuse NAS (Docker) →',
   },
@@ -115,8 +131,8 @@ const CLIENTS = {
   iphone_ipad: { label: 'iPhone / iPad', canStream: true, isAppleICloud: true },
   visionpro: { label: 'Apple Vision Pro', canStream: true, isAppleICloud: true, note: 'Also a standalone reader — this only applies when streaming from a host.' },
   appletv: { label: 'Apple TV', canStream: true, lanOnly: true, note: 'Companion app — streams only, no local library on the box itself. Local Wi-Fi (LAN) only: tvOS has no iCloud Documents entitlement and the Tailscale path is built but disabled pending an upstream Tailscale tvOS bug, so Apple TV can’t discover a host outside the house yet.' },
-  androidphone: { label: 'Android phone', canStream: false, note: 'Streaming client is coming soon — standalone reading only today.' },
-  androidtv: { label: 'Android TV', canStream: false, note: 'Coming soon — planned as Local Wi-Fi only, not Tailscale.' },
+  androidphone: { label: 'Android phone', canStream: true, note: 'Local Wi-Fi or Manual Tailscale only — no automatic iCloud discovery, since Android has no iCloud Documents access.' },
+  androidtv: { label: 'Android TV', canStream: true, lanOnly: true, note: 'Companion app — Local Wi-Fi only, no Tailscale support.' },
 };
 
 // Matrix data reviewed and supplied by the product owner, 2026-07-20 (fourth
@@ -127,55 +143,55 @@ const CLIENTS = {
 // mark regardless of host/client kind), or `false`/omitted (not applicable).
 const MATRIX_ROWS = [
   {
-    platform: 'Docker (NAS)', kind: 'host', status: 'live',
+    platform: 'Docker (NAS)', kind: 'host',
     role: { hosting: true, browser: true },
     content: { nas: true },
-    streaming: { localWifi: 'soon' },
+    streaming: { localWifi: true },
   },
   {
-    platform: 'Synology NAS (SPK)', kind: 'host', status: 'live',
+    platform: 'Synology NAS (SPK)', kind: 'host',
     role: { hosting: true, browser: true },
     content: { nas: true },
     streaming: { localWifi: true, manualTs: true },
   },
   {
-    platform: 'macOS', kind: 'host', status: 'live',
+    platform: 'macOS', kind: 'host',
     role: { hosting: true, standaloneNo: true },
     content: { local: true, nas: true, icloud: true },
     streaming: { icloudTs: true, localWifi: true, manualTs: true },
   },
   {
-    platform: 'Windows PC', kind: 'host', status: 'live',
+    platform: 'Windows PC', kind: 'host',
     role: { hosting: true, standaloneNo: true },
     content: { local: true, nas: true, icloud: true },
     streaming: { icloudTs: true, localWifi: true, manualTs: true },
   },
   {
-    platform: 'iPhone / iPad', kind: 'client', status: 'live',
+    platform: 'iPhone / iPad', kind: 'client',
     role: { standaloneHave: true },
     content: { local: true, icloud: true, host: true },
     streaming: { icloudTs: true, localWifi: true, manualTs: true },
   },
   {
-    platform: 'visionOS', kind: 'client', status: 'live',
+    platform: 'visionOS', kind: 'client',
     role: { standaloneHave: true },
     content: { local: true, icloud: true, host: true },
     streaming: { icloudTs: true, localWifi: true, manualTs: true },
   },
   {
-    platform: 'Android phone', kind: 'client', status: 'live',
+    platform: 'Android phone', kind: 'client',
     role: { standaloneNo: true },
-    content: { local: true, host: 'soon' },
-    streaming: { localWifi: 'soon' },
+    content: { local: true, host: true },
+    streaming: { localWifi: true, manualTs: true },
   },
   {
-    platform: 'tvOS (Apple TV)', kind: 'client', status: 'soon',
+    platform: 'tvOS (Apple TV)', kind: 'client',
     role: {},
     content: { host: true },
     streaming: { localWifi: true },
   },
   {
-    platform: 'Android TV', kind: 'client', status: 'soon',
+    platform: 'Android TV', kind: 'client',
     role: {},
     content: { host: true },
     streaming: { localWifi: true },
@@ -199,16 +215,6 @@ const STREAM_COLS = [
   { key: 'localWifi', label: 'Local Wi-Fi' },
   { key: 'manualTs', label: 'Manual Tailscale' },
 ];
-
-function StatusPill({ status, label }) {
-  const styles = {
-    live: 'bg-emerald-50 text-emerald-700',
-    new: 'bg-blue-50 text-blue-700',
-    soon: 'bg-slate-100 text-slate-500',
-  };
-  const text = label || (status === 'live' ? 'Live' : status === 'new' ? 'New' : 'Coming soon');
-  return <span className={`inline-flex rounded-full px-2 py-0.5 text-[10px] font-black uppercase tracking-wider ${styles[status]}`}>{text}</span>;
-}
 
 function CheckCell({ value }) {
   if (!value) return <td className="px-3 py-2.5 text-center"></td>;
@@ -241,7 +247,6 @@ function CoverageTable() {
               <th colSpan={ROLE_COLS.length} className="border-b border-blue-200 bg-blue-50 px-3 py-1.5 text-center text-[11px] font-black uppercase tracking-wider text-blue-700">Role</th>
               <th colSpan={CONTENT_COLS.length} className="border-b border-emerald-200 bg-emerald-50 px-3 py-1.5 text-center text-[11px] font-black uppercase tracking-wider text-emerald-700">Content source support</th>
               <th colSpan={STREAM_COLS.length} className="border-b border-slate-300 bg-slate-100 px-3 py-1.5 text-center text-[11px] font-black uppercase tracking-wider text-slate-600">Streaming connection modes</th>
-              <th rowSpan={2} className="border-b border-slate-200 bg-slate-900 px-3 py-2.5 text-center text-xs font-bold uppercase tracking-wider text-white">Status</th>
             </tr>
             <tr>
               {ROLE_COLS.map((c) => (
@@ -264,7 +269,6 @@ function CoverageTable() {
                   {ROLE_COLS.map((c) => <CheckCell key={c.key} value={row.role[c.key]} />)}
                   {CONTENT_COLS.map((c) => <CheckCell key={c.key} value={row.content[c.key]} />)}
                   {STREAM_COLS.map((c) => <StreamCell key={c.key} value={row.streaming[c.key]} kind={row.kind} />)}
-                  <td className="px-3 py-2.5 text-center"><StatusPill status={row.status} /></td>
                 </tr>
               );
             })}
@@ -407,9 +411,17 @@ function ReaderFamilyGuide() {
           </p>
         </div>
 
-        <div className="mb-14">
-          <CoverageTable />
-        </div>
+        <details className="group mb-14">
+          <summary className="flex cursor-pointer list-none items-center justify-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-700">
+            See the full platform coverage table
+            <svg className="flex-shrink-0 transition-transform group-open:rotate-180" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </summary>
+          <div className="mt-6">
+            <CoverageTable />
+          </div>
+        </details>
 
         <div className="rounded-3xl border border-slate-200 bg-[#f5f8ff] p-6 sm:p-8">
           <div className="grid gap-6 sm:grid-cols-2">

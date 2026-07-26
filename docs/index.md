@@ -12,6 +12,27 @@ favor of their listing on mlogictech.com/products. Their bibliofuse.com routes
 stub instead; `/changelog` and `/privacy` sub-routes for both are untouched (still the
 real App Store-facing compliance pages). See `app-pages.md`.
 
+## Sibling product repos (local checkout paths)
+
+This site makes specific capability claims (supported formats, streaming modes,
+controller support, etc.) about apps whose actual source lives in sibling repos, not
+here. **Before writing or editing a marketing claim about what an app supports,
+check the relevant repo below rather than assuming or trusting an older doc/comment
+in this repo** — capabilities ship faster than this site's copy gets updated, in
+both directions (features added, and claims that were once true going stale).
+
+| Repo (under `~/GitHub/`) | Covers | Notes |
+|---|---|---|
+| `bibliofuse_iosv2` | iPhone, iPad, Mac, Apple Vision Pro, Apple TV (tvOS) | Native Swift/SwiftUI. `docs/features/` has per-feature docs (e.g. `ios-controller-input.md`, `universal-input-mapping.md`, `mac-remote-streaming.md`). tvOS reader is CBZ/CBR/ZIP/RAR only — see `docs/tvos-streaming-reader-go-no-go-port-plan.md`. |
+| `bibliofuse-windows` | Windows PC (the "PC" column) | Native C#/WinUI. `docs/features/universal-input-mapping.md` covers its Xbox-controller support (fixed bindings, ported from the Apple repo's "Gold Controller Default"). |
+| `bibliofuse-android-native` | Android phone/tablet and Android TV (the "Android" column) | Native Kotlin/Compose. `docs/ios-android-feature-parity.md` is a line-by-line audit against the iOS app — check it before assuming Android parity. Android TV lives in its own `tv/` package (separate reader/nav/streaming stack from phone/tablet) and is also CBZ/CBR/ZIP/RAR only, matching tvOS. `docs/phone-external-controller-bindings.md` explicitly warns not to market phone/tablet controller support as available — the framework exists but isn't wired to reader actions yet. |
+| `bibliofuse-nas` | Docker / Synology host + embedded browser reader (the "NAS" column) — **private engineering repo, not what users download** | Go. `docs/features/web-reader.md` and `docs/features/native-streaming.md` are the source of truth for what the free browser reader and native streaming actually support (e.g. no PDF, no TTS, no UI localization — verified 2026-07-24, don't re-assume otherwise without re-checking). |
+| `bibliofuse-nas-distribution` | Public GitHub repo — what the site's Docker/Synology buttons actually link to | Releases and install docs only, not the source (that's `bibliofuse-nas` above). |
+| `bibliofusegreptagreader` | GrepTag Reader (the sister app already featured on this site) | |
+
+Older repos (`bibliofuse-flutter`, `bibliofuse-web`) exist locally but are legacy/
+superseded — confirm current relevance before citing them as a source of truth.
+
 ## Modules
 
 | Path | What it does |

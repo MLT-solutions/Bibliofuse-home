@@ -264,76 +264,94 @@
       "table": {
         "eyebrow": "Apps vergelijken",
         "title": "Kies de juiste BiblioFuse-app.",
-        "desc": "Begin bij je workflow: strips lezen, romans doorzoeken, documenten ontgrendelen, duplicaten opruimen of snel een browsertool gebruiken.",
+        "desc": "Begin met de workflow: strips lezen, romans doorzoeken, documenten ontgrendelen, duplicaten opruimen of een snelle browsertool gebruiken.",
         "feature": "Functie",
         "badges": {
           "universal": "Universele aankoop",
           "edition": "Editie",
-          "free": "Gratis",
-          "msStore": "Microsoft Store"
+          "msStore": "Microsoft Store",
+          "nas": "Zelf gehost · Gratis"
         },
         "editions": {
           "apple": "BiblioFuse Reader iOS / macOS",
+          "pc": "BiblioFuse Reader PC",
           "android": "BiblioFuse Reader Android",
-          "web": "Webtool",
-          "pc": "BiblioFuse Reader PC"
+          "nas": "BiblioFuse NAS"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac · Vision Pro",
-          "android": "Telefoon · Tablet",
-          "web": "Browser · Alle apparaten",
-          "pc": "Windows"
+          "apple": "iPhone · iPad · Mac · Vision Pro · Apple TV",
+          "pc": "Windows",
+          "android": "Telefoon · Tablet · Android TV",
+          "nas": "Docker · Synology"
         },
-        "unique": "Uniek",
-        "where": "Waar te verkrijgen",
-        "iosNote": "iOS en Mac",
-        "cbz": "CBZ-editie",
-        "epub": "EPUB-editie",
         "rows": [
           [
-            "Comprimeren / samenvoegen",
-            "EPUB / CBZ / CBR",
-            "EPUB / CBZ / CBR",
-            "EPUB / CBZ"
-          ],
-          [
             "Leesformaten",
+            "iPhone, iPad, Mac en Vision Pro|EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT||Apple TV|Alleen CBZ/CBR/ZIP/RAR",
             "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · ZIP"
+            "Telefoon en tablet|EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT||Android TV|Alleen CBZ/CBR/ZIP/RAR",
+            "EPUB · CBZ · CBR · RAR · ZIP · TXT|Browserlezer, nog geen PDF"
           ],
           [
-            "Lezerfuncties",
-            "TTS, peek zoom, auto-scroll, voortgang, beoordelingen, labels",
-            "TTS, auto-scroll, voortgang, beoordelingen, labels",
-            "Peek zoom, auto-scroll, voortgang, beoordelingen, labels"
-          ],
-          [
-            "PC / Mac → iPhone & Vision Pro streaming",
-            "Tailscale AAN — thuis en 5G op afstand||Zonder Tailscale — alleen thuis-wifi (nog niet in de roadmap)",
-            "Tailscale AAN — thuis en 5G op afstand||Zonder Tailscale — alleen thuis-wifi (nog niet in de roadmap)",
+            "Compressie-/samenvoegtools",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
             "-"
           ],
           [
-            "Bibliotheekapparaten",
-            "Lokaal + iCloud + SMB|Mac: native · iOS: via streaming",
-            "Lokaal + iCloud + SMB",
-            "Lokaal + externe mappen"
+            "Lezerfuncties",
+            "TTS, peek zoom, auto-scroll, voortgang, waarderingen, tags",
+            "TTS, auto-scroll, voortgang, waarderingen, tags",
+            "TTS, peek zoom, auto-scroll, voortgang, waarderingen, tags",
+            "Continu scrollen, voortgang, waarderingen, tags|Geen TTS of peek zoom"
+          ],
+          [
+            "Controller/externe invoer",
+            "Bluetooth-controller in Xbox-stijl|Aanpasbaar — iPhone, iPad, Mac, Vision Pro en Apple TV",
+            "Bluetooth-controller in Xbox-stijl|Vaste toewijzingen",
+            "Android TV|Ingebouwde D-pad-/afstandsbedieningsnavigatie||Telefoon en tablet|Functie gebouwd, nog niet gekoppeld aan lezeracties",
+            "-"
+          ],
+          [
+            "Kan een bibliotheek hosten",
+            "Alleen Mac|iPhone, iPad, Vision Pro en Apple TV streamen in plaats daarvan vanaf een host",
+            "Ja",
+            "-",
+            "Ja|Docker en Synology"
+          ],
+          [
+            "Streamen vanaf een host",
+            "iPhone, iPad en Vision Pro|Automatisch via iCloud + Tailscale, of lokale wifi / handmatige Tailscale||Apple TV|Alleen lokale wifi — geen iCloud of Tailscale",
+            "-",
+            "Android-telefoon|Lokale wifi of handmatige Tailscale, geen automatische iCloud-detectie||Android TV|Alleen lokale wifi",
+            "-"
+          ],
+          [
+            "Bibliotheekbronnen",
+            "Lokaal + iCloud + SMB/NAS|Mac: native · iOS/Vision Pro: via streaming",
+            "Lokaal + iCloud + SMB/NAS",
+            "Lokaal + externe mappen",
+            "Eigen aangesloten/netwerkopslag|Niet iCloud"
           ],
           [
             "iCloud-boekenplank",
+            "Synchronisatie tussen apparaten|Niet op Apple TV — geen iCloud",
             "Synchronisatie tussen apparaten",
-            "Synchronisatie tussen apparaten",
+            "-",
             "-"
           ],
           [
             "Taalondersteuning",
             "11 talen|EN ES FR NL PT RU ZH JA KO ID MS",
             "11 talen|EN ES FR NL PT RU ZH JA KO ID MS",
-            "12 talen|EN ES FR NL PT RU ZH JA KO ID MS DE"
+            "12 talen|EN ES FR NL PT RU ZH JA KO ID MS DE",
+            "-"
           ]
         ],
-        "pcNotify": "Meld me wanneer beschikbaar"
+        "unique": "Uniek",
+        "where": "Waar te verkrijgen",
+        "iosNote": "iOS en Mac"
       },
       "toolsSection": {
         "eyebrow": "Losse tools",
@@ -1782,6 +1800,10 @@
             "title": "Eye-tracking en knijpen",
             "body": "Kijk en knijp om pagina's om te slaan, geen controller nodig."
           },
+          "lookScroll": {
+            "title": "Kijk naar de rand om te scrollen",
+            "body": "Richt je blik op de boven- of onderrand en de pagina scrollt vanzelf — geen knijpgebaar nodig."
+          },
           "devices": {
             "title": "Muis, trackpad of toetsenbord",
             "body": "Page Down, spatie, scrollwiel of klik, net als op de Mac."
@@ -1794,6 +1816,39 @@
         "streamNote": "Stream je bibliotheek vanaf een Mac of pc zodat de opslag van de Vision Pro vrij blijft, via dezelfde privé Tailscale-route die BiblioFuse gebruikt op iPhone en iPad.",
         "imageAltModes": "BiblioFuse op Apple Vision Pro met de bibliotheekindelingen Ruimtelijke boekenplanken, Rasterweergave en Schuine wand",
         "imageAltReading": "Een strip lezen in BiblioFuse op Apple Vision Pro met eye-tracking en invoermethode-opties"
+      },
+      "usageGuide": {
+        "eyebrow": "Vijf manieren om te lezen",
+        "title": "Hoe kun je BiblioFuse Comic Reader gebruiken?",
+        "desc": "Tik op een vraag hieronder voor een kort antwoord. Liever een afbeelding? Elk antwoord linkt naar een volledige illustratie.",
+        "viewImageLabel": "Bekijk illustratie (Engels)",
+        "items": {
+          "mobile": {
+            "q": "Kan ik mijn boeken gewoon op mijn telefoon bewaren, zonder server?",
+            "a": "Ja — bewaar je strips en boeken rechtstreeks op iPhone, iPad, visionOS of Android. Alles werkt offline en je leesvoortgang blijft op het apparaat staan. Geen server, geen installatie.",
+            "imageAlt": "Infographic: bewaar boeken op je mobiele apparaat — offline bibliotheek op iPhone, iPad, visionOS en Android"
+          },
+          "biggerScreen": {
+            "q": "Kan ik lezen op een groter scherm dan mijn telefoon?",
+            "a": "Ja — installeer de Mac- of pc-app, of open de gratis ingebouwde browserlezer op een NAS. Je bibliotheek en leesvoortgang blijven bij de computer of NAS die je als host gebruikt.",
+            "imageAlt": "Infographic: lees op een groter scherm via de Mac-app, pc-app of NAS-browserlezer"
+          },
+          "stream": {
+            "q": "Kan ik mijn hele bibliotheek gebruiken zonder de opslag van mijn telefoon te vullen?",
+            "a": "Ja — stream vanaf een Mac-, pc- of Synology NAS-host naar iPhone, iPad, visionOS of Android. De verbinding gaat automatisch via je thuis-wifi, met optioneel Tailscale voor toegang buitenshuis, en er wordt niets permanent opgeslagen op het leesapparaat.",
+            "imageAlt": "Infographic: stream je bibliotheek vanaf Mac, pc of Synology zonder boeken op je telefoon te bewaren"
+          },
+          "tv": {
+            "q": "Kan ik strips lezen op mijn tv?",
+            "a": "Ja — de Apple TV- en Android TV-apps streamen je bibliotheek vanaf een Mac-, pc- of Synology-host via je thuis-wifi, met tv-vriendelijke navigatie. Er wordt niets op de tv opgeslagen en je voortgang gaat mee naar je andere apparaten.",
+            "imageAlt": "Infographic: relaxed lezen op groot scherm met Apple TV en Android TV"
+          },
+          "icloud": {
+            "q": "Hoe voorkom ik dat de opslag van mijn apparaten vol raakt?",
+            "a": "Bewaar je bibliotheek in je eigen iCloud-opslag in plaats van elk boek op elk apparaat te downloaden. Boeken laden automatisch wanneer je ze opent en worden weer verwijderd als je ze niet nodig hebt, terwijl je leesvoortgang gesynchroniseerd blijft tussen iPhone, iPad, visionOS, Mac en pc.",
+            "imageAlt": "Infographic: gebruik iCloud om opslag te besparen met automatisch laden en gesynchroniseerde leesvoortgang"
+          }
+        }
       }
     },
     "androidInterest": {

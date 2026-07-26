@@ -263,77 +263,95 @@
       },
       "table": {
         "eyebrow": "アプリを比較",
-        "title": "最適なBiblioFuseアプリを選ぶ。",
-        "desc": "まず用途から選びます：コミックを読む、小说を検索する、文書を解除する、重複を整理する、またはブラウザで素早く処理する。",
+        "title": "自分に合ったBiblioFuseアプリを選ぶ。",
+        "desc": "まずは用途から選びましょう：マンガを読む、小説を検索する、書類のロックを解除する、重複ファイルを整理する、またはブラウザでさっと使えるツールを利用する。",
         "feature": "機能",
         "badges": {
           "universal": "ユニバーサル購入",
           "edition": "エディション",
-          "free": "無料",
-          "msStore": "Microsoft Store"
+          "msStore": "Microsoft Store",
+          "nas": "セルフホスト・無料"
         },
         "editions": {
           "apple": "BiblioFuse Reader iOS / macOS",
+          "pc": "BiblioFuse Reader PC",
           "android": "BiblioFuse Reader Android",
-          "web": "Webツール",
-          "pc": "BiblioFuse Reader PC"
+          "nas": "BiblioFuse NAS"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac · Vision Pro",
-          "android": "スマートフォン · タブレット",
-          "web": "ブラウザ · すべての端末",
-          "pc": "Windows"
+          "apple": "iPhone・iPad・Mac・Vision Pro・Apple TV",
+          "pc": "Windows",
+          "android": "スマートフォン・タブレット・Android TV",
+          "nas": "Docker・Synology"
         },
-        "unique": "ユニーク",
-        "where": "入手方法",
-        "iosNote": "iOS・Mac",
-        "cbz": "CBZ版",
-        "epub": "EPUB版",
         "rows": [
           [
-            "圧縮 / 結合",
-            "EPUB / CBZ / CBR",
-            "EPUB / CBZ / CBR",
-            "EPUB / CBZ"
+            "読書対応形式",
+            "iPhone、iPad、Mac、Vision Pro|EPUB・PDF・CBZ・CBR・RAR・ZIP・TXT||Apple TV|CBZ/CBR/ZIP/RARのみ",
+            "EPUB・PDF・CBZ・CBR・RAR・ZIP・TXT",
+            "スマートフォンとタブレット|EPUB・PDF・CBZ・CBR・RAR・ZIP・TXT||Android TV|CBZ/CBR/ZIP/RARのみ",
+            "EPUB・CBZ・CBR・RAR・ZIP・TXT|ブラウザリーダー、PDFは未対応"
           ],
           [
-            "対応フォーマット",
-            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · ZIP"
+            "圧縮・結合ツール",
+            "EPUB・PDF・CBZ・CBR・RAR・ZIP",
+            "EPUB・PDF・CBZ・CBR・RAR・ZIP",
+            "EPUB・PDF・CBZ・CBR・RAR・ZIP",
+            "-"
           ],
           [
             "リーダー機能",
             "TTS、ピークズーム、自動スクロール、進捗、評価、タグ",
             "TTS、自動スクロール、進捗、評価、タグ",
-            "ピークズーム、自動スクロール、進捗、評価、タグ"
+            "TTS、ピークズーム、自動スクロール、進捗、評価、タグ",
+            "連続スクロール、進捗、評価、タグ|TTSやピークズームは非対応"
           ],
           [
-            "PC / Mac → iPhone・Vision Pro ストリーミング",
-            "Tailscale ON — 自宅 & 5Gリモート||Tailscaleなし — 自宅Wi-Fiのみ（現在ロードマップにはありません）",
-            "Tailscale ON — 自宅 & 5Gリモート||Tailscaleなし — 自宅Wi-Fiのみ（現在ロードマップにはありません）",
+            "コントローラー/外部入力",
+            "Xbox系Bluetoothコントローラー|カスタマイズ可能 — iPhone、iPad、Mac、Vision Pro、Apple TV",
+            "Xbox系Bluetoothコントローラー|固定割り当て",
+            "Android TV|方向キー/リモコン操作を標準搭載||スマートフォンとタブレット|機能は実装済みだがリーダー操作には未接続",
             "-"
           ],
           [
-            "ライブラリソース",
-            "ローカル + iCloud + SMB|Mac：ネイティブ · iOS：ストリーミング経由",
-            "ローカル + iCloud + SMB",
-            "ローカル + 外部フォルダ"
+            "ライブラリをホストできる",
+            "Macのみ|iPhone、iPad、Vision Pro、Apple TVは代わりにホストからストリーミング",
+            "はい",
+            "-",
+            "はい|DockerとSynology"
           ],
           [
-            "iCloud 本棚",
-            "デバイス間同期",
-            "デバイス間同期",
+            "ホストからストリーミング",
+            "iPhone、iPad、Vision Pro|iCloud + Tailscaleで自動、またはローカルWi-Fi／手動Tailscale||Apple TV|ローカルWi-Fiのみ — iCloudやTailscaleは非対応",
+            "-",
+            "Androidスマートフォン|ローカルWi-Fiまたは手動Tailscale、iCloudの自動検出には非対応||Android TV|ローカルWi-Fiのみ",
             "-"
           ],
           [
-            "言語サポート",
+            "ライブラリのソース",
+            "ローカル + iCloud + SMB/NAS|Mac：ネイティブ対応・iOS/Vision Pro：ストリーミング経由",
+            "ローカル + iCloud + SMB/NAS",
+            "ローカル + 外部フォルダ",
+            "自前の接続/ネットワークストレージ|iCloudではない"
+          ],
+          [
+            "iCloud本棚",
+            "デバイス間で同期|Apple TVでは非対応 — iCloudなし",
+            "デバイス間で同期",
+            "-",
+            "-"
+          ],
+          [
+            "対応言語",
             "11言語|EN ES FR NL PT RU ZH JA KO ID MS",
             "11言語|EN ES FR NL PT RU ZH JA KO ID MS",
-            "12言語|EN ES FR NL PT RU ZH JA KO ID MS DE"
+            "12言語|EN ES FR NL PT RU ZH JA KO ID MS DE",
+            "-"
           ]
         ],
-        "pcNotify": "公開時に通知する"
+        "unique": "独自機能",
+        "where": "入手方法",
+        "iosNote": "iOSとMac"
       },
       "toolsSection": {
         "eyebrow": "単体ツール",
@@ -1782,6 +1800,10 @@
             "title": "視線トラッキングとピンチ",
             "body": "見てピンチするだけでページをめくれます。コントローラー不要。"
           },
+          "lookScroll": {
+            "title": "端を見つめてスクロール",
+            "body": "上端または下端付近を見つめるだけでページが自動でスクロールします — ピンチ操作は不要です。"
+          },
           "devices": {
             "title": "マウス、トラックパッド、キーボード",
             "body": "Page Down、スペース、スクロールホイール、クリック。Mac と同じ操作。"
@@ -1794,6 +1816,39 @@
         "streamNote": "Mac や PC からライブラリをストリーミングすれば、Vision Pro のストレージは空いたまま。BiblioFuse が iPhone や iPad で使うのと同じ Tailscale のプライベート経路を利用します。",
         "imageAltModes": "Apple Vision Pro 上の BiblioFuse。空間の本棚、グリッド表示、傾斜ウォールのライブラリレイアウトを表示",
         "imageAltReading": "Apple Vision Pro の BiblioFuse でコミックを読む様子。視線トラッキングと入力方法のオプション付き"
+      },
+      "usageGuide": {
+        "eyebrow": "5つの読み方",
+        "title": "BiblioFuse Comic Readerの使い方は？",
+        "desc": "下の質問をタップすると簡潔な回答が表示されます。画像で見たい方は、各回答から詳しいイラストにリンクしています。",
+        "viewImageLabel": "イラストを見る（英語）",
+        "items": {
+          "mobile": {
+            "q": "サーバーなしで、本をスマホに保存するだけでも使えますか？",
+            "a": "はい — マンガや本をiPhone、iPad、visionOS、Androidに直接保存できます。すべてオフラインで動作し、読書の進捗もデバイスに保存されます。サーバーも設定も不要です。",
+            "imageAlt": "インフォグラフィック：モバイル端末に本を保存 — iPhone、iPad、visionOS、Androidでのオフラインライブラリ"
+          },
+          "biggerScreen": {
+            "q": "スマホより大きな画面で読めますか？",
+            "a": "はい — MacまたはPCアプリをインストールするか、NAS上の無料の内蔵ブラウザリーダーを開いてください。ライブラリと読書の進捗は、ホストとして使うパソコンやNASに保存されます。",
+            "imageAlt": "インフォグラフィック：Macアプリ、PCアプリ、またはNASのブラウザリーダーで大画面読書"
+          },
+          "stream": {
+            "q": "スマホの容量を圧迫せずにライブラリ全体にアクセスできますか？",
+            "a": "はい — Mac、PC、Synology NASホストからiPhone、iPad、visionOS、Androidへストリーミングできます。自宅Wi-Fiでは自動接続し、外出先ではTailscaleで任意にアクセスでき、読書端末には何も永続的に保存されません。",
+            "imageAlt": "インフォグラフィック：本をスマホに保存せず、Mac、PC、Synologyからライブラリをストリーミング"
+          },
+          "tv": {
+            "q": "テレビでマンガを読めますか？",
+            "a": "はい — Apple TVとAndroid TVアプリは、自宅Wi-Fi経由でMac、PC、SynologyホストからライブラリをストリーミングでTV向けのナビゲーションで表示します。テレビには何も保存されず、進捗は他の端末にも引き継がれます。",
+            "imageAlt": "インフォグラフィック：Apple TVとAndroid TVでくつろぎながら大画面読書"
+          },
+          "icloud": {
+            "q": "端末の容量不足を避けるにはどうすればいいですか？",
+            "a": "すべての本を各端末にダウンロードする代わりに、自分のiCloudストレージにライブラリを保存しましょう。本は開くと自動的に読み込まれ、不要になると解放されます。読書の進捗はiPhone、iPad、visionOS、Mac、PC間で同期されたままです。",
+            "imageAlt": "インフォグラフィック：iCloudで端末容量を節約し、自動読み込みと同期された読書進捗"
+          }
+        }
       }
     },
     "androidInterest": {

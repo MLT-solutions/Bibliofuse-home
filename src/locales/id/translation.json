@@ -264,76 +264,94 @@
       "table": {
         "eyebrow": "Bandingkan aplikasi",
         "title": "Pilih aplikasi BiblioFuse yang tepat.",
-        "desc": "Mulai dari alur kerja: membaca komik, mencari novel, membuka dokumen, membersihkan duplikat, atau memakai alat browser cepat.",
+        "desc": "Mulai dari alur kerja Anda: membaca komik, mencari novel, membuka kunci dokumen, membersihkan duplikat, atau menggunakan alat browser cepat.",
         "feature": "Fitur",
         "badges": {
           "universal": "Pembelian universal",
           "edition": "Edisi",
-          "free": "Gratis",
-          "msStore": "Microsoft Store"
+          "msStore": "Microsoft Store",
+          "nas": "Swa-hosting · Gratis"
         },
         "editions": {
           "apple": "BiblioFuse Reader iOS / macOS",
+          "pc": "BiblioFuse Reader PC",
           "android": "BiblioFuse Reader Android",
-          "web": "Web Tool",
-          "pc": "BiblioFuse Reader PC"
+          "nas": "BiblioFuse NAS"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac · Vision Pro",
-          "android": "Ponsel · Tablet",
-          "web": "Browser · Semua perangkat",
-          "pc": "Windows"
+          "apple": "iPhone · iPad · Mac · Vision Pro · Apple TV",
+          "pc": "Windows",
+          "android": "Ponsel · Tablet · Android TV",
+          "nas": "Docker · Synology"
         },
-        "unique": "Unik",
-        "where": "Di mana mendapatkannya",
-        "iosNote": "iOS dan Mac",
-        "cbz": "Edisi CBZ",
-        "epub": "Edisi EPUB",
         "rows": [
           [
-            "Kompres / gabung",
-            "EPUB / CBZ / CBR",
-            "EPUB / CBZ / CBR",
-            "EPUB / CBZ"
+            "Format baca",
+            "iPhone, iPad, Mac & Vision Pro|EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT||Apple TV|Hanya CBZ/CBR/ZIP/RAR",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "Ponsel & tablet|EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT||Android TV|Hanya CBZ/CBR/ZIP/RAR",
+            "EPUB · CBZ · CBR · RAR · ZIP · TXT|Pembaca browser, PDF belum didukung"
           ],
           [
-            "Format baca",
-            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · ZIP"
+            "Alat kompres / gabung",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "-"
           ],
           [
             "Fitur pembaca",
-            "TTS, peek zoom, gulir otomatis, kemajuan, penilaian, tag",
-            "TTS, gulir otomatis, kemajuan, penilaian, tag",
-            "Peek zoom, gulir otomatis, kemajuan, penilaian, tag"
+            "TTS, peek zoom, gulir otomatis, progres, rating, tag",
+            "TTS, gulir otomatis, progres, rating, tag",
+            "TTS, peek zoom, gulir otomatis, progres, rating, tag",
+            "Gulir berkelanjutan, progres, rating, tag|Tanpa TTS atau peek zoom"
           ],
           [
-            "Streaming PC / Mac → iPhone & Vision Pro",
-            "Tailscale AKTIF — rumah & 5G jarak jauh||Tanpa Tailscale — hanya Wi-Fi rumah (belum ada dalam roadmap)",
-            "Tailscale AKTIF — rumah & 5G jarak jauh||Tanpa Tailscale — hanya Wi-Fi rumah (belum ada dalam roadmap)",
+            "Kontroler / input eksternal",
+            "Kontroler Bluetooth gaya Xbox|Dapat disesuaikan — iPhone, iPad, Mac, Vision Pro & Apple TV",
+            "Kontroler Bluetooth gaya Xbox|Pemetaan tombol tetap",
+            "Android TV|Navigasi D-pad/remote bawaan||Ponsel & tablet|Fitur sudah dibangun, belum terhubung ke aksi pembaca",
+            "-"
+          ],
+          [
+            "Bisa menghosting perpustakaan",
+            "Hanya Mac|iPhone, iPad, Vision Pro & Apple TV melakukan streaming dari host sebagai gantinya",
+            "Ya",
+            "-",
+            "Ya|Docker & Synology"
+          ],
+          [
+            "Streaming dari host",
+            "iPhone, iPad & Vision Pro|Otomatis via iCloud + Tailscale, atau Wi-Fi lokal / Tailscale manual||Apple TV|Hanya Wi-Fi lokal — tanpa iCloud atau Tailscale",
+            "-",
+            "Ponsel Android|Wi-Fi lokal atau Tailscale manual, tanpa deteksi otomatis iCloud||Android TV|Hanya Wi-Fi lokal",
             "-"
           ],
           [
             "Sumber perpustakaan",
-            "Lokal + iCloud + SMB|Mac: bawaan · iOS: via streaming",
-            "Lokal + iCloud + SMB",
-            "Lokal + folder eksternal"
+            "Lokal + iCloud + SMB/NAS|Mac: native · iOS/Vision Pro: via streaming",
+            "Lokal + iCloud + SMB/NAS",
+            "Lokal + folder eksternal",
+            "Penyimpanan terpasang/jaringan sendiri|Bukan iCloud"
           ],
           [
             "Rak buku iCloud",
+            "Sinkronisasi lintas perangkat|Tidak di Apple TV — tanpa iCloud",
             "Sinkronisasi lintas perangkat",
-            "Sinkronisasi lintas perangkat",
+            "-",
             "-"
           ],
           [
             "Dukungan bahasa",
             "11 bahasa|EN ES FR NL PT RU ZH JA KO ID MS",
             "11 bahasa|EN ES FR NL PT RU ZH JA KO ID MS",
-            "12 bahasa|EN ES FR NL PT RU ZH JA KO ID MS DE"
+            "12 bahasa|EN ES FR NL PT RU ZH JA KO ID MS DE",
+            "-"
           ]
         ],
-        "pcNotify": "Beritahu saya saat tersedia"
+        "unique": "Unik",
+        "where": "Tempat mendapatkannya",
+        "iosNote": "iOS dan Mac"
       },
       "toolsSection": {
         "eyebrow": "Alat mandiri",
@@ -1782,6 +1800,10 @@
             "title": "Pelacakan mata & jepit",
             "body": "Lihat dan jepit untuk membalik halaman, tanpa pengontrol."
           },
+          "lookScroll": {
+            "title": "Tatap tepi untuk menggulir",
+            "body": "Arahkan pandangan ke tepi atas atau bawah dan halaman akan menggulir sendiri — tanpa perlu mencubit."
+          },
           "devices": {
             "title": "Mouse, trackpad, atau keyboard",
             "body": "Page Down, Spasi, roda gulir, atau klik, sama seperti di Mac."
@@ -1794,6 +1816,39 @@
         "streamNote": "Streaming pustaka Anda dari Mac atau PC agar penyimpanan Vision Pro tetap kosong, lewat rute privat Tailscale yang sama seperti yang digunakan BiblioFuse di iPhone dan iPad.",
         "imageAltModes": "BiblioFuse di Apple Vision Pro menampilkan tata letak pustaka Rak buku spasial, Tampilan kisi, dan Dinding miring",
         "imageAltReading": "Membaca komik di BiblioFuse pada Apple Vision Pro dengan pelacakan mata dan opsi metode masukan"
+      },
+      "usageGuide": {
+        "eyebrow": "Lima cara membaca",
+        "title": "Bagaimana cara menggunakan BiblioFuse Comic Reader?",
+        "desc": "Ketuk pertanyaan mana pun di bawah untuk melihat jawaban singkat. Lebih suka gambar? Setiap jawaban tertaut ke ilustrasi lengkap.",
+        "viewImageLabel": "Lihat ilustrasi (Bahasa Inggris)",
+        "items": {
+          "mobile": {
+            "q": "Bisakah saya hanya menyimpan buku di ponsel, tanpa server?",
+            "a": "Bisa — simpan komik dan buku langsung di iPhone, iPad, visionOS, atau Android. Semuanya berfungsi secara offline, dan progres membaca tetap tersimpan di perangkat. Tanpa server, tanpa pengaturan rumit.",
+            "imageAlt": "Infografis: simpan buku di perangkat seluler Anda — perpustakaan offline di iPhone, iPad, visionOS, dan Android"
+          },
+          "biggerScreen": {
+            "q": "Bisakah saya membaca di layar yang lebih besar dari ponsel?",
+            "a": "Bisa — instal aplikasi Mac atau PC, atau buka pembaca browser gratis bawaan di NAS. Perpustakaan dan progres membaca Anda akan tetap tersimpan di komputer atau NAS mana pun yang Anda gunakan sebagai host.",
+            "imageAlt": "Infografis: membaca di layar lebih besar menggunakan aplikasi Mac, aplikasi PC, atau pembaca browser NAS"
+          },
+          "stream": {
+            "q": "Bisakah saya mengakses seluruh perpustakaan tanpa memenuhi penyimpanan ponsel?",
+            "a": "Bisa — streaming dari host Mac, PC, atau Synology NAS ke iPhone, iPad, visionOS, atau Android. Koneksi otomatis melalui Wi-Fi rumah, dengan Tailscale opsional untuk akses dari luar rumah, dan tidak ada yang disimpan secara permanen di perangkat pembaca.",
+            "imageAlt": "Infografis: streaming perpustakaan dari Mac, PC, atau Synology tanpa menyimpan buku di ponsel"
+          },
+          "tv": {
+            "q": "Bisakah saya membaca komik di TV?",
+            "a": "Bisa — aplikasi Apple TV dan Android TV melakukan streaming perpustakaan Anda dari host Mac, PC, atau Synology melalui Wi-Fi rumah, dengan navigasi yang ramah TV. Tidak ada yang tersimpan di TV, dan progres Anda terbawa ke perangkat lain.",
+            "imageAlt": "Infografis: membaca santai di layar besar dengan Apple TV dan Android TV"
+          },
+          "icloud": {
+            "q": "Bagaimana cara menghindari kehabisan ruang penyimpanan di perangkat saya?",
+            "a": "Simpan perpustakaan Anda di penyimpanan iCloud Anda sendiri, bukan mengunduh setiap buku ke setiap perangkat. Buku dimuat otomatis saat dibuka dan dihapus dari perangkat saat tidak diperlukan, sementara progres membaca tetap sinkron di iPhone, iPad, visionOS, Mac, dan PC.",
+            "imageAlt": "Infografis: gunakan iCloud untuk menghemat penyimpanan perangkat dengan pemuatan otomatis dan progres membaca yang sinkron"
+          }
+        }
       }
     },
     "androidInterest": {

@@ -263,77 +263,95 @@
       },
       "table": {
         "eyebrow": "Comparar apps",
-        "title": "Escolha a app BiblioFuse certa.",
-        "desc": "Comece pelo fluxo: ler banda desenhada, pesquisar romances, desbloquear documentos, limpar duplicados ou usar uma ferramenta rápida no navegador.",
-        "feature": "Funcionalidade",
+        "title": "Escolha o app BiblioFuse certo.",
+        "desc": "Comece pelo fluxo: ler quadrinhos, pesquisar romances, desbloquear documentos, limpar duplicados ou usar uma ferramenta rápida no navegador.",
+        "feature": "Recurso",
         "badges": {
           "universal": "Compra universal",
           "edition": "Edição",
-          "free": "Grátis",
-          "msStore": "Microsoft Store"
+          "msStore": "Microsoft Store",
+          "nas": "Auto-hospedado · Grátis"
         },
         "editions": {
           "apple": "BiblioFuse Reader iOS / macOS",
+          "pc": "BiblioFuse Reader PC",
           "android": "BiblioFuse Reader Android",
-          "web": "Ferramenta web",
-          "pc": "BiblioFuse Reader PC"
+          "nas": "BiblioFuse NAS"
         },
         "subtitles": {
-          "apple": "iPhone · iPad · Mac · Vision Pro",
-          "android": "Telemóvel · Tablet",
-          "web": "Navegador · Todos os dispositivos",
-          "pc": "Windows"
+          "apple": "iPhone · iPad · Mac · Vision Pro · Apple TV",
+          "pc": "Windows",
+          "android": "Celular · Tablet · Android TV",
+          "nas": "Docker · Synology"
         },
-        "unique": "Único",
-        "where": "Onde obter",
-        "iosNote": "iOS e Mac",
-        "cbz": "Edição CBZ",
-        "epub": "Edição EPUB",
         "rows": [
           [
-            "Comprimir / mesclar",
-            "EPUB / CBZ / CBR",
-            "EPUB / CBZ / CBR",
-            "EPUB / CBZ"
+            "Formatos de leitura",
+            "iPhone, iPad, Mac e Vision Pro|EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT||Apple TV|Somente CBZ/CBR/ZIP/RAR",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "Celular e tablet|EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT||Android TV|Somente CBZ/CBR/ZIP/RAR",
+            "EPUB · CBZ · CBR · RAR · ZIP · TXT|Leitor no navegador, sem PDF ainda"
           ],
           [
-            "Formatos de leitura",
-            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "EPUB · PDF · CBZ · ZIP"
+            "Ferramentas de compressão / mesclagem",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "EPUB · PDF · CBZ · CBR · RAR · ZIP",
+            "-"
           ],
           [
             "Recursos do leitor",
-            "TTS, peek zoom, rolagem automática, progresso, avaliações, etiquetas",
-            "TTS, rolagem automática, progresso, avaliações, etiquetas",
-            "Peek zoom, rolagem automática, progresso, avaliações, etiquetas"
+            "TTS, peek zoom, rolagem automática, progresso, avaliações, tags",
+            "TTS, rolagem automática, progresso, avaliações, tags",
+            "TTS, peek zoom, rolagem automática, progresso, avaliações, tags",
+            "Rolagem contínua, progresso, avaliações, tags|Sem TTS ou peek zoom"
           ],
           [
-            "Streaming PC / Mac → iPhone e Vision Pro",
-            "Tailscale ATIVO — casa e 5G remoto||Sem Tailscale — apenas Wi-Fi doméstico (não está no roadmap ainda)",
-            "Tailscale ATIVO — casa e 5G remoto||Sem Tailscale — apenas Wi-Fi doméstico (não está no roadmap ainda)",
+            "Controle / entrada externa",
+            "Controle Bluetooth estilo Xbox|Personalizável — iPhone, iPad, Mac, Vision Pro e Apple TV",
+            "Controle Bluetooth estilo Xbox|Combinações fixas",
+            "Android TV|Navegação por D-pad/controle remoto, integrada||Celular e tablet|Recurso criado, ainda não conectado às ações do leitor",
+            "-"
+          ],
+          [
+            "Pode hospedar uma biblioteca",
+            "Somente Mac|iPhone, iPad, Vision Pro e Apple TV transmitem de um host em vez disso",
+            "Sim",
+            "-",
+            "Sim|Docker e Synology"
+          ],
+          [
+            "Transmitir de um host",
+            "iPhone, iPad e Vision Pro|Automático via iCloud + Tailscale, ou Wi-Fi local / Tailscale manual||Apple TV|Somente Wi-Fi local — sem iCloud ou Tailscale",
+            "-",
+            "Celular Android|Wi-Fi local ou Tailscale manual, sem descoberta automática por iCloud||Android TV|Somente Wi-Fi local",
             "-"
           ],
           [
             "Fontes da biblioteca",
-            "Local + iCloud + SMB|Mac: nativo · iOS: via streaming",
-            "Local + iCloud + SMB",
-            "Local + pastas externas"
+            "Local + iCloud + SMB/NAS|Mac: nativo · iOS/Vision Pro: via streaming",
+            "Local + iCloud + SMB/NAS",
+            "Local + pastas externas",
+            "Armazenamento próprio conectado/em rede|Não é iCloud"
           ],
           [
             "Estante iCloud",
+            "Sincronização entre dispositivos|Não no Apple TV — sem iCloud",
             "Sincronização entre dispositivos",
-            "Sincronização entre dispositivos",
+            "-",
             "-"
           ],
           [
-            "Idiomas",
+            "Suporte a idiomas",
             "11 idiomas|EN ES FR NL PT RU ZH JA KO ID MS",
             "11 idiomas|EN ES FR NL PT RU ZH JA KO ID MS",
-            "12 idiomas|EN ES FR NL PT RU ZH JA KO ID MS DE"
+            "12 idiomas|EN ES FR NL PT RU ZH JA KO ID MS DE",
+            "-"
           ]
         ],
-        "pcNotify": "Notifique-me quando disponível"
+        "unique": "Exclusivo",
+        "where": "Onde conseguir",
+        "iosNote": "iOS e Mac"
       },
       "toolsSection": {
         "eyebrow": "Ferramentas independentes",
@@ -1782,6 +1800,10 @@
             "title": "Rastreamento ocular e pinça",
             "body": "Olhe e faça o gesto de pinça para virar páginas, sem controle."
           },
+          "lookScroll": {
+            "title": "Olhe para a borda para rolar",
+            "body": "Mantenha o olhar perto da borda superior ou inferior e a página rola sozinha — sem precisar beliscar."
+          },
           "devices": {
             "title": "Mouse, trackpad ou teclado",
             "body": "Page Down, Espaço, roda do mouse ou clique, igual no Mac."
@@ -1794,6 +1816,39 @@
         "streamNote": "Transmita sua biblioteca de um Mac ou PC para manter o armazenamento do Vision Pro livre, pela mesma rota privada Tailscale que o BiblioFuse usa no iPhone e iPad.",
         "imageAltModes": "BiblioFuse no Apple Vision Pro mostrando os layouts de biblioteca Prateleiras espaciais, Visualização em grade e Parede inclinada",
         "imageAltReading": "Lendo um quadrinho no BiblioFuse no Apple Vision Pro com rastreamento ocular e opções de método de entrada"
+      },
+      "usageGuide": {
+        "eyebrow": "Cinco formas de ler",
+        "title": "Como usar o BiblioFuse Comic Reader?",
+        "desc": "Toque em qualquer pergunta abaixo para ver uma resposta curta. Prefere uma imagem? Cada resposta tem um link para uma ilustração completa.",
+        "viewImageLabel": "Ver ilustração (em inglês)",
+        "items": {
+          "mobile": {
+            "q": "Posso simplesmente manter meus livros no celular, sem servidor?",
+            "a": "Sim — guarde seus quadrinhos e livros diretamente no iPhone, iPad, visionOS ou Android. Tudo funciona offline, e seu progresso de leitura fica salvo no dispositivo. Sem servidor, sem configuração.",
+            "imageAlt": "Infográfico: mantenha livros no seu dispositivo móvel — biblioteca offline no iPhone, iPad, visionOS e Android"
+          },
+          "biggerScreen": {
+            "q": "Posso ler em uma tela maior que a do meu celular?",
+            "a": "Sim — instale o app para Mac ou PC, ou abra o leitor gratuito integrado ao navegador em um NAS. Sua biblioteca e progresso de leitura ficam salvos no computador ou NAS que você usa como host.",
+            "imageAlt": "Infográfico: leia em uma tela maior usando o app para Mac, o app para PC ou o leitor de navegador do NAS"
+          },
+          "stream": {
+            "q": "Posso acessar toda a minha biblioteca sem lotar o armazenamento do celular?",
+            "a": "Sim — transmita de um host Mac, PC ou Synology NAS para iPhone, iPad, visionOS ou Android. A conexão é automática pelo Wi-Fi de casa, com Tailscale opcional para acesso fora de casa, e nada fica armazenado permanentemente no dispositivo de leitura.",
+            "imageAlt": "Infográfico: transmita sua biblioteca do Mac, PC ou Synology sem manter livros no celular"
+          },
+          "tv": {
+            "q": "Posso ler quadrinhos na minha TV?",
+            "a": "Sim — os apps de Apple TV e Android TV transmitem sua biblioteca de um host Mac, PC ou Synology pelo Wi-Fi de casa, com navegação adaptada para TV. Nada fica armazenado na TV, e seu progresso passa para os outros dispositivos.",
+            "imageAlt": "Infográfico: leitura relaxada em tela grande na Apple TV e Android TV"
+          },
+          "icloud": {
+            "q": "Como evito ficar sem espaço de armazenamento nos meus dispositivos?",
+            "a": "Mantenha sua biblioteca no seu próprio armazenamento do iCloud em vez de baixar cada livro em cada dispositivo. Os livros carregam automaticamente ao abrir e são removidos quando não são necessários, enquanto seu progresso de leitura permanece sincronizado entre iPhone, iPad, visionOS, Mac e PC.",
+            "imageAlt": "Infográfico: use o iCloud para economizar armazenamento com carregamento automático e progresso sincronizado"
+          }
+        }
       }
     },
     "androidInterest": {
