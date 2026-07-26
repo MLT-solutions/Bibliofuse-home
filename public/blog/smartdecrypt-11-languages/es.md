@@ -1,6 +1,6 @@
 # SmartDecrypt Ahora Disponible en 11 Idiomas — Desbloquea PDFs Bancarios en Tu Propio Idioma
 
-Tu extracto bancario llega como un PDF bloqueado. La contraseña es tu número de identificación, fecha de nacimiento o los últimos seis dígitos de tu cuenta — algo que has escrito docenas de veces pero que aún no recuerdas de memoria. [SmartDecrypt PDF ZIP](/es/smartdecrypt/) fue diseñado exactamente para esto: guarda el patrón de contraseña una vez, y cada extracto futuro se desbloquea solo cuando lo arrastras.
+Tu extracto bancario llega como un PDF bloqueado. La contraseña es tu número de identificación, fecha de nacimiento o los últimos seis dígitos de tu cuenta — algo que has escrito docenas de veces pero que aún no recuerdas de memoria. [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) fue diseñado exactamente para esto: guarda el patrón de contraseña una vez, y cada extracto futuro se desbloquea solo cuando lo arrastras.
 
 Esa experiencia ahora está disponible en 11 idiomas. SmartDecrypt PDF ZIP CBZ amplía su localización completa a inglés, español, francés, neerlandés, portugués, ruso, chino simplificado, japonés, coreano, bahasa indonesia y malayo — más de tres mil millones de hablantes nativos.
 
@@ -10,7 +10,7 @@ La mayoría de las personas no se consideran usuarios de herramientas de descifr
 
 El problema son las contraseñas. Los bancos, las aseguradoras y los organismos gubernamentales suelen usar identificadores personales como contraseñas — tu DNI, fecha de nacimiento o número de póliza. Cada institución usa uno diferente, y ninguno coincide con tus contraseñas habituales.
 
-[SmartDecrypt](/es/smartdecrypt/) resuelve esto con **coincidencia de patrones de nombre de archivo**. Creas un perfil que dice: "cuando reciba un archivo que coincida con `extracto_*.pdf`, la contraseña es mi DNI". La próxima vez que llegue ese archivo, lo arrastras a SmartDecrypt y se desbloquea en segundos.
+[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) resuelve esto con **coincidencia de patrones de nombre de archivo**. Creas un perfil que dice: "cuando reciba un archivo que coincida con `extracto_*.pdf`, la contraseña es mi DNI". La próxima vez que llegue ese archivo, lo arrastras a SmartDecrypt y se desbloquea en segundos.
 
 ## Novedades: Soporte Completo para 11 Idiomas
 
@@ -50,4 +50,4 @@ Las contraseñas se almacenan en Apple Keychain o en el administrador de credenc
 
 SmartDecrypt es gratis para desbloquear un archivo a la vez. SmartDecrypt Pro es una compra universal única que desbloquea el procesamiento por lotes. Sin suscripción.
 
-Descarga [SmartDecrypt PDF ZIP](/es/smartdecrypt/) desde el App Store o Microsoft Store. La actualización con 11 idiomas está disponible ahora en todas las plataformas.
+Descarga [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) desde el App Store o Microsoft Store. La actualización con 11 idiomas está disponible ahora en todas las plataformas.

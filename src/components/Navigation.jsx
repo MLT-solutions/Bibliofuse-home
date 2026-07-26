@@ -3,6 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { Link, useParams, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
+// Temporary: point straight at the App Store instead of mlogictech.com/products
+// until that listing is live — see docs/features/app-pages.md. Swap back to
+// mlogictech.com once it's ready.
+const smartDecryptAppStoreUrl = 'https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229';
+const contentCueAppStoreUrl = 'https://apps.apple.com/us/app/contentcue-read-listen/id6770080864';
+
 const LANGUAGES = [
     { code: 'en', label: 'English' },
     { code: 'es', label: 'Español' },
@@ -45,8 +51,8 @@ const Navigation = () => {
         { name: 'BiblioFuse Web Tool', sub: t('redesign.tools.webSub'), path: '/webapp/', logo: '/image/webtool-logo.png' },
         { name: 'GrepTag Reader', sub: t('redesign.tools.grepSub'), path: '/grepreader/', logo: '/image/grepreader-logo.png', logoZoom: 1.3 },
         { name: 'Comic Duplicate Scanner', sub: t('redesign.tools.archiveSub'), path: '/archive/', logo: '/image/archive-logo.png', logoZoom: 1.15 },
-        { name: 'SmartDecrypt PDF ZIP', sub: t('redesign.tools.smartSub'), href: 'https://www.mlogictech.com/products#smartdecrypt', logo: '/image/smartdecrypt-logo.png' },
-        { name: 'ContentCue', sub: t('redesign.tools.contentcueSub'), href: 'https://www.mlogictech.com/products#contentcue', logo: '/image/contentcue-logo.png', logoZoom: 1.15 },
+        { name: 'SmartDecrypt PDF ZIP', sub: t('redesign.tools.smartSub'), href: smartDecryptAppStoreUrl, logo: '/image/smartdecrypt-logo.png' },
+        { name: 'ContentCue', sub: t('redesign.tools.contentcueSub'), href: contentCueAppStoreUrl, logo: '/image/contentcue-logo.png', logoZoom: 1.15 },
     ];
 
     const toggleLangMenu = () => setIsLangOpen(!isLangOpen);

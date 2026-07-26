@@ -1,6 +1,6 @@
 # 如何在iPhone上打开受密码保护的CBZ和ZIP文件
 
-[SmartDecrypt PDF ZIP CBZ](/zh/smartdecrypt/)可以直接在iPhone、iPad和Mac上打开受密码保护的CBZ和ZIP压缩包，无需将文件上传到任何服务器。该应用使用基于Rust的引擎在设备本地解密CBZ漫画档案和ZIP文件，并将解锁后的副本保存到「文件」应用中。解密完成后，在[BiblioFuse](/zh/)中打开您的CBZ漫画，享受iPhone上最佳的阅读体验。从App Store下载SmartDecrypt PDF ZIP CBZ，几秒钟内即可移除档案密码。
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)可以直接在iPhone、iPad和Mac上打开受密码保护的CBZ和ZIP压缩包，无需将文件上传到任何服务器。该应用使用基于Rust的引擎在设备本地解密CBZ漫画档案和ZIP文件，并将解锁后的副本保存到「文件」应用中。解密完成后，在[BiblioFuse](/zh/)中打开您的CBZ漫画，享受iPhone上最佳的阅读体验。从App Store下载SmartDecrypt PDF ZIP CBZ，几秒钟内即可移除档案密码。
 
 ## 为什么受密码保护的CBZ文件无法在大多数漫画阅读器中打开？
 
@@ -69,4 +69,4 @@ SmartDecrypt需要正确的密码——它不会尝试破解或暴力破解未�
 
 ## 解锁您的漫画和档案
 
-受密码保护的CBZ和ZIP文件不应再阻碍您的阅读流程。SmartDecrypt PDF ZIP CBZ可在几秒钟内解密iPhone或Mac上的任何受保护档案，无需上传，无需等待。在App Store中搜索[SmartDecrypt PDF ZIP CBZ](/zh/smartdecrypt/)即可开始，然后在[BiblioFuse](/zh/)中打开解密后的漫画，享受iPhone上最佳的阅读体验。
+受密码保护的CBZ和ZIP文件不应再阻碍您的阅读流程。SmartDecrypt PDF ZIP CBZ可在几秒钟内解密iPhone或Mac上的任何受保护档案，无需上传，无需等待。在App Store中搜索[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)即可开始，然后在[BiblioFuse](/zh/)中打开解密后的漫画，享受iPhone上最佳的阅读体验。

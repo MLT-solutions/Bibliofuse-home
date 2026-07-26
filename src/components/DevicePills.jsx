@@ -5,7 +5,8 @@ import React from 'react';
  * Device names are proper nouns (iPhone, CarPlay, …) — intentionally not translated.
  *
  * props:
- *   devices — array of keys: iphone | ipad | mac | visionpro | appletv | carplay | windows | android | web | docker | synology
+ *   devices — array of keys: iphone | ipad | mac | visionpro | appletv | carplay | windows | android |
+ *             androidphone | androidtablet | androidtv | web | docker | synology
  *   tone    — 'dark' (light text on dark hero) | 'light' (dark text on light hero)
  */
 
@@ -60,6 +61,24 @@ const ICONS = {
       <circle cx="15" cy="12.5" r="0.4" fill="currentColor" />
     </svg>
   ),
+  androidphone: (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="7" y="3" width="10" height="18" rx="2" />
+      <path d="M9.5 5.5 8 3.5M14.5 5.5 16 3.5" />
+    </svg>
+  ),
+  androidtablet: (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="4.5" y="3" width="15" height="18" rx="2" />
+      <path d="M8 5.5 6.5 3.5M16 5.5 17.5 3.5" />
+    </svg>
+  ),
+  androidtv: (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2.5" y="5" width="19" height="12" rx="2" />
+      <path d="M9 21h6M12 17v4" />
+    </svg>
+  ),
   web: (
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
       <circle cx="12" cy="12" r="9" />
@@ -94,6 +113,9 @@ const LABELS = {
   carplay: 'CarPlay',
   windows: 'Windows',
   android: 'Android',
+  androidphone: 'Android phone',
+  androidtablet: 'Android tablet',
+  androidtv: 'Android TV',
   web: 'Web',
   docker: 'Docker',
   synology: 'Synology',

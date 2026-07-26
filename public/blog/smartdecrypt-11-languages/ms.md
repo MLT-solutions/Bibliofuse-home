@@ -1,6 +1,6 @@
 # SmartDecrypt Kini Tersedia dalam 11 Bahasa — Buka Kunci PDF Bank dalam Bahasa Anda
 
-Penyata bank anda tiba sebagai PDF yang berkunci. Kata laluannya ialah nombor MyKAD, tarikh lahir, atau enam digit terakhir akaun anda — sesuatu yang sudah anda taip berpuluh kali tetapi masih susah nak ingat. [SmartDecrypt PDF ZIP](/ms/smartdecrypt/) memang direka untuk ini: simpan corak kata laluan sekali, dan setiap penyata seterusnya akan terbuka sendiri apabila anda menjatuhkannya ke dalam aplikasi.
+Penyata bank anda tiba sebagai PDF yang berkunci. Kata laluannya ialah nombor MyKAD, tarikh lahir, atau enam digit terakhir akaun anda — sesuatu yang sudah anda taip berpuluh kali tetapi masih susah nak ingat. [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) memang direka untuk ini: simpan corak kata laluan sekali, dan setiap penyata seterusnya akan terbuka sendiri apabila anda menjatuhkannya ke dalam aplikasi.
 
 Pengalaman itu kini tersedia dalam 11 bahasa. SmartDecrypt PDF ZIP CBZ memperluas lokalisasi antara muka penuhnya ke bahasa Inggeris, Sepanyol, Perancis, Belanda, Portugis, Rusia, Cina Ringkas, Jepun, Korea, Bahasa Indonesia, dan Melayu — merangkumi lebih tiga bilion penutur asli.
 
@@ -10,7 +10,7 @@ Kebanyakan orang tidak menganggap diri mereka sebagai pengguna alat penyahsulita
 
 Masalahnya ialah kata laluannya. Bank, syarikat insurans, dan agensi kerajaan lazimnya menggunakan pengecam peribadi sebagai kata laluan — nombor MyKAD, tarikh lahir, atau nombor polisi. Setiap institusi menggunakan format yang berbeza, dan tiada satu pun yang sepadan dengan kata laluan biasa anda.
 
-[SmartDecrypt](/ms/smartdecrypt/) mengatasi ini dengan **pemadanan corak nama fail**. Anda mencipta profil: "apabila saya menerima fail yang sepadan dengan `Maybank_*.pdf`, kata laluannya ialah nombor MyKAD saya". Kali berikutnya fail itu tiba, anda jatuhkan ke SmartDecrypt dan ia terbuka dalam beberapa saat.
+[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) mengatasi ini dengan **pemadanan corak nama fail**. Anda mencipta profil: "apabila saya menerima fail yang sepadan dengan `Maybank_*.pdf`, kata laluannya ialah nombor MyKAD saya". Kali berikutnya fail itu tiba, anda jatuhkan ke SmartDecrypt dan ia terbuka dalam beberapa saat.
 
 ## Yang Baharu: Sokongan Penuh 11 Bahasa
 
@@ -48,4 +48,4 @@ Kata laluan disimpan dalam Apple Keychain atau Windows Credential Manager. Tidak
 
 SmartDecrypt percuma untuk membuka kunci satu fail pada satu masa. SmartDecrypt Pro ialah pembelian universal sekali yang membuka pemprosesan kelompok. Tanpa langganan.
 
-Muat turun [SmartDecrypt PDF ZIP](/ms/smartdecrypt/) dari App Store atau Microsoft Store. Kemas kini 11 bahasa sudah tersedia sekarang di semua platform.
+Muat turun [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) dari App Store atau Microsoft Store. Kemas kini 11 bahasa sudah tersedia sekarang di semua platform.

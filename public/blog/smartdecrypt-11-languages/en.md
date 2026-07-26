@@ -1,6 +1,6 @@
 # SmartDecrypt Now Available in 11 Languages — Unlock Bank PDFs in Your Own Language
 
-Your bank statement arrives as a locked PDF. The password is your NRIC number, date of birth, or the last six digits of your account — something you've typed dozens of times but still can't remember off-hand. [SmartDecrypt PDF ZIP](/en/smartdecrypt/) was designed exactly for this: save the password pattern once, and every future statement unlocks itself when you drop it in.
+Your bank statement arrives as a locked PDF. The password is your NRIC number, date of birth, or the last six digits of your account — something you've typed dozens of times but still can't remember off-hand. [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) was designed exactly for this: save the password pattern once, and every future statement unlocks itself when you drop it in.
 
 That experience is now available in 11 languages. SmartDecrypt PDF ZIP CBZ has expanded its full UI localisation to cover English, Spanish, French, Dutch, Portuguese, Russian, Simplified Chinese, Japanese, Korean, Bahasa Indonesia, and Malay — covering over three billion native speakers.
 
@@ -20,7 +20,7 @@ The same logic applies to insurance renewal PDFs, payroll slips, tax documents, 
 
 ## What's New: Full 11-Language Support
 
-The previous release added four languages. This update brings [SmartDecrypt](/en/smartdecrypt/) to a full set of eleven:
+The previous release added four languages. This update brings [SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) to a full set of eleven:
 
 | Language | Code | New in this update |
 |----------|------|--------------------|
@@ -81,4 +81,4 @@ Passwords are stored in the Apple Keychain on iOS and macOS, or the Windows Cred
 
 SmartDecrypt is free for unlocking one file at a time. SmartDecrypt Pro is a one-time universal purchase (covers iOS and macOS together) that unlocks batch processing — drop 20 statements and let it run through them all. There is no subscription.
 
-Download [SmartDecrypt PDF ZIP](/en/smartdecrypt/) from the App Store or Microsoft Store. The 11-language update is live now on all platforms.
+Download [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) from the App Store or Microsoft Store. The 11-language update is live now on all platforms.

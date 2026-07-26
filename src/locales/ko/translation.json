@@ -307,11 +307,18 @@
             "연속 스크롤, 진행률, 평점, 태그|TTS 및 피크 줌 미지원"
           ],
           [
-            "컨트롤러 / 외부 입력",
+            "컨트롤러 입력",
             "Xbox 스타일 블루투스 컨트롤러|맞춤 설정 가능 — iPhone, iPad, Mac, Vision Pro, Apple TV",
             "Xbox 스타일 블루투스 컨트롤러|고정 바인딩",
-            "Android TV|내장 방향키/리모컨 탐색||휴대폰 및 태블릿|기능은 구현됐지만 아직 리더 동작에 연결되지 않음",
+            "Android TV|내장 방향키/리모컨 탐색||휴대폰 및 태블릿|Xbox 스타일 블루투스 컨트롤러, 맞춤 설정 가능",
             "-"
+          ],
+          [
+            "키보드 입력",
+            "Mac 및 Vision Pro|Page Down/스페이스, 방향키, ⌘ 단축키||iPad 및 iPhone|외장 키보드로 라이브러리 탐색만 가능",
+            "방향키와 스페이스|F11 전체 화면, Esc로 종료도 가능",
+            "-",
+            "방향키|브라우저 리더에서 페이지 넘기기"
           ],
           [
             "라이브러리를 호스팅할 수 있음",
@@ -346,12 +353,11 @@
             "11개 언어|EN ES FR NL PT RU ZH JA KO ID MS",
             "11개 언어|EN ES FR NL PT RU ZH JA KO ID MS",
             "12개 언어|EN ES FR NL PT RU ZH JA KO ID MS DE",
-            "-"
+            "11개 언어|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
         "unique": "독점",
-        "where": "구매처",
-        "iosNote": "iOS 및 Mac"
+        "where": "구매처"
       },
       "toolsSection": {
         "eyebrow": "독립 도구",
@@ -707,6 +713,11 @@
     },
     "blog": {
       "posts": {
+        "best-komga-kavita-alternatives": {
+          "title": "Komga vs Kavita vs BiblioFuse: 2026년 최고의 CBZ, CBR, EPUB 리더 대안",
+          "excerpt": "Komga, Kavita, Calibre-Web, Ubooquity 등 대표적인 셀프 호스팅 만화·전자책 리더와 BiblioFuse의 통합 앱 생태계를 비교합니다. 장단점과 내 환경에 맞는 선택지를 확인하세요.",
+          "seoDescription": "Komga vs Kavita vs Calibre-Web vs Ubooquity vs BiblioFuse: 2026년 최고의 셀프 호스팅 CBZ, CBR, EPUB 리더 대안을 설정 난이도, 형식 지원, 기기 호환성까지 솔직하게 비교합니다."
+        },
         "reading-ebooks-offline-iphone": {
           "title": "iPhone에서 완전 오프라인으로 전자책 읽기: 클라우드 불필요",
           "excerpt": "BiblioFuse는 EPUB, CBZ, CBR, PDF, ZIP, RAR, TXT 파일을 iPhone에 로컬로 저장합니다. 비행기, 지하철 또는 신호가 없는 곳에서도 전체 라이브러리를 읽을 수 있습니다. 클라우드 구독이나 계정이 필요하지 않으며, iOS 17 이상을 지원합니다.",
@@ -1070,7 +1081,8 @@
         "trust3": "CJK 텍스트 지원",
         "comingSoon": "App Store에서 이용 가능",
         "msStoreCta": "Microsoft에서 받기",
-        "macInReview": "iOS, macOS 및 Windows에서 이용 가능"
+        "macInReview": "iOS, macOS 및 Windows에서 이용 가능",
+        "screenshotAlt": "iPhone에서 GrepTag Reader의 재사용 가능한 AND/OR/NOT 검색 프로필 화면"
       },
       "grep": {
         "eyebrow": "책 내부 검색",
@@ -1125,7 +1137,8 @@
         "row4col2": "Full-text grep, tags, covers, Wi-Fi sync",
         "row5Label": "형식",
         "row5col1": "CBZ, CBR, PDF, EPUB, TXT",
-        "row5col2": "EPUB, TXT"
+        "row5col2": "EPUB, TXT",
+        "readerCta": "BiblioFuse Reader 탐색"
       },
       "pricing": {
         "eyebrow": "요금제",

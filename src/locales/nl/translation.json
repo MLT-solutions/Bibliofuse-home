@@ -307,11 +307,18 @@
             "Continu scrollen, voortgang, waarderingen, tags|Geen TTS of peek zoom"
           ],
           [
-            "Controller/externe invoer",
+            "Controllerinvoer",
             "Bluetooth-controller in Xbox-stijl|Aanpasbaar — iPhone, iPad, Mac, Vision Pro en Apple TV",
             "Bluetooth-controller in Xbox-stijl|Vaste toewijzingen",
-            "Android TV|Ingebouwde D-pad-/afstandsbedieningsnavigatie||Telefoon en tablet|Functie gebouwd, nog niet gekoppeld aan lezeracties",
+            "Android TV|Ingebouwde D-pad-/afstandsbedieningsnavigatie||Telefoon en tablet|Bluetooth-controller in Xbox-stijl, aanpasbaar",
             "-"
+          ],
+          [
+            "Toetsenbordinvoer",
+            "Mac en Vision Pro|Page Down/Spatie, pijltjestoetsen, ⌘-sneltoetsen||iPad en iPhone|Alleen bibliotheeknavigatie, met extern toetsenbord",
+            "Pijltjestoetsen en Spatie|Plus F11 volledig scherm, Esc om te sluiten",
+            "-",
+            "Pijltjestoetsen|Paginanavigatie in de browserlezer"
           ],
           [
             "Kan een bibliotheek hosten",
@@ -346,12 +353,11 @@
             "11 talen|EN ES FR NL PT RU ZH JA KO ID MS",
             "11 talen|EN ES FR NL PT RU ZH JA KO ID MS",
             "12 talen|EN ES FR NL PT RU ZH JA KO ID MS DE",
-            "-"
+            "11 talen|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
         "unique": "Uniek",
-        "where": "Waar te verkrijgen",
-        "iosNote": "iOS en Mac"
+        "where": "Waar te verkrijgen"
       },
       "toolsSection": {
         "eyebrow": "Losse tools",
@@ -707,6 +713,11 @@
     },
     "blog": {
       "posts": {
+        "best-komga-kavita-alternatives": {
+          "title": "Komga vs Kavita vs BiblioFuse: de beste CBZ-, CBR- en EPUB-lezeralternatieven in 2026",
+          "excerpt": "Vergelijking van de beste zelf-gehoste strip- en e-booklezers — Komga, Kavita, Calibre-Web en Ubooquity — met het verbonden appecosysteem van BiblioFuse. Voor- en nadelen en welke bij jouw setup past.",
+          "seoDescription": "Komga vs Kavita vs Calibre-Web vs Ubooquity vs BiblioFuse: een eerlijke vergelijking van de beste zelf-gehoste CBZ-, CBR- en EPUB-lezeralternatieven in 2026, met installatiegemak, formaatondersteuning en apparaatdekking."
+        },
         "reading-ebooks-offline-iphone": {
           "title": "E-books volledig offline lezen op iPhone: geen cloud vereist",
           "excerpt": "BiblioFuse slaat EPUB, CBZ, CBR, PDF, ZIP, RAR en TXT-bestanden lokaal op je iPhone op — lees je hele bibliotheek in vliegtuigen, ondergronds of overal zonder signaal. Geen cloud-abonnement of account nodig. iOS 17 of hoger.",
@@ -1070,7 +1081,8 @@
         "trust3": "CJK-tekst ondersteund",
         "comingSoon": "Nu beschikbaar in de App Store",
         "msStoreCta": "Verkrijg het van Microsoft",
-        "macInReview": "iOS, macOS en Windows nu beschikbaar"
+        "macInReview": "iOS, macOS en Windows nu beschikbaar",
+        "screenshotAlt": "Herbruikbaar EN/OF/NIET-zoekprofielscherm van GrepTag Reader op iPhone"
       },
       "grep": {
         "eyebrow": "Zoeken in Boeken",
@@ -1125,7 +1137,8 @@
         "row4col2": "Full-text grep, tags, covers, Wi-Fi sync",
         "row5Label": "Formaten",
         "row5col1": "CBZ, CBR, PDF, EPUB, TXT",
-        "row5col2": "EPUB, TXT"
+        "row5col2": "EPUB, TXT",
+        "readerCta": "BiblioFuse Reader verkennen"
       },
       "pricing": {
         "eyebrow": "Prijzen",

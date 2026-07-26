@@ -3,6 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { useParams, Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
+// Temporary: point straight at the App Store instead of mlogictech.com/products
+// until that listing is live — see docs/features/app-pages.md. Swap back to
+// mlogictech.com once it's ready.
+const smartDecryptAppStoreUrl = 'https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229';
+const contentCueAppStoreUrl = 'https://apps.apple.com/us/app/contentcue-read-listen/id6770080864';
+
 const Footer = () => {
     const { t } = useTranslation();
     const { lang } = useParams();
@@ -39,8 +45,8 @@ const Footer = () => {
                             <li><Link to={`/${lang || 'en'}/webapp/`} className="text-ink transition hover:text-brand">{t('redesign.footer.webTool')}</Link></li>
                             <li><Link to={`/${lang || 'en'}/grepreader/`} className="text-ink transition hover:text-brand">GrepTag Reader</Link></li>
                             <li><Link to={`/${lang || 'en'}/archive/`} className="text-ink transition hover:text-brand">Comic Duplicate Scanner</Link></li>
-                            <li><a href="https://www.mlogictech.com/products#smartdecrypt" target="_blank" rel="noopener" className="text-ink transition hover:text-brand">SmartDecrypt PDF ZIP</a></li>
-                            <li><a href="https://www.mlogictech.com/products#contentcue" target="_blank" rel="noopener" className="text-ink transition hover:text-brand">ContentCue</a></li>
+                            <li><a href={smartDecryptAppStoreUrl} target="_blank" rel="noopener" className="text-ink transition hover:text-brand">SmartDecrypt PDF ZIP</a></li>
+                            <li><a href={contentCueAppStoreUrl} target="_blank" rel="noopener" className="text-ink transition hover:text-brand">ContentCue</a></li>
                         </ul>
                     </div>
 

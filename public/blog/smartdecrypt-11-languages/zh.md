@@ -1,6 +1,6 @@
 # SmartDecrypt 现已支持 11 种语言 — 用自己的语言解锁银行 PDF
 
-你的银行账单以加密 PDF 的形式到达。密码是你的身份证号、出生日期或账户后六位 — 你输过几十次却还是记不住。[SmartDecrypt PDF ZIP](/zh/smartdecrypt/) 就是为此而生：只需保存一次密码规律，之后每张账单拖进来就自动解锁。
+你的银行账单以加密 PDF 的形式到达。密码是你的身份证号、出生日期或账户后六位 — 你输过几十次却还是记不住。[SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) 就是为此而生：只需保存一次密码规律，之后每张账单拖进来就自动解锁。
 
 这一体验现在支持 11 种语言。SmartDecrypt PDF ZIP CBZ 将完整的界面本地化扩展至英语、西班牙语、法语、荷兰语、葡萄牙语、俄语、简体中文、日语、韩语、印度尼西亚语和马来语 — 覆盖逾 30 亿母语使用者。
 
@@ -10,7 +10,7 @@
 
 问题在于密码。银行、保险公司和政府机构通常使用个人识别信息作为密码 — 身份证号、出生日期或保单号。每家机构用的格式不同，没有一个与你平时的密码相同。
 
-[SmartDecrypt](/zh/smartdecrypt/) 通过**文件名模式匹配**解决这个问题。你创建一个配置：「凡是文件名匹配 `招商银行_*.pdf` 的，密码是我的身份证号」。下次这类文件到达时，拖进 SmartDecrypt，几秒内即可解锁。
+[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) 通过**文件名模式匹配**解决这个问题。你创建一个配置：「凡是文件名匹配 `招商银行_*.pdf` 的，密码是我的身份证号」。下次这类文件到达时，拖进 SmartDecrypt，几秒内即可解锁。
 
 ## 新功能：完整支持 11 种语言
 
@@ -48,4 +48,4 @@ SmartDecrypt 自动跟随设备语言。iOS：**设置 → 通用 → 语言与�
 
 SmartDecrypt 免费支持每次解锁一个文件。SmartDecrypt Pro 是一次性通用购买，解锁批量处理功能。无需订阅。
 
-前往 App Store 或 Microsoft Store 下载 [SmartDecrypt PDF ZIP](/zh/smartdecrypt/)。11 种语言更新现已在所有平台上线。
+前往 App Store 或 Microsoft Store 下载 [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)。11 种语言更新现已在所有平台上线。

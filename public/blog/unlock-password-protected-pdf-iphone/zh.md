@@ -1,6 +1,6 @@
 # 如何在 iPhone 和 Mac 上解锁受密码保护的 PDF
 
-[SmartDecrypt PDF ZIP CBZ](/zh/smartdecrypt/) 可以在 iPhone、iPad 和 Mac 上移除受保护 PDF 文件的密码，无需将您的文档发送至任何外部服务器。它还能解锁受密码保护的 ZIP 和 CBZ 压缩包，并可通过内置批量模式一次性解密多个文件。如果您曾需要在 iPhone 上解锁受密码保护的 PDF 却无从下手，SmartDecrypt 正是专为此而设计的工具。
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) 可以在 iPhone、iPad 和 Mac 上移除受保护 PDF 文件的密码，无需将您的文档发送至任何外部服务器。它还能解锁受密码保护的 ZIP 和 CBZ 压缩包，并可通过内置批量模式一次性解密多个文件。如果您曾需要在 iPhone 上解锁受密码保护的 PDF 却无从下手，SmartDecrypt 正是专为此而设计的工具。
 
 ## 为什么受密码保护的 PDF 会在 iPhone 上阻止您访问？
 
@@ -76,4 +76,4 @@ SmartDecrypt 需要正确的密码才能解密文件——它不是密码破解�
 
 如果受密码保护的 PDF 在您的 iPhone 或 Mac 上是反复出现的障碍，SmartDecrypt PDF ZIP CBZ 是目前最简洁的解决方案。它完全在设备上运行，支持 PDF、ZIP 和 CBZ，提供批量解密功能，使用时间不超过一分钟。在 App Store 搜索 **SmartDecrypt PDF ZIP CBZ** 即可开始。
 
-[SmartDecrypt PDF ZIP CBZ](/zh/smartdecrypt/) — 在 App Store 下载.
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) — 在 App Store 下载.

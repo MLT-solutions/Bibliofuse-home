@@ -2,7 +2,7 @@
 
 Setiap bulan, bank anda menghantar PDF. Terkunci dengan kata laluan — nombor MyKAD, tarikh lahir, atau enam digit terakhir nombor akaun anda. Anda pernah menaipnya sebelum ini, tetapi tidak cukup baru-baru ini untuk mengingatinya dengan segera.
 
-[SmartDecrypt PDF ZIP](/ms/smartdecrypt/) mengatasi ini: simpan corak kata laluan sekali bagi setiap bank atau institusi. Setiap penyata berikutnya dari sumber itu terbuka secara automatik apabila anda menjatuhkannya.
+[SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) mengatasi ini: simpan corak kata laluan sekali bagi setiap bank atau institusi. Setiap penyata berikutnya dari sumber itu terbuka secara automatik apabila anda menjatuhkannya.
 
 ## Menyediakan SmartDecrypt untuk Penyata Bank
 
@@ -26,4 +26,4 @@ Kata laluan disimpan dalam Apple Keychain. Tidak pernah dihantar ke mana-mana pe
 
 SmartDecrypt percuma untuk membuka kunci satu fail pada satu masa. SmartDecrypt Pro menambah pemprosesan kelompok dengan pembelian sekali. Tanpa langganan.
 
-Muat turun [SmartDecrypt PDF ZIP](/ms/smartdecrypt/) dari App Store atau Microsoft Store.
+Muat turun [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) dari App Store atau Microsoft Store.

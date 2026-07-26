@@ -2,7 +2,7 @@
 
 Chaque mois, votre banque vous envoie un PDF. Il est verrouillé par un mot de passe — votre numéro de sécurité sociale, votre date de naissance ou les six derniers chiffres de votre numéro de compte. Vous l'avez déjà tapé, mais pas assez récemment pour vous en souvenir spontanément.
 
-[SmartDecrypt PDF ZIP](/fr/smartdecrypt/) résout ça : enregistrez le modèle de mot de passe une fois par banque ou institution. Chaque prochain relevé de cette source se déverrouille automatiquement quand vous le déposez.
+[SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) résout ça : enregistrez le modèle de mot de passe une fois par banque ou institution. Chaque prochain relevé de cette source se déverrouille automatiquement quand vous le déposez.
 
 ## Comment Configurer SmartDecrypt pour les Relevés Bancaires
 
@@ -27,4 +27,4 @@ Les mots de passe sont stockés dans le Trousseau Apple. Ils ne sont jamais envo
 
 SmartDecrypt est gratuit pour déverrouiller un fichier à la fois. SmartDecrypt Pro ajoute le traitement par lots avec un achat unique. Sans abonnement.
 
-Téléchargez [SmartDecrypt PDF ZIP](/fr/smartdecrypt/) sur l'App Store ou le Microsoft Store.
+Téléchargez [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) sur l'App Store ou le Microsoft Store.

@@ -2,7 +2,7 @@
 
 Elke maand stuurt je bank een PDF. Die is vergrendeld met een wachtwoord — je BSN, geboortedatum of de laatste zes cijfers van je rekeningnummer. Je hebt het eerder ingetypt, maar niet recent genoeg om het zo uit je hoofd te weten.
 
-[SmartDecrypt PDF ZIP](/nl/smartdecrypt/) lost dit op: sla het wachtwoordpatroon één keer op per bank of instelling. Elk volgend afschrift van die bron wordt automatisch ontgrendeld wanneer je het neerzet.
+[SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) lost dit op: sla het wachtwoordpatroon één keer op per bank of instelling. Elk volgend afschrift van die bron wordt automatisch ontgrendeld wanneer je het neerzet.
 
 ## SmartDecrypt Instellen voor Bankafschriften
 
@@ -26,4 +26,4 @@ Wachtwoorden worden opgeslagen in Apple Sleutelhanger. Ze gaan nooit naar een se
 
 SmartDecrypt is gratis voor één bestand per keer. SmartDecrypt Pro voegt batchverwerking toe met een eenmalige aankoop. Geen abonnement.
 
-Download [SmartDecrypt PDF ZIP](/nl/smartdecrypt/) in de App Store of Microsoft Store.
+Download [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) in de App Store of Microsoft Store.

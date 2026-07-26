@@ -307,11 +307,18 @@
             "连续滚动、进度、评分、标签|不支持 TTS 或 Peek Zoom"
           ],
           [
-            "手柄/外部输入",
+            "手柄输入",
             "Xbox 风格蓝牙手柄|可自定义 — iPhone、iPad、Mac、Vision Pro 和 Apple TV",
             "Xbox 风格蓝牙手柄|固定按键映射",
-            "Android TV|内置方向键/遥控器导航||手机和平板|功能已构建，尚未接入阅读器操作",
+            "Android TV|内置方向键/遥控器导航||手机和平板|Xbox 风格蓝牙手柄，可自定义",
             "-"
+          ],
+          [
+            "键盘输入",
+            "Mac 和 Vision Pro|Page Down/空格键、方向键、⌘ 快捷键||iPad 和 iPhone|仅限书库导航，需外接键盘",
+            "方向键和空格键|另有 F11 全屏、Esc 退出",
+            "-",
+            "方向键|在浏览器阅读器中翻页"
           ],
           [
             "可以托管书库",
@@ -346,12 +353,11 @@
             "11 种语言|EN ES FR NL PT RU ZH JA KO ID MS",
             "11 种语言|EN ES FR NL PT RU ZH JA KO ID MS",
             "12 种语言|EN ES FR NL PT RU ZH JA KO ID MS DE",
-            "-"
+            "11 种语言|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
         "unique": "独有",
-        "where": "获取方式",
-        "iosNote": "iOS 和 Mac"
+        "where": "获取方式"
       },
       "toolsSection": {
         "eyebrow": "独立工具",
@@ -707,6 +713,11 @@
     },
     "blog": {
       "posts": {
+        "best-komga-kavita-alternatives": {
+          "title": "Komga vs Kavita vs BiblioFuse：2026 年最佳 CBZ、CBR 与 EPUB 阅读器替代方案",
+          "excerpt": "对比最佳自托管漫画和电子书阅读器——Komga、Kavita、Calibre-Web 和 Ubooquity——与 BiblioFuse 一体化应用生态系统的优劣，帮你找到最适合自己的方案。",
+          "seoDescription": "Komga vs Kavita vs Calibre-Web vs Ubooquity vs BiblioFuse：2026 年最佳自托管 CBZ、CBR、EPUB 阅读器替代方案的真实对比，涵盖设置难度、格式支持与设备覆盖范围。"
+        },
         "reading-ebooks-offline-iphone": {
           "title": "在iPhone上完全离线阅读电子书：无需云服务",
           "excerpt": "BiblioFuse将EPUB、CBZ、CBR、PDF、ZIP、RAR和TXT文件本地存储在您的iPhone上——可在飞机、地铁或任何没有信号的地方阅读整个书库。无需云订阅或账户，支持iOS 17及更高版本。",
@@ -1070,7 +1081,8 @@
         "trust3": "支持中日韩文字",
         "comingSoon": "现已在 App Store 上架",
         "msStoreCta": "从 Microsoft 获取",
-        "macInReview": "iOS、macOS 和 Windows 现已推出"
+        "macInReview": "iOS、macOS 和 Windows 现已推出",
+        "screenshotAlt": "GrepTag Reader 中可重复使用的 AND/OR/NOT 搜索配置文件界面（iPhone）"
       },
       "grep": {
         "eyebrow": "在书籍内部搜索",
@@ -1125,7 +1137,8 @@
         "row4col2": "Full-text grep, tags, covers, Wi-Fi sync",
         "row5Label": "格式",
         "row5col1": "CBZ、CBR、PDF、EPUB、TXT",
-        "row5col2": "EPUB、TXT"
+        "row5col2": "EPUB、TXT",
+        "readerCta": "探索BiblioFuse Reader"
       },
       "pricing": {
         "eyebrow": "定价",

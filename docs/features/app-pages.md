@@ -7,13 +7,25 @@ one landing page per app, each reachable at its own top-level route (`/comicread
 `SmartDecrypt.jsx` and `ContentCue.jsx` (`/smartdecrypt`, `/contentcue`) are **not**
 landing pages anymore — retired 2026-07-20 in favor of their listing on
 mlogictech.com/products (off-theme for a reader-focused hub, ~0 organic search on
-either page). Both now render a short noindexed "this app has moved" stub with a link
-to the mlogictech.com listing, the App Store, and back to BiblioFuse. Every internal
-link that used to point at these pages (Navigation tools dropdown, Footer product
-list, Home.jsx product-family cards and hero sections) now points straight at
-mlogictech.com instead of routing through the stub. `/smartdecrypt/changelog`,
-`/smartdecrypt/privacy`, `/contentcue/changelog`, `/contentcue/privacy` are
-untouched — still the real App Store-facing compliance pages, still indexed for `en`.
+either page). Both still render a short noindexed "this app has moved" stub with a
+link to the mlogictech.com listing, the App Store, and back to BiblioFuse — that stub
+page itself is unchanged. `/smartdecrypt/changelog`, `/smartdecrypt/privacy`,
+`/contentcue/changelog`, `/contentcue/privacy` are untouched — still the real App
+Store-facing compliance pages, still indexed for `en`.
+
+**Temporary, 2026-07-26**: every internal link that used to point at these pages
+(Navigation tools dropdown, Footer product list, Home.jsx product-family cards) was
+first changed to point at mlogictech.com instead of routing through the stub, but
+mlogictech.com/products isn't actually live with these listings yet. Per the product
+owner, all of these now point straight at the App Store instead (`smartDecryptAppStoreUrl`
+/ `contentCueAppStoreUrl` constants, duplicated locally in `Navigation.jsx`,
+`Footer.jsx`, and `Home.jsx` since these components don't share a common constants
+module — kept in sync by hand). The same fix was applied to the 7 blog posts that
+link to SmartDecrypt and the 1 that links to ContentCue (see `blog.md` if it exists,
+or grep `public/blog/*/*.md` for `apps.apple.com/ca/app/smartdecrypt` /
+`apps.apple.com/us/app/contentcue`). **Swap these back to mlogictech.com once that
+listing goes live** — don't leave the App Store direct-link as permanent without
+revisiting; it exists only because mlogictech.com wasn't ready.
 
 ## Shared conventions
 - Each app page hides the global `Footer` (see the `isWebApp` / `isComicReader` /
@@ -78,15 +90,29 @@ version); its `redesign.twoAppsSection.*` translation keys other than `.textCta`
 `/comicreader/` itself (`id="why-two-apps"`) but that was a duplicate of the homepage
 section and was removed from `ComicReader.jsx` on 2026-07-21.
 
+**Per-column CTAs, 2026-07-26**: the table used to end in a single centered button
+that only linked to `/grepreader/`, even though the table compares both apps —
+replaced with a final table row with one button per column: BiblioFuse Reader's cell
+links to `/comicreader/` (new key `redesign.grepTagPage.whySeparate.readerCta`,
+"Explore BiblioFuse Reader", parallel to the existing `.textCta` GrepTag copy), and
+GrepTag's cell keeps its original `/grepreader/` link and `.textCta` text unchanged.
+
+`Hero`'s `DevicePills` list had drifted from `/comicreader/`'s own hero — missing
+`docker`/`synology` (added there when the comicreader hero grew a self-hosting
+section) — fixed 2026-07-26 to match. `Hero` also had no link to `/comicreader/`
+itself despite being the flagship product's homepage entry point; added a "Learn
+more →" link (reuses the existing `redesign.productFamily.learnMore` key) right
+under the device chips.
+
 Homepage FAQ copy should stay at the brand/app-chooser level; setup-heavy BiblioFuse
 Reader questions belong on `/comicreader` or focused help/blog pages. The full Reader
 FAQ lives in `redesign.comicReaderPage.faq` so troubleshooting answers can include
 nested bullet steps, code-formatted filenames, and support links without bloating the
 homepage.
 
-### Edition comparison table (`/comicreader/`, updated 2026-07-24)
+### Edition comparison table (`/comicreader/`, updated 2026-07-26)
 `ComparisonTable`, `id="comparison-table"`, rendered on `/comicreader/` right after
-`VisionProSection`: a 9-row feature table across 4 editions (Apple, PC, Android, and
+`VisionProSection`: a 10-row feature table across 4 editions (Apple, PC, Android, and
 a new NAS column for Docker/Synology self-hosting) driven entirely by
 `redesign.home.table` in each locale's `translation.json` (`editions`/`subtitles`/
 `badges`/`rows`, 5-cell rows: label + one cell per edition; `renderLocalizedTableCell`
@@ -110,10 +136,18 @@ embedded browser reader, `docs/features/web-reader.md`): the browser reader supp
 EPUB, CBZ/CBR/RAR/ZIP, and TXT/TEXT/MD — **no PDF** (explicitly out of scope per
 `docs/docker-synology-web-reader-plan.md`) — with continuous-scroll comics, adjustable
 font size, 0–5 ratings, and tags, but no TTS or peek zoom. No compress/merge tools
-exist on the host side, so that row stays "-" for NAS. (Checked for UI localization
-too, per a since-corrected assumption — the repo has none: only JS's locale-aware
+exist on the host side, so that row stays "-" for NAS.
+
+**`Language support` NAS cell, corrected 2026-07-26**: on 2026-07-24 this was "-" —
+the `bibliofuse-nas` repo had no UI localization at all (only JS's locale-aware
 `toLocaleLowerCase`/`localeCompare` sorting helpers and a hardcoded `lang="en"` HTML
-attribute, no translated strings anywhere. `Language support` stays "-" for NAS.)
+attribute). That changed with the repo's `60c58ca` commit ("Localize NAS web app and
+distribution guides", 2026-07-26), which added a real `internal/webui/assets/i18n.js`
+covering the same 11 languages as this site (`LANGUAGE_CODES` in that file: en, es,
+fr, nl, pt, ru, zh-CN, ja, ko, id, ms). The cell now reads "11 languages" like
+Apple/PC. This is a concrete example of why `docs/index.md`'s sibling-repo section
+says to check the actual repo rather than trust an older note in this doc — the
+underlying product changed after this doc was first written.
 
 Apple TV and Android TV were added to the Apple/Android subtitle device lists
 (previously missing) once Android TV's streaming client was confirmed shipped
@@ -133,18 +167,50 @@ deliberately excluded from the tvOS v1 product) and `bibliofuse-android-native`'
 gaps. See `docs/index.md`'s new "Sibling product repos" section for these repo
 paths and what each one covers.
 
-**"Controller / external input" row (added 2026-07-24)**: Apple (iPhone, iPad, Mac,
-Vision Pro, Apple TV) has full customizable Xbox-style Bluetooth controller support
-(`bibliofuse_iosv2/docs/features/ios-controller-input.md` and
-`universal-input-mapping.md`); PC has the same Gold Controller Default with fixed
-(non-customizable) bindings (`bibliofuse-windows/docs/features/
-universal-input-mapping.md`); Android TV has built-in D-pad/remote navigation
-wired into its reader; Android phone/tablet does NOT — the controller framework
-exists in code but isn't wired to library/reader actions yet, and
-`bibliofuse-android-native/docs/phone-external-controller-bindings.md` explicitly
-says not to market it as available until that's done, so the cell says so plainly
-rather than implying it works. NAS has no controller support (keyboard only in the
-browser reader), so that cell is "-".
+**"Controller input" row (added 2026-07-24 as "Controller / external input",
+renamed 2026-07-26 since it only ever described controller input)**: Apple
+(iPhone, iPad, Mac, Vision Pro, Apple TV) has full customizable Xbox-style
+Bluetooth controller support (`bibliofuse_iosv2/docs/features/
+ios-controller-input.md` and `universal-input-mapping.md`); PC has the same Gold
+Controller Default with fixed (non-customizable) bindings
+(`bibliofuse-windows/docs/features/universal-input-mapping.md`); Android TV has
+built-in D-pad/remote navigation wired into its reader. NAS has no controller
+support (keyboard only in the browser reader), so that cell is "-".
+
+**Android phone/tablet, corrected 2026-07-26**: on 2026-07-24 this cell said the
+controller framework existed but wasn't wired to reader actions, per
+`bibliofuse-android-native/docs/phone-external-controller-bindings.md`'s explicit
+warning not to market it as available. That doc is now stale relative to the code —
+commits `173e301` ("add customizable controller input"), `85a9c16` ("localize
+controller bindings"), and `f9c491a` ("Fix controller navigation and remote
+thumbnails") landed 2026-07-26 and shipped the real thing: `ControllerSettingsScreen`
+now has a working capture flow (`beginCapture`) with same-surface conflict swapping
+and a Restore Xbox Defaults action, bindings persist via `persistBindings()`, and
+`ReaderScreen.kt` now handles `READER_NEXT/PREVIOUS/AUTO_SCROLL/CLOSE/FASTER/SLOWER/
+TOGGLE_CONTROLS` — confirmed directly in source, not just from the commit messages
+or `docs/android-completion-plan.md`'s item 10 update. The cell now reads "Xbox-style
+Bluetooth controller, customizable", matching Apple's phrasing for the same
+capability. The `phone-external-controller-bindings.md` doc itself hasn't been
+updated in that repo yet — don't trust it over the code the next time this is
+checked.
+
+**"Keyboard input" row (added 2026-07-26)**, directly below Controller input:
+Mac and Vision Pro share the same fixed reader shortcuts (Page Down/Space, arrow
+keys, plus Mac-only ⌘ shortcuts for window/library actions —
+`MacInputReferenceView.swift` / `VisionInputReferenceView.swift`); iPad and iPhone
+only wire an external keyboard's arrow keys to *library* grid navigation
+(`iOS/Features/Library/LibraryView.swift`'s `keyCommands`), not the reader itself,
+so that's called out as a narrower sub-case in the same stacked-cell style used
+elsewhere in this table. PC has arrow keys/Space (`ReaderPage.xaml.cs`) plus F11/Esc.
+Android has no reader keyboard handling anywhere in the phone/tablet codebase, so
+that cell is "-" (Android TV's remote/D-pad handling is already covered by the
+Controller input row above, not duplicated here). NAS has arrow-key page
+navigation in the browser reader (`docs/features/web-reader.md`).
+
+**"Where to get it" row**: the Apple cell's small "iOS and Mac" caption under the
+App Store badge was removed 2026-07-26 (per product-owner request) — the
+`table.iosNote` translation key was also deleted from all 11 locale files since it
+had no other use.
 
 `Home.jsx` contains its own separate, hardcoded `ComparisonTable()` implementation
 that reads the same `redesign.home.table` data (kept in sync with the `/comicreader/`

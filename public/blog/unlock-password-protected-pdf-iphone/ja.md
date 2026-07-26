@@ -1,6 +1,6 @@
 # iPhoneとMacでパスワード保護されたPDFを解除する方法
 
-[SmartDecrypt PDF ZIP CBZ](/ja/smartdecrypt/)は、iPhone・iPad・Mac上でパスワード保護されたPDFファイルから保護を取り除くアプリで、ドキュメントを外部サーバーへ送信することはありません。パスワードで保護されたZIPおよびCBZアーカイブの解除にも対応し、内蔵のバッチモードで複数ファイルを一括して復号することができます。iPhoneでパスワード付きPDFを解除しなければならなかったのに方法がわからなかった経験があるなら、SmartDecryptはまさにその目的のために作られたツールです。
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)は、iPhone・iPad・Mac上でパスワード保護されたPDFファイルから保護を取り除くアプリで、ドキュメントを外部サーバーへ送信することはありません。パスワードで保護されたZIPおよびCBZアーカイブの解除にも対応し、内蔵のバッチモードで複数ファイルを一括して復号することができます。iPhoneでパスワード付きPDFを解除しなければならなかったのに方法がわからなかった経験があるなら、SmartDecryptはまさにその目的のために作られたツールです。
 
 ## パスワード保護されたPDFがiPhoneで開けない理由
 
@@ -76,4 +76,4 @@ SmartDecryptはファイルを復号するために正しいパスワードが�
 
 iPhoneやMacでパスワード保護されたPDFが繰り返し問題になっているなら、SmartDecrypt PDF ZIP CBZが最もシンプルな解決策です。完全にデバイス上で動作し、PDF・ZIP・CBZに対応し、バッチ復号をサポートし、1分以内に使えます。App Storeで**SmartDecrypt PDF ZIP CBZ**を検索してはじめてみてください。
 
-[SmartDecrypt PDF ZIP CBZ](/ja/smartdecrypt/) — App Store でダウンロード.
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) — App Store でダウンロード.

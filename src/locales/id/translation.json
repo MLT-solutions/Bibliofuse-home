@@ -307,11 +307,18 @@
             "Gulir berkelanjutan, progres, rating, tag|Tanpa TTS atau peek zoom"
           ],
           [
-            "Kontroler / input eksternal",
+            "Input kontroler",
             "Kontroler Bluetooth gaya Xbox|Dapat disesuaikan — iPhone, iPad, Mac, Vision Pro & Apple TV",
             "Kontroler Bluetooth gaya Xbox|Pemetaan tombol tetap",
-            "Android TV|Navigasi D-pad/remote bawaan||Ponsel & tablet|Fitur sudah dibangun, belum terhubung ke aksi pembaca",
+            "Android TV|Navigasi D-pad/remote bawaan||Ponsel & tablet|Kontroler Bluetooth gaya Xbox, dapat disesuaikan",
             "-"
+          ],
+          [
+            "Input keyboard",
+            "Mac & Vision Pro|Page Down/Spasi, tombol panah, pintasan ⌘||iPad & iPhone|Hanya navigasi perpustakaan, dengan keyboard eksternal",
+            "Tombol panah & Spasi|Plus F11 layar penuh, Esc untuk keluar",
+            "-",
+            "Tombol panah|Navigasi halaman di pembaca browser"
           ],
           [
             "Bisa menghosting perpustakaan",
@@ -346,12 +353,11 @@
             "11 bahasa|EN ES FR NL PT RU ZH JA KO ID MS",
             "11 bahasa|EN ES FR NL PT RU ZH JA KO ID MS",
             "12 bahasa|EN ES FR NL PT RU ZH JA KO ID MS DE",
-            "-"
+            "11 bahasa|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
         "unique": "Unik",
-        "where": "Tempat mendapatkannya",
-        "iosNote": "iOS dan Mac"
+        "where": "Tempat mendapatkannya"
       },
       "toolsSection": {
         "eyebrow": "Alat mandiri",
@@ -707,6 +713,11 @@
     },
     "blog": {
       "posts": {
+        "best-komga-kavita-alternatives": {
+          "title": "Komga vs Kavita vs BiblioFuse: Alternatif Pembaca CBZ, CBR & EPUB Terbaik di 2026",
+          "excerpt": "Membandingkan pembaca komik dan ebook self-hosted terbaik — Komga, Kavita, Calibre-Web, dan Ubooquity — dengan ekosistem aplikasi terhubung dari BiblioFuse. Kelebihan, kekurangan, dan mana yang cocok untuk setup Anda.",
+          "seoDescription": "Komga vs Kavita vs Calibre-Web vs Ubooquity vs BiblioFuse: perbandingan jujur alternatif pembaca CBZ, CBR, dan EPUB self-hosted terbaik di 2026, lengkap dengan tingkat kesulitan setup, dukungan format, dan cakupan perangkat."
+        },
         "reading-ebooks-offline-iphone": {
           "title": "Membaca Ebook Sepenuhnya Offline di iPhone: Tanpa Cloud",
           "excerpt": "BiblioFuse menyimpan file EPUB, CBZ, CBR, PDF, ZIP, RAR, dan TXT secara lokal di iPhone Anda — baca seluruh perpustakaan di pesawat, bawah tanah, atau di mana saja tanpa sinyal. Tidak perlu berlangganan cloud atau akun. iOS 17 ke atas.",
@@ -1070,7 +1081,8 @@
         "trust3": "Teks CJK didukung",
         "comingSoon": "Kini tersedia di App Store",
         "msStoreCta": "Dapatkan dari Microsoft",
-        "macInReview": "iOS, macOS, dan Windows kini tersedia"
+        "macInReview": "iOS, macOS, dan Windows kini tersedia",
+        "screenshotAlt": "Layar profil pencarian AND/OR/NOT yang dapat digunakan kembali di GrepTag Reader pada iPhone"
       },
       "grep": {
         "eyebrow": "Cari di Dalam Buku",
@@ -1125,7 +1137,8 @@
         "row4col2": "Full-text grep, tags, covers, Wi-Fi sync",
         "row5Label": "Format",
         "row5col1": "CBZ, CBR, PDF, EPUB, TXT",
-        "row5col2": "EPUB, TXT"
+        "row5col2": "EPUB, TXT",
+        "readerCta": "Jelajahi BiblioFuse Reader"
       },
       "pricing": {
         "eyebrow": "Harga",

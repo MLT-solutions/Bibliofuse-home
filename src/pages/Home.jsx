@@ -13,6 +13,11 @@ const bibliofusePcUrl = 'https://apps.microsoft.com/store/detail/9N77MZ509ML2';
 const archiveMacUrl = 'https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449';
 const archiveMsUrl = 'https://apps.microsoft.com/detail/9n2jb4k5wvcq';
 const smartDecryptMsUrl = 'https://apps.microsoft.com/detail/9p9bfkr5zdz8';
+// Temporary: point straight at the App Store instead of mlogictech.com/products
+// until that listing is live — see docs/features/app-pages.md. Swap back to
+// mlogictech.com once it's ready.
+const smartDecryptAppStoreUrl = 'https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229';
+const contentCueAppStoreUrl = 'https://apps.apple.com/us/app/contentcue-read-listen/id6770080864';
 const grepTagReaderUrl = 'https://apps.apple.com/app/id6779977609';
 const grepTagMsStoreUrl = 'https://apps.microsoft.com/store/detail/9MT6VDXXZ3RH';
 // Mirrors HOSTS.docker/synology.appLink in ReaderFamilyGuide.jsx — keep in sync.
@@ -144,7 +149,11 @@ function Hero({ lang }) {
             <MicrosoftStoreImageBadge href={bibliofusePcUrl} />
           </div>
 
-          <DevicePills devices={['iphone', 'ipad', 'mac', 'visionpro', 'appletv', 'android', 'windows']} tone="light" align="start" className="mt-5" />
+          <DevicePills devices={['iphone', 'ipad', 'mac', 'visionpro', 'appletv', 'androidphone', 'androidtablet', 'androidtv', 'windows', 'docker', 'synology']} tone="light" align="start" className="mt-5" />
+
+          <Link to={`/${lang}/comicreader/`} className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 transition hover:text-blue-700">
+            {t('redesign.productFamily.learnMore')} →
+          </Link>
 
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-slate-600">
             {signals.map((item) => (
@@ -215,53 +224,64 @@ function GrepTagHero({ lang }) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#1e1b4b] via-[#312e81] to-[#1e1b4b] py-20 sm:py-24">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(99,102,241,0.3),transparent_50%),radial-gradient(circle_at_80%_70%,rgba(139,92,246,0.2),transparent_50%)]" />
-      <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-indigo-500/10 px-3 py-1.5 text-xs font-semibold text-indigo-200">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inset-0 animate-ping rounded-full bg-indigo-400" />
-            <span className="relative h-2 w-2 rounded-full bg-indigo-400" />
-          </span>
-          {t('redesign.grepTagPage.hero.badge')}
-        </div>
-
-        <div className="mb-6 flex justify-center">
-          <img src="/image/grepreader-logo.png" alt="GrepTag Reader" className="h-20 w-20 rounded-2xl shadow-2xl" />
-        </div>
-
-        <h2 className="mb-5 text-[clamp(2.2rem,4.5vw,3.5rem)] font-black leading-tight tracking-tight text-white">
-          {t('redesign.grepTagPage.hero.title')}
-        </h2>
-        <p className="mx-auto mb-6 max-w-xl text-lg leading-relaxed text-indigo-200">
-          {t('redesign.grepTagPage.hero.desc')}
-        </p>
-
-        <DevicePills devices={['iphone', 'ipad', 'mac', 'windows']} tone="dark" className="mb-8" />
-
-        <div className="flex flex-col items-center gap-3">
-          <div className="flex flex-wrap justify-center gap-3">
-            <a href={grepTagReaderUrl} target="_blank" rel="noopener noreferrer" className="inline-flex">
-              <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt={t('redesign.grepTagPage.hero.appStoreCta')} className="h-10 w-auto" />
-            </a>
-            <a href={grepTagMsStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex">
-              <img src="/image/Microsoft_Store_badge.svg" alt={t('redesign.grepTagPage.hero.msStoreCta')} className="h-10 w-auto" />
-            </a>
-          </div>
-          <span className="text-xs font-medium text-indigo-300">{t('redesign.grepTagPage.hero.macInReview')}</span>
-        </div>
-
-        <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-medium text-indigo-300">
-          {[t('redesign.grepTagPage.hero.trust1'), t('redesign.grepTagPage.hero.trust2'), t('redesign.grepTagPage.hero.trust3')].map((s) => (
-            <span key={s} className="flex items-center gap-1.5">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#818cf8" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-              {s}
+      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 text-center sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10 lg:text-left lg:px-8">
+        <div>
+          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-indigo-500/10 px-3 py-1.5 text-xs font-semibold text-indigo-200">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inset-0 animate-ping rounded-full bg-indigo-400" />
+              <span className="relative h-2 w-2 rounded-full bg-indigo-400" />
             </span>
-          ))}
-        </div>
-        <p className="mt-4 text-xs text-indigo-200/70">{t('redesign.grepTagPage.languages')}</p>
+            {t('redesign.grepTagPage.hero.badge')}
+          </div>
 
-        <Link to={`/${lang}/grepreader/`} className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-300 hover:text-indigo-100 transition-colors">
-          {t('redesign.twoAppsSection.textCta', 'See full details')} →
-        </Link>
+          <div className="mb-6 mt-5 flex justify-center lg:justify-start">
+            <img src="/image/grepreader-logo.png" alt="GrepTag Reader" className="h-20 w-20 rounded-2xl shadow-2xl" />
+          </div>
+
+          <h2 className="mb-5 text-[clamp(2.2rem,4.5vw,3.5rem)] font-black leading-tight tracking-tight text-white">
+            {t('redesign.grepTagPage.hero.title')}
+          </h2>
+          <p className="mx-auto mb-6 max-w-xl text-lg leading-relaxed text-indigo-200 lg:mx-0">
+            {t('redesign.grepTagPage.hero.desc')}
+          </p>
+
+          <DevicePills devices={['iphone', 'ipad', 'mac', 'windows']} tone="dark" className="mb-8 justify-center lg:justify-start" />
+
+          <div className="flex flex-col items-center gap-3 lg:items-start">
+            <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
+              <a href={grepTagReaderUrl} target="_blank" rel="noopener noreferrer" className="inline-flex">
+                <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt={t('redesign.grepTagPage.hero.appStoreCta')} className="h-10 w-auto" />
+              </a>
+              <a href={grepTagMsStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex">
+                <img src="/image/Microsoft_Store_badge.svg" alt={t('redesign.grepTagPage.hero.msStoreCta')} className="h-10 w-auto" />
+              </a>
+            </div>
+            <span className="text-xs font-medium text-indigo-300">{t('redesign.grepTagPage.hero.macInReview')}</span>
+          </div>
+
+          <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-medium text-indigo-300 lg:justify-start">
+            {[t('redesign.grepTagPage.hero.trust1'), t('redesign.grepTagPage.hero.trust2'), t('redesign.grepTagPage.hero.trust3')].map((s) => (
+              <span key={s} className="flex items-center gap-1.5">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#818cf8" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                {s}
+              </span>
+            ))}
+          </div>
+          <p className="mt-4 text-xs text-indigo-200/70">{t('redesign.grepTagPage.languages')}</p>
+
+          <Link to={`/${lang}/grepreader/`} className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-300 hover:text-indigo-100 transition-colors">
+            {t('redesign.twoAppsSection.textCta', 'See full details')} →
+          </Link>
+        </div>
+
+        <div className="mx-auto w-full max-w-[280px] overflow-hidden rounded-3xl border border-white/10 shadow-2xl lg:max-w-none">
+          <img
+            src="/image/grepreader/asc/iphone-grep-profile.jpg"
+            alt={t('redesign.grepTagPage.hero.screenshotAlt')}
+            className="block w-full"
+            loading="lazy"
+          />
+        </div>
       </div>
     </section>
   );
@@ -311,7 +331,7 @@ function ProductFamily({ lang }) {
       desc: t('redesign.productFamily.products.smartdecrypt.desc'),
       bullets: [t('redesign.productFamily.products.smartdecrypt.bullet1'), t('redesign.productFamily.products.smartdecrypt.bullet2'), t('redesign.productFamily.products.smartdecrypt.bullet3'), t('redesign.productFamily.products.smartdecrypt.bullet4')],
       cta: t('redesign.productFamily.learnMore'),
-      href: 'https://www.mlogictech.com/products#smartdecrypt',
+      href: smartDecryptAppStoreUrl,
       secondary: t('redesign.productFamily.products.smartdecrypt.secondary'),
       secondaryHref: smartDecryptMsUrl,
       accent: 'violet',
@@ -324,7 +344,7 @@ function ProductFamily({ lang }) {
       desc: t('redesign.productFamily.products.contentcue.desc'),
       bullets: [t('redesign.productFamily.products.contentcue.bullet1'), t('redesign.productFamily.products.contentcue.bullet2'), t('redesign.productFamily.products.contentcue.bullet3'), t('redesign.productFamily.products.contentcue.bullet4')],
       cta: t('redesign.productFamily.learnMore'),
-      href: 'https://www.mlogictech.com/products#contentcue',
+      href: contentCueAppStoreUrl,
       accent: 'green',
     },
     {
@@ -689,7 +709,7 @@ function ComparisonTable() {
   ];
   const rows = table.rows.map((row, index) => ({
     label: row[0],
-    highlight: index === 5,
+    highlight: index === 6,
     cells: { apple: row[1], pc: row[2], android: row[3], nas: row[4] },
   }));
 
@@ -744,10 +764,7 @@ function ComparisonTable() {
                 <tr className="border-t border-slate-200 bg-white">
                   <td className="px-6 py-5 align-middle text-sm font-bold text-slate-950">{table.where}</td>
                   <td className="px-4 py-5 text-center align-middle">
-                    <div className="flex flex-col items-center gap-1.5">
-                      <StoreBadge type="apple" size="sm" />
-                      <span className="text-[10px] text-slate-400">{table.iosNote}</span>
-                    </div>
+                    <StoreBadge type="apple" size="sm" />
                   </td>
                   <td className="px-4 py-5 text-center align-middle">
                     <MicrosoftStoreImageBadge href={bibliofusePcUrl} />

@@ -1,6 +1,6 @@
 # ContentCue Kini Tersedia dalam 11 Bahasa — Baca Konten Web Tanpa Kehilangan Tempat Anda karena Iklan
 
-Saat membaca artikel di web, Anda sering kehilangan alur di mana konten sebenarnya berakhir dan di mana iklan dimulai. [ContentCue](/id/contentcue/) mengatasi ini dengan menandai area iklan dengan border berwarna saat Anda membaca, sehingga Anda selalu tahu mana bagian halaman yang editorial dan mana yang merupakan penempatan berbayar.
+Saat membaca artikel di web, Anda sering kehilangan alur di mana konten sebenarnya berakhir dan di mana iklan dimulai. [ContentCue](https://apps.apple.com/us/app/contentcue-read-listen/id6770080864) mengatasi ini dengan menandai area iklan dengan border berwarna saat Anda membaca, sehingga Anda selalu tahu mana bagian halaman yang editorial dan mana yang merupakan penempatan berbayar.
 
 Pengalaman itu kini tersedia dalam 11 bahasa. ContentCue telah memperluas lokalisasi antarmuka penuhnya ke bahasa Inggris, Spanyol, Prancis, Belanda, Portugis, Rusia, Mandarin Sederhana, Jepang, Korea, Bahasa Indonesia, dan Melayu.
 
@@ -32,4 +32,4 @@ Kebanyakan pemblokir iklan menghapus iklan sepenuhnya. ContentCue mengambil pend
 
 ContentCue melakukan semua klasifikasi secara lokal, di perangkat Anda. Tidak ada data penelusuran yang diunggah ke server mana pun.
 
-Unduh [ContentCue](/id/contentcue/) dari App Store.
+Unduh [ContentCue](https://apps.apple.com/us/app/contentcue-read-listen/id6770080864) dari App Store.

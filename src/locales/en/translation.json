@@ -195,6 +195,11 @@
         "update": "Update"
       },
       "posts": {
+        "best-komga-kavita-alternatives": {
+          "title": "Komga vs Kavita vs BiblioFuse: Best CBZ, CBR & EPUB Reader Alternatives in 2026",
+          "excerpt": "Comparing the top self-hosted comic and ebook readers — Komga, Kavita, Calibre-Web, and Ubooquity — against BiblioFuse's connected app ecosystem. Pros, cons, and which one fits your setup.",
+          "seoDescription": "Komga vs Kavita vs Calibre-Web vs Ubooquity vs BiblioFuse: an honest comparison of the best self-hosted CBZ, CBR, and EPUB reader alternatives in 2026, with setup difficulty, format support, and device coverage."
+        },
         "reading-ebooks-offline-iphone": {
           "title": "Reading Ebooks Completely Offline on iPhone: No Cloud Required",
           "excerpt": "BiblioFuse stores EPUB, CBZ, CBR, PDF, ZIP, RAR, and TXT files locally on your iPhone — read your entire library on planes, underground, or anywhere with no signal. No cloud subscription or account needed. iOS 17 or later.",
@@ -632,11 +637,18 @@
             "Continuous-scroll, progress, ratings, tags|No TTS or peek zoom"
           ],
           [
-            "Controller / external input",
+            "Controller input",
             "Xbox-style Bluetooth controller|Customizable — iPhone, iPad, Mac, Vision Pro & Apple TV",
             "Xbox-style Bluetooth controller|Fixed bindings",
-            "Android TV|D-pad/remote navigation, built-in||Phone & tablet|Framework built, not yet wired to reader actions",
+            "Android TV|D-pad/remote navigation, built-in||Phone & tablet|Xbox-style Bluetooth controller, customizable",
             "-"
+          ],
+          [
+            "Keyboard input",
+            "Mac & Vision Pro|Page Down/Space, arrow keys, ⌘ shortcuts||iPad & iPhone|Library navigation only, with an external keyboard",
+            "Arrow keys & Space|Plus F11 fullscreen, Esc to exit",
+            "-",
+            "Arrow keys|Page navigation in the browser reader"
           ],
           [
             "Can host a library",
@@ -671,12 +683,11 @@
             "11 languages|EN ES FR NL PT RU ZH JA KO ID MS",
             "11 languages|EN ES FR NL PT RU ZH JA KO ID MS",
             "12 languages|EN ES FR NL PT RU ZH JA KO ID MS DE",
-            "-"
+            "11 languages|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
         "unique": "Unique",
-        "where": "Where to get it",
-        "iosNote": "iOS and Mac"
+        "where": "Where to get it"
       },
       "toolsSection": {
         "eyebrow": "Standalone tools",
@@ -1070,7 +1081,8 @@
         "trust2": "No server, no uploads",
         "trust3": "CJK text supported",
         "comingSoon": "Available now on the App Store",
-        "macInReview": "iOS, macOS, and Windows available now"
+        "macInReview": "iOS, macOS, and Windows available now",
+        "screenshotAlt": "GrepTag Reader reusable AND/OR/NOT grep profile screen on iPhone"
       },
       "grep": {
         "eyebrow": "Search Inside Books",
@@ -1134,7 +1146,8 @@
         "row4col2": "Full-text grep, tags, TXT covers, Wi-Fi sync",
         "row5Label": "Formats",
         "row5col1": "CBZ, CBR, PDF, EPUB, TXT",
-        "row5col2": "EPUB, TXT"
+        "row5col2": "EPUB, TXT",
+        "readerCta": "Explore BiblioFuse Reader"
       },
       "pricing": {
         "eyebrow": "Pricing",

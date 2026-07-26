@@ -307,11 +307,18 @@
             "連続スクロール、進捗、評価、タグ|TTSやピークズームは非対応"
           ],
           [
-            "コントローラー/外部入力",
+            "コントローラー入力",
             "Xbox系Bluetoothコントローラー|カスタマイズ可能 — iPhone、iPad、Mac、Vision Pro、Apple TV",
             "Xbox系Bluetoothコントローラー|固定割り当て",
-            "Android TV|方向キー/リモコン操作を標準搭載||スマートフォンとタブレット|機能は実装済みだがリーダー操作には未接続",
+            "Android TV|方向キー/リモコン操作を標準搭載||スマートフォンとタブレット|Xbox系Bluetoothコントローラー、カスタマイズ可能",
             "-"
+          ],
+          [
+            "キーボード入力",
+            "MacとVision Pro|Page Down/スペース、矢印キー、⌘ショートカット||iPadとiPhone|外部キーボードでのライブラリ操作のみ",
+            "矢印キーとスペース|さらにF11で全画面、Escで終了",
+            "-",
+            "矢印キー|ブラウザリーダーでのページ送り"
           ],
           [
             "ライブラリをホストできる",
@@ -346,12 +353,11 @@
             "11言語|EN ES FR NL PT RU ZH JA KO ID MS",
             "11言語|EN ES FR NL PT RU ZH JA KO ID MS",
             "12言語|EN ES FR NL PT RU ZH JA KO ID MS DE",
-            "-"
+            "11言語|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
         "unique": "独自機能",
-        "where": "入手方法",
-        "iosNote": "iOSとMac"
+        "where": "入手方法"
       },
       "toolsSection": {
         "eyebrow": "単体ツール",
@@ -707,6 +713,11 @@
     },
     "blog": {
       "posts": {
+        "best-komga-kavita-alternatives": {
+          "title": "Komga対Kavita対BiblioFuse：2026年ベストなCBZ・CBR・EPUBリーダー代替案",
+          "excerpt": "自宅サーバー型の漫画・電子書籍リーダーの代表格であるKomga、Kavita、Calibre-Web、Ubooquityと、BiblioFuseの統合アプリエコシステムを比較。メリット・デメリットと、あなたの環境に合う選択肢を紹介します。",
+          "seoDescription": "Komga対Kavita対Calibre-Web対Ubooquity対BiblioFuse：2026年のベストな自宅サーバー型CBZ・CBR・EPUBリーダー代替案を、セットアップの難易度・対応フォーマット・対応デバイスとともに正直に比較します。"
+        },
         "reading-ebooks-offline-iphone": {
           "title": "iPhoneで電子書籍を完全オフラインで読む：クラウド不要",
           "excerpt": "BiblioFuseはEPUB、CBZ、CBR、PDF、ZIP、RAR、TXTファイルをiPhoneにローカル保存します。飛行機の中、地下鉄、電波のない場所でも全ライブラリを読めます。クラウドサブスクリプションやアカウントは不要で、iOS 17以降に対応しています。",
@@ -1070,7 +1081,8 @@
         "trust3": "CJKテキスト対応",
         "comingSoon": "App Store で提供中",
         "msStoreCta": "Microsoftから入手",
-        "macInReview": "iOS、macOS、Windows で提供中"
+        "macInReview": "iOS、macOS、Windows で提供中",
+        "screenshotAlt": "GrepTag ReaderのAND/OR/NOT再利用可能な検索プロファイル画面（iPhone）"
       },
       "grep": {
         "eyebrow": "書籍内テキスト検索",
@@ -1125,7 +1137,8 @@
         "row4col2": "Full-text grep, tags, covers, Wi-Fi sync",
         "row5Label": "フォーマット",
         "row5col1": "CBZ、CBR、PDF、EPUB、TXT",
-        "row5col2": "EPUB、TXT"
+        "row5col2": "EPUB、TXT",
+        "readerCta": "BiblioFuse Readerを探索"
       },
       "pricing": {
         "eyebrow": "料金",

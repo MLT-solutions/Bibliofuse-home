@@ -1,6 +1,6 @@
 # SmartDecrypt Nu Beschikbaar in 11 Talen — Ontgrendel Bankafschriften in Je Eigen Taal
 
-Je bankafschrift komt als een vergrendelde PDF. Het wachtwoord is je BSN, geboortedatum of de laatste zes cijfers van je rekening — iets wat je tientallen keren hebt ingetypt maar niet zomaar uit je hoofd kent. [SmartDecrypt PDF ZIP](/nl/smartdecrypt/) is hier precies voor gebouwd: sla het wachtwoordpatroon één keer op, en elk volgend afschrift ontgrendelt zichzelf wanneer je het neerzet.
+Je bankafschrift komt als een vergrendelde PDF. Het wachtwoord is je BSN, geboortedatum of de laatste zes cijfers van je rekening — iets wat je tientallen keren hebt ingetypt maar niet zomaar uit je hoofd kent. [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) is hier precies voor gebouwd: sla het wachtwoordpatroon één keer op, en elk volgend afschrift ontgrendelt zichzelf wanneer je het neerzet.
 
 Die ervaring is nu beschikbaar in 11 talen. SmartDecrypt PDF ZIP CBZ heeft de volledige UI-lokalisatie uitgebreid naar Engels, Spaans, Frans, Nederlands, Portugees, Russisch, Vereenvoudigd Chinees, Japans, Koreaans, Bahasa Indonesia en Maleis — meer dan drie miljard moedertaalsprekers.
 
@@ -10,7 +10,7 @@ De meeste mensen denken niet dat ze een decryptietool nodig hebben. Totdat hun b
 
 Het probleem zijn de wachtwoorden. Banken, verzekeraars en overheidsinstanties gebruiken doorgaans persoonlijke identifiers als wachtwoorden — je BSN, geboortedatum of polisnummer. Elke instelling gebruikt een ander formaat, en geen enkele komt overeen met je gebruikelijke wachtwoorden.
 
-[SmartDecrypt](/nl/smartdecrypt/) lost dit op met **bestandsnaampatroon-matching**. Je maakt een profiel aan: "wanneer ik een bestand ontvang dat overeenkomt met `ABN_*.pdf`, is het wachtwoord mijn BSN." De volgende keer dat het bestand binnenkomt, zet je het in SmartDecrypt en het ontgrendelt in seconden.
+[SmartDecrypt](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) lost dit op met **bestandsnaampatroon-matching**. Je maakt een profiel aan: "wanneer ik een bestand ontvang dat overeenkomt met `ABN_*.pdf`, is het wachtwoord mijn BSN." De volgende keer dat het bestand binnenkomt, zet je het in SmartDecrypt en het ontgrendelt in seconden.
 
 ## Nieuw: Volledige Ondersteuning voor 11 Talen
 
@@ -48,4 +48,4 @@ Wachtwoorden worden opgeslagen in de Apple Sleutelhanger of Windows Credential M
 
 SmartDecrypt is gratis voor het ontgrendelen van één bestand tegelijk. SmartDecrypt Pro is een eenmalige universele aankoop die batchverwerking ontgrendelt. Geen abonnement.
 
-Download [SmartDecrypt PDF ZIP](/nl/smartdecrypt/) in de App Store of Microsoft Store. De update met 11 talen is nu beschikbaar op alle platforms.
+Download [SmartDecrypt PDF ZIP](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229) in de App Store of Microsoft Store. De update met 11 talen is nu beschikbaar op alle platforms.

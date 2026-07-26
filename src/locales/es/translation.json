@@ -307,11 +307,18 @@
             "Desplazamiento continuo, progreso, valoraciones, etiquetas|Sin TTS ni peek zoom"
           ],
           [
-            "Mando / entrada externa",
+            "Entrada de mando",
             "Mando Bluetooth estilo Xbox|Personalizable — iPhone, iPad, Mac, Vision Pro y Apple TV",
             "Mando Bluetooth estilo Xbox|Combinaciones fijas",
-            "Android TV|Navegación por D-pad/mando a distancia, integrada||Teléfono y tablet|Función creada, aún no conectada a las acciones del lector",
+            "Android TV|Navegación por D-pad/mando a distancia, integrada||Teléfono y tablet|Mando Bluetooth estilo Xbox, personalizable",
             "-"
+          ],
+          [
+            "Entrada de teclado",
+            "Mac y Vision Pro|Av Pág/Espacio, teclas de flecha, atajos ⌘||iPad y iPhone|Solo navegación de biblioteca, con teclado externo",
+            "Teclas de flecha y Espacio|Además F11 pantalla completa, Esc para salir",
+            "-",
+            "Teclas de flecha|Navegación de páginas en el lector del navegador"
           ],
           [
             "Puede alojar una biblioteca",
@@ -346,12 +353,11 @@
             "11 idiomas|EN ES FR NL PT RU ZH JA KO ID MS",
             "11 idiomas|EN ES FR NL PT RU ZH JA KO ID MS",
             "12 idiomas|EN ES FR NL PT RU ZH JA KO ID MS DE",
-            "-"
+            "11 idiomas|EN ES FR NL PT RU ZH JA KO ID MS"
           ]
         ],
         "unique": "Exclusivo",
-        "where": "Dónde conseguirlo",
-        "iosNote": "iOS y Mac"
+        "where": "Dónde conseguirlo"
       },
       "toolsSection": {
         "eyebrow": "Herramientas independientes",
@@ -707,6 +713,11 @@
     },
     "blog": {
       "posts": {
+        "best-komga-kavita-alternatives": {
+          "title": "Komga vs Kavita vs BiblioFuse: las mejores alternativas de lector CBZ, CBR y EPUB en 2026",
+          "excerpt": "Comparamos los mejores lectores de cómics y libros autoalojados — Komga, Kavita, Calibre-Web y Ubooquity — con el ecosistema de apps conectadas de BiblioFuse. Ventajas, desventajas y cuál se ajusta a tu configuración.",
+          "seoDescription": "Komga vs Kavita vs Calibre-Web vs Ubooquity vs BiblioFuse: una comparación honesta de las mejores alternativas de lector CBZ, CBR y EPUB autoalojadas en 2026, con dificultad de configuración, formatos y dispositivos compatibles."
+        },
         "reading-ebooks-offline-iphone": {
           "title": "Leer ebooks completamente sin conexión en iPhone: sin necesidad de la nube",
           "excerpt": "BiblioFuse almacena archivos EPUB, CBZ, CBR, PDF, ZIP, RAR y TXT localmente en tu iPhone — lee tu biblioteca entera en aviones, metro o cualquier lugar sin señal. No necesitas suscripción a la nube ni cuenta. iOS 17 o posterior.",
@@ -1070,7 +1081,8 @@
         "trust3": "Compatible con texto CJK",
         "comingSoon": "Ya disponible en App Store",
         "msStoreCta": "Obtener en Microsoft",
-        "macInReview": "iOS, macOS y Windows disponibles ahora"
+        "macInReview": "iOS, macOS y Windows disponibles ahora",
+        "screenshotAlt": "Pantalla de perfil de búsqueda reutilizable Y/O/NO de GrepTag Reader en iPhone"
       },
       "grep": {
         "eyebrow": "Busca Dentro de los Libros",
@@ -1125,7 +1137,8 @@
         "row4col2": "Full-text grep, tags, covers, Wi-Fi sync",
         "row5Label": "Formatos",
         "row5col1": "CBZ, CBR, PDF, EPUB, TXT",
-        "row5col2": "EPUB, TXT"
+        "row5col2": "EPUB, TXT",
+        "readerCta": "Explorar BiblioFuse Reader"
       },
       "pricing": {
         "eyebrow": "Precios",

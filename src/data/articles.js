@@ -1,5 +1,11 @@
 export const articles = [
   {
+    slug: 'best-komga-kavita-alternatives',
+    date: '2026-07-26',
+    tags: ['comparison', 'guide', 'komga', 'kavita', 'self-hosted'],
+    coverImage: '/image/blog/Best Self-Hosted Comic Readers.jpg',
+  },
+  {
     slug: 'reading-ebooks-offline-iphone',
     date: '2026-06-28',
     tags: ['ios', 'offline', 'guide', 'epub'],

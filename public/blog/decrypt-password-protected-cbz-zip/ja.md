@@ -1,6 +1,6 @@
 # iPhoneでパスワード保護されたCBZおよびZIPファイルを開く方法
 
-[SmartDecrypt PDF ZIP CBZ](/ja/smartdecrypt/)は、iPhoneやiPad、MacでパスワードをかけたCBZおよびZIPアーカイブを、ファイルをサーバーにアップロードすることなく直接開くことができます。このアプリはRustベースのエンジンを使用してデバイス上でCBZコミックアーカイブやZIPファイルを復号化し、ロックを解除したコピーをファイルアプリに保存します。復号化後は、[BiblioFuse](/ja/)でCBZコミックを開いて、iPhoneで最高の読書体験をお楽しみください。App StoreからSmartDecrypt PDF ZIP CBZをダウンロードして、数秒でアーカイブのパスワードを解除しましょう。
+[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)は、iPhoneやiPad、MacでパスワードをかけたCBZおよびZIPアーカイブを、ファイルをサーバーにアップロードすることなく直接開くことができます。このアプリはRustベースのエンジンを使用してデバイス上でCBZコミックアーカイブやZIPファイルを復号化し、ロックを解除したコピーをファイルアプリに保存します。復号化後は、[BiblioFuse](/ja/)でCBZコミックを開いて、iPhoneで最高の読書体験をお楽しみください。App StoreからSmartDecrypt PDF ZIP CBZをダウンロードして、数秒でアーカイブのパスワードを解除しましょう。
 
 ## なぜパスワード保護されたCBZファイルはほとんどのコミックリーダーで開けないのか？
 
@@ -69,4 +69,4 @@ SmartDecryptには正しいパスワードが必要です。不明なパスワ�
 
 ## コミックとアーカイブをアンロックしよう
 
-パスワード保護されたCBZやZIPファイルに読書ワークフローを邪魔させる必要はありません。SmartDecrypt PDF ZIP CBZは、iPhoneまたはMacで保護されたアーカイブを数秒で復号化します。App Storeで[SmartDecrypt PDF ZIP CBZ](/ja/smartdecrypt/)を検索して始めましょう。復号化したコミックは[BiblioFuse](/ja/)で最高の読書体験をお楽しみください。
+パスワード保護されたCBZやZIPファイルに読書ワークフローを邪魔させる必要はありません。SmartDecrypt PDF ZIP CBZは、iPhoneまたはMacで保護されたアーカイブを数秒で復号化します。App Storeで[SmartDecrypt PDF ZIP CBZ](https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229)を検索して始めましょう。復号化したコミックは[BiblioFuse](/ja/)で最高の読書体験をお楽しみください。

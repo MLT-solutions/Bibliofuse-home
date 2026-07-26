@@ -1,6 +1,6 @@
 # ContentCue Now Available in 11 Languages — Read Web Content Without Losing Your Place to Ads
 
-When you read articles on the web, you often lose track of where the actual content ends and where the ads begin. Some ads are obvious. But embedded sponsored content, promoted recommendations, and native advertising are designed to look like part of the article — same font, same column width, same visual style. [ContentCue](/en/contentcue/) solves this by marking ad regions with a coloured border as you read, so you always know which parts of the page are editorial and which are paid placements.
+When you read articles on the web, you often lose track of where the actual content ends and where the ads begin. Some ads are obvious. But embedded sponsored content, promoted recommendations, and native advertising are designed to look like part of the article — same font, same column width, same visual style. [ContentCue](https://apps.apple.com/us/app/contentcue-read-listen/id6770080864) solves this by marking ad regions with a coloured border as you read, so you always know which parts of the page are editorial and which are paid placements.
 
 That experience is now available in 11 languages. ContentCue has expanded its full UI localisation to cover English, Spanish, French, Dutch, Portuguese, Russian, Simplified Chinese, Japanese, Korean, Bahasa Indonesia, and Malay — giving web readers worldwide a cleaner, more honest reading experience.
 
@@ -58,7 +58,7 @@ When a region is classified as an ad, ContentCue draws a coloured border around 
 
 **Research readers** who follow citation trails often end up on unfamiliar sites. ContentCue's ad labelling provides an immediate signal about which content on the page is organic vs. sponsored.
 
-**Non-English speaking readers** who read in multiple languages simultaneously. With 11-language support, [ContentCue](/en/contentcue/) now adapts to your primary language regardless of which language the web content itself is in.
+**Non-English speaking readers** who read in multiple languages simultaneously. With 11-language support, [ContentCue](https://apps.apple.com/us/app/contentcue-read-listen/id6770080864) now adapts to your primary language regardless of which language the web content itself is in.
 
 **Readers with limited time** benefit from knowing exactly where the article ends. Instead of reading several paragraphs before realising it's a sponsored piece, ContentCue's border appears immediately on page load.
 
@@ -66,4 +66,4 @@ When a region is classified as an ad, ContentCue draws a coloured border around 
 
 ContentCue performs all ad classification locally, on your device. No browsing data, page content, or reading habits are uploaded to any server. The app doesn't require an account and doesn't include any analytics.
 
-Download [ContentCue](/en/contentcue/) from the App Store. The 11-language update is live now on all supported platforms.
+Download [ContentCue](https://apps.apple.com/us/app/contentcue-read-listen/id6770080864) from the App Store. The 11-language update is live now on all supported platforms.

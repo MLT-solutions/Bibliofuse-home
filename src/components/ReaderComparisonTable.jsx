@@ -54,13 +54,21 @@ function ReaderComparisonTable({ lang }) {
               <div className="border-l border-slate-100 px-5 py-3.5 text-sm text-slate-700">{row.col2}</div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-6 text-center">
-          <Link to={`/${lang}/grepreader/`} className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700">
-            {t('redesign.twoAppsSection.textCta')}
-            <ArrowRightIcon />
-          </Link>
+          <div className="grid grid-cols-3 border-t border-slate-200 bg-white">
+            <div className="px-5 py-4" />
+            <div className="border-l border-blue-100 bg-blue-50/50 px-4 py-4 text-center">
+              <Link to={`/${lang}/comicreader/`} className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700">
+                {t('redesign.grepTagPage.whySeparate.readerCta')}
+                <ArrowRightIcon />
+              </Link>
+            </div>
+            <div className="border-l border-slate-100 px-4 py-4 text-center">
+              <Link to={`/${lang}/grepreader/`} className="inline-flex items-center gap-1.5 rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700">
+                {t('redesign.twoAppsSection.textCta')}
+                <ArrowRightIcon />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

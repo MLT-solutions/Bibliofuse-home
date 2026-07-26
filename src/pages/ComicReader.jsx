@@ -115,7 +115,7 @@ function ComparisonTable() {
   ];
   const rows = table.rows.map((row, index) => ({
     label: row[0],
-    highlight: index === 5,
+    highlight: index === 6,
     cells: { apple: row[1], pc: row[2], android: row[3], nas: row[4] },
   }));
 
@@ -170,10 +170,7 @@ function ComparisonTable() {
                 <tr className="border-t border-slate-200 bg-white">
                   <td className="px-6 py-5 align-middle text-sm font-bold text-slate-950">{table.where}</td>
                   <td className="px-4 py-5 text-center align-middle">
-                    <div className="flex flex-col items-center gap-1.5">
-                      <StoreBadge type="apple" href={appStoreUrl} size="sm" />
-                      <span className="text-[10px] text-slate-400">{table.iosNote}</span>
-                    </div>
+                    <StoreBadge type="apple" href={appStoreUrl} size="sm" />
                   </td>
                   <td className="px-4 py-5 text-center align-middle">
                     <StoreBadge type="microsoft" href={bibliofusePcUrl} size="sm" />
