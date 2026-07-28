@@ -501,9 +501,9 @@
         },
         "streaming": {
           "eyebrow": "Desktop streamt naar mobiel",
-          "title": "Bibliotheekhub. Stream naar je iPhone.",
+          "title": "Bibliotheekhub. Stream naar je iPhone, Android, tv en Vision Pro.",
           "badge": "Geen server van derden · Geen abonnement",
-          "desc": "Op Mac en pc wordt BiblioFuse een desktopbibliotheekhub voor grote collecties. Beheer mappen op de host en stream boeken rechtstreeks naar BiblioFuse op iPhone en iPad via Wi‑Fi thuis of extern via 5G met Tailscale.",
+          "desc": "Op Mac en pc wordt BiblioFuse een desktopbibliotheekhub voor grote collecties. Beheer mappen op de host en stream boeken rechtstreeks naar BiblioFuse op iPhone, iPad, Android, Apple TV en Vision Pro — via Wi‑Fi thuis of, waar ondersteund, extern via 5G met Tailscale.",
           "bullet1Title": "Lokale Wi-Fi-streaming",
           "bullet1Body": "direct bladeren vanaf een Mac- of pc-bron.",
           "bullet2Title": "Externe 5G-streaming",

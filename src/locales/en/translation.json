@@ -831,9 +831,9 @@
         },
         "streaming": {
           "eyebrow": "Desktop streams to mobile",
-          "title": "Library hub. Streams to your iPhone.",
+          "title": "Library hub. Streams to your iPhone, Android, TV, Vision Pro.",
           "badge": "No third-party server · No subscription",
-          "desc": "On Mac and PC, BiblioFuse becomes a desktop library hub for large collections. Manage folders on the host, then stream books straight to BiblioFuse on iPhone and iPad over home Wi-Fi or remotely over 5G with Tailscale.",
+          "desc": "On Mac and PC, BiblioFuse becomes a desktop library hub for large collections. Manage folders on the host, then stream books straight to BiblioFuse on iPhone, iPad, Android, Apple TV, and Vision Pro — over home Wi-Fi, or remotely over 5G with Tailscale where supported.",
           "bullet1Title": "Local Wi-Fi streaming",
           "bullet1Body": "instant browse from a Mac or PC source.",
           "bullet2Title": "Remote 5G streaming",

@@ -501,9 +501,9 @@
         },
         "streaming": {
           "eyebrow": "Le bureau diffuse vers le mobile",
-          "title": "Hub de bibliothèque. Diffusez vers votre iPhone.",
+          "title": "Hub de bibliothèque. Diffusez vers votre iPhone, Android, TV et Vision Pro.",
           "badge": "Aucun serveur tiers · Aucun abonnement",
-          "desc": "Sur Mac et PC, BiblioFuse devient un hub de bibliothèque de bureau pour les grandes collections. Gérez les dossiers sur l’ordinateur hôte, puis diffusez les livres directement vers BiblioFuse sur iPhone et iPad en Wi‑Fi à la maison ou à distance en 5G avec Tailscale.",
+          "desc": "Sur Mac et PC, BiblioFuse devient un hub de bibliothèque de bureau pour les grandes collections. Gérez les dossiers sur l’ordinateur hôte, puis diffusez les livres directement vers BiblioFuse sur iPhone, iPad, Android, Apple TV et Vision Pro — en Wi‑Fi à la maison ou, là où c’est pris en charge, à distance en 5G avec Tailscale.",
           "bullet1Title": "Diffusion Wi-Fi locale",
           "bullet1Body": "navigation instantanée depuis une source Mac ou PC.",
           "bullet2Title": "Diffusion 5G à distance",

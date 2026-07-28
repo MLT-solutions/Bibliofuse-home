@@ -501,9 +501,9 @@
         },
         "streaming": {
           "eyebrow": "デスクトップからモバイルへ",
-          "title": "ライブラリハブ。iPhoneへストリーミング。",
+          "title": "ライブラリハブ。iPhone、Android、TV、Vision Proへストリーミング。",
           "badge": "サードパーティサーバー不要 · サブスクリプション不要",
-          "desc": "MacとPCでは、BiblioFuseが大きなコレクション向けのデスクトップライブラリハブになります。ホスト側でフォルダを管理し、自宅のWi‑FiまたはTailscale経由の5Gで、iPhone/iPadのBiblioFuseへ直接ストリーミングできます。",
+          "desc": "MacとPCでは、BiblioFuseが大きなコレクション向けのデスクトップライブラリハブになります。ホスト側でフォルダを管理し、自宅のWi‑Fi、または対応デバイスではTailscale経由の5Gで、iPhone・iPad・Android・Apple TV・Vision ProのBiblioFuseへ直接ストリーミングできます。",
           "bullet1Title": "ローカル Wi-Fi ストリーミング",
           "bullet1Body": "MacまたはPCのソースからすぐに参照。",
           "bullet2Title": "リモート 5G ストリーミング",

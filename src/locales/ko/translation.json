@@ -501,9 +501,9 @@
         },
         "streaming": {
           "eyebrow": "데스크톱에서 모바일로 스트리밍",
-          "title": "라이브러리 허브. iPhone으로 스트리밍.",
+          "title": "라이브러리 허브. iPhone, Android, TV, Vision Pro로 스트리밍.",
           "badge": "타사 서버 불필요 · 구독 불필요",
-          "desc": "Mac과 PC에서 BiblioFuse는 큰 컬렉션을 위한 데스크톱 라이브러리 허브가 됩니다. 호스트에서 폴더를 관리한 뒤, 집에서는 Wi‑Fi로, 밖에서는 Tailscale 5G로 iPhone 및 iPad의 BiblioFuse에 바로 스트리밍하세요.",
+          "desc": "Mac과 PC에서 BiblioFuse는 큰 컬렉션을 위한 데스크톱 라이브러리 허브가 됩니다. 호스트에서 폴더를 관리한 뒤, 집에서는 Wi‑Fi로, 지원되는 기기에서는 Tailscale 5G로 iPhone, iPad, Android, Apple TV, Vision Pro의 BiblioFuse에 바로 스트리밍하세요.",
           "bullet1Title": "로컬 Wi-Fi 스트리밍",
           "bullet1Body": "Mac 또는 PC 소스에서 즉시 탐색.",
           "bullet2Title": "원격 5G 스트리밍",

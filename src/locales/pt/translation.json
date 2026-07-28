@@ -501,9 +501,9 @@
         },
         "streaming": {
           "eyebrow": "Desktop transmite para móvel",
-          "title": "Central de biblioteca. Transmite para o iPhone.",
+          "title": "Central de biblioteca. Transmite para o iPhone, Android, TV e Vision Pro.",
           "badge": "Sem servidor externo · Sem assinatura",
-          "desc": "No Mac e no PC, o BiblioFuse torna-se uma central de biblioteca de desktop para grandes coleções. Gira pastas no dispositivo anfitrião e transmita livros diretamente para o BiblioFuse no iPhone e iPad por Wi‑Fi em casa ou remotamente por 5G com Tailscale.",
+          "desc": "No Mac e no PC, o BiblioFuse torna-se uma central de biblioteca de desktop para grandes coleções. Gira pastas no dispositivo anfitrião e transmita livros diretamente para o BiblioFuse no iPhone, iPad, Android, Apple TV e Vision Pro — por Wi‑Fi em casa ou, onde suportado, remotamente por 5G com Tailscale.",
           "bullet1Title": "Streaming Wi-Fi local",
           "bullet1Body": "navegação instantânea a partir de uma fonte Mac ou PC.",
           "bullet2Title": "Streaming remoto 5G",

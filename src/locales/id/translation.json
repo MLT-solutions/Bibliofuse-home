@@ -501,9 +501,9 @@
         },
         "streaming": {
           "eyebrow": "Desktop streaming ke mobile",
-          "title": "Hub perpustakaan. Streaming ke iPhone.",
+          "title": "Hub perpustakaan. Streaming ke iPhone, Android, TV, Vision Pro.",
           "badge": "Tanpa server pihak ketiga · Tanpa langganan",
-          "desc": "Di Mac dan PC, BiblioFuse menjadi hub perpustakaan desktop untuk koleksi besar. Kelola folder di perangkat host, lalu streaming buku langsung ke BiblioFuse di iPhone dan iPad melalui Wi‑Fi rumah atau jarak jauh via 5G dengan Tailscale.",
+          "desc": "Di Mac dan PC, BiblioFuse menjadi hub perpustakaan desktop untuk koleksi besar. Kelola folder di perangkat host, lalu streaming buku langsung ke BiblioFuse di iPhone, iPad, Android, Apple TV, dan Vision Pro — melalui Wi‑Fi rumah atau, jika didukung, jarak jauh via 5G dengan Tailscale.",
           "bullet1Title": "Streaming Wi-Fi lokal",
           "bullet1Body": "jelajah instan dari sumber Mac atau PC.",
           "bullet2Title": "Streaming 5G jarak jauh",

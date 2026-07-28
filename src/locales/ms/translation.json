@@ -501,9 +501,9 @@
         },
         "streaming": {
           "eyebrow": "Desktop strim ke mudah alih",
-          "title": "Hab perpustakaan. Strim ke iPhone.",
+          "title": "Hab perpustakaan. Strim ke iPhone, Android, TV, Vision Pro.",
           "badge": "Tiada pelayan pihak ketiga · Tiada langganan",
-          "desc": "Pada Mac dan PC, BiblioFuse menjadi hab perpustakaan desktop untuk koleksi besar. Urus folder pada peranti hos, kemudian strim buku terus ke BiblioFuse pada iPhone dan iPad melalui Wi‑Fi rumah atau jarak jauh melalui 5G dengan Tailscale.",
+          "desc": "Pada Mac dan PC, BiblioFuse menjadi hab perpustakaan desktop untuk koleksi besar. Urus folder pada peranti hos, kemudian strim buku terus ke BiblioFuse pada iPhone, iPad, Android, Apple TV, dan Vision Pro — melalui Wi‑Fi rumah atau, jika disokong, dari jauh melalui 5G dengan Tailscale.",
           "bullet1Title": "Strim Wi-Fi tempatan",
           "bullet1Body": "semak imbas segera daripada sumber Mac atau PC.",
           "bullet2Title": "Strim 5G jarak jauh",

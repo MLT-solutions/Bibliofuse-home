@@ -4,6 +4,41 @@
 
 export const ENTRIES = [
 
+  // ── Windows v1.0.3 — Whole-book search & advisory sync (released) ──
+  {
+    date: '2026-07-08',
+    version: '1.0.3',
+    platform: 'pc',
+    type: 'release',
+    released: true,
+    title: {
+      en: 'Windows v1.0.3 — Whole-book reader search & advisory sync',
+      es: 'Windows v1.0.3 — Búsqueda en todo el libro y sincronización con aviso',
+      fr: 'Windows v1.0.3 — Recherche dans tout le livre et synchronisation avec avis',
+      nl: 'Windows v1.0.3 — Zoeken door het hele boek en adviserende sync',
+      pt: 'Windows v1.0.3 — Busca no livro inteiro e sincronização com aviso',
+      ru: 'Windows v1.0.3 — Поиск по всей книге и рекомендательная синхронизация',
+      zh: 'Windows v1.0.3 — 全书阅读器搜索与建议式同步',
+      ja: 'Windows v1.0.3 — 全書リーダー検索とアドバイザリ同期',
+      ko: 'Windows v1.0.3 — 전체 책 리더 검색 & 권고형 동기화',
+      id: 'Windows v1.0.3 — Pencarian seluruh buku di pembaca & sinkronisasi advisori',
+      ms: 'Windows v1.0.3 — Carian seluruh buku pembaca & penyegerakan nasihat',
+    },
+    desc: {
+      en: 'Search now scans the entire book, not just the current chapter. Wi-Fi sync deletions detected on another device are now suggested rather than applied automatically. Fixed a duplicate-entry bug when a book file was replaced in place. Fixed reader progress and bookmarks on Windows.',
+      es: 'La búsqueda ahora recorre todo el libro, no solo el capítulo actual. Las eliminaciones de sincronización Wi-Fi detectadas en otro dispositivo ahora se sugieren en lugar de aplicarse automáticamente. Corregido un error de entradas duplicadas al reemplazar un archivo de libro en el mismo lugar. Corregidos el progreso de lectura y los marcadores en Windows.',
+      fr: 'La recherche parcourt désormais tout le livre, pas seulement le chapitre actuel. Les suppressions de synchronisation Wi-Fi détectées sur un autre appareil sont désormais suggérées plutôt qu\'appliquées automatiquement. Correction d\'un bug d\'entrées en double lors du remplacement d\'un fichier de livre au même endroit. Correction de la progression de lecture et des signets sur Windows.',
+      nl: 'Zoeken doorzoekt nu het hele boek, niet alleen het huidige hoofdstuk. Wi-Fi-syncverwijderingen die op een ander apparaat worden gedetecteerd, worden nu voorgesteld in plaats van automatisch toegepast. Een bug met dubbele items opgelost wanneer een boekbestand op dezelfde plek werd vervangen. Leesvoortgang en bladwijzers op Windows opgelost.',
+      pt: 'A busca agora percorre o livro inteiro, não apenas o capítulo atual. Exclusões de sincronização Wi-Fi detectadas em outro dispositivo agora são sugeridas em vez de aplicadas automaticamente. Corrigido um bug de entradas duplicadas ao substituir um arquivo de livro no mesmo lugar. Corrigidos o progresso de leitura e os favoritos no Windows.',
+      ru: 'Поиск теперь охватывает всю книгу, а не только текущую главу. Удаления Wi-Fi синхронизации, обнаруженные на другом устройстве, теперь предлагаются, а не применяются автоматически. Исправлена ошибка дублирования записей при замене файла книги на том же месте. Исправлены прогресс чтения и закладки на Windows.',
+      zh: '搜索现已扫描整本书，而不仅仅是当前章节。在其他设备上检测到的 Wi-Fi 同步删除操作现以建议形式呈现，而非自动执行。修复了原地替换书籍文件时产生重复条目的 bug。修复了 Windows 上的阅读进度和书签问题。',
+      ja: '検索が現在の章だけでなく本全体を対象にするようになりました。他のデバイスで検出された Wi-Fi 同期の削除は、自動的に適用されるのではなく提案されるようになりました。ブックファイルを同じ場所で置き換えた際の重複エントリのバグを修正。Windows での読書進捗とブックマークを修正。',
+      ko: '이제 검색이 현재 챕터뿐 아니라 책 전체를 대상으로 합니다. 다른 기기에서 감지된 Wi-Fi 동기화 삭제는 이제 자동 적용되지 않고 제안됩니다. 책 파일을 같은 위치에서 교체할 때 발생하던 중복 항목 버그를 수정했습니다. Windows에서 읽기 진행 상황과 북마크를 수정했습니다.',
+      id: 'Pencarian kini memindai seluruh buku, bukan hanya bab saat ini. Penghapusan sinkronisasi Wi-Fi yang terdeteksi di perangkat lain kini disarankan, bukan diterapkan otomatis. Memperbaiki bug entri duplikat saat file buku diganti di tempat yang sama. Memperbaiki progres membaca dan bookmark di Windows.',
+      ms: 'Carian kini mengimbas keseluruhan buku, bukan hanya bab semasa. Pemadaman segerak Wi-Fi yang dikesan pada peranti lain kini dicadangkan, bukan digunakan secara automatik. Membetulkan pepijat entri pendua apabila fail buku digantikan di tempat yang sama. Membetulkan kemajuan bacaan dan penanda halaman pada Windows.',
+    },
+  },
+
   // ── Build 17 / v1.0.5 — Whole-book reader search (released) ──
   {
     date: "2026-07-07",
@@ -74,6 +109,41 @@ export const ENTRIES = [
     },
   },
 
+  // ── Windows v1.0.2 — Reader appearance & navigation polish (released) ──
+  {
+    date: '2026-07-06',
+    version: '1.0.2',
+    platform: 'pc',
+    type: 'feature',
+    released: true,
+    title: {
+      en: 'Windows v1.0.2 — Reader appearance & navigation polish',
+      es: 'Windows v1.0.2 — Mejoras de apariencia y navegación del lector',
+      fr: 'Windows v1.0.2 — Amélioration de l\'apparence et de la navigation du lecteur',
+      nl: 'Windows v1.0.2 — Verfijning van lezersuiterlijk en navigatie',
+      pt: 'Windows v1.0.2 — Melhorias de aparência e navegação do leitor',
+      ru: 'Windows v1.0.2 — Улучшения внешнего вида и навигации ридера',
+      zh: 'Windows v1.0.2 — 阅读器外观与导航优化',
+      ja: 'Windows v1.0.2 — リーダーの外観とナビゲーションの改善',
+      ko: 'Windows v1.0.2 — 리더 외관 & 내비게이션 개선',
+      id: 'Windows v1.0.2 — Penyempurnaan tampilan & navigasi pembaca',
+      ms: 'Windows v1.0.2 — Pemurnian penampilan & navigasi pembaca',
+    },
+    desc: {
+      en: 'Improved reader appearance to match the iOS/macOS look and feel. Fixed reader navigation issues and sync scan metadata handling.',
+      es: 'Apariencia del lector mejorada para igualar el aspecto de iOS/macOS. Corregidos problemas de navegación del lector y del manejo de metadatos de escaneo de sincronización.',
+      fr: 'Apparence du lecteur améliorée pour correspondre à l\'esthétique iOS/macOS. Correction des problèmes de navigation du lecteur et de la gestion des métadonnées de scan de synchronisation.',
+      nl: 'Lezersuiterlijk verbeterd om aan te sluiten bij de iOS/macOS-look. Reader-navigatieproblemen en synchronisatiescanmetadata-afhandeling opgelost.',
+      pt: 'Aparência do leitor melhorada para combinar com o visual do iOS/macOS. Corrigidos problemas de navegação do leitor e do tratamento de metadados de varredura de sincronização.',
+      ru: 'Улучшен внешний вид ридера в соответствии со стилем iOS/macOS. Исправлены проблемы навигации ридера и обработка метаданных сканирования синхронизации.',
+      zh: '改进了阅读器外观，使其更贴近 iOS/macOS 的观感。修复了阅读器导航问题及同步扫描元数据处理问题。',
+      ja: 'iOS/macOS の外観に合わせてリーダーのデザインを改善。リーダーのナビゲーションの問題と同期スキャンメタデータの処理を修正。',
+      ko: 'iOS/macOS의 룩앤필에 맞춰 리더 외관을 개선했습니다. 리더 내비게이션 문제와 동기화 스캔 메타데이터 처리 오류를 수정했습니다.',
+      id: 'Tampilan pembaca ditingkatkan agar sesuai dengan tampilan iOS/macOS. Memperbaiki masalah navigasi pembaca dan penanganan metadata pemindaian sinkronisasi.',
+      ms: 'Penampilan pembaca dipertingkatkan agar sepadan dengan gaya iOS/macOS. Membetulkan isu navigasi pembaca dan pengendalian metadata imbasan segerak.',
+    },
+  },
+
   // ── Build 15 / v1.0.3 — Reader navigation improvements (released) ──
   {
     date: "2026-06-28",
@@ -106,6 +176,41 @@ export const ENTRIES = [
       ko: "EPUB 및 TXT 리더의 페이지 넘김과 챕터 내비게이션이 더 부드러워졌고, 온보딩도 개선되었습니다. iOS 및 macOS용으로 App Store에 출시되었습니다.",
       id: "Perilaku membalik halaman dan navigasi bab yang lebih halus di pembaca EPUB dan TXT, dengan penyempurnaan orientasi. Dirilis di App Store untuk iOS dan macOS.",
       ms: "Kelakuan pusing halaman dan navigasi bab yang lebih lancar dalam pembaca EPUB dan TXT, dengan penambahbaikan orientasi. Dikeluarkan di App Store untuk iOS dan macOS.",
+    },
+  },
+
+  // ── Windows v1.0.1 — Localized Store listing (released) ──
+  {
+    date: '2026-06-26',
+    version: '1.0.1',
+    platform: 'pc',
+    type: 'release',
+    released: true,
+    title: {
+      en: 'Windows v1.0.1 — Localized Store listing',
+      es: 'Windows v1.0.1 — Ficha de tienda localizada',
+      fr: 'Windows v1.0.1 — Fiche Store localisée',
+      nl: 'Windows v1.0.1 — Gelokaliseerde Store-vermelding',
+      pt: 'Windows v1.0.1 — Ficha da loja localizada',
+      ru: 'Windows v1.0.1 — Локализованный листинг в Store',
+      zh: 'Windows v1.0.1 — 商店列表本地化',
+      ja: 'Windows v1.0.1 — ストア掲載情報のローカライズ',
+      ko: 'Windows v1.0.1 — 스토어 목록 현지화',
+      id: 'Windows v1.0.1 — Daftar Store dilokalkan',
+      ms: 'Windows v1.0.1 — Penyenaraian Store disetempatkan',
+    },
+    desc: {
+      en: 'Microsoft Store listing localized across all 11 supported languages.',
+      es: 'Ficha de Microsoft Store localizada en los 11 idiomas admitidos.',
+      fr: 'Fiche Microsoft Store localisée dans les 11 langues prises en charge.',
+      nl: 'Microsoft Store-vermelding gelokaliseerd in alle 11 ondersteunde talen.',
+      pt: 'Ficha da Microsoft Store localizada em todos os 11 idiomas suportados.',
+      ru: 'Листинг в Microsoft Store локализован на все 11 поддерживаемых языков.',
+      zh: 'Microsoft Store 商店列表已完成全部 11 种支持语言的本地化。',
+      ja: 'Microsoft Store の掲載情報を対応する全 11 言語でローカライズ。',
+      ko: 'Microsoft Store 목록이 지원되는 11개 언어 모두로 현지화되었습니다.',
+      id: 'Daftar Microsoft Store dilokalkan dalam semua 11 bahasa yang didukung.',
+      ms: 'Penyenaraian Microsoft Store disetempatkan dalam kesemua 11 bahasa yang disokong.',
     },
   },
 
