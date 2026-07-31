@@ -1823,14 +1823,26 @@
         },
         {
           "q": "How do I get better text-to-speech voices in BiblioFuse?",
-          "a": "The higher-quality voices are built into your device but must be downloaded separately — BiblioFuse will pick them up automatically once they are installed.",
+          "a": "Higher-quality voices may already be available through your device's text-to-speech system, but some must be downloaded separately. BiblioFuse will detect newly installed voices automatically when they are made available to apps.",
           "bullets": [
             {
               "text": "iPhone / iPad",
               "sub": [
                 "Go to Settings → Accessibility → Spoken Content → Voices",
                 "Choose your language, then download an Enhanced or Premium voice",
-                "Premium voices on iOS 16+ are neural quality (Siri-level)"
+                "Premium voices on supported iOS versions provide Apple's highest-quality speech"
+              ]
+            },
+            {
+              "text": "Android",
+              "sub": [
+                "Go to Settings → Accessibility → Text-to-speech output",
+                "Depending on your device, this setting may instead appear under Settings → General management → Text-to-speech, or Settings → System → Languages → Text-to-speech output",
+                "Select your preferred text-to-speech engine, such as Speech Recognition & Synthesis from Google or your device manufacturer's engine",
+                "Open the engine settings, select Install voice data, and download the languages or voices you want",
+                "You may also update the text-to-speech engine through Google Play",
+                "Voice quality and availability vary by device, language, manufacturer, and installed TTS engine — some higher-quality voices may require an internet connection",
+                "Restart BiblioFuse, then begin a new TTS session"
               ]
             },
             {
@@ -1846,7 +1858,7 @@
                 "Go to Settings → Time & language → Language & region",
                 "Add your reading language, or open Language options for an installed language",
                 "Under Language features, install Text-to-speech",
-                "Restart BiblioFuse, then start a new TTS session"
+                "Restart BiblioFuse, then begin a new TTS session"
               ]
             },
             {
@@ -1854,11 +1866,11 @@
               "sub": [
                 "Go to Settings → Accessibility → Narrator",
                 "Under Add natural voices, download the voice you want",
-                "Note: Windows may expose these voices only to Narrator and not to all apps"
+                "Windows may expose some Natural voices only to Narrator and not to other applications"
               ]
             },
             {
-              "text": "No app update required — BiblioFuse detects newly installed voices when they are exposed through the Windows or Apple text-to-speech system"
+              "text": "No BiblioFuse update is required. BiblioFuse detects newly installed voices when they are exposed through the Android, Apple, or Windows text-to-speech system"
             }
           ]
         }
