@@ -1956,7 +1956,28 @@
         "Semak semula URL pelayan dan kunci API sebelum menjana QR.",
         "Simpan kod yang dijana dengan selamat — ia mengandungi maklumat akses."
       ],
-      "homeCta": "Kembali ke utama"
+      "homeCta": "Kembali ke utama",
+      "form": {
+        "generatorTitle": "Jana kod QR anda",
+        "generatorDesc": "Isikan butiran pelayan anda di bawah, kemudian ketik Jana untuk mencipta kod QR yang boleh diimbas.",
+        "displayNameLabel": "Nama paparan (pilihan)",
+        "displayNamePlaceholder": "Kavita Rumah",
+        "serviceTypeLabel": "Jenis perkhidmatan",
+        "kavitaOption": "Kavita API",
+        "komgaOption": "Komga API",
+        "serverUrlLabel": "URL Pelayan",
+        "serverUrlPlaceholder": "http://192.168.0.123:5000",
+        "apiKeyLabel": "Kunci API (pilihan)",
+        "apiKeyPlaceholder": "sk_live_abc123",
+        "apiKeyHint": "Salin kunci API dari tetapan pengguna/akaun Kavita atau Komga.",
+        "show": "Tunjuk",
+        "hide": "Sembunyi",
+        "generate": "Jana kod QR",
+        "clear": "Kosongkan",
+        "warning": "Kod QR ini mengandungi alamat pelayan dan maklumat pengesahan anda. Jangan kongsikannya secara umum.",
+        "enterUrl": "Sila masukkan URL pelayan.",
+        "qrCredit": "Kod QR dikuasakan oleh qrcode-generator"
+      }
     }
   }
 }

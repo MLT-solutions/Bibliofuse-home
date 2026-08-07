@@ -1956,7 +1956,28 @@
         "Periksa kembali URL server dan kunci API sebelum membuat QR.",
         "Simpan kode yang dihasilkan dengan aman — berisi informasi akses."
       ],
-      "homeCta": "Kembali ke beranda"
+      "homeCta": "Kembali ke beranda",
+      "form": {
+        "generatorTitle": "Buat kode QR Anda",
+        "generatorDesc": "Isi detail server Anda di bawah, lalu ketuk Buat untuk menghasilkan kode QR yang dapat dipindai.",
+        "displayNameLabel": "Nama tampilan (opsional)",
+        "displayNamePlaceholder": "Kavita Rumah",
+        "serviceTypeLabel": "Jenis layanan",
+        "kavitaOption": "Kavita API",
+        "komgaOption": "Komga API",
+        "serverUrlLabel": "URL Server",
+        "serverUrlPlaceholder": "http://192.168.0.123:5000",
+        "apiKeyLabel": "Kunci API (opsional)",
+        "apiKeyPlaceholder": "sk_live_abc123",
+        "apiKeyHint": "Salin kunci API dari pengaturan pengguna/akun Kavita atau Komga.",
+        "show": "Tampilkan",
+        "hide": "Sembunyikan",
+        "generate": "Buat kode QR",
+        "clear": "Hapus",
+        "warning": "Kode QR ini berisi alamat server dan informasi autentikasi Anda. Jangan bagikan secara publik.",
+        "enterUrl": "Harap masukkan URL server.",
+        "qrCredit": "Kode QR didukung oleh qrcode-generator"
+      }
     }
   }
 }

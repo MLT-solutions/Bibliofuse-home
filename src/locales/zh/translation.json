@@ -1956,7 +1956,28 @@
         "生成 QR 前请仔细检查服务器 URL 和 API 密钥。",
         "妥善保管生成的二维码，其中包含访问信息。"
       ],
-      "homeCta": "返回首页"
+      "homeCta": "返回首页",
+      "form": {
+        "generatorTitle": "生成您的二维码",
+        "generatorDesc": "在下方填写您的服务器信息，然后点击生成以创建可扫描的二维码。",
+        "displayNameLabel": "显示名称（可选）",
+        "displayNamePlaceholder": "家庭 Kavita",
+        "serviceTypeLabel": "服务类型",
+        "kavitaOption": "Kavita API",
+        "komgaOption": "Komga API",
+        "serverUrlLabel": "服务器地址",
+        "serverUrlPlaceholder": "http://192.168.0.123:5000",
+        "apiKeyLabel": "API 密钥（可选）",
+        "apiKeyPlaceholder": "sk_live_abc123",
+        "apiKeyHint": "从 Kavita 或 Komga 的用户/账户设置中复制 API 密钥。",
+        "show": "显示",
+        "hide": "隐藏",
+        "generate": "生成二维码",
+        "clear": "清除",
+        "warning": "此二维码包含您的服务器地址和身份验证信息。请勿公开发布。",
+        "enterUrl": "请输入服务器地址。",
+        "qrCredit": "二维码由 qrcode-generator 驱动"
+      }
     }
   }
 }

@@ -1956,7 +1956,28 @@
         "Verifique o URL do servidor e a chave API antes de gerar o QR.",
         "Guarde o código gerado em segurança — contém informações de acesso."
       ],
-      "homeCta": "Voltar ao início"
+      "homeCta": "Voltar ao início",
+      "form": {
+        "generatorTitle": "Gere o seu código QR",
+        "generatorDesc": "Preencha os dados do seu servidor abaixo e toque em Gerar para criar um código QR digitalizável.",
+        "displayNameLabel": "Nome de exibição (opcional)",
+        "displayNamePlaceholder": "Kavita de casa",
+        "serviceTypeLabel": "Tipo de serviço",
+        "kavitaOption": "Kavita API",
+        "komgaOption": "Komga API",
+        "serverUrlLabel": "URL do servidor",
+        "serverUrlPlaceholder": "http://192.168.0.123:5000",
+        "apiKeyLabel": "Chave API (opcional)",
+        "apiKeyPlaceholder": "sk_live_abc123",
+        "apiKeyHint": "Copie a chave API das definições de utilizador/conta do Kavita ou Komga.",
+        "show": "Mostrar",
+        "hide": "Ocultar",
+        "generate": "Gerar código QR",
+        "clear": "Limpar",
+        "warning": "Este código QR contém o endereço do seu servidor e informações de autenticação. Não o partilhe publicamente.",
+        "enterUrl": "Introduza um URL de servidor.",
+        "qrCredit": "Código QR powered by qrcode-generator"
+      }
     }
   }
 }

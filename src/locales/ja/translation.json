@@ -1956,7 +1956,28 @@
         "QRを生成する前にサーバーURLとAPIキーを再確認してください。",
         "生成されたコードは安全に保管してください。アクセス情報が含まれています。"
       ],
-      "homeCta": "ホームに戻る"
+      "homeCta": "ホームに戻る",
+      "form": {
+        "generatorTitle": "QRコードを生成",
+        "generatorDesc": "以下のサーバー情報を入力し、生成をタップするとスキャン可能なQRコードが作成されます。",
+        "displayNameLabel": "表示名（任意）",
+        "displayNamePlaceholder": "自宅 Kavita",
+        "serviceTypeLabel": "サービス種別",
+        "kavitaOption": "Kavita API",
+        "komgaOption": "Komga API",
+        "serverUrlLabel": "サーバーURL",
+        "serverUrlPlaceholder": "http://192.168.0.123:5000",
+        "apiKeyLabel": "APIキー（任意）",
+        "apiKeyPlaceholder": "sk_live_abc123",
+        "apiKeyHint": "Kavita または Komga のユーザー/アカウント設定から API キーをコピーしてください。",
+        "show": "表示",
+        "hide": "非表示",
+        "generate": "QRコードを生成",
+        "clear": "クリア",
+        "warning": "このQRコードにはサーバーアドレスと認証情報が含まれています。公開して共有しないでください。",
+        "enterUrl": "サーバーURLを入力してください。",
+        "qrCredit": "QRコード powered by qrcode-generator"
+      }
     }
   }
 }

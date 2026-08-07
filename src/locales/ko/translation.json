@@ -1956,7 +1956,28 @@
         "QR을 생성하기 전에 서버 URL과 API 키를 다시 확인하세요.",
         "생성된 코드를 안전하게 보관하세요. 접속 정보가 포함되어 있습니다."
       ],
-      "homeCta": "홈으로 돌아가기"
+      "homeCta": "홈으로 돌아가기",
+      "form": {
+        "generatorTitle": "QR 코드 생성하기",
+        "generatorDesc": "아래에 서버 정보를 입력한 후 생성 버튼을 눌러 스캔 가능한 QR 코드를 만드세요.",
+        "displayNameLabel": "표시 이름 (선택 사항)",
+        "displayNamePlaceholder": "집 Kavita",
+        "serviceTypeLabel": "서비스 유형",
+        "kavitaOption": "Kavita API",
+        "komgaOption": "Komga API",
+        "serverUrlLabel": "서버 URL",
+        "serverUrlPlaceholder": "http://192.168.0.123:5000",
+        "apiKeyLabel": "API 키 (선택 사항)",
+        "apiKeyPlaceholder": "sk_live_abc123",
+        "apiKeyHint": "Kavita 또는 Komga 사용자/계정 설정에서 API 키를 복사하세요.",
+        "show": "보기",
+        "hide": "숨기기",
+        "generate": "QR 코드 생성",
+        "clear": "지우기",
+        "warning": "이 QR 코드에는 서버 주소와 인증 정보가 포함되어 있습니다. 공개적으로 공유하지 마세요.",
+        "enterUrl": "서버 URL을 입력해 주세요.",
+        "qrCredit": "QR 코드 powered by qrcode-generator"
+      }
     }
   }
 }

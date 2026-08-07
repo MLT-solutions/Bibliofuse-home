@@ -1956,7 +1956,28 @@
         "Controleer de server-URL en API-sleutel voordat je de QR genereert.",
         "Bewaar de gegenereerde code veilig — deze bevat toegangsinformatie."
       ],
-      "homeCta": "Terug naar home"
+      "homeCta": "Terug naar home",
+      "form": {
+        "generatorTitle": "Genereer je QR-code",
+        "generatorDesc": "Vul hieronder je servergegevens in en tik op Genereer om een scanbare QR-code te maken.",
+        "displayNameLabel": "Weergavenaam (optioneel)",
+        "displayNamePlaceholder": "Thuis Kavita",
+        "serviceTypeLabel": "Type dienst",
+        "kavitaOption": "Kavita API",
+        "komgaOption": "Komga API",
+        "serverUrlLabel": "Server-URL",
+        "serverUrlPlaceholder": "http://192.168.0.123:5000",
+        "apiKeyLabel": "API-sleutel (optioneel)",
+        "apiKeyPlaceholder": "sk_live_abc123",
+        "apiKeyHint": "Kopieer de API-sleutel uit de gebruikers-/accountinstellingen van Kavita of Komga.",
+        "show": "Tonen",
+        "hide": "Verbergen",
+        "generate": "QR-code genereren",
+        "clear": "Wissen",
+        "warning": "Deze QR-code bevat je serveradres en authenticatiegegevens. Deel deze niet openbaar.",
+        "enterUrl": "Voer een server-URL in.",
+        "qrCredit": "QR-code mogelijk gemaakt door qrcode-generator"
+      }
     }
   }
 }

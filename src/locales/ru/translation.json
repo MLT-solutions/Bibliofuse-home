@@ -1956,7 +1956,28 @@
         "Проверьте URL сервера и API-ключ перед созданием QR.",
         "Храните сгенерированный код в безопасности — он содержит данные доступа."
       ],
-      "homeCta": "Вернуться на главную"
+      "homeCta": "Вернуться на главную",
+      "form": {
+        "generatorTitle": "Создайте свой QR-код",
+        "generatorDesc": "Заполните данные вашего сервера ниже и нажмите Создать, чтобы получить сканируемый QR-код.",
+        "displayNameLabel": "Отображаемое имя (необязательно)",
+        "displayNamePlaceholder": "Домашний Kavita",
+        "serviceTypeLabel": "Тип сервиса",
+        "kavitaOption": "Kavita API",
+        "komgaOption": "Komga API",
+        "serverUrlLabel": "URL сервера",
+        "serverUrlPlaceholder": "http://192.168.0.123:5000",
+        "apiKeyLabel": "API-ключ (необязательно)",
+        "apiKeyPlaceholder": "sk_live_abc123",
+        "apiKeyHint": "Скопируйте API-ключ из настроек пользователя/аккаунта Kavita или Komga.",
+        "show": "Показать",
+        "hide": "Скрыть",
+        "generate": "Создать QR-код",
+        "clear": "Очистить",
+        "warning": "Этот QR-код содержит адрес вашего сервера и данные аутентификации. Не делитесь им публично.",
+        "enterUrl": "Пожалуйста, введите URL сервера.",
+        "qrCredit": "QR-код создан с помощью qrcode-generator"
+      }
     }
   }
 }
