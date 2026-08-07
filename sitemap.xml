@@ -242,6 +242,46 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/about/" />
   </url>
   <url>
+    <loc>https://bibliofuse.com/en/qr-generator/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/qr-generator/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/es/qr-generator/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/qr-generator/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/fr/qr-generator/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/qr-generator/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ja/qr-generator/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/qr-generator/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/qr-generator/" />
+  </url>
+  <url>
     <loc>https://bibliofuse.com/en/privacy/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
