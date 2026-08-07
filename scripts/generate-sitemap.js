@@ -22,6 +22,7 @@ const ROUTES = [
     // mlogictech.com (0 clicks/90 days here; see docs/gsc-cloudflare-findings.md).
     // Left out of the sitemap; the routes still exist as noindexed "moved" stubs.
     { path: '/about/', priority: '0.6', changefreq: 'monthly' },
+    { path: '/qr-generator/', priority: '0.6', changefreq: 'monthly' },
     { path: '/privacy/', priority: '0.4', changefreq: 'yearly' },
     { path: '/blog/', priority: '0.7', changefreq: 'weekly' },
     { path: '/changelog/', priority: '0.6', changefreq: 'monthly' },

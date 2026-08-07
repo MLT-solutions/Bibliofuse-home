@@ -468,7 +468,9 @@
           "cta": "Ketahui Lebih Lanjut"
         }
       },
-      "learnMore": "Ketahui lebih lanjut"
+      "learnMore": "Ketahui lebih lanjut",
+      "qrGeneratorNote": "Persediaan pelayan mudah untuk Kavita dan Komga dengan BiblioFuse QR Generator.",
+      "qrGeneratorCta": "Buka QR Generator"
     },
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
@@ -1916,6 +1918,45 @@
       "languageLabel": "Bahasa laman web",
       "browserLanguageLabel": "Bahasa pelayar",
       "unknown": "Tidak diketahui"
+    },
+    "qrGeneratorPage": {
+      "seoTitle": "BiblioFuse QR Generator",
+      "seoDesc": "Jana kod QR untuk menambah pelayan Kavita atau Komga ke BiblioFuse. Imbas dari iOS atau Android untuk persediaan mudah.",
+      "back": "Kembali ke BiblioFuse",
+      "eyebrow": "Persediaan pelayan QR",
+      "title": "Tambah pelayan Kavita & Komga dengan QR",
+      "desc": "Jana kod QR BiblioFuse yang selamat untuk sambungan pelayan Kavita atau Komga, kemudian imbas dari telefon anda untuk menambah pelayan secara automatik.",
+      "whatTitle": "Fungsinya",
+      "whatDesc": "Cipta QR pelayan yang boleh dikongsi dengan alamat API dan kunci pilihan, supaya BiblioFuse boleh bersambung tanpa menaip URL secara manual.",
+      "whatBullets": [
+        "Menyokong pelayan API Kavita dan Komga",
+        "Termasuk kunci API pilihan untuk sambungan selamat",
+        "Berfungsi pada peranti iOS dan Android"
+      ],
+      "stepsTitle": "Cara menggunakannya",
+      "steps": [
+        {
+          "title": "Jana kod QR",
+          "desc": "Masukkan alamat pelayan anda, pilih Kavita atau Komga, dan tambah kunci API jika perlu."
+        },
+        {
+          "title": "Imbas dalam BiblioFuse",
+          "desc": "Buka Tetapan > OPDS (Ciri Pro) > Tambah pelayan, kemudian ketik ikon QR dan imbas kod."
+        },
+        {
+          "title": "Pilih dan baca",
+          "desc": "Dalam Perpustakaan, buka panel Lokasi di kiri atas, pilih pelayan anda, dan nikmati pembacaan."
+        }
+      ],
+      "noteTitle": "Nota Ciri Pro",
+      "noteDesc": "Aliran imbasan pelayan memerlukan ciri BiblioFuse Pro OPDS. Selepas pelayan ditambah, gunakan pemilih Lokasi untuk beralih ke perpustakaan Kavita atau Komga anda.",
+      "tipTitle": "Tip pantas",
+      "tipBullets": [
+        "Gunakan rangkaian peribadi selamat atau Tailscale untuk akses jauh.",
+        "Semak semula URL pelayan dan kunci API sebelum menjana QR.",
+        "Simpan kod yang dijana dengan selamat — ia mengandungi maklumat akses."
+      ],
+      "homeCta": "Kembali ke utama"
     }
   }
 }

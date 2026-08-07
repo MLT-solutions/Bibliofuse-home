@@ -468,7 +468,9 @@
           "cta": "詳細を見る"
         }
       },
-      "learnMore": "詳しく見る"
+      "learnMore": "詳しく見る",
+      "qrGeneratorNote": "BiblioFuse QR GeneratorでKavitaとKomgaのサーバーを簡単設定。",
+      "qrGeneratorCta": "QR Generatorを開く"
     },
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
@@ -1916,6 +1918,45 @@
       "languageLabel": "サイト言語",
       "browserLanguageLabel": "ブラウザ言語",
       "unknown": "不明"
+    },
+    "qrGeneratorPage": {
+      "seoTitle": "BiblioFuse QR Generator",
+      "seoDesc": "KavitaまたはKomgaサーバーをBiblioFuseに追加するQRコードを生成します。iOSまたはAndroidからスキャンして簡単セットアップ。",
+      "back": "BiblioFuseに戻る",
+      "eyebrow": "QRサーバー設定",
+      "title": "QRでKavitaとKomgaサーバーを追加",
+      "desc": "KavitaまたはKomgaサーバー接続用の安全なBiblioFuse QRコードを生成し、スマートフォンからスキャンしてサーバーを自動追加します。",
+      "whatTitle": "機能概要",
+      "whatDesc": "APIアドレスとオプションキーを含む共有可能なサーバーQRを作成し、手動URL入力なしでBiblioFuseが接続できます。",
+      "whatBullets": [
+        "KavitaおよびKomga APIサーバーに対応",
+        "安全な接続のためのオプションAPIキーを含む",
+        "iOSおよびAndroidデバイスで動作"
+      ],
+      "stepsTitle": "使い方",
+      "steps": [
+        {
+          "title": "QRコードを生成",
+          "desc": "サーバーアドレスを入力し、KavitaまたはKomgaを選択し、必要に応じてAPIキーを追加します。"
+        },
+        {
+          "title": "BiblioFuseでスキャン",
+          "desc": "設定 > OPDS（Pro機能） > サーバーを追加を開き、QRアイコンをタップしてコードをスキャンします。"
+        },
+        {
+          "title": "選択して読書",
+          "desc": "ライブラリで左上のロケーションパネルを開き、サーバーを選んで読書をお楽しみください。"
+        }
+      ],
+      "noteTitle": "Pro機能について",
+      "noteDesc": "サーバースキャンにはBiblioFuse Pro OPDS機能が必要です。サーバー追加後は、ロケーションセレクターでKavitaまたはKomgaライブラリに切り替えます。",
+      "tipTitle": "クイックヒント",
+      "tipBullets": [
+        "リモートアクセスには安全なプライベートネットワークまたはTailscaleを使用してください。",
+        "QRを生成する前にサーバーURLとAPIキーを再確認してください。",
+        "生成されたコードは安全に保管してください。アクセス情報が含まれています。"
+      ],
+      "homeCta": "ホームに戻る"
     }
   }
 }

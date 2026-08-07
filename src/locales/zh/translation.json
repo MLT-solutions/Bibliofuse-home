@@ -468,7 +468,9 @@
           "cta": "了解更多"
         }
       },
-      "learnMore": "了解更多"
+      "learnMore": "了解更多",
+      "qrGeneratorNote": "使用 BiblioFuse QR 生成器轻松配置 Kavita 和 Komga 服务器。",
+      "qrGeneratorCta": "打开 QR 生成器"
     },
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
@@ -1916,6 +1918,45 @@
       "languageLabel": "网站语言",
       "browserLanguageLabel": "浏览器语言",
       "unknown": "未知"
+    },
+    "qrGeneratorPage": {
+      "seoTitle": "BiblioFuse QR 生成器",
+      "seoDesc": "生成二维码以将 Kavita 或 Komga 服务器添加到 BiblioFuse。从 iOS 或 Android 扫描即可轻松设置。",
+      "back": "返回 BiblioFuse",
+      "eyebrow": "QR 服务器设置",
+      "title": "使用 QR 添加 Kavita 和 Komga 服务器",
+      "desc": "生成安全的 BiblioFuse 二维码用于 Kavita 或 Komga 服务器连接，然后从手机扫描以自动添加服务器。",
+      "whatTitle": "功能介绍",
+      "whatDesc": "创建一个可共享的服务器 QR 码，包含 API 地址和可选密钥，让 BiblioFuse 无需手动输入 URL 即可连接。",
+      "whatBullets": [
+        "支持 Kavita 和 Komga API 服务器",
+        "包含可选 API 密钥以确保安全连接",
+        "适用于 iOS 和 Android 设备"
+      ],
+      "stepsTitle": "使用方法",
+      "steps": [
+        {
+          "title": "生成二维码",
+          "desc": "输入服务器地址，选择 Kavita 或 Komga，必要时添加 API 密钥。"
+        },
+        {
+          "title": "在 BiblioFuse 中扫描",
+          "desc": "打开设置 > OPDS（专业功能）> 添加服务器，然后点击 QR 图标扫描二维码。"
+        },
+        {
+          "title": "选择并阅读",
+          "desc": "在书库中，打开左上角的位置面板，选择您的服务器，享受阅读。"
+        }
+      ],
+      "noteTitle": "专业功能说明",
+      "noteDesc": "服务器扫描流程需要 BiblioFuse Pro OPDS 功能。添加服务器后，使用位置选择器切换到您的 Kavita 或 Komga 书库。",
+      "tipTitle": "快速提示",
+      "tipBullets": [
+        "使用安全的私人网络或 Tailscale 进行远程访问。",
+        "生成 QR 前请仔细检查服务器 URL 和 API 密钥。",
+        "妥善保管生成的二维码，其中包含访问信息。"
+      ],
+      "homeCta": "返回首页"
     }
   }
 }

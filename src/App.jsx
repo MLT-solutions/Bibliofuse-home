@@ -20,6 +20,7 @@ import ArchiveScanner from './pages/ArchiveScanner';
 import SmartDecrypt from './pages/SmartDecrypt';
 import ContentCue from './pages/ContentCue';
 import AndroidRequest from './pages/AndroidRequest';
+import QrGenerator from './pages/QrGenerator';
 import Footer from './components/Footer';
 
 // Language redirect component - detects and redirects to proper language
@@ -116,6 +117,9 @@ function AppLayout() {
           <Route path="/contentcue/changelog" element={<AppChangelog appSlug="contentcue" />} />
           <Route path="/contentcue/privacy" element={<AppPrivacy appSlug="contentcue" />} />
           <Route path="/androidrequest" element={<AndroidRequest />} />
+          <Route path="/qr-generator" element={<QrGenerator />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<Navigate to={`/${lang}/`} replace />} />
         </Routes>
       </main>

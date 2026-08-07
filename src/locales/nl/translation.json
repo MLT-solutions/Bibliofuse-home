@@ -468,7 +468,9 @@
           "cta": "Meer informatie"
         }
       },
-      "learnMore": "Meer informatie"
+      "learnMore": "Meer informatie",
+      "qrGeneratorNote": "Eenvoudige serverconfiguratie voor Kavita en Komga met de BiblioFuse QR Generator.",
+      "qrGeneratorCta": "Open de QR Generator"
     },
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
@@ -1916,6 +1918,45 @@
       "languageLabel": "Websitetaal",
       "browserLanguageLabel": "Browsertaal",
       "unknown": "Onbekend"
+    },
+    "qrGeneratorPage": {
+      "seoTitle": "BiblioFuse QR Generator",
+      "seoDesc": "Genereer een QR-code om Kavita- of Komga-servers toe te voegen aan BiblioFuse. Scan deze vanaf iOS of Android voor eenvoudige installatie.",
+      "back": "Terug naar BiblioFuse",
+      "eyebrow": "QR-serverconfiguratie",
+      "title": "Voeg Kavita- en Komga-servers toe met QR",
+      "desc": "Genereer een veilige BiblioFuse QR-code voor Kavita- of Komga-serververbindingen en scan deze vanaf je telefoon om de server automatisch toe te voegen.",
+      "whatTitle": "Wat dit doet",
+      "whatDesc": "Maak een deelbare server-QR met je API-adres en optionele sleutel, zodat BiblioFuse verbinding kan maken zonder handmatig URL's te typen.",
+      "whatBullets": [
+        "Ondersteunt Kavita- en Komga API-servers",
+        "Inclusief optionele API-sleutel voor veilige verbindingen",
+        "Werkt op iOS- en Android-apparaten"
+      ],
+      "stepsTitle": "Hoe te gebruiken",
+      "steps": [
+        {
+          "title": "Genereer de QR-code",
+          "desc": "Voer je serveradres in, kies Kavita of Komga en voeg indien nodig een API-sleutel toe."
+        },
+        {
+          "title": "Scan in BiblioFuse",
+          "desc": "Open Instellingen > OPDS (Pro-functie) > Server toevoegen, tik op het QR-pictogram en scan de code."
+        },
+        {
+          "title": "Selecteer en lees",
+          "desc": "Open in Bibliotheek het Locatiepaneel linksboven, kies je server en geniet van het lezen."
+        }
+      ],
+      "noteTitle": "Pro-functie opmerking",
+      "noteDesc": "De scan vereist de BiblioFuse Pro OPDS-functie. Gebruik na het toevoegen van de server de Locatiekiezer om naar je Kavita- of Komga-bibliotheek over te schakelen.",
+      "tipTitle": "Snelle tip",
+      "tipBullets": [
+        "Gebruik een beveiligd privénetwerk of Tailscale voor externe toegang.",
+        "Controleer de server-URL en API-sleutel voordat je de QR genereert.",
+        "Bewaar de gegenereerde code veilig — deze bevat toegangsinformatie."
+      ],
+      "homeCta": "Terug naar home"
     }
   }
 }

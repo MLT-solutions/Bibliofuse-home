@@ -382,6 +382,12 @@ function ProductFamily({ lang }) {
             <ProductCard key={product.name} {...product} />
           ))}
         </div>
+        <p className="mt-6 text-sm leading-relaxed text-slate-500">
+          {t('redesign.productFamily.qrGeneratorNote')}{' '}
+          <Link to={`/${lang}/qr-generator/`} className="font-semibold text-slate-950 underline underline-offset-2 hover:text-slate-700">
+            {t('redesign.productFamily.qrGeneratorCta')} →
+          </Link>
+        </p>
       </div>
     </section>
   );

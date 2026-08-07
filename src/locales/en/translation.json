@@ -798,7 +798,39 @@
           "cta": "Learn More"
         }
       },
-      "learnMore": "Learn more"
+      "learnMore": "Learn more",
+      "qrGeneratorNote": "Get easy server setup for Kavita and Komga with the BiblioFuse QR Generator.",
+      "qrGeneratorCta": "Open the QR Generator"
+    },
+    "qrGeneratorPage": {
+      "seoTitle": "BiblioFuse QR Generator",
+      "seoDesc": "Generate a QR code to add Kavita or Komga servers to BiblioFuse. Scan it from iOS or Android for easy server setup.",
+      "back": "Back to BiblioFuse",
+      "eyebrow": "QR server setup",
+      "title": "Add Kavita & Komga servers with QR",
+      "desc": "Generate a secure BiblioFuse QR code for Kavita or Komga server connections, then scan it from your phone to add the server automatically.",
+      "whatTitle": "What this does",
+      "whatDesc": "Create a shareable server QR with your API address and optional key, so BiblioFuse can connect without manual URL typing.",
+      "whatBullets": [
+        "Supports Kavita and Komga API servers",
+        "Includes optional API key for secure connections",
+        "Works on iOS and Android devices"
+      ],
+      "stepsTitle": "How to use it",
+      "steps": [
+        { "title": "Generate the QR code", "desc": "Enter your server address, choose Kavita or Komga, and add an API key if needed." },
+        { "title": "Scan in BiblioFuse", "desc": "Open Settings > OPDS (Pro Feature) > Add server, then tap the QR icon and scan the code." },
+        { "title": "Select and read", "desc": "In Library, open the top-left Location panel, choose your server, and enjoy reading." }
+      ],
+      "noteTitle": "Pro Feature note",
+      "noteDesc": "The server scan flow requires the BiblioFuse Pro OPDS feature. Once the server is added, use the Location selector to switch to your Kavita or Komga library.",
+      "tipTitle": "Quick tip",
+      "tipBullets": [
+        "Use a secure private network or Tailscale for remote access.",
+        "Double-check the server URL and API key before generating the QR.",
+        "Keep the generated code safe — it includes access information."
+      ],
+      "homeCta": "Back to home"
     },
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",

@@ -468,7 +468,9 @@
           "cta": "En savoir plus"
         }
       },
-      "learnMore": "En savoir plus"
+      "learnMore": "En savoir plus",
+      "qrGeneratorNote": "Configuration simplifiée de serveur pour Kavita et Komga avec le générateur QR BiblioFuse.",
+      "qrGeneratorCta": "Ouvrir le générateur QR"
     },
     "readerSection": {
       "eyebrow": "BiblioFuse Reader",
@@ -1916,6 +1918,45 @@
       "languageLabel": "Langue du site",
       "browserLanguageLabel": "Langue du navigateur",
       "unknown": "Inconnue"
+    },
+    "qrGeneratorPage": {
+      "seoTitle": "Générateur QR BiblioFuse",
+      "seoDesc": "Générez un code QR pour ajouter des serveurs Kavita ou Komga à BiblioFuse. Scannez-le depuis iOS ou Android pour une configuration facile.",
+      "back": "Retour à BiblioFuse",
+      "eyebrow": "Configuration QR serveur",
+      "title": "Ajoutez des serveurs Kavita et Komga par QR",
+      "desc": "Générez un code QR BiblioFuse sécurisé pour les connexions serveur Kavita ou Komga, puis scannez-le depuis votre téléphone pour ajouter le serveur automatiquement.",
+      "whatTitle": "Ce que ça fait",
+      "whatDesc": "Créez un QR serveur partageable avec votre adresse API et clé facultative, pour que BiblioFuse se connecte sans saisie manuelle d'URL.",
+      "whatBullets": [
+        "Prend en charge les serveurs API Kavita et Komga",
+        "Inclut une clé API optionnelle pour des connexions sécurisées",
+        "Fonctionne sur iOS et Android"
+      ],
+      "stepsTitle": "Comment l'utiliser",
+      "steps": [
+        {
+          "title": "Générez le code QR",
+          "desc": "Entrez l'adresse de votre serveur, choisissez Kavita ou Komga, et ajoutez une clé API si nécessaire."
+        },
+        {
+          "title": "Scannez dans BiblioFuse",
+          "desc": "Ouvrez Réglages > OPDS (Fonction Pro) > Ajouter un serveur, touchez l'icône QR et scannez le code."
+        },
+        {
+          "title": "Sélectionnez et lisez",
+          "desc": "Dans Bibliothèque, ouvrez le panneau Emplacement en haut à gauche, choisissez votre serveur et profitez de la lecture."
+        }
+      ],
+      "noteTitle": "Note fonction Pro",
+      "noteDesc": "Le scan nécessite la fonction OPDS Pro de BiblioFuse. Une fois le serveur ajouté, utilisez le sélecteur Emplacement pour passer à votre bibliothèque Kavita ou Komga.",
+      "tipTitle": "Conseil rapide",
+      "tipBullets": [
+        "Utilisez un réseau privé sécurisé ou Tailscale pour l'accès à distance.",
+        "Vérifiez l'URL du serveur et la clé API avant de générer le QR.",
+        "Conservez le code généré en sécurité — il contient des informations d'accès."
+      ],
+      "homeCta": "Retour à l'accueil"
     }
   }
 }

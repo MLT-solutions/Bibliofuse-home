@@ -47,6 +47,7 @@ const Footer = () => {
                             <li><Link to={`/${lang || 'en'}/archive/`} className="text-ink transition hover:text-brand">Comic Duplicate Scanner</Link></li>
                             <li><a href={smartDecryptAppStoreUrl} target="_blank" rel="noopener" className="text-ink transition hover:text-brand">SmartDecrypt PDF ZIP</a></li>
                             <li><a href={contentCueAppStoreUrl} target="_blank" rel="noopener" className="text-ink transition hover:text-brand">ContentCue</a></li>
+                            <li><Link to={`/${lang || 'en'}/qr-generator/`} className="text-ink transition hover:text-brand">BiblioFuse QR Generator</Link></li>
                         </ul>
                     </div>
 
