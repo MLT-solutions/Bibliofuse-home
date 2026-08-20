@@ -4,6 +4,37 @@
 // title and desc are multilingual objects: { en, es, fr, nl, pt, ru, zh, ja, ko, id, ms }
 
 export const ENTRIES = [
+  {
+    date: '2026-08-07',
+    platform: 'all',
+    type: 'feature',
+    title: {
+      en: 'QR setup for Kavita & Komga servers',
+      es: 'Configuración por QR para servidores Kavita y Komga',
+      fr: 'Configuration par QR pour les serveurs Kavita et Komga',
+      nl: 'QR-installatie voor Kavita- en Komga-servers',
+      pt: 'Configuração por QR para servidores Kavita e Komga',
+      ru: 'Настройка серверов Kavita и Komga по QR-коду',
+      zh: 'Kavita 和 Komga 服务器的 QR 设置',
+      ja: 'Kavita・Komga サーバーの QR セットアップ',
+      ko: 'Kavita 및 Komga 서버 QR 설정',
+      id: 'Pengaturan QR untuk server Kavita & Komga',
+      ms: 'Persediaan QR untuk pelayan Kavita & Komga',
+    },
+    desc: {
+      en: 'The BiblioFuse QR Generator now creates scannable setup codes for Kavita and Komga servers. In BiblioFuse Pro, iPhone, iPad, Vision Pro, and Android phone/tablet can connect to OPDS, Kavita, and Komga catalogs.',
+      es: 'El Generador QR de BiblioFuse ahora crea códigos de configuración escaneables para servidores Kavita y Komga. En BiblioFuse Pro, iPhone, iPad, Vision Pro y teléfonos/tablets Android pueden conectarse a catálogos OPDS, Kavita y Komga.',
+      fr: 'Le générateur QR BiblioFuse crée désormais des codes de configuration scannables pour les serveurs Kavita et Komga. Dans BiblioFuse Pro, l’iPhone, l’iPad, Vision Pro et les téléphones/tablettes Android peuvent se connecter aux catalogues OPDS, Kavita et Komga.',
+      nl: 'De BiblioFuse QR-generator maakt nu scanbare installatiecodes voor Kavita- en Komga-servers. In BiblioFuse Pro kunnen iPhone, iPad, Vision Pro en Android-telefoons/-tablets verbinding maken met OPDS-, Kavita- en Komga-catalogi.',
+      pt: 'O Gerador QR do BiblioFuse agora cria códigos de configuração escaneáveis para servidores Kavita e Komga. No BiblioFuse Pro, iPhone, iPad, Vision Pro e telefones/tablets Android podem conectar-se a catálogos OPDS, Kavita e Komga.',
+      ru: 'Генератор QR-кодов BiblioFuse теперь создаёт сканируемые коды настройки для серверов Kavita и Komga. В BiblioFuse Pro iPhone, iPad, Vision Pro и телефоны/планшеты Android могут подключаться к каталогам OPDS, Kavita и Komga.',
+      zh: 'BiblioFuse QR 生成器现可为 Kavita 和 Komga 服务器创建可扫描的设置码。在 BiblioFuse Pro 中，iPhone、iPad、Vision Pro 以及 Android 手机/平板可连接 OPDS、Kavita 和 Komga 目录。',
+      ja: 'BiblioFuse QR ジェネレーターで、Kavita と Komga サーバー用のスキャン可能なセットアップコードを作成できるようになりました。BiblioFuse Pro では、iPhone、iPad、Vision Pro、Android スマートフォン／タブレットから OPDS、Kavita、Komga のカタログに接続できます。',
+      ko: 'BiblioFuse QR 생성기로 Kavita 및 Komga 서버용 스캔 가능한 설정 코드를 만들 수 있습니다. BiblioFuse Pro에서는 iPhone, iPad, Vision Pro, Android 휴대전화/태블릿에서 OPDS, Kavita, Komga 카탈로그에 연결할 수 있습니다.',
+      id: 'Generator QR BiblioFuse kini membuat kode pengaturan yang dapat dipindai untuk server Kavita dan Komga. Di BiblioFuse Pro, iPhone, iPad, Vision Pro, serta ponsel/tablet Android dapat terhubung ke katalog OPDS, Kavita, dan Komga.',
+      ms: 'Penjana QR BiblioFuse kini menghasilkan kod persediaan boleh imbas untuk pelayan Kavita dan Komga. Dalam BiblioFuse Pro, iPhone, iPad, Vision Pro serta telefon/tablet Android boleh bersambung ke katalog OPDS, Kavita dan Komga.',
+    },
+  },
   // ── iOS & macOS ────────────────────────────────────────────────────────
   {
     date: '2026-07-28',

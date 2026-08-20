@@ -13,6 +13,7 @@ const bibliofusePcUrl = 'https://apps.microsoft.com/store/detail/9N77MZ509ML2';
 const dockerUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution';
 const synologyUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution/releases';
 const imageBase = '/image/offline-apps/bibliofuse';
+const featureMediaBase = '/image/comicreader/feature-summary';
 
 function HostBadge({ type, href }) {
   const label = type === 'docker' ? 'Docker' : 'Synology';
@@ -194,7 +195,75 @@ function ComparisonTable() {
   );
 }
 
-function ReaderFeatureRow({ eyebrow, title, desc, bullets, image, alt, reverse, kind = 'iphone', accent = 'blue', footnote, badge }) {
+function FeatureVideo({ alt }) {
+  const videoRef = React.useRef(null);
+  const [isPlaying, setIsPlaying] = React.useState(false);
+
+  React.useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return undefined;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return undefined;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    }, { threshold: 0.35 });
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
+  const togglePlayback = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) {
+      video.play().catch(() => {});
+    } else {
+      video.pause();
+    }
+  };
+
+  return (
+    <div className="relative mx-auto w-full max-w-[680px]">
+      <div className="absolute -inset-10 -z-10 rounded-full bg-[radial-gradient(circle,rgba(20,194,166,0.16),transparent_70%)]" />
+      <video
+        ref={videoRef}
+        aria-label={alt}
+        className="block aspect-[4/3] w-full object-contain [clip-path:inset(0_0.5%_0_0)]"
+        loop
+        muted
+        playsInline
+        preload="metadata"
+        poster={`${featureMediaBase}/navigation-demo-poster.jpg`}
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+      >
+        <source src={`${featureMediaBase}/navigation-demo-alpha.mp4`} type='video/mp4; codecs="hvc1"' />
+        <source src={`${featureMediaBase}/navigation-demo-fallback.mp4`} type='video/mp4; codecs="avc1.640028"' />
+      </video>
+      <button
+        type="button"
+        onClick={togglePlayback}
+        className="absolute bottom-3 right-3 inline-flex h-10 items-center gap-2 rounded-full border border-slate-200/80 bg-white/95 px-3.5 text-xs font-bold text-slate-800 shadow-lg backdrop-blur transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+        aria-label={isPlaying ? 'Pause navigation demo' : 'Play navigation demo'}
+      >
+        {isPlaying ? (
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" /></svg>
+        ) : (
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+        )}
+        {isPlaying ? 'Pause' : 'Play demo'}
+      </button>
+    </div>
+  );
+}
+
+function ReaderFeatureRow({ eyebrow, title, desc, bullets, image, alt, reverse, kind = 'portrait', accent = 'blue', footnote, badge }) {
   const accentClasses = {
     blue: 'bg-blue-50 text-blue-600',
     teal: 'bg-teal-50 text-teal-600',
@@ -235,11 +304,15 @@ function ReaderFeatureRow({ eyebrow, title, desc, bullets, image, alt, reverse, 
       </div>
 
       <div className="relative">
-        {kind === 'iphone' ? (
-          <div className="relative mx-auto max-w-[360px]">
+        {kind === 'portrait' ? (
+          <div className="relative mx-auto max-w-[430px]">
             <div className="absolute -inset-12 -z-10 rounded-full bg-[radial-gradient(circle,rgba(45,124,246,0.16),transparent_70%)]" />
-            <img src={image} alt={alt} className="block w-full drop-shadow-2xl" />
+            <div className="overflow-hidden rounded-[2rem] border border-blue-100 bg-[#edf5ff] shadow-2xl">
+              <img src={image} alt={alt} className="block h-auto w-full" loading="lazy" />
+            </div>
           </div>
+        ) : kind === 'video' ? (
+          <FeatureVideo alt={alt} />
         ) : (
           <div className="relative">
             <div className="absolute -inset-10 -z-10 rounded-3xl bg-[radial-gradient(circle,rgba(45,124,246,0.16),transparent_70%)]" />
@@ -567,7 +640,7 @@ const ComicReader = () => {
 
       <section className="relative overflow-hidden bg-[#f5f8ff] pt-28 pb-20">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_10%,rgba(45,124,246,0.14),transparent_34%),radial-gradient(circle_at_85%_18%,rgba(20,194,166,0.13),transparent_28%)]" />
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1fr_0.95fr] lg:gap-10 lg:px-8">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1fr_1.08fr] lg:gap-8 lg:px-8">
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-blue-700 shadow-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
@@ -609,9 +682,14 @@ const ComicReader = () => {
             </Link>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[min(390px,100%)] lg:justify-self-end">
-            <div className="absolute -inset-10 -z-0 rounded-full bg-[radial-gradient(circle,rgba(45,124,246,0.18),transparent_68%)]" />
-            <img src={`${imageBase}/iphone/1.png`} alt={t('redesign.altTexts.heroImage')} className="relative z-10 block w-full drop-shadow-2xl" />
+          <div className="relative mx-auto w-full max-w-[760px] lg:justify-self-end">
+            <div className="absolute -inset-8 -z-0 rounded-full bg-[radial-gradient(circle,rgba(45,124,246,0.18),transparent_70%)]" />
+            <img
+              src={`${featureMediaBase}/cover2.png`}
+              alt="BiblioFuse Reader across iPhone, iPad, Mac, Vision Pro and Apple TV"
+              className="relative z-10 block h-auto w-full [filter:drop-shadow(0_24px_34px_rgba(15,23,42,0.22))]"
+              fetchpriority="high"
+            />
           </div>
         </div>
       </section>
@@ -627,7 +705,7 @@ const ComicReader = () => {
               { title: t('redesign.readerSection.features.library.bullet2Title'), body: t('redesign.readerSection.features.library.bullet2Body') },
               { title: t('redesign.readerSection.features.library.bullet3Title'), body: t('redesign.readerSection.features.library.bullet3Body') },
             ]}
-            image={`${imageBase}/iphone/2.png`}
+            image={`${featureMediaBase}/library-shelf.jpg`}
             alt={t('redesign.readerSection.features.library.imageAlt')}
           />
 
@@ -641,8 +719,9 @@ const ComicReader = () => {
               { title: t('redesign.readerSection.features.reading.bullet2Title'), body: t('redesign.readerSection.features.reading.bullet2Body') },
               { title: t('redesign.readerSection.features.reading.bullet3Title'), body: t('redesign.readerSection.features.reading.bullet3Body') },
             ]}
-            image={`${imageBase}/iphone/3.png`}
-            alt={t('redesign.readerSection.features.reading.imageAlt')}
+            image={`${featureMediaBase}/navigation-demo-alpha.mp4`}
+            alt={t('redesign.readerSection.features.reading.videoAlt', 'BiblioFuse navigation demo showing page curl, continuous reading, minimap and multiple reading styles')}
+            kind="video"
             accent="teal"
           />
 

@@ -110,9 +110,28 @@ FAQ lives in `redesign.comicReaderPage.faq` so troubleshooting answers can inclu
 nested bullet steps, code-formatted filenames, and support links without bloating the
 homepage.
 
-### Edition comparison table (`/comicreader/`, updated 2026-07-26)
+### Reader feature media (`/comicreader/`)
+The comic-reader hero and first two feature rows use mixed-aspect marketing media
+under `public/image/comicreader/feature-summary/`: a transparent 4:3 all-device
+hero, a portrait library/shelf image, and a 4:3 navigation demo. The hero and video
+stay in open, transparency-friendly frames; the portrait image uses a constrained
+poster frame so its baked-in heading stays legible without dominating the copy.
+The navigation demo shows multiple reading styles, the minimap, continuous reading,
+and page-curl navigation.
+
+The navigation demo keeps the supplied HEVC-alpha MP4 for Safari and includes a
+smaller H.264 opaque fallback plus a matching poster for browsers without HEVC-alpha
+support. `FeatureVideo` starts and pauses playback as the media enters/leaves the
+viewport, remains muted/inline/looping, exposes a visible play/pause control, and
+does not auto-start for visitors who prefer reduced motion. The video has no CSS
+drop-shadow, and its right edge clips 0.5% to hide the thin black strip encoded
+in the supplied source/fallback. The separate GUI demo is
+not loaded on this already media-heavy page because it repeats the all-device hero
+story.
+
+### Edition comparison table (`/comicreader/`, updated 2026-08-20)
 `ComparisonTable`, `id="comparison-table"`, rendered on `/comicreader/` right after
-`VisionProSection`: a 10-row feature table across 4 editions (Apple, PC, Android, and
+`VisionProSection`: an 11-row feature table across 4 editions (Apple, PC, Android, and
 a new NAS column for Docker/Synology self-hosting) driven entirely by
 `redesign.home.table` in each locale's `translation.json` (`editions`/`subtitles`/
 `badges`/`rows`, 5-cell rows: label + one cell per edition; `renderLocalizedTableCell`
@@ -157,6 +176,13 @@ column's devices, the **"Can host a library"**, **"Stream from a host"**, and
 **"iCloud bookshelf"** rows footnote them separately via the same
 `main|sub||main2|sub2` stacked-cell syntax already used for Mac-only hosting —
 Apple TV and Android TV are both Local-Wi-Fi-only, no Tailscale, no iCloud.
+
+The row immediately below it, **"Stream from OPDS, Kavita & Komga"**, is separate
+from BiblioFuse desktop-host streaming. It marks support on iPhone, iPad, Vision Pro,
+and Android phone/tablet; PC, Apple TV, Android TV, and the NAS/browser edition stay
+unsupported in this row. The claim is checked against the native Apple and Android
+remote-catalog implementations rather than inferred from the older host-streaming
+row. Its label and device notes are translated across all 11 site locales.
 
 **"Read formats" row (updated 2026-07-24)** also footnotes Apple TV and Android TV:
 both are CBZ/CBR/ZIP/RAR only, confirmed against `bibliofuse_iosv2`'s

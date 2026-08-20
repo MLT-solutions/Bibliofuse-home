@@ -5,7 +5,8 @@
 
 ## Data shape
 Each `data/changelog-<app>.js` exports `ENTRIES`, `KNOWN_ISSUES`, `ROADMAP` arrays.
-- `ENTRIES`: `{date, version, platform, type, title, desc}` — `platform` is one of
+- `ENTRIES`: `{date, version?, platform, type, title, desc}` — `version` is omitted
+  for companion website/setup updates that do not represent a new app build; `platform` is one of
   `ios | mac | pc | android | all`; `type` is one of
   `release | feature | fix | known-issue | roadmap`. `title`/`desc` are multilingual
   objects keyed by the 11 supported language codes.

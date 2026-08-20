@@ -335,6 +335,13 @@
             "-"
           ],
           [
+            "从 OPDS、Kavita 和 Komga 流式传输",
+            "iPhone、iPad 和 Vision Pro|OPDS、Kavita 和 Komga",
+            "-",
+            "Android 手机和平板|OPDS、Kavita 和 Komga",
+            "-"
+          ],
+          [
             "书库来源",
             "本地 + iCloud + SMB/NAS|Mac：原生支持 · iOS/Vision Pro：通过流式传输",
             "本地 + iCloud + SMB/NAS",
