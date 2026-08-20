@@ -100,6 +100,10 @@ You don't need to download your entire collection to take some of it with you â€
 
 For offline access and long-term library management, Wi-Fi Transfer and iCloud Sync round out the workflow. All three features are built into [BiblioFuse](/en/) and work together to keep your reading collection available wherever and however you want to read.
 
+---
+
+**Update (June 2026):** BiblioFuse PC Reader for Windows is now available on the Microsoft Store. It offers the same home library streaming feature described in this article â€” your iPhone connects to the Windows PC and streams your library over Wi-Fi, with no files copied to the device. See [Stream Your Windows PC Comic Library to iPhone](/en/blog/pc-home-library-streaming-iphone/) for the Windows setup guide.
+
 ## Frequently Asked Questions
 
 **How do I stream my Mac comic library to iPhone without copying files?**

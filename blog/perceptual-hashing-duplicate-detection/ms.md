@@ -4,7 +4,7 @@ Anda menamakan semula fail. Anda memampatkan semula arkib. Anda memuat turun jil
 
 Namun, komik di dalamnya adalah sama. Setiap halaman adalah sama. Dan jika anda cuba membersihkan perpustakaan digital anda, pendua yang hampir serupa ini adalah tepat yang terlepas daripada pencari pendua standard.
 
-Inilah masalah yang diselesaikan pencincangan persepsi, dan ia adalah teknik teras [Archive Duplicate Scanner](/en/).
+Inilah masalah yang diselesaikan pencincangan persepsi, dan ia adalah teknik teras [Comic Duplicate Scanner](/en/archive/).
 
 ---
 
@@ -36,11 +36,16 @@ Tetapi untuk arkib komik, pendekatan ini terlepas pendua paling biasa dalam duni
 
 Dua imej dengan kandungan visual yang serupa menghasilkan cincang dengan **jarak Hamming** yang rendah.
 
+Dua sifat penting terhasil terus daripada langkah-langkah ini:
+
+- **Resolusi tidak relevan.** Langkah 1 mengubah saiz setiap imej kepada grid tetap yang sama sebelum sebarang pengiraan. Imbasan 1200px dan 3000px daripada halaman yang sama kedua-duanya menjadi lakaran kecil 32×32 yang sama dan menghasilkan hash yang sama.
+- **Mod warna tidak relevan.** Langkah 2 menukar kepada skala kelabu sebelum perbandingan. Imbasan berwarna penuh dan imbasan skala kelabu daripada halaman yang sama menghasilkan hash yang hampir sama, kerana algoritma hanya menganalisis struktur luminans, bukan nilai warna.
+
 ---
 
-## Cara Archive Duplicate Scanner Menerapkan Ini
+## Cara Comic Duplicate Scanner Menerapkan Ini
 
-[Archive Duplicate Scanner](/en/) menerapkan pencincangan persepsi di peringkat arkib:
+[Comic Duplicate Scanner](/en/archive/) menerapkan pencincangan persepsi di peringkat arkib:
 
 1. **Pengekstrakan** — membuka setiap CBZ atau CBR dan membaca imej dalaman
 2. **Mencincang setiap halaman** — setiap halaman mendapat cincang persepsi
@@ -61,6 +66,9 @@ Apabila 90% halaman dalam dua arkib sepadan, kemungkinan positif palsu turun ham
 
 ---
 
+**Kes 5: Imbasan berwarna lwn. imbasan hitam putih**
+Anda mempunyai dua salinan jilid manga yang sama: satu ialah imbasan berwarna daripada edisi digital awal, satu lagi ialah imbasan skala kelabu daripada penerbitan semula yang lebih baharu. Saiz fail berbeza, kedalaman warna berbeza, penampilan visual berbeza. Tetapi kerana dHash menukar kepada skala kelabu sebelum penghasan, kedua-dua salinan direduksi kepada cap jari luminans yang sama → ditandakan sebagai pendua. Ini adalah kes yang hampir semua pengesan pendua lain terlepas pandang sepenuhnya.
+
 ## Had Pencincangan Persepsi
 
 **Pengeditan visual yang ketara akan memutuskan padanan.** Tera air ringan atau pemangkasan kecil biasanya tidak menjejaskan pengesanan.
@@ -71,8 +79,8 @@ Apabila 90% halaman dalam dua arkib sepadan, kemungkinan positif palsu turun ham
 
 ---
 
-## Menggunakan Archive Duplicate Scanner
+## Menggunakan Comic Duplicate Scanner
 
-[Archive Duplicate Scanner](/en/) ialah aplikasi Mac asli yang mengalihkan pendua terpilih ke Tong Sampah (bukan pemadaman kekal).
+[Comic Duplicate Scanner](/en/archive/) ialah aplikasi Mac asli yang mengalihkan pendua terpilih ke Tong Sampah (bukan pemadaman kekal).
 
 Setelah perpustakaan anda bersih, padankan dengan [BiblioFuse](/en/) di iPhone untuk satu sumber bacaan yang terkurasi.

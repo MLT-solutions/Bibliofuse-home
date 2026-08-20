@@ -1,16 +1,16 @@
-# Archive Duplicate Scanner がポルトガル語・スペイン語・インドネシア語・中国語に対応
+# Comic Duplicate Scanner がポルトガル語・スペイン語・インドネシア語・中国語に対応
 
-Archive Duplicate Scanner がポルトガル語、スペイン語、バハサ・インドネシア語、简体中文（簡体字中国語）に対応しました。アプリの全インターフェースが4つの新言語で利用できます。このアプリは知覚ハッシュを使って重複したコミックアーカイブ（CBZ、CBR、ZIP、RAR）や写真を検出します。Mac・Windows ともに無料でご利用いただけます。[今すぐダウンロード](/ja/#archive)してお試しください。
+Comic Duplicate Scanner がポルトガル語、スペイン語、バハサ・インドネシア語、简体中文（簡体字中国語）に対応しました。アプリの全インターフェースが4つの新言語で利用できます。このアプリは知覚ハッシュを使って重複したコミックアーカイブ（CBZ、CBR、ZIP、RAR）や写真を検出します。Mac・Windows ともに無料でご利用いただけます。[今すぐダウンロード](/ja/archive/)してお試しください。
 
 ## 海外コレクターがこのアップデートを必要としていた理由
 
-大規模なコミックやマンガのコレクションを管理するのは、言語の壁がなくても十分難しいことです。これまで、英語圏以外のユーザーは Archive Duplicate Scanner を英語で操作しなければなりませんでした。メニューは英語、スキャン結果のラベルは英語、エクスポートレポートも英語でした。
+大規模なコミックやマンガのコレクションを管理するのは、言語の壁がなくても十分難しいことです。これまで、英語圏以外のユーザーは Comic Duplicate Scanner を英語で操作しなければなりませんでした。メニューは英語、スキャン結果のラベルは英語、エクスポートレポートも英語でした。
 
 翻訳されたマンガや外国版コミックのファイルを数万点管理しているユーザーにとって、この不便は無視できないものでした。今回のアップデートでこの壁を完全に取り除きます。
 
 ## 新機能 — 4つの新言語パック
 
-Archive Duplicate Scanner の最新バージョンで、以下の言語の完全な UI ローカライズが追加されました：
+Comic Duplicate Scanner の最新バージョンで、以下の言語の完全な UI ローカライズが追加されました：
 
 - **ポルトガル語**（Português）
 - **スペイン語**（Español）
@@ -19,11 +19,11 @@ Archive Duplicate Scanner の最新バージョンで、以下の言語の完全
 
 「完全な UI サポート」とは、アプリ内のすべての表示文字列が翻訳されることを意味します——メニュー、ツールバーボタン、結果テーブルの列ヘッダー、類似度スコアのラベル、確認ダイアログ、設定パネル、そしてサムネイル付きの HTML エクスポートレポートも含まれます。
 
-アプリは OS の言語設定に自動的に従います。macOS では **システム設定 → 一般 → 言語と地域** でご希望の言語をリストの一番上に移動してください。Windows では **設定 → 時刻と言語 → 言語と地域** で変更できます。Archive Duplicate Scanner を再起動すると、インターフェースが即座に切り替わります。
+アプリは OS の言語設定に自動的に従います。macOS では **システム設定 → 一般 → 言語と地域** でご希望の言語をリストの一番上に移動してください。Windows では **設定 → 時刻と言語 → 言語と地域** で変更できます。Comic Duplicate Scanner を再起動すると、インターフェースが即座に切り替わります。
 
-## Archive Duplicate Scanner とは
+## Comic Duplicate Scanner とは
 
-[Archive Duplicate Scanner](/ja/#archive) は**知覚ハッシュ**を使って重複ファイルを検出します。各アーカイブ（CBZ、CBR、ZIP、RAR）を開き、内部の実際のページ画像の知覚ハッシュを計算します。2つのファイルが全く異なる名前、ファイルサイズ、さらには異なる圧縮方式を持っていても、ページが同じように見えれば一致と判定されます。ファイル名を変えても重複は隠せません。
+[Comic Duplicate Scanner](/ja/archive/) は**知覚ハッシュ**を使って重複ファイルを検出します。各アーカイブ（CBZ、CBR、ZIP、RAR）を開き、内部の実際のページ画像の知覚ハッシュを計算します。2つのファイルが全く異なる名前、ファイルサイズ、さらには異なる圧縮方式を持っていても、ページが同じように見えれば一致と判定されます。ファイル名を変えても重複は隠せません。
 
 アーカイブに加えて、写真（JPEG、PNG、HEIC、WEBP、BMP、GIF）の重複も検出します。
 
@@ -38,26 +38,26 @@ Archive Duplicate Scanner の最新バージョンで、以下の言語の完全
 
 ## よくある質問
 
-**Archive Duplicate Scanner は日本語のファイル名に対応していますか？**
+**Comic Duplicate Scanner は日本語のファイル名に対応していますか？**
 はい。ファジーファイル名マッチングは完全に Unicode 対応で、日本語（ひらがな、カタカナ、漢字）のファイル名を常に正しく処理してきました。今回の新言語 UI とは独立した機能です。
 
 **アプリの言語を切り替えるにはどうすればよいですか？**
 アプリは OS の言語設定に自動的に従います。macOS ではシステム設定 → 一般 → 言語と地域で設定してください。設定変更後はアプリを再起動してください。
 
 **アプリは無料ですか？**
-Archive Duplicate Scanner は最大 1,000 ファイルまで無料で使用できます。より大きなコレクションには、USD 19.99 の一度きりの購入で無制限スキャンが解放されます。Mac 版には 7 日間の無料試用期間が含まれます。
+Comic Duplicate Scanner は最大 1,000 ファイルまで無料で使用できます。より大きなコレクションには、USD 19.99 の一度きりの購入で無制限スキャンが解放されます。Mac 版には 7 日間の無料試用期間が含まれます。
 
 **対応ファイル形式は何ですか？**
 コミックアーカイブ：CBZ、CBR、ZIP、RAR。写真：JPEG、PNG、HEIC、WEBP、BMP、GIF。
 
 **データはどこかに送信されますか？**
-いいえ。Archive Duplicate Scanner は完全ローカルで動作します。ファイルやハッシュがデバイスを離れることはありません。
+いいえ。Comic Duplicate Scanner は完全ローカルで動作します。ファイルやハッシュがデバイスを離れることはありません。
 
-## Archive Duplicate Scanner をダウンロード
+## Comic Duplicate Scanner をダウンロード
 
 アップデートは両プラットフォームで今すぐご利用いただけます：
 
-- **Mac App Store：**[Archive Duplicate Scanner をダウンロード](https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449)
-- **Microsoft Store：**[Archive Duplicate Scanner をダウンロード](https://apps.microsoft.com/detail/9n2jb4k5wvcq)
+- **Mac App Store：**[Comic Duplicate Scanner をダウンロード](https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449)
+- **Microsoft Store：**[Comic Duplicate Scanner をダウンロード](https://apps.microsoft.com/detail/9n2jb4k5wvcq)
 
-ダウンロード前に [Archive Duplicate Scanner ページ](/ja/#archive) でフル機能の詳細をご覧ください。
+ダウンロード前に [Comic Duplicate Scanner ページ](/ja/archive/) でフル機能の詳細をご覧ください。

@@ -4,7 +4,7 @@ You renamed a file. You re-compressed an archive. You downloaded the same volume
 
 Yet the comic inside is the same. Every page is the same. And if you're trying to clean up your digital library, these near-identical duplicates are exactly the ones that slip through standard duplicate finders.
 
-This is the problem perceptual hashing solves, and it's the technique at the core of [Archive Duplicate Scanner](/en/).
+This is the problem perceptual hashing solves, and it's the technique at the core of [Comic Duplicate Scanner](/en/archive/).
 
 ---
 
@@ -40,13 +40,18 @@ The most widely used algorithm, **pHash** (difference hash and its variants), wo
 
 The resulting hash is typically 64–256 bits. Two images with similar visual content produce hashes with a low **Hamming distance** — the number of bit positions that differ.
 
+Two important properties follow directly from these steps:
+
+- **Resolution is irrelevant.** Step 1 resizes every image to the same fixed grid before anything is computed. A 1200px scan and a 3000px scan of the same page both become the same 32×32 thumbnail — and produce the same hash.
+- **Colour mode is irrelevant.** Step 2 converts to greyscale before comparison. A full-colour scan and a greyscale (black-and-white) scan of the same page produce nearly identical hashes, because the algorithm only looks at luminance structure, not colour values.
+
 For most comic page comparisons, a Hamming distance under 10 indicates the same content at different quality levels or compression settings.
 
 ---
 
-## How Archive Duplicate Scanner Applies This
+## How Comic Duplicate Scanner Applies This
 
-[Archive Duplicate Scanner](/en/) applies perceptual hashing at the archive level:
+[Comic Duplicate Scanner](/en/archive/) applies perceptual hashing at the archive level:
 
 1. **Extract** — it opens each CBZ or CBR archive and reads the image files inside
 2. **Hash each page** — every page in every archive gets a perceptual hash
@@ -70,6 +75,9 @@ Someone ran a CBZ through a compression tool, reducing each JPEG to 80% quality.
 **Case 3: Pages reordered or renamed internally**
 An archive has pages named `001.jpg, 002.jpg...` while another has `page_001.jpg, page_002.jpg...`. The images are the same but the internal structure is different. Perceptual hashing doesn't look at filenames inside the archive — it only looks at pixel content → still detected.
 
+**Case 5: Color scan vs black-and-white scan**
+You have two copies of the same manga volume: one is a colour scan from an early digital release, the other is a greyscale scan from a later re-release. Different file sizes, different colour depth, different visual appearance when you look at them. But because dHash converts to greyscale before hashing, both copies reduce to the same luminance fingerprint → flagged as duplicate. This is a case that nearly every other duplicate finder misses entirely.
+
 **Case 4: Legitimately different volumes**
 Volume 3 and volume 4 of the same series. They share a similar art style and possibly the same cover layout. But the page content is different. Perceptual hashing: page-by-page comparison finds low overlap → not flagged.
 
@@ -83,9 +91,9 @@ No technique is perfect. Understanding the limits helps you use the tool more ef
 
 **Very low resolution images are unreliable.** Perceptual hashing works by comparing visual structure — if source images are extremely small (under 100px in either dimension), there's less structure to compare and false positives increase.
 
-**Different chapters packaged together.** If one archive is volumes 1–3 combined and another is just volume 2, the pages-matching-ratio will be lower. Archive Duplicate Scanner handles this gracefully by computing proportional match rates, but very large volume bundles may need manual review.
+**Different chapters packaged together.** If one archive is volumes 1–3 combined and another is just volume 2, the pages-matching-ratio will be lower. Comic Duplicate Scanner handles this gracefully by computing proportional match rates, but very large volume bundles may need manual review.
 
-**Manga with similar art across volumes.** Some series (particularly short gag manga or anthology collections) reuse visual elements extensively. Occasional false matches are possible — the review interface in Archive Duplicate Scanner lets you check thumbnails before committing to deletion.
+**Manga with similar art across volumes.** Some series (particularly short gag manga or anthology collections) reuse visual elements extensively. Occasional false matches are possible — the review interface in Comic Duplicate Scanner lets you check thumbnails before committing to deletion.
 
 ---
 
@@ -97,9 +105,9 @@ This also means that when you download a "higher quality" version of a volume yo
 
 ---
 
-## Using Archive Duplicate Scanner
+## Using Comic Duplicate Scanner
 
-[Archive Duplicate Scanner](/en/) is a native Mac app that brings perceptual hashing to your full library:
+[Comic Duplicate Scanner](/en/archive/) is a native Mac app that brings perceptual hashing to your full library:
 
 - Scans entire folder trees recursively
 - Handles CBZ, CBR, and loose image files

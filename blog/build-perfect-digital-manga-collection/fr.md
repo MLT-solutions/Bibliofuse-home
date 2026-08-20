@@ -1,6 +1,6 @@
 # Comment Construire une Collection de Manga Numérique Parfaite : Compresser, Dédupliquer et Lire Partout
 
-BiblioFuse est le lecteur iOS conçu pour tous les formats que les collectionneurs de manga utilisent réellement — CBZ, CBR, EPUB, PDF, ZIP, RAR et TXT — sur iPhone et iPad sous iOS 17 ou version ultérieure. Son onglet Outils intégré permet de compresser et de convertir des fichiers directement sur l'appareil, sans jamais avoir besoin d'un ordinateur. Associé à Archive Duplicate Scanner sur Mac et à la [BiblioFuse Web Tool](/fr/webapp/), vous disposez d'un flux de travail complet pour construire et entretenir une collection de manga numérique parfaite.
+BiblioFuse est le lecteur iOS conçu pour tous les formats que les collectionneurs de manga utilisent réellement — CBZ, CBR, EPUB, PDF, ZIP, RAR et TXT — sur iPhone et iPad sous iOS 17 ou version ultérieure. Son onglet Outils intégré permet de compresser et de convertir des fichiers directement sur l'appareil, sans jamais avoir besoin d'un ordinateur. Associé à Comic Duplicate Scanner sur Mac et à la [BiblioFuse Web Tool](/fr/webapp/), vous disposez d'un flux de travail complet pour construire et entretenir une collection de manga numérique parfaite.
 
 ## Le Problème du Collectionneur de Manga
 
@@ -18,11 +18,11 @@ La vitesse de transfert compte aussi. Copier 50 Go par USB ou attendre qu'iCloud
 
 ## Étape par Étape : Construire la Collection Parfaite
 
-### 1. Auditer et Supprimer les Doublons (Archive Duplicate Scanner)
+### 1. Auditer et Supprimer les Doublons (Comic Duplicate Scanner)
 
-Avant de compresser ou d'organiser quoi que ce soit, trouvez ce que vous possédez en double. **Archive Duplicate Scanner** pour Mac et Windows utilise le hachage perceptuel pour comparer le contenu réel des images à l'intérieur des archives CBZ, CBR et photo. Il détecte les doublons même quand le nom du fichier a été modifié, que le tome a été recompressé ou que la couverture a été remplacée.
+Avant de compresser ou d'organiser quoi que ce soit, trouvez ce que vous possédez en double. **Comic Duplicate Scanner** pour Mac et Windows utilise le hachage perceptuel pour comparer le contenu réel des images à l'intérieur des archives CBZ, CBR et photo. Il détecte les doublons même quand le nom du fichier a été modifié, que le tome a été recompressé ou que la couverture a été remplacée.
 
-Lancez une analyse complète de votre dossier de bibliothèque. Utilisez la stratégie de sélection automatique pour marquer la copie de moindre qualité dans chaque paire de doublons, vérifiez la liste, puis envoyez-les dans la Corbeille — Archive Duplicate Scanner ne supprime jamais définitivement sans votre confirmation.
+Lancez une analyse complète de votre dossier de bibliothèque. Utilisez la stratégie de sélection automatique pour marquer la copie de moindre qualité dans chaque paire de doublons, vérifiez la liste, puis envoyez-les dans la Corbeille — Comic Duplicate Scanner ne supprime jamais définitivement sans votre confirmation.
 
 ### 2. Compresser les Tomes Volumineux (BiblioFuse Web Tool ou Onglet Outils iOS)
 
@@ -52,7 +52,7 @@ Une collection parfaite est celle à laquelle vous pouvez accéder partout. Bibl
 
 | Tâche | Outil |
 |-------|-------|
-| Trouver les tomes en double | Archive Duplicate Scanner (Mac/Windows) |
+| Trouver les tomes en double | Comic Duplicate Scanner (Mac/Windows) |
 | Compresser / convertir / fusionner des fichiers | BiblioFuse Web Tool (navigateur) ou onglet Outils iOS |
 | Déchiffrer les archives protégées | SmartDecrypt PDF ZIP CBZ (iOS/macOS) |
 | Lire, étiqueter, noter et synchroniser | BiblioFuse iOS (iPhone/iPad, iOS 17+) |
@@ -70,7 +70,7 @@ Pour les très grandes bibliothèques, **Mac Home Library** est encore meilleur 
 BiblioFuse lit les fichiers CBZ, CBR, ZIP, RAR, EPUB, PDF et TXT. CBZ est le format d'archive manga le plus courant et s'ouvre instantanément. EPUB est préférable pour les comics en texte fluide et les light novels. Tous les formats sont pris en charge sans conversion nécessaire.
 
 **Comment trouver les tomes de manga en double sur mon Mac ?**
-Utilisez Archive Duplicate Scanner. Il utilise le hachage perceptuel pour comparer le contenu des images à l'intérieur des archives, ce qui lui permet de trouver des doublons même quand les noms de fichiers diffèrent ou que les fichiers ont été recompressés. Une analyse complète d'une bibliothèque de 500 tomes se termine généralement en quelques minutes.
+Utilisez Comic Duplicate Scanner. Il utilise le hachage perceptuel pour comparer le contenu des images à l'intérieur des archives, ce qui lui permet de trouver des doublons même quand les noms de fichiers diffèrent ou que les fichiers ont été recompressés. Une analyse complète d'une bibliothèque de 500 tomes se termine généralement en quelques minutes.
 
 **Puis-je compresser des fichiers manga sans perdre en qualité ?**
 Oui. La BiblioFuse Web Tool et l'onglet Outils iOS proposent des niveaux de compression qui réduisent significativement la taille des fichiers tout en gardant les images suffisamment nettes pour une lecture confortable. Pour une utilisation occasionnelle, un niveau agressif peut réduire la taille de 50 à 70 %.
@@ -86,4 +86,4 @@ Oui, avec SmartDecrypt PDF ZIP CBZ. Il déchiffre en lot les fichiers ZIP et CBZ
 
 ## Commencez à Lire Votre Collection Parfaite Aujourd'hui
 
-Une grande collection de manga ne se résume pas à posséder des tomes — c'est pouvoir les trouver, les faire tenir sur votre appareil et les ouvrir n'importe où sans friction. [BiblioFuse](/fr/) réunit le lecteur, les outils de transfert et le traitement sur appareil dont vous avez besoin en une seule application. Associez-le à Archive Duplicate Scanner et SmartDecrypt pour un flux de travail complet de bout en bout, et votre collection sera dans le meilleur état qu'elle ait jamais été.
+Une grande collection de manga ne se résume pas à posséder des tomes — c'est pouvoir les trouver, les faire tenir sur votre appareil et les ouvrir n'importe où sans friction. [BiblioFuse](/fr/) réunit le lecteur, les outils de transfert et le traitement sur appareil dont vous avez besoin en une seule application. Associez-le à Comic Duplicate Scanner et SmartDecrypt pour un flux de travail complet de bout en bout, et votre collection sera dans le meilleur état qu'elle ait jamais été.

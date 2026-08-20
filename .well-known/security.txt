@@ -1,0 +1,4 @@
+Contact: mailto:mattckw@gmail.com
+Expires: 2027-06-12T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://bibliofuse.com/.well-known/security.txt
