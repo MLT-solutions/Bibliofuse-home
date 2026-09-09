@@ -23,7 +23,8 @@
 //              'merged'   in main, NOT in a released build for that platform yet
 //              'na'       not applicable, or not built for that platform
 //     since    ISO date the work landed in main. Null for 'na'.
-//     note     per-cell qualifier, for 'partial' and 'merged'
+//     noteKey  i18n key under featureMatrix.cellNotes, for 'partial' cells that
+//              need a qualifier. Null otherwise.
 //
 // ── The release a feature first shipped in is DERIVED, never stored ───────────
 //
@@ -62,10 +63,19 @@
 //
 // ── i18n ──────────────────────────────────────────────────────────────────────
 //
-// `label`/`note` are plain strings for now. When the page ships, convert them to the
-// `{ en, es, fr, nl, pt, ru, zh, ja, ko, id, ms }` shape changelog.js uses so the
-// existing translate scripts can fill them. `aliases` stay English-only — they are
-// search keys, and users search product terms in English (OPDS, RTL, tategaki, CBZ).
+// Translations live in src/locales/<lang>/translation.json under `featureMatrix`,
+// keyed by feature id — NOT inline the way changelog.js holds them. changelog.js is
+// append-only prose where each entry is written once and never touched, so inlining
+// the eleven variants keeps an entry together. Feature labels are the opposite: a
+// stable key set that gets re-worded, so they belong in the locale files translators
+// already edit, and this file stays reviewable as data.
+//
+// `label` and `note` here are the English source and the i18n fallback: the page reads
+// t(`featureMatrix.features.<id>.label`) with the inline string as defaultValue, so a
+// missing key degrades to English rather than to a raw key.
+//
+// `aliases` stay English-only. They are search keys, and users search product terms in
+// English (OPDS, RTL, tategaki, CBZ) whatever language the UI is in.
 
 export const PLATFORMS = [
   { id: 'ios', label: 'iOS / iPadOS', version: '2.1.13', family: 'apple' },
@@ -143,10 +153,10 @@ export function releaseFor(platformId, since) {
 
 // Shorthand builders. No version argument by design — see the header: the release is
 // derived from `since` via releaseFor(), so it cannot drift out of step with the date.
-const s = (since, note = null) => ({ status: 'shipped', since, note });
-const p = (since, note) => ({ status: 'partial', since, note });
-const m = (since, note) => ({ status: 'merged', since, note });
-const na = { status: 'na', since: null, note: null };
+const s = (since, noteKey = null) => ({ status: 'shipped', since, noteKey });
+const p = (since, noteKey) => ({ status: 'partial', since, noteKey });
+const m = (since) => ({ status: 'merged', since, noteKey: null });
+const na = { status: 'na', since: null, noteKey: null };
 
 export const FEATURES = [
   // ── Reading ────────────────────────────────────────────────────────────────
@@ -251,7 +261,7 @@ export const FEATURES = [
       ios: s('2026-08-08'),
       macos: s('2026-08-08'),
       visionos: s('2026-08-08'),
-      tvos: m('2026-08-08', 'Built, but tvOS has not shipped a release since 2.1.7 (2026-07-27)'),
+      tvos: m('2026-08-08'),
       android: s('2026-08-11'),
       androidtv: na,
       windows: s('2026-08-10'),
@@ -303,8 +313,8 @@ export const FEATURES = [
     aliases: ['continuous', 'webtoon', 'long strip', 'scroll', 'fit width', 'auto-scroll', 'page down', 'vertical scroll'],
     platforms: {
       ios: s('2026-09-01'),
-      macos: m('2026-09-01', 'Landed after macOS 2.1.9 shipped on 2026-08-18'),
-      visionos: m('2026-09-01', 'Landed after visionOS 2.1.12 shipped on 2026-08-24'),
+      macos: m('2026-09-01'),
+      visionos: m('2026-09-01'),
       tvos: na,
       android: s('2026-08-13'),
       androidtv: na,
@@ -453,11 +463,11 @@ export const FEATURES = [
       ios: s('2026-07-17'),
       macos: s('2026-07-17'),
       visionos: s('2026-07-17'),
-      tvos: p('2026-07-17', 'LAN HTTPS only — Tailscale is parked; the tvOS client intermittently stops forwarding data while reporting an online peer'),
-      android: p('2026-07-15', 'Local Wi-Fi and manual Tailscale; the iCloud discovery route is Apple-only'),
-      androidtv: p('2026-07-22', 'LAN only'),
+      tvos: p('2026-07-17', 'lanOnlyTvos'),
+      android: p('2026-07-15', 'noICloudRoute'),
+      androidtv: p('2026-07-22', 'lanOnly'),
       windows: s('2026-07-18'),
-      nas: s('2026-08-07', 'Tailscale Serve and subnet access'),
+      nas: s('2026-08-07', 'tailscaleServe'),
     },
   },
 

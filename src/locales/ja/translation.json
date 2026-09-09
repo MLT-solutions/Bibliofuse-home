@@ -1987,5 +1987,169 @@
         "qrCredit": "QRコード powered by qrcode-generator"
       }
     }
-  }
+  },
+    "featureMatrix": {
+    "sinceVersion": "{{version}} 以降 · {{date}}",
+    "sinceDate": "{{date}} 以降",
+    "builtDate": "{{date}} に開発",
+    "countAll": "{{n}} 件の機能",
+    "countFiltered": "{{total}} 件中 {{n}} 件",
+      "eyebrow": "機能マトリクス",
+      "title": "どこで何が使えるか",
+      "subtitle": "BiblioFuse のすべての機能を、プラットフォームごとに、登場したバージョンとあわせて掲載。検索または絞り込みで目的の機能を探せます。",
+      "searchLabel": "機能を検索",
+      "searchPlaceholder": "「マンガ翻訳」「tategaki」「RTL」「Komga」などで検索",
+      "platformsLabel": "プラットフォーム",
+      "groupsLabel": "カテゴリ",
+      "sinceLabel": "変更時期",
+      "sinceAny": "すべて",
+      "since30": "過去30日",
+      "since90": "過去3か月",
+      "since180": "過去6か月",
+      "proOnly": "Pro機能のみ",
+      "showUnreleased": "開発済みだが未リリースの機能も表示",
+      "all": "すべて",
+      "reset": "リセット",
+      "noResults": "条件に一致する機能はありません。",
+      "noResultsHint": "検索語を短くするか、フィルターをリセットしてください。",
+      "legendShipped": "利用可能",
+      "legendPartial": "一部利用可能",
+      "legendMerged": "未リリース",
+      "legendNa": "このプラットフォームでは非対応",
+      "notYet": "未対応",
+      "featureColumn": "機能",
+      "mergedNote": "「未対応」の行は開発済みですが、そのプラットフォームの公開バージョンには含まれていません。",
+      "coverage": "2026年5月以降のネイティブアプリを対象としています。それ以前の Flutter 版は含みません。",
+      "sinceTooltip": "以降",
+      "builtTooltip": "開発",
+      "groups": {
+        "reading": "読書",
+        "libraries": "ライブラリとサーバー",
+        "streaming": "自分のマシンからのストリーミング",
+        "input": "入力とプラットフォーム"
+      },
+      "cellNotes": {
+        "lanOnlyTvos": "ローカル Wi-Fi のみ。tvOS では Tailscale の安定性が不足",
+        "noICloudRoute": "ローカル Wi-Fi と手動 Tailscale に対応。iCloud 経路は Apple 製品のみ",
+        "lanOnly": "ローカル Wi-Fi のみ",
+        "tailscaleServe": "Tailscale Serve とサブネットアクセス"
+      },
+      "features": {
+        "live-translation": {
+          "label": "マンガのライブ翻訳",
+          "note": "端末内 PP-OCRv5、吹き出しに組み直し"
+        },
+        "translate-export-cbz": {
+          "label": "翻訳して CBZ に書き出し",
+          "note": "アーカイブ全体の翻訳版を保存"
+        },
+        "page-curl": {
+          "label": "ページめくりアニメーション",
+          "note": "マンガ・PDF・テキストを、タップまたはスワイプで"
+        },
+        "dual-page-spreads": {
+          "label": "見開き表示",
+          "note": "タブレット横向きで、本を開いたように"
+        },
+        "vertical-japanese": {
+          "label": "縦書き日本語・縦書き EPUB",
+          "note": "縦書き（tategaki）を正しく表示"
+        },
+        "epub-comic": {
+          "label": "EPUB コミック対応",
+          "note": "画像スパインおよび固定レイアウトの EPUB"
+        },
+        "find-in-book": {
+          "label": "本文内検索"
+        },
+        "reading-direction": {
+          "label": "読み方向の切り替え",
+          "note": "ページ・スライダー・操作を反転。メタデータから自動設定"
+        },
+        "continuous-page-turn": {
+          "label": "連続モードとページ送りの刷新",
+          "note": "画面単位のスクロール。ページ送りが思った位置に着地"
+        },
+        "komga-kavita-native": {
+          "label": "Komga・Kavita ネイティブ API",
+          "note": "シリーズ詳細、タグ、バッジ、サーバー側の並べ替えと検索"
+        },
+        "opds": {
+          "label": "OPDS 1.x と OPDS-PSE ストリーミング",
+          "note": "マンガを 1 ページずつ取得。OPDS 2.0 は非対応。"
+        },
+        "kavita-sync": {
+          "label": "Kavita の位置とブックマーク同期"
+        },
+        "folder-as-library": {
+          "label": "フォルダをライブラリとして閲覧",
+          "note": "Kavita 風のシリーズ詳細、巻・章タブ"
+        },
+        "managed-downloads": {
+          "label": "ダウンロード管理と進捗同期",
+          "note": "ダウンロードキャッシュの管理付き"
+        },
+        "host-incremental-stream": {
+          "label": "ホスト側：逐次ストリームを配信",
+          "note": "ベクター PDF ページ、EPUB コミックページ、遅延読み込みのリフロー EPUB"
+        },
+        "client-reads-host": {
+          "label": "クライアント側：ホストから読む",
+          "note": "証明書ピン留め HTTPS 上の Bonjour 検出"
+        },
+        "connection-routes": {
+          "label": "接続経路",
+          "note": "iCloud + Tailscale・ローカル Wi-Fi・手動 Tailscale"
+        },
+        "controller": {
+          "label": "ゲームコントローラーとキー割り当て"
+        },
+        "keyboard-shortcuts": {
+          "label": "リーダーのキーボードショートカット"
+        },
+        "look-to-scroll": {
+          "label": "視線でスクロール",
+          "note": "視線で画面端をスクロール"
+        },
+        "localisation": {
+          "label": "12言語対応"
+        },
+        "text-to-speech": {
+          "label": "読み上げ機能",
+          "note": "文単位のハイライト、ロック画面操作、スリープタイマー"
+        },
+        "ocr-text-extraction": {
+          "label": "OCR によるテキスト抽出",
+          "note": "スキャン画像から選択可能なテキストを抽出"
+        },
+        "reading-progress-restore": {
+          "label": "前回の続きから再開",
+          "note": "ページ送りと連続の両方で、アーカイブ・PDF・テキストに対応"
+        },
+        "export-tools": {
+          "label": "一括書き出しと結合",
+          "note": "アーカイブを CBZ・EPUB に結合または変換"
+        },
+        "bulk-metadata-editing": {
+          "label": "評価とタグの一括編集",
+          "note": "複数選択して、メタデータをまとめて編集"
+        },
+        "remote-annotations": {
+          "label": "ストリーミング中の本を編集・保存",
+          "note": "ホスト上でタグと評価を変更、またはローカルに保存"
+        },
+        "home-screen-widget": {
+          "label": "ホーム画面ウィジェット",
+          "note": "読んでいた本にすぐ戻れる"
+        },
+        "app-lock": {
+          "label": "アプリロック",
+          "note": "ライブラリを PIN で保護"
+        },
+        "spatial-library": {
+          "label": "空間ライブラリ",
+          "note": "部屋の中に配置された本棚を眺める"
+        }
+      }
+    }
 }

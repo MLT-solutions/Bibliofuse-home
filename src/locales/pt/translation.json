@@ -1987,5 +1987,169 @@
         "qrCredit": "Código QR powered by qrcode-generator"
       }
     }
-  }
+  },
+    "featureMatrix": {
+    "sinceVersion": "desde {{version}} · {{date}}",
+    "sinceDate": "desde {{date}}",
+    "builtDate": "desenvolvido em {{date}}",
+    "countAll": "{{n}} recursos",
+    "countFiltered": "{{n}} de {{total}} recursos",
+      "eyebrow": "Matriz de recursos",
+      "title": "O que funciona onde",
+      "subtitle": "Todos os recursos do BiblioFuse, em cada plataforma, com a versão em que chegaram. Pesquise ou filtre para achar o que importa.",
+      "searchLabel": "Pesquisar recursos",
+      "searchPlaceholder": "Tente \"tradução de mangá\", \"tategaki\", \"RTL\", \"Komga\"…",
+      "platformsLabel": "Plataformas",
+      "groupsLabel": "Categoria",
+      "sinceLabel": "Alterado desde",
+      "sinceAny": "Qualquer data",
+      "since30": "Últimos 30 dias",
+      "since90": "Últimos 3 meses",
+      "since180": "Últimos 6 meses",
+      "proOnly": "Somente recursos Pro",
+      "showUnreleased": "Incluir recursos prontos mas ainda não lançados",
+      "all": "Todos",
+      "reset": "Redefinir",
+      "noResults": "Nenhum recurso corresponde a esses filtros.",
+      "noResultsHint": "Tente uma busca mais curta ou redefina os filtros.",
+      "legendShipped": "Disponível",
+      "legendPartial": "Parcialmente disponível",
+      "legendMerged": "Ainda não lançado",
+      "legendNa": "Não está nesta plataforma",
+      "notYet": "ainda não",
+      "featureColumn": "Recurso",
+      "mergedNote": "As linhas marcadas “ainda não” estão prontas, mas não fazem parte de uma versão pública nessa plataforma.",
+      "coverage": "Cobre os apps nativos a partir de maio de 2026. Versões anteriores em Flutter não estão listadas.",
+      "sinceTooltip": "desde",
+      "builtTooltip": "desenvolvido",
+      "groups": {
+        "reading": "Leitura",
+        "libraries": "Bibliotecas e servidores",
+        "streaming": "Streaming do seu próprio computador",
+        "input": "Entrada e plataforma"
+      },
+      "cellNotes": {
+        "lanOnlyTvos": "Somente Wi-Fi local; o Tailscale não é confiável o bastante no tvOS",
+        "noICloudRoute": "Wi-Fi local e Tailscale manual; a rota iCloud é só para Apple",
+        "lanOnly": "Somente Wi-Fi local",
+        "tailscaleServe": "Tailscale Serve e acesso por sub-rede"
+      },
+      "features": {
+        "live-translation": {
+          "label": "Tradução ao vivo de quadrinhos e mangá",
+          "note": "PP-OCRv5 no dispositivo, composto no balão"
+        },
+        "translate-export-cbz": {
+          "label": "Traduzir e exportar CBZ",
+          "note": "Salva uma cópia totalmente traduzida do arquivo"
+        },
+        "page-curl": {
+          "label": "Virada de página com efeito curvado",
+          "note": "Quadrinhos, PDF e texto, ao toque ou deslize"
+        },
+        "dual-page-spreads": {
+          "label": "Página dupla",
+          "note": "Tablet na horizontal, como um livro aberto"
+        },
+        "vertical-japanese": {
+          "label": "Japonês vertical / EPUB vertical",
+          "note": "Renderização tategaki correta"
+        },
+        "epub-comic": {
+          "label": "Suporte a quadrinhos em EPUB",
+          "note": "EPUBs de lombada de imagens e layout fixo"
+        },
+        "find-in-book": {
+          "label": "Buscar no livro"
+        },
+        "reading-direction": {
+          "label": "Alternar direção de leitura",
+          "note": "Espelha página, controle e botões; definido pelos metadados"
+        },
+        "continuous-page-turn": {
+          "label": "Modo contínuo e virada de página refeitos",
+          "note": "Rolagem por seções; a virada para onde você espera"
+        },
+        "komga-kavita-native": {
+          "label": "API nativa do Komga e Kavita",
+          "note": "Detalhe da série, etiquetas, selos, ordenação e busca no servidor"
+        },
+        "opds": {
+          "label": "OPDS 1.x e streaming OPDS-PSE",
+          "note": "Quadrinhos página a página. OPDS 2.0 não é suportado."
+        },
+        "kavita-sync": {
+          "label": "Sincronização de posição e marcadores do Kavita"
+        },
+        "folder-as-library": {
+          "label": "Navegar pastas como biblioteca",
+          "note": "Detalhe de série no estilo Kavita, abas de volume e capítulo"
+        },
+        "managed-downloads": {
+          "label": "Downloads gerenciados e sincronização de progresso",
+          "note": "Com gerenciador de cache de downloads"
+        },
+        "host-incremental-stream": {
+          "label": "Como host: serve um fluxo incremental",
+          "note": "Páginas PDF vetoriais, páginas de quadrinhos EPUB, EPUB reflowable sob demanda"
+        },
+        "client-reads-host": {
+          "label": "Como cliente: lê de um host",
+          "note": "Descoberta Bonjour sobre HTTPS com certificado fixado"
+        },
+        "connection-routes": {
+          "label": "Rotas de conexão",
+          "note": "iCloud + Tailscale · Wi-Fi local · Tailscale manual"
+        },
+        "controller": {
+          "label": "Controle de videogame e botões personalizáveis"
+        },
+        "keyboard-shortcuts": {
+          "label": "Atalhos de teclado do leitor"
+        },
+        "look-to-scroll": {
+          "label": "Rolar com o olhar",
+          "note": "Rolagem pelas bordas com o olhar"
+        },
+        "localisation": {
+          "label": "Localização em 12 idiomas"
+        },
+        "text-to-speech": {
+          "label": "Leitura em voz alta",
+          "note": "Destaque de frases, controles na tela de bloqueio, timer"
+        },
+        "ocr-text-extraction": {
+          "label": "Extração de texto com OCR",
+          "note": "Extrai texto selecionável de uma página digitalizada"
+        },
+        "reading-progress-restore": {
+          "label": "Retome de onde parou",
+          "note": "Paginado e contínuo, em arquivos, PDF e texto"
+        },
+        "export-tools": {
+          "label": "Exportação em lote e mesclagem",
+          "note": "Combine ou converta arquivos para CBZ e EPUB"
+        },
+        "bulk-metadata-editing": {
+          "label": "Avaliações e etiquetas em lote",
+          "note": "Selecione vários e edite os metadados de uma vez"
+        },
+        "remote-annotations": {
+          "label": "Editar e salvar livros em streaming",
+          "note": "Altere etiquetas e avaliação no host, ou salve uma cópia local"
+        },
+        "home-screen-widget": {
+          "label": "Widget na tela inicial",
+          "note": "Volte direto para o que você estava lendo"
+        },
+        "app-lock": {
+          "label": "Bloqueio do app",
+          "note": "Acesso à biblioteca com PIN"
+        },
+        "spatial-library": {
+          "label": "Biblioteca espacial",
+          "note": "Navegue por estantes dispostas no ambiente"
+        }
+      }
+    }
 }

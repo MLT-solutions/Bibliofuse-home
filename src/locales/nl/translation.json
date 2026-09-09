@@ -1987,5 +1987,169 @@
         "qrCredit": "QR-code mogelijk gemaakt door qrcode-generator"
       }
     }
-  }
+  },
+    "featureMatrix": {
+    "sinceVersion": "sinds {{version}} · {{date}}",
+    "sinceDate": "sinds {{date}}",
+    "builtDate": "gebouwd op {{date}}",
+    "countAll": "{{n}} functies",
+    "countFiltered": "{{n}} van {{total}} functies",
+      "eyebrow": "Functiematrix",
+      "title": "Wat werkt waar",
+      "subtitle": "Elke BiblioFuse-functie, op elk platform, met de versie waarin die kwam. Zoek of filter om te vinden wat je nodig hebt.",
+      "searchLabel": "Functies zoeken",
+      "searchPlaceholder": "Probeer \"mangavertaling\", \"tategaki\", \"RTL\", \"Komga\"…",
+      "platformsLabel": "Platforms",
+      "groupsLabel": "Categorie",
+      "sinceLabel": "Gewijzigd sinds",
+      "sinceAny": "Alle tijden",
+      "since30": "Laatste 30 dagen",
+      "since90": "Laatste 3 maanden",
+      "since180": "Laatste 6 maanden",
+      "proOnly": "Alleen Pro-functies",
+      "showUnreleased": "Inclusief functies die klaar zijn maar nog niet uitgebracht",
+      "all": "Alle",
+      "reset": "Wissen",
+      "noResults": "Geen functies passen bij deze filters.",
+      "noResultsHint": "Probeer een kortere zoekterm of wis de filters.",
+      "legendShipped": "Beschikbaar",
+      "legendPartial": "Deels beschikbaar",
+      "legendMerged": "Nog niet uitgebracht",
+      "legendNa": "Niet op dit platform",
+      "notYet": "nog niet",
+      "featureColumn": "Functie",
+      "mergedNote": "Rijen met “nog niet” zijn klaar, maar zitten nog niet in een publieke versie voor dat platform.",
+      "coverage": "Behandelt de native apps vanaf mei 2026. Eerdere Flutter-versies staan er niet in.",
+      "sinceTooltip": "sinds",
+      "builtTooltip": "gebouwd",
+      "groups": {
+        "reading": "Lezen",
+        "libraries": "Bibliotheken en servers",
+        "streaming": "Streamen vanaf je eigen computer",
+        "input": "Invoer en platform"
+      },
+      "cellNotes": {
+        "lanOnlyTvos": "Alleen lokale wifi; Tailscale is op tvOS niet betrouwbaar genoeg",
+        "noICloudRoute": "Lokale wifi en handmatige Tailscale; de iCloud-route is alleen voor Apple",
+        "lanOnly": "Alleen lokale wifi",
+        "tailscaleServe": "Tailscale Serve en subnet-toegang"
+      },
+      "features": {
+        "live-translation": {
+          "label": "Live strip- en mangavertaling",
+          "note": "PP-OCRv5 op het toestel, gezet in de tekstballon"
+        },
+        "translate-export-cbz": {
+          "label": "Vertalen en exporteren als CBZ",
+          "note": "Bewaart een volledig vertaalde kopie van het archief"
+        },
+        "page-curl": {
+          "label": "Bladeren met omslaand hoekje",
+          "note": "Strips, pdf en tekst, met tik of veeg"
+        },
+        "dual-page-spreads": {
+          "label": "Dubbele pagina’s",
+          "note": "Tablet in liggende stand, als een open boek"
+        },
+        "vertical-japanese": {
+          "label": "Verticaal Japans / verticale EPUB",
+          "note": "Correcte tategaki-weergave"
+        },
+        "epub-comic": {
+          "label": "Ondersteuning voor EPUB-strips",
+          "note": "EPUB’s met afbeeldingsrug en vaste opmaak"
+        },
+        "find-in-book": {
+          "label": "Zoeken in boek"
+        },
+        "reading-direction": {
+          "label": "Leesrichting omschakelen",
+          "note": "Spiegelt pagina, schuifregelaar en knoppen; automatisch uit metadata"
+        },
+        "continuous-page-turn": {
+          "label": "Doorlopende modus en bladeren herzien",
+          "note": "Scrollen per sectie; bladeren eindigt waar je het verwacht"
+        },
+        "komga-kavita-native": {
+          "label": "Native Komga- en Kavita-API",
+          "note": "Seriedetails, tags, badges, sorteren en zoeken op de server"
+        },
+        "opds": {
+          "label": "OPDS 1.x en OPDS-PSE-streaming",
+          "note": "Strips pagina voor pagina. OPDS 2.0 wordt niet ondersteund."
+        },
+        "kavita-sync": {
+          "label": "Kavita-positie en bladwijzers synchroniseren"
+        },
+        "folder-as-library": {
+          "label": "Map als bibliotheek doorzoeken",
+          "note": "Seriedetails in Kavita-stijl, tabs voor deel en hoofdstuk"
+        },
+        "managed-downloads": {
+          "label": "Beheerde downloads en voortgang synchroniseren",
+          "note": "Met beheer van de downloadcache"
+        },
+        "host-incremental-stream": {
+          "label": "Hostrol: levert een incrementele stream",
+          "note": "Vector-pdf-pagina’s, EPUB-strippagina’s, EPUB met vloeiende tekst op aanvraag"
+        },
+        "client-reads-host": {
+          "label": "Clientrol: leest van een host",
+          "note": "Bonjour-detectie via HTTPS met vastgezet certificaat"
+        },
+        "connection-routes": {
+          "label": "Verbindingsroutes",
+          "note": "iCloud + Tailscale · lokale wifi · handmatige Tailscale"
+        },
+        "controller": {
+          "label": "Gamecontroller met eigen toetsindeling"
+        },
+        "keyboard-shortcuts": {
+          "label": "Sneltoetsen in de lezer"
+        },
+        "look-to-scroll": {
+          "label": "Scrollen met je blik",
+          "note": "Scrollen aan de rand met je blik"
+        },
+        "localisation": {
+          "label": "Vertaald in 12 talen"
+        },
+        "text-to-speech": {
+          "label": "Voorlezen",
+          "note": "Zinnen markeren, bediening op vergrendelscherm, slaaptimer"
+        },
+        "ocr-text-extraction": {
+          "label": "Tekstextractie met OCR",
+          "note": "Haalt selecteerbare tekst uit een gescande pagina"
+        },
+        "reading-progress-restore": {
+          "label": "Verder waar je gebleven was",
+          "note": "Per pagina en doorlopend, voor archieven, pdf en tekst"
+        },
+        "export-tools": {
+          "label": "Batch- en samenvoegexport",
+          "note": "Archieven samenvoegen of omzetten naar CBZ en EPUB"
+        },
+        "bulk-metadata-editing": {
+          "label": "Beoordelingen en tags in bulk",
+          "note": "Meerdere selecteren en metadata in één keer aanpassen"
+        },
+        "remote-annotations": {
+          "label": "Gestreamde boeken bewerken en opslaan",
+          "note": "Tags en beoordeling op de host wijzigen, of lokaal een kopie bewaren"
+        },
+        "home-screen-widget": {
+          "label": "Widget op het beginscherm",
+          "note": "Ga direct terug naar wat je aan het lezen was"
+        },
+        "app-lock": {
+          "label": "App-vergrendeling",
+          "note": "Bibliotheek achter een pincode"
+        },
+        "spatial-library": {
+          "label": "Ruimtelijke bibliotheek",
+          "note": "Doorzoek boekenkasten in de ruimte om je heen"
+        }
+      }
+    }
 }

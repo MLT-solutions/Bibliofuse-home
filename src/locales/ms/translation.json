@@ -1987,5 +1987,169 @@
         "qrCredit": "Kod QR dikuasakan oleh qrcode-generator"
       }
     }
-  }
+  },
+    "featureMatrix": {
+    "sinceVersion": "sejak {{version}} · {{date}}",
+    "sinceDate": "sejak {{date}}",
+    "builtDate": "dibina {{date}}",
+    "countAll": "{{n}} ciri",
+    "countFiltered": "{{n}} daripada {{total}} ciri",
+      "eyebrow": "Matriks ciri",
+      "title": "Apa berfungsi di mana",
+      "subtitle": "Setiap ciri BiblioFuse, pada setiap platform, dengan versi ketika ia hadir. Cari atau tapis untuk mencari yang anda perlukan.",
+      "searchLabel": "Cari ciri",
+      "searchPlaceholder": "Cuba \"terjemahan manga\", \"tategaki\", \"RTL\", \"Komga\"…",
+      "platformsLabel": "Platform",
+      "groupsLabel": "Kategori",
+      "sinceLabel": "Berubah sejak",
+      "sinceAny": "Bila-bila masa",
+      "since30": "30 hari lalu",
+      "since90": "3 bulan lalu",
+      "since180": "6 bulan lalu",
+      "proOnly": "Ciri Pro sahaja",
+      "showUnreleased": "Sertakan ciri yang sudah dibina tetapi belum dikeluarkan",
+      "all": "Semua",
+      "reset": "Set semula",
+      "noResults": "Tiada ciri yang sepadan dengan penapis itu.",
+      "noResultsHint": "Cuba carian lebih pendek, atau set semula penapis.",
+      "legendShipped": "Tersedia",
+      "legendPartial": "Tersedia sebahagian",
+      "legendMerged": "Belum dikeluarkan",
+      "legendNa": "Tiada pada platform ini",
+      "notYet": "belum",
+      "featureColumn": "Ciri",
+      "mergedNote": "Baris bertanda “belum” sudah dibina, tetapi belum masuk ke keluaran awam platform itu.",
+      "coverage": "Merangkumi apl natif dari Mei 2026. Keluaran era Flutter sebelum itu tidak disenaraikan.",
+      "sinceTooltip": "sejak",
+      "builtTooltip": "dibina",
+      "groups": {
+        "reading": "Membaca",
+        "libraries": "Perpustakaan & pelayan",
+        "streaming": "Penstriman dari komputer sendiri",
+        "input": "Input & platform"
+      },
+      "cellNotes": {
+        "lanOnlyTvos": "Hanya Wi-Fi tempatan; Tailscale tidak cukup stabil pada tvOS",
+        "noICloudRoute": "Wi-Fi tempatan dan Tailscale manual; laluan iCloud untuk Apple sahaja",
+        "lanOnly": "Hanya Wi-Fi tempatan",
+        "tailscaleServe": "Tailscale Serve dan akses subnet"
+      },
+      "features": {
+        "live-translation": {
+          "label": "Terjemahan komik & manga langsung",
+          "note": "PP-OCRv5 pada peranti, disusun semula dalam belon"
+        },
+        "translate-export-cbz": {
+          "label": "Terjemah & eksport CBZ",
+          "note": "Simpan salinan arkib yang diterjemah sepenuhnya"
+        },
+        "page-curl": {
+          "label": "Selak halaman dengan kesan lengkung",
+          "note": "Komik, PDF dan teks, dengan sentuh atau leret"
+        },
+        "dual-page-spreads": {
+          "label": "Paparan dua halaman",
+          "note": "Tablet mod lanskap, seperti buku terbuka"
+        },
+        "vertical-japanese": {
+          "label": "Jepun menegak / EPUB menegak",
+          "note": "Pemaparan tategaki yang betul"
+        },
+        "epub-comic": {
+          "label": "Sokongan komik EPUB",
+          "note": "EPUB image-spine dan reka letak tetap"
+        },
+        "find-in-book": {
+          "label": "Cari dalam buku"
+        },
+        "reading-direction": {
+          "label": "Tukar arah bacaan",
+          "note": "Membalik halaman, slaid dan kawalan; ditetapkan automatik dari metadata"
+        },
+        "continuous-page-turn": {
+          "label": "Mod berterusan & selak halaman baharu",
+          "note": "Tatal per bahagian; selak halaman berhenti di tempat dijangka"
+        },
+        "komga-kavita-native": {
+          "label": "API asli Komga & Kavita",
+          "note": "Butiran siri, tag, lencana, susun & cari di sisi pelayan"
+        },
+        "opds": {
+          "label": "OPDS 1.x + penstriman OPDS-PSE",
+          "note": "Komik satu halaman pada satu masa. OPDS 2.0 tidak disokong."
+        },
+        "kavita-sync": {
+          "label": "Penyegerakan posisi & penanda Kavita"
+        },
+        "folder-as-library": {
+          "label": "Layari folder sebagai perpustakaan",
+          "note": "Butiran siri gaya Kavita, tab Jilid/Bab"
+        },
+        "managed-downloads": {
+          "label": "Muat turun terurus & penyegerakan kemajuan",
+          "note": "Serta pengurus cache muat turun"
+        },
+        "host-incremental-stream": {
+          "label": "Peranan hos: menyajikan strim berperingkat",
+          "note": "Halaman PDF vektor, halaman komik EPUB, EPUB reflowable beransur"
+        },
+        "client-reads-host": {
+          "label": "Peranan klien: membaca dari hos",
+          "note": "Penemuan Bonjour melalui HTTPS dengan sertifikat disemat"
+        },
+        "connection-routes": {
+          "label": "Laluan sambungan",
+          "note": "iCloud + Tailscale · Wi-Fi tempatan · Tailscale manual"
+        },
+        "controller": {
+          "label": "Pengawal permainan & pemetaan tersuai"
+        },
+        "keyboard-shortcuts": {
+          "label": "Pintasan papan kekunci pembaca"
+        },
+        "look-to-scroll": {
+          "label": "Tatal dengan pandangan",
+          "note": "Tatal di tepi skrin dengan pandangan"
+        },
+        "localisation": {
+          "label": "Penyetempatan 12 bahasa"
+        },
+        "text-to-speech": {
+          "label": "Pembacaan suara",
+          "note": "Sorot ayat, kawalan skrin kunci, pemasa tidur"
+        },
+        "ocr-text-extraction": {
+          "label": "Pengekstrakan teks OCR",
+          "note": "Ambil teks boleh pilih daripada halaman imbasan"
+        },
+        "reading-progress-restore": {
+          "label": "Sambung dari tempat terakhir",
+          "note": "Mod halaman dan berterusan, untuk arkib, PDF dan teks"
+        },
+        "export-tools": {
+          "label": "Eksport kelompok & gabung",
+          "note": "Gabungkan atau tukar arkib ke CBZ dan EPUB"
+        },
+        "bulk-metadata-editing": {
+          "label": "Penilaian & tag secara pukal",
+          "note": "Pilih beberapa, kemudian edit metadata serentak"
+        },
+        "remote-annotations": {
+          "label": "Edit dan simpan buku strim",
+          "note": "Ubah tag dan penilaian pada hos, atau simpan salinan setempat"
+        },
+        "home-screen-widget": {
+          "label": "Widget skrin utama",
+          "note": "Terus kembali ke bacaan terakhir"
+        },
+        "app-lock": {
+          "label": "Kunci apl",
+          "note": "Perpustakaan dilindungi PIN"
+        },
+        "spatial-library": {
+          "label": "Perpustakaan spatial",
+          "note": "Layari rak yang diletakkan di ruang sekeliling"
+        }
+      }
+    }
 }

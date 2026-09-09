@@ -1987,5 +1987,169 @@
         "qrCredit": "二维码由 qrcode-generator 驱动"
       }
     }
-  }
+  },
+    "featureMatrix": {
+    "sinceVersion": "自 {{version}} · {{date}}",
+    "sinceDate": "自 {{date}}",
+    "builtDate": "完成于 {{date}}",
+    "countAll": "{{n}} 项功能",
+    "countFiltered": "{{total}} 项中的 {{n}} 项",
+      "eyebrow": "功能对照表",
+      "title": "各平台功能一览",
+      "subtitle": "BiblioFuse 的每项功能、每个平台，以及它们出现的版本。搜索或筛选即可找到你关心的功能。",
+      "searchLabel": "搜索功能",
+      "searchPlaceholder": "试试「漫画翻译」「tategaki」「RTL」「Komga」…",
+      "platformsLabel": "平台",
+      "groupsLabel": "分类",
+      "sinceLabel": "变更时间",
+      "sinceAny": "全部",
+      "since30": "近 30 天",
+      "since90": "近 3 个月",
+      "since180": "近 6 个月",
+      "proOnly": "仅显示 Pro 功能",
+      "showUnreleased": "包含已开发但尚未发布的功能",
+      "all": "全部",
+      "reset": "重置",
+      "noResults": "没有功能符合当前筛选条件。",
+      "noResultsHint": "试试更短的关键词，或重置筛选条件。",
+      "legendShipped": "已支持",
+      "legendPartial": "部分支持",
+      "legendMerged": "尚未发布",
+      "legendNa": "此平台不支持",
+      "notYet": "尚未",
+      "featureColumn": "功能",
+      "mergedNote": "标记为「尚未」的功能已开发完成，但还未包含在该平台的公开版本中。",
+      "coverage": "涵盖 2026 年 5 月起的原生应用，不含此前的 Flutter 版本。",
+      "sinceTooltip": "自",
+      "builtTooltip": "完成于",
+      "groups": {
+        "reading": "阅读",
+        "libraries": "图书馆与服务器",
+        "streaming": "从自己的电脑串流",
+        "input": "输入与平台"
+      },
+      "cellNotes": {
+        "lanOnlyTvos": "仅支持本地 Wi-Fi；Tailscale 在 tvOS 上不够稳定",
+        "noICloudRoute": "支持本地 Wi-Fi 与手动 Tailscale；iCloud 方式仅限 Apple 设备",
+        "lanOnly": "仅支持本地 Wi-Fi",
+        "tailscaleServe": "Tailscale Serve 与子网访问"
+      },
+      "features": {
+        "live-translation": {
+          "label": "漫画实时翻译",
+          "note": "设备端 PP-OCRv5，排版回对话气泡"
+        },
+        "translate-export-cbz": {
+          "label": "翻译并导出 CBZ",
+          "note": "保存整个压缩包的完整译本"
+        },
+        "page-curl": {
+          "label": "翻页卷角动画",
+          "note": "漫画、PDF 与文本，轻触或滑动即可"
+        },
+        "dual-page-spreads": {
+          "label": "双页对开显示",
+          "note": "平板横屏，如翻开的书"
+        },
+        "vertical-japanese": {
+          "label": "日文竖排 / 竖排 EPUB",
+          "note": "正确的竖排（tategaki）排版"
+        },
+        "epub-comic": {
+          "label": "EPUB 漫画支持",
+          "note": "图像书脊与固定版式 EPUB"
+        },
+        "find-in-book": {
+          "label": "全书搜索"
+        },
+        "reading-direction": {
+          "label": "阅读方向切换",
+          "note": "同步翻转页面、进度条与控件；依据元数据自动设置"
+        },
+        "continuous-page-turn": {
+          "label": "连续模式与翻页重构",
+          "note": "按屏滚动；翻页停在预期位置"
+        },
+        "komga-kavita-native": {
+          "label": "原生 Komga 与 Kavita API",
+          "note": "系列详情、标签、徽标，服务端排序与搜索"
+        },
+        "opds": {
+          "label": "OPDS 1.x 与 OPDS-PSE 串流",
+          "note": "漫画逐页加载。不支持 OPDS 2.0。"
+        },
+        "kavita-sync": {
+          "label": "Kavita 进度与书签同步"
+        },
+        "folder-as-library": {
+          "label": "以文件夹作为图书馆浏览",
+          "note": "Kavita 风格的系列详情，卷/章标签页"
+        },
+        "managed-downloads": {
+          "label": "下载管理与进度同步",
+          "note": "并提供下载缓存管理"
+        },
+        "host-incremental-stream": {
+          "label": "主机端：按需分片串流",
+          "note": "矢量 PDF 页、EPUB 漫画页、按需加载的可重排 EPUB"
+        },
+        "client-reads-host": {
+          "label": "客户端：从主机读取",
+          "note": "通过固定证书 HTTPS 的 Bonjour 发现"
+        },
+        "connection-routes": {
+          "label": "连接方式",
+          "note": "iCloud + Tailscale · 本地 Wi-Fi · 手动 Tailscale"
+        },
+        "controller": {
+          "label": "游戏手柄与自定义按键"
+        },
+        "keyboard-shortcuts": {
+          "label": "阅读器键盘快捷键"
+        },
+        "look-to-scroll": {
+          "label": "视线滚动",
+          "note": "注视屏幕边缘即可滚动"
+        },
+        "localisation": {
+          "label": "12 种语言本地化"
+        },
+        "text-to-speech": {
+          "label": "朗读功能",
+          "note": "句子高亮、锁屏控制、睡眠定时"
+        },
+        "ocr-text-extraction": {
+          "label": "OCR 文字提取",
+          "note": "从扫描页中提取可选中的文字"
+        },
+        "reading-progress-restore": {
+          "label": "从上次位置继续",
+          "note": "分页与连续模式，涵盖压缩包、PDF 与文本"
+        },
+        "export-tools": {
+          "label": "批量导出与合并",
+          "note": "将压缩包合并或转换为 CBZ 与 EPUB"
+        },
+        "bulk-metadata-editing": {
+          "label": "批量评分与标签",
+          "note": "多选后一次性编辑元数据"
+        },
+        "remote-annotations": {
+          "label": "编辑并保存串流书籍",
+          "note": "在主机上修改标签与评分，或保存本地副本"
+        },
+        "home-screen-widget": {
+          "label": "主屏幕小组件",
+          "note": "一键回到正在读的书"
+        },
+        "app-lock": {
+          "label": "应用锁",
+          "note": "图书馆 PIN 码保护"
+        },
+        "spatial-library": {
+          "label": "空间图书馆",
+          "note": "浏览摆放在房间中的书架"
+        }
+      }
+    }
 }

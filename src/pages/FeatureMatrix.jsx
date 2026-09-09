@@ -1,5 +1,6 @@
 import React, { useMemo, useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import {
   FEATURES,
@@ -9,9 +10,10 @@ import {
   releaseFor,
 } from '../data/feature-matrix';
 
-// UI copy lives here rather than inline so it can move into src/locales/*/ in one pass.
-// The feature labels themselves come from the data file and are English-only until it
-// converts to the { en, es, … } shape changelog.js uses.
+// English fallbacks. The live strings come from src/locales/<lang>/translation.json
+// under `featureMatrix`; every read goes through tr() below, which passes the value here
+// as i18next's defaultValue. A missing key therefore degrades to readable English rather
+// than to a raw key like "featureMatrix.searchLabel".
 const COPY = {
   eyebrow: 'Feature matrix',
   title: 'What runs where',
@@ -29,8 +31,8 @@ const COPY = {
   reset: 'Reset',
   noResults: 'No features match those filters.',
   noResultsHint: 'Try a shorter search, or reset the filters.',
-  countAll: (n) => `${n} feature${n === 1 ? '' : 's'}`,
-  countFiltered: (n, total) => `${n} of ${total} features`,
+  countAll: '{{n}} features',
+  countFiltered: '{{n}} of {{total}} features',
   legendShipped: 'Available',
   legendPartial: 'Partly available',
   legendMerged: 'Not yet released',
@@ -44,10 +46,10 @@ const COPY = {
 
 // "Changed since" presets, resolved against today rather than hard-coded dates.
 const SINCE_PRESETS = [
-  { id: '', label: COPY.sinceAny, days: null },
-  { id: '30d', label: 'Last 30 days', days: 30 },
-  { id: '90d', label: 'Last 3 months', days: 90 },
-  { id: '180d', label: 'Last 6 months', days: 180 },
+  { id: '', key: 'sinceAny', days: null },
+  { id: '30d', key: 'since30', days: 30 },
+  { id: '90d', key: 'since90', days: 90 },
+  { id: '180d', key: 'since180', days: 180 },
 ];
 
 function isoDaysAgo(days) {
@@ -57,42 +59,31 @@ function isoDaysAgo(days) {
 }
 
 const CELL = {
-  shipped: {
-    glyph: '●',
-    className: 'text-emerald-500',
-    label: COPY.legendShipped,
-  },
-  partial: {
-    glyph: '◐',
-    className: 'text-amber-500',
-    label: COPY.legendPartial,
-  },
-  merged: {
-    glyph: '·',
-    className: 'text-slate-300',
-    label: COPY.legendMerged,
-  },
-  na: {
-    glyph: '—',
-    className: 'text-slate-200',
-    label: COPY.legendNa,
-  },
+  shipped: { glyph: '●', className: 'text-emerald-500', labelKey: 'legendShipped' },
+  partial: { glyph: '◐', className: 'text-amber-500', labelKey: 'legendPartial' },
+  merged: { glyph: '·', className: 'text-slate-300', labelKey: 'legendMerged' },
+  na: { glyph: '—', className: 'text-slate-200', labelKey: 'legendNa' },
 };
 
 /** One cell. Title carries the version, date and any per-cell caveat. */
-function Cell({ cell, platformId, platformLabel, featureLabel, highlighted }) {
+function Cell({ cell, platformId, platformLabel, featureLabel, highlighted, tr }) {
   const meta = CELL[cell.status] ?? CELL.na;
   const version = releaseFor(platformId, cell.since);
+  const statusLabel = tr(meta.labelKey);
 
   const detail = [];
   if (cell.status === 'shipped' || cell.status === 'partial') {
-    detail.push(version ? `since ${version} · ${cell.since}` : `since ${cell.since}`);
+    detail.push(
+      version
+        ? tr('sinceVersion', null, { version, date: cell.since })
+        : tr('sinceDate', null, { date: cell.since }),
+    );
   } else if (cell.status === 'merged') {
-    detail.push(`built ${cell.since}`);
+    detail.push(tr('builtDate', null, { date: cell.since }));
   }
-  if (cell.note) detail.push(cell.note);
+  if (cell.noteKey) detail.push(tr(`cellNotes.${cell.noteKey}`));
 
-  const tooltip = [`${featureLabel} — ${platformLabel}`, meta.label, ...detail].join('\n');
+  const tooltip = [`${featureLabel} — ${platformLabel}`, statusLabel, ...detail].join('\n');
 
   return (
     <td
@@ -102,11 +93,11 @@ function Cell({ cell, platformId, platformLabel, featureLabel, highlighted }) {
         <span className={`text-lg leading-none ${meta.className}`} aria-hidden="true">
           {meta.glyph}
         </span>
-        <span className="sr-only">{`${meta.label}${detail.length ? `. ${detail.join('. ')}` : ''}`}</span>
+        <span className="sr-only">{`${statusLabel}${detail.length ? `. ${detail.join('. ')}` : ''}`}</span>
       </abbr>
       {cell.status === 'merged' && (
         <span className="mt-0.5 block text-[10px] font-medium uppercase tracking-wide text-slate-400">
-          not yet
+          {tr('notYet')}
         </span>
       )}
       {(cell.status === 'shipped' || cell.status === 'partial') && version && (
@@ -137,7 +128,18 @@ function Chip({ active, children, onClick, title }) {
 }
 
 export default function FeatureMatrix() {
+  const { t } = useTranslation();
   const [params, setParams] = useSearchParams();
+
+  // Every visible string goes through here: locale value first, English COPY as fallback.
+  const tr = useCallback(
+    (key, fallback, values) =>
+      t(`featureMatrix.${key}`, {
+        defaultValue: fallback ?? COPY[key] ?? key,
+        ...values,
+      }),
+    [t],
+  );
 
   // All filter state lives in the query string, so any view is a shareable link.
   const query = params.get('q') ?? '';
@@ -228,8 +230,8 @@ export default function FeatureMatrix() {
   return (
     <div className="min-h-screen bg-[#F6F8FC] px-4 pb-24 pt-28 text-slate-950 sm:px-6 lg:px-8">
       <SEO
-        title={COPY.title}
-        description={COPY.subtitle}
+        title={tr('title')}
+        description={tr('subtitle')}
         canonical="/features"
         schemaType="website"
       />
@@ -238,25 +240,25 @@ export default function FeatureMatrix() {
         {/* Header */}
         <div className="mb-8 text-center">
           <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">
-            {COPY.eyebrow}
+            {tr('eyebrow')}
           </div>
           <h1 className="font-display text-[clamp(2rem,5vw,3.5rem)] font-black leading-tight tracking-tight text-slate-950">
-            {COPY.title}
+            {tr('title')}
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-500">
-            {COPY.subtitle}
+            {tr('subtitle')}
           </p>
         </div>
 
         {/* Controls */}
         <div className="mb-6 rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-100 sm:p-6">
           <label className="block">
-            <span className="sr-only">{COPY.searchLabel}</span>
+            <span className="sr-only">{tr('searchLabel')}</span>
             <input
               type="search"
               value={query}
               onChange={(e) => setParam('q', e.target.value)}
-              placeholder={COPY.searchPlaceholder}
+              placeholder={tr('searchPlaceholder')}
               className="w-full rounded-2xl border-0 bg-slate-50 px-4 py-3 text-base text-slate-900 ring-1 ring-slate-200 placeholder:text-slate-400 focus:bg-white focus:ring-2 focus:ring-blue-500"
             />
           </label>
@@ -264,10 +266,10 @@ export default function FeatureMatrix() {
           <div className="mt-4 space-y-3">
             <div className="flex flex-wrap items-center gap-2">
               <span className="mr-1 text-xs font-bold uppercase tracking-wider text-slate-400">
-                {COPY.platformsLabel}
+                {tr('platformsLabel')}
               </span>
               <Chip active={!activePlatforms.length} onClick={() => setParam('platforms', '')}>
-                {COPY.all}
+                {tr('all')}
               </Chip>
               {PLATFORMS.map((p) => (
                 <Chip
@@ -283,10 +285,10 @@ export default function FeatureMatrix() {
 
             <div className="flex flex-wrap items-center gap-2">
               <span className="mr-1 text-xs font-bold uppercase tracking-wider text-slate-400">
-                {COPY.groupsLabel}
+                {tr('groupsLabel')}
               </span>
               <Chip active={!activeGroups.length} onClick={() => setParam('groups', '')}>
-                {COPY.all}
+                {tr('all')}
               </Chip>
               {GROUPS.map((g) => (
                 <Chip
@@ -294,18 +296,18 @@ export default function FeatureMatrix() {
                   active={activeGroups.includes(g.id)}
                   onClick={() => toggleInList('groups', g.id)}
                 >
-                  {g.label}
+                  {tr(`groups.${g.id}`, g.label)}
                 </Chip>
               ))}
             </div>
 
             <div className="flex flex-wrap items-center gap-2">
               <span className="mr-1 text-xs font-bold uppercase tracking-wider text-slate-400">
-                {COPY.sinceLabel}
+                {tr('sinceLabel')}
               </span>
               {SINCE_PRESETS.map((p) => (
                 <Chip key={p.id} active={since === p.id} onClick={() => setParam('since', p.id)}>
-                  {p.label}
+                  {tr(p.key)}
                 </Chip>
               ))}
             </div>
@@ -319,7 +321,7 @@ export default function FeatureMatrix() {
                 onChange={(e) => setParam('pro', e.target.checked ? '1' : '')}
                 className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
               />
-              {COPY.proOnly}
+              {tr('proOnly')}
             </label>
             <label className="flex cursor-pointer items-center gap-2 text-sm text-slate-600">
               <input
@@ -328,14 +330,21 @@ export default function FeatureMatrix() {
                 onChange={(e) => setParam('unreleased', e.target.checked ? '1' : '')}
                 className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
               />
-              {COPY.showUnreleased}
+              {tr('showUnreleased')}
             </label>
 
             <span className="ml-auto flex items-center gap-3 text-sm text-slate-400">
               <span className="tabular-nums">
                 {isFiltered
-                  ? COPY.countFiltered(rows.length, FEATURES.length)
-                  : COPY.countAll(FEATURES.length)}
+                  ? t('featureMatrix.countFiltered', {
+                      defaultValue: COPY.countFiltered,
+                      n: rows.length,
+                      total: FEATURES.length,
+                    })
+                  : t('featureMatrix.countAll', {
+                      defaultValue: COPY.countAll,
+                      n: FEATURES.length,
+                    })}
               </span>
               {isFiltered && (
                 <button
@@ -343,7 +352,7 @@ export default function FeatureMatrix() {
                   onClick={() => setParams(new URLSearchParams(), { replace: true })}
                   className="font-semibold text-blue-600 hover:text-blue-700"
                 >
-                  {COPY.reset}
+                  {tr('reset')}
                 </button>
               )}
             </span>
@@ -353,8 +362,8 @@ export default function FeatureMatrix() {
         {/* Table */}
         {grouped.length === 0 ? (
           <div className="rounded-3xl bg-white p-12 text-center shadow-sm ring-1 ring-slate-100">
-            <p className="text-base font-semibold text-slate-900">{COPY.noResults}</p>
-            <p className="mt-1 text-sm text-slate-500">{COPY.noResultsHint}</p>
+            <p className="text-base font-semibold text-slate-900">{tr('noResults')}</p>
+            <p className="mt-1 text-sm text-slate-500">{tr('noResultsHint')}</p>
           </div>
         ) : (
           <div className="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-slate-100">
@@ -366,7 +375,7 @@ export default function FeatureMatrix() {
                       scope="col"
                       className="sticky left-0 z-10 bg-white px-5 py-4 text-xs font-bold uppercase tracking-wider text-slate-400"
                     >
-                      Feature
+                      {tr('featureColumn')}
                     </th>
                     {columns.map((p) => (
                       <th
@@ -391,7 +400,7 @@ export default function FeatureMatrix() {
                         colSpan={columns.length + 1}
                         className="bg-slate-50/80 px-5 py-2 text-left text-[11px] font-bold uppercase tracking-[0.12em] text-slate-400"
                       >
-                        {group.label}
+                        {tr(`groups.${group.id}`, group.label)}
                       </th>
                     </tr>
                     {group.features.map((f) => (
@@ -401,16 +410,18 @@ export default function FeatureMatrix() {
                           className="sticky left-0 z-10 max-w-xs bg-white px-5 py-3 text-left font-normal hover:bg-slate-50/50"
                         >
                           <span className="flex flex-wrap items-center gap-1.5">
-                            <span className="text-sm font-semibold text-slate-900">{f.label}</span>
+                            <span className="text-sm font-semibold text-slate-900">
+                              {tr(`features.${f.id}.label`, f.label)}
+                            </span>
                             {f.pro && (
                               <span className="rounded bg-blue-50 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-blue-700 ring-1 ring-blue-100">
-                                {COPY.proBadge}
+                                {tr('proBadge')}
                               </span>
                             )}
                           </span>
                           {f.note && (
                             <span className="mt-0.5 block text-xs leading-snug text-slate-400">
-                              {f.note}
+                              {tr(`features.${f.id}.note`, f.note)}
                             </span>
                           )}
                         </th>
@@ -420,8 +431,9 @@ export default function FeatureMatrix() {
                             cell={f.platforms[p.id]}
                             platformId={p.id}
                             platformLabel={p.label}
-                            featureLabel={f.label}
+                            featureLabel={tr(`features.${f.id}.label`, f.label)}
                             highlighted={highlight(f.platforms[p.id])}
+                            tr={tr}
                           />
                         ))}
                       </tr>
@@ -437,26 +449,26 @@ export default function FeatureMatrix() {
         <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 px-2 text-xs text-slate-500">
           <span className="flex items-center gap-1.5">
             <span className="text-base leading-none text-emerald-500">●</span>
-            {COPY.legendShipped}
+            {tr('legendShipped')}
           </span>
           <span className="flex items-center gap-1.5">
             <span className="text-base leading-none text-amber-500">◐</span>
-            {COPY.legendPartial}
+            {tr('legendPartial')}
           </span>
           <span className="flex items-center gap-1.5">
             <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400">
-              not yet
+              {tr('notYet')}
             </span>
-            {COPY.legendMerged}
+            {tr('legendMerged')}
           </span>
           <span className="flex items-center gap-1.5">
             <span className="text-base leading-none text-slate-300">—</span>
-            {COPY.legendNa}
+            {tr('legendNa')}
           </span>
         </div>
 
         <p className="mt-3 px-2 text-xs leading-relaxed text-slate-400">
-          {`${COPY.coverage} ${COPY.mergedNote}`}
+          {`${tr('coverage')} ${tr('mergedNote')}`}
         </p>
       </div>
     </div>

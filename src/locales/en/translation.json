@@ -1990,5 +1990,169 @@
       "browserLanguageLabel": "Browser language",
       "unknown": "Unknown"
     }
-  }
+  },
+    "featureMatrix": {
+    "sinceVersion": "since {{version}} · {{date}}",
+    "sinceDate": "since {{date}}",
+    "builtDate": "built {{date}}",
+    "countAll": "{{n}} features",
+    "countFiltered": "{{n}} of {{total}} features",
+      "eyebrow": "Feature matrix",
+      "title": "What runs where",
+      "subtitle": "Every BiblioFuse feature, on every platform, with the release it arrived in. Search or filter to find the one you care about.",
+      "searchLabel": "Search features",
+      "searchPlaceholder": "Try \"manga translation\", \"tategaki\", \"RTL\", \"Komga\"…",
+      "platformsLabel": "Platforms",
+      "groupsLabel": "Category",
+      "sinceLabel": "Changed since",
+      "sinceAny": "Any time",
+      "since30": "Last 30 days",
+      "since90": "Last 3 months",
+      "since180": "Last 6 months",
+      "proOnly": "Pro features only",
+      "showUnreleased": "Include features built but not yet released",
+      "all": "All",
+      "reset": "Reset",
+      "noResults": "No features match those filters.",
+      "noResultsHint": "Try a shorter search, or reset the filters.",
+      "legendShipped": "Available",
+      "legendPartial": "Partly available",
+      "legendMerged": "Not yet released",
+      "legendNa": "Not on this platform",
+      "notYet": "not yet",
+      "featureColumn": "Feature",
+      "mergedNote": "Rows marked “not yet” are built but are not in a public release for that platform.",
+      "coverage": "Covers the native apps from May 2026 onward. Earlier Flutter-era releases are not listed.",
+      "sinceTooltip": "since",
+      "builtTooltip": "built",
+      "groups": {
+        "reading": "Reading",
+        "libraries": "Libraries & servers",
+        "streaming": "Streaming from your own machine",
+        "input": "Input & platform"
+      },
+      "cellNotes": {
+        "lanOnlyTvos": "Local Wi-Fi only; Tailscale is not reliable enough on tvOS",
+        "noICloudRoute": "Local Wi-Fi and manual Tailscale; the iCloud route is Apple-only",
+        "lanOnly": "Local Wi-Fi only",
+        "tailscaleServe": "Tailscale Serve and subnet access"
+      },
+      "features": {
+        "live-translation": {
+          "label": "Live comic & manga translation",
+          "note": "On-device PP-OCRv5, typeset back into the balloon"
+        },
+        "translate-export-cbz": {
+          "label": "Translate & Export CBZ",
+          "note": "Save a fully translated copy of the archive"
+        },
+        "page-curl": {
+          "label": "Page curl page turns",
+          "note": "Comics, PDF and text, on tap or swipe"
+        },
+        "dual-page-spreads": {
+          "label": "Dual-page spreads",
+          "note": "Landscape tablet, like an open book"
+        },
+        "vertical-japanese": {
+          "label": "Vertical Japanese / vertical EPUB",
+          "note": "Proper tategaki rendering and routing"
+        },
+        "epub-comic": {
+          "label": "EPUB comic support",
+          "note": "Image-spine and fixed-layout EPUBs"
+        },
+        "find-in-book": {
+          "label": "Find in Book / whole-book search"
+        },
+        "reading-direction": {
+          "label": "Reading-direction switch",
+          "note": "Mirrors page, slider and controls; auto-set from metadata"
+        },
+        "continuous-page-turn": {
+          "label": "Continuous-mode & page-turn rewrite",
+          "note": "Section scrolling; turns land where you expect"
+        },
+        "komga-kavita-native": {
+          "label": "Native Komga & Kavita API",
+          "note": "Series detail, tag chips, badges, server-side sort/search"
+        },
+        "opds": {
+          "label": "OPDS 1.x + OPDS-PSE streaming",
+          "note": "Comics a page at a time. OPDS 2.0 is not supported."
+        },
+        "kavita-sync": {
+          "label": "Kavita position & bookmark sync"
+        },
+        "folder-as-library": {
+          "label": "Folder-as-library browse",
+          "note": "Kavita-style series detail, Volume/Chapter tabs"
+        },
+        "managed-downloads": {
+          "label": "Managed downloads & progress sync",
+          "note": "Plus a download-cache manager"
+        },
+        "host-incremental-stream": {
+          "label": "Host role: serves an incremental stream",
+          "note": "Vector PDF pages, comic EPUB pages, lazy reflowable EPUB"
+        },
+        "client-reads-host": {
+          "label": "Client role: reads from a host",
+          "note": "Bonjour discovery over pinned HTTPS"
+        },
+        "connection-routes": {
+          "label": "Connection routes",
+          "note": "iCloud + Tailscale · Local Wi-Fi · manual Tailscale"
+        },
+        "controller": {
+          "label": "Game controller + custom bindings"
+        },
+        "keyboard-shortcuts": {
+          "label": "Reader keyboard shortcuts"
+        },
+        "look-to-scroll": {
+          "label": "Look to Scroll",
+          "note": "Gaze-driven edge scrolling"
+        },
+        "localisation": {
+          "label": "12-language localisation"
+        },
+        "text-to-speech": {
+          "label": "Text-to-speech reader",
+          "note": "Sentence highlighting, lock-screen controls, sleep timer"
+        },
+        "ocr-text-extraction": {
+          "label": "OCR text extraction",
+          "note": "Pull selectable text out of a scanned page"
+        },
+        "reading-progress-restore": {
+          "label": "Resume where you left off",
+          "note": "Paged and continuous, across archives, PDF and text"
+        },
+        "export-tools": {
+          "label": "Batch & merge export",
+          "note": "Combine or convert archives to CBZ and EPUB"
+        },
+        "bulk-metadata-editing": {
+          "label": "Bulk ratings & tags",
+          "note": "Multi-select, then edit metadata in one pass"
+        },
+        "remote-annotations": {
+          "label": "Edit and save streamed books",
+          "note": "Change tags and rating on the host, or save a copy locally"
+        },
+        "home-screen-widget": {
+          "label": "Home-screen widget",
+          "note": "Jump back into what you were reading"
+        },
+        "app-lock": {
+          "label": "App lock",
+          "note": "PIN gate on the library"
+        },
+        "spatial-library": {
+          "label": "Spatial library",
+          "note": "Browse shelves placed in the room around you"
+        }
+      }
+    }
 }

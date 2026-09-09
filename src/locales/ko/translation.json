@@ -1987,5 +1987,169 @@
         "qrCredit": "QR 코드 powered by qrcode-generator"
       }
     }
-  }
+  },
+    "featureMatrix": {
+    "sinceVersion": "{{version}} 부터 · {{date}}",
+    "sinceDate": "{{date}} 부터",
+    "builtDate": "{{date}} 개발",
+    "countAll": "기능 {{n}}개",
+    "countFiltered": "전체 {{total}}개 중 {{n}}개",
+      "eyebrow": "기능 매트릭스",
+      "title": "어디서 무엇이 되는지",
+      "subtitle": "BiblioFuse의 모든 기능을 플랫폼별로, 도입된 버전과 함께 정리했습니다. 검색하거나 필터로 원하는 기능을 찾아보세요.",
+      "searchLabel": "기능 검색",
+      "searchPlaceholder": "\"만화 번역\", \"tategaki\", \"RTL\", \"Komga\" 등으로 검색",
+      "platformsLabel": "플랫폼",
+      "groupsLabel": "분류",
+      "sinceLabel": "변경 시점",
+      "sinceAny": "전체",
+      "since30": "최근 30일",
+      "since90": "최근 3개월",
+      "since180": "최근 6개월",
+      "proOnly": "Pro 기능만",
+      "showUnreleased": "개발됐지만 아직 배포되지 않은 기능 포함",
+      "all": "전체",
+      "reset": "초기화",
+      "noResults": "해당 필터에 맞는 기능이 없습니다.",
+      "noResultsHint": "더 짧게 검색하거나 필터를 초기화해 보세요.",
+      "legendShipped": "사용 가능",
+      "legendPartial": "부분 지원",
+      "legendMerged": "미배포",
+      "legendNa": "이 플랫폼에는 없음",
+      "notYet": "아직",
+      "featureColumn": "기능",
+      "mergedNote": "“아직”으로 표시된 항목은 개발은 끝났지만 해당 플랫폼의 공개 버전에는 아직 포함되지 않았습니다.",
+      "coverage": "2026년 5월 이후의 네이티브 앱을 다룹니다. 그 이전 Flutter 버전은 포함되지 않습니다.",
+      "sinceTooltip": "부터",
+      "builtTooltip": "개발",
+      "groups": {
+        "reading": "읽기",
+        "libraries": "라이브러리 & 서버",
+        "streaming": "내 컴퓨터에서 스트리밍",
+        "input": "입력 & 플랫폼"
+      },
+      "cellNotes": {
+        "lanOnlyTvos": "로컬 Wi-Fi만 지원. tvOS에서는 Tailscale이 충분히 안정적이지 않습니다",
+        "noICloudRoute": "로컬 Wi-Fi와 수동 Tailscale 지원. iCloud 경로는 Apple 전용입니다",
+        "lanOnly": "로컬 Wi-Fi만 지원",
+        "tailscaleServe": "Tailscale Serve 및 서브넷 액세스"
+      },
+      "features": {
+        "live-translation": {
+          "label": "만화 실시간 번역",
+          "note": "온디바이스 PP-OCRv5, 말풍선에 조판"
+        },
+        "translate-export-cbz": {
+          "label": "번역 후 CBZ로 내보내기",
+          "note": "아카이브 전체의 번역본 저장"
+        },
+        "page-curl": {
+          "label": "페이지 넘김 컬 효과",
+          "note": "만화, PDF, 텍스트를 탭 또는 스와이프로"
+        },
+        "dual-page-spreads": {
+          "label": "두 페이지 펼침",
+          "note": "태블릿 가로 모드, 펼친 책처럼"
+        },
+        "vertical-japanese": {
+          "label": "일본어 세로쓰기 / 세로 EPUB",
+          "note": "올바른 세로쓰기(tategaki) 렌더링"
+        },
+        "epub-comic": {
+          "label": "EPUB 만화 지원",
+          "note": "이미지 스파인 및 고정 레이아웃 EPUB"
+        },
+        "find-in-book": {
+          "label": "책 전체 검색"
+        },
+        "reading-direction": {
+          "label": "읽기 방향 전환",
+          "note": "페이지·슬라이더·컨트롤을 함께 반전. 메타데이터로 자동 설정"
+        },
+        "continuous-page-turn": {
+          "label": "연속 모드 & 페이지 넘김 개편",
+          "note": "화면 단위 스크롤. 페이지 넘김이 예상한 위치에 도착"
+        },
+        "komga-kavita-native": {
+          "label": "Komga & Kavita 네이티브 API",
+          "note": "시리즈 상세, 태그, 배지, 서버 측 정렬·검색"
+        },
+        "opds": {
+          "label": "OPDS 1.x + OPDS-PSE 스트리밍",
+          "note": "만화를 한 페이지씩. OPDS 2.0은 지원하지 않습니다."
+        },
+        "kavita-sync": {
+          "label": "Kavita 위치 & 북마크 동기화"
+        },
+        "folder-as-library": {
+          "label": "폴더를 라이브러리처럼 탐색",
+          "note": "Kavita 스타일 시리즈 상세, 권/화 탭"
+        },
+        "managed-downloads": {
+          "label": "다운로드 관리 & 진행률 동기화",
+          "note": "다운로드 캐시 관리 기능 포함"
+        },
+        "host-incremental-stream": {
+          "label": "호스트 역할: 점진적 스트림 제공",
+          "note": "벡터 PDF 페이지, EPUB 만화 페이지, 지연 로딩 리플로 EPUB"
+        },
+        "client-reads-host": {
+          "label": "클라이언트 역할: 호스트에서 읽기",
+          "note": "인증서 고정 HTTPS 기반 Bonjour 검색"
+        },
+        "connection-routes": {
+          "label": "연결 경로",
+          "note": "iCloud + Tailscale · 로컬 Wi-Fi · 수동 Tailscale"
+        },
+        "controller": {
+          "label": "게임패드 + 사용자 지정 키"
+        },
+        "keyboard-shortcuts": {
+          "label": "리더 키보드 단축키"
+        },
+        "look-to-scroll": {
+          "label": "시선으로 스크롤",
+          "note": "시선으로 화면 가장자리 스크롤"
+        },
+        "localisation": {
+          "label": "12개 언어 지원"
+        },
+        "text-to-speech": {
+          "label": "음성 읽기",
+          "note": "문장 하이라이트, 잠금 화면 조작, 슬립 타이머"
+        },
+        "ocr-text-extraction": {
+          "label": "OCR 텍스트 추출",
+          "note": "스캔한 페이지에서 선택 가능한 텍스트 추출"
+        },
+        "reading-progress-restore": {
+          "label": "읽던 곳부터 이어보기",
+          "note": "페이지 모드와 연속 모드 모두, 아카이브·PDF·텍스트에서"
+        },
+        "export-tools": {
+          "label": "일괄 & 병합 내보내기",
+          "note": "아카이브를 CBZ·EPUB로 병합 또는 변환"
+        },
+        "bulk-metadata-editing": {
+          "label": "평점 & 태그 일괄 편집",
+          "note": "여러 개를 선택해 메타데이터를 한 번에 편집"
+        },
+        "remote-annotations": {
+          "label": "스트리밍 도서 편집 및 저장",
+          "note": "호스트에서 태그·평점을 변경하거나 로컬에 복사본 저장"
+        },
+        "home-screen-widget": {
+          "label": "홈 화면 위젯",
+          "note": "읽던 책으로 바로 돌아가기"
+        },
+        "app-lock": {
+          "label": "앱 잠금",
+          "note": "라이브러리를 PIN으로 보호"
+        },
+        "spatial-library": {
+          "label": "공간 라이브러리",
+          "note": "방 안에 배치된 책장을 둘러보기"
+        }
+      }
+    }
 }
