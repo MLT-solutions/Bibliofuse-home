@@ -2,6 +2,30 @@
 
 `scripts/`, invoked from `package.json`'s `build` script and by hand.
 
+## Prerender locale isolation (2026-09-09)
+
+`scripts/prerender.js` gives every page its own `browser.createBrowserContext()` and
+asserts `document.documentElement.lang` matches the URL's locale before capturing.
+
+Both are load-bearing, not defensive polish. `src/i18n.js` detects language in the order
+`queryString → cookie → localStorage → navigator → htmlTag → path` and caches the result
+to `localStorage` + `cookie`. On a **shared** browser context those stores are visible to
+every concurrently-rendering tab, so a tab that had just rendered `/zh/` left
+`i18nextLng=zh` behind and the next tab picked it up before `App.jsx`'s
+`changeLanguage(lang)` effect could correct it — Helmet committed a wrong-language
+`<title>`, and the old readiness check (title contains `" | BiblioFuse"`) happily
+accepted it.
+
+This was caught in a real build on 2026-09-09: `dist/ja/index.html` contained Chinese
+copy and `dist/ko/index.html` contained Japanese, while the source locale files were
+correct and the live site was fine. It is a race, so it surfaces on different locale
+pairs each run and can silently ship wrong-language content at indexed locale URLs —
+the exact failure mode implicated in the 2026-06-26 impression collapse.
+
+A locale mismatch now fails the page, triggers a retry, and fails the build if it
+persists. Verify a build with: every `dist/<loc>/**/index.html` must carry
+`<html lang="<loc>">`.
+
 ## Automated build steps (run on every `npm run build`)
 In order, after `vite build`:
 1. `scripts/generate-sitemap.js` — writes `public/sitemap.xml` from the known routes

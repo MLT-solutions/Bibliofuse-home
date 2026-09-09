@@ -50,8 +50,6 @@ const Navigation = () => {
     const tools = [
         { name: 'BiblioFuse Reader', sub: t('redesign.tools.readerSub'), path: '/comicreader/', logo: '/image/bibliofuse-logo.png', logoZoom: 1.5 },
         { name: 'BiblioFuse Web Tool', sub: t('redesign.tools.webSub'), path: '/webapp/', logo: '/image/webtool-logo.png' },
-        { name: 'GrepTag Reader', sub: t('redesign.tools.grepSub'), path: '/grepreader/', logo: '/image/grepreader-logo.png', logoZoom: 1.3 },
-        { name: 'Comic Duplicate Scanner', sub: t('redesign.tools.archiveSub'), path: '/archive/', logo: '/image/archive-logo.png', logoZoom: 1.15 },
         { name: 'SmartDecrypt PDF ZIP', sub: t('redesign.tools.smartSub'), href: smartDecryptAppStoreUrl, logo: '/image/smartdecrypt-logo.png' },
         { name: 'ContentCue', sub: t('redesign.tools.contentcueSub'), href: contentCueAppStoreUrl, logo: '/image/contentcue-logo.png', logoZoom: 1.15 },
     ];

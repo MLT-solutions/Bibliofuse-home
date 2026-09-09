@@ -18,12 +18,6 @@ export const articles = [
     coverImage: '/image/blog/Convert CBR to CBZ Online.jpg',
   },
   {
-    slug: 'organize-ebooks-by-content-not-metadata',
-    date: '2026-06-28',
-    tags: ['grepreader', 'guide', 'ebooks'],
-    coverImage: '/image/blog/Organize Ebooks by Content Not Metadata.jpg',
-  },
-  {
     slug: 'find-duplicate-comics-different-names',
     date: '2026-06-28',
     tags: ['archive', 'guide', 'duplicates'],

@@ -260,7 +260,8 @@
         "chipB": "iPhone · iPad · Mac",
         "chipC": "TTS · défilement automatique",
         "chipD": "Lecture mains libres",
-        "reads": "Lit"
+        "reads": "Lit",
+        "languages": "Interface : Anglais · Espagnol · Français · Néerlandais · Portugais · Russe · Chinois simplifié · Japonais · Coréen · Indonésien · Malais"
       },
       "table": {
         "eyebrow": "Comparer les apps",
@@ -392,8 +393,8 @@
         "title": "Choisir un outil BiblioFuse",
         "items": [
           {
-            "q": "Par quelle app BiblioFuse commencer ?",
-            "a": "Utilisez BiblioFuse Reader pour les BD, mangas, PDF et grandes bibliothèques mixtes. Utilisez GrepTag Reader pour les romans EPUB/TXT où la recherche plein texte et les étiquettes comptent. Utilisez SmartDecrypt pour les fichiers protégés, Comic Duplicate Scanner pour le nettoyage et BiblioFuse Web pour compresser ou fusionner rapidement dans le navigateur."
+            "q": "Qu'est-ce que BiblioFuse Reader peut ouvrir ?",
+            "a": "BiblioFuse Reader gère bandes dessinées, mangas, PDF, EPUB et TXT dans une seule bibliothèque — y compris de grandes collections mixtes diffusées depuis votre propre Mac ou PC. Tout est traité sur votre appareil : aucun envoi, aucun compte, aucun suivi de vos lectures."
           },
           {
             "q": "Mes fichiers sont-ils envoyés aux serveurs BiblioFuse ?",
@@ -438,16 +439,6 @@
           "bullet3": "Fonctionne sur toute plateforme avec un navigateur",
           "cta": "Lancer l'outil web"
         },
-        "archive": {
-          "tag": "Mac · Windows",
-          "desc": "Trouve et supprime les archives de BD, photos et fichiers en double, même après renommage, recompression ou déplacement.",
-          "bullet1": "Hachage perceptuel pour CBZ/CBR/ZIP/RAR",
-          "bullet2": "Sélection automatique intelligente et suppression sécurisée vers la Corbeille",
-          "bullet3": "Cache de hachage pour analyses rapides répétées",
-          "cta": "Mac App Store",
-          "secondary": "Microsoft Store",
-          "bullet4": "Disponible en 11 langues"
-        },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
           "desc": "Déverrouille les PDF et archives protégés par mot de passe grâce à des motifs de noms de fichiers enregistrés.",
@@ -466,14 +457,6 @@
           "bullet3": "Synthèse vocale des pages web avec lecture en arrière-plan",
           "cta": "App Store",
           "bullet4": "Disponible en 11 langues"
-        },
-        "grepreader": {
-          "tag": "iOS Only",
-          "desc": "Recherche plein texte, étiquetage et organisation pour les bibliothèques EPUB et TXT.",
-          "bullet1": "Grep avec logique AND / OR / NOT",
-          "bullet2": "Étiqueter par genre · exécution automatique à l'importation",
-          "bullet3": "Lecteur personnalisable — thèmes, polices et recherche dans tout le livre",
-          "cta": "En savoir plus"
         }
       },
       "learnMore": "En savoir plus",
@@ -525,7 +508,11 @@
           "imageAlt": "Bibliothèque de bureau BiblioFuse avec lecteur en vue divisée",
           "footnote": "L’accès distant nécessite que l’hôte et l’appareil iOS soient connectés à iCloud et à Tailscale. Pour la configuration la plus stable à la maison comme dehors, gardez Tailscale activé sur les deux appareils."
         }
-      }
+      },
+      "cta": "Télécharger BiblioFuse Reader",
+      "bullet1": "Lit les CBZ, CBR, PDF, EPUB et TXT",
+      "bullet2": "Compressez et fusionnez pour économiser de l'espace — le tout sur l'appareil",
+      "bullet3": "Diffusez depuis Mac ou PC — Wi-Fi à la maison ou 5G en déplacement, conçu pour les gros volumes"
     },
     "toolsHighlight": {
       "badge": "Outils intégrés",
@@ -552,40 +539,6 @@
           "label": "En une passe"
         }
       }
-    },
-    "archiveSection": {
-      "badge": "App sœur · Mac et Windows",
-      "titleA": "Trouvez les archives en double.",
-      "titleB": "Même après renommage.",
-      "desc": "Comic Duplicate Scanner trouve et supprime les archives de BD, photos et fichiers en double, même après renommage, recompression ou déplacement dans différents dossiers.",
-      "features": {
-        "scanning": {
-          "title": "Analyse d'archives de BD",
-          "body": "CBZ, CBR, ZIP et RAR par hachage perceptuel."
-        },
-        "photo": {
-          "title": "Détection de photos en double",
-          "body": "JPG, PNG, HEIC, WEBP, BMP et GIF."
-        },
-        "select": {
-          "title": "Sélection automatique intelligente",
-          "body": "Gardez le plus grand, le plus petit, le plus récent, le plus ancien ou le plus de pages."
-        },
-        "delete": {
-          "title": "Suppression sécurisée",
-          "body": "Les fichiers marqués ne sont déplacés que vers la Corbeille système."
-        }
-      },
-      "altBadge": "Télécharger Comic Duplicate Scanner sur le Mac App Store",
-      "altImage": "Comic Duplicate Scanner configurer et lancer l'analyse",
-      "pricing": "L'utilisation gratuite est disponible pour toujours pour les analyses jusqu'à 1 000 fichiers. Un essai de 7 jours débloque l'accès complet, et un achat unique débloque une utilisation illimitée sans abonnement.",
-      "stats": {
-        "threshold": "Seuil par défaut",
-        "sampled": "Pages échantillonnées",
-        "local": "100% local",
-        "noCloud": "Sans cloud, sans pistage"
-      },
-      "langNote": "Interface : Anglais · Espagnol · Français · Néerlandais · Portugais · Russe · Chinois simplifié · Japonais · Coréen · Indonésien · Malais"
     },
     "decryptSection": {
       "badge": "App sœur · iOS · Mac · Windows",
@@ -737,11 +690,6 @@
           "title": "Convertir CBR en CBZ en ligne: gratuit, sans logiciel",
           "excerpt": "L'outil web BiblioFuse convertit les archives CBR (RAR) en format CBZ (ZIP) directement dans votre navigateur — sans téléchargement, sans installation, totalement privé. Déposez votre fichier et téléchargez le CBZ converti en quelques secondes.",
           "seoDescription": "Convertissez CBR en CBZ en ligne dans votre navigateur avec BiblioFuse Web Tool. Pas de téléchargement, pas de logiciel. Basé sur WebAssembly, gratuit pour les fichiers individuels."
-        },
-        "organize-ebooks-by-content-not-metadata": {
-          "title": "Organisez vos Ebooks par Contenu, pas par Métadonnées ni ISBN",
-          "excerpt": "La plupart des gestionnaires d'ebooks nécessitent une saisie manuelle de métadonnées ou une recherche ISBN. GrepTag Reader lit le texte réel à l'intérieur de vos fichiers EPUB et TXT et étiquette automatiquement chaque livre selon ce qui est écrit dedans.",
-          "seoDescription": "Organisez votre bibliothèque d'ebooks automatiquement sans saisir de métadonnées ni ISBN. GrepTag Reader lit le contenu EPUB et TXT et génère des tags à partir de ce qui est écrit dedans."
         },
         "find-duplicate-comics-different-names": {
           "title": "Comment Trouver des Comics Dupliqués avec des Noms de Fichiers Différents",
@@ -1058,296 +1006,6 @@
       "filterAll": "Toutes les plateformes",
       "knownIssuesTitle": "Problèmes connus",
       "roadmapTitle": "Feuille de route"
-    },
-    "twoAppsSection": {
-      "eyebrow": "Deux applications, un écosystème",
-      "titleA": "Pour les comics et les mangas.",
-      "titleB": "Ou pour les romans et les light novels.",
-      "desc": "Chaque application est conçue autour du fonctionnement réel de sa bibliothèque : tailles de fichiers différentes, habitudes de lecture différentes, besoins de stockage différents.",
-      "comicTag": "COMICS · MANGA · PDF",
-      "comicIdent": "Fichiers volumineux. Gardez-les sur votre iPhone — ou diffusez-les directement depuis votre Mac ou PC.",
-      "comicBullet1": "Lit les CBZ, CBR, PDF, EPUB et TXT",
-      "comicBullet2": "Compressez et fusionnez pour économiser de l'espace — le tout sur l'appareil",
-      "comicBullet3": "Diffusez depuis Mac ou PC — Wi-Fi à la maison ou 5G en déplacement, conçu pour les gros volumes",
-      "comicCta": "Télécharger BiblioFuse Reader",
-      "textTag": "EPUB · ROMANS · TXT",
-      "textIdent": "Petits fichiers. Toute votre bibliothèque tient dans votre téléphone — recherchez et étiquetez chaque mot.",
-      "textBullet1": "Grep plein texte — AND / OR / NOT, s'exécute automatiquement à l'import",
-      "textBullet2": "Étiquetez par genre · synchronisation Wi-Fi dans tous les sens",
-      "textBullet3": "Lecteur personnalisable — thèmes, polices et recherche dans tout le livre",
-      "textCta": "Explorer GrepTag Reader",
-      "bothNote": "Beaucoup de lecteurs utilisent BiblioFuse pour les comics et GrepTag pour les romans — les deux sont gratuits à essayer.",
-      "comicCoverLine": "Miniatures de couverture pour les bibliothèques CBZ, CBR, EPUB et PDF.",
-      "textCoverLine": "Miniatures de couverture pour les bibliothèques EPUB et TXT, avec prise en charge des images de couverture."
-    },
-    "grepTagPage": {
-      "hero": {
-        "badge": "iOS · macOS · Windows",
-        "title": "Recherchez. Étiquetez. Maîtrisez votre bibliothèque.",
-        "desc": "GrepTag Reader recherche le texte réel dans vos fichiers EPUB et TXT — sans métadonnées manuelles, sans saisie d'ISBN. Tapez un mot-clé et chaque livre correspondant apparaît instantanément. Taguez par genre, filtrez avec la logique AND, synchronisez en Wi-Fi.",
-        "appStoreCta": "Télécharger sur l'App Store",
-        "trust1": "Aucune métadonnée ni ISBN à saisir",
-        "trust2": "Sans serveur, sans envoi",
-        "trust3": "Texte CJK pris en charge",
-        "comingSoon": "Disponible maintenant sur l'App Store",
-        "msStoreCta": "Obtenir sur Microsoft",
-        "macInReview": "iOS, macOS et Windows disponibles maintenant",
-        "screenshotAlt": "Écran de profil de recherche réutilisable ET/OU/NON de GrepTag Reader sur iPhone"
-      },
-      "grep": {
-        "eyebrow": "Rechercher Dans les Livres",
-        "title": "Recherchez le texte complet de chaque livre.",
-        "desc": "Tapez n'importe quel mot-clé et GrepTag lit directement vos fichiers EPUB et TXT — sans index à construire, sans upload, sans taguage manuel. Sauvegardez des recherches comme profils nommés avec la logique AND, OR et NOT, et relancez-les au fil de la croissance de votre bibliothèque. Les nouveaux livres sont tagués automatiquement à l'import.",
-        "bullet1": "Logique booléenne — \"Sci-Fi AND dragons NOT romance\"",
-        "bullet2": "Jusqu'à 2 profils gratuits · Pro débloque illimité",
-        "bullet3": "Exécution automatique à l'import — nouveaux livres tagués sans saisie de métadonnées",
-        "badge": "Toujours gratuit · recherches illimitées"
-      },
-      "tags": {
-        "eyebrow": "Étiquettes et Découverte",
-        "title": "Étiquetez par genre. Filtrez instantanément.",
-        "desc": "Les tags proviennent de ce qui est réellement dans le livre — pas du titre, de l'auteur ou de l'ISBN à saisir manuellement. Appliquez des tags depuis les résultats d'analyse en un tap. Filtrez avec la logique AND pour trouver les livres correspondant à TOUS vos tags sélectionnés.",
-        "bullet1": "5 étiquettes gratuites · Pro débloque illimité",
-        "bullet2": "Sélection multiple de tags avec logique AND — trouve les livres correspondant à TOUS les tags choisis",
-        "bullet3": "Taguage en un tap depuis les résultats — sans formulaires"
-      },
-      "sync": {
-        "eyebrow": "Synchronisation Wi-Fi",
-        "title": "Synchronisez en Wi‑Fi local, avec découverte Apple en secours.",
-        "desc": "Transférez livres, tags, notes, profils de mots-clés et arborescence de dossiers entre iPhone, iPad, Mac et Windows via votre réseau local. Les appareils Apple peuvent utiliser de petits snapshots de métadonnées iCloud pour la découverte, mais les fichiers de livres sont transférés en Wi‑Fi et ne sont pas envoyés à un serveur développeur.",
-        "bullet1": "Mac / PC ↔ iPhone / iPad, iPhone ↔ iPad, Mac ↔ Mac, PC ↔ PC",
-        "bullet2": "Livres, tags, notes, profils de mots-clés et hiérarchie de dossiers se synchronisent entre appareils",
-        "bullet3": "Fonction Pro — le serveur de l’appareil source doit fonctionner pendant le transfert"
-      },
-      "covers": {
-        "eyebrow": "Couvertures et Lecteur",
-        "title": "Bibliothèque visuelle. Lecteur intégré.",
-        "desc": "GrepTag Reader prend en charge les miniatures de couverture pour les bibliothèques EPUB et TXT, avec prise en charge des images de couverture. Les couvertures EPUB sont extraites automatiquement. Pour les livres TXT, les couvertures sont associées depuis des images du même dossier ou récupérées en collant une URL. Lisez EPUB et TXT dans le lecteur intégré avec TTS, signets et polices réglables.",
-        "bullet1": "Couvertures EPUB extraites automatiquement (gratuit)",
-        "bullet2": "Couvertures TXT depuis les images du même dossier ou URL (Pro)",
-        "bullet3": "TTS avec contrôle du volume · signets · navigation par chapitre"
-      },
-      "whySeparate": {
-        "eyebrow": "Pourquoi deux apps ?",
-        "title": "Des bibliothèques différentes ont besoin d'outils différents.",
-        "desc": "BiblioFuse Reader est conçu pour les gros fichiers de BD riches en images : streaming depuis Mac ou PC, compression dans l’app. GrepTag est conçu pour les petits fichiers texte qui tiennent sur l’appareil : grep, étiquettes, synchro dans les deux sens.",
-        "col1": "BiblioFuse Reader",
-        "col2": "GrepTag Reader",
-        "row1Label": "Idéal pour",
-        "row1col1": "BD, manga, PDF",
-        "row1col2": "EPUB, light novels, TXT",
-        "row2Label": "Taille des fichiers",
-        "row2col1": "50–300 Mo par volume",
-        "row2col2": "Moins de 5 Mo chacun",
-        "row3Label": "Stockage",
-        "row3col1": "Streaming depuis Mac ou PC · compression dans l’app",
-        "row3col2": "Stockage sur appareil · sync dans tous les sens",
-        "row4Label": "Fonctionnalités clés",
-        "row4col1": "Compresser, fusionner, streamer, sauvegarde auto",
-        "row4col2": "Full-text grep, tags, covers, Wi-Fi sync",
-        "row5Label": "Formats",
-        "row5col1": "CBZ, CBR, PDF, EPUB, TXT",
-        "row5col2": "EPUB, TXT",
-        "readerCta": "Explorer BiblioFuse Reader"
-      },
-      "pricing": {
-        "eyebrow": "Tarifs",
-        "title": "Gratuit pour rechercher. Pro pour posséder.",
-        "freeTitle": "Gratuit",
-        "freeDesc": "Recherchez et découvrez votre bibliothèque pour toujours.",
-        "proTitle": "Pro",
-        "proDesc": "Un achat unique déverrouille tout, pour toujours.",
-        "proMonthly": "0,99 $ / mois",
-        "proYearly": "4,99 $ / an",
-        "proLifetime": "14,99 $ unique",
-        "proTrial": "Essai gratuit de 7 jours sur mensuel et annuel",
-        "appStoreCta": "Essayer gratuitement sur l'App Store",
-        "approvalNote": "Disponible maintenant sur l'App Store et le Microsoft Store."
-      },
-      "seo": {
-        "title": "GrepTag Reader — Rechercher Dans Tous vos EPUB et eBooks | iPhone, iPad, Mac, Windows",
-        "desc": "Recherchez dans chaque fichier EPUB et TXT sur iPhone, iPad, Mac et Windows. Aucune saisie manuelle de métadonnées ou d'ISBN — GrepTag analyse le contenu des livres et tague automatiquement votre bibliothèque par genre. Gratuit à essayer."
-      },
-      "faq": [
-        {
-          "q": "Qu'est-ce que GrepTag Reader ?",
-          "a": "GrepTag Reader est une application de recherche plein texte et d'étiquetage pour les collections d'ebooks EPUB et TXT sur iPhone, iPad, Mac et Windows. Elle vous permet de rechercher dans toute votre bibliothèque n'importe quel mot-clé avec la logique booléenne AND / OR / NOT, d'étiqueter les livres par genre et de synchroniser votre bibliothèque en Wi-Fi local — sans rien envoyer à un serveur."
-        },
-        {
-          "q": "Quelle est la différence entre GrepTag Reader et BiblioFuse Reader ?",
-          "a": "BiblioFuse Reader est conçu pour les gros fichiers de BD riches en images (CBZ, CBR, PDF). Il diffuse depuis Mac ou PC, compresse les archives et gère la lecture webtoon/manga. GrepTag Reader est conçu pour les bibliothèques EPUB et TXT avec recherche plein texte, étiquettes et synchronisation Wi‑Fi dans tous les sens."
-        },
-        {
-          "q": "La recherche grep plein texte est-elle gratuite ?",
-          "a": "Oui. Le scan grep est toujours gratuit et illimité — vous pouvez rechercher dans toute votre bibliothèque EPUB et TXT n'importe quel mot-clé autant de fois que vous le souhaitez. Enregistrez jusqu'à 2 profils de recherche nommés gratuitement. Pro débloque des profils illimités."
-        },
-        {
-          "q": "GrepTag Reader envoie-t-il mes fichiers à un serveur ?",
-          "a": "Non. GrepTag Reader lit directement depuis vos fichiers locaux. Rien n'est envoyé à un serveur — pas d'index cloud, pas de backend développeur. Les fichiers restent sur votre appareil."
-        },
-        {
-          "q": "Quels formats de fichiers GrepTag Reader prend-il en charge ?",
-          "a": "GrepTag Reader prend en charge les fichiers EPUB et TXT. Il peut effectuer des recherches et étiqueter les deux formats, extraire automatiquement les couvertures EPUB et associer des couvertures aux livres TXT depuis des images dans le même dossier ou une URL collée (fonctionnalité Pro)."
-        },
-        {
-          "q": "Combien d'étiquettes puis-je avoir gratuitement ?",
-          "a": "Cinq étiquettes sont incluses dans le niveau gratuit. Pro débloque des étiquettes illimitées. Vous pouvez appliquer des étiquettes depuis les résultats de scan en un tap, ou étiqueter les livres manuellement et filtrer par plusieurs étiquettes avec la logique AND ou OR."
-        },
-        {
-          "q": "Puis-je synchroniser ma bibliothèque entre iPhone, iPad, Mac et PC ?",
-          "a": "Oui. Wi-Fi Sync transfère des livres, des étiquettes, des évaluations, des profils de mots-clés et la structure des dossiers entre toute combinaison d'iPhone, iPad, Mac et Windows PC. Tous les appareils Apple participant à la synchronisation doivent être connectés au même compte iCloud — iCloud n'est utilisé que pour la découverte des appareils, pas pour stocker vos livres. Les fichiers transitent par votre réseau Wi-Fi local et ne sont jamais téléversés vers un serveur de développeur. Wi-Fi Sync est une fonctionnalité Pro."
-        },
-        {
-          "q": "Puis-je utiliser plusieurs iPhone ou iPad avec Wi-Fi Sync ?",
-          "a": "Oui. Plusieurs iPhones et iPads peuvent tous participer à la même synchronisation de bibliothèque. La version iOS de GrepTag stocke les chemins d'accès relatifs au dossier racine de l'app, de sorte que la même structure de chemins fonctionne sur tous les appareils iOS connectés au même compte iCloud."
-        },
-        {
-          "q": "Dois-je utiliser un Mac ou un PC comme source de référence pour ma bibliothèque ?",
-          "a": "Nous recommandons de conserver un Mac ou un PC comme appareil de bibliothèque principal. Les métadonnées de GrepTag suivent trois types de chemins distincts : chemins PC, chemins iOS et chemins Mac. iOS fonctionne sur plusieurs iPhones et iPads car il utilise des chemins relatifs. Mac et PC stockent chacun des chemins absolus pour leur propre appareil, donc la synchronisation est la plus fiable lorsqu'il n'y a qu'un seul Mac et un seul PC dans votre configuration."
-        },
-        {
-          "q": "Mon iPhone peut-il synchroniser de nouveaux livres vers mon Mac ou PC ?",
-          "a": "Oui. Si vous ajoutez un livre sur iPhone dans un dossier qui n'existe pas encore sur votre Mac ou PC, GrepTag vous demandera de créer le dossier et de l'ajouter à votre liste de bibliothèque sur l'appareil récepteur avant de terminer la synchronisation."
-        },
-        {
-          "q": "Comment rechercher un mot ou une phrase spécifique dans mes fichiers ebook ?",
-          "a": "Ouvrez GrepTag Reader, allez dans l'onglet Recherche et tapez n'importe quel mot ou phrase. L'app ouvre chaque fichier EPUB et TXT de votre bibliothèque et renvoie chaque livre qui contient votre terme de recherche — sans index préalable, sans téléversement. Combinez les termes avec AND, OR et NOT pour des résultats plus précis (par exemple : \"magie AND dragons NOT romance\"). Enregistrez vos recherches fréquentes comme profils nommés qui se relancent automatiquement à l'importation de nouveaux livres. La recherche est toujours gratuite et illimitée."
-        },
-        {
-          "q": "GrepTag Reader a-t-il besoin d'une connexion internet pour fonctionner ?",
-          "a": "Non. GrepTag Reader fonctionne entièrement hors ligne. La recherche, l'étiquetage et l'organisation se font directement sur votre appareil — l'app lit vos fichiers EPUB et TXT localement, sans serveur ni connexion internet. Le réseau n'est utilisé que pour la fonctionnalité optionnelle Wi-Fi Sync, qui transfère des livres entre vos propres appareils via votre réseau local."
-        },
-        {
-          "q": "Puis-je personnaliser l'apparence et les polices du lecteur ?",
-          "a": "Oui. Choisissez parmi les thèmes Sépia, Gris et Noir (OLED) sur iPhone, iPad et Mac. Sélectionnez une police avec aperçu en direct — dont Iowan, Charter, Kaiti et des polices serif compatibles CJK — ou importez votre propre police .ttf/.otf. Ajustez la luminosité, l'alignement du texte et le gras selon votre façon de lire."
-        },
-        {
-          "q": "Puis-je rechercher à l'intérieur du livre que je suis en train de lire ?",
-          "a": "Oui. La recherche dans tout le livre parcourt l'intégralité du fichier TXT ou EPUB que vous lisez, pas seulement le chapitre en cours. Sur Mac, une barre de recherche dédiée offre le même aperçu des polices que sur iOS."
-        }
-      ],
-      "faqTitle": "Questions fréquentes",
-      "languages": "Interface : Anglais · Espagnol · Français · Néerlandais · Portugais · Russe · Chinois simplifié · Japonais · Coréen · Indonésien · Malais",
-      "reader": {
-        "eyebrow": "Personnalisation du lecteur",
-        "title": "Faites du lecteur le vôtre.",
-        "desc": "Adaptez le lecteur à vos yeux sur iPhone, iPad et Mac. Choisissez parmi les thèmes Sépia, Gris et Noir (OLED), sélectionnez une police avec aperçu en direct — ou importez votre propre police — et ajustez la luminosité, l'alignement et le gras. Recherchez dans tout le livre que vous lisez, pas seulement dans le chapitre en cours.",
-        "bullet1": "Thèmes Sépia, Gris et Noir (OLED) sur iOS et macOS",
-        "bullet2": "Sélecteur de polices avec aperçu en direct — Iowan, Charter, Kaiti, polices serif compatibles CJK et plus — ou importez votre propre police .ttf/.otf",
-        "bullet3": "Luminosité, alignement du texte et gras — plus une recherche dans tout le livre et une barre de recherche sur macOS",
-        "badge": "Nouveau dans les versions 1.0.4 et 1.0.5"
-      }
-    },
-    "archivePage": {
-      "seo": {
-        "title": "Comic Duplicate Scanner — Trouvez les Doublons de BD et Photos sur Mac et Windows",
-        "desc": "Comic Duplicate Scanner trouve les doublons de fichiers CBZ, CBR, ZIP, RAR et photos par hachage perceptuel — même après renommage, recompression, ou avec des résolutions et modes couleur différents. Gratuit jusqu'à 1 000 fichiers, Pro à 19,99 $ en achat unique."
-      },
-      "hero": {
-        "badge": "Mac et Windows",
-        "title": "Trouvez les doublons. Même après renommage.",
-        "desc": "Comic Duplicate Scanner ouvre vos archives de BD et compare les images réelles à l'intérieur — pas seulement les noms de fichiers ou les tailles. Même si un fichier s'appelle comic_E1-5 et un autre ComiX_E1-10, si les premières pages correspondent, ils sont signalés comme doublons.",
-        "trust1": "Aucun envoi vers le cloud",
-        "trust2": "Suppression sécurisée vers la Corbeille",
-        "trust3": "Essai gratuit de 7 jours",
-        "macStore": "Télécharger sur le Mac App Store",
-        "winStore": "Obtenir sur le Microsoft Store",
-        "trust4": "11 langues"
-      },
-      "scanning": {
-        "eyebrow": "Analyse Approfondie des Archives",
-        "title": "Ouvre les archives et compare les pages internes",
-        "desc": "La plupart des détecteurs de doublons comparent uniquement les noms ou tailles de fichiers. Comic Duplicate Scanner ouvre chaque fichier CBZ, CBR, ZIP ou RAR, extrait des miniatures des pages réelles et les compare. Un fichier nommé comic_E1-5 et un autre ComiX_E1-10 — noms différents, plages d'épisodes différentes — sont quand même détectés si leurs premières pages correspondent.",
-        "bullet1": "Ouvre les archives et compare les images des pages — pas seulement les noms",
-        "bullet2": "Seuil de similarité configurable — 90 % recommandé",
-        "bullet3": "Cache de hachage rend les nouvelles analyses quasi instantanées",
-        "badge": "Compatible avec manga, manhwa et manhua",
-        "bullet4": "Détecte les doublons quelle que soit la résolution ou le mode couleur — un scan en niveaux de gris à 1200px et un scan couleur à 3000px de la même page sont quand même signalés"
-      },
-      "photos": {
-        "eyebrow": "Photos et Correspondance de Noms",
-        "title": "Photos et noms similaires — les deux couverts",
-        "desc": "Au-delà des archives, détectez les photos JPG, PNG, HEIC, WEBP, BMP et GIF en double grâce à l'algorithme dHash. La correspondance floue de noms capte les copies qui diffèrent seulement par le formatage — \"Spider-Man #001\" vs \"Spider Man 001\" — avec un seuil configurable.",
-        "bullet1": "Formats photo : JPG, PNG, HEIC, WEBP, BMP, GIF",
-        "bullet2": "Algorithme RapidFuzz avec suppression de symboles configurable",
-        "bullet3": "Compatible Unicode — fonctionne avec le japonais, le coréen, le chinois et tout jeu de caractères"
-      },
-      "autoselect": {
-        "eyebrow": "Sélection Automatique Intelligente",
-        "title": "Un clic marque le bon fichier à conserver",
-        "desc": "Définissez une règle — conserver le Plus Grand, le Plus Petit, le Plus Récent, le Plus Ancien ou celui avec le Plus de Pages — et la sélection automatique marque chaque doublon en un clic. Vérifiez les résultats avant que quoi que ce soit ne soit touché. Rien ne bouge avant votre confirmation.",
-        "bullet1": "Cinq règles : Plus grand, Plus petit, Plus récent, Plus ancien, Plus de pages",
-        "bullet2": "Avertissement de dernière copie évite la suppression accidentelle totale",
-        "bullet3": "Liste d'ignorés permanente pour les paires de variantes intentionnelles",
-        "badge": "Fichiers déplacés vers la Corbeille — récupérables à tout moment"
-      },
-      "export": {
-        "eyebrow": "Rapports et Multi-Dossiers",
-        "title": "Exportez les résultats, comparez entre dossiers",
-        "desc": "Exportez votre analyse au format CSV pour des tableurs ou sous forme de rapport HTML complet avec miniatures, scores de similarité et colonnes triables. Le mode Multi-Dossiers compare deux dossiers séparés — utile pour trouver les doublons entre votre bibliothèque organisée et un dossier Téléchargements.",
-        "bullet1": "Rapport HTML avec miniatures intégrées et statistiques",
-        "bullet2": "Export CSV pour tableurs et archivage",
-        "bullet3": "Comparaison multi-dossiers : Dossier A vs Dossier B"
-      },
-      "pricing": {
-        "eyebrow": "Tarification Simple",
-        "title": "Gratuit pour toujours. Débloquez Pro quand vous en avez besoin.",
-        "freeTitle": "Gratuit",
-        "proTitle": "Pro",
-        "trial": "Essai gratuit de 7 jours disponible sur le Mac App Store",
-        "feat1": "Analyse d'archives (CBZ/CBR/ZIP/RAR)",
-        "feat1free": "Jusqu'à 1 000 fichiers",
-        "feat1pro": "Illimité",
-        "feat2": "Détection de photos en double",
-        "feat2free": "Jusqu'à 1 000 fichiers",
-        "feat2pro": "Illimité",
-        "feat3": "Correspondance floue de noms",
-        "feat3free": "Jusqu'à 1 000 fichiers",
-        "feat3pro": "Illimité",
-        "feat4": "Sélection automatique intelligente",
-        "feat5": "Export de rapports (CSV et HTML)",
-        "feat6": "Comparaison multi-dossiers",
-        "feat7": "Cache de hachage (nouvelles analyses rapides)",
-        "feat8": "Liste d'ignorés permanente"
-      },
-      "faqTitle": "Foire Aux Questions",
-      "faq": [
-        {
-          "q": "Qu'est-ce que le hachage perceptuel et pourquoi est-ce important ?",
-          "a": "Le hachage perceptuel compare la structure visuelle des images plutôt que les octets bruts du fichier. Deux fichiers peuvent avoir des noms, tailles et métadonnées différents — mais si leur contenu se ressemble, le hachage perceptuel les associe. Les détecteurs de doublons standard échouent dès qu'un fichier est renommé ou réexporté ; Comic Duplicate Scanner, non."
-        },
-        {
-          "q": "Peut-il trouver des doublons qui ont été renommés ?",
-          "a": "Oui. Renommer un fichier ne change rien à son contenu. Comic Duplicate Scanner compare les images à l'intérieur de chaque archive, donc un doublon est détecté quel que soit le nom du fichier."
-        },
-        {
-          "q": "La suppression est-elle permanente ?",
-          "a": "Non. Les fichiers marqués sont déplacés vers la Corbeille système (macOS) ou la Corbeille (Windows), pas supprimés définitivement. Vous pouvez récupérer n'importe quel fichier avant de vider la Corbeille."
-        },
-        {
-          "q": "Quels formats de fichiers sont pris en charge ?",
-          "a": "Archives de BD : CBZ, CBR, ZIP, RAR. Photos : JPG, PNG, HEIC, WEBP, BMP, GIF. La correspondance floue de noms fonctionne avec tout type de fichier."
-        },
-        {
-          "q": "Fonctionne-t-il avec des photos, pas seulement des BD ?",
-          "a": "Oui. Sélectionnez le mode Photos pour analyser les fichiers JPG, PNG, HEIC, WEBP, BMP et GIF. Fonctionne avec les exports de bibliothèque photo iPhone, les documents scannés et les collections d'art numérique."
-        },
-        {
-          "q": "Y a-t-il un essai avant d'acheter ?",
-          "a": "Vous pouvez analyser jusqu'à 1 000 fichiers gratuitement, pour toujours. Un essai gratuit de 7 jours sur le Mac App Store débloque un accès illimité, et l'achat Pro unique est à 19,99 $ sans abonnement."
-        },
-        {
-          "q": "Peut-il faire correspondre un scan couleur avec une version en noir et blanc du même contenu ?",
-          "a": "Oui. L'algorithme dHash travaille sur les gradients de luminance, pas sur les valeurs de couleur. Un scan couleur et une version en niveaux de gris de la même page produisent des hashes presque identiques et seront signalés comme doublons."
-        },
-        {
-          "q": "La résolution de l'image affecte-t-elle la détection des doublons ?",
-          "a": "Non. dHash redimensionne chaque image vers une petite grille fixe avant de comparer, donc un scan à 1200px et un à 3000px de la même page donnent la même valeur de hash. Les différences de résolution entre les sources sont complètement ignorées."
-        }
-      ],
-      "backDesc": "Vous cherchez un lecteur de BD et d'ebooks ?",
-      "backCta": "Retour à BiblioFuse Reader",
-      "languages": "Interface : Anglais · Espagnol · Français · Néerlandais · Portugais · Russe · Chinois simplifié · Japonais · Coréen · Indonésien · Malais"
     },
     "smartdecryptPage": {
       "seo": {
@@ -1988,241 +1646,241 @@
       }
     }
   },
-        "featureMatrix": {
-      "essentials": "L’essentiel par plateforme",
-      "whereToGet": "Où l’obtenir",
-      "sinceVersion": "depuis {{version}} · {{date}}",
-      "sinceDate": "depuis {{date}}",
-      "builtDate": "développé le {{date}}",
-      "countAll": "{{n}} fonctions",
-      "countFiltered": "{{n}} sur {{total}} fonctions",
-      "eyebrow": "Matrice des fonctions",
-      "title": "Ce qui marche où",
-      "subtitle": "Toutes les fonctions de BiblioFuse, sur chaque plateforme, avec la version qui les a apportées. Cherchez ou filtrez pour trouver la vôtre.",
-      "searchLabel": "Rechercher des fonctions",
-      "searchPlaceholder": "Essayez « traduction manga », « tategaki », « RTL », « Komga »…",
-      "platformsLabel": "Plateformes",
-      "groupsLabel": "Catégorie",
-      "sinceLabel": "Modifié depuis",
-      "sinceAny": "Toute période",
-      "since30": "30 derniers jours",
-      "since90": "3 derniers mois",
-      "since180": "6 derniers mois",
-      "proOnly": "Fonctions Pro uniquement",
-      "showUnreleased": "Inclure les fonctions développées mais pas encore publiées",
-      "all": "Toutes",
-      "reset": "Réinitialiser",
-      "noResults": "Aucune fonction ne correspond à ces filtres.",
-      "noResultsHint": "Essayez une recherche plus courte ou réinitialisez les filtres.",
-      "legendShipped": "Disponible",
-      "legendPartial": "Partiellement disponible",
-      "legendMerged": "Pas encore publié",
-      "legendNa": "Absent de cette plateforme",
-      "notYet": "pas encore",
-      "featureColumn": "Fonction",
-      "mergedNote": "Les lignes « pas encore » sont développées mais absentes d’une version publique sur cette plateforme.",
-      "coverage": "Couvre les applis natives depuis mai 2026. Les versions antérieures sous Flutter ne sont pas listées.",
-      "sinceTooltip": "depuis",
-      "builtTooltip": "développé",
-      "groups": {
-        "reading": "Lecture",
-        "libraries": "Bibliothèques et serveurs",
-        "streaming": "Diffusion depuis votre machine",
-        "input": "Contrôles et plateforme"
+  "featureMatrix": {
+    "essentials": "L’essentiel par plateforme",
+    "whereToGet": "Où l’obtenir",
+    "sinceVersion": "depuis {{version}} · {{date}}",
+    "sinceDate": "depuis {{date}}",
+    "builtDate": "développé le {{date}}",
+    "countAll": "{{n}} fonctions",
+    "countFiltered": "{{n}} sur {{total}} fonctions",
+    "eyebrow": "Matrice des fonctions",
+    "title": "Ce qui marche où",
+    "subtitle": "Toutes les fonctions de BiblioFuse, sur chaque plateforme, avec la version qui les a apportées. Cherchez ou filtrez pour trouver la vôtre.",
+    "searchLabel": "Rechercher des fonctions",
+    "searchPlaceholder": "Essayez « traduction manga », « tategaki », « RTL », « Komga »…",
+    "platformsLabel": "Plateformes",
+    "groupsLabel": "Catégorie",
+    "sinceLabel": "Modifié depuis",
+    "sinceAny": "Toute période",
+    "since30": "30 derniers jours",
+    "since90": "3 derniers mois",
+    "since180": "6 derniers mois",
+    "proOnly": "Fonctions Pro uniquement",
+    "showUnreleased": "Inclure les fonctions développées mais pas encore publiées",
+    "all": "Toutes",
+    "reset": "Réinitialiser",
+    "noResults": "Aucune fonction ne correspond à ces filtres.",
+    "noResultsHint": "Essayez une recherche plus courte ou réinitialisez les filtres.",
+    "legendShipped": "Disponible",
+    "legendPartial": "Partiellement disponible",
+    "legendMerged": "Pas encore publié",
+    "legendNa": "Absent de cette plateforme",
+    "notYet": "pas encore",
+    "featureColumn": "Fonction",
+    "mergedNote": "Les lignes « pas encore » sont développées mais absentes d’une version publique sur cette plateforme.",
+    "coverage": "Couvre les applis natives depuis mai 2026. Les versions antérieures sous Flutter ne sont pas listées.",
+    "sinceTooltip": "depuis",
+    "builtTooltip": "développé",
+    "groups": {
+      "reading": "Lecture",
+      "libraries": "Bibliothèques et serveurs",
+      "streaming": "Diffusion depuis votre machine",
+      "input": "Contrôles et plateforme"
+    },
+    "cellNotes": {
+      "lanOnlyTvos": "Wi-Fi local uniquement ; Tailscale n’est pas assez fiable sur tvOS",
+      "noICloudRoute": "Wi-Fi local et Tailscale manuel ; la voie iCloud est réservée à Apple",
+      "lanOnly": "Wi-Fi local uniquement",
+      "tailscaleServe": "Tailscale Serve et accès par sous-réseau"
+    },
+    "features": {
+      "live-translation": {
+        "label": "Traduction BD et manga en direct",
+        "note": "PP-OCRv5 sur l’appareil, composé dans la bulle"
       },
-      "cellNotes": {
-        "lanOnlyTvos": "Wi-Fi local uniquement ; Tailscale n’est pas assez fiable sur tvOS",
-        "noICloudRoute": "Wi-Fi local et Tailscale manuel ; la voie iCloud est réservée à Apple",
-        "lanOnly": "Wi-Fi local uniquement",
-        "tailscaleServe": "Tailscale Serve et accès par sous-réseau"
+      "translate-export-cbz": {
+        "label": "Traduire et exporter en CBZ",
+        "note": "Enregistre une copie entièrement traduite de l’archive"
       },
-      "features": {
-        "live-translation": {
-          "label": "Traduction BD et manga en direct",
-          "note": "PP-OCRv5 sur l’appareil, composé dans la bulle"
+      "page-curl": {
+        "label": "Tourner la page en corne",
+        "note": "BD, PDF et texte, par appui ou balayage"
+      },
+      "dual-page-spreads": {
+        "label": "Double page",
+        "note": "Tablette en paysage, comme un livre ouvert"
+      },
+      "vertical-japanese": {
+        "label": "Japonais vertical / EPUB vertical",
+        "note": "Rendu tategaki correct"
+      },
+      "epub-comic": {
+        "label": "Prise en charge des BD en EPUB",
+        "note": "EPUB à dos d’images et mise en page fixe"
+      },
+      "find-in-book": {
+        "label": "Rechercher dans le livre"
+      },
+      "reading-direction": {
+        "label": "Sens de lecture",
+        "note": "Inverse page, curseur et commandes ; réglé automatiquement d’après les métadonnées"
+      },
+      "continuous-page-turn": {
+        "label": "Mode continu et changement de page revus",
+        "note": "Défilement par sections pour BD, PDF, EPUB et texte ; la page s’arrête où il faut"
+      },
+      "komga-kavita-native": {
+        "label": "API natives Komga et Kavita",
+        "note": "Détail de série, étiquettes, badges, tri et recherche côté serveur"
+      },
+      "opds": {
+        "label": "OPDS 1.x et diffusion OPDS-PSE",
+        "note": "BD page par page. OPDS 2.0 n’est pas pris en charge."
+      },
+      "kavita-sync": {
+        "label": "Synchronisation position et marque-pages Kavita"
+      },
+      "folder-as-library": {
+        "label": "Parcourir un dossier comme bibliothèque",
+        "note": "Détail de série façon Kavita, onglets Volume et Chapitre"
+      },
+      "managed-downloads": {
+        "label": "Téléchargements gérés et synchro de progression",
+        "note": "Avec un gestionnaire de cache de téléchargement"
+      },
+      "host-incremental-stream": {
+        "label": "Hôte BiblioFuse : diffuse votre bibliothèque",
+        "note": "Pages PDF vectorielles, pages BD EPUB, EPUB redistribuable à la demande"
+      },
+      "client-reads-host": {
+        "label": "App BiblioFuse : lit depuis votre hôte",
+        "note": "Découverte Bonjour via HTTPS à certificat épinglé"
+      },
+      "connection-routes": {
+        "label": "Modes de connexion",
+        "note": "iCloud + Tailscale · Wi-Fi local · Tailscale manuel"
+      },
+      "controller": {
+        "label": "Manette de jeu et touches personnalisables"
+      },
+      "keyboard-shortcuts": {
+        "label": "Raccourcis clavier du lecteur"
+      },
+      "look-to-scroll": {
+        "label": "Défilement au regard",
+        "note": "Défilement au bord de l’écran par le regard"
+      },
+      "text-to-speech": {
+        "label": "Lecture à voix haute",
+        "note": "Surlignage des phrases, commandes sur écran verrouillé, minuteur"
+      },
+      "reading-progress-restore": {
+        "label": "Reprendre où vous en étiez",
+        "note": "En pages ou en continu, pour archives, PDF et texte"
+      },
+      "export-tools": {
+        "label": "Export par lots et fusion",
+        "note": "Combine ou convertit des archives en CBZ et EPUB"
+      },
+      "bulk-metadata-editing": {
+        "label": "Notes et étiquettes en lot",
+        "note": "Sélection multiple, puis modification des métadonnées en une fois"
+      },
+      "remote-annotations": {
+        "label": "Modifier et enregistrer les livres diffusés",
+        "note": "Modifiez étiquettes et note sur l’hôte, ou enregistrez une copie locale"
+      },
+      "app-lock": {
+        "label": "Verrouillage de l’app",
+        "note": "Accès à la bibliothèque par code PIN"
+      },
+      "spatial-library": {
+        "label": "Bibliothèque spatiale",
+        "note": "Parcourez des étagères placées dans la pièce"
+      }
+    },
+    "specs": {
+      "read-formats": {
+        "label": "Formats pris en charge",
+        "values": {
+          "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "tvos": "CBZ · CBR · RAR · ZIP",
+          "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "androidtv": "CBZ · CBR · RAR · ZIP",
+          "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
         },
-        "translate-export-cbz": {
-          "label": "Traduire et exporter en CBZ",
-          "note": "Enregistre une copie entièrement traduite de l’archive"
-        },
-        "page-curl": {
-          "label": "Tourner la page en corne",
-          "note": "BD, PDF et texte, par appui ou balayage"
-        },
-        "dual-page-spreads": {
-          "label": "Double page",
-          "note": "Tablette en paysage, comme un livre ouvert"
-        },
-        "vertical-japanese": {
-          "label": "Japonais vertical / EPUB vertical",
-          "note": "Rendu tategaki correct"
-        },
-        "epub-comic": {
-          "label": "Prise en charge des BD en EPUB",
-          "note": "EPUB à dos d’images et mise en page fixe"
-        },
-        "find-in-book": {
-          "label": "Rechercher dans le livre"
-        },
-        "reading-direction": {
-          "label": "Sens de lecture",
-          "note": "Inverse page, curseur et commandes ; réglé automatiquement d’après les métadonnées"
-        },
-        "continuous-page-turn": {
-          "label": "Mode continu et changement de page revus",
-          "note": "Défilement par sections pour BD, PDF, EPUB et texte ; la page s’arrête où il faut"
-        },
-        "komga-kavita-native": {
-          "label": "API natives Komga et Kavita",
-          "note": "Détail de série, étiquettes, badges, tri et recherche côté serveur"
-        },
-        "opds": {
-          "label": "OPDS 1.x et diffusion OPDS-PSE",
-          "note": "BD page par page. OPDS 2.0 n’est pas pris en charge."
-        },
-        "kavita-sync": {
-          "label": "Synchronisation position et marque-pages Kavita"
-        },
-        "folder-as-library": {
-          "label": "Parcourir un dossier comme bibliothèque",
-          "note": "Détail de série façon Kavita, onglets Volume et Chapitre"
-        },
-        "managed-downloads": {
-          "label": "Téléchargements gérés et synchro de progression",
-          "note": "Avec un gestionnaire de cache de téléchargement"
-        },
-        "host-incremental-stream": {
-          "label": "Hôte BiblioFuse : diffuse votre bibliothèque",
-          "note": "Pages PDF vectorielles, pages BD EPUB, EPUB redistribuable à la demande"
-        },
-        "client-reads-host": {
-          "label": "App BiblioFuse : lit depuis votre hôte",
-          "note": "Découverte Bonjour via HTTPS à certificat épinglé"
-        },
-        "connection-routes": {
-          "label": "Modes de connexion",
-          "note": "iCloud + Tailscale · Wi-Fi local · Tailscale manuel"
-        },
-        "controller": {
-          "label": "Manette de jeu et touches personnalisables"
-        },
-        "keyboard-shortcuts": {
-          "label": "Raccourcis clavier du lecteur"
-        },
-        "look-to-scroll": {
-          "label": "Défilement au regard",
-          "note": "Défilement au bord de l’écran par le regard"
-        },
-        "text-to-speech": {
-          "label": "Lecture à voix haute",
-          "note": "Surlignage des phrases, commandes sur écran verrouillé, minuteur"
-        },
-        "reading-progress-restore": {
-          "label": "Reprendre où vous en étiez",
-          "note": "En pages ou en continu, pour archives, PDF et texte"
-        },
-        "export-tools": {
-          "label": "Export par lots et fusion",
-          "note": "Combine ou convertit des archives en CBZ et EPUB"
-        },
-        "bulk-metadata-editing": {
-          "label": "Notes et étiquettes en lot",
-          "note": "Sélection multiple, puis modification des métadonnées en une fois"
-        },
-        "remote-annotations": {
-          "label": "Modifier et enregistrer les livres diffusés",
-          "note": "Modifiez étiquettes et note sur l’hôte, ou enregistrez une copie locale"
-        },
-        "app-lock": {
-          "label": "Verrouillage de l’app",
-          "note": "Accès à la bibliothèque par code PIN"
-        },
-        "spatial-library": {
-          "label": "Bibliothèque spatiale",
-          "note": "Parcourez des étagères placées dans la pièce"
+        "notes": {
+          "tvos": "BD uniquement — pas de lecteur de texte",
+          "androidtv": "BD uniquement — pas de lecteur de texte",
+          "nas": "Lecteur navigateur ; pas encore de PDF"
         }
       },
-      "specs": {
-        "read-formats": {
-          "label": "Formats pris en charge",
-          "values": {
-            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "tvos": "CBZ · CBR · RAR · ZIP",
-            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "androidtv": "CBZ · CBR · RAR · ZIP",
-            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
-          },
-          "notes": {
-            "tvos": "BD uniquement — pas de lecteur de texte",
-            "androidtv": "BD uniquement — pas de lecteur de texte",
-            "nas": "Lecteur navigateur ; pas encore de PDF"
-          }
+      "library-sources": {
+        "label": "Sources de bibliothèque",
+        "values": {
+          "ios": "Local · iCloud · un hôte BiblioFuse",
+          "macos": "Local · iCloud · SMB / NAS",
+          "visionos": "Local · iCloud · un hôte BiblioFuse",
+          "tvos": "Un hôte BiblioFuse uniquement",
+          "android": "Local · dossiers externes",
+          "androidtv": "Un hôte BiblioFuse uniquement",
+          "windows": "Local · iCloud · SMB / NAS",
+          "nas": "Son propre stockage local ou réseau"
         },
-        "library-sources": {
-          "label": "Sources de bibliothèque",
-          "values": {
-            "ios": "Local · iCloud · un hôte BiblioFuse",
-            "macos": "Local · iCloud · SMB / NAS",
-            "visionos": "Local · iCloud · un hôte BiblioFuse",
-            "tvos": "Un hôte BiblioFuse uniquement",
-            "android": "Local · dossiers externes",
-            "androidtv": "Un hôte BiblioFuse uniquement",
-            "windows": "Local · iCloud · SMB / NAS",
-            "nas": "Son propre stockage local ou réseau"
-          },
-          "notes": {
-            "nas": "Pas iCloud"
-          }
+        "notes": {
+          "nas": "Pas iCloud"
+        }
+      },
+      "icloud-bookshelf": {
+        "label": "Bibliothèque iCloud",
+        "note": "Votre bibliothèque vous suit d’un appareil à l’autre",
+        "values": {
+          "ios": "Synchronisation multi-appareils",
+          "macos": "Synchronisation multi-appareils",
+          "visionos": "Synchronisation multi-appareils",
+          "windows": "Synchronisation multi-appareils"
         },
-        "icloud-bookshelf": {
-          "label": "Bibliothèque iCloud",
-          "note": "Votre bibliothèque vous suit d’un appareil à l’autre",
-          "values": {
-            "ios": "Synchronisation multi-appareils",
-            "macos": "Synchronisation multi-appareils",
-            "visionos": "Synchronisation multi-appareils",
-            "windows": "Synchronisation multi-appareils"
-          },
-          "notes": {
-            "tvos": "Pas d’iCloud sur Apple TV"
-          }
+        "notes": {
+          "tvos": "Pas d’iCloud sur Apple TV"
+        }
+      },
+      "reader-features": {
+        "label": "Fonctions du lecteur",
+        "values": {
+          "ios": "Synthèse vocale · zoom rapide · défilement auto · progression · notes · étiquettes",
+          "macos": "Synthèse vocale · défilement auto · progression · notes · étiquettes",
+          "visionos": "Synthèse vocale · défilement auto · progression · notes · étiquettes",
+          "tvos": "Défilement auto · progression · notes · étiquettes",
+          "android": "Synthèse vocale · zoom rapide · défilement auto · progression · notes · étiquettes",
+          "androidtv": "Défilement auto · progression · notes · étiquettes",
+          "windows": "Synthèse vocale · défilement auto · progression · notes · étiquettes",
+          "nas": "Défilement continu · progression · notes · étiquettes"
         },
-        "reader-features": {
-          "label": "Fonctions du lecteur",
-          "values": {
-            "ios": "Synthèse vocale · zoom rapide · défilement auto · progression · notes · étiquettes",
-            "macos": "Synthèse vocale · défilement auto · progression · notes · étiquettes",
-            "visionos": "Synthèse vocale · défilement auto · progression · notes · étiquettes",
-            "tvos": "Défilement auto · progression · notes · étiquettes",
-            "android": "Synthèse vocale · zoom rapide · défilement auto · progression · notes · étiquettes",
-            "androidtv": "Défilement auto · progression · notes · étiquettes",
-            "windows": "Synthèse vocale · défilement auto · progression · notes · étiquettes",
-            "nas": "Défilement continu · progression · notes · étiquettes"
-          },
-          "notes": {
-            "nas": "Ni synthèse vocale ni zoom rapide"
-          }
+        "notes": {
+          "nas": "Ni synthèse vocale ni zoom rapide"
+        }
+      },
+      "interface-languages": {
+        "label": "Langues de l’interface",
+        "values": {
+          "ios": "11 langues",
+          "macos": "11 langues",
+          "visionos": "11 langues",
+          "tvos": "11 langues",
+          "android": "12 langues",
+          "androidtv": "12 langues",
+          "windows": "11 langues",
+          "nas": "11 langues"
         },
-        "interface-languages": {
-          "label": "Langues de l’interface",
-          "values": {
-            "ios": "11 langues",
-            "macos": "11 langues",
-            "visionos": "11 langues",
-            "tvos": "11 langues",
-            "android": "12 langues",
-            "androidtv": "12 langues",
-            "windows": "11 langues",
-            "nas": "11 langues"
-          },
-          "notes": {
-            "android": "Ajoute l’allemand",
-            "androidtv": "Ajoute l’allemand"
-          }
+        "notes": {
+          "android": "Ajoute l’allemand",
+          "androidtv": "Ajoute l’allemand"
         }
       }
     }
+  }
 }

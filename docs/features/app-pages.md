@@ -1,8 +1,15 @@
 # Sister-app landing pages
 
-`src/pages/ComicReader.jsx`, `WebApp.jsx`, `GrepTagReader.jsx`, `ArchiveScanner.jsx` —
-one landing page per app, each reachable at its own top-level route (`/comicreader`,
-`/grepreader`, `/archive`) plus a generic `/webapp` page.
+`src/pages/ComicReader.jsx` and `WebApp.jsx` — the flagship reader landing page at
+`/comicreader` plus the generic `/webapp` page.
+
+`GrepTagReader.jsx` and `ArchiveScanner.jsx` were **deleted 2026-09-09**. GrepTag and
+Comic Duplicate Scanner now live on mlogictech.com (`/greptag`,
+`/comic-duplicate-scanner`) and their old bibliofuse.com routes 301 there — see
+`docs/cloudflare-redirects-greptag-archive.md`. GrepTag's App Store listing already
+pointed away from this domain (`marketingUrl: null`, `supportUrl:
+www.mlogictech.com/support`); the website was the last artifact still presenting the two
+apps as one product line, which is what guideline 4.3(a) flagged.
 
 `SmartDecrypt.jsx` and `ContentCue.jsx` (`/smartdecrypt`, `/contentcue`) are **not**
 landing pages anymore — retired 2026-07-20 in favor of their listing on
@@ -29,8 +36,8 @@ revisiting; it exists only because mlogictech.com wasn't ready.
 
 ## Shared conventions
 - Each app page hides the global `Footer` (see the `isWebApp` / `isComicReader` /
-  `isGrepTagReader` / etc. flags in `App.jsx`'s `AppLayout`) since these pages have
-  their own app-specific footer/CTA content.
+  `isSmartDecrypt` / `isContentCue` flags in `App.jsx`'s `AppLayout`) since these pages
+  have their own app-specific footer/CTA content.
 - Each app has a matching pair of sub-pages:
   `/<app>/changelog` → `AppChangelog` (see `changelog.md`)
   `/<app>/privacy` → `AppPrivacy` (see `privacy-pages.md`)
@@ -63,39 +70,44 @@ Submissions include the visible answers plus hidden context fields:
 `siteLanguage`, `browserLanguage`, `pagePath`, `referrer`, and `submittedAt`.
 
 The app-interest list is intentionally fixed to:
-`BiblioFuse GrepTag Reader`, `SmartDecrypt PDF ZIP`, `ContentCue`, and
-`Others, please specify`. Comic Duplicate Scanner is intentionally excluded because it
-needs a bigger screen.
+`SmartDecrypt PDF ZIP`, `ContentCue`, and `Others, please specify`. Comic Duplicate
+Scanner is excluded because it needs a bigger screen; GrepTag was removed 2026-09-09
+along with the rest of its presence on this domain.
 
 `/androidrequest` is generated as a static fallback for all 11 locales and marked
 `noindex, follow`, but it is not added to the sitemap.
 
 ## Flagship BiblioFuse Reader
 `src/pages/ComicReader.jsx` is the Layer-1 page for the flagship comic/ebook reader at
-`/comicreader`. It reuses the translated `redesign.readerSection.*`,
-`redesign.toolsHighlight.*`, and `redesign.grepTagPage.whySeparate.*` copy that also
-supports the homepage reader chooser and the GrepTag comparison, so the comic-vs-novel distinction
-stays consistent across the hub.
+`/comicreader`. It reuses the translated `redesign.readerSection.*` and
+`redesign.toolsHighlight.*` copy shared with the homepage.
 
-**Homepage structure, updated 2026-07-20**: the old single generic `Hero` +
-6-card `ProductFamily` grid + card-based `TwoAppsSection` gave all products equal
-visual weight and buried the actual flagship decision under the whole family grid.
-Current order: `Hero` (BiblioFuse Reader) → `GrepTagHero` (new, reuses
-`redesign.grepTagPage.hero.*` copy) → `ReaderComparisonTable` (the "Why two apps?"
-table, `src/components/ReaderComparisonTable.jsx`) → `ProductFamily` grid for the rest
-of the family. `TwoAppsSection` was removed entirely (redundant with the table
-version); its `redesign.twoAppsSection.*` translation keys other than `.textCta`
-(still used for the table's CTA) are now unused across all 11 locale files.
-`ReaderComparisonTable` is homepage-only now — it also used to render on
-`/comicreader/` itself (`id="why-two-apps"`) but that was a duplicate of the homepage
-section and was removed from `ComicReader.jsx` on 2026-07-21.
+**Homepage structure, updated 2026-09-09**: bibliofuse.com is now a single-product site.
+The funnel is `Hero` (BiblioFuse Reader) → `ProductFamily` → `AndroidInterestSection` →
+`StandaloneToolsSection` → `FaqSection` → `PrivacyStrip` → `BlogPreview` → `FinalCTA`.
 
-**Per-column CTAs, 2026-07-26**: the table used to end in a single centered button
-that only linked to `/grepreader/`, even though the table compares both apps —
-replaced with a final table row with one button per column: BiblioFuse Reader's cell
-links to `/comicreader/` (new key `redesign.grepTagPage.whySeparate.readerCta`,
-"Explore BiblioFuse Reader", parallel to the existing `.textCta` GrepTag copy), and
-GrepTag's cell keeps its original `/grepreader/` link and `.textCta` text unchanged.
+Removed in that change: `GrepTagHero` (a full second flagship hero), `ReaderComparisonTable`
+(`src/components/ReaderComparisonTable.jsx`, the "Why two apps?" table — deleted), and
+`ArchiveScannerSection`. `ProductFamily` is down to four cards — BiblioFuse Reader,
+BiblioFuse Web Tool, SmartDecrypt and ContentCue — the last two linking straight to the
+App Store rather than to pages on this domain.
+
+The `redesign.grepTagPage`, `redesign.archivePage`, `redesign.archiveSection` and
+`redesign.twoAppsSection` blocks were deleted from all 11 locale files. The four
+BiblioFuse-only strings that lived under `twoAppsSection` were rehomed rather than lost:
+`comicCta` → `redesign.readerSection.cta`, `comicBullet1..3` →
+`redesign.readerSection.bullet1..3` (used by `ComicReader.jsx`'s schema featureList).
+`Home.jsx` had also been borrowing `redesign.grepTagPage.languages`; it now has its own
+`redesign.home.hero.languages`.
+
+**Homepage FAQ item 0** used to answer "Which BiblioFuse app should I start with?" by
+comparing BiblioFuse Reader with GrepTag — and that answer feeds the homepage **FAQPage
+JSON-LD** via `faqItems` in `Home.jsx`, so the comparison was reaching Google as
+structured data. Both question and answer were rewritten as single-product copy in all
+11 locales.
+
+`ReaderTeaser`, `ReaderSection` and `ComparisonTable` in `Home.jsx` are defined but never
+rendered — pre-existing dead code, left in place.
 
 `Hero`'s `DevicePills` list had drifted from `/comicreader/`'s own hero — missing
 `docker`/`synology` (added there when the comicreader hero grew a self-hosting
@@ -297,9 +309,8 @@ web-optimized JPEGs in `public/image/comicreader/vision/`. Keep marketing of a v
 build gated on real App Store availability (see the rollout rules in CLAUDE.md).
 
 Cover-thumbnail messaging belongs in both layers: a compact USP line in each
-homepage reader card, then fuller explanation in the Reader library section and the
-GrepTag covers section. Site screenshots should use generated or sanitized covers,
-not real copyrighted book covers.
+homepage reader card, then fuller explanation in the Reader library section. Site
+screenshots should use generated or sanitized covers, not real copyrighted book covers.
 
 When describing Reader streaming, use Mac/PC language unless the feature is truly
 Mac-only. iOS can stream and read from both Mac and PC libraries.

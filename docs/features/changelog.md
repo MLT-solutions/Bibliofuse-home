@@ -13,7 +13,7 @@ Each `data/changelog-<app>.js` exports `ENTRIES`, `KNOWN_ISSUES`, `ROADMAP` arra
 - `ROADMAP` entries have a `status`: `pending | parked | exploring`.
 
 `AppChangelog.jsx` imports all four apps' changelog data (`APP_CONFIGS` keyed by
-`archive | grepreader | smartdecrypt | contentcue`) and picks the right one based on
+`smartdecrypt | contentcue`; `archive` and `grepreader` removed 2026-09-09) and picks the right one based on
 the `appSlug` prop passed from the route in `App.jsx`.
 
 ## Adding an entry

@@ -4,22 +4,17 @@ import { useTranslation } from 'react-i18next';
 import logo from '../assets/logo.png';
 import SEO from '../components/SEO';
 import DevicePills from '../components/DevicePills';
-import ReaderComparisonTable from '../components/ReaderComparisonTable';
 import { articles } from '../data/articles';
 
 const appStoreUrl = 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093';
 const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ';
 const bibliofusePcUrl = 'https://apps.microsoft.com/store/detail/9N77MZ509ML2';
-const archiveMacUrl = 'https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449';
-const archiveMsUrl = 'https://apps.microsoft.com/detail/9n2jb4k5wvcq';
 const smartDecryptMsUrl = 'https://apps.microsoft.com/detail/9p9bfkr5zdz8';
 // Temporary: point straight at the App Store instead of mlogictech.com/products
 // until that listing is live — see docs/features/app-pages.md. Swap back to
 // mlogictech.com once it's ready.
 const smartDecryptAppStoreUrl = 'https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229';
 const contentCueAppStoreUrl = 'https://apps.apple.com/us/app/contentcue-read-listen/id6770080864';
-const grepTagReaderUrl = 'https://apps.apple.com/app/id6779977609';
-const grepTagMsStoreUrl = 'https://apps.microsoft.com/store/detail/9MT6VDXXZ3RH';
 // Mirrors HOSTS.docker/synology.appLink in ReaderFamilyGuide.jsx — keep in sync.
 const dockerUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution';
 const synologyUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution/releases';
@@ -163,11 +158,7 @@ function Hero({ lang }) {
               </span>
             ))}
           </div>
-          {/* Reuses grepTagPage's language-list string rather than adding a new
-              translation key across 11 locale files -- the text is generic
-              ("App UI: English · Spanish · ...") and already identically
-              duplicated under 7 other key names in this codebase. */}
-          <p className="mt-3 text-xs text-slate-500">{t('redesign.grepTagPage.languages')}</p>
+          <p className="mt-3 text-xs text-slate-500">{t('redesign.home.hero.languages')}</p>
 
           <div className="mt-7 flex max-w-full items-start gap-3 rounded-2xl border border-amber-200 bg-amber-50/85 px-4 py-3 text-left sm:max-w-xl">
             <svg className="mt-0.5 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="#d97706"><path d="M13 14h-2v-4h2m0 8h-2v-2h2M1 21h22L12 2 1 21z" /></svg>
@@ -212,81 +203,6 @@ function Hero({ lang }) {
   );
 }
 
-// Second flagship hero, added 2026-07-20 alongside ReaderComparisonTable so the
-// homepage funnel is: Reader hero -> GrepTag hero -> "why two apps" comparison
-// table -> decide which to check out -- instead of one generic hero followed by
-// a 6-card grid that gave every product equal weight. Reuses GrepTagReader.jsx's
-// existing hero copy/translation keys (redesign.grepTagPage.hero.*) rather than
-// new ones, so this ships fully localized across all 11 languages for free.
-function GrepTagHero({ lang }) {
-  const { t } = useTranslation();
-
-  return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#1e1b4b] via-[#312e81] to-[#1e1b4b] py-20 sm:py-24">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(99,102,241,0.3),transparent_50%),radial-gradient(circle_at_80%_70%,rgba(139,92,246,0.2),transparent_50%)]" />
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 text-center sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10 lg:text-left lg:px-8">
-        <div>
-          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-indigo-500/10 px-3 py-1.5 text-xs font-semibold text-indigo-200">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inset-0 animate-ping rounded-full bg-indigo-400" />
-              <span className="relative h-2 w-2 rounded-full bg-indigo-400" />
-            </span>
-            {t('redesign.grepTagPage.hero.badge')}
-          </div>
-
-          <div className="mb-6 mt-5 flex justify-center lg:justify-start">
-            <img src="/image/grepreader-logo.png" alt="GrepTag Reader" className="h-20 w-20 rounded-2xl shadow-2xl" />
-          </div>
-
-          <h2 className="mb-5 text-[clamp(2.2rem,4.5vw,3.5rem)] font-black leading-tight tracking-tight text-white">
-            {t('redesign.grepTagPage.hero.title')}
-          </h2>
-          <p className="mx-auto mb-6 max-w-xl text-lg leading-relaxed text-indigo-200 lg:mx-0">
-            {t('redesign.grepTagPage.hero.desc')}
-          </p>
-
-          <DevicePills devices={['iphone', 'ipad', 'mac', 'windows']} tone="dark" className="mb-8 justify-center lg:justify-start" />
-
-          <div className="flex flex-col items-center gap-3 lg:items-start">
-            <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
-              <a href={grepTagReaderUrl} target="_blank" rel="noopener noreferrer" className="inline-flex">
-                <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt={t('redesign.grepTagPage.hero.appStoreCta')} className="h-10 w-auto" />
-              </a>
-              <a href={grepTagMsStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex">
-                <img src="/image/Microsoft_Store_badge.svg" alt={t('redesign.grepTagPage.hero.msStoreCta')} className="h-10 w-auto" />
-              </a>
-            </div>
-            <span className="text-xs font-medium text-indigo-300">{t('redesign.grepTagPage.hero.macInReview')}</span>
-          </div>
-
-          <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-medium text-indigo-300 lg:justify-start">
-            {[t('redesign.grepTagPage.hero.trust1'), t('redesign.grepTagPage.hero.trust2'), t('redesign.grepTagPage.hero.trust3')].map((s) => (
-              <span key={s} className="flex items-center gap-1.5">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#818cf8" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-                {s}
-              </span>
-            ))}
-          </div>
-          <p className="mt-4 text-xs text-indigo-200/70">{t('redesign.grepTagPage.languages')}</p>
-
-          <Link to={`/${lang}/grepreader/`} className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-300 hover:text-indigo-100 transition-colors">
-            {t('redesign.twoAppsSection.textCta', 'See full details')} →
-          </Link>
-        </div>
-
-        <div className="mx-auto w-full max-w-[280px] overflow-hidden rounded-3xl border border-white/10 shadow-2xl lg:max-w-none">
-          <img
-            src="/image/grepreader/asc/iphone-grep-profile.jpg"
-            alt={t('redesign.grepTagPage.hero.screenshotAlt')}
-            className="block w-full"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function ProductFamily({ lang }) {
   const { t } = useTranslation();
   const products = [
@@ -313,18 +229,6 @@ function ProductFamily({ lang }) {
       accent: 'teal',
     },
     {
-      tag: t('redesign.productFamily.products.archive.tag'),
-      logoSrc: '/image/archive-logo.png',
-      name: 'Comic Duplicate Scanner',
-      desc: t('redesign.productFamily.products.archive.desc'),
-      bullets: [t('redesign.productFamily.products.archive.bullet1'), t('redesign.productFamily.products.archive.bullet2'), t('redesign.productFamily.products.archive.bullet3'), t('redesign.productFamily.products.archive.bullet4')],
-      cta: t('redesign.productFamily.learnMore'),
-      to: `/${lang}/archive/`,
-      secondary: t('redesign.productFamily.products.archive.secondary'),
-      secondaryHref: archiveMsUrl,
-      accent: 'orange',
-    },
-    {
       tag: t('redesign.productFamily.products.smartdecrypt.tag'),
       logoSrc: '/image/smartdecrypt-logo.png',
       name: 'SmartDecrypt PDF ZIP',
@@ -346,17 +250,6 @@ function ProductFamily({ lang }) {
       cta: t('redesign.productFamily.learnMore'),
       href: contentCueAppStoreUrl,
       accent: 'green',
-    },
-    {
-      tag: t('redesign.productFamily.products.grepreader.tag'),
-      icon: 'search',
-      logoSrc: '/image/grepreader-logo.png',
-      name: 'GrepTag Reader',
-      desc: t('redesign.productFamily.products.grepreader.desc'),
-      bullets: [t('redesign.productFamily.products.grepreader.bullet1'), t('redesign.productFamily.products.grepreader.bullet2'), t('redesign.productFamily.products.grepreader.bullet3')],
-      cta: t('redesign.productFamily.learnMore'),
-      to: `/${lang}/grepreader/`,
-      accent: 'indigo',
     },
   ];
 
@@ -630,7 +523,7 @@ function ReaderTeaser({ lang }) {
               to={`/${lang}/comicreader/`}
               className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-[#0b1220] px-5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#152033]"
             >
-              {t('redesign.twoAppsSection.comicCta')}
+              {t('redesign.readerSection.cta')}
               <ArrowRightIcon />
             </Link>
             <StoreBadge type="apple" size="sm" />
@@ -972,97 +865,6 @@ function renderLocalizedTableCell(cell, strong) {
   );
 }
 
-function ArchiveScannerSection() {
-  const { t } = useTranslation();
-  const { lang = 'en' } = useParams();
-  return (
-    <section id="archive" className="relative overflow-hidden py-24 sm:py-28">
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,#FFFFFF_0%,#FFF7EE_60%,#FFFFFF_100%)]" />
-
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
-          <div>
-            <div className="mb-5">
-              <img src="/image/archive-logo.png" alt="Comic Duplicate Scanner" className="h-16 w-16 rounded-2xl object-cover shadow-sm" />
-            </div>
-            <div className="inline-flex items-center gap-2 rounded-full bg-warm/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-warm-deep">
-              <span className="h-1.5 w-1.5 rounded-full bg-warm" />
-              {t('redesign.archiveSection.badge')}
-            </div>
-            <h2 className="font-display tighter mt-5 text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.05] text-ink">
-              {t('redesign.archiveSection.titleA')}
-              <br />
-              <span className="text-warm-deep">{t('redesign.archiveSection.titleB')}</span>
-            </h2>
-            <p className="mt-5 max-w-lg text-lg leading-relaxed text-ink-muted">
-              {t('redesign.archiveSection.desc')}
-            </p>
-
-            <div className="mt-8 grid max-w-lg gap-4 sm:grid-cols-2">
-              {[
-                { title: t('redesign.archiveSection.features.scanning.title'), body: t('redesign.archiveSection.features.scanning.body') },
-                { title: t('redesign.archiveSection.features.photo.title'), body: t('redesign.archiveSection.features.photo.body') },
-                { title: t('redesign.archiveSection.features.select.title'), body: t('redesign.archiveSection.features.select.body') },
-                { title: t('redesign.archiveSection.features.delete.title'), body: t('redesign.archiveSection.features.delete.body') },
-              ].map((feature) => (
-                <div key={feature.title} className="flex items-start gap-2.5">
-                  <span className="mt-0.5 grid h-5 w-5 flex-shrink-0 place-items-center rounded-md bg-warm/15 text-warm-deep">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-                  </span>
-                  <span>
-                    <span className="block text-sm font-semibold text-ink">{feature.title}</span>
-                    <span className="block text-xs leading-snug text-ink-muted">{feature.body}</span>
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <AppStoreImageBadge href={archiveMacUrl} alt={t('redesign.archiveSection.altBadge')} size="lg" />
-              <MicrosoftStoreImageBadge href={archiveMsUrl} size="lg" />
-            </div>
-
-            <p className="mt-5 text-xs text-ink-soft">
-              {t('redesign.archiveSection.pricing')}
-            </p>
-            <p className="mt-3 rounded-lg bg-orange-50 px-3 py-2 text-xs text-orange-700">
-              <span className="font-semibold">{t('redesign.archiveSection.langNote')}</span>
-            </p>
-
-            <Link to={`/${lang}/archive/`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-600 hover:text-orange-700 transition-colors">
-              {t('redesign.archiveSection.learnMore', 'Learn more about Comic Duplicate Scanner')} →
-            </Link>
-          </div>
-
-          <div className="relative">
-            <div className="absolute -inset-10 -z-10 rounded-3xl bg-[radial-gradient(closest-side,rgba(255,138,58,.25),transparent)] opacity-60" />
-            <div className="overflow-hidden rounded-2xl border border-line bg-white shadow-deep">
-              <img src="/image/offline-apps/archivescan/v1.png" alt={t('redesign.archiveSection.altImage')} className="block w-full" />
-            </div>
-
-            <div className="absolute -bottom-6 left-1/2 hidden -translate-x-1/2 items-center gap-6 rounded-2xl border border-line bg-white px-5 py-3 shadow-float sm:flex">
-              <div>
-                <div className="font-display tighter text-xl font-bold text-ink">90%</div>
-                <div className="text-[10px] uppercase tracking-wider text-ink-soft">{t('redesign.archiveSection.stats.threshold')}</div>
-              </div>
-              <div className="h-8 w-px bg-line" />
-              <div>
-                <div className="font-display tighter text-xl font-bold text-ink">x3</div>
-                <div className="text-[10px] uppercase tracking-wider text-ink-soft">{t('redesign.archiveSection.stats.sampled')}</div>
-              </div>
-              <div className="h-8 w-px bg-line" />
-              <div>
-                <div className="font-display tighter text-xl font-bold text-emerald-600">{t('redesign.archiveSection.stats.local')}</div>
-                <div className="text-[10px] uppercase tracking-wider text-ink-soft">{t('redesign.archiveSection.stats.noCloud')}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function PrivacyStrip() {
   const { t } = useTranslation();
   const items = [
@@ -1256,13 +1058,10 @@ const Home = () => {
         faqItems={faqItems}
       />
       <Hero lang={lang} />
-      <GrepTagHero lang={lang} />
-      <ReaderComparisonTable lang={lang} />
       <ProductFamily lang={lang} />
       <AndroidInterestSection />
       <StandaloneToolsSection lang={lang} />
       <FaqSection lang={lang} />
-      <ArchiveScannerSection />
       <PrivacyStrip />
       <BlogPreview lang={lang} />
       <FinalCTA lang={lang} />

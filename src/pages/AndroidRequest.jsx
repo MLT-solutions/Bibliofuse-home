@@ -6,7 +6,6 @@ import SEO from '../components/SEO';
 const scriptUrl = import.meta.env.VITE_ANDROID_REQUEST_SCRIPT_URL || '';
 
 const appOptions = [
-  'BiblioFuse GrepTag Reader',
   'SmartDecrypt PDF ZIP',
   'ContentCue',
   'other',

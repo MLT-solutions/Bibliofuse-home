@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { ENTRIES as ARCHIVE_ENTRIES, KNOWN_ISSUES as ARCHIVE_ISSUES, ROADMAP as ARCHIVE_ROADMAP } from '../data/changelog-archive';
-import { ENTRIES as GREPREADER_ENTRIES, KNOWN_ISSUES as GREPREADER_ISSUES, ROADMAP as GREPREADER_ROADMAP } from '../data/changelog-grepreader';
 import { ENTRIES as SMARTDECRYPT_ENTRIES, KNOWN_ISSUES as SMARTDECRYPT_ISSUES, ROADMAP as SMARTDECRYPT_ROADMAP } from '../data/changelog-smartdecrypt';
 import { ENTRIES as CONTENTCUE_ENTRIES, KNOWN_ISSUES as CONTENTCUE_ISSUES, ROADMAP as CONTENTCUE_ROADMAP } from '../data/changelog-contentcue';
 
@@ -29,32 +27,6 @@ const ROADMAP_STATUS = {
 };
 
 const APP_CONFIGS = {
-  archive: {
-    appName: 'Comic Duplicate Scanner',
-    logo: '/image/archive-logo.png',
-    accent: 'text-orange-600',
-    ENTRIES: ARCHIVE_ENTRIES,
-    KNOWN_ISSUES: ARCHIVE_ISSUES,
-    ROADMAP: ARCHIVE_ROADMAP,
-    platforms: ['all', 'mac', 'pc'],
-    storeUrl: 'https://apps.apple.com/eg/app/archive-duplicate-scanner/id6762779449',
-    appCategory: 'UtilitiesApplication',
-    operatingSystem: 'macOS, Windows',
-    shortDesc: 'Finds duplicate comic archives and photos using perceptual hashing. Scans Mac and Windows.',
-  },
-  grepreader: {
-    appName: 'GrepTag Reader',
-    logo: '/image/grepreader-logo.png',
-    accent: 'text-blue-600',
-    ENTRIES: GREPREADER_ENTRIES,
-    KNOWN_ISSUES: GREPREADER_ISSUES,
-    ROADMAP: GREPREADER_ROADMAP,
-    platforms: ['all', 'ios', 'pc'],
-    storeUrl: 'https://apps.apple.com/app/id6779977609',
-    appCategory: 'BookApplication',
-    operatingSystem: 'iOS, iPadOS, macOS',
-    shortDesc: 'Grep-scan your EPUB and TXT library with Boolean logic. Tag books from search results.',
-  },
   smartdecrypt: {
     appName: 'SmartDecrypt PDF ZIP',
     logo: '/image/smartdecrypt-logo.png',

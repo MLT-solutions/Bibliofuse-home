@@ -43,8 +43,6 @@ const Footer = () => {
                         <ul className="space-y-2.5">
                             <li><Link to={`/${lang || 'en'}/comicreader/`} className="text-ink transition hover:text-brand">BiblioFuse Reader</Link></li>
                             <li><Link to={`/${lang || 'en'}/webapp/`} className="text-ink transition hover:text-brand">{t('redesign.footer.webTool')}</Link></li>
-                            <li><Link to={`/${lang || 'en'}/grepreader/`} className="text-ink transition hover:text-brand">GrepTag Reader</Link></li>
-                            <li><Link to={`/${lang || 'en'}/archive/`} className="text-ink transition hover:text-brand">Comic Duplicate Scanner</Link></li>
                             <li><a href={smartDecryptAppStoreUrl} target="_blank" rel="noopener" className="text-ink transition hover:text-brand">SmartDecrypt PDF ZIP</a></li>
                             <li><a href={contentCueAppStoreUrl} target="_blank" rel="noopener" className="text-ink transition hover:text-brand">ContentCue</a></li>
                             <li><Link to={`/${lang || 'en'}/qr-generator/`} className="text-ink transition hover:text-brand">BiblioFuse QR Generator</Link></li>

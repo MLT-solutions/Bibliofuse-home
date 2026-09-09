@@ -260,7 +260,8 @@
         "chipB": "iPhone · iPad · Mac",
         "chipC": "TTS · gulir otomatis",
         "chipD": "Membaca tanpa tangan",
-        "reads": "Membaca"
+        "reads": "Membaca",
+        "languages": "UI Aplikasi: Inggris · Spanyol · Prancis · Belanda · Portugis · Rusia · Tionghoa Sederhana · Jepang · Korea · Indonesia · Melayu"
       },
       "table": {
         "eyebrow": "Bandingkan aplikasi",
@@ -392,8 +393,8 @@
         "title": "Memilih alat BiblioFuse",
         "items": [
           {
-            "q": "Aplikasi BiblioFuse mana yang harus saya mulai?",
-            "a": "Gunakan BiblioFuse Reader untuk komik, manga, PDF, dan perpustakaan campuran besar. Gunakan GrepTag Reader untuk novel EPUB/TXT saat pencarian teks penuh dan tag penting. Gunakan SmartDecrypt untuk file terlindungi, Comic Duplicate Scanner untuk pembersihan, dan BiblioFuse Web untuk kompresi atau penggabungan cepat di browser."
+            "q": "Apa saja yang bisa dibuka BiblioFuse Reader?",
+            "a": "BiblioFuse Reader menangani komik, manga, PDF, EPUB, dan TXT dalam satu perpustakaan — termasuk koleksi campuran besar yang Anda streaming dari Mac atau PC sendiri. Semuanya diproses di perangkat Anda: tanpa unggahan, tanpa akun, dan tanpa pelacakan bacaan."
           },
           {
             "q": "Apakah file saya diunggah ke server BiblioFuse?",
@@ -438,16 +439,6 @@
           "bullet3": "Bekerja di platform apa pun dengan browser",
           "cta": "Buka Web Tool"
         },
-        "archive": {
-          "tag": "Mac · Windows",
-          "desc": "Menemukan dan menghapus arsip komik, foto, dan file duplikat, bahkan setelah diganti nama, dikompres ulang, atau disimpan di folder berbeda.",
-          "bullet1": "Hashing perseptual untuk CBZ/CBR/ZIP/RAR",
-          "bullet2": "Pilih otomatis cerdas & hapus aman ke Trash",
-          "bullet3": "Cache hash untuk pemindaian ulang cepat",
-          "cta": "Mac App Store",
-          "secondary": "Microsoft Store",
-          "bullet4": "Tersedia dalam 11 bahasa"
-        },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
           "desc": "Membuka kunci PDF dan arsip yang dilindungi kata sandi menggunakan pola nama file yang tersimpan.",
@@ -466,14 +457,6 @@
           "bullet3": "Ubah teks jadi suara untuk halaman web dengan pemutaran latar belakang",
           "cta": "App Store",
           "bullet4": "Tersedia dalam 11 bahasa"
-        },
-        "grepreader": {
-          "tag": "iOS Only",
-          "desc": "Pencarian teks lengkap, penandaan, dan pengorganisasian untuk perpustakaan EPUB dan TXT.",
-          "bullet1": "Grep dengan logika AND / OR / NOT",
-          "bullet2": "Tag berdasarkan genre · jalankan otomatis saat impor",
-          "bullet3": "Pembaca yang dapat disesuaikan — tema, font & pencarian seluruh buku",
-          "cta": "Pelajari Lebih Lanjut"
         }
       },
       "learnMore": "Pelajari selengkapnya",
@@ -525,7 +508,11 @@
           "imageAlt": "Perpustakaan desktop BiblioFuse dengan pembaca split-view",
           "footnote": "Akses jarak jauh memerlukan host dan perangkat iOS masuk ke iCloud dan terhubung melalui Tailscale. Untuk pengaturan rumah dan jarak jauh yang paling konsisten, biarkan Tailscale aktif di kedua perangkat."
         }
-      }
+      },
+      "cta": "Unduh BiblioFuse Reader",
+      "bullet1": "Mendukung CBZ, CBR, PDF, EPUB & TXT",
+      "bullet2": "Kompres & gabung untuk hemat ruang — semua di perangkat",
+      "bullet3": "Streaming dari Mac atau PC — Wi-Fi di rumah atau 5G di luar, dibuat untuk volume besar"
     },
     "toolsHighlight": {
       "badge": "Alat bawaan",
@@ -552,40 +539,6 @@
           "label": "Sekali proses"
         }
       }
-    },
-    "archiveSection": {
-      "badge": "App saudara · Mac & Windows",
-      "titleA": "Temukan arsip duplikat.",
-      "titleB": "Bahkan setelah diganti nama.",
-      "desc": "Comic Duplicate Scanner menemukan dan menghapus arsip komik, foto, dan file duplikat, bahkan setelah diganti nama, dikompres ulang, atau disimpan di folder berbeda.",
-      "features": {
-        "scanning": {
-          "title": "Pemindaian arsip komik",
-          "body": "CBZ, CBR, ZIP, dan RAR menggunakan hashing perseptual."
-        },
-        "photo": {
-          "title": "Deteksi foto duplikat",
-          "body": "JPG, PNG, HEIC, WEBP, BMP, dan GIF."
-        },
-        "select": {
-          "title": "Pilih otomatis cerdas",
-          "body": "Simpan terbesar, terkecil, terbaru, terlama, atau halaman terbanyak."
-        },
-        "delete": {
-          "title": "Penghapusan aman",
-          "body": "File yang ditandai hanya dipindahkan ke Trash sistem."
-        }
-      },
-      "altBadge": "Unduh Comic Duplicate Scanner di Mac App Store",
-      "altImage": "Comic Duplicate Scanner konfigurasi dan mulai pindai",
-      "pricing": "Penggunaan gratis tersedia selamanya untuk pemindaian hingga 1.000 file. Uji coba 7 hari membuka akses penuh, dan pembelian satu kali membuka penggunaan tak terbatas tanpa langganan.",
-      "stats": {
-        "threshold": "Ambang default",
-        "sampled": "Halaman sampel",
-        "local": "100% lokal",
-        "noCloud": "Tanpa cloud, tanpa pelacakan"
-      },
-      "langNote": "UI Aplikasi: Inggris · Spanyol · Prancis · Belanda · Portugis · Rusia · Tionghoa Sederhana · Jepang · Korea · Indonesia · Melayu"
     },
     "decryptSection": {
       "badge": "App saudara · iOS · Mac · Windows",
@@ -737,11 +690,6 @@
           "title": "Cara Mengonversi CBR ke CBZ Online: Gratis, Tanpa Software",
           "excerpt": "BiblioFuse Web Tool mengonversi arsip komik CBR (berbasis RAR) ke format CBZ (berbasis ZIP) langsung di browser Anda — tanpa unggah file, tanpa instalasi, sepenuhnya privat. Seret file Anda dan unduh CBZ yang telah dikonversi dalam hitungan detik.",
           "seoDescription": "Konversi CBR ke CBZ online di browser menggunakan BiblioFuse Web Tool. Tanpa unggah file, tanpa software. Berbasis WebAssembly, gratis untuk file tunggal."
-        },
-        "organize-ebooks-by-content-not-metadata": {
-          "title": "Atur Ebook berdasarkan Konten, Bukan Metadata atau ISBN",
-          "excerpt": "Kebanyakan pengelola ebook membutuhkan entri metadata manual atau pencarian ISBN. GrepTag Reader membaca teks sebenarnya di dalam file EPUB dan TXT Anda dan secara otomatis menandai setiap buku berdasarkan apa yang ditulis di dalamnya.",
-          "seoDescription": "Atur perpustakaan ebook Anda secara otomatis tanpa memasukkan metadata atau ISBN. GrepTag Reader membaca konten EPUB dan TXT dan menghasilkan tag berdasarkan apa yang ditulis di dalamnya."
         },
         "find-duplicate-comics-different-names": {
           "title": "Cara Menemukan Komik Duplikat dengan Nama File Berbeda",
@@ -1058,296 +1006,6 @@
       "filterAll": "Semua platform",
       "knownIssuesTitle": "Masalah yang diketahui",
       "roadmapTitle": "Peta Jalan"
-    },
-    "twoAppsSection": {
-      "eyebrow": "Dua aplikasi, satu ekosistem",
-      "titleA": "Untuk komik dan manga.",
-      "titleB": "Atau untuk novel dan light novel.",
-      "desc": "Setiap aplikasi dirancang berdasarkan cara kerja perpustakaannya — ukuran file berbeda, kebiasaan membaca berbeda, kebutuhan penyimpanan berbeda.",
-      "comicTag": "KOMIK · MANGA · PDF",
-      "comicIdent": "File besar. Simpan di iPhone — atau streaming langsung dari Mac atau PC.",
-      "comicBullet1": "Mendukung CBZ, CBR, PDF, EPUB & TXT",
-      "comicBullet2": "Kompres & gabung untuk hemat ruang — semua di perangkat",
-      "comicBullet3": "Streaming dari Mac atau PC — Wi-Fi di rumah atau 5G di luar, dibuat untuk volume besar",
-      "comicCta": "Unduh BiblioFuse Reader",
-      "textTag": "EPUB · NOVEL · TXT",
-      "textIdent": "File kecil. Seluruh perpustakaan Anda muat di ponsel — cari dan beri tag setiap kata.",
-      "textBullet1": "Grep teks lengkap — AND / OR / NOT, otomatis berjalan saat impor",
-      "textBullet2": "Tag berdasarkan genre · sinkron Wi-Fi ke segala arah",
-      "textBullet3": "Pembaca yang dapat disesuaikan — tema, font & pencarian seluruh buku",
-      "textCta": "Jelajahi GrepTag Reader",
-      "bothNote": "Banyak pembaca menggunakan BiblioFuse untuk komik dan GrepTag untuk novel — keduanya gratis untuk dicoba.",
-      "comicCoverLine": "Thumbnail sampul untuk pustaka CBZ, CBR, EPUB, dan PDF.",
-      "textCoverLine": "Thumbnail sampul untuk pustaka EPUB dan TXT, termasuk dukungan gambar sampul."
-    },
-    "grepTagPage": {
-      "hero": {
-        "badge": "iOS · macOS · Windows",
-        "title": "Cari. Beri Tag. Kuasai Perpustakaanmu.",
-        "desc": "GrepTag Reader mencari teks nyata di dalam file EPUB dan TXT Anda — tanpa metadata manual, tanpa input ISBN. Ketik kata kunci dan setiap buku yang cocok langsung muncul. Tandai berdasarkan genre, filter dengan logika AND, sinkronisasi melalui Wi-Fi.",
-        "appStoreCta": "Unduh di App Store",
-        "trust1": "Tidak perlu metadata atau ISBN manual",
-        "trust2": "Tanpa server, tanpa unggahan",
-        "trust3": "Teks CJK didukung",
-        "comingSoon": "Kini tersedia di App Store",
-        "msStoreCta": "Dapatkan dari Microsoft",
-        "macInReview": "iOS, macOS, dan Windows kini tersedia",
-        "screenshotAlt": "Layar profil pencarian AND/OR/NOT yang dapat digunakan kembali di GrepTag Reader pada iPhone"
-      },
-      "grep": {
-        "eyebrow": "Cari di Dalam Buku",
-        "title": "Cari teks lengkap setiap buku.",
-        "desc": "Ketik kata kunci apa pun dan GrepTag membaca langsung dari file EPUB dan TXT Anda — tidak perlu membuat indeks, tidak ada unggahan, tidak ada penandaan manual. Simpan pencarian sebagai profil bernama dengan logika AND, OR, dan NOT, dan jalankan ulang seiring perpustakaan Anda berkembang. Buku baru ditandai secara otomatis saat diimpor.",
-        "bullet1": "Logika Boolean——\"Sci-Fi AND naga NOT romansa\"",
-        "bullet2": "Hingga 2 profil gratis · Pro membuka tak terbatas",
-        "bullet3": "Jalankan otomatis saat impor — buku baru ditandai otomatis, tidak perlu input metadata",
-        "badge": "Selalu gratis · pemindaian tak terbatas"
-      },
-      "tags": {
-        "eyebrow": "Tag dan Penemuan",
-        "title": "Tag berdasarkan genre. Filter seketika.",
-        "desc": "Tag berasal dari apa yang sebenarnya ada di dalam buku — bukan dari judul, penulis, atau ISBN yang harus Anda ketik secara manual. Terapkan tag dari hasil pemindaian dengan satu ketukan. Filter perpustakaan menggunakan logika AND untuk menemukan buku yang cocok dengan SEMUA tag yang dipilih sekaligus.",
-        "bullet1": "5 tag gratis · Pro membuka tak terbatas",
-        "bullet2": "Pilih banyak tag dengan logika AND — temukan buku yang cocok dengan SEMUA tag yang dipilih",
-        "bullet3": "Penandaan satu ketuk langsung dari hasil pencarian — tanpa isian formulir"
-      },
-      "sync": {
-        "eyebrow": "Sinkronisasi Wi-Fi",
-        "title": "Sinkronkan lewat Wi‑Fi lokal, dengan fallback penemuan Apple.",
-        "desc": "Transfer buku, tag, rating, profil kata kunci, dan struktur folder antara iPhone, iPad, Mac, dan Windows melalui jaringan lokal Anda. Perangkat Apple dapat memakai snapshot metadata iCloud kecil untuk penemuan, tetapi file buku ditransfer melalui Wi‑Fi dan tidak diunggah ke server pengembang.",
-        "bullet1": "Mac / PC ↔ iPhone / iPad, iPhone ↔ iPad, Mac ↔ Mac, PC ↔ PC",
-        "bullet2": "Buku, tag, rating, profil kata kunci, dan hierarki folder disinkronkan antar perangkat",
-        "bullet3": "Fitur Pro — server perangkat sumber harus berjalan selama transfer"
-      },
-      "covers": {
-        "eyebrow": "Sampul dan Pembaca",
-        "title": "Perpustakaan visual. Pembaca bawaan.",
-        "desc": "GrepTag Reader mendukung thumbnail sampul untuk pustaka EPUB dan TXT, termasuk dukungan gambar sampul. Sampul EPUB diekstrak otomatis. Untuk buku TXT, sampul dicocokkan dari gambar di folder yang sama atau diambil dengan menempel URL. Baca EPUB dan TXT di reader bawaan dengan TTS, bookmark, dan font yang dapat disesuaikan.",
-        "bullet1": "Sampul EPUB diekstrak otomatis (gratis)",
-        "bullet2": "Sampul TXT dari gambar folder yang sama atau URL (Pro)",
-        "bullet3": "TTS dengan kontrol volume · penanda · navigasi bab"
-      },
-      "whySeparate": {
-        "eyebrow": "Mengapa dua aplikasi?",
-        "title": "Perpustakaan berbeda membutuhkan alat berbeda.",
-        "desc": "BiblioFuse Reader dibuat untuk file komik besar yang penuh gambar — streaming dari Mac atau PC, kompres di aplikasi. GrepTag dibuat untuk file teks kecil yang muat penuh di perangkat — grep, tag, sinkronisasi ke arah mana pun.",
-        "col1": "BiblioFuse Reader",
-        "col2": "GrepTag Reader",
-        "row1Label": "Terbaik untuk",
-        "row1col1": "Komik, manga, PDF",
-        "row1col2": "EPUB, novel ringan, TXT",
-        "row2Label": "Ukuran file",
-        "row2col1": "50–300 MB per volume",
-        "row2col2": "Di bawah 5 MB masing-masing",
-        "row3Label": "Desain penyimpanan",
-        "row3col1": "Streaming dari Mac atau PC · kompres di aplikasi",
-        "row3col2": "Simpan di perangkat · sinkron ke segala arah",
-        "row4Label": "Fitur utama",
-        "row4col1": "Kompres, gabung, streaming, pencadangan otomatis",
-        "row4col2": "Full-text grep, tags, covers, Wi-Fi sync",
-        "row5Label": "Format",
-        "row5col1": "CBZ, CBR, PDF, EPUB, TXT",
-        "row5col2": "EPUB, TXT",
-        "readerCta": "Jelajahi BiblioFuse Reader"
-      },
-      "pricing": {
-        "eyebrow": "Harga",
-        "title": "Gratis untuk mencari. Pro untuk memiliki.",
-        "freeTitle": "Gratis",
-        "freeDesc": "Cari dan temukan perpustakaan Anda selamanya.",
-        "proTitle": "Pro",
-        "proDesc": "Pembelian satu kali membuka semua fitur selamanya.",
-        "proMonthly": "$0,99 / bulan",
-        "proYearly": "$4,99 / tahun",
-        "proLifetime": "$14,99 sekali bayar",
-        "proTrial": "Uji coba gratis 7 hari untuk bulanan & tahunan",
-        "appStoreCta": "Coba Gratis di App Store",
-        "approvalNote": "Kini tersedia di App Store dan Microsoft Store."
-      },
-      "seo": {
-        "title": "GrepTag Reader — Cari di Dalam Semua EPUB dan eBook | iPhone, iPad, Mac, Windows",
-        "desc": "Cari di setiap file EPUB dan TXT di iPhone, iPad, Mac, dan Windows. Tidak perlu memasukkan metadata atau ISBN secara manual — GrepTag memindai konten buku dan menandai perpustakaan Anda secara otomatis berdasarkan genre. Gratis untuk dicoba."
-      },
-      "faq": [
-        {
-          "q": "Apa itu GrepTag Reader?",
-          "a": "GrepTag Reader adalah aplikasi pencarian teks penuh dan penandaan untuk koleksi ebook EPUB dan TXT di iPhone, iPad, Mac, dan Windows. Memungkinkan Anda mencari seluruh perpustakaan untuk kata kunci apa pun menggunakan logika boolean AND / OR / NOT, menandai buku berdasarkan genre, dan menyinkronkan perpustakaan melalui Wi-Fi lokal — tanpa mengunggah file ke server mana pun."
-        },
-        {
-          "q": "Apa perbedaan antara GrepTag Reader dan BiblioFuse Reader?",
-          "a": "BiblioFuse Reader dibuat untuk file komik besar penuh gambar (CBZ, CBR, PDF). Aplikasi ini streaming dari Mac atau PC, mengompres arsip, dan menangani pembacaan webtoon/manga. GrepTag Reader dibuat untuk perpustakaan EPUB dan TXT dengan pencarian teks penuh, tag genre, dan sinkronisasi Wi‑Fi ke arah mana pun."
-        },
-        {
-          "q": "Apakah pencarian grep teks penuh gratis?",
-          "a": "Ya. Pemindaian grep selalu gratis dan tidak terbatas — Anda dapat mencari seluruh perpustakaan EPUB dan TXT untuk kata kunci apa pun sebanyak yang Anda inginkan. Simpan hingga 2 profil pencarian bernama secara gratis. Pro membuka profil tak terbatas."
-        },
-        {
-          "q": "Apakah GrepTag Reader mengunggah file saya ke server?",
-          "a": "Tidak. GrepTag Reader membaca langsung dari file lokal Anda. Tidak ada yang diunggah ke server mana pun — tanpa indeks cloud, tanpa backend pengembang. File tetap ada di perangkat Anda."
-        },
-        {
-          "q": "Format file apa yang didukung GrepTag Reader?",
-          "a": "GrepTag Reader mendukung file EPUB dan TXT. Dapat mencari dan menandai kedua format, mengekstrak sampul EPUB secara otomatis, dan mencocokkan sampul untuk buku TXT dari gambar di folder yang sama atau URL yang ditempelkan (fitur Pro)."
-        },
-        {
-          "q": "Berapa banyak tag yang bisa saya miliki secara gratis?",
-          "a": "Lima tag disertakan dalam tingkatan gratis. Pro membuka tag tak terbatas. Anda dapat menerapkan tag dari hasil pemindaian dengan satu ketukan, atau menandai buku secara manual dan memfilter berdasarkan beberapa tag menggunakan logika AND atau OR."
-        },
-        {
-          "q": "Bisakah saya menyinkronkan perpustakaan antara iPhone, iPad, Mac, dan PC?",
-          "a": "Ya. Wi-Fi Sync mentransfer buku, tag, penilaian, profil kata kunci, dan struktur folder antara kombinasi apa pun dari iPhone, iPad, Mac, dan Windows PC. Semua perangkat Apple dalam sinkronisasi harus masuk ke akun iCloud yang sama — iCloud hanya digunakan untuk penemuan perangkat, bukan untuk menyimpan buku Anda. File berpindah melalui jaringan Wi-Fi lokal Anda dan tidak pernah diunggah ke server pengembang mana pun. Wi-Fi Sync adalah fitur Pro."
-        },
-        {
-          "q": "Bisakah saya menggunakan lebih dari satu iPhone atau iPad dengan Wi-Fi Sync?",
-          "a": "Ya. Beberapa iPhone dan iPad semuanya dapat berpartisipasi dalam sinkronisasi perpustakaan yang sama. Versi iOS GrepTag menyimpan jalur relatif terhadap folder root aplikasi, sehingga struktur jalur yang sama berfungsi di setiap perangkat iOS yang masuk ke akun iCloud yang sama."
-        },
-        {
-          "q": "Haruskah saya menggunakan Mac atau PC sebagai sumber utama perpustakaan saya?",
-          "a": "Kami menyarankan untuk menjaga satu Mac atau satu PC sebagai perangkat perpustakaan utama. Metadata GrepTag melacak tiga jenis jalur terpisah — jalur PC, jalur iOS, dan jalur Mac. iOS bekerja di beberapa iPhone dan iPad karena menggunakan jalur relatif. Mac dan PC masing-masing menyimpan jalur absolut untuk perangkat mereka sendiri, sehingga sinkronisasi paling andal ketika hanya ada satu Mac dan satu PC dalam pengaturan Anda."
-        },
-        {
-          "q": "Bisakah iPhone saya menyinkronkan buku baru kembali ke Mac atau PC saya?",
-          "a": "Ya. Jika Anda menambahkan buku di iPhone ke dalam folder yang belum ada di Mac atau PC Anda, GrepTag akan meminta Anda membuat folder tersebut dan menambahkannya ke daftar perpustakaan di perangkat penerima sebelum menyelesaikan sinkronisasi."
-        },
-        {
-          "q": "Bagaimana cara mencari kata atau frasa tertentu di dalam file ebook saya?",
-          "a": "Buka GrepTag Reader, pergi ke tab Cari, dan ketik kata atau frasa apa pun. Aplikasi membuka setiap file EPUB dan TXT di perpustakaan Anda dan mengembalikan setiap buku yang mengandung istilah pencarian Anda — tanpa indeks yang dibangun sebelumnya, tanpa unggahan. Gabungkan istilah dengan AND, OR, dan NOT untuk hasil yang lebih tepat (misalnya: \"sihir AND naga NOT romansa\"). Simpan pencarian yang sering digunakan sebagai profil bernama yang dijalankan ulang secara otomatis saat buku baru diimpor. Semua pencarian selalu gratis dan tidak terbatas."
-        },
-        {
-          "q": "Apakah GrepTag Reader memerlukan koneksi internet untuk bekerja?",
-          "a": "Tidak. GrepTag Reader bekerja sepenuhnya secara offline. Semua pencarian, penandaan, dan pengorganisasian terjadi langsung di perangkat Anda — aplikasi membaca file EPUB dan TXT Anda secara lokal tanpa memerlukan server atau koneksi internet. Jaringan hanya digunakan untuk fitur Wi-Fi Sync opsional yang mentransfer buku antara perangkat Anda sendiri melalui jaringan lokal."
-        },
-        {
-          "q": "Bisakah saya menyesuaikan tampilan dan font pembaca?",
-          "a": "Ya. Pilih dari tema Sepia, Abu-abu, dan Hitam (OLED) di iPhone, iPad, dan Mac. Pilih font dengan pratinjau langsung — termasuk Iowan, Charter, Kaiti, dan font serif yang mendukung CJK — atau impor font .ttf/.otf milikmu sendiri. Sesuaikan kecerahan, perataan teks, dan tebal sesuai gaya membacamu."
-        },
-        {
-          "q": "Bisakah saya mencari di dalam buku yang sedang saya baca?",
-          "a": "Ya. Pencarian seluruh buku memindai seluruh file TXT atau EPUB yang sedang kamu baca, bukan hanya bab saat ini. Di Mac, tersedia bilah pencarian khusus dengan pengalaman pratinjau font yang sama seperti di iOS."
-        }
-      ],
-      "faqTitle": "Pertanyaan yang sering diajukan",
-      "languages": "UI Aplikasi: Inggris · Spanyol · Prancis · Belanda · Portugis · Rusia · Tionghoa Sederhana · Jepang · Korea · Indonesia · Melayu",
-      "reader": {
-        "eyebrow": "Kustomisasi Pembaca",
-        "title": "Jadikan pembaca milikmu.",
-        "desc": "Sesuaikan pembaca dengan matamu di iPhone, iPad, dan Mac. Pilih tema Sepia, Abu-abu, atau Hitam (OLED), pilih font dengan pratinjau langsung — atau impor font milikmu sendiri — dan sesuaikan kecerahan, perataan, dan tebal. Cari di seluruh buku yang sedang kamu baca, bukan hanya bab saat ini.",
-        "bullet1": "Tema Sepia, Abu-abu, dan Hitam (OLED) di iOS dan macOS",
-        "bullet2": "Pemilih font dengan pratinjau langsung — Iowan, Charter, Kaiti, font serif yang mendukung CJK, dan lainnya — atau impor font .ttf/.otf milikmu sendiri",
-        "bullet3": "Kecerahan, perataan teks, dan tebal — ditambah pencarian seluruh buku dan bilah pencarian macOS",
-        "badge": "Baru di 1.0.4 dan 1.0.5"
-      }
-    },
-    "archivePage": {
-      "seo": {
-        "title": "Comic Duplicate Scanner — Temukan Komik dan Foto Duplikat di Mac dan Windows",
-        "desc": "Comic Duplicate Scanner menemukan file duplikat CBZ, CBR, ZIP, RAR, dan foto menggunakan perceptual hashing — bahkan setelah penggantian nama, rekompresi, atau dengan resolusi dan mode warna berbeda. Gratis hingga 1.000 file, Pro pembelian satu kali $19,99."
-      },
-      "hero": {
-        "badge": "Mac dan Windows",
-        "title": "Temukan duplikat. Bahkan setelah diganti nama.",
-        "desc": "Comic Duplicate Scanner membuka arsip komik Anda dan membandingkan gambar aktual di dalamnya — bukan hanya nama file atau ukuran. Meski satu file bernama comic_E1-5 dan yang lain ComiX_E1-10, jika beberapa halaman pertama cocok, keduanya ditandai sebagai duplikat.",
-        "trust1": "Tanpa unggahan ke cloud",
-        "trust2": "Penghapusan aman ke Tempat Sampah",
-        "trust3": "Uji coba gratis 7 hari",
-        "macStore": "Unduh di Mac App Store",
-        "winStore": "Dapatkan dari Microsoft Store",
-        "trust4": "11 bahasa"
-      },
-      "scanning": {
-        "eyebrow": "Pemindaian Arsip Mendalam",
-        "title": "Membuka arsip dan membandingkan halaman di dalamnya",
-        "desc": "Kebanyakan pencari duplikat hanya membandingkan nama atau ukuran file. Comic Duplicate Scanner membuka setiap file CBZ, CBR, ZIP, atau RAR, mengekstrak thumbnail dari halaman sebenarnya, dan membandingkannya. File bernama comic_E1-5 dan ComiX_E1-10 — nama berbeda, rentang episode berbeda — tetap terdeteksi jika halaman pembukanya cocok.",
-        "bullet1": "Membuka arsip dan membandingkan gambar halaman — bukan sekadar nama file",
-        "bullet2": "Ambang batas kemiripan yang dapat dikonfigurasi — disarankan 90%",
-        "bullet3": "Cache hash membuat pemindaian ulang hampir instan",
-        "badge": "Berfungsi dengan manga, manhwa, dan manhua",
-        "bullet4": "Mendeteksi duplikat di berbagai resolusi dan mode warna — hasil pindaian skala abu-abu 1200px dan pindaian berwarna 3000px dari halaman yang sama tetap ditandai"
-      },
-      "photos": {
-        "eyebrow": "Foto dan Pencocokan Nama File",
-        "title": "Foto dan nama file mirip — keduanya tercakup",
-        "desc": "Selain arsip, deteksi foto duplikat JPG, PNG, HEIC, WEBP, BMP, dan GIF menggunakan algoritme dHash. Pencocokan nama file fuzzy menangkap salinan yang hanya berbeda dalam format — \"Spider-Man #001\" vs \"Spider Man 001\" — dengan ambang batas yang dapat dikonfigurasi.",
-        "bullet1": "Format foto: JPG, PNG, HEIC, WEBP, BMP, GIF",
-        "bullet2": "Algoritme RapidFuzz dengan penghapusan simbol yang dapat dikonfigurasi",
-        "bullet3": "Mendukung Unicode — berfungsi dengan Jepang, Korea, Cina, dan set karakter apa pun"
-      },
-      "autoselect": {
-        "eyebrow": "Pemilihan Otomatis Cerdas",
-        "title": "Satu klik menandai file yang tepat untuk disimpan",
-        "desc": "Tetapkan aturan — simpan yang Terbesar, Terkecil, Terbaru, Tertua, atau file dengan Halaman Terbanyak — dan Pemilihan Otomatis menandai setiap duplikat dalam satu klik. Tinjau hasilnya sebelum apa pun diubah. Tidak ada yang dipindahkan hingga Anda mengonfirmasi.",
-        "bullet1": "Lima aturan: Terbesar, Terkecil, Terbaru, Tertua, Halaman Terbanyak",
-        "bullet2": "Peringatan salinan terakhir mencegah penghapusan total yang tidak disengaja",
-        "bullet3": "Daftar abaikan permanen untuk pasangan varian yang disengaja",
-        "badge": "File dipindahkan ke Tempat Sampah — dapat dipulihkan kapan saja"
-      },
-      "export": {
-        "eyebrow": "Laporan dan Multi-Folder",
-        "title": "Ekspor hasil, bandingkan antar folder",
-        "desc": "Ekspor pemindaian Anda sebagai CSV untuk spreadsheet atau sebagai laporan HTML lengkap dengan thumbnail, skor kemiripan, dan kolom yang dapat diurutkan. Mode Multi-Folder membandingkan dua folder terpisah — berguna untuk menemukan duplikat antara pustaka yang terorganisir dan folder Unduhan.",
-        "bullet1": "Laporan HTML dengan thumbnail tertanam dan statistik",
-        "bullet2": "Ekspor CSV untuk spreadsheet dan pengarsipan",
-        "bullet3": "Perbandingan multi-folder: Folder A vs Folder B"
-      },
-      "pricing": {
-        "eyebrow": "Harga Sederhana",
-        "title": "Gratis selamanya. Buka kunci Pro saat dibutuhkan.",
-        "freeTitle": "Gratis",
-        "proTitle": "Pro",
-        "trial": "Uji coba gratis 7 hari tersedia di Mac App Store",
-        "feat1": "Pemindaian arsip (CBZ/CBR/ZIP/RAR)",
-        "feat1free": "Hingga 1.000 file",
-        "feat1pro": "Tidak terbatas",
-        "feat2": "Deteksi foto duplikat",
-        "feat2free": "Hingga 1.000 file",
-        "feat2pro": "Tidak terbatas",
-        "feat3": "Pencocokan nama file fuzzy",
-        "feat3free": "Hingga 1.000 file",
-        "feat3pro": "Tidak terbatas",
-        "feat4": "Pemilihan otomatis cerdas",
-        "feat5": "Ekspor laporan (CSV dan HTML)",
-        "feat6": "Perbandingan multi-folder",
-        "feat7": "Cache hash (pemindaian ulang cepat)",
-        "feat8": "Daftar abaikan permanen"
-      },
-      "faqTitle": "Pertanyaan yang Sering Diajukan",
-      "faq": [
-        {
-          "q": "Apa itu perceptual hashing dan mengapa penting?",
-          "a": "Perceptual hashing membandingkan struktur visual gambar daripada byte file mentah. Dua file dapat memiliki nama, ukuran, dan metadata yang berbeda — tetapi jika kontennya terlihat sama, perceptual hashing akan mencocokkannya. Pencari duplikat standar gagal begitu file diganti nama atau diekspor ulang; Comic Duplicate Scanner tidak."
-        },
-        {
-          "q": "Bisakah menemukan duplikat yang telah diganti nama?",
-          "a": "Ya. Mengganti nama file tidak mengubah kontennya. Comic Duplicate Scanner membandingkan gambar di dalam setiap arsip, sehingga duplikat terdeteksi terlepas dari nama file."
-        },
-        {
-          "q": "Apakah penghapusan permanen?",
-          "a": "Tidak. File yang ditandai dipindahkan ke Tempat Sampah sistem (macOS) atau Recycle Bin (Windows), tidak dihapus secara permanen. Anda dapat memulihkan file apa pun sebelum mengosongkan Tempat Sampah."
-        },
-        {
-          "q": "Format file apa yang didukung?",
-          "a": "Arsip komik: CBZ, CBR, ZIP, RAR. Foto: JPG, PNG, HEIC, WEBP, BMP, GIF. Pencocokan nama file fuzzy berfungsi dengan jenis file apa pun."
-        },
-        {
-          "q": "Apakah berfungsi dengan foto, bukan hanya komik?",
-          "a": "Ya. Pilih mode Foto untuk memindai file JPG, PNG, HEIC, WEBP, BMP, dan GIF. Berfungsi dengan ekspor perpustakaan foto iPhone, dokumen yang dipindai, dan koleksi seni digital."
-        },
-        {
-          "q": "Apakah ada uji coba sebelum membeli?",
-          "a": "Anda dapat memindai hingga 1.000 file secara gratis selamanya. Uji coba gratis 7 hari di Mac App Store membuka akses tak terbatas, dan pembelian Pro satu kali seharga $19,99 tanpa langganan."
-        },
-        {
-          "q": "Bisakah mencocokkan pindaian berwarna dengan versi hitam-putih dari konten yang sama?",
-          "a": "Ya. Algoritma dHash bekerja berdasarkan gradien luminansi, bukan nilai warna. Pindaian berwarna penuh dan versi skala abu-abu dari halaman yang sama menghasilkan hash yang hampir identik dan akan ditandai sebagai duplikat."
-        },
-        {
-          "q": "Apakah resolusi gambar memengaruhi deteksi duplikat?",
-          "a": "Tidak. dHash mengubah ukuran setiap gambar ke grid tetap yang kecil sebelum membandingkan, sehingga pindaian 1200px dan 3000px dari halaman yang sama menghasilkan nilai hash yang sama. Perbedaan resolusi antar sumber diabaikan sepenuhnya."
-        }
-      ],
-      "backDesc": "Mencari pembaca komik dan ebook?",
-      "backCta": "Kembali ke BiblioFuse Reader",
-      "languages": "UI Aplikasi: Inggris · Spanyol · Prancis · Belanda · Portugis · Rusia · Tionghoa Sederhana · Jepang · Korea · Indonesia · Melayu"
     },
     "smartdecryptPage": {
       "seo": {
@@ -1988,241 +1646,241 @@
       }
     }
   },
-        "featureMatrix": {
-      "essentials": "Ringkasan platform",
-      "whereToGet": "Cara mendapatkan",
-      "sinceVersion": "sejak {{version}} · {{date}}",
-      "sinceDate": "sejak {{date}}",
-      "builtDate": "dibuat {{date}}",
-      "countAll": "{{n}} fitur",
-      "countFiltered": "{{n}} dari {{total}} fitur",
-      "eyebrow": "Matriks fitur",
-      "title": "Apa yang jalan di mana",
-      "subtitle": "Semua fitur BiblioFuse, di setiap platform, beserta versi saat fitur itu hadir. Cari atau filter untuk menemukan yang Anda butuhkan.",
-      "searchLabel": "Cari fitur",
-      "searchPlaceholder": "Coba \"terjemahan manga\", \"tategaki\", \"RTL\", \"Komga\"…",
-      "platformsLabel": "Platform",
-      "groupsLabel": "Kategori",
-      "sinceLabel": "Berubah sejak",
-      "sinceAny": "Kapan saja",
-      "since30": "30 hari terakhir",
-      "since90": "3 bulan terakhir",
-      "since180": "6 bulan terakhir",
-      "proOnly": "Hanya fitur Pro",
-      "showUnreleased": "Sertakan fitur yang sudah dibuat tapi belum dirilis",
-      "all": "Semua",
-      "reset": "Atur ulang",
-      "noResults": "Tidak ada fitur yang cocok dengan filter itu.",
-      "noResultsHint": "Coba kata kunci lebih singkat, atau atur ulang filter.",
-      "legendShipped": "Tersedia",
-      "legendPartial": "Tersedia sebagian",
-      "legendMerged": "Belum dirilis",
-      "legendNa": "Tidak ada di platform ini",
-      "notYet": "belum",
-      "featureColumn": "Fitur",
-      "mergedNote": "Baris bertanda “belum” sudah dibuat, tetapi belum masuk ke rilis publik platform tersebut.",
-      "coverage": "Mencakup aplikasi native sejak Mei 2026. Rilis era Flutter sebelumnya tidak dicantumkan.",
-      "sinceTooltip": "sejak",
-      "builtTooltip": "dibuat",
-      "groups": {
-        "reading": "Membaca",
-        "libraries": "Perpustakaan & server",
-        "streaming": "Streaming dari komputer sendiri",
-        "input": "Input & platform"
+  "featureMatrix": {
+    "essentials": "Ringkasan platform",
+    "whereToGet": "Cara mendapatkan",
+    "sinceVersion": "sejak {{version}} · {{date}}",
+    "sinceDate": "sejak {{date}}",
+    "builtDate": "dibuat {{date}}",
+    "countAll": "{{n}} fitur",
+    "countFiltered": "{{n}} dari {{total}} fitur",
+    "eyebrow": "Matriks fitur",
+    "title": "Apa yang jalan di mana",
+    "subtitle": "Semua fitur BiblioFuse, di setiap platform, beserta versi saat fitur itu hadir. Cari atau filter untuk menemukan yang Anda butuhkan.",
+    "searchLabel": "Cari fitur",
+    "searchPlaceholder": "Coba \"terjemahan manga\", \"tategaki\", \"RTL\", \"Komga\"…",
+    "platformsLabel": "Platform",
+    "groupsLabel": "Kategori",
+    "sinceLabel": "Berubah sejak",
+    "sinceAny": "Kapan saja",
+    "since30": "30 hari terakhir",
+    "since90": "3 bulan terakhir",
+    "since180": "6 bulan terakhir",
+    "proOnly": "Hanya fitur Pro",
+    "showUnreleased": "Sertakan fitur yang sudah dibuat tapi belum dirilis",
+    "all": "Semua",
+    "reset": "Atur ulang",
+    "noResults": "Tidak ada fitur yang cocok dengan filter itu.",
+    "noResultsHint": "Coba kata kunci lebih singkat, atau atur ulang filter.",
+    "legendShipped": "Tersedia",
+    "legendPartial": "Tersedia sebagian",
+    "legendMerged": "Belum dirilis",
+    "legendNa": "Tidak ada di platform ini",
+    "notYet": "belum",
+    "featureColumn": "Fitur",
+    "mergedNote": "Baris bertanda “belum” sudah dibuat, tetapi belum masuk ke rilis publik platform tersebut.",
+    "coverage": "Mencakup aplikasi native sejak Mei 2026. Rilis era Flutter sebelumnya tidak dicantumkan.",
+    "sinceTooltip": "sejak",
+    "builtTooltip": "dibuat",
+    "groups": {
+      "reading": "Membaca",
+      "libraries": "Perpustakaan & server",
+      "streaming": "Streaming dari komputer sendiri",
+      "input": "Input & platform"
+    },
+    "cellNotes": {
+      "lanOnlyTvos": "Hanya Wi-Fi lokal; Tailscale belum cukup stabil di tvOS",
+      "noICloudRoute": "Wi-Fi lokal dan Tailscale manual; jalur iCloud hanya untuk Apple",
+      "lanOnly": "Hanya Wi-Fi lokal",
+      "tailscaleServe": "Tailscale Serve dan akses subnet"
+    },
+    "features": {
+      "live-translation": {
+        "label": "Terjemahan komik & manga langsung",
+        "note": "PP-OCRv5 di perangkat, ditata ulang dalam balon"
       },
-      "cellNotes": {
-        "lanOnlyTvos": "Hanya Wi-Fi lokal; Tailscale belum cukup stabil di tvOS",
-        "noICloudRoute": "Wi-Fi lokal dan Tailscale manual; jalur iCloud hanya untuk Apple",
-        "lanOnly": "Hanya Wi-Fi lokal",
-        "tailscaleServe": "Tailscale Serve dan akses subnet"
+      "translate-export-cbz": {
+        "label": "Terjemahkan & ekspor CBZ",
+        "note": "Simpan salinan arsip yang sudah diterjemahkan penuh"
       },
-      "features": {
-        "live-translation": {
-          "label": "Terjemahan komik & manga langsung",
-          "note": "PP-OCRv5 di perangkat, ditata ulang dalam balon"
+      "page-curl": {
+        "label": "Balik halaman dengan efek lengkung",
+        "note": "Komik, PDF, dan teks, dengan sentuh atau geser"
+      },
+      "dual-page-spreads": {
+        "label": "Tampilan dua halaman",
+        "note": "Tablet mode lanskap, seperti buku terbuka"
+      },
+      "vertical-japanese": {
+        "label": "Jepang vertikal / EPUB vertikal",
+        "note": "Perenderan tategaki yang benar"
+      },
+      "epub-comic": {
+        "label": "Dukungan komik EPUB",
+        "note": "EPUB image-spine dan tata letak tetap"
+      },
+      "find-in-book": {
+        "label": "Cari dalam buku"
+      },
+      "reading-direction": {
+        "label": "Ubah arah baca",
+        "note": "Membalik halaman, slider, dan kontrol; diatur otomatis dari metadata"
+      },
+      "continuous-page-turn": {
+        "label": "Mode berkelanjutan & balik halaman baru",
+        "note": "Gulir per bagian untuk komik, PDF, EPUB, dan teks; balik halaman berhenti di tempat yang diharapkan"
+      },
+      "komga-kavita-native": {
+        "label": "API asli Komga & Kavita",
+        "note": "Detail seri, tag, lencana, urut & cari di sisi server"
+      },
+      "opds": {
+        "label": "OPDS 1.x + streaming OPDS-PSE",
+        "note": "Komik satu halaman sekaligus. OPDS 2.0 tidak didukung."
+      },
+      "kavita-sync": {
+        "label": "Sinkronisasi posisi & markah Kavita"
+      },
+      "folder-as-library": {
+        "label": "Jelajahi folder sebagai perpustakaan",
+        "note": "Detail seri gaya Kavita, tab Volume/Bab"
+      },
+      "managed-downloads": {
+        "label": "Unduhan terkelola & sinkronisasi progres",
+        "note": "Plus pengelola cache unduhan"
+      },
+      "host-incremental-stream": {
+        "label": "Host BiblioFuse: streaming perpustakaan Anda sendiri",
+        "note": "Halaman PDF vektor, halaman komik EPUB, EPUB reflowable bertahap"
+      },
+      "client-reads-host": {
+        "label": "Aplikasi BiblioFuse: membaca dari host Anda",
+        "note": "Penemuan Bonjour lewat HTTPS dengan sertifikat tersemat"
+      },
+      "connection-routes": {
+        "label": "Rute koneksi",
+        "note": "iCloud + Tailscale · Wi-Fi lokal · Tailscale manual"
+      },
+      "controller": {
+        "label": "Kontroler gim & pemetaan kustom"
+      },
+      "keyboard-shortcuts": {
+        "label": "Pintasan keyboard pembaca"
+      },
+      "look-to-scroll": {
+        "label": "Gulir dengan pandangan",
+        "note": "Gulir di tepi layar dengan pandangan"
+      },
+      "text-to-speech": {
+        "label": "Pembacaan suara",
+        "note": "Sorot kalimat, kontrol layar kunci, timer tidur"
+      },
+      "reading-progress-restore": {
+        "label": "Lanjutkan dari tempat terakhir",
+        "note": "Mode halaman dan berkelanjutan, untuk arsip, PDF, dan teks"
+      },
+      "export-tools": {
+        "label": "Ekspor massal & gabung",
+        "note": "Gabungkan atau ubah arsip ke CBZ dan EPUB"
+      },
+      "bulk-metadata-editing": {
+        "label": "Rating & tag massal",
+        "note": "Pilih beberapa, lalu edit metadata sekaligus"
+      },
+      "remote-annotations": {
+        "label": "Edit dan simpan buku streaming",
+        "note": "Ubah tag dan rating di host, atau simpan salinan lokal"
+      },
+      "app-lock": {
+        "label": "Kunci aplikasi",
+        "note": "Perpustakaan dilindungi PIN"
+      },
+      "spatial-library": {
+        "label": "Perpustakaan spasial",
+        "note": "Jelajahi rak yang ditempatkan di ruangan sekitar"
+      }
+    },
+    "specs": {
+      "read-formats": {
+        "label": "Format yang dibaca",
+        "values": {
+          "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "tvos": "CBZ · CBR · RAR · ZIP",
+          "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "androidtv": "CBZ · CBR · RAR · ZIP",
+          "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
         },
-        "translate-export-cbz": {
-          "label": "Terjemahkan & ekspor CBZ",
-          "note": "Simpan salinan arsip yang sudah diterjemahkan penuh"
-        },
-        "page-curl": {
-          "label": "Balik halaman dengan efek lengkung",
-          "note": "Komik, PDF, dan teks, dengan sentuh atau geser"
-        },
-        "dual-page-spreads": {
-          "label": "Tampilan dua halaman",
-          "note": "Tablet mode lanskap, seperti buku terbuka"
-        },
-        "vertical-japanese": {
-          "label": "Jepang vertikal / EPUB vertikal",
-          "note": "Perenderan tategaki yang benar"
-        },
-        "epub-comic": {
-          "label": "Dukungan komik EPUB",
-          "note": "EPUB image-spine dan tata letak tetap"
-        },
-        "find-in-book": {
-          "label": "Cari dalam buku"
-        },
-        "reading-direction": {
-          "label": "Ubah arah baca",
-          "note": "Membalik halaman, slider, dan kontrol; diatur otomatis dari metadata"
-        },
-        "continuous-page-turn": {
-          "label": "Mode berkelanjutan & balik halaman baru",
-          "note": "Gulir per bagian untuk komik, PDF, EPUB, dan teks; balik halaman berhenti di tempat yang diharapkan"
-        },
-        "komga-kavita-native": {
-          "label": "API asli Komga & Kavita",
-          "note": "Detail seri, tag, lencana, urut & cari di sisi server"
-        },
-        "opds": {
-          "label": "OPDS 1.x + streaming OPDS-PSE",
-          "note": "Komik satu halaman sekaligus. OPDS 2.0 tidak didukung."
-        },
-        "kavita-sync": {
-          "label": "Sinkronisasi posisi & markah Kavita"
-        },
-        "folder-as-library": {
-          "label": "Jelajahi folder sebagai perpustakaan",
-          "note": "Detail seri gaya Kavita, tab Volume/Bab"
-        },
-        "managed-downloads": {
-          "label": "Unduhan terkelola & sinkronisasi progres",
-          "note": "Plus pengelola cache unduhan"
-        },
-        "host-incremental-stream": {
-          "label": "Host BiblioFuse: streaming perpustakaan Anda sendiri",
-          "note": "Halaman PDF vektor, halaman komik EPUB, EPUB reflowable bertahap"
-        },
-        "client-reads-host": {
-          "label": "Aplikasi BiblioFuse: membaca dari host Anda",
-          "note": "Penemuan Bonjour lewat HTTPS dengan sertifikat tersemat"
-        },
-        "connection-routes": {
-          "label": "Rute koneksi",
-          "note": "iCloud + Tailscale · Wi-Fi lokal · Tailscale manual"
-        },
-        "controller": {
-          "label": "Kontroler gim & pemetaan kustom"
-        },
-        "keyboard-shortcuts": {
-          "label": "Pintasan keyboard pembaca"
-        },
-        "look-to-scroll": {
-          "label": "Gulir dengan pandangan",
-          "note": "Gulir di tepi layar dengan pandangan"
-        },
-        "text-to-speech": {
-          "label": "Pembacaan suara",
-          "note": "Sorot kalimat, kontrol layar kunci, timer tidur"
-        },
-        "reading-progress-restore": {
-          "label": "Lanjutkan dari tempat terakhir",
-          "note": "Mode halaman dan berkelanjutan, untuk arsip, PDF, dan teks"
-        },
-        "export-tools": {
-          "label": "Ekspor massal & gabung",
-          "note": "Gabungkan atau ubah arsip ke CBZ dan EPUB"
-        },
-        "bulk-metadata-editing": {
-          "label": "Rating & tag massal",
-          "note": "Pilih beberapa, lalu edit metadata sekaligus"
-        },
-        "remote-annotations": {
-          "label": "Edit dan simpan buku streaming",
-          "note": "Ubah tag dan rating di host, atau simpan salinan lokal"
-        },
-        "app-lock": {
-          "label": "Kunci aplikasi",
-          "note": "Perpustakaan dilindungi PIN"
-        },
-        "spatial-library": {
-          "label": "Perpustakaan spasial",
-          "note": "Jelajahi rak yang ditempatkan di ruangan sekitar"
+        "notes": {
+          "tvos": "Hanya komik — tanpa pembaca teks",
+          "androidtv": "Hanya komik — tanpa pembaca teks",
+          "nas": "Pembaca di browser; belum ada PDF"
         }
       },
-      "specs": {
-        "read-formats": {
-          "label": "Format yang dibaca",
-          "values": {
-            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "tvos": "CBZ · CBR · RAR · ZIP",
-            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "androidtv": "CBZ · CBR · RAR · ZIP",
-            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
-          },
-          "notes": {
-            "tvos": "Hanya komik — tanpa pembaca teks",
-            "androidtv": "Hanya komik — tanpa pembaca teks",
-            "nas": "Pembaca di browser; belum ada PDF"
-          }
+      "library-sources": {
+        "label": "Sumber perpustakaan",
+        "values": {
+          "ios": "Lokal · iCloud · host BiblioFuse",
+          "macos": "Lokal · iCloud · SMB / NAS",
+          "visionos": "Lokal · iCloud · host BiblioFuse",
+          "tvos": "Hanya host BiblioFuse",
+          "android": "Lokal · folder eksternal",
+          "androidtv": "Hanya host BiblioFuse",
+          "windows": "Lokal · iCloud · SMB / NAS",
+          "nas": "Penyimpanan terpasang atau jaringannya sendiri"
         },
-        "library-sources": {
-          "label": "Sumber perpustakaan",
-          "values": {
-            "ios": "Lokal · iCloud · host BiblioFuse",
-            "macos": "Lokal · iCloud · SMB / NAS",
-            "visionos": "Lokal · iCloud · host BiblioFuse",
-            "tvos": "Hanya host BiblioFuse",
-            "android": "Lokal · folder eksternal",
-            "androidtv": "Hanya host BiblioFuse",
-            "windows": "Lokal · iCloud · SMB / NAS",
-            "nas": "Penyimpanan terpasang atau jaringannya sendiri"
-          },
-          "notes": {
-            "nas": "Bukan iCloud"
-          }
+        "notes": {
+          "nas": "Bukan iCloud"
+        }
+      },
+      "icloud-bookshelf": {
+        "label": "Rak buku iCloud",
+        "note": "Perpustakaan Anda ikut berpindah antar perangkat",
+        "values": {
+          "ios": "Sinkronisasi antar perangkat",
+          "macos": "Sinkronisasi antar perangkat",
+          "visionos": "Sinkronisasi antar perangkat",
+          "windows": "Sinkronisasi antar perangkat"
         },
-        "icloud-bookshelf": {
-          "label": "Rak buku iCloud",
-          "note": "Perpustakaan Anda ikut berpindah antar perangkat",
-          "values": {
-            "ios": "Sinkronisasi antar perangkat",
-            "macos": "Sinkronisasi antar perangkat",
-            "visionos": "Sinkronisasi antar perangkat",
-            "windows": "Sinkronisasi antar perangkat"
-          },
-          "notes": {
-            "tvos": "Apple TV tidak punya iCloud"
-          }
+        "notes": {
+          "tvos": "Apple TV tidak punya iCloud"
+        }
+      },
+      "reader-features": {
+        "label": "Fitur pembaca",
+        "values": {
+          "ios": "TTS · zoom sekilas · gulir otomatis · progres · rating · tag",
+          "macos": "TTS · gulir otomatis · progres · rating · tag",
+          "visionos": "TTS · gulir otomatis · progres · rating · tag",
+          "tvos": "Gulir otomatis · progres · rating · tag",
+          "android": "TTS · zoom sekilas · gulir otomatis · progres · rating · tag",
+          "androidtv": "Gulir otomatis · progres · rating · tag",
+          "windows": "TTS · gulir otomatis · progres · rating · tag",
+          "nas": "Gulir berkelanjutan · progres · rating · tag"
         },
-        "reader-features": {
-          "label": "Fitur pembaca",
-          "values": {
-            "ios": "TTS · zoom sekilas · gulir otomatis · progres · rating · tag",
-            "macos": "TTS · gulir otomatis · progres · rating · tag",
-            "visionos": "TTS · gulir otomatis · progres · rating · tag",
-            "tvos": "Gulir otomatis · progres · rating · tag",
-            "android": "TTS · zoom sekilas · gulir otomatis · progres · rating · tag",
-            "androidtv": "Gulir otomatis · progres · rating · tag",
-            "windows": "TTS · gulir otomatis · progres · rating · tag",
-            "nas": "Gulir berkelanjutan · progres · rating · tag"
-          },
-          "notes": {
-            "nas": "Tanpa TTS atau zoom sekilas"
-          }
+        "notes": {
+          "nas": "Tanpa TTS atau zoom sekilas"
+        }
+      },
+      "interface-languages": {
+        "label": "Bahasa antarmuka",
+        "values": {
+          "ios": "11 bahasa",
+          "macos": "11 bahasa",
+          "visionos": "11 bahasa",
+          "tvos": "11 bahasa",
+          "android": "12 bahasa",
+          "androidtv": "12 bahasa",
+          "windows": "11 bahasa",
+          "nas": "11 bahasa"
         },
-        "interface-languages": {
-          "label": "Bahasa antarmuka",
-          "values": {
-            "ios": "11 bahasa",
-            "macos": "11 bahasa",
-            "visionos": "11 bahasa",
-            "tvos": "11 bahasa",
-            "android": "12 bahasa",
-            "androidtv": "12 bahasa",
-            "windows": "11 bahasa",
-            "nas": "11 bahasa"
-          },
-          "notes": {
-            "android": "Menambah bahasa Jerman",
-            "androidtv": "Menambah bahasa Jerman"
-          }
+        "notes": {
+          "android": "Menambah bahasa Jerman",
+          "androidtv": "Menambah bahasa Jerman"
         }
       }
     }
+  }
 }

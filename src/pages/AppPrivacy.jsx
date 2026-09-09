@@ -5,28 +5,6 @@ import remarkGfm from 'remark-gfm';
 import SEO from '../components/SEO';
 
 const PRIVACY_CONFIGS = {
-  archive: {
-    appName: 'Comic Duplicate Scanner',
-    logo: '/image/archive-logo.png',
-    rawUrl: 'https://raw.githubusercontent.com/mlt-solutions/app-legal-docs/main/archiveduplicatescanner/PRIVACY.md',
-    privacySummary: 'Comic Duplicate Scanner collects no personal data. All file scanning and duplicate detection runs entirely on your Mac or Windows PC. No files, hashes, or scan results are uploaded to any server.',
-    faq: [
-      { q: 'Does Comic Duplicate Scanner collect personal data?', a: 'No. Comic Duplicate Scanner does not collect, store, or transmit any personal data. All scanning runs on your device and no data leaves your Mac or Windows PC.' },
-      { q: 'What data does Comic Duplicate Scanner store locally?', a: 'Comic Duplicate Scanner stores a local hash cache for faster rescans, your app preferences, and your Pro license key. All data is stored locally on your device and is never uploaded.' },
-      { q: 'Is Comic Duplicate Scanner safe to use?', a: 'Yes. Comic Duplicate Scanner processes all files locally. It does not connect to any external server, collect analytics, or transmit any data.' },
-    ],
-  },
-  grepreader: {
-    appName: 'GrepTag Reader',
-    logo: '/image/grepreader-logo.png',
-    rawUrl: 'https://raw.githubusercontent.com/mlt-solutions/app-legal-docs/main/bibliofusegreptagread/PRIVACY.md',
-    privacySummary: 'GrepTag Reader collects no personal data. Your EPUB and TXT library stays on your device. Wi-Fi sync is peer-to-peer over your local network — no cloud involved.',
-    faq: [
-      { q: 'Does GrepTag Reader collect personal data?', a: 'No. GrepTag Reader does not collect personal data, usage analytics, or reading history. Your EPUB and TXT library stays on your iPhone, iPad, or Mac.' },
-      { q: 'Is GrepTag Reader Wi-Fi sync safe?', a: 'Yes. Wi-Fi sync in GrepTag Reader is peer-to-peer over your local network (LAN). No data is routed through any cloud server. Sync only works between devices on the same network.' },
-      { q: 'Does GrepTag Reader upload my books?', a: 'No. GrepTag Reader does not upload any files. All scanning, tagging, and syncing happens locally on your device or directly over your home network.' },
-    ],
-  },
   smartdecrypt: {
     appName: 'SmartDecrypt PDF ZIP',
     logo: '/image/smartdecrypt-logo.png',

@@ -19,8 +19,8 @@ const __dirname = dirname(__filename);
 const distDir = join(__dirname, '..', 'dist');
 
 const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
-const ARTICLE_SLUGS = ['best-komga-kavita-alternatives', 'reading-ebooks-offline-iphone', 'convert-cbr-to-cbz-online', 'organize-ebooks-by-content-not-metadata', 'find-duplicate-comics-different-names', 'open-bank-statement-pdf-iphone', 'contentcue-11-languages', 'archive-duplicate-scanner-11-languages', 'smartdecrypt-11-languages', 'airdrop-books-to-iphone', 'change-reading-direction-comics', 'bibliofuse-ipad-reading-tips', 'read-pdf-comics-iphone', 'read-webtoons-on-iphone', 'convert-zip-to-cbz-online', 'pc-home-library-streaming-iphone', 'sideload-comics-iphone-without-itunes', 'ebook-formats-long-term-library', 'backup-comic-library-mac', 'double-page-spreads-comics', 'extract-images-from-cbz', 'comic-bookmarks-iphone', 'organize-manga-series-iphone', 'epub-to-pdf-online', 'night-reading-comics-iphone', 'cbz-to-pdf-online', 'tailscale-remote-library-access', 'webp-vs-png-for-comics', 'reading-progress-sync-no-cloud-account', 'cbz-cbr-rar-zip-which-format-best', 'smartdecrypt-language-update', 'digital-comic-library-management-guide', 'build-perfect-digital-manga-collection', 'best-duplicate-file-finder-mac', 'find-duplicate-photos-mac', 'perceptual-hashing-duplicate-detection', 'clean-up-duplicate-manga-library', 'find-duplicate-comics-cbz-mac', 'pdf-zip-password-manager-profiles', 'batch-decrypt-password-protected-files', 'decrypt-password-protected-cbz-zip', 'read-manga-online-iphone', 'unlock-password-protected-pdf-iphone', 'privacy-first-ebook-tools', 'merge-epub-files-online', 'compress-epub-online', 'archive-duplicate-scanner-language-update', 'merge-cbz-files-online', 'convert-pdf-to-cbz-online', 'bibliofuse-tools-tab-guide', 'epub-reader-iphone-no-drm', 'ocr-comics-extract-text-iphone', 'mac-home-library-streaming-iphone', 'icloud-sync-reading-progress', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'wifi-transfer-comics-to-iphone', 'cbz-vs-cbr-vs-epub-formats-explained', 'read-cbz-cbr-on-iphone', 'manage-your-bibliofuse-library', 'reduce-comic-ebook-file-size', 'getting-started-with-bibliofuse'];
-const ROUTES = ['/', '/comicreader', '/webapp', '/grepreader', '/grepreader/changelog', '/grepreader/privacy', '/archive', '/archive/changelog', '/archive/privacy', '/smartdecrypt', '/smartdecrypt/changelog', '/smartdecrypt/privacy', '/contentcue', '/contentcue/changelog', '/contentcue/privacy', '/androidrequest', '/qr-generator', '/about', '/privacy', '/blog', '/changelog', '/features', ...ARTICLE_SLUGS.map(s => `/blog/${s}`)];
+const ARTICLE_SLUGS = ['best-komga-kavita-alternatives', 'reading-ebooks-offline-iphone', 'convert-cbr-to-cbz-online', 'find-duplicate-comics-different-names', 'open-bank-statement-pdf-iphone', 'contentcue-11-languages', 'archive-duplicate-scanner-11-languages', 'smartdecrypt-11-languages', 'airdrop-books-to-iphone', 'change-reading-direction-comics', 'bibliofuse-ipad-reading-tips', 'read-pdf-comics-iphone', 'read-webtoons-on-iphone', 'convert-zip-to-cbz-online', 'pc-home-library-streaming-iphone', 'sideload-comics-iphone-without-itunes', 'ebook-formats-long-term-library', 'backup-comic-library-mac', 'double-page-spreads-comics', 'extract-images-from-cbz', 'comic-bookmarks-iphone', 'organize-manga-series-iphone', 'epub-to-pdf-online', 'night-reading-comics-iphone', 'cbz-to-pdf-online', 'tailscale-remote-library-access', 'webp-vs-png-for-comics', 'reading-progress-sync-no-cloud-account', 'cbz-cbr-rar-zip-which-format-best', 'smartdecrypt-language-update', 'digital-comic-library-management-guide', 'build-perfect-digital-manga-collection', 'best-duplicate-file-finder-mac', 'find-duplicate-photos-mac', 'perceptual-hashing-duplicate-detection', 'clean-up-duplicate-manga-library', 'find-duplicate-comics-cbz-mac', 'pdf-zip-password-manager-profiles', 'batch-decrypt-password-protected-files', 'decrypt-password-protected-cbz-zip', 'read-manga-online-iphone', 'unlock-password-protected-pdf-iphone', 'privacy-first-ebook-tools', 'merge-epub-files-online', 'compress-epub-online', 'archive-duplicate-scanner-language-update', 'merge-cbz-files-online', 'convert-pdf-to-cbz-online', 'bibliofuse-tools-tab-guide', 'epub-reader-iphone-no-drm', 'ocr-comics-extract-text-iphone', 'mac-home-library-streaming-iphone', 'icloud-sync-reading-progress', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'wifi-transfer-comics-to-iphone', 'cbz-vs-cbr-vs-epub-formats-explained', 'read-cbz-cbr-on-iphone', 'manage-your-bibliofuse-library', 'reduce-comic-ebook-file-size', 'getting-started-with-bibliofuse'];
+const ROUTES = ['/', '/comicreader', '/webapp', '/smartdecrypt', '/smartdecrypt/changelog', '/smartdecrypt/privacy', '/contentcue', '/contentcue/changelog', '/contentcue/privacy', '/androidrequest', '/qr-generator', '/about', '/privacy', '/blog', '/changelog', '/features', ...ARTICLE_SLUGS.map(s => `/blog/${s}`)];
 
 const CONCURRENCY = 3;
 const MAX_RETRIES = 3;
@@ -32,7 +32,7 @@ for (const lang of SUPPORTED_LANGUAGES) {
     for (const route of ROUTES) {
         const urlPath = route === '/' ? `/${lang}/` : `/${lang}${route}/`;
         const file = route === '/' ? join(distDir, lang, 'index.html') : join(distDir, lang, route.slice(1), 'index.html');
-        jobs.push({ urlPath, file });
+        jobs.push({ urlPath, file, lang });
     }
 }
 
@@ -43,31 +43,48 @@ for (const lang of SUPPORTED_LANGUAGES) {
 // long a heavier page (Home, blog posts with data fetches) takes to settle.
 // (networkidle0 alone isn't enough: it can fire before Helmet's effect commits
 // on pages with more component/effect depth.)
-async function renderJob(browser, baseUrl, { urlPath, file }) {
+async function renderJob(browser, baseUrl, { urlPath, file, lang }) {
     for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
-        const page = await browser.newPage();
+        // Each page gets its own browser context so cookies and localStorage are NOT
+        // shared between concurrently-rendering tabs. i18n.js detects language in the
+        // order queryString -> cookie -> localStorage -> navigator -> htmlTag -> path,
+        // and caches the result to localStorage+cookie — so on a shared context a tab
+        // that just rendered /zh/ leaves i18nextLng=zh behind, and the next tab picks
+        // that up before App.jsx's changeLanguage(lang) effect corrects it. Helmet can
+        // commit the wrong-language <title> in that window, and we snapshot it.
+        // Observed live: /ja/ captured Chinese copy, /ko/ captured Japanese.
+        const context = await browser.createBrowserContext();
+        const page = await context.newPage();
+        const closeAll = async () => { await page.close().catch(() => {}); await context.close().catch(() => {}); };
         try {
             await page.goto(`${baseUrl}${urlPath}`, { waitUntil: 'networkidle0', timeout: PAGE_LOAD_TIMEOUT_MS });
-            await page.waitForFunction(() => document.title.includes(' | BiblioFuse'), { timeout: SEO_READY_TIMEOUT_MS });
+            // Wait for Helmet AND for the document language to match this URL's locale,
+            // so a wrong-language render can never satisfy the readiness check.
+            await page.waitForFunction(
+                (expected) => document.title.includes(' | BiblioFuse') && document.documentElement.lang === expected,
+                { timeout: SEO_READY_TIMEOUT_MS },
+                lang,
+            );
             // Small buffer so any Helmet tags that commit alongside title (canonical,
             // hreflang, JSON-LD) are flushed too.
             await new Promise((resolve) => setTimeout(resolve, 150));
 
             const html = await page.content();
-            const rendered = html.includes(' | BiblioFuse</title>') && !/<div id="root">\s*<\/div>/.test(html);
+            const langOk = new RegExp(`<html[^>]*\\blang="${lang}"`).test(html);
+            const rendered = html.includes(' | BiblioFuse</title>') && !/<div id="root">\s*<\/div>/.test(html) && langOk;
             if (!rendered && attempt < MAX_RETRIES) {
-                await page.close();
-                continue; // retry: Helmet never committed or root never mounted
+                await closeAll();
+                continue; // retry: Helmet never committed, root never mounted, or wrong locale
             }
             if (!rendered) {
-                await page.close();
-                return { urlPath, ok: false, error: 'SEO title/root readiness check failed' };
+                await closeAll();
+                return { urlPath, ok: false, error: langOk ? 'SEO title/root readiness check failed' : `locale mismatch (expected ${lang})` };
             }
             writeFileSync(file, html, 'utf-8');
-            await page.close();
+            await closeAll();
             return { urlPath, ok: rendered };
         } catch (err) {
-            await page.close();
+            await closeAll();
             if (attempt === MAX_RETRIES) {
                 return { urlPath, ok: false, error: err.message };
             }

@@ -260,7 +260,8 @@
         "chipB": "iPhone · iPad · Mac",
         "chipC": "TTS · auto-scroll",
         "chipD": "Handsfree lezen",
-        "reads": "Leest"
+        "reads": "Leest",
+        "languages": "App-taal: Engels · Spaans · Frans · Nederlands · Portugees · Russisch · Vereenvoudigd Chinees · Japans · Koreaans · Indonesisch · Maleis"
       },
       "table": {
         "eyebrow": "Apps vergelijken",
@@ -392,8 +393,8 @@
         "title": "Een BiblioFuse-tool kiezen",
         "items": [
           {
-            "q": "Met welke BiblioFuse-app moet ik beginnen?",
-            "a": "Gebruik BiblioFuse Reader voor strips, manga, PDF’s en grote gemengde bibliotheken. Gebruik GrepTag Reader voor EPUB/TXT-romans waar volledige tekstzoekactie en tags belangrijk zijn. Gebruik SmartDecrypt voor beveiligde bestanden, Comic Duplicate Scanner voor opruimen en BiblioFuse Web voor snel comprimeren of samenvoegen in de browser."
+            "q": "Wat kan BiblioFuse Reader openen?",
+            "a": "BiblioFuse Reader beheert strips, manga, PDF, EPUB en TXT in één bibliotheek — inclusief grote gemengde collecties die je streamt vanaf je eigen Mac of pc. Alles wordt op je apparaat verwerkt: geen upload, geen account en geen tracking van wat je leest."
           },
           {
             "q": "Worden mijn bestanden naar BiblioFuse-servers geüpload?",
@@ -438,16 +439,6 @@
           "bullet3": "Werkt op elk platform met een browser",
           "cta": "Start webtool"
         },
-        "archive": {
-          "tag": "Mac · Windows",
-          "desc": "Vindt en verwijdert dubbele striparchieven, foto's en bestanden, zelfs na hernoemen, hercomprimeren of opslaan in andere mappen.",
-          "bullet1": "Perceptuele hashing voor CBZ/CBR/ZIP/RAR",
-          "bullet2": "Slimme autoselectie en veilig verwijderen naar prullenbak",
-          "bullet3": "Hash-cache voor snelle herhaalscans",
-          "cta": "Mac App Store",
-          "secondary": "Microsoft Store",
-          "bullet4": "Beschikbaar in 11 talen"
-        },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
           "desc": "Ontgrendelt met wachtwoord beveiligde PDF's en archieven met opgeslagen bestandsnaampatronen.",
@@ -466,14 +457,6 @@
           "bullet3": "Tekst-naar-spraak voor webpagina's met achtergrondweergave",
           "cta": "App Store",
           "bullet4": "Beschikbaar in 11 talen"
-        },
-        "grepreader": {
-          "tag": "iOS Only",
-          "desc": "Volledige tekstzoekopdracht, tagging en organisatie voor EPUB- en TXT-bibliotheken.",
-          "bullet1": "Grep met AND / OR / NOT logica",
-          "bullet2": "Tag op genre · automatisch uitvoeren bij import",
-          "bullet3": "Aanpasbare lezer — thema's, lettertypen en zoeken door het hele boek",
-          "cta": "Meer informatie"
         }
       },
       "learnMore": "Meer informatie",
@@ -525,7 +508,11 @@
           "imageAlt": "BiblioFuse desktopbibliotheek met split-view lezer",
           "footnote": "Voor externe toegang moeten host en iOS-apparaat zijn aangemeld bij iCloud en verbonden zijn via Tailscale. Houd Tailscale op beide apparaten aan voor de meest consistente thuis- en externe setup."
         }
-      }
+      },
+      "cta": "BiblioFuse Reader downloaden",
+      "bullet1": "Leest CBZ, CBR, PDF, EPUB & TXT",
+      "bullet2": "Comprimeer & combineer om ruimte te besparen — alles op het apparaat",
+      "bullet3": "Stream vanaf Mac of PC — thuis via Wi-Fi of onderweg via 5G, gebouwd voor grote volumes"
     },
     "toolsHighlight": {
       "badge": "Ingebouwde tools",
@@ -552,40 +539,6 @@
           "label": "In één keer"
         }
       }
-    },
-    "archiveSection": {
-      "badge": "Zusterapp · Mac en Windows",
-      "titleA": "Vind dubbele archieven.",
-      "titleB": "Zelfs na hernoemen.",
-      "desc": "Comic Duplicate Scanner vindt en verwijdert dubbele striparchieven, foto's en bestanden, zelfs na hernoemen, hercomprimeren of opslaan in andere mappen.",
-      "features": {
-        "scanning": {
-          "title": "Striparchiefscanning",
-          "body": "CBZ, CBR, ZIP en RAR met perceptuele hashing."
-        },
-        "photo": {
-          "title": "Fotoduplicaatdetectie",
-          "body": "JPG, PNG, HEIC, WEBP, BMP en GIF."
-        },
-        "select": {
-          "title": "Slimme autoselectie",
-          "body": "Behoud grootste, kleinste, nieuwste, oudste of meeste pagina's."
-        },
-        "delete": {
-          "title": "Veilig verwijderen",
-          "body": "Gemarkeerde bestanden worden alleen naar de systeemprullenbak verplaatst."
-        }
-      },
-      "altBadge": "Download Comic Duplicate Scanner in de Mac App Store",
-      "altImage": "Comic Duplicate Scanner configureren en scan starten",
-      "pricing": "Gratis gebruik is voor altijd beschikbaar voor scans tot 1.000 bestanden. Een proefperiode van 7 dagen ontgrendelt volledige toegang, en een eenmalige aankoop ontgrendelt onbeperkt gebruik zonder abonnement.",
-      "stats": {
-        "threshold": "Standaarddrempel",
-        "sampled": "Bemonsterde pagina's",
-        "local": "100% lokaal",
-        "noCloud": "Geen cloud, geen tracking"
-      },
-      "langNote": "App-taal: Engels · Spaans · Frans · Nederlands · Portugees · Russisch · Vereenvoudigd Chinees · Japans · Koreaans · Indonesisch · Maleis"
     },
     "decryptSection": {
       "badge": "Zusterapp · iOS · Mac · Windows",
@@ -737,11 +690,6 @@
           "title": "CBR naar CBZ online converteren: gratis, geen software vereist",
           "excerpt": "De BiblioFuse webtool converteert CBR (RAR-gebaseerde) striparchief bestanden naar CBZ (ZIP-gebaseerd) formaat direct in je browser — geen upload, geen installatie, volledig privé. Sleep je bestand erin en download de geconverteerde CBZ in seconden.",
           "seoDescription": "Converteer CBR naar CBZ online in je browser met BiblioFuse Web Tool. Geen bestandsupload, geen software. WebAssembly-aangedreven, gratis voor losse bestanden."
-        },
-        "organize-ebooks-by-content-not-metadata": {
-          "title": "Organiseer Ebooks op Inhoud, Niet op Metadata of ISBN",
-          "excerpt": "De meeste ebook-managers vereisen handmatige metadata-invoer of ISBN-opzoeking. GrepTag Reader leest de daadwerkelijke tekst in je EPUB- en TXT-bestanden en voegt automatisch tags toe aan elk boek op basis van wat erin staat geschreven.",
-          "seoDescription": "Organiseer je ebook-bibliotheek automatisch zonder metadata of ISBN in te voeren. GrepTag Reader leest EPUB- en TXT-inhoud en genereert tags op basis van wat erin staat."
         },
         "find-duplicate-comics-different-names": {
           "title": "Duplicaat-Comics Met Verschillende Bestandsnamen Vinden",
@@ -1058,296 +1006,6 @@
       "filterAll": "Alle platforms",
       "knownIssuesTitle": "Bekende problemen",
       "roadmapTitle": "Roadmap"
-    },
-    "twoAppsSection": {
-      "eyebrow": "Twee apps, één ecosysteem",
-      "titleA": "Voor strips en manga.",
-      "titleB": "Of voor romans en light novels.",
-      "desc": "Elke app is ontworpen rond hoe zijn bibliotheek echt werkt — verschillende bestandsgroottes, verschillende leesgewoonten, verschillende opslagbehoeften.",
-      "comicTag": "STRIPS · MANGA · PDF",
-      "comicIdent": "Grote bestanden. Bewaar ze op je iPhone — of stream ze rechtstreeks vanaf je Mac of PC.",
-      "comicBullet1": "Leest CBZ, CBR, PDF, EPUB & TXT",
-      "comicBullet2": "Comprimeer & combineer om ruimte te besparen — alles op het apparaat",
-      "comicBullet3": "Stream vanaf Mac of PC — thuis via Wi-Fi of onderweg via 5G, gebouwd voor grote volumes",
-      "comicCta": "BiblioFuse Reader downloaden",
-      "textTag": "EPUB · ROMANS · TXT",
-      "textIdent": "Kleine bestanden. Je hele bibliotheek past op je telefoon — doorzoek en tag elk woord.",
-      "textBullet1": "Volledige tekst grep — AND / OR / NOT, start automatisch bij importeren",
-      "textBullet2": "Tag op genre · Wi-Fi-sync in elke richting",
-      "textBullet3": "Aanpasbare lezer — thema's, lettertypen en zoeken door het hele boek",
-      "textCta": "GrepTag Reader verkennen",
-      "bothNote": "Veel lezers gebruiken BiblioFuse voor strips en GrepTag voor romans — beide zijn gratis te proberen.",
-      "comicCoverLine": "Omslagminiaturen voor CBZ-, CBR-, EPUB- en PDF-bibliotheken.",
-      "textCoverLine": "Omslagminiaturen voor EPUB- en TXT-bibliotheken, inclusief ondersteuning voor omslagafbeeldingen."
-    },
-    "grepTagPage": {
-      "hero": {
-        "badge": "iOS · macOS · Windows",
-        "title": "Zoek. Tag. Bezit je bibliotheek.",
-        "desc": "GrepTag Reader doorzoekt de werkelijke tekst in je EPUB- en TXT-bestanden — geen handmatige metadata, geen ISBN-invoer. Typ een trefwoord en elk overeenkomend boek verschijnt direct. Tag op genre, filter met EN-logica, synchroniseer via Wi-Fi.",
-        "appStoreCta": "Downloaden in App Store",
-        "trust1": "Geen handmatige metadata of ISBN vereist",
-        "trust2": "Geen server, geen uploads",
-        "trust3": "CJK-tekst ondersteund",
-        "comingSoon": "Nu beschikbaar in de App Store",
-        "msStoreCta": "Verkrijg het van Microsoft",
-        "macInReview": "iOS, macOS en Windows nu beschikbaar",
-        "screenshotAlt": "Herbruikbaar EN/OF/NIET-zoekprofielscherm van GrepTag Reader op iPhone"
-      },
-      "grep": {
-        "eyebrow": "Zoeken in Boeken",
-        "title": "Doorzoek de volledige tekst van elk boek.",
-        "desc": "Typ een trefwoord en GrepTag leest direct je EPUB- en TXT-bestanden — geen index om op te bouwen, geen upload, geen handmatige tagging. Sla zoekopdrachten op als profielen met EN-, OF- en NIET-logica en voer ze opnieuw uit naarmate je bibliotheek groeit. Nieuwe boeken worden automatisch getagd bij import.",
-        "bullet1": "Booleaanse logica — \"Sci-Fi AND draken NOT romance\"",
-        "bullet2": "Tot 2 profielen gratis · Pro ontgrendelt onbeperkt",
-        "bullet3": "Automatisch uitvoeren bij import — nieuwe boeken automatisch getagd, geen metadata-invoer nodig",
-        "badge": "Altijd gratis · onbeperkte scans"
-      },
-      "tags": {
-        "eyebrow": "Tags en Ontdekking",
-        "title": "Tag op genre. Filter direct.",
-        "desc": "Tags komen van wat er werkelijk in het boek staat — niet van de titel, auteur of ISBN die je handmatig moet invullen. Pas tags toe vanuit scanresultaten met één tik. Filter je bibliotheek met EN-logica om boeken te vinden die ALLE geselecteerde tags bevatten.",
-        "bullet1": "5 tags gratis · Pro ontgrendelt onbeperkt",
-        "bullet2": "Meervoudige tagselectie met EN-logica — vindt boeken die ALLE gekozen tags bevatten",
-        "bullet3": "Tags met één tik vanuit zoekresultaten — geen formulieren invullen"
-      },
-      "sync": {
-        "eyebrow": "Wi-Fi Sync",
-        "title": "Synchroniseer via lokale Wi‑Fi, met Apple-detectie als fallback.",
-        "desc": "Verplaats boeken, tags, ratings, trefwoordprofielen en mapstructuur tussen iPhone, iPad, Mac en Windows via je lokale netwerk. Apple-apparaten kunnen kleine iCloud-metadatasnapshots gebruiken voor detectie, maar boekbestanden worden via Wi‑Fi overgedragen en niet naar een ontwikkelaarsserver geüpload.",
-        "bullet1": "Mac / PC ↔ iPhone / iPad, iPhone ↔ iPad, Mac ↔ Mac, PC ↔ PC",
-        "bullet2": "Boeken, tags, ratings, trefwoordprofielen en maphiërarchie synchroniseren tussen apparaten",
-        "bullet3": "Pro-functie — de server van het bronapparaat moet actief zijn tijdens overdracht"
-      },
-      "covers": {
-        "eyebrow": "Omslagen en Lezer",
-        "title": "Visuele bibliotheek. Ingebouwde lezer.",
-        "desc": "GrepTag Reader ondersteunt omslagminiaturen voor EPUB- en TXT-bibliotheken, inclusief ondersteuning voor omslagafbeeldingen. EPUB-covers worden automatisch geëxtraheerd. Voor TXT-boeken worden covers gekoppeld aan afbeeldingen in dezelfde map of opgehaald door een URL te plakken. Lees EPUB en TXT in de ingebouwde reader met TTS, bladwijzers en instelbare lettertypen.",
-        "bullet1": "EPUB-omslagen automatisch geëxtraheerd (gratis)",
-        "bullet2": "TXT-omslagen uit afbeeldingen in dezelfde map of URL (Pro)",
-        "bullet3": "TTS met volumebeheer · bladwijzers · hoofdstuknavigatie"
-      },
-      "whySeparate": {
-        "eyebrow": "Waarom twee apps?",
-        "title": "Verschillende bibliotheken hebben verschillende tools nodig.",
-        "desc": "BiblioFuse Reader is gemaakt voor grote beeldrijke stripbestanden: stream vanaf Mac of pc en comprimeer in de app. GrepTag is gemaakt voor kleine tekstbestanden die volledig op het apparaat passen: grep, tags en synchronisatie in elke richting.",
-        "col1": "BiblioFuse Reader",
-        "col2": "GrepTag Reader",
-        "row1Label": "Beste voor",
-        "row1col1": "Comics, manga, PDF",
-        "row1col2": "EPUB, light novels, TXT",
-        "row2Label": "Bestandsgrootte",
-        "row2col1": "50–300 MB per volume",
-        "row2col2": "Minder dan 5 MB per stuk",
-        "row3Label": "Opslag",
-        "row3col1": "Stream vanaf Mac of pc · comprimeer in de app",
-        "row3col2": "Opslaan op apparaat · sync in elke richting",
-        "row4Label": "Kernfuncties",
-        "row4col1": "Comprimeren, samenvoegen, streamen, automatisch back-up",
-        "row4col2": "Full-text grep, tags, covers, Wi-Fi sync",
-        "row5Label": "Formaten",
-        "row5col1": "CBZ, CBR, PDF, EPUB, TXT",
-        "row5col2": "EPUB, TXT",
-        "readerCta": "BiblioFuse Reader verkennen"
-      },
-      "pricing": {
-        "eyebrow": "Prijzen",
-        "title": "Gratis om te zoeken. Pro om te bezitten.",
-        "freeTitle": "Gratis",
-        "freeDesc": "Doorzoek en ontdek je bibliotheek voor altijd.",
-        "proTitle": "Pro",
-        "proDesc": "Eenmalige aankoop ontgrendelt alles, voor altijd.",
-        "proMonthly": "€ 0,99 / maand",
-        "proYearly": "€ 4,99 / jaar",
-        "proLifetime": "€ 14,99 eenmalig",
-        "proTrial": "7 dagen gratis proberen op maandelijks en jaarlijks",
-        "appStoreCta": "Gratis proberen in App Store",
-        "approvalNote": "Nu beschikbaar in de App Store en Microsoft Store."
-      },
-      "seo": {
-        "title": "GrepTag Reader — Zoek Binnen Al je EPUB's en eBooks | iPhone, iPad, Mac, Windows",
-        "desc": "Doorzoek elk EPUB- en TXT-bestand op iPhone, iPad, Mac en Windows. Geen handmatige metadata of ISBN-invoer nodig — GrepTag scant de inhoud van boeken en tagt je bibliotheek automatisch per genre. Gratis te proberen."
-      },
-      "faq": [
-        {
-          "q": "Wat is GrepTag Reader?",
-          "a": "GrepTag Reader is een app voor volledige tekstzoekopdrachten en tagging voor EPUB- en TXT-eBook-collecties op iPhone, iPad, Mac en Windows. Hiermee kun je je hele bibliotheek doorzoeken op elk trefwoord met booleaanse AND / OR / NOT-logica, boeken per genre taggen en je bibliotheek synchroniseren via lokale Wi-Fi — zonder bestanden naar een server te uploaden."
-        },
-        {
-          "q": "Wat is het verschil tussen GrepTag Reader en BiblioFuse Reader?",
-          "a": "BiblioFuse Reader is gemaakt voor grote beeldrijke stripbestanden (CBZ, CBR, PDF). Het streamt vanaf Mac of pc, comprimeert archieven en ondersteunt webtoon/manga-lezen. GrepTag Reader is gemaakt voor EPUB- en TXT-bibliotheken met volledige tekstzoekactie, tags en Wi‑Fi-sync in elke richting."
-        },
-        {
-          "q": "Is de volledige tekst grep-zoekopdracht gratis?",
-          "a": "Ja. Grep-scannen is altijd gratis en onbeperkt — je kunt je volledige EPUB- en TXT-bibliotheek zo vaak als je wilt doorzoeken op elk trefwoord. Sla gratis tot 2 benoemde zoekprofielen op. Pro ontgrendelt onbeperkte profielen."
-        },
-        {
-          "q": "Uploadt GrepTag Reader mijn bestanden naar een server?",
-          "a": "Nee. GrepTag Reader leest rechtstreeks uit je lokale bestanden. Er wordt niets geüpload naar een server — geen cloudindex, geen ontwikkelaarsbackend. Bestanden blijven op je apparaat."
-        },
-        {
-          "q": "Welke bestandsindelingen ondersteunt GrepTag Reader?",
-          "a": "GrepTag Reader ondersteunt EPUB- en TXT-bestanden. Het kan beide indelingen doorzoeken en taggen, EPUB-omslagen automatisch extraheren en omslagen voor TXT-boeken koppelen aan afbeeldingen in dezelfde map of een geplakte URL (Pro-functie)."
-        },
-        {
-          "q": "Hoeveel tags kan ik gratis hebben?",
-          "a": "Vijf tags zijn inbegrepen in de gratis versie. Pro ontgrendelt onbeperkte tags. Je kunt tags toepassen vanuit scanresultaten met één tik, of boeken handmatig taggen en filteren op meerdere tags met AND- of OR-logica."
-        },
-        {
-          "q": "Kan ik mijn bibliotheek synchroniseren tussen iPhone, iPad, Mac en PC?",
-          "a": "Ja. Wi-Fi Sync draagt boeken, tags, beoordelingen, trefwoordprofielen en mappenstructuur over tussen elke combinatie van iPhone, iPad, Mac en Windows PC. Alle Apple-apparaten die deelnemen aan de synchronisatie moeten zijn aangemeld bij hetzelfde iCloud-account — iCloud wordt alleen gebruikt voor apparaatdetectie, niet voor het opslaan van je boeken. Bestanden worden overgebracht via je lokale Wi-Fi-netwerk en worden nooit geüpload naar een ontwikkelaarsserver. Wi-Fi Sync is een Pro-functie."
-        },
-        {
-          "q": "Kan ik meer dan één iPhone of iPad gebruiken met Wi-Fi Sync?",
-          "a": "Ja. Meerdere iPhones en iPads kunnen allemaal deelnemen aan dezelfde bibliotheekhsynchronisatie. De iOS-versie van GrepTag slaat paden op relatief aan de hoofdmap van de app, zodat dezelfde padstructuur werkt op alle iOS-apparaten die zijn aangemeld bij hetzelfde iCloud-account."
-        },
-        {
-          "q": "Moet ik Mac of PC gebruiken als de primaire bron voor mijn bibliotheek?",
-          "a": "We raden aan om één Mac of één PC te gebruiken als primair bibliotheekstation. De metadata van GrepTag bijhoudt drie afzonderlijke padtypen: PC-paden, iOS-paden en Mac-paden. iOS werkt op meerdere iPhones en iPads omdat het relatieve paden gebruikt. Mac en PC slaan elk absolute paden op voor hun eigen apparaat, zodat synchronisatie het betrouwbaarst is wanneer er slechts één Mac en één PC in uw configuratie zijn."
-        },
-        {
-          "q": "Kan mijn iPhone nieuwe boeken terug synchroniseren naar mijn Mac of PC?",
-          "a": "Ja. Als je een boek toevoegt op iPhone in een map die nog niet bestaat op je Mac of PC, zal GrepTag je vragen de map aan te maken en deze toe te voegen aan je bibliotheeklijst op het ontvangende apparaat voordat de synchronisatie wordt voltooid."
-        },
-        {
-          "q": "Hoe zoek ik naar een specifiek woord of zin in mijn ebook-bestanden?",
-          "a": "Open GrepTag Reader, ga naar het tabblad Zoeken en typ een woord of zin. De app opent elk EPUB- en TXT-bestand in je bibliotheek en geeft elk boek terug dat je zoekterm bevat — geen vooraf gebouwde index, geen upload nodig. Combineer termen met AND, OR en NOT voor nauwkeurigere resultaten (bijvoorbeeld: \"magie AND draken NOT romance\"). Sla veelgebruikte zoekopdrachten op als benoemde profielen die automatisch opnieuw worden uitgevoerd wanneer nieuwe boeken worden geïmporteerd. Zoeken is altijd gratis en onbeperkt."
-        },
-        {
-          "q": "Heeft GrepTag Reader een internetverbinding nodig?",
-          "a": "Nee. GrepTag Reader werkt volledig offline. Alle zoekacties, taggen en organiseren gebeurt direct op je apparaat — de app leest je EPUB- en TXT-bestanden lokaal, zonder server of internetverbinding. Het netwerk wordt alleen gebruikt voor de optionele Wi-Fi Sync-functie, die boeken overdraagt tussen je eigen apparaten via je lokale netwerk."
-        },
-        {
-          "q": "Kan ik het uiterlijk en de lettertypen van de lezer aanpassen?",
-          "a": "Ja. Kies uit Sepia-, Grijs- en Zwart-thema's (OLED) op iPhone, iPad en Mac. Selecteer een lettertype met live voorbeeld — waaronder Iowan, Charter, Kaiti en CJK-bewuste serif-lettertypen — of importeer je eigen .ttf/.otf-lettertype. Pas helderheid, tekstuitlijning en vet aan naar jouw leesvoorkeur."
-        },
-        {
-          "q": "Kan ik zoeken in het boek dat ik op dit moment lees?",
-          "a": "Ja. Zoeken door het hele boek doorzoekt het volledige TXT- of EPUB-bestand dat je leest, niet alleen het huidige hoofdstuk. Op Mac is er een aparte zoekbalk met dezelfde lettertypevoorbeeld-ervaring als op iOS."
-        }
-      ],
-      "faqTitle": "Veelgestelde vragen",
-      "languages": "App-taal: Engels · Spaans · Frans · Nederlands · Portugees · Russisch · Vereenvoudigd Chinees · Japans · Koreaans · Indonesisch · Maleis",
-      "reader": {
-        "eyebrow": "Lezersaanpassing",
-        "title": "Maak de lezer helemaal van jezelf.",
-        "desc": "Stem de lezer af op jouw ogen op iPhone, iPad en Mac. Kies uit Sepia-, Grijs- en Zwart-thema's (OLED), selecteer een lettertype met live voorbeeld — of importeer je eigen lettertype — en pas helderheid, uitlijning en vet aan. Zoek door het hele boek dat je leest, niet alleen het huidige hoofdstuk.",
-        "bullet1": "Sepia-, Grijs- en Zwart-thema's (OLED) op iOS en macOS",
-        "bullet2": "Lettertypekiezer met live voorbeeld — Iowan, Charter, Kaiti, CJK-bewuste serif-lettertypen en meer — of importeer je eigen .ttf/.otf-lettertype",
-        "bullet3": "Helderheid, tekstuitlijning en vet — plus zoeken door het hele boek en een zoekbalk op macOS",
-        "badge": "Nieuw in 1.0.4 en 1.0.5"
-      }
-    },
-    "archivePage": {
-      "seo": {
-        "title": "Comic Duplicate Scanner — Vind Dubbele Comics en Foto's op Mac en Windows",
-        "desc": "Comic Duplicate Scanner vindt dubbele CBZ-, CBR-, ZIP-, RAR- en fotobestanden met perceptuele hashing — ook na hernoemen, hercompressie, of bij verschillende resoluties en kleurmodi. Gratis tot 1.000 bestanden, Pro eenmalig $19,99."
-      },
-      "hero": {
-        "badge": "Mac en Windows",
-        "title": "Vind duplicaten. Ook na hernoemen.",
-        "desc": "Comic Duplicate Scanner opent je comicarchieven en vergelijkt de werkelijke afbeeldingen erin — niet alleen bestandsnamen of -groottes. Zelfs als één bestand comic_E1-5 heet en een ander ComiX_E1-10, worden ze als duplicaten gemarkeerd als de eerste pagina's overeenkomen.",
-        "trust1": "Geen cloudupload",
-        "trust2": "Veilig naar Prullenbak verwijderen",
-        "trust3": "7 dagen gratis proberen",
-        "macStore": "Downloaden in Mac App Store",
-        "winStore": "Verkrijgen via Microsoft Store",
-        "trust4": "11 talen"
-      },
-      "scanning": {
-        "eyebrow": "Diepgaand Archiefonderzoek",
-        "title": "Opent archieven en vergelijkt pagina's van binnen",
-        "desc": "De meeste duplicaatdetectors vergelijken alleen bestandsnamen of -groottes. Comic Duplicate Scanner opent elk CBZ-, CBR-, ZIP- of RAR-bestand, extraheert miniaturen van de werkelijke pagina's en vergelijkt ze. Een bestand genaamd comic_E1-5 en een ander ComiX_E1-10 — andere naam, ander epsiodebereik — worden toch gevonden als hun beginpagina's overeenkomen.",
-        "bullet1": "Opent archieven en vergelijkt paginaafbeeldingen — niet alleen bestandsnamen",
-        "bullet2": "Instelbare gelijkheidsdrempel — 90% aanbevolen",
-        "bullet3": "Hash-cache maakt herhaalde scans bijna direct",
-        "badge": "Werkt met manga, manhwa en manhua",
-        "bullet4": "Herkent duplicaten bij verschillende resoluties en kleurmodi — een grijswaardenscan van 1200px en een kleurscan van 3000px van dezelfde pagina worden toch gemarkeerd"
-      },
-      "photos": {
-        "eyebrow": "Foto's en Bestandsnaamovereenkomst",
-        "title": "Foto's en vergelijkbare namen — allebei gedekt",
-        "desc": "Naast archieven detecteer je dubbele JPG-, PNG-, HEIC-, WEBP-, BMP- en GIF-foto's via het dHash-algoritme. Fuzzy bestandsnaamovereenkomst vangt kopieën op die alleen in opmaak verschillen — \"Spider-Man #001\" vs \"Spider Man 001\" — met een instelbare drempel.",
-        "bullet1": "Fotoformaten: JPG, PNG, HEIC, WEBP, BMP, GIF",
-        "bullet2": "RapidFuzz-algoritme met instelbare symboolverwijdering",
-        "bullet3": "Unicode-bewust — werkt met Japans, Koreaans, Chinees en elke tekenset"
-      },
-      "autoselect": {
-        "eyebrow": "Slimme Autoselectie",
-        "title": "Één klik markeert het juiste bestand om te bewaren",
-        "desc": "Stel een regel in — bewaar het Grootste, Kleinste, Nieuwste, Oudste of bestand met de Meeste Pagina's — en Autoselectie markeert elk duplicaat met één klik. Bekijk de resultaten voordat er iets wordt aangepast. Niets beweegt totdat je bevestigt.",
-        "bullet1": "Vijf regels: Grootste, Kleinste, Nieuwste, Oudste, Meeste Pagina's",
-        "bullet2": "Waarschuwing voor laatste kopie voorkomt accidentele volledige verwijdering",
-        "bullet3": "Permanente negeerlijst voor bewuste variantparen",
-        "badge": "Bestanden naar Prullenbak verplaatst — altijd herstelbaar"
-      },
-      "export": {
-        "eyebrow": "Rapporten en Meerdere Mappen",
-        "title": "Exporteer resultaten, vergelijk tussen mappen",
-        "desc": "Exporteer je scan als CSV voor spreadsheets of als volledig HTML-rapport met miniaturen, gelijkheidsscores en sorteerbare kolommen. De multi-mapmodus vergelijkt twee afzonderlijke mappen — handig voor het vinden van duplicaten tussen je georganiseerde bibliotheek en een downloadmap.",
-        "bullet1": "HTML-rapport met ingebedde miniaturen en statistieken",
-        "bullet2": "CSV-export voor spreadsheets en archivering",
-        "bullet3": "Vergelijking tussen meerdere mappen: Map A vs Map B"
-      },
-      "pricing": {
-        "eyebrow": "Eenvoudige Prijzen",
-        "title": "Voor altijd gratis. Ontgrendel Pro wanneer je het nodig hebt.",
-        "freeTitle": "Gratis",
-        "proTitle": "Pro",
-        "trial": "7 dagen gratis proberen beschikbaar in Mac App Store",
-        "feat1": "Archiefonderzoek (CBZ/CBR/ZIP/RAR)",
-        "feat1free": "Tot 1.000 bestanden",
-        "feat1pro": "Onbeperkt",
-        "feat2": "Detectie van dubbele foto's",
-        "feat2free": "Tot 1.000 bestanden",
-        "feat2pro": "Onbeperkt",
-        "feat3": "Fuzzy bestandsnaamovereenkomst",
-        "feat3free": "Tot 1.000 bestanden",
-        "feat3pro": "Onbeperkt",
-        "feat4": "Slimme autoselectie",
-        "feat5": "Exporteer rapporten (CSV en HTML)",
-        "feat6": "Vergelijking van meerdere mappen",
-        "feat7": "Hash-cache (snelle herscans)",
-        "feat8": "Permanente negeerlijst"
-      },
-      "faqTitle": "Veelgestelde Vragen",
-      "faq": [
-        {
-          "q": "Wat is perceptuele hashing en waarom is het belangrijk?",
-          "a": "Perceptuele hashing vergelijkt de visuele structuur van afbeeldingen in plaats van ruwe bestandsbytes. Twee bestanden kunnen verschillende namen, groottes en metadata hebben — maar als hun inhoud er hetzelfde uitziet, worden ze gekoppeld. Standaard duplicaatdetectors falen zodra een bestand wordt hernoemd of opnieuw geëxporteerd; Comic Duplicate Scanner niet."
-        },
-        {
-          "q": "Kan het duplicaten vinden die zijn hernoemd?",
-          "a": "Ja. Een bestand hernoemen verandert niets aan de inhoud. Comic Duplicate Scanner vergelijkt de afbeeldingen in elk archief, dus een duplicaat wordt gedetecteerd ongeacht hoe het bestand heet."
-        },
-        {
-          "q": "Is verwijdering permanent?",
-          "a": "Nee. Gemarkeerde bestanden worden verplaatst naar de systeemprullenbak (macOS) of Prullenbak (Windows), niet permanent verwijderd. Je kunt elk bestand herstellen voordat je de prullenbak leegt."
-        },
-        {
-          "q": "Welke bestandsformaten worden ondersteund?",
-          "a": "Comicarchieven: CBZ, CBR, ZIP, RAR. Foto's: JPG, PNG, HEIC, WEBP, BMP, GIF. Fuzzy bestandsnaamovereenkomst werkt met elk bestandstype."
-        },
-        {
-          "q": "Werkt het met foto's, niet alleen met comics?",
-          "a": "Ja. Selecteer de fotomodus om JPG-, PNG-, HEIC-, WEBP-, BMP- en GIF-bestanden te scannen. Werkt met iPhone-fotolijstexports, gescande documenten en digitale kunstcollecties."
-        },
-        {
-          "q": "Is er een proefperiode voordat ik koop?",
-          "a": "Je kunt tot 1.000 bestanden gratis scannen, voor altijd. Een gratis proefperiode van 7 dagen in de Mac App Store ontgrendelt onbeperkte toegang, en de eenmalige Pro-aankoop is $19,99 zonder abonnement."
-        },
-        {
-          "q": "Kan het een kleurscan vergelijken met een zwart-witversie van dezelfde inhoud?",
-          "a": "Ja. Het dHash-algoritme werkt op luminantiegradiënten, niet op kleurwaarden. Een volkleurenscan en een grijswaardenscan van dezelfde pagina leveren vrijwel identieke hashes op en worden als duplicaten gemarkeerd."
-        },
-        {
-          "q": "Heeft de beeldresolutie invloed op de duplicaatdetectie?",
-          "a": "Nee. dHash schaalt elke afbeelding naar een klein vast raster voordat er vergeleken wordt, waardoor een scan van 1200px en een van 3000px van dezelfde pagina dezelfde hashwaarde opleveren. Resolutieverschillen tussen bronnen worden volledig genegeerd."
-        }
-      ],
-      "backDesc": "Op zoek naar een comic- en ebook-lezer?",
-      "backCta": "Terug naar BiblioFuse Reader",
-      "languages": "App-taal: Engels · Spaans · Frans · Nederlands · Portugees · Russisch · Vereenvoudigd Chinees · Japans · Koreaans · Indonesisch · Maleis"
     },
     "smartdecryptPage": {
       "seo": {
@@ -1988,241 +1646,241 @@
       }
     }
   },
-        "featureMatrix": {
-      "essentials": "Platformbasis",
-      "whereToGet": "Waar te krijgen",
-      "sinceVersion": "sinds {{version}} · {{date}}",
-      "sinceDate": "sinds {{date}}",
-      "builtDate": "gebouwd op {{date}}",
-      "countAll": "{{n}} functies",
-      "countFiltered": "{{n}} van {{total}} functies",
-      "eyebrow": "Functiematrix",
-      "title": "Wat werkt waar",
-      "subtitle": "Elke BiblioFuse-functie, op elk platform, met de versie waarin die kwam. Zoek of filter om te vinden wat je nodig hebt.",
-      "searchLabel": "Functies zoeken",
-      "searchPlaceholder": "Probeer \"mangavertaling\", \"tategaki\", \"RTL\", \"Komga\"…",
-      "platformsLabel": "Platforms",
-      "groupsLabel": "Categorie",
-      "sinceLabel": "Gewijzigd sinds",
-      "sinceAny": "Alle tijden",
-      "since30": "Laatste 30 dagen",
-      "since90": "Laatste 3 maanden",
-      "since180": "Laatste 6 maanden",
-      "proOnly": "Alleen Pro-functies",
-      "showUnreleased": "Inclusief functies die klaar zijn maar nog niet uitgebracht",
-      "all": "Alle",
-      "reset": "Wissen",
-      "noResults": "Geen functies passen bij deze filters.",
-      "noResultsHint": "Probeer een kortere zoekterm of wis de filters.",
-      "legendShipped": "Beschikbaar",
-      "legendPartial": "Deels beschikbaar",
-      "legendMerged": "Nog niet uitgebracht",
-      "legendNa": "Niet op dit platform",
-      "notYet": "nog niet",
-      "featureColumn": "Functie",
-      "mergedNote": "Rijen met “nog niet” zijn klaar, maar zitten nog niet in een publieke versie voor dat platform.",
-      "coverage": "Behandelt de native apps vanaf mei 2026. Eerdere Flutter-versies staan er niet in.",
-      "sinceTooltip": "sinds",
-      "builtTooltip": "gebouwd",
-      "groups": {
-        "reading": "Lezen",
-        "libraries": "Bibliotheken en servers",
-        "streaming": "Streamen vanaf je eigen computer",
-        "input": "Invoer en platform"
+  "featureMatrix": {
+    "essentials": "Platformbasis",
+    "whereToGet": "Waar te krijgen",
+    "sinceVersion": "sinds {{version}} · {{date}}",
+    "sinceDate": "sinds {{date}}",
+    "builtDate": "gebouwd op {{date}}",
+    "countAll": "{{n}} functies",
+    "countFiltered": "{{n}} van {{total}} functies",
+    "eyebrow": "Functiematrix",
+    "title": "Wat werkt waar",
+    "subtitle": "Elke BiblioFuse-functie, op elk platform, met de versie waarin die kwam. Zoek of filter om te vinden wat je nodig hebt.",
+    "searchLabel": "Functies zoeken",
+    "searchPlaceholder": "Probeer \"mangavertaling\", \"tategaki\", \"RTL\", \"Komga\"…",
+    "platformsLabel": "Platforms",
+    "groupsLabel": "Categorie",
+    "sinceLabel": "Gewijzigd sinds",
+    "sinceAny": "Alle tijden",
+    "since30": "Laatste 30 dagen",
+    "since90": "Laatste 3 maanden",
+    "since180": "Laatste 6 maanden",
+    "proOnly": "Alleen Pro-functies",
+    "showUnreleased": "Inclusief functies die klaar zijn maar nog niet uitgebracht",
+    "all": "Alle",
+    "reset": "Wissen",
+    "noResults": "Geen functies passen bij deze filters.",
+    "noResultsHint": "Probeer een kortere zoekterm of wis de filters.",
+    "legendShipped": "Beschikbaar",
+    "legendPartial": "Deels beschikbaar",
+    "legendMerged": "Nog niet uitgebracht",
+    "legendNa": "Niet op dit platform",
+    "notYet": "nog niet",
+    "featureColumn": "Functie",
+    "mergedNote": "Rijen met “nog niet” zijn klaar, maar zitten nog niet in een publieke versie voor dat platform.",
+    "coverage": "Behandelt de native apps vanaf mei 2026. Eerdere Flutter-versies staan er niet in.",
+    "sinceTooltip": "sinds",
+    "builtTooltip": "gebouwd",
+    "groups": {
+      "reading": "Lezen",
+      "libraries": "Bibliotheken en servers",
+      "streaming": "Streamen vanaf je eigen computer",
+      "input": "Invoer en platform"
+    },
+    "cellNotes": {
+      "lanOnlyTvos": "Alleen lokale wifi; Tailscale is op tvOS niet betrouwbaar genoeg",
+      "noICloudRoute": "Lokale wifi en handmatige Tailscale; de iCloud-route is alleen voor Apple",
+      "lanOnly": "Alleen lokale wifi",
+      "tailscaleServe": "Tailscale Serve en subnet-toegang"
+    },
+    "features": {
+      "live-translation": {
+        "label": "Live strip- en mangavertaling",
+        "note": "PP-OCRv5 op het toestel, gezet in de tekstballon"
       },
-      "cellNotes": {
-        "lanOnlyTvos": "Alleen lokale wifi; Tailscale is op tvOS niet betrouwbaar genoeg",
-        "noICloudRoute": "Lokale wifi en handmatige Tailscale; de iCloud-route is alleen voor Apple",
-        "lanOnly": "Alleen lokale wifi",
-        "tailscaleServe": "Tailscale Serve en subnet-toegang"
+      "translate-export-cbz": {
+        "label": "Vertalen en exporteren als CBZ",
+        "note": "Bewaart een volledig vertaalde kopie van het archief"
       },
-      "features": {
-        "live-translation": {
-          "label": "Live strip- en mangavertaling",
-          "note": "PP-OCRv5 op het toestel, gezet in de tekstballon"
+      "page-curl": {
+        "label": "Bladeren met omslaand hoekje",
+        "note": "Strips, pdf en tekst, met tik of veeg"
+      },
+      "dual-page-spreads": {
+        "label": "Dubbele pagina’s",
+        "note": "Tablet in liggende stand, als een open boek"
+      },
+      "vertical-japanese": {
+        "label": "Verticaal Japans / verticale EPUB",
+        "note": "Correcte tategaki-weergave"
+      },
+      "epub-comic": {
+        "label": "Ondersteuning voor EPUB-strips",
+        "note": "EPUB’s met afbeeldingsrug en vaste opmaak"
+      },
+      "find-in-book": {
+        "label": "Zoeken in boek"
+      },
+      "reading-direction": {
+        "label": "Leesrichting omschakelen",
+        "note": "Spiegelt pagina, schuifregelaar en knoppen; automatisch uit metadata"
+      },
+      "continuous-page-turn": {
+        "label": "Doorlopende modus en bladeren herzien",
+        "note": "Scrollen per sectie voor strips, pdf, EPUB en tekst; bladeren eindigt waar je het verwacht"
+      },
+      "komga-kavita-native": {
+        "label": "Native Komga- en Kavita-API",
+        "note": "Seriedetails, tags, badges, sorteren en zoeken op de server"
+      },
+      "opds": {
+        "label": "OPDS 1.x en OPDS-PSE-streaming",
+        "note": "Strips pagina voor pagina. OPDS 2.0 wordt niet ondersteund."
+      },
+      "kavita-sync": {
+        "label": "Kavita-positie en bladwijzers synchroniseren"
+      },
+      "folder-as-library": {
+        "label": "Map als bibliotheek doorzoeken",
+        "note": "Seriedetails in Kavita-stijl, tabs voor deel en hoofdstuk"
+      },
+      "managed-downloads": {
+        "label": "Beheerde downloads en voortgang synchroniseren",
+        "note": "Met beheer van de downloadcache"
+      },
+      "host-incremental-stream": {
+        "label": "BiblioFuse-host: streamt je eigen bibliotheek",
+        "note": "Vector-pdf-pagina’s, EPUB-strippagina’s, EPUB met vloeiende tekst op aanvraag"
+      },
+      "client-reads-host": {
+        "label": "BiblioFuse-app: leest van je host",
+        "note": "Bonjour-detectie via HTTPS met vastgezet certificaat"
+      },
+      "connection-routes": {
+        "label": "Verbindingsroutes",
+        "note": "iCloud + Tailscale · lokale wifi · handmatige Tailscale"
+      },
+      "controller": {
+        "label": "Gamecontroller met eigen toetsindeling"
+      },
+      "keyboard-shortcuts": {
+        "label": "Sneltoetsen in de lezer"
+      },
+      "look-to-scroll": {
+        "label": "Scrollen met je blik",
+        "note": "Scrollen aan de rand met je blik"
+      },
+      "text-to-speech": {
+        "label": "Voorlezen",
+        "note": "Zinnen markeren, bediening op vergrendelscherm, slaaptimer"
+      },
+      "reading-progress-restore": {
+        "label": "Verder waar je gebleven was",
+        "note": "Per pagina en doorlopend, voor archieven, pdf en tekst"
+      },
+      "export-tools": {
+        "label": "Batch- en samenvoegexport",
+        "note": "Archieven samenvoegen of omzetten naar CBZ en EPUB"
+      },
+      "bulk-metadata-editing": {
+        "label": "Beoordelingen en tags in bulk",
+        "note": "Meerdere selecteren en metadata in één keer aanpassen"
+      },
+      "remote-annotations": {
+        "label": "Gestreamde boeken bewerken en opslaan",
+        "note": "Tags en beoordeling op de host wijzigen, of lokaal een kopie bewaren"
+      },
+      "app-lock": {
+        "label": "App-vergrendeling",
+        "note": "Bibliotheek achter een pincode"
+      },
+      "spatial-library": {
+        "label": "Ruimtelijke bibliotheek",
+        "note": "Doorzoek boekenkasten in de ruimte om je heen"
+      }
+    },
+    "specs": {
+      "read-formats": {
+        "label": "Ondersteunde formaten",
+        "values": {
+          "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "tvos": "CBZ · CBR · RAR · ZIP",
+          "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "androidtv": "CBZ · CBR · RAR · ZIP",
+          "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
         },
-        "translate-export-cbz": {
-          "label": "Vertalen en exporteren als CBZ",
-          "note": "Bewaart een volledig vertaalde kopie van het archief"
-        },
-        "page-curl": {
-          "label": "Bladeren met omslaand hoekje",
-          "note": "Strips, pdf en tekst, met tik of veeg"
-        },
-        "dual-page-spreads": {
-          "label": "Dubbele pagina’s",
-          "note": "Tablet in liggende stand, als een open boek"
-        },
-        "vertical-japanese": {
-          "label": "Verticaal Japans / verticale EPUB",
-          "note": "Correcte tategaki-weergave"
-        },
-        "epub-comic": {
-          "label": "Ondersteuning voor EPUB-strips",
-          "note": "EPUB’s met afbeeldingsrug en vaste opmaak"
-        },
-        "find-in-book": {
-          "label": "Zoeken in boek"
-        },
-        "reading-direction": {
-          "label": "Leesrichting omschakelen",
-          "note": "Spiegelt pagina, schuifregelaar en knoppen; automatisch uit metadata"
-        },
-        "continuous-page-turn": {
-          "label": "Doorlopende modus en bladeren herzien",
-          "note": "Scrollen per sectie voor strips, pdf, EPUB en tekst; bladeren eindigt waar je het verwacht"
-        },
-        "komga-kavita-native": {
-          "label": "Native Komga- en Kavita-API",
-          "note": "Seriedetails, tags, badges, sorteren en zoeken op de server"
-        },
-        "opds": {
-          "label": "OPDS 1.x en OPDS-PSE-streaming",
-          "note": "Strips pagina voor pagina. OPDS 2.0 wordt niet ondersteund."
-        },
-        "kavita-sync": {
-          "label": "Kavita-positie en bladwijzers synchroniseren"
-        },
-        "folder-as-library": {
-          "label": "Map als bibliotheek doorzoeken",
-          "note": "Seriedetails in Kavita-stijl, tabs voor deel en hoofdstuk"
-        },
-        "managed-downloads": {
-          "label": "Beheerde downloads en voortgang synchroniseren",
-          "note": "Met beheer van de downloadcache"
-        },
-        "host-incremental-stream": {
-          "label": "BiblioFuse-host: streamt je eigen bibliotheek",
-          "note": "Vector-pdf-pagina’s, EPUB-strippagina’s, EPUB met vloeiende tekst op aanvraag"
-        },
-        "client-reads-host": {
-          "label": "BiblioFuse-app: leest van je host",
-          "note": "Bonjour-detectie via HTTPS met vastgezet certificaat"
-        },
-        "connection-routes": {
-          "label": "Verbindingsroutes",
-          "note": "iCloud + Tailscale · lokale wifi · handmatige Tailscale"
-        },
-        "controller": {
-          "label": "Gamecontroller met eigen toetsindeling"
-        },
-        "keyboard-shortcuts": {
-          "label": "Sneltoetsen in de lezer"
-        },
-        "look-to-scroll": {
-          "label": "Scrollen met je blik",
-          "note": "Scrollen aan de rand met je blik"
-        },
-        "text-to-speech": {
-          "label": "Voorlezen",
-          "note": "Zinnen markeren, bediening op vergrendelscherm, slaaptimer"
-        },
-        "reading-progress-restore": {
-          "label": "Verder waar je gebleven was",
-          "note": "Per pagina en doorlopend, voor archieven, pdf en tekst"
-        },
-        "export-tools": {
-          "label": "Batch- en samenvoegexport",
-          "note": "Archieven samenvoegen of omzetten naar CBZ en EPUB"
-        },
-        "bulk-metadata-editing": {
-          "label": "Beoordelingen en tags in bulk",
-          "note": "Meerdere selecteren en metadata in één keer aanpassen"
-        },
-        "remote-annotations": {
-          "label": "Gestreamde boeken bewerken en opslaan",
-          "note": "Tags en beoordeling op de host wijzigen, of lokaal een kopie bewaren"
-        },
-        "app-lock": {
-          "label": "App-vergrendeling",
-          "note": "Bibliotheek achter een pincode"
-        },
-        "spatial-library": {
-          "label": "Ruimtelijke bibliotheek",
-          "note": "Doorzoek boekenkasten in de ruimte om je heen"
+        "notes": {
+          "tvos": "Alleen strips — geen tekstlezer",
+          "androidtv": "Alleen strips — geen tekstlezer",
+          "nas": "Browserlezer; nog geen pdf"
         }
       },
-      "specs": {
-        "read-formats": {
-          "label": "Ondersteunde formaten",
-          "values": {
-            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "tvos": "CBZ · CBR · RAR · ZIP",
-            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "androidtv": "CBZ · CBR · RAR · ZIP",
-            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
-          },
-          "notes": {
-            "tvos": "Alleen strips — geen tekstlezer",
-            "androidtv": "Alleen strips — geen tekstlezer",
-            "nas": "Browserlezer; nog geen pdf"
-          }
+      "library-sources": {
+        "label": "Bibliotheekbronnen",
+        "values": {
+          "ios": "Lokaal · iCloud · een BiblioFuse-host",
+          "macos": "Lokaal · iCloud · SMB / NAS",
+          "visionos": "Lokaal · iCloud · een BiblioFuse-host",
+          "tvos": "Alleen een BiblioFuse-host",
+          "android": "Lokaal · externe mappen",
+          "androidtv": "Alleen een BiblioFuse-host",
+          "windows": "Lokaal · iCloud · SMB / NAS",
+          "nas": "Eigen aangesloten of netwerkopslag"
         },
-        "library-sources": {
-          "label": "Bibliotheekbronnen",
-          "values": {
-            "ios": "Lokaal · iCloud · een BiblioFuse-host",
-            "macos": "Lokaal · iCloud · SMB / NAS",
-            "visionos": "Lokaal · iCloud · een BiblioFuse-host",
-            "tvos": "Alleen een BiblioFuse-host",
-            "android": "Lokaal · externe mappen",
-            "androidtv": "Alleen een BiblioFuse-host",
-            "windows": "Lokaal · iCloud · SMB / NAS",
-            "nas": "Eigen aangesloten of netwerkopslag"
-          },
-          "notes": {
-            "nas": "Geen iCloud"
-          }
+        "notes": {
+          "nas": "Geen iCloud"
+        }
+      },
+      "icloud-bookshelf": {
+        "label": "iCloud-boekenkast",
+        "note": "Je bibliotheek reist mee tussen apparaten",
+        "values": {
+          "ios": "Synchronisatie tussen apparaten",
+          "macos": "Synchronisatie tussen apparaten",
+          "visionos": "Synchronisatie tussen apparaten",
+          "windows": "Synchronisatie tussen apparaten"
         },
-        "icloud-bookshelf": {
-          "label": "iCloud-boekenkast",
-          "note": "Je bibliotheek reist mee tussen apparaten",
-          "values": {
-            "ios": "Synchronisatie tussen apparaten",
-            "macos": "Synchronisatie tussen apparaten",
-            "visionos": "Synchronisatie tussen apparaten",
-            "windows": "Synchronisatie tussen apparaten"
-          },
-          "notes": {
-            "tvos": "Geen iCloud op Apple TV"
-          }
+        "notes": {
+          "tvos": "Geen iCloud op Apple TV"
+        }
+      },
+      "reader-features": {
+        "label": "Lezerfuncties",
+        "values": {
+          "ios": "Voorlezen · snelzoom · autoscroll · voortgang · beoordelingen · tags",
+          "macos": "Voorlezen · autoscroll · voortgang · beoordelingen · tags",
+          "visionos": "Voorlezen · autoscroll · voortgang · beoordelingen · tags",
+          "tvos": "Autoscroll · voortgang · beoordelingen · tags",
+          "android": "Voorlezen · snelzoom · autoscroll · voortgang · beoordelingen · tags",
+          "androidtv": "Autoscroll · voortgang · beoordelingen · tags",
+          "windows": "Voorlezen · autoscroll · voortgang · beoordelingen · tags",
+          "nas": "Doorlopend scrollen · voortgang · beoordelingen · tags"
         },
-        "reader-features": {
-          "label": "Lezerfuncties",
-          "values": {
-            "ios": "Voorlezen · snelzoom · autoscroll · voortgang · beoordelingen · tags",
-            "macos": "Voorlezen · autoscroll · voortgang · beoordelingen · tags",
-            "visionos": "Voorlezen · autoscroll · voortgang · beoordelingen · tags",
-            "tvos": "Autoscroll · voortgang · beoordelingen · tags",
-            "android": "Voorlezen · snelzoom · autoscroll · voortgang · beoordelingen · tags",
-            "androidtv": "Autoscroll · voortgang · beoordelingen · tags",
-            "windows": "Voorlezen · autoscroll · voortgang · beoordelingen · tags",
-            "nas": "Doorlopend scrollen · voortgang · beoordelingen · tags"
-          },
-          "notes": {
-            "nas": "Geen voorlezen of snelzoom"
-          }
+        "notes": {
+          "nas": "Geen voorlezen of snelzoom"
+        }
+      },
+      "interface-languages": {
+        "label": "Interfacetalen",
+        "values": {
+          "ios": "11 talen",
+          "macos": "11 talen",
+          "visionos": "11 talen",
+          "tvos": "11 talen",
+          "android": "12 talen",
+          "androidtv": "12 talen",
+          "windows": "11 talen",
+          "nas": "11 talen"
         },
-        "interface-languages": {
-          "label": "Interfacetalen",
-          "values": {
-            "ios": "11 talen",
-            "macos": "11 talen",
-            "visionos": "11 talen",
-            "tvos": "11 talen",
-            "android": "12 talen",
-            "androidtv": "12 talen",
-            "windows": "11 talen",
-            "nas": "11 talen"
-          },
-          "notes": {
-            "android": "Plus Duits",
-            "androidtv": "Plus Duits"
-          }
+        "notes": {
+          "android": "Plus Duits",
+          "androidtv": "Plus Duits"
         }
       }
     }
+  }
 }

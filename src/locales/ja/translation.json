@@ -260,7 +260,8 @@
         "chipB": "iPhone · iPad · Mac",
         "chipC": "TTS · 自動スクロール",
         "chipD": "ハンズフリー読書",
-        "reads": "読む"
+        "reads": "読む",
+        "languages": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語"
       },
       "table": {
         "eyebrow": "アプリを比較",
@@ -392,8 +393,8 @@
         "title": "BiblioFuseツールを選ぶ",
         "items": [
           {
-            "q": "どのBiblioFuseアプリから始めればいいですか？",
-            "a": "コミック、マンガ、PDF、大きな混在ライブラリにはBiblioFuse Reader。EPUB/TXT小说で全文検索やタグが重要ならGrepTag Reader。保護ファイルにはSmartDecrypt、整理にはComic Duplicate Scanner、ブラウザで素早く圧縮・結合するならBiblioFuse Webを使います。"
+            "q": "BiblioFuse Reader はどんなファイルを開けますか？",
+            "a": "BiblioFuse Reader は、コミック・マンガ・PDF・EPUB・TXT を一つのライブラリでまとめて扱えます。Mac や PC からストリーミングする大規模な混在コレクションにも対応。処理はすべて端末上で行われ、アップロードもアカウントも読書履歴の追跡もありません。"
           },
           {
             "q": "ファイルはBiblioFuseのサーバーにアップロードされますか？",
@@ -438,16 +439,6 @@
           "bullet3": "ブラウザがあればどのプラットフォームでも動作",
           "cta": "ウェブツールを起動"
         },
-        "archive": {
-          "tag": "Mac · Windows",
-          "desc": "重複するコミックアーカイブ、写真、ファイルを検出して削除。名前変更、再圧縮、別フォルダ保存後も対応。",
-          "bullet1": "CBZ/CBR/ZIP/RAR の知覚ハッシュ",
-          "bullet2": "スマート自動選択とゴミ箱への安全な削除",
-          "bullet3": "高速再スキャンのためのハッシュキャッシュ",
-          "cta": "Mac App Store",
-          "secondary": "Microsoft Store",
-          "bullet4": "11言語対応"
-        },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
           "desc": "保存したファイル名パターンを使用して、パスワード保護された PDF とアーカイブを解除。",
@@ -466,14 +457,6 @@
           "bullet3": "バックグラウンド再生対応のウェブページ読み上げ",
           "cta": "App Store",
           "bullet4": "11言語に対応"
-        },
-        "grepreader": {
-          "tag": "iOS Only",
-          "desc": "EPUBとTXTライブラリの全文検索、タグ付け、整理。",
-          "bullet1": "AND / OR / NOT論理のGrep検索",
-          "bullet2": "ジャンル別タグ · インポート時に自動実行",
-          "bullet3": "カスタマイズ可能なリーダー — テーマ、フォント、全書検索",
-          "cta": "詳細を見る"
         }
       },
       "learnMore": "詳しく見る",
@@ -525,7 +508,11 @@
           "imageAlt": "分割ビューリーダー付きのBiblioFuseデスクトップライブラリ",
           "footnote": "リモートアクセスには、ホストとiOSデバイスがiCloudにサインインし、Tailscaleに接続されている必要があります。自宅でも外出先でも安定させるには、両方のデバイスでTailscaleをオンにしておくのがおすすめです。"
         }
-      }
+      },
+      "cta": "BiblioFuse Readerをダウンロード",
+      "bullet1": "CBZ、CBR、PDF、EPUB、TXTに対応",
+      "bullet2": "圧縮・結合でスペースを節約——すべて端末上で完結",
+      "bullet3": "MacまたはPCからストリーミング——自宅ではWi-Fi、外出先では5G、大容量向けに設計"
     },
     "toolsHighlight": {
       "badge": "内蔵ツール",
@@ -552,40 +539,6 @@
           "label": "ワンパス"
         }
       }
-    },
-    "archiveSection": {
-      "badge": "姉妹アプリ · Mac と Windows",
-      "titleA": "重複アーカイブを見つける。",
-      "titleB": "名前変更後も。",
-      "desc": "Comic Duplicate Scanner は、名前変更、再圧縮、別フォルダ保存された後でも、重複するコミックアーカイブ、写真、ファイルを検出して削除します。",
-      "features": {
-        "scanning": {
-          "title": "コミックアーカイブスキャン",
-          "body": "知覚ハッシュを使用した CBZ、CBR、ZIP、RAR。"
-        },
-        "photo": {
-          "title": "重複写真検出",
-          "body": "JPG、PNG、HEIC、WEBP、BMP、GIF。"
-        },
-        "select": {
-          "title": "スマート自動選択",
-          "body": "最大、最小、最新、最古、または最多ページ数を保持。"
-        },
-        "delete": {
-          "title": "安全な削除",
-          "body": "マークされたファイルはシステムのゴミ箱にのみ移動。"
-        }
-      },
-      "altBadge": "Mac App Store で Comic Duplicate Scanner をダウンロード",
-      "altImage": "Comic Duplicate Scanner の設定とスキャン開始",
-      "pricing": "1,000 ファイルまでのスキャンは永久に無料で利用可能。7 日間のトライアルでフルアクセスが解除され、一度の購入でサブスクリプションなしの無制限利用が可能。",
-      "stats": {
-        "threshold": "デフォルト閾値",
-        "sampled": "サンプルページ数",
-        "local": "100% ローカル",
-        "noCloud": "クラウドなし、トラッキングなし"
-      },
-      "langNote": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語"
     },
     "decryptSection": {
       "badge": "姉妹アプリ · iOS · Mac · Windows",
@@ -737,11 +690,6 @@
           "title": "オンラインでCBRをCBZに変換：無料、ソフト不要",
           "excerpt": "BiblioFuse WebツールはCBR（RARベース）の漫画アーカイブをCBZ（ZIPベース）形式に直接ブラウザ内で変換します。ファイルのアップロード不要、インストール不要、完全にプライベート。ファイルをドロップして数秒でCBZをダウンロードできます。",
           "seoDescription": "BiblioFuse Web Toolでブラウザ内でCBRをCBZにオンライン変換。ファイルアップロード不要、ソフト不要。WebAssembly使用、単ファイル無料。"
-        },
-        "organize-ebooks-by-content-not-metadata": {
-          "title": "メタデータやISBNではなくコンテンツで電子書籍を整理する",
-          "excerpt": "ほとんどの電子書籍マネージャーは手動のメタデータ入力かISBN検索が必要です。GrepTag ReaderはあなたのEPUBやTXTファイル内の実際のテキストを読み、書かれた内容に基づいて自動的にすべての本にタグを付けます。",
-          "seoDescription": "メタデータやISBNを入力せずに電子書籍ライブラリを自動整理。GrepTag ReaderがEPUBとTXTの内容を読み、書かれた内容からタグを生成。"
         },
         "find-duplicate-comics-different-names": {
           "title": "ファイル名が違う重複コミックの見つけ方",
@@ -1058,296 +1006,6 @@
       "filterAll": "全プラットフォーム",
       "knownIssuesTitle": "既知の問題",
       "roadmapTitle": "ロードマップ"
-    },
-    "twoAppsSection": {
-      "eyebrow": "2つのアプリ、1つのエコシステム",
-      "titleA": "コミックとマンガのために。",
-      "titleB": "または小説とライトノベルのために。",
-      "desc": "各アプリは、ライブラリの実際の動作に合わせて設計されています——ファイルサイズの違い、読書習慣の違い、ストレージニーズの違い。",
-      "comicTag": "コミック · マンガ · PDF",
-      "comicIdent": "大容量ファイル。iPhoneに保存——またはMacやPCから直接ストリーミング。",
-      "comicBullet1": "CBZ、CBR、PDF、EPUB、TXTに対応",
-      "comicBullet2": "圧縮・結合でスペースを節約——すべて端末上で完結",
-      "comicBullet3": "MacまたはPCからストリーミング——自宅ではWi-Fi、外出先では5G、大容量向けに設計",
-      "comicCta": "BiblioFuse Readerをダウンロード",
-      "textTag": "EPUB · 小説 · TXT",
-      "textIdent": "小容量ファイル。ライブラリ全体がスマートフォンに収まる——すべての言葉を検索・タグ付け。",
-      "textBullet1": "全文Grep——AND / OR / NOTに対応、インポート時に自動実行",
-      "textBullet2": "ジャンル別タグ · Wi-Fiで双方向同期",
-      "textBullet3": "カスタマイズ可能なリーダー — テーマ、フォント、全書検索",
-      "textCta": "GrepTag Readerを探索",
-      "bothNote": "多くの読者がコミックにBiblioFuse、小説にGrepTagを使っています——どちらも無料でお試しいただけます。",
-      "comicCoverLine": "CBZ、CBR、EPUB、PDFライブラリの表紙サムネイルに対応。",
-      "textCoverLine": "EPUBとTXTライブラリの表紙サムネイルに対応し、表紙画像も利用できます。"
-    },
-    "grepTagPage": {
-      "hero": {
-        "badge": "iOS · macOS · Windows",
-        "title": "検索。タグ付け。ライブラリを掌握。",
-        "desc": "GrepTag Reader は EPUB・TXT ファイルの実際のテキストを検索します——手動のメタデータ入力も ISBN 入力も不要。キーワードを入力するだけで、該当する書籍が即座に表示されます。ジャンルでタグ付け、AND ロジックでフィルタ、Wi-Fi で同期。",
-        "appStoreCta": "App Storeでダウンロード",
-        "trust1": "メタデータや ISBN の手入力不要",
-        "trust2": "サーバーなし、アップロードなし",
-        "trust3": "CJKテキスト対応",
-        "comingSoon": "App Store で提供中",
-        "msStoreCta": "Microsoftから入手",
-        "macInReview": "iOS、macOS、Windows で提供中",
-        "screenshotAlt": "GrepTag ReaderのAND/OR/NOT再利用可能な検索プロファイル画面（iPhone）"
-      },
-      "grep": {
-        "eyebrow": "書籍内テキスト検索",
-        "title": "すべての本の全文を検索。",
-        "desc": "キーワードを入力するだけで、GrepTag が EPUB・TXT ファイルを直接読み取ります——インデックス構築なし、アップロードなし、手動タグ付けなし。AND・OR・NOT ロジックで検索を名前付きプロファイルとして保存し、ライブラリが増えても再実行できます。新しい書籍はインポート時に自動でタグ付けされます。",
-        "bullet1": "ブール論理——「Sci-Fi AND ドラゴン NOT 恋愛」",
-        "bullet2": "無料2プロフィールまで · Proで無制限解放",
-        "bullet3": "インポート時に自動実行——新しい書籍は自動タグ付け、メタデータ入力不要",
-        "badge": "常に無料 · スキャン無制限"
-      },
-      "tags": {
-        "eyebrow": "タグと探索",
-        "title": "ジャンル別タグ付け。即時フィルタリング。",
-        "desc": "タグは書籍の実際の内容から生成されます——手入力が必要なタイトル・著者・ISBN からではありません。スキャン結果からワンタップでタグを適用。AND ロジックで複数のタグを選択し、すべてに一致する書籍を一度に絞り込めます。",
-        "bullet1": "5タグ無料 · Proで無制限解放",
-        "bullet2": "複数タグ選択と AND ロジック——選択したすべてのタグに一致する書籍を検索",
-        "bullet3": "検索結果からワンタップでタグ付け——フォーム入力不要"
-      },
-      "sync": {
-        "eyebrow": "Wi-Fi同期",
-        "title": "ローカル Wi‑Fi で同期し、Apple 検出フォールバックにも対応。",
-        "desc": "iPhone、iPad、Mac、Windows 間で、書籍、タグ、評価、キーワードプロファイル、フォルダ構造をローカルネットワーク経由で転送します。Apple デバイスでは検出のために小さな iCloud メタデータスナップショットを使う場合がありますが、書籍ファイルは Wi‑Fi で転送され、開発者サーバーにはアップロードされません。",
-        "bullet1": "Mac / PC ↔ iPhone / iPad、iPhone ↔ iPad、Mac ↔ Mac、PC ↔ PC",
-        "bullet2": "書籍、タグ、評価、キーワードプロファイル、フォルダ階層をデバイス間で同期",
-        "bullet3": "Pro 機能 — 転送中は転送元デバイスのサーバーを起動しておく必要があります"
-      },
-      "covers": {
-        "eyebrow": "カバーとリーダー",
-        "title": "ビジュアルライブラリ。内蔵リーダー。",
-        "desc": "GrepTag Readerは、EPUBとTXTライブラリの表紙サムネイルに対応し、表紙画像も利用できます。EPUBの表紙は自動抽出されます。TXT本では、同じフォルダ内の画像、または貼り付けたURLから表紙を設定できます。内蔵リーダーでEPUBとTXTを読み、TTS、ブックマーク、調整可能なフォントを使えます。",
-        "bullet1": "EPUBカバー自動抽出（無料）",
-        "bullet2": "TXTカバーは同フォルダ画像またはURL（Pro）",
-        "bullet3": "音量調整TTS · ブックマーク · チャプターナビゲーション"
-      },
-      "whySeparate": {
-        "eyebrow": "なぜ2つのアプリ？",
-        "title": "異なるライブラリには異なるツールが必要。",
-        "desc": "BiblioFuse Readerは画像中心の大きなコミックファイル向けです。MacまたはPCからストリーミングし、アプリ内で圧縮できます。GrepTagは端末に収まる小さなテキストファイル向けで、grep、タグ、双方向同期に対応します。",
-        "col1": "BiblioFuse Reader",
-        "col2": "GrepTag Reader",
-        "row1Label": "最適な用途",
-        "row1col1": "コミック、マンガ、PDF",
-        "row1col2": "EPUB、ライトノベル、TXT",
-        "row2Label": "ファイルサイズ",
-        "row2col1": "1巻あたり50〜300 MB",
-        "row2col2": "各5 MB未満",
-        "row3Label": "ストレージ設計",
-        "row3col1": "MacまたはPCからストリーミング · アプリ内圧縮",
-        "row3col2": "デバイスに保存 · どの方向にも同期",
-        "row4Label": "主な機能",
-        "row4col1": "圧縮、結合、ストリーミング、自動バックアップ",
-        "row4col2": "Full-text grep, tags, covers, Wi-Fi sync",
-        "row5Label": "フォーマット",
-        "row5col1": "CBZ、CBR、PDF、EPUB、TXT",
-        "row5col2": "EPUB、TXT",
-        "readerCta": "BiblioFuse Readerを探索"
-      },
-      "pricing": {
-        "eyebrow": "料金",
-        "title": "検索は無料。所有はPro。",
-        "freeTitle": "無料",
-        "freeDesc": "いつでも無料でライブラリを検索・発見できます。",
-        "proTitle": "Pro",
-        "proDesc": "一回の購入で、すべての機能を永久に解放します。",
-        "proMonthly": "$0.99 / 月",
-        "proYearly": "$4.99 / 年",
-        "proLifetime": "$14.99 買い切り",
-        "proTrial": "月額・年額プランは7日間の無料トライアルあり",
-        "appStoreCta": "App Storeで無料トライアル",
-        "approvalNote": "App Store と Microsoft Store で提供中です。"
-      },
-      "seo": {
-        "title": "GrepTag Reader — 全 EPUB・電子書籍内を検索 | iPhone・iPad・Mac・Windows",
-        "desc": "iPhone、iPad、Mac、Windows のすべての EPUB・TXT ファイルを検索。メタデータや ISBN の手入力不要——GrepTag が書籍の内容をスキャンし、ジャンルで自動タグ付け。無料でお試しいただけます。"
-      },
-      "faq": [
-        {
-          "q": "GrepTag Readerとは何ですか？",
-          "a": "GrepTag Readerは、iPhone、iPad、Mac、WindowsでEPUBおよびTXTの電子書籍コレクションを全文検索・タグ付けするアプリです。AND / OR / NOTのブール論理でライブラリ全体のキーワードを検索し、ジャンル別にタグ付けし、ローカルWi-Fi経由でライブラリを同期できます — ファイルはどのサーバーにもアップロードされません。"
-        },
-        {
-          "q": "GrepTag ReaderとBiblioFuse Readerの違いは何ですか？",
-          "a": "BiblioFuse Readerは画像中心の大きなコミックファイル（CBZ、CBR、PDF）向けです。MacまたはPCからストリーミングし、アーカイブを圧縮し、webtoon/マンガ読書に対応します。GrepTag ReaderはEPUB/TXTのテキストライブラリ向けで、全文grep、ジャンルタグ、任意方向のWi‑Fi同期を提供します。"
-        },
-        {
-          "q": "全文grep検索は無料ですか？",
-          "a": "はい。Grepスキャンは常に無料で無制限です — EPUBおよびTXTライブラリ全体を何度でも任意のキーワードで検索できます。無料で最大2つの名前付き検索プロフィールを保存できます。Proでは無制限のプロフィールが使えます。"
-        },
-        {
-          "q": "GrepTag Readerはファイルをサーバーにアップロードしますか？",
-          "a": "いいえ。GrepTag Readerはローカルファイルから直接読み取ります。どのサーバーにも何もアップロードされません — クラウドインデックスなし、開発者バックエンドなし。ファイルはデバイスに残ります。"
-        },
-        {
-          "q": "GrepTag Readerはどのファイル形式に対応していますか？",
-          "a": "GrepTag ReaderはEPUBとTXTファイルに対応しています。両形式の検索とタグ付けができ、EPUBカバーを自動抽出し、同じフォルダの画像やURLを貼り付けてTXT本のカバーを取得できます（Pro機能）。"
-        },
-        {
-          "q": "無料で使えるタグはいくつですか？",
-          "a": "無料版には5つのタグが含まれています。Proでは無制限のタグが使えます。スキャン結果からワンタップでタグを適用したり、手動でタグ付けしてANDまたはOR論理で複数タグによるフィルタリングができます。"
-        },
-        {
-          "q": "iPhone、iPad、Mac、PC の間でライブラリを同期できますか？",
-          "a": "はい。Wi-Fi Sync は iPhone、iPad、Mac、Windows PC のあらゆる組み合わせ間で、書籍、タグ、評価、キーワードプロファイル、フォルダ構造を転送します。同期に参加するすべての Apple デバイスは同じ iCloud アカウントでサインインしている必要があります。iCloud はデバイスの検出にのみ使用され、書籍の保存には使用されません。ファイルはローカル Wi-Fi ネットワーク経由で転送され、開発者サーバーにアップロードされることはありません。Wi-Fi Sync は Pro 機能です。"
-        },
-        {
-          "q": "Wi-Fi Sync で複数の iPhone や iPad を使用できますか？",
-          "a": "はい。複数の iPhone と iPad が同じライブラリの同期に参加できます。GrepTag の iOS 版はアプリのルートフォルダからの相対パスでパスを保存するため、同じ iCloud アカウントにサインインしているすべての iOS デバイスで同じパス構造が機能します。"
-        },
-        {
-          "q": "ライブラリの信頼できる情報源として Mac と PC のどちらを使うべきですか？",
-          "a": "1台の Mac または 1台の PC をメインのライブラリデバイスとして使用することをお勧めします。GrepTag のメタデータは、PC パス、iOS パス、Mac パスの3種類の異なるパスタイプを追跡します。iOS は相対パスを使用するため、複数の iPhone と iPad で機能します。Mac と PC はそれぞれ自分のデバイスの絶対パスを保存するため、Mac が1台、PC が1台だけの構成の場合、同期が最も安定します。"
-        },
-        {
-          "q": "iPhone の新しい書籍を Mac や PC に同期して戻すことはできますか？",
-          "a": "はい。iPhone で Mac または PC にまだ存在しないフォルダ内に書籍を追加した場合、GrepTag は同期を完了する前に受信側デバイスでフォルダを作成してライブラリリストに追加するよう促します。"
-        },
-        {
-          "q": "ebook ファイル内の特定の単語やフレーズを検索するにはどうすればいいですか？",
-          "a": "GrepTag Reader を開き、「検索」タブに移動して任意の単語やフレーズを入力します。アプリはライブラリ内のすべての EPUB・TXT ファイルを開き、検索語を含むすべての本を返します — 事前インデックス不要、アップロード不要。AND、OR、NOT で語句を組み合わせるとより精確な結果が得られます（例：「魔法 AND ドラゴン NOT ロマンス」）。よく使う検索を名前付きプロファイルとして保存すれば、新しい本をインポートしたときに自動で再実行されます。検索は常に無料・無制限です。"
-        },
-        {
-          "q": "GrepTag Reader はインターネット接続なしで動作しますか？",
-          "a": "はい。GrepTag Reader は完全にオフラインで動作します。検索・タグ付け・整理のすべてがデバイス上で直接行われます — アプリはローカルの EPUB・TXT ファイルを読み込むため、サーバーやインターネット接続は不要です。ネットワークが使われるのは、オプションの Wi-Fi Sync 機能でご自身のデバイス間でローカルネットワーク経由に本を転送するときだけです。"
-        },
-        {
-          "q": "リーダーの外観やフォントをカスタマイズできますか？",
-          "a": "はい。iPhone、iPad、Mac でセピア・グレー・ブラック（OLED）テーマから選べます。Iowan、Charter、楷体、CJK 対応セリフ体などをライブプレビュー付きで選択でき、自分の .ttf/.otf フォントをインポートすることもできます。明るさ、テキストの配置、太字も自分の読み方に合わせて調整できます。"
-        },
-        {
-          "q": "今読んでいる本の中を検索できますか？",
-          "a": "はい。全書検索は、現在のチャプターだけでなく、読んでいる TXT または EPUB ファイル全体をスキャンします。Mac には専用の検索バーがあり、iOS と同じフォントプレビュー体験が得られます。"
-        }
-      ],
-      "faqTitle": "よくある質問",
-      "languages": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語",
-      "reader": {
-        "eyebrow": "リーダーのカスタマイズ",
-        "title": "リーダーを自分好みに。",
-        "desc": "iPhone、iPad、Mac でリーダーを自分の目に合わせて調整できます。セピア・グレー・ブラック（OLED）テーマから選び、ライブプレビュー付きでフォントを選択——または自分のフォントをインポート——し、明るさ、配置、太字を調整できます。読んでいる本全体を検索でき、現在のチャプターだけに限定されません。",
-        "bullet1": "iOS と macOS でセピア・グレー・ブラック（OLED）テーマ",
-        "bullet2": "ライブプレビュー付きフォント選択 — Iowan、Charter、楷体、CJK 対応セリフ体など — または自分の .ttf/.otf フォントをインポート",
-        "bullet3": "明るさ、テキスト配置、太字 — さらに全書検索と macOS の検索バー",
-        "badge": "1.0.4 と 1.0.5 の新機能"
-      }
-    },
-    "archivePage": {
-      "seo": {
-        "title": "Comic Duplicate Scanner — MacとWindowsで重複コミックや写真を検索",
-        "desc": "Comic Duplicate Scanner は知覚ハッシュを使って CBZ、CBR、ZIP、RAR および写真ファイルの重複を検出します。名前変更や再圧縮後、あるいは解像度やカラーモードが異なる場合でも対応。1,000ファイルまで無料、Pro は買い切り $19.99。"
-      },
-      "hero": {
-        "badge": "Mac と Windows",
-        "title": "重複を見つける。名前変更後でも。",
-        "desc": "Comic Duplicate Scanner はコミックアーカイブを開き、内部の実際の画像を比較します（ファイル名やサイズだけではありません）。一方のファイルが comic_E1-5、もう一方が ComiX_E1-10 と呼ばれていても、最初の数ページが一致すれば重複としてフラグが立てられます。",
-        "trust1": "クラウドへのアップロードなし",
-        "trust2": "ゴミ箱への安全な削除",
-        "trust3": "7日間無料トライアル",
-        "macStore": "Mac App Store でダウンロード",
-        "winStore": "Microsoft Store から入手",
-        "trust4": "11言語"
-      },
-      "scanning": {
-        "eyebrow": "ディープアーカイブスキャン",
-        "title": "アーカイブを開いて内部ページを比較",
-        "desc": "ほとんどの重複検索ツールはファイル名やサイズしか比較しません。Comic Duplicate Scanner は各 CBZ・CBR・ZIP・RAR ファイルを開き、実際のページからサムネイルを抽出して比較します。comic_E1-5 と ComiX_E1-10——名前もエピソード範囲も異なっていても——最初のページが一致すれば検出されます。",
-        "bullet1": "アーカイブを開いてページ画像を比較——ファイル名だけではありません",
-        "bullet2": "設定可能な類似度しきい値 — 90% を推奨",
-        "bullet3": "ハッシュキャッシュにより再スキャンをほぼ即座に実行",
-        "badge": "マンガ、マンファ、マンファに対応",
-        "bullet4": "解像度やカラーモードが異なっていても重複を検出 — 同じページの1200pxのグレースケールスキャンと3000pxのカラースキャンも重複としてフラグが立てられます"
-      },
-      "photos": {
-        "eyebrow": "写真とファイル名マッチング",
-        "title": "写真と似たファイル名 — どちらもカバー",
-        "desc": "アーカイブ以外にも、dHash アルゴリズムを使用して重複した JPG、PNG、HEIC、WEBP、BMP、GIF 写真を検出します。ファイル名あいまいマッチングにより、フォーマットのみ異なるコピー（\"Spider-Man #001\" vs \"Spider Man 001\"）を設定可能なしきい値で検出します。",
-        "bullet1": "写真フォーマット：JPG、PNG、HEIC、WEBP、BMP、GIF",
-        "bullet2": "設定可能な記号除去付き RapidFuzz アルゴリズム",
-        "bullet3": "Unicode 対応 — 日本語、韓国語、中国語などあらゆる文字セットに対応"
-      },
-      "autoselect": {
-        "eyebrow": "スマート自動選択",
-        "title": "ワンクリックで保持すべきファイルをマーク",
-        "desc": "ルールを設定（最大、最小、最新、最古、ページ数最多を保持）すると、自動選択機能がワンクリックですべての重複をマークします。何も変更される前に結果を確認できます。確認するまで何も移動しません。",
-        "bullet1": "5つのルール：最大、最小、最新、最古、ページ数最多",
-        "bullet2": "最後のコピー安全警告により誤った完全削除を防止",
-        "bullet3": "意図的なバリアントペアのための永続的な無視リスト",
-        "badge": "ファイルはゴミ箱に移動 — いつでも復元可能"
-      },
-      "export": {
-        "eyebrow": "レポートとマルチフォルダー",
-        "title": "結果をエクスポート、フォルダー間で比較",
-        "desc": "スキャン結果をスプレッドシート用の CSV、またはサムネイル・類似スコア・ソート可能な列を含む完全な HTML レポートとしてエクスポートします。マルチフォルダーモードでは 2 つの別個のフォルダーを比較できます（整理済みライブラリとダウンロードフォルダーの重複検索に便利）。",
-        "bullet1": "サムネイルと統計が埋め込まれた HTML レポート",
-        "bullet2": "スプレッドシートとアーカイブ用の CSV エクスポート",
-        "bullet3": "マルチフォルダー比較：フォルダー A vs フォルダー B"
-      },
-      "pricing": {
-        "eyebrow": "シンプルな料金設定",
-        "title": "永久無料。必要に応じて Pro をアンロック。",
-        "freeTitle": "無料",
-        "proTitle": "Pro",
-        "trial": "Mac App Store で 7 日間無料トライアル提供",
-        "feat1": "アーカイブスキャン（CBZ/CBR/ZIP/RAR）",
-        "feat1free": "最大 1,000 ファイル",
-        "feat1pro": "無制限",
-        "feat2": "重複写真の検出",
-        "feat2free": "最大 1,000 ファイル",
-        "feat2pro": "無制限",
-        "feat3": "ファイル名あいまいマッチング",
-        "feat3free": "最大 1,000 ファイル",
-        "feat3pro": "無制限",
-        "feat4": "スマート自動選択",
-        "feat5": "レポートのエクスポート（CSV と HTML）",
-        "feat6": "マルチフォルダー比較",
-        "feat7": "ハッシュキャッシュ（高速再スキャン）",
-        "feat8": "永続的な無視リスト"
-      },
-      "faqTitle": "よくある質問",
-      "faq": [
-        {
-          "q": "知覚的ハッシュとは何ですか？なぜ重要ですか？",
-          "a": "知覚的ハッシュは、生のファイルバイトではなく、画像の視覚的構造を比較します。2 つのファイルは名前、サイズ、メタデータが異なっていても、内容が同じように見えれば知覚的ハッシュがそれらを照合します。標準的な重複検索ツールはファイルが名前変更や再エクスポートされると失敗しますが、Comic Duplicate Scanner は失敗しません。"
-        },
-        {
-          "q": "名前が変更された重複ファイルを見つけられますか？",
-          "a": "はい。ファイルの名前変更はその内容には影響しません。Comic Duplicate Scanner は各アーカイブ内の画像を比較するため、ファイル名に関わらず重複が検出されます。"
-        },
-        {
-          "q": "削除は永久的ですか？",
-          "a": "いいえ。マークされたファイルはシステムゴミ箱（macOS）またはごみ箱（Windows）に移動されるだけで、完全には削除されません。ゴミ箱を空にする前にいつでもファイルを復元できます。"
-        },
-        {
-          "q": "どのファイル形式に対応していますか？",
-          "a": "コミックアーカイブ：CBZ、CBR、ZIP、RAR。写真：JPG、PNG、HEIC、WEBP、BMP、GIF。ファイル名あいまいマッチングはあらゆるファイルタイプで動作します。"
-        },
-        {
-          "q": "コミックだけでなく写真にも対応していますか？",
-          "a": "はい。写真モードを選択して JPG、PNG、HEIC、WEBP、BMP、GIF ファイルをスキャンできます。iPhone フォトライブラリのエクスポート、スキャンした文書、デジタルアートコレクションにも対応しています。"
-        },
-        {
-          "q": "購入前にトライアルはありますか？",
-          "a": "最大 1,000 ファイルを永久に無料でスキャンできます。Mac App Store での 7 日間無料トライアルで無制限アクセスがアンロックされ、Pro の一回払いは $19.99 でサブスクリプションなしです。"
-        },
-        {
-          "q": "カラースキャンと同じコンテンツの白黒バージョンを照合できますか？",
-          "a": "はい。dHashアルゴリズムは色の値ではなく輝度のグラデーションで動作します。同じページのフルカラースキャンとグレースケール版はほぼ同一のハッシュ値を生成し、重複としてフラグが立てられます。"
-        },
-        {
-          "q": "画像の解像度は重複検出に影響しますか？",
-          "a": "いいえ。dHashは比較前にすべての画像を小さな固定グリッドにリサイズするため、同じページの1200pxと3000pxのスキャンは同じハッシュ値になります。ソース間の解像度の違いは完全に無視されます。"
-        }
-      ],
-      "backDesc": "コミック・電子書籍リーダーをお探しですか？",
-      "backCta": "BiblioFuse Reader に戻る",
-      "languages": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語"
     },
     "smartdecryptPage": {
       "seo": {
@@ -1988,241 +1646,241 @@
       }
     }
   },
-        "featureMatrix": {
-      "essentials": "プラットフォーム概要",
-      "whereToGet": "入手方法",
-      "sinceVersion": "{{version}} 以降 · {{date}}",
-      "sinceDate": "{{date}} 以降",
-      "builtDate": "{{date}} に開発",
-      "countAll": "{{n}} 件の機能",
-      "countFiltered": "{{total}} 件中 {{n}} 件",
-      "eyebrow": "機能マトリクス",
-      "title": "どこで何が使えるか",
-      "subtitle": "BiblioFuse のすべての機能を、プラットフォームごとに、登場したバージョンとあわせて掲載。検索または絞り込みで目的の機能を探せます。",
-      "searchLabel": "機能を検索",
-      "searchPlaceholder": "「マンガ翻訳」「tategaki」「RTL」「Komga」などで検索",
-      "platformsLabel": "プラットフォーム",
-      "groupsLabel": "カテゴリ",
-      "sinceLabel": "変更時期",
-      "sinceAny": "すべて",
-      "since30": "過去30日",
-      "since90": "過去3か月",
-      "since180": "過去6か月",
-      "proOnly": "Pro機能のみ",
-      "showUnreleased": "開発済みだが未リリースの機能も表示",
-      "all": "すべて",
-      "reset": "リセット",
-      "noResults": "条件に一致する機能はありません。",
-      "noResultsHint": "検索語を短くするか、フィルターをリセットしてください。",
-      "legendShipped": "利用可能",
-      "legendPartial": "一部利用可能",
-      "legendMerged": "未リリース",
-      "legendNa": "このプラットフォームでは非対応",
-      "notYet": "未対応",
-      "featureColumn": "機能",
-      "mergedNote": "「未対応」の行は開発済みですが、そのプラットフォームの公開バージョンには含まれていません。",
-      "coverage": "2026年5月以降のネイティブアプリを対象としています。それ以前の Flutter 版は含みません。",
-      "sinceTooltip": "以降",
-      "builtTooltip": "開発",
-      "groups": {
-        "reading": "読書",
-        "libraries": "ライブラリとサーバー",
-        "streaming": "自分のマシンからのストリーミング",
-        "input": "入力とプラットフォーム"
+  "featureMatrix": {
+    "essentials": "プラットフォーム概要",
+    "whereToGet": "入手方法",
+    "sinceVersion": "{{version}} 以降 · {{date}}",
+    "sinceDate": "{{date}} 以降",
+    "builtDate": "{{date}} に開発",
+    "countAll": "{{n}} 件の機能",
+    "countFiltered": "{{total}} 件中 {{n}} 件",
+    "eyebrow": "機能マトリクス",
+    "title": "どこで何が使えるか",
+    "subtitle": "BiblioFuse のすべての機能を、プラットフォームごとに、登場したバージョンとあわせて掲載。検索または絞り込みで目的の機能を探せます。",
+    "searchLabel": "機能を検索",
+    "searchPlaceholder": "「マンガ翻訳」「tategaki」「RTL」「Komga」などで検索",
+    "platformsLabel": "プラットフォーム",
+    "groupsLabel": "カテゴリ",
+    "sinceLabel": "変更時期",
+    "sinceAny": "すべて",
+    "since30": "過去30日",
+    "since90": "過去3か月",
+    "since180": "過去6か月",
+    "proOnly": "Pro機能のみ",
+    "showUnreleased": "開発済みだが未リリースの機能も表示",
+    "all": "すべて",
+    "reset": "リセット",
+    "noResults": "条件に一致する機能はありません。",
+    "noResultsHint": "検索語を短くするか、フィルターをリセットしてください。",
+    "legendShipped": "利用可能",
+    "legendPartial": "一部利用可能",
+    "legendMerged": "未リリース",
+    "legendNa": "このプラットフォームでは非対応",
+    "notYet": "未対応",
+    "featureColumn": "機能",
+    "mergedNote": "「未対応」の行は開発済みですが、そのプラットフォームの公開バージョンには含まれていません。",
+    "coverage": "2026年5月以降のネイティブアプリを対象としています。それ以前の Flutter 版は含みません。",
+    "sinceTooltip": "以降",
+    "builtTooltip": "開発",
+    "groups": {
+      "reading": "読書",
+      "libraries": "ライブラリとサーバー",
+      "streaming": "自分のマシンからのストリーミング",
+      "input": "入力とプラットフォーム"
+    },
+    "cellNotes": {
+      "lanOnlyTvos": "ローカル Wi-Fi のみ。tvOS では Tailscale の安定性が不足",
+      "noICloudRoute": "ローカル Wi-Fi と手動 Tailscale に対応。iCloud 経路は Apple 製品のみ",
+      "lanOnly": "ローカル Wi-Fi のみ",
+      "tailscaleServe": "Tailscale Serve とサブネットアクセス"
+    },
+    "features": {
+      "live-translation": {
+        "label": "マンガのライブ翻訳",
+        "note": "端末内 PP-OCRv5、吹き出しに組み直し"
       },
-      "cellNotes": {
-        "lanOnlyTvos": "ローカル Wi-Fi のみ。tvOS では Tailscale の安定性が不足",
-        "noICloudRoute": "ローカル Wi-Fi と手動 Tailscale に対応。iCloud 経路は Apple 製品のみ",
-        "lanOnly": "ローカル Wi-Fi のみ",
-        "tailscaleServe": "Tailscale Serve とサブネットアクセス"
+      "translate-export-cbz": {
+        "label": "翻訳して CBZ に書き出し",
+        "note": "アーカイブ全体の翻訳版を保存"
       },
-      "features": {
-        "live-translation": {
-          "label": "マンガのライブ翻訳",
-          "note": "端末内 PP-OCRv5、吹き出しに組み直し"
+      "page-curl": {
+        "label": "ページめくりアニメーション",
+        "note": "マンガ・PDF・テキストを、タップまたはスワイプで"
+      },
+      "dual-page-spreads": {
+        "label": "見開き表示",
+        "note": "タブレット横向きで、本を開いたように"
+      },
+      "vertical-japanese": {
+        "label": "縦書き日本語・縦書き EPUB",
+        "note": "縦書き（tategaki）を正しく表示"
+      },
+      "epub-comic": {
+        "label": "EPUB コミック対応",
+        "note": "画像スパインおよび固定レイアウトの EPUB"
+      },
+      "find-in-book": {
+        "label": "本文内検索"
+      },
+      "reading-direction": {
+        "label": "読み方向の切り替え",
+        "note": "ページ・スライダー・操作を反転。メタデータから自動設定"
+      },
+      "continuous-page-turn": {
+        "label": "連続モードとページ送りの刷新",
+        "note": "マンガ・PDF・EPUB・テキストを画面単位でスクロール。ページ送りが思った位置に着地"
+      },
+      "komga-kavita-native": {
+        "label": "Komga・Kavita ネイティブ API",
+        "note": "シリーズ詳細、タグ、バッジ、サーバー側の並べ替えと検索"
+      },
+      "opds": {
+        "label": "OPDS 1.x と OPDS-PSE ストリーミング",
+        "note": "マンガを 1 ページずつ取得。OPDS 2.0 は非対応。"
+      },
+      "kavita-sync": {
+        "label": "Kavita の位置とブックマーク同期"
+      },
+      "folder-as-library": {
+        "label": "フォルダをライブラリとして閲覧",
+        "note": "Kavita 風のシリーズ詳細、巻・章タブ"
+      },
+      "managed-downloads": {
+        "label": "ダウンロード管理と進捗同期",
+        "note": "ダウンロードキャッシュの管理付き"
+      },
+      "host-incremental-stream": {
+        "label": "BiblioFuse ホスト：自分のライブラリを配信",
+        "note": "ベクター PDF ページ、EPUB コミックページ、遅延読み込みのリフロー EPUB"
+      },
+      "client-reads-host": {
+        "label": "BiblioFuse アプリ：自分のホストから読む",
+        "note": "証明書ピン留め HTTPS 上の Bonjour 検出"
+      },
+      "connection-routes": {
+        "label": "接続経路",
+        "note": "iCloud + Tailscale・ローカル Wi-Fi・手動 Tailscale"
+      },
+      "controller": {
+        "label": "ゲームコントローラーとキー割り当て"
+      },
+      "keyboard-shortcuts": {
+        "label": "リーダーのキーボードショートカット"
+      },
+      "look-to-scroll": {
+        "label": "視線でスクロール",
+        "note": "視線で画面端をスクロール"
+      },
+      "text-to-speech": {
+        "label": "読み上げ機能",
+        "note": "文単位のハイライト、ロック画面操作、スリープタイマー"
+      },
+      "reading-progress-restore": {
+        "label": "前回の続きから再開",
+        "note": "ページ送りと連続の両方で、アーカイブ・PDF・テキストに対応"
+      },
+      "export-tools": {
+        "label": "一括書き出しと結合",
+        "note": "アーカイブを CBZ・EPUB に結合または変換"
+      },
+      "bulk-metadata-editing": {
+        "label": "評価とタグの一括編集",
+        "note": "複数選択して、メタデータをまとめて編集"
+      },
+      "remote-annotations": {
+        "label": "ストリーミング中の本を編集・保存",
+        "note": "ホスト上でタグと評価を変更、またはローカルに保存"
+      },
+      "app-lock": {
+        "label": "アプリロック",
+        "note": "ライブラリを PIN で保護"
+      },
+      "spatial-library": {
+        "label": "空間ライブラリ",
+        "note": "部屋の中に配置された本棚を眺める"
+      }
+    },
+    "specs": {
+      "read-formats": {
+        "label": "対応フォーマット",
+        "values": {
+          "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "tvos": "CBZ · CBR · RAR · ZIP",
+          "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "androidtv": "CBZ · CBR · RAR · ZIP",
+          "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
         },
-        "translate-export-cbz": {
-          "label": "翻訳して CBZ に書き出し",
-          "note": "アーカイブ全体の翻訳版を保存"
-        },
-        "page-curl": {
-          "label": "ページめくりアニメーション",
-          "note": "マンガ・PDF・テキストを、タップまたはスワイプで"
-        },
-        "dual-page-spreads": {
-          "label": "見開き表示",
-          "note": "タブレット横向きで、本を開いたように"
-        },
-        "vertical-japanese": {
-          "label": "縦書き日本語・縦書き EPUB",
-          "note": "縦書き（tategaki）を正しく表示"
-        },
-        "epub-comic": {
-          "label": "EPUB コミック対応",
-          "note": "画像スパインおよび固定レイアウトの EPUB"
-        },
-        "find-in-book": {
-          "label": "本文内検索"
-        },
-        "reading-direction": {
-          "label": "読み方向の切り替え",
-          "note": "ページ・スライダー・操作を反転。メタデータから自動設定"
-        },
-        "continuous-page-turn": {
-          "label": "連続モードとページ送りの刷新",
-          "note": "マンガ・PDF・EPUB・テキストを画面単位でスクロール。ページ送りが思った位置に着地"
-        },
-        "komga-kavita-native": {
-          "label": "Komga・Kavita ネイティブ API",
-          "note": "シリーズ詳細、タグ、バッジ、サーバー側の並べ替えと検索"
-        },
-        "opds": {
-          "label": "OPDS 1.x と OPDS-PSE ストリーミング",
-          "note": "マンガを 1 ページずつ取得。OPDS 2.0 は非対応。"
-        },
-        "kavita-sync": {
-          "label": "Kavita の位置とブックマーク同期"
-        },
-        "folder-as-library": {
-          "label": "フォルダをライブラリとして閲覧",
-          "note": "Kavita 風のシリーズ詳細、巻・章タブ"
-        },
-        "managed-downloads": {
-          "label": "ダウンロード管理と進捗同期",
-          "note": "ダウンロードキャッシュの管理付き"
-        },
-        "host-incremental-stream": {
-          "label": "BiblioFuse ホスト：自分のライブラリを配信",
-          "note": "ベクター PDF ページ、EPUB コミックページ、遅延読み込みのリフロー EPUB"
-        },
-        "client-reads-host": {
-          "label": "BiblioFuse アプリ：自分のホストから読む",
-          "note": "証明書ピン留め HTTPS 上の Bonjour 検出"
-        },
-        "connection-routes": {
-          "label": "接続経路",
-          "note": "iCloud + Tailscale・ローカル Wi-Fi・手動 Tailscale"
-        },
-        "controller": {
-          "label": "ゲームコントローラーとキー割り当て"
-        },
-        "keyboard-shortcuts": {
-          "label": "リーダーのキーボードショートカット"
-        },
-        "look-to-scroll": {
-          "label": "視線でスクロール",
-          "note": "視線で画面端をスクロール"
-        },
-        "text-to-speech": {
-          "label": "読み上げ機能",
-          "note": "文単位のハイライト、ロック画面操作、スリープタイマー"
-        },
-        "reading-progress-restore": {
-          "label": "前回の続きから再開",
-          "note": "ページ送りと連続の両方で、アーカイブ・PDF・テキストに対応"
-        },
-        "export-tools": {
-          "label": "一括書き出しと結合",
-          "note": "アーカイブを CBZ・EPUB に結合または変換"
-        },
-        "bulk-metadata-editing": {
-          "label": "評価とタグの一括編集",
-          "note": "複数選択して、メタデータをまとめて編集"
-        },
-        "remote-annotations": {
-          "label": "ストリーミング中の本を編集・保存",
-          "note": "ホスト上でタグと評価を変更、またはローカルに保存"
-        },
-        "app-lock": {
-          "label": "アプリロック",
-          "note": "ライブラリを PIN で保護"
-        },
-        "spatial-library": {
-          "label": "空間ライブラリ",
-          "note": "部屋の中に配置された本棚を眺める"
+        "notes": {
+          "tvos": "コミックのみ — テキストリーダーなし",
+          "androidtv": "コミックのみ — テキストリーダーなし",
+          "nas": "ブラウザリーダー。PDF は未対応"
         }
       },
-      "specs": {
-        "read-formats": {
-          "label": "対応フォーマット",
-          "values": {
-            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "tvos": "CBZ · CBR · RAR · ZIP",
-            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "androidtv": "CBZ · CBR · RAR · ZIP",
-            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
-          },
-          "notes": {
-            "tvos": "コミックのみ — テキストリーダーなし",
-            "androidtv": "コミックのみ — テキストリーダーなし",
-            "nas": "ブラウザリーダー。PDF は未対応"
-          }
+      "library-sources": {
+        "label": "ライブラリのソース",
+        "values": {
+          "ios": "ローカル · iCloud · BiblioFuse ホスト",
+          "macos": "ローカル · iCloud · SMB / NAS",
+          "visionos": "ローカル · iCloud · BiblioFuse ホスト",
+          "tvos": "BiblioFuse ホストのみ",
+          "android": "ローカル · 外部フォルダ",
+          "androidtv": "BiblioFuse ホストのみ",
+          "windows": "ローカル · iCloud · SMB / NAS",
+          "nas": "自身の接続ストレージまたはネットワークストレージ"
         },
-        "library-sources": {
-          "label": "ライブラリのソース",
-          "values": {
-            "ios": "ローカル · iCloud · BiblioFuse ホスト",
-            "macos": "ローカル · iCloud · SMB / NAS",
-            "visionos": "ローカル · iCloud · BiblioFuse ホスト",
-            "tvos": "BiblioFuse ホストのみ",
-            "android": "ローカル · 外部フォルダ",
-            "androidtv": "BiblioFuse ホストのみ",
-            "windows": "ローカル · iCloud · SMB / NAS",
-            "nas": "自身の接続ストレージまたはネットワークストレージ"
-          },
-          "notes": {
-            "nas": "iCloud は非対応"
-          }
+        "notes": {
+          "nas": "iCloud は非対応"
+        }
+      },
+      "icloud-bookshelf": {
+        "label": "iCloud 本棚",
+        "note": "ライブラリが端末間で引き継がれます",
+        "values": {
+          "ios": "端末間で同期",
+          "macos": "端末間で同期",
+          "visionos": "端末間で同期",
+          "windows": "端末間で同期"
         },
-        "icloud-bookshelf": {
-          "label": "iCloud 本棚",
-          "note": "ライブラリが端末間で引き継がれます",
-          "values": {
-            "ios": "端末間で同期",
-            "macos": "端末間で同期",
-            "visionos": "端末間で同期",
-            "windows": "端末間で同期"
-          },
-          "notes": {
-            "tvos": "Apple TV に iCloud はありません"
-          }
+        "notes": {
+          "tvos": "Apple TV に iCloud はありません"
+        }
+      },
+      "reader-features": {
+        "label": "リーダー機能",
+        "values": {
+          "ios": "読み上げ · ピークズーム · 自動スクロール · 進捗 · 評価 · タグ",
+          "macos": "読み上げ · 自動スクロール · 進捗 · 評価 · タグ",
+          "visionos": "読み上げ · 自動スクロール · 進捗 · 評価 · タグ",
+          "tvos": "自動スクロール · 進捗 · 評価 · タグ",
+          "android": "読み上げ · ピークズーム · 自動スクロール · 進捗 · 評価 · タグ",
+          "androidtv": "自動スクロール · 進捗 · 評価 · タグ",
+          "windows": "読み上げ · 自動スクロール · 進捗 · 評価 · タグ",
+          "nas": "連続スクロール · 進捗 · 評価 · タグ"
         },
-        "reader-features": {
-          "label": "リーダー機能",
-          "values": {
-            "ios": "読み上げ · ピークズーム · 自動スクロール · 進捗 · 評価 · タグ",
-            "macos": "読み上げ · 自動スクロール · 進捗 · 評価 · タグ",
-            "visionos": "読み上げ · 自動スクロール · 進捗 · 評価 · タグ",
-            "tvos": "自動スクロール · 進捗 · 評価 · タグ",
-            "android": "読み上げ · ピークズーム · 自動スクロール · 進捗 · 評価 · タグ",
-            "androidtv": "自動スクロール · 進捗 · 評価 · タグ",
-            "windows": "読み上げ · 自動スクロール · 進捗 · 評価 · タグ",
-            "nas": "連続スクロール · 進捗 · 評価 · タグ"
-          },
-          "notes": {
-            "nas": "読み上げとピークズームなし"
-          }
+        "notes": {
+          "nas": "読み上げとピークズームなし"
+        }
+      },
+      "interface-languages": {
+        "label": "インターフェース言語",
+        "values": {
+          "ios": "11言語",
+          "macos": "11言語",
+          "visionos": "11言語",
+          "tvos": "11言語",
+          "android": "12言語",
+          "androidtv": "12言語",
+          "windows": "11言語",
+          "nas": "11言語"
         },
-        "interface-languages": {
-          "label": "インターフェース言語",
-          "values": {
-            "ios": "11言語",
-            "macos": "11言語",
-            "visionos": "11言語",
-            "tvos": "11言語",
-            "android": "12言語",
-            "androidtv": "12言語",
-            "windows": "11言語",
-            "nas": "11言語"
-          },
-          "notes": {
-            "android": "ドイツ語を追加",
-            "androidtv": "ドイツ語を追加"
-          }
+        "notes": {
+          "android": "ドイツ語を追加",
+          "androidtv": "ドイツ語を追加"
         }
       }
     }
+  }
 }

@@ -260,7 +260,8 @@
         "chipB": "iPhone · iPad · Mac",
         "chipC": "TTS · 自动滚动",
         "chipD": "免提阅读",
-        "reads": "阅读"
+        "reads": "阅读",
+        "languages": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语"
       },
       "table": {
         "eyebrow": "比较应用",
@@ -392,8 +393,8 @@
         "title": "选择 BiblioFuse 工具",
         "items": [
           {
-            "q": "我应该先用哪个 BiblioFuse 应用？",
-            "a": "漫画、PDF 和大型混合书库用 BiblioFuse Reader。EPUB/TXT 小说需要全文搜索和标签时用 GrepTag Reader。受密码保护的文件用 SmartDecrypt，清理重复文件用 Comic Duplicate Scanner，快速浏览器压缩或合并用 BiblioFuse Web。"
+            "q": "BiblioFuse Reader 可以打开哪些文件？",
+            "a": "BiblioFuse Reader 在同一个书库中管理漫画、日漫、PDF、EPUB 和 TXT，包括从你自己的 Mac 或 PC 串流的大型混合收藏。所有处理都在你的设备上完成：无需上传、无需账号，也不会追踪你读了什么。"
           },
           {
             "q": "我的文件会上传到 BiblioFuse 服务器吗？",
@@ -438,16 +439,6 @@
           "bullet3": "在任何有浏览器的平台上运行",
           "cta": "启动网页工具"
         },
-        "archive": {
-          "tag": "Mac · Windows",
-          "desc": "查找并删除重复的漫画存档、照片和文件，即使它们被重命名、重新压缩或保存在不同文件夹中。",
-          "bullet1": "CBZ/CBR/ZIP/RAR 感知哈希",
-          "bullet2": "智能自动选择和安全的废纸篓删除",
-          "bullet3": "哈希缓存实现快速重复扫描",
-          "cta": "Mac App Store",
-          "secondary": "Microsoft Store",
-          "bullet4": "支持 11 种语言"
-        },
         "smartdecrypt": {
           "tag": "iOS · Mac · Windows",
           "desc": "使用已保存的文件名模式解锁受密码保护的 PDF 和存档。",
@@ -466,14 +457,6 @@
           "bullet3": "网页文字转语音，支持后台播放",
           "cta": "App Store",
           "bullet4": "支持 11 种语言"
-        },
-        "grepreader": {
-          "tag": "iOS Only",
-          "desc": "为EPUB和TXT书库提供全文搜索、标签和整理功能。",
-          "bullet1": "支持AND / OR / NOT逻辑的Grep搜索",
-          "bullet2": "按类型标记 · 导入时自动执行",
-          "bullet3": "可自定义阅读器——主题、字体与全书搜索",
-          "cta": "了解更多"
         }
       },
       "learnMore": "了解更多",
@@ -525,7 +508,11 @@
           "imageAlt": "带分栏阅读器的 BiblioFuse 桌面书库",
           "footnote": "远程访问需要主机和 iOS 设备登录 iCloud 并连接 Tailscale。为了在家和外出时都稳定使用，请在两台设备上都保持 Tailscale 开启。"
         }
-      }
+      },
+      "cta": "下载BiblioFuse Reader",
+      "bullet1": "支持CBZ、CBR、PDF、EPUB和TXT",
+      "bullet2": "压缩与合并以节省空间——全部在设备上完成",
+      "bullet3": "从Mac或PC串流——家中用Wi-Fi，外出用5G，专为大容量而生"
     },
     "toolsHighlight": {
       "badge": "内置工具",
@@ -552,40 +539,6 @@
           "label": "一键完成"
         }
       }
-    },
-    "archiveSection": {
-      "badge": "姊妹应用 · Mac 和 Windows",
-      "titleA": "找到重复存档。",
-      "titleB": "即使重命名后。",
-      "desc": "Comic Duplicate Scanner 查找并删除重复的漫画存档、照片和文件，即使它们被重命名、重新压缩或保存在不同文件夹中。",
-      "features": {
-        "scanning": {
-          "title": "漫画存档扫描",
-          "body": "CBZ、CBR、ZIP 和 RAR，使用感知哈希。"
-        },
-        "photo": {
-          "title": "重复照片检测",
-          "body": "JPG、PNG、HEIC、WEBP、BMP 和 GIF。"
-        },
-        "select": {
-          "title": "智能自动选择",
-          "body": "保留最大、最小、最新、最旧或最多页面的文件。"
-        },
-        "delete": {
-          "title": "安全删除",
-          "body": "标记的文件仅移至系统废纸篓。"
-        }
-      },
-      "altBadge": "在 Mac App Store 下载 Comic Duplicate Scanner",
-      "altImage": "Comic Duplicate Scanner 配置并开始扫描",
-      "pricing": "最多 1,000 个文件的扫描永久免费使用。7 天试用解锁完整访问权限，一次性购买解锁无限使用，无需订阅。",
-      "stats": {
-        "threshold": "默认阈值",
-        "sampled": "已采样页面",
-        "local": "100% 本地",
-        "noCloud": "无云，无追踪"
-      },
-      "langNote": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语"
     },
     "decryptSection": {
       "badge": "姊妹应用 · iOS · Mac · Windows",
@@ -737,11 +690,6 @@
           "title": "在线将CBR转换为CBZ：免费，无需软件",
           "excerpt": "BiblioFuse网页工具可在浏览器中直接将CBR（基于RAR）漫画档案转换为CBZ（基于ZIP）格式——无需上传、无需安装，完全保护隐私。拖入文件，几秒内下载转换后的CBZ。",
           "seoDescription": "使用BiblioFuse Web Tool在浏览器中在线将CBR转换为CBZ。无需上传文件，无需软件。WebAssembly驱动，单文件免费使用。"
-        },
-        "organize-ebooks-by-content-not-metadata": {
-          "title": "按内容整理电子书，而非元数据或 ISBN",
-          "excerpt": "大多数电子书管理器要求手动输入元数据或查询 ISBN。GrepTag Reader 读取 EPUB 和 TXT 文件内的实际文字，并根据书中写的内容自动为每本书打标签，无需任何元数据录入。",
-          "seoDescription": "无需输入元数据或 ISBN，自动整理你的电子书库。GrepTag Reader 读取 EPUB 和 TXT 内容，根据实际写入内容生成标签。"
         },
         "find-duplicate-comics-different-names": {
           "title": "如何找到文件名不同的重复漫画文件",
@@ -1058,296 +1006,6 @@
       "filterAll": "所有平台",
       "knownIssuesTitle": "已知问题",
       "roadmapTitle": "路线图"
-    },
-    "twoAppsSection": {
-      "eyebrow": "两款应用，一个生态系统",
-      "titleA": "适用于漫画和漫画书。",
-      "titleB": "或适用于小说和轻小说。",
-      "desc": "每款应用都围绕其书库的实际运作方式设计——不同的文件大小、不同的阅读习惯、不同的存储需求。",
-      "comicTag": "漫画 · 漫画书 · PDF",
-      "comicIdent": "大文件。保存在iPhone上——或直接从Mac或PC串流。",
-      "comicBullet1": "支持CBZ、CBR、PDF、EPUB和TXT",
-      "comicBullet2": "压缩与合并以节省空间——全部在设备上完成",
-      "comicBullet3": "从Mac或PC串流——家中用Wi-Fi，外出用5G，专为大容量而生",
-      "comicCta": "下载BiblioFuse Reader",
-      "textTag": "EPUB · 小说 · TXT",
-      "textIdent": "小文件。整个书库都能装进手机——搜索并为每个字标记。",
-      "textBullet1": "全文Grep——支持AND / OR / NOT，导入时自动运行",
-      "textBullet2": "按类型标记 · Wi-Fi任意方向同步",
-      "textBullet3": "可自定义阅读器——主题、字体与全书搜索",
-      "textCta": "探索GrepTag Reader",
-      "bothNote": "许多读者用BiblioFuse看漫画，用GrepTag读小说——两款均可免费试用。",
-      "comicCoverLine": "支持 CBZ、CBR、EPUB 和 PDF 书库的封面缩略图。",
-      "textCoverLine": "支持 EPUB 和 TXT 书库的封面缩略图，包括封面图片支持。"
-    },
-    "grepTagPage": {
-      "hero": {
-        "badge": "iOS · macOS · Windows",
-        "title": "搜索。标记。掌控你的书库。",
-        "desc": "GrepTag Reader 搜索 EPUB 和 TXT 文件中的实际文字——无需手动填写元数据，无需输入 ISBN。输入关键词，所有匹配书籍立即出现。按类型打标签，用 AND 逻辑过滤，通过 Wi-Fi 同步。",
-        "appStoreCta": "在 App Store 下载",
-        "trust1": "无需手动填写元数据或 ISBN",
-        "trust2": "无服务器，无上传",
-        "trust3": "支持中日韩文字",
-        "comingSoon": "现已在 App Store 上架",
-        "msStoreCta": "从 Microsoft 获取",
-        "macInReview": "iOS、macOS 和 Windows 现已推出",
-        "screenshotAlt": "GrepTag Reader 中可重复使用的 AND/OR/NOT 搜索配置文件界面（iPhone）"
-      },
-      "grep": {
-        "eyebrow": "在书籍内部搜索",
-        "title": "搜索每本书的全文。",
-        "desc": "输入任意关键词，GrepTag 直接读取 EPUB 和 TXT 文件——无需建立索引，无需上传，无需手动标记。用 AND、OR 和 NOT 逻辑将搜索保存为命名配置文件，随着书库增长可随时重新运行。导入新书时自动打标签。",
-        "bullet1": "布尔逻辑——\"科幻 AND 龙 NOT 言情\"",
-        "bullet2": "免费最多2个配置文件 · Pro解锁无限",
-        "bullet3": "导入时自动运行——新书自动打标签，无需输入元数据",
-        "badge": "永久免费 · 无限次扫描"
-      },
-      "tags": {
-        "eyebrow": "标签与发现",
-        "title": "按类型标记。立即筛选。",
-        "desc": "标签来自书籍实际内容——而非您需要手动输入的书名、作者或 ISBN。一键从扫描结果中应用标签。使用 AND 逻辑过滤书库，一次找出符合所有已选标签的书籍。",
-        "bullet1": "5个标签免费 · Pro解锁无限",
-        "bullet2": "多选标签 + AND 逻辑——找出符合所有已选标签的书籍",
-        "bullet3": "从搜索结果一键打标签——无需填写表单"
-      },
-      "sync": {
-        "eyebrow": "Wi-Fi同步",
-        "title": "通过本地 Wi‑Fi 同步，并支持 Apple 发现备用机制。",
-        "desc": "在 iPhone、iPad、Mac 和 Windows 之间通过本地网络传输书籍、标签、评分、关键字配置文件和文件夹结构。Apple 设备可能使用小型 iCloud 元数据快照进行发现，但书籍文件通过 Wi‑Fi 传输，不会上传到开发者服务器。",
-        "bullet1": "Mac / PC ↔ iPhone / iPad，iPhone ↔ iPad，Mac ↔ Mac，PC ↔ PC",
-        "bullet2": "书籍、标签、评分、关键字配置文件和文件夹层级可跨设备同步",
-        "bullet3": "Pro 功能——传输期间源设备服务器必须保持运行"
-      },
-      "covers": {
-        "eyebrow": "封面与阅读器",
-        "title": "可视化书库。内置阅读器。",
-        "desc": "GrepTag Reader 支持 EPUB 和 TXT 书库的封面缩略图，包括封面图片支持。EPUB 封面会自动提取。TXT 书籍可从同一文件夹中的图片匹配封面，也可粘贴 URL 获取封面。可在内置阅读器中阅读 EPUB 和 TXT，并使用 TTS、书签和可调字体。",
-        "bullet1": "EPUB封面自动提取（免费）",
-        "bullet2": "TXT封面来自同文件夹图片或URL（Pro）",
-        "bullet3": "TTS含音量控制 · 书签 · 章节导航"
-      },
-      "whySeparate": {
-        "eyebrow": "为什么是两个应用？",
-        "title": "不同的书库需要不同的工具。",
-        "desc": "BiblioFuse Reader 面向体积大的图片漫画文件：可从 Mac 或 PC 串流，并在应用内压缩。GrepTag 面向能完整放在设备上的小型文本文件：grep、标签、任意方向同步。",
-        "col1": "BiblioFuse Reader",
-        "col2": "GrepTag Reader",
-        "row1Label": "适合",
-        "row1col1": "漫画、manga、PDF",
-        "row1col2": "EPUB、轻小说、TXT",
-        "row2Label": "文件大小",
-        "row2col1": "每卷 50–300 MB",
-        "row2col2": "每本不超过 5 MB",
-        "row3Label": "存储设计",
-        "row3col1": "从 Mac 或 PC 串流 · 应用内压缩",
-        "row3col2": "存储在设备 · 任意方向同步",
-        "row4Label": "核心功能",
-        "row4col1": "压缩、合并、串流、自动备份",
-        "row4col2": "Full-text grep, tags, covers, Wi-Fi sync",
-        "row5Label": "格式",
-        "row5col1": "CBZ、CBR、PDF、EPUB、TXT",
-        "row5col2": "EPUB、TXT",
-        "readerCta": "探索BiblioFuse Reader"
-      },
-      "pricing": {
-        "eyebrow": "定价",
-        "title": "搜索免费。Pro完全拥有。",
-        "freeTitle": "免费",
-        "freeDesc": "永久搜索和发现您的书库。",
-        "proTitle": "Pro",
-        "proDesc": "一次购买，永久解锁所有功能。",
-        "proMonthly": "$0.99 / 月",
-        "proYearly": "$4.99 / 年",
-        "proLifetime": "$14.99 一次性",
-        "proTrial": "月度和年度计划提供 7 天免费试用",
-        "appStoreCta": "在 App Store 免费试用",
-        "approvalNote": "现已在 App Store 和 Microsoft Store 上架。"
-      },
-      "seo": {
-        "title": "GrepTag Reader — 在所有 EPUB 和电子书中搜索文本 | iPhone、iPad、Mac、Windows",
-        "desc": "在 iPhone、iPad、Mac 和 Windows 上搜索每个 EPUB 和 TXT 文件的内容。无需手动输入元数据或 ISBN——GrepTag 扫描书籍内容，自动按类型标记您的书库。免费试用。"
-      },
-      "faq": [
-        {
-          "q": "什么是GrepTag Reader？",
-          "a": "GrepTag Reader是一款适用于iPhone、iPad、Mac和Windows的EPUB和TXT电子书全文搜索与标签应用。它能让你用AND / OR / NOT布尔逻辑在整个书库中搜索任何关键词、按类型为书籍打标签、通过本地Wi-Fi同步书库——所有操作都无需将文件上传到任何服务器。"
-        },
-        {
-          "q": "GrepTag Reader与BiblioFuse Reader有什么区别？",
-          "a": "BiblioFuse Reader 面向大型图片漫画文件（CBZ、CBR、PDF）。它可从 Mac 或 PC 串流、压缩归档，并支持 webtoon/漫画阅读。GrepTag Reader 面向 EPUB 和 TXT 文本书库，提供全文 grep、类型标签和任意方向 Wi‑Fi 同步。"
-        },
-        {
-          "q": "全文grep搜索是免费的吗？",
-          "a": "是的。Grep扫描始终免费且无限次——你可以随时搜索EPUB和TXT书库中的任何关键词。免费保存最多2个命名搜索配置文件。Pro解锁无限配置文件。"
-        },
-        {
-          "q": "GrepTag Reader会将我的文件上传到服务器吗？",
-          "a": "不会。GrepTag Reader直接从本地文件读取。没有任何内容会上传到服务器——无云端索引，无开发者后端。文件始终留在你的设备上。"
-        },
-        {
-          "q": "GrepTag Reader支持哪些文件格式？",
-          "a": "GrepTag Reader支持EPUB和TXT文件。可对两种格式进行搜索和标记、自动提取EPUB封面，以及从同文件夹图片或粘贴URL为TXT书籍匹配封面（Pro功能）。"
-        },
-        {
-          "q": "免费可以有多少个标签？",
-          "a": "免费版包含5个标签。Pro解锁无限标签。你可以一键从扫描结果应用标签，也可手动为书籍打标签，并用AND或OR逻辑按多个标签筛选。"
-        },
-        {
-          "q": "我可以在 iPhone、iPad、Mac 和 PC 之间同步我的书库吗？",
-          "a": "可以。Wi-Fi Sync 可在 iPhone、iPad、Mac 和 Windows PC 的任意组合之间传输书籍、标签、评分、关键词配置文件和文件夹结构。参与同步的所有 Apple 设备必须登录同一 iCloud 账户——iCloud 仅用于设备发现，不用于存储您的书籍。文件通过本地 Wi-Fi 网络传输，永远不会上传到任何开发者服务器。Wi-Fi Sync 是 Pro 功能。"
-        },
-        {
-          "q": "我可以将多部 iPhone 或 iPad 与 Wi-Fi Sync 一起使用吗？",
-          "a": "可以。多部 iPhone 和 iPad 都可以参与同一书库的同步。GrepTag 的 iOS 版本以相对于应用根文件夹的路径存储文件，因此相同的路径结构适用于登录同一 iCloud 账户的每台 iOS 设备。"
-        },
-        {
-          "q": "我应该用 Mac 还是 PC 作为书库的主要数据源？",
-          "a": "我们建议将一台 Mac 或一台 PC 作为主要书库设备。GrepTag 的元数据追踪三种不同的路径类型——PC 路径、iOS 路径和 Mac 路径。iOS 可在多部 iPhone 和 iPad 上使用，因为它使用相对路径。Mac 和 PC 各自存储本设备的绝对路径，因此当您的配置中只有一台 Mac 和一台 PC 时，同步最为可靠。"
-        },
-        {
-          "q": "我的 iPhone 可以将新书同步回 Mac 或 PC 吗？",
-          "a": "可以。如果您在 iPhone 上将书籍添加到 Mac 或 PC 上尚不存在的文件夹中，GrepTag 会在完成同步之前提示您在接收设备上创建该文件夹并将其添加到书库列表中。"
-        },
-        {
-          "q": "如何在我的电子书文件中搜索特定的词语或短语？",
-          "a": "打开 GrepTag Reader，进入\"搜索\"标签页，输入任意词语或短语。应用将打开书库中的每个 EPUB 和 TXT 文件，并返回包含您搜索词的每一本书——无需预先建立索引，无需上传。使用 AND、OR 和 NOT 组合词语以获得更精确的结果（例如：\"魔法 AND 龙 NOT 爱情\"）。将常用搜索保存为命名配置文件，新书导入时自动运行。搜索功能永久免费且无限制。"
-        },
-        {
-          "q": "GrepTag Reader 需要联网才能使用吗？",
-          "a": "不需要。GrepTag Reader 完全离线运行。所有搜索、标记和整理都直接在您的设备上进行——应用在本地读取您的 EPUB 和 TXT 文件，无需服务器或网络连接。只有在使用可选的 Wi-Fi Sync 功能时才会用到网络，该功能通过本地网络在您自己的设备之间传输书籍。"
-        },
-        {
-          "q": "我可以自定义阅读器的外观和字体吗？",
-          "a": "可以。在 iPhone、iPad 和 Mac 上可选择棕褐、灰色或黑色（OLED）主题。选择带实时预览的字体——包括 Iowan、Charter、楷体和支持 CJK 的衬线字体——或导入你自己的 .ttf/.otf 字体。还可以调整亮度、文本对齐方式和加粗，以适应你的阅读习惯。"
-        },
-        {
-          "q": "我可以在正在阅读的书中进行搜索吗？",
-          "a": "可以。全书搜索会扫描你正在阅读的整个 TXT 或 EPUB 文件，而不仅仅是当前章节。在 Mac 上有专门的查找栏，提供与 iOS 相同的字体预览体验。"
-        }
-      ],
-      "faqTitle": "常见问题",
-      "languages": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语",
-      "reader": {
-        "eyebrow": "阅读器自定义",
-        "title": "打造专属于你的阅读器。",
-        "desc": "在 iPhone、iPad 和 Mac 上把阅读器调整到最适合你眼睛的状态。可选择棕褐、灰色或黑色（OLED）主题，选择带实时预览的字体——或导入自己的字体——并调整亮度、对齐方式和加粗。搜索你正在阅读的整本书，而不仅仅是当前章节。",
-        "bullet1": "iOS 与 macOS 上的棕褐、灰色和黑色（OLED）主题",
-        "bullet2": "带实时预览的字体选择器——Iowan、Charter、楷体、支持 CJK 的衬线字体等——或导入你自己的 .ttf/.otf 字体",
-        "bullet3": "亮度、文本对齐和加粗——外加全书搜索和 macOS 查找栏",
-        "badge": "1.0.4 与 1.0.5 新增"
-      }
-    },
-    "archivePage": {
-      "seo": {
-        "title": "Comic Duplicate Scanner — 在 Mac 和 Windows 上查找重复漫画和照片",
-        "desc": "Comic Duplicate Scanner 使用感知哈希查找重复的 CBZ、CBR、ZIP、RAR 和照片文件——即使在重命名、重新压缩或不同分辨率和色彩模式下也能识别。免费支持最多 1,000 个文件，Pro 版一次性购买 $19.99。"
-      },
-      "hero": {
-        "badge": "Mac 和 Windows",
-        "title": "查找重复文件。即使重命名后也能找到。",
-        "desc": "Comic Duplicate Scanner 打开您的漫画档案并比较其中的实际图像——而不仅仅是文件名或大小。即使一个文件叫 comic_E1-5，另一个叫 ComiX_E1-10，只要前几页匹配，就会被标记为重复。",
-        "trust1": "无云端上传",
-        "trust2": "安全移至废纸篓",
-        "trust3": "7 天免费试用",
-        "macStore": "在 Mac App Store 下载",
-        "winStore": "从 Microsoft Store 获取",
-        "trust4": "11 种语言"
-      },
-      "scanning": {
-        "eyebrow": "深度档案扫描",
-        "title": "打开档案并比较内部页面",
-        "desc": "大多数重复查找工具只比较文件名或大小。Comic Duplicate Scanner 打开每个 CBZ、CBR、ZIP 或 RAR 文件，提取实际页面的缩略图并进行比较。名为 comic_E1-5 和 ComiX_E1-10 的文件——名称不同、剧集范围不同——只要开头页面匹配，仍会被检测出来。",
-        "bullet1": "打开压缩包并比较页面图片——不只是文件名",
-        "bullet2": "可配置的相似度阈值——推荐 90%",
-        "bullet3": "哈希缓存使重复扫描几乎即时完成",
-        "badge": "支持漫画、韩漫和中国漫画",
-        "bullet4": "跨分辨率和色彩模式识别重复项——同一页面的 1200px 灰度扫描和 3000px 彩色扫描仍会被标记"
-      },
-      "photos": {
-        "eyebrow": "照片和文件名匹配",
-        "title": "照片和相似文件名——两者均涵盖",
-        "desc": "除档案外，还可使用 dHash 算法检测重复的 JPG、PNG、HEIC、WEBP、BMP 和 GIF 照片。文件名模糊匹配可捕获仅格式不同的副本——如 \"Spider-Man #001\" vs \"Spider Man 001\"——阈值可配置。",
-        "bullet1": "照片格式：JPG、PNG、HEIC、WEBP、BMP、GIF",
-        "bullet2": "带可配置符号去除的 RapidFuzz 算法",
-        "bullet3": "支持 Unicode——适用于日文、韩文、中文及任何字符集"
-      },
-      "autoselect": {
-        "eyebrow": "智能自动选择",
-        "title": "一键标记要保留的正确文件",
-        "desc": "设置规则——保留最大、最小、最新、最旧或页数最多的文件——自动选择功能一键标记所有重复项。确认前先查看结果，不会自动移动任何文件。",
-        "bullet1": "五种规则：最大、最小、最新、最旧、页数最多",
-        "bullet2": "最后一个副本安全警告防止意外全部删除",
-        "bullet3": "为有意保留的变体对设置永久忽略列表",
-        "badge": "文件移至废纸篓——随时可恢复"
-      },
-      "export": {
-        "eyebrow": "报告和多文件夹",
-        "title": "导出结果，跨文件夹比较",
-        "desc": "将扫描结果导出为 CSV 电子表格，或导出为带缩略图、相似度评分和可排序列的完整 HTML 报告。多文件夹模式比较两个独立的文件夹——适用于在有序书库和下载文件夹之间查找重复项。",
-        "bullet1": "带嵌入缩略图和统计数据的 HTML 报告",
-        "bullet2": "用于电子表格和存档的 CSV 导出",
-        "bullet3": "多文件夹比较：文件夹 A 对 文件夹 B"
-      },
-      "pricing": {
-        "eyebrow": "简单定价",
-        "title": "永久免费。需要时解锁 Pro。",
-        "freeTitle": "免费版",
-        "proTitle": "Pro",
-        "trial": "Mac App Store 提供 7 天免费试用",
-        "feat1": "档案扫描（CBZ/CBR/ZIP/RAR）",
-        "feat1free": "最多 1,000 个文件",
-        "feat1pro": "无限制",
-        "feat2": "照片重复检测",
-        "feat2free": "最多 1,000 个文件",
-        "feat2pro": "无限制",
-        "feat3": "文件名模糊匹配",
-        "feat3free": "最多 1,000 个文件",
-        "feat3pro": "无限制",
-        "feat4": "智能自动选择",
-        "feat5": "导出报告（CSV 和 HTML）",
-        "feat6": "多文件夹比较",
-        "feat7": "哈希缓存（快速重新扫描）",
-        "feat8": "永久忽略列表"
-      },
-      "faqTitle": "常见问题",
-      "faq": [
-        {
-          "q": "什么是感知哈希，为什么重要？",
-          "a": "感知哈希比较图像的视觉结构，而不是原始文件字节。两个文件可以有不同的名称、大小和元数据——但如果内容看起来相同，感知哈希就会匹配它们。标准重复查找器在文件重命名或重新导出时会失败；Comic Duplicate Scanner 不会。"
-        },
-        {
-          "q": "能找到被重命名的重复文件吗？",
-          "a": "可以。重命名文件不会改变其内容。Comic Duplicate Scanner 比较每个档案内部的图像，因此无论文件叫什么名字都能检测到重复。"
-        },
-        {
-          "q": "删除是永久性的吗？",
-          "a": "不是。标记的文件会移至系统废纸篓（macOS）或回收站（Windows），而不是永久删除。在清空废纸篓之前，您可以恢复任何文件。"
-        },
-        {
-          "q": "支持哪些文件格式？",
-          "a": "漫画档案：CBZ、CBR、ZIP、RAR。照片：JPG、PNG、HEIC、WEBP、BMP、GIF。文件名模糊匹配适用于任何文件类型。"
-        },
-        {
-          "q": "不只是漫画，也适用于照片吗？",
-          "a": "是的。选择照片模式扫描 JPG、PNG、HEIC、WEBP、BMP 和 GIF 文件。适用于 iPhone 照片库导出、扫描文件和数字艺术收藏。"
-        },
-        {
-          "q": "购买前有试用吗？",
-          "a": "您可以永久免费扫描最多 1,000 个文件。Mac App Store 的 7 天免费试用可解锁无限访问，Pro 一次性购买价格为 $19.99，无需订阅。"
-        },
-        {
-          "q": "它能将彩色扫描与同一内容的黑白版本进行匹配吗？",
-          "a": "可以。dHash 算法基于亮度梯度而非色彩值进行比较。同一页面的全彩扫描和灰度版本会产生几乎相同的哈希值，并被标记为重复项。"
-        },
-        {
-          "q": "图像分辨率会影响重复检测吗？",
-          "a": "不会。dHash 在比较前会将每张图像缩放到固定的小网格，因此同一页面的 1200px 和 3000px 扫描会生成相同的哈希值。来自不同来源的分辨率差异会被完全忽略。"
-        }
-      ],
-      "backDesc": "正在寻找漫画和电子书阅读器？",
-      "backCta": "返回 BiblioFuse Reader",
-      "languages": "应用界面：英语 · 西班牙语 · 法语 · 荷兰语 · 葡萄牙语 · 俄语 · 简体中文 · 日语 · 韩语 · 印度尼西亚语 · 马来语"
     },
     "smartdecryptPage": {
       "seo": {
@@ -1988,241 +1646,241 @@
       }
     }
   },
-        "featureMatrix": {
-      "essentials": "各平台概要",
-      "whereToGet": "获取方式",
-      "sinceVersion": "自 {{version}} · {{date}}",
-      "sinceDate": "自 {{date}}",
-      "builtDate": "完成于 {{date}}",
-      "countAll": "{{n}} 项功能",
-      "countFiltered": "{{total}} 项中的 {{n}} 项",
-      "eyebrow": "功能对照表",
-      "title": "各平台功能一览",
-      "subtitle": "BiblioFuse 的每项功能、每个平台，以及它们出现的版本。搜索或筛选即可找到你关心的功能。",
-      "searchLabel": "搜索功能",
-      "searchPlaceholder": "试试「漫画翻译」「tategaki」「RTL」「Komga」…",
-      "platformsLabel": "平台",
-      "groupsLabel": "分类",
-      "sinceLabel": "变更时间",
-      "sinceAny": "全部",
-      "since30": "近 30 天",
-      "since90": "近 3 个月",
-      "since180": "近 6 个月",
-      "proOnly": "仅显示 Pro 功能",
-      "showUnreleased": "包含已开发但尚未发布的功能",
-      "all": "全部",
-      "reset": "重置",
-      "noResults": "没有功能符合当前筛选条件。",
-      "noResultsHint": "试试更短的关键词，或重置筛选条件。",
-      "legendShipped": "已支持",
-      "legendPartial": "部分支持",
-      "legendMerged": "尚未发布",
-      "legendNa": "此平台不支持",
-      "notYet": "尚未",
-      "featureColumn": "功能",
-      "mergedNote": "标记为「尚未」的功能已开发完成，但还未包含在该平台的公开版本中。",
-      "coverage": "涵盖 2026 年 5 月起的原生应用，不含此前的 Flutter 版本。",
-      "sinceTooltip": "自",
-      "builtTooltip": "完成于",
-      "groups": {
-        "reading": "阅读",
-        "libraries": "图书馆与服务器",
-        "streaming": "从自己的电脑串流",
-        "input": "输入与平台"
+  "featureMatrix": {
+    "essentials": "各平台概要",
+    "whereToGet": "获取方式",
+    "sinceVersion": "自 {{version}} · {{date}}",
+    "sinceDate": "自 {{date}}",
+    "builtDate": "完成于 {{date}}",
+    "countAll": "{{n}} 项功能",
+    "countFiltered": "{{total}} 项中的 {{n}} 项",
+    "eyebrow": "功能对照表",
+    "title": "各平台功能一览",
+    "subtitle": "BiblioFuse 的每项功能、每个平台，以及它们出现的版本。搜索或筛选即可找到你关心的功能。",
+    "searchLabel": "搜索功能",
+    "searchPlaceholder": "试试「漫画翻译」「tategaki」「RTL」「Komga」…",
+    "platformsLabel": "平台",
+    "groupsLabel": "分类",
+    "sinceLabel": "变更时间",
+    "sinceAny": "全部",
+    "since30": "近 30 天",
+    "since90": "近 3 个月",
+    "since180": "近 6 个月",
+    "proOnly": "仅显示 Pro 功能",
+    "showUnreleased": "包含已开发但尚未发布的功能",
+    "all": "全部",
+    "reset": "重置",
+    "noResults": "没有功能符合当前筛选条件。",
+    "noResultsHint": "试试更短的关键词，或重置筛选条件。",
+    "legendShipped": "已支持",
+    "legendPartial": "部分支持",
+    "legendMerged": "尚未发布",
+    "legendNa": "此平台不支持",
+    "notYet": "尚未",
+    "featureColumn": "功能",
+    "mergedNote": "标记为「尚未」的功能已开发完成，但还未包含在该平台的公开版本中。",
+    "coverage": "涵盖 2026 年 5 月起的原生应用，不含此前的 Flutter 版本。",
+    "sinceTooltip": "自",
+    "builtTooltip": "完成于",
+    "groups": {
+      "reading": "阅读",
+      "libraries": "图书馆与服务器",
+      "streaming": "从自己的电脑串流",
+      "input": "输入与平台"
+    },
+    "cellNotes": {
+      "lanOnlyTvos": "仅支持本地 Wi-Fi；Tailscale 在 tvOS 上不够稳定",
+      "noICloudRoute": "支持本地 Wi-Fi 与手动 Tailscale；iCloud 方式仅限 Apple 设备",
+      "lanOnly": "仅支持本地 Wi-Fi",
+      "tailscaleServe": "Tailscale Serve 与子网访问"
+    },
+    "features": {
+      "live-translation": {
+        "label": "漫画实时翻译",
+        "note": "设备端 PP-OCRv5，排版回对话气泡"
       },
-      "cellNotes": {
-        "lanOnlyTvos": "仅支持本地 Wi-Fi；Tailscale 在 tvOS 上不够稳定",
-        "noICloudRoute": "支持本地 Wi-Fi 与手动 Tailscale；iCloud 方式仅限 Apple 设备",
-        "lanOnly": "仅支持本地 Wi-Fi",
-        "tailscaleServe": "Tailscale Serve 与子网访问"
+      "translate-export-cbz": {
+        "label": "翻译并导出 CBZ",
+        "note": "保存整个压缩包的完整译本"
       },
-      "features": {
-        "live-translation": {
-          "label": "漫画实时翻译",
-          "note": "设备端 PP-OCRv5，排版回对话气泡"
+      "page-curl": {
+        "label": "翻页卷角动画",
+        "note": "漫画、PDF 与文本，轻触或滑动即可"
+      },
+      "dual-page-spreads": {
+        "label": "双页对开显示",
+        "note": "平板横屏，如翻开的书"
+      },
+      "vertical-japanese": {
+        "label": "日文竖排 / 竖排 EPUB",
+        "note": "正确的竖排（tategaki）排版"
+      },
+      "epub-comic": {
+        "label": "EPUB 漫画支持",
+        "note": "图像书脊与固定版式 EPUB"
+      },
+      "find-in-book": {
+        "label": "全书搜索"
+      },
+      "reading-direction": {
+        "label": "阅读方向切换",
+        "note": "同步翻转页面、进度条与控件；依据元数据自动设置"
+      },
+      "continuous-page-turn": {
+        "label": "连续模式与翻页重构",
+        "note": "漫画、PDF、EPUB 与文本均按屏滚动；翻页停在预期位置"
+      },
+      "komga-kavita-native": {
+        "label": "原生 Komga 与 Kavita API",
+        "note": "系列详情、标签、徽标，服务端排序与搜索"
+      },
+      "opds": {
+        "label": "OPDS 1.x 与 OPDS-PSE 串流",
+        "note": "漫画逐页加载。不支持 OPDS 2.0。"
+      },
+      "kavita-sync": {
+        "label": "Kavita 进度与书签同步"
+      },
+      "folder-as-library": {
+        "label": "以文件夹作为图书馆浏览",
+        "note": "Kavita 风格的系列详情，卷/章标签页"
+      },
+      "managed-downloads": {
+        "label": "下载管理与进度同步",
+        "note": "并提供下载缓存管理"
+      },
+      "host-incremental-stream": {
+        "label": "BiblioFuse 主机：串流你自己的图书馆",
+        "note": "矢量 PDF 页、EPUB 漫画页、按需加载的可重排 EPUB"
+      },
+      "client-reads-host": {
+        "label": "BiblioFuse 应用：从你的主机读取",
+        "note": "通过固定证书 HTTPS 的 Bonjour 发现"
+      },
+      "connection-routes": {
+        "label": "连接方式",
+        "note": "iCloud + Tailscale · 本地 Wi-Fi · 手动 Tailscale"
+      },
+      "controller": {
+        "label": "游戏手柄与自定义按键"
+      },
+      "keyboard-shortcuts": {
+        "label": "阅读器键盘快捷键"
+      },
+      "look-to-scroll": {
+        "label": "视线滚动",
+        "note": "注视屏幕边缘即可滚动"
+      },
+      "text-to-speech": {
+        "label": "朗读功能",
+        "note": "句子高亮、锁屏控制、睡眠定时"
+      },
+      "reading-progress-restore": {
+        "label": "从上次位置继续",
+        "note": "分页与连续模式，涵盖压缩包、PDF 与文本"
+      },
+      "export-tools": {
+        "label": "批量导出与合并",
+        "note": "将压缩包合并或转换为 CBZ 与 EPUB"
+      },
+      "bulk-metadata-editing": {
+        "label": "批量评分与标签",
+        "note": "多选后一次性编辑元数据"
+      },
+      "remote-annotations": {
+        "label": "编辑并保存串流书籍",
+        "note": "在主机上修改标签与评分，或保存本地副本"
+      },
+      "app-lock": {
+        "label": "应用锁",
+        "note": "图书馆 PIN 码保护"
+      },
+      "spatial-library": {
+        "label": "空间图书馆",
+        "note": "浏览摆放在房间中的书架"
+      }
+    },
+    "specs": {
+      "read-formats": {
+        "label": "可读格式",
+        "values": {
+          "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "tvos": "CBZ · CBR · RAR · ZIP",
+          "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "androidtv": "CBZ · CBR · RAR · ZIP",
+          "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
         },
-        "translate-export-cbz": {
-          "label": "翻译并导出 CBZ",
-          "note": "保存整个压缩包的完整译本"
-        },
-        "page-curl": {
-          "label": "翻页卷角动画",
-          "note": "漫画、PDF 与文本，轻触或滑动即可"
-        },
-        "dual-page-spreads": {
-          "label": "双页对开显示",
-          "note": "平板横屏，如翻开的书"
-        },
-        "vertical-japanese": {
-          "label": "日文竖排 / 竖排 EPUB",
-          "note": "正确的竖排（tategaki）排版"
-        },
-        "epub-comic": {
-          "label": "EPUB 漫画支持",
-          "note": "图像书脊与固定版式 EPUB"
-        },
-        "find-in-book": {
-          "label": "全书搜索"
-        },
-        "reading-direction": {
-          "label": "阅读方向切换",
-          "note": "同步翻转页面、进度条与控件；依据元数据自动设置"
-        },
-        "continuous-page-turn": {
-          "label": "连续模式与翻页重构",
-          "note": "漫画、PDF、EPUB 与文本均按屏滚动；翻页停在预期位置"
-        },
-        "komga-kavita-native": {
-          "label": "原生 Komga 与 Kavita API",
-          "note": "系列详情、标签、徽标，服务端排序与搜索"
-        },
-        "opds": {
-          "label": "OPDS 1.x 与 OPDS-PSE 串流",
-          "note": "漫画逐页加载。不支持 OPDS 2.0。"
-        },
-        "kavita-sync": {
-          "label": "Kavita 进度与书签同步"
-        },
-        "folder-as-library": {
-          "label": "以文件夹作为图书馆浏览",
-          "note": "Kavita 风格的系列详情，卷/章标签页"
-        },
-        "managed-downloads": {
-          "label": "下载管理与进度同步",
-          "note": "并提供下载缓存管理"
-        },
-        "host-incremental-stream": {
-          "label": "BiblioFuse 主机：串流你自己的图书馆",
-          "note": "矢量 PDF 页、EPUB 漫画页、按需加载的可重排 EPUB"
-        },
-        "client-reads-host": {
-          "label": "BiblioFuse 应用：从你的主机读取",
-          "note": "通过固定证书 HTTPS 的 Bonjour 发现"
-        },
-        "connection-routes": {
-          "label": "连接方式",
-          "note": "iCloud + Tailscale · 本地 Wi-Fi · 手动 Tailscale"
-        },
-        "controller": {
-          "label": "游戏手柄与自定义按键"
-        },
-        "keyboard-shortcuts": {
-          "label": "阅读器键盘快捷键"
-        },
-        "look-to-scroll": {
-          "label": "视线滚动",
-          "note": "注视屏幕边缘即可滚动"
-        },
-        "text-to-speech": {
-          "label": "朗读功能",
-          "note": "句子高亮、锁屏控制、睡眠定时"
-        },
-        "reading-progress-restore": {
-          "label": "从上次位置继续",
-          "note": "分页与连续模式，涵盖压缩包、PDF 与文本"
-        },
-        "export-tools": {
-          "label": "批量导出与合并",
-          "note": "将压缩包合并或转换为 CBZ 与 EPUB"
-        },
-        "bulk-metadata-editing": {
-          "label": "批量评分与标签",
-          "note": "多选后一次性编辑元数据"
-        },
-        "remote-annotations": {
-          "label": "编辑并保存串流书籍",
-          "note": "在主机上修改标签与评分，或保存本地副本"
-        },
-        "app-lock": {
-          "label": "应用锁",
-          "note": "图书馆 PIN 码保护"
-        },
-        "spatial-library": {
-          "label": "空间图书馆",
-          "note": "浏览摆放在房间中的书架"
+        "notes": {
+          "tvos": "仅漫画 — 无文本阅读器",
+          "androidtv": "仅漫画 — 无文本阅读器",
+          "nas": "浏览器阅读器；暂不支持 PDF"
         }
       },
-      "specs": {
-        "read-formats": {
-          "label": "可读格式",
-          "values": {
-            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "tvos": "CBZ · CBR · RAR · ZIP",
-            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "androidtv": "CBZ · CBR · RAR · ZIP",
-            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
-          },
-          "notes": {
-            "tvos": "仅漫画 — 无文本阅读器",
-            "androidtv": "仅漫画 — 无文本阅读器",
-            "nas": "浏览器阅读器；暂不支持 PDF"
-          }
+      "library-sources": {
+        "label": "图书馆来源",
+        "values": {
+          "ios": "本地 · iCloud · BiblioFuse 主机",
+          "macos": "本地 · iCloud · SMB / NAS",
+          "visionos": "本地 · iCloud · BiblioFuse 主机",
+          "tvos": "仅 BiblioFuse 主机",
+          "android": "本地 · 外部文件夹",
+          "androidtv": "仅 BiblioFuse 主机",
+          "windows": "本地 · iCloud · SMB / NAS",
+          "nas": "其自身的挂载或网络存储"
         },
-        "library-sources": {
-          "label": "图书馆来源",
-          "values": {
-            "ios": "本地 · iCloud · BiblioFuse 主机",
-            "macos": "本地 · iCloud · SMB / NAS",
-            "visionos": "本地 · iCloud · BiblioFuse 主机",
-            "tvos": "仅 BiblioFuse 主机",
-            "android": "本地 · 外部文件夹",
-            "androidtv": "仅 BiblioFuse 主机",
-            "windows": "本地 · iCloud · SMB / NAS",
-            "nas": "其自身的挂载或网络存储"
-          },
-          "notes": {
-            "nas": "不含 iCloud"
-          }
+        "notes": {
+          "nas": "不含 iCloud"
+        }
+      },
+      "icloud-bookshelf": {
+        "label": "iCloud 书架",
+        "note": "你的图书馆在设备间同步",
+        "values": {
+          "ios": "跨设备同步",
+          "macos": "跨设备同步",
+          "visionos": "跨设备同步",
+          "windows": "跨设备同步"
         },
-        "icloud-bookshelf": {
-          "label": "iCloud 书架",
-          "note": "你的图书馆在设备间同步",
-          "values": {
-            "ios": "跨设备同步",
-            "macos": "跨设备同步",
-            "visionos": "跨设备同步",
-            "windows": "跨设备同步"
-          },
-          "notes": {
-            "tvos": "Apple TV 无 iCloud"
-          }
+        "notes": {
+          "tvos": "Apple TV 无 iCloud"
+        }
+      },
+      "reader-features": {
+        "label": "阅读器功能",
+        "values": {
+          "ios": "朗读 · 速览缩放 · 自动滚动 · 进度 · 评分 · 标签",
+          "macos": "朗读 · 自动滚动 · 进度 · 评分 · 标签",
+          "visionos": "朗读 · 自动滚动 · 进度 · 评分 · 标签",
+          "tvos": "自动滚动 · 进度 · 评分 · 标签",
+          "android": "朗读 · 速览缩放 · 自动滚动 · 进度 · 评分 · 标签",
+          "androidtv": "自动滚动 · 进度 · 评分 · 标签",
+          "windows": "朗读 · 自动滚动 · 进度 · 评分 · 标签",
+          "nas": "连续滚动 · 进度 · 评分 · 标签"
         },
-        "reader-features": {
-          "label": "阅读器功能",
-          "values": {
-            "ios": "朗读 · 速览缩放 · 自动滚动 · 进度 · 评分 · 标签",
-            "macos": "朗读 · 自动滚动 · 进度 · 评分 · 标签",
-            "visionos": "朗读 · 自动滚动 · 进度 · 评分 · 标签",
-            "tvos": "自动滚动 · 进度 · 评分 · 标签",
-            "android": "朗读 · 速览缩放 · 自动滚动 · 进度 · 评分 · 标签",
-            "androidtv": "自动滚动 · 进度 · 评分 · 标签",
-            "windows": "朗读 · 自动滚动 · 进度 · 评分 · 标签",
-            "nas": "连续滚动 · 进度 · 评分 · 标签"
-          },
-          "notes": {
-            "nas": "无朗读与速览缩放"
-          }
+        "notes": {
+          "nas": "无朗读与速览缩放"
+        }
+      },
+      "interface-languages": {
+        "label": "界面语言",
+        "values": {
+          "ios": "11 种语言",
+          "macos": "11 种语言",
+          "visionos": "11 种语言",
+          "tvos": "11 种语言",
+          "android": "12 种语言",
+          "androidtv": "12 种语言",
+          "windows": "11 种语言",
+          "nas": "11 种语言"
         },
-        "interface-languages": {
-          "label": "界面语言",
-          "values": {
-            "ios": "11 种语言",
-            "macos": "11 种语言",
-            "visionos": "11 种语言",
-            "tvos": "11 种语言",
-            "android": "12 种语言",
-            "androidtv": "12 种语言",
-            "windows": "11 种语言",
-            "nas": "11 种语言"
-          },
-          "notes": {
-            "android": "增加德语",
-            "androidtv": "增加德语"
-          }
+        "notes": {
+          "android": "增加德语",
+          "androidtv": "增加德语"
         }
       }
     }
+  }
 }

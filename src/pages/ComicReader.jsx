@@ -627,9 +627,9 @@ const ComicReader = () => {
           t('redesign.readerSection.features.streaming.title'),
           t('redesign.toolsHighlight.title'),
           t('redesign.comicReaderPage.vision.title'),
-          t('redesign.twoAppsSection.comicBullet1'),
-          t('redesign.twoAppsSection.comicBullet2'),
-          t('redesign.twoAppsSection.comicBullet3'),
+          t('redesign.readerSection.bullet1'),
+          t('redesign.readerSection.bullet2'),
+          t('redesign.readerSection.bullet3'),
         ]}
         faqItems={faqItemsForSchema}
         breadcrumbs={[
@@ -785,9 +785,6 @@ const ComicReader = () => {
 
       <section className="bg-white py-14">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="mb-4 text-sm text-slate-500">
-            {t('redesign.grepTagPage.whySeparate.desc')}
-          </p>
           <Link
             to={`/${lang}/`}
             className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-[#f7f9fe] px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:shadow-md"
