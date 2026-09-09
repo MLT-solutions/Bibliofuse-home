@@ -402,6 +402,46 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/changelog/" />
   </url>
   <url>
+    <loc>https://bibliofuse.com/en/features/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/features/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/features/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/features/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/features/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/features/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/es/features/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/features/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/features/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/features/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/features/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/features/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/fr/features/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/features/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/features/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/features/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/features/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/features/" />
+  </url>
+  <url>
+    <loc>https://bibliofuse.com/ja/features/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/features/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/features/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/features/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/features/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/features/" />
+  </url>
+  <url>
     <loc>https://bibliofuse.com/en/archive/changelog/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
