@@ -26,6 +26,7 @@ const ROUTES = [
     { path: '/privacy/', priority: '0.4', changefreq: 'yearly' },
     { path: '/blog/', priority: '0.7', changefreq: 'weekly' },
     { path: '/changelog/', priority: '0.6', changefreq: 'monthly' },
+    { path: '/features/', priority: '0.7', changefreq: 'monthly' },
     { path: '/archive/changelog/', priority: '0.5', changefreq: 'monthly' },
     { path: '/archive/privacy/', priority: '0.4', changefreq: 'yearly' },
     { path: '/smartdecrypt/changelog/', priority: '0.5', changefreq: 'monthly' },
