@@ -18,3 +18,40 @@
 # The QR generator moved under /tools/ with the rest of them.
 /:lang/qr-generator/*  /:lang/tools/qr-generator/  301
 /:lang/qr-generator    /:lang/tools/qr-generator/  301
+
+# --- Phase 3 blog cut (2026-09-10) ---
+# 61 articles -> 11. Over 12 healthy pre-collapse weeks the whole blog earned 103
+# clicks; 35 of 61 articles earned nothing at all. See docs/features/blog.md.
+
+# Articles whose search intent is a tool we now actually ship. These had the best CTR
+# on the site (compress-epub-online 7.95%) - the intent was real, the answer was an essay.
+/:lang/blog/compress-epub-online/*  /:lang/tools/epub-reducer/  301
+/:lang/blog/compress-epub-online    /:lang/tools/epub-reducer/  301
+/:lang/blog/merge-epub-files-online/*  /:lang/tools/epub-reducer/  301
+/:lang/blog/merge-epub-files-online    /:lang/tools/epub-reducer/  301
+/:lang/blog/merge-cbz-files-online/*  /:lang/tools/cbz-reducer/  301
+/:lang/blog/merge-cbz-files-online    /:lang/tools/cbz-reducer/  301
+/:lang/blog/reduce-comic-ebook-file-size/*  /:lang/tools/cbz-reducer/  301
+/:lang/blog/reduce-comic-ebook-file-size    /:lang/tools/cbz-reducer/  301
+/:lang/blog/convert-pdf-to-cbz-online/*  /:lang/tools/pdf-to-cbz/  301
+/:lang/blog/convert-pdf-to-cbz-online    /:lang/tools/pdf-to-cbz/  301
+/:lang/blog/convert-zip-to-cbz-online/*  /:lang/tools/cbz-reducer/  301
+/:lang/blog/convert-zip-to-cbz-online    /:lang/tools/cbz-reducer/  301
+
+# Articles about apps that moved to mlogictech.com in Phase 1.
+/:lang/blog/unlock-password-protected-pdf-iphone/*  https://www.mlogictech.com/products#smartdecrypt  301
+/:lang/blog/unlock-password-protected-pdf-iphone    https://www.mlogictech.com/products#smartdecrypt  301
+/:lang/blog/batch-decrypt-password-protected-files/*  https://www.mlogictech.com/products#smartdecrypt  301
+/:lang/blog/batch-decrypt-password-protected-files    https://www.mlogictech.com/products#smartdecrypt  301
+/:lang/blog/decrypt-password-protected-cbz-zip/*  https://www.mlogictech.com/products#smartdecrypt  301
+/:lang/blog/decrypt-password-protected-cbz-zip    https://www.mlogictech.com/products#smartdecrypt  301
+/:lang/blog/best-duplicate-file-finder-mac/*  https://www.mlogictech.com/comic-duplicate-scanner  301
+/:lang/blog/best-duplicate-file-finder-mac    https://www.mlogictech.com/comic-duplicate-scanner  301
+/:lang/blog/find-duplicate-comics-cbz-mac/*  https://www.mlogictech.com/comic-duplicate-scanner  301
+/:lang/blog/find-duplicate-comics-cbz-mac    https://www.mlogictech.com/comic-duplicate-scanner  301
+/:lang/blog/perceptual-hashing-duplicate-detection/*  https://www.mlogictech.com/comic-duplicate-scanner  301
+/:lang/blog/perceptual-hashing-duplicate-detection    https://www.mlogictech.com/comic-duplicate-scanner  301
+
+# The other 38 articles are deleted outright and intentionally return 404 - there is no
+# honest destination for them, and public/404.html no longer bounces to the homepage
+# (that GitHub Pages SPA hack made every dead URL a soft 404 that never deindexed).

@@ -676,210 +676,15 @@
     },
     "blog": {
       "posts": {
-        "best-komga-kavita-alternatives": {
-          "title": "Komga lwn Kavita lwn BiblioFuse: Alternatif Pembaca CBZ, CBR & EPUB Terbaik pada 2026",
-          "excerpt": "Membandingkan pembaca komik dan ebook hos-sendiri terbaik — Komga, Kavita, Calibre-Web, dan Ubooquity — dengan ekosistem aplikasi bersepadu BiblioFuse. Kebaikan, keburukan, dan mana yang sesuai dengan persediaan anda.",
-          "seoDescription": "Komga lwn Kavita lwn Calibre-Web lwn Ubooquity lwn BiblioFuse: perbandingan jujur alternatif pembaca CBZ, CBR, dan EPUB hos-sendiri terbaik pada 2026, termasuk tahap kesukaran persediaan, sokongan format, dan liputan peranti."
-        },
-        "reading-ebooks-offline-iphone": {
-          "title": "Membaca Ebook Sepenuhnya Offline di iPhone: Tanpa Awan",
-          "excerpt": "BiblioFuse menyimpan fail EPUB, CBZ, CBR, PDF, ZIP, RAR dan TXT secara tempatan di iPhone anda — baca keseluruhan perpustakaan anda dalam kapal terbang, bawah tanah atau di mana sahaja tanpa isyarat. Tiada langganan awan atau akaun diperlukan. iOS 17 ke atas.",
-          "seoDescription": "BiblioFuse membaca EPUB, CBZ, CBR, PDF, ZIP, RAR dan TXT secara tempatan di iPhone. Tanpa awan, tanpa akaun, tanpa isyarat. Panduan bacaan offline lengkap untuk iOS 17+."
-        },
-        "convert-cbr-to-cbz-online": {
-          "title": "Cara Menukar CBR kepada CBZ Dalam Talian: Percuma, Tanpa Perisian",
-          "excerpt": "Alat web BiblioFuse menukar arkib komik CBR (berasaskan RAR) kepada format CBZ (berasaskan ZIP) terus dalam pelayar anda — tanpa memuat naik fail, tanpa pemasangan, sepenuhnya peribadi. Seret fail anda dan muat turun CBZ yang telah ditukar dalam beberapa saat.",
-          "seoDescription": "Tukar CBR kepada CBZ dalam talian dalam pelayar menggunakan BiblioFuse Web Tool. Tanpa muat naik fail, tanpa perisian. Berasaskan WebAssembly, percuma untuk fail tunggal."
-        },
-        "find-duplicate-comics-different-names": {
-          "title": "Cara Mencari Komik Pendua dengan Nama Fail Berbeza",
-          "excerpt": "Pencari pendua standard terlepas komik dengan nama berbeza — seperti comic_E1-5 dan ComiX_E1-10. Comic Duplicate Scanner membandingkan imej halaman sebenar menggunakan pencincangan perseptual untuk menangkap pendua yang terlepas.",
-          "seoDescription": "Cari fail CBZ dan CBR komik pendua walaupun mempunyai nama fail berbeza. Comic Duplicate Scanner menggunakan pencincangan perseptual untuk membandingkan imej halaman."
-        },
-        "open-bank-statement-pdf-iphone": {
-          "title": "Cara Membuka PDF Penyata Bank Berkata Laluan di iPhone",
-          "excerpt": "PDF bank terkunci dengan nombor MyKAD atau tarikh lahir anda — kata laluan yang anda tahu tapi tidak ingat. SmartDecrypt menyimpan corak sekali bagi setiap bank dan membuka kunci setiap penyata berikutnya secara automatik.",
-          "seoDescription": "Buka PDF penyata bank berkata laluan di iPhone tanpa menaip kata laluan setiap kali. SmartDecrypt memadankan nama fail dengan corak tersimpan dan membuka kunci secara automatik."
-        },
-        "contentcue-11-languages": {
-          "title": "ContentCue Kini Tersedia dalam 11 Bahasa",
-          "excerpt": "ContentCue kini menyokong 11 bahasa. Baca artikel web tanpa kehilangan tempat anda kerana iklan, dan sentiasa tahu bahagian mana halaman yang editorial dan mana yang merupakan penempatan berbayar.",
-          "seoDescription": "ContentCue menambah bahasa Perancis, Belanda, Rusia, Jepun, Korea, dan Melayu. Serlahkan iklan semasa membaca artikel web — sempadan berwarna menandakan kandungan berbayar."
-        },
-        "archive-duplicate-scanner-11-languages": {
-          "title": "Comic Duplicate Scanner Kini Tersedia dalam 11 Bahasa",
-          "excerpt": "Comic Duplicate Scanner kini menyokong 11 bahasa. Cari komik pendua walaupun mempunyai nama berbeza seperti comic_E1-5 dan ComiX_E1-10 — perbandingan halaman visual menangkap apa yang terlepas oleh alat nama fail.",
-          "seoDescription": "Comic Duplicate Scanner menambah bahasa Perancis, Belanda, Rusia, Jepun, Korea, dan Melayu. Cari fail CBZ pendua dengan membandingkan imej halaman, bukan sekadar nama fail."
-        },
-        "smartdecrypt-11-languages": {
-          "title": "SmartDecrypt Kini Tersedia dalam 11 Bahasa",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ kini menyokong 11 bahasa — Inggeris, Sepanyol, Perancis, Belanda, Portugis, Rusia, Cina, Jepun, Korea, Indonesia, dan Melayu. Buka kunci penyata bank dan PDF insurans dengan corak kata laluan yang sukar diingat dalam bahasa anda sendiri.",
-          "seoDescription": "SmartDecrypt PDF ZIP CBZ menambah 6 bahasa baharu: Perancis, Belanda, Rusia, Jepun, Korea, dan Melayu. Buka kunci PDF bank dengan kata laluan berasaskan corak pada iPhone, Mac, dan Windows."
-        },
-        "airdrop-books-to-iphone": {
-          "title": "Cara Menggunakan AirDrop untuk Memindahkan Komik dan Ebook ke iPhone",
-          "excerpt": "AirDrop membolehkan anda menghantar fail CBZ, CBR, EPUB dan PDF dari Mac atau iPhone lain terus ke BiblioFuse dalam beberapa saat, tanpa kabel atau aplikasi tambahan. Aktifkan AirDrop pada kedua-dua peranti, pilih fail dan ketik BiblioFuse dalam helaian kongsi.",
-          "seoDescription": "AirDrop CBZ, CBR, EPUB, and PDF files from Mac to iPhone — files land in Files → Downloads. Select them, share to BiblioFuse, then delete from Downloads. Full step-by-step guide."
-        },
-        "change-reading-direction-comics": {
-          "title": "Cara Beralih antara Bacaan LTR dan RTL di BiblioFuse",
-          "excerpt": "BiblioFuse menyimpan arah bacaan setiap buku supaya manga dibaca dari kanan ke kiri dan komik Barat dari kiri ke kanan secara automatik. Tetapkan lalai global dan ganti setiap buku dengan tiga ketikan.",
-          "seoDescription": "Set right-to-left reading direction for manga or left-to-right for Western comics in BiblioFuse. The app remembers the direction per book automatically."
-        },
-        "read-webtoons-on-iphone": {
-          "title": "Cara Membaca Webtoon di iPhone: Tatal Vertikal Tanpa Henti di BiblioFuse",
-          "excerpt": "Mod tatal vertikal BiblioFuse dibina untuk webtoon dan manhwa — komik jalur panjang CBZ dan EPUB. Tatal berterusan melalui bab tanpa ketukan dan navigasi siri dengan mudah.",
-          "seoDescription": "BiblioFuse's vertical scroll mode is designed for webtoons and long-strip manga on iPhone. Read continuously without page-tapping — CBZ, CBR, and ZIP supported."
-        },
-        "convert-zip-to-cbz-online": {
-          "title": "Cara Tukar ZIP kepada CBZ Dalam Talian: Namakan Semula Arkib Komik dalam Beberapa Saat",
-          "excerpt": "Fail CBZ adalah arkib ZIP dengan sambungan berbeza. Alat web BiblioFuse menukar ZIP kepada CBZ dalam pelayar menggunakan WebAssembly — tanpa muat naik, tanpa perisian, sepenuhnya peribadi.",
-          "seoDescription": "Convert ZIP comic archives to CBZ format instantly in your browser using BiblioFuse Web. No file upload, no account — 100% WebAssembly, works on any device."
-        },
-        "double-page-spreads-comics": {
-          "title": "Membaca Halaman Berganda dalam Komik: Cara BiblioFuse Mengendalikan Imej Lebar",
-          "excerpt": "BiblioFuse membaca fail CBZ, CBR, EPUB, PDF, ZIP, RAR dan TXT pada iPhone dan iPad yang menjalankan iOS 17 atau lebih baru. Apabila anda mencapai helaian berganda, BiblioFuse secara automatik mengesan halaman yang dipasangkan dan boleh memaparkannya bersebelahan, mengekalkan karya seni seperti yang dimaksudkan. Anda boleh beralih antara mod halaman tunggal, bersebelahan dan zum penuh pada bila-bila masa.",
-          "seoDescription": "Ketahui cara BiblioFuse mengendalikan helaian berganda dalam komik pada iPhone dan iPad. Pengesanan automatik, mod landskap dan zum untuk pengalaman membaca terbaik."
-        },
-        "sideload-comics-iphone-without-itunes": {
-          "title": "Cara memindahkan komik ke iPhone tanpa iTunes atau iCloud",
-          "excerpt": "BiblioFuse membaca fail CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT di iPhone dan iPad dengan iOS 17 atau lebih baharu, dan menyertakan ciri Pemindahan Wi-Fi terbina dalam untuk menyalin komik terus daripada mana-mana pelayar Mac atau PC — tanpa iTunes, tanpa kabel, dan tanpa akaun iCloud.",
-          "seoDescription": "Ketahui cara memindahkan komik ke iPhone tanpa iTunes menggunakan Pemindahan Wi-Fi BiblioFuse. Tanpa kabel — pindahkan fail CBZ, EPUB, dan PDF secara tanpa wayar dari mana-mana pelayar."
-        },
-        "ebook-formats-long-term-library": {
-          "title": "Format fail terbaik untuk perpustakaan digital jangka panjang: perbandingan EPUB, CBZ, dan PDF",
-          "excerpt": "BiblioFuse membaca fail EPUB, CBZ, CBR, PDF, ZIP, RAR, dan TXT di iPhone dan iPad dengan iOS 17 atau lebih baharu, serta di Mac. Untuk penyimpanan jangka panjang, EPUB terbaik untuk buku teks, CBZ terbaik untuk komik dan manga, dan PDF adalah alternatif yang boleh dipercayai.",
-          "seoDescription": "Bandingkan EPUB, CBZ, dan PDF untuk pemeliharaan perpustakaan digital jangka panjang. Ketahui format fail terbuka mana yang mengekalkan koleksi ebook dan komik anda boleh dibaca selama beberapa dekad."
-        },
-        "backup-comic-library-mac": {
-          "title": "Cara Membuat Sandaran Perpustakaan Komik di Mac: Pemacu Luaran, NAS dan Pilihan Awan",
-          "excerpt": "BiblioFuse menyimpan komik dan ebook anda — EPUB, CBZ, CBR, PDF, ZIP, RAR dan TXT — pada iPhone, iPad dan Mac, serta menstrim perpustakaan Mac anda terus ke iPhone melalui Wi-Fi tanpa menyalin fail. Untuk membuat sandaran perpustakaan komik di Mac, anda boleh menggunakan Time Machine dengan pemacu luaran atau NAS, menyalin fail ke storan awan seperti iCloud Drive atau Dropbox, atau menggunakan mana-mana alat sandaran yang mencerminkan folder standard. Kemajuan membaca BiblioFuse disegerakkan secara automatik melalui iCloud.",
-          "seoDescription": "Ketahui cara membuat sandaran perpustakaan komik di Mac menggunakan Time Machine, pemacu luaran, NAS dan storan awan. Lindungi koleksi EPUB, CBZ dan PDF anda daripada kehilangan data."
-        },
-        "extract-images-from-cbz": {
-          "title": "Cara Mengekstrak Gambar daripada Fail CBZ Secara Dalam Talian (Percuma, Tanpa Perisian)",
-          "excerpt": "Alat web BiblioFuse membolehkan anda mengekstrak gambar individual daripada fail CBZ terus dalam pelayar — tanpa muat naik, tanpa perisian, tanpa akaun. Pemprosesan menggunakan WebAssembly agar komik anda kekal peribadi.",
-          "seoDescription": "Ekstrak gambar daripada fail CBZ secara dalam talian percuma dengan BiblioFuse Web. 100% dalam pelayar dengan WebAssembly — tanpa muat naik fail, tanpa pelayan, tanpa akaun."
-        },
-        "comic-bookmarks-iphone": {
-          "title": "Menggunakan Penanda Buku di BiblioFuse: Jangan Sesekali Hilang Tempat dalam Komik",
-          "excerpt": "BiblioFuse membolehkan anda menambah penanda buku di mana-mana halaman dalam komik atau ebook di iPhone. Penanda buku disegerakkan antara iPhone, iPad, dan Mac melalui iCloud — kedudukan yang disimpan tersedia di semua peranti.",
-          "seoDescription": "Ketahui cara menggunakan penanda buku dalam BiblioFuse di iPhone untuk menyimpan kedudukan baca dalam mana-mana komik atau ebook. Penyegerakan melalui iCloud di semua peranti Apple anda."
-        },
-        "night-reading-comics-iphone": {
-          "title": "Membaca Komik Pada Waktu Malam di iPhone: Mod Gelap dan Tips Keselesaan Mata",
-          "excerpt": "BiblioFuse untuk iOS mempunyai mod gelap, kawalan kecerahan di bawah minimum iOS, dan penapis sepia — gabungan yang tepat untuk membaca komik dan manga waktu malam tanpa membebankan mata.",
-          "seoDescription": "BiblioFuse untuk iOS menawarkan mod gelap sejati, kecerahan di bawah minimum iOS, dan penapis sepia untuk membaca komik malam yang selesa di iPhone."
-        },
-        "cbz-to-pdf-online": {
-          "title": "Cara Menukar CBZ kepada PDF Dalam Talian — Percuma, Peribadi, Tanpa Muat Naik",
-          "excerpt": "Aplikasi web BiblioFuse menukar CBZ kepada PDF sepenuhnya dalam penyemak imbas anda menggunakan WebAssembly — tanpa pelayan, tanpa akaun, tiada fail dimuat naik ke mana-mana. Penukaran segera tanpa kehilangan kualiti.",
-          "seoDescription": "Tukar CBZ kepada PDF percuma dalam penyemak imbas anda. BiblioFuse menggunakan WebAssembly — tanpa muat naik, tanpa akaun, tanpa had saiz fail."
-        },
-        "tailscale-remote-library-access": {
-          "title": "Akses Perpustakaan Komik Rumah dari Jauh dengan Tailscale",
-          "excerpt": "Gunakan penstriman BiblioFuse dengan Tailscale untuk membaca koleksi Mac dari mana sahaja — tanpa muat naik ke awan atau konfigurasi penghala.",
-          "seoDescription": "Strim perpustakaan komik Mac ke iPhone dari mana sahaja dengan BiblioFuse dan Tailscale. Tanpa muat naik awan, tanpa IP statik."
-        },
-        "webp-vs-png-for-comics": {
-          "title": "WebP vs PNG untuk Komik: Nisbah Kualiti-Saiz Terbaik",
-          "excerpt": "WebP boleh mengurangkan saiz arkib komik sebanyak 70–80% berbanding PNG tanpa kehilangan kualiti yang ketara. Ketahui bila menggunakan setiap format.",
-          "seoDescription": "Bandingkan WebP vs PNG untuk arkib komik dan manga. Format mana yang memberikan nisbah kualiti-saiz terbaik? BiblioFuse menyokong kedua-duanya secara natif."
-        },
-        "smartdecrypt-language-update": {
-          "title": "SmartDecrypt PDF ZIP: 4 Bahasa Baharu",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ menambah sokongan UI penuh untuk bahasa Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah. Buka kunci PDF dan arkib yang dilindungi pada iPhone, iPad, Mac, dan Windows — sepenuhnya pada peranti.",
-          "seoDescription": "SmartDecrypt PDF ZIP CBZ menambah sokongan UI penuh untuk bahasa Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah. Buka kunci PDF dan arkib yang."
-        },
         "digital-comic-library-management-guide": {
           "title": "Panduan Urus Perpustakaan Komik Digital",
           "excerpt": "BiblioFuse ialah pembaca native iPhone dan iPad untuk iOS 17+ yang menguruskan fail CBZ, CBR, EPUB, PDF, ZIP, RAR dan TXT dengan tag, penilaian, penyegerakan iCloud dan Wi-Fi Transfer. Panduan ini merangkumi cara mengatur, memampatkan, memindahkan dan membaca seluruh perpustakaan komik digital anda di iPhone, iPad dan Mac.",
           "seoDescription": "BiblioFuse ialah pembaca native iPhone dan iPad untuk iOS 17+ yang menguruskan fail CBZ, CBR, EPUB, PDF, ZIP, RAR dan TXT dengan tag, penilaian."
         },
-        "build-perfect-digital-manga-collection": {
-          "title": "Bina Koleksi Manga Digital Sempurna",
-          "excerpt": "BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR dan TXT pada iPhone dan iPad dengan iOS 17+. Gabungkan Comic Duplicate Scanner untuk membuang jilid pendua, BiblioFuse Web Tool untuk memampatkan fail dalam penyemak imbas, dan tab Alat di peranti untuk membina koleksi manga yang dioptimumkan dan disegerakkan di mana-mana.",
-          "seoDescription": "BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR dan TXT pada iPhone dan iPad dengan iOS 17+. Gabungkan Comic Duplicate Scanner untuk membuang jilid."
-        },
-        "best-duplicate-file-finder-mac": {
-          "title": "Alat Pencari Fail Pendua Terbaik Mac (2026)",
-          "excerpt": "Comic Duplicate Scanner ialah alat pencari duplikat terbaik untuk Mac 2026 bagi perpustakaan campuran komik (CBZ, CBR), foto (HEIC, JPEG, RAW) dan arkib. Pengehasan perseptual mengesan fail yang secara visual sama walaupun selepas penamaan semula, dan pemadaman hanya ke Tong Sampah menjaga keselamatan koleksi anda.",
-          "seoDescription": "Comic Duplicate Scanner ialah alat pencari duplikat terbaik untuk Mac 2026 bagi perpustakaan campuran komik (CBZ, CBR), foto (HEIC, JPEG, RAW) dan arkib."
-        },
-        "find-duplicate-photos-mac": {
-          "title": "Mencari Foto Pendua di Mac — Termasuk HEIC, WebP dan RAW",
-          "excerpt": "Comic Duplicate Scanner mencari foto pendua di Mac menggunakan pengehasan perseptual, mengenal pasti imej yang secara visual sama dalam format HEIC, JPEG, WebP, PNG, TIFF dan RAW walaupun nama fail atau pemampatan berbeza. Fail pendua dipindahkan ke Tong Sampah dengan strategi pemilihan automatik.",
-          "seoDescription": "Comic Duplicate Scanner mencari foto pendua di Mac menggunakan pengehasan perseptual, mengenal pasti imej yang secara visual sama dalam format HEIC."
-        },
-        "perceptual-hashing-duplicate-detection": {
-          "title": "Bagaimana Pencincangan Persepsi Menemui Komik Pendua Walaupun Selepas Penamaan Semula",
-          "excerpt": "Comic Duplicate Scanner menggunakan pencincangan persepsi untuk mencari arkib CBZ dan CBR pendua dengan membandingkan kandungan visual halaman — bukan checksum fail — mengesan pendua yang dinamakan semula, dimampatkan semula atau dimuat turun dari sumber berbeza.",
-          "seoDescription": "Comic Duplicate Scanner menggunakan pencincangan persepsi untuk mencari arkib CBZ dan CBR pendua dengan membandingkan kandungan visual halaman — bukan."
-        },
-        "clean-up-duplicate-manga-library": {
-          "title": "Cara Membersihkan Koleksi Manga Pendua dengan Bijak",
-          "excerpt": "Comic Duplicate Scanner mencari jilid manga pendua di Mac menggunakan pencincangan persepsi, memadankan fail CBZ dan CBR walaupun selepas penamaan semula atau pemampatan semula. Semak pasangan yang sepadan dan alihkan pendua ke Tong Sampah dengan selamat.",
-          "seoDescription": "Comic Duplicate Scanner mencari jilid manga pendua di Mac menggunakan pencincangan persepsi, memadankan fail CBZ dan CBR walaupun selepas penamaan."
-        },
-        "find-duplicate-comics-cbz-mac": {
-          "title": "Cara Mencari dan Mengalih Keluar Fail CBZ Komik Pendua di Mac",
-          "excerpt": "Comic Duplicate Scanner mencari fail komik CBZ dan CBR pendua di Mac menggunakan pencincangan perseptual — memadankan fail walaupun selepas menamakan semula, memampatkan semula, atau membungkus semula. Imbas perpustakaan anda dan alih keluar pendua ke Sampah dengan selamat.",
-          "seoDescription": "Comic Duplicate Scanner mencari fail komik CBZ dan CBR pendua di Mac menggunakan pencincangan perseptual — memadankan fail walaupun selepas menamakan."
-        },
-        "pdf-zip-password-manager-profiles": {
-          "title": "Simpan Kata Laluan untuk Koleksi CBZ dan PDF — Tidak Perlu Taip Semula",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ menyimpan profil kata laluan bernama di iPhone, iPad, dan Mac supaya anda tidak perlu menaip semula kata laluan untuk arkib PDF, CBZ, dan ZIP yang dilindungi. Pilih profil yang disimpan untuk menyahsulit keseluruhan koleksi dengan satu ketikan, sepenuhnya di peranti.",
-          "seoDescription": "SmartDecrypt PDF ZIP CBZ menyimpan profil kata laluan bernama di iPhone, iPad, dan Mac supaya anda tidak perlu menaip semula kata laluan untuk arkib PDF."
-        },
         "read-manga-online-iphone": {
           "title": "Cara Membaca Manga Online di iPhone Tanpa Kehilangan Tempat Baca",
           "excerpt": "ContentCue adalah pelayar iOS percuma yang secara automatik menyimpan kedudukan tatal anda sebelum iklan pop-up mengganggu sesi membaca manga — ketuk Sambung untuk kembali tepat di tempat anda berhenti di Webtoons, Tapas, atau mana-mana laman manga. Untuk koleksi CBZ, CBR, dan EPUB tempatan, BiblioFuse adalah aplikasi pembaca khusus untuk iPhone yang mengingati halaman tepat anda dalam setiap jilid.",
           "seoDescription": "ContentCue adalah pelayar iOS percuma yang secara automatik menyimpan kedudukan tatal anda sebelum iklan pop-up mengganggu sesi membaca manga — ketuk."
-        },
-        "unlock-password-protected-pdf-iphone": {
-          "title": "Cara Membuka Kunci PDF Berlindung Kata Laluan di iPhone dan Mac",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ mengalih keluar kata laluan daripada fail PDF yang dilindungi di iPhone, iPad, dan Mac tanpa menghantar dokumen anda ke sebarang pelayan luar. Ia juga membuka kunci arkib ZIP dan CBZ yang dilindungi kata laluan, dan boleh menyahsulit beberapa fail serentak menggunakan mod kelompok terbina dalam.",
-          "seoDescription": "SmartDecrypt PDF ZIP CBZ mengalih keluar kata laluan daripada fail PDF yang dilindungi di iPhone, iPad, dan Mac tanpa menghantar dokumen anda ke sebarang."
-        },
-        "privacy-first-ebook-tools": {
-          "title": "Mengapa Privasi Penting untuk Alat Buku Elektronik — dan Bagaimana WASM Mengubah Segalanya",
-          "excerpt": "BiblioFuse Web Tool memproses buku elektronik dan fail komik anda sepenuhnya di dalam pelayar menggunakan WebAssembly — fail anda tidak pernah meninggalkan peranti dan tiada apa-apa yang dimuat naik ke pelayan. Ia memampatkan, menukar, dan menggabungkan fail EPUB, CBZ, dan PDF dengan privasi sepenuhnya, serta percuma digunakan tanpa perlu akaun.",
-          "seoDescription": "BiblioFuse Web Tool memproses buku elektronik dan fail komik anda sepenuhnya di dalam pelayar menggunakan WebAssembly — fail anda tidak pernah."
-        },
-        "merge-epub-files-online": {
-          "title": "Cara Menggabungkan Beberapa Fail EPUB Menjadi Satu (Dalam Talian, Peribadi, Percuma)",
-          "excerpt": "BiblioFuse Web Tool menggabungkan beberapa fail EPUB menjadi satu buku elektronik sepenuhnya dalam pelayar anda — tanpa perlu memasang perisian, tanpa akaun, dan fail anda tidak pernah dimuat naik ke mana-mana pelayan.",
-          "seoDescription": "BiblioFuse Web Tool menggabungkan beberapa fail EPUB menjadi satu buku elektronik sepenuhnya dalam pelayar anda — tanpa perlu memasang perisian, tanpa."
-        },
-        "compress-epub-online": {
-          "title": "Cara Mampat Fail EPUB Dalam Talian Tanpa Kehilangan Kualiti Bacaan",
-          "excerpt": "BiblioFuse Web Tool memampatkan dan mengoptimumkan fail EPUB terus dalam pelayar anda — tanpa perisian, tanpa akaun, dan tanpa perlu memuat naik fail. Seret EPUB ke alat, tetapkan tahap pemampatan, dan muat turun fail yang lebih kecil dalam beberapa saat.",
-          "seoDescription": "BiblioFuse Web Tool memampatkan dan mengoptimumkan fail EPUB terus dalam pelayar anda — tanpa perisian, tanpa akaun, dan tanpa perlu memuat naik fail."
-        },
-        "archive-duplicate-scanner-language-update": {
-          "title": "Comic Duplicate Scanner: 4 Bahasa Baharu",
-          "excerpt": "Comic Duplicate Scanner menambah sokongan UI penuh untuk Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah. Cari arkib komik dan foto duplikat dengan penghashing perseptual — percuma untuk Mac dan Windows.",
-          "seoDescription": "Comic Duplicate Scanner menambah sokongan UI penuh untuk Portugis, Sepanyol, Bahasa Indonesia, dan Cina Mudah. Cari arkib komik dan foto duplikat dengan."
-        },
-        "merge-cbz-files-online": {
-          "title": "Cara Menggabungkan Beberapa Fail CBZ Menjadi Satu — Alat Dalam Talian Percuma",
-          "excerpt": "Gabungkan bab-bab CBZ menjadi satu jilid terus dalam pelayar anda. Tiada muat naik, tiada perisian — BiblioFuse Web Tool menggabungkan secara percuma.",
-          "seoDescription": "Gabungkan bab-bab CBZ menjadi satu jilid terus dalam pelayar anda. Tiada muat naik, tiada perisian — BiblioFuse Web Tool menggabungkan secara percuma."
-        },
-        "convert-pdf-to-cbz-online": {
-          "title": "Cara Tukar PDF kepada CBZ Dalam Talian (Tiada Perisian, Tiada Muat Naik)",
-          "excerpt": "Tukar komik dan manga PDF kepada CBZ terus dalam pelayar menggunakan WebAssembly. BiblioFuse Web Tool memproses semuanya secara tempatan — fail tidak pernah keluar dari peranti anda.",
-          "seoDescription": "Tukar komik dan manga PDF kepada CBZ terus dalam pelayar menggunakan WebAssembly. BiblioFuse Web Tool memproses semuanya secara tempatan — fail tidak."
-        },
-        "manage-your-bibliofuse-library": {
-          "title": "Urus Perpustakaan BiblioFuse Anda",
-          "excerpt": "Cara menambah buku di semua platform, mengurus grid perpustakaan, dan membuat penstriman seluruh koleksi Mac ke iPhone melalui Tailscale.",
-          "seoDescription": "Cara menambah buku di semua platform, mengurus grid perpustakaan, dan membuat penstriman seluruh koleksi Mac ke iPhone melalui Tailscale."
-        },
-        "reduce-comic-ebook-file-size": {
-          "title": "Kenapa Fail Komik dan Ebook Sangat Besar — dan Cara Mengatasinya",
-          "excerpt": "CBZ dan EPUB kedua-duanya adalah arkib ZIP yang penuh dengan imej PNG. Ketahui sebab saiznya besar dan cara BiblioFuse mengurangkannya sehingga 87.5%.",
-          "seoDescription": "CBZ dan EPUB kedua-duanya adalah arkib ZIP yang penuh dengan imej PNG. Ketahui sebab saiznya besar dan cara BiblioFuse mengurangkannya sehingga 87.5%."
         },
         "getting-started-with-bibliofuse": {
           "title": "Bermula dengan BiblioFuse",
@@ -896,11 +701,6 @@
           "excerpt": "Keliru dengan CBZ, CBR, EPUB, dan PDF? Panduan ini menjelaskan kandungan setiap format dan mana yang dipilih untuk komik, manga, atau novel.",
           "seoDescription": "Keliru dengan CBZ, CBR, EPUB, dan PDF? Panduan ini menjelaskan kandungan setiap format dan mana yang dipilih untuk komik, manga, atau novel."
         },
-        "wifi-transfer-comics-to-iphone": {
-          "title": "Cara Pindahkan Komik ke iPhone Tanpa iTunes atau Kabel",
-          "excerpt": "Wi-Fi Transfer BiblioFuse membolehkan anda menyeret keseluruhan koleksi komik dari pelayar Mac atau PC terus ke iPhone — tanpa kabel, iTunes, atau muat naik awan.",
-          "seoDescription": "Wi-Fi Transfer BiblioFuse membolehkan anda menyeret keseluruhan koleksi komik dari pelayar Mac atau PC terus ke iPhone — tanpa kabel, iTunes, atau muat."
-        },
         "how-to-read-manga-on-iphone": {
           "title": "Baca Manga di iPhone: RTL & Mod Webtoon",
           "excerpt": "Tetapkan BiblioFuse untuk membaca manga: aktifkan mod kanan-ke-kiri, gunakan tatal menegak untuk webtoon, dan paparkan halaman berganda yang betul dalam mod landskap.",
@@ -910,16 +710,6 @@
           "title": "Pembaca Komik Terbaik untuk iPhone dan iPad pada 2026",
           "excerpt": "Analisis praktikal tentang apa yang menjadikan pembaca komik mudah alih yang baik — sokongan format, prestasi, arah baca, dan pengurusan perpustakaan — serta cara BiblioFuse memenuhi setiap perkara.",
           "seoDescription": "Analisis praktikal tentang apa yang menjadikan pembaca komik mudah alih yang baik — sokongan format, prestasi, arah baca, dan pengurusan perpustakaan —."
-        },
-        "icloud-sync-reading-progress": {
-          "title": "Selaraskan Kemajuan Bacaan di Peranti Apple",
-          "excerpt": "BiblioFuse menggunakan iCloud untuk menyegerakkan kedudukan bacaan yang tepat, arah baca, tag dan penilaian secara automatik merentas semua peranti Apple anda.",
-          "seoDescription": "BiblioFuse menggunakan iCloud untuk menyegerakkan kedudukan bacaan yang tepat, arah baca, tag dan penilaian secara automatik merentas semua peranti Apple."
-        },
-        "mac-home-library-streaming-iphone": {
-          "title": "Strim Perpustakaan Mac ke iPhone melalui Wi-Fi",
-          "excerpt": "Mac Home Library dalam BiblioFuse melakukan penstriman seluruh koleksi Mac anda ke iPhone melalui Wi-Fi tempatan — tanpa menyalin fail, tanpa memerlukan storan iCloud.",
-          "seoDescription": "Mac Home Library dalam BiblioFuse melakukan penstriman seluruh koleksi Mac anda ke iPhone melalui Wi-Fi tempatan — tanpa menyalin fail, tanpa memerlukan."
         },
         "ocr-comics-extract-text-iphone": {
           "title": "Ekstrak Teks daripada Komik dan Manga di iPhone dengan OCR",
@@ -936,50 +726,10 @@
           "excerpt": "Tab Alat BiblioFuse membolehkan anda memampatkan fail CBZ besar, menukar format dan menggabungkan bab menjadi jilid — semua pada iPhone anda, tanpa komputer.",
           "seoDescription": "Tab Alat BiblioFuse membolehkan anda memampatkan fail CBZ besar, menukar format dan menggabungkan bab menjadi jilid — semua pada iPhone anda, tanpa."
         },
-        "decrypt-password-protected-cbz-zip": {
-          "title": "Cara Membuka Fail CBZ dan ZIP yang Dilindungi Kata Laluan di iPhone",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ membuka arkib CBZ dan ZIP yang dilindungi kata laluan pada iPhone, iPad dan Mac tanpa memuat naik fail ke mana-mana pelayan. Sahsulit arkib komik pada peranti, kemudian buka dalam BiblioFuse untuk membaca.",
-          "seoDescription": "SmartDecrypt PDF ZIP CBZ membuka arkib CBZ dan ZIP yang dilindungi kata laluan pada iPhone, iPad dan Mac tanpa memuat naik fail ke mana-mana pelayan."
-        },
-        "batch-decrypt-password-protected-files": {
-          "title": "Cara Menyahsulit Beberapa Fail yang Dilindungi Kata Laluan Sekaligus",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ menyahsulit beberapa fail PDF, CBZ dan ZIP yang dilindungi kata laluan dalam satu operasi pada iPhone, iPad dan Mac. Pilih fail, terapkan profil kata laluan, dan aplikasi memproses semuanya pada peranti tanpa muat naik.",
-          "seoDescription": "SmartDecrypt PDF ZIP CBZ menyahsulit beberapa fail PDF, CBZ dan ZIP yang dilindungi kata laluan dalam satu operasi pada iPhone, iPad dan Mac."
-        },
         "cbz-cbr-rar-zip-which-format-best": {
           "title": "CBZ, CBR, RAR, ZIP — Format Arkib Komik Mana Yang Perlu Digunakan?",
           "excerpt": "Penjelasan jelas tentang setiap format arkib komik utama, bila menggunakannya, dan mengapa BiblioFuse membaca semua tanpa masalah.",
           "seoDescription": "Bandingkan format CBZ, CBR, RAR, ZIP dan PDF untuk komik. Ketahui format mana yang sesuai untuk koleksi anda dan bagaimana BiblioFuse menyokong semuanya secara natif."
-        },
-        "reading-progress-sync-no-cloud-account": {
-          "title": "Cara Menyegerakkan Kemajuan Membaca Tanpa Akaun Awan",
-          "excerpt": "BiblioFuse menyediakan beberapa cara untuk mengekalkan kemajuan membaca yang konsisten merentasi peranti tanpa bergantung pada mana-mana akaun awan.",
-          "seoDescription": "Segerakkan kemajuan membaca komik antara iPhone dan iPad tanpa akaun awan. Wi-Fi, AirDrop, penanda buku dan lagi dengan BiblioFuse."
-        },
-        "epub-to-pdf-online": {
-          "title": "Tukar EPUB ke PDF Online: Percuma, Peribadi, Hanya dalam Pelayar",
-          "excerpt": "BiblioFuse menukar fail EPUB ke PDF terus dalam pelayar anda menggunakan WebAssembly — tiada pelayan, tiada muat naik, tiada akaun diperlukan. Buka alat web, tambah fail EPUB anda, dan muat turun PDF yang ditukar dalam beberapa saat.",
-          "seoDescription": "Tukar EPUB ke PDF dalam talian secara percuma dengan alat web BiblioFuse. 100% berasaskan pelayar, tiada muat naik fail, tiada akaun. Berfungsi pada desktop dan mudah alih."
-        },
-        "organize-manga-series-iphone": {
-          "title": "Cara Mengatur Manga mengikut Siri dalam BiblioFuse di iPhone",
-          "excerpt": "BiblioFuse membolehkan anda mengatur manga mengikut siri di iPhone menggunakan sistem tag terbina dalam — tandai setiap jilid dengan nama siri, kemudian tapis perpustakaan anda untuk melihat semua jilid mengikut urutan bacaan. Tag dan penilaian disegerakkan antara iPhone, iPad, dan Mac melalui iCloud.",
-          "seoDescription": "Atur manga mengikut siri dalam BiblioFuse di iPhone menggunakan tag, penilaian, dan penamaan fail yang konsisten. Segerakkan urutan bacaan anda antara iPhone, iPad, dan Mac melalui iCloud."
-        },
-        "pc-home-library-streaming-iphone": {
-          "title": "Stream Your Windows PC Comic Library to iPhone — Home Wi-Fi and 5G",
-          "excerpt": "BiblioFuse PC Reader lets your iPhone stream your entire Windows library over home Wi-Fi or 5G with Tailscale — no files copied, no iPhone storage used.",
-          "seoDescription": "Stream your entire Windows PC comic and ebook library to iPhone over Wi-Fi using BiblioFuse. No copying files — read CBZ, CBR, EPUB, and PDF directly from your PC."
-        },
-        "read-pdf-comics-iphone": {
-          "title": "Cara Membaca Komik PDF di iPhone dengan BiblioFuse",
-          "excerpt": "BiblioFuse membaca komik PDF secara natif di iPhone dengan kawalan skrin penuh yang sama seperti CBZ dan EPUB. Pindah melalui Wi-Fi, import dari Fail atau AirDrop — dengan penyegerakan kemajuan bacaan melalui iCloud.",
-          "seoDescription": "Read PDF comics on iPhone with BiblioFuse's full-screen reader. Supports zoom, page turn, vertical scroll, and bookmarks — same experience as CBZ and EPUB."
-        },
-        "bibliofuse-ipad-reading-tips": {
-          "title": "BiblioFuse di iPad: Tips Membaca Komik Skrin Penuh",
-          "excerpt": "Skrin iPad yang lebih besar membuka paparan dua halaman landskap, gelangsar lakaran kecil, dan strim perpustakaan Mac dalam BiblioFuse. Konfigurasikan mod paparan, membaca malam, dan Stage Manager.",
-          "seoDescription": "Get the most out of reading comics and ebooks on iPad with BiblioFuse. Tips for two-page landscape spreads, zoom, auto-scroll, and streaming from Mac."
         }
       },
       "eyebrow": "Blog",

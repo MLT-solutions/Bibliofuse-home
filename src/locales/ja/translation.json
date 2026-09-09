@@ -676,210 +676,15 @@
     },
     "blog": {
       "posts": {
-        "best-komga-kavita-alternatives": {
-          "title": "Komga対Kavita対BiblioFuse：2026年ベストなCBZ・CBR・EPUBリーダー代替案",
-          "excerpt": "自宅サーバー型の漫画・電子書籍リーダーの代表格であるKomga、Kavita、Calibre-Web、Ubooquityと、BiblioFuseの統合アプリエコシステムを比較。メリット・デメリットと、あなたの環境に合う選択肢を紹介します。",
-          "seoDescription": "Komga対Kavita対Calibre-Web対Ubooquity対BiblioFuse：2026年のベストな自宅サーバー型CBZ・CBR・EPUBリーダー代替案を、セットアップの難易度・対応フォーマット・対応デバイスとともに正直に比較します。"
-        },
-        "reading-ebooks-offline-iphone": {
-          "title": "iPhoneで電子書籍を完全オフラインで読む：クラウド不要",
-          "excerpt": "BiblioFuseはEPUB、CBZ、CBR、PDF、ZIP、RAR、TXTファイルをiPhoneにローカル保存します。飛行機の中、地下鉄、電波のない場所でも全ライブラリを読めます。クラウドサブスクリプションやアカウントは不要で、iOS 17以降に対応しています。",
-          "seoDescription": "BiblioFuseはEPUB、CBZ、CBR、PDF、ZIP、RAR、TXTをiPhoneにローカル保存。クラウド不要、アカウント不要、オフラインで完全動作。iOS 17+対応のオフライン読書ガイド。"
-        },
-        "convert-cbr-to-cbz-online": {
-          "title": "オンラインでCBRをCBZに変換：無料、ソフト不要",
-          "excerpt": "BiblioFuse WebツールはCBR（RARベース）の漫画アーカイブをCBZ（ZIPベース）形式に直接ブラウザ内で変換します。ファイルのアップロード不要、インストール不要、完全にプライベート。ファイルをドロップして数秒でCBZをダウンロードできます。",
-          "seoDescription": "BiblioFuse Web Toolでブラウザ内でCBRをCBZにオンライン変換。ファイルアップロード不要、ソフト不要。WebAssembly使用、単ファイル無料。"
-        },
-        "find-duplicate-comics-different-names": {
-          "title": "ファイル名が違う重複コミックの見つけ方",
-          "excerpt": "一般的な重複検索ツールはcomic_E1-5とComiX_E1-10のような名前の違うコミックを見逃します。Comic Duplicate Scannerは実際のページ画像を比較して、ファイル名ツールが見逃す重複を捕捉します。",
-          "seoDescription": "ファイル名が異なる重複CBZ・CBRコミックファイルを見つける方法。Comic Duplicate Scannerが知覚ハッシュでページ画像を比較。"
-        },
-        "open-bank-statement-pdf-iphone": {
-          "title": "iPhoneでパスワード付き銀行明細書PDFを開く方法",
-          "excerpt": "銀行PDFはマイナンバーや生年月日でロックされています — 知っているのに思い出せないパスワード。SmartDecryptは銀行ごとにパターンを一度保存し、以降の明細書を自動で解除します。",
-          "seoDescription": "iPhoneでパスワード付き銀行明細書PDFを毎回パスワードを入力せずに開く方法。SmartDecryptがファイル名を保存済みパターンに照合して自動解除。"
-        },
-        "contentcue-11-languages": {
-          "title": "ContentCue が11言語に対応",
-          "excerpt": "ContentCue が11言語に対応しました。広告でページを見失わずにウェブ記事を読み、ページのどの部分が編集コンテンツで、どの部分が有料掲載かを常に把握できます。",
-          "seoDescription": "ContentCue にフランス語・オランダ語・ロシア語・日本語・韓国語・マレー語が追加。読書中に広告をカラーボーダーでハイライトし、有料コンテンツを一目で識別。"
-        },
-        "archive-duplicate-scanner-11-languages": {
-          "title": "Comic Duplicate Scanner が11言語に対応",
-          "excerpt": "Comic Duplicate Scanner が11言語に対応しました。comic_E1-5 と ComiX_E1-10 のように名前が違っても重複コミックを発見できます — ページの視覚比較がファイル名ツールでは見逃すものを検出します。",
-          "seoDescription": "Comic Duplicate Scanner にフランス語・オランダ語・ロシア語・日本語・韓国語・マレー語が追加。MacとWindowsでページ画像比較により重複CBZファイルを検出。"
-        },
-        "smartdecrypt-11-languages": {
-          "title": "SmartDecrypt が11言語に対応",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ が11言語に対応しました — 英語、スペイン語、フランス語、オランダ語、ポルトガル語、ロシア語、中国語、日本語、韓国語、インドネシア語、マレー語。銀行明細書や保険PDFの覚えにくいパスワードパターンを、あなたの言語で解除できます。",
-          "seoDescription": "SmartDecrypt PDF ZIP CBZ にフランス語、オランダ語、ロシア語、日本語、韓国語、マレー語の6言語が追加。iPhone・Mac・Windowsでパターンベースのパスワード付きPDFを解除。"
-        },
-        "airdrop-books-to-iphone": {
-          "title": "AirDropを使ってiPhoneにコミックや電子書籍を転送する方法",
-          "excerpt": "AirDropを使えば、CBZ・CBR・EPUB・PDFファイルをMacや別のiPhoneから数秒でBiblioFuseに直接転送できます。ケーブル不要、追加アプリ不要。両デバイスでAirDropを有効にし、ファイルを選択して共有シートでBiblioFuseを選ぶだけです。",
-          "seoDescription": "AirDrop CBZ, CBR, EPUB, and PDF files from Mac to iPhone — files land in Files → Downloads. Select them, share to BiblioFuse, then delete from Downloads. Full step-by-step guide."
-        },
-        "change-reading-direction-comics": {
-          "title": "BiblioFuseでLTRとRTLの読む方向を切り替える方法",
-          "excerpt": "BiblioFuseは読む方向を本ごとに保存するため、漫画は右から左、洋書コミックは左から右に自動的に読めます。グローバルデフォルトを設定し、3回のタップで本ごとに上書きできます。",
-          "seoDescription": "Set right-to-left reading direction for manga or left-to-right for Western comics in BiblioFuse. The app remembers the direction per book automatically."
-        },
-        "read-webtoons-on-iphone": {
-          "title": "iPhoneでウェブトゥーンを読む：BiblioFuseの無限縦スクロール",
-          "excerpt": "BiblioFuseの縦スクロールモードはウェブトゥーンやマンファ向け設計。CBZ・EPUBの縦読みコミックをページをめくらずに連続スクロールで読み進められます。",
-          "seoDescription": "BiblioFuse's vertical scroll mode is designed for webtoons and long-strip manga on iPhone. Read continuously without page-tapping — CBZ, CBR, and ZIP supported."
-        },
-        "convert-zip-to-cbz-online": {
-          "title": "ZIPをCBZにオンラインで変換：コミックアーカイブを数秒でリネーム",
-          "excerpt": "CBZファイルは拡張子が異なるだけのZIPアーカイブです。BiblioFuseウェブツールはWebAssemblyでブラウザ内変換 — アップロード不要、ソフト不要、完全プライベート。",
-          "seoDescription": "Convert ZIP comic archives to CBZ format instantly in your browser using BiblioFuse Web. No file upload, no account — 100% WebAssembly, works on any device."
-        },
-        "double-page-spreads-comics": {
-          "title": "コミックの見開きページを読む：BiblioFuse が横長画像を処理する方法",
-          "excerpt": "BiblioFuse は、iOS 17 以降を搭載した iPhone および iPad で CBZ、CBR、EPUB、PDF、ZIP、RAR、TXT ファイルを読み取ります。見開きページに到達すると、BiblioFuse は自動的にペアとなるページを検出し、並べて表示することができます。これにより、アーティストが意図した通りのアートワークが再現されます。単ページ、並べて表示、フルズームモードにいつでも切り替えられます。",
-          "seoDescription": "BiblioFuse が iPhone と iPad でコミックの見開きページをどのように処理するかを学びましょう。自動検出、横向きモード、ピンチズームで最高の読書体験を。"
-        },
-        "sideload-comics-iphone-without-itunes": {
-          "title": "iTunesやiCloudを使わずにiPhoneに漫画を転送する方法",
-          "excerpt": "BiblioFuseはiOS 17以降が動作するiPhoneおよびiPadでCBZ、CBR、EPUB、PDF、ZIP、RAR、TXTファイルを読み込み、MacまたはPCの任意のブラウザから直接漫画をコピーできる内蔵Wi-Fi転送機能を備えています。iTunes、ケーブル、iCloudアカウントは一切不要です。",
-          "seoDescription": "BiblioFuseのWi-Fi転送を使ってiTunesなしでiPhoneに漫画を転送する方法を学びましょう。ケーブル不要。どのブラウザからでもCBZ、EPUB、PDFファイルをワイヤレスで転送できます。"
-        },
-        "ebook-formats-long-term-library": {
-          "title": "長期的なデジタルライブラリに最適なファイル形式：EPUB、CBZ、PDFを比較",
-          "excerpt": "BiblioFuseはiOS 17以降が動作するiPhoneおよびiPad、そしてMacでEPUB、CBZ、CBR、PDF、ZIP、RAR、TXTファイルを読み込みます。長期保存には、テキストブックにはEPUB、漫画にはCBZ、PDFは信頼できるフォールバックとして最適です。",
-          "seoDescription": "長期デジタルライブラリ保存のためのEPUB、CBZ、PDFを比較します。どのオープンファイル形式があなたの電子書籍・漫画コレクションを数十年間読み続けられるか学びましょう。"
-        },
-        "backup-comic-library-mac": {
-          "title": "Mac でコミックライブラリをバックアップする方法：外付けドライブ、NAS、クラウドオプション",
-          "excerpt": "BiblioFuse は iPhone、iPad、Mac に EPUB、CBZ、CBR、PDF、ZIP、RAR、TXT などのコミックや電子書籍を保存し、Mac ライブラリを Wi-Fi 経由でファイルをコピーせずに直接 iPhone にストリーミングします。Mac でコミックライブラリをバックアップするには、外付けドライブや NAS を使用した Time Machine、iCloud Drive や Dropbox などのクラウドストレージへのファイルコピー、または標準フォルダをミラーリングする任意のバックアップツールを使用できます。BiblioFuse の読書進捗は iCloud を通じて自動的に同期されます。",
-          "seoDescription": "Time Machine、外付けドライブ、NAS、クラウドストレージを使って Mac でコミックライブラリをバックアップする方法を学びましょう。EPUB、CBZ、PDF コレクションをデータ損失から守りましょう。"
-        },
-        "extract-images-from-cbz": {
-          "title": "CBZファイルから画像をオンラインで抽出する方法（無料・ソフト不要）",
-          "excerpt": "BiblioFuse WebはCBZファイルから画像をブラウザで直接抽出できます——アップロード不要、ソフト不要、アカウント不要。WebAssemblyで処理するのでコミックはプライベートに保たれます。",
-          "seoDescription": "BiblioFuse WebでCBZファイルから画像をオンラインで無料抽出。WebAssemblyで100%ブラウザ内処理——ファイルアップロードなし、サーバーなし、アカウント不要。"
-        },
-        "comic-bookmarks-iphone": {
-          "title": "BiblioFuseのブックマーク機能：コミックでページを見失わない",
-          "excerpt": "BiblioFuseではiPhoneのコミックや電子書籍の任意のページにブックマークを追加できます。ブックマークはiCloud経由でiPhone、iPad、Mac間で同期され、保存した位置にどのデバイスからでもアクセスできます。",
-          "seoDescription": "iPhoneのBiblioFuseでブックマークを使って、コミックや電子書籍の読書位置を保存する方法を学ぼう。iCloudですべてのAppleデバイスで同期。"
-        },
-        "night-reading-comics-iphone": {
-          "title": "iPhoneで夜に漫画を読む：ダークモードと目の疲れを減らすコツ",
-          "excerpt": "BiblioFuse for iOSはダークモード、iOSの最低値を下回る輝度コントロール、セピアフィルターを搭載——夜間の漫画・マンガ読書を目に優しくする完全な組み合わせです。",
-          "seoDescription": "BiblioFuse for iOSは真のダークモード、iOS最低値以下の輝度、セピアフィルターで、iPhoneでの夜間漫画読書を快適にします。"
-        },
-        "cbz-to-pdf-online": {
-          "title": "CBZファイルをオンラインでPDFに変換する方法——無料・プライベート・アップロード不要",
-          "excerpt": "BiblioFuseウェブアプリはWebAssemblyを使ってブラウザ内でCBZをPDFに変換——サーバー不要、アカウント不要、ファイルはどこにもアップロードされません。品質劣化なしで即時変換。",
-          "seoDescription": "ブラウザ内でCBZをPDFに無料変換。BiblioFuseはWebAssemblyを使用——アップロードなし、アカウントなし、ファイルサイズ制限なし。"
-        },
-        "tailscale-remote-library-access": {
-          "title": "TailscaleでMacのコミックライブラリにリモートアクセス",
-          "excerpt": "BiblioFuseのホームライブラリストリーミングとTailscaleを組み合わせて、どこからでも自宅のMacコミックコレクションを読もう。クラウド不要、ルーター設定不要。",
-          "seoDescription": "BiblioFuseとTailscaleを使って、どこからでもMacのコミックライブラリをiPhoneにストリーミング。クラウド不要、静的IP不要。"
-        },
-        "webp-vs-png-for-comics": {
-          "title": "コミック用WebP vs PNG：最高の画質・サイズ比はどちら？",
-          "excerpt": "WebPはPNGと比べてコミックアーカイブのサイズを70–80%削減でき、視覚的な品質差はほぼありません。各形式の使いどころを解説します。",
-          "seoDescription": "コミック・マンガのアーカイブにおけるWebPとPNGを比較。最高の画質・サイズ比はどちら？BiblioFuseは両方をネイティブサポート。"
-        },
-        "smartdecrypt-language-update": {
-          "title": "SmartDecrypt PDF ZIP がポルトガル語・スペイン語・インドネシア語・中国語に対応",
-          "excerpt": "SmartDecrypt PDF ZIP CBZ がポルトガル語、スペイン語、バハサ・インドネシア語、簡体字中国語の完全な UI サポートを追加。iPhone、iPad、Mac、Windows でパスワード保護された PDF やアーカイブをデバイス上で解除。",
-          "seoDescription": "SmartDecrypt PDF ZIP CBZ がポルトガル語、スペイン語、バハサ・インドネシア語、簡体字中国語の完全な UI サポートを追加。iPhone、iPad、Mac、Windows でパスワード保護された PDF やアーカイブをデバイス上で解除。"
-        },
         "digital-comic-library-management-guide": {
           "title": "iPhoneとMacでデジタルコミックライブラリを管理する完全ガイド",
           "excerpt": "BiblioFuseはiOS 17以降対応のネイティブiPhone・iPadリーダーで、CBZ、CBR、EPUB、PDF、ZIP、RAR、TXTファイルをタグ・評価・iCloud同期・Wi-Fi転送で管理できます。このガイドでは、iPhone、iPad、MacでデジタルコミックライブラリをiPhoneやMacで整理・圧縮・転送・閲覧する全手順を解説します。",
           "seoDescription": "BiblioFuseはiOS."
         },
-        "build-perfect-digital-manga-collection": {
-          "title": "完璧なデジタル漫画コレクションの作り方：圧縮・重複削除・どこでも読む",
-          "excerpt": "BiblioFuseはiOS 17以降のiPhone・iPadでCBZ、CBR、EPUB、PDF、ZIP、RAR、TXTに対応した読書アプリです。Comic Duplicate Scannerで重複巻を削除し、BiblioFuse Web Toolでブラウザからファイルを圧縮し、デバイス内のツールタブを使えば、どこでも同期できる最適化された漫画コレクションが完成します。",
-          "seoDescription": "BiblioFuseはiOS 17以降のiPhone・iPadでCBZ、CBR、EPUB、PDF、ZIP、RAR、TXTに対応した読書アプリです。Comic Duplicate Scannerで重複巻を削除し、BiblioFuse Web."
-        },
-        "best-duplicate-file-finder-mac": {
-          "title": "2026年版 Mac最高の重複ファイル検出ツール：コミック・写真・アーカイブ対応",
-          "excerpt": "Comic Duplicate Scanner は、コミック（CBZ・CBR）、写真（HEIC・JPEG・RAW）、アーカイブが混在するライブラリに最適な、2026年のMac向け重複ファイル検出ツールです。知覚ハッシュにより名前変更後も視覚的に同一のファイルを検出し、ゴミ箱のみへの削除でコレクションを安全に管理できます。",
-          "seoDescription": "Comic Duplicate Scanner."
-        },
-        "find-duplicate-photos-mac": {
-          "title": "Macで重複写真を見つける方法――HEIC・WebP・RAWにも対応",
-          "excerpt": "Comic Duplicate Scanner は知覚ハッシュを使ってMacで重複写真を検出します。ファイル名や圧縮設定が異なっていても、HEIC・JPEG・WebP・PNG・TIFF・RAW形式の視覚的に同一の画像を識別できます。重複ファイルはゴミ箱に安全に移動され、自動選択戦略でベストな1枚を残せます。",
-          "seoDescription": "Comic Duplicate Scanner."
-        },
-        "perceptual-hashing-duplicate-detection": {
-          "title": "知覚ハッシュはリネーム後でも重複コミックをどのように見つけるか",
-          "excerpt": "Comic Duplicate Scannerは知覚ハッシュを使用して、ファイルのチェックサムではなくページの視覚的コンテンツを比較することでCBZおよびCBRの重複アーカイブを検出します。リネーム、再圧縮、または異なるソースからダウンロードされた重複も見つけます。",
-          "seoDescription": "Comic Duplicate Scannerは知覚ハッシュを使用して、ファイルのチェックサムではなくページの視覚的コンテンツを比較することでCBZおよびCBRの重複アーカイブを検出します。リネーム、再圧縮、または異なるソースからダウンロードされた重複も見つけます。"
-        },
-        "clean-up-duplicate-manga-library": {
-          "title": "重複マンガコレクションをスマートに整理する方法",
-          "excerpt": "Comic Duplicate Scannerは知覚ハッシュを使ってMac上の重複マンガを検索し、リネームや再圧縮後もCBZ・CBRファイルを照合します。一致したペアを並べて確認し、重複をゴミ箱に安全に移動できます。",
-          "seoDescription": "Comic Duplicate Scannerは知覚ハッシュを使ってMac上の重複マンガを検索し、リネームや再圧縮後もCBZ・CBRファイルを照合します。一致したペアを並べて確認し、重複をゴミ箱に安全に移動できます。"
-        },
-        "find-duplicate-comics-cbz-mac": {
-          "title": "MacでCBZ漫画ファイルの重複を見つけて削除する方法",
-          "excerpt": "Comic Duplicate Scannerは、知覚ハッシュを使用してMacでCBZおよびCBRの重複漫画ファイルを検出します。名前変更や再圧縮後でも一致し、ライブラリをスキャンして一致したペアを確認し、安全にゴミ箱に移動できます。",
-          "seoDescription": "Comic Duplicate Scannerは、知覚ハッシュを使用してMacでCBZおよびCBRの重複漫画ファイルを検出します。名前変更や再圧縮後でも一致し、ライブラリをスキャンして一致したペアを確認し、安全にゴミ箱に移動できます。"
-        },
-        "pdf-zip-password-manager-profiles": {
-          "title": "CBZとPDFコレクションのパスワードを保存——二度と入力しない",
-          "excerpt": "SmartDecrypt PDF ZIP CBZは、iPhone、iPad、MacでPDF、CBZ、ZIPの保護されたアーカイブのパスワードを再入力しなくて済むよう、名前付きパスワードプロファイルを保存します。保存済みプロファイルを選ぶだけで、コレクション全体をワンタップで一括復号化できます。",
-          "seoDescription": "SmartDecrypt PDF ZIP CBZは、iPhone、iPad、MacでPDF、CBZ、ZIPの保護されたアーカイブのパスワードを再入力しなくて済むよう、名前付きパスワードプロファイルを保存します。保存済みプロファイルを選ぶだけで、コレクション全体をワンタップで一括復号化できます。"
-        },
         "read-manga-online-iphone": {
           "title": "iPhoneでオンライン漫画を読んでいて場所を見失わない方法",
           "excerpt": "ContentCueはポップアップ広告が漫画の読書セッションを中断する前にスクロール位置を自動保存するiOSブラウザです——「再開」をタップすれば、Webtoons、Tapas、またはどの漫画サイトでも、ちょうど読んでいた場所に戻れます。ローカルのCBZ・CBR・EPUBコレクションには、BiblioFuseがすべての巻の正確なページを記憶するiPhone専用の読書アプリです。",
           "seoDescription": "ContentCueはポップアップ広告が漫画の読書セッションを中断する前にスクロール位置を自動保存するiOSブラウザです——「再開」をタップすれば、Webtoons、Tapas、またはどの漫画サイトでも、ちょうど読んでいた場所に戻れます。ローカルのCBZ・CBR・EPUBコレクションには、BiblioFuse"
-        },
-        "unlock-password-protected-pdf-iphone": {
-          "title": "iPhoneとMacでパスワード保護されたPDFを解除する方法",
-          "excerpt": "SmartDecrypt PDF ZIP CBZは、iPhone・iPad・Mac上でパスワード保護されたPDFファイルから保護を取り除くアプリで、ドキュメントを外部サーバーへ送信することはありません。パスワードで保護されたZIPおよびCBZアーカイブの解除にも対応し、内蔵のバッチモードで複数ファイルを一括して復号することができます。",
-          "seoDescription": "SmartDecrypt PDF ZIP."
-        },
-        "privacy-first-ebook-tools": {
-          "title": "電子書籍ツールにおけるプライバシーの重要性——WASMがすべてを変える理由",
-          "excerpt": "BiblioFuse ウェブツールは、WebAssembly を使用してブラウザ内で電子書籍やコミックファイルをすべて処理します——ファイルはデバイスから外に出ることなく、サーバーにアップロードされることも一切ありません。EPUB・CBZ・PDF ファイルを完全なプライバシー保護のもとで圧縮・変換・結合でき、アカウント不要で無料で利用できます。",
-          "seoDescription": "BiblioFuse ウェブツールは、WebAssembly を使用してブラウザ内で電子書籍やコミックファイルをすべて処理します——ファイルはデバイスから外に出ることなく、サーバーにアップロードされることも一切ありません。EPUB・CBZ・PDF."
-        },
-        "merge-epub-files-online": {
-          "title": "複数のEPUBファイルを1つに結合する方法（オンライン・プライベート・無料）",
-          "excerpt": "BiblioFuse Webツールは、複数のEPUBファイルをブラウザ上で完全に処理し、1冊の電子書籍に結合します。ソフトウェアのインストール不要、アカウント登録不要、ファイルがサーバーにアップロードされることも一切ありません。",
-          "seoDescription": "BiblioFuse Webツールは、複数のEPUBファイルをブラウザ上で完全に処理し、1冊の電子書籍に結合します。ソフトウェアのインストール不要、アカウント登録不要、ファイルがサーバーにアップロードされることも一切ありません。"
-        },
-        "compress-epub-online": {
-          "title": "EPUBファイルをオンラインで圧縮・最適化する方法——品質を落とさずにファイルサイズを削減",
-          "excerpt": "BiblioFuse ウェブツールは、EPUBファイルをブラウザ上で直接圧縮・最適化します。ソフトのインストール不要、アカウント登録不要、ファイルのアップロードも一切不要です。",
-          "seoDescription": "BiblioFuse ウェブツールは、EPUBファイルをブラウザ上で直接圧縮・最適化します。ソフトのインストール不要、アカウント登録不要、ファイルのアップロードも一切不要です。"
-        },
-        "archive-duplicate-scanner-language-update": {
-          "title": "Comic Duplicate Scanner がポルトガル語、スペイン語、インドネシア語、中国語に対応",
-          "excerpt": "Comic Duplicate Scanner がポルトガル語、スペイン語、Bahasa Indonesia、簡体字中国語の完全UIサポートを追加。知覚ハッシュを使用してマンガアーカイブや写真の重複を検出。MacとWindows向けに無料で利用可能。",
-          "seoDescription": "Comic Duplicate Scanner がポルトガル語、スペイン語、Bahasa Indonesia、簡体字中国語の完全UIサポートを追加。知覚ハッシュを使用してマンガアーカイブや写真の重複を検出。MacとWindows向けに無料で利用可能。"
-        },
-        "merge-cbz-files-online": {
-          "title": "複数のCBZファイルを1つに結合する方法——無料オンラインツール",
-          "excerpt": "ブラウザ上でCBZの各章を1つのボリュームにまとめられます。ファイルのアップロード不要、ソフト不要——BiblioFuse Webツールが無料で対応。",
-          "seoDescription": "ブラウザ上でCBZの各章を1つのボリュームにまとめられます。ファイルのアップロード不要、ソフト不要——BiblioFuse Webツールが無料で対応。"
-        },
-        "convert-pdf-to-cbz-online": {
-          "title": "PDFをCBZにオンラインで変換する方法（ソフト不要・アップロード不要）",
-          "excerpt": "WebAssemblyを使い、ブラウザ内でPDFの漫画をCBZ形式に変換できます。BiblioFuse Webツールはすべてローカルで処理——ファイルはデバイスから出ません。",
-          "seoDescription": "WebAssemblyを使い、ブラウザ内でPDFの漫画をCBZ形式に変換できます。BiblioFuse Webツールはすべてローカルで処理——ファイルはデバイスから出ません。"
-        },
-        "manage-your-bibliofuse-library": {
-          "title": "BiblioFuseのライブラリ管理：フォルダ・転送・Macストリーミング",
-          "excerpt": "あらゆるプラットフォームで本を追加する方法、ライブラリグリッドの操作、TailscaleでMacのコレクション全体をiPhoneにストリーミングする手順。",
-          "seoDescription": "あらゆるプラットフォームで本を追加する方法、ライブラリグリッドの操作、TailscaleでMacのコレクション全体をiPhoneにストリーミングする手順。"
-        },
-        "reduce-comic-ebook-file-size": {
-          "title": "コミック・電子書籍のファイルがなぜ大きいのか——その解決策",
-          "excerpt": "CBZ と EPUB はいずれも PNG 画像を詰め込んだ ZIP アーカイブです。ファイルが大きい理由と、BiblioFuse のオンデバイス圧縮で最大 87.5% 削減できる仕組みを解説します。",
-          "seoDescription": "CBZ と EPUB はいずれも PNG 画像を詰め込んだ ZIP アーカイブです。ファイルが大きい理由と、BiblioFuse のオンデバイス圧縮で最大 87.5% 削減できる仕組みを解説します。"
         },
         "getting-started-with-bibliofuse": {
           "title": "BiblioFuseを使い始める",
@@ -896,11 +701,6 @@
           "excerpt": "CBZ、CBR、EPUB、PDFの違いに困惑していませんか？各フォーマットの中身と、コミック・マンガ・小説にどれを選ぶべきかを解説します。",
           "seoDescription": "CBZ、CBR、EPUB、PDFの違いに困惑していませんか？各フォーマットの中身と、コミック・マンガ・小説にどれを選ぶべきかを解説します。"
         },
-        "wifi-transfer-comics-to-iphone": {
-          "title": "iTunesやケーブルなしでiPhoneにコミックを転送する方法",
-          "excerpt": "BiblioFuseのWi-Fi転送機能を使えば、MacやPCのブラウザからiPhoneに漫画ライブラリを直接ドラッグ＆ドロップで転送できます。ケーブル不要、iTunes不要、クラウドアップロード不要。",
-          "seoDescription": "BiblioFuseのWi-Fi転送機能を使えば、MacやPCのブラウザからiPhoneに漫画ライブラリを直接ドラッグ＆ドロップで転送できます。ケーブル不要、iTunes不要、クラウドアップロード不要。"
-        },
         "how-to-read-manga-on-iphone": {
           "title": "iPhoneでマンガを読む：右から左、縦スクロール、見開きページの設定方法",
           "excerpt": "BiblioFuseをマンガ向けに設定する方法：右から左の読み方向、縦スクロール（ウェブトゥーン対応）、横向きでの見開き表示を解説します。",
@@ -910,16 +710,6 @@
           "title": "2026年版：iPhoneとiPadの最強コミックリーダー",
           "excerpt": "フォーマット対応・パフォーマンス・読み方向・ライブラリ管理の観点から優れたモバイルコミックリーダーの条件を整理し、BiblioFuseが各要件を満たす方法を解説。",
           "seoDescription": "フォーマット対応・パフォーマンス・読み方向・ライブラリ管理の観点から優れたモバイルコミックリーダーの条件を整理し、BiblioFuseが各要件を満たす方法を解説。"
-        },
-        "icloud-sync-reading-progress": {
-          "title": "BiblioFuseがiCloudを通じてiPhone・iPad・Mac間で読書進捗を同期する方法",
-          "excerpt": "BiblioFuseはiCloudを使い、すべてのAppleデバイス間で正確な読書位置・読み方向・タグ・評価を自動的に同期します。",
-          "seoDescription": "BiblioFuseはiCloudを使い、すべてのAppleデバイス間で正確な読書位置・読み方向・タグ・評価を自動的に同期します。"
-        },
-        "mac-home-library-streaming-iphone": {
-          "title": "MacのマンガライブラリをWi-FiでiPhoneにストリーミング（コピー不要）",
-          "excerpt": "BiblioFuseのMac Home Libraryは、ローカルWi-Fi経由でMacのコレクション全体をiPhoneにストリーミング。ファイルコピー不要、iCloudストレージも不要です。",
-          "seoDescription": "BiblioFuseのMac Home Libraryは、ローカルWi-Fi経由でMacのコレクション全体をiPhoneにストリーミング。ファイルコピー不要、iCloudストレージも不要です。"
         },
         "ocr-comics-extract-text-iphone": {
           "title": "iPhoneでOCRを使ってコミックとマンガからテキストを抽出する",
@@ -936,50 +726,10 @@
           "excerpt": "BiblioFuseのツールタブでは、大きなCBZファイルの圧縮、フォーマット変換、章ファイルの1冊への結合が、iPhoneだけで完結します。パソコン不要。",
           "seoDescription": "BiblioFuseのツールタブでは、大きなCBZファイルの圧縮、フォーマット変換、章ファイルの1冊への結合が、iPhoneだけで完結します。パソコン不要。"
         },
-        "decrypt-password-protected-cbz-zip": {
-          "title": "iPhoneでパスワード保護されたCBZおよびZIPファイルを開く方法",
-          "excerpt": "SmartDecrypt PDF ZIP CBZは、iPhoneやiPad、MacでパスワードをかけたCBZおよびZIPアーカイブをサーバーへのアップロードなしに直接開けます。デバイス上でコミックアーカイブを復号化し、BiblioFuseで開いて読めます。",
-          "seoDescription": "SmartDecrypt PDF ZIP CBZは、iPhoneやiPad、MacでパスワードをかけたCBZおよびZIPアーカイブをサーバーへのアップロードなしに直接開けます。デバイス上でコミックアーカイブを復号化し、BiblioFuseで開いて読めます。"
-        },
-        "batch-decrypt-password-protected-files": {
-          "title": "複数のパスワード保護されたファイルを一括復号化する方法",
-          "excerpt": "SmartDecrypt PDF ZIP CBZは、iPhone、iPad、Macで複数のパスワード保護されたPDF、CBZ、ZIPファイルを一度に復号化します。ファイルを選択してパスワードプロファイルを適用するだけで、アップロードなしにデバイス上ですべてが処理されます。",
-          "seoDescription": "SmartDecrypt PDF ZIP CBZは、iPhone、iPad、Macで複数のパスワード保護されたPDF、CBZ、ZIPファイルを一度に復号化します。ファイルを選択してパスワードプロファイルを適用するだけで、アップロードなしにデバイス上ですべてが処理されます。"
-        },
         "cbz-cbr-rar-zip-which-format-best": {
           "title": "CBZ・CBR・RAR・ZIP——どのマンガアーカイブ形式を使うべきか？",
           "excerpt": "主要なマンガアーカイブ形式をわかりやすく解説。それぞれの使いどころと、BiblioFuseがすべてをシームレスに読める理由を紹介。",
           "seoDescription": "CBZ・CBR・RAR・ZIP・PDFのマンガ形式を比較。コレクションに最適な形式を知り、BiblioFuseのネイティブ対応を確認しよう。"
-        },
-        "reading-progress-sync-no-cloud-account": {
-          "title": "クラウドアカウントなしで読書進捗を同期する方法",
-          "excerpt": "BiblioFuseは、クラウドアカウントに依存せず、デバイス間で読書進捗を一貫して保つ複数の方法を提供しています。",
-          "seoDescription": "クラウドアカウントなしでiPhoneとiPad間のマンガ読書進捗を同期。BiblioFuseのWi-Fi同期・AirDrop・ブックマーク機能を解説。"
-        },
-        "epub-to-pdf-online": {
-          "title": "EPUBをオンラインでPDFに変換：無料・プライベート・ブラウザだけで完結",
-          "excerpt": "BiblioFuseはWebAssemblyを使用して、EPUBファイルをブラウザ内で直接PDFに変換します——サーバー不要、アップロード不要、アカウント不要。ウェブツールを開いてEPUBファイルを追加し、数秒で変換済みPDFをダウンロードできます。",
-          "seoDescription": "BiblioFuseウェブツールでEPUBをPDFに無料でオンライン変換。100%ブラウザベース、ファイルアップロード不要、アカウント不要。デスクトップとモバイルに対応。"
-        },
-        "organize-manga-series-iphone": {
-          "title": "iPhoneのBiblioFuseでマンガをシリーズ別に整理する方法",
-          "excerpt": "BiblioFuseの内蔵タグシステムを使って、iPhoneでマンガをシリーズ別に整理できます——各巻にシリーズ名のタグを付け、ライブラリをフィルタリングして読む順番で全巻を確認できます。タグと評価はiCloudを通じてiPhone、iPad、Mac間で同期されます。",
-          "seoDescription": "iPhoneのBiblioFuseでタグ、評価、一貫したファイル名を使ってマンガをシリーズ別に整理。iCloudを通じてiPhone、iPad、Mac間で読む順番を同期。"
-        },
-        "pc-home-library-streaming-iphone": {
-          "title": "Stream Your Windows PC Comic Library to iPhone — Home Wi-Fi and 5G",
-          "excerpt": "BiblioFuse PC Reader lets your iPhone stream your entire Windows library over home Wi-Fi or 5G with Tailscale — no files copied, no iPhone storage used.",
-          "seoDescription": "Stream your entire Windows PC comic and ebook library to iPhone over Wi-Fi using BiblioFuse. No copying files — read CBZ, CBR, EPUB, and PDF directly from your PC."
-        },
-        "read-pdf-comics-iphone": {
-          "title": "BiblioFuseでiPhoneのPDFコミックを読む方法",
-          "excerpt": "BiblioFuseはiPhoneでPDFコミックをCBZ・EPUBと同じ全画面操作でネイティブ対応。Wi-Fi転送・「ファイル」アプリ・AirDropで追加し、iCloudで読書進捗を同期。",
-          "seoDescription": "Read PDF comics on iPhone with BiblioFuse's full-screen reader. Supports zoom, page turn, vertical scroll, and bookmarks — same experience as CBZ and EPUB."
-        },
-        "bibliofuse-ipad-reading-tips": {
-          "title": "iPadでBiblioFuseを使いこなす：フルページコミック読書のコツ",
-          "excerpt": "iPadの大画面で見開き横向き表示、サムネイルスクラバー、Macライブラリストリーミングが使えます。表示モード・ナイトモード・Stage Managerを設定して最高の読書体験を。",
-          "seoDescription": "Get the most out of reading comics and ebooks on iPad with BiblioFuse. Tips for two-page landscape spreads, zoom, auto-scroll, and streaming from Mac."
         }
       },
       "eyebrow": "ブログ",

@@ -1,20 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>BiblioFuse</title>
-    <script>
-        // GitHub Pages SPA redirect solution
-        // This script takes the current URL and converts the path and query string
-        // into a hash that our index.html can parse and restore.
-        sessionStorage.redirect = location.href;
-    </script>
-    <meta http-equiv="refresh" content="0;URL='/'">
-    </meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found | BiblioFuse</title>
+    <meta name="robots" content="noindex, follow">
+    <style>
+        :root { color-scheme: light; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f6f8fc;
+            color: #0b1220;
+            font: 400 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+            padding: 2rem;
+        }
+        main { max-width: 34rem; text-align: center; }
+        .code { font-size: .75rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #5a6a85; }
+        h1 { margin: .75rem 0 0; font-size: clamp(1.75rem, 5vw, 2.5rem); font-weight: 900; letter-spacing: -.02em; }
+        p { margin: 1rem 0 0; color: #5a6a85; }
+        .links { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; }
+        a {
+            display: inline-flex; align-items: center;
+            padding: .7rem 1.25rem; border-radius: .75rem;
+            font-size: .9rem; font-weight: 600; text-decoration: none;
+        }
+        .primary { background: #0b1220; color: #fff; }
+        .secondary { background: #fff; color: #0b1220; border: 1px solid #e5eaf2; }
+    </style>
 </head>
 
 <body>
+    <main>
+        <div class="code">Error 404</div>
+        <h1>That page isn't here.</h1>
+        <p>
+            It may have been moved or retired. Nothing is wrong with your device — the
+            address just doesn't match anything on this site any more.
+        </p>
+        <div class="links">
+            <a class="primary" href="/en/">Go to the homepage</a>
+            <a class="secondary" href="/en/tools/">Browser tools</a>
+            <a class="secondary" href="/en/comicreader/">BiblioFuse Reader</a>
+        </div>
+    </main>
 </body>
 
 </html>

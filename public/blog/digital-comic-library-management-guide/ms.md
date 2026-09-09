@@ -22,7 +22,7 @@ Ikuti langkah-langkah ini untuk membina perpustakaan komik yang kemas, mudah ali
 Gunakan CBZ untuk komik imbasan, manga, dan kandungan yang sebahagian besarnya berupa gambar. CBZ hanyalah ZIP yang ditukar nama mengandungi fail imej — ia adalah format paling serasi di dunia komik, dan [BiblioFuse](/ms/) membacanya secara natif. Gunakan EPUB untuk novel grafik dengan teks yang boleh dialirkan semula. BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT.
 
 **2. Mampatkan dan saizkan semula fail yang terlalu besar sebelum dipindahkan.**
-Imbasan resolusi tinggi boleh mencapai 200–400 MB setiap nombor. [Alat Web BiblioFuse](/ms/webapp/) ialah alat pemampatan berkumpulan percuma berasaskan pelayar untuk fail CBZ, EPUB, dan PDF. Ia berjalan sepenuhnya dalam pelayar melalui WebAssembly — tiada apa yang dimuat naik ke sebarang pelayan. Seret sekumpulan fail yang terlalu besar, pilih resolusi sasaran, dan muat turun versi yang telah dimampatkan sedia untuk dipindahkan.
+Imbasan resolusi tinggi boleh mencapai 200–400 MB setiap nombor. [Alat Web BiblioFuse](/ms/tools/) ialah alat pemampatan berkumpulan percuma berasaskan pelayar untuk fail CBZ, EPUB, dan PDF. Ia berjalan sepenuhnya dalam pelayar melalui WebAssembly — tiada apa yang dimuat naik ke sebarang pelayan. Seret sekumpulan fail yang terlalu besar, pilih resolusi sasaran, dan muat turun versi yang telah dimampatkan sedia untuk dipindahkan.
 
 **3. Namakan fail secara konsisten.**
 Konvensyen penamaan seperti `Nama Siri v01 #001 (Tahun).cbz` memudahkan pengisihan dan pencarian. Penamaan yang konsisten membolehkan carian BiblioFuse mencari apa yang anda perlukan dengan segera, dan folder Mac tetap mudah dibaca oleh manusia.
@@ -80,4 +80,4 @@ BiblioFuse mengurus fail CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT di iPhone. Anda 
 
 ## Bina Perpustakaan Komik Sempurna Anda Hari Ini
 
-Koleksi yang bertaburan di folder, perkhidmatan awan, dan lampiran e-mel adalah menyusahkan. Dengan [BiblioFuse](/ms/), anda mendapat satu perpustakaan tersusun di iPhone yang sentiasa disegerakkan dengan Mac, menyokong semua format komik utama, dan membolehkan pemindahan fail secara tanpa wayar dalam beberapa saat. Mulakan dengan [Alat Web BiblioFuse](/ms/webapp/) untuk memampatkan fail yang terlalu besar, pindahkan ke iPhone, dan nikmati koleksi anda seperti yang sepatutnya.
+Koleksi yang bertaburan di folder, perkhidmatan awan, dan lampiran e-mel adalah menyusahkan. Dengan [BiblioFuse](/ms/), anda mendapat satu perpustakaan tersusun di iPhone yang sentiasa disegerakkan dengan Mac, menyokong semua format komik utama, dan membolehkan pemindahan fail secara tanpa wayar dalam beberapa saat. Mulakan dengan [Alat Web BiblioFuse](/ms/tools/) untuk memampatkan fail yang terlalu besar, pindahkan ke iPhone, dan nikmati koleksi anda seperti yang sepatutnya.

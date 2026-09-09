@@ -22,7 +22,7 @@ Follow these steps to build a clean, portable, searchable comic library that wor
 Use CBZ for scanned comics, manga, and anything that is primarily images. CBZ is just a renamed ZIP of image files — it is the most compatible format in the comic world and [BiblioFuse](/en/) reads it natively. Use EPUB for graphic novels with reflowable text, webcomics exported as EPUB, and prose novels. BiblioFuse reads CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT.
 
 **2. Compress and resize oversized files before they reach your phone.**
-High-resolution scans can easily run to 200–400 MB per issue. The [BiblioFuse Web Tool](/en/webapp/) is a free, browser-based batch compression tool for CBZ, EPUB, and PDF files. It runs entirely in your browser via WebAssembly — nothing is uploaded to any server. Drag in a batch of oversized issues, choose a target resolution, and download the compressed versions ready to transfer.
+High-resolution scans can easily run to 200–400 MB per issue. The [BiblioFuse Web Tool](/en/tools/) is a free, browser-based batch compression tool for CBZ, EPUB, and PDF files. It runs entirely in your browser via WebAssembly — nothing is uploaded to any server. Drag in a batch of oversized issues, choose a target resolution, and download the compressed versions ready to transfer.
 
 **3. Name files consistently.**
 A naming convention like `Series Name v01 #001 (Year).cbz` makes sorting and searching dramatically easier. Consistent naming means BiblioFuse's search finds what you are looking for immediately, and your Mac folder stays human-readable.
@@ -80,4 +80,4 @@ BiblioFuse manages CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT files on iPhone. You c
 
 ## Build Your Perfect Comic Library Today
 
-A scattered collection spread across folders, cloud drives, and email attachments is frustrating. With [BiblioFuse](/en/), you get a single organised library on your iPhone that stays in sync with your Mac, supports every major comic format, and lets you transfer files wirelessly in seconds. Start with the [BiblioFuse Web Tool](/en/webapp/) to compress your oversized files, then transfer them to your iPhone and enjoy your collection the way it was meant to be read.
+A scattered collection spread across folders, cloud drives, and email attachments is frustrating. With [BiblioFuse](/en/), you get a single organised library on your iPhone that stays in sync with your Mac, supports every major comic format, and lets you transfer files wirelessly in seconds. Start with the [BiblioFuse Web Tool](/en/tools/) to compress your oversized files, then transfer them to your iPhone and enjoy your collection the way it was meant to be read.

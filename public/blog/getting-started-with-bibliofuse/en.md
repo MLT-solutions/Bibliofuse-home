@@ -54,7 +54,7 @@ To merge a manga series into a single volume, long-press to select multiple CBZ 
 
 Once your library is set up, a few things are worth trying:
 
-- **[BiblioFuse Web Tool](/en/webapp)** — compress and merge EPUB, PDF, and CBZ files in any browser, no installation needed. Useful when you're on a Windows or Linux machine.
+- **[BiblioFuse Web Tool](/en/tools/)** — compress and merge EPUB, PDF, and CBZ files in any browser, no installation needed. Useful when you're on a Windows or Linux machine.
 - **iCloud Bookshelf** — enable it under Settings to sync your entire library, reading positions, tags, and ratings across iPhone, iPad, and Mac automatically.
 - **Comic Duplicate Scanner** — a companion Mac app that finds duplicate CBZ and photo files using perceptual hashing, so you can clean up without reviewing every file by hand.
 

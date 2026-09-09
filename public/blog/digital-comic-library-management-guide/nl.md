@@ -22,7 +22,7 @@ Volg deze stappen om een overzichtelijke, draagbare en doorzoekbare stripbibliot
 Gebruik CBZ voor gescande strips, manga en alles wat voornamelijk uit afbeeldingen bestaat. CBZ is gewoon een hernoemde ZIP van afbeeldingsbestanden — het meest compatibele formaat in de stripwereld, en [BiblioFuse](/nl/) leest het native. Gebruik EPUB voor graphic novels met doorlopende tekst. BiblioFuse leest CBZ, CBR, EPUB, PDF, ZIP, RAR en TXT.
 
 **2. Comprimeer en verklein te grote bestanden voordat ze naar je telefoon gaan.**
-Hoge-resolutie scans kunnen gemakkelijk 200–400 MB per nummer zijn. De [BiblioFuse-webtool](/nl/webapp/) is een gratis, op de browser gebaseerde batch-compressietool voor CBZ-, EPUB- en PDF-bestanden. Het draait volledig in je browser via WebAssembly — er wordt niets naar een server geüpload. Sleep een batch te grote nummers erin, kies een doelresolutie en download de gecomprimeerde versies klaar om over te dragen.
+Hoge-resolutie scans kunnen gemakkelijk 200–400 MB per nummer zijn. De [BiblioFuse-webtool](/nl/tools/) is een gratis, op de browser gebaseerde batch-compressietool voor CBZ-, EPUB- en PDF-bestanden. Het draait volledig in je browser via WebAssembly — er wordt niets naar een server geüpload. Sleep een batch te grote nummers erin, kies een doelresolutie en download de gecomprimeerde versies klaar om over te dragen.
 
 **3. Geef bestanden consistente namen.**
 Een naamgevingsconventie zoals `Serienaam v01 #001 (Jaar).cbz` maakt sorteren en zoeken aanzienlijk eenvoudiger. Consistente namen zorgen ervoor dat de zoekfunctie van BiblioFuse onmiddellijk vindt wat je zoekt, en je Mac-map blijft leesbaar voor mensen.
@@ -80,4 +80,4 @@ BiblioFuse beheert CBZ-, CBR-, EPUB-, PDF-, ZIP-, RAR- en TXT-bestanden op iPhon
 
 ## Bouw vandaag nog je perfecte stripbibliotheek
 
-Een verspreide collectie over mappen, clouddiensten en e-mailbijlagen is frustrerend. Met [BiblioFuse](/nl/) heb je één georganiseerde bibliotheek op je iPhone die gesynchroniseerd blijft met je Mac, alle grote stripformaten ondersteunt en je in staat stelt bestanden draadloos in seconden over te dragen. Begin met de [BiblioFuse-webtool](/nl/webapp/) om je te grote bestanden te comprimeren, draag ze vervolgens over naar je iPhone en geniet van je collectie zoals het bedoeld is.
+Een verspreide collectie over mappen, clouddiensten en e-mailbijlagen is frustrerend. Met [BiblioFuse](/nl/) heb je één georganiseerde bibliotheek op je iPhone die gesynchroniseerd blijft met je Mac, alle grote stripformaten ondersteunt en je in staat stelt bestanden draadloos in seconden over te dragen. Begin met de [BiblioFuse-webtool](/nl/tools/) om je te grote bestanden te comprimeren, draag ze vervolgens over naar je iPhone en geniet van je collectie zoals het bedoeld is.

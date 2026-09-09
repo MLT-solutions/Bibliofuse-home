@@ -22,7 +22,7 @@ Ikuti langkah-langkah ini untuk membangun perpustakaan komik yang rapi, portabel
 Gunakan CBZ untuk komik yang dipindai, manga, dan konten yang sebagian besar berupa gambar. CBZ hanyalah ZIP yang diganti nama berisi file gambar — ini adalah format paling kompatibel di dunia komik, dan [BiblioFuse](/id/) membacanya secara native. Gunakan EPUB untuk novel grafis dengan teks yang dapat diatur ulang. BiblioFuse membaca CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT.
 
 **2. Kompres dan perkecil file yang terlalu besar sebelum ditransfer.**
-Pemindaian resolusi tinggi bisa dengan mudah mencapai 200–400 MB per nomor. [Alat Web BiblioFuse](/id/webapp/) adalah alat kompresi batch berbasis browser gratis untuk file CBZ, EPUB, dan PDF. Alat ini berjalan sepenuhnya di browser melalui WebAssembly — tidak ada yang diunggah ke server apapun. Seret sekumpulan file yang terlalu besar, pilih resolusi target, dan unduh versi yang telah dikompres siap untuk ditransfer.
+Pemindaian resolusi tinggi bisa dengan mudah mencapai 200–400 MB per nomor. [Alat Web BiblioFuse](/id/tools/) adalah alat kompresi batch berbasis browser gratis untuk file CBZ, EPUB, dan PDF. Alat ini berjalan sepenuhnya di browser melalui WebAssembly — tidak ada yang diunggah ke server apapun. Seret sekumpulan file yang terlalu besar, pilih resolusi target, dan unduh versi yang telah dikompres siap untuk ditransfer.
 
 **3. Beri nama file secara konsisten.**
 Konvensi penamaan seperti `Nama Seri v01 #001 (Tahun).cbz` membuat penyortiran dan pencarian jauh lebih mudah. Penamaan yang konsisten membuat pencarian BiblioFuse langsung menemukan apa yang Anda cari, dan folder Mac tetap mudah dibaca oleh manusia.
@@ -80,4 +80,4 @@ BiblioFuse mengelola file CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT di iPhone. Anda
 
 ## Bangun Perpustakaan Komik Sempurna Anda Hari Ini
 
-Koleksi yang tersebar di folder, layanan cloud, dan lampiran email sangat menjengkelkan. Dengan [BiblioFuse](/id/), Anda mendapatkan satu perpustakaan terorganisir di iPhone yang tetap tersinkronisasi dengan Mac, mendukung semua format komik utama, dan memungkinkan transfer file secara nirkabel dalam hitungan detik. Mulailah dengan [Alat Web BiblioFuse](/id/webapp/) untuk mengompres file yang terlalu besar, transfer ke iPhone, dan nikmati koleksi Anda seperti seharusnya.
+Koleksi yang tersebar di folder, layanan cloud, dan lampiran email sangat menjengkelkan. Dengan [BiblioFuse](/id/), Anda mendapatkan satu perpustakaan terorganisir di iPhone yang tetap tersinkronisasi dengan Mac, mendukung semua format komik utama, dan memungkinkan transfer file secara nirkabel dalam hitungan detik. Mulailah dengan [Alat Web BiblioFuse](/id/tools/) untuk mengompres file yang terlalu besar, transfer ke iPhone, dan nikmati koleksi Anda seperti seharusnya.

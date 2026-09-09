@@ -52,7 +52,7 @@ Untuk menggabungkan siri manga menjadi satu jilid, tekan lama untuk memilih bebe
 
 ## Apa yang Perlu Diterokai Seterusnya
 
-- **[Alat Web BiblioFuse](/ms/webapp)** — mampat dan gabungkan fail EPUB, PDF, dan CBZ dalam mana-mana pelayar, tanpa pemasangan.
+- **[Alat Web BiblioFuse](/ms/tools/)** — mampat dan gabungkan fail EPUB, PDF, dan CBZ dalam mana-mana pelayar, tanpa pemasangan.
 - **iCloud Bookshelf** — aktifkan dalam Tetapan untuk menyegerakkan perpustakaan, kedudukan membaca, tag, dan penilaian secara automatik.
 - **Comic Duplicate Scanner** — aplikasi pendamping Mac yang mencari fail CBZ dan foto pendua menggunakan perceptual hashing.
 

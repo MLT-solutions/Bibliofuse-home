@@ -52,7 +52,7 @@ BiblioFuse 支持 EPUB、PDF、CBZ、CBR、ZIP、RAR 和 TXT。有三种导入�
 
 ## 接下来探索什么
 
-- **[BiblioFuse 网页工具](/zh/webapp)** — 在任何浏览器中压缩和合并 EPUB、PDF 和 CBZ 文件，无需安装。
+- **[BiblioFuse 网页工具](/zh/tools/)** — 在任何浏览器中压缩和合并 EPUB、PDF 和 CBZ 文件，无需安装。
 - **iCloud 书架** — 在设置中启用，自动同步书库、阅读进度、标签和评分。
 - **Comic Duplicate Scanner** — 一款 Mac 配套应用，使用感知哈希查找重复的 CBZ 和照片文件，无需逐一审查即可清理。
 

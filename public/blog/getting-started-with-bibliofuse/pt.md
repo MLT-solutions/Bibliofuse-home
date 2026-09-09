@@ -52,7 +52,7 @@ Para juntar uma série de manga em um único volume, toque e segure para selecio
 
 ## O que Explorar a Seguir
 
-- **[Ferramenta Web BiblioFuse](/pt/webapp)** — comprima e mescle arquivos EPUB, PDF e CBZ em qualquer navegador, sem instalação.
+- **[Ferramenta Web BiblioFuse](/pt/tools/)** — comprima e mescle arquivos EPUB, PDF e CBZ em qualquer navegador, sem instalação.
 - **Estante iCloud** — ative nas Configurações para sincronizar sua biblioteca, posições de leitura, etiquetas e avaliações automaticamente.
 - **Comic Duplicate Scanner** — um app para Mac que encontra arquivos CBZ e fotos duplicados usando hash perceptual.
 

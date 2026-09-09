@@ -22,7 +22,7 @@ Siga estes passos para construir uma biblioteca de BD organizada, portátil e pe
 Use CBZ para BD digitalizadas, manga e qualquer conteúdo principalmente visual. CBZ é simplesmente um ZIP renomeado de ficheiros de imagem — é o formato mais compatível no mundo das BD, e o [BiblioFuse](/pt/) lê-o nativamente. Use EPUB para novelas gráficas com texto recomponível. O BiblioFuse lê CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT.
 
 **2. Comprima e redimensione ficheiros demasiado grandes antes de os transferir.**
-Digitalizações em alta resolução podem facilmente ter 200–400 MB por número. A [ferramenta web BiblioFuse](/pt/webapp/) é uma ferramenta gratuita de compressão em lote no browser para ficheiros CBZ, EPUB e PDF. Funciona inteiramente no seu browser via WebAssembly — nada é enviado para qualquer servidor. Arraste um lote de números demasiado grandes, escolha uma resolução alvo e descarregue as versões comprimidas prontas a transferir.
+Digitalizações em alta resolução podem facilmente ter 200–400 MB por número. A [ferramenta web BiblioFuse](/pt/tools/) é uma ferramenta gratuita de compressão em lote no browser para ficheiros CBZ, EPUB e PDF. Funciona inteiramente no seu browser via WebAssembly — nada é enviado para qualquer servidor. Arraste um lote de números demasiado grandes, escolha uma resolução alvo e descarregue as versões comprimidas prontas a transferir.
 
 **3. Nomeie os ficheiros de forma consistente.**
 Uma convenção de nomenclatura como `Nome da Série v01 #001 (Ano).cbz` facilita muito a ordenação e a pesquisa. Nomes consistentes fazem com que a pesquisa do BiblioFuse encontre imediatamente o que procura, e a sua pasta no Mac permanece legível.
@@ -80,4 +80,4 @@ O BiblioFuse gere ficheiros CBZ, CBR, EPUB, PDF, ZIP, RAR e TXT no iPhone. Pode 
 
 ## Construa hoje a sua biblioteca de BD perfeita
 
-Uma coleção dispersa por pastas, serviços na nuvem e anexos de email é frustrante. Com o [BiblioFuse](/pt/), tem uma única biblioteca organizada no iPhone que permanece sincronizada com o Mac, suporta todos os principais formatos de BD e permite transferir ficheiros sem fios em segundos. Comece com a [ferramenta web BiblioFuse](/pt/webapp/) para comprimir os seus ficheiros mais pesados, transfira-os para o iPhone e desfrute da sua coleção como merece ser desfrutada.
+Uma coleção dispersa por pastas, serviços na nuvem e anexos de email é frustrante. Com o [BiblioFuse](/pt/), tem uma única biblioteca organizada no iPhone que permanece sincronizada com o Mac, suporta todos os principais formatos de BD e permite transferir ficheiros sem fios em segundos. Comece com a [ferramenta web BiblioFuse](/pt/tools/) para comprimir os seus ficheiros mais pesados, transfira-os para o iPhone e desfrute da sua coleção como merece ser desfrutada.

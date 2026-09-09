@@ -5,6 +5,19 @@ Status: Cloudflare/Googlebot-blocking theory **disproven**. Root cause is very l
 
 **2026-07-20 reaudit: recovery has NOT happened — do not treat this as resolved.** Daily impressions since 2026-07-08 look like they've partly returned (11–28/day vs. single digits in early July), but this is cosmetic: average position on the pages that used to carry real traffic has collapsed further, not recovered. `/en/blog/epub-reader-iphone-no-drm/` went from 476 impressions @ position 9.3 (Jun 15–24) to 40 impressions @ position 44.6 (Jul 10–19). `/en/blog/unlock-password-protected-pdf-iphone/` went from 336 impressions @ position 8.3 to 1 impression @ position 26. The only page that improved position is the bare homepage (9.3 → 1.1), which reads as Google narrowing the domain to branded queries, not a quality signal returning. See `docs/site-showcase-audit.md` and the 2026-07-20 portfolio review for the full current-state analysis and next steps (reduce locale/page volume rather than assume the June fixes were sufficient).
 
+## 2026-09-10 — the measurement that drove the blog cut
+
+Pulled per-article GSC data for the 12 healthy weeks before the crash (2026-04-01 →
+2026-06-25) rather than judging by post-collapse numbers, where everything reads zero.
+
+The entire blog — 61 articles, all locales — earned **103 clicks from 8,035 impressions**.
+35 of the 61 earned nothing at all: 23 had impressions and no clicks, 12 never received a
+single impression. The blog was never a traffic channel even at its healthiest.
+
+Acted on in Phase 3: 61 → 11 articles, 6 redirected into the new `/tools/` pages, 6 to
+mlogictech.com, 38 deleted. Sitemap 282 → 82 URLs. See `docs/features/blog.md`.
+
+
 ## Summary
 
 The site experienced a sharp, site-wide impression collapse starting **2026-06-26**: daily impressions fell from a peak of ~400–590/day (June 21–25) to single digits (4–9/day), and have stayed there through July 1 — a >95% drop across nearly every URL and every language, including pages that were already ranking well.
