@@ -1,0 +1,240 @@
+import { useState, useCallback } from "react";
+import { useDropzone } from "react-dropzone";
+import { FileArchive, Plus, Trash2, ArrowUp, ArrowDown, Loader2, Settings2, Sparkles, Image as ImageIcon, RefreshCcw } from "lucide-react";
+import { clsx } from "clsx";
+import { downloadBlob } from "../lib/download";
+import { startToolJob } from "../lib/analytics";
+import ToolDisclaimer from "../components/ToolDisclaimer";
+import { getVips } from "../lib/vips";
+import { BlobReader, BlobWriter, ZipReader, ZipWriter } from "@zip.js/zip.js";
+const RESOLUTIONS = [
+  { label: "800p", value: 800 },
+  { label: "960p", value: 960 },
+  { label: "1080p", value: 1080 },
+  { label: "1440p", value: 1440 },
+  { label: "1600p", value: 1600 }
+];
+function CBZReducer({ dict = {} }) {
+  const t = dict.tools?.cbz_reducer || {
+    title: "CBZ/ZIP Reducer",
+    description: "Compress or Merge CBZ and ZIP archives. Images are optimized to reduce file size.",
+    upload_label: "Upload ZIP, CBZ or Images",
+    upload_hint: "Drag & drop your files here",
+    files_ready: "Files Ready",
+    processing: "Processing...",
+    process_btn: "Process & Download",
+    settings: "Reduction Settings",
+    max_size: "Shortest Dimension Resolution",
+    grayscale: "Grayscale Images",
+    format: "Output Format"
+  };
+  const [files, setFiles] = useState([]);
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [settings, setSettings] = useState({
+    maxSize: 1080,
+    grayscale: false,
+    imageFormat: "jpg",
+    archiveFormat: "cbz",
+    mode: "batch",
+    outputFileName: ""
+  });
+  const onDrop = useCallback((acceptedFiles) => {
+    setFiles((prev) => {
+      const newFiles = [...prev, ...acceptedFiles];
+      if (newFiles.length > 0 && !settings.outputFileName) {
+        const firstLabel = newFiles[0].name.replace(/\.[^/.]+$/, "");
+        setSettings((s) => ({ ...s, outputFileName: firstLabel }));
+      }
+      return newFiles;
+    });
+  }, [settings.outputFileName]);
+  const { getRootProps, getInputProps, isDragActive } = useDropzone({
+    onDrop,
+    accept: {
+      "application/zip": [".zip"],
+      "application/x-cbz": [".cbz"],
+      "image/*": [".jpg", ".jpeg", ".png", ".webp"]
+    },
+    multiple: true
+  });
+  const removeFile = (index) => {
+    setFiles((prev) => {
+      const nextFiles = prev.filter((_, i) => i !== index);
+      if (nextFiles.length === 0) {
+        setSettings((s) => ({ ...s, outputFileName: "" }));
+      } else if (index === 0) {
+        const firstLabel = nextFiles[0].name.replace(/\.[^/.]+$/, "");
+        setSettings((s) => ({ ...s, outputFileName: firstLabel }));
+      }
+      return nextFiles;
+    });
+  };
+  const refreshOutputName = () => {
+    if (files.length > 0) {
+      const firstLabel = files[0].name.replace(/\.[^/.]+$/, "");
+      setSettings((s) => ({ ...s, outputFileName: firstLabel }));
+    }
+  };
+  const moveFile = (index, direction) => {
+    const newFiles = [...files];
+    const targetIndex = direction === "up" ? index - 1 : index + 1;
+    if (targetIndex < 0 || targetIndex >= newFiles.length) return;
+    [newFiles[index], newFiles[targetIndex]] = [newFiles[targetIndex], newFiles[index]];
+    setFiles(newFiles);
+  };
+  const processFiles = async () => {
+    if (files.length === 0) return;
+    const analyticsJob = startToolJob("cbz-reducer", "process");
+    setIsProcessing(true);
+    setProgress(0);
+    try {
+      const vips = await getVips();
+      if (settings.mode === "merge") {
+        const writer = new ZipWriter(new BlobWriter("application/zip"));
+        let globalIndex = 0;
+        for (let i = 0; i < files.length; i++) {
+          const file = files[i];
+          const updateSub = (pct) => setProgress((i + pct / 100) / files.length * 100);
+          if (file.type.match(/zip|cbz/) || file.name.match(/\.(zip|cbz)$/i)) {
+            const reader = new ZipReader(new BlobReader(file));
+            const entries = await reader.getEntries();
+            const validEntries = entries.filter((e) => e.filename.match(/\.(jpg|jpeg|png|webp)$/i) && !e.filename.includes("__MACOSX")).sort((a, b) => a.filename.localeCompare(b.filename));
+            for (let j = 0; j < validEntries.length; j++) {
+              const entry = validEntries[j];
+              const blob = await entry.getData(new BlobWriter());
+              const buffer = await blob.arrayBuffer();
+              await processAndAddImage(buffer, writer, globalIndex++, settings, vips, entry.filename);
+              updateSub((j + 1) / validEntries.length * 100);
+            }
+          } else if (file.type.startsWith("image/")) {
+            const buffer = await file.arrayBuffer();
+            await processAndAddImage(buffer, writer, globalIndex++, settings, vips, file.name);
+            updateSub(100);
+          }
+        }
+        const resultBlob = await writer.close();
+        const finalName = settings.outputFileName || "merged_comic";
+        downloadBlob(resultBlob, `${finalName}.${settings.archiveFormat}`);
+      } else {
+        for (let i = 0; i < files.length; i++) {
+          const file = files[i];
+          const updateSub = (pct) => setProgress((i + pct / 100) / files.length * 100);
+          if (file.type.match(/zip|cbz/) || file.name.match(/\.(zip|cbz)$/i)) {
+            const reader = new ZipReader(new BlobReader(file));
+            const writer = new ZipWriter(new BlobWriter("application/zip"));
+            const entries = await reader.getEntries();
+            const validEntries = entries.filter((e) => e.filename.match(/\.(jpg|jpeg|png|webp)$/i) && !e.filename.includes("__MACOSX")).sort((a, b) => a.filename.localeCompare(b.filename));
+            for (let j = 0; j < validEntries.length; j++) {
+              const entry = validEntries[j];
+              const blob = await entry.getData(new BlobWriter());
+              const buffer = await blob.arrayBuffer();
+              await processAndAddImage(buffer, writer, j, settings, vips, entry.filename);
+              updateSub((j + 1) / validEntries.length * 100);
+            }
+            const resultBlob = await writer.close();
+            downloadBlob(resultBlob, `reduced_${file.name.replace(/\.[^.]+$/, "")}.${settings.archiveFormat}`);
+          } else if (file.type.startsWith("image/")) {
+            const writer = new ZipWriter(new BlobWriter("application/zip"));
+            const buffer = await file.arrayBuffer();
+            await processAndAddImage(buffer, writer, 0, settings, vips, file.name);
+            const resultBlob = await writer.close();
+            downloadBlob(resultBlob, `${file.name.replace(/\.[^.]+$/, "")}.${settings.archiveFormat}`);
+            updateSub(100);
+          }
+        }
+      }
+      analyticsJob.success(settings.archiveFormat);
+    } catch (error) {
+      console.error("Error processing CBZ:", error);
+      analyticsJob.error(error);
+      alert("An error occurred while processing your files.");
+    } finally {
+      setIsProcessing(false);
+      setProgress(0);
+    }
+  };
+  return <div className="max-w-4xl mx-auto p-6 space-y-8"><div className="text-center space-y-2"><h1 className="text-3xl font-bold tracking-tight">{t.title}</h1><p className="text-muted-foreground">{t.description}</p></div><div className="grid grid-cols-1 md:grid-cols-3 gap-6"><div className="md:col-span-2 space-y-6"><div
+    {...getRootProps()}
+    className={clsx(
+      "relative group cursor-pointer border-2 border-dashed rounded-3xl p-12 transition-all duration-300 ease-out",
+      isDragActive ? "border-primary bg-primary/10" : "border-border hover:border-primary hover:bg-muted/50"
+    )}
+  ><input {...getInputProps()} /><div className="flex flex-col items-center justify-center space-y-4"><div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"><Plus className="w-8 h-8 text-primary" /></div><div className="text-center"><p className="text-lg font-medium">{t.upload_label}</p><p className="text-sm text-muted-foreground">{t.upload_hint}</p></div></div></div>{files.length > 0 && <div className="space-y-4"><div className="flex items-center justify-between"><h2 className="text-lg font-semibold">{t.files_ready}</h2><span className="text-sm text-muted-foreground">{files.length} items selected</span></div><div className="bg-card rounded-3xl border border-border overflow-hidden divide-y divide-border shadow-sm transition-all duration-300">{files.map((file, index) => <div key={`${file.name}-${index}`} className="group flex items-center p-4 hover:bg-muted/50 transition-colors"><div className="w-10 h-10 rounded-xl bg-muted flex items-center justify-center text-muted-foreground mr-4 group-hover:bg-primary/10 group-hover:text-primary transition-colors">{file.type.startsWith("image/") ? <ImageIcon className="w-6 h-6" /> : <FileArchive className="w-6 h-6" />}</div><div className="flex-1 min-w-0 py-1"><p className="font-medium text-foreground text-sm break-all" title={file.name}>{file.name}</p><p className="text-xs text-muted-foreground">{(file.size / 1024 / 1024).toFixed(2)} MB</p></div><div className="flex items-center space-x-1"><button onClick={() => moveFile(index, "up")} disabled={index === 0} title="Move Up" className="p-2 text-muted-foreground hover:text-primary disabled:opacity-0 rounded-lg hover:bg-muted"><ArrowUp className="w-4 h-4" /></button><button onClick={() => moveFile(index, "down")} disabled={index === files.length - 1} title="Move Down" className="p-2 text-muted-foreground hover:text-primary disabled:opacity-0 rounded-lg hover:bg-muted"><ArrowDown className="w-4 h-4" /></button><button onClick={() => removeFile(index)} title="Remove" className="p-2 text-muted-foreground hover:text-destructive rounded-lg hover:bg-muted"><Trash2 className="w-4 h-4" /></button></div></div>)}</div></div>}</div><div className="space-y-6"><div className="bg-card border border-border rounded-3xl p-6 shadow-sm space-y-6"><div className="flex items-center gap-2 pb-2 border-b border-border"><Settings2 className="w-5 h-5 text-primary" /><h2 className="font-bold">{t.settings}</h2></div><div className="space-y-6"><div className="space-y-3"><span className="text-sm font-medium text-foreground">{t.max_size}</span><div className="flex flex-wrap gap-2">{RESOLUTIONS.map((res) => <button
+    key={res.value}
+    onClick={() => setSettings({ ...settings, maxSize: res.value })}
+    className={clsx(
+      "px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200",
+      settings.maxSize === res.value ? "bg-primary text-primary-foreground shadow-sm ring-2 ring-primary/20" : "bg-secondary text-muted-foreground hover:bg-secondary/80"
+    )}
+  >{res.label}</button>)}</div></div><div className="space-y-3"><span className="text-sm font-medium text-foreground">Processing Mode</span><div className="grid grid-cols-2 gap-2 p-1 bg-secondary rounded-xl">{["batch", "merge"].map((m) => <button
+    key={m}
+    onClick={() => setSettings({ ...settings, mode: m })}
+    className={clsx(
+      "py-2 rounded-lg text-sm font-medium transition-all duration-200 capitalize",
+      settings.mode === m ? "bg-card text-primary shadow-sm" : "text-muted-foreground hover:text-foreground"
+    )}
+  >{m}</button>)}</div></div>{settings.mode === "merge" && <div className="space-y-3 animate-in fade-in slide-in-from-top-2 duration-300"><span className="text-sm font-medium text-foreground">Output Filename</span><div className="flex items-center gap-2"><input
+    type="text"
+    value={settings.outputFileName}
+    onChange={(e) => setSettings({ ...settings, outputFileName: e.target.value })}
+    placeholder="merged_comic"
+    className="flex-1 px-4 py-2 bg-secondary border-none rounded-2xl text-sm focus:ring-2 focus:ring-primary transition-all text-foreground placeholder:text-muted-foreground"
+  /><button
+    onClick={refreshOutputName}
+    title="Reset to first filename"
+    className="p-2 text-muted-foreground hover:text-primary rounded-xl bg-secondary hover:bg-secondary/80 transition-colors"
+  ><RefreshCcw className="w-4 h-4" /></button></div></div>}<div className="space-y-3"><span className="text-sm font-medium text-foreground">{dict.common?.labels?.image_format || "Image Format"}</span><div className="grid grid-cols-2 gap-2 p-1 bg-secondary rounded-xl">{["jpg", "webp"].map((f) => <button
+    key={f}
+    onClick={() => setSettings({ ...settings, imageFormat: f })}
+    className={clsx(
+      "py-2 rounded-lg text-sm font-medium transition-all duration-200 uppercase",
+      settings.imageFormat === f ? "bg-card text-primary shadow-sm" : "text-muted-foreground hover:text-foreground"
+    )}
+  >{f}</button>)}</div></div><div className="space-y-3"><span className="text-sm font-medium text-foreground">{dict.common?.labels?.archive_format || "Archive Format"}</span><div className="grid grid-cols-2 gap-2 p-1 bg-secondary rounded-xl">{["cbz", "zip"].map((f) => <button
+    key={f}
+    onClick={() => setSettings({ ...settings, archiveFormat: f })}
+    className={clsx(
+      "py-2 rounded-lg text-sm font-medium transition-all duration-200 uppercase",
+      settings.archiveFormat === f ? "bg-card text-primary shadow-sm" : "text-muted-foreground hover:text-foreground"
+    )}
+  >{f}</button>)}</div></div></div></div><button
+    onClick={processFiles}
+    disabled={files.length === 0 || isProcessing}
+    className={clsx(
+      "w-full flex items-center justify-center px-8 py-4 rounded-3xl font-bold transition-all duration-300 shadow-xl shadow-primary/10 active:scale-[0.98]",
+      isProcessing || files.length === 0 ? "bg-secondary text-muted-foreground cursor-not-allowed" : "bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-primary/20"
+    )}
+  >{isProcessing ? <div className="flex items-center gap-2"><Loader2 className="w-5 h-5 animate-spin" /><span>{progress.toFixed(0)}%</span></div> : <><Sparkles className="w-5 h-5 mr-2" /><span>{files.length > 1 && settings.mode === "batch" ? `Convert ${files.length} Files` : t.process_btn}</span></>}</button></div></div><ToolDisclaimer message={dict.common?.labels?.image_disclaimer || "Images are re-encoded to shrink them, which is lossy — keep your original if you need it. Everything runs in this browser tab; no file is uploaded."} /></div>;
+}
+async function processAndAddImage(buffer, zipWriter, index, settings, vips, sourceName) {
+  const v = vips;
+  let image = v.Image.newFromBuffer(buffer);
+  const shortest = Math.min(image.width, image.height);
+  const targetExt = settings.imageFormat === "webp" ? ".webp" : ".jpg";
+  const needsResize = shortest > settings.maxSize;
+  const needsGray = settings.grayscale;
+  const sameFormat = sourceName.toLowerCase().endsWith(targetExt);
+  if (!needsResize && !needsGray && sameFormat) {
+    image.delete();
+    await zipWriter.add(index.toString().padStart(6, "0") + targetExt, new BlobReader(new Blob([buffer])));
+  } else {
+    if (needsResize) {
+      const old = image;
+      image = image.resize(settings.maxSize / shortest, { kernel: v.Kernel.lanczos3 });
+      old.delete();
+    }
+    if (needsGray) {
+      const old = image;
+      image = image.colourspace("b-w");
+      old.delete();
+    }
+    const opts = settings.imageFormat === "webp" ? { Q: 75 } : { Q: 80 };
+    const outBuffer = image.writeToBuffer(targetExt, opts);
+    image.delete();
+    await zipWriter.add(index.toString().padStart(6, "0") + targetExt, new BlobReader(new Blob([outBuffer])));
+  }
+}
+export {
+  CBZReducer as default
+};

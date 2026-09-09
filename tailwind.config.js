@@ -21,6 +21,23 @@ export default {
                 violet: { DEFAULT: '#8B5CF6', deep: '#6D31E0' },
                 amber: { DEFAULT: '#D97706' },
                 night: { DEFAULT: '#0A0F1F', deep: '#070B17', surface: '#121830' },
+                // Design tokens the /tools/ components rely on. They were ported from
+                // lokaltools, which is built on shadcn/ui and refers to colours as
+                // bg-primary / text-muted-foreground / border-border rather than by
+                // literal shade. Defining the same token names here — mapped onto this
+                // site's own light palette — keeps those components byte-comparable
+                // against their source instead of needing every class rewritten.
+                foreground: '#0B1220',
+                background: '#FFFFFF',
+                card: { DEFAULT: '#FFFFFF', foreground: '#0B1220' },
+                primary: { DEFAULT: '#2D7CF6', foreground: '#FFFFFF' },
+                secondary: { DEFAULT: '#F4F7FC', foreground: '#0B1220' },
+                muted: { DEFAULT: '#F4F7FC', foreground: '#5A6A85' },
+                accent: { DEFAULT: '#E8F0FE', foreground: '#0B1220' },
+                destructive: { DEFAULT: '#DC2626', foreground: '#FFFFFF' },
+                border: '#E5EAF2',
+                input: '#E5EAF2',
+                ring: '#2D7CF6',
             },
             boxShadow: {
                 card: '0 1px 2px rgba(11,18,32,.04), 0 8px 24px -8px rgba(11,18,32,.08)',

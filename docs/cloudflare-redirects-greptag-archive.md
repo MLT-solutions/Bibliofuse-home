@@ -1,3 +1,9 @@
+> **SUPERSEDED 2026-09-09.** These three redirects now live in `public/_redirects` and
+> deploy with the site — bibliofuse.com moved from GitHub Pages to Cloudflare Pages, which
+> serves redirects natively. See `docs/cloudflare-pages-migration.md`. Nothing here needs
+> to be entered by hand any more; if you already created these as dashboard Redirect
+> Rules, delete them so there is one source of truth.
+
 # Cloudflare Redirect Rules — GrepTag & Comic Duplicate Scanner move
 
 **Status:** written 2026-09-09. **These must be applied by hand in the Cloudflare

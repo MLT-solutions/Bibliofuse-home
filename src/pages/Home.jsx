@@ -59,7 +59,7 @@ function MicrosoftStoreImageBadge({ href, size = 'sm', className = '' }) {
 function WebToolButton({ lang, children, compact = false }) {
   return (
     <Link
-      to={`/${lang}/webapp/`}
+      to={`/${lang}/tools/`}
       className={`inline-flex items-center justify-center gap-2 rounded-xl bg-[#0b1220] font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#152033] ${compact ? 'h-10 px-4 text-sm' : 'h-12 px-5 text-sm'}`}
     >
       <img src="/image/WebAssembly_Logo.svg" alt="" className="h-5 w-5" />
@@ -221,11 +221,11 @@ function ProductFamily({ lang }) {
     {
       tag: t('redesign.productFamily.products.webTool.tag'),
       logoSrc: '/image/webtool-logo.png',
-      name: 'BiblioFuse Web Tool',
+      name: 'BiblioFuse Tools',
       desc: t('redesign.productFamily.products.webTool.desc'),
       bullets: [t('redesign.productFamily.products.webTool.bullet1'), t('redesign.productFamily.products.webTool.bullet2'), t('redesign.productFamily.products.webTool.bullet3')],
       cta: t('redesign.productFamily.learnMore'),
-      to: `/${lang}/webapp/`,
+      to: `/${lang}/tools/`,
       accent: 'teal',
     },
     {
@@ -277,7 +277,7 @@ function ProductFamily({ lang }) {
         </div>
         <p className="mt-6 text-sm leading-relaxed text-slate-500">
           {t('redesign.productFamily.qrGeneratorNote')}{' '}
-          <Link to={`/${lang}/qr-generator/`} className="font-semibold text-slate-950 underline underline-offset-2 hover:text-slate-700">
+          <Link to={`/${lang}/tools/qr-generator/`} className="font-semibold text-slate-950 underline underline-offset-2 hover:text-slate-700">
             {t('redesign.productFamily.qrGeneratorCta')} →
           </Link>
         </p>

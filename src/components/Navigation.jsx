@@ -49,7 +49,7 @@ const Navigation = () => {
     ];
     const tools = [
         { name: 'BiblioFuse Reader', sub: t('redesign.tools.readerSub'), path: '/comicreader/', logo: '/image/bibliofuse-logo.png', logoZoom: 1.5 },
-        { name: 'BiblioFuse Web Tool', sub: t('redesign.tools.webSub'), path: '/webapp/', logo: '/image/webtool-logo.png' },
+        { name: 'BiblioFuse Tools', sub: t('redesign.tools.webSub'), path: '/tools/', logo: '/image/webtool-logo.png' },
         { name: 'SmartDecrypt PDF ZIP', sub: t('redesign.tools.smartSub'), href: smartDecryptAppStoreUrl, logo: '/image/smartdecrypt-logo.png' },
         { name: 'ContentCue', sub: t('redesign.tools.contentcueSub'), href: contentCueAppStoreUrl, logo: '/image/contentcue-logo.png', logoZoom: 1.15 },
     ];

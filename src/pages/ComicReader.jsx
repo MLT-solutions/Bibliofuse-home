@@ -677,7 +677,7 @@ const ComicReader = () => {
                 </span>
               ))}
             </div>
-            <Link to={`/${lang}/webapp/`} className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 transition hover:text-blue-700">
+            <Link to={`/${lang}/tools/`} className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 transition hover:text-blue-700">
               Prefer no install? Try the web version →
             </Link>
           </div>

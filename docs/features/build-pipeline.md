@@ -2,6 +2,24 @@
 
 `scripts/`, invoked from `package.json`'s `build` script and by hand.
 
+## Hosting: Cloudflare Pages (2026-09-09)
+
+`npm run deploy` builds and then runs `wrangler pages deploy dist --project-name=bibliofuse`.
+It used to be `gh-pages -d dist`.
+
+Direct Upload rather than the Pages Git integration: the prerender step drives Puppeteer
+over ~890 pages and takes 10–15 minutes, against a 20-minute Pages build timeout on a
+build image that is a poor fit for Puppeteer. Building locally keeps the previous shape
+and removes that risk.
+
+The move happened because GitHub Pages can neither issue 301s (needed when GrepTag and
+Comic Duplicate Scanner moved to mlogictech.com) nor set response headers (needed for the
+cross-origin isolation the `/tools/` WASM pages require). Both now live in version control
+as `public/_headers` and `public/_redirects`, which Vite copies into `dist/`.
+
+`public/CNAME` is gone — that was GitHub Pages only. Setup steps that still need a human
+are in `docs/cloudflare-pages-migration.md`.
+
 ## Prerender locale isolation (2026-09-09)
 
 `scripts/prerender.js` gives every page its own `browser.createBrowserContext()` and

@@ -39,7 +39,7 @@ superseded — confirm current relevance before citing them as a source of truth
 |---|---|
 | `src/App.jsx` | Router root: language-prefixed routing (`/:lang/*`), per-app route table, shared layout (Navigation/Footer) |
 | `src/pages/Home.jsx` | Home page |
-| `src/pages/WebApp.jsx` | Web Tool landing page (`GrepTagReader.jsx` / `ArchiveScanner.jsx` deleted 2026-09-09) |
+| `src/tools/`, `src/pages/tools/` | The five browser tools and their routes — see `features/tools.md`. (`WebApp.jsx`, `GrepTagReader.jsx`, `ArchiveScanner.jsx` all deleted 2026-09-09; `/webapp/` now 301s to `/tools/`) |
 | `src/pages/SmartDecrypt.jsx`, `ContentCue.jsx` | Retired — "this app has moved" stubs linking to mlogictech.com, not landing pages (see above) |
 | `src/pages/Blog.jsx`, `BlogPost.jsx` | Blog index + individual post (fetches markdown at runtime) |
 | `src/pages/Changelog.jsx`, `AppChangelog.jsx` | Site-wide and per-app changelog views |
@@ -59,6 +59,7 @@ See `docs/features/`:
 - `i18n-routing.md`
 - `blog.md`
 - `app-pages.md`
+- `tools.md` — the /tools/ browser utilities (ported from lokaltools 2026-09-09)
 - `changelog.md`
 - `privacy-pages.md`
 - `build-pipeline.md`

@@ -1656,6 +1656,196 @@
       "languageLabel": "Website language",
       "browserLanguageLabel": "Browser language",
       "unknown": "Unknown"
+    },
+    "toolsHub": {
+      "seoTitle": "Free Browser Tools for Comics & Ebooks — CBZ, EPUB, PDF",
+      "seoDesc": "Free tools for comic and ebook files that run entirely in your browser: shrink CBZ archives, compress EPUBs, convert PDF to CBZ or JPG. No upload, no account.",
+      "h1": "Tools",
+      "intro": "Small tools for the file formats BiblioFuse reads. Each one runs entirely inside your browser — the file never leaves your device, and there is nothing to install or sign up for.",
+      "openCta": "Open",
+      "backCta": "All tools"
+    },
+    "toolsPages": {
+      "trust": {
+        "local": "Runs on your device",
+        "noUpload": "No upload, no server",
+        "noAccount": "No account, no sign-up"
+      },
+      "faqTitle": "Questions",
+      "appPitch": "BiblioFuse reads CBZ, CBR, EPUB, PDF and TXT on iPhone, iPad, Mac, Android and Windows — and streams big libraries straight from your own machine.",
+      "appPitchCta": "See BiblioFuse Reader",
+      "cbz-reducer": {
+        "tag": "CBZ · ZIP",
+        "h1": "Reduce CBZ file size",
+        "cardDesc": "Shrink comic archives by re-encoding the pages inside, without splitting the volume.",
+        "seoTitle": "Reduce CBZ File Size — Free, In Your Browser, No Upload",
+        "seoDesc": "Compress CBZ and ZIP comic archives in your browser. Re-encodes the pages inside at a resolution and quality you choose. Nothing is uploaded — the whole job runs on your device.",
+        "intro": "Drop in a CBZ or ZIP and it re-encodes every page inside at the size and quality you pick, then hands the archive back. Large scans usually lose most of their weight with no visible difference on a phone screen.",
+        "sections": [
+          {
+            "title": "Why comic archives get so big",
+            "body": "A CBZ is just a ZIP full of page images. Scans are often stored at print resolution — 3000px wide or more — which is far beyond what any phone or tablet can display. Re-encoding those pages to the resolution you actually read at is usually where the savings come from, not the archive format."
+          },
+          {
+            "title": "What the settings do",
+            "body": "Shortest-dimension resolution caps the smaller side of each page, so tall pages and spreads scale consistently. Quality controls the encoder. Grayscale drops colour channels entirely, which helps a lot on black-and-white manga and nothing at all on colour comics."
+          },
+          {
+            "title": "Nothing leaves your device",
+            "body": "The archive is opened, re-encoded and rebuilt inside your browser using WebAssembly. There is no upload step, no queue and no server that ever sees the file — which also means it works on files you would not want to hand to a web service."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Will this ruin the image quality?",
+            "a": "Only if you tell it to. The default settings target the resolution a phone or tablet actually renders at, which is well below what most scans are stored at, so the visible result is usually identical. If you archive at print quality, raise the resolution cap or leave the file alone."
+          },
+          {
+            "q": "Does it work on CBR or RAR files?",
+            "a": "No — CBR is a RAR archive, and RAR cannot be opened in the browser for licensing reasons. Convert to CBZ first, or use the BiblioFuse app, which reads CBR directly."
+          },
+          {
+            "q": "Is there a file size limit?",
+            "a": "The limit is your device's memory, not a server quota, because the work happens locally. Very large volumes are fine on a desktop; a phone with several hundred megabytes of pages may run out of room."
+          }
+        ]
+      },
+      "epub-reducer": {
+        "tag": "EPUB",
+        "h1": "Compress an EPUB",
+        "cardDesc": "Re-encode the images inside an EPUB so it syncs and stores smaller.",
+        "seoTitle": "Compress EPUB Files — Free, In Your Browser, No Upload",
+        "seoDesc": "Shrink EPUB files by re-encoding the images inside them, in your browser. Text and structure are left untouched. No upload, no account, nothing sent to a server.",
+        "intro": "Drop in an EPUB and it re-encodes the images inside — covers, illustrations, embedded scans — while leaving the text, structure and metadata exactly as they were.",
+        "sections": [
+          {
+            "title": "It is almost always the images",
+            "body": "The text in a novel-length EPUB is tiny — often under a megabyte. When an EPUB is large, it is because of embedded images stored at far higher resolution than any reader will display. Re-encoding those is where the size goes."
+          },
+          {
+            "title": "What is left alone",
+            "body": "Chapter structure, table of contents, metadata and the text itself are untouched — they are copied through unchanged. Only the image files inside the archive are re-encoded, so the book opens and navigates exactly as before."
+          },
+          {
+            "title": "Nothing leaves your device",
+            "body": "The EPUB is unpacked, processed and repacked inside your browser. No copy is uploaded, which matters for books you own but would rather not hand to a web service."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Will it break DRM-protected books?",
+            "a": "It cannot open them at all. DRM-protected EPUBs are encrypted, so there is nothing to re-encode. This works on DRM-free files only."
+          },
+          {
+            "q": "Does the text get compressed too?",
+            "a": "No. Text is copied through untouched — it is a negligible share of the file size and re-encoding it would risk breaking the book's structure for no gain."
+          },
+          {
+            "q": "Will my reader still open it?",
+            "a": "Yes. The output is a standard EPUB with the same structure and metadata as the input; only the image files inside are smaller."
+          }
+        ]
+      },
+      "pdf-to-cbz": {
+        "tag": "PDF → CBZ",
+        "h1": "Convert PDF to CBZ",
+        "cardDesc": "Turn a PDF comic into a CBZ so comic readers can page through it properly.",
+        "seoTitle": "Convert PDF to CBZ — Free, In Your Browser, No Upload",
+        "seoDesc": "Convert PDF comics and scans to CBZ in your browser. Each page is rendered to an image and packed into a comic archive. No upload, no account, nothing sent to a server.",
+        "intro": "Drop in a PDF and every page is rendered to an image and packed into a CBZ, so comic readers can treat it as a proper page-by-page volume instead of a document.",
+        "sections": [
+          {
+            "title": "Why convert at all",
+            "body": "PDF is a document format. Comic readers built around CBZ get page-spread detection, reading direction, thumbnail grids and per-page bookmarks — features a PDF viewer generally does not offer for scanned comics."
+          },
+          {
+            "title": "What you get out",
+            "body": "A standard CBZ: a ZIP of sequentially numbered page images. Pages are rendered at 2× scale so text and line art stay sharp when you zoom, then encoded to a web-friendly format."
+          },
+          {
+            "title": "Nothing leaves your device",
+            "body": "Rendering and packing both happen in your browser. The PDF is never uploaded, so this is safe to use on scans and documents you would not want to put through a web service."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Does the text stay searchable?",
+            "a": "No. CBZ is an image format by definition, so any selectable text in the PDF becomes part of the page image. If you need text search, keep the PDF — or read it in BiblioFuse, which can OCR pages on device."
+          },
+          {
+            "q": "What resolution are the pages rendered at?",
+            "a": "2× the PDF's native page size, which keeps line art and lettering sharp when zoomed. Larger PDFs therefore take longer and use more memory."
+          },
+          {
+            "q": "Can it convert back the other way?",
+            "a": "Not here — this direction covers the common case of a PDF that ought to be a comic. The BiblioFuse app handles CBZ to PDF on device."
+          }
+        ]
+      },
+      "pdf-to-jpg": {
+        "tag": "PDF → JPG",
+        "h1": "Convert PDF pages to JPG",
+        "cardDesc": "Export every page of a PDF as an image, downloaded as a ZIP.",
+        "seoTitle": "Convert PDF to JPG — Free, In Your Browser, No Upload",
+        "seoDesc": "Export PDF pages as JPG images in your browser and download them as a ZIP. Pick the render quality. No upload, no account, nothing sent to a server.",
+        "intro": "Drop in a PDF and every page is rendered to a JPG at the quality you choose, then bundled into a single ZIP download.",
+        "sections": [
+          {
+            "title": "What it is for",
+            "body": "Pulling pages out as images — for a slide, a reference sheet, an issue report, or any workflow that wants pictures rather than a document. Every page is exported; there is no per-page selection step."
+          },
+          {
+            "title": "Choosing quality",
+            "body": "The quality control is the render scale, not just the encoder setting. Higher values render each page larger before encoding, which keeps small text legible at the cost of file size and processing time."
+          },
+          {
+            "title": "Nothing leaves your device",
+            "body": "Rendering uses the PDF engine built into the page and runs entirely in your browser. The file is never uploaded — which is the point if the PDF is a statement, a contract, or anything else you would not paste into a web tool."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can I export just one page?",
+            "a": "Not currently — every page is exported and delivered as a ZIP. Extract the one you need from the archive."
+          },
+          {
+            "q": "Why JPG and not PNG?",
+            "a": "JPG is dramatically smaller for scanned and photographic pages, which is the common case. For line art or screenshots where you want lossless output, PDF to CBZ preserves more detail."
+          },
+          {
+            "q": "Does it work on password-protected PDFs?",
+            "a": "No. An encrypted PDF has to be unlocked before anything can render it. SmartDecrypt handles that case."
+          }
+        ]
+      },
+      "qr-generator": {
+        "tag": "QR code",
+        "h1": "Kavita & Komga QR generator",
+        "cardDesc": "Make a setup QR code so the app can connect to your server without typing.",
+        "seoTitle": "Kavita & Komga Setup QR Code Generator",
+        "seoDesc": "Generate a QR code that points BiblioFuse at your Kavita or Komga server, so you do not have to type a URL and API key on a phone. Built in your browser; nothing is sent anywhere.",
+        "intro": "Fill in your server details and get a QR code the app can scan — no typing a long URL and API key on a phone keyboard.",
+        "sections": [
+          {
+            "title": "Why a QR code",
+            "body": "A self-hosted server address plus an API key is a long, error-prone thing to type on a phone. Scanning a code gets both across in one step, correctly, every time."
+          },
+          {
+            "title": "Your key never leaves the page",
+            "body": "The code is drawn in your browser from the values you type. Nothing is submitted, logged or stored — close the tab and it is gone. The generated image is only as private as wherever you choose to put it, so treat a printed code like the API key it contains."
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is my API key sent anywhere?",
+            "a": "No. The QR code is generated locally in the page and the values you type are never transmitted or saved. Do bear in mind the finished code contains your key, so anyone who can photograph it can use it."
+          },
+          {
+            "q": "Which servers does this support?",
+            "a": "Kavita and Komga. Pick the service type and the default port fills in; adjust the address if your setup differs."
+          }
+        ]
+      }
     }
   },
   "featureMatrix": {

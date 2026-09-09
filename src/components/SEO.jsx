@@ -48,6 +48,8 @@ const SEO = ({
     breadcrumbs,      // [{ name, url }]
     additionalSchemas, // [JSON-LD object] — extra schemas rendered after primary
     noindex,          // explicit override; when omitted, defaults by locale (see below)
+    hreflangLocales,  // override the alternates list; use ['en'] for routes that exist
+                      // in every locale but are only indexable in English
 }) => {
     const { i18n, t } = useTranslation();
     const { lang } = useParams();
@@ -175,7 +177,7 @@ const SEO = ({
 
             {/* Hreflang — only to locales we're asking Google to index; pointing at a
                 noindexed alternate sends a mixed signal for no benefit */}
-            {INDEXED_LANGUAGES.map((langCode) => (
+            {(hreflangLocales || INDEXED_LANGUAGES).map((langCode) => (
                 <link key={langCode} rel="alternate" hrefLang={langCode} href={`${baseUrl}/${langCode}${alternatePath}`} />
             ))}
             <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/en${alternatePath}`} />

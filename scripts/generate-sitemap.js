@@ -15,13 +15,17 @@ const ARTICLE_SLUGS = ['best-komga-kavita-alternatives', 'reading-ebooks-offline
 const ROUTES = [
     { path: '/', priority: '1.0', changefreq: 'weekly' },
     { path: '/comicreader/', priority: '0.8', changefreq: 'monthly' },
-    { path: '/webapp/', priority: '0.8', changefreq: 'monthly' },
     // /smartdecrypt/ and /contentcue/ retired 2026-07-20 — full pages moved to
     // mlogictech.com (0 clicks/90 days here; see docs/gsc-cloudflare-findings.md).
     // Left out of the sitemap; the routes still exist as noindexed "moved" stubs.
     { path: '/about/', priority: '0.6', changefreq: 'monthly' },
-    { path: '/qr-generator/', priority: '0.6', changefreq: 'monthly' },
     { path: '/privacy/', priority: '0.4', changefreq: 'yearly' },
+    { path: '/tools/', priority: '0.8', changefreq: 'monthly' },
+    { path: '/tools/cbz-reducer/', priority: '0.8', changefreq: 'monthly' },
+    { path: '/tools/epub-reducer/', priority: '0.8', changefreq: 'monthly' },
+    { path: '/tools/pdf-to-cbz/', priority: '0.8', changefreq: 'monthly' },
+    { path: '/tools/pdf-to-jpg/', priority: '0.8', changefreq: 'monthly' },
+    { path: '/tools/qr-generator/', priority: '0.8', changefreq: 'monthly' },
     { path: '/blog/', priority: '0.7', changefreq: 'weekly' },
     { path: '/changelog/', priority: '0.6', changefreq: 'monthly' },
     { path: '/features/', priority: '0.7', changefreq: 'monthly' },
@@ -35,6 +39,12 @@ const ROUTES = [
 // Sister-app changelog/privacy pages: non-English locale variants are noindex'd
 // (see docs/gsc-cloudflare-findings.md) — keep them out of the sitemap. English stays indexed.
 const NOINDEX_NON_EN_ROUTES = new Set([
+    '/tools/',
+    '/tools/cbz-reducer/',
+    '/tools/epub-reducer/',
+    '/tools/pdf-to-cbz/',
+    '/tools/pdf-to-jpg/',
+    '/tools/qr-generator/',
     '/smartdecrypt/changelog/', '/smartdecrypt/privacy/',
     '/contentcue/changelog/', '/contentcue/privacy/',
 ]);
@@ -50,8 +60,15 @@ function generateSitemap() {
             const url = `${BASE_URL}/${lang}${route.path}`;
 
             // Alternate links only to other indexed locales — pointing hreflang at a
-            // noindexed page sends a mixed signal for no benefit.
-            const alternates = INDEXED_LANGUAGES.map(altLang =>
+            // noindexed page sends a mixed signal for no benefit. That has to be decided
+            // per route, not just per locale: a route in NOINDEX_NON_EN_ROUTES has real
+            // pages in every locale, but only the English one is indexable, so it must
+            // advertise itself as English-only rather than listing siblings that all
+            // carry a noindex tag.
+            const altLangs = NOINDEX_NON_EN_ROUTES.has(route.path)
+                ? ['en']
+                : INDEXED_LANGUAGES;
+            const alternates = altLangs.map(altLang =>
                 `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${BASE_URL}/${altLang}${route.path}" />`
             ).join('\n');
 

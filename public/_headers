@@ -1,0 +1,21 @@
+# Cloudflare Pages response headers. Vite copies public/ into dist/, so this ships
+# with the build. GitHub Pages could not do this at all — it is one of the two reasons
+# the site moved to Pages (the other is _redirects).
+
+# The tool pages load wasm-vips, which spawns pthreads and therefore needs
+# SharedArrayBuffer, which requires cross-origin isolation. Scoped to /tools/ rather
+# than applied sitewide: COEP also constrains cross-origin subresources, and the rest
+# of the site pulls Google Fonts (src/index.css) and fetches app privacy policies from
+# raw.githubusercontent.com (AppPrivacy.jsx) — neither of which needs isolation.
+/*/tools/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: credentialless
+
+# The WASM and worker payloads are content-addressed by release, never edited in place.
+/wasm/*
+  Cache-Control: public, max-age=31536000, immutable
+  Cross-Origin-Resource-Policy: same-origin
+
+/workers/*
+  Cache-Control: public, max-age=31536000, immutable
+  Cross-Origin-Resource-Policy: same-origin

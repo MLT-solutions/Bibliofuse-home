@@ -6,7 +6,9 @@ import './i18n';
 import { SUPPORTED_LANGUAGES } from './i18n';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
-import WebApp from './pages/WebApp';
+import ToolsHub from './pages/tools/ToolsHub';
+import ToolRoutePage from './pages/tools/ToolRoutePage';
+import { TOOL_SLUGS } from './data/tools';
 import About from './pages/About';
 import Privacy from './pages/Privacy';
 import Blog from './pages/Blog';
@@ -19,7 +21,6 @@ import ComicReader from './pages/ComicReader';
 import SmartDecrypt from './pages/SmartDecrypt';
 import ContentCue from './pages/ContentCue';
 import AndroidRequest from './pages/AndroidRequest';
-import QrGenerator from './pages/QrGenerator';
 import Footer from './components/Footer';
 
 // Language redirect component - detects and redirects to proper language
@@ -82,7 +83,6 @@ function AppLayout() {
   // Get current path without language prefix
   const currentPath = location.pathname.replace(`/${lang}`, '') || '/';
   const normalizedPath = currentPath === '/' ? '/' : currentPath.replace(/\/$/, '');
-  const isWebApp = normalizedPath === '/webapp';
   const isComicReader = normalizedPath === '/comicreader';
   const isSmartDecrypt = normalizedPath === '/smartdecrypt';
   const isContentCue = normalizedPath === '/contentcue';
@@ -95,7 +95,10 @@ function AppLayout() {
           <Route path="/" element={<Home />} />
           <Route path="/reader" element={<Navigate to={`/${lang}/comicreader/`} replace />} />
           <Route path="/comicreader" element={<ComicReader />} />
-          <Route path="/webapp" element={<WebApp />} />
+          <Route path="/tools" element={<ToolsHub />} />
+          {TOOL_SLUGS.map((slug) => (
+            <Route key={slug} path={`/tools/${slug}`} element={<ToolRoutePage slug={slug} />} />
+          ))}
           <Route path="/about" element={<About />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/blog" element={<Blog />} />
@@ -109,14 +112,13 @@ function AppLayout() {
           <Route path="/contentcue/changelog" element={<AppChangelog appSlug="contentcue" />} />
           <Route path="/contentcue/privacy" element={<AppPrivacy appSlug="contentcue" />} />
           <Route path="/androidrequest" element={<AndroidRequest />} />
-          <Route path="/qr-generator" element={<QrGenerator />} />
           <Route path="/about" element={<About />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<Navigate to={`/${lang}/`} replace />} />
         </Routes>
       </main>
       <BackToTopButton />
-      {!isWebApp && !isComicReader && !isSmartDecrypt && !isContentCue && <Footer />}
+      {!isComicReader && !isSmartDecrypt && !isContentCue && <Footer />}
     </div>
   );
 }
