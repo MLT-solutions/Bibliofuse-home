@@ -122,86 +122,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/webapp/" />
   </url>
   <url>
-    <loc>https://bibliofuse.com/en/grepreader/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/grepreader/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/es/grepreader/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/grepreader/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/fr/grepreader/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/grepreader/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/ja/grepreader/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/grepreader/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/grepreader/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/en/archive/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/es/archive/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/fr/archive/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/ja/archive/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/" />
-  </url>
-  <url>
     <loc>https://bibliofuse.com/en/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -442,26 +362,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/features/" />
   </url>
   <url>
-    <loc>https://bibliofuse.com/en/archive/changelog/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/changelog/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/changelog/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/changelog/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/changelog/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/changelog/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/en/archive/privacy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/archive/privacy/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/archive/privacy/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/archive/privacy/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/archive/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/archive/privacy/" />
-  </url>
-  <url>
     <loc>https://bibliofuse.com/en/smartdecrypt/changelog/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -500,26 +400,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/contentcue/privacy/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/contentcue/privacy/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/contentcue/privacy/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/en/grepreader/changelog/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/grepreader/changelog/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/grepreader/changelog/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/grepreader/changelog/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/grepreader/changelog/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/grepreader/changelog/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/en/grepreader/privacy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/grepreader/privacy/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/grepreader/privacy/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/grepreader/privacy/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/grepreader/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/grepreader/privacy/" />
   </url>
   <url>
     <loc>https://bibliofuse.com/en/blog/best-komga-kavita-alternatives/</loc>
@@ -640,46 +520,6 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/convert-cbr-to-cbz-online/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/convert-cbr-to-cbz-online/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/convert-cbr-to-cbz-online/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/en/blog/organize-ebooks-by-content-not-metadata/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/organize-ebooks-by-content-not-metadata/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/es/blog/organize-ebooks-by-content-not-metadata/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/organize-ebooks-by-content-not-metadata/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/fr/blog/organize-ebooks-by-content-not-metadata/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/organize-ebooks-by-content-not-metadata/" />
-  </url>
-  <url>
-    <loc>https://bibliofuse.com/ja/blog/organize-ebooks-by-content-not-metadata/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bibliofuse.com/en/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://bibliofuse.com/es/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bibliofuse.com/fr/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bibliofuse.com/ja/blog/organize-ebooks-by-content-not-metadata/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bibliofuse.com/en/blog/organize-ebooks-by-content-not-metadata/" />
   </url>
   <url>
     <loc>https://bibliofuse.com/en/blog/find-duplicate-comics-different-names/</loc>
