@@ -6,6 +6,7 @@ import {
   PLATFORMS,
   GROUPS,
   searchFeatures,
+  releaseFor,
 } from '../data/feature-matrix';
 
 // UI copy lives here rather than inline so it can move into src/locales/*/ in one pass.
@@ -79,12 +80,13 @@ const CELL = {
 };
 
 /** One cell. Title carries the version, date and any per-cell caveat. */
-function Cell({ cell, platformLabel, featureLabel, highlighted }) {
+function Cell({ cell, platformId, platformLabel, featureLabel, highlighted }) {
   const meta = CELL[cell.status] ?? CELL.na;
+  const version = releaseFor(platformId, cell.since);
 
   const detail = [];
   if (cell.status === 'shipped' || cell.status === 'partial') {
-    detail.push(`since ${cell.version} · ${cell.since}`);
+    detail.push(version ? `since ${version} · ${cell.since}` : `since ${cell.since}`);
   } else if (cell.status === 'merged') {
     detail.push(`built ${cell.since}`);
   }
@@ -107,9 +109,9 @@ function Cell({ cell, platformLabel, featureLabel, highlighted }) {
           not yet
         </span>
       )}
-      {(cell.status === 'shipped' || cell.status === 'partial') && (
+      {(cell.status === 'shipped' || cell.status === 'partial') && version && (
         <span className="mt-0.5 block text-[10px] tabular-nums text-slate-400">
-          {cell.version}
+          {version}
         </span>
       )}
     </td>
@@ -416,6 +418,7 @@ export default function FeatureMatrix() {
                           <Cell
                             key={p.id}
                             cell={f.platforms[p.id]}
+                            platformId={p.id}
                             platformLabel={p.label}
                             featureLabel={f.label}
                             highlighted={highlight(f.platforms[p.id])}
