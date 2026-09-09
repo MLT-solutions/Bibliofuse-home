@@ -1991,9 +1991,9 @@
       "unknown": "Unknown"
     }
   },
-      "featureMatrix": {
-    "essentials": "Platform essentials",
-    "whereToGet": "Where to get it",
+        "featureMatrix": {
+      "essentials": "Platform essentials",
+      "whereToGet": "Where to get it",
       "sinceVersion": "since {{version}} · {{date}}",
       "sinceDate": "since {{date}}",
       "builtDate": "built {{date}}",
@@ -2073,7 +2073,7 @@
         },
         "continuous-page-turn": {
           "label": "Continuous-mode & page-turn rewrite",
-          "note": "Section scrolling; turns land where you expect"
+          "note": "Section scrolling for comics, PDF, EPUB and text; turns land where you expect"
         },
         "komga-kavita-native": {
           "label": "Native Komga & Kavita API",
@@ -2095,11 +2095,11 @@
           "note": "Plus a download-cache manager"
         },
         "host-incremental-stream": {
-          "label": "Host role: serves an incremental stream",
+          "label": "BiblioFuse host: streams your own library",
           "note": "Vector PDF pages, comic EPUB pages, lazy reflowable EPUB"
         },
         "client-reads-host": {
-          "label": "Client role: reads from a host",
+          "label": "BiblioFuse app: reads from your host",
           "note": "Bonjour discovery over pinned HTTPS"
         },
         "connection-routes": {

@@ -1988,9 +1988,9 @@
       }
     }
   },
-      "featureMatrix": {
-    "essentials": "Ringkasan platform",
-    "whereToGet": "Cara mendapatkan",
+        "featureMatrix": {
+      "essentials": "Ringkasan platform",
+      "whereToGet": "Cara mendapatkan",
       "sinceVersion": "sejak {{version}} · {{date}}",
       "sinceDate": "sejak {{date}}",
       "builtDate": "dibina {{date}}",
@@ -2070,7 +2070,7 @@
         },
         "continuous-page-turn": {
           "label": "Mod berterusan & selak halaman baharu",
-          "note": "Tatal per bahagian; selak halaman berhenti di tempat dijangka"
+          "note": "Tatal per bahagian untuk komik, PDF, EPUB dan teks; selak halaman berhenti di tempat dijangka"
         },
         "komga-kavita-native": {
           "label": "API asli Komga & Kavita",
@@ -2092,11 +2092,11 @@
           "note": "Serta pengurus cache muat turun"
         },
         "host-incremental-stream": {
-          "label": "Peranan hos: menyajikan strim berperingkat",
+          "label": "Hos BiblioFuse: menstrim perpustakaan anda sendiri",
           "note": "Halaman PDF vektor, halaman komik EPUB, EPUB reflowable beransur"
         },
         "client-reads-host": {
-          "label": "Peranan klien: membaca dari hos",
+          "label": "Apl BiblioFuse: membaca dari hos anda",
           "note": "Penemuan Bonjour melalui HTTPS dengan sertifikat disemat"
         },
         "connection-routes": {

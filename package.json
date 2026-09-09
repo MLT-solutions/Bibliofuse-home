@@ -6,11 +6,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/generate-sitemap.js && node scripts/generate-static-routes.js && node scripts/prerender.js",
+    "build": "node scripts/check-feature-matrix-i18n.mjs && vite build && node scripts/generate-sitemap.js && node scripts/generate-static-routes.js && node scripts/prerender.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "check:i18n": "node scripts/check-feature-matrix-i18n.mjs"
   },
   "dependencies": {
     "i18next": "^25.8.0",

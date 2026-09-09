@@ -1988,9 +1988,9 @@
       }
     }
   },
-      "featureMatrix": {
-    "essentials": "Основное по платформам",
-    "whereToGet": "Где скачать",
+        "featureMatrix": {
+      "essentials": "Основное по платформам",
+      "whereToGet": "Где скачать",
       "sinceVersion": "с {{version}} · {{date}}",
       "sinceDate": "с {{date}}",
       "builtDate": "готово {{date}}",
@@ -2070,7 +2070,7 @@
         },
         "continuous-page-turn": {
           "label": "Обновлённые непрерывный режим и перелистывание",
-          "note": "Прокрутка по секциям: перелистывание попадает туда, куда ожидаешь"
+          "note": "Прокрутка по секциям для комиксов, PDF, EPUB и текста: перелистывание попадает туда, куда ожидаешь"
         },
         "komga-kavita-native": {
           "label": "Нативный API Komga и Kavita",
@@ -2092,11 +2092,11 @@
           "note": "Плюс менеджер кеша загрузок"
         },
         "host-incremental-stream": {
-          "label": "Роль хоста: отдаёт поток по частям",
+          "label": "Хост BiblioFuse: раздаёт вашу библиотеку",
           "note": "Векторные страницы PDF, страницы комиксов EPUB, «ленивый» перетекающий EPUB"
         },
         "client-reads-host": {
-          "label": "Роль клиента: читает с хоста",
+          "label": "Приложение BiblioFuse: читает с вашего хоста",
           "note": "Обнаружение через Bonjour по HTTPS с закреплённым сертификатом"
         },
         "connection-routes": {

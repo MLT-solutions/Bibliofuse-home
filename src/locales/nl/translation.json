@@ -1988,9 +1988,9 @@
       }
     }
   },
-      "featureMatrix": {
-    "essentials": "Platformbasis",
-    "whereToGet": "Waar te krijgen",
+        "featureMatrix": {
+      "essentials": "Platformbasis",
+      "whereToGet": "Waar te krijgen",
       "sinceVersion": "sinds {{version}} · {{date}}",
       "sinceDate": "sinds {{date}}",
       "builtDate": "gebouwd op {{date}}",
@@ -2070,7 +2070,7 @@
         },
         "continuous-page-turn": {
           "label": "Doorlopende modus en bladeren herzien",
-          "note": "Scrollen per sectie; bladeren eindigt waar je het verwacht"
+          "note": "Scrollen per sectie voor strips, pdf, EPUB en tekst; bladeren eindigt waar je het verwacht"
         },
         "komga-kavita-native": {
           "label": "Native Komga- en Kavita-API",
@@ -2092,11 +2092,11 @@
           "note": "Met beheer van de downloadcache"
         },
         "host-incremental-stream": {
-          "label": "Hostrol: levert een incrementele stream",
+          "label": "BiblioFuse-host: streamt je eigen bibliotheek",
           "note": "Vector-pdf-pagina’s, EPUB-strippagina’s, EPUB met vloeiende tekst op aanvraag"
         },
         "client-reads-host": {
-          "label": "Clientrol: leest van een host",
+          "label": "BiblioFuse-app: leest van je host",
           "note": "Bonjour-detectie via HTTPS met vastgezet certificaat"
         },
         "connection-routes": {

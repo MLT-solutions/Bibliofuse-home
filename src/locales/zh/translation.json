@@ -1988,9 +1988,9 @@
       }
     }
   },
-      "featureMatrix": {
-    "essentials": "各平台概要",
-    "whereToGet": "获取方式",
+        "featureMatrix": {
+      "essentials": "各平台概要",
+      "whereToGet": "获取方式",
       "sinceVersion": "自 {{version}} · {{date}}",
       "sinceDate": "自 {{date}}",
       "builtDate": "完成于 {{date}}",
@@ -2070,7 +2070,7 @@
         },
         "continuous-page-turn": {
           "label": "连续模式与翻页重构",
-          "note": "按屏滚动；翻页停在预期位置"
+          "note": "漫画、PDF、EPUB 与文本均按屏滚动；翻页停在预期位置"
         },
         "komga-kavita-native": {
           "label": "原生 Komga 与 Kavita API",
@@ -2092,11 +2092,11 @@
           "note": "并提供下载缓存管理"
         },
         "host-incremental-stream": {
-          "label": "主机端：按需分片串流",
+          "label": "BiblioFuse 主机：串流你自己的图书馆",
           "note": "矢量 PDF 页、EPUB 漫画页、按需加载的可重排 EPUB"
         },
         "client-reads-host": {
-          "label": "客户端：从主机读取",
+          "label": "BiblioFuse 应用：从你的主机读取",
           "note": "通过固定证书 HTTPS 的 Bonjour 发现"
         },
         "connection-routes": {

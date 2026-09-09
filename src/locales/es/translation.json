@@ -1988,9 +1988,9 @@
       }
     }
   },
-      "featureMatrix": {
-    "essentials": "Lo esencial de cada plataforma",
-    "whereToGet": "Dónde conseguirlo",
+        "featureMatrix": {
+      "essentials": "Lo esencial de cada plataforma",
+      "whereToGet": "Dónde conseguirlo",
       "sinceVersion": "desde {{version}} · {{date}}",
       "sinceDate": "desde {{date}}",
       "builtDate": "desarrollado el {{date}}",
@@ -2070,7 +2070,7 @@
         },
         "continuous-page-turn": {
           "label": "Modo continuo y giro de página renovados",
-          "note": "Desplazamiento por secciones; el giro cae donde esperas"
+          "note": "Desplazamiento por secciones en cómics, PDF, EPUB y texto; el giro cae donde esperas"
         },
         "komga-kavita-native": {
           "label": "API nativa de Komga y Kavita",
@@ -2092,11 +2092,11 @@
           "note": "Con gestor de caché de descargas"
         },
         "host-incremental-stream": {
-          "label": "Como anfitrión: sirve un flujo incremental",
+          "label": "Host BiblioFuse: transmite tu propia biblioteca",
           "note": "Páginas PDF vectoriales, páginas de cómic EPUB, EPUB adaptable diferido"
         },
         "client-reads-host": {
-          "label": "Como cliente: lee desde un anfitrión",
+          "label": "App BiblioFuse: lee desde tu host",
           "note": "Detección Bonjour sobre HTTPS con certificado fijado"
         },
         "connection-routes": {

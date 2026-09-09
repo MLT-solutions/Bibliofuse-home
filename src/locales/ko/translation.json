@@ -1988,9 +1988,9 @@
       }
     }
   },
-      "featureMatrix": {
-    "essentials": "플랫폼 요약",
-    "whereToGet": "받는 곳",
+        "featureMatrix": {
+      "essentials": "플랫폼 요약",
+      "whereToGet": "받는 곳",
       "sinceVersion": "{{version}} 부터 · {{date}}",
       "sinceDate": "{{date}} 부터",
       "builtDate": "{{date}} 개발",
@@ -2070,7 +2070,7 @@
         },
         "continuous-page-turn": {
           "label": "연속 모드 & 페이지 넘김 개편",
-          "note": "화면 단위 스크롤. 페이지 넘김이 예상한 위치에 도착"
+          "note": "만화·PDF·EPUB·텍스트를 화면 단위로 스크롤. 페이지 넘김이 예상한 위치에 도착"
         },
         "komga-kavita-native": {
           "label": "Komga & Kavita 네이티브 API",
@@ -2092,11 +2092,11 @@
           "note": "다운로드 캐시 관리 기능 포함"
         },
         "host-incremental-stream": {
-          "label": "호스트 역할: 점진적 스트림 제공",
+          "label": "BiblioFuse 호스트: 내 라이브러리를 스트리밍",
           "note": "벡터 PDF 페이지, EPUB 만화 페이지, 지연 로딩 리플로 EPUB"
         },
         "client-reads-host": {
-          "label": "클라이언트 역할: 호스트에서 읽기",
+          "label": "BiblioFuse 앱: 내 호스트에서 읽기",
           "note": "인증서 고정 HTTPS 기반 Bonjour 검색"
         },
         "connection-routes": {

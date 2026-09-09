@@ -1988,9 +1988,9 @@
       }
     }
   },
-      "featureMatrix": {
-    "essentials": "Ringkasan platform",
-    "whereToGet": "Cara mendapatkan",
+        "featureMatrix": {
+      "essentials": "Ringkasan platform",
+      "whereToGet": "Cara mendapatkan",
       "sinceVersion": "sejak {{version}} · {{date}}",
       "sinceDate": "sejak {{date}}",
       "builtDate": "dibuat {{date}}",
@@ -2070,7 +2070,7 @@
         },
         "continuous-page-turn": {
           "label": "Mode berkelanjutan & balik halaman baru",
-          "note": "Gulir per bagian; balik halaman berhenti di tempat yang diharapkan"
+          "note": "Gulir per bagian untuk komik, PDF, EPUB, dan teks; balik halaman berhenti di tempat yang diharapkan"
         },
         "komga-kavita-native": {
           "label": "API asli Komga & Kavita",
@@ -2092,11 +2092,11 @@
           "note": "Plus pengelola cache unduhan"
         },
         "host-incremental-stream": {
-          "label": "Peran host: menyajikan stream bertahap",
+          "label": "Host BiblioFuse: streaming perpustakaan Anda sendiri",
           "note": "Halaman PDF vektor, halaman komik EPUB, EPUB reflowable bertahap"
         },
         "client-reads-host": {
-          "label": "Peran klien: membaca dari host",
+          "label": "Aplikasi BiblioFuse: membaca dari host Anda",
           "note": "Penemuan Bonjour lewat HTTPS dengan sertifikat tersemat"
         },
         "connection-routes": {

@@ -74,6 +74,12 @@
 // t(`featureMatrix.features.<id>.label`) with the inline string as defaultValue, so a
 // missing key degrades to English rather than to a raw key.
 //
+// ⚠ EDITING A LABEL HERE IS NOT ENOUGH once the locale key exists — i18next prefers the
+// locale value and ignores defaultValue, so the old wording keeps rendering. Two rows
+// were renamed here and shipped unchanged for exactly this reason. Change the string in
+// src/locales/en/translation.json too (and the other ten), or run
+// `node scripts/check-feature-matrix-i18n.mjs`, which fails when they disagree.
+//
 // `aliases` stay English-only. They are search keys, and users search product terms in
 // English (OPDS, RTL, tategaki, CBZ) whatever language the UI is in.
 

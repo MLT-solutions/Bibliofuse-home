@@ -1988,9 +1988,9 @@
       }
     }
   },
-      "featureMatrix": {
-    "essentials": "プラットフォーム概要",
-    "whereToGet": "入手方法",
+        "featureMatrix": {
+      "essentials": "プラットフォーム概要",
+      "whereToGet": "入手方法",
       "sinceVersion": "{{version}} 以降 · {{date}}",
       "sinceDate": "{{date}} 以降",
       "builtDate": "{{date}} に開発",
@@ -2070,7 +2070,7 @@
         },
         "continuous-page-turn": {
           "label": "連続モードとページ送りの刷新",
-          "note": "画面単位のスクロール。ページ送りが思った位置に着地"
+          "note": "マンガ・PDF・EPUB・テキストを画面単位でスクロール。ページ送りが思った位置に着地"
         },
         "komga-kavita-native": {
           "label": "Komga・Kavita ネイティブ API",
@@ -2092,11 +2092,11 @@
           "note": "ダウンロードキャッシュの管理付き"
         },
         "host-incremental-stream": {
-          "label": "ホスト側：逐次ストリームを配信",
+          "label": "BiblioFuse ホスト：自分のライブラリを配信",
           "note": "ベクター PDF ページ、EPUB コミックページ、遅延読み込みのリフロー EPUB"
         },
         "client-reads-host": {
-          "label": "クライアント側：ホストから読む",
+          "label": "BiblioFuse アプリ：自分のホストから読む",
           "note": "証明書ピン留め HTTPS 上の Bonjour 検出"
         },
         "connection-routes": {
