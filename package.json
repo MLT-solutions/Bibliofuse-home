@@ -9,8 +9,8 @@
     "build": "node scripts/check-feature-matrix-i18n.mjs && vite build && node scripts/generate-sitemap.js && node scripts/generate-static-routes.js && node scripts/prerender.js",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name=bibliofuse",
-    "check:i18n": "node scripts/check-feature-matrix-i18n.mjs"
+    "check:i18n": "node scripts/check-feature-matrix-i18n.mjs",
+    "deploy:manual": "npm run build && wrangler pages deploy dist --project-name=bibliofuse"
   },
   "dependencies": {
     "@zip.js/zip.js": "^2.13.1",

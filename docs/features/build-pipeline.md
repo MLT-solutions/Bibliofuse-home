@@ -4,13 +4,29 @@
 
 ## Hosting: Cloudflare Pages (2026-09-09)
 
-`npm run deploy` builds and then runs `wrangler pages deploy dist --project-name=bibliofuse`.
-It used to be `gh-pages -d dist`.
+Cloudflare builds and publishes from Git on every push to `main` (build command
+`npm run build`, output `dist`) — the same integration lokaltools.com uses, with no CLI
+login or stored credential. `npm run deploy:manual` is a wrangler fallback for hand
+publishes. It used to be `gh-pages -d dist`.
 
-Direct Upload rather than the Pages Git integration: the prerender step drives Puppeteer
-over ~890 pages and takes 10–15 minutes, against a 20-minute Pages build timeout on a
-build image that is a poor fit for Puppeteer. Building locally keeps the previous shape
-and removes that risk.
+Direct Upload was the original plan because the build took 13–15 minutes against a
+20-minute Pages timeout. Scoping the prerender step (below) cut that to under 4 minutes,
+which made the hosted build viable.
+
+### Prerender scope
+
+`prerender.js` renders only pages that are asking to be indexed. Prerendering exists to
+give non-JS crawlers real content; a page carrying `noindex` has no such crawler, and real
+visitors render it client-side either way. `generate-static-routes.js` writes the noindex
+tag into those files before this step, so skipping them loses no signal.
+
+The split was lopsided: 616 of 902 route/locale combinations (68%) were noindexed — seven
+entire locales plus the tool pages and retired app stubs — so most of the build was
+rendering pages nobody would crawl. Now 282 pages, matching the sitemap exactly.
+
+`INDEXED_LANGUAGES`, `NOINDEX_NON_EN_ROUTES` and `NOINDEX_ALL_LOCALES_ROUTES` are
+duplicated in `prerender.js` and `generate-static-routes.js` — keep them in sync, like the
+route lists.
 
 The move happened because GitHub Pages can neither issue 301s (needed when GrepTag and
 Comic Duplicate Scanner moved to mlogictech.com) nor set response headers (needed for the

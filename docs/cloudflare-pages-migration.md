@@ -1,7 +1,8 @@
 # Hosting migration: GitHub Pages → Cloudflare Pages
 
-**Status:** repo side is done and committed. **Two steps below need you** — they require
-an interactive login and dashboard access this session cannot reach.
+**Status:** repo side is done and committed. **The dashboard steps need you** — connecting
+the repo and attaching the domain. No CLI login and no credential to store: this uses the
+same Git integration lokaltools.com already deploys with.
 
 Supersedes `docs/cloudflare-redirects-greptag-archive.md`: those three redirects now live
 in `public/_redirects` and deploy with the site instead of being typed into the dashboard.
@@ -27,34 +28,48 @@ Vite copies into `dist/` on every build. lokaltools already runs this way.
 | `public/_headers` | COOP/COEP on `/*/tools/*`; immutable caching for `/wasm/*` and `/workers/*` |
 | `public/_redirects` | Phase 1 redirects + `/webapp/` → `/tools/` + `/qr-generator/` → `/tools/qr-generator/` |
 | `public/CNAME` | **deleted** — GitHub Pages only |
-| `package.json` | `deploy` is now `npm run build && wrangler pages deploy dist --project-name=bibliofuse`; `gh-pages` removed, `wrangler` added |
+| `package.json` | `gh-pages` removed; `deploy:manual` added as a wrangler fallback. Cloudflare runs `npm run build` itself. |
 | `vite.config.js` | dev server sends the same COOP/COEP so local behaviour matches production |
 
-**Direct Upload, not the Git integration.** The build runs Puppeteer over ~850 pages and
-takes 10–15 minutes; Cloudflare Pages' build timeout is 20 minutes and its build image is
-a poor fit for Puppeteer. Building locally and uploading `dist/` keeps the current shape
-and removes that risk entirely.
+**Git integration, same as lokaltools.com.** Connect the repo once in the dashboard and
+Cloudflare builds and publishes on every push to `main` — no CLI login, no API token, no
+credential to store. This is how lokaltools already deploys.
 
-## Step 1 — authenticate wrangler (you)
+This was originally planned as Direct Upload via `wrangler`, because the build drives
+Puppeteer over ~900 pages and took 13–15 minutes against Cloudflare's 20-minute build
+timeout. That is no longer true: the prerender step now skips noindexed pages (68% of the
+total), and a full build takes **3m40s**. Git integration fits comfortably.
 
-```bash
-npx wrangler login
+`npm run deploy:manual` still exists as a fallback — it needs `npx wrangler login` first,
+and is only worth reaching for if the hosted build misbehaves.
+
+## Step 1 — connect the repo (you)
+
+Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git** → this repo.
+
+| Setting | Value |
+|---|---|
+| Project name | `bibliofuse` |
+| Production branch | `main` |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+
+**One thing to watch on the first build:** the build runs Puppeteer, which downloads
+Chromium during install. Cloudflare's build image supports this, but if the first build
+fails on a missing Chromium, either set `PUPPETEER_SKIP_DOWNLOAD=false` in the project's
+environment variables, or fall back to `npm run deploy:manual` from your machine. Check
+the first build log rather than assuming it worked.
+
+## Step 2 — first build
+
+Push to `main` (or hit Retry deployment). Watch the log for:
+
+```
+✅ Prerendered 282/282 pages
 ```
 
-Opens a browser for OAuth. One time. Verify with `npx wrangler whoami`.
-
-## Step 2 — create the Pages project (you)
-
-In the Cloudflare dashboard: **Workers & Pages → Create → Pages → Direct Upload**, named
-**`bibliofuse`** (the name the deploy script passes).
-
-Then from the repo:
-
-```bash
-npm run deploy
-```
-
-This builds and uploads. It prints a `*.pages.dev` URL.
+If that line is missing or the count is short, the build failed by design — it refuses to
+publish incomplete SEO HTML. Do not proceed to the DNS step.
 
 ## Step 3 — verify on pages.dev BEFORE touching DNS
 
@@ -101,7 +116,7 @@ left alone or deleted once you are happy.
 ## Step 6 — only then, lokaltools
 
 The four tools stay live on lokaltools.com until bibliofuse.com is serving them, so the
-redirect targets always exist. See `docs/tools.md` for that follow-up.
+redirect targets always exist. See `docs/features/tools.md` for that follow-up.
 
 ## Rollback
 

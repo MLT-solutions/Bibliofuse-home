@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>BiblioFuse QR Code Generator</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #02050a; --surface: #0b1119; --text: #e2e8f0; --muted: #64748b; --accent: #0ea5e9; --accent-bright: #38bdf8; --line: #1e293b; --radius: 8px; --radius-sm: 6px; --danger: #ef4444; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+    .card { max-width: 520px; width: 100%; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; }
+    h1 { font-size: 20px; margin-bottom: 6px; }
+    p.desc { color: var(--muted); font-size: 13px; margin-bottom: 24px; line-height: 1.5; }
+    .field { display: flex; flex-direction: column; margin-bottom: 16px; color: var(--muted); font-size: 13px; }
+    .field input, .field select { margin-top: 4px; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: var(--text); font-size: 14px; }
+    .field input:focus, .field select:focus { outline: none; border-color: var(--accent); }
+    .secret-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; }
+    .hint { font-size: 11px; color: var(--muted); margin-top: 2px; display: block; }
+    .address-preview { font-family: ui-monospace, monospace; font-size: 13px; color: var(--accent-bright); margin: 8px 0; word-break: break-all; }
+    .warning { font-size: 11px; color: #ffd060; margin: 8px 0 16px; }
+    .actions { display: flex; gap: 8px; margin-bottom: 16px; }
+    .btn { padding: 10px 20px; border: none; border-radius: var(--radius-sm); font-size: 13px; font-weight: 600; cursor: pointer; }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-bright); }
+    .btn-quiet { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+    .btn-quiet:hover { color: var(--text); border-color: var(--muted); }
+    .btn-text { background: none; border: none; color: var(--accent); cursor: pointer; font-size: 13px; padding: 4px 0; }
+    .qr-result { text-align: center; margin-top: 16px; }
+    .qr-result canvas { max-width: 100%; }
+    .qr-address { margin-top: 8px; }
+    .qr-address code { font-size: 11px; word-break: break-all; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>BiblioFuse QR Code Generator</h1>
+    <p class="desc">Generate a QR code to add a Kavita or Komga server to BiblioFuse on your phone or tablet via local IP or Tailscale subnet access.</p>
+
+    <div class="field">
+      Display name (optional)
+      <input id="name" maxlength="64" placeholder="Home Kavita">
+    </div>
+    <div class="field">
+      Service type
+      <select id="type">
+        <option value="kavita">Kavita API</option>
+        <option value="komga">Komga API</option>
+      </select>
+    </div>
+    <div class="field">
+      Server URL
+      <input id="url" placeholder="http://192.168.0.123:5000" value="http://192.168.0.123:5000">
+    </div>
+    <div class="address-preview" id="preview"></div>
+    <div class="field">
+      API key (optional)
+      <div class="secret-row">
+        <input id="apikey" type="password" autocomplete="off" placeholder="sk_live_abc123">
+        <button class="btn-text" id="toggle-key">Show</button>
+      </div>
+      <span class="hint">Copy the API key from Kavita or Komga user/account settings.</span>
+    </div>
+    <p class="warning">This QR code contains your server address and authentication information. Do not share it publicly.</p>
+    <div class="actions">
+      <button class="btn btn-primary" id="generate">Generate QR code</button>
+      <button class="btn btn-quiet" id="clear">Clear</button>
+    </div>
+    <div class="qr-result" id="result"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script>
+    const typeEl = document.getElementById("type");
+    const urlEl = document.getElementById("url");
+    const previewEl = document.getElementById("preview");
+    const nameEl = document.getElementById("name");
+    const apikeyEl = document.getElementById("apikey");
+    const resultEl = document.getElementById("result");
+
+    function updatePreview() {
+      if (previewEl) previewEl.textContent = urlEl.value || "http://192.168.0.123:5000";
+    }
+    urlEl.addEventListener("input", updatePreview);
+    typeEl.addEventListener("change", function () {
+      urlEl.value = typeEl.value === "kavita" ? "http://192.168.0.123:5000" : "http://192.168.0.123:25600";
+      updatePreview();
+    });
+    updatePreview();
+
+    document.getElementById("toggle-key").addEventListener("click", function () {
+      var btn = this;
+      if (apikeyEl.type === "password") { apikeyEl.type = "text"; btn.textContent = "Hide"; }
+      else { apikeyEl.type = "password"; btn.textContent = "Show"; }
+    });
+
+    document.getElementById("generate").addEventListener("click", function () {
+      var url = urlEl.value.trim();
+      if (!url) { alert("Please enter a server URL."); return; }
+      var name = nameEl.value.trim();
+      var kind = typeEl.value;
+      var key = apikeyEl.value.trim();
+      var params = new URLSearchParams();
+      params.set("address", url);
+      if (name) params.set("name", name);
+      params.set("kind", kind);
+      if (key) params.set("apikey", key);
+      var data = "bibliofuse://add-server?" + params.toString();
+
+      resultEl.innerHTML = '<div id="qr-img"></div><p class="qr-address"><code>' + url + '</code></p>';
+      setTimeout(function () {
+        var img = document.getElementById("qr-img");
+        if (!img || !window.qrcode) return;
+        img.innerHTML = "";
+        var qr = window.qrcode(0, "M");
+        qr.addData(data);
+        qr.make();
+        var canvas = document.createElement("canvas");
+        var size = 260;
+        canvas.width = size;
+        canvas.height = size;
+        img.appendChild(canvas);
+        var ctx = canvas.getContext("2d");
+        var cellSize = 4;
+        var mods = qr.getModuleCount();
+        var drawSize = mods * cellSize;
+        var offset = Math.floor((size - drawSize) / 2);
+        ctx.fillStyle = "#fff";
+        ctx.fillRect(0, 0, size, size);
+        ctx.save();
+        ctx.translate(offset, offset);
+        qr.renderTo2dContext(ctx, cellSize);
+        ctx.restore();
+      }, 50);
+    });
+
+    document.getElementById("clear").addEventListener("click", function () {
+      resultEl.innerHTML = "";
+    });
+  </script>
+</body>
+</html>

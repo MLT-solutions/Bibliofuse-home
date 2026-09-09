@@ -27,9 +27,41 @@ const MAX_RETRIES = 3;
 const PAGE_LOAD_TIMEOUT_MS = Number(process.env.PRERENDER_PAGE_LOAD_TIMEOUT_MS || 60000);
 const SEO_READY_TIMEOUT_MS = Number(process.env.PRERENDER_SEO_READY_TIMEOUT_MS || 60000);
 
+// Prerender only the pages that are actually asking to be indexed.
+//
+// Prerendering exists so crawlers that don't run JavaScript see real content instead of
+// the blank SPA shell. A page carrying `noindex` has no such crawler to serve: Google is
+// told to skip it, and real visitors run JS and get the same rendered result either way.
+// generate-static-routes.js already writes the noindex tag directly into those files
+// before this step runs, so skipping them loses no signal.
+//
+// This matters because the split is lopsided. Of 902 route/locale combinations, 616 (68%)
+// were noindexed — 7 entire locales plus the tool pages and retired app stubs — so more
+// than two thirds of a 13-15 minute build was spent rendering pages nobody would ever
+// crawl. Skipping them cuts the build to ~286 pages.
+//
+// Keep these two sets in sync with generate-static-routes.js.
+const INDEXED_LANGUAGES = ['en', 'es', 'fr', 'ja'];
+const NOINDEX_NON_EN_ROUTES = new Set([
+    '/tools', '/tools/cbz-reducer', '/tools/epub-reducer', '/tools/pdf-to-cbz',
+    '/tools/pdf-to-jpg', '/tools/qr-generator',
+    '/smartdecrypt/changelog', '/smartdecrypt/privacy',
+    '/contentcue/changelog', '/contentcue/privacy',
+]);
+const NOINDEX_ALL_LOCALES_ROUTES = new Set(['/androidrequest', '/smartdecrypt', '/contentcue']);
+
+function isIndexed(lang, route) {
+    if (!INDEXED_LANGUAGES.includes(lang)) return false;
+    if (NOINDEX_ALL_LOCALES_ROUTES.has(route)) return false;
+    if (lang !== 'en' && NOINDEX_NON_EN_ROUTES.has(route)) return false;
+    return true;
+}
+
 const jobs = [];
+let skipped = 0;
 for (const lang of SUPPORTED_LANGUAGES) {
     for (const route of ROUTES) {
+        if (!isIndexed(lang, route)) { skipped += 1; continue; }
         const urlPath = route === '/' ? `/${lang}/` : `/${lang}${route}/`;
         const file = route === '/' ? join(distDir, lang, 'index.html') : join(distDir, lang, route.slice(1), 'index.html');
         jobs.push({ urlPath, file, lang });
@@ -120,7 +152,7 @@ async function main() {
 
     const browser = await puppeteer.launch({ headless: true });
 
-    console.log(`🖨  Prerendering ${jobs.length} pages (concurrency ${CONCURRENCY})...`);
+    console.log(`🖨  Prerendering ${jobs.length} indexable pages (concurrency ${CONCURRENCY}); skipped ${skipped} noindexed`);
     const results = await runPool(browser, baseUrl, jobs);
 
     await browser.close();
