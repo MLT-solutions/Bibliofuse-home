@@ -1988,12 +1988,14 @@
       }
     }
   },
-    "featureMatrix": {
-    "sinceVersion": "sinds {{version}} · {{date}}",
-    "sinceDate": "sinds {{date}}",
-    "builtDate": "gebouwd op {{date}}",
-    "countAll": "{{n}} functies",
-    "countFiltered": "{{n}} van {{total}} functies",
+      "featureMatrix": {
+    "essentials": "Platformbasis",
+    "whereToGet": "Waar te krijgen",
+      "sinceVersion": "sinds {{version}} · {{date}}",
+      "sinceDate": "sinds {{date}}",
+      "builtDate": "gebouwd op {{date}}",
+      "countAll": "{{n}} functies",
+      "countFiltered": "{{n}} van {{total}} functies",
       "eyebrow": "Functiematrix",
       "title": "Wat werkt waar",
       "subtitle": "Elke BiblioFuse-functie, op elk platform, met de versie waarin die kwam. Zoek of filter om te vinden wat je nodig hebt.",
@@ -2111,16 +2113,9 @@
           "label": "Scrollen met je blik",
           "note": "Scrollen aan de rand met je blik"
         },
-        "localisation": {
-          "label": "Vertaald in 12 talen"
-        },
         "text-to-speech": {
           "label": "Voorlezen",
           "note": "Zinnen markeren, bediening op vergrendelscherm, slaaptimer"
-        },
-        "ocr-text-extraction": {
-          "label": "Tekstextractie met OCR",
-          "note": "Haalt selecteerbare tekst uit een gescande pagina"
         },
         "reading-progress-restore": {
           "label": "Verder waar je gebleven was",
@@ -2138,10 +2133,6 @@
           "label": "Gestreamde boeken bewerken en opslaan",
           "note": "Tags en beoordeling op de host wijzigen, of lokaal een kopie bewaren"
         },
-        "home-screen-widget": {
-          "label": "Widget op het beginscherm",
-          "note": "Ga direct terug naar wat je aan het lezen was"
-        },
         "app-lock": {
           "label": "App-vergrendeling",
           "note": "Bibliotheek achter een pincode"
@@ -2149,6 +2140,88 @@
         "spatial-library": {
           "label": "Ruimtelijke bibliotheek",
           "note": "Doorzoek boekenkasten in de ruimte om je heen"
+        }
+      },
+      "specs": {
+        "read-formats": {
+          "label": "Ondersteunde formaten",
+          "values": {
+            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "tvos": "CBZ · CBR · RAR · ZIP",
+            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "androidtv": "CBZ · CBR · RAR · ZIP",
+            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          },
+          "notes": {
+            "tvos": "Alleen strips — geen tekstlezer",
+            "androidtv": "Alleen strips — geen tekstlezer",
+            "nas": "Browserlezer; nog geen pdf"
+          }
+        },
+        "library-sources": {
+          "label": "Bibliotheekbronnen",
+          "values": {
+            "ios": "Lokaal · iCloud · een BiblioFuse-host",
+            "macos": "Lokaal · iCloud · SMB / NAS",
+            "visionos": "Lokaal · iCloud · een BiblioFuse-host",
+            "tvos": "Alleen een BiblioFuse-host",
+            "android": "Lokaal · externe mappen",
+            "androidtv": "Alleen een BiblioFuse-host",
+            "windows": "Lokaal · iCloud · SMB / NAS",
+            "nas": "Eigen aangesloten of netwerkopslag"
+          },
+          "notes": {
+            "nas": "Geen iCloud"
+          }
+        },
+        "icloud-bookshelf": {
+          "label": "iCloud-boekenkast",
+          "note": "Je bibliotheek reist mee tussen apparaten",
+          "values": {
+            "ios": "Synchronisatie tussen apparaten",
+            "macos": "Synchronisatie tussen apparaten",
+            "visionos": "Synchronisatie tussen apparaten",
+            "windows": "Synchronisatie tussen apparaten"
+          },
+          "notes": {
+            "tvos": "Geen iCloud op Apple TV"
+          }
+        },
+        "reader-features": {
+          "label": "Lezerfuncties",
+          "values": {
+            "ios": "Voorlezen · snelzoom · autoscroll · voortgang · beoordelingen · tags",
+            "macos": "Voorlezen · autoscroll · voortgang · beoordelingen · tags",
+            "visionos": "Voorlezen · autoscroll · voortgang · beoordelingen · tags",
+            "tvos": "Autoscroll · voortgang · beoordelingen · tags",
+            "android": "Voorlezen · snelzoom · autoscroll · voortgang · beoordelingen · tags",
+            "androidtv": "Autoscroll · voortgang · beoordelingen · tags",
+            "windows": "Voorlezen · autoscroll · voortgang · beoordelingen · tags",
+            "nas": "Doorlopend scrollen · voortgang · beoordelingen · tags"
+          },
+          "notes": {
+            "nas": "Geen voorlezen of snelzoom"
+          }
+        },
+        "interface-languages": {
+          "label": "Interfacetalen",
+          "values": {
+            "ios": "11 talen",
+            "macos": "11 talen",
+            "visionos": "11 talen",
+            "tvos": "11 talen",
+            "android": "12 talen",
+            "androidtv": "12 talen",
+            "windows": "11 talen",
+            "nas": "11 talen"
+          },
+          "notes": {
+            "android": "Plus Duits",
+            "androidtv": "Plus Duits"
+          }
         }
       }
     }

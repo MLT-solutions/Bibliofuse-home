@@ -1988,12 +1988,14 @@
       }
     }
   },
-    "featureMatrix": {
-    "sinceVersion": "desde {{version}} · {{date}}",
-    "sinceDate": "desde {{date}}",
-    "builtDate": "desenvolvido em {{date}}",
-    "countAll": "{{n}} recursos",
-    "countFiltered": "{{n}} de {{total}} recursos",
+      "featureMatrix": {
+    "essentials": "Essenciais da plataforma",
+    "whereToGet": "Onde obter",
+      "sinceVersion": "desde {{version}} · {{date}}",
+      "sinceDate": "desde {{date}}",
+      "builtDate": "desenvolvido em {{date}}",
+      "countAll": "{{n}} recursos",
+      "countFiltered": "{{n}} de {{total}} recursos",
       "eyebrow": "Matriz de recursos",
       "title": "O que funciona onde",
       "subtitle": "Todos os recursos do BiblioFuse, em cada plataforma, com a versão em que chegaram. Pesquise ou filtre para achar o que importa.",
@@ -2111,16 +2113,9 @@
           "label": "Rolar com o olhar",
           "note": "Rolagem pelas bordas com o olhar"
         },
-        "localisation": {
-          "label": "Localização em 12 idiomas"
-        },
         "text-to-speech": {
           "label": "Leitura em voz alta",
           "note": "Destaque de frases, controles na tela de bloqueio, timer"
-        },
-        "ocr-text-extraction": {
-          "label": "Extração de texto com OCR",
-          "note": "Extrai texto selecionável de uma página digitalizada"
         },
         "reading-progress-restore": {
           "label": "Retome de onde parou",
@@ -2138,10 +2133,6 @@
           "label": "Editar e salvar livros em streaming",
           "note": "Altere etiquetas e avaliação no host, ou salve uma cópia local"
         },
-        "home-screen-widget": {
-          "label": "Widget na tela inicial",
-          "note": "Volte direto para o que você estava lendo"
-        },
         "app-lock": {
           "label": "Bloqueio do app",
           "note": "Acesso à biblioteca com PIN"
@@ -2149,6 +2140,88 @@
         "spatial-library": {
           "label": "Biblioteca espacial",
           "note": "Navegue por estantes dispostas no ambiente"
+        }
+      },
+      "specs": {
+        "read-formats": {
+          "label": "Formatos de leitura",
+          "values": {
+            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "tvos": "CBZ · CBR · RAR · ZIP",
+            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "androidtv": "CBZ · CBR · RAR · ZIP",
+            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          },
+          "notes": {
+            "tvos": "Somente quadrinhos — sem leitor de texto",
+            "androidtv": "Somente quadrinhos — sem leitor de texto",
+            "nas": "Leitor no navegador; ainda sem PDF"
+          }
+        },
+        "library-sources": {
+          "label": "Fontes da biblioteca",
+          "values": {
+            "ios": "Local · iCloud · um host BiblioFuse",
+            "macos": "Local · iCloud · SMB / NAS",
+            "visionos": "Local · iCloud · um host BiblioFuse",
+            "tvos": "Somente um host BiblioFuse",
+            "android": "Local · pastas externas",
+            "androidtv": "Somente um host BiblioFuse",
+            "windows": "Local · iCloud · SMB / NAS",
+            "nas": "Seu próprio armazenamento conectado ou de rede"
+          },
+          "notes": {
+            "nas": "Não iCloud"
+          }
+        },
+        "icloud-bookshelf": {
+          "label": "Estante no iCloud",
+          "note": "Sua biblioteca acompanha você entre dispositivos",
+          "values": {
+            "ios": "Sincronização entre dispositivos",
+            "macos": "Sincronização entre dispositivos",
+            "visionos": "Sincronização entre dispositivos",
+            "windows": "Sincronização entre dispositivos"
+          },
+          "notes": {
+            "tvos": "Sem iCloud na Apple TV"
+          }
+        },
+        "reader-features": {
+          "label": "Recursos do leitor",
+          "values": {
+            "ios": "Voz · zoom rápido · rolagem automática · progresso · avaliações · etiquetas",
+            "macos": "Voz · rolagem automática · progresso · avaliações · etiquetas",
+            "visionos": "Voz · rolagem automática · progresso · avaliações · etiquetas",
+            "tvos": "Rolagem automática · progresso · avaliações · etiquetas",
+            "android": "Voz · zoom rápido · rolagem automática · progresso · avaliações · etiquetas",
+            "androidtv": "Rolagem automática · progresso · avaliações · etiquetas",
+            "windows": "Voz · rolagem automática · progresso · avaliações · etiquetas",
+            "nas": "Rolagem contínua · progresso · avaliações · etiquetas"
+          },
+          "notes": {
+            "nas": "Sem voz nem zoom rápido"
+          }
+        },
+        "interface-languages": {
+          "label": "Idiomas da interface",
+          "values": {
+            "ios": "11 idiomas",
+            "macos": "11 idiomas",
+            "visionos": "11 idiomas",
+            "tvos": "11 idiomas",
+            "android": "12 idiomas",
+            "androidtv": "12 idiomas",
+            "windows": "11 idiomas",
+            "nas": "11 idiomas"
+          },
+          "notes": {
+            "android": "Adiciona alemão",
+            "androidtv": "Adiciona alemão"
+          }
         }
       }
     }

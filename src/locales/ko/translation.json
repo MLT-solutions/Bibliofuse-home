@@ -1988,12 +1988,14 @@
       }
     }
   },
-    "featureMatrix": {
-    "sinceVersion": "{{version}} 부터 · {{date}}",
-    "sinceDate": "{{date}} 부터",
-    "builtDate": "{{date}} 개발",
-    "countAll": "기능 {{n}}개",
-    "countFiltered": "전체 {{total}}개 중 {{n}}개",
+      "featureMatrix": {
+    "essentials": "플랫폼 요약",
+    "whereToGet": "받는 곳",
+      "sinceVersion": "{{version}} 부터 · {{date}}",
+      "sinceDate": "{{date}} 부터",
+      "builtDate": "{{date}} 개발",
+      "countAll": "기능 {{n}}개",
+      "countFiltered": "전체 {{total}}개 중 {{n}}개",
       "eyebrow": "기능 매트릭스",
       "title": "어디서 무엇이 되는지",
       "subtitle": "BiblioFuse의 모든 기능을 플랫폼별로, 도입된 버전과 함께 정리했습니다. 검색하거나 필터로 원하는 기능을 찾아보세요.",
@@ -2111,16 +2113,9 @@
           "label": "시선으로 스크롤",
           "note": "시선으로 화면 가장자리 스크롤"
         },
-        "localisation": {
-          "label": "12개 언어 지원"
-        },
         "text-to-speech": {
           "label": "음성 읽기",
           "note": "문장 하이라이트, 잠금 화면 조작, 슬립 타이머"
-        },
-        "ocr-text-extraction": {
-          "label": "OCR 텍스트 추출",
-          "note": "스캔한 페이지에서 선택 가능한 텍스트 추출"
         },
         "reading-progress-restore": {
           "label": "읽던 곳부터 이어보기",
@@ -2138,10 +2133,6 @@
           "label": "스트리밍 도서 편집 및 저장",
           "note": "호스트에서 태그·평점을 변경하거나 로컬에 복사본 저장"
         },
-        "home-screen-widget": {
-          "label": "홈 화면 위젯",
-          "note": "읽던 책으로 바로 돌아가기"
-        },
         "app-lock": {
           "label": "앱 잠금",
           "note": "라이브러리를 PIN으로 보호"
@@ -2149,6 +2140,88 @@
         "spatial-library": {
           "label": "공간 라이브러리",
           "note": "방 안에 배치된 책장을 둘러보기"
+        }
+      },
+      "specs": {
+        "read-formats": {
+          "label": "지원 형식",
+          "values": {
+            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "tvos": "CBZ · CBR · RAR · ZIP",
+            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "androidtv": "CBZ · CBR · RAR · ZIP",
+            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          },
+          "notes": {
+            "tvos": "만화 전용 — 텍스트 리더 없음",
+            "androidtv": "만화 전용 — 텍스트 리더 없음",
+            "nas": "브라우저 리더. PDF는 아직 미지원"
+          }
+        },
+        "library-sources": {
+          "label": "라이브러리 소스",
+          "values": {
+            "ios": "로컬 · iCloud · BiblioFuse 호스트",
+            "macos": "로컬 · iCloud · SMB / NAS",
+            "visionos": "로컬 · iCloud · BiblioFuse 호스트",
+            "tvos": "BiblioFuse 호스트만",
+            "android": "로컬 · 외부 폴더",
+            "androidtv": "BiblioFuse 호스트만",
+            "windows": "로컬 · iCloud · SMB / NAS",
+            "nas": "자체 연결 저장소 또는 네트워크 저장소"
+          },
+          "notes": {
+            "nas": "iCloud 제외"
+          }
+        },
+        "icloud-bookshelf": {
+          "label": "iCloud 책장",
+          "note": "기기 간에 라이브러리가 따라옵니다",
+          "values": {
+            "ios": "기기 간 동기화",
+            "macos": "기기 간 동기화",
+            "visionos": "기기 간 동기화",
+            "windows": "기기 간 동기화"
+          },
+          "notes": {
+            "tvos": "Apple TV에는 iCloud가 없습니다"
+          }
+        },
+        "reader-features": {
+          "label": "리더 기능",
+          "values": {
+            "ios": "음성 읽기 · 피크 줌 · 자동 스크롤 · 진행률 · 평점 · 태그",
+            "macos": "음성 읽기 · 자동 스크롤 · 진행률 · 평점 · 태그",
+            "visionos": "음성 읽기 · 자동 스크롤 · 진행률 · 평점 · 태그",
+            "tvos": "자동 스크롤 · 진행률 · 평점 · 태그",
+            "android": "음성 읽기 · 피크 줌 · 자동 스크롤 · 진행률 · 평점 · 태그",
+            "androidtv": "자동 스크롤 · 진행률 · 평점 · 태그",
+            "windows": "음성 읽기 · 자동 스크롤 · 진행률 · 평점 · 태그",
+            "nas": "연속 스크롤 · 진행률 · 평점 · 태그"
+          },
+          "notes": {
+            "nas": "음성 읽기와 피크 줌 없음"
+          }
+        },
+        "interface-languages": {
+          "label": "인터페이스 언어",
+          "values": {
+            "ios": "11개 언어",
+            "macos": "11개 언어",
+            "visionos": "11개 언어",
+            "tvos": "11개 언어",
+            "android": "12개 언어",
+            "androidtv": "12개 언어",
+            "windows": "11개 언어",
+            "nas": "11개 언어"
+          },
+          "notes": {
+            "android": "독일어 추가",
+            "androidtv": "독일어 추가"
+          }
         }
       }
     }

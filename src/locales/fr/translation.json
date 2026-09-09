@@ -1988,12 +1988,14 @@
       }
     }
   },
-    "featureMatrix": {
-    "sinceVersion": "depuis {{version}} · {{date}}",
-    "sinceDate": "depuis {{date}}",
-    "builtDate": "développé le {{date}}",
-    "countAll": "{{n}} fonctions",
-    "countFiltered": "{{n}} sur {{total}} fonctions",
+      "featureMatrix": {
+    "essentials": "L’essentiel par plateforme",
+    "whereToGet": "Où l’obtenir",
+      "sinceVersion": "depuis {{version}} · {{date}}",
+      "sinceDate": "depuis {{date}}",
+      "builtDate": "développé le {{date}}",
+      "countAll": "{{n}} fonctions",
+      "countFiltered": "{{n}} sur {{total}} fonctions",
       "eyebrow": "Matrice des fonctions",
       "title": "Ce qui marche où",
       "subtitle": "Toutes les fonctions de BiblioFuse, sur chaque plateforme, avec la version qui les a apportées. Cherchez ou filtrez pour trouver la vôtre.",
@@ -2111,16 +2113,9 @@
           "label": "Défilement au regard",
           "note": "Défilement au bord de l’écran par le regard"
         },
-        "localisation": {
-          "label": "Localisation en 12 langues"
-        },
         "text-to-speech": {
           "label": "Lecture à voix haute",
           "note": "Surlignage des phrases, commandes sur écran verrouillé, minuteur"
-        },
-        "ocr-text-extraction": {
-          "label": "Extraction de texte par OCR",
-          "note": "Extrait du texte sélectionnable d’une page scannée"
         },
         "reading-progress-restore": {
           "label": "Reprendre où vous en étiez",
@@ -2138,10 +2133,6 @@
           "label": "Modifier et enregistrer les livres diffusés",
           "note": "Modifiez étiquettes et note sur l’hôte, ou enregistrez une copie locale"
         },
-        "home-screen-widget": {
-          "label": "Widget sur l’écran d’accueil",
-          "note": "Reprenez directement votre lecture"
-        },
         "app-lock": {
           "label": "Verrouillage de l’app",
           "note": "Accès à la bibliothèque par code PIN"
@@ -2149,6 +2140,88 @@
         "spatial-library": {
           "label": "Bibliothèque spatiale",
           "note": "Parcourez des étagères placées dans la pièce"
+        }
+      },
+      "specs": {
+        "read-formats": {
+          "label": "Formats pris en charge",
+          "values": {
+            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "tvos": "CBZ · CBR · RAR · ZIP",
+            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "androidtv": "CBZ · CBR · RAR · ZIP",
+            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          },
+          "notes": {
+            "tvos": "BD uniquement — pas de lecteur de texte",
+            "androidtv": "BD uniquement — pas de lecteur de texte",
+            "nas": "Lecteur navigateur ; pas encore de PDF"
+          }
+        },
+        "library-sources": {
+          "label": "Sources de bibliothèque",
+          "values": {
+            "ios": "Local · iCloud · un hôte BiblioFuse",
+            "macos": "Local · iCloud · SMB / NAS",
+            "visionos": "Local · iCloud · un hôte BiblioFuse",
+            "tvos": "Un hôte BiblioFuse uniquement",
+            "android": "Local · dossiers externes",
+            "androidtv": "Un hôte BiblioFuse uniquement",
+            "windows": "Local · iCloud · SMB / NAS",
+            "nas": "Son propre stockage local ou réseau"
+          },
+          "notes": {
+            "nas": "Pas iCloud"
+          }
+        },
+        "icloud-bookshelf": {
+          "label": "Bibliothèque iCloud",
+          "note": "Votre bibliothèque vous suit d’un appareil à l’autre",
+          "values": {
+            "ios": "Synchronisation multi-appareils",
+            "macos": "Synchronisation multi-appareils",
+            "visionos": "Synchronisation multi-appareils",
+            "windows": "Synchronisation multi-appareils"
+          },
+          "notes": {
+            "tvos": "Pas d’iCloud sur Apple TV"
+          }
+        },
+        "reader-features": {
+          "label": "Fonctions du lecteur",
+          "values": {
+            "ios": "Synthèse vocale · zoom rapide · défilement auto · progression · notes · étiquettes",
+            "macos": "Synthèse vocale · défilement auto · progression · notes · étiquettes",
+            "visionos": "Synthèse vocale · défilement auto · progression · notes · étiquettes",
+            "tvos": "Défilement auto · progression · notes · étiquettes",
+            "android": "Synthèse vocale · zoom rapide · défilement auto · progression · notes · étiquettes",
+            "androidtv": "Défilement auto · progression · notes · étiquettes",
+            "windows": "Synthèse vocale · défilement auto · progression · notes · étiquettes",
+            "nas": "Défilement continu · progression · notes · étiquettes"
+          },
+          "notes": {
+            "nas": "Ni synthèse vocale ni zoom rapide"
+          }
+        },
+        "interface-languages": {
+          "label": "Langues de l’interface",
+          "values": {
+            "ios": "11 langues",
+            "macos": "11 langues",
+            "visionos": "11 langues",
+            "tvos": "11 langues",
+            "android": "12 langues",
+            "androidtv": "12 langues",
+            "windows": "11 langues",
+            "nas": "11 langues"
+          },
+          "notes": {
+            "android": "Ajoute l’allemand",
+            "androidtv": "Ajoute l’allemand"
+          }
         }
       }
     }

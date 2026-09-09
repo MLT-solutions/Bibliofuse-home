@@ -151,6 +151,123 @@ export function releaseFor(platformId, since) {
   return hit ? hit[0] : null;
 }
 
+// ── Where to get it ─────────────────────────────────────────────────────────
+//
+// One entry per platform. `kind` picks the badge art; `label` is used where a store
+// badge does not exist (the NAS links). URLs mirror the ones ComicReader.jsx uses —
+// keep them in step.
+export const STORES = {
+  ios: { kind: 'apple', url: 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093' },
+  macos: { kind: 'apple', url: 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093' },
+  visionos: { kind: 'apple', url: 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093' },
+  tvos: { kind: 'apple', url: 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093' },
+  android: { kind: 'play', url: 'https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ' },
+  androidtv: { kind: 'play', url: 'https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ' },
+  windows: { kind: 'microsoft', url: 'https://apps.microsoft.com/store/detail/9N77MZ509ML2' },
+  nas: { kind: 'link', label: 'Docker / Synology', url: 'https://github.com/MLT-solutions/bibliofuse-nas-distribution' },
+};
+
+// ── Platform essentials ─────────────────────────────────────────────────────
+//
+// Text-valued rows, not ●/—. These answer "what does this edition actually give me"
+// before the boolean grid answers "does it do feature X", and they carry the facts a
+// tick cannot express — which formats, which library sources, how many languages.
+//
+// Sourced from the comparison table on /comicreader so the two pages cannot disagree;
+// that table is the canonical wording. `null` renders as "—".
+export const SPECS = [
+  {
+    id: 'read-formats',
+    label: 'Read formats',
+    note: null,
+    pro: false,
+    aliases: ['format', 'EPUB', 'PDF', 'CBZ', 'CBR', 'RAR', 'ZIP', 'TXT', 'file type', 'supported'],
+    values: {
+      ios: 'EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT',
+      macos: 'EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT',
+      visionos: 'EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT',
+      tvos: 'CBZ · CBR · RAR · ZIP',
+      android: 'EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT',
+      androidtv: 'CBZ · CBR · RAR · ZIP',
+      windows: 'EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT',
+      nas: 'EPUB · CBZ · CBR · RAR · ZIP · TXT',
+    },
+    notes: { tvos: 'Comics only — no text reader', androidtv: 'Comics only — no text reader', nas: 'Browser reader; no PDF yet' },
+  },
+  {
+    id: 'library-sources',
+    label: 'Library sources',
+    note: null,
+    pro: false,
+    aliases: ['source', 'local', 'iCloud', 'SMB', 'network', 'folder', 'storage', 'where'],
+    values: {
+      ios: 'Local · iCloud · a BiblioFuse host',
+      macos: 'Local · iCloud · SMB / NAS',
+      visionos: 'Local · iCloud · a BiblioFuse host',
+      tvos: 'A BiblioFuse host only',
+      android: 'Local · external folders',
+      androidtv: 'A BiblioFuse host only',
+      windows: 'Local · iCloud · SMB / NAS',
+      nas: 'Its own attached or network storage',
+    },
+    notes: { nas: 'Not iCloud' },
+  },
+  {
+    id: 'icloud-bookshelf',
+    label: 'iCloud bookshelf',
+    note: 'Your library follows you between devices',
+    pro: true,
+    aliases: ['iCloud', 'sync', 'cross-device', 'cloud', 'bookshelf', 'between devices'],
+    values: {
+      ios: 'Cross-device sync',
+      macos: 'Cross-device sync',
+      visionos: 'Cross-device sync',
+      tvos: null,
+      android: null,
+      androidtv: null,
+      windows: 'Cross-device sync',
+      nas: null,
+    },
+    notes: { tvos: 'No iCloud on Apple TV' },
+  },
+  {
+    id: 'reader-features',
+    label: 'Reader features',
+    note: null,
+    pro: false,
+    aliases: ['peek zoom', 'auto-scroll', 'progress', 'ratings', 'tags', 'TTS', 'reader'],
+    values: {
+      ios: 'TTS · peek zoom · auto-scroll · progress · ratings · tags',
+      macos: 'TTS · auto-scroll · progress · ratings · tags',
+      visionos: 'TTS · auto-scroll · progress · ratings · tags',
+      tvos: 'Auto-scroll · progress · ratings · tags',
+      android: 'TTS · peek zoom · auto-scroll · progress · ratings · tags',
+      androidtv: 'Auto-scroll · progress · ratings · tags',
+      windows: 'TTS · auto-scroll · progress · ratings · tags',
+      nas: 'Continuous scroll · progress · ratings · tags',
+    },
+    notes: { nas: 'No TTS or peek zoom' },
+  },
+  {
+    id: 'interface-languages',
+    label: 'Interface languages',
+    note: null,
+    pro: false,
+    aliases: ['language', 'localisation', 'localization', 'i18n', 'translated'],
+    values: {
+      ios: '11 languages',
+      macos: '11 languages',
+      visionos: '11 languages',
+      tvos: '11 languages',
+      android: '12 languages',
+      androidtv: '12 languages',
+      windows: '11 languages',
+      nas: '11 languages',
+    },
+    notes: { android: 'Adds German', androidtv: 'Adds German' },
+  },
+];
+
 // Shorthand builders. No version argument by design — see the header: the release is
 // derived from `since` via releaseFor(), so it cannot drift out of step with the date.
 const s = (since, noteKey = null) => ({ status: 'shipped', since, noteKey });
@@ -308,7 +425,7 @@ export const FEATURES = [
     id: 'continuous-page-turn',
     group: 'reading',
     label: 'Continuous-mode & page-turn rewrite',
-    note: 'Section scrolling; turns land where you expect',
+    note: 'Section scrolling for comics, PDF, EPUB and text; turns land where you expect',
     pro: false,
     aliases: ['continuous', 'webtoon', 'long strip', 'scroll', 'fit width', 'auto-scroll', 'page down', 'vertical scroll'],
     platforms: {
@@ -329,7 +446,7 @@ export const FEATURES = [
     group: 'libraries',
     label: 'Native Komga & Kavita API',
     note: 'Series detail, tag chips, badges, server-side sort/search',
-    pro: false,
+    pro: true,
     aliases: ['Komga', 'Kavita', 'self-hosted', 'remote library', 'catalog', 'server', 'collections', 'reading lists', 'want to read'],
     platforms: {
       ios: s('2026-08-06'),
@@ -347,7 +464,7 @@ export const FEATURES = [
     group: 'libraries',
     label: 'OPDS 1.x + OPDS-PSE streaming',
     note: 'Comics a page at a time. OPDS 2.0 is not supported.',
-    pro: false,
+    pro: true,
     aliases: ['OPDS', 'PSE', 'page streaming', 'Calibre-Web', 'Calibre', 'COPS', 'Ubooquity', 'catalog feed', 'Atom'],
     platforms: {
       ios: s('2026-08-04'),
@@ -365,7 +482,7 @@ export const FEATURES = [
     group: 'libraries',
     label: 'Kavita position & bookmark sync',
     note: null,
-    pro: false,
+    pro: true,
     aliases: ['bookmark', 'resume', 'reading position', 'progress sync', 'continue reading', 'cross-device'],
     platforms: {
       ios: s('2026-08-13'),
@@ -419,7 +536,7 @@ export const FEATURES = [
   {
     id: 'host-incremental-stream',
     group: 'streaming',
-    label: 'Host role: serves an incremental stream',
+    label: 'BiblioFuse host: streams your own library',
     note: 'Vector PDF pages, comic EPUB pages, lazy reflowable EPUB',
     pro: false,
     aliases: ['host', 'server', 'serve', 'stream PDF', 'stream EPUB', 'incremental', 'page serving', 'range requests'],
@@ -437,7 +554,7 @@ export const FEATURES = [
   {
     id: 'client-reads-host',
     group: 'streaming',
-    label: 'Client role: reads from a host',
+    label: 'BiblioFuse app: reads from your host',
     note: 'Bonjour discovery over pinned HTTPS',
     pro: true,
     aliases: ['Bonjour', 'discovery', 'pinned HTTPS', 'LAN', 'stream from Mac', 'stream from PC', 'stream from NAS', 'mDNS'],
@@ -526,24 +643,6 @@ export const FEATURES = [
       nas: na,
     },
   },
-  {
-    id: 'localisation',
-    group: 'input',
-    label: '12-language localisation',
-    note: null,
-    pro: false,
-    aliases: ['language', 'localization', 'i18n', 'Japanese', 'Chinese', 'Korean', 'Spanish', 'French', 'German', 'Russian', 'Portuguese', 'Dutch', 'Indonesian', 'Malay'],
-    platforms: {
-      ios: s('2026-05-09'),
-      macos: s('2026-05-09'),
-      visionos: s('2026-07-11'),
-      tvos: s('2026-07-15'),
-      android: s('2026-07-22'),
-      androidtv: s('2026-07-22'),
-      windows: s('2026-06-09'),
-      nas: s('2026-07-26'),
-    },
-  },
   // ── Backfilled 2026-09-09: features predating the July harvest window ─────
   // Dates are first-add or porting commits in each platform's own repository.
   {
@@ -561,24 +660,6 @@ export const FEATURES = [
       android: s('2026-07-21'),
       androidtv: na,
       windows: s('2026-06-08'),
-      nas: na,
-    },
-  },
-  {
-    id: 'ocr-text-extraction',
-    group: 'reading',
-    label: 'OCR text extraction',
-    note: 'Pull selectable text out of a scanned page',
-    pro: true,
-    aliases: ['OCR', 'scan', 'recognise text', 'recognize text', 'copy text', 'Vision', 'searchable', 'extract'],
-    platforms: {
-      ios: s('2026-05-10'),
-      macos: s('2026-05-10'),
-      visionos: na,
-      tvos: na,
-      android: na,
-      androidtv: na,
-      windows: na,
       nas: na,
     },
   },
@@ -655,24 +736,6 @@ export const FEATURES = [
     },
   },
   {
-    id: 'home-screen-widget',
-    group: 'input',
-    label: 'Home-screen widget',
-    note: 'Jump back into what you were reading',
-    pro: false,
-    aliases: ['widget', 'home screen', 'lock screen', 'shortcut', 'continue reading'],
-    platforms: {
-      ios: s('2026-05-10'),
-      macos: na,
-      visionos: na,
-      tvos: na,
-      android: na,
-      androidtv: na,
-      windows: na,
-      nas: na,
-    },
-  },
-  {
     id: 'app-lock',
     group: 'input',
     label: 'App lock',
@@ -684,7 +747,7 @@ export const FEATURES = [
       macos: na,
       visionos: na,
       tvos: s('2026-07-15'),
-      android: s('2026-07-22'),
+      android: na,
       androidtv: s('2026-07-22'),
       windows: na,
       nas: na,

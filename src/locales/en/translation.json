@@ -1991,12 +1991,14 @@
       "unknown": "Unknown"
     }
   },
-    "featureMatrix": {
-    "sinceVersion": "since {{version}} · {{date}}",
-    "sinceDate": "since {{date}}",
-    "builtDate": "built {{date}}",
-    "countAll": "{{n}} features",
-    "countFiltered": "{{n}} of {{total}} features",
+      "featureMatrix": {
+    "essentials": "Platform essentials",
+    "whereToGet": "Where to get it",
+      "sinceVersion": "since {{version}} · {{date}}",
+      "sinceDate": "since {{date}}",
+      "builtDate": "built {{date}}",
+      "countAll": "{{n}} features",
+      "countFiltered": "{{n}} of {{total}} features",
       "eyebrow": "Feature matrix",
       "title": "What runs where",
       "subtitle": "Every BiblioFuse feature, on every platform, with the release it arrived in. Search or filter to find the one you care about.",
@@ -2114,16 +2116,9 @@
           "label": "Look to Scroll",
           "note": "Gaze-driven edge scrolling"
         },
-        "localisation": {
-          "label": "12-language localisation"
-        },
         "text-to-speech": {
           "label": "Text-to-speech reader",
           "note": "Sentence highlighting, lock-screen controls, sleep timer"
-        },
-        "ocr-text-extraction": {
-          "label": "OCR text extraction",
-          "note": "Pull selectable text out of a scanned page"
         },
         "reading-progress-restore": {
           "label": "Resume where you left off",
@@ -2141,10 +2136,6 @@
           "label": "Edit and save streamed books",
           "note": "Change tags and rating on the host, or save a copy locally"
         },
-        "home-screen-widget": {
-          "label": "Home-screen widget",
-          "note": "Jump back into what you were reading"
-        },
         "app-lock": {
           "label": "App lock",
           "note": "PIN gate on the library"
@@ -2152,6 +2143,88 @@
         "spatial-library": {
           "label": "Spatial library",
           "note": "Browse shelves placed in the room around you"
+        }
+      },
+      "specs": {
+        "read-formats": {
+          "label": "Read formats",
+          "values": {
+            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "tvos": "CBZ · CBR · RAR · ZIP",
+            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "androidtv": "CBZ · CBR · RAR · ZIP",
+            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          },
+          "notes": {
+            "tvos": "Comics only — no text reader",
+            "androidtv": "Comics only — no text reader",
+            "nas": "Browser reader; no PDF yet"
+          }
+        },
+        "library-sources": {
+          "label": "Library sources",
+          "values": {
+            "ios": "Local · iCloud · a BiblioFuse host",
+            "macos": "Local · iCloud · SMB / NAS",
+            "visionos": "Local · iCloud · a BiblioFuse host",
+            "tvos": "A BiblioFuse host only",
+            "android": "Local · external folders",
+            "androidtv": "A BiblioFuse host only",
+            "windows": "Local · iCloud · SMB / NAS",
+            "nas": "Its own attached or network storage"
+          },
+          "notes": {
+            "nas": "Not iCloud"
+          }
+        },
+        "icloud-bookshelf": {
+          "label": "iCloud bookshelf",
+          "note": "Your library follows you between devices",
+          "values": {
+            "ios": "Cross-device sync",
+            "macos": "Cross-device sync",
+            "visionos": "Cross-device sync",
+            "windows": "Cross-device sync"
+          },
+          "notes": {
+            "tvos": "No iCloud on Apple TV"
+          }
+        },
+        "reader-features": {
+          "label": "Reader features",
+          "values": {
+            "ios": "TTS · peek zoom · auto-scroll · progress · ratings · tags",
+            "macos": "TTS · auto-scroll · progress · ratings · tags",
+            "visionos": "TTS · auto-scroll · progress · ratings · tags",
+            "tvos": "Auto-scroll · progress · ratings · tags",
+            "android": "TTS · peek zoom · auto-scroll · progress · ratings · tags",
+            "androidtv": "Auto-scroll · progress · ratings · tags",
+            "windows": "TTS · auto-scroll · progress · ratings · tags",
+            "nas": "Continuous scroll · progress · ratings · tags"
+          },
+          "notes": {
+            "nas": "No TTS or peek zoom"
+          }
+        },
+        "interface-languages": {
+          "label": "Interface languages",
+          "values": {
+            "ios": "11 languages",
+            "macos": "11 languages",
+            "visionos": "11 languages",
+            "tvos": "11 languages",
+            "android": "12 languages",
+            "androidtv": "12 languages",
+            "windows": "11 languages",
+            "nas": "11 languages"
+          },
+          "notes": {
+            "android": "Adds German",
+            "androidtv": "Adds German"
+          }
         }
       }
     }

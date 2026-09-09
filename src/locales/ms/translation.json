@@ -1988,12 +1988,14 @@
       }
     }
   },
-    "featureMatrix": {
-    "sinceVersion": "sejak {{version}} · {{date}}",
-    "sinceDate": "sejak {{date}}",
-    "builtDate": "dibina {{date}}",
-    "countAll": "{{n}} ciri",
-    "countFiltered": "{{n}} daripada {{total}} ciri",
+      "featureMatrix": {
+    "essentials": "Ringkasan platform",
+    "whereToGet": "Cara mendapatkan",
+      "sinceVersion": "sejak {{version}} · {{date}}",
+      "sinceDate": "sejak {{date}}",
+      "builtDate": "dibina {{date}}",
+      "countAll": "{{n}} ciri",
+      "countFiltered": "{{n}} daripada {{total}} ciri",
       "eyebrow": "Matriks ciri",
       "title": "Apa berfungsi di mana",
       "subtitle": "Setiap ciri BiblioFuse, pada setiap platform, dengan versi ketika ia hadir. Cari atau tapis untuk mencari yang anda perlukan.",
@@ -2111,16 +2113,9 @@
           "label": "Tatal dengan pandangan",
           "note": "Tatal di tepi skrin dengan pandangan"
         },
-        "localisation": {
-          "label": "Penyetempatan 12 bahasa"
-        },
         "text-to-speech": {
           "label": "Pembacaan suara",
           "note": "Sorot ayat, kawalan skrin kunci, pemasa tidur"
-        },
-        "ocr-text-extraction": {
-          "label": "Pengekstrakan teks OCR",
-          "note": "Ambil teks boleh pilih daripada halaman imbasan"
         },
         "reading-progress-restore": {
           "label": "Sambung dari tempat terakhir",
@@ -2138,10 +2133,6 @@
           "label": "Edit dan simpan buku strim",
           "note": "Ubah tag dan penilaian pada hos, atau simpan salinan setempat"
         },
-        "home-screen-widget": {
-          "label": "Widget skrin utama",
-          "note": "Terus kembali ke bacaan terakhir"
-        },
         "app-lock": {
           "label": "Kunci apl",
           "note": "Perpustakaan dilindungi PIN"
@@ -2149,6 +2140,88 @@
         "spatial-library": {
           "label": "Perpustakaan spatial",
           "note": "Layari rak yang diletakkan di ruang sekeliling"
+        }
+      },
+      "specs": {
+        "read-formats": {
+          "label": "Format yang dibaca",
+          "values": {
+            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "tvos": "CBZ · CBR · RAR · ZIP",
+            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "androidtv": "CBZ · CBR · RAR · ZIP",
+            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          },
+          "notes": {
+            "tvos": "Hanya komik — tiada pembaca teks",
+            "androidtv": "Hanya komik — tiada pembaca teks",
+            "nas": "Pembaca dalam pelayar; belum ada PDF"
+          }
+        },
+        "library-sources": {
+          "label": "Sumber perpustakaan",
+          "values": {
+            "ios": "Setempat · iCloud · hos BiblioFuse",
+            "macos": "Setempat · iCloud · SMB / NAS",
+            "visionos": "Setempat · iCloud · hos BiblioFuse",
+            "tvos": "Hanya hos BiblioFuse",
+            "android": "Setempat · folder luaran",
+            "androidtv": "Hanya hos BiblioFuse",
+            "windows": "Setempat · iCloud · SMB / NAS",
+            "nas": "Storan terpasang atau rangkaiannya sendiri"
+          },
+          "notes": {
+            "nas": "Bukan iCloud"
+          }
+        },
+        "icloud-bookshelf": {
+          "label": "Rak buku iCloud",
+          "note": "Perpustakaan anda mengikut antara peranti",
+          "values": {
+            "ios": "Penyegerakan antara peranti",
+            "macos": "Penyegerakan antara peranti",
+            "visionos": "Penyegerakan antara peranti",
+            "windows": "Penyegerakan antara peranti"
+          },
+          "notes": {
+            "tvos": "Apple TV tiada iCloud"
+          }
+        },
+        "reader-features": {
+          "label": "Ciri pembaca",
+          "values": {
+            "ios": "TTS · zum sekilas · tatal automatik · kemajuan · penilaian · tag",
+            "macos": "TTS · tatal automatik · kemajuan · penilaian · tag",
+            "visionos": "TTS · tatal automatik · kemajuan · penilaian · tag",
+            "tvos": "Tatal automatik · kemajuan · penilaian · tag",
+            "android": "TTS · zum sekilas · tatal automatik · kemajuan · penilaian · tag",
+            "androidtv": "Tatal automatik · kemajuan · penilaian · tag",
+            "windows": "TTS · tatal automatik · kemajuan · penilaian · tag",
+            "nas": "Tatal berterusan · kemajuan · penilaian · tag"
+          },
+          "notes": {
+            "nas": "Tiada TTS atau zum sekilas"
+          }
+        },
+        "interface-languages": {
+          "label": "Bahasa antara muka",
+          "values": {
+            "ios": "11 bahasa",
+            "macos": "11 bahasa",
+            "visionos": "11 bahasa",
+            "tvos": "11 bahasa",
+            "android": "12 bahasa",
+            "androidtv": "12 bahasa",
+            "windows": "11 bahasa",
+            "nas": "11 bahasa"
+          },
+          "notes": {
+            "android": "Menambah bahasa Jerman",
+            "androidtv": "Menambah bahasa Jerman"
+          }
         }
       }
     }

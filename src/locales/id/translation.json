@@ -1988,12 +1988,14 @@
       }
     }
   },
-    "featureMatrix": {
-    "sinceVersion": "sejak {{version}} · {{date}}",
-    "sinceDate": "sejak {{date}}",
-    "builtDate": "dibuat {{date}}",
-    "countAll": "{{n}} fitur",
-    "countFiltered": "{{n}} dari {{total}} fitur",
+      "featureMatrix": {
+    "essentials": "Ringkasan platform",
+    "whereToGet": "Cara mendapatkan",
+      "sinceVersion": "sejak {{version}} · {{date}}",
+      "sinceDate": "sejak {{date}}",
+      "builtDate": "dibuat {{date}}",
+      "countAll": "{{n}} fitur",
+      "countFiltered": "{{n}} dari {{total}} fitur",
       "eyebrow": "Matriks fitur",
       "title": "Apa yang jalan di mana",
       "subtitle": "Semua fitur BiblioFuse, di setiap platform, beserta versi saat fitur itu hadir. Cari atau filter untuk menemukan yang Anda butuhkan.",
@@ -2111,16 +2113,9 @@
           "label": "Gulir dengan pandangan",
           "note": "Gulir di tepi layar dengan pandangan"
         },
-        "localisation": {
-          "label": "Lokalisasi 12 bahasa"
-        },
         "text-to-speech": {
           "label": "Pembacaan suara",
           "note": "Sorot kalimat, kontrol layar kunci, timer tidur"
-        },
-        "ocr-text-extraction": {
-          "label": "Ekstraksi teks OCR",
-          "note": "Ambil teks yang bisa diseleksi dari halaman hasil pindai"
         },
         "reading-progress-restore": {
           "label": "Lanjutkan dari tempat terakhir",
@@ -2138,10 +2133,6 @@
           "label": "Edit dan simpan buku streaming",
           "note": "Ubah tag dan rating di host, atau simpan salinan lokal"
         },
-        "home-screen-widget": {
-          "label": "Widget layar utama",
-          "note": "Langsung kembali ke bacaan terakhir"
-        },
         "app-lock": {
           "label": "Kunci aplikasi",
           "note": "Perpustakaan dilindungi PIN"
@@ -2149,6 +2140,88 @@
         "spatial-library": {
           "label": "Perpustakaan spasial",
           "note": "Jelajahi rak yang ditempatkan di ruangan sekitar"
+        }
+      },
+      "specs": {
+        "read-formats": {
+          "label": "Format yang dibaca",
+          "values": {
+            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "tvos": "CBZ · CBR · RAR · ZIP",
+            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "androidtv": "CBZ · CBR · RAR · ZIP",
+            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          },
+          "notes": {
+            "tvos": "Hanya komik — tanpa pembaca teks",
+            "androidtv": "Hanya komik — tanpa pembaca teks",
+            "nas": "Pembaca di browser; belum ada PDF"
+          }
+        },
+        "library-sources": {
+          "label": "Sumber perpustakaan",
+          "values": {
+            "ios": "Lokal · iCloud · host BiblioFuse",
+            "macos": "Lokal · iCloud · SMB / NAS",
+            "visionos": "Lokal · iCloud · host BiblioFuse",
+            "tvos": "Hanya host BiblioFuse",
+            "android": "Lokal · folder eksternal",
+            "androidtv": "Hanya host BiblioFuse",
+            "windows": "Lokal · iCloud · SMB / NAS",
+            "nas": "Penyimpanan terpasang atau jaringannya sendiri"
+          },
+          "notes": {
+            "nas": "Bukan iCloud"
+          }
+        },
+        "icloud-bookshelf": {
+          "label": "Rak buku iCloud",
+          "note": "Perpustakaan Anda ikut berpindah antar perangkat",
+          "values": {
+            "ios": "Sinkronisasi antar perangkat",
+            "macos": "Sinkronisasi antar perangkat",
+            "visionos": "Sinkronisasi antar perangkat",
+            "windows": "Sinkronisasi antar perangkat"
+          },
+          "notes": {
+            "tvos": "Apple TV tidak punya iCloud"
+          }
+        },
+        "reader-features": {
+          "label": "Fitur pembaca",
+          "values": {
+            "ios": "TTS · zoom sekilas · gulir otomatis · progres · rating · tag",
+            "macos": "TTS · gulir otomatis · progres · rating · tag",
+            "visionos": "TTS · gulir otomatis · progres · rating · tag",
+            "tvos": "Gulir otomatis · progres · rating · tag",
+            "android": "TTS · zoom sekilas · gulir otomatis · progres · rating · tag",
+            "androidtv": "Gulir otomatis · progres · rating · tag",
+            "windows": "TTS · gulir otomatis · progres · rating · tag",
+            "nas": "Gulir berkelanjutan · progres · rating · tag"
+          },
+          "notes": {
+            "nas": "Tanpa TTS atau zoom sekilas"
+          }
+        },
+        "interface-languages": {
+          "label": "Bahasa antarmuka",
+          "values": {
+            "ios": "11 bahasa",
+            "macos": "11 bahasa",
+            "visionos": "11 bahasa",
+            "tvos": "11 bahasa",
+            "android": "12 bahasa",
+            "androidtv": "12 bahasa",
+            "windows": "11 bahasa",
+            "nas": "11 bahasa"
+          },
+          "notes": {
+            "android": "Menambah bahasa Jerman",
+            "androidtv": "Menambah bahasa Jerman"
+          }
         }
       }
     }

@@ -7,7 +7,10 @@ import {
   PLATFORMS,
   GROUPS,
   searchFeatures,
+  searchIndex,
   releaseFor,
+  SPECS,
+  STORES,
 } from '../data/feature-matrix';
 
 // English fallbacks. The live strings come from src/locales/<lang>/translation.json
@@ -38,10 +41,14 @@ const COPY = {
   legendMerged: 'Not yet released',
   legendNa: 'Not on this platform',
   proBadge: 'Pro',
+  featureColumn: 'Feature',
+  essentials: 'Platform essentials',
+  whereToGet: 'Where to get it',
+  notYet: 'not yet',
   mergedNote:
     'Rows marked “not yet” are built but are not in a public release for that platform.',
   coverage:
-    'Covers features released July 2026 onward. Earlier features are still being added.',
+    'Covers the native apps from May 2026 onward. Earlier Flutter-era releases are not listed.',
 };
 
 // "Changed since" presets, resolved against today rather than hard-coded dates.
@@ -105,6 +112,65 @@ function Cell({ cell, platformId, platformLabel, featureLabel, highlighted, tr }
           {version}
         </span>
       )}
+    </td>
+  );
+}
+
+// Same badge art and sizing as the /comicreader comparison table, so the two pages
+// read as one product rather than two designs.
+function StoreLink({ platformId }) {
+  const store = STORES[platformId];
+  if (!store) return null;
+  if (store.kind === 'link') {
+    return (
+      <a
+        href={store.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[11px] font-semibold text-blue-600 hover:text-blue-700"
+      >
+        {store.label} →
+      </a>
+    );
+  }
+  const src =
+    store.kind === 'microsoft'
+      ? '/image/Microsoft_Store_badge.svg'
+      : store.kind === 'play'
+        ? '/image/Playstore.png'
+        : '/image/Download_on_the_App_Store_Badge.svg.png';
+  const alt =
+    store.kind === 'microsoft'
+      ? 'Get it from Microsoft'
+      : store.kind === 'play'
+        ? 'Get it on Google Play'
+        : 'Download on the App Store';
+  return (
+    <a
+      href={store.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex transition hover:-translate-y-0.5"
+    >
+      <img src={src} alt={alt} className="h-8 w-auto object-contain" />
+    </a>
+  );
+}
+
+/** A text-valued cell from SPECS. Renders "—" for a null value. */
+function SpecCell({ value, note }) {
+  if (!value) {
+    return (
+      <td className="px-2 py-3 text-center align-middle">
+        <span className="text-lg leading-none text-slate-200" aria-hidden="true">—</span>
+        <span className="sr-only">—</span>
+      </td>
+    );
+  }
+  return (
+    <td className="px-2 py-3 text-center align-middle">
+      <span className="block text-[11px] font-medium leading-snug text-slate-700">{value}</span>
+      {note && <span className="mt-0.5 block text-[10px] leading-tight text-slate-400">{note}</span>}
     </td>
   );
 }
@@ -212,6 +278,36 @@ export default function FeatureMatrix() {
     return out;
   }, [query, activeGroups, proOnly, showMerged, columns, sinceDate]);
 
+  // Specs answer "what is this edition" and are filtered by the same search, so a
+  // query for "EPUB" or "iCloud" surfaces them alongside the boolean rows.
+  const specRows = useMemo(() => {
+    const visible = new Set(columns.map((c) => c.id));
+    let out = SPECS;
+    if (proOnly) out = out.filter((sp) => sp.pro);
+    const q = query.trim().toLowerCase();
+    if (q) {
+      const terms = q.split(/\s+/).filter(Boolean);
+      out = out.filter((sp) => {
+        const hay = [
+          sp.label,
+          sp.note ?? '',
+          ...sp.aliases,
+          ...Object.values(sp.values).filter(Boolean),
+        ]
+          .join(' ')
+          .toLowerCase();
+        return terms.every((t) =>
+          new RegExp(`(^|[^a-z0-9])${t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'i').test(hay),
+        );
+      });
+    }
+    // A date filter is asking "what changed"; specs carry no dates, so they drop out.
+    if (sinceDate) return [];
+    // Narrowing to a category is asking about the boolean groups only.
+    if (activeGroups.length) return [];
+    return out.filter((sp) => Object.entries(sp.values).some(([pid, v]) => visible.has(pid) && v));
+  }, [query, proOnly, columns, sinceDate, activeGroups]);
+
   const grouped = useMemo(
     () =>
       GROUPS.map((g) => ({ ...g, features: rows.filter((f) => f.group === g.id) })).filter(
@@ -222,6 +318,8 @@ export default function FeatureMatrix() {
 
   const isFiltered =
     Boolean(query) || Boolean(since) || proOnly || activePlatforms.length > 0 || activeGroups.length > 0;
+  const shownCount = rows.length + specRows.length;
+  const totalCount = FEATURES.length + SPECS.length;
 
   const highlight = sinceDate
     ? (cell) => Boolean(cell.since && cell.since >= sinceDate)
@@ -338,12 +436,12 @@ export default function FeatureMatrix() {
                 {isFiltered
                   ? t('featureMatrix.countFiltered', {
                       defaultValue: COPY.countFiltered,
-                      n: rows.length,
-                      total: FEATURES.length,
+                      n: shownCount,
+                      total: totalCount,
                     })
                   : t('featureMatrix.countAll', {
                       defaultValue: COPY.countAll,
-                      n: FEATURES.length,
+                      n: totalCount,
                     })}
               </span>
               {isFiltered && (
@@ -360,20 +458,27 @@ export default function FeatureMatrix() {
         </div>
 
         {/* Table */}
-        {grouped.length === 0 ? (
+        {grouped.length === 0 && specRows.length === 0 ? (
           <div className="rounded-3xl bg-white p-12 text-center shadow-sm ring-1 ring-slate-100">
             <p className="text-base font-semibold text-slate-900">{tr('noResults')}</p>
             <p className="mt-1 text-sm text-slate-500">{tr('noResultsHint')}</p>
           </div>
         ) : (
           <div className="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-slate-100">
-            <div className="overflow-x-auto">
+            {/* The table is its own scroll region on BOTH axes. `overflow-x: auto`
+                computes `overflow-y` to `auto` as well, so a header sticking against
+                the viewport can never work here — it sticks to this container instead.
+                Giving the container a viewport-relative height makes that the useful
+                behaviour: the header pins while the rows scroll under it. */}
+            <div className="max-h-[calc(100vh-7rem)] overflow-auto">
               <table className="w-full min-w-[720px] border-collapse text-left">
                 <thead>
-                  <tr className="border-b border-slate-100">
+                  {/* sticky-top keeps the platform names visible for the whole scroll;
+                      top-16 clears the fixed site navigation. */}
+                  <tr className="shadow-[0_1px_0_0_rgb(241_245_249)]">
                     <th
                       scope="col"
-                      className="sticky left-0 z-10 bg-white px-5 py-4 text-xs font-bold uppercase tracking-wider text-slate-400"
+                      className="sticky left-0 top-0 z-30 bg-white px-5 py-4 text-xs font-bold uppercase tracking-wider text-slate-400"
                     >
                       {tr('featureColumn')}
                     </th>
@@ -381,16 +486,81 @@ export default function FeatureMatrix() {
                       <th
                         key={p.id}
                         scope="col"
-                        className="px-2 py-4 text-center text-xs font-bold text-slate-600"
+                        className="sticky top-0 z-20 bg-white px-2 py-4 text-center text-xs font-bold text-slate-600"
                       >
                         {p.label}
                         <span className="mt-0.5 block text-[10px] font-medium tabular-nums text-slate-400">
                           {p.version}
                         </span>
+                        {p.sublabel && (
+                          <span className="block text-[9px] font-medium text-slate-400">{p.sublabel}</span>
+                        )}
                       </th>
                     ))}
                   </tr>
                 </thead>
+
+                {/* Store links, then the text-valued essentials, then the boolean grid. */}
+                <tbody>
+                  <tr className="border-t border-slate-50">
+                    <th
+                      scope="row"
+                      className="sticky left-0 z-10 bg-white px-5 py-3 text-left text-xs font-bold uppercase tracking-wider text-slate-400"
+                    >
+                      {tr('whereToGet')}
+                    </th>
+                    {columns.map((p) => (
+                      <td key={p.id} className="px-2 py-3 text-center align-middle">
+                        <StoreLink platformId={p.id} />
+                      </td>
+                    ))}
+                  </tr>
+                </tbody>
+
+                {specRows.length > 0 && (
+                  <tbody>
+                    <tr>
+                      <th
+                        scope="colgroup"
+                        colSpan={columns.length + 1}
+                        className="sticky left-0 z-10 bg-slate-50 px-5 py-2 text-left text-[11px] font-bold uppercase tracking-[0.12em] text-slate-400"
+                      >
+                        {tr('essentials')}
+                      </th>
+                    </tr>
+                    {specRows.map((sp) => (
+                      <tr key={sp.id} className="border-t border-slate-50 hover:bg-slate-50/50">
+                        <th
+                          scope="row"
+                          className="sticky left-0 z-10 max-w-xs bg-white px-5 py-3 text-left font-normal hover:bg-slate-50/50"
+                        >
+                          <span className="flex flex-wrap items-center gap-1.5">
+                            <span className="text-sm font-semibold text-slate-900">
+                              {tr(`specs.${sp.id}.label`, sp.label)}
+                            </span>
+                            {sp.pro && (
+                              <span className="rounded bg-blue-50 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-blue-700 ring-1 ring-blue-100">
+                                {tr('proBadge')}
+                              </span>
+                            )}
+                          </span>
+                          {sp.note && (
+                            <span className="mt-0.5 block text-xs leading-snug text-slate-400">
+                              {tr(`specs.${sp.id}.note`, sp.note)}
+                            </span>
+                          )}
+                        </th>
+                        {columns.map((p) => (
+                          <SpecCell
+                            key={p.id}
+                            value={tr(`specs.${sp.id}.values.${p.id}`, sp.values[p.id] ?? '')}
+                            note={sp.notes?.[p.id] ? tr(`specs.${sp.id}.notes.${p.id}`, sp.notes[p.id]) : null}
+                          />
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                )}
 
                 {grouped.map((group) => (
                   <tbody key={group.id}>
@@ -398,7 +568,7 @@ export default function FeatureMatrix() {
                       <th
                         scope="colgroup"
                         colSpan={columns.length + 1}
-                        className="bg-slate-50/80 px-5 py-2 text-left text-[11px] font-bold uppercase tracking-[0.12em] text-slate-400"
+                        className="sticky left-0 z-10 bg-slate-50 px-5 py-2 text-left text-[11px] font-bold uppercase tracking-[0.12em] text-slate-400"
                       >
                         {tr(`groups.${group.id}`, group.label)}
                       </th>

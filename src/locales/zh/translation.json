@@ -1988,12 +1988,14 @@
       }
     }
   },
-    "featureMatrix": {
-    "sinceVersion": "自 {{version}} · {{date}}",
-    "sinceDate": "自 {{date}}",
-    "builtDate": "完成于 {{date}}",
-    "countAll": "{{n}} 项功能",
-    "countFiltered": "{{total}} 项中的 {{n}} 项",
+      "featureMatrix": {
+    "essentials": "各平台概要",
+    "whereToGet": "获取方式",
+      "sinceVersion": "自 {{version}} · {{date}}",
+      "sinceDate": "自 {{date}}",
+      "builtDate": "完成于 {{date}}",
+      "countAll": "{{n}} 项功能",
+      "countFiltered": "{{total}} 项中的 {{n}} 项",
       "eyebrow": "功能对照表",
       "title": "各平台功能一览",
       "subtitle": "BiblioFuse 的每项功能、每个平台，以及它们出现的版本。搜索或筛选即可找到你关心的功能。",
@@ -2111,16 +2113,9 @@
           "label": "视线滚动",
           "note": "注视屏幕边缘即可滚动"
         },
-        "localisation": {
-          "label": "12 种语言本地化"
-        },
         "text-to-speech": {
           "label": "朗读功能",
           "note": "句子高亮、锁屏控制、睡眠定时"
-        },
-        "ocr-text-extraction": {
-          "label": "OCR 文字提取",
-          "note": "从扫描页中提取可选中的文字"
         },
         "reading-progress-restore": {
           "label": "从上次位置继续",
@@ -2138,10 +2133,6 @@
           "label": "编辑并保存串流书籍",
           "note": "在主机上修改标签与评分，或保存本地副本"
         },
-        "home-screen-widget": {
-          "label": "主屏幕小组件",
-          "note": "一键回到正在读的书"
-        },
         "app-lock": {
           "label": "应用锁",
           "note": "图书馆 PIN 码保护"
@@ -2149,6 +2140,88 @@
         "spatial-library": {
           "label": "空间图书馆",
           "note": "浏览摆放在房间中的书架"
+        }
+      },
+      "specs": {
+        "read-formats": {
+          "label": "可读格式",
+          "values": {
+            "ios": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "macos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "visionos": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "tvos": "CBZ · CBR · RAR · ZIP",
+            "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "androidtv": "CBZ · CBR · RAR · ZIP",
+            "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
+            "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          },
+          "notes": {
+            "tvos": "仅漫画 — 无文本阅读器",
+            "androidtv": "仅漫画 — 无文本阅读器",
+            "nas": "浏览器阅读器；暂不支持 PDF"
+          }
+        },
+        "library-sources": {
+          "label": "图书馆来源",
+          "values": {
+            "ios": "本地 · iCloud · BiblioFuse 主机",
+            "macos": "本地 · iCloud · SMB / NAS",
+            "visionos": "本地 · iCloud · BiblioFuse 主机",
+            "tvos": "仅 BiblioFuse 主机",
+            "android": "本地 · 外部文件夹",
+            "androidtv": "仅 BiblioFuse 主机",
+            "windows": "本地 · iCloud · SMB / NAS",
+            "nas": "其自身的挂载或网络存储"
+          },
+          "notes": {
+            "nas": "不含 iCloud"
+          }
+        },
+        "icloud-bookshelf": {
+          "label": "iCloud 书架",
+          "note": "你的图书馆在设备间同步",
+          "values": {
+            "ios": "跨设备同步",
+            "macos": "跨设备同步",
+            "visionos": "跨设备同步",
+            "windows": "跨设备同步"
+          },
+          "notes": {
+            "tvos": "Apple TV 无 iCloud"
+          }
+        },
+        "reader-features": {
+          "label": "阅读器功能",
+          "values": {
+            "ios": "朗读 · 速览缩放 · 自动滚动 · 进度 · 评分 · 标签",
+            "macos": "朗读 · 自动滚动 · 进度 · 评分 · 标签",
+            "visionos": "朗读 · 自动滚动 · 进度 · 评分 · 标签",
+            "tvos": "自动滚动 · 进度 · 评分 · 标签",
+            "android": "朗读 · 速览缩放 · 自动滚动 · 进度 · 评分 · 标签",
+            "androidtv": "自动滚动 · 进度 · 评分 · 标签",
+            "windows": "朗读 · 自动滚动 · 进度 · 评分 · 标签",
+            "nas": "连续滚动 · 进度 · 评分 · 标签"
+          },
+          "notes": {
+            "nas": "无朗读与速览缩放"
+          }
+        },
+        "interface-languages": {
+          "label": "界面语言",
+          "values": {
+            "ios": "11 种语言",
+            "macos": "11 种语言",
+            "visionos": "11 种语言",
+            "tvos": "11 种语言",
+            "android": "12 种语言",
+            "androidtv": "12 种语言",
+            "windows": "11 种语言",
+            "nas": "11 种语言"
+          },
+          "notes": {
+            "android": "增加德语",
+            "androidtv": "增加德语"
+          }
         }
       }
     }
