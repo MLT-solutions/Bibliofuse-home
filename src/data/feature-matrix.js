@@ -544,7 +544,15 @@ export const FEATURES = [
     group: 'streaming',
     label: 'BiblioFuse host: streams your own library',
     note: 'Vector PDF pages, comic EPUB pages, lazy reflowable EPUB',
-    pro: false,
+    // Pro at the product level, not in the server binary: MacStreamingServer has no
+    // isPro check and the NAS server is free to run, but the only thing that consumes
+    // this stream — the reading app — requires Pro, so "stream between your devices"
+    // is a Pro capability end to end. Flagged 2026-09-09 by product decision.
+    //
+    // Known imprecision: `pro` is per row, and NAS is the one column where hosting
+    // pays off without Pro, because its browser reader is free. If that distinction
+    // starts mattering, the flag needs to move per cell rather than per feature.
+    pro: true,
     aliases: ['host', 'server', 'serve', 'stream PDF', 'stream EPUB', 'incremental', 'page serving', 'range requests'],
     platforms: {
       ios: na,
