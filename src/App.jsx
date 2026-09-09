@@ -12,6 +12,7 @@ import Privacy from './pages/Privacy';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Changelog from './pages/Changelog';
+import FeatureMatrix from './pages/FeatureMatrix';
 import AppChangelog from './pages/AppChangelog';
 import AppPrivacy from './pages/AppPrivacy';
 import GrepTagReader from './pages/GrepTagReader';
@@ -104,6 +105,7 @@ function AppLayout() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/changelog" element={<Changelog />} />
+          <Route path="/features" element={<FeatureMatrix />} />
           <Route path="/grepreader" element={<GrepTagReader />} />
           <Route path="/grepreader/changelog" element={<AppChangelog appSlug="grepreader" />} />
           <Route path="/grepreader/privacy" element={<AppPrivacy appSlug="grepreader" />} />
