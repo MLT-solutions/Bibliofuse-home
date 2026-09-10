@@ -642,3 +642,28 @@ against a structural key-existence diff (every locale should have the same key s
 (`toolsPages`, `toolsHub`, `qrGeneratorPage`, and the retired `smartdecryptPage` /
 `contentcuePage` / `decryptSection` / `contentcueSection` / `androidRequestPage` keys,
 all documented elsewhere as intentionally untranslated or dead).
+
+## Edition cards gained a photo thumbnail (2026-09-10)
+
+The four `EditionChooser` cards (Apple, PC, Android, NAS) each carry a cropped device
+photo above the existing badge/name/subtitle text, sourced from four wide device-lineup
+renders the site owner supplied (1586x992 each, mostly empty gradient background around
+the device art — hero-shot format, not built as tileable backgrounds).
+
+**Why a thumbnail and not a full card background:** the request was to use the renders as
+card backgrounds, but the cards are small (~260x325 in the 4-column grid) while the
+source images are wide hero shots with the interesting content concentrated on the right
+side. A photographic full-bleed background behind the existing text would need a heavy
+scrim to stay legible, and at that card size would show mostly empty gradient once
+cropped to fit — while adding real weight to the site's heaviest page. Offered three
+options; the site owner chose the thumbnail treatment.
+
+Processing (one-off, not part of the build): cropped each source to the device grouping
+(dropping the empty left portion — 480-560px of the 1586px width, sized per image since
+the art starts at a different x-offset in each), downsized to 900px wide, saved as JPEG
+q82. Result: 62-102 KB per image, 336 KB total, `loading="lazy"` — versus 1.3-1.5 MB each
+for the sources. Files at `public/image/comicreader/editions/{apple,pc,android,nas}.jpg`.
+
+`alt=""` on the thumbnails: the image is decorative next to text that already states the
+platform (`BiblioFuse Reader iOS / macOS`, etc.), so an empty alt avoids double-announcing
+the same information to a screen reader.

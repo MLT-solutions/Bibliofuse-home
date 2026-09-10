@@ -172,6 +172,21 @@ const EDITION_HREFS = {
   nas: nasRepoUrl,
 };
 
+// Cropped from the four wide "family" device-lineup renders supplied 2026-09-10
+// (source: /Users/mattclaw/Downloads/bibliofuse family/*.png, 1586x992 each — mostly
+// empty gradient background around the actual device art). Cropped to the device
+// grouping and downsized to 900px wide JPEGs (62-102 KB) rather than used as full
+// backgrounds: these cards are small (~250x150 in the 4-column grid), so a photographic
+// background behind the card text would need a heavy scrim for legibility and would
+// mostly show empty gradient once fit to that size. A thumbnail strip keeps the
+// per-platform visual identity the images add without either problem.
+const EDITION_THUMBS = {
+  apple: '/image/comicreader/editions/apple.jpg',
+  pc: '/image/comicreader/editions/pc.jpg',
+  android: '/image/comicreader/editions/android.jpg',
+  nas: '/image/comicreader/editions/nas.jpg',
+};
+
 function EditionChooser({ lang }) {
   const { t } = useTranslation();
   const e = t('redesign.comicReaderPage.editions', { returnObjects: true });
@@ -197,14 +212,28 @@ function EditionChooser({ lang }) {
               href={EDITION_HREFS[it.key]}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group flex flex-col rounded-2xl border p-5 transition hover:-translate-y-0.5 hover:shadow-lg ${tints[it.tint] || tints.blue}`}
+              className={`group flex flex-col overflow-hidden rounded-2xl border transition hover:-translate-y-0.5 hover:shadow-lg ${tints[it.tint] || tints.blue}`}
             >
+              {EDITION_THUMBS[it.key] && (
+                <span className="block aspect-[16/10] w-full overflow-hidden bg-white">
+                  <img
+                    src={EDITION_THUMBS[it.key]}
+                    alt=""
+                    width="900"
+                    height="500"
+                    loading="lazy"
+                    className="h-full w-full object-cover object-bottom transition duration-300 group-hover:scale-[1.03]"
+                  />
+                </span>
+              )}
+              <span className="flex flex-1 flex-col p-5">
               <span className="mb-2 inline-flex w-fit rounded-md bg-white/80 px-2 py-0.5 text-[10px] font-black uppercase tracking-wider text-slate-600">
                 {it.badge}
               </span>
               <span className="text-sm font-black leading-snug text-slate-950">{it.name}</span>
               <span className="mt-1 flex-1 text-xs leading-relaxed text-slate-600">{it.subtitle}</span>
               <span className="mt-4 text-xs font-bold text-slate-900 group-hover:text-blue-700">↗</span>
+              </span>
             </a>
           ))}
         </div>
