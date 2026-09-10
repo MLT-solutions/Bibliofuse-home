@@ -4,6 +4,16 @@ import { useTranslation } from 'react-i18next';
 import logo from '../assets/logo.png';
 import SEO from '../components/SEO';
 import DevicePills from '../components/DevicePills';
+import { TOOLS } from '../data/tools';
+
+// Mirrors the card accents in src/pages/tools/ToolsHub.jsx
+const TOOL_ACCENTS = {
+  blue: 'bg-blue-50 text-blue-700',
+  violet: 'bg-violet-50 text-violet-700',
+  orange: 'bg-orange-50 text-orange-700',
+  teal: 'bg-teal-50 text-teal-700',
+  emerald: 'bg-emerald-50 text-emerald-700',
+};
 import { articles } from '../data/articles';
 
 const appStoreUrl = 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093';
@@ -39,13 +49,6 @@ function StoreBadge({ type, size = 'lg', className = '' }) {
   return null;
 }
 
-function AppStoreImageBadge({ href, alt = 'Download on the App Store', size = 'sm', className = '' }) {
-  return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className={`inline-flex transition hover:-translate-y-0.5 ${className}`}>
-      <img src="/image/Download_on_the_App_Store_Badge.svg.png" alt={alt} className={`${size === 'lg' ? 'h-12' : 'h-10'} w-auto object-contain`} />
-    </a>
-  );
-}
 
 function MicrosoftStoreImageBadge({ href, size = 'sm', className = '' }) {
   return (
@@ -56,18 +59,6 @@ function MicrosoftStoreImageBadge({ href, size = 'sm', className = '' }) {
 }
 
 
-function WebToolButton({ lang, children, compact = false }) {
-  return (
-    <Link
-      to={`/${lang}/tools/`}
-      className={`inline-flex items-center justify-center gap-2 rounded-xl bg-[#0b1220] font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#152033] ${compact ? 'h-10 px-4 text-sm' : 'h-12 px-5 text-sm'}`}
-    >
-      <img src="/image/WebAssembly_Logo.svg" alt="" className="h-5 w-5" />
-      {children}
-      <ArrowRightIcon />
-    </Link>
-  );
-}
 
 function CheckIcon({ className = 'text-emerald-600' }) {
   return (
@@ -89,13 +80,6 @@ function DashIcon() {
   );
 }
 
-function ArrowRightIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 12h14M13 6l6 6-6 6" />
-    </svg>
-  );
-}
 
 function ProductIcon({ kind }) {
   const props = { width: 22, height: 22, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2.2, strokeLinecap: 'round', strokeLinejoin: 'round' };
@@ -120,15 +104,7 @@ function Hero({ lang }) {
           <div className="mb-5">
             <img src="/image/bibliofuse-logo.png" alt="BiblioFuse Reader" className="h-16 w-16 rounded-2xl shadow-lg" />
           </div>
-          <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 shadow-sm">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inset-0 rounded-full bg-teal-300 animate-ping" />
-              <span className="relative h-2 w-2 rounded-full bg-teal-500" />
-            </span>
-            {t('redesign.home.hero.version')}
-          </div>
-
-          <h1 className="mt-5 max-w-3xl text-[clamp(2.75rem,5.6vw,4.75rem)] font-black leading-[0.98] tracking-tight text-[#0b1220]">
+          <h1 className="mt-1 max-w-3xl text-[clamp(2.75rem,5.6vw,4.75rem)] font-black leading-[0.98] tracking-tight text-[#0b1220]">
             {t('redesign.home.hero.titleA')}
             <br />
             <span className="bg-gradient-to-r from-[#1e5fd3] to-[#14c2a6] bg-clip-text text-transparent">{t('redesign.home.hero.titleB')}</span>
@@ -146,8 +122,11 @@ function Hero({ lang }) {
 
           <DevicePills devices={['iphone', 'ipad', 'mac', 'visionpro', 'appletv', 'androidphone', 'androidtablet', 'androidtv', 'windows', 'docker', 'synology']} tone="light" align="start" className="mt-5" />
 
-          <Link to={`/${lang}/comicreader/`} className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 transition hover:text-blue-700">
-            {t('redesign.productFamily.learnMore')} →
+          <Link
+            to={`/${lang}/comicreader/`}
+            className="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#0b1220] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#152033]"
+          >
+            {t('redesign.home.hero.readerCta')} →
           </Link>
 
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-slate-600">
@@ -203,335 +182,51 @@ function Hero({ lang }) {
   );
 }
 
-function ProductFamily({ lang }) {
+
+
+
+
+
+
+
+
+
+// Second hero. Leads on live comic & manga translation because that is the one thing the
+// field does not have: Panels gates OPDS behind a $9.99/yr tier, Komic does native
+// Komga/Kavita, nobody advertises in-place translation. Kavita/Komga and OPDS follow as
+// proof the table stakes are covered too. Feature dates come from src/data/feature-matrix.js.
+function SecondHero({ lang }) {
   const { t } = useTranslation();
-  const products = [
-    {
-      tag: t('redesign.productFamily.products.reader.tag'),
-      logoSrc: '/image/bibliofuse-logo.png',
-      name: 'BiblioFuse Reader',
-      desc: t('redesign.productFamily.products.reader.desc'),
-      bullets: [t('redesign.productFamily.products.reader.bullet1'), t('redesign.productFamily.products.reader.bullet2'), t('redesign.productFamily.products.reader.bullet3')],
-      cta: t('redesign.productFamily.learnMore'),
-      to: `/${lang}/comicreader/`,
-      secondary: t('redesign.productFamily.products.reader.secondary'),
-      secondaryHref: playStoreUrl,
-      accent: 'blue',
-    },
-    {
-      tag: t('redesign.productFamily.products.webTool.tag'),
-      logoSrc: '/image/webtool-logo.png',
-      name: 'BiblioFuse Tools',
-      desc: t('redesign.productFamily.products.webTool.desc'),
-      bullets: [t('redesign.productFamily.products.webTool.bullet1'), t('redesign.productFamily.products.webTool.bullet2'), t('redesign.productFamily.products.webTool.bullet3')],
-      cta: t('redesign.productFamily.learnMore'),
-      to: `/${lang}/tools/`,
-      accent: 'teal',
-    },
-    {
-      tag: t('redesign.productFamily.products.smartdecrypt.tag'),
-      logoSrc: '/image/smartdecrypt-logo.png',
-      name: 'SmartDecrypt PDF ZIP',
-      desc: t('redesign.productFamily.products.smartdecrypt.desc'),
-      bullets: [t('redesign.productFamily.products.smartdecrypt.bullet1'), t('redesign.productFamily.products.smartdecrypt.bullet2'), t('redesign.productFamily.products.smartdecrypt.bullet3'), t('redesign.productFamily.products.smartdecrypt.bullet4')],
-      cta: t('redesign.productFamily.learnMore'),
-      href: smartDecryptAppStoreUrl,
-      secondary: t('redesign.productFamily.products.smartdecrypt.secondary'),
-      secondaryHref: smartDecryptMsUrl,
-      accent: 'violet',
-      dark: true,
-    },
-    {
-      tag: t('redesign.productFamily.products.contentcue.tag'),
-      logoSrc: '/image/contentcue-logo.png',
-      name: 'ContentCue',
-      desc: t('redesign.productFamily.products.contentcue.desc'),
-      bullets: [t('redesign.productFamily.products.contentcue.bullet1'), t('redesign.productFamily.products.contentcue.bullet2'), t('redesign.productFamily.products.contentcue.bullet3'), t('redesign.productFamily.products.contentcue.bullet4')],
-      cta: t('redesign.productFamily.learnMore'),
-      href: contentCueAppStoreUrl,
-      accent: 'green',
-    },
-  ];
-
+  const s = t('redesign.home.secondHero', { returnObjects: true });
+  const bullets = Array.isArray(s.bullets) ? s.bullets : [];
   return (
-    <section id="family" className="bg-white py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-12 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-          <div>
-            <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">{t('redesign.productFamily.eyebrow')}</div>
-            <h2 className="max-w-2xl text-[clamp(1.8rem,3.4vw,2.75rem)] font-black leading-[1.05] tracking-tight text-slate-950">
-              {t('redesign.productFamily.titleA')}
-              <br />
-              <span className="font-semibold text-slate-500">{t('redesign.productFamily.titleB')}</span>
-            </h2>
-          </div>
-          <p className="max-w-sm text-sm leading-6 text-slate-600">
-            {t('redesign.productFamily.desc')}
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5">
-          {products.map((product) => (
-            <ProductCard key={product.name} {...product} />
-          ))}
-        </div>
-        <p className="mt-6 text-sm leading-relaxed text-slate-500">
-          {t('redesign.productFamily.qrGeneratorNote')}{' '}
-          <Link to={`/${lang}/tools/qr-generator/`} className="font-semibold text-slate-950 underline underline-offset-2 hover:text-slate-700">
-            {t('redesign.productFamily.qrGeneratorCta')} →
-          </Link>
-        </p>
-      </div>
-    </section>
-  );
-}
-
-function ProductCard({ tag, icon, logoSrc, name, desc, bullets, cta, href, to, secondary, secondaryHref, accent, dark }) {
-  const { t } = useTranslation();
-  const accents = {
-    blue: 'bg-blue-50 text-blue-600',
-    teal: 'bg-teal-50 text-teal-600',
-    orange: 'bg-orange-50 text-orange-600',
-    violet: 'bg-violet-50 text-violet-600',
-    green: 'bg-green-50 text-green-600',
-    indigo: 'bg-indigo-50 text-indigo-600',
-  };
-  const ctaClass = dark ? 'bg-violet-600 text-white hover:bg-violet-700' : 'bg-[#0b1220] text-white hover:bg-[#152033]';
-  const cardClass = dark
-    ? 'bg-[#0b1220] text-white shadow-[0_28px_70px_-36px_rgba(15,23,42,0.9)]'
-    : 'border border-slate-200 bg-[#f7f9fe] text-slate-950';
-  const linkContent = (
-    <>
-      {cta}
-      <ArrowRightIcon />
-    </>
-  );
-
-  return (
-    <article className={`relative flex h-full flex-col rounded-3xl p-6 transition hover:-translate-y-1 hover:shadow-xl ${cardClass}`}>
-      {dark && <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_80%_0%,rgba(139,92,246,0.27),transparent_55%)]" />}
-      <div className="relative">
-        <div className="mb-5 flex items-center justify-between">
-          <span className={`grid h-11 w-11 place-items-center rounded-xl overflow-hidden ${logoSrc ? '' : dark ? 'bg-white/10 text-violet-200' : accents[accent]}`}>
-            {logoSrc ? <img src={logoSrc} alt={name} className="h-11 w-11 object-cover" /> : <ProductIcon kind={icon} />}
-          </span>
-          <span className={`rounded-full px-2.5 py-1 text-[10px] font-black uppercase tracking-wider ${dark ? 'bg-white/10 text-violet-100' : accents[accent]}`}>{tag}</span>
-        </div>
-        <h3 className={`mb-2 text-xl font-black tracking-tight ${dark ? 'text-white' : 'text-slate-950'}`}>{name}</h3>
-        <p className={`mb-5 text-sm leading-relaxed ${dark ? 'text-white/70' : 'text-slate-600'}`}>{desc}</p>
-        <ul className="mb-6 space-y-2.5">
-          {bullets.map((bullet) => (
-            <li key={bullet} className={`flex items-start gap-2.5 text-sm ${dark ? 'text-white/85' : 'text-slate-800'}`}>
-              <svg className="mt-0.5 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={dark ? '#a78bfa' : '#2d7cf6'} strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-              {bullet}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="relative mt-auto">
-        {to ? (
-          <Link to={to} className={`inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl px-4 text-sm font-semibold transition ${ctaClass}`}>
-            {linkContent}
-          </Link>
-        ) : (
-          <a href={href} target={href?.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer" className={`inline-flex h-10 w-full items-center justify-center gap-2 rounded-xl px-4 text-sm font-semibold transition ${ctaClass}`}>
-            {linkContent}
-          </a>
-        )}
-        {secondary && (
-          <a href={secondaryHref} target="_blank" rel="noopener noreferrer" className={`mt-2 block rounded-lg py-1.5 text-center text-xs font-semibold transition ${dark ? 'text-white/70 hover:text-white' : 'text-ink-muted hover:text-ink'}`}>
-            {t('redesign.productFamily.alsoOn')} {secondary} →
-          </a>
-        )}
-      </div>
-    </article>
-  );
-}
-
-function AndroidInterestSection() {
-  const { t } = useTranslation();
-  const { lang } = useParams();
-  const android = t('redesign.androidInterest', { returnObjects: true });
-
-  return (
-    <section className="bg-white py-14 sm:py-16">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-6 rounded-3xl border border-emerald-100 bg-emerald-50/70 p-7 sm:p-8 md:grid-cols-[1fr_auto] md:items-center">
-          <div>
-            <div className="mb-2 text-xs font-black uppercase tracking-[0.18em] text-emerald-700">{android.eyebrow}</div>
-            <h2 className="text-2xl font-black tracking-tight text-slate-950">{android.title}</h2>
-            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-700">{android.desc}</p>
-          </div>
-          <Link
-            to={`/${lang}/androidrequest/`}
-            className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 text-sm font-semibold text-white transition hover:bg-emerald-700"
-          >
-            {android.cta}
-            <ArrowRightIcon />
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ReaderFeatureRow({ eyebrow, title, desc, bullets, image, alt, reverse, kind = 'iphone', accent = 'blue', footnote, badge }) {
-  const accentClasses = {
-    blue: 'bg-blue-50 text-blue-600',
-    teal: 'bg-teal-50 text-teal-600',
-    violet: 'bg-violet-50 text-violet-600',
-  };
-  const dotClasses = {
-    blue: 'bg-blue-600',
-    teal: 'bg-teal-500',
-    violet: 'bg-violet-600',
-  };
-
-  return (
-    <div className={`grid items-center gap-10 lg:grid-cols-2 lg:gap-16 ${reverse ? 'lg:[&>div:first-child]:order-2' : ''}`}>
-      <div>
-        <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">
-          <span className={`h-1.5 w-1.5 rounded-full ${dotClasses[accent]}`} />
-          {eyebrow}
-        </div>
-        <h3 className="mt-3 text-[clamp(1.6rem,2.8vw,2.25rem)] font-black leading-[1.05] tracking-tight text-slate-950">{title}</h3>
-        {badge && (
-          <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-blue-700">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z" /></svg>
-            {badge}
-          </div>
-        )}
-        <p className="mt-4 text-lg leading-relaxed text-slate-600">{desc}</p>
-        <ul className="mt-6 space-y-3">
-          {bullets.map((bullet) => (
-            <li key={bullet.title} className="flex items-start gap-3">
-              <span className={`mt-0.5 grid h-6 w-6 flex-shrink-0 place-items-center rounded-full ${accentClasses[accent]}`}>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
-              </span>
-              <span className="leading-snug text-slate-900"><strong className="font-bold">{bullet.title}</strong> <span className="text-slate-600">- {bullet.body}</span></span>
-            </li>
-          ))}
-        </ul>
-        {footnote && <p className="mt-5 max-w-md border-l-2 border-slate-200 pl-3 text-xs leading-relaxed text-slate-500">{footnote}</p>}
-      </div>
-
-      <div className="relative">
-        {kind === 'iphone' ? (
-          <div className="relative mx-auto max-w-[360px]">
-            <div className="absolute -inset-12 -z-10 rounded-full bg-[radial-gradient(circle,rgba(45,124,246,0.16),transparent_70%)]" />
-            <img src={image} alt={alt} className="block w-full drop-shadow-2xl" />
-          </div>
-        ) : (
-          <div className="relative">
-            <div className="absolute -inset-10 -z-10 rounded-3xl bg-[radial-gradient(circle,rgba(45,124,246,0.16),transparent_70%)]" />
-            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl">
-              <div className="flex h-8 items-center gap-1.5 border-b border-slate-200 bg-slate-50 px-3">
-                <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />
-                <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
-                <span className="h-3 w-3 rounded-full bg-[#28c840]" />
-              </div>
-              <img src={image} alt={alt} className="block w-full" />
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
-
-function ReaderSection() {
-  const { t } = useTranslation();
-  return (
-    <section id="reader" className="scroll-mt-16 bg-[#f5f8ff] py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto mb-20 max-w-2xl text-center">
-          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">{t('redesign.readerSection.eyebrow')}</div>
-          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">{t('redesign.readerSection.title')}</h2>
-          <p className="mt-5 text-lg leading-relaxed text-slate-600">
-            {t('redesign.readerSection.desc')}
-          </p>
-        </div>
-
-        <div className="space-y-24 lg:space-y-32">
-          <ReaderFeatureRow
-            eyebrow={t('redesign.readerSection.features.library.eyebrow')}
-            title={t('redesign.readerSection.features.library.title')}
-            desc={t('redesign.readerSection.features.library.desc')}
-            bullets={[
-              { title: t('redesign.readerSection.features.library.bullet1Title'), body: t('redesign.readerSection.features.library.bullet1Body') },
-              { title: t('redesign.readerSection.features.library.bullet2Title'), body: t('redesign.readerSection.features.library.bullet2Body') },
-              { title: t('redesign.readerSection.features.library.bullet3Title'), body: t('redesign.readerSection.features.library.bullet3Body') },
-            ]}
-            image={`${imageBase}/iphone/2.png`}
-            alt={t('redesign.readerSection.features.library.imageAlt')}
-          />
-
-          <ReaderFeatureRow
-            reverse
-            eyebrow={t('redesign.readerSection.features.reading.eyebrow')}
-            title={t('redesign.readerSection.features.reading.title')}
-            desc={t('redesign.readerSection.features.reading.desc')}
-            bullets={[
-              { title: t('redesign.readerSection.features.reading.bullet1Title'), body: t('redesign.readerSection.features.reading.bullet1Body') },
-              { title: t('redesign.readerSection.features.reading.bullet2Title'), body: t('redesign.readerSection.features.reading.bullet2Body') },
-              { title: t('redesign.readerSection.features.reading.bullet3Title'), body: t('redesign.readerSection.features.reading.bullet3Body') },
-            ]}
-            image={`${imageBase}/iphone/3.png`}
-            alt={t('redesign.readerSection.features.reading.imageAlt')}
-            accent="teal"
-          />
-
-          <ReaderFeatureRow
-            eyebrow={t('redesign.readerSection.features.streaming.eyebrow')}
-            title={t('redesign.readerSection.features.streaming.title')}
-            badge={t('redesign.readerSection.features.streaming.badge')}
-            desc={t('redesign.readerSection.features.streaming.desc')}
-            bullets={[
-              { title: t('redesign.readerSection.features.streaming.bullet1Title'), body: t('redesign.readerSection.features.streaming.bullet1Body') },
-              { title: t('redesign.readerSection.features.streaming.bullet2Title'), body: t('redesign.readerSection.features.streaming.bullet2Body') },
-              { title: t('redesign.readerSection.features.streaming.bullet3Title'), body: t('redesign.readerSection.features.streaming.bullet3Body') },
-              { title: t('redesign.readerSection.features.streaming.bullet4Title'), body: t('redesign.readerSection.features.streaming.bullet4Body') },
-            ]}
-            image={`${imageBase}/mac/1.png`}
-            alt={t('redesign.readerSection.features.streaming.imageAlt')}
-            kind="mac"
-            footnote={t('redesign.readerSection.features.streaming.footnote')}
-          />
-        </div>
-
-        <ToolsHighlight />
-      </div>
-    </section>
-  );
-}
-
-function ReaderTeaser({ lang }) {
-  const { t } = useTranslation();
-  return (
-    <section id="reader" className="scroll-mt-16 bg-[#f5f8ff] py-16 sm:py-20">
-      <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:px-8">
+    <section className="border-y border-slate-200/70 bg-[#0b1220] py-16 sm:py-20">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
         <div>
-          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">{t('redesign.readerSection.eyebrow')}</div>
-          <h2 className="max-w-2xl text-[clamp(1.8rem,3.4vw,2.75rem)] font-black leading-[1.05] tracking-tight text-slate-950">
-            {t('redesign.readerSection.title')}
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-teal-300">{s.eyebrow}</div>
+          <h2 className="text-[clamp(1.9rem,3.8vw,2.9rem)] font-black leading-[1.05] tracking-tight text-white">
+            {s.titleA}
+            <br />
+            <span className="bg-gradient-to-r from-[#5ea0ff] to-[#3ddbc4] bg-clip-text text-transparent">{s.titleB}</span>
           </h2>
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-600">
-            {t('redesign.readerSection.desc')}
-          </p>
-          <div className="mt-7 flex flex-wrap gap-3">
-            <Link
-              to={`/${lang}/comicreader/`}
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-[#0b1220] px-5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#152033]"
-            >
-              {t('redesign.readerSection.cta')}
-              <ArrowRightIcon />
-            </Link>
-            <StoreBadge type="apple" size="sm" />
-            <StoreBadge type="play" size="sm" />
-          </div>
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-300">{s.desc}</p>
+          <ul className="mt-6 space-y-2.5">
+            {bullets.map((b) => (
+              <li key={b} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-200">
+                <svg className="mt-1 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3ddbc4" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                {b}
+              </li>
+            ))}
+          </ul>
+          <Link
+            to={`/${lang}/features/`}
+            className="mt-7 inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-semibold text-[#0b1220] transition hover:-translate-y-0.5 hover:bg-slate-100"
+          >
+            {s.cta} →
+          </Link>
         </div>
-        <div className="relative mx-auto w-full max-w-[min(300px,100%)] lg:justify-self-end">
-          <div className="absolute -inset-10 -z-0 rounded-full bg-[radial-gradient(circle,rgba(45,124,246,0.18),transparent_68%)]" />
+        <div className="relative mx-auto w-full max-w-[300px] lg:justify-self-end">
+          <div className="absolute -inset-10 -z-0 rounded-full bg-[radial-gradient(circle,rgba(61,219,196,0.22),transparent_68%)]" />
           <img src={`${imageBase}/iphone/1.png`} alt={t('redesign.altTexts.heroImage')} className="relative z-10 block w-full drop-shadow-2xl" />
         </div>
       </div>
@@ -539,205 +234,40 @@ function ReaderTeaser({ lang }) {
   );
 }
 
-function ToolsHighlight() {
+// Cards only — deliberately not a live tool. A working tool here would compete with the
+// /tools/<slug>/ pages for the same queries and pull ~13 MB of WASM into every branded visit.
+function ToolsStrip({ lang }) {
   const { t } = useTranslation();
-  const tools = [
-    {
-      title: t('redesign.toolsHighlight.tools.resize.title'),
-      body: t('redesign.toolsHighlight.tools.resize.body'),
-      kpi: t('redesign.toolsHighlight.tools.resize.kpi'),
-      label: t('redesign.toolsHighlight.tools.resize.label'),
-      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 9V5a1 1 0 011-1h4" /><path d="M20 15v4a1 1 0 01-1 1h-4" /><path d="M9 9h6v6H9z" /></svg>,
-    },
-    {
-      title: t('redesign.toolsHighlight.tools.convert.title'),
-      body: t('redesign.toolsHighlight.tools.convert.body'),
-      kpi: t('redesign.toolsHighlight.tools.convert.kpi'),
-      label: t('redesign.toolsHighlight.tools.convert.label'),
-      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><circle cx="9" cy="11" r="1.5" /><path d="M21 17l-5-5-9 9" /></svg>,
-    },
-    {
-      title: t('redesign.toolsHighlight.tools.merge.title'),
-      body: t('redesign.toolsHighlight.tools.merge.body'),
-      kpi: t('redesign.toolsHighlight.tools.merge.kpi'),
-      label: t('redesign.toolsHighlight.tools.merge.label'),
-      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3v6a4 4 0 004 4h4" /><path d="M16 21l3-3-3-3" /><path d="M5 13v8" /></svg>,
-    },
-  ];
-
-  return (
-    <div className="mt-24 rounded-3xl border border-slate-200 bg-white p-8 shadow-xl sm:p-10">
-      <div className="mb-7 flex flex-col gap-3 sm:flex-row sm:items-center">
-        <span className="inline-flex self-start items-center gap-2 rounded-full bg-teal-50 px-3 py-1.5 text-xs font-black uppercase tracking-wider text-teal-700">{t('redesign.toolsHighlight.badge')}</span>
-        <h4 className="text-2xl font-black tracking-tight text-slate-950">{t('redesign.toolsHighlight.title')}</h4>
-      </div>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
-        {tools.map((tool) => (
-          <article key={tool.title} className="flex flex-col rounded-2xl border border-slate-200 bg-slate-50 p-5">
-            <div className="mb-4 flex items-center justify-between">
-              <span className="grid h-10 w-10 place-items-center rounded-xl bg-teal-50 text-teal-700">{tool.icon}</span>
-              <span className="text-right">
-                <span className="block text-lg font-black tracking-tight text-slate-950">{tool.kpi}</span>
-                <span className="block text-[10px] uppercase tracking-wider text-slate-400">{tool.label}</span>
-              </span>
-            </div>
-            <h5 className="mb-1.5 font-black text-slate-950">{tool.title}</h5>
-            <p className="text-sm leading-relaxed text-slate-600">{tool.body}</p>
-          </article>
-        ))}
-      </div>
-      <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-slate-200 pt-6 text-xs text-slate-500">
-        <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">{t('redesign.toolsHighlight.supports')}</span>
-        {['EPUB', 'PDF', 'CBZ', 'CBR', 'RAR', 'ZIP'].map((format) => (
-          <span key={format} className="text-base font-black tracking-tight text-slate-800">{format}</span>
-        ))}
-        <span className="ml-auto text-xs text-slate-400">{t('redesign.toolsHighlight.onDevice')}</span>
-      </div>
-    </div>
-  );
-}
-
-function ComparisonTable() {
-  const { t } = useTranslation();
-  const table = t('redesign.home.table', { returnObjects: true });
-  const editions = [
-    { key: 'apple',   name: table.editions.apple,   subtitle: table.subtitles.apple,   badge: table.badges.universal, tint: 'blue' },
-    { key: 'pc',      name: table.editions.pc,      subtitle: table.subtitles.pc,      badge: table.badges.msStore,    tint: 'orange' },
-    { key: 'android', name: table.editions.android, subtitle: table.subtitles.android, badge: table.badges.edition,   tint: 'teal' },
-    { key: 'nas',     name: table.editions.nas,     subtitle: table.subtitles.nas,     badge: table.badges.nas,       tint: 'violet' },
-  ];
-  const rows = table.rows.map((row, index) => ({
-    label: row[0],
-    highlight: index === 6,
-    cells: { apple: row[1], pc: row[2], android: row[3], nas: row[4] },
-  }));
-
-  return (
-    <section id="comparison-table" className="bg-white py-20 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto mb-12 max-w-2xl text-center">
-          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">{table.eyebrow}</div>
-          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">{table.title}</h2>
-          <p className="mt-4 text-slate-600">{table.desc}</p>
-        </div>
-        <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-xl">
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[760px] table-fixed border-collapse">
-              <colgroup>
-                <col className="w-[190px]" />
-                <col />
-                <col />
-                <col />
-                <col />
-              </colgroup>
-              <thead>
-                <tr className="bg-white">
-                  <th className="px-6 py-5 text-left text-xs font-bold uppercase tracking-wider text-slate-400">{table.feature}</th>
-                  {editions.map((edition) => (
-                    <th key={edition.key} className="px-4 py-5 text-center align-bottom">
-                      <div className="flex flex-col items-center gap-1">
-                        <div className={`inline-flex rounded-full px-2 py-0.5 text-[10px] font-black uppercase tracking-wider ${tintClass(edition.tint)}`}>{edition.badge}</div>
-                        <div className="text-base font-black tracking-tight text-slate-950">{edition.name}</div>
-                        <div className="text-xs text-slate-500">{edition.subtitle}</div>
-                      </div>
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((row) => (
-                  <tr key={row.label} className={`border-t border-slate-200 ${row.highlight ? 'bg-blue-50/70' : 'bg-white/70'}`}>
-                    <td className="px-6 py-4 align-top text-sm font-bold text-slate-950">
-                      <div className="flex items-center gap-2">
-                        {row.label}
-                        {row.highlight && <span className="rounded bg-blue-600 px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-white">{table.unique}</span>}
-                      </div>
-                    </td>
-                    {editions.map((edition) => (
-                      <td key={edition.key} className="px-4 py-4 text-center align-top text-sm">
-                        {renderLocalizedTableCell(row.cells[edition.key])}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-                <tr className="border-t border-slate-200 bg-white">
-                  <td className="px-6 py-5 align-middle text-sm font-bold text-slate-950">{table.where}</td>
-                  <td className="px-4 py-5 text-center align-middle">
-                    <StoreBadge type="apple" size="sm" />
-                  </td>
-                  <td className="px-4 py-5 text-center align-middle">
-                    <MicrosoftStoreImageBadge href={bibliofusePcUrl} />
-                  </td>
-                  <td className="px-4 py-5 text-center align-middle">
-                    <StoreBadge type="play" size="sm" />
-                  </td>
-                  <td className="px-4 py-5 text-center align-middle">
-                    <div className="flex flex-col items-center gap-1.5">
-                      <a href={dockerUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-blue-600 hover:text-blue-700">Docker →</a>
-                      <a href={synologyUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-blue-600 hover:text-blue-700">Synology →</a>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function StandaloneToolsSection({ lang }) {
-  const { t } = useTranslation();
-  const s = t('redesign.home.toolsSection', { returnObjects: true });
+  const s = t('redesign.home.toolsStrip', { returnObjects: true });
   return (
     <section className="bg-slate-50 py-14 sm:py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-8 text-center">
-          <div className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">{s.eyebrow}</div>
-          <h2 className="text-xl font-black tracking-tight text-slate-950">{s.title}</h2>
+        <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <div className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">{s.eyebrow}</div>
+            <h2 className="text-xl font-black tracking-tight text-slate-950">{s.title}</h2>
+          </div>
+          <p className="max-w-sm text-sm leading-relaxed text-slate-600">{s.desc}</p>
         </div>
-        <div className="grid gap-4 sm:grid-cols-3">
-          <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5">
-            <div className="mb-3 flex items-center gap-2.5">
-              <span className="grid h-9 w-9 flex-shrink-0 place-items-center overflow-hidden rounded-xl">
-                <img src="/image/webtool-logo.png" alt={s.web.name} className="h-9 w-9 object-cover" />
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">
+          {TOOLS.map((tool) => (
+            <Link
+              key={tool.slug}
+              to={`/${lang}/tools/${tool.slug}/`}
+              className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-4 transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-lg"
+            >
+              <span className={`mb-2.5 inline-flex w-fit items-center rounded-lg px-2 py-1 text-[10px] font-black uppercase tracking-wider ${TOOL_ACCENTS[tool.accent]}`}>
+                {tool.badge}
               </span>
-              <div>
-                <div className="text-sm font-black text-slate-950">{s.web.name}</div>
-                <div className="text-[10px] text-slate-500">{s.web.subtitle}</div>
-              </div>
-            </div>
-            <p className="mb-4 flex-1 text-xs leading-relaxed text-slate-600">{s.web.desc}</p>
-            <WebToolButton lang={lang} compact>{s.web.cta}</WebToolButton>
-          </div>
-          <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5">
-            <div className="mb-3 flex items-center gap-2.5">
-              <span className="grid h-9 w-9 flex-shrink-0 place-items-center overflow-hidden rounded-xl">
-                <img src="/image/cbz-resizer-logo.png" alt={s.pcCbz.name} className="h-9 w-9 object-cover" />
+              <span className="text-sm font-bold leading-snug text-slate-950">
+                {t(`redesign.toolsPages.${tool.slug}.h1`)}
               </span>
-              <div>
-                <div className="text-sm font-black text-slate-950">{s.pcCbz.name}</div>
-                <div className="text-[10px] text-slate-500">{s.pcCbz.subtitle}</div>
-              </div>
-            </div>
-            <p className="mb-4 flex-1 text-xs leading-relaxed text-slate-600">{s.pcCbz.desc}</p>
-            <MicrosoftStoreImageBadge href="https://apps.microsoft.com/detail/9p7b02538tfq" />
-          </div>
-          <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5">
-            <div className="mb-3 flex items-center gap-2.5">
-              <span className="grid h-9 w-9 flex-shrink-0 place-items-center overflow-hidden rounded-xl">
-                <img src="/image/epub-resizer-logo.png" alt={s.pcEpub.name} className="h-9 w-9 object-cover" />
-              </span>
-              <div>
-                <div className="text-sm font-black text-slate-950">{s.pcEpub.name}</div>
-                <div className="text-[10px] text-slate-500">{s.pcEpub.subtitle}</div>
-              </div>
-            </div>
-            <p className="mb-4 flex-1 text-xs leading-relaxed text-slate-600">{s.pcEpub.desc}</p>
-            <MicrosoftStoreImageBadge href="https://apps.microsoft.com/detail/9pdllhdz6kkl" />
-          </div>
+            </Link>
+          ))}
         </div>
+        <Link to={`/${lang}/tools/`} className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-900 hover:text-blue-700">
+          {s.cta} →
+        </Link>
       </div>
     </section>
   );
@@ -810,60 +340,8 @@ function FaqSection({ lang }) {
   );
 }
 
-function tintClass(tint) {
-  if (tint === 'blue') return 'bg-blue-50 text-blue-700';
-  if (tint === 'teal') return 'bg-teal-50 text-teal-700';
-  if (tint === 'violet') return 'bg-violet-50 text-violet-700';
-  return 'bg-orange-50 text-orange-700';
-}
 
-function renderTableCell(cell, strong) {
-  if (typeof cell === 'string') return <span className={`leading-snug ${strong === 'green' ? 'font-semibold text-emerald-600' : 'text-slate-800'}`}>{cell}</span>;
-  if (cell?.yes === true) {
-    return (
-      <div className="flex flex-col items-center gap-1 text-center">
-        {cell.big ? <span className="font-bold text-slate-950">{cell.big}</span> : <CheckIcon />}
-        {cell.note && <span className="text-[11px] leading-tight text-slate-500">{cell.note}</span>}
-      </div>
-    );
-  }
-  if (cell?.yes === false) {
-    return (
-      <div className="flex flex-col items-center gap-1 text-center">
-        <DashIcon />
-        {cell.note && <span className="text-[11px] leading-tight text-slate-500">{cell.note}</span>}
-      </div>
-    );
-  }
-  return null;
-}
 
-function renderLocalizedTableCell(cell, strong) {
-  if (cell === '-') return <DashIcon />;
-  const str = String(cell);
-  if (str.includes('||')) {
-    return (
-      <div className="flex flex-col items-center gap-1.5">
-        {str.split('||').map((line, i) => {
-          const [main, sub] = line.split('|');
-          return (
-            <div key={i} className="text-center leading-snug">
-              <span className={`text-xs ${i === 0 ? 'font-semibold text-slate-900' : 'text-slate-500'}`}>{main}</span>
-              {sub && <span className="block text-[10px] text-slate-400">{sub}</span>}
-            </div>
-          );
-        })}
-      </div>
-    );
-  }
-  const [big, note] = str.split('|');
-  return (
-    <span className={`leading-snug ${strong === 'green' ? 'font-semibold text-emerald-600' : 'text-slate-800'}`}>
-      <span className={note ? 'block font-bold text-slate-950' : ''}>{big}</span>
-      {note && <span className="mt-1 block text-[11px] leading-tight text-slate-500">{note}</span>}
-    </span>
-  );
-}
 
 function PrivacyStrip() {
   const { t } = useTranslation();
@@ -978,34 +456,6 @@ function BlogPreview({ lang }) {
   );
 }
 
-function FinalCTA({ lang }) {
-  const { t } = useTranslation();
-  return (
-    <section className="bg-white py-20 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-br from-[#2d7cf6] to-[#14c2a6] p-10 text-white sm:p-16">
-          <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(rgba(255,255,255,.6)_1px,transparent_1px)] [background-size:24px_24px]" />
-          <img src={logo} alt="" className="absolute bottom-[-40px] right-[-20px] hidden w-80 rounded-[52px] opacity-20 md:block" />
-          <div className="relative max-w-2xl">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1.5 text-xs font-bold uppercase tracking-wider">
-              <span className="h-1.5 w-1.5 rounded-full bg-white" />
-              {t('redesign.finalCta.badge')}
-            </div>
-            <h2 className="text-[clamp(2rem,4.5vw,3.25rem)] font-black leading-[1.02] tracking-tight">{t('redesign.finalCta.title')}</h2>
-            <p className="mt-4 text-lg leading-relaxed text-white/90">
-              {t('redesign.finalCta.desc')}
-            </p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <StoreBadge type="apple" />
-              <StoreBadge type="play" />
-              <MicrosoftStoreImageBadge href={bibliofusePcUrl} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function StickyDownloadBar() {
   const { t } = useTranslation();
@@ -1058,13 +508,11 @@ const Home = () => {
         faqItems={faqItems}
       />
       <Hero lang={lang} />
-      <ProductFamily lang={lang} />
-      <AndroidInterestSection />
-      <StandaloneToolsSection lang={lang} />
+      <SecondHero lang={lang} />
+      <ToolsStrip lang={lang} />
       <FaqSection lang={lang} />
       <PrivacyStrip />
       <BlogPreview lang={lang} />
-      <FinalCTA lang={lang} />
       <StickyDownloadBar />
     </div>
   );

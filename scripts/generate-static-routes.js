@@ -15,7 +15,7 @@ const INDEXED_LANGUAGES = ['en', 'es', 'fr', 'ja'];
 // (see docs/gsc-cloudflare-findings.md). Injected directly into the static HTML
 // so Googlebot sees it on the raw crawl, not just after client-side JS renders Helmet.
 const NOINDEX_NON_EN_ROUTES = new Set([
-    '/tools',
+    '/guide', '/tools',
     '/tools/cbz-reducer',
     '/tools/epub-reducer',
     '/tools/pdf-to-cbz',
@@ -28,10 +28,13 @@ const NOINDEX_NON_EN_ROUTES = new Set([
 // pointing at mlogictech.com (see SmartDecrypt.jsx / ContentCue.jsx). Their
 // /changelog and /privacy sub-routes are untouched (still real, indexed-in-en
 // App Store compliance pages).
-const NOINDEX_ALL_LOCALES_ROUTES = new Set(['/androidrequest', '/smartdecrypt', '/contentcue']);
+// /changelog added 2026-09-10: 45 impressions and 0 clicks across all locales in five
+// months. It stays as a trust signal for existing users (linked from the footer) but is
+// thin content for discovery — see docs/site-showcase-audit.md.
+const NOINDEX_ALL_LOCALES_ROUTES = new Set(['/androidrequest', '/smartdecrypt', '/contentcue', '/changelog']);
 const NOINDEX_TAG = '<meta name="robots" content="noindex, follow" />\n</head>';
-const ARTICLE_SLUGS = ['epub-reader-iphone-no-drm', 'cbz-cbr-rar-zip-which-format-best', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'read-cbz-cbr-on-iphone', 'digital-comic-library-management-guide', 'read-manga-online-iphone', 'cbz-vs-cbr-vs-epub-formats-explained', 'ocr-comics-extract-text-iphone', 'getting-started-with-bibliofuse', 'bibliofuse-tools-tab-guide'];
-const ROUTES = ['/', '/comicreader', '/smartdecrypt', '/smartdecrypt/changelog', '/smartdecrypt/privacy', '/contentcue', '/contentcue/changelog', '/contentcue/privacy', '/androidrequest', '/about', '/privacy', '/tools', '/tools/cbz-reducer', '/tools/epub-reducer', '/tools/pdf-to-cbz', '/tools/pdf-to-jpg', '/tools/qr-generator', '/blog', '/changelog', '/features', ...ARTICLE_SLUGS.map(s => `/blog/${s}`)];
+const ARTICLE_SLUGS = ['epub-reader-iphone-no-drm', 'cbz-cbr-rar-zip-which-format-best', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'read-cbz-cbr-on-iphone', 'digital-comic-library-management-guide', 'cbz-vs-cbr-vs-epub-formats-explained', 'ocr-comics-extract-text-iphone', 'getting-started-with-bibliofuse', 'bibliofuse-tools-tab-guide'];
+const ROUTES = ['/', '/comicreader', '/smartdecrypt', '/smartdecrypt/changelog', '/smartdecrypt/privacy', '/contentcue', '/contentcue/changelog', '/contentcue/privacy', '/androidrequest', '/about', '/privacy', '/guide', '/tools', '/tools/cbz-reducer', '/tools/epub-reducer', '/tools/pdf-to-cbz', '/tools/pdf-to-jpg', '/tools/qr-generator', '/blog', '/changelog', '/features', ...ARTICLE_SLUGS.map(s => `/blog/${s}`)];
 
 const distDir = join(__dirname, '..', 'dist');
 const sourceIndex = join(distDir, 'index.html');

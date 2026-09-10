@@ -11,7 +11,7 @@ const BASE_URL = 'https://bibliofuse.com';
 // 2026-07-20 reaudit). Locales outside this set still render for visitors but are kept out
 // of the sitemap; SEO.jsx also noindexes them by default.
 const INDEXED_LANGUAGES = ['en', 'es', 'fr', 'ja'];
-const ARTICLE_SLUGS = ['epub-reader-iphone-no-drm', 'cbz-cbr-rar-zip-which-format-best', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'read-cbz-cbr-on-iphone', 'digital-comic-library-management-guide', 'read-manga-online-iphone', 'cbz-vs-cbr-vs-epub-formats-explained', 'ocr-comics-extract-text-iphone', 'getting-started-with-bibliofuse', 'bibliofuse-tools-tab-guide'];
+const ARTICLE_SLUGS = ['epub-reader-iphone-no-drm', 'cbz-cbr-rar-zip-which-format-best', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'read-cbz-cbr-on-iphone', 'digital-comic-library-management-guide', 'cbz-vs-cbr-vs-epub-formats-explained', 'ocr-comics-extract-text-iphone', 'getting-started-with-bibliofuse', 'bibliofuse-tools-tab-guide'];
 const ROUTES = [
     { path: '/', priority: '1.0', changefreq: 'weekly' },
     { path: '/comicreader/', priority: '0.8', changefreq: 'monthly' },
@@ -20,6 +20,7 @@ const ROUTES = [
     // Left out of the sitemap; the routes still exist as noindexed "moved" stubs.
     { path: '/about/', priority: '0.6', changefreq: 'monthly' },
     { path: '/privacy/', priority: '0.4', changefreq: 'yearly' },
+    { path: '/guide/', priority: '0.8', changefreq: 'monthly' },
     { path: '/tools/', priority: '0.8', changefreq: 'monthly' },
     { path: '/tools/cbz-reducer/', priority: '0.8', changefreq: 'monthly' },
     { path: '/tools/epub-reducer/', priority: '0.8', changefreq: 'monthly' },
@@ -27,7 +28,6 @@ const ROUTES = [
     { path: '/tools/pdf-to-jpg/', priority: '0.8', changefreq: 'monthly' },
     { path: '/tools/qr-generator/', priority: '0.8', changefreq: 'monthly' },
     { path: '/blog/', priority: '0.7', changefreq: 'weekly' },
-    { path: '/changelog/', priority: '0.6', changefreq: 'monthly' },
     { path: '/features/', priority: '0.7', changefreq: 'monthly' },
     { path: '/smartdecrypt/changelog/', priority: '0.5', changefreq: 'monthly' },
     { path: '/smartdecrypt/privacy/', priority: '0.4', changefreq: 'yearly' },
@@ -39,6 +39,7 @@ const ROUTES = [
 // Sister-app changelog/privacy pages: non-English locale variants are noindex'd
 // (see docs/gsc-cloudflare-findings.md) — keep them out of the sitemap. English stays indexed.
 const NOINDEX_NON_EN_ROUTES = new Set([
+    '/guide/',
     '/tools/',
     '/tools/cbz-reducer/',
     '/tools/epub-reducer/',

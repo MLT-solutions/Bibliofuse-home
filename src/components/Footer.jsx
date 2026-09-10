@@ -6,8 +6,6 @@ import logo from '../assets/logo.png';
 // Temporary: point straight at the App Store instead of mlogictech.com/products
 // until that listing is live — see docs/features/app-pages.md. Swap back to
 // mlogictech.com once it's ready.
-const smartDecryptAppStoreUrl = 'https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229';
-const contentCueAppStoreUrl = 'https://apps.apple.com/us/app/contentcue-read-listen/id6770080864';
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -43,8 +41,6 @@ const Footer = () => {
                         <ul className="space-y-2.5">
                             <li><Link to={`/${lang || 'en'}/comicreader/`} className="text-ink transition hover:text-brand">BiblioFuse Reader</Link></li>
                             <li><Link to={`/${lang || 'en'}/tools/`} className="text-ink transition hover:text-brand">{t('redesign.footer.webTool')}</Link></li>
-                            <li><a href={smartDecryptAppStoreUrl} target="_blank" rel="noopener" className="text-ink transition hover:text-brand">SmartDecrypt PDF ZIP</a></li>
-                            <li><a href={contentCueAppStoreUrl} target="_blank" rel="noopener" className="text-ink transition hover:text-brand">ContentCue</a></li>
                             <li><Link to={`/${lang || 'en'}/tools/qr-generator/`} className="text-ink transition hover:text-brand">BiblioFuse QR Generator</Link></li>
                         </ul>
                     </div>

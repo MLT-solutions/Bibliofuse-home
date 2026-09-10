@@ -48,7 +48,7 @@ export default function ToolPageLayout({ slug, children }) {
             />
 
             {/* 1 — the job, then the tool. Nothing between them. */}
-            <section className="mx-auto max-w-4xl px-4 pb-4 pt-10 sm:px-6 sm:pt-14 lg:px-8">
+            <section className="mx-auto max-w-4xl px-4 pb-4 pt-28 sm:px-6 lg:px-8">
                 <nav className="mb-4 text-xs text-slate-500">
                     <Link to={`/${lang}/tools/`} className="hover:text-slate-800">
                         {t('redesign.toolsHub.h1')}

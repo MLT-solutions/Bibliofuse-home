@@ -105,91 +105,50 @@ function renderLocalizedTableCell(cell) {
   );
 }
 
-function ComparisonTable() {
+// Which edition to download. This replaced an 11-row feature comparison on 2026-09-10:
+// 8 of those rows were already in /features/ more granularly (27 features x 8 platforms,
+// with status and since-dates), so the table was mostly duplication. What it did uniquely
+// was carry the purchase model per edition — that is what survives here, plus a link out
+// to the matrix for the per-feature detail.
+function EditionChooser({ lang }) {
   const { t } = useTranslation();
-  const table = t('redesign.home.table', { returnObjects: true });
-  const editions = [
-    { key: 'apple',   name: table.editions.apple,   subtitle: table.subtitles.apple,   badge: table.badges.universal, tint: 'blue' },
-    { key: 'pc',      name: table.editions.pc,      subtitle: table.subtitles.pc,      badge: table.badges.msStore,    tint: 'orange' },
-    { key: 'android', name: table.editions.android, subtitle: table.subtitles.android, badge: table.badges.edition,   tint: 'teal' },
-    { key: 'nas',     name: table.editions.nas,     subtitle: table.subtitles.nas,     badge: table.badges.nas,       tint: 'violet' },
-  ];
-  const rows = table.rows.map((row, index) => ({
-    label: row[0],
-    highlight: index === 6,
-    cells: { apple: row[1], pc: row[2], android: row[3], nas: row[4] },
-  }));
-
+  const e = t('redesign.comicReaderPage.editions', { returnObjects: true });
+  const items = Array.isArray(e.items) ? e.items : [];
+  const tints = {
+    blue: 'border-blue-200 bg-blue-50/60',
+    orange: 'border-orange-200 bg-orange-50/60',
+    teal: 'border-teal-200 bg-teal-50/60',
+    violet: 'border-violet-200 bg-violet-50/60',
+  };
   return (
-    <section id="comparison-table" className="bg-[#f5f8ff] py-20 sm:py-24">
+    <section className="border-y border-slate-200/70 bg-white py-14 sm:py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto mb-12 max-w-2xl text-center">
-          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">{table.eyebrow}</div>
-          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">{table.title}</h2>
-          <p className="mt-4 text-slate-600">{table.desc}</p>
+        <div className="mb-8 max-w-2xl">
+          <div className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">{e.eyebrow}</div>
+          <h2 className="text-xl font-black tracking-tight text-slate-950">{e.title}</h2>
+          <p className="mt-3 text-sm leading-relaxed text-slate-600">{e.desc}</p>
         </div>
-        <div className="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-xl">
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[760px] table-fixed border-collapse">
-              <colgroup>
-                <col className="w-[190px]" />
-                <col />
-                <col />
-                <col />
-                <col />
-              </colgroup>
-              <thead>
-                <tr className="bg-white">
-                  <th className="px-6 py-5 text-left text-xs font-bold uppercase tracking-wider text-slate-400">{table.feature}</th>
-                  {editions.map((edition) => (
-                    <th key={edition.key} className="px-4 py-5 text-center align-bottom">
-                      <div className="flex flex-col items-center gap-1">
-                        <div className={`inline-flex rounded-full px-2 py-0.5 text-[10px] font-black uppercase tracking-wider ${tintClass(edition.tint)}`}>{edition.badge}</div>
-                        <div className="text-base font-black tracking-tight text-slate-950">{edition.name}</div>
-                        <div className="text-xs text-slate-500">{edition.subtitle}</div>
-                      </div>
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((row) => (
-                  <tr key={row.label} className={`border-t border-slate-200 ${row.highlight ? 'bg-blue-50/70' : 'bg-white/70'}`}>
-                    <td className="px-6 py-4 align-top text-sm font-bold text-slate-950">
-                      <div className="flex items-center gap-2">
-                        {row.label}
-                        {row.highlight && <span className="rounded bg-blue-600 px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-white">{table.unique}</span>}
-                      </div>
-                    </td>
-                    {editions.map((edition) => (
-                      <td key={edition.key} className="px-4 py-4 text-center align-top text-sm">
-                        {renderLocalizedTableCell(row.cells[edition.key])}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-                <tr className="border-t border-slate-200 bg-white">
-                  <td className="px-6 py-5 align-middle text-sm font-bold text-slate-950">{table.where}</td>
-                  <td className="px-4 py-5 text-center align-middle">
-                    <StoreBadge type="apple" href={appStoreUrl} size="sm" />
-                  </td>
-                  <td className="px-4 py-5 text-center align-middle">
-                    <StoreBadge type="microsoft" href={bibliofusePcUrl} size="sm" />
-                  </td>
-                  <td className="px-4 py-5 text-center align-middle">
-                    <StoreBadge type="play" href={playStoreUrl} size="sm" />
-                  </td>
-                  <td className="px-4 py-5 text-center align-middle">
-                    <div className="flex flex-col items-center gap-1.5">
-                      <a href={dockerUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-blue-600 hover:text-blue-700">Docker →</a>
-                      <a href={synologyUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-blue-600 hover:text-blue-700">Synology →</a>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {items.map((it) => (
+            <a
+              key={it.key}
+              href={it.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group flex flex-col rounded-2xl border p-5 transition hover:-translate-y-0.5 hover:shadow-lg ${tints[it.tint] || tints.blue}`}
+            >
+              <span className="mb-2 inline-flex w-fit rounded-md bg-white/80 px-2 py-0.5 text-[10px] font-black uppercase tracking-wider text-slate-600">
+                {it.badge}
+              </span>
+              <span className="text-sm font-black leading-snug text-slate-950">{it.name}</span>
+              <span className="mt-1 flex-1 text-xs leading-relaxed text-slate-600">{it.subtitle}</span>
+              <span className="mt-4 text-xs font-bold text-slate-900 group-hover:text-blue-700">↗</span>
+            </a>
+          ))}
         </div>
+        <Link to={`/${lang}/features/`} className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-900 hover:text-blue-700">
+          {e.matrixCta} →
+        </Link>
       </div>
     </section>
   );
@@ -704,6 +663,8 @@ const ComicReader = () => {
               { title: t('redesign.readerSection.features.library.bullet1Title'), body: t('redesign.readerSection.features.library.bullet1Body') },
               { title: t('redesign.readerSection.features.library.bullet2Title'), body: t('redesign.readerSection.features.library.bullet2Body') },
               { title: t('redesign.readerSection.features.library.bullet3Title'), body: t('redesign.readerSection.features.library.bullet3Body') },
+              { title: t('redesign.readerSection.features.library.bullet4Title'), body: t('redesign.readerSection.features.library.bullet4Body') },
+              { title: t('redesign.readerSection.features.library.bullet5Title'), body: t('redesign.readerSection.features.library.bullet5Body') },
             ]}
             image={`${featureMediaBase}/library-shelf.jpg`}
             alt={t('redesign.readerSection.features.library.imageAlt')}
@@ -718,6 +679,8 @@ const ComicReader = () => {
               { title: t('redesign.readerSection.features.reading.bullet1Title'), body: t('redesign.readerSection.features.reading.bullet1Body') },
               { title: t('redesign.readerSection.features.reading.bullet2Title'), body: t('redesign.readerSection.features.reading.bullet2Body') },
               { title: t('redesign.readerSection.features.reading.bullet3Title'), body: t('redesign.readerSection.features.reading.bullet3Body') },
+              { title: t('redesign.readerSection.features.reading.bullet4Title'), body: t('redesign.readerSection.features.reading.bullet4Body') },
+              { title: t('redesign.readerSection.features.reading.bullet5Title'), body: t('redesign.readerSection.features.reading.bullet5Body') },
             ]}
             image={`${featureMediaBase}/navigation-demo-alpha.mp4`}
             alt={t('redesign.readerSection.features.reading.videoAlt', 'BiblioFuse navigation demo showing page curl, continuous reading, minimap and multiple reading styles')}
@@ -748,7 +711,7 @@ const ComicReader = () => {
 
       <VisionProSection />
 
-      <ComparisonTable />
+      <EditionChooser lang={lang} />
 
       <UsageGuide />
 

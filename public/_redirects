@@ -55,3 +55,9 @@
 # The other 38 articles are deleted outright and intentionally return 404 - there is no
 # honest destination for them, and public/404.html no longer bounces to the homepage
 # (that GitHub Pages SPA hack made every dead URL a soft 404 that never deindexed).
+
+# read-manga-online-iphone is a ContentCue article (27 mentions, ContentCue-led opening) that was
+# misclassified as a BiblioFuse keeper in the Phase 3 cut. ContentCue moved to
+# mlogictech.com in Phase 1, so the article follows it.
+/:lang/blog/read-manga-online-iphone/*  https://www.mlogictech.com/products#contentcue  301
+/:lang/blog/read-manga-online-iphone    https://www.mlogictech.com/products#contentcue  301

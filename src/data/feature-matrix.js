@@ -98,6 +98,7 @@ export const GROUPS = [
   { id: 'reading', label: 'Reading' },
   { id: 'libraries', label: 'Libraries & servers' },
   { id: 'streaming', label: 'Streaming from your own machine' },
+  { id: 'formats', label: 'File formats' },
   { id: 'input', label: 'Input & platform' },
 ];
 
@@ -282,6 +283,64 @@ const m = (since) => ({ status: 'merged', since, noteKey: null });
 const na = { status: 'na', since: null, noteKey: null };
 
 export const FEATURES = [
+  // ── File formats ───────────────────────────────────────────────────────────
+  // Added 2026-09-10. These three dimensions existed only in the 11-row "Compare apps"
+  // table on /comicreader/ and were missing from the matrix entirely — CBR appeared
+  // nowhere in it at all, despite format support being the first thing a prospective
+  // buyer checks. The table has been reduced to an edition chooser, so the matrix is
+  // now the single source for per-platform capability.
+  {
+    id: 'format-cbz-cbr',
+    group: 'formats',
+    label: 'CBZ, CBR, ZIP & RAR',
+    note: 'The NAS browser reader opens CBZ/ZIP; CBR/RAR need the native apps.',
+    pro: false,
+    aliases: ['CBZ', 'CBR', 'RAR', 'ZIP', 'comic archive', 'comic book archive'],
+    platforms: {
+      ios: s('2026-05-01'), macos: s('2026-05-01'), visionos: s('2026-06-20'),
+      tvos: s('2026-07-02'), android: s('2026-05-01'), androidtv: s('2026-07-10'),
+      windows: s('2026-05-01'), nas: p('2026-06-01', 'nasArchivesOnly'),
+    },
+  },
+  {
+    id: 'format-epub-pdf-txt',
+    group: 'formats',
+    label: 'EPUB, PDF & TXT',
+    note: 'The NAS browser reader has no PDF support yet.',
+    pro: false,
+    aliases: ['EPUB', 'PDF', 'TXT', 'ebook', 'plain text'],
+    platforms: {
+      ios: s('2026-05-01'), macos: s('2026-05-01'), visionos: s('2026-06-20'),
+      tvos: na, android: s('2026-05-01'), androidtv: na,
+      windows: s('2026-05-01'), nas: p('2026-06-01', 'nasNoPdf'),
+    },
+  },
+  {
+    id: 'icloud-bookshelf',
+    group: 'libraries',
+    label: 'iCloud bookshelf',
+    note: 'Apple platforms only — the shelf and its metadata sync through your own iCloud.',
+    pro: false,
+    aliases: ['iCloud', 'iCloud Drive', 'sync', 'bookshelf', 'Apple sync'],
+    platforms: {
+      ios: s('2026-05-14'), macos: s('2026-05-14'), visionos: s('2026-06-20'),
+      tvos: na, android: na, androidtv: na, windows: na, nas: na,
+    },
+  },
+  {
+    id: 'ui-languages',
+    group: 'input',
+    label: 'Localised interface',
+    note: '11 languages on Apple and Windows; the NAS browser reader is English-only.',
+    pro: false,
+    aliases: ['language', 'languages', 'localisation', 'localization', 'i18n', 'translated UI'],
+    platforms: {
+      ios: s('2026-06-05'), macos: s('2026-06-05'), visionos: s('2026-06-20'),
+      tvos: p('2026-07-02', 'tvosPartialLocale'), android: s('2026-06-12'),
+      androidtv: p('2026-07-10', 'tvosPartialLocale'), windows: s('2026-06-05'), nas: na,
+    },
+  },
+
   // ── Reading ────────────────────────────────────────────────────────────────
   {
     id: 'live-translation',

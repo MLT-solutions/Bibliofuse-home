@@ -47,13 +47,16 @@ const Navigation = () => {
     // below, id 'webapp' entry) — see the 2026-07-20 portfolio review §06:
     // no GSC signal justified its own nav-level destination, and it's now
     // also cross-linked from the comicreader picker as a no-install option.
+    // Changelog left the top nav on 2026-09-10: 45 impressions and 0 clicks across all
+    // locales in five months, and it serves existing users rather than discovery. It is
+    // still linked from the footer and is now noindexed. See docs/features/changelog.md.
     const tabs = [
         { id: 'home', label: t('nav.home'), path: '/' },
         { id: 'reader', label: t('nav.reader'), path: '/comicreader/' },
-        { id: 'about', label: t('nav.about'), path: '/about/' },
-        { id: 'blog', label: t('nav.blog'), path: '/blog/' },
-        { id: 'changelog', label: t('nav.changelog'), path: '/changelog/' },
         { id: 'features', label: t('nav.features'), path: '/features/' },
+        { id: 'guide', label: t('nav.guide'), path: '/guide/' },
+        { id: 'blog', label: t('nav.blog'), path: '/blog/' },
+        { id: 'about', label: t('nav.about'), path: '/about/' },
     ];
     // Built from src/data/tools.js so the menu can never drift from the actual routes.
     // Until 2026-09-10 this menu was labelled "Tools" but listed BiblioFuse Reader, one

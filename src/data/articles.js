@@ -12,12 +12,6 @@ export const articles = [
     coverImage: '/image/blog/Comic Library Management.jpg',
   },
   {
-    slug: 'read-manga-online-iphone',
-    date: '2026-05-29',
-    tags: ['manga', 'ios', 'reading'],
-    coverImage: '/image/blog/Read Manga Without Losing Your Place.jpg',
-  },
-  {
     slug: 'bibliofuse-tools-tab-guide',
     date: '2026-05-25',
     tags: ['guide', 'tips'],

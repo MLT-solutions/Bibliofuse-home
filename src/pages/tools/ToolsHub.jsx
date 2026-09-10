@@ -5,6 +5,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEO from '../../components/SEO';
+import MicrosoftStoreBadge from '../../components/MicrosoftStoreBadge';
 import { TOOLS } from '../../data/tools';
 
 const ACCENTS = {
@@ -20,6 +21,7 @@ export default function ToolsHub() {
     const { lang = 'en' } = useParams();
     const hub = t('redesign.toolsHub', { returnObjects: true });
     const trust = t('redesign.toolsPages.trust', { returnObjects: true });
+    const offline = t('redesign.toolsHub.offline', { returnObjects: true });
 
     return (
         <div className="min-h-screen bg-white text-slate-950">
@@ -37,7 +39,7 @@ export default function ToolsHub() {
                 ]}
             />
 
-            <section className="mx-auto max-w-5xl px-4 pb-10 pt-12 sm:px-6 sm:pt-16 lg:px-8">
+            <section className="mx-auto max-w-5xl px-4 pb-10 pt-28 sm:px-6 lg:px-8">
                 <h1 className="text-[clamp(1.9rem,4.2vw,2.8rem)] font-black leading-[1.06] tracking-tight text-slate-950">
                     {hub.h1}
                 </h1>
@@ -79,7 +81,41 @@ export default function ToolsHub() {
                 </div>
             </section>
 
+            {/* The two Windows Store apps, moved here when the homepage's "Standalone
+                tools" section was retired. Same jobs as the browser tools above, for
+                people who would rather not work in a browser. */}
             <section className="border-t border-slate-100 bg-[#f8fafc] py-12">
+                <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+                    <div className="mb-6">
+                        <div className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">
+                            {offline.eyebrow}
+                        </div>
+                        <p className="max-w-2xl text-sm leading-relaxed text-slate-600">{offline.desc}</p>
+                    </div>
+                    <div className="grid gap-4 sm:grid-cols-2">
+                        {[
+                            { name: offline.cbzName, desc: offline.cbzDesc, logo: '/image/cbz-resizer-logo.png', href: 'https://apps.microsoft.com/detail/9p7b02538tfq' },
+                            { name: offline.epubName, desc: offline.epubDesc, logo: '/image/epub-resizer-logo.png', href: 'https://apps.microsoft.com/detail/9pdllhdz6kkl' },
+                        ].map((app) => (
+                            <div key={app.name} className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5">
+                                <div className="mb-3 flex items-center gap-2.5">
+                                    <span className="grid h-9 w-9 flex-shrink-0 place-items-center overflow-hidden rounded-xl">
+                                        <img src={app.logo} alt="" className="h-9 w-9 object-cover" />
+                                    </span>
+                                    <div>
+                                        <div className="text-sm font-black text-slate-950">{app.name}</div>
+                                        <div className="text-[10px] text-slate-500">{offline.platform}</div>
+                                    </div>
+                                </div>
+                                <p className="mb-4 flex-1 text-xs leading-relaxed text-slate-600">{app.desc}</p>
+                                <MicrosoftStoreBadge href={app.href} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="border-t border-slate-100 bg-white py-12">
                 <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
                     <p className="text-sm text-slate-600">{t('redesign.toolsPages.appPitch')}</p>
                     <Link

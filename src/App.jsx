@@ -7,6 +7,7 @@ import { SUPPORTED_LANGUAGES } from './i18n';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import ToolsHub from './pages/tools/ToolsHub';
+import Guide from './pages/Guide';
 import ToolRoutePage from './pages/tools/ToolRoutePage';
 import { TOOL_SLUGS } from './data/tools';
 import About from './pages/About';
@@ -95,6 +96,7 @@ function AppLayout() {
           <Route path="/" element={<Home />} />
           <Route path="/reader" element={<Navigate to={`/${lang}/comicreader/`} replace />} />
           <Route path="/comicreader" element={<ComicReader />} />
+          <Route path="/guide" element={<Guide />} />
           <Route path="/tools" element={<ToolsHub />} />
           {TOOL_SLUGS.map((slug) => (
             <Route key={slug} path={`/tools/${slug}`} element={<ToolRoutePage slug={slug} />} />

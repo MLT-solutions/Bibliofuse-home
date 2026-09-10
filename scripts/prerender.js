@@ -19,8 +19,8 @@ const __dirname = dirname(__filename);
 const distDir = join(__dirname, '..', 'dist');
 
 const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
-const ARTICLE_SLUGS = ['epub-reader-iphone-no-drm', 'cbz-cbr-rar-zip-which-format-best', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'read-cbz-cbr-on-iphone', 'digital-comic-library-management-guide', 'read-manga-online-iphone', 'cbz-vs-cbr-vs-epub-formats-explained', 'ocr-comics-extract-text-iphone', 'getting-started-with-bibliofuse', 'bibliofuse-tools-tab-guide'];
-const ROUTES = ['/', '/comicreader', '/smartdecrypt', '/smartdecrypt/changelog', '/smartdecrypt/privacy', '/contentcue', '/contentcue/changelog', '/contentcue/privacy', '/androidrequest', '/about', '/privacy', '/tools', '/tools/cbz-reducer', '/tools/epub-reducer', '/tools/pdf-to-cbz', '/tools/pdf-to-jpg', '/tools/qr-generator', '/blog', '/changelog', '/features', ...ARTICLE_SLUGS.map(s => `/blog/${s}`)];
+const ARTICLE_SLUGS = ['epub-reader-iphone-no-drm', 'cbz-cbr-rar-zip-which-format-best', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'read-cbz-cbr-on-iphone', 'digital-comic-library-management-guide', 'cbz-vs-cbr-vs-epub-formats-explained', 'ocr-comics-extract-text-iphone', 'getting-started-with-bibliofuse', 'bibliofuse-tools-tab-guide'];
+const ROUTES = ['/', '/comicreader', '/smartdecrypt', '/smartdecrypt/changelog', '/smartdecrypt/privacy', '/contentcue', '/contentcue/changelog', '/contentcue/privacy', '/androidrequest', '/about', '/privacy', '/guide', '/tools', '/tools/cbz-reducer', '/tools/epub-reducer', '/tools/pdf-to-cbz', '/tools/pdf-to-jpg', '/tools/qr-generator', '/blog', '/changelog', '/features', ...ARTICLE_SLUGS.map(s => `/blog/${s}`)];
 
 const CONCURRENCY = 3;
 const MAX_RETRIES = 3;
@@ -43,12 +43,13 @@ const SEO_READY_TIMEOUT_MS = Number(process.env.PRERENDER_SEO_READY_TIMEOUT_MS |
 // Keep these two sets in sync with generate-static-routes.js.
 const INDEXED_LANGUAGES = ['en', 'es', 'fr', 'ja'];
 const NOINDEX_NON_EN_ROUTES = new Set([
+    '/guide',
     '/tools', '/tools/cbz-reducer', '/tools/epub-reducer', '/tools/pdf-to-cbz',
     '/tools/pdf-to-jpg', '/tools/qr-generator',
     '/smartdecrypt/changelog', '/smartdecrypt/privacy',
     '/contentcue/changelog', '/contentcue/privacy',
 ]);
-const NOINDEX_ALL_LOCALES_ROUTES = new Set(['/androidrequest', '/smartdecrypt', '/contentcue']);
+const NOINDEX_ALL_LOCALES_ROUTES = new Set(['/androidrequest', '/smartdecrypt', '/contentcue', '/changelog']);
 
 function isIndexed(lang, route) {
     if (!INDEXED_LANGUAGES.includes(lang)) return false;

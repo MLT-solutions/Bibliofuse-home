@@ -8,7 +8,8 @@
     "tools": "ツール",
     "getApp": "アプリを入手",
     "changelog": "更新履歴",
-    "features": "機能"
+    "features": "機能",
+    "guide": "ガイド"
   },
   "home": {
     "hero": {
@@ -240,7 +241,7 @@
       "products": "製品",
       "company": "会社",
       "legal": "法的情報",
-      "webTool": "Webツール",
+      "webTool": "ツール",
       "contact": "お問い合わせ",
       "work": "採用・協業",
       "eula": "利用規約（EULA）",
@@ -250,7 +251,6 @@
       "seoTitle": "BiblioFuse — 電子書籍リーダー、ライブラリ管理、圧縮ツール",
       "seoDesc": "BiblioFuseは、iPhone、iPad、Mac、Android、Web上で個人のライブラリを読書、整理、ストリーミング、圧縮、結合するためのプライベートな電子書籍エコシステムです。",
       "hero": {
-        "version": "バージョン 2.0.1 — iPhone、iPad、Macネイティブ対応",
         "titleA": "あなたのライブラリ、",
         "titleB": "あなたの読み方で。",
         "desc": "BiblioFuseは、iPhone、iPad、Mac上の個人の電子書籍、コミック、ドキュメントコレクションのためのネイティブリーダー兼ライブラリマネージャーです。",
@@ -261,136 +261,12 @@
         "chipC": "TTS · 自動スクロール",
         "chipD": "ハンズフリー読書",
         "reads": "読む",
-        "languages": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語"
-      },
-      "table": {
-        "eyebrow": "アプリを比較",
-        "title": "自分に合ったBiblioFuseアプリを選ぶ。",
-        "desc": "まずは用途から選びましょう：マンガを読む、小説を検索する、書類のロックを解除する、重複ファイルを整理する、またはブラウザでさっと使えるツールを利用する。",
-        "feature": "機能",
-        "badges": {
-          "universal": "ユニバーサル購入",
-          "edition": "エディション",
-          "msStore": "Microsoft Store",
-          "nas": "セルフホスト・無料"
-        },
-        "editions": {
-          "apple": "BiblioFuse Reader iOS / macOS",
-          "pc": "BiblioFuse Reader PC",
-          "android": "BiblioFuse Reader Android",
-          "nas": "BiblioFuse NAS"
-        },
-        "subtitles": {
-          "apple": "iPhone・iPad・Mac・Vision Pro・Apple TV",
-          "pc": "Windows",
-          "android": "スマートフォン・タブレット・Android TV",
-          "nas": "Docker・Synology"
-        },
-        "rows": [
-          [
-            "読書対応形式",
-            "iPhone、iPad、Mac、Vision Pro|EPUB・PDF・CBZ・CBR・RAR・ZIP・TXT||Apple TV|CBZ/CBR/ZIP/RARのみ",
-            "EPUB・PDF・CBZ・CBR・RAR・ZIP・TXT",
-            "スマートフォンとタブレット|EPUB・PDF・CBZ・CBR・RAR・ZIP・TXT||Android TV|CBZ/CBR/ZIP/RARのみ",
-            "EPUB・CBZ・CBR・RAR・ZIP・TXT|ブラウザリーダー、PDFは未対応"
-          ],
-          [
-            "圧縮・結合ツール",
-            "EPUB・PDF・CBZ・CBR・RAR・ZIP",
-            "EPUB・PDF・CBZ・CBR・RAR・ZIP",
-            "EPUB・PDF・CBZ・CBR・RAR・ZIP",
-            "-"
-          ],
-          [
-            "リーダー機能",
-            "TTS、ピークズーム、自動スクロール、進捗、評価、タグ",
-            "TTS、自動スクロール、進捗、評価、タグ",
-            "TTS、ピークズーム、自動スクロール、進捗、評価、タグ",
-            "連続スクロール、進捗、評価、タグ|TTSやピークズームは非対応"
-          ],
-          [
-            "コントローラー入力",
-            "Xbox系Bluetoothコントローラー|カスタマイズ可能 — iPhone、iPad、Mac、Vision Pro、Apple TV",
-            "Xbox系Bluetoothコントローラー|固定割り当て",
-            "Android TV|方向キー/リモコン操作を標準搭載||スマートフォンとタブレット|Xbox系Bluetoothコントローラー、カスタマイズ可能",
-            "-"
-          ],
-          [
-            "キーボード入力",
-            "MacとVision Pro|Page Down/スペース、矢印キー、⌘ショートカット||iPadとiPhone|外部キーボードでのライブラリ操作のみ",
-            "矢印キーとスペース|さらにF11で全画面、Escで終了",
-            "-",
-            "矢印キー|ブラウザリーダーでのページ送り"
-          ],
-          [
-            "ライブラリをホストできる",
-            "Macのみ|iPhone、iPad、Vision Pro、Apple TVは代わりにホストからストリーミング",
-            "はい",
-            "-",
-            "はい|DockerとSynology"
-          ],
-          [
-            "ホストからストリーミング",
-            "iPhone、iPad、Vision Pro|iCloud + Tailscaleで自動、またはローカルWi-Fi／手動Tailscale||Apple TV|ローカルWi-Fiのみ — iCloudやTailscaleは非対応",
-            "-",
-            "Androidスマートフォン|ローカルWi-Fiまたは手動Tailscale、iCloudの自動検出には非対応||Android TV|ローカルWi-Fiのみ",
-            "-"
-          ],
-          [
-            "OPDS・Kavita・Komgaからストリーミング",
-            "iPhone、iPad、Vision Pro|OPDS・Kavita・Komga",
-            "-",
-            "Androidスマートフォンとタブレット|OPDS・Kavita・Komga",
-            "-"
-          ],
-          [
-            "ライブラリのソース",
-            "ローカル + iCloud + SMB/NAS|Mac：ネイティブ対応・iOS/Vision Pro：ストリーミング経由",
-            "ローカル + iCloud + SMB/NAS",
-            "ローカル + 外部フォルダ",
-            "自前の接続/ネットワークストレージ|iCloudではない"
-          ],
-          [
-            "iCloud本棚",
-            "デバイス間で同期|Apple TVでは非対応 — iCloudなし",
-            "デバイス間で同期",
-            "-",
-            "-"
-          ],
-          [
-            "対応言語",
-            "11言語|EN ES FR NL PT RU ZH JA KO ID MS",
-            "11言語|EN ES FR NL PT RU ZH JA KO ID MS",
-            "12言語|EN ES FR NL PT RU ZH JA KO ID MS DE",
-            "11言語|EN ES FR NL PT RU ZH JA KO ID MS"
-          ]
-        ],
-        "unique": "独自機能",
-        "where": "入手方法"
-      },
-      "toolsSection": {
-        "eyebrow": "単体ツール",
-        "title": "単発作業向けの専用ツール",
-        "web": {
-          "name": "BiblioFuse Web",
-          "subtitle": "無料 · ブラウザ",
-          "desc": "ブラウザ上でEPUB、CBZ、PDFファイルを圧縮・結合。インストール不要、アカウント不要。",
-          "cta": "無料ツールを起動"
-        },
-        "pcCbz": {
-          "name": "BiblioFuse CBZ Resizer",
-          "subtitle": "Windows · Microsoft Store",
-          "desc": "Windows でコミックアーカイブを圧縮・結合。"
-        },
-        "pcEpub": {
-          "name": "BiblioFuse EPUB Resizer",
-          "subtitle": "Windows · Microsoft Store",
-          "desc": "Windows で EPUB ファイルを圧縮・結合。"
-        }
+        "languages": "アプリUI：英語 · スペイン語 · フランス語 · オランダ語 · ポルトガル語 · ロシア語 · 簡体字中国語 · 日本語 · 韓国語 · インドネシア語 · マレー語",
+        "readerCta": "BiblioFuse Reader を見る"
       },
       "faq": {
         "eyebrow": "FAQ",
-        "title": "BiblioFuseツールを選ぶ",
+        "title": "Common questions",
         "items": [
           {
             "q": "BiblioFuse Reader はどんなファイルを開けますか？",
@@ -401,18 +277,29 @@
             "a": "いいえ。アプリは端末上処理を中心に作られています。読書、圧縮、重複スキャン、Webツールはローカルで処理します。同期とストリーミングは、BiblioFuseアカウントではなく、あなたのiCloud、ローカルネットワーク、Tailscaleを使います。"
           },
           {
-            "q": "iPhoneはMacやPCのライブラリを読めますか？",
-            "a": "はい。BiblioFuse ReaderはMacまたはPCのライブラリからストリーミングして読めます。大きなコミックアーカイブはデスクトップに置いたまま、iPhoneで自宅Wi‑FiまたはTailscaleの5G経由で開けます。"
-          },
-          {
-            "q": "軽量ツールはBiblioFuse Readerとは別ですか？",
-            "a": "はい。WebツールとWindows resizerツールは、圧縮、変換、結合などの単独作業向けです。完全なリーダーとライブラリ管理が不要なときに使います。"
-          },
-          {
             "q": "アプリは無料ですか？",
             "a": "多くのBiblioFuseアプリは無料で試せるか、無料枠があります。重い利用には任意の有料アップグレードがあります。各プラットフォームの現在価格はストアページで確認できます。"
           }
         ]
+      },
+      "secondHero": {
+        "eyebrow": "New this release",
+        "titleA": "Read manga in your language,",
+        "titleB": "on the page.",
+        "desc": "Live comic and manga translation renders the text in place while you read — no export step, no second app. Pair it with native Kavita and Komga libraries or any OPDS catalogue and your whole collection travels with you.",
+        "cta": "See what is new",
+        "bullets": [
+          "Live comic & manga translation, in place as you read (Pro)",
+          "Native Komga & Kavita API, with position and bookmark sync (Pro)",
+          "OPDS 1.x and OPDS-PSE streaming from any catalogue (Pro)",
+          "Vertical Japanese, dual-page spreads and page-curl turns"
+        ]
+      },
+      "toolsStrip": {
+        "eyebrow": "Free browser tools",
+        "title": "Fix the file before you read it.",
+        "desc": "Shrink an archive, convert a PDF, compress an EPUB — in the browser, on your device, nothing uploaded.",
+        "cta": "All tools"
       }
     },
     "productFamily": {
@@ -478,7 +365,11 @@
           "bullet2Body": "各書籍が中断箇所を記憶。",
           "bullet3Title": "iCloud クロスデバイス",
           "bullet3Body": "iPad で中断した箇所を iPhone で再開。",
-          "imageAlt": "タグ、評価、読書進捗のある BiblioFuse ライブラリ"
+          "imageAlt": "タグ、評価、読書進捗のある BiblioFuse ライブラリ",
+          "bullet4Title": "Native Komga & Kavita",
+          "bullet4Body": "Connect straight to your server’s own API — not just an OPDS feed — with reading position and bookmarks syncing both ways. Pro.",
+          "bullet5Title": "Any OPDS catalogue",
+          "bullet5Body": "OPDS 1.x with OPDS-PSE page streaming, so comics arrive a page at a time from Calibre-Web, COPS, Ubooquity or anything else that speaks it. Pro."
         },
         "reading": {
           "eyebrow": "あなたの読み方で",
@@ -490,7 +381,11 @@
           "bullet2Body": "ページ送りまたは連続、画像アーカイブ向けに調整。",
           "bullet3Title": "ピークズーム",
           "bullet3Body": "ダブルタップで密集パネルと小さな文字を拡大。",
-          "imageAlt": "TTS、自動スクロール、ピークズーム付き BiblioFuse 読書ビュー"
+          "imageAlt": "TTS、自動スクロール、ピークズーム付き BiblioFuse 読書ビュー",
+          "bullet4Title": "Live comic & manga translation",
+          "bullet4Body": "On-device OCR reads the balloon and typesets the translation back into it while you read. No export step, no second app. Pro.",
+          "bullet5Title": "Spreads, page curl & vertical Japanese",
+          "bullet5Body": "Dual-page spreads for double-page art, page-curl turns, and proper tategaki for vertical EPUB and manga."
         },
         "streaming": {
           "eyebrow": "デスクトップからモバイルへ",
@@ -680,11 +575,6 @@
           "title": "iPhoneとMacでデジタルコミックライブラリを管理する完全ガイド",
           "excerpt": "BiblioFuseはiOS 17以降対応のネイティブiPhone・iPadリーダーで、CBZ、CBR、EPUB、PDF、ZIP、RAR、TXTファイルをタグ・評価・iCloud同期・Wi-Fi転送で管理できます。このガイドでは、iPhone、iPad、MacでデジタルコミックライブラリをiPhoneやMacで整理・圧縮・転送・閲覧する全手順を解説します。",
           "seoDescription": "BiblioFuseはiOS."
-        },
-        "read-manga-online-iphone": {
-          "title": "iPhoneでオンライン漫画を読んでいて場所を見失わない方法",
-          "excerpt": "ContentCueはポップアップ広告が漫画の読書セッションを中断する前にスクロール位置を自動保存するiOSブラウザです——「再開」をタップすれば、Webtoons、Tapas、またはどの漫画サイトでも、ちょうど読んでいた場所に戻れます。ローカルのCBZ・CBR・EPUBコレクションには、BiblioFuseがすべての巻の正確なページを記憶するiPhone専用の読書アプリです。",
-          "seoDescription": "ContentCueはポップアップ広告が漫画の読書セッションを中断する前にスクロール位置を自動保存するiOSブラウザです——「再開」をタップすれば、Webtoons、Tapas、またはどの漫画サイトでも、ちょうど読んでいた場所に戻れます。ローカルのCBZ・CBR・EPUBコレクションには、BiblioFuse"
         },
         "getting-started-with-bibliofuse": {
           "title": "BiblioFuseを使い始める",
@@ -1033,178 +923,7 @@
     },
     "comicReaderPage": {
       "faqTitle": "よくある質問",
-      "faq": [
-        {
-          "q": "1回の購入ですべてのプラットフォームをカバーしますか？",
-          "a": "いいえ。iOS + Mac は1回のユニバーサル購入で、1度の支払いで iPhone、iPad、Mac、Apple Vision Pro をカバーします。Android リーダー、PC リーダー、PC ツールはそれぞれ別売です。"
-        },
-        {
-          "q": "BiblioFuse は Apple Vision Pro で使えますか？",
-          "a": "はい。BiblioFuse は App Store のネイティブ visionOS アプリで、互換モードの iPad アプリではなく本物の空間ウィンドウです。視線トラッキング、ピンチ、マウス、トラックパッド、キーボードに対応し、iOS + Mac のユニバーサル購入に追加費用なしで含まれます。"
-        },
-        {
-          "q": "BiblioFuse は visionOS でどんな空間読書レイアウトに対応していますか？",
-          "a": "3つの空間ライブラリレイアウト：空間の本棚（浮かぶ棚に表紙を配置）、グリッド表示（大きなライブラリ向けの浮遊グリッド）、傾斜ウォール（評価とタグのフィルター付きの傾いたギャラリーウォール）。Mac や PC からライブラリをストリーミングして、Vision Pro のストレージを空けたままにもできます。"
-        },
-        {
-          "q": "iPhoneのBiblioFuseに本やフォルダを追加するには？",
-          "a": "BiblioFuse はファイルをiCloud同期フォルダに保存します。ファイルアプリ（BiblioFuseフォルダにファイルをコピー）、AirDrop、または内蔵Wi-Fi転送で本を追加できます。MacまたはPCからライブラリセッションを開き、任意のブラウザからファイルをドラッグしてください。",
-          "link": {
-            "label": "ステップバイステップのサイドロードガイド",
-            "href": "/blog/sideload-comics-iphone-without-itunes/"
-          }
-        },
-        {
-          "q": "MacまたはPCからiPhoneへのストリーミングの仕組みは？",
-          "a": "MacまたはPCがローカルサーバーを起動し、接続アドレスをiCloud Driveに書き込みます。iPhoneが自動的に検出します。両デバイスはTailscaleをオンにする必要があります（自宅とリモートで使用可能）。一方のデバイスだけTailscaleがオンの場合、接続は失敗します。両方を常にオンにすると最も安定した体験が得られます。"
-        },
-        {
-          "q": "ストリーミングの設定に必要なものは？",
-          "a": "MacまたはPCとiPhoneの両方で以下を設定してください：",
-          "bullets": [
-            {
-              "text": "両デバイスで同じiCloudアカウントにサインイン",
-              "sub": [
-                "iOSとMacでは：設定 → [あなたの名前] → iCloudを開き、BiblioFuseが有効になっていることを確認",
-                "PCでは：iCloudは内蔵されていません — Microsoft Storeから<a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">iCloud for Windowsをダウンロード</a>"
-              ]
-            },
-            {
-              "text": "両デバイスでTailscaleをONにする必要があります",
-              "sub": [
-                "両方ON — 自宅と5Gリモートで使用可能",
-                "混在（一方がON、もう一方がOFF）— 接続が失敗",
-                "Tailscaleの出口ノードを有効にする必要はありません",
-                "iCloudとTailscaleのアカウントは異なるメールアドレスを使用できます"
-              ]
-            },
-            {
-              "text": "アプリの初回起動時にネットワークアクセスを許可する"
-            }
-          ]
-        },
-        {
-          "q": "ストリーミングは正しく設定されているのに動作しない — 何を試せばいい？",
-          "a": "古いエンドポイントキャッシュが最も一般的な原因です。iCloud に保存されている <code>stream_endpoint.json</code> ファイルのひとつ以上のタイムスタンプが古く、BiblioFuse がホストを検出できていません。",
-          "bullets": [
-            {
-              "text": "iCloud から古いファイルを削除する",
-              "sub": [
-                "iPhone の場合：ファイルアプリ → iCloud Drive → BiblioFuse（ルート）と BiblioFuse → 書類 を開きます。",
-                "Mac の場合：Finder → iCloud Drive → BiblioFuse（ルート）と BiblioFuse → 書類 を開きます。",
-                "両方の場所で、<code>stream_endpoint.json</code>、<code>stream_endpoint 1.json</code>、<code>stream_endpoint 2.json</code> などのファイルをすべて削除してください。",
-                "PC の場合：iCloud はこれらのファイルのクラウド版（オンラインのみ）しか表示しないことがあるため、PC からの削除は確実に機能しない場合があります — iPhone または Mac を使用してください。"
-              ]
-            },
-            {
-              "text": "削除後、ホスト（Mac または PC）と iPhone の両方で BiblioFuse を再起動する",
-              "sub": [
-                "ホストアプリが現在のタイムスタンプで新しいエンドポイントファイルを再生成します。",
-                "iPhone でストリーミングソースリストを開くと、PC または Mac の名前の右側に緑のドットが表示され、検出されたことが確認できます。",
-                "ドットが灰色の場合は、数秒待つか、ホストの BiblioFuse を強制終了して再起動してください。"
-              ]
-            }
-          ]
-        },
-        {
-          "q": "なぜストリーミングにTailscaleが必要なのですか？自宅Wi-Fiだけでは使えないのですか？",
-          "a": "TailscaleはiOSがローカルネットワーク接続を処理する方法のために必要です。以下がその経緯です：",
-          "bullets": [
-            {
-              "text": "初期バージョンはTailscaleなしで自宅Wi-Fiで動作していました",
-              "sub": [
-                "アプリはBonjour（AppleのローカルディスカバリM）をHTTP経由で使用していました — 正常に動作していました",
-                "5Gリモートストリーミングが追加されると、iOS App Transport SecurityがIPアドレスへのHTTP接続をブロックし始め、LANのみのパスが壊れました"
-              ]
-            },
-            {
-              "text": "Tailscaleは自宅Wi-Fiでもリモートと同様に機能します",
-              "sub": [
-                "両デバイスが同じネットワーク上にある場合、Tailscaleはトラフィックを直接ルーティングします — 通常のWi-Fiと比較して速度の低下はありません",
-                "自宅でも外出先でもTailscaleをオンにしておくと、モードの切り替えなしに一貫したセットアップが得られます"
-              ]
-            },
-            {
-              "text": "TailscaleなしのLANのみモードは現在のロードマップにはありません",
-              "sub": [
-                "Tailscaleをオフにしても、アプリが以前に保存されたTailscaleアドレスを試みてハンドシェイク失敗になる場合があります",
-                "信頼性の高い自動LANフォールバックを構築することは複雑で、現時点では予定されていません",
-                "最もシンプルな設定：両デバイスで常にTailscaleをオンにしておいてください。追加設定なしで自宅Wi-Fiと5Gリモートの両方に対応します"
-              ]
-            }
-          ]
-        },
-        {
-          "q": "AndroidがMacやPCから本を受信できないのはなぜですか？",
-          "a": "Androidアプリはストリーミングのハンドシェイクメカニズムの基盤となるiCloud統合のない別のコードベースを使用しています。Androidの最善のワークフローは、SyncthingまたはHJようなツールを使ってファイルをスマートフォンに同期し、そのフォルダをアプリのライブラリソースとして追加することです。"
-        },
-        {
-          "q": "読書の進捗、ブックマーク、評価、タグはどこに保存されますか？",
-          "a": "本のファイルがどこに保存されているかによって異なります：",
-          "bullets": [
-            {
-              "text": "ローカルストレージ — そのデバイスにのみ保存、デバイス間の同期なし"
-            },
-            {
-              "text": "iCloudストレージ — iCloudに保存、すべてのiOS、Mac、PCデバイスで自動同期"
-            },
-            {
-              "text": "SMB / ネットワーク共有（MacまたはPCストリーミング）— ホストデバイスに保存",
-              "sub": [
-                "iOSがMacストリームを読む：進捗はMacに保存",
-                "iOSがPCストリームを読む：進捗はPCに保存",
-                "PC ↔ Mac：独立して保存され、データは共有されない",
-                "MacとPCの両方をストリーミングホストとして使用すると、読書データが分割されます。一貫性のために1つのホストを使用することをお勧めします。"
-              ]
-            }
-          ]
-        },
-        {
-          "q": "PC ReaderとPC EPUB / CBZツールの違いは何ですか？",
-          "a": "PC Readerは完全な読書アプリです — 本を開き、ライブラリを管理し、ファイルを圧縮し、iPhoneにストリーミングします。PC EPUBとCBZツールは、リーダーなしで圧縮と結合のみに特化した、より軽量で安価なアプリです。"
-        },
-        {
-          "q": "BiblioFuseでより良いテキスト読み上げの声を使うにはどうすればよいですか？",
-          "a": "高品質な音声はデバイスに内蔵されていますが、別途ダウンロードが必要です — インストール後、BiblioFuseが自動的に認識します。",
-          "bullets": [
-            {
-              "text": "iPhone / iPad",
-              "sub": [
-                "設定 → アクセシビリティ → スピーチ → 声 に移動",
-                "言語を選択し、「拡張」または「プレミアム」の声をダウンロード",
-                "iOS 16+ のプレミアム音声はニューラルクオリティ（Siriレベル）"
-              ]
-            },
-            {
-              "text": "Mac",
-              "sub": [
-                "システム設定 → アクセシビリティ → スピーチ → システムの声 → 声を管理 に移動",
-                "言語の「拡張」または「プレミアム」の声をダウンロード"
-              ]
-            },
-            {
-              "text": "Windows 10 / Windows 11",
-              "sub": [
-                "設定 → 時刻と言語 → 言語と地域 に移動",
-                "読書言語を追加するか、インストール済み言語の言語オプションを開く",
-                "言語機能の下にある「テキスト読み上げ」をインストール",
-                "BiblioFuseを再起動し、新しいTTSセッションを開始"
-              ]
-            },
-            {
-              "text": "Windows 11 ナチュラルボイス（オプション）",
-              "sub": [
-                "設定 → アクセシビリティ → ナレーター に移動",
-                "「ナチュラルボイスの追加」から使いたい音声をダウンロード",
-                "注意：Windowsはこれらの音声をナレーターのみに提供し、すべてのアプリには対応しない場合があります"
-              ]
-            },
-            {
-              "text": "アプリのアップデートは不要 — BiblioFuseはWindowsまたはAppleのTTSシステムを通じて公開された新しい音声を自動検出"
-            }
-          ]
-        }
-      ],
+      "faq": [],
       "vision": {
         "eyebrow": "Apple Vision Pro に対応",
         "badge": "ネイティブ visionOS アプリ",
@@ -1280,6 +999,46 @@
             "imageAlt": "インフォグラフィック：iCloudで端末容量を節約し、自動読み込みと同期された読書進捗"
           }
         }
+      },
+      "editions": {
+        "eyebrow": "アプリを比較",
+        "title": "自分に合ったBiblioFuseアプリを選ぶ。",
+        "desc": "まずは用途から選びましょう：マンガを読む、小説を検索する、書類のロックを解除する、重複ファイルを整理する、またはブラウザでさっと使えるツールを利用する。",
+        "matrixCta": "Compare every feature by platform",
+        "items": [
+          {
+            "key": "apple",
+            "name": "BiblioFuse Reader iOS / macOS",
+            "subtitle": "iPhone・iPad・Mac・Vision Pro・Apple TV",
+            "badge": "ユニバーサル購入",
+            "tint": "blue",
+            "href": "https://apps.apple.com/app/id6758330093"
+          },
+          {
+            "key": "pc",
+            "name": "BiblioFuse Reader PC",
+            "subtitle": "Windows",
+            "badge": "Microsoft Store",
+            "tint": "orange",
+            "href": "https://apps.microsoft.com/detail/9n1lnmm3f7h9"
+          },
+          {
+            "key": "android",
+            "name": "BiblioFuse Reader Android",
+            "subtitle": "スマートフォン・タブレット・Android TV",
+            "badge": "エディション",
+            "tint": "teal",
+            "href": "https://play.google.com/store/apps/details?id=com.mlogictech.bibliofuse"
+          },
+          {
+            "key": "nas",
+            "name": "BiblioFuse NAS",
+            "subtitle": "Docker・Synology",
+            "badge": "セルフホスト・無料",
+            "tint": "violet",
+            "href": "https://github.com/MLT-solutions/bibliofuse-nas-distribution"
+          }
+        ]
       }
     },
     "androidInterest": {
@@ -1401,7 +1160,16 @@
       "h1": "Tools",
       "intro": "Small tools for the file formats BiblioFuse reads. Each one runs entirely inside your browser — the file never leaves your device, and there is nothing to install or sign up for.",
       "openCta": "Open",
-      "backCta": "All tools"
+      "backCta": "All tools",
+      "offline": {
+        "eyebrow": "Offline tools for Windows",
+        "desc": "Native Microsoft Store apps for the same jobs, when you would rather not work in a browser.",
+        "platform": "Windows · Microsoft Store",
+        "cbzName": "BiblioFuse CBZ Resizer",
+        "cbzDesc": "Windows でコミックアーカイブを圧縮・結合。",
+        "epubName": "BiblioFuse EPUB Resizer",
+        "epubDesc": "Windows で EPUB ファイルを圧縮・結合。"
+      }
     },
     "toolsPages": {
       "trust": {
@@ -1552,7 +1320,7 @@
           },
           {
             "q": "Does it work on password-protected PDFs?",
-            "a": "No. An encrypted PDF has to be unlocked before anything can render it. SmartDecrypt handles that case."
+            "a": "No. An encrypted PDF has to be unlocked before anything can render it. SmartDecrypt, a separate app from the same studio, handles that case."
           }
         ]
       },
@@ -1584,6 +1352,144 @@
           }
         ]
       }
+    },
+    "guidePage": {
+      "seoTitle": "BiblioFuse Guide - Setup, Streaming, Libraries & Troubleshooting",
+      "seoDesc": "How to set up BiblioFuse: adding books, connecting Kavita, Komga and OPDS libraries, streaming from your own Mac or PC, reading options, and fixing common problems.",
+      "h1": "Guide",
+      "intro": "Setup, streaming and troubleshooting in one place. Everything here applies to the app you already have - no account needed to read any of it.",
+      "footerNote": "Not covered here? Support replies to real email, not a ticket queue.",
+      "footerCta": "Email support",
+      "sections": [
+        {
+          "id": "getting-started",
+          "title": "Getting started",
+          "desc": "Install it, get your files in, and know where your progress lives.",
+          "items": [
+            {
+              "q": "How do I add books and folders to BiblioFuse on iPhone?",
+              "a": "BiblioFuse stores files in its own iCloud-synced folder. You can add books via the Files app (copy files into the BiblioFuse folder), via AirDrop, or via the built-in Wi-Fi Transfer — open a library session from Mac or PC and drag files in from any browser."
+            },
+            {
+              "q": "Where are reading progress, bookmarks, ratings, and tags saved?",
+              "a": "It depends on where the book file lives:"
+            }
+          ],
+          "links": [
+            {
+              "to": "/blog/getting-started-with-bibliofuse/",
+              "label": "Getting started with BiblioFuse"
+            },
+            {
+              "to": "/blog/read-cbz-cbr-on-iphone/",
+              "label": "Reading CBZ and CBR on iPhone"
+            }
+          ]
+        },
+        {
+          "id": "libraries",
+          "title": "Libraries & servers",
+          "desc": "Kavita, Komga and any OPDS catalogue, plus folder-as-library browsing.",
+          "items": [],
+          "links": [
+            {
+              "to": "/tools/qr-generator/",
+              "label": "Kavita & Komga setup QR generator",
+              "note": "Skip typing a server URL and API key on a phone."
+            },
+            {
+              "to": "/blog/digital-comic-library-management-guide/",
+              "label": "Managing a digital comic library"
+            }
+          ]
+        },
+        {
+          "id": "streaming",
+          "title": "Streaming from your Mac or PC",
+          "desc": "Your own machine hosts the library; the app reads from it.",
+          "items": [
+            {
+              "q": "How does streaming from Mac or PC to iPhone work?",
+              "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. Both devices must have Tailscale on (works at home and remotely). If only one device has Tailscale on, the connection will fail. Keeping both devices always on Tailscale gives the most consistent experience."
+            },
+            {
+              "q": "What do I need to set up streaming?",
+              "a": "Both your Mac or PC and your iPhone must have the following configured:"
+            },
+            {
+              "q": "Streaming is set up correctly but still not working — what should I try?",
+              "a": "A stale endpoint cache is the most common cause. One or more <code>stream_endpoint.json</code> files stored in iCloud has an outdated timestamp, which prevents BiblioFuse from discovering the host."
+            },
+            {
+              "q": "Why does streaming require Tailscale? Can't it just use home Wi-Fi?",
+              "a": "Tailscale is required because of how iOS handles local network connections. Here is what happened:"
+            },
+            {
+              "q": "Why can't Android receive books from Mac or PC?",
+              "a": "The Android app uses a different codebase without iCloud integration, which is how the streaming handshake works. The best workflow for Android is to sync files to your phone using Syncthing or a similar tool, then add that folder as a library source in the app."
+            }
+          ]
+        },
+        {
+          "id": "reading",
+          "title": "Reading",
+          "desc": "Formats, reading direction, text-to-speech and translation.",
+          "items": [
+            {
+              "q": "Does BiblioFuse work on Apple Vision Pro?",
+              "a": "Yes. BiblioFuse is a native visionOS app on the App Store — a true spatial window, not a compatibility-mode iPad app. It supports eye tracking, pinch, mouse, trackpad, and keyboard, and it is included in the universal iOS + Mac purchase at no extra cost."
+            },
+            {
+              "q": "What spatial reading layouts does BiblioFuse support on visionOS?",
+              "a": "Three spatial library layouts: Spatial Bookshelves (your covers on floating shelves), Grid View (a floating grid for large libraries), and Slanted Wall (an angled gallery wall with rating and tag filters). You can also stream your library from a Mac or PC to keep Vision Pro storage free."
+            },
+            {
+              "q": "How do I get better text-to-speech voices in BiblioFuse?",
+              "a": "Higher-quality voices may already be available through your device's text-to-speech system, but some must be downloaded separately. BiblioFuse will detect newly installed voices automatically when they are made available to apps."
+            }
+          ],
+          "links": [
+            {
+              "to": "/features/",
+              "label": "Full feature matrix",
+              "note": "Which features work on which platform, and since when."
+            },
+            {
+              "to": "/blog/how-to-read-manga-on-iphone/",
+              "label": "Reading manga on iPhone"
+            },
+            {
+              "to": "/blog/cbz-vs-cbr-vs-epub-formats-explained/",
+              "label": "CBZ vs CBR vs EPUB, explained"
+            }
+          ]
+        },
+        {
+          "id": "tools",
+          "title": "Tools",
+          "desc": "Fix a file before you read it - in the browser, on your device.",
+          "items": [
+            {
+              "q": "What is the difference between the PC Reader and the PC EPUB / CBZ tools?",
+              "a": "The PC Reader is a full reading app — it opens books, manages your library, compresses files, and streams to iPhone. The PC EPUB and CBZ tools are lighter, cheaper apps focused on compression and merging only, with no reader."
+            }
+          ],
+          "links": [
+            {
+              "to": "/tools/",
+              "label": "All browser tools"
+            },
+            {
+              "to": "/blog/bibliofuse-tools-tab-guide/",
+              "label": "The Tools tab, explained"
+            },
+            {
+              "to": "/blog/ocr-comics-extract-text-iphone/",
+              "label": "OCR: extracting text from comics"
+            }
+          ]
+        }
+      ]
     }
   },
   "featureMatrix": {
@@ -1626,13 +1532,17 @@
       "reading": "読書",
       "libraries": "ライブラリとサーバー",
       "streaming": "自分のマシンからのストリーミング",
-      "input": "入力とプラットフォーム"
+      "input": "入力とプラットフォーム",
+      "formats": "File formats"
     },
     "cellNotes": {
       "lanOnlyTvos": "ローカル Wi-Fi のみ。tvOS では Tailscale の安定性が不足",
       "noICloudRoute": "ローカル Wi-Fi と手動 Tailscale に対応。iCloud 経路は Apple 製品のみ",
       "lanOnly": "ローカル Wi-Fi のみ",
-      "tailscaleServe": "Tailscale Serve とサブネットアクセス"
+      "tailscaleServe": "Tailscale Serve とサブネットアクセス",
+      "nasArchivesOnly": "CBZ/ZIP only",
+      "nasNoPdf": "No PDF yet",
+      "tvosPartialLocale": "Partial UI translation"
     },
     "features": {
       "live-translation": {
@@ -1738,6 +1648,22 @@
       "spatial-library": {
         "label": "空間ライブラリ",
         "note": "部屋の中に配置された本棚を眺める"
+      },
+      "format-cbz-cbr": {
+        "label": "CBZ, CBR, ZIP & RAR",
+        "note": "The NAS browser reader opens CBZ/ZIP; CBR/RAR need the native apps."
+      },
+      "format-epub-pdf-txt": {
+        "label": "EPUB, PDF & TXT",
+        "note": "The NAS browser reader has no PDF support yet."
+      },
+      "icloud-bookshelf": {
+        "label": "iCloud bookshelf",
+        "note": "Apple platforms only — the shelf and its metadata sync through your own iCloud."
+      },
+      "ui-languages": {
+        "label": "Localised interface",
+        "note": "11 languages on Apple and Windows; the NAS browser reader is English-only."
       }
     },
     "specs": {
