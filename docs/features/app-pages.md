@@ -537,3 +537,52 @@ links in the hero above were fine. `EDITION_HREFS` in `ComicReader.jsx` now maps
 constants the hero uses, `href` was stripped from all 11 locale files, and items whose
 `key` has no mapping are filtered out rather than rendering a dead card. Never put a store
 URL back into `translation.json`.
+
+## Step 2 code-verification findings (2026-09-10)
+
+Four Sonnet agents were pointed at the sibling repos to draft code-verified guide answers
+and audit what the site already claims. Wave one (Apple onboarding/formats/libraries, and
+Android) found four live problems. Raw output is not in this repo; the durable findings are:
+
+### `feature-matrix.js` contradicted itself, twice
+- **`icloud-bookshelf` had `pro: true` in `SPECS` and `pro: false` in `FEATURES`** — the
+  same row id in both arrays, and **both render on `/features/`**, so the page badged one
+  iCloud row Pro and the other free. The truth is Pro: iCloud became a whole-folder gate on
+  2026-08-18 (`LibraryView.isCloudFolderLocked`), replacing a free "25 oldest books" cap,
+  and the billing card's iCloud row already reads "—" for free on iOS, Mac and visionOS.
+  A free user following the old copy would have expected sync and hit a paywall.
+  `scripts/check-feature-matrix-i18n.mjs` now fails the build when a shared row id carries
+  disagreeing `pro` flags — nothing caught this before.
+- **The Android "Library sources" spec row said "Local · external folders"**, omitting the
+  BiblioFuse host, while the same file's Android streaming FEATURES row correctly marked
+  streaming as shipped. Fixed in the data file and all 11 locale value strings (the page
+  prefers the locale over the data file, so both had to change).
+
+### Bookmark sync is Kavita-only
+`ReaderBookmarkSyncCoordinator` hard-types `KavitaBookmarkProvider`; no Komga equivalent
+exists anywhere in the Apple repo. Position sync works for both. The homepage translation
+hero claimed "Native Komga & Kavita API, with position and bookmark sync" in all 11
+locales — corrected to name Kavita for bookmarks. (One agent claim did **not** hold up on
+checking: it reported Komga was never live-validated. `KomgaProviderTests.swift`'s header
+says it *was* validated against a live Komga on 2026-08-05, after first shipping from the
+OpenAPI document. Komga's catalogue path is tested; only bookmark sync is missing.)
+
+### The Android correction from earlier that day held up
+All four published claims verified in source — discovery, manual address, copy-to-library,
+and position writeback. Two refinements applied:
+- Manual address entry is **not** "type any IP cold": the host must have been paired once
+  on the local network first, so its certificate pin is stored. The guide now says so.
+- Ratings and tags post back to the host too. The parity doc's "dead code, zero call sites"
+  note was accurate on 2026-07-18 and **fixed three days later** — a reminder that even a
+  repo's own audit doc goes stale, which is why source beats docs.
+
+### Two findings deliberately not acted on
+- **Android phone and Android TV are one application** — one `applicationId`, one manifest
+  with both launcher categories, one shared Play Billing entitlement, so they cannot be two
+  separate purchases as built. The site does not actually claim otherwise (its only
+  "sold separately" line is Android vs iOS vs PC, which is true), so no copy changed. Worth
+  checking the live Play Console listing before anyone writes otherwise.
+- **Phone/tablet controller support is real** — gamepad, D-pad, analog triggers and keyboard
+  shortcuts are wired end to end, so `docs/phone-external-controller-bindings.md`'s
+  "do not market this" warning is stale. The site makes no controller claim for Android
+  phone, so this is an opportunity rather than a defect.

@@ -295,7 +295,7 @@
         "bullets": [
           "直接连接 OPDS 1.x、OPDS-PSE、Komga 或 Kavita（Pro）",
           "从 Mac、PC、Synology 或 Docker 上的 BiblioFuse 主机应用串流",
-          "直接读取你自己的 iCloud Drive——打开时才载入",
+          "直接读取你自己的 iCloud 云盘——打开时才载入（Pro）",
           "阅读进度与书签在各设备之间保持同步"
         ]
       },
@@ -313,7 +313,7 @@
         "cta": "看看有什么新功能",
         "bullets": [
           "实时漫画翻译，阅读时直接显示在页面上（Pro）",
-          "原生 Komga 与 Kavita API，同步阅读进度与书签（Pro）",
+          "原生 Komga 与 Kavita API——两者均同步阅读进度，Kavita 另可同步书签（Pro）",
           "可从任意目录进行 OPDS 1.x 与 OPDS-PSE 串流（Pro）",
           "日文竖排、双页跨页与翻页卷曲效果"
         ]
@@ -1426,7 +1426,7 @@
                   "text": "本地存储 — 仅保存在该设备上，不跨设备同步"
                 },
                 {
-                  "text": "iCloud 存储 — 保存至 iCloud，自动同步到所有 iOS、Mac 和 PC 设备"
+                  "text": "iCloud 存储（Pro）——保存在 iCloud 并自动在你的设备之间同步。免费版会锁定 iCloud 文件夹，因此升级后才适用。"
                 },
                 {
                   "text": "SMB / 网络共享（Mac 或 PC 串流）— 保存在主机设备上",
@@ -1555,7 +1555,7 @@
             },
             {
               "q": "Android 能从 Mac 或 PC 主机读取吗？",
-              "a": "可以。Android 应用会在局域网中查找主机，你也可以手动输入主机地址，并且它可以把书从主机复制到自己的书库。阅读进度会回传给主机。Android 无法访问 iCloud，因此离家阅读需要通过 Tailscale 手动输入主机地址，而不是自动发现。"
+              "a": "可以。Android 应用会在局域网中查找主机；主机在局域网配对一次之后，也可以通过手动输入地址来连接。它可以把书从主机复制到自己的书库，阅读进度、评分与标签都会回传给主机。Android 无法访问 iCloud，因此离家阅读需要通过 Tailscale 手动输入主机地址，而不是自动发现。"
             }
           ]
         },
@@ -1854,7 +1854,7 @@
           "macos": "本地 · iCloud · SMB / NAS",
           "visionos": "本地 · iCloud · BiblioFuse 主机",
           "tvos": "仅 BiblioFuse 主机",
-          "android": "本地 · 外部文件夹",
+          "android": "本机 · 外部文件夹 · BiblioFuse 主机",
           "androidtv": "仅 BiblioFuse 主机",
           "windows": "本地 · iCloud · SMB / NAS",
           "nas": "其自身的挂载或网络存储"

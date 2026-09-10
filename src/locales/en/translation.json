@@ -360,7 +360,7 @@
         "bullets": [
           "Connect straight to OPDS 1.x, OPDS-PSE, Komga or Kavita (Pro)",
           "Stream from the BiblioFuse host app on Mac, PC, Synology or Docker",
-          "Read from your own iCloud Drive — books load when you open them",
+          "Read from your own iCloud Drive — books load when you open them (Pro)",
           "Reading position and bookmarks stay in sync across your devices"
         ]
       },
@@ -378,7 +378,7 @@
         "cta": "See what is new",
         "bullets": [
           "Live comic & manga translation, in place as you read (Pro)",
-          "Native Komga & Kavita API, with position and bookmark sync (Pro)",
+          "Native Komga & Kavita API — position sync on both, bookmark sync on Kavita (Pro)",
           "OPDS 1.x and OPDS-PSE streaming from any catalogue (Pro)",
           "Vertical Japanese, dual-page spreads and page-curl turns"
         ]
@@ -1434,7 +1434,7 @@
                   "text": "Local storage — saved on that device only, no cross-device sync"
                 },
                 {
-                  "text": "iCloud storage — saved to iCloud, syncs across all iOS, Mac, and PC devices automatically"
+                  "text": "iCloud storage (Pro) — saved to iCloud and synced across your devices automatically. On the free tier the iCloud folder is locked, so this applies once you upgrade."
                 },
                 {
                   "text": "SMB / network share (Mac or PC streaming) — saved on the host device",
@@ -1563,7 +1563,7 @@
             },
             {
               "q": "Can Android read from a Mac or PC host?",
-              "a": "Yes. The Android app finds hosts on your local network, or you can type the host address in by hand, and it can copy a book from the host into its own library. Reading position is sent back to the host. Android has no iCloud access, so reading away from home means entering the host address manually over Tailscale rather than having it discovered for you."
+              "a": "Yes. The Android app finds hosts on your local network, and once a host has been paired there it can also be reached by entering its address by hand. It can copy a book from the host into its own library, and reading position, ratings and tags are sent back to the host. Android has no iCloud access, so reading away from home means entering the host address manually over Tailscale rather than having it discovered for you."
             }
           ]
         },
@@ -1874,7 +1874,7 @@
           "macos": "Local · iCloud · SMB / NAS",
           "visionos": "Local · iCloud · a BiblioFuse host",
           "tvos": "A BiblioFuse host only",
-          "android": "Local · external folders",
+          "android": "Local · external folders · a BiblioFuse host",
           "androidtv": "A BiblioFuse host only",
           "windows": "Local · iCloud · SMB / NAS",
           "nas": "Its own attached or network storage"

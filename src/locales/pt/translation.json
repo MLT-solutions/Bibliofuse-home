@@ -295,7 +295,7 @@
         "bullets": [
           "Conecte-se direto a OPDS 1.x, OPDS-PSE, Komga ou Kavita (Pro)",
           "Transmita do app anfitrião do BiblioFuse no Mac, PC, Synology ou Docker",
-          "Leia do seu próprio iCloud Drive — os livros carregam quando você os abre",
+          "Leia do seu próprio iCloud Drive — os livros carregam quando você os abre (Pro)",
           "Posição de leitura e marcadores permanecem sincronizados entre seus dispositivos"
         ]
       },
@@ -313,7 +313,7 @@
         "cta": "Ver as novidades",
         "bullets": [
           "Tradução ao vivo de quadrinhos e mangá, na página enquanto você lê (Pro)",
-          "API nativa do Komga e do Kavita, com sincronização de posição e marcadores (Pro)",
+          "API nativa do Komga e do Kavita — sincronização de posição nos dois, de marcadores no Kavita (Pro)",
           "Transmissão OPDS 1.x e OPDS-PSE de qualquer catálogo (Pro)",
           "Japonês vertical, páginas duplas e viradas com efeito de página curvada"
         ]
@@ -1426,7 +1426,7 @@
                   "text": "Armazenamento local — salvo apenas naquele dispositivo, sem sincronização entre dispositivos"
                 },
                 {
-                  "text": "Armazenamento iCloud — salvo no iCloud, sincroniza automaticamente em todos os dispositivos iOS, Mac e PC"
+                  "text": "Armazenamento no iCloud (Pro) — salvo no iCloud e sincronizado entre seus aparelhos automaticamente. No plano gratuito a pasta do iCloud fica bloqueada, então isso vale depois do upgrade."
                 },
                 {
                   "text": "SMB / compartilhamento de rede (streaming Mac ou PC) — salvo no dispositivo host",
@@ -1555,7 +1555,7 @@
             },
             {
               "q": "O Android consegue ler de um anfitrião Mac ou PC?",
-              "a": "Sim. O app Android encontra anfitriões na sua rede local, ou você digita o endereço do anfitrião à mão, e ele consegue copiar um livro do anfitrião para a própria biblioteca. A posição de leitura volta para o anfitrião. O Android não tem acesso ao iCloud, então ler fora de casa significa digitar o endereço do anfitrião manualmente pelo Tailscale, em vez de ele ser descoberto para você."
+              "a": "Sim. O app Android encontra anfitriões na sua rede local e, depois que um anfitrião for emparelhado lá, você também pode alcançá-lo digitando o endereço à mão. Ele consegue copiar um livro do anfitrião para a própria biblioteca, e a posição de leitura, as avaliações e as etiquetas voltam para o anfitrião. O Android não tem acesso ao iCloud, então ler fora de casa significa digitar o endereço do anfitrião manualmente pelo Tailscale, em vez de ele ser descoberto para você."
             }
           ]
         },
@@ -1854,7 +1854,7 @@
           "macos": "Local · iCloud · SMB / NAS",
           "visionos": "Local · iCloud · um host BiblioFuse",
           "tvos": "Somente um host BiblioFuse",
-          "android": "Local · pastas externas",
+          "android": "Local · pastas externas · um anfitrião BiblioFuse",
           "androidtv": "Somente um host BiblioFuse",
           "windows": "Local · iCloud · SMB / NAS",
           "nas": "Seu próprio armazenamento conectado ou de rede"

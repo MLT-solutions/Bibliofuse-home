@@ -295,7 +295,7 @@
         "bullets": [
           "OPDS 1.x, OPDS-PSE, Komga, Kavita에 바로 연결 (Pro)",
           "Mac, PC, Synology, Docker의 BiblioFuse 호스트 앱에서 스트리밍",
-          "직접 쓰는 iCloud Drive에서 읽기 — 열 때 불러옵니다",
+          "직접 쓰는 iCloud Drive에서 읽기 — 열 때 불러옵니다 (Pro)",
           "읽던 위치와 북마크가 기기 간에 동기화됩니다"
         ]
       },
@@ -313,7 +313,7 @@
         "cta": "새로워진 점 보기",
         "bullets": [
           "만화·코믹 실시간 번역을 읽는 그 페이지 위에 표시 (Pro)",
-          "Komga·Kavita 네이티브 API, 읽던 위치와 북마크 동기화 (Pro)",
+          "Komga·Kavita 네이티브 API — 읽던 위치는 양쪽 모두, 북마크 동기화는 Kavita만 (Pro)",
           "어떤 카탈로그에서든 OPDS 1.x·OPDS-PSE 스트리밍 (Pro)",
           "일본어 세로쓰기, 두 페이지 펼침, 페이지 컬 넘김"
         ]
@@ -1426,7 +1426,7 @@
                   "text": "로컬 저장소 — 해당 기기에만 저장, 기기 간 동기화 없음"
                 },
                 {
-                  "text": "iCloud 저장소 — iCloud에 저장, 모든 iOS, Mac, PC 기기에서 자동 동기화"
+                  "text": "iCloud 저장(Pro) — iCloud에 저장되어 기기 간에 자동으로 동기화됩니다. 무료 등급에서는 iCloud 폴더가 잠기므로, 업그레이드 후에 적용됩니다."
                 },
                 {
                   "text": "SMB / 네트워크 공유 (Mac 또는 PC 스트리밍) — 호스트 기기에 저장",
@@ -1555,7 +1555,7 @@
             },
             {
               "q": "Android에서 Mac이나 PC 호스트의 책을 읽을 수 있나요?",
-              "a": "네. Android 앱은 로컬 네트워크에서 호스트를 찾고, 호스트 주소를 직접 입력할 수도 있으며, 호스트에 있는 책을 자체 서재로 복사할 수 있습니다. 읽던 위치는 호스트로 다시 전송됩니다. Android는 iCloud에 접근할 수 없으므로, 외출 중에 읽으려면 자동 검색이 아니라 Tailscale을 통해 호스트 주소를 직접 입력합니다."
+              "a": "네. Android 앱은 로컬 네트워크에서 호스트를 찾고, 그곳에서 한 번 페어링한 호스트는 주소를 직접 입력해도 연결할 수 있습니다. 호스트에 있는 책을 자체 서재로 복사할 수 있고, 읽던 위치와 별점, 태그는 호스트로 다시 전송됩니다. Android는 iCloud에 접근할 수 없으므로, 외출 중에 읽으려면 자동 검색이 아니라 Tailscale을 통해 호스트 주소를 직접 입력합니다."
             }
           ]
         },
@@ -1854,7 +1854,7 @@
           "macos": "로컬 · iCloud · SMB / NAS",
           "visionos": "로컬 · iCloud · BiblioFuse 호스트",
           "tvos": "BiblioFuse 호스트만",
-          "android": "로컬 · 외부 폴더",
+          "android": "로컬 · 외부 폴더 · BiblioFuse 호스트",
           "androidtv": "BiblioFuse 호스트만",
           "windows": "로컬 · iCloud · SMB / NAS",
           "nas": "자체 연결 저장소 또는 네트워크 저장소"

@@ -212,7 +212,7 @@ export const SPECS = [
       macos: 'Local · iCloud · SMB / NAS',
       visionos: 'Local · iCloud · a BiblioFuse host',
       tvos: 'A BiblioFuse host only',
-      android: 'Local · external folders',
+      android: 'Local · external folders · a BiblioFuse host',
       androidtv: 'A BiblioFuse host only',
       windows: 'Local · iCloud · SMB / NAS',
       nas: 'Its own attached or network storage',
@@ -320,7 +320,14 @@ export const FEATURES = [
     group: 'libraries',
     label: 'iCloud bookshelf',
     note: 'Apple platforms only — the shelf and its metadata sync through your own iCloud.',
-    pro: false,
+    // Pro since 2026-08-18. A free user sees a lock row in Locations instead of the
+    // iCloud folder list — a whole-folder gate, like Mac streaming and OPDS. It replaced
+    // a free "25 oldest books" cap, and the billing card's iCloud row now reads "—" for
+    // free on iOS, Mac and visionOS. This said `pro: false` while the SPECS row for the
+    // same id said `pro: true`, and both render on /features/, so the page badged one
+    // iCloud row Pro and the other not. See bibliofuse_iosv2
+    // docs/features/library-and-formats.md and LibraryView.isCloudFolderLocked.
+    pro: true,
     aliases: ['iCloud', 'iCloud Drive', 'sync', 'bookshelf', 'Apple sync'],
     platforms: {
       ios: s('2026-05-14'), macos: s('2026-05-14'), visionos: s('2026-06-20'),

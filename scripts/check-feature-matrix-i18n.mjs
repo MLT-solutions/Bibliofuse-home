@@ -12,6 +12,19 @@ const en = JSON.parse(readFileSync(new URL('../src/locales/en/translation.json',
 const fm = en.featureMatrix ?? {};
 const problems = [];
 
+// A row id may legitimately appear in both FEATURES and SPECS — they render different
+// things on /features/ (a platform matrix cell vs a text-valued spec row). What must NOT
+// differ is the Pro flag: both rows show on the same page, so a mismatch badges one copy
+// Pro and the other free. `icloud-bookshelf` shipped that way (SPECS pro:true,
+// FEATURES pro:false) until 2026-09-10 and nothing caught it.
+const proById = new Map();
+for (const row of [...FEATURES, ...SPECS]) {
+  if (proById.has(row.id) && proById.get(row.id) !== Boolean(row.pro)) {
+    problems.push(`${row.id}: appears in both FEATURES and SPECS with disagreeing \`pro\` flags — /features/ would badge one copy Pro and the other free`);
+  }
+  proById.set(row.id, Boolean(row.pro));
+}
+
 for (const f of FEATURES) {
   const loc = fm.features?.[f.id];
   if (!loc) { problems.push(`features.${f.id}: no en locale entry`); continue; }

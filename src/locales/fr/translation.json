@@ -295,7 +295,7 @@
         "bullets": [
           "Connexion directe à OPDS 1.x, OPDS-PSE, Komga ou Kavita (Pro)",
           "Diffusion depuis l'app hôte BiblioFuse sur Mac, PC, Synology ou Docker",
-          "Lecture depuis votre propre iCloud Drive : les livres se chargent à l’ouverture",
+          "Lecture depuis votre propre iCloud Drive : les livres se chargent à l'ouverture (Pro)",
           "Position de lecture et signets synchronisés sur tous vos appareils"
         ]
       },
@@ -313,7 +313,7 @@
         "cta": "Voir les nouveautés",
         "bullets": [
           "Traduction en direct des BD et mangas, sur la page pendant la lecture (Pro)",
-          "API Komga et Kavita natives, avec synchronisation de la position et des signets (Pro)",
+          "API Komga et Kavita natives — synchronisation de la position sur les deux, des signets sur Kavita (Pro)",
           "Diffusion OPDS 1.x et OPDS-PSE depuis tout catalogue (Pro)",
           "Japonais vertical, doubles pages et tournes avec effet de page qui se courbe"
         ]
@@ -1426,7 +1426,7 @@
                   "text": "Stockage local — sauvegardé sur cet appareil uniquement, pas de synchronisation multi-appareils"
                 },
                 {
-                  "text": "Stockage iCloud — sauvegardé sur iCloud, se synchronise automatiquement sur tous les appareils iOS, Mac et PC"
+                  "text": "Stockage iCloud (Pro) : enregistré dans iCloud et synchronisé automatiquement entre vos appareils. Dans l'offre gratuite le dossier iCloud est verrouillé, cela s'applique donc après la mise à niveau."
                 },
                 {
                   "text": "SMB / partage réseau (streaming Mac ou PC) — sauvegardé sur l'appareil hôte",
@@ -1555,7 +1555,7 @@
             },
             {
               "q": "Android peut-il lire depuis un hôte Mac ou PC ?",
-              "a": "Oui. L'app Android trouve les hôtes sur votre réseau local, ou vous pouvez saisir l'adresse de l'hôte à la main, et elle peut copier un livre depuis l'hôte vers sa propre bibliothèque. La position de lecture est renvoyée à l'hôte. Android n'a pas accès à iCloud : lire en déplacement suppose donc de saisir l'adresse de l'hôte manuellement via Tailscale au lieu qu'elle soit découverte pour vous."
+              "a": "Oui. L'app Android trouve les hôtes sur votre réseau local et, une fois un hôte appairé là, vous pouvez aussi l'atteindre en saisissant son adresse à la main. Elle peut copier un livre depuis l'hôte vers sa propre bibliothèque, et la position de lecture, les notes et les étiquettes sont renvoyées à l'hôte. Android n'a pas accès à iCloud : lire en déplacement suppose donc de saisir l'adresse de l'hôte manuellement via Tailscale au lieu qu'elle soit découverte pour vous."
             }
           ]
         },
@@ -1854,7 +1854,7 @@
           "macos": "Local · iCloud · SMB / NAS",
           "visionos": "Local · iCloud · un hôte BiblioFuse",
           "tvos": "Un hôte BiblioFuse uniquement",
-          "android": "Local · dossiers externes",
+          "android": "Local · dossiers externes · un hôte BiblioFuse",
           "androidtv": "Un hôte BiblioFuse uniquement",
           "windows": "Local · iCloud · SMB / NAS",
           "nas": "Son propre stockage local ou réseau"

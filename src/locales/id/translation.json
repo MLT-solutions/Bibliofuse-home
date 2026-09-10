@@ -295,7 +295,7 @@
         "bullets": [
           "Sambung langsung ke OPDS 1.x, OPDS-PSE, Komga, atau Kavita (Pro)",
           "Streaming dari aplikasi host BiblioFuse di Mac, PC, Synology, atau Docker",
-          "Baca dari iCloud Drive Anda sendiri — buku dimuat saat dibuka",
+          "Baca dari iCloud Drive Anda sendiri — buku dimuat saat dibuka (Pro)",
           "Posisi baca dan markah tetap sinkron di semua perangkat Anda"
         ]
       },
@@ -313,7 +313,7 @@
         "cta": "Lihat apa yang baru",
         "bullets": [
           "Terjemahan langsung komik dan manga, di halaman saat Anda membaca (Pro)",
-          "API native Komga dan Kavita, dengan sinkronisasi posisi baca dan markah (Pro)",
+          "API native Komga & Kavita — sinkronisasi posisi di keduanya, markah di Kavita (Pro)",
           "Streaming OPDS 1.x dan OPDS-PSE dari katalog mana pun (Pro)",
           "Bahasa Jepang vertikal, halaman ganda, dan balik halaman melengkung"
         ]
@@ -1426,7 +1426,7 @@
                   "text": "Penyimpanan lokal — disimpan hanya di perangkat itu, tidak ada sinkronisasi lintas perangkat"
                 },
                 {
-                  "text": "Penyimpanan iCloud — disimpan ke iCloud, disinkronkan secara otomatis di semua perangkat iOS, Mac, dan PC"
+                  "text": "Penyimpanan iCloud (Pro) — disimpan di iCloud dan disinkronkan antar perangkat Anda secara otomatis. Pada tingkat gratis folder iCloud terkunci, jadi ini berlaku setelah Anda meningkatkan."
                 },
                 {
                   "text": "SMB / berbagi jaringan (streaming Mac atau PC) — disimpan di perangkat host",
@@ -1555,7 +1555,7 @@
             },
             {
               "q": "Bisakah Android membaca dari host Mac atau PC?",
-              "a": "Bisa. Aplikasi Android menemukan host di jaringan lokal Anda, atau Anda bisa mengetik alamat host secara manual, dan ia bisa menyalin buku dari host ke perpustakaannya sendiri. Posisi baca dikirim kembali ke host. Android tidak punya akses iCloud, jadi membaca di luar rumah berarti memasukkan alamat host secara manual lewat Tailscale, bukan ditemukan otomatis."
+              "a": "Bisa. Aplikasi Android menemukan host di jaringan lokal Anda, dan setelah sebuah host dipasangkan di sana, host itu juga bisa dijangkau dengan mengetik alamatnya sendiri. Ia bisa menyalin buku dari host ke perpustakaannya sendiri, dan posisi baca, penilaian, serta tag dikirim kembali ke host. Android tidak punya akses iCloud, jadi membaca di luar rumah berarti memasukkan alamat host secara manual lewat Tailscale, bukan ditemukan otomatis."
             }
           ]
         },
@@ -1854,7 +1854,7 @@
           "macos": "Lokal · iCloud · SMB / NAS",
           "visionos": "Lokal · iCloud · host BiblioFuse",
           "tvos": "Hanya host BiblioFuse",
-          "android": "Lokal · folder eksternal",
+          "android": "Lokal · folder eksternal · host BiblioFuse",
           "androidtv": "Hanya host BiblioFuse",
           "windows": "Lokal · iCloud · SMB / NAS",
           "nas": "Penyimpanan terpasang atau jaringannya sendiri"

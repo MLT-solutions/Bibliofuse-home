@@ -295,7 +295,7 @@
         "bullets": [
           "Sambung terus ke OPDS 1.x, OPDS-PSE, Komga atau Kavita (Pro)",
           "Strim daripada apl hos BiblioFuse pada Mac, PC, Synology atau Docker",
-          "Baca daripada iCloud Drive anda sendiri — buku dimuatkan apabila dibuka",
+          "Baca daripada iCloud Drive anda sendiri — buku dimuatkan apabila dibuka (Pro)",
           "Kedudukan bacaan dan penanda buku kekal segerak merentas peranti anda"
         ]
       },
@@ -313,7 +313,7 @@
         "cta": "Lihat apa yang baharu",
         "bullets": [
           "Terjemahan langsung komik dan manga, pada halaman semasa anda membaca (Pro)",
-          "API asli Komga dan Kavita, dengan penyegerakan kedudukan bacaan dan penanda buku (Pro)",
+          "API asli Komga & Kavita — penyegerakan kedudukan pada kedua-duanya, penanda buku pada Kavita (Pro)",
           "Strim OPDS 1.x dan OPDS-PSE daripada mana-mana katalog (Pro)",
           "Bahasa Jepun menegak, halaman berkembar dan lipatan halaman semasa membelek"
         ]
@@ -1426,7 +1426,7 @@
                   "text": "Storan tempatan — disimpan pada peranti itu sahaja, tiada penyegerakan merentas peranti"
                 },
                 {
-                  "text": "Storan iCloud — disimpan ke iCloud, disegerakkan secara automatik merentas semua peranti iOS, Mac, dan PC"
+                  "text": "Storan iCloud (Pro) — disimpan dalam iCloud dan disegerakkan merentas peranti anda secara automatik. Pada peringkat percuma folder iCloud dikunci, jadi ini terpakai selepas anda menaik taraf."
                 },
                 {
                   "text": "SMB / perkongsian rangkaian (penstriman Mac atau PC) — disimpan pada peranti hos",
@@ -1555,7 +1555,7 @@
             },
             {
               "q": "Bolehkah Android membaca daripada hos Mac atau PC?",
-              "a": "Boleh. Apl Android menemui hos pada rangkaian tempatan anda, atau anda boleh menaip alamat hos sendiri, dan ia boleh menyalin buku daripada hos ke pustakanya sendiri. Kedudukan bacaan dihantar semula kepada hos. Android tiada akses iCloud, jadi membaca di luar rumah bermakna memasukkan alamat hos secara manual melalui Tailscale dan bukan ditemui untuk anda."
+              "a": "Boleh. Apl Android menemui hos pada rangkaian tempatan anda, dan setelah sesebuah hos dipasangkan di sana, hos itu juga boleh dicapai dengan menaip alamatnya sendiri. Ia boleh menyalin buku daripada hos ke pustakanya sendiri, dan kedudukan bacaan, penilaian serta tag dihantar semula kepada hos. Android tiada akses iCloud, jadi membaca di luar rumah bermakna memasukkan alamat hos secara manual melalui Tailscale dan bukan ditemui untuk anda."
             }
           ]
         },
@@ -1854,7 +1854,7 @@
           "macos": "Setempat · iCloud · SMB / NAS",
           "visionos": "Setempat · iCloud · hos BiblioFuse",
           "tvos": "Hanya hos BiblioFuse",
-          "android": "Setempat · folder luaran",
+          "android": "Tempatan · folder luaran · hos BiblioFuse",
           "androidtv": "Hanya hos BiblioFuse",
           "windows": "Setempat · iCloud · SMB / NAS",
           "nas": "Storan terpasang atau rangkaiannya sendiri"

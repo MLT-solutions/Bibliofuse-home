@@ -295,7 +295,7 @@
         "bullets": [
           "Verbind direct met OPDS 1.x, OPDS-PSE, Komga of Kavita (Pro)",
           "Stream vanaf de BiblioFuse host-app op Mac, pc, Synology of Docker",
-          "Lees vanaf je eigen iCloud Drive — boeken laden zodra je ze opent",
+          "Lees vanaf je eigen iCloud Drive — boeken laden zodra je ze opent (Pro)",
           "Leespositie en bladwijzers blijven synchroon op al je apparaten"
         ]
       },
@@ -313,7 +313,7 @@
         "cta": "Bekijk wat er nieuw is",
         "bullets": [
           "Live strip- en mangavertaling, op de pagina terwijl je leest (Pro)",
-          "Native Komga- en Kavita-API, met synchronisatie van leespositie en bladwijzers (Pro)",
+          "Native Komga- en Kavita-API — leespositie op beide, bladwijzers op Kavita (Pro)",
           "OPDS 1.x- en OPDS-PSE-streaming vanaf elke catalogus (Pro)",
           "Verticaal Japans, dubbele pagina’s en omslaan met paginakrul"
         ]
@@ -1426,7 +1426,7 @@
                   "text": "Lokale opslag — alleen opgeslagen op dat apparaat, geen synchronisatie tussen apparaten"
                 },
                 {
-                  "text": "iCloud-opslag — opgeslagen in iCloud, synchroniseert automatisch op alle iOS-, Mac- en pc-apparaten"
+                  "text": "iCloud-opslag (Pro) — opgeslagen in iCloud en automatisch gesynchroniseerd tussen je apparaten. In de gratis versie is de iCloud-map vergrendeld, dus dit geldt zodra je upgradet."
                 },
                 {
                   "text": "SMB / netwerkshare (Mac- of pc-streaming) — opgeslagen op het hostapparaat",
@@ -1555,7 +1555,7 @@
             },
             {
               "q": "Kan Android van een Mac- of pc-host lezen?",
-              "a": "Ja. De Android-app vindt hosts op je lokale netwerk, of je typt het hostadres zelf in, en hij kan een boek van de host naar zijn eigen bibliotheek kopiëren. De leespositie gaat terug naar de host. Android heeft geen iCloud-toegang, dus lezen buitenshuis betekent het hostadres handmatig invoeren via Tailscale in plaats van dat het voor je wordt gevonden."
+              "a": "Ja. De Android-app vindt hosts op je lokale netwerk en zodra een host daar gekoppeld is, kun je hem ook bereiken door zijn adres zelf in te typen. Hij kan een boek van de host naar zijn eigen bibliotheek kopiëren, en leespositie, beoordelingen en labels gaan terug naar de host. Android heeft geen iCloud-toegang, dus lezen buitenshuis betekent het hostadres handmatig invoeren via Tailscale in plaats van dat het voor je wordt gevonden."
             }
           ]
         },
@@ -1854,7 +1854,7 @@
           "macos": "Lokaal · iCloud · SMB / NAS",
           "visionos": "Lokaal · iCloud · een BiblioFuse-host",
           "tvos": "Alleen een BiblioFuse-host",
-          "android": "Lokaal · externe mappen",
+          "android": "Lokaal · externe mappen · een BiblioFuse-host",
           "androidtv": "Alleen een BiblioFuse-host",
           "windows": "Lokaal · iCloud · SMB / NAS",
           "nas": "Eigen aangesloten of netwerkopslag"
