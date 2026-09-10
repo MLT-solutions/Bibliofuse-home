@@ -7,7 +7,6 @@
     "blog": "Блог",
     "tools": "Инструменты",
     "getApp": "Получить приложение",
-    "changelog": "История",
     "features": "Возможности",
     "guide": "Руководство"
   },
@@ -243,7 +242,6 @@
       "legal": "Правовая информация",
       "webTool": "Инструменты",
       "contact": "Контакты",
-      "work": "Работайте с нами",
       "eula": "Условия использования (EULA)",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },

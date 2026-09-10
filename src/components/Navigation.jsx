@@ -47,9 +47,6 @@ const Navigation = () => {
     // below, id 'webapp' entry) — see the 2026-07-20 portfolio review §06:
     // no GSC signal justified its own nav-level destination, and it's now
     // also cross-linked from the comicreader picker as a no-install option.
-    // Changelog left the top nav on 2026-09-10: 45 impressions and 0 clicks across all
-    // locales in five months, and it serves existing users rather than discovery. It is
-    // still linked from the footer and is now noindexed. See docs/features/changelog.md.
     const tabs = [
         { id: 'home', label: t('nav.home'), path: '/' },
         { id: 'reader', label: t('nav.reader'), path: '/comicreader/' },
@@ -118,8 +115,6 @@ const Navigation = () => {
         ? 'reader'
         : (currentPath.startsWith('/blog')
             ? 'blog'
-            : currentPath.startsWith('/changelog')
-            ? 'changelog'
             : currentPath.startsWith('/features')
             ? 'features'
             : tabs.find(tab => tab.path === currentPath && !tab.hash)?.id || null);

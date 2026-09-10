@@ -7,7 +7,6 @@
     "blog": "博客",
     "tools": "工具",
     "getApp": "获取应用",
-    "changelog": "更新记录",
     "features": "功能",
     "guide": "指南"
   },
@@ -243,7 +242,6 @@
       "legal": "法律",
       "webTool": "工具",
       "contact": "联系",
-      "work": "与我们合作",
       "eula": "使用条款（EULA）",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },

@@ -7,7 +7,6 @@
     "blog": "Blog",
     "tools": "Alat",
     "getApp": "Dapatkan app",
-    "changelog": "Riwayat",
     "features": "Fitur",
     "guide": "Panduan"
   },
@@ -243,7 +242,6 @@
       "legal": "Hukum",
       "webTool": "Alat",
       "contact": "Kontak",
-      "work": "Bergabung dengan kami",
       "eula": "Ketentuan Penggunaan (EULA)",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },

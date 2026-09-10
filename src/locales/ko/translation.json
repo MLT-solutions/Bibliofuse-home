@@ -7,7 +7,6 @@
     "blog": "블로그",
     "tools": "도구",
     "getApp": "앱 받기",
-    "changelog": "변경 이력",
     "features": "기능",
     "guide": "가이드"
   },
@@ -243,7 +242,6 @@
       "legal": "법적 정보",
       "webTool": "도구",
       "contact": "문의",
-      "work": "함께 일하기",
       "eula": "이용 약관 (EULA)",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },

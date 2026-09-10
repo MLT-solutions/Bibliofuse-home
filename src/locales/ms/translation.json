@@ -7,7 +7,6 @@
     "blog": "Blog",
     "tools": "Alat",
     "getApp": "Dapatkan app",
-    "changelog": "Sejarah",
     "features": "Ciri",
     "guide": "Panduan"
   },
@@ -243,7 +242,6 @@
       "legal": "Undang-undang",
       "webTool": "Alat",
       "contact": "Hubungi",
-      "work": "Bekerja bersama kami",
       "eula": "Terma Penggunaan (EULA)",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },

@@ -7,7 +7,6 @@
     "blog": "Blog",
     "tools": "Herramientas",
     "getApp": "Obtener app",
-    "changelog": "Historial",
     "features": "Funciones",
     "guide": "Guía"
   },
@@ -243,7 +242,6 @@
       "legal": "Legal",
       "webTool": "Herramientas",
       "contact": "Contacto",
-      "work": "Trabaja con nosotros",
       "eula": "Términos de uso (EULA)",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },

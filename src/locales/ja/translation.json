@@ -7,7 +7,6 @@
     "blog": "ブログ",
     "tools": "ツール",
     "getApp": "アプリを入手",
-    "changelog": "更新履歴",
     "features": "機能",
     "guide": "ガイド"
   },
@@ -243,7 +242,6 @@
       "legal": "法的情報",
       "webTool": "ツール",
       "contact": "お問い合わせ",
-      "work": "採用・協業",
       "eula": "利用規約（EULA）",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },

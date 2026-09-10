@@ -94,3 +94,15 @@
 /discord/          https://discord.gg/QMkG6zFSW7  302
 /:lang/discord     https://discord.gg/QMkG6zFSW7  302
 /:lang/discord/    https://discord.gg/QMkG6zFSW7  302
+
+# --- Changelog retired (2026-09-10) ---
+# 45 impressions and 0 clicks across all locales in five months (already fully noindexed
+# and off the sitemap since the same date). The rationale for demoting-not-deleting it —
+# "existing users read it after updating" — stopped holding once it went stale: its most
+# recent entry was 2026-08-07 while the site had shipped OPDS, native Komga/Kavita, live
+# translation, page-curl and more in the month since, none of them logged. Feature-matrix
+# already carries `since` dates per feature, so a second hand-maintained history was
+# redundant and prone to exactly this drift. Deleted rather than left noindexed; 301s to
+# the page that replaces its job.
+/:lang/changelog/*  /:lang/features/  301
+/:lang/changelog    /:lang/features/  301

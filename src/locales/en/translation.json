@@ -5,7 +5,6 @@
     "webapp": "Web App",
     "about": "About",
     "blog": "Blog",
-    "changelog": "Changelog",
     "features": "Features",
     "tools": "Tools",
     "getApp": "Get the app",
@@ -308,7 +307,6 @@
       "legal": "Legal",
       "webTool": "Tools",
       "contact": "Contact",
-      "work": "Work with us",
       "eula": "Terms of Use (EULA)",
       "stores": "Apple App Store · Google Play · Microsoft Store"
     },
