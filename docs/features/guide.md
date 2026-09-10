@@ -197,3 +197,38 @@ The browser pane reported 135px of horizontal overflow and then a 0px viewport w
 were artifacts of the pane being hidden — layout measures against a collapsed viewport
 there. Re-measured with an explicit 1280px viewport: zero overflow, no offenders. Do not
 trust geometry from a hidden pane; set a viewport first.
+
+## Step 3 wave 3: split by where the books live (2026-09-10)
+
+Product-owner restructure. "Libraries & servers" was doing two unrelated jobs — explaining
+folder-based local libraries *and* explaining how to connect a self-hosted catalogue — so
+it split three ways along the question a reader is actually asking, which is *where do my
+books live and how do they reach me*:
+
+| Section | Job |
+|---|---|
+| **Local and iCloud library** | Files on the device or in your own iCloud |
+| **Streaming from your BiblioFuse Mac, PC or NAS app** | You run our host app (retitled — NAS was always covered in the answers but the heading said only Mac and PC) |
+| **Streaming from your existing OPDS, Kavita or Komga server** | You already run someone else's server |
+
+The three catalogue answers moved into the new `servers` section unchanged, and the QR
+generator link moved with them — it is a Kavita/Komga tool and belonged next to those
+answers, not next to folder browsing. 9 sections, 22 Q&A.
+
+### The one new answer: where book files actually live
+Verified across three repos, because the platforms genuinely differ and nothing on the
+site said so:
+
+- **Android, Windows, Mac — you link an existing folder and files are never copied.**
+  Android uses the Storage Access Framework (`OpenDocumentTree` plus
+  `takePersistableUriPermission`, so the grant survives a restart), Windows uses a folder
+  picker, and Mac uses an open panel with `canChooseDirectories` and a security-scoped
+  bookmark. All three read books in place and leave your folder structure alone.
+- **iPhone and iPad — books go inside the app's own folder**, visible in the Files app.
+  iOS does not let an app read an arbitrary folder elsewhere on the device, so the app
+  folder *is* the library; drop book folders in at the top level. Because Files can see it,
+  books can be taken back out again.
+
+This is a good example of a claim worth verifying rather than assuming symmetry: three
+different platform APIs, one shared user-visible behaviour on desktop and a genuinely
+different one on iOS.

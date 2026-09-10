@@ -1460,46 +1460,37 @@
           ]
         },
         {
-          "id": "libraries",
-          "title": "Libraries & servers",
-          "desc": "Kavita, Komga and any OPDS catalogue, plus folder-as-library browsing.",
+          "id": "local-icloud",
+          "title": "Local and iCloud library",
+          "desc": "Where the files actually live on each platform, and what your own iCloud adds.",
           "items": [
             {
-              "q": "What is OPDS, and how do I connect an OPDS server?",
-              "a": "OPDS is an open catalogue format that lets an app browse and read from a self-hosted book or comic server page by page, instead of downloading the whole library first. BiblioFuse connects to any OPDS 1.x server — Calibre-Web, COPS, Ubooquity and others — including OPDS-PSE page streaming for comics.",
+              "q": "Where do my book files actually live?",
+              "a": "That differs by platform, and the difference matters if you already have a library organised on disk.",
               "bullets": [
                 {
-                  "text": "Adding a server",
+                  "text": "Android, Windows and Mac — you link a folder you already have.",
                   "sub": [
-                    "Open Settings, add the server's catalogue URL, and sign in if it asks for credentials.",
-                    "If the server displays a QR code, you can scan that instead of typing the address.",
-                    "This is a Pro feature."
+                    "Point the app at an existing folder and it reads the books where they are. Nothing is copied, nothing is moved, and your own folder structure stays exactly as you built it.",
+                    "The app remembers that permission, so the folder keeps working after a restart. Rename or reorganise things outside the app and it picks the changes up on the next refresh.",
+                    "On Mac and Windows the same applies to a folder on a NAS or network share."
                   ]
                 },
                 {
-                  "text": "The QR scanner is for catalogue servers only.",
+                  "text": "iPhone and iPad — books go inside BiblioFuse’s own folder.",
                   "sub": [
-                    "It does not pair a Mac or PC for streaming — that uses local network discovery and needs no camera. If you are setting up streaming, see the streaming section instead."
+                    "iOS does not let an app read an arbitrary folder elsewhere on the device the way a desktop can, so the library is the app’s folder — which you can see and open in the Files app.",
+                    "Drop whole book folders in at the top level and they become your library, subfolders and all.",
+                    "Because that folder is visible in Files, you can get books back out again later. Nothing is locked inside the app."
                   ]
-                }
-              ]
-            },
-            {
-              "q": "How do I connect BiblioFuse to my Komga server?",
-              "a": "Add your Komga server's address and credentials in Settings and BiblioFuse browses it through Komga's own API rather than a generic OPDS feed, so you get series and volume covers, tags and genres. Your reading position reads from and writes back to the server. Pro required.",
-              "bullets": [
+                },
                 {
-                  "text": "Bookmarks do not sync with Komga.",
+                  "text": "Either way, nothing is uploaded.",
                   "sub": [
-                    "In-book bookmarks sync with Kavita only. Reading position syncs with both. If bookmark sync matters to you and you have a choice of server, that is the difference."
+                    "Files are read on the device. If you want the same library on more than one device, that is either your own iCloud folder or a server — see below."
                   ]
                 }
               ]
-            },
-            {
-              "q": "How do I connect to Kavita, and will my reading progress sync?",
-              "a": "Yes, both ways. Add your Kavita server in Settings and BiblioFuse uses Kavita's native API rather than the OPDS-PSE extension that most reader apps rely on — which is where a lot of the progress-sync trouble in the wider Kavita ecosystem comes from. Reading position syncs in both directions, and in-book bookmarks sync too. Pro required.",
-              "bullets": []
             },
             {
               "q": "Should I use iCloud or a server to keep my library in sync?",
@@ -1524,20 +1515,15 @@
           ],
           "links": [
             {
-              "to": "/tools/qr-generator/",
-              "label": "Kavita & Komga setup QR generator",
-              "note": "Skip typing a server URL and API key on a phone."
-            },
-            {
               "to": "/blog/digital-comic-library-management-guide/",
-              "label": "Managing a digital comic library"
+              "label": "Organising a large comic library"
             }
           ]
         },
         {
           "id": "streaming",
-          "title": "Streaming from your Mac or PC",
-          "desc": "Your own machine hosts the library; the app reads from it.",
+          "title": "Streaming from your BiblioFuse Mac, PC or NAS app",
+          "desc": "Your own machine or NAS hosts the library; the reading device connects to it.",
           "items": [
             {
               "q": "How does streaming from Mac or PC to iPhone work?",
@@ -1599,6 +1585,56 @@
             {
               "q": "Can Android read from a Mac or PC host?",
               "a": "Yes. The Android app finds hosts on your local network, and once a host has been paired there it can also be reached by entering its address by hand. It can copy a book from the host into its own library, and reading position, ratings and tags are sent back to the host. Android has no iCloud access, so reading away from home means entering the host address manually over Tailscale rather than having it discovered for you."
+            }
+          ]
+        },
+        {
+          "id": "servers",
+          "title": "Streaming from your existing OPDS, Kavita or Komga server",
+          "desc": "Already self-hosting a catalogue? Connect to it directly — nothing is copied to the device.",
+          "items": [
+            {
+              "q": "What is OPDS, and how do I connect an OPDS server?",
+              "a": "OPDS is an open catalogue format that lets an app browse and read from a self-hosted book or comic server page by page, instead of downloading the whole library first. BiblioFuse connects to any OPDS 1.x server — Calibre-Web, COPS, Ubooquity and others — including OPDS-PSE page streaming for comics.",
+              "bullets": [
+                {
+                  "text": "Adding a server",
+                  "sub": [
+                    "Open Settings, add the server's catalogue URL, and sign in if it asks for credentials.",
+                    "If the server displays a QR code, you can scan that instead of typing the address.",
+                    "This is a Pro feature."
+                  ]
+                },
+                {
+                  "text": "The QR scanner is for catalogue servers only.",
+                  "sub": [
+                    "It does not pair a Mac or PC for streaming — that uses local network discovery and needs no camera. If you are setting up streaming, see the streaming section instead."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "How do I connect BiblioFuse to my Komga server?",
+              "a": "Add your Komga server's address and credentials in Settings and BiblioFuse browses it through Komga's own API rather than a generic OPDS feed, so you get series and volume covers, tags and genres. Your reading position reads from and writes back to the server. Pro required.",
+              "bullets": [
+                {
+                  "text": "Bookmarks do not sync with Komga.",
+                  "sub": [
+                    "In-book bookmarks sync with Kavita only. Reading position syncs with both. If bookmark sync matters to you and you have a choice of server, that is the difference."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "How do I connect to Kavita, and will my reading progress sync?",
+              "a": "Yes, both ways. Add your Kavita server in Settings and BiblioFuse uses Kavita's native API rather than the OPDS-PSE extension that most reader apps rely on — which is where a lot of the progress-sync trouble in the wider Kavita ecosystem comes from. Reading position syncs in both directions, and in-book bookmarks sync too. Pro required.",
+              "bullets": []
+            }
+          ],
+          "links": [
+            {
+              "to": "/tools/qr-generator/",
+              "label": "Make a QR code for your Kavita or Komga server"
             }
           ]
         },
