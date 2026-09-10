@@ -1,6 +1,6 @@
 # CBZ vs CBR vs EPUB — Comic and Ebook Formats Explained
 
-BiblioFuse supports CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT on iPhone, iPad, and Mac running iOS 17 or later — reading all these comic and ebook formats natively without any conversion step. CBZ and CBR are image archives best suited for comics and manga, while EPUB is a reflowable text format designed for novels and non-fiction.
+**The short answer:** a **CBZ** is a ZIP archive of page images with a different extension. A **CBR** is a RAR archive of the same thing. Inside they are identical — a folder of pictures in reading order — and that single difference in the container explains everything else people argue about, including why CBZ opens almost everywhere and CBR sometimes does not. **EPUB** is a different animal: reflowable text, built for novels rather than scanned pages.
 
 You're looking at a download page and see four different file types: CBZ, CBR, EPUB, PDF. They all claim to be "the same book." Which one should you download? Which will work on your phone, your tablet, or your Mac? And what do those three-letter extensions actually mean?
 
@@ -35,7 +35,7 @@ CBR stands for Comic Book RAR. Same concept as CBZ, but the container is a RAR a
 
 RAR was popular in file-sharing communities during the era when most comic scanning happened, so older releases are often CBR rather than CBZ. The internal structure is identical — sequential images in reading order. The only difference is the compression algorithm and the archive format.
 
-**The practical difference:** RAR files require a licensed RAR implementation to create (though any software can extract them). This caused friction over the years because ZIP is open and unencumbered. As a result, most new comic releases use CBZ, and CBR is considered the legacy format. Apps like [BiblioFuse](/en/) support both.
+**The practical difference is licensing, not compression.** RAR is proprietary: both creating and extracting it depend on code that has to be licensed, whereas ZIP is an open format anything can implement freely. That is why a CBR opens fine in a desktop or mobile app but almost never in a browser-based tool — and why most new comic releases use CBZ, leaving CBR as the legacy format. Native apps like [BiblioFuse](/en/comicreader/) read both; the [browser tools on this site](/en/tools/) are CBZ and ZIP only, for exactly that reason.
 
 **Should you convert?** If you have a large CBR collection and want to future-proof it, converting to CBZ is reasonable — though the images inside are identical. The conversion is lossless since it's just re-archiving the same files. BiblioFuse's Tools tab can handle this on-device without a computer.
 

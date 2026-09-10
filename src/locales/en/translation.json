@@ -213,9 +213,9 @@
           "seoDescription": "iPhone has no native CBZ or CBR support. This guide covers what these formats are, how to import your comics via Wi-Fi Transfer or iCloud, and how to get."
         },
         "cbz-vs-cbr-vs-epub-formats-explained": {
-          "title": "CBZ vs CBR vs EPUB — Comic and Ebook Formats Explained",
-          "excerpt": "Confused by CBZ, CBR, EPUB, and PDF? This guide explains what each format contains, where it came from, and which one to download for comics, manga, or novels.",
-          "seoDescription": "Confused by CBZ, CBR, EPUB, and PDF? This guide explains what each format contains, where it came from, and which one to download for comics, manga."
+          "title": "CBZ vs CBR vs EPUB — What the Difference Actually Is",
+          "excerpt": "A CBZ is a ZIP of page images; a CBR is a RAR of the same thing. That one difference explains why CBZ opens everywhere and CBR sometimes will not — plus how to open either, and where EPUB and PDF fit.",
+          "seoDescription": "A CBZ is a ZIP of page images; a CBR is a RAR of the same thing. That one difference explains why CBZ opens almost everywhere and CBR sometimes will not. How to open either, and where EPUB and PDF actually differ."
         },
         "how-to-read-manga-on-iphone": {
           "title": "How to Read Manga on iPhone: RTL & Webtoon Mode",
@@ -228,9 +228,9 @@
           "seoDescription": "A practical breakdown of what makes a great mobile comic reader — format support, performance, reading direction, and library management — and how."
         },
         "epub-reader-iphone-no-drm": {
-          "title": "Best DRM-Free EPUB Reader for iPhone — Without Apple Books",
-          "excerpt": "BiblioFuse is built for DRM-free EPUB collections — import from Humble Bundle, Project Gutenberg, or indie publishers, organize with tags, and read without a storefront in the way.",
-          "seoDescription": "BiblioFuse is built for DRM-free EPUB collections — import from Humble Bundle, Project Gutenberg, or indie publishers, organize with tags, and read."
+          "title": "How to Read EPUB Files on iPhone (Without iTunes or Apple Books)",
+          "excerpt": "An iPhone cannot open an EPUB on its own — iOS has no EPUB viewer outside Apple Books. Here are three ways to get the file onto the phone and read it, free, with no cable, no iTunes and no account.",
+          "seoDescription": "An iPhone cannot open an EPUB on its own — iOS has no EPUB viewer outside Apple Books. Three ways to get the file onto your phone and read it: Files, AirDrop, or wireless transfer from any computer. No cable, no iTunes, no account, free to read."
         },
         "bibliofuse-tools-tab-guide": {
           "title": "Using the BiblioFuse Tools Tab: Compress, Convert, and Merge on iPhone",

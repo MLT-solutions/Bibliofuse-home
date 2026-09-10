@@ -113,3 +113,53 @@ which is the pattern the whole recovery is about.
 retired for that reason (`read-manga-online-iphone` was the first, a ContentCue piece kept
 on its title). Check any claim an article makes against `src/data/feature-matrix.js`
 before keeping it.
+
+## Step 3 wave 1: rewrote two ranking articles instead of adding pages (2026-09-10)
+
+The plan for this wave was two new URLs — `/guide/epub-on-iphone/` and `/guide/cbz-vs-cbr/`
+— based on Search Console showing those clusters earning zero clicks. **The plan was
+wrong, and page-level data is why.** The scaffolding (a `GuideArticlePage` component and a
+`guide-articles.js` registry) was built, wired, and then reverted before commit.
+
+Both clusters are already covered by surviving articles that rank and do not convert:
+
+| Article | Impressions (en) | Clicks | CTR | Position |
+|---|---|---|---|---|
+| `epub-reader-iphone-no-drm` | **942** | 2 | **0.21%** | 15.5 |
+| `cbz-vs-cbr-vs-epub-formats-explained` | 234 | 0 | 0% | 9.8 |
+
+Across all locales those are 1,439 and 339 impressions. Publishing a second page per
+cluster would have split the signal and competed with a URL that already has accumulated
+relevance. **Query-level GSC data says "nobody is clicking"; page-level says "this exact
+URL already ranks".** Check page-level before concluding a topic is uncovered.
+
+### What was actually wrong with them
+Not the URL, and not the depth — the targeting. Both opened with a product claim rather
+than the answer, and both had a `seoDescription` that pitched the app to someone who had
+asked a question. The EPUB article spent its first three sections arguing that Apple Books
+is bad, when the query was "can iphone read epub".
+
+- **Titles** now match the query shape ("How to Read EPUB Files on iPhone (Without iTunes
+  or Apple Books)", "CBZ vs CBR vs EPUB — What the Difference Actually Is").
+- **`seoDescription`** — note this is a **separate key** from `excerpt`; `excerpt` is the
+  card text on `/blog/`, `seoDescription` is the meta description search results show.
+  Editing `excerpt` alone changes nothing that a searcher sees. Both were updated.
+- **Bodies lead with the answer.** The EPUB article was rewritten around the three verified
+  import routes (Files, AirDrop, Wi-Fi Transfer), a free-vs-Pro table, and the two real
+  reasons an EPUB will not open. The format article kept its structure and got a
+  answer-first opening plus a licensing correction.
+- Every capability claim came from the Step 2 code verification, with one nuance the audit
+  turned up: `.cbr`/`.rar` are **not** registered AirDrop document types, so "Copy to
+  BiblioFuse" may not appear for those two. The article says so.
+
+### One internal contradiction fixed in passing
+The format article said RAR "requires a licensed implementation to create (though any
+software can extract them)", while `/tools/`'s own FAQ says RAR cannot be opened in a
+browser for licensing reasons. Extraction is licensed too; that is exactly why native apps
+manage CBR and web tools do not. Corrected, and the article now links both.
+
+### Non-English versions deliberately untouched
+`ru` (195 impressions), `pt` (115), `es` (54), `zh` (33), `ja` (26) and the rest still have
+the old bodies and titles. That content is poorly targeted, not false, and rewriting ten
+locales at once is the shape of the 2026-06 launch that preceded the collapse. English
+first; measure in GSC; then port what worked.
