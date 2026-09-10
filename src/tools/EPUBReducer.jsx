@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
+import { useTranslation } from "react-i18next";
 import { Book, Plus, Trash2, ArrowUp, ArrowDown, Loader2, Settings2, Sparkles, RefreshCcw } from "lucide-react";
 import { clsx } from "clsx";
 import { downloadBlob } from "../lib/download";
@@ -14,19 +15,31 @@ const RESOLUTIONS = [
   { label: "1440p", value: 1440 },
   { label: "1600p", value: 1600 }
 ];
-function EPUBReducer({ dict = {} }) {
-  const t = dict.tools?.epub_reducer || {
+function EPUBReducer() {
+  const { t: translate } = useTranslation();
+  const t = translate('redesign.toolsPages.epub-reducer.tool', { returnObjects: true }) || {
     title: "EPUB Reducer",
     description: "Compress or Merge EPUB files. Images are converted to optimized JPEGs to reduce size.",
-    upload_label: "Upload EPUB Files",
-    upload_hint: "Drag & drop your EPUBs here",
-    files_ready: "Files Ready",
-    processing: "Processing...",
-    process_btn: "Process & Download",
+    uploadLabel: "Upload EPUB Files",
+    uploadHint: "Drag & drop your EPUBs here",
+    filesReady: "Files Ready",
+    itemsSelected: "{{count}} files selected",
+    moveUp: "Move Up",
+    moveDown: "Move Down",
+    remove: "Remove",
     settings: "Reduction Settings",
-    max_size: "Max Image Dimension",
+    maxSize: "Max Image Dimension",
     grayscale: "Grayscale Images",
-    merge_label: "Merge into one book"
+    processingMode: "Processing Mode",
+    batch: "Batch",
+    merge: "Merge",
+    mergeLabel: "Merge into one book",
+    outputFilename: "Output Filename",
+    outputPlaceholder: "merged_book",
+    resetFilename: "Reset to first filename",
+    processBtn: "Process & Download",
+    error: "An error occurred while processing your EPUB.",
+    disclaimer: "Images are re-encoded to shrink them, which is lossy — keep your original if you need it. Everything runs in this browser tab; no file is uploaded.",
   };
   const [files, setFiles] = useState([]);
   const [isProcessing, setIsProcessing] = useState(false);
@@ -103,7 +116,7 @@ function EPUBReducer({ dict = {} }) {
     } catch (error) {
       console.error("Error processing EPUB:", error);
       analyticsJob.error(error);
-      alert("An error occurred while processing your EPUB.");
+      alert(t.error);
     } finally {
       setIsProcessing(false);
       setProgress(0);
@@ -115,7 +128,7 @@ function EPUBReducer({ dict = {} }) {
       "relative group cursor-pointer border-2 border-dashed rounded-3xl p-12 transition-all duration-300 ease-out",
       isDragActive ? "border-primary bg-primary/10" : "border-border hover:border-primary hover:bg-muted/50"
     )}
-  ><input {...getInputProps()} /><div className="flex flex-col items-center justify-center space-y-4"><div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"><Plus className="w-8 h-8 text-primary" /></div><div className="text-center"><p className="text-lg font-medium">{t.upload_label}</p><p className="text-sm text-muted-foreground">{t.upload_hint}</p></div></div></div>{files.length > 0 && <div className="space-y-4"><div className="flex items-center justify-between"><h2 className="text-lg font-semibold">{t.files_ready}</h2><span className="text-sm text-muted-foreground">{files.length} files selected</span></div><div className="bg-card rounded-3xl border border-border overflow-hidden divide-y divide-border shadow-sm transition-all duration-300">{files.map((file, index) => <div key={`${file.name}-${index}`} className="group flex items-center p-4 hover:bg-muted/50 transition-colors"><div className="w-10 h-10 rounded-xl bg-muted flex items-center justify-center text-muted-foreground mr-4 group-hover:bg-primary/10 group-hover:text-primary transition-colors"><Book className="w-6 h-6" /></div><div className="flex-1 min-w-0 py-1"><p className="font-medium text-foreground text-sm break-all" title={file.name}>{file.name}</p><p className="text-xs text-muted-foreground">{(file.size / 1024 / 1024).toFixed(2)} MB</p></div><div className="flex items-center space-x-1"><button onClick={() => moveFile(index, "up")} disabled={index === 0} title="Move Up" className="p-2 text-muted-foreground hover:text-primary disabled:opacity-0 rounded-lg hover:bg-muted"><ArrowUp className="w-4 h-4" /></button><button onClick={() => moveFile(index, "down")} disabled={index === files.length - 1} title="Move Down" className="p-2 text-muted-foreground hover:text-primary disabled:opacity-0 rounded-lg hover:bg-muted"><ArrowDown className="w-4 h-4" /></button><button onClick={() => removeFile(index)} title="Remove" className="p-2 text-muted-foreground hover:text-destructive rounded-lg hover:bg-muted"><Trash2 className="w-4 h-4" /></button></div></div>)}</div></div>}</div><div className="space-y-6"><div className="bg-card border border-border rounded-3xl p-6 shadow-sm space-y-6"><div className="flex items-center gap-2 pb-2 border-b border-border"><Settings2 className="w-5 h-5 text-primary" /><h2 className="font-bold">{t.settings}</h2></div><div className="space-y-6"><div className="space-y-3"><span className="text-sm font-medium text-foreground">{t.max_size}</span><div className="flex flex-wrap gap-2">{RESOLUTIONS.map((res) => <button
+  ><input {...getInputProps()} /><div className="flex flex-col items-center justify-center space-y-4"><div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"><Plus className="w-8 h-8 text-primary" /></div><div className="text-center"><p className="text-lg font-medium">{t.uploadLabel}</p><p className="text-sm text-muted-foreground">{t.uploadHint}</p></div></div></div>{files.length > 0 && <div className="space-y-4"><div className="flex items-center justify-between"><h2 className="text-lg font-semibold">{t.filesReady}</h2><span className="text-sm text-muted-foreground">{translate('redesign.toolsPages.epub-reducer.tool.itemsSelected', { count: files.length, defaultValue: t.itemsSelected })}</span></div><div className="bg-card rounded-3xl border border-border overflow-hidden divide-y divide-border shadow-sm transition-all duration-300">{files.map((file, index) => <div key={`${file.name}-${index}`} className="group flex items-center p-4 hover:bg-muted/50 transition-colors"><div className="w-10 h-10 rounded-xl bg-muted flex items-center justify-center text-muted-foreground mr-4 group-hover:bg-primary/10 group-hover:text-primary transition-colors"><Book className="w-6 h-6" /></div><div className="flex-1 min-w-0 py-1"><p className="font-medium text-foreground text-sm break-all" title={file.name}>{file.name}</p><p className="text-xs text-muted-foreground">{(file.size / 1024 / 1024).toFixed(2)} MB</p></div><div className="flex items-center space-x-1"><button onClick={() => moveFile(index, "up")} disabled={index === 0} title={t.moveUp} className="p-2 text-muted-foreground hover:text-primary disabled:opacity-0 rounded-lg hover:bg-muted"><ArrowUp className="w-4 h-4" /></button><button onClick={() => moveFile(index, "down")} disabled={index === files.length - 1} title={t.moveDown} className="p-2 text-muted-foreground hover:text-primary disabled:opacity-0 rounded-lg hover:bg-muted"><ArrowDown className="w-4 h-4" /></button><button onClick={() => removeFile(index)} title={t.remove} className="p-2 text-muted-foreground hover:text-destructive rounded-lg hover:bg-muted"><Trash2 className="w-4 h-4" /></button></div></div>)}</div></div>}</div><div className="space-y-6"><div className="bg-card border border-border rounded-3xl p-6 shadow-sm space-y-6"><div className="flex items-center gap-2 pb-2 border-b border-border"><Settings2 className="w-5 h-5 text-primary" /><h2 className="font-bold">{t.settings}</h2></div><div className="space-y-6"><div className="space-y-3"><span className="text-sm font-medium text-foreground">{t.maxSize}</span><div className="flex flex-wrap gap-2">{RESOLUTIONS.map((res) => <button
     key={res.value}
     onClick={() => setSettings({ ...settings, maxSize: res.value })}
     className={clsx(
@@ -128,22 +141,22 @@ function EPUBReducer({ dict = {} }) {
       "w-12 h-6 rounded-full transition-colors relative",
       settings.grayscale ? "bg-primary" : "bg-muted"
     )}
-  ><div className={clsx("w-4 h-4 bg-white rounded-full absolute top-1 transition-all", settings.grayscale ? "right-1" : "left-1")} /></button></div><div className="space-y-3"><span className="text-sm font-medium text-foreground">Processing Mode</span><div className="grid grid-cols-2 gap-2 p-1 bg-secondary rounded-xl">{["batch", "merge"].map((m) => <button
+  ><div className={clsx("w-4 h-4 bg-white rounded-full absolute top-1 transition-all", settings.grayscale ? "right-1" : "left-1")} /></button></div><div className="space-y-3"><span className="text-sm font-medium text-foreground">{t.processingMode}</span><div className="grid grid-cols-2 gap-2 p-1 bg-secondary rounded-xl">{["batch", "merge"].map((m) => <button
     key={m}
     onClick={() => setSettings({ ...settings, merge: m === "merge" })}
     className={clsx(
       "py-2 rounded-lg text-sm font-medium transition-all duration-200 capitalize",
       (m === "merge" ? settings.merge : !settings.merge) ? "bg-card text-primary shadow-sm" : "text-muted-foreground hover:text-foreground"
     )}
-  >{m}</button>)}</div></div>{settings.merge && <div className="space-y-3 animate-in fade-in slide-in-from-top-2 duration-300"><span className="text-sm font-medium text-foreground">Output Filename</span><div className="flex items-center gap-2"><input
+  >{m === "merge" ? t.merge : t.batch}</button>)}</div></div>{settings.merge && <div className="space-y-3 animate-in fade-in slide-in-from-top-2 duration-300"><span className="text-sm font-medium text-foreground">{t.outputFilename}</span><div className="flex items-center gap-2"><input
     type="text"
     value={settings.outputFileName}
     onChange={(e) => setSettings({ ...settings, outputFileName: e.target.value })}
-    placeholder="merged_book"
+    placeholder={t.outputPlaceholder}
     className="flex-1 px-4 py-2 bg-secondary border-none rounded-2xl text-sm focus:ring-2 focus:ring-primary transition-all text-foreground placeholder:text-muted-foreground"
   /><button
     onClick={refreshOutputName}
-    title="Reset to first filename"
+    title={t.resetFilename}
     className="p-2 text-muted-foreground hover:text-primary rounded-xl bg-secondary hover:bg-secondary/80 transition-colors"
   ><RefreshCcw className="w-4 h-4" /></button></div></div>}</div></div><button
     onClick={processFiles}
@@ -152,7 +165,7 @@ function EPUBReducer({ dict = {} }) {
       "w-full flex items-center justify-center px-8 py-4 rounded-3xl font-bold transition-all duration-300 shadow-xl shadow-primary/10 active:scale-[0.98]",
       isProcessing || files.length === 0 ? "bg-secondary text-muted-foreground cursor-not-allowed" : "bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-primary/20"
     )}
-  >{isProcessing ? <div className="flex flex-col items-center"><div className="flex items-center gap-2"><Loader2 className="w-5 h-5 animate-spin" /><span>{progress.toFixed(0)}%</span></div></div> : <><Sparkles className="w-5 h-5 mr-2" />{t.process_btn}</>}</button></div></div><ToolDisclaimer message={dict.common?.labels?.image_disclaimer || "Images are re-encoded to shrink them, which is lossy — keep your original if you need it. Everything runs in this browser tab; no file is uploaded."} /></div>;
+  >{isProcessing ? <div className="flex flex-col items-center"><div className="flex items-center gap-2"><Loader2 className="w-5 h-5 animate-spin" /><span>{progress.toFixed(0)}%</span></div></div> : <><Sparkles className="w-5 h-5 mr-2" />{t.processBtn}</>}</button></div></div><ToolDisclaimer message={t.disclaimer} /></div>;
 }
 async function processBatchEPUB(file, settings, vips, onProgress) {
   const v = vips;

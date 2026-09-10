@@ -162,3 +162,44 @@ page that actually describes what they promised.
 **When adding a tool, check the component's real capabilities against the page copy.**
 `src/tools/*.jsx` carries an internal `description` per tool; if it names something the
 translation copy does not, the page is under-selling a shipped feature.
+
+## Tool components were never actually localized (fixed 2026-09-10)
+
+`CBZReducer`, `EPUBReducer`, `PDFToCBZ` and `PDFToJPG` (not `QrCodeGenerator`, which
+already used real i18n) were ported from lokaltools with a `dict` prop pattern —
+`const t = dict.tools?.cbz_reducer || {English defaults}` — that nothing in this app
+ever populated. `ToolRoutePage` lazy-loads each component with zero props. Every string
+in all four tools was therefore always English, in every locale, regardless of any
+translation work — this was invisible in English-only testing and only surfaced when the
+site owner checked a non-English `/tools/` page directly.
+
+Refactored all four to `useTranslation()`, reading `redesign.toolsPages.<slug>.tool` with
+the exact former hardcoded object kept as the inline fallback (so a locale with no
+translation yet — currently all 10 non-English ones — gets the identical English text via
+i18next's `fallbackLng: 'en'`, not a missing-key error). Interpolated counts
+(`{{count}} items selected`, `Convert {{count}} Files`, `{{count}} Pages Generated`,
+`Page {{number}}`) use `t()` directly with `defaultValue` rather than `returnObjects`,
+since object-returning keys don't support per-call interpolation.
+
+**One pre-existing bug found and preserved rather than silently changed:** `PDFToCBZ`'s
+render body had `{t.upload_label || "Upload PDF Files"}` even though `t.upload_label` was
+already resolved to `"Upload PDF File"` (singular) at declaration — the `||` fallback was
+dead code, unreachable since the left side was always truthy. The actually-rendered text
+today is the singular form; that's what shipped as the English source, not the
+unreachable plural. Grep for other doubled fallbacks before assuming a component's stated
+default matches what it renders.
+
+**Two functional gaps found while reading the render bodies, not fixed (out of scope for
+a localization pass):** `CBZReducer` has `settings.grayscale` state and the processing
+function respects it, but no checkbox/toggle exists anywhere in the render to turn it on
+— `t.grayscale` is declared but never referenced. `PDFToCBZ` and `EPUBReducer` both have
+a working grayscale toggle; `CBZReducer` alone is missing it.
+
+Verified in the browser after refactoring: uploaded a file to `CBZReducer`, clicked
+through Batch/Merge, checked every button title and label (`Move Up`, `Move Down`,
+`Remove`, `Reset to first filename`, `Output Filename`, the `merged_comic` placeholder)
+— all identical to pre-refactor. Confirmed interpolation resolves correctly via the
+running i18next instance (`Convert 5 Files`, `7 Pages Generated`, `Page 4`, etc.).
+
+Translating `redesign.toolsPages.*.tool` into the other 10 locales is tracked separately
+— this pass only fixed the architecture so translation is possible at all.

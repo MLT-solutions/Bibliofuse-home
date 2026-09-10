@@ -1264,7 +1264,33 @@
             "q": "Is there a file size limit?",
             "a": "The limit is your device's memory, not a server quota, because the work happens locally. Very large volumes are fine on a desktop; a phone with several hundred megabytes of pages may run out of room."
           }
-        ]
+        ],
+        "tool": {
+          "title": "CBZ/ZIP Reducer",
+          "description": "Compress or Merge CBZ and ZIP archives. Images are optimized to reduce file size.",
+          "uploadLabel": "Upload ZIP, CBZ or Images",
+          "uploadHint": "Drag & drop your files here",
+          "filesReady": "Files Ready",
+          "itemsSelected": "{{count}} items selected",
+          "moveUp": "Move Up",
+          "moveDown": "Move Down",
+          "remove": "Remove",
+          "settings": "Reduction Settings",
+          "maxSize": "Shortest Dimension Resolution",
+          "grayscale": "Grayscale Images",
+          "processingMode": "Processing Mode",
+          "batch": "Batch",
+          "merge": "Merge",
+          "outputFilename": "Output Filename",
+          "outputPlaceholder": "merged_comic",
+          "resetFilename": "Reset to first filename",
+          "imageFormat": "Image Format",
+          "archiveFormat": "Archive Format",
+          "convertFiles": "Convert {{count}} Files",
+          "processBtn": "Process & Download",
+          "error": "An error occurred while processing your files.",
+          "disclaimer": "Images are re-encoded to shrink them, which is lossy — keep your original if you need it. Everything runs in this browser tab; no file is uploaded."
+        }
       },
       "epub-reducer": {
         "tag": "EPUB",
@@ -1304,7 +1330,31 @@
             "q": "Will my reader still open it?",
             "a": "Yes. The output is a standard EPUB with the same structure and metadata as the input; only the image files inside are smaller."
           }
-        ]
+        ],
+        "tool": {
+          "title": "EPUB Reducer",
+          "description": "Compress or Merge EPUB files. Images are converted to optimized JPEGs to reduce size.",
+          "uploadLabel": "Upload EPUB Files",
+          "uploadHint": "Drag & drop your EPUBs here",
+          "filesReady": "Files Ready",
+          "itemsSelected": "{{count}} files selected",
+          "moveUp": "Move Up",
+          "moveDown": "Move Down",
+          "remove": "Remove",
+          "settings": "Reduction Settings",
+          "maxSize": "Max Image Dimension",
+          "grayscale": "Grayscale Images",
+          "processingMode": "Processing Mode",
+          "batch": "Batch",
+          "merge": "Merge",
+          "mergeLabel": "Merge into one book",
+          "outputFilename": "Output Filename",
+          "outputPlaceholder": "merged_book",
+          "resetFilename": "Reset to first filename",
+          "processBtn": "Process & Download",
+          "error": "An error occurred while processing your EPUB.",
+          "disclaimer": "Images are re-encoded to shrink them, which is lossy — keep your original if you need it. Everything runs in this browser tab; no file is uploaded."
+        }
       },
       "pdf-to-cbz": {
         "tag": "PDF → CBZ",
@@ -1340,7 +1390,34 @@
             "q": "Can it convert back the other way?",
             "a": "Not here — this direction covers the common case of a PDF that ought to be a comic. The BiblioFuse app handles CBZ to PDF on device."
           }
-        ]
+        ],
+        "tool": {
+          "title": "PDF to image CBZ/ZIP",
+          "description": "Convert PDF documents into high-quality CBZ or ZIP image archives. Each page becomes a high-quality JPEG.",
+          "uploadLabel": "Upload PDF File",
+          "uploadHint": "Drag & drop your PDF here",
+          "filesReady": "File Ready",
+          "itemsSelected": "{{count}} items selected",
+          "moveUp": "Move Up",
+          "moveDown": "Move Down",
+          "remove": "Remove",
+          "settings": "Settings",
+          "maxSize": "Shortest Dimension Resolution",
+          "grayscale": "Grayscale",
+          "processingMode": "Processing Mode",
+          "batch": "Batch",
+          "merge": "Merge",
+          "outputFilename": "Output Filename",
+          "outputPlaceholder": "merged_comic",
+          "resetFilename": "Reset to first filename",
+          "imageFormat": "Image Format",
+          "archiveFormat": "Archive Format",
+          "convertFiles": "Convert {{count}} Files",
+          "processBtn": "Convert to CBZ/ZIP",
+          "converting": "Converting...",
+          "error": "An error occurred while converting your PDF.",
+          "disclaimer": "Images are re-encoded to shrink them, which is lossy — keep your original if you need it. Everything runs in this browser tab; no file is uploaded."
+        }
       },
       "pdf-to-jpg": {
         "tag": "PDF → JPG",
@@ -1376,7 +1453,25 @@
             "q": "Does it work on password-protected PDFs?",
             "a": "No. An encrypted PDF has to be unlocked before anything can render it. SmartDecrypt, a separate app from the same studio, handles that case."
           }
-        ]
+        ],
+        "tool": {
+          "title": "PDF to JPG",
+          "description": "Render every page of a PDF as a JPG image.",
+          "uploadLabel": "Upload a PDF",
+          "uploadHint": "Select a single PDF file",
+          "changeFile": "Change File",
+          "quality": "Render quality",
+          "low": "Low",
+          "medium": "Medium",
+          "high": "High",
+          "converting": "Converting…",
+          "convertBtn": "Convert to JPG",
+          "pagesGenerated": "{{count}} Pages Generated",
+          "page": "Page {{number}}",
+          "downloadZip": "Download all as ZIP",
+          "error": "An error occurred while converting your PDF.",
+          "disclaimer": "Pages are rendered and encoded in this browser tab. Nothing is uploaded."
+        }
       },
       "qr-generator": {
         "tag": "QR code",

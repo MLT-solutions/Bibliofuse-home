@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
+import { useTranslation } from "react-i18next";
 import { FileArchive, Plus, Trash2, ArrowUp, ArrowDown, Loader2, Settings2, Sparkles, Image as ImageIcon, RefreshCcw } from "lucide-react";
 import { clsx } from "clsx";
 import { downloadBlob } from "../lib/download";
@@ -14,19 +15,38 @@ const RESOLUTIONS = [
   { label: "1440p", value: 1440 },
   { label: "1600p", value: 1600 }
 ];
-function CBZReducer({ dict = {} }) {
-  const t = dict.tools?.cbz_reducer || {
+function CBZReducer() {
+  const { t: translate } = useTranslation();
+  // Ported from lokaltools with a `dict` prop this app never populated, so every
+  // string always fell through to these English defaults regardless of locale (see
+  // docs/features/tools.md). Now sourced from i18n with the same defaults kept as a
+  // fallback for any locale that has not translated this key yet — i18next's
+  // fallbackLng already serves the English object to those locales automatically.
+  const t = translate('redesign.toolsPages.cbz-reducer.tool', { returnObjects: true }) || {
     title: "CBZ/ZIP Reducer",
     description: "Compress or Merge CBZ and ZIP archives. Images are optimized to reduce file size.",
-    upload_label: "Upload ZIP, CBZ or Images",
-    upload_hint: "Drag & drop your files here",
-    files_ready: "Files Ready",
-    processing: "Processing...",
-    process_btn: "Process & Download",
+    uploadLabel: "Upload ZIP, CBZ or Images",
+    uploadHint: "Drag & drop your files here",
+    filesReady: "Files Ready",
+    itemsSelected: "{{count}} items selected",
+    moveUp: "Move Up",
+    moveDown: "Move Down",
+    remove: "Remove",
     settings: "Reduction Settings",
-    max_size: "Shortest Dimension Resolution",
+    maxSize: "Shortest Dimension Resolution",
     grayscale: "Grayscale Images",
-    format: "Output Format"
+    processingMode: "Processing Mode",
+    batch: "Batch",
+    merge: "Merge",
+    outputFilename: "Output Filename",
+    outputPlaceholder: "merged_comic",
+    resetFilename: "Reset to first filename",
+    imageFormat: "Image Format",
+    archiveFormat: "Archive Format",
+    convertFiles: "Convert {{count}} Files",
+    processBtn: "Process & Download",
+    error: "An error occurred while processing your files.",
+    disclaimer: "Images are re-encoded to shrink them, which is lossy — keep your original if you need it. Everything runs in this browser tab; no file is uploaded.",
   };
   const [files, setFiles] = useState([]);
   const [isProcessing, setIsProcessing] = useState(false);
@@ -148,7 +168,7 @@ function CBZReducer({ dict = {} }) {
     } catch (error) {
       console.error("Error processing CBZ:", error);
       analyticsJob.error(error);
-      alert("An error occurred while processing your files.");
+      alert(t.error);
     } finally {
       setIsProcessing(false);
       setProgress(0);
@@ -160,38 +180,38 @@ function CBZReducer({ dict = {} }) {
       "relative group cursor-pointer border-2 border-dashed rounded-3xl p-12 transition-all duration-300 ease-out",
       isDragActive ? "border-primary bg-primary/10" : "border-border hover:border-primary hover:bg-muted/50"
     )}
-  ><input {...getInputProps()} /><div className="flex flex-col items-center justify-center space-y-4"><div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"><Plus className="w-8 h-8 text-primary" /></div><div className="text-center"><p className="text-lg font-medium">{t.upload_label}</p><p className="text-sm text-muted-foreground">{t.upload_hint}</p></div></div></div>{files.length > 0 && <div className="space-y-4"><div className="flex items-center justify-between"><h2 className="text-lg font-semibold">{t.files_ready}</h2><span className="text-sm text-muted-foreground">{files.length} items selected</span></div><div className="bg-card rounded-3xl border border-border overflow-hidden divide-y divide-border shadow-sm transition-all duration-300">{files.map((file, index) => <div key={`${file.name}-${index}`} className="group flex items-center p-4 hover:bg-muted/50 transition-colors"><div className="w-10 h-10 rounded-xl bg-muted flex items-center justify-center text-muted-foreground mr-4 group-hover:bg-primary/10 group-hover:text-primary transition-colors">{file.type.startsWith("image/") ? <ImageIcon className="w-6 h-6" /> : <FileArchive className="w-6 h-6" />}</div><div className="flex-1 min-w-0 py-1"><p className="font-medium text-foreground text-sm break-all" title={file.name}>{file.name}</p><p className="text-xs text-muted-foreground">{(file.size / 1024 / 1024).toFixed(2)} MB</p></div><div className="flex items-center space-x-1"><button onClick={() => moveFile(index, "up")} disabled={index === 0} title="Move Up" className="p-2 text-muted-foreground hover:text-primary disabled:opacity-0 rounded-lg hover:bg-muted"><ArrowUp className="w-4 h-4" /></button><button onClick={() => moveFile(index, "down")} disabled={index === files.length - 1} title="Move Down" className="p-2 text-muted-foreground hover:text-primary disabled:opacity-0 rounded-lg hover:bg-muted"><ArrowDown className="w-4 h-4" /></button><button onClick={() => removeFile(index)} title="Remove" className="p-2 text-muted-foreground hover:text-destructive rounded-lg hover:bg-muted"><Trash2 className="w-4 h-4" /></button></div></div>)}</div></div>}</div><div className="space-y-6"><div className="bg-card border border-border rounded-3xl p-6 shadow-sm space-y-6"><div className="flex items-center gap-2 pb-2 border-b border-border"><Settings2 className="w-5 h-5 text-primary" /><h2 className="font-bold">{t.settings}</h2></div><div className="space-y-6"><div className="space-y-3"><span className="text-sm font-medium text-foreground">{t.max_size}</span><div className="flex flex-wrap gap-2">{RESOLUTIONS.map((res) => <button
+  ><input {...getInputProps()} /><div className="flex flex-col items-center justify-center space-y-4"><div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"><Plus className="w-8 h-8 text-primary" /></div><div className="text-center"><p className="text-lg font-medium">{t.uploadLabel}</p><p className="text-sm text-muted-foreground">{t.uploadHint}</p></div></div></div>{files.length > 0 && <div className="space-y-4"><div className="flex items-center justify-between"><h2 className="text-lg font-semibold">{t.filesReady}</h2><span className="text-sm text-muted-foreground">{translate('redesign.toolsPages.cbz-reducer.tool.itemsSelected', { count: files.length, defaultValue: t.itemsSelected })}</span></div><div className="bg-card rounded-3xl border border-border overflow-hidden divide-y divide-border shadow-sm transition-all duration-300">{files.map((file, index) => <div key={`${file.name}-${index}`} className="group flex items-center p-4 hover:bg-muted/50 transition-colors"><div className="w-10 h-10 rounded-xl bg-muted flex items-center justify-center text-muted-foreground mr-4 group-hover:bg-primary/10 group-hover:text-primary transition-colors">{file.type.startsWith("image/") ? <ImageIcon className="w-6 h-6" /> : <FileArchive className="w-6 h-6" />}</div><div className="flex-1 min-w-0 py-1"><p className="font-medium text-foreground text-sm break-all" title={file.name}>{file.name}</p><p className="text-xs text-muted-foreground">{(file.size / 1024 / 1024).toFixed(2)} MB</p></div><div className="flex items-center space-x-1"><button onClick={() => moveFile(index, "up")} disabled={index === 0} title={t.moveUp} className="p-2 text-muted-foreground hover:text-primary disabled:opacity-0 rounded-lg hover:bg-muted"><ArrowUp className="w-4 h-4" /></button><button onClick={() => moveFile(index, "down")} disabled={index === files.length - 1} title={t.moveDown} className="p-2 text-muted-foreground hover:text-primary disabled:opacity-0 rounded-lg hover:bg-muted"><ArrowDown className="w-4 h-4" /></button><button onClick={() => removeFile(index)} title={t.remove} className="p-2 text-muted-foreground hover:text-destructive rounded-lg hover:bg-muted"><Trash2 className="w-4 h-4" /></button></div></div>)}</div></div>}</div><div className="space-y-6"><div className="bg-card border border-border rounded-3xl p-6 shadow-sm space-y-6"><div className="flex items-center gap-2 pb-2 border-b border-border"><Settings2 className="w-5 h-5 text-primary" /><h2 className="font-bold">{t.settings}</h2></div><div className="space-y-6"><div className="space-y-3"><span className="text-sm font-medium text-foreground">{t.maxSize}</span><div className="flex flex-wrap gap-2">{RESOLUTIONS.map((res) => <button
     key={res.value}
     onClick={() => setSettings({ ...settings, maxSize: res.value })}
     className={clsx(
       "px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200",
       settings.maxSize === res.value ? "bg-primary text-primary-foreground shadow-sm ring-2 ring-primary/20" : "bg-secondary text-muted-foreground hover:bg-secondary/80"
     )}
-  >{res.label}</button>)}</div></div><div className="space-y-3"><span className="text-sm font-medium text-foreground">Processing Mode</span><div className="grid grid-cols-2 gap-2 p-1 bg-secondary rounded-xl">{["batch", "merge"].map((m) => <button
+  >{res.label}</button>)}</div></div><div className="space-y-3"><span className="text-sm font-medium text-foreground">{t.processingMode}</span><div className="grid grid-cols-2 gap-2 p-1 bg-secondary rounded-xl">{["batch", "merge"].map((m) => <button
     key={m}
     onClick={() => setSettings({ ...settings, mode: m })}
     className={clsx(
       "py-2 rounded-lg text-sm font-medium transition-all duration-200 capitalize",
       settings.mode === m ? "bg-card text-primary shadow-sm" : "text-muted-foreground hover:text-foreground"
     )}
-  >{m}</button>)}</div></div>{settings.mode === "merge" && <div className="space-y-3 animate-in fade-in slide-in-from-top-2 duration-300"><span className="text-sm font-medium text-foreground">Output Filename</span><div className="flex items-center gap-2"><input
+  >{m === "merge" ? t.merge : t.batch}</button>)}</div></div>{settings.mode === "merge" && <div className="space-y-3 animate-in fade-in slide-in-from-top-2 duration-300"><span className="text-sm font-medium text-foreground">{t.outputFilename}</span><div className="flex items-center gap-2"><input
     type="text"
     value={settings.outputFileName}
     onChange={(e) => setSettings({ ...settings, outputFileName: e.target.value })}
-    placeholder="merged_comic"
+    placeholder={t.outputPlaceholder}
     className="flex-1 px-4 py-2 bg-secondary border-none rounded-2xl text-sm focus:ring-2 focus:ring-primary transition-all text-foreground placeholder:text-muted-foreground"
   /><button
     onClick={refreshOutputName}
-    title="Reset to first filename"
+    title={t.resetFilename}
     className="p-2 text-muted-foreground hover:text-primary rounded-xl bg-secondary hover:bg-secondary/80 transition-colors"
-  ><RefreshCcw className="w-4 h-4" /></button></div></div>}<div className="space-y-3"><span className="text-sm font-medium text-foreground">{dict.common?.labels?.image_format || "Image Format"}</span><div className="grid grid-cols-2 gap-2 p-1 bg-secondary rounded-xl">{["jpg", "webp"].map((f) => <button
+  ><RefreshCcw className="w-4 h-4" /></button></div></div>}<div className="space-y-3"><span className="text-sm font-medium text-foreground">{t.imageFormat}</span><div className="grid grid-cols-2 gap-2 p-1 bg-secondary rounded-xl">{["jpg", "webp"].map((f) => <button
     key={f}
     onClick={() => setSettings({ ...settings, imageFormat: f })}
     className={clsx(
       "py-2 rounded-lg text-sm font-medium transition-all duration-200 uppercase",
       settings.imageFormat === f ? "bg-card text-primary shadow-sm" : "text-muted-foreground hover:text-foreground"
     )}
-  >{f}</button>)}</div></div><div className="space-y-3"><span className="text-sm font-medium text-foreground">{dict.common?.labels?.archive_format || "Archive Format"}</span><div className="grid grid-cols-2 gap-2 p-1 bg-secondary rounded-xl">{["cbz", "zip"].map((f) => <button
+  >{f}</button>)}</div></div><div className="space-y-3"><span className="text-sm font-medium text-foreground">{t.archiveFormat}</span><div className="grid grid-cols-2 gap-2 p-1 bg-secondary rounded-xl">{["cbz", "zip"].map((f) => <button
     key={f}
     onClick={() => setSettings({ ...settings, archiveFormat: f })}
     className={clsx(
@@ -205,7 +225,7 @@ function CBZReducer({ dict = {} }) {
       "w-full flex items-center justify-center px-8 py-4 rounded-3xl font-bold transition-all duration-300 shadow-xl shadow-primary/10 active:scale-[0.98]",
       isProcessing || files.length === 0 ? "bg-secondary text-muted-foreground cursor-not-allowed" : "bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-primary/20"
     )}
-  >{isProcessing ? <div className="flex items-center gap-2"><Loader2 className="w-5 h-5 animate-spin" /><span>{progress.toFixed(0)}%</span></div> : <><Sparkles className="w-5 h-5 mr-2" /><span>{files.length > 1 && settings.mode === "batch" ? `Convert ${files.length} Files` : t.process_btn}</span></>}</button></div></div><ToolDisclaimer message={dict.common?.labels?.image_disclaimer || "Images are re-encoded to shrink them, which is lossy — keep your original if you need it. Everything runs in this browser tab; no file is uploaded."} /></div>;
+  >{isProcessing ? <div className="flex items-center gap-2"><Loader2 className="w-5 h-5 animate-spin" /><span>{progress.toFixed(0)}%</span></div> : <><Sparkles className="w-5 h-5 mr-2" /><span>{files.length > 1 && settings.mode === "batch" ? translate('redesign.toolsPages.cbz-reducer.tool.convertFiles', { count: files.length, defaultValue: t.convertFiles }) : t.processBtn}</span></>}</button></div></div><ToolDisclaimer message={t.disclaimer} /></div>;
 }
 async function processAndAddImage(buffer, zipWriter, index, settings, vips, sourceName) {
   const v = vips;

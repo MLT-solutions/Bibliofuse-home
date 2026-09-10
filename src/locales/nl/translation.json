@@ -1400,12 +1400,12 @@
       }
     },
     "guidePage": {
-      "seoTitle": "BiblioFuse Guide - Setup, Streaming, Libraries & Troubleshooting",
-      "seoDesc": "How to set up BiblioFuse: adding books, connecting Kavita, Komga and OPDS libraries, streaming from your own Mac or PC, reading options, and fixing common problems.",
-      "h1": "Guide",
-      "intro": "Setup, streaming and troubleshooting in one place. Everything here applies to the app you already have - no account needed to read any of it.",
-      "footerNote": "Not covered here? Support replies to real email, not a ticket queue.",
-      "footerCta": "Email support",
+      "seoTitle": "BiblioFuse-gids - Instellen, streamen, bibliotheken en probleemoplossing",
+      "seoDesc": "Hoe je BiblioFuse instelt: boeken toevoegen, Kavita-, Komga- en OPDS-bibliotheken verbinden, streamen vanaf je eigen Mac of pc, leesopties en veelvoorkomende problemen oplossen.",
+      "h1": "Gids",
+      "intro": "Instellen, streamen en problemen oplossen op één plek. Alles hier is van toepassing op de app die je al hebt - geen account nodig om iets ervan te lezen.",
+      "footerNote": "Staat het er niet bij? Support antwoordt via echte e-mail, geen ticketsysteem.",
+      "footerCta": "E-mail support",
       "sections": [
         {
           "id": "getting-started",
