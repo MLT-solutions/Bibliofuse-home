@@ -1230,11 +1230,11 @@
       "appPitchCta": "See BiblioFuse Reader",
       "cbz-reducer": {
         "tag": "CBZ · ZIP",
-        "h1": "Reduce CBZ file size",
-        "cardDesc": "Shrink comic archives by re-encoding the pages inside, without splitting the volume.",
-        "seoTitle": "Reduce CBZ File Size — Free, In Your Browser, No Upload",
-        "seoDesc": "Compress CBZ and ZIP comic archives in your browser. Re-encodes the pages inside at a resolution and quality you choose. Nothing is uploaded — the whole job runs on your device.",
-        "intro": "Drop in a CBZ or ZIP and it re-encodes every page inside at the size and quality you pick, then hands the archive back. Large scans usually lose most of their weight with no visible difference on a phone screen.",
+        "h1": "Reduce or merge CBZ files",
+        "cardDesc": "Shrink comic archives by re-encoding the pages inside, or join several volumes into one.",
+        "seoTitle": "Reduce or Merge CBZ Files — Free, In Your Browser, No Upload",
+        "seoDesc": "Compress CBZ and ZIP comic archives, or merge several into a single file, in your browser. Nothing is uploaded — the whole job runs on your device.",
+        "intro": "Drop in a CBZ or ZIP and it re-encodes every page inside at the size and quality you pick, then hands the archive back. Large scans usually lose most of their weight with no visible difference on a phone screen. Add several files and switch to merge mode to get one combined archive instead.",
         "sections": [
           {
             "title": "Why comic archives get so big",
@@ -1251,6 +1251,10 @@
         ],
         "faq": [
           {
+            "q": "Can it combine several CBZ files into one?",
+            "a": "Yes. Add all the files, switch the processing mode from batch to merge, and name the output — you get a single archive with the pages in file order. Handy for joining chapter downloads into one volume. Batch mode keeps them as separate files and just shrinks each one."
+          },
+          {
             "q": "Will this ruin the image quality?",
             "a": "Only if you tell it to. The default settings target the resolution a phone or tablet actually renders at, which is well below what most scans are stored at, so the visible result is usually identical. If you archive at print quality, raise the resolution cap or leave the file alone."
           },
@@ -1266,11 +1270,11 @@
       },
       "epub-reducer": {
         "tag": "EPUB",
-        "h1": "Compress an EPUB",
-        "cardDesc": "Re-encode the images inside an EPUB so it syncs and stores smaller.",
-        "seoTitle": "Compress EPUB Files — Free, In Your Browser, No Upload",
-        "seoDesc": "Shrink EPUB files by re-encoding the images inside them, in your browser. Text and structure are left untouched. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in an EPUB and it re-encodes the images inside — covers, illustrations, embedded scans — while leaving the text, structure and metadata exactly as they were.",
+        "h1": "Compress or merge EPUB files",
+        "cardDesc": "Re-encode the images inside an EPUB so it syncs and stores smaller, or join several into one book.",
+        "seoTitle": "Compress or Merge EPUB Files — Free, In Your Browser, No Upload",
+        "seoDesc": "Shrink EPUB files by re-encoding the images inside them, or merge several EPUBs into one book, in your browser. Text and structure are left untouched. No upload, no account.",
+        "intro": "Drop in an EPUB and it re-encodes the images inside — covers, illustrations, embedded scans — while leaving the text, structure and metadata exactly as they were. Add more than one file and turn on merge to combine them into a single book.",
         "sections": [
           {
             "title": "It is almost always the images",
@@ -1286,6 +1290,10 @@
           }
         ],
         "faq": [
+          {
+            "q": "Can it merge several EPUBs into one book?",
+            "a": "Yes. Add two or more files and turn on merge, then name the output. The chapters are kept in file order and the result is a single standard EPUB, which is useful for serialised releases published one part at a time."
+          },
           {
             "q": "Will it break DRM-protected books?",
             "a": "It cannot open them at all. DRM-protected EPUBs are encrypted, so there is nothing to re-encode. This works on DRM-free files only."

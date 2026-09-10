@@ -135,3 +135,30 @@ iOS/Android apps for a hardcoded link before taking the Netlify site down.
 Tool pages must clear the `fixed h-16` nav. `ToolPageLayout.jsx` and `ToolsHub.jsx` use
 `pt-28`, matching every other page. They originally shipped with `pt-10`/`pt-12`, which put
 the breadcrumb behind the header.
+
+## Merge was a hidden feature (fixed 2026-09-10)
+
+`CBZReducer` and `EPUBReducer` both ship a working **merge** mode — CBZ has a
+batch/merge processing toggle with an output filename, EPUB has a merge switch that
+activates with more than one file — and the components' own internal descriptions say
+"Compress or Merge". None of the public copy mentioned it: not the `h1`, `cardDesc`,
+`seoTitle`, `seoDesc`, `intro`, or any FAQ entry. Zero occurrences of "merge" or
+"combine" across the whole `redesign.toolsPages` block.
+
+That is the mirror image of the false-claim problem found elsewhere the same week: a
+shipped capability the site hid, rather than an unshipped one it advertised. It had
+measurable cost — Search Console shows real merge demand converting at 0%:
+`cbz merger` at **position 1**, `combine cbz files` at 9, `how to merge cbz files` at 6,
+plus `merge cbz`, `merge cbz files`, `combine cbz files into one`, `cbz combiner` and
+`merge epubs` (~15 impressions total, no clicks). Ranking first for a word the page never
+says is why nobody clicked.
+
+Both `h1`s now name it ("Reduce or merge CBZ files", "Compress or merge EPUB files"),
+the intros explain how to reach the mode, and each page gained a leading FAQ entry.
+Two retired blog articles already 301 here for merge queries
+(`merge-cbz-files-online`, `merge-epub-files-online`), so those redirects now land on a
+page that actually describes what they promised.
+
+**When adding a tool, check the component's real capabilities against the page copy.**
+`src/tools/*.jsx` carries an internal `description` per tool; if it names something the
+translation copy does not, the page is under-selling a shipped feature.
