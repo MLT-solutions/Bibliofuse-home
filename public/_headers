@@ -2,32 +2,37 @@
 # the build. GitHub Pages could not do this at all — it is one of the two reasons the site
 # moved to Pages (the other is _redirects).
 
-# The tool pages load wasm-vips, which spawns pthreads and so needs SharedArrayBuffer,
+# The tool pages load wasm-vips, which spawns pthreads and so wants SharedArrayBuffer,
 # which requires cross-origin isolation. Scoped to the tool routes rather than sitewide:
 # COEP also constrains cross-origin subresources, and the rest of the site pulls Google
 # Fonts (src/index.css) and fetches privacy policies from raw.githubusercontent.com
 # (AppPrivacy.jsx) — neither needs isolation.
 #
-# NOTE: /:lang/tools/* is a placeholder segment, NOT /*/tools/*. Cloudflare Pages only
-# honours a splat at the END of a path, so a middle splat silently matches nothing.
+# VERIFIED, and the one thing here that is easy to get wrong: the pattern must be
+# /:lang/tools/* — a placeholder segment, NOT /*/tools/*. Cloudflare Pages only honours a
+# splat at the END of a path, so a middle splat silently matches nothing at all. Observed
+# on bibliofuse.pages.dev 2026-09-10: /*/tools/* returned no COOP/COEP whatsoever while
+# /wasm/* (trailing splat) applied correctly.
 /:lang/tools/*
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Embedder-Policy: credentialless
 
-# The WASM and worker payloads need these on their OWN responses, not just on the pages
-# that consume them. emscripten spawns its pthread pool by loading vips.js as a worker
-# script, and in a cross-origin-isolated document that load is refused with
-# ERR_BLOCKED_BY_RESPONSE unless the script response carries the isolation headers plus
-# ACAO. When it is refused, vips never finishes initialising and the tools sit at 0%
-# while the .wasm files load fine — it reads as a stall, not a header problem.
+# The isolation headers and ACAO below mirror what lokaltools.com serves for the same
+# wasm-vips build (byte-identical vips.js, md5 verified).
 #
-# This set is copied from lokaltools.com, which serves the same wasm-vips build and is
-# known to work (verified 2026-09-10: vips init 2.5s there vs never on bibliofuse with
-# COEP alone). Do not trim it without re-testing an actual conversion on the deployed
-# site — the local dev server sets COEP on every response, so none of this reproduces
-# before deploying.
+# Honest history, so nobody re-derives it: these were added while chasing a tool failure
+# that turned out not to exist. The browser pane used for testing reported
+# visibilityState:hidden, which throttles workers, and the probe re-loaded the emscripten
+# factory while the component's own getVips() was already pending — which deadlocks. The
+# ERR_BLOCKED_BY_RESPONSE entries that seemed to confirm a header problem were stale
+# buffer from earlier deploys. The tools were working the whole time.
 #
-# Also: do NOT add Cross-Origin-Resource-Policy here. It blocks the same worker load.
+# So: this set is known-good and matches a known-good reference, but COOP and ACAO on the
+# asset responses are NOT demonstrated to be load-bearing. Cross-Origin-Resource-Policy
+# was tried here and removed; it is also not demonstrated to break anything. If you want
+# to trim any of it, trim one line at a time and test a real conversion on the deployed
+# site in a FRONTED, VISIBLE tab — the local dev server sets COEP on every response, so
+# none of this reproduces before deploying.
 /wasm/*
   Cache-Control: public, max-age=31536000, immutable
   Cross-Origin-Opener-Policy: same-origin
