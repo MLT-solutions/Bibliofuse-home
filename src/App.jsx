@@ -75,10 +75,49 @@ function AppLayout() {
       return;
     }
 
+    // Cross-page anchors (e.g. the homepage's "See what streams where" ->
+    // /comicreader/#setup-guide) used to scroll once inside a single
+    // requestAnimationFrame. Two problems: rAF never fires in a background tab, and
+    // /comicreader/ is ~8000px tall and media-heavy, so one scroll on the first frame
+    // lands in the wrong place as soon as the images above the target finish loading
+    // and shift the layout. Re-anchor a few times across the first second instead, and
+    // stop the moment the visitor scrolls themselves so this never fights them.
     const targetId = location.hash.slice(1);
-    window.requestAnimationFrame(() => {
-      document.getElementById(targetId)?.scrollIntoView({ block: 'start' });
-    });
+    let cancelled = false;
+    let timer;
+    const stop = () => {
+      cancelled = true;
+      window.clearTimeout(timer);
+    };
+    const opts = { passive: true, once: true };
+    window.addEventListener('wheel', stop, opts);
+    window.addEventListener('touchstart', stop, opts);
+    window.addEventListener('keydown', stop, { once: true });
+
+    // Explicit window.scrollTo rather than el.scrollIntoView({block:'start'}): it lets us
+    // clear the fixed 64px header (scrollIntoView puts the target flush under it), and it
+    // is the only form that actually moves the page in a background/hidden tab, which is
+    // also what makes this verifiable.
+    const HEADER_OFFSET = 80;
+    let attempts = 0;
+    const jump = () => {
+      if (cancelled) return;
+      const el = document.getElementById(targetId);
+      if (el) {
+        const y = el.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
+        window.scrollTo(0, Math.max(0, y));
+      }
+      attempts += 1;
+      if (attempts < 5) timer = window.setTimeout(jump, 220);
+    };
+    jump();
+
+    return () => {
+      stop();
+      window.removeEventListener('wheel', stop);
+      window.removeEventListener('touchstart', stop);
+      window.removeEventListener('keydown', stop);
+    };
   }, [location.hash, location.pathname]);
 
   // Get current path without language prefix

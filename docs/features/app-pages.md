@@ -303,7 +303,13 @@ real questions with self-contained answers.
 streaming connection modes, sticky first column, collapsed by default behind a "See
 the full platform coverage table" toggle since 2026-07-24) plus an interactive
 picker — pick what hosts your library and what you want to read on, get back the
-specific host app, client app, and connection mode to use. The picker itself is
+specific host app, client app, and connection mode to use. Its eyebrow used to read
+"Nine surfaces, one setup"; the hardcoded count was dropped on 2026-09-10 ("Every
+surface, one setup"). It needed editing on every launch and already disagreed with the
+sentence under it — the matrix has nine rows, that sentence lists nine names by merging
+Android phone/TV and splitting iPhone/iPad. **An OPDS/Komga/Kavita server is not a tenth
+surface**: it is a third-party server BiblioFuse reads from, which is exactly why it is a
+content-source column and not a matrix row. The picker itself is
 always visible; only the matrix table is collapsed. Client-side only, deliberately
 not a new indexed route (see `docs/site-showcase-audit.md` and the 2026-07-20
 portfolio review in the repo's chat history — this site can't afford new indexed
@@ -442,7 +448,11 @@ other's pitch.
 - `SecondHero` — **streaming & sync**, dark band (`#0b1220`), artwork right. Names the
   three answers to "my phone is full": a BiblioFuse host app (Mac/PC/Synology/Docker),
   your own iCloud Drive, and a third-party OPDS / Komga / Kavita server. Copy under
-  `redesign.home.secondHero.*`, written fresh in all 11 locales.
+  `redesign.home.secondHero.*`, written fresh in all 11 locales. Its CTA points at
+  `/{lang}/comicreader/#setup-guide`, **not** `/features/`: the label promises "which
+  combination works" and the picker answers that with a concrete host + client + mode
+  recommendation, where the matrix answers "does platform X do Y, and since when".
+  `ThirdHero`'s CTA still links `/features/`, so the matrix keeps a homepage link.
 - `ThirdHero` — **live comic & manga translation**, light band, artwork left, violet
   accent. It leads on translation because that is the one thing the field does not have:
   Panels gates OPDS behind a $9.99/yr tier, Komic does native Komga/Kavita, YACReader

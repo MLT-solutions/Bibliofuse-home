@@ -504,7 +504,14 @@ function ReaderFamilyGuide({ lang = 'en' }) {
     <section id="setup-guide" className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">Nine surfaces, one setup</div>
+          {/* Deliberately no platform count here. It used to read "Nine surfaces" — a
+              hardcoded number that had to be edited on every launch, and that already
+              disagreed with the sentence below it (the matrix has nine rows; the
+              sentence lists nine names by merging Android phone/TV and splitting
+              iPhone/iPad). An OPDS/Komga/Kavita server is NOT a tenth surface: it is
+              someone else's server that BiblioFuse reads from, which is why it is a
+              content-source column and not a matrix row. */}
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">Every surface, one setup</div>
           <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-black leading-tight tracking-tight text-slate-950">
             Find your setup
           </h2>

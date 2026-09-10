@@ -42,5 +42,25 @@ data behind the en/es/fr/ja cutoff.
 
 ## Scroll behavior
 `AppLayout` also handles hash-based scroll-to-section on route change (used for e.g.
-`/<lang>/comicreader/#why-two-apps` section links), and resets scroll to top otherwise.
+`/<lang>/comicreader/#setup-guide`, which the homepage's streaming hero links to), and
+resets scroll to top otherwise.
+
+**Reworked 2026-09-10.** It used to call `el.scrollIntoView({ block: 'start' })` once
+inside a single `requestAnimationFrame`. Two failure modes:
+
+- **One shot is not enough on a tall page.** `/comicreader/` is ~25,000px and heavy with
+  images that have no intrinsic size, so the target's offset moves by hundreds of pixels
+  as they load. The anchor now re-applies 5 times at 220ms intervals and gives up the
+  moment the visitor scrolls (`wheel` / `touchstart` / `keydown`), so it never fights
+  them; the listeners and timer are cleaned up on unmount.
+- **`scrollIntoView` also cannot clear the fixed header**, which is `h-16` (64px), so the
+  section landed flush underneath it. It now computes
+  `getBoundingClientRect().top + scrollY - 80` and calls `window.scrollTo`. Verified: all
+  four `/comicreader/` anchors (`apple-vision-pro`, `apple-tv`, `usage-guide`,
+  `setup-guide`) land with the section top at exactly 80px.
+
+Note for anyone debugging this in a headless or background tab: `scrollIntoView` is a
+**no-op while the tab is hidden**, even with `scroll-behavior: auto`, while
+`window.scrollTo` works. That difference is what made the old behaviour look broken during
+testing and is a second reason to prefer the explicit form.
 The legacy `/reader` path redirects to `/<lang>/comicreader/`.

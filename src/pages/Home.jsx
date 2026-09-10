@@ -218,8 +218,13 @@ function SecondHero({ lang }) {
               </li>
             ))}
           </ul>
+          {/* Points at the setup picker, not /features/. The label promises "which
+              combination works", and the picker answers exactly that with a concrete
+              host + client + connection-mode recommendation; the feature matrix answers
+              the different question "does platform X do Y, and since when". ThirdHero's
+              CTA below still links /features/, so the matrix keeps its homepage link. */}
           <Link
-            to={`/${lang}/features/`}
+            to={`/${lang}/comicreader/#setup-guide`}
             className="mt-7 inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-semibold text-[#0b1220] transition hover:-translate-y-0.5 hover:bg-slate-100"
           >
             {s.cta} →
