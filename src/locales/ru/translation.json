@@ -300,10 +300,10 @@
         ]
       },
       "toolsStrip": {
-        "eyebrow": "Free browser tools",
-        "title": "Fix the file before you read it.",
-        "desc": "Shrink an archive, convert a PDF, compress an EPUB — in the browser, on your device, nothing uploaded.",
-        "cta": "All tools"
+        "eyebrow": "Бесплатные браузерные инструменты",
+        "title": "Исправьте файл перед тем, как его читать.",
+        "desc": "Сожмите архив, конвертируйте PDF, сожмите EPUB — прямо в браузере, на вашем устройстве, ничего не загружается на сервер.",
+        "cta": "Все инструменты"
       },
       "thirdHero": {
         "eyebrow": "Новое в этом выпуске",
@@ -383,10 +383,10 @@
           "bullet3Title": "iCloud между устройствами",
           "bullet3Body": "продолжите на iPhone там, где остановились на iPad.",
           "imageAlt": "Библиотека BiblioFuse с тегами, рейтингом и прогрессом чтения",
-          "bullet4Title": "Native Komga & Kavita",
-          "bullet4Body": "Connect straight to your server’s own API — not just an OPDS feed — with reading position and bookmarks syncing both ways. Pro.",
-          "bullet5Title": "Any OPDS catalogue",
-          "bullet5Body": "OPDS 1.x with OPDS-PSE page streaming, so comics arrive a page at a time from Calibre-Web, COPS, Ubooquity or anything else that speaks it. Pro."
+          "bullet4Title": "Нативный Komga & Kavita",
+          "bullet4Body": "Подключайтесь напрямую к API вашего сервера — а не просто к ленте OPDS — с двусторонней синхронизацией позиции чтения и синхронизацией закладок в Kavita. Pro.",
+          "bullet5Title": "Любой каталог OPDS",
+          "bullet5Body": "OPDS 1.x с постраничной трансляцией OPDS-PSE, так что комиксы поступают постранично из Calibre-Web, COPS, Ubooquity или любого другого сервера, поддерживающего протокол. Pro."
         },
         "reading": {
           "eyebrow": "Читайте по-своему",
@@ -399,10 +399,10 @@
           "bullet3Title": "Peek zoom",
           "bullet3Body": "двойное касание для просмотра плотных панелей и мелкого текста.",
           "imageAlt": "Просмотр чтения BiblioFuse с TTS, авто-прокруткой и peek zoom",
-          "bullet4Title": "Live comic & manga translation",
-          "bullet4Body": "On-device OCR reads the balloon and typesets the translation back into it while you read. No export step, no second app. Pro.",
-          "bullet5Title": "Spreads, page curl & vertical Japanese",
-          "bullet5Body": "Dual-page spreads for double-page art, page-curl turns, and proper tategaki for vertical EPUB and manga."
+          "bullet4Title": "Живой перевод комиксов и манги",
+          "bullet4Body": "Распознавание текста на устройстве считывает облако и печатает перевод прямо в нём во время чтения. Без экспорта, без второго приложения. Pro.",
+          "bullet5Title": "Развороты, перелистывание страниц и вертикальный японский",
+          "bullet5Body": "Развороты для двухстраничных иллюстраций и правильный tategaki для вертикального EPUB и манги — оба бесплатны. Добавьте реалистичное перелистывание страниц с Pro."
         },
         "streaming": {
           "eyebrow": "Настольная библиотека на мобильном",
@@ -1056,7 +1056,7 @@
         "eyebrow": "Сравнить приложения",
         "title": "Выберите подходящее приложение BiblioFuse.",
         "desc": "Начните с задачи: читать комиксы, искать романы, разблокировать документы, удалять дубликаты или использовать быстрый инструмент в браузере.",
-        "matrixCta": "Compare every feature by platform",
+        "matrixCta": "Сравнить каждую функцию по платформам",
         "items": [
           {
             "key": "apple",

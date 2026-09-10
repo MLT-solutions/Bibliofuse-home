@@ -300,10 +300,10 @@
         ]
       },
       "toolsStrip": {
-        "eyebrow": "Free browser tools",
-        "title": "Fix the file before you read it.",
-        "desc": "Shrink an archive, convert a PDF, compress an EPUB — in the browser, on your device, nothing uploaded.",
-        "cta": "All tools"
+        "eyebrow": "Outils gratuits dans le navigateur",
+        "title": "Réparez le fichier avant de le lire.",
+        "desc": "Réduisez une archive, convertissez un PDF, compressez un EPUB — dans le navigateur, sur votre appareil, rien n'est envoyé.",
+        "cta": "Tous les outils"
       },
       "thirdHero": {
         "eyebrow": "Nouveau dans cette version",
@@ -383,10 +383,10 @@
           "bullet3Title": "iCloud multi-appareils",
           "bullet3Body": "reprenez sur iPhone là où vous avez arrêté sur iPad.",
           "imageAlt": "Bibliothèque BiblioFuse avec étiquettes, notes et progression",
-          "bullet4Title": "Native Komga & Kavita",
-          "bullet4Body": "Connect straight to your server’s own API — not just an OPDS feed — with reading position and bookmarks syncing both ways. Pro.",
-          "bullet5Title": "Any OPDS catalogue",
-          "bullet5Body": "OPDS 1.x with OPDS-PSE page streaming, so comics arrive a page at a time from Calibre-Web, COPS, Ubooquity or anything else that speaks it. Pro."
+          "bullet4Title": "API Komga et Kavita natives",
+          "bullet4Body": "Connectez-vous directement à l'API de votre propre serveur, pas seulement à un flux OPDS, avec la position de lecture synchronisée dans les deux sens et la synchronisation des signets sur Kavita. Pro.",
+          "bullet5Title": "N'importe quel catalogue OPDS",
+          "bullet5Body": "OPDS 1.x avec diffusion de pages OPDS-PSE, pour que les bandes dessinées arrivent page par page depuis Calibre-Web, COPS, Ubooquity ou tout autre serveur compatible. Pro."
         },
         "reading": {
           "eyebrow": "Lisez à votre façon",
@@ -399,10 +399,10 @@
           "bullet3Title": "Peek zoom",
           "bullet3Body": "double-tap pour inspecter les cases denses et les petits textes.",
           "imageAlt": "Vue de lecture BiblioFuse avec TTS, défilement auto et peek zoom",
-          "bullet4Title": "Live comic & manga translation",
-          "bullet4Body": "On-device OCR reads the balloon and typesets the translation back into it while you read. No export step, no second app. Pro.",
-          "bullet5Title": "Spreads, page curl & vertical Japanese",
-          "bullet5Body": "Dual-page spreads for double-page art, page-curl turns, and proper tategaki for vertical EPUB and manga."
+          "bullet4Title": "Traduction de bandes dessinées et mangas en direct",
+          "bullet4Body": "L'OCR sur l'appareil lit la bulle et recompose la traduction à sa place pendant la lecture. Aucune étape d'export, aucune seconde app. Pro.",
+          "bullet5Title": "Doubles pages, tourne-page et japonais vertical",
+          "bullet5Body": "Les doubles pages pour les illustrations en double page et le tategaki correct pour l'EPUB vertical et le manga sont gratuits. Ajoutez le tourne-page réaliste avec Pro."
         },
         "streaming": {
           "eyebrow": "Le bureau diffuse vers le mobile",
@@ -1056,7 +1056,7 @@
         "eyebrow": "Comparer les apps",
         "title": "Choisissez la bonne app BiblioFuse.",
         "desc": "Commencez par le workflow : lire des BD, chercher des romans, déverrouiller des documents, nettoyer les doublons, ou utiliser un outil rapide dans le navigateur.",
-        "matrixCta": "Compare every feature by platform",
+        "matrixCta": "Comparer chaque fonctionnalité par plateforme",
         "items": [
           {
             "key": "apple",

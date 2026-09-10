@@ -300,10 +300,10 @@
         ]
       },
       "toolsStrip": {
-        "eyebrow": "Free browser tools",
-        "title": "Fix the file before you read it.",
-        "desc": "Shrink an archive, convert a PDF, compress an EPUB — in the browser, on your device, nothing uploaded.",
-        "cta": "All tools"
+        "eyebrow": "Alat browser gratis",
+        "title": "Perbaiki filenya sebelum membacanya.",
+        "desc": "Perkecil arsip, konversi PDF, kompres EPUB — di browser, di perangkat Anda, tanpa apa pun yang diunggah.",
+        "cta": "Semua alat"
       },
       "thirdHero": {
         "eyebrow": "Baru di rilis ini",
@@ -383,10 +383,10 @@
           "bullet3Title": "iCloud lintas perangkat",
           "bullet3Body": "lanjutkan di iPhone dari tempat Anda berhenti di iPad.",
           "imageAlt": "Perpustakaan BiblioFuse dengan tag, penilaian, dan progres membaca",
-          "bullet4Title": "Native Komga & Kavita",
-          "bullet4Body": "Connect straight to your server’s own API — not just an OPDS feed — with reading position and bookmarks syncing both ways. Pro.",
-          "bullet5Title": "Any OPDS catalogue",
-          "bullet5Body": "OPDS 1.x with OPDS-PSE page streaming, so comics arrive a page at a time from Calibre-Web, COPS, Ubooquity or anything else that speaks it. Pro."
+          "bullet4Title": "Dukungan native Komga & Kavita",
+          "bullet4Body": "Sambungkan langsung ke API server Anda sendiri — bukan sekadar feed OPDS — dengan posisi baca yang tersinkron dua arah, dan sinkronisasi markah di Kavita. Pro.",
+          "bullet5Title": "Katalog OPDS apa pun",
+          "bullet5Body": "OPDS 1.x dengan streaming halaman OPDS-PSE, sehingga komik dimuat per halaman dari Calibre-Web, COPS, Ubooquity, atau server pendukung lainnya. Pro."
         },
         "reading": {
           "eyebrow": "Baca dengan cara Anda",
@@ -399,10 +399,10 @@
           "bullet3Title": "Peek zoom",
           "bullet3Body": "ketuk dua kali untuk memeriksa panel padat dan teks kecil.",
           "imageAlt": "Tampilan baca BiblioFuse dengan TTS, gulir otomatis, dan peek zoom",
-          "bullet4Title": "Live comic & manga translation",
-          "bullet4Body": "On-device OCR reads the balloon and typesets the translation back into it while you read. No export step, no second app. Pro.",
-          "bullet5Title": "Spreads, page curl & vertical Japanese",
-          "bullet5Body": "Dual-page spreads for double-page art, page-curl turns, and proper tategaki for vertical EPUB and manga."
+          "bullet4Title": "Terjemahan komik dan manga langsung",
+          "bullet4Body": "OCR di perangkat membaca balon teks dan menata ulang terjemahan tepat di tempatnya saat Anda membaca. Tanpa proses ekspor, tanpa aplikasi kedua. Pro.",
+          "bullet5Title": "Halaman ganda, balik halaman melengkung & bahasa Jepang vertikal",
+          "bullet5Body": "Halaman ganda untuk ilustrasi dua halaman dan tategaki yang benar untuk EPUB vertikal serta manga, keduanya gratis. Tambahkan balik halaman melengkung yang realistis dengan Pro."
         },
         "streaming": {
           "eyebrow": "Desktop streaming ke mobile",
@@ -1056,7 +1056,7 @@
         "eyebrow": "Bandingkan aplikasi",
         "title": "Pilih aplikasi BiblioFuse yang tepat.",
         "desc": "Mulai dari alur kerja Anda: membaca komik, mencari novel, membuka kunci dokumen, membersihkan duplikat, atau menggunakan alat browser cepat.",
-        "matrixCta": "Compare every feature by platform",
+        "matrixCta": "Bandingkan setiap fitur per platform",
         "items": [
           {
             "key": "apple",

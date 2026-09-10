@@ -586,3 +586,59 @@ and position writeback. Two refinements applied:
   shortcuts are wired end to end, so `docs/phone-external-controller-bindings.md`'s
   "do not market this" warning is stale. The site makes no controller claim for Android
   phone, so this is an opportunity rather than a defect.
+
+## Full localization audit found a real gap (2026-09-10)
+
+Prompted by the site owner noticing English fallback in non-English pages. A
+value-comparison scanner (`scan-untranslated.cjs`) exists but is noisy — it flags
+structural fields (`key: 'apple'`, `tint: 'blue'`), brand names, and legitimate cognates
+("Contact", "Blog", "Tools" as loanwords in several languages) alongside real bugs, so a
+raw run isn't actionable. A structural diff (does the key exist at all in each locale,
+independent of its value) plus manual review of the scanner's flagged prose strings
+found the real issue underneath the noise.
+
+**13 strings, on the flagship page and the homepage, pasted as English-only in the
+2026-09-10 restructure commit (`943c4fcd`) and never propagated:**
+
+- `comicReaderPage.editions.matrixCta` — the "Compare every feature by platform" link
+  under the edition chooser on `/comicreader/`.
+- `readerSection.features.library.bullet4/5` and `.reading.bullet4/5` — four
+  title+body pairs covering the newest features (native Komga/Kavita, OPDS, live
+  translation, spreads/page-curl/tategaki) on the same page's feature rows.
+- `home.toolsStrip.eyebrow/title/desc/cta` — the tools section on the homepage itself
+  (not `toolsHub`/`toolsPages`, which are intentionally English-only per the tools doc —
+  this is a different, unguarded key on the indexed homepage).
+
+All 13 were live in English on `es`, `fr`, `nl`, `pt`, `ru`, `zh`, `ja`, `ko`, `id`, `ms` —
+`es`, `fr`, `ja` are indexed. Translated into all 10; verified in the built output that no
+locale still matches the English string.
+
+**Two factual corrections applied to the source text before translating**, so a false
+claim wasn't propagated into 10 more languages:
+- `library.bullet4Body` claimed Komga/Kavita bookmark sync "both ways" — the same
+  overstatement already corrected on the homepage hero earlier in the day (bookmark sync
+  is Kavita-only; see the feature-matrix section above). Fixed to match.
+- `reading.bullet5Body` bundled page-curl turns (Pro) into a sentence with dual-page
+  spreads and tategaki (both free) with no Pro disclosure. Split so only page-curl reads
+  as Pro.
+
+**One translation-introduced bug caught before shipping:** the Russian draft glued a
+Cyrillic "т" onto the Latin word "ategaki" — `тategaki`, mixed script, not a rendering
+issue but a literal typo from translating "tategaki" as if the first letter needed
+transliterating. Caught by a stray-Latin-character validation pass (the same style used
+for every locale batch this session) and fixed before commit.
+
+**One inconsistency caught against this session's own precedent:** the corrected
+`library.bullet4Title` was translated as "Native Komga & Kavita" (kept in English) for
+`es`/`fr`/`nl`/`pt`, while the equivalent homepage bullet earlier the same day used a
+localized title ("API nativa de Komga y Kavita", etc.) for those same four locales.
+Aligned to match — the site should not phrase the identical claim two different ways
+depending on which section a visitor is reading.
+
+### How to run this check yourself
+`node scripts/scan-untranslated.cjs` for the noisy first pass; cross-reference its hits
+against a structural key-existence diff (every locale should have the same key set as
+`en`) to separate real gaps from cognates/structural fields/known-English-only sections
+(`toolsPages`, `toolsHub`, `qrGeneratorPage`, and the retired `smartdecryptPage` /
+`contentcuePage` / `decryptSection` / `contentcueSection` / `androidRequestPage` keys,
+all documented elsewhere as intentionally untranslated or dead).

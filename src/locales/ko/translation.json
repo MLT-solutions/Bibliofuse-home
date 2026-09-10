@@ -300,10 +300,10 @@
         ]
       },
       "toolsStrip": {
-        "eyebrow": "Free browser tools",
-        "title": "Fix the file before you read it.",
-        "desc": "Shrink an archive, convert a PDF, compress an EPUB — in the browser, on your device, nothing uploaded.",
-        "cta": "All tools"
+        "eyebrow": "무료 브라우저 도구",
+        "title": "읽기 전에 파일부터 고치세요.",
+        "desc": "압축 파일을 줄이고, PDF를 변환하고, EPUB을 압축하세요 — 브라우저 안, 내 기기에서 처리되며 아무것도 업로드되지 않습니다.",
+        "cta": "모든 도구"
       },
       "thirdHero": {
         "eyebrow": "이번 업데이트의 새 기능",
@@ -383,10 +383,10 @@
           "bullet3Title": "iCloud 크로스 디바이스",
           "bullet3Body": "iPad에서 중단한 곳을 iPhone에서 이어서.",
           "imageAlt": "태그, 평점, 읽기 진행률이 있는 BiblioFuse 라이브러리",
-          "bullet4Title": "Native Komga & Kavita",
-          "bullet4Body": "Connect straight to your server’s own API — not just an OPDS feed — with reading position and bookmarks syncing both ways. Pro.",
-          "bullet5Title": "Any OPDS catalogue",
-          "bullet5Body": "OPDS 1.x with OPDS-PSE page streaming, so comics arrive a page at a time from Calibre-Web, COPS, Ubooquity or anything else that speaks it. Pro."
+          "bullet4Title": "네이티브 Komga·Kavita 지원",
+          "bullet4Body": "단순한 OPDS 피드가 아니라 서버 자체 API에 직접 연결하여 읽던 위치를 양방향으로 동기화하고, 북마크 동기화는 Kavita에서 지원합니다. Pro.",
+          "bullet5Title": "모든 OPDS 카탈로그",
+          "bullet5Body": "OPDS 1.x와 OPDS-PSE 페이지 스트리밍을 지원해, Calibre-Web, COPS, Ubooquity 등 지원 서버에서 만화를 한 페이지씩 불러옵니다. Pro."
         },
         "reading": {
           "eyebrow": "당신의 방식으로 읽기",
@@ -399,10 +399,10 @@
           "bullet3Title": "픽 줌",
           "bullet3Body": "밀집된 패널과 작은 텍스트를 더블 탭으로 확대.",
           "imageAlt": "TTS, 자동 스크롤, 픽 줌이 있는 BiblioFuse 읽기 화면",
-          "bullet4Title": "Live comic & manga translation",
-          "bullet4Body": "On-device OCR reads the balloon and typesets the translation back into it while you read. No export step, no second app. Pro.",
-          "bullet5Title": "Spreads, page curl & vertical Japanese",
-          "bullet5Body": "Dual-page spreads for double-page art, page-curl turns, and proper tategaki for vertical EPUB and manga."
+          "bullet4Title": "실시간 만화·망가 번역",
+          "bullet4Body": "기기 내 OCR이 말풍선을 인식해 읽는 그 자리에 번역을 다시 조판합니다. 내보내기 과정도, 두 번째 앱도 필요 없습니다. Pro.",
+          "bullet5Title": "펼침면, 페이지 컬 넘김, 세로쓰기 일본어",
+          "bullet5Body": "펼침면 보기와 세로쓰기 EPUB·망가를 위한 올바른 세로쓰기 표시는 모두 무료입니다. Pro로 사실적인 페이지 컬 넘김을 추가할 수 있습니다."
         },
         "streaming": {
           "eyebrow": "데스크톱에서 모바일로 스트리밍",
@@ -1056,7 +1056,7 @@
         "eyebrow": "앱 비교",
         "title": "알맞은 BiblioFuse 앱을 선택하세요.",
         "desc": "먼저 사용 목적을 정하세요: 만화 읽기, 소설 검색, 문서 잠금 해제, 중복 파일 정리, 또는 빠른 브라우저 도구 사용.",
-        "matrixCta": "Compare every feature by platform",
+        "matrixCta": "플랫폼별로 모든 기능 비교하기",
         "items": [
           {
             "key": "apple",

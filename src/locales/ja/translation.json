@@ -300,10 +300,10 @@
         ]
       },
       "toolsStrip": {
-        "eyebrow": "Free browser tools",
-        "title": "Fix the file before you read it.",
-        "desc": "Shrink an archive, convert a PDF, compress an EPUB — in the browser, on your device, nothing uploaded.",
-        "cta": "All tools"
+        "eyebrow": "無料のブラウザツール",
+        "title": "読む前にファイルを直す。",
+        "desc": "アーカイブを縮小し、PDFを変換し、EPUBを圧縮——ブラウザ内、お使いの端末上で完結し、何もアップロードされません。",
+        "cta": "すべてのツール"
       },
       "thirdHero": {
         "eyebrow": "今回の新機能",
@@ -383,10 +383,10 @@
           "bullet3Title": "iCloud クロスデバイス",
           "bullet3Body": "iPad で中断した箇所を iPhone で再開。",
           "imageAlt": "タグ、評価、読書進捗のある BiblioFuse ライブラリ",
-          "bullet4Title": "Native Komga & Kavita",
-          "bullet4Body": "Connect straight to your server’s own API — not just an OPDS feed — with reading position and bookmarks syncing both ways. Pro.",
-          "bullet5Title": "Any OPDS catalogue",
-          "bullet5Body": "OPDS 1.x with OPDS-PSE page streaming, so comics arrive a page at a time from Calibre-Web, COPS, Ubooquity or anything else that speaks it. Pro."
+          "bullet4Title": "Komga・Kavitaネイティブ対応",
+          "bullet4Body": "OPDSフィードだけでなく、サーバー自体のAPIに直接接続し、読書位置を双方向で同期、ブックマーク同期はKavitaに対応します。Pro。",
+          "bullet5Title": "任意のOPDSカタログ",
+          "bullet5Body": "OPDS 1.xとOPDS-PSEのページストリーミングに対応し、Calibre-Web、COPS、Ubooquityなど対応するサーバーからページ単位でコミックが読み込まれます。Pro。"
         },
         "reading": {
           "eyebrow": "あなたの読み方で",
@@ -399,10 +399,10 @@
           "bullet3Title": "ピークズーム",
           "bullet3Body": "ダブルタップで密集パネルと小さな文字を拡大。",
           "imageAlt": "TTS、自動スクロール、ピークズーム付き BiblioFuse 読書ビュー",
-          "bullet4Title": "Live comic & manga translation",
-          "bullet4Body": "On-device OCR reads the balloon and typesets the translation back into it while you read. No export step, no second app. Pro.",
-          "bullet5Title": "Spreads, page curl & vertical Japanese",
-          "bullet5Body": "Dual-page spreads for double-page art, page-curl turns, and proper tategaki for vertical EPUB and manga."
+          "bullet4Title": "コミック・マンガのライブ翻訳",
+          "bullet4Body": "端末上のOCRが吹き出しを読み取り、読んでいるその場に翻訳を組み直して表示します。書き出し不要、2つ目のアプリも不要です。Pro。",
+          "bullet5Title": "見開き、ページカール、縦書き日本語",
+          "bullet5Body": "見開き表示と、縦書きEPUB・マンガ向けの正しいタテガキ表示はどちらも無料です。Proでリアルなページカールのめくりを追加できます。"
         },
         "streaming": {
           "eyebrow": "デスクトップからモバイルへ",
@@ -1056,7 +1056,7 @@
         "eyebrow": "アプリを比較",
         "title": "自分に合ったBiblioFuseアプリを選ぶ。",
         "desc": "まずは用途から選びましょう：マンガを読む、小説を検索する、書類のロックを解除する、重複ファイルを整理する、またはブラウザでさっと使えるツールを利用する。",
-        "matrixCta": "Compare every feature by platform",
+        "matrixCta": "プラットフォームごとに全機能を比較",
         "items": [
           {
             "key": "apple",
