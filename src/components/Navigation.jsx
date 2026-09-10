@@ -1,13 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { TOOLS } from '../data/tools';
+
+// Mirrors the card accents in src/pages/tools/ToolsHub.jsx
+const TOOL_BADGE = {
+    blue: 'bg-blue-50 text-blue-700',
+    violet: 'bg-violet-50 text-violet-700',
+    orange: 'bg-orange-50 text-orange-700',
+    teal: 'bg-teal-50 text-teal-700',
+    emerald: 'bg-emerald-50 text-emerald-700',
+};
 import { Link, useParams, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 // Temporary: point straight at the App Store instead of mlogictech.com/products
 // until that listing is live — see docs/features/app-pages.md. Swap back to
 // mlogictech.com once it's ready.
-const smartDecryptAppStoreUrl = 'https://apps.apple.com/ca/app/smartdecrypt-pdf-zip/id6763979229';
-const contentCueAppStoreUrl = 'https://apps.apple.com/us/app/contentcue-read-listen/id6770080864';
 
 const LANGUAGES = [
     { code: 'en', label: 'English' },
@@ -47,11 +55,20 @@ const Navigation = () => {
         { id: 'changelog', label: t('nav.changelog'), path: '/changelog/' },
         { id: 'features', label: t('nav.features'), path: '/features/' },
     ];
+    // Built from src/data/tools.js so the menu can never drift from the actual routes.
+    // Until 2026-09-10 this menu was labelled "Tools" but listed BiblioFuse Reader, one
+    // generic "BiblioFuse Tools" link, and two sister apps that live on mlogictech.com —
+    // so none of the five real tools were reachable from the nav, and the two off-domain
+    // apps reproduced exactly the cross-app dilution removed everywhere else.
     const tools = [
         { name: 'BiblioFuse Reader', sub: t('redesign.tools.readerSub'), path: '/comicreader/', logo: '/image/bibliofuse-logo.png', logoZoom: 1.5 },
-        { name: 'BiblioFuse Tools', sub: t('redesign.tools.webSub'), path: '/tools/', logo: '/image/webtool-logo.png' },
-        { name: 'SmartDecrypt PDF ZIP', sub: t('redesign.tools.smartSub'), href: smartDecryptAppStoreUrl, logo: '/image/smartdecrypt-logo.png' },
-        { name: 'ContentCue', sub: t('redesign.tools.contentcueSub'), href: contentCueAppStoreUrl, logo: '/image/contentcue-logo.png', logoZoom: 1.15 },
+        ...TOOLS.map((tool) => ({
+            name: t(`redesign.toolsPages.${tool.slug}.h1`),
+            sub: t(`redesign.toolsPages.${tool.slug}.tag`),
+            path: `/tools/${tool.slug}/`,
+            accent: tool.accent,
+            badge: tool.badge,
+        })),
     ];
 
     const toggleLangMenu = () => setIsLangOpen(!isLangOpen);
@@ -165,9 +182,15 @@ const Navigation = () => {
                                                             onClick={() => setIsToolsOpen(false)}
                                                             className="group flex items-start gap-3 rounded-xl p-3 transition hover:bg-slate-50"
                                                         >
-                                                            <span className="h-9 w-9 shrink-0 rounded-lg overflow-hidden shadow-sm block flex-none">
-                                                                <img src={tool.logo} alt={tool.name} className="h-full w-full object-cover" style={tool.logoZoom ? { transform: `scale(${tool.logoZoom})`, transformOrigin: 'center' } : undefined} />
-                                                            </span>
+                                                            {tool.logo ? (
+                                                                <span className="h-9 w-9 shrink-0 rounded-lg overflow-hidden shadow-sm block flex-none">
+                                                                    <img src={tool.logo} alt={tool.name} className="h-full w-full object-cover" style={tool.logoZoom ? { transform: `scale(${tool.logoZoom})`, transformOrigin: 'center' } : undefined} />
+                                                                </span>
+                                                            ) : (
+                                                                <span className={`flex h-9 w-9 shrink-0 flex-none items-center justify-center rounded-lg text-[11px] font-black uppercase ${TOOL_BADGE[tool.accent] || TOOL_BADGE.blue}`} aria-hidden="true">
+                                                                    {tool.badge}
+                                                                </span>
+                                                            )}
                                                             <span className="min-w-0 flex-1">
                                                                 <span className="block text-sm font-bold leading-tight text-slate-950">{tool.name}</span>
                                                                 <span className="mt-0.5 block text-xs text-slate-500">{tool.sub}</span>
