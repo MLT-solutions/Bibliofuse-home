@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 .vite/
 docs/.docs-queue
+
+# Claude Code agent worktrees — never commit; a stray gitlink here breaks every
+# clone that initialises submodules (it has no .gitmodules entry). This broke the
+# first Cloudflare Pages build: "fatal: No url found for submodule path".
+.claude/worktrees/

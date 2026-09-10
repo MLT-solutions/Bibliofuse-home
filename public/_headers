@@ -1,21 +1,41 @@
-# Cloudflare Pages response headers. Vite copies public/ into dist/, so this ships
-# with the build. GitHub Pages could not do this at all — it is one of the two reasons
-# the site moved to Pages (the other is _redirects).
+# Cloudflare Pages response headers. Vite copies public/ into dist/, so this ships with
+# the build. GitHub Pages could not do this at all — it is one of the two reasons the site
+# moved to Pages (the other is _redirects).
 
-# The tool pages load wasm-vips, which spawns pthreads and therefore needs
-# SharedArrayBuffer, which requires cross-origin isolation. Scoped to /tools/ rather
-# than applied sitewide: COEP also constrains cross-origin subresources, and the rest
-# of the site pulls Google Fonts (src/index.css) and fetches app privacy policies from
-# raw.githubusercontent.com (AppPrivacy.jsx) — neither of which needs isolation.
-/*/tools/*
+# The tool pages load wasm-vips, which spawns pthreads and so needs SharedArrayBuffer,
+# which requires cross-origin isolation. Scoped to the tool routes rather than sitewide:
+# COEP also constrains cross-origin subresources, and the rest of the site pulls Google
+# Fonts (src/index.css) and fetches privacy policies from raw.githubusercontent.com
+# (AppPrivacy.jsx) — neither needs isolation.
+#
+# NOTE: /:lang/tools/* is a placeholder segment, NOT /*/tools/*. Cloudflare Pages only
+# honours a splat at the END of a path, so a middle splat silently matches nothing.
+/:lang/tools/*
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Embedder-Policy: credentialless
 
-# The WASM and worker payloads are content-addressed by release, never edited in place.
+# The WASM and worker payloads need these on their OWN responses, not just on the pages
+# that consume them. emscripten spawns its pthread pool by loading vips.js as a worker
+# script, and in a cross-origin-isolated document that load is refused with
+# ERR_BLOCKED_BY_RESPONSE unless the script response carries the isolation headers plus
+# ACAO. When it is refused, vips never finishes initialising and the tools sit at 0%
+# while the .wasm files load fine — it reads as a stall, not a header problem.
+#
+# This set is copied from lokaltools.com, which serves the same wasm-vips build and is
+# known to work (verified 2026-09-10: vips init 2.5s there vs never on bibliofuse with
+# COEP alone). Do not trim it without re-testing an actual conversion on the deployed
+# site — the local dev server sets COEP on every response, so none of this reproduces
+# before deploying.
+#
+# Also: do NOT add Cross-Origin-Resource-Policy here. It blocks the same worker load.
 /wasm/*
   Cache-Control: public, max-age=31536000, immutable
-  Cross-Origin-Resource-Policy: same-origin
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: credentialless
+  Access-Control-Allow-Origin: *
 
 /workers/*
   Cache-Control: public, max-age=31536000, immutable
-  Cross-Origin-Resource-Policy: same-origin
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: credentialless
+  Access-Control-Allow-Origin: *
