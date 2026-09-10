@@ -1415,12 +1415,29 @@
           "desc": "Install it, get your files in, and know where your progress lives.",
           "items": [
             {
-              "q": "How do I add books and folders to BiblioFuse on iPhone?",
-              "a": "BiblioFuse stores files in its own iCloud-synced folder. You can add books via the Files app (copy files into the BiblioFuse folder), via AirDrop, or via the built-in Wi-Fi Transfer — open a library session from Mac or PC and drag files in from any browser."
+              "q": "Bagaimana cara menambah buku dan folder ke BiblioFuse di iPhone?",
+              "a": "BiblioFuse menyimpan fail dalam foldernya sendiri yang disegerakkan dengan iCloud. Anda boleh menambah buku melalui apl Fail (salin fail ke folder BiblioFuse), melalui AirDrop, atau melalui ciri Pemindahan Wi-Fi terbina dalam — buka sesi perpustakaan dari Mac atau PC dan seret fail dari mana-mana pelayar."
             },
             {
-              "q": "Where are reading progress, bookmarks, ratings, and tags saved?",
-              "a": "It depends on where the book file lives:"
+              "q": "Di mana kemajuan membaca, penanda buku, penilaian, dan tag disimpan?",
+              "a": "Bergantung pada di mana fail buku disimpan:",
+              "bullets": [
+                {
+                  "text": "Storan tempatan — disimpan pada peranti itu sahaja, tiada penyegerakan merentas peranti"
+                },
+                {
+                  "text": "Storan iCloud — disimpan ke iCloud, disegerakkan secara automatik merentas semua peranti iOS, Mac, dan PC"
+                },
+                {
+                  "text": "SMB / perkongsian rangkaian (penstriman Mac atau PC) — disimpan pada peranti hos",
+                  "sub": [
+                    "iOS membaca strim Mac: kemajuan disimpan pada Mac",
+                    "iOS membaca strim PC: kemajuan disimpan pada PC",
+                    "PC ↔ Mac: disimpan secara bebas, data tidak dikongsi",
+                    "Jika anda menggunakan Mac dan PC sebagai hos penstriman, data bacaan anda akan terpisah. Gunakan satu hos sahaja untuk konsistensi."
+                  ]
+                }
+              ]
             }
           ],
           "links": [
@@ -1457,24 +1474,88 @@
           "desc": "Your own machine hosts the library; the app reads from it.",
           "items": [
             {
-              "q": "How does streaming from Mac or PC to iPhone work?",
-              "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. Both devices must have Tailscale on (works at home and remotely). If only one device has Tailscale on, the connection will fail. Keeping both devices always on Tailscale gives the most consistent experience."
+              "q": "Bagaimana penstriman dari Mac atau PC ke iPhone berfungsi?",
+              "a": "Mac atau PC anda menjalankan pelayan tempatan dan menulis alamat sambungan ke iCloud Drive. iPhone anda mengesannya secara automatik. Kedua-dua peranti mesti menghidupkan Tailscale (berfungsi di rumah dan dari jauh). Jika hanya satu peranti mempunyai Tailscale dihidupkan, sambungan akan gagal. Memastikan kedua-duanya sentiasa dihidupkan memberikan pengalaman yang paling konsisten."
             },
             {
-              "q": "What do I need to set up streaming?",
-              "a": "Both your Mac or PC and your iPhone must have the following configured:"
+              "q": "Apa yang saya perlukan untuk menyediakan strim?",
+              "a": "Ia bergantung pada tempat anda mahu membaca.",
+              "bullets": [
+                {
+                  "text": "Di rumah: tiada apa-apa tambahan.",
+                  "sub": [
+                    "Apl hos pada Mac atau PC anda mengisytiharkan dirinya pada rangkaian tempatan; iPhone, iPad atau Vision Pro anda menemuinya sendiri.",
+                    "Benarkan akses rangkaian tempatan pada kali pertama apl bertanya. Itu sahaja penyediaannya."
+                  ]
+                },
+                {
+                  "text": "Di luar rumah: akaun iCloud yang sama pada kedua-dua peranti, serta Tailscale berjalan pada kedua-duanya.",
+                  "sub": [
+                    "Hos menulis alamatnya ke iCloud Drive anda dan peranti bacaan mengambilnya melalui Tailscale.",
+                    "Windows tidak menyertakan iCloud: pasang <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">iCloud untuk Windows</a> daripada Microsoft Store.",
+                    "Akaun iCloud dan Tailscale anda boleh menggunakan e-mel berbeza, dan nod keluar Tailscale tidak diperlukan."
+                  ]
+                },
+                {
+                  "text": "Hos NAS berfungsi secara berbeza: ia tiada laluan iCloud sama sekali.",
+                  "sub": [
+                    "Pasangkan sekali pada rangkaian tempatan anda supaya sertifikatnya disimpan; selepas itu hos yang sama boleh dicapai dari jauh melalui Tailscale."
+                  ]
+                }
+              ]
             },
             {
-              "q": "Streaming is set up correctly but still not working — what should I try?",
-              "a": "A stale endpoint cache is the most common cause. One or more <code>stream_endpoint.json</code> files stored in iCloud has an outdated timestamp, which prevents BiblioFuse from discovering the host."
+              "q": "Strim sudah disediakan dengan betul tetapi hos tidak muncul — apa yang boleh saya cuba?",
+              "a": "Dahulu punca biasanya ialah fail alamat yang lapuk. Hos Mac kini memadamnya sendiri setiap kali strim bermula, berhenti, atau alamatnya berubah — termasuk salinan konflik iCloud — jadi ini jarang menjadi masalah lagi.",
+              "bullets": [
+                {
+                  "text": "Tutup dan buka semula apl pada hos. Semasa dimulakan, ia menerbitkan alamat baharu.",
+                  "sub": []
+                },
+                {
+                  "text": "Pada peranti bacaan, buka senarai sumber strim dan cari titik hijau di sebelah nama hos.",
+                  "sub": [
+                    "Kelabu bermaksud hos belum dicapai — tunggu beberapa detik, atau paksa tutup dan buka semula apl pada hos."
+                  ]
+                },
+                {
+                  "text": "Hos Windows belum melakukan pembersihan automatik itu.",
+                  "sub": [
+                    "Jika hos PC kekal tidak kelihatan, buka iCloud Drive → BiblioFuse → Documents daripada iPhone atau Mac dan padam <code>stream_endpoint.json</code> bersama sebarang salinan bernombor, kemudian buka semula apl hos.",
+                    "Lakukannya daripada iPhone atau Mac dan bukan PC: Windows mungkin menyimpan hanya versi dalam talian fail itu, jadi pemadaman di sana tidak boleh dipercayai."
+                  ]
+                }
+              ]
             },
             {
-              "q": "Why does streaming require Tailscale? Can't it just use home Wi-Fi?",
-              "a": "Tailscale is required because of how iOS handles local network connections. Here is what happened:"
+              "q": "Adakah saya perlukan Tailscale untuk strim di rumah?",
+              "a": "Tidak. Strim Wi-Fi tempatan berfungsi dengan sendiri: hos mengisytiharkan dirinya pada rangkaian anda dan apl menyambung melaluinya dengan HTTPS bersertifikat terpaku. Versi awal memang gagal pada rangkaian tempatan, kerana apl tidak membaca metadata yang diisytiharkan hos dan berbalik kepada alamat HTTP biasa yang disekat oleh binaan keluaran. Itu sudah diperbaiki. Tailscale kini hanya untuk membaca di luar rumah.",
+              "bullets": [
+                {
+                  "text": "Tetapan → Strim Mac / PC mempunyai tiga mod.",
+                  "sub": [
+                    "<strong>iCloud + Tailscale</strong> — menyenaraikan kedua-dua hos tempatan dan hos jauh yang diterbitkan melalui iCloud.",
+                    "<strong>Wi-Fi tempatan</strong> — hos tempatan sahaja; alamat jauh tidak pernah dipaparkan atau didail.",
+                    "<strong>Tailscale manual</strong> — untuk hos yang anda masukkan sendiri, termasuk NAS."
+                  ]
+                },
+                {
+                  "text": "Tiada pertukaran automatik antara tempatan dan jauh, dan itu memang disengajakan.",
+                  "sub": [
+                    "Pada rangkaian yang sama kedua-dua entri muncul untuk hos yang sama dan anda memilih satu, jadi sambungan tempatan yang berfungsi tidak pernah ditukar secara senyap kepada laluan yang lebih perlahan."
+                  ]
+                },
+                {
+                  "text": "Apple TV berfungsi pada rangkaian tempatan sahaja.",
+                  "sub": [
+                    "tvOS tidak boleh menggunakan iCloud Drive, dan laluan Tailscale sudah dibina serta diuji tetapi dihantar dalam keadaan dimatikan sementara pepijat Tailscale pada tvOS belum diselesaikan."
+                  ]
+                }
+              ]
             },
             {
-              "q": "Why can't Android receive books from Mac or PC?",
-              "a": "The Android app uses a different codebase without iCloud integration, which is how the streaming handshake works. The best workflow for Android is to sync files to your phone using Syncthing or a similar tool, then add that folder as a library source in the app."
+              "q": "Bolehkah Android membaca daripada hos Mac atau PC?",
+              "a": "Boleh. Apl Android menemui hos pada rangkaian tempatan anda, atau anda boleh menaip alamat hos sendiri, dan ia boleh menyalin buku daripada hos ke pustakanya sendiri. Kedudukan bacaan dihantar semula kepada hos. Android tiada akses iCloud, jadi membaca di luar rumah bermakna memasukkan alamat hos secara manual melalui Tailscale dan bukan ditemui untuk anda."
             }
           ]
         },
@@ -1484,16 +1565,53 @@
           "desc": "Formats, reading direction, text-to-speech and translation.",
           "items": [
             {
-              "q": "Does BiblioFuse work on Apple Vision Pro?",
-              "a": "Yes. BiblioFuse is a native visionOS app on the App Store — a true spatial window, not a compatibility-mode iPad app. It supports eye tracking, pinch, mouse, trackpad, and keyboard, and it is included in the universal iOS + Mac purchase at no extra cost."
+              "q": "Adakah BiblioFuse berfungsi pada Apple Vision Pro?",
+              "a": "Ya. BiblioFuse ialah aplikasi visionOS asli di App Store: tetingkap spatial sebenar, bukan aplikasi iPad mod keserasian. Ia menyokong penjejakan mata, cubit, tetikus, pad sesentuh dan papan kekunci, serta disertakan dalam pembelian universal iOS + Mac tanpa kos tambahan."
             },
             {
-              "q": "What spatial reading layouts does BiblioFuse support on visionOS?",
-              "a": "Three spatial library layouts: Spatial Bookshelves (your covers on floating shelves), Grid View (a floating grid for large libraries), and Slanted Wall (an angled gallery wall with rating and tag filters). You can also stream your library from a Mac or PC to keep Vision Pro storage free."
+              "q": "Susun atur bacaan spatial apakah yang disokong BiblioFuse pada visionOS?",
+              "a": "Tiga susun atur pustaka spatial: Rak buku spatial (kulit buku anda pada rak terapung), Paparan grid (grid terapung untuk pustaka besar) dan Dinding condong (dinding galeri condong dengan penapis penilaian dan tag). Anda juga boleh menstrim pustaka dari Mac atau PC untuk memastikan storan Vision Pro kekal lapang."
             },
             {
-              "q": "How do I get better text-to-speech voices in BiblioFuse?",
-              "a": "Higher-quality voices may already be available through your device's text-to-speech system, but some must be downloaded separately. BiblioFuse will detect newly installed voices automatically when they are made available to apps."
+              "q": "Bagaimana cara mendapatkan suara teks-ke-pertuturan yang lebih baik dalam BiblioFuse?",
+              "a": "Suara berkualiti tinggi sudah tertanam dalam peranti anda tetapi perlu dimuat turun secara berasingan — BiblioFuse akan mengesannya secara automatik setelah dipasang.",
+              "bullets": [
+                {
+                  "text": "iPhone / iPad",
+                  "sub": [
+                    "Pergi ke Tetapan → Kebolehcapaian → Kandungan Pertuturan → Suara",
+                    "Pilih bahasa anda, kemudian muat turun suara Dipertingkat atau Premium",
+                    "Suara Premium pada iOS 16+ mempunyai kualiti neural (tahap Siri)"
+                  ]
+                },
+                {
+                  "text": "Mac",
+                  "sub": [
+                    "Pergi ke Tetapan Sistem → Kebolehcapaian → Kandungan Pertuturan → Suara Sistem → Urus Suara",
+                    "Muat turun sebarang suara Dipertingkat atau Premium untuk bahasa anda"
+                  ]
+                },
+                {
+                  "text": "Windows 10 / Windows 11",
+                  "sub": [
+                    "Pergi ke Tetapan → Masa & bahasa → Bahasa & rantau",
+                    "Tambah bahasa bacaan anda, atau buka Pilihan bahasa untuk bahasa yang telah dipasang",
+                    "Di bawah Ciri bahasa, pasang Teks-ke-pertuturan",
+                    "Mulakan semula BiblioFuse, kemudian mulakan sesi TTS baharu"
+                  ]
+                },
+                {
+                  "text": "Suara Semula Jadi Windows 11 (pilihan)",
+                  "sub": [
+                    "Pergi ke Tetapan → Kebolehcapaian → Pencerita",
+                    "Di bawah Tambah suara semula jadi, muat turun suara yang dikehendaki",
+                    "Nota: Windows mungkin hanya mendedahkan suara ini kepada Pencerita sahaja, bukan semua apl"
+                  ]
+                },
+                {
+                  "text": "Tiada kemas kini aplikasi diperlukan — BiblioFuse mengesan suara yang baru dipasang apabila ia didedahkan melalui sistem teks-ke-pertuturan Windows atau Apple"
+                }
+              ]
             }
           ],
           "links": [
@@ -1518,8 +1636,8 @@
           "desc": "Fix a file before you read it - in the browser, on your device.",
           "items": [
             {
-              "q": "What is the difference between the PC Reader and the PC EPUB / CBZ tools?",
-              "a": "The PC Reader is a full reading app — it opens books, manages your library, compresses files, and streams to iPhone. The PC EPUB and CBZ tools are lighter, cheaper apps focused on compression and merging only, with no reader."
+              "q": "Apakah perbezaan antara PC Reader dan alat PC EPUB / CBZ?",
+              "a": "PC Reader ialah apl membaca penuh — ia membuka buku, mengurus perpustakaan anda, memampatkan fail, dan membuat penstriman ke iPhone. Alat PC EPUB dan CBZ ialah apl yang lebih ringan dan murah yang hanya berfokus pada pemampatan dan penggabungan, tanpa pembaca."
             }
           ],
           "links": [

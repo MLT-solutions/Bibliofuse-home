@@ -11,10 +11,46 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 
-function RichText({ text }) {
-    // FAQ answers carry <strong>/<em> from the comicreader copy
+function stripTags(value) {
+    return String(value || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function RichText({ text, className }) {
+    // Answers carry <strong>/<em>/<code> and the occasional <a> from the comicreader copy
     if (!text) return null;
-    return <span dangerouslySetInnerHTML={{ __html: text }} />;
+    return <span className={className} dangerouslySetInnerHTML={{ __html: text }} />;
+}
+
+// Restored 2026-09-10. The move from /comicreader/ to /guide/ copied each answer's `a`
+// string and silently dropped its `bullets`, so five answers lost their actual content —
+// three of them were left as a lead-in sentence ending in a colon. The lists are the
+// substance here (streaming prerequisites, the stale-endpoint fix, per-platform TTS
+// steps), so this renders them, nested `sub` steps included.
+function AnswerBody({ item }) {
+    const bullets = Array.isArray(item.bullets) ? item.bullets : [];
+    return (
+        <div className="mt-2 text-sm leading-relaxed text-slate-600">
+            <RichText text={item.a} />
+            {bullets.length > 0 && (
+                <ul className="mt-3 space-y-2.5">
+                    {bullets.map((b) => (
+                        <li key={b.text} className="rounded-lg bg-slate-50 px-3.5 py-2.5">
+                            <RichText text={b.text} className="font-semibold text-slate-800" />
+                            {Array.isArray(b.sub) && b.sub.length > 0 && (
+                                <ul className="mt-1.5 list-disc space-y-1 pl-4 text-slate-600">
+                                    {b.sub.map((sub) => (
+                                        <li key={sub}>
+                                            <RichText text={sub} />
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </li>
+                    ))}
+                </ul>
+            )}
+        </div>
+    );
 }
 
 export default function Guide() {
@@ -24,11 +60,21 @@ export default function Guide() {
     const sections = Array.isArray(g.sections) ? g.sections : [];
 
     // Flatten every Q&A into one FAQPage graph — this page is the site's FAQ home now.
+    //
+    // The bullet lists have to be folded into the answer text, not dropped. Five of these
+    // answers are a one-line lead-in plus a list ("Both devices must have the following
+    // configured:"), so an `a`-only schema was publishing three answers to Google that
+    // ended in a colon and said nothing — 40, 71 and 98 characters. See
+    // docs/features/guide.md.
     const faqItems = sections.flatMap((s) =>
-        (s.items || []).map((it) => ({
-            q: it.q,
-            a: (it.a || '').replace(/<[^>]+>/g, ''),
-        })),
+        (s.items || []).map((it) => {
+            const parts = [stripTags(it.a)];
+            (it.bullets || []).forEach((b) => {
+                parts.push(stripTags(b.text));
+                (b.sub || []).forEach((sub) => parts.push(stripTags(sub)));
+            });
+            return { q: it.q, a: parts.filter(Boolean).join(' ') };
+        }),
     );
 
     return (
@@ -82,9 +128,7 @@ export default function Guide() {
                                         <summary className="cursor-pointer text-sm font-semibold text-slate-900 marker:content-['']">
                                             {item.q}
                                         </summary>
-                                        <div className="mt-2 text-sm leading-relaxed text-slate-600">
-                                            <RichText text={item.a} />
-                                        </div>
+                                        <AnswerBody item={item} />
                                     </details>
                                 ))}
                             </div>

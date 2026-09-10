@@ -1420,7 +1420,24 @@
             },
             {
               "q": "Where are reading progress, bookmarks, ratings, and tags saved?",
-              "a": "It depends on where the book file lives:"
+              "a": "It depends on where the book file lives:",
+              "bullets": [
+                {
+                  "text": "Local storage — saved on that device only, no cross-device sync"
+                },
+                {
+                  "text": "iCloud storage — saved to iCloud, syncs across all iOS, Mac, and PC devices automatically"
+                },
+                {
+                  "text": "SMB / network share (Mac or PC streaming) — saved on the host device",
+                  "sub": [
+                    "iOS reading a Mac stream: progress saves on the Mac",
+                    "iOS reading a PC stream: progress saves on the PC",
+                    "PC ↔ Mac: stored independently — they do not share data",
+                    "If you use both Mac and PC as streaming hosts, your reading data will be split. Stick to one host for consistency."
+                  ]
+                }
+              ]
             }
           ],
           "links": [
@@ -1462,19 +1479,83 @@
             },
             {
               "q": "What do I need to set up streaming?",
-              "a": "Both your Mac or PC and your iPhone must have the following configured:"
+              "a": "It depends on where you want to read.",
+              "bullets": [
+                {
+                  "text": "At home — nothing extra.",
+                  "sub": [
+                    "The host app on your Mac or PC advertises itself on your local network; your iPhone, iPad or Vision Pro finds it on its own.",
+                    "Allow local network access the first time the app asks. That is the whole setup."
+                  ]
+                },
+                {
+                  "text": "Away from home — the same iCloud account on both devices, plus Tailscale running on both.",
+                  "sub": [
+                    "The host writes its address to your iCloud Drive and the reading device picks it up over Tailscale.",
+                    "Windows has no built-in iCloud — install <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">iCloud for Windows</a> from the Microsoft Store.",
+                    "Your iCloud and Tailscale accounts can use different email addresses, and a Tailscale exit node is not needed."
+                  ]
+                },
+                {
+                  "text": "A NAS host works differently — it has no iCloud path at all.",
+                  "sub": [
+                    "Pair it once on your local network so the certificate is stored, after which the same host can be reached remotely over Tailscale."
+                  ]
+                }
+              ]
             },
             {
-              "q": "Streaming is set up correctly but still not working — what should I try?",
-              "a": "A stale endpoint cache is the most common cause. One or more <code>stream_endpoint.json</code> files stored in iCloud has an outdated timestamp, which prevents BiblioFuse from discovering the host."
+              "q": "Streaming is set up correctly but the host does not appear — what should I try?",
+              "a": "Stale address files used to be the usual cause. The Mac host now clears them by itself every time streaming starts, stops, or its address changes — including iCloud conflict copies — so this is rarely the problem any more.",
+              "bullets": [
+                {
+                  "text": "Quit and reopen the app on the host. It republishes a fresh address on launch.",
+                  "sub": []
+                },
+                {
+                  "text": "On the reading device, open the streaming source list and look for a green dot beside the host name.",
+                  "sub": [
+                    "Grey means the host has not been reached yet — wait a few seconds, or force-quit and reopen the app on the host."
+                  ]
+                },
+                {
+                  "text": "The Windows host does not yet do that automatic cleanup.",
+                  "sub": [
+                    "If a PC host stays invisible, open iCloud Drive → BiblioFuse → Documents from an iPhone or Mac and delete <code>stream_endpoint.json</code> along with any numbered copies, then reopen the host app.",
+                    "Do this from an iPhone or Mac rather than the PC — Windows may hold only an online-only placeholder, so deleting there is unreliable."
+                  ]
+                }
+              ]
             },
             {
-              "q": "Why does streaming require Tailscale? Can't it just use home Wi-Fi?",
-              "a": "Tailscale is required because of how iOS handles local network connections. Here is what happened:"
+              "q": "Do I need Tailscale to stream at home?",
+              "a": "No. Local Wi-Fi streaming works on its own — the host advertises itself on your network and the app connects to it over HTTPS with a pinned certificate. Early versions genuinely did fail on a local network, because the app was not reading the metadata the host advertised and fell back to a plain-HTTP address that release builds block. That is fixed. Tailscale is now only for reading away from home.",
+              "bullets": [
+                {
+                  "text": "Settings → Mac / PC Streaming has three modes.",
+                  "sub": [
+                    "<strong>iCloud + Tailscale</strong> — lists both local hosts and the remote one published through iCloud.",
+                    "<strong>Local Wi-Fi</strong> — local hosts only; no remote address is ever shown or dialled.",
+                    "<strong>Manual Tailscale</strong> — for a host you enter by hand, including a NAS."
+                  ]
+                },
+                {
+                  "text": "There is deliberately no automatic switching between local and remote.",
+                  "sub": [
+                    "On the same network both entries appear for the same host and you pick one, so a working local connection is never silently swapped for a slower route."
+                  ]
+                },
+                {
+                  "text": "Apple TV is local-network only.",
+                  "sub": [
+                    "tvOS cannot use iCloud Documents, and the Tailscale path is built and tested but shipped switched off while an upstream Tailscale bug on tvOS is unresolved."
+                  ]
+                }
+              ]
             },
             {
-              "q": "Why can't Android receive books from Mac or PC?",
-              "a": "The Android app uses a different codebase without iCloud integration, which is how the streaming handshake works. The best workflow for Android is to sync files to your phone using Syncthing or a similar tool, then add that folder as a library source in the app."
+              "q": "Can Android read from a Mac or PC host?",
+              "a": "Yes. The Android app finds hosts on your local network, or you can type the host address in by hand, and it can copy a book from the host into its own library. Reading position is sent back to the host. Android has no iCloud access, so reading away from home means entering the host address manually over Tailscale rather than having it discovered for you."
             }
           ]
         },
@@ -1493,7 +1574,56 @@
             },
             {
               "q": "How do I get better text-to-speech voices in BiblioFuse?",
-              "a": "Higher-quality voices may already be available through your device's text-to-speech system, but some must be downloaded separately. BiblioFuse will detect newly installed voices automatically when they are made available to apps."
+              "a": "Higher-quality voices may already be available through your device's text-to-speech system, but some must be downloaded separately. BiblioFuse will detect newly installed voices automatically when they are made available to apps.",
+              "bullets": [
+                {
+                  "text": "iPhone / iPad",
+                  "sub": [
+                    "Go to Settings → Accessibility → Spoken Content → Voices",
+                    "Choose your language, then download an Enhanced or Premium voice",
+                    "Premium voices on supported iOS versions provide Apple's highest-quality speech"
+                  ]
+                },
+                {
+                  "text": "Android",
+                  "sub": [
+                    "Go to Settings → Accessibility → Text-to-speech output",
+                    "Depending on your device, this setting may instead appear under Settings → General management → Text-to-speech, or Settings → System → Languages → Text-to-speech output",
+                    "Select your preferred text-to-speech engine, such as Speech Recognition & Synthesis from Google or your device manufacturer's engine",
+                    "Open the engine settings, select Install voice data, and download the languages or voices you want",
+                    "You may also update the text-to-speech engine through Google Play",
+                    "Voice quality and availability vary by device, language, manufacturer, and installed TTS engine — some higher-quality voices may require an internet connection",
+                    "Restart BiblioFuse, then begin a new TTS session"
+                  ]
+                },
+                {
+                  "text": "Mac",
+                  "sub": [
+                    "Go to System Settings → Accessibility → Spoken Content → System Voice → Manage Voices",
+                    "Download any Enhanced or Premium voice for your language"
+                  ]
+                },
+                {
+                  "text": "Windows 10 / Windows 11",
+                  "sub": [
+                    "Go to Settings → Time & language → Language & region",
+                    "Add your reading language, or open Language options for an installed language",
+                    "Under Language features, install Text-to-speech",
+                    "Restart BiblioFuse, then begin a new TTS session"
+                  ]
+                },
+                {
+                  "text": "Windows 11 Natural voices (optional)",
+                  "sub": [
+                    "Go to Settings → Accessibility → Narrator",
+                    "Under Add natural voices, download the voice you want",
+                    "Windows may expose some Natural voices only to Narrator and not to other applications"
+                  ]
+                },
+                {
+                  "text": "No BiblioFuse update is required. BiblioFuse detects newly installed voices when they are exposed through the Android, Apple, or Windows text-to-speech system"
+                }
+              ]
             }
           ],
           "links": [

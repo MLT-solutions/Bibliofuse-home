@@ -1415,12 +1415,29 @@
           "desc": "Install it, get your files in, and know where your progress lives.",
           "items": [
             {
-              "q": "How do I add books and folders to BiblioFuse on iPhone?",
-              "a": "BiblioFuse stores files in its own iCloud-synced folder. You can add books via the Files app (copy files into the BiblioFuse folder), via AirDrop, or via the built-in Wi-Fi Transfer — open a library session from Mac or PC and drag files in from any browser."
+              "q": "如何在 iPhone 上向 BiblioFuse 添加书籍和文件夹？",
+              "a": "BiblioFuse 将文件存储在自己的 iCloud 同步文件夹中。您可以通过「文件」应用（将文件复制到 BiblioFuse 文件夹）、AirDrop，或通过内置 Wi-Fi 传输功能添加书籍 — 从 Mac 或 PC 开启库会话，然后从任意浏览器拖入文件。"
             },
             {
-              "q": "Where are reading progress, bookmarks, ratings, and tags saved?",
-              "a": "It depends on where the book file lives:"
+              "q": "阅读进度、书签、评分和标签保存在哪里？",
+              "a": "这取决于书籍文件的存储位置：",
+              "bullets": [
+                {
+                  "text": "本地存储 — 仅保存在该设备上，不跨设备同步"
+                },
+                {
+                  "text": "iCloud 存储 — 保存至 iCloud，自动同步到所有 iOS、Mac 和 PC 设备"
+                },
+                {
+                  "text": "SMB / 网络共享（Mac 或 PC 串流）— 保存在主机设备上",
+                  "sub": [
+                    "iOS 读取 Mac 串流：进度保存在 Mac 上",
+                    "iOS 读取 PC 串流：进度保存在 PC 上",
+                    "PC ↔ Mac：各自独立存储，数据不共享",
+                    "如果您同时使用 Mac 和 PC 作为串流主机，您的阅读数据将被分割。建议只使用一台主机以保持一致性。"
+                  ]
+                }
+              ]
             }
           ],
           "links": [
@@ -1457,24 +1474,88 @@
           "desc": "Your own machine hosts the library; the app reads from it.",
           "items": [
             {
-              "q": "How does streaming from Mac or PC to iPhone work?",
-              "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. Both devices must have Tailscale on (works at home and remotely). If only one device has Tailscale on, the connection will fail. Keeping both devices always on Tailscale gives the most consistent experience."
+              "q": "Mac 或 PC 向 iPhone 的串流是如何工作的？",
+              "a": "您的 Mac 或 PC 运行本地服务器，并将连接地址写入 iCloud Drive。iPhone 会自动识别。两台设备必须同时开启 Tailscale（在家和远程均可使用）。如果只有一台设备开启了 Tailscale，连接将失败。保持两台设备始终开启 Tailscale 可获得最稳定的体验。"
             },
             {
-              "q": "What do I need to set up streaming?",
-              "a": "Both your Mac or PC and your iPhone must have the following configured:"
+              "q": "设置串流需要准备什么？",
+              "a": "这取决于你想在哪里阅读。",
+              "bullets": [
+                {
+                  "text": "在家：无需额外设置。",
+                  "sub": [
+                    "Mac 或 PC 上的主机应用会在局域网中广播自己，iPhone、iPad 或 Vision Pro 会自动找到它。",
+                    "应用第一次询问时允许访问本地网络即可，这就是全部设置。"
+                  ]
+                },
+                {
+                  "text": "离家在外：两台设备使用同一个 iCloud 账户，并且都运行 Tailscale。",
+                  "sub": [
+                    "主机会把地址写入你的 iCloud 云盘，阅读设备再通过 Tailscale 取用。",
+                    "Windows 不内置 iCloud——请从 Microsoft Store 安装 <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">Windows 版 iCloud</a>。",
+                    "iCloud 与 Tailscale 账户可以使用不同邮箱，也不需要启用 Tailscale 出口节点。"
+                  ]
+                },
+                {
+                  "text": "NAS 主机的方式不同——它完全没有 iCloud 通道。",
+                  "sub": [
+                    "先在局域网内配对一次以保存证书，之后同一台主机即可通过 Tailscale 远程访问。"
+                  ]
+                }
+              ]
             },
             {
-              "q": "Streaming is set up correctly but still not working — what should I try?",
-              "a": "A stale endpoint cache is the most common cause. One or more <code>stream_endpoint.json</code> files stored in iCloud has an outdated timestamp, which prevents BiblioFuse from discovering the host."
+              "q": "串流设置正确但主机不出现，可以怎么排查？",
+              "a": "过去常见的原因是地址文件过期。现在每次串流启动、停止或地址变化时，Mac 主机都会自行清除这些文件，包括 iCloud 冲突副本，所以这已经很少是问题所在。",
+              "bullets": [
+                {
+                  "text": "在主机上退出并重新打开应用。启动时它会发布新的地址。",
+                  "sub": []
+                },
+                {
+                  "text": "在阅读设备上打开串流来源列表，查看主机名称旁是否有绿点。",
+                  "sub": [
+                    "灰色表示尚未连上主机——请等几秒，或在主机上强制退出并重新打开应用。"
+                  ]
+                },
+                {
+                  "text": "Windows 主机尚未支持这项自动清理。",
+                  "sub": [
+                    "如果 PC 主机始终不可见，请用 iPhone 或 Mac 打开 iCloud 云盘 → BiblioFuse → Documents，删除 <code>stream_endpoint.json</code> 以及任何带编号的副本，然后重新打开主机应用。",
+                    "请用 iPhone 或 Mac 操作，而不要用这台 PC：Windows 可能只保留文件的在线版本，在那里删除并不可靠。"
+                  ]
+                }
+              ]
             },
             {
-              "q": "Why does streaming require Tailscale? Can't it just use home Wi-Fi?",
-              "a": "Tailscale is required because of how iOS handles local network connections. Here is what happened:"
+              "q": "在家串流需要 Tailscale 吗？",
+              "a": "不需要。局域网 Wi-Fi 串流可以独立工作：主机在你的网络中广播自己，应用通过带证书固定的 HTTPS 连接它。早期版本在局域网下确实失败过，原因是应用没有读取主机广播的元数据，退回到了正式版会拦截的普通 HTTP 地址。这个问题已修复。Tailscale 现在只用于离家阅读。",
+              "bullets": [
+                {
+                  "text": "「设置 → Mac / PC 串流」提供三种模式。",
+                  "sub": [
+                    "<strong>iCloud + Tailscale</strong>——同时列出局域网主机和通过 iCloud 发布的远程主机。",
+                    "<strong>局域网 Wi-Fi</strong>——只显示局域网主机，绝不显示或连接远程地址。",
+                    "<strong>手动 Tailscale</strong>——用于手动输入的主机，包括 NAS。"
+                  ]
+                },
+                {
+                  "text": "本地与远程之间刻意不做自动切换。",
+                  "sub": [
+                    "在同一网络中，同一台主机会同时出现两条记录，由你自行选择，因此可用的本地连接绝不会被悄悄换成更慢的线路。"
+                  ]
+                },
+                {
+                  "text": "Apple TV 仅支持局域网。",
+                  "sub": [
+                    "tvOS 无法使用 iCloud 云盘，Tailscale 通道虽已开发并测试完成，但在 tvOS 上的 Tailscale 缺陷解决之前仍以关闭状态发布。"
+                  ]
+                }
+              ]
             },
             {
-              "q": "Why can't Android receive books from Mac or PC?",
-              "a": "The Android app uses a different codebase without iCloud integration, which is how the streaming handshake works. The best workflow for Android is to sync files to your phone using Syncthing or a similar tool, then add that folder as a library source in the app."
+              "q": "Android 能从 Mac 或 PC 主机读取吗？",
+              "a": "可以。Android 应用会在局域网中查找主机，你也可以手动输入主机地址，并且它可以把书从主机复制到自己的书库。阅读进度会回传给主机。Android 无法访问 iCloud，因此离家阅读需要通过 Tailscale 手动输入主机地址，而不是自动发现。"
             }
           ]
         },
@@ -1484,16 +1565,53 @@
           "desc": "Formats, reading direction, text-to-speech and translation.",
           "items": [
             {
-              "q": "Does BiblioFuse work on Apple Vision Pro?",
-              "a": "Yes. BiblioFuse is a native visionOS app on the App Store — a true spatial window, not a compatibility-mode iPad app. It supports eye tracking, pinch, mouse, trackpad, and keyboard, and it is included in the universal iOS + Mac purchase at no extra cost."
+              "q": "BiblioFuse 能在 Apple Vision Pro 上使用吗？",
+              "a": "可以。BiblioFuse 是 App Store 上的原生 visionOS 应用——一个真正的空间窗口，而非兼容模式下的 iPad 应用。它支持眼动追踪、捏合、鼠标、触控板和键盘，并已包含在 iOS + Mac 通用购买中，无需额外付费。"
             },
             {
-              "q": "What spatial reading layouts does BiblioFuse support on visionOS?",
-              "a": "Three spatial library layouts: Spatial Bookshelves (your covers on floating shelves), Grid View (a floating grid for large libraries), and Slanted Wall (an angled gallery wall with rating and tag filters). You can also stream your library from a Mac or PC to keep Vision Pro storage free."
+              "q": "BiblioFuse 在 visionOS 上支持哪些空间阅读布局？",
+              "a": "三种空间图书馆布局：空间书架（封面陈列在悬浮书架上）、网格视图（面向大型图书馆的悬浮网格）和倾斜墙面（带评分和标签筛选的倾斜画廊墙面）。你还可以从 Mac 或 PC 串流图书馆，让 Vision Pro 的存储空间保持空闲。"
             },
             {
-              "q": "How do I get better text-to-speech voices in BiblioFuse?",
-              "a": "Higher-quality voices may already be available through your device's text-to-speech system, but some must be downloaded separately. BiblioFuse will detect newly installed voices automatically when they are made available to apps."
+              "q": "如何在 BiblioFuse 中获得更好的文字转语音声音？",
+              "a": "更高质量的声音已内置于您的设备中，但需要单独下载 — 安装后 BiblioFuse 将自动识别它们。",
+              "bullets": [
+                {
+                  "text": "iPhone / iPad",
+                  "sub": [
+                    "前往「设置」→「辅助功能」→「朗读内容」→「声音」",
+                    "选择您的语言，然后下载「增强型」或「高级」声音",
+                    "iOS 16+ 上的高级声音具有神经网络质量（Siri 级别）"
+                  ]
+                },
+                {
+                  "text": "Mac",
+                  "sub": [
+                    "前往「系统设置」→「辅助功能」→「朗读内容」→「系统声音」→「管理声音」",
+                    "为您的语言下载任意「增强型」或「高级」声音"
+                  ]
+                },
+                {
+                  "text": "Windows 10 / Windows 11",
+                  "sub": [
+                    "前往「设置」→「时间和语言」→「语言和区域」",
+                    "添加您的阅读语言，或打开已安装语言的语言选项",
+                    "在「语言功能」下，安装「文字转语音」",
+                    "重启 BiblioFuse，然后开始新的 TTS 会话"
+                  ]
+                },
+                {
+                  "text": "Windows 11 自然语音（可选）",
+                  "sub": [
+                    "前往「设置」→「辅助功能」→「讲述人」",
+                    "在「添加自然语音」下，下载所需语音",
+                    "注意：Windows 可能仅向讲述人开放这些语音，而非所有应用"
+                  ]
+                },
+                {
+                  "text": "无需更新应用 — BiblioFuse 会在 Windows 或 Apple 文字转语音系统公开新安装的语音时自动检测"
+                }
+              ]
             }
           ],
           "links": [
@@ -1518,8 +1636,8 @@
           "desc": "Fix a file before you read it - in the browser, on your device.",
           "items": [
             {
-              "q": "What is the difference between the PC Reader and the PC EPUB / CBZ tools?",
-              "a": "The PC Reader is a full reading app — it opens books, manages your library, compresses files, and streams to iPhone. The PC EPUB and CBZ tools are lighter, cheaper apps focused on compression and merging only, with no reader."
+              "q": "PC Reader 与 PC EPUB / CBZ 工具有什么区别？",
+              "a": "PC Reader 是一款完整的阅读应用 — 它可以打开书籍、管理书库、压缩文件并向 iPhone 串流。PC EPUB 和 CBZ 工具是更轻量、更便宜的应用，仅专注于压缩和合并，没有阅读功能。"
             }
           ],
           "links": [

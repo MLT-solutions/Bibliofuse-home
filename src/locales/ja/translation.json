@@ -1415,12 +1415,29 @@
           "desc": "Install it, get your files in, and know where your progress lives.",
           "items": [
             {
-              "q": "How do I add books and folders to BiblioFuse on iPhone?",
-              "a": "BiblioFuse stores files in its own iCloud-synced folder. You can add books via the Files app (copy files into the BiblioFuse folder), via AirDrop, or via the built-in Wi-Fi Transfer — open a library session from Mac or PC and drag files in from any browser."
+              "q": "iPhoneのBiblioFuseに本やフォルダを追加するには？",
+              "a": "BiblioFuse はファイルをiCloud同期フォルダに保存します。ファイルアプリ（BiblioFuseフォルダにファイルをコピー）、AirDrop、または内蔵Wi-Fi転送で本を追加できます。MacまたはPCからライブラリセッションを開き、任意のブラウザからファイルをドラッグしてください。"
             },
             {
-              "q": "Where are reading progress, bookmarks, ratings, and tags saved?",
-              "a": "It depends on where the book file lives:"
+              "q": "読書の進捗、ブックマーク、評価、タグはどこに保存されますか？",
+              "a": "本のファイルがどこに保存されているかによって異なります：",
+              "bullets": [
+                {
+                  "text": "ローカルストレージ — そのデバイスにのみ保存、デバイス間の同期なし"
+                },
+                {
+                  "text": "iCloudストレージ — iCloudに保存、すべてのiOS、Mac、PCデバイスで自動同期"
+                },
+                {
+                  "text": "SMB / ネットワーク共有（MacまたはPCストリーミング）— ホストデバイスに保存",
+                  "sub": [
+                    "iOSがMacストリームを読む：進捗はMacに保存",
+                    "iOSがPCストリームを読む：進捗はPCに保存",
+                    "PC ↔ Mac：独立して保存され、データは共有されない",
+                    "MacとPCの両方をストリーミングホストとして使用すると、読書データが分割されます。一貫性のために1つのホストを使用することをお勧めします。"
+                  ]
+                }
+              ]
             }
           ],
           "links": [
@@ -1457,24 +1474,88 @@
           "desc": "Your own machine hosts the library; the app reads from it.",
           "items": [
             {
-              "q": "How does streaming from Mac or PC to iPhone work?",
-              "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. Both devices must have Tailscale on (works at home and remotely). If only one device has Tailscale on, the connection will fail. Keeping both devices always on Tailscale gives the most consistent experience."
+              "q": "MacまたはPCからiPhoneへのストリーミングの仕組みは？",
+              "a": "MacまたはPCがローカルサーバーを起動し、接続アドレスをiCloud Driveに書き込みます。iPhoneが自動的に検出します。両デバイスはTailscaleをオンにする必要があります（自宅とリモートで使用可能）。一方のデバイスだけTailscaleがオンの場合、接続は失敗します。両方を常にオンにすると最も安定した体験が得られます。"
             },
             {
-              "q": "What do I need to set up streaming?",
-              "a": "Both your Mac or PC and your iPhone must have the following configured:"
+              "q": "ストリーミングの設定に必要なものは？",
+              "a": "どこで読みたいかによって変わります。",
+              "bullets": [
+                {
+                  "text": "自宅では、追加の設定は不要です。",
+                  "sub": [
+                    "MacやPCのホストアプリがローカルネットワーク上で自分を通知し、iPhone、iPad、Vision Proが自動的に見つけます。",
+                    "アプリが初回に確認したときにローカルネットワークへのアクセスを許可してください。設定はそれだけです。"
+                  ]
+                },
+                {
+                  "text": "外出先で読むには、両方の端末で同じiCloudアカウントと、両方で起動中のTailscaleが必要です。",
+                  "sub": [
+                    "ホストが自分のアドレスをiCloud Driveに書き込み、読書用の端末がTailscale経由でそれを受け取ります。",
+                    "WindowsにはiCloudが標準で入っていません。Microsoft Storeから<a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">Windows用iCloud</a>をインストールしてください。",
+                    "iCloudとTailscaleのアカウントはメールアドレスが違っていても構いませんし、Tailscaleの出口ノードも不要です。"
+                  ]
+                },
+                {
+                  "text": "NASホストは仕組みが異なり、iCloud経路がまったくありません。",
+                  "sub": [
+                    "まずローカルネットワークで一度ペアリングして証明書を保存すれば、その後は同じホストにTailscale経由でリモート接続できます。"
+                  ]
+                }
+              ]
             },
             {
-              "q": "Streaming is set up correctly but still not working — what should I try?",
-              "a": "A stale endpoint cache is the most common cause. One or more <code>stream_endpoint.json</code> files stored in iCloud has an outdated timestamp, which prevents BiblioFuse from discovering the host."
+              "q": "設定は正しいのにホストが表示されません。何を試せばよいですか？",
+              "a": "以前はアドレスファイルが古いままになっていることが主な原因でした。現在はストリーミングの開始・停止時やアドレス変更時に、Macホストが自分でそれらを削除します。iCloudの競合コピーも含めて削除するため、今ではこれが原因になることはほとんどありません。",
+              "bullets": [
+                {
+                  "text": "ホスト側でアプリを終了して開き直してください。起動時に新しいアドレスを公開します。",
+                  "sub": []
+                },
+                {
+                  "text": "読書用の端末でストリーミングのソース一覧を開き、ホスト名の横に緑の点があるか確認します。",
+                  "sub": [
+                    "グレーの場合はまだホストに到達していません。数秒待つか、ホスト側でアプリを強制終了して開き直してください。"
+                  ]
+                },
+                {
+                  "text": "Windowsホストは、この自動削除にまだ対応していません。",
+                  "sub": [
+                    "PCホストが表示されないままの場合は、iPhoneかMacからiCloud Drive → BiblioFuse → Documentsを開き、<code>stream_endpoint.json</code>と番号付きのコピーを削除してから、ホストのアプリを開き直してください。",
+                    "PCではなくiPhoneかMacで操作してください。Windowsではファイルのオンライン版しか保持していないことがあり、そこからの削除は確実ではありません。"
+                  ]
+                }
+              ]
             },
             {
-              "q": "Why does streaming require Tailscale? Can't it just use home Wi-Fi?",
-              "a": "Tailscale is required because of how iOS handles local network connections. Here is what happened:"
+              "q": "自宅でのストリーミングにTailscaleは必要ですか？",
+              "a": "いいえ。ローカルWi-Fiでのストリーミングは単体で動作します。ホストがネットワーク上で自分を通知し、アプリは証明書ピン留め付きのHTTPSで接続します。初期のバージョンは確かにローカルネットワークで失敗していました。アプリがホストの通知するメタデータを読み取らず、リリースビルドがブロックする平文HTTPのアドレスにフォールバックしていたためです。これは修正済みです。Tailscaleは現在、外出先で読むためだけのものです。",
+              "bullets": [
+                {
+                  "text": "「設定 → Mac / PCストリーミング」には3つのモードがあります。",
+                  "sub": [
+                    "<strong>iCloud + Tailscale</strong> — ローカルのホストと、iCloud経由で公開されたリモートのホストの両方を表示します。",
+                    "<strong>ローカルWi-Fi</strong> — ローカルのホストのみ。リモートのアドレスは表示も接続もされません。",
+                    "<strong>手動Tailscale</strong> — NASを含む、自分で入力したホスト用です。"
+                  ]
+                },
+                {
+                  "text": "ローカルとリモートの自動切り替えは、意図的に行いません。",
+                  "sub": [
+                    "同じネットワークでは同一ホストの項目が両方表示され、どちらを使うかを自分で選べます。動作しているローカル接続が、気づかないうちに遅い経路へ置き換わることはありません。"
+                  ]
+                },
+                {
+                  "text": "Apple TVはローカルネットワーク専用です。",
+                  "sub": [
+                    "tvOSはiCloud Driveを利用できず、Tailscale経路は実装・テスト済みですが、tvOS上のTailscaleの不具合が解決するまで無効の状態で配布しています。"
+                  ]
+                }
+              ]
             },
             {
-              "q": "Why can't Android receive books from Mac or PC?",
-              "a": "The Android app uses a different codebase without iCloud integration, which is how the streaming handshake works. The best workflow for Android is to sync files to your phone using Syncthing or a similar tool, then add that folder as a library source in the app."
+              "q": "AndroidはMacやPCのホストから読めますか？",
+              "a": "はい。Androidアプリはローカルネットワーク上のホストを検出しますが、ホストのアドレスを手入力することもでき、ホストから本を自分のライブラリへコピーできます。読書位置はホストに送り返されます。AndroidにはiCloudへのアクセスがないため、外出先で読む場合は自動検出ではなく、Tailscale経由でホストのアドレスを手入力します。"
             }
           ]
         },
@@ -1484,16 +1565,53 @@
           "desc": "Formats, reading direction, text-to-speech and translation.",
           "items": [
             {
-              "q": "Does BiblioFuse work on Apple Vision Pro?",
-              "a": "Yes. BiblioFuse is a native visionOS app on the App Store — a true spatial window, not a compatibility-mode iPad app. It supports eye tracking, pinch, mouse, trackpad, and keyboard, and it is included in the universal iOS + Mac purchase at no extra cost."
+              "q": "BiblioFuse は Apple Vision Pro で使えますか？",
+              "a": "はい。BiblioFuse は App Store のネイティブ visionOS アプリで、互換モードの iPad アプリではなく本物の空間ウィンドウです。視線トラッキング、ピンチ、マウス、トラックパッド、キーボードに対応し、iOS + Mac のユニバーサル購入に追加費用なしで含まれます。"
             },
             {
-              "q": "What spatial reading layouts does BiblioFuse support on visionOS?",
-              "a": "Three spatial library layouts: Spatial Bookshelves (your covers on floating shelves), Grid View (a floating grid for large libraries), and Slanted Wall (an angled gallery wall with rating and tag filters). You can also stream your library from a Mac or PC to keep Vision Pro storage free."
+              "q": "BiblioFuse は visionOS でどんな空間読書レイアウトに対応していますか？",
+              "a": "3つの空間ライブラリレイアウト：空間の本棚（浮かぶ棚に表紙を配置）、グリッド表示（大きなライブラリ向けの浮遊グリッド）、傾斜ウォール（評価とタグのフィルター付きの傾いたギャラリーウォール）。Mac や PC からライブラリをストリーミングして、Vision Pro のストレージを空けたままにもできます。"
             },
             {
-              "q": "How do I get better text-to-speech voices in BiblioFuse?",
-              "a": "Higher-quality voices may already be available through your device's text-to-speech system, but some must be downloaded separately. BiblioFuse will detect newly installed voices automatically when they are made available to apps."
+              "q": "BiblioFuseでより良いテキスト読み上げの声を使うにはどうすればよいですか？",
+              "a": "高品質な音声はデバイスに内蔵されていますが、別途ダウンロードが必要です — インストール後、BiblioFuseが自動的に認識します。",
+              "bullets": [
+                {
+                  "text": "iPhone / iPad",
+                  "sub": [
+                    "設定 → アクセシビリティ → スピーチ → 声 に移動",
+                    "言語を選択し、「拡張」または「プレミアム」の声をダウンロード",
+                    "iOS 16+ のプレミアム音声はニューラルクオリティ（Siriレベル）"
+                  ]
+                },
+                {
+                  "text": "Mac",
+                  "sub": [
+                    "システム設定 → アクセシビリティ → スピーチ → システムの声 → 声を管理 に移動",
+                    "言語の「拡張」または「プレミアム」の声をダウンロード"
+                  ]
+                },
+                {
+                  "text": "Windows 10 / Windows 11",
+                  "sub": [
+                    "設定 → 時刻と言語 → 言語と地域 に移動",
+                    "読書言語を追加するか、インストール済み言語の言語オプションを開く",
+                    "言語機能の下にある「テキスト読み上げ」をインストール",
+                    "BiblioFuseを再起動し、新しいTTSセッションを開始"
+                  ]
+                },
+                {
+                  "text": "Windows 11 ナチュラルボイス（オプション）",
+                  "sub": [
+                    "設定 → アクセシビリティ → ナレーター に移動",
+                    "「ナチュラルボイスの追加」から使いたい音声をダウンロード",
+                    "注意：Windowsはこれらの音声をナレーターのみに提供し、すべてのアプリには対応しない場合があります"
+                  ]
+                },
+                {
+                  "text": "アプリのアップデートは不要 — BiblioFuseはWindowsまたはAppleのTTSシステムを通じて公開された新しい音声を自動検出"
+                }
+              ]
             }
           ],
           "links": [
@@ -1518,8 +1636,8 @@
           "desc": "Fix a file before you read it - in the browser, on your device.",
           "items": [
             {
-              "q": "What is the difference between the PC Reader and the PC EPUB / CBZ tools?",
-              "a": "The PC Reader is a full reading app — it opens books, manages your library, compresses files, and streams to iPhone. The PC EPUB and CBZ tools are lighter, cheaper apps focused on compression and merging only, with no reader."
+              "q": "PC ReaderとPC EPUB / CBZツールの違いは何ですか？",
+              "a": "PC Readerは完全な読書アプリです — 本を開き、ライブラリを管理し、ファイルを圧縮し、iPhoneにストリーミングします。PC EPUBとCBZツールは、リーダーなしで圧縮と結合のみに特化した、より軽量で安価なアプリです。"
             }
           ],
           "links": [
