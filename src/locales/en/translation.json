@@ -1975,6 +1975,134 @@
           ]
         }
       ]
+    },
+    "readerFamilyGuide": {
+      "eyebrow": "Every surface, one setup",
+      "title": "Find your setup",
+      "intro": "The family now spans iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker, and Synology — and reads from any OPDS, Komga or Kavita server too. Pick what hosts your books and what you want to read on, and see exactly which app and connection mode to use.",
+      "coverageToggle": "See the full platform coverage table",
+      "table": {
+        "platformHeader": "Platform",
+        "roleHeader": "Role",
+        "contentHeader": "Content source support",
+        "streamHeader": "Streaming connection modes",
+        "roleCols": {
+          "hosting": "Hosting as a server",
+          "browser": "Free browser reader",
+          "standaloneNo": "Standalone reader (no streaming)",
+          "standaloneHave": "Standalone reader (has streaming)"
+        },
+        "contentCols": {
+          "local": "Local",
+          "nas": "NAS",
+          "icloud": "iCloud",
+          "host": "Host",
+          "opds": "OPDS / Kavita / Komga"
+        },
+        "streamCols": {
+          "icloudTs": "iCloud + Tailscale",
+          "localWifi": "Local Wi-Fi",
+          "manualTs": "Manual Tailscale"
+        },
+        "platforms": {
+          "docker": "Docker (NAS)",
+          "synology": "Synology NAS (SPK)",
+          "macos": "macOS",
+          "windows": "Windows PC",
+          "iphoneIpad": "iPhone / iPad",
+          "visionos": "visionOS",
+          "androidPhone": "Android phone",
+          "tvos": "tvOS (Apple TV)",
+          "androidtv": "Android TV"
+        },
+        "legend": {
+          "supported": "Supported",
+          "canConnectVia": "Can connect via (client)",
+          "supportedConnection": "Supported connection (host)",
+          "comingSoon": "Coming soon"
+        }
+      },
+      "hostQuestion": "What hosts your library?",
+      "clientQuestion": "What do you want to read on?",
+      "whereQuestion": "Where will you read?",
+      "onlyHome": "Only at home",
+      "homeAndAway": "At home and away",
+      "hosts": {
+        "mac": {
+          "label": "Mac (support local & NAS)"
+        },
+        "windows": {
+          "label": "PC (support local & NAS)"
+        },
+        "synology": {
+          "label": "Synology NAS (SPK)",
+          "note": "Zero-config folder picker — points at your existing library, nothing duplicated. No automatic iCloud discovery (that’s a Mac/Windows-only relay) — pairs over Manual Tailscale instead.",
+          "appLinkLabel": "View Synology releases →"
+        },
+        "docker": {
+          "label": "Docker / other NAS",
+          "note": "Free self-hosted server and browser reader — no subscription needed to host or read in the browser.",
+          "appLinkLabel": "Get BiblioFuse NAS (Docker) →"
+        },
+        "opds": {
+          "label": "OPDS / Kavita / Komga",
+          "note": "Any OPDS 1.x or OPDS-PSE catalogue, or a Komga or Kavita server, read over its own API. BiblioFuse connects straight to it — this is not a BiblioFuse host, so the three connection modes below do not apply."
+        }
+      },
+      "clients": {
+        "iphone_ipad": {
+          "label": "iPhone / iPad"
+        },
+        "visionpro": {
+          "label": "Apple Vision Pro",
+          "note": "Also a standalone reader — this only applies when streaming from a host."
+        },
+        "appletv": {
+          "label": "Apple TV",
+          "note": "Companion app — streams only, no local library on the box itself. Local Wi-Fi (LAN) only: tvOS has no iCloud Documents entitlement and the Tailscale path is built but disabled pending an upstream Tailscale tvOS bug, so Apple TV can’t discover a host outside the house yet."
+        },
+        "androidphone": {
+          "label": "Android phone",
+          "note": "Local Wi-Fi or Manual Tailscale only — no automatic iCloud discovery, since Android has no iCloud Documents access."
+        },
+        "androidtv": {
+          "label": "Android TV",
+          "note": "Companion app — Local Wi-Fi only, no Tailscale support."
+        }
+      },
+      "modes": {
+        "icloud-ts": {
+          "label": "iCloud + Tailscale (automatic)",
+          "detail": "Keep Tailscale on. The app finds your library on its own, at home or away — nothing to type in."
+        },
+        "manual-ts": {
+          "label": "Manual Tailscale",
+          "detail": "For devices without iCloud. Enter the host's Tailscale address once in Settings."
+        },
+        "local-wifi": {
+          "label": "Local Wi-Fi",
+          "detail": "No iCloud or Tailscale needed. Only works while both devices share the same Wi-Fi network."
+        }
+      },
+      "recommendation": {
+        "heading": "Given your combination",
+        "cantConnectOpds": "<strong>{{clientLabel}}</strong> can’t connect to an OPDS, Komga or Kavita server — the TV apps read only from a BiblioFuse host on your own network. Point it at a Mac, PC or NAS host instead, or read your catalogue on iPhone, iPad, Vision Pro or an Android phone.",
+        "opdsStep1": "Keep your library on your <strong>OPDS, Komga or Kavita server</strong>.",
+        "opdsStep2Label": "Read on <strong>{{clientLabel}}</strong>.",
+        "opdsStep2Detail": "Komga and Kavita connect over their native API — series, progress and bookmarks included. Anything else connects as an OPDS 1.x catalogue, with page-at-a-time streaming where the server supports OPDS-PSE.",
+        "opdsStep3": "In the {{clientLabel}} app, open <strong>Settings → OPDS</strong> and add the server.",
+        "opdsStep3Detail": "Typing a URL, username and password on a phone is the slow part — generate a QR code on your computer and scan it instead.",
+        "opdsQrCta": "Make a QR login code →",
+        "opdsAwayNote": "<strong>Reading away from home:</strong> nothing to choose in the app — this is a network setup, not a connection mode. Put both the reading device and the server’s host on the same VPN, or install Tailscale on both and turn on subnet routing on the host so the device can reach the server’s local address from anywhere.",
+        "opdsHomeNote": "<strong>Reading at home:</strong> nothing to choose in the app — none of the three connection modes apply to a third-party server. Just keep the reading device on the same Wi-Fi network as your OPDS, Komga or Kavita server.",
+        "cantStream": "<strong>{{clientLabel}}</strong> can’t stream from a host yet — {{clientNote}} Use the BiblioFuse app on {{clientLabel}} for local, standalone reading in the meantime.",
+        "unsupportedHost": "Native app streaming from <strong>{{hostLabel}}</strong> to <strong>{{clientLabel}}</strong> isn’t supported yet in the released apps. Host your library on {{hostLabel}} today and read it in its free built-in browser reader instead — that part works now, on any device, no app required.",
+        "step1": "Run the host on <strong>{{hostLabel}}</strong>.",
+        "step2": "Read on <strong>{{clientLabel}}</strong>.",
+        "step3": "In the {{clientLabel}} app’s connection settings, choose <strong>{{modeLabel}}</strong>.",
+        "cappedByHost": "Note: {{hostLabel}} doesn’t support away-from-home streaming yet, so this pairing is Local Wi-Fi only for now, even though you asked for both.",
+        "cappedByClient": "Note: {{clientLabel}} is Local Wi-Fi only by design — no iCloud or Tailscale support on this device — so this pairing works at home only, even though you asked for both."
+      }
     }
   },
   "featureMatrix": {

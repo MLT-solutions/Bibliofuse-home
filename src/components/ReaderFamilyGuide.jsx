@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 // Added 2026-07-20 — the reader family grew to 9 surfaces across 3 streaming
 // modes (iOS/iPadOS, macOS, Windows, visionOS, tvOS, Android phone, Docker,
@@ -8,11 +9,6 @@ import { Link } from 'react-router-dom';
 // deliberately not a new indexed route — see docs/site-showcase-audit.md and
 // the 2026-07-20 portfolio review (this site can't afford new indexed surface
 // while ranking position on existing pages is still suppressed).
-//
-// English-only by design, unlike the rest of this page: translating a
-// decision tree into 11 locales isn't worth it while low-signal-locale
-// translation work is paused (see src/i18n.js INDEXED_LANGUAGES). Revisit if
-// this becomes a permanent fixture.
 //
 // Host/client connection-mode data below is a first pass reverse-engineered
 // from product notes, not verified against the apps themselves — check it
@@ -107,56 +103,55 @@ import { Link } from 'react-router-dom';
 //   apply. Reaching it from outside the house is the user's own VPN/Tailscale
 //   problem, not something the app negotiates — the picker says so rather
 //   than recommending a mode that does not exist for this host.
+//
+// 2026-09-10, eighth pass — localized. This component was "English-only by
+// design" from the first pass on (see git history) because translating a
+// decision tree into 11 locales wasn't worth it while the site was
+// recovering from the June collapse and low-signal-locale work was paused.
+// The site owner asked for it directly, so all labels/notes/data moved to
+// `redesign.readerFamilyGuide` in translation.json, and the Recommendation
+// component's composed sentences became named-interpolation templates
+// (`{{hostLabel}}`, `{{clientLabel}}`, `{{modeLabel}}`, `{{clientNote}}`)
+// rather than JS template literals — the standard i18next pattern for
+// content assembled from user-selected state. Rendered via
+// dangerouslySetInnerHTML since templates carry `<strong>` (i18next
+// `escapeValue: false` is already set globally in src/i18n.js for exactly
+// this). HOSTS/CLIENTS/MODE_INFO/MATRIX_ROWS keep their non-translatable
+// logic fields (canStream, tailscaleCapable, icloudRelay, lanOnly, kind,
+// opdsCapable) as plain JS — only display strings moved to i18n.
+// English-only in every non-English locale until translated (tracked
+// separately); i18next's fallbackLng serves the English object meanwhile,
+// identical to how the tools pages worked before their own fix today.
 
-const MODE_INFO = {
-  'icloud-ts': {
-    label: 'iCloud + Tailscale (automatic)',
-    detail: 'Keep Tailscale on. The app finds your library on its own, at home or away — nothing to type in.',
-  },
-  'manual-ts': {
-    label: 'Manual Tailscale',
-    detail: "For devices without iCloud. Enter the host's Tailscale address once in Settings.",
-  },
-  'local-wifi': {
-    label: 'Local Wi-Fi',
-    detail: 'No iCloud or Tailscale needed. Only works while both devices share the same Wi-Fi network.',
-  },
-};
+function useRfg() {
+  const { t } = useTranslation();
+  return t('redesign.readerFamilyGuide', { returnObjects: true });
+}
 
+// Logic-only fields (never displayed) plus the key each host/client resolves to under
+// redesign.readerFamilyGuide.hosts / .clients for its label/note/appLinkLabel.
 const HOSTS = {
-  mac: { label: 'Mac (support local & NAS)', tailscaleCapable: true, icloudRelay: true },
-  windows: { label: 'PC (support local & NAS)', tailscaleCapable: true, icloudRelay: true },
+  mac: { tailscaleCapable: true, icloudRelay: true },
+  windows: { tailscaleCapable: true, icloudRelay: true },
   synology: {
-    label: 'Synology NAS (SPK)',
     tailscaleCapable: true,
     icloudRelay: false,
-    note: 'Zero-config folder picker — points at your existing library, nothing duplicated. No automatic iCloud discovery (that’s a Mac/Windows-only relay) — pairs over Manual Tailscale instead.',
     appLink: 'https://github.com/MLT-solutions/bibliofuse-nas-distribution/releases',
-    appLinkLabel: 'View Synology releases →',
   },
   docker: {
-    label: 'Docker / other NAS',
     tailscaleCapable: false,
     icloudRelay: false,
-    note: 'Free self-hosted server and browser reader — no subscription needed to host or read in the browser.',
     appLink: 'https://github.com/MLT-solutions/bibliofuse-nas-distribution',
-    appLinkLabel: 'Get BiblioFuse NAS (Docker) →',
   },
-  opds: {
-    label: 'OPDS / Kavita / Komga',
-    kind: 'opds',
-    tailscaleCapable: false,
-    icloudRelay: false,
-    note: 'Any OPDS 1.x or OPDS-PSE catalogue, or a Komga or Kavita server, read over its own API. BiblioFuse connects straight to it — this is not a BiblioFuse host, so the three connection modes below do not apply.',
-  },
+  opds: { kind: 'opds', tailscaleCapable: false, icloudRelay: false },
 };
 
 const CLIENTS = {
-  iphone_ipad: { label: 'iPhone / iPad', canStream: true, isAppleICloud: true, opdsCapable: true },
-  visionpro: { label: 'Apple Vision Pro', canStream: true, isAppleICloud: true, opdsCapable: true, note: 'Also a standalone reader — this only applies when streaming from a host.' },
-  appletv: { label: 'Apple TV', canStream: true, lanOnly: true, note: 'Companion app — streams only, no local library on the box itself. Local Wi-Fi (LAN) only: tvOS has no iCloud Documents entitlement and the Tailscale path is built but disabled pending an upstream Tailscale tvOS bug, so Apple TV can’t discover a host outside the house yet.' },
-  androidphone: { label: 'Android phone', canStream: true, opdsCapable: true, note: 'Local Wi-Fi or Manual Tailscale only — no automatic iCloud discovery, since Android has no iCloud Documents access.' },
-  androidtv: { label: 'Android TV', canStream: true, lanOnly: true, note: 'Companion app — Local Wi-Fi only, no Tailscale support.' },
+  iphone_ipad: { canStream: true, isAppleICloud: true, opdsCapable: true },
+  visionpro: { canStream: true, isAppleICloud: true, opdsCapable: true },
+  appletv: { canStream: true, lanOnly: true },
+  androidphone: { canStream: true, opdsCapable: true },
+  androidtv: { canStream: true, lanOnly: true },
 };
 
 // Matrix data reviewed and supplied by the product owner, 2026-07-20 (fourth
@@ -165,101 +160,90 @@ const CLIENTS = {
 // 'client' rows show a can-connect-via circle; any cell can independently be
 // `true` (supported now), `'soon'` (not yet — shown as the same coming-soon
 // mark regardless of host/client kind), or `false`/omitted (not applicable).
+// `platformKey` looks up the display name under table.platforms.
 const MATRIX_ROWS = [
   {
-    platform: 'Docker (NAS)', kind: 'host',
+    platformKey: 'docker', kind: 'host',
     role: { hosting: true, browser: true },
     content: { nas: true },
     streaming: { localWifi: true },
   },
   {
-    platform: 'Synology NAS (SPK)', kind: 'host',
+    platformKey: 'synology', kind: 'host',
     role: { hosting: true, browser: true },
     content: { nas: true },
     streaming: { localWifi: true, manualTs: true },
   },
   {
-    platform: 'macOS', kind: 'host',
+    platformKey: 'macos', kind: 'host',
     role: { hosting: true, standaloneNo: true },
     content: { local: true, nas: true, icloud: true },
     streaming: { icloudTs: true, localWifi: true, manualTs: true },
   },
   {
-    platform: 'Windows PC', kind: 'host',
+    platformKey: 'windows', kind: 'host',
     role: { hosting: true, standaloneNo: true },
     content: { local: true, nas: true, icloud: true },
     streaming: { icloudTs: true, localWifi: true, manualTs: true },
   },
   {
-    platform: 'iPhone / iPad', kind: 'client',
+    platformKey: 'iphoneIpad', kind: 'client',
     role: { standaloneHave: true },
     content: { local: true, icloud: true, host: true, opds: true },
     streaming: { icloudTs: true, localWifi: true, manualTs: true },
   },
   {
-    platform: 'visionOS', kind: 'client',
+    platformKey: 'visionos', kind: 'client',
     role: { standaloneHave: true },
     content: { local: true, icloud: true, host: true, opds: true },
     streaming: { icloudTs: true, localWifi: true, manualTs: true },
   },
   {
-    platform: 'Android phone', kind: 'client',
+    platformKey: 'androidPhone', kind: 'client',
     role: { standaloneHave: true },
     content: { local: true, host: true, opds: true },
     streaming: { localWifi: true, manualTs: true },
   },
   {
-    platform: 'tvOS (Apple TV)', kind: 'client',
+    platformKey: 'tvos', kind: 'client',
     role: {},
     content: { host: true },
     streaming: { localWifi: true },
   },
   {
-    platform: 'Android TV', kind: 'client',
+    platformKey: 'androidtv', kind: 'client',
     role: {},
     content: { host: true },
     streaming: { localWifi: true },
   },
 ];
 
-const ROLE_COLS = [
-  { key: 'hosting', label: 'Hosting as a server' },
-  { key: 'browser', label: 'Free browser reader' },
-  { key: 'standaloneNo', label: 'Standalone reader (no streaming)' },
-  { key: 'standaloneHave', label: 'Standalone reader (has streaming)' },
-];
-const CONTENT_COLS = [
-  { key: 'local', label: 'Local' },
-  { key: 'nas', label: 'NAS' },
-  { key: 'icloud', label: 'iCloud' },
-  { key: 'host', label: 'Host' },
-  { key: 'opds', label: 'OPDS / Kavita / Komga' },
-];
-const STREAM_COLS = [
-  { key: 'icloudTs', label: 'iCloud + Tailscale' },
-  { key: 'localWifi', label: 'Local Wi-Fi' },
-  { key: 'manualTs', label: 'Manual Tailscale' },
-];
+const ROLE_KEYS = ['hosting', 'browser', 'standaloneNo', 'standaloneHave'];
+const CONTENT_KEYS = ['local', 'nas', 'icloud', 'host', 'opds'];
+const STREAM_KEYS = ['icloudTs', 'localWifi', 'manualTs'];
+const CLIENT_KEY_ORDER = ['iphone_ipad', 'visionpro', 'appletv', 'androidphone', 'androidtv'];
+const HOST_KEY_ORDER = ['mac', 'windows', 'synology', 'docker', 'opds'];
 
-function CheckCell({ value }) {
+function CheckCell({ value, comingSoonLabel, supportedLabel }) {
   if (!value) return <td className="px-3 py-2.5 text-center"></td>;
   if (value === 'soon') {
-    return <td className="px-3 py-2.5 text-center text-amber-500" title="Coming soon">✜</td>;
+    return <td className="px-3 py-2.5 text-center text-amber-500" title={comingSoonLabel}>✜</td>;
   }
-  return <td className="px-3 py-2.5 text-center text-emerald-600" title="Supported">✓</td>;
+  return <td className="px-3 py-2.5 text-center text-emerald-600" title={supportedLabel}>✓</td>;
 }
 
-function StreamCell({ value, kind }) {
+function StreamCell({ value, kind, comingSoonLabel, hostLabel, clientLabel }) {
   if (!value) return <td className="px-3 py-2.5 text-center"></td>;
   if (value === 'soon') {
-    return <td className="px-3 py-2.5 text-center text-amber-500" title="Coming soon">✜</td>;
+    return <td className="px-3 py-2.5 text-center text-amber-500" title={comingSoonLabel}>✜</td>;
   }
   return kind === 'host'
-    ? <td className="px-3 py-2.5 text-center text-blue-600" title="Supported connection">△</td>
-    : <td className="px-3 py-2.5 text-center text-indigo-500" title="Can connect via">○</td>;
+    ? <td className="px-3 py-2.5 text-center text-blue-600" title={hostLabel}>△</td>
+    : <td className="px-3 py-2.5 text-center text-indigo-500" title={clientLabel}>○</td>;
 }
 
-function CoverageTable() {
+function CoverageTable({ rfg }) {
+  const tbl = rfg.table;
   return (
     <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
       <div className="overflow-x-auto">
@@ -267,21 +251,21 @@ function CoverageTable() {
           <thead>
             <tr>
               <th rowSpan={2} className="sticky left-0 z-20 border-b border-r border-slate-200 bg-slate-900 px-4 py-2.5 text-left text-xs font-bold uppercase tracking-wider text-white">
-                Platform
+                {tbl.platformHeader}
               </th>
-              <th colSpan={ROLE_COLS.length} className="border-b border-blue-200 bg-blue-50 px-3 py-1.5 text-center text-[11px] font-black uppercase tracking-wider text-blue-700">Role</th>
-              <th colSpan={CONTENT_COLS.length} className="border-b border-emerald-200 bg-emerald-50 px-3 py-1.5 text-center text-[11px] font-black uppercase tracking-wider text-emerald-700">Content source support</th>
-              <th colSpan={STREAM_COLS.length} className="border-b border-slate-300 bg-slate-100 px-3 py-1.5 text-center text-[11px] font-black uppercase tracking-wider text-slate-600">Streaming connection modes</th>
+              <th colSpan={ROLE_KEYS.length} className="border-b border-blue-200 bg-blue-50 px-3 py-1.5 text-center text-[11px] font-black uppercase tracking-wider text-blue-700">{tbl.roleHeader}</th>
+              <th colSpan={CONTENT_KEYS.length} className="border-b border-emerald-200 bg-emerald-50 px-3 py-1.5 text-center text-[11px] font-black uppercase tracking-wider text-emerald-700">{tbl.contentHeader}</th>
+              <th colSpan={STREAM_KEYS.length} className="border-b border-slate-300 bg-slate-100 px-3 py-1.5 text-center text-[11px] font-black uppercase tracking-wider text-slate-600">{tbl.streamHeader}</th>
             </tr>
             <tr>
-              {ROLE_COLS.map((c) => (
-                <th key={c.key} className="border-b border-blue-100 bg-blue-50/60 px-2 py-2 text-center text-[10.5px] font-semibold leading-tight text-blue-700">{c.label}</th>
+              {ROLE_KEYS.map((k) => (
+                <th key={k} className="border-b border-blue-100 bg-blue-50/60 px-2 py-2 text-center text-[10.5px] font-semibold leading-tight text-blue-700">{tbl.roleCols[k]}</th>
               ))}
-              {CONTENT_COLS.map((c) => (
-                <th key={c.key} className="border-b border-emerald-100 bg-emerald-50/60 px-2 py-2 text-center text-[10.5px] font-semibold leading-tight text-emerald-700">{c.label}</th>
+              {CONTENT_KEYS.map((k) => (
+                <th key={k} className="border-b border-emerald-100 bg-emerald-50/60 px-2 py-2 text-center text-[10.5px] font-semibold leading-tight text-emerald-700">{tbl.contentCols[k]}</th>
               ))}
-              {STREAM_COLS.map((c) => (
-                <th key={c.key} className="border-b border-slate-200 bg-slate-50 px-2 py-2 text-center text-[10.5px] font-semibold leading-tight text-slate-600">{c.label}</th>
+              {STREAM_KEYS.map((k) => (
+                <th key={k} className="border-b border-slate-200 bg-slate-50 px-2 py-2 text-center text-[10.5px] font-semibold leading-tight text-slate-600">{tbl.streamCols[k]}</th>
               ))}
             </tr>
           </thead>
@@ -289,11 +273,11 @@ function CoverageTable() {
             {MATRIX_ROWS.map((row, i) => {
               const rowBg = i % 2 === 1 ? 'bg-slate-50' : 'bg-white';
               return (
-                <tr key={row.platform} className="border-t border-slate-100">
-                  <td className={`sticky left-0 z-10 border-r border-slate-200 px-4 py-2.5 text-sm font-bold text-slate-950 ${rowBg}`}>{row.platform}</td>
-                  {ROLE_COLS.map((c) => <CheckCell key={c.key} value={row.role[c.key]} />)}
-                  {CONTENT_COLS.map((c) => <CheckCell key={c.key} value={row.content[c.key]} />)}
-                  {STREAM_COLS.map((c) => <StreamCell key={c.key} value={row.streaming[c.key]} kind={row.kind} />)}
+                <tr key={row.platformKey} className="border-t border-slate-100">
+                  <td className={`sticky left-0 z-10 border-r border-slate-200 px-4 py-2.5 text-sm font-bold text-slate-950 ${rowBg}`}>{tbl.platforms[row.platformKey]}</td>
+                  {ROLE_KEYS.map((k) => <CheckCell key={k} value={row.role[k]} comingSoonLabel={tbl.legend.comingSoon} supportedLabel={tbl.legend.supported} />)}
+                  {CONTENT_KEYS.map((k) => <CheckCell key={k} value={row.content[k]} comingSoonLabel={tbl.legend.comingSoon} supportedLabel={tbl.legend.supported} />)}
+                  {STREAM_KEYS.map((k) => <StreamCell key={k} value={row.streaming[k]} kind={row.kind} comingSoonLabel={tbl.legend.comingSoon} hostLabel={tbl.legend.supportedConnection} clientLabel={tbl.legend.canConnectVia} />)}
                 </tr>
               );
             })}
@@ -301,21 +285,21 @@ function CoverageTable() {
         </table>
       </div>
       <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 border-t border-slate-200 bg-slate-50 px-4 py-2.5 text-[11px] text-slate-500">
-        <span className="flex items-center gap-1.5"><span className="text-emerald-600">✓</span> Supported</span>
-        <span className="flex items-center gap-1.5"><span className="text-indigo-500">○</span> Can connect via (client)</span>
-        <span className="flex items-center gap-1.5"><span className="text-blue-600">△</span> Supported connection (host)</span>
-        <span className="flex items-center gap-1.5"><span className="text-amber-500">✜</span> Coming soon</span>
+        <span className="flex items-center gap-1.5"><span className="text-emerald-600">✓</span> {tbl.legend.supported}</span>
+        <span className="flex items-center gap-1.5"><span className="text-indigo-500">○</span> {tbl.legend.canConnectVia}</span>
+        <span className="flex items-center gap-1.5"><span className="text-blue-600">△</span> {tbl.legend.supportedConnection}</span>
+        <span className="flex items-center gap-1.5"><span className="text-amber-500">✜</span> {tbl.legend.comingSoon}</span>
       </div>
     </div>
   );
 }
 
-function OptionGroup({ label, options, value, onChange }) {
+function OptionGroup({ label, keys, labels, value, onChange }) {
   return (
     <div>
       <div className="mb-2.5 text-xs font-bold uppercase tracking-wider text-slate-500">{label}</div>
       <div className="flex flex-wrap gap-2">
-        {Object.entries(options).map(([key, opt]) => (
+        {keys.map((key) => (
           <button
             key={key}
             type="button"
@@ -326,7 +310,7 @@ function OptionGroup({ label, options, value, onChange }) {
                 : 'border-slate-200 bg-white text-slate-700 hover:border-blue-300 hover:bg-blue-50/50'
             }`}
           >
-            {opt.label}
+            {labels[key]}
           </button>
         ))}
       </div>
@@ -334,9 +318,24 @@ function OptionGroup({ label, options, value, onChange }) {
   );
 }
 
-function Recommendation({ hostKey, clientKey, wantsAway, lang }) {
+// Fills a template string's {{name}} placeholders and returns it for
+// dangerouslySetInnerHTML (templates carry <strong>; i18next's escapeValue:false is
+// already set globally for this exact pattern — see src/i18n.js).
+function fill(template, vars) {
+  return template.replace(/\{\{(\w+)\}\}/g, (_, key) => (vars[key] ?? ''));
+}
+
+function Html({ html, className }) {
+  return <span className={className} dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
+function Recommendation({ hostKey, clientKey, wantsAway, lang, rfg }) {
   const host = HOSTS[hostKey];
   const client = CLIENTS[clientKey];
+  const hostLabel = rfg.hosts[hostKey]?.label;
+  const clientLabel = rfg.clients[clientKey]?.label;
+  const clientNote = rfg.clients[clientKey]?.note;
+  const r = rfg.recommendation;
 
   // A third-party catalogue is not a BiblioFuse host: the app speaks OPDS or the
   // Komga/Kavita API straight to it, so none of MODE_INFO's three connection
@@ -347,11 +346,9 @@ function Recommendation({ hostKey, clientKey, wantsAway, lang }) {
     if (!client.opdsCapable) {
       return (
         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-          <div className="mb-1 text-xs font-bold uppercase tracking-wider text-slate-500">Given your combination</div>
+          <div className="mb-1 text-xs font-bold uppercase tracking-wider text-slate-500">{r.heading}</div>
           <p className="text-sm leading-relaxed text-slate-700">
-            <strong>{client.label}</strong> can&rsquo;t connect to an OPDS, Komga or Kavita server — the TV apps read only
-            from a BiblioFuse host on your own network. Point it at a Mac, PC or NAS host instead, or read your catalogue
-            on iPhone, iPad, Vision Pro or an Android phone.
+            <Html html={fill(r.cantConnectOpds, { clientLabel })} />
           </p>
         </div>
       );
@@ -359,57 +356,38 @@ function Recommendation({ hostKey, clientKey, wantsAway, lang }) {
 
     return (
       <div className="rounded-2xl border border-blue-200 bg-blue-50/40 p-6">
-        <div className="mb-1 text-xs font-bold uppercase tracking-wider text-blue-700">Given your combination</div>
+        <div className="mb-1 text-xs font-bold uppercase tracking-wider text-blue-700">{r.heading}</div>
         <ul className="mt-3 space-y-3 text-sm text-slate-800">
           <li className="flex gap-2.5">
             <span className="mt-0.5 font-black text-blue-600">1.</span>
             <span>
-              Keep your library on your <strong>OPDS, Komga or Kavita server</strong>.
-              <span className="block text-slate-500">{host.note}</span>
+              <Html html={r.opdsStep1} />
+              <span className="block text-slate-500">{rfg.hosts.opds.note}</span>
             </span>
           </li>
           <li className="flex gap-2.5">
             <span className="mt-0.5 font-black text-blue-600">2.</span>
             <span>
-              Read on <strong>{client.label}</strong>.
-              <span className="block text-slate-500">
-                Komga and Kavita connect over their native API — series, progress and bookmarks included. Anything else
-                connects as an OPDS 1.x catalogue, with page-at-a-time streaming where the server supports OPDS-PSE.
-              </span>
+              <Html html={fill(r.opdsStep2Label, { clientLabel })} />
+              <span className="block text-slate-500">{r.opdsStep2Detail}</span>
             </span>
           </li>
           <li className="flex gap-2.5">
             <span className="mt-0.5 font-black text-blue-600">3.</span>
             <span>
-              In the {client.label} app, open <strong>Settings &rarr; OPDS</strong> and add the server.
-              <span className="block text-slate-500">
-                Typing a URL, username and password on a phone is the slow part &mdash; generate a QR code on your computer
-                and scan it instead.
-              </span>
+              <Html html={fill(r.opdsStep3, { clientLabel })} />
+              <span className="block text-slate-500">{r.opdsStep3Detail}</span>
               <Link
                 to={`/${lang}/tools/qr-generator/`}
                 className="mt-1.5 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 hover:text-blue-900"
               >
-                Make a QR login code &rarr;
+                {r.opdsQrCta}
               </Link>
             </span>
           </li>
         </ul>
         <p className="mt-4 rounded-lg bg-white/70 px-3.5 py-2.5 text-xs leading-relaxed text-slate-600">
-          {wantsAway ? (
-            <>
-              <strong className="text-slate-800">Reading away from home:</strong> nothing to choose in the app &mdash; this is
-              a network setup, not a connection mode. Put both the reading device and the server&rsquo;s host on the same VPN,
-              or install Tailscale on both and turn on subnet routing on the host so the device can reach the server&rsquo;s
-              local address from anywhere.
-            </>
-          ) : (
-            <>
-              <strong className="text-slate-800">Reading at home:</strong> nothing to choose in the app &mdash; none of the
-              three connection modes apply to a third-party server. Just keep the reading device on the same Wi-Fi network as
-              your OPDS, Komga or Kavita server.
-            </>
-          )}
+          <Html html={wantsAway ? r.opdsAwayNote : r.opdsHomeNote} />
         </p>
       </div>
     );
@@ -418,9 +396,9 @@ function Recommendation({ hostKey, clientKey, wantsAway, lang }) {
   if (!client.canStream) {
     return (
       <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-        <div className="mb-1 text-xs font-bold uppercase tracking-wider text-slate-500">Given your combination</div>
+        <div className="mb-1 text-xs font-bold uppercase tracking-wider text-slate-500">{r.heading}</div>
         <p className="text-sm leading-relaxed text-slate-700">
-          <strong>{client.label}</strong> can&rsquo;t stream from a host yet — {client.note} Use the BiblioFuse app on {client.label} for local, standalone reading in the meantime.
+          <Html html={fill(r.cantStream, { clientLabel, clientNote })} />
         </p>
       </div>
     );
@@ -429,14 +407,13 @@ function Recommendation({ hostKey, clientKey, wantsAway, lang }) {
   if (host.nativeStreaming === 'unsupported') {
     return (
       <div className="rounded-2xl border border-amber-200 bg-amber-50/60 p-6">
-        <div className="mb-1 text-xs font-bold uppercase tracking-wider text-amber-700">Given your combination</div>
+        <div className="mb-1 text-xs font-bold uppercase tracking-wider text-amber-700">{r.heading}</div>
         <p className="text-sm leading-relaxed text-slate-800">
-          Native app streaming from <strong>{host.label}</strong> to <strong>{client.label}</strong> isn&rsquo;t supported yet in the released apps.
-          {' '}Host your library on {host.label} today and read it in its free built-in browser reader instead — that part works now, on any device, no app required.
+          <Html html={fill(r.unsupportedHost, { hostLabel, clientLabel })} />
         </p>
         {host.appLink && (
           <a href={host.appLink} target="_blank" rel="noopener" className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-amber-800 hover:text-amber-950">
-            {host.appLinkLabel}
+            {rfg.hosts[hostKey].appLinkLabel}
           </a>
         )}
       </div>
@@ -445,45 +422,49 @@ function Recommendation({ hostKey, clientKey, wantsAway, lang }) {
 
   const wantsRemote = wantsAway && host.tailscaleCapable && !client.lanOnly;
   const modeKey = !wantsRemote ? 'local-wifi' : client.isAppleICloud && host.icloudRelay ? 'icloud-ts' : 'manual-ts';
-  const mode = MODE_INFO[modeKey];
+  const mode = rfg.modes[modeKey];
   const cappedByHost = wantsAway && !host.tailscaleCapable && !client.lanOnly;
   const cappedByClient = wantsAway && client.lanOnly;
 
   return (
     <div className="rounded-2xl border border-blue-200 bg-blue-50/40 p-6">
-      <div className="mb-1 text-xs font-bold uppercase tracking-wider text-blue-700">Given your combination</div>
+      <div className="mb-1 text-xs font-bold uppercase tracking-wider text-blue-700">{r.heading}</div>
       <ul className="mt-3 space-y-3 text-sm text-slate-800">
         <li className="flex gap-2.5">
           <span className="mt-0.5 font-black text-blue-600">1.</span>
           <span>
-            Run the host on <strong>{host.label}</strong>.{host.note && <span className="block text-slate-500">{host.note}</span>}
+            <Html html={fill(r.step1, { hostLabel })} />
+            {rfg.hosts[hostKey].note && <span className="block text-slate-500">{rfg.hosts[hostKey].note}</span>}
             {host.appLink && (
               <a href={host.appLink} target="_blank" rel="noopener" className="mt-1.5 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 hover:text-blue-900">
-                {host.appLinkLabel}
+                {rfg.hosts[hostKey].appLinkLabel}
               </a>
             )}
           </span>
         </li>
         <li className="flex gap-2.5">
           <span className="mt-0.5 font-black text-blue-600">2.</span>
-          <span>Read on <strong>{client.label}</strong>.{client.note && <span className="block text-slate-500">{client.note}</span>}</span>
+          <span>
+            <Html html={fill(r.step2, { clientLabel })} />
+            {clientNote && <span className="block text-slate-500">{clientNote}</span>}
+          </span>
         </li>
         <li className="flex gap-2.5">
           <span className="mt-0.5 font-black text-blue-600">3.</span>
           <span>
-            In the {client.label} app&rsquo;s connection settings, choose <strong>{mode.label}</strong>.
+            <Html html={fill(r.step3, { clientLabel, modeLabel: mode.label })} />
             <span className="block text-slate-500">{mode.detail}</span>
           </span>
         </li>
       </ul>
       {cappedByHost && (
         <p className="mt-4 rounded-lg bg-amber-50 px-3.5 py-2.5 text-xs font-semibold text-amber-800">
-          Note: {host.label} doesn&rsquo;t support away-from-home streaming yet, so this pairing is Local Wi-Fi only for now, even though you asked for both.
+          {fill(r.cappedByHost, { hostLabel })}
         </p>
       )}
       {cappedByClient && (
         <p className="mt-4 rounded-lg bg-amber-50 px-3.5 py-2.5 text-xs font-semibold text-amber-800">
-          Note: {client.label} is Local Wi-Fi only by design — no iCloud or Tailscale support on this device — so this pairing works at home only, even though you asked for both.
+          {fill(r.cappedByClient, { clientLabel })}
         </p>
       )}
     </div>
@@ -491,13 +472,17 @@ function Recommendation({ hostKey, clientKey, wantsAway, lang }) {
 }
 
 function ReaderFamilyGuide({ lang = 'en' }) {
+  const rfg = useRfg();
   const [hostKey, setHostKey] = useState('mac');
   const [clientKey, setClientKey] = useState('iphone_ipad');
   const [wantsAway, setWantsAway] = useState(true);
 
+  const hostLabels = useMemo(() => Object.fromEntries(HOST_KEY_ORDER.map((k) => [k, rfg.hosts[k]?.label])), [rfg]);
+  const clientLabels = useMemo(() => Object.fromEntries(CLIENT_KEY_ORDER.map((k) => [k, rfg.clients[k]?.label])), [rfg]);
+
   const recommendation = useMemo(
-    () => <Recommendation hostKey={hostKey} clientKey={clientKey} wantsAway={wantsAway} lang={lang} />,
-    [hostKey, clientKey, wantsAway, lang]
+    () => <Recommendation hostKey={hostKey} clientKey={clientKey} wantsAway={wantsAway} lang={lang} rfg={rfg} />,
+    [hostKey, clientKey, wantsAway, lang, rfg]
   );
 
   return (
@@ -511,49 +496,49 @@ function ReaderFamilyGuide({ lang = 'en' }) {
               iPhone/iPad). An OPDS/Komga/Kavita server is NOT a tenth surface: it is
               someone else's server that BiblioFuse reads from, which is why it is a
               content-source column and not a matrix row. */}
-          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">Every surface, one setup</div>
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">{rfg.eyebrow}</div>
           <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-black leading-tight tracking-tight text-slate-950">
-            Find your setup
+            {rfg.title}
           </h2>
           <p className="mt-4 text-slate-600">
-            The family now spans iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker, and Synology &mdash; and reads from any OPDS, Komga or Kavita server too. Pick what hosts your books and what you want to read on, and see exactly which app and connection mode to use.
+            {rfg.intro}
           </p>
         </div>
 
         <details className="group mb-14">
           <summary className="flex cursor-pointer list-none items-center justify-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-700">
-            See the full platform coverage table
+            {rfg.coverageToggle}
             <svg className="flex-shrink-0 transition-transform group-open:rotate-180" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 9l6 6 6-6" />
             </svg>
           </summary>
           <div className="mt-6">
-            <CoverageTable />
+            <CoverageTable rfg={rfg} />
           </div>
         </details>
 
         <div className="rounded-3xl border border-slate-200 bg-[#f5f8ff] p-6 sm:p-8">
           <div className="grid gap-6 sm:grid-cols-2">
-            <OptionGroup label="What hosts your library?" options={HOSTS} value={hostKey} onChange={setHostKey} />
-            <OptionGroup label="What do you want to read on?" options={CLIENTS} value={clientKey} onChange={setClientKey} />
+            <OptionGroup label={rfg.hostQuestion} keys={HOST_KEY_ORDER} labels={hostLabels} value={hostKey} onChange={setHostKey} />
+            <OptionGroup label={rfg.clientQuestion} keys={CLIENT_KEY_ORDER} labels={clientLabels} value={clientKey} onChange={setClientKey} />
           </div>
 
           <div className="mt-6">
-            <div className="mb-2.5 text-xs font-bold uppercase tracking-wider text-slate-500">Where will you read?</div>
+            <div className="mb-2.5 text-xs font-bold uppercase tracking-wider text-slate-500">{rfg.whereQuestion}</div>
             <div className="flex flex-wrap gap-2">
               <button
                 type="button"
                 onClick={() => setWantsAway(false)}
                 className={`rounded-xl border px-3.5 py-2 text-sm font-semibold transition ${!wantsAway ? 'border-blue-600 bg-blue-600 text-white shadow-sm' : 'border-slate-200 bg-white text-slate-700 hover:border-blue-300 hover:bg-blue-50/50'}`}
               >
-                Only at home
+                {rfg.onlyHome}
               </button>
               <button
                 type="button"
                 onClick={() => setWantsAway(true)}
                 className={`rounded-xl border px-3.5 py-2 text-sm font-semibold transition ${wantsAway ? 'border-blue-600 bg-blue-600 text-white shadow-sm' : 'border-slate-200 bg-white text-slate-700 hover:border-blue-300 hover:bg-blue-50/50'}`}
               >
-                At home and away
+                {rfg.homeAndAway}
               </button>
             </div>
           </div>

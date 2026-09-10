@@ -667,3 +667,34 @@ for the sources. Files at `public/image/comicreader/editions/{apple,pc,android,n
 `alt=""` on the thumbnails: the image is decorative next to text that already states the
 platform (`BiblioFuse Reader iOS / macOS`, etc.), so an empty alt avoids double-announcing
 the same information to a screen reader.
+
+## Reader-family picker is no longer English-only (2026-09-10)
+
+Reversed a deliberate scope decision from the picker's original build ("translating a
+decision tree into 11 locales isn't worth it") at the site owner's direct request. All
+display strings — HOSTS/CLIENTS labels and notes, MODE_INFO labels/details, MATRIX_ROWS
+platform names, the three column-group label sets, the coverage-table legend, the
+section eyebrow/title/intro, and the `Recommendation` component's prose — moved to
+`redesign.readerFamilyGuide` (80 leaf strings). Non-display logic fields (`canStream`,
+`tailscaleCapable`, `icloudRelay`, `lanOnly`, `kind`, `opdsCapable`) stay as plain JS in
+`HOSTS`/`CLIENTS`, since those drive branching and have no text to translate.
+
+**The `Recommendation` component's composed sentences became named-interpolation
+templates**, not JS template literals: `step1: 'Run the host on <strong>{{hostLabel}}</strong>.'`
+filled via a small `fill()` helper and rendered through `dangerouslySetInnerHTML`
+(`escapeValue: false` is already set globally in `src/i18n.js` for exactly this pattern,
+matching `Guide.jsx`'s `RichText`). This is the standard i18next approach for text
+assembled from user-selected state — the alternative, composing full sentences from
+separately-translated fragments, does not hold up across languages with different word
+order and grammatical agreement.
+
+English-only in every non-English locale for now (tracked separately for translation),
+served via `fallbackLng` exactly like the tools pages were before their own fix earlier
+today — no visual change for existing English users, nothing breaks for non-English
+users, translation can land without any further code change.
+
+**Verified byte-identical against the pre-refactor output**, not just "builds without
+errors": read the coverage table's full rendered content and five distinct
+`Recommendation` branches (OPDS-capable away/home, OPDS-incapable client, a capped
+Mac-to-Apple-TV pairing, and a normal PC-to-Android pairing) before and after, all
+character-for-character the same.
