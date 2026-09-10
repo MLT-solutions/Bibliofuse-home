@@ -77,18 +77,20 @@
 # links to bibliofuse.com/discord instead, so a dead invite is a one-line fix in one repo
 # rather than a hunt through every place the code was pasted.
 #
-# UWKcJ4uMMQ was generated 2026-09-10 with Expire after: Never and no use limit
-# (verified: the invites API returns expires_at: null). The invite it replaced was a
-# 30-day default that would have 404'd on 2026-10-10.
+# QMkG6zFSW7 was generated 2026-09-10 with Expire after: Never and no use limit
+# (verified: the invites API returns expires_at: null). It replaced two earlier invites
+# the same day: a 30-day default that would have 404'd on 2026-10-10, and a permanent one
+# bound to #announcement.
 #
-# Invites also die from channel changes, not just expiry: this one is bound to
-# #announcement, so deleting, renaming or restricting that channel breaks the link.
+# It points at #general-chat on purpose. Invites die from channel changes as well as
+# expiry, and an announcement channel is both more likely to be restructured and
+# read-only for new arrivals — they landed somewhere they could not say hello.
 #
 # 302, not 301, on purpose. Browsers cache a 301 indefinitely, so anyone who clicked once
 # would keep being sent to the old invite from their own cache after we changed it here —
 # which defeats the entire point of the indirection. Every other rule in this file points
 # at a permanent destination and correctly uses 301; this one is expected to change.
-/discord           https://discord.gg/UWKcJ4uMMQ  302
-/discord/          https://discord.gg/UWKcJ4uMMQ  302
-/:lang/discord     https://discord.gg/UWKcJ4uMMQ  302
-/:lang/discord/    https://discord.gg/UWKcJ4uMMQ  302
+/discord           https://discord.gg/QMkG6zFSW7  302
+/discord/          https://discord.gg/QMkG6zFSW7  302
+/:lang/discord     https://discord.gg/QMkG6zFSW7  302
+/:lang/discord/    https://discord.gg/QMkG6zFSW7  302

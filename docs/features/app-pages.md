@@ -424,6 +424,12 @@ icons, `github` and `discord` filled brand marks.
     welcome or general channel.
 
 ## ContentCue and SmartDecrypt (retired 2026-07-20)
+**Their screenshots were deleted 2026-09-10.** `public/image/offline-apps/smartdecrypt/`
+was 38 MB of marketing PNGs still being deployed on every build. `SmartDecrypt.jsx` and
+`ContentCue.jsx` are 53- and 49-line stubs that render only `/image/smartdecrypt-logo.png`
+and their ContentCue equivalent, so none of it had been referenced since the retirement.
+The two logos are still in use and stay.
+
 Both used to be full Layer-1 marketing pages here; see "Sister-app landing pages"
 above for why and what replaced them (mlogictech.com/products). Before retirement,
 ContentCue's page (`/contentcue`) marketed ContentCue: Read & Listen (iOS + iPadOS +
@@ -495,7 +501,10 @@ different sections. Sources are on the NAS at
 `/Volumes/MasterNAS/BiblioFuse feature summary/Bibliofuse iPhone/{1,4,12}.jpg`. Each `img`
 now carries intrinsic `width`/`height`, the hero is `fetchpriority="high"`, and the two
 lower ones are `loading="lazy"`. `public/image/offline-apps/bibliofuse/{iphone,ipad}/`
-(~21 MB) is now referenced by nothing and is a deletion candidate.
+(21 MB, 12 unused PNGs) was left referenced by nothing and was **deleted on 2026-09-10**.
+Only `mac/1.png` survives under that path — it is the streaming feature row's image on
+`/comicreader/`. The `imageBase` constant in `Home.jsx` went with the folders; the one in
+`ComicReader.jsx` stays for that single file.
 
 `ToolsStrip` is **cards only, by design**. A working tool on the homepage would compete
 with the `/tools/<slug>/` pages for the same queries and pull ~13 MB of WASM into every

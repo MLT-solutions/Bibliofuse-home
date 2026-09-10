@@ -93,3 +93,12 @@ when needed — they are not wired into CI or the build.
 
 If you need to bulk-touch translations or article content, check `scripts/` first for
 an existing script that already does something close before writing a new one.
+
+## `.DS_Store` is stripped from `dist/` (added 2026-09-10)
+
+`vite build` copies `public/` verbatim, so a macOS `.DS_Store` that Finder drops in there
+gets deployed and served — `bibliofuse.com/.DS_Store` was live, which lists the directory's
+filenames. The file is gitignored, so git never caught it and it came back every time
+Finder touched the folder. The build now runs `find dist -name .DS_Store -delete` straight
+after `vite build`, before the sitemap step, so it cannot reach a deploy regardless of the
+local working tree.

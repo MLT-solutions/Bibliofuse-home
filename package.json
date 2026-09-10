@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/check-feature-matrix-i18n.mjs && vite build && node scripts/generate-sitemap.js && node scripts/generate-static-routes.js && node scripts/prerender.js",
+    "build": "node scripts/check-feature-matrix-i18n.mjs && vite build && find dist -name .DS_Store -delete && node scripts/generate-sitemap.js && node scripts/generate-static-routes.js && node scripts/prerender.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "check:i18n": "node scripts/check-feature-matrix-i18n.mjs",
