@@ -964,11 +964,11 @@
           },
           "lookScroll": {
             "title": "端を見つめてスクロール",
-            "body": "上端または下端付近を見つめるだけでページが自動でスクロールします — ピンチ操作は不要です。"
+            "body": "リーダーのウインドウで画面の上端または下端付近に視線を置くと、ページが自動でスクロールします。ピンチは不要です。"
           },
           "devices": {
             "title": "マウス、トラックパッド、キーボード",
-            "body": "Page Down、スペース、スクロールホイール、クリック。Mac と同じ操作。"
+            "body": "リーダーのウインドウでは、Macと同じようにPage Down、スペース、スクロールホイール、クリックが使えます。"
           },
           "window": {
             "title": "ネイティブウィンドウと空間読書",
@@ -1475,7 +1475,7 @@
           "items": [
             {
               "q": "MacまたはPCからiPhoneへのストリーミングの仕組みは？",
-              "a": "MacまたはPCがローカルサーバーを起動し、接続アドレスをiCloud Driveに書き込みます。iPhoneが自動的に検出します。両デバイスはTailscaleをオンにする必要があります（自宅とリモートで使用可能）。一方のデバイスだけTailscaleがオンの場合、接続は失敗します。両方を常にオンにすると最も安定した体験が得られます。"
+              "a": "自宅のネットワークでは設定は不要です。MacやPCのホストアプリが自分を通知し、読書用の端末がそれを見つけて、証明書ピン留め付きのHTTPSで接続します。外出先で読む場合は、ホストがiCloud Driveにもアドレスを公開し、読書用の端末がTailscale経由で接続します。この経路には両方の端末で同じiCloudアカウントと起動中のTailscaleが必要です。同じネットワークでは同一ホストの項目が2つ表示され、好きな方を選べます。アプリが勝手に切り替えることはありません。"
             },
             {
               "q": "ストリーミングの設定に必要なものは？",
@@ -1506,7 +1506,7 @@
             },
             {
               "q": "設定は正しいのにホストが表示されません。何を試せばよいですか？",
-              "a": "以前はアドレスファイルが古いままになっていることが主な原因でした。現在はストリーミングの開始・停止時やアドレス変更時に、Macホストが自分でそれらを削除します。iCloudの競合コピーも含めて削除するため、今ではこれが原因になることはほとんどありません。",
+              "a": "以前はアドレスファイルが古いままになっていることが主な原因でした。現在はMacホストもWindowsホストも、ストリーミングの開始・停止時やアドレス変更時にそれらを自分で削除します。iCloudの競合コピーも含めて削除するため、今ではこれが原因になることはほとんどありません。",
               "bullets": [
                 {
                   "text": "ホスト側でアプリを終了して開き直してください。起動時に新しいアドレスを公開します。",
@@ -1516,13 +1516,6 @@
                   "text": "読書用の端末でストリーミングのソース一覧を開き、ホスト名の横に緑の点があるか確認します。",
                   "sub": [
                     "グレーの場合はまだホストに到達していません。数秒待つか、ホスト側でアプリを強制終了して開き直してください。"
-                  ]
-                },
-                {
-                  "text": "Windowsホストは、この自動削除にまだ対応していません。",
-                  "sub": [
-                    "PCホストが表示されないままの場合は、iPhoneかMacからiCloud Drive → BiblioFuse → Documentsを開き、<code>stream_endpoint.json</code>と番号付きのコピーを削除してから、ホストのアプリを開き直してください。",
-                    "PCではなくiPhoneかMacで操作してください。Windowsではファイルのオンライン版しか保持していないことがあり、そこからの削除は確実ではありません。"
                   ]
                 }
               ]
@@ -1812,12 +1805,10 @@
         "note": "部屋の中に配置された本棚を眺める"
       },
       "format-cbz-cbr": {
-        "label": "CBZ, CBR, ZIP & RAR",
-        "note": "The NAS browser reader opens CBZ/ZIP; CBR/RAR need the native apps."
+        "label": "CBZ, CBR, ZIP & RAR"
       },
       "format-epub-pdf-txt": {
-        "label": "EPUB, PDF & TXT",
-        "note": "The NAS browser reader has no PDF support yet."
+        "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
         "label": "iCloud bookshelf",
@@ -1825,7 +1816,7 @@
       },
       "ui-languages": {
         "label": "Localised interface",
-        "note": "11 languages on Apple and Windows; the NAS browser reader is English-only."
+        "note": "Apple、Windows、NASのブラウザリーダーで11言語に対応。"
       }
     },
     "specs": {
@@ -1839,12 +1830,11 @@
           "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
           "androidtv": "CBZ · CBR · RAR · ZIP",
           "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          "nas": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT"
         },
         "notes": {
           "tvos": "コミックのみ — テキストリーダーなし",
-          "androidtv": "コミックのみ — テキストリーダーなし",
-          "nas": "ブラウザリーダー。PDF は未対応"
+          "androidtv": "コミックのみ — テキストリーダーなし"
         }
       },
       "library-sources": {

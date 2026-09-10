@@ -964,11 +964,11 @@
           },
           "lookScroll": {
             "title": "Renung tepi untuk tatal",
-            "body": "Tumpukan renungan berhampiran tepi atas atau bawah dan halaman akan menatal sendiri — tanpa perlu picit."
+            "body": "Dalam tetingkap pembaca, letakkan pandangan dekat tepi atas atau bawah dan halaman akan menatal sendiri — tanpa perlu picit."
           },
           "devices": {
             "title": "Tetikus, pad sesentuh atau papan kekunci",
-            "body": "Page Down, Space, roda tatal atau klik, sama seperti di Mac."
+            "body": "Page Down, space, roda tatal atau klik dalam tetingkap pembaca, sama seperti pada Mac."
           },
           "window": {
             "title": "Tetingkap asli & bacaan spatial",
@@ -1475,7 +1475,7 @@
           "items": [
             {
               "q": "Bagaimana penstriman dari Mac atau PC ke iPhone berfungsi?",
-              "a": "Mac atau PC anda menjalankan pelayan tempatan dan menulis alamat sambungan ke iCloud Drive. iPhone anda mengesannya secara automatik. Kedua-dua peranti mesti menghidupkan Tailscale (berfungsi di rumah dan dari jauh). Jika hanya satu peranti mempunyai Tailscale dihidupkan, sambungan akan gagal. Memastikan kedua-duanya sentiasa dihidupkan memberikan pengalaman yang paling konsisten."
+              "a": "Pada rangkaian rumah anda tiada apa-apa perlu ditetapkan: apl hos pada Mac atau PC mengisytiharkan dirinya dan peranti bacaan menemuinya, lalu menyambung melalui HTTPS dengan sertifikat terpaku. Untuk membaca di luar rumah, hos juga menerbitkan alamatnya ke iCloud Drive anda dan peranti bacaan mencapainya melalui Tailscale — laluan itu memerlukan akaun iCloud yang sama dan Tailscale berjalan pada kedua-duanya. Pada rangkaian yang sama anda akan melihat dua entri bagi satu hos dan memilih mana-mana; apl tidak pernah bertukar di belakang anda."
             },
             {
               "q": "Apa yang saya perlukan untuk menyediakan strim?",
@@ -1506,7 +1506,7 @@
             },
             {
               "q": "Strim sudah disediakan dengan betul tetapi hos tidak muncul — apa yang boleh saya cuba?",
-              "a": "Dahulu punca biasanya ialah fail alamat yang lapuk. Hos Mac kini memadamnya sendiri setiap kali strim bermula, berhenti, atau alamatnya berubah — termasuk salinan konflik iCloud — jadi ini jarang menjadi masalah lagi.",
+              "a": "Dahulu punca biasanya ialah fail alamat yang lapuk. Kini hos Mac dan hos Windows memadamnya sendiri setiap kali strim bermula, berhenti, atau alamatnya berubah — termasuk salinan konflik iCloud — jadi ini jarang menjadi masalah lagi.",
               "bullets": [
                 {
                   "text": "Tutup dan buka semula apl pada hos. Semasa dimulakan, ia menerbitkan alamat baharu.",
@@ -1516,13 +1516,6 @@
                   "text": "Pada peranti bacaan, buka senarai sumber strim dan cari titik hijau di sebelah nama hos.",
                   "sub": [
                     "Kelabu bermaksud hos belum dicapai — tunggu beberapa detik, atau paksa tutup dan buka semula apl pada hos."
-                  ]
-                },
-                {
-                  "text": "Hos Windows belum melakukan pembersihan automatik itu.",
-                  "sub": [
-                    "Jika hos PC kekal tidak kelihatan, buka iCloud Drive → BiblioFuse → Documents daripada iPhone atau Mac dan padam <code>stream_endpoint.json</code> bersama sebarang salinan bernombor, kemudian buka semula apl hos.",
-                    "Lakukannya daripada iPhone atau Mac dan bukan PC: Windows mungkin menyimpan hanya versi dalam talian fail itu, jadi pemadaman di sana tidak boleh dipercayai."
                   ]
                 }
               ]
@@ -1812,12 +1805,10 @@
         "note": "Layari rak yang diletakkan di ruang sekeliling"
       },
       "format-cbz-cbr": {
-        "label": "CBZ, CBR, ZIP & RAR",
-        "note": "The NAS browser reader opens CBZ/ZIP; CBR/RAR need the native apps."
+        "label": "CBZ, CBR, ZIP & RAR"
       },
       "format-epub-pdf-txt": {
-        "label": "EPUB, PDF & TXT",
-        "note": "The NAS browser reader has no PDF support yet."
+        "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
         "label": "iCloud bookshelf",
@@ -1825,7 +1816,7 @@
       },
       "ui-languages": {
         "label": "Localised interface",
-        "note": "11 languages on Apple and Windows; the NAS browser reader is English-only."
+        "note": "11 bahasa pada Apple, Windows dan pembaca pelayar NAS."
       }
     },
     "specs": {
@@ -1839,12 +1830,11 @@
           "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
           "androidtv": "CBZ · CBR · RAR · ZIP",
           "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          "nas": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT"
         },
         "notes": {
           "tvos": "Hanya komik — tiada pembaca teks",
-          "androidtv": "Hanya komik — tiada pembaca teks",
-          "nas": "Pembaca dalam pelayar; belum ada PDF"
+          "androidtv": "Hanya komik — tiada pembaca teks"
         }
       },
       "library-sources": {

@@ -964,11 +964,11 @@
           },
           "lookScroll": {
             "title": "凝视边缘即可滚动",
-            "body": "将视线停留在顶部或底部边缘附近，页面就会自动滚动——无需捏合手势。"
+            "body": "在阅读窗口中，将视线停在上边缘或下边缘附近，页面便会自行滚动——无需捏合。"
           },
           "devices": {
             "title": "鼠标、触控板或键盘",
-            "body": "Page Down、空格键、滚轮或点击，与 Mac 上一样。"
+            "body": "在阅读窗口中使用 Page Down、空格、滚轮或点击，与 Mac 上一样。"
           },
           "window": {
             "title": "原生窗口与空间阅读",
@@ -1475,7 +1475,7 @@
           "items": [
             {
               "q": "Mac 或 PC 向 iPhone 的串流是如何工作的？",
-              "a": "您的 Mac 或 PC 运行本地服务器，并将连接地址写入 iCloud Drive。iPhone 会自动识别。两台设备必须同时开启 Tailscale（在家和远程均可使用）。如果只有一台设备开启了 Tailscale，连接将失败。保持两台设备始终开启 Tailscale 可获得最稳定的体验。"
+              "a": "在家庭网络中无需任何设置：Mac 或 PC 上的主机应用会自行广播，阅读设备即可找到它，并通过带证书固定的 HTTPS 连接。若要离家阅读，主机还会把地址发布到你的 iCloud 云盘，阅读设备再经由 Tailscale 连上——这条路径需要两台设备使用同一 iCloud 账户并都运行 Tailscale。在同一网络中，同一台主机会显示两条记录，由你自行选择；应用绝不会在你不知情时切换。"
             },
             {
               "q": "设置串流需要准备什么？",
@@ -1506,7 +1506,7 @@
             },
             {
               "q": "串流设置正确但主机不出现，可以怎么排查？",
-              "a": "过去常见的原因是地址文件过期。现在每次串流启动、停止或地址变化时，Mac 主机都会自行清除这些文件，包括 iCloud 冲突副本，所以这已经很少是问题所在。",
+              "a": "过去常见的原因是地址文件过期。现在每次串流启动、停止或地址变化时，Mac 与 Windows 主机都会自行清除这些文件，包括 iCloud 冲突副本，所以这已经很少是问题所在。",
               "bullets": [
                 {
                   "text": "在主机上退出并重新打开应用。启动时它会发布新的地址。",
@@ -1516,13 +1516,6 @@
                   "text": "在阅读设备上打开串流来源列表，查看主机名称旁是否有绿点。",
                   "sub": [
                     "灰色表示尚未连上主机——请等几秒，或在主机上强制退出并重新打开应用。"
-                  ]
-                },
-                {
-                  "text": "Windows 主机尚未支持这项自动清理。",
-                  "sub": [
-                    "如果 PC 主机始终不可见，请用 iPhone 或 Mac 打开 iCloud 云盘 → BiblioFuse → Documents，删除 <code>stream_endpoint.json</code> 以及任何带编号的副本，然后重新打开主机应用。",
-                    "请用 iPhone 或 Mac 操作，而不要用这台 PC：Windows 可能只保留文件的在线版本，在那里删除并不可靠。"
                   ]
                 }
               ]
@@ -1812,12 +1805,10 @@
         "note": "浏览摆放在房间中的书架"
       },
       "format-cbz-cbr": {
-        "label": "CBZ, CBR, ZIP & RAR",
-        "note": "The NAS browser reader opens CBZ/ZIP; CBR/RAR need the native apps."
+        "label": "CBZ, CBR, ZIP & RAR"
       },
       "format-epub-pdf-txt": {
-        "label": "EPUB, PDF & TXT",
-        "note": "The NAS browser reader has no PDF support yet."
+        "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
         "label": "iCloud bookshelf",
@@ -1825,7 +1816,7 @@
       },
       "ui-languages": {
         "label": "Localised interface",
-        "note": "11 languages on Apple and Windows; the NAS browser reader is English-only."
+        "note": "Apple、Windows 与 NAS 浏览器阅读器均支持 11 种语言。"
       }
     },
     "specs": {
@@ -1839,12 +1830,11 @@
           "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
           "androidtv": "CBZ · CBR · RAR · ZIP",
           "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          "nas": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT"
         },
         "notes": {
           "tvos": "仅漫画 — 无文本阅读器",
-          "androidtv": "仅漫画 — 无文本阅读器",
-          "nas": "浏览器阅读器；暂不支持 PDF"
+          "androidtv": "仅漫画 — 无文本阅读器"
         }
       },
       "library-sources": {

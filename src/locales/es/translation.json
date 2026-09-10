@@ -964,11 +964,11 @@
           },
           "lookScroll": {
             "title": "Fija la mirada en el borde para desplazar",
-            "body": "Mantén la mirada cerca del borde superior o inferior y la página se desplaza sola — sin necesidad de pellizcar."
+            "body": "En la ventana de lectura, deja la mirada cerca del borde superior o inferior y la página se desplaza sola, sin necesidad de pellizcar."
           },
           "devices": {
             "title": "Ratón, trackpad o teclado",
-            "body": "Av Pág, Espacio, rueda del ratón o clic, igual que en Mac."
+            "body": "Av Pág, Espacio, rueda del ratón o clic en la ventana de lectura, igual que en el Mac."
           },
           "window": {
             "title": "Ventana nativa y lectura espacial",
@@ -1475,7 +1475,7 @@
           "items": [
             {
               "q": "¿Cómo funciona el streaming de Mac o PC al iPhone?",
-              "a": "Tu Mac o PC ejecuta un servidor local y escribe la dirección de conexión en iCloud Drive. Tu iPhone la detecta automáticamente. Ambos dispositivos deben tener Tailscale activado (funciona en casa y remotamente). Si solo un dispositivo tiene Tailscale activado, la conexión fallará. Mantener ambos siempre activados da la experiencia más consistente."
+              "a": "En tu red doméstica no hay nada que configurar: la app anfitriona de tu Mac o PC se anuncia y el dispositivo de lectura la encuentra, conectándose por HTTPS con un certificado fijado. Para leer fuera de casa, el anfitrión también publica su dirección en tu iCloud Drive y el dispositivo de lectura la alcanza mediante Tailscale; esa vía necesita la misma cuenta de iCloud y Tailscale activo en ambos. En la misma red verás las dos entradas de un mismo anfitrión y eliges la que quieras: la app nunca cambia entre ellas a tus espaldas."
             },
             {
               "q": "¿Qué necesito para configurar la transmisión?",
@@ -1506,7 +1506,7 @@
             },
             {
               "q": "La transmisión está bien configurada pero el anfitrión no aparece: ¿qué puedo probar?",
-              "a": "Antes la causa habitual eran archivos de dirección obsoletos. El anfitrión Mac ahora los borra por su cuenta cada vez que la transmisión empieza, se detiene o cambia de dirección, incluidas las copias en conflicto de iCloud, así que ya casi nunca es el problema.",
+              "a": "Antes la causa habitual eran archivos de dirección obsoletos. Ahora tanto el anfitrión Mac como el de Windows los borran por su cuenta cada vez que la transmisión empieza, se detiene o cambia de dirección, incluidas las copias en conflicto de iCloud, así que ya casi nunca es el problema.",
               "bullets": [
                 {
                   "text": "Cierra y vuelve a abrir la app en el anfitrión. Al arrancar publica una dirección nueva.",
@@ -1516,13 +1516,6 @@
                   "text": "En el dispositivo de lectura, abre la lista de fuentes de transmisión y busca un punto verde junto al nombre del anfitrión.",
                   "sub": [
                     "Gris significa que aún no se ha alcanzado el anfitrión: espera unos segundos, o fuerza el cierre y vuelve a abrir la app en el anfitrión."
-                  ]
-                },
-                {
-                  "text": "El anfitrión de Windows todavía no hace esa limpieza automática.",
-                  "sub": [
-                    "Si un anfitrión PC sigue invisible, abre iCloud Drive → BiblioFuse → Documents desde un iPhone o un Mac y borra <code>stream_endpoint.json</code> junto con cualquier copia numerada; después vuelve a abrir la app del anfitrión.",
-                    "Hazlo desde un iPhone o Mac y no desde el PC: Windows puede tener solo una versión en línea del archivo, así que borrarlo allí no es fiable."
                   ]
                 }
               ]
@@ -1812,12 +1805,10 @@
         "note": "Explora estanterías situadas en la habitación"
       },
       "format-cbz-cbr": {
-        "label": "CBZ, CBR, ZIP & RAR",
-        "note": "The NAS browser reader opens CBZ/ZIP; CBR/RAR need the native apps."
+        "label": "CBZ, CBR, ZIP & RAR"
       },
       "format-epub-pdf-txt": {
-        "label": "EPUB, PDF & TXT",
-        "note": "The NAS browser reader has no PDF support yet."
+        "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
         "label": "iCloud bookshelf",
@@ -1825,7 +1816,7 @@
       },
       "ui-languages": {
         "label": "Localised interface",
-        "note": "11 languages on Apple and Windows; the NAS browser reader is English-only."
+        "note": "11 idiomas en Apple, Windows y el lector web del NAS."
       }
     },
     "specs": {
@@ -1839,12 +1830,11 @@
           "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
           "androidtv": "CBZ · CBR · RAR · ZIP",
           "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          "nas": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT"
         },
         "notes": {
           "tvos": "Solo cómics — sin lector de texto",
-          "androidtv": "Solo cómics — sin lector de texto",
-          "nas": "Lector en el navegador; aún sin PDF"
+          "androidtv": "Solo cómics — sin lector de texto"
         }
       },
       "library-sources": {

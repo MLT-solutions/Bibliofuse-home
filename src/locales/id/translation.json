@@ -964,11 +964,11 @@
           },
           "lookScroll": {
             "title": "Tatap tepi untuk menggulir",
-            "body": "Arahkan pandangan ke tepi atas atau bawah dan halaman akan menggulir sendiri — tanpa perlu mencubit."
+            "body": "Di jendela pembaca, arahkan pandangan ke dekat tepi atas atau bawah dan halaman akan bergulir sendiri — tanpa perlu menjepit."
           },
           "devices": {
             "title": "Mouse, trackpad, atau keyboard",
-            "body": "Page Down, Spasi, roda gulir, atau klik, sama seperti di Mac."
+            "body": "Page Down, spasi, roda gulir, atau klik di jendela pembaca, sama seperti di Mac."
           },
           "window": {
             "title": "Jendela asli & baca spasial",
@@ -1475,7 +1475,7 @@
           "items": [
             {
               "q": "Bagaimana cara kerja streaming dari Mac atau PC ke iPhone?",
-              "a": "Mac atau PC Anda menjalankan server lokal dan menulis alamat koneksi ke iCloud Drive. iPhone Anda mendeteksinya secara otomatis. Kedua perangkat harus mengaktifkan Tailscale (bekerja di rumah dan jarak jauh). Jika hanya satu perangkat yang mengaktifkan Tailscale, koneksi akan gagal. Menjaga keduanya selalu aktif memberikan pengalaman paling konsisten."
+              "a": "Di jaringan rumah Anda tidak ada yang perlu diatur: aplikasi host di Mac atau PC mengumumkan dirinya dan perangkat pembaca menemukannya, lalu menyambung lewat HTTPS dengan sertifikat yang dipatok. Untuk membaca di luar rumah, host juga menerbitkan alamatnya ke iCloud Drive Anda dan perangkat pembaca menjangkaunya lewat Tailscale — jalur itu memerlukan akun iCloud yang sama dan Tailscale berjalan di keduanya. Di jaringan yang sama Anda akan melihat dua entri untuk satu host dan memilih mana pun; aplikasi tidak pernah berpindah di belakang Anda."
             },
             {
               "q": "Apa yang saya butuhkan untuk menyiapkan streaming?",
@@ -1506,7 +1506,7 @@
             },
             {
               "q": "Streaming sudah benar tetapi host tidak muncul — apa yang bisa saya coba?",
-              "a": "Dulu penyebab umumnya adalah berkas alamat yang kedaluwarsa. Host Mac sekarang menghapusnya sendiri setiap kali streaming dimulai, berhenti, atau alamatnya berubah — termasuk salinan konflik iCloud — jadi ini jarang menjadi masalah lagi.",
+              "a": "Dulu penyebab umumnya adalah berkas alamat yang kedaluwarsa. Sekarang host Mac maupun Windows menghapusnya sendiri setiap kali streaming dimulai, berhenti, atau alamatnya berubah — termasuk salinan konflik iCloud — jadi ini jarang menjadi masalah lagi.",
               "bullets": [
                 {
                   "text": "Tutup lalu buka lagi aplikasi di host. Saat dijalankan, ia menerbitkan alamat baru.",
@@ -1516,13 +1516,6 @@
                   "text": "Di perangkat pembaca, buka daftar sumber streaming dan cari titik hijau di samping nama host.",
                   "sub": [
                     "Abu-abu berarti host belum terjangkau — tunggu beberapa detik, atau paksa tutup lalu buka lagi aplikasi di host."
-                  ]
-                },
-                {
-                  "text": "Host Windows belum melakukan pembersihan otomatis itu.",
-                  "sub": [
-                    "Jika host PC tetap tidak terlihat, buka iCloud Drive → BiblioFuse → Documents dari iPhone atau Mac dan hapus <code>stream_endpoint.json</code> beserta salinan bernomor apa pun, lalu buka lagi aplikasi host.",
-                    "Lakukan dari iPhone atau Mac, bukan dari PC: Windows mungkin hanya menyimpan versi daring berkas itu, sehingga menghapus di sana tidak dapat diandalkan."
                   ]
                 }
               ]
@@ -1812,12 +1805,10 @@
         "note": "Jelajahi rak yang ditempatkan di ruangan sekitar"
       },
       "format-cbz-cbr": {
-        "label": "CBZ, CBR, ZIP & RAR",
-        "note": "The NAS browser reader opens CBZ/ZIP; CBR/RAR need the native apps."
+        "label": "CBZ, CBR, ZIP & RAR"
       },
       "format-epub-pdf-txt": {
-        "label": "EPUB, PDF & TXT",
-        "note": "The NAS browser reader has no PDF support yet."
+        "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
         "label": "iCloud bookshelf",
@@ -1825,7 +1816,7 @@
       },
       "ui-languages": {
         "label": "Localised interface",
-        "note": "11 languages on Apple and Windows; the NAS browser reader is English-only."
+        "note": "11 bahasa di Apple, Windows, dan pembaca browser NAS."
       }
     },
     "specs": {
@@ -1839,12 +1830,11 @@
           "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
           "androidtv": "CBZ · CBR · RAR · ZIP",
           "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          "nas": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT"
         },
         "notes": {
           "tvos": "Hanya komik — tanpa pembaca teks",
-          "androidtv": "Hanya komik — tanpa pembaca teks",
-          "nas": "Pembaca di browser; belum ada PDF"
+          "androidtv": "Hanya komik — tanpa pembaca teks"
         }
       },
       "library-sources": {

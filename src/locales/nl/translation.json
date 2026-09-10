@@ -964,11 +964,11 @@
           },
           "lookScroll": {
             "title": "Kijk naar de rand om te scrollen",
-            "body": "Richt je blik op de boven- of onderrand en de pagina scrollt vanzelf — geen knijpgebaar nodig."
+            "body": "Rust in het leesvenster je blik bij de boven- of onderrand en de pagina scrolt zelf — knijpen is niet nodig."
           },
           "devices": {
             "title": "Muis, trackpad of toetsenbord",
-            "body": "Page Down, spatie, scrollwiel of klik, net als op de Mac."
+            "body": "Page Down, spatie, scrollwiel of klik in het leesvenster, net als op de Mac."
           },
           "window": {
             "title": "Native venster en ruimtelijk lezen",
@@ -1475,7 +1475,7 @@
           "items": [
             {
               "q": "Hoe werkt streaming van Mac of pc naar iPhone?",
-              "a": "Je Mac of pc draait een lokale server en schrijft het verbindingsadres naar iCloud Drive. Je iPhone pikt dit automatisch op. Beide apparaten moeten Tailscale aan hebben (werkt thuis en op afstand). Als slechts één apparaat Tailscale aan heeft, mislukt de verbinding. Beide apparaten altijd aan houden geeft de meest consistente ervaring."
+              "a": "Op je thuisnetwerk hoeft niets ingesteld te worden: de host-app op je Mac of pc kondigt zich aan en het leesapparaat vindt hem, met een verbinding via HTTPS en een vastgezet certificaat. Om buitenshuis te lezen publiceert de host zijn adres ook naar je iCloud Drive en bereikt het leesapparaat hem via Tailscale — die route vereist hetzelfde iCloud-account en Tailscale actief op beide. Op hetzelfde netwerk zie je beide vermeldingen voor één host en kies je zelf; de app wisselt er nooit buiten je om tussen."
             },
             {
               "q": "Wat heb ik nodig om streaming in te stellen?",
@@ -1506,7 +1506,7 @@
             },
             {
               "q": "Streaming is goed ingesteld maar de host verschijnt niet — wat kan ik proberen?",
-              "a": "Verouderde adresbestanden waren vroeger de gebruikelijke oorzaak. De Mac-host wist ze nu zelf elke keer dat streaming start, stopt of van adres verandert — inclusief iCloud-conflictkopieën — dus dit is zelden nog het probleem.",
+              "a": "Verouderde adresbestanden waren vroeger de gebruikelijke oorzaak. Zowel de Mac- als de Windows-host wissen ze nu zelf elke keer dat streaming start, stopt of het adres verandert — inclusief iCloud-conflictkopieën — dus dit is zelden nog het probleem.",
               "bullets": [
                 {
                   "text": "Sluit de app op de host af en start hem opnieuw. Bij het starten publiceert hij een vers adres.",
@@ -1516,13 +1516,6 @@
                   "text": "Open op het leesapparaat de lijst met streamingbronnen en kijk of er een groen stipje naast de hostnaam staat.",
                   "sub": [
                     "Grijs betekent dat de host nog niet bereikt is — wacht een paar seconden, of forceer stoppen en heropen de app op de host."
-                  ]
-                },
-                {
-                  "text": "De Windows-host doet die automatische opruiming nog niet.",
-                  "sub": [
-                    "Blijft een pc-host onzichtbaar, open dan iCloud Drive → BiblioFuse → Documents vanaf een iPhone of Mac en verwijder <code>stream_endpoint.json</code> plus eventuele genummerde kopieën, en start daarna de host-app opnieuw.",
-                    "Doe dit vanaf een iPhone of Mac in plaats van de pc: Windows houdt soms alleen een online versie van het bestand, waardoor verwijderen daar onbetrouwbaar is."
                   ]
                 }
               ]
@@ -1812,12 +1805,10 @@
         "note": "Doorzoek boekenkasten in de ruimte om je heen"
       },
       "format-cbz-cbr": {
-        "label": "CBZ, CBR, ZIP & RAR",
-        "note": "The NAS browser reader opens CBZ/ZIP; CBR/RAR need the native apps."
+        "label": "CBZ, CBR, ZIP & RAR"
       },
       "format-epub-pdf-txt": {
-        "label": "EPUB, PDF & TXT",
-        "note": "The NAS browser reader has no PDF support yet."
+        "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
         "label": "iCloud bookshelf",
@@ -1825,7 +1816,7 @@
       },
       "ui-languages": {
         "label": "Localised interface",
-        "note": "11 languages on Apple and Windows; the NAS browser reader is English-only."
+        "note": "11 talen op Apple, Windows en de NAS-browserlezer."
       }
     },
     "specs": {
@@ -1839,12 +1830,11 @@
           "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
           "androidtv": "CBZ · CBR · RAR · ZIP",
           "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          "nas": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT"
         },
         "notes": {
           "tvos": "Alleen strips — geen tekstlezer",
-          "androidtv": "Alleen strips — geen tekstlezer",
-          "nas": "Browserlezer; nog geen pdf"
+          "androidtv": "Alleen strips — geen tekstlezer"
         }
       },
       "library-sources": {

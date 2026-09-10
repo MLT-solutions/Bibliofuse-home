@@ -1024,11 +1024,11 @@
           },
           "lookScroll": {
             "title": "Stare edge to scroll",
-            "body": "Rest your gaze near the top or bottom edge and the page scrolls on its own — no pinch needed."
+            "body": "In the reader window, rest your gaze near the top or bottom edge and the page scrolls on its own — no pinch needed."
           },
           "devices": {
             "title": "Mouse, trackpad, or keyboard",
-            "body": "Page Down, Space, scroll wheel, or click, just like on Mac."
+            "body": "Page Down, Space, scroll wheel, or click in the reader window, just like on Mac."
           },
           "window": {
             "title": "Native window & spatial reading",
@@ -1483,7 +1483,7 @@
           "items": [
             {
               "q": "How does streaming from Mac or PC to iPhone work?",
-              "a": "Your Mac or PC runs a local server and writes the connection address to iCloud Drive. Your iPhone picks it up automatically. Both devices must have Tailscale on (works at home and remotely). If only one device has Tailscale on, the connection will fail. Keeping both devices always on Tailscale gives the most consistent experience."
+              "a": "On your home network, nothing has to be configured: the host app on your Mac or PC announces itself and the reading device finds it, connecting over HTTPS with a pinned certificate. To read away from home the host also publishes its address to your iCloud Drive, and the reading device reaches it over Tailscale — that path needs the same iCloud account and Tailscale running on both. On the same network you will see both entries for one host and pick whichever you want; the app never switches between them behind your back."
             },
             {
               "q": "What do I need to set up streaming?",
@@ -1514,7 +1514,7 @@
             },
             {
               "q": "Streaming is set up correctly but the host does not appear — what should I try?",
-              "a": "Stale address files used to be the usual cause. The Mac host now clears them by itself every time streaming starts, stops, or its address changes — including iCloud conflict copies — so this is rarely the problem any more.",
+              "a": "Stale address files used to be the usual cause. Both the Mac and Windows hosts now clear them by themselves every time streaming starts, stops, or the address changes — including iCloud conflict copies — so this is rarely the problem any more.",
               "bullets": [
                 {
                   "text": "Quit and reopen the app on the host. It republishes a fresh address on launch.",
@@ -1524,13 +1524,6 @@
                   "text": "On the reading device, open the streaming source list and look for a green dot beside the host name.",
                   "sub": [
                     "Grey means the host has not been reached yet — wait a few seconds, or force-quit and reopen the app on the host."
-                  ]
-                },
-                {
-                  "text": "The Windows host does not yet do that automatic cleanup.",
-                  "sub": [
-                    "If a PC host stays invisible, open iCloud Drive → BiblioFuse → Documents from an iPhone or Mac and delete <code>stream_endpoint.json</code> along with any numbered copies, then reopen the host app.",
-                    "Do this from an iPhone or Mac rather than the PC — Windows may hold only an online-only placeholder, so deleting there is unreliable."
                   ]
                 }
               ]
@@ -1832,12 +1825,10 @@
         "note": "Browse shelves placed in the room around you"
       },
       "format-cbz-cbr": {
-        "label": "CBZ, CBR, ZIP & RAR",
-        "note": "The NAS browser reader opens CBZ/ZIP; CBR/RAR need the native apps."
+        "label": "CBZ, CBR, ZIP & RAR"
       },
       "format-epub-pdf-txt": {
-        "label": "EPUB, PDF & TXT",
-        "note": "The NAS browser reader has no PDF support yet."
+        "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
         "label": "iCloud bookshelf",
@@ -1845,7 +1836,7 @@
       },
       "ui-languages": {
         "label": "Localised interface",
-        "note": "11 languages on Apple and Windows; the NAS browser reader is English-only."
+        "note": "11 languages on Apple, Windows and the NAS browser reader."
       }
     },
     "specs": {
@@ -1859,12 +1850,11 @@
           "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
           "androidtv": "CBZ · CBR · RAR · ZIP",
           "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          "nas": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT"
         },
         "notes": {
           "tvos": "Comics only — no text reader",
-          "androidtv": "Comics only — no text reader",
-          "nas": "Browser reader; no PDF yet"
+          "androidtv": "Comics only — no text reader"
         }
       },
       "library-sources": {

@@ -964,11 +964,11 @@
           },
           "lookScroll": {
             "title": "가장자리를 응시하면 스크롤",
-            "body": "위쪽이나 아래쪽 가장자리를 응시하면 페이지가 저절로 스크롤됩니다 — 핀치 동작이 필요 없습니다."
+            "body": "리더 창에서 화면 위쪽이나 아래쪽 가장자리에 시선을 두면 페이지가 저절로 스크롤됩니다 — 핀치는 필요 없습니다."
           },
           "devices": {
             "title": "마우스, 트랙패드 또는 키보드",
-            "body": "Page Down, 스페이스, 스크롤 휠, 클릭 — Mac과 동일하게."
+            "body": "리더 창에서 Page Down, 스페이스, 스크롤 휠, 클릭을 Mac과 똑같이 쓸 수 있습니다."
           },
           "window": {
             "title": "네이티브 윈도우와 공간 읽기",
@@ -1475,7 +1475,7 @@
           "items": [
             {
               "q": "Mac 또는 PC에서 iPhone으로의 스트리밍은 어떻게 작동하나요?",
-              "a": "Mac 또는 PC가 로컬 서버를 실행하고 연결 주소를 iCloud Drive에 기록합니다. iPhone이 자동으로 감지합니다. 두 기기 모두 Tailscale이 켜져 있어야 합니다(집과 원격으로 작동). 한 기기만 Tailscale이 켜져 있으면 연결이 실패합니다. 두 기기를 항상 켜두면 가장 일관된 환경을 얻을 수 있습니다."
+              "a": "집 네트워크에서는 따로 설정할 것이 없습니다. Mac이나 PC의 호스트 앱이 자신을 알리고, 읽는 기기가 이를 찾아 인증서가 고정된 HTTPS로 연결합니다. 외출 중에 읽으려면 호스트가 주소를 iCloud Drive에도 게시하고, 읽는 기기가 Tailscale을 통해 접속합니다. 이 경로에는 두 기기에 같은 iCloud 계정과 실행 중인 Tailscale이 필요합니다. 같은 네트워크에서는 한 호스트의 항목이 두 개 보이고 원하는 것을 고르면 됩니다. 앱이 몰래 바꾸지는 않습니다."
             },
             {
               "q": "스트리밍을 설정하려면 무엇이 필요한가요?",
@@ -1506,7 +1506,7 @@
             },
             {
               "q": "스트리밍 설정은 맞는데 호스트가 나타나지 않습니다 — 무엇을 해 볼까요?",
-              "a": "예전에는 오래된 주소 파일이 흔한 원인이었습니다. 이제 Mac 호스트가 스트리밍을 시작·중지할 때와 주소가 바뀔 때마다 iCloud 충돌 사본까지 스스로 정리하므로, 요즘은 이것이 원인인 경우가 드뭅니다.",
+              "a": "예전에는 오래된 주소 파일이 흔한 원인이었습니다. 이제 Mac 호스트와 Windows 호스트 모두 스트리밍을 시작·중지할 때와 주소가 바뀔 때마다 iCloud 충돌 사본까지 스스로 정리하므로, 요즘은 이것이 원인인 경우가 드뭅니다.",
               "bullets": [
                 {
                   "text": "호스트에서 앱을 종료하고 다시 엽니다. 실행할 때 새 주소를 게시합니다.",
@@ -1516,13 +1516,6 @@
                   "text": "읽는 기기에서 스트리밍 소스 목록을 열고 호스트 이름 옆에 녹색 점이 있는지 확인하세요.",
                   "sub": [
                     "회색이면 아직 호스트에 연결되지 않은 상태입니다. 몇 초 기다리거나, 호스트에서 앱을 강제 종료하고 다시 열어 보세요."
-                  ]
-                },
-                {
-                  "text": "Windows 호스트는 아직 이 자동 정리를 하지 않습니다.",
-                  "sub": [
-                    "PC 호스트가 계속 보이지 않으면 iPhone이나 Mac에서 iCloud Drive → BiblioFuse → Documents를 열어 <code>stream_endpoint.json</code>과 번호가 붙은 사본을 삭제한 뒤, 호스트 앱을 다시 여세요.",
-                    "PC가 아니라 iPhone이나 Mac에서 하세요. Windows에는 파일의 온라인 버전만 있을 수 있어 그곳에서의 삭제는 믿을 수 없습니다."
                   ]
                 }
               ]
@@ -1812,12 +1805,10 @@
         "note": "방 안에 배치된 책장을 둘러보기"
       },
       "format-cbz-cbr": {
-        "label": "CBZ, CBR, ZIP & RAR",
-        "note": "The NAS browser reader opens CBZ/ZIP; CBR/RAR need the native apps."
+        "label": "CBZ, CBR, ZIP & RAR"
       },
       "format-epub-pdf-txt": {
-        "label": "EPUB, PDF & TXT",
-        "note": "The NAS browser reader has no PDF support yet."
+        "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
         "label": "iCloud bookshelf",
@@ -1825,7 +1816,7 @@
       },
       "ui-languages": {
         "label": "Localised interface",
-        "note": "11 languages on Apple and Windows; the NAS browser reader is English-only."
+        "note": "Apple, Windows, NAS 브라우저 리더에서 11개 언어를 지원합니다."
       }
     },
     "specs": {
@@ -1839,12 +1830,11 @@
           "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
           "androidtv": "CBZ · CBR · RAR · ZIP",
           "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          "nas": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT"
         },
         "notes": {
           "tvos": "만화 전용 — 텍스트 리더 없음",
-          "androidtv": "만화 전용 — 텍스트 리더 없음",
-          "nas": "브라우저 리더. PDF는 아직 미지원"
+          "androidtv": "만화 전용 — 텍스트 리더 없음"
         }
       },
       "library-sources": {

@@ -102,3 +102,55 @@ Search Console shows the largest uncovered demand is EPUB-on-iPhone (~250 impres
 zero clicks), CBZ/CBR format explainers, and DRM — none of which the guide mentions —
 while streaming and visionOS/TTS take 8 of the 11 slots. Rebuilding around researched
 demand is tracked separately.
+
+## Step 2 wave two (2026-09-10)
+
+### I missed a fifth stale streaming answer
+The Step 0 pass corrected four streaming answers and left **"How does streaming from Mac
+or PC to iPhone work?"** untouched. It still said *"Both devices must have Tailscale on…
+If only one device has Tailscale on, the connection will fail"* — so `/guide/` contained
+that claim and the corrected *"Do I need Tailscale to stream at home? No."* on the same
+page, directly contradicting each other. Rewritten: LAN needs no configuration, the
+iCloud + Tailscale path is for away-from-home, and both entries appear for one host on the
+same network with no automatic switching. **When correcting a claim, grep the whole page
+for the same claim** — fixing four of five is worse than fixing none, because the page
+then argues with itself.
+
+### The Windows stale-file claim was itself stale, and two agents disagreed
+The Step 0 answer told PC users the Windows host does not auto-clear stale endpoint files
+and they must delete them by hand. That came from a note in the **iOS** repo's streaming
+doc. The Windows source disagrees: `ICloudEndpointWriter.CleanupStaleArtifacts` runs
+before every write and is called on stream start, stop and refresh. The manual instruction
+is gone and the answer now credits both hosts.
+
+Worth recording how this surfaced: the Apple agent re-verified "Mac sweeps, Windows does
+not" and reported it holding up, because it verified the iOS repo's own claim about
+Windows. The Windows agent read the Windows source and found the opposite. **A repo is
+authoritative about itself and nothing else** — cross-platform claims must be checked in
+the platform that implements them.
+
+### visionOS input claims were true of the wrong surface
+"Stare edge to scroll — no pinch needed" and mouse/trackpad/keyboard support hold for the
+flat library window and reader. The three immersive spatial layouts still require a pinch,
+and a hardware pointer on device is explicitly not a designed path there. Both strings are
+now scoped to the reader window.
+
+### NAS browser reader — three of four limits were false
+`/features/` claimed the NAS browser reader has no PDF, cannot open CBR/RAR, and is
+English-only. Verified against the NAS repo: PDF shipped 2026-08-10 (a raster route for
+scanned PDFs, a vector fallback for text ones); CBR/RAR go through the same page handler
+as CBZ/ZIP and the catalog treats them identically; the browser UI has shipped 11
+languages with a per-browser selector since 2026-07-26. Only **no TTS** was correct — no
+TTS code exists in that repo at all.
+
+Two of those rows also contradicted the same file's own SPECS rows, which already listed
+CBR/RAR and "11 languages" for NAS — the same defect shape as `icloud-bookshelf`.
+
+### Still to act on
+- Komga native position sync is implemented but its own code comment marks it unvalidated
+  against a live server, unlike Kavita's. Not a site claim to fix, but the likely source of
+  any Komga sync complaint.
+- `bibliofuse_iosv2`'s `docs/features/purchases.md` still describes the retired 25-book
+  visionOS iCloud cap. That is a sibling-repo doc, not this site.
+- The `controller` row is labelled "Game controller + custom bindings" while Windows
+  bindings are fixed, not remappable. Needs the Apple side checked before rewording.

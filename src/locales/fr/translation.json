@@ -964,11 +964,11 @@
           },
           "lookScroll": {
             "title": "Regardez le bord pour défiler",
-            "body": "Posez votre regard près du bord haut ou bas et la page défile toute seule — sans pincement."
+            "body": "Dans la fenêtre de lecture, posez le regard près du bord supérieur ou inférieur et la page défile d'elle-même — sans pincement."
           },
           "devices": {
             "title": "Souris, trackpad ou clavier",
-            "body": "Page suivante, Espace, molette ou clic, comme sur Mac."
+            "body": "Page suivante, Espace, molette ou clic dans la fenêtre de lecture, comme sur Mac."
           },
           "window": {
             "title": "Fenêtre native et lecture spatiale",
@@ -1475,7 +1475,7 @@
           "items": [
             {
               "q": "Comment fonctionne le streaming de Mac ou PC vers iPhone ?",
-              "a": "Votre Mac ou PC exécute un serveur local et écrit l'adresse de connexion dans iCloud Drive. Votre iPhone la détecte automatiquement. Les deux appareils doivent avoir Tailscale activé (fonctionne à la maison et à distance). Si seulement un appareil a Tailscale activé, la connexion échouera. Garder les deux appareils toujours activés donne l'expérience la plus cohérente."
+              "a": "Sur votre réseau domestique, il n'y a rien à configurer : l'app hôte de votre Mac ou PC s'annonce et l'appareil de lecture la trouve, en se connectant en HTTPS avec un certificat épinglé. Pour lire en déplacement, l'hôte publie aussi son adresse dans votre iCloud Drive et l'appareil de lecture l'atteint via Tailscale — cette voie exige le même compte iCloud et Tailscale actif sur les deux. Sur le même réseau, les deux entrées d'un même hôte apparaissent et vous choisissez celle que vous voulez : l'app ne bascule jamais de l'une à l'autre à votre insu."
             },
             {
               "q": "De quoi ai-je besoin pour configurer la diffusion ?",
@@ -1506,7 +1506,7 @@
             },
             {
               "q": "La diffusion est bien configurée mais l'hôte n'apparaît pas — que puis-je essayer ?",
-              "a": "Des fichiers d'adresse obsolètes en étaient la cause habituelle. L'hôte Mac les efface maintenant de lui-même chaque fois que la diffusion démarre, s'arrête ou change d'adresse — y compris les copies en conflit iCloud — ce n'est donc plus que rarement le problème.",
+              "a": "Des fichiers d'adresse obsolètes en étaient la cause habituelle. Les hôtes Mac et Windows les effacent maintenant d'eux-mêmes chaque fois que la diffusion démarre, s'arrête ou change d'adresse — y compris les copies en conflit iCloud — ce n'est donc plus que rarement le problème.",
               "bullets": [
                 {
                   "text": "Quittez et relancez l'app sur l'hôte. Elle publie une adresse fraîche au démarrage.",
@@ -1516,13 +1516,6 @@
                   "text": "Sur l'appareil de lecture, ouvrez la liste des sources de diffusion et cherchez un point vert à côté du nom de l'hôte.",
                   "sub": [
                     "Gris signifie que l'hôte n'a pas encore été joint — attendez quelques secondes, ou forcez la fermeture puis relancez l'app sur l'hôte."
-                  ]
-                },
-                {
-                  "text": "L'hôte Windows ne fait pas encore ce nettoyage automatique.",
-                  "sub": [
-                    "Si un hôte PC reste invisible, ouvrez iCloud Drive → BiblioFuse → Documents depuis un iPhone ou un Mac et supprimez <code>stream_endpoint.json</code> ainsi que toute copie numérotée, puis relancez l'app de l'hôte.",
-                    "Faites-le depuis un iPhone ou un Mac plutôt que depuis le PC : Windows peut ne conserver qu'une version en ligne du fichier, la suppression y est donc peu fiable."
                   ]
                 }
               ]
@@ -1812,12 +1805,10 @@
         "note": "Parcourez des étagères placées dans la pièce"
       },
       "format-cbz-cbr": {
-        "label": "CBZ, CBR, ZIP & RAR",
-        "note": "The NAS browser reader opens CBZ/ZIP; CBR/RAR need the native apps."
+        "label": "CBZ, CBR, ZIP & RAR"
       },
       "format-epub-pdf-txt": {
-        "label": "EPUB, PDF & TXT",
-        "note": "The NAS browser reader has no PDF support yet."
+        "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
         "label": "iCloud bookshelf",
@@ -1825,7 +1816,7 @@
       },
       "ui-languages": {
         "label": "Localised interface",
-        "note": "11 languages on Apple and Windows; the NAS browser reader is English-only."
+        "note": "11 langues sur Apple, Windows et le lecteur web du NAS."
       }
     },
     "specs": {
@@ -1839,12 +1830,11 @@
           "android": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
           "androidtv": "CBZ · CBR · RAR · ZIP",
           "windows": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT",
-          "nas": "EPUB · CBZ · CBR · RAR · ZIP · TXT"
+          "nas": "EPUB · PDF · CBZ · CBR · RAR · ZIP · TXT"
         },
         "notes": {
           "tvos": "BD uniquement — pas de lecteur de texte",
-          "androidtv": "BD uniquement — pas de lecteur de texte",
-          "nas": "Lecteur navigateur ; pas encore de PDF"
+          "androidtv": "BD uniquement — pas de lecteur de texte"
         }
       },
       "library-sources": {
