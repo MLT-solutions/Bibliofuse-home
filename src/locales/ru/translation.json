@@ -279,20 +279,24 @@
           {
             "q": "Приложения бесплатные?",
             "a": "Большинство приложений BiblioFuse можно попробовать бесплатно или использовать с бесплатными лимитами, с optional платными улучшениями для активного использования. Актуальные цены указаны на страницах магазинов."
+          },
+          {
+            "q": "Одна покупка охватывает все платформы?",
+            "a": "Нет. iOS + Mac — это одна универсальная покупка: один платёж охватывает iPhone, iPad, Mac и Apple Vision Pro. Reader для Android, Reader для ПК и инструменты для ПК продаются отдельно."
           }
         ]
       },
       "secondHero": {
-        "eyebrow": "New this release",
-        "titleA": "Read manga in your language,",
-        "titleB": "on the page.",
-        "desc": "Live comic and manga translation renders the text in place while you read — no export step, no second app. Pair it with native Kavita and Komga libraries or any OPDS catalogue and your whole collection travels with you.",
-        "cta": "See what is new",
+        "eyebrow": "Трансляция и синхронизация",
+        "titleA": "Вся ваша библиотека —",
+        "titleB": "без загрузок.",
+        "desc": "Оставьте коллекцию там, где она уже есть: в хост-приложении BiblioFuse на Mac, ПК или NAS, в вашем iCloud Drive или на сервере OPDS, Komga либо Kavita — и читайте её постранично. Место, на котором вы остановились, переходит с устройства на устройство.",
+        "cta": "Посмотреть, что и куда транслируется",
         "bullets": [
-          "Live comic & manga translation, in place as you read (Pro)",
-          "Native Komga & Kavita API, with position and bookmark sync (Pro)",
-          "OPDS 1.x and OPDS-PSE streaming from any catalogue (Pro)",
-          "Vertical Japanese, dual-page spreads and page-curl turns"
+          "Прямое подключение к OPDS 1.x, OPDS-PSE, Komga или Kavita (Pro)",
+          "Трансляция из хост-приложения BiblioFuse на Mac, ПК, Synology или Docker",
+          "Чтение прямо из вашего iCloud Drive — книги загружаются при открытии",
+          "Позиция чтения и закладки синхронизируются между устройствами"
         ]
       },
       "toolsStrip": {
@@ -300,6 +304,19 @@
         "title": "Fix the file before you read it.",
         "desc": "Shrink an archive, convert a PDF, compress an EPUB — in the browser, on your device, nothing uploaded.",
         "cta": "All tools"
+      },
+      "thirdHero": {
+        "eyebrow": "Новое в этом выпуске",
+        "titleA": "Читайте мангу на своём языке —",
+        "titleB": "прямо на странице.",
+        "desc": "Живой перевод комиксов и манги показывает текст на своём месте прямо во время чтения — без экспорта и без второго приложения. Добавьте к этому нативные библиотеки Kavita и Komga или любой каталог OPDS, и вся коллекция будет с вами.",
+        "cta": "Посмотреть, что нового",
+        "bullets": [
+          "Живой перевод комиксов и манги — прямо на странице во время чтения (Pro)",
+          "Нативный API Komga и Kavita с синхронизацией позиции и закладок (Pro)",
+          "Трансляция OPDS 1.x и OPDS-PSE из любого каталога (Pro)",
+          "Вертикальный японский, двойные развороты и перелистывание с изгибом страницы"
+        ]
       }
     },
     "productFamily": {
@@ -544,7 +561,9 @@
       "logo": "Логотип BiblioFuse",
       "appStore": "Скачать в App Store",
       "googlePlay": "Скачать в Google Play",
-      "microsoftStore": "Скачать из Microsoft"
+      "microsoftStore": "Скачать из Microsoft",
+      "heroStreaming": "Экран «Расположения» BiblioFuse на iPhone — библиотеки на устройстве, в iCloud Drive и на хосте Mac",
+      "heroTranslation": "Панель живого перевода BiblioFuse поверх страницы комикса на iPhone"
     },
     "seo": {
       "homeTitle": "BiblioFuse Reader: приватная библиотека, 5G-стриминг Mac и инструменты",
@@ -922,8 +941,6 @@
       }
     },
     "comicReaderPage": {
-      "faqTitle": "Частые вопросы",
-      "faq": [],
       "vision": {
         "eyebrow": "Теперь на Apple Vision Pro",
         "badge": "Нативное приложение visionOS",
@@ -967,6 +984,46 @@
         "imageAltModes": "BiblioFuse на Apple Vision Pro с макетами библиотеки: Пространственные полки, Вид сеткой и Наклонная стена",
         "imageAltReading": "Чтение комикса в BiblioFuse на Apple Vision Pro с отслеживанием глаз и вариантами способов ввода"
       },
+      "appletv": {
+        "eyebrow": "Также на Apple TV",
+        "badge": "Нативное приложение для tvOS",
+        "title": "Просто с первой страницы.",
+        "desc": "Приложение для Apple TV листается и читается привычными жестами пульта. Оно транслирует библиотеку с Mac или ПК в той же сети, поэтому на приставке ничего не хранится, а прогресс возвращается на остальные устройства.",
+        "imageAlt": "BiblioFuse на Apple TV: полки, сведения о книге и чтение во весь экран, со схемой управления Siri Remote",
+        "steps": [
+          {
+            "title": "Просмотрите полки",
+            "body": "«Главная», «Библиотека», «Поиск» и «Настройки» — с расчётом на большой экран."
+          },
+          {
+            "title": "Выберите книгу",
+            "body": "Откройте её и продолжите точно с того места, где остановились."
+          },
+          {
+            "title": "Прокручивайте и читайте",
+            "body": "Непрерывное чтение с плавной прокруткой и простым управлением."
+          }
+        ],
+        "features": [
+          {
+            "title": "Схема Siri Remote",
+            "body": "Свайп — перемещение фокуса, нажатие — открыть, долгое нажатие — меню читалки, вверх и вниз — прокрутка на три четверти экрана."
+          },
+          {
+            "title": "Автопрокрутка",
+            "body": "Задайте темп от половины секунды до 30 секунд на страницу и включайте или ставьте на паузу одним нажатием."
+          },
+          {
+            "title": "Настройка ширины",
+            "body": "Меняйте ширину страницы от 50 % до 100 %, чтобы на экран влезали и развороты, и высокие страницы."
+          },
+          {
+            "title": "Блокировка приложения",
+            "body": "Защитите библиотеку на общем телевизоре четырёхзначным PIN-кодом."
+          }
+        ],
+        "lanNote": "Apple TV читает только по локальной сети — трансляция идёт с Mac или ПК в той же сети Wi-Fi. В tvOS нет доступа к iCloud Drive, а путь через Tailscale реализован, но пока отключён, поэтому трансляция вне дома на телевизоре ещё недоступна."
+      },
       "usageGuide": {
         "eyebrow": "Пять способов читать",
         "title": "Как использовать BiblioFuse Comic Reader?",
@@ -985,7 +1042,7 @@
           },
           "stream": {
             "q": "Могу ли я получить доступ ко всей библиотеке, не заполняя память телефона?",
-            "a": "Да — транслируйте с хоста Mac, PC или Synology NAS на iPhone, iPad, visionOS или Android. Подключение происходит автоматически через домашний Wi-Fi, а Tailscale по желанию обеспечивает доступ вне дома, при этом на устройстве для чтения ничего не сохраняется постоянно.",
+            "a": "Да — транслируйте с хоста Mac, PC или Synology NAS на iPhone, iPad, visionOS или Android. Подключение происходит автоматически через домашний Wi-Fi, а Tailscale по желанию обеспечивает доступ вне дома, при этом на устройстве для чтения ничего не сохраняется постоянно. Можно также подключить приложение напрямую к вашему серверу OPDS, Komga или Kavita — та же постраничная трансляция, без полной загрузки файлов.",
             "imageAlt": "Инфографика: транслируйте библиотеку с Mac, PC или Synology, не храня книги на телефоне"
           },
           "tv": {
@@ -1011,32 +1068,28 @@
             "name": "BiblioFuse Reader iOS / macOS",
             "subtitle": "iPhone · iPad · Mac · Vision Pro · Apple TV",
             "badge": "Универсальная покупка",
-            "tint": "blue",
-            "href": "https://apps.apple.com/app/id6758330093"
+            "tint": "blue"
           },
           {
             "key": "pc",
             "name": "BiblioFuse Reader PC",
             "subtitle": "Windows",
             "badge": "Microsoft Store",
-            "tint": "orange",
-            "href": "https://apps.microsoft.com/detail/9n1lnmm3f7h9"
+            "tint": "orange"
           },
           {
             "key": "android",
             "name": "BiblioFuse Reader Android",
             "subtitle": "Телефон · Планшет · Android TV",
             "badge": "Редакция",
-            "tint": "teal",
-            "href": "https://play.google.com/store/apps/details?id=com.mlogictech.bibliofuse"
+            "tint": "teal"
           },
           {
             "key": "nas",
             "name": "BiblioFuse NAS",
             "subtitle": "Docker · Synology",
             "badge": "Самостоятельный хостинг · Бесплатно",
-            "tint": "violet",
-            "href": "https://github.com/MLT-solutions/bibliofuse-nas-distribution"
+            "tint": "violet"
           }
         ]
       }

@@ -9,15 +9,70 @@ import ReaderFamilyGuide from '../components/ReaderFamilyGuide';
 const appStoreUrl = 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093';
 const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.MLOGICTECH.bibliofusereader&hl=en-US&ah=423jBOeRoug68zOF2xwCeFuKVQQ';
 const bibliofusePcUrl = 'https://apps.microsoft.com/store/detail/9N77MZ509ML2';
-// Mirrors HOSTS.docker/synology.appLink in ReaderFamilyGuide.jsx — keep in sync.
-const dockerUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution';
-const synologyUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution/releases';
+const nasRepoUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution';
+// The hero's Docker and Synology badges point at the two install guides rather
+// than at the repo root, which is what people actually need first. The repo
+// root and the releases list are reachable from the "NAS on GitHub" badge and
+// from HOSTS.docker/synology.appLink in ReaderFamilyGuide.jsx — those two are
+// deliberately different targets now, so they are no longer kept in sync.
+//
+// Both guides are translated in the repo as docs/<guide>.<lang>.md, with
+// English at docs/<guide>.md and Chinese at docs/<guide>.zh-CN.md. Verified
+// against the repo's docs/ listing on 2026-09-10 — every site locale except en
+// has a file. If a locale is ever dropped upstream this silently 404s, so
+// re-check the listing before adding a locale here.
+const NAS_DOC_LOCALES = { es: 'es', fr: 'fr', nl: 'nl', pt: 'pt', ru: 'ru', zh: 'zh-CN', ja: 'ja', ko: 'ko', id: 'id', ms: 'ms' };
+function nasDocUrl(guide, lang) {
+  const suffix = NAS_DOC_LOCALES[lang] ? `.${NAS_DOC_LOCALES[lang]}` : '';
+  return `${nasRepoUrl}/blob/main/docs/${guide}${suffix}.md`;
+}
+// Invite generated 2026-09-10. NOTE: this one carries an expiry of
+// 2026-10-10 — replace it with a never-expiring invite from the server's
+// Invites settings, or this button 404s a month from now.
+const discordUrl = 'https://discord.gg/Tk9cEA449';
 const imageBase = '/image/offline-apps/bibliofuse';
 const featureMediaBase = '/image/comicreader/feature-summary';
 
+// The four outbound "where do I get the host / where do I ask for help" links
+// under the store badges. `docker` and `synology` use stroke icons; `github`
+// and `discord` use their filled brand marks, hence the two render paths.
+const HOST_BADGES = {
+  docker: {
+    sub: 'Self-host free',
+    label: 'Docker',
+    icon: (
+      <>
+        <rect x="3" y="3" width="7.5" height="7.5" rx="1.2" />
+        <rect x="13.5" y="3" width="7.5" height="7.5" rx="1.2" />
+        <rect x="3" y="13.5" width="7.5" height="7.5" rx="1.2" />
+        <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.2" />
+      </>
+    ),
+  },
+  synology: {
+    sub: 'Package Center',
+    label: 'Synology',
+    icon: (
+      <>
+        <rect x="5" y="2.5" width="14" height="19" rx="1.8" />
+        <path d="M8 7h8M8 12h8M8 17h8" />
+      </>
+    ),
+  },
+  github: {
+    sub: 'Source & releases',
+    label: 'NAS on GitHub',
+    filled: 'M12 .5a11.5 11.5 0 00-3.64 22.42c.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 015.74 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.5 11.5 0 0012 .5z',
+  },
+  discord: {
+    sub: 'Community & support',
+    label: 'Discord',
+    filled: 'M20.32 4.57A19.8 19.8 0 0015.43 3l-.36.76a14.7 14.7 0 014.2 1.42 13.9 13.9 0 00-11.7 0 14.6 14.6 0 014.2-1.42L11.41 3a19.8 19.8 0 00-4.89 1.57C3.4 9.3 2.56 13.96 2.98 18.55a19.7 19.7 0 006.02 3.05l.79-1.24a12.9 12.9 0 01-2.15-1.04l.53-.42a14.1 14.1 0 0011.5 0l.53.42a12.9 12.9 0 01-2.16 1.05l.79 1.23a19.7 19.7 0 006.03-3.05c.5-5.31-.85-9.93-3.54-13.98zM8.9 15.67c-1.16 0-2.11-1.06-2.11-2.37 0-1.31.93-2.38 2.11-2.38 1.19 0 2.14 1.08 2.12 2.38 0 1.31-.94 2.37-2.12 2.37zm6.2 0c-1.16 0-2.11-1.06-2.11-2.37 0-1.31.93-2.38 2.11-2.38 1.19 0 2.14 1.08 2.12 2.38 0 1.31-.93 2.37-2.12 2.37z',
+  },
+};
+
 function HostBadge({ type, href }) {
-  const label = type === 'docker' ? 'Docker' : 'Synology';
-  const sub = type === 'docker' ? 'Self-host free' : 'Package Center';
+  const { sub, label, icon, filled } = HOST_BADGES[type];
   return (
     <a
       href={href}
@@ -26,21 +81,15 @@ function HostBadge({ type, href }) {
       className="inline-flex h-12 items-center gap-2.5 rounded-xl border border-slate-300 bg-white px-4 text-left transition hover:-translate-y-0.5 hover:border-slate-400"
     >
       <span className="grid h-7 w-7 flex-shrink-0 place-items-center rounded-lg bg-slate-100 text-slate-600">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          {type === 'docker' ? (
-            <>
-              <rect x="3" y="3" width="7.5" height="7.5" rx="1.2" />
-              <rect x="13.5" y="3" width="7.5" height="7.5" rx="1.2" />
-              <rect x="3" y="13.5" width="7.5" height="7.5" rx="1.2" />
-              <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.2" />
-            </>
-          ) : (
-            <>
-              <rect x="5" y="2.5" width="14" height="19" rx="1.8" />
-              <path d="M8 7h8M8 12h8M8 17h8" />
-            </>
-          )}
-        </svg>
+        {filled ? (
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d={filled} />
+          </svg>
+        ) : (
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            {icon}
+          </svg>
+        )}
       </span>
       <span className="leading-tight">
         <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">{sub}</span>
@@ -110,10 +159,22 @@ function renderLocalizedTableCell(cell) {
 // with status and since-dates), so the table was mostly duplication. What it did uniquely
 // was carry the purchase model per edition — that is what survives here, plus a link out
 // to the matrix for the per-feature detail.
+// Store URLs live here, not in the translation files. They used to be an `href` on each
+// item in all 11 locale JSONs, which meant 11 copies of every link and no way to notice
+// when one rotted: on 2026-09-10 the PC card was returning 410 and the Android card 404
+// (a stale Store ID and a wrong package name) while the same two links in the hero above
+// were fine. One constant per store, shared with the hero, is the fix.
+const EDITION_HREFS = {
+  apple: appStoreUrl,
+  pc: bibliofusePcUrl,
+  android: playStoreUrl,
+  nas: nasRepoUrl,
+};
+
 function EditionChooser({ lang }) {
   const { t } = useTranslation();
   const e = t('redesign.comicReaderPage.editions', { returnObjects: true });
-  const items = Array.isArray(e.items) ? e.items : [];
+  const items = (Array.isArray(e.items) ? e.items : []).filter((it) => EDITION_HREFS[it.key]);
   const tints = {
     blue: 'border-blue-200 bg-blue-50/60',
     orange: 'border-orange-200 bg-orange-50/60',
@@ -132,7 +193,7 @@ function EditionChooser({ lang }) {
           {items.map((it) => (
             <a
               key={it.key}
-              href={it.href}
+              href={EDITION_HREFS[it.key]}
               target="_blank"
               rel="noopener noreferrer"
               className={`group flex flex-col rounded-2xl border p-5 transition hover:-translate-y-0.5 hover:shadow-lg ${tints[it.tint] || tints.blue}`}
@@ -420,6 +481,86 @@ function VisionProSection() {
   );
 }
 
+// Apple TV, added 2026-09-10. Kept lighter than VisionProSection above it: the artwork is
+// a single wide infographic that already carries the Siri Remote map and the feature
+// legend, so the text beside it says the four things the picture cannot — and the LAN-only
+// caveat, which matters because someone will otherwise buy expecting to read away from
+// home. That limit is real and documented: tvOS has no iCloud Documents entitlement and
+// the Tailscale path ships disabled (see ReaderFamilyGuide.jsx's CLIENTS.appletv note).
+function AppleTvSection() {
+  const { t } = useTranslation();
+  const a = t('redesign.comicReaderPage.appletv', { returnObjects: true });
+  const steps = Array.isArray(a.steps) ? a.steps : [];
+  const features = Array.isArray(a.features) ? a.features : [];
+  const icons = [
+    <><rect x="3" y="4" width="18" height="12" rx="1.6" /><path d="M8 20h8M12 16v4" /></>,
+    <><path d="M12 20v-9" /><path d="M8.5 14.5L12 11l3.5 3.5" /><circle cx="12" cy="4.5" r="1.6" /></>,
+    <><path d="M4 7h16M4 12h10M4 17h16" /></>,
+    <><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8.5 11V8a3.5 3.5 0 017 0v3" /></>,
+  ];
+
+  return (
+    <section id="apple-tv" className="relative overflow-hidden bg-[#070b16] py-20 sm:py-24">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_12%,rgba(139,92,246,0.20),transparent_42%),radial-gradient(circle_at_10%_85%,rgba(45,124,246,0.16),transparent_38%)]" />
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto mb-12 max-w-3xl text-center">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-violet-400/30 bg-violet-500/10 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-violet-200">
+            <span className="h-1.5 w-1.5 rounded-full bg-violet-400" />
+            {a.eyebrow}
+          </div>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-white">{a.title}</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-slate-300">{a.desc}</p>
+          <div className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-[11px] font-black uppercase tracking-wider text-white">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v11H4z" opacity="0.7" /><path d="M9 20l3-3 3 3z" /></svg>
+            {a.badge}
+          </div>
+        </div>
+
+        <div className="overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
+          <img
+            src="/image/comicreader/appletv/controls.jpg"
+            alt={a.imageAlt}
+            width="2000"
+            height="1125"
+            loading="lazy"
+            className="block w-full"
+          />
+        </div>
+
+        <ol className="mt-8 grid gap-5 sm:grid-cols-3">
+          {steps.map((step, i) => (
+            <li key={step.title} className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+              <span className="mb-3 grid h-8 w-8 place-items-center rounded-full bg-violet-500/20 text-sm font-black text-violet-200">
+                {i + 1}
+              </span>
+              <h3 className="mb-1.5 text-base font-black text-white">{step.title}</h3>
+              <p className="text-sm leading-relaxed text-slate-400">{step.body}</p>
+            </li>
+          ))}
+        </ol>
+
+        <div className="mt-10 grid gap-5 sm:grid-cols-2">
+          {features.map((f, i) => (
+            <div key={f.title} className="flex items-start gap-3.5 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <span className="mt-0.5 grid h-9 w-9 flex-shrink-0 place-items-center rounded-xl bg-white/[0.06] text-teal-300">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">{icons[i] || icons[0]}</svg>
+              </span>
+              <span className="leading-snug">
+                <strong className="block text-sm font-black text-white">{f.title}</strong>
+                <span className="mt-1 block text-sm leading-relaxed text-slate-400">{f.body}</span>
+              </span>
+            </div>
+          ))}
+        </div>
+
+        <p className="mx-auto mt-8 max-w-3xl border-l-2 border-violet-400/40 pl-3.5 text-sm leading-relaxed text-slate-400">
+          {a.lanNote}
+        </p>
+      </div>
+    </section>
+  );
+}
+
 const USAGE_GUIDE_ITEMS = [
   {
     key: 'mobile',
@@ -496,78 +637,18 @@ function UsageGuide() {
   );
 }
 
-function stripHtml(value) {
-  return String(value || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
-}
-
-function faqToPlainText(item) {
-  const parts = [stripHtml(item.a)];
-  if (Array.isArray(item.bullets)) {
-    item.bullets.forEach((bullet) => {
-      parts.push(stripHtml(bullet.text));
-      if (Array.isArray(bullet.sub)) {
-        bullet.sub.forEach((sub) => parts.push(stripHtml(sub)));
-      }
-    });
-  }
-  return parts.filter(Boolean).join(' ');
-}
-
-function RichText({ text, className }) {
-  return (
-    <span
-      className={className}
-      dangerouslySetInnerHTML={{ __html: text }}
-    />
-  );
-}
-
-function FaqAnswer({ item, lang }) {
-  const linkHref = item.link?.href?.startsWith('/')
-    ? `/${lang}${item.link.href.endsWith('/') ? item.link.href : `${item.link.href}/`}`
-    : item.link?.href;
-
-  return (
-    <div className="px-5 pb-5 text-sm leading-relaxed text-slate-600">
-      <p>
-        <RichText text={item.a} />
-      </p>
-      {item.link && (
-        <Link to={linkHref} className="mt-3 inline-flex font-semibold text-blue-600 hover:text-blue-700">
-          {item.link.label}
-        </Link>
-      )}
-      {Array.isArray(item.bullets) && item.bullets.length > 0 && (
-        <ul className="mt-4 space-y-3">
-          {item.bullets.map((bullet) => (
-            <li key={bullet.text} className="rounded-xl bg-slate-50 px-4 py-3">
-              <RichText text={bullet.text} className="font-semibold text-slate-800" />
-              {Array.isArray(bullet.sub) && bullet.sub.length > 0 && (
-                <ul className="mt-2 list-disc space-y-1.5 pl-5 text-slate-600">
-                  {bullet.sub.map((sub) => (
-                    <li key={sub}>
-                      <RichText text={sub} />
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-}
-
 const ComicReader = () => {
   const { t } = useTranslation();
   const { lang = 'en' } = useParams();
-  const faqItemsRaw = t('redesign.comicReaderPage.faq', { returnObjects: true });
-  const faqItems = Array.isArray(faqItemsRaw) ? faqItemsRaw : [];
-  const faqItemsForSchema = faqItems.map((item) => ({
-    q: item.q,
-    a: faqToPlainText(item),
-  }));
+  // The FAQPage graph is built from the "Five ways to read" answers (UsageGuide)
+  // — they are the only Q&A left on this page. The deeper setup FAQs moved to
+  // /guide/ and the purchase question to the homepage FAQ on 2026-09-10, so
+  // nothing here would otherwise be marked up.
+  const usageItems = t('redesign.comicReaderPage.usageGuide.items', { returnObjects: true });
+  const faqItemsForSchema = USAGE_GUIDE_ITEMS
+    .map(({ key }) => usageItems?.[key])
+    .filter((item) => item?.q && item?.a)
+    .map((item) => ({ q: item.q, a: item.a }));
 
   return (
     <div className="overflow-x-hidden bg-white">
@@ -586,6 +667,7 @@ const ComicReader = () => {
           t('redesign.readerSection.features.streaming.title'),
           t('redesign.toolsHighlight.title'),
           t('redesign.comicReaderPage.vision.title'),
+          t('redesign.comicReaderPage.appletv.title'),
           t('redesign.readerSection.bullet1'),
           t('redesign.readerSection.bullet2'),
           t('redesign.readerSection.bullet3'),
@@ -623,9 +705,13 @@ const ComicReader = () => {
             <div className="mt-3">
               <div className="mb-2 text-xs font-semibold text-slate-500">Or self-host on a NAS:</div>
               <div className="flex flex-wrap items-center gap-3">
-                <HostBadge type="docker" href={dockerUrl} />
-                <HostBadge type="synology" href={synologyUrl} />
+                <HostBadge type="docker" href={nasDocUrl('docker-install', lang)} />
+                <HostBadge type="synology" href={nasDocUrl('synology-package', lang)} />
+                <HostBadge type="github" href={nasRepoUrl} />
               </div>
+            </div>
+            <div className="mt-3 flex flex-wrap items-center gap-3">
+              <HostBadge type="discord" href={discordUrl} />
             </div>
             <DevicePills devices={['iphone', 'ipad', 'mac', 'visionpro', 'appletv', 'android', 'windows', 'docker', 'synology']} tone="light" align="start" className="mt-5" />
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-slate-600">
@@ -711,51 +797,18 @@ const ComicReader = () => {
 
       <VisionProSection />
 
+      <AppleTvSection />
+
       <EditionChooser lang={lang} />
 
       <UsageGuide />
 
-      <ReaderFamilyGuide />
+      <ReaderFamilyGuide lang={lang} />
 
-      <section className="bg-white py-20 sm:py-24">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-10 text-center">
-            <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-blue-600">FAQ</div>
-            <h2 className="text-[clamp(1.8rem,3.5vw,2.6rem)] font-black tracking-tight text-slate-950">
-              {t('redesign.comicReaderPage.faqTitle', 'Frequently Asked Questions')}
-            </h2>
-          </div>
-          <div className="space-y-4">
-            {faqItems.map((item) => (
-              <details key={item.q} className="group rounded-2xl border border-slate-200 bg-white shadow-sm">
-                <summary className="flex cursor-pointer list-none items-start justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900">
-                  {item.q}
-                  <svg className="flex-shrink-0 transition-transform group-open:rotate-180" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                </summary>
-                <FaqAnswer item={item} lang={lang} />
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="flex justify-center gap-5 py-6 text-xs text-slate-400">
-        <Link to={`/${lang}/changelog/`} className="hover:text-slate-700">Changelog</Link>
-        <Link to={`/${lang}/privacy/`} className="hover:text-slate-700">Privacy Policy</Link>
-      </div>
-
-      <section className="bg-white py-14">
-        <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
-          <Link
-            to={`/${lang}/`}
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-[#f7f9fe] px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:shadow-md"
-          >
-            Back to home
-          </Link>
-        </div>
-      </section>
+      {/* The hand-rolled Changelog/Privacy row and "Back to home" button that
+          used to sit here were this page's stand-in for a footer, because
+          AppLayout deliberately withheld the real one. It no longer does, so
+          both were dropped rather than duplicated above it. */}
 
       <StickyDownloadBar
         logo="/image/bibliofuse-logo.png"

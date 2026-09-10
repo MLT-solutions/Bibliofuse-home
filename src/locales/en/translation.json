@@ -349,10 +349,33 @@
           {
             "q": "Are the apps free?",
             "a": "Most BiblioFuse apps are free to try or have free limits, with optional paid upgrades for heavier use. Store pages show the current pricing for each platform."
+          },
+          {
+            "q": "Does one purchase cover all platforms?",
+            "a": "No. iOS + Mac is a single universal purchase — one payment covers iPhone, iPad, Mac, and Apple Vision Pro. The Android Reader, PC Reader, and PC tools are each sold separately."
           }
         ]
       },
       "secondHero": {
+        "eyebrow": "Streaming & sync",
+        "titleA": "Your whole library,",
+        "titleB": "nothing downloaded.",
+        "desc": "Leave the collection where it already lives — the BiblioFuse host app on your Mac, PC or NAS, your own iCloud Drive, or an OPDS, Komga or Kavita server — and read it a page at a time. Your reading position follows you from device to device.",
+        "cta": "See what streams where",
+        "bullets": [
+          "Connect straight to OPDS 1.x, OPDS-PSE, Komga or Kavita (Pro)",
+          "Stream from the BiblioFuse host app on Mac, PC, Synology or Docker",
+          "Read from your own iCloud Drive — books load when you open them",
+          "Reading position and bookmarks stay in sync across your devices"
+        ]
+      },
+      "toolsStrip": {
+        "eyebrow": "Free browser tools",
+        "title": "Fix the file before you read it.",
+        "desc": "Shrink an archive, convert a PDF, compress an EPUB — in the browser, on your device, nothing uploaded.",
+        "cta": "All tools"
+      },
+      "thirdHero": {
         "eyebrow": "New this release",
         "titleA": "Read manga in your language,",
         "titleB": "on the page.",
@@ -364,12 +387,6 @@
           "OPDS 1.x and OPDS-PSE streaming from any catalogue (Pro)",
           "Vertical Japanese, dual-page spreads and page-curl turns"
         ]
-      },
-      "toolsStrip": {
-        "eyebrow": "Free browser tools",
-        "title": "Fix the file before you read it.",
-        "desc": "Shrink an archive, convert a PDF, compress an EPUB — in the browser, on your device, nothing uploaded.",
-        "cta": "All tools"
       }
     },
     "productFamily": {
@@ -674,7 +691,9 @@
       "logo": "BiblioFuse logo",
       "appStore": "Download on the App Store",
       "googlePlay": "Get it on Google Play",
-      "microsoftStore": "Get it from Microsoft"
+      "microsoftStore": "Get it from Microsoft",
+      "heroStreaming": "BiblioFuse Locations screen on iPhone — libraries on the device, in iCloud Drive and on a Mac host",
+      "heroTranslation": "BiblioFuse live translation panel over a comic page on iPhone"
     },
     "changelog": {
       "eyebrow": "Development Log",
@@ -1025,6 +1044,46 @@
         "imageAltModes": "BiblioFuse on Apple Vision Pro showing Spatial Bookshelves, Grid View, and Slanted Wall library layouts",
         "imageAltReading": "Reading a comic in BiblioFuse on Apple Vision Pro with eye tracking and input method options"
       },
+      "appletv": {
+        "eyebrow": "Also on Apple TV",
+        "badge": "Native tvOS app",
+        "title": "Simple from the first page.",
+        "desc": "The Apple TV app browses and reads with the controls you already know. It streams your library from a Mac or PC on the same network, so nothing is stored on the box and your progress carries back to your other devices.",
+        "imageAlt": "BiblioFuse on Apple TV: shelves, book details and full-screen reading, with the Siri Remote control map",
+        "steps": [
+          {
+            "title": "Browse your shelves",
+            "body": "Home, Library, Search and Settings, laid out for a big screen."
+          },
+          {
+            "title": "Select a book",
+            "body": "Open it and pick up exactly where you left off."
+          },
+          {
+            "title": "Scroll and read",
+            "body": "Continuous reading with smooth scrolling and simple controls."
+          }
+        ],
+        "features": [
+          {
+            "title": "Siri Remote, mapped",
+            "body": "Swipe to move focus, click to open, hold click for the reader menu, up and down to scroll three quarters of a screen at a time."
+          },
+          {
+            "title": "Auto-scroll",
+            "body": "Set a pace from half a second to 30 seconds a page and play or pause with one click."
+          },
+          {
+            "title": "Width control",
+            "body": "Adjust page width from 50% to 100% so spreads and tall pages both fit the screen."
+          },
+          {
+            "title": "App Lock",
+            "body": "Protect the library on a shared TV with a four-digit PIN."
+          }
+        ],
+        "lanNote": "Apple TV reads over your local network only — it streams from a Mac or PC on the same Wi-Fi. tvOS has no iCloud Documents access and the Tailscale path is built but still disabled, so away-from-home streaming is not available on the TV yet."
+      },
       "usageGuide": {
         "eyebrow": "Five ways to read",
         "title": "How can you use BiblioFuse Comic Reader?",
@@ -1043,8 +1102,8 @@
           },
           "stream": {
             "q": "Can I access my whole library without filling up my phone's storage?",
-            "a": "Yes — stream from a Mac, PC, or Synology NAS host to iPhone, iPad, visionOS, or Android. It connects automatically over your home Wi-Fi, with optional Tailscale for access away from home, and nothing is permanently stored on the reading device.",
-            "imageAlt": "Infographic: stream your library from Mac, PC, or Synology without keeping books on your phone"
+            "a": "Yes — stream from a Mac, PC, or Synology NAS host to iPhone, iPad, visionOS, or Android. It connects automatically over your home Wi-Fi, with optional Tailscale for access away from home, and nothing is permanently stored on the reading device. You can also point the app straight at an OPDS, Komga or Kavita server you already run — same page-at-a-time streaming, nothing downloaded in full.",
+            "imageAlt": "Infographic: stream your library from a Mac, PC, Synology NAS, or an OPDS/Komga/Kavita server without keeping books on your phone"
           },
           "tv": {
             "q": "Can I read comics on my TV?",
@@ -1058,13 +1117,6 @@
           }
         }
       },
-      "faqTitle": "Common questions",
-      "faq": [
-        {
-          "q": "Does one purchase cover all platforms?",
-          "a": "No. iOS + Mac is a single universal purchase — one payment covers iPhone, iPad, Mac, and Apple Vision Pro. The Android Reader, PC Reader, and PC tools are each sold separately."
-        }
-      ],
       "editions": {
         "eyebrow": "Compare apps",
         "title": "Choose the right BiblioFuse app.",
@@ -1076,32 +1128,28 @@
             "name": "BiblioFuse Reader iOS / macOS",
             "subtitle": "iPhone · iPad · Mac · Vision Pro · Apple TV",
             "badge": "Universal purchase",
-            "tint": "blue",
-            "href": "https://apps.apple.com/app/id6758330093"
+            "tint": "blue"
           },
           {
             "key": "pc",
             "name": "BiblioFuse Reader PC",
             "subtitle": "Windows",
             "badge": "Microsoft Store",
-            "tint": "orange",
-            "href": "https://apps.microsoft.com/detail/9n1lnmm3f7h9"
+            "tint": "orange"
           },
           {
             "key": "android",
             "name": "BiblioFuse Reader Android",
             "subtitle": "Phone · Tablet · Android TV",
             "badge": "Edition",
-            "tint": "teal",
-            "href": "https://play.google.com/store/apps/details?id=com.mlogictech.bibliofuse"
+            "tint": "teal"
           },
           {
             "key": "nas",
             "name": "BiblioFuse NAS",
             "subtitle": "Docker · Synology",
             "badge": "Self-hosted · Free",
-            "tint": "violet",
-            "href": "https://github.com/MLT-solutions/bibliofuse-nas-distribution"
+            "tint": "violet"
           }
         ]
       }

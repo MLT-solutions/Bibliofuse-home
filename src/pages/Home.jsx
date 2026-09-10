@@ -28,7 +28,6 @@ const contentCueAppStoreUrl = 'https://apps.apple.com/us/app/contentcue-read-lis
 // Mirrors HOSTS.docker/synology.appLink in ReaderFamilyGuide.jsx — keep in sync.
 const dockerUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution';
 const synologyUrl = 'https://github.com/MLT-solutions/bibliofuse-nas-distribution/releases';
-const imageBase = '/image/offline-apps/bibliofuse';
 
 function StoreBadge({ type, size = 'lg', className = '' }) {
   const sizes = size === 'sm' ? 'h-10' : 'h-12';
@@ -150,7 +149,7 @@ function Hero({ lang }) {
 
         <div className="relative mx-auto w-full max-w-[min(380px,100%)] lg:justify-self-end">
           <div className="absolute -inset-10 -z-0 rounded-full bg-[radial-gradient(circle,rgba(45,124,246,0.18),transparent_68%)]" />
-          <img src={`${imageBase}/iphone/1.png`} alt={t('redesign.altTexts.heroImage')} className="relative z-10 block w-full drop-shadow-2xl motion-safe:animate-[float_7s_ease-in-out_infinite]" />
+          <img src="/image/home/hero-formats.jpg" alt={t('redesign.altTexts.heroImage')} width="416" height="900" className="relative z-10 block w-full drop-shadow-2xl motion-safe:animate-[float_7s_ease-in-out_infinite]" fetchpriority="high" />
           <div className="absolute -left-3 bottom-8 z-20 hidden items-center gap-2.5 rounded-2xl border border-slate-200 bg-white px-3 py-2.5 shadow-xl md:flex lg:-left-6">
             <span className="grid h-9 w-9 place-items-center rounded-lg bg-blue-50 text-blue-600">
               <ProductIcon kind="book" />
@@ -191,10 +190,11 @@ function Hero({ lang }) {
 
 
 
-// Second hero. Leads on live comic & manga translation because that is the one thing the
-// field does not have: Panels gates OPDS behind a $9.99/yr tier, Komic does native
-// Komga/Kavita, nobody advertises in-place translation. Kavita/Komga and OPDS follow as
-// proof the table stakes are covered too. Feature dates come from src/data/feature-matrix.js.
+// Second hero: streaming & sync. The three sources it names — a BiblioFuse host app, your
+// own iCloud Drive, and a third-party OPDS/Komga/Kavita server — are the three answers to
+// "my phone is full", which is the objection that actually stops people buying a comic
+// reader. Live translation used to lead here and now has its own hero below; both were
+// separated on 2026-09-10 so neither has to carry the other's pitch.
 function SecondHero({ lang }) {
   const { t } = useTranslation();
   const s = t('redesign.home.secondHero', { returnObjects: true });
@@ -227,7 +227,59 @@ function SecondHero({ lang }) {
         </div>
         <div className="relative mx-auto w-full max-w-[300px] lg:justify-self-end">
           <div className="absolute -inset-10 -z-0 rounded-full bg-[radial-gradient(circle,rgba(61,219,196,0.22),transparent_68%)]" />
-          <img src={`${imageBase}/iphone/1.png`} alt={t('redesign.altTexts.heroImage')} className="relative z-10 block w-full drop-shadow-2xl" />
+          <img src="/image/home/hero-streaming.jpg" alt={t('redesign.altTexts.heroStreaming')} width="416" height="900" className="relative z-10 block w-full drop-shadow-2xl" loading="lazy" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Third hero: live comic & manga translation, the one thing the field does not have.
+// Panels gates OPDS behind a $9.99/yr tier and Komic does native Komga/Kavita, but nobody
+// advertises in-place translation. Deliberately a light band between the dark second hero
+// and the slate tools strip, with the artwork on the opposite side, so the two heroes do
+// not read as one long block. Copy is the previous second hero's, already translated.
+function ThirdHero({ lang }) {
+  const { t } = useTranslation();
+  const s = t('redesign.home.thirdHero', { returnObjects: true });
+  const bullets = Array.isArray(s.bullets) ? s.bullets : [];
+  return (
+    <section className="relative overflow-hidden bg-white py-16 sm:py-20">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(139,92,246,0.10),transparent_38%),radial-gradient(circle_at_88%_75%,rgba(20,194,166,0.10),transparent_34%)]" />
+      <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+        <div className="relative mx-auto w-full max-w-[300px] lg:order-1 lg:justify-self-start">
+          <div className="absolute -inset-10 -z-0 rounded-full bg-[radial-gradient(circle,rgba(139,92,246,0.16),transparent_68%)]" />
+          <img
+            src="/image/home/hero-translation.jpg"
+            alt={t('redesign.altTexts.heroTranslation')}
+            width="416"
+            height="900"
+            loading="lazy"
+            className="relative z-10 block w-full rounded-[1.6rem] shadow-[0_18px_40px_rgba(15,23,42,0.18)]"
+          />
+        </div>
+        <div className="lg:order-2">
+          <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-violet-600">{s.eyebrow}</div>
+          <h2 className="text-[clamp(1.9rem,3.8vw,2.9rem)] font-black leading-[1.05] tracking-tight text-slate-950">
+            {s.titleA}
+            <br />
+            <span className="bg-gradient-to-r from-[#7c4dff] to-[#14c2a6] bg-clip-text text-transparent">{s.titleB}</span>
+          </h2>
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-600">{s.desc}</p>
+          <ul className="mt-6 space-y-2.5">
+            {bullets.map((b) => (
+              <li key={b} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-700">
+                <svg className="mt-1 flex-shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7c4dff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13l4 4L19 7" /></svg>
+                {b}
+              </li>
+            ))}
+          </ul>
+          <Link
+            to={`/${lang}/features/`}
+            className="mt-7 inline-flex items-center gap-2 rounded-xl bg-[#0b1220] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#152033]"
+          >
+            {s.cta} →
+          </Link>
         </div>
       </div>
     </section>
@@ -509,6 +561,7 @@ const Home = () => {
       />
       <Hero lang={lang} />
       <SecondHero lang={lang} />
+      <ThirdHero lang={lang} />
       <ToolsStrip lang={lang} />
       <FaqSection lang={lang} />
       <PrivacyStrip />

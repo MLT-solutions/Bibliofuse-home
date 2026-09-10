@@ -84,7 +84,6 @@ function AppLayout() {
   // Get current path without language prefix
   const currentPath = location.pathname.replace(`/${lang}`, '') || '/';
   const normalizedPath = currentPath === '/' ? '/' : currentPath.replace(/\/$/, '');
-  const isComicReader = normalizedPath === '/comicreader';
   const isSmartDecrypt = normalizedPath === '/smartdecrypt';
   const isContentCue = normalizedPath === '/contentcue';
 
@@ -120,7 +119,11 @@ function AppLayout() {
         </Routes>
       </main>
       <BackToTopButton />
-      {!isComicReader && !isSmartDecrypt && !isContentCue && <Footer />}
+      {/* /comicreader/ used to be excluded here and carried its own two-link
+          footnote row instead. It is the site's main product page, so it now
+          gets the same footer as everywhere else (asked for 2026-09-10). The
+          two retired sister-app stubs keep the exclusion. */}
+      {!isSmartDecrypt && !isContentCue && <Footer />}
     </div>
   );
 }

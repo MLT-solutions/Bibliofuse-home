@@ -19,7 +19,10 @@ tokens. None of it is user-facing.
 
 - **11 of the 12 `/comicreader/` FAQs.** They were page sections with no URLs of their
   own, so relocating them cost nothing and they are the best content on the site. Only
-  the universal-purchase question stayed behind on `/comicreader/`.
+  the universal-purchase question stayed behind on `/comicreader/` — and later the same
+  day moved on to the homepage FAQ, since it is a buying question and it was the only item
+  left there. `redesign.comicReaderPage.faq` no longer exists; see
+  `docs/features/app-pages.md`.
 - **Links to the surviving blog articles at their existing `/blog/` URLs.** They are
   deliberately *not* re-pathed under `/guide/`: they are the only URLs still earning
   clicks, and putting 301s in front of them to tidy the IA would risk the last things

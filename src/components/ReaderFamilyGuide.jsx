@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Added 2026-07-20 — the reader family grew to 9 surfaces across 3 streaming
 // modes (iOS/iPadOS, macOS, Windows, visionOS, tvOS, Android phone, Docker,
@@ -90,6 +91,22 @@ import React, { useMemo, useState } from 'react';
 // MATRIX_ROWS' Android TV row already only had streaming.localWifi set (no
 // manualTs), so the coverage table needed no change — only the interactive
 // picker's client list was stale.
+//
+// 2026-09-10, seventh pass — product owner corrections against the shipped
+// apps (OPDS 1.x + OPDS-PSE landed 2026-08-10, native Komga/Kavita API
+// 2026-08-12; see src/data/feature-matrix.js):
+// - A third-party OPDS / Kavita / Komga server is now a content source in its
+//   own right, so it is both a new content-support column in the matrix and a
+//   new host option in the picker. Supported on iPhone/iPad, visionOS and
+//   Android phone; the two TV clients cannot reach it.
+// - Android phone was still marked "Standalone reader (no streaming)" in the
+//   role columns, which contradicted the sixth pass flipping
+//   CLIENTS.androidphone.canStream to true. Moved to "has streaming".
+// - OPDS deliberately bypasses MODE_INFO entirely: the app talks straight to
+//   the server over HTTP, so none of the three BiblioFuse connection modes
+//   apply. Reaching it from outside the house is the user's own VPN/Tailscale
+//   problem, not something the app negotiates — the picker says so rather
+//   than recommending a mode that does not exist for this host.
 
 const MODE_INFO = {
   'icloud-ts': {
@@ -125,13 +142,20 @@ const HOSTS = {
     appLink: 'https://github.com/MLT-solutions/bibliofuse-nas-distribution',
     appLinkLabel: 'Get BiblioFuse NAS (Docker) →',
   },
+  opds: {
+    label: 'OPDS / Kavita / Komga',
+    kind: 'opds',
+    tailscaleCapable: false,
+    icloudRelay: false,
+    note: 'Any OPDS 1.x or OPDS-PSE catalogue, or a Komga or Kavita server, read over its own API. BiblioFuse connects straight to it — this is not a BiblioFuse host, so the three connection modes below do not apply.',
+  },
 };
 
 const CLIENTS = {
-  iphone_ipad: { label: 'iPhone / iPad', canStream: true, isAppleICloud: true },
-  visionpro: { label: 'Apple Vision Pro', canStream: true, isAppleICloud: true, note: 'Also a standalone reader — this only applies when streaming from a host.' },
+  iphone_ipad: { label: 'iPhone / iPad', canStream: true, isAppleICloud: true, opdsCapable: true },
+  visionpro: { label: 'Apple Vision Pro', canStream: true, isAppleICloud: true, opdsCapable: true, note: 'Also a standalone reader — this only applies when streaming from a host.' },
   appletv: { label: 'Apple TV', canStream: true, lanOnly: true, note: 'Companion app — streams only, no local library on the box itself. Local Wi-Fi (LAN) only: tvOS has no iCloud Documents entitlement and the Tailscale path is built but disabled pending an upstream Tailscale tvOS bug, so Apple TV can’t discover a host outside the house yet.' },
-  androidphone: { label: 'Android phone', canStream: true, note: 'Local Wi-Fi or Manual Tailscale only — no automatic iCloud discovery, since Android has no iCloud Documents access.' },
+  androidphone: { label: 'Android phone', canStream: true, opdsCapable: true, note: 'Local Wi-Fi or Manual Tailscale only — no automatic iCloud discovery, since Android has no iCloud Documents access.' },
   androidtv: { label: 'Android TV', canStream: true, lanOnly: true, note: 'Companion app — Local Wi-Fi only, no Tailscale support.' },
 };
 
@@ -169,19 +193,19 @@ const MATRIX_ROWS = [
   {
     platform: 'iPhone / iPad', kind: 'client',
     role: { standaloneHave: true },
-    content: { local: true, icloud: true, host: true },
+    content: { local: true, icloud: true, host: true, opds: true },
     streaming: { icloudTs: true, localWifi: true, manualTs: true },
   },
   {
     platform: 'visionOS', kind: 'client',
     role: { standaloneHave: true },
-    content: { local: true, icloud: true, host: true },
+    content: { local: true, icloud: true, host: true, opds: true },
     streaming: { icloudTs: true, localWifi: true, manualTs: true },
   },
   {
     platform: 'Android phone', kind: 'client',
-    role: { standaloneNo: true },
-    content: { local: true, host: true },
+    role: { standaloneHave: true },
+    content: { local: true, host: true, opds: true },
     streaming: { localWifi: true, manualTs: true },
   },
   {
@@ -209,6 +233,7 @@ const CONTENT_COLS = [
   { key: 'nas', label: 'NAS' },
   { key: 'icloud', label: 'iCloud' },
   { key: 'host', label: 'Host' },
+  { key: 'opds', label: 'OPDS / Kavita / Komga' },
 ];
 const STREAM_COLS = [
   { key: 'icloudTs', label: 'iCloud + Tailscale' },
@@ -238,7 +263,7 @@ function CoverageTable() {
   return (
     <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[900px] border-collapse text-sm">
+        <table className="w-full min-w-[1000px] border-collapse text-sm">
           <thead>
             <tr>
               <th rowSpan={2} className="sticky left-0 z-20 border-b border-r border-slate-200 bg-slate-900 px-4 py-2.5 text-left text-xs font-bold uppercase tracking-wider text-white">
@@ -309,9 +334,86 @@ function OptionGroup({ label, options, value, onChange }) {
   );
 }
 
-function Recommendation({ hostKey, clientKey, wantsAway }) {
+function Recommendation({ hostKey, clientKey, wantsAway, lang }) {
   const host = HOSTS[hostKey];
   const client = CLIENTS[clientKey];
+
+  // A third-party catalogue is not a BiblioFuse host: the app speaks OPDS or the
+  // Komga/Kavita API straight to it, so none of MODE_INFO's three connection
+  // modes are involved and there is nothing to pick. Reaching it from outside
+  // the house is the user's own network problem, which is why this branch talks
+  // about VPN/subnet routing instead of recommending a mode.
+  if (host.kind === 'opds') {
+    if (!client.opdsCapable) {
+      return (
+        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <div className="mb-1 text-xs font-bold uppercase tracking-wider text-slate-500">Given your combination</div>
+          <p className="text-sm leading-relaxed text-slate-700">
+            <strong>{client.label}</strong> can&rsquo;t connect to an OPDS, Komga or Kavita server — the TV apps read only
+            from a BiblioFuse host on your own network. Point it at a Mac, PC or NAS host instead, or read your catalogue
+            on iPhone, iPad, Vision Pro or an Android phone.
+          </p>
+        </div>
+      );
+    }
+
+    return (
+      <div className="rounded-2xl border border-blue-200 bg-blue-50/40 p-6">
+        <div className="mb-1 text-xs font-bold uppercase tracking-wider text-blue-700">Given your combination</div>
+        <ul className="mt-3 space-y-3 text-sm text-slate-800">
+          <li className="flex gap-2.5">
+            <span className="mt-0.5 font-black text-blue-600">1.</span>
+            <span>
+              Keep your library on your <strong>OPDS, Komga or Kavita server</strong>.
+              <span className="block text-slate-500">{host.note}</span>
+            </span>
+          </li>
+          <li className="flex gap-2.5">
+            <span className="mt-0.5 font-black text-blue-600">2.</span>
+            <span>
+              Read on <strong>{client.label}</strong>.
+              <span className="block text-slate-500">
+                Komga and Kavita connect over their native API — series, progress and bookmarks included. Anything else
+                connects as an OPDS 1.x catalogue, with page-at-a-time streaming where the server supports OPDS-PSE.
+              </span>
+            </span>
+          </li>
+          <li className="flex gap-2.5">
+            <span className="mt-0.5 font-black text-blue-600">3.</span>
+            <span>
+              In the {client.label} app, open <strong>Settings &rarr; OPDS</strong> and add the server.
+              <span className="block text-slate-500">
+                Typing a URL, username and password on a phone is the slow part &mdash; generate a QR code on your computer
+                and scan it instead.
+              </span>
+              <Link
+                to={`/${lang}/tools/qr-generator/`}
+                className="mt-1.5 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-700 hover:text-blue-900"
+              >
+                Make a QR login code &rarr;
+              </Link>
+            </span>
+          </li>
+        </ul>
+        <p className="mt-4 rounded-lg bg-white/70 px-3.5 py-2.5 text-xs leading-relaxed text-slate-600">
+          {wantsAway ? (
+            <>
+              <strong className="text-slate-800">Reading away from home:</strong> nothing to choose in the app &mdash; this is
+              a network setup, not a connection mode. Put both the reading device and the server&rsquo;s host on the same VPN,
+              or install Tailscale on both and turn on subnet routing on the host so the device can reach the server&rsquo;s
+              local address from anywhere.
+            </>
+          ) : (
+            <>
+              <strong className="text-slate-800">Reading at home:</strong> nothing to choose in the app &mdash; none of the
+              three connection modes apply to a third-party server. Just keep the reading device on the same Wi-Fi network as
+              your OPDS, Komga or Kavita server.
+            </>
+          )}
+        </p>
+      </div>
+    );
+  }
 
   if (!client.canStream) {
     return (
@@ -388,14 +490,14 @@ function Recommendation({ hostKey, clientKey, wantsAway }) {
   );
 }
 
-function ReaderFamilyGuide() {
+function ReaderFamilyGuide({ lang = 'en' }) {
   const [hostKey, setHostKey] = useState('mac');
   const [clientKey, setClientKey] = useState('iphone_ipad');
   const [wantsAway, setWantsAway] = useState(true);
 
   const recommendation = useMemo(
-    () => <Recommendation hostKey={hostKey} clientKey={clientKey} wantsAway={wantsAway} />,
-    [hostKey, clientKey, wantsAway]
+    () => <Recommendation hostKey={hostKey} clientKey={clientKey} wantsAway={wantsAway} lang={lang} />,
+    [hostKey, clientKey, wantsAway, lang]
   );
 
   return (
@@ -407,7 +509,7 @@ function ReaderFamilyGuide() {
             Find your setup
           </h2>
           <p className="mt-4 text-slate-600">
-            The family now spans iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker, and Synology. Pick what hosts your books and what you want to read on, and see exactly which app and connection mode to use.
+            The family now spans iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker, and Synology &mdash; and reads from any OPDS, Komga or Kavita server too. Pick what hosts your books and what you want to read on, and see exactly which app and connection mode to use.
           </p>
         </div>
 

@@ -279,20 +279,24 @@
           {
             "q": "앱은 무료인가요?",
             "a": "대부분의 BiblioFuse 앱은 무료로 체험하거나 무료 제한이 있으며, 더 많이 쓰는 경우 선택적 유료 업그레이드가 있습니다. 각 플랫폼의 현재 가격은 스토어 페이지에서 확인하세요."
+          },
+          {
+            "q": "한 번 구매하면 모든 플랫폼에서 쓸 수 있나요?",
+            "a": "아니요. iOS와 Mac은 하나의 유니버설 구매로, 한 번 결제하면 iPhone, iPad, Mac, Apple Vision Pro에서 사용할 수 있습니다. Android Reader, PC Reader, PC 도구는 각각 별도로 판매됩니다."
           }
         ]
       },
       "secondHero": {
-        "eyebrow": "New this release",
-        "titleA": "Read manga in your language,",
-        "titleB": "on the page.",
-        "desc": "Live comic and manga translation renders the text in place while you read — no export step, no second app. Pair it with native Kavita and Komga libraries or any OPDS catalogue and your whole collection travels with you.",
-        "cta": "See what is new",
+        "eyebrow": "스트리밍 및 동기화",
+        "titleA": "서재 전체를,",
+        "titleB": "내려받지 않고.",
+        "desc": "소장 자료는 지금 있는 곳에 그대로 두세요. Mac, PC, NAS의 BiblioFuse 호스트 앱, 직접 쓰는 iCloud Drive, 또는 OPDS·Komga·Kavita 서버에서 한 페이지씩 읽으면 됩니다. 읽던 위치는 기기를 옮겨도 그대로 이어집니다.",
+        "cta": "무엇이 어디로 스트리밍되는지 보기",
         "bullets": [
-          "Live comic & manga translation, in place as you read (Pro)",
-          "Native Komga & Kavita API, with position and bookmark sync (Pro)",
-          "OPDS 1.x and OPDS-PSE streaming from any catalogue (Pro)",
-          "Vertical Japanese, dual-page spreads and page-curl turns"
+          "OPDS 1.x, OPDS-PSE, Komga, Kavita에 바로 연결 (Pro)",
+          "Mac, PC, Synology, Docker의 BiblioFuse 호스트 앱에서 스트리밍",
+          "직접 쓰는 iCloud Drive에서 읽기 — 열 때 불러옵니다",
+          "읽던 위치와 북마크가 기기 간에 동기화됩니다"
         ]
       },
       "toolsStrip": {
@@ -300,6 +304,19 @@
         "title": "Fix the file before you read it.",
         "desc": "Shrink an archive, convert a PDF, compress an EPUB — in the browser, on your device, nothing uploaded.",
         "cta": "All tools"
+      },
+      "thirdHero": {
+        "eyebrow": "이번 업데이트의 새 기능",
+        "titleA": "만화를 내 언어로,",
+        "titleB": "페이지 위에서 바로.",
+        "desc": "만화·코믹 실시간 번역은 읽는 중에 번역문을 원래 자리에 그대로 보여 줍니다. 내보내기 과정도, 두 번째 앱도 필요 없습니다. 여기에 네이티브 Kavita·Komga 서재나 아무 OPDS 카탈로그를 연결하면 소장 자료 전체를 들고 다닐 수 있습니다.",
+        "cta": "새로워진 점 보기",
+        "bullets": [
+          "만화·코믹 실시간 번역을 읽는 그 페이지 위에 표시 (Pro)",
+          "Komga·Kavita 네이티브 API, 읽던 위치와 북마크 동기화 (Pro)",
+          "어떤 카탈로그에서든 OPDS 1.x·OPDS-PSE 스트리밍 (Pro)",
+          "일본어 세로쓰기, 두 페이지 펼침, 페이지 컬 넘김"
+        ]
       }
     },
     "productFamily": {
@@ -544,7 +561,9 @@
       "logo": "BiblioFuse 로고",
       "appStore": "App Store에서 다운로드",
       "googlePlay": "Google Play에서 받기",
-      "microsoftStore": "Microsoft에서 받기"
+      "microsoftStore": "Microsoft에서 받기",
+      "heroStreaming": "iPhone의 BiblioFuse 위치 화면 — 기기 내, iCloud Drive, Mac 호스트의 서재",
+      "heroTranslation": "iPhone에서 만화 페이지 위에 표시된 BiblioFuse 실시간 번역 패널"
     },
     "seo": {
       "homeTitle": "BiblioFuse Reader: 개인 전자책 라이브러리, 5G Mac 스트리밍과 파일 도구",
@@ -922,8 +941,6 @@
       }
     },
     "comicReaderPage": {
-      "faqTitle": "자주 묻는 질문",
-      "faq": [],
       "vision": {
         "eyebrow": "이제 Apple Vision Pro에서",
         "badge": "네이티브 visionOS 앱",
@@ -967,6 +984,46 @@
         "imageAltModes": "Apple Vision Pro의 BiblioFuse에서 공간 책장, 그리드 보기, 기울어진 벽 라이브러리 레이아웃을 표시",
         "imageAltReading": "Apple Vision Pro의 BiblioFuse에서 시선 추적과 입력 방식 옵션으로 만화를 읽는 모습"
       },
+      "appletv": {
+        "eyebrow": "Apple TV에서도",
+        "badge": "tvOS 네이티브 앱",
+        "title": "첫 페이지부터 단순하게.",
+        "desc": "Apple TV 앱은 이미 익숙한 조작으로 서재를 넘기고 읽습니다. 같은 네트워크의 Mac이나 PC에서 서재를 스트리밍하므로 기기에는 아무것도 저장되지 않고, 읽던 위치는 다른 기기로 되돌아옵니다.",
+        "imageAlt": "Apple TV의 BiblioFuse: 책장, 책 상세 정보, 전체 화면 읽기와 Siri Remote 조작 안내도",
+        "steps": [
+          {
+            "title": "서재를 둘러보기",
+            "body": "홈, 서재, 검색, 설정을 큰 화면에 맞게 배치했습니다."
+          },
+          {
+            "title": "책 고르기",
+            "body": "열면 지난번에 읽던 자리에서 그대로 이어집니다."
+          },
+          {
+            "title": "스크롤하며 읽기",
+            "body": "부드러운 스크롤과 간단한 조작으로 이어서 읽습니다."
+          }
+        ],
+        "features": [
+          {
+            "title": "Siri Remote 조작",
+            "body": "스와이프로 초점 이동, 클릭으로 열기, 길게 눌러 리더 메뉴, 위아래로 화면의 4분의 3씩 스크롤."
+          },
+          {
+            "title": "자동 스크롤",
+            "body": "한 페이지에 0.5초부터 30초까지 속도를 정하고 클릭 한 번으로 재생하거나 멈춥니다."
+          },
+          {
+            "title": "너비 조절",
+            "body": "페이지 너비를 50%에서 100%까지 조절해 펼침면과 긴 페이지 모두 화면에 맞춥니다."
+          },
+          {
+            "title": "앱 잠금",
+            "body": "함께 쓰는 TV에서는 네 자리 PIN으로 서재를 보호합니다."
+          }
+        ],
+        "lanNote": "Apple TV는 로컬 네트워크에서만 읽습니다 — 같은 Wi-Fi의 Mac이나 PC에서 스트리밍합니다. tvOS는 iCloud Drive에 접근할 수 없고 Tailscale 경로는 만들어졌지만 아직 비활성 상태여서, TV에서는 외부 스트리밍을 아직 쓸 수 없습니다."
+      },
       "usageGuide": {
         "eyebrow": "다섯 가지 읽는 방법",
         "title": "BiblioFuse Comic Reader는 어떻게 사용하나요?",
@@ -985,7 +1042,7 @@
           },
           "stream": {
             "q": "휴대폰 저장 공간을 채우지 않고도 전체 라이브러리에 접근할 수 있나요?",
-            "a": "네 — Mac, PC, Synology NAS 호스트에서 iPhone, iPad, visionOS, Android로 스트리밍하세요. 집 Wi-Fi에서는 자동으로 연결되며, 외출 시에는 선택적으로 Tailscale을 사용할 수 있고, 읽기 기기에는 아무것도 영구적으로 저장되지 않습니다.",
+            "a": "네 — Mac, PC, Synology NAS 호스트에서 iPhone, iPad, visionOS, Android로 스트리밍하세요. 집 Wi-Fi에서는 자동으로 연결되며, 외출 시에는 선택적으로 Tailscale을 사용할 수 있고, 읽기 기기에는 아무것도 영구적으로 저장되지 않습니다. 이미 운영 중인 OPDS, Komga, Kavita 서버에 앱을 바로 연결할 수도 있습니다 — 동일한 페이지 단위 스트리밍으로, 전체를 내려받지 않습니다.",
             "imageAlt": "인포그래픽: 휴대폰에 책을 보관하지 않고 Mac, PC, Synology에서 라이브러리 스트리밍"
           },
           "tv": {
@@ -1011,32 +1068,28 @@
             "name": "BiblioFuse Reader iOS / macOS",
             "subtitle": "iPhone · iPad · Mac · Vision Pro · Apple TV",
             "badge": "유니버설 구매",
-            "tint": "blue",
-            "href": "https://apps.apple.com/app/id6758330093"
+            "tint": "blue"
           },
           {
             "key": "pc",
             "name": "BiblioFuse Reader PC",
             "subtitle": "Windows",
             "badge": "Microsoft Store",
-            "tint": "orange",
-            "href": "https://apps.microsoft.com/detail/9n1lnmm3f7h9"
+            "tint": "orange"
           },
           {
             "key": "android",
             "name": "BiblioFuse Reader Android",
             "subtitle": "휴대폰 · 태블릿 · Android TV",
             "badge": "에디션",
-            "tint": "teal",
-            "href": "https://play.google.com/store/apps/details?id=com.mlogictech.bibliofuse"
+            "tint": "teal"
           },
           {
             "key": "nas",
             "name": "BiblioFuse NAS",
             "subtitle": "Docker · Synology",
             "badge": "셀프 호스팅 · 무료",
-            "tint": "violet",
-            "href": "https://github.com/MLT-solutions/bibliofuse-nas-distribution"
+            "tint": "violet"
           }
         ]
       }

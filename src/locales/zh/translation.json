@@ -279,20 +279,24 @@
           {
             "q": "这些应用免费吗？",
             "a": "大多数 BiblioFuse 应用可以免费试用或有免费限制，重度使用可选择付费升级。各平台商店页面会显示当前价格。"
+          },
+          {
+            "q": "一次购买是否涵盖所有平台？",
+            "a": "不是。iOS + Mac 属于同一次通用购买——付一次即可用于 iPhone、iPad、Mac 和 Apple Vision Pro。Android 版 Reader、PC 版 Reader 和 PC 工具需分别购买。"
           }
         ]
       },
       "secondHero": {
-        "eyebrow": "New this release",
-        "titleA": "Read manga in your language,",
-        "titleB": "on the page.",
-        "desc": "Live comic and manga translation renders the text in place while you read — no export step, no second app. Pair it with native Kavita and Komga libraries or any OPDS catalogue and your whole collection travels with you.",
-        "cta": "See what is new",
+        "eyebrow": "串流与同步",
+        "titleA": "整个书库，",
+        "titleB": "无需下载。",
+        "desc": "让藏书留在原处——Mac、PC 或 NAS 上的 BiblioFuse 主机应用、你自己的 iCloud Drive，或 OPDS、Komga、Kavita 服务器——按页阅读即可。阅读进度会跟着你在设备之间流转。",
+        "cta": "看看哪些内容可以串流",
         "bullets": [
-          "Live comic & manga translation, in place as you read (Pro)",
-          "Native Komga & Kavita API, with position and bookmark sync (Pro)",
-          "OPDS 1.x and OPDS-PSE streaming from any catalogue (Pro)",
-          "Vertical Japanese, dual-page spreads and page-curl turns"
+          "直接连接 OPDS 1.x、OPDS-PSE、Komga 或 Kavita（Pro）",
+          "从 Mac、PC、Synology 或 Docker 上的 BiblioFuse 主机应用串流",
+          "直接读取你自己的 iCloud Drive——打开时才载入",
+          "阅读进度与书签在各设备之间保持同步"
         ]
       },
       "toolsStrip": {
@@ -300,6 +304,19 @@
         "title": "Fix the file before you read it.",
         "desc": "Shrink an archive, convert a PDF, compress an EPUB — in the browser, on your device, nothing uploaded.",
         "cta": "All tools"
+      },
+      "thirdHero": {
+        "eyebrow": "本次更新新增",
+        "titleA": "用你的语言读漫画，",
+        "titleB": "就在原页面上。",
+        "desc": "实时漫画翻译会在你阅读时把译文显示在原位——无需导出，也不用第二个应用。再搭配原生 Kavita、Komga 书库或任意 OPDS 目录，整个收藏都能随身携带。",
+        "cta": "看看有什么新功能",
+        "bullets": [
+          "实时漫画翻译，阅读时直接显示在页面上（Pro）",
+          "原生 Komga 与 Kavita API，同步阅读进度与书签（Pro）",
+          "可从任意目录进行 OPDS 1.x 与 OPDS-PSE 串流（Pro）",
+          "日文竖排、双页跨页与翻页卷曲效果"
+        ]
       }
     },
     "productFamily": {
@@ -544,7 +561,9 @@
       "logo": "BiblioFuse 标志",
       "appStore": "在 App Store 下载",
       "googlePlay": "在 Google Play 获取",
-      "microsoftStore": "从 Microsoft 获取"
+      "microsoftStore": "从 Microsoft 获取",
+      "heroStreaming": "iPhone 上 BiblioFuse 的“位置”界面——设备本机、iCloud Drive 与 Mac 主机上的书库",
+      "heroTranslation": "iPhone 上 BiblioFuse 在漫画页面上的实时翻译面板"
     },
     "seo": {
       "homeTitle": "BiblioFuse Reader：私密电子书库、5G Mac 串流与文件工具",
@@ -922,8 +941,6 @@
       }
     },
     "comicReaderPage": {
-      "faqTitle": "常见问题",
-      "faq": [],
       "vision": {
         "eyebrow": "现已登陆 Apple Vision Pro",
         "badge": "原生 visionOS 应用",
@@ -967,6 +984,46 @@
         "imageAltModes": "BiblioFuse 在 Apple Vision Pro 上展示空间书架、网格视图和倾斜墙面等图书馆布局",
         "imageAltReading": "在 Apple Vision Pro 上使用 BiblioFuse 阅读漫画，配备眼动追踪和输入方式选项"
       },
+      "appletv": {
+        "eyebrow": "也支持 Apple TV",
+        "badge": "原生 tvOS 应用",
+        "title": "从第一页就很简单。",
+        "desc": "Apple TV 应用用你熟悉的遥控操作浏览和阅读。它从同一网络中的 Mac 或 PC 串流书库，机顶盒上不存放任何内容，阅读进度也会回传到你的其他设备。",
+        "imageAlt": "Apple TV 上的 BiblioFuse：书架、书籍详情与全屏阅读，并附 Siri Remote 操作图",
+        "steps": [
+          {
+            "title": "浏览你的书架",
+            "body": "首页、书库、搜索与设置，都按大屏幕排布。"
+          },
+          {
+            "title": "选择一本书",
+            "body": "打开后即可从上次读到的地方继续。"
+          },
+          {
+            "title": "滚动阅读",
+            "body": "连续阅读，滚动顺畅，操作简单。"
+          }
+        ],
+        "features": [
+          {
+            "title": "Siri Remote 操作对应",
+            "body": "滑动移动焦点，按下打开，长按呼出阅读菜单，上下键每次滚动四分之三屏。"
+          },
+          {
+            "title": "自动滚动",
+            "body": "可设定每页 0.5 至 30 秒的节奏，一键播放或暂停。"
+          },
+          {
+            "title": "页宽调整",
+            "body": "页面宽度可在 50% 到 100% 之间调整，跨页与长页都能适配屏幕。"
+          },
+          {
+            "title": "应用锁",
+            "body": "用四位数 PIN 码保护共用电视上的书库。"
+          }
+        ],
+        "lanNote": "Apple TV 仅通过本地网络阅读——从同一 Wi-Fi 下的 Mac 或 PC 串流。tvOS 无法访问 iCloud 云盘，Tailscale 通道虽已开发但仍处于关闭状态，因此电视端暂不支持离家串流。"
+      },
       "usageGuide": {
         "eyebrow": "五种阅读方式",
         "title": "如何使用 BiblioFuse Comic Reader？",
@@ -985,7 +1042,7 @@
           },
           "stream": {
             "q": "我能不占用手机存储空间就访问整个书库吗？",
-            "a": "可以——从 Mac、PC 或 Synology NAS 主机流式传输到 iPhone、iPad、visionOS 或 Android。它会在家庭 Wi-Fi 上自动连接，并可选配 Tailscale 实现离家访问，阅读设备上不会永久保存任何内容。",
+            "a": "可以——从 Mac、PC 或 Synology NAS 主机流式传输到 iPhone、iPad、visionOS 或 Android。它会在家庭 Wi-Fi 上自动连接，并可选配 Tailscale 实现离家访问，阅读设备上不会永久保存任何内容。你也可以让应用直接连接你已有的 OPDS、Komga 或 Kavita 服务器——同样是逐页流式传输，无需完整下载。",
             "imageAlt": "信息图：从 Mac、PC 或 Synology 流式传输书库，无需在手机上保存书籍"
           },
           "tv": {
@@ -1011,32 +1068,28 @@
             "name": "BiblioFuse Reader iOS / macOS",
             "subtitle": "iPhone · iPad · Mac · Vision Pro · Apple TV",
             "badge": "通用购买",
-            "tint": "blue",
-            "href": "https://apps.apple.com/app/id6758330093"
+            "tint": "blue"
           },
           {
             "key": "pc",
             "name": "BiblioFuse Reader PC",
             "subtitle": "Windows",
             "badge": "Microsoft Store",
-            "tint": "orange",
-            "href": "https://apps.microsoft.com/detail/9n1lnmm3f7h9"
+            "tint": "orange"
           },
           {
             "key": "android",
             "name": "BiblioFuse Reader Android",
             "subtitle": "手机 · 平板 · Android TV",
             "badge": "版本",
-            "tint": "teal",
-            "href": "https://play.google.com/store/apps/details?id=com.mlogictech.bibliofuse"
+            "tint": "teal"
           },
           {
             "key": "nas",
             "name": "BiblioFuse NAS",
             "subtitle": "Docker · Synology",
             "badge": "自托管 · 免费",
-            "tint": "violet",
-            "href": "https://github.com/MLT-solutions/bibliofuse-nas-distribution"
+            "tint": "violet"
           }
         ]
       }

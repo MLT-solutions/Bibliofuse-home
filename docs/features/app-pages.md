@@ -35,9 +35,11 @@ listing goes live** — don't leave the App Store direct-link as permanent witho
 revisiting; it exists only because mlogictech.com wasn't ready.
 
 ## Shared conventions
-- Each app page hides the global `Footer` (see the `isWebApp` / `isComicReader` /
-  `isSmartDecrypt` / `isContentCue` flags in `App.jsx`'s `AppLayout`) since these pages
-  have their own app-specific footer/CTA content.
+- The retired sister-app pages hide the global `Footer` (the `isSmartDecrypt` /
+  `isContentCue` flags in `App.jsx`'s `AppLayout`) since they carry their own
+  app-specific footer/CTA content. `/comicreader/` was in that list until 2026-09-10 and
+  now renders the shared footer like every other page — see "Flagship BiblioFuse Reader"
+  below. `isWebApp` is long gone with the WebApp route.
 - Each app has a matching pair of sub-pages:
   `/<app>/changelog` → `AppChangelog` (see `changelog.md`)
   `/<app>/privacy` → `AppPrivacy` (see `privacy-pages.md`)
@@ -117,10 +119,29 @@ more →" link (reuses the existing `redesign.productFamily.learnMore` key) righ
 under the device chips.
 
 Homepage FAQ copy should stay at the brand/app-chooser level; setup-heavy BiblioFuse
-Reader questions belong on `/comicreader` or focused help/blog pages. The full Reader
-FAQ lives in `redesign.comicReaderPage.faq` so troubleshooting answers can include
-nested bullet steps, code-formatted filenames, and support links without bloating the
-homepage.
+Reader questions belong on `/guide/`.
+
+**`redesign.comicReaderPage.faq` no longer exists (2026-09-10).** The 12 setup FAQs moved
+to `/guide/`, and the one leftover — "Does one purchase cover all platforms?" — moved to
+the homepage FAQ, where the other buying questions are. The key, `faqTitle`, the FAQ
+`<section>`, and the `FaqAnswer` / `RichText` / `stripHtml` / `faqToPlainText` helpers that
+supported its nested-bullet answers were all deleted. Two things to know before adding a
+FAQ back to this page:
+
+- The array was **empty in all 10 non-English locales** while `en` had one item, so every
+  non-English `/comicreader/` was rendering a bare "Frequently Asked Questions" heading
+  with nothing under it.
+- The page's **FAQPage JSON-LD now comes from `UsageGuide`** — `faqItemsForSchema` maps
+  over `USAGE_GUIDE_ITEMS` and reads `redesign.comicReaderPage.usageGuide.items.<key>`.
+  Those five answers are the page's only remaining Q&A, they are translated in all 11
+  locales, and they are plain text (no HTML to strip). Verified live: `dist/en/comicreader/`
+  emits one FAQPage with 5 questions.
+
+**The site footer now renders on `/comicreader/` (2026-09-10).** `AppLayout` in `App.jsx`
+used to exclude it (`!isComicReader`), and the page compensated with a hand-rolled
+Changelog/Privacy link row plus a "Back to home" button. The exclusion is gone and so are
+those two stand-ins — the footer already carries both links. Only the two retired
+sister-app stubs (`/smartdecrypt`, `/contentcue`) still opt out.
 
 ### Reader feature media (`/comicreader/`)
 The comic-reader hero and first two feature rows use mixed-aspect marketing media
@@ -262,7 +283,7 @@ keeping Home.jsx's copy in sync — it may be worth deleting as dead code.
 `ReaderFamilyGuide`): a 5-item foldable FAQ, "How can you use BiblioFuse Comic
 Reader?", condensing five usage scenarios (offline on mobile, bigger screen via
 Mac/PC/NAS browser, streaming without device storage, TV lean-back reading, iCloud
-auto-load/unload) into short tap-to-expand Q&A with a small inline-SVG device icon
+auto-load/unload — the streaming answer also names OPDS/Komga/Kavita as of 2026-09-10) into short tap-to-expand Q&A with a small inline-SVG device icon
 per item. Each answer links to the full source illustration (a marketing infographic
 under `public/image/comicreader/usage-guide/`) via a "View illustration (English)"
 link that opens the image in a new tab — the image is never eagerly loaded, keeping
@@ -270,6 +291,11 @@ the section lightweight. Unlike `ReaderFamilyGuide` below it, this section IS
 translated across all 11 locales (`redesign.comicReaderPage.usageGuide.*`); only the
 linked illustration images themselves stay English-only, since they're pre-rendered
 marketing graphics with baked-in text that can't be localized.
+
+Since 2026-09-10 these five items are also **the page's FAQPage structured data** — see
+the `redesign.comicReaderPage.faq` note under "Flagship BiblioFuse Reader" above. Editing
+a `usageGuide` question or answer now changes what Google sees, so keep them phrased as
+real questions with self-contained answers.
 
 ### Reader-family platform picker (`/comicreader/`, added 2026-07-20)
 `src/components/ReaderFamilyGuide.jsx`, rendered after `UsageGuide` on
@@ -294,6 +320,31 @@ the product owner confirmed Android TV streaming shipped — the coverage matrix
 already only had `streaming.localWifi` set, so only the interactive picker's client
 list was stale; see the "sixth pass" comment at the top of the file.
 
+**Seventh pass, 2026-09-10 — OPDS / Kavita / Komga.** Product-owner corrections against
+the shipped apps (OPDS 1.x + OPDS-PSE landed 2026-08-10, native Komga/Kavita API
+2026-08-12; dates from `src/data/feature-matrix.js`):
+
+- A new **`opds` column in `CONTENT_COLS`**, immediately right of `Host`, ticked for
+  iPhone/iPad, visionOS and Android phone. The two TV clients cannot reach a third-party
+  server. Table `min-w` went 900 → 1000px to fit the longer label.
+- A new **`opds` host option in the picker**, listed last so the three BiblioFuse hosts
+  stay together and the third-party option reads as the outlier. It is flagged
+  `kind: 'opds'` and short-circuits `Recommendation` before any `MODE_INFO` logic:
+  BiblioFuse talks straight to the server over HTTP, so **none of the three connection
+  modes apply**. "Only at home" resolves to "same Wi-Fi as the server"; "at home and
+  away" resolves to "VPN, or Tailscale on both ends with subnet routing on the host" —
+  the user's own network setup, not something the app negotiates. Clients are gated by
+  `CLIENTS.<key>.opdsCapable`; Apple TV and Android TV get an explicit can't-do panel
+  instead of a wrong recommendation.
+- Step 3 links to `/{lang}/tools/qr-generator/` — typing a server URL and credentials on
+  a phone is the slow part, and the QR tool already exists for exactly this.
+- **`Android phone` role fixed**: it was still ticked under "Standalone reader (no
+  streaming)", contradicting the sixth pass that flipped
+  `CLIENTS.androidphone.canStream` to `true`. Moved to "has streaming".
+
+The component now takes a `lang` prop (for the QR link) but its own copy stays
+English-only, as before.
+
 The `VisionProSection` (rendered after `ToolsHighlight`) covers the native visionOS
 app, live on the App Store as part of the universal iOS + Mac purchase. Its copy lives
 under `redesign.comicReaderPage.vision.*` and names the three spatial library layouts
@@ -308,12 +359,48 @@ visionOS FAQ entries sit near the top of `redesign.comicReaderPage.faq`. Screens
 web-optimized JPEGs in `public/image/comicreader/vision/`. Keep marketing of a visionOS
 build gated on real App Store availability (see the rollout rules in CLAUDE.md).
 
+### Apple TV section (`/comicreader/`, added 2026-09-10)
+`AppleTvSection` (inline in `ComicReader.jsx`, rendered directly after
+`VisionProSection`, before `EditionChooser`), `id="apple-tv"`. Deliberately lighter than
+the visionOS section above it: one wide infographic
+(`public/image/comicreader/appletv/controls.jpg`, 2000x1125 JPEG, resized from
+`/Volumes/MasterNAS/BiblioFuse feature summary/TVOS/4.jpg`) that already carries the Siri
+Remote control map and the feature legend, then a 1-2-3 flow and four cards saying the
+things the picture cannot. Copy under `redesign.comicReaderPage.appletv.*`, translated in
+all 11 locales; `appletv.title` is in the page's schema `featureList`.
+
+The section ends with `lanNote`, which states plainly that **Apple TV is local-network
+only** — it streams from a Mac or PC on the same Wi-Fi, tvOS has no iCloud Documents
+entitlement, and the Tailscale path is built but ships disabled. Keep that caveat: it is
+the same fact `ReaderFamilyGuide.jsx`'s `CLIENTS.appletv` note records, and without it
+someone buys expecting to read away from home. Anything claimed here must match
+`docs/reader-family-data/`.
+
 Cover-thumbnail messaging belongs in both layers: a compact USP line in each
 homepage reader card, then fuller explanation in the Reader library section. Site
 screenshots should use generated or sanitized covers, not real copyrighted book covers.
 
 When describing Reader streaming, use Mac/PC language unless the feature is truly
 Mac-only. iOS can stream and read from both Mac and PC libraries.
+
+### Hero outbound badges (`/comicreader/`, updated 2026-09-10)
+Under the three store badges the hero carries a "self-host on a NAS" row — Docker,
+Synology, NAS on GitHub — and a Discord badge on its own line. `HOST_BADGES` in
+`ComicReader.jsx` holds the label/sub/icon for each; `docker` and `synology` use stroke
+icons, `github` and `discord` filled brand marks.
+
+- Docker and Synology point at the two **install guides**, not the repo root, and are
+  **language-aware**: `nasDocUrl(guide, lang)` builds
+  `…/blob/main/docs/<guide>[.<lang>].md` using `NAS_DOC_LOCALES` (`zh` → `zh-CN`, English
+  has no suffix). All 22 combinations were verified 200 on 2026-09-10. If a locale is
+  dropped upstream this 404s silently, so re-check the repo's `docs/` listing before
+  adding a locale.
+- `HOSTS.docker/synology.appLink` in `ReaderFamilyGuide.jsx` point at the repo root and
+  the releases list instead. Those are **deliberately different targets** — the old
+  "keep in sync" comment was removed.
+- The Discord invite `https://discord.gg/Tk9cEA449` **expires 2026-10-10**. Replace it
+  with a never-expiring invite from the server's Invites settings or the button will
+  break.
 
 ## ContentCue and SmartDecrypt (retired 2026-07-20)
 Both used to be full Layer-1 marketing pages here; see "Sister-app landing pages"
@@ -339,7 +426,7 @@ before adding a page that draws on a different audience than this hub's.
 
 ## Homepage structure, updated 2026-09-10
 
-`Hero -> SecondHero -> ToolsStrip -> FaqSection -> PrivacyStrip -> BlogPreview -> StickyDownloadBar`.
+`Hero -> SecondHero -> ThirdHero -> ToolsStrip -> FaqSection -> PrivacyStrip -> BlogPreview -> StickyDownloadBar`.
 
 Removed: `ProductFamily` ("The BiblioFuse family"), `AndroidInterestSection`,
 `StandaloneToolsSection`, `FinalCTA` ("Start here"), and the hand-maintained
@@ -348,18 +435,52 @@ Removed: `ProductFamily` ("The BiblioFuse family"), `AndroidInterestSection`,
 (`ProductCard`, `WebToolButton`, `ComparisonTable`, `ReaderTeaser`, `ReaderSection`,
 `ReaderFeatureRow`, `AppStoreImageBadge` and the table-cell renderers), all deleted.
 
-`SecondHero` leads on **live comic & manga translation** because that is the one thing the
-field does not have: Panels gates OPDS behind a $9.99/yr tier, Komic does native
-Komga/Kavita, YACReader needs its own desktop server, and none advertise in-place
-translation. Kavita/Komga and OPDS follow as proof the table stakes are covered. Feature
-claims and dates come from `src/data/feature-matrix.js` - check there before editing them.
+**Two heroes below the fold, split 2026-09-10.** `SecondHero` originally carried both the
+streaming story and the translation story; they were separated so neither has to carry the
+other's pitch.
+
+- `SecondHero` — **streaming & sync**, dark band (`#0b1220`), artwork right. Names the
+  three answers to "my phone is full": a BiblioFuse host app (Mac/PC/Synology/Docker),
+  your own iCloud Drive, and a third-party OPDS / Komga / Kavita server. Copy under
+  `redesign.home.secondHero.*`, written fresh in all 11 locales.
+- `ThirdHero` — **live comic & manga translation**, light band, artwork left, violet
+  accent. It leads on translation because that is the one thing the field does not have:
+  Panels gates OPDS behind a $9.99/yr tier, Komic does native Komga/Kavita, YACReader
+  needs its own desktop server, and none advertise in-place translation. Copy is the
+  previous `secondHero` block, moved to `redesign.home.thirdHero.*`.
+
+The light/dark alternation and the mirrored artwork side are deliberate — two dark bands
+in a row read as one long block. Feature claims and dates come from
+`src/data/feature-matrix.js`; check there before editing them.
+
+**That move exposed a real i18n gap.** The old `secondHero` had never been translated: all
+10 non-English locales were serving the English strings, and `es`/`fr`/`ja` homepages are
+in `INDEXED_LANGUAGES`, so indexed pages were carrying English body copy — the exact
+pattern in the 2026-06-24 incident writeup. `redesign.home.thirdHero.*` is now translated
+in all 11. Run `node scripts/scan-untranslated.cjs` after adding any homepage section;
+the build does not catch this.
+
+**Hero artwork, replaced 2026-09-10.** The three phone shots are App Store screenshots
+resized to 416x900 JPEG in `public/image/home/`: `hero-formats.jpg` (Hero),
+`hero-streaming.jpg` (SecondHero, the Locations screen showing device / iCloud Drive / Mac
+sources), `hero-translation.jpg` (ThirdHero, the live-translation panel over a page). They
+replaced `/image/offline-apps/bibliofuse/iphone/1.png`, which was a 1.8 MB PNG rendered
+into a 380px slot and was the homepage LCP element; the same file was used for two
+different sections. Sources are on the NAS at
+`/Volumes/MasterNAS/BiblioFuse feature summary/Bibliofuse iPhone/{1,4,12}.jpg`. Each `img`
+now carries intrinsic `width`/`height`, the hero is `fetchpriority="high"`, and the two
+lower ones are `loading="lazy"`. `public/image/offline-apps/bibliofuse/{iphone,ipad}/`
+(~21 MB) is now referenced by nothing and is a deletion candidate.
 
 `ToolsStrip` is **cards only, by design**. A working tool on the homepage would compete
 with the `/tools/<slug>/` pages for the same queries and pull ~13 MB of WASM into every
 branded visit.
 
-The homepage FAQ is down to three top-level questions. The rest moved to `/guide/`; the
-three that stayed keep the FAQPage schema on the site's strongest page.
+The homepage FAQ is down to **four** top-level questions. The rest moved to `/guide/`, and
+"Does one purchase cover all platforms?" moved *up* here from `/comicreader/` on
+2026-09-10 (see below) — it is a buying question, and it was the last item left on the
+reader page's own FAQ. The four that remain keep the FAQPage schema on the site's
+strongest page.
 
 ## `/comicreader/` edition chooser replaced the compare table
 
@@ -372,3 +493,13 @@ for per-platform capability; the chooser only answers "which one do I download".
 
 `redesign.home.table` was renamed `redesign.comicReaderPage.editions` - it had not been on
 the homepage for some time and the old key misled.
+
+**Store links live in code, not in the locale files (2026-09-10).** Each edition item used
+to carry its own `href`, which meant 11 copies of every store URL and no way to notice one
+rotting. Two had: the PC card returned **410** (stale Store ID `9n1lnmm3f7h9`) and the
+Android card **404** (wrong package name `com.mlogictech.bibliofuse`), while the same two
+links in the hero above were fine. `EDITION_HREFS` in `ComicReader.jsx` now maps
+`item.key` to the same `appStoreUrl` / `bibliofusePcUrl` / `playStoreUrl` / `nasRepoUrl`
+constants the hero uses, `href` was stripped from all 11 locale files, and items whose
+`key` has no mapping are filtered out rather than rendering a dead card. Never put a store
+URL back into `translation.json`.
