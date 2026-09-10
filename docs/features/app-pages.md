@@ -335,3 +335,40 @@ Adding one means: new page component in `src/pages/`, new route + sub-routes in
 actually fits the reader/ebook theme first — see `docs/site-showcase-audit.md`
 §3 ("off-theme apps dilute the hub") and the ContentCue/SmartDecrypt retirement above
 before adding a page that draws on a different audience than this hub's.
+
+
+## Homepage structure, updated 2026-09-10
+
+`Hero -> SecondHero -> ToolsStrip -> FaqSection -> PrivacyStrip -> BlogPreview -> StickyDownloadBar`.
+
+Removed: `ProductFamily` ("The BiblioFuse family"), `AndroidInterestSection`,
+`StandaloneToolsSection`, `FinalCTA` ("Start here"), and the hand-maintained
+`redesign.home.hero.version` pill, which read "Version 2.0.1" while the changelog was at
+2.1.7. `Home.jsx` went from ~1030 to ~600 lines; those removals orphaned seven helpers
+(`ProductCard`, `WebToolButton`, `ComparisonTable`, `ReaderTeaser`, `ReaderSection`,
+`ReaderFeatureRow`, `AppStoreImageBadge` and the table-cell renderers), all deleted.
+
+`SecondHero` leads on **live comic & manga translation** because that is the one thing the
+field does not have: Panels gates OPDS behind a $9.99/yr tier, Komic does native
+Komga/Kavita, YACReader needs its own desktop server, and none advertise in-place
+translation. Kavita/Komga and OPDS follow as proof the table stakes are covered. Feature
+claims and dates come from `src/data/feature-matrix.js` - check there before editing them.
+
+`ToolsStrip` is **cards only, by design**. A working tool on the homepage would compete
+with the `/tools/<slug>/` pages for the same queries and pull ~13 MB of WASM into every
+branded visit.
+
+The homepage FAQ is down to three top-level questions. The rest moved to `/guide/`; the
+three that stayed keep the FAQPage schema on the site's strongest page.
+
+## `/comicreader/` edition chooser replaced the compare table
+
+`EditionChooser` (4 cards - Apple / PC / Android / NAS, with purchase model and store
+links) replaced an 11-row `ComparisonTable`. Eight of those rows already existed in
+`/features/` more granularly. Three did **not**, and were added to the matrix as a new
+`formats` group plus two features: read-format support (CBR appeared nowhere in the matrix
+at all), iCloud bookshelf, and localised interface. `/features/` is now the single source
+for per-platform capability; the chooser only answers "which one do I download".
+
+`redesign.home.table` was renamed `redesign.comicReaderPage.editions` - it had not been on
+the homepage for some time and the old key misled.

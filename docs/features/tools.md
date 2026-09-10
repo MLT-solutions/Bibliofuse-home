@@ -112,3 +112,23 @@ remove them there and 301 across, following the `/*/tools/x /:1/...` pattern alr
 - redirect the four tool URLs and their four `learn/` pages to the new tool pages
 
 Until then the same tools are live on two domains — acceptable only as a short overlap.
+
+
+## Windows tools and the Netlify retirement (2026-09-10)
+
+`/tools/` gained an "Offline tools for Windows" group carrying BiblioFuse CBZ Resizer
+(`9p7b02538tfq`) and BiblioFuse EPUB Resizer (`9pdllhdz6kkl`), moved off the homepage when
+`StandaloneToolsSection` was retired. Copy lives at `redesign.toolsHub.offline`.
+`MicrosoftStoreBadge` was lifted out of `Home.jsx` into `src/components/` so both pages
+share one copy.
+
+**BiblioFuse Web is retired.** Its card pointed at `bibliofuse-web.netlify.app` - the last
+thing on the site sending people off-domain for a job the site now does itself, and the
+same indirection that made the old conversion articles convert at 0.25-0.7%. Check the
+iOS/Android apps for a hardcoded link before taking the Netlify site down.
+
+## Header clearance
+
+Tool pages must clear the `fixed h-16` nav. `ToolPageLayout.jsx` and `ToolsHub.jsx` use
+`pt-28`, matching every other page. They originally shipped with `pt-10`/`pt-12`, which put
+the breadcrumb behind the header.
