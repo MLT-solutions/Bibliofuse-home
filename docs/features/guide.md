@@ -154,3 +154,46 @@ CBR/RAR and "11 languages" for NAS — the same defect shape as `icloud-bookshel
   visionOS iCloud cap. That is a sibling-repo doc, not this site.
 - The `controller` row is labelled "Game controller + custom bindings" while Windows
   bindings are fixed, not remappable. Needs the Apple side checked before rewording.
+
+## Step 3 wave 2: the hub gained the topics nothing on the site covered (2026-09-10)
+
+11 Q&A across 5 sections → **21 across 8**, all from the Step 2 code verification, and
+**zero new URLs**. These are the topics the demand research found competitors treat as
+named pages while bibliofuse.com had nothing — and unlike the EPUB and CBZ clusters, no
+existing article competes for them, which is why they were safe to add here.
+
+| Section | Added |
+|---|---|
+| `libraries` (had links only) | What OPDS is and how to add a server · Komga · Kavita · iCloud vs a server |
+| `reading` | Right-to-left / manga reading direction |
+| `migration` (new) | Moving to a new device · whether local books survive a backup restore |
+| `purchase` (new) | What one purchase covers · restoring Pro after a reinstall |
+| `troubleshooting` (new) | iCloud not syncing · plus the streaming "host does not appear" item, moved out of `streaming` where it never belonged |
+
+### Three findings that shaped the copy
+- **Right-to-left is free and mostly automatic.** The site ranks #1 for "rtl reading" on a
+  page that never mentioned reading direction. It covers every page-turning format and
+  self-configures from the file's own metadata; it does not apply to prose EPUB or TXT.
+- **Local books are NOT excluded from iPhone backups**, which is the opposite of what the
+  competitor evidence assumed (Panels' guide says local files are excluded). BiblioFuse
+  does not set that flag, so a local library is part of a normal device backup. Worth
+  re-checking if a future release adds the exclusion for storage reasons — the answer
+  would flip.
+- **Komga's provider comment says "unvalidated against a live server"; its test file says
+  "validated against a live Komga on 2026-08-05"** — both in the same commit. The test
+  names a date and describes the two things that broke and were fixed, so it is the more
+  specific evidence and the header comment is stale. Published as working, with the one
+  real gap stated: bookmark sync is Kavita-only, position sync works on both.
+
+### English only, on purpose
+The other 10 locales keep their 5 previously-translated sections and 11 answers. Because
+`guidePage.sections` exists in every locale, i18next returns each locale's own array — so
+a non-English reader sees fewer sections, never a mix of languages. `/guide/` is in
+`NOINDEX_NON_EN_ROUTES`, so those pages ship as the 556-byte shell and none of this
+reaches Google in the wrong language. Translate once the English version proves it earns.
+
+### A note on verifying this page
+The browser pane reported 135px of horizontal overflow and then a 0px viewport width. Both
+were artifacts of the pane being hidden — layout measures against a collapsed viewport
+there. Re-measured with an explicit 1280px viewport: zero overflow, no offenders. Do not
+trust geometry from a hidden pane; set a viewport first.

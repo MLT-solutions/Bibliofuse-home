@@ -1463,7 +1463,65 @@
           "id": "libraries",
           "title": "Libraries & servers",
           "desc": "Kavita, Komga and any OPDS catalogue, plus folder-as-library browsing.",
-          "items": [],
+          "items": [
+            {
+              "q": "What is OPDS, and how do I connect an OPDS server?",
+              "a": "OPDS is an open catalogue format that lets an app browse and read from a self-hosted book or comic server page by page, instead of downloading the whole library first. BiblioFuse connects to any OPDS 1.x server — Calibre-Web, COPS, Ubooquity and others — including OPDS-PSE page streaming for comics.",
+              "bullets": [
+                {
+                  "text": "Adding a server",
+                  "sub": [
+                    "Open Settings, add the server's catalogue URL, and sign in if it asks for credentials.",
+                    "If the server displays a QR code, you can scan that instead of typing the address.",
+                    "This is a Pro feature."
+                  ]
+                },
+                {
+                  "text": "The QR scanner is for catalogue servers only.",
+                  "sub": [
+                    "It does not pair a Mac or PC for streaming — that uses local network discovery and needs no camera. If you are setting up streaming, see the streaming section instead."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "How do I connect BiblioFuse to my Komga server?",
+              "a": "Add your Komga server's address and credentials in Settings and BiblioFuse browses it through Komga's own API rather than a generic OPDS feed, so you get series and volume covers, tags and genres. Your reading position reads from and writes back to the server. Pro required.",
+              "bullets": [
+                {
+                  "text": "Bookmarks do not sync with Komga.",
+                  "sub": [
+                    "In-book bookmarks sync with Kavita only. Reading position syncs with both. If bookmark sync matters to you and you have a choice of server, that is the difference."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "How do I connect to Kavita, and will my reading progress sync?",
+              "a": "Yes, both ways. Add your Kavita server in Settings and BiblioFuse uses Kavita's native API rather than the OPDS-PSE extension that most reader apps rely on — which is where a lot of the progress-sync trouble in the wider Kavita ecosystem comes from. Reading position syncs in both directions, and in-book bookmarks sync too. Pro required.",
+              "bullets": []
+            },
+            {
+              "q": "Should I use iCloud or a server to keep my library in sync?",
+              "a": "They are two independent options and you can use either.",
+              "bullets": [
+                {
+                  "text": "Your own iCloud folder",
+                  "sub": [
+                    "Put books in BiblioFuse's iCloud folder and the whole library — files, covers, progress, ratings and tags — follows you to every device signed into the same account.",
+                    "This covers the whole folder and is a Pro feature, not a free preview tier."
+                  ]
+                },
+                {
+                  "text": "A Komga, Kavita or OPDS server",
+                  "sub": [
+                    "Nothing is copied to the device: you browse and read from the server, with position sync where the server type supports it.",
+                    "Better for a large collection you already host, and the only option if your library lives on a NAS. Also Pro."
+                  ]
+                }
+              ]
+            }
+          ],
           "links": [
             {
               "to": "/tools/qr-generator/",
@@ -1508,22 +1566,6 @@
                   "text": "A NAS host works differently — it has no iCloud path at all.",
                   "sub": [
                     "Pair it once on your local network so the certificate is stored, after which the same host can be reached remotely over Tailscale."
-                  ]
-                }
-              ]
-            },
-            {
-              "q": "Streaming is set up correctly but the host does not appear — what should I try?",
-              "a": "Stale address files used to be the usual cause. Both the Mac and Windows hosts now clear them by themselves every time streaming starts, stops, or the address changes — including iCloud conflict copies — so this is rarely the problem any more.",
-              "bullets": [
-                {
-                  "text": "Quit and reopen the app on the host. It republishes a fresh address on launch.",
-                  "sub": []
-                },
-                {
-                  "text": "On the reading device, open the streaming source list and look for a green dot beside the host name.",
-                  "sub": [
-                    "Grey means the host has not been reached yet — wait a few seconds, or force-quit and reopen the app on the host."
                   ]
                 }
               ]
@@ -1625,6 +1667,19 @@
                   "text": "No BiblioFuse update is required. BiblioFuse detects newly installed voices when they are exposed through the Android, Apple, or Windows text-to-speech system"
                 }
               ]
+            },
+            {
+              "q": "Can I read manga right to left?",
+              "a": "Yes, and usually without doing anything. A reading-direction switch covers every page-turning format — CBZ, ZIP, CBR, RAR, PDF and comic-style EPUB — and it is free, not a Pro feature. It does not apply to prose EPUB or plain text, which follow the book's own text direction rather than a page order.",
+              "bullets": [
+                {
+                  "text": "It sets itself where it can.",
+                  "sub": [
+                    "A comic EPUB that declares right-to-left in its own metadata opens in manga mode on its own, as does a book streamed from a server that reports right-to-left. The switch is there for files that say nothing either way.",
+                    "Changing it mirrors the page, the slider and the on-screen controls together, so the whole reader reads in the same direction."
+                  ]
+                }
+              ]
             }
           ],
           "links": [
@@ -1661,6 +1716,132 @@
             {
               "to": "/blog/bibliofuse-tools-tab-guide/",
               "label": "The Tools tab, explained"
+            }
+          ]
+        },
+        {
+          "id": "migration",
+          "title": "Moving to a new device",
+          "desc": "What carries over on its own, and what you have to bring with you.",
+          "items": [
+            {
+              "q": "How do I move my library and reading progress to a new iPhone or iPad?",
+              "a": "It depends on where your books live, and two of the three cases need nothing from you.",
+              "bullets": [
+                {
+                  "text": "Books in your iCloud folder — automatic.",
+                  "sub": [
+                    "Sign into the same account on the new device and the library reappears with its progress, ratings and tags. Nothing to transfer."
+                  ]
+                },
+                {
+                  "text": "Books on a Komga, Kavita or OPDS server — automatic.",
+                  "sub": [
+                    "Reconnect to the same server. The books never lived on the old device in the first place."
+                  ]
+                },
+                {
+                  "text": "Books stored only on the old device — bring them yourself.",
+                  "sub": [
+                    "Use Files, AirDrop or Wi-Fi Transfer, the same three routes you used to add them. See the getting-started section."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Do local books survive an iPhone backup and restore?",
+              "a": "Yes. Locally stored books live in the app's normal documents folder, and BiblioFuse does not exclude that folder from backups — so unlike some other file-based reader apps, your local library is part of a standard encrypted computer backup or an iCloud device backup, along with everything else.",
+              "bullets": [
+                {
+                  "text": "If books did go missing after a restore, the usual causes are not app-specific.",
+                  "sub": [
+                    "The new device was set up as new rather than restored from that particular backup.",
+                    "The backup predates when you added the books.",
+                    "An iCloud device backup skipped large files because the account was near its storage limit."
+                  ]
+                },
+                {
+                  "text": "Moving books across by hand always works, whatever the backup did.",
+                  "sub": [
+                    "Files, AirDrop and Wi-Fi Transfer do not depend on backup state at all."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "purchase",
+          "title": "Buying and restoring",
+          "desc": "What one purchase covers, and how to get it back.",
+          "items": [
+            {
+              "q": "Does one purchase cover iPhone, iPad, Mac, Vision Pro and Apple TV?",
+              "a": "Yes. Those five are one app listing, and Pro is a single purchase shared across all of them — buy it on any one device and it unlocks everywhere you are signed into the same Apple ID. There is no per-platform purchase and nothing to buy twice. Monthly, yearly and lifetime options are available.",
+              "bullets": [
+                {
+                  "text": "Android and Windows are separate.",
+                  "sub": [
+                    "They are different apps on different stores, so an Apple purchase does not carry across to them, and vice versa."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "I reinstalled the app and lost Pro — how do I get it back?",
+              "a": "Just open the app. On iPhone, iPad, Mac and Apple TV your existing Pro is detected at launch, before you tap anything, because the app checks your App Store purchase history on startup. If it has not appeared, use Restore Purchases in Settings — it is always there as a fallback on every platform.",
+              "bullets": [
+                {
+                  "text": "Nothing extra is involved.",
+                  "sub": [
+                    "Purchases go through Apple's own system rather than a third-party account, so restoring works the same way it does for any App Store purchase — no BiblioFuse sign-in, and nothing for us to look up on your behalf."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "title": "When something is not working",
+          "desc": "The two failures that come up most, and what actually causes them.",
+          "items": [
+            {
+              "q": "Why is my library or reading progress not syncing through iCloud?",
+              "a": "BiblioFuse keeps each book's progress, rating and tags in a small companion file next to the book in your iCloud folder. That means syncing depends on Apple's iCloud Drive working normally on both devices rather than on anything BiblioFuse controls.",
+              "bullets": [
+                {
+                  "text": "Check these four, in order",
+                  "sub": [
+                    "iCloud Drive is turned on, and BiblioFuse is enabled for it, on both devices.",
+                    "Both devices are signed into the same Apple ID.",
+                    "The account is not out of iCloud storage.",
+                    "The book itself is fully downloaded on the device you are checking — not still showing a cloud icon."
+                  ]
+                },
+                {
+                  "text": "An empty iCloud folder is a real state, not necessarily a fault.",
+                  "sub": [
+                    "If Settings says iCloud is connected but you see no books, open the Files app and look directly. A folder that is genuinely empty behaves differently from one that is failing to connect, and it is worth telling them apart before troubleshooting further."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Streaming is set up correctly but the host does not appear — what should I try?",
+              "a": "Stale address files used to be the usual cause. Both the Mac and Windows hosts now clear them by themselves every time streaming starts, stops, or the address changes — including iCloud conflict copies — so this is rarely the problem any more.",
+              "bullets": [
+                {
+                  "text": "Quit and reopen the app on the host. It republishes a fresh address on launch.",
+                  "sub": []
+                },
+                {
+                  "text": "On the reading device, open the streaming source list and look for a green dot beside the host name.",
+                  "sub": [
+                    "Grey means the host has not been reached yet — wait a few seconds, or force-quit and reopen the app on the host."
+                  ]
+                }
+              ]
             }
           ]
         }
