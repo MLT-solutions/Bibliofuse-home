@@ -26,10 +26,11 @@ function nasDocUrl(guide, lang) {
   const suffix = NAS_DOC_LOCALES[lang] ? `.${NAS_DOC_LOCALES[lang]}` : '';
   return `${nasRepoUrl}/blob/main/docs/${guide}${suffix}.md`;
 }
-// Invite generated 2026-09-10. NOTE: this one carries an expiry of
-// 2026-10-10 — replace it with a never-expiring invite from the server's
-// Invites settings, or this button 404s a month from now.
-const discordUrl = 'https://discord.gg/Tk9cEA449';
+// Deliberately our own path, not a discord.gg URL. The invite code lives in exactly one
+// place — public/_redirects — so the apps, the store listing and the NAS README can all
+// link bibliofuse.com/discord and a dead invite becomes a one-line fix. Do not inline an
+// invite code here again.
+const discordUrl = '/discord';
 const imageBase = '/image/offline-apps/bibliofuse';
 const featureMediaBase = '/image/comicreader/feature-summary';
 

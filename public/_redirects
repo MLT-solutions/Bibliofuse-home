@@ -70,3 +70,25 @@
 # destination for the query it ranked for, so it 404s like the other 38.
 # Cost of removing it: 2 clicks / 117 impressions across 8 locale URLs over the 100 days
 # to 2026-09-09, CTR 1.9-3.7% at position 8.6-10.1 — the intent-mismatch signature.
+
+# --- Community ---
+# The Discord invite is referenced ONLY here. Everything else — the /comicreader/ hero
+# badge, the iOS/Android apps, the App Store description, the NAS distribution README —
+# links to bibliofuse.com/discord instead, so a dead invite is a one-line fix in one repo
+# rather than a hunt through every place the code was pasted.
+#
+# UWKcJ4uMMQ was generated 2026-09-10 with Expire after: Never and no use limit
+# (verified: the invites API returns expires_at: null). The invite it replaced was a
+# 30-day default that would have 404'd on 2026-10-10.
+#
+# Invites also die from channel changes, not just expiry: this one is bound to
+# #announcement, so deleting, renaming or restricting that channel breaks the link.
+#
+# 302, not 301, on purpose. Browsers cache a 301 indefinitely, so anyone who clicked once
+# would keep being sent to the old invite from their own cache after we changed it here —
+# which defeats the entire point of the indirection. Every other rule in this file points
+# at a permanent destination and correctly uses 301; this one is expected to change.
+/discord           https://discord.gg/UWKcJ4uMMQ  302
+/discord/          https://discord.gg/UWKcJ4uMMQ  302
+/:lang/discord     https://discord.gg/UWKcJ4uMMQ  302
+/:lang/discord/    https://discord.gg/UWKcJ4uMMQ  302

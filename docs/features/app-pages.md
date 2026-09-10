@@ -404,9 +404,24 @@ icons, `github` and `discord` filled brand marks.
 - `HOSTS.docker/synology.appLink` in `ReaderFamilyGuide.jsx` point at the repo root and
   the releases list instead. Those are **deliberately different targets** — the old
   "keep in sync" comment was removed.
-- The Discord invite `https://discord.gg/Tk9cEA449` **expires 2026-10-10**. Replace it
-  with a never-expiring invite from the server's Invites settings or the button will
-  break.
+- The Discord badge links **`/discord`**, not a `discord.gg` URL. The invite code is
+  referenced in exactly one place, `public/_redirects`, so the iOS/Android apps, the App
+  Store description and the NAS distribution README can all link `bibliofuse.com/discord`
+  and a dead invite is a one-line fix in one repo. Do not inline an invite code in the
+  page again.
+  - That rule is a **302, not a 301**: browsers cache a 301 indefinitely, so anyone who
+    clicked once would keep being sent to the old invite from their own cache after it
+    changed here. Every other rule in `_redirects` points somewhere permanent and
+    correctly uses 301.
+  - The current invite (`UWKcJ4uMMQ`, generated 2026-09-10) has **no expiry** — verified
+    via `discord.com/api/v10/invites/<code>?with_expiration=true` returning
+    `expires_at: null`. The one it replaced was a 30-day default that would have 404'd on
+    2026-10-10; Discord's invite dialog defaults to a temporary link, which is why this
+    happens to people who never chose an expiry.
+  - Expiry is not the only way an invite dies. An invite is bound to a **channel**, so
+    deleting, renaming or restricting that channel breaks it. This one points at
+    `#announcement`, which is also read-only for new arrivals — worth repointing at a
+    welcome or general channel.
 
 ## ContentCue and SmartDecrypt (retired 2026-07-20)
 Both used to be full Layer-1 marketing pages here; see "Sister-app landing pages"
