@@ -620,11 +620,6 @@
           "excerpt": "Een praktische analyse van wat een goede mobiele comiclezer maakt — formaatondersteuning, prestaties, leesrichting en bibliotheekbeheer — en hoe BiblioFuse aan elk punt voldoet.",
           "seoDescription": "Een praktische analyse van wat een goede mobiele comiclezer maakt — formaatondersteuning, prestaties, leesrichting en bibliotheekbeheer — en hoe."
         },
-        "ocr-comics-extract-text-iphone": {
-          "title": "Tekst Uit Comics en Manga Halen op iPhone met OCR",
-          "excerpt": "De on-device OCR van BiblioFuse laat je op elke comic- of mangapagina tikken om tekst te extraheren — zoek Japans woordenschat op, kopieer citaten of vertaal dialogen.",
-          "seoDescription": "De on-device OCR van BiblioFuse laat je op elke comic- of mangapagina tikken om tekst te extraheren — zoek Japans woordenschat op, kopieer citaten."
-        },
         "epub-reader-iphone-no-drm": {
           "title": "Beste DRM-Vrije EPUB-Lezer voor iPhone — Zonder Apple Books",
           "excerpt": "BiblioFuse is gebouwd voor DRM-vrije EPUB-collecties — importeer van Humble Bundle, Project Gutenberg of onafhankelijke uitgevers, organiseer met labels en lees zonder winkel tussenin.",
@@ -1535,10 +1530,6 @@
             {
               "to": "/blog/bibliofuse-tools-tab-guide/",
               "label": "The Tools tab, explained"
-            },
-            {
-              "to": "/blog/ocr-comics-extract-text-iphone/",
-              "label": "OCR: extracting text from comics"
             }
           ]
         }

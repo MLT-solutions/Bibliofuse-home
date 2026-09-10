@@ -227,11 +227,6 @@
           "excerpt": "A practical breakdown of what makes a great mobile comic reader — format support, performance, reading direction, and library management — and how BiblioFuse delivers on each.",
           "seoDescription": "A practical breakdown of what makes a great mobile comic reader — format support, performance, reading direction, and library management — and how."
         },
-        "ocr-comics-extract-text-iphone": {
-          "title": "Extract Text from Comics and Manga on iPhone with OCR",
-          "excerpt": "BiblioFuse's on-device OCR lets you tap any comic or manga page to extract text — look up Japanese vocabulary, copy quotes, or translate dialogue without leaving the reader.",
-          "seoDescription": "BiblioFuse's on-device OCR lets you tap any comic or manga page to extract text — look up Japanese vocabulary, copy quotes, or translate dialogue without."
-        },
         "epub-reader-iphone-no-drm": {
           "title": "Best DRM-Free EPUB Reader for iPhone — Without Apple Books",
           "excerpt": "BiblioFuse is built for DRM-free EPUB collections — import from Humble Bundle, Project Gutenberg, or indie publishers, organize with tags, and read without a storefront in the way.",
@@ -1535,10 +1530,6 @@
             {
               "to": "/blog/bibliofuse-tools-tab-guide/",
               "label": "The Tools tab, explained"
-            },
-            {
-              "to": "/blog/ocr-comics-extract-text-iphone/",
-              "label": "OCR: extracting text from comics"
             }
           ]
         }

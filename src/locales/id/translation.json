@@ -620,11 +620,6 @@
           "excerpt": "Analisis praktis tentang apa yang membuat pembaca komik mobile yang baik — dukungan format, performa, arah baca, dan manajemen perpustakaan — serta bagaimana BiblioFuse memenuhi setiap poin.",
           "seoDescription": "Analisis praktis tentang apa yang membuat pembaca komik mobile yang baik — dukungan format, performa, arah baca, dan manajemen perpustakaan — serta."
         },
-        "ocr-comics-extract-text-iphone": {
-          "title": "Ekstrak Teks dari Komik dan Manga di iPhone dengan OCR",
-          "excerpt": "OCR on-device BiblioFuse memungkinkan Anda mengetuk halaman komik atau manga untuk mengekstrak teks — cari kosakata Jepang, salin kutipan, atau terjemahkan dialog tanpa keluar dari pembaca.",
-          "seoDescription": "OCR on-device BiblioFuse memungkinkan Anda mengetuk halaman komik atau manga untuk mengekstrak teks — cari kosakata Jepang, salin kutipan, atau."
-        },
         "epub-reader-iphone-no-drm": {
           "title": "Pembaca EPUB Bebas DRM Terbaik untuk iPhone — Tanpa Apple Books",
           "excerpt": "BiblioFuse dirancang untuk koleksi EPUB bebas DRM — impor dari Humble Bundle, Project Gutenberg, atau penerbit independen, atur dengan tag, dan baca tanpa toko di antaranya.",
@@ -1535,10 +1530,6 @@
             {
               "to": "/blog/bibliofuse-tools-tab-guide/",
               "label": "The Tools tab, explained"
-            },
-            {
-              "to": "/blog/ocr-comics-extract-text-iphone/",
-              "label": "OCR: extracting text from comics"
             }
           ]
         }

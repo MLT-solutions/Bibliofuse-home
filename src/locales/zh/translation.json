@@ -620,11 +620,6 @@
           "excerpt": "从格式支持、性能、阅读方向到库管理，全面分析优秀移动漫画阅读器的标准，以及BiblioFuse如何满足每一项需求。",
           "seoDescription": "从格式支持、性能、阅读方向到库管理，全面分析优秀移动漫画阅读器的标准，以及BiblioFuse如何满足每一项需求。"
         },
-        "ocr-comics-extract-text-iphone": {
-          "title": "在 iPhone 上用 OCR 提取漫画和漫画文字",
-          "excerpt": "BiblioFuse 的本地 OCR 功能让你点按任意漫画或漫画页面即可提取文字——查找日语词汇、复制台词或翻译对话，无需离开阅读器。",
-          "seoDescription": "BiblioFuse 的本地 OCR 功能让你点按任意漫画或漫画页面即可提取文字——查找日语词汇、复制台词或翻译对话，无需离开阅读器。"
-        },
         "epub-reader-iphone-no-drm": {
           "title": "iPhone 最佳无 DRM EPUB 阅读器——无需 Apple Books",
           "excerpt": "BiblioFuse 专为无 DRM 的 EPUB 收藏设计——从 Humble Bundle、Project Gutenberg 或独立出版商导入，用标签整理，无需经过任何商城。",
@@ -1535,10 +1530,6 @@
             {
               "to": "/blog/bibliofuse-tools-tab-guide/",
               "label": "The Tools tab, explained"
-            },
-            {
-              "to": "/blog/ocr-comics-extract-text-iphone/",
-              "label": "OCR: extracting text from comics"
             }
           ]
         }

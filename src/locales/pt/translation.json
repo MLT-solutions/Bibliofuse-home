@@ -620,11 +620,6 @@
           "excerpt": "Uma análise prática do que torna um leitor de quadrinhos móvel excelente — suporte a formatos, desempenho, direção de leitura e gerenciamento de biblioteca — e como o BiblioFuse atende a cada ponto.",
           "seoDescription": "Uma análise prática do que torna um leitor de quadrinhos móvel excelente — suporte a formatos, desempenho, direção de leitura e gerenciamento de."
         },
-        "ocr-comics-extract-text-iphone": {
-          "title": "Extraia Texto de Comics e Mangá no iPhone com OCR",
-          "excerpt": "O OCR no dispositivo do BiblioFuse permite tocar em qualquer página de quadrinho ou mangá para extrair texto — pesquise vocabulário japonês, copie citações ou traduza diálogos sem sair do leitor.",
-          "seoDescription": "O OCR no dispositivo do BiblioFuse permite tocar em qualquer página de quadrinho ou mangá para extrair texto — pesquise vocabulário japonês, copie."
-        },
         "epub-reader-iphone-no-drm": {
           "title": "Melhor Leitor EPUB Sem DRM para iPhone — Sem o Apple Books",
           "excerpt": "BiblioFuse foi feito para coleções EPUB sem DRM — importe do Humble Bundle, Project Gutenberg ou editoras independentes, organize com tags e leia sem uma loja no caminho.",
@@ -1535,10 +1530,6 @@
             {
               "to": "/blog/bibliofuse-tools-tab-guide/",
               "label": "The Tools tab, explained"
-            },
-            {
-              "to": "/blog/ocr-comics-extract-text-iphone/",
-              "label": "OCR: extracting text from comics"
             }
           ]
         }

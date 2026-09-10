@@ -11,7 +11,7 @@ const BASE_URL = 'https://bibliofuse.com';
 // 2026-07-20 reaudit). Locales outside this set still render for visitors but are kept out
 // of the sitemap; SEO.jsx also noindexes them by default.
 const INDEXED_LANGUAGES = ['en', 'es', 'fr', 'ja'];
-const ARTICLE_SLUGS = ['epub-reader-iphone-no-drm', 'cbz-cbr-rar-zip-which-format-best', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'read-cbz-cbr-on-iphone', 'digital-comic-library-management-guide', 'cbz-vs-cbr-vs-epub-formats-explained', 'ocr-comics-extract-text-iphone', 'getting-started-with-bibliofuse', 'bibliofuse-tools-tab-guide'];
+const ARTICLE_SLUGS = ['epub-reader-iphone-no-drm', 'cbz-cbr-rar-zip-which-format-best', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'read-cbz-cbr-on-iphone', 'digital-comic-library-management-guide', 'cbz-vs-cbr-vs-epub-formats-explained', 'getting-started-with-bibliofuse', 'bibliofuse-tools-tab-guide'];
 const ROUTES = [
     { path: '/', priority: '1.0', changefreq: 'weekly' },
     { path: '/comicreader/', priority: '0.8', changefreq: 'monthly' },

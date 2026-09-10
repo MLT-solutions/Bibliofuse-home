@@ -620,11 +620,6 @@
           "excerpt": "フォーマット対応・パフォーマンス・読み方向・ライブラリ管理の観点から優れたモバイルコミックリーダーの条件を整理し、BiblioFuseが各要件を満たす方法を解説。",
           "seoDescription": "フォーマット対応・パフォーマンス・読み方向・ライブラリ管理の観点から優れたモバイルコミックリーダーの条件を整理し、BiblioFuseが各要件を満たす方法を解説。"
         },
-        "ocr-comics-extract-text-iphone": {
-          "title": "iPhoneでOCRを使ってコミックとマンガからテキストを抽出する",
-          "excerpt": "BiblioFuseのオンデバイスOCRで、コミックやマンガのページをタップするだけでテキストを抽出。日本語の語彙を調べたり、セリフをコピーしたりリーダー内で翻訳したりできます。",
-          "seoDescription": "BiblioFuseのオンデバイスOCRで、コミックやマンガのページをタップするだけでテキストを抽出。日本語の語彙を調べたり、セリフをコピーしたりリーダー内で翻訳したりできます。"
-        },
         "epub-reader-iphone-no-drm": {
           "title": "iPhone向け最高のDRMフリーEPUBリーダー — Apple Booksなしで",
           "excerpt": "BiblioFuseはDRMフリーのEPUBコレクション向けに設計されています。Humble Bundle、Project Gutenberg、独立系出版社からインポートし、タグで整理して、ストアなしで読書できます。",
@@ -1535,10 +1530,6 @@
             {
               "to": "/blog/bibliofuse-tools-tab-guide/",
               "label": "The Tools tab, explained"
-            },
-            {
-              "to": "/blog/ocr-comics-extract-text-iphone/",
-              "label": "OCR: extracting text from comics"
             }
           ]
         }

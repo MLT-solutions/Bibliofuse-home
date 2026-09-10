@@ -19,7 +19,7 @@ const __dirname = dirname(__filename);
 const distDir = join(__dirname, '..', 'dist');
 
 const SUPPORTED_LANGUAGES = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
-const ARTICLE_SLUGS = ['epub-reader-iphone-no-drm', 'cbz-cbr-rar-zip-which-format-best', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'read-cbz-cbr-on-iphone', 'digital-comic-library-management-guide', 'cbz-vs-cbr-vs-epub-formats-explained', 'ocr-comics-extract-text-iphone', 'getting-started-with-bibliofuse', 'bibliofuse-tools-tab-guide'];
+const ARTICLE_SLUGS = ['epub-reader-iphone-no-drm', 'cbz-cbr-rar-zip-which-format-best', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'read-cbz-cbr-on-iphone', 'digital-comic-library-management-guide', 'cbz-vs-cbr-vs-epub-formats-explained', 'getting-started-with-bibliofuse', 'bibliofuse-tools-tab-guide'];
 const ROUTES = ['/', '/comicreader', '/smartdecrypt', '/smartdecrypt/changelog', '/smartdecrypt/privacy', '/contentcue', '/contentcue/changelog', '/contentcue/privacy', '/androidrequest', '/about', '/privacy', '/guide', '/tools', '/tools/cbz-reducer', '/tools/epub-reducer', '/tools/pdf-to-cbz', '/tools/pdf-to-jpg', '/tools/qr-generator', '/blog', '/changelog', '/features', ...ARTICLE_SLUGS.map(s => `/blog/${s}`)];
 
 const CONCURRENCY = 3;

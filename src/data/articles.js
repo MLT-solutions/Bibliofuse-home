@@ -24,12 +24,6 @@ export const articles = [
     coverImage: '/image/blog/EPUB Reader No DRM.jpg',
   },
   {
-    slug: 'ocr-comics-extract-text-iphone',
-    date: '2026-05-24',
-    tags: ['guide', 'tips'],
-    coverImage: '/image/blog/OCR Comics on iPhone.jpg',
-  },
-  {
     slug: 'best-comic-reader-iphone-ipad',
     date: '2026-05-24',
     tags: ['guide'],

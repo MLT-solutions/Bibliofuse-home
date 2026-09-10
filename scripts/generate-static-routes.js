@@ -33,7 +33,7 @@ const NOINDEX_NON_EN_ROUTES = new Set([
 // thin content for discovery — see docs/site-showcase-audit.md.
 const NOINDEX_ALL_LOCALES_ROUTES = new Set(['/androidrequest', '/smartdecrypt', '/contentcue', '/changelog']);
 const NOINDEX_TAG = '<meta name="robots" content="noindex, follow" />\n</head>';
-const ARTICLE_SLUGS = ['epub-reader-iphone-no-drm', 'cbz-cbr-rar-zip-which-format-best', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'read-cbz-cbr-on-iphone', 'digital-comic-library-management-guide', 'cbz-vs-cbr-vs-epub-formats-explained', 'ocr-comics-extract-text-iphone', 'getting-started-with-bibliofuse', 'bibliofuse-tools-tab-guide'];
+const ARTICLE_SLUGS = ['epub-reader-iphone-no-drm', 'cbz-cbr-rar-zip-which-format-best', 'best-comic-reader-iphone-ipad', 'how-to-read-manga-on-iphone', 'read-cbz-cbr-on-iphone', 'digital-comic-library-management-guide', 'cbz-vs-cbr-vs-epub-formats-explained', 'getting-started-with-bibliofuse', 'bibliofuse-tools-tab-guide'];
 const ROUTES = ['/', '/comicreader', '/smartdecrypt', '/smartdecrypt/changelog', '/smartdecrypt/privacy', '/contentcue', '/contentcue/changelog', '/contentcue/privacy', '/androidrequest', '/about', '/privacy', '/guide', '/tools', '/tools/cbz-reducer', '/tools/epub-reducer', '/tools/pdf-to-cbz', '/tools/pdf-to-jpg', '/tools/qr-generator', '/blog', '/changelog', '/features', ...ARTICLE_SLUGS.map(s => `/blog/${s}`)];
 
 const distDir = join(__dirname, '..', 'dist');

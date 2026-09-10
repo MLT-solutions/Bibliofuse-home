@@ -620,11 +620,6 @@
           "excerpt": "형식 지원, 성능, 읽기 방향, 라이브러리 관리 측면에서 훌륭한 모바일 만화 리더의 조건과 BiblioFuse가 각 요구 사항을 충족하는 방법을 실용적으로 분석합니다.",
           "seoDescription": "형식 지원, 성능, 읽기 방향, 라이브러리 관리 측면에서 훌륭한 모바일 만화 리더의 조건과 BiblioFuse가 각 요구 사항을 충족하는 방법을 실용적으로 분석합니다."
         },
-        "ocr-comics-extract-text-iphone": {
-          "title": "iPhone에서 OCR로 만화와 망가에서 텍스트 추출하기",
-          "excerpt": "BiblioFuse의 온디바이스 OCR로 만화나 망가 페이지를 탭하면 텍스트를 추출할 수 있습니다 — 일본어 어휘 검색, 대사 복사, 번역을 리더 안에서 바로.",
-          "seoDescription": "BiblioFuse의 온디바이스 OCR로 만화나 망가 페이지를 탭하면 텍스트를 추출할 수 있습니다 — 일본어 어휘 검색, 대사 복사, 번역을 리더 안에서 바로."
-        },
         "epub-reader-iphone-no-drm": {
           "title": "iPhone 최고의 DRM 없는 EPUB 리더 — Apple Books 없이",
           "excerpt": "BiblioFuse는 DRM 없는 EPUB 컬렉션을 위해 만들어졌습니다 — Humble Bundle, Project Gutenberg, 독립 출판사에서 가져와 태그로 정리하고 스토어 없이 읽어보세요.",
@@ -1535,10 +1530,6 @@
             {
               "to": "/blog/bibliofuse-tools-tab-guide/",
               "label": "The Tools tab, explained"
-            },
-            {
-              "to": "/blog/ocr-comics-extract-text-iphone/",
-              "label": "OCR: extracting text from comics"
             }
           ]
         }

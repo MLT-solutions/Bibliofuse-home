@@ -61,3 +61,12 @@
 # mlogictech.com in Phase 1, so the article follows it.
 /:lang/blog/read-manga-online-iphone/*  https://www.mlogictech.com/products#contentcue  301
 /:lang/blog/read-manga-online-iphone    https://www.mlogictech.com/products#contentcue  301
+
+# ocr-comics-extract-text-iphone, deleted 2026-09-10 — no redirect on purpose.
+# The article described a standalone "scan a page and get copyable text" OCR feature,
+# with in-house models trained per script. That feature does not exist: the shipped
+# capability is on-device PP-OCRv5 inside live comic translation, typeset back into the
+# balloon (see live-translation in src/data/feature-matrix.js). There is no honest
+# destination for the query it ranked for, so it 404s like the other 38.
+# Cost of removing it: 2 clicks / 117 impressions across 8 locale URLs over the 100 days
+# to 2026-09-09, CTR 1.9-3.7% at position 8.6-10.1 — the intent-mismatch signature.

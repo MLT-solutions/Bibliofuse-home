@@ -47,3 +47,10 @@ English only at launch, like `/tools/`: `/guide` is in `NOINDEX_NON_EN_ROUTES` i
 `generate-sitemap.js`, `generate-static-routes.js` and `prerender.js`, and
 `hreflangLocales={['en']}` keeps it from advertising noindexed siblings. Translate
 `redesign.guidePage` and remove it from those three sets to turn the other locales on.
+
+## Link removed from the Tools section (2026-09-10)
+
+"OCR: extracting text from comics" pointed at `/blog/ocr-comics-extract-text-iphone/`,
+which described a feature that does not exist. Both the link and the article are gone —
+see `docs/features/blog.md`. When adding a link here, check what the target actually
+claims: this hub's value is that everything it points at is true.

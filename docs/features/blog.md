@@ -87,3 +87,29 @@ import). If that 404s, it falls back to `blog/<slug>/en.md`. Rendered via
 ## Tags
 `BlogPost.jsx` has a `TAG_COLORS` map (`guide`, `news`, `tips`, `update`) for styling;
 tags not in that map render with a default style.
+
+## `ocr-comics-extract-text-iphone` deleted (2026-09-10)
+
+The survivor count is **9**, not 10. This article was kept in the Phase 3 cut on its
+title, then removed once its body was read: it described a standalone OCR feature — "scan
+any page, or any selected region, and get the text as a copyable string", plus in-house
+models "trained specifically for comic and manga layouts" with separate horizontal and
+vertical-CJK models. **None of that ships.** The real capability is on-device PP-OCRv5
+inside live comic translation, typeset back into the balloon (`live-translation` in
+`src/data/feature-matrix.js`); there is no text-extraction or copy-out feature anywhere in
+the app.
+
+Deleted, not redirected — no honest destination exists for the query, which is the same
+call the other 38 got. Removed from: `src/data/articles.js`, all three `ARTICLE_SLUGS`
+copies, `public/blog/<slug>/` (11 markdown files), the cover image,
+`redesign.blog.posts.<slug>` in all 11 locales, and the **"OCR: extracting text from
+comics" link in `/guide/`'s Tools section** in all 11 locales.
+
+Cost: 2 clicks and 117 impressions across 8 locale URLs over the 100 days to 2026-09-09,
+at 1.9-3.7% CTR and position 8.6-10.1 — a page ranking for an intent it could not satisfy,
+which is the pattern the whole recovery is about.
+
+**Lesson for the next cut: read the body, not the title.** This is the second article
+retired for that reason (`read-manga-online-iphone` was the first, a ContentCue piece kept
+on its title). Check any claim an article makes against `src/data/feature-matrix.js`
+before keeping it.
