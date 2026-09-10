@@ -100,18 +100,21 @@ CLAUDE.md — do not publish a locale URL until its translations are real.
 confirm with `scripts/scan-untranslated.cjs`, then remove the `/tools/*` entries from both
 noindex sets. Wait until the English pages show as indexed in GSC first.
 
-## Still to do
+## Still to do — handed off
 
-The four tools remain live on lokaltools.com. Once bibliofuse.com is serving `/tools/`,
-remove them there and 301 across, following the `/*/tools/x /:1/...` pattern already in
-`lokaltools/public/_redirects`:
+The four tools remain live on lokaltools.com, so the same tools are published on two
+domains. bibliofuse.com is now serving `/tools/`, so the removal is unblocked.
 
-- delete `cbz-reducer`, `epub-reducer`, `pdf-to-cbz`, `pdf-to-jpg` from
-  `lokaltools/src/data/tools.ts` and their components
-- the matching `learn/` slugs are mapped in that same file (~line 69)
-- redirect the four tool URLs and their four `learn/` pages to the new tool pages
+**Not done from this side deliberately.** The `lokaltools` repo has ~160 files modified by
+a concurrent monetization/ads workstream, including the three components this change would
+delete (`CBZReducer.tsx`, `EPUBReducer.tsx`, `PDFToCBZ.tsx`) plus `src/data/tools.ts` and
+`src/app/sitemap.ts`. Editing it in parallel would conflict and could destroy uncommitted
+work.
 
-Until then the same tools are live on two domains — acceptable only as a short overlap.
+The full spec is in `docs/handoff-lokaltools-tool-migration.md` — registry entries,
+component paths, the four learn articles (all blog content, only two of which are in the
+tool→learn slug map), the eight redirects with verified targets, and what must NOT be
+deleted (`public/wasm/` is shared with other image tools).
 
 
 ## Windows tools and the Netlify retirement (2026-09-10)
