@@ -1641,6 +1641,134 @@
           ]
         }
       ]
+    },
+    "readerFamilyGuide": {
+      "eyebrow": "Semua peranti, satu persediaan",
+      "title": "Cari persediaan anda",
+      "intro": "Kini keluarga aplikasi ini merangkumi iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker, dan Synology — dan juga boleh membaca daripada mana-mana pelayan OPDS, Komga atau Kavita. Pilih tempat koleksi buku anda dihoskan dan peranti yang ingin anda gunakan untuk membaca, kemudian lihat dengan tepat aplikasi dan mod sambungan yang perlu digunakan.",
+      "coverageToggle": "Lihat jadual liputan platform penuh",
+      "table": {
+        "platformHeader": "Platform",
+        "roleHeader": "Peranan",
+        "contentHeader": "Sokongan sumber kandungan",
+        "streamHeader": "Mod sambungan strim",
+        "roleCols": {
+          "hosting": "Menjadi hos sebagai pelayan",
+          "browser": "Pembaca pelayar percuma",
+          "standaloneNo": "Pembaca berdiri sendiri (tiada strim)",
+          "standaloneHave": "Pembaca berdiri sendiri (menyokong strim)"
+        },
+        "contentCols": {
+          "local": "Tempatan",
+          "nas": "NAS",
+          "icloud": "iCloud",
+          "host": "Hos",
+          "opds": "OPDS / Kavita / Komga"
+        },
+        "streamCols": {
+          "icloudTs": "iCloud + Tailscale",
+          "localWifi": "Wi-Fi tempatan",
+          "manualTs": "Tailscale manual"
+        },
+        "platforms": {
+          "docker": "Docker (NAS)",
+          "synology": "Synology NAS (SPK)",
+          "macos": "macOS",
+          "windows": "PC Windows",
+          "iphoneIpad": "iPhone / iPad",
+          "visionos": "visionOS",
+          "androidPhone": "Telefon Android",
+          "tvos": "tvOS (Apple TV)",
+          "androidtv": "Android TV"
+        },
+        "legend": {
+          "supported": "Disokong",
+          "canConnectVia": "Boleh disambung melalui (klien)",
+          "supportedConnection": "Sambungan yang disokong (hos)",
+          "comingSoon": "Akan datang"
+        }
+      },
+      "hostQuestion": "Di mana koleksi buku anda dihoskan?",
+      "clientQuestion": "Anda ingin membaca menggunakan peranti apa?",
+      "whereQuestion": "Di mana anda akan membaca?",
+      "onlyHome": "Hanya di rumah",
+      "homeAndAway": "Di rumah dan semasa bepergian",
+      "hosts": {
+        "mac": {
+          "label": "Mac (menyokong tempatan & NAS)"
+        },
+        "windows": {
+          "label": "PC (menyokong tempatan & NAS)"
+        },
+        "synology": {
+          "label": "Synology NAS (SPK)",
+          "note": "Pemilih folder tanpa konfigurasi — terus menunjuk kepada koleksi buku sedia ada anda, tiada apa-apa yang dipendua. Tiada pengesanan iCloud automatik (fungsi geganti ini hanya untuk Mac/Windows) — sebaliknya berpasangan melalui Tailscale manual.",
+          "appLinkLabel": "Lihat keluaran untuk Synology →"
+        },
+        "docker": {
+          "label": "Docker / NAS lain",
+          "note": "Pelayan hoskan-sendiri percuma sekali gus pembaca pelayar — tiada langganan diperlukan untuk mengehos atau membaca dalam pelayar.",
+          "appLinkLabel": "Dapatkan BiblioFuse NAS (Docker) →"
+        },
+        "opds": {
+          "label": "OPDS / Kavita / Komga",
+          "note": "Sebarang katalog OPDS 1.x atau OPDS-PSE, atau pelayan Komga atau Kavita, dibaca melalui API tersendiri masing-masing. BiblioFuse menyambung terus kepadanya — ini bukan hos BiblioFuse, jadi ketiga-tiga mod sambungan di bawah tidak terpakai."
+        }
+      },
+      "clients": {
+        "iphone_ipad": {
+          "label": "iPhone / iPad"
+        },
+        "visionpro": {
+          "label": "Apple Vision Pro",
+          "note": "Turut berfungsi sebagai pembaca berdiri sendiri — keterangan ini hanya terpakai semasa strim daripada sesebuah hos."
+        },
+        "appletv": {
+          "label": "Apple TV",
+          "note": "Aplikasi pendamping — hanya untuk strim, tiada koleksi tempatan pada peranti itu sendiri. Hanya Wi-Fi tempatan (LAN): tvOS tidak mempunyai kebenaran iCloud Documents dan laluan Tailscale telah dibina tetapi dilumpuhkan sementara menunggu pepijat Tailscale tvOS di pihak mereka diselesaikan, jadi Apple TV masih belum dapat mengesan hos di luar rumah."
+        },
+        "androidphone": {
+          "label": "Telefon Android",
+          "note": "Hanya Wi-Fi tempatan atau Tailscale manual — tiada pengesanan iCloud automatik, kerana Android tidak mempunyai akses iCloud Documents."
+        },
+        "androidtv": {
+          "label": "Android TV",
+          "note": "Aplikasi pendamping — hanya menyokong Wi-Fi tempatan, tiada sokongan Tailscale."
+        }
+      },
+      "modes": {
+        "icloud-ts": {
+          "label": "iCloud + Tailscale (automatik)",
+          "detail": "Kekalkan Tailscale dihidupkan. Aplikasi akan mencari koleksi buku anda dengan sendirinya, sama ada di rumah atau semasa bepergian — tiada apa-apa perlu ditaip."
+        },
+        "manual-ts": {
+          "label": "Tailscale manual",
+          "detail": "Untuk peranti tanpa iCloud. Masukkan alamat Tailscale hos sekali sahaja dalam Tetapan."
+        },
+        "local-wifi": {
+          "label": "Wi-Fi tempatan",
+          "detail": "Tiada iCloud atau Tailscale diperlukan. Hanya berfungsi selagi kedua-dua peranti berkongsi rangkaian Wi-Fi yang sama."
+        }
+      },
+      "recommendation": {
+        "heading": "Berdasarkan kombinasi pilihan anda",
+        "cantConnectOpds": "<strong>{{clientLabel}}</strong> tidak boleh menyambung ke pelayan OPDS, Komga atau Kavita — aplikasi TV hanya membaca daripada hos BiblioFuse dalam rangkaian anda sendiri. Sebaliknya, arahkan ke hos Mac, PC atau NAS, atau baca katalog anda pada iPhone, iPad, Vision Pro atau telefon Android.",
+        "opdsStep1": "Kekalkan koleksi buku anda pada <strong>pelayan OPDS, Komga atau Kavita</strong> anda.",
+        "opdsStep2Label": "Baca pada <strong>{{clientLabel}}</strong>.",
+        "opdsStep2Detail": "Komga dan Kavita menyambung melalui API asli masing-masing — termasuk siri, kemajuan bacaan dan penanda buku. Selain itu, sambungan dibuat sebagai katalog OPDS 1.x, dengan strim satu muka surat pada satu masa jika pelayan menyokong OPDS-PSE.",
+        "opdsStep3": "Dalam aplikasi {{clientLabel}}, buka <strong>Tetapan → OPDS</strong> dan tambah pelayan.",
+        "opdsStep3Detail": "Menaip URL, nama pengguna dan kata laluan pada telefon agak membebankan — jana sahaja kod QR pada komputer anda dan imbas kod tersebut.",
+        "opdsQrCta": "Jana kod log masuk QR →",
+        "opdsAwayNote": "<strong>Membaca semasa bepergian:</strong> tiada apa-apa perlu dipilih dalam aplikasi — ini adalah persediaan rangkaian, bukan mod sambungan. Letakkan kedua-dua peranti bacaan dan hos pelayan pada VPN yang sama, atau pasang Tailscale pada kedua-duanya dan hidupkan penghalaan subnet pada hos supaya peranti dapat mencapai alamat tempatan pelayan dari mana-mana sahaja.",
+        "opdsHomeNote": "<strong>Membaca di rumah:</strong> tiada apa-apa perlu dipilih dalam aplikasi — tiada satu pun daripada tiga mod sambungan terpakai untuk pelayan pihak ketiga. Cukup kekalkan peranti bacaan pada rangkaian Wi-Fi yang sama dengan pelayan OPDS, Komga atau Kavita anda.",
+        "cantStream": "<strong>{{clientLabel}}</strong> belum boleh menstrim daripada hos — {{clientNote}} Buat masa ini, gunakan aplikasi BiblioFuse pada {{clientLabel}} untuk membaca secara tempatan dan berdiri sendiri.",
+        "unsupportedHost": "Strim aplikasi asli daripada <strong>{{hostLabel}}</strong> ke <strong>{{clientLabel}}</strong> masih belum disokong dalam aplikasi yang telah dikeluarkan. Hoskan koleksi buku anda pada {{hostLabel}} hari ini dan bacanya menggunakan pembaca pelayar terbina dalam yang percuma — bahagian ini sudah berfungsi sekarang, pada mana-mana peranti, tanpa memerlukan aplikasi.",
+        "step1": "Jalankan hos pada <strong>{{hostLabel}}</strong>.",
+        "step2": "Baca pada <strong>{{clientLabel}}</strong>.",
+        "step3": "Dalam tetapan sambungan aplikasi {{clientLabel}}, pilih <strong>{{modeLabel}}</strong>.",
+        "cappedByHost": "Nota: {{hostLabel}} masih belum menyokong strim semasa bepergian, jadi pasangan ini buat masa ini hanya berfungsi melalui Wi-Fi tempatan, walaupun anda memilih kedua-duanya.",
+        "cappedByClient": "Nota: {{clientLabel}} memang direka hanya untuk Wi-Fi tempatan — peranti ini tidak menyokong iCloud atau Tailscale — jadi pasangan ini hanya berfungsi di rumah, walaupun anda memilih kedua-duanya."
+      }
     }
   },
   "featureMatrix": {

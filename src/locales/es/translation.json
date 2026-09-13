@@ -1641,6 +1641,134 @@
           ]
         }
       ]
+    },
+    "readerFamilyGuide": {
+      "eyebrow": "Cada dispositivo, una sola configuración",
+      "title": "Encuentra tu configuración",
+      "intro": "La familia ahora abarca iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker y Synology — y también lee desde cualquier servidor OPDS, Komga o Kavita. Elige qué aloja tus libros y en qué quieres leer, y descubre exactamente qué app y qué modo de conexión usar.",
+      "coverageToggle": "Ver la tabla completa de compatibilidad por plataforma",
+      "table": {
+        "platformHeader": "Plataforma",
+        "roleHeader": "Función",
+        "contentHeader": "Compatibilidad de fuentes de contenido",
+        "streamHeader": "Modos de conexión en streaming",
+        "roleCols": {
+          "hosting": "Actúa como servidor",
+          "browser": "Lector gratuito en el navegador",
+          "standaloneNo": "Lector independiente (sin streaming)",
+          "standaloneHave": "Lector independiente (con streaming)"
+        },
+        "contentCols": {
+          "local": "Local",
+          "nas": "NAS",
+          "icloud": "iCloud",
+          "host": "Host",
+          "opds": "OPDS / Kavita / Komga"
+        },
+        "streamCols": {
+          "icloudTs": "iCloud + Tailscale",
+          "localWifi": "Wi-Fi local",
+          "manualTs": "Tailscale manual"
+        },
+        "platforms": {
+          "docker": "Docker (NAS)",
+          "synology": "Synology NAS (SPK)",
+          "macos": "macOS",
+          "windows": "PC con Windows",
+          "iphoneIpad": "iPhone / iPad",
+          "visionos": "visionOS",
+          "androidPhone": "Teléfono Android",
+          "tvos": "tvOS (Apple TV)",
+          "androidtv": "Android TV"
+        },
+        "legend": {
+          "supported": "Compatible",
+          "canConnectVia": "Puede conectarse mediante (cliente)",
+          "supportedConnection": "Conexión compatible (host)",
+          "comingSoon": "Próximamente"
+        }
+      },
+      "hostQuestion": "¿Qué aloja tu biblioteca?",
+      "clientQuestion": "¿En qué quieres leer?",
+      "whereQuestion": "¿Dónde vas a leer?",
+      "onlyHome": "Solo en casa",
+      "homeAndAway": "En casa y fuera",
+      "hosts": {
+        "mac": {
+          "label": "Mac (compatible con local y NAS)"
+        },
+        "windows": {
+          "label": "PC (compatible con local y NAS)"
+        },
+        "synology": {
+          "label": "Synology NAS (SPK)",
+          "note": "Selector de carpetas sin configuración — apunta a tu biblioteca existente, sin duplicar nada. Sin detección automática de iCloud (ese relé es exclusivo de Mac/Windows) — se empareja mediante Tailscale manual en su lugar.",
+          "appLinkLabel": "Ver versiones para Synology →"
+        },
+        "docker": {
+          "label": "Docker / otro NAS",
+          "note": "Servidor autoalojado gratuito y lector en el navegador — no se necesita suscripción para alojar ni para leer en el navegador.",
+          "appLinkLabel": "Obtener BiblioFuse NAS (Docker) →"
+        },
+        "opds": {
+          "label": "OPDS / Kavita / Komga",
+          "note": "Cualquier catálogo OPDS 1.x u OPDS-PSE, o un servidor Komga o Kavita, leído a través de su propia API. BiblioFuse se conecta directamente a él — esto no es un host de BiblioFuse, por lo que los tres modos de conexión de abajo no se aplican."
+        }
+      },
+      "clients": {
+        "iphone_ipad": {
+          "label": "iPhone / iPad"
+        },
+        "visionpro": {
+          "label": "Apple Vision Pro",
+          "note": "También es un lector independiente — esto solo se aplica al hacer streaming desde un host."
+        },
+        "appletv": {
+          "label": "Apple TV",
+          "note": "App complementaria — solo transmite, sin biblioteca local en el propio dispositivo. Solo Wi-Fi local (LAN): tvOS no tiene permiso para iCloud Documents y la vía de Tailscale está implementada pero desactivada a la espera de un error de Tailscale para tvOS, por lo que Apple TV todavía no puede descubrir un host fuera de casa."
+        },
+        "androidphone": {
+          "label": "Teléfono Android",
+          "note": "Solo Wi-Fi local o Tailscale manual — sin detección automática de iCloud, ya que Android no tiene acceso a iCloud Documents."
+        },
+        "androidtv": {
+          "label": "Android TV",
+          "note": "App complementaria — solo Wi-Fi local, sin compatibilidad con Tailscale."
+        }
+      },
+      "modes": {
+        "icloud-ts": {
+          "label": "iCloud + Tailscale (automático)",
+          "detail": "Mantén Tailscale activado. La app encuentra tu biblioteca por sí sola, en casa o fuera — no hay que escribir nada."
+        },
+        "manual-ts": {
+          "label": "Tailscale manual",
+          "detail": "Para dispositivos sin iCloud. Introduce la dirección Tailscale del host una vez en Ajustes."
+        },
+        "local-wifi": {
+          "label": "Wi-Fi local",
+          "detail": "No hace falta iCloud ni Tailscale. Solo funciona mientras ambos dispositivos compartan la misma red Wi-Fi."
+        }
+      },
+      "recommendation": {
+        "heading": "Según tu combinación",
+        "cantConnectOpds": "<strong>{{clientLabel}}</strong> no puede conectarse a un servidor OPDS, Komga o Kavita — las apps de TV solo leen desde un host de BiblioFuse en tu propia red. Apúntala en su lugar a un host Mac, PC o NAS, o lee tu catálogo en iPhone, iPad, Vision Pro o un teléfono Android.",
+        "opdsStep1": "Mantén tu biblioteca en tu <strong>servidor OPDS, Komga o Kavita</strong>.",
+        "opdsStep2Label": "Lee en <strong>{{clientLabel}}</strong>.",
+        "opdsStep2Detail": "Komga y Kavita se conectan mediante su propia API nativa — series, progreso y marcadores incluidos. Cualquier otro se conecta como catálogo OPDS 1.x, con streaming página a página cuando el servidor admite OPDS-PSE.",
+        "opdsStep3": "En la app de {{clientLabel}}, abre <strong>Ajustes → OPDS</strong> y añade el servidor.",
+        "opdsStep3Detail": "Escribir una URL, un nombre de usuario y una contraseña en el teléfono es la parte lenta — genera un código QR en tu ordenador y escanéalo en su lugar.",
+        "opdsQrCta": "Crear un código QR de inicio de sesión →",
+        "opdsAwayNote": "<strong>Leer fuera de casa:</strong> no hay nada que elegir en la app — esto es una configuración de red, no un modo de conexión. Pon tanto el dispositivo de lectura como el host del servidor en la misma VPN, o instala Tailscale en ambos y activa el enrutamiento de subred en el host para que el dispositivo pueda llegar a la dirección local del servidor desde cualquier lugar.",
+        "opdsHomeNote": "<strong>Leer en casa:</strong> no hay nada que elegir en la app — ninguno de los tres modos de conexión se aplica a un servidor de terceros. Solo mantén el dispositivo de lectura en la misma red Wi-Fi que tu servidor OPDS, Komga o Kavita.",
+        "cantStream": "<strong>{{clientLabel}}</strong> todavía no puede hacer streaming desde un host — {{clientNote}} Mientras tanto, usa la app de BiblioFuse en {{clientLabel}} para lectura local e independiente.",
+        "unsupportedHost": "El streaming por app nativa desde <strong>{{hostLabel}}</strong> hasta <strong>{{clientLabel}}</strong> todavía no es compatible en las apps publicadas. Aloja tu biblioteca en {{hostLabel}} desde ya y léela en su lector de navegador integrado y gratuito — esa parte ya funciona, en cualquier dispositivo, sin necesidad de ninguna app.",
+        "step1": "Ejecuta el host en <strong>{{hostLabel}}</strong>.",
+        "step2": "Lee en <strong>{{clientLabel}}</strong>.",
+        "step3": "En los ajustes de conexión de la app de {{clientLabel}}, elige <strong>{{modeLabel}}</strong>.",
+        "cappedByHost": "Nota: {{hostLabel}} todavía no admite streaming fuera de casa, así que por ahora esta combinación es solo Wi-Fi local, aunque hayas pedido ambas opciones.",
+        "cappedByClient": "Nota: {{clientLabel}} es solo Wi-Fi local por diseño — sin compatibilidad con iCloud ni Tailscale en este dispositivo — así que esta combinación solo funciona en casa, aunque hayas pedido ambas opciones."
+      }
     }
   },
   "featureMatrix": {

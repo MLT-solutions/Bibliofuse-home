@@ -1641,6 +1641,134 @@
           ]
         }
       ]
+    },
+    "readerFamilyGuide": {
+      "eyebrow": "Elk apparaat, één configuratie",
+      "title": "Vind jouw configuratie",
+      "intro": "De familie omvat nu iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker en Synology — en leest ook van elke OPDS-, Komga- of Kavita-server. Kies wat je boeken host en waarop je wilt lezen, en zie precies welke app en verbindingsmodus je moet gebruiken.",
+      "coverageToggle": "Bekijk de volledige platformcompatibiliteitstabel",
+      "table": {
+        "platformHeader": "Platform",
+        "roleHeader": "Rol",
+        "contentHeader": "Ondersteuning contentbronnen",
+        "streamHeader": "Streamingverbindingsmodi",
+        "roleCols": {
+          "hosting": "Fungeert als server",
+          "browser": "Gratis browserlezer",
+          "standaloneNo": "Standalone lezer (geen streaming)",
+          "standaloneHave": "Standalone lezer (met streaming)"
+        },
+        "contentCols": {
+          "local": "Lokaal",
+          "nas": "NAS",
+          "icloud": "iCloud",
+          "host": "Host",
+          "opds": "OPDS / Kavita / Komga"
+        },
+        "streamCols": {
+          "icloudTs": "iCloud + Tailscale",
+          "localWifi": "Lokale wifi",
+          "manualTs": "Handmatige Tailscale"
+        },
+        "platforms": {
+          "docker": "Docker (NAS)",
+          "synology": "Synology NAS (SPK)",
+          "macos": "macOS",
+          "windows": "Windows-pc",
+          "iphoneIpad": "iPhone / iPad",
+          "visionos": "visionOS",
+          "androidPhone": "Android-telefoon",
+          "tvos": "tvOS (Apple TV)",
+          "androidtv": "Android TV"
+        },
+        "legend": {
+          "supported": "Ondersteund",
+          "canConnectVia": "Kan verbinden via (client)",
+          "supportedConnection": "Ondersteunde verbinding (host)",
+          "comingSoon": "Binnenkort beschikbaar"
+        }
+      },
+      "hostQuestion": "Wat host je bibliotheek?",
+      "clientQuestion": "Waarop wil je lezen?",
+      "whereQuestion": "Waar ga je lezen?",
+      "onlyHome": "Alleen thuis",
+      "homeAndAway": "Thuis en onderweg",
+      "hosts": {
+        "mac": {
+          "label": "Mac (ondersteunt lokaal en NAS)"
+        },
+        "windows": {
+          "label": "PC (ondersteunt lokaal en NAS)"
+        },
+        "synology": {
+          "label": "Synology NAS (SPK)",
+          "note": "Mapkiezer zonder configuratie — wijst naar je bestaande bibliotheek, niets wordt gedupliceerd. Geen automatische iCloud-detectie (die relay is exclusief voor Mac/Windows) — koppelt in plaats daarvan via handmatige Tailscale.",
+          "appLinkLabel": "Bekijk Synology-releases →"
+        },
+        "docker": {
+          "label": "Docker / andere NAS",
+          "note": "Gratis self-hosted server en browserlezer — geen abonnement nodig om te hosten of in de browser te lezen.",
+          "appLinkLabel": "Haal BiblioFuse NAS (Docker) →"
+        },
+        "opds": {
+          "label": "OPDS / Kavita / Komga",
+          "note": "Elke OPDS 1.x- of OPDS-PSE-catalogus, of een Komga- of Kavita-server, uitgelezen via zijn eigen API. BiblioFuse maakt er rechtstreeks verbinding mee — dit is geen BiblioFuse-host, dus de drie verbindingsmodi hieronder zijn niet van toepassing."
+        }
+      },
+      "clients": {
+        "iphone_ipad": {
+          "label": "iPhone / iPad"
+        },
+        "visionpro": {
+          "label": "Apple Vision Pro",
+          "note": "Ook een standalone lezer — dit geldt alleen bij streamen vanaf een host."
+        },
+        "appletv": {
+          "label": "Apple TV",
+          "note": "Companion-app — streamt alleen, geen lokale bibliotheek op het apparaat zelf. Alleen lokale wifi (LAN): tvOS heeft geen iCloud Documents-machtiging en het Tailscale-pad is wel gebouwd maar uitgeschakeld in afwachting van een Tailscale-bug bij tvOS zelf, waardoor Apple TV nog geen host buiten huis kan ontdekken."
+        },
+        "androidphone": {
+          "label": "Android-telefoon",
+          "note": "Alleen lokale wifi of handmatige Tailscale — geen automatische iCloud-detectie, omdat Android geen toegang heeft tot iCloud Documents."
+        },
+        "androidtv": {
+          "label": "Android TV",
+          "note": "Companion-app — alleen lokale wifi, geen ondersteuning voor Tailscale."
+        }
+      },
+      "modes": {
+        "icloud-ts": {
+          "label": "iCloud + Tailscale (automatisch)",
+          "detail": "Houd Tailscale ingeschakeld. De app vindt je bibliotheek vanzelf, thuis of onderweg — niets om in te typen."
+        },
+        "manual-ts": {
+          "label": "Handmatige Tailscale",
+          "detail": "Voor apparaten zonder iCloud. Voer eenmalig het Tailscale-adres van de host in bij Instellingen."
+        },
+        "local-wifi": {
+          "label": "Lokale wifi",
+          "detail": "Geen iCloud of Tailscale nodig. Werkt alleen zolang beide apparaten hetzelfde wifinetwerk delen."
+        }
+      },
+      "recommendation": {
+        "heading": "Gezien jouw combinatie",
+        "cantConnectOpds": "<strong>{{clientLabel}}</strong> kan geen verbinding maken met een OPDS-, Komga- of Kavita-server — de tv-apps lezen alleen van een BiblioFuse-host op je eigen netwerk. Richt hem in plaats daarvan op een Mac-, pc- of NAS-host, of lees je catalogus op iPhone, iPad, Vision Pro of een Android-telefoon.",
+        "opdsStep1": "Bewaar je bibliotheek op je <strong>OPDS-, Komga- of Kavita-server</strong>.",
+        "opdsStep2Label": "Lees op <strong>{{clientLabel}}</strong>.",
+        "opdsStep2Detail": "Komga en Kavita maken verbinding via hun eigen native API — inclusief series, voortgang en bladwijzers. Al het andere maakt verbinding als een OPDS 1.x-catalogus, met streaming per pagina wanneer de server OPDS-PSE ondersteunt.",
+        "opdsStep3": "Open in de {{clientLabel}}-app <strong>Instellingen → OPDS</strong> en voeg de server toe.",
+        "opdsStep3Detail": "Een URL, gebruikersnaam en wachtwoord intypen op een telefoon is het trage deel — genereer in plaats daarvan een QR-code op je computer en scan die.",
+        "opdsQrCta": "Maak een QR-inlogcode →",
+        "opdsAwayNote": "<strong>Onderweg lezen:</strong> niets te kiezen in de app — dit is een netwerkinstelling, geen verbindingsmodus. Zet zowel het leesapparaat als de host van de server op dezelfde VPN, of installeer Tailscale op beide en schakel subnet routing in op de host, zodat het apparaat overal vandaan het lokale adres van de server kan bereiken.",
+        "opdsHomeNote": "<strong>Thuis lezen:</strong> niets te kiezen in de app — geen van de drie verbindingsmodi is van toepassing op een externe server. Houd het leesapparaat gewoon op hetzelfde wifinetwerk als je OPDS-, Komga- of Kavita-server.",
+        "cantStream": "<strong>{{clientLabel}}</strong> kan nog niet streamen vanaf een host — {{clientNote}} Gebruik ondertussen de BiblioFuse-app op {{clientLabel}} voor lokaal, standalone lezen.",
+        "unsupportedHost": "Streamen via de native app van <strong>{{hostLabel}}</strong> naar <strong>{{clientLabel}}</strong> wordt nog niet ondersteund in de uitgebrachte apps. Host je bibliotheek vandaag al op {{hostLabel}} en lees hem in plaats daarvan in de gratis ingebouwde browserlezer — dat deel werkt nu al, op elk apparaat, zonder app nodig.",
+        "step1": "Draai de host op <strong>{{hostLabel}}</strong>.",
+        "step2": "Lees op <strong>{{clientLabel}}</strong>.",
+        "step3": "Kies in de verbindingsinstellingen van de {{clientLabel}}-app <strong>{{modeLabel}}</strong>.",
+        "cappedByHost": "Let op: {{hostLabel}} ondersteunt nog geen streaming van buitenshuis, dus deze combinatie is voorlopig alleen lokale wifi, ook al vroeg je om beide.",
+        "cappedByClient": "Let op: {{clientLabel}} is met opzet alleen lokale wifi — geen ondersteuning voor iCloud of Tailscale op dit apparaat — dus deze combinatie werkt alleen thuis, ook al vroeg je om beide."
+      }
     }
   },
   "featureMatrix": {

@@ -1641,6 +1641,134 @@
           ]
         }
       ]
+    },
+    "readerFamilyGuide": {
+      "eyebrow": "Chaque appareil, une seule configuration",
+      "title": "Trouvez votre configuration",
+      "intro": "La famille couvre désormais iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker et Synology — et lit aussi depuis n'importe quel serveur OPDS, Komga ou Kavita. Choisissez ce qui héberge vos livres et sur quoi vous voulez lire, et découvrez exactement quelle app et quel mode de connexion utiliser.",
+      "coverageToggle": "Voir le tableau complet de compatibilité des plateformes",
+      "table": {
+        "platformHeader": "Plateforme",
+        "roleHeader": "Rôle",
+        "contentHeader": "Prise en charge des sources de contenu",
+        "streamHeader": "Modes de connexion en streaming",
+        "roleCols": {
+          "hosting": "Fait office de serveur",
+          "browser": "Lecteur navigateur gratuit",
+          "standaloneNo": "Lecteur autonome (sans streaming)",
+          "standaloneHave": "Lecteur autonome (avec streaming)"
+        },
+        "contentCols": {
+          "local": "Local",
+          "nas": "NAS",
+          "icloud": "iCloud",
+          "host": "Host",
+          "opds": "OPDS / Kavita / Komga"
+        },
+        "streamCols": {
+          "icloudTs": "iCloud + Tailscale",
+          "localWifi": "Wi-Fi local",
+          "manualTs": "Tailscale manuel"
+        },
+        "platforms": {
+          "docker": "Docker (NAS)",
+          "synology": "Synology NAS (SPK)",
+          "macos": "macOS",
+          "windows": "PC Windows",
+          "iphoneIpad": "iPhone / iPad",
+          "visionos": "visionOS",
+          "androidPhone": "Téléphone Android",
+          "tvos": "tvOS (Apple TV)",
+          "androidtv": "Android TV"
+        },
+        "legend": {
+          "supported": "Pris en charge",
+          "canConnectVia": "Peut se connecter via (client)",
+          "supportedConnection": "Connexion prise en charge (host)",
+          "comingSoon": "Bientôt disponible"
+        }
+      },
+      "hostQuestion": "Qu'est-ce qui héberge votre bibliothèque ?",
+      "clientQuestion": "Sur quoi voulez-vous lire ?",
+      "whereQuestion": "Où allez-vous lire ?",
+      "onlyHome": "Uniquement à la maison",
+      "homeAndAway": "À la maison et en déplacement",
+      "hosts": {
+        "mac": {
+          "label": "Mac (compatible local et NAS)"
+        },
+        "windows": {
+          "label": "PC (compatible local et NAS)"
+        },
+        "synology": {
+          "label": "Synology NAS (SPK)",
+          "note": "Sélecteur de dossier sans configuration — pointe vers votre bibliothèque existante, sans rien dupliquer. Pas de détection automatique iCloud (ce relais est réservé à Mac/Windows) — se jumelle plutôt via Tailscale manuel.",
+          "appLinkLabel": "Voir les versions Synology →"
+        },
+        "docker": {
+          "label": "Docker / autre NAS",
+          "note": "Serveur auto-hébergé gratuit et lecteur navigateur — aucun abonnement requis pour héberger ou lire dans le navigateur.",
+          "appLinkLabel": "Obtenir BiblioFuse NAS (Docker) →"
+        },
+        "opds": {
+          "label": "OPDS / Kavita / Komga",
+          "note": "Tout catalogue OPDS 1.x ou OPDS-PSE, ou un serveur Komga ou Kavita, lu via sa propre API. BiblioFuse s'y connecte directement — ce n'est pas un host BiblioFuse, donc les trois modes de connexion ci-dessous ne s'appliquent pas."
+        }
+      },
+      "clients": {
+        "iphone_ipad": {
+          "label": "iPhone / iPad"
+        },
+        "visionpro": {
+          "label": "Apple Vision Pro",
+          "note": "Également un lecteur autonome — ceci ne s'applique qu'en streaming depuis un host."
+        },
+        "appletv": {
+          "label": "Apple TV",
+          "note": "App compagnon — diffuse uniquement en streaming, sans bibliothèque locale sur le boîtier lui-même. Wi-Fi local (LAN) uniquement : tvOS n'a pas l'autorisation iCloud Documents et le chemin Tailscale est en place mais désactivé en attendant la correction d'un bug Tailscale côté tvOS, donc Apple TV ne peut pas encore découvrir un host hors du domicile."
+        },
+        "androidphone": {
+          "label": "Téléphone Android",
+          "note": "Wi-Fi local ou Tailscale manuel uniquement — pas de détection automatique iCloud, Android n'ayant pas accès à iCloud Documents."
+        },
+        "androidtv": {
+          "label": "Android TV",
+          "note": "App compagnon — Wi-Fi local uniquement, pas de prise en charge de Tailscale."
+        }
+      },
+      "modes": {
+        "icloud-ts": {
+          "label": "iCloud + Tailscale (automatique)",
+          "detail": "Laissez Tailscale activé. L'app trouve votre bibliothèque toute seule, à la maison comme en déplacement — rien à saisir."
+        },
+        "manual-ts": {
+          "label": "Tailscale manuel",
+          "detail": "Pour les appareils sans iCloud. Saisissez une fois l'adresse Tailscale du host dans les Réglages."
+        },
+        "local-wifi": {
+          "label": "Wi-Fi local",
+          "detail": "Aucun besoin d'iCloud ni de Tailscale. Fonctionne uniquement lorsque les deux appareils partagent le même réseau Wi-Fi."
+        }
+      },
+      "recommendation": {
+        "heading": "Selon votre combinaison",
+        "cantConnectOpds": "<strong>{{clientLabel}}</strong> ne peut pas se connecter à un serveur OPDS, Komga ou Kavita — les apps TV ne lisent que depuis un host BiblioFuse sur votre propre réseau. Pointez-la plutôt vers un host Mac, PC ou NAS, ou lisez votre catalogue sur iPhone, iPad, Vision Pro ou un téléphone Android.",
+        "opdsStep1": "Conservez votre bibliothèque sur votre <strong>serveur OPDS, Komga ou Kavita</strong>.",
+        "opdsStep2Label": "Lisez sur <strong>{{clientLabel}}</strong>.",
+        "opdsStep2Detail": "Komga et Kavita se connectent via leur API native — séries, progression et signets inclus. Tout le reste se connecte comme un catalogue OPDS 1.x, avec un streaming page par page lorsque le serveur prend en charge OPDS-PSE.",
+        "opdsStep3": "Dans l'app {{clientLabel}}, ouvrez <strong>Réglages → OPDS</strong> et ajoutez le serveur.",
+        "opdsStep3Detail": "Saisir une URL, un identifiant et un mot de passe sur un téléphone est la partie fastidieuse — générez plutôt un code QR sur votre ordinateur et scannez-le.",
+        "opdsQrCta": "Créer un code QR de connexion →",
+        "opdsAwayNote": "<strong>Lecture en déplacement :</strong> rien à choisir dans l'app — il s'agit d'une configuration réseau, pas d'un mode de connexion. Placez à la fois l'appareil de lecture et le host du serveur sur le même VPN, ou installez Tailscale sur les deux et activez le routage de sous-réseau sur le host afin que l'appareil puisse atteindre l'adresse locale du serveur depuis n'importe où.",
+        "opdsHomeNote": "<strong>Lecture à la maison :</strong> rien à choisir dans l'app — aucun des trois modes de connexion ne s'applique à un serveur tiers. Il suffit de garder l'appareil de lecture sur le même réseau Wi-Fi que votre serveur OPDS, Komga ou Kavita.",
+        "cantStream": "<strong>{{clientLabel}}</strong> ne peut pas encore diffuser en streaming depuis un host — {{clientNote}} En attendant, utilisez l'app BiblioFuse sur {{clientLabel}} pour une lecture locale et autonome.",
+        "unsupportedHost": "Le streaming en app native depuis <strong>{{hostLabel}}</strong> vers <strong>{{clientLabel}}</strong> n'est pas encore pris en charge dans les apps publiées. Hébergez dès aujourd'hui votre bibliothèque sur {{hostLabel}} et lisez-la plutôt dans son lecteur navigateur intégré et gratuit — cette partie fonctionne déjà, sur n'importe quel appareil, sans app requise.",
+        "step1": "Exécutez le host sur <strong>{{hostLabel}}</strong>.",
+        "step2": "Lisez sur <strong>{{clientLabel}}</strong>.",
+        "step3": "Dans les réglages de connexion de l'app {{clientLabel}}, choisissez <strong>{{modeLabel}}</strong>.",
+        "cappedByHost": "Remarque : {{hostLabel}} ne prend pas encore en charge le streaming hors domicile, donc pour l'instant cette association est en Wi-Fi local uniquement, même si vous avez demandé les deux.",
+        "cappedByClient": "Remarque : {{clientLabel}} est conçu pour fonctionner uniquement en Wi-Fi local — sans prise en charge d'iCloud ni de Tailscale sur cet appareil — donc cette association ne fonctionne qu'à la maison, même si vous avez demandé les deux."
+      }
     }
   },
   "featureMatrix": {

@@ -1641,6 +1641,134 @@
           ]
         }
       ]
+    },
+    "readerFamilyGuide": {
+      "eyebrow": "覆盖所有设备，一套设置",
+      "title": "找到你的专属设置",
+      "intro": "该系列应用现已覆盖 iPhone、iPad、Mac、Windows、visionOS、tvOS、Android、Docker 和 Synology——并且还能读取任何 OPDS、Komga 或 Kavita 服务器上的内容。选择你的书库托管方式和阅读设备，即可准确了解应使用哪个应用及连接模式。",
+      "coverageToggle": "查看完整的平台支持对照表",
+      "table": {
+        "platformHeader": "平台",
+        "roleHeader": "角色",
+        "contentHeader": "内容来源支持",
+        "streamHeader": "流式连接模式",
+        "roleCols": {
+          "hosting": "作为服务器托管",
+          "browser": "免费浏览器阅读器",
+          "standaloneNo": "独立阅读器（不支持流式传输）",
+          "standaloneHave": "独立阅读器（支持流式传输）"
+        },
+        "contentCols": {
+          "local": "本地",
+          "nas": "NAS",
+          "icloud": "iCloud",
+          "host": "主机",
+          "opds": "OPDS / Kavita / Komga"
+        },
+        "streamCols": {
+          "icloudTs": "iCloud + Tailscale",
+          "localWifi": "本地 Wi-Fi",
+          "manualTs": "手动 Tailscale"
+        },
+        "platforms": {
+          "docker": "Docker（NAS）",
+          "synology": "Synology NAS（SPK）",
+          "macos": "macOS",
+          "windows": "Windows 电脑",
+          "iphoneIpad": "iPhone / iPad",
+          "visionos": "visionOS",
+          "androidPhone": "Android 手机",
+          "tvos": "tvOS（Apple TV）",
+          "androidtv": "Android TV"
+        },
+        "legend": {
+          "supported": "支持",
+          "canConnectVia": "可通过此方式连接（客户端）",
+          "supportedConnection": "支持的连接方式（主机）",
+          "comingSoon": "即将推出"
+        }
+      },
+      "hostQuestion": "你的书库托管在哪里？",
+      "clientQuestion": "你想在什么设备上阅读？",
+      "whereQuestion": "你会在哪里阅读？",
+      "onlyHome": "仅在家中",
+      "homeAndAway": "在家和外出时",
+      "hosts": {
+        "mac": {
+          "label": "Mac（支持本地与 NAS）"
+        },
+        "windows": {
+          "label": "PC（支持本地与 NAS）"
+        },
+        "synology": {
+          "label": "Synology NAS（SPK）",
+          "note": "零配置文件夹选择器——直接指向你现有的书库，不会重复存储。不支持自动 iCloud 发现（这项中继功能仅限 Mac/Windows）——需改用手动 Tailscale 配对。",
+          "appLinkLabel": "查看 Synology 版本 →"
+        },
+        "docker": {
+          "label": "Docker / 其他 NAS",
+          "note": "免费的自托管服务器和浏览器阅读器——托管或在浏览器中阅读均无需订阅。",
+          "appLinkLabel": "获取 BiblioFuse NAS（Docker）→"
+        },
+        "opds": {
+          "label": "OPDS / Kavita / Komga",
+          "note": "任何 OPDS 1.x 或 OPDS-PSE 目录，或 Komga、Kavita 服务器，均通过其自身的 API 读取。BiblioFuse 会直接与其连接——这不是 BiblioFuse 主机，因此下方三种连接模式均不适用。"
+        }
+      },
+      "clients": {
+        "iphone_ipad": {
+          "label": "iPhone / iPad"
+        },
+        "visionpro": {
+          "label": "Apple Vision Pro",
+          "note": "同时也是一款独立阅读器——此说明仅适用于从主机进行流式传输的情况。"
+        },
+        "appletv": {
+          "label": "Apple TV",
+          "note": "配套应用——仅支持流式传输，设备本身没有本地书库。仅支持本地 Wi-Fi（局域网）：tvOS 没有 iCloud Documents 权限，Tailscale 连接路径虽已开发但因上游 Tailscale tvOS 的一个漏洞而暂时停用，因此 Apple TV 目前还无法发现家门外的主机。"
+        },
+        "androidphone": {
+          "label": "Android 手机",
+          "note": "仅支持本地 Wi-Fi 或手动 Tailscale——由于 Android 无法访问 iCloud Documents，因此不支持自动 iCloud 发现。"
+        },
+        "androidtv": {
+          "label": "Android TV",
+          "note": "配套应用——仅支持本地 Wi-Fi，不支持 Tailscale。"
+        }
+      },
+      "modes": {
+        "icloud-ts": {
+          "label": "iCloud + Tailscale（自动）",
+          "detail": "保持 Tailscale 开启即可。无论在家还是外出，应用都会自动找到你的书库——无需手动输入任何内容。"
+        },
+        "manual-ts": {
+          "label": "手动 Tailscale",
+          "detail": "适用于没有 iCloud 的设备。只需在设置中输入一次主机的 Tailscale 地址。"
+        },
+        "local-wifi": {
+          "label": "本地 Wi-Fi",
+          "detail": "无需 iCloud 或 Tailscale。仅在两台设备处于同一 Wi-Fi 网络时可用。"
+        }
+      },
+      "recommendation": {
+        "heading": "根据你的选择组合",
+        "cantConnectOpds": "<strong>{{clientLabel}}</strong> 无法连接 OPDS、Komga 或 Kavita 服务器——电视应用只能从你自己网络中的 BiblioFuse 主机读取内容。请改为连接 Mac、PC 或 NAS 主机，或改用 iPhone、iPad、Vision Pro 或 Android 手机阅读你的书库。",
+        "opdsStep1": "将你的书库保留在 <strong>OPDS、Komga 或 Kavita 服务器</strong>上。",
+        "opdsStep2Label": "在 <strong>{{clientLabel}}</strong> 上阅读。",
+        "opdsStep2Detail": "Komga 和 Kavita 通过各自的原生 API 连接——系列、阅读进度和书签均可同步。其他服务器则以 OPDS 1.x 目录的形式连接，若服务器支持 OPDS-PSE，还可逐页流式传输。",
+        "opdsStep3": "在 {{clientLabel}} 应用中，打开 <strong>设置 → OPDS</strong> 并添加服务器。",
+        "opdsStep3Detail": "在手机上输入网址、用户名和密码比较繁琐——不如在电脑上生成二维码，然后扫码添加。",
+        "opdsQrCta": "生成二维码登录 →",
+        "opdsAwayNote": "<strong>在外阅读：</strong>应用中无需选择任何选项——这属于网络设置，而非连接模式。请将阅读设备和服务器主机接入同一个 VPN，或在两者上都安装 Tailscale，并在主机上开启子网路由，这样设备就能从任何地方访问服务器的本地地址。",
+        "opdsHomeNote": "<strong>在家阅读：</strong>应用中无需选择任何选项——上述三种连接模式均不适用于第三方服务器。只需让阅读设备与你的 OPDS、Komga 或 Kavita 服务器处于同一 Wi-Fi 网络即可。",
+        "cantStream": "<strong>{{clientLabel}}</strong> 目前还无法从主机进行流式传输——{{clientNote}} 在此之前，可在 {{clientLabel}} 上使用 BiblioFuse 应用进行本地独立阅读。",
+        "unsupportedHost": "目前已发布的应用尚不支持从 <strong>{{hostLabel}}</strong> 到 <strong>{{clientLabel}}</strong> 的原生应用流式传输。你现在就可以将书库托管在 {{hostLabel}} 上，并改用其免费的内置浏览器阅读器阅读——这项功能现已可用，支持任何设备，无需安装应用。",
+        "step1": "在 <strong>{{hostLabel}}</strong> 上运行主机。",
+        "step2": "在 <strong>{{clientLabel}}</strong> 上阅读。",
+        "step3": "在 {{clientLabel}} 应用的连接设置中，选择 <strong>{{modeLabel}}</strong>。",
+        "cappedByHost": "注意：{{hostLabel}} 目前还不支持外出流式传输，因此即使你选择了「在家和外出时」，这一组合目前也仅支持本地 Wi-Fi。",
+        "cappedByClient": "注意：{{clientLabel}} 在设计上仅支持本地 Wi-Fi——该设备不支持 iCloud 或 Tailscale——因此即使你选择了「在家和外出时」，这一组合也仅能在家中使用。"
+      }
     }
   },
   "featureMatrix": {

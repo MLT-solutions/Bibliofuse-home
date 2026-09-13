@@ -1641,6 +1641,134 @@
           ]
         }
       ]
+    },
+    "readerFamilyGuide": {
+      "eyebrow": "すべてのデバイスに、ひとつのセットアップ",
+      "title": "あなたに合ったセットアップを見つける",
+      "intro": "このアプリファミリーは現在、iPhone、iPad、Mac、Windows、visionOS、tvOS、Android、Docker、Synologyに対応し、さらにOPDS、Komga、Kavitaサーバーからも読み込めます。書庫をどこでホストし、どのデバイスで読みたいかを選ぶだけで、使うべきアプリと接続モードが正確にわかります。",
+      "coverageToggle": "プラットフォーム対応表をすべて見る",
+      "table": {
+        "platformHeader": "プラットフォーム",
+        "roleHeader": "役割",
+        "contentHeader": "コンテンツソースの対応状況",
+        "streamHeader": "ストリーミング接続モード",
+        "roleCols": {
+          "hosting": "サーバーとしてホスト",
+          "browser": "無料のブラウザリーダー",
+          "standaloneNo": "スタンドアロンリーダー（ストリーミング非対応）",
+          "standaloneHave": "スタンドアロンリーダー（ストリーミング対応）"
+        },
+        "contentCols": {
+          "local": "ローカル",
+          "nas": "NAS",
+          "icloud": "iCloud",
+          "host": "ホスト",
+          "opds": "OPDS / Kavita / Komga"
+        },
+        "streamCols": {
+          "icloudTs": "iCloud + Tailscale",
+          "localWifi": "ローカルWi-Fi",
+          "manualTs": "手動Tailscale"
+        },
+        "platforms": {
+          "docker": "Docker（NAS）",
+          "synology": "Synology NAS（SPK）",
+          "macos": "macOS",
+          "windows": "Windows PC",
+          "iphoneIpad": "iPhone / iPad",
+          "visionos": "visionOS",
+          "androidPhone": "Androidスマートフォン",
+          "tvos": "tvOS（Apple TV）",
+          "androidtv": "Android TV"
+        },
+        "legend": {
+          "supported": "対応",
+          "canConnectVia": "この方法で接続可能（クライアント）",
+          "supportedConnection": "対応する接続方式（ホスト）",
+          "comingSoon": "近日対応予定"
+        }
+      },
+      "hostQuestion": "書庫はどこでホストしていますか？",
+      "clientQuestion": "どのデバイスで読みたいですか？",
+      "whereQuestion": "どこで読みますか？",
+      "onlyHome": "自宅のみ",
+      "homeAndAway": "自宅でも外出先でも",
+      "hosts": {
+        "mac": {
+          "label": "Mac（ローカルとNASに対応）"
+        },
+        "windows": {
+          "label": "PC（ローカルとNASに対応）"
+        },
+        "synology": {
+          "label": "Synology NAS（SPK）",
+          "note": "設定不要のフォルダ選択——既存の書庫をそのまま指定するだけで、複製は発生しません。自動iCloud検出には対応していません（これはMac/Windows限定の中継機能です）——代わりに手動Tailscaleでペアリングします。",
+          "appLinkLabel": "Synology版のリリースを見る →"
+        },
+        "docker": {
+          "label": "Docker / その他のNAS",
+          "note": "無料のセルフホスト型サーバー兼ブラウザリーダー——ホストにもブラウザでの閲覧にもサブスクリプションは不要です。",
+          "appLinkLabel": "BiblioFuse NAS（Docker）を入手 →"
+        },
+        "opds": {
+          "label": "OPDS / Kavita / Komga",
+          "note": "OPDS 1.xやOPDS-PSEのカタログ、またはKomgaやKavitaサーバーであれば、それぞれ独自のAPIを通じて読み込めます。BiblioFuseはそこに直接接続します——これはBiblioFuseホストではないため、以下の3つの接続モードは適用されません。"
+        }
+      },
+      "clients": {
+        "iphone_ipad": {
+          "label": "iPhone / iPad"
+        },
+        "visionpro": {
+          "label": "Apple Vision Pro",
+          "note": "スタンドアロンリーダーとしても使えます——この説明はホストからストリーミングする場合にのみ当てはまります。"
+        },
+        "appletv": {
+          "label": "Apple TV",
+          "note": "コンパニオンアプリ——ストリーミング専用で、本体にはローカル書庫を持ちません。ローカルWi-Fi（LAN）のみ対応：tvOSにはiCloud Documentsの権限がなく、Tailscale経由の接続は実装済みですが、Tailscale側のtvOSに関する不具合の解消待ちのため無効化されています。そのためApple TVは現時点では自宅の外にあるホストを検出できません。"
+        },
+        "androidphone": {
+          "label": "Androidスマートフォン",
+          "note": "ローカルWi-Fiまたは手動Tailscaleのみ対応——AndroidはiCloud Documentsにアクセスできないため、自動iCloud検出は利用できません。"
+        },
+        "androidtv": {
+          "label": "Android TV",
+          "note": "コンパニオンアプリ——ローカルWi-Fiのみ対応し、Tailscaleには対応していません。"
+        }
+      },
+      "modes": {
+        "icloud-ts": {
+          "label": "iCloud + Tailscale（自動）",
+          "detail": "Tailscaleを常にオンにしておくだけです。自宅でも外出先でも、アプリが自動的に書庫を見つけてくれるので、入力の手間はありません。"
+        },
+        "manual-ts": {
+          "label": "手動Tailscale",
+          "detail": "iCloudを利用できないデバイス向けです。設定画面でホストのTailscaleアドレスを一度だけ入力します。"
+        },
+        "local-wifi": {
+          "label": "ローカルWi-Fi",
+          "detail": "iCloudもTailscaleも不要です。両方のデバイスが同じWi-Fiネットワークに接続している間のみ利用できます。"
+        }
+      },
+      "recommendation": {
+        "heading": "選択した組み合わせの場合",
+        "cantConnectOpds": "<strong>{{clientLabel}}</strong>はOPDS、KomgaまたはKavitaサーバーに接続できません——TV向けアプリは、同じネットワーク内にあるBiblioFuseホストからのみ読み込めます。代わりにMac、PCまたはNASホストを指定するか、iPhone、iPad、Vision ProまたはAndroidスマートフォンで書庫を読んでください。",
+        "opdsStep1": "書庫は<strong>OPDS、KomgaまたはKavitaサーバー</strong>に置いたままにします。",
+        "opdsStep2Label": "<strong>{{clientLabel}}</strong>で読みます。",
+        "opdsStep2Detail": "KomgaとKavitaはそれぞれのネイティブAPI経由で接続され、シリーズ、進捗、ブックマークもすべて同期されます。それ以外はOPDS 1.xカタログとして接続され、サーバーがOPDS-PSEに対応していればページ単位のストリーミングも可能です。",
+        "opdsStep3": "{{clientLabel}}アプリで<strong>設定 → OPDS</strong>を開き、サーバーを追加します。",
+        "opdsStep3Detail": "スマートフォンでURL、ユーザー名、パスワードを入力するのは手間がかかります——代わりにパソコンでQRコードを生成し、それをスキャンしましょう。",
+        "opdsQrCta": "QRログインコードを作成 →",
+        "opdsAwayNote": "<strong>外出先で読む場合：</strong>アプリ側で選ぶ項目はありません——これは接続モードではなくネットワーク設定の話です。読書用デバイスとサーバーのホストを同じVPNに接続するか、両方にTailscaleをインストールしたうえでホスト側でサブネットルーティングを有効にし、デバイスがどこからでもサーバーのローカルアドレスにアクセスできるようにしてください。",
+        "opdsHomeNote": "<strong>自宅で読む場合：</strong>アプリ側で選ぶ項目はありません——3つの接続モードはいずれもサードパーティ製サーバーには適用されません。読書用デバイスをOPDS、KomgaまたはKavitaサーバーと同じWi-Fiネットワークに接続しておくだけで構いません。",
+        "cantStream": "<strong>{{clientLabel}}</strong>はまだホストからのストリーミングに対応していません——{{clientNote}} それまでの間は、{{clientLabel}}でBiblioFuseアプリを使い、ローカルでのスタンドアロン閲覧をご利用ください。",
+        "unsupportedHost": "<strong>{{hostLabel}}</strong>から<strong>{{clientLabel}}</strong>へのネイティブアプリのストリーミングは、現在公開中のアプリではまだ対応していません。今すぐ{{hostLabel}}に書庫をホストし、代わりに無料の内蔵ブラウザリーダーで読むことができます——この機能はすでに利用可能で、どのデバイスでもアプリ不要で動作します。",
+        "step1": "<strong>{{hostLabel}}</strong>でホストを実行します。",
+        "step2": "<strong>{{clientLabel}}</strong>で読みます。",
+        "step3": "{{clientLabel}}アプリの接続設定で<strong>{{modeLabel}}</strong>を選択します。",
+        "cappedByHost": "注：{{hostLabel}}はまだ外出先でのストリーミングに対応していないため、「自宅でも外出先でも」を選択した場合でも、現時点ではこの組み合わせはローカルWi-Fiのみとなります。",
+        "cappedByClient": "注：{{clientLabel}}は仕様上ローカルWi-Fiのみに対応しています——このデバイスはiCloudにもTailscaleにも対応していません——そのため「自宅でも外出先でも」を選択した場合でも、この組み合わせは自宅でのみ利用できます。"
+      }
     }
   },
   "featureMatrix": {

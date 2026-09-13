@@ -711,3 +711,17 @@ and bullets 2-3 ("Native Komga & Kavita API...", "OPDS 1.x and OPDS-PSE streamin
 `ThirdHero` now leads on translation alone — its one actual point of differentiation —
 with the remaining two bullets (translation itself, and vertical
 Japanese/spreads/page-curl) both about the reading experience, not connectivity.
+
+## Reader-family picker translated into all 10 locales (2026-09-13)
+
+The English `redesign.readerFamilyGuide` content (80 leaf strings) extracted on
+2026-09-10 is now translated into es, fr, nl, pt, ru, zh, ja, ko, id, ms. Verified
+per-locale: exact key structure vs the English source, every `{{hostLabel}}` /
+`{{clientLabel}}` / `{{clientNote}}` / `{{modeLabel}}` interpolation placeholder
+preserved literally at the same key (a mistranslated or dropped placeholder would
+render literally as `{{hostLabel}}` on the page), and no stray Latin text in
+zh/ja/ko/ru outside approved proper nouns. Confirmed live in the browser: the
+Chinese-language OPDS recommendation branch (host=OPDS/Kavita/Komga,
+client=Android phone) renders with correct numbered steps, the QR-code CTA link,
+and the away-from-home VPN/Tailscale note, structurally identical to the English
+version.

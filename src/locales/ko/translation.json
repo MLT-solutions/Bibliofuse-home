@@ -1641,6 +1641,134 @@
           ]
         }
       ]
+    },
+    "readerFamilyGuide": {
+      "eyebrow": "모든 기기, 하나의 설정",
+      "title": "나에게 맞는 설정 찾기",
+      "intro": "이제 이 앱 제품군은 iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker, Synology를 모두 지원하며, OPDS, Komga, Kavita 서버에서도 읽을 수 있습니다. 서재를 어디에 호스팅할지와 어떤 기기에서 읽을지를 선택하면, 어떤 앱과 연결 모드를 사용해야 하는지 정확히 확인할 수 있습니다.",
+      "coverageToggle": "전체 플랫폼 지원 표 보기",
+      "table": {
+        "platformHeader": "플랫폼",
+        "roleHeader": "역할",
+        "contentHeader": "콘텐츠 소스 지원",
+        "streamHeader": "스트리밍 연결 모드",
+        "roleCols": {
+          "hosting": "서버로 호스팅",
+          "browser": "무료 브라우저 리더",
+          "standaloneNo": "독립형 리더(스트리밍 미지원)",
+          "standaloneHave": "독립형 리더(스트리밍 지원)"
+        },
+        "contentCols": {
+          "local": "로컬",
+          "nas": "NAS",
+          "icloud": "iCloud",
+          "host": "호스트",
+          "opds": "OPDS / Kavita / Komga"
+        },
+        "streamCols": {
+          "icloudTs": "iCloud + Tailscale",
+          "localWifi": "로컬 Wi-Fi",
+          "manualTs": "수동 Tailscale"
+        },
+        "platforms": {
+          "docker": "Docker(NAS)",
+          "synology": "Synology NAS(SPK)",
+          "macos": "macOS",
+          "windows": "Windows PC",
+          "iphoneIpad": "iPhone / iPad",
+          "visionos": "visionOS",
+          "androidPhone": "Android 휴대폰",
+          "tvos": "tvOS(Apple TV)",
+          "androidtv": "Android TV"
+        },
+        "legend": {
+          "supported": "지원",
+          "canConnectVia": "이 방식으로 연결 가능(클라이언트)",
+          "supportedConnection": "지원되는 연결 방식(호스트)",
+          "comingSoon": "출시 예정"
+        }
+      },
+      "hostQuestion": "서재는 어디에 호스팅되어 있나요?",
+      "clientQuestion": "어떤 기기에서 읽고 싶으신가요?",
+      "whereQuestion": "어디에서 읽으실 건가요?",
+      "onlyHome": "집에서만",
+      "homeAndAway": "집에서도, 외출 중에도",
+      "hosts": {
+        "mac": {
+          "label": "Mac(로컬 및 NAS 지원)"
+        },
+        "windows": {
+          "label": "PC(로컬 및 NAS 지원)"
+        },
+        "synology": {
+          "label": "Synology NAS(SPK)",
+          "note": "설정이 필요 없는 폴더 선택기——기존 서재를 그대로 가리킬 뿐 복제되는 파일은 없습니다. 자동 iCloud 검색은 지원하지 않습니다(이는 Mac/Windows 전용 릴레이 기능입니다)——대신 수동 Tailscale로 페어링합니다.",
+          "appLinkLabel": "Synology용 릴리스 보기 →"
+        },
+        "docker": {
+          "label": "Docker / 기타 NAS",
+          "note": "무료 자체 호스팅 서버이자 브라우저 리더——호스팅하거나 브라우저에서 읽을 때 구독이 필요하지 않습니다.",
+          "appLinkLabel": "BiblioFuse NAS(Docker) 받기 →"
+        },
+        "opds": {
+          "label": "OPDS / Kavita / Komga",
+          "note": "OPDS 1.x나 OPDS-PSE 카탈로그, 또는 Komga나 Kavita 서버는 각자 자체 API를 통해 읽어옵니다. BiblioFuse는 여기에 직접 연결합니다——이는 BiblioFuse 호스트가 아니므로 아래의 세 가지 연결 모드는 적용되지 않습니다."
+        }
+      },
+      "clients": {
+        "iphone_ipad": {
+          "label": "iPhone / iPad"
+        },
+        "visionpro": {
+          "label": "Apple Vision Pro",
+          "note": "독립형 리더로도 사용할 수 있습니다——이 설명은 호스트에서 스트리밍하는 경우에만 해당합니다."
+        },
+        "appletv": {
+          "label": "Apple TV",
+          "note": "컴패니언 앱——스트리밍만 지원하며, 기기 자체에는 로컬 서재가 없습니다. 로컬 Wi-Fi(LAN)만 지원: tvOS에는 iCloud Documents 권한이 없고, Tailscale 연결 기능은 이미 구현되어 있지만 Tailscale 측 tvOS 버그가 해결될 때까지 비활성화되어 있어, Apple TV는 아직 집 밖의 호스트를 찾을 수 없습니다."
+        },
+        "androidphone": {
+          "label": "Android 휴대폰",
+          "note": "로컬 Wi-Fi 또는 수동 Tailscale만 지원——Android는 iCloud Documents에 접근할 수 없으므로 자동 iCloud 검색은 지원하지 않습니다."
+        },
+        "androidtv": {
+          "label": "Android TV",
+          "note": "컴패니언 앱——로컬 Wi-Fi만 지원하며 Tailscale은 지원하지 않습니다."
+        }
+      },
+      "modes": {
+        "icloud-ts": {
+          "label": "iCloud + Tailscale(자동)",
+          "detail": "Tailscale을 계속 켜두기만 하면 됩니다. 집에서든 외출 중이든 앱이 알아서 서재를 찾아주므로, 따로 입력할 것이 없습니다."
+        },
+        "manual-ts": {
+          "label": "수동 Tailscale",
+          "detail": "iCloud를 사용할 수 없는 기기용입니다. 설정에서 호스트의 Tailscale 주소를 한 번만 입력하면 됩니다."
+        },
+        "local-wifi": {
+          "label": "로컬 Wi-Fi",
+          "detail": "iCloud나 Tailscale이 필요하지 않습니다. 두 기기가 같은 Wi-Fi 네트워크에 연결되어 있을 때만 작동합니다."
+        }
+      },
+      "recommendation": {
+        "heading": "선택하신 조합의 경우",
+        "cantConnectOpds": "<strong>{{clientLabel}}</strong>은(는) OPDS, Komga 또는 Kavita 서버에 연결할 수 없습니다——TV용 앱은 같은 네트워크에 있는 BiblioFuse 호스트에서만 읽어올 수 있습니다. 대신 Mac, PC 또는 NAS 호스트를 지정하거나, iPhone, iPad, Vision Pro 또는 Android 휴대폰에서 카탈로그를 읽어보세요.",
+        "opdsStep1": "서재를 <strong>OPDS, Komga 또는 Kavita 서버</strong>에 그대로 둡니다.",
+        "opdsStep2Label": "<strong>{{clientLabel}}</strong>에서 읽습니다.",
+        "opdsStep2Detail": "Komga와 Kavita는 각자의 고유 API를 통해 연결되며, 시리즈, 진행 상황, 북마크까지 함께 동기화됩니다. 그 외의 경우에는 OPDS 1.x 카탈로그로 연결되며, 서버가 OPDS-PSE를 지원하면 페이지 단위 스트리밍도 가능합니다.",
+        "opdsStep3": "{{clientLabel}} 앱에서 <strong>설정 → OPDS</strong>를 열고 서버를 추가합니다.",
+        "opdsStep3Detail": "휴대폰에서 URL, 사용자 이름, 비밀번호를 입력하는 것은 번거로운 일입니다——대신 컴퓨터에서 QR 코드를 생성해 스캔해 보세요.",
+        "opdsQrCta": "QR 로그인 코드 만들기 →",
+        "opdsAwayNote": "<strong>외출 중 읽기:</strong> 앱에서 따로 선택할 항목은 없습니다——이는 연결 모드가 아니라 네트워크 설정의 문제입니다. 읽는 기기와 서버 호스트를 같은 VPN에 연결하거나, 둘 다에 Tailscale을 설치한 뒤 호스트에서 서브넷 라우팅을 켜서 기기가 어디서든 서버의 로컬 주소에 접근할 수 있도록 하세요.",
+        "opdsHomeNote": "<strong>집에서 읽기:</strong> 앱에서 따로 선택할 항목은 없습니다——세 가지 연결 모드 중 어느 것도 타사 서버에는 적용되지 않습니다. 읽는 기기를 OPDS, Komga 또는 Kavita 서버와 같은 Wi-Fi 네트워크에 연결해 두기만 하면 됩니다.",
+        "cantStream": "<strong>{{clientLabel}}</strong>은(는) 아직 호스트에서 스트리밍할 수 없습니다——{{clientNote}} 그동안에는 {{clientLabel}}에서 BiblioFuse 앱을 사용해 로컬 독립형 읽기를 이용하세요.",
+        "unsupportedHost": "<strong>{{hostLabel}}</strong>에서 <strong>{{clientLabel}}</strong>로의 네이티브 앱 스트리밍은 현재 출시된 앱에서는 아직 지원되지 않습니다. 지금 바로 {{hostLabel}}에 서재를 호스팅하고, 대신 무료 내장 브라우저 리더로 읽어보세요——이 기능은 이미 사용할 수 있으며, 어떤 기기에서든 앱 설치 없이 작동합니다.",
+        "step1": "<strong>{{hostLabel}}</strong>에서 호스트를 실행합니다.",
+        "step2": "<strong>{{clientLabel}}</strong>에서 읽습니다.",
+        "step3": "{{clientLabel}} 앱의 연결 설정에서 <strong>{{modeLabel}}</strong>을(를) 선택합니다.",
+        "cappedByHost": "참고: {{hostLabel}}은(는) 아직 외출 중 스트리밍을 지원하지 않으므로, '집에서도, 외출 중에도'를 선택하셨더라도 이 조합은 현재 로컬 Wi-Fi에서만 작동합니다.",
+        "cappedByClient": "참고: {{clientLabel}}은(는) 설계상 로컬 Wi-Fi만 지원합니다——이 기기는 iCloud나 Tailscale을 지원하지 않습니다——따라서 '집에서도, 외출 중에도'를 선택하셨더라도 이 조합은 집에서만 작동합니다."
+      }
     }
   },
   "featureMatrix": {
