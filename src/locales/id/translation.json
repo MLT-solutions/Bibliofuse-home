@@ -1407,30 +1407,30 @@
       "sections": [
         {
           "id": "getting-started",
-          "title": "Getting started",
-          "desc": "Install it, get your files in, and know where your progress lives.",
+          "title": "Memulai",
+          "desc": "Instal aplikasinya, masukkan file Anda, dan ketahui di mana progres membaca Anda tersimpan.",
           "items": [
             {
               "q": "Bagaimana cara menambahkan buku dan folder ke BiblioFuse di iPhone?",
-              "a": "BiblioFuse menyimpan file di folder tersinkronisasi iCloud-nya sendiri. Anda dapat menambahkan buku melalui aplikasi File (salin file ke folder BiblioFuse), melalui AirDrop, atau melalui fitur Transfer Wi-Fi bawaan — buka sesi pustaka dari Mac atau PC dan seret file dari browser mana pun."
+              "a": "BiblioFuse menyimpan file di folder khusus miliknya sendiri yang disinkronkan lewat iCloud. Anda bisa menambahkan buku lewat aplikasi Files (salin file ke folder BiblioFuse), lewat AirDrop, atau lewat fitur Wi-Fi Transfer bawaan — buka sesi pustaka dari Mac atau PC lalu seret file dari browser mana pun."
             },
             {
-              "q": "Di mana kemajuan membaca, bookmark, penilaian, dan tag disimpan?",
-              "a": "Tergantung di mana file buku disimpan:",
+              "q": "Di mana progres membaca, bookmark, rating, dan tag disimpan?",
+              "a": "Tergantung di mana file buku itu berada:",
               "bullets": [
                 {
-                  "text": "Penyimpanan lokal — disimpan hanya di perangkat itu, tidak ada sinkronisasi lintas perangkat"
+                  "text": "Penyimpanan lokal — hanya tersimpan di perangkat itu, tanpa sinkronisasi antar-perangkat"
                 },
                 {
-                  "text": "Penyimpanan iCloud (Pro) — disimpan di iCloud dan disinkronkan antar perangkat Anda secara otomatis. Pada tingkat gratis folder iCloud terkunci, jadi ini berlaku setelah Anda meningkatkan."
+                  "text": "Penyimpanan iCloud (Pro) — tersimpan ke iCloud dan otomatis tersinkron di semua perangkat Anda. Pada paket gratis, folder iCloud terkunci, jadi ini baru berlaku setelah Anda upgrade."
                 },
                 {
-                  "text": "SMB / berbagi jaringan (streaming Mac atau PC) — disimpan di perangkat host",
+                  "text": "Berbagi SMB / jaringan (streaming Mac atau PC) — tersimpan di perangkat host",
                   "sub": [
-                    "iOS membaca stream Mac: kemajuan disimpan di Mac",
-                    "iOS membaca stream PC: kemajuan disimpan di PC",
-                    "PC ↔ Mac: disimpan secara independen, data tidak dibagikan",
-                    "Jika Anda menggunakan Mac dan PC sebagai host streaming, data membaca Anda akan terbagi. Gunakan satu host untuk konsistensi."
+                    "iOS membaca stream dari Mac: progres tersimpan di Mac",
+                    "iOS membaca stream dari PC: progres tersimpan di PC",
+                    "PC ↔ Mac: disimpan secara terpisah — keduanya tidak berbagi data",
+                    "Jika Anda memakai Mac dan PC sekaligus sebagai host streaming, data bacaan Anda akan terpecah. Sebaiknya gunakan satu host saja agar tetap konsisten."
                   ]
                 }
               ]
@@ -1439,166 +1439,269 @@
           "links": [
             {
               "to": "/blog/getting-started-with-bibliofuse/",
-              "label": "Getting started with BiblioFuse"
+              "label": "Memulai dengan BiblioFuse"
             },
             {
               "to": "/blog/read-cbz-cbr-on-iphone/",
-              "label": "Reading CBZ and CBR on iPhone"
+              "label": "Membaca CBZ dan CBR di iPhone"
             }
           ]
         },
         {
-          "id": "libraries",
-          "title": "Libraries & servers",
-          "desc": "Kavita, Komga and any OPDS catalogue, plus folder-as-library browsing.",
-          "items": [],
-          "links": [
-            {
-              "to": "/tools/qr-generator/",
-              "label": "Kavita & Komga setup QR generator",
-              "note": "Skip typing a server URL and API key on a phone."
-            },
-            {
-              "to": "/blog/digital-comic-library-management-guide/",
-              "label": "Managing a digital comic library"
-            }
-          ]
-        },
-        {
-          "id": "streaming",
-          "title": "Streaming from your Mac or PC",
-          "desc": "Your own machine hosts the library; the app reads from it.",
+          "id": "local-icloud",
+          "title": "Pustaka lokal dan iCloud",
+          "desc": "Di mana file sebenarnya berada di setiap platform, dan apa yang ditambahkan oleh iCloud Anda sendiri.",
           "items": [
             {
-              "q": "Bagaimana cara kerja streaming dari Mac atau PC ke iPhone?",
-              "a": "Di jaringan rumah Anda tidak ada yang perlu diatur: aplikasi host di Mac atau PC mengumumkan dirinya dan perangkat pembaca menemukannya, lalu menyambung lewat HTTPS dengan sertifikat yang dipatok. Untuk membaca di luar rumah, host juga menerbitkan alamatnya ke iCloud Drive Anda dan perangkat pembaca menjangkaunya lewat Tailscale — jalur itu memerlukan akun iCloud yang sama dan Tailscale berjalan di keduanya. Di jaringan yang sama Anda akan melihat dua entri untuk satu host dan memilih mana pun; aplikasi tidak pernah berpindah di belakang Anda."
-            },
-            {
-              "q": "Apa yang saya butuhkan untuk menyiapkan streaming?",
-              "a": "Tergantung di mana Anda ingin membaca.",
+              "q": "Sebenarnya di mana file buku saya berada?",
+              "a": "Ini berbeda-beda tergantung platform, dan perbedaan ini penting jika Anda sudah punya pustaka yang tertata rapi di disk.",
               "bullets": [
                 {
-                  "text": "Di rumah: tidak perlu apa pun lagi.",
+                  "text": "Android, Windows, dan Mac — Anda menautkan folder yang sudah Anda miliki.",
                   "sub": [
-                    "Aplikasi host di Mac atau PC Anda mengumumkan dirinya di jaringan lokal; iPhone, iPad, atau Vision Pro menemukannya sendiri.",
-                    "Izinkan akses jaringan lokal saat aplikasi pertama kali meminta. Hanya itu penyiapannya."
+                    "Arahkan aplikasi ke folder yang sudah ada, dan aplikasi akan membaca buku persis di tempatnya. Tidak ada yang disalin, tidak ada yang dipindahkan, dan struktur folder Anda sendiri tetap seperti yang Anda susun.",
+                    "Aplikasi mengingat izin tersebut, sehingga folder tetap berfungsi setelah restart. Ganti nama atau atur ulang file di luar aplikasi, dan perubahannya akan terbaca pada penyegaran berikutnya.",
+                    "Di Mac dan Windows, hal yang sama berlaku untuk folder di NAS atau berbagi jaringan."
                   ]
                 },
                 {
-                  "text": "Di luar rumah: akun iCloud yang sama di kedua perangkat, plus Tailscale berjalan di keduanya.",
+                  "text": "iPhone dan iPad — buku disimpan di dalam folder milik BiblioFuse sendiri.",
                   "sub": [
-                    "Host menulis alamatnya ke iCloud Drive Anda dan perangkat pembaca mengambilnya lewat Tailscale.",
-                    "Windows tidak menyertakan iCloud: pasang <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">iCloud untuk Windows</a> dari Microsoft Store.",
-                    "Akun iCloud dan Tailscale Anda boleh memakai email berbeda, dan exit node Tailscale tidak diperlukan."
+                    "iOS tidak mengizinkan aplikasi membaca folder sembarang di tempat lain pada perangkat seperti halnya komputer desktop, sehingga pustaka adalah folder milik aplikasi itu sendiri — yang bisa Anda lihat dan buka di aplikasi Files.",
+                    "Masukkan seluruh folder buku di level teratas, dan folder itu (beserta semua subfoldernya) akan menjadi pustaka Anda.",
+                    "Karena folder tersebut terlihat di Files, Anda bisa mengeluarkan buku dari sana kapan saja. Tidak ada yang terkunci di dalam aplikasi."
                   ]
                 },
                 {
-                  "text": "Host NAS bekerja berbeda: ia sama sekali tidak punya jalur iCloud.",
+                  "text": "Apa pun caranya, tidak ada yang diunggah.",
                   "sub": [
-                    "Pasangkan sekali di jaringan lokal Anda agar sertifikatnya tersimpan; setelah itu host yang sama bisa dijangkau dari jauh lewat Tailscale."
+                    "File dibaca langsung di perangkat. Jika Anda ingin pustaka yang sama di lebih dari satu perangkat, gunakan folder iCloud Anda sendiri atau server — lihat penjelasan di bawah."
                   ]
                 }
               ]
             },
             {
-              "q": "Streaming sudah benar tetapi host tidak muncul — apa yang bisa saya coba?",
-              "a": "Dulu penyebab umumnya adalah berkas alamat yang kedaluwarsa. Sekarang host Mac maupun Windows menghapusnya sendiri setiap kali streaming dimulai, berhenti, atau alamatnya berubah — termasuk salinan konflik iCloud — jadi ini jarang menjadi masalah lagi.",
+              "q": "Sebaiknya saya pakai iCloud atau server untuk menjaga pustaka tetap tersinkron?",
+              "a": "Keduanya adalah dua pilihan yang berdiri sendiri-sendiri, dan Anda bisa memakai salah satunya.",
               "bullets": [
                 {
-                  "text": "Tutup lalu buka lagi aplikasi di host. Saat dijalankan, ia menerbitkan alamat baru.",
-                  "sub": []
+                  "text": "Folder iCloud Anda sendiri",
+                  "sub": [
+                    "Masukkan buku ke folder iCloud milik BiblioFuse, dan seluruh pustaka — file, sampul, progres, rating, dan tag — akan mengikuti Anda ke setiap perangkat yang masuk dengan akun yang sama.",
+                    "Ini mencakup seluruh folder dan merupakan fitur Pro, bukan paket uji coba gratis."
+                  ]
                 },
                 {
-                  "text": "Di perangkat pembaca, buka daftar sumber streaming dan cari titik hijau di samping nama host.",
+                  "text": "Server Komga, Kavita, atau OPDS",
                   "sub": [
-                    "Abu-abu berarti host belum terjangkau — tunggu beberapa detik, atau paksa tutup lalu buka lagi aplikasi di host."
+                    "Tidak ada yang disalin ke perangkat: Anda menjelajah dan membaca langsung dari server, dengan sinkronisasi posisi bila jenis servernya mendukung.",
+                    "Lebih cocok untuk koleksi besar yang sudah Anda host sendiri, dan menjadi satu-satunya pilihan jika pustaka Anda berada di NAS. Juga fitur Pro."
+                  ]
+                }
+              ]
+            }
+          ],
+          "links": [
+            {
+              "to": "/blog/digital-comic-library-management-guide/",
+              "label": "Mengatur pustaka komik berskala besar"
+            }
+          ]
+        },
+        {
+          "id": "streaming",
+          "title": "Streaming dari aplikasi Mac, PC, atau NAS BiblioFuse Anda",
+          "desc": "Komputer atau NAS Anda sendiri yang meng-host pustaka; perangkat baca terhubung ke sana.",
+          "items": [
+            {
+              "q": "Bagaimana cara kerja streaming dari Mac atau PC ke iPhone?",
+              "a": "Di jaringan rumah Anda, tidak ada yang perlu dikonfigurasi: aplikasi host di Mac atau PC Anda akan mengumumkan dirinya sendiri, dan perangkat baca akan menemukannya, lalu terhubung lewat HTTPS dengan sertifikat yang di-pin. Untuk membaca saat berada jauh dari rumah, host juga mempublikasikan alamatnya ke iCloud Drive Anda, dan perangkat baca menjangkaunya lewat Tailscale — jalur ini memerlukan akun iCloud yang sama serta Tailscale yang berjalan di kedua perangkat. Pada jaringan yang sama, Anda akan melihat kedua entri untuk satu host yang sama dan bisa memilih salah satunya; aplikasi tidak akan pernah beralih di antara keduanya secara diam-diam."
+            },
+            {
+              "q": "Apa yang saya perlukan untuk menyiapkan streaming?",
+              "a": "Tergantung di mana Anda ingin membaca.",
+              "bullets": [
+                {
+                  "text": "Di rumah — tidak perlu apa-apa lagi.",
+                  "sub": [
+                    "Aplikasi host di Mac atau PC Anda mengiklankan dirinya di jaringan lokal Anda; iPhone, iPad, atau Vision Pro Anda akan menemukannya sendiri.",
+                    "Izinkan akses jaringan lokal saat aplikasi memintanya untuk pertama kali. Itu saja seluruh proses pengaturannya."
+                  ]
+                },
+                {
+                  "text": "Jauh dari rumah — akun iCloud yang sama di kedua perangkat, ditambah Tailscale yang berjalan di keduanya.",
+                  "sub": [
+                    "Host menuliskan alamatnya ke iCloud Drive Anda, dan perangkat baca mengambilnya lewat Tailscale.",
+                    "Windows tidak memiliki iCloud bawaan — instal <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">iCloud for Windows</a> dari Microsoft Store.",
+                    "Akun iCloud dan Tailscale Anda boleh memakai alamat email yang berbeda, dan exit node Tailscale tidak diperlukan."
+                  ]
+                },
+                {
+                  "text": "Host NAS bekerja dengan cara berbeda — sama sekali tidak memiliki jalur iCloud.",
+                  "sub": [
+                    "Pasangkan sekali di jaringan lokal Anda agar sertifikatnya tersimpan, setelah itu host yang sama bisa dijangkau dari jarak jauh lewat Tailscale."
                   ]
                 }
               ]
             },
             {
               "q": "Apakah saya perlu Tailscale untuk streaming di rumah?",
-              "a": "Tidak. Streaming Wi-Fi lokal berjalan sendiri: host mengumumkan dirinya di jaringan Anda dan aplikasi menyambung lewat HTTPS dengan sertifikat yang dipatok. Versi awal memang gagal di jaringan lokal, karena aplikasi tidak membaca metadata yang diumumkan host dan jatuh kembali ke alamat HTTP biasa yang diblokir oleh build rilis. Itu sudah diperbaiki. Tailscale sekarang hanya untuk membaca di luar rumah.",
+              "a": "Tidak. Streaming Wi-Fi lokal berjalan dengan sendirinya — host mengiklankan dirinya di jaringan Anda dan aplikasi terhubung ke sana lewat HTTPS dengan sertifikat yang di-pin. Versi-versi awal memang benar-benar gagal di jaringan lokal, karena aplikasi saat itu tidak membaca metadata yang diiklankan host dan malah kembali ke alamat HTTP biasa yang diblokir oleh build rilis. Masalah itu sudah diperbaiki. Tailscale kini hanya digunakan untuk membaca saat jauh dari rumah.",
               "bullets": [
                 {
-                  "text": "Pengaturan → Streaming Mac / PC punya tiga mode.",
+                  "text": "Settings → Mac / PC Streaming memiliki tiga mode.",
                   "sub": [
-                    "<strong>iCloud + Tailscale</strong> — menampilkan host lokal sekaligus host jarak jauh yang diterbitkan lewat iCloud.",
-                    "<strong>Wi-Fi lokal</strong> — hanya host lokal; alamat jarak jauh tidak pernah ditampilkan atau dihubungi.",
-                    "<strong>Tailscale manual</strong> — untuk host yang Anda masukkan sendiri, termasuk NAS."
+                    "<strong>iCloud + Tailscale</strong> — menampilkan host lokal sekaligus host jarak jauh yang dipublikasikan lewat iCloud.",
+                    "<strong>Local Wi-Fi</strong> — hanya host lokal; alamat jarak jauh tidak pernah ditampilkan atau dihubungi.",
+                    "<strong>Manual Tailscale</strong> — untuk host yang Anda masukkan sendiri, termasuk NAS."
                   ]
                 },
                 {
-                  "text": "Tidak ada perpindahan otomatis antara lokal dan jarak jauh, dan itu disengaja.",
+                  "text": "Memang sengaja tidak ada peralihan otomatis antara lokal dan jarak jauh.",
                   "sub": [
-                    "Di jaringan yang sama kedua entri muncul untuk host yang sama dan Anda memilih salah satu, jadi koneksi lokal yang sudah jalan tidak pernah diganti diam-diam dengan rute yang lebih lambat."
+                    "Pada jaringan yang sama, kedua entri untuk host yang sama akan muncul dan Anda memilih salah satunya, sehingga koneksi lokal yang sudah berjalan baik tidak akan pernah diam-diam digantikan oleh jalur yang lebih lambat."
                   ]
                 },
                 {
-                  "text": "Apple TV hanya bekerja di jaringan lokal.",
+                  "text": "Apple TV hanya bisa memakai jaringan lokal.",
                   "sub": [
-                    "tvOS tidak bisa memakai iCloud Drive, dan jalur Tailscale sudah dibuat serta diuji tetapi dikirim dalam keadaan nonaktif sampai bug Tailscale di tvOS teratasi."
+                    "tvOS tidak bisa menggunakan iCloud Documents, dan jalur Tailscale sudah dibangun serta diuji tetapi dirilis dalam keadaan dimatikan selama bug Tailscale di tvOS dari pihak Tailscale sendiri belum teratasi."
                   ]
                 }
               ]
             },
             {
               "q": "Bisakah Android membaca dari host Mac atau PC?",
-              "a": "Bisa. Aplikasi Android menemukan host di jaringan lokal Anda, dan setelah sebuah host dipasangkan di sana, host itu juga bisa dijangkau dengan mengetik alamatnya sendiri. Ia bisa menyalin buku dari host ke perpustakaannya sendiri, dan posisi baca, penilaian, serta tag dikirim kembali ke host. Android tidak punya akses iCloud, jadi membaca di luar rumah berarti memasukkan alamat host secara manual lewat Tailscale, bukan ditemukan otomatis."
+              "a": "Bisa. Aplikasi Android menemukan host di jaringan lokal Anda, dan setelah sebuah host dipasangkan di sana, host itu juga bisa dijangkau dengan memasukkan alamatnya secara manual. Aplikasi ini bisa menyalin buku dari host ke pustakanya sendiri, dan posisi baca, rating, serta tag dikirim kembali ke host. Android tidak memiliki akses iCloud, jadi membaca saat jauh dari rumah berarti memasukkan alamat host secara manual lewat Tailscale, bukan ditemukan secara otomatis."
+            }
+          ]
+        },
+        {
+          "id": "servers",
+          "title": "Streaming dari server OPDS, Kavita, atau Komga yang sudah Anda miliki",
+          "desc": "Sudah meng-host katalog sendiri? Hubungkan langsung — tidak ada yang disalin ke perangkat.",
+          "items": [
+            {
+              "q": "Apa itu OPDS, dan bagaimana cara menghubungkan server OPDS?",
+              "a": "OPDS adalah format katalog terbuka yang memungkinkan aplikasi menjelajah dan membaca dari server buku atau komik yang di-host sendiri, halaman demi halaman, tanpa perlu mengunduh seluruh pustaka terlebih dahulu. BiblioFuse dapat terhubung ke server OPDS 1.x apa pun — Calibre-Web, COPS, Ubooquity, dan lainnya — termasuk streaming halaman OPDS-PSE untuk komik.",
+              "bullets": [
+                {
+                  "text": "Menambahkan server",
+                  "sub": [
+                    "Buka Settings, tambahkan URL katalog server, dan masuk jika diminta kredensial.",
+                    "Jika server menampilkan kode QR, Anda bisa memindainya alih-alih mengetik alamatnya.",
+                    "Ini adalah fitur Pro."
+                  ]
+                },
+                {
+                  "text": "Pemindai QR hanya untuk server katalog.",
+                  "sub": [
+                    "Fitur ini tidak memasangkan Mac atau PC untuk streaming — itu menggunakan pencarian jaringan lokal dan tidak memerlukan kamera. Jika Anda sedang menyiapkan streaming, lihat bagian streaming saja."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Bagaimana cara menghubungkan BiblioFuse ke server Komga saya?",
+              "a": "Tambahkan alamat dan kredensial server Komga Anda di Settings, dan BiblioFuse akan menjelajahinya lewat API milik Komga sendiri alih-alih feed OPDS generik, sehingga Anda mendapatkan sampul seri dan volume, tag, dan genre. Posisi baca Anda dibaca dari dan ditulis kembali ke server. Diperlukan Pro.",
+              "bullets": [
+                {
+                  "text": "Bookmark tidak tersinkron dengan Komga.",
+                  "sub": [
+                    "Bookmark di dalam buku hanya tersinkron dengan Kavita. Posisi baca tersinkron dengan keduanya. Jika sinkronisasi bookmark penting bagi Anda dan Anda bisa memilih server, itulah perbedaannya."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Bagaimana cara menghubungkan ke Kavita, dan apakah progres membaca saya akan tersinkron?",
+              "a": "Ya, dua arah. Tambahkan server Kavita Anda di Settings, dan BiblioFuse menggunakan API native Kavita alih-alih ekstensi OPDS-PSE yang diandalkan sebagian besar aplikasi pembaca lain — yang justru menjadi sumber banyak masalah sinkronisasi progres di ekosistem Kavita secara luas. Posisi baca tersinkron dua arah, dan bookmark di dalam buku juga ikut tersinkron. Diperlukan Pro.",
+              "bullets": []
+            }
+          ],
+          "links": [
+            {
+              "to": "/tools/qr-generator/",
+              "label": "Buat kode QR untuk server Kavita atau Komga Anda"
             }
           ]
         },
         {
           "id": "reading",
-          "title": "Reading",
-          "desc": "Formats, reading direction, text-to-speech and translation.",
+          "title": "Membaca",
+          "desc": "Format, arah baca, text-to-speech, dan terjemahan.",
           "items": [
             {
               "q": "Apakah BiblioFuse berfungsi di Apple Vision Pro?",
-              "a": "Ya. BiblioFuse adalah aplikasi visionOS asli di App Store: jendela spasial sungguhan, bukan aplikasi iPad mode kompatibilitas. Ia mendukung pelacakan mata, jepit, mouse, trackpad, dan keyboard, serta termasuk dalam pembelian universal iOS + Mac tanpa biaya tambahan."
+              "a": "Ya. BiblioFuse adalah aplikasi visionOS native di App Store — jendela spasial sungguhan, bukan aplikasi iPad dalam mode kompatibilitas. Aplikasi ini mendukung eye tracking, pinch, mouse, trackpad, dan keyboard, serta sudah termasuk dalam pembelian gabungan iOS + Mac tanpa biaya tambahan."
             },
             {
               "q": "Tata letak baca spasial apa saja yang didukung BiblioFuse di visionOS?",
-              "a": "Tiga tata letak pustaka spasial: Rak buku spasial (sampul Anda di rak melayang), Tampilan kisi (kisi melayang untuk pustaka besar), dan Dinding miring (dinding galeri miring dengan filter rating dan tag). Anda juga bisa streaming pustaka dari Mac atau PC agar penyimpanan Vision Pro tetap kosong."
+              "a": "Ada tiga tata letak pustaka spasial: Spatial Bookshelves (sampul buku Anda di rak-rak yang melayang), Grid View (grid melayang untuk pustaka besar), dan Slanted Wall (dinding galeri miring dengan filter rating dan tag). Anda juga bisa melakukan streaming pustaka dari Mac atau PC agar penyimpanan Vision Pro tetap lega."
             },
             {
               "q": "Bagaimana cara mendapatkan suara text-to-speech yang lebih baik di BiblioFuse?",
-              "a": "Suara berkualitas lebih tinggi sudah tertanam di perangkat Anda tetapi harus diunduh secara terpisah — BiblioFuse akan mendeteksinya secara otomatis setelah dipasang.",
+              "a": "Suara berkualitas lebih tinggi mungkin sudah tersedia lewat sistem text-to-speech perangkat Anda, tetapi sebagian harus diunduh secara terpisah. BiblioFuse akan otomatis mendeteksi suara yang baru diinstal begitu suara itu tersedia untuk aplikasi.",
               "bullets": [
                 {
                   "text": "iPhone / iPad",
                   "sub": [
-                    "Buka Pengaturan → Aksesibilitas → Konten yang Diucapkan → Suara",
-                    "Pilih bahasa Anda, lalu unduh suara Disempurnakan atau Premium",
-                    "Suara Premium di iOS 16+ memiliki kualitas neural (setara Siri)"
+                    "Buka Settings → Accessibility → Spoken Content → Voices",
+                    "Pilih bahasa Anda, lalu unduh suara Enhanced atau Premium",
+                    "Suara Premium pada versi iOS yang didukung memberikan kualitas bicara terbaik dari Apple"
+                  ]
+                },
+                {
+                  "text": "Android",
+                  "sub": [
+                    "Buka Settings → Accessibility → Text-to-speech output",
+                    "Tergantung perangkat Anda, pengaturan ini mungkin justru muncul di Settings → General management → Text-to-speech, atau Settings → System → Languages → Text-to-speech output",
+                    "Pilih mesin text-to-speech pilihan Anda, misalnya Speech Recognition & Synthesis dari Google atau mesin bawaan produsen perangkat Anda",
+                    "Buka pengaturan mesin, pilih Install voice data, lalu unduh bahasa atau suara yang Anda inginkan",
+                    "Anda juga bisa memperbarui mesin text-to-speech lewat Google Play",
+                    "Kualitas dan ketersediaan suara berbeda-beda tergantung perangkat, bahasa, produsen, dan mesin TTS yang terinstal — beberapa suara berkualitas lebih tinggi mungkin memerlukan koneksi internet",
+                    "Restart BiblioFuse, lalu mulai sesi TTS baru"
                   ]
                 },
                 {
                   "text": "Mac",
                   "sub": [
-                    "Buka Pengaturan Sistem → Aksesibilitas → Konten yang Diucapkan → Suara Sistem → Kelola Suara",
-                    "Unduh suara Disempurnakan atau Premium untuk bahasa Anda"
+                    "Buka System Settings → Accessibility → Spoken Content → System Voice → Manage Voices",
+                    "Unduh suara Enhanced atau Premium apa pun untuk bahasa Anda"
                   ]
                 },
                 {
                   "text": "Windows 10 / Windows 11",
                   "sub": [
-                    "Buka Pengaturan → Waktu & bahasa → Bahasa & wilayah",
-                    "Tambahkan bahasa baca Anda, atau buka Opsi bahasa untuk bahasa yang sudah terpasang",
-                    "Di bawah Fitur bahasa, pasang Text-to-speech",
-                    "Mulai ulang BiblioFuse, lalu mulai sesi TTS baru"
+                    "Buka Settings → Time & language → Language & region",
+                    "Tambahkan bahasa baca Anda, atau buka Language options untuk bahasa yang sudah terinstal",
+                    "Di bawah Language features, instal Text-to-speech",
+                    "Restart BiblioFuse, lalu mulai sesi TTS baru"
                   ]
                 },
                 {
-                  "text": "Suara Alami Windows 11 (opsional)",
+                  "text": "Suara Natural Windows 11 (opsional)",
                   "sub": [
-                    "Buka Pengaturan → Aksesibilitas → Narrator",
-                    "Di bawah Tambahkan suara alami, unduh suara yang diinginkan",
-                    "Catatan: Windows mungkin hanya menyediakan suara ini untuk Narrator, bukan semua aplikasi"
+                    "Buka Settings → Accessibility → Narrator",
+                    "Di bawah Add natural voices, unduh suara yang Anda inginkan",
+                    "Windows mungkin hanya menyediakan sebagian suara Natural untuk Narrator saja dan tidak untuk aplikasi lain"
                   ]
                 },
                 {
-                  "text": "Tidak perlu pembaruan aplikasi — BiblioFuse mendeteksi suara yang baru dipasang saat tersedia melalui sistem text-to-speech Windows atau Apple"
+                  "text": "Tidak perlu pembaruan BiblioFuse. BiblioFuse mendeteksi suara yang baru diinstal ketika suara itu tersedia lewat sistem text-to-speech Android, Apple, atau Windows"
+                }
+              ]
+            },
+            {
+              "q": "Bisakah saya membaca manga dari kanan ke kiri?",
+              "a": "Bisa, dan biasanya tanpa perlu melakukan apa pun. Sakelar arah baca berlaku untuk semua format yang dibaca dengan membalik halaman — CBZ, ZIP, CBR, RAR, PDF, dan EPUB bergaya komik — dan ini gratis, bukan fitur Pro. Fitur ini tidak berlaku untuk EPUB prosa atau teks biasa, yang mengikuti arah teks bawaan buku itu sendiri, bukan urutan halaman.",
+              "bullets": [
+                {
+                  "text": "Fitur ini mengatur dirinya sendiri jika memungkinkan.",
+                  "sub": [
+                    "EPUB komik yang menyatakan arah dari kanan ke kiri dalam metadatanya sendiri akan terbuka dalam mode manga dengan sendirinya, begitu pula buku yang di-streaming dari server yang melaporkan arah dari kanan ke kiri. Sakelar ini disediakan untuk file yang tidak menyatakan arah apa pun.",
+                    "Mengubah pengaturan ini membalik halaman, slider, dan kontrol di layar secara bersamaan, sehingga seluruh pembaca terbaca dalam arah yang sama."
+                  ]
                 }
               ]
             }
@@ -1606,37 +1709,163 @@
           "links": [
             {
               "to": "/features/",
-              "label": "Full feature matrix",
-              "note": "Which features work on which platform, and since when."
+              "label": "Matriks fitur lengkap",
+              "note": "Fitur mana yang berfungsi di platform mana, dan sejak kapan."
             },
             {
               "to": "/blog/how-to-read-manga-on-iphone/",
-              "label": "Reading manga on iPhone"
+              "label": "Membaca manga di iPhone"
             },
             {
               "to": "/blog/cbz-vs-cbr-vs-epub-formats-explained/",
-              "label": "CBZ vs CBR vs EPUB, explained"
+              "label": "CBZ vs CBR vs EPUB, dijelaskan"
             }
           ]
         },
         {
           "id": "tools",
-          "title": "Tools",
-          "desc": "Fix a file before you read it - in the browser, on your device.",
+          "title": "Alat",
+          "desc": "Perbaiki file sebelum Anda membacanya - di browser, di perangkat Anda.",
           "items": [
             {
               "q": "Apa perbedaan antara PC Reader dan alat PC EPUB / CBZ?",
-              "a": "PC Reader adalah aplikasi membaca lengkap — membuka buku, mengelola perpustakaan, mengompres file, dan melakukan streaming ke iPhone. Alat PC EPUB dan CBZ adalah aplikasi yang lebih ringan dan murah yang hanya berfokus pada kompresi dan penggabungan, tanpa pembaca."
+              "a": "PC Reader adalah aplikasi pembaca lengkap — aplikasi ini membuka buku, mengelola pustaka Anda, mengompresi file, dan melakukan streaming ke iPhone. Alat PC EPUB dan CBZ adalah aplikasi yang lebih ringan dan lebih murah, hanya berfokus pada kompresi dan penggabungan, tanpa fungsi pembaca."
             }
           ],
           "links": [
             {
               "to": "/tools/",
-              "label": "All browser tools"
+              "label": "Semua alat browser"
             },
             {
               "to": "/blog/bibliofuse-tools-tab-guide/",
-              "label": "The Tools tab, explained"
+              "label": "Penjelasan tab Tools"
+            }
+          ]
+        },
+        {
+          "id": "migration",
+          "title": "Pindah ke perangkat baru",
+          "desc": "Apa yang berpindah dengan sendirinya, dan apa yang harus Anda bawa sendiri.",
+          "items": [
+            {
+              "q": "Bagaimana cara memindahkan pustaka dan progres membaca saya ke iPhone atau iPad baru?",
+              "a": "Ini tergantung di mana buku Anda berada, dan dua dari tiga kasus tidak memerlukan tindakan apa pun dari Anda.",
+              "bullets": [
+                {
+                  "text": "Buku di folder iCloud Anda — otomatis.",
+                  "sub": [
+                    "Masuk dengan akun yang sama di perangkat baru, dan pustaka akan muncul kembali lengkap dengan progres, rating, dan tag-nya. Tidak ada yang perlu dipindahkan."
+                  ]
+                },
+                {
+                  "text": "Buku di server Komga, Kavita, atau OPDS — otomatis.",
+                  "sub": [
+                    "Sambungkan kembali ke server yang sama. Buku-buku itu memang sejak awal tidak pernah berada di perangkat lama."
+                  ]
+                },
+                {
+                  "text": "Buku yang hanya tersimpan di perangkat lama — bawa sendiri.",
+                  "sub": [
+                    "Gunakan Files, AirDrop, atau Wi-Fi Transfer, tiga cara yang sama seperti saat Anda menambahkannya dulu. Lihat bagian memulai."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Apakah buku lokal tetap ada setelah backup dan restore iPhone?",
+              "a": "Ya. Buku yang tersimpan secara lokal berada di folder dokumen normal aplikasi, dan BiblioFuse tidak mengecualikan folder itu dari backup — jadi, berbeda dengan sebagian aplikasi pembaca berbasis file lainnya, pustaka lokal Anda menjadi bagian dari backup komputer terenkripsi standar atau backup perangkat iCloud, sama seperti data lainnya.",
+              "bullets": [
+                {
+                  "text": "Jika buku memang hilang setelah restore, penyebab yang biasa terjadi bukanlah hal yang khusus pada aplikasi ini.",
+                  "sub": [
+                    "Perangkat baru disiapkan sebagai perangkat baru, bukan dipulihkan dari backup tertentu itu.",
+                    "Backup tersebut dibuat sebelum Anda menambahkan buku-buku itu.",
+                    "Backup perangkat iCloud melewatkan file besar karena akun hampir mencapai batas penyimpanan."
+                  ]
+                },
+                {
+                  "text": "Memindahkan buku secara manual selalu berhasil, apa pun yang terjadi dengan backup-nya.",
+                  "sub": [
+                    "Files, AirDrop, dan Wi-Fi Transfer sama sekali tidak bergantung pada status backup."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "purchase",
+          "title": "Membeli dan memulihkan",
+          "desc": "Apa yang dicakup oleh satu pembelian, dan cara mendapatkannya kembali.",
+          "items": [
+            {
+              "q": "Apakah satu pembelian mencakup iPhone, iPad, Mac, Vision Pro, dan Apple TV?",
+              "a": "Ya. Kelima platform itu merupakan satu daftar aplikasi, dan Pro adalah satu pembelian tunggal yang dibagikan di semuanya — beli di satu perangkat mana pun dan fitur itu akan terbuka di mana saja Anda masuk dengan Apple ID yang sama. Tidak ada pembelian per platform dan tidak ada yang perlu dibeli dua kali. Tersedia opsi bulanan, tahunan, dan seumur hidup.",
+              "bullets": [
+                {
+                  "text": "Android dan Windows terpisah.",
+                  "sub": [
+                    "Keduanya adalah aplikasi berbeda di toko yang berbeda, sehingga pembelian di Apple tidak berlaku untuk keduanya, dan sebaliknya juga begitu."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Saya menginstal ulang aplikasi dan kehilangan Pro — bagaimana cara mendapatkannya kembali?",
+              "a": "Cukup buka aplikasinya. Di iPhone, iPad, Mac, dan Apple TV, Pro yang sudah Anda miliki akan terdeteksi saat aplikasi dijalankan, bahkan sebelum Anda mengetuk apa pun, karena aplikasi memeriksa riwayat pembelian App Store Anda saat startup. Jika belum muncul, gunakan Restore Purchases di Settings — fitur ini selalu tersedia sebagai cadangan di setiap platform.",
+              "bullets": [
+                {
+                  "text": "Tidak ada langkah tambahan yang terlibat.",
+                  "sub": [
+                    "Pembelian diproses lewat sistem milik Apple sendiri, bukan akun pihak ketiga, sehingga pemulihan bekerja dengan cara yang sama seperti pembelian App Store mana pun — tidak perlu masuk ke akun BiblioFuse, dan tidak ada yang perlu kami cari tahukan untuk Anda."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "title": "Saat ada yang tidak berfungsi",
+          "desc": "Dua masalah yang paling sering muncul, dan apa yang sebenarnya menyebabkannya.",
+          "items": [
+            {
+              "q": "Mengapa pustaka atau progres membaca saya tidak tersinkron lewat iCloud?",
+              "a": "BiblioFuse menyimpan progres, rating, dan tag setiap buku dalam sebuah file pendamping kecil di sebelah buku tersebut, di dalam folder iCloud Anda. Artinya, keberhasilan sinkronisasi bergantung pada iCloud Drive milik Apple yang bekerja dengan normal di kedua perangkat, bukan pada sesuatu yang dikendalikan oleh BiblioFuse.",
+              "bullets": [
+                {
+                  "text": "Periksa keempat hal berikut, secara berurutan",
+                  "sub": [
+                    "iCloud Drive sudah aktif, dan BiblioFuse sudah diaktifkan untuknya, di kedua perangkat.",
+                    "Kedua perangkat masuk dengan Apple ID yang sama.",
+                    "Akun tersebut tidak kehabisan penyimpanan iCloud.",
+                    "Buku itu sendiri sudah terunduh sepenuhnya di perangkat yang sedang Anda periksa — bukan masih menampilkan ikon awan."
+                  ]
+                },
+                {
+                  "text": "Folder iCloud yang kosong adalah keadaan yang nyata, tidak selalu berarti kesalahan.",
+                  "sub": [
+                    "Jika Settings menyatakan iCloud sudah terhubung tetapi Anda tidak melihat buku apa pun, buka aplikasi Files dan periksa langsung. Folder yang benar-benar kosong berperilaku berbeda dari folder yang gagal terhubung, dan ada baiknya membedakan keduanya sebelum menelusuri masalah lebih lanjut."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Streaming sudah diatur dengan benar tetapi host tidak muncul — apa yang harus saya coba?",
+              "a": "File alamat yang basi dulu biasanya menjadi penyebabnya. Baik host Mac maupun Windows kini membersihkan file-file itu sendiri setiap kali streaming dimulai, dihentikan, atau alamatnya berubah — termasuk salinan konflik iCloud — sehingga hal ini jarang lagi menjadi masalah.",
+              "bullets": [
+                {
+                  "text": "Tutup lalu buka kembali aplikasi di host. Aplikasi akan mempublikasikan ulang alamat baru saat dijalankan.",
+                  "sub": []
+                },
+                {
+                  "text": "Di perangkat baca, buka daftar sumber streaming dan cari titik hijau di sebelah nama host.",
+                  "sub": [
+                    "Abu-abu berarti host belum berhasil dijangkau — tunggu beberapa detik, atau force-quit lalu buka kembali aplikasi di host."
+                  ]
+                }
+              ]
             }
           ]
         }

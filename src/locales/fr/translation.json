@@ -1407,30 +1407,30 @@
       "sections": [
         {
           "id": "getting-started",
-          "title": "Getting started",
-          "desc": "Install it, get your files in, and know where your progress lives.",
+          "title": "Premiers pas",
+          "desc": "Installez l'application, importez vos fichiers, et sachez où en est votre progression.",
           "items": [
             {
               "q": "Comment ajouter des livres et des dossiers à BiblioFuse sur iPhone ?",
-              "a": "BiblioFuse stocke les fichiers dans son propre dossier synchronisé avec iCloud. Vous pouvez ajouter des livres via l'app Fichiers (copiez les fichiers dans le dossier BiblioFuse), par AirDrop, ou via le Transfert Wi-Fi intégré — ouvrez une session de bibliothèque depuis Mac ou PC et faites glisser des fichiers depuis n'importe quel navigateur."
+              "a": "BiblioFuse stocke les fichiers dans son propre dossier synchronisé avec iCloud. Vous pouvez ajouter des livres via l'app Fichiers (en copiant des fichiers dans le dossier BiblioFuse), via AirDrop, ou via le transfert Wi-Fi intégré : ouvrez une session de bibliothèque depuis un Mac ou un PC et glissez-déposez des fichiers depuis n'importe quel navigateur."
             },
             {
-              "q": "Où sont sauvegardés la progression de lecture, les signets, les notes et les étiquettes ?",
-              "a": "Cela dépend de l'emplacement du fichier du livre :",
+              "q": "Où sont enregistrés la progression de lecture, les signets, les notes et les tags ?",
+              "a": "Cela dépend de l'endroit où se trouve le fichier du livre :",
               "bullets": [
                 {
-                  "text": "Stockage local — sauvegardé sur cet appareil uniquement, pas de synchronisation multi-appareils"
+                  "text": "Stockage local — enregistré uniquement sur cet appareil, sans synchronisation entre appareils"
                 },
                 {
-                  "text": "Stockage iCloud (Pro) : enregistré dans iCloud et synchronisé automatiquement entre vos appareils. Dans l'offre gratuite le dossier iCloud est verrouillé, cela s'applique donc après la mise à niveau."
+                  "text": "Stockage iCloud (Pro) — enregistré dans iCloud et synchronisé automatiquement entre vos appareils. Sur l'offre gratuite, le dossier iCloud est verrouillé, donc cela s'applique une fois que vous passez à la version supérieure."
                 },
                 {
-                  "text": "SMB / partage réseau (streaming Mac ou PC) — sauvegardé sur l'appareil hôte",
+                  "text": "SMB / partage réseau (streaming Mac ou PC) — enregistré sur l'appareil hôte",
                   "sub": [
-                    "iOS lisant un flux Mac : la progression est sauvegardée sur le Mac",
-                    "iOS lisant un flux PC : la progression est sauvegardée sur le PC",
-                    "PC ↔ Mac : stockés indépendamment, ils ne partagent pas les données",
-                    "Si vous utilisez Mac et PC comme hôtes de streaming, vos données de lecture seront divisées. Utilisez un seul hôte pour plus de cohérence."
+                    "iOS lisant un flux depuis un Mac : la progression est enregistrée sur le Mac",
+                    "iOS lisant un flux depuis un PC : la progression est enregistrée sur le PC",
+                    "PC ↔ Mac : stockés indépendamment — ils ne partagent pas de données",
+                    "Si vous utilisez à la fois un Mac et un PC comme hôtes de streaming, vos données de lecture seront réparties entre les deux. Restez sur un seul hôte pour rester cohérent."
                   ]
                 }
               ]
@@ -1439,144 +1439,234 @@
           "links": [
             {
               "to": "/blog/getting-started-with-bibliofuse/",
-              "label": "Getting started with BiblioFuse"
+              "label": "Premiers pas avec BiblioFuse"
             },
             {
               "to": "/blog/read-cbz-cbr-on-iphone/",
-              "label": "Reading CBZ and CBR on iPhone"
+              "label": "Lire des CBZ et des CBR sur iPhone"
             }
           ]
         },
         {
-          "id": "libraries",
-          "title": "Libraries & servers",
-          "desc": "Kavita, Komga and any OPDS catalogue, plus folder-as-library browsing.",
-          "items": [],
-          "links": [
-            {
-              "to": "/tools/qr-generator/",
-              "label": "Kavita & Komga setup QR generator",
-              "note": "Skip typing a server URL and API key on a phone."
-            },
-            {
-              "to": "/blog/digital-comic-library-management-guide/",
-              "label": "Managing a digital comic library"
-            }
-          ]
-        },
-        {
-          "id": "streaming",
-          "title": "Streaming from your Mac or PC",
-          "desc": "Your own machine hosts the library; the app reads from it.",
+          "id": "local-icloud",
+          "title": "Bibliothèque locale et iCloud",
+          "desc": "Où se trouvent réellement les fichiers sur chaque plateforme, et ce qu'apporte votre propre iCloud.",
           "items": [
             {
-              "q": "Comment fonctionne le streaming de Mac ou PC vers iPhone ?",
-              "a": "Sur votre réseau domestique, il n'y a rien à configurer : l'app hôte de votre Mac ou PC s'annonce et l'appareil de lecture la trouve, en se connectant en HTTPS avec un certificat épinglé. Pour lire en déplacement, l'hôte publie aussi son adresse dans votre iCloud Drive et l'appareil de lecture l'atteint via Tailscale — cette voie exige le même compte iCloud et Tailscale actif sur les deux. Sur le même réseau, les deux entrées d'un même hôte apparaissent et vous choisissez celle que vous voulez : l'app ne bascule jamais de l'une à l'autre à votre insu."
-            },
-            {
-              "q": "De quoi ai-je besoin pour configurer la diffusion ?",
-              "a": "Cela dépend de l'endroit où vous voulez lire.",
+              "q": "Où se trouvent réellement mes fichiers de livres ?",
+              "a": "Cela varie selon la plateforme, et la différence compte si vous avez déjà une bibliothèque organisée sur disque.",
               "bullets": [
                 {
-                  "text": "À la maison : rien de plus.",
+                  "text": "Android, Windows et Mac — vous liez un dossier que vous possédez déjà.",
                   "sub": [
-                    "L'app hôte de votre Mac ou PC s'annonce sur votre réseau local ; votre iPhone, iPad ou Vision Pro la trouve tout seul.",
-                    "Autorisez l'accès au réseau local la première fois que l'app le demande. C'est toute la configuration."
+                    "Pointez l'app vers un dossier existant et elle lira les livres là où ils se trouvent. Rien n'est copié, rien n'est déplacé, et votre propre structure de dossiers reste exactement telle que vous l'avez construite.",
+                    "L'app mémorise cette autorisation, donc le dossier continue de fonctionner après un redémarrage. Renommez ou réorganisez des éléments en dehors de l'app et elle prendra en compte les changements au prochain rafraîchissement.",
+                    "Sur Mac et Windows, la même chose s'applique à un dossier sur un NAS ou un partage réseau."
                   ]
                 },
                 {
-                  "text": "En déplacement : le même compte iCloud sur les deux appareils, et Tailscale actif sur les deux.",
+                  "text": "iPhone et iPad — les livres vont dans le propre dossier de BiblioFuse.",
                   "sub": [
-                    "L'hôte écrit son adresse dans votre iCloud Drive et l'appareil de lecture la récupère via Tailscale.",
-                    "Windows n'intègre pas iCloud : installez <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">iCloud pour Windows</a> depuis le Microsoft Store.",
-                    "Vos comptes iCloud et Tailscale peuvent utiliser des adresses e-mail différentes, et un nœud de sortie Tailscale n'est pas nécessaire."
+                    "iOS ne permet pas à une app de lire un dossier arbitraire ailleurs sur l'appareil comme peut le faire un ordinateur de bureau, donc la bibliothèque est le dossier de l'app — que vous pouvez voir et ouvrir dans l'app Fichiers.",
+                    "Déposez des dossiers de livres entiers au premier niveau et ils deviennent votre bibliothèque, sous-dossiers compris.",
+                    "Comme ce dossier est visible dans Fichiers, vous pouvez récupérer vos livres plus tard. Rien n'est enfermé dans l'app."
                   ]
                 },
                 {
-                  "text": "Un hôte NAS fonctionne différemment : il n'a aucune voie iCloud.",
+                  "text": "Dans tous les cas, rien n'est mis en ligne.",
                   "sub": [
-                    "Appairez-le une fois sur votre réseau local pour enregistrer le certificat ; ensuite le même hôte devient accessible à distance via Tailscale."
+                    "Les fichiers sont lus sur l'appareil. Si vous voulez la même bibliothèque sur plusieurs appareils, c'est soit votre propre dossier iCloud, soit un serveur — voir ci-dessous."
                   ]
                 }
               ]
             },
             {
-              "q": "La diffusion est bien configurée mais l'hôte n'apparaît pas — que puis-je essayer ?",
-              "a": "Des fichiers d'adresse obsolètes en étaient la cause habituelle. Les hôtes Mac et Windows les effacent maintenant d'eux-mêmes chaque fois que la diffusion démarre, s'arrête ou change d'adresse — y compris les copies en conflit iCloud — ce n'est donc plus que rarement le problème.",
+              "q": "Dois-je utiliser iCloud ou un serveur pour synchroniser ma bibliothèque ?",
+              "a": "Ce sont deux options indépendantes et vous pouvez utiliser l'une ou l'autre.",
               "bullets": [
                 {
-                  "text": "Quittez et relancez l'app sur l'hôte. Elle publie une adresse fraîche au démarrage.",
-                  "sub": []
+                  "text": "Votre propre dossier iCloud",
+                  "sub": [
+                    "Mettez des livres dans le dossier iCloud de BiblioFuse et toute la bibliothèque — fichiers, couvertures, progression, notes et tags — vous suit sur chaque appareil connecté au même compte.",
+                    "Cela couvre tout le dossier et c'est une fonctionnalité Pro, pas un niveau d'essai gratuit."
+                  ]
                 },
                 {
-                  "text": "Sur l'appareil de lecture, ouvrez la liste des sources de diffusion et cherchez un point vert à côté du nom de l'hôte.",
+                  "text": "Un serveur Komga, Kavita ou OPDS",
                   "sub": [
-                    "Gris signifie que l'hôte n'a pas encore été joint — attendez quelques secondes, ou forcez la fermeture puis relancez l'app sur l'hôte."
+                    "Rien n'est copié sur l'appareil : vous naviguez et lisez depuis le serveur, avec synchronisation de la position là où le type de serveur le permet.",
+                    "Mieux adapté à une grande collection que vous hébergez déjà, et la seule option si votre bibliothèque se trouve sur un NAS. Également Pro."
+                  ]
+                }
+              ]
+            }
+          ],
+          "links": [
+            {
+              "to": "/blog/digital-comic-library-management-guide/",
+              "label": "Organiser une grande bibliothèque de bandes dessinées"
+            }
+          ]
+        },
+        {
+          "id": "streaming",
+          "title": "Streaming depuis votre app BiblioFuse Mac, PC ou NAS",
+          "desc": "Votre propre machine ou votre NAS héberge la bibliothèque ; l'appareil de lecture s'y connecte.",
+          "items": [
+            {
+              "q": "Comment fonctionne le streaming d'un Mac ou d'un PC vers un iPhone ?",
+              "a": "Sur votre réseau domestique, rien n'a besoin d'être configuré : l'app hôte sur votre Mac ou PC s'annonce elle-même et l'appareil de lecture la trouve, en se connectant via HTTPS avec un certificat épinglé. Pour lire loin de chez vous, l'hôte publie aussi son adresse sur votre iCloud Drive, et l'appareil de lecture l'atteint via Tailscale — ce chemin nécessite le même compte iCloud et Tailscale en cours d'exécution sur les deux appareils. Sur le même réseau, vous verrez les deux entrées pour un même hôte et choisirez celle que vous voulez ; l'app ne bascule jamais entre elles à votre insu."
+            },
+            {
+              "q": "De quoi ai-je besoin pour configurer le streaming ?",
+              "a": "Cela dépend de l'endroit où vous voulez lire.",
+              "bullets": [
+                {
+                  "text": "À la maison — rien de plus.",
+                  "sub": [
+                    "L'app hôte sur votre Mac ou PC s'annonce sur votre réseau local ; votre iPhone, iPad ou Vision Pro la trouve tout seul.",
+                    "Autorisez l'accès au réseau local la première fois que l'app le demande. C'est toute la configuration."
+                  ]
+                },
+                {
+                  "text": "Loin de chez vous — le même compte iCloud sur les deux appareils, plus Tailscale en cours d'exécution sur les deux.",
+                  "sub": [
+                    "L'hôte écrit son adresse sur votre iCloud Drive et l'appareil de lecture la récupère via Tailscale.",
+                    "Windows n'a pas d'iCloud intégré — installez <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">iCloud pour Windows</a> depuis le Microsoft Store.",
+                    "Vos comptes iCloud et Tailscale peuvent utiliser des adresses e-mail différentes, et un nœud de sortie Tailscale n'est pas nécessaire."
+                  ]
+                },
+                {
+                  "text": "Un hôte NAS fonctionne différemment — il n'a aucun chemin iCloud du tout.",
+                  "sub": [
+                    "Associez-le une fois sur votre réseau local pour que le certificat soit enregistré, après quoi le même hôte peut être atteint à distance via Tailscale."
                   ]
                 }
               ]
             },
             {
               "q": "Ai-je besoin de Tailscale pour diffuser à la maison ?",
-              "a": "Non. La diffusion en Wi-Fi local fonctionne seule : l'hôte s'annonce sur votre réseau et l'app s'y connecte en HTTPS avec un certificat épinglé. Les premières versions échouaient effectivement sur le réseau local, car l'app ne lisait pas les métadonnées annoncées par l'hôte et se rabattait sur une adresse HTTP simple que les versions publiées bloquent. C'est corrigé. Tailscale ne sert désormais qu'à lire en déplacement.",
+              "a": "Non. Le streaming Wi-Fi local fonctionne tout seul — l'hôte s'annonce sur votre réseau et l'app s'y connecte via HTTPS avec un certificat épinglé. Les premières versions échouaient vraiment sur un réseau local, car l'app ne lisait pas les métadonnées annoncées par l'hôte et se rabattait sur une adresse HTTP simple que les versions publiées bloquent. C'est corrigé. Tailscale ne sert désormais qu'à lire loin de chez vous.",
               "bullets": [
                 {
-                  "text": "Réglages → Diffusion Mac / PC propose trois modes.",
+                  "text": "Réglages → Streaming Mac / PC propose trois modes.",
                   "sub": [
                     "<strong>iCloud + Tailscale</strong> — liste à la fois les hôtes locaux et l'hôte distant publié via iCloud.",
-                    "<strong>Wi-Fi local</strong> — hôtes locaux uniquement ; aucune adresse distante n'est affichée ni appelée.",
-                    "<strong>Tailscale manuel</strong> — pour un hôte saisi à la main, NAS compris."
+                    "<strong>Wi-Fi local</strong> — hôtes locaux uniquement ; aucune adresse distante n'est jamais affichée ni composée.",
+                    "<strong>Tailscale manuel</strong> — pour un hôte que vous saisissez à la main, y compris un NAS."
                   ]
                 },
                 {
-                  "text": "Il n'y a délibérément aucun basculement automatique entre local et distant.",
+                  "text": "Il n'y a délibérément aucune bascule automatique entre local et distant.",
                   "sub": [
-                    "Sur le même réseau, les deux entrées apparaissent pour le même hôte et vous en choisissez une : une connexion locale qui fonctionne n'est donc jamais remplacée en silence par une route plus lente."
+                    "Sur le même réseau, les deux entrées apparaissent pour le même hôte et vous en choisissez une, de sorte qu'une connexion locale qui fonctionne n'est jamais remplacée silencieusement par une voie plus lente."
                   ]
                 },
                 {
-                  "text": "L'Apple TV fonctionne uniquement sur le réseau local.",
+                  "text": "Apple TV est réseau local uniquement.",
                   "sub": [
-                    "tvOS ne peut pas utiliser iCloud Drive, et la voie Tailscale est développée et testée mais livrée désactivée tant qu'un bug Tailscale sur tvOS n'est pas résolu."
+                    "tvOS ne peut pas utiliser iCloud Documents, et le chemin Tailscale est développé et testé mais livré désactivé tant qu'un bug Tailscale en amont sur tvOS reste non résolu."
                   ]
                 }
               ]
             },
             {
               "q": "Android peut-il lire depuis un hôte Mac ou PC ?",
-              "a": "Oui. L'app Android trouve les hôtes sur votre réseau local et, une fois un hôte appairé là, vous pouvez aussi l'atteindre en saisissant son adresse à la main. Elle peut copier un livre depuis l'hôte vers sa propre bibliothèque, et la position de lecture, les notes et les étiquettes sont renvoyées à l'hôte. Android n'a pas accès à iCloud : lire en déplacement suppose donc de saisir l'adresse de l'hôte manuellement via Tailscale au lieu qu'elle soit découverte pour vous."
+              "a": "Oui. L'app Android trouve les hôtes sur votre réseau local, et une fois qu'un hôte y a été associé, il peut aussi être atteint en saisissant son adresse à la main. Elle peut copier un livre de l'hôte vers sa propre bibliothèque, et la position de lecture, les notes et les tags sont renvoyés à l'hôte. Android n'a pas d'accès iCloud, donc lire loin de chez vous signifie saisir manuellement l'adresse de l'hôte via Tailscale plutôt que de la voir découverte automatiquement."
+            }
+          ]
+        },
+        {
+          "id": "servers",
+          "title": "Streaming depuis votre serveur OPDS, Kavita ou Komga existant",
+          "desc": "Vous hébergez déjà un catalogue ? Connectez-vous-y directement — rien n'est copié sur l'appareil.",
+          "items": [
+            {
+              "q": "Qu'est-ce qu'OPDS, et comment connecter un serveur OPDS ?",
+              "a": "OPDS est un format de catalogue ouvert qui permet à une app de parcourir et de lire depuis un serveur de livres ou de bandes dessinées auto-hébergé, page par page, plutôt que de télécharger d'abord toute la bibliothèque. BiblioFuse se connecte à tout serveur OPDS 1.x — Calibre-Web, COPS, Ubooquity et d'autres — y compris le streaming de pages OPDS-PSE pour les bandes dessinées.",
+              "bullets": [
+                {
+                  "text": "Ajouter un serveur",
+                  "sub": [
+                    "Ouvrez Réglages, ajoutez l'URL du catalogue du serveur, et connectez-vous s'il demande des identifiants.",
+                    "Si le serveur affiche un code QR, vous pouvez le scanner au lieu de saisir l'adresse.",
+                    "C'est une fonctionnalité Pro."
+                  ]
+                },
+                {
+                  "text": "Le scanner de QR code est réservé aux serveurs de catalogue.",
+                  "sub": [
+                    "Il n'associe pas un Mac ou un PC pour le streaming — cela utilise la découverte réseau locale et ne nécessite pas de caméra. Si vous configurez le streaming, consultez plutôt la section streaming."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Comment connecter BiblioFuse à mon serveur Komga ?",
+              "a": "Ajoutez l'adresse et les identifiants de votre serveur Komga dans Réglages, et BiblioFuse le parcourt via la propre API de Komga plutôt qu'un flux OPDS générique, ce qui vous donne les couvertures de séries et de volumes, les tags et les genres. Votre position de lecture est lue depuis le serveur et y est réécrite. Pro requis.",
+              "bullets": [
+                {
+                  "text": "Les signets ne se synchronisent pas avec Komga.",
+                  "sub": [
+                    "Les signets dans le livre se synchronisent uniquement avec Kavita. La position de lecture se synchronise avec les deux. Si la synchronisation des signets compte pour vous et que vous avez le choix du serveur, c'est là la différence."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Comment me connecter à Kavita, et ma progression de lecture se synchronisera-t-elle ?",
+              "a": "Oui, dans les deux sens. Ajoutez votre serveur Kavita dans Réglages, et BiblioFuse utilise l'API native de Kavita plutôt que l'extension OPDS-PSE dont dépendent la plupart des apps de lecture — ce qui est à l'origine d'une bonne partie des soucis de synchronisation de progression dans l'écosystème Kavita au sens large. La position de lecture se synchronise dans les deux sens, et les signets dans le livre se synchronisent aussi. Pro requis.",
+              "bullets": []
+            }
+          ],
+          "links": [
+            {
+              "to": "/tools/qr-generator/",
+              "label": "Créer un code QR pour votre serveur Kavita ou Komga"
             }
           ]
         },
         {
           "id": "reading",
-          "title": "Reading",
-          "desc": "Formats, reading direction, text-to-speech and translation.",
+          "title": "Lecture",
+          "desc": "Formats, sens de lecture, synthèse vocale et traduction.",
           "items": [
             {
               "q": "BiblioFuse fonctionne-t-il sur Apple Vision Pro ?",
-              "a": "Oui. BiblioFuse est une app visionOS native sur l'App Store : une véritable fenêtre spatiale, pas une app iPad en mode de compatibilité. Elle prend en charge le suivi oculaire, le pincement, la souris, le trackpad et le clavier, et elle est incluse dans l'achat universel iOS + Mac sans frais supplémentaires."
+              "a": "Oui. BiblioFuse est une app native visionOS sur l'App Store — une véritable fenêtre spatiale, pas une app iPad en mode compatibilité. Elle prend en charge le suivi oculaire, le pincement, la souris, le trackpad et le clavier, et elle est incluse dans l'achat universel iOS + Mac sans coût supplémentaire."
             },
             {
               "q": "Quelles dispositions de lecture spatiale BiblioFuse prend-il en charge sur visionOS ?",
-              "a": "Trois dispositions de bibliothèque spatiale : Étagères spatiales (vos couvertures sur des étagères flottantes), Vue en grille (une grille flottante pour les grandes bibliothèques) et Mur incliné (un mur-galerie incliné avec filtres de notes et d'étiquettes). Vous pouvez aussi diffuser votre bibliothèque depuis un Mac ou PC pour libérer le stockage du Vision Pro."
+              "a": "Trois dispositions de bibliothèque spatiale : Étagères spatiales (vos couvertures sur des étagères flottantes), Vue en grille (une grille flottante pour les grandes bibliothèques), et Mur incliné (un mur de galerie en angle avec filtres de note et de tag). Vous pouvez aussi diffuser votre bibliothèque depuis un Mac ou un PC pour garder de l'espace de stockage libre sur le Vision Pro."
             },
             {
               "q": "Comment obtenir de meilleures voix de synthèse vocale dans BiblioFuse ?",
-              "a": "Les voix de meilleure qualité sont intégrées à votre appareil mais doivent être téléchargées séparément — BiblioFuse les détectera automatiquement une fois installées.",
+              "a": "Des voix de meilleure qualité peuvent déjà être disponibles via le système de synthèse vocale de votre appareil, mais certaines doivent être téléchargées séparément. BiblioFuse détectera automatiquement les voix nouvellement installées dès qu'elles sont mises à disposition des apps.",
               "bullets": [
                 {
                   "text": "iPhone / iPad",
                   "sub": [
-                    "Allez dans Réglages → Accessibilité → Contenu parlé → Voix",
+                    "Allez dans Réglages → Accessibilité → Contenu énoncé → Voix",
                     "Choisissez votre langue, puis téléchargez une voix Améliorée ou Premium",
-                    "Les voix Premium sur iOS 16+ sont de qualité neurale (niveau Siri)"
+                    "Les voix Premium sur les versions d'iOS prises en charge offrent la synthèse vocale de la plus haute qualité d'Apple"
+                  ]
+                },
+                {
+                  "text": "Android",
+                  "sub": [
+                    "Allez dans Paramètres → Accessibilité → Sortie de synthèse vocale",
+                    "Selon votre appareil, ce réglage peut plutôt apparaître dans Paramètres → Gestion générale → Synthèse vocale, ou Paramètres → Système → Langues → Sortie de synthèse vocale",
+                    "Sélectionnez votre moteur de synthèse vocale préféré, comme Reconnaissance et synthèse vocales de Google ou le moteur du fabricant de votre appareil",
+                    "Ouvrez les paramètres du moteur, sélectionnez Installer les données vocales, et téléchargez les langues ou voix souhaitées",
+                    "Vous pouvez aussi mettre à jour le moteur de synthèse vocale via le Google Play Store",
+                    "La qualité et la disponibilité des voix varient selon l'appareil, la langue, le fabricant et le moteur TTS installé — certaines voix de meilleure qualité peuvent nécessiter une connexion internet",
+                    "Redémarrez BiblioFuse, puis démarrez une nouvelle session TTS"
                   ]
                 },
                 {
                   "text": "Mac",
                   "sub": [
-                    "Allez dans Réglages Système → Accessibilité → Contenu parlé → Voix système → Gérer les voix",
+                    "Allez dans Réglages Système → Accessibilité → Contenu énoncé → Voix système → Gérer les voix",
                     "Téléchargez une voix Améliorée ou Premium pour votre langue"
                   ]
                 },
@@ -1584,21 +1674,34 @@
                   "text": "Windows 10 / Windows 11",
                   "sub": [
                     "Allez dans Paramètres → Heure et langue → Langue et région",
-                    "Ajoutez votre langue de lecture ou ouvrez les options de la langue installée",
-                    "Sous Fonctionnalités linguistiques, installez Synthèse vocale",
-                    "Redémarrez BiblioFuse, puis lancez une nouvelle session TTS"
+                    "Ajoutez votre langue de lecture, ou ouvrez les options de langue pour une langue déjà installée",
+                    "Sous Fonctionnalités de langue, installez la synthèse vocale",
+                    "Redémarrez BiblioFuse, puis démarrez une nouvelle session TTS"
                   ]
                 },
                 {
-                  "text": "Voix naturelles Windows 11 (facultatif)",
+                  "text": "Voix naturelles de Windows 11 (facultatif)",
                   "sub": [
                     "Allez dans Paramètres → Accessibilité → Narrateur",
-                    "Sous Ajouter des voix naturelles, téléchargez la voix souhaitée",
-                    "Remarque : Windows peut réserver ces voix au Narrateur uniquement et non à toutes les apps"
+                    "Sous Ajouter des voix naturelles, téléchargez la voix voulue",
+                    "Windows peut n'exposer certaines voix naturelles qu'au Narrateur et pas aux autres applications"
                   ]
                 },
                 {
-                  "text": "Aucune mise à jour de l'app requise — BiblioFuse détecte les nouvelles voix lorsqu'elles sont exposées via le système de synthèse vocale Windows ou Apple"
+                  "text": "Aucune mise à jour de BiblioFuse n'est nécessaire. BiblioFuse détecte les voix nouvellement installées lorsqu'elles sont exposées par le système de synthèse vocale d'Android, d'Apple ou de Windows"
+                }
+              ]
+            },
+            {
+              "q": "Puis-je lire des mangas de droite à gauche ?",
+              "a": "Oui, et généralement sans rien faire. Un interrupteur de sens de lecture couvre tous les formats à tournage de page — CBZ, ZIP, CBR, RAR, PDF et EPUB de style bande dessinée — et il est gratuit, pas une fonctionnalité Pro. Il ne s'applique pas aux EPUB en prose ni au texte brut, qui suivent le sens de lecture propre du livre plutôt qu'un ordre de pages.",
+              "bullets": [
+                {
+                  "text": "Il se règle lui-même quand c'est possible.",
+                  "sub": [
+                    "Un EPUB de bande dessinée qui déclare le sens droite à gauche dans ses propres métadonnées s'ouvre en mode manga tout seul, tout comme un livre diffusé depuis un serveur qui indique le sens droite à gauche. L'interrupteur est là pour les fichiers qui ne disent rien dans un sens ou l'autre.",
+                    "Le changer inverse simultanément la page, le curseur et les commandes à l'écran, de sorte que tout le lecteur lit dans le même sens."
+                  ]
                 }
               ]
             }
@@ -1606,37 +1709,163 @@
           "links": [
             {
               "to": "/features/",
-              "label": "Full feature matrix",
-              "note": "Which features work on which platform, and since when."
+              "label": "Tableau complet des fonctionnalités",
+              "note": "Quelles fonctionnalités marchent sur quelle plateforme, et depuis quand."
             },
             {
               "to": "/blog/how-to-read-manga-on-iphone/",
-              "label": "Reading manga on iPhone"
+              "label": "Lire des mangas sur iPhone"
             },
             {
               "to": "/blog/cbz-vs-cbr-vs-epub-formats-explained/",
-              "label": "CBZ vs CBR vs EPUB, explained"
+              "label": "CBZ contre CBR contre EPUB, expliqué"
             }
           ]
         },
         {
           "id": "tools",
-          "title": "Tools",
-          "desc": "Fix a file before you read it - in the browser, on your device.",
+          "title": "Outils",
+          "desc": "Réparez un fichier avant de le lire — dans le navigateur, sur votre appareil.",
           "items": [
             {
-              "q": "Quelle est la différence entre le PC Reader et les outils PC EPUB / CBZ ?",
-              "a": "Le PC Reader est une application de lecture complète — il ouvre des livres, gère votre bibliothèque, compresse des fichiers et diffuse vers iPhone. Les outils PC EPUB et CBZ sont des apps plus légères et moins chères axées uniquement sur la compression et la fusion, sans lecteur."
+              "q": "Quelle est la différence entre le PC Reader et les outils EPUB / CBZ pour PC ?",
+              "a": "Le PC Reader est une app de lecture complète — elle ouvre les livres, gère votre bibliothèque, compresse des fichiers et diffuse vers l'iPhone. Les outils EPUB et CBZ pour PC sont des apps plus légères et moins chères, axées uniquement sur la compression et la fusion, sans lecteur."
             }
           ],
           "links": [
             {
               "to": "/tools/",
-              "label": "All browser tools"
+              "label": "Tous les outils du navigateur"
             },
             {
               "to": "/blog/bibliofuse-tools-tab-guide/",
-              "label": "The Tools tab, explained"
+              "label": "L'onglet Outils, expliqué"
+            }
+          ]
+        },
+        {
+          "id": "migration",
+          "title": "Passer à un nouvel appareil",
+          "desc": "Ce qui se transfère tout seul, et ce que vous devez apporter vous-même.",
+          "items": [
+            {
+              "q": "Comment transférer ma bibliothèque et ma progression de lecture vers un nouvel iPhone ou iPad ?",
+              "a": "Cela dépend d'où vivent vos livres, et deux des trois cas ne demandent rien de votre part.",
+              "bullets": [
+                {
+                  "text": "Livres dans votre dossier iCloud — automatique.",
+                  "sub": [
+                    "Connectez-vous au même compte sur le nouvel appareil et la bibliothèque réapparaît avec sa progression, ses notes et ses tags. Rien à transférer."
+                  ]
+                },
+                {
+                  "text": "Livres sur un serveur Komga, Kavita ou OPDS — automatique.",
+                  "sub": [
+                    "Reconnectez-vous au même serveur. Les livres n'ont jamais résidé sur l'ancien appareil, pour commencer."
+                  ]
+                },
+                {
+                  "text": "Livres stockés uniquement sur l'ancien appareil — apportez-les vous-même.",
+                  "sub": [
+                    "Utilisez Fichiers, AirDrop ou le transfert Wi-Fi, les trois mêmes méthodes que vous avez utilisées pour les ajouter. Voir la section Premiers pas."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Les livres locaux survivent-ils à une sauvegarde et restauration d'iPhone ?",
+              "a": "Oui. Les livres stockés localement se trouvent dans le dossier de documents normal de l'app, et BiblioFuse n'exclut pas ce dossier des sauvegardes — donc, contrairement à certaines autres apps de lecture basées sur des fichiers, votre bibliothèque locale fait partie d'une sauvegarde ordinateur chiffrée standard ou d'une sauvegarde d'appareil iCloud, avec tout le reste.",
+              "bullets": [
+                {
+                  "text": "Si des livres ont bien disparu après une restauration, les causes habituelles ne sont pas spécifiques à l'app.",
+                  "sub": [
+                    "Le nouvel appareil a été configuré comme neuf plutôt que restauré depuis cette sauvegarde en particulier.",
+                    "La sauvegarde est antérieure au moment où vous avez ajouté les livres.",
+                    "Une sauvegarde d'appareil iCloud a ignoré des fichiers volumineux parce que le compte approchait de sa limite de stockage."
+                  ]
+                },
+                {
+                  "text": "Transférer les livres à la main fonctionne toujours, quoi qu'ait fait la sauvegarde.",
+                  "sub": [
+                    "Fichiers, AirDrop et le transfert Wi-Fi ne dépendent absolument pas de l'état de la sauvegarde."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "purchase",
+          "title": "Achat et restauration",
+          "desc": "Ce que couvre un achat, et comment le récupérer.",
+          "items": [
+            {
+              "q": "Un seul achat couvre-t-il iPhone, iPad, Mac, Vision Pro et Apple TV ?",
+              "a": "Oui. Ces cinq appareils forment une seule fiche d'app, et Pro est un achat unique partagé entre eux tous — achetez-le sur n'importe quel appareil et il se débloque partout où vous êtes connecté avec le même identifiant Apple. Il n'y a pas d'achat par plateforme et rien à acheter deux fois. Des options mensuelle, annuelle et à vie sont disponibles.",
+              "bullets": [
+                {
+                  "text": "Android et Windows sont séparés.",
+                  "sub": [
+                    "Ce sont des apps différentes sur des boutiques différentes, donc un achat Apple ne se reporte pas sur elles, et inversement."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "J'ai réinstallé l'app et perdu Pro — comment le récupérer ?",
+              "a": "Ouvrez simplement l'app. Sur iPhone, iPad, Mac et Apple TV, votre Pro existant est détecté au lancement, avant même que vous touchiez quoi que ce soit, car l'app vérifie votre historique d'achats App Store au démarrage. S'il n'est pas apparu, utilisez Restaurer les achats dans Réglages — c'est toujours là comme solution de secours, sur toutes les plateformes.",
+              "bullets": [
+                {
+                  "text": "Rien de plus n'est nécessaire.",
+                  "sub": [
+                    "Les achats passent par le système propre d'Apple plutôt que par un compte tiers, donc la restauration fonctionne exactement comme pour n'importe quel achat App Store — aucune connexion BiblioFuse, et rien que nous ayons à vérifier en votre nom."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "title": "Quand quelque chose ne fonctionne pas",
+          "desc": "Les deux pannes les plus fréquentes, et ce qui les cause réellement.",
+          "items": [
+            {
+              "q": "Pourquoi ma bibliothèque ou ma progression de lecture ne se synchronise-t-elle pas via iCloud ?",
+              "a": "BiblioFuse conserve la progression, la note et les tags de chaque livre dans un petit fichier compagnon à côté du livre, dans votre dossier iCloud. Cela signifie que la synchronisation dépend du bon fonctionnement d'iCloud Drive d'Apple sur les deux appareils, et non de quoi que ce soit que BiblioFuse contrôle.",
+              "bullets": [
+                {
+                  "text": "Vérifiez ces quatre points, dans l'ordre",
+                  "sub": [
+                    "iCloud Drive est activé, et BiblioFuse y est autorisé, sur les deux appareils.",
+                    "Les deux appareils sont connectés avec le même identifiant Apple.",
+                    "Le compte n'a pas épuisé son stockage iCloud.",
+                    "Le livre lui-même est entièrement téléchargé sur l'appareil que vous vérifiez — et n'affiche plus une icône de nuage."
+                  ]
+                },
+                {
+                  "text": "Un dossier iCloud vide est un état réel, pas forcément un dysfonctionnement.",
+                  "sub": [
+                    "Si Réglages indique qu'iCloud est connecté mais que vous ne voyez aucun livre, ouvrez l'app Fichiers et regardez directement. Un dossier réellement vide se comporte différemment d'un dossier qui échoue à se connecter, et il vaut la peine de faire la distinction avant de poursuivre le dépannage."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Le streaming est correctement configuré mais l'hôte n'apparaît pas — que dois-je essayer ?",
+              "a": "Des fichiers d'adresse obsolètes en étaient généralement la cause. Les hôtes Mac et Windows les effacent désormais eux-mêmes à chaque démarrage, arrêt du streaming, ou changement d'adresse — y compris les copies en conflit iCloud — donc ce n'est plus vraiment le problème.",
+              "bullets": [
+                {
+                  "text": "Quittez et rouvrez l'app sur l'hôte. Elle republie une adresse fraîche au lancement.",
+                  "sub": []
+                },
+                {
+                  "text": "Sur l'appareil de lecture, ouvrez la liste des sources de streaming et cherchez un point vert à côté du nom de l'hôte.",
+                  "sub": [
+                    "Le gris signifie que l'hôte n'a pas encore été atteint — attendez quelques secondes, ou forcez la fermeture et rouvrez l'app sur l'hôte."
+                  ]
+                }
+              ]
             }
           ]
         }

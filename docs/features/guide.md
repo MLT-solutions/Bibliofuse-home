@@ -232,3 +232,21 @@ site said so:
 This is a good example of a claim worth verifying rather than assuming symmetry: three
 different platform APIs, one shared user-visible behaviour on desktop and a genuinely
 different one on iOS.
+
+## Full 9-section/22-answer structure translated into all 10 locales (2026-09-13)
+
+The English-only restructure from 2026-09-10 (wave 2/3: `local-icloud`, `servers`,
+`migration`, `purchase`, `troubleshooting` sections) is now translated into es, fr, nl,
+pt, ru, zh, ja, ko, id, ms — all 10 non-English locales now match English's structure
+exactly: 9 sections, 22 Q&A items, same order, same bullet/sub-item counts per item.
+
+Verified per-locale before merging: structural shape (section count, item count per
+section, bullet count per item, sub-item count per bullet) diffed against the English
+source by array index, `id` fields confirmed unchanged (they're internal identifiers,
+not display text), every `links[].to` URL path confirmed byte-identical to English
+(only `label` text was translated), and no stray Latin script in zh/ja/ko/ru outside
+approved proper nouns and untouched URL segments.
+
+Confirmed live: `/es/guide/` renders all 9 sections with 22 total Q&A, and the page
+chrome (`h1`, `seoTitle`) translated too, matching the guide-chrome fix from earlier
+this week.

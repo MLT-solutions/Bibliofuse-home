@@ -1407,30 +1407,30 @@
       "sections": [
         {
           "id": "getting-started",
-          "title": "Getting started",
-          "desc": "Install it, get your files in, and know where your progress lives.",
+          "title": "Aan de slag",
+          "desc": "Installeer de app, haal je bestanden binnen en weet waar je voortgang staat.",
           "items": [
             {
-              "q": "Hoe voeg ik boeken en mappen toe aan BiblioFuse op iPhone?",
-              "a": "BiblioFuse slaat bestanden op in zijn eigen iCloud-gesynchroniseerde map. Je kunt boeken toevoegen via de Bestanden-app (kopieer bestanden naar de BiblioFuse-map), via AirDrop, of via de ingebouwde Wi-Fi-overdracht — open een bibliotheeksessie vanuit Mac of pc en sleep bestanden vanuit een browser."
+              "q": "Hoe voeg ik boeken en mappen toe aan BiblioFuse op de iPhone?",
+              "a": "BiblioFuse bewaart bestanden in een eigen, met iCloud gesynchroniseerde map. Je kunt boeken toevoegen via de Bestanden-app (bestanden naar de BiblioFuse-map kopiëren), via AirDrop, of via de ingebouwde Wifi-overdracht — open een bibliotheeksessie vanaf een Mac of pc en sleep bestanden erin vanuit elke browser."
             },
             {
-              "q": "Waar worden leesvoortgang, bladwijzers, beoordelingen en labels opgeslagen?",
-              "a": "Dit hangt af van waar het boekbestand zich bevindt:",
+              "q": "Waar worden leesvoortgang, bladwijzers, beoordelingen en tags opgeslagen?",
+              "a": "Dat hangt af van waar het boekbestand zich bevindt:",
               "bullets": [
                 {
-                  "text": "Lokale opslag — alleen opgeslagen op dat apparaat, geen synchronisatie tussen apparaten"
+                  "text": "Lokale opslag — alleen op dat apparaat opgeslagen, geen synchronisatie tussen apparaten"
                 },
                 {
-                  "text": "iCloud-opslag (Pro) — opgeslagen in iCloud en automatisch gesynchroniseerd tussen je apparaten. In de gratis versie is de iCloud-map vergrendeld, dus dit geldt zodra je upgradet."
+                  "text": "iCloud-opslag (Pro) — opgeslagen in iCloud en automatisch gesynchroniseerd tussen je apparaten. In de gratis versie is de iCloud-map vergrendeld, dus dit geldt pas zodra je upgradet."
                 },
                 {
                   "text": "SMB / netwerkshare (Mac- of pc-streaming) — opgeslagen op het hostapparaat",
                   "sub": [
-                    "iOS leest een Mac-stream: voortgang wordt opgeslagen op de Mac",
-                    "iOS leest een pc-stream: voortgang wordt opgeslagen op de pc",
-                    "PC ↔ Mac: onafhankelijk opgeslagen, gegevens worden niet gedeeld",
-                    "Als je zowel Mac als pc als streaming-host gebruikt, worden je leesgegevens gesplitst. Gebruik één host voor consistentie."
+                    "iOS dat een Mac-stream leest: voortgang wordt opgeslagen op de Mac",
+                    "iOS dat een pc-stream leest: voortgang wordt opgeslagen op de pc",
+                    "Pc ↔ Mac: onafhankelijk van elkaar opgeslagen — ze delen geen gegevens",
+                    "Als je zowel een Mac als een pc als streaminghost gebruikt, wordt je leesdata gesplitst. Houd het bij één host voor consistentie."
                   ]
                 }
               ]
@@ -1439,166 +1439,269 @@
           "links": [
             {
               "to": "/blog/getting-started-with-bibliofuse/",
-              "label": "Getting started with BiblioFuse"
+              "label": "Aan de slag met BiblioFuse"
             },
             {
               "to": "/blog/read-cbz-cbr-on-iphone/",
-              "label": "Reading CBZ and CBR on iPhone"
+              "label": "CBZ en CBR lezen op de iPhone"
             }
           ]
         },
         {
-          "id": "libraries",
-          "title": "Libraries & servers",
-          "desc": "Kavita, Komga and any OPDS catalogue, plus folder-as-library browsing.",
-          "items": [],
-          "links": [
-            {
-              "to": "/tools/qr-generator/",
-              "label": "Kavita & Komga setup QR generator",
-              "note": "Skip typing a server URL and API key on a phone."
-            },
-            {
-              "to": "/blog/digital-comic-library-management-guide/",
-              "label": "Managing a digital comic library"
-            }
-          ]
-        },
-        {
-          "id": "streaming",
-          "title": "Streaming from your Mac or PC",
-          "desc": "Your own machine hosts the library; the app reads from it.",
+          "id": "local-icloud",
+          "title": "Lokale en iCloud-bibliotheek",
+          "desc": "Waar de bestanden op elk platform daadwerkelijk staan, en wat je eigen iCloud toevoegt.",
           "items": [
             {
-              "q": "Hoe werkt streaming van Mac of pc naar iPhone?",
-              "a": "Op je thuisnetwerk hoeft niets ingesteld te worden: de host-app op je Mac of pc kondigt zich aan en het leesapparaat vindt hem, met een verbinding via HTTPS en een vastgezet certificaat. Om buitenshuis te lezen publiceert de host zijn adres ook naar je iCloud Drive en bereikt het leesapparaat hem via Tailscale — die route vereist hetzelfde iCloud-account en Tailscale actief op beide. Op hetzelfde netwerk zie je beide vermeldingen voor één host en kies je zelf; de app wisselt er nooit buiten je om tussen."
-            },
-            {
-              "q": "Wat heb ik nodig om streaming in te stellen?",
-              "a": "Dat hangt ervan af waar je wilt lezen.",
+              "q": "Waar staan mijn boekbestanden eigenlijk?",
+              "a": "Dat verschilt per platform, en het verschil is belangrijk als je al een bibliotheek op schijf hebt georganiseerd.",
               "bullets": [
                 {
-                  "text": "Thuis: niets extra.",
+                  "text": "Android, Windows en Mac — je koppelt een map die je al hebt.",
                   "sub": [
-                    "De host-app op je Mac of pc kondigt zich aan op je lokale netwerk; je iPhone, iPad of Vision Pro vindt hem zelf.",
-                    "Geef toegang tot het lokale netwerk zodra de app dat de eerste keer vraagt. Dat is de hele instelling."
+                    "Wijs de app naar een bestaande map en hij leest de boeken waar ze staan. Er wordt niets gekopieerd of verplaatst, en je eigen mapstructuur blijft precies zoals je die hebt opgebouwd.",
+                    "De app onthoudt die toestemming, dus de map blijft werken na een herstart. Hernoem of herorganiseer dingen buiten de app om en hij neemt de wijzigingen bij de volgende verversing over.",
+                    "Op Mac en Windows geldt hetzelfde voor een map op een NAS of netwerkshare."
                   ]
                 },
                 {
-                  "text": "Onderweg: hetzelfde iCloud-account op beide apparaten, plus Tailscale actief op beide.",
+                  "text": "iPhone en iPad — boeken komen in de eigen map van BiblioFuse.",
                   "sub": [
-                    "De host schrijft zijn adres naar je iCloud Drive en het leesapparaat pikt dat op via Tailscale.",
-                    "Windows heeft geen ingebouwde iCloud: installeer <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">iCloud voor Windows</a> uit de Microsoft Store.",
-                    "Je iCloud- en Tailscale-accounts mogen verschillende e-mailadressen gebruiken, en een Tailscale-exitnode is niet nodig."
+                    "iOS laat een app niet, zoals een desktop dat wel kan, een willekeurige map elders op het apparaat lezen, dus de bibliotheek is de map van de app — die je kunt zien en openen in de Bestanden-app.",
+                    "Zet hele boekmappen op het bovenste niveau neer en ze worden je bibliotheek, submappen en al.",
+                    "Omdat die map zichtbaar is in Bestanden, kun je boeken er later weer uit halen. Niets zit vast in de app."
                   ]
                 },
                 {
-                  "text": "Een NAS-host werkt anders: die heeft helemaal geen iCloud-route.",
+                  "text": "Hoe dan ook wordt er niets geüpload.",
                   "sub": [
-                    "Koppel hem één keer op je lokale netwerk zodat het certificaat wordt opgeslagen; daarna is dezelfde host op afstand bereikbaar via Tailscale."
+                    "Bestanden worden op het apparaat gelezen. Wil je dezelfde bibliotheek op meer dan één apparaat, dan is dat óf je eigen iCloud-map óf een server — zie hieronder."
                   ]
                 }
               ]
             },
             {
-              "q": "Streaming is goed ingesteld maar de host verschijnt niet — wat kan ik proberen?",
-              "a": "Verouderde adresbestanden waren vroeger de gebruikelijke oorzaak. Zowel de Mac- als de Windows-host wissen ze nu zelf elke keer dat streaming start, stopt of het adres verandert — inclusief iCloud-conflictkopieën — dus dit is zelden nog het probleem.",
+              "q": "Moet ik iCloud of een server gebruiken om mijn bibliotheek gesynchroniseerd te houden?",
+              "a": "Het zijn twee onafhankelijke opties en je kunt beide gebruiken.",
               "bullets": [
                 {
-                  "text": "Sluit de app op de host af en start hem opnieuw. Bij het starten publiceert hij een vers adres.",
-                  "sub": []
+                  "text": "Je eigen iCloud-map",
+                  "sub": [
+                    "Zet boeken in de iCloud-map van BiblioFuse en de hele bibliotheek — bestanden, covers, voortgang, beoordelingen en tags — volgt je naar elk apparaat dat is ingelogd met hetzelfde account.",
+                    "Dit geldt voor de hele map en is een Pro-functie, geen gratis proefniveau."
+                  ]
                 },
                 {
-                  "text": "Open op het leesapparaat de lijst met streamingbronnen en kijk of er een groen stipje naast de hostnaam staat.",
+                  "text": "Een Komga-, Kavita- of OPDS-server",
                   "sub": [
-                    "Grijs betekent dat de host nog niet bereikt is — wacht een paar seconden, of forceer stoppen en heropen de app op de host."
+                    "Er wordt niets naar het apparaat gekopieerd: je bladert en leest vanaf de server, met positiesynchronisatie waar het servertype dat ondersteunt.",
+                    "Beter voor een grote collectie die je al zelf host, en de enige optie als je bibliotheek op een NAS staat. Ook Pro."
+                  ]
+                }
+              ]
+            }
+          ],
+          "links": [
+            {
+              "to": "/blog/digital-comic-library-management-guide/",
+              "label": "Een grote stripbibliotheek organiseren"
+            }
+          ]
+        },
+        {
+          "id": "streaming",
+          "title": "Streamen vanaf je BiblioFuse Mac-, pc- of NAS-app",
+          "desc": "Je eigen machine of NAS host de bibliotheek; het leesapparaat maakt er verbinding mee.",
+          "items": [
+            {
+              "q": "Hoe werkt streamen van Mac of pc naar iPhone?",
+              "a": "Op je thuisnetwerk hoeft niets geconfigureerd te worden: de hostapp op je Mac of pc kondigt zichzelf aan en het leesapparaat vindt hem, en maakt verbinding via HTTPS met een vastgepind certificaat. Om buitenshuis te lezen publiceert de host zijn adres ook naar je iCloud Drive, en het leesapparaat bereikt hem via Tailscale — dat pad vereist hetzelfde iCloud-account en Tailscale actief op beide. Op hetzelfde netwerk zie je beide vermeldingen voor één host en kies je welke je wilt; de app schakelt nooit stiekem tussen beide."
+            },
+            {
+              "q": "Wat heb ik nodig om streamen in te stellen?",
+              "a": "Dat hangt af van waar je wilt lezen.",
+              "bullets": [
+                {
+                  "text": "Thuis — verder niets.",
+                  "sub": [
+                    "De hostapp op je Mac of pc kondigt zichzelf aan op je lokale netwerk; je iPhone, iPad of Vision Pro vindt hem vanzelf.",
+                    "Sta toegang tot het lokale netwerk toe de eerste keer dat de app erom vraagt. Dat is de hele installatie."
+                  ]
+                },
+                {
+                  "text": "Buitenshuis — hetzelfde iCloud-account op beide apparaten, plus Tailscale actief op beide.",
+                  "sub": [
+                    "De host schrijft zijn adres naar je iCloud Drive en het leesapparaat haalt het op via Tailscale.",
+                    "Windows heeft geen ingebouwde iCloud — installeer <a href=\"https://apps.microsoft.com/detail/9pktq5699m62\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue-600 hover:underline\">iCloud voor Windows</a> uit de Microsoft Store.",
+                    "Je iCloud- en Tailscale-accounts mogen verschillende e-mailadressen gebruiken, en een Tailscale-exitnode is niet nodig."
+                  ]
+                },
+                {
+                  "text": "Een NAS-host werkt anders — die heeft helemaal geen iCloud-pad.",
+                  "sub": [
+                    "Koppel hem één keer op je lokale netwerk zodat het certificaat wordt opgeslagen, waarna dezelfde host op afstand bereikbaar is via Tailscale."
                   ]
                 }
               ]
             },
             {
               "q": "Heb ik Tailscale nodig om thuis te streamen?",
-              "a": "Nee. Streamen via lokale wifi werkt op zichzelf: de host kondigt zich aan op je netwerk en de app verbindt via HTTPS met een vastgezet certificaat. Vroege versies faalden inderdaad op het lokale netwerk, omdat de app de metadata die de host aankondigde niet las en terugviel op een gewoon HTTP-adres dat releaseversies blokkeren. Dat is opgelost. Tailscale is nu alleen nog voor lezen buitenshuis.",
+              "a": "Nee. Lokaal wifi-streamen werkt op zichzelf — de host kondigt zichzelf aan op je netwerk en de app maakt er verbinding mee via HTTPS met een vastgepind certificaat. Eerdere versies faalden inderdaad op een lokaal netwerk, omdat de app de metadata die de host aankondigde niet las en terugviel op een gewoon HTTP-adres dat releaseversies blokkeren. Dat is opgelost. Tailscale is nu alleen nog nodig om buitenshuis te lezen.",
               "bullets": [
                 {
                   "text": "Instellingen → Mac/pc-streaming heeft drie modi.",
                   "sub": [
-                    "<strong>iCloud + Tailscale</strong> — toont zowel lokale hosts als de host op afstand die via iCloud is gepubliceerd.",
-                    "<strong>Lokale wifi</strong> — alleen lokale hosts; een adres op afstand wordt nooit getoond of gebeld.",
+                    "<strong>iCloud + Tailscale</strong> — toont zowel lokale hosts als de externe host die via iCloud is gepubliceerd.",
+                    "<strong>Lokaal wifi</strong> — alleen lokale hosts; er wordt nooit een extern adres getoond of gebeld.",
                     "<strong>Handmatig Tailscale</strong> — voor een host die je zelf invoert, inclusief een NAS."
                   ]
                 },
                 {
-                  "text": "Er wordt bewust niet automatisch geschakeld tussen lokaal en op afstand.",
+                  "text": "Er is bewust geen automatisch omschakelen tussen lokaal en extern.",
                   "sub": [
-                    "Op hetzelfde netwerk verschijnen beide vermeldingen voor dezelfde host en kies je er één, zodat een werkende lokale verbinding nooit stil wordt vervangen door een langzamere route."
+                    "Op hetzelfde netwerk verschijnen beide vermeldingen voor dezelfde host en kies je er één, zodat een werkende lokale verbinding nooit stilzwijgend wordt vervangen door een tragere route."
                   ]
                 },
                 {
-                  "text": "De Apple TV werkt alleen op het lokale netwerk.",
+                  "text": "Apple TV is alleen lokaal netwerk.",
                   "sub": [
-                    "tvOS kan iCloud Drive niet gebruiken, en de Tailscale-route is gebouwd en getest maar wordt uitgeschakeld meegeleverd zolang een Tailscale-bug op tvOS niet is verholpen."
+                    "tvOS kan geen iCloud Documents gebruiken, en het Tailscale-pad is gebouwd en getest maar wordt uitgeschakeld uitgeleverd zolang een upstream Tailscale-bug op tvOS onopgelost blijft."
                   ]
                 }
               ]
             },
             {
               "q": "Kan Android van een Mac- of pc-host lezen?",
-              "a": "Ja. De Android-app vindt hosts op je lokale netwerk en zodra een host daar gekoppeld is, kun je hem ook bereiken door zijn adres zelf in te typen. Hij kan een boek van de host naar zijn eigen bibliotheek kopiëren, en leespositie, beoordelingen en labels gaan terug naar de host. Android heeft geen iCloud-toegang, dus lezen buitenshuis betekent het hostadres handmatig invoeren via Tailscale in plaats van dat het voor je wordt gevonden."
+              "a": "Ja. De Android-app vindt hosts op je lokale netwerk, en zodra een host daar is gekoppeld, kan hij ook worden bereikt door zijn adres handmatig in te voeren. Hij kan een boek van de host naar zijn eigen bibliotheek kopiëren, en leespositie, beoordelingen en tags worden teruggestuurd naar de host. Android heeft geen iCloud-toegang, dus buitenshuis lezen betekent het adres van de host handmatig invoeren via Tailscale in plaats van dat het voor je wordt ontdekt."
+            }
+          ]
+        },
+        {
+          "id": "servers",
+          "title": "Streamen vanaf je bestaande OPDS-, Kavita- of Komga-server",
+          "desc": "Host je al zelf een catalogus? Maak er direct verbinding mee — er wordt niets naar het apparaat gekopieerd.",
+          "items": [
+            {
+              "q": "Wat is OPDS, en hoe verbind ik een OPDS-server?",
+              "a": "OPDS is een open catalogusformaat waarmee een app pagina voor pagina kan bladeren en lezen vanaf een zelf gehoste boeken- of stripserver, in plaats van eerst de hele bibliotheek te downloaden. BiblioFuse verbindt met elke OPDS 1.x-server — Calibre-Web, COPS, Ubooquity en andere — inclusief OPDS-PSE-paginastreaming voor strips.",
+              "bullets": [
+                {
+                  "text": "Een server toevoegen",
+                  "sub": [
+                    "Open Instellingen, voeg de catalogus-URL van de server toe en log in als daarom wordt gevraagd.",
+                    "Als de server een QR-code toont, kun je die scannen in plaats van het adres te typen.",
+                    "Dit is een Pro-functie."
+                  ]
+                },
+                {
+                  "text": "De QR-scanner is alleen voor catalogusservers.",
+                  "sub": [
+                    "Hij koppelt geen Mac of pc voor streaming — dat gebeurt via lokale netwerkdetectie en heeft geen camera nodig. Als je streaming aan het instellen bent, kijk dan bij de streamingsectie."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Hoe verbind ik BiblioFuse met mijn Komga-server?",
+              "a": "Voeg het adres en de inloggegevens van je Komga-server toe in Instellingen, en BiblioFuse doorbladert hem via Komga's eigen API in plaats van een generieke OPDS-feed, zodat je covers van series en volumes, tags en genres krijgt. Je leespositie wordt van de server gelezen en ernaartoe teruggeschreven. Pro vereist.",
+              "bullets": [
+                {
+                  "text": "Bladwijzers synchroniseren niet met Komga.",
+                  "sub": [
+                    "Bladwijzers in het boek synchroniseren alleen met Kavita. Leespositie synchroniseert met beide. Als bladwijzersynchronisatie voor jou belangrijk is en je een keuze hebt in server, is dat het verschil."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Hoe verbind ik met Kavita, en synchroniseert mijn leesvoortgang?",
+              "a": "Ja, in beide richtingen. Voeg je Kavita-server toe in Instellingen, en BiblioFuse gebruikt Kavita's eigen API in plaats van de OPDS-PSE-extensie waar de meeste leesapps op leunen — wat de bron is van veel voortgangssynchronisatieproblemen in het bredere Kavita-ecosysteem. Leespositie synchroniseert beide kanten op, en bladwijzers in het boek synchroniseren ook. Pro vereist.",
+              "bullets": []
+            }
+          ],
+          "links": [
+            {
+              "to": "/tools/qr-generator/",
+              "label": "Maak een QR-code voor je Kavita- of Komga-server"
             }
           ]
         },
         {
           "id": "reading",
-          "title": "Reading",
-          "desc": "Formats, reading direction, text-to-speech and translation.",
+          "title": "Lezen",
+          "desc": "Formaten, leesrichting, tekst-naar-spraak en vertaling.",
           "items": [
             {
               "q": "Werkt BiblioFuse op Apple Vision Pro?",
-              "a": "Ja. BiblioFuse is een native visionOS-app in de App Store: een echt ruimtelijk venster, geen iPad-app in compatibiliteitsmodus. Het ondersteunt eye-tracking, knijpen, muis, trackpad en toetsenbord, en is inbegrepen in de universele iOS + Mac-aankoop zonder extra kosten."
+              "a": "Ja. BiblioFuse is een native visionOS-app in de App Store — een echt ruimtelijk venster, geen iPad-app in compatibiliteitsmodus. Het ondersteunt oogtracking, knijpen, muis, trackpad en toetsenbord, en zit zonder extra kosten in de universele iOS + Mac-aankoop."
             },
             {
-              "q": "Welke ruimtelijke leesindelingen ondersteunt BiblioFuse op visionOS?",
-              "a": "Drie ruimtelijke bibliotheekindelingen: Ruimtelijke boekenplanken (je covers op zwevende planken), Rasterweergave (een zwevend raster voor grote bibliotheken) en Schuine wand (een schuine galeriewand met beoordelings- en tagfilters). Je kunt je bibliotheek ook streamen vanaf een Mac of pc om de opslag van de Vision Pro vrij te houden."
+              "q": "Welke ruimtelijke leeslayouts ondersteunt BiblioFuse op visionOS?",
+              "a": "Drie ruimtelijke bibliotheeklayouts: Ruimtelijke boekenplanken (je covers op zwevende planken), Rasterweergave (een zwevend raster voor grote bibliotheken), en Schuine wand (een schuine galerijwand met beoordelings- en tagfilters). Je kunt je bibliotheek ook streamen vanaf een Mac of pc om opslagruimte op de Vision Pro vrij te houden."
             },
             {
               "q": "Hoe krijg ik betere tekst-naar-spraak-stemmen in BiblioFuse?",
-              "a": "De hogere kwaliteitstemmen zijn ingebouwd in je apparaat maar moeten apart worden gedownload — BiblioFuse detecteert ze automatisch zodra ze zijn geïnstalleerd.",
+              "a": "Stemmen van hogere kwaliteit zijn mogelijk al beschikbaar via het tekst-naar-spraaksysteem van je apparaat, maar sommige moet je apart downloaden. BiblioFuse detecteert nieuw geïnstalleerde stemmen automatisch zodra ze beschikbaar worden voor apps.",
               "bullets": [
                 {
                   "text": "iPhone / iPad",
                   "sub": [
                     "Ga naar Instellingen → Toegankelijkheid → Gesproken inhoud → Stemmen",
-                    "Kies je taal en download een Verbeterde of Premium stem",
-                    "Premium-stemmen op iOS 16+ hebben neurale kwaliteit (Siri-niveau)"
+                    "Kies je taal en download vervolgens een Verbeterde of Premium-stem",
+                    "Premium-stemmen op ondersteunde iOS-versies leveren Apples hoogste spraakkwaliteit"
+                  ]
+                },
+                {
+                  "text": "Android",
+                  "sub": [
+                    "Ga naar Instellingen → Toegankelijkheid → Tekst-naar-spraak-uitvoer",
+                    "Afhankelijk van je apparaat kan deze instelling ook staan onder Instellingen → Algemeen beheer → Tekst-naar-spraak, of Instellingen → Systeem → Talen → Tekst-naar-spraak-uitvoer",
+                    "Selecteer je voorkeurs-tekst-naar-spraak-engine, zoals Spraakherkenning en -synthese van Google of de engine van de fabrikant van je apparaat",
+                    "Open de instellingen van de engine, selecteer Spraakgegevens installeren en download de gewenste talen of stemmen",
+                    "Je kunt de tekst-naar-spraak-engine ook bijwerken via Google Play",
+                    "Stemkwaliteit en beschikbaarheid variëren per apparaat, taal, fabrikant en geïnstalleerde TTS-engine — sommige stemmen van hogere kwaliteit vereisen mogelijk een internetverbinding",
+                    "Herstart BiblioFuse en begin dan een nieuwe TTS-sessie"
                   ]
                 },
                 {
                   "text": "Mac",
                   "sub": [
-                    "Ga naar Systeeminstellingen → Toegankelijkheid → Gesproken inhoud → Systeemtaal → Stemmen beheren",
-                    "Download een Verbeterde of Premium stem voor je taal"
+                    "Ga naar Systeeminstellingen → Toegankelijkheid → Gesproken inhoud → Systeemstem → Stemmen beheren",
+                    "Download een Verbeterde of Premium-stem voor je taal"
                   ]
                 },
                 {
                   "text": "Windows 10 / Windows 11",
                   "sub": [
                     "Ga naar Instellingen → Tijd en taal → Taal en regio",
-                    "Voeg je leestaal toe of open Taalopties voor een geïnstalleerde taal",
-                    "Installeer onder Taalmogelijkheden de optie Tekst naar spraak",
-                    "Herstart BiblioFuse en start een nieuwe TTS-sessie"
+                    "Voeg je leestaal toe, of open Taalopties voor een geïnstalleerde taal",
+                    "Installeer onder Taalfuncties de tekst-naar-spraakfunctie",
+                    "Herstart BiblioFuse en begin dan een nieuwe TTS-sessie"
                   ]
                 },
                 {
                   "text": "Windows 11 Natuurlijke stemmen (optioneel)",
                   "sub": [
                     "Ga naar Instellingen → Toegankelijkheid → Verteller",
-                    "Kies onder Natuurlijke stemmen toevoegen de gewenste stem",
-                    "Let op: Windows maakt deze stemmen mogelijk alleen beschikbaar voor Verteller, niet voor alle apps"
+                    "Download onder Natuurlijke stemmen toevoegen de gewenste stem",
+                    "Windows kan sommige Natuurlijke stemmen alleen beschikbaar maken voor de Verteller en niet voor andere toepassingen"
                   ]
                 },
                 {
-                  "text": "Geen app-update vereist — BiblioFuse detecteert nieuw geïnstalleerde stemmen wanneer ze beschikbaar zijn via het Windows- of Apple-tekst-naar-spraaksysteem"
+                  "text": "Er is geen BiblioFuse-update vereist. BiblioFuse detecteert nieuw geïnstalleerde stemmen zodra ze worden blootgesteld via het tekst-naar-spraaksysteem van Android, Apple of Windows"
+                }
+              ]
+            },
+            {
+              "q": "Kan ik manga van rechts naar links lezen?",
+              "a": "Ja, en meestal zonder dat je iets hoeft te doen. Een leesrichtingschakelaar geldt voor elk pagina-voor-pagina-formaat — CBZ, ZIP, CBR, RAR, PDF en strip-achtige EPUB — en is gratis, geen Pro-functie. Hij geldt niet voor proza-EPUB of platte tekst, die de eigen tekstrichting van het boek volgen in plaats van een paginavolgorde.",
+              "bullets": [
+                {
+                  "text": "Hij stelt zichzelf in waar dat kan.",
+                  "sub": [
+                    "Een strip-EPUB die in zijn eigen metadata rechts-naar-links opgeeft, opent vanzelf in mangamodus, net als een boek dat vanaf een server wordt gestreamd die rechts-naar-links opgeeft. De schakelaar is er voor bestanden die niets van beide aangeven.",
+                    "Hem wijzigen spiegelt de pagina, de schuifregelaar en de bediening op het scherm tegelijk, zodat de hele lezer in dezelfde richting leest."
+                  ]
                 }
               ]
             }
@@ -1606,37 +1709,163 @@
           "links": [
             {
               "to": "/features/",
-              "label": "Full feature matrix",
-              "note": "Which features work on which platform, and since when."
+              "label": "Volledig functieoverzicht",
+              "note": "Welke functies op welk platform werken, en sinds wanneer."
             },
             {
               "to": "/blog/how-to-read-manga-on-iphone/",
-              "label": "Reading manga on iPhone"
+              "label": "Manga lezen op de iPhone"
             },
             {
               "to": "/blog/cbz-vs-cbr-vs-epub-formats-explained/",
-              "label": "CBZ vs CBR vs EPUB, explained"
+              "label": "CBZ versus CBR versus EPUB, uitgelegd"
             }
           ]
         },
         {
           "id": "tools",
           "title": "Tools",
-          "desc": "Fix a file before you read it - in the browser, on your device.",
+          "desc": "Herstel een bestand voordat je het leest — in de browser, op je apparaat.",
           "items": [
             {
-              "q": "Wat is het verschil tussen de PC Reader en de pc EPUB / CBZ-tools?",
-              "a": "De PC Reader is een volledige leesapp — hij opent boeken, beheert je bibliotheek, comprimeert bestanden en streamt naar iPhone. De pc EPUB- en CBZ-tools zijn lichtere, goedkopere apps die zich uitsluitend richten op comprimeren en samenvoegen, zonder lezer."
+              "q": "Wat is het verschil tussen de PC Reader en de PC EPUB-/CBZ-tools?",
+              "a": "De PC Reader is een volwaardige leesapp — hij opent boeken, beheert je bibliotheek, comprimeert bestanden en streamt naar de iPhone. De PC EPUB- en CBZ-tools zijn lichtere, goedkopere apps die zich alleen richten op comprimeren en samenvoegen, zonder lezer."
             }
           ],
           "links": [
             {
               "to": "/tools/",
-              "label": "All browser tools"
+              "label": "Alle browsertools"
             },
             {
               "to": "/blog/bibliofuse-tools-tab-guide/",
-              "label": "The Tools tab, explained"
+              "label": "Het tabblad Tools uitgelegd"
+            }
+          ]
+        },
+        {
+          "id": "migration",
+          "title": "Overstappen naar een nieuw apparaat",
+          "desc": "Wat vanzelf meegaat, en wat je zelf moet meenemen.",
+          "items": [
+            {
+              "q": "Hoe verplaats ik mijn bibliotheek en leesvoortgang naar een nieuwe iPhone of iPad?",
+              "a": "Dat hangt af van waar je boeken staan, en twee van de drie gevallen vereisen niets van jou.",
+              "bullets": [
+                {
+                  "text": "Boeken in je iCloud-map — automatisch.",
+                  "sub": [
+                    "Log op het nieuwe apparaat in met hetzelfde account en de bibliotheek verschijnt weer met zijn voortgang, beoordelingen en tags. Niets om over te zetten."
+                  ]
+                },
+                {
+                  "text": "Boeken op een Komga-, Kavita- of OPDS-server — automatisch.",
+                  "sub": [
+                    "Maak opnieuw verbinding met dezelfde server. De boeken hebben nooit op het oude apparaat gestaan, om te beginnen."
+                  ]
+                },
+                {
+                  "text": "Boeken die alleen op het oude apparaat zijn opgeslagen — breng ze zelf mee.",
+                  "sub": [
+                    "Gebruik Bestanden, AirDrop of Wifi-overdracht, dezelfde drie manieren die je gebruikte om ze toe te voegen. Zie de sectie Aan de slag."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Overleven lokale boeken een iPhone-back-up en -herstel?",
+              "a": "Ja. Lokaal opgeslagen boeken staan in de normale documentenmap van de app, en BiblioFuse sluit die map niet uit van back-ups — dus in tegenstelling tot sommige andere op bestanden gebaseerde leesapps maakt je lokale bibliotheek deel uit van een standaard versleutelde computerback-up of een iCloud-apparaatback-up, samen met al het andere.",
+              "bullets": [
+                {
+                  "text": "Als boeken na een herstel wel zijn kwijtgeraakt, zijn de gebruikelijke oorzaken niet app-specifiek.",
+                  "sub": [
+                    "Het nieuwe apparaat is als nieuw ingesteld in plaats van hersteld vanuit die specifieke back-up.",
+                    "De back-up dateert van vóór het moment waarop je de boeken toevoegde.",
+                    "Een iCloud-apparaatback-up sloeg grote bestanden over omdat het account bijna zijn opslaglimiet had bereikt."
+                  ]
+                },
+                {
+                  "text": "Boeken handmatig overzetten werkt altijd, wat de back-up ook heeft gedaan.",
+                  "sub": [
+                    "Bestanden, AirDrop en Wifi-overdracht zijn totaal niet afhankelijk van de back-upstatus."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "purchase",
+          "title": "Kopen en herstellen",
+          "desc": "Wat één aankoop dekt, en hoe je die terugkrijgt.",
+          "items": [
+            {
+              "q": "Dekt één aankoop iPhone, iPad, Mac, Vision Pro en Apple TV?",
+              "a": "Ja. Die vijf vormen samen één app-vermelding, en Pro is één aankoop die tussen alle vijf wordt gedeeld — koop het op één apparaat en het wordt overal ontgrendeld waar je bent ingelogd met hetzelfde Apple-ID. Er is geen aankoop per platform en niets om twee keer te kopen. Maandelijkse, jaarlijkse en levenslange opties zijn beschikbaar.",
+              "bullets": [
+                {
+                  "text": "Android en Windows zijn afzonderlijk.",
+                  "sub": [
+                    "Het zijn verschillende apps in verschillende stores, dus een Apple-aankoop gaat niet naar hen over, en omgekeerd ook niet."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Ik heb de app opnieuw geïnstalleerd en ben Pro kwijtgeraakt — hoe krijg ik het terug?",
+              "a": "Open gewoon de app. Op iPhone, iPad, Mac en Apple TV wordt je bestaande Pro bij het opstarten gedetecteerd, nog voordat je iets aantikt, omdat de app bij het opstarten je App Store-aankoopgeschiedenis controleert. Is het niet verschenen, gebruik dan Aankopen herstellen in Instellingen — dat staat er op elk platform altijd als terugvaloptie.",
+              "bullets": [
+                {
+                  "text": "Er is verder niets bij komen kijken.",
+                  "sub": [
+                    "Aankopen lopen via Apples eigen systeem in plaats van via een account van derden, dus herstellen werkt precies zoals bij elke App Store-aankoop — geen BiblioFuse-login, en niets voor ons om namens jou op te zoeken."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "title": "Als iets niet werkt",
+          "desc": "De twee meest voorkomende storingen, en wat ze werkelijk veroorzaakt.",
+          "items": [
+            {
+              "q": "Waarom synchroniseert mijn bibliotheek of leesvoortgang niet via iCloud?",
+              "a": "BiblioFuse bewaart de voortgang, beoordeling en tags van elk boek in een klein bijbehorend bestand naast het boek in je iCloud-map. Dat betekent dat synchronisatie afhangt van of Apples iCloud Drive normaal werkt op beide apparaten, en niet van iets wat BiblioFuse regelt.",
+              "bullets": [
+                {
+                  "text": "Controleer deze vier punten, in volgorde",
+                  "sub": [
+                    "iCloud Drive staat aan, en BiblioFuse is ervoor ingeschakeld, op beide apparaten.",
+                    "Beide apparaten zijn ingelogd met hetzelfde Apple-ID.",
+                    "Het account zit niet zonder iCloud-opslag.",
+                    "Het boek zelf is volledig gedownload op het apparaat dat je controleert — en toont niet nog steeds een wolkpictogram."
+                  ]
+                },
+                {
+                  "text": "Een lege iCloud-map is een reële toestand, niet per se een fout.",
+                  "sub": [
+                    "Als Instellingen zegt dat iCloud is verbonden maar je geen boeken ziet, open dan de Bestanden-app en kijk er rechtstreeks. Een map die echt leeg is, gedraagt zich anders dan een map die geen verbinding kan maken, en het is de moeite waard dat verschil vast te stellen voordat je verder gaat met problemen oplossen."
+                  ]
+                }
+              ]
+            },
+            {
+              "q": "Streaming is correct ingesteld maar de host verschijnt niet — wat moet ik proberen?",
+              "a": "Verouderde adresbestanden waren vroeger de gebruikelijke oorzaak. Zowel de Mac- als de Windows-host wist deze nu zelf, telkens wanneer streaming start, stopt of het adres verandert — inclusief iCloud-conflictkopieën — dus dit is nu zelden nog het probleem.",
+              "bullets": [
+                {
+                  "text": "Sluit de app op de host af en open hem opnieuw. Hij publiceert bij het opstarten een vers adres.",
+                  "sub": []
+                },
+                {
+                  "text": "Open op het leesapparaat de lijst met streamingbronnen en kijk naar een groene stip naast de naam van de host.",
+                  "sub": [
+                    "Grijs betekent dat de host nog niet is bereikt — wacht een paar seconden, of forceer afsluiten en open de app op de host opnieuw."
+                  ]
+                }
+              ]
             }
           ]
         }
