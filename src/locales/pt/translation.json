@@ -307,12 +307,10 @@
         "eyebrow": "Novo nesta versão",
         "titleA": "Leia mangá no seu idioma,",
         "titleB": "na própria página.",
-        "desc": "A tradução ao vivo de quadrinhos e mangá mostra o texto no lugar enquanto você lê — sem etapa de exportação, sem um segundo app. Combine com bibliotecas nativas do Kavita e do Komga ou com qualquer catálogo OPDS e toda a sua coleção viaja com você.",
+        "desc": "A tradução ao vivo de quadrinhos e mangá mostra o texto no lugar enquanto você lê — sem etapa de exportação, sem um segundo app.",
         "cta": "Ver as novidades",
         "bullets": [
           "Tradução ao vivo de quadrinhos e mangá, na página enquanto você lê (Pro)",
-          "API nativa do Komga e do Kavita — sincronização de posição nos dois, de marcadores no Kavita (Pro)",
-          "Transmissão OPDS 1.x e OPDS-PSE de qualquer catálogo (Pro)",
           "Japonês vertical, páginas duplas e viradas com efeito de página curvada"
         ]
       }

@@ -372,12 +372,10 @@
         "eyebrow": "New this release",
         "titleA": "Read manga in your language,",
         "titleB": "on the page.",
-        "desc": "Live comic and manga translation renders the text in place while you read — no export step, no second app. Pair it with native Kavita and Komga libraries or any OPDS catalogue and your whole collection travels with you.",
+        "desc": "Live comic and manga translation renders the text in place while you read — no export step, no second app.",
         "cta": "See what is new",
         "bullets": [
           "Live comic & manga translation, in place as you read (Pro)",
-          "Native Komga & Kavita API — position sync on both, bookmark sync on Kavita (Pro)",
-          "OPDS 1.x and OPDS-PSE streaming from any catalogue (Pro)",
           "Vertical Japanese, dual-page spreads and page-curl turns"
         ]
       }

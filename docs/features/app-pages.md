@@ -698,3 +698,16 @@ errors": read the coverage table's full rendered content and five distinct
 `Recommendation` branches (OPDS-capable away/home, OPDS-incapable client, a capped
 Mac-to-Apple-TV pairing, and a normal PC-to-Android pairing) before and after, all
 character-for-character the same.
+
+## Third hero trimmed of duplicated OPDS/Komga/Kavita content (2026-09-13)
+
+`ThirdHero` used to spend its second sentence and two of its four bullets restating
+what `SecondHero` already owns — connecting to OPDS/Komga/Kavita servers. That was
+redundant: `SecondHero`'s whole job is naming the three answers to "my phone is full",
+one of which is exactly this. Removed at the site owner's request, across all 11
+locales: the sentence "Pair it with native Kavita and Komga libraries or any OPDS
+catalogue and your whole collection travels with you." (and its per-locale equivalent),
+and bullets 2-3 ("Native Komga & Kavita API...", "OPDS 1.x and OPDS-PSE streaming...").
+`ThirdHero` now leads on translation alone — its one actual point of differentiation —
+with the remaining two bullets (translation itself, and vertical
+Japanese/spreads/page-curl) both about the reading experience, not connectivity.

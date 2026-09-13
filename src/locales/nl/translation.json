@@ -307,12 +307,10 @@
         "eyebrow": "Nieuw in deze release",
         "titleA": "Lees manga in je eigen taal,",
         "titleB": "op de pagina zelf.",
-        "desc": "Live vertaling van strips en manga zet de tekst op zijn plaats terwijl je leest — geen exportstap, geen tweede app. Combineer het met native Kavita- en Komga-bibliotheken of een willekeurige OPDS-catalogus, en je hele collectie reist met je mee.",
+        "desc": "Live vertaling van strips en manga zet de tekst op zijn plaats terwijl je leest — geen exportstap, geen tweede app.",
         "cta": "Bekijk wat er nieuw is",
         "bullets": [
           "Live strip- en mangavertaling, op de pagina terwijl je leest (Pro)",
-          "Native Komga- en Kavita-API — leespositie op beide, bladwijzers op Kavita (Pro)",
-          "OPDS 1.x- en OPDS-PSE-streaming vanaf elke catalogus (Pro)",
           "Verticaal Japans, dubbele pagina’s en omslaan met paginakrul"
         ]
       }

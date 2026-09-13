@@ -307,12 +307,10 @@
         "eyebrow": "Nouveau dans cette version",
         "titleA": "Lisez vos mangas dans votre langue,",
         "titleB": "directement sur la page.",
-        "desc": "La traduction en direct des bandes dessinées et des mangas affiche le texte à sa place pendant la lecture : aucune étape d'export, aucune seconde app. Associez-la aux bibliothèques Kavita et Komga natives ou à n'importe quel catalogue OPDS, et toute votre collection vous suit.",
+        "desc": "La traduction en direct des bandes dessinées et des mangas affiche le texte à sa place pendant la lecture : aucune étape d'export, aucune seconde app.",
         "cta": "Voir les nouveautés",
         "bullets": [
           "Traduction en direct des BD et mangas, sur la page pendant la lecture (Pro)",
-          "API Komga et Kavita natives — synchronisation de la position sur les deux, des signets sur Kavita (Pro)",
-          "Diffusion OPDS 1.x et OPDS-PSE depuis tout catalogue (Pro)",
           "Japonais vertical, doubles pages et tournes avec effet de page qui se courbe"
         ]
       }

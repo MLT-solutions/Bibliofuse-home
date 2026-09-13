@@ -307,12 +307,10 @@
         "eyebrow": "Nuevo en esta versión",
         "titleA": "Lee manga en tu idioma,",
         "titleB": "sobre la propia página.",
-        "desc": "La traducción en directo de cómics y manga muestra el texto en su sitio mientras lees: sin exportar nada, sin una segunda app. Combínala con bibliotecas nativas de Kavita y Komga o con cualquier catálogo OPDS y toda tu colección viaja contigo.",
+        "desc": "La traducción en directo de cómics y manga muestra el texto en su sitio mientras lees: sin exportar nada, sin una segunda app.",
         "cta": "Ver las novedades",
         "bullets": [
           "Traducción en directo de cómics y manga, sobre la página mientras lees (Pro)",
-          "API nativa de Komga y Kavita: sincronización de posición en ambos, de marcadores en Kavita (Pro)",
-          "Transmisión OPDS 1.x y OPDS-PSE desde cualquier catálogo (Pro)",
           "Japonés vertical, páginas dobles y giro de página con efecto curvado"
         ]
       }

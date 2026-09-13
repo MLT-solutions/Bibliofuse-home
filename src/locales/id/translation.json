@@ -307,12 +307,10 @@
         "eyebrow": "Baru di rilis ini",
         "titleA": "Baca manga dalam bahasa Anda,",
         "titleB": "langsung di halamannya.",
-        "desc": "Terjemahan langsung komik dan manga menampilkan teks pada tempatnya sementara Anda membaca — tanpa proses ekspor, tanpa aplikasi kedua. Padukan dengan perpustakaan Kavita dan Komga native atau katalog OPDS mana pun, dan seluruh koleksi Anda ikut berpindah.",
+        "desc": "Terjemahan langsung komik dan manga menampilkan teks pada tempatnya sementara Anda membaca — tanpa proses ekspor, tanpa aplikasi kedua.",
         "cta": "Lihat apa yang baru",
         "bullets": [
           "Terjemahan langsung komik dan manga, di halaman saat Anda membaca (Pro)",
-          "API native Komga & Kavita — sinkronisasi posisi di keduanya, markah di Kavita (Pro)",
-          "Streaming OPDS 1.x dan OPDS-PSE dari katalog mana pun (Pro)",
           "Bahasa Jepang vertikal, halaman ganda, dan balik halaman melengkung"
         ]
       }

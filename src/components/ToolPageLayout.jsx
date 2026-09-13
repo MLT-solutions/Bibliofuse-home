@@ -5,10 +5,11 @@
 // it, and the app pitch is last. The pages this replaces did the opposite — an essay,
 // then a landing page, then a button to a different domain — which is why they ran at
 // 0.25–0.7% CTR from positions 8–10 (see docs/gsc-cloudflare-findings.md).
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SEO from './SEO';
+import { TOOLS } from '../data/tools';
 
 function CheckIcon() {
     return (
@@ -25,6 +26,33 @@ export default function ToolPageLayout({ slug, children }) {
     const page = t(`redesign.toolsPages.${slug}`, { returnObjects: true });
     const trust = t('redesign.toolsPages.trust', { returnObjects: true });
     const faq = Array.isArray(page.faq) ? page.faq : [];
+
+    // Cross-origin isolation (needed for wasm-vips' SharedArrayBuffer-based thread pool)
+    // is granted per HTTP document response, via the COOP/COEP headers public/_headers
+    // sets on /:lang/tools/*. Every internal link into this section is a react-router
+    // <Link> — a client-side pushState, not a real navigation — so a visitor arriving
+    // from any page outside /tools/* (the homepage, /comicreader/, the nav dropdown)
+    // keeps that earlier page's un-isolated state. window.crossOriginIsolated then stays
+    // false for the rest of the SPA session, SharedArrayBuffer is undefined, and
+    // wasm-vips' pthread pool never comes up — getVips() resolves, but processing hangs
+    // at 0% with no error. A hard refresh on the same URL fixes it because that IS a
+    // real document request, which does carry the headers. Reproduced 2026-09-13 on the
+    // live site: crossOriginIsolated false after a client-side nav from the homepage,
+    // true after location.reload() on the identical tool URL.
+    //
+    // Self-heal once rather than relying on every internal link remembering to force a
+    // real navigation: if this is a wasm tool and isolation isn't already active, reload
+    // immediately. Guarded by sessionStorage so a browser that genuinely never grants
+    // isolation (old browser, an extension blocking it, headers stripped by some proxy)
+    // degrades to wasm-vips' documented single-threaded fallback instead of reload-looping.
+    const needsIsolation = TOOLS.find((tool) => tool.slug === slug)?.wasm;
+    useEffect(() => {
+        if (!needsIsolation || window.crossOriginIsolated) return;
+        const guardKey = 'bf-coi-reload-attempted';
+        if (sessionStorage.getItem(guardKey)) return;
+        sessionStorage.setItem(guardKey, '1');
+        window.location.reload();
+    }, [needsIsolation]);
 
     return (
         <div className="min-h-screen bg-white text-slate-950">

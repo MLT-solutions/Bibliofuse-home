@@ -203,3 +203,47 @@ running i18next instance (`Convert 5 Files`, `7 Pages Generated`, `Page 4`, etc.
 
 Translating `redesign.toolsPages.*.tool` into the other 10 locales is tracked separately
 — this pass only fixed the architecture so translation is possible at all.
+
+## Wasm tools hung at 0% on first visit — cross-origin isolation lost on client-side nav (fixed 2026-09-13)
+
+Real bug report from the site owner, reproduced and confirmed live on bibliofuse.com
+before fixing: a wasm tool page (`cbz-reducer`, `epub-reducer`, `pdf-to-cbz`) reached by
+clicking through from elsewhere on the site processed nothing — the progress bar sat at
+0% indefinitely. A hard refresh on the identical URL fixed it. Not caused by the same-day
+i18n refactor (`180916a4`) — that diff touched only text/comment lines; verified with a
+line-by-line filter of the commit diff before looking anywhere else.
+
+**Root cause:** `public/_headers` grants COOP/COEP (needed for `SharedArrayBuffer`, which
+wasm-vips' pthread pool requires) on `/:lang/tools/*`, but that header is only ever sent
+on a real HTTP document response. Every internal link into `/tools/*` — the homepage
+`ToolsStrip` cards, the `/tools/` hub cards, the nav dropdown, `ReaderFamilyGuide`'s QR
+link, `/comicreader/`'s "no install" link — is a react-router `<Link>`, i.e. a client-side
+`pushState`, not a real navigation. A visitor arriving from any page outside `/tools/*`
+(none of which carry the header) keeps that earlier page's un-isolated
+`window.crossOriginIsolated = false` for the rest of the SPA session; the header is never
+re-fetched. `SharedArrayBuffer` stays `undefined`, wasm-vips' thread pool never comes up,
+and `getVips()` resolves without ever throwing — so processing just sits at 0% forever
+with no visible error. A hard refresh works because that *is* a genuine document request.
+
+Reproduced directly on production, not inferred: loaded the homepage, clicked a
+`ToolsStrip` card via the same `<a>` element a real click would use, confirmed
+`window.crossOriginIsolated === false` and `typeof SharedArrayBuffer === 'undefined'` on
+the resulting `/en/tools/cbz-reducer/` page, dropped a real file in and watched the
+process button sit at `0%` for 12 seconds. `location.reload()` on the same URL flipped
+both flags to true immediately.
+
+**Fix:** `ToolPageLayout.jsx` (wraps every `/tools/<slug>/` page) checks
+`TOOLS.find(t => t.slug === slug)?.wasm` from `src/data/tools.js` — already correctly
+marking exactly the three tools that load wasm-vips — and if that tool needs isolation and
+`window.crossOriginIsolated` is false, reloads once. Guarded by a `sessionStorage` flag so
+a browser that genuinely never grants isolation (very old browser, an extension, a proxy
+stripping headers) degrades to wasm-vips' own documented single-threaded fallback instead
+of reload-looping. `pdf-to-jpg` and `qr-generator` (`wasm: false`) are untouched — they
+don't call `getVips()` and never needed the header. Not touching `ToolsHub.jsx`: the
+per-session guard means at most one reload total regardless of which page first triggers
+it, so a second isolation check there would just be redundant, not add coverage.
+
+Verified locally that the check does not cause a spurious reload when isolation is already
+active (the dev server always isolates the whole origin per `vite.config.js`, so this
+class of bug cannot reproduce there at all — confirm any future fix against the *deployed*
+site in a fronted tab, the way this one was).
