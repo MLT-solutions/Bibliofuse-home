@@ -1139,49 +1139,49 @@
       "unknown": "Onbekend"
     },
     "qrGeneratorPage": {
-      "seoTitle": "BiblioFuse QR Generator",
-      "seoDesc": "Genereer een QR-code om Kavita- of Komga-servers toe te voegen aan BiblioFuse. Scan deze vanaf iOS of Android voor eenvoudige installatie.",
+      "seoTitle": "BiblioFuse QR-generator",
+      "seoDesc": "Genereer een QR-code om Kavita- of Komga-servers toe te voegen aan BiblioFuse. Scan hem vanaf iOS of Android voor eenvoudige serverinstallatie.",
       "back": "Terug naar BiblioFuse",
-      "eyebrow": "QR-serverconfiguratie",
+      "eyebrow": "Serverinstallatie via QR",
       "title": "Voeg Kavita- en Komga-servers toe met QR",
-      "desc": "Genereer een veilige BiblioFuse QR-code voor Kavita- of Komga-serververbindingen en scan deze vanaf je telefoon om de server automatisch toe te voegen.",
+      "desc": "Genereer een beveiligde BiblioFuse-QR-code voor Kavita- of Komga-serververbindingen, en scan hem daarna vanaf je telefoon om de server automatisch toe te voegen.",
       "whatTitle": "Wat dit doet",
-      "whatDesc": "Maak een deelbare server-QR met je API-adres en optionele sleutel, zodat BiblioFuse verbinding kan maken zonder handmatig URL's te typen.",
+      "whatDesc": "Maak een deelbare server-QR met je API-adres en een optionele sleutel, zodat BiblioFuse verbinding kan maken zonder handmatig een URL te typen.",
       "whatBullets": [
-        "Ondersteunt Kavita- en Komga API-servers",
-        "Inclusief optionele API-sleutel voor veilige verbindingen",
+        "Ondersteunt Kavita- en Komga-API-servers",
+        "Bevat een optionele API-sleutel voor beveiligde verbindingen",
         "Werkt op iOS- en Android-apparaten"
       ],
-      "stepsTitle": "Hoe te gebruiken",
+      "stepsTitle": "Hoe je het gebruikt",
       "steps": [
         {
           "title": "Genereer de QR-code",
-          "desc": "Voer je serveradres in, kies Kavita of Komga en voeg indien nodig een API-sleutel toe."
+          "desc": "Voer je serveradres in, kies Kavita of Komga, en voeg indien nodig een API-sleutel toe."
         },
         {
           "title": "Scan in BiblioFuse",
-          "desc": "Open Instellingen > OPDS (Pro-functie) > Server toevoegen, tik op het QR-pictogram en scan de code."
+          "desc": "Open Instellingen > OPDS (Pro-functie) > Server toevoegen, tik dan op het QR-pictogram en scan de code."
         },
         {
           "title": "Selecteer en lees",
-          "desc": "Open in Bibliotheek het Locatiepaneel linksboven, kies je server en geniet van het lezen."
+          "desc": "Open in Bibliotheek het Locatie-paneel linksboven, kies je server en geniet van het lezen."
         }
       ],
-      "noteTitle": "Pro-functie opmerking",
-      "noteDesc": "De scan vereist de BiblioFuse Pro OPDS-functie. Gebruik na het toevoegen van de server de Locatiekiezer om naar je Kavita- of Komga-bibliotheek over te schakelen.",
+      "noteTitle": "Opmerking over Pro-functie",
+      "noteDesc": "De serverscanflow vereist de BiblioFuse Pro OPDS-functie. Zodra de server is toegevoegd, gebruik je de Locatiekiezer om over te schakelen naar je Kavita- of Komga-bibliotheek.",
       "tipTitle": "Snelle tip",
       "tipBullets": [
-        "Gebruik een beveiligd privénetwerk of Tailscale voor externe toegang.",
-        "Controleer de server-URL en API-sleutel voordat je de QR genereert.",
-        "Bewaar de gegenereerde code veilig — deze bevat toegangsinformatie."
+        "Gebruik een beveiligd privénetwerk of Tailscale voor toegang op afstand.",
+        "Controleer de server-URL en API-sleutel dubbel voordat je de QR genereert.",
+        "Bewaar de gegenereerde code veilig — hij bevat toegangsinformatie."
       ],
       "homeCta": "Terug naar home",
       "form": {
         "generatorTitle": "Genereer je QR-code",
-        "generatorDesc": "Vul hieronder je servergegevens in en tik op Genereer om een scanbare QR-code te maken.",
+        "generatorDesc": "Vul hieronder je servergegevens in en tik dan op Genereren om een scanbare QR-code te maken.",
         "displayNameLabel": "Weergavenaam (optioneel)",
         "displayNamePlaceholder": "Thuis Kavita",
-        "serviceTypeLabel": "Type dienst",
+        "serviceTypeLabel": "Servicetype",
         "kavitaOption": "Kavita API",
         "komgaOption": "Komga API",
         "serverUrlLabel": "Server-URL",
@@ -1191,208 +1191,311 @@
         "apiKeyHint": "Kopieer de API-sleutel uit de gebruikers-/accountinstellingen van Kavita of Komga.",
         "show": "Tonen",
         "hide": "Verbergen",
-        "generate": "QR-code genereren",
+        "generate": "Genereer QR-code",
         "clear": "Wissen",
-        "warning": "Deze QR-code bevat je serveradres en authenticatiegegevens. Deel deze niet openbaar.",
+        "warning": "Deze QR-code bevat je serveradres en authenticatiegegevens. Deel hem niet publiekelijk.",
         "enterUrl": "Voer een server-URL in.",
         "qrCredit": "QR-code mogelijk gemaakt door qrcode-generator"
       }
     },
     "toolsHub": {
-      "seoTitle": "Free Browser Tools for Comics & Ebooks — CBZ, EPUB, PDF",
-      "seoDesc": "Free tools for comic and ebook files that run entirely in your browser: shrink CBZ archives, compress EPUBs, convert PDF to CBZ or JPG. No upload, no account.",
+      "seoTitle": "Gratis Browsertools voor Strips en Ebooks — CBZ, EPUB, PDF",
+      "seoDesc": "Gratis tools voor strip- en ebookbestanden die volledig in je browser draaien: verklein CBZ-archieven, comprimeer EPUB's, converteer PDF naar CBZ of JPG. Geen upload, geen account.",
       "h1": "Tools",
-      "intro": "Small tools for the file formats BiblioFuse reads. Each one runs entirely inside your browser — the file never leaves your device, and there is nothing to install or sign up for.",
-      "openCta": "Open",
-      "backCta": "All tools",
+      "intro": "Kleine tools voor de bestandsformaten die BiblioFuse leest. Elke tool draait volledig in je browser — het bestand verlaat nooit je apparaat, en er is niets te installeren of om je voor aan te melden.",
+      "openCta": "Openen",
+      "backCta": "Alle tools",
       "offline": {
-        "eyebrow": "Offline tools for Windows",
-        "desc": "Native Microsoft Store apps for the same jobs, when you would rather not work in a browser.",
+        "eyebrow": "Offline tools voor Windows",
+        "desc": "Native Microsoft Store-apps voor dezelfde taken, voor als je liever niet in een browser werkt.",
         "platform": "Windows · Microsoft Store",
         "cbzName": "BiblioFuse CBZ Resizer",
-        "cbzDesc": "Comprimeer en voeg stripboekarchief samen op Windows.",
+        "cbzDesc": "Comprimeer en voeg stripbestanden samen op Windows.",
         "epubName": "BiblioFuse EPUB Resizer",
         "epubDesc": "Comprimeer en voeg EPUB-bestanden samen op Windows."
       }
     },
     "toolsPages": {
       "trust": {
-        "local": "Runs on your device",
-        "noUpload": "No upload, no server",
-        "noAccount": "No account, no sign-up"
+        "local": "Werkt op je apparaat",
+        "noUpload": "Geen upload, geen server",
+        "noAccount": "Geen account, geen aanmelding"
       },
-      "faqTitle": "Questions",
-      "appPitch": "BiblioFuse reads CBZ, CBR, EPUB, PDF and TXT on iPhone, iPad, Mac, Android and Windows — and streams big libraries straight from your own machine.",
-      "appPitchCta": "See BiblioFuse Reader",
+      "faqTitle": "Vragen",
+      "appPitch": "BiblioFuse leest CBZ, CBR, EPUB, PDF en TXT op iPhone, iPad, Mac, Android en Windows — en streamt grote bibliotheken rechtstreeks vanaf je eigen apparaat.",
+      "appPitchCta": "Bekijk BiblioFuse Reader",
       "cbz-reducer": {
         "tag": "CBZ · ZIP",
-        "h1": "Reduce CBZ file size",
-        "cardDesc": "Shrink comic archives by re-encoding the pages inside, without splitting the volume.",
-        "seoTitle": "Reduce CBZ File Size — Free, In Your Browser, No Upload",
-        "seoDesc": "Compress CBZ and ZIP comic archives in your browser. Re-encodes the pages inside at a resolution and quality you choose. Nothing is uploaded — the whole job runs on your device.",
-        "intro": "Drop in a CBZ or ZIP and it re-encodes every page inside at the size and quality you pick, then hands the archive back. Large scans usually lose most of their weight with no visible difference on a phone screen.",
+        "h1": "CBZ-bestanden verkleinen of samenvoegen",
+        "cardDesc": "Verklein stripbestanden door de pagina's erin opnieuw te coderen, of voeg meerdere delen samen tot één bestand.",
+        "seoTitle": "CBZ-bestanden Verkleinen of Samenvoegen — Gratis, in je Browser, Zonder Upload",
+        "seoDesc": "Comprimeer CBZ- en ZIP-stripbestanden, of voeg er meerdere samen tot één bestand, in je browser. Er wordt niets geüpload — het hele proces draait op je apparaat.",
+        "intro": "Sleep een CBZ of ZIP naar binnen en elke pagina erin wordt opnieuw gecodeerd met de grootte en kwaliteit die je kiest, waarna je het bestand terugkrijgt. Grote scans verliezen meestal het grootste deel van hun gewicht zonder zichtbaar verschil op een telefoonscherm. Voeg meerdere bestanden toe en schakel over naar de samenvoegmodus voor één gecombineerd bestand.",
         "sections": [
           {
-            "title": "Why comic archives get so big",
-            "body": "A CBZ is just a ZIP full of page images. Scans are often stored at print resolution — 3000px wide or more — which is far beyond what any phone or tablet can display. Re-encoding those pages to the resolution you actually read at is usually where the savings come from, not the archive format."
+            "title": "Waarom stripbestanden zo groot worden",
+            "body": "Een CBZ is gewoon een ZIP vol paginafoto's. Scans worden vaak opgeslagen op drukresolutie — 3000px breed of meer — wat ver voorbij is aan wat een telefoon of tablet kan weergeven. De winst komt meestal van het hercoderen van die pagina's naar de resolutie waarop je daadwerkelijk leest, niet van het archiefformaat."
           },
           {
-            "title": "What the settings do",
-            "body": "Shortest-dimension resolution caps the smaller side of each page, so tall pages and spreads scale consistently. Quality controls the encoder. Grayscale drops colour channels entirely, which helps a lot on black-and-white manga and nothing at all on colour comics."
+            "title": "Wat de instellingen doen",
+            "body": "De resolutie van de kortste zijde begrenst de kleinste kant van elke pagina, zodat hoge pagina's en dubbelspreads consistent worden geschaald. Kwaliteit regelt de encoder. Grijstinten verwijdert kleurkanalen volledig, wat veel helpt bij zwart-witmanga en helemaal niets bij kleurenstrips."
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "The archive is opened, re-encoded and rebuilt inside your browser using WebAssembly. There is no upload step, no queue and no server that ever sees the file — which also means it works on files you would not want to hand to a web service."
+            "title": "Niets verlaat je apparaat",
+            "body": "Het archief wordt geopend, opnieuw gecodeerd en herbouwd in je browser met WebAssembly. Er is geen uploadstap, geen wachtrij en geen server die het bestand ooit ziet — wat ook betekent dat het werkt op bestanden die je niet aan een webservice zou willen toevertrouwen."
           }
         ],
         "faq": [
           {
-            "q": "Will this ruin the image quality?",
-            "a": "Only if you tell it to. The default settings target the resolution a phone or tablet actually renders at, which is well below what most scans are stored at, so the visible result is usually identical. If you archive at print quality, raise the resolution cap or leave the file alone."
+            "q": "Kan het meerdere CBZ-bestanden tot één combineren?",
+            "a": "Ja. Voeg alle bestanden toe, zet de verwerkingsmodus van batch naar samenvoegen, en geef de uitvoer een naam — je krijgt één archief met de pagina's in bestandsvolgorde. Handig om hoofdstukdownloads samen te voegen tot één deel. In batchmodus blijven ze aparte bestanden en wordt alleen elk bestand verkleind."
           },
           {
-            "q": "Does it work on CBR or RAR files?",
-            "a": "No — CBR is a RAR archive, and RAR cannot be opened in the browser for licensing reasons. Convert to CBZ first, or use the BiblioFuse app, which reads CBR directly."
+            "q": "Gaat dit de beeldkwaliteit verpesten?",
+            "a": "Alleen als je dat zo instelt. De standaardinstellingen richten zich op de resolutie die een telefoon of tablet daadwerkelijk weergeeft, die ruim onder de opslagresolutie van de meeste scans ligt, dus het zichtbare resultaat is meestal identiek. Als je archiveert op drukkwaliteit, verhoog dan de resolutielimiet of laat het bestand met rust."
           },
           {
-            "q": "Is there a file size limit?",
-            "a": "The limit is your device's memory, not a server quota, because the work happens locally. Very large volumes are fine on a desktop; a phone with several hundred megabytes of pages may run out of room."
+            "q": "Werkt het met CBR- of RAR-bestanden?",
+            "a": "Nee — CBR is een RAR-archief, en RAR kan om licentieredenen niet in de browser worden geopend. Converteer eerst naar CBZ, of gebruik de BiblioFuse-app, die CBR rechtstreeks leest."
+          },
+          {
+            "q": "Is er een limiet voor de bestandsgrootte?",
+            "a": "De limiet is het geheugen van je apparaat, geen serverquota, omdat het werk lokaal gebeurt. Zeer grote delen werken prima op een desktop; een telefoon met enkele honderden megabytes aan pagina's kan zonder ruimte komen te zitten."
           }
-        ]
+        ],
+        "tool": {
+          "title": "CBZ/ZIP-verkleiner",
+          "description": "Comprimeer of voeg CBZ- en ZIP-archieven samen. Afbeeldingen worden geoptimaliseerd om de bestandsgrootte te verkleinen.",
+          "uploadLabel": "Upload ZIP, CBZ of afbeeldingen",
+          "uploadHint": "Sleep je bestanden hierheen",
+          "filesReady": "Bestanden gereed",
+          "itemsSelected": "{{count}} items geselecteerd",
+          "moveUp": "Omhoog",
+          "moveDown": "Omlaag",
+          "remove": "Verwijderen",
+          "settings": "Verkleininstellingen",
+          "maxSize": "Resolutie van de kortste zijde",
+          "grayscale": "Afbeeldingen in grijstinten",
+          "processingMode": "Verwerkingsmodus",
+          "batch": "Batch",
+          "merge": "Samenvoegen",
+          "outputFilename": "Bestandsnaam uitvoer",
+          "outputPlaceholder": "samengevoegde_strip",
+          "resetFilename": "Terugzetten naar eerste bestandsnaam",
+          "imageFormat": "Afbeeldingsformaat",
+          "archiveFormat": "Archiefformaat",
+          "convertFiles": "Converteer {{count}} bestanden",
+          "processBtn": "Verwerken en downloaden",
+          "error": "Er is een fout opgetreden bij het verwerken van je bestanden.",
+          "disclaimer": "Afbeeldingen worden opnieuw gecodeerd om ze te verkleinen, wat kwaliteitsverlies met zich meebrengt — bewaar je origineel als je dat nodig hebt. Alles draait in dit browsertabblad; er wordt geen bestand geüpload."
+        }
       },
       "epub-reducer": {
         "tag": "EPUB",
-        "h1": "Compress an EPUB",
-        "cardDesc": "Re-encode the images inside an EPUB so it syncs and stores smaller.",
-        "seoTitle": "Compress EPUB Files — Free, In Your Browser, No Upload",
-        "seoDesc": "Shrink EPUB files by re-encoding the images inside them, in your browser. Text and structure are left untouched. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in an EPUB and it re-encodes the images inside — covers, illustrations, embedded scans — while leaving the text, structure and metadata exactly as they were.",
+        "h1": "EPUB-bestanden comprimeren of samenvoegen",
+        "cardDesc": "Codeer de afbeeldingen in een EPUB opnieuw zodat het kleiner synchroniseert en opslaat, of voeg meerdere samen tot één boek.",
+        "seoTitle": "EPUB-bestanden Comprimeren of Samenvoegen — Gratis, in je Browser, Zonder Upload",
+        "seoDesc": "Verklein EPUB-bestanden door de afbeeldingen erin opnieuw te coderen, of voeg meerdere EPUB's samen tot één boek, in je browser. Tekst en structuur blijven ongewijzigd. Geen upload, geen account.",
+        "intro": "Sleep een EPUB naar binnen en de afbeeldingen erin — omslagen, illustraties, ingesloten scans — worden opnieuw gecodeerd, terwijl tekst, structuur en metadata precies blijven zoals ze waren. Voeg meer dan één bestand toe en zet samenvoegen aan om ze tot één boek te combineren.",
         "sections": [
           {
-            "title": "It is almost always the images",
-            "body": "The text in a novel-length EPUB is tiny — often under a megabyte. When an EPUB is large, it is because of embedded images stored at far higher resolution than any reader will display. Re-encoding those is where the size goes."
+            "title": "Het zijn bijna altijd de afbeeldingen",
+            "body": "De tekst in een EPUB ter grootte van een roman is minuscuul — vaak minder dan een megabyte. Als een EPUB groot is, komt dat door ingesloten afbeeldingen die op een veel hogere resolutie zijn opgeslagen dan welke lezer dan ook zal weergeven. Daar gaat de omvang naartoe wanneer je die opnieuw codeert."
           },
           {
-            "title": "What is left alone",
-            "body": "Chapter structure, table of contents, metadata and the text itself are untouched — they are copied through unchanged. Only the image files inside the archive are re-encoded, so the book opens and navigates exactly as before."
+            "title": "Wat met rust wordt gelaten",
+            "body": "Hoofdstukstructuur, inhoudsopgave, metadata en de tekst zelf blijven ongewijzigd — ze worden ongewijzigd overgekopieerd. Alleen de afbeeldingsbestanden in het archief worden opnieuw gecodeerd, zodat het boek precies zoals voorheen opent en navigeert."
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "The EPUB is unpacked, processed and repacked inside your browser. No copy is uploaded, which matters for books you own but would rather not hand to a web service."
+            "title": "Niets verlaat je apparaat",
+            "body": "De EPUB wordt uitgepakt, verwerkt en opnieuw ingepakt in je browser. Er wordt geen kopie geüpload, wat belangrijk is voor boeken die je bezit maar liever niet aan een webservice toevertrouwt."
           }
         ],
         "faq": [
           {
-            "q": "Will it break DRM-protected books?",
-            "a": "It cannot open them at all. DRM-protected EPUBs are encrypted, so there is nothing to re-encode. This works on DRM-free files only."
+            "q": "Kan het meerdere EPUB's tot één boek samenvoegen?",
+            "a": "Ja. Voeg twee of meer bestanden toe en zet samenvoegen aan, geef daarna de uitvoer een naam. De hoofdstukken blijven in bestandsvolgorde en het resultaat is één standaard-EPUB, wat nuttig is voor serieel gepubliceerde releases die deel voor deel verschijnen."
           },
           {
-            "q": "Does the text get compressed too?",
-            "a": "No. Text is copied through untouched — it is a negligible share of the file size and re-encoding it would risk breaking the book's structure for no gain."
+            "q": "Breekt dit boeken met DRM-beveiliging?",
+            "a": "Het kan ze helemaal niet openen. EPUB's met DRM-beveiliging zijn versleuteld, dus er valt niets opnieuw te coderen. Dit werkt alleen op DRM-vrije bestanden."
           },
           {
-            "q": "Will my reader still open it?",
-            "a": "Yes. The output is a standard EPUB with the same structure and metadata as the input; only the image files inside are smaller."
+            "q": "Wordt de tekst ook gecomprimeerd?",
+            "a": "Nee. Tekst wordt ongewijzigd overgekopieerd — het is een verwaarloosbaar deel van de bestandsgrootte, en opnieuw coderen zou de structuur van het boek kunnen breken zonder enig voordeel."
+          },
+          {
+            "q": "Kan mijn e-reader het nog steeds openen?",
+            "a": "Ja. De uitvoer is een standaard-EPUB met dezelfde structuur en metadata als de invoer; alleen de afbeeldingsbestanden erin zijn kleiner."
           }
-        ]
+        ],
+        "tool": {
+          "title": "EPUB-verkleiner",
+          "description": "Comprimeer of voeg EPUB-bestanden samen. Afbeeldingen worden omgezet naar geoptimaliseerde JPEG's om de grootte te verkleinen.",
+          "uploadLabel": "Upload EPUB-bestanden",
+          "uploadHint": "Sleep je EPUB's hierheen",
+          "filesReady": "Bestanden gereed",
+          "itemsSelected": "{{count}} bestanden geselecteerd",
+          "moveUp": "Omhoog",
+          "moveDown": "Omlaag",
+          "remove": "Verwijderen",
+          "settings": "Verkleininstellingen",
+          "maxSize": "Maximale afbeeldingsafmeting",
+          "grayscale": "Afbeeldingen in grijstinten",
+          "processingMode": "Verwerkingsmodus",
+          "batch": "Batch",
+          "merge": "Samenvoegen",
+          "mergeLabel": "Samenvoegen tot één boek",
+          "outputFilename": "Bestandsnaam uitvoer",
+          "outputPlaceholder": "samengevoegd_boek",
+          "resetFilename": "Terugzetten naar eerste bestandsnaam",
+          "processBtn": "Verwerken en downloaden",
+          "error": "Er is een fout opgetreden bij het verwerken van je EPUB.",
+          "disclaimer": "Afbeeldingen worden opnieuw gecodeerd om ze te verkleinen, wat kwaliteitsverlies met zich meebrengt — bewaar je origineel als je dat nodig hebt. Alles draait in dit browsertabblad; er wordt geen bestand geüpload."
+        }
       },
       "pdf-to-cbz": {
         "tag": "PDF → CBZ",
-        "h1": "Convert PDF to CBZ",
-        "cardDesc": "Turn a PDF comic into a CBZ so comic readers can page through it properly.",
-        "seoTitle": "Convert PDF to CBZ — Free, In Your Browser, No Upload",
-        "seoDesc": "Convert PDF comics and scans to CBZ in your browser. Each page is rendered to an image and packed into a comic archive. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in a PDF and every page is rendered to an image and packed into a CBZ, so comic readers can treat it as a proper page-by-page volume instead of a document.",
+        "h1": "PDF converteren naar CBZ",
+        "cardDesc": "Zet een strip in PDF om naar CBZ zodat stripviewers er goed doorheen kunnen bladeren.",
+        "seoTitle": "PDF Converteren naar CBZ — Gratis, in je Browser, Zonder Upload",
+        "seoDesc": "Converteer strips en scans in PDF naar CBZ in je browser. Elke pagina wordt gerenderd als afbeelding en verpakt in een striparchief. Geen upload, geen account, niets naar een server verzonden.",
+        "intro": "Sleep een PDF naar binnen en elke pagina wordt gerenderd als afbeelding en verpakt in een CBZ, zodat stripviewers het als een echt volume pagina voor pagina kunnen behandelen in plaats van als document.",
         "sections": [
           {
-            "title": "Why convert at all",
-            "body": "PDF is a document format. Comic readers built around CBZ get page-spread detection, reading direction, thumbnail grids and per-page bookmarks — features a PDF viewer generally does not offer for scanned comics."
+            "title": "Waarom eigenlijk converteren",
+            "body": "PDF is een documentformaat. Stripviewers die rond CBZ zijn gebouwd, bieden detectie van dubbele pagina's, leesrichting, miniatuurrasters en bladwijzers per pagina — functies die een PDF-viewer doorgaans niet biedt voor gescande strips."
           },
           {
-            "title": "What you get out",
-            "body": "A standard CBZ: a ZIP of sequentially numbered page images. Pages are rendered at 2× scale so text and line art stay sharp when you zoom, then encoded to a web-friendly format."
+            "title": "Wat je eruit krijgt",
+            "body": "Een standaard-CBZ: een ZIP met opeenvolgend genummerde paginafoto's. Pagina's worden gerenderd op 2× schaal zodat tekst en lijntekeningen scherp blijven bij inzoomen, en vervolgens gecodeerd in een webvriendelijk formaat."
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "Rendering and packing both happen in your browser. The PDF is never uploaded, so this is safe to use on scans and documents you would not want to put through a web service."
+            "title": "Niets verlaat je apparaat",
+            "body": "Renderen en verpakken gebeuren beide in je browser. De PDF wordt nooit geüpload, dus dit is veilig te gebruiken voor scans en documenten die je niet door een webservice zou willen halen."
           }
         ],
         "faq": [
           {
-            "q": "Does the text stay searchable?",
-            "a": "No. CBZ is an image format by definition, so any selectable text in the PDF becomes part of the page image. If you need text search, keep the PDF — or read it in BiblioFuse, which can OCR pages on device."
+            "q": "Blijft de tekst doorzoekbaar?",
+            "a": "Nee. CBZ is per definitie een afbeeldingsformaat, dus alle selecteerbare tekst in de PDF wordt onderdeel van de paginafoto. Als je tekst moet kunnen doorzoeken, bewaar dan de PDF — of lees hem in BiblioFuse, dat pagina's op het apparaat kan OCR'en."
           },
           {
-            "q": "What resolution are the pages rendered at?",
-            "a": "2× the PDF's native page size, which keeps line art and lettering sharp when zoomed. Larger PDFs therefore take longer and use more memory."
+            "q": "Op welke resolutie worden de pagina's gerenderd?",
+            "a": "Op 2× het oorspronkelijke paginaformaat van de PDF, wat lijntekeningen en belettering scherp houdt bij inzoomen. Grotere PDF's duren daarom langer en gebruiken meer geheugen."
           },
           {
-            "q": "Can it convert back the other way?",
-            "a": "Not here — this direction covers the common case of a PDF that ought to be a comic. The BiblioFuse app handles CBZ to PDF on device."
+            "q": "Kan het ook de andere kant op converteren?",
+            "a": "Niet hier — deze richting dekt het gangbare geval van een PDF die eigenlijk een strip zou moeten zijn. De BiblioFuse-app regelt CBZ naar PDF op het apparaat."
           }
-        ]
+        ],
+        "tool": {
+          "title": "PDF naar CBZ/ZIP van afbeeldingen",
+          "description": "Converteer PDF-documenten naar hoogwaardige CBZ- of ZIP-afbeeldingsarchieven. Elke pagina wordt een hoogwaardige JPEG.",
+          "uploadLabel": "Upload een PDF-bestand",
+          "uploadHint": "Sleep je PDF hierheen",
+          "filesReady": "Bestand gereed",
+          "itemsSelected": "{{count}} items geselecteerd",
+          "moveUp": "Omhoog",
+          "moveDown": "Omlaag",
+          "remove": "Verwijderen",
+          "settings": "Instellingen",
+          "maxSize": "Resolutie van de kortste zijde",
+          "grayscale": "Grijstinten",
+          "processingMode": "Verwerkingsmodus",
+          "batch": "Batch",
+          "merge": "Samenvoegen",
+          "outputFilename": "Bestandsnaam uitvoer",
+          "outputPlaceholder": "samengevoegde_strip",
+          "resetFilename": "Terugzetten naar eerste bestandsnaam",
+          "imageFormat": "Afbeeldingsformaat",
+          "archiveFormat": "Archiefformaat",
+          "convertFiles": "Converteer {{count}} bestanden",
+          "processBtn": "Converteer naar CBZ/ZIP",
+          "converting": "Bezig met converteren...",
+          "error": "Er is een fout opgetreden bij het converteren van je PDF.",
+          "disclaimer": "Afbeeldingen worden opnieuw gecodeerd om ze te verkleinen, wat kwaliteitsverlies met zich meebrengt — bewaar je origineel als je dat nodig hebt. Alles draait in dit browsertabblad; er wordt geen bestand geüpload."
+        }
       },
       "pdf-to-jpg": {
         "tag": "PDF → JPG",
-        "h1": "Convert PDF pages to JPG",
-        "cardDesc": "Export every page of a PDF as an image, downloaded as a ZIP.",
-        "seoTitle": "Convert PDF to JPG — Free, In Your Browser, No Upload",
-        "seoDesc": "Export PDF pages as JPG images in your browser and download them as a ZIP. Pick the render quality. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in a PDF and every page is rendered to a JPG at the quality you choose, then bundled into a single ZIP download.",
+        "h1": "PDF-pagina's converteren naar JPG",
+        "cardDesc": "Exporteer elke pagina van een PDF als afbeelding, gedownload als ZIP.",
+        "seoTitle": "PDF Converteren naar JPG — Gratis, in je Browser, Zonder Upload",
+        "seoDesc": "Exporteer PDF-pagina's als JPG-afbeeldingen in je browser en download ze als ZIP. Kies de renderkwaliteit. Geen upload, geen account, niets naar een server verzonden.",
+        "intro": "Sleep een PDF naar binnen en elke pagina wordt gerenderd als JPG met de kwaliteit die je kiest, en daarna gebundeld in één ZIP-download.",
         "sections": [
           {
-            "title": "What it is for",
-            "body": "Pulling pages out as images — for a slide, a reference sheet, an issue report, or any workflow that wants pictures rather than a document. Every page is exported; there is no per-page selection step."
+            "title": "Waar het voor is",
+            "body": "Pagina's als afbeeldingen eruit halen — voor een dia, een referentieblad, een incidentmelding, of elke workflow die liever afbeeldingen dan een document wil. Elke pagina wordt geëxporteerd; er is geen selectiestap per pagina."
           },
           {
-            "title": "Choosing quality",
-            "body": "The quality control is the render scale, not just the encoder setting. Higher values render each page larger before encoding, which keeps small text legible at the cost of file size and processing time."
+            "title": "Kwaliteit kiezen",
+            "body": "De kwaliteitsinstelling is de renderschaal, niet alleen de encoderinstelling. Hogere waarden renderen elke pagina groter vóór het coderen, wat kleine tekst leesbaar houdt ten koste van bestandsgrootte en verwerkingstijd."
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "Rendering uses the PDF engine built into the page and runs entirely in your browser. The file is never uploaded — which is the point if the PDF is a statement, a contract, or anything else you would not paste into a web tool."
+            "title": "Niets verlaat je apparaat",
+            "body": "Het renderen gebruikt de PDF-engine die in de pagina is ingebouwd en draait volledig in je browser. Het bestand wordt nooit geüpload — wat precies de bedoeling is als de PDF een afschrift, een contract, of iets anders is dat je niet in een webtool zou willen plakken."
           }
         ],
         "faq": [
           {
-            "q": "Can I export just one page?",
-            "a": "Not currently — every page is exported and delivered as a ZIP. Extract the one you need from the archive."
+            "q": "Kan ik maar één pagina exporteren?",
+            "a": "Momenteel niet — elke pagina wordt geëxporteerd en als ZIP geleverd. Haal degene die je nodig hebt uit het archief."
           },
           {
-            "q": "Why JPG and not PNG?",
-            "a": "JPG is dramatically smaller for scanned and photographic pages, which is the common case. For line art or screenshots where you want lossless output, PDF to CBZ preserves more detail."
+            "q": "Waarom JPG en geen PNG?",
+            "a": "JPG is aanzienlijk kleiner voor gescande en fotografische pagina's, wat het gangbare geval is. Voor lijntekeningen of screenshots waarbij je een verliesvrij resultaat wilt, behoudt PDF naar CBZ meer detail."
           },
           {
-            "q": "Does it work on password-protected PDFs?",
-            "a": "No. An encrypted PDF has to be unlocked before anything can render it. SmartDecrypt, a separate app from the same studio, handles that case."
+            "q": "Werkt het met met een wachtwoord beveiligde PDF's?",
+            "a": "Nee. Een versleutelde PDF moet eerst worden ontgrendeld voordat iets hem kan renderen. SmartDecrypt, een aparte app van dezelfde studio, handelt dat geval af."
           }
-        ]
+        ],
+        "tool": {
+          "title": "PDF naar JPG",
+          "description": "Render elke pagina van een PDF als JPG-afbeelding.",
+          "uploadLabel": "Upload een PDF",
+          "uploadHint": "Selecteer één PDF-bestand",
+          "changeFile": "Bestand wijzigen",
+          "quality": "Renderkwaliteit",
+          "low": "Laag",
+          "medium": "Gemiddeld",
+          "high": "Hoog",
+          "converting": "Bezig met converteren…",
+          "convertBtn": "Converteer naar JPG",
+          "pagesGenerated": "{{count}} pagina's gegenereerd",
+          "page": "Pagina {{number}}",
+          "downloadZip": "Alles downloaden als ZIP",
+          "error": "Er is een fout opgetreden bij het converteren van je PDF.",
+          "disclaimer": "Pagina's worden gerenderd en gecodeerd in dit browsertabblad. Er wordt niets geüpload."
+        }
       },
       "qr-generator": {
-        "tag": "QR code",
-        "h1": "Kavita & Komga QR generator",
-        "cardDesc": "Make a setup QR code so the app can connect to your server without typing.",
-        "seoTitle": "Kavita & Komga Setup QR Code Generator",
-        "seoDesc": "Generate a QR code that points BiblioFuse at your Kavita or Komga server, so you do not have to type a URL and API key on a phone. Built in your browser; nothing is sent anywhere.",
-        "intro": "Fill in your server details and get a QR code the app can scan — no typing a long URL and API key on a phone keyboard.",
+        "tag": "QR-code",
+        "h1": "QR-generator voor Kavita en Komga",
+        "cardDesc": "Maak een installatie-QR-code zodat de app zonder typen verbinding kan maken met je server.",
+        "seoTitle": "QR-code Generator voor Installatie van Kavita en Komga",
+        "seoDesc": "Genereer een QR-code die BiblioFuse naar je Kavita- of Komga-server wijst, zodat je geen URL en API-sleutel op een telefoon hoeft te typen. Gemaakt in je browser; er wordt niets naar waar dan ook verzonden.",
+        "intro": "Vul je servergegevens in en krijg een QR-code die de app kan scannen — geen lange URL en API-sleutel typen op een telefoontoetsenbord.",
         "sections": [
           {
-            "title": "Why a QR code",
-            "body": "A self-hosted server address plus an API key is a long, error-prone thing to type on a phone. Scanning a code gets both across in one step, correctly, every time."
+            "title": "Waarom een QR-code",
+            "body": "Een adres van een zelf gehoste server plus een API-sleutel is iets langs en foutgevoeligs om op een telefoon te typen. Het scannen van een code brengt beide in één stap correct over, elke keer."
           },
           {
-            "title": "Your key never leaves the page",
-            "body": "The code is drawn in your browser from the values you type. Nothing is submitted, logged or stored — close the tab and it is gone. The generated image is only as private as wherever you choose to put it, so treat a printed code like the API key it contains."
+            "title": "Je sleutel verlaat de pagina nooit",
+            "body": "De code wordt in je browser getekend op basis van de waarden die je typt. Er wordt niets verzonden, gelogd of opgeslagen — sluit het tabblad en het is verdwenen. De gegenereerde afbeelding is net zo privé als de plek waar je hem kiest te plaatsen, dus behandel een afgedrukte code als de API-sleutel die hij bevat."
           }
         ],
         "faq": [
           {
-            "q": "Is my API key sent anywhere?",
-            "a": "No. The QR code is generated locally in the page and the values you type are never transmitted or saved. Do bear in mind the finished code contains your key, so anyone who can photograph it can use it."
+            "q": "Wordt mijn API-sleutel ergens naartoe verzonden?",
+            "a": "Nee. De QR-code wordt lokaal in de pagina gegenereerd en de waarden die je typt worden nooit verzonden of opgeslagen. Houd er rekening mee dat de uiteindelijke code je sleutel bevat, dus iedereen die hem kan fotograferen kan hem gebruiken."
           },
           {
-            "q": "Which servers does this support?",
-            "a": "Kavita and Komga. Pick the service type and the default port fills in; adjust the address if your setup differs."
+            "q": "Welke servers ondersteunt dit?",
+            "a": "Kavita en Komga. Kies het servicetype en de standaardpoort wordt automatisch ingevuld; pas het adres aan als jouw configuratie afwijkt."
           }
         ]
       }

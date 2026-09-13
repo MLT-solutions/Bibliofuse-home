@@ -1199,16 +1199,16 @@
       }
     },
     "toolsHub": {
-      "seoTitle": "Free Browser Tools for Comics & Ebooks — CBZ, EPUB, PDF",
-      "seoDesc": "Free tools for comic and ebook files that run entirely in your browser: shrink CBZ archives, compress EPUBs, convert PDF to CBZ or JPG. No upload, no account.",
-      "h1": "Tools",
-      "intro": "Small tools for the file formats BiblioFuse reads. Each one runs entirely inside your browser — the file never leaves your device, and there is nothing to install or sign up for.",
-      "openCta": "Open",
-      "backCta": "All tools",
+      "seoTitle": "コミック・電子書籍向け無料ブラウザツール — CBZ、EPUB、PDF",
+      "seoDesc": "コミックや電子書籍ファイル向けの無料ツールで、すべてブラウザ内で完結します：CBZアーカイブの縮小、EPUBの圧縮、PDFのCBZまたはJPGへの変換。アップロード不要、アカウント不要。",
+      "h1": "ツール",
+      "intro": "BiblioFuseが対応するファイル形式向けの小さなツール群です。それぞれがブラウザ内だけで完結し、ファイルが端末の外に出ることはなく、インストールや登録も一切必要ありません。",
+      "openCta": "開く",
+      "backCta": "すべてのツール",
       "offline": {
-        "eyebrow": "Offline tools for Windows",
-        "desc": "Native Microsoft Store apps for the same jobs, when you would rather not work in a browser.",
-        "platform": "Windows · Microsoft Store",
+        "eyebrow": "Windows向けオフラインツール",
+        "desc": "ブラウザでの作業を避けたい場合のために、同じ作業をこなすネイティブのMicrosoft Storeアプリを用意しています。",
+        "platform": "Windows・Microsoft Store",
         "cbzName": "BiblioFuse CBZ Resizer",
         "cbzDesc": "Windows でコミックアーカイブを圧縮・結合。",
         "epubName": "BiblioFuse EPUB Resizer",
@@ -1217,182 +1217,285 @@
     },
     "toolsPages": {
       "trust": {
-        "local": "Runs on your device",
-        "noUpload": "No upload, no server",
-        "noAccount": "No account, no sign-up"
+        "local": "お使いの端末で動作",
+        "noUpload": "アップロード不要、サーバー不要",
+        "noAccount": "アカウント登録不要"
       },
-      "faqTitle": "Questions",
-      "appPitch": "BiblioFuse reads CBZ, CBR, EPUB, PDF and TXT on iPhone, iPad, Mac, Android and Windows — and streams big libraries straight from your own machine.",
-      "appPitchCta": "See BiblioFuse Reader",
+      "faqTitle": "よくある質問",
+      "appPitch": "BiblioFuseはiPhone、iPad、Mac、Android、WindowsでCBZ、CBR、EPUB、PDF、TXTを読める上、ご自身の端末から大きなライブラリを直接ストリーミングできます。",
+      "appPitchCta": "BiblioFuse Readerを見る",
       "cbz-reducer": {
-        "tag": "CBZ · ZIP",
-        "h1": "Reduce CBZ file size",
-        "cardDesc": "Shrink comic archives by re-encoding the pages inside, without splitting the volume.",
-        "seoTitle": "Reduce CBZ File Size — Free, In Your Browser, No Upload",
-        "seoDesc": "Compress CBZ and ZIP comic archives in your browser. Re-encodes the pages inside at a resolution and quality you choose. Nothing is uploaded — the whole job runs on your device.",
-        "intro": "Drop in a CBZ or ZIP and it re-encodes every page inside at the size and quality you pick, then hands the archive back. Large scans usually lose most of their weight with no visible difference on a phone screen.",
+        "tag": "CBZ・ZIP",
+        "h1": "CBZファイルを圧縮・結合",
+        "cardDesc": "内部のページを再エンコードしてコミックアーカイブを縮小するか、複数巻を1つに結合します。",
+        "seoTitle": "CBZファイルを圧縮・結合 — 無料、ブラウザ内で完結、アップロード不要",
+        "seoDesc": "CBZやZIPのコミックアーカイブをブラウザ内で圧縮したり、複数のファイルを1つに結合したりできます。アップロードは一切不要——すべての処理はお使いの端末上で完結します。",
+        "intro": "CBZまたはZIPファイルを追加すると、選択したサイズと画質で内部の各ページが再エンコードされ、アーカイブとして書き出されます。大きなスキャンデータは、スマートフォンの画面では見た目にほとんど差が出ないまま大幅に軽量化できます。複数のファイルを追加して結合モードに切り替えれば、1つにまとまったアーカイブが得られます。",
         "sections": [
           {
-            "title": "Why comic archives get so big",
-            "body": "A CBZ is just a ZIP full of page images. Scans are often stored at print resolution — 3000px wide or more — which is far beyond what any phone or tablet can display. Re-encoding those pages to the resolution you actually read at is usually where the savings come from, not the archive format."
+            "title": "コミックアーカイブが大きくなる理由",
+            "body": "CBZは、ページ画像を詰め込んだZIPアーカイブにすぎません。スキャンデータは印刷解像度——幅3000ピクセル以上——で保存されていることが多く、これはスマートフォンやタブレットの表示能力をはるかに超えています。実際に読む解像度までページを再エンコードすることこそが容量削減の要であり、アーカイブ形式そのものではありません。"
           },
           {
-            "title": "What the settings do",
-            "body": "Shortest-dimension resolution caps the smaller side of each page, so tall pages and spreads scale consistently. Quality controls the encoder. Grayscale drops colour channels entirely, which helps a lot on black-and-white manga and nothing at all on colour comics."
+            "title": "各設定の役割",
+            "body": "「短辺の解像度」は各ページの短い方の辺の上限を決めるので、縦長のページや見開きページも一貫した比率で縮小されます。「画質」はエンコーダーの出力品質を制御します。「グレースケール」は色情報を完全に取り除きます。白黒マンガには大きな効果がありますが、カラーコミックには何の影響もありません。"
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "The archive is opened, re-encoded and rebuilt inside your browser using WebAssembly. There is no upload step, no queue and no server that ever sees the file — which also means it works on files you would not want to hand to a web service."
+            "title": "端末の外には何も出ません",
+            "body": "アーカイブはブラウザ内でWASM技術を使って開かれ、再エンコードされ、再構築されます。アップロードのステップも、待機列も、ファイルを目にするサーバーも一切存在しません——つまり、ウェブサービスに渡したくないファイルにも安心して使えます。"
           }
         ],
         "faq": [
           {
-            "q": "Will this ruin the image quality?",
-            "a": "Only if you tell it to. The default settings target the resolution a phone or tablet actually renders at, which is well below what most scans are stored at, so the visible result is usually identical. If you archive at print quality, raise the resolution cap or leave the file alone."
+            "q": "複数のCBZファイルを1つに結合できますか？",
+            "a": "はい。すべてのファイルを追加し、処理モードを「バッチ」から「結合」に切り替えて、出力ファイル名を付けてください。ファイルの順番どおりにページが並んだ1つのアーカイブが得られます。ダウンロードした各話を1巻にまとめるのに便利です。バッチモードではファイルはそれぞれ独立したまま、個別に軽量化されます。"
           },
           {
-            "q": "Does it work on CBR or RAR files?",
-            "a": "No — CBR is a RAR archive, and RAR cannot be opened in the browser for licensing reasons. Convert to CBZ first, or use the BiblioFuse app, which reads CBR directly."
+            "q": "画質は劣化しますか？",
+            "a": "設定次第です。デフォルト設定はスマートフォンやタブレットが実際に描画する解像度を基準にしており、ほとんどのスキャンデータの元の保存解像度よりかなり低いため、見た目の結果は通常同じになります。印刷品質でアーカイブしたい場合は、解像度の上限を上げるか、そのファイルには手を加えないでください。"
           },
           {
-            "q": "Is there a file size limit?",
-            "a": "The limit is your device's memory, not a server quota, because the work happens locally. Very large volumes are fine on a desktop; a phone with several hundred megabytes of pages may run out of room."
+            "q": "CBRやRARファイルには対応していますか？",
+            "a": "いいえ——CBRはRARアーカイブであり、ライセンス上の理由からRARはブラウザで開くことができません。先にCBZへ変換するか、CBRを直接読み込めるBiblioFuseアプリをお使いください。"
+          },
+          {
+            "q": "ファイルサイズに上限はありますか？",
+            "a": "処理はローカルで行われるため、上限はサーバー側の制限ではなく、お使いの端末のメモリ次第です。デスクトップであれば非常に大きな巻でも問題ありませんが、数百メガバイト分のページを扱うスマートフォンでは容量が足りなくなることがあります。"
           }
-        ]
+        ],
+        "tool": {
+          "title": "CBZ/ZIP 圧縮ツール",
+          "description": "CBZやZIPアーカイブを圧縮・結合します。画像は最適化され、ファイルサイズが縮小されます。",
+          "uploadLabel": "ZIP、CBZ、または画像をアップロード",
+          "uploadHint": "ここにファイルをドラッグ＆ドロップ",
+          "filesReady": "ファイルの準備完了",
+          "itemsSelected": "{{count}} 件選択中",
+          "moveUp": "上へ移動",
+          "moveDown": "下へ移動",
+          "remove": "削除",
+          "settings": "圧縮設定",
+          "maxSize": "短辺の解像度",
+          "grayscale": "グレースケール画像",
+          "processingMode": "処理モード",
+          "batch": "バッチ",
+          "merge": "結合",
+          "outputFilename": "出力ファイル名",
+          "outputPlaceholder": "merged_comic",
+          "resetFilename": "最初のファイル名にリセット",
+          "imageFormat": "画像形式",
+          "archiveFormat": "アーカイブ形式",
+          "convertFiles": "{{count}} 件のファイルを変換",
+          "processBtn": "処理してダウンロード",
+          "error": "ファイルの処理中にエラーが発生しました。",
+          "disclaimer": "画像は再エンコードによって縮小されます。これは不可逆な処理のため、必要であれば元のファイルを保管しておいてください。すべての処理はこのブラウザタブ内で行われ、アップロードは行われません。"
+        }
       },
       "epub-reducer": {
         "tag": "EPUB",
-        "h1": "Compress an EPUB",
-        "cardDesc": "Re-encode the images inside an EPUB so it syncs and stores smaller.",
-        "seoTitle": "Compress EPUB Files — Free, In Your Browser, No Upload",
-        "seoDesc": "Shrink EPUB files by re-encoding the images inside them, in your browser. Text and structure are left untouched. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in an EPUB and it re-encodes the images inside — covers, illustrations, embedded scans — while leaving the text, structure and metadata exactly as they were.",
+        "h1": "EPUBファイルを圧縮・結合",
+        "cardDesc": "EPUB内部の画像を再エンコードして同期や保存の負荷を減らすか、複数の書籍を1冊に結合します。",
+        "seoTitle": "EPUBファイルを圧縮・結合 — 無料、ブラウザ内で完結、アップロード不要",
+        "seoDesc": "EPUB内部の画像を再エンコードしてファイルサイズを縮小したり、複数のEPUBを1冊の書籍に結合したりできます。テキストと構造はそのまま保持されます。アップロード不要、アカウント不要。",
+        "intro": "EPUBファイルを追加すると、表紙・挿絵・埋め込みスキャンなど内部の画像が再エンコードされる一方、テキスト・構造・メタデータはそのまま維持されます。複数のファイルを追加して結合を有効にすれば、1冊の書籍にまとめられます。",
         "sections": [
           {
-            "title": "It is almost always the images",
-            "body": "The text in a novel-length EPUB is tiny — often under a megabyte. When an EPUB is large, it is because of embedded images stored at far higher resolution than any reader will display. Re-encoding those is where the size goes."
+            "title": "原因はほぼ常に画像",
+            "body": "小説程度の長さのEPUBのテキスト量はごくわずかで、1メガバイト未満のことも珍しくありません。EPUBファイルが大きい場合、その原因はたいてい、実際に表示される解像度よりはるかに高い解像度で保存された埋め込み画像です。それらを再エンコードすることで容量が削減されます。"
           },
           {
-            "title": "What is left alone",
-            "body": "Chapter structure, table of contents, metadata and the text itself are untouched — they are copied through unchanged. Only the image files inside the archive are re-encoded, so the book opens and navigates exactly as before."
+            "title": "手を加えない部分",
+            "body": "章構成、目次、メタデータ、そしてテキスト自体はそのままコピーされ、変更されません。アーカイブ内の画像ファイルのみが再エンコードされるため、書籍の開き方やナビゲーションは以前とまったく同じです。"
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "The EPUB is unpacked, processed and repacked inside your browser. No copy is uploaded, which matters for books you own but would rather not hand to a web service."
+            "title": "端末の外には何も出ません",
+            "body": "EPUBはブラウザ内で展開・処理・再パッケージ化されます。コピーがアップロードされることは一切ありません——これは、所有していてもウェブサービスに渡したくない書籍にとって重要なポイントです。"
           }
         ],
         "faq": [
           {
-            "q": "Will it break DRM-protected books?",
-            "a": "It cannot open them at all. DRM-protected EPUBs are encrypted, so there is nothing to re-encode. This works on DRM-free files only."
+            "q": "複数のEPUBを1冊の書籍に結合できますか？",
+            "a": "はい。2つ以上のファイルを追加して結合を有効にし、出力ファイル名を付けてください。各章はファイルの順番どおりに保持され、結果として標準的な1つのEPUBが得られます。分割配信される連載作品にも便利です。"
           },
           {
-            "q": "Does the text get compressed too?",
-            "a": "No. Text is copied through untouched — it is a negligible share of the file size and re-encoding it would risk breaking the book's structure for no gain."
+            "q": "DRM保護された書籍を解除してしまいますか？",
+            "a": "そもそも開くことができません。DRM保護されたEPUBは暗号化されているため、再エンコードする対象が存在しないのです。このツールはDRMフリーのファイルにのみ対応しています。"
           },
           {
-            "q": "Will my reader still open it?",
-            "a": "Yes. The output is a standard EPUB with the same structure and metadata as the input; only the image files inside are smaller."
+            "q": "テキストも圧縮されますか？",
+            "a": "いいえ。テキストはそのままコピーされ、変更されません。ファイルサイズに占めるテキストの割合はごくわずかであり、再エンコードしても書籍の構造を壊すリスクがあるだけで得るものがありません。"
+          },
+          {
+            "q": "自分のリーダーでちゃんと開けますか？",
+            "a": "はい。出力される内容は入力と同じ構造・メタデータを持つ標準的なEPUBです。変わるのは内部の画像ファイルが小さくなる点だけです。"
           }
-        ]
+        ],
+        "tool": {
+          "title": "EPUB 圧縮ツール",
+          "description": "EPUBファイルを圧縮・結合します。画像は最適化されたJPGに変換され、サイズが縮小されます。",
+          "uploadLabel": "EPUBファイルをアップロード",
+          "uploadHint": "ここにEPUBファイルをドラッグ＆ドロップ",
+          "filesReady": "ファイルの準備完了",
+          "itemsSelected": "{{count}} 件のファイルを選択中",
+          "moveUp": "上へ移動",
+          "moveDown": "下へ移動",
+          "remove": "削除",
+          "settings": "圧縮設定",
+          "maxSize": "画像サイズの上限",
+          "grayscale": "グレースケール画像",
+          "processingMode": "処理モード",
+          "batch": "バッチ",
+          "merge": "結合",
+          "mergeLabel": "1冊の書籍に結合",
+          "outputFilename": "出力ファイル名",
+          "outputPlaceholder": "merged_book",
+          "resetFilename": "最初のファイル名にリセット",
+          "processBtn": "処理してダウンロード",
+          "error": "EPUBの処理中にエラーが発生しました。",
+          "disclaimer": "画像は再エンコードによって縮小されます。これは不可逆な処理のため、必要であれば元のファイルを保管しておいてください。すべての処理はこのブラウザタブ内で行われ、アップロードは行われません。"
+        }
       },
       "pdf-to-cbz": {
         "tag": "PDF → CBZ",
-        "h1": "Convert PDF to CBZ",
-        "cardDesc": "Turn a PDF comic into a CBZ so comic readers can page through it properly.",
-        "seoTitle": "Convert PDF to CBZ — Free, In Your Browser, No Upload",
-        "seoDesc": "Convert PDF comics and scans to CBZ in your browser. Each page is rendered to an image and packed into a comic archive. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in a PDF and every page is rendered to an image and packed into a CBZ, so comic readers can treat it as a proper page-by-page volume instead of a document.",
+        "h1": "PDFをCBZに変換",
+        "cardDesc": "PDFコミックをCBZに変換し、コミックリーダーで正しくページ送りできるようにします。",
+        "seoTitle": "PDFをCBZに変換 — 無料、ブラウザ内で完結、アップロード不要",
+        "seoDesc": "PDFのコミックやスキャンデータをブラウザ内でCBZに変換します。各ページが画像として描画され、コミックアーカイブにまとめられます。アップロード不要、アカウント不要、サーバーへの送信も一切ありません。",
+        "intro": "PDFファイルを追加すると、各ページが画像として描画され、CBZにまとめられます。これにより、コミックリーダーはそれを文書としてではなく、正真正銘のページ単位の1巻として扱えるようになります。",
         "sections": [
           {
-            "title": "Why convert at all",
-            "body": "PDF is a document format. Comic readers built around CBZ get page-spread detection, reading direction, thumbnail grids and per-page bookmarks — features a PDF viewer generally does not offer for scanned comics."
+            "title": "そもそもなぜ変換するのか",
+            "body": "PDFは文書向けの形式です。CBZを前提に作られたコミックリーダーは、見開き検出、読む方向、サムネイル一覧、ページ単位のブックマークといった機能を備えていますが、これらは一般的なPDFビューアがスキャンコミックに対して提供しない機能です。"
           },
           {
-            "title": "What you get out",
-            "body": "A standard CBZ: a ZIP of sequentially numbered page images. Pages are rendered at 2× scale so text and line art stay sharp when you zoom, then encoded to a web-friendly format."
+            "title": "出力されるもの",
+            "body": "標準的なCBZ、つまり連番の付いたページ画像を収めたZIPアーカイブです。ページは2倍のスケールで描画されるため、拡大してもテキストや線画がくっきりしたまま残り、その後ウェブに適した形式でエンコードされます。"
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "Rendering and packing both happen in your browser. The PDF is never uploaded, so this is safe to use on scans and documents you would not want to put through a web service."
+            "title": "端末の外には何も出ません",
+            "body": "描画とパッケージ化はいずれもブラウザ内で行われます。PDFがアップロードされることは一切ないため、ウェブサービスに通したくないスキャンデータや文書にも安心して使えます。"
           }
         ],
         "faq": [
           {
-            "q": "Does the text stay searchable?",
-            "a": "No. CBZ is an image format by definition, so any selectable text in the PDF becomes part of the page image. If you need text search, keep the PDF — or read it in BiblioFuse, which can OCR pages on device."
+            "q": "テキストは検索可能なままですか？",
+            "a": "いいえ。CBZは定義上、画像形式であるため、PDF内の選択可能なテキストもページ画像の一部になります。テキスト検索が必要な場合はPDFのまま保管するか、端末上でページをOCR処理できるBiblioFuseで読んでください。"
           },
           {
-            "q": "What resolution are the pages rendered at?",
-            "a": "2× the PDF's native page size, which keeps line art and lettering sharp when zoomed. Larger PDFs therefore take longer and use more memory."
+            "q": "ページはどの解像度で描画されますか？",
+            "a": "PDFの元のページサイズの2倍で描画されるため、拡大しても線画や文字がくっきりしたままです。そのため、大きなPDFほど処理に時間がかかり、メモリの使用量も増えます。"
           },
           {
-            "q": "Can it convert back the other way?",
-            "a": "Not here — this direction covers the common case of a PDF that ought to be a comic. The BiblioFuse app handles CBZ to PDF on device."
+            "q": "逆方向への変換もできますか？",
+            "a": "こちらでは対応していません——この方向は、本来コミックであるべきPDFという一般的なケースをカバーしています。CBZからPDFへの変換は、BiblioFuseアプリが端末上で対応しています。"
           }
-        ]
+        ],
+        "tool": {
+          "title": "PDF から画像 CBZ/ZIP",
+          "description": "PDF文書を高品質なCBZまたはZIPの画像アーカイブに変換します。各ページは高品質なJPG画像になります。",
+          "uploadLabel": "PDFファイルをアップロード",
+          "uploadHint": "ここにPDFファイルをドラッグ＆ドロップ",
+          "filesReady": "ファイルの準備完了",
+          "itemsSelected": "{{count}} 件選択中",
+          "moveUp": "上へ移動",
+          "moveDown": "下へ移動",
+          "remove": "削除",
+          "settings": "設定",
+          "maxSize": "短辺の解像度",
+          "grayscale": "グレースケール",
+          "processingMode": "処理モード",
+          "batch": "バッチ",
+          "merge": "結合",
+          "outputFilename": "出力ファイル名",
+          "outputPlaceholder": "merged_comic",
+          "resetFilename": "最初のファイル名にリセット",
+          "imageFormat": "画像形式",
+          "archiveFormat": "アーカイブ形式",
+          "convertFiles": "{{count}} 件のファイルを変換",
+          "processBtn": "CBZ/ZIPに変換",
+          "converting": "変換中…",
+          "error": "PDFの変換中にエラーが発生しました。",
+          "disclaimer": "画像は再エンコードによって縮小されます。これは不可逆な処理のため、必要であれば元のファイルを保管しておいてください。すべての処理はこのブラウザタブ内で行われ、アップロードは行われません。"
+        }
       },
       "pdf-to-jpg": {
         "tag": "PDF → JPG",
-        "h1": "Convert PDF pages to JPG",
-        "cardDesc": "Export every page of a PDF as an image, downloaded as a ZIP.",
-        "seoTitle": "Convert PDF to JPG — Free, In Your Browser, No Upload",
-        "seoDesc": "Export PDF pages as JPG images in your browser and download them as a ZIP. Pick the render quality. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in a PDF and every page is rendered to a JPG at the quality you choose, then bundled into a single ZIP download.",
+        "h1": "PDFページをJPGに変換",
+        "cardDesc": "PDFの全ページを画像として書き出し、ZIPとしてダウンロードします。",
+        "seoTitle": "PDFをJPGに変換 — 無料、ブラウザ内で完結、アップロード不要",
+        "seoDesc": "PDFのページをブラウザ内でJPG画像として書き出し、ZIPとしてダウンロードできます。描画品質も選択可能。アップロード不要、アカウント不要、サーバーへの送信も一切ありません。",
+        "intro": "PDFファイルを追加すると、選択した画質で全ページがJPGとして描画され、1つのZIPにまとめられます。",
         "sections": [
           {
-            "title": "What it is for",
-            "body": "Pulling pages out as images — for a slide, a reference sheet, an issue report, or any workflow that wants pictures rather than a document. Every page is exported; there is no per-page selection step."
+            "title": "どんな用途に向いているか",
+            "body": "スライド、参考資料、不具合報告など、文書ではなく画像を必要とするあらゆる用途のために、ページを画像として取り出せます。全ページが書き出されるため、ページ単位の選択機能はありません。"
           },
           {
-            "title": "Choosing quality",
-            "body": "The quality control is the render scale, not just the encoder setting. Higher values render each page larger before encoding, which keeps small text legible at the cost of file size and processing time."
+            "title": "画質の選び方",
+            "body": "画質の設定は単なるエンコーダーの設定ではなく、描画スケールそのものを制御します。値を高くするほど、エンコード前のページが大きく描画されるため、小さな文字も読みやすくなりますが、その分ファイルサイズと処理時間は増えます。"
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "Rendering uses the PDF engine built into the page and runs entirely in your browser. The file is never uploaded — which is the point if the PDF is a statement, a contract, or anything else you would not paste into a web tool."
+            "title": "端末の外には何も出ません",
+            "body": "描画にはページに組み込まれたPDFエンジンを使用し、すべてブラウザ内で完結します。ファイルがアップロードされることは一切ありません——これは、明細書や契約書など、ウェブツールに貼り付けたくない内容のPDFにとって重要なポイントです。"
           }
         ],
         "faq": [
           {
-            "q": "Can I export just one page?",
-            "a": "Not currently — every page is exported and delivered as a ZIP. Extract the one you need from the archive."
+            "q": "1ページだけ書き出すことはできますか？",
+            "a": "現時点ではできません——全ページが書き出され、ZIPとして提供されます。必要なページはアーカイブから取り出してください。"
           },
           {
-            "q": "Why JPG and not PNG?",
-            "a": "JPG is dramatically smaller for scanned and photographic pages, which is the common case. For line art or screenshots where you want lossless output, PDF to CBZ preserves more detail."
+            "q": "なぜPNGではなくJPGなのですか？",
+            "a": "スキャンデータや写真的なページ（最も一般的なケース）では、JPGの方が圧倒的に容量が小さくなります。線画やスクリーンショットなどロスレスな出力が必要な場合は、PDFからCBZへの変換の方がより多くのディテールを保持できます。"
           },
           {
-            "q": "Does it work on password-protected PDFs?",
-            "a": "No. An encrypted PDF has to be unlocked before anything can render it. SmartDecrypt, a separate app from the same studio, handles that case."
+            "q": "パスワード保護されたPDFにも対応していますか？",
+            "a": "いいえ。暗号化されたPDFは、描画される前にロックを解除する必要があります。同じスタジオが提供する別のアプリ、SmartDecryptがこのケースに対応しています。"
           }
-        ]
+        ],
+        "tool": {
+          "title": "PDF から JPG",
+          "description": "PDFの全ページをJPG画像として描画します。",
+          "uploadLabel": "PDFをアップロード",
+          "uploadHint": "PDFファイルを1つ選択",
+          "changeFile": "ファイルを変更",
+          "quality": "描画品質",
+          "low": "低",
+          "medium": "中",
+          "high": "高",
+          "converting": "変換中…",
+          "convertBtn": "JPGに変換",
+          "pagesGenerated": "{{count}} ページを生成しました",
+          "page": "{{number}} ページ目",
+          "downloadZip": "すべてをZIPでダウンロード",
+          "error": "PDFの変換中にエラーが発生しました。",
+          "disclaimer": "ページはこのブラウザタブ内で描画・エンコードされます。アップロードは一切行われません。"
+        }
       },
       "qr-generator": {
-        "tag": "QR code",
-        "h1": "Kavita & Komga QR generator",
-        "cardDesc": "Make a setup QR code so the app can connect to your server without typing.",
-        "seoTitle": "Kavita & Komga Setup QR Code Generator",
-        "seoDesc": "Generate a QR code that points BiblioFuse at your Kavita or Komga server, so you do not have to type a URL and API key on a phone. Built in your browser; nothing is sent anywhere.",
-        "intro": "Fill in your server details and get a QR code the app can scan — no typing a long URL and API key on a phone keyboard.",
+        "tag": "QRコード",
+        "h1": "Kavita・Komga用QRコード生成ツール",
+        "cardDesc": "アプリが手入力なしでサーバーに接続できるよう、設定用QRコードを作成します。",
+        "seoTitle": "Kavita・Komga設定用QRコード生成ツール",
+        "seoDesc": "BiblioFuseをお使いのKavitaまたはKomgaサーバーに向けるQRコードを生成し、スマートフォンでURLとAPIキーを手入力する手間を省きます。ブラウザ内で作成され、どこにも送信されません。",
+        "intro": "サーバー情報を入力するだけで、アプリがスキャンできるQRコードを取得できます——スマートフォンのキーボードで長いURLとAPIキーを入力する必要はありません。",
         "sections": [
           {
-            "title": "Why a QR code",
-            "body": "A self-hosted server address plus an API key is a long, error-prone thing to type on a phone. Scanning a code gets both across in one step, correctly, every time."
+            "title": "なぜQRコードなのか",
+            "body": "セルフホストのサーバーアドレスとAPIキーを組み合わせたものは、スマートフォンで入力するには長く、間違えやすいものです。コードをスキャンすれば、この2つを毎回正確に一度で伝えられます。"
           },
           {
-            "title": "Your key never leaves the page",
-            "body": "The code is drawn in your browser from the values you type. Nothing is submitted, logged or stored — close the tab and it is gone. The generated image is only as private as wherever you choose to put it, so treat a printed code like the API key it contains."
+            "title": "あなたのキーはこのページの外には出ません",
+            "body": "コードは、入力した値をもとにブラウザ内で描画されます。何も送信・記録・保存されません——タブを閉じれば消えます。生成される画像のプライバシーは、それをどこに置くか次第なので、印刷したコードはそれに含まれるAPIキーと同じように扱ってください。"
           }
         ],
         "faq": [
           {
-            "q": "Is my API key sent anywhere?",
-            "a": "No. The QR code is generated locally in the page and the values you type are never transmitted or saved. Do bear in mind the finished code contains your key, so anyone who can photograph it can use it."
+            "q": "私のAPIキーはどこかに送信されますか？",
+            "a": "いいえ。QRコードはページ内でローカルに生成され、入力した値が送信・保存されることはありません。ただし、生成されたコード自体にはキーが含まれているため、それを撮影できる人なら誰でも使えてしまう点にご注意ください。"
           },
           {
-            "q": "Which servers does this support?",
-            "a": "Kavita and Komga. Pick the service type and the default port fills in; adjust the address if your setup differs."
+            "q": "どのサーバーに対応していますか？",
+            "a": "KavitaとKomgaです。サービスの種類を選ぶとデフォルトのポート番号が自動入力されます。環境が異なる場合はアドレスを調整してください。"
           }
         ]
       }

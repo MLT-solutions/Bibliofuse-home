@@ -1139,75 +1139,75 @@
       "unknown": "Inconnue"
     },
     "qrGeneratorPage": {
-      "seoTitle": "Générateur QR BiblioFuse",
-      "seoDesc": "Générez un code QR pour ajouter des serveurs Kavita ou Komga à BiblioFuse. Scannez-le depuis iOS ou Android pour une configuration facile.",
+      "seoTitle": "Générateur de QR BiblioFuse",
+      "seoDesc": "Générez un code QR pour ajouter des serveurs Kavita ou Komga à BiblioFuse. Scannez-le depuis iOS ou Android pour une configuration facile du serveur.",
       "back": "Retour à BiblioFuse",
-      "eyebrow": "Configuration QR serveur",
-      "title": "Ajoutez des serveurs Kavita et Komga par QR",
-      "desc": "Générez un code QR BiblioFuse sécurisé pour les connexions serveur Kavita ou Komga, puis scannez-le depuis votre téléphone pour ajouter le serveur automatiquement.",
-      "whatTitle": "Ce que ça fait",
-      "whatDesc": "Créez un QR serveur partageable avec votre adresse API et clé facultative, pour que BiblioFuse se connecte sans saisie manuelle d'URL.",
+      "eyebrow": "Configuration de serveur par QR",
+      "title": "Ajoutez des serveurs Kavita et Komga avec un QR",
+      "desc": "Générez un code QR BiblioFuse sécurisé pour les connexions à un serveur Kavita ou Komga, puis scannez-le depuis votre téléphone pour ajouter le serveur automatiquement.",
+      "whatTitle": "Ce que cela fait",
+      "whatDesc": "Créez un QR de serveur partageable avec votre adresse d'API et une clé optionnelle, pour que BiblioFuse puisse se connecter sans saisir manuellement l'URL.",
       "whatBullets": [
-        "Prend en charge les serveurs API Kavita et Komga",
+        "Prend en charge les serveurs d'API Kavita et Komga",
         "Inclut une clé API optionnelle pour des connexions sécurisées",
-        "Fonctionne sur iOS et Android"
+        "Fonctionne sur les appareils iOS et Android"
       ],
       "stepsTitle": "Comment l'utiliser",
       "steps": [
         {
           "title": "Générez le code QR",
-          "desc": "Entrez l'adresse de votre serveur, choisissez Kavita ou Komga, et ajoutez une clé API si nécessaire."
+          "desc": "Saisissez l'adresse de votre serveur, choisissez Kavita ou Komga, et ajoutez une clé API si nécessaire."
         },
         {
           "title": "Scannez dans BiblioFuse",
-          "desc": "Ouvrez Réglages > OPDS (Fonction Pro) > Ajouter un serveur, touchez l'icône QR et scannez le code."
+          "desc": "Ouvrez Réglages > OPDS (fonctionnalité Pro) > Ajouter un serveur, puis appuyez sur l'icône QR et scannez le code."
         },
         {
           "title": "Sélectionnez et lisez",
-          "desc": "Dans Bibliothèque, ouvrez le panneau Emplacement en haut à gauche, choisissez votre serveur et profitez de la lecture."
+          "desc": "Dans Bibliothèque, ouvrez le panneau Emplacement en haut à gauche, choisissez votre serveur, et profitez de votre lecture."
         }
       ],
-      "noteTitle": "Note fonction Pro",
-      "noteDesc": "Le scan nécessite la fonction OPDS Pro de BiblioFuse. Une fois le serveur ajouté, utilisez le sélecteur Emplacement pour passer à votre bibliothèque Kavita ou Komga.",
-      "tipTitle": "Conseil rapide",
+      "noteTitle": "Remarque sur la fonctionnalité Pro",
+      "noteDesc": "Le flux de scan de serveur nécessite la fonctionnalité OPDS de BiblioFuse Pro. Une fois le serveur ajouté, utilisez le sélecteur d'Emplacement pour passer à votre bibliothèque Kavita ou Komga.",
+      "tipTitle": "Astuce rapide",
       "tipBullets": [
         "Utilisez un réseau privé sécurisé ou Tailscale pour l'accès à distance.",
-        "Vérifiez l'URL du serveur et la clé API avant de générer le QR.",
-        "Conservez le code généré en sécurité — il contient des informations d'accès."
+        "Vérifiez bien l'URL du serveur et la clé API avant de générer le QR.",
+        "Conservez le code généré en lieu sûr — il contient des informations d'accès."
       ],
       "homeCta": "Retour à l'accueil",
       "form": {
         "generatorTitle": "Générez votre code QR",
-        "generatorDesc": "Remplissez les informations de votre serveur ci-dessous, puis appuyez sur Générer pour créer un code QR scannable.",
-        "displayNameLabel": "Nom affiché (optionnel)",
+        "generatorDesc": "Renseignez ci-dessous les informations de votre serveur, puis appuyez sur Générer pour créer un code QR scannable.",
+        "displayNameLabel": "Nom d'affichage (optionnel)",
         "displayNamePlaceholder": "Kavita maison",
         "serviceTypeLabel": "Type de service",
-        "kavitaOption": "Kavita API",
-        "komgaOption": "Komga API",
+        "kavitaOption": "API Kavita",
+        "komgaOption": "API Komga",
         "serverUrlLabel": "URL du serveur",
         "serverUrlPlaceholder": "http://192.168.0.123:5000",
-        "apiKeyLabel": "Clé API (optionnelle)",
+        "apiKeyLabel": "Clé API (optionnel)",
         "apiKeyPlaceholder": "sk_live_abc123",
-        "apiKeyHint": "Copiez la clé API depuis les paramètres utilisateur/compte de Kavita ou Komga.",
+        "apiKeyHint": "Copiez la clé API depuis les réglages utilisateur/compte de Kavita ou Komga.",
         "show": "Afficher",
         "hide": "Masquer",
-        "generate": "Générer le QR code",
+        "generate": "Générer le code QR",
         "clear": "Effacer",
-        "warning": "Ce code QR contient l'adresse de votre serveur et vos informations d'authentification. Ne le partagez pas publiquement.",
-        "enterUrl": "Veuillez entrer une URL de serveur.",
-        "qrCredit": "Code QR généré par qrcode-generator"
+        "warning": "Ce code QR contient l'adresse de votre serveur et des informations d'authentification. Ne le partagez pas publiquement.",
+        "enterUrl": "Veuillez saisir une URL de serveur.",
+        "qrCredit": "Code QR généré avec qrcode-generator"
       }
     },
     "toolsHub": {
-      "seoTitle": "Free Browser Tools for Comics & Ebooks — CBZ, EPUB, PDF",
-      "seoDesc": "Free tools for comic and ebook files that run entirely in your browser: shrink CBZ archives, compress EPUBs, convert PDF to CBZ or JPG. No upload, no account.",
-      "h1": "Tools",
-      "intro": "Small tools for the file formats BiblioFuse reads. Each one runs entirely inside your browser — the file never leaves your device, and there is nothing to install or sign up for.",
-      "openCta": "Open",
-      "backCta": "All tools",
+      "seoTitle": "Outils Gratuits dans le Navigateur pour Bandes Dessinées et Ebooks — CBZ, EPUB, PDF",
+      "seoDesc": "Outils gratuits pour les fichiers de bandes dessinées et d'ebooks qui s'exécutent entièrement dans votre navigateur : réduisez des archives CBZ, compressez des EPUB, convertissez du PDF en CBZ ou JPG. Sans envoi, sans compte.",
+      "h1": "Outils",
+      "intro": "De petits outils pour les formats de fichiers que lit BiblioFuse. Chacun s'exécute entièrement dans votre navigateur — le fichier ne quitte jamais votre appareil, et il n'y a rien à installer ni aucune inscription à faire.",
+      "openCta": "Ouvrir",
+      "backCta": "Tous les outils",
       "offline": {
-        "eyebrow": "Offline tools for Windows",
-        "desc": "Native Microsoft Store apps for the same jobs, when you would rather not work in a browser.",
+        "eyebrow": "Outils hors ligne pour Windows",
+        "desc": "Applications natives du Microsoft Store pour les mêmes tâches, quand vous préférez ne pas travailler dans un navigateur.",
         "platform": "Windows · Microsoft Store",
         "cbzName": "BiblioFuse CBZ Resizer",
         "cbzDesc": "Compressez et fusionnez des archives de bandes dessinées sur Windows.",
@@ -1217,182 +1217,285 @@
     },
     "toolsPages": {
       "trust": {
-        "local": "Runs on your device",
-        "noUpload": "No upload, no server",
-        "noAccount": "No account, no sign-up"
+        "local": "S'exécute sur votre appareil",
+        "noUpload": "Aucun envoi, aucun serveur",
+        "noAccount": "Aucun compte, aucune inscription"
       },
       "faqTitle": "Questions",
-      "appPitch": "BiblioFuse reads CBZ, CBR, EPUB, PDF and TXT on iPhone, iPad, Mac, Android and Windows — and streams big libraries straight from your own machine.",
-      "appPitchCta": "See BiblioFuse Reader",
+      "appPitch": "BiblioFuse lit les CBZ, CBR, EPUB, PDF et TXT sur iPhone, iPad, Mac, Android et Windows — et diffuse vos grandes bibliothèques directement depuis votre propre machine.",
+      "appPitchCta": "Découvrir BiblioFuse Reader",
       "cbz-reducer": {
         "tag": "CBZ · ZIP",
-        "h1": "Reduce CBZ file size",
-        "cardDesc": "Shrink comic archives by re-encoding the pages inside, without splitting the volume.",
-        "seoTitle": "Reduce CBZ File Size — Free, In Your Browser, No Upload",
-        "seoDesc": "Compress CBZ and ZIP comic archives in your browser. Re-encodes the pages inside at a resolution and quality you choose. Nothing is uploaded — the whole job runs on your device.",
-        "intro": "Drop in a CBZ or ZIP and it re-encodes every page inside at the size and quality you pick, then hands the archive back. Large scans usually lose most of their weight with no visible difference on a phone screen.",
+        "h1": "Réduire ou fusionner des fichiers CBZ",
+        "cardDesc": "Réduisez des archives de bandes dessinées en réencodant les pages qu'elles contiennent, ou réunissez plusieurs volumes en un seul.",
+        "seoTitle": "Réduire ou Fusionner des Fichiers CBZ — Gratuit, dans votre Navigateur, sans Envoi",
+        "seoDesc": "Compressez des archives de bandes dessinées CBZ et ZIP, ou fusionnez-en plusieurs en un seul fichier, directement dans votre navigateur. Rien n'est envoyé — tout le traitement s'exécute sur votre appareil.",
+        "intro": "Déposez un CBZ ou un ZIP : chaque page à l'intérieur est réencodée à la taille et à la qualité que vous choisissez, puis l'archive vous est rendue. Les gros scans perdent généralement l'essentiel de leur poids sans différence visible sur l'écran d'un téléphone. Ajoutez plusieurs fichiers et passez en mode fusion pour obtenir à la place une seule archive combinée.",
         "sections": [
           {
-            "title": "Why comic archives get so big",
-            "body": "A CBZ is just a ZIP full of page images. Scans are often stored at print resolution — 3000px wide or more — which is far beyond what any phone or tablet can display. Re-encoding those pages to the resolution you actually read at is usually where the savings come from, not the archive format."
+            "title": "Pourquoi les archives de bandes dessinées deviennent si volumineuses",
+            "body": "Un CBZ n'est qu'un ZIP rempli d'images de pages. Les scans sont souvent stockés à une résolution d'impression — 3000 px de large ou plus — bien au-delà de ce qu'un téléphone ou une tablette peut afficher. C'est généralement en réencodant ces pages à la résolution à laquelle vous lisez réellement que vient le gain de place, pas dans le format de l'archive."
           },
           {
-            "title": "What the settings do",
-            "body": "Shortest-dimension resolution caps the smaller side of each page, so tall pages and spreads scale consistently. Quality controls the encoder. Grayscale drops colour channels entirely, which helps a lot on black-and-white manga and nothing at all on colour comics."
+            "title": "Ce que font les réglages",
+            "body": "La résolution de la dimension la plus courte plafonne le côté le plus petit de chaque page, afin que les pages hautes et les doubles pages soient mises à l'échelle de façon cohérente. La qualité contrôle l'encodeur. Les niveaux de gris suppriment entièrement les canaux de couleur, ce qui aide beaucoup pour les mangas en noir et blanc et absolument pas pour les bandes dessinées en couleur."
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "The archive is opened, re-encoded and rebuilt inside your browser using WebAssembly. There is no upload step, no queue and no server that ever sees the file — which also means it works on files you would not want to hand to a web service."
+            "title": "Rien ne quitte votre appareil",
+            "body": "L'archive est ouverte, réencodée et reconstruite dans votre navigateur grâce à WebAssembly. Il n'y a aucune étape d'envoi, aucune file d'attente et aucun serveur qui voit jamais le fichier — ce qui permet aussi de l'utiliser sur des fichiers que vous ne voudriez pas confier à un service en ligne."
           }
         ],
         "faq": [
           {
-            "q": "Will this ruin the image quality?",
-            "a": "Only if you tell it to. The default settings target the resolution a phone or tablet actually renders at, which is well below what most scans are stored at, so the visible result is usually identical. If you archive at print quality, raise the resolution cap or leave the file alone."
+            "q": "Peut-il combiner plusieurs fichiers CBZ en un seul ?",
+            "a": "Oui. Ajoutez tous les fichiers, passez le mode de traitement de lot à fusion, et nommez le résultat — vous obtenez une seule archive avec les pages dans l'ordre des fichiers. Pratique pour réunir des téléchargements de chapitres en un seul volume. Le mode lot les conserve comme fichiers séparés et se contente de réduire chacun d'eux."
           },
           {
-            "q": "Does it work on CBR or RAR files?",
-            "a": "No — CBR is a RAR archive, and RAR cannot be opened in the browser for licensing reasons. Convert to CBZ first, or use the BiblioFuse app, which reads CBR directly."
+            "q": "Cela va-t-il abîmer la qualité des images ?",
+            "a": "Seulement si vous le lui demandez. Les réglages par défaut visent la résolution qu'un téléphone ou une tablette affiche réellement, bien en dessous de celle à laquelle la plupart des scans sont stockés, donc le résultat visible est généralement identique. Si vous archivez en qualité impression, augmentez le plafond de résolution ou laissez le fichier tel quel."
           },
           {
-            "q": "Is there a file size limit?",
-            "a": "The limit is your device's memory, not a server quota, because the work happens locally. Very large volumes are fine on a desktop; a phone with several hundred megabytes of pages may run out of room."
+            "q": "Fonctionne-t-il avec les fichiers CBR ou RAR ?",
+            "a": "Non — CBR est une archive RAR, et RAR ne peut pas être ouvert dans le navigateur pour des raisons de licence. Convertissez d'abord en CBZ, ou utilisez l'application BiblioFuse, qui lit directement les CBR."
+          },
+          {
+            "q": "Y a-t-il une limite de taille de fichier ?",
+            "a": "La limite est la mémoire de votre appareil, pas un quota serveur, car le traitement se fait localement. Les très gros volumes ne posent aucun problème sur un ordinateur de bureau ; un téléphone avec plusieurs centaines de mégaoctets de pages peut manquer de place."
           }
-        ]
+        ],
+        "tool": {
+          "title": "Réducteur CBZ/ZIP",
+          "description": "Compressez ou fusionnez des archives CBZ et ZIP. Les images sont optimisées pour réduire la taille du fichier.",
+          "uploadLabel": "Importer des ZIP, CBZ ou images",
+          "uploadHint": "Glissez-déposez vos fichiers ici",
+          "filesReady": "Fichiers prêts",
+          "itemsSelected": "{{count}} éléments sélectionnés",
+          "moveUp": "Monter",
+          "moveDown": "Descendre",
+          "remove": "Supprimer",
+          "settings": "Réglages de réduction",
+          "maxSize": "Résolution de la dimension la plus courte",
+          "grayscale": "Images en niveaux de gris",
+          "processingMode": "Mode de traitement",
+          "batch": "Lot",
+          "merge": "Fusion",
+          "outputFilename": "Nom du fichier de sortie",
+          "outputPlaceholder": "bd_fusionnee",
+          "resetFilename": "Réinitialiser au premier nom de fichier",
+          "imageFormat": "Format d'image",
+          "archiveFormat": "Format d'archive",
+          "convertFiles": "Convertir {{count}} fichiers",
+          "processBtn": "Traiter et télécharger",
+          "error": "Une erreur s'est produite lors du traitement de vos fichiers.",
+          "disclaimer": "Les images sont réencodées pour les réduire, ce qui entraîne une perte de qualité — conservez l'original si besoin. Tout s'exécute dans cet onglet du navigateur ; aucun fichier n'est envoyé."
+        }
       },
       "epub-reducer": {
         "tag": "EPUB",
-        "h1": "Compress an EPUB",
-        "cardDesc": "Re-encode the images inside an EPUB so it syncs and stores smaller.",
-        "seoTitle": "Compress EPUB Files — Free, In Your Browser, No Upload",
-        "seoDesc": "Shrink EPUB files by re-encoding the images inside them, in your browser. Text and structure are left untouched. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in an EPUB and it re-encodes the images inside — covers, illustrations, embedded scans — while leaving the text, structure and metadata exactly as they were.",
+        "h1": "Compresser ou fusionner des fichiers EPUB",
+        "cardDesc": "Réencodez les images à l'intérieur d'un EPUB pour qu'il se synchronise et se stocke plus léger, ou réunissez plusieurs EPUB en un seul livre.",
+        "seoTitle": "Compresser ou Fusionner des Fichiers EPUB — Gratuit, dans votre Navigateur, sans Envoi",
+        "seoDesc": "Réduisez des fichiers EPUB en réencodant les images qu'ils contiennent, ou fusionnez plusieurs EPUB en un seul livre, directement dans votre navigateur. Le texte et la structure restent intacts. Sans envoi, sans compte.",
+        "intro": "Déposez un EPUB : les images à l'intérieur — couvertures, illustrations, scans intégrés — sont réencodées, tandis que le texte, la structure et les métadonnées restent exactement tels quels. Ajoutez plus d'un fichier et activez la fusion pour les réunir en un seul livre.",
         "sections": [
           {
-            "title": "It is almost always the images",
-            "body": "The text in a novel-length EPUB is tiny — often under a megabyte. When an EPUB is large, it is because of embedded images stored at far higher resolution than any reader will display. Re-encoding those is where the size goes."
+            "title": "Ce sont presque toujours les images",
+            "body": "Le texte d'un EPUB de la taille d'un roman est minuscule — souvent moins d'un mégaoctet. Quand un EPUB est volumineux, c'est à cause d'images intégrées stockées à une résolution bien supérieure à ce qu'affichera n'importe quelle liseuse. C'est là que part la taille lorsqu'on les réencode."
           },
           {
-            "title": "What is left alone",
-            "body": "Chapter structure, table of contents, metadata and the text itself are untouched — they are copied through unchanged. Only the image files inside the archive are re-encoded, so the book opens and navigates exactly as before."
+            "title": "Ce qui n'est pas touché",
+            "body": "La structure des chapitres, la table des matières, les métadonnées et le texte lui-même restent intacts — ils sont copiés sans modification. Seuls les fichiers image à l'intérieur de l'archive sont réencodés, si bien que le livre s'ouvre et se navigue exactement comme avant."
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "The EPUB is unpacked, processed and repacked inside your browser. No copy is uploaded, which matters for books you own but would rather not hand to a web service."
+            "title": "Rien ne quitte votre appareil",
+            "body": "L'EPUB est décompressé, traité et reconditionné dans votre navigateur. Aucune copie n'est envoyée, ce qui compte pour les livres que vous possédez mais préféreriez ne pas confier à un service en ligne."
           }
         ],
         "faq": [
           {
-            "q": "Will it break DRM-protected books?",
-            "a": "It cannot open them at all. DRM-protected EPUBs are encrypted, so there is nothing to re-encode. This works on DRM-free files only."
+            "q": "Peut-il fusionner plusieurs EPUB en un seul livre ?",
+            "a": "Oui. Ajoutez deux fichiers ou plus et activez la fusion, puis nommez le résultat. Les chapitres sont conservés dans l'ordre des fichiers et le résultat est un seul EPUB standard, ce qui est utile pour des publications en série parues une partie à la fois."
           },
           {
-            "q": "Does the text get compressed too?",
-            "a": "No. Text is copied through untouched — it is a negligible share of the file size and re-encoding it would risk breaking the book's structure for no gain."
+            "q": "Cela va-t-il abîmer les livres protégés par DRM ?",
+            "a": "Il ne peut pas les ouvrir du tout. Les EPUB protégés par DRM sont chiffrés, donc il n'y a rien à réencoder. Cela fonctionne uniquement sur les fichiers sans DRM."
           },
           {
-            "q": "Will my reader still open it?",
-            "a": "Yes. The output is a standard EPUB with the same structure and metadata as the input; only the image files inside are smaller."
+            "q": "Le texte est-il compressé aussi ?",
+            "a": "Non. Le texte est copié sans modification — il représente une part négligeable de la taille du fichier, et le réencoder risquerait de casser la structure du livre sans aucun gain."
+          },
+          {
+            "q": "Ma liseuse pourra-t-elle encore l'ouvrir ?",
+            "a": "Oui. Le résultat est un EPUB standard avec la même structure et les mêmes métadonnées que l'original ; seuls les fichiers image à l'intérieur sont plus légers."
           }
-        ]
+        ],
+        "tool": {
+          "title": "Réducteur EPUB",
+          "description": "Compressez ou fusionnez des fichiers EPUB. Les images sont converties en JPEG optimisés pour réduire la taille.",
+          "uploadLabel": "Importer des fichiers EPUB",
+          "uploadHint": "Glissez-déposez vos EPUB ici",
+          "filesReady": "Fichiers prêts",
+          "itemsSelected": "{{count}} fichiers sélectionnés",
+          "moveUp": "Monter",
+          "moveDown": "Descendre",
+          "remove": "Supprimer",
+          "settings": "Réglages de réduction",
+          "maxSize": "Dimension maximale de l'image",
+          "grayscale": "Images en niveaux de gris",
+          "processingMode": "Mode de traitement",
+          "batch": "Lot",
+          "merge": "Fusion",
+          "mergeLabel": "Fusionner en un seul livre",
+          "outputFilename": "Nom du fichier de sortie",
+          "outputPlaceholder": "livre_fusionne",
+          "resetFilename": "Réinitialiser au premier nom de fichier",
+          "processBtn": "Traiter et télécharger",
+          "error": "Une erreur s'est produite lors du traitement de votre EPUB.",
+          "disclaimer": "Les images sont réencodées pour les réduire, ce qui entraîne une perte de qualité — conservez l'original si besoin. Tout s'exécute dans cet onglet du navigateur ; aucun fichier n'est envoyé."
+        }
       },
       "pdf-to-cbz": {
         "tag": "PDF → CBZ",
-        "h1": "Convert PDF to CBZ",
-        "cardDesc": "Turn a PDF comic into a CBZ so comic readers can page through it properly.",
-        "seoTitle": "Convert PDF to CBZ — Free, In Your Browser, No Upload",
-        "seoDesc": "Convert PDF comics and scans to CBZ in your browser. Each page is rendered to an image and packed into a comic archive. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in a PDF and every page is rendered to an image and packed into a CBZ, so comic readers can treat it as a proper page-by-page volume instead of a document.",
+        "h1": "Convertir un PDF en CBZ",
+        "cardDesc": "Transformez une bande dessinée en PDF en CBZ pour que les lecteurs de bandes dessinées puissent la parcourir correctement.",
+        "seoTitle": "Convertir un PDF en CBZ — Gratuit, dans votre Navigateur, sans Envoi",
+        "seoDesc": "Convertissez des bandes dessinées et des scans PDF en CBZ dans votre navigateur. Chaque page est rendue en image puis intégrée dans une archive de bande dessinée. Sans envoi, sans compte, rien n'est transmis à un serveur.",
+        "intro": "Déposez un PDF : chaque page est rendue en image et intégrée dans un CBZ, afin que les lecteurs de bandes dessinées puissent le traiter comme un véritable volume page par page plutôt que comme un document.",
         "sections": [
           {
-            "title": "Why convert at all",
-            "body": "PDF is a document format. Comic readers built around CBZ get page-spread detection, reading direction, thumbnail grids and per-page bookmarks — features a PDF viewer generally does not offer for scanned comics."
+            "title": "Pourquoi convertir",
+            "body": "Le PDF est un format de document. Les lecteurs de bandes dessinées conçus autour du CBZ offrent la détection des doubles pages, le sens de lecture, des grilles de vignettes et des signets par page — des fonctionnalités qu'une visionneuse PDF n'offre généralement pas pour les bandes dessinées scannées."
           },
           {
-            "title": "What you get out",
-            "body": "A standard CBZ: a ZIP of sequentially numbered page images. Pages are rendered at 2× scale so text and line art stay sharp when you zoom, then encoded to a web-friendly format."
+            "title": "Ce que vous obtenez",
+            "body": "Un CBZ standard : un ZIP d'images de pages numérotées séquentiellement. Les pages sont rendues à l'échelle 2× pour que le texte et les traits restent nets au zoom, puis encodées dans un format adapté au web."
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "Rendering and packing both happen in your browser. The PDF is never uploaded, so this is safe to use on scans and documents you would not want to put through a web service."
+            "title": "Rien ne quitte votre appareil",
+            "body": "Le rendu et l'intégration se font tous deux dans votre navigateur. Le PDF n'est jamais envoyé, ce qui rend l'outil sûr pour des scans et des documents que vous ne voudriez pas soumettre à un service en ligne."
           }
         ],
         "faq": [
           {
-            "q": "Does the text stay searchable?",
-            "a": "No. CBZ is an image format by definition, so any selectable text in the PDF becomes part of the page image. If you need text search, keep the PDF — or read it in BiblioFuse, which can OCR pages on device."
+            "q": "Le texte reste-t-il consultable par recherche ?",
+            "a": "Non. Le CBZ est par définition un format image, donc tout texte sélectionnable du PDF devient partie intégrante de l'image de page. Si vous avez besoin de rechercher du texte, conservez le PDF — ou lisez-le dans BiblioFuse, qui peut appliquer l'OCR aux pages sur l'appareil."
           },
           {
-            "q": "What resolution are the pages rendered at?",
-            "a": "2× the PDF's native page size, which keeps line art and lettering sharp when zoomed. Larger PDFs therefore take longer and use more memory."
+            "q": "À quelle résolution les pages sont-elles rendues ?",
+            "a": "À 2× la taille native de la page du PDF, ce qui garde les traits et les lettrages nets au zoom. Les PDF plus volumineux prennent donc plus de temps et utilisent plus de mémoire."
           },
           {
-            "q": "Can it convert back the other way?",
-            "a": "Not here — this direction covers the common case of a PDF that ought to be a comic. The BiblioFuse app handles CBZ to PDF on device."
+            "q": "Peut-il convertir dans l'autre sens ?",
+            "a": "Pas ici — ce sens couvre le cas courant d'un PDF qui devrait être une bande dessinée. L'application BiblioFuse gère la conversion de CBZ vers PDF sur l'appareil."
           }
-        ]
+        ],
+        "tool": {
+          "title": "PDF vers CBZ/ZIP d'images",
+          "description": "Convertissez des documents PDF en archives d'images CBZ ou ZIP de haute qualité. Chaque page devient un JPEG haute qualité.",
+          "uploadLabel": "Importer un fichier PDF",
+          "uploadHint": "Glissez-déposez votre PDF ici",
+          "filesReady": "Fichier prêt",
+          "itemsSelected": "{{count}} éléments sélectionnés",
+          "moveUp": "Monter",
+          "moveDown": "Descendre",
+          "remove": "Supprimer",
+          "settings": "Réglages",
+          "maxSize": "Résolution de la dimension la plus courte",
+          "grayscale": "Niveaux de gris",
+          "processingMode": "Mode de traitement",
+          "batch": "Lot",
+          "merge": "Fusion",
+          "outputFilename": "Nom du fichier de sortie",
+          "outputPlaceholder": "bd_fusionnee",
+          "resetFilename": "Réinitialiser au premier nom de fichier",
+          "imageFormat": "Format d'image",
+          "archiveFormat": "Format d'archive",
+          "convertFiles": "Convertir {{count}} fichiers",
+          "processBtn": "Convertir en CBZ/ZIP",
+          "converting": "Conversion en cours...",
+          "error": "Une erreur s'est produite lors de la conversion de votre PDF.",
+          "disclaimer": "Les images sont réencodées pour les réduire, ce qui entraîne une perte de qualité — conservez l'original si besoin. Tout s'exécute dans cet onglet du navigateur ; aucun fichier n'est envoyé."
+        }
       },
       "pdf-to-jpg": {
         "tag": "PDF → JPG",
-        "h1": "Convert PDF pages to JPG",
-        "cardDesc": "Export every page of a PDF as an image, downloaded as a ZIP.",
-        "seoTitle": "Convert PDF to JPG — Free, In Your Browser, No Upload",
-        "seoDesc": "Export PDF pages as JPG images in your browser and download them as a ZIP. Pick the render quality. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in a PDF and every page is rendered to a JPG at the quality you choose, then bundled into a single ZIP download.",
+        "h1": "Convertir des pages PDF en JPG",
+        "cardDesc": "Exportez chaque page d'un PDF sous forme d'image, téléchargée dans un ZIP.",
+        "seoTitle": "Convertir un PDF en JPG — Gratuit, dans votre Navigateur, sans Envoi",
+        "seoDesc": "Exportez des pages de PDF en images JPG dans votre navigateur et téléchargez-les dans un ZIP. Choisissez la qualité de rendu. Sans envoi, sans compte, rien n'est transmis à un serveur.",
+        "intro": "Déposez un PDF : chaque page est rendue en JPG à la qualité que vous choisissez, puis regroupée dans un seul téléchargement ZIP.",
         "sections": [
           {
-            "title": "What it is for",
-            "body": "Pulling pages out as images — for a slide, a reference sheet, an issue report, or any workflow that wants pictures rather than a document. Every page is exported; there is no per-page selection step."
+            "title": "À quoi ça sert",
+            "body": "Extraire des pages sous forme d'images — pour une diapositive, une fiche de référence, un rapport d'incident, ou tout flux de travail qui veut des images plutôt qu'un document. Chaque page est exportée ; il n'y a pas d'étape de sélection page par page."
           },
           {
-            "title": "Choosing quality",
-            "body": "The quality control is the render scale, not just the encoder setting. Higher values render each page larger before encoding, which keeps small text legible at the cost of file size and processing time."
+            "title": "Choisir la qualité",
+            "body": "Le réglage de qualité correspond à l'échelle de rendu, pas seulement au paramètre de l'encodeur. Des valeurs plus élevées rendent chaque page plus grande avant l'encodage, ce qui garde le petit texte lisible au prix de la taille du fichier et du temps de traitement."
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "Rendering uses the PDF engine built into the page and runs entirely in your browser. The file is never uploaded — which is the point if the PDF is a statement, a contract, or anything else you would not paste into a web tool."
+            "title": "Rien ne quitte votre appareil",
+            "body": "Le rendu utilise le moteur PDF intégré à la page et s'exécute entièrement dans votre navigateur. Le fichier n'est jamais envoyé — ce qui est tout l'intérêt si le PDF est un relevé, un contrat, ou tout autre document que vous ne voudriez pas coller dans un outil en ligne."
           }
         ],
         "faq": [
           {
-            "q": "Can I export just one page?",
-            "a": "Not currently — every page is exported and delivered as a ZIP. Extract the one you need from the archive."
+            "q": "Puis-je exporter une seule page ?",
+            "a": "Pas actuellement — toutes les pages sont exportées et livrées dans un ZIP. Extrayez celle dont vous avez besoin de l'archive."
           },
           {
-            "q": "Why JPG and not PNG?",
-            "a": "JPG is dramatically smaller for scanned and photographic pages, which is the common case. For line art or screenshots where you want lossless output, PDF to CBZ preserves more detail."
+            "q": "Pourquoi JPG et pas PNG ?",
+            "a": "Le JPG est nettement plus léger pour les pages scannées et photographiques, ce qui est le cas le plus fréquent. Pour les traits ou les captures d'écran où vous voulez un résultat sans perte, PDF vers CBZ conserve plus de détails."
           },
           {
-            "q": "Does it work on password-protected PDFs?",
-            "a": "No. An encrypted PDF has to be unlocked before anything can render it. SmartDecrypt, a separate app from the same studio, handles that case."
+            "q": "Fonctionne-t-il avec les PDF protégés par mot de passe ?",
+            "a": "Non. Un PDF chiffré doit être déverrouillé avant que quoi que ce soit puisse le rendre. SmartDecrypt, une application distincte du même studio, gère ce cas."
           }
-        ]
+        ],
+        "tool": {
+          "title": "PDF vers JPG",
+          "description": "Rendez chaque page d'un PDF sous forme d'image JPG.",
+          "uploadLabel": "Importer un PDF",
+          "uploadHint": "Sélectionnez un seul fichier PDF",
+          "changeFile": "Changer de fichier",
+          "quality": "Qualité de rendu",
+          "low": "Basse",
+          "medium": "Moyenne",
+          "high": "Haute",
+          "converting": "Conversion en cours…",
+          "convertBtn": "Convertir en JPG",
+          "pagesGenerated": "{{count}} pages générées",
+          "page": "Page {{number}}",
+          "downloadZip": "Tout télécharger en ZIP",
+          "error": "Une erreur s'est produite lors de la conversion de votre PDF.",
+          "disclaimer": "Les pages sont rendues et encodées dans cet onglet du navigateur. Rien n'est envoyé."
+        }
       },
       "qr-generator": {
-        "tag": "QR code",
-        "h1": "Kavita & Komga QR generator",
-        "cardDesc": "Make a setup QR code so the app can connect to your server without typing.",
-        "seoTitle": "Kavita & Komga Setup QR Code Generator",
-        "seoDesc": "Generate a QR code that points BiblioFuse at your Kavita or Komga server, so you do not have to type a URL and API key on a phone. Built in your browser; nothing is sent anywhere.",
-        "intro": "Fill in your server details and get a QR code the app can scan — no typing a long URL and API key on a phone keyboard.",
+        "tag": "Code QR",
+        "h1": "Générateur de QR pour Kavita et Komga",
+        "cardDesc": "Créez un code QR de configuration pour que l'application se connecte à votre serveur sans avoir à taper quoi que ce soit.",
+        "seoTitle": "Générateur de Code QR de Configuration pour Kavita et Komga",
+        "seoDesc": "Générez un code QR qui pointe BiblioFuse vers votre serveur Kavita ou Komga, pour ne pas avoir à taper une URL et une clé API sur un téléphone. Créé dans votre navigateur ; rien n'est envoyé nulle part.",
+        "intro": "Renseignez les informations de votre serveur et obtenez un code QR que l'application peut scanner — sans avoir à taper une longue URL et une clé API sur le clavier d'un téléphone.",
         "sections": [
           {
-            "title": "Why a QR code",
-            "body": "A self-hosted server address plus an API key is a long, error-prone thing to type on a phone. Scanning a code gets both across in one step, correctly, every time."
+            "title": "Pourquoi un code QR",
+            "body": "L'adresse d'un serveur autohébergé associée à une clé API est longue et propice aux erreurs à saisir sur un téléphone. Scanner un code transmet les deux en une seule étape, correctement, à chaque fois."
           },
           {
-            "title": "Your key never leaves the page",
-            "body": "The code is drawn in your browser from the values you type. Nothing is submitted, logged or stored — close the tab and it is gone. The generated image is only as private as wherever you choose to put it, so treat a printed code like the API key it contains."
+            "title": "Votre clé ne quitte jamais la page",
+            "body": "Le code est généré dans votre navigateur à partir des valeurs que vous saisissez. Rien n'est envoyé, journalisé ou stocké — fermez l'onglet et tout disparaît. L'image générée n'est privée qu'autant que l'endroit où vous choisissez de la mettre, donc traitez un code imprimé comme la clé API qu'il contient."
           }
         ],
         "faq": [
           {
-            "q": "Is my API key sent anywhere?",
-            "a": "No. The QR code is generated locally in the page and the values you type are never transmitted or saved. Do bear in mind the finished code contains your key, so anyone who can photograph it can use it."
+            "q": "Ma clé API est-elle envoyée quelque part ?",
+            "a": "Non. Le code QR est généré localement dans la page et les valeurs que vous saisissez ne sont jamais transmises ni enregistrées. Gardez à l'esprit que le code final contient votre clé, donc quiconque peut le photographier peut l'utiliser."
           },
           {
-            "q": "Which servers does this support?",
-            "a": "Kavita and Komga. Pick the service type and the default port fills in; adjust the address if your setup differs."
+            "q": "Quels serveurs cela prend-il en charge ?",
+            "a": "Kavita et Komga. Choisissez le type de service et le port par défaut se remplit ; ajustez l'adresse si votre configuration diffère."
           }
         ]
       }

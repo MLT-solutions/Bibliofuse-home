@@ -247,3 +247,26 @@ Verified locally that the check does not cause a spurious reload when isolation 
 active (the dev server always isolates the whole origin per `vite.config.js`, so this
 class of bug cannot reproduce there at all — confirm any future fix against the *deployed*
 site in a fronted tab, the way this one was).
+
+## Tool pages, tools hub, and QR generator translated into all 10 non-English locales (2026-09-13)
+
+Closes the gap the previous entry left open: `redesign.toolsPages.*` (the 4 wasm tool
+components' UI strings, plus each tool's SEO copy/sections/FAQ), `redesign.toolsHub.*`
+(the `/tools/` hub page, including the "Offline tools for Windows" Microsoft Store card
+section), and `redesign.qrGeneratorPage.*` are now translated into es, fr, nl, pt, ru, zh,
+ja, ko, id, ms — matching the English source's key structure and `{{placeholder}}` tokens
+exactly (verified programmatically, not just spot-checked).
+
+One real gap found and fixed during validation, distinct from the architecture bug above:
+the `zh` batch left `toolsHub.offline.eyebrow` and `.desc` — the "Offline tools for
+Windows" section's heading and description — in English while correctly translating the
+two Store app names' descriptions in the same object. This was the exact live-production
+gap that prompted this pass (`toolsHub.offline` showing English on `bibliofuse.com/zh/`);
+confirmed no other locale had the same gap before merging.
+
+Format acronyms (CBR, DRM, OCR, PNG, JPEG, WebAssembly), brand/product names
+(SmartDecrypt, BiblioFuse Reader, Tailscale), literal example values in placeholder text
+(`http://192.168.0.123:5000`, `sk_live_abc123`), the `qrcode-generator` npm package credit,
+and the `merged_comic`/`merged_book` output-filename placeholders correctly remain in
+Latin script across every locale — flagged once by an automated stray-Latin-script scan
+and dismissed after inspection, not assumed safe.

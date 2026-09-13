@@ -1199,15 +1199,15 @@
       }
     },
     "toolsHub": {
-      "seoTitle": "Free Browser Tools for Comics & Ebooks — CBZ, EPUB, PDF",
-      "seoDesc": "Free tools for comic and ebook files that run entirely in your browser: shrink CBZ archives, compress EPUBs, convert PDF to CBZ or JPG. No upload, no account.",
-      "h1": "Tools",
-      "intro": "Small tools for the file formats BiblioFuse reads. Each one runs entirely inside your browser — the file never leaves your device, and there is nothing to install or sign up for.",
-      "openCta": "Open",
-      "backCta": "All tools",
+      "seoTitle": "面向漫画与电子书的免费浏览器工具——CBZ、EPUB、PDF",
+      "seoDesc": "面向漫画和电子书文件的免费工具，完全在浏览器中运行：压缩 CBZ 压缩包、压缩 EPUB、把 PDF 转换为 CBZ 或 JPG。无需上传，无需账号。",
+      "h1": "工具",
+      "intro": "为 BiblioFuse 支持的文件格式提供的小工具。每一个都完全在你的浏览器中运行——文件不会离开你的设备，也无需安装或注册任何东西。",
+      "openCta": "打开",
+      "backCta": "所有工具",
       "offline": {
-        "eyebrow": "Offline tools for Windows",
-        "desc": "Native Microsoft Store apps for the same jobs, when you would rather not work in a browser.",
+        "eyebrow": "Windows 离线工具",
+        "desc": "适用于相同任务的原生 Microsoft Store 应用，让你无需在浏览器中操作。",
         "platform": "Windows · Microsoft Store",
         "cbzName": "BiblioFuse CBZ Resizer",
         "cbzDesc": "在 Windows 上压缩和合并漫画档案。",
@@ -1217,182 +1217,285 @@
     },
     "toolsPages": {
       "trust": {
-        "local": "Runs on your device",
-        "noUpload": "No upload, no server",
-        "noAccount": "No account, no sign-up"
+        "local": "在你的设备上运行",
+        "noUpload": "无需上传，无需服务器",
+        "noAccount": "无需账号，无需注册"
       },
-      "faqTitle": "Questions",
-      "appPitch": "BiblioFuse reads CBZ, CBR, EPUB, PDF and TXT on iPhone, iPad, Mac, Android and Windows — and streams big libraries straight from your own machine.",
-      "appPitchCta": "See BiblioFuse Reader",
+      "faqTitle": "常见问题",
+      "appPitch": "BiblioFuse 可在 iPhone、iPad、Mac、Android 和 Windows 上阅读 CBZ、CBR、EPUB、PDF 和 TXT 文件——并能直接从你自己的设备串流大型书库。",
+      "appPitchCta": "了解 BiblioFuse 阅读器",
       "cbz-reducer": {
         "tag": "CBZ · ZIP",
-        "h1": "Reduce CBZ file size",
-        "cardDesc": "Shrink comic archives by re-encoding the pages inside, without splitting the volume.",
-        "seoTitle": "Reduce CBZ File Size — Free, In Your Browser, No Upload",
-        "seoDesc": "Compress CBZ and ZIP comic archives in your browser. Re-encodes the pages inside at a resolution and quality you choose. Nothing is uploaded — the whole job runs on your device.",
-        "intro": "Drop in a CBZ or ZIP and it re-encodes every page inside at the size and quality you pick, then hands the archive back. Large scans usually lose most of their weight with no visible difference on a phone screen.",
+        "h1": "压缩或合并 CBZ 文件",
+        "cardDesc": "通过重新编码内部页面来缩小漫画压缩包体积，或将多卷合并为一个文件。",
+        "seoTitle": "压缩或合并 CBZ 文件——免费，在浏览器中完成，无需上传",
+        "seoDesc": "在浏览器中压缩 CBZ 和 ZIP 漫画压缩包，或将多个文件合并为一个。不会上传任何内容——全部处理都在你的设备上完成。",
+        "intro": "放入一个 CBZ 或 ZIP 文件，它会按你选择的尺寸和画质重新编码内部的每一页，然后把压缩包还给你。较大的扫描件通常能大幅减重，而在手机屏幕上看不出明显差别。添加多个文件并切换到合并模式，即可得到一个合并后的压缩包。",
         "sections": [
           {
-            "title": "Why comic archives get so big",
-            "body": "A CBZ is just a ZIP full of page images. Scans are often stored at print resolution — 3000px wide or more — which is far beyond what any phone or tablet can display. Re-encoding those pages to the resolution you actually read at is usually where the savings come from, not the archive format."
+            "title": "漫画压缩包为什么会这么大",
+            "body": "CBZ 其实就是装满页面图片的 ZIP 压缩包。扫描件通常以印刷分辨率保存——宽度达 3000 像素甚至更高——这远远超出了任何手机或平板电脑的显示能力。把这些页面重新编码到你实际阅读时所需的分辨率，通常才是节省空间的关键所在，而不是压缩包格式本身。"
           },
           {
-            "title": "What the settings do",
-            "body": "Shortest-dimension resolution caps the smaller side of each page, so tall pages and spreads scale consistently. Quality controls the encoder. Grayscale drops colour channels entirely, which helps a lot on black-and-white manga and nothing at all on colour comics."
+            "title": "各项设置的作用",
+            "body": "「最短边分辨率」限制每页较短一边的尺寸，这样竖版页面和跨页也能按统一比例缩放。「画质」控制编码器的输出质量。「灰度」会完全去除颜色通道，这对黑白漫画帮助很大，但对彩色漫画则毫无作用。"
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "The archive is opened, re-encoded and rebuilt inside your browser using WebAssembly. There is no upload step, no queue and no server that ever sees the file — which also means it works on files you would not want to hand to a web service."
+            "title": "所有处理都在你的设备上完成",
+            "body": "压缩包会在你的浏览器中被打开、重新编码并重新打包，使用的是浏览器内置的 WASM 技术。整个过程没有上传步骤、没有排队，也没有任何服务器会看到你的文件——这意味着即使是你不愿交给网络服务处理的文件，也可以放心使用。"
           }
         ],
         "faq": [
           {
-            "q": "Will this ruin the image quality?",
-            "a": "Only if you tell it to. The default settings target the resolution a phone or tablet actually renders at, which is well below what most scans are stored at, so the visible result is usually identical. If you archive at print quality, raise the resolution cap or leave the file alone."
+            "q": "它能把多个 CBZ 文件合并成一个吗？",
+            "a": "可以。添加所有文件，把处理模式从「批量」切换为「合并」，再命名输出文件——你就会得到一个按文件顺序排列页面的单一压缩包。非常适合把下载的各个章节合并成一卷。批量模式则会保留各个文件独立，只是分别压缩每一个。"
           },
           {
-            "q": "Does it work on CBR or RAR files?",
-            "a": "No — CBR is a RAR archive, and RAR cannot be opened in the browser for licensing reasons. Convert to CBZ first, or use the BiblioFuse app, which reads CBR directly."
+            "q": "这会破坏图片画质吗？",
+            "a": "只有在你主动设置的情况下才会。默认设置针对的是手机或平板实际渲染时使用的分辨率，远低于大多数扫描件的原始存储分辨率，因此看到的效果通常没有差别。如果你是为了以印刷画质存档，可以调高分辨率上限，或者干脆不处理该文件。"
           },
           {
-            "q": "Is there a file size limit?",
-            "a": "The limit is your device's memory, not a server quota, because the work happens locally. Very large volumes are fine on a desktop; a phone with several hundred megabytes of pages may run out of room."
+            "q": "它支持 CBR 或 RAR 文件吗？",
+            "a": "不支持——CBR 本质上是 RAR 压缩包，而出于授权原因，RAR 无法在浏览器中打开。请先转换为 CBZ，或使用可以直接读取 CBR 的 BiblioFuse 应用。"
+          },
+          {
+            "q": "文件大小有限制吗？",
+            "a": "限制取决于你设备的内存，而不是服务器配额，因为所有处理都在本地完成。在台式机上处理超大卷通常没问题；但如果手机上的页面加起来有几百兆字节，可能会遇到空间不足的情况。"
           }
-        ]
+        ],
+        "tool": {
+          "title": "CBZ/ZIP 压缩工具",
+          "description": "压缩或合并 CBZ 和 ZIP 压缩包。图片会被优化以缩小文件体积。",
+          "uploadLabel": "上传 ZIP、CBZ 或图片",
+          "uploadHint": "将文件拖放到此处",
+          "filesReady": "文件已就绪",
+          "itemsSelected": "已选择 {{count}} 项",
+          "moveUp": "上移",
+          "moveDown": "下移",
+          "remove": "移除",
+          "settings": "压缩设置",
+          "maxSize": "最短边分辨率",
+          "grayscale": "灰度图片",
+          "processingMode": "处理模式",
+          "batch": "批量",
+          "merge": "合并",
+          "outputFilename": "输出文件名",
+          "outputPlaceholder": "merged_comic",
+          "resetFilename": "重置为第一个文件名",
+          "imageFormat": "图片格式",
+          "archiveFormat": "压缩包格式",
+          "convertFiles": "转换 {{count}} 个文件",
+          "processBtn": "处理并下载",
+          "error": "处理文件时发生错误。",
+          "disclaimer": "图片会被重新编码以缩小体积，这是有损压缩——如有需要请保留原始文件。所有处理都在此浏览器标签页中完成，不会上传任何文件。"
+        }
       },
       "epub-reducer": {
         "tag": "EPUB",
-        "h1": "Compress an EPUB",
-        "cardDesc": "Re-encode the images inside an EPUB so it syncs and stores smaller.",
-        "seoTitle": "Compress EPUB Files — Free, In Your Browser, No Upload",
-        "seoDesc": "Shrink EPUB files by re-encoding the images inside them, in your browser. Text and structure are left untouched. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in an EPUB and it re-encodes the images inside — covers, illustrations, embedded scans — while leaving the text, structure and metadata exactly as they were.",
+        "h1": "压缩或合并 EPUB 文件",
+        "cardDesc": "重新编码 EPUB 内部的图片，使其同步和存储时体积更小，或将多本书合并为一本。",
+        "seoTitle": "压缩或合并 EPUB 文件——免费，在浏览器中完成，无需上传",
+        "seoDesc": "通过重新编码 EPUB 内部图片来缩小文件体积，或在浏览器中将多个 EPUB 合并成一本书。文字和结构保持不变。无需上传，无需账号。",
+        "intro": "放入一个 EPUB 文件，它会重新编码其中的图片——封面、插图、内嵌扫描件——同时让文字、结构和元数据完全保持原样。添加多个文件并开启合并功能，即可将它们合并为一本书。",
         "sections": [
           {
-            "title": "It is almost always the images",
-            "body": "The text in a novel-length EPUB is tiny — often under a megabyte. When an EPUB is large, it is because of embedded images stored at far higher resolution than any reader will display. Re-encoding those is where the size goes."
+            "title": "问题几乎总是出在图片上",
+            "body": "一本小说篇幅的 EPUB，其文字内容通常很小——往往不到一兆字节。当一个 EPUB 文件很大时，原因通常是内嵌图片的存储分辨率远高于任何阅读器实际显示所需的水平。重新编码这些图片，才是体积减小的关键。"
           },
           {
-            "title": "What is left alone",
-            "body": "Chapter structure, table of contents, metadata and the text itself are untouched — they are copied through unchanged. Only the image files inside the archive are re-encoded, so the book opens and navigates exactly as before."
+            "title": "哪些内容不会被改动",
+            "body": "章节结构、目录、元数据以及文字本身都不会被改动——它们会被原样复制过去。只有压缩包内的图片文件会被重新编码，因此书籍的打开和导航方式与之前完全一致。"
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "The EPUB is unpacked, processed and repacked inside your browser. No copy is uploaded, which matters for books you own but would rather not hand to a web service."
+            "title": "所有处理都在你的设备上完成",
+            "body": "EPUB 文件会在你的浏览器中被解包、处理并重新打包。不会上传任何副本——对于你拥有但不想交给网络服务处理的书籍来说，这一点很重要。"
           }
         ],
         "faq": [
           {
-            "q": "Will it break DRM-protected books?",
-            "a": "It cannot open them at all. DRM-protected EPUBs are encrypted, so there is nothing to re-encode. This works on DRM-free files only."
+            "q": "它能把多个 EPUB 合并成一本书吗？",
+            "a": "可以。添加两个或更多文件并开启合并功能，然后命名输出文件。各章节会按文件顺序保留，最终得到一本标准的 EPUB，这对于分批发布的连载作品非常实用。"
           },
           {
-            "q": "Does the text get compressed too?",
-            "a": "No. Text is copied through untouched — it is a negligible share of the file size and re-encoding it would risk breaking the book's structure for no gain."
+            "q": "它会破解有 DRM 保护的电子书吗？",
+            "a": "它根本无法打开这些文件。受 DRM 保护的 EPUB 是加密的，因此没有内容可供重新编码。此工具仅适用于无 DRM 的文件。"
           },
           {
-            "q": "Will my reader still open it?",
-            "a": "Yes. The output is a standard EPUB with the same structure and metadata as the input; only the image files inside are smaller."
+            "q": "文字内容也会被压缩吗？",
+            "a": "不会。文字会原样复制，不做任何改动——文字在文件体积中所占比例微不足道，重新编码反而可能破坏书籍结构却毫无收益。"
+          },
+          {
+            "q": "我的阅读器还能正常打开它吗？",
+            "a": "可以。输出结果是一个标准 EPUB，结构和元数据与输入文件相同；只是内部的图片文件变小了。"
           }
-        ]
+        ],
+        "tool": {
+          "title": "EPUB 压缩工具",
+          "description": "压缩或合并 EPUB 文件。图片会被转换为优化过的 JPG 以缩小体积。",
+          "uploadLabel": "上传 EPUB 文件",
+          "uploadHint": "将 EPUB 文件拖放到此处",
+          "filesReady": "文件已就绪",
+          "itemsSelected": "已选择 {{count}} 个文件",
+          "moveUp": "上移",
+          "moveDown": "下移",
+          "remove": "移除",
+          "settings": "压缩设置",
+          "maxSize": "最大图片尺寸",
+          "grayscale": "灰度图片",
+          "processingMode": "处理模式",
+          "batch": "批量",
+          "merge": "合并",
+          "mergeLabel": "合并为一本书",
+          "outputFilename": "输出文件名",
+          "outputPlaceholder": "merged_book",
+          "resetFilename": "重置为第一个文件名",
+          "processBtn": "处理并下载",
+          "error": "处理 EPUB 文件时发生错误。",
+          "disclaimer": "图片会被重新编码以缩小体积，这是有损压缩——如有需要请保留原始文件。所有处理都在此浏览器标签页中完成，不会上传任何文件。"
+        }
       },
       "pdf-to-cbz": {
         "tag": "PDF → CBZ",
-        "h1": "Convert PDF to CBZ",
-        "cardDesc": "Turn a PDF comic into a CBZ so comic readers can page through it properly.",
-        "seoTitle": "Convert PDF to CBZ — Free, In Your Browser, No Upload",
-        "seoDesc": "Convert PDF comics and scans to CBZ in your browser. Each page is rendered to an image and packed into a comic archive. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in a PDF and every page is rendered to an image and packed into a CBZ, so comic readers can treat it as a proper page-by-page volume instead of a document.",
+        "h1": "将 PDF 转换为 CBZ",
+        "cardDesc": "把 PDF 漫画转换成 CBZ，方便漫画阅读器正确翻页显示。",
+        "seoTitle": "将 PDF 转换为 CBZ——免费，在浏览器中完成，无需上传",
+        "seoDesc": "在浏览器中把 PDF 漫画和扫描件转换为 CBZ。每一页都会被渲染成图片并打包成漫画压缩包。无需上传，无需账号，不会发送到任何服务器。",
+        "intro": "放入一个 PDF 文件，每一页都会被渲染成图片并打包成 CBZ，这样漫画阅读器就能把它当作真正的逐页卷来处理，而不是一份文档。",
         "sections": [
           {
-            "title": "Why convert at all",
-            "body": "PDF is a document format. Comic readers built around CBZ get page-spread detection, reading direction, thumbnail grids and per-page bookmarks — features a PDF viewer generally does not offer for scanned comics."
+            "title": "为什么需要转换",
+            "body": "PDF 是一种文档格式。围绕 CBZ 构建的漫画阅读器支持跨页检测、阅读方向、缩略图网格和逐页书签——这些功能是 PDF 阅读器通常不会为扫描漫画提供的。"
           },
           {
-            "title": "What you get out",
-            "body": "A standard CBZ: a ZIP of sequentially numbered page images. Pages are rendered at 2× scale so text and line art stay sharp when you zoom, then encoded to a web-friendly format."
+            "title": "你会得到什么",
+            "body": "一个标准的 CBZ：一个包含按顺序编号的页面图片的 ZIP 压缩包。页面会以 2 倍比例渲染，让文字和线条在放大时依然清晰，然后编码为适合网页显示的格式。"
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "Rendering and packing both happen in your browser. The PDF is never uploaded, so this is safe to use on scans and documents you would not want to put through a web service."
+            "title": "所有处理都在你的设备上完成",
+            "body": "渲染和打包都在你的浏览器中完成。PDF 文件从不会被上传，因此即使是你不愿交给网络服务处理的扫描件和文档，也可以放心使用。"
           }
         ],
         "faq": [
           {
-            "q": "Does the text stay searchable?",
-            "a": "No. CBZ is an image format by definition, so any selectable text in the PDF becomes part of the page image. If you need text search, keep the PDF — or read it in BiblioFuse, which can OCR pages on device."
+            "q": "文字还能被搜索到吗？",
+            "a": "不能。CBZ 本质上是一种图片格式，因此 PDF 中任何可选中的文字都会成为页面图片的一部分。如果你需要文字搜索功能，请保留 PDF——或者在 BiblioFuse 中阅读它，它可以在设备上对页面进行 OCR 识别。"
           },
           {
-            "q": "What resolution are the pages rendered at?",
-            "a": "2× the PDF's native page size, which keeps line art and lettering sharp when zoomed. Larger PDFs therefore take longer and use more memory."
+            "q": "页面会以多高的分辨率渲染？",
+            "a": "PDF 原始页面尺寸的 2 倍，这样在放大时线条图和文字依然清晰。因此较大的 PDF 处理时间更长，占用的内存也更多。"
           },
           {
-            "q": "Can it convert back the other way?",
-            "a": "Not here — this direction covers the common case of a PDF that ought to be a comic. The BiblioFuse app handles CBZ to PDF on device."
+            "q": "它能反向转换吗？",
+            "a": "这里不支持——这个方向针对的是应该以漫画形式呈现的 PDF 这一常见情况。BiblioFuse 应用可以在设备上处理从 CBZ 转 PDF。"
           }
-        ]
+        ],
+        "tool": {
+          "title": "PDF 转图片 CBZ/ZIP",
+          "description": "将 PDF 文档转换为高质量的 CBZ 或 ZIP 图片压缩包。每一页都会变成一张高质量 JPG 图片。",
+          "uploadLabel": "上传 PDF 文件",
+          "uploadHint": "将 PDF 文件拖放到此处",
+          "filesReady": "文件已就绪",
+          "itemsSelected": "已选择 {{count}} 项",
+          "moveUp": "上移",
+          "moveDown": "下移",
+          "remove": "移除",
+          "settings": "设置",
+          "maxSize": "最短边分辨率",
+          "grayscale": "灰度",
+          "processingMode": "处理模式",
+          "batch": "批量",
+          "merge": "合并",
+          "outputFilename": "输出文件名",
+          "outputPlaceholder": "merged_comic",
+          "resetFilename": "重置为第一个文件名",
+          "imageFormat": "图片格式",
+          "archiveFormat": "压缩包格式",
+          "convertFiles": "转换 {{count}} 个文件",
+          "processBtn": "转换为 CBZ/ZIP",
+          "converting": "转换中……",
+          "error": "转换 PDF 时发生错误。",
+          "disclaimer": "图片会被重新编码以缩小体积，这是有损压缩——如有需要请保留原始文件。所有处理都在此浏览器标签页中完成，不会上传任何文件。"
+        }
       },
       "pdf-to-jpg": {
         "tag": "PDF → JPG",
-        "h1": "Convert PDF pages to JPG",
-        "cardDesc": "Export every page of a PDF as an image, downloaded as a ZIP.",
-        "seoTitle": "Convert PDF to JPG — Free, In Your Browser, No Upload",
-        "seoDesc": "Export PDF pages as JPG images in your browser and download them as a ZIP. Pick the render quality. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in a PDF and every page is rendered to a JPG at the quality you choose, then bundled into a single ZIP download.",
+        "h1": "将 PDF 页面转换为 JPG",
+        "cardDesc": "导出 PDF 的每一页为图片，并打包为 ZIP 下载。",
+        "seoTitle": "将 PDF 转换为 JPG——免费，在浏览器中完成，无需上传",
+        "seoDesc": "在浏览器中把 PDF 页面导出为 JPG 图片，并打包为 ZIP 下载。可自选渲染画质。无需上传，无需账号，不会发送到任何服务器。",
+        "intro": "放入一个 PDF 文件，每一页都会按你选择的画质渲染为 JPG，然后打包成一个 ZIP 供下载。",
         "sections": [
           {
-            "title": "What it is for",
-            "body": "Pulling pages out as images — for a slide, a reference sheet, an issue report, or any workflow that wants pictures rather than a document. Every page is exported; there is no per-page selection step."
+            "title": "适用场景",
+            "body": "把页面提取成图片——用于幻灯片、参考资料、问题反馈，或任何需要图片而非文档的流程。每一页都会被导出，没有逐页选择的步骤。"
           },
           {
-            "title": "Choosing quality",
-            "body": "The quality control is the render scale, not just the encoder setting. Higher values render each page larger before encoding, which keeps small text legible at the cost of file size and processing time."
+            "title": "如何选择画质",
+            "body": "画质选项控制的是渲染比例，而不仅仅是编码器设置。数值越高，编码前页面渲染的尺寸就越大，这样小字也能保持清晰，但代价是文件体积更大、处理时间更长。"
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "Rendering uses the PDF engine built into the page and runs entirely in your browser. The file is never uploaded — which is the point if the PDF is a statement, a contract, or anything else you would not paste into a web tool."
+            "title": "所有处理都在你的设备上完成",
+            "body": "渲染使用的是页面内置的 PDF 引擎，完全在你的浏览器中运行。文件从不会被上传——如果这份 PDF 是账单、合同，或任何你不愿粘贴到网络工具中的内容，这一点尤为重要。"
           }
         ],
         "faq": [
           {
-            "q": "Can I export just one page?",
-            "a": "Not currently — every page is exported and delivered as a ZIP. Extract the one you need from the archive."
+            "q": "我能只导出一页吗？",
+            "a": "目前不行——所有页面都会被导出并打包为 ZIP。你可以从压缩包中提取你需要的那一页。"
           },
           {
-            "q": "Why JPG and not PNG?",
-            "a": "JPG is dramatically smaller for scanned and photographic pages, which is the common case. For line art or screenshots where you want lossless output, PDF to CBZ preserves more detail."
+            "q": "为什么是 JPG 而不是 PNG？",
+            "a": "对于扫描件和照片类页面（也是最常见的情况），JPG 的体积要小得多。如果是线条图或截图，需要无损输出，可以使用 PDF 转 CBZ 来保留更多细节。"
           },
           {
-            "q": "Does it work on password-protected PDFs?",
-            "a": "No. An encrypted PDF has to be unlocked before anything can render it. SmartDecrypt, a separate app from the same studio, handles that case."
+            "q": "它支持有密码保护的 PDF 吗？",
+            "a": "不支持。加密的 PDF 必须先解锁，才能被渲染。同一工作室推出的另一款应用 SmartDecrypt 可以处理这种情况。"
           }
-        ]
+        ],
+        "tool": {
+          "title": "PDF 转 JPG",
+          "description": "将 PDF 的每一页渲染为 JPG 图片。",
+          "uploadLabel": "上传一个 PDF 文件",
+          "uploadHint": "选择单个 PDF 文件",
+          "changeFile": "更换文件",
+          "quality": "渲染画质",
+          "low": "低",
+          "medium": "中",
+          "high": "高",
+          "converting": "转换中……",
+          "convertBtn": "转换为 JPG",
+          "pagesGenerated": "已生成 {{count}} 页",
+          "page": "第 {{number}} 页",
+          "downloadZip": "下载全部为 ZIP",
+          "error": "转换 PDF 时发生错误。",
+          "disclaimer": "页面会在此浏览器标签页中渲染并编码。不会上传任何内容。"
+        }
       },
       "qr-generator": {
-        "tag": "QR code",
-        "h1": "Kavita & Komga QR generator",
-        "cardDesc": "Make a setup QR code so the app can connect to your server without typing.",
-        "seoTitle": "Kavita & Komga Setup QR Code Generator",
-        "seoDesc": "Generate a QR code that points BiblioFuse at your Kavita or Komga server, so you do not have to type a URL and API key on a phone. Built in your browser; nothing is sent anywhere.",
-        "intro": "Fill in your server details and get a QR code the app can scan — no typing a long URL and API key on a phone keyboard.",
+        "tag": "二维码",
+        "h1": "Kavita 与 Komga 二维码生成器",
+        "cardDesc": "生成一个设置二维码，让应用无需手动输入即可连接到你的服务器。",
+        "seoTitle": "Kavita 与 Komga 设置二维码生成器",
+        "seoDesc": "生成一个二维码，让 BiblioFuse 直接指向你的 Kavita 或 Komga 服务器，这样你就不必在手机上手动输入网址和 API 密钥。在你的浏览器中生成，不会发送到任何地方。",
+        "intro": "填写你的服务器信息，即可获得一个应用可以扫描的二维码——无需在手机键盘上输入冗长的网址和 API 密钥。",
         "sections": [
           {
-            "title": "Why a QR code",
-            "body": "A self-hosted server address plus an API key is a long, error-prone thing to type on a phone. Scanning a code gets both across in one step, correctly, every time."
+            "title": "为什么使用二维码",
+            "body": "自建服务器的地址加上一个 API 密钥，在手机上输入起来又长又容易出错。扫描二维码可以一步准确传递这两项信息，每次都不会出错。"
           },
           {
-            "title": "Your key never leaves the page",
-            "body": "The code is drawn in your browser from the values you type. Nothing is submitted, logged or stored — close the tab and it is gone. The generated image is only as private as wherever you choose to put it, so treat a printed code like the API key it contains."
+            "title": "你的密钥不会离开这个页面",
+            "body": "二维码是根据你输入的内容在浏览器中绘制的。不会有任何内容被提交、记录或保存——关闭标签页，它就消失了。生成的图片的私密程度取决于你把它放在哪里，所以请像对待它所包含的 API 密钥一样对待打印出来的二维码。"
           }
         ],
         "faq": [
           {
-            "q": "Is my API key sent anywhere?",
-            "a": "No. The QR code is generated locally in the page and the values you type are never transmitted or saved. Do bear in mind the finished code contains your key, so anyone who can photograph it can use it."
+            "q": "我的 API 密钥会被发送到别处吗？",
+            "a": "不会。二维码是在页面本地生成的，你输入的内容从不会被传输或保存。但请记住，生成的二维码本身包含你的密钥，任何能拍下它的人都可以使用这个密钥。"
           },
           {
-            "q": "Which servers does this support?",
-            "a": "Kavita and Komga. Pick the service type and the default port fills in; adjust the address if your setup differs."
+            "q": "支持哪些服务器？",
+            "a": "Kavita 和 Komga。选择服务类型后，默认端口会自动填入；如果你的设置不同，可以自行调整地址。"
           }
         ]
       }

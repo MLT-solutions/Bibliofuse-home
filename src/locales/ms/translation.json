@@ -1199,15 +1199,15 @@
       }
     },
     "toolsHub": {
-      "seoTitle": "Free Browser Tools for Comics & Ebooks — CBZ, EPUB, PDF",
-      "seoDesc": "Free tools for comic and ebook files that run entirely in your browser: shrink CBZ archives, compress EPUBs, convert PDF to CBZ or JPG. No upload, no account.",
-      "h1": "Tools",
-      "intro": "Small tools for the file formats BiblioFuse reads. Each one runs entirely inside your browser — the file never leaves your device, and there is nothing to install or sign up for.",
-      "openCta": "Open",
-      "backCta": "All tools",
+      "seoTitle": "Alat Pelayar Percuma untuk Komik & Ebook — CBZ, EPUB, PDF",
+      "seoDesc": "Alat percuma untuk fail komik dan ebook yang berjalan sepenuhnya dalam pelayar anda: kecilkan arkib CBZ, mampatkan EPUB, tukar PDF kepada CBZ atau JPG. Tiada muat naik, tiada akaun.",
+      "h1": "Alat",
+      "intro": "Alat kecil untuk format fail yang dibaca oleh BiblioFuse. Setiap satu berjalan sepenuhnya dalam pelayar anda — fail tidak pernah meninggalkan peranti anda, dan tiada apa-apa perlu dipasang atau didaftarkan.",
+      "openCta": "Buka",
+      "backCta": "Semua alat",
       "offline": {
-        "eyebrow": "Offline tools for Windows",
-        "desc": "Native Microsoft Store apps for the same jobs, when you would rather not work in a browser.",
+        "eyebrow": "Alat luar talian untuk Windows",
+        "desc": "Aplikasi Microsoft Store native untuk tugas yang sama, jika anda lebih suka tidak bekerja dalam pelayar.",
         "platform": "Windows · Microsoft Store",
         "cbzName": "BiblioFuse CBZ Resizer",
         "cbzDesc": "Mampatkan dan gabungkan arkib komik pada Windows.",
@@ -1217,182 +1217,285 @@
     },
     "toolsPages": {
       "trust": {
-        "local": "Runs on your device",
-        "noUpload": "No upload, no server",
-        "noAccount": "No account, no sign-up"
+        "local": "Berjalan pada peranti anda",
+        "noUpload": "Tiada muat naik, tiada pelayan",
+        "noAccount": "Tiada akaun, tiada pendaftaran"
       },
-      "faqTitle": "Questions",
-      "appPitch": "BiblioFuse reads CBZ, CBR, EPUB, PDF and TXT on iPhone, iPad, Mac, Android and Windows — and streams big libraries straight from your own machine.",
-      "appPitchCta": "See BiblioFuse Reader",
+      "faqTitle": "Soalan",
+      "appPitch": "BiblioFuse boleh membaca CBZ, CBR, EPUB, PDF dan TXT pada iPhone, iPad, Mac, Android dan Windows — serta menstrim pustaka besar terus dari peranti anda sendiri.",
+      "appPitchCta": "Lihat BiblioFuse Reader",
       "cbz-reducer": {
         "tag": "CBZ · ZIP",
-        "h1": "Reduce CBZ file size",
-        "cardDesc": "Shrink comic archives by re-encoding the pages inside, without splitting the volume.",
-        "seoTitle": "Reduce CBZ File Size — Free, In Your Browser, No Upload",
-        "seoDesc": "Compress CBZ and ZIP comic archives in your browser. Re-encodes the pages inside at a resolution and quality you choose. Nothing is uploaded — the whole job runs on your device.",
-        "intro": "Drop in a CBZ or ZIP and it re-encodes every page inside at the size and quality you pick, then hands the archive back. Large scans usually lose most of their weight with no visible difference on a phone screen.",
+        "h1": "Mampatkan atau gabungkan fail CBZ",
+        "cardDesc": "Kecilkan arkib komik dengan mengekod semula halaman di dalamnya, atau gabungkan beberapa jilid menjadi satu.",
+        "seoTitle": "Mampatkan atau Gabungkan Fail CBZ — Percuma, Dalam Pelayar Anda, Tiada Muat Naik",
+        "seoDesc": "Mampatkan arkib komik CBZ dan ZIP, atau gabungkan beberapa fail menjadi satu fail, dalam pelayar anda. Tiada apa-apa dimuat naik — keseluruhan proses berjalan pada peranti anda.",
+        "intro": "Masukkan fail CBZ atau ZIP dan ia akan mengekod semula setiap halaman di dalamnya mengikut saiz dan kualiti yang anda pilih, kemudian mengembalikan arkib tersebut kepada anda. Imbasan besar biasanya kehilangan sebahagian besar beratnya tanpa perbezaan yang kelihatan pada skrin telefon. Tambah beberapa fail dan tukar ke mod gabung untuk mendapatkan satu arkib gabungan.",
         "sections": [
           {
-            "title": "Why comic archives get so big",
-            "body": "A CBZ is just a ZIP full of page images. Scans are often stored at print resolution — 3000px wide or more — which is far beyond what any phone or tablet can display. Re-encoding those pages to the resolution you actually read at is usually where the savings come from, not the archive format."
+            "title": "Mengapa arkib komik menjadi begitu besar",
+            "body": "CBZ hanyalah fail ZIP yang penuh dengan imej halaman. Imbasan sering disimpan pada resolusi cetakan — lebar 3000 piksel atau lebih — yang jauh melebihi apa yang boleh dipaparkan oleh mana-mana telefon atau tablet. Mengekod semula halaman-halaman itu kepada resolusi yang benar-benar anda gunakan untuk membaca biasanya menjadi punca penjimatan, bukan format arkib itu sendiri."
           },
           {
-            "title": "What the settings do",
-            "body": "Shortest-dimension resolution caps the smaller side of each page, so tall pages and spreads scale consistently. Quality controls the encoder. Grayscale drops colour channels entirely, which helps a lot on black-and-white manga and nothing at all on colour comics."
+            "title": "Fungsi setiap tetapan",
+            "body": "Resolusi sisi terpendek mengehadkan sisi yang lebih pendek pada setiap halaman, supaya halaman tinggi dan halaman rebak turut diskalakan secara konsisten. Kualiti mengawal pengekod. Skala kelabu membuang sepenuhnya saluran warna, yang sangat membantu untuk manga hitam-putih tetapi tiada kesan langsung pada komik berwarna."
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "The archive is opened, re-encoded and rebuilt inside your browser using WebAssembly. There is no upload step, no queue and no server that ever sees the file — which also means it works on files you would not want to hand to a web service."
+            "title": "Tiada apa-apa meninggalkan peranti anda",
+            "body": "Arkib dibuka, dikod semula dan dibina semula di dalam pelayar anda menggunakan teknologi WASM. Tiada langkah muat naik, tiada baris gilir, dan tiada pelayan yang pernah melihat fail anda — ini juga bermakna ia selamat digunakan untuk fail yang anda tidak mahu serahkan kepada perkhidmatan web."
           }
         ],
         "faq": [
           {
-            "q": "Will this ruin the image quality?",
-            "a": "Only if you tell it to. The default settings target the resolution a phone or tablet actually renders at, which is well below what most scans are stored at, so the visible result is usually identical. If you archive at print quality, raise the resolution cap or leave the file alone."
+            "q": "Bolehkah ia menggabungkan beberapa fail CBZ menjadi satu?",
+            "a": "Boleh. Tambah semua fail, tukar mod pemprosesan daripada kelompok kepada gabung, dan namakan fail output — anda akan mendapat satu arkib dengan halaman mengikut urutan fail. Berguna untuk menggabungkan bab yang dimuat turun menjadi satu jilid. Mod kelompok mengekalkan fail berasingan dan hanya mengecilkan setiap satu."
           },
           {
-            "q": "Does it work on CBR or RAR files?",
-            "a": "No — CBR is a RAR archive, and RAR cannot be opened in the browser for licensing reasons. Convert to CBZ first, or use the BiblioFuse app, which reads CBR directly."
+            "q": "Adakah ini akan merosakkan kualiti imej?",
+            "a": "Hanya jika anda mengarahkannya berbuat demikian. Tetapan lalai menyasarkan resolusi yang sebenarnya dipaparkan oleh telefon atau tablet, yang jauh lebih rendah daripada resolusi penyimpanan kebanyakan imbasan, jadi hasil yang kelihatan biasanya sama. Jika anda mengarkibkan pada kualiti cetakan, naikkan had resolusi atau biarkan fail tersebut tanpa diubah."
           },
           {
-            "q": "Is there a file size limit?",
-            "a": "The limit is your device's memory, not a server quota, because the work happens locally. Very large volumes are fine on a desktop; a phone with several hundred megabytes of pages may run out of room."
+            "q": "Adakah ia berfungsi pada fail CBR atau RAR?",
+            "a": "Tidak — CBR ialah arkib RAR, dan RAR tidak boleh dibuka dalam pelayar atas sebab lesen. Tukar kepada CBZ dahulu, atau gunakan aplikasi BiblioFuse yang boleh membaca CBR secara terus."
+          },
+          {
+            "q": "Adakah terdapat had saiz fail?",
+            "a": "Hadnya ialah memori peranti anda, bukan kuota pelayan, kerana kerja berlaku secara setempat. Jilid yang sangat besar tiada masalah pada komputer meja; telefon dengan halaman berjumlah beberapa ratus megabait mungkin kehabisan ruang."
           }
-        ]
+        ],
+        "tool": {
+          "title": "Pemampat CBZ/ZIP",
+          "description": "Mampatkan atau Gabungkan arkib CBZ dan ZIP. Imej dioptimumkan untuk mengecilkan saiz fail.",
+          "uploadLabel": "Muat Naik ZIP, CBZ atau Imej",
+          "uploadHint": "Seret & lepaskan fail anda di sini",
+          "filesReady": "Fail Sedia",
+          "itemsSelected": "{{count}} item dipilih",
+          "moveUp": "Alih Naik",
+          "moveDown": "Alih Turun",
+          "remove": "Buang",
+          "settings": "Tetapan Mampatan",
+          "maxSize": "Resolusi Sisi Terpendek",
+          "grayscale": "Imej Skala Kelabu",
+          "processingMode": "Mod Pemprosesan",
+          "batch": "Kelompok",
+          "merge": "Gabung",
+          "outputFilename": "Nama Fail Output",
+          "outputPlaceholder": "merged_comic",
+          "resetFilename": "Tetapkan semula kepada nama fail pertama",
+          "imageFormat": "Format Imej",
+          "archiveFormat": "Format Arkib",
+          "convertFiles": "Tukar {{count}} Fail",
+          "processBtn": "Proses & Muat Turun",
+          "error": "Ralat berlaku semasa memproses fail anda.",
+          "disclaimer": "Imej dikod semula untuk mengecilkannya, yang bersifat lossy — simpan fail asal anda jika diperlukan. Semuanya berjalan dalam tab pelayar ini; tiada fail dimuat naik."
+        }
       },
       "epub-reducer": {
         "tag": "EPUB",
-        "h1": "Compress an EPUB",
-        "cardDesc": "Re-encode the images inside an EPUB so it syncs and stores smaller.",
-        "seoTitle": "Compress EPUB Files — Free, In Your Browser, No Upload",
-        "seoDesc": "Shrink EPUB files by re-encoding the images inside them, in your browser. Text and structure are left untouched. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in an EPUB and it re-encodes the images inside — covers, illustrations, embedded scans — while leaving the text, structure and metadata exactly as they were.",
+        "h1": "Mampatkan atau gabungkan fail EPUB",
+        "cardDesc": "Ekod semula imej di dalam EPUB supaya ia lebih kecil semasa disegerakkan dan disimpan, atau gabungkan beberapa buku menjadi satu.",
+        "seoTitle": "Mampatkan atau Gabungkan Fail EPUB — Percuma, Dalam Pelayar Anda, Tiada Muat Naik",
+        "seoDesc": "Kecilkan fail EPUB dengan mengekod semula imej di dalamnya, atau gabungkan beberapa EPUB menjadi satu buku, dalam pelayar anda. Teks dan struktur dikekalkan tanpa diubah. Tiada muat naik, tiada akaun.",
+        "intro": "Masukkan fail EPUB dan ia akan mengekod semula imej di dalamnya — kulit buku, ilustrasi, imbasan terbenam — sambil mengekalkan teks, struktur dan metadata seperti asal. Tambah lebih daripada satu fail dan hidupkan gabung untuk menggabungkannya menjadi satu buku.",
         "sections": [
           {
-            "title": "It is almost always the images",
-            "body": "The text in a novel-length EPUB is tiny — often under a megabyte. When an EPUB is large, it is because of embedded images stored at far higher resolution than any reader will display. Re-encoding those is where the size goes."
+            "title": "Ia hampir selalu disebabkan oleh imej",
+            "body": "Teks dalam EPUB sepanjang novel adalah sangat kecil — selalunya kurang daripada satu megabait. Apabila sesebuah EPUB besar, ia disebabkan oleh imej terbenam yang disimpan pada resolusi jauh lebih tinggi daripada apa yang akan dipaparkan oleh mana-mana pembaca. Mengekod semula imej itulah yang mengurangkan saiznya."
           },
           {
-            "title": "What is left alone",
-            "body": "Chapter structure, table of contents, metadata and the text itself are untouched — they are copied through unchanged. Only the image files inside the archive are re-encoded, so the book opens and navigates exactly as before."
+            "title": "Apa yang tidak disentuh",
+            "body": "Struktur bab, kandungan, metadata dan teks itu sendiri tidak diubah — semuanya disalin tanpa perubahan. Hanya fail imej di dalam arkib yang dikod semula, jadi buku itu dibuka dan dinavigasi sama persis seperti sebelumnya."
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "The EPUB is unpacked, processed and repacked inside your browser. No copy is uploaded, which matters for books you own but would rather not hand to a web service."
+            "title": "Tiada apa-apa meninggalkan peranti anda",
+            "body": "EPUB dinyahpek, diproses dan dipek semula di dalam pelayar anda. Tiada salinan dimuat naik — ini penting bagi buku yang anda miliki tetapi tidak mahu serahkan kepada perkhidmatan web."
           }
         ],
         "faq": [
           {
-            "q": "Will it break DRM-protected books?",
-            "a": "It cannot open them at all. DRM-protected EPUBs are encrypted, so there is nothing to re-encode. This works on DRM-free files only."
+            "q": "Bolehkah ia menggabungkan beberapa EPUB menjadi satu buku?",
+            "a": "Boleh. Tambah dua atau lebih fail dan hidupkan gabung, kemudian namakan fail output. Bab-bab dikekalkan mengikut urutan fail dan hasilnya ialah satu EPUB standard, yang berguna untuk keluaran bersiri yang diterbitkan satu bahagian pada satu masa."
           },
           {
-            "q": "Does the text get compressed too?",
-            "a": "No. Text is copied through untouched — it is a negligible share of the file size and re-encoding it would risk breaking the book's structure for no gain."
+            "q": "Adakah ia akan merosakkan buku yang dilindungi DRM?",
+            "a": "Ia langsung tidak dapat membukanya. EPUB yang dilindungi DRM disulitkan, jadi tiada apa untuk dikod semula. Ini hanya berfungsi pada fail bebas DRM."
           },
           {
-            "q": "Will my reader still open it?",
-            "a": "Yes. The output is a standard EPUB with the same structure and metadata as the input; only the image files inside are smaller."
+            "q": "Adakah teks turut dimampatkan?",
+            "a": "Tidak. Teks disalin tanpa diubah — ia hanya sebahagian kecil daripada saiz fail dan mengekod semula hanya akan berisiko merosakkan struktur buku tanpa sebarang faedah."
+          },
+          {
+            "q": "Adakah pembaca saya masih boleh membukanya?",
+            "a": "Boleh. Output ialah EPUB standard dengan struktur dan metadata yang sama seperti input; hanya fail imej di dalamnya menjadi lebih kecil."
           }
-        ]
+        ],
+        "tool": {
+          "title": "Pemampat EPUB",
+          "description": "Mampatkan atau Gabungkan fail EPUB. Imej ditukar kepada JPEG yang dioptimumkan untuk mengurangkan saiz.",
+          "uploadLabel": "Muat Naik Fail EPUB",
+          "uploadHint": "Seret & lepaskan EPUB anda di sini",
+          "filesReady": "Fail Sedia",
+          "itemsSelected": "{{count}} fail dipilih",
+          "moveUp": "Alih Naik",
+          "moveDown": "Alih Turun",
+          "remove": "Buang",
+          "settings": "Tetapan Mampatan",
+          "maxSize": "Dimensi Imej Maksimum",
+          "grayscale": "Imej Skala Kelabu",
+          "processingMode": "Mod Pemprosesan",
+          "batch": "Kelompok",
+          "merge": "Gabung",
+          "mergeLabel": "Gabungkan menjadi satu buku",
+          "outputFilename": "Nama Fail Output",
+          "outputPlaceholder": "merged_book",
+          "resetFilename": "Tetapkan semula kepada nama fail pertama",
+          "processBtn": "Proses & Muat Turun",
+          "error": "Ralat berlaku semasa memproses EPUB anda.",
+          "disclaimer": "Imej dikod semula untuk mengecilkannya, yang bersifat lossy — simpan fail asal anda jika diperlukan. Semuanya berjalan dalam tab pelayar ini; tiada fail dimuat naik."
+        }
       },
       "pdf-to-cbz": {
         "tag": "PDF → CBZ",
-        "h1": "Convert PDF to CBZ",
-        "cardDesc": "Turn a PDF comic into a CBZ so comic readers can page through it properly.",
-        "seoTitle": "Convert PDF to CBZ — Free, In Your Browser, No Upload",
-        "seoDesc": "Convert PDF comics and scans to CBZ in your browser. Each page is rendered to an image and packed into a comic archive. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in a PDF and every page is rendered to an image and packed into a CBZ, so comic readers can treat it as a proper page-by-page volume instead of a document.",
+        "h1": "Tukar PDF kepada CBZ",
+        "cardDesc": "Tukar komik PDF menjadi CBZ supaya pembaca komik boleh menyemak imbas halaman dengan betul.",
+        "seoTitle": "Tukar PDF kepada CBZ — Percuma, Dalam Pelayar Anda, Tiada Muat Naik",
+        "seoDesc": "Tukar komik dan imbasan PDF kepada CBZ dalam pelayar anda. Setiap halaman dirender kepada imej dan dipek ke dalam arkib komik. Tiada muat naik, tiada akaun, tiada apa-apa dihantar ke pelayan.",
+        "intro": "Masukkan fail PDF dan setiap halaman dirender kepada imej dan dipek ke dalam CBZ, supaya pembaca komik boleh menganggapnya sebagai jilid sebenar halaman demi halaman dan bukan sekadar dokumen.",
         "sections": [
           {
-            "title": "Why convert at all",
-            "body": "PDF is a document format. Comic readers built around CBZ get page-spread detection, reading direction, thumbnail grids and per-page bookmarks — features a PDF viewer generally does not offer for scanned comics."
+            "title": "Mengapa perlu ditukar",
+            "body": "PDF ialah format dokumen. Pembaca komik yang dibina berasaskan CBZ mendapat pengesanan halaman rebak, arah bacaan, grid lakaran kecil dan penanda halaman — ciri yang biasanya tidak ditawarkan oleh pemapar PDF untuk komik imbasan."
           },
           {
-            "title": "What you get out",
-            "body": "A standard CBZ: a ZIP of sequentially numbered page images. Pages are rendered at 2× scale so text and line art stay sharp when you zoom, then encoded to a web-friendly format."
+            "title": "Apa yang anda perolehi",
+            "body": "Sebuah CBZ standard: satu ZIP berisi imej halaman bernombor berurutan. Halaman dirender pada skala 2× supaya teks dan lukisan garis kekal tajam apabila dizum, kemudian dikodkan kepada format mesra web."
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "Rendering and packing both happen in your browser. The PDF is never uploaded, so this is safe to use on scans and documents you would not want to put through a web service."
+            "title": "Tiada apa-apa meninggalkan peranti anda",
+            "body": "Kedua-dua pemaparan dan pempekejan berlaku dalam pelayar anda. PDF tidak pernah dimuat naik, jadi ini selamat digunakan untuk imbasan dan dokumen yang anda tidak mahu hantar melalui perkhidmatan web."
           }
         ],
         "faq": [
           {
-            "q": "Does the text stay searchable?",
-            "a": "No. CBZ is an image format by definition, so any selectable text in the PDF becomes part of the page image. If you need text search, keep the PDF — or read it in BiblioFuse, which can OCR pages on device."
+            "q": "Adakah teks kekal boleh dicari?",
+            "a": "Tidak. CBZ pada dasarnya adalah format imej, jadi mana-mana teks boleh pilih dalam PDF akan menjadi sebahagian daripada imej halaman. Jika anda memerlukan carian teks, simpan PDF tersebut — atau bacanya dalam BiblioFuse, yang boleh mengimbas OCR pada halaman di peranti."
           },
           {
-            "q": "What resolution are the pages rendered at?",
-            "a": "2× the PDF's native page size, which keeps line art and lettering sharp when zoomed. Larger PDFs therefore take longer and use more memory."
+            "q": "Pada resolusi berapa halaman dirender?",
+            "a": "2× saiz halaman asal PDF, yang mengekalkan lukisan garis dan huruf tajam apabila dizum. PDF yang lebih besar oleh itu mengambil masa lebih lama dan menggunakan lebih banyak memori."
           },
           {
-            "q": "Can it convert back the other way?",
-            "a": "Not here — this direction covers the common case of a PDF that ought to be a comic. The BiblioFuse app handles CBZ to PDF on device."
+            "q": "Bolehkah ia menukar ke arah sebaliknya?",
+            "a": "Tidak di sini — arah ini merangkumi kes lazim iaitu PDF yang sepatutnya menjadi komik. Aplikasi BiblioFuse mengendalikan penukaran CBZ kepada PDF di peranti."
           }
-        ]
+        ],
+        "tool": {
+          "title": "PDF kepada imej CBZ/ZIP",
+          "description": "Tukar dokumen PDF kepada arkib imej CBZ atau ZIP berkualiti tinggi. Setiap halaman menjadi imej JPEG berkualiti tinggi.",
+          "uploadLabel": "Muat Naik Fail PDF",
+          "uploadHint": "Seret & lepaskan PDF anda di sini",
+          "filesReady": "Fail Sedia",
+          "itemsSelected": "{{count}} item dipilih",
+          "moveUp": "Alih Naik",
+          "moveDown": "Alih Turun",
+          "remove": "Buang",
+          "settings": "Tetapan",
+          "maxSize": "Resolusi Sisi Terpendek",
+          "grayscale": "Skala Kelabu",
+          "processingMode": "Mod Pemprosesan",
+          "batch": "Kelompok",
+          "merge": "Gabung",
+          "outputFilename": "Nama Fail Output",
+          "outputPlaceholder": "merged_comic",
+          "resetFilename": "Tetapkan semula kepada nama fail pertama",
+          "imageFormat": "Format Imej",
+          "archiveFormat": "Format Arkib",
+          "convertFiles": "Tukar {{count}} Fail",
+          "processBtn": "Tukar kepada CBZ/ZIP",
+          "converting": "Menukar...",
+          "error": "Ralat berlaku semasa menukar PDF anda.",
+          "disclaimer": "Imej dikod semula untuk mengecilkannya, yang bersifat lossy — simpan fail asal anda jika diperlukan. Semuanya berjalan dalam tab pelayar ini; tiada fail dimuat naik."
+        }
       },
       "pdf-to-jpg": {
         "tag": "PDF → JPG",
-        "h1": "Convert PDF pages to JPG",
-        "cardDesc": "Export every page of a PDF as an image, downloaded as a ZIP.",
-        "seoTitle": "Convert PDF to JPG — Free, In Your Browser, No Upload",
-        "seoDesc": "Export PDF pages as JPG images in your browser and download them as a ZIP. Pick the render quality. No upload, no account, nothing sent to a server.",
-        "intro": "Drop in a PDF and every page is rendered to a JPG at the quality you choose, then bundled into a single ZIP download.",
+        "h1": "Tukar halaman PDF kepada JPG",
+        "cardDesc": "Eksport setiap halaman PDF sebagai imej, dimuat turun sebagai ZIP.",
+        "seoTitle": "Tukar PDF kepada JPG — Percuma, Dalam Pelayar Anda, Tiada Muat Naik",
+        "seoDesc": "Eksport halaman PDF sebagai imej JPG dalam pelayar anda dan muat turun sebagai ZIP. Pilih kualiti pemaparan. Tiada muat naik, tiada akaun, tiada apa-apa dihantar ke pelayan.",
+        "intro": "Masukkan fail PDF dan setiap halaman dirender kepada JPG pada kualiti pilihan anda, kemudian dipek ke dalam satu muat turun ZIP.",
         "sections": [
           {
-            "title": "What it is for",
-            "body": "Pulling pages out as images — for a slide, a reference sheet, an issue report, or any workflow that wants pictures rather than a document. Every page is exported; there is no per-page selection step."
+            "title": "Untuk apa ia digunakan",
+            "body": "Mengeluarkan halaman sebagai imej — untuk slaid, helaian rujukan, laporan isu, atau apa jua aliran kerja yang memerlukan gambar dan bukan dokumen. Setiap halaman dieksport; tiada langkah pemilihan setiap halaman."
           },
           {
-            "title": "Choosing quality",
-            "body": "The quality control is the render scale, not just the encoder setting. Higher values render each page larger before encoding, which keeps small text legible at the cost of file size and processing time."
+            "title": "Memilih kualiti",
+            "body": "Kawalan kualiti ialah skala pemaparan, bukan sekadar tetapan pengekod. Nilai lebih tinggi merender setiap halaman lebih besar sebelum dikodkan, yang mengekalkan teks kecil boleh dibaca dengan kos saiz fail dan masa pemprosesan."
           },
           {
-            "title": "Nothing leaves your device",
-            "body": "Rendering uses the PDF engine built into the page and runs entirely in your browser. The file is never uploaded — which is the point if the PDF is a statement, a contract, or anything else you would not paste into a web tool."
+            "title": "Tiada apa-apa meninggalkan peranti anda",
+            "body": "Pemaparan menggunakan enjin PDF terbina dalam halaman dan berjalan sepenuhnya dalam pelayar anda. Fail tidak pernah dimuat naik — inilah intinya jika PDF itu ialah penyata, kontrak, atau apa-apa yang anda tidak mahu tampal ke dalam alat web."
           }
         ],
         "faq": [
           {
-            "q": "Can I export just one page?",
-            "a": "Not currently — every page is exported and delivered as a ZIP. Extract the one you need from the archive."
+            "q": "Bolehkah saya eksport hanya satu halaman?",
+            "a": "Buat masa ini tidak — setiap halaman dieksport dan dihantar sebagai ZIP. Ekstrak halaman yang anda perlukan daripada arkib tersebut."
           },
           {
-            "q": "Why JPG and not PNG?",
-            "a": "JPG is dramatically smaller for scanned and photographic pages, which is the common case. For line art or screenshots where you want lossless output, PDF to CBZ preserves more detail."
+            "q": "Mengapa JPG dan bukan PNG?",
+            "a": "JPG jauh lebih kecil untuk halaman imbasan dan fotografi, iaitu kes yang lazim. Untuk lukisan garis atau tangkapan skrin di mana anda mahukan output tanpa kehilangan kualiti, PDF kepada CBZ mengekalkan lebih banyak perincian."
           },
           {
-            "q": "Does it work on password-protected PDFs?",
-            "a": "No. An encrypted PDF has to be unlocked before anything can render it. SmartDecrypt, a separate app from the same studio, handles that case."
+            "q": "Adakah ia berfungsi pada PDF yang dilindungi kata laluan?",
+            "a": "Tidak. PDF yang disulitkan perlu dibuka kuncinya dahulu sebelum apa-apa boleh merendernya. SmartDecrypt, sebuah aplikasi berasingan daripada studio yang sama, mengendalikan kes tersebut."
           }
-        ]
+        ],
+        "tool": {
+          "title": "PDF kepada JPG",
+          "description": "Render setiap halaman PDF sebagai imej JPG.",
+          "uploadLabel": "Muat Naik PDF",
+          "uploadHint": "Pilih satu fail PDF",
+          "changeFile": "Tukar Fail",
+          "quality": "Kualiti pemaparan",
+          "low": "Rendah",
+          "medium": "Sederhana",
+          "high": "Tinggi",
+          "converting": "Menukar…",
+          "convertBtn": "Tukar kepada JPG",
+          "pagesGenerated": "{{count}} Halaman Dijana",
+          "page": "Halaman {{number}}",
+          "downloadZip": "Muat turun semua sebagai ZIP",
+          "error": "Ralat berlaku semasa menukar PDF anda.",
+          "disclaimer": "Halaman dirender dan dikodkan dalam tab pelayar ini. Tiada apa-apa dimuat naik."
+        }
       },
       "qr-generator": {
-        "tag": "QR code",
-        "h1": "Kavita & Komga QR generator",
-        "cardDesc": "Make a setup QR code so the app can connect to your server without typing.",
-        "seoTitle": "Kavita & Komga Setup QR Code Generator",
-        "seoDesc": "Generate a QR code that points BiblioFuse at your Kavita or Komga server, so you do not have to type a URL and API key on a phone. Built in your browser; nothing is sent anywhere.",
-        "intro": "Fill in your server details and get a QR code the app can scan — no typing a long URL and API key on a phone keyboard.",
+        "tag": "Kod QR",
+        "h1": "Penjana kod QR Kavita & Komga",
+        "cardDesc": "Cipta kod QR persediaan supaya aplikasi boleh menyambung ke pelayan anda tanpa perlu menaip.",
+        "seoTitle": "Penjana Kod QR Persediaan Kavita & Komga",
+        "seoDesc": "Jana kod QR yang mengarahkan BiblioFuse ke pelayan Kavita atau Komga anda, supaya anda tidak perlu menaip URL dan kunci API pada telefon. Dibina dalam pelayar anda; tiada apa-apa dihantar ke mana-mana.",
+        "intro": "Isikan butiran pelayan anda dan dapatkan kod QR yang boleh diimbas oleh aplikasi — tanpa perlu menaip URL panjang dan kunci API pada papan kekunci telefon.",
         "sections": [
           {
-            "title": "Why a QR code",
-            "body": "A self-hosted server address plus an API key is a long, error-prone thing to type on a phone. Scanning a code gets both across in one step, correctly, every time."
+            "title": "Mengapa kod QR",
+            "body": "Alamat pelayan swahos ditambah kunci API adalah sesuatu yang panjang dan mudah tersilap untuk ditaip pada telefon. Mengimbas kod menyampaikan kedua-duanya dalam satu langkah, dengan tepat, setiap kali."
           },
           {
-            "title": "Your key never leaves the page",
-            "body": "The code is drawn in your browser from the values you type. Nothing is submitted, logged or stored — close the tab and it is gone. The generated image is only as private as wherever you choose to put it, so treat a printed code like the API key it contains."
+            "title": "Kunci anda tidak pernah meninggalkan halaman ini",
+            "body": "Kod dilukis dalam pelayar anda daripada nilai yang anda taip. Tiada apa-apa dihantar, direkodkan atau disimpan — tutup tab dan ia hilang. Keperibadian imej yang dijana bergantung kepada di mana anda memilih untuk meletakkannya, jadi layan kod yang dicetak seperti kunci API yang dikandunginya."
           }
         ],
         "faq": [
           {
-            "q": "Is my API key sent anywhere?",
-            "a": "No. The QR code is generated locally in the page and the values you type are never transmitted or saved. Do bear in mind the finished code contains your key, so anyone who can photograph it can use it."
+            "q": "Adakah kunci API saya dihantar ke mana-mana?",
+            "a": "Tidak. Kod QR dijana secara setempat dalam halaman ini dan nilai yang anda taip tidak pernah dihantar atau disimpan. Perlu diingat bahawa kod yang dijana mengandungi kunci anda, jadi sesiapa yang boleh mengambil gambarnya boleh menggunakannya."
           },
           {
-            "q": "Which servers does this support?",
-            "a": "Kavita and Komga. Pick the service type and the default port fills in; adjust the address if your setup differs."
+            "q": "Pelayan mana yang disokong?",
+            "a": "Kavita dan Komga. Pilih jenis perkhidmatan dan port lalai akan diisi secara automatik; laraskan alamat jika persediaan anda berbeza."
           }
         ]
       }
