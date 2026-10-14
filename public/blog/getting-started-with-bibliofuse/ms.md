@@ -57,6 +57,8 @@ Untuk menggabungkan siri manga menjadi satu jilid, tekan lama untuk memilih bebe
 - **Comic Duplicate Scanner** — aplikasi pendamping Mac yang mencari fail CBZ dan foto pendua menggunakan perceptual hashing.
 
 
+Menggunakan pelayan Kavita? Lihat [Aplikasi Pembaca Kavita untuk iPhone, iPad dan Android: Penyelarasan Kemajuan, Penanda Buku dan Anotasi](https://bibliofuse.com/ms/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## Soalan Lazim
 
 **Format apa yang disokong BiblioFuse?**

@@ -294,7 +294,8 @@
           "Sambung langsung ke OPDS 1.x, OPDS-PSE, Komga, atau Kavita (Pro)",
           "Streaming dari aplikasi host BiblioFuse di Mac, PC, Synology, atau Docker",
           "Baca dari iCloud Drive Anda sendiri — buku dimuat saat dibuka (Pro)",
-          "Posisi baca dan markah tetap sinkron di semua perangkat Anda"
+          "Posisi baca dan markah tetap sinkron di semua perangkat Anda",
+          "Tambah, edit, dan hapus sorotan serta catatan, tersinkron di semua perangkat Anda"
         ]
       },
       "toolsStrip": {
@@ -380,7 +381,7 @@
           "bullet3Body": "lanjutkan di iPhone dari tempat Anda berhenti di iPad.",
           "imageAlt": "Perpustakaan BiblioFuse dengan tag, penilaian, dan progres membaca",
           "bullet4Title": "Dukungan native Komga & Kavita",
-          "bullet4Body": "Sambungkan langsung ke API server Anda sendiri — bukan sekadar feed OPDS — dengan posisi baca yang tersinkron dua arah, dan sinkronisasi markah di Kavita. Pro.",
+          "bullet4Body": "Terhubung langsung ke API server Anda sendiri, bukan hanya feed OPDS, dengan posisi baca yang tersinkron dua arah, ditambah sinkronisasi bookmark dan anotasi (sorotan dan catatan) di Kavita. Pro.",
           "bullet5Title": "Katalog OPDS apa pun",
           "bullet5Body": "OPDS 1.x dengan streaming halaman OPDS-PSE, sehingga komik dimuat per halaman dari Calibre-Web, COPS, Ubooquity, atau server pendukung lainnya. Pro."
         },
@@ -404,7 +405,7 @@
           "eyebrow": "Desktop streaming ke mobile",
           "title": "Hub perpustakaan. Streaming ke iPhone, Android, TV, Vision Pro.",
           "badge": "Tanpa server pihak ketiga · Tanpa langganan",
-          "desc": "Di Mac dan PC, BiblioFuse menjadi hub perpustakaan desktop untuk koleksi besar. Kelola folder di perangkat host, lalu streaming buku langsung ke BiblioFuse di iPhone, iPad, Android, Apple TV, dan Vision Pro — melalui Wi‑Fi rumah atau, jika didukung, jarak jauh via 5G dengan Tailscale.",
+          "desc": "Di NAS, Mac, atau PC, BiblioFuse menjadi pusat perpustakaan untuk koleksi besar. Kelola folder di host, lalu streaming buku langsung ke BiblioFuse di iPhone, iPhone Duo, iPad, Android, Apple TV, dan Vision Pro — lewat Wi-Fi rumah, atau dari jarak jauh lewat 5G dengan Tailscale jika didukung.",
           "bullet1Title": "Streaming Wi-Fi lokal",
           "bullet1Body": "jelajah instan dari sumber Mac atau PC.",
           "bullet2Title": "Streaming 5G jarak jauh",
@@ -413,8 +414,10 @@
           "bullet3Body": "satu perpustakaan desktop, semua folder yang sudah Anda simpan.",
           "bullet4Title": "PIN opsional",
           "bullet4Body": "kunci akses streaming di jaringan bersama.",
-          "imageAlt": "Perpustakaan desktop BiblioFuse dengan pembaca split-view",
-          "footnote": "Akses jarak jauh memerlukan host dan perangkat iOS masuk ke iCloud dan terhubung melalui Tailscale. Untuk pengaturan rumah dan jarak jauh yang paling konsisten, biarkan Tailscale aktif di kedua perangkat."
+          "imageAlt": "BiblioFuse di iPad dan iPhone terbuka pada bagian yang sama — sinkronisasi progres, bookmark, dan anotasi di BiblioFuse Host, Kavita, dan Komga",
+          "footnote": "Akses jarak jauh memerlukan host dan perangkat iOS masuk ke iCloud dan terhubung melalui Tailscale. Untuk pengaturan rumah dan jarak jauh yang paling konsisten, biarkan Tailscale aktif di kedua perangkat.",
+          "bullet5Title": "Progres, bookmark & anotasi tersinkron",
+          "bullet5Body": "posisi baca, bookmark, sorotan, dan catatan mengikuti Anda antarperangkat untuk CBZ, CBR, PDF, EPUB, dan TXT."
         }
       },
       "cta": "Unduh BiblioFuse Reader",
@@ -558,8 +561,8 @@
       "appStore": "Unduh di App Store",
       "googlePlay": "Dapatkan di Google Play",
       "microsoftStore": "Dapatkan dari Microsoft",
-      "heroStreaming": "Layar Lokasi BiblioFuse di iPhone — perpustakaan di perangkat, di iCloud Drive, dan di host Mac",
-      "heroTranslation": "Panel terjemahan langsung BiblioFuse di atas halaman komik di iPhone"
+      "heroStreaming": "Layar Tambah Server OPDS di BiblioFuse pada iPhone, dengan jenis koneksi OPDS, Komga API, dan Kavita API",
+      "heroTranslation": "Pengaturan Terjemahan Langsung di BiblioFuse pada iPhone — terjemahan komik dan manga di perangkat dengan BiblioFuse Pro"
     },
     "seo": {
       "homeTitle": "BiblioFuse Reader: pustaka privat, streaming Mac 5G & alat file",
@@ -586,6 +589,11 @@
     },
     "blog": {
       "posts": {
+        "kavita-reader-app-progress-bookmark-annotation-sync": {
+          "title": "Aplikasi Pembaca Kavita untuk iPhone, iPad, dan Android: Sinkronisasi Progres, Bookmark, dan Anotasi",
+          "excerpt": "BiblioFuse terhubung ke Kavita melalui API-nya sendiri, sehingga progres baca, bookmark, serta sorotan dan catatan EPUB tersinkron dua arah. Apa saja yang tersinkron per format, dan cara terhubung dengan satu pindaian QR.",
+          "seoDescription": "Sinkronkan progres baca, bookmark, sorotan, dan catatan Kavita di iPhone, iPad, dan Android dengan BiblioFuse. Dukungan CBZ, CBR, EPUB, dan PDF, plus penyiapan lewat QR."
+        },
         "digital-comic-library-management-guide": {
           "title": "Panduan Kelola Perpustakaan Komik Digital",
           "excerpt": "BiblioFuse adalah pembaca native iPhone dan iPad untuk iOS 17+ yang mengelola file CBZ, CBR, EPUB, PDF, ZIP, RAR, dan TXT dengan tag, penilaian, sinkronisasi iCloud, dan Wi-Fi Transfer. Panduan ini mencakup cara mengorganisasi, mengompresi, mentransfer, dan membaca seluruh perpustakaan komik digital Anda di iPhone, iPad, dan Mac.",
@@ -932,6 +940,31 @@
       }
     },
     "comicReaderPage": {
+      "duo": {
+        "eyebrow": "Baru: iPhone Duo",
+        "title": "Buka lipatannya. Posisi baca tetap.",
+        "desc": "BiblioFuse siap untuk iPhone Duo. Mulai membaca satu bab di layar luar, buka engselnya, dan buku yang sama tetap terbuka di tempat yang sama — kini dengan ruang untuk tampilan dua halaman penuh.",
+        "bullets": [
+          {
+            "title": "Lipat atau buka di tengah halaman",
+            "body": "pembaca tetap terbuka dan kembali ke bagian atau halaman tempat Anda berada, untuk komik, PDF, EPUB, dan TXT."
+          },
+          {
+            "title": "Dua halaman saat terbuka",
+            "body": "buka dalam posisi lanskap untuk tampilan dua halaman berdampingan; lipat dan Anda kembali ke satu halaman."
+          },
+          {
+            "title": "Kisi perpustakaan untuk tiap layar",
+            "body": "kolom otomatis menyesuaikan layar luar dan layar dalam secara terpisah, atau atur sendiri jumlahnya untuk terlipat, terbuka, potret, dan lanskap."
+          },
+          {
+            "title": "Semuanya tetap tersinkron",
+            "body": "posisi baca, bookmark, sorotan, dan catatan terbawa ke iPad, Mac, dan perangkat Anda lainnya."
+          }
+        ],
+        "note": "Dukungan iPhone Duo hadir di BiblioFuse 2.1.15. Pembeliannya sama di App Store dengan iPhone, iPad, Mac, Vision Pro, dan Apple TV.",
+        "videoAlt": "BiblioFuse di iPhone Duo: menjelajahi perpustakaan saat terlipat, lalu membukanya ke halaman seri dan satu halaman komik penuh"
+      },
       "vision": {
         "eyebrow": "Kini di Apple Vision Pro",
         "badge": "Aplikasi visionOS asli",
@@ -1083,6 +1116,12 @@
             "tint": "violet"
           }
         ]
+      },
+      "ui": {
+        "selfHost": "Atau host sendiri di NAS:",
+        "webVersion": "Tidak ingin memasang apa pun? Coba versi web",
+        "playDemo": "Putar demo",
+        "pause": "Jeda"
       }
     },
     "androidInterest": {
@@ -1718,7 +1757,7 @@
             },
             {
               "q": "Bagaimana cara menghubungkan ke Kavita, dan apakah progres membaca saya akan tersinkron?",
-              "a": "Ya, dua arah. Tambahkan server Kavita Anda di Settings, dan BiblioFuse menggunakan API native Kavita alih-alih ekstensi OPDS-PSE yang diandalkan sebagian besar aplikasi pembaca lain — yang justru menjadi sumber banyak masalah sinkronisasi progres di ekosistem Kavita secara luas. Posisi baca tersinkron dua arah, dan bookmark di dalam buku juga ikut tersinkron. Diperlukan Pro.",
+              "a": "Ya, dua arah. Tambahkan server Kavita Anda di Settings, dan BiblioFuse menggunakan API native Kavita alih-alih ekstensi OPDS-PSE yang diandalkan sebagian besar aplikasi pembaca lain — yang justru menjadi sumber banyak masalah sinkronisasi progres di ekosistem Kavita secara luas. Posisi baca tersinkron dua arah, dan bookmark di dalam buku juga ikut tersinkron. Diperlukan Pro. Sorotan dan catatan EPUB juga tersinkron dengan Kavita — tambah, edit, atau hapus dari sisi mana pun.",
               "bullets": []
             }
           ],
@@ -1726,6 +1765,10 @@
             {
               "to": "/tools/qr-generator/",
               "label": "Buat kode QR untuk server Kavita atau Komga Anda"
+            },
+            {
+              "to": "/blog/kavita-reader-app-progress-bookmark-annotation-sync/",
+              "label": "Sinkronisasi Kavita: progres, bookmark, sorotan, dan catatan"
             }
           ]
         },
@@ -2142,18 +2185,19 @@
     "groups": {
       "reading": "Membaca",
       "libraries": "Perpustakaan & server",
+      "sync": "Sinkronisasi, bookmark & anotasi",
       "streaming": "Streaming dari komputer sendiri",
       "input": "Input & platform",
-      "formats": "File formats"
+      "formats": "Format file"
     },
     "cellNotes": {
       "lanOnlyTvos": "Hanya Wi-Fi lokal; Tailscale belum cukup stabil di tvOS",
       "noICloudRoute": "Wi-Fi lokal dan Tailscale manual; jalur iCloud hanya untuk Apple",
       "lanOnly": "Hanya Wi-Fi lokal",
       "tailscaleServe": "Tailscale Serve dan akses subnet",
-      "nasArchivesOnly": "CBZ/ZIP only",
+      "nasArchivesOnly": "Hanya CBZ/ZIP",
       "nasNoPdf": "No PDF yet",
-      "tvosPartialLocale": "Partial UI translation"
+      "tvosPartialLocale": "Antarmuka diterjemahkan sebagian"
     },
     "features": {
       "live-translation": {
@@ -2170,7 +2214,7 @@
       },
       "dual-page-spreads": {
         "label": "Tampilan dua halaman",
-        "note": "Tablet mode lanskap, seperti buku terbuka"
+        "note": "Tablet lanskap atau iPhone Duo yang terbuka, seperti buku terbuka"
       },
       "vertical-japanese": {
         "label": "Jepang vertikal / EPUB vertikal",
@@ -2200,7 +2244,8 @@
         "note": "Komik satu halaman sekaligus. OPDS 2.0 tidak didukung."
       },
       "kavita-sync": {
-        "label": "Sinkronisasi posisi & markah Kavita"
+        "label": "Sinkronisasi posisi, bookmark & anotasi (sorotan/catatan) Kavita",
+        "note": "Posisi dan bookmark untuk komik, EPUB, dan PDF; sorotan dan catatan untuk EPUB"
       },
       "folder-as-library": {
         "label": "Jelajahi folder sebagai perpustakaan",
@@ -2267,12 +2312,40 @@
         "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
-        "label": "iCloud bookshelf",
-        "note": "Apple platforms only — the shelf and its metadata sync through your own iCloud."
+        "label": "Rak buku iCloud",
+        "note": "Hanya platform Apple — rak dan metadatanya tersinkron melalui iCloud Anda sendiri."
       },
       "ui-languages": {
-        "label": "Localised interface",
+        "label": "Antarmuka terlokalisasi",
         "note": "11 bahasa di Apple, Windows, dan pembaca browser NAS."
+      },
+      "highlights-notes": {
+        "label": "Sorotan & catatan",
+        "note": "Sorotan teks di EPUB, TXT, dan PDF; catatan halaman dan area pada komik. Satu daftar yang bisa dicari."
+      },
+      "host-sync": {
+        "label": "Sinkronisasi host: posisi, bookmark, sorotan & catatan",
+        "note": "Satu status bersama per buku untuk setiap perangkat yang streaming dari host BiblioFuse yang sama — CBZ, CBR, PDF, EPUB, dan TXT"
+      },
+      "icloud-sync": {
+        "label": "Buku iCloud: sinkronisasi posisi & bookmark",
+        "note": "Buku di iCloud Drive Anda sendiri berlanjut di tempat yang tepat pada perangkat Apple Anda yang lain"
+      },
+      "iphone-duo": {
+        "label": "Dukungan iPhone Duo",
+        "note": "Menjaga posisi baca saat dilipat, dua halaman saat terbuka, kisi perpustakaan untuk tiap layar"
+      },
+      "page-browser": {
+        "label": "Penjelajah Halaman",
+        "note": "Kisi gambar mini setiap halaman pada komik dan PDF"
+      },
+      "fit-modes": {
+        "label": "Paskan Konten, Paskan Tinggi & Ukuran Asli",
+        "note": "Ditambah pemotongan margin untuk komik dan pembersihan hasil pindai untuk PDF"
+      },
+      "e-ink": {
+        "label": "Mode layar e-ink",
+        "note": "Pembaca yang disetel untuk layar e-ink"
       }
     },
     "specs": {

@@ -31,8 +31,9 @@ function nasDocUrl(guide, lang) {
 // link bibliofuse.com/discord and a dead invite becomes a one-line fix. Do not inline an
 // invite code here again.
 const discordUrl = '/discord';
-const imageBase = '/image/offline-apps/bibliofuse';
 const featureMediaBase = '/image/comicreader/feature-summary';
+// Locales with their own App Store "resume & sync" artwork in public/image/comicreader/sync/.
+const SYNC_IMAGE_LANGS = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
 
 // The four outbound "where do I get the host / where do I ask for help" links
 // under the store badges. `docker` and `synology` use stroke icons; `github`
@@ -245,7 +246,14 @@ function EditionChooser({ lang }) {
   );
 }
 
-function FeatureVideo({ alt }) {
+// `sources`/`poster`/`frameClass` default to the navigation demo; DuoSection passes its own.
+const NAVIGATION_DEMO_SOURCES = [
+  { src: `${featureMediaBase}/navigation-demo-alpha.mp4`, type: 'video/mp4; codecs="hvc1"' },
+  { src: `${featureMediaBase}/navigation-demo-fallback.mp4`, type: 'video/mp4; codecs="avc1.640028"' },
+];
+
+function FeatureVideo({ alt, sources = NAVIGATION_DEMO_SOURCES, poster = `${featureMediaBase}/navigation-demo-poster.jpg`, frameClass = 'aspect-[4/3] [clip-path:inset(0_0.5%_0_0)]', maxWidthClass = 'max-w-[680px]' }) {
+  const { t } = useTranslation();
   const videoRef = React.useRef(null);
   const [isPlaying, setIsPlaying] = React.useState(false);
 
@@ -279,35 +287,36 @@ function FeatureVideo({ alt }) {
   };
 
   return (
-    <div className="relative mx-auto w-full max-w-[680px]">
+    <div className={`relative mx-auto w-full ${maxWidthClass}`}>
       <div className="absolute -inset-10 -z-10 rounded-full bg-[radial-gradient(circle,rgba(20,194,166,0.16),transparent_70%)]" />
       <video
         ref={videoRef}
         aria-label={alt}
-        className="block aspect-[4/3] w-full object-contain [clip-path:inset(0_0.5%_0_0)]"
+        className={`block w-full object-contain ${frameClass}`}
         loop
         muted
         playsInline
         preload="metadata"
-        poster={`${featureMediaBase}/navigation-demo-poster.jpg`}
+        poster={poster}
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
       >
-        <source src={`${featureMediaBase}/navigation-demo-alpha.mp4`} type='video/mp4; codecs="hvc1"' />
-        <source src={`${featureMediaBase}/navigation-demo-fallback.mp4`} type='video/mp4; codecs="avc1.640028"' />
+        {sources.map((source) => (
+          <source key={source.src} src={source.src} type={source.type} />
+        ))}
       </video>
       <button
         type="button"
         onClick={togglePlayback}
         className="absolute bottom-3 right-3 inline-flex h-10 items-center gap-2 rounded-full border border-slate-200/80 bg-white/95 px-3.5 text-xs font-bold text-slate-800 shadow-lg backdrop-blur transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
-        aria-label={isPlaying ? 'Pause navigation demo' : 'Play navigation demo'}
+        aria-label={isPlaying ? t('redesign.comicReaderPage.ui.pause') : t('redesign.comicReaderPage.ui.playDemo')}
       >
         {isPlaying ? (
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" /></svg>
         ) : (
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
         )}
-        {isPlaying ? 'Pause' : 'Play demo'}
+        {isPlaying ? t('redesign.comicReaderPage.ui.pause') : t('redesign.comicReaderPage.ui.playDemo')}
       </button>
     </div>
   );
@@ -436,6 +445,61 @@ function ToolsHighlight() {
         <span className="ml-auto text-xs text-slate-400">{t('redesign.toolsHighlight.onDevice')}</span>
       </div>
     </div>
+  );
+}
+
+// iPhone Duo, added 2026-10-14 (BiblioFuse 2.1.15). Light band, not dark like the Vision
+// Pro and Apple TV sections below it: the demo clip was recorded on a white background and
+// has no alpha channel, so a dark section would frame it in a white box. Every claim here
+// is from bibliofuse_iosv2 docs/features/library-and-formats.md ("Grid column count",
+// "The library layout holds still while a reader is open", "Page spreads follow the
+// device, not the width") — re-check there before editing the copy.
+const DUO_DEMO_SOURCES = [
+  { src: '/image/comicreader/duo/iphone-duo-demo.mp4', type: 'video/mp4' },
+];
+
+function DuoSection() {
+  const { t } = useTranslation();
+  const d = t('redesign.comicReaderPage.duo', { returnObjects: true });
+  const bullets = Array.isArray(d.bullets) ? d.bullets : [];
+  const icons = [
+    <><rect x="3" y="4" width="18" height="16" rx="2.5" /><path d="M12 4v16" /></>,
+    <><path d="M12 6.5C10 5 7 4.5 4 5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V5c-3-.5-6 0-8 1.5z" /><path d="M12 6.5V19.5" /></>,
+    <><rect x="4" y="4" width="6.5" height="6.5" rx="1" /><rect x="13.5" y="4" width="6.5" height="6.5" rx="1" /><rect x="4" y="13.5" width="6.5" height="6.5" rx="1" /><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1" /></>,
+    <><path d="M20 12a8 8 0 01-13.7 5.7" /><path d="M4 12a8 8 0 0113.7-5.7" /><path d="M17.5 3v3.5H14" /><path d="M6.5 21v-3.5H10" /></>,
+  ];
+
+  return (
+    <section id="iphone-duo" className="relative overflow-hidden border-t border-slate-200/70 bg-white py-20 sm:py-24">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
+        <div>
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-blue-700">
+            <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
+            {d.eyebrow}
+          </div>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">{d.title}</h2>
+          <p className="mt-4 max-w-xl text-lg leading-relaxed text-slate-600">{d.desc}</p>
+          <ul className="mt-7 space-y-4">
+            {bullets.map((b, i) => (
+              <li key={b.title} className="flex items-start gap-3">
+                <span className="mt-0.5 grid h-8 w-8 flex-shrink-0 place-items-center rounded-lg bg-blue-50 text-blue-600">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">{icons[i % icons.length]}</svg>
+                </span>
+                <span className="leading-snug text-slate-900"><strong className="font-bold">{b.title}</strong> <span className="text-slate-600">— {b.body}</span></span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-6 max-w-md border-l-2 border-slate-200 pl-3 text-xs leading-relaxed text-slate-500">{d.note}</p>
+        </div>
+        <FeatureVideo
+          alt={d.videoAlt}
+          sources={DUO_DEMO_SOURCES}
+          poster="/image/comicreader/duo/iphone-duo-demo-poster.jpg"
+          frameClass="aspect-[736/720]"
+          maxWidthClass="max-w-[560px]"
+        />
+      </div>
+    </section>
   );
 }
 
@@ -689,13 +753,14 @@ const ComicReader = () => {
         schemaType="suite"
         schemaName="BiblioFuse Reader"
         operatingSystem="iOS, iPadOS, macOS, visionOS, Android, Windows"
-        softwareVersion="2.1.4"
+        softwareVersion="2.1.15"
         storeLinks={[appStoreUrl, playStoreUrl, bibliofusePcUrl]}
         featureList={[
           t('redesign.readerSection.features.library.title'),
           t('redesign.readerSection.features.reading.title'),
           t('redesign.readerSection.features.streaming.title'),
           t('redesign.toolsHighlight.title'),
+          t('redesign.comicReaderPage.duo.title'),
           t('redesign.comicReaderPage.vision.title'),
           t('redesign.comicReaderPage.appletv.title'),
           t('redesign.readerSection.bullet1'),
@@ -733,7 +798,7 @@ const ComicReader = () => {
               <StoreBadge type="microsoft" href={bibliofusePcUrl} />
             </div>
             <div className="mt-3">
-              <div className="mb-2 text-xs font-semibold text-slate-500">Or self-host on a NAS:</div>
+              <div className="mb-2 text-xs font-semibold text-slate-500">{t('redesign.comicReaderPage.ui.selfHost')}</div>
               <div className="flex flex-wrap items-center gap-3">
                 <HostBadge type="docker" href={nasDocUrl('docker-install', lang)} />
                 <HostBadge type="synology" href={nasDocUrl('synology-package', lang)} />
@@ -743,7 +808,7 @@ const ComicReader = () => {
             <div className="mt-3 flex flex-wrap items-center gap-3">
               <HostBadge type="discord" href={discordUrl} />
             </div>
-            <DevicePills devices={['iphone', 'ipad', 'mac', 'visionpro', 'appletv', 'android', 'windows', 'docker', 'synology']} tone="light" align="start" className="mt-5" />
+            <DevicePills devices={['iphone', 'iphoneduo', 'ipad', 'mac', 'visionpro', 'appletv', 'android', 'windows', 'docker', 'synology']} tone="light" align="start" className="mt-5" />
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-slate-600">
               {[t('redesign.common.noAds'), t('redesign.common.noTracking'), t('redesign.common.onDevice')].map((item) => (
                 <span key={item} className="flex items-center gap-1.5">
@@ -753,7 +818,7 @@ const ComicReader = () => {
               ))}
             </div>
             <Link to={`/${lang}/tools/`} className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 transition hover:text-blue-700">
-              Prefer no install? Try the web version →
+              {t('redesign.comicReaderPage.ui.webVersion')} →
             </Link>
           </div>
 
@@ -814,16 +879,18 @@ const ComicReader = () => {
               { title: t('redesign.readerSection.features.streaming.bullet2Title'), body: t('redesign.readerSection.features.streaming.bullet2Body') },
               { title: t('redesign.readerSection.features.streaming.bullet3Title'), body: t('redesign.readerSection.features.streaming.bullet3Body') },
               { title: t('redesign.readerSection.features.streaming.bullet4Title'), body: t('redesign.readerSection.features.streaming.bullet4Body') },
+              { title: t('redesign.readerSection.features.streaming.bullet5Title'), body: t('redesign.readerSection.features.streaming.bullet5Body') },
             ]}
-            image={`${imageBase}/mac/1.png`}
+            image={`/image/comicreader/sync/resume-sync-${SYNC_IMAGE_LANGS.includes(lang) ? lang : 'en'}.jpg`}
             alt={t('redesign.readerSection.features.streaming.imageAlt')}
-            kind="mac"
             footnote={t('redesign.readerSection.features.streaming.footnote')}
           />
 
           <ToolsHighlight />
         </div>
       </section>
+
+      <DuoSection />
 
       <VisionProSection />
 

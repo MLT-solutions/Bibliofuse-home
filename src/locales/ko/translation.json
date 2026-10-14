@@ -294,7 +294,8 @@
           "OPDS 1.x, OPDS-PSE, Komga, Kavita에 바로 연결 (Pro)",
           "Mac, PC, Synology, Docker의 BiblioFuse 호스트 앱에서 스트리밍",
           "직접 쓰는 iCloud Drive에서 읽기 — 열 때 불러옵니다 (Pro)",
-          "읽던 위치와 북마크가 기기 간에 동기화됩니다"
+          "읽던 위치와 북마크가 기기 간에 동기화됩니다",
+          "하이라이트와 메모를 추가·편집·삭제하고 기기 간에 동기화하세요"
         ]
       },
       "toolsStrip": {
@@ -380,7 +381,7 @@
           "bullet3Body": "iPad에서 중단한 곳을 iPhone에서 이어서.",
           "imageAlt": "태그, 평점, 읽기 진행률이 있는 BiblioFuse 라이브러리",
           "bullet4Title": "네이티브 Komga·Kavita 지원",
-          "bullet4Body": "단순한 OPDS 피드가 아니라 서버 자체 API에 직접 연결하여 읽던 위치를 양방향으로 동기화하고, 북마크 동기화는 Kavita에서 지원합니다. Pro.",
+          "bullet4Body": "OPDS 피드만이 아니라 서버 자체 API에 직접 연결합니다. 읽기 위치가 양방향으로 동기화되고, Kavita에서는 북마크와 주석(하이라이트 및 메모)도 동기화됩니다. Pro.",
           "bullet5Title": "모든 OPDS 카탈로그",
           "bullet5Body": "OPDS 1.x와 OPDS-PSE 페이지 스트리밍을 지원해, Calibre-Web, COPS, Ubooquity 등 지원 서버에서 만화를 한 페이지씩 불러옵니다. Pro."
         },
@@ -404,7 +405,7 @@
           "eyebrow": "데스크톱에서 모바일로 스트리밍",
           "title": "라이브러리 허브. iPhone, Android, TV, Vision Pro로 스트리밍.",
           "badge": "타사 서버 불필요 · 구독 불필요",
-          "desc": "Mac과 PC에서 BiblioFuse는 큰 컬렉션을 위한 데스크톱 라이브러리 허브가 됩니다. 호스트에서 폴더를 관리한 뒤, 집에서는 Wi‑Fi로, 지원되는 기기에서는 Tailscale 5G로 iPhone, iPad, Android, Apple TV, Vision Pro의 BiblioFuse에 바로 스트리밍하세요.",
+          "desc": "NAS, Mac 또는 PC에서 BiblioFuse는 대규모 컬렉션을 위한 라이브러리 허브가 됩니다. 호스트에서 폴더를 관리하고 iPhone, iPhone Duo, iPad, Android, Apple TV, Vision Pro의 BiblioFuse로 책을 바로 스트리밍하세요. 집 Wi-Fi로, 또는 지원되는 경우 Tailscale을 이용해 5G로 원격 접속할 수 있습니다.",
           "bullet1Title": "로컬 Wi-Fi 스트리밍",
           "bullet1Body": "Mac 또는 PC 소스에서 즉시 탐색.",
           "bullet2Title": "원격 5G 스트리밍",
@@ -413,8 +414,10 @@
           "bullet3Body": "하나의 데스크톱 라이브러리와 이미 보관 중인 모든 폴더.",
           "bullet4Title": "옵션 PIN",
           "bullet4Body": "공유 네트워크에서 스트리밍 접근 잠금.",
-          "imageAlt": "분할 보기 리더가 있는 BiblioFuse 데스크톱 라이브러리",
-          "footnote": "원격 접근에는 호스트와 iOS 기기가 iCloud에 로그인되어 있고 Tailscale로 연결되어 있어야 합니다. 집과 외부 모두에서 가장 안정적으로 쓰려면 두 기기에서 Tailscale을 켜 두세요."
+          "imageAlt": "같은 구절을 연 iPad와 iPhone의 BiblioFuse — BiblioFuse Host, Kavita, Komga 간 진행 상황·북마크·주석 동기화",
+          "footnote": "원격 접근에는 호스트와 iOS 기기가 iCloud에 로그인되어 있고 Tailscale로 연결되어 있어야 합니다. 집과 외부 모두에서 가장 안정적으로 쓰려면 두 기기에서 Tailscale을 켜 두세요.",
+          "bullet5Title": "진행 상황·북마크·주석 동기화",
+          "bullet5Body": "읽기 위치, 북마크, 하이라이트, 메모가 CBZ, CBR, PDF, EPUB, TXT에서 기기 간에 이어집니다."
         }
       },
       "cta": "BiblioFuse Reader 다운로드",
@@ -558,8 +561,8 @@
       "appStore": "App Store에서 다운로드",
       "googlePlay": "Google Play에서 받기",
       "microsoftStore": "Microsoft에서 받기",
-      "heroStreaming": "iPhone의 BiblioFuse 위치 화면 — 기기 내, iCloud Drive, Mac 호스트의 서재",
-      "heroTranslation": "iPhone에서 만화 페이지 위에 표시된 BiblioFuse 실시간 번역 패널"
+      "heroStreaming": "iPhone의 BiblioFuse ‘OPDS 서버 추가’ 화면. 연결 유형으로 OPDS, Komga API, Kavita API 선택 가능",
+      "heroTranslation": "iPhone의 BiblioFuse 실시간 번역 설정 — BiblioFuse Pro로 기기에서 만화를 번역"
     },
     "seo": {
       "homeTitle": "BiblioFuse Reader: 개인 전자책 라이브러리, 5G Mac 스트리밍과 파일 도구",
@@ -586,6 +589,11 @@
     },
     "blog": {
       "posts": {
+        "kavita-reader-app-progress-bookmark-annotation-sync": {
+          "title": "iPhone, iPad, Android용 Kavita 리더 앱: 진행 상황, 북마크, 주석 동기화",
+          "excerpt": "BiblioFuse는 Kavita 자체 API로 연결하므로 읽기 진행 상황, 북마크, EPUB 하이라이트와 메모가 양방향으로 동기화됩니다. 형식별 동기화 지원 범위와 QR 코드 한 번으로 연결하는 방법을 안내합니다.",
+          "seoDescription": "BiblioFuse로 iPhone, iPad, Android에서 Kavita 읽기 진행 상황, 북마크, 하이라이트, 메모를 동기화하세요. CBZ, CBR, EPUB, PDF 지원과 QR 설정 방법."
+        },
         "digital-comic-library-management-guide": {
           "title": "iPhone과 Mac에서 디지털 만화 라이브러리 관리하기 완벽 가이드",
           "excerpt": "BiblioFuse는 iOS 17 이상용 네이티브 iPhone·iPad 리더로, CBZ, CBR, EPUB, PDF, ZIP, RAR, TXT 파일을 태그·평점·iCloud 동기화·Wi-Fi Transfer로 관리합니다. 이 가이드는 iPhone, iPad, Mac에서 디지털 만화 라이브러리를 정리·압축·전송·읽는 전 과정을 다룹니다.",
@@ -932,6 +940,31 @@
       }
     },
     "comicReaderPage": {
+      "duo": {
+        "eyebrow": "신규: iPhone Duo",
+        "title": "펼쳐도 읽던 자리 그대로.",
+        "desc": "BiblioFuse가 iPhone Duo를 지원합니다. 바깥 화면에서 챕터를 읽기 시작하고 힌지를 펼쳐도 같은 책이 같은 위치에 그대로 열려 있으며, 이제 두 페이지 펼침면을 온전히 볼 수 있습니다.",
+        "bullets": [
+          {
+            "title": "읽는 도중 접거나 펼치기",
+            "body": "리더가 열린 상태로 유지되고 읽던 구절이나 페이지로 돌아갑니다. 만화, PDF, EPUB, TXT 모두 지원합니다."
+          },
+          {
+            "title": "펼치면 두 페이지",
+            "body": "가로로 펼치면 양면 보기가 되고, 접으면 한 페이지 보기로 돌아갑니다."
+          },
+          {
+            "title": "화면마다 맞는 라이브러리 그리드",
+            "body": "자동 열 수가 바깥 화면과 안쪽 화면에 각각 맞춰지며, 접힘·펼침·세로·가로별로 원하는 열 수를 지정할 수도 있습니다."
+          },
+          {
+            "title": "모든 것이 동기화 상태로 유지",
+            "body": "읽기 위치, 북마크, 하이라이트, 메모가 iPad, Mac 및 다른 기기로 이어집니다."
+          }
+        ],
+        "note": "iPhone Duo 지원은 BiblioFuse 2.1.15부터 제공됩니다. iPhone, iPad, Mac, Vision Pro, Apple TV와 동일한 App Store 구매에 포함됩니다.",
+        "videoAlt": "iPhone Duo의 BiblioFuse: 접은 상태로 라이브러리를 둘러본 뒤 펼쳐서 시리즈 페이지와 만화 전체 페이지를 보는 모습"
+      },
       "vision": {
         "eyebrow": "이제 Apple Vision Pro에서",
         "badge": "네이티브 visionOS 앱",
@@ -1083,6 +1116,12 @@
             "tint": "violet"
           }
         ]
+      },
+      "ui": {
+        "selfHost": "또는 NAS에서 직접 호스팅:",
+        "webVersion": "설치 없이 쓰고 싶다면 웹 버전을 사용해 보세요",
+        "playDemo": "데모 재생",
+        "pause": "일시 정지"
       }
     },
     "androidInterest": {
@@ -1718,7 +1757,7 @@
             },
             {
               "q": "Kavita에는 어떻게 연결하며, 읽기 진행 상황이 동기화되나요?",
-              "a": "네, 양방향으로 동기화됩니다. 설정에서 Kavita 서버를 추가하면 BiblioFuse는 대부분의 리더 앱이 의존하는 OPDS-PSE 확장이 아니라 Kavita 고유의 API를 사용합니다 — 폭넓은 Kavita 생태계에서 자주 발생하는 진행 상황 동기화 문제의 상당 부분이 바로 이 확장에서 비롯됩니다. 읽기 위치는 양방향으로 동기화되고, 책 안의 책갈피도 동기화됩니다. Pro가 필요합니다.",
+              "a": "네, 양방향으로 동기화됩니다. 설정에서 Kavita 서버를 추가하면 BiblioFuse는 대부분의 리더 앱이 의존하는 OPDS-PSE 확장이 아니라 Kavita 고유의 API를 사용합니다 — 폭넓은 Kavita 생태계에서 자주 발생하는 진행 상황 동기화 문제의 상당 부분이 바로 이 확장에서 비롯됩니다. 읽기 위치는 양방향으로 동기화되고, 책 안의 책갈피도 동기화됩니다. Pro가 필요합니다. EPUB 하이라이트와 메모도 Kavita와 동기화되며, 어느 쪽에서든 추가·편집·삭제할 수 있습니다.",
               "bullets": []
             }
           ],
@@ -1726,6 +1765,10 @@
             {
               "to": "/tools/qr-generator/",
               "label": "Kavita나 Komga 서버용 QR 코드 만들기"
+            },
+            {
+              "to": "/blog/kavita-reader-app-progress-bookmark-annotation-sync/",
+              "label": "Kavita 동기화: 진행 상황, 북마크, 하이라이트, 메모"
             }
           ]
         },
@@ -2142,18 +2185,19 @@
     "groups": {
       "reading": "읽기",
       "libraries": "라이브러리 & 서버",
+      "sync": "동기화, 북마크 및 주석",
       "streaming": "내 컴퓨터에서 스트리밍",
       "input": "입력 & 플랫폼",
-      "formats": "File formats"
+      "formats": "파일 형식"
     },
     "cellNotes": {
       "lanOnlyTvos": "로컬 Wi-Fi만 지원. tvOS에서는 Tailscale이 충분히 안정적이지 않습니다",
       "noICloudRoute": "로컬 Wi-Fi와 수동 Tailscale 지원. iCloud 경로는 Apple 전용입니다",
       "lanOnly": "로컬 Wi-Fi만 지원",
       "tailscaleServe": "Tailscale Serve 및 서브넷 액세스",
-      "nasArchivesOnly": "CBZ/ZIP only",
+      "nasArchivesOnly": "CBZ/ZIP만",
       "nasNoPdf": "No PDF yet",
-      "tvosPartialLocale": "Partial UI translation"
+      "tvosPartialLocale": "UI 일부만 번역됨"
     },
     "features": {
       "live-translation": {
@@ -2170,7 +2214,7 @@
       },
       "dual-page-spreads": {
         "label": "두 페이지 펼침",
-        "note": "태블릿 가로 모드, 펼친 책처럼"
+        "note": "가로 방향 태블릿 또는 펼친 iPhone Duo에서 펼친 책처럼 표시"
       },
       "vertical-japanese": {
         "label": "일본어 세로쓰기 / 세로 EPUB",
@@ -2200,7 +2244,8 @@
         "note": "만화를 한 페이지씩. OPDS 2.0은 지원하지 않습니다."
       },
       "kavita-sync": {
-        "label": "Kavita 위치 & 북마크 동기화"
+        "label": "Kavita 위치·북마크·주석(하이라이트/메모) 동기화",
+        "note": "만화, EPUB, PDF는 위치와 북마크, EPUB은 하이라이트와 메모까지 동기화"
       },
       "folder-as-library": {
         "label": "폴더를 라이브러리처럼 탐색",
@@ -2267,12 +2312,40 @@
         "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
-        "label": "iCloud bookshelf",
-        "note": "Apple platforms only — the shelf and its metadata sync through your own iCloud."
+        "label": "iCloud 책장",
+        "note": "Apple 플랫폼 전용 — 책장과 메타데이터가 사용자 본인의 iCloud를 통해 동기화됩니다."
       },
       "ui-languages": {
-        "label": "Localised interface",
+        "label": "현지화된 인터페이스",
         "note": "Apple, Windows, NAS 브라우저 리더에서 11개 언어를 지원합니다."
+      },
+      "highlights-notes": {
+        "label": "하이라이트 및 메모",
+        "note": "EPUB, TXT, PDF의 텍스트 하이라이트와 만화의 페이지·영역 메모. 검색 가능한 하나의 목록으로 제공됩니다."
+      },
+      "host-sync": {
+        "label": "호스트 동기화: 위치, 북마크, 하이라이트, 메모",
+        "note": "같은 BiblioFuse 호스트에서 스트리밍하는 모든 기기가 책마다 하나의 상태를 공유 — CBZ, CBR, PDF, EPUB, TXT"
+      },
+      "icloud-sync": {
+        "label": "iCloud 책: 위치 및 북마크 동기화",
+        "note": "본인의 iCloud Drive에 있는 책을 다른 Apple 기기에서 정확한 위치부터 이어 읽습니다"
+      },
+      "iphone-duo": {
+        "label": "iPhone Duo 지원",
+        "note": "접어도 읽던 자리 유지, 펼치면 두 페이지 보기, 화면별 라이브러리 그리드"
+      },
+      "page-browser": {
+        "label": "페이지 브라우저",
+        "note": "만화와 PDF의 모든 페이지를 썸네일 그리드로 표시"
+      },
+      "fit-modes": {
+        "label": "콘텐츠에 맞춤, 높이에 맞춤 및 실제 크기",
+        "note": "만화 여백 자르기와 PDF 스캔 정리도 지원"
+      },
+      "e-ink": {
+        "label": "전자잉크 디스플레이 모드",
+        "note": "전자잉크 화면에 맞춘 리더"
       }
     },
     "specs": {

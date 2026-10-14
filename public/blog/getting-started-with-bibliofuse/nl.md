@@ -57,6 +57,8 @@ Om een mangaserie samen te voegen tot één volume, houd je meerdere CBZ-bestand
 - **Comic Duplicate Scanner** — een bijbehorende Mac-app die dubbele CBZ- en fotobestanden vindt via perceptuele hashing.
 
 
+Gebruik je een Kavita-server? Zie [Kavita-leesapp voor iPhone, iPad en Android: voortgang, bladwijzers en annotaties synchroniseren](https://bibliofuse.com/nl/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## Veelgestelde vragen
 
 **Welke bestandsformaten ondersteunt BiblioFuse?**

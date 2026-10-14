@@ -57,6 +57,8 @@ Pour fusionner une série manga en un seul volume, maintenez appuyé pour sélec
 - **Comic Duplicate Scanner** — une application Mac complémentaire qui trouve les fichiers CBZ et photos en double grâce au hachage perceptuel.
 
 
+Vous utilisez un serveur Kavita ? Consultez [Application de lecture Kavita pour iPhone, iPad et Android : synchronisation de la progression, des signets et des annotations](https://bibliofuse.com/fr/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## Questions fréquentes
 
 **Quels formats BiblioFuse prend-il en charge ?**

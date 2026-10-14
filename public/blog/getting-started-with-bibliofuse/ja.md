@@ -57,6 +57,8 @@ BiblioFuseはEPUB、PDF、CBZ、CBR、ZIP、RAR、TXTに対応しています。
 - **Comic Duplicate Scanner** — 知覚ハッシュを使って重複するCBZや写真ファイルを見つけるMac向けの姉妹アプリです。
 
 
+Kavitaサーバーをお使いですか？こちらをご覧ください： [iPhone・iPad・Android向けKavitaリーダーアプリ：進捗、ブックマーク、注釈を同期](https://bibliofuse.com/ja/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## よくある質問
 
 **BiblioFuseはどの形式に対応していますか？**

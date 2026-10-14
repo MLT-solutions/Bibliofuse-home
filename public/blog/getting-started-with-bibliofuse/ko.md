@@ -57,6 +57,8 @@ BiblioFuse는 EPUB, PDF, CBZ, CBR, ZIP, RAR, TXT를 지원합니다. 파일을 �
 - **Comic Duplicate Scanner** — 지각 해싱을 사용하여 중복 CBZ 및 사진 파일을 찾는 Mac 전용 동반 앱입니다.
 
 
+Kavita 서버를 사용 중이신가요? 참고: [iPhone, iPad, Android용 Kavita 리더 앱: 진행 상황, 북마크, 주석 동기화](https://bibliofuse.com/ko/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## 자주 묻는 질문
 
 **BiblioFuse는 어떤 형식을 지원하나요?**

@@ -97,6 +97,7 @@ export const PLATFORMS = [
 export const GROUPS = [
   { id: 'reading', label: 'Reading' },
   { id: 'libraries', label: 'Libraries & servers' },
+  { id: 'sync', label: 'Sync, bookmarks & annotations' },
   { id: 'streaming', label: 'Streaming from your own machine' },
   { id: 'formats', label: 'File formats' },
   { id: 'input', label: 'Input & platform' },
@@ -104,46 +105,53 @@ export const GROUPS = [
 
 // Release ladders: [version, date it became available]. Ascending by date.
 // Only releases that exist on that platform's store record or release commits.
+//
+// Updated 2026-10-14 for the 2.1.15 / 2.0.16 / 1.0.18.0 / 0.1.13 round. By product
+// decision the site does not track review state: a version is entered once it has been
+// submitted, so the matrix is not re-edited when a store approves it. At this date
+// macOS, visionOS and tvOS 2.1.15 were still in App Review.
 export const RELEASES = {
   ios: [
     ['2.0.1', '2026-05-13'], ['2.0.2', '2026-05-26'], ['2.0.3', '2026-06-02'],
     ['2.0.5', '2026-06-14'], ['2.1.1', '2026-06-26'], ['2.1.2', '2026-07-02'],
     ['2.1.3', '2026-07-08'], ['2.1.4', '2026-07-16'], ['2.1.7', '2026-07-27'],
-    ['2.1.8', '2026-08-06'], ['2.1.13', '2026-09-09'],
+    ['2.1.8', '2026-08-06'], ['2.1.13', '2026-09-09'], ['2.1.14', '2026-10-05'],
+    ['2.1.15', '2026-10-12'],
   ],
   macos: [
     ['2.0.1', '2026-05-09'], ['2.0.2', '2026-05-26'], ['2.0.5', '2026-06-14'],
     ['2.0.6', '2026-06-16'], ['2.1.0', '2026-06-26'], ['2.1.1', '2026-06-29'],
     ['2.1.2', '2026-07-02'], ['2.1.3', '2026-07-08'], ['2.1.4', '2026-07-16'],
     ['2.1.7', '2026-07-27'], ['2.1.8', '2026-08-09'], ['2.1.9', '2026-08-18'],
+    ['2.1.15', '2026-10-12'],
   ],
   visionos: [
     ['2.1.4', '2026-07-11'], ['2.1.5', '2026-07-17'], ['2.1.6', '2026-07-23'],
     ['2.1.7', '2026-07-27'], ['2.1.8', '2026-08-09'], ['2.1.9', '2026-08-18'],
-    ['2.1.12', '2026-08-24'],
+    ['2.1.12', '2026-08-24'], ['2.1.15', '2026-10-13'],
   ],
   tvos: [
-    ['2.1.5', '2026-07-15'], ['2.1.7', '2026-07-27'],
+    ['2.1.5', '2026-07-15'], ['2.1.7', '2026-07-27'], ['2.1.15', '2026-10-12'],
   ],
   android: [
     ['2.0.0', '2026-07-22'], ['2.0.3', '2026-07-23'], ['2.0.6', '2026-07-26'],
     ['2.0.7', '2026-08-12'], ['2.0.9', '2026-08-13'], ['2.0.11', '2026-08-17'],
-    ['2.0.13', '2026-09-03'], ['2.0.15', '2026-09-08'],
+    ['2.0.13', '2026-09-03'], ['2.0.15', '2026-09-08'], ['2.0.16', '2026-10-09'],
   ],
   androidtv: [
     ['2.0.0', '2026-07-22'], ['2.0.3', '2026-07-23'], ['2.0.6', '2026-07-26'],
     ['2.0.7', '2026-08-12'], ['2.0.9', '2026-08-13'], ['2.0.11', '2026-08-17'],
-    ['2.0.13', '2026-09-03'], ['2.0.15', '2026-09-08'],
+    ['2.0.13', '2026-09-03'], ['2.0.15', '2026-09-08'], ['2.0.16', '2026-10-09'],
   ],
   windows: [
     ['1.0.5.0', '2026-07-01'], ['1.0.6.0', '2026-07-02'], ['1.0.8.0', '2026-07-18'],
     ['1.0.10.0', '2026-08-10'], ['1.0.15.0', '2026-08-19'], ['1.0.16.0', '2026-09-04'],
-    ['1.0.17.0', '2026-09-07'],
+    ['1.0.17.0', '2026-09-07'], ['1.0.18.0', '2026-10-14'],
   ],
   nas: [
     ['0.1.2', '2026-07-19'], ['0.1.5', '2026-07-22'], ['0.1.6', '2026-07-26'],
     ['0.1.7', '2026-07-27'], ['0.1.9', '2026-08-07'], ['0.1.10', '2026-08-10'],
-    ['0.1.11', '2026-08-18'], ['0.1.12', '2026-09-02'],
+    ['0.1.11', '2026-08-18'], ['0.1.12', '2026-09-02'], ['0.1.13', '2026-10-10'],
   ],
 };
 
@@ -344,7 +352,7 @@ export const FEATURES = [
     platforms: {
       ios: s('2026-06-05'), macos: s('2026-06-05'), visionos: s('2026-06-20'),
       tvos: p('2026-07-02', 'tvosPartialLocale'), android: s('2026-06-12'),
-      androidtv: p('2026-07-10', 'tvosPartialLocale'), windows: s('2026-06-05'), nas: s('2026-07-26'),
+      androidtv: s('2026-10-05'), windows: s('2026-06-05'), nas: s('2026-07-26'),
     },
   },
 
@@ -407,13 +415,13 @@ export const FEATURES = [
     id: 'dual-page-spreads',
     group: 'reading',
     label: 'Dual-page spreads',
-    note: 'Landscape tablet, like an open book',
+    note: 'Landscape tablet or unfolded iPhone Duo, like an open book',
     pro: false,
-    aliases: ['spreads', 'two page', 'two-up', 'side by side', 'landscape', 'tablet', 'iPad', 'double page'],
+    aliases: ['spreads', 'two page', 'two-up', 'side by side', 'landscape', 'tablet', 'iPad', 'double page', 'iPhone Duo', 'foldable'],
     platforms: {
       ios: s('2026-08-21'),
       macos: na,
-      visionos: na,
+      visionos: s('2026-10-11'),
       tvos: na,
       android: s('2026-08-21'),
       androidtv: na,
@@ -450,7 +458,7 @@ export const FEATURES = [
       ios: s('2026-08-08'),
       macos: s('2026-08-08'),
       visionos: s('2026-08-08'),
-      tvos: m('2026-08-08'),
+      tvos: s('2026-08-08'),
       android: s('2026-08-11'),
       androidtv: na,
       windows: s('2026-08-10'),
@@ -467,7 +475,7 @@ export const FEATURES = [
     platforms: {
       ios: s('2026-08-13'),
       macos: na,
-      visionos: na,
+      visionos: s('2026-10-11'),
       tvos: na,
       android: s('2026-08-13'),
       androidtv: na,
@@ -502,13 +510,68 @@ export const FEATURES = [
     aliases: ['continuous', 'webtoon', 'long strip', 'scroll', 'fit width', 'auto-scroll', 'page down', 'vertical scroll'],
     platforms: {
       ios: s('2026-09-01'),
-      macos: m('2026-09-01'),
-      visionos: m('2026-09-01'),
+      macos: s('2026-09-01'),
+      visionos: s('2026-09-01'),
       tvos: na,
       android: s('2026-08-13'),
       androidtv: na,
       windows: s('2026-09-07'),
       nas: s('2026-09-02'),
+    },
+  },
+
+  {
+    id: 'page-browser',
+    group: 'reading',
+    label: 'Page Browser',
+    note: 'A thumbnail grid of every page in comics and PDF',
+    pro: false,
+    aliases: ['thumbnails', 'page grid', 'page overview', 'jump to page', 'minimap', 'scrubber'],
+    platforms: {
+      ios: s('2026-09-13'),
+      macos: na,
+      visionos: s('2026-10-11'),
+      tvos: na,
+      android: s('2026-10-09'),
+      androidtv: na,
+      windows: na,
+      nas: na,
+    },
+  },
+  {
+    id: 'fit-modes',
+    group: 'reading',
+    label: 'Fit Content, Fit Height & Actual Size',
+    note: 'Plus margin cropping for comics and scan clean-up for PDF',
+    pro: false,
+    aliases: ['fit', 'fit width', 'fit page', 'zoom', 'crop', 'crop margins', 'auto crop', 'contrast', 'grayscale', 'scan'],
+    platforms: {
+      ios: s('2026-09-12'),
+      macos: na,
+      visionos: s('2026-10-11'),
+      tvos: na,
+      android: na,
+      androidtv: na,
+      windows: na,
+      nas: na,
+    },
+  },
+  {
+    id: 'e-ink',
+    group: 'reading',
+    label: 'E-ink display mode',
+    note: 'A reader tuned for e-ink screens',
+    pro: false,
+    aliases: ['e-ink', 'eink', 'e-paper', 'Boox', 'Onyx', 'e-reader', 'monochrome'],
+    platforms: {
+      ios: na,
+      macos: na,
+      visionos: na,
+      tvos: na,
+      android: s('2026-09-13'),
+      androidtv: na,
+      windows: na,
+      nas: na,
     },
   },
 
@@ -551,17 +614,78 @@ export const FEATURES = [
   },
   {
     id: 'kavita-sync',
-    group: 'libraries',
-    label: 'Kavita position & bookmark sync',
-    note: null,
+    group: 'sync',
+    label: 'Kavita position, bookmark & annotation (highlight/note) sync',
+    // Position and bookmark sync date from 2026-08-13; EPUB highlight and note sync
+    // followed in iOS 2.1.14 and Android 2.0.16. One row, so `since` is the earlier date.
+    note: 'Position and bookmarks for comics, EPUB and PDF; highlights and notes for EPUB',
     pro: true,
-    aliases: ['bookmark', 'resume', 'reading position', 'progress sync', 'continue reading', 'cross-device'],
+    aliases: ['bookmark', 'resume', 'reading position', 'progress sync', 'continue reading', 'cross-device', 'annotation', 'annotations', 'highlight', 'highlights', 'note', 'notes'],
     platforms: {
       ios: s('2026-08-13'),
       macos: na,
-      visionos: na,
+      visionos: s('2026-10-13'),
       tvos: na,
       android: s('2026-08-13'),
+      androidtv: na,
+      windows: na,
+      nas: na,
+    },
+  },
+  // ── Added 2026-10-14: reader annotations and the shared-state work of Sept–Oct ──
+  // Sources: bibliofuse_iosv2 docs/features/reader-annotations.md and
+  // reader-bookmarks.md, bibliofuse-android-native docs/features/reader-annotations.md,
+  // bibliofuse-windows docs/features/streaming-to-ios.md and readers.md, bibliofuse-nas
+  // docs/features/web-reader.md and native-streaming.md.
+  {
+    id: 'highlights-notes',
+    group: 'sync',
+    label: 'Highlights & notes',
+    note: 'Text highlights in EPUB, TXT and PDF; page and region notes on comics. One searchable list.',
+    pro: false,
+    aliases: ['annotation', 'annotations', 'highlight', 'highlighter', 'note', 'notes', 'markup', 'region note', 'page note', 'underline'],
+    platforms: {
+      ios: s('2026-09-12'),
+      macos: s('2026-09-13'),
+      visionos: s('2026-10-11'),
+      tvos: na,
+      android: s('2026-10-05'),
+      androidtv: na,
+      windows: s('2026-10-09'),
+      nas: s('2026-10-06'),
+    },
+  },
+  {
+    id: 'host-sync',
+    group: 'sync',
+    label: 'Host sync: position, bookmarks, highlights & notes',
+    note: 'One shared state per book for every device streaming from the same BiblioFuse host — CBZ, CBR, PDF, EPUB and TXT',
+    pro: true,
+    aliases: ['sync', 'cross-device', 'resume', 'reading position', 'bookmark', 'annotation', 'highlight', 'note', 'host', 'NAS', 'Mac', 'PC', 'continue reading'],
+    platforms: {
+      ios: s('2026-10-08'),
+      macos: s('2026-10-08'),
+      visionos: s('2026-10-11'),
+      tvos: s('2026-10-11'),
+      android: s('2026-10-08'),
+      androidtv: na,
+      windows: s('2026-10-09'),
+      nas: s('2026-10-08'),
+    },
+  },
+  {
+    id: 'icloud-sync',
+    group: 'sync',
+    label: 'iCloud books: position & bookmark sync',
+    note: 'Books in your own iCloud Drive resume at the exact place on your other Apple devices',
+    pro: true,
+    aliases: ['iCloud', 'iCloud Drive', 'sync', 'resume', 'cross-device', 'bookmark', 'reading position', 'Apple'],
+    platforms: {
+      ios: s('2026-10-08'),
+      macos: s('2026-10-08'),
+      visionos: s('2026-10-11'),
+      tvos: na,
+      android: na,
       androidtv: na,
       windows: na,
       nas: na,
@@ -810,6 +934,24 @@ export const FEATURES = [
       visionos: s('2026-07-11'),
       tvos: na,
       android: s('2026-07-15'),
+      androidtv: na,
+      windows: na,
+      nas: na,
+    },
+  },
+  {
+    id: 'iphone-duo',
+    group: 'input',
+    label: 'iPhone Duo support',
+    note: 'Keeps your place across a fold, two-page spreads when open, a library grid per screen',
+    pro: false,
+    aliases: ['iPhone Duo', 'Duo', 'foldable', 'fold', 'unfold', 'hinge', 'folding iPhone'],
+    platforms: {
+      ios: s('2026-10-12'),
+      macos: na,
+      visionos: na,
+      tvos: na,
+      android: na,
       androidtv: na,
       windows: na,
       nas: na,

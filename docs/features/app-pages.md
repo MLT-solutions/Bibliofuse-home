@@ -162,6 +162,31 @@ in the supplied source/fallback. The separate GUI demo is
 not loaded on this already media-heavy page because it repeats the all-device hero
 story.
 
+`FeatureVideo` takes `sources`, `poster`, `frameClass` and `maxWidthClass` props that
+default to the navigation demo, so `DuoSection` reuses it for its own clip. Its
+play/pause label, the hero's "Or self-host on a NAS:" line and the web-version link are
+translated under `redesign.comicReaderPage.ui.*`.
+
+The third feature row (streaming) shows the App Store "resume & sync" artwork rather
+than a Mac screenshot: `public/image/comicreader/sync/resume-sync-<lang>.jpg`, one per
+site locale (`SYNC_IMAGE_LANGS`, English fallback), exported at 791 px wide from the
+localized ASC set (`pt` uses the pt-BR export, `zh` the zh-Hans one). It renders in the
+default portrait frame, and the row has a fifth bullet for progress, bookmark and
+annotation sync.
+
+### iPhone Duo section (`/comicreader/`, added 2026-10-14)
+`DuoSection` (inline in `ComicReader.jsx`, rendered after the feature rows and directly
+before `VisionProSection`), `id="iphone-duo"`. A light band, unlike the dark Vision Pro
+and Apple TV sections below: the demo clip has a white background and no alpha channel.
+The clip is `public/image/comicreader/duo/iphone-duo-demo.mp4` (736x720, 30 fps H.264,
+0.63 MB, re-encoded from a 7.4 MB 60 fps screen recording) with a matching poster; it
+plays through `FeatureVideo`, so it starts in view, pauses out of view, and stays still
+for reduced-motion visitors. Copy under `redesign.comicReaderPage.duo.*`, translated in
+all 11 locales; `duo.title` is in the page's schema `featureList`. The four claims come
+from `bibliofuse_iosv2` `docs/features/library-and-formats.md` (grid columns per shape,
+the layout held still while a reader is open, spreads following the hinge). The
+`iphoneduo` pill in `DevicePills.jsx` is shown in the Home and Reader heroes.
+
 ### Edition comparison table (`/comicreader/`, updated 2026-08-20)
 `ComparisonTable`, `id="comparison-table"`, rendered on `/comicreader/` right after
 `VisionProSection`: an 11-row feature table across 4 editions (Apple, PC, Android, and
@@ -493,8 +518,12 @@ the build does not catch this.
 
 **Hero artwork, replaced 2026-09-10.** The three phone shots are App Store screenshots
 resized to 416x900 JPEG in `public/image/home/`: `hero-formats.jpg` (Hero),
-`hero-streaming.jpg` (SecondHero, the Locations screen showing device / iCloud Drive / Mac
-sources), `hero-translation.jpg` (ThirdHero, the live-translation panel over a page). They
+`hero-streaming-<lang>.jpg` (SecondHero, the Add OPDS Server screen with its OPDS / Komga /
+Kavita connection types), `hero-translation-<lang>.jpg` (ThirdHero, the Live Translation
+settings screen). Since 2026-10-14 these two are the localized App Store artwork, one
+828x1800 export per site locale chosen by `heroImageLang()` in `Home.jsx` (English
+fallback; `pt` is the pt-BR set, `zh` the zh-Hans one), and their alt texts
+(`redesign.altTexts.heroStreaming` / `heroTranslation`) describe those screens. They
 replaced `/image/offline-apps/bibliofuse/iphone/1.png`, which was a 1.8 MB PNG rendered
 into a 380px slot and was the homepage LCP element; the same file was used for two
 different sections. Sources are on the NAS at

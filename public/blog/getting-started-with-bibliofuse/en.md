@@ -58,6 +58,8 @@ Once your library is set up, a few things are worth trying:
 - **iCloud Bookshelf** — enable it under Settings to sync your entire library, reading positions, tags, and ratings across iPhone, iPad, and Mac automatically.
 - **Comic Duplicate Scanner** — a companion Mac app that finds duplicate CBZ and photo files using perceptual hashing, so you can clean up without reviewing every file by hand.
 
+Using a Kavita server? See [Kavita Reader App for iPhone, iPad and Android: Progress, Bookmark and Annotation Sync](https://bibliofuse.com/en/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## Frequently Asked Questions
 
 **What formats does BiblioFuse support?**

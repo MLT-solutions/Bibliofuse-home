@@ -119,7 +119,7 @@ function Hero({ lang }) {
             <MicrosoftStoreImageBadge href={bibliofusePcUrl} />
           </div>
 
-          <DevicePills devices={['iphone', 'ipad', 'mac', 'visionpro', 'appletv', 'androidphone', 'androidtablet', 'androidtv', 'windows', 'docker', 'synology']} tone="light" align="start" className="mt-5" />
+          <DevicePills devices={['iphone', 'iphoneduo', 'ipad', 'mac', 'visionpro', 'appletv', 'androidphone', 'androidtablet', 'androidtv', 'windows', 'docker', 'synology']} tone="light" align="start" className="mt-5" />
 
           <Link
             to={`/${lang}/comicreader/`}
@@ -190,6 +190,11 @@ function Hero({ lang }) {
 
 
 
+// The second and third hero images are the localized App Store artwork, one export per
+// site locale in public/image/home/ (pt uses the pt-BR set, zh the zh-Hans one).
+const HERO_IMAGE_LANGS = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
+const heroImageLang = (lang) => (HERO_IMAGE_LANGS.includes(lang) ? lang : 'en');
+
 // Second hero: streaming & sync. The three sources it names — a BiblioFuse host app, your
 // own iCloud Drive, and a third-party OPDS/Komga/Kavita server — are the three answers to
 // "my phone is full", which is the objection that actually stops people buying a comic
@@ -232,7 +237,7 @@ function SecondHero({ lang }) {
         </div>
         <div className="relative mx-auto w-full max-w-[300px] lg:justify-self-end">
           <div className="absolute -inset-10 -z-0 rounded-full bg-[radial-gradient(circle,rgba(61,219,196,0.22),transparent_68%)]" />
-          <img src="/image/home/hero-streaming.jpg" alt={t('redesign.altTexts.heroStreaming')} width="416" height="900" className="relative z-10 block w-full drop-shadow-2xl" loading="lazy" />
+          <img src={`/image/home/hero-streaming-${heroImageLang(lang)}.jpg`} alt={t('redesign.altTexts.heroStreaming')} width="828" height="1800" className="relative z-10 block w-full rounded-[1.6rem] shadow-[0_18px_40px_rgba(0,0,0,0.45)]" loading="lazy" />
         </div>
       </div>
     </section>
@@ -255,10 +260,10 @@ function ThirdHero({ lang }) {
         <div className="relative mx-auto w-full max-w-[300px] lg:order-1 lg:justify-self-start">
           <div className="absolute -inset-10 -z-0 rounded-full bg-[radial-gradient(circle,rgba(139,92,246,0.16),transparent_68%)]" />
           <img
-            src="/image/home/hero-translation.jpg"
+            src={`/image/home/hero-translation-${heroImageLang(lang)}.jpg`}
             alt={t('redesign.altTexts.heroTranslation')}
-            width="416"
-            height="900"
+            width="828"
+            height="1800"
             loading="lazy"
             className="relative z-10 block w-full rounded-[1.6rem] shadow-[0_18px_40px_rgba(15,23,42,0.18)]"
           />

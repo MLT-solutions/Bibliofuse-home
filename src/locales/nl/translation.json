@@ -294,7 +294,8 @@
           "Verbind direct met OPDS 1.x, OPDS-PSE, Komga of Kavita (Pro)",
           "Stream vanaf de BiblioFuse host-app op Mac, pc, Synology of Docker",
           "Lees vanaf je eigen iCloud Drive — boeken laden zodra je ze opent (Pro)",
-          "Leespositie en bladwijzers blijven synchroon op al je apparaten"
+          "Leespositie en bladwijzers blijven synchroon op al je apparaten",
+          "Markeringen en notities toevoegen, bewerken en verwijderen, gesynchroniseerd tussen je apparaten"
         ]
       },
       "toolsStrip": {
@@ -380,7 +381,7 @@
           "bullet3Body": "ga verder op iPhone waar je stopte op iPad.",
           "imageAlt": "BiblioFuse-bibliotheek met tags, beoordelingen en leesvoortgang",
           "bullet4Title": "Native Komga- en Kavita-API",
-          "bullet4Body": "Verbind rechtstreeks met de eigen API van je server — niet alleen een OPDS-feed — met leespositie die twee kanten op synchroniseert, en bladwijzersynchronisatie op Kavita. Pro.",
+          "bullet4Body": "Maak rechtstreeks verbinding met de API van je server, niet alleen met een OPDS-feed, met leespositie die in beide richtingen synchroniseert, plus synchronisatie van bladwijzers en annotaties (markeringen en notities) op Kavita. Pro.",
           "bullet5Title": "Elke OPDS-catalogus",
           "bullet5Body": "OPDS 1.x met OPDS-PSE-paginastreaming, zodat strips pagina voor pagina binnenkomen vanuit Calibre-Web, COPS, Ubooquity of alles wat het protocol spreekt. Pro."
         },
@@ -404,7 +405,7 @@
           "eyebrow": "Desktop streamt naar mobiel",
           "title": "Bibliotheekhub. Stream naar je iPhone, Android, tv en Vision Pro.",
           "badge": "Geen server van derden · Geen abonnement",
-          "desc": "Op Mac en pc wordt BiblioFuse een desktopbibliotheekhub voor grote collecties. Beheer mappen op de host en stream boeken rechtstreeks naar BiblioFuse op iPhone, iPad, Android, Apple TV en Vision Pro — via Wi‑Fi thuis of, waar ondersteund, extern via 5G met Tailscale.",
+          "desc": "Op een NAS, Mac of pc wordt BiblioFuse een bibliotheekhub voor grote collecties. Beheer mappen op de host en stream boeken rechtstreeks naar BiblioFuse op iPhone, iPhone Duo, iPad, Android, Apple TV en Vision Pro — via wifi thuis, of op afstand via 5G met Tailscale waar dat wordt ondersteund.",
           "bullet1Title": "Lokale Wi-Fi-streaming",
           "bullet1Body": "direct bladeren vanaf een Mac- of pc-bron.",
           "bullet2Title": "Externe 5G-streaming",
@@ -413,8 +414,10 @@
           "bullet3Body": "één desktopbibliotheek, elke map die je al bewaart.",
           "bullet4Title": "Optionele pincode",
           "bullet4Body": "vergrendel streamingtoegang op gedeelde netwerken.",
-          "imageAlt": "BiblioFuse desktopbibliotheek met split-view lezer",
-          "footnote": "Voor externe toegang moeten host en iOS-apparaat zijn aangemeld bij iCloud en verbonden zijn via Tailscale. Houd Tailscale op beide apparaten aan voor de meest consistente thuis- en externe setup."
+          "imageAlt": "BiblioFuse op iPad en iPhone geopend op dezelfde passage — synchronisatie van voortgang, bladwijzers en annotaties tussen BiblioFuse Host, Kavita en Komga",
+          "footnote": "Voor externe toegang moeten host en iOS-apparaat zijn aangemeld bij iCloud en verbonden zijn via Tailscale. Houd Tailscale op beide apparaten aan voor de meest consistente thuis- en externe setup.",
+          "bullet5Title": "Voortgang, bladwijzers en annotaties gesynchroniseerd",
+          "bullet5Body": "leespositie, bladwijzers, markeringen en notities gaan met je mee tussen apparaten voor CBZ, CBR, PDF, EPUB en TXT."
         }
       },
       "cta": "BiblioFuse Reader downloaden",
@@ -558,8 +561,8 @@
       "appStore": "Download in de App Store",
       "googlePlay": "Download op Google Play",
       "microsoftStore": "Download bij Microsoft",
-      "heroStreaming": "BiblioFuse Locaties-scherm op iPhone — bibliotheken op het apparaat, in iCloud Drive en op een Mac-host",
-      "heroTranslation": "BiblioFuse live-vertaalpaneel over een strippagina op iPhone"
+      "heroStreaming": "Scherm OPDS-server toevoegen in BiblioFuse op iPhone, met de verbindingstypen OPDS, Komga-API en Kavita-API",
+      "heroTranslation": "Instellingen voor Live vertaling in BiblioFuse op iPhone — strips en manga op het apparaat vertalen met BiblioFuse Pro"
     },
     "seo": {
       "homeTitle": "BiblioFuse Reader: privé e-bookbeheer, 5G Mac-streaming en tools",
@@ -586,6 +589,11 @@
     },
     "blog": {
       "posts": {
+        "kavita-reader-app-progress-bookmark-annotation-sync": {
+          "title": "Kavita-leesapp voor iPhone, iPad en Android: voortgang, bladwijzers en annotaties synchroniseren",
+          "excerpt": "BiblioFuse maakt verbinding met Kavita via de eigen API, zodat leesvoortgang, bladwijzers en EPUB-markeringen en -notities in beide richtingen synchroniseren. Wat er per formaat synchroniseert en hoe je verbindt met één QR-scan.",
+          "seoDescription": "Synchroniseer Kavita-leesvoortgang, bladwijzers, markeringen en notities op iPhone, iPad en Android met BiblioFuse. Ondersteuning voor CBZ, CBR, EPUB en PDF, plus QR-installatie."
+        },
         "digital-comic-library-management-guide": {
           "title": "Gids voor Stripbibliotheek Beheer",
           "excerpt": "BiblioFuse is een native iPhone- en iPad-lezer voor iOS 17+ die CBZ-, CBR-, EPUB-, PDF-, ZIP-, RAR- en TXT-bestanden beheert met tags, beoordelingen, iCloud-synchronisatie en Wi-Fi Transfer. Deze gids behandelt het organiseren, comprimeren, overbrengen en lezen van je volledige digitale stripbibliotheek op iPhone, iPad en Mac.",
@@ -932,6 +940,31 @@
       }
     },
     "comicReaderPage": {
+      "duo": {
+        "eyebrow": "Nieuw: iPhone Duo",
+        "title": "Vouw open. Blijf waar je was.",
+        "desc": "BiblioFuse is klaar voor de iPhone Duo. Begin een hoofdstuk op het buitenscherm, open het scharnier en hetzelfde boek staat nog op dezelfde plek open — nu met ruimte voor een volledige dubbele pagina.",
+        "bullets": [
+          {
+            "title": "Midden op een pagina open- of dichtvouwen",
+            "body": "de lezer blijft open en keert terug naar de passage of pagina waar je was, in strips, PDF, EPUB en TXT."
+          },
+          {
+            "title": "Twee pagina’s wanneer hij open is",
+            "body": "vouw open in liggende stand voor pagina’s naast elkaar; vouw dicht en je hebt weer één pagina."
+          },
+          {
+            "title": "Een bibliotheekraster voor elk scherm",
+            "body": "automatische kolommen passen zich apart aan het buiten- en binnenscherm aan, of kies zelf een aantal voor dichtgevouwen, opengevouwen, staand en liggend."
+          },
+          {
+            "title": "Alles blijft gesynchroniseerd",
+            "body": "leespositie, bladwijzers, markeringen en notities gaan mee naar je iPad, Mac en andere apparaten."
+          }
+        ],
+        "note": "Ondersteuning voor iPhone Duo komt met BiblioFuse 2.1.15. Het is dezelfde App Store-aankoop als voor iPhone, iPad, Mac, Vision Pro en Apple TV.",
+        "videoAlt": "BiblioFuse op iPhone Duo: dichtgevouwen door de bibliotheek bladeren en daarna openvouwen naar een seriepagina en een volledige strippagina"
+      },
       "vision": {
         "eyebrow": "Nu op Apple Vision Pro",
         "badge": "Native visionOS-app",
@@ -1083,6 +1116,12 @@
             "tint": "violet"
           }
         ]
+      },
+      "ui": {
+        "selfHost": "Of host het zelf op een NAS:",
+        "webVersion": "Liever niets installeren? Probeer de webversie",
+        "playDemo": "Demo afspelen",
+        "pause": "Pauzeren"
       }
     },
     "androidInterest": {
@@ -1718,7 +1757,7 @@
             },
             {
               "q": "Hoe verbind ik met Kavita, en synchroniseert mijn leesvoortgang?",
-              "a": "Ja, in beide richtingen. Voeg je Kavita-server toe in Instellingen, en BiblioFuse gebruikt Kavita's eigen API in plaats van de OPDS-PSE-extensie waar de meeste leesapps op leunen — wat de bron is van veel voortgangssynchronisatieproblemen in het bredere Kavita-ecosysteem. Leespositie synchroniseert beide kanten op, en bladwijzers in het boek synchroniseren ook. Pro vereist.",
+              "a": "Ja, in beide richtingen. Voeg je Kavita-server toe in Instellingen, en BiblioFuse gebruikt Kavita's eigen API in plaats van de OPDS-PSE-extensie waar de meeste leesapps op leunen — wat de bron is van veel voortgangssynchronisatieproblemen in het bredere Kavita-ecosysteem. Leespositie synchroniseert beide kanten op, en bladwijzers in het boek synchroniseren ook. Pro vereist. EPUB-markeringen en -notities synchroniseren ook met Kavita — voeg ze toe, bewerk of verwijder ze aan beide kanten.",
               "bullets": []
             }
           ],
@@ -1726,6 +1765,10 @@
             {
               "to": "/tools/qr-generator/",
               "label": "Maak een QR-code voor je Kavita- of Komga-server"
+            },
+            {
+              "to": "/blog/kavita-reader-app-progress-bookmark-annotation-sync/",
+              "label": "Kavita-synchronisatie: voortgang, bladwijzers, markeringen en notities"
             }
           ]
         },
@@ -2142,18 +2185,19 @@
     "groups": {
       "reading": "Lezen",
       "libraries": "Bibliotheken en servers",
+      "sync": "Synchronisatie, bladwijzers en annotaties",
       "streaming": "Streamen vanaf je eigen computer",
       "input": "Invoer en platform",
-      "formats": "File formats"
+      "formats": "Bestandsformaten"
     },
     "cellNotes": {
       "lanOnlyTvos": "Alleen lokale wifi; Tailscale is op tvOS niet betrouwbaar genoeg",
       "noICloudRoute": "Lokale wifi en handmatige Tailscale; de iCloud-route is alleen voor Apple",
       "lanOnly": "Alleen lokale wifi",
       "tailscaleServe": "Tailscale Serve en subnet-toegang",
-      "nasArchivesOnly": "CBZ/ZIP only",
+      "nasArchivesOnly": "Alleen CBZ/ZIP",
       "nasNoPdf": "No PDF yet",
-      "tvosPartialLocale": "Partial UI translation"
+      "tvosPartialLocale": "Interface gedeeltelijk vertaald"
     },
     "features": {
       "live-translation": {
@@ -2170,7 +2214,7 @@
       },
       "dual-page-spreads": {
         "label": "Dubbele pagina’s",
-        "note": "Tablet in liggende stand, als een open boek"
+        "note": "Tablet in liggende stand of opengevouwen iPhone Duo, als een open boek"
       },
       "vertical-japanese": {
         "label": "Verticaal Japans / verticale EPUB",
@@ -2200,7 +2244,8 @@
         "note": "Strips pagina voor pagina. OPDS 2.0 wordt niet ondersteund."
       },
       "kavita-sync": {
-        "label": "Kavita-positie en bladwijzers synchroniseren"
+        "label": "Kavita-synchronisatie van positie, bladwijzers en annotaties (markeringen/notities)",
+        "note": "Positie en bladwijzers voor strips, EPUB en PDF; markeringen en notities voor EPUB"
       },
       "folder-as-library": {
         "label": "Map als bibliotheek doorzoeken",
@@ -2267,12 +2312,40 @@
         "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
-        "label": "iCloud bookshelf",
-        "note": "Apple platforms only — the shelf and its metadata sync through your own iCloud."
+        "label": "iCloud-boekenplank",
+        "note": "Alleen Apple-platforms — de plank en de metadata synchroniseren via je eigen iCloud."
       },
       "ui-languages": {
-        "label": "Localised interface",
+        "label": "Vertaalde interface",
         "note": "11 talen op Apple, Windows en de NAS-browserlezer."
+      },
+      "highlights-notes": {
+        "label": "Markeringen en notities",
+        "note": "Tekstmarkeringen in EPUB, TXT en PDF; pagina- en gebiedsnotities bij strips. Eén doorzoekbare lijst."
+      },
+      "host-sync": {
+        "label": "Hostsynchronisatie: positie, bladwijzers, markeringen en notities",
+        "note": "Eén gedeelde status per boek voor elk apparaat dat vanaf dezelfde BiblioFuse-host streamt — CBZ, CBR, PDF, EPUB en TXT"
+      },
+      "icloud-sync": {
+        "label": "iCloud-boeken: synchronisatie van positie en bladwijzers",
+        "note": "Boeken in je eigen iCloud Drive gaan op precies dezelfde plek verder op je andere Apple-apparaten"
+      },
+      "iphone-duo": {
+        "label": "Ondersteuning voor iPhone Duo",
+        "note": "Houdt je plek vast bij het vouwen, twee pagina’s wanneer open, een bibliotheekraster per scherm"
+      },
+      "page-browser": {
+        "label": "Paginabrowser",
+        "note": "Een raster met miniaturen van elke pagina in strips en PDF"
+      },
+      "fit-modes": {
+        "label": "Passend op inhoud, passend op hoogte en ware grootte",
+        "note": "Plus marges bijsnijden voor strips en scans opschonen voor PDF"
+      },
+      "e-ink": {
+        "label": "E-ink-weergavemodus",
+        "note": "Een lezer afgestemd op e-ink-schermen"
       }
     },
     "specs": {

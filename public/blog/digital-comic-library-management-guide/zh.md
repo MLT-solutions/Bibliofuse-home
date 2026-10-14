@@ -78,6 +78,8 @@ BiblioFuse 是 iPhone 漫画库管理的有力选择，因为它支持所有主�
 **BiblioFuse 在 iPhone 上可以管理哪些格式？**
 BiblioFuse 在 iPhone 上管理 CBZ、CBR、EPUB、PDF、ZIP、RAR 和 TXT 文件。您可以在一个书库中打开、阅读、标签、评分和整理所有这些格式。
 
+在用 Kavita 服务器？请参阅 [适用于 iPhone、iPad 和 Android 的 Kavita 阅读应用：同步进度、书签与批注](https://bibliofuse.com/zh/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## 立即构建您的完美漫画书库
 
 散落在文件夹、云服务和电子邮件附件中的收藏令人沮丧。使用 [BiblioFuse](/zh/)，您可以在 iPhone 上拥有一个与 Mac 保持同步、支持所有主要漫画格式、并能在几秒钟内无线传输文件的整洁书库。先用 [BiblioFuse 网页工具](/zh/tools/)压缩过大的文件，再传输到 iPhone，尽情享受属于您的收藏。

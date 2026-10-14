@@ -196,6 +196,11 @@
         "update": "Update"
       },
       "posts": {
+        "kavita-reader-app-progress-bookmark-annotation-sync": {
+          "title": "Kavita Reader App for iPhone, iPad and Android: Progress, Bookmark and Annotation Sync",
+          "excerpt": "BiblioFuse connects to Kavita through its own API, so reading progress, bookmarks, and EPUB highlights and notes sync both ways. What syncs per format, and how to connect with one QR scan.",
+          "seoDescription": "Sync Kavita reading progress, bookmarks, highlights and notes on iPhone, iPad and Android with BiblioFuse. Format support for CBZ, CBR, EPUB and PDF, plus QR setup."
+        },
         "digital-comic-library-management-guide": {
           "title": "Digital Comic Library Management Guide",
           "excerpt": "BiblioFuse is a native iPhone and iPad reader for iOS 17+ that manages CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT files with tags, ratings, iCloud sync, and Wi-Fi Transfer. This guide covers organizing, compressing, transferring, and reading your entire digital comic library on iPhone, iPad, and Mac.",
@@ -359,7 +364,8 @@
           "Connect straight to OPDS 1.x, OPDS-PSE, Komga or Kavita (Pro)",
           "Stream from the BiblioFuse host app on Mac, PC, Synology or Docker",
           "Read from your own iCloud Drive — books load when you open them (Pro)",
-          "Reading position and bookmarks stay in sync across your devices"
+          "Reading position and bookmarks stay in sync across your devices",
+          "Add, edit and delete highlights and notes, synced across your devices"
         ]
       },
       "toolsStrip": {
@@ -505,7 +511,7 @@
           "bullet3Body": "pick up on iPhone where you stopped on iPad.",
           "imageAlt": "BiblioFuse library with tags, ratings and reading progress",
           "bullet4Title": "Native Komga & Kavita",
-          "bullet4Body": "Connect straight to your server’s own API — not just an OPDS feed — with reading position syncing both ways, and bookmark sync on Kavita. Pro.",
+          "bullet4Body": "Connect straight to your server’s own API — not just an OPDS feed — with reading position syncing both ways, plus bookmark and annotation (highlight and note) sync on Kavita. Pro.",
           "bullet5Title": "Any OPDS catalogue",
           "bullet5Body": "OPDS 1.x with OPDS-PSE page streaming, so comics arrive a page at a time from Calibre-Web, COPS, Ubooquity or anything else that speaks it. Pro."
         },
@@ -529,7 +535,7 @@
           "eyebrow": "Desktop streams to mobile",
           "title": "Library hub. Streams to your iPhone, Android, TV, Vision Pro.",
           "badge": "No third-party server · No subscription",
-          "desc": "On Mac and PC, BiblioFuse becomes a desktop library hub for large collections. Manage folders on the host, then stream books straight to BiblioFuse on iPhone, iPad, Android, Apple TV, and Vision Pro — over home Wi-Fi, or remotely over 5G with Tailscale where supported.",
+          "desc": "On a NAS, Mac or PC, BiblioFuse becomes a library hub for large collections. Manage folders on the host, then stream books straight to BiblioFuse on iPhone, iPhone Duo, iPad, Android, Apple TV, and Vision Pro — over home Wi-Fi, or remotely over 5G with Tailscale where supported.",
           "bullet1Title": "Local Wi-Fi streaming",
           "bullet1Body": "instant browse from a Mac or PC source.",
           "bullet2Title": "Remote 5G streaming",
@@ -538,8 +544,10 @@
           "bullet3Body": "one desktop library, every folder you already keep.",
           "bullet4Title": "Optional PIN",
           "bullet4Body": "lock streaming access on shared networks.",
-          "imageAlt": "BiblioFuse desktop library with split-view reader",
-          "footnote": "Remote access requires the host and iOS device to be signed into iCloud and connected through Tailscale. For the most consistent home and remote setup, keep Tailscale on both devices."
+          "imageAlt": "BiblioFuse on iPad and iPhone open at the same passage — progress, bookmark and annotation sync across BiblioFuse Host, Kavita and Komga",
+          "footnote": "Remote access requires the host and iOS device to be signed into iCloud and connected through Tailscale. For the most consistent home and remote setup, keep Tailscale on both devices.",
+          "bullet5Title": "Progress, bookmarks & annotations in sync",
+          "bullet5Body": "reading position, bookmarks, highlights and notes follow you between devices for CBZ, CBR, PDF, EPUB and TXT."
         }
       },
       "cta": "Download BiblioFuse Reader",
@@ -683,8 +691,8 @@
       "appStore": "Download on the App Store",
       "googlePlay": "Get it on Google Play",
       "microsoftStore": "Get it from Microsoft",
-      "heroStreaming": "BiblioFuse Locations screen on iPhone — libraries on the device, in iCloud Drive and on a Mac host",
-      "heroTranslation": "BiblioFuse live translation panel over a comic page on iPhone"
+      "heroStreaming": "Add OPDS Server screen in BiblioFuse on iPhone, with OPDS, Komga API and Kavita API connection types",
+      "heroTranslation": "Live Translation settings in BiblioFuse on iPhone — on-device comic and manga translation with BiblioFuse Pro"
     },
     "changelog": {
       "eyebrow": "Development Log",
@@ -992,6 +1000,31 @@
       }
     },
     "comicReaderPage": {
+      "duo": {
+        "eyebrow": "New: iPhone Duo",
+        "title": "Unfold. Keep your place.",
+        "desc": "BiblioFuse is ready for iPhone Duo. Start a chapter on the outer screen, open the hinge, and the same book is still open at the same place — now with room for a full two-page spread.",
+        "bullets": [
+          {
+            "title": "Fold or unfold mid-page",
+            "body": "the reader stays open and returns to the passage or page you were on, in comics, PDF, EPUB and TXT."
+          },
+          {
+            "title": "Two pages when it’s open",
+            "body": "unfold in landscape for side-by-side spreads; fold it and you are back to a single page."
+          },
+          {
+            "title": "A library grid for each screen",
+            "body": "Automatic columns fit the outer and inner display on their own, or set your own count for folded, unfolded, portrait and landscape."
+          },
+          {
+            "title": "Everything stays in sync",
+            "body": "reading position, bookmarks, highlights and notes carry over to your iPad, Mac and other devices."
+          }
+        ],
+        "note": "iPhone Duo support arrives in BiblioFuse 2.1.15. It is the same App Store purchase as iPhone, iPad, Mac, Vision Pro and Apple TV.",
+        "videoAlt": "BiblioFuse on iPhone Duo: browsing the library folded, then unfolding to a series page and a full comic page"
+      },
       "vision": {
         "eyebrow": "Now on Apple Vision Pro",
         "badge": "Native visionOS app",
@@ -1143,6 +1176,12 @@
             "tint": "violet"
           }
         ]
+      },
+      "ui": {
+        "selfHost": "Or self-host on a NAS:",
+        "webVersion": "Prefer no install? Try the web version",
+        "playDemo": "Play demo",
+        "pause": "Pause"
       }
     },
     "androidInterest": {
@@ -1718,7 +1757,7 @@
             },
             {
               "q": "How do I connect to Kavita, and will my reading progress sync?",
-              "a": "Yes, both ways. Add your Kavita server in Settings and BiblioFuse uses Kavita's native API rather than the OPDS-PSE extension that most reader apps rely on — which is where a lot of the progress-sync trouble in the wider Kavita ecosystem comes from. Reading position syncs in both directions, and in-book bookmarks sync too. Pro required.",
+              "a": "Yes, both ways. Add your Kavita server in Settings and BiblioFuse uses Kavita's native API rather than the OPDS-PSE extension that most reader apps rely on — which is where a lot of the progress-sync trouble in the wider Kavita ecosystem comes from. Reading position syncs in both directions, and in-book bookmarks sync too. Pro required. EPUB highlights and notes sync with Kavita as well — add, edit or delete them on either side.",
               "bullets": []
             }
           ],
@@ -1726,6 +1765,10 @@
             {
               "to": "/tools/qr-generator/",
               "label": "Make a QR code for your Kavita or Komga server"
+            },
+            {
+              "to": "/blog/kavita-reader-app-progress-bookmark-annotation-sync/",
+              "label": "Kavita sync: progress, bookmarks, highlights and notes"
             }
           ]
         },
@@ -2142,6 +2185,7 @@
     "groups": {
       "reading": "Reading",
       "libraries": "Libraries & servers",
+      "sync": "Sync, bookmarks & annotations",
       "streaming": "Streaming from your own machine",
       "input": "Input & platform",
       "formats": "File formats"
@@ -2170,7 +2214,7 @@
       },
       "dual-page-spreads": {
         "label": "Dual-page spreads",
-        "note": "Landscape tablet, like an open book"
+        "note": "Landscape tablet or unfolded iPhone Duo, like an open book"
       },
       "vertical-japanese": {
         "label": "Vertical Japanese / vertical EPUB",
@@ -2200,7 +2244,8 @@
         "note": "Comics a page at a time. OPDS 2.0 is not supported."
       },
       "kavita-sync": {
-        "label": "Kavita position & bookmark sync"
+        "label": "Kavita position, bookmark & annotation (highlight/note) sync",
+        "note": "Position and bookmarks for comics, EPUB and PDF; highlights and notes for EPUB"
       },
       "folder-as-library": {
         "label": "Folder-as-library browse",
@@ -2273,6 +2318,34 @@
       "ui-languages": {
         "label": "Localised interface",
         "note": "11 languages on Apple, Windows and the NAS browser reader."
+      },
+      "highlights-notes": {
+        "label": "Highlights & notes",
+        "note": "Text highlights in EPUB, TXT and PDF; page and region notes on comics. One searchable list."
+      },
+      "host-sync": {
+        "label": "Host sync: position, bookmarks, highlights & notes",
+        "note": "One shared state per book for every device streaming from the same BiblioFuse host — CBZ, CBR, PDF, EPUB and TXT"
+      },
+      "icloud-sync": {
+        "label": "iCloud books: position & bookmark sync",
+        "note": "Books in your own iCloud Drive resume at the exact place on your other Apple devices"
+      },
+      "iphone-duo": {
+        "label": "iPhone Duo support",
+        "note": "Keeps your place across a fold, two-page spreads when open, a library grid per screen"
+      },
+      "page-browser": {
+        "label": "Page Browser",
+        "note": "A thumbnail grid of every page in comics and PDF"
+      },
+      "fit-modes": {
+        "label": "Fit Content, Fit Height & Actual Size",
+        "note": "Plus margin cropping for comics and scan clean-up for PDF"
+      },
+      "e-ink": {
+        "label": "E-ink display mode",
+        "note": "A reader tuned for e-ink screens"
       }
     },
     "specs": {

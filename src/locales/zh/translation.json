@@ -294,7 +294,8 @@
           "直接连接 OPDS 1.x、OPDS-PSE、Komga 或 Kavita（Pro）",
           "从 Mac、PC、Synology 或 Docker 上的 BiblioFuse 主机应用串流",
           "直接读取你自己的 iCloud 云盘——打开时才载入（Pro）",
-          "阅读进度与书签在各设备之间保持同步"
+          "阅读进度与书签在各设备之间保持同步",
+          "添加、编辑和删除高亮与笔记，并在你的设备之间同步"
         ]
       },
       "toolsStrip": {
@@ -380,7 +381,7 @@
           "bullet3Body": "在 iPhone 上从 iPad 停下的地方继续。",
           "imageAlt": "BiblioFuse 图书馆，包含标签、评分和阅读进度",
           "bullet4Title": "原生 Komga 与 Kavita",
-          "bullet4Body": "直接连接到你自己服务器的 API——而不仅仅是 OPDS 订阅源——阅读进度双向同步，书签同步支持 Kavita。Pro。",
+          "bullet4Body": "直接连接服务器自身的 API，而不只是 OPDS 目录：阅读位置双向同步，在 Kavita 上还可同步书签和批注（高亮与笔记）。Pro。",
           "bullet5Title": "任意 OPDS 目录",
           "bullet5Body": "支持 OPDS 1.x 与 OPDS-PSE 分页流式传输，让漫画从 Calibre-Web、COPS、Ubooquity 或其他任何兼容服务器逐页加载。Pro。"
         },
@@ -404,7 +405,7 @@
           "eyebrow": "桌面书库串流到移动端",
           "title": "书库中枢。串流到你的 iPhone、Android、TV、Vision Pro。",
           "badge": "无第三方服务器 · 无订阅",
-          "desc": "在 Mac 和 PC 上，BiblioFuse 会成为大型收藏的桌面书库中枢。你可以在主机上管理文件夹，然后把书串流到 iPhone、iPad、Android、Apple TV 和 Vision Pro 上的 BiblioFuse——通过家庭 Wi‑Fi，或在支持的设备上借助 Tailscale 通过 5G 远程访问。",
+          "desc": "在 NAS、Mac 或 PC 上，BiblioFuse 可成为大型藏书的书库中心。在主机上管理文件夹，然后把书直接串流到 iPhone、iPhone Duo、iPad、Android、Apple TV 和 Vision Pro 上的 BiblioFuse——通过家中 Wi-Fi，或在支持的情况下借助 Tailscale 通过 5G 远程访问。",
           "bullet1Title": "本地 Wi-Fi 串流",
           "bullet1Body": "从 Mac 或 PC 来源即时浏览。",
           "bullet2Title": "远程 5G 串流",
@@ -413,8 +414,10 @@
           "bullet3Body": "一个桌面书库，包含你已有的所有文件夹。",
           "bullet4Title": "可选 PIN",
           "bullet4Body": "在共享网络上锁定串流访问。",
-          "imageAlt": "带分栏阅读器的 BiblioFuse 桌面书库",
-          "footnote": "远程访问需要主机和 iOS 设备登录 iCloud 并连接 Tailscale。为了在家和外出时都稳定使用，请在两台设备上都保持 Tailscale 开启。"
+          "imageAlt": "iPad 和 iPhone 上的 BiblioFuse 打开在同一段落——在 BiblioFuse Host、Kavita 和 Komga 之间同步进度、书签和批注",
+          "footnote": "远程访问需要主机和 iOS 设备登录 iCloud 并连接 Tailscale。为了在家和外出时都稳定使用，请在两台设备上都保持 Tailscale 开启。",
+          "bullet5Title": "进度、书签与批注同步",
+          "bullet5Body": "阅读位置、书签、高亮和笔记会在设备之间跟随你，支持 CBZ、CBR、PDF、EPUB 和 TXT。"
         }
       },
       "cta": "下载BiblioFuse Reader",
@@ -558,8 +561,8 @@
       "appStore": "在 App Store 下载",
       "googlePlay": "在 Google Play 获取",
       "microsoftStore": "从 Microsoft 获取",
-      "heroStreaming": "iPhone 上 BiblioFuse 的“位置”界面——设备本机、iCloud Drive 与 Mac 主机上的书库",
-      "heroTranslation": "iPhone 上 BiblioFuse 在漫画页面上的实时翻译面板"
+      "heroStreaming": "iPhone 上 BiblioFuse 的“添加 OPDS 服务器”界面，可选 OPDS、Komga API 和 Kavita API 连接类型",
+      "heroTranslation": "iPhone 上 BiblioFuse 的实时翻译设置——通过 BiblioFuse Pro 在设备端翻译漫画"
     },
     "seo": {
       "homeTitle": "BiblioFuse Reader：私密电子书库、5G Mac 串流与文件工具",
@@ -586,6 +589,11 @@
     },
     "blog": {
       "posts": {
+        "kavita-reader-app-progress-bookmark-annotation-sync": {
+          "title": "适用于 iPhone、iPad 和 Android 的 Kavita 阅读应用：同步进度、书签与批注",
+          "excerpt": "BiblioFuse 通过 Kavita 自身的 API 连接，因此阅读进度、书签以及 EPUB 的高亮和笔记都能双向同步。本文说明各格式支持同步的内容，以及如何扫一次二维码完成连接。",
+          "seoDescription": "使用 BiblioFuse 在 iPhone、iPad 和 Android 上同步 Kavita 的阅读进度、书签、高亮和笔记。支持 CBZ、CBR、EPUB 和 PDF，并可用二维码快速设置。"
+        },
         "digital-comic-library-management-guide": {
           "title": "iPhone 和 Mac 数字漫画库管理完整指南",
           "excerpt": "BiblioFuse 是适用于 iOS 17+ 的原生 iPhone 和 iPad 阅读器，支持管理 CBZ、CBR、EPUB、PDF、ZIP、RAR 和 TXT 文件，具备标签、评分、iCloud 同步和 Wi-Fi 传输功能。本指南涵盖在 iPhone、iPad 和 Mac 上整理、压缩、传输和阅读整个数字漫画库的完整流程。",
@@ -932,6 +940,31 @@
       }
     },
     "comicReaderPage": {
+      "duo": {
+        "eyebrow": "全新支持：iPhone Duo",
+        "title": "展开屏幕，位置不丢。",
+        "desc": "BiblioFuse 已为 iPhone Duo 做好准备。在外屏开始读一章，展开铰链，同一本书仍停在同一位置——而且现在有空间显示完整的双页跨页。",
+        "bullets": [
+          {
+            "title": "阅读中随时折叠或展开",
+            "body": "阅读器保持打开，并回到你刚才所在的段落或页面，适用于漫画、PDF、EPUB 和 TXT。"
+          },
+          {
+            "title": "展开后显示双页",
+            "body": "横向展开即可并排显示跨页；折叠后回到单页。"
+          },
+          {
+            "title": "每块屏幕都有合适的书库网格",
+            "body": "自动列数会分别适配外屏和内屏，你也可以为折叠、展开、竖屏和横屏各自设置列数。"
+          },
+          {
+            "title": "一切保持同步",
+            "body": "阅读位置、书签、高亮和笔记会同步到你的 iPad、Mac 和其他设备。"
+          }
+        ],
+        "note": "BiblioFuse 2.1.15 起支持 iPhone Duo。它与 iPhone、iPad、Mac、Vision Pro 和 Apple TV 属于同一次 App Store 购买。",
+        "videoAlt": "iPhone Duo 上的 BiblioFuse：折叠状态下浏览书库，然后展开查看系列页面和完整的漫画页面"
+      },
       "vision": {
         "eyebrow": "现已登陆 Apple Vision Pro",
         "badge": "原生 visionOS 应用",
@@ -1083,6 +1116,12 @@
             "tint": "violet"
           }
         ]
+      },
+      "ui": {
+        "selfHost": "或在 NAS 上自行托管：",
+        "webVersion": "不想安装？试试网页版",
+        "playDemo": "播放演示",
+        "pause": "暂停"
       }
     },
     "androidInterest": {
@@ -1718,7 +1757,7 @@
             },
             {
               "q": "如何连接 Kavita?我的阅读进度会同步吗?",
-              "a": "会,而且是双向同步。在设置中添加你的 Kavita 服务器,BiblioFuse 使用的是 Kavita 的原生 API,而不是大多数阅读应用依赖的 OPDS-PSE 扩展——后者正是整个 Kavita 生态中许多进度同步问题的根源。阅读位置会双向同步,书内书签也会同步。需要专业版。",
+              "a": "会,而且是双向同步。在设置中添加你的 Kavita 服务器,BiblioFuse 使用的是 Kavita 的原生 API,而不是大多数阅读应用依赖的 OPDS-PSE 扩展——后者正是整个 Kavita 生态中许多进度同步问题的根源。阅读位置会双向同步,书内书签也会同步。需要专业版。 EPUB 的高亮和笔记同样会与 Kavita 同步——可在任意一端添加、编辑或删除。",
               "bullets": []
             }
           ],
@@ -1726,6 +1765,10 @@
             {
               "to": "/tools/qr-generator/",
               "label": "为你的 Kavita 或 Komga 服务器生成二维码"
+            },
+            {
+              "to": "/blog/kavita-reader-app-progress-bookmark-annotation-sync/",
+              "label": "Kavita 同步：进度、书签、高亮与笔记"
             }
           ]
         },
@@ -2142,18 +2185,19 @@
     "groups": {
       "reading": "阅读",
       "libraries": "图书馆与服务器",
+      "sync": "同步、书签与批注",
       "streaming": "从自己的电脑串流",
       "input": "输入与平台",
-      "formats": "File formats"
+      "formats": "文件格式"
     },
     "cellNotes": {
       "lanOnlyTvos": "仅支持本地 Wi-Fi；Tailscale 在 tvOS 上不够稳定",
       "noICloudRoute": "支持本地 Wi-Fi 与手动 Tailscale；iCloud 方式仅限 Apple 设备",
       "lanOnly": "仅支持本地 Wi-Fi",
       "tailscaleServe": "Tailscale Serve 与子网访问",
-      "nasArchivesOnly": "CBZ/ZIP only",
+      "nasArchivesOnly": "仅 CBZ/ZIP",
       "nasNoPdf": "No PDF yet",
-      "tvosPartialLocale": "Partial UI translation"
+      "tvosPartialLocale": "界面部分翻译"
     },
     "features": {
       "live-translation": {
@@ -2170,7 +2214,7 @@
       },
       "dual-page-spreads": {
         "label": "双页对开显示",
-        "note": "平板横屏，如翻开的书"
+        "note": "横屏平板或展开的 iPhone Duo，如同翻开的书"
       },
       "vertical-japanese": {
         "label": "日文竖排 / 竖排 EPUB",
@@ -2200,7 +2244,8 @@
         "note": "漫画逐页加载。不支持 OPDS 2.0。"
       },
       "kavita-sync": {
-        "label": "Kavita 进度与书签同步"
+        "label": "Kavita 位置、书签与批注（高亮/笔记）同步",
+        "note": "漫画、EPUB 和 PDF 同步位置与书签；EPUB 同步高亮与笔记"
       },
       "folder-as-library": {
         "label": "以文件夹作为图书馆浏览",
@@ -2267,12 +2312,40 @@
         "label": "EPUB, PDF & TXT"
       },
       "icloud-bookshelf": {
-        "label": "iCloud bookshelf",
-        "note": "Apple platforms only — the shelf and its metadata sync through your own iCloud."
+        "label": "iCloud 书架",
+        "note": "仅限 Apple 平台——书架及其元数据通过你自己的 iCloud 同步。"
       },
       "ui-languages": {
-        "label": "Localised interface",
+        "label": "本地化界面",
         "note": "Apple、Windows 与 NAS 浏览器阅读器均支持 11 种语言。"
+      },
+      "highlights-notes": {
+        "label": "高亮与笔记",
+        "note": "EPUB、TXT 和 PDF 的文字高亮；漫画的页面笔记和区域笔记。统一列表，可搜索。"
+      },
+      "host-sync": {
+        "label": "主机同步：位置、书签、高亮与笔记",
+        "note": "从同一 BiblioFuse 主机串流的所有设备共享每本书的同一状态——CBZ、CBR、PDF、EPUB 和 TXT"
+      },
+      "icloud-sync": {
+        "label": "iCloud 图书：位置与书签同步",
+        "note": "存放在你自己 iCloud Drive 中的书可在其他 Apple 设备上从精确位置继续"
+      },
+      "iphone-duo": {
+        "label": "支持 iPhone Duo",
+        "note": "折叠时保持阅读位置，展开后显示双页，每块屏幕各有书库网格"
+      },
+      "page-browser": {
+        "label": "页面浏览器",
+        "note": "以缩略图网格显示漫画和 PDF 的每一页"
+      },
+      "fit-modes": {
+        "label": "适应内容、适应高度与实际大小",
+        "note": "另有漫画边距裁剪和 PDF 扫描件清理"
+      },
+      "e-ink": {
+        "label": "墨水屏显示模式",
+        "note": "为墨水屏优化的阅读器"
       }
     },
     "specs": {

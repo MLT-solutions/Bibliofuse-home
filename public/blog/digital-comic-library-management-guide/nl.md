@@ -78,6 +78,8 @@ Ja. BiblioFuse gebruikt iCloud om automatisch je laatste gelezen pagina, labels 
 **Welke formaten kan BiblioFuse beheren op iPhone?**
 BiblioFuse beheert CBZ-, CBR-, EPUB-, PDF-, ZIP-, RAR- en TXT-bestanden op iPhone. Je kunt al deze formaten openen, lezen, labelen, beoordelen en organiseren binnen één bibliotheek.
 
+Gebruik je een Kavita-server? Zie [Kavita-leesapp voor iPhone, iPad en Android: voortgang, bladwijzers en annotaties synchroniseren](https://bibliofuse.com/nl/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## Bouw vandaag nog je perfecte stripbibliotheek
 
 Een verspreide collectie over mappen, clouddiensten en e-mailbijlagen is frustrerend. Met [BiblioFuse](/nl/) heb je één georganiseerde bibliotheek op je iPhone die gesynchroniseerd blijft met je Mac, alle grote stripformaten ondersteunt en je in staat stelt bestanden draadloos in seconden over te dragen. Begin met de [BiblioFuse-webtool](/nl/tools/) om je te grote bestanden te comprimeren, draag ze vervolgens over naar je iPhone en geniet van je collectie zoals het bedoeld is.

@@ -78,6 +78,8 @@ Yes. BiblioFuse uses iCloud to sync your last-read page, tags, and ratings acros
 **What formats can BiblioFuse manage on iPhone?**
 BiblioFuse manages CBZ, CBR, EPUB, PDF, ZIP, RAR, and TXT files on iPhone. You can open, read, tag, rate, and organise all these formats within a single library.
 
+Using a Kavita server? See [Kavita Reader App for iPhone, iPad and Android: Progress, Bookmark and Annotation Sync](https://bibliofuse.com/en/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## Build Your Perfect Comic Library Today
 
 A scattered collection spread across folders, cloud drives, and email attachments is frustrating. With [BiblioFuse](/en/), you get a single organised library on your iPhone that stays in sync with your Mac, supports every major comic format, and lets you transfer files wirelessly in seconds. Start with the [BiblioFuse Web Tool](/en/tools/) to compress your oversized files, then transfer them to your iPhone and enjoy your collection the way it was meant to be read.

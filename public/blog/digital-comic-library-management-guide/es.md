@@ -78,6 +78,8 @@ Sí. BiblioFuse usa iCloud para sincronizar automáticamente la última página 
 **¿Qué formatos puede gestionar BiblioFuse en iPhone?**
 BiblioFuse gestiona archivos CBZ, CBR, EPUB, PDF, ZIP, RAR y TXT en iPhone. Puedes abrir, leer, etiquetar, valorar y organizar todos estos formatos dentro de una única biblioteca.
 
+¿Usas un servidor Kavita? Consulta [App lectora para Kavita en iPhone, iPad y Android: sincroniza progreso, marcadores y anotaciones](https://bibliofuse.com/es/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## Empieza a construir tu biblioteca de cómics perfecta hoy
 
 Una colección dispersa por carpetas, servicios en la nube y archivos de correo electrónico resulta frustrante. Con [BiblioFuse](/es/), obtienes una única biblioteca organizada en tu iPhone que se mantiene sincronizada con tu Mac, admite todos los formatos principales de cómics y te permite transferir archivos de forma inalámbrica en segundos. Comienza con la [Herramienta Web de BiblioFuse](/es/tools/) para comprimir tus archivos más pesados, luego transfiérelos a tu iPhone y disfruta de tu colección como merece ser disfrutada.

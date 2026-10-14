@@ -1,5 +1,11 @@
 export const articles = [
   {
+    slug: 'kavita-reader-app-progress-bookmark-annotation-sync',
+    date: '2026-10-14',
+    tags: ['guide', 'tips'],
+    coverImage: '/image/blog/Kavita Sync with BiblioFuse.jpg',
+  },
+  {
     slug: 'cbz-cbr-rar-zip-which-format-best',
     date: '2026-06-03',
     tags: ['formats', 'guide', 'cbz'],

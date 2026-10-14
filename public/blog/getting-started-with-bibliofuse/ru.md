@@ -57,6 +57,8 @@ BiblioFuse поддерживает EPUB, PDF, CBZ, CBR, ZIP, RAR и TXT. Ест
 - **Comic Duplicate Scanner** — приложение для Mac, которое находит дублирующиеся CBZ и фотографии с помощью перцептивного хеширования.
 
 
+Пользуетесь сервером Kavita? Смотрите [Приложение-читалка для Kavita на iPhone, iPad и Android: синхронизация прогресса, закладок и аннотаций](https://bibliofuse.com/ru/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## Часто задаваемые вопросы
 
 **Какие форматы поддерживает BiblioFuse?**

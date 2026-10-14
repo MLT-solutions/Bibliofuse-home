@@ -78,6 +78,8 @@ Macのフォルダ構造を整理し、統一したファイル命名を使い�
 **BiblioFuseはiPhoneでどのフォーマットを管理できますか？**
 BiblioFuseはiPhoneでCBZ、CBR、EPUB、PDF、ZIP、RAR、TXTファイルを管理できます。これらのフォーマットをすべて1つのライブラリで開き、読み、タグ付け、評価、整理することができます。
 
+Kavitaサーバーをお使いですか？こちらをご覧ください： [iPhone・iPad・Android向けKavitaリーダーアプリ：進捗、ブックマーク、注釈を同期](https://bibliofuse.com/ja/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## 今日から完璧なコミックライブラリを作ろう
 
 フォルダ、クラウドサービス、メールの添付ファイルに散らばったコレクションは本当に煩わしいものです。[BiblioFuse](/ja/)を使えば、Macと同期したiPhone上の一元化されたライブラリを手に入れられ、あらゆる主要コミックフォーマットに対応し、数秒でワイヤレスにファイルを転送できます。まずは[BiblioFuse Webツール](/ja/tools/)で大きすぎるファイルを圧縮し、iPhoneに転送して、コレクションを思う存分楽しみましょう。

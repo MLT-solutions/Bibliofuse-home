@@ -64,7 +64,7 @@ Because GitHub Pages can't do server-side routing, and this is a client-rendered
 
 When adding a new page route, update `ROUTES` in **both** `generate-sitemap.js` and `generate-static-routes.js`. If it's a low-search-value utility page (changelog/privacy/legal), consider adding it to `NOINDEX_NON_EN_ROUTES` for non-English locales rather than translating it — see the "New page/route rollout rules" below.
 
-After any route/content change, run `npm run build` and check the prerender step's summary line (`✅ Prerendered N/N pages`). For the current route set this must finish as `✅ Prerendered 869/869 pages`; any miss should fail the build and must be fixed or rerun before deploy. If prerendering flakes, re-check `scripts/prerender.js`'s concurrency/timeout settings before deploying.
+After any route/content change, run `npm run build` and check the prerender step's summary line (`✅ Prerendered N/N pages`). For the current route set this must finish as `✅ Prerendered 75/75 pages` (only the indexed locales are prerendered; the rest are noindexed static fallbacks); any miss should fail the build and must be fixed or rerun before deploy. If prerendering flakes, re-check `scripts/prerender.js`'s concurrency/timeout settings before deploying.
 
 ### Blog section
 

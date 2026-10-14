@@ -78,6 +78,8 @@ Mac과 동일한 과정입니다. PC와 iPhone을 동일한 Wi-Fi 네트워크�
 **BiblioFuse가 iPhone에서 관리할 수 있는 형식은 무엇인가요?**
 BiblioFuse는 iPhone에서 CBZ, CBR, EPUB, PDF, ZIP, RAR, TXT 파일을 관리합니다. 이 모든 형식을 하나의 라이브러리 안에서 열고, 읽고, 태그 달고, 평가하고, 정리할 수 있습니다.
 
+Kavita 서버를 사용 중이신가요? 참고: [iPhone, iPad, Android용 Kavita 리더 앱: 진행 상황, 북마크, 주석 동기화](https://bibliofuse.com/ko/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## 오늘 완벽한 만화 라이브러리를 구축하세요
 
 폴더, 클라우드 서비스, 이메일 첨부 파일에 흩어진 컬렉션은 답답합니다. [BiblioFuse](/ko/)를 사용하면 Mac과 동기화되고 모든 주요 만화 형식을 지원하며 수 초 안에 파일을 무선으로 전송할 수 있는 하나의 정돈된 iPhone 라이브러리를 얻을 수 있습니다. [BiblioFuse 웹 도구](/ko/tools/)로 너무 큰 파일을 먼저 압축하고 iPhone에 전송한 뒤 원래 즐겨야 할 방식으로 컬렉션을 즐기세요.

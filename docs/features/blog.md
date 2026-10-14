@@ -67,6 +67,18 @@ Unchanged, and the five-place checklist above still applies — `src/data/articl
 `redesign.blog.posts.<slug>` in all 11 locales. Given the measurement above, the bar for a
 new article is now considerably higher than it was.
 
+### `kavita-reader-app-progress-bookmark-annotation-sync` (added 2026-10-14)
+
+The first article since the cut. It targets Kavita client queries (progress not syncing
+over OPDS, annotation sync, QR setup) and is written in all 11 locales. Its per-format
+table and device list were checked against `bibliofuse_iosv2`
+`docs/features/reader-annotations.md` and `reader-bookmarks.md`; re-check them before
+editing. It ends in a `## FAQ` section, kept under that literal heading with questions
+ending in an ASCII `?` in every locale, because `BlogPost.jsx` only builds FAQPage
+JSON-LD from that pattern. Inbound links: the `/guide/` Kavita section
+(`guidePage.sections[3].links`) and a line in `getting-started-with-bibliofuse` and
+`digital-comic-library-management-guide`, in every locale.
+
 ## Registry
 `src/data/articles.js` is the source of truth for which posts exist: each entry has
 `slug`, `date`, `tags`, `coverImage`. It does NOT contain post body content.

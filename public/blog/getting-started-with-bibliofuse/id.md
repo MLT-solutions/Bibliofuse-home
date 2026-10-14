@@ -57,6 +57,8 @@ Untuk menggabungkan seri manga menjadi satu volume, tekan dan tahan beberapa fil
 - **Comic Duplicate Scanner** — aplikasi pendamping untuk Mac yang menemukan file CBZ dan foto duplikat menggunakan perceptual hashing.
 
 
+Memakai server Kavita? Lihat [Aplikasi Pembaca Kavita untuk iPhone, iPad, dan Android: Sinkronisasi Progres, Bookmark, dan Anotasi](https://bibliofuse.com/id/blog/kavita-reader-app-progress-bookmark-annotation-sync/).
+
 ## Pertanyaan yang Sering Diajukan
 
 **Format apa saja yang didukung BiblioFuse?**
