@@ -53,13 +53,20 @@ revisiting; it exists only because mlogictech.com wasn't ready.
   heading remains the primary heading.
 - Every native-app hero shows a `DevicePills` row
   (`src/components/DevicePills.jsx`): small inline-SVG icons + labels for the
-  platforms the app actually ships on (iphone/ipad/mac/visionpro/appletv/carplay/
+  platforms the app actually ships on (iphone/iphoneduo/ipad/mac/visionpro/appletv/carplay/
   windows/android/web/docker/synology keys — docker/synology are host-only NAS
   surfaces, not reading devices, added when the comicreader hero grew a
   self-hosting section). `tone="dark"|"light"` matches the hero background,
   `align="start"` for left-aligned heroes. Device names are proper nouns and are
   deliberately not translated. `/webapp` skips the row (it is itself the
   browser tool).
+- The header (`src/components/Navigation.jsx`) shows the page tabs and the Tools
+  dropdown from `md` (768 px) up. Below that a hamburger button opens `#mobile-menu`, a
+  full-width panel with the same tabs, the Tools list and a "Get the app" button (that
+  button is otherwise hidden below `sm`). Until 2026-10-15 there was no mobile menu at
+  all, so on phones the pages were reachable only from the footer. The panel closes on
+  navigation, an outside tap or Escape; its button labels are `redesign.nav.openMenu` /
+  `closeMenu`, translated in all 11 locales.
 
 ## Android request page
 The homepage Android demand CTA routes to `/:lang/androidrequest/` instead of opening

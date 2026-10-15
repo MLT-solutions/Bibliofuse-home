@@ -176,7 +176,9 @@
   "redesign": {
     "nav": {
       "tools": "Tools",
-      "getApp": "Get the app"
+      "getApp": "Get the app",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu"
     },
     "blog": {
       "eyebrow": "Blog",

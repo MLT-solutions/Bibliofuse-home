@@ -176,7 +176,9 @@
   "redesign": {
     "nav": {
       "tools": "Herramientas",
-      "getApp": "Obtener app"
+      "getApp": "Obtener app",
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú"
     },
     "tools": {
       "readerSub": "iPhone · iPad · Mac · Android",

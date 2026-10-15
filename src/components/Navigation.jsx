@@ -40,8 +40,10 @@ const Navigation = () => {
     const navigate = useNavigate();
     const [isLangOpen, setIsLangOpen] = useState(false);
     const [isToolsOpen, setIsToolsOpen] = useState(false);
+    const [isMobileOpen, setIsMobileOpen] = useState(false);
     const langMenuRef = useRef(null);
     const toolsMenuRef = useRef(null);
+    const mobileMenuRef = useRef(null);
 
     // 'Web App' demoted from a top-level tab to the Tools dropdown (still
     // below, id 'webapp' entry) — see the 2026-07-20 portfolio review §06:
@@ -102,10 +104,25 @@ const Navigation = () => {
             if (toolsMenuRef.current && !toolsMenuRef.current.contains(event.target)) {
                 setIsToolsOpen(false);
             }
+            if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+                setIsMobileOpen(false);
+            }
+        };
+        const handleEscape = (event) => {
+            if (event.key === 'Escape') setIsMobileOpen(false);
         };
         document.addEventListener('mousedown', handleClickOutside);
-        return () => document.removeEventListener('mousedown', handleClickOutside);
+        document.addEventListener('keydown', handleEscape);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('keydown', handleEscape);
+        };
     }, []);
+
+    // The mobile menu closes on any navigation, including a hash change on the same page.
+    useEffect(() => {
+        setIsMobileOpen(false);
+    }, [location.pathname, location.hash]);
 
     const currentLang = LANGUAGES.find(l => l.code === i18n.language) || LANGUAGES[0];
 
@@ -242,6 +259,83 @@ const Navigation = () => {
                                 <path d="M5 12h14M13 6l6 6-6 6" />
                             </svg>
                         </a>
+
+                        {/* Below md the tab row above is hidden, so this is the only way to the
+                            pages and tools from the header on a phone. */}
+                        <div className="md:hidden" ref={mobileMenuRef}>
+                            <button
+                                type="button"
+                                onClick={() => setIsMobileOpen((open) => !open)}
+                                aria-expanded={isMobileOpen}
+                                aria-controls="mobile-menu"
+                                aria-label={isMobileOpen ? t('redesign.nav.closeMenu') : t('redesign.nav.openMenu')}
+                                className="-mr-1 grid h-10 w-10 place-items-center rounded-lg text-slate-700 transition hover:bg-slate-100 hover:text-slate-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D7CF6]"
+                            >
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                    {isMobileOpen ? <path d="M6 6l12 12M18 6 6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
+                                </svg>
+                            </button>
+
+                            {isMobileOpen && (
+                                <div id="mobile-menu" className="absolute inset-x-0 top-16 max-h-[calc(100dvh-4rem)] overflow-y-auto border-b border-slate-200 bg-white px-4 pb-6 pt-2 shadow-2xl">
+                                    <div className="flex flex-col">
+                                        {tabs.map((tab) => (
+                                            <Link
+                                                key={tab.id}
+                                                to={`/${lang}${tab.path}${tab.hash || ''}`}
+                                                onClick={(event) => {
+                                                    setIsMobileOpen(false);
+                                                    if (tab.id === 'home') goHomeTop(event);
+                                                }}
+                                                aria-current={activeTab === tab.id ? 'page' : undefined}
+                                                className={`rounded-lg px-3 py-3 text-base font-semibold transition ${activeTab === tab.id
+                                                    ? 'bg-slate-100 text-slate-950'
+                                                    : 'text-slate-700 hover:bg-slate-50 hover:text-slate-950'
+                                                    }`}
+                                            >
+                                                {tab.label}
+                                            </Link>
+                                        ))}
+                                    </div>
+
+                                    <div className="mt-3 border-t border-slate-200 pt-3">
+                                        <div className="px-3 pb-1 text-xs font-bold uppercase tracking-[0.14em] text-slate-400">{t('redesign.nav.tools')}</div>
+                                        {tools.map((tool) => (
+                                            <Link
+                                                key={tool.name}
+                                                to={`/${lang}${tool.path}`}
+                                                onClick={() => setIsMobileOpen(false)}
+                                                className="flex items-center gap-3 rounded-xl px-3 py-2.5 transition hover:bg-slate-50"
+                                            >
+                                                {tool.logo ? (
+                                                    <span className="block h-8 w-8 flex-none overflow-hidden rounded-lg shadow-sm">
+                                                        <img src={tool.logo} alt="" className="h-full w-full object-cover" style={tool.logoZoom ? { transform: `scale(${tool.logoZoom})`, transformOrigin: 'center' } : undefined} />
+                                                    </span>
+                                                ) : (
+                                                    <span className={`flex h-8 w-8 flex-none items-center justify-center rounded-lg text-[10px] font-black uppercase ${TOOL_BADGE[tool.accent] || TOOL_BADGE.blue}`} aria-hidden="true">
+                                                        {tool.badge}
+                                                    </span>
+                                                )}
+                                                <span className="min-w-0 flex-1 text-sm font-semibold text-slate-900">{tool.name}</span>
+                                            </Link>
+                                        ))}
+                                    </div>
+
+                                    <a
+                                        href={APP_STORE_URL}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={() => setIsMobileOpen(false)}
+                                        className="mt-4 flex h-11 items-center justify-center gap-1.5 rounded-xl bg-[#0B1220] text-sm font-semibold text-white shadow-sm transition hover:bg-[#162033] sm:hidden"
+                                    >
+                                        {t('redesign.nav.getApp')}
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M5 12h14M13 6l6 6-6 6" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>

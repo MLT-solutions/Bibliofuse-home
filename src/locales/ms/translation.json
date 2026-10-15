@@ -176,7 +176,9 @@
   "redesign": {
     "nav": {
       "tools": "Alat",
-      "getApp": "Dapatkan app"
+      "getApp": "Dapatkan app",
+      "openMenu": "Buka menu",
+      "closeMenu": "Tutup menu"
     },
     "tools": {
       "readerSub": "iPhone · iPad · Mac · Android",

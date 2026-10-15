@@ -176,7 +176,9 @@
   "redesign": {
     "nav": {
       "tools": "도구",
-      "getApp": "앱 받기"
+      "getApp": "앱 받기",
+      "openMenu": "메뉴 열기",
+      "closeMenu": "메뉴 닫기"
     },
     "tools": {
       "readerSub": "iPhone · iPad · Mac · Android",
