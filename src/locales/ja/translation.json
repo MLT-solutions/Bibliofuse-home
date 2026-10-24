@@ -1181,23 +1181,23 @@
     },
     "qrGeneratorPage": {
       "seoTitle": "BiblioFuse QR Generator",
-      "seoDesc": "KavitaまたはKomgaサーバーをBiblioFuseに追加するQRコードを生成します。iOSまたはAndroidからスキャンして簡単セットアップ。",
+      "seoDesc": "Kavita、Komga、またはCalibre Content ServerをBiblioFuseに追加するQRコードを生成します。iOSまたはAndroidでスキャンして簡単に設定できます。",
       "back": "BiblioFuseに戻る",
       "eyebrow": "QRサーバー設定",
-      "title": "QRでKavitaとKomgaサーバーを追加",
-      "desc": "KavitaまたはKomgaサーバー接続用の安全なBiblioFuse QRコードを生成し、スマートフォンからスキャンしてサーバーを自動追加します。",
+      "title": "QRコードでKavita、Komga、Calibreサーバーを追加",
+      "desc": "Kavita、Komga、またはCalibre Content Serverに接続するBiblioFuse QRコードを生成し、スマートフォンでスキャンしてサーバーを自動追加します。",
       "whatTitle": "機能概要",
-      "whatDesc": "APIアドレスとオプションキーを含む共有可能なサーバーQRを作成し、手動URL入力なしでBiblioFuseが接続できます。",
+      "whatDesc": "サーバーのアドレスとアカウント名を含むQRコードを作成すると、URLを手入力せずにBiblioFuseが接続できます。",
       "whatBullets": [
-        "KavitaおよびKomga APIサーバーに対応",
-        "安全な接続のためのオプションAPIキーを含む",
-        "iOSおよびAndroidデバイスで動作"
+        "Kavita、Komga、Calibre Content Serverに対応",
+        "KavitaとKomgaのAPIキーは任意です",
+        "iOSおよびAndroidで利用できます"
       ],
       "stepsTitle": "使い方",
       "steps": [
         {
           "title": "QRコードを生成",
-          "desc": "サーバーアドレスを入力し、KavitaまたはKomgaを選択し、必要に応じてAPIキーを追加します。"
+          "desc": "サーバーアドレスを入力し、種類を選択して、必要に応じてアカウント名を追加します。パスワードはQRコードに含まれません。"
         },
         {
           "title": "BiblioFuseでスキャン",
@@ -1213,15 +1213,15 @@
       "tipTitle": "クイックヒント",
       "tipBullets": [
         "リモートアクセスには安全なプライベートネットワークまたはTailscaleを使用してください。",
-        "QRを生成する前にサーバーURLとAPIキーを再確認してください。",
-        "生成されたコードは安全に保管してください。アクセス情報が含まれています。"
+        "QRコードを生成する前に、サーバーURLとアカウント名を確認してください。",
+        "KavitaとKomgaのAPIキーはQRコードに含まれるため、コードを非公開にしてください。Calibreのパスワードはアプリで入力し、QRコードには含まれません。"
       ],
       "homeCta": "ホームに戻る",
       "form": {
         "generatorTitle": "QRコードを生成",
         "generatorDesc": "以下のサーバー情報を入力し、生成をタップするとスキャン可能なQRコードが作成されます。",
         "displayNameLabel": "表示名（任意）",
-        "displayNamePlaceholder": "自宅 Kavita",
+        "displayNamePlaceholder": "ホームサーバー",
         "serviceTypeLabel": "サービス種別",
         "kavitaOption": "Kavita API",
         "komgaOption": "Komga API",
@@ -1236,7 +1236,11 @@
         "clear": "クリア",
         "warning": "このQRコードにはサーバーアドレスと認証情報が含まれています。公開して共有しないでください。",
         "enterUrl": "サーバーURLを入力してください。",
-        "qrCredit": "QRコード powered by qrcode-generator"
+        "qrCredit": "QRコード powered by qrcode-generator",
+        "calibreOption": "Calibre Content Server",
+        "usernameLabel": "ユーザー名（任意）",
+        "usernamePlaceholder": "Calibreアカウント名",
+        "calibreCredentialHint": "パスワードはBiblioFuseで入力します。QRコードには含まれません。"
       }
     },
     "toolsHub": {

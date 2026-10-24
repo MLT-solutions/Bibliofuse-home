@@ -1181,23 +1181,23 @@
     },
     "qrGeneratorPage": {
       "seoTitle": "BiblioFuse QR 생성기",
-      "seoDesc": "Kavita 또는 Komga 서버를 BiblioFuse에 추가하는 QR 코드를 생성하세요. iOS 또는 Android에서 스캔하여 쉽게 설정할 수 있습니다.",
+      "seoDesc": "Kavita, Komga 또는 Calibre Content Server를 BiblioFuse에 추가할 QR 코드를 만드세요. iOS 또는 Android에서 스캔해 쉽게 설정할 수 있습니다.",
       "back": "BiblioFuse로 돌아가기",
       "eyebrow": "QR 서버 설정",
-      "title": "QR로 Kavita 및 Komga 서버 추가",
-      "desc": "Kavita 또는 Komga 서버 연결을 위한 안전한 BiblioFuse QR 코드를 생성하고, 휴대폰에서 스캔하여 서버를 자동으로 추가하세요.",
+      "title": "QR로 Kavita, Komga 및 Calibre 서버 추가",
+      "desc": "Kavita, Komga 또는 Calibre Content Server에 연결할 BiblioFuse QR 코드를 만든 다음 휴대폰으로 스캔해 서버를 자동으로 추가하세요.",
       "whatTitle": "기능 설명",
-      "whatDesc": "API 주소와 선택적 키가 포함된 공유 가능한 서버 QR을 만들어, URL을 수동으로 입력하지 않고 BiblioFuse가 연결할 수 있습니다.",
+      "whatDesc": "서버 주소와 계정 이름을 담은 QR을 만들면 URL을 직접 입력하지 않고 BiblioFuse가 연결할 수 있습니다.",
       "whatBullets": [
-        "Kavita 및 Komga API 서버 지원",
-        "보안 연결을 위한 선택적 API 키 포함",
+        "Kavita, Komga 및 Calibre Content Server 지원",
+        "Kavita와 Komga의 API 키는 선택 사항",
         "iOS 및 Android 기기에서 작동"
       ],
       "stepsTitle": "사용 방법",
       "steps": [
         {
           "title": "QR 코드 생성",
-          "desc": "서버 주소를 입력하고 Kavita 또는 Komga를 선택한 후 필요한 경우 API 키를 추가하세요."
+          "desc": "서버 주소를 입력하고 유형을 선택한 뒤 필요한 경우 계정 이름을 추가하세요. 비밀번호는 QR 코드에 포함되지 않습니다."
         },
         {
           "title": "BiblioFuse에서 스캔",
@@ -1212,16 +1212,16 @@
       "noteDesc": "서버 스캔에는 BiblioFuse Pro OPDS 기능이 필요합니다. 서버를 추가한 후 위치 선택기를 사용하여 Kavita 또는 Komga 라이브러리로 전환하세요.",
       "tipTitle": "빠른 팁",
       "tipBullets": [
-        "원격 접근에는 안전한 개인 네트워크나 Tailscale을 사용하세요.",
-        "QR을 생성하기 전에 서버 URL과 API 키를 다시 확인하세요.",
-        "생성된 코드를 안전하게 보관하세요. 접속 정보가 포함되어 있습니다."
+        "원격 접속에는 안전한 개인 네트워크나 Tailscale을 사용하세요.",
+        "QR을 만들기 전에 서버 URL과 계정 이름을 확인하세요.",
+        "Kavita와 Komga API 키는 QR에 포함되므로 QR을 비공개로 보관하세요. Calibre 비밀번호는 앱에서 입력하며 QR에 포함되지 않습니다."
       ],
       "homeCta": "홈으로 돌아가기",
       "form": {
         "generatorTitle": "QR 코드 생성하기",
         "generatorDesc": "아래에 서버 정보를 입력한 후 생성 버튼을 눌러 스캔 가능한 QR 코드를 만드세요.",
         "displayNameLabel": "표시 이름 (선택 사항)",
-        "displayNamePlaceholder": "집 Kavita",
+        "displayNamePlaceholder": "홈 서버",
         "serviceTypeLabel": "서비스 유형",
         "kavitaOption": "Kavita API",
         "komgaOption": "Komga API",
@@ -1236,7 +1236,11 @@
         "clear": "지우기",
         "warning": "이 QR 코드에는 서버 주소와 인증 정보가 포함되어 있습니다. 공개적으로 공유하지 마세요.",
         "enterUrl": "서버 URL을 입력해 주세요.",
-        "qrCredit": "QR 코드 powered by qrcode-generator"
+        "qrCredit": "QR 코드 powered by qrcode-generator",
+        "calibreOption": "Calibre Content Server",
+        "usernameLabel": "사용자 이름 (선택 사항)",
+        "usernamePlaceholder": "Calibre 계정 이름",
+        "calibreCredentialHint": "비밀번호는 BiblioFuse에서 입력하며 QR 코드에 포함되지 않습니다."
       }
     },
     "toolsHub": {

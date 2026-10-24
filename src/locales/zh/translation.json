@@ -1181,23 +1181,23 @@
     },
     "qrGeneratorPage": {
       "seoTitle": "BiblioFuse QR 生成器",
-      "seoDesc": "生成二维码以将 Kavita 或 Komga 服务器添加到 BiblioFuse。从 iOS 或 Android 扫描即可轻松设置。",
+      "seoDesc": "生成二维码，将 Kavita、Komga 或 Calibre Content Server 添加到 BiblioFuse。使用 iOS 或 Android 扫描即可轻松设置。",
       "back": "返回 BiblioFuse",
       "eyebrow": "QR 服务器设置",
-      "title": "使用 QR 添加 Kavita 和 Komga 服务器",
-      "desc": "生成安全的 BiblioFuse 二维码用于 Kavita 或 Komga 服务器连接，然后从手机扫描以自动添加服务器。",
+      "title": "通过二维码添加 Kavita、Komga 和 Calibre 服务器",
+      "desc": "生成用于连接 Kavita、Komga 或 Calibre Content Server 的 BiblioFuse 二维码，然后用手机扫描即可自动添加服务器。",
       "whatTitle": "功能介绍",
-      "whatDesc": "创建一个可共享的服务器 QR 码，包含 API 地址和可选密钥，让 BiblioFuse 无需手动输入 URL 即可连接。",
+      "whatDesc": "创建包含服务器地址和账户名的二维码，让 BiblioFuse 无需手动输入 URL 即可连接。",
       "whatBullets": [
-        "支持 Kavita 和 Komga API 服务器",
-        "包含可选 API 密钥以确保安全连接",
+        "支持 Kavita、Komga 和 Calibre Content Server",
+        "Kavita 和 Komga 的 API 密钥为可选项",
         "适用于 iOS 和 Android 设备"
       ],
       "stepsTitle": "使用方法",
       "steps": [
         {
           "title": "生成二维码",
-          "desc": "输入服务器地址，选择 Kavita 或 Komga，必要时添加 API 密钥。"
+          "desc": "输入服务器地址，选择服务器类型，并按需填写账户名。二维码中不会包含密码。"
         },
         {
           "title": "在 BiblioFuse 中扫描",
@@ -1213,15 +1213,15 @@
       "tipTitle": "快速提示",
       "tipBullets": [
         "使用安全的私人网络或 Tailscale 进行远程访问。",
-        "生成 QR 前请仔细检查服务器 URL 和 API 密钥。",
-        "妥善保管生成的二维码，其中包含访问信息。"
+        "生成二维码前，请检查服务器 URL 和账户名。",
+        "Kavita 和 Komga 的 API 密钥会包含在各自的二维码中，请妥善保管。Calibre 密码在应用中输入，不会放入二维码。"
       ],
       "homeCta": "返回首页",
       "form": {
         "generatorTitle": "生成您的二维码",
         "generatorDesc": "在下方填写您的服务器信息，然后点击生成以创建可扫描的二维码。",
         "displayNameLabel": "显示名称（可选）",
-        "displayNamePlaceholder": "家庭 Kavita",
+        "displayNamePlaceholder": "家庭服务器",
         "serviceTypeLabel": "服务类型",
         "kavitaOption": "Kavita API",
         "komgaOption": "Komga API",
@@ -1236,7 +1236,11 @@
         "clear": "清除",
         "warning": "此二维码包含您的服务器地址和身份验证信息。请勿公开发布。",
         "enterUrl": "请输入服务器地址。",
-        "qrCredit": "二维码由 qrcode-generator 驱动"
+        "qrCredit": "二维码由 qrcode-generator 驱动",
+        "calibreOption": "Calibre Content Server",
+        "usernameLabel": "用户名（可选）",
+        "usernamePlaceholder": "Calibre 账户名",
+        "calibreCredentialHint": "请在 BiblioFuse 中输入密码；密码不会包含在二维码中。"
       }
     },
     "toolsHub": {

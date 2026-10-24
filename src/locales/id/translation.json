@@ -1181,23 +1181,23 @@
     },
     "qrGeneratorPage": {
       "seoTitle": "BiblioFuse QR Generator",
-      "seoDesc": "Buat kode QR untuk menambahkan server Kavita atau Komga ke BiblioFuse. Pindai dari iOS atau Android untuk pengaturan yang mudah.",
+      "seoDesc": "Buat kode QR untuk menambahkan server Kavita, Komga, atau Calibre Content Server ke BiblioFuse. Pindai dari iOS atau Android untuk pengaturan server yang mudah.",
       "back": "Kembali ke BiblioFuse",
       "eyebrow": "Pengaturan server QR",
-      "title": "Tambahkan server Kavita & Komga dengan QR",
-      "desc": "Buat kode QR BiblioFuse yang aman untuk koneksi server Kavita atau Komga, lalu pindai dari ponsel Anda untuk menambahkan server secara otomatis.",
+      "title": "Tambahkan server Kavita, Komga, dan Calibre dengan QR",
+      "desc": "Buat kode QR BiblioFuse untuk terhubung ke Kavita, Komga, atau Calibre Content Server, lalu pindai dari ponsel untuk menambahkan server secara otomatis.",
       "whatTitle": "Fungsinya",
-      "whatDesc": "Buat QR server yang dapat dibagikan dengan alamat API dan kunci opsional, sehingga BiblioFuse dapat terhubung tanpa mengetik URL manual.",
+      "whatDesc": "Buat QR server berisi alamat dan nama akun agar BiblioFuse dapat terhubung tanpa mengetik URL secara manual.",
       "whatBullets": [
-        "Mendukung server API Kavita dan Komga",
-        "Termasuk kunci API opsional untuk koneksi aman",
+        "Mendukung server Kavita, Komga, dan Calibre Content Server",
+        "Kunci API Kavita dan Komga bersifat opsional",
         "Bekerja di perangkat iOS dan Android"
       ],
       "stepsTitle": "Cara menggunakannya",
       "steps": [
         {
           "title": "Buat kode QR",
-          "desc": "Masukkan alamat server Anda, pilih Kavita atau Komga, dan tambahkan kunci API jika diperlukan."
+          "desc": "Masukkan alamat server, pilih jenis server, lalu tambahkan nama akun jika diperlukan. Kata sandi tidak pernah disertakan dalam QR."
         },
         {
           "title": "Pindai di BiblioFuse",
@@ -1213,15 +1213,15 @@
       "tipTitle": "Tips cepat",
       "tipBullets": [
         "Gunakan jaringan pribadi yang aman atau Tailscale untuk akses jarak jauh.",
-        "Periksa kembali URL server dan kunci API sebelum membuat QR.",
-        "Simpan kode yang dihasilkan dengan aman — berisi informasi akses."
+        "Periksa URL server dan nama akun sebelum membuat QR.",
+        "Kunci API Kavita dan Komga disertakan dalam QR masing-masing; jaga kerahasiaannya. Kata sandi Calibre dimasukkan di aplikasi dan tidak disertakan."
       ],
       "homeCta": "Kembali ke beranda",
       "form": {
         "generatorTitle": "Buat kode QR Anda",
         "generatorDesc": "Isi detail server Anda di bawah, lalu ketuk Buat untuk menghasilkan kode QR yang dapat dipindai.",
         "displayNameLabel": "Nama tampilan (opsional)",
-        "displayNamePlaceholder": "Kavita Rumah",
+        "displayNamePlaceholder": "Server rumah",
         "serviceTypeLabel": "Jenis layanan",
         "kavitaOption": "Kavita API",
         "komgaOption": "Komga API",
@@ -1236,7 +1236,11 @@
         "clear": "Hapus",
         "warning": "Kode QR ini berisi alamat server dan informasi autentikasi Anda. Jangan bagikan secara publik.",
         "enterUrl": "Harap masukkan URL server.",
-        "qrCredit": "Kode QR didukung oleh qrcode-generator"
+        "qrCredit": "Kode QR didukung oleh qrcode-generator",
+        "calibreOption": "Calibre Content Server",
+        "usernameLabel": "Nama pengguna (opsional)",
+        "usernamePlaceholder": "Nama akun Calibre",
+        "calibreCredentialHint": "Kata sandi dimasukkan di BiblioFuse dan tidak pernah dimasukkan ke dalam QR."
       }
     },
     "toolsHub": {

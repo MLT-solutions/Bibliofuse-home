@@ -14,6 +14,7 @@ export default function QrCodeGenerator() {
   const [kind, setKind] = useState('kavita');
   const [url, setUrl] = useState('http://192.168.0.123:5000');
   const [apiKey, setApiKey] = useState('');
+  const [username, setUsername] = useState('');
   const [showKey, setShowKey] = useState(false);
   const [qrHtml, setQrHtml] = useState('');
   const generateQr = useCallback(() => {
@@ -23,7 +24,8 @@ export default function QrCodeGenerator() {
     params.set('address', trimmedUrl);
     if (name.trim()) params.set('name', name.trim());
     params.set('kind', kind);
-    if (apiKey.trim()) params.set('apikey', apiKey.trim());
+    if (kind === 'calibre' && username.trim()) params.set('username', username.trim());
+    if (kind !== 'calibre' && apiKey.trim()) params.set('apikey', apiKey.trim());
     const data = 'bibliofuse://add-server?' + params.toString();
 
     const qr = qrcode(0, 'M');
@@ -60,7 +62,7 @@ export default function QrCodeGenerator() {
         container.appendChild(addr);
       }
     }, 0);
-  }, [url, name, kind, apiKey]);
+  }, [url, name, kind, apiKey, username]);
 
   const clearQr = () => {
     setQrHtml('');
@@ -71,7 +73,7 @@ export default function QrCodeGenerator() {
   const handleKindChange = (e) => {
     const v = e.target.value;
     setKind(v);
-    setUrl(v === 'kavita' ? 'http://192.168.0.123:5000' : 'http://192.168.0.123:25600');
+    setUrl(v === 'kavita' ? 'http://192.168.0.123:5000' : v === 'komga' ? 'http://192.168.0.123:25600' : 'http://192.168.0.123:8080');
   };
 
   return (
@@ -103,6 +105,7 @@ export default function QrCodeGenerator() {
             >
               <option value="kavita">{f.kavitaOption}</option>
               <option value="komga">{f.komgaOption}</option>
+              <option value="calibre">{f.calibreOption}</option>
             </select>
           </div>
 
@@ -116,6 +119,19 @@ export default function QrCodeGenerator() {
             />
           </div>
 
+          {kind === 'calibre' ? (
+            <div className="flex flex-col gap-1">
+              <label className="text-xs font-semibold text-slate-600">{f.usernameLabel}</label>
+              <input
+                autoComplete="off"
+                placeholder={f.usernamePlaceholder}
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 font-mono text-sm text-slate-950 outline-none transition focus:border-slate-400 focus:bg-white"
+              />
+              <span className="mt-1 text-[11px] text-slate-400">{f.calibreCredentialHint}</span>
+            </div>
+          ) : (
           <div className="flex flex-col gap-1">
             <label className="text-xs font-semibold text-slate-600">{f.apiKeyLabel}</label>
             <div className="flex gap-2">
@@ -136,7 +152,7 @@ export default function QrCodeGenerator() {
               </button>
             </div>
             <span className="mt-1 text-[11px] text-slate-400">{f.apiKeyHint}</span>
-          </div>
+          </div>)}
         </div>
 
         <div className="mx-6 hidden w-px self-stretch bg-slate-200 lg:block" />

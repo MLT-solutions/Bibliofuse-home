@@ -438,23 +438,23 @@
     },
     "qrGeneratorPage": {
       "seoTitle": "BiblioFuse QR Generator",
-      "seoDesc": "Generate a QR code to add Kavita or Komga servers to BiblioFuse. Scan it from iOS or Android for easy server setup.",
+      "seoDesc": "Generate a QR code to add Kavita, Komga, or Calibre Content Server to BiblioFuse. Scan it from iOS or Android for easy server setup.",
       "back": "Back to BiblioFuse",
       "eyebrow": "QR server setup",
-      "title": "Add Kavita & Komga servers with QR",
-      "desc": "Generate a secure BiblioFuse QR code for Kavita or Komga server connections, then scan it from your phone to add the server automatically.",
+      "title": "Add Kavita, Komga & Calibre servers with QR",
+      "desc": "Generate a BiblioFuse QR code for Kavita, Komga, or Calibre Content Server, then scan it from your phone to add the server automatically.",
       "whatTitle": "What this does",
-      "whatDesc": "Create a shareable server QR with your API address and optional key, so BiblioFuse can connect without manual URL typing.",
+      "whatDesc": "Create a server QR with its address and account name, so BiblioFuse can connect without manual URL typing.",
       "whatBullets": [
-        "Supports Kavita and Komga API servers",
-        "Includes optional API key for secure connections",
+        "Supports Kavita, Komga, and Calibre Content Server",
+        "Includes optional API keys for Kavita and Komga",
         "Works on iOS and Android devices"
       ],
       "stepsTitle": "How to use it",
       "steps": [
         {
           "title": "Generate the QR code",
-          "desc": "Enter your server address, choose Kavita or Komga, and add an API key if needed."
+          "desc": "Enter your server address, choose a server type, and add its account name. Passwords stay out of the QR code."
         },
         {
           "title": "Scan in BiblioFuse",
@@ -470,23 +470,27 @@
       "tipTitle": "Quick tip",
       "tipBullets": [
         "Use a secure private network or Tailscale for remote access.",
-        "Double-check the server URL and API key before generating the QR.",
-        "Keep the generated code safe — it includes access information."
+        "Double-check the server URL and account name before generating the QR.",
+        "Kavita and Komga API keys are included in their QR code; keep it private. Calibre passwords are entered in the app and are not included."
       ],
       "homeCta": "Back to home",
       "form": {
         "generatorTitle": "Generate your QR code",
         "generatorDesc": "Fill in your server details below, then tap Generate to create a scannable QR code.",
         "displayNameLabel": "Display name (optional)",
-        "displayNamePlaceholder": "Home Kavita",
+        "displayNamePlaceholder": "Home server",
         "serviceTypeLabel": "Service type",
         "kavitaOption": "Kavita API",
         "komgaOption": "Komga API",
+        "calibreOption": "Calibre Content Server",
         "serverUrlLabel": "Server URL",
         "serverUrlPlaceholder": "http://192.168.0.123:5000",
         "apiKeyLabel": "API key (optional)",
         "apiKeyPlaceholder": "sk_live_abc123",
         "apiKeyHint": "Copy the API key from Kavita or Komga user/account settings.",
+        "usernameLabel": "Username (optional)",
+        "usernamePlaceholder": "Calibre account name",
+        "calibreCredentialHint": "The password is entered in BiblioFuse and never placed in the QR code.",
         "show": "Show",
         "hide": "Hide",
         "generate": "Generate QR code",

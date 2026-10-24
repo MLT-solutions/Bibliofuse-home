@@ -1181,23 +1181,23 @@
     },
     "qrGeneratorPage": {
       "seoTitle": "BiblioFuse QR-generator",
-      "seoDesc": "Genereer een QR-code om Kavita- of Komga-servers toe te voegen aan BiblioFuse. Scan hem vanaf iOS of Android voor eenvoudige serverinstallatie.",
+      "seoDesc": "Genereer een QR-code om Kavita-, Komga- of Calibre Content Server-servers aan BiblioFuse toe te voegen. Scan vanaf iOS of Android voor een eenvoudige installatie.",
       "back": "Terug naar BiblioFuse",
       "eyebrow": "Serverinstallatie via QR",
-      "title": "Voeg Kavita- en Komga-servers toe met QR",
-      "desc": "Genereer een beveiligde BiblioFuse-QR-code voor Kavita- of Komga-serververbindingen, en scan hem daarna vanaf je telefoon om de server automatisch toe te voegen.",
+      "title": "Voeg Kavita-, Komga- en Calibre-servers toe met QR",
+      "desc": "Genereer een BiblioFuse-QR-code om verbinding te maken met Kavita, Komga of Calibre Content Server en scan deze met je telefoon om de server automatisch toe te voegen.",
       "whatTitle": "Wat dit doet",
-      "whatDesc": "Maak een deelbare server-QR met je API-adres en een optionele sleutel, zodat BiblioFuse verbinding kan maken zonder handmatig een URL te typen.",
+      "whatDesc": "Maak een server-QR met het adres en de accountnaam, zodat BiblioFuse verbinding kan maken zonder de URL handmatig in te voeren.",
       "whatBullets": [
-        "Ondersteunt Kavita- en Komga-API-servers",
-        "Bevat een optionele API-sleutel voor beveiligde verbindingen",
+        "Ondersteunt Kavita-, Komga- en Calibre Content Server-servers",
+        "API-sleutels voor Kavita en Komga zijn optioneel",
         "Werkt op iOS- en Android-apparaten"
       ],
       "stepsTitle": "Hoe je het gebruikt",
       "steps": [
         {
           "title": "Genereer de QR-code",
-          "desc": "Voer je serveradres in, kies Kavita of Komga, en voeg indien nodig een API-sleutel toe."
+          "desc": "Voer het serveradres in, kies het servertype en voeg indien nodig de accountnaam toe. Het wachtwoord komt nooit in de QR-code."
         },
         {
           "title": "Scan in BiblioFuse",
@@ -1213,15 +1213,15 @@
       "tipTitle": "Snelle tip",
       "tipBullets": [
         "Gebruik een beveiligd privénetwerk of Tailscale voor toegang op afstand.",
-        "Controleer de server-URL en API-sleutel dubbel voordat je de QR genereert.",
-        "Bewaar de gegenereerde code veilig — hij bevat toegangsinformatie."
+        "Controleer de server-URL en accountnaam voordat je de QR genereert.",
+        "API-sleutels van Kavita en Komga staan in hun QR-code; houd die privé. Het Calibre-wachtwoord voer je in de app in en staat niet in de QR-code."
       ],
       "homeCta": "Terug naar home",
       "form": {
         "generatorTitle": "Genereer je QR-code",
         "generatorDesc": "Vul hieronder je servergegevens in en tik dan op Genereren om een scanbare QR-code te maken.",
         "displayNameLabel": "Weergavenaam (optioneel)",
-        "displayNamePlaceholder": "Thuis Kavita",
+        "displayNamePlaceholder": "Thuisserver",
         "serviceTypeLabel": "Servicetype",
         "kavitaOption": "Kavita API",
         "komgaOption": "Komga API",
@@ -1236,7 +1236,11 @@
         "clear": "Wissen",
         "warning": "Deze QR-code bevat je serveradres en authenticatiegegevens. Deel hem niet publiekelijk.",
         "enterUrl": "Voer een server-URL in.",
-        "qrCredit": "QR-code mogelijk gemaakt door qrcode-generator"
+        "qrCredit": "QR-code mogelijk gemaakt door qrcode-generator",
+        "calibreOption": "Calibre Content Server",
+        "usernameLabel": "Gebruikersnaam (optioneel)",
+        "usernamePlaceholder": "Calibre-accountnaam",
+        "calibreCredentialHint": "Het wachtwoord voer je in BiblioFuse in en wordt nooit in de QR-code opgenomen."
       }
     },
     "toolsHub": {

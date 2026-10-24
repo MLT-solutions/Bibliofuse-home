@@ -87,6 +87,11 @@ In `public/_redirects`: `/webapp/` → `/tools/`, `/qr-generator/` →
 `/tools/qr-generator/`. `WebApp.jsx` and the standalone `QrGenerator.jsx` page are
 deleted; the QR form now lives at `src/tools/QrCodeGenerator.jsx` like any other tool.
 
+The server QR form supports Kavita and Komga API sources (including their optional API
+key) and Calibre Content Server. Calibre QR codes may include a username, but never its
+password; the receiving app asks for the password in its secure source editor. Switching
+server type changes the example port and only shows the credential field for that type.
+
 `bibliofuse-web.netlify.app` should be retired once these are live.
 
 ## Indexing

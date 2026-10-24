@@ -1181,23 +1181,23 @@
     },
     "qrGeneratorPage": {
       "seoTitle": "BiblioFuse QR Generator",
-      "seoDesc": "Jana kod QR untuk menambah pelayan Kavita atau Komga ke BiblioFuse. Imbas dari iOS atau Android untuk persediaan mudah.",
+      "seoDesc": "Jana kod QR untuk menambah pelayan Kavita, Komga atau Calibre Content Server ke BiblioFuse. Imbas dari iOS atau Android untuk persediaan pelayan yang mudah.",
       "back": "Kembali ke BiblioFuse",
       "eyebrow": "Persediaan pelayan QR",
-      "title": "Tambah pelayan Kavita & Komga dengan QR",
-      "desc": "Jana kod QR BiblioFuse yang selamat untuk sambungan pelayan Kavita atau Komga, kemudian imbas dari telefon anda untuk menambah pelayan secara automatik.",
+      "title": "Tambah pelayan Kavita, Komga dan Calibre dengan QR",
+      "desc": "Jana kod QR BiblioFuse untuk menyambung ke Kavita, Komga atau Calibre Content Server, kemudian imbas dengan telefon untuk menambah pelayan secara automatik.",
       "whatTitle": "Fungsinya",
-      "whatDesc": "Cipta QR pelayan yang boleh dikongsi dengan alamat API dan kunci pilihan, supaya BiblioFuse boleh bersambung tanpa menaip URL secara manual.",
+      "whatDesc": "Cipta QR pelayan yang mengandungi alamat dan nama akaun supaya BiblioFuse boleh bersambung tanpa menaip URL secara manual.",
       "whatBullets": [
-        "Menyokong pelayan API Kavita dan Komga",
-        "Termasuk kunci API pilihan untuk sambungan selamat",
+        "Menyokong pelayan Kavita, Komga dan Calibre Content Server",
+        "Kunci API Kavita dan Komga adalah pilihan",
         "Berfungsi pada peranti iOS dan Android"
       ],
       "stepsTitle": "Cara menggunakannya",
       "steps": [
         {
           "title": "Jana kod QR",
-          "desc": "Masukkan alamat pelayan anda, pilih Kavita atau Komga, dan tambah kunci API jika perlu."
+          "desc": "Masukkan alamat pelayan, pilih jenis pelayan dan tambah nama akaun jika perlu. Kata laluan tidak pernah disertakan dalam QR."
         },
         {
           "title": "Imbas dalam BiblioFuse",
@@ -1212,16 +1212,16 @@
       "noteDesc": "Aliran imbasan pelayan memerlukan ciri BiblioFuse Pro OPDS. Selepas pelayan ditambah, gunakan pemilih Lokasi untuk beralih ke perpustakaan Kavita atau Komga anda.",
       "tipTitle": "Tip pantas",
       "tipBullets": [
-        "Gunakan rangkaian peribadi selamat atau Tailscale untuk akses jauh.",
-        "Semak semula URL pelayan dan kunci API sebelum menjana QR.",
-        "Simpan kod yang dijana dengan selamat — ia mengandungi maklumat akses."
+        "Gunakan rangkaian peribadi yang selamat atau Tailscale untuk akses jauh.",
+        "Semak URL pelayan dan nama akaun sebelum menjana QR.",
+        "Kunci API Kavita dan Komga disertakan dalam QR masing-masing; simpan secara peribadi. Kata laluan Calibre dimasukkan dalam aplikasi dan tidak disertakan."
       ],
       "homeCta": "Kembali ke utama",
       "form": {
         "generatorTitle": "Jana kod QR anda",
         "generatorDesc": "Isikan butiran pelayan anda di bawah, kemudian ketik Jana untuk mencipta kod QR yang boleh diimbas.",
         "displayNameLabel": "Nama paparan (pilihan)",
-        "displayNamePlaceholder": "Kavita Rumah",
+        "displayNamePlaceholder": "Pelayan rumah",
         "serviceTypeLabel": "Jenis perkhidmatan",
         "kavitaOption": "Kavita API",
         "komgaOption": "Komga API",
@@ -1236,7 +1236,11 @@
         "clear": "Kosongkan",
         "warning": "Kod QR ini mengandungi alamat pelayan dan maklumat pengesahan anda. Jangan kongsikannya secara umum.",
         "enterUrl": "Sila masukkan URL pelayan.",
-        "qrCredit": "Kod QR dikuasakan oleh qrcode-generator"
+        "qrCredit": "Kod QR dikuasakan oleh qrcode-generator",
+        "calibreOption": "Calibre Content Server",
+        "usernameLabel": "Nama pengguna (pilihan)",
+        "usernamePlaceholder": "Nama akaun Calibre",
+        "calibreCredentialHint": "Kata laluan dimasukkan dalam BiblioFuse dan tidak pernah dimasukkan ke dalam QR."
       }
     },
     "toolsHub": {
