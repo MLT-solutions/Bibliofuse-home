@@ -967,6 +967,13 @@
         "note": "La compatibilidad con iPhone Duo llega con BiblioFuse 2.1.15. Es la misma compra del App Store que para iPhone, iPad, Mac, Vision Pro y Apple TV.",
         "videoAlt": "BiblioFuse en iPhone Duo: se explora la biblioteca plegado y luego se despliega para ver la página de una serie y una página de cómic completa"
       },
+      "watch": {
+        "eyebrow": "Compañero para Apple Watch",
+        "title": "Tu iPhone sigue a cargo.",
+        "desc": "Explora las bibliotecas que sirve tu iPhone y usa Apple Watch para controlar Leer en voz alta en el iPhone y el cómic que ya tienes abierto.",
+        "note": "El acceso a los libros, el audio y las páginas del cómic siguen en el iPhone.",
+        "imageAlt": "Bibliotecas en Apple Watch, controles de Leer en voz alta y controles de un cómic abierto en el iPhone."
+      },
       "vision": {
         "eyebrow": "Ahora en Apple Vision Pro",
         "badge": "App nativa de visionOS",
@@ -2352,6 +2359,14 @@
       "e-ink": {
         "label": "Modo de pantalla e-ink",
         "note": "Un lector ajustado para pantallas de tinta electrónica"
+      },
+      "watch-library-browsing": {
+        "label": "Exploración de bibliotecas en Apple Watch",
+        "note": "Explora bibliotecas servidas por el iPhone enlazado"
+      },
+      "watch-reading-controls": {
+        "label": "Controles de Apple Watch para Leer en voz alta y un cómic abierto en iPhone",
+        "note": "El audio y las páginas del cómic siguen en el iPhone"
       }
     },
     "specs": {

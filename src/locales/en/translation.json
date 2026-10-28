@@ -1031,6 +1031,13 @@
         "note": "iPhone Duo support arrives in BiblioFuse 2.1.15. It is the same App Store purchase as iPhone, iPad, Mac, Vision Pro and Apple TV.",
         "videoAlt": "BiblioFuse on iPhone Duo: browsing the library folded, then unfolding to a series page and a full comic page"
       },
+      "watch": {
+        "eyebrow": "Apple Watch companion",
+        "title": "Your iPhone stays in charge.",
+        "desc": "Browse libraries served by your iPhone, then use Apple Watch to control Read Aloud on iPhone and the comic already open there.",
+        "note": "Book access, spoken audio, and comic pages stay on iPhone.",
+        "imageAlt": "Apple Watch library browsing, Read Aloud controls, and controls for a comic open on iPhone."
+      },
       "vision": {
         "eyebrow": "Now on Apple Vision Pro",
         "badge": "Native visionOS app",
@@ -2352,6 +2359,14 @@
       "e-ink": {
         "label": "E-ink display mode",
         "note": "A reader tuned for e-ink screens"
+      },
+      "watch-library-browsing": {
+        "label": "Apple Watch library browsing",
+        "note": "Browse libraries served by the paired iPhone"
+      },
+      "watch-reading-controls": {
+        "label": "Apple Watch controls for iPhone Read Aloud and an open comic",
+        "note": "Speech playback and comic pages stay on iPhone"
       }
     },
     "specs": {

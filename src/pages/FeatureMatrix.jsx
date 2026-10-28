@@ -464,7 +464,7 @@ export default function FeatureMatrix() {
             <p className="mt-1 text-sm text-slate-500">{tr('noResultsHint')}</p>
           </div>
         ) : (
-          <div className="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-slate-100">
+          <div className="contain-paint overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-slate-100">
             {/* The table is its own scroll region on BOTH axes. `overflow-x: auto`
                 computes `overflow-y` to `auto` as well, so a header sticking against
                 the viewport can never work here — it sticks to this container instead.
@@ -489,9 +489,11 @@ export default function FeatureMatrix() {
                         className="sticky top-0 z-20 bg-white px-2 py-4 text-center text-xs font-bold text-slate-600"
                       >
                         {p.label}
-                        <span className="mt-0.5 block text-[10px] font-medium tabular-nums text-slate-400">
-                          {p.version}
-                        </span>
+                        {p.version && (
+                          <span className="mt-0.5 block text-[10px] font-medium tabular-nums text-slate-400">
+                            {p.version}
+                          </span>
+                        )}
                         {p.sublabel && (
                           <span className="block text-[9px] font-medium text-slate-400">{p.sublabel}</span>
                         )}
@@ -598,11 +600,11 @@ export default function FeatureMatrix() {
                         {columns.map((p) => (
                           <Cell
                             key={p.id}
-                            cell={f.platforms[p.id]}
+                            cell={f.platforms[p.id] ?? { status: 'na', since: null }}
                             platformId={p.id}
                             platformLabel={p.label}
                             featureLabel={tr(`features.${f.id}.label`, f.label)}
-                            highlighted={highlight(f.platforms[p.id])}
+                            highlighted={highlight(f.platforms[p.id] ?? { status: 'na', since: null })}
                             tr={tr}
                           />
                         ))}

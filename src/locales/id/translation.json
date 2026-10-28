@@ -967,6 +967,13 @@
         "note": "Dukungan iPhone Duo hadir di BiblioFuse 2.1.15. Pembeliannya sama di App Store dengan iPhone, iPad, Mac, Vision Pro, dan Apple TV.",
         "videoAlt": "BiblioFuse di iPhone Duo: menjelajahi perpustakaan saat terlipat, lalu membukanya ke halaman seri dan satu halaman komik penuh"
       },
+      "watch": {
+        "eyebrow": "Pendamping Apple Watch",
+        "title": "Pemutaran dan komik tetap ditangani iPhone.",
+        "desc": "Jelajahi pustaka yang disediakan iPhone, lalu gunakan Apple Watch untuk mengontrol Bacakan di iPhone dan komik yang sudah terbuka di sana.",
+        "note": "Akses buku, audio ucapan, dan halaman komik tetap di iPhone.",
+        "imageAlt": "Menjelajahi pustaka di Apple Watch, mengontrol Bacakan, dan mengontrol komik yang terbuka di iPhone."
+      },
       "vision": {
         "eyebrow": "Kini di Apple Vision Pro",
         "badge": "Aplikasi visionOS asli",
@@ -2352,6 +2359,14 @@
       "e-ink": {
         "label": "Mode layar e-ink",
         "note": "Pembaca yang disetel untuk layar e-ink"
+      },
+      "watch-library-browsing": {
+        "label": "Menjelajahi pustaka di Apple Watch",
+        "note": "Jelajahi pustaka yang disediakan oleh iPhone yang dipasangkan"
+      },
+      "watch-reading-controls": {
+        "label": "Kontrol Apple Watch untuk Bacakan di iPhone dan komik yang terbuka",
+        "note": "Pemutaran ucapan dan halaman komik tetap di iPhone"
       }
     },
     "specs": {

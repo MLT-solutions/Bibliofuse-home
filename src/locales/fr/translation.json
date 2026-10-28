@@ -967,6 +967,13 @@
         "note": "La prise en charge de l’iPhone Duo arrive avec BiblioFuse 2.1.15. C’est le même achat App Store que pour iPhone, iPad, Mac, Vision Pro et Apple TV.",
         "videoAlt": "BiblioFuse sur iPhone Duo : parcours de la bibliothèque plié, puis dépliage vers la page d’une série et une planche de BD entière"
       },
+      "watch": {
+        "eyebrow": "Compagnon pour Apple Watch",
+        "title": "Votre iPhone garde la main.",
+        "desc": "Parcourez les bibliothèques servies par votre iPhone, puis utilisez l’Apple Watch pour contrôler la lecture à voix haute sur l’iPhone et la BD déjà ouverte.",
+        "note": "L’accès aux livres, l’audio et les pages de BD restent sur l’iPhone.",
+        "imageAlt": "Bibliothèques sur Apple Watch, commandes de lecture à voix haute et commandes d’une BD ouverte sur iPhone."
+      },
       "vision": {
         "eyebrow": "Désormais sur Apple Vision Pro",
         "badge": "App visionOS native",
@@ -2352,6 +2359,14 @@
       "e-ink": {
         "label": "Mode écran e-ink",
         "note": "Un lecteur adapté aux écrans à encre électronique"
+      },
+      "watch-library-browsing": {
+        "label": "Bibliothèques sur Apple Watch",
+        "note": "Parcourez les bibliothèques servies par l’iPhone jumelé"
+      },
+      "watch-reading-controls": {
+        "label": "Commandes Apple Watch pour la lecture à voix haute et une BD ouverte sur iPhone",
+        "note": "L’audio et les pages de BD restent sur l’iPhone"
       }
     },
     "specs": {

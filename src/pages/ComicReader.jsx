@@ -34,6 +34,10 @@ const discordUrl = '/discord';
 const featureMediaBase = '/image/comicreader/feature-summary';
 // Locales with their own App Store "resume & sync" artwork in public/image/comicreader/sync/.
 const SYNC_IMAGE_LANGS = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
+const WATCH_IMAGE_LOCALES = {
+  en: 'en-US', es: 'es-ES', fr: 'fr-FR', nl: 'nl-NL', pt: 'pt-BR', ru: 'ru',
+  zh: 'zh-Hans', ja: 'ja', ko: 'ko', id: 'id', ms: 'ms',
+};
 
 // The four outbound "where do I get the host / where do I ask for help" links
 // under the store badges. `docker` and `synology` use stroke icons; `github`
@@ -503,6 +507,37 @@ function DuoSection() {
   );
 }
 
+function WatchCompanion() {
+  const { t } = useTranslation();
+  const { lang } = useParams();
+  const copy = t('redesign.comicReaderPage.watch', { returnObjects: true });
+  const imageLocale = WATCH_IMAGE_LOCALES[lang] || 'en-US';
+
+  return (
+    <section id="apple-watch" className="border-y border-slate-200/70 bg-slate-50 py-16 sm:py-20">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_auto] lg:gap-16 lg:px-8">
+        <div className="max-w-2xl">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-slate-600">
+            <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
+            {copy.eyebrow}
+          </div>
+          <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-[1.05] tracking-tight text-slate-950">{copy.title}</h2>
+          <p className="mt-4 max-w-xl text-lg leading-relaxed text-slate-600">{copy.desc}</p>
+          <p className="mt-6 max-w-xl border-l-2 border-slate-300 pl-3 text-sm leading-relaxed text-slate-500">{copy.note}</p>
+        </div>
+        <img
+          src={`/image/home/watch-companion/${imageLocale}.jpg`}
+          alt={copy.imageAlt}
+          width="828"
+          height="1800"
+          loading="lazy"
+          className="mx-auto block h-auto w-full max-w-[350px] rounded-3xl shadow-xl ring-1 ring-slate-900/10"
+        />
+      </div>
+    </section>
+  );
+}
+
 function VisionProSection() {
   const { t } = useTranslation();
   const v = t('redesign.comicReaderPage.vision', { returnObjects: true });
@@ -885,6 +920,8 @@ const ComicReader = () => {
             alt={t('redesign.readerSection.features.streaming.imageAlt')}
             footnote={t('redesign.readerSection.features.streaming.footnote')}
           />
+
+          <WatchCompanion />
 
           <ToolsHighlight />
         </div>

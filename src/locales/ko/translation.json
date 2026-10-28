@@ -967,6 +967,13 @@
         "note": "iPhone Duo 지원은 BiblioFuse 2.1.15부터 제공됩니다. iPhone, iPad, Mac, Vision Pro, Apple TV와 동일한 App Store 구매에 포함됩니다.",
         "videoAlt": "iPhone Duo의 BiblioFuse: 접은 상태로 라이브러리를 둘러본 뒤 펼쳐서 시리즈 페이지와 만화 전체 페이지를 보는 모습"
       },
+      "watch": {
+        "eyebrow": "Apple Watch 컴패니언",
+        "title": "재생과 만화 읽기는 iPhone에서 처리합니다.",
+        "desc": "iPhone이 제공하는 라이브러리를 Apple Watch에서 둘러보고, iPhone의 소리 내어 읽기와 이미 열려 있는 만화를 제어하세요.",
+        "note": "책 접근, 음성 재생, 만화 페이지 표시는 iPhone에서 처리합니다.",
+        "imageAlt": "Apple Watch에서 라이브러리 탐색, iPhone 소리 내어 읽기 제어, iPhone에서 열린 만화 제어."
+      },
       "vision": {
         "eyebrow": "이제 Apple Vision Pro에서",
         "badge": "네이티브 visionOS 앱",
@@ -2352,6 +2359,14 @@
       "e-ink": {
         "label": "전자잉크 디스플레이 모드",
         "note": "전자잉크 화면에 맞춘 리더"
+      },
+      "watch-library-browsing": {
+        "label": "Apple Watch 라이브러리 탐색",
+        "note": "페어링된 iPhone이 제공하는 라이브러리 탐색"
+      },
+      "watch-reading-controls": {
+        "label": "Apple Watch에서 iPhone 소리 내어 읽기와 열린 만화 제어",
+        "note": "음성 재생과 만화 페이지 표시는 iPhone에서 처리"
       }
     },
     "specs": {

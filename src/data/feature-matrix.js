@@ -85,6 +85,7 @@
 
 export const PLATFORMS = [
   { id: 'ios', label: 'iOS / iPadOS', version: '2.1.13', family: 'apple' },
+  { id: 'watchos', label: 'Apple Watch', version: '', family: 'apple' },
   { id: 'macos', label: 'macOS', version: '2.1.9', family: 'apple' },
   { id: 'visionos', label: 'visionOS', version: '2.1.12', family: 'apple' },
   { id: 'tvos', label: 'tvOS', version: '2.1.7', family: 'apple' },
@@ -173,6 +174,7 @@ export function releaseFor(platformId, since) {
 // keep them in step.
 export const STORES = {
   ios: { kind: 'apple', url: 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093' },
+  watchos: { kind: 'apple', url: 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093' },
   macos: { kind: 'apple', url: 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093' },
   visionos: { kind: 'apple', url: 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093' },
   tvos: { kind: 'apple', url: 'https://apps.apple.com/kw/app/bibliofuse-reader-compress/id6758330093' },
@@ -291,6 +293,30 @@ const m = (since) => ({ status: 'merged', since, noteKey: null });
 const na = { status: 'na', since: null, noteKey: null };
 
 export const FEATURES = [
+  {
+    id: 'watch-library-browsing',
+    group: 'libraries',
+    label: 'Apple Watch library browsing',
+    note: 'Browse libraries served by the paired iPhone',
+    pro: false,
+    aliases: ['watchOS', 'Watch', 'wrist', 'library', 'browse'],
+    platforms: {
+      ios: na, watchos: m('2026-10-28'), macos: na, visionos: na,
+      tvos: na, android: na, androidtv: na, windows: na, nas: na,
+    },
+  },
+  {
+    id: 'watch-reading-controls',
+    group: 'reading',
+    label: 'Apple Watch controls for iPhone Read Aloud and an open comic',
+    note: 'Speech playback and comic pages stay on iPhone',
+    pro: false,
+    aliases: ['watchOS', 'Watch', 'wrist', 'TTS', 'text to speech', 'comic remote'],
+    platforms: {
+      ios: na, watchos: m('2026-10-28'), macos: na, visionos: na,
+      tvos: na, android: na, androidtv: na, windows: na, nas: na,
+    },
+  },
   // ── File formats ───────────────────────────────────────────────────────────
   // Added 2026-09-10. These three dimensions existed only in the 11-row "Compare apps"
   // table on /comicreader/ and were missing from the matrix entirely — CBR appeared

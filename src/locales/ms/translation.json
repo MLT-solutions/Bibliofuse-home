@@ -967,6 +967,13 @@
         "note": "Sokongan iPhone Duo tiba dalam BiblioFuse 2.1.15. Ia pembelian App Store yang sama seperti iPhone, iPad, Mac, Vision Pro dan Apple TV.",
         "videoAlt": "BiblioFuse pada iPhone Duo: melayari pustaka semasa terlipat, kemudian membuka lipatan ke halaman siri dan satu halaman komik penuh"
       },
+      "watch": {
+        "eyebrow": "Teman Apple Watch",
+        "title": "iPhone kekal mengendalikan bacaan.",
+        "desc": "Semak imbas pustaka yang disediakan oleh iPhone, kemudian gunakan Apple Watch untuk mengawal Baca Lantang pada iPhone dan komik yang sudah dibuka di situ.",
+        "note": "Akses buku, audio pertuturan dan halaman komik kekal pada iPhone.",
+        "imageAlt": "Menyemak imbas pustaka pada Apple Watch, mengawal Baca Lantang dan mengawal komik yang dibuka pada iPhone."
+      },
       "vision": {
         "eyebrow": "Kini di Apple Vision Pro",
         "badge": "Aplikasi visionOS asli",
@@ -2352,6 +2359,14 @@
       "e-ink": {
         "label": "Mod paparan e-ink",
         "note": "Pembaca yang ditala untuk skrin e-ink"
+      },
+      "watch-library-browsing": {
+        "label": "Semak imbas pustaka pada Apple Watch",
+        "note": "Semak imbas pustaka yang disediakan oleh iPhone berpasangan"
+      },
+      "watch-reading-controls": {
+        "label": "Kawalan Apple Watch untuk Baca Lantang pada iPhone dan komik terbuka",
+        "note": "Audio pertuturan dan halaman komik kekal pada iPhone"
       }
     },
     "specs": {

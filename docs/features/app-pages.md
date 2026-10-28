@@ -181,6 +181,11 @@ localized ASC set (`pt` uses the pt-BR export, `zh` the zh-Hans one). It renders
 default portrait frame, and the row has a fifth bullet for progress, bookmark and
 annotation sync.
 
+### Apple Watch companion section (`/comicreader/`, added 2026-10-28)
+`WatchCompanion` follows the library-hub streaming feature row and precedes ToolsHighlight. It uses the approved localized compositions under `public/image/home/watch-companion/`; website `pt` uses `pt-BR.jpg` and website `zh` uses `zh-Hans.jpg`. Copy describes Apple Watch as a companion that browses libraries served by the paired iPhone and controls iPhone Read Aloud plus a comic already open on iPhone. It states that book access, speech playback and comic pages stay on iPhone; it does not claim standalone Watch reading/audio or universal OPDS/Calibre Recent support.
+
+`/features/` adds Apple Watch as a platform and two Watch-only rows for library browsing and iPhone reading controls. Their `merged` status is based on `bibliofuse_iosv2` commit `432d555` (2026-10-28) and reflects that the Watch code is in `main` but the companion is still prepared for the 2.1.16 release, not a public release. Other platforms default to not applicable for these rows.
+
 ### iPhone Duo section (`/comicreader/`, added 2026-10-14)
 `DuoSection` (inline in `ComicReader.jsx`, rendered after the feature rows and directly
 before `VisionProSection`), `id="iphone-duo"`. A light band, unlike the dark Vision Pro

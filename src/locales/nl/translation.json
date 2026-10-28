@@ -967,6 +967,13 @@
         "note": "Ondersteuning voor iPhone Duo komt met BiblioFuse 2.1.15. Het is dezelfde App Store-aankoop als voor iPhone, iPad, Mac, Vision Pro en Apple TV.",
         "videoAlt": "BiblioFuse op iPhone Duo: dichtgevouwen door de bibliotheek bladeren en daarna openvouwen naar een seriepagina en een volledige strippagina"
       },
+      "watch": {
+        "eyebrow": "Companion voor Apple Watch",
+        "title": "Je iPhone houdt de regie.",
+        "desc": "Blader door bibliotheken die je iPhone aanbiedt en gebruik Apple Watch om Voorlezen op de iPhone en de al geopende strip te bedienen.",
+        "note": "Boektoegang, gesproken audio en strippagina’s blijven op de iPhone.",
+        "imageAlt": "Bibliotheken bekijken op Apple Watch, Voorlezen bedienen en een strip bedienen die op de iPhone openstaat."
+      },
       "vision": {
         "eyebrow": "Nu op Apple Vision Pro",
         "badge": "Native visionOS-app",
@@ -2352,6 +2359,14 @@
       "e-ink": {
         "label": "E-ink-weergavemodus",
         "note": "Een lezer afgestemd op e-ink-schermen"
+      },
+      "watch-library-browsing": {
+        "label": "Bibliotheken bekijken op Apple Watch",
+        "note": "Blader door bibliotheken die de gekoppelde iPhone aanbiedt"
+      },
+      "watch-reading-controls": {
+        "label": "Apple Watch-bediening voor Voorlezen en een geopende strip op iPhone",
+        "note": "Gesproken audio en strippagina’s blijven op iPhone"
       }
     },
     "specs": {

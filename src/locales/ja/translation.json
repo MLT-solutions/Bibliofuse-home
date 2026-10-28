@@ -967,6 +967,13 @@
         "note": "iPhone Duoへの対応はBiblioFuse 2.1.15からです。iPhone、iPad、Mac、Vision Pro、Apple TVと同じApp Storeでの購入に含まれます。",
         "videoAlt": "iPhone DuoのBiblioFuse：折りたたんだ状態でライブラリを閲覧し、開いてシリーズページとコミックの全ページを表示する様子"
       },
+      "watch": {
+        "eyebrow": "Apple Watch コンパニオン",
+        "title": "再生とコミック表示は iPhone が担当。",
+        "desc": "iPhone が提供するライブラリを Apple Watch で閲覧し、iPhone の読み上げ機能や、すでに開いているコミックを操作できます。",
+        "note": "本へのアクセス、音声再生、コミックページの表示は iPhone で行います。",
+        "imageAlt": "Apple Watch でのライブラリ閲覧、iPhone 読み上げの操作、iPhone で開いたコミックの操作。"
+      },
       "vision": {
         "eyebrow": "Apple Vision Pro に対応",
         "badge": "ネイティブ visionOS アプリ",
@@ -2352,6 +2359,14 @@
       "e-ink": {
         "label": "電子ペーパー表示モード",
         "note": "電子ペーパー画面向けに調整したリーダー"
+      },
+      "watch-library-browsing": {
+        "label": "Apple Watch でライブラリを閲覧",
+        "note": "ペアリングした iPhone が提供するライブラリを閲覧"
+      },
+      "watch-reading-controls": {
+        "label": "Apple Watch から iPhone の読み上げと開いているコミックを操作",
+        "note": "音声再生とコミックページの表示は iPhone が担当"
       }
     },
     "specs": {
