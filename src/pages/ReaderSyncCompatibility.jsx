@@ -27,8 +27,6 @@ const MATRIX = {
   'bibliofuse-host': { progress: ALL_FORMATS, bookmark: ALL_FORMATS, annotation: ALL_FORMATS, tags: ALL_FORMATS, rating: ALL_FORMATS },
 };
 
-const IMAGE_LOCALE = { zh: 'zh-Hans' };
-
 function SyncTable({ source, copy }) {
   const matrix = MATRIX[source.id];
 
@@ -70,8 +68,7 @@ export default function ReaderSyncCompatibility() {
   const { t } = useTranslation();
   const { lang = 'en' } = useParams();
   const copy = t('redesign.comicReaderPage.syncCompatibility', { returnObjects: true });
-  const imageLang = IMAGE_LOCALE[lang] || lang;
-  const imagePath = (sourceIndex) => `/image/comicreader/sync-compatibility/${imageLang}/${sourceIndex + 1}-${SOURCES[sourceIndex].id}.png`;
+  const imagePath = (sourceIndex) => `/image/comicreader/sync-compatibility/${lang}/${sourceIndex + 1}-${SOURCES[sourceIndex].id}.png`;
 
   const itemListSchema = {
     '@context': 'https://schema.org',
