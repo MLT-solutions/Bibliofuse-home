@@ -8,7 +8,9 @@
     "tools": "ツール",
     "getApp": "アプリを入手",
     "features": "機能",
-    "guide": "ガイド"
+    "guide": "ガイド",
+    "sync": "同期",
+    "others": "その他"
   },
   "home": {
     "hero": {
@@ -1131,6 +1133,57 @@
         "webVersion": "インストールしたくない場合は、Web版をお試しください",
         "playDemo": "デモを再生",
         "pause": "一時停止"
+      },
+      "syncCompatibility": {
+        "buttonLabel": "サーバー同期の対応表",
+        "eyebrow": "リーダー同期ガイド",
+        "title": "コンテンツソース別コミックリーダー同期対応表",
+        "description": "iCloud、OPDS、Kavita、Komga、Calibre Content Server、BiblioFuse Hostの同期機能を、TXT、EPUB、PDF、CBZ、CBR形式ごとに比較できます。",
+        "intro": "コミックや電子書籍の各コンテンツソースで、読書の進捗、ブックマーク、メモ／ハイライト、本のタグ、評価のどれが同期されるかを確認できます。iCloud、標準OPDS、Kavita・Komgaのネイティブ連携、Calibre Content Server、BiblioFuse Hostを比較します。",
+        "note": "緑のチェックは、その連携が該当操作と形式の同期に対応していることを示します。空欄は非対応です。サーバー機能や形式間で位置を正しく対応付けられるかによって異なる場合があります。Calibre Content ServerにはPDFリーダーが内蔵されていないため、PDF列は空欄です。",
+        "formatList": "対象形式：TXT、EPUB、PDF、CBZ、CBR。",
+        "sourcesHeading": "コンテンツソース別の同期対応",
+        "imageCaption": "読書操作と本の形式ごとの同期対応。",
+        "imageAlt": "{{source}}のコミックリーダー同期対応表。TXT、EPUB、PDF、CBZ、CBR形式の進捗、ブックマーク、メモ／ハイライト、タグ、評価を表示。",
+        "openImage": "対応表を原寸で開く",
+        "tableSummary": "アクセシブルなデータ表を開く",
+        "tableLabel": "同期対応表",
+        "actionHeader": "同期項目",
+        "actions": [
+          "読書の進捗",
+          "ブックマーク",
+          "メモ／ハイライト",
+          "本のタグ",
+          "評価"
+        ],
+        "supported": "対応",
+        "notSupported": "非対応",
+        "faqHeading": "コミックリーダーの同期に関するよくある質問",
+        "breadcrumbLabel": "パンくずリスト",
+        "breadcrumbCurrent": "同期対応",
+        "backToReader": "BiblioFuse Readerに戻る",
+        "sources": [
+          "iCloud",
+          "標準 OPDS",
+          "Kavita",
+          "Komga",
+          "Calibre Content Server",
+          "BiblioFuse ホスト"
+        ],
+        "faqs": [
+          {
+            "q": "BiblioFuseはすべてのOPDSサーバーと読書の進捗を同期できますか？",
+            "a": "いいえ。標準OPDSには、進捗、ブックマーク、注釈をアプリ間で同期する共通仕様がありません。ネイティブ連携では追加機能を利用できる場合があります。ソースと形式ごとの表をご確認ください。"
+          },
+          {
+            "q": "同期表に含まれる漫画・電子書籍の形式は何ですか？",
+            "a": "TXT、EPUB、PDF、CBZ、CBRに対応状況を分けて表示しています。同期の可否はソースと、読書位置や注釈をその形式に安全に対応付けられるかによって異なります。"
+          },
+          {
+            "q": "Calibre Content ServerはPDFの読書位置を同期しますか？",
+            "a": "Calibre Content Serverには内蔵PDFリーダーがないため、PDF列は空欄です。ほかのチェックも、BiblioFuseが位置を正しく対応付けられる形式に限られます。"
+          }
+        ]
       }
     },
     "androidInterest": {

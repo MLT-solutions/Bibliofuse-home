@@ -18,6 +18,7 @@ import FeatureMatrix from './pages/FeatureMatrix';
 import AppChangelog from './pages/AppChangelog';
 import AppPrivacy from './pages/AppPrivacy';
 import ComicReader from './pages/ComicReader';
+import ReaderSyncCompatibility from './pages/ReaderSyncCompatibility';
 import SmartDecrypt from './pages/SmartDecrypt';
 import ContentCue from './pages/ContentCue';
 import AndroidRequest from './pages/AndroidRequest';
@@ -133,6 +134,7 @@ function AppLayout() {
           <Route path="/" element={<Home />} />
           <Route path="/reader" element={<Navigate to={`/${lang}/comicreader/`} replace />} />
           <Route path="/comicreader" element={<ComicReader />} />
+          <Route path="/comicreader/sync" element={<ReaderSyncCompatibility />} />
           <Route path="/guide" element={<Guide />} />
           <Route path="/tools" element={<ToolsHub />} />
           {TOOL_SLUGS.map((slug) => (

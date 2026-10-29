@@ -8,7 +8,9 @@
     "tools": "Alat",
     "getApp": "Dapatkan app",
     "features": "Fitur",
-    "guide": "Panduan"
+    "guide": "Panduan",
+    "sync": "Sinkronisasi",
+    "others": "Lainnya"
   },
   "home": {
     "hero": {
@@ -1131,6 +1133,57 @@
         "webVersion": "Tidak ingin memasang apa pun? Coba versi web",
         "playDemo": "Putar demo",
         "pause": "Jeda"
+      },
+      "syncCompatibility": {
+        "buttonLabel": "Tabel kompatibilitas sinkronisasi server",
+        "eyebrow": "Panduan sinkronisasi pembaca",
+        "title": "Kompatibilitas sinkronisasi pembaca komik menurut sumber konten",
+        "description": "Bandingkan sinkronisasi BiblioFuse dengan iCloud, OPDS, Kavita, Komga, Calibre Content Server, dan BiblioFuse Host untuk format TXT, EPUB, PDF, CBZ, dan CBR.",
+        "intro": "Lihat sumber konten mana yang menyinkronkan progres membaca, penanda, catatan dan sorotan, tag buku, serta peringkat. Tabel ini membandingkan iCloud, OPDS standar, integrasi native Kavita dan Komga, Calibre Content Server, dan BiblioFuse Host.",
+        "note": "Tanda centang hijau berarti integrasi sumber mendukung sinkronisasi untuk tindakan dan format tersebut. Sel kosong berarti tidak didukung. Dukungan dapat bergantung pada kemampuan server dan pemetaan posisi yang dapat diverifikasi antarformat. Calibre Content Server tidak memiliki pembaca PDF bawaan, sehingga kolom PDF kosong.",
+        "formatList": "Format yang tercakup: TXT, EPUB, PDF, CBZ, dan CBR.",
+        "sourcesHeading": "Kompatibilitas sinkronisasi menurut sumber konten",
+        "imageCaption": "Dukungan sinkronisasi menurut tindakan membaca dan format.",
+        "imageAlt": "Tabel kompatibilitas sinkronisasi pembaca komik {{source}} untuk progres membaca, penanda, catatan dan sorotan, tag buku, serta peringkat pada TXT, EPUB, PDF, CBZ, dan CBR.",
+        "openImage": "Buka tabel ukuran penuh",
+        "tableSummary": "Buka tabel data aksesibel",
+        "tableLabel": "kompatibilitas sinkronisasi",
+        "actionHeader": "Tindakan sinkronisasi",
+        "actions": [
+          "Progres membaca",
+          "Penanda",
+          "Catatan / sorotan",
+          "Tag buku",
+          "Peringkat"
+        ],
+        "supported": "Didukung",
+        "notSupported": "Tidak didukung",
+        "faqHeading": "FAQ sinkronisasi pembaca komik",
+        "breadcrumbLabel": "Breadcrumb",
+        "breadcrumbCurrent": "Kompatibilitas sinkronisasi",
+        "backToReader": "Kembali ke BiblioFuse Reader",
+        "sources": [
+          "iCloud",
+          "OPDS standar",
+          "Kavita",
+          "Komga",
+          "Calibre Content Server",
+          "Host BiblioFuse"
+        ],
+        "faqs": [
+          {
+            "q": "Apakah BiblioFuse menyinkronkan progres membaca dengan semua server OPDS?",
+            "a": "Tidak. OPDS standar tidak memiliki kontrak umum untuk sinkronisasi progres, penanda, atau anotasi di aplikasi. Integrasi native dapat menyediakan fitur tambahan; lihat tabel setiap sumber dan format."
+          },
+          {
+            "q": "Format komik dan ebook apa saja yang dicakup tabel ini?",
+            "a": "Tabel ini mencakup TXT, EPUB, PDF, CBZ, dan CBR. Dukungan berbeda menurut sumber dan kemampuan memetakan posisi atau anotasi ke format dengan aman."
+          },
+          {
+            "q": "Apakah Calibre Content Server menyinkronkan progres membaca PDF?",
+            "a": "Kolom PDF kosong karena Calibre Content Server tidak memiliki pembaca PDF bawaan dalam perbandingan ini. Tanda Calibre lainnya terbatas pada format dan lokasi yang dapat dipetakan BiblioFuse."
+          }
+        ]
       }
     },
     "androidInterest": {

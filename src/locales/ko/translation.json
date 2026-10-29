@@ -8,7 +8,9 @@
     "tools": "도구",
     "getApp": "앱 받기",
     "features": "기능",
-    "guide": "가이드"
+    "guide": "가이드",
+    "sync": "동기화",
+    "others": "기타"
   },
   "home": {
     "hero": {
@@ -1131,6 +1133,57 @@
         "webVersion": "설치 없이 쓰고 싶다면 웹 버전을 사용해 보세요",
         "playDemo": "데모 재생",
         "pause": "일시 정지"
+      },
+      "syncCompatibility": {
+        "buttonLabel": "서버 동기화 호환성 표",
+        "eyebrow": "리더 동기화 안내",
+        "title": "콘텐츠 소스별 만화 리더 동기화 호환성",
+        "description": "iCloud, OPDS, Kavita, Komga, Calibre Content Server, BiblioFuse Host의 동기화를 TXT, EPUB, PDF, CBZ, CBR 형식별로 비교합니다.",
+        "intro": "만화와 전자책 콘텐츠 소스별로 읽기 진행률, 책갈피, 메모와 하이라이트, 책 태그, 평점이 동기화되는지 확인하세요. iCloud, 표준 OPDS, Kavita 및 Komga 네이티브 연동, Calibre Content Server, BiblioFuse Host를 비교합니다.",
+        "note": "초록색 체크는 해당 연동이 작업과 형식의 동기화를 지원함을 뜻합니다. 빈칸은 지원하지 않습니다. 서버 기능과 형식 간 위치 매핑 검증에 따라 달라질 수 있습니다. Calibre Content Server에는 내장 PDF 리더가 없으므로 PDF 열은 비어 있습니다.",
+        "formatList": "포함 형식: TXT, EPUB, PDF, CBZ, CBR.",
+        "sourcesHeading": "콘텐츠 소스별 동기화 호환성",
+        "imageCaption": "읽기 작업 및 파일 형식별 동기화 지원.",
+        "imageAlt": "{{source}} 만화 리더 동기화 호환성 표: TXT, EPUB, PDF, CBZ, CBR의 읽기 진행률, 책갈피, 메모와 하이라이트, 책 태그, 평점.",
+        "openImage": "호환성 표 원본 크기로 열기",
+        "tableSummary": "접근성 데이터 표 열기",
+        "tableLabel": "동기화 호환성",
+        "actionHeader": "동기화 항목",
+        "actions": [
+          "읽기 진행률",
+          "책갈피",
+          "메모 / 하이라이트",
+          "책 태그",
+          "평점"
+        ],
+        "supported": "지원",
+        "notSupported": "미지원",
+        "faqHeading": "만화 리더 동기화 FAQ",
+        "breadcrumbLabel": "이동 경로",
+        "breadcrumbCurrent": "동기화 호환성",
+        "backToReader": "BiblioFuse Reader로 돌아가기",
+        "sources": [
+          "iCloud",
+          "표준 OPDS",
+          "Kavita",
+          "Komga",
+          "Calibre Content Server",
+          "BiblioFuse 호스트"
+        ],
+        "faqs": [
+          {
+            "q": "BiblioFuse는 모든 OPDS 서버와 읽기 진행률을 동기화하나요?",
+            "a": "아니요. 표준 OPDS에는 진행률, 책갈피, 주석을 앱 간에 동기화하는 공통 규약이 없습니다. 네이티브 연동은 추가 기능을 제공할 수 있으니 소스와 형식별 표를 확인하세요."
+          },
+          {
+            "q": "동기화 표에는 어떤 만화 및 전자책 형식이 포함되나요?",
+            "a": "TXT, EPUB, PDF, CBZ, CBR 형식을 비교합니다. 지원 여부는 소스와 읽기 위치 또는 주석을 해당 형식에 안전하게 매핑할 수 있는지에 따라 달라집니다."
+          },
+          {
+            "q": "Calibre Content Server는 PDF 읽기 진행률을 동기화하나요?",
+            "a": "Calibre Content Server에는 내장 PDF 리더가 없어서 PDF 열은 비어 있습니다. 나머지 체크도 BiblioFuse가 위치를 정확하게 매핑할 수 있는 형식에 한정됩니다."
+          }
+        ]
       }
     },
     "androidInterest": {

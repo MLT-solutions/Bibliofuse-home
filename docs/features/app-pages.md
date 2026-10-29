@@ -60,13 +60,28 @@ revisiting; it exists only because mlogictech.com wasn't ready.
   `align="start"` for left-aligned heroes. Device names are proper nouns and are
   deliberately not translated. `/webapp` skips the row (it is itself the
   browser tool).
-- The header (`src/components/Navigation.jsx`) shows the page tabs and the Tools
-  dropdown from `md` (768 px) up. Below that a hamburger button opens `#mobile-menu`, a
-  full-width panel with the same tabs, the Tools list and a "Get the app" button (that
-  button is otherwise hidden below `sm`). Until 2026-10-15 there was no mobile menu at
-  all, so on phones the pages were reachable only from the footer. The panel closes on
-  navigation, an outside tap or Escape; its button labels are `redesign.nav.openMenu` /
-  `closeMenu`, translated in all 11 locales.
+- The header (`src/components/Navigation.jsx`) shows Home, Reader, Sync, and Feature
+  tabs, plus an Others dropdown for Guide, Blog, and About and the existing Tools
+  dropdown, from `md` (768 px) up. Below that a hamburger button opens `#mobile-menu`, a
+  full-width panel with the same tabs and expandable Others and Tools sections, plus a
+  "Get the app" button (otherwise hidden below `sm`). The panel closes on navigation, an
+  outside tap or Escape; its button labels and navigation labels are translated in all
+  11 locales.
+
+## Reader sync compatibility page
+
+`src/pages/ReaderSyncCompatibility.jsx` serves the localized route
+`/:lang/comicreader/sync/`, linked by the CTA in the “One shelf for every format”
+feature row on `/comicreader/`. It presents one source card for iCloud, Standard OPDS,
+Kavita, Komga, Calibre Content Server, and BiblioFuse Host. Each card includes the
+localized compatibility graphic from `public/image/comicreader/sync-compatibility/`
+and an expandable semantic HTML table for screen readers and crawlers.
+
+The route uses the `redesign.comicReaderPage.syncCompatibility` locale copy, FAQPage,
+ItemList, and BreadcrumbList schema, and the shared SEO component's canonical, Open Graph,
+and locale-indexing rules. Keep the route in the sitemap, static-route generator, and
+prerender allowlist. The graphics are 1600 × 1000 localized PNGs generated from the
+companion BiblioFuse iOS repository's source cards.
 
 ## Android request page
 The homepage Android demand CTA routes to `/:lang/androidrequest/` instead of opening

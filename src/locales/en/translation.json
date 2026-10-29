@@ -5,10 +5,12 @@
     "webapp": "Web App",
     "about": "About",
     "blog": "Blog",
-    "features": "Features",
+    "features": "Feature",
     "tools": "Tools",
     "getApp": "Get the app",
-    "guide": "Guide"
+    "guide": "Guide",
+    "sync": "Sync",
+    "others": "Others"
   },
   "home": {
     "hero": {
@@ -1195,6 +1197,57 @@
         "webVersion": "Prefer no install? Try the web version",
         "playDemo": "Play demo",
         "pause": "Pause"
+      },
+      "syncCompatibility": {
+        "buttonLabel": "Server Sync Compatibility Table",
+        "eyebrow": "Book reader sync guide",
+        "title": "Comic Reader Sync Compatibility by Content Source",
+        "description": "Compare BiblioFuse comic reader sync support for iCloud, OPDS, Kavita, Komga, Calibre Content Server, and BiblioFuse Host across TXT, EPUB, PDF, CBZ, and CBR.",
+        "intro": "See which reading progress, bookmarks, notes and highlights, book tags, and ratings sync for each comic and ebook content source. This server sync compatibility table compares iCloud, standard OPDS, native Kavita and Komga, Calibre Content Server, and BiblioFuse Host.",
+        "note": "A green check means the source integration supports that sync action and format. A blank cell means it is not supported by that integration. Server capabilities and verifiable format mapping can affect support. Calibre Content Server has no built-in PDF reader, so its PDF column is blank.",
+        "formatList": "Formats covered: TXT, EPUB, PDF, CBZ, and CBR.",
+        "sourcesHeading": "Sync compatibility by content source",
+        "imageCaption": "Sync support by reading action and book format.",
+        "imageAlt": "{{source}} comic reader sync compatibility table for reading progress, bookmarks, notes and highlights, book tags, and ratings across TXT, EPUB, PDF, CBZ, and CBR.",
+        "openImage": "Open full-size compatibility table",
+        "tableSummary": "Open the accessible data table",
+        "tableLabel": "sync compatibility",
+        "actionHeader": "Sync action",
+        "actions": [
+          "Reading progress",
+          "Bookmark",
+          "Note / highlight",
+          "Book tags",
+          "Rating"
+        ],
+        "supported": "Supported",
+        "notSupported": "Not supported",
+        "faqHeading": "Comic reader sync compatibility FAQs",
+        "breadcrumbLabel": "Breadcrumb",
+        "breadcrumbCurrent": "Sync compatibility",
+        "backToReader": "Back to BiblioFuse Reader",
+        "sources": [
+          "iCloud",
+          "Standard OPDS",
+          "Kavita",
+          "Komga",
+          "Calibre Content Server",
+          "BiblioFuse Host"
+        ],
+        "faqs": [
+          {
+            "q": "Does BiblioFuse sync reading progress with every OPDS server?",
+            "a": "No. Standard OPDS does not define one common app-driven sync contract for reading progress, bookmarks, or annotations. Native integrations can expose additional sync features; compare each source and format in the compatibility tables."
+          },
+          {
+            "q": "Which comic and ebook formats are included in the sync table?",
+            "a": "The table covers TXT, EPUB, PDF, CBZ, and CBR. Support varies by source and by whether a reading position or annotation can be mapped safely to that format."
+          },
+          {
+            "q": "Does Calibre Content Server sync PDF reading progress?",
+            "a": "The PDF column is blank because Calibre Content Server does not have a built-in PDF reader in this comparison. The other Calibre checks are limited to formats and locations BiblioFuse can map."
+          }
+        ]
       }
     },
     "androidInterest": {

@@ -39,6 +39,7 @@ superseded — confirm current relevance before citing them as a source of truth
 |---|---|
 | `src/App.jsx` | Router root: language-prefixed routing (`/:lang/*`), per-app route table, shared layout (Navigation/Footer) |
 | `src/pages/Home.jsx` | Home page |
+| `src/pages/ComicReader.jsx`, `src/pages/ReaderSyncCompatibility.jsx` | BiblioFuse Reader landing page and localized `/comicreader/sync/` server-sync compatibility tables — see `features/app-pages.md` |
 | `src/tools/`, `src/pages/tools/` | The five browser tools and their routes — see `features/tools.md`. (`WebApp.jsx`, `GrepTagReader.jsx`, `ArchiveScanner.jsx` all deleted 2026-09-09; `/webapp/` now 301s to `/tools/`) |
 | `src/pages/SmartDecrypt.jsx`, `ContentCue.jsx` | Retired — "this app has moved" stubs linking to mlogictech.com, not landing pages (see above) |
 | `src/pages/Blog.jsx`, `BlogPost.jsx` | Blog index + individual post (fetches markdown at runtime) |

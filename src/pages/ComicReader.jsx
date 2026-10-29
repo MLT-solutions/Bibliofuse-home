@@ -326,7 +326,7 @@ function FeatureVideo({ alt, sources = NAVIGATION_DEMO_SOURCES, poster = `${feat
   );
 }
 
-function ReaderFeatureRow({ eyebrow, title, desc, bullets, image, alt, reverse, kind = 'portrait', accent = 'blue', footnote, badge }) {
+function ReaderFeatureRow({ eyebrow, title, desc, bullets, image, alt, reverse, kind = 'portrait', accent = 'blue', footnote, badge, action }) {
   const accentClasses = {
     blue: 'bg-blue-50 text-blue-600',
     teal: 'bg-teal-50 text-teal-600',
@@ -364,6 +364,14 @@ function ReaderFeatureRow({ eyebrow, title, desc, bullets, image, alt, reverse, 
           ))}
         </ul>
         {footnote && <p className="mt-5 max-w-md border-l-2 border-slate-200 pl-3 text-xs leading-relaxed text-slate-500">{footnote}</p>}
+        {action && (
+          <Link
+            to={action.to}
+            className="mt-6 inline-flex min-h-11 items-center justify-center rounded-xl bg-blue-700 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+          >
+            {action.label}
+          </Link>
+        )}
       </div>
 
       <div className="relative">
@@ -884,6 +892,10 @@ const ComicReader = () => {
             ]}
             image={`${featureMediaBase}/library-shelf.jpg`}
             alt={t('redesign.readerSection.features.library.imageAlt')}
+            action={{
+              to: `/${lang}/comicreader/sync/`,
+              label: t('redesign.comicReaderPage.syncCompatibility.buttonLabel'),
+            }}
           />
 
           <ReaderFeatureRow

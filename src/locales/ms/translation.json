@@ -8,7 +8,9 @@
     "tools": "Alat",
     "getApp": "Dapatkan app",
     "features": "Ciri",
-    "guide": "Panduan"
+    "guide": "Panduan",
+    "sync": "Penyegerakan",
+    "others": "Lain-lain"
   },
   "home": {
     "hero": {
@@ -1131,6 +1133,57 @@
         "webVersion": "Tidak mahu memasang apa-apa? Cuba versi web",
         "playDemo": "Main demo",
         "pause": "Jeda"
+      },
+      "syncCompatibility": {
+        "buttonLabel": "Jadual keserasian penyegerakan pelayan",
+        "eyebrow": "Panduan penyegerakan pembaca",
+        "title": "Keserasian penyegerakan pembaca komik mengikut sumber kandungan",
+        "description": "Bandingkan penyegerakan BiblioFuse dengan iCloud, OPDS, Kavita, Komga, Calibre Content Server dan BiblioFuse Host untuk format TXT, EPUB, PDF, CBZ dan CBR.",
+        "intro": "Lihat sumber kandungan yang menyegerakkan kemajuan bacaan, penanda buku, nota dan sorotan, tag buku serta penilaian. Jadual ini membandingkan iCloud, OPDS standard, integrasi natif Kavita dan Komga, Calibre Content Server dan BiblioFuse Host.",
+        "note": "Tanda semak hijau bermaksud integrasi sumber menyokong tindakan dan format tersebut. Ruang kosong bermaksud tidak disokong. Sokongan mungkin bergantung pada keupayaan pelayan dan pemetaan kedudukan yang boleh disahkan antara format. Calibre Content Server tidak mempunyai pembaca PDF terbina dalam, jadi lajur PDF kosong.",
+        "formatList": "Format yang diliputi: TXT, EPUB, PDF, CBZ dan CBR.",
+        "sourcesHeading": "Keserasian mengikut sumber kandungan",
+        "imageCaption": "Sokongan penyegerakan mengikut tindakan membaca dan format.",
+        "imageAlt": "Jadual keserasian penyegerakan pembaca komik {{source}} untuk kemajuan bacaan, penanda buku, nota dan sorotan, tag buku serta penilaian bagi TXT, EPUB, PDF, CBZ dan CBR.",
+        "openImage": "Buka jadual saiz penuh",
+        "tableSummary": "Buka jadual data yang boleh diakses",
+        "tableLabel": "keserasian penyegerakan",
+        "actionHeader": "Tindakan penyegerakan",
+        "actions": [
+          "Kemajuan bacaan",
+          "Penanda buku",
+          "Nota / sorotan",
+          "Tag buku",
+          "Penilaian"
+        ],
+        "supported": "Disokong",
+        "notSupported": "Tidak disokong",
+        "faqHeading": "Soalan lazim penyegerakan pembaca komik",
+        "breadcrumbLabel": "Jejak navigasi",
+        "breadcrumbCurrent": "Keserasian penyegerakan",
+        "backToReader": "Kembali ke BiblioFuse Reader",
+        "sources": [
+          "iCloud",
+          "OPDS standard",
+          "Kavita",
+          "Komga",
+          "Calibre Content Server",
+          "Hos BiblioFuse"
+        ],
+        "faqs": [
+          {
+            "q": "Adakah BiblioFuse menyegerakkan kemajuan bacaan dengan semua pelayan OPDS?",
+            "a": "Tidak. OPDS standard tidak menetapkan kontrak umum untuk penyegerakan kemajuan bacaan, penanda buku atau anotasi melalui aplikasi. Integrasi natif mungkin menyediakan ciri tambahan; bandingkan setiap sumber dan format dalam jadual."
+          },
+          {
+            "q": "Format komik dan ebook apakah yang disenaraikan?",
+            "a": "Jadual ini meliputi TXT, EPUB, PDF, CBZ dan CBR. Sokongan berbeza mengikut sumber serta sama ada kedudukan atau anotasi boleh dipetakan dengan selamat kepada format tersebut."
+          },
+          {
+            "q": "Adakah Calibre Content Server menyegerakkan kemajuan bacaan PDF?",
+            "a": "Lajur PDF kosong kerana Calibre Content Server tidak mempunyai pembaca PDF terbina dalam untuk perbandingan ini. Tanda Calibre yang lain terhad kepada format dan kedudukan yang boleh dipetakan oleh BiblioFuse."
+          }
+        ]
       }
     },
     "androidInterest": {

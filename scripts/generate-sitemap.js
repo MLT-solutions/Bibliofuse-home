@@ -15,6 +15,7 @@ const ARTICLE_SLUGS = ['kavita-reader-app-progress-bookmark-annotation-sync', 'e
 const ROUTES = [
     { path: '/', priority: '1.0', changefreq: 'weekly' },
     { path: '/comicreader/', priority: '0.8', changefreq: 'monthly' },
+    { path: '/comicreader/sync/', priority: '0.7', changefreq: 'monthly' },
     // /smartdecrypt/ and /contentcue/ retired 2026-07-20 — full pages moved to
     // mlogictech.com (0 clicks/90 days here; see docs/gsc-cloudflare-findings.md).
     // Left out of the sitemap; the routes still exist as noindexed "moved" stubs.

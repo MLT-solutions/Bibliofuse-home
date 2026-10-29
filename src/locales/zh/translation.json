@@ -8,7 +8,9 @@
     "tools": "工具",
     "getApp": "获取应用",
     "features": "功能",
-    "guide": "指南"
+    "guide": "指南",
+    "sync": "同步",
+    "others": "其他"
   },
   "home": {
     "hero": {
@@ -1131,6 +1133,57 @@
         "webVersion": "不想安装？试试网页版",
         "playDemo": "播放演示",
         "pause": "暂停"
+      },
+      "syncCompatibility": {
+        "buttonLabel": "服务器同步兼容性表",
+        "eyebrow": "阅读器同步指南",
+        "title": "按内容来源查看漫画阅读器同步兼容性",
+        "description": "比较 BiblioFuse 在 iCloud、OPDS、Kavita、Komga、Calibre Content Server 和 BiblioFuse Host 中对 TXT、EPUB、PDF、CBZ、CBR 的同步支持。",
+        "intro": "查看不同漫画和电子书内容来源是否同步阅读进度、书签、笔记与高亮、图书标签和评分。本表比较 iCloud、标准 OPDS、Kavita 与 Komga 原生集成、Calibre Content Server 和 BiblioFuse Host。",
+        "note": "绿色勾号表示该来源集成支持对应操作和格式；空白表示该集成不支持。支持情况可能取决于服务器能力，以及阅读位置能否在格式间可靠映射。Calibre Content Server 没有内置 PDF 阅读器，因此 PDF 列留空。",
+        "formatList": "包含格式：TXT、EPUB、PDF、CBZ 和 CBR。",
+        "sourcesHeading": "按内容来源查看同步兼容性",
+        "imageCaption": "按阅读操作和图书格式查看同步支持。",
+        "imageAlt": "{{source}} 漫画阅读器同步兼容性表，涵盖 TXT、EPUB、PDF、CBZ、CBR 的阅读进度、书签、笔记与高亮、图书标签和评分。",
+        "openImage": "打开完整尺寸的兼容性表",
+        "tableSummary": "展开无障碍数据表",
+        "tableLabel": "同步兼容性",
+        "actionHeader": "同步项目",
+        "actions": [
+          "阅读进度",
+          "书签",
+          "笔记／高亮",
+          "图书标签",
+          "评分"
+        ],
+        "supported": "支持",
+        "notSupported": "不支持",
+        "faqHeading": "漫画阅读器同步常见问题",
+        "breadcrumbLabel": "面包屑导航",
+        "breadcrumbCurrent": "同步兼容性",
+        "backToReader": "返回 BiblioFuse Reader",
+        "sources": [
+          "iCloud",
+          "标准 OPDS",
+          "Kavita",
+          "Komga",
+          "Calibre Content Server",
+          "BiblioFuse 主机"
+        ],
+        "faqs": [
+          {
+            "q": "BiblioFuse 能与所有 OPDS 服务器同步阅读进度吗？",
+            "a": "不能。标准 OPDS 没有统一定义应用端的阅读进度、书签或批注同步协议。原生集成可能提供更多同步功能；请查看各来源和格式的兼容性表。"
+          },
+          {
+            "q": "同步表涵盖哪些漫画和电子书格式？",
+            "a": "本表涵盖 TXT、EPUB、PDF、CBZ 和 CBR。支持情况取决于来源，以及阅读位置或批注能否可靠映射到相应格式。"
+          },
+          {
+            "q": "Calibre Content Server 会同步 PDF 阅读进度吗？",
+            "a": "PDF 列留空，因为 Calibre Content Server 在此比较范围内没有内置 PDF 阅读器。Calibre 的其他勾选也仅适用于 BiblioFuse 能可靠映射的位置和格式。"
+          }
+        ]
       }
     },
     "androidInterest": {

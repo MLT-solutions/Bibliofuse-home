@@ -7,8 +7,10 @@
     "blog": "Blog",
     "tools": "Ferramentas",
     "getApp": "Obter app",
-    "features": "Recursos",
-    "guide": "Guia"
+    "features": "Recurso",
+    "guide": "Guia",
+    "sync": "Sincronização",
+    "others": "Outros"
   },
   "home": {
     "hero": {
@@ -1131,6 +1133,57 @@
         "webVersion": "Prefere não instalar nada? Experimente a versão web",
         "playDemo": "Ver demonstração",
         "pause": "Pausar"
+      },
+      "syncCompatibility": {
+        "buttonLabel": "Tabela de compatibilidade de sincronização do servidor",
+        "eyebrow": "Guia de sincronização do leitor",
+        "title": "Compatibilidade de sincronização do leitor de banda desenhada por origem de conteúdo",
+        "description": "Compare a sincronização do BiblioFuse com iCloud, OPDS, Kavita, Komga, Calibre Content Server e BiblioFuse Host nos formatos TXT, EPUB, PDF, CBZ e CBR.",
+        "intro": "Consulte que origens sincronizam o progresso de leitura, marcadores, notas e destaques, etiquetas e classificações. Esta tabela compara iCloud, OPDS padrão, as integrações nativas do Kavita e Komga, Calibre Content Server e BiblioFuse Host.",
+        "note": "Um visto verde indica que a integração suporta essa ação e formato. Uma célula vazia indica que não é suportado. A compatibilidade pode depender das capacidades do servidor e de um mapeamento verificável da posição entre formatos. O Calibre Content Server não inclui leitor de PDF; por isso, a coluna PDF está vazia.",
+        "formatList": "Formatos abrangidos: TXT, EPUB, PDF, CBZ e CBR.",
+        "sourcesHeading": "Compatibilidade por origem de conteúdo",
+        "imageCaption": "Sincronização por ação de leitura e formato.",
+        "imageAlt": "Tabela de compatibilidade de sincronização do leitor de banda desenhada {{source}} para progresso, marcadores, notas e destaques, etiquetas e classificações em TXT, EPUB, PDF, CBZ e CBR.",
+        "openImage": "Abrir tabela em tamanho completo",
+        "tableSummary": "Abrir tabela de dados acessível",
+        "tableLabel": "compatibilidade de sincronização",
+        "actionHeader": "Ação de sincronização",
+        "actions": [
+          "Progresso de leitura",
+          "Marcador",
+          "Nota / destaque",
+          "Etiquetas do livro",
+          "Classificação"
+        ],
+        "supported": "Suportado",
+        "notSupported": "Não suportado",
+        "faqHeading": "Perguntas frequentes sobre sincronização",
+        "breadcrumbLabel": "Navegação estrutural",
+        "breadcrumbCurrent": "Compatibilidade de sincronização",
+        "backToReader": "Voltar ao BiblioFuse Reader",
+        "sources": [
+          "iCloud",
+          "OPDS padrão",
+          "Kavita",
+          "Komga",
+          "Calibre Content Server",
+          "Host BiblioFuse"
+        ],
+        "faqs": [
+          {
+            "q": "O BiblioFuse sincroniza o progresso com qualquer servidor OPDS?",
+            "a": "Não. O OPDS padrão não define um contrato comum para sincronizar na aplicação o progresso, os marcadores ou as anotações. As integrações nativas podem oferecer mais funcionalidades; consulte a tabela de cada origem e formato."
+          },
+          {
+            "q": "Que formatos de banda desenhada e ebooks estão incluídos?",
+            "a": "A tabela inclui TXT, EPUB, PDF, CBZ e CBR. O suporte varia conforme a origem e a possibilidade de mapear com segurança uma posição ou anotação para o formato."
+          },
+          {
+            "q": "O Calibre Content Server sincroniza o progresso de PDF?",
+            "a": "A coluna PDF está vazia porque o Calibre Content Server não tem leitor de PDF integrado nesta comparação. As outras marcas do Calibre limitam-se a formatos e posições que o BiblioFuse consegue mapear."
+          }
+        ]
       }
     },
     "androidInterest": {

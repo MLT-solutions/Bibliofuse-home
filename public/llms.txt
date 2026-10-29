@@ -4,6 +4,8 @@ BiblioFuse is a cross-platform comic and ebook reader app available on iOS, Andr
 
 ## Key pages
 - https://bibliofuse.com/en/ — Homepage and app overview
+- https://bibliofuse.com/en/comicreader/ — BiblioFuse Reader comic and ebook reader, supported formats, and content sources
+- https://bibliofuse.com/en/comicreader/sync/ — Sync compatibility by content source and format: iCloud, standard OPDS, Kavita, Komga, Calibre Content Server, and BiblioFuse Host
 - https://bibliofuse.com/en/webapp — Web App (read in browser, no install needed)
 - https://bibliofuse.com/en/blog/ — Blog: guides, tips, and how-tos for comic and ebook readers
 - https://bibliofuse.com/en/about — About BiblioFuse

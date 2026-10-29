@@ -7,8 +7,10 @@
     "blog": "Blog",
     "tools": "Tools",
     "getApp": "Download app",
-    "features": "Functies",
-    "guide": "Gids"
+    "features": "Functie",
+    "guide": "Gids",
+    "sync": "Synchronisatie",
+    "others": "Overig"
   },
   "home": {
     "hero": {
@@ -1131,6 +1133,57 @@
         "webVersion": "Liever niets installeren? Probeer de webversie",
         "playDemo": "Demo afspelen",
         "pause": "Pauzeren"
+      },
+      "syncCompatibility": {
+        "buttonLabel": "Compatibiliteitstabel voor serversynchronisatie",
+        "eyebrow": "Synchronisatiegids voor de reader",
+        "title": "Synchronisatiecompatibiliteit van de comicreader per contentbron",
+        "description": "Vergelijk de synchronisatie van BiblioFuse met iCloud, OPDS, Kavita, Komga, Calibre Content Server en BiblioFuse Host voor TXT, EPUB, PDF, CBZ en CBR.",
+        "intro": "Bekijk per contentbron welke leesvoortgang, bladwijzers, notities en markeringen, boektags en beoordelingen worden gesynchroniseerd. Deze tabel vergelijkt iCloud, standaard-OPDS, de native integraties van Kavita en Komga, Calibre Content Server en BiblioFuse Host.",
+        "note": "Een groen vinkje betekent dat de bronintegratie die actie en dat formaat ondersteunt. Een leeg vak betekent dat de integratie dit niet synchroniseert. Ondersteuning kan afhangen van serverfuncties en een controleerbare koppeling van leesposities. Calibre Content Server heeft geen ingebouwde PDF-lezer; daarom is de PDF-kolom leeg.",
+        "formatList": "Formaten: TXT, EPUB, PDF, CBZ en CBR.",
+        "sourcesHeading": "Synchronisatie per contentbron",
+        "imageCaption": "Synchronisatie per leesactie en bestandsformaat.",
+        "imageAlt": "Synchronisatiecompatibiliteitstabel voor de BiblioFuse comicreader met {{source}} voor leesvoortgang, bladwijzers, notities en markeringen, boektags en beoordelingen in TXT, EPUB, PDF, CBZ en CBR.",
+        "openImage": "Tabel op volledige grootte openen",
+        "tableSummary": "Toegankelijke gegevenstabel openen",
+        "tableLabel": "synchronisatiecompatibiliteit",
+        "actionHeader": "Synchronisatieactie",
+        "actions": [
+          "Leesvoortgang",
+          "Bladwijzer",
+          "Notitie / markering",
+          "Boektags",
+          "Beoordeling"
+        ],
+        "supported": "Ondersteund",
+        "notSupported": "Niet ondersteund",
+        "faqHeading": "Veelgestelde vragen over reader-synchronisatie",
+        "breadcrumbLabel": "Kruimelpad",
+        "breadcrumbCurrent": "Synchronisatiecompatibiliteit",
+        "backToReader": "Terug naar BiblioFuse Reader",
+        "sources": [
+          "iCloud",
+          "Standaard-OPDS",
+          "Kavita",
+          "Komga",
+          "Calibre Content Server",
+          "BiblioFuse-host"
+        ],
+        "faqs": [
+          {
+            "q": "Synchroniseert BiblioFuse leesvoortgang met elke OPDS-server?",
+            "a": "Nee. Standaard-OPDS definieert geen gemeenschappelijk app-synchronisatiecontract voor leesvoortgang, bladwijzers of annotaties. Native integraties kunnen extra functies bieden; bekijk de tabel per bron en formaat."
+          },
+          {
+            "q": "Welke comic- en ebookformaten staan in de tabel?",
+            "a": "De tabel bevat TXT, EPUB, PDF, CBZ en CBR. Ondersteuning verschilt per bron en hangt af van de betrouwbare koppeling van leesposities of annotaties aan het formaat."
+          },
+          {
+            "q": "Synchroniseert Calibre Content Server PDF-voortgang?",
+            "a": "De PDF-kolom is leeg omdat Calibre Content Server in deze vergelijking geen ingebouwde PDF-lezer heeft. De andere Calibre-vinkjes gelden alleen voor formaten en posities die BiblioFuse betrouwbaar kan koppelen."
+          }
+        ]
       }
     },
     "androidInterest": {
