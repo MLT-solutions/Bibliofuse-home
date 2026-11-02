@@ -88,9 +88,17 @@ In `public/_redirects`: `/webapp/` → `/tools/`, `/qr-generator/` →
 deleted; the QR form now lives at `src/tools/QrCodeGenerator.jsx` like any other tool.
 
 The server QR form supports Kavita and Komga API sources (including their optional API
-key) and Calibre Content Server. Calibre QR codes may include a username, but never its
-password; the receiving app asks for the password in its secure source editor. Switching
-server type changes the example port and only shows the credential field for that type.
+key) and Calibre Content Server. Calibre QR codes must carry both `username` and
+`password`, and Generate stays disabled until both are filled: Calibre refuses sync from
+anonymous requests, and its Digest login cannot succeed on a username alone. The password
+sits in the QR payload as plain text, so the form warns the visitor to keep the code
+private. App versions that do not read `password` still prefill the username and ask for
+the password in the source editor. Switching server type changes the example port and only
+shows the credential fields for that type.
+
+The payload encodes spaces as `%20`, never `+`: iOS `URLComponents` keeps `+` literal, so a
+`URLSearchParams` default would corrupt a password or display name containing a space. The
+canvas grows past its 260px default for long payloads, because a clipped code will not scan.
 
 `bibliofuse-web.netlify.app` should be retired once these are live.
 

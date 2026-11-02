@@ -1298,9 +1298,11 @@
         "enterUrl": "请输入服务器地址。",
         "qrCredit": "二维码由 qrcode-generator 驱动",
         "calibreOption": "Calibre Content Server",
-        "usernameLabel": "用户名（可选）",
+        "usernameLabel": "用户名",
         "usernamePlaceholder": "Calibre 账户名",
-        "calibreCredentialHint": "请在 BiblioFuse 中输入密码；密码不会包含在二维码中。"
+        "passwordLabel": "密码",
+        "passwordPlaceholder": "Calibre 密码",
+        "calibreCredentialHint": "同步阅读进度和书签时必须提供。请在 Calibre 内容服务器设置中开启登录验证。两者都会写入此二维码，请妥善保管。"
       }
     },
     "toolsHub": {

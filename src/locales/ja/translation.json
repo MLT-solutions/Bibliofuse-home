@@ -1298,9 +1298,11 @@
         "enterUrl": "サーバーURLを入力してください。",
         "qrCredit": "QRコード powered by qrcode-generator",
         "calibreOption": "Calibre Content Server",
-        "usernameLabel": "ユーザー名（任意）",
+        "usernameLabel": "ユーザー名",
         "usernamePlaceholder": "Calibreアカウント名",
-        "calibreCredentialHint": "パスワードはBiblioFuseで入力します。QRコードには含まれません。"
+        "passwordLabel": "パスワード",
+        "passwordPlaceholder": "Calibreのパスワード",
+        "calibreCredentialHint": "読書の進捗とブックマークの同期に必要です。Calibreのコンテンツサーバー設定でログインを有効にしてください。どちらもこのQRコードに保存されるため、非公開にしてください。"
       }
     },
     "toolsHub": {

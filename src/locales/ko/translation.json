@@ -1298,9 +1298,11 @@
         "enterUrl": "서버 URL을 입력해 주세요.",
         "qrCredit": "QR 코드 powered by qrcode-generator",
         "calibreOption": "Calibre Content Server",
-        "usernameLabel": "사용자 이름 (선택 사항)",
+        "usernameLabel": "사용자 이름",
         "usernamePlaceholder": "Calibre 계정 이름",
-        "calibreCredentialHint": "비밀번호는 BiblioFuse에서 입력하며 QR 코드에 포함되지 않습니다."
+        "passwordLabel": "비밀번호",
+        "passwordPlaceholder": "Calibre 비밀번호",
+        "calibreCredentialHint": "읽기 진행률과 북마크를 동기화하려면 필요합니다. Calibre 콘텐츠 서버 설정에서 로그인을 켜세요. 두 값 모두 이 QR 코드에 저장되므로 비공개로 보관하세요."
       }
     },
     "toolsHub": {

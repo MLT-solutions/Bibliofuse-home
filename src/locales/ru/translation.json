@@ -1298,9 +1298,11 @@
         "enterUrl": "Пожалуйста, введите URL сервера.",
         "qrCredit": "QR-код создан с помощью qrcode-generator",
         "calibreOption": "Calibre Content Server",
-        "usernameLabel": "Имя пользователя (необязательно)",
+        "usernameLabel": "Имя пользователя",
         "usernamePlaceholder": "Имя учётной записи Calibre",
-        "calibreCredentialHint": "Пароль вводится в BiblioFuse и никогда не включается в QR-код."
+        "passwordLabel": "Пароль",
+        "passwordPlaceholder": "Пароль Calibre",
+        "calibreCredentialHint": "Нужны для синхронизации прогресса чтения и закладок. Включите вход в настройках сервера контента Calibre. Оба значения хранятся в этом QR-коде, поэтому держите его в закрытом доступе."
       }
     },
     "toolsHub": {

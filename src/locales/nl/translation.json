@@ -1298,9 +1298,11 @@
         "enterUrl": "Voer een server-URL in.",
         "qrCredit": "QR-code mogelijk gemaakt door qrcode-generator",
         "calibreOption": "Calibre Content Server",
-        "usernameLabel": "Gebruikersnaam (optioneel)",
+        "usernameLabel": "Gebruikersnaam",
         "usernamePlaceholder": "Calibre-accountnaam",
-        "calibreCredentialHint": "Het wachtwoord voer je in BiblioFuse in en wordt nooit in de QR-code opgenomen."
+        "passwordLabel": "Wachtwoord",
+        "passwordPlaceholder": "Calibre-wachtwoord",
+        "calibreCredentialHint": "Vereist om leesvoortgang en bladwijzers te synchroniseren. Schakel inloggen in bij de instellingen van de Calibre-contentserver. Beide staan in deze QR-code, dus houd hem privé."
       }
     },
     "toolsHub": {

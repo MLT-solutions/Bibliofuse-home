@@ -1298,9 +1298,11 @@
         "enterUrl": "Digite uma URL de servidor.",
         "qrCredit": "Código QR gerado com qrcode-generator",
         "calibreOption": "Calibre Content Server",
-        "usernameLabel": "Nome de usuário (opcional)",
+        "usernameLabel": "Nome de usuário",
         "usernamePlaceholder": "Nome da conta Calibre",
-        "calibreCredentialHint": "A senha é informada no BiblioFuse e nunca é incluída no código QR."
+        "passwordLabel": "Senha",
+        "passwordPlaceholder": "Senha do Calibre",
+        "calibreCredentialHint": "Necessários para sincronizar o progresso de leitura e os marcadores. Ative o login nas configurações do servidor de conteúdo do Calibre. Ambos ficam neste código QR, então mantenha-o privado."
       }
     },
     "toolsHub": {

@@ -15,32 +15,41 @@ export default function QrCodeGenerator() {
   const [url, setUrl] = useState('http://192.168.0.123:5000');
   const [apiKey, setApiKey] = useState('');
   const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [showKey, setShowKey] = useState(false);
   const [qrHtml, setQrHtml] = useState('');
+  // Calibre refuses sync from anonymous requests, and its Digest login needs both halves.
+  const calibreIncomplete = kind === 'calibre' && (!username.trim() || !password);
   const generateQr = useCallback(() => {
     const trimmedUrl = url.trim();
-    if (!trimmedUrl) return;
+    if (!trimmedUrl || calibreIncomplete) return;
     const params = new URLSearchParams();
     params.set('address', trimmedUrl);
     if (name.trim()) params.set('name', name.trim());
     params.set('kind', kind);
-    if (kind === 'calibre' && username.trim()) params.set('username', username.trim());
+    if (kind === 'calibre') {
+      params.set('username', username.trim());
+      params.set('password', password);
+    }
     if (kind !== 'calibre' && apiKey.trim()) params.set('apikey', apiKey.trim());
-    const data = 'bibliofuse://add-server?' + params.toString();
+    // iOS's URLComponents keeps "+" literal, so spaces must go out as %20 to survive a scan.
+    const data = 'bibliofuse://add-server?' + params.toString().replace(/\+/g, '%20');
 
     const qr = qrcode(0, 'M');
     qr.addData(data);
     qr.make();
 
-    const size = 260;
     const cellSize = 4;
     const mods = qr.getModuleCount();
     const drawSize = mods * cellSize;
+    // Long credentials outgrow the default canvas, and a clipped code will not scan.
+    const size = Math.max(260, drawSize + cellSize * 8);
     const offset = Math.floor((size - drawSize) / 2);
 
     const canvas = document.createElement('canvas');
     canvas.width = size;
     canvas.height = size;
+    canvas.className = 'h-auto max-w-full';
     const ctx = canvas.getContext('2d');
     ctx.fillStyle = '#fff';
     ctx.fillRect(0, 0, size, size);
@@ -62,7 +71,7 @@ export default function QrCodeGenerator() {
         container.appendChild(addr);
       }
     }, 0);
-  }, [url, name, kind, apiKey, username]);
+  }, [url, name, kind, apiKey, username, password, calibreIncomplete]);
 
   const clearQr = () => {
     setQrHtml('');
@@ -120,17 +129,41 @@ export default function QrCodeGenerator() {
           </div>
 
           {kind === 'calibre' ? (
-            <div className="flex flex-col gap-1">
-              <label className="text-xs font-semibold text-slate-600">{f.usernameLabel}</label>
-              <input
-                autoComplete="off"
-                placeholder={f.usernamePlaceholder}
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 font-mono text-sm text-slate-950 outline-none transition focus:border-slate-400 focus:bg-white"
-              />
-              <span className="mt-1 text-[11px] text-slate-400">{f.calibreCredentialHint}</span>
-            </div>
+            <>
+              <div className="flex flex-col gap-1">
+                <label className="text-xs font-semibold text-slate-600">{f.usernameLabel}</label>
+                <input
+                  required
+                  autoComplete="off"
+                  placeholder={f.usernamePlaceholder}
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 font-mono text-sm text-slate-950 outline-none transition focus:border-slate-400 focus:bg-white"
+                />
+              </div>
+              <div className="flex flex-col gap-1">
+                <label className="text-xs font-semibold text-slate-600">{f.passwordLabel}</label>
+                <div className="flex gap-2">
+                  <input
+                    required
+                    type={showKey ? 'text' : 'password'}
+                    autoComplete="off"
+                    placeholder={f.passwordPlaceholder}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="min-w-0 flex-1 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 font-mono text-sm text-slate-950 outline-none transition focus:border-slate-400 focus:bg-white"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowKey((v) => !v)}
+                    className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
+                  >
+                    {showKey ? f.hide : f.show}
+                  </button>
+                </div>
+                <span className="mt-1 text-[11px] text-slate-400">{f.calibreCredentialHint}</span>
+              </div>
+            </>
           ) : (
           <div className="flex flex-col gap-1">
             <label className="text-xs font-semibold text-slate-600">{f.apiKeyLabel}</label>
@@ -164,7 +197,8 @@ export default function QrCodeGenerator() {
             <button
               type="button"
               onClick={generateQr}
-              className="rounded-xl bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800"
+              disabled={calibreIncomplete}
+              className="rounded-xl bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-slate-900"
             >
               {f.generate}
             </button>

@@ -1298,9 +1298,11 @@
         "enterUrl": "Harap masukkan URL server.",
         "qrCredit": "Kode QR didukung oleh qrcode-generator",
         "calibreOption": "Calibre Content Server",
-        "usernameLabel": "Nama pengguna (opsional)",
+        "usernameLabel": "Nama pengguna",
         "usernamePlaceholder": "Nama akun Calibre",
-        "calibreCredentialHint": "Kata sandi dimasukkan di BiblioFuse dan tidak pernah dimasukkan ke dalam QR."
+        "passwordLabel": "Kata sandi",
+        "passwordPlaceholder": "Kata sandi Calibre",
+        "calibreCredentialHint": "Diperlukan untuk menyinkronkan progres membaca dan penanda. Aktifkan login di pengaturan Content Server Calibre. Keduanya tersimpan di kode QR ini, jadi jaga kerahasiaannya."
       }
     },
     "toolsHub": {
