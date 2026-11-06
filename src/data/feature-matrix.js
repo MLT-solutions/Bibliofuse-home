@@ -293,7 +293,6 @@ export const SPECS = [
 const s = (since, noteKey = null) => ({ status: 'shipped', since, noteKey });
 const p = (since, noteKey) => ({ status: 'partial', since, noteKey });
 const m = (since) => ({ status: 'merged', since, noteKey: null });
-const r = (since) => ({ status: 'review', since, noteKey: null });
 const na = { status: 'na', since: null, noteKey: null };
 
 export const FEATURES = [
@@ -394,7 +393,7 @@ export const FEATURES = [
     note: 'Follow one panel at a time in comic archives, comic EPUBs and supported PDFs.',
     pro: false,
     aliases: ['guided view', 'manga', 'PDF'],
-    platforms: { ios: r('2026-11-04') },
+    platforms: { ios: s('2026-11-04') },
   },
   {
     id: 'page-tone',
@@ -403,7 +402,7 @@ export const FEATURES = [
     note: 'Adjust brightness, contrast, text darkness and grayscale per book for PDF and comic pages.',
     pro: true,
     aliases: ['contrast', 'brightness', 'grayscale', 'presets'],
-    platforms: { ios: r('2026-11-04'), visionos: m('2026-11-04') },
+    platforms: { ios: s('2026-11-04'), visionos: m('2026-11-04') },
   },
   {
     id: 'image-cleanup',
@@ -412,7 +411,7 @@ export const FEATURES = [
     note: 'Reduce moiré and noise or sharpen comic archives and comic EPUBs. Includes Smooth Tones (AI).',
     pro: true,
     aliases: ['descreen', 'screentone', 'moire', 'sharpen'],
-    platforms: { ios: r('2026-11-04'), visionos: m('2026-11-04') },
+    platforms: { ios: s('2026-11-04'), visionos: m('2026-11-04') },
   },
   {
     id: 'txt-chapter-controls',
@@ -649,7 +648,7 @@ export const FEATURES = [
     note: 'Browse SMB and OneDrive folders. Supported reading data syncs beside the book.',
     pro: true,
     aliases: ['network share', 'cloud storage', 'sidecar'],
-    platforms: { ios: r('2026-11-04') },
+    platforms: { ios: s('2026-11-04') },
   },
   {
     id: 'folder-download-sync',
@@ -658,7 +657,7 @@ export const FEATURES = [
     note: 'Download and sync folders, browse Downloads by folder and filter for offline copies.',
     pro: true,
     aliases: ['download and sync', 'batch', 'offline'],
-    platforms: { ios: r('2026-11-04') },
+    platforms: { ios: s('2026-11-04') },
   },
   {
     id: 'library-fast-scroll',
@@ -667,7 +666,7 @@ export const FEATURES = [
     note: 'Drag the scroll handle to move through large libraries across content sources.',
     pro: false,
     aliases: ['scrollbar', 'shelf'],
-    platforms: { ios: r('2026-11-05') },
+    platforms: { ios: s('2026-11-05') },
   },
   {
     id: 'calibre-qr-password',
@@ -676,7 +675,7 @@ export const FEATURES = [
     note: 'Scan a BiblioFuse server QR code to import Calibre login details.',
     pro: true,
     aliases: ['server setup', 'credentials', 'sign-in'],
-    platforms: { ios: r('2026-11-02') },
+    platforms: { ios: s('2026-11-02') },
   },
   {
     id: 'catalog-recent',
