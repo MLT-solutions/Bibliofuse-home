@@ -385,8 +385,8 @@
           "bullet3Title": "iCloud 跨设备",
           "bullet3Body": "在 iPhone 上从 iPad 停下的地方继续。",
           "imageAlt": "BiblioFuse 图书馆，包含标签、评分和阅读进度",
-          "bullet4Title": "原生 Komga 与 Kavita",
-          "bullet4Body": "直接连接服务器自身的 API，而不只是 OPDS 目录：阅读位置双向同步，在 Kavita 上还可同步书签和批注（高亮与笔记）。Pro。",
+          "bullet4Title": "Komga、Kavita 和 Calibre Content Server",
+          "bullet4Body": "使用 Pro 直接连接服务器。Komga 可同步阅读进度。Kavita 和 Calibre 还可在支持的格式中同步书签、高亮和笔记。Calibre 同步需要服务器账户。",
           "bullet5Title": "任意 OPDS 目录",
           "bullet5Body": "支持 OPDS 1.x 与 OPDS-PSE 分页流式传输，让漫画从 Calibre-Web、COPS、Ubooquity 或其他任何兼容服务器逐页加载。Pro。",
           "connectedTitle": "直连 SMB 和 OneDrive",
@@ -1095,7 +1095,7 @@
           },
           "stream": {
             "q": "我能不占用手机存储空间就访问整个书库吗？",
-            "a": "可以——从 Mac、PC 或 Synology NAS 主机流式传输到 iPhone、iPad、visionOS 或 Android。它会在家庭 Wi-Fi 上自动连接，并可选配 Tailscale 实现离家访问，阅读设备上不会永久保存任何内容。你也可以让应用直接连接你已有的 OPDS、Komga 或 Kavita 服务器——同样是逐页流式传输，无需完整下载。",
+            "a": "可以——从 Mac、PC 或 Synology NAS 主机流式传输到 iPhone、iPad、visionOS 或 Android。它会在家庭 Wi-Fi 上自动连接，并可选配 Tailscale 实现离家访问，阅读设备上不会永久保存任何内容。你也可以直接连接 OPDS 目录或 Komga、Kavita、Calibre Content Server 书库。",
             "imageAlt": "信息图：从 Mac、PC 或 Synology 流式传输书库，无需在手机上保存书籍"
           },
           "tv": {
@@ -1218,7 +1218,7 @@
           },
           {
             "devices": "Mac 和 Windows PC",
-            "sources": "iCloud（Windows PC 需使用 Windows 版 iCloud）"
+            "sources": "可将 SMB 共享文件夹添加为书库来源。iCloud 云盘支持同步阅读数据。在 Windows 上请使用 Windows 版 iCloud。"
           }
         ],
         "overview": {
@@ -1629,19 +1629,19 @@
       },
       "qr-generator": {
         "tag": "二维码",
-        "h1": "Kavita 与 Komga 二维码生成器",
+        "h1": "Kavita、Komga 与 Calibre 二维码生成器",
         "cardDesc": "生成一个设置二维码，让应用无需手动输入即可连接到你的服务器。",
-        "seoTitle": "Kavita 与 Komga 设置二维码生成器",
-        "seoDesc": "生成一个二维码，让 BiblioFuse 直接指向你的 Kavita 或 Komga 服务器，这样你就不必在手机上手动输入网址和 API 密钥。在你的浏览器中生成，不会发送到任何地方。",
-        "intro": "填写你的服务器信息，即可获得一个应用可以扫描的二维码——无需在手机键盘上输入冗长的网址和 API 密钥。",
+        "seoTitle": "Kavita、Komga 与 Calibre 设置二维码生成器",
+        "seoDesc": "为 Kavita、Komga 或 Calibre Content Server 创建设置二维码。二维码在浏览器中生成。",
+        "intro": "为 Kavita、Komga 或 Calibre Content Server 创建设置二维码。二维码在浏览器中生成。",
         "sections": [
           {
             "title": "为什么使用二维码",
             "body": "自建服务器的地址加上一个 API 密钥，在手机上输入起来又长又容易出错。扫描二维码可以一步准确传递这两项信息，每次都不会出错。"
           },
           {
-            "title": "你的密钥不会离开这个页面",
-            "body": "二维码是根据你输入的内容在浏览器中绘制的。不会有任何内容被提交、记录或保存——关闭标签页，它就消失了。生成的图片的私密程度取决于你把它放在哪里，所以请像对待它所包含的 API 密钥一样对待打印出来的二维码。"
+            "title": "请妥善保管你的二维码",
+            "body": "请妥善保管生成的二维码。它可能包含 Kavita 或 Komga 的 API 密钥，或你的 Calibre 用户名和密码。"
           }
         ],
         "faq": [
@@ -1651,14 +1651,14 @@
           },
           {
             "q": "支持哪些服务器？",
-            "a": "Kavita 和 Komga。选择服务类型后，默认端口会自动填入；如果你的设置不同，可以自行调整地址。"
+            "a": "Komga、Kavita 和 Calibre Content Server。"
           }
         ]
       }
     },
     "guidePage": {
       "seoTitle": "BiblioFuse 指南——设置、串流、书库与故障排查",
-      "seoDesc": "如何设置 BiblioFuse：添加书籍、连接 Kavita、Komga 和 OPDS 书库、从你自己的 Mac 或 PC 串流、阅读选项，以及解决常见问题。",
+      "seoDesc": "如何设置 BiblioFuse：添加书籍、连接 Kavita、Komga、Calibre 和 OPDS 书库、从你自己的 Mac 或 PC 串流、阅读选项，以及解决常见问题。",
       "h1": "指南",
       "intro": "设置、串流与故障排查都在这里。这里的内容都适用于你已经拥有的应用——阅读这些内容无需任何账号。",
       "footerNote": "这里没有涵盖你的问题？支持团队会用真实邮件回复，而不是工单系统。",
@@ -1837,8 +1837,8 @@
         },
         {
           "id": "servers",
-          "title": "从你现有的 OPDS、Kavita 或 Komga 服务器串流",
-          "desc": "已经在自行托管书目了?直接连接即可——不会有任何内容被复制到设备上。",
+          "title": "从你现有的 OPDS、Kavita、Komga 或 Calibre 服务器串流",
+          "desc": "你也可以直接连接 OPDS 目录或 Komga、Kavita、Calibre Content Server 书库。",
           "items": [
             {
               "q": "什么是 OPDS?如何连接 OPDS 服务器?",
@@ -1867,7 +1867,7 @@
                 {
                   "text": "书签不会与 Komga 同步。",
                   "sub": [
-                    "书内书签仅与 Kavita 同步。阅读位置则与两者都同步。如果书签同步对你很重要,并且你可以选择服务器,这就是两者的区别所在。"
+                    "Komga 可同步阅读进度。Kavita 和 Calibre 还可在支持的格式中同步书签。"
                   ]
                 }
               ]
@@ -1876,12 +1876,17 @@
               "q": "如何连接 Kavita?我的阅读进度会同步吗?",
               "a": "会,而且是双向同步。在设置中添加你的 Kavita 服务器,BiblioFuse 使用的是 Kavita 的原生 API,而不是大多数阅读应用依赖的 OPDS-PSE 扩展——后者正是整个 Kavita 生态中许多进度同步问题的根源。阅读位置会双向同步,书内书签也会同步。需要专业版。 EPUB 的高亮和笔记同样会与 Kavita 同步——可在任意一端添加、编辑或删除。",
               "bullets": []
+            },
+            {
+              "q": "如何连接 Calibre Content Server？",
+              "a": "要与 Calibre 同步，请在添加来源时选择 Calibre Content Server，并使用服务器账户登录。同步支持因文件格式而异。",
+              "bullets": []
             }
           ],
           "links": [
             {
               "to": "/tools/qr-generator/",
-              "label": "为你的 Kavita 或 Komga 服务器生成二维码"
+              "label": "为你的 Kavita、Komga 或 Calibre 服务器生成二维码"
             },
             {
               "to": "/blog/kavita-reader-app-progress-bookmark-annotation-sync/",
@@ -2137,7 +2142,7 @@
     "readerFamilyGuide": {
       "eyebrow": "覆盖所有设备，一套设置",
       "title": "找到你的专属设置",
-      "intro": "该系列应用现已覆盖 iPhone、iPad、Mac、Windows、visionOS、tvOS、Android、Docker 和 Synology——并且还能读取任何 OPDS、Komga 或 Kavita 服务器上的内容。选择你的书库托管方式和阅读设备，即可准确了解应使用哪个应用及连接模式。",
+      "intro": "该系列应用现已覆盖 iPhone、iPad、Mac、Windows、visionOS、tvOS、Android、Docker 和 Synology——并且还能读取任何 OPDS、Komga、Kavita 或 Calibre 服务器上的内容。选择你的书库托管方式和阅读设备，即可准确了解应使用哪个应用及连接模式。",
       "coverageToggle": "查看完整的平台支持对照表",
       "table": {
         "platformHeader": "平台",
@@ -2155,7 +2160,7 @@
           "nas": "NAS",
           "icloud": "iCloud",
           "host": "主机",
-          "opds": "OPDS / Kavita / Komga"
+          "opds": "OPDS / Kavita / Komga / Calibre"
         },
         "streamCols": {
           "icloudTs": "iCloud + Tailscale",
@@ -2203,8 +2208,8 @@
           "appLinkLabel": "获取 BiblioFuse NAS（Docker）→"
         },
         "opds": {
-          "label": "OPDS / Kavita / Komga",
-          "note": "任何 OPDS 1.x 或 OPDS-PSE 目录，或 Komga、Kavita 服务器，均通过其自身的 API 读取。BiblioFuse 会直接与其连接——这不是 BiblioFuse 主机，因此下方三种连接模式均不适用。"
+          "label": "OPDS / Kavita / Komga / Calibre",
+          "note": "你也可以直接连接 OPDS 目录或 Komga、Kavita、Calibre Content Server 书库。"
         }
       },
       "clients": {
@@ -2244,15 +2249,15 @@
       },
       "recommendation": {
         "heading": "根据你的选择组合",
-        "cantConnectOpds": "<strong>{{clientLabel}}</strong> 无法连接 OPDS、Komga 或 Kavita 服务器——电视应用只能从你自己网络中的 BiblioFuse 主机读取内容。请改为连接 Mac、PC 或 NAS 主机，或改用 iPhone、iPad、Vision Pro 或 Android 手机阅读你的书库。",
-        "opdsStep1": "将你的书库保留在 <strong>OPDS、Komga 或 Kavita 服务器</strong>上。",
+        "cantConnectOpds": "<strong>{{clientLabel}}</strong> 无法连接 OPDS、Komga、Kavita 或 Calibre 服务器——电视应用只能从你自己网络中的 BiblioFuse 主机读取内容。请改为连接 Mac、PC 或 NAS 主机，或改用 iPhone、iPad、Vision Pro 或 Android 手机阅读你的书库。",
+        "opdsStep1": "将你的书库保留在 <strong>OPDS、Komga、Kavita 或 Calibre 服务器</strong>上。",
         "opdsStep2Label": "在 <strong>{{clientLabel}}</strong> 上阅读。",
-        "opdsStep2Detail": "Komga 和 Kavita 通过各自的原生 API 连接——系列、阅读进度和书签均可同步。其他服务器则以 OPDS 1.x 目录的形式连接，若服务器支持 OPDS-PSE，还可逐页流式传输。",
+        "opdsStep2Detail": "要与 Calibre 同步，请在添加来源时选择 Calibre Content Server，并使用服务器账户登录。同步支持因文件格式而异。",
         "opdsStep3": "在 {{clientLabel}} 应用中，打开 <strong>设置 → OPDS</strong> 并添加服务器。",
         "opdsStep3Detail": "在手机上输入网址、用户名和密码比较繁琐——不如在电脑上生成二维码，然后扫码添加。",
         "opdsQrCta": "生成二维码登录 →",
         "opdsAwayNote": "<strong>在外阅读：</strong>应用中无需选择任何选项——这属于网络设置，而非连接模式。请将阅读设备和服务器主机接入同一个 VPN，或在两者上都安装 Tailscale，并在主机上开启子网路由，这样设备就能从任何地方访问服务器的本地地址。",
-        "opdsHomeNote": "<strong>在家阅读：</strong>应用中无需选择任何选项——上述三种连接模式均不适用于第三方服务器。只需让阅读设备与你的 OPDS、Komga 或 Kavita 服务器处于同一 Wi-Fi 网络即可。",
+        "opdsHomeNote": "<strong>在家阅读：</strong>应用中无需选择任何选项——上述三种连接模式均不适用于第三方服务器。只需让阅读设备与你的 OPDS、Komga、Kavita 或 Calibre 服务器处于同一 Wi-Fi 网络即可。",
         "cantStream": "<strong>{{clientLabel}}</strong> 目前还无法从主机进行流式传输——{{clientNote}} 在此之前，可在 {{clientLabel}} 上使用 BiblioFuse 应用进行本地独立阅读。",
         "unsupportedHost": "目前已发布的应用尚不支持从 <strong>{{hostLabel}}</strong> 到 <strong>{{clientLabel}}</strong> 的原生应用流式传输。你现在就可以将书库托管在 {{hostLabel}} 上，并改用其免费的内置浏览器阅读器阅读——这项功能现已可用，支持任何设备，无需安装应用。",
         "step1": "在 <strong>{{hostLabel}}</strong> 上运行主机。",

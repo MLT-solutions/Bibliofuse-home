@@ -45,6 +45,10 @@ The three build scripts still hold their own hardcoded route lists — see
 | `pdf-to-jpg` | pdf.js + jszip |
 | `qr-generator` | qrcode-generator |
 
+The QR generator supports Kavita, Komga, and Calibre Content Server. The localized
+page lists all three and explains that a generated code may contain server
+credentials.
+
 ## Ported code
 
 The four file tools came from `lokaltools/src/tools/*` and are deliberately kept close to

@@ -385,8 +385,8 @@
           "bullet3Title": "iCloud merentas peranti",
           "bullet3Body": "sambung pada iPhone dari tempat anda berhenti pada iPad.",
           "imageAlt": "Perpustakaan BiblioFuse dengan tag, penilaian dan kemajuan membaca",
-          "bullet4Title": "Sokongan asli Komga & Kavita",
-          "bullet4Body": "Sambung terus ke API pelayan anda sendiri, bukan sekadar suapan OPDS, dengan kedudukan bacaan diselaraskan dua hala, serta penyelarasan penanda buku dan anotasi (serlahan dan nota) pada Kavita. Pro.",
+          "bullet4Title": "Komga, Kavita dan Calibre Content Server",
+          "bullet4Body": "Sambung terus ke pelayan anda (Pro). Komga menyegerakkan kemajuan bacaan. Kavita dan Calibre turut menyegerakkan penanda buku, serlahan dan nota dalam format yang disokong. Penyegerakan Calibre memerlukan akaun pada pelayan anda.",
           "bullet5Title": "Mana-mana katalog OPDS",
           "bullet5Body": "OPDS 1.x dengan strim halaman OPDS-PSE, supaya komik tiba satu halaman pada satu masa daripada Calibre-Web, COPS, Ubooquity atau mana-mana pelayan lain yang menyokongnya. Pro.",
           "connectedTitle": "Akses terus SMB dan OneDrive",
@@ -1095,7 +1095,7 @@
           },
           "stream": {
             "q": "Bolehkah saya mengakses seluruh perpustakaan tanpa memenuhi storan telefon saya?",
-            "a": "Boleh — strim daripada hos Mac, PC atau Synology NAS ke iPhone, iPad, visionOS atau Android. Ia menyambung secara automatik melalui Wi-Fi rumah anda, dengan Tailscale pilihan untuk akses di luar rumah, dan tiada apa-apa disimpan secara kekal pada peranti bacaan. Anda juga boleh menghubungkan apl terus ke pelayan OPDS, Komga atau Kavita yang anda sudah jalankan — strim satu halaman pada satu masa yang sama, tanpa memuat turun apa-apa sepenuhnya.",
+            "a": "Boleh — strim daripada hos Mac, PC atau Synology NAS ke iPhone, iPad, visionOS atau Android. Ia menyambung secara automatik melalui Wi-Fi rumah anda, dengan Tailscale pilihan untuk akses di luar rumah, dan tiada apa-apa disimpan secara kekal pada peranti bacaan. Anda juga boleh menyambung terus ke katalog OPDS atau pustaka Komga, Kavita atau Calibre Content Server.",
             "imageAlt": "Infografik: strim perpustakaan anda daripada Mac, PC atau Synology tanpa menyimpan buku di telefon anda"
           },
           "tv": {
@@ -1218,7 +1218,7 @@
           },
           {
             "devices": "Mac dan PC Windows",
-            "sources": "iCloud, dengan iCloud untuk Windows pada PC"
+            "sources": "Tambah folder kongsi SMB sebagai sumber pustaka. iCloud Drive menyokong penyegerakan bacaan. Pada Windows, gunakan iCloud untuk Windows."
           }
         ],
         "overview": {
@@ -1629,19 +1629,19 @@
       },
       "qr-generator": {
         "tag": "Kod QR",
-        "h1": "Penjana kod QR Kavita & Komga",
+        "h1": "Penjana kod QR Kavita, Komga & Calibre",
         "cardDesc": "Cipta kod QR persediaan supaya aplikasi boleh menyambung ke pelayan anda tanpa perlu menaip.",
-        "seoTitle": "Penjana Kod QR Persediaan Kavita & Komga",
-        "seoDesc": "Jana kod QR yang mengarahkan BiblioFuse ke pelayan Kavita atau Komga anda, supaya anda tidak perlu menaip URL dan kunci API pada telefon. Dibina dalam pelayar anda; tiada apa-apa dihantar ke mana-mana.",
-        "intro": "Isikan butiran pelayan anda dan dapatkan kod QR yang boleh diimbas oleh aplikasi — tanpa perlu menaip URL panjang dan kunci API pada papan kekunci telefon.",
+        "seoTitle": "Penjana Kod QR Persediaan Kavita, Komga & Calibre",
+        "seoDesc": "Cipta kod QR persediaan untuk Kavita, Komga atau Calibre Content Server. Kod dijana dalam pelayar anda.",
+        "intro": "Cipta kod QR persediaan untuk Kavita, Komga atau Calibre Content Server. Kod dijana dalam pelayar anda.",
         "sections": [
           {
             "title": "Mengapa kod QR",
             "body": "Alamat pelayan swahos ditambah kunci API adalah sesuatu yang panjang dan mudah tersilap untuk ditaip pada telefon. Mengimbas kod menyampaikan kedua-duanya dalam satu langkah, dengan tepat, setiap kali."
           },
           {
-            "title": "Kunci anda tidak pernah meninggalkan halaman ini",
-            "body": "Kod dilukis dalam pelayar anda daripada nilai yang anda taip. Tiada apa-apa dihantar, direkodkan atau disimpan — tutup tab dan ia hilang. Keperibadian imej yang dijana bergantung kepada di mana anda memilih untuk meletakkannya, jadi layan kod yang dicetak seperti kunci API yang dikandunginya."
+            "title": "Rahsiakan kod QR anda",
+            "body": "Rahsiakan kod QR yang dijana. Kod itu mungkin mengandungi kunci API Kavita atau Komga, atau nama pengguna dan kata laluan Calibre anda."
           }
         ],
         "faq": [
@@ -1651,14 +1651,14 @@
           },
           {
             "q": "Pelayan mana yang disokong?",
-            "a": "Kavita dan Komga. Pilih jenis perkhidmatan dan port lalai akan diisi secara automatik; laraskan alamat jika persediaan anda berbeza."
+            "a": "Komga, Kavita dan Calibre Content Server."
           }
         ]
       }
     },
     "guidePage": {
       "seoTitle": "Panduan BiblioFuse - Persediaan, Strim, Pustaka & Penyelesaian Masalah",
-      "seoDesc": "Cara menyediakan BiblioFuse: menambah buku, menyambung pustaka Kavita, Komga dan OPDS, strim daripada Mac atau PC anda sendiri, pilihan bacaan dan menyelesaikan masalah biasa.",
+      "seoDesc": "Cara menyediakan BiblioFuse: menambah buku, menyambung pustaka Kavita, Komga, Calibre dan OPDS, strim daripada Mac atau PC anda sendiri, pilihan bacaan dan menyelesaikan masalah biasa.",
       "h1": "Panduan",
       "intro": "Persediaan, strim dan penyelesaian masalah di satu tempat. Semua di sini terpakai untuk apl yang anda sudah ada - tiada akaun diperlukan untuk membaca mana-mana daripadanya.",
       "footerNote": "Tiada di sini? Sokongan membalas melalui e-mel sebenar, bukan sistem tiket.",
@@ -1837,8 +1837,8 @@
         },
         {
           "id": "servers",
-          "title": "Penstriman daripada pelayan OPDS, Kavita atau Komga sedia ada anda",
-          "desc": "Sudah menghos katalog sendiri? Sambung terus kepadanya — tiada apa-apa yang disalin ke peranti.",
+          "title": "Penstriman daripada pelayan OPDS, Kavita, Komga atau Calibre sedia ada anda",
+          "desc": "Anda juga boleh menyambung terus ke katalog OPDS atau pustaka Komga, Kavita atau Calibre Content Server.",
           "items": [
             {
               "q": "Apakah itu OPDS, dan bagaimana saya menyambung pelayan OPDS?",
@@ -1867,7 +1867,7 @@
                 {
                   "text": "Penanda buku tidak diselaraskan dengan Komga.",
                   "sub": [
-                    "Penanda buku dalam buku hanya diselaraskan dengan Kavita. Kedudukan bacaan diselaraskan dengan kedua-duanya. Jika penyelarasan penanda buku penting bagi anda dan anda mempunyai pilihan pelayan, itulah perbezaannya."
+                    "Komga menyegerakkan kemajuan bacaan. Kavita dan Calibre turut menyegerakkan penanda buku dalam format yang disokong."
                   ]
                 }
               ]
@@ -1876,12 +1876,17 @@
               "q": "Bagaimana saya menyambung ke Kavita, dan adakah kemajuan bacaan saya akan diselaraskan?",
               "a": "Ya, kedua-dua arah. Tambah pelayan Kavita anda dalam Settings dan BiblioFuse menggunakan API asli Kavita dan bukannya sambungan OPDS-PSE yang menjadi pergantungan kebanyakan aplikasi pembaca lain — dan itulah punca banyak masalah penyelarasan kemajuan dalam ekosistem Kavita yang lebih luas. Kedudukan bacaan diselaraskan dalam kedua-dua arah, dan penanda buku dalam buku turut diselaraskan. Pro diperlukan. Serlahan dan nota EPUB turut diselaraskan dengan Kavita — tambah, edit atau padam dari mana-mana pihak.",
               "bullets": []
+            },
+            {
+              "q": "Bagaimanakah cara menyambung ke Calibre Content Server?",
+              "a": "Untuk menyegerak dengan Calibre, pilih Calibre Content Server semasa menambah sumber dan log masuk dengan akaun pelayan. Sokongan penyegerakan bergantung pada format.",
+              "bullets": []
             }
           ],
           "links": [
             {
               "to": "/tools/qr-generator/",
-              "label": "Hasilkan kod QR untuk pelayan Kavita atau Komga anda"
+              "label": "Hasilkan kod QR untuk pelayan Kavita, Komga atau Calibre anda"
             },
             {
               "to": "/blog/kavita-reader-app-progress-bookmark-annotation-sync/",
@@ -2137,7 +2142,7 @@
     "readerFamilyGuide": {
       "eyebrow": "Semua peranti, satu persediaan",
       "title": "Cari persediaan anda",
-      "intro": "Kini keluarga aplikasi ini merangkumi iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker, dan Synology — dan juga boleh membaca daripada mana-mana pelayan OPDS, Komga atau Kavita. Pilih tempat koleksi buku anda dihoskan dan peranti yang ingin anda gunakan untuk membaca, kemudian lihat dengan tepat aplikasi dan mod sambungan yang perlu digunakan.",
+      "intro": "Kini keluarga aplikasi ini merangkumi iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker, dan Synology — dan juga boleh membaca daripada mana-mana pelayan OPDS, Komga, Kavita atau Calibre. Pilih tempat koleksi buku anda dihoskan dan peranti yang ingin anda gunakan untuk membaca, kemudian lihat dengan tepat aplikasi dan mod sambungan yang perlu digunakan.",
       "coverageToggle": "Lihat jadual liputan platform penuh",
       "table": {
         "platformHeader": "Platform",
@@ -2155,7 +2160,7 @@
           "nas": "NAS",
           "icloud": "iCloud",
           "host": "Hos",
-          "opds": "OPDS / Kavita / Komga"
+          "opds": "OPDS / Kavita / Komga / Calibre"
         },
         "streamCols": {
           "icloudTs": "iCloud + Tailscale",
@@ -2203,8 +2208,8 @@
           "appLinkLabel": "Dapatkan BiblioFuse NAS (Docker) →"
         },
         "opds": {
-          "label": "OPDS / Kavita / Komga",
-          "note": "Sebarang katalog OPDS 1.x atau OPDS-PSE, atau pelayan Komga atau Kavita, dibaca melalui API tersendiri masing-masing. BiblioFuse menyambung terus kepadanya — ini bukan hos BiblioFuse, jadi ketiga-tiga mod sambungan di bawah tidak terpakai."
+          "label": "OPDS / Kavita / Komga / Calibre",
+          "note": "Anda juga boleh menyambung terus ke katalog OPDS atau pustaka Komga, Kavita atau Calibre Content Server."
         }
       },
       "clients": {
@@ -2244,15 +2249,15 @@
       },
       "recommendation": {
         "heading": "Berdasarkan kombinasi pilihan anda",
-        "cantConnectOpds": "<strong>{{clientLabel}}</strong> tidak boleh menyambung ke pelayan OPDS, Komga atau Kavita — aplikasi TV hanya membaca daripada hos BiblioFuse dalam rangkaian anda sendiri. Sebaliknya, arahkan ke hos Mac, PC atau NAS, atau baca katalog anda pada iPhone, iPad, Vision Pro atau telefon Android.",
-        "opdsStep1": "Kekalkan koleksi buku anda pada <strong>pelayan OPDS, Komga atau Kavita</strong> anda.",
+        "cantConnectOpds": "<strong>{{clientLabel}}</strong> tidak boleh menyambung ke pelayan OPDS, Komga, Kavita atau Calibre — aplikasi TV hanya membaca daripada hos BiblioFuse dalam rangkaian anda sendiri. Sebaliknya, arahkan ke hos Mac, PC atau NAS, atau baca katalog anda pada iPhone, iPad, Vision Pro atau telefon Android.",
+        "opdsStep1": "Kekalkan koleksi buku anda pada <strong>pelayan OPDS, Komga, Kavita atau Calibre</strong> anda.",
         "opdsStep2Label": "Baca pada <strong>{{clientLabel}}</strong>.",
-        "opdsStep2Detail": "Komga dan Kavita menyambung melalui API asli masing-masing — termasuk siri, kemajuan bacaan dan penanda buku. Selain itu, sambungan dibuat sebagai katalog OPDS 1.x, dengan strim satu muka surat pada satu masa jika pelayan menyokong OPDS-PSE.",
+        "opdsStep2Detail": "Untuk menyegerak dengan Calibre, pilih Calibre Content Server semasa menambah sumber dan log masuk dengan akaun pelayan. Sokongan penyegerakan bergantung pada format.",
         "opdsStep3": "Dalam aplikasi {{clientLabel}}, buka <strong>Tetapan → OPDS</strong> dan tambah pelayan.",
         "opdsStep3Detail": "Menaip URL, nama pengguna dan kata laluan pada telefon agak membebankan — jana sahaja kod QR pada komputer anda dan imbas kod tersebut.",
         "opdsQrCta": "Jana kod log masuk QR →",
         "opdsAwayNote": "<strong>Membaca semasa bepergian:</strong> tiada apa-apa perlu dipilih dalam aplikasi — ini adalah persediaan rangkaian, bukan mod sambungan. Letakkan kedua-dua peranti bacaan dan hos pelayan pada VPN yang sama, atau pasang Tailscale pada kedua-duanya dan hidupkan penghalaan subnet pada hos supaya peranti dapat mencapai alamat tempatan pelayan dari mana-mana sahaja.",
-        "opdsHomeNote": "<strong>Membaca di rumah:</strong> tiada apa-apa perlu dipilih dalam aplikasi — tiada satu pun daripada tiga mod sambungan terpakai untuk pelayan pihak ketiga. Cukup kekalkan peranti bacaan pada rangkaian Wi-Fi yang sama dengan pelayan OPDS, Komga atau Kavita anda.",
+        "opdsHomeNote": "<strong>Membaca di rumah:</strong> tiada apa-apa perlu dipilih dalam aplikasi — tiada satu pun daripada tiga mod sambungan terpakai untuk pelayan pihak ketiga. Cukup kekalkan peranti bacaan pada rangkaian Wi-Fi yang sama dengan pelayan OPDS, Komga, Kavita atau Calibre anda.",
         "cantStream": "<strong>{{clientLabel}}</strong> belum boleh menstrim daripada hos — {{clientNote}} Buat masa ini, gunakan aplikasi BiblioFuse pada {{clientLabel}} untuk membaca secara tempatan dan berdiri sendiri.",
         "unsupportedHost": "Strim aplikasi asli daripada <strong>{{hostLabel}}</strong> ke <strong>{{clientLabel}}</strong> masih belum disokong dalam aplikasi yang telah dikeluarkan. Hoskan koleksi buku anda pada {{hostLabel}} hari ini dan bacanya menggunakan pembaca pelayar terbina dalam yang percuma — bahagian ini sudah berfungsi sekarang, pada mana-mana peranti, tanpa memerlukan aplikasi.",
         "step1": "Jalankan hos pada <strong>{{hostLabel}}</strong>.",

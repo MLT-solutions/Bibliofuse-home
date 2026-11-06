@@ -385,8 +385,8 @@
           "bullet3Title": "iCloud 크로스 디바이스",
           "bullet3Body": "iPad에서 중단한 곳을 iPhone에서 이어서.",
           "imageAlt": "태그, 평점, 읽기 진행률이 있는 BiblioFuse 라이브러리",
-          "bullet4Title": "네이티브 Komga·Kavita 지원",
-          "bullet4Body": "OPDS 피드만이 아니라 서버 자체 API에 직접 연결합니다. 읽기 위치가 양방향으로 동기화되고, Kavita에서는 북마크와 주석(하이라이트 및 메모)도 동기화됩니다. Pro.",
+          "bullet4Title": "Komga, Kavita 및 Calibre Content Server",
+          "bullet4Body": "Pro를 사용하면 서버에 직접 연결할 수 있습니다. Komga는 읽기 진행률을 동기화합니다. Kavita와 Calibre는 지원되는 형식에서 책갈피, 하이라이트, 메모도 동기화합니다. Calibre 동기화에는 서버 계정이 필요합니다.",
           "bullet5Title": "모든 OPDS 카탈로그",
           "bullet5Body": "OPDS 1.x와 OPDS-PSE 페이지 스트리밍을 지원해, Calibre-Web, COPS, Ubooquity 등 지원 서버에서 만화를 한 페이지씩 불러옵니다. Pro.",
           "connectedTitle": "SMB 및 OneDrive 직접 연결",
@@ -1095,7 +1095,7 @@
           },
           "stream": {
             "q": "휴대폰 저장 공간을 채우지 않고도 전체 라이브러리에 접근할 수 있나요?",
-            "a": "네 — Mac, PC, Synology NAS 호스트에서 iPhone, iPad, visionOS, Android로 스트리밍하세요. 집 Wi-Fi에서는 자동으로 연결되며, 외출 시에는 선택적으로 Tailscale을 사용할 수 있고, 읽기 기기에는 아무것도 영구적으로 저장되지 않습니다. 이미 운영 중인 OPDS, Komga, Kavita 서버에 앱을 바로 연결할 수도 있습니다 — 동일한 페이지 단위 스트리밍으로, 전체를 내려받지 않습니다.",
+            "a": "네 — Mac, PC, Synology NAS 호스트에서 iPhone, iPad, visionOS, Android로 스트리밍하세요. 집 Wi-Fi에서는 자동으로 연결되며, 외출 시에는 선택적으로 Tailscale을 사용할 수 있고, 읽기 기기에는 아무것도 영구적으로 저장되지 않습니다. OPDS 카탈로그나 Komga, Kavita, Calibre Content Server 라이브러리에도 직접 연결할 수 있습니다.",
             "imageAlt": "인포그래픽: 휴대폰에 책을 보관하지 않고 Mac, PC, Synology에서 라이브러리 스트리밍"
           },
           "tv": {
@@ -1218,7 +1218,7 @@
           },
           {
             "devices": "Mac 및 Windows PC",
-            "sources": "iCloud(Windows PC에서는 Windows용 iCloud 사용)"
+            "sources": "SMB 공유 폴더를 라이브러리 소스로 추가할 수 있습니다. iCloud Drive는 독서 데이터 동기화를 지원합니다. Windows에서는 Windows용 iCloud를 사용하세요."
           }
         ],
         "overview": {
@@ -1629,19 +1629,19 @@
       },
       "qr-generator": {
         "tag": "QR 코드",
-        "h1": "Kavita·Komga QR 코드 생성기",
+        "h1": "Kavita·Komga·Calibre QR 코드 생성기",
         "cardDesc": "앱이 직접 입력 없이 서버에 연결할 수 있도록 설정용 QR 코드를 만듭니다.",
-        "seoTitle": "Kavita·Komga 설정용 QR 코드 생성기",
-        "seoDesc": "BiblioFuse가 사용자의 Kavita 또는 Komga 서버를 가리키도록 QR 코드를 생성해, 휴대폰에서 URL과 API 키를 직접 입력할 필요가 없게 합니다. 브라우저에서 만들어지며 어디로도 전송되지 않습니다.",
-        "intro": "서버 정보를 입력하면 앱이 스캔할 수 있는 QR 코드를 얻을 수 있습니다——휴대폰 키보드로 긴 URL과 API 키를 입력할 필요가 없습니다.",
+        "seoTitle": "Kavita·Komga·Calibre 설정용 QR 코드 생성기",
+        "seoDesc": "Kavita, Komga 또는 Calibre Content Server의 설정용 QR 코드를 브라우저에서 만드세요.",
+        "intro": "Kavita, Komga 또는 Calibre Content Server의 설정용 QR 코드를 브라우저에서 만드세요.",
         "sections": [
           {
             "title": "왜 QR 코드를 쓰나요",
             "body": "자체 호스팅 서버 주소에 API 키까지 더하면 휴대폰에서 입력하기에는 길고 실수하기 쉽습니다. 코드를 스캔하면 이 두 가지 정보를 한 번에, 매번 정확하게 전달할 수 있습니다."
           },
           {
-            "title": "키는 이 페이지를 벗어나지 않습니다",
-            "body": "코드는 입력한 값을 바탕으로 브라우저에서 그려집니다. 어떤 것도 전송, 기록, 저장되지 않습니다——탭을 닫으면 사라집니다. 생성된 이미지의 보안 수준은 그것을 어디에 두느냐에 달려 있으므로, 출력한 코드는 그 안에 담긴 API 키처럼 다뤄야 합니다."
+            "title": "QR 코드를 비공개로 보관하세요",
+            "body": "생성된 QR 코드는 비공개로 보관하세요. Kavita나 Komga의 API 키 또는 Calibre 사용자 이름과 비밀번호가 포함될 수 있습니다."
           }
         ],
         "faq": [
@@ -1651,14 +1651,14 @@
           },
           {
             "q": "어떤 서버를 지원하나요?",
-            "a": "Kavita와 Komga입니다. 서비스 종류를 선택하면 기본 포트가 자동으로 입력되며, 환경이 다르다면 주소를 직접 조정하면 됩니다."
+            "a": "Komga, Kavita 및 Calibre Content Server."
           }
         ]
       }
     },
     "guidePage": {
       "seoTitle": "BiblioFuse 가이드 - 설정, 스트리밍, 서재, 문제 해결",
-      "seoDesc": "BiblioFuse 설정 방법: 책 추가하기, Kavita·Komga·OPDS 서재 연결하기, 내 Mac이나 PC에서 스트리밍하기, 읽기 옵션, 자주 겪는 문제 해결하기.",
+      "seoDesc": "BiblioFuse 설정 방법: 책 추가하기, Kavita·Komga·Calibre·OPDS 서재 연결하기, 내 Mac이나 PC에서 스트리밍하기, 읽기 옵션, 자주 겪는 문제 해결하기.",
       "h1": "가이드",
       "intro": "설정, 스트리밍, 문제 해결을 한곳에 모았습니다. 여기 내용은 모두 이미 가지고 계신 앱에 적용되며, 읽는 데 계정이 필요하지 않습니다.",
       "footerNote": "여기 없는 내용이 있나요? 지원팀은 티켓 시스템이 아니라 실제 이메일로 답변합니다.",
@@ -1837,8 +1837,8 @@
         },
         {
           "id": "servers",
-          "title": "기존 OPDS, Kavita, Komga 서버에서 스트리밍하기",
-          "desc": "이미 카탈로그를 직접 운영 중이신가요? 바로 연결하세요 — 기기에는 아무것도 복사되지 않습니다.",
+          "title": "기존 OPDS, Kavita, Komga, Calibre 서버에서 스트리밍하기",
+          "desc": "OPDS 카탈로그나 Komga, Kavita, Calibre Content Server 라이브러리에도 직접 연결할 수 있습니다.",
           "items": [
             {
               "q": "OPDS란 무엇이며, OPDS 서버는 어떻게 연결하나요?",
@@ -1867,7 +1867,7 @@
                 {
                   "text": "책갈피는 Komga와 동기화되지 않습니다.",
                   "sub": [
-                    "책 안의 책갈피는 Kavita와만 동기화됩니다. 읽기 위치는 둘 다와 동기화됩니다. 책갈피 동기화가 중요하고 서버를 선택할 수 있다면, 이것이 그 차이입니다."
+                    "Komga는 읽기 진행률을 동기화합니다. Kavita와 Calibre는 지원되는 형식에서 책갈피도 동기화합니다."
                   ]
                 }
               ]
@@ -1876,12 +1876,17 @@
               "q": "Kavita에는 어떻게 연결하며, 읽기 진행 상황이 동기화되나요?",
               "a": "네, 양방향으로 동기화됩니다. 설정에서 Kavita 서버를 추가하면 BiblioFuse는 대부분의 리더 앱이 의존하는 OPDS-PSE 확장이 아니라 Kavita 고유의 API를 사용합니다 — 폭넓은 Kavita 생태계에서 자주 발생하는 진행 상황 동기화 문제의 상당 부분이 바로 이 확장에서 비롯됩니다. 읽기 위치는 양방향으로 동기화되고, 책 안의 책갈피도 동기화됩니다. Pro가 필요합니다. EPUB 하이라이트와 메모도 Kavita와 동기화되며, 어느 쪽에서든 추가·편집·삭제할 수 있습니다.",
               "bullets": []
+            },
+            {
+              "q": "Calibre Content Server에 어떻게 연결하나요?",
+              "a": "Calibre와 동기화하려면 소스를 추가할 때 Calibre Content Server를 선택하고 서버 계정으로 로그인하세요. 동기화 지원 범위는 파일 형식에 따라 다릅니다.",
+              "bullets": []
             }
           ],
           "links": [
             {
               "to": "/tools/qr-generator/",
-              "label": "Kavita나 Komga 서버용 QR 코드 만들기"
+              "label": "Kavita, Komga, Calibre 서버용 QR 코드 만들기"
             },
             {
               "to": "/blog/kavita-reader-app-progress-bookmark-annotation-sync/",
@@ -2137,7 +2142,7 @@
     "readerFamilyGuide": {
       "eyebrow": "모든 기기, 하나의 설정",
       "title": "나에게 맞는 설정 찾기",
-      "intro": "이제 이 앱 제품군은 iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker, Synology를 모두 지원하며, OPDS, Komga, Kavita 서버에서도 읽을 수 있습니다. 서재를 어디에 호스팅할지와 어떤 기기에서 읽을지를 선택하면, 어떤 앱과 연결 모드를 사용해야 하는지 정확히 확인할 수 있습니다.",
+      "intro": "이제 이 앱 제품군은 iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker, Synology를 모두 지원하며, OPDS, Komga, Kavita, Calibre 서버에서도 읽을 수 있습니다. 서재를 어디에 호스팅할지와 어떤 기기에서 읽을지를 선택하면, 어떤 앱과 연결 모드를 사용해야 하는지 정확히 확인할 수 있습니다.",
       "coverageToggle": "전체 플랫폼 지원 표 보기",
       "table": {
         "platformHeader": "플랫폼",
@@ -2155,7 +2160,7 @@
           "nas": "NAS",
           "icloud": "iCloud",
           "host": "호스트",
-          "opds": "OPDS / Kavita / Komga"
+          "opds": "OPDS / Kavita / Komga / Calibre"
         },
         "streamCols": {
           "icloudTs": "iCloud + Tailscale",
@@ -2203,8 +2208,8 @@
           "appLinkLabel": "BiblioFuse NAS(Docker) 받기 →"
         },
         "opds": {
-          "label": "OPDS / Kavita / Komga",
-          "note": "OPDS 1.x나 OPDS-PSE 카탈로그, 또는 Komga나 Kavita 서버는 각자 자체 API를 통해 읽어옵니다. BiblioFuse는 여기에 직접 연결합니다——이는 BiblioFuse 호스트가 아니므로 아래의 세 가지 연결 모드는 적용되지 않습니다."
+          "label": "OPDS / Kavita / Komga / Calibre",
+          "note": "OPDS 카탈로그나 Komga, Kavita, Calibre Content Server 라이브러리에도 직접 연결할 수 있습니다."
         }
       },
       "clients": {
@@ -2244,15 +2249,15 @@
       },
       "recommendation": {
         "heading": "선택하신 조합의 경우",
-        "cantConnectOpds": "<strong>{{clientLabel}}</strong>은(는) OPDS, Komga 또는 Kavita 서버에 연결할 수 없습니다——TV용 앱은 같은 네트워크에 있는 BiblioFuse 호스트에서만 읽어올 수 있습니다. 대신 Mac, PC 또는 NAS 호스트를 지정하거나, iPhone, iPad, Vision Pro 또는 Android 휴대폰에서 카탈로그를 읽어보세요.",
-        "opdsStep1": "서재를 <strong>OPDS, Komga 또는 Kavita 서버</strong>에 그대로 둡니다.",
+        "cantConnectOpds": "<strong>{{clientLabel}}</strong>은(는) OPDS, Komga, Kavita, Calibre 서버에 연결할 수 없습니다——TV용 앱은 같은 네트워크에 있는 BiblioFuse 호스트에서만 읽어올 수 있습니다. 대신 Mac, PC 또는 NAS 호스트를 지정하거나, iPhone, iPad, Vision Pro 또는 Android 휴대폰에서 카탈로그를 읽어보세요.",
+        "opdsStep1": "서재를 <strong>OPDS, Komga, Kavita, Calibre 서버</strong>에 그대로 둡니다.",
         "opdsStep2Label": "<strong>{{clientLabel}}</strong>에서 읽습니다.",
-        "opdsStep2Detail": "Komga와 Kavita는 각자의 고유 API를 통해 연결되며, 시리즈, 진행 상황, 북마크까지 함께 동기화됩니다. 그 외의 경우에는 OPDS 1.x 카탈로그로 연결되며, 서버가 OPDS-PSE를 지원하면 페이지 단위 스트리밍도 가능합니다.",
+        "opdsStep2Detail": "Calibre와 동기화하려면 소스를 추가할 때 Calibre Content Server를 선택하고 서버 계정으로 로그인하세요. 동기화 지원 범위는 파일 형식에 따라 다릅니다.",
         "opdsStep3": "{{clientLabel}} 앱에서 <strong>설정 → OPDS</strong>를 열고 서버를 추가합니다.",
         "opdsStep3Detail": "휴대폰에서 URL, 사용자 이름, 비밀번호를 입력하는 것은 번거로운 일입니다——대신 컴퓨터에서 QR 코드를 생성해 스캔해 보세요.",
         "opdsQrCta": "QR 로그인 코드 만들기 →",
         "opdsAwayNote": "<strong>외출 중 읽기:</strong> 앱에서 따로 선택할 항목은 없습니다——이는 연결 모드가 아니라 네트워크 설정의 문제입니다. 읽는 기기와 서버 호스트를 같은 VPN에 연결하거나, 둘 다에 Tailscale을 설치한 뒤 호스트에서 서브넷 라우팅을 켜서 기기가 어디서든 서버의 로컬 주소에 접근할 수 있도록 하세요.",
-        "opdsHomeNote": "<strong>집에서 읽기:</strong> 앱에서 따로 선택할 항목은 없습니다——세 가지 연결 모드 중 어느 것도 타사 서버에는 적용되지 않습니다. 읽는 기기를 OPDS, Komga 또는 Kavita 서버와 같은 Wi-Fi 네트워크에 연결해 두기만 하면 됩니다.",
+        "opdsHomeNote": "<strong>집에서 읽기:</strong> 앱에서 따로 선택할 항목은 없습니다——세 가지 연결 모드 중 어느 것도 타사 서버에는 적용되지 않습니다. 읽는 기기를 OPDS, Komga, Kavita, Calibre 서버와 같은 Wi-Fi 네트워크에 연결해 두기만 하면 됩니다.",
         "cantStream": "<strong>{{clientLabel}}</strong>은(는) 아직 호스트에서 스트리밍할 수 없습니다——{{clientNote}} 그동안에는 {{clientLabel}}에서 BiblioFuse 앱을 사용해 로컬 독립형 읽기를 이용하세요.",
         "unsupportedHost": "<strong>{{hostLabel}}</strong>에서 <strong>{{clientLabel}}</strong>로의 네이티브 앱 스트리밍은 현재 출시된 앱에서는 아직 지원되지 않습니다. 지금 바로 {{hostLabel}}에 서재를 호스팅하고, 대신 무료 내장 브라우저 리더로 읽어보세요——이 기능은 이미 사용할 수 있으며, 어떤 기기에서든 앱 설치 없이 작동합니다.",
         "step1": "<strong>{{hostLabel}}</strong>에서 호스트를 실행합니다.",

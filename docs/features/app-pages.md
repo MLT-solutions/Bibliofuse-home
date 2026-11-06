@@ -74,8 +74,10 @@ revisiting; it exists only because mlogictech.com wasn't ready.
 `/:lang/comicreader/sync/`, linked by the CTA in the “One shelf for every format”
 feature row on `/comicreader/`. Each locale lists sync sources by reading device and
 opens the compatibility section with an overview of source reading, managed downloads,
-sidecar sync, and direct server API sync. The English guide links to the full-size
-overview artwork. The other locales render the overview as translated HTML.
+sidecar sync, and direct server API sync. The Mac and Windows row lists SMB shares
+as library sources and describes iCloud Drive reading sync separately. The English
+guide links to the full-size overview artwork. The other locales render the overview
+as translated HTML.
 
 The first card groups iCloud, SMB, and OneDrive. English shows the updated graphic
 with an expandable data table. Other locales show the translated data table directly.
@@ -89,8 +91,11 @@ prerender allowlist. The graphics are 1600 × 1000 localized PNGs generated from
 companion BiblioFuse iOS repository's source cards.
 
 The home page introduces direct SMB and OneDrive under Streaming & sync and links to
-the localized guide. The Reader landing page places those sources beside native Komga
-and Kavita in the library row. In every locale, the reading controls row introduces
+the localized guide. The Reader landing page places those sources beside Komga,
+Kavita, and Calibre Content Server in the library row. The setup picker and
+usage guide list Calibre alongside the other third-party servers. The library row
+and setup picker explain that Calibre sync requires a server account.
+In every locale, the reading controls row introduces
 Panel Navigation for iPhone and iPad, including compatible streamed PDFs, and Page
 Tone and Image Cleanup for iPhone, iPad, and Vision Pro.
 

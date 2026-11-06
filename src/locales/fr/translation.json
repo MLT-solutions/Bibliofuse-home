@@ -385,8 +385,8 @@
           "bullet3Title": "iCloud multi-appareils",
           "bullet3Body": "reprenez sur iPhone là où vous avez arrêté sur iPad.",
           "imageAlt": "Bibliothèque BiblioFuse avec étiquettes, notes et progression",
-          "bullet4Title": "API Komga et Kavita natives",
-          "bullet4Body": "Connectez-vous directement à l’API de votre serveur, pas seulement à un flux OPDS, avec la position de lecture synchronisée dans les deux sens, ainsi que la synchronisation des signets et des annotations (surlignages et notes) sur Kavita. Pro.",
+          "bullet4Title": "Komga, Kavita et Calibre Content Server",
+          "bullet4Body": "Connectez-vous directement à votre serveur (Pro). Komga synchronise la progression. Kavita et Calibre synchronisent aussi les signets, surlignages et notes pour les formats compatibles. La synchronisation avec Calibre exige un compte sur votre serveur.",
           "bullet5Title": "N'importe quel catalogue OPDS",
           "bullet5Body": "OPDS 1.x avec diffusion de pages OPDS-PSE, pour que les bandes dessinées arrivent page par page depuis Calibre-Web, COPS, Ubooquity ou tout autre serveur compatible. Pro.",
           "connectedTitle": "Accès direct à SMB et OneDrive",
@@ -1095,7 +1095,7 @@
           },
           "stream": {
             "q": "Puis-je accéder à toute ma bibliothèque sans remplir le stockage de mon téléphone ?",
-            "a": "Oui — diffusez depuis un hôte Mac, PC ou Synology NAS vers iPhone, iPad, visionOS ou Android. La connexion est automatique sur votre Wi-Fi domestique, avec Tailscale en option pour un accès à distance, et rien n'est stocké de façon permanente sur l'appareil de lecture. Vous pouvez aussi connecter l'app directement à un serveur OPDS, Komga ou Kavita que vous gérez déjà — même diffusion page par page, sans rien télécharger en entier.",
+            "a": "Oui — diffusez depuis un hôte Mac, PC ou Synology NAS vers iPhone, iPad, visionOS ou Android. La connexion est automatique sur votre Wi-Fi domestique, avec Tailscale en option pour un accès à distance, et rien n'est stocké de façon permanente sur l'appareil de lecture. Vous pouvez aussi vous connecter directement à un catalogue OPDS ou à une bibliothèque Komga, Kavita ou Calibre Content Server.",
             "imageAlt": "Infographie : diffusez votre bibliothèque depuis Mac, PC ou Synology sans garder les livres sur votre téléphone"
           },
           "tv": {
@@ -1218,7 +1218,7 @@
           },
           {
             "devices": "Mac et PC Windows",
-            "sources": "iCloud Drive pour synchroniser la lecture locale. Sous Windows, utilisez iCloud pour Windows."
+            "sources": "Ajoutez des dossiers partagés via SMB comme sources de bibliothèque. iCloud Drive permet de synchroniser la lecture. Sous Windows, utilisez iCloud pour Windows."
           }
         ],
         "overview": {
@@ -1629,19 +1629,19 @@
       },
       "qr-generator": {
         "tag": "Code QR",
-        "h1": "Générateur de QR pour Kavita et Komga",
+        "h1": "Générateur de QR pour Kavita, Komga et Calibre",
         "cardDesc": "Créez un code QR de configuration pour que l'application se connecte à votre serveur sans avoir à taper quoi que ce soit.",
-        "seoTitle": "Générateur de Code QR de Configuration pour Kavita et Komga",
-        "seoDesc": "Générez un code QR qui pointe BiblioFuse vers votre serveur Kavita ou Komga, pour ne pas avoir à taper une URL et une clé API sur un téléphone. Créé dans votre navigateur ; rien n'est envoyé nulle part.",
-        "intro": "Renseignez les informations de votre serveur et obtenez un code QR que l'application peut scanner — sans avoir à taper une longue URL et une clé API sur le clavier d'un téléphone.",
+        "seoTitle": "Générateur de Code QR de Configuration pour Kavita, Komga et Calibre",
+        "seoDesc": "Créez un code QR de configuration pour Kavita, Komga ou Calibre Content Server. Le code est généré dans votre navigateur.",
+        "intro": "Créez un code QR de configuration pour Kavita, Komga ou Calibre Content Server. Le code est généré dans votre navigateur.",
         "sections": [
           {
             "title": "Pourquoi un code QR",
             "body": "L'adresse d'un serveur autohébergé associée à une clé API est longue et propice aux erreurs à saisir sur un téléphone. Scanner un code transmet les deux en une seule étape, correctement, à chaque fois."
           },
           {
-            "title": "Votre clé ne quitte jamais la page",
-            "body": "Le code est généré dans votre navigateur à partir des valeurs que vous saisissez. Rien n'est envoyé, journalisé ou stocké — fermez l'onglet et tout disparaît. L'image générée n'est privée qu'autant que l'endroit où vous choisissez de la mettre, donc traitez un code imprimé comme la clé API qu'il contient."
+            "title": "Gardez votre code QR privé",
+            "body": "Gardez le code QR généré privé. Il peut contenir une clé API de Kavita ou Komga, ou votre identifiant et mot de passe Calibre."
           }
         ],
         "faq": [
@@ -1651,14 +1651,14 @@
           },
           {
             "q": "Quels serveurs cela prend-il en charge ?",
-            "a": "Kavita et Komga. Choisissez le type de service et le port par défaut se remplit ; ajustez l'adresse si votre configuration diffère."
+            "a": "Komga, Kavita et Calibre Content Server."
           }
         ]
       }
     },
     "guidePage": {
       "seoTitle": "Guide BiblioFuse - Configuration, diffusion, bibliothèques et dépannage",
-      "seoDesc": "Comment configurer BiblioFuse : ajouter des livres, connecter des bibliothèques Kavita, Komga et OPDS, diffuser depuis votre propre Mac ou PC, options de lecture et résolution des problèmes courants.",
+      "seoDesc": "Comment configurer BiblioFuse : ajouter des livres, connecter des bibliothèques Kavita, Komga, Calibre et OPDS, diffuser depuis votre propre Mac ou PC, options de lecture et résolution des problèmes courants.",
       "h1": "Guide",
       "intro": "Configuration, diffusion et dépannage au même endroit. Tout ici s'applique à l'app que vous avez déjà - aucun compte n'est nécessaire pour en lire quoi que ce soit.",
       "footerNote": "Pas couvert ici ? Le support répond par un vrai e-mail, pas par un système de tickets.",
@@ -1837,8 +1837,8 @@
         },
         {
           "id": "servers",
-          "title": "Streaming depuis votre serveur OPDS, Kavita ou Komga existant",
-          "desc": "Vous hébergez déjà un catalogue ? Connectez-vous-y directement — rien n'est copié sur l'appareil.",
+          "title": "Streaming depuis votre serveur OPDS, Kavita, Komga ou Calibre existant",
+          "desc": "Vous pouvez aussi vous connecter directement à un catalogue OPDS ou à une bibliothèque Komga, Kavita ou Calibre Content Server.",
           "items": [
             {
               "q": "Qu'est-ce qu'OPDS, et comment connecter un serveur OPDS ?",
@@ -1867,7 +1867,7 @@
                 {
                   "text": "Les signets ne se synchronisent pas avec Komga.",
                   "sub": [
-                    "Les signets dans le livre se synchronisent uniquement avec Kavita. La position de lecture se synchronise avec les deux. Si la synchronisation des signets compte pour vous et que vous avez le choix du serveur, c'est là la différence."
+                    "Komga synchronise la progression. Kavita et Calibre synchronisent aussi les signets pour les formats compatibles."
                   ]
                 }
               ]
@@ -1876,12 +1876,17 @@
               "q": "Comment me connecter à Kavita, et ma progression de lecture se synchronisera-t-elle ?",
               "a": "Oui, dans les deux sens. Ajoutez votre serveur Kavita dans Réglages, et BiblioFuse utilise l'API native de Kavita plutôt que l'extension OPDS-PSE dont dépendent la plupart des apps de lecture — ce qui est à l'origine d'une bonne partie des soucis de synchronisation de progression dans l'écosystème Kavita au sens large. La position de lecture se synchronise dans les deux sens, et les signets dans le livre se synchronisent aussi. Pro requis. Les surlignages et notes EPUB se synchronisent aussi avec Kavita : ajoutez-les, modifiez-les ou supprimez-les des deux côtés.",
               "bullets": []
+            },
+            {
+              "q": "Comment me connecter à Calibre Content Server ?",
+              "a": "Pour synchroniser avec Calibre, sélectionnez Calibre Content Server lors de l’ajout de la source et connectez-vous avec un compte du serveur. La prise en charge dépend du format.",
+              "bullets": []
             }
           ],
           "links": [
             {
               "to": "/tools/qr-generator/",
-              "label": "Créer un code QR pour votre serveur Kavita ou Komga"
+              "label": "Créer un code QR pour votre serveur Kavita, Komga ou Calibre"
             },
             {
               "to": "/blog/kavita-reader-app-progress-bookmark-annotation-sync/",
@@ -2137,7 +2142,7 @@
     "readerFamilyGuide": {
       "eyebrow": "Chaque appareil, une seule configuration",
       "title": "Trouvez votre configuration",
-      "intro": "La famille couvre désormais iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker et Synology — et lit aussi depuis n'importe quel serveur OPDS, Komga ou Kavita. Choisissez ce qui héberge vos livres et sur quoi vous voulez lire, et découvrez exactement quelle app et quel mode de connexion utiliser.",
+      "intro": "La famille couvre désormais iPhone, iPad, Mac, Windows, visionOS, tvOS, Android, Docker et Synology — et lit aussi depuis n'importe quel serveur OPDS, Komga, Kavita ou Calibre. Choisissez ce qui héberge vos livres et sur quoi vous voulez lire, et découvrez exactement quelle app et quel mode de connexion utiliser.",
       "coverageToggle": "Voir le tableau complet de compatibilité des plateformes",
       "table": {
         "platformHeader": "Plateforme",
@@ -2155,7 +2160,7 @@
           "nas": "NAS",
           "icloud": "iCloud",
           "host": "Host",
-          "opds": "OPDS / Kavita / Komga"
+          "opds": "OPDS / Kavita / Komga / Calibre"
         },
         "streamCols": {
           "icloudTs": "iCloud + Tailscale",
@@ -2203,8 +2208,8 @@
           "appLinkLabel": "Obtenir BiblioFuse NAS (Docker) →"
         },
         "opds": {
-          "label": "OPDS / Kavita / Komga",
-          "note": "Tout catalogue OPDS 1.x ou OPDS-PSE, ou un serveur Komga ou Kavita, lu via sa propre API. BiblioFuse s'y connecte directement — ce n'est pas un host BiblioFuse, donc les trois modes de connexion ci-dessous ne s'appliquent pas."
+          "label": "OPDS / Kavita / Komga / Calibre",
+          "note": "Vous pouvez aussi vous connecter directement à un catalogue OPDS ou à une bibliothèque Komga, Kavita ou Calibre Content Server."
         }
       },
       "clients": {
@@ -2244,15 +2249,15 @@
       },
       "recommendation": {
         "heading": "Selon votre combinaison",
-        "cantConnectOpds": "<strong>{{clientLabel}}</strong> ne peut pas se connecter à un serveur OPDS, Komga ou Kavita — les apps TV ne lisent que depuis un host BiblioFuse sur votre propre réseau. Pointez-la plutôt vers un host Mac, PC ou NAS, ou lisez votre catalogue sur iPhone, iPad, Vision Pro ou un téléphone Android.",
-        "opdsStep1": "Conservez votre bibliothèque sur votre <strong>serveur OPDS, Komga ou Kavita</strong>.",
+        "cantConnectOpds": "<strong>{{clientLabel}}</strong> ne peut pas se connecter à un serveur OPDS, Komga, Kavita ou Calibre — les apps TV ne lisent que depuis un host BiblioFuse sur votre propre réseau. Pointez-la plutôt vers un host Mac, PC ou NAS, ou lisez votre catalogue sur iPhone, iPad, Vision Pro ou un téléphone Android.",
+        "opdsStep1": "Conservez votre bibliothèque sur votre <strong>serveur OPDS, Komga, Kavita ou Calibre</strong>.",
         "opdsStep2Label": "Lisez sur <strong>{{clientLabel}}</strong>.",
-        "opdsStep2Detail": "Komga et Kavita se connectent via leur API native — séries, progression et signets inclus. Tout le reste se connecte comme un catalogue OPDS 1.x, avec un streaming page par page lorsque le serveur prend en charge OPDS-PSE.",
+        "opdsStep2Detail": "Pour synchroniser avec Calibre, sélectionnez Calibre Content Server lors de l’ajout de la source et connectez-vous avec un compte du serveur. La prise en charge dépend du format.",
         "opdsStep3": "Dans l'app {{clientLabel}}, ouvrez <strong>Réglages → OPDS</strong> et ajoutez le serveur.",
         "opdsStep3Detail": "Saisir une URL, un identifiant et un mot de passe sur un téléphone est la partie fastidieuse — générez plutôt un code QR sur votre ordinateur et scannez-le.",
         "opdsQrCta": "Créer un code QR de connexion →",
         "opdsAwayNote": "<strong>Lecture en déplacement :</strong> rien à choisir dans l'app — il s'agit d'une configuration réseau, pas d'un mode de connexion. Placez à la fois l'appareil de lecture et le host du serveur sur le même VPN, ou installez Tailscale sur les deux et activez le routage de sous-réseau sur le host afin que l'appareil puisse atteindre l'adresse locale du serveur depuis n'importe où.",
-        "opdsHomeNote": "<strong>Lecture à la maison :</strong> rien à choisir dans l'app — aucun des trois modes de connexion ne s'applique à un serveur tiers. Il suffit de garder l'appareil de lecture sur le même réseau Wi-Fi que votre serveur OPDS, Komga ou Kavita.",
+        "opdsHomeNote": "<strong>Lecture à la maison :</strong> rien à choisir dans l'app — aucun des trois modes de connexion ne s'applique à un serveur tiers. Il suffit de garder l'appareil de lecture sur le même réseau Wi-Fi que votre serveur OPDS, Komga, Kavita ou Calibre.",
         "cantStream": "<strong>{{clientLabel}}</strong> ne peut pas encore diffuser en streaming depuis un host — {{clientNote}} En attendant, utilisez l'app BiblioFuse sur {{clientLabel}} pour une lecture locale et autonome.",
         "unsupportedHost": "Le streaming en app native depuis <strong>{{hostLabel}}</strong> vers <strong>{{clientLabel}}</strong> n'est pas encore pris en charge dans les apps publiées. Hébergez dès aujourd'hui votre bibliothèque sur {{hostLabel}} et lisez-la plutôt dans son lecteur navigateur intégré et gratuit — cette partie fonctionne déjà, sur n'importe quel appareil, sans app requise.",
         "step1": "Exécutez le host sur <strong>{{hostLabel}}</strong>.",

@@ -36,6 +36,10 @@ Sections come from `redesign.guidePage.sections[]` — each has `id` (anchor), `
 `desc`, optional `items[]` (Q&A) and optional `links[]`. Adding a section is a
 translation-file edit; no component change needed.
 
+The server section covers OPDS, Komga, Kavita, and Calibre Content Server.
+The Calibre answer explains selecting the dedicated source type and signing in
+with a server account to sync supported formats.
+
 Every Q&A across every section is flattened into one `FAQPage` graph, so this page is the
 site's FAQ home. The homepage keeps three top-level questions and its own FAQPage schema —
 that was left in place on purpose, because the homepage is the one page Google still
