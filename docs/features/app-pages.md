@@ -213,6 +213,7 @@ annotation sync.
 `WatchCompanion` follows the library-hub streaming feature row and precedes ToolsHighlight. It uses the approved localized compositions under `public/image/home/watch-companion/`; website `pt` uses `pt-BR.jpg` and website `zh` uses `zh-Hans.jpg`. Copy describes Apple Watch as a companion that browses libraries served by the paired iPhone and controls iPhone Read Aloud plus a comic already open on iPhone. It states that book access, speech playback and comic pages stay on iPhone; it does not claim standalone Watch reading/audio or universal OPDS/Calibre Recent support.
 
 `/features/` lists Apple Watch library browsing and iPhone reading controls as available from 2.1.16, based on the public App Store release and `bibliofuse_iosv2` commit `432d555`.
+The iOS release ladder also lists 2.1.19, publicly available on 2026-11-07.
 
 ### iPhone Duo section (`/comicreader/`, added 2026-10-14)
 `DuoSection` (inline in `ComicReader.jsx`, rendered after the feature rows and directly

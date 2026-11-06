@@ -109,7 +109,7 @@ export const GROUPS = [
 // Only releases that exist on that platform's store record or release commits.
 //
 // Keep submissions separate from publicly available releases.
-export const SUBMITTED_RELEASES = { ios: '2.1.19' };
+export const SUBMITTED_RELEASES = {};
 
 export const RELEASES = {
   ios: [
@@ -119,6 +119,7 @@ export const RELEASES = {
     ['2.1.8', '2026-08-06'], ['2.1.13', '2026-09-09'], ['2.1.14', '2026-10-05'],
     ['2.1.15', '2026-10-12'], ['2.1.16', '2026-10-28'],
     ['2.1.17', '2026-11-01'], ['2.1.18', '2026-11-02'],
+    ['2.1.19', '2026-11-07'],
   ],
   watchos: [['2.1.16', '2026-10-28']],
   macos: [
