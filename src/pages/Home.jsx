@@ -195,11 +195,7 @@ function Hero({ lang }) {
 const HERO_IMAGE_LANGS = ['en', 'es', 'fr', 'nl', 'pt', 'ru', 'zh', 'ja', 'ko', 'id', 'ms'];
 const heroImageLang = (lang) => (HERO_IMAGE_LANGS.includes(lang) ? lang : 'en');
 
-// Second hero: streaming & sync. The three sources it names — a BiblioFuse host app, your
-// own iCloud Drive, and a third-party OPDS/Komga/Kavita server — are the three answers to
-// "my phone is full", which is the objection that actually stops people buying a comic
-// reader. Live translation used to lead here and now has its own hero below; both were
-// separated on 2026-09-10 so neither has to carry the other's pitch.
+// Second hero: ways to open books from an existing library and sync supported reading data.
 function SecondHero({ lang }) {
   const { t } = useTranslation();
   const s = t('redesign.home.secondHero', { returnObjects: true });
@@ -233,6 +229,12 @@ function SecondHero({ lang }) {
             className="mt-7 inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-semibold text-[#0b1220] transition hover:-translate-y-0.5 hover:bg-slate-100"
           >
             {s.cta} →
+          </Link>
+          <Link
+            to={`/${lang}/comicreader/sync/`}
+            className="mt-4 block w-fit text-sm font-semibold text-teal-200 underline-offset-4 hover:underline"
+          >
+            {s.syncCta} →
           </Link>
         </div>
         <div className="relative mx-auto w-full max-w-[300px] lg:justify-self-end">

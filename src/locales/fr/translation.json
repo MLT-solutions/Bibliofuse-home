@@ -291,16 +291,17 @@
       "secondHero": {
         "eyebrow": "Diffusion et synchronisation",
         "titleA": "Toute votre bibliothèque,",
-        "titleB": "sans rien télécharger.",
-        "desc": "Laissez votre collection là où elle se trouve déjà — l'app hôte BiblioFuse sur votre Mac, PC ou NAS, votre propre iCloud Drive, ou un serveur OPDS, Komga ou Kavita — et lisez-la page par page. Votre position de lecture vous suit d'un appareil à l'autre.",
+        "titleB": "là où elle se trouve.",
+        "desc": "Lisez depuis vos dossiers, votre stockage cloud ou vos serveurs. Téléchargez certains livres pour les lire hors ligne lorsque la source le permet.",
         "cta": "Voir ce qui se diffuse et où",
         "bullets": [
-          "Connexion directe à OPDS 1.x, OPDS-PSE, Komga ou Kavita (Pro)",
+          "Accédez directement aux dossiers SMB et OneDrive sur iPhone et iPad (Pro)",
+          "Connectez OPDS, Komga, Kavita ou Calibre sur les appareils compatibles (Pro)",
           "Diffusion depuis l'app hôte BiblioFuse sur Mac, PC, Synology ou Docker",
           "Lecture depuis votre propre iCloud Drive : les livres se chargent à l'ouverture (Pro)",
-          "Position de lecture et signets synchronisés sur tous vos appareils",
-          "Ajoutez, modifiez et supprimez surlignages et notes, synchronisés entre vos appareils"
-        ]
+          "Synchronisez la progression, les signets et les annotations selon la source et le format"
+        ],
+        "syncCta": "Voir la synchronisation par appareil et source"
       },
       "toolsStrip": {
         "eyebrow": "Outils gratuits dans le navigateur",
@@ -387,7 +388,9 @@
           "bullet4Title": "API Komga et Kavita natives",
           "bullet4Body": "Connectez-vous directement à l’API de votre serveur, pas seulement à un flux OPDS, avec la position de lecture synchronisée dans les deux sens, ainsi que la synchronisation des signets et des annotations (surlignages et notes) sur Kavita. Pro.",
           "bullet5Title": "N'importe quel catalogue OPDS",
-          "bullet5Body": "OPDS 1.x avec diffusion de pages OPDS-PSE, pour que les bandes dessinées arrivent page par page depuis Calibre-Web, COPS, Ubooquity ou tout autre serveur compatible. Pro."
+          "bullet5Body": "OPDS 1.x avec diffusion de pages OPDS-PSE, pour que les bandes dessinées arrivent page par page depuis Calibre-Web, COPS, Ubooquity ou tout autre serveur compatible. Pro.",
+          "connectedTitle": "Accès direct à SMB et OneDrive",
+          "connectedBody": "Parcourez les dossiers SMB partagés et OneDrive sur iPhone et iPad. Ouvrez les livres depuis la source ou téléchargez-les pour les lire hors ligne. Les données compatibles sont synchronisées à côté du livre. Pro."
         },
         "reading": {
           "eyebrow": "Lisez à votre façon",
@@ -403,7 +406,22 @@
           "bullet4Title": "Traduction de bandes dessinées et mangas en direct",
           "bullet4Body": "L'OCR sur l'appareil lit la bulle et recompose la traduction à sa place pendant la lecture. Aucune étape d'export, aucune seconde app. Pro.",
           "bullet5Title": "Doubles pages, tourne-page et japonais vertical",
-          "bullet5Body": "Les doubles pages pour les illustrations en double page et le tategaki correct pour l'EPUB vertical et le manga sont gratuits. Ajoutez le tourne-page réaliste avec Pro."
+          "bullet5Body": "Les doubles pages pour les illustrations en double page et le tategaki correct pour l'EPUB vertical et le manga sont gratuits. Ajoutez le tourne-page réaliste avec Pro.",
+          "displayFeatures": [
+            {
+              "title": "Navigation par case",
+              "body": "Lisez une case à la fois sur iPhone et iPad dans les archives BD, les EPUB BD et les PDF compatibles."
+            },
+            {
+              "title": "Tonalité de page",
+              "body": "Réglez la luminosité, le contraste, la noirceur du texte et les niveaux de gris des PDF et BD sur iPhone, iPad et Vision Pro. Pro."
+            },
+            {
+              "title": "Nettoyage d’image",
+              "body": "Réduisez le moiré et le bruit ou améliorez la netteté des archives et EPUB BD. Inclut Tons lisses (IA) sur iPhone, iPad et Vision Pro. Pro."
+            }
+          ],
+          "videoAlt": "Quatre écrans montrent la minicarte, la lecture continue, le feuilletage et la navigation par case."
         },
         "streaming": {
           "eyebrow": "Le bureau diffuse vers le mobile",
@@ -580,7 +598,7 @@
       "appFeatures": [
         "Lecteur EPUB, PDF, CBZ, CBR, RAR, ZIP et TXT",
         "Streaming de bibliothèque Mac ou PC vers iPhone et iPad en Wi‑Fi ou 5G distante avec Tailscale",
-        "Accès SMB via le streaming de bureau sur iOS et SMB natif sur Android",
+        "Accédez directement aux dossiers SMB et OneDrive sur iPhone et iPad (Pro)",
         "Compression et fusion sur l’appareil pour économiser l’espace",
         "Détection de doublons CBZ, CBR, ZIP et RAR par hachage perceptuel de pages échantillonnées",
         "Outil web WebAssembly privé avec traitement local",
@@ -1138,8 +1156,8 @@
         "buttonLabel": "Tableau de compatibilité de synchronisation serveur",
         "eyebrow": "Guide de synchronisation du lecteur",
         "title": "Compatibilité de synchronisation du lecteur de BD par source de contenu",
-        "description": "Comparez la synchronisation de BiblioFuse avec iCloud, OPDS, Kavita, Komga, Calibre Content Server et BiblioFuse Host pour TXT, EPUB, PDF, CBZ et CBR.",
-        "intro": "Découvrez quelles sources synchronisent la progression, les signets, les notes et surlignages, les tags du livre et les évaluations. Ce tableau compare iCloud, OPDS standard, les intégrations natives Kavita et Komga, Calibre Content Server et BiblioFuse Host.",
+        "description": "Comparez la synchronisation de BiblioFuse avec iCloud, SMB, OneDrive, OPDS, Kavita, Komga, Calibre Content Server et BiblioFuse Host pour TXT, EPUB, PDF, CBZ et CBR.",
+        "intro": "Choisissez votre appareil, puis consultez les tableaux pour connaître les actions et les formats synchronisés avec votre source.",
         "note": "Une coche verte indique que l’intégration prend en charge cette action et ce format. Une cellule vide signifie que ce n’est pas pris en charge. Les capacités du serveur et la correspondance vérifiable des positions peuvent influer sur la prise en charge. Calibre Content Server n’intègre pas de lecteur PDF ; sa colonne PDF est donc vide.",
         "formatList": "Formats couverts : TXT, EPUB, PDF, CBZ et CBR.",
         "sourcesHeading": "Compatibilité par source de contenu",
@@ -1163,7 +1181,7 @@
         "breadcrumbCurrent": "Compatibilité de synchronisation",
         "backToReader": "Retour à BiblioFuse Reader",
         "sources": [
-          "iCloud",
+          "iCloud / SMB / OneDrive",
           "OPDS standard",
           "Kavita",
           "Komga",
@@ -1183,7 +1201,38 @@
             "q": "Calibre Content Server synchronise-t-il la progression PDF ?",
             "a": "La colonne PDF est vide, car Calibre Content Server ne possède pas de lecteur PDF intégré dans cette comparaison. Les autres coches Calibre sont limitées aux formats et positions que BiblioFuse peut faire correspondre."
           }
-        ]
+        ],
+        "platformHeading": "Sources de synchronisation par appareil",
+        "platforms": [
+          {
+            "devices": "iPhone et iPad",
+            "sources": "iCloud, SMB, OneDrive, Kavita, Komga, Calibre Content Server, Hôte BiblioFuse"
+          },
+          {
+            "devices": "Apple Vision Pro",
+            "sources": "iCloud, Kavita, Komga, Calibre Content Server, Hôte BiblioFuse"
+          },
+          {
+            "devices": "Téléphones et tablettes Android",
+            "sources": "Kavita, Komga, Calibre Content Server, Hôte BiblioFuse"
+          },
+          {
+            "devices": "Mac et PC Windows",
+            "sources": "iCloud Drive pour synchroniser la lecture locale. Sous Windows, utilisez iCloud pour Windows."
+          }
+        ],
+        "overview": {
+          "heading": "Comment fonctionne la synchronisation",
+          "remote": "Bibliothèque distante",
+          "direct": "Lire depuis la source",
+          "download": "Téléchargement géré",
+          "reconnect": "Lisez hors ligne, puis synchronisez à la reconnexion.",
+          "sidecars": "Fichiers annexes",
+          "keepTogether": "Conservez le livre et ses fichiers annexes ensemble dans un dossier par livre ou série.",
+          "optional": "Dossier facultatif pour les images intégrées aux notes.",
+          "api": "API directe",
+          "apiDetail": "Les données de lecture compatibles sont synchronisées par le serveur."
+        }
       }
     },
     "androidInterest": {

@@ -256,7 +256,7 @@ const NAVIGATION_DEMO_SOURCES = [
   { src: `${featureMediaBase}/navigation-demo-fallback.mp4`, type: 'video/mp4; codecs="avc1.640028"' },
 ];
 
-function FeatureVideo({ alt, sources = NAVIGATION_DEMO_SOURCES, poster = `${featureMediaBase}/navigation-demo-poster.jpg`, frameClass = 'aspect-[4/3] [clip-path:inset(0_0.5%_0_0)]', maxWidthClass = 'max-w-[680px]' }) {
+function FeatureVideo({ alt, sources = NAVIGATION_DEMO_SOURCES, poster = `${featureMediaBase}/navigation-demo-poster.jpg`, frameClass = 'aspect-video', maxWidthClass = 'max-w-[680px]' }) {
   const { t } = useTranslation();
   const videoRef = React.useRef(null);
   const [isPlaying, setIsPlaying] = React.useState(false);
@@ -887,6 +887,10 @@ const ComicReader = () => {
               { title: t('redesign.readerSection.features.library.bullet1Title'), body: t('redesign.readerSection.features.library.bullet1Body') },
               { title: t('redesign.readerSection.features.library.bullet2Title'), body: t('redesign.readerSection.features.library.bullet2Body') },
               { title: t('redesign.readerSection.features.library.bullet3Title'), body: t('redesign.readerSection.features.library.bullet3Body') },
+              {
+                title: t('redesign.readerSection.features.library.connectedTitle'),
+                body: t('redesign.readerSection.features.library.connectedBody'),
+              },
               { title: t('redesign.readerSection.features.library.bullet4Title'), body: t('redesign.readerSection.features.library.bullet4Body') },
               { title: t('redesign.readerSection.features.library.bullet5Title'), body: t('redesign.readerSection.features.library.bullet5Body') },
             ]}
@@ -907,11 +911,12 @@ const ComicReader = () => {
               { title: t('redesign.readerSection.features.reading.bullet1Title'), body: t('redesign.readerSection.features.reading.bullet1Body') },
               { title: t('redesign.readerSection.features.reading.bullet2Title'), body: t('redesign.readerSection.features.reading.bullet2Body') },
               { title: t('redesign.readerSection.features.reading.bullet3Title'), body: t('redesign.readerSection.features.reading.bullet3Body') },
+              ...t('redesign.readerSection.features.reading.displayFeatures', { returnObjects: true }),
               { title: t('redesign.readerSection.features.reading.bullet4Title'), body: t('redesign.readerSection.features.reading.bullet4Body') },
               { title: t('redesign.readerSection.features.reading.bullet5Title'), body: t('redesign.readerSection.features.reading.bullet5Body') },
             ]}
             image={`${featureMediaBase}/navigation-demo-alpha.mp4`}
-            alt={t('redesign.readerSection.features.reading.videoAlt', 'BiblioFuse navigation demo showing page curl, continuous reading, minimap and multiple reading styles')}
+            alt={t('redesign.readerSection.features.reading.videoAlt')}
             kind="video"
             accent="teal"
           />

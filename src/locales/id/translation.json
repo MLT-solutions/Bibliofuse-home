@@ -290,17 +290,18 @@
       },
       "secondHero": {
         "eyebrow": "Streaming & sinkronisasi",
-        "titleA": "Seluruh koleksi Anda,",
-        "titleB": "tanpa mengunduh.",
-        "desc": "Biarkan koleksi tetap di tempatnya — aplikasi host BiblioFuse di Mac, PC, atau NAS, iCloud Drive Anda sendiri, atau server OPDS, Komga, maupun Kavita — dan baca halaman demi halaman. Posisi baca Anda ikut berpindah antar perangkat.",
+        "titleA": "Seluruh pustaka Anda,",
+        "titleB": "di tempat penyimpanannya",
+        "desc": "Baca buku dari folder, penyimpanan cloud, atau server Anda. Simpan buku pilihan untuk dibaca secara offline jika sumber mendukungnya.",
         "cta": "Lihat apa yang bisa di-streaming",
         "bullets": [
-          "Sambung langsung ke OPDS 1.x, OPDS-PSE, Komga, atau Kavita (Pro)",
+          "Buka pustaka SMB dan OneDrive langsung di iPhone dan iPad dengan Pro.",
+          "Jelajahi katalog OPDS dan sambungkan ke Komga, Kavita, atau Calibre.",
           "Streaming dari aplikasi host BiblioFuse di Mac, PC, Synology, atau Docker",
           "Baca dari iCloud Drive Anda sendiri — buku dimuat saat dibuka (Pro)",
-          "Posisi baca dan markah tetap sinkron di semua perangkat Anda",
-          "Tambah, edit, dan hapus sorotan serta catatan, tersinkron di semua perangkat Anda"
-        ]
+          "Dukungan sinkronisasi bergantung pada sumber dan format buku."
+        ],
+        "syncCta": "Lihat panduan sinkronisasi"
       },
       "toolsStrip": {
         "eyebrow": "Alat browser gratis",
@@ -387,7 +388,9 @@
           "bullet4Title": "Dukungan native Komga & Kavita",
           "bullet4Body": "Terhubung langsung ke API server Anda sendiri, bukan hanya feed OPDS, dengan posisi baca yang tersinkron dua arah, ditambah sinkronisasi bookmark dan anotasi (sorotan dan catatan) di Kavita. Pro.",
           "bullet5Title": "Katalog OPDS apa pun",
-          "bullet5Body": "OPDS 1.x dengan streaming halaman OPDS-PSE, sehingga komik dimuat per halaman dari Calibre-Web, COPS, Ubooquity, atau server pendukung lainnya. Pro."
+          "bullet5Body": "OPDS 1.x dengan streaming halaman OPDS-PSE, sehingga komik dimuat per halaman dari Calibre-Web, COPS, Ubooquity, atau server pendukung lainnya. Pro.",
+          "connectedTitle": "Akses langsung SMB dan OneDrive",
+          "connectedBody": "Telusuri folder SMB bersama dan OneDrive langsung di iPhone dan iPad dengan Pro. Buka buku dari sumber atau unduh judul pilihan untuk dibaca secara offline. Data bacaan yang didukung disinkronkan di samping buku."
         },
         "reading": {
           "eyebrow": "Baca dengan cara Anda",
@@ -403,7 +406,22 @@
           "bullet4Title": "Terjemahan komik dan manga langsung",
           "bullet4Body": "OCR di perangkat membaca balon teks dan menata ulang terjemahan tepat di tempatnya saat Anda membaca. Tanpa proses ekspor, tanpa aplikasi kedua. Pro.",
           "bullet5Title": "Halaman ganda, balik halaman melengkung & bahasa Jepang vertikal",
-          "bullet5Body": "Halaman ganda untuk ilustrasi dua halaman dan tategaki yang benar untuk EPUB vertikal serta manga, keduanya gratis. Tambahkan balik halaman melengkung yang realistis dengan Pro."
+          "bullet5Body": "Halaman ganda untuk ilustrasi dua halaman dan tategaki yang benar untuk EPUB vertikal serta manga, keduanya gratis. Tambahkan balik halaman melengkung yang realistis dengan Pro.",
+          "displayFeatures": [
+            {
+              "title": "Navigasi Panel",
+              "body": "Baca komik dalam arsip, EPUB komik, dan PDF yang kompatibel panel demi panel di iPhone dan iPad."
+            },
+            {
+              "title": "Tona Halaman",
+              "body": "Sesuaikan kecerahan, kontras, kegelapan teks, dan skala abu-abu pada halaman PDF, arsip komik, dan EPUB komik di iPhone, iPad, dan Vision Pro dengan Pro."
+            },
+            {
+              "title": "Pembersihan Gambar",
+              "body": "Kurangi moiré dan derau atau pertajam gambar pindaian dalam arsip dan EPUB komik. Pratinjau pengurangan moiré, termasuk Tona Halus (AI), di iPhone, iPad, dan Vision Pro dengan Pro."
+            }
+          ],
+          "videoAlt": "Empat layar memperlihatkan peta mini, baca kontinu, animasi membalik halaman, dan Navigasi Panel."
         },
         "streaming": {
           "eyebrow": "Desktop streaming ke mobile",
@@ -580,7 +598,7 @@
       "appFeatures": [
         "Reader EPUB, PDF, CBZ, CBR, RAR, ZIP dan TXT",
         "Streaming perpustakaan rumah Mac atau PC ke iPhone dan iPad lewat Wi‑Fi atau 5G jarak jauh dengan Tailscale",
-        "Akses SMB lewat streaming desktop di iOS dan SMB native di Android",
+        "Buka pustaka SMB dan OneDrive langsung di iPhone dan iPad dengan Pro.",
         "Kompresi dan penggabungan di perangkat untuk menghemat ruang ponsel",
         "Pemindai duplikat CBZ, CBR, ZIP dan RAR memakai perceptual hash halaman contoh",
         "Alat web WebAssembly privat dengan pemrosesan lokal browser",
@@ -1138,8 +1156,8 @@
         "buttonLabel": "Tabel kompatibilitas sinkronisasi server",
         "eyebrow": "Panduan sinkronisasi pembaca",
         "title": "Kompatibilitas sinkronisasi pembaca komik menurut sumber konten",
-        "description": "Bandingkan sinkronisasi BiblioFuse dengan iCloud, OPDS, Kavita, Komga, Calibre Content Server, dan BiblioFuse Host untuk format TXT, EPUB, PDF, CBZ, dan CBR.",
-        "intro": "Lihat sumber konten mana yang menyinkronkan progres membaca, penanda, catatan dan sorotan, tag buku, serta peringkat. Tabel ini membandingkan iCloud, OPDS standar, integrasi native Kavita dan Komga, Calibre Content Server, dan BiblioFuse Host.",
+        "description": "Bandingkan sinkronisasi BiblioFuse dengan iCloud, SMB, OneDrive, OPDS, Kavita, Komga, Calibre Content Server, dan BiblioFuse Host untuk format TXT, EPUB, PDF, CBZ, dan CBR.",
+        "intro": "Sinkronkan posisi baca dan data bacaan lainnya antarperangkat melalui sumber yang kompatibel. Lihat opsi untuk perangkat Anda dan periksa tabel untuk setiap format buku.",
         "note": "Tanda centang hijau berarti integrasi sumber mendukung sinkronisasi untuk tindakan dan format tersebut. Sel kosong berarti tidak didukung. Dukungan dapat bergantung pada kemampuan server dan pemetaan posisi yang dapat diverifikasi antarformat. Calibre Content Server tidak memiliki pembaca PDF bawaan, sehingga kolom PDF kosong.",
         "formatList": "Format yang tercakup: TXT, EPUB, PDF, CBZ, dan CBR.",
         "sourcesHeading": "Kompatibilitas sinkronisasi menurut sumber konten",
@@ -1163,7 +1181,7 @@
         "breadcrumbCurrent": "Kompatibilitas sinkronisasi",
         "backToReader": "Kembali ke BiblioFuse Reader",
         "sources": [
-          "iCloud",
+          "iCloud / SMB / OneDrive",
           "OPDS standar",
           "Kavita",
           "Komga",
@@ -1183,7 +1201,38 @@
             "q": "Apakah Calibre Content Server menyinkronkan progres membaca PDF?",
             "a": "Kolom PDF kosong karena Calibre Content Server tidak memiliki pembaca PDF bawaan dalam perbandingan ini. Tanda Calibre lainnya terbatas pada format dan lokasi yang dapat dipetakan BiblioFuse."
           }
-        ]
+        ],
+        "platformHeading": "Sumber sinkronisasi menurut perangkat",
+        "platforms": [
+          {
+            "devices": "iPhone dan iPad",
+            "sources": "iCloud, SMB, OneDrive, Kavita, Komga, Calibre Content Server, Host BiblioFuse"
+          },
+          {
+            "devices": "Apple Vision Pro",
+            "sources": "iCloud, Kavita, Komga, Calibre Content Server, Host BiblioFuse"
+          },
+          {
+            "devices": "Ponsel dan tablet Android",
+            "sources": "Kavita, Komga, Calibre Content Server, Host BiblioFuse"
+          },
+          {
+            "devices": "Mac dan PC Windows",
+            "sources": "iCloud, dengan iCloud untuk Windows di PC"
+          }
+        ],
+        "overview": {
+          "heading": "Cara kerja sinkronisasi",
+          "remote": "Pustaka jarak jauh",
+          "direct": "Baca langsung dari sumber",
+          "download": "Unduhan terkelola",
+          "reconnect": "Baca secara offline dan sinkronkan saat kembali terhubung.",
+          "sidecars": "Sistem berkas pendamping",
+          "keepTogether": "Simpan buku dan berkas pendampingnya bersama dalam satu folder buku atau seri.",
+          "optional": "Folder opsional untuk gambar yang disematkan dalam catatan.",
+          "api": "API langsung",
+          "apiDetail": "Data bacaan yang didukung disinkronkan melalui server."
+        }
       }
     },
     "androidInterest": {

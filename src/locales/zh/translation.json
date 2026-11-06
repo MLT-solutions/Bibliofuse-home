@@ -291,16 +291,17 @@
       "secondHero": {
         "eyebrow": "串流与同步",
         "titleA": "整个书库，",
-        "titleB": "无需下载。",
-        "desc": "让藏书留在原处——Mac、PC 或 NAS 上的 BiblioFuse 主机应用、你自己的 iCloud Drive，或 OPDS、Komga、Kavita 服务器——按页阅读即可。阅读进度会跟着你在设备之间流转。",
+        "titleB": "留在原处",
+        "desc": "从文件夹、云存储或服务器阅读。来源支持时，可以下载选定的图书离线阅读。",
         "cta": "看看哪些内容可以串流",
         "bullets": [
-          "直接连接 OPDS 1.x、OPDS-PSE、Komga 或 Kavita（Pro）",
+          "使用 Pro 在 iPhone 和 iPad 上直接打开 SMB 和 OneDrive 书库。",
+          "浏览 OPDS 目录，连接 Komga、Kavita 或 Calibre。",
           "从 Mac、PC、Synology 或 Docker 上的 BiblioFuse 主机应用串流",
           "直接读取你自己的 iCloud 云盘——打开时才载入（Pro）",
-          "阅读进度与书签在各设备之间保持同步",
-          "添加、编辑和删除高亮与笔记，并在你的设备之间同步"
-        ]
+          "支持的同步项目取决于内容源和图书格式。"
+        ],
+        "syncCta": "查看同步指南"
       },
       "toolsStrip": {
         "eyebrow": "免费浏览器工具",
@@ -387,7 +388,9 @@
           "bullet4Title": "原生 Komga 与 Kavita",
           "bullet4Body": "直接连接服务器自身的 API，而不只是 OPDS 目录：阅读位置双向同步，在 Kavita 上还可同步书签和批注（高亮与笔记）。Pro。",
           "bullet5Title": "任意 OPDS 目录",
-          "bullet5Body": "支持 OPDS 1.x 与 OPDS-PSE 分页流式传输，让漫画从 Calibre-Web、COPS、Ubooquity 或其他任何兼容服务器逐页加载。Pro。"
+          "bullet5Body": "支持 OPDS 1.x 与 OPDS-PSE 分页流式传输，让漫画从 Calibre-Web、COPS、Ubooquity 或其他任何兼容服务器逐页加载。Pro。",
+          "connectedTitle": "直连 SMB 和 OneDrive",
+          "connectedBody": "使用 Pro 在 iPhone 和 iPad 上直接浏览 SMB 共享文件夹和 OneDrive。直接从来源打开图书，或下载选定的图书离线阅读。受支持的阅读数据会同步到图书旁。"
         },
         "reading": {
           "eyebrow": "随心阅读",
@@ -403,7 +406,22 @@
           "bullet4Title": "实时漫画与漫画翻译",
           "bullet4Body": "设备端 OCR 识别对话框文字，并在阅读时把译文重新排版回原处。无需导出，无需第二个应用。Pro。",
           "bullet5Title": "跨页、翻页卷曲与日文竖排",
-          "bullet5Body": "双页跨页展示与日文竖排（EPUB 与漫画）均为免费功能。升级到 Pro 可解锁逼真的翻页卷曲效果。"
+          "bullet5Body": "双页跨页展示与日文竖排（EPUB 与漫画）均为免费功能。升级到 Pro 可解锁逼真的翻页卷曲效果。",
+          "displayFeatures": [
+            {
+              "title": "分格导航",
+              "body": "在 iPhone 和 iPad 上逐格阅读漫画压缩包、漫画 EPUB 和兼容的 PDF。"
+            },
+            {
+              "title": "页面色调",
+              "body": "使用 Pro 在 iPhone、iPad 和 Vision Pro 上调整 PDF、漫画压缩包和漫画 EPUB 页面的亮度、对比度、文字深浅和灰度。"
+            },
+            {
+              "title": "图像清理",
+              "body": "减轻漫画压缩包和漫画 EPUB 中的摩尔纹与噪点，或锐化扫描图像。使用 Pro 在 iPhone、iPad 和 Vision Pro 上预览去摩尔纹效果，包括平滑色调（AI）。"
+            }
+          ],
+          "videoAlt": "四个屏幕分别演示缩略导航图、连续阅读、翻页动画和分格导航。"
         },
         "streaming": {
           "eyebrow": "桌面书库串流到移动端",
@@ -580,7 +598,7 @@
       "appFeatures": [
         "EPUB、PDF、CBZ、CBR、RAR、ZIP 和 TXT 阅读器",
         "通过 Wi‑Fi 或 Tailscale 远程 5G，将 Mac 或 PC 家庭书库串流到 iPhone 和 iPad",
-        "iOS 通过桌面串流访问 SMB，Android 原生支持 SMB",
+        "使用 Pro 在 iPhone 和 iPad 上直接打开 SMB 和 OneDrive 书库。",
         "设备端压缩和合并，节省手机空间",
         "使用抽样页面感知哈希查找 CBZ、CBR、ZIP、RAR 重复项",
         "私密 WebAssembly 网页工具，本地浏览器处理",
@@ -1138,8 +1156,8 @@
         "buttonLabel": "服务器同步兼容性表",
         "eyebrow": "阅读器同步指南",
         "title": "按内容来源查看漫画阅读器同步兼容性",
-        "description": "比较 BiblioFuse 在 iCloud、OPDS、Kavita、Komga、Calibre Content Server 和 BiblioFuse Host 中对 TXT、EPUB、PDF、CBZ、CBR 的同步支持。",
-        "intro": "查看不同漫画和电子书内容来源是否同步阅读进度、书签、笔记与高亮、图书标签和评分。本表比较 iCloud、标准 OPDS、Kavita 与 Komga 原生集成、Calibre Content Server 和 BiblioFuse Host。",
+        "description": "比较 BiblioFuse 在 iCloud、SMB、OneDrive、OPDS、Kavita、Komga、Calibre Content Server 和 BiblioFuse Host 中对 TXT、EPUB、PDF、CBZ、CBR 的同步支持。",
+        "intro": "通过兼容的内容源，在不同设备之间同步阅读进度和其他阅读数据。请查看你的设备支持哪些内容源，以及各图书格式支持哪些同步项目。",
         "note": "绿色勾号表示该来源集成支持对应操作和格式；空白表示该集成不支持。支持情况可能取决于服务器能力，以及阅读位置能否在格式间可靠映射。Calibre Content Server 没有内置 PDF 阅读器，因此 PDF 列留空。",
         "formatList": "包含格式：TXT、EPUB、PDF、CBZ 和 CBR。",
         "sourcesHeading": "按内容来源查看同步兼容性",
@@ -1163,7 +1181,7 @@
         "breadcrumbCurrent": "同步兼容性",
         "backToReader": "返回 BiblioFuse Reader",
         "sources": [
-          "iCloud",
+          "iCloud / SMB / OneDrive",
           "标准 OPDS",
           "Kavita",
           "Komga",
@@ -1183,7 +1201,38 @@
             "q": "Calibre Content Server 会同步 PDF 阅读进度吗？",
             "a": "PDF 列留空，因为 Calibre Content Server 在此比较范围内没有内置 PDF 阅读器。Calibre 的其他勾选也仅适用于 BiblioFuse 能可靠映射的位置和格式。"
           }
-        ]
+        ],
+        "platformHeading": "各设备支持的同步来源",
+        "platforms": [
+          {
+            "devices": "iPhone 和 iPad",
+            "sources": "iCloud、SMB、OneDrive、Kavita、Komga、Calibre Content Server、BiblioFuse 主机"
+          },
+          {
+            "devices": "Apple Vision Pro",
+            "sources": "iCloud、Kavita、Komga、Calibre Content Server、BiblioFuse 主机"
+          },
+          {
+            "devices": "Android 手机和平板电脑",
+            "sources": "Kavita、Komga、Calibre Content Server、BiblioFuse 主机"
+          },
+          {
+            "devices": "Mac 和 Windows PC",
+            "sources": "iCloud（Windows PC 需使用 Windows 版 iCloud）"
+          }
+        ],
+        "overview": {
+          "heading": "同步如何运作",
+          "remote": "远程书库",
+          "direct": "直接从来源阅读",
+          "download": "托管下载",
+          "reconnect": "离线阅读，重新连接后同步。",
+          "sidecars": "伴随文件同步",
+          "keepTogether": "将图书和伴随文件保存在同一个图书或系列文件夹中。",
+          "optional": "用于存放笔记内嵌图片的可选文件夹。",
+          "api": "直接 API 同步",
+          "apiDetail": "通过服务器同步受支持的阅读数据。"
+        }
       }
     },
     "androidInterest": {

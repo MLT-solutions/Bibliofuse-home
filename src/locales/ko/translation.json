@@ -290,17 +290,18 @@
       },
       "secondHero": {
         "eyebrow": "스트리밍 및 동기화",
-        "titleA": "서재 전체를,",
-        "titleB": "내려받지 않고.",
-        "desc": "소장 자료는 지금 있는 곳에 그대로 두세요. Mac, PC, NAS의 BiblioFuse 호스트 앱, 직접 쓰는 iCloud Drive, 또는 OPDS·Komga·Kavita 서버에서 한 페이지씩 읽으면 됩니다. 읽던 위치는 기기를 옮겨도 그대로 이어집니다.",
+        "titleA": "라이브러리 전체를,",
+        "titleB": "저장된 위치에서 그대로",
+        "desc": "폴더, 클라우드 저장 공간 또는 서버에서 책을 읽으세요. 소스에서 지원하는 경우 원하는 책을 오프라인용으로 저장할 수 있습니다.",
         "cta": "무엇이 어디로 스트리밍되는지 보기",
         "bullets": [
-          "OPDS 1.x, OPDS-PSE, Komga, Kavita에 바로 연결 (Pro)",
+          "Pro를 사용하면 iPhone과 iPad에서 SMB 및 OneDrive 라이브러리를 바로 열 수 있습니다.",
+          "OPDS 카탈로그를 둘러보고 Komga, Kavita 또는 Calibre에 연결하세요.",
           "Mac, PC, Synology, Docker의 BiblioFuse 호스트 앱에서 스트리밍",
           "직접 쓰는 iCloud Drive에서 읽기 — 열 때 불러옵니다 (Pro)",
-          "읽던 위치와 북마크가 기기 간에 동기화됩니다",
-          "하이라이트와 메모를 추가·편집·삭제하고 기기 간에 동기화하세요"
-        ]
+          "동기화 지원 항목은 소스와 도서 형식에 따라 다릅니다."
+        ],
+        "syncCta": "동기화 가이드 보기"
       },
       "toolsStrip": {
         "eyebrow": "무료 브라우저 도구",
@@ -387,7 +388,9 @@
           "bullet4Title": "네이티브 Komga·Kavita 지원",
           "bullet4Body": "OPDS 피드만이 아니라 서버 자체 API에 직접 연결합니다. 읽기 위치가 양방향으로 동기화되고, Kavita에서는 북마크와 주석(하이라이트 및 메모)도 동기화됩니다. Pro.",
           "bullet5Title": "모든 OPDS 카탈로그",
-          "bullet5Body": "OPDS 1.x와 OPDS-PSE 페이지 스트리밍을 지원해, Calibre-Web, COPS, Ubooquity 등 지원 서버에서 만화를 한 페이지씩 불러옵니다. Pro."
+          "bullet5Body": "OPDS 1.x와 OPDS-PSE 페이지 스트리밍을 지원해, Calibre-Web, COPS, Ubooquity 등 지원 서버에서 만화를 한 페이지씩 불러옵니다. Pro.",
+          "connectedTitle": "SMB 및 OneDrive 직접 연결",
+          "connectedBody": "Pro를 사용하면 iPhone과 iPad에서 공유 SMB 폴더와 OneDrive를 바로 탐색할 수 있습니다. 소스에서 책을 바로 열거나 원하는 책을 다운로드해 오프라인에서 읽을 수 있습니다. 지원되는 독서 데이터는 책과 같은 위치에 동기화됩니다."
         },
         "reading": {
           "eyebrow": "당신의 방식으로 읽기",
@@ -403,7 +406,22 @@
           "bullet4Title": "실시간 만화·망가 번역",
           "bullet4Body": "기기 내 OCR이 말풍선을 인식해 읽는 그 자리에 번역을 다시 조판합니다. 내보내기 과정도, 두 번째 앱도 필요 없습니다. Pro.",
           "bullet5Title": "펼침면, 페이지 컬 넘김, 세로쓰기 일본어",
-          "bullet5Body": "펼침면 보기와 세로쓰기 EPUB·망가를 위한 올바른 세로쓰기 표시는 모두 무료입니다. Pro로 사실적인 페이지 컬 넘김을 추가할 수 있습니다."
+          "bullet5Body": "펼침면 보기와 세로쓰기 EPUB·망가를 위한 올바른 세로쓰기 표시는 모두 무료입니다. Pro로 사실적인 페이지 컬 넘김을 추가할 수 있습니다.",
+          "displayFeatures": [
+            {
+              "title": "패널 탐색",
+              "body": "iPhone 및 iPad에서 만화 아카이브, 만화 EPUB, 호환 PDF를 패널 단위로 읽을 수 있습니다."
+            },
+            {
+              "title": "페이지 톤",
+              "body": "Pro를 사용하면 iPhone, iPad, Vision Pro에서 PDF, 만화 아카이브, 만화 EPUB 페이지의 밝기, 대비, 글자 농도, 회색조를 조절할 수 있습니다."
+            },
+            {
+              "title": "이미지 정리",
+              "body": "만화 아카이브와 만화 EPUB에서 모아레와 노이즈를 줄이거나 스캔 이미지를 선명하게 만들 수 있습니다. Pro를 사용하면 iPhone, iPad, Vision Pro에서 부드러운 톤(AI)을 비롯한 모아레 감소 효과를 미리 볼 수 있습니다."
+            }
+          ],
+          "videoAlt": "미니맵, 연속 읽기, 페이지 넘김 애니메이션, 패널 탐색을 보여 주는 화면 네 개."
         },
         "streaming": {
           "eyebrow": "데스크톱에서 모바일로 스트리밍",
@@ -580,7 +598,7 @@
       "appFeatures": [
         "EPUB, PDF, CBZ, CBR, RAR, ZIP, TXT 리더",
         "Tailscale을 사용해 Mac 또는 PC 홈 라이브러리를 Wi‑Fi나 원격 5G로 iPhone/iPad에 스트리밍",
-        "iOS에서는 데스크톱 스트리밍을 통한 SMB, Android에서는 네이티브 SMB",
+        "Pro를 사용하면 iPhone과 iPad에서 SMB 및 OneDrive 라이브러리를 바로 열 수 있습니다.",
         "기기 내 압축 및 병합으로 휴대폰 저장 공간 절약",
         "샘플 이미지 페이지 perceptual hash로 CBZ, CBR, ZIP, RAR 중복 스캔",
         "로컬 브라우저 처리 기반 비공개 WebAssembly 웹 도구",
@@ -1138,8 +1156,8 @@
         "buttonLabel": "서버 동기화 호환성 표",
         "eyebrow": "리더 동기화 안내",
         "title": "콘텐츠 소스별 만화 리더 동기화 호환성",
-        "description": "iCloud, OPDS, Kavita, Komga, Calibre Content Server, BiblioFuse Host의 동기화를 TXT, EPUB, PDF, CBZ, CBR 형식별로 비교합니다.",
-        "intro": "만화와 전자책 콘텐츠 소스별로 읽기 진행률, 책갈피, 메모와 하이라이트, 책 태그, 평점이 동기화되는지 확인하세요. iCloud, 표준 OPDS, Kavita 및 Komga 네이티브 연동, Calibre Content Server, BiblioFuse Host를 비교합니다.",
+        "description": "iCloud, SMB, OneDrive, OPDS, Kavita, Komga, Calibre Content Server, BiblioFuse Host의 동기화를 TXT, EPUB, PDF, CBZ, CBR 형식별로 비교합니다.",
+        "intro": "호환되는 소스를 통해 읽던 위치와 기타 독서 데이터를 기기 간에 동기화할 수 있습니다. 기기별로 사용할 수 있는 소스와 도서 형식별 지원 항목을 확인하세요.",
         "note": "초록색 체크는 해당 연동이 작업과 형식의 동기화를 지원함을 뜻합니다. 빈칸은 지원하지 않습니다. 서버 기능과 형식 간 위치 매핑 검증에 따라 달라질 수 있습니다. Calibre Content Server에는 내장 PDF 리더가 없으므로 PDF 열은 비어 있습니다.",
         "formatList": "포함 형식: TXT, EPUB, PDF, CBZ, CBR.",
         "sourcesHeading": "콘텐츠 소스별 동기화 호환성",
@@ -1163,7 +1181,7 @@
         "breadcrumbCurrent": "동기화 호환성",
         "backToReader": "BiblioFuse Reader로 돌아가기",
         "sources": [
-          "iCloud",
+          "iCloud / SMB / OneDrive",
           "표준 OPDS",
           "Kavita",
           "Komga",
@@ -1183,7 +1201,38 @@
             "q": "Calibre Content Server는 PDF 읽기 진행률을 동기화하나요?",
             "a": "Calibre Content Server에는 내장 PDF 리더가 없어서 PDF 열은 비어 있습니다. 나머지 체크도 BiblioFuse가 위치를 정확하게 매핑할 수 있는 형식에 한정됩니다."
           }
-        ]
+        ],
+        "platformHeading": "기기별 동기화 소스",
+        "platforms": [
+          {
+            "devices": "iPhone 및 iPad",
+            "sources": "iCloud, SMB, OneDrive, Kavita, Komga, Calibre Content Server, BiblioFuse 호스트"
+          },
+          {
+            "devices": "Apple Vision Pro",
+            "sources": "iCloud, Kavita, Komga, Calibre Content Server, BiblioFuse 호스트"
+          },
+          {
+            "devices": "Android 휴대전화 및 태블릿",
+            "sources": "Kavita, Komga, Calibre Content Server, BiblioFuse 호스트"
+          },
+          {
+            "devices": "Mac 및 Windows PC",
+            "sources": "iCloud(Windows PC에서는 Windows용 iCloud 사용)"
+          }
+        ],
+        "overview": {
+          "heading": "동기화 방식",
+          "remote": "원격 라이브러리",
+          "direct": "소스에서 바로 읽기",
+          "download": "관리형 다운로드",
+          "reconnect": "오프라인에서 읽고 다시 연결되면 동기화합니다.",
+          "sidecars": "사이드카 파일 방식",
+          "keepTogether": "도서와 사이드카 파일을 도서별 또는 시리즈별 폴더에 함께 보관하세요.",
+          "optional": "노트에 삽입한 이미지를 저장하는 선택 폴더입니다.",
+          "api": "직접 API",
+          "apiDetail": "지원되는 독서 데이터가 서버를 통해 동기화됩니다."
+        }
       }
     },
     "androidInterest": {

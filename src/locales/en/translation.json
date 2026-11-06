@@ -361,15 +361,16 @@
       "secondHero": {
         "eyebrow": "Streaming & sync",
         "titleA": "Your whole library,",
-        "titleB": "nothing downloaded.",
-        "desc": "Leave the collection where it already lives — the BiblioFuse host app on your Mac, PC or NAS, your own iCloud Drive, or an OPDS, Komga or Kavita server — and read it a page at a time. Your reading position follows you from device to device.",
+        "titleB": "where it already lives.",
+        "desc": "Read books from your own folders, cloud storage, or servers. Stream from a BiblioFuse Host or connect directly to a supported library. Keep selected books offline with managed downloads where supported.",
         "cta": "See what streams where",
+        "syncCta": "See sync support by device and source",
         "bullets": [
-          "Connect straight to OPDS 1.x, OPDS-PSE, Komga or Kavita (Pro)",
+          "Connect directly to SMB folders and OneDrive on iPhone and iPad (Pro)",
+          "Connect to OPDS, Komga, Kavita or Calibre on supported devices (Pro)",
           "Stream from the BiblioFuse host app on Mac, PC, Synology or Docker",
-          "Read from your own iCloud Drive — books load when you open them (Pro)",
-          "Reading position and bookmarks stay in sync across your devices",
-          "Add, edit and delete highlights and notes, synced across your devices"
+          "Open books from your own iCloud Drive on supported devices",
+          "Sync reading progress, bookmarks, and annotations where your source and format support them"
         ]
       },
       "toolsStrip": {
@@ -519,6 +520,8 @@
           "bullet2Body": "every book remembers where you left off.",
           "bullet3Title": "iCloud cross-device",
           "bullet3Body": "pick up on iPhone where you stopped on iPad.",
+          "connectedTitle": "Direct SMB & OneDrive access",
+          "connectedBody": "Browse shared SMB folders and OneDrive directly on iPhone and iPad. Open books from the source or download selected titles for offline reading. Supported reading data syncs beside the book. Pro.",
           "imageAlt": "BiblioFuse library with tags, ratings and reading progress",
           "bullet4Title": "Native Komga & Kavita",
           "bullet4Body": "Connect straight to your server’s own API — not just an OPDS feed — with reading position syncing both ways, plus bookmark and annotation (highlight and note) sync on Kavita. Pro.",
@@ -535,11 +538,26 @@
           "bullet2Body": "paged or continuous, tuned for image archives.",
           "bullet3Title": "Peek zoom",
           "bullet3Body": "double-tap to inspect dense panels and small text.",
+          "displayFeatures": [
+            {
+              "title": "Panel Navigation",
+              "body": "Frame one panel at a time in reading order on iPhone and iPad. Available for comic archives, comic EPUBs, and compatible PDFs."
+            },
+            {
+              "title": "Page Tone",
+              "body": "Adjust brightness, contrast, text darkness, and grayscale for PDF, archive, and comic EPUB pages on iPhone, iPad, and Vision Pro. Pro."
+            },
+            {
+              "title": "Image Cleanup",
+              "body": "Reduce moiré and noise or sharpen scanned artwork in archives and comic EPUBs. Preview Reduce Moiré, including Smooth Tones (AI), on iPhone, iPad, and Vision Pro. Pro."
+            }
+          ],
           "imageAlt": "BiblioFuse reading view with TTS, auto-scroll and peek zoom",
           "bullet4Title": "Live comic & manga translation",
           "bullet4Body": "On-device OCR reads the balloon and typesets the translation back into it while you read. No export step, no second app. Pro.",
           "bullet5Title": "Spreads, page curl & vertical Japanese",
-          "bullet5Body": "Dual-page spreads for double-page art and proper tategaki for vertical EPUB and manga — both free. Add realistic page-curl page turns with Pro."
+          "bullet5Body": "Dual-page spreads for double-page art and proper tategaki for vertical EPUB and manga — both free. Add realistic page-curl page turns with Pro.",
+          "videoAlt": "Four screens showing the minimap, continuous reading, page curl, and Panel Navigation."
         },
         "streaming": {
           "eyebrow": "Desktop streams to mobile",
@@ -728,7 +746,7 @@
       "appFeatures": [
         "EPUB, PDF, CBZ, CBR, RAR, ZIP and TXT reader",
         "Mac or PC home library streaming to iPhone and iPad over Wi-Fi or remote 5G with Tailscale",
-        "SMB access through desktop streaming on iOS and native SMB on Android",
+        "Connect directly to SMB folders and OneDrive on iPhone and iPad (Pro)",
         "On-device compression and merge tools to save phone storage",
         "CBZ, CBR, ZIP and RAR duplicate scanner using sampled image-page perceptual hashing",
         "Private WebAssembly web tool with local browser processing",
@@ -1204,11 +1222,33 @@
         "buttonLabel": "Server Sync Compatibility Table",
         "eyebrow": "Book reader sync guide",
         "title": "Comic Reader Sync Compatibility by Content Source",
-        "description": "Compare BiblioFuse comic reader sync support for iCloud, OPDS, Kavita, Komga, Calibre Content Server, and BiblioFuse Host across TXT, EPUB, PDF, CBZ, and CBR.",
-        "intro": "See which reading progress, bookmarks, notes and highlights, book tags, and ratings sync for each comic and ebook content source. This server sync compatibility table compares iCloud, standard OPDS, native Kavita and Komga, Calibre Content Server, and BiblioFuse Host.",
+        "description": "Compare BiblioFuse comic reader sync support for iCloud, SMB, OneDrive, OPDS, Kavita, Komga, Calibre Content Server, and BiblioFuse Host across TXT, EPUB, PDF, CBZ, and CBR.",
+        "intro": "Start with your reading device, then check the tables below to see which actions and book formats sync with your source.",
+        "platformHeading": "Sync sources by device",
+        "platforms": [
+          {
+            "devices": "iPhone and iPad",
+            "sources": "iCloud, SMB, OneDrive, Kavita, Komga, Calibre Content Server, and BiblioFuse Host."
+          },
+          {
+            "devices": "Apple Vision Pro",
+            "sources": "iCloud, Kavita, Komga, Calibre Content Server, and BiblioFuse Host."
+          },
+          {
+            "devices": "Android phones and tablets",
+            "sources": "Kavita, Komga, Calibre Content Server, and BiblioFuse Host."
+          },
+          {
+            "devices": "Mac and Windows PC",
+            "sources": "iCloud Drive for local reading sync. On Windows, use iCloud for Windows."
+          }
+        ],
         "note": "A green check means the source integration supports that sync action and format. A blank cell means it is not supported by that integration. Server capabilities and verifiable format mapping can affect support. Calibre Content Server has no built-in PDF reader, so its PDF column is blank.",
         "formatList": "Formats covered: TXT, EPUB, PDF, CBZ, and CBR.",
         "sourcesHeading": "Sync compatibility by content source",
+        "overviewAlt": "BiblioFuse sync overview. Source readers and managed downloads sync through the remote library. iCloud, SMB, and OneDrive keep sidecar files beside the book. Kavita, Komga, Calibre, and BiblioFuse Host sync supported reading data through their server APIs. The sidecar assets folder is optional and holds embedded note images.",
+        "openOverview": "Open full-size sync overview",
+        "overviewCaption": "For sidecar sync, keep each book and its sidecars together in a book or series folder so they can move together.",
         "imageCaption": "Sync support by reading action and book format.",
         "imageAlt": "{{source}} comic reader sync compatibility table for reading progress, bookmarks, notes and highlights, book tags, and ratings across TXT, EPUB, PDF, CBZ, and CBR.",
         "openImage": "Open full-size compatibility table",
@@ -1229,7 +1269,7 @@
         "breadcrumbCurrent": "Sync compatibility",
         "backToReader": "Back to BiblioFuse Reader",
         "sources": [
-          "iCloud",
+          "iCloud / SMB / OneDrive",
           "Standard OPDS",
           "Kavita",
           "Komga",

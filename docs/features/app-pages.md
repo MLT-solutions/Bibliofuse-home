@@ -72,16 +72,27 @@ revisiting; it exists only because mlogictech.com wasn't ready.
 
 `src/pages/ReaderSyncCompatibility.jsx` serves the localized route
 `/:lang/comicreader/sync/`, linked by the CTA in the “One shelf for every format”
-feature row on `/comicreader/`. It presents one source card for iCloud, Standard OPDS,
-Kavita, Komga, Calibre Content Server, and BiblioFuse Host. Each card includes the
-localized compatibility graphic from `public/image/comicreader/sync-compatibility/`
-and an expandable semantic HTML table for screen readers and crawlers.
+feature row on `/comicreader/`. Each locale lists sync sources by reading device and
+opens the compatibility section with an overview of source reading, managed downloads,
+sidecar sync, and direct server API sync. The English guide links to the full-size
+overview artwork. The other locales render the overview as translated HTML.
+
+The first card groups iCloud, SMB, and OneDrive. English shows the updated graphic
+with an expandable data table. Other locales show the translated data table directly.
+The cards for Standard OPDS, Kavita, Komga, Calibre Content Server, and BiblioFuse Host
+use localized graphics and expandable semantic HTML tables.
 
 The route uses the `redesign.comicReaderPage.syncCompatibility` locale copy, FAQPage,
 ItemList, and BreadcrumbList schema, and the shared SEO component's canonical, Open Graph,
 and locale-indexing rules. Keep the route in the sitemap, static-route generator, and
 prerender allowlist. The graphics are 1600 × 1000 localized PNGs generated from the
 companion BiblioFuse iOS repository's source cards.
+
+The home page introduces direct SMB and OneDrive under Streaming & sync and links to
+the localized guide. The Reader landing page places those sources beside native Komga
+and Kavita in the library row. In every locale, the reading controls row introduces
+Panel Navigation for iPhone and iPad, including compatible streamed PDFs, and Page
+Tone and Image Cleanup for iPhone, iPad, and Vision Pro.
 
 ## Android request page
 The homepage Android demand CTA routes to `/:lang/androidrequest/` instead of opening
@@ -168,19 +179,16 @@ sister-app stubs (`/smartdecrypt`, `/contentcue`) still opt out.
 ### Reader feature media (`/comicreader/`)
 The comic-reader hero and first two feature rows use mixed-aspect marketing media
 under `public/image/comicreader/feature-summary/`: a transparent 4:3 all-device
-hero, a portrait library/shelf image, and a 4:3 navigation demo. The hero and video
+hero, a portrait library/shelf image, and a 16:9 navigation demo. The hero and video
 stay in open, transparency-friendly frames; the portrait image uses a constrained
 poster frame so its baked-in heading stays legible without dominating the copy.
-The navigation demo shows multiple reading styles, the minimap, continuous reading,
-and page-curl navigation.
+The ten-second navigation loop shows the minimap, continuous reading, page curl,
+and Panel Navigation on four screens side by side.
 
-The navigation demo keeps the supplied HEVC-alpha MP4 for Safari and includes a
-smaller H.264 opaque fallback plus a matching poster for browsers without HEVC-alpha
-support. `FeatureVideo` starts and pauses playback as the media enters/leaves the
+The navigation demo has a transparent HEVC MP4 for Safari, an opaque H.264 fallback,
+and a matching poster. `FeatureVideo` starts and pauses playback as the media enters/leaves the
 viewport, remains muted/inline/looping, exposes a visible play/pause control, and
-does not auto-start for visitors who prefer reduced motion. The video has no CSS
-drop-shadow, and its right edge clips 0.5% to hide the thin black strip encoded
-in the supplied source/fallback. The separate GUI demo is
+does not auto-start for visitors who prefer reduced motion. The separate GUI demo is
 not loaded on this already media-heavy page because it repeats the all-device hero
 story.
 

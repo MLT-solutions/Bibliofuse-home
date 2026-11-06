@@ -290,17 +290,18 @@
       },
       "secondHero": {
         "eyebrow": "ストリーミングと同期",
-        "titleA": "ライブラリ全体を、",
-        "titleB": "ダウンロードなしで。",
-        "desc": "コレクションは今ある場所のままで構いません。Mac、PC、NAS上のBiblioFuseホストアプリ、ご自身のiCloud Drive、あるいはOPDS・Komga・Kavitaサーバーから、1ページずつ読み進められます。読書位置は端末をまたいで引き継がれます。",
+        "titleA": "ライブラリのすべてを、",
+        "titleB": "今ある場所から",
+        "desc": "フォルダ、クラウドストレージ、サーバーから書籍を読めます。対応する接続先では、選んだ書籍をオフライン用に保存できます。",
         "cta": "何がどこでストリーミングできるか見る",
         "bullets": [
-          "OPDS 1.x、OPDS-PSE、Komga、Kavitaへ直接接続（Pro）",
+          "Pro なら iPhone と iPad で SMB と OneDrive のライブラリを直接開けます。",
+          "OPDS カタログを閲覧し、Komga、Kavita、Calibre に接続できます。",
           "Mac、PC、Synology、Docker上のBiblioFuseホストアプリからストリーミング",
           "ご自身のiCloud Driveから読む — 開いたときに読み込まれます（Pro）",
-          "読書位置とブックマークは端末間で同期されます",
-          "ハイライトとメモの追加・編集・削除ができ、デバイス間で同期されます"
-        ]
+          "同期できる項目は接続先と書籍形式によって異なります。"
+        ],
+        "syncCta": "同期ガイドを見る"
       },
       "toolsStrip": {
         "eyebrow": "無料のブラウザツール",
@@ -387,7 +388,9 @@
           "bullet4Title": "Komga・Kavitaネイティブ対応",
           "bullet4Body": "OPDSフィードだけでなく、サーバー独自のAPIに直接接続。読書位置は双方向に同期され、Kavitaではブックマークと注釈（ハイライトとメモ）も同期されます。Pro。",
           "bullet5Title": "任意のOPDSカタログ",
-          "bullet5Body": "OPDS 1.xとOPDS-PSEのページストリーミングに対応し、Calibre-Web、COPS、Ubooquityなど対応するサーバーからページ単位でコミックが読み込まれます。Pro。"
+          "bullet5Body": "OPDS 1.xとOPDS-PSEのページストリーミングに対応し、Calibre-Web、COPS、Ubooquityなど対応するサーバーからページ単位でコミックが読み込まれます。Pro。",
+          "connectedTitle": "SMB・OneDrive への直接アクセス",
+          "connectedBody": "Pro なら iPhone と iPad で共有 SMB フォルダと OneDrive を直接参照できます。接続先から直接開くことも、選んだ書籍をダウンロードしてオフラインで読むこともできます。対応する読書データは書籍と同じ場所に同期されます。"
         },
         "reading": {
           "eyebrow": "あなたの読み方で",
@@ -403,7 +406,22 @@
           "bullet4Title": "コミック・マンガのライブ翻訳",
           "bullet4Body": "端末上のOCRが吹き出しを読み取り、読んでいるその場に翻訳を組み直して表示します。書き出し不要、2つ目のアプリも不要です。Pro。",
           "bullet5Title": "見開き、ページカール、縦書き日本語",
-          "bullet5Body": "見開き表示と、縦書きEPUB・マンガ向けの正しいタテガキ表示はどちらも無料です。Proでリアルなページカールのめくりを追加できます。"
+          "bullet5Body": "見開き表示と、縦書きEPUB・マンガ向けの正しいタテガキ表示はどちらも無料です。Proでリアルなページカールのめくりを追加できます。",
+          "displayFeatures": [
+            {
+              "title": "コマナビゲーション",
+              "body": "iPhone と iPad でコミックアーカイブ、コミック EPUB、対応する PDF をコマごとに読めます。"
+            },
+            {
+              "title": "ページトーン",
+              "body": "Pro なら iPhone、iPad、Vision Pro で PDF、コミックアーカイブ、コミック EPUB の明るさ、コントラスト、文字の濃さ、グレースケールを調整できます。"
+            },
+            {
+              "title": "画像クリーンアップ",
+              "body": "コミックアーカイブやコミック EPUB のモアレやノイズを軽減し、スキャン画像をシャープにできます。Pro なら iPhone、iPad、Vision Pro で、スムーズトーン（AI）を含むモアレ軽減の効果をプレビューできます。"
+            }
+          ],
+          "videoAlt": "ミニマップ、連続表示、ページめくり、コマナビゲーションを 4 つの画面で紹介。"
         },
         "streaming": {
           "eyebrow": "デスクトップからモバイルへ",
@@ -580,7 +598,7 @@
       "appFeatures": [
         "EPUB、PDF、CBZ、CBR、RAR、ZIP、TXTリーダー",
         "MacまたはPCのホームライブラリを、Wi‑FiまたはTailscaleのリモート5GでiPhone/iPadへストリーミング",
-        "iOSではデスクトップストリーミング経由のSMB、AndroidではネイティブSMB",
+        "Pro なら iPhone と iPad で SMB と OneDrive のライブラリを直接開けます。",
         "端末上の圧縮・結合でスマホ容量を節約",
         "サンプル画像ページの知覚ハッシュでCBZ、CBR、ZIP、RARの重複を検出",
         "ローカルブラウザ処理のプライベートWebAssembly Webツール",
@@ -1138,8 +1156,8 @@
         "buttonLabel": "サーバー同期の対応表",
         "eyebrow": "リーダー同期ガイド",
         "title": "コンテンツソース別コミックリーダー同期対応表",
-        "description": "iCloud、OPDS、Kavita、Komga、Calibre Content Server、BiblioFuse Hostの同期機能を、TXT、EPUB、PDF、CBZ、CBR形式ごとに比較できます。",
-        "intro": "コミックや電子書籍の各コンテンツソースで、読書の進捗、ブックマーク、メモ／ハイライト、本のタグ、評価のどれが同期されるかを確認できます。iCloud、標準OPDS、Kavita・Komgaのネイティブ連携、Calibre Content Server、BiblioFuse Hostを比較します。",
+        "description": "iCloud、SMB、OneDrive、OPDS、Kavita、Komga、Calibre Content Server、BiblioFuse Hostの同期機能を、TXT、EPUB、PDF、CBZ、CBR形式ごとに比較できます。",
+        "intro": "対応する接続先を使って、読書位置やその他の読書データをデバイス間で同期できます。お使いのデバイスで利用できる接続先と、書籍形式ごとの対応状況をご確認ください。",
         "note": "緑のチェックは、その連携が該当操作と形式の同期に対応していることを示します。空欄は非対応です。サーバー機能や形式間で位置を正しく対応付けられるかによって異なる場合があります。Calibre Content ServerにはPDFリーダーが内蔵されていないため、PDF列は空欄です。",
         "formatList": "対象形式：TXT、EPUB、PDF、CBZ、CBR。",
         "sourcesHeading": "コンテンツソース別の同期対応",
@@ -1163,7 +1181,7 @@
         "breadcrumbCurrent": "同期対応",
         "backToReader": "BiblioFuse Readerに戻る",
         "sources": [
-          "iCloud",
+          "iCloud / SMB / OneDrive",
           "標準 OPDS",
           "Kavita",
           "Komga",
@@ -1183,7 +1201,38 @@
             "q": "Calibre Content ServerはPDFの読書位置を同期しますか？",
             "a": "Calibre Content Serverには内蔵PDFリーダーがないため、PDF列は空欄です。ほかのチェックも、BiblioFuseが位置を正しく対応付けられる形式に限られます。"
           }
-        ]
+        ],
+        "platformHeading": "デバイス別の同期先",
+        "platforms": [
+          {
+            "devices": "iPhone・iPad",
+            "sources": "iCloud、SMB、OneDrive、Kavita、Komga、Calibre Content Server、BiblioFuse ホスト"
+          },
+          {
+            "devices": "Apple Vision Pro",
+            "sources": "iCloud、Kavita、Komga、Calibre Content Server、BiblioFuse ホスト"
+          },
+          {
+            "devices": "Android スマートフォン・タブレット",
+            "sources": "Kavita、Komga、Calibre Content Server、BiblioFuse ホスト"
+          },
+          {
+            "devices": "Mac・Windows PC",
+            "sources": "iCloud（Windows PC では Windows 用 iCloud を使用）"
+          }
+        ],
+        "overview": {
+          "heading": "同期の仕組み",
+          "remote": "リモートライブラリ",
+          "direct": "接続先から直接読む",
+          "download": "管理対象のダウンロード",
+          "reconnect": "オフラインで読み、再接続時に同期します。",
+          "sidecars": "サイドカーファイル方式",
+          "keepTogether": "書籍とサイドカーファイルは、書籍またはシリーズごとに同じフォルダにまとめてください。",
+          "optional": "ノートに埋め込んだ画像を保存するオプションのフォルダです。",
+          "api": "API による直接同期",
+          "apiDetail": "対応する読書データをサーバー経由で同期します。"
+        }
       }
     },
     "androidInterest": {

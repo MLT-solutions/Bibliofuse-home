@@ -290,17 +290,18 @@
       },
       "secondHero": {
         "eyebrow": "Strim & penyegerakan",
-        "titleA": "Seluruh koleksi anda,",
-        "titleB": "tanpa memuat turun.",
-        "desc": "Biarkan koleksi anda di tempatnya — apl hos BiblioFuse pada Mac, PC atau NAS anda, iCloud Drive anda sendiri, atau pelayan OPDS, Komga mahupun Kavita — dan bacalah satu halaman pada satu masa. Kedudukan bacaan anda mengikut anda dari satu peranti ke satu peranti.",
+        "titleA": "Seluruh pustaka anda,",
+        "titleB": "di tempat ia disimpan",
+        "desc": "Baca daripada folder, storan awan atau pelayan anda. Simpan buku terpilih untuk bacaan luar talian jika sumber menyokongnya.",
         "cta": "Lihat apa yang boleh distrim",
         "bullets": [
-          "Sambung terus ke OPDS 1.x, OPDS-PSE, Komga atau Kavita (Pro)",
+          "Buka pustaka SMB dan OneDrive terus pada iPhone dan iPad dengan Pro.",
+          "Layari katalog OPDS dan sambung ke Komga, Kavita atau Calibre.",
           "Strim daripada apl hos BiblioFuse pada Mac, PC, Synology atau Docker",
           "Baca daripada iCloud Drive anda sendiri — buku dimuatkan apabila dibuka (Pro)",
-          "Kedudukan bacaan dan penanda buku kekal segerak merentas peranti anda",
-          "Tambah, edit dan padam serlahan serta nota, diselaraskan merentas peranti anda"
-        ]
+          "Sokongan penyegerakan bergantung pada sumber dan format buku."
+        ],
+        "syncCta": "Lihat panduan penyegerakan"
       },
       "toolsStrip": {
         "eyebrow": "Alat pelayar percuma",
@@ -387,7 +388,9 @@
           "bullet4Title": "Sokongan asli Komga & Kavita",
           "bullet4Body": "Sambung terus ke API pelayan anda sendiri, bukan sekadar suapan OPDS, dengan kedudukan bacaan diselaraskan dua hala, serta penyelarasan penanda buku dan anotasi (serlahan dan nota) pada Kavita. Pro.",
           "bullet5Title": "Mana-mana katalog OPDS",
-          "bullet5Body": "OPDS 1.x dengan strim halaman OPDS-PSE, supaya komik tiba satu halaman pada satu masa daripada Calibre-Web, COPS, Ubooquity atau mana-mana pelayan lain yang menyokongnya. Pro."
+          "bullet5Body": "OPDS 1.x dengan strim halaman OPDS-PSE, supaya komik tiba satu halaman pada satu masa daripada Calibre-Web, COPS, Ubooquity atau mana-mana pelayan lain yang menyokongnya. Pro.",
+          "connectedTitle": "Akses terus SMB dan OneDrive",
+          "connectedBody": "Layari folder kongsi SMB dan OneDrive terus pada iPhone dan iPad dengan Pro. Buka buku daripada sumber atau muat turun judul pilihan untuk bacaan luar talian. Data bacaan yang disokong disegerakkan di lokasi yang sama dengan buku."
         },
         "reading": {
           "eyebrow": "Baca mengikut cara anda",
@@ -403,7 +406,22 @@
           "bullet4Title": "Terjemahan komik dan manga langsung",
           "bullet4Body": "OCR pada peranti membaca belon teks dan menyusun semula terjemahan tepat di tempatnya semasa anda membaca. Tiada langkah eksport, tiada apl kedua. Pro.",
           "bullet5Title": "Halaman berkembar, lipatan halaman & bahasa Jepun menegak",
-          "bullet5Body": "Halaman berkembar untuk ilustrasi dua halaman dan tategaki yang betul untuk EPUB menegak serta manga, kedua-duanya percuma. Tambah lipatan halaman yang realistik dengan Pro."
+          "bullet5Body": "Halaman berkembar untuk ilustrasi dua halaman dan tategaki yang betul untuk EPUB menegak serta manga, kedua-duanya percuma. Tambah lipatan halaman yang realistik dengan Pro.",
+          "displayFeatures": [
+            {
+              "title": "Navigasi Panel",
+              "body": "Baca arkib komik, EPUB komik dan PDF yang serasi panel demi panel pada iPhone dan iPad."
+            },
+            {
+              "title": "Tona Halaman",
+              "body": "Laraskan kecerahan, kontras, kepekatan teks dan skala kelabu untuk halaman PDF, arkib komik dan EPUB komik pada iPhone, iPad dan Vision Pro dengan Pro."
+            },
+            {
+              "title": "Pembersihan Imej",
+              "body": "Kurangkan moiré dan hingar atau tajamkan imej imbasan dalam arkib dan EPUB komik. Pratonton pengurangan moiré, termasuk Tona Halus (AI), pada iPhone, iPad dan Vision Pro dengan Pro."
+            }
+          ],
+          "videoAlt": "Empat skrin menunjukkan peta mini, bacaan berterusan, animasi selak halaman dan Navigasi Panel."
         },
         "streaming": {
           "eyebrow": "Desktop strim ke mudah alih",
@@ -580,7 +598,7 @@
       "appFeatures": [
         "Pembaca EPUB, PDF, CBZ, CBR, RAR, ZIP dan TXT",
         "Strim pustaka rumah Mac atau PC ke iPhone dan iPad melalui Wi‑Fi atau 5G jauh dengan Tailscale",
-        "Akses SMB melalui strim desktop pada iOS dan SMB asli pada Android",
+        "Buka pustaka SMB dan OneDrive terus pada iPhone dan iPad dengan Pro.",
         "Pemampatan dan penggabungan pada peranti untuk menjimatkan ruang telefon",
         "Pengimbas pendua CBZ, CBR, ZIP dan RAR menggunakan hash persepsi halaman sampel",
         "Alat web WebAssembly peribadi dengan pemprosesan pelayar setempat",
@@ -1138,8 +1156,8 @@
         "buttonLabel": "Jadual keserasian penyegerakan pelayan",
         "eyebrow": "Panduan penyegerakan pembaca",
         "title": "Keserasian penyegerakan pembaca komik mengikut sumber kandungan",
-        "description": "Bandingkan penyegerakan BiblioFuse dengan iCloud, OPDS, Kavita, Komga, Calibre Content Server dan BiblioFuse Host untuk format TXT, EPUB, PDF, CBZ dan CBR.",
-        "intro": "Lihat sumber kandungan yang menyegerakkan kemajuan bacaan, penanda buku, nota dan sorotan, tag buku serta penilaian. Jadual ini membandingkan iCloud, OPDS standard, integrasi natif Kavita dan Komga, Calibre Content Server dan BiblioFuse Host.",
+        "description": "Bandingkan penyegerakan BiblioFuse dengan iCloud, SMB, OneDrive, OPDS, Kavita, Komga, Calibre Content Server dan BiblioFuse Host untuk format TXT, EPUB, PDF, CBZ dan CBR.",
+        "intro": "Segerakkan kedudukan bacaan dan data bacaan lain antara peranti melalui sumber yang serasi. Semak sumber yang tersedia pada peranti anda dan sokongan bagi setiap format buku.",
         "note": "Tanda semak hijau bermaksud integrasi sumber menyokong tindakan dan format tersebut. Ruang kosong bermaksud tidak disokong. Sokongan mungkin bergantung pada keupayaan pelayan dan pemetaan kedudukan yang boleh disahkan antara format. Calibre Content Server tidak mempunyai pembaca PDF terbina dalam, jadi lajur PDF kosong.",
         "formatList": "Format yang diliputi: TXT, EPUB, PDF, CBZ dan CBR.",
         "sourcesHeading": "Keserasian mengikut sumber kandungan",
@@ -1163,7 +1181,7 @@
         "breadcrumbCurrent": "Keserasian penyegerakan",
         "backToReader": "Kembali ke BiblioFuse Reader",
         "sources": [
-          "iCloud",
+          "iCloud / SMB / OneDrive",
           "OPDS standard",
           "Kavita",
           "Komga",
@@ -1183,7 +1201,38 @@
             "q": "Adakah Calibre Content Server menyegerakkan kemajuan bacaan PDF?",
             "a": "Lajur PDF kosong kerana Calibre Content Server tidak mempunyai pembaca PDF terbina dalam untuk perbandingan ini. Tanda Calibre yang lain terhad kepada format dan kedudukan yang boleh dipetakan oleh BiblioFuse."
           }
-        ]
+        ],
+        "platformHeading": "Sumber penyegerakan mengikut peranti",
+        "platforms": [
+          {
+            "devices": "iPhone dan iPad",
+            "sources": "iCloud, SMB, OneDrive, Kavita, Komga, Calibre Content Server, Hos BiblioFuse"
+          },
+          {
+            "devices": "Apple Vision Pro",
+            "sources": "iCloud, Kavita, Komga, Calibre Content Server, Hos BiblioFuse"
+          },
+          {
+            "devices": "Telefon dan tablet Android",
+            "sources": "Kavita, Komga, Calibre Content Server, Hos BiblioFuse"
+          },
+          {
+            "devices": "Mac dan PC Windows",
+            "sources": "iCloud, dengan iCloud untuk Windows pada PC"
+          }
+        ],
+        "overview": {
+          "heading": "Cara penyegerakan berfungsi",
+          "remote": "Pustaka jauh",
+          "direct": "Baca terus daripada sumber",
+          "download": "Muat turun terurus",
+          "reconnect": "Baca di luar talian dan segerakkan apabila disambungkan semula.",
+          "sidecars": "Sistem fail sampingan",
+          "keepTogether": "Simpan buku dan fail sampingannya bersama-sama dalam folder buku atau siri.",
+          "optional": "Folder pilihan untuk imej yang dibenamkan dalam nota.",
+          "api": "API langsung",
+          "apiDetail": "Data bacaan yang disokong disegerakkan melalui pelayan."
+        }
       }
     },
     "androidInterest": {
