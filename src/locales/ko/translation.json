@@ -2241,6 +2241,8 @@
     "noResults": "해당 필터에 맞는 기능이 없습니다.",
     "noResultsHint": "더 짧게 검색하거나 필터를 초기화해 보세요.",
     "legendShipped": "사용 가능",
+    "legendReview": "App Store 심사 중",
+    "submittedVersion": "{{version}} · App Store 심사 중",
     "legendPartial": "부분 지원",
     "legendMerged": "미배포",
     "legendNa": "이 플랫폼에는 없음",
@@ -2268,6 +2270,50 @@
       "tvosPartialLocale": "UI 일부만 번역됨"
     },
     "features": {
+      "panel-navigation": {
+        "label": "패널 탐색",
+        "note": "만화 아카이브, 만화 EPUB 및 지원되는 PDF를 한 컷씩 읽습니다."
+      },
+      "page-tone": {
+        "label": "페이지 톤",
+        "note": "책마다 밝기, 대비, 글자 농도, 회색조를 조절합니다."
+      },
+      "image-cleanup": {
+        "label": "이미지 보정",
+        "note": "만화의 모아레와 노이즈를 줄이거나 선명도를 높입니다. Smooth Tones(AI) 포함."
+      },
+      "txt-chapter-controls": {
+        "label": "TXT 챕터 설정",
+        "note": "책마다 챕터 이름과 감지 설정을 조절합니다."
+      },
+      "smb-onedrive": {
+        "label": "SMB 및 OneDrive 라이브러리 직접 연결",
+        "note": "SMB와 OneDrive 폴더를 탐색합니다. 지원되는 읽기 데이터는 책 옆에 동기화됩니다."
+      },
+      "folder-download-sync": {
+        "label": "폴더 다운로드 및 다운로드됨 필터",
+        "note": "폴더를 다운로드하고 동기화하며 오프라인 사본을 필터링합니다."
+      },
+      "library-fast-scroll": {
+        "label": "라이브러리 빠른 스크롤",
+        "note": "스크롤 핸들을 끌어 큰 라이브러리를 빠르게 이동합니다."
+      },
+      "calibre-qr-password": {
+        "label": "QR로 Calibre 암호 가져오기",
+        "note": "BiblioFuse 서버 QR 코드를 스캔해 로그인 정보를 가져옵니다."
+      },
+      "calibre-sync": {
+        "label": "Calibre Content Server 동기화",
+        "note": "형식에 따라 지원되는 진행 위치, 책갈피 및 주석을 동기화합니다."
+      },
+      "managed-offline-sync": {
+        "label": "다운로드 양방향 동기화",
+        "note": "다시 연결되면 오프라인 변경사항을 Kavita, Komga, Calibre 및 BiblioFuse Host에 동기화합니다."
+      },
+      "catalog-recent": {
+        "label": "여러 서버의 최근 읽기",
+        "note": "설정된 카탈로그 서버의 읽기 활동을 최근 목록에서 함께 봅니다."
+      },
       "live-translation": {
         "label": "만화 실시간 번역",
         "note": "온디바이스 PP-OCRv5, 말풍선에 조판"

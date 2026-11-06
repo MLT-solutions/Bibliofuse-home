@@ -2241,6 +2241,8 @@
     "noResults": "条件に一致する機能はありません。",
     "noResultsHint": "検索語を短くするか、フィルターをリセットしてください。",
     "legendShipped": "利用可能",
+    "legendReview": "App Storeで審査中",
+    "submittedVersion": "App Storeで審査中 · {{version}}",
     "legendPartial": "一部利用可能",
     "legendMerged": "未リリース",
     "legendNa": "このプラットフォームでは非対応",
@@ -2268,6 +2270,50 @@
       "tvosPartialLocale": "UIは一部のみ翻訳"
     },
     "features": {
+      "panel-navigation": {
+        "label": "コマ送り",
+        "note": "コミックアーカイブ、コミックEPUB、対応PDFをコマごとに読み進めます。"
+      },
+      "page-tone": {
+        "label": "ページの色調",
+        "note": "明るさ、コントラスト、文字の濃さ、グレースケールを書籍ごとに調整できます。"
+      },
+      "image-cleanup": {
+        "label": "画像補正",
+        "note": "コミックのモアレやノイズを減らし、シャープさを調整できます。Smooth Tones（AI）対応。"
+      },
+      "txt-chapter-controls": {
+        "label": "TXTの章設定",
+        "note": "章タイトルと章の検出方法を書籍ごとに設定できます。"
+      },
+      "smb-onedrive": {
+        "label": "SMB・OneDriveライブラリに直接接続",
+        "note": "SMBとOneDriveのフォルダを閲覧し、対応する読書データを書籍と同じ場所に同期します。"
+      },
+      "folder-download-sync": {
+        "label": "フォルダのダウンロードとダウンロード済みフィルター",
+        "note": "フォルダをダウンロードして同期し、オフラインの本に絞り込めます。"
+      },
+      "library-fast-scroll": {
+        "label": "ライブラリの高速スクロール",
+        "note": "スクロールハンドルをドラッグして大きなライブラリを移動できます。"
+      },
+      "calibre-qr-password": {
+        "label": "QRでCalibreのパスワードを読み込み",
+        "note": "BiblioFuseのサーバーQRコードからログイン情報を読み込めます。"
+      },
+      "calibre-sync": {
+        "label": "Calibre Content Serverとの同期",
+        "note": "形式に応じて、対応する読書位置、ブックマーク、注釈を同期します。"
+      },
+      "managed-offline-sync": {
+        "label": "ダウンロードの双方向同期",
+        "note": "再接続時にオフラインの変更をKavita、Komga、Calibre、BiblioFuse Hostに同期します。"
+      },
+      "catalog-recent": {
+        "label": "複数サーバーの最近読んだ本",
+        "note": "設定済みのカタログサーバーの読書履歴をまとめて表示します。"
+      },
       "live-translation": {
         "label": "マンガのライブ翻訳",
         "note": "端末内 PP-OCRv5、吹き出しに組み直し"

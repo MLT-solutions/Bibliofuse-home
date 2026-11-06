@@ -2241,6 +2241,8 @@
     "noResults": "Nenhum recurso corresponde a esses filtros.",
     "noResultsHint": "Tente uma busca mais curta ou redefina os filtros.",
     "legendShipped": "Disponível",
+    "legendReview": "Em revisão na App Store",
+    "submittedVersion": "{{version}} · Em revisão na App Store",
     "legendPartial": "Parcialmente disponível",
     "legendMerged": "Ainda não lançado",
     "legendNa": "Não está nesta plataforma",
@@ -2268,6 +2270,50 @@
       "tvosPartialLocale": "Interface parcialmente traduzida"
     },
     "features": {
+      "panel-navigation": {
+        "label": "Navegação por quadros",
+        "note": "Leia um quadro de cada vez em arquivos de quadrinhos, EPUBs de quadrinhos e PDFs compatíveis."
+      },
+      "page-tone": {
+        "label": "Tom da página",
+        "note": "Ajuste o brilho, o contraste, a intensidade do texto e os tons de cinza por livro."
+      },
+      "image-cleanup": {
+        "label": "Limpeza de imagem",
+        "note": "Reduza o moiré e o ruído ou aumente a nitidez dos quadrinhos. Inclui Tons suaves (IA)."
+      },
+      "txt-chapter-controls": {
+        "label": "Controles de capítulos TXT",
+        "note": "Personalize os títulos e a detecção dos capítulos por livro."
+      },
+      "smb-onedrive": {
+        "label": "Bibliotecas diretas SMB e OneDrive",
+        "note": "Explore pastas SMB e OneDrive. Os dados compatíveis são sincronizados ao lado do livro."
+      },
+      "folder-download-sync": {
+        "label": "Download de pastas e filtro Baixados",
+        "note": "Baixe e sincronize pastas e filtre as cópias offline."
+      },
+      "library-fast-scroll": {
+        "label": "Rolagem rápida da biblioteca",
+        "note": "Arraste a barra de rolagem para navegar em bibliotecas grandes."
+      },
+      "calibre-qr-password": {
+        "label": "Importação de senha do Calibre por QR",
+        "note": "Escaneie um QR de servidor do BiblioFuse para importar os dados de acesso."
+      },
+      "calibre-sync": {
+        "label": "Sincronização com Calibre Content Server",
+        "note": "Sincronize progresso, marcadores e anotações compatíveis conforme o formato."
+      },
+      "managed-offline-sync": {
+        "label": "Sincronização bidirecional de downloads",
+        "note": "Sincronize alterações offline com Kavita, Komga, Calibre e BiblioFuse Host ao reconectar."
+      },
+      "catalog-recent": {
+        "label": "Recentes de vários servidores",
+        "note": "Veja em Recentes a atividade dos servidores de catálogo configurados."
+      },
       "live-translation": {
         "label": "Tradução ao vivo de quadrinhos e mangá",
         "note": "PP-OCRv5 no dispositivo, composto no balão"

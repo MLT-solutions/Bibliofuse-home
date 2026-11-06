@@ -20,6 +20,7 @@
 //   platforms  keyed by PLATFORMS[].id:
 //     status   'shipped'  in a public release on that platform
 //              'partial'  shipped, with the limitation stated in `note`
+//              'review'   submitted for store review on that platform
 //              'merged'   in main, NOT in a released build for that platform yet
 //              'na'       not applicable, or not built for that platform
 //     since    ISO date the work landed in main. Null for 'na'.
@@ -84,10 +85,10 @@
 // English (OPDS, RTL, tategaki, CBZ) whatever language the UI is in.
 
 export const PLATFORMS = [
-  { id: 'ios', label: 'iOS / iPadOS', version: '2.1.13', family: 'apple' },
-  { id: 'watchos', label: 'Apple Watch', version: '', family: 'apple' },
+  { id: 'ios', label: 'iOS / iPadOS', version: '2.1.18', family: 'apple' },
+  { id: 'watchos', label: 'Apple Watch', version: '2.1.16', family: 'apple' },
   { id: 'macos', label: 'macOS', version: '2.1.9', family: 'apple' },
-  { id: 'visionos', label: 'visionOS', version: '2.1.12', family: 'apple' },
+  { id: 'visionos', label: 'visionOS', version: '2.1.15', family: 'apple' },
   { id: 'tvos', label: 'tvOS', version: '2.1.7', family: 'apple' },
   { id: 'android', label: 'Android', version: '2.0.15', family: 'android' },
   { id: 'androidtv', label: 'Android TV', version: '2.0.15', family: 'android' },
@@ -107,18 +108,19 @@ export const GROUPS = [
 // Release ladders: [version, date it became available]. Ascending by date.
 // Only releases that exist on that platform's store record or release commits.
 //
-// Updated 2026-10-14 for the 2.1.15 / 2.0.16 / 1.0.18.0 / 0.1.13 round. By product
-// decision the site does not track review state: a version is entered once it has been
-// submitted, so the matrix is not re-edited when a store approves it. At this date
-// macOS, visionOS and tvOS 2.1.15 were still in App Review.
+// Keep submissions separate from publicly available releases.
+export const SUBMITTED_RELEASES = { ios: '2.1.19' };
+
 export const RELEASES = {
   ios: [
     ['2.0.1', '2026-05-13'], ['2.0.2', '2026-05-26'], ['2.0.3', '2026-06-02'],
     ['2.0.5', '2026-06-14'], ['2.1.1', '2026-06-26'], ['2.1.2', '2026-07-02'],
     ['2.1.3', '2026-07-08'], ['2.1.4', '2026-07-16'], ['2.1.7', '2026-07-27'],
     ['2.1.8', '2026-08-06'], ['2.1.13', '2026-09-09'], ['2.1.14', '2026-10-05'],
-    ['2.1.15', '2026-10-12'],
+    ['2.1.15', '2026-10-12'], ['2.1.16', '2026-10-28'],
+    ['2.1.17', '2026-11-01'], ['2.1.18', '2026-11-02'],
   ],
+  watchos: [['2.1.16', '2026-10-28']],
   macos: [
     ['2.0.1', '2026-05-09'], ['2.0.2', '2026-05-26'], ['2.0.5', '2026-06-14'],
     ['2.0.6', '2026-06-16'], ['2.1.0', '2026-06-26'], ['2.1.1', '2026-06-29'],
@@ -290,6 +292,7 @@ export const SPECS = [
 const s = (since, noteKey = null) => ({ status: 'shipped', since, noteKey });
 const p = (since, noteKey) => ({ status: 'partial', since, noteKey });
 const m = (since) => ({ status: 'merged', since, noteKey: null });
+const r = (since) => ({ status: 'review', since, noteKey: null });
 const na = { status: 'na', since: null, noteKey: null };
 
 export const FEATURES = [
@@ -301,7 +304,7 @@ export const FEATURES = [
     pro: false,
     aliases: ['watchOS', 'Watch', 'wrist', 'library', 'browse'],
     platforms: {
-      ios: na, watchos: m('2026-10-28'), macos: na, visionos: na,
+      ios: na, watchos: s('2026-10-28'), macos: na, visionos: na,
       tvos: na, android: na, androidtv: na, windows: na, nas: na,
     },
   },
@@ -313,7 +316,7 @@ export const FEATURES = [
     pro: false,
     aliases: ['watchOS', 'Watch', 'wrist', 'TTS', 'text to speech', 'comic remote'],
     platforms: {
-      ios: na, watchos: m('2026-10-28'), macos: na, visionos: na,
+      ios: na, watchos: s('2026-10-28'), macos: na, visionos: na,
       tvos: na, android: na, androidtv: na, windows: na, nas: na,
     },
   },
@@ -383,6 +386,42 @@ export const FEATURES = [
   },
 
   // ── Reading ────────────────────────────────────────────────────────────────
+  {
+    id: 'panel-navigation',
+    group: 'reading',
+    label: 'Panel Navigation',
+    note: 'Follow one panel at a time in comic archives, comic EPUBs and supported PDFs.',
+    pro: false,
+    aliases: ['guided view', 'manga', 'PDF'],
+    platforms: { ios: r('2026-11-04') },
+  },
+  {
+    id: 'page-tone',
+    group: 'reading',
+    label: 'Page Tone',
+    note: 'Adjust brightness, contrast, text darkness and grayscale per book for PDF and comic pages.',
+    pro: true,
+    aliases: ['contrast', 'brightness', 'grayscale', 'presets'],
+    platforms: { ios: r('2026-11-04'), visionos: m('2026-11-04') },
+  },
+  {
+    id: 'image-cleanup',
+    group: 'reading',
+    label: 'Image Cleanup',
+    note: 'Reduce moiré and noise or sharpen comic archives and comic EPUBs. Includes Smooth Tones (AI).',
+    pro: true,
+    aliases: ['descreen', 'screentone', 'moire', 'sharpen'],
+    platforms: { ios: r('2026-11-04'), visionos: m('2026-11-04') },
+  },
+  {
+    id: 'txt-chapter-controls',
+    group: 'reading',
+    label: 'TXT chapter controls',
+    note: 'Recognize headings in more languages and customize chapter labels and detection per book.',
+    pro: false,
+    aliases: ['plain text', 'contents', 'chapter detection'],
+    platforms: { ios: s('2026-10-24') },
+  },
   {
     id: 'live-translation',
     group: 'reading',
@@ -603,6 +642,51 @@ export const FEATURES = [
 
   // ── Libraries & servers ────────────────────────────────────────────────────
   {
+    id: 'smb-onedrive',
+    group: 'libraries',
+    label: 'Direct SMB & OneDrive libraries',
+    note: 'Browse SMB and OneDrive folders. Supported reading data syncs beside the book.',
+    pro: true,
+    aliases: ['network share', 'cloud storage', 'sidecar'],
+    platforms: { ios: r('2026-11-04') },
+  },
+  {
+    id: 'folder-download-sync',
+    group: 'libraries',
+    label: 'Folder downloads & Downloaded filter',
+    note: 'Download and sync folders, browse Downloads by folder and filter for offline copies.',
+    pro: true,
+    aliases: ['download and sync', 'batch', 'offline'],
+    platforms: { ios: r('2026-11-04') },
+  },
+  {
+    id: 'library-fast-scroll',
+    group: 'libraries',
+    label: 'Library fast scroll',
+    note: 'Drag the scroll handle to move through large libraries across content sources.',
+    pro: false,
+    aliases: ['scrollbar', 'shelf'],
+    platforms: { ios: r('2026-11-05') },
+  },
+  {
+    id: 'calibre-qr-password',
+    group: 'libraries',
+    label: 'Calibre password import by QR',
+    note: 'Scan a BiblioFuse server QR code to import Calibre login details.',
+    pro: true,
+    aliases: ['server setup', 'credentials', 'sign-in'],
+    platforms: { ios: r('2026-11-02') },
+  },
+  {
+    id: 'catalog-recent',
+    group: 'libraries',
+    label: 'Recent across catalog servers',
+    note: 'See reading activity from configured catalog servers together in Recent.',
+    pro: true,
+    aliases: ['continue reading', 'on deck', 'keep reading'],
+    platforms: { ios: s('2026-10-24') },
+  },
+  {
     id: 'komga-kavita-native',
     group: 'libraries',
     label: 'Native Komga & Kavita API',
@@ -637,6 +721,24 @@ export const FEATURES = [
       windows: na,
       nas: na,
     },
+  },
+  {
+    id: 'calibre-sync',
+    group: 'sync',
+    label: 'Calibre Content Server sync',
+    note: 'Sync supported progress, bookmarks, highlights and notes. Support varies by format and location mapping.',
+    pro: true,
+    aliases: ['calibre api', 'reading position', 'annotations'],
+    platforms: { ios: s('2026-10-28'), visionos: m('2026-10-28') },
+  },
+  {
+    id: 'managed-offline-sync',
+    group: 'sync',
+    label: 'Two-way sync for managed downloads',
+    note: 'Sync supported offline edits with Kavita, Komga, Calibre and BiblioFuse Host after reconnecting.',
+    pro: false,
+    aliases: ['managed downloads', 'offline', 'sync now'],
+    platforms: { ios: s('2026-11-01') },
   },
   {
     id: 'kavita-sync',

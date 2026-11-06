@@ -199,7 +199,7 @@ annotation sync.
 ### Apple Watch companion section (`/comicreader/`, added 2026-10-28)
 `WatchCompanion` follows the library-hub streaming feature row and precedes ToolsHighlight. It uses the approved localized compositions under `public/image/home/watch-companion/`; website `pt` uses `pt-BR.jpg` and website `zh` uses `zh-Hans.jpg`. Copy describes Apple Watch as a companion that browses libraries served by the paired iPhone and controls iPhone Read Aloud plus a comic already open on iPhone. It states that book access, speech playback and comic pages stay on iPhone; it does not claim standalone Watch reading/audio or universal OPDS/Calibre Recent support.
 
-`/features/` adds Apple Watch as a platform and two Watch-only rows for library browsing and iPhone reading controls. Their `merged` status is based on `bibliofuse_iosv2` commit `432d555` (2026-10-28) and reflects that the Watch code is in `main` but the companion is still prepared for the 2.1.16 release, not a public release. Other platforms default to not applicable for these rows.
+`/features/` lists Apple Watch library browsing and iPhone reading controls as available from 2.1.16, based on the public App Store release and `bibliofuse_iosv2` commit `432d555`.
 
 ### iPhone Duo section (`/comicreader/`, added 2026-10-14)
 `DuoSection` (inline in `ComicReader.jsx`, rendered after the feature rows and directly
@@ -580,6 +580,14 @@ links) replaced an 11-row `ComparisonTable`. Eight of those rows already existed
 `formats` group plus two features: read-format support (CBR appeared nowhere in the matrix
 at all), iCloud bookshelf, and localised interface. `/features/` is now the single source
 for per-platform capability; the chooser only answers "which one do I download".
+
+The matrix distinguishes submitted builds from public releases. iOS 2.1.19
+(build 138, source through `e8ad86ae`) is labeled **In App Review** and appears in
+the default view alongside public iOS 2.1.18. Its rows cover Panel Navigation,
+Page Tone, Image Cleanup, SMB and OneDrive, folder downloads and the Downloaded
+filter, fast library scrolling, and Calibre QR password import. The review status
+applies to iOS and iPadOS. The visionOS Page Tone and Image Cleanup cells remain
+behind the unreleased filter until a visionOS build is submitted.
 
 `redesign.home.table` was renamed `redesign.comicReaderPage.editions` - it had not been on
 the homepage for some time and the old key misled.

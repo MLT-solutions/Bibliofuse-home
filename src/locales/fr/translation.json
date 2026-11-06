@@ -2241,6 +2241,8 @@
     "noResults": "Aucune fonction ne correspond à ces filtres.",
     "noResultsHint": "Essayez une recherche plus courte ou réinitialisez les filtres.",
     "legendShipped": "Disponible",
+    "legendReview": "En cours de validation par l’App Store",
+    "submittedVersion": "{{version}} · En cours de validation par l’App Store",
     "legendPartial": "Partiellement disponible",
     "legendMerged": "Pas encore publié",
     "legendNa": "Absent de cette plateforme",
@@ -2268,6 +2270,50 @@
       "tvosPartialLocale": "Interface partiellement traduite"
     },
     "features": {
+      "panel-navigation": {
+        "label": "Navigation par case",
+        "note": "Lisez une case à la fois dans les archives BD, les EPUB BD et les PDF compatibles."
+      },
+      "page-tone": {
+        "label": "Tonalité de page",
+        "note": "Réglez la luminosité, le contraste, la noirceur du texte et les niveaux de gris par livre."
+      },
+      "image-cleanup": {
+        "label": "Nettoyage d’image",
+        "note": "Réduisez le moiré et le bruit ou améliorez la netteté des BD. Inclut Tons lisses (IA)."
+      },
+      "txt-chapter-controls": {
+        "label": "Réglages des chapitres TXT",
+        "note": "Personnalisez les titres et la détection des chapitres pour chaque livre."
+      },
+      "smb-onedrive": {
+        "label": "Bibliothèques SMB et OneDrive en accès direct",
+        "note": "Parcourez les dossiers SMB et OneDrive. Les données compatibles sont synchronisées à côté du livre."
+      },
+      "folder-download-sync": {
+        "label": "Téléchargement de dossiers et filtre Téléchargés",
+        "note": "Téléchargez et synchronisez des dossiers et filtrez les copies hors ligne."
+      },
+      "library-fast-scroll": {
+        "label": "Défilement rapide de la bibliothèque",
+        "note": "Faites glisser la poignée pour parcourir les grandes bibliothèques."
+      },
+      "calibre-qr-password": {
+        "label": "Import du mot de passe Calibre par QR",
+        "note": "Scannez un QR de serveur BiblioFuse pour importer les identifiants."
+      },
+      "calibre-sync": {
+        "label": "Synchronisation avec Calibre Content Server",
+        "note": "Synchronisez la progression, les signets et les annotations compatibles selon le format."
+      },
+      "managed-offline-sync": {
+        "label": "Synchronisation bidirectionnelle des téléchargements",
+        "note": "Synchronisez les modifications hors ligne avec Kavita, Komga, Calibre et BiblioFuse Host à la reconnexion."
+      },
+      "catalog-recent": {
+        "label": "Lectures récentes de plusieurs serveurs",
+        "note": "Retrouvez l’activité des serveurs de catalogue configurés dans Récents."
+      },
       "live-translation": {
         "label": "Traduction BD et manga en direct",
         "note": "PP-OCRv5 sur l’appareil, composé dans la bulle"

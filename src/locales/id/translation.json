@@ -2241,6 +2241,8 @@
     "noResults": "Tidak ada fitur yang cocok dengan filter itu.",
     "noResultsHint": "Coba kata kunci lebih singkat, atau atur ulang filter.",
     "legendShipped": "Tersedia",
+    "legendReview": "Dalam peninjauan App Store",
+    "submittedVersion": "{{version}} · Dalam peninjauan App Store",
     "legendPartial": "Tersedia sebagian",
     "legendMerged": "Belum dirilis",
     "legendNa": "Tidak ada di platform ini",
@@ -2268,6 +2270,50 @@
       "tvosPartialLocale": "Antarmuka diterjemahkan sebagian"
     },
     "features": {
+      "panel-navigation": {
+        "label": "Navigasi panel",
+        "note": "Baca satu panel demi satu pada arsip komik, EPUB komik, dan PDF yang didukung."
+      },
+      "page-tone": {
+        "label": "Nuansa halaman",
+        "note": "Atur kecerahan, kontras, kegelapan teks, dan skala abu-abu per buku."
+      },
+      "image-cleanup": {
+        "label": "Pembersihan gambar",
+        "note": "Kurangi moiré dan derau atau pertajam komik. Termasuk Smooth Tones (AI)."
+      },
+      "txt-chapter-controls": {
+        "label": "Kontrol bab TXT",
+        "note": "Sesuaikan judul dan deteksi bab untuk setiap buku."
+      },
+      "smb-onedrive": {
+        "label": "Pustaka SMB dan OneDrive langsung",
+        "note": "Jelajahi folder SMB dan OneDrive. Data yang didukung disinkronkan di samping buku."
+      },
+      "folder-download-sync": {
+        "label": "Unduhan folder dan filter Terunduh",
+        "note": "Unduh dan sinkronkan folder serta filter salinan luring."
+      },
+      "library-fast-scroll": {
+        "label": "Gulir pustaka cepat",
+        "note": "Tarik pegangan gulir untuk menjelajahi pustaka besar."
+      },
+      "calibre-qr-password": {
+        "label": "Impor sandi Calibre melalui QR",
+        "note": "Pindai kode QR server BiblioFuse untuk mengimpor detail masuk."
+      },
+      "calibre-sync": {
+        "label": "Sinkronisasi Calibre Content Server",
+        "note": "Sinkronkan progres, penanda, dan anotasi yang didukung sesuai format."
+      },
+      "managed-offline-sync": {
+        "label": "Sinkronisasi dua arah untuk unduhan",
+        "note": "Sinkronkan perubahan luring dengan Kavita, Komga, Calibre, dan BiblioFuse Host saat terhubung kembali."
+      },
+      "catalog-recent": {
+        "label": "Terbaru dari berbagai server",
+        "note": "Lihat aktivitas baca dari server katalog yang dikonfigurasi di Terbaru."
+      },
       "live-translation": {
         "label": "Terjemahan komik & manga langsung",
         "note": "PP-OCRv5 di perangkat, ditata ulang dalam balon"

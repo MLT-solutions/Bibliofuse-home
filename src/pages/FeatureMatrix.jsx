@@ -9,6 +9,7 @@ import {
   searchFeatures,
   searchIndex,
   releaseFor,
+  SUBMITTED_RELEASES,
   SPECS,
   STORES,
 } from '../data/feature-matrix';
@@ -38,6 +39,8 @@ const COPY = {
   countFiltered: '{{n}} of {{total}} features',
   legendShipped: 'Available',
   legendPartial: 'Partly available',
+  legendReview: 'In App Review',
+  submittedVersion: '{{version}} in App Review',
   legendMerged: 'Not yet released',
   legendNa: 'Not on this platform',
   proBadge: 'Pro',
@@ -68,6 +71,7 @@ function isoDaysAgo(days) {
 const CELL = {
   shipped: { glyph: '●', className: 'text-emerald-500', labelKey: 'legendShipped' },
   partial: { glyph: '◐', className: 'text-amber-500', labelKey: 'legendPartial' },
+  review: { glyph: '◷', className: 'text-blue-600', labelKey: 'legendReview' },
   merged: { glyph: '·', className: 'text-slate-300', labelKey: 'legendMerged' },
   na: { glyph: '—', className: 'text-slate-200', labelKey: 'legendNa' },
 };
@@ -75,7 +79,7 @@ const CELL = {
 /** One cell. Title carries the version, date and any per-cell caveat. */
 function Cell({ cell, platformId, platformLabel, featureLabel, highlighted, tr }) {
   const meta = CELL[cell.status] ?? CELL.na;
-  const version = releaseFor(platformId, cell.since);
+  const version = cell.status === 'review' ? SUBMITTED_RELEASES[platformId] : releaseFor(platformId, cell.since);
   const statusLabel = tr(meta.labelKey);
 
   const detail = [];
@@ -105,6 +109,11 @@ function Cell({ cell, platformId, platformLabel, featureLabel, highlighted, tr }
       {cell.status === 'merged' && (
         <span className="mt-0.5 block text-[10px] font-medium uppercase tracking-wide text-slate-400">
           {tr('notYet')}
+        </span>
+      )}
+      {cell.status === 'review' && version && (
+        <span className="mt-0.5 block text-[10px] font-medium text-blue-700">
+          {tr('submittedVersion', null, { version })}
         </span>
       )}
       {(cell.status === 'shipped' || cell.status === 'partial') && version && (
@@ -261,6 +270,7 @@ export default function FeatureMatrix() {
     const counts = (cell) =>
       cell.status === 'shipped' ||
       cell.status === 'partial' ||
+      cell.status === 'review' ||
       (showMerged && cell.status === 'merged');
 
     out = out.filter((f) =>
@@ -494,6 +504,11 @@ export default function FeatureMatrix() {
                             {p.version}
                           </span>
                         )}
+                        {SUBMITTED_RELEASES[p.id] && (
+                          <span className="mt-0.5 block text-[10px] font-medium text-blue-700">
+                            {tr('submittedVersion', null, { version: SUBMITTED_RELEASES[p.id] })}
+                          </span>
+                        )}
                         {p.sublabel && (
                           <span className="block text-[9px] font-medium text-slate-400">{p.sublabel}</span>
                         )}
@@ -626,6 +641,10 @@ export default function FeatureMatrix() {
           <span className="flex items-center gap-1.5">
             <span className="text-base leading-none text-amber-500">◐</span>
             {tr('legendPartial')}
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="text-base leading-none text-blue-600" aria-hidden="true">◷</span>
+            {tr('legendReview')}
           </span>
           <span className="flex items-center gap-1.5">
             <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400">

@@ -2241,6 +2241,8 @@
     "noResults": "Geen functies passen bij deze filters.",
     "noResultsHint": "Probeer een kortere zoekterm of wis de filters.",
     "legendShipped": "Beschikbaar",
+    "legendReview": "In beoordeling bij de App Store",
+    "submittedVersion": "{{version}} · In beoordeling bij de App Store",
     "legendPartial": "Deels beschikbaar",
     "legendMerged": "Nog niet uitgebracht",
     "legendNa": "Niet op dit platform",
@@ -2268,6 +2270,50 @@
       "tvosPartialLocale": "Interface gedeeltelijk vertaald"
     },
     "features": {
+      "panel-navigation": {
+        "label": "Paneelnavigatie",
+        "note": "Lees paneel voor paneel in striparchieven, strip-EPUB’s en ondersteunde pdf’s."
+      },
+      "page-tone": {
+        "label": "Paginatoon",
+        "note": "Stel helderheid, contrast, tekstdonkerte en grijswaarden per boek in."
+      },
+      "image-cleanup": {
+        "label": "Beeldcorrectie",
+        "note": "Verminder moiré en ruis of maak strips scherper. Inclusief Smooth Tones (AI)."
+      },
+      "txt-chapter-controls": {
+        "label": "TXT-hoofdstukinstellingen",
+        "note": "Pas hoofdstuktitels en -detectie per boek aan."
+      },
+      "smb-onedrive": {
+        "label": "Directe SMB- en OneDrive-bibliotheken",
+        "note": "Blader door SMB- en OneDrive-mappen. Ondersteunde leesgegevens worden naast het boek gesynchroniseerd."
+      },
+      "folder-download-sync": {
+        "label": "Mapdownloads en filter Gedownload",
+        "note": "Download en synchroniseer mappen en filter op offline kopieën."
+      },
+      "library-fast-scroll": {
+        "label": "Snel scrollen in de bibliotheek",
+        "note": "Sleep de schuifgreep om door grote bibliotheken te bladeren."
+      },
+      "calibre-qr-password": {
+        "label": "Calibre-wachtwoord importeren via QR",
+        "note": "Scan een BiblioFuse-servercode om inloggegevens te importeren."
+      },
+      "calibre-sync": {
+        "label": "Synchronisatie met Calibre Content Server",
+        "note": "Synchroniseer ondersteunde voortgang, bladwijzers en annotaties per formaat."
+      },
+      "managed-offline-sync": {
+        "label": "Tweerichtingssynchronisatie voor downloads",
+        "note": "Synchroniseer offline wijzigingen met Kavita, Komga, Calibre en BiblioFuse Host zodra je weer online bent."
+      },
+      "catalog-recent": {
+        "label": "Recent van meerdere catalogusservers",
+        "note": "Bekijk leesactiviteit van ingestelde catalogusservers samen in Recent."
+      },
       "live-translation": {
         "label": "Live strip- en mangavertaling",
         "note": "PP-OCRv5 op het toestel, gezet in de tekstballon"

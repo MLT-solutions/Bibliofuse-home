@@ -2241,6 +2241,8 @@
     "noResults": "No features match those filters.",
     "noResultsHint": "Try a shorter search, or reset the filters.",
     "legendShipped": "Available",
+    "legendReview": "In App Review",
+    "submittedVersion": "{{version}} · In App Review",
     "legendPartial": "Partly available",
     "legendMerged": "Not yet released",
     "legendNa": "Not on this platform",
@@ -2268,6 +2270,50 @@
       "tvosPartialLocale": "Partial UI translation"
     },
     "features": {
+      "panel-navigation": {
+        "label": "Panel Navigation",
+        "note": "Follow one panel at a time in comic archives, comic EPUBs and supported PDFs."
+      },
+      "page-tone": {
+        "label": "Page Tone",
+        "note": "Adjust brightness, contrast, text darkness and grayscale per book for PDF and comic pages."
+      },
+      "image-cleanup": {
+        "label": "Image Cleanup",
+        "note": "Reduce moiré and noise or sharpen comic archives and comic EPUBs. Includes Smooth Tones (AI)."
+      },
+      "txt-chapter-controls": {
+        "label": "TXT chapter controls",
+        "note": "Recognize headings in more languages and customize chapter labels and detection per book."
+      },
+      "smb-onedrive": {
+        "label": "Direct SMB & OneDrive libraries",
+        "note": "Browse SMB and OneDrive folders. Supported reading data syncs beside the book."
+      },
+      "folder-download-sync": {
+        "label": "Folder downloads & Downloaded filter",
+        "note": "Download and sync folders, browse Downloads by folder and filter for offline copies."
+      },
+      "library-fast-scroll": {
+        "label": "Library fast scroll",
+        "note": "Drag the scroll handle to move through large libraries across content sources."
+      },
+      "calibre-qr-password": {
+        "label": "Calibre password import by QR",
+        "note": "Scan a BiblioFuse server QR code to import Calibre login details."
+      },
+      "calibre-sync": {
+        "label": "Calibre Content Server sync",
+        "note": "Sync supported progress, bookmarks, highlights and notes. Support varies by format and location mapping."
+      },
+      "managed-offline-sync": {
+        "label": "Two-way sync for managed downloads",
+        "note": "Sync supported offline edits with Kavita, Komga, Calibre and BiblioFuse Host after reconnecting."
+      },
+      "catalog-recent": {
+        "label": "Recent across catalog servers",
+        "note": "See reading activity from configured catalog servers together in Recent."
+      },
       "live-translation": {
         "label": "Live comic & manga translation",
         "note": "On-device PP-OCRv5, typeset back into the balloon"

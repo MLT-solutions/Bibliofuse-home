@@ -2241,6 +2241,8 @@
     "noResults": "Tiada ciri yang sepadan dengan penapis itu.",
     "noResultsHint": "Cuba carian lebih pendek, atau set semula penapis.",
     "legendShipped": "Tersedia",
+    "legendReview": "Dalam semakan App Store",
+    "submittedVersion": "{{version}} · Dalam semakan App Store",
     "legendPartial": "Tersedia sebahagian",
     "legendMerged": "Belum dikeluarkan",
     "legendNa": "Tiada pada platform ini",
@@ -2268,6 +2270,50 @@
       "tvosPartialLocale": "Antara muka diterjemah sebahagian"
     },
     "features": {
+      "panel-navigation": {
+        "label": "Navigasi panel",
+        "note": "Baca satu panel pada satu masa dalam arkib komik, EPUB komik dan PDF yang disokong."
+      },
+      "page-tone": {
+        "label": "Tona halaman",
+        "note": "Laraskan kecerahan, kontras, kegelapan teks dan skala kelabu bagi setiap buku."
+      },
+      "image-cleanup": {
+        "label": "Pembersihan imej",
+        "note": "Kurangkan moiré dan hingar atau tajamkan komik. Termasuk Smooth Tones (AI)."
+      },
+      "txt-chapter-controls": {
+        "label": "Kawalan bab TXT",
+        "note": "Sesuaikan tajuk dan pengesanan bab bagi setiap buku."
+      },
+      "smb-onedrive": {
+        "label": "Pustaka SMB dan OneDrive secara langsung",
+        "note": "Layari folder SMB dan OneDrive. Data yang disokong disegerakkan di sisi buku."
+      },
+      "folder-download-sync": {
+        "label": "Muat turun folder dan penapis Dimuat turun",
+        "note": "Muat turun dan segerakkan folder, serta tapis salinan luar talian."
+      },
+      "library-fast-scroll": {
+        "label": "Tatal pustaka pantas",
+        "note": "Seret pemegang tatal untuk melayari pustaka besar."
+      },
+      "calibre-qr-password": {
+        "label": "Import kata laluan Calibre melalui QR",
+        "note": "Imbas kod QR pelayan BiblioFuse untuk mengimport butiran log masuk."
+      },
+      "calibre-sync": {
+        "label": "Penyegerakan Calibre Content Server",
+        "note": "Segerakkan kemajuan, penanda buku dan anotasi yang disokong mengikut format."
+      },
+      "managed-offline-sync": {
+        "label": "Penyegerakan dua hala muat turun",
+        "note": "Segerakkan perubahan luar talian dengan Kavita, Komga, Calibre dan BiblioFuse Host selepas menyambung semula."
+      },
+      "catalog-recent": {
+        "label": "Terkini merentas pelayan katalog",
+        "note": "Lihat aktiviti bacaan daripada pelayan katalog yang dikonfigurasi dalam Terkini."
+      },
       "live-translation": {
         "label": "Terjemahan komik & manga langsung",
         "note": "PP-OCRv5 pada peranti, disusun semula dalam belon"

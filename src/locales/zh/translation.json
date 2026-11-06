@@ -2241,6 +2241,8 @@
     "noResults": "没有功能符合当前筛选条件。",
     "noResultsHint": "试试更短的关键词，或重置筛选条件。",
     "legendShipped": "已支持",
+    "legendReview": "正在接受 App Store 审核",
+    "submittedVersion": "正在接受 App Store 审核 · {{version}}",
     "legendPartial": "部分支持",
     "legendMerged": "尚未发布",
     "legendNa": "此平台不支持",
@@ -2268,6 +2270,50 @@
       "tvosPartialLocale": "界面部分翻译"
     },
     "features": {
+      "panel-navigation": {
+        "label": "分格导航",
+        "note": "在漫画压缩包、漫画 EPUB 和受支持的 PDF 中逐格阅读。"
+      },
+      "page-tone": {
+        "label": "页面色调",
+        "note": "按书调整亮度、对比度、文字深浅和灰度。"
+      },
+      "image-cleanup": {
+        "label": "图像优化",
+        "note": "减少漫画中的摩尔纹和噪点，或提高锐度。包含平滑色调（AI）。"
+      },
+      "txt-chapter-controls": {
+        "label": "TXT 章节设置",
+        "note": "按书自定义章节名称和识别设置。"
+      },
+      "smb-onedrive": {
+        "label": "直接连接 SMB 和 OneDrive 书库",
+        "note": "浏览 SMB 和 OneDrive 文件夹，受支持的阅读数据会在书籍旁同步。"
+      },
+      "folder-download-sync": {
+        "label": "文件夹下载和已下载筛选",
+        "note": "下载并同步文件夹，按需筛选离线副本。"
+      },
+      "library-fast-scroll": {
+        "label": "书库快速滚动",
+        "note": "拖动滚动手柄，快速浏览大型书库。"
+      },
+      "calibre-qr-password": {
+        "label": "通过二维码导入 Calibre 密码",
+        "note": "扫描 BiblioFuse 服务器二维码以导入登录信息。"
+      },
+      "calibre-sync": {
+        "label": "Calibre Content Server 同步",
+        "note": "按格式同步受支持的进度、书签和批注。"
+      },
+      "managed-offline-sync": {
+        "label": "下载内容双向同步",
+        "note": "重新连接后，将离线更改同步到 Kavita、Komga、Calibre 和 BiblioFuse Host。"
+      },
+      "catalog-recent": {
+        "label": "跨目录服务器的最近阅读",
+        "note": "在最近阅读中集中查看已配置目录服务器上的阅读活动。"
+      },
       "live-translation": {
         "label": "漫画实时翻译",
         "note": "设备端 PP-OCRv5，排版回对话气泡"
